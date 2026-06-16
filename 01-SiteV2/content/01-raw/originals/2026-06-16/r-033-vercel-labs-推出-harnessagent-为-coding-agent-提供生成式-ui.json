@@ -1,0 +1,264 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-033",
+  "title": "Vercel Labs 推出 HarnessAgent：为 Coding Agent 提供生成式 UI",
+  "original_url": "https://x.com/shao__meng/status/2066690742727409944",
+  "canonical_url": "https://x.com/shao__meng/status/2066690742727409944",
+  "source_name": "X：邵猛 (@shao__meng)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-16T01:14:04.000Z",
+  "collected_at": "2026-06-16T03:08:04.929Z",
+  "language": "mixed",
+  "full_text": "Post\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nGenerative UI × Agent Harness\nCoding Agent（Claude Code / Codex / Pi）在 Vercel Sandbox 里真实改代码、跑命令、测用例；汇报时不再只返回 Markdown，它基于「json-render」输出受约束的 JSON UI 规格，前端实时渲染成步骤、Diff、终端、测试结果、图表等组件。\ngithub.com/vercel-labs/js…\n心开发者 @ trq212 「Using Claude Code: The Unreasonable Effectiveness of HTML」异曲同工：\nx.com/trq212/status/…\n技术架构（三层解耦）\n用户 Prompt\nHarnessAgent（AI SDK 7 实验 API）\n├─ Claude Code / Codex / Pi（可互换）\n└─ Vercel Sandbox（隔离 Linux 环境，真实 bash/edit/test）\nAgent 输出：短 prose + ```spec 围栏内的 JSONL\npipeJsonRender（从流中提取 spec → data-spec parts）\n前端 useChat + useJsonRenderMessage → 渲染组件树\n关键设计点：\n1. Harness 抽象与模型抽象对称\nAI SDK 7 的 HarnessAgent 让你像换模型一样换 Harness——claudeCode 换成 codex 或 pi，调用方式不变。Harness 管 skills、sandbox、session、权限、compaction 等「模型之上的层」。\n2. UI 层与执行层完全解耦\nHarnessAgent. stream() 返回标准 AI SDK StreamTextResult，因此 json-render 管道与单模型 chat 示例 完全相同。换 Agent Harness，前端代码不用改。\n3. Catalog 约束 = 安全 + 可预测\nAgent 只能使用预定义组件（Steps、FileChange、Terminal、TestResults、Metric、BarChart…），输出必须符合 Zod schema。AI 生成 UI，但 在你划定的组件边界内。\n4. Session 绑定 Sandbox\n每个 chat 维护一个 live session + sandbox；首条消息冷启动较慢，后续复用同一工作区。10 分钟 idle 或「Start Over」会销毁 sandbox。\n一次完整交互里发生了什么\n1. 用户选 Agent（Claude Code / Codex / Pi）并发送任务\n2. 服务端 getSession(chatId, agent) 创建或复用 Harness session\n3. Agent 在 sandbox 内执行真实操作（写文件、跑测试、benchmark 等）\n4. 回合结束时 Agent 输出：\n· 一两句 conversational 总结\n· 一个 ```spec 围栏包裹的 JSONL UI 报告\n5. pipeJsonRender 把 spec 从文本流中拆出，变成 typed data-spec parts\n6. 前端同时渲染：Markdown prose、工具调用活动行（bash/edit/read…）、结构化报告组件\nAgent 的 system instructions 明确要求：不得虚构结果——失败就展示 error step、非零 exit code、失败测试；Terminal 必须用 session 中真实捕获的输出。\nChris Tate\n@ctatedev\n10h\nIntroducing Generative UI for Claude Code, Codex and Pi\nCharts, forms, 3D, anything\nYour agent renders real UI for users while it works in a sandbox\nPowered by AI SDK's experimental HarnessAgent + json-render\n00:00\n1:14 AM · Jun 16, 2026 580 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\nRead 1 reply",
+  "clean_text": "Post\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nGenerative UI × Agent Harness\nCoding Agent（Claude Code / Codex / Pi）在 Vercel Sandbox 里真实改代码、跑命令、测用例；汇报时不再只返回 Markdown，它基于「json-render」输出受约束的 JSON UI 规格，前端实时渲染成步骤、Diff、终端、测试结果、图表等组件。\ngithub.com/vercel-labs/js…\n心开发者 @ trq212 「Using Claude Code: The Unreasonable Effectiveness of HTML」异曲同工：\nx.com/trq212/status/…\n技术架构（三层解耦）\n用户 Prompt\nHarnessAgent（AI SDK 7 实验 API）\n├─ Claude Code / Codex / Pi（可互换）\n└─ Vercel Sandbox（隔离 Linux 环境，真实 bash/edit/test）\nAgent 输出：短 prose + ```spec 围栏内的 JSONL\npipeJsonRender（从流中提取 spec → data-spec parts）\n前端 useChat + useJsonRenderMessage → 渲染组件树\n关键设计点：\n1. Harness 抽象与模型抽象对称\nAI SDK 7 的 HarnessAgent 让你像换模型一样换 Harness——claudeCode 换成 codex 或 pi，调用方式不变。Harness 管 skills、sandbox、session、权限、compaction 等「模型之上的层」。\n2. UI 层与执行层完全解耦\nHarnessAgent. stream() 返回标准 AI SDK StreamTextResult，因此 json-render 管道与单模型 chat 示例 完全相同。换 Agent Harness，前端代码不用改。\n3. Catalog 约束 = 安全 + 可预测\nAgent 只能使用预定义组件（Steps、FileChange、Terminal、TestResults、Metric、BarChart…），输出必须符合 Zod schema。AI 生成 UI，但 在你划定的组件边界内。\n4. Session 绑定 Sandbox\n每个 chat 维护一个 live session + sandbox；首条消息冷启动较慢，后续复用同一工作区。10 分钟 idle 或「Start Over」会销毁 sandbox。\n一次完整交互里发生了什么\n1. 用户选 Agent（Claude Code / Codex / Pi）并发送任务\n2. 服务端 getSession(chatId, agent) 创建或复用 Harness session\n3. Agent 在 sandbox 内执行真实操作（写文件、跑测试、benchmark 等）\n4. 回合结束时 Agent 输出：\n· 一两句 conversational 总结\n· 一个 ```spec 围栏包裹的 JSONL UI 报告\n5. pipeJsonRender 把 spec 从文本流中拆出，变成 typed data-spec parts\n6. 前端同时渲染：Markdown prose、工具调用活动行（bash/edit/read…）、结构化报告组件\nAgent 的 system instructions 明确要求：不得虚构结果——失败就展示 error step、非零 exit code、失败测试；Terminal 必须用 session 中真实捕获的输出。\nChris Tate\n@ctatedev\n10h\nIntroducing Generative UI for Claude Code, Codex and Pi\nCharts, forms, 3D, anything\nYour agent renders real UI for users while it works in a sandbox\nPowered by AI SDK's experimental HarnessAgent + json-render\n00:00\n1:14 AM · Jun 16, 2026 580 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\nRead 1 reply",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-16/r-033-vercel-labs-推出-harnessagent-为-coding-agent-提供生成式-ui.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-16/r-033-vercel-labs-推出-harnessagent-为-coding-agent-提供生成式-ui.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 87,
+  "extractor_diagnostics": {
+    "readability_score": 87,
+    "text_length": 3507,
+    "paragraph_count": 34,
+    "sentence_count": 17,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0137,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3507,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "8723d516971ac701",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "X：邵猛 (@shao__meng)",
+  "capture_scope": "visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Vercel Labs 推出 HarnessAgent：为 Coding Agent 提供生成式 UI",
+    "discovery_summary": "Vercel Labs 利用 AI SDK 7 实验 API 推出 HarnessAgent，结合 json-render 为 Claude Code / Codex / Pi 等 Coding Agent 提供生成式 UI。Agent 在 Vercel Sandbox 隔离 Linux 环境中执行写文件、跑测试等真实操作，输出受 Zod schema 约束的 JSONL UI 规格（仅限 Steps、FileChange、Terminal 等预定义组件），前端通过 useChat + useJsonRenderMessage 实时渲染。核心设计：Harness 抽象允许像换模型一样互换 Agent；UI 层与执行层完全解耦；Session 绑定 Sandbox，10 分钟空闲或\"Start Over\" 销毁。Agent 不得虚构结果，失败必须展示 error step、非零 exit code 或失败测试。",
+    "source_name": "X：邵猛 (@shao__meng)",
+    "origin_url": "https://x.com/shao__meng/status/2066690742727409944",
+    "discovered_at": "2026-06-16T03:02:46.994Z",
+    "rank_on_page": 36,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "a59d914471c05646",
+  "content_hash": "8723d516971ac701",
+  "full_text_hash": "8723d516971ac701",
+  "semantic_hash": "1ae0b6c66d3b6c5e",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-16T01:14:04.000Z",
+  "last_seen_at": "2026-06-16T03:08:04.929Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "Vercel Labs 利用 AI SDK 7 实验 API 推出 HarnessAgent，结合 json-render 为 Claude Code / Codex / Pi 等 Coding Agent 提供生成式 UI。Agent 在 Vercel Sandbox 隔离 Linux 环境中执行写文件、跑测试等真实操作，输出受 Zod schema 约束的 JSONL UI 规格（仅限 Steps、FileChange、Terminal 等预定义组件），前端通过 useChat + useJsonRenderMessage 实时渲染。核心设计：Harness 抽象允许像换模型一样互换 Agent；UI 层与执行层完全解耦；Session 绑定 Sandbox，10 分钟空闲或\"Start Over\" 销毁。Agent 不得虚构结果，失败必须展示 error step、非零 exit code 或失败测试。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Post Log in Sign up Post meng shao @shao__meng Generative UI × Agent Harness Coding Agent（Claude Code / Codex / Pi）在 Vercel Sandbox 里真实改代码、跑命令、测用例；汇报时不再只返回 Markdown，它基于「json-render」输出受约束的 JSON UI 规格，前端实时渲染成步骤、Diff、终端、测试结果、图表等组件。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "com/vercel-labs/js… 心开发者 @ trq212 「Using Claude Code: The Unreasonable Effectiveness of HTML」异曲同工： x.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "com/trq212/status/… 技术架构（三层解耦） 用户 Prompt HarnessAgent（AI SDK 7 实验 API） ├─ Claude Code / Codex / Pi（可互换） └─ Vercel Sandbox（隔离 Linux 环境，真实 bash/edit/test） Agent 输出：短 prose + ```spec 围栏内的 JSONL pipeJsonRender（从流中提取 spec → data-spec parts） 前端 useChat + useJsonRenderMessage → 渲染组件树 关键设计点： 1.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "opinion",
+      "text": "Harness 抽象与模型抽象对称 AI SDK 7 的 HarnessAgent 让你像换模型一样换 Harness——claudeCode 换成 codex 或 pi，调用方式不变。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Harness 管 skills、sandbox、session、权限、compaction 等「模型之上的层」。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "邵猛 (@shao__meng)",
+      "GitHub"
+    ],
+    "products": [
+      "Agent",
+      "Claude",
+      "Codex",
+      "codex",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "7",
+      "10",
+      "212",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "quotes": [
+      "Start Over"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Post Log in Sign up Post meng shao @shao__meng Generative UI × Agent Harness Coding Agent（Claude Code / Codex / Pi）在 Vercel Sandbox 里真实改代码、跑命令、测用例；汇报时不再只返回 Markdown，它基于「json-render」输出受约束的 JSON UI 规格，前端实时渲染成步骤、Diff、终端、测试结果、图表等组件。",
+      "com/vercel-labs/js… 心开发者 @ trq212 「Using Claude Code: The Unreasonable Effectiveness of HTML」异曲同工： x.",
+      "com/trq212/status/… 技术架构（三层解耦） 用户 Prompt HarnessAgent（AI SDK 7 实验 API） ├─ Claude Code / Codex / Pi（可互换） └─ Vercel Sandbox（隔离 Linux 环境，真实 bash/edit/test） Agent 输出：短 prose + ```spec 围栏内的 JSONL pipeJsonRender（从流中提取 spec → data-spec parts） 前端 useChat + useJsonRenderMessage → 渲染组件树 关键设计点： 1."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 4,
+    "importance_reason": "new product or service; rubric=4 concrete important change",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "user_feedback_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "candidate",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Vercel Labs 推出 HarnessAgent：为 Coding Agent 提供生成式 UI\n\n- raw_id: R-033\n- original_url: https://x.com/shao__meng/status/2066690742727409944\n- source_name: X：邵猛 (@shao__meng)\n- collected_at: 2026-06-16T03:08:04.929Z\n\n## clean_text\n\nPost\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nGenerative UI × Agent Harness\nCoding Agent（Claude Code / Codex / Pi）在 Vercel Sandbox 里真实改代码、跑命令、测用例；汇报时不再只返回 Markdown，它基于「json-render」输出受约束的 JSON UI 规格，前端实时渲染成步骤、Diff、终端、测试结果、图表等组件。\ngithub.com/vercel-labs/js…\n心开发者 @ trq212 「Using Claude Code: The Unreasonable Effectiveness of HTML」异曲同工：\nx.com/trq212/status/…\n技术架构（三层解耦）\n用户 Prompt\nHarnessAgent（AI SDK 7 实验 API）\n├─ Claude Code / Codex / Pi（可互换）\n└─ Vercel Sandbox（隔离 Linux 环境，真实 bash/edit/test）\nAgent 输出：短 prose + ```spec 围栏内的 JSONL\npipeJsonRender（从流中提取 spec → data-spec parts）\n前端 useChat + useJsonRenderMessage → 渲染组件树\n关键设计点：\n1. Harness 抽象与模型抽象对称\nAI SDK 7 的 HarnessAgent 让你像换模型一样换 Harness——claudeCode 换成 codex 或 pi，调用方式不变。Harness 管 skills、sandbox、session、权限、compaction 等「模型之上的层」。\n2. UI 层与执行层完全解耦\nHarnessAgent. stream() 返回标准 AI SDK StreamTextResult，因此 json-render 管道与单模型 chat 示例 完全相同。换 Agent Harness，前端代码不用改。\n3. Catalog 约束 = 安全 + 可预测\nAgent 只能使用预定义组件（Steps、FileChange、Terminal、TestResults、Metric、BarChart…），输出必须符合 Zod schema。AI 生成 UI，但 在你划定的组件边界内。\n4. Session 绑定 Sandbox\n每个 chat 维护一个 live session + sandbox；首条消息冷启动较慢，后续复用同一工作区。10 分钟 idle 或「Start Over」会销毁 sandbox。\n一次完整交互里发生了什么\n1. 用户选 Agent（Claude Code / Codex / Pi）并发送任务\n2. 服务端 getSession(chatId, agent) 创建或复用 Harness session\n3. Agent 在 sandbox 内执行真实操作（写文件、跑测试、benchmark 等）\n4. 回合结束时 Agent 输出：\n· 一两句 conversational 总结\n· 一个 ```spec 围栏包裹的 JSONL UI 报告\n5. pipeJsonRender 把 spec 从文本流中拆出，变成 typed data-spec parts\n6. 前端同时渲染：Markdown prose、工具调用活动行（bash/edit/read…）、结构化报告组件\nAgent 的 system instructions 明确要求：不得虚构结果——失败就展示 error step、非零 exit code、失败测试；Terminal 必须用 session 中真实捕获的输出。\nChris Tate\n@ctatedev\n10h\nIntroducing Generative UI for Claude Code, Codex and Pi\nCharts, forms, 3D, anything\nYour agent renders real UI for users while it works in a sandbox\nPowered by AI SDK's experimental HarnessAgent + json-render\n00:00\n1:14 AM · Jun 16, 2026 580 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\nRead 1 reply\n\n## full_text\n\nPost\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nGenerative UI × Agent Harness\nCoding Agent（Claude Code / Codex / Pi）在 Vercel Sandbox 里真实改代码、跑命令、测用例；汇报时不再只返回 Markdown，它基于「json-render」输出受约束的 JSON UI 规格，前端实时渲染成步骤、Diff、终端、测试结果、图表等组件。\ngithub.com/vercel-labs/js…\n心开发者 @ trq212 「Using Claude Code: The Unreasonable Effectiveness of HTML」异曲同工：\nx.com/trq212/status/…\n技术架构（三层解耦）\n用户 Prompt\nHarnessAgent（AI SDK 7 实验 API）\n├─ Claude Code / Codex / Pi（可互换）\n└─ Vercel Sandbox（隔离 Linux 环境，真实 bash/edit/test）\nAgent 输出：短 prose + ```spec 围栏内的 JSONL\npipeJsonRender（从流中提取 spec → data-spec parts）\n前端 useChat + useJsonRenderMessage → 渲染组件树\n关键设计点：\n1. Harness 抽象与模型抽象对称\nAI SDK 7 的 HarnessAgent 让你像换模型一样换 Harness——claudeCode 换成 codex 或 pi，调用方式不变。Harness 管 skills、sandbox、session、权限、compaction 等「模型之上的层」。\n2. UI 层与执行层完全解耦\nHarnessAgent. stream() 返回标准 AI SDK StreamTextResult，因此 json-render 管道与单模型 chat 示例 完全相同。换 Agent Harness，前端代码不用改。\n3. Catalog 约束 = 安全 + 可预测\nAgent 只能使用预定义组件（Steps、FileChange、Terminal、TestResults、Metric、BarChart…），输出必须符合 Zod schema。AI 生成 UI，但 在你划定的组件边界内。\n4. Session 绑定 Sandbox\n每个 chat 维护一个 live session + sandbox；首条消息冷启动较慢，后续复用同一工作区。10 分钟 idle 或「Start Over」会销毁 sandbox。\n一次完整交互里发生了什么\n1. 用户选 Agent（Claude Code / Codex / Pi）并发送任务\n2. 服务端 getSession(chatId, agent) 创建或复用 Harness session\n3. Agent 在 sandbox 内执行真实操作（写文件、跑测试、benchmark 等）\n4. 回合结束时 Agent 输出：\n· 一两句 conversational 总结\n· 一个 ```spec 围栏包裹的 JSONL UI 报告\n5. pipeJsonRender 把 spec 从文本流中拆出，变成 typed data-spec parts\n6. 前端同时渲染：Markdown prose、工具调用活动行（bash/edit/read…）、结构化报告组件\nAgent 的 system instructions 明确要求：不得虚构结果——失败就展示 error step、非零 exit code、失败测试；Terminal 必须用 session 中真实捕获的输出。\nChris Tate\n@ctatedev\n10h\nIntroducing Generative UI for Claude Code, Codex and Pi\nCharts, forms, 3D, anything\nYour agent renders real UI for users while it works in a sandbox\nPowered by AI SDK's experimental HarnessAgent + json-render\n00:00\n1:14 AM · Jun 16, 2026 580 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\nRead 1 reply\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 87\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [quote / daily_observation, heatmap, viewpoint / high] Vercel Labs 利用 AI SDK 7 实验 API 推出 HarnessAgent，结合 json-render 为 Claude Code / Codex / Pi 等 Coding Agent 提供生成式 UI。Agent 在 Vercel Sandbox 隔离 Linux 环境中执行写文件、跑测试等真实操作，输出受 Zod schema 约束的 JSONL UI 规格（仅限 Steps、FileChange、Terminal 等预定义组件），前端通过 useChat + useJsonRenderMessage 实时渲染。核心设计：Harness 抽象允许像换模型一样互换 Agent；UI 层与执行层完全解耦；Session 绑定 Sandbox，10 分钟空闲或\"Start Over\" 销毁。Agent 不得虚构结果，失败必须展示 error step、非零 exit code 或失败测试。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Post Log in Sign up Post meng shao @shao__meng Generative UI × Agent Harness Coding Agent（Claude Code / Codex / Pi）在 Vercel Sandbox 里真实改代码、跑命令、测用例；汇报时不再只返回 Markdown，它基于「json-render」输出受约束的 JSON UI 规格，前端实时渲染成步骤、Diff、终端、测试结果、图表等组件。\n3. [company_action / daily_observation, heatmap, change, case, trend / high] com/vercel-labs/js… 心开发者 @ trq212 「Using Claude Code: The Unreasonable Effectiveness of HTML」异曲同工： x.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] com/trq212/status/… 技术架构（三层解耦） 用户 Prompt HarnessAgent（AI SDK 7 实验 API） ├─ Claude Code / Codex / Pi（可互换） └─ Vercel Sandbox（隔离 Linux 环境，真实 bash/edit/test） Agent 输出：短 prose + ```spec 围栏内的 JSONL pipeJsonRender（从流中提取 spec → data-spec parts） 前端 useChat + useJsonRenderMessage → 渲染组件树 关键设计点： 1.\n5. [opinion / daily_observation, heatmap, viewpoint / high] Harness 抽象与模型抽象对称 AI SDK 7 的 HarnessAgent 让你像换模型一样换 Harness——claudeCode 换成 codex 或 pi，调用方式不变。\n6. [company_action / daily_observation, heatmap, change, case, trend / high] Harness 管 skills、sandbox、session、权限、compaction 等「模型之上的层」。\n"
+}

@@ -1,0 +1,233 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-038
+title: "Claude 为 Agent SDK 和 claude -p 新增独立用量额度"
+original_url: "https://x.com/xiaohu/status/2066696714917126614"
+canonical_url: "https://x.com/xiaohu/status/2066696714917126614"
+source_name: "X：小互 (@xiaohu)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-16T01:37:48.000Z"
+collected_at: 2026-06-16T03:08:04.940Z
+language: mixed
+full_text_hash: b50a5765c05d26e2
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-16/r-038-claude-为-agent-sdk-和-claude-p-新增独立用量额度.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-16/r-038-claude-为-agent-sdk-和-claude-p-新增独立用量额度.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 54
+extractor_diagnostics: {"readability_score":54,"text_length":2512,"paragraph_count":9,"sentence_count":3,"boilerplate_hits":3,"symbol_ratio":0.0239,"method":"main"}
+has_full_text: true
+content_length: 2512
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b50a5765c05d26e2","missing":[]}
+source_volatility: high
+community_name: "X：小互 (@xiaohu)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Claude 为 Agent SDK 和 claude -p 新增独立用量额度","discovery_summary":"自6月15日起，Claude 将 Agent SDK 和 claude -p 的用量从订阅套餐原有额度中剥离，每月额外提供一笔\"专用零花钱\"，其中 Pro 用户 $20、Max 5x 用户 $100，以此类推。该额度专门用于运行 claude -p、自写 Agent SDK 脚本或第三方 Agent App，不占用日常对话配额。额度用完后才扣其他费用，未用完不滚存下月；需手动领取一次后自动续期。","source_name":"X：小互 (@xiaohu)","origin_url":"https://x.com/xiaohu/status/2066696714917126614","discovered_at":"2026-06-16T03:02:46.993Z","rank_on_page":34,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: f3cb0ef3091722f6
+content_hash: b50a5765c05d26e2
+semantic_hash: fd1a7bb5ed2185d5
+duplicate_of: ""
+first_seen_at: "2026-06-16T01:37:48.000Z"
+last_seen_at: 2026-06-16T03:08:04.940Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["X","小互 (@xiaohu)"],"products":["Claude","Agent","claude"],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["6","15","$20","5x","$100","1","37","16"],"quotes":[]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post 小互 @xiaohu 兄弟们 好消息！","这笔钱专门用来跑 claude -p、自己写的 Agent SDK 脚本、或者第三方 Agent App， laude -p 跑批量任务，会把日常对话的配额也吃掉，两边抢同一个池子。","额度用完了才开始扣其他费用 未用完的不滚存到下个月 需要一次性手动领取，之后自动续期 1:37 AM · Jun 16, 2026 7."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"number","text":"自6月15日起，Claude 将 Agent SDK 和 claude -p 的用量从订阅套餐原有额度中剥离，每月额外提供一笔\"专用零花钱\"，其中 Pro 用户 $20、Max 5x 用户 $100，以此类推。该额度专门用于运行 claude -p、自写 Agent SDK 脚本或第三方 Agent App，不占用日常对话配额。额度用完后才扣其他费用，未用完不滚存下月；需手动领取一次后自动续期。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Post Log in Sign up Post 小互 @xiaohu 兄弟们 好消息！","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"从6月15日起，也就是今天，Agent SDK 和 Claude -p 的用量 不再占用你 Claude 订阅套餐额度 根据你的订阅，现在每个月会多出一笔\"专用零花钱\" Pro 用户是 $20，Max 5x 是 $100，以此类推.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"这笔钱专门用来跑 claude -p、自己写的 Agent SDK 脚本、或者第三方 Agent App， laude -p 跑批量任务，会把日常对话的配额也吃掉，两边抢同一个池子。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"额度用完了才开始扣其他费用 未用完的不滚存到下个月 需要一次性手动领取，之后自动续期 1:37 AM · Jun 16, 2026 7.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"7K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Claude 为 Agent SDK 和 claude -p 新增独立用量额度
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+小互
+@xiaohu
+兄弟们 好消息！
+从6月15日起，也就是今天，Agent SDK 和 Claude -p 的用量
+不再占用你 Claude 订阅套餐额度
+根据你的订阅，现在每个月会多出一笔"专用零花钱"
+Pro 用户是 $20，Max 5x 是 $100，以此类推...
+这笔钱专门用来跑 claude -p、自己写的 Agent SDK 脚本、或者第三方 Agent App， laude -p 跑批量任务，会把日常对话的配额也吃掉，两边抢同一个池子。现在拆开了，互不影响。
+额度用完了才开始扣其他费用
+未用完的不滚存到下个月
+需要一次性手动领取，之后自动续期
+1:37 AM · Jun 16, 2026 7.7K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 13
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 11
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 26
+Read 13 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+小互
+@xiaohu
+兄弟们 好消息！
+从6月15日起，也就是今天，Agent SDK 和 Claude -p 的用量
+不再占用你 Claude 订阅套餐额度
+根据你的订阅，现在每个月会多出一笔"专用零花钱"
+Pro 用户是 $20，Max 5x 是 $100，以此类推...
+这笔钱专门用来跑 claude -p、自己写的 Agent SDK 脚本、或者第三方 Agent App， laude -p 跑批量任务，会把日常对话的配额也吃掉，两边抢同一个池子。现在拆开了，互不影响。
+额度用完了才开始扣其他费用
+未用完的不滚存到下个月
+需要一次性手动领取，之后自动续期
+1:37 AM · Jun 16, 2026 7.7K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 13
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 11
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 26
+Read 13 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 54
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":54,"text_length":2512,"paragraph_count":9,"sentence_count":3,"boilerplate_hits":3,"symbol_ratio":0.0239,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   自6月15日起，Claude 将 Agent SDK 和 claude -p 的用量从订阅套餐原有额度中剥离，每月额外提供一笔"专用零花钱"，其中 Pro 用户 $20、Max 5x 用户 $100，以此类推。该额度专门用于运行 claude -p、自写 Agent SDK 脚本或第三方 Agent App，不占用日常对话配额。额度用完后才扣其他费用，未用完不滚存下月；需手动领取一次后自动续期。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Post Log in Sign up Post 小互 @xiaohu 兄弟们 好消息！
+
+3. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   从6月15日起，也就是今天，Agent SDK 和 Claude -p 的用量 不再占用你 Claude 订阅套餐额度 根据你的订阅，现在每个月会多出一笔"专用零花钱" Pro 用户是 $20，Max 5x 是 $100，以此类推.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   这笔钱专门用来跑 claude -p、自己写的 Agent SDK 脚本、或者第三方 Agent App， laude -p 跑批量任务，会把日常对话的配额也吃掉，两边抢同一个池子。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   额度用完了才开始扣其他费用 未用完的不滚存到下个月 需要一次性手动领取，之后自动续期 1:37 AM · Jun 16, 2026 7.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   7K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !
+
+## business_elements
+
+- companies: X, 小互 (@xiaohu)
+- products: Claude, Agent, claude
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 6, 15, $20, 5x, $100, 1, 37, 16
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post 小互 @xiaohu 兄弟们 好消息！ / 这笔钱专门用来跑 claude -p、自己写的 Agent SDK 脚本、或者第三方 Agent App， laude -p 跑批量任务，会把日常对话的配额也吃掉，两边抢同一个池子。 / 额度用完了才开始扣其他费用 未用完的不滚存到下个月 需要一次性手动领取，之后自动续期 1:37 AM · Jun 16, 2026 7.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：小互 (@xiaohu)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Claude 为 Agent SDK 和 claude -p 新增独立用量额度","discovery_summary":"自6月15日起，Claude 将 Agent SDK 和 claude -p 的用量从订阅套餐原有额度中剥离，每月额外提供一笔\"专用零花钱\"，其中 Pro 用户 $20、Max 5x 用户 $100，以此类推。该额度专门用于运行 claude -p、自写 Agent SDK 脚本或第三方 Agent App，不占用日常对话配额。额度用完后才扣其他费用，未用完不滚存下月；需手动领取一次后自动续期。","source_name":"X：小互 (@xiaohu)","origin_url":"https://x.com/xiaohu/status/2066696714917126614","discovered_at":"2026-06-16T03:02:46.993Z","rank_on_page":34,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+自6月15日起，Claude 将 Agent SDK 和 claude -p 的用量从订阅套餐原有额度中剥离，每月额外提供一笔"专用零花钱"，其中 Pro 用户 $20、Max 5x 用户 $100，以此类推。该额度专门用于运行 claude -p、自写 Agent SDK 脚本或第三方 Agent App，不占用日常对话配额。额度用完后才扣其他费用，未用完不滚存下月；需手动领取一次后自动续期。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

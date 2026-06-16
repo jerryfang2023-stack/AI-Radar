@@ -1,0 +1,268 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-062",
+  "title": "苹果基础模型",
+  "original_url": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
+  "canonical_url": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-15T09:01:16.022Z",
+  "collected_at": "2026-06-16T03:08:05.007Z",
+  "language": "mixed",
+  "full_text": "Copy page\nClaude for Foundation Models is a Swift package that makes Claude available as a server-side language model in Apple's Foundation Models framework. The package conforms Claude to the framework's LanguageModel protocol, so you drive it with the same LanguageModelSession API you use for Apple's on-device model: respond(to:) , streaming, guided generation, and tool calling all work the same way.\nRequests go directly from your app to the Claude API; Apple is not in the request path and does not see prompts or responses. Usage is billed to your Anthropic account at standard API pricing . Your app decides when to use Claude and when to use Apple's on-device model: pass whichever model you want to each session.\nBeta. This package targets the Foundation Models server-side language model API introduced in the OS 27 betas. APIs may change before general availability.\nClaude for Foundation Models is not a general-purpose Messages API client. Its public surface is the Foundation Models provider conformance plus the configuration types that reach it ( ClaudeLanguageModel , ClaudeModel , AuthMode , ClaudeServerTool ). For direct access to the Messages API in another language, see the Client SDKs .\nRequirements\niOS 27, macOS 27, visionOS 27, or watchOS 27 (all in beta): the OS releases whose Foundation Models framework supports server-side language models\nXcode 27 (beta)\nA Claude API key from the Claude Console for development. See Authentication for production options.\nInstall the package\nAdd the package to your Package.swift :\ndependencies : [\n. package ( url : \"https://github.com/anthropics/ClaudeForFoundationModels.git\" , from : \"0.1.0\" )\nOr in Xcode: File > Add Package Dependencies… and enter the repository URL.\nThen add ClaudeForFoundationModels to your target's dependencies and import it alongside FoundationModels :\nimport FoundationModels\nimport ClaudeForFoundationModels\nQuick start\nClaudeLanguageModel is the entry point. Pass it to LanguageModelSession and use the session exactly as you would with any Foundation Models provider:\nimport FoundationModels\nimport ClaudeForFoundationModels\nlet model = ClaudeLanguageModel (\nname : . sonnet4_6 ,\nauth : . apiKey (ProcessInfo. processInfo . environment [ \"ANTHROPIC_API_KEY\" ] ?? \"\" )\nlet session = LanguageModelSession ( model : model)\nlet response = try await session. respond ( to : \"Plan a 4-day trip to Buenos Aires.\" )\nprint (response. content )\nThe initializer also accepts baseURL (default https://api.anthropic.com ), timeout , and serverTools (see Server-side tools ).\nFor a complete working program, the repository includes Examples/ClaudeExample , a runnable command-line target that streams a chat turn to the terminal, with a --search flag that enables server-side web search for the turn. Running it requires a macOS 27 host.\nChoosing a model\nModel identifiers are values of ClaudeModel . Use a compiled-in constant, or construct one with explicit capabilities for an ID that isn't compiled in yet (see Capabilities ):\nClaudeLanguageModel ( name : . opus4_8 , auth : auth)\nConstants mirror API model IDs ( .opus4_8 is claude-opus-4-8 ) and carry each model's capabilities. New models ship as new constants in package releases; check ClaudeModel in Xcode for the current list, and the Models overview to compare models.\nCapabilities\nEach ClaudeModel declares what it accepts: sampling parameters, effort levels, adaptive thinking, structured output, and image input. The package uses this to decide which request fields to send, because sending a field a model rejects is a hard error. The constants carry the right capabilities. For an ID that isn't compiled in, declare what the model accepts (there is deliberately no shorthand that guesses):\nlet model = ClaudeModel (\nid : \"claude-experimental-x\" ,\ncapabilities : . init ( samplingParams : false , effortLevels : [. low , . high ])\nClaudeLanguageModel ( name : model, auth : auth)\nEffort\nPin a Claude effort level for every request with fixedEffort: . It takes precedence over the framework's per-request reasoning hints, and it's the only way to request .xhigh or .max , because the framework's reasoning levels stop at high. The API defaults to high when no effort is sent:\nClaudeLanguageModel ( name : . opus4_8 , auth : auth, fixedEffort : . xhigh )\nThe level must be one the model accepts. Each ClaudeModel declares which of the five levels ( low , medium , high , xhigh , max ) its model takes, if any: some models don't accept effort at all.\nWhen to use Claude versus the on-device model\nApple's on-device model is fast, private, and works offline, but it is sized for lightweight tasks. Escalate to Claude when you need larger context, frontier reasoning, or server-side tools such as web search and code execution. Because both use the same LanguageModelSession API, you can switch by swapping the model: argument.\nAuthentication\nSet the credential with the auth: parameter.\nAPI key (development)\nPass an API key directly while developing:\nClaudeLanguageModel ( name : . sonnet4_6 , auth : . apiKey ( \"YOUR_API_KEY\" ))\nA key bundled into an app is extractable from the shipping binary, and anyone who extracts it can make requests billed to your account. Use .apiKey for development only, and switch to a proxy before release.\nProxy (production)\nFor production, route requests through your own back end with .proxied . The relay at baseURL adds the Claude API credential server-side, so the app ships no key. The headers you provide are sent on every request so your proxy can authorize the caller. Pass [:] if it needs none:\nClaudeLanguageModel (\nname : . sonnet4_6 ,\nauth : . proxied ( headers : [ \"X-App-Token\" : \"...\" ]),\nbaseURL : URL ( string : \"https://api.yourapp.com/claude\" ) !\nYour proxy receives standard Messages API requests, attaches the x-api-key header, and forwards them to https://api.anthropic.com .\nStreaming\nstreamResponse(to:) returns the response incrementally. Each element is a cumulative snapshot of the response so far, not a delta:\nlet stream = session. streamResponse ( to : \"Summarize today's top science stories.\" )\nfor try await partial in stream {\nprint (partial. content )\nStructured output\nAnnotate a type with @Generable and request it with generating: . The model returns a value of that type through structured outputs :\n@Generable\nstruct Trip {\n@Guide (description : \"Destination city\" ) var destination: String\n@Guide (description : \"Length in days\" ) var days: Int\nlet response = try await session. respond ( to : \"Plan a trip to Tokyo.\" , generating : Trip. self )\nprint (response. content . destination )\nStructured output requires a model whose capabilities include it (all compiled-in constants do). If the chosen model does not, the package throws LanguageModelError.unsupportedGenerationGuide rather than silently degrading.\nTool use\nClient-side tools\nThe framework's tools: array works unchanged. Conform your types to Tool , pass them to LanguageModelSession , and the framework invokes them on the device when Claude calls them. See Tool use with Claude .\nlet session = LanguageModelSession ( model : model, tools : [ FindRestaurantsTool ()])\nServer-side tools\nServer tools (web search, web fetch, and code execution) run on Anthropic's infrastructure within a single round trip, with nothing for the framework to invoke on the device. Configure them per model with serverTools: :\nlet model = ClaudeLanguageModel (\nname : . sonnet4_6 ,\nauth : auth,\nserverTools : [\n. webSearch ( maxUses : 5 ),\n. codeExecution ,\n.webSearch and .webFetch accept optional allowedDomains , blockedDomains , and maxUses . Server tool activity surfaces in the transcript as ClaudeServerToolSegment custom segments.\nserverTools is configured on ClaudeLanguageModel rather than on LanguageModelSession because the session type is Apple's. To use different server-tool sets per conversation, construct multiple ClaudeLanguageModel instances.\nImages\nModels whose capabilities include image input declare the framework's vision capability. Pass image content through the framework's standard session API; the package converts it to the Claude API's image format. See Vision for image requirements.\nError handling\nThe package maps Claude API errors onto Apple's LanguageModelError cases where one fits: context-window overflow surfaces as .contextSizeExceeded , HTTP 429 as .rateLimited , a request past the configured timeout as .timeout . Provider errors with no framework equivalent surface as ClaudeError . Pattern-match to drive product flows:\ndo {\nlet response = try await session. respond ( to : prompt)\nprint (response. content )\n} catch ClaudeError. missingCredential {\n// Prompt for an API key.\n} catch let error as LanguageModelError {\n// Framework-shaped errors (rate limits, guardrails, context length, decoding).\n} catch {\n// Transport errors.\nA common pattern is to catch .rateLimited and fall back to SystemLanguageModel for that turn, queue the request, or surface a retry affordance.\nFeature support\nThe package surfaces the Messages API capabilities that the Foundation Models provider protocol can express. Features with no representation in Apple's protocol are not available through it, including:\nPrompt caching controls (the package applies prompt caching automatically; cache TTL and breakpoint placement are not configurable)\nStop sequences\nBatch processing\nFiles API\nToken counting\nBeta headers\nAdditional resources\nReference Covers\nApple Foundation Models documentation LanguageModelSession , @Generable , Transcript , Tool , and the rest of the framework surface\nClaudeForFoundationModels on GitHub Source, the runnable example, and the issue tracker\nClaude API reference The underlying Messages API\nThe package is licensed under Apache 2.0. Bug reports are welcome through GitHub issues. External pull requests are not being accepted during the beta period.\nWas this page helpful?\n ",
+  "clean_text": "Copy page\nClaude for Foundation Models is a Swift package that makes Claude available as a server-side language model in Apple's Foundation Models framework. The package conforms Claude to the framework's LanguageModel protocol, so you drive it with the same LanguageModelSession API you use for Apple's on-device model: respond(to:) , streaming, guided generation, and tool calling all work the same way.\nRequests go directly from your app to the Claude API; Apple is not in the request path and does not see prompts or responses. Usage is billed to your Anthropic account at standard API pricing . Your app decides when to use Claude and when to use Apple's on-device model: pass whichever model you want to each session.\nBeta. This package targets the Foundation Models server-side language model API introduced in the OS 27 betas. APIs may change before general availability.\nClaude for Foundation Models is not a general-purpose Messages API client. Its public surface is the Foundation Models provider conformance plus the configuration types that reach it ( ClaudeLanguageModel , ClaudeModel , AuthMode , ClaudeServerTool ). For direct access to the Messages API in another language, see the Client SDKs .\nRequirements\niOS 27, macOS 27, visionOS 27, or watchOS 27 (all in beta): the OS releases whose Foundation Models framework supports server-side language models\nXcode 27 (beta)\nA Claude API key from the Claude Console for development. See Authentication for production options.\nInstall the package\nAdd the package to your Package.swift :\ndependencies : [\n. package ( url : \"https://github.com/anthropics/ClaudeForFoundationModels.git\" , from : \"0.1.0\" )\nOr in Xcode: File > Add Package Dependencies… and enter the repository URL.\nThen add ClaudeForFoundationModels to your target's dependencies and import it alongside FoundationModels :\nimport FoundationModels\nimport ClaudeForFoundationModels\nQuick start\nClaudeLanguageModel is the entry point. Pass it to LanguageModelSession and use the session exactly as you would with any Foundation Models provider:\nimport FoundationModels\nimport ClaudeForFoundationModels\nlet model = ClaudeLanguageModel (\nname : . sonnet4_6 ,\nauth : . apiKey (ProcessInfo. processInfo . environment [ \"ANTHROPIC_API_KEY\" ] ?? \"\" )\nlet session = LanguageModelSession ( model : model)\nlet response = try await session. respond ( to : \"Plan a 4-day trip to Buenos Aires.\" )\nprint (response. content )\nThe initializer also accepts baseURL (default https://api.anthropic.com ), timeout , and serverTools (see Server-side tools ).\nFor a complete working program, the repository includes Examples/ClaudeExample , a runnable command-line target that streams a chat turn to the terminal, with a --search flag that enables server-side web search for the turn. Running it requires a macOS 27 host.\nChoosing a model\nModel identifiers are values of ClaudeModel . Use a compiled-in constant, or construct one with explicit capabilities for an ID that isn't compiled in yet (see Capabilities ):\nClaudeLanguageModel ( name : . opus4_8 , auth : auth)\nConstants mirror API model IDs ( .opus4_8 is claude-opus-4-8 ) and carry each model's capabilities. New models ship as new constants in package releases; check ClaudeModel in Xcode for the current list, and the Models overview to compare models.\nCapabilities\nEach ClaudeModel declares what it accepts: sampling parameters, effort levels, adaptive thinking, structured output, and image input. The package uses this to decide which request fields to send, because sending a field a model rejects is a hard error. The constants carry the right capabilities. For an ID that isn't compiled in, declare what the model accepts (there is deliberately no shorthand that guesses):\nlet model = ClaudeModel (\nid : \"claude-experimental-x\" ,\ncapabilities : . init ( samplingParams : false , effortLevels : [. low , . high ])\nClaudeLanguageModel ( name : model, auth : auth)\nEffort\nPin a Claude effort level for every request with fixedEffort: . It takes precedence over the framework's per-request reasoning hints, and it's the only way to request .xhigh or .max , because the framework's reasoning levels stop at high. The API defaults to high when no effort is sent:\nClaudeLanguageModel ( name : . opus4_8 , auth : auth, fixedEffort : . xhigh )\nThe level must be one the model accepts. Each ClaudeModel declares which of the five levels ( low , medium , high , xhigh , max ) its model takes, if any: some models don't accept effort at all.\nWhen to use Claude versus the on-device model\nApple's on-device model is fast, private, and works offline, but it is sized for lightweight tasks. Escalate to Claude when you need larger context, frontier reasoning, or server-side tools such as web search and code execution. Because both use the same LanguageModelSession API, you can switch by swapping the model: argument.\nAuthentication\nSet the credential with the auth: parameter.\nAPI key (development)\nPass an API key directly while developing:\nClaudeLanguageModel ( name : . sonnet4_6 , auth : . apiKey ( \"YOUR_API_KEY\" ))\nA key bundled into an app is extractable from the shipping binary, and anyone who extracts it can make requests billed to your account. Use .apiKey for development only, and switch to a proxy before release.\nProxy (production)\nFor production, route requests through your own back end with .proxied . The relay at baseURL adds the Claude API credential server-side, so the app ships no key. The headers you provide are sent on every request so your proxy can authorize the caller. Pass [:] if it needs none:\nClaudeLanguageModel (\nname : . sonnet4_6 ,\nauth : . proxied ( headers : [ \"X-App-Token\" : \"...\" ]),\nbaseURL : URL ( string : \"https://api.yourapp.com/claude\" ) !\nYour proxy receives standard Messages API requests, attaches the x-api-key header, and forwards them to https://api.anthropic.com .\nStreaming\nstreamResponse(to:) returns the response incrementally. Each element is a cumulative snapshot of the response so far, not a delta:\nlet stream = session. streamResponse ( to : \"Summarize today's top science stories.\" )\nfor try await partial in stream {\nprint (partial. content )\nStructured output\nAnnotate a type with @Generable and request it with generating: . The model returns a value of that type through structured outputs :\n@Generable\nstruct Trip {\n@Guide (description : \"Destination city\" ) var destination: String\n@Guide (description : \"Length in days\" ) var days: Int\nlet response = try await session. respond ( to : \"Plan a trip to Tokyo.\" , generating : Trip. self )\nprint (response. content . destination )\nStructured output requires a model whose capabilities include it (all compiled-in constants do). If the chosen model does not, the package throws LanguageModelError.unsupportedGenerationGuide rather than silently degrading.\nTool use\nClient-side tools\nThe framework's tools: array works unchanged. Conform your types to Tool , pass them to LanguageModelSession , and the framework invokes them on the device when Claude calls them. See Tool use with Claude .\nlet session = LanguageModelSession ( model : model, tools : [ FindRestaurantsTool ()])\nServer-side tools\nServer tools (web search, web fetch, and code execution) run on Anthropic's infrastructure within a single round trip, with nothing for the framework to invoke on the device. Configure them per model with serverTools: :\nlet model = ClaudeLanguageModel (\nname : . sonnet4_6 ,\nauth : auth,\nserverTools : [\n. webSearch ( maxUses : 5 ),\n. codeExecution ,\n.webSearch and .webFetch accept optional allowedDomains , blockedDomains , and maxUses . Server tool activity surfaces in the transcript as ClaudeServerToolSegment custom segments.\nserverTools is configured on ClaudeLanguageModel rather than on LanguageModelSession because the session type is Apple's. To use different server-tool sets per conversation, construct multiple ClaudeLanguageModel instances.\nImages\nModels whose capabilities include image input declare the framework's vision capability. Pass image content through the framework's standard session API; the package converts it to the Claude API's image format. See Vision for image requirements.\nError handling\nThe package maps Claude API errors onto Apple's LanguageModelError cases where one fits: context-window overflow surfaces as .contextSizeExceeded , HTTP 429 as .rateLimited , a request past the configured timeout as .timeout . Provider errors with no framework equivalent surface as ClaudeError . Pattern-match to drive product flows:\ndo {\nlet response = try await session. respond ( to : prompt)\nprint (response. content )\n} catch ClaudeError. missingCredential {\n// Prompt for an API key.\n} catch let error as LanguageModelError {\n// Framework-shaped errors (rate limits, guardrails, context length, decoding).\n} catch {\n// Transport errors.\nA common pattern is to catch .rateLimited and fall back to SystemLanguageModel for that turn, queue the request, or surface a retry affordance.\nFeature support\nThe package surfaces the Messages API capabilities that the Foundation Models provider protocol can express. Features with no representation in Apple's protocol are not available through it, including:\nPrompt caching controls (the package applies prompt caching automatically; cache TTL and breakpoint placement are not configurable)\nStop sequences\nBatch processing\nFiles API\nToken counting\nBeta headers\nAdditional resources\nReference Covers\nApple Foundation Models documentation LanguageModelSession , @Generable , Transcript , Tool , and the rest of the framework surface\nClaudeForFoundationModels on GitHub Source, the runnable example, and the issue tracker\nClaude API reference The underlying Messages API\nThe package is licensed under Apache 2.0. Bug reports are welcome through GitHub issues. External pull requests are not being accepted during the beta period.\nWas this page helpful?\n ",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-16/r-062-苹果基础模型.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-16/r-062-苹果基础模型.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 9898,
+    "paragraph_count": 83,
+    "sentence_count": 95,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0042,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 9898,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "d1c3e4eb20603919",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "苹果基础模型",
+    "discovery_summary": "苹果基础模型（Apple Foundation Models）在 Hacker News 上获得 104 个点赞，相关链接指向 platform.claude.com。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models",
+    "discovered_at": "2026-06-16T03:02:47.035Z",
+    "rank_on_page": 238,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "8edad02aa41d0848",
+  "content_hash": "d1c3e4eb20603919",
+  "full_text_hash": "d1c3e4eb20603919",
+  "semantic_hash": "d00296397114138d",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-15T09:01:16.022Z",
+  "last_seen_at": "2026-06-16T03:08:05.007Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "苹果基础模型（Apple Foundation Models）在 Hacker News 上获得 104 个点赞，相关链接指向 platform.claude.com。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Copy page Claude for Foundation Models is a Swift package that makes Claude available as a server-side language model in Apple's Foundation Models framework.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The package conforms Claude to the framework's LanguageModel protocol, so you drive it with the same LanguageModelSession API you use for Apple's on-device model: respond(to:) , streaming, guided generation, and tool calling all work the same way.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Requests go directly from your app to the Claude API; Apple is not in the request path and does not see prompts or responses.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Usage is billed to your Anthropic account at standard API pricing .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Your app decides when to use Claude and when to use Apple's on-device model: pass whichever model you want to each session.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "Anthropic",
+      "GitHub",
+      "Apple"
+    ],
+    "products": [
+      "claude",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "104",
+      "27 b",
+      "27",
+      "0.1",
+      "0",
+      "4",
+      "6",
+      "8"
+    ],
+    "quotes": [
+      "https://github.com/anthropics/ClaudeForFoundationModels.git",
+      "ANTHROPIC_API_KEY",
+      " )\nlet session = LanguageModelSession ( model : model)\nlet response = try await session. respond ( to : ",
+      "claude-experimental-x",
+      "YOUR_API_KEY"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "苹果基础模型（Apple Foundation Models）在 Hacker News 上获得 104 个点赞，相关链接指向 platform.claude.com。",
+      "Copy page Claude for Foundation Models is a Swift package that makes Claude available as a server-side language model in Apple's Foundation Models framework.",
+      "The package conforms Claude to the framework's LanguageModel protocol, so you drive it with the same LanguageModelSession API you use for Apple's on-device model: respond(to:) , streaming, guided generation, and tool calling all work the same way."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "user_feedback_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 苹果基础模型\n\n- raw_id: R-062\n- original_url: https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-06-16T03:08:05.007Z\n\n## clean_text\n\nCopy page\nClaude for Foundation Models is a Swift package that makes Claude available as a server-side language model in Apple's Foundation Models framework. The package conforms Claude to the framework's LanguageModel protocol, so you drive it with the same LanguageModelSession API you use for Apple's on-device model: respond(to:) , streaming, guided generation, and tool calling all work the same way.\nRequests go directly from your app to the Claude API; Apple is not in the request path and does not see prompts or responses. Usage is billed to your Anthropic account at standard API pricing . Your app decides when to use Claude and when to use Apple's on-device model: pass whichever model you want to each session.\nBeta. This package targets the Foundation Models server-side language model API introduced in the OS 27 betas. APIs may change before general availability.\nClaude for Foundation Models is not a general-purpose Messages API client. Its public surface is the Foundation Models provider conformance plus the configuration types that reach it ( ClaudeLanguageModel , ClaudeModel , AuthMode , ClaudeServerTool ). For direct access to the Messages API in another language, see the Client SDKs .\nRequirements\niOS 27, macOS 27, visionOS 27, or watchOS 27 (all in beta): the OS releases whose Foundation Models framework supports server-side language models\nXcode 27 (beta)\nA Claude API key from the Claude Console for development. See Authentication for production options.\nInstall the package\nAdd the package to your Package.swift :\ndependencies : [\n. package ( url : \"https://github.com/anthropics/ClaudeForFoundationModels.git\" , from : \"0.1.0\" )\nOr in Xcode: File > Add Package Dependencies… and enter the repository URL.\nThen add ClaudeForFoundationModels to your target's dependencies and import it alongside FoundationModels :\nimport FoundationModels\nimport ClaudeForFoundationModels\nQuick start\nClaudeLanguageModel is the entry point. Pass it to LanguageModelSession and use the session exactly as you would with any Foundation Models provider:\nimport FoundationModels\nimport ClaudeForFoundationModels\nlet model = ClaudeLanguageModel (\nname : . sonnet4_6 ,\nauth : . apiKey (ProcessInfo. processInfo . environment [ \"ANTHROPIC_API_KEY\" ] ?? \"\" )\nlet session = LanguageModelSession ( model : model)\nlet response = try await session. respond ( to : \"Plan a 4-day trip to Buenos Aires.\" )\nprint (response. content )\nThe initializer also accepts baseURL (default https://api.anthropic.com ), timeout , and serverTools (see Server-side tools ).\nFor a complete working program, the repository includes Examples/ClaudeExample , a runnable command-line target that streams a chat turn to the terminal, with a --search flag that enables server-side web search for the turn. Running it requires a macOS 27 host.\nChoosing a model\nModel identifiers are values of ClaudeModel . Use a compiled-in constant, or construct one with explicit capabilities for an ID that isn't compiled in yet (see Capabilities ):\nClaudeLanguageModel ( name : . opus4_8 , auth : auth)\nConstants mirror API model IDs ( .opus4_8 is claude-opus-4-8 ) and carry each model's capabilities. New models ship as new constants in package releases; check ClaudeModel in Xcode for the current list, and the Models overview to compare models.\nCapabilities\nEach ClaudeModel declares what it accepts: sampling parameters, effort levels, adaptive thinking, structured output, and image input. The package uses this to decide which request fields to send, because sending a field a model rejects is a hard error. The constants carry the right capabilities. For an ID that isn't compiled in, declare what the model accepts (there is deliberately no shorthand that guesses):\nlet model = ClaudeModel (\nid : \"claude-experimental-x\" ,\ncapabilities : . init ( samplingParams : false , effortLevels : [. low , . high ])\nClaudeLanguageModel ( name : model, auth : auth)\nEffort\nPin a Claude effort level for every request with fixedEffort: . It takes precedence over the framework's per-request reasoning hints, and it's the only way to request .xhigh or .max , because the framework's reasoning levels stop at high. The API defaults to high when no effort is sent:\nClaudeLanguageModel ( name : . opus4_8 , auth : auth, fixedEffort : . xhigh )\nThe level must be one the model accepts. Each ClaudeModel declares which of the five levels ( low , medium , high , xhigh , max ) its model takes, if any: some models don't accept effort at all.\nWhen to use Claude versus the on-device model\nApple's on-device model is fast, private, and works offline, but it is sized for lightweight tasks. Escalate to Claude when you need larger context, frontier reasoning, or server-side tools such as web search and code execution. Because both use the same LanguageModelSession API, you can switch by swapping the model: argument.\nAuthentication\nSet the credential with the auth: parameter.\nAPI key (development)\nPass an API key directly while developing:\nClaudeLanguageModel ( name : . sonnet4_6 , auth : . apiKey ( \"YOUR_API_KEY\" ))\nA key bundled into an app is extractable from the shipping binary, and anyone who extracts it can make requests billed to your account. Use .apiKey for development only, and switch to a proxy before release.\nProxy (production)\nFor production, route requests through your own back end with .proxied . The relay at baseURL adds the Claude API credential server-side, so the app ships no key. The headers you provide are sent on every request so your proxy can authorize the caller. Pass [:] if it needs none:\nClaudeLanguageModel (\nname : . sonnet4_6 ,\nauth : . proxied ( headers : [ \"X-App-Token\" : \"...\" ]),\nbaseURL : URL ( string : \"https://api.yourapp.com/claude\" ) !\nYour proxy receives standard Messages API requests, attaches the x-api-key header, and forwards them to https://api.anthropic.com .\nStreaming\nstreamResponse(to:) returns the response incrementally. Each element is a cumulative snapshot of the response so far, not a delta:\nlet stream = session. streamResponse ( to : \"Summarize today's top science stories.\" )\nfor try await partial in stream {\nprint (partial. content )\nStructured output\nAnnotate a type with @Generable and request it with generating: . The model returns a value of that type through structured outputs :\n@Generable\nstruct Trip {\n@Guide (description : \"Destination city\" ) var destination: String\n@Guide (description : \"Length in days\" ) var days: Int\nlet response = try await session. respond ( to : \"Plan a trip to Tokyo.\" , generating : Trip. self )\nprint (response. content . destination )\nStructured output requires a model whose capabilities include it (all compiled-in constants do). If the chosen model does not, the package throws LanguageModelError.unsupportedGenerationGuide rather than silently degrading.\nTool use\nClient-side tools\nThe framework's tools: array works unchanged. Conform your types to Tool , pass them to LanguageModelSession , and the framework invokes them on the device when Claude calls them. See Tool use with Claude .\nlet session = LanguageModelSession ( model : model, tools : [ FindRestaurantsTool ()])\nServer-side tools\nServer tools (web search, web fetch, and code execution) run on Anthropic's infrastructure within a single round trip, with nothing for the framework to invoke on the device. Configure them per model with serverTools: :\nlet model = ClaudeLanguageModel (\nname : . sonnet4_6 ,\nauth : auth,\nserverTools : [\n. webSearch ( maxUses : 5 ),\n. codeExecution ,\n.webSearch and .webFetch accept optional allowedDomains , blockedDomains , and maxUses . Server tool activity surfaces in the transcript as ClaudeServerToolSegment custom segments.\nserverTools is configured on ClaudeLanguageModel rather than on LanguageModelSession because the session type is Apple's. To use different server-tool sets per conversation, construct multiple ClaudeLanguageModel instances.\nImages\nModels whose capabilities include image input declare the framework's vision capability. Pass image content through the framework's standard session API; the package converts it to the Claude API's image format. See Vision for image requirements.\nError handling\nThe package maps Claude API errors onto Apple's LanguageModelError cases where one fits: context-window overflow surfaces as .contextSizeExceeded , HTTP 429 as .rateLimited , a request past the configured timeout as .timeout . Provider errors with no framework equivalent surface as ClaudeError . Pattern-match to drive product flows:\ndo {\nlet response = try await session. respond ( to : prompt)\nprint (response. content )\n} catch ClaudeError. missingCredential {\n// Prompt for an API key.\n} catch let error as LanguageModelError {\n// Framework-shaped errors (rate limits, guardrails, context length, decoding).\n} catch {\n// Transport errors.\nA common pattern is to catch .rateLimited and fall back to SystemLanguageModel for that turn, queue the request, or surface a retry affordance.\nFeature support\nThe package surfaces the Messages API capabilities that the Foundation Models provider protocol can express. Features with no representation in Apple's protocol are not available through it, including:\nPrompt caching controls (the package applies prompt caching automatically; cache TTL and breakpoint placement are not configurable)\nStop sequences\nBatch processing\nFiles API\nToken counting\nBeta headers\nAdditional resources\nReference Covers\nApple Foundation Models documentation LanguageModelSession , @Generable , Transcript , Tool , and the rest of the framework surface\nClaudeForFoundationModels on GitHub Source, the runnable example, and the issue tracker\nClaude API reference The underlying Messages API\nThe package is licensed under Apache 2.0. Bug reports are welcome through GitHub issues. External pull requests are not being accepted during the beta period.\nWas this page helpful?\n \n\n## full_text\n\nCopy page\nClaude for Foundation Models is a Swift package that makes Claude available as a server-side language model in Apple's Foundation Models framework. The package conforms Claude to the framework's LanguageModel protocol, so you drive it with the same LanguageModelSession API you use for Apple's on-device model: respond(to:) , streaming, guided generation, and tool calling all work the same way.\nRequests go directly from your app to the Claude API; Apple is not in the request path and does not see prompts or responses. Usage is billed to your Anthropic account at standard API pricing . Your app decides when to use Claude and when to use Apple's on-device model: pass whichever model you want to each session.\nBeta. This package targets the Foundation Models server-side language model API introduced in the OS 27 betas. APIs may change before general availability.\nClaude for Foundation Models is not a general-purpose Messages API client. Its public surface is the Foundation Models provider conformance plus the configuration types that reach it ( ClaudeLanguageModel , ClaudeModel , AuthMode , ClaudeServerTool ). For direct access to the Messages API in another language, see the Client SDKs .\nRequirements\niOS 27, macOS 27, visionOS 27, or watchOS 27 (all in beta): the OS releases whose Foundation Models framework supports server-side language models\nXcode 27 (beta)\nA Claude API key from the Claude Console for development. See Authentication for production options.\nInstall the package\nAdd the package to your Package.swift :\ndependencies : [\n. package ( url : \"https://github.com/anthropics/ClaudeForFoundationModels.git\" , from : \"0.1.0\" )\nOr in Xcode: File > Add Package Dependencies… and enter the repository URL.\nThen add ClaudeForFoundationModels to your target's dependencies and import it alongside FoundationModels :\nimport FoundationModels\nimport ClaudeForFoundationModels\nQuick start\nClaudeLanguageModel is the entry point. Pass it to LanguageModelSession and use the session exactly as you would with any Foundation Models provider:\nimport FoundationModels\nimport ClaudeForFoundationModels\nlet model = ClaudeLanguageModel (\nname : . sonnet4_6 ,\nauth : . apiKey (ProcessInfo. processInfo . environment [ \"ANTHROPIC_API_KEY\" ] ?? \"\" )\nlet session = LanguageModelSession ( model : model)\nlet response = try await session. respond ( to : \"Plan a 4-day trip to Buenos Aires.\" )\nprint (response. content )\nThe initializer also accepts baseURL (default https://api.anthropic.com ), timeout , and serverTools (see Server-side tools ).\nFor a complete working program, the repository includes Examples/ClaudeExample , a runnable command-line target that streams a chat turn to the terminal, with a --search flag that enables server-side web search for the turn. Running it requires a macOS 27 host.\nChoosing a model\nModel identifiers are values of ClaudeModel . Use a compiled-in constant, or construct one with explicit capabilities for an ID that isn't compiled in yet (see Capabilities ):\nClaudeLanguageModel ( name : . opus4_8 , auth : auth)\nConstants mirror API model IDs ( .opus4_8 is claude-opus-4-8 ) and carry each model's capabilities. New models ship as new constants in package releases; check ClaudeModel in Xcode for the current list, and the Models overview to compare models.\nCapabilities\nEach ClaudeModel declares what it accepts: sampling parameters, effort levels, adaptive thinking, structured output, and image input. The package uses this to decide which request fields to send, because sending a field a model rejects is a hard error. The constants carry the right capabilities. For an ID that isn't compiled in, declare what the model accepts (there is deliberately no shorthand that guesses):\nlet model = ClaudeModel (\nid : \"claude-experimental-x\" ,\ncapabilities : . init ( samplingParams : false , effortLevels : [. low , . high ])\nClaudeLanguageModel ( name : model, auth : auth)\nEffort\nPin a Claude effort level for every request with fixedEffort: . It takes precedence over the framework's per-request reasoning hints, and it's the only way to request .xhigh or .max , because the framework's reasoning levels stop at high. The API defaults to high when no effort is sent:\nClaudeLanguageModel ( name : . opus4_8 , auth : auth, fixedEffort : . xhigh )\nThe level must be one the model accepts. Each ClaudeModel declares which of the five levels ( low , medium , high , xhigh , max ) its model takes, if any: some models don't accept effort at all.\nWhen to use Claude versus the on-device model\nApple's on-device model is fast, private, and works offline, but it is sized for lightweight tasks. Escalate to Claude when you need larger context, frontier reasoning, or server-side tools such as web search and code execution. Because both use the same LanguageModelSession API, you can switch by swapping the model: argument.\nAuthentication\nSet the credential with the auth: parameter.\nAPI key (development)\nPass an API key directly while developing:\nClaudeLanguageModel ( name : . sonnet4_6 , auth : . apiKey ( \"YOUR_API_KEY\" ))\nA key bundled into an app is extractable from the shipping binary, and anyone who extracts it can make requests billed to your account. Use .apiKey for development only, and switch to a proxy before release.\nProxy (production)\nFor production, route requests through your own back end with .proxied . The relay at baseURL adds the Claude API credential server-side, so the app ships no key. The headers you provide are sent on every request so your proxy can authorize the caller. Pass [:] if it needs none:\nClaudeLanguageModel (\nname : . sonnet4_6 ,\nauth : . proxied ( headers : [ \"X-App-Token\" : \"...\" ]),\nbaseURL : URL ( string : \"https://api.yourapp.com/claude\" ) !\nYour proxy receives standard Messages API requests, attaches the x-api-key header, and forwards them to https://api.anthropic.com .\nStreaming\nstreamResponse(to:) returns the response incrementally. Each element is a cumulative snapshot of the response so far, not a delta:\nlet stream = session. streamResponse ( to : \"Summarize today's top science stories.\" )\nfor try await partial in stream {\nprint (partial. content )\nStructured output\nAnnotate a type with @Generable and request it with generating: . The model returns a value of that type through structured outputs :\n@Generable\nstruct Trip {\n@Guide (description : \"Destination city\" ) var destination: String\n@Guide (description : \"Length in days\" ) var days: Int\nlet response = try await session. respond ( to : \"Plan a trip to Tokyo.\" , generating : Trip. self )\nprint (response. content . destination )\nStructured output requires a model whose capabilities include it (all compiled-in constants do). If the chosen model does not, the package throws LanguageModelError.unsupportedGenerationGuide rather than silently degrading.\nTool use\nClient-side tools\nThe framework's tools: array works unchanged. Conform your types to Tool , pass them to LanguageModelSession , and the framework invokes them on the device when Claude calls them. See Tool use with Claude .\nlet session = LanguageModelSession ( model : model, tools : [ FindRestaurantsTool ()])\nServer-side tools\nServer tools (web search, web fetch, and code execution) run on Anthropic's infrastructure within a single round trip, with nothing for the framework to invoke on the device. Configure them per model with serverTools: :\nlet model = ClaudeLanguageModel (\nname : . sonnet4_6 ,\nauth : auth,\nserverTools : [\n. webSearch ( maxUses : 5 ),\n. codeExecution ,\n.webSearch and .webFetch accept optional allowedDomains , blockedDomains , and maxUses . Server tool activity surfaces in the transcript as ClaudeServerToolSegment custom segments.\nserverTools is configured on ClaudeLanguageModel rather than on LanguageModelSession because the session type is Apple's. To use different server-tool sets per conversation, construct multiple ClaudeLanguageModel instances.\nImages\nModels whose capabilities include image input declare the framework's vision capability. Pass image content through the framework's standard session API; the package converts it to the Claude API's image format. See Vision for image requirements.\nError handling\nThe package maps Claude API errors onto Apple's LanguageModelError cases where one fits: context-window overflow surfaces as .contextSizeExceeded , HTTP 429 as .rateLimited , a request past the configured timeout as .timeout . Provider errors with no framework equivalent surface as ClaudeError . Pattern-match to drive product flows:\ndo {\nlet response = try await session. respond ( to : prompt)\nprint (response. content )\n} catch ClaudeError. missingCredential {\n// Prompt for an API key.\n} catch let error as LanguageModelError {\n// Framework-shaped errors (rate limits, guardrails, context length, decoding).\n} catch {\n// Transport errors.\nA common pattern is to catch .rateLimited and fall back to SystemLanguageModel for that turn, queue the request, or surface a retry affordance.\nFeature support\nThe package surfaces the Messages API capabilities that the Foundation Models provider protocol can express. Features with no representation in Apple's protocol are not available through it, including:\nPrompt caching controls (the package applies prompt caching automatically; cache TTL and breakpoint placement are not configurable)\nStop sequences\nBatch processing\nFiles API\nToken counting\nBeta headers\nAdditional resources\nReference Covers\nApple Foundation Models documentation LanguageModelSession , @Generable , Transcript , Tool , and the rest of the framework surface\nClaudeForFoundationModels on GitHub Source, the runnable example, and the issue tracker\nClaude API reference The underlying Messages API\nThe package is licensed under Apache 2.0. Bug reports are welcome through GitHub issues. External pull requests are not being accepted during the beta period.\nWas this page helpful?\n \n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 97\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n1. [company_action / daily_observation, heatmap, change, case, trend / high] 苹果基础模型（Apple Foundation Models）在 Hacker News 上获得 104 个点赞，相关链接指向 platform.claude.com。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Copy page Claude for Foundation Models is a Swift package that makes Claude available as a server-side language model in Apple's Foundation Models framework.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] The package conforms Claude to the framework's LanguageModel protocol, so you drive it with the same LanguageModelSession API you use for Apple's on-device model: respond(to:) , streaming, guided generation, and tool calling all work the same way.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] Requests go directly from your app to the Claude API; Apple is not in the request path and does not see prompts or responses.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] Usage is billed to your Anthropic account at standard API pricing .\n6. [company_action / daily_observation, heatmap, change, case, trend / high] Your app decides when to use Claude and when to use Apple's on-device model: pass whichever model you want to each session.\n"
+}

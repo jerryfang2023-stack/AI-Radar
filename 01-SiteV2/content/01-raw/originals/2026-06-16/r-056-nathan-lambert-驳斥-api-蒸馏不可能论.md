@@ -1,0 +1,263 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-056
+title: "Nathan Lambert 驳斥 API 蒸馏不可能论"
+original_url: "https://x.com/natolambert/status/2066538987100250127"
+canonical_url: "https://x.com/natolambert/status/2066538987100250127"
+source_name: "X：Nathan Lambert (@natolambert)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-15T15:11:03.000Z"
+collected_at: 2026-06-16T03:08:04.992Z
+language: mixed
+full_text_hash: 4dbaf1e681d41585
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-16/r-056-nathan-lambert-驳斥-api-蒸馏不可能论.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-16/r-056-nathan-lambert-驳斥-api-蒸馏不可能论.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":4993,"paragraph_count":26,"sentence_count":18,"boilerplate_hits":1,"symbol_ratio":0.012,"method":"main"}
+has_full_text: true
+content_length: 4993
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4dbaf1e681d41585","missing":[]}
+source_volatility: high
+community_name: "X：Nathan Lambert (@natolambert)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Nathan Lambert 驳斥 API 蒸馏不可能论","discovery_summary":"Lambert 指出，美国实验室用\"蒸馏\"一词掩盖了 API 劫持问题。中国实验室通过破解 API 获取推理痕迹，帮助在新领域引导推理行为。他认为 API 提供者很难完全防止劫持，因为推理模型本身倾向于输出推理痕迹，完全修补会降低模型智能。他呼吁实验室更透明地说明这一过程，以便开展知情政策讨论。","source_name":"X：Nathan Lambert (@natolambert)","origin_url":"https://x.com/natolambert/status/2066538987100250127","discovered_at":"2026-06-16T03:02:47.019Z","rank_on_page":155,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 4bd4badf8620d2d1
+content_hash: 4dbaf1e681d41585
+semantic_hash: 75b015f29e2f5839
+duplicate_of: ""
+first_seen_at: "2026-06-15T15:11:03.000Z"
+last_seen_at: 2026-06-16T03:08:04.992Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":4}
+business_elements: {"companies":["X","Nathan Lambert (@natolambert)","Anthropic"],"products":["claude"],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["1","2","3","13","2023","03","2601.15394","11"],"quotes":[]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post Nathan Lambert @natolambert This isn't very true.","A big part of the problem is that the labs use the term distillation, which is a general post-training technique, in lieu of a specific issue of jailbreaking the API.","(1) There is a second debate of *how* impactful distillation is, but it is definitely helpful."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"opinion","text":"Lambert 指出，美国实验室用\"蒸馏\"一词掩盖了 API 劫持问题。中国实验室通过破解 API 获取推理痕迹，帮助在新领域引导推理行为。他认为 API 提供者很难完全防止劫持，因为推理模型本身倾向于输出推理痕迹，完全修补会降低模型智能。他呼吁实验室更透明地说明这一过程，以便开展知情政策讨论。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Post Log in Sign up Post Nathan Lambert @natolambert This isn't very true.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"A big part of the problem is that the labs use the term distillation, which is a general post-training technique, in lieu of a specific issue of jailbreaking the API.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"(1) There is a second debate of *how* impactful distillation is, but it is definitely helpful.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"(2) This is entirely based on how the Chinese labs are jailbreaking the APIs to get reasoning traces out, which help bootstrap reasoning behaviors in new domains.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"There's a third point (3) which I take an excerpt from my recent piece, where the labs need to be more transparent why especially point (2) is true.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Nathan Lambert 驳斥 API 蒸馏不可能论
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Nathan Lambert
+@natolambert
+This isn't very true.
+A big part of the problem is that the labs use the term distillation, which is a general post-training technique, in lieu of a specific issue of jailbreaking the API. (1)
+There is a second debate of *how* impactful distillation is, but it is definitely helpful. (2) This is entirely based on how the Chinese labs are jailbreaking the APIs to get reasoning traces out, which help bootstrap reasoning behaviors in new domains.
+There's a third point (3) which I take an excerpt from my recent piece, where the labs need to be more transparent why especially point (2) is true. From the third piece:
+On the point of distillation, my hypothesis is that API builders don’t have an easy time preventing hacks or jailbreaking because it’s a deeply grounded property of reasoning models to want to output the reasoning traces, and it would make the model far less intelligent to fully patch the behavior. This is based on a few assumptions:
+a) Chinese labs are not just showing up as customers to Anthropic’s API and paying for tokens in the intended input-output form. If the Chinese labs are paying for intended use behaviors, despite being banned by the terms and conditions, I don’t have a lot of sympathy for the frontier labs manifesting policy actions against this.
+b) Reasoning traces are disproportionately effective at seeding behavior in downstream models.
+c) Leading labs work very hard to patch the pipeline of these jailbreaks.
+So, my logical conclusion is that the model companies would have to weaken their economic position to fully protect their IP. If this is the case, Anthropic would get a lot more sympathy from the AI research community by being transparent. It would also be far easier to have informed policy discussions, and not rely on me proposing Occam’s razor explanations for what the API jailbreaking looks like.
+There's no need to misinform people because the labs use a bad term. The labs use this term partially to make the discourse confusing, as you're doing.
+(1) See interconnects.ai/p/the-distilla…
+(2) See: interconnects.ai/p/how-much-doe…
+(3) See: interconnects.ai/p/claude-fable…
+antirez
+@antirez
+13h
+Another important thing: Chinese models are not strong because they distill US models. Distillation of models via API is *impossible*. If somebody tells you the contrary, they don't understand machine learning:
+Readers added context
+Distillation from raw LLM responses* is possible with API access only, e.g. Alpaca and Vicuna were trained this way
+crfm.stanford.edu/2023/03/13/alp…
+lmsys.org/blog/2023-03-3…
+*Sometimes called ‘hard distillation’ unlike ‘soft distillation’ which does use some logits arxiv.org/pdf/2601.15394…
+The distillation panic
+From interconnects.ai
+3:11 PM · Jun 15, 2026 39.2K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 15
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 3 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 236
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 3 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 133
+Read 10 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Nathan Lambert
+@natolambert
+This isn't very true.
+A big part of the problem is that the labs use the term distillation, which is a general post-training technique, in lieu of a specific issue of jailbreaking the API. (1)
+There is a second debate of *how* impactful distillation is, but it is definitely helpful. (2) This is entirely based on how the Chinese labs are jailbreaking the APIs to get reasoning traces out, which help bootstrap reasoning behaviors in new domains.
+There's a third point (3) which I take an excerpt from my recent piece, where the labs need to be more transparent why especially point (2) is true. From the third piece:
+On the point of distillation, my hypothesis is that API builders don’t have an easy time preventing hacks or jailbreaking because it’s a deeply grounded property of reasoning models to want to output the reasoning traces, and it would make the model far less intelligent to fully patch the behavior. This is based on a few assumptions:
+a) Chinese labs are not just showing up as customers to Anthropic’s API and paying for tokens in the intended input-output form. If the Chinese labs are paying for intended use behaviors, despite being banned by the terms and conditions, I don’t have a lot of sympathy for the frontier labs manifesting policy actions against this.
+b) Reasoning traces are disproportionately effective at seeding behavior in downstream models.
+c) Leading labs work very hard to patch the pipeline of these jailbreaks.
+So, my logical conclusion is that the model companies would have to weaken their economic position to fully protect their IP. If this is the case, Anthropic would get a lot more sympathy from the AI research community by being transparent. It would also be far easier to have informed policy discussions, and not rely on me proposing Occam’s razor explanations for what the API jailbreaking looks like.
+There's no need to misinform people because the labs use a bad term. The labs use this term partially to make the discourse confusing, as you're doing.
+(1) See interconnects.ai/p/the-distilla…
+(2) See: interconnects.ai/p/how-much-doe…
+(3) See: interconnects.ai/p/claude-fable…
+antirez
+@antirez
+13h
+Another important thing: Chinese models are not strong because they distill US models. Distillation of models via API is *impossible*. If somebody tells you the contrary, they don't understand machine learning:
+Readers added context
+Distillation from raw LLM responses* is possible with API access only, e.g. Alpaca and Vicuna were trained this way
+crfm.stanford.edu/2023/03/13/alp…
+lmsys.org/blog/2023-03-3…
+*Sometimes called ‘hard distillation’ unlike ‘soft distillation’ which does use some logits arxiv.org/pdf/2601.15394…
+The distillation panic
+From interconnects.ai
+3:11 PM · Jun 15, 2026 39.2K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 15
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 3 6 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 236
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 3 3 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 133
+Read 10 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 94
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":4993,"paragraph_count":26,"sentence_count":18,"boilerplate_hits":1,"symbol_ratio":0.012,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   Lambert 指出，美国实验室用"蒸馏"一词掩盖了 API 劫持问题。中国实验室通过破解 API 获取推理痕迹，帮助在新领域引导推理行为。他认为 API 提供者很难完全防止劫持，因为推理模型本身倾向于输出推理痕迹，完全修补会降低模型智能。他呼吁实验室更透明地说明这一过程，以便开展知情政策讨论。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Post Log in Sign up Post Nathan Lambert @natolambert This isn't very true.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   A big part of the problem is that the labs use the term distillation, which is a general post-training technique, in lieu of a specific issue of jailbreaking the API.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   (1) There is a second debate of *how* impactful distillation is, but it is definitely helpful.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   (2) This is entirely based on how the Chinese labs are jailbreaking the APIs to get reasoning traces out, which help bootstrap reasoning behaviors in new domains.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   There's a third point (3) which I take an excerpt from my recent piece, where the labs need to be more transparent why especially point (2) is true.
+
+## business_elements
+
+- companies: X, Nathan Lambert (@natolambert), Anthropic
+- products: claude
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 1, 2, 3, 13, 2023, 03, 2601.15394, 11
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post Nathan Lambert @natolambert This isn't very true. / A big part of the problem is that the labs use the term distillation, which is a general post-training technique, in lieu of a specific issue of jailbreaking the API. / (1) There is a second debate of *how* impactful distillation is, but it is definitely helpful.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Nathan Lambert (@natolambert)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Nathan Lambert 驳斥 API 蒸馏不可能论","discovery_summary":"Lambert 指出，美国实验室用\"蒸馏\"一词掩盖了 API 劫持问题。中国实验室通过破解 API 获取推理痕迹，帮助在新领域引导推理行为。他认为 API 提供者很难完全防止劫持，因为推理模型本身倾向于输出推理痕迹，完全修补会降低模型智能。他呼吁实验室更透明地说明这一过程，以便开展知情政策讨论。","source_name":"X：Nathan Lambert (@natolambert)","origin_url":"https://x.com/natolambert/status/2066538987100250127","discovered_at":"2026-06-16T03:02:47.019Z","rank_on_page":155,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Lambert 指出，美国实验室用"蒸馏"一词掩盖了 API 劫持问题。中国实验室通过破解 API 获取推理痕迹，帮助在新领域引导推理行为。他认为 API 提供者很难完全防止劫持，因为推理模型本身倾向于输出推理痕迹，完全修补会降低模型智能。他呼吁实验室更透明地说明这一过程，以便开展知情政策讨论。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

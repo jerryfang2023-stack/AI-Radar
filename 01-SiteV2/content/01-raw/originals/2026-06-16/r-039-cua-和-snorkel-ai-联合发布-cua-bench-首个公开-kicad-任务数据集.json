@@ -1,0 +1,263 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-039",
+  "title": "Cua 和 Snorkel AI 联合发布 Cua-Bench：首个公开 KiCad 任务数据集",
+  "original_url": "https://x.com/shao__meng/status/2066684840033026274",
+  "canonical_url": "https://x.com/shao__meng/status/2066684840033026274",
+  "source_name": "X：邵猛 (@shao__meng)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": false,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-16T00:50:37.000Z",
+  "collected_at": "2026-06-16T03:08:04.942Z",
+  "language": "mixed",
+  "full_text": "Post\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nCua 和 Snorkel AI 联合发布「Cua-Bench」：评测 Agent 在专业软件上的 Computer Use 能力\n@ trycua @ SnorkelAI\nCua-Bench 首个公开数据集聚焦 KiCad，一个完整的电子设计自动化工具，25 道任务均由执业电气工程师编写、第二人复核，覆盖从「改一个电容值」到「从零搭建双运放电路」等真实工作场景。\nsnorkel.ai/blog/cua-bench…\n首批测试结果\n没有一个模型通过四分之一，最强也只有 24% 的完全通过率：\n1. GPT-5.5：6 / 25 完全通过，0 / 25 部分通过\n2. Claude Sonnet 4.5：5 / 25 完全通过，3 / 25 部分通过\n3. Claude Haiku 4.5：5 / 25 完全通过，3 / 25 部分通过\n最重要的发现：「编辑现有」与「从零搭建」之间的能力断崖\n· 所有完全通过的任务，都是对已有原理图的局部修改（改元件值、换电源端口、调整偏置点等）。\n· 16 道从零搭建任务：0 成功。 模型能放元件，但很少完成布线；任务结束时连线往往仍是未完成状态。\n瓶颈在执行层：规划多步流程、在复杂 GUI 中定位与操作、自我校验、在步数预算耗尽前保持任务不漂移。\nSnorkel 的深度分析进一步指出：步数上限不是主因。 两个失败任务放宽到 500 步仍失败；而所有成功案例都在 150 步内完成。问题出在计划与操作效率，而非单纯「时间不够」\n典型失败模式（可复现、可归类）\n· 导航开销大（~84%）：首次启动弹窗、误进 PCB 编辑器而非原理图编辑器，恢复就消耗 25–70 步。\n· 操作粒度过细（~84%）：每轮只做一个点击 + 大段自我叙述，工程师三步能完成的事拆成十轮。\n· 视图控制混乱（~76%）：不用 Home 键 fit，在极端缩放间来回 scroll，元件一出视野就「丢失」。\n· 布线未完成（~72%）：16 个因步数耗尽而失败的任务中，没有一个画全所需连线。\n· 自我验证不可靠：5 次宣告 DONE 的产出实际未通过验证——Agent 读的是自己「说过什么」，而不是屏幕上的真实状态。典型错误：悬空电阻却声称已连接；输入 2.80kOhm 而非 KiCad 要求的 2.8k；用错芯片参考电压（LT3010 是 0.808V，不是 1.24V）。\n根因分布：规划 ~40%、感知 ~22%、导航低效 ~19%、领域知识 ~11%、工具/API ~8%——且全程零 API 错误，说明 harness 本身没问题，问题在 Agent 如何使用它。\n对行业的含义\n1. 现有 computer-use benchmark 可能高估了真实能力。 浏览器里「多试几次总能蒙对」的策略，在专业软件上行不通。\n2.「会答电路题」≠「能在 KiCad 里做出正确原理图」。 知识与 GUI 执行是两条能力线，当前 frontier 模型在前者尚可、后者明显不足。\n3. 长 horizon + 自我校验是下一个瓶颈。 不是缺底层能力，而是缺「如何规划、批量操作、读 UI 状态而非读自己的 narration」的 meta-policy。\n4. 评测设计值得借鉴： 专家出题、双人复核、netlist 客观打分、任务难度按人类 ~50 步校准——这是衡量 Agent 能否创造真实经济价值的一个较公平标尺。\nCua\n@trycua\n8h\n1/ Today we're launching Cua-Bench with @ SnorkelAI : a benchmark for computer-use agents on professional software, open for any model to run. The benchmark covers 25 expert-authored KiCad tasks, and the best frontier model we tested cleared only 6 of them.\nGIF\n12:50 AM · Jun 16, 2026 646 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2",
+  "clean_text": "Post\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nCua 和 Snorkel AI 联合发布「Cua-Bench」：评测 Agent 在专业软件上的 Computer Use 能力\n@ trycua @ SnorkelAI\nCua-Bench 首个公开数据集聚焦 KiCad，一个完整的电子设计自动化工具，25 道任务均由执业电气工程师编写、第二人复核，覆盖从「改一个电容值」到「从零搭建双运放电路」等真实工作场景。\nsnorkel.ai/blog/cua-bench…\n首批测试结果\n没有一个模型通过四分之一，最强也只有 24% 的完全通过率：\n1. GPT-5.5：6 / 25 完全通过，0 / 25 部分通过\n2. Claude Sonnet 4.5：5 / 25 完全通过，3 / 25 部分通过\n3. Claude Haiku 4.5：5 / 25 完全通过，3 / 25 部分通过\n最重要的发现：「编辑现有」与「从零搭建」之间的能力断崖\n· 所有完全通过的任务，都是对已有原理图的局部修改（改元件值、换电源端口、调整偏置点等）。\n· 16 道从零搭建任务：0 成功。 模型能放元件，但很少完成布线；任务结束时连线往往仍是未完成状态。\n瓶颈在执行层：规划多步流程、在复杂 GUI 中定位与操作、自我校验、在步数预算耗尽前保持任务不漂移。\nSnorkel 的深度分析进一步指出：步数上限不是主因。 两个失败任务放宽到 500 步仍失败；而所有成功案例都在 150 步内完成。问题出在计划与操作效率，而非单纯「时间不够」\n典型失败模式（可复现、可归类）\n· 导航开销大（~84%）：首次启动弹窗、误进 PCB 编辑器而非原理图编辑器，恢复就消耗 25–70 步。\n· 操作粒度过细（~84%）：每轮只做一个点击 + 大段自我叙述，工程师三步能完成的事拆成十轮。\n· 视图控制混乱（~76%）：不用 Home 键 fit，在极端缩放间来回 scroll，元件一出视野就「丢失」。\n· 布线未完成（~72%）：16 个因步数耗尽而失败的任务中，没有一个画全所需连线。\n· 自我验证不可靠：5 次宣告 DONE 的产出实际未通过验证——Agent 读的是自己「说过什么」，而不是屏幕上的真实状态。典型错误：悬空电阻却声称已连接；输入 2.80kOhm 而非 KiCad 要求的 2.8k；用错芯片参考电压（LT3010 是 0.808V，不是 1.24V）。\n根因分布：规划 ~40%、感知 ~22%、导航低效 ~19%、领域知识 ~11%、工具/API ~8%——且全程零 API 错误，说明 harness 本身没问题，问题在 Agent 如何使用它。\n对行业的含义\n1. 现有 computer-use benchmark 可能高估了真实能力。 浏览器里「多试几次总能蒙对」的策略，在专业软件上行不通。\n2.「会答电路题」≠「能在 KiCad 里做出正确原理图」。 知识与 GUI 执行是两条能力线，当前 frontier 模型在前者尚可、后者明显不足。\n3. 长 horizon + 自我校验是下一个瓶颈。 不是缺底层能力，而是缺「如何规划、批量操作、读 UI 状态而非读自己的 narration」的 meta-policy。\n4. 评测设计值得借鉴： 专家出题、双人复核、netlist 客观打分、任务难度按人类 ~50 步校准——这是衡量 Agent 能否创造真实经济价值的一个较公平标尺。\nCua\n@trycua\n8h\n1/ Today we're launching Cua-Bench with @ SnorkelAI : a benchmark for computer-use agents on professional software, open for any model to run. The benchmark covers 25 expert-authored KiCad tasks, and the best frontier model we tested cleared only 6 of them.\nGIF\n12:50 AM · Jun 16, 2026 646 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-16/r-039-cua-和-snorkel-ai-联合发布-cua-bench-首个公开-kicad-任务数据集.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-16/r-039-cua-和-snorkel-ai-联合发布-cua-bench-首个公开-kicad-任务数据集.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 80,
+  "extractor_diagnostics": {
+    "readability_score": 80,
+    "text_length": 3394,
+    "paragraph_count": 28,
+    "sentence_count": 27,
+    "boilerplate_hits": 3,
+    "symbol_ratio": 0.0168,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3394,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "f72a2c97fd9c772c",
+    "missing": []
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "index_only_or_directory_page",
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "high",
+  "community_name": "X：邵猛 (@shao__meng)",
+  "capture_scope": "visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Cua 和 Snorkel AI 联合发布 Cua-Bench：首个公开 KiCad 任务数据集",
+    "discovery_summary": "Cua 与 Snorkel AI 联合发布 Cua-Bench，首个公开数据集聚焦电子设计工具 KiCad，含 25 道由执业电气工程师编写并复核的任务。测试中，GPT-5.5 完全通过 6/25（24%），Claude Sonnet 4.5 和 Haiku 4.5 各通过 5/25（20%）。所有成功任务均为局部修改，16 道从零搭建任务全部失败。瓶颈在执行层：导航开销大（~84%）、操作粒度过细（~84%）、视图控制混乱（~76%）、布线未完成（~72%）、自我验证不可靠。步数上限并非主因。根因分布：规划 ~40%、感知 ~22%、导航低效 ~19%、领域知识 ~11%、工具/API ~8%，全程零 API 错误。",
+    "source_name": "X：邵猛 (@shao__meng)",
+    "origin_url": "https://x.com/shao__meng/status/2066684840033026274",
+    "discovered_at": "2026-06-16T03:02:46.995Z",
+    "rank_on_page": 42,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "82719801857191e1",
+  "content_hash": "f72a2c97fd9c772c",
+  "full_text_hash": "f72a2c97fd9c772c",
+  "semantic_hash": "55007bd484d19a86",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-16T00:50:37.000Z",
+  "last_seen_at": "2026-06-16T03:08:04.942Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "Cua 与 Snorkel AI 联合发布 Cua-Bench，首个公开数据集聚焦电子设计工具 KiCad，含 25 道由执业电气工程师编写并复核的任务。测试中，GPT-5.5 完全通过 6/25（24%），Claude Sonnet 4.5 和 Haiku 4.5 各通过 5/25（20%）。所有成功任务均为局部修改，16 道从零搭建任务全部失败。瓶颈在执行层：导航开销大（~84%）、操作粒度过细（~84%）、视图控制混乱（~76%）、布线未完成（~72%）、自我验证不可靠。步数上限并非主因。根因分布：规划 ~40%、感知 ~22%、导航低效 ~19%、领域知识 ~11%、工具/API ~8%，全程零 API 错误。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Post Log in Sign up Post meng shao @shao__meng Cua 和 Snorkel AI 联合发布「Cua-Bench」：评测 Agent 在专业软件上的 Computer Use 能力 @ trycua @ SnorkelAI Cua-Bench 首个公开数据集聚焦 KiCad，一个完整的电子设计自动化工具，25 道任务均由执业电气工程师编写、第二人复核，覆盖从「改一个电容值」到「从零搭建双运放电路」等真实工作场景。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "ai/blog/cua-bench… 首批测试结果 没有一个模型通过四分之一，最强也只有 24% 的完全通过率： 1.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5：6 / 25 完全通过，0 / 25 部分通过 2.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5：5 / 25 完全通过，3 / 25 部分通过 3.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5：5 / 25 完全通过，3 / 25 部分通过 最重要的发现：「编辑现有」与「从零搭建」之间的能力断崖 · 所有完全通过的任务，都是对已有原理图的局部修改（改元件值、换电源端口、调整偏置点等）。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "邵猛 (@shao__meng)",
+      "Meta"
+    ],
+    "products": [
+      "GPT-5",
+      "Claude",
+      "Agent",
+      "agents"
+    ],
+    "people": [],
+    "industries": [],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "25",
+      "5.5",
+      "6",
+      "24%",
+      "4.5",
+      "5",
+      "20%",
+      "16"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Post Log in Sign up Post meng shao @shao__meng Cua 和 Snorkel AI 联合发布「Cua-Bench」：评测 Agent 在专业软件上的 Computer Use 能力 @ trycua @ SnorkelAI Cua-Bench 首个公开数据集聚焦 KiCad，一个完整的电子设计自动化工具，25 道任务均由执业电气工程师编写、第二人复核，覆盖从「改一个电容值」到「从零搭建双运放电路」等真实工作场景。",
+      "5：6 / 25 完全通过，0 / 25 部分通过 2.",
+      "5：5 / 25 完全通过，3 / 25 部分通过 3."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "疑似官网首页、产品目录或导航页，只能索引留存",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Cua 和 Snorkel AI 联合发布 Cua-Bench：首个公开 KiCad 任务数据集\n\n- raw_id: R-039\n- original_url: https://x.com/shao__meng/status/2066684840033026274\n- source_name: X：邵猛 (@shao__meng)\n- collected_at: 2026-06-16T03:08:04.942Z\n\n## clean_text\n\nPost\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nCua 和 Snorkel AI 联合发布「Cua-Bench」：评测 Agent 在专业软件上的 Computer Use 能力\n@ trycua @ SnorkelAI\nCua-Bench 首个公开数据集聚焦 KiCad，一个完整的电子设计自动化工具，25 道任务均由执业电气工程师编写、第二人复核，覆盖从「改一个电容值」到「从零搭建双运放电路」等真实工作场景。\nsnorkel.ai/blog/cua-bench…\n首批测试结果\n没有一个模型通过四分之一，最强也只有 24% 的完全通过率：\n1. GPT-5.5：6 / 25 完全通过，0 / 25 部分通过\n2. Claude Sonnet 4.5：5 / 25 完全通过，3 / 25 部分通过\n3. Claude Haiku 4.5：5 / 25 完全通过，3 / 25 部分通过\n最重要的发现：「编辑现有」与「从零搭建」之间的能力断崖\n· 所有完全通过的任务，都是对已有原理图的局部修改（改元件值、换电源端口、调整偏置点等）。\n· 16 道从零搭建任务：0 成功。 模型能放元件，但很少完成布线；任务结束时连线往往仍是未完成状态。\n瓶颈在执行层：规划多步流程、在复杂 GUI 中定位与操作、自我校验、在步数预算耗尽前保持任务不漂移。\nSnorkel 的深度分析进一步指出：步数上限不是主因。 两个失败任务放宽到 500 步仍失败；而所有成功案例都在 150 步内完成。问题出在计划与操作效率，而非单纯「时间不够」\n典型失败模式（可复现、可归类）\n· 导航开销大（~84%）：首次启动弹窗、误进 PCB 编辑器而非原理图编辑器，恢复就消耗 25–70 步。\n· 操作粒度过细（~84%）：每轮只做一个点击 + 大段自我叙述，工程师三步能完成的事拆成十轮。\n· 视图控制混乱（~76%）：不用 Home 键 fit，在极端缩放间来回 scroll，元件一出视野就「丢失」。\n· 布线未完成（~72%）：16 个因步数耗尽而失败的任务中，没有一个画全所需连线。\n· 自我验证不可靠：5 次宣告 DONE 的产出实际未通过验证——Agent 读的是自己「说过什么」，而不是屏幕上的真实状态。典型错误：悬空电阻却声称已连接；输入 2.80kOhm 而非 KiCad 要求的 2.8k；用错芯片参考电压（LT3010 是 0.808V，不是 1.24V）。\n根因分布：规划 ~40%、感知 ~22%、导航低效 ~19%、领域知识 ~11%、工具/API ~8%——且全程零 API 错误，说明 harness 本身没问题，问题在 Agent 如何使用它。\n对行业的含义\n1. 现有 computer-use benchmark 可能高估了真实能力。 浏览器里「多试几次总能蒙对」的策略，在专业软件上行不通。\n2.「会答电路题」≠「能在 KiCad 里做出正确原理图」。 知识与 GUI 执行是两条能力线，当前 frontier 模型在前者尚可、后者明显不足。\n3. 长 horizon + 自我校验是下一个瓶颈。 不是缺底层能力，而是缺「如何规划、批量操作、读 UI 状态而非读自己的 narration」的 meta-policy。\n4. 评测设计值得借鉴： 专家出题、双人复核、netlist 客观打分、任务难度按人类 ~50 步校准——这是衡量 Agent 能否创造真实经济价值的一个较公平标尺。\nCua\n@trycua\n8h\n1/ Today we're launching Cua-Bench with @ SnorkelAI : a benchmark for computer-use agents on professional software, open for any model to run. The benchmark covers 25 expert-authored KiCad tasks, and the best frontier model we tested cleared only 6 of them.\nGIF\n12:50 AM · Jun 16, 2026 646 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n\n## full_text\n\nPost\nLog in Sign up\nPost\nmeng shao\n@shao__meng\nCua 和 Snorkel AI 联合发布「Cua-Bench」：评测 Agent 在专业软件上的 Computer Use 能力\n@ trycua @ SnorkelAI\nCua-Bench 首个公开数据集聚焦 KiCad，一个完整的电子设计自动化工具，25 道任务均由执业电气工程师编写、第二人复核，覆盖从「改一个电容值」到「从零搭建双运放电路」等真实工作场景。\nsnorkel.ai/blog/cua-bench…\n首批测试结果\n没有一个模型通过四分之一，最强也只有 24% 的完全通过率：\n1. GPT-5.5：6 / 25 完全通过，0 / 25 部分通过\n2. Claude Sonnet 4.5：5 / 25 完全通过，3 / 25 部分通过\n3. Claude Haiku 4.5：5 / 25 完全通过，3 / 25 部分通过\n最重要的发现：「编辑现有」与「从零搭建」之间的能力断崖\n· 所有完全通过的任务，都是对已有原理图的局部修改（改元件值、换电源端口、调整偏置点等）。\n· 16 道从零搭建任务：0 成功。 模型能放元件，但很少完成布线；任务结束时连线往往仍是未完成状态。\n瓶颈在执行层：规划多步流程、在复杂 GUI 中定位与操作、自我校验、在步数预算耗尽前保持任务不漂移。\nSnorkel 的深度分析进一步指出：步数上限不是主因。 两个失败任务放宽到 500 步仍失败；而所有成功案例都在 150 步内完成。问题出在计划与操作效率，而非单纯「时间不够」\n典型失败模式（可复现、可归类）\n· 导航开销大（~84%）：首次启动弹窗、误进 PCB 编辑器而非原理图编辑器，恢复就消耗 25–70 步。\n· 操作粒度过细（~84%）：每轮只做一个点击 + 大段自我叙述，工程师三步能完成的事拆成十轮。\n· 视图控制混乱（~76%）：不用 Home 键 fit，在极端缩放间来回 scroll，元件一出视野就「丢失」。\n· 布线未完成（~72%）：16 个因步数耗尽而失败的任务中，没有一个画全所需连线。\n· 自我验证不可靠：5 次宣告 DONE 的产出实际未通过验证——Agent 读的是自己「说过什么」，而不是屏幕上的真实状态。典型错误：悬空电阻却声称已连接；输入 2.80kOhm 而非 KiCad 要求的 2.8k；用错芯片参考电压（LT3010 是 0.808V，不是 1.24V）。\n根因分布：规划 ~40%、感知 ~22%、导航低效 ~19%、领域知识 ~11%、工具/API ~8%——且全程零 API 错误，说明 harness 本身没问题，问题在 Agent 如何使用它。\n对行业的含义\n1. 现有 computer-use benchmark 可能高估了真实能力。 浏览器里「多试几次总能蒙对」的策略，在专业软件上行不通。\n2.「会答电路题」≠「能在 KiCad 里做出正确原理图」。 知识与 GUI 执行是两条能力线，当前 frontier 模型在前者尚可、后者明显不足。\n3. 长 horizon + 自我校验是下一个瓶颈。 不是缺底层能力，而是缺「如何规划、批量操作、读 UI 状态而非读自己的 narration」的 meta-policy。\n4. 评测设计值得借鉴： 专家出题、双人复核、netlist 客观打分、任务难度按人类 ~50 步校准——这是衡量 Agent 能否创造真实经济价值的一个较公平标尺。\nCua\n@trycua\n8h\n1/ Today we're launching Cua-Bench with @ SnorkelAI : a benchmark for computer-use agents on professional software, open for any model to run. The benchmark covers 25 expert-authored KiCad tasks, and the best frontier model we tested cleared only 6 of them.\nGIF\n12:50 AM · Jun 16, 2026 646 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:var(--number-flow-char-height, 1em) !important}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 number-flow-react > span{font-kerning:none;display:inline-block;line-height:var(--number-flow-char-height, 1em) !important;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 80\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] Cua 与 Snorkel AI 联合发布 Cua-Bench，首个公开数据集聚焦电子设计工具 KiCad，含 25 道由执业电气工程师编写并复核的任务。测试中，GPT-5.5 完全通过 6/25（24%），Claude Sonnet 4.5 和 Haiku 4.5 各通过 5/25（20%）。所有成功任务均为局部修改，16 道从零搭建任务全部失败。瓶颈在执行层：导航开销大（~84%）、操作粒度过细（~84%）、视图控制混乱（~76%）、布线未完成（~72%）、自我验证不可靠。步数上限并非主因。根因分布：规划 ~40%、感知 ~22%、导航低效 ~19%、领域知识 ~11%、工具/API ~8%，全程零 API 错误。\n2. [product_update / daily_observation, heatmap, change / high] Post Log in Sign up Post meng shao @shao__meng Cua 和 Snorkel AI 联合发布「Cua-Bench」：评测 Agent 在专业软件上的 Computer Use 能力 @ trycua @ SnorkelAI Cua-Bench 首个公开数据集聚焦 KiCad，一个完整的电子设计自动化工具，25 道任务均由执业电气工程师编写、第二人复核，覆盖从「改一个电容值」到「从零搭建双运放电路」等真实工作场景。\n3. [number / daily_observation, heatmap, case, trend / high] ai/blog/cua-bench… 首批测试结果 没有一个模型通过四分之一，最强也只有 24% 的完全通过率： 1.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] 5：6 / 25 完全通过，0 / 25 部分通过 2.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] 5：5 / 25 完全通过，3 / 25 部分通过 3.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] 5：5 / 25 完全通过，3 / 25 部分通过 最重要的发现：「编辑现有」与「从零搭建」之间的能力断崖 · 所有完全通过的任务，都是对已有原理图的局部修改（改元件值、换电源端口、调整偏置点等）。\n"
+}
