@@ -22,12 +22,37 @@
 - Do not show static time text when future switching is needed.
 - Do not expose `日期 / 范围 / 版本` cards on the detail hero.
 - Do not keep “返回情报地图” or “查看行动结论” buttons unless the user asks.
+- Do not keep “返回周报列表” inside the fast-read module.
 - Do not use a long hero deck if the page already has fast-read modules.
 - Do not duplicate numbering as `01` plus `1. 标题`.
 - Do not render Markdown tables directly on the frontstage page.
 - Do not make all weekly sections fixed. Section 7 can stay stable; other modules should follow the issue content.
 - Do not keep Trend Candidates or History blocks in Intelligence Map after weekly report adoption.
 - Do not leave backend method/version strings in the visible page footer.
+- Do not leave section labels as isolated full-width rows; pair them visually with the title.
+- Do not detach the Intelligence Map weekly read action from the card's main action position.
+
+## User-Deleted Elements
+
+These items were removed through direct user feedback and should not return by default:
+
+- Intelligence Map weekly report description sentence under `每周周报`.
+- Three boxed count KPI cards; use inline tags instead.
+- Detail page hero deck paragraph under the H1.
+- Detail page right-side `日期 / 范围 / 版本` metadata blocks.
+- Detail page buttons `返回情报地图`, `查看行动结论`, and `返回周报列表`.
+- Visible backend report version / method / next-issue footer.
+- Raw tables for trend heatmap, impact heatmap, opportunity fields, and scoring detail.
+- Trend Candidates and History modules on Intelligence Map.
+
+## User Presentation Preferences
+
+- Prefer content-derived titles over generic report labels.
+- Prefer compact tags over KPI boxes.
+- Prefer selectors over static time-window text.
+- Prefer editorial cards, chains, watchlist tags, profile blocks, and score bars over tables.
+- Prefer flexible weekly modules; section 7 can remain stable, but the rest should follow the week's content.
+- Prefer small inline chapter marks paired with headings.
 
 ## Release Lessons
 

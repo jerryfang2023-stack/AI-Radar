@@ -13,6 +13,7 @@
 3. Detail page rendering
    - Pass when trend heatmaps, opportunity cards, scoring, impact heatmaps, and watchlists are rendered as editorial modules instead of raw tables.
    - Pass when the weekly detail page has no `<table>` elements unless the user explicitly requests an appendix.
+   - Pass when section labels are visually paired with headings and do not create isolated full-width label rows.
 
 4. Flexible weekly structure
    - Pass when section 7 remains a stable categorized watchlist.
@@ -22,6 +23,10 @@
    - Pass when release pages include main site version metadata.
    - Pass when Intelligence Map and weekly detail pages include column version and weekly source metadata.
 
+6. User preference memory
+   - Pass when user-deleted elements are absent unless the current user request explicitly reintroduces them.
+   - Pass when time windows are selectors, not static text, on review-facing pages.
+
 ## Fail Cases
 
 1. Fail if the weekly page is a Markdown dump with dense table borders.
@@ -30,3 +35,6 @@
 4. Fail if section headings repeat numbers, such as `01` plus `1. 本周一句话结论`.
 5. Fail if the Intelligence Map read button is visually detached from the weekly card action area.
 6. Fail if the detail page has horizontal overflow at 390px mobile width.
+7. Fail if `返回周报列表`, `返回情报地图`, or `查看行动结论` is present without explicit user request.
+8. Fail if the detail hero has a long deck paragraph after the user has asked to remove it.
+9. Fail if Intelligence Map weekly report shows three boxed KPI count cards instead of compact tags.

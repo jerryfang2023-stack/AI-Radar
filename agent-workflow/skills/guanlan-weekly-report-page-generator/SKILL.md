@@ -3,17 +3,17 @@ name: guanlan-weekly-report-page-generator
 description: Use when creating, updating, or repairing WaveSight AI weekly report frontstage pages from `01-SiteV2/content/08-report/`. Applies to the Intelligence Map weekly report subcolumn, weekly report detail pages, time-window selectors, report archive wiring, Guanlan VI page styling, and converting weekly report Markdown into editorial page modules. Do not use for writing the weekly report judgment itself; use `guanlan-weekly-business-change-radar` first.
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.0.1"
     lane: "Intelligence Map"
     status: "current sub-skill"
     order: 91
     responsibility: "Generate and maintain weekly report frontstage pages from the Obsidian content source under `01-SiteV2/content/08-report/`."
     upstream: "weekly report Markdown, Intelligence Map page, Guanlan VI rules"
     downstream: "weekly report detail page, Intelligence Map weekly report entry, page styles, version metadata"
-    gates: "content-source discipline, Guanlan VI fit, no table-heavy rendering, responsive visual smoke, frontstage regression"
-    recent_learning: "Weekly report pages should be editorial modules, not Markdown tables. Keep section 7 stable, but let other weekly modules flex with the issue."
+    gates: "content-source discipline, user preference memory, Guanlan VI fit, no table-heavy rendering, responsive visual smoke, frontstage regression"
+    recent_learning: "User preference is explicit: delete generic helper/navigation copy, avoid static date text, avoid raw tables, and keep weekly modules flexible except the watchlist anchor."
     mirrored_in_skill_store: true
-    memory_required: false
+    memory_required: true
 ---
 
 # Guanlan Weekly Report Page Generator
@@ -40,6 +40,7 @@ For detailed rules, load:
 
 - `references/page-generation-standards.md` before page work.
 - `references/iteration-lessons.md` when deciding what to preserve or avoid from the 2026-06-15 page iteration.
+- `MEMORY.md` before changing page layout, visible controls, or module rendering.
 
 ## Workflow
 
@@ -63,6 +64,7 @@ For detailed rules, load:
    - Convert Markdown tables into designed modules: cards, tag groups, chains, score bars, callouts, or lists.
    - Keep section 7 as a stable watchlist structure. Let other sections flex with the issue content.
    - Avoid visible instructions, backend fields, version cards, or unnecessary navigation buttons.
+   - Treat user-deleted elements as blocked unless the user explicitly reintroduces them.
 
 5. Update version metadata when releasing.
    - Main site version lives in `meta[name="wavesight-version"]`.
@@ -84,6 +86,7 @@ For detailed rules, load:
 - Do not expose backend-only fields such as version, method, range, thresholds, raw gate results, or internal scores unless explicitly needed for reader judgment.
 - Do not make every week fit the same fixed module template. Keep the rendering flexible except for the watchlist anchor.
 - Do not use table grids as the default rendering for trend heatmaps, opportunity cards, scoring, or watchlists.
+- Do not re-add previously deleted helper copy, return buttons, action-jump buttons, hero deck paragraphs, or static date text without explicit user approval.
 
 ## Output
 
