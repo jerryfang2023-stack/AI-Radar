@@ -10,7 +10,7 @@ const topicCenterJsonPath = path.join(siteDataDir, "topic-center.json");
 const topicCenterJsPath = path.join(siteDataDir, "topic-center.js");
 const topicCenterHermesJsonPath = path.join(siteDataDir, "topic-center-hermes.json");
 const topicCenterHermesMdPath = path.join(siteDataDir, "topic-center-hermes.md");
-const topicCenterVersion = "V2.2.1-title-polish";
+const topicCenterVersion = "V2.2.2-source-title";
 
 const engines = [
   {
@@ -295,6 +295,59 @@ function evidenceItem(kind, item) {
   };
 }
 
+function sourceDisplayTitle(input, evidenceBase) {
+  const primary = list(evidenceBase).find((item) => text(item.title));
+  return clip(input.sourceTitle || primary?.title || input.title, 140) || text(input.title || "topic");
+}
+
+function displayEvidenceOrder(sourceId, inputs, rawMaterials = []) {
+  const businessSignals = list(inputs.businessSignals);
+  const viewpoints = list(inputs.viewpoints);
+  const communityItems = list(inputs.communityItems);
+  const materials = list(rawMaterials);
+  if (sourceId === "peer_pressure" || sourceId === "person_story") {
+    return [...communityItems, ...businessSignals, ...viewpoints, ...materials];
+  }
+  if (sourceId === "counterintuitive") {
+    return [...businessSignals, ...viewpoints, ...communityItems, ...materials];
+  }
+  return [...businessSignals, ...viewpoints, ...communityItems, ...materials];
+}
+
+function normalizeTopicDisplayTitle(topic) {
+  const inputs = topic?.sourceInputs || {};
+  const evidenceBase = displayEvidenceOrder(topic?.sourceId, inputs, topic?.rawMaterials);
+  const displayTitle = sourceDisplayTitle(topic, evidenceBase);
+  return {
+    ...topic,
+    title: displayTitle,
+    spreadTitle: displayTitle,
+    originalTitle: displayTitle,
+  };
+}
+
+function topicPrimarySourceKey(topic) {
+  const inputs = topic?.sourceInputs || {};
+  const preferred = displayEvidenceOrder(topic?.sourceId, inputs, topic?.rawMaterials);
+  const primary = preferred.find((item) => text(item.url || item.id || item.title));
+  return text(primary?.url || primary?.id || primary?.title || topic?.title);
+}
+
+function dedupeTopicPrimarySources(topics) {
+  const usedByDate = new Map();
+  return [...topics]
+    .sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0))
+    .filter((topic) => {
+    const date = text(topic.date);
+    if (!usedByDate.has(date)) usedByDate.set(date, new Set());
+    const used = usedByDate.get(date);
+      const key = topicPrimarySourceKey(topic);
+      if (!key || used.has(key)) return false;
+      used.add(key);
+      return true;
+    });
+}
+
 function scoreTopic({ pain = 18, money = 18, buzz = 14, spread = 10, action = 7, style = 4 }) {
   const scoreBreakdown = {
     bossPain: Math.min(25, pain),
@@ -315,16 +368,17 @@ function topicPayload(input) {
   const viewpoints = list(input.viewpoints).filter(Boolean).map((item) => evidenceItem("first_line_viewpoint", item)).filter(Boolean);
   const communityItems = list(input.communityItems).filter(Boolean).map((item) => evidenceItem("community_intelligence", item)).filter(Boolean);
   const sourceInputs = { businessSignals, viewpoints, communityItems };
-  const evidenceBase = [...businessSignals, ...viewpoints, ...communityItems];
+  const evidenceBase = displayEvidenceOrder(engine.id, sourceInputs);
+  const displayTitle = sourceDisplayTitle(input, evidenceBase);
 
   return {
-    id: `${engine.id}-${slug(input.title)}`,
+    id: `${engine.id}-${slug(displayTitle)}`,
     sourceId: engine.id,
     sourceName: engine.title,
     sourceDesc: engine.desc,
     type: input.type || "boss_decision_topic",
-    title: input.title,
-    spreadTitle: input.spreadTitle || input.title,
+    title: displayTitle,
+    spreadTitle: displayTitle,
     audience: "企业老板 / 创业者 / 业务负责人",
     core: input.core,
     relevance: input.relevance,
@@ -563,7 +617,7 @@ function buildTopicSet({ date, signals, viewpoints, community }) {
 function dedupeTopics(topics) {
   const seen = new Set();
   return topics.filter((topic) => {
-    const key = slug(topic.title);
+    const key = `${topic.sourceId || "topic"}-${slug(topic.title)}`;
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
@@ -752,7 +806,8 @@ function main() {
     .sort((a, b) => b.score - a.score);
   const existingData = readJson(topicCenterJsonPath, {});
   const historicalTopics = list(existingData.topics).filter((topic) => text(topic.date) !== date);
-  const topics = [...currentTopics, ...historicalTopics]
+  const topics = dedupeTopicPrimarySources([...currentTopics, ...historicalTopics]
+    .map(normalizeTopicDisplayTitle))
     .sort((a, b) => text(b.date).localeCompare(text(a.date)) || (Number(b.score) || 0) - (Number(a.score) || 0));
 
   const data = {
