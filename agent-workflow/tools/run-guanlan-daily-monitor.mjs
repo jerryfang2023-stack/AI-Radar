@@ -36,7 +36,7 @@ loadEnvFile(path.join(root, ".env.local"));
 if (args.has("help") || args.has("h")) {
   console.log(
     [
-      "WaveSight AI V3.3.2 guanlan-daily-monitor",
+      "WaveSight AI V3.3.6.3 guanlan-daily-monitor",
       "",
       "Usage:",
       "  node agent-workflow/tools/run-guanlan-daily-monitor.mjs --date=YYYY-MM-DD",

@@ -176,6 +176,6 @@ agent-workflow/reports/YYYY-MM-DD-weekly-ai-business-change-radar.md
 ## Handoff
 
 After weekly report, coordinate with:
-- `guanlan-daily-observation-pitch` for daily article topics derived from trend chains
-- `guanlan-trend-candidate-writer` for long-form trend reports on ≥2-week accumulating chains
-- AIP选题库 for content topic generation from opportunity cards
+- Topic Center / AIP topic generation for article topics derived from opportunity cards and trend chains
+- `guanlan-trend-candidate-writer` only when a chain needs a lightweight trend-candidate decision
+- Codex / Hermes repair handoff when report generation exposes missing source data, weak counts, or cross-lane freshness gaps

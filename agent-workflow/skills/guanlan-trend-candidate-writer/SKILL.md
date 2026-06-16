@@ -1,6 +1,6 @@
 ---
 name: guanlan-trend-candidate-writer
-description: Use when judging whether WaveSight AI V3.3.1 business-signal Cards, eligible Core Pool evidence, or recent source-backed history form a lightweight trend candidate. This skill writes trend candidate records or a no_trend_candidate_decision; it does not write full Trend Reports, daily observations, business briefs, opinion columns, or first-line builders viewpoints.
+description: Use when judging whether WaveSight AI current V3 business-signal Cards, eligible Core Pool evidence, or recent source-backed history form a lightweight trend candidate. This skill writes trend candidate records or a no_trend_candidate_decision; it does not write full Trend Reports, daily observations, business briefs, opinion columns, or first-line builders viewpoints.
 metadata:
   guanlan:
     version: "1.0.0"

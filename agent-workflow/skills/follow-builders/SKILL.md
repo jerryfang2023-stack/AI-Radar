@@ -30,7 +30,7 @@ a public feed. Users only need API keys if they choose Telegram or email deliver
 
 ## WaveSight AI Boundary
 
-For WaveSight AI / Guanlan V3.3.1, this skill only owns the independent First-Line Viewpoints column. Builder posts, podcasts, and summaries may help discover questions or operator perspectives, but they must not be used as business-signal facts, relationship-graph evidence, trend-candidate evidence, or Signal Card source material unless a separate original business source is captured through the Raw / Pool chain.
+For WaveSight AI / Guanlan current V3, this skill only owns the independent First-Line Viewpoints column. Builder posts, podcasts, and summaries may help discover questions or operator perspectives, but they must not be used as business-signal facts, relationship-graph evidence, trend-candidate evidence, or Signal Card source material unless a separate original business source is captured through the Raw / Pool chain.
 
 When using this skill inside WaveSight AI work, run the checks in `evals/wavesight-boundary-evals.md`.
 

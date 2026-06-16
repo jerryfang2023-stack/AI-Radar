@@ -1,6 +1,6 @@
 ---
 name: guanlan-monitor-quality-gate
-description: Run or repair the WaveSight AI V3.3.1 daily-monitor script pre-gate for automated scoring, hard thresholds, and up to 3 bounded refetch cycles. It checks Raw / Pool counts, routed Pool, core_pool depth, source distribution, S/A/B ratio, keyword paths, non-community evidence, theme concentration, and basic business relevance. It is not final QC; downstream release still requires guanlan-daily-monitor-qc.
+description: Run or repair the WaveSight AI current V3 daily-monitor script pre-gate for automated scoring, hard thresholds, and up to 3 bounded refetch cycles. It checks Raw / Pool counts, routed Pool, core_pool depth, source distribution, S/A/B ratio, keyword paths, non-community evidence, theme concentration, and basic business relevance. It is not final QC; downstream release still requires guanlan-daily-monitor-qc.
 metadata:
   guanlan:
     version: "1.0.0"
@@ -97,7 +97,7 @@ The script `--pass-score` is a diagnostic reference, not a release gate. Hard th
 
 ## Current Monitoring Model
 
-The monitor must reflect V3.3.1 production rules:
+The monitor must reflect the current V3 production rules:
 
 - Raw-first / Evidence-first.
 - AI HOT, follow-builders, HN, X, Reddit, RSS and search aggregators are discovery channels, not fact sources.

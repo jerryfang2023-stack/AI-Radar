@@ -1,6 +1,6 @@
 # Trend Candidate Evals
 
-Run these pass/fail checks after creating, updating, or auditing a WaveSight AI V3.3.1 trend candidate.
+Run these pass/fail checks after creating, updating, or auditing a WaveSight AI current V3 trend candidate.
 
 ## Required Checks
 

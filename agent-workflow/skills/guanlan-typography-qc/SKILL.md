@@ -1,6 +1,6 @@
 ---
 name: guanlan-typography-qc
-description: Audit WaveSight AI / Guanlan V3.3.1 frontstage typography against the current VI and position-level rules. Use when reviewing or fixing font size, weight, line-height, title hierarchy, shared navigation typography, Business Signals, First-Line Viewpoints, Dashboard, cards, graph/trend modules, sidebars, footer text, CSS clamp/vw risks, or closeout typography evidence.
+description: Audit WaveSight AI / Guanlan current V3 frontstage typography against the current VI and position-level rules. Use when reviewing or fixing font size, weight, line-height, title hierarchy, shared navigation typography, Business Signals, Intelligence Map, Weekly Report, First-Line Viewpoints, Community Intelligence, Dashboard, cards, graph/trend modules, sidebars, footer text, CSS clamp/vw risks, or closeout typography evidence.
 metadata:
   guanlan:
     version: "1.0.0"

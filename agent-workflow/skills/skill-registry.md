@@ -1,6 +1,6 @@
 # Guanlan Skill Registry
 
-Last updated: 2026-06-15
+Last updated: 2026-06-16
 
 Skill Store version: v1.3.2 (2026-06-13)
 
@@ -20,6 +20,7 @@ Generated from `SKILL.md` metadata by `npm run build:skill-registry`. Do not edi
 | `guanlan-trend-candidate-writer` | Judge and write lightweight trend candidates or no-candidate decisions from multiple source-backed business signals. | Business Signals | current sub-skill | Signal Cards, eligible Pool, recent source-backed history | trend candidate files or no-candidate reports | multi-signal threshold, source-type diversity, boundary notes | evals 1; examples 2; memory no; references no | A single article, opinion, funding event, or trend title is not a trend candidate. | yes |
 | `follow-builders` | Generic builder digest behavior used by the First-Line Viewpoints lane owner. | First-Line Viewpoints | supporting skill | builder sources | digest entries used by lane scripts | source and digest boundary | evals 1; examples 1; memory no; references no | It can support First-Line Viewpoints, but it is not the lane owner. | yes |
 | `guanlan-weekly-business-change-radar` | 从 S×O×C 三方数据生成周度 AI 商业变化判断报告：趋势链五步法、100分机会评分、反共识判断、行业影响热力图。 | Business Signals | current sub-skill | Business Signal Cards, First-Line Viewpoints data, Community Intelligence data | weekly business change radar report, opportunity cards, trend chains, AIP选题库 | data completeness (exact counts), cross-verification (S×O×C), trend chain evidence threshold (≥2 Signals each), opportunity card scoring (100-point), quality gates (8 checks) | evals 1; examples 2; memory no; references no | 报告质量差异在于：是否用精确数字而非估计、是否点名具体公司/产品/金额、是否对不同角色给不同建议。agent-workflow 版强在具体数据，需补趋势链五步法和机会卡打分。 | yes |
+| `guanlan-weekly-report-page-generator` | Generate and maintain weekly report frontstage pages from the Obsidian content source under `01-SiteV2/content/08-report/`. | Intelligence Map | current sub-skill | weekly report Markdown, Intelligence Map page, Guanlan VI rules | weekly report detail page, Intelligence Map weekly report entry, page styles, version metadata | content-source discipline, Guanlan VI fit, no table-heavy rendering, responsive visual smoke, frontstage regression | evals 1; examples 2; memory no; references yes | Weekly report pages should be editorial modules, not Markdown tables. Keep section 7 stable, but let other weekly modules flex with the issue. | yes |
 | `guanlan-typography-qc` | Check WaveSight typography and layout copy issues when page work changes. | Cross-lane UI | supporting skill | frontstage pages | UI QC notes | typography and UI consistency | evals 1; examples 2; memory no; references no | Use only for page or typography work, not data truth. | yes |
 | `guanlan-skill-editor` | Audit, create, update, and clean Guanlan skills. | Skill system | governance | current context, target skills, incidents | skill edits, evals, examples, memory | trigger clarity, stale rule removal, eval coverage, memory hygiene | evals 1; examples 2; memory no; references yes | Recurring failures should become evals or concise memory before long prose. | yes |
 

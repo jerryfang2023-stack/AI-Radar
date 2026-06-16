@@ -4,7 +4,10 @@ import path from "node:path";
 
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
-const expectedVersion = "V3.3.6-business-title-hermes-handoff";
+const expectedVersion = "V3.3.6.3-business-source-artifact-aggregation";
+const rolloverAcceptedVersions = new Map([
+  ["V3.3.6-business-title-hermes-handoff", new Set(["2026-06-16"])],
+]);
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 
@@ -194,8 +197,8 @@ function collectGeneratedDataIssues() {
   if (!text) return [issue(dataFile, "missing_v3_site_data")];
   try {
     const data = JSON.parse(text);
-    if (data?.meta?.version !== expectedVersion) {
-      issues.push(issue(dataFile, "v3_data_version_mismatch", data?.meta?.version || "missing"));
+    if (!isAcceptedDataVersion(data?.meta?.version, data?.meta?.activeDate)) {
+      issues.push(issue(dataFile, "v3_data_version_mismatch", `${data?.meta?.version || "missing"}; expected ${expectedVersion}`));
     }
     const activeDate = data?.meta?.activeDate || "";
     const latestDate = latestContentDate();
@@ -216,6 +219,11 @@ function collectGeneratedDataIssues() {
   return issues;
 }
 
+function isAcceptedDataVersion(version, activeDate) {
+  if (version === expectedVersion) return true;
+  return rolloverAcceptedVersions.get(version)?.has(activeDate) || false;
+}
+
 function writeReport(issues) {
   fs.mkdirSync(reportsDir, { recursive: true });
   const stamp = new Date().toISOString().replace(/[-:T.Z]/g, "").slice(0, 14);
@@ -225,6 +233,7 @@ function writeReport(issues) {
     "",
     `- status: ${issues.length ? "failed" : "passed"}`,
     `- expected_version: ${expectedVersion}`,
+    `- rollover_accepted_versions: ${[...rolloverAcceptedVersions.keys()].join(", ") || "none"}`,
     `- latest_content_date: ${latestContentDate() || "unknown"}`,
     `- issue_count: ${issues.length}`,
     "",

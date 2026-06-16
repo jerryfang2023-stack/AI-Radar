@@ -10,3 +10,7 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 
 - Do not raise a Community Intelligence missing-data failure before the 08:45 / 09:30 production windows unless a same-day local collector failure log already exists. The 2026-06-14 03:17 alert was a pre-window false positive.
 - Weekend source scarcity was not the cause of the 2026-06-13 / 2026-06-14 issues: both days produced 61+ items and 57+ links after local collection. Route weekend red states through local-run and publish-stage checks before changing thresholds.
+
+## 2026-06-16
+
+- If `npm run collect:community-intelligence` fails because `http://127.0.0.1:9333/json/version` is unavailable or returns 503, use the local launcher wrapper to start Chrome with `.codex-browser-profile/community-scan` and the CDP port instead of treating the lane as unhealthy.

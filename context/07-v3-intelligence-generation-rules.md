@@ -1,8 +1,8 @@
 ---
 status: current
 scope: v3-raw-pool-card-trend-rules
-version: V3.3.6-business-title-hermes-handoff
-last_updated: 2026-06-13
+version: V3.3.6.3-business-source-artifact-aggregation
+last_updated: 2026-06-15
 priority: current
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: guanlan-daily-monitor-qc
-description: Audit WaveSight AI V3.3.1 daily-monitor Raw / Pool quality before downstream business-signal production. Use for Raw evidence completeness, Pool routing, source quality, discovery-channel separation, large-company concentration, full-text integrity, monitor logs, and Markdown allow / allow_with_degradation / block decisions. Do not generate Cards, daily observations, trend reports, business briefs, or first-line builders viewpoints.
+description: Audit WaveSight AI current V3 daily-monitor Raw / Pool quality before downstream business-signal production. Use for Raw evidence completeness, Pool routing, source quality, discovery-channel separation, large-company concentration, full-text integrity, monitor logs, and Markdown allow / allow_with_degradation / block decisions. Do not generate Cards, daily observations, trend reports, business briefs, or first-line builders viewpoints.
 metadata:
   guanlan:
     version: "1.0.0"
@@ -57,7 +57,7 @@ Read these only when a finding depends on the detail:
 
 - `agent-workflow/product/source-intelligence.md` for source level, source pool, or S/A/B judgment when current context does not settle the question.
 - `agent-workflow/product/raw-evidence-schema.md` for Raw field, full text, snapshot, or hash judgment when schema details are needed.
-- `agent-workflow/product/pool-routing-rules.md` for route, downgrade, `core_pool`, or `index_only` judgment only when it does not conflict with V3.3.1 context.
+- `agent-workflow/product/pool-routing-rules.md` for route, downgrade, `core_pool`, or `index_only` judgment only when it does not conflict with current V3 context.
 - `01-SiteV2/content/README.md` for directory or write-path judgment.
 - `source-registry-v2.json`, `keyword-monitoring-v2.json`, and `monitor-quality-gate-v2.json` for executable configuration conflicts.
 

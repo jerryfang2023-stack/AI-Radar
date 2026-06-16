@@ -1,18 +1,18 @@
 ﻿---
 status: current
 scope: v3-3-current-action-index
-last_updated: 2026-06-14
+last_updated: 2026-06-15
 use_when:
   - choose current action
   - recover missing actions
-  - dispatch V3.3.6 production work
+  - dispatch SITE-V3.3.7 production work
   - distinguish current actions from historical tasks
 priority: current
 ---
 
-# V3.3.6 Current Action Index
+# SITE-V3.3.7 Current Action Index
 
-This file is the current action registry for WaveSight AI V3.3.6.
+This file is the current action registry for WaveSight AI SITE-V3.3.7.
 
 Use it before historical dispatch boards, feature lists, closeouts, or V2 action records. Historical files can explain why a rule exists, but they must not add actions back into the current production system.
 
@@ -22,15 +22,15 @@ Every action, old or new, must be treated as one of these classes:
 
 | Status | Meaning | Codex Behavior |
 |---|---|---|
-| `current` | Active V3.3.6 production action. | May be used as a default execution route. |
+| `current` | Active SITE-V3.3.7 production action. | May be used as a default execution route. |
 | `manual/archive` | Historical or diagnostic action with reference value. | May be read or manually consulted, but must not run by default. |
 | `retired` | Explicitly stopped action or output. | Must not be restored, required, or used as a blocker. |
 
-Do not mark an old action as `current` just because it existed before. Only a V3.3.6-compatible route that serves the current asset system can be `current`.
+Do not mark an old action as `current` just because it existed before. Only a SITE-V3.3.7-compatible route that serves the current asset system can be `current`.
 
 ## Current Actions
 
-Only these actions are `current` for V3.3.6:
+Only these actions are `current` for SITE-V3.3.7:
 
 | Action | Status | Current Role |
 |---|---|---|
@@ -41,6 +41,7 @@ Only these actions are `current` for V3.3.6:
 | Source-first check | `current` | Ensure frontstage facts are original-source backed. |
 | Pool-to-Card dedupe | `current` | Prevent duplicate evidence from becoming duplicate Cards. |
 | Relationship graph build | `current` | Build Card-derived nodes, edges, and evidence links. |
+| Intelligence Map weekly report | `current` | Publish the weekly report entry and detail page from the weekly business-change radar report. |
 | Trend candidate judgment | `current` | Judge repeated same-direction signals, not trend reports. |
 | First-line viewpoints RSS update | `current` | Update builders viewpoints from the morning RSS / podcast route independently from business signals. |
 | First-line viewpoints skill publish | `current` | Update builders viewpoints from the afternoon local follow-builders skill route independently from business signals. |
@@ -62,7 +63,7 @@ These actions or records may be useful for diagnosis, audit, or historical recov
 | Historical feature list | `manual/archive` | Read only to identify old action names, owners, or status drift. |
 | Old page diagnostics and redesign specs | `manual/archive` | Consult when explaining past UI choices or avoiding regressions. |
 | Old V2 quality-gate reports | `manual/archive` | Use as audit evidence when comparing historical failures. |
-| Old Raw / Pool / Card governance notes | `manual/archive` | Consult only when they do not conflict with V3.3.6 source-first rules. |
+| Old Raw / Pool / Card governance notes | `manual/archive` | Consult only when they do not conflict with the current V3 source-first rules. |
 | Historical provider benchmarks | `manual/archive` | Consult for source-provider diagnosis, not as current sourcing policy. |
 | Past handoff / progress notes | `manual/archive` | Use for context recovery only when current `context/` files are insufficient. |
 
@@ -200,7 +201,23 @@ Boundaries:
 - Do not include builders viewpoints or opinion-only materials.
 - Do not replace the graph with long prose cards.
 
-### 6. Trend Candidate Judgment
+### 6. Intelligence Map Weekly Report
+
+Purpose:
+
+- Publish the weekly AI business change radar as an Intelligence Map subcolumn and detail page.
+
+Primary route:
+
+- Weekly report source: `01-SiteV2/content/08-report/`.
+- Frontstage pages: `01-SiteV2/site/intelligence-map.html` and `01-SiteV2/site/weekly-ai-business-change-radar.html`.
+
+Boundaries:
+
+- Weekly report is a site publication layer, not the Business Signals Card source of truth.
+- Opinions and Community Intelligence can support interpretation and demand cross-checks, but they must not become business-signal facts, relationship-graph evidence, or trend-candidate evidence.
+
+### 7. Trend Candidate Judgment
 
 Purpose:
 
@@ -225,7 +242,7 @@ Boundaries:
 - A single article, viewpoint, funding event, or tag count cannot form a trend.
 - Builders viewpoints are not evidence for trend candidates.
 
-### 7. First-Line Viewpoints RSS Update
+### 8. First-Line Viewpoints RSS Update
 
 Purpose:
 
@@ -262,7 +279,7 @@ Boundaries:
 - If refresh fails but previous fresh data exists, fallback may preserve the page with fallback metadata.
 - Every successful daily update must also sync same-date Builder viewpoints into the Obsidian person / date timelines and verify the sync is idempotent.
 
-### 7.1 Follow-Builders Skill Publish
+### 8.1 Follow-Builders Skill Publish
 
 Purpose:
 
@@ -294,7 +311,7 @@ Boundaries:
 - It must still publish through a branch and PR instead of pushing generated files directly to `main`.
 - Hermes records the afternoon run from the local publish report at 16:30 and checks the Obsidian sync counts in that report.
 
-### 8. Frontstage Data Build
+### 9. Frontstage Data Build
 
 Purpose:
 
@@ -323,7 +340,7 @@ Boundaries:
 - First-Line Viewpoints Obsidian timelines must be produced from the same gated `follow-builders-daily.json`, not from retired `05-frontier-opinions`.
 - Do not restore V2 homepage modules, daily observation, business brief, or trend-report prose.
 
-### 9. Dashboard Sync
+### 10. Dashboard Sync
 
 Purpose:
 
@@ -346,7 +363,7 @@ Boundaries:
 - Dashboard is an operations backend, not a public content column.
 - Do not let dashboard status fields leak into frontstage Card copy.
 
-### 10. GitHub PR / Pages Publish
+### 11. GitHub PR / Pages Publish
 
 Purpose:
 
@@ -376,7 +393,7 @@ Boundaries:
 - Do not push generated assets directly to `main`.
 - Do not create temporary-only daily assets without persistence.
 
-### 11. Community Intelligence Independent Update
+### 12. Community Intelligence Independent Update
 
 Purpose:
 
@@ -414,7 +431,7 @@ Boundaries:
 - Do not stage Business Signals or First-Line Viewpoints data from this lane.
 - Do not treat local collection success as publication success until the community PR reaches `main` and GitHub Pages runs.
 
-### 12. Local Obsidian Sync
+### 13. Local Obsidian Sync
 
 Purpose:
 
@@ -439,11 +456,11 @@ Boundaries:
 
 ## Retired Actions
 
-The following actions are `retired` for V3.3.6:
+The following actions are `retired` for current V3.3:
 
 | Action | Status | Reason |
 |---|---|---|
-| daily observation writing | `retired` | V3.3.6 does not require article-style daily observation output. |
+| daily observation writing | `retired` | Current V3.3 does not require article-style daily observation output. |
 | business brief / internal reference | `retired` | The current product is an asset system, not a brief-production lane. |
 | trend report writing | `retired` | Current trend output is trend candidate only. |
 | V2 four-column website page production | `retired` | V2 homepage and four-column public site routes are retired. |
@@ -454,8 +471,8 @@ The following actions are `retired` for V3.3.6:
 | builders / follow-builders mixed into Cards | `retired` | Builders content must remain outside business-signal Cards. |
 | builders / follow-builders mixed into relationship graph | `retired` | Graph evidence must come from accepted business-signal Cards. |
 | builders / follow-builders mixed into trend candidates | `retired` | Trend candidates require multiple business-signal Cards, not viewpoints. |
-| old V2 frontstage modules as current pages | `retired` | Current pages are Business Signals, Intelligence Map, First-Line Viewpoints, Community Intelligence, and Dashboard. |
-| temporary-only daily asset generation | `retired` | V3.3.6 automation must persist assets through PR / deploy / sync. |
+| old V2 frontstage modules as current pages | `retired` | Current pages are Business Signals, Intelligence Map, Weekly Report, First-Line Viewpoints, Community Intelligence, and Dashboard. |
+| temporary-only daily asset generation | `retired` | Current V3.3 automation must persist assets through PR / deploy / sync. |
 
 If a script or old task requires one of these as a blocker for current production, treat it as historical contamination and update the route.
 

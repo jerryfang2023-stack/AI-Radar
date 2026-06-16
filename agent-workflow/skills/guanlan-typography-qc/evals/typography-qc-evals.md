@@ -1,11 +1,11 @@
 # Typography QC Evals
 
-Run these pass/fail checks when auditing WaveSight AI / Guanlan V3.3.1 typography.
+Run these pass/fail checks when auditing WaveSight AI / Guanlan current V3 typography.
 
 ## Required Checks
 
 1. `current_pages_only`
-   - Pass when the audit targets current V3.3.1 pages: `v3-data-observation.html`, `follow-builders.html`, and `operations-console.html`.
+   - Pass when the audit targets current V3 pages: `v3-data-observation.html`, `intelligence-map.html`, `weekly-ai-business-change-radar.html`, `follow-builders.html`, `community-intelligence.html`, and `operations-console.html`.
 
 2. `shared_topbar`
    - Pass when Business Signals and First-Line Viewpoints use the same topbar structure, height, and navigation typography.

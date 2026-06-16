@@ -1,6 +1,6 @@
 # Daily Monitor QC Evals
 
-Run these pass/fail checks when auditing a WaveSight AI V3.3.1 daily monitor run or editing this skill.
+Run these pass/fail checks when auditing a WaveSight AI current V3 daily monitor run or editing this skill.
 
 Do not use numeric self-scores without observable evidence. Each check must be `pass` or `fail` and cite the file, field, or report section that proves it.
 
