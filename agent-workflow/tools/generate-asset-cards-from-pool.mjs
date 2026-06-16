@@ -1223,10 +1223,23 @@ function fundingAngleFromScenario(scenario) {
   return scenario.replace(/流程$/u, "");
 }
 
-function publicSignalTitle({ type, company, scenario, amount, fundingAngle, text }) {
+function cleanSourceEventTitle(title = "") {
+  const text = String(title || "")
+    .replace(/^["'`]+|["'`]+$/gu, "")
+    .replace(/\s*\|\s*[^|]{2,80}$/u, "")
+    .replace(/\s+-\s*(TechCrunch|SiliconANGLE|BusinessWire|PR Newswire|Markets Insider|CFO Dive|Google Cloud Press Corner)$/iu, "")
+    .replace(/\s+/gu, " ")
+    .trim();
+  if (!text || /^https?:\/\//iu.test(text) || /^P-\d+\b/iu.test(text)) return "";
+  if (/案例：\s*AI\s*进入|信号：\s*AI\s*进入/iu.test(text)) return "";
+  return text.slice(0, 120);
+}
+
+function publicSignalTitle({ type, company, scenario, amount, fundingAngle, text, sourceTitle }) {
   const owner = publicCardCopy(company || "未标注主体");
   const lane = publicCardCopy(fundingAngle || scenario || "企业业务流程");
   const signalText = String(text || "");
+  const sourceEventTitle = cleanSourceEventTitle(sourceTitle);
   if (type === "funding") {
     const amountText = amount ? `${amount} ` : "";
     return `${owner} 获得${amountText}融资，押注${lane}`;
@@ -1240,6 +1253,7 @@ function publicSignalTitle({ type, company, scenario, amount, fundingAngle, text
     }
     return `${owner} 发布 AI 产品能力，切入${lane}`;
   }
+  if (sourceEventTitle) return sourceEventTitle;
   return `${owner} 案例：AI 进入${publicCardCopy(scenario || "企业业务流程")}`;
 }
 
@@ -1294,8 +1308,8 @@ function autoSignalSpec(poolRef, section, index) {
   const fallbackTitle = type === "funding"
     ? `${company} 融资`
     : `${company} 商业信号`;
-  const title = publicSignalTitle({ type, company, scenario, amount, fundingAngle, text }) || fallbackTitle || "";
   const sourceTitle = originalTitle || "";
+  const title = publicSignalTitle({ type, company, scenario, amount, fundingAngle, text, sourceTitle }) || fallbackTitle || "";
   const sourcePoints = sourcePointsFromSection(section);
   const sourceExcerpt = sourceExcerptFromSection(section, sourcePoints);
   const fallbackEventLine = type === "funding"

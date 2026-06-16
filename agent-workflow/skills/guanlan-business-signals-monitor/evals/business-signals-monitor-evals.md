@@ -78,6 +78,11 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when post-fetch Pool importance gaps trigger targeted refill for the missing importance types before Card generation.
     - Fail when an Exa `site:` domain restriction, Tavily 401, or Anysearch gateway outage can leave `importance_coverage_gaps_must_be_none` / `pool_importance_coverage_gaps_must_be_none` failing without a targeted refill attempt.
 
+19. `case_title_source_precedence`
+    - Pass when case Signal Card generation prefers the original/source event title over generated scenario templates.
+    - Pass when fallback title cleaning rejects public titles such as `案例：AI 进入...` or `信号：AI 进入...` and derives a traceable title from the source title or URL instead.
+    - Fail when a generated case scenario title overwrites the source event title and later trips the source-first/title gate.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.

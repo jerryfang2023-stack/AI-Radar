@@ -21,3 +21,7 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 - A GitHub lookup timeout or missing local report is a supervision evidence gap, not proof that Business Signals data failed. Check same-date run status and activeDate/top10/card counts before dispatching or rerunning.
 - The morning path should fail before expensive downstream work: Raw/Pool supply preflight, Card generation, Top10 preselection, Business frontstage JSON, unified Business frontstage gate, then dashboard/topic-center/publication.
 - Morning scheduling was optimized to 08:57 primary production plus 09:27 conditional health dispatch. The health dispatch must wait when same-date data is healthy or a same-date run is queued, in progress, or successful; do not restore blind second full-chain cron runs.
+
+## 2026-06-16
+
+- Recurring `source_first` / title failures from case Cards are a generator bug, not a rerun problem. Case Card generation must prefer source event titles and reject `案例：AI 进入...` scenario templates as public titles.

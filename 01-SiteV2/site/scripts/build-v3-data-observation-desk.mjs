@@ -926,7 +926,7 @@ function sourceFrontstageTitle(card = {}, originalTitle = "") {
 }
 
 function isBadPublicDisplayTitle(title = "") {
-  return /用途见原文|原文所述|原文 AI 事件|原文事件标题|的原文业务场景|linkedin\s+(?:的原文|融资)|github\s+的原文|devblogs\s+应用|angelinvestorsnetwork\s+融资/iu.test(String(title || ""));
+  return /案例：\s*AI\s*进入|信号：\s*AI\s*进入|用途见原文|原文所述|原文 AI 事件|原文事件标题|的原文业务场景|linkedin\s+(?:的原文|融资)|github\s+的原文|devblogs\s+应用|angelinvestorsnetwork\s+融资/iu.test(String(title || ""));
 }
 
 function cleanBadPublicDisplayTitle(title = "") {
@@ -946,6 +946,26 @@ function sourceTitleFallbackForDisplay(title = "", sourceUrl = "") {
   return `${titleSubject(clean, sourceUrl)}：${clean}`.slice(0, 120);
 }
 
+function sourceUrlTitleFallbackForDisplay(sourceUrl = "") {
+  try {
+    const parsed = new URL(sourceUrl);
+    const slug = decodeURIComponent(parsed.pathname)
+      .split("/")
+      .filter(Boolean)
+      .at(-1)
+      ?.replace(/\.[a-z0-9]+$/iu, "")
+      .replace(/[-_]+/gu, " ")
+      .replace(/\b(?:e\d+[a-z0-9]*|podcast|episode|post|article)\b/giu, "")
+      .replace(/\s+/gu, " ")
+      .trim();
+    if (!slug || slug.length < 6) return "";
+    const title = slug.replace(/\b\w/gu, (match) => match.toUpperCase());
+    return `${titleSubject(title, sourceUrl)}：${title}`.slice(0, 120);
+  } catch {
+    return "";
+  }
+}
+
 function publicTitleCandidate(title = "", sourceUrl = "") {
   const raw = String(title || "").trim();
   if (!raw || isBadPublicDisplayTitle(raw)) return "";
@@ -963,6 +983,7 @@ function publicTitleCandidate(title = "", sourceUrl = "") {
 function publicDisplayTitle(sourceTitle = "", generatedTitle = "", sourceUrl = "") {
   return publicTitleCandidate(sourceTitle, sourceUrl)
     || publicTitleCandidate(generatedTitle, sourceUrl)
+    || sourceUrlTitleFallbackForDisplay(sourceUrl)
     || cleanBadPublicDisplayTitle(generatedTitle || sourceTitle || "");
 }
 
