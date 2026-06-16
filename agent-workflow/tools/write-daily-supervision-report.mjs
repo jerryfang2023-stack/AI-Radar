@@ -586,6 +586,8 @@ function buildCommunityLane() {
   const generatedDate = shanghaiDate(data?.meta?.generatedAt || "");
   const task = scheduledTaskState("WaveSight Community Intelligence Daily");
   const gh = githubWorkflowState("daily-community-intelligence-pr.yml", `automation/community-intelligence-${date}`);
+  const mergedPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.mergedAt) : null;
+  const openPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.state === "OPEN") : null;
 
   evidence.generatedAt = data?.meta?.generatedAt || "";
   evidence.generatedDate = generatedDate;
@@ -597,6 +599,11 @@ function buildCommunityLane() {
   evidence.gateReport = exists(gateFile) ? rel(gateFile) : "missing";
   evidence.scheduledTask = task;
   evidence.github = gh;
+  evidence.publication = {
+    communityPrMerged: Boolean(mergedPr),
+    communityPrUrl: mergedPr?.url || openPr?.url || "",
+    communityPrState: mergedPr ? "MERGED" : openPr?.state || "",
+  };
 
   if (localWindowPassed) {
     if (!exists(dataFile)) addProblem(problems, `missing community data file: ${rel(dataFile)}`);
@@ -623,7 +630,12 @@ function buildCommunityLane() {
   }
 
   if (gh.available) {
-    if (!gh.latest_run && publishWindowPassed) {
+    if (mergedPr) {
+      // Publication already reached main through the community automation branch PR.
+    } else if (openPr) {
+      addProblem(problems, `Community Intelligence publication PR is ${openPr.state.toLowerCase()}: ${openPr.url}`, "waiting");
+      actions.push("wait for Community Intelligence publication PR merge before declaring publication missing");
+    } else if (!gh.latest_run && publishWindowPassed) {
       addProblem(problems, "no same-date Community Intelligence publish workflow after 09:30 Hermes handoff", "manual_required");
       actions.push("run `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>` or dispatch `.github/workflows/daily-community-intelligence-pr.yml` after local collection and archive pass");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {

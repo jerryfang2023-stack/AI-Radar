@@ -1,0 +1,291 @@
+{
+  "ok": true,
+  "date": "2026-06-16",
+  "generated_at": "2026-06-16T03:24:13.833Z",
+  "dry_run": false,
+  "schedule": [
+    "09:30",
+    "09:45",
+    "09:55"
+  ],
+  "handoff_stage": "09:30",
+  "lanes": [
+    {
+      "ok": true,
+      "lane": "business_signals",
+      "label": "Business Signals",
+      "workflow": "WaveSight Business Signals PR",
+      "workflow_file": "daily-persistent-assets-pr.yml",
+      "primary_window": "08:57 primary production / 09:27 conditional health dispatch",
+      "primary_start": "08:57",
+      "primary_end": "09:45",
+      "action": "skipped",
+      "reason": "same-date successful workflow already exists: https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27591153356",
+      "handoff_stage": "09:30",
+      "takeover_after": "09:45",
+      "dispatch_allowed": false,
+      "primary_window_passed": true,
+      "takeover_window_passed": true,
+      "should_take_over": true,
+      "failure_threshold": 1,
+      "max_attempts": 3,
+      "same_date_failures": 4,
+      "primary_window_failures": 0,
+      "assets": {
+        "ready": true,
+        "activeDate": "2026-06-16",
+        "top10": 10,
+        "badTitleCount": 0
+      },
+      "active_run": null,
+      "successful_run": {
+        "id": 27591153356,
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-06-16T03:01:56Z",
+        "updatedAt": "2026-06-16T03:08:25Z",
+        "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27591153356",
+        "displayTitle": "WaveSight Business Signals PR",
+        "primaryWindow": false
+      },
+      "failed_runs": [
+        {
+          "id": 27591103993,
+          "event": "workflow_dispatch",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "createdAt": "2026-06-16T03:00:35Z",
+          "updatedAt": "2026-06-16T03:02:23Z",
+          "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27591103993",
+          "displayTitle": "WaveSight Business Signals PR",
+          "primaryWindow": false
+        },
+        {
+          "id": 27590941340,
+          "event": "workflow_dispatch",
+          "status": "completed",
+          "conclusion": "failure",
+          "createdAt": "2026-06-16T02:55:54Z",
+          "updatedAt": "2026-06-16T03:00:11Z",
+          "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27590941340",
+          "displayTitle": "WaveSight Business Signals PR",
+          "primaryWindow": false
+        },
+        {
+          "id": 27588638289,
+          "event": "workflow_dispatch",
+          "status": "completed",
+          "conclusion": "failure",
+          "createdAt": "2026-06-16T01:50:28Z",
+          "updatedAt": "2026-06-16T01:55:21Z",
+          "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27588638289",
+          "displayTitle": "WaveSight Business Signals PR",
+          "primaryWindow": false
+        },
+        {
+          "id": 27588493309,
+          "event": "workflow_dispatch",
+          "status": "completed",
+          "conclusion": "failure",
+          "createdAt": "2026-06-16T01:46:10Z",
+          "updatedAt": "2026-06-16T01:50:09Z",
+          "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27588493309",
+          "displayTitle": "WaveSight Business Signals PR",
+          "primaryWindow": false
+        }
+      ],
+      "runs": [
+        {
+          "id": 27591153356,
+          "event": "workflow_dispatch",
+          "status": "completed",
+          "conclusion": "success",
+          "createdAt": "2026-06-16T03:01:56Z",
+          "updatedAt": "2026-06-16T03:08:25Z",
+          "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27591153356",
+          "displayTitle": "WaveSight Business Signals PR",
+          "primaryWindow": false
+        },
+        {
+          "id": 27591103993,
+          "event": "workflow_dispatch",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "createdAt": "2026-06-16T03:00:35Z",
+          "updatedAt": "2026-06-16T03:02:23Z",
+          "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27591103993",
+          "displayTitle": "WaveSight Business Signals PR",
+          "primaryWindow": false
+        },
+        {
+          "id": 27590941340,
+          "event": "workflow_dispatch",
+          "status": "completed",
+          "conclusion": "failure",
+          "createdAt": "2026-06-16T02:55:54Z",
+          "updatedAt": "2026-06-16T03:00:11Z",
+          "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27590941340",
+          "displayTitle": "WaveSight Business Signals PR",
+          "primaryWindow": false
+        },
+        {
+          "id": 27588638289,
+          "event": "workflow_dispatch",
+          "status": "completed",
+          "conclusion": "failure",
+          "createdAt": "2026-06-16T01:50:28Z",
+          "updatedAt": "2026-06-16T01:55:21Z",
+          "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27588638289",
+          "displayTitle": "WaveSight Business Signals PR",
+          "primaryWindow": false
+        },
+        {
+          "id": 27588493309,
+          "event": "workflow_dispatch",
+          "status": "completed",
+          "conclusion": "failure",
+          "createdAt": "2026-06-16T01:46:10Z",
+          "updatedAt": "2026-06-16T01:50:09Z",
+          "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27588493309",
+          "displayTitle": "WaveSight Business Signals PR",
+          "primaryWindow": false
+        }
+      ],
+      "dispatch_output": "",
+      "limitation": "",
+      "examples": {
+        "good": "A formal Signal Card keeps a source-backed original event, an accurate title, and a first-party or reporting URL.",
+        "bad": "A LinkedIn repost, GitHub repo tree, or generic funding list is promoted as a Top10 business fact."
+      },
+      "inbox": ""
+    },
+    {
+      "ok": true,
+      "lane": "first_line_viewpoints",
+      "label": "First-Line Viewpoints",
+      "workflow": "WaveSight First-Line Viewpoints PR",
+      "workflow_file": "daily-first-line-viewpoints-pr.yml",
+      "primary_window": "08:30 local Codex RSS collection + sync / 09:17 GitHub fallback",
+      "primary_start": "08:30",
+      "primary_end": "09:30",
+      "action": "skipped",
+      "reason": "same-date successful workflow already exists: https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27587942495",
+      "handoff_stage": "09:30",
+      "takeover_after": "09:30",
+      "dispatch_allowed": true,
+      "primary_window_passed": true,
+      "takeover_window_passed": true,
+      "should_take_over": true,
+      "failure_threshold": 1,
+      "max_attempts": 3,
+      "same_date_failures": 0,
+      "primary_window_failures": 0,
+      "assets": {
+        "ready": true,
+        "dataDate": "2026-06-16",
+        "builders": 16,
+        "items": 0,
+        "timelineFiles": 1
+      },
+      "active_run": null,
+      "successful_run": {
+        "id": 27587942495,
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-06-16T01:31:03Z",
+        "updatedAt": "2026-06-16T01:32:27Z",
+        "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27587942495",
+        "displayTitle": "WaveSight First-Line Viewpoints PR",
+        "primaryWindow": false
+      },
+      "failed_runs": [],
+      "runs": [
+        {
+          "id": 27587942495,
+          "event": "workflow_dispatch",
+          "status": "completed",
+          "conclusion": "success",
+          "createdAt": "2026-06-16T01:31:03Z",
+          "updatedAt": "2026-06-16T01:32:27Z",
+          "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27587942495",
+          "displayTitle": "WaveSight First-Line Viewpoints PR",
+          "primaryWindow": false
+        }
+      ],
+      "dispatch_output": "",
+      "limitation": "",
+      "examples": {
+        "good": "Builder viewpoints publish same-date Chinese data and sync person/date Obsidian timeline files.",
+        "bad": "A builders run finishes but leaves no same-date timeline file or leaves untranslated English as primary display text."
+      },
+      "inbox": ""
+    },
+    {
+      "ok": true,
+      "lane": "community_intelligence",
+      "label": "Community Intelligence",
+      "workflow": "WaveSight Community Intelligence PR",
+      "workflow_file": "daily-community-intelligence-pr.yml",
+      "primary_window": "08:30 local collection / 08:45 GitHub publish; 10:45 publish fallback",
+      "primary_start": "08:30",
+      "primary_end": "09:30",
+      "action": "skipped",
+      "reason": "same-date publication PR is already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/84",
+      "handoff_stage": "09:30",
+      "takeover_after": "09:30",
+      "dispatch_allowed": true,
+      "primary_window_passed": true,
+      "takeover_window_passed": true,
+      "should_take_over": true,
+      "failure_threshold": 1,
+      "max_attempts": 3,
+      "same_date_failures": 0,
+      "primary_window_failures": 0,
+      "assets": {
+        "ready": true,
+        "localCollectionReady": true,
+        "dataDate": "2026-06-16",
+        "items": 61,
+        "links": 69,
+        "errors": 0,
+        "dailySnapshot": "present",
+        "archive": "present"
+      },
+      "active_run": null,
+      "successful_run": {
+        "id": 27591840052,
+        "event": "workflow_dispatch",
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-06-16T03:21:02Z",
+        "updatedAt": "2026-06-16T03:21:35Z",
+        "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27591840052",
+        "displayTitle": "WaveSight Community Intelligence PR",
+        "primaryWindow": false
+      },
+      "failed_runs": [],
+      "runs": [
+        {
+          "id": 27591840052,
+          "event": "workflow_dispatch",
+          "status": "completed",
+          "conclusion": "success",
+          "createdAt": "2026-06-16T03:21:02Z",
+          "updatedAt": "2026-06-16T03:21:35Z",
+          "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27591840052",
+          "displayTitle": "WaveSight Community Intelligence PR",
+          "primaryWindow": false
+        }
+      ],
+      "dispatch_output": "",
+      "limitation": "GitHub can verify and publish community files, but cannot run the logged-in local Chrome collector.",
+      "examples": {
+        "good": "Local Chrome collection writes same-date items/links/errors=0, archive files exist, then GitHub publishes them.",
+        "bad": "GitHub publish runs without same-date local collector output and cannot create fresh community data by itself."
+      },
+      "inbox": ""
+    }
+  ]
+}

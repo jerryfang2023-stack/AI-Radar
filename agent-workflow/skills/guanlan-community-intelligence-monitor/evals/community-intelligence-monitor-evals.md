@@ -30,7 +30,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
 
 9. `three_lane_early_handoff`
    - Pass when Hermes three-lane early handoff checks Community Intelligence publication at 09:30 Asia/Shanghai, rechecks at 09:45 / 09:55 when needed, dispatches the GitHub publish workflow if same-date local output exists but publication is missing, and records that GitHub cannot run the logged-in Chrome collector.
-   - Fail when a GitHub run is described as fresh community collection, or when missing local Chrome collector output is hidden behind repeated publish retries.
+   - Fail when a GitHub run is described as fresh community collection, when healthy same-date local files are treated as publication-complete without a same-date publish workflow / PR path, or when missing local Chrome collector output is hidden behind repeated publish retries.
 
 10. `pre_window_false_positive_guard`
    - Pass when stale Community Intelligence data before 08:45 Asia/Shanghai is treated as yesterday's completed state unless there is an explicit same-day local collector failure log.

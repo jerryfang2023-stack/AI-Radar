@@ -60,6 +60,7 @@ const lanes = [
     id: "community_intelligence",
     label: "Community Intelligence",
     workflowFile: "daily-community-intelligence-pr.yml",
+    branchHead: () => `automation/community-intelligence-${date}`,
     workflowName: "WaveSight Community Intelligence PR",
     primaryWindow: "08:30 local collection / 08:45 GitHub publish; 10:45 publish fallback",
     primaryStart: "08:30",
@@ -172,6 +173,25 @@ function workflowRuns(workflowFile) {
   return JSON.parse(result.stdout);
 }
 
+function workflowPrs(branchHead) {
+  const result = tryRun("gh", [
+    "pr",
+    "list",
+    "--state",
+    "all",
+    "--head",
+    branchHead,
+    "--json",
+    "number,state,isDraft,mergedAt,url,updatedAt",
+    "--limit",
+    "5",
+  ]);
+  if (!result.ok) {
+    throw new Error([result.stdout, result.stderr].filter(Boolean).join("\n").trim() || `gh pr list failed for ${branchHead}`);
+  }
+  return JSON.parse(result.stdout);
+}
+
 function sameDateRuns(runs) {
   return runs.filter((run) => shanghaiDate(run.createdAt) === date);
 }
@@ -264,6 +284,20 @@ function communityAssetsReady() {
   };
 }
 
+function publicationSatisfied(lane, assets, success, mergedPr, openPr) {
+  if (lane.id === "community_intelligence") {
+    return Boolean(success || mergedPr || openPr);
+  }
+  return Boolean(assets.ready || success);
+}
+
+function publicationReason(lane, assets, success, mergedPr, openPr) {
+  if (mergedPr) return `same-date publication PR is already merged: ${mergedPr.url}`;
+  if (openPr) return `same-date publication PR is already open: ${openPr.url}`;
+  if (success) return `same-date successful workflow already exists: ${success.url}`;
+  return "same-date lane assets are already healthy";
+}
+
 function walkFiles(dir) {
   if (!fs.existsSync(dir)) return [];
   const out = [];
@@ -281,9 +315,12 @@ function superviseLane(lane) {
   const primaryWindowPassed = date < today || (date === today && shanghaiMinutes() >= shanghaiMinutes(lane.primaryEnd));
   const takeoverWindowPassed = date < today || (date === today && shanghaiMinutes() >= shanghaiMinutes(lane.takeoverAfter));
   let runs = [];
+  let prs = [];
   let ghError = "";
   try {
     runs = sameDateRuns(workflowRuns(lane.workflowFile));
+    const branchHead = typeof lane.branchHead === "function" ? lane.branchHead() : lane.branchHead;
+    if (branchHead) prs = workflowPrs(branchHead);
   } catch (error) {
     ghError = error.message;
   }
@@ -291,6 +328,8 @@ function superviseLane(lane) {
   const success = runs.find((run) => run.conclusion === "success") || null;
   const active = runs.find((run) => run.status === "queued" || run.status === "in_progress") || null;
   const failures = runs.filter((run) => run.status === "completed" && run.conclusion !== "success");
+  const mergedPr = prs.find((pr) => pr.mergedAt) || null;
+  const openPr = prs.find((pr) => pr.state === "OPEN") || null;
   const primaryFailures = failures.filter((run) => primaryWindowRun(run, lane));
   const shouldTakeOver = (primaryWindowPassed && primaryFailures.length >= lane.failureThreshold) || takeoverWindowPassed;
   const dispatchAllowed = (lane.dispatchStages || []).includes(handoffStage);
@@ -303,11 +342,9 @@ function superviseLane(lane) {
     action = "manual_required";
     reason = `GitHub run inspection failed: ${ghError}`;
     ok = false;
-  } else if (assets.ready || success) {
+  } else if (publicationSatisfied(lane, assets, success, mergedPr, openPr)) {
     action = "skipped";
-    reason = assets.ready
-      ? "same-date lane assets are already healthy"
-      : `same-date successful workflow already exists: ${success.url}`;
+    reason = publicationReason(lane, assets, success, mergedPr, openPr);
   } else if (active) {
     action = "waiting";
     reason = `same-date workflow is already ${active.status}: ${active.url}`;
