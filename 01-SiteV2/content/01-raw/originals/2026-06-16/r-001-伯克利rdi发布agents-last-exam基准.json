@@ -1,0 +1,270 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-001",
+  "title": "伯克利RDI发布Agents' Last Exam基准",
+  "original_url": "https://rdi.berkeley.edu/blog/agents-last-exam",
+  "canonical_url": "https://rdi.berkeley.edu/blog/agents-last-exam",
+  "source_name": "Berkeley RDI：Blog（AI 安全与评测）",
+  "source_type": "research",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "formal_report",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-16T01:59:10.841Z",
+  "collected_at": "2026-06-16T03:08:04.816Z",
+  "language": "mixed",
+  "full_text": "Agents’ Last Exam\nYiyou Sun*, Xinyang Han*, Weichen Zhang*, Yuanbo Pang*, Tianyu Wang*, Yuhan Cao*, Yixiao Huang*, …, Dawn Song\n(* for core contributors)\nUC Berkeley RDI\nJune 2026\n(Est. 5-7 minutes read, more details at https://agents-last-exam.org )\nAlso on LinkedIn and X\nEveryone says the latest AI agents will be “job-ready” soon, especially after the release of Fable 5 last week. But is that really the case?\nOver the past many months, Berkeley RDI has been building Agents’ Last Exam (ALE) , a benchmark designed to test exactly that claim on real digital labor-market work. With ALE, we evaluated Fable 5, GPT-5.5, Composer 2.5, and other frontier agent systems across more than 1,500 expert-sourced tasks spanning 55 occupations. The result is both impressive and sobering. Today’s agents can solve a meaningful fraction of professional tasks. However, when we look at the hardest tasks that require sustained reasoning, deep domain expertise, and reliable execution over long horizons, they are still far from human-level performance. On ALE’s hardest tier, every frontier agent we tested, including Fable 5, achieved a 0% success rate.\nThe age of useful agents is here. The age of truly job-ready agents is not.\nWe hope Agents’ Last Exam (ALE) will serve as a new guidepost and north star for developing agents capable of reliably performing economically valuable work across a broad range of domains.\nALE is built from real work, not synthetic tasks\nEvery task is derived from a real project that a human expert previously completed and converted into a verifiable evaluation with objective grading. No vibes. No human judges. Fully reproducible.\nALE spans 55 non-physical occupations, grounded in the O*NET / SOC 2018, the U.S. federal occupation taxonomy. It is built with 300+ experts from 100+ institutions across science, engineering, medicine, law, finance, education, and many other fields.\nHow does ALE compare to existing agent benchmarks?\nMany of today’s agent benchmarks are rapidly saturating as frontier systems improve. ALE is designed to measure a different capability frontier: sustained, economically valuable work in real-world professional domains.\n55 industry domains\n1,500+ expert-sourced tasks\nFull GUI + CLI environments\nOutcome-based, verifiable evaluation\nAnd if your agent only operates in the terminal, we’ve also released ALE-CLI , a CLI-only subset of the benchmark. Compared to Terminal-Bench and SWE-bench-Pro, it’s broader (tasks span 40 of ALE’s 55 industry subdomains, vs. 6 and 5), longer-horizon (human time-to-complete ranges from hours to weeks, not minutes or days), and harder (the best agent passes just 25.2%, vs. 82.0% on Terminal-Bench and 59.1% on SWE-bench-Pro). Plenty of headroom left to climb.\nPerformance is only half the story\nIn ALE, Fable 5 joins GPT-5.5 and Composer 2.5 in the same overall performance cluster. But cost per task differs sharply:\n→ Fable 5: ~$15.70 → GPT-5.5: ~$3.80 → Composer 2.5: ~$1.33\nAt current pricing, Fable 5 delivers similar performance while costing roughly 4–12× more per completed task.\nWhy do ALE’s results look different from some other benchmarks?\nBecause there is no universally best agent. Every frontier model, including Fable 5, has domains where it shines and domains where it struggles. Aggregate scores average over 55 occupations and 1,500+ tasks, causing many models to cluster together. But the average is not the story. The real signal lies in where agents succeed, where they fail, and how those patterns differ across domains. On identical tasks, different models often fail for very different reasons.\nThe most common failure mode remains a familiar one: agents declare success before they’ve truly verified their work. A typical completion reads: “Done. All checks pass.” Yet the output may be missing required files, contain incorrect counts, omit key fields, or violate explicit constraints in the task specification. These failures occur far more often than many people expect.\nExplore the interactive breakdown and concrete examples in our blog → https://agents-last-exam.org/blogs/agent-showdown\nWhy “Last Exam”?\nThe name “Last Exam” reflects both the bar to clear for economically-valuable work, and the frontier of difficulty for real, complex, long-horizon tasks. While the age of useful agents is here, the age of truly job-ready agents is not.\nWe hope Agents’ Last Exam (ALE) will serve as a new guidepost and north star for developing agents capable of reliably performing economically valuable work across a broad range of domains.\nCome test your agent on ALE\nWebsite: https://agents-last-exam.org\nTasks: https://agents-last-exam.org/demo\nLeaderboard: https://agents-last-exam.org/leaderboard\nPaper: https://arxiv.org/abs/2606.05405\nDataset: https://huggingface.co/datasets/agents-last-exam/agents-last-exam\nCode: https://github.com/rdi-berkeley/agents-last-exam\nJoin the Effort\nTo advance this frontier, we welcome contributors to help build our next-iteration benchmark by contributing tasks and referring domain experts (contributors will be invited to join as co-authors). Learn how to contribute at https://agents-last-exam.org/submit , and explore the leaderboard, paper, and demo at https://agents-last-exam.org .",
+  "clean_text": "Agents’ Last Exam\nYiyou Sun*, Xinyang Han*, Weichen Zhang*, Yuanbo Pang*, Tianyu Wang*, Yuhan Cao*, Yixiao Huang*, …, Dawn Song\n(* for core contributors)\nUC Berkeley RDI\nJune 2026\n(Est. 5-7 minutes read, more details at https://agents-last-exam.org )\nAlso on LinkedIn and X\nEveryone says the latest AI agents will be “job-ready” soon, especially after the release of Fable 5 last week. But is that really the case?\nOver the past many months, Berkeley RDI has been building Agents’ Last Exam (ALE) , a benchmark designed to test exactly that claim on real digital labor-market work. With ALE, we evaluated Fable 5, GPT-5.5, Composer 2.5, and other frontier agent systems across more than 1,500 expert-sourced tasks spanning 55 occupations. The result is both impressive and sobering. Today’s agents can solve a meaningful fraction of professional tasks. However, when we look at the hardest tasks that require sustained reasoning, deep domain expertise, and reliable execution over long horizons, they are still far from human-level performance. On ALE’s hardest tier, every frontier agent we tested, including Fable 5, achieved a 0% success rate.\nThe age of useful agents is here. The age of truly job-ready agents is not.\nWe hope Agents’ Last Exam (ALE) will serve as a new guidepost and north star for developing agents capable of reliably performing economically valuable work across a broad range of domains.\nALE is built from real work, not synthetic tasks\nEvery task is derived from a real project that a human expert previously completed and converted into a verifiable evaluation with objective grading. No vibes. No human judges. Fully reproducible.\nALE spans 55 non-physical occupations, grounded in the O*NET / SOC 2018, the U.S. federal occupation taxonomy. It is built with 300+ experts from 100+ institutions across science, engineering, medicine, law, finance, education, and many other fields.\nHow does ALE compare to existing agent benchmarks?\nMany of today’s agent benchmarks are rapidly saturating as frontier systems improve. ALE is designed to measure a different capability frontier: sustained, economically valuable work in real-world professional domains.\n55 industry domains\n1,500+ expert-sourced tasks\nFull GUI + CLI environments\nOutcome-based, verifiable evaluation\nAnd if your agent only operates in the terminal, we’ve also released ALE-CLI , a CLI-only subset of the benchmark. Compared to Terminal-Bench and SWE-bench-Pro, it’s broader (tasks span 40 of ALE’s 55 industry subdomains, vs. 6 and 5), longer-horizon (human time-to-complete ranges from hours to weeks, not minutes or days), and harder (the best agent passes just 25.2%, vs. 82.0% on Terminal-Bench and 59.1% on SWE-bench-Pro). Plenty of headroom left to climb.\nPerformance is only half the story\nIn ALE, Fable 5 joins GPT-5.5 and Composer 2.5 in the same overall performance cluster. But cost per task differs sharply:\n→ Fable 5: ~$15.70 → GPT-5.5: ~$3.80 → Composer 2.5: ~$1.33\nAt current pricing, Fable 5 delivers similar performance while costing roughly 4–12× more per completed task.\nWhy do ALE’s results look different from some other benchmarks?\nBecause there is no universally best agent. Every frontier model, including Fable 5, has domains where it shines and domains where it struggles. Aggregate scores average over 55 occupations and 1,500+ tasks, causing many models to cluster together. But the average is not the story. The real signal lies in where agents succeed, where they fail, and how those patterns differ across domains. On identical tasks, different models often fail for very different reasons.\nThe most common failure mode remains a familiar one: agents declare success before they’ve truly verified their work. A typical completion reads: “Done. All checks pass.” Yet the output may be missing required files, contain incorrect counts, omit key fields, or violate explicit constraints in the task specification. These failures occur far more often than many people expect.\nExplore the interactive breakdown and concrete examples in our blog → https://agents-last-exam.org/blogs/agent-showdown\nWhy “Last Exam”?\nThe name “Last Exam” reflects both the bar to clear for economically-valuable work, and the frontier of difficulty for real, complex, long-horizon tasks. While the age of useful agents is here, the age of truly job-ready agents is not.\nWe hope Agents’ Last Exam (ALE) will serve as a new guidepost and north star for developing agents capable of reliably performing economically valuable work across a broad range of domains.\nCome test your agent on ALE\nWebsite: https://agents-last-exam.org\nTasks: https://agents-last-exam.org/demo\nLeaderboard: https://agents-last-exam.org/leaderboard\nPaper: https://arxiv.org/abs/2606.05405\nDataset: https://huggingface.co/datasets/agents-last-exam/agents-last-exam\nCode: https://github.com/rdi-berkeley/agents-last-exam\nJoin the Effort\nTo advance this frontier, we welcome contributors to help build our next-iteration benchmark by contributing tasks and referring domain experts (contributors will be invited to join as co-authors). Learn how to contribute at https://agents-last-exam.org/submit , and explore the leaderboard, paper, and demo at https://agents-last-exam.org .",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-16/r-001-伯克利rdi发布agents-last-exam基准.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-16/r-001-伯克利rdi发布agents-last-exam基准.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 5246,
+    "paragraph_count": 35,
+    "sentence_count": 46,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0006,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 5246,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "5cdacd17b724d0c2",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "伯克利RDI发布Agents' Last Exam基准",
+    "discovery_summary": "2026年6月，伯克利RDI发布Agents' Last Exam（ALE）基准，包含1，500余项源于真实工作的任务，覆盖55个非体力职业。对Fable 5、GPT-5.5、Composer 2.5等前沿智能体的测评显示：在最困难层级成功率均为0%；整体任务表现接近，但单任务成本差异巨大（Fable 5约$15.70，GPT-5.5约$3.80，Composer 2.5约$1.33）。CLI子集ALE-CLI最佳通过率仅25.2%。主要失败模式是智能体未验证输出即宣称完成。数据集、代码及CLI子集已开源。",
+    "source_name": "Berkeley RDI：Blog（AI 安全与评测）",
+    "origin_url": "https://rdi.berkeley.edu/blog/agents-last-exam",
+    "discovered_at": "2026-06-16T03:02:46.991Z",
+    "rank_on_page": 27,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "c1489b1f2213074d",
+  "content_hash": "5cdacd17b724d0c2",
+  "full_text_hash": "5cdacd17b724d0c2",
+  "semantic_hash": "904bc60c84077dd6",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-16T01:59:10.841Z",
+  "last_seen_at": "2026-06-16T03:08:04.816Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "2026年6月，伯克利RDI发布Agents' Last Exam（ALE）基准，包含1，500余项源于真实工作的任务，覆盖55个非体力职业。对Fable 5、GPT-5.5、Composer 2.5等前沿智能体的测评显示：在最困难层级成功率均为0%；整体任务表现接近，但单任务成本差异巨大（Fable 5约$15.70，GPT-5.5约$3.80，Composer 2.5约$1.33）。CLI子集ALE-CLI最佳通过率仅25.2%。主要失败模式是智能体未验证输出即宣称完成。数据集、代码及CLI子集已开源。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Agents’ Last Exam Yiyou Sun*, Xinyang Han*, Weichen Zhang*, Yuanbo Pang*, Tianyu Wang*, Yuhan Cao*, Yixiao Huang*, …, Dawn Song (* for core contributors) UC Berkeley RDI June 2026 (Est.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5-7 minutes read, more details at https://agents-last-exam.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "quote",
+      "text": "org ) Also on LinkedIn and X Everyone says the latest AI agents will be “job-ready” soon, especially after the release of Fable 5 last week.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "But is that really the case?",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Over the past many months, Berkeley RDI has been building Agents’ Last Exam (ALE) , a benchmark designed to test exactly that claim on real digital labor-market work.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Berkeley RDI",
+      "Blog（AI 安全与评测）",
+      "GitHub"
+    ],
+    "products": [
+      "Agents",
+      "GPT-5",
+      "agents",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "金融 / 保险",
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "2026",
+      "6",
+      "1",
+      "500",
+      "55",
+      "5",
+      "5.5",
+      "2.5"
+    ],
+    "quotes": [
+      "job-ready",
+      "Done. All checks pass.",
+      "Last Exam",
+      "Last Exam"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Agents’ Last Exam Yiyou Sun*, Xinyang Han*, Weichen Zhang*, Yuanbo Pang*, Tianyu Wang*, Yuhan Cao*, Yixiao Huang*, …, Dawn Song (* for core contributors) UC Berkeley RDI June 2026 (Est.",
+      "5-7 minutes read, more details at https://agents-last-exam.",
+      "But is that really the case?"
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 伯克利RDI发布Agents' Last Exam基准\n\n- raw_id: R-001\n- original_url: https://rdi.berkeley.edu/blog/agents-last-exam\n- source_name: Berkeley RDI：Blog（AI 安全与评测）\n- collected_at: 2026-06-16T03:08:04.816Z\n\n## clean_text\n\nAgents’ Last Exam\nYiyou Sun*, Xinyang Han*, Weichen Zhang*, Yuanbo Pang*, Tianyu Wang*, Yuhan Cao*, Yixiao Huang*, …, Dawn Song\n(* for core contributors)\nUC Berkeley RDI\nJune 2026\n(Est. 5-7 minutes read, more details at https://agents-last-exam.org )\nAlso on LinkedIn and X\nEveryone says the latest AI agents will be “job-ready” soon, especially after the release of Fable 5 last week. But is that really the case?\nOver the past many months, Berkeley RDI has been building Agents’ Last Exam (ALE) , a benchmark designed to test exactly that claim on real digital labor-market work. With ALE, we evaluated Fable 5, GPT-5.5, Composer 2.5, and other frontier agent systems across more than 1,500 expert-sourced tasks spanning 55 occupations. The result is both impressive and sobering. Today’s agents can solve a meaningful fraction of professional tasks. However, when we look at the hardest tasks that require sustained reasoning, deep domain expertise, and reliable execution over long horizons, they are still far from human-level performance. On ALE’s hardest tier, every frontier agent we tested, including Fable 5, achieved a 0% success rate.\nThe age of useful agents is here. The age of truly job-ready agents is not.\nWe hope Agents’ Last Exam (ALE) will serve as a new guidepost and north star for developing agents capable of reliably performing economically valuable work across a broad range of domains.\nALE is built from real work, not synthetic tasks\nEvery task is derived from a real project that a human expert previously completed and converted into a verifiable evaluation with objective grading. No vibes. No human judges. Fully reproducible.\nALE spans 55 non-physical occupations, grounded in the O*NET / SOC 2018, the U.S. federal occupation taxonomy. It is built with 300+ experts from 100+ institutions across science, engineering, medicine, law, finance, education, and many other fields.\nHow does ALE compare to existing agent benchmarks?\nMany of today’s agent benchmarks are rapidly saturating as frontier systems improve. ALE is designed to measure a different capability frontier: sustained, economically valuable work in real-world professional domains.\n55 industry domains\n1,500+ expert-sourced tasks\nFull GUI + CLI environments\nOutcome-based, verifiable evaluation\nAnd if your agent only operates in the terminal, we’ve also released ALE-CLI , a CLI-only subset of the benchmark. Compared to Terminal-Bench and SWE-bench-Pro, it’s broader (tasks span 40 of ALE’s 55 industry subdomains, vs. 6 and 5), longer-horizon (human time-to-complete ranges from hours to weeks, not minutes or days), and harder (the best agent passes just 25.2%, vs. 82.0% on Terminal-Bench and 59.1% on SWE-bench-Pro). Plenty of headroom left to climb.\nPerformance is only half the story\nIn ALE, Fable 5 joins GPT-5.5 and Composer 2.5 in the same overall performance cluster. But cost per task differs sharply:\n→ Fable 5: ~$15.70 → GPT-5.5: ~$3.80 → Composer 2.5: ~$1.33\nAt current pricing, Fable 5 delivers similar performance while costing roughly 4–12× more per completed task.\nWhy do ALE’s results look different from some other benchmarks?\nBecause there is no universally best agent. Every frontier model, including Fable 5, has domains where it shines and domains where it struggles. Aggregate scores average over 55 occupations and 1,500+ tasks, causing many models to cluster together. But the average is not the story. The real signal lies in where agents succeed, where they fail, and how those patterns differ across domains. On identical tasks, different models often fail for very different reasons.\nThe most common failure mode remains a familiar one: agents declare success before they’ve truly verified their work. A typical completion reads: “Done. All checks pass.” Yet the output may be missing required files, contain incorrect counts, omit key fields, or violate explicit constraints in the task specification. These failures occur far more often than many people expect.\nExplore the interactive breakdown and concrete examples in our blog → https://agents-last-exam.org/blogs/agent-showdown\nWhy “Last Exam”?\nThe name “Last Exam” reflects both the bar to clear for economically-valuable work, and the frontier of difficulty for real, complex, long-horizon tasks. While the age of useful agents is here, the age of truly job-ready agents is not.\nWe hope Agents’ Last Exam (ALE) will serve as a new guidepost and north star for developing agents capable of reliably performing economically valuable work across a broad range of domains.\nCome test your agent on ALE\nWebsite: https://agents-last-exam.org\nTasks: https://agents-last-exam.org/demo\nLeaderboard: https://agents-last-exam.org/leaderboard\nPaper: https://arxiv.org/abs/2606.05405\nDataset: https://huggingface.co/datasets/agents-last-exam/agents-last-exam\nCode: https://github.com/rdi-berkeley/agents-last-exam\nJoin the Effort\nTo advance this frontier, we welcome contributors to help build our next-iteration benchmark by contributing tasks and referring domain experts (contributors will be invited to join as co-authors). Learn how to contribute at https://agents-last-exam.org/submit , and explore the leaderboard, paper, and demo at https://agents-last-exam.org .\n\n## full_text\n\nAgents’ Last Exam\nYiyou Sun*, Xinyang Han*, Weichen Zhang*, Yuanbo Pang*, Tianyu Wang*, Yuhan Cao*, Yixiao Huang*, …, Dawn Song\n(* for core contributors)\nUC Berkeley RDI\nJune 2026\n(Est. 5-7 minutes read, more details at https://agents-last-exam.org )\nAlso on LinkedIn and X\nEveryone says the latest AI agents will be “job-ready” soon, especially after the release of Fable 5 last week. But is that really the case?\nOver the past many months, Berkeley RDI has been building Agents’ Last Exam (ALE) , a benchmark designed to test exactly that claim on real digital labor-market work. With ALE, we evaluated Fable 5, GPT-5.5, Composer 2.5, and other frontier agent systems across more than 1,500 expert-sourced tasks spanning 55 occupations. The result is both impressive and sobering. Today’s agents can solve a meaningful fraction of professional tasks. However, when we look at the hardest tasks that require sustained reasoning, deep domain expertise, and reliable execution over long horizons, they are still far from human-level performance. On ALE’s hardest tier, every frontier agent we tested, including Fable 5, achieved a 0% success rate.\nThe age of useful agents is here. The age of truly job-ready agents is not.\nWe hope Agents’ Last Exam (ALE) will serve as a new guidepost and north star for developing agents capable of reliably performing economically valuable work across a broad range of domains.\nALE is built from real work, not synthetic tasks\nEvery task is derived from a real project that a human expert previously completed and converted into a verifiable evaluation with objective grading. No vibes. No human judges. Fully reproducible.\nALE spans 55 non-physical occupations, grounded in the O*NET / SOC 2018, the U.S. federal occupation taxonomy. It is built with 300+ experts from 100+ institutions across science, engineering, medicine, law, finance, education, and many other fields.\nHow does ALE compare to existing agent benchmarks?\nMany of today’s agent benchmarks are rapidly saturating as frontier systems improve. ALE is designed to measure a different capability frontier: sustained, economically valuable work in real-world professional domains.\n55 industry domains\n1,500+ expert-sourced tasks\nFull GUI + CLI environments\nOutcome-based, verifiable evaluation\nAnd if your agent only operates in the terminal, we’ve also released ALE-CLI , a CLI-only subset of the benchmark. Compared to Terminal-Bench and SWE-bench-Pro, it’s broader (tasks span 40 of ALE’s 55 industry subdomains, vs. 6 and 5), longer-horizon (human time-to-complete ranges from hours to weeks, not minutes or days), and harder (the best agent passes just 25.2%, vs. 82.0% on Terminal-Bench and 59.1% on SWE-bench-Pro). Plenty of headroom left to climb.\nPerformance is only half the story\nIn ALE, Fable 5 joins GPT-5.5 and Composer 2.5 in the same overall performance cluster. But cost per task differs sharply:\n→ Fable 5: ~$15.70 → GPT-5.5: ~$3.80 → Composer 2.5: ~$1.33\nAt current pricing, Fable 5 delivers similar performance while costing roughly 4–12× more per completed task.\nWhy do ALE’s results look different from some other benchmarks?\nBecause there is no universally best agent. Every frontier model, including Fable 5, has domains where it shines and domains where it struggles. Aggregate scores average over 55 occupations and 1,500+ tasks, causing many models to cluster together. But the average is not the story. The real signal lies in where agents succeed, where they fail, and how those patterns differ across domains. On identical tasks, different models often fail for very different reasons.\nThe most common failure mode remains a familiar one: agents declare success before they’ve truly verified their work. A typical completion reads: “Done. All checks pass.” Yet the output may be missing required files, contain incorrect counts, omit key fields, or violate explicit constraints in the task specification. These failures occur far more often than many people expect.\nExplore the interactive breakdown and concrete examples in our blog → https://agents-last-exam.org/blogs/agent-showdown\nWhy “Last Exam”?\nThe name “Last Exam” reflects both the bar to clear for economically-valuable work, and the frontier of difficulty for real, complex, long-horizon tasks. While the age of useful agents is here, the age of truly job-ready agents is not.\nWe hope Agents’ Last Exam (ALE) will serve as a new guidepost and north star for developing agents capable of reliably performing economically valuable work across a broad range of domains.\nCome test your agent on ALE\nWebsite: https://agents-last-exam.org\nTasks: https://agents-last-exam.org/demo\nLeaderboard: https://agents-last-exam.org/leaderboard\nPaper: https://arxiv.org/abs/2606.05405\nDataset: https://huggingface.co/datasets/agents-last-exam/agents-last-exam\nCode: https://github.com/rdi-berkeley/agents-last-exam\nJoin the Effort\nTo advance this frontier, we welcome contributors to help build our next-iteration benchmark by contributing tasks and referring domain experts (contributors will be invited to join as co-authors). Learn how to contribute at https://agents-last-exam.org/submit , and explore the leaderboard, paper, and demo at https://agents-last-exam.org .\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 97\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] 2026年6月，伯克利RDI发布Agents' Last Exam（ALE）基准，包含1，500余项源于真实工作的任务，覆盖55个非体力职业。对Fable 5、GPT-5.5、Composer 2.5等前沿智能体的测评显示：在最困难层级成功率均为0%；整体任务表现接近，但单任务成本差异巨大（Fable 5约$15.70，GPT-5.5约$3.80，Composer 2.5约$1.33）。CLI子集ALE-CLI最佳通过率仅25.2%。主要失败模式是智能体未验证输出即宣称完成。数据集、代码及CLI子集已开源。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Agents’ Last Exam Yiyou Sun*, Xinyang Han*, Weichen Zhang*, Yuanbo Pang*, Tianyu Wang*, Yuhan Cao*, Yixiao Huang*, …, Dawn Song (* for core contributors) UC Berkeley RDI June 2026 (Est.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] 5-7 minutes read, more details at https://agents-last-exam.\n4. [quote / daily_observation, heatmap, viewpoint / high] org ) Also on LinkedIn and X Everyone says the latest AI agents will be “job-ready” soon, especially after the release of Fable 5 last week.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] But is that really the case?\n6. [company_action / daily_observation, heatmap, change, case, trend / high] Over the past many months, Berkeley RDI has been building Agents’ Last Exam (ALE) , a benchmark designed to test exactly that claim on real digital labor-market work.\n"
+}

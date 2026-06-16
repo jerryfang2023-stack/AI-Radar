@@ -1,0 +1,220 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-141
+title: "Adobe 升级 Creative Cloud 套件，Lightroom/Premiere/After Effects/Photoshop 加入 AI 功能"
+original_url: "https://www.ithome.com/0/964/624.htm"
+canonical_url: "https://ithome.com/0/964/624.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: supporting_article
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-15T23:30:06.000Z"
+collected_at: 2026-06-16T03:08:05.179Z
+language: mixed
+full_text_hash: 4bab1eedd73362f9
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-16/r-141-adobe-升级-creative-cloud-套件-lightroom-premiere-after-effects-photoshop-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-16/r-141-adobe-升级-creative-cloud-套件-lightroom-premiere-after-effects-photoshop-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 57
+extractor_diagnostics: {"readability_score":57,"text_length":934,"paragraph_count":10,"sentence_count":10,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 934
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4bab1eedd73362f9","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Adobe 升级 Creative Cloud 套件，Lightroom/Premiere/After Effects/Photoshop 加入 AI 功能","discovery_summary":"Adobe 于 6 月 15 日升级 Creative Cloud 套件。Lightroom 新增辅助筛选（按\"睁眼\"\"眼部清晰度\"过滤）、照片转视频功能，以及基于 Topaz Labs 模型的 AI 锐化，已支持索尼 Alpha 7R VI 的 RAW 格式。Premiere 引入全局音频静音、标记搜索、Single Word 编辑、3D Spinback 和 Slide 转场及纹理效果。After Effects 新增 AI 对象蒙版，支持 SVG 导入为形状图层，优化与 Illustrator 的复制粘贴。Photoshop 加入设备端 AI 移除工具和反光去除工具。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/964/624.htm","discovered_at":"2026-06-16T03:02:47.000Z","rank_on_page":65,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 3c0f6654babe1ea3
+content_hash: 4bab1eedd73362f9
+semantic_hash: 62a0599f86531c80
+duplicate_of: ""
+first_seen_at: "2026-06-15T23:30:06.000Z"
+last_seen_at: 2026-06-16T03:08:05.179Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["6","15","7","3","16"],"quotes":[]}
+evidence_seed: {"company_actions":["Adobe 于 6 月 15 日升级 Creative Cloud 套件。Lightroom 新增辅助筛选（按\"睁眼\"\"眼部清晰度\"过滤）、照片转视频功能，以及基于 Topaz Labs 模型的 AI 锐化，已支持索尼 Alpha 7R VI 的 RAW 格式。Premiere 引入全局音频静音、标记搜索、Single Word 编辑、3D Spinback 和 Slide 转场及纹理效果。After Effects 新增 AI 对象蒙版，支持 SVG 导入为形状图层，优化与 Illustrator 的复制粘贴。Photoshop 加入设备端 AI 移除工具和反光去除工具。","Lightroom Lightroom 方面，新版加入辅助筛选工具，用户可按“睁眼”与“眼部清晰度”等条件快速过滤照片，此外照片转视频功能则可把静态照片转成带 AI 运动效果的补充镜头或短视频内容。","在 Lightroom、Lightroom Classic 和 Adobe Camera Raw 中，已支持索尼 Alpha 7R VI 的全部 Sony RAW 格式。"],"case_details":["IT之家援引博文介绍，在图像质量处理上，Lightroom 新增 AI 锐化功能，采用 Topaz Labs 的噪声感知锐化模型，可强化花瓣、毛发、树叶等细节表现。"],"workflow_changes":["IT之家 6 月 16 日消息，Adobe 昨日（6 月 15 日）发布公告， 宣布升级 Creative Cloud 套件，涵盖 Lightroom、Premiere、After Effects 与 Photoshop，为用户创作流程整合更多 AI 能力。"],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有变化前后流程线索"]
+key_excerpts: [{"type":"company_action","text":"Adobe 于 6 月 15 日升级 Creative Cloud 套件。Lightroom 新增辅助筛选（按\"睁眼\"\"眼部清晰度\"过滤）、照片转视频功能，以及基于 Topaz Labs 模型的 AI 锐化，已支持索尼 Alpha 7R VI 的 RAW 格式。Premiere 引入全局音频静音、标记搜索、Single Word 编辑、3D Spinback 和 Slide 转场及纹理效果。After Effects 新增 AI 对象蒙版，支持 SVG 导入为形状图层，优化与 Illustrator 的复制粘贴。Photoshop 加入设备端 AI 移除工具和反光去除工具。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"workflow_change","text":"IT之家 6 月 16 日消息，Adobe 昨日（6 月 15 日）发布公告， 宣布升级 Creative Cloud 套件，涵盖 Lightroom、Premiere、After Effects 与 Photoshop，为用户创作流程整合更多 AI 能力。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Lightroom Lightroom 方面，新版加入辅助筛选工具，用户可按“睁眼”与“眼部清晰度”等条件快速过滤照片，此外照片转视频功能则可把静态照片转成带 AI 运动效果的补充镜头或短视频内容。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"case_detail","text":"IT之家援引博文介绍，在图像质量处理上，Lightroom 新增 AI 锐化功能，采用 Topaz Labs 的噪声感知锐化模型，可强化花瓣、毛发、树叶等细节表现。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在 Lightroom、Lightroom Classic 和 Adobe Camera Raw 中，已支持索尼 Alpha 7R VI 的全部 Sony RAW 格式。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"Premiere Premiere 本次更新引入全局音频静音支持，用户可以一键关闭整个应用内的声音。","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Adobe 升级 Creative Cloud 套件，Lightroom/Premiere/After Effects/Photoshop 加入 AI 功能
+
+## clean_text
+
+IT之家 6 月 16 日消息，Adobe 昨日（6 月 15 日）发布公告， 宣布升级 Creative Cloud 套件，涵盖 Lightroom、Premiere、After Effects 与 Photoshop，为用户创作流程整合更多 AI 能力。
+Lightroom
+Lightroom 方面，新版加入辅助筛选工具，用户可按“睁眼”与“眼部清晰度”等条件快速过滤照片，此外照片转视频功能则可把静态照片转成带 AI 运动效果的补充镜头或短视频内容。
+IT之家援引博文介绍，在图像质量处理上，Lightroom 新增 AI 锐化功能，采用 Topaz Labs 的噪声感知锐化模型，可强化花瓣、毛发、树叶等细节表现。
+在 Lightroom、Lightroom Classic 和 Adobe Camera Raw 中，已支持索尼 Alpha 7R VI 的全部 Sony RAW 格式。
+Premiere
+Premiere 本次更新引入全局音频静音支持，用户可以一键关闭整个应用内的声音。标记搜索可按颜色或名称在所有已打开项目中查找标记；Single Word 在不打乱整段字幕结构情况下，让设计人员能直接修改单个词，更适合精细化后期流程。
+Premiere 加入 3D Spinback 和 Slide 两种转场，并提供缓动控制。时间线中还可直接加入 Channel Blur、Gradient 和 Noise FX 等有机纹理效果。
+After Effects
+After Effects 本次新增了 AI 对象蒙版（Object Matte）功能，用于改善抠像体验。
+设计师现在可以直接将 SVG 文件作为可编辑的形状图层导入到 After Effects 中。Illustrator 新增的复制粘贴工作流程让设计师能够在不同程序之间无缝协作。
+Photoshop
+Photoshop 更新较少，但加入设备端 AI 移除工具，无需等待联网处理；新的反光去除工具还能自动识别并清除隔着玻璃拍摄时的反射。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 16 日消息，Adobe 昨日（6 月 15 日）发布公告， 宣布升级 Creative Cloud 套件，涵盖 Lightroom、Premiere、After Effects 与 Photoshop，为用户创作流程整合更多 AI 能力。
+Lightroom
+Lightroom 方面，新版加入辅助筛选工具，用户可按“睁眼”与“眼部清晰度”等条件快速过滤照片，此外照片转视频功能则可把静态照片转成带 AI 运动效果的补充镜头或短视频内容。
+IT之家援引博文介绍，在图像质量处理上，Lightroom 新增 AI 锐化功能，采用 Topaz Labs 的噪声感知锐化模型，可强化花瓣、毛发、树叶等细节表现。
+在 Lightroom、Lightroom Classic 和 Adobe Camera Raw 中，已支持索尼 Alpha 7R VI 的全部 Sony RAW 格式。
+Premiere
+Premiere 本次更新引入全局音频静音支持，用户可以一键关闭整个应用内的声音。标记搜索可按颜色或名称在所有已打开项目中查找标记；Single Word 在不打乱整段字幕结构情况下，让设计人员能直接修改单个词，更适合精细化后期流程。
+Premiere 加入 3D Spinback 和 Slide 两种转场，并提供缓动控制。时间线中还可直接加入 Channel Blur、Gradient 和 Noise FX 等有机纹理效果。
+After Effects
+After Effects 本次新增了 AI 对象蒙版（Object Matte）功能，用于改善抠像体验。
+设计师现在可以直接将 SVG 文件作为可编辑的形状图层导入到 After Effects 中。Illustrator 新增的复制粘贴工作流程让设计师能够在不同程序之间无缝协作。
+Photoshop
+Photoshop 更新较少，但加入设备端 AI 移除工具，无需等待联网处理；新的反光去除工具还能自动识别并清除隔着玻璃拍摄时的反射。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 57
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":57,"text_length":934,"paragraph_count":10,"sentence_count":10,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   Adobe 于 6 月 15 日升级 Creative Cloud 套件。Lightroom 新增辅助筛选（按"睁眼""眼部清晰度"过滤）、照片转视频功能，以及基于 Topaz Labs 模型的 AI 锐化，已支持索尼 Alpha 7R VI 的 RAW 格式。Premiere 引入全局音频静音、标记搜索、Single Word 编辑、3D Spinback 和 Slide 转场及纹理效果。After Effects 新增 AI 对象蒙版，支持 SVG 导入为形状图层，优化与 Illustrator 的复制粘贴。Photoshop 加入设备端 AI 移除工具和反光去除工具。
+
+2. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   IT之家 6 月 16 日消息，Adobe 昨日（6 月 15 日）发布公告， 宣布升级 Creative Cloud 套件，涵盖 Lightroom、Premiere、After Effects 与 Photoshop，为用户创作流程整合更多 AI 能力。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   Lightroom Lightroom 方面，新版加入辅助筛选工具，用户可按“睁眼”与“眼部清晰度”等条件快速过滤照片，此外照片转视频功能则可把静态照片转成带 AI 运动效果的补充镜头或短视频内容。
+
+4. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=medium
+   IT之家援引博文介绍，在图像质量处理上，Lightroom 新增 AI 锐化功能，采用 Topaz Labs 的噪声感知锐化模型，可强化花瓣、毛发、树叶等细节表现。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   在 Lightroom、Lightroom Classic 和 Adobe Camera Raw 中，已支持索尼 Alpha 7R VI 的全部 Sony RAW 格式。
+
+6. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=medium
+   Premiere Premiere 本次更新引入全局音频静音支持，用户可以一键关闭整个应用内的声音。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 6, 15, 7, 3, 16
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Adobe 于 6 月 15 日升级 Creative Cloud 套件。Lightroom 新增辅助筛选（按"睁眼""眼部清晰度"过滤）、照片转视频功能，以及基于 Topaz Labs 模型的 AI 锐化，已支持索尼 Alpha 7R VI 的 RAW 格式。Premiere 引入全局音频静音、标记搜索、Single Word 编辑、3D Spinback 和 Slide 转场及纹理效果。After Effects 新增 AI 对象蒙版，支持 SVG 导入为形状图层，优化与 Illustrator 的复制粘贴。Photoshop 加入设备端 AI 移除工具和反光去除工具。 / Lightroom Lightroom 方面，新版加入辅助筛选工具，用户可按“睁眼”与“眼部清晰度”等条件快速过滤照片，此外照片转视频功能则可把静态照片转成带 AI 运动效果的补充镜头或短视频内容。 / 在 Lightroom、Lightroom Classic 和 Adobe Camera Raw 中，已支持索尼 Alpha 7R VI 的全部 Sony RAW 格式。
+- case_details: IT之家援引博文介绍，在图像质量处理上，Lightroom 新增 AI 锐化功能，采用 Topaz Labs 的噪声感知锐化模型，可强化花瓣、毛发、树叶等细节表现。
+- workflow_changes: IT之家 6 月 16 日消息，Adobe 昨日（6 月 15 日）发布公告， 宣布升级 Creative Cloud 套件，涵盖 Lightroom、Premiere、After Effects 与 Photoshop，为用户创作流程整合更多 AI 能力。
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Adobe 升级 Creative Cloud 套件，Lightroom/Premiere/After Effects/Photoshop 加入 AI 功能","discovery_summary":"Adobe 于 6 月 15 日升级 Creative Cloud 套件。Lightroom 新增辅助筛选（按\"睁眼\"\"眼部清晰度\"过滤）、照片转视频功能，以及基于 Topaz Labs 模型的 AI 锐化，已支持索尼 Alpha 7R VI 的 RAW 格式。Premiere 引入全局音频静音、标记搜索、Single Word 编辑、3D Spinback 和 Slide 转场及纹理效果。After Effects 新增 AI 对象蒙版，支持 SVG 导入为形状图层，优化与 Illustrator 的复制粘贴。Photoshop 加入设备端 AI 移除工具和反光去除工具。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/964/624.htm","discovered_at":"2026-06-16T03:02:47.000Z","rank_on_page":65,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Adobe 于 6 月 15 日升级 Creative Cloud 套件。Lightroom 新增辅助筛选（按"睁眼""眼部清晰度"过滤）、照片转视频功能，以及基于 Topaz Labs 模型的 AI 锐化，已支持索尼 Alpha 7R VI 的 RAW 格式。Premiere 引入全局音频静音、标记搜索、Single Word 编辑、3D Spinback 和 Slide 转场及纹理效果。After Effects 新增 AI 对象蒙版，支持 SVG 导入为形状图层，优化与 Illustrator 的复制粘贴。Photoshop 加入设备端 AI 移除工具和反光去除工具。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

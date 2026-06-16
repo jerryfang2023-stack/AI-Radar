@@ -1,0 +1,328 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-042
+title: "MiniMax M3模型正式开源：原生多模态、百万上下文"
+original_url: "https://www.ithome.com/0/964/622.htm"
+canonical_url: "https://ithome.com/0/964/622.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-15T23:22:04.000Z"
+collected_at: 2026-06-16T03:08:04.949Z
+language: mixed
+full_text_hash: 99b0efb6c6cc4350
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-16/r-042-minimax-m3模型正式开源-原生多模态-百万上下文.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-16/r-042-minimax-m3模型正式开源-原生多模态-百万上下文.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 76
+extractor_diagnostics: {"readability_score":76,"text_length":4696,"paragraph_count":68,"sentence_count":3,"boilerplate_hits":3,"symbol_ratio":0.0136,"method":"content-container"}
+has_full_text: true
+content_length: 4696
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"99b0efb6c6cc4350","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"MiniMax M3模型正式开源：原生多模态、百万上下文","discovery_summary":"MiniMax M3模型正式开源，支持原生多模态和百万token上下文。发布两周以来，M3在Artificial Analysis综合智能指数排行榜上取得全球开源模型最高排名。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/964/622.htm","discovered_at":"2026-06-16T03:02:47.000Z","rank_on_page":66,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: d6652f1eb8dbfbdf
+content_hash: 99b0efb6c6cc4350
+semantic_hash: 62a1377dc25edd7d
+duplicate_of: ""
+first_seen_at: "2026-06-15T23:22:04.000Z"
+last_seen_at: 2026-06-16T03:08:04.949Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["IT之家（RSS）","Apple"],"products":[],"people":[],"industries":["法律 / 法务","医疗"],"roles":["销售 / 客服"],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["3","2026","6","16","1","1.0","2","4"],"quotes":["如果到 2031 年营收没有超过 1 万亿美元，我会感到惊讶","空调一晚只用一度电？就是个噱头！","近日，我们接受了市场监管部门的约谈指导。针对约谈中监管部门所指出的问题与整改要求，我们完全认可、深刻反思并诚恳接受。对于相关问题给会员带来的困扰与不便，我们深表歉意。","作家放弃了自己的笔","骁龙 8E + 最强风冷"]}
+evidence_seed: {"company_actions":["MiniMax M3模型正式开源，支持原生多模态和百万token上下文。发布两周以来，M3在Artificial Analysis综合智能指数排行榜上取得全球开源模型最高排名。","这个认证可以证明 鸿蒙 套壳 安卓 的言论是假的，如果是套壳，拿不到这个证书的。",">> 查看详情 2、针对多发食品安全问题，市场监管总局约谈山姆总部 针对线下门店及线上网店多发的食品安全问题，市场监管总局近日依法约谈了沃尔玛（中国）投资有限公司（山姆总部）负责人。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["销售 / 客服"],"risks_or_constraints":["“IT早报”时间，大家好，现在是 2026 年 6 月 16 日星期二，今天的重要科技资讯有： 1、华为朱懂东谈“鸿蒙套壳安卓”：套壳拿不到最高安全可靠等级 Ⅱ 级权威认证 朱懂东介绍称， HarmonyOS V1.","0 已通过国家安全可靠 Ⅱ 评测认证。","要求其严格遵守食品安全法律法规，树牢安全意识，落实主体责任，严防全链条风险。"]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"MiniMax M3模型正式开源，支持原生多模态和百万token上下文。发布两周以来，M3在Artificial Analysis综合智能指数排行榜上取得全球开源模型最高排名。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"“IT早报”时间，大家好，现在是 2026 年 6 月 16 日星期二，今天的重要科技资讯有： 1、华为朱懂东谈“鸿蒙套壳安卓”：套壳拿不到最高安全可靠等级 Ⅱ 级权威认证 朱懂东介绍称， HarmonyOS V1.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"0 已通过国家安全可靠 Ⅱ 评测认证。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"这个认证可以证明 鸿蒙 套壳 安卓 的言论是假的，如果是套壳，拿不到这个证书的。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":">> 查看详情 2、针对多发食品安全问题，市场监管总局约谈山姆总部 针对线下门店及线上网店多发的食品安全问题，市场监管总局近日依法约谈了沃尔玛（中国）投资有限公司（山姆总部）负责人。","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"要求其严格遵守食品安全法律法规，树牢安全意识，落实主体责任，严防全链条风险。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# MiniMax M3模型正式开源：原生多模态、百万上下文
+
+## clean_text
+
+“IT早报”时间，大家好，现在是 2026 年 6 月 16 日星期二，今天的重要科技资讯有：
+1、华为朱懂东谈“鸿蒙套壳安卓”：套壳拿不到最高安全可靠等级 Ⅱ 级权威认证
+朱懂东介绍称， HarmonyOS V1.0 已通过国家安全可靠 Ⅱ 评测认证。这个认证可以证明 鸿蒙 套壳 安卓 的言论是假的，如果是套壳，拿不到这个证书的。>> 查看详情
+2、针对多发食品安全问题，市场监管总局约谈山姆总部
+针对线下门店及线上网店多发的食品安全问题，市场监管总局近日依法约谈了沃尔玛（中国）投资有限公司（山姆总部）负责人。要求其严格遵守食品安全法律法规，树牢安全意识，落实主体责任，严防全链条风险。>> 查看详情
+3、菜鸟回应“解散”传闻：假的，纯属谣言
+针对网传阿里菜鸟或将解散的消息，菜鸟方面回应：“假的，纯属谣言”。>> 查看详情
+4、浙江联通 6 月 15 日全面退出 3G 服务
+浙江联通宣布，自 6 月 15 日起，浙江省中国联通 3G 网络将全面退出历史舞台。这意味着仅支持 3G 的手机将无法通话上网。运营商表示，4G 与 5G 网络已实现城乡全域深度覆盖，足以承接所有通信需求。>> 查看详情
+5、英国政府官宣 16 岁以下未成年人社交媒体禁令，预计涵盖 YouTube、TikTok、IG、X 平台等
+英国首相斯塔默宣布，将禁止 16 岁以下未成年人使用 TikTok、Instagram 等主流社媒平台，旨在让孩子重获童年。禁令还将覆盖直播、陌生人交流等功能，并计划为 16-17 岁青少年设置保护功能。>> 查看详情
+6、消息称小红书准备本月在香港提交 IPO 申请
+目前相关商讨仍在进行中，包括上市时机、募资规模及公司估值在内的具体细节均尚未最终敲定。>> 查看详情
+7、吉利李书福、张雪达成合作意向，推动 WSBK（世界超级摩托车锦标赛）在中国举办
+在央视财经 6 月 14 日晚公布的《对话》节目录制现场，吉利控股集团董事长李书福向张雪机车创始人张雪发起“挑战”。
+节目还透露，两人已悄悄达成合作意向，将推动 WSBK（世界超级摩托车锦标赛）在中国举办。>> 查看详情
+8、马斯克：到 2030 年 SpaceX 或实现近 1 万亿美元营收
+埃隆 · 马斯克当地时间 6 月 14 日在社交媒体平台 X 表示，他认为 SpaceX 到 2030 年的营收可能会达到约 1 万亿美元，“如果到 2031 年营收没有超过 1 万亿美元，我会感到惊讶”。>> 查看详情
+9、3799 元起：大疆 Osmo Pocket 4P 双主摄口袋摄影机发布，1 英寸 LOFIC 主摄 +60mm 中焦镜头
+大疆正式发布 Osmo Pocket 4P 双主摄口袋电影机，搭载 1 英寸 LOFIC 广角主摄与 60mm 中焦镜头，支持 17 级动态范围与 D-Log 2 色彩，最高可录制 4K/240fps 慢动作。内置 103GB 存储，最长续航 210 分钟，即日起开启预约。>> 查看详情
+10、华为做大型应用工具软件原因揭秘，朱懂东称没找到合适的只能自己来
+据朱懂东回忆，当年做笔记 App，做了以后发现很多厂商跟不上华为的节奏，所以就选择华为自己干了。关于天生会画 App，他表示自己个人认为，至少是跟 Procreate 齐平的，而在中国的水墨山水国画、中国的古典艺术岩画等方面是远超它的。>> 查看详情
+11、华为鸿蒙 HarmonyOS SDK 26 正式发布：悬浮窗 & 闪控球、游戏秒启秒开等
+华为手机官方 6 月 15 日宣布，HarmonyOS SDK 26 正式发布，在易用、空间化、智能化全面升级。据介绍，HarmonyOS SDK 通过开放超过 100 个 Kit、8 万多 API 接口。>> 查看详情
+12、巴西法院重罚苹果、微软、腾讯等公司，要求其整改游戏盲盒机制
+科技媒体 macmagazine 6 月 15 日发布博文，报道称针对游戏“抽奖箱”争议，巴西联邦区法院近日认定苹果、谷歌及多家平台和游戏公司需合计赔偿 2.98 亿雷亚尔（约合 3.97 亿人民币）。>> 查看详情
+13、苹果核心供应商罕见暗示：标准版 iPhone 18 将推迟至 2027 年初上市
+苹果供应链核心供应商大立光董事长暗示，标准版 iPhone 18 将推迟至 2027 年第一季度发布，印证了苹果将拆分旗舰 iPhone 发布周期的传闻。今年秋季仅推出 Pro 系列及首款折叠屏机型，基础款将与 iPhone 18e 等次年春季亮相。>> 查看详情
+14、“空调一晚只用一度电？就是个噱头！”对话格力朱磊：打价格战最终伤害的是消费者利益
+格力电器 CMO 朱磊在与新浪科技沟通中，火力全开炮轰家电行业种种营销乱象，直言 15 分钟抽真空只是行业基本操作，不值得大肆宣传，虚假标注 APF 值更是对消费者伤害最大的骗局。>> 查看详情
+15、MiniMax M3 模型正式开源：原生多模态、百万上下文
+官方表示，发布两周以来，M3 在 Artificial Analysis 综合智能指数排行榜上取得了全球开源模型的最高排名。>> 查看详情
+16、国外软件对待国乐不上心，华为朱懂东透露音悦家 App 立志“复活”大家能看到的中国古典乐器
+朱懂东坦言，做音悦家 App 做到现在，已经不仅仅是做一个工具化软件了，是有着把我们东方文化复兴的一些思考在里面。他透露，这款软件的开发人员现在激情高昂，因为这件事情脱离了工作本身，变成了一件有意义的事情。>> 查看详情
+17、AI 版支付宝内测界面曝光，搭载“阿宝”助手
+从曝光的界面可以看到，AI 版支付宝包含资产、阿宝两个版块，其中的“阿宝”就是一个 AI 助手界面，用户可以和阿宝对话，底部则是支付宝的扫一扫、收付款、出行、理财几大功能。>> 查看详情
+18、小米单联瑜：从今年下半年开始会有更多的品牌加强抽真空监管，部分品牌会采用「数字抽真空技术」
+小米集团大家电部总经理单联瑜 6 月 15 日发文，分享了自己的判断：27 年开始，会有更多品牌和产品系列采用「纯热泵技术」；26 年下半年开始，会有更多的品牌加强抽真空的监管，部分品牌会采用「数字抽真空技术」。>> 查看详情
+19、顾客用 AI 伪造“吃坏肚子”诊断证明“碰瓷”餐厅，法院认定犯敲诈勒索罪
+被告人杨某利用 AI 软件伪造医院诊断证明、收费单据和投诉材料，以“就餐致病”为名敲诈餐厅，累计非法获利 2500 元。最终，法院一审认定杨某犯敲诈勒索罪。>> 查看详情
+20、山姆回应被市场监管总局约谈：牵头成立专项整改工作组，全面优化食安管控和商品品控
+山姆方面回应称：“近日，我们接受了市场监管部门的约谈指导。针对约谈中监管部门所指出的问题与整改要求，我们完全认可、深刻反思并诚恳接受。对于相关问题给会员带来的困扰与不便，我们深表歉意。”>> 查看详情
+21、11000mAh 荣耀最大电池，荣耀 X80 Pro Max 手机官宣 6 月 22 日发布
+荣耀 X80 Pro Max 主打长续航，搭载 11000mAh 荣耀最大电池，以及金标抗摔免费换屏。>> 查看详情
+22、古尔曼：苹果仍在筹备三个尚未发布的 iOS 27 新功能
+除了已公布的 AI 版 Siri，苹果 WWDC26 上还有多项功能“跳票”。彭博社披露，Siri 扩展接入第三方 AI、Apple Watch 简约表盘、可自定义相机等重磅更新，预计将在今年 9 月随新硬件一同亮相。>> 查看详情
+23、谷歌地球网页版悄悄上线“飞行模拟器”模式，可使用键鼠控制
+谷歌地球网页版现已悄悄上线“飞行模拟器”模式，用户可在浏览器中通过键盘和鼠标控制飞行，探索全球 3D 地景。该功能基于谷歌地图的实时 3D 建筑模型，体验接近《微软模拟飞行》等专业游戏，但定位为休闲娱乐。>> 查看详情
+24、华为余承东详解全新一代问界 M9 融合感知方案，全车 40 个传感器做到 360° 无死角
+开车最怕盲区里突然窜出电动车、小动物，非常危险。华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东 6 月 15 日发布视频，详细介绍了全新一代问界 M9 的融合感知方案和 6 激光雷达立体矩阵。>> 查看详情
+25、理想发布会暗埋小彩蛋，李想翻看《停车的艺术》学习如何正确泊车
+在 6 月 15 日 Livis Day 理想汽车软件与具身智能发布会最后的宣传视频中暗藏了不少彩蛋，其中让人记忆颇深的就是理想汽车 CEO 李想翻看起了一本名为《停车的艺术》的书，书本的封面印有“如何正确泊车”。>> 查看详情
+26、特斯拉：中国智造的 Model Y 成为 2026 年 5 月日本进口车品牌单一车型新车注册量第一
+特斯拉官方微博 6 月 15 日宣布，中国智造的 Model Y 成为 2026 年 5 月日本进口车品牌单一车型新车注册量第一。去年 11 月，特斯拉副总裁陶琳透露，得益于供应链的深度整合，特斯拉上海超级工厂生产的 Model 3 和 Model Y 零部件本土化率已超过 95%。>> 查看详情
+27、科幻作家郝景芳承认新书的 AI 写作比重占到一半，引发网络争议
+有网友认为“作家放弃了自己的笔”，还有网友表示承认用 AI 写作是迈出了一大步。>> 查看详情
+28、领克 07 GT 官宣 6 月底到店并预售：高频功能物理按键、95 英寸 AR-HUD 等
+领克 07 GT 将于 6 月底陆续到店并开启预售。新车亮点包括可承载 150kg 的车顶行李架、最大牵引 1.6 吨的电动隐藏拖车钩、1.9㎡四层隔热天幕。座舱内保留高频功能物理按键方便盲操，并配备 10.2 英寸仪表 +15.4 英寸中控 +95 英寸 AR-HUD 三屏联动。内饰多处融入碳纹饰板。>> 查看详情
+29、BLG 连胜 5 场登顶《英雄联盟》2026 LPL 第二赛段，携手 TES 出战 MSI
+BLG 还将与 AL、JDG 一道出战 EWC 的《英雄联盟》项目。>> 查看详情
+30、小米 REDMI K90 至尊版配置曝光：“骁龙 8E + 最强风冷”硬刚 8E5，搭载 8K+ 大电池
+有网友询问新机是否和 REDMI K90 Max 定位冲突，博主表示：不冲突，一个天玑 9500 + 风扇性能更极致，一个骁龙 8E + 风扇性能挑战 N 代旗舰芯，价格更香，定位类似 荣耀 WIN 和 WIN RT。>> 查看详情
+31、2026 软科中国大学专业排名公布，北大、清华、哈工大 A+ 专业数量前三
+软科中国大学专业排名发布排名的对象是开设学校数量不少于 4 所的专业，共计 640 个，每个专业发布的是排名位列前 50% 的高校，共有 1132 所高校的 30710 个专业点上榜。>> 查看详情
+32、网件起诉 TP-Link 虚假宣传是“美国公司”，后者回应称“不准确且歪曲事实”
+据外媒 PCMag 报道，总部位于美国的网件公司反向起诉 TP-Link，称由于美国消费者误以为竞争对手 TP-Link 已不再是中国公司，让网件损失了“数千万美元的销售额”。>> 查看详情
+今天就先聊到这里，IT早报，咱们明天见。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+“IT早报”时间，大家好，现在是 2026 年 6 月 16 日星期二，今天的重要科技资讯有：
+1、华为朱懂东谈“鸿蒙套壳安卓”：套壳拿不到最高安全可靠等级 Ⅱ 级权威认证
+朱懂东介绍称， HarmonyOS V1.0 已通过国家安全可靠 Ⅱ 评测认证。这个认证可以证明 鸿蒙 套壳 安卓 的言论是假的，如果是套壳，拿不到这个证书的。>> 查看详情
+2、针对多发食品安全问题，市场监管总局约谈山姆总部
+针对线下门店及线上网店多发的食品安全问题，市场监管总局近日依法约谈了沃尔玛（中国）投资有限公司（山姆总部）负责人。要求其严格遵守食品安全法律法规，树牢安全意识，落实主体责任，严防全链条风险。>> 查看详情
+3、菜鸟回应“解散”传闻：假的，纯属谣言
+针对网传阿里菜鸟或将解散的消息，菜鸟方面回应：“假的，纯属谣言”。>> 查看详情
+4、浙江联通 6 月 15 日全面退出 3G 服务
+浙江联通宣布，自 6 月 15 日起，浙江省中国联通 3G 网络将全面退出历史舞台。这意味着仅支持 3G 的手机将无法通话上网。运营商表示，4G 与 5G 网络已实现城乡全域深度覆盖，足以承接所有通信需求。>> 查看详情
+5、英国政府官宣 16 岁以下未成年人社交媒体禁令，预计涵盖 YouTube、TikTok、IG、X 平台等
+英国首相斯塔默宣布，将禁止 16 岁以下未成年人使用 TikTok、Instagram 等主流社媒平台，旨在让孩子重获童年。禁令还将覆盖直播、陌生人交流等功能，并计划为 16-17 岁青少年设置保护功能。>> 查看详情
+6、消息称小红书准备本月在香港提交 IPO 申请
+目前相关商讨仍在进行中，包括上市时机、募资规模及公司估值在内的具体细节均尚未最终敲定。>> 查看详情
+7、吉利李书福、张雪达成合作意向，推动 WSBK（世界超级摩托车锦标赛）在中国举办
+在央视财经 6 月 14 日晚公布的《对话》节目录制现场，吉利控股集团董事长李书福向张雪机车创始人张雪发起“挑战”。
+节目还透露，两人已悄悄达成合作意向，将推动 WSBK（世界超级摩托车锦标赛）在中国举办。>> 查看详情
+8、马斯克：到 2030 年 SpaceX 或实现近 1 万亿美元营收
+埃隆 · 马斯克当地时间 6 月 14 日在社交媒体平台 X 表示，他认为 SpaceX 到 2030 年的营收可能会达到约 1 万亿美元，“如果到 2031 年营收没有超过 1 万亿美元，我会感到惊讶”。>> 查看详情
+9、3799 元起：大疆 Osmo Pocket 4P 双主摄口袋摄影机发布，1 英寸 LOFIC 主摄 +60mm 中焦镜头
+大疆正式发布 Osmo Pocket 4P 双主摄口袋电影机，搭载 1 英寸 LOFIC 广角主摄与 60mm 中焦镜头，支持 17 级动态范围与 D-Log 2 色彩，最高可录制 4K/240fps 慢动作。内置 103GB 存储，最长续航 210 分钟，即日起开启预约。>> 查看详情
+10、华为做大型应用工具软件原因揭秘，朱懂东称没找到合适的只能自己来
+据朱懂东回忆，当年做笔记 App，做了以后发现很多厂商跟不上华为的节奏，所以就选择华为自己干了。关于天生会画 App，他表示自己个人认为，至少是跟 Procreate 齐平的，而在中国的水墨山水国画、中国的古典艺术岩画等方面是远超它的。>> 查看详情
+11、华为鸿蒙 HarmonyOS SDK 26 正式发布：悬浮窗 & 闪控球、游戏秒启秒开等
+华为手机官方 6 月 15 日宣布，HarmonyOS SDK 26 正式发布，在易用、空间化、智能化全面升级。据介绍，HarmonyOS SDK 通过开放超过 100 个 Kit、8 万多 API 接口。>> 查看详情
+12、巴西法院重罚苹果、微软、腾讯等公司，要求其整改游戏盲盒机制
+科技媒体 macmagazine 6 月 15 日发布博文，报道称针对游戏“抽奖箱”争议，巴西联邦区法院近日认定苹果、谷歌及多家平台和游戏公司需合计赔偿 2.98 亿雷亚尔（约合 3.97 亿人民币）。>> 查看详情
+13、苹果核心供应商罕见暗示：标准版 iPhone 18 将推迟至 2027 年初上市
+苹果供应链核心供应商大立光董事长暗示，标准版 iPhone 18 将推迟至 2027 年第一季度发布，印证了苹果将拆分旗舰 iPhone 发布周期的传闻。今年秋季仅推出 Pro 系列及首款折叠屏机型，基础款将与 iPhone 18e 等次年春季亮相。>> 查看详情
+14、“空调一晚只用一度电？就是个噱头！”对话格力朱磊：打价格战最终伤害的是消费者利益
+格力电器 CMO 朱磊在与新浪科技沟通中，火力全开炮轰家电行业种种营销乱象，直言 15 分钟抽真空只是行业基本操作，不值得大肆宣传，虚假标注 APF 值更是对消费者伤害最大的骗局。>> 查看详情
+15、MiniMax M3 模型正式开源：原生多模态、百万上下文
+官方表示，发布两周以来，M3 在 Artificial Analysis 综合智能指数排行榜上取得了全球开源模型的最高排名。>> 查看详情
+16、国外软件对待国乐不上心，华为朱懂东透露音悦家 App 立志“复活”大家能看到的中国古典乐器
+朱懂东坦言，做音悦家 App 做到现在，已经不仅仅是做一个工具化软件了，是有着把我们东方文化复兴的一些思考在里面。他透露，这款软件的开发人员现在激情高昂，因为这件事情脱离了工作本身，变成了一件有意义的事情。>> 查看详情
+17、AI 版支付宝内测界面曝光，搭载“阿宝”助手
+从曝光的界面可以看到，AI 版支付宝包含资产、阿宝两个版块，其中的“阿宝”就是一个 AI 助手界面，用户可以和阿宝对话，底部则是支付宝的扫一扫、收付款、出行、理财几大功能。>> 查看详情
+18、小米单联瑜：从今年下半年开始会有更多的品牌加强抽真空监管，部分品牌会采用「数字抽真空技术」
+小米集团大家电部总经理单联瑜 6 月 15 日发文，分享了自己的判断：27 年开始，会有更多品牌和产品系列采用「纯热泵技术」；26 年下半年开始，会有更多的品牌加强抽真空的监管，部分品牌会采用「数字抽真空技术」。>> 查看详情
+19、顾客用 AI 伪造“吃坏肚子”诊断证明“碰瓷”餐厅，法院认定犯敲诈勒索罪
+被告人杨某利用 AI 软件伪造医院诊断证明、收费单据和投诉材料，以“就餐致病”为名敲诈餐厅，累计非法获利 2500 元。最终，法院一审认定杨某犯敲诈勒索罪。>> 查看详情
+20、山姆回应被市场监管总局约谈：牵头成立专项整改工作组，全面优化食安管控和商品品控
+山姆方面回应称：“近日，我们接受了市场监管部门的约谈指导。针对约谈中监管部门所指出的问题与整改要求，我们完全认可、深刻反思并诚恳接受。对于相关问题给会员带来的困扰与不便，我们深表歉意。”>> 查看详情
+21、11000mAh 荣耀最大电池，荣耀 X80 Pro Max 手机官宣 6 月 22 日发布
+荣耀 X80 Pro Max 主打长续航，搭载 11000mAh 荣耀最大电池，以及金标抗摔免费换屏。>> 查看详情
+22、古尔曼：苹果仍在筹备三个尚未发布的 iOS 27 新功能
+除了已公布的 AI 版 Siri，苹果 WWDC26 上还有多项功能“跳票”。彭博社披露，Siri 扩展接入第三方 AI、Apple Watch 简约表盘、可自定义相机等重磅更新，预计将在今年 9 月随新硬件一同亮相。>> 查看详情
+23、谷歌地球网页版悄悄上线“飞行模拟器”模式，可使用键鼠控制
+谷歌地球网页版现已悄悄上线“飞行模拟器”模式，用户可在浏览器中通过键盘和鼠标控制飞行，探索全球 3D 地景。该功能基于谷歌地图的实时 3D 建筑模型，体验接近《微软模拟飞行》等专业游戏，但定位为休闲娱乐。>> 查看详情
+24、华为余承东详解全新一代问界 M9 融合感知方案，全车 40 个传感器做到 360° 无死角
+开车最怕盲区里突然窜出电动车、小动物，非常危险。华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东 6 月 15 日发布视频，详细介绍了全新一代问界 M9 的融合感知方案和 6 激光雷达立体矩阵。>> 查看详情
+25、理想发布会暗埋小彩蛋，李想翻看《停车的艺术》学习如何正确泊车
+在 6 月 15 日 Livis Day 理想汽车软件与具身智能发布会最后的宣传视频中暗藏了不少彩蛋，其中让人记忆颇深的就是理想汽车 CEO 李想翻看起了一本名为《停车的艺术》的书，书本的封面印有“如何正确泊车”。>> 查看详情
+26、特斯拉：中国智造的 Model Y 成为 2026 年 5 月日本进口车品牌单一车型新车注册量第一
+特斯拉官方微博 6 月 15 日宣布，中国智造的 Model Y 成为 2026 年 5 月日本进口车品牌单一车型新车注册量第一。去年 11 月，特斯拉副总裁陶琳透露，得益于供应链的深度整合，特斯拉上海超级工厂生产的 Model 3 和 Model Y 零部件本土化率已超过 95%。>> 查看详情
+27、科幻作家郝景芳承认新书的 AI 写作比重占到一半，引发网络争议
+有网友认为“作家放弃了自己的笔”，还有网友表示承认用 AI 写作是迈出了一大步。>> 查看详情
+28、领克 07 GT 官宣 6 月底到店并预售：高频功能物理按键、95 英寸 AR-HUD 等
+领克 07 GT 将于 6 月底陆续到店并开启预售。新车亮点包括可承载 150kg 的车顶行李架、最大牵引 1.6 吨的电动隐藏拖车钩、1.9㎡四层隔热天幕。座舱内保留高频功能物理按键方便盲操，并配备 10.2 英寸仪表 +15.4 英寸中控 +95 英寸 AR-HUD 三屏联动。内饰多处融入碳纹饰板。>> 查看详情
+29、BLG 连胜 5 场登顶《英雄联盟》2026 LPL 第二赛段，携手 TES 出战 MSI
+BLG 还将与 AL、JDG 一道出战 EWC 的《英雄联盟》项目。>> 查看详情
+30、小米 REDMI K90 至尊版配置曝光：“骁龙 8E + 最强风冷”硬刚 8E5，搭载 8K+ 大电池
+有网友询问新机是否和 REDMI K90 Max 定位冲突，博主表示：不冲突，一个天玑 9500 + 风扇性能更极致，一个骁龙 8E + 风扇性能挑战 N 代旗舰芯，价格更香，定位类似 荣耀 WIN 和 WIN RT。>> 查看详情
+31、2026 软科中国大学专业排名公布，北大、清华、哈工大 A+ 专业数量前三
+软科中国大学专业排名发布排名的对象是开设学校数量不少于 4 所的专业，共计 640 个，每个专业发布的是排名位列前 50% 的高校，共有 1132 所高校的 30710 个专业点上榜。>> 查看详情
+32、网件起诉 TP-Link 虚假宣传是“美国公司”，后者回应称“不准确且歪曲事实”
+据外媒 PCMag 报道，总部位于美国的网件公司反向起诉 TP-Link，称由于美国消费者误以为竞争对手 TP-Link 已不再是中国公司，让网件损失了“数千万美元的销售额”。>> 查看详情
+今天就先聊到这里，IT早报，咱们明天见。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 76
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":76,"text_length":4696,"paragraph_count":68,"sentence_count":3,"boilerplate_hits":3,"symbol_ratio":0.0136,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   MiniMax M3模型正式开源，支持原生多模态和百万token上下文。发布两周以来，M3在Artificial Analysis综合智能指数排行榜上取得全球开源模型最高排名。
+
+2. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   “IT早报”时间，大家好，现在是 2026 年 6 月 16 日星期二，今天的重要科技资讯有： 1、华为朱懂东谈“鸿蒙套壳安卓”：套壳拿不到最高安全可靠等级 Ⅱ 级权威认证 朱懂东介绍称， HarmonyOS V1.
+
+3. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   0 已通过国家安全可靠 Ⅱ 评测认证。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   这个认证可以证明 鸿蒙 套壳 安卓 的言论是假的，如果是套壳，拿不到这个证书的。
+
+5. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   >> 查看详情 2、针对多发食品安全问题，市场监管总局约谈山姆总部 针对线下门店及线上网店多发的食品安全问题，市场监管总局近日依法约谈了沃尔玛（中国）投资有限公司（山姆总部）负责人。
+
+6. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   要求其严格遵守食品安全法律法规，树牢安全意识，落实主体责任，严防全链条风险。
+
+## business_elements
+
+- companies: IT之家（RSS）, Apple
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 医疗
+- roles: 销售 / 客服
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 3, 2026, 6, 16, 1, 1.0, 2, 4
+- quotes: 如果到 2031 年营收没有超过 1 万亿美元，我会感到惊讶 / 空调一晚只用一度电？就是个噱头！ / 近日，我们接受了市场监管部门的约谈指导。针对约谈中监管部门所指出的问题与整改要求，我们完全认可、深刻反思并诚恳接受。对于相关问题给会员带来的困扰与不便，我们深表歉意。 / 作家放弃了自己的笔 / 骁龙 8E + 最强风冷
+
+## evidence_seed
+
+- company_actions: MiniMax M3模型正式开源，支持原生多模态和百万token上下文。发布两周以来，M3在Artificial Analysis综合智能指数排行榜上取得全球开源模型最高排名。 / 这个认证可以证明 鸿蒙 套壳 安卓 的言论是假的，如果是套壳，拿不到这个证书的。 / >> 查看详情 2、针对多发食品安全问题，市场监管总局约谈山姆总部 针对线下门店及线上网店多发的食品安全问题，市场监管总局近日依法约谈了沃尔玛（中国）投资有限公司（山姆总部）负责人。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 销售 / 客服
+- risks_or_constraints: “IT早报”时间，大家好，现在是 2026 年 6 月 16 日星期二，今天的重要科技资讯有： 1、华为朱懂东谈“鸿蒙套壳安卓”：套壳拿不到最高安全可靠等级 Ⅱ 级权威认证 朱懂东介绍称， HarmonyOS V1. / 0 已通过国家安全可靠 Ⅱ 评测认证。 / 要求其严格遵守食品安全法律法规，树牢安全意识，落实主体责任，严防全链条风险。
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"MiniMax M3模型正式开源：原生多模态、百万上下文","discovery_summary":"MiniMax M3模型正式开源，支持原生多模态和百万token上下文。发布两周以来，M3在Artificial Analysis综合智能指数排行榜上取得全球开源模型最高排名。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/964/622.htm","discovered_at":"2026-06-16T03:02:47.000Z","rank_on_page":66,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+MiniMax M3模型正式开源，支持原生多模态和百万token上下文。发布两周以来，M3在Artificial Analysis综合智能指数排行榜上取得全球开源模型最高排名。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

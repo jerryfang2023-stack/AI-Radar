@@ -1,0 +1,270 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-063",
+  "title": "Claude Code v2.1.178 发布",
+  "original_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+  "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+  "source_name": "Claude Code：GitHub Releases（RSS）",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-15T21:35:55.000Z",
+  "collected_at": "2026-06-16T03:08:05.012Z",
+  "language": "mixed",
+  "full_text": "anthropics\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.5k\nStar\n133k\nv2.1.178\nLatest\nLatest\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading. Please reload this page .\nNo results found\nView all tags\nashwin-ant\nreleased this\n15 Jun 21:35\nv2.1.178\n64ceb97\nWhat's changed\nAdded Tool(param:value) syntax for permission rules to match a tool's input parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents\nSkills in nested .claude/skills directories now load when working on files there; on a name clash, the nested skill appears as <dir>:<name> so both stay available\nNested .claude/ directories: the agent, workflow, and output-style closest to the working directory now wins when names collide; project-scope workflow saves now target the closest existing .claude/workflows/\nImproved auto mode: subagent spawns are now evaluated by the classifier before launch, closing a gap where a subagent could request a blocked action without review\nImproved /doctor with consistent flat tree layout across all sections, clearer section status icons, and highlighted command names\nImproved the skill listing truncation warning to show how many skill descriptions are affected\nChanged the workflow prompt keyword to use a purple shimmer highlight and trigger only on explicit phrases like \"run a workflow\" or \"workflow:\", not on any mention of the word\nImproved Remote Control error messages: connection failures now show a persistent red \"/rc failed\" indicator in the footer, and the \"not yet enabled\" error now explains whether it's a gate, a check failure, stale entitlement, or org policy\n/bug now requires a description before submitting, and no longer uses model-refusal text as the GitHub issue title\nFixed a crash (out-of-memory) when the CLI inherits a stale websocket/OAuth file-descriptor environment variable from a parent process\nFixed Claude in Chrome silently failing to connect when the OAuth token belongs to a different account than the Claude Code login\nFixed nested .claude/skills skills with directory-qualified names being blocked by permission prompts in non-interactive runs\nFixed several subagent issues: viewing a subagent's transcript now shows tool results and live progress, messages sent while it finishes its turn are no longer dropped, and backgrounding a running subagent (ctrl+b) no longer restarts it from scratch\nFixed claude agents workers failing with 401 Invalid bearer token when the daemon was started from a shell with a custom API gateway via ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN\nFixed compaction not honoring --fallback-model : compaction now falls back to the configured fallback model chain on overload or model-availability errors\nFixed model requests continuing to fail with auth errors after credentials were refreshed outside the session, due to a stale cached request configuration\nFixed background sessions created with /bg or ←← after a turn finished showing \"Working\" forever in the agents list\nFixed CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE=1 preventing fresh marketplace installs from cloning\nFixed MCP server-level specs ( mcp__server , mcp__server__* , mcp__* ) in subagent disallowedTools being silently ignored\nFixed vim mode undo: u now steps through NORMAL/VISUAL-mode commands one at a time instead of merging commands in quick succession into a single undo step\nFixed statusline links with custom URI schemes (e.g. vscode:// ) not opening when clicked in claude agents\n[VSCode] Fixed pressing Esc to dismiss a CJK IME candidate window canceling the running Claude task\nAssets\n12\nLoading\nUh oh!\nThere was an error while loading. Please reload this page .\n9 people reacted",
+  "clean_text": "anthropics\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.5k\nStar\n133k\nv2.1.178\nLatest\nLatest\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading. Please reload this page .\nNo results found\nView all tags\nashwin-ant\nreleased this\n15 Jun 21:35\nv2.1.178\n64ceb97\nWhat's changed\nAdded Tool(param:value) syntax for permission rules to match a tool's input parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents\nSkills in nested .claude/skills directories now load when working on files there; on a name clash, the nested skill appears as <dir>:<name> so both stay available\nNested .claude/ directories: the agent, workflow, and output-style closest to the working directory now wins when names collide; project-scope workflow saves now target the closest existing .claude/workflows/\nImproved auto mode: subagent spawns are now evaluated by the classifier before launch, closing a gap where a subagent could request a blocked action without review\nImproved /doctor with consistent flat tree layout across all sections, clearer section status icons, and highlighted command names\nImproved the skill listing truncation warning to show how many skill descriptions are affected\nChanged the workflow prompt keyword to use a purple shimmer highlight and trigger only on explicit phrases like \"run a workflow\" or \"workflow:\", not on any mention of the word\nImproved Remote Control error messages: connection failures now show a persistent red \"/rc failed\" indicator in the footer, and the \"not yet enabled\" error now explains whether it's a gate, a check failure, stale entitlement, or org policy\n/bug now requires a description before submitting, and no longer uses model-refusal text as the GitHub issue title\nFixed a crash (out-of-memory) when the CLI inherits a stale websocket/OAuth file-descriptor environment variable from a parent process\nFixed Claude in Chrome silently failing to connect when the OAuth token belongs to a different account than the Claude Code login\nFixed nested .claude/skills skills with directory-qualified names being blocked by permission prompts in non-interactive runs\nFixed several subagent issues: viewing a subagent's transcript now shows tool results and live progress, messages sent while it finishes its turn are no longer dropped, and backgrounding a running subagent (ctrl+b) no longer restarts it from scratch\nFixed claude agents workers failing with 401 Invalid bearer token when the daemon was started from a shell with a custom API gateway via ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN\nFixed compaction not honoring --fallback-model : compaction now falls back to the configured fallback model chain on overload or model-availability errors\nFixed model requests continuing to fail with auth errors after credentials were refreshed outside the session, due to a stale cached request configuration\nFixed background sessions created with /bg or ←← after a turn finished showing \"Working\" forever in the agents list\nFixed CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE=1 preventing fresh marketplace installs from cloning\nFixed MCP server-level specs ( mcp__server , mcp__server__* , mcp__* ) in subagent disallowedTools being silently ignored\nFixed vim mode undo: u now steps through NORMAL/VISUAL-mode commands one at a time instead of merging commands in quick succession into a single undo step\nFixed statusline links with custom URI schemes (e.g. vscode:// ) not opening when clicked in claude agents\n[VSCode] Fixed pressing Esc to dismiss a CJK IME candidate window canceling the running Claude task\nAssets\n12\nLoading\nUh oh!\nThere was an error while loading. Please reload this page .\n9 people reacted",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-16/r-063-claude-code-v2-1-178-发布.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-16/r-063-claude-code-v2-1-178-发布.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 3800,
+    "paragraph_count": 28,
+    "sentence_count": 10,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0066,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3800,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "7fd9e33884490a66",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Claude Code v2.1.178 发布",
+    "discovery_summary": "本次更新新增 `Tool（param：value）` 语法用于权限规则匹配工具输入参数；嵌套 `skills` 目录中的技能自动加载，名称冲突时以 `<dir>：<name>` 形式保留；嵌套 `agent`、`workflow`、`output-style` 冲突时取最近目录。改进自动模式下子 agent 生成前的分类器评估；`/doctor` 采用扁平树布局；工作流提示词高亮为紫色闪烁，仅触发显式短语；`/bug` 提交前需填写描述。修复了 CLI 继承过期 WebSocket/OAuth 文件描述符导致的崩溃、Chrome 中 OAuth token 账号不匹配导致连接失败、子 agent 转录显示工具结果、后台恢复不从头重启、compaction 未使用 `--fallback-model` 等问题。",
+    "source_name": "Claude Code：GitHub Releases（RSS）",
+    "origin_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+    "discovered_at": "2026-06-16T03:02:47.003Z",
+    "rank_on_page": 80,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "9ef99508d91d13ed",
+  "content_hash": "7fd9e33884490a66",
+  "full_text_hash": "7fd9e33884490a66",
+  "semantic_hash": "56239142431abef8",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-15T21:35:55.000Z",
+  "last_seen_at": "2026-06-16T03:08:05.012Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "本次更新新增 `Tool（param：value）` 语法用于权限规则匹配工具输入参数；嵌套 `skills` 目录中的技能自动加载，名称冲突时以 `<dir>：<name>` 形式保留；嵌套 `agent`、`workflow`、`output-style` 冲突时取最近目录。改进自动模式下子 agent 生成前的分类器评估；`/doctor` 采用扁平树布局；工作流提示词高亮为紫色闪烁，仅触发显式短语；`/bug` 提交前需填写描述。修复了 CLI 继承过期 WebSocket/OAuth 文件描述符导致的崩溃、Chrome 中 OAuth token 账号不匹配导致连接失败、子 agent 转录显示工具结果、后台恢复不从头重启、compaction 未使用 `--fallback-model` 等问题。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "178 Latest Latest Compare Choose a tag to compare Sorry, something went wrong.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Filter Loading Sorry, something went wrong.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Claude Code",
+      "GitHub Releases（RSS）",
+      "GitHub"
+    ],
+    "products": [
+      "Claude",
+      "agent",
+      "claude",
+      "Agent",
+      "agents",
+      "MCP"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2.1",
+      "178",
+      "21.5",
+      "133",
+      "15",
+      "21",
+      "35",
+      "64"
+    ],
+    "quotes": [
+      "run a workflow",
+      "workflow:",
+      "/rc failed",
+      "not yet enabled"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.",
+      "178 Latest Latest Compare Choose a tag to compare Sorry, something went wrong.",
+      "Filter Loading Sorry, something went wrong."
+    ],
+    "case_details": [
+      "本次更新新增 `Tool（param：value）` 语法用于权限规则匹配工具输入参数；嵌套 `skills` 目录中的技能自动加载，名称冲突时以 `<dir>：<name>` 形式保留；嵌套 `agent`、`workflow`、`output-style` 冲突时取最近目录。改进自动模式下子 agent 生成前的分类器评估；`/doctor` 采用扁平树布局；工作流提示词高亮为紫色闪烁，仅触发显式短语；`/bug` 提交前需填写描述。修复了 CLI 继承过期 WebSocket/OAuth 文件描述符导致的崩溃、Chrome 中 OAuth token 账号不匹配导致连接失败、子 agent 转录显示工具结果、后台恢复不从头重启、compaction 未使用 `--fallback-model` 等问题。"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Claude Code v2.1.178 发布\n\n- raw_id: R-063\n- original_url: https://github.com/anthropics/claude-code/releases/tag/v2.1.178\n- source_name: Claude Code：GitHub Releases（RSS）\n- collected_at: 2026-06-16T03:08:05.012Z\n\n## clean_text\n\nanthropics\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.5k\nStar\n133k\nv2.1.178\nLatest\nLatest\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading. Please reload this page .\nNo results found\nView all tags\nashwin-ant\nreleased this\n15 Jun 21:35\nv2.1.178\n64ceb97\nWhat's changed\nAdded Tool(param:value) syntax for permission rules to match a tool's input parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents\nSkills in nested .claude/skills directories now load when working on files there; on a name clash, the nested skill appears as <dir>:<name> so both stay available\nNested .claude/ directories: the agent, workflow, and output-style closest to the working directory now wins when names collide; project-scope workflow saves now target the closest existing .claude/workflows/\nImproved auto mode: subagent spawns are now evaluated by the classifier before launch, closing a gap where a subagent could request a blocked action without review\nImproved /doctor with consistent flat tree layout across all sections, clearer section status icons, and highlighted command names\nImproved the skill listing truncation warning to show how many skill descriptions are affected\nChanged the workflow prompt keyword to use a purple shimmer highlight and trigger only on explicit phrases like \"run a workflow\" or \"workflow:\", not on any mention of the word\nImproved Remote Control error messages: connection failures now show a persistent red \"/rc failed\" indicator in the footer, and the \"not yet enabled\" error now explains whether it's a gate, a check failure, stale entitlement, or org policy\n/bug now requires a description before submitting, and no longer uses model-refusal text as the GitHub issue title\nFixed a crash (out-of-memory) when the CLI inherits a stale websocket/OAuth file-descriptor environment variable from a parent process\nFixed Claude in Chrome silently failing to connect when the OAuth token belongs to a different account than the Claude Code login\nFixed nested .claude/skills skills with directory-qualified names being blocked by permission prompts in non-interactive runs\nFixed several subagent issues: viewing a subagent's transcript now shows tool results and live progress, messages sent while it finishes its turn are no longer dropped, and backgrounding a running subagent (ctrl+b) no longer restarts it from scratch\nFixed claude agents workers failing with 401 Invalid bearer token when the daemon was started from a shell with a custom API gateway via ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN\nFixed compaction not honoring --fallback-model : compaction now falls back to the configured fallback model chain on overload or model-availability errors\nFixed model requests continuing to fail with auth errors after credentials were refreshed outside the session, due to a stale cached request configuration\nFixed background sessions created with /bg or ←← after a turn finished showing \"Working\" forever in the agents list\nFixed CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE=1 preventing fresh marketplace installs from cloning\nFixed MCP server-level specs ( mcp__server , mcp__server__* , mcp__* ) in subagent disallowedTools being silently ignored\nFixed vim mode undo: u now steps through NORMAL/VISUAL-mode commands one at a time instead of merging commands in quick succession into a single undo step\nFixed statusline links with custom URI schemes (e.g. vscode:// ) not opening when clicked in claude agents\n[VSCode] Fixed pressing Esc to dismiss a CJK IME candidate window canceling the running Claude task\nAssets\n12\nLoading\nUh oh!\nThere was an error while loading. Please reload this page .\n9 people reacted\n\n## full_text\n\nanthropics\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.5k\nStar\n133k\nv2.1.178\nLatest\nLatest\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading. Please reload this page .\nNo results found\nView all tags\nashwin-ant\nreleased this\n15 Jun 21:35\nv2.1.178\n64ceb97\nWhat's changed\nAdded Tool(param:value) syntax for permission rules to match a tool's input parameters (with * wildcard), e.g. Agent(model:opus) to block Opus subagents\nSkills in nested .claude/skills directories now load when working on files there; on a name clash, the nested skill appears as <dir>:<name> so both stay available\nNested .claude/ directories: the agent, workflow, and output-style closest to the working directory now wins when names collide; project-scope workflow saves now target the closest existing .claude/workflows/\nImproved auto mode: subagent spawns are now evaluated by the classifier before launch, closing a gap where a subagent could request a blocked action without review\nImproved /doctor with consistent flat tree layout across all sections, clearer section status icons, and highlighted command names\nImproved the skill listing truncation warning to show how many skill descriptions are affected\nChanged the workflow prompt keyword to use a purple shimmer highlight and trigger only on explicit phrases like \"run a workflow\" or \"workflow:\", not on any mention of the word\nImproved Remote Control error messages: connection failures now show a persistent red \"/rc failed\" indicator in the footer, and the \"not yet enabled\" error now explains whether it's a gate, a check failure, stale entitlement, or org policy\n/bug now requires a description before submitting, and no longer uses model-refusal text as the GitHub issue title\nFixed a crash (out-of-memory) when the CLI inherits a stale websocket/OAuth file-descriptor environment variable from a parent process\nFixed Claude in Chrome silently failing to connect when the OAuth token belongs to a different account than the Claude Code login\nFixed nested .claude/skills skills with directory-qualified names being blocked by permission prompts in non-interactive runs\nFixed several subagent issues: viewing a subagent's transcript now shows tool results and live progress, messages sent while it finishes its turn are no longer dropped, and backgrounding a running subagent (ctrl+b) no longer restarts it from scratch\nFixed claude agents workers failing with 401 Invalid bearer token when the daemon was started from a shell with a custom API gateway via ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN\nFixed compaction not honoring --fallback-model : compaction now falls back to the configured fallback model chain on overload or model-availability errors\nFixed model requests continuing to fail with auth errors after credentials were refreshed outside the session, due to a stale cached request configuration\nFixed background sessions created with /bg or ←← after a turn finished showing \"Working\" forever in the agents list\nFixed CLAUDE_CODE_PLUGIN_KEEP_MARKETPLACE_ON_FAILURE=1 preventing fresh marketplace installs from cloning\nFixed MCP server-level specs ( mcp__server , mcp__server__* , mcp__* ) in subagent disallowedTools being silently ignored\nFixed vim mode undo: u now steps through NORMAL/VISUAL-mode commands one at a time instead of merging commands in quick succession into a single undo step\nFixed statusline links with custom URI schemes (e.g. vscode:// ) not opening when clicked in claude agents\n[VSCode] Fixed pressing Esc to dismiss a CJK IME candidate window canceling the running Claude task\nAssets\n12\nLoading\nUh oh!\nThere was an error while loading. Please reload this page .\n9 people reacted\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / daily_observation, heatmap, case / high] 本次更新新增 `Tool（param：value）` 语法用于权限规则匹配工具输入参数；嵌套 `skills` 目录中的技能自动加载，名称冲突时以 `<dir>：<name>` 形式保留；嵌套 `agent`、`workflow`、`output-style` 冲突时取最近目录。改进自动模式下子 agent 生成前的分类器评估；`/doctor` 采用扁平树布局；工作流提示词高亮为紫色闪烁，仅触发显式短语；`/bug` 提交前需填写描述。修复了 CLI 继承过期 WebSocket/OAuth 文件描述符导致的崩溃、Chrome 中 OAuth token 账号不匹配导致连接失败、子 agent 转录显示工具结果、后台恢复不从头重启、compaction 未使用 `--fallback-model` 等问题。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] 178 Latest Latest Compare Choose a tag to compare Sorry, something went wrong.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] Filter Loading Sorry, something went wrong.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] There was an error while loading.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] Please reload this page .\n"
+}
