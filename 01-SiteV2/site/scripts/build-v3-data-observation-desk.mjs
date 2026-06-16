@@ -940,13 +940,24 @@ function cleanBadPublicDisplayTitle(title = "") {
     .trim();
 }
 
+function sourceTitleFallbackForDisplay(title = "", sourceUrl = "") {
+  const clean = cleanEnglishTitleForDisplay(title);
+  if (!clean) return "";
+  return `${titleSubject(clean, sourceUrl)}：${clean}`.slice(0, 120);
+}
+
 function publicTitleCandidate(title = "", sourceUrl = "") {
   const raw = String(title || "").trim();
   if (!raw || isBadPublicDisplayTitle(raw)) return "";
   const mappedTitle = frontstageChineseTitle(raw, sourceUrl);
-  const candidate = mappedTitle || (hasCjk(raw) ? raw : safeFrontstageTitle(raw, sourceUrl));
+  const candidate = mappedTitle || (hasCjk(raw) ? raw : sourceDerivedChineseTitleForEnglish(raw, sourceUrl));
   const cleaned = cleanBadPublicDisplayTitle(candidate);
-  return cleaned && !isBadPublicDisplayTitle(cleaned) ? cleaned : "";
+  if (cleaned && !isBadPublicDisplayTitle(cleaned)) return cleaned;
+  if (!hasCjk(raw)) {
+    const sourceFallback = cleanBadPublicDisplayTitle(sourceTitleFallbackForDisplay(raw, sourceUrl));
+    if (sourceFallback && !isBadPublicDisplayTitle(sourceFallback)) return sourceFallback;
+  }
+  return "";
 }
 
 function publicDisplayTitle(sourceTitle = "", generatedTitle = "", sourceUrl = "") {
@@ -985,7 +996,7 @@ function top10CompatCard(card = {}) {
   const displayTitle = publicDisplayTitle(sourceTitle, card.displayTitle || card.title || "", card.sourceUrl);
   return {
     ...card,
-    modelGeneratedTitle: card.generatedTitle || card.title || "",
+    modelGeneratedTitle: card.modelGeneratedTitle || card.generatedTitle || card.title || "",
     generatedTitle: displayTitle,
     sourceTitle,
     displayTitle,
