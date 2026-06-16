@@ -1,12 +1,10 @@
 {
-  "generatedAt": "2026-06-15T01:32:30.777Z",
+  "generatedAt": "2026-06-16T01:31:29.126Z",
   "stats": {
-    "blogsBuilt": 5,
-    "totalItems": 32,
+    "blogsBuilt": 6,
+    "totalItems": 39,
     "sourceCount": 8,
-    "errors": [
-      "tigera-blog: HTTP 415"
-    ]
+    "errors": []
   },
   "blogs": [
     {
@@ -14,6 +12,46 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Jun/16/captcha-on-at-least-one-ampersand/#atom-everything",
+          "text": "Cloudflare CAPTCHA on at least one ampersand",
+          "summary": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/cloudflare/captcha-on-at-least-one-ampersand\">Cloudflare CAPTCHA on at least one ampersand</a></p>\n        <p>I'm using Cloudflare's CAPTCHA (they call it a \"Web Application Firewall > Custom rules > Managed Challenge\" these days) to pr",
+          "createdAt": "2026-06-16T00:21:36+00:00",
+          "url": "https://simonwillison.net/2026/Jun/16/captcha-on-at-least-one-ampersand/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/15/datasette-agent/#atom-everything",
+          "text": "datasette-agent 0.3a0",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-agent/releases/tag/0.3a0\">datasette-agent 0.3a0</a></p>\n        <blockquote>\n<ul>\n<li>New tool, <code>execute_write_sql</code>, which requests user approval and then writes to a database - taking user permissions into accou",
+          "createdAt": "2026-06-15T17:19:27+00:00",
+          "url": "https://simonwillison.net/2026/Jun/15/datasette-agent/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/15/axios-clashes-anthropics/#atom-everything",
+          "text": "\"They screwed us\": Personality clashes sent Anthropic's models offline",
+          "summary": "<p><strong><a href=\"https://www.axios.com/2026/06/15/anthropic-white-house-fable-mythos\">\"They screwed us\": Personality clashes sent Anthropic's models offline</a></strong></p>\nLots of \"source familiar with the administration's thinking\" and \"source close to Anthropic\" in this Axios piece, which is ",
+          "createdAt": "2026-06-15T14:57:33+00:00",
+          "url": "https://simonwillison.net/2026/Jun/15/axios-clashes-anthropics/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/15/julia-evans/#atom-everything",
+          "text": "Quoting Julia Evans",
+          "summary": "<blockquote cite=\"https://wizardzines.com/comics/write-for-one-person/\"><p>[...] Instead, I picture a specific person and I just write for them. Often this person is \"me, but 3 years ago\" or a good friend.</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://wizardzines.com/comics/write-for-one",
+          "createdAt": "2026-06-15T02:05:19+00:00",
+          "url": "https://simonwillison.net/2026/Jun/15/julia-evans/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
           "text": "Why AI hasn’t replaced software engineers, and won’t",
@@ -203,16 +241,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/8/wwdc/#atom-everything",
-          "text": "Siri AI at WWDC 2026",
-          "summary": "<p>Given how badly burned anyone who took Apple's <a href=\"https://simonwillison.net/2024/Jun/10/apple-intelligence/\">2024 WWDC Apple Intelligence announcements</a> at face value was, I'm holding to a strict \"I'll believe it when I see it\" policy for everything <a href=\"https://www.apple.com/newsroo",
-          "createdAt": "2026-06-08T23:58:04+00:00",
-          "url": "https://simonwillison.net/2026/Jun/8/wwdc/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -276,6 +304,16 @@
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
         {
+          "id": "https://tldr.tech/ai/2026-06-15",
+          "text": "Anthropic Fable shutdown 🏛️, GLM-5.2 🤖, OpenRouter Fusion 🧠",
+          "summary": "",
+          "createdAt": "Mon, 15 Jun 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-06-15",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
           "id": "https://tldr.tech/ai/2026-06-12",
           "text": "OpenAI buys Ona 🤝, Anthropic backtracks 🔁, Xiaomi’s MiMo code 👨‍💻",
           "summary": "",
@@ -304,13 +342,30 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
+        }
+      ]
+    },
+    {
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "bio": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "tweets": [
+        {
+          "id": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
+          "text": "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform",
+          "summary": "The first post in this series argued that AI agent governance hasn&#8217;t kept pace with deployment. The second laid out the five pillars of accountability, and what is required. The third walked through why network...\nThe post Five Principles of an Accountable AI Agent Network: How to Evaluate Any",
+          "createdAt": "Wed, 10 Jun 2026 20:19:08 +0000",
+          "url": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
         },
         {
-          "id": "https://tldr.tech/ai/2026-06-09",
-          "text": "OpenAI S-1 🇺🇸, Siri AI 📱, Xiaomi Ultraspeed ⚡",
-          "summary": "",
-          "createdAt": "Tue, 09 Jun 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-06-09",
+          "id": "https://www.tigera.io/blog/a-field-guide-to-the-agents-in-your-cluster/",
+          "text": "A field guide to the agents in your cluster",
+          "summary": "You know every service in your cluster by name. You know which team owns each one, what it talks to, how it scales, where its logs go. The agents are a different story. That’s not...\nThe post A field guide to the agents in your cluster appeared first on Tigera – Creator of Calico.\n]]>",
+          "createdAt": "Wed, 10 Jun 2026 19:09:23 +0000",
+          "url": "https://www.tigera.io/blog/a-field-guide-to-the-agents-in-your-cluster/",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -322,6 +377,26 @@
       "handle": "dataiku.com",
       "bio": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
       "tweets": [
+        {
+          "id": "https://www.dataiku.com/stories/blog/sovereignty-ai",
+          "text": "Sovereignty isn't where your AI runs. It's whether it answers to you.",
+          "summary": " \r\n    \r\n \r\nLast week, a government order took the world's best AI model offline in hours. No one deleted it and no server failed. A single directive put the most capable model on the market out of reach for everyone not a citizen of one country.",
+          "createdAt": "Mon, 15 Jun 2026 23:03:28 GMT",
+          "url": "https://www.dataiku.com/stories/blog/sovereignty-ai",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://www.dataiku.com/stories/blog/ai-explainability-in-enterprise-ai",
+          "text": "AI explainability in enterprise AI: methods, tools, and why it matters for trustworthy models and agents",
+          "summary": " \r\n    \r\n \r\nAI models, generative AI (GenAI) applications, and agents are making decisions that affect credit scores, patient care, and hiring outcomes. Enterprises deploying these systems are accumulating regulatory and reputational risk proportional to the number of decisions that cannot be explai",
+          "createdAt": "Mon, 15 Jun 2026 13:00:00 GMT",
+          "url": "https://www.dataiku.com/stories/blog/ai-explainability-in-enterprise-ai",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://www.dataiku.com/stories/blog/enterprise-analytics-platforms",
           "text": "How enterprise analytics platforms are evolving: from dashboards to AI-driven decisions",
