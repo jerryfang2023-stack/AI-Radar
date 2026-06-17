@@ -5,6 +5,9 @@ import path from "node:path";
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const expectedVersion = "V3.3.6.3-business-source-artifact-aggregation";
+const expectedSiteVersion = "SITE-V3.3.8-enterprise-ai-transformation";
+const expectedBusinessSignalsColumnVersion = "BSIG-V1.1.0-enterprise-ai-transformation";
+const expectedEnterpriseAiLensVersion = "EAI-V1.0.0-enterprise-ai-transformation";
 const rolloverAcceptedVersions = new Map([
   ["V3.3.6-business-title-hermes-handoff", new Set(["2026-06-16"])],
 ]);
@@ -15,9 +18,11 @@ const frontstageFiles = [
   "01-SiteV2/site/index.html",
   "01-SiteV2/site/v3-data-observation.html",
   "01-SiteV2/site/intelligence-map.html",
+  "01-SiteV2/site/weekly-ai-business-change-radar.html",
   "01-SiteV2/site/follow-builders.html",
   "01-SiteV2/site/community-intelligence.html",
   "01-SiteV2/site/assets/wavesight-nav.css",
+  "01-SiteV2/site/assets/weekly-report.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.js",
   "01-SiteV2/site/assets/follow-builders.css",
@@ -35,9 +40,11 @@ const publicFrontstageTextFiles = [
   "01-SiteV2/site/index.html",
   "01-SiteV2/site/v3-data-observation.html",
   "01-SiteV2/site/intelligence-map.html",
+  "01-SiteV2/site/weekly-ai-business-change-radar.html",
   "01-SiteV2/site/follow-builders.html",
   "01-SiteV2/site/community-intelligence.html",
   "01-SiteV2/site/assets/wavesight-nav.css",
+  "01-SiteV2/site/assets/weekly-report.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.css",
   "01-SiteV2/site/assets/v3-data-observation-desk.js",
   "01-SiteV2/site/assets/follow-builders.css",
@@ -200,6 +207,15 @@ function collectGeneratedDataIssues() {
     if (!isAcceptedDataVersion(data?.meta?.version, data?.meta?.activeDate)) {
       issues.push(issue(dataFile, "v3_data_version_mismatch", `${data?.meta?.version || "missing"}; expected ${expectedVersion}`));
     }
+    if (data?.meta?.siteVersion !== expectedSiteVersion) {
+      issues.push(issue(dataFile, "v3_data_site_version_mismatch", `${data?.meta?.siteVersion || "missing"}; expected ${expectedSiteVersion}`));
+    }
+    if (data?.meta?.businessSignalsColumnVersion !== expectedBusinessSignalsColumnVersion) {
+      issues.push(issue(dataFile, "v3_data_business_signals_column_version_mismatch", `${data?.meta?.businessSignalsColumnVersion || "missing"}; expected ${expectedBusinessSignalsColumnVersion}`));
+    }
+    if (data?.meta?.enterpriseAiLensVersion !== expectedEnterpriseAiLensVersion) {
+      issues.push(issue(dataFile, "v3_data_enterprise_ai_lens_version_mismatch", `${data?.meta?.enterpriseAiLensVersion || "missing"}; expected ${expectedEnterpriseAiLensVersion}`));
+    }
     const activeDate = data?.meta?.activeDate || "";
     const latestDate = latestContentDate();
     if (latestDate && activeDate !== latestDate) {
@@ -222,6 +238,34 @@ function collectGeneratedDataIssues() {
 function isAcceptedDataVersion(version, activeDate) {
   if (version === expectedVersion) return true;
   return rolloverAcceptedVersions.get(version)?.has(activeDate) || false;
+}
+
+function collectVersionMetaIssues() {
+  const issues = [];
+  const businessFile = path.join(root, "01-SiteV2/site/v3-data-observation.html");
+  const businessHtml = read(businessFile);
+  const requiredBusinessMeta = [
+    `name="wavesight-version" content="${expectedSiteVersion}"`,
+    `name="wavesight-column-version" content="${expectedBusinessSignalsColumnVersion}"`,
+    `name="enterprise-ai-lens-version" content="${expectedEnterpriseAiLensVersion}"`,
+  ];
+  for (const token of requiredBusinessMeta) {
+    if (!businessHtml.includes(token)) issues.push(issue(businessFile, "business_signals_version_meta_missing", token));
+  }
+
+  const publicPages = [
+    "v3-data-observation.html",
+    "intelligence-map.html",
+    "weekly-ai-business-change-radar.html",
+    "follow-builders.html",
+    "community-intelligence.html",
+  ].map((file) => path.join(root, "01-SiteV2/site", file));
+  for (const file of publicPages) {
+    const html = read(file);
+    const token = `name="wavesight-version" content="${expectedSiteVersion}"`;
+    if (!html.includes(token)) issues.push(issue(file, "site_version_meta_missing", token));
+  }
+  return issues;
 }
 
 function writeReport(issues) {
@@ -253,6 +297,7 @@ const issues = [
   ...collectRetiredPageIssues(),
   ...collectUnifiedNavigationIssues(),
   ...collectGeneratedDataIssues(),
+  ...collectVersionMetaIssues(),
 ];
 const report = writeReport(issues);
 
