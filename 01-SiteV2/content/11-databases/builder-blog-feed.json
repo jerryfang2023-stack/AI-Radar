@@ -1,10 +1,12 @@
 {
-  "generatedAt": "2026-06-16T01:31:29.126Z",
+  "generatedAt": "2026-06-17T01:32:02.710Z",
   "stats": {
-    "blogsBuilt": 6,
-    "totalItems": 39,
+    "blogsBuilt": 5,
+    "totalItems": 36,
     "sourceCount": 8,
-    "errors": []
+    "errors": [
+      "tigera-blog: HTTP 415"
+    ]
   },
   "blogs": [
     {
@@ -12,6 +14,46 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything",
+          "text": "datasette-tailscale 0.1a0",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-tailscale/releases/tag/0.1a0\">datasette-tailscale 0.1a0</a></p>\n        <p>A very experimental alpha plugin which lets you do this:</p>\n<pre><code>datasette tailscale mydata.db \\\n  --ts-authkey tskey-auth-xxxx --ts-hostname",
+          "createdAt": "2026-06-16T16:18:20+00:00",
+          "url": "https://simonwillison.net/2026/Jun/16/datasette-tailscale/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/16/georgi-gerganov/#atom-everything",
+          "text": "Quoting Georgi Gerganov",
+          "summary": "<blockquote cite=\"https://news.ycombinator.com/item?id=48555993#48557304\"><p>I can 100% attest to the fact that Qwen3.6-27B is a very capable local model for coding tasks. Over the last month and a half I've been using it almost daily, either on my M2 Ultra or on my RTX 5090 box. I use it for small ",
+          "createdAt": "2026-06-16T16:04:59+00:00",
+          "url": "https://simonwillison.net/2026/Jun/16/georgi-gerganov/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything",
+          "text": "The Fable 5 Export Controls Harm US Cyber Defense",
+          "summary": "<p><strong><a href=\"https://www.lutasecurity.com/post/the-fable-5-export-controls-harm-us-cyber-defense\">The Fable 5 Export Controls Harm US Cyber Defense</a></strong></p>\nI <a href=\"https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/\">quoted The Atlantic</a> quoting Kate Moussouris earl",
+          "createdAt": "2026-06-16T05:20:29+00:00",
+          "url": "https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/#atom-everything",
+          "text": "Quoting Matteo Wong, The Atlantic",
+          "summary": "<blockquote cite=\"https://www.theatlantic.com/technology/2026/06/trump-anthropic-export-control-ai-race/687555/?gift=5MjKTLV9QwyU_J0HzTnanoWieJfkMhNH_YTT9pP_fhA\"><p>Katie Moussouris, a cybersecurity expert and the CEO of Luta Security, told me that Anthropic shared with her a copy of the White House",
+          "createdAt": "2026-06-16T03:07:54+00:00",
+          "url": "https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Jun/16/captcha-on-at-least-one-ampersand/#atom-everything",
           "text": "Cloudflare CAPTCHA on at least one ampersand",
@@ -191,56 +233,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/#atom-everything",
-          "text": "If Claude Fable stops helping you, you'll never know",
-          "summary": "<p><strong><a href=\"https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html\">If Claude Fable stops helping you, you'll never know</a></strong></p>\nJonathon Ready highlights one of the more eyebrow-raising details from the <a href=\"https://www-cdn.anth",
-          "createdAt": "2026-06-10T00:37:25+00:00",
-          "url": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/9/claude-fable-5/#atom-everything",
-          "text": "Initial impressions of Claude Fable 5",
-          "summary": "<p>I didn't have early access to today's <a href=\"https://www.anthropic.com/news/claude-fable-5-mythos-5\">Claude Fable 5</a> release, but I've spent the past ~5.5 hours putting it through its paces. My initial impressions are that this is something of a <em>beast</em>. It's slow, expensive and has b",
-          "createdAt": "2026-06-09T23:59:54+00:00",
-          "url": "https://simonwillison.net/2026/Jun/9/claude-fable-5/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/9/llm/#atom-everything",
-          "text": "llm 0.32a3",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/llm/releases/tag/0.32a3\">llm 0.32a3</a></p>\n        <p>Almost entirely written by the new Claude Fable 5, see <a href=\"https://simonwillison.net/2026/Jun/9/claude-fable-5/#adding-features-to-datasette-agent-and-llm-using-claude-code\">my",
-          "createdAt": "2026-06-09T22:27:03+00:00",
-          "url": "https://simonwillison.net/2026/Jun/9/llm/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price/#atom-everything",
-          "text": "Setting a custom price for a model in AgentsView",
-          "summary": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/llms/agentsview-custom-model-price\">Setting a custom price for a model in AgentsView</a></p>\n        <p>I've been really enjoying <a href=\"https://agentsview.io/\">AgentsView</a> by Wes McKinney as a tool for exploring my token usage acr",
-          "createdAt": "2026-06-09T21:35:31+00:00",
-          "url": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/9/andrej-karpathy/#atom-everything",
-          "text": "Quoting Andrej Karpathy",
-          "summary": "<blockquote cite=\"https://twitter.com/karpathy/status/2064409694761054332\"><p>I feel a lot of things changing as working software increasingly comes out on a tap. The Jevon's paradox kicks in and I feel my own demand for software growing substantially. You can ask for anything - explainers, visualiz",
-          "createdAt": "2026-06-09T19:03:10+00:00",
-          "url": "https://simonwillison.net/2026/Jun/9/andrej-karpathy/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -250,21 +242,21 @@
       "bio": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
       "tweets": [
         {
-          "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
-          "text": "Welcome to the AGI era of AI governance",
-          "summary": "It's a one-way door and we weren't ready for it.",
-          "createdAt": "Sun, 14 Jun 2026 17:43:42 GMT",
-          "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "id": "https://www.interconnects.ai/p/frontier-post-training-recipe-review",
+          "text": "Frontier post-training recipe review with Finbarr Timbers",
+          "summary": "\"Interview\" #18",
+          "createdAt": "Tue, 16 Jun 2026 13:29:30 GMT",
+          "url": "https://www.interconnects.ai/p/frontier-post-training-recipe-review",
           "likes": 0,
           "retweets": 0,
           "replies": 0
         },
         {
-          "id": "https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety",
-          "text": "Claude Fable 5 and new AI safety fables",
-          "summary": "One step further into the power politics of frontier AI systems.",
-          "createdAt": "Tue, 09 Jun 2026 22:59:35 GMT",
-          "url": "https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety",
+          "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+          "text": "Welcome to the AGI era of AI governance",
+          "summary": "It's a one-way door and we weren't ready for it.",
+          "createdAt": "Sun, 14 Jun 2026 17:43:42 GMT",
+          "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -277,21 +269,21 @@
       "bio": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
       "tweets": [
         {
-          "id": "https://www.bensbites.com/p/new-claude-model-fable",
-          "text": "New Claude model - Fable",
-          "summary": "everyone's building with it.",
-          "createdAt": "Thu, 11 Jun 2026 13:03:20 GMT",
-          "url": "https://www.bensbites.com/p/new-claude-model-fable",
+          "id": "https://www.bensbites.com/p/bye-bye-fable",
+          "text": "Bye bye Fable",
+          "summary": "another benchmark for real swe work",
+          "createdAt": "Tue, 16 Jun 2026 13:01:05 GMT",
+          "url": "https://www.bensbites.com/p/bye-bye-fable",
           "likes": 0,
           "retweets": 0,
           "replies": 0
         },
         {
-          "id": "https://www.bensbites.com/p/hey-siri-meet-ai",
-          "text": "Hey Siri, meet AI",
-          "summary": "what's the deal with loops",
-          "createdAt": "Tue, 09 Jun 2026 13:02:18 GMT",
-          "url": "https://www.bensbites.com/p/hey-siri-meet-ai",
+          "id": "https://www.bensbites.com/p/new-claude-model-fable",
+          "text": "New Claude model - Fable",
+          "summary": "everyone's building with it.",
+          "createdAt": "Thu, 11 Jun 2026 13:03:20 GMT",
+          "url": "https://www.bensbites.com/p/new-claude-model-fable",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -303,6 +295,16 @@
       "handle": "tldr.tech",
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
+        {
+          "id": "https://tldr.tech/ai/2026-06-16",
+          "text": "Meta AI mode 📱, Factory 2.0 👨‍💻, Sakana’s autonomous researcher 🐟",
+          "summary": "",
+          "createdAt": "Tue, 16 Jun 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-06-16",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://tldr.tech/ai/2026-06-15",
           "text": "Anthropic Fable shutdown 🏛️, GLM-5.2 🤖, OpenRouter Fusion 🧠",
@@ -332,43 +334,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-06-10",
-          "text": "Claude Fable 5 🚀, Gemini 3.5 Live Translate 📱, scaling test time compute 📈",
-          "summary": "",
-          "createdAt": "Wed, 10 Jun 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-06-10",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        }
-      ]
-    },
-    {
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "bio": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "tweets": [
-        {
-          "id": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
-          "text": "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform",
-          "summary": "The first post in this series argued that AI agent governance hasn&#8217;t kept pace with deployment. The second laid out the five pillars of accountability, and what is required. The third walked through why network...\nThe post Five Principles of an Accountable AI Agent Network: How to Evaluate Any",
-          "createdAt": "Wed, 10 Jun 2026 20:19:08 +0000",
-          "url": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.tigera.io/blog/a-field-guide-to-the-agents-in-your-cluster/",
-          "text": "A field guide to the agents in your cluster",
-          "summary": "You know every service in your cluster by name. You know which team owns each one, what it talks to, how it scales, where its logs go. The agents are a different story. That’s not...\nThe post A field guide to the agents in your cluster appeared first on Tigera – Creator of Calico.\n]]>",
-          "createdAt": "Wed, 10 Jun 2026 19:09:23 +0000",
-          "url": "https://www.tigera.io/blog/a-field-guide-to-the-agents-in-your-cluster/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -381,8 +346,18 @@
           "id": "https://www.dataiku.com/stories/blog/sovereignty-ai",
           "text": "Sovereignty isn't where your AI runs. It's whether it answers to you.",
           "summary": " \r\n    \r\n \r\nLast week, a government order took the world's best AI model offline in hours. No one deleted it and no server failed. A single directive put the most capable model on the market out of reach for everyone not a citizen of one country.",
-          "createdAt": "Mon, 15 Jun 2026 23:03:28 GMT",
+          "createdAt": "Tue, 16 Jun 2026 13:45:51 GMT",
           "url": "https://www.dataiku.com/stories/blog/sovereignty-ai",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://www.dataiku.com/stories/blog/what-is-ai-orchestration-layer",
+          "text": "What is an AI orchestration layer? Architecture, benefits, and enterprise use cases",
+          "summary": " \r\n    \r\n \r\nAI investments are multiplying, but coordination between models, agents, and data pipelines remains an afterthought in most enterprises. The result is predictable: duplicated workflows, inconsistent outputs, ungoverned decisions, and AI initiatives that never graduate from pilot to produ",
+          "createdAt": "Mon, 15 Jun 2026 13:00:00 GMT",
+          "url": "https://www.dataiku.com/stories/blog/what-is-ai-orchestration-layer",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -423,16 +398,6 @@
           "summary": " \r\n    \r\n \r\nMost enterprises have run AI pilots. But few have transformed their operations with AI at scale. What separates them is organizational design, not technology: disconnected people, disconnected systems, disconnected governance.&nbsp; \r\nAccording to \"Global AI confessions report: data lead",
           "createdAt": "Wed, 10 Jun 2026 13:00:02 GMT",
           "url": "https://www.dataiku.com/stories/blog/enterprise-ai-transformation",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.dataiku.com/stories/blog/snowflake-partnership",
-          "text": "From partnership to pipeline: how Snowflake and Dataiku drove 200%+ YoY sourced opportunity growth",
-          "summary": " \r\n    \r\n \r\nPartnerships are often judged too early, or on the wrong things. Visibility. Executive alignment. Event presence. A well-worded press release. None of that is the real test.",
-          "createdAt": "Tue, 09 Jun 2026 20:00:03 GMT",
-          "url": "https://www.dataiku.com/stories/blog/snowflake-partnership",
           "likes": 0,
           "retweets": 0,
           "replies": 0
