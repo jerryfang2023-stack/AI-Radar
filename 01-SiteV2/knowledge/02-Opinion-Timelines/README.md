@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 42
-opinion_count: 481
-generated_at: 2026-06-17T01:32:38.330Z
+opinion_count: 482
+generated_at: 2026-06-17T06:28:45.876Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -11,6 +11,7 @@ generated_at: 2026-06-17T01:32:38.330Z
 
 ## 人物
 
+- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 8 条 - 最新 2026-06-17
 - [Peter Yang](people/peter-yang/README.md) - 41 条 - 最新 2026-06-16
 - [Garry Tan](people/garry-tan/README.md) - 38 条 - 最新 2026-06-16
 - [Swyx](people/swyx/README.md) - 29 条 - 最新 2026-06-16
@@ -18,7 +19,6 @@ generated_at: 2026-06-17T01:32:38.330Z
 - [Nikunj Kothari](people/nikunj-kothari/README.md) - 24 条 - 最新 2026-06-16
 - [Amjad Masad](people/amjad-masad/README.md) - 17 条 - 最新 2026-06-16
 - [Josh Woodward](people/josh-woodward/README.md) - 14 条 - 最新 2026-06-16
-- [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 7 条 - 最新 2026-06-16
 - [Zara Zhang](people/zara-zhang/README.md) - 19 条 - 最新 2026-06-15
 - [Guillermo Rauch](people/guillermo-rauch/README.md) - 17 条 - 最新 2026-06-15
 - [Peter Steinberger](people/peter-steinberger/README.md) - 13 条 - 最新 2026-06-15
