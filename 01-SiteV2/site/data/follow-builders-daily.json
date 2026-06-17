@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-17T01:32:04.670Z",
+    "generatedAt": "2026-06-17T06:27:59.225Z",
     "feedGeneratedAt": "2026-06-16T08:20:57.835Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
@@ -9,10 +9,10 @@
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
-    "builders": 17,
-    "remarks": 48,
+    "builders": 18,
+    "remarks": 51,
     "podcasts": 1,
-    "blogsBuilt": 5,
+    "blogsBuilt": 6,
     "trackedSources": 0,
     "rawBuilders": 12,
     "rawTweets": 25
@@ -22,7 +22,7 @@
       "name": "Simon Willison's Blog",
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Dataiku Blog",
@@ -85,6 +85,12 @@
       "count": 2
     },
     {
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "count": 2
+    },
+    {
       "name": "Zara Zhang",
       "handle": "zarazhangrui",
       "role": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w",
@@ -122,6 +128,84 @@
     }
   ],
   "remarks": [
+    {
+      "id": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
+      "source": "blog",
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "text": "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform",
+      "content": "The first post in this series argued that AI agent governance hasn&#8217;t kept pace with deployment. The second laid out the five pillars of accountability, and what is required. The third walked through why network... The post Five Principles of an Accountable AI Agent Network: How to Evaluate Any",
+      "contentTranslation": "本系列的第一篇文章认为，AIAgent治理没有跟上部署的步伐。第二部分列出了问责制的五大支柱，以及需要做些什么。第三部分讲解了为什么要建立网络……《负责任的AIAgent网络的五项原则：如何评估",
+      "contentTranslationStatus": "translated",
+      "translation": "负责任的AIAgent网络的五大原则：如何评估任何治理平台",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "formalTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "Wed, 10 Jun 2026 20:19:08 +0000",
+      "date": "2026-06-11",
+      "url": "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://www.tigera.io/blog/a-field-guide-to-the-agents-in-your-cluster/",
+      "source": "blog",
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "text": "A field guide to the agents in your cluster",
+      "content": "You know every service in your cluster by name. You know which team owns each one, what it talks to, how it scales, where its logs go. The agents are a different story. That’s not... The post A field guide to the agents in your cluster appeared first on Tigera – Creator of Calico. ]]>",
+      "contentTranslation": "您可以通过名称了解集群中的每个服务。您知道哪个团队拥有每个团队，它谈论什么，它如何扩展，它的日志在哪里。经纪人是另一回事。这不是......帖子集群中特工的现场指南首先出现在Tigera – Calico的创建者。]] >",
+      "contentTranslationStatus": "translated",
+      "translation": "集群中客服代表的现场指南",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "formalTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "Wed, 10 Jun 2026 19:09:23 +0000",
+      "date": "2026-06-11",
+      "url": "https://www.tigera.io/blog/a-field-guide-to-the-agents-in-your-cluster/",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
     {
       "id": "https://www.dataiku.com/stories/blog/enterprise-ai-transformation",
       "source": "blog",
@@ -625,6 +709,45 @@
       "createdAt": "Fri, 12 Jun 2026 00:00:00 GMT",
       "date": "2026-06-12",
       "url": "https://tldr.tech/ai/2026-06-12",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "<click-to-play> — a still that plays",
+      "content": "Tool: — a still that plays A progressive enchantment Web Component that turns this markup: <img src=\"URL to first frame\"",
+      "contentTranslation": "工具： —播放渐进式附魔Web组件的剧照，转动此标记： < img src = \"第一帧的URL\"",
+      "contentTranslationStatus": "translated",
+      "translation": "<click-to-play> —播放的剧照",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-06-17T03:56:10+00:00",
+      "date": "2026-06-17",
+      "url": "https://simonwillison.net/2026/Jun/17/click-to-play-component/#atom-everything",
       "likes": 0,
       "retweets": 0,
       "replies": 0
