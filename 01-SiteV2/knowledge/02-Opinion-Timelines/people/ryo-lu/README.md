@@ -1,17 +1,17 @@
 ---
 type: opinion_person_timeline
 person_name: "Ryo Lu"
-opinion_count: 4
-latest_date: 2026-05-30
+opinion_count: 7
+latest_date: 2026-06-17
 ---
 
-# Ryo Lu Opinion Timeline
+# Ryo Lu 观点时间线
+共 7 条观点，按人物 + 日期文件聚合。
+## 日期
 
-Total opinions: 4. Entries are grouped by person and date files for daily sync.
-
-## Dates
-
-- [2026-05-30](./2026-05-30.md) - 1 opinions
-- [2026-05-21](./2026-05-21.md) - 1 opinions
-- [2026-05-20](./2026-05-20.md) - 1 opinions
-- [2026-05-19](./2026-05-19.md) - 1 opinions
+- [2026-06-17](./2026-06-17.md)
+- [2026-06-16](./2026-06-16.md)
+- [2026-05-30](./2026-05-30.md)
+- [2026-05-21](./2026-05-21.md)
+- [2026-05-20](./2026-05-20.md)
+- [2026-05-19](./2026-05-19.md)

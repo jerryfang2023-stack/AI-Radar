@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 42
-opinion_count: 482
-generated_at: 2026-06-17T06:28:45.876Z
+opinion_count: 518
+generated_at: 2026-06-17T09:54:14.979Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -11,27 +11,30 @@ generated_at: 2026-06-17T06:28:45.876Z
 
 ## 人物
 
+- [Peter Yang](people/peter-yang/README.md) - 44 条 - 最新 2026-06-17
+- [Garry Tan](people/garry-tan/README.md) - 41 条 - 最新 2026-06-17
+- [Swyx](people/swyx/README.md) - 32 条 - 最新 2026-06-17
+- [Aaron Levie](people/aaron-levie/README.md) - 26 条 - 最新 2026-06-17
+- [Guillermo Rauch](people/guillermo-rauch/README.md) - 20 条 - 最新 2026-06-17
+- [Thibault Sottiaux](people/thibault-sottiaux/README.md) - 17 条 - 最新 2026-06-17
 - [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 8 条 - 最新 2026-06-17
-- [Peter Yang](people/peter-yang/README.md) - 41 条 - 最新 2026-06-16
-- [Garry Tan](people/garry-tan/README.md) - 38 条 - 最新 2026-06-16
-- [Swyx](people/swyx/README.md) - 29 条 - 最新 2026-06-16
-- [Aaron Levie](people/aaron-levie/README.md) - 24 条 - 最新 2026-06-16
-- [Nikunj Kothari](people/nikunj-kothari/README.md) - 24 条 - 最新 2026-06-16
-- [Amjad Masad](people/amjad-masad/README.md) - 17 条 - 最新 2026-06-16
-- [Josh Woodward](people/josh-woodward/README.md) - 14 条 - 最新 2026-06-16
-- [Zara Zhang](people/zara-zhang/README.md) - 19 条 - 最新 2026-06-15
-- [Guillermo Rauch](people/guillermo-rauch/README.md) - 17 条 - 最新 2026-06-15
+- [Ryo Lu](people/ryo-lu/README.md) - 7 条 - 最新 2026-06-17
+- [Madhu Guru](people/madhu-guru/README.md) - 5 条 - 最新 2026-06-17
+- [Claude Blog](people/claude-blog/README.md) - 3 条 - 最新 2026-06-17
+- [Dan Shipper](people/dan-shipper/README.md) - 27 条 - 最新 2026-06-16
+- [Nikunj Kothari](people/nikunj-kothari/README.md) - 26 条 - 最新 2026-06-16
+- [Zara Zhang](people/zara-zhang/README.md) - 21 条 - 最新 2026-06-16
+- [Amjad Masad](people/amjad-masad/README.md) - 18 条 - 最新 2026-06-16
+- [Josh Woodward](people/josh-woodward/README.md) - 15 条 - 最新 2026-06-16
+- [Aditya Agarwal](people/aditya-agarwal/README.md) - 14 条 - 最新 2026-06-16
+- [Matt Turck](people/matt-turck/README.md) - 10 条 - 最新 2026-06-16
+- [Thariq](people/thariq/README.md) - 10 条 - 最新 2026-06-16
+- [Training Data](people/training-data/README.md) - 2 条 - 最新 2026-06-16
 - [Peter Steinberger](people/peter-steinberger/README.md) - 13 条 - 最新 2026-06-15
-- [Matt Turck](people/matt-turck/README.md) - 9 条 - 最新 2026-06-15
 - [Nan Yu](people/nan-yu/README.md) - 4 条 - 最新 2026-06-15
-- [Dan Shipper](people/dan-shipper/README.md) - 25 条 - 最新 2026-06-14
-- [Thibault Sottiaux](people/thibault-sottiaux/README.md) - 14 条 - 最新 2026-06-14
-- [Aditya Agarwal](people/aditya-agarwal/README.md) - 12 条 - 最新 2026-06-14
-- [Madhu Guru](people/madhu-guru/README.md) - 3 条 - 最新 2026-06-13
 - [Boris Cherny](people/boris-cherny/README.md) - 5 条 - 最新 2026-06-11
 - [Claude](people/claude/README.md) - 15 条 - 最新 2026-06-10
 - [Google Labs](people/google-labs/README.md) - 12 条 - 最新 2026-06-10
-- [Thariq](people/thariq/README.md) - 9 条 - 最新 2026-06-10
 - [Dataiku Blog](people/dataiku-blog/README.md) - 2 条 - 最新 2026-06-10
 - [Tigera Blog (Calico / AI Security)](people/tigera-blog-calico-ai-security/README.md) - 2 条 - 最新 2026-06-10
 - [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 2 条 - 最新 2026-06-10
@@ -46,10 +49,7 @@ generated_at: 2026-06-17T06:28:45.876Z
 - [DuckDuckGo](people/duckduckgo/README.md) - 12 条 - 最新 2026-06-04
 - [The MAD Podcast with Matt Turck](people/the-mad-podcast-with-matt-turck/README.md) - 2 条 - 最新 2026-06-04
 - [HN builder query](people/hn-builder-query/README.md) - 13 条 - 最新 2026-06-03
-- [Ryo Lu](people/ryo-lu/README.md) - 4 条 - 最新 2026-05-30
-- [Claude Blog](people/claude-blog/README.md) - 2 条 - 最新 2026-05-24
 - [Anthropic Engineering](people/anthropic-engineering/README.md) - 2 条 - 最新 2026-05-23
 - [Kevin Weil](people/kevin-weil/README.md) - 2 条 - 最新 2026-05-23
 - [Unsupervised Learning](people/unsupervised-learning/README.md) - 1 条 - 最新 2026-05-22
 - [AI & I by Every](people/ai-i-by-every/README.md) - 2 条 - 最新 2026-05-20
-- [Training Data](people/training-data/README.md) - 1 条 - 最新 2026-05-19
