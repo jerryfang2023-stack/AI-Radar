@@ -1,12 +1,12 @@
 ---
 type: opinion_person_timeline
 person_name: "Josh Woodward"
-opinion_count: 14
+opinion_count: 15
 latest_date: 2026-06-16
 ---
 
 # Josh Woodward 观点时间线
-共 14 条观点，按人物 + 日期文件聚合。
+共 15 条观点，按人物 + 日期文件聚合。
 ## 日期
 
 - [2026-06-16](./2026-06-16.md)

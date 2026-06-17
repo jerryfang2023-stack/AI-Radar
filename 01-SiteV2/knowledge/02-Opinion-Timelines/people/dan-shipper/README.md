@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Dan Shipper"
-opinion_count: 25
-latest_date: 2026-06-14
+opinion_count: 27
+latest_date: 2026-06-16
 ---
 
 # Dan Shipper 观点时间线
-共 25 条观点，按人物 + 日期文件聚合。
+共 27 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-06-16](./2026-06-16.md)
 - [2026-06-14](./2026-06-14.md)
 - [2026-06-13](./2026-06-13.md)
 - [2026-06-12](./2026-06-12.md)
