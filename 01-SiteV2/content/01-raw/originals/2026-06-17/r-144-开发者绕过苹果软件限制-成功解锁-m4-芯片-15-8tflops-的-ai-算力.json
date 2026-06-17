@@ -1,0 +1,253 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-144",
+  "title": "开发者绕过苹果软件限制，成功解锁 M4 芯片 15.8TFLOPS 的 AI 算力",
+  "original_url": "https://www.ithome.com/0/965/128.htm",
+  "canonical_url": "https://ithome.com/0/965/128.htm",
+  "source_name": "IT之家（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "supporting_article",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-16T15:28:49.000Z",
+  "collected_at": "2026-06-17T01:51:13.429Z",
+  "language": "mixed",
+  "full_text": "IT之家 6 月 16 日消息，苹果 M4 等芯片中的神经网络引擎原本只开放给推理使用，导致开发者可以运行预训练 AI 模型，却不能直接用来训练新模型。不过，X 用户 @0x0SojalSec 自称绕过了 M4 的软件限制，并对 M4 SoC 完成逆向工程。\n整个过程 把数据都放在 RAM 中运行 ，因此速度非常快，体验也相当流畅。\n@0x0SojalSec 今天凌晨在 X 上分享了一个 GitHub 代码库，展示如何 释放 M4 的完整潜力 。苹果并未开放直接与这些芯片通信的权限，因此其没有使用 Core ML、Metal 等苹果工具，也没有调用 GPU，而是 从零开发了一套自定义 MIL （（IT之家注：模型中间语言），用这套工具与 M4 进行通信。\n由于 M4 的相关硬件能力遭到“锁定”，整个过程还需要一些变通手段。比如，训练进程卡住、需要重置后才能继续时，自定义 MIL 会调用“exec ()”命令，让进程重新启动并继续训练。这样一来，程序可以刷新当前状态，避免直接崩溃，同时继续学习。\n@0x0SojalSec 表示，为了提高速度，解锁 M4 的过程 完全没有写入 NAND 闪存 。NAND 闪存写入速度较慢，而 RAM 速度更快，因此整个流程可以保持高速运行。突破软件限制后， iPad 或 Mac 中的 M4 可以达到 15.8TFLOPS 的 AI 处理性能 ，足以承担 AI 模型训练任务。\n需要提醒的是，目前还无法确认同一套自定义 MIL 能否用于更新的 Apple Silicon，也无法确认 exec () 在新平台上能否按预期工作。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
+  "clean_text": "IT之家 6 月 16 日消息，苹果 M4 等芯片中的神经网络引擎原本只开放给推理使用，导致开发者可以运行预训练 AI 模型，却不能直接用来训练新模型。不过，X 用户 @0x0SojalSec 自称绕过了 M4 的软件限制，并对 M4 SoC 完成逆向工程。\n整个过程 把数据都放在 RAM 中运行 ，因此速度非常快，体验也相当流畅。\n@0x0SojalSec 今天凌晨在 X 上分享了一个 GitHub 代码库，展示如何 释放 M4 的完整潜力 。苹果并未开放直接与这些芯片通信的权限，因此其没有使用 Core ML、Metal 等苹果工具，也没有调用 GPU，而是 从零开发了一套自定义 MIL （（IT之家注：模型中间语言），用这套工具与 M4 进行通信。\n由于 M4 的相关硬件能力遭到“锁定”，整个过程还需要一些变通手段。比如，训练进程卡住、需要重置后才能继续时，自定义 MIL 会调用“exec ()”命令，让进程重新启动并继续训练。这样一来，程序可以刷新当前状态，避免直接崩溃，同时继续学习。\n@0x0SojalSec 表示，为了提高速度，解锁 M4 的过程 完全没有写入 NAND 闪存 。NAND 闪存写入速度较慢，而 RAM 速度更快，因此整个流程可以保持高速运行。突破软件限制后， iPad 或 Mac 中的 M4 可以达到 15.8TFLOPS 的 AI 处理性能 ，足以承担 AI 模型训练任务。\n需要提醒的是，目前还无法确认同一套自定义 MIL 能否用于更新的 Apple Silicon，也无法确认 exec () 在新平台上能否按预期工作。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-17/r-144-开发者绕过苹果软件限制-成功解锁-m4-芯片-15-8tflops-的-ai-算力.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-17/r-144-开发者绕过苹果软件限制-成功解锁-m4-芯片-15-8tflops-的-ai-算力.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "low",
+  "extraction_method": "content-container",
+  "readability_score": 45,
+  "extractor_diagnostics": {
+    "readability_score": 45,
+    "text_length": 762,
+    "paragraph_count": 7,
+    "sentence_count": 7,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 762,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "104378593ad94635",
+    "missing": []
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "开发者绕过苹果软件限制，成功解锁 M4 芯片 15.8TFLOPS 的 AI 算力",
+    "discovery_summary": "苹果 M4 神经网络引擎原仅开放推理，X 用户 @0x0SojalSec 通过逆向工程，从零开发自定义 MIL 直接与芯片通信，绕开了软件限制。训练全程将数据放在 RAM 中运行，不写入 NAND 闪存以维持高速。解锁后 M4 可达 15.8TFLOPS AI 性能，足以承担模型训练。目前不确定该 MIL 能否用于更新的 Apple Silicon，exec（） 命令在新平台上的兼容性也未知。",
+    "source_name": "IT之家（RSS）",
+    "origin_url": "https://www.ithome.com/0/965/128.htm",
+    "discovered_at": "2026-06-17T01:46:29.087Z",
+    "rank_on_page": 187,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "e9a3bd8ebf09436e",
+  "content_hash": "104378593ad94635",
+  "full_text_hash": "104378593ad94635",
+  "semantic_hash": "90a1edab471c34ac",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-16T15:28:49.000Z",
+  "last_seen_at": "2026-06-17T01:51:13.429Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "苹果 M4 神经网络引擎原仅开放推理，X 用户 @0x0SojalSec 通过逆向工程，从零开发自定义 MIL 直接与芯片通信，绕开了软件限制。训练全程将数据放在 RAM 中运行，不写入 NAND 闪存以维持高速。解锁后 M4 可达 15.8TFLOPS AI 性能，足以承担模型训练。目前不确定该 MIL 能否用于更新的 Apple Silicon，exec（） 命令在新平台上的兼容性也未知。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "IT之家 6 月 16 日消息，苹果 M4 等芯片中的神经网络引擎原本只开放给推理使用，导致开发者可以运行预训练 AI 模型，却不能直接用来训练新模型。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "不过，X 用户 @0x0SojalSec 自称绕过了 M4 的软件限制，并对 M4 SoC 完成逆向工程。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "整个过程 把数据都放在 RAM 中运行 ，因此速度非常快，体验也相当流畅。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "number",
+      "text": "@0x0SojalSec 今天凌晨在 X 上分享了一个 GitHub 代码库，展示如何 释放 M4 的完整潜力 。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "苹果并未开放直接与这些芯片通信的权限，因此其没有使用 Core ML、Metal 等苹果工具，也没有调用 GPU，而是 从零开发了一套自定义 MIL （（IT之家注：模型中间语言），用这套工具与 M4 进行通信。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "IT之家（RSS）",
+      "GitHub",
+      "Apple"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "4",
+      "15.8",
+      "0x",
+      "0",
+      "6",
+      "16"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "IT之家 6 月 16 日消息，苹果 M4 等芯片中的神经网络引擎原本只开放给推理使用，导致开发者可以运行预训练 AI 模型，却不能直接用来训练新模型。",
+      "整个过程 把数据都放在 RAM 中运行 ，因此速度非常快，体验也相当流畅。",
+      "苹果并未开放直接与这些芯片通信的权限，因此其没有使用 Core ML、Metal 等苹果工具，也没有调用 GPU，而是 从零开发了一套自定义 MIL （（IT之家注：模型中间语言），用这套工具与 M4 进行通信。"
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 3,
+    "case_richness": 4,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 开发者绕过苹果软件限制，成功解锁 M4 芯片 15.8TFLOPS 的 AI 算力\n\n- raw_id: R-144\n- original_url: https://www.ithome.com/0/965/128.htm\n- source_name: IT之家（RSS）\n- collected_at: 2026-06-17T01:51:13.429Z\n\n## clean_text\n\nIT之家 6 月 16 日消息，苹果 M4 等芯片中的神经网络引擎原本只开放给推理使用，导致开发者可以运行预训练 AI 模型，却不能直接用来训练新模型。不过，X 用户 @0x0SojalSec 自称绕过了 M4 的软件限制，并对 M4 SoC 完成逆向工程。\n整个过程 把数据都放在 RAM 中运行 ，因此速度非常快，体验也相当流畅。\n@0x0SojalSec 今天凌晨在 X 上分享了一个 GitHub 代码库，展示如何 释放 M4 的完整潜力 。苹果并未开放直接与这些芯片通信的权限，因此其没有使用 Core ML、Metal 等苹果工具，也没有调用 GPU，而是 从零开发了一套自定义 MIL （（IT之家注：模型中间语言），用这套工具与 M4 进行通信。\n由于 M4 的相关硬件能力遭到“锁定”，整个过程还需要一些变通手段。比如，训练进程卡住、需要重置后才能继续时，自定义 MIL 会调用“exec ()”命令，让进程重新启动并继续训练。这样一来，程序可以刷新当前状态，避免直接崩溃，同时继续学习。\n@0x0SojalSec 表示，为了提高速度，解锁 M4 的过程 完全没有写入 NAND 闪存 。NAND 闪存写入速度较慢，而 RAM 速度更快，因此整个流程可以保持高速运行。突破软件限制后， iPad 或 Mac 中的 M4 可以达到 15.8TFLOPS 的 AI 处理性能 ，足以承担 AI 模型训练任务。\n需要提醒的是，目前还无法确认同一套自定义 MIL 能否用于更新的 Apple Silicon，也无法确认 exec () 在新平台上能否按预期工作。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n\n## full_text\n\nIT之家 6 月 16 日消息，苹果 M4 等芯片中的神经网络引擎原本只开放给推理使用，导致开发者可以运行预训练 AI 模型，却不能直接用来训练新模型。不过，X 用户 @0x0SojalSec 自称绕过了 M4 的软件限制，并对 M4 SoC 完成逆向工程。\n整个过程 把数据都放在 RAM 中运行 ，因此速度非常快，体验也相当流畅。\n@0x0SojalSec 今天凌晨在 X 上分享了一个 GitHub 代码库，展示如何 释放 M4 的完整潜力 。苹果并未开放直接与这些芯片通信的权限，因此其没有使用 Core ML、Metal 等苹果工具，也没有调用 GPU，而是 从零开发了一套自定义 MIL （（IT之家注：模型中间语言），用这套工具与 M4 进行通信。\n由于 M4 的相关硬件能力遭到“锁定”，整个过程还需要一些变通手段。比如，训练进程卡住、需要重置后才能继续时，自定义 MIL 会调用“exec ()”命令，让进程重新启动并继续训练。这样一来，程序可以刷新当前状态，避免直接崩溃，同时继续学习。\n@0x0SojalSec 表示，为了提高速度，解锁 M4 的过程 完全没有写入 NAND 闪存 。NAND 闪存写入速度较慢，而 RAM 速度更快，因此整个流程可以保持高速运行。突破软件限制后， iPad 或 Mac 中的 M4 可以达到 15.8TFLOPS 的 AI 处理性能 ，足以承担 AI 模型训练任务。\n需要提醒的是，目前还无法确认同一套自定义 MIL 能否用于更新的 Apple Silicon，也无法确认 exec () 在新平台上能否按预期工作。\n广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 45\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: low\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] 苹果 M4 神经网络引擎原仅开放推理，X 用户 @0x0SojalSec 通过逆向工程，从零开发自定义 MIL 直接与芯片通信，绕开了软件限制。训练全程将数据放在 RAM 中运行，不写入 NAND 闪存以维持高速。解锁后 M4 可达 15.8TFLOPS AI 性能，足以承担模型训练。目前不确定该 MIL 能否用于更新的 Apple Silicon，exec（） 命令在新平台上的兼容性也未知。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] IT之家 6 月 16 日消息，苹果 M4 等芯片中的神经网络引擎原本只开放给推理使用，导致开发者可以运行预训练 AI 模型，却不能直接用来训练新模型。\n3. [number / daily_observation, heatmap, case, trend / high] 不过，X 用户 @0x0SojalSec 自称绕过了 M4 的软件限制，并对 M4 SoC 完成逆向工程。\n4. [company_action / daily_observation, heatmap, change, case, trend / high] 整个过程 把数据都放在 RAM 中运行 ，因此速度非常快，体验也相当流畅。\n5. [number / daily_observation, heatmap, case, trend / high] @0x0SojalSec 今天凌晨在 X 上分享了一个 GitHub 代码库，展示如何 释放 M4 的完整潜力 。\n6. [company_action / daily_observation, heatmap, change, case, trend / high] 苹果并未开放直接与这些芯片通信的权限，因此其没有使用 Core ML、Metal 等苹果工具，也没有调用 GPU，而是 从零开发了一套自定义 MIL （（IT之家注：模型中间语言），用这套工具与 M4 进行通信。\n"
+}

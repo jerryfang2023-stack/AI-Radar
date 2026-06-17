@@ -1,0 +1,236 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-126
+title: "Ent Security 推出意图感知工作空间安全平台"
+original_url: "https://x.com/kimmonismus/status/2066915897743233300"
+canonical_url: "https://x.com/kimmonismus/status/2066915897743233300"
+source_name: "X：Kim (@kimmonismus)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-16T16:08:46.000Z"
+collected_at: 2026-06-17T01:51:13.388Z
+language: mixed
+full_text_hash: 0d15dff227eafd48
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-17/r-126-ent-security-推出意图感知工作空间安全平台.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-17/r-126-ent-security-推出意图感知工作空间安全平台.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: medium
+extraction_method: "main"
+readability_score: 67
+extractor_diagnostics: {"readability_score":67,"text_length":2211,"paragraph_count":11,"sentence_count":6,"boilerplate_hits":1,"symbol_ratio":0.0235,"method":"main"}
+has_full_text: true
+content_length: 2211
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0d15dff227eafd48","missing":[]}
+source_volatility: high
+community_name: "X：Kim (@kimmonismus)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Ent Security 推出意图感知工作空间安全平台","discovery_summary":"Ent 发布业内首个 intent-aware 工作空间安全平台，结束隐身模式。传统端点安全在数据外泄后扫描关键词告警，Ent 直接在设备端运行本地模型，实时理解会议参与者、屏幕内容，在屏幕共享前自动遮盖不应外露的信息。所有处理在设备本地完成，数据不离开边界。该产品来自 RiskIQ 与 Security Copilot 团队成员。","source_name":"X：Kim (@kimmonismus)","origin_url":"https://x.com/kimmonismus/status/2066915897743233300","discovered_at":"2026-06-17T01:46:29.084Z","rank_on_page":171,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: a4baf74a6927b46c
+content_hash: 0d15dff227eafd48
+semantic_hash: e98c4e3d8ecd7ed4
+duplicate_of: ""
+first_seen_at: "2026-06-16T16:08:46.000Z"
+last_seen_at: 2026-06-17T01:51:13.388Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["user_feedback_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":4,"importance_reason":"real customer or adoption case; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["X","Kim (@kimmonismus)"],"products":["Copilot"],"people":[],"industries":[],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟"],"affected_departments":["IT / 安全"],"numbers":["9","00","4","08","16","2026","10.7","1"],"quotes":[]}
+evidence_seed: {"company_actions":["Ent runs local models that read intent instead: who's in the meeting, what's on screen, what shouldn't be visible externally, and covers it before the screen share goes out.","On-device, nothing leaves the boundary."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["Ent 发布业内首个 intent-aware 工作空间安全平台，结束隐身模式。传统端点安全在数据外泄后扫描关键词告警，Ent 直接在设备端运行本地模型，实时理解会议参与者、屏幕内容，在屏幕共享前自动遮盖不应外露的信息。所有处理在设备本地完成，数据不离开边界。该产品来自 RiskIQ 与 Security Copilot 团队成员。","Post Log in Sign up Post Chubby♨️ @kimmonismus A decade of endpoint security has meant scanning content for keywords and file types, then alerting after the data already left.","From the RiskIQ and Security Copilot team."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"supporting_context","text":"Ent 发布业内首个 intent-aware 工作空间安全平台，结束隐身模式。传统端点安全在数据外泄后扫描关键词告警，Ent 直接在设备端运行本地模型，实时理解会议参与者、屏幕内容，在屏幕共享前自动遮盖不应外露的信息。所有处理在设备本地完成，数据不离开边界。该产品来自 RiskIQ 与 Security Copilot 团队成员。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"Post Log in Sign up Post Chubby♨️ @kimmonismus A decade of endpoint security has meant scanning content for keywords and file types, then alerting after the data already left.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Ent runs local models that read intent instead: who's in the meeting, what's on screen, what shouldn't be visible externally, and covers it before the screen share goes out.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"On-device, nothing leaves the boundary.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"From the RiskIQ and Security Copilot team.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"Ent @Ent_Security 9h 🚀 We're out of stealth.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Ent Security 推出意图感知工作空间安全平台
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Chubby♨️
+@kimmonismus
+A decade of endpoint security has meant scanning content for keywords and file types, then alerting after the data already left.
+Ent runs local models that read intent instead: who's in the meeting, what's on screen, what shouldn't be visible externally, and covers it before the screen share goes out. On-device, nothing leaves the boundary.
+From the RiskIQ and Security Copilot team.
+Ent
+@Ent_Security
+9h
+🚀 We're out of stealth.
+Today we're introducing Ent, the industry’s first intent-aware Workspace Security platform for human and AI-driven work
+🎥 See what it means to protect work as it happens.
+#IntentAware #LaunchFromStealth #WorkspaceSecurity #CyberSecurity
+00:00
+Paid partnership
+4:08 PM · Jun 16, 2026 10.7K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 57
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 12
+Read 5 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Chubby♨️
+@kimmonismus
+A decade of endpoint security has meant scanning content for keywords and file types, then alerting after the data already left.
+Ent runs local models that read intent instead: who's in the meeting, what's on screen, what shouldn't be visible externally, and covers it before the screen share goes out. On-device, nothing leaves the boundary.
+From the RiskIQ and Security Copilot team.
+Ent
+@Ent_Security
+9h
+🚀 We're out of stealth.
+Today we're introducing Ent, the industry’s first intent-aware Workspace Security platform for human and AI-driven work
+🎥 See what it means to protect work as it happens.
+#IntentAware #LaunchFromStealth #WorkspaceSecurity #CyberSecurity
+00:00
+Paid partnership
+4:08 PM · Jun 16, 2026 10.7K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 57
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 12
+Read 5 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 67
+- fetch_status: fetched-readable-text-main
+- extraction_quality: medium
+- diagnostics: {"readability_score":67,"text_length":2211,"paragraph_count":11,"sentence_count":6,"boilerplate_hits":1,"symbol_ratio":0.0235,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   Ent 发布业内首个 intent-aware 工作空间安全平台，结束隐身模式。传统端点安全在数据外泄后扫描关键词告警，Ent 直接在设备端运行本地模型，实时理解会议参与者、屏幕内容，在屏幕共享前自动遮盖不应外露的信息。所有处理在设备本地完成，数据不离开边界。该产品来自 RiskIQ 与 Security Copilot 团队成员。
+
+2. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   Post Log in Sign up Post Chubby♨️ @kimmonismus A decade of endpoint security has meant scanning content for keywords and file types, then alerting after the data already left.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Ent runs local models that read intent instead: who's in the meeting, what's on screen, what shouldn't be visible externally, and covers it before the screen share goes out.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   On-device, nothing leaves the boundary.
+
+5. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   From the RiskIQ and Security Copilot team.
+
+6. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   Ent @Ent_Security 9h 🚀 We're out of stealth.
+
+## business_elements
+
+- companies: X, Kim (@kimmonismus)
+- products: Copilot
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟
+- affected_departments: IT / 安全
+- numbers: 9, 00, 4, 08, 16, 2026, 10.7, 1
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Ent runs local models that read intent instead: who's in the meeting, what's on screen, what shouldn't be visible externally, and covers it before the screen share goes out. / On-device, nothing leaves the boundary.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: Ent 发布业内首个 intent-aware 工作空间安全平台，结束隐身模式。传统端点安全在数据外泄后扫描关键词告警，Ent 直接在设备端运行本地模型，实时理解会议参与者、屏幕内容，在屏幕共享前自动遮盖不应外露的信息。所有处理在设备本地完成，数据不离开边界。该产品来自 RiskIQ 与 Security Copilot 团队成员。 / Post Log in Sign up Post Chubby♨️ @kimmonismus A decade of endpoint security has meant scanning content for keywords and file types, then alerting after the data already left. / From the RiskIQ and Security Copilot team.
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 4
+- importance_reason: real customer or adoption case; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- user_feedback_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Kim (@kimmonismus)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Ent Security 推出意图感知工作空间安全平台","discovery_summary":"Ent 发布业内首个 intent-aware 工作空间安全平台，结束隐身模式。传统端点安全在数据外泄后扫描关键词告警，Ent 直接在设备端运行本地模型，实时理解会议参与者、屏幕内容，在屏幕共享前自动遮盖不应外露的信息。所有处理在设备本地完成，数据不离开边界。该产品来自 RiskIQ 与 Security Copilot 团队成员。","source_name":"X：Kim (@kimmonismus)","origin_url":"https://x.com/kimmonismus/status/2066915897743233300","discovered_at":"2026-06-17T01:46:29.084Z","rank_on_page":171,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Ent 发布业内首个 intent-aware 工作空间安全平台，结束隐身模式。传统端点安全在数据外泄后扫描关键词告警，Ent 直接在设备端运行本地模型，实时理解会议参与者、屏幕内容，在屏幕共享前自动遮盖不应外露的信息。所有处理在设备本地完成，数据不离开边界。该产品来自 RiskIQ 与 Security Copilot 团队成员。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

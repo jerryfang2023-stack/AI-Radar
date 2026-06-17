@@ -1,0 +1,221 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-145
+title: "WorkBuddy日活已达第二名的3-4倍以上，非技术岗用户大量涌入"
+original_url: "https://x.com/frxiaobei/status/2066902914124382547"
+canonical_url: "https://x.com/frxiaobei/status/2066902914124382547"
+source_name: "X：小北 (@frxiaobei)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-16T15:17:10.000Z"
+collected_at: 2026-06-17T01:51:13.430Z
+language: mixed
+full_text_hash: 51deed2f556effde
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-17/r-145-workbuddy日活已达第二名的3-4倍以上-非技术岗用户大量涌入.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-17/r-145-workbuddy日活已达第二名的3-4倍以上-非技术岗用户大量涌入.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: low
+extraction_method: "json-ld"
+readability_score: 57
+extractor_diagnostics: {"readability_score":57,"text_length":675,"paragraph_count":16,"sentence_count":8,"boilerplate_hits":0,"symbol_ratio":0,"method":"json-ld"}
+has_full_text: true
+content_length: 675
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"51deed2f556effde","missing":[]}
+source_volatility: high
+community_name: "X：小北 (@frxiaobei)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"WorkBuddy日活已达第二名的3-4倍以上，非技术岗用户大量涌入","discovery_summary":"腾讯WorkBuddy自3月至今，日活已达第二名的3-4倍以上。用户除开发者外，涌入大量HR、运营、行政等非技术岗，黑客松场景覆盖金融、餐饮、外贸、法律等非互联网行业。商业模式从卖软件转向卖智能，辅助用户造最适合自己的工具。已有Trae Work、QoderWork、Kimi Work等产品跟进改名。腾讯云称此为十年一遇机遇，已推出企业版和项目功能。用户也可将WorkBuddy用作skill store，获取腾讯精选skill，质量高于GitHub公开资源。","source_name":"X：小北 (@frxiaobei)","origin_url":"https://x.com/frxiaobei/status/2066902914124382547","discovered_at":"2026-06-17T01:46:29.087Z","rank_on_page":191,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 84551b0ac9dad0ba
+content_hash: 51deed2f556effde
+semantic_hash: 111a5c3e5f410759
+duplicate_of: ""
+first_seen_at: "2026-06-16T15:17:10.000Z"
+last_seen_at: 2026-06-17T01:51:13.430Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["user_feedback_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":3,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["X","小北 (@frxiaobei)","GitHub"],"products":[],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具","企业服务"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["3","4倍"],"quotes":[]}
+evidence_seed: {"company_actions":["workbuddy 确实确实被低估了，身边很多同事和朋友都有付费， 如果要做个类比，可以算作是工作场景的豆包。","而我的可耻用法是把 workbuddy 当成了 skill store，在这里总能找到腾讯精选的 skill。","比直接上 githun 找到的质量高多了。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"number","text":"腾讯WorkBuddy自3月至今，日活已达第二名的3-4倍以上。用户除开发者外，涌入大量HR、运营、行政等非技术岗，黑客松场景覆盖金融、餐饮、外贸、法律等非互联网行业。商业模式从卖软件转向卖智能，辅助用户造最适合自己的工具。已有Trae Work、QoderWork、Kimi Work等产品跟进改名。腾讯云称此为十年一遇机遇，已推出企业版和项目功能。用户也可将WorkBuddy用作skill store，获取腾讯精选skill，质量高于GitHub公开资源。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"workbuddy 确实确实被低估了，身边很多同事和朋友都有付费， 如果要做个类比，可以算作是工作场景的豆包。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"而我的可耻用法是把 workbuddy 当成了 skill store，在这里总能找到腾讯精选的 skill。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"比直接上 githun 找到的质量高多了。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"方法也很简单：在电脑上某个位置可以找到 workbuddy 安装的所有 workbuddy 确实确实被低估了，身边很多同事和朋友都有付费， 如果要做个类比，可以算作是工作场景的豆包。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# WorkBuddy日活已达第二名的3-4倍以上，非技术岗用户大量涌入
+
+## clean_text
+
+workbuddy 确实确实被低估了，身边很多同事和朋友都有付费，
+如果要做个类比，可以算作是工作场景的豆包。
+而我的可耻用法是把 workbuddy 当成了 skill store，在这里总能找到腾讯精选的 skill。比直接上 githun 找到的质量高多了。
+方法也很简单：在电脑上某个位置可以找到 workbuddy 安装的所有
+workbuddy 确实确实被低估了，身边很多同事和朋友都有付费，
+如果要做个类比，可以算作是工作场景的豆包。
+而我的可耻用法是把 workbuddy 当成了 skill store，在这里总能找到腾讯精选的 skill。比直接上 githun 找到的质量高多了。
+方法也很简单：在电脑上某个位置可以找到 workbuddy 安装的所有
+workbuddy 确实确实被低估了，身边很多同事和朋友都有付费，
+如果要做个类比，可以算作是工作场景的豆包。
+而我的可耻用法是把 workbuddy 当成了 skill store，在这里总能找到腾讯精选的 skill。比直接上 githun 找到的质量高多了。
+方法也很简单：在电脑上某个位置可以找到 workbuddy 安装的所有
+workbuddy 确实确实被低估了，身边很多同事和朋友都有付费，
+如果要做个类比，可以算作是工作场景的豆包。
+而我的可耻用法是把 workbuddy 当成了 skill store，在这里总能找到腾讯精选的 skill。比直接上 githun 找到的质量高多了。
+方法也很简单：在电脑上某个位置可以找到 workbuddy 安装的所有
+
+## full_text
+
+workbuddy 确实确实被低估了，身边很多同事和朋友都有付费，
+如果要做个类比，可以算作是工作场景的豆包。
+而我的可耻用法是把 workbuddy 当成了 skill store，在这里总能找到腾讯精选的 skill。比直接上 githun 找到的质量高多了。
+方法也很简单：在电脑上某个位置可以找到 workbuddy 安装的所有
+workbuddy 确实确实被低估了，身边很多同事和朋友都有付费，
+如果要做个类比，可以算作是工作场景的豆包。
+而我的可耻用法是把 workbuddy 当成了 skill store，在这里总能找到腾讯精选的 skill。比直接上 githun 找到的质量高多了。
+方法也很简单：在电脑上某个位置可以找到 workbuddy 安装的所有
+workbuddy 确实确实被低估了，身边很多同事和朋友都有付费，
+如果要做个类比，可以算作是工作场景的豆包。
+而我的可耻用法是把 workbuddy 当成了 skill store，在这里总能找到腾讯精选的 skill。比直接上 githun 找到的质量高多了。
+方法也很简单：在电脑上某个位置可以找到 workbuddy 安装的所有
+workbuddy 确实确实被低估了，身边很多同事和朋友都有付费，
+如果要做个类比，可以算作是工作场景的豆包。
+而我的可耻用法是把 workbuddy 当成了 skill store，在这里总能找到腾讯精选的 skill。比直接上 githun 找到的质量高多了。
+方法也很简单：在电脑上某个位置可以找到 workbuddy 安装的所有
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 57
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: low
+- diagnostics: {"readability_score":57,"text_length":675,"paragraph_count":16,"sentence_count":8,"boilerplate_hits":0,"symbol_ratio":0,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   腾讯WorkBuddy自3月至今，日活已达第二名的3-4倍以上。用户除开发者外，涌入大量HR、运营、行政等非技术岗，黑客松场景覆盖金融、餐饮、外贸、法律等非互联网行业。商业模式从卖软件转向卖智能，辅助用户造最适合自己的工具。已有Trae Work、QoderWork、Kimi Work等产品跟进改名。腾讯云称此为十年一遇机遇，已推出企业版和项目功能。用户也可将WorkBuddy用作skill store，获取腾讯精选skill，质量高于GitHub公开资源。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   workbuddy 确实确实被低估了，身边很多同事和朋友都有付费， 如果要做个类比，可以算作是工作场景的豆包。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   而我的可耻用法是把 workbuddy 当成了 skill store，在这里总能找到腾讯精选的 skill。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   比直接上 githun 找到的质量高多了。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   方法也很简单：在电脑上某个位置可以找到 workbuddy 安装的所有 workbuddy 确实确实被低估了，身边很多同事和朋友都有付费， 如果要做个类比，可以算作是工作场景的豆包。
+
+## business_elements
+
+- companies: X, 小北 (@frxiaobei), GitHub
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具, 企业服务
+- roles: 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 3, 4倍
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: workbuddy 确实确实被低估了，身边很多同事和朋友都有付费， 如果要做个类比，可以算作是工作场景的豆包。 / 而我的可耻用法是把 workbuddy 当成了 skill store，在这里总能找到腾讯精选的 skill。 / 比直接上 githun 找到的质量高多了。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: true
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- user_feedback_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：小北 (@frxiaobei)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"WorkBuddy日活已达第二名的3-4倍以上，非技术岗用户大量涌入","discovery_summary":"腾讯WorkBuddy自3月至今，日活已达第二名的3-4倍以上。用户除开发者外，涌入大量HR、运营、行政等非技术岗，黑客松场景覆盖金融、餐饮、外贸、法律等非互联网行业。商业模式从卖软件转向卖智能，辅助用户造最适合自己的工具。已有Trae Work、QoderWork、Kimi Work等产品跟进改名。腾讯云称此为十年一遇机遇，已推出企业版和项目功能。用户也可将WorkBuddy用作skill store，获取腾讯精选skill，质量高于GitHub公开资源。","source_name":"X：小北 (@frxiaobei)","origin_url":"https://x.com/frxiaobei/status/2066902914124382547","discovered_at":"2026-06-17T01:46:29.087Z","rank_on_page":191,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+腾讯WorkBuddy自3月至今，日活已达第二名的3-4倍以上。用户除开发者外，涌入大量HR、运营、行政等非技术岗，黑客松场景覆盖金融、餐饮、外贸、法律等非互联网行业。商业模式从卖软件转向卖智能，辅助用户造最适合自己的工具。已有Trae Work、QoderWork、Kimi Work等产品跟进改名。腾讯云称此为十年一遇机遇，已推出企业版和项目功能。用户也可将WorkBuddy用作skill store，获取腾讯精选skill，质量高于GitHub公开资源。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
