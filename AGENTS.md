@@ -98,6 +98,7 @@ If an old rule conflicts with V3.3, delete or rebuild it instead of preserving c
 
 | Document | Use |
 |---|---|
+| `context/project-memory.md` | stable project memory and non-negotiable long-term rules |
 | `context/00-current-state.md` | current project state |
 | `context/version-ledger.md` | version baseline and freeze points |
 | `context/frontstage-page-contracts.md` | frontstage page contracts |

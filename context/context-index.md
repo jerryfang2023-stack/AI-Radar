@@ -17,6 +17,7 @@ This file is the reading router. Do not use old closeout files as current truth.
 
 | File | Purpose | Read When |
 |---|---|---|
+| `context/project-memory.md` | Stable project memory and non-negotiable long-term rules | Project startup, agent handoff, context recovery, recurring conflict check |
 | `context/00-current-state.md` | Current product state and active / paused routes | Large task startup, context recovery |
 | `context/version-ledger.md` | Current version baseline, freeze point, active version | Page change, release check, version confirmation |
 | `context/frontstage-page-contracts.md` | Frontstage page contracts | Page, nav, copy, data sync, regression check |
