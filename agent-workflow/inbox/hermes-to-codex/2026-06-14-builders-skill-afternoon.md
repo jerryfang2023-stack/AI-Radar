@@ -1,4 +1,4 @@
-status: open
+status: resolved
 priority: medium
 lane: first_line_viewpoints_skill
 category: afternoon_skill_check
@@ -7,6 +7,12 @@ report_path: agent-workflow/reports/2026-06-14-follow-builders-skill-local-publi
 data_generated: no
 needed_action: inspect
 created_at: 2026-06-14T16:30:00+08:00
+updated_at: 2026-06-17T11:20:58+08:00
+resolved_at: 2026-06-17T11:20:58+08:00
+resolver: codex
+fix_commit: pending-local-change
+validation: node stale-afternoon-skill-check-2026-06-14
+prevention_added: not-needed
 source: hermes-auto
 
 # 下午 follow-builders skill 链路补充检查 — 2026-06-14
@@ -47,3 +53,10 @@ source: hermes-auto
    - 如果 16:10 任务是 Codex 端负责，检查 Codex 当天运行日志
    - 如果是周末跳过逻辑，明确记录在 context 中
    - 如果技能 store 未安装，安装或提供替代方案
+
+## Resolution - 2026-06-17T11:20:58+08:00
+
+- fix_commit: pending-local-change
+- validation: node stale-afternoon-skill-check-2026-06-14
+- prevention_added: not-needed
+- notes: Validated that the 2026-06-14 follow-builders publish report and builders-viewpoints output both exist and both counts equal 26; the inbox item remained open after the runner fix had already landed.
