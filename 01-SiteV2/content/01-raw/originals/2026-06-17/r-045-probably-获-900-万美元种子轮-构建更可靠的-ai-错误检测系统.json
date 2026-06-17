@@ -1,0 +1,268 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-045",
+  "title": "Probably 获 900 万美元种子轮，构建更可靠的 AI 错误检测系统",
+  "original_url": "https://techcrunch.com/2026/06/16/probably-raises-9m-to-build-a-more-reliable-kind-of-ai",
+  "canonical_url": "https://techcrunch.com/2026/06/16/probably-raises-9m-to-build-a-more-reliable-kind-of-ai",
+  "source_name": "TechCrunch：AI（RSS）",
+  "source_type": "news",
+  "source_level": "A",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-16T13:15:09.000Z",
+  "collected_at": "2026-06-17T01:51:13.186Z",
+  "language": "mixed",
+  "full_text": "Image Credits: Probably\nAI\nProbably raises $9M to build a more reliable kind of AI\nRussell Brandom\n6:15 AM PDT · June 16, 2026\nAs LLMs have grown more powerful, hallucinations have proven stubbornly difficult to avoid. Errors pop up in even the smartest models, and while there are ways to catch those errors, the industry is still figuring out the best way to do it.\nProbably , which just raised $9 million in seed funding from Andreessen Horowitz, is trying to build a more rigorous way to catch those errors.\nAs founder Peter Elias (pictured above) puts it, the company’s goal is to prevent hallucinations and simple factual errors from ever reaching the user, and achieve the kind of 99.99% accuracy that’s common in deterministic systems but much more difficult to reach with AI. As it turns out, bringing LLMs to that level of accuracy requires rethinking many of the basic assumptions of AI engineering.\nProbably’s first product is a data science tool, built to produce quick answers from complex datasets. Each result comes with a citation and an audit trail for how it was developed, an increasingly common practice among AI tools.\nBut keeping errors from creeping into those summaries required an elaborate harness system that Elias describes as a “data science mech suit.” The LLM’s first-pass answers are checked against a deterministic validator system, which bounces back any results that don’t match the dataset. Crucially, the LLM has been trained against the validator, and the whole system is optimized for fast and accurate answers, the company said.\n“What we learned building this was that the better your harness engineering is, the weaker the model can be,” Elias says. “If you can refine the context enough, the model does not have to work very hard to do the right thing. Basically, it’s an exercise in reducing ambiguity.”\nThat allows Probably’s data science tool to run on significantly smaller AI models. Elias says the current version is running on a model that’s “four classes weaker than the frontier models,” which means it can be run on local hardware (that is, a desktop computer instead of a data center), which reduces a huge amount of the token costs associated with AI use.\nIt’s a welcome idea at a time when token costs are rising and many customers are reassessing their AI budgets . And, Elias’ idea doesn’t end with data science, as the same engine can be extended to cover use cases like accounting or medical services — as Elias puts it, “any precision-sensitive use case.”\n“I think it’s really interesting that the big AI labs have not even attempted to do this,” Elias says. “They’re incentivized not to, because they make money the more times you have to correct the model.”\nTopics\nAI , Andreessen Horowitz , hallucinations , Probably , Startups\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nRussell Brandom\nAI Editor\nRussell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review.\nHe can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489.\nView Bio\nJune 18\nLos Angeles\nGet an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.\nREGISTER NOW\nMost Popular\nSpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO\nSean O'Kane\nThe AI layoff wave is becoming a powder keg\nConnie Loizos\nAmazon CEO reportedly raised Anthropic model concerns before government crackdown\nAnthony Ha\nThe FBI built its own replica small town to simulate real-world cyberattacks\nZack Whittaker\nMeta’s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it\nConnie Loizos\nJeff Bezos’s Prometheus raises $12B to build an ‘artificial general engineer’ for the physical world\nMarina Temkin\nCybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable\nLorenzo Franceschi-Bicchierai\nLoading the next article\nError loading the next article",
+  "clean_text": "Image Credits: Probably\nAI\nProbably raises $9M to build a more reliable kind of AI\nRussell Brandom\n6:15 AM PDT · June 16, 2026\nAs LLMs have grown more powerful, hallucinations have proven stubbornly difficult to avoid. Errors pop up in even the smartest models, and while there are ways to catch those errors, the industry is still figuring out the best way to do it.\nProbably , which just raised $9 million in seed funding from Andreessen Horowitz, is trying to build a more rigorous way to catch those errors.\nAs founder Peter Elias (pictured above) puts it, the company’s goal is to prevent hallucinations and simple factual errors from ever reaching the user, and achieve the kind of 99.99% accuracy that’s common in deterministic systems but much more difficult to reach with AI. As it turns out, bringing LLMs to that level of accuracy requires rethinking many of the basic assumptions of AI engineering.\nProbably’s first product is a data science tool, built to produce quick answers from complex datasets. Each result comes with a citation and an audit trail for how it was developed, an increasingly common practice among AI tools.\nBut keeping errors from creeping into those summaries required an elaborate harness system that Elias describes as a “data science mech suit.” The LLM’s first-pass answers are checked against a deterministic validator system, which bounces back any results that don’t match the dataset. Crucially, the LLM has been trained against the validator, and the whole system is optimized for fast and accurate answers, the company said.\n“What we learned building this was that the better your harness engineering is, the weaker the model can be,” Elias says. “If you can refine the context enough, the model does not have to work very hard to do the right thing. Basically, it’s an exercise in reducing ambiguity.”\nThat allows Probably’s data science tool to run on significantly smaller AI models. Elias says the current version is running on a model that’s “four classes weaker than the frontier models,” which means it can be run on local hardware (that is, a desktop computer instead of a data center), which reduces a huge amount of the token costs associated with AI use.\nIt’s a welcome idea at a time when token costs are rising and many customers are reassessing their AI budgets . And, Elias’ idea doesn’t end with data science, as the same engine can be extended to cover use cases like accounting or medical services — as Elias puts it, “any precision-sensitive use case.”\n“I think it’s really interesting that the big AI labs have not even attempted to do this,” Elias says. “They’re incentivized not to, because they make money the more times you have to correct the model.”\nTopics\nAI , Andreessen Horowitz , hallucinations , Probably , Startups\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nRussell Brandom\nAI Editor\nRussell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review.\nHe can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489.\nView Bio\nJune 18\nLos Angeles\nGet an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.\nREGISTER NOW\nMost Popular\nSpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO\nSean O'Kane\nThe AI layoff wave is becoming a powder keg\nConnie Loizos\nAmazon CEO reportedly raised Anthropic model concerns before government crackdown\nAnthony Ha\nThe FBI built its own replica small town to simulate real-world cyberattacks\nZack Whittaker\nMeta’s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it\nConnie Loizos\nJeff Bezos’s Prometheus raises $12B to build an ‘artificial general engineer’ for the physical world\nMarina Temkin\nCybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable\nLorenzo Franceschi-Bicchierai\nLoading the next article\nError loading the next article",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-17/r-045-probably-获-900-万美元种子轮-构建更可靠的-ai-错误检测系统.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-17/r-045-probably-获-900-万美元种子轮-构建更可靠的-ai-错误检测系统.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 4277,
+    "paragraph_count": 27,
+    "sentence_count": 22,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 4277,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "5158bf9d2c2f18a0",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Probably 获 900 万美元种子轮，构建更可靠的 AI 错误检测系统",
+    "discovery_summary": "Probably 获得 Andreessen Horowitz 的 900 万美元种子轮融资，旨在构建严格错误检测系统，防止模型幻觉和事实错误，目标达到 99.99% 准确率。其首款产品是数据科学工具，能从复杂数据集快速生成答案，每个结果附带引用和审计追踪。工具通过确定性验证器系统（\"数据科学机甲套装\"）校验 LLM 初轮回答，仅返回与数据集匹配的结果。系统针对验证器进行了训练和优化；当前版本运行在比前沿模型弱四个等级的模型上，可在本地桌面硬件运行，大幅降低 token 成本。",
+    "source_name": "TechCrunch：AI（RSS）",
+    "origin_url": "https://techcrunch.com/2026/06/16/probably-raises-9m-to-build-a-more-reliable-kind-of-ai",
+    "discovered_at": "2026-06-17T01:46:29.096Z",
+    "rank_on_page": 238,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "merged_provider_duplicates",
+  "url_hash": "50297b143ebc343f",
+  "content_hash": "5158bf9d2c2f18a0",
+  "full_text_hash": "5158bf9d2c2f18a0",
+  "semantic_hash": "408264299646938f",
+  "duplicate_of": "merged 1 duplicate provider hit(s) before Raw selection",
+  "first_seen_at": "2026-06-16T13:15:09.000Z",
+  "last_seen_at": "2026-06-17T01:51:13.186Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "funding",
+      "text": "Probably 获得 Andreessen Horowitz 的 900 万美元种子轮融资，旨在构建严格错误检测系统，防止模型幻觉和事实错误，目标达到 99.99% 准确率。其首款产品是数据科学工具，能从复杂数据集快速生成答案，每个结果附带引用和审计追踪。工具通过确定性验证器系统（\"数据科学机甲套装\"）校验 LLM 初轮回答，仅返回与数据集匹配的结果。系统针对验证器进行了训练和优化；当前版本运行在比前沿模型弱四个等级的模型上，可在本地桌面硬件运行，大幅降低 token 成本。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "funding",
+      "text": "Image Credits: Probably AI Probably raises $9M to build a more reliable kind of AI Russell Brandom 6:15 AM PDT · June 16, 2026 As LLMs have grown more powerful, hallucinations have proven stubbornly difficult to avoid.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Errors pop up in even the smartest models, and while there are ways to catch those errors, the industry is still figuring out the best way to do it.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "funding",
+      "text": "Probably , which just raised $9 million in seed funding from Andreessen Horowitz, is trying to build a more rigorous way to catch those errors.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "As founder Peter Elias (pictured above) puts it, the company’s goal is to prevent hallucinations and simple factual errors from ever reaching the user, and achieve the kind of 99.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "99% accuracy that’s common in deterministic systems but much more difficult to reach with AI.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "TechCrunch",
+      "AI（RSS）",
+      "Anthropic",
+      "Meta",
+      "Amazon",
+      "Cursor"
+    ],
+    "products": [
+      "Cursor"
+    ],
+    "people": [],
+    "industries": [
+      "医疗"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "900 万",
+      "99.99%",
+      "$9M",
+      "6",
+      "15",
+      "16",
+      "2026",
+      "$9 million"
+    ],
+    "quotes": [
+      "数据科学机甲套装",
+      "data science mech suit.",
+      "What we learned building this was that the better your harness engineering is, the weaker the model can be,",
+      "If you can refine the context enough, the model does not have to work very hard to do the right thing. Basically, it’s an exercise in reducing ambiguity.",
+      "four classes weaker than the frontier models,"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Probably 获得 Andreessen Horowitz 的 900 万美元种子轮融资，旨在构建严格错误检测系统，防止模型幻觉和事实错误，目标达到 99.99% 准确率。其首款产品是数据科学工具，能从复杂数据集快速生成答案，每个结果附带引用和审计追踪。工具通过确定性验证器系统（\"数据科学机甲套装\"）校验 LLM 初轮回答，仅返回与数据集匹配的结果。系统针对验证器进行了训练和优化；当前版本运行在比前沿模型弱四个等级的模型上，可在本地桌面硬件运行，大幅降低 token 成本。",
+      "Image Credits: Probably AI Probably raises $9M to build a more reliable kind of AI Russell Brandom 6:15 AM PDT · June 16, 2026 As LLMs have grown more powerful, hallucinations have proven stubbornly difficult to avoid.",
+      "Errors pop up in even the smartest models, and while there are ways to catch those errors, the industry is still figuring out the best way to do it."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_funding",
+    "importance_score": 5,
+    "importance_reason": "funding or investment event; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Probably 获 900 万美元种子轮，构建更可靠的 AI 错误检测系统\n\n- raw_id: R-045\n- original_url: https://techcrunch.com/2026/06/16/probably-raises-9m-to-build-a-more-reliable-kind-of-ai\n- source_name: TechCrunch：AI（RSS）\n- collected_at: 2026-06-17T01:51:13.186Z\n\n## clean_text\n\nImage Credits: Probably\nAI\nProbably raises $9M to build a more reliable kind of AI\nRussell Brandom\n6:15 AM PDT · June 16, 2026\nAs LLMs have grown more powerful, hallucinations have proven stubbornly difficult to avoid. Errors pop up in even the smartest models, and while there are ways to catch those errors, the industry is still figuring out the best way to do it.\nProbably , which just raised $9 million in seed funding from Andreessen Horowitz, is trying to build a more rigorous way to catch those errors.\nAs founder Peter Elias (pictured above) puts it, the company’s goal is to prevent hallucinations and simple factual errors from ever reaching the user, and achieve the kind of 99.99% accuracy that’s common in deterministic systems but much more difficult to reach with AI. As it turns out, bringing LLMs to that level of accuracy requires rethinking many of the basic assumptions of AI engineering.\nProbably’s first product is a data science tool, built to produce quick answers from complex datasets. Each result comes with a citation and an audit trail for how it was developed, an increasingly common practice among AI tools.\nBut keeping errors from creeping into those summaries required an elaborate harness system that Elias describes as a “data science mech suit.” The LLM’s first-pass answers are checked against a deterministic validator system, which bounces back any results that don’t match the dataset. Crucially, the LLM has been trained against the validator, and the whole system is optimized for fast and accurate answers, the company said.\n“What we learned building this was that the better your harness engineering is, the weaker the model can be,” Elias says. “If you can refine the context enough, the model does not have to work very hard to do the right thing. Basically, it’s an exercise in reducing ambiguity.”\nThat allows Probably’s data science tool to run on significantly smaller AI models. Elias says the current version is running on a model that’s “four classes weaker than the frontier models,” which means it can be run on local hardware (that is, a desktop computer instead of a data center), which reduces a huge amount of the token costs associated with AI use.\nIt’s a welcome idea at a time when token costs are rising and many customers are reassessing their AI budgets . And, Elias’ idea doesn’t end with data science, as the same engine can be extended to cover use cases like accounting or medical services — as Elias puts it, “any precision-sensitive use case.”\n“I think it’s really interesting that the big AI labs have not even attempted to do this,” Elias says. “They’re incentivized not to, because they make money the more times you have to correct the model.”\nTopics\nAI , Andreessen Horowitz , hallucinations , Probably , Startups\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nRussell Brandom\nAI Editor\nRussell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review.\nHe can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489.\nView Bio\nJune 18\nLos Angeles\nGet an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.\nREGISTER NOW\nMost Popular\nSpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO\nSean O'Kane\nThe AI layoff wave is becoming a powder keg\nConnie Loizos\nAmazon CEO reportedly raised Anthropic model concerns before government crackdown\nAnthony Ha\nThe FBI built its own replica small town to simulate real-world cyberattacks\nZack Whittaker\nMeta’s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it\nConnie Loizos\nJeff Bezos’s Prometheus raises $12B to build an ‘artificial general engineer’ for the physical world\nMarina Temkin\nCybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable\nLorenzo Franceschi-Bicchierai\nLoading the next article\nError loading the next article\n\n## full_text\n\nImage Credits: Probably\nAI\nProbably raises $9M to build a more reliable kind of AI\nRussell Brandom\n6:15 AM PDT · June 16, 2026\nAs LLMs have grown more powerful, hallucinations have proven stubbornly difficult to avoid. Errors pop up in even the smartest models, and while there are ways to catch those errors, the industry is still figuring out the best way to do it.\nProbably , which just raised $9 million in seed funding from Andreessen Horowitz, is trying to build a more rigorous way to catch those errors.\nAs founder Peter Elias (pictured above) puts it, the company’s goal is to prevent hallucinations and simple factual errors from ever reaching the user, and achieve the kind of 99.99% accuracy that’s common in deterministic systems but much more difficult to reach with AI. As it turns out, bringing LLMs to that level of accuracy requires rethinking many of the basic assumptions of AI engineering.\nProbably’s first product is a data science tool, built to produce quick answers from complex datasets. Each result comes with a citation and an audit trail for how it was developed, an increasingly common practice among AI tools.\nBut keeping errors from creeping into those summaries required an elaborate harness system that Elias describes as a “data science mech suit.” The LLM’s first-pass answers are checked against a deterministic validator system, which bounces back any results that don’t match the dataset. Crucially, the LLM has been trained against the validator, and the whole system is optimized for fast and accurate answers, the company said.\n“What we learned building this was that the better your harness engineering is, the weaker the model can be,” Elias says. “If you can refine the context enough, the model does not have to work very hard to do the right thing. Basically, it’s an exercise in reducing ambiguity.”\nThat allows Probably’s data science tool to run on significantly smaller AI models. Elias says the current version is running on a model that’s “four classes weaker than the frontier models,” which means it can be run on local hardware (that is, a desktop computer instead of a data center), which reduces a huge amount of the token costs associated with AI use.\nIt’s a welcome idea at a time when token costs are rising and many customers are reassessing their AI budgets . And, Elias’ idea doesn’t end with data science, as the same engine can be extended to cover use cases like accounting or medical services — as Elias puts it, “any precision-sensitive use case.”\n“I think it’s really interesting that the big AI labs have not even attempted to do this,” Elias says. “They’re incentivized not to, because they make money the more times you have to correct the model.”\nTopics\nAI , Andreessen Horowitz , hallucinations , Probably , Startups\nWhen you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.\nRussell Brandom\nAI Editor\nRussell Brandom has been covering the tech industry since 2012, with a focus on platform policy and emerging technologies. He previously worked at The Verge and Rest of World, and has written for Wired, The Awl and MIT’s Technology Review.\nHe can be reached at russell.brandom@techcrunch.com or on Signal at 412-401-5489.\nView Bio\nJune 18\nLos Angeles\nGet an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.\nREGISTER NOW\nMost Popular\nSpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO\nSean O'Kane\nThe AI layoff wave is becoming a powder keg\nConnie Loizos\nAmazon CEO reportedly raised Anthropic model concerns before government crackdown\nAnthony Ha\nThe FBI built its own replica small town to simulate real-world cyberattacks\nZack Whittaker\nMeta’s months-old AI unit is a soul-crushing gulag, say the engineers stuck inside it\nConnie Loizos\nJeff Bezos’s Prometheus raises $12B to build an ‘artificial general engineer’ for the physical world\nMarina Temkin\nCybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable\nLorenzo Franceschi-Bicchierai\nLoading the next article\nError loading the next article\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n1. [funding / daily_observation, heatmap, trend / high] Probably 获得 Andreessen Horowitz 的 900 万美元种子轮融资，旨在构建严格错误检测系统，防止模型幻觉和事实错误，目标达到 99.99% 准确率。其首款产品是数据科学工具，能从复杂数据集快速生成答案，每个结果附带引用和审计追踪。工具通过确定性验证器系统（\"数据科学机甲套装\"）校验 LLM 初轮回答，仅返回与数据集匹配的结果。系统针对验证器进行了训练和优化；当前版本运行在比前沿模型弱四个等级的模型上，可在本地桌面硬件运行，大幅降低 token 成本。\n2. [funding / daily_observation, heatmap, trend / high] Image Credits: Probably AI Probably raises $9M to build a more reliable kind of AI Russell Brandom 6:15 AM PDT · June 16, 2026 As LLMs have grown more powerful, hallucinations have proven stubbornly difficult to avoid.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] Errors pop up in even the smartest models, and while there are ways to catch those errors, the industry is still figuring out the best way to do it.\n4. [funding / daily_observation, heatmap, trend / high] Probably , which just raised $9 million in seed funding from Andreessen Horowitz, is trying to build a more rigorous way to catch those errors.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] As founder Peter Elias (pictured above) puts it, the company’s goal is to prevent hallucinations and simple factual errors from ever reaching the user, and achieve the kind of 99.\n6. [number / daily_observation, heatmap, case, trend / high] 99% accuracy that’s common in deterministic systems but much more difficult to reach with AI.\n"
+}

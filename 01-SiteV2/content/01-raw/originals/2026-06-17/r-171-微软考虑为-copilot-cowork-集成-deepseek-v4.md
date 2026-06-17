@@ -1,0 +1,192 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-171
+title: "微软考虑为 Copilot Cowork 集成 DeepSeek V4"
+original_url: ""
+canonical_url: ""
+source_name: "X：Kim (@kimmonismus)"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: false
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-17T01:51:13.464Z
+language: mixed
+full_text_hash: f37bd0ae8f1522ef
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-17/r-171-微软考虑为-copilot-cowork-集成-deepseek-v4.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-17/r-171-微软考虑为-copilot-cowork-集成-deepseek-v4.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: no-url-summary-only
+extraction_quality: failed
+extraction_method: "no_url_summary_fallback"
+readability_score: 0
+extractor_diagnostics: {"method":"no_url_summary_fallback"}
+has_full_text: false
+content_length: 189
+fetch_error: ""
+raw_qc_decision: block
+raw_qc_downstream_use: not_allowed
+degradation_reasons: ["index_only_or_directory_page","missing_full_text","missing_snapshot","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f37bd0ae8f1522ef","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+source_volatility: medium
+community_name: ""
+capture_scope: summary_only
+visible_range: "采集通道提供的标题与摘要"
+evidence_level: discovery_only
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"微软考虑为 Copilot Cowork 集成 DeepSeek V4","discovery_summary":"微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。Axios 报道称微软已微调了一个可用模型，最终决定待定。","source_name":"X：Kim (@kimmonismus)","origin_url":"","discovered_at":"2026-06-17T01:46:27.802Z","rank_on_page":17,"discovery_status":"discovered"}
+source_role: discovery_source
+origin_fetch_status: "summary_only"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e3b0c44298fc1c14
+content_hash: f37bd0ae8f1522ef
+semantic_hash: 4da66ef1fe4de846
+duplicate_of: ""
+first_seen_at: "2026-06-17T01:51:13.464Z"
+last_seen_at: 2026-06-17T01:51:13.464Z
+update_detected: false
+raw_status: ignored
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "homepage_or_directory_observation"
+guanlan_scores: {"importance_type":"important_case","importance_score":4,"importance_reason":"real customer or adoption case; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":2,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["X","Kim (@kimmonismus)"],"products":["Copilot"],"people":[],"industries":[],"roles":[],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["定价 / 计费变化"],"affected_departments":["IT / 安全"],"numbers":["4"],"quotes":[]}
+evidence_seed: {"company_actions":[],"case_details":["微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。","Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。Axios 报道称微软已微调了一个可用模型，最终决定待定。","若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。"]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","疑似官网首页、产品目录或导航页，只能索引留存","没有可用全文快照"]
+key_excerpts: [{"type":"supporting_context","text":"微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。Axios 报道称微软已微调了一个可用模型，最终决定待定。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"Axios 报道称微软已微调了一个可用模型，最终决定待定。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 微软考虑为 Copilot Cowork 集成 DeepSeek V4
+
+## clean_text
+
+微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。Axios 报道称微软已微调了一个可用模型，最终决定待定。
+
+## full_text
+
+微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。Axios 报道称微软已微调了一个可用模型，最终决定待定。
+
+## extraction_diagnostics
+
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- fetch_status: no-url-summary-only
+- extraction_quality: failed
+- diagnostics: {"method":"no_url_summary_fallback"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。Axios 报道称微软已微调了一个可用模型，最终决定待定。
+
+2. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=medium
+   微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。
+
+3. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=medium
+   Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。
+
+4. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。
+
+5. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   Axios 报道称微软已微调了一个可用模型，最终决定待定。
+
+## business_elements
+
+- companies: X, Kim (@kimmonismus)
+- products: Copilot
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 定价 / 计费变化
+- affected_departments: IT / 安全
+- numbers: 4
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 暂无公开信息
+- case_details: 微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。 / Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。Axios 报道称微软已微调了一个可用模型，最终决定待定。 / 若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 4
+- importance_reason: real customer or adoption case; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 2
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 疑似官网首页、产品目录或导航页，只能索引留存
+- 没有可用全文快照
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- visible_range: 采集通道提供的标题与摘要
+- evidence_level: discovery_only
+- discovery_source: AI HOT
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- discovery_record: {"discovery_title":"微软考虑为 Copilot Cowork 集成 DeepSeek V4","discovery_summary":"微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。Axios 报道称微软已微调了一个可用模型，最终决定待定。","source_name":"X：Kim (@kimmonismus)","origin_url":"","discovered_at":"2026-06-17T01:46:27.802Z","rank_on_page":17,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。Axios 报道称微软已微调了一个可用模型，最终决定待定。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

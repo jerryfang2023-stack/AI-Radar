@@ -1,0 +1,268 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-070",
+  "title": "现在运行本地模型效果不错",
+  "original_url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now",
+  "canonical_url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "author": "",
+  "published_at": "2026-06-16T15:41:18.594Z",
+  "collected_at": "2026-06-17T01:51:13.263Z",
+  "language": "mixed",
+  "full_text": "Running local models is good now\nJun 15 2026\nI&rsquo;ve been working with local models since they came out, and finally, they&rsquo;re surprisingly good now.\nI have a 2022 M2 Mac with 64 GB RAM and 1TB storage and I&rsquo;ve used\nMistral 7B\nGemma 3\nOpenAI OSS-20B\nQwen 3 MOE , as well as a number of other Qwen variants like Qwen 2.5 Coder\nacross a lot of different system setups like\nraw llama.cpp with Open WebUI\nllama-cpp-python\nOllama\nllamafiles and\nLM Studio\nWhere are local models now?\nEarly on, models were slow, hard to use, and just not that accurate for most programming tasks. The idea that local models were severely lagging behind was largely true until, for me, the release of GPT-OSS. I have no concrete scientific evidence of this - my own personal vibe metric of &ldquo;is a model good enough&rdquo; is, &ldquo;do I have to double-check it against an API model&rdquo;, and GPT-OSS was the first one where I started doing that a lot less often.\nAs a result, I&rsquo;ve mostly been using local models as fast, personalized Google for development questions that don&rsquo;t require recency.\nBut with the most recent releases from Google in the Gemma 4 , family, I&rsquo;ve finally been able to do agentic coding locally and have loops work at about ~75% the accuracy/speed of frontier models, which is incredible.\nI&rsquo;ve so far been using gemma-4-26b-a4b LM Studio implementation as my default local model. I&rsquo;ve used the local setup so far to: Refactor a Python script that was a notebook into a repo of 5-6 modules, lint that module to use correct type hints for generics (most frontier models now do this automatically, but not always).\nI&rsquo;ve also used it to proofread some blog posts, write unit tests, and to bootstrap a repo that stands up a two-tower model for recommendations just to see what the agent would do with a blank slate. Here&rsquo;s what it generated, which was pretty basic but still beyond the scope of anything I would have thought possible last year:\nNote that the environment is restricted because I run all my agentic workflows in a Docker container with limited access to execution.\nI&rsquo;m also building an app that surfaces trending topics from Arxiv papers. Out of curiosity, I had Pi go through my past LM Studio session logs and figure out what I was using LM Studio for:\nUnsurprisingly, since I&rsquo;ve been working on Rijksearch,\nNone of these are groundbreaking tasks (again, a lot of personalized Google/docs lookups), and working on them does give my GPUs and RAM a workout and the K-V cache grows to 64 GB RAM.\nBut, the larger story for me is that these kinds of tasks, even as simple as they are, used to be impossible for local models as recently as 6 months ago.\nGemma-4-12b-qat just came out but I&rsquo;ve already also really been impressed with its performance relative to its size. The model architecture itself is really interesting and proposes a bunch of interesting questions like, &ldquo;if we are constrained by performance and price, what architectural tradeoffs do we need to make?&rdquo; a question that so far has not really been asked in the mad token gold rush.\nRunning agentic models locally today\nBut don&rsquo;t take my word for any of this, try it out for yourself! You&rsquo;ll need a local model inference engine, an agentic harness, and the local model artifact if you want to try to run local agentic flows. You&rsquo;ll need to set up the harness to point at your local inference endpoint, the downloaded model artifact served via the inference engine.\nFor my local setup, I&rsquo;m currently using Pi as the agent harness and LM Studio as the inference server, although it would likely be faster if I just used llama.cpp directly - a potential direction for a future experiment.\nThis post was very easy to follow to set up agentic coding with Pi and LM Studio, although I did make a few tweaks to the post&rsquo;s setup.\nModel: The post recommends Gemma 26B A4B , but gemma-4-12b-qat is more recent and smaller and faster, without much sacrifice in accuracy.\nSecurity: I run every Pi session in a Docker container and give it permissions only to bash so that it can&rsquo;t run Python code or do web browsing, although I do plan to allow curl in a different image for some research work I&rsquo;m doing.\nAgent Harness Config: Since I run everything in Docker, I edited Pi&rsquo;s models.json in order to get Pi to talk to the model.\n\"lmstudio\" : {\n\"baseUrl\" : \"http://host.docker.internal:1234/v1\" ,\n\"api\" : \"openai-completions\" ,\n\"apiKey\" : \"not-needed\" ,\n\"models\" : [\n\"id\" : \"google/gemma-4-12b-qat\" ,\n\"input\" : [\n\"text\" ,\n\"image\"\nHere&rsquo;s my Docker Compose config:\nservices:\npi:\nbuild:\ncontext: .\ndockerfile: Dockerfile\nimage: pi-agent:0.74.0\ninit: true\nstdin_open: true\ntty: true\nextra_hosts:\n- \"host.docker.internal:host-gateway\"\nenvironment:\nANTHROPIC_API_KEY: ${ ANTHROPIC_API_KEY :- }\nOPENAI_API_KEY: ${ OPENAI_API_KEY :- not-needed }\nGEMINI_API_KEY: ${ GEMINI_API_KEY :- }\nOPENAI_API_BASE: ${ OPENAI_API_BASE :- http://host.docker.internal:1234/v1 } # note that you'll need to specify a base if you also use OpenAI to access OpenAI's actual completions endpoint\nWHATEVER_API_KEY: ${ WHATEVER_API_KEY :- }\nvolumes:\n- ${ HOME } /.pi/agent/models.json:/config/models.json\n- ${ WORKSPACE :- . } :/workspace\n- pi-config:/config\n- pi-sessions:/sessions\nworking_dir: /workspace\nvolumes:\npi-config:\npi-sessions:\nand here&rsquo;s the bash script that runs pi .\n#!/usr/bin/env bash\n# Pi — Start the containerized Pi agent.\n# Directory containing this script and the compose files.\nSCRIPT_DIR = \" $( cd -- \" $( dirname \" ${ BASH_SOURCE[0] } \" ) \" && pwd ) \"\n# Workspace to mount into the container.\nWORKSPACE_DIR = \" ${ WORKSPACE :-$( pwd ) } \"\ncase \" $WORKSPACE_DIR \" in\n/* ) ;;\n* ) WORKSPACE_DIR = \" $( cd -- \" $WORKSPACE_DIR \" && pwd ) \" ;;\nesac\nexport WORKSPACE = \" $WORKSPACE_DIR \"\nsandbox = \" ${ PI_SANDBOX :- 0 } \"\npi_args =()\nwhile (( $# )) ; do\ncase \" $1 \" in\n--sandbox ) sandbox = 1 ;;\n--no-sandbox ) sandbox = 0 ;;\n* ) pi_args +=( \" $1 \" ) ;;\nesac\nshift\ndone\ncompose_files =( -f \" $SCRIPT_DIR /docker-compose.yml\" )\nif [[ \" $sandbox \" == \"1\" ]] ; then\n# an even more secure sandbox\ncompose_files +=( -f \" $SCRIPT_DIR /docker-compose.sandbox.yml\" )\nfi\n# Derive a container name from the workspace directory's basename.\n# Sanitize to characters Docker accepts: [a-zA-Z0-9][a-zA-Z0-9_.-]*\nrepo_slug = \" $( basename -- \" $WORKSPACE_DIR \" | tr -c 'a-zA-Z0-9_.-' '-' | sed 's/^-*//' ) \"\n[[ -z \" $repo_slug \" ]] && repo_slug = \"workspace\"\ncontainer_name = \"pi- ${ repo_slug } - $$ \"\napi_key_args =(\n-e OPENAI_API_KEY\n-e DEEPSEEK_API_KEY\n-e ANTHROPIC_API_KEY\n-e GEMINI_API_KEY\ncmd =(\ndocker compose\n--project-directory \" $SCRIPT_DIR \"\n\" ${ compose_files[@] } \"\nrun --rm\n--name \" $container_name \"\n\" ${ api_key_args[@] } \"\npi\nif (( ${# pi_args[@] } )) ; then\ncmd +=( \" ${ pi_args[@] } \" )\nfi\nexec \" ${ cmd[@] } \"\nI build the Docker container and make changes to the files in its own repo. Then, I run Pi in the repo I&rsquo;m working in, which spins up Docker so that Pi can&rsquo;t wipe files or directories by acting on my physical hard drive. This also enables Pi running in the container to see my custom model json config by shipping it into the container. All of this has been working fairly well for my experiments.\nThere are still issues with local models: inference can be slow, context windows are small and limited to your own hardware, and the ecosystem, although it&rsquo;s made a ton easier by tooling like LM Studio and HuggingFace&rsquo;s Use This Model button . Early releases suffer from prompt template mismatches . But, these are usually patched extremely quickly. Needless to say, I&rsquo;m not sure this is ready for production software development quite yet.\nThe benefits, though, are numerous and the ecosystem critical to invest in, particularly now. One of the very cool parts of local models is you can introspect almost everything, like watching the token inference process live,\nand watching tokens in/out.\nYou can do things like change the local context window and watch performance improve or degrade, and really dig into how your tokens are processed on the GPU. You can change the system prompt, the quantizations. You can pit models against each other. You can also change and introspect the harness side.\nThe possibilities are endless, and the tools only keep getting better.\n#agentic\n#llms\n#ml\n#local llms\n#open source",
+  "clean_text": "Running local models is good now\nJun 15 2026\nI&rsquo;ve been working with local models since they came out, and finally, they&rsquo;re surprisingly good now.\nI have a 2022 M2 Mac with 64 GB RAM and 1TB storage and I&rsquo;ve used\nMistral 7B\nGemma 3\nOpenAI OSS-20B\nQwen 3 MOE , as well as a number of other Qwen variants like Qwen 2.5 Coder\nacross a lot of different system setups like\nraw llama.cpp with Open WebUI\nllama-cpp-python\nOllama\nllamafiles and\nLM Studio\nWhere are local models now?\nEarly on, models were slow, hard to use, and just not that accurate for most programming tasks. The idea that local models were severely lagging behind was largely true until, for me, the release of GPT-OSS. I have no concrete scientific evidence of this - my own personal vibe metric of &ldquo;is a model good enough&rdquo; is, &ldquo;do I have to double-check it against an API model&rdquo;, and GPT-OSS was the first one where I started doing that a lot less often.\nAs a result, I&rsquo;ve mostly been using local models as fast, personalized Google for development questions that don&rsquo;t require recency.\nBut with the most recent releases from Google in the Gemma 4 , family, I&rsquo;ve finally been able to do agentic coding locally and have loops work at about ~75% the accuracy/speed of frontier models, which is incredible.\nI&rsquo;ve so far been using gemma-4-26b-a4b LM Studio implementation as my default local model. I&rsquo;ve used the local setup so far to: Refactor a Python script that was a notebook into a repo of 5-6 modules, lint that module to use correct type hints for generics (most frontier models now do this automatically, but not always).\nI&rsquo;ve also used it to proofread some blog posts, write unit tests, and to bootstrap a repo that stands up a two-tower model for recommendations just to see what the agent would do with a blank slate. Here&rsquo;s what it generated, which was pretty basic but still beyond the scope of anything I would have thought possible last year:\nNote that the environment is restricted because I run all my agentic workflows in a Docker container with limited access to execution.\nI&rsquo;m also building an app that surfaces trending topics from Arxiv papers. Out of curiosity, I had Pi go through my past LM Studio session logs and figure out what I was using LM Studio for:\nUnsurprisingly, since I&rsquo;ve been working on Rijksearch,\nNone of these are groundbreaking tasks (again, a lot of personalized Google/docs lookups), and working on them does give my GPUs and RAM a workout and the K-V cache grows to 64 GB RAM.\nBut, the larger story for me is that these kinds of tasks, even as simple as they are, used to be impossible for local models as recently as 6 months ago.\nGemma-4-12b-qat just came out but I&rsquo;ve already also really been impressed with its performance relative to its size. The model architecture itself is really interesting and proposes a bunch of interesting questions like, &ldquo;if we are constrained by performance and price, what architectural tradeoffs do we need to make?&rdquo; a question that so far has not really been asked in the mad token gold rush.\nRunning agentic models locally today\nBut don&rsquo;t take my word for any of this, try it out for yourself! You&rsquo;ll need a local model inference engine, an agentic harness, and the local model artifact if you want to try to run local agentic flows. You&rsquo;ll need to set up the harness to point at your local inference endpoint, the downloaded model artifact served via the inference engine.\nFor my local setup, I&rsquo;m currently using Pi as the agent harness and LM Studio as the inference server, although it would likely be faster if I just used llama.cpp directly - a potential direction for a future experiment.\nThis post was very easy to follow to set up agentic coding with Pi and LM Studio, although I did make a few tweaks to the post&rsquo;s setup.\nModel: The post recommends Gemma 26B A4B , but gemma-4-12b-qat is more recent and smaller and faster, without much sacrifice in accuracy.\nSecurity: I run every Pi session in a Docker container and give it permissions only to bash so that it can&rsquo;t run Python code or do web browsing, although I do plan to allow curl in a different image for some research work I&rsquo;m doing.\nAgent Harness Config: Since I run everything in Docker, I edited Pi&rsquo;s models.json in order to get Pi to talk to the model.\n\"lmstudio\" : {\n\"baseUrl\" : \"http://host.docker.internal:1234/v1\" ,\n\"api\" : \"openai-completions\" ,\n\"apiKey\" : \"not-needed\" ,\n\"models\" : [\n\"id\" : \"google/gemma-4-12b-qat\" ,\n\"input\" : [\n\"text\" ,\n\"image\"\nHere&rsquo;s my Docker Compose config:\nservices:\npi:\nbuild:\ncontext: .\ndockerfile: Dockerfile\nimage: pi-agent:0.74.0\ninit: true\nstdin_open: true\ntty: true\nextra_hosts:\n- \"host.docker.internal:host-gateway\"\nenvironment:\nANTHROPIC_API_KEY: ${ ANTHROPIC_API_KEY :- }\nOPENAI_API_KEY: ${ OPENAI_API_KEY :- not-needed }\nGEMINI_API_KEY: ${ GEMINI_API_KEY :- }\nOPENAI_API_BASE: ${ OPENAI_API_BASE :- http://host.docker.internal:1234/v1 } # note that you'll need to specify a base if you also use OpenAI to access OpenAI's actual completions endpoint\nWHATEVER_API_KEY: ${ WHATEVER_API_KEY :- }\nvolumes:\n- ${ HOME } /.pi/agent/models.json:/config/models.json\n- ${ WORKSPACE :- . } :/workspace\n- pi-config:/config\n- pi-sessions:/sessions\nworking_dir: /workspace\nvolumes:\npi-config:\npi-sessions:\nand here&rsquo;s the bash script that runs pi .\n#!/usr/bin/env bash\n# Pi — Start the containerized Pi agent.\n# Directory containing this script and the compose files.\nSCRIPT_DIR = \" $( cd -- \" $( dirname \" ${ BASH_SOURCE[0] } \" ) \" && pwd ) \"\n# Workspace to mount into the container.\nWORKSPACE_DIR = \" ${ WORKSPACE :-$( pwd ) } \"\ncase \" $WORKSPACE_DIR \" in\n/* ) ;;\n* ) WORKSPACE_DIR = \" $( cd -- \" $WORKSPACE_DIR \" && pwd ) \" ;;\nesac\nexport WORKSPACE = \" $WORKSPACE_DIR \"\nsandbox = \" ${ PI_SANDBOX :- 0 } \"\npi_args =()\nwhile (( $# )) ; do\ncase \" $1 \" in\n--sandbox ) sandbox = 1 ;;\n--no-sandbox ) sandbox = 0 ;;\n* ) pi_args +=( \" $1 \" ) ;;\nesac\nshift\ndone\ncompose_files =( -f \" $SCRIPT_DIR /docker-compose.yml\" )\nif [[ \" $sandbox \" == \"1\" ]] ; then\n# an even more secure sandbox\ncompose_files +=( -f \" $SCRIPT_DIR /docker-compose.sandbox.yml\" )\nfi\n# Derive a container name from the workspace directory's basename.\n# Sanitize to characters Docker accepts: [a-zA-Z0-9][a-zA-Z0-9_.-]*\nrepo_slug = \" $( basename -- \" $WORKSPACE_DIR \" | tr -c 'a-zA-Z0-9_.-' '-' | sed 's/^-*//' ) \"\n[[ -z \" $repo_slug \" ]] && repo_slug = \"workspace\"\ncontainer_name = \"pi- ${ repo_slug } - $$ \"\napi_key_args =(\n-e OPENAI_API_KEY\n-e DEEPSEEK_API_KEY\n-e ANTHROPIC_API_KEY\n-e GEMINI_API_KEY\ncmd =(\ndocker compose\n--project-directory \" $SCRIPT_DIR \"\n\" ${ compose_files[@] } \"\nrun --rm\n--name \" $container_name \"\n\" ${ api_key_args[@] } \"\npi\nif (( ${# pi_args[@] } )) ; then\ncmd +=( \" ${ pi_args[@] } \" )\nfi\nexec \" ${ cmd[@] } \"\nI build the Docker container and make changes to the files in its own repo. Then, I run Pi in the repo I&rsquo;m working in, which spins up Docker so that Pi can&rsquo;t wipe files or directories by acting on my physical hard drive. This also enables Pi running in the container to see my custom model json config by shipping it into the container. All of this has been working fairly well for my experiments.\nThere are still issues with local models: inference can be slow, context windows are small and limited to your own hardware, and the ecosystem, although it&rsquo;s made a ton easier by tooling like LM Studio and HuggingFace&rsquo;s Use This Model button . Early releases suffer from prompt template mismatches . But, these are usually patched extremely quickly. Needless to say, I&rsquo;m not sure this is ready for production software development quite yet.\nThe benefits, though, are numerous and the ecosystem critical to invest in, particularly now. One of the very cool parts of local models is you can introspect almost everything, like watching the token inference process live,\nand watching tokens in/out.\nYou can do things like change the local context window and watch performance improve or degrade, and really dig into how your tokens are processed on the GPU. You can change the system prompt, the quantizations. You can pit models against each other. You can also change and introspect the harness side.\nThe possibilities are endless, and the tools only keep getting better.\n#agentic\n#llms\n#ml\n#local llms\n#open source",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-17/r-070-现在运行本地模型效果不错.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-17/r-070-现在运行本地模型效果不错.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 8456,
+    "paragraph_count": 78,
+    "sentence_count": 46,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0169,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 8456,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "d3608667ee55769f",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "现在运行本地模型效果不错",
+    "discovery_summary": "2026年6月16日，vickiboykis.com 上发布了一篇题为\"Running local models is good now\"的文章，作者认为当前阶段在本地硬件上运行大语言模型已经能够取得不错的效果。该文章在 Hacker News 社区引发讨论，相关帖子获得 114 点热度，表明本地模型运行体验得到了社区的认可。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://vickiboykis.com/2026/06/15/running-local-models-is-good-now",
+    "discovered_at": "2026-06-17T01:46:29.086Z",
+    "rank_on_page": 182,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "09e303f2a2cdfff7",
+  "content_hash": "d3608667ee55769f",
+  "full_text_hash": "d3608667ee55769f",
+  "semantic_hash": "44d6aaef53ac7fdd",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-16T15:41:18.594Z",
+  "last_seen_at": "2026-06-17T01:51:13.263Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "2026年6月16日，vickiboykis.com 上发布了一篇题为\"Running local models is good now\"的文章，作者认为当前阶段在本地硬件上运行大语言模型已经能够取得不错的效果。该文章在 Hacker News 社区引发讨论，相关帖子获得 114 点热度，表明本地模型运行体验得到了社区的认可。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Running local models is good now Jun 15 2026 I&rsquo;ve been working with local models since they came out, and finally, they&rsquo;re surprisingly good now.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "I have a 2022 M2 Mac with 64 GB RAM and 1TB storage and I&rsquo;ve used Mistral 7B Gemma 3 OpenAI OSS-20B Qwen 3 MOE , as well as a number of other Qwen variants like Qwen 2.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5 Coder across a lot of different system setups like raw llama.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "cpp with Open WebUI llama-cpp-python Ollama llamafiles and LM Studio Where are local models now?",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Early on, models were slow, hard to use, and just not that accurate for most programming tasks.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "OpenAI",
+      "Google",
+      "Mistral"
+    ],
+    "products": [
+      "agent",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人"
+    ],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2026",
+      "6",
+      "16",
+      "114",
+      "15",
+      "2022 M",
+      "2 M",
+      "64"
+    ],
+    "quotes": [
+      "Running local models is good now",
+      "lmstudio",
+      "http://host.docker.internal:1234/v1",
+      "openai-completions",
+      "not-needed"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Running local models is good now Jun 15 2026 I&rsquo;ve been working with local models since they came out, and finally, they&rsquo;re surprisingly good now.",
+      "I have a 2022 M2 Mac with 64 GB RAM and 1TB storage and I&rsquo;ve used Mistral 7B Gemma 3 OpenAI OSS-20B Qwen 3 MOE , as well as a number of other Qwen variants like Qwen 2.",
+      "5 Coder across a lot of different system setups like raw llama."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "user_feedback_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 现在运行本地模型效果不错\n\n- raw_id: R-070\n- original_url: https://vickiboykis.com/2026/06/15/running-local-models-is-good-now\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-06-17T01:51:13.263Z\n\n## clean_text\n\nRunning local models is good now\nJun 15 2026\nI&rsquo;ve been working with local models since they came out, and finally, they&rsquo;re surprisingly good now.\nI have a 2022 M2 Mac with 64 GB RAM and 1TB storage and I&rsquo;ve used\nMistral 7B\nGemma 3\nOpenAI OSS-20B\nQwen 3 MOE , as well as a number of other Qwen variants like Qwen 2.5 Coder\nacross a lot of different system setups like\nraw llama.cpp with Open WebUI\nllama-cpp-python\nOllama\nllamafiles and\nLM Studio\nWhere are local models now?\nEarly on, models were slow, hard to use, and just not that accurate for most programming tasks. The idea that local models were severely lagging behind was largely true until, for me, the release of GPT-OSS. I have no concrete scientific evidence of this - my own personal vibe metric of &ldquo;is a model good enough&rdquo; is, &ldquo;do I have to double-check it against an API model&rdquo;, and GPT-OSS was the first one where I started doing that a lot less often.\nAs a result, I&rsquo;ve mostly been using local models as fast, personalized Google for development questions that don&rsquo;t require recency.\nBut with the most recent releases from Google in the Gemma 4 , family, I&rsquo;ve finally been able to do agentic coding locally and have loops work at about ~75% the accuracy/speed of frontier models, which is incredible.\nI&rsquo;ve so far been using gemma-4-26b-a4b LM Studio implementation as my default local model. I&rsquo;ve used the local setup so far to: Refactor a Python script that was a notebook into a repo of 5-6 modules, lint that module to use correct type hints for generics (most frontier models now do this automatically, but not always).\nI&rsquo;ve also used it to proofread some blog posts, write unit tests, and to bootstrap a repo that stands up a two-tower model for recommendations just to see what the agent would do with a blank slate. Here&rsquo;s what it generated, which was pretty basic but still beyond the scope of anything I would have thought possible last year:\nNote that the environment is restricted because I run all my agentic workflows in a Docker container with limited access to execution.\nI&rsquo;m also building an app that surfaces trending topics from Arxiv papers. Out of curiosity, I had Pi go through my past LM Studio session logs and figure out what I was using LM Studio for:\nUnsurprisingly, since I&rsquo;ve been working on Rijksearch,\nNone of these are groundbreaking tasks (again, a lot of personalized Google/docs lookups), and working on them does give my GPUs and RAM a workout and the K-V cache grows to 64 GB RAM.\nBut, the larger story for me is that these kinds of tasks, even as simple as they are, used to be impossible for local models as recently as 6 months ago.\nGemma-4-12b-qat just came out but I&rsquo;ve already also really been impressed with its performance relative to its size. The model architecture itself is really interesting and proposes a bunch of interesting questions like, &ldquo;if we are constrained by performance and price, what architectural tradeoffs do we need to make?&rdquo; a question that so far has not really been asked in the mad token gold rush.\nRunning agentic models locally today\nBut don&rsquo;t take my word for any of this, try it out for yourself! You&rsquo;ll need a local model inference engine, an agentic harness, and the local model artifact if you want to try to run local agentic flows. You&rsquo;ll need to set up the harness to point at your local inference endpoint, the downloaded model artifact served via the inference engine.\nFor my local setup, I&rsquo;m currently using Pi as the agent harness and LM Studio as the inference server, although it would likely be faster if I just used llama.cpp directly - a potential direction for a future experiment.\nThis post was very easy to follow to set up agentic coding with Pi and LM Studio, although I did make a few tweaks to the post&rsquo;s setup.\nModel: The post recommends Gemma 26B A4B , but gemma-4-12b-qat is more recent and smaller and faster, without much sacrifice in accuracy.\nSecurity: I run every Pi session in a Docker container and give it permissions only to bash so that it can&rsquo;t run Python code or do web browsing, although I do plan to allow curl in a different image for some research work I&rsquo;m doing.\nAgent Harness Config: Since I run everything in Docker, I edited Pi&rsquo;s models.json in order to get Pi to talk to the model.\n\"lmstudio\" : {\n\"baseUrl\" : \"http://host.docker.internal:1234/v1\" ,\n\"api\" : \"openai-completions\" ,\n\"apiKey\" : \"not-needed\" ,\n\"models\" : [\n\"id\" : \"google/gemma-4-12b-qat\" ,\n\"input\" : [\n\"text\" ,\n\"image\"\nHere&rsquo;s my Docker Compose config:\nservices:\npi:\nbuild:\ncontext: .\ndockerfile: Dockerfile\nimage: pi-agent:0.74.0\ninit: true\nstdin_open: true\ntty: true\nextra_hosts:\n- \"host.docker.internal:host-gateway\"\nenvironment:\nANTHROPIC_API_KEY: ${ ANTHROPIC_API_KEY :- }\nOPENAI_API_KEY: ${ OPENAI_API_KEY :- not-needed }\nGEMINI_API_KEY: ${ GEMINI_API_KEY :- }\nOPENAI_API_BASE: ${ OPENAI_API_BASE :- http://host.docker.internal:1234/v1 } # note that you'll need to specify a base if you also use OpenAI to access OpenAI's actual completions endpoint\nWHATEVER_API_KEY: ${ WHATEVER_API_KEY :- }\nvolumes:\n- ${ HOME } /.pi/agent/models.json:/config/models.json\n- ${ WORKSPACE :- . } :/workspace\n- pi-config:/config\n- pi-sessions:/sessions\nworking_dir: /workspace\nvolumes:\npi-config:\npi-sessions:\nand here&rsquo;s the bash script that runs pi .\n#!/usr/bin/env bash\n# Pi — Start the containerized Pi agent.\n# Directory containing this script and the compose files.\nSCRIPT_DIR = \" $( cd -- \" $( dirname \" ${ BASH_SOURCE[0] } \" ) \" && pwd ) \"\n# Workspace to mount into the container.\nWORKSPACE_DIR = \" ${ WORKSPACE :-$( pwd ) } \"\ncase \" $WORKSPACE_DIR \" in\n/* ) ;;\n* ) WORKSPACE_DIR = \" $( cd -- \" $WORKSPACE_DIR \" && pwd ) \" ;;\nesac\nexport WORKSPACE = \" $WORKSPACE_DIR \"\nsandbox = \" ${ PI_SANDBOX :- 0 } \"\npi_args =()\nwhile (( $# )) ; do\ncase \" $1 \" in\n--sandbox ) sandbox = 1 ;;\n--no-sandbox ) sandbox = 0 ;;\n* ) pi_args +=( \" $1 \" ) ;;\nesac\nshift\ndone\ncompose_files =( -f \" $SCRIPT_DIR /docker-compose.yml\" )\nif [[ \" $sandbox \" == \"1\" ]] ; then\n# an even more secure sandbox\ncompose_files +=( -f \" $SCRIPT_DIR /docker-compose.sandbox.yml\" )\nfi\n# Derive a container name from the workspace directory's basename.\n# Sanitize to characters Docker accepts: [a-zA-Z0-9][a-zA-Z0-9_.-]*\nrepo_slug = \" $( basename -- \" $WORKSPACE_DIR \" | tr -c 'a-zA-Z0-9_.-' '-' | sed 's/^-*//' ) \"\n[[ -z \" $repo_slug \" ]] && repo_slug = \"workspace\"\ncontainer_name = \"pi- ${ repo_slug } - $$ \"\napi_key_args =(\n-e OPENAI_API_KEY\n-e DEEPSEEK_API_KEY\n-e ANTHROPIC_API_KEY\n-e GEMINI_API_KEY\ncmd =(\ndocker compose\n--project-directory \" $SCRIPT_DIR \"\n\" ${ compose_files[@] } \"\nrun --rm\n--name \" $container_name \"\n\" ${ api_key_args[@] } \"\npi\nif (( ${# pi_args[@] } )) ; then\ncmd +=( \" ${ pi_args[@] } \" )\nfi\nexec \" ${ cmd[@] } \"\nI build the Docker container and make changes to the files in its own repo. Then, I run Pi in the repo I&rsquo;m working in, which spins up Docker so that Pi can&rsquo;t wipe files or directories by acting on my physical hard drive. This also enables Pi running in the container to see my custom model json config by shipping it into the container. All of this has been working fairly well for my experiments.\nThere are still issues with local models: inference can be slow, context windows are small and limited to your own hardware, and the ecosystem, although it&rsquo;s made a ton easier by tooling like LM Studio and HuggingFace&rsquo;s Use This Model button . Early releases suffer from prompt template mismatches . But, these are usually patched extremely quickly. Needless to say, I&rsquo;m not sure this is ready for production software development quite yet.\nThe benefits, though, are numerous and the ecosystem critical to invest in, particularly now. One of the very cool parts of local models is you can introspect almost everything, like watching the token inference process live,\nand watching tokens in/out.\nYou can do things like change the local context window and watch performance improve or degrade, and really dig into how your tokens are processed on the GPU. You can change the system prompt, the quantizations. You can pit models against each other. You can also change and introspect the harness side.\nThe possibilities are endless, and the tools only keep getting better.\n#agentic\n#llms\n#ml\n#local llms\n#open source\n\n## full_text\n\nRunning local models is good now\nJun 15 2026\nI&rsquo;ve been working with local models since they came out, and finally, they&rsquo;re surprisingly good now.\nI have a 2022 M2 Mac with 64 GB RAM and 1TB storage and I&rsquo;ve used\nMistral 7B\nGemma 3\nOpenAI OSS-20B\nQwen 3 MOE , as well as a number of other Qwen variants like Qwen 2.5 Coder\nacross a lot of different system setups like\nraw llama.cpp with Open WebUI\nllama-cpp-python\nOllama\nllamafiles and\nLM Studio\nWhere are local models now?\nEarly on, models were slow, hard to use, and just not that accurate for most programming tasks. The idea that local models were severely lagging behind was largely true until, for me, the release of GPT-OSS. I have no concrete scientific evidence of this - my own personal vibe metric of &ldquo;is a model good enough&rdquo; is, &ldquo;do I have to double-check it against an API model&rdquo;, and GPT-OSS was the first one where I started doing that a lot less often.\nAs a result, I&rsquo;ve mostly been using local models as fast, personalized Google for development questions that don&rsquo;t require recency.\nBut with the most recent releases from Google in the Gemma 4 , family, I&rsquo;ve finally been able to do agentic coding locally and have loops work at about ~75% the accuracy/speed of frontier models, which is incredible.\nI&rsquo;ve so far been using gemma-4-26b-a4b LM Studio implementation as my default local model. I&rsquo;ve used the local setup so far to: Refactor a Python script that was a notebook into a repo of 5-6 modules, lint that module to use correct type hints for generics (most frontier models now do this automatically, but not always).\nI&rsquo;ve also used it to proofread some blog posts, write unit tests, and to bootstrap a repo that stands up a two-tower model for recommendations just to see what the agent would do with a blank slate. Here&rsquo;s what it generated, which was pretty basic but still beyond the scope of anything I would have thought possible last year:\nNote that the environment is restricted because I run all my agentic workflows in a Docker container with limited access to execution.\nI&rsquo;m also building an app that surfaces trending topics from Arxiv papers. Out of curiosity, I had Pi go through my past LM Studio session logs and figure out what I was using LM Studio for:\nUnsurprisingly, since I&rsquo;ve been working on Rijksearch,\nNone of these are groundbreaking tasks (again, a lot of personalized Google/docs lookups), and working on them does give my GPUs and RAM a workout and the K-V cache grows to 64 GB RAM.\nBut, the larger story for me is that these kinds of tasks, even as simple as they are, used to be impossible for local models as recently as 6 months ago.\nGemma-4-12b-qat just came out but I&rsquo;ve already also really been impressed with its performance relative to its size. The model architecture itself is really interesting and proposes a bunch of interesting questions like, &ldquo;if we are constrained by performance and price, what architectural tradeoffs do we need to make?&rdquo; a question that so far has not really been asked in the mad token gold rush.\nRunning agentic models locally today\nBut don&rsquo;t take my word for any of this, try it out for yourself! You&rsquo;ll need a local model inference engine, an agentic harness, and the local model artifact if you want to try to run local agentic flows. You&rsquo;ll need to set up the harness to point at your local inference endpoint, the downloaded model artifact served via the inference engine.\nFor my local setup, I&rsquo;m currently using Pi as the agent harness and LM Studio as the inference server, although it would likely be faster if I just used llama.cpp directly - a potential direction for a future experiment.\nThis post was very easy to follow to set up agentic coding with Pi and LM Studio, although I did make a few tweaks to the post&rsquo;s setup.\nModel: The post recommends Gemma 26B A4B , but gemma-4-12b-qat is more recent and smaller and faster, without much sacrifice in accuracy.\nSecurity: I run every Pi session in a Docker container and give it permissions only to bash so that it can&rsquo;t run Python code or do web browsing, although I do plan to allow curl in a different image for some research work I&rsquo;m doing.\nAgent Harness Config: Since I run everything in Docker, I edited Pi&rsquo;s models.json in order to get Pi to talk to the model.\n\"lmstudio\" : {\n\"baseUrl\" : \"http://host.docker.internal:1234/v1\" ,\n\"api\" : \"openai-completions\" ,\n\"apiKey\" : \"not-needed\" ,\n\"models\" : [\n\"id\" : \"google/gemma-4-12b-qat\" ,\n\"input\" : [\n\"text\" ,\n\"image\"\nHere&rsquo;s my Docker Compose config:\nservices:\npi:\nbuild:\ncontext: .\ndockerfile: Dockerfile\nimage: pi-agent:0.74.0\ninit: true\nstdin_open: true\ntty: true\nextra_hosts:\n- \"host.docker.internal:host-gateway\"\nenvironment:\nANTHROPIC_API_KEY: ${ ANTHROPIC_API_KEY :- }\nOPENAI_API_KEY: ${ OPENAI_API_KEY :- not-needed }\nGEMINI_API_KEY: ${ GEMINI_API_KEY :- }\nOPENAI_API_BASE: ${ OPENAI_API_BASE :- http://host.docker.internal:1234/v1 } # note that you'll need to specify a base if you also use OpenAI to access OpenAI's actual completions endpoint\nWHATEVER_API_KEY: ${ WHATEVER_API_KEY :- }\nvolumes:\n- ${ HOME } /.pi/agent/models.json:/config/models.json\n- ${ WORKSPACE :- . } :/workspace\n- pi-config:/config\n- pi-sessions:/sessions\nworking_dir: /workspace\nvolumes:\npi-config:\npi-sessions:\nand here&rsquo;s the bash script that runs pi .\n#!/usr/bin/env bash\n# Pi — Start the containerized Pi agent.\n# Directory containing this script and the compose files.\nSCRIPT_DIR = \" $( cd -- \" $( dirname \" ${ BASH_SOURCE[0] } \" ) \" && pwd ) \"\n# Workspace to mount into the container.\nWORKSPACE_DIR = \" ${ WORKSPACE :-$( pwd ) } \"\ncase \" $WORKSPACE_DIR \" in\n/* ) ;;\n* ) WORKSPACE_DIR = \" $( cd -- \" $WORKSPACE_DIR \" && pwd ) \" ;;\nesac\nexport WORKSPACE = \" $WORKSPACE_DIR \"\nsandbox = \" ${ PI_SANDBOX :- 0 } \"\npi_args =()\nwhile (( $# )) ; do\ncase \" $1 \" in\n--sandbox ) sandbox = 1 ;;\n--no-sandbox ) sandbox = 0 ;;\n* ) pi_args +=( \" $1 \" ) ;;\nesac\nshift\ndone\ncompose_files =( -f \" $SCRIPT_DIR /docker-compose.yml\" )\nif [[ \" $sandbox \" == \"1\" ]] ; then\n# an even more secure sandbox\ncompose_files +=( -f \" $SCRIPT_DIR /docker-compose.sandbox.yml\" )\nfi\n# Derive a container name from the workspace directory's basename.\n# Sanitize to characters Docker accepts: [a-zA-Z0-9][a-zA-Z0-9_.-]*\nrepo_slug = \" $( basename -- \" $WORKSPACE_DIR \" | tr -c 'a-zA-Z0-9_.-' '-' | sed 's/^-*//' ) \"\n[[ -z \" $repo_slug \" ]] && repo_slug = \"workspace\"\ncontainer_name = \"pi- ${ repo_slug } - $$ \"\napi_key_args =(\n-e OPENAI_API_KEY\n-e DEEPSEEK_API_KEY\n-e ANTHROPIC_API_KEY\n-e GEMINI_API_KEY\ncmd =(\ndocker compose\n--project-directory \" $SCRIPT_DIR \"\n\" ${ compose_files[@] } \"\nrun --rm\n--name \" $container_name \"\n\" ${ api_key_args[@] } \"\npi\nif (( ${# pi_args[@] } )) ; then\ncmd +=( \" ${ pi_args[@] } \" )\nfi\nexec \" ${ cmd[@] } \"\nI build the Docker container and make changes to the files in its own repo. Then, I run Pi in the repo I&rsquo;m working in, which spins up Docker so that Pi can&rsquo;t wipe files or directories by acting on my physical hard drive. This also enables Pi running in the container to see my custom model json config by shipping it into the container. All of this has been working fairly well for my experiments.\nThere are still issues with local models: inference can be slow, context windows are small and limited to your own hardware, and the ecosystem, although it&rsquo;s made a ton easier by tooling like LM Studio and HuggingFace&rsquo;s Use This Model button . Early releases suffer from prompt template mismatches . But, these are usually patched extremely quickly. Needless to say, I&rsquo;m not sure this is ready for production software development quite yet.\nThe benefits, though, are numerous and the ecosystem critical to invest in, particularly now. One of the very cool parts of local models is you can introspect almost everything, like watching the token inference process live,\nand watching tokens in/out.\nYou can do things like change the local context window and watch performance improve or degrade, and really dig into how your tokens are processed on the GPU. You can change the system prompt, the quantizations. You can pit models against each other. You can also change and introspect the harness side.\nThe possibilities are endless, and the tools only keep getting better.\n#agentic\n#llms\n#ml\n#local llms\n#open source\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [quote / daily_observation, heatmap, viewpoint / high] 2026年6月16日，vickiboykis.com 上发布了一篇题为\"Running local models is good now\"的文章，作者认为当前阶段在本地硬件上运行大语言模型已经能够取得不错的效果。该文章在 Hacker News 社区引发讨论，相关帖子获得 114 点热度，表明本地模型运行体验得到了社区的认可。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Running local models is good now Jun 15 2026 I&rsquo;ve been working with local models since they came out, and finally, they&rsquo;re surprisingly good now.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] I have a 2022 M2 Mac with 64 GB RAM and 1TB storage and I&rsquo;ve used Mistral 7B Gemma 3 OpenAI OSS-20B Qwen 3 MOE , as well as a number of other Qwen variants like Qwen 2.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] 5 Coder across a lot of different system setups like raw llama.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] cpp with Open WebUI llama-cpp-python Ollama llamafiles and LM Studio Where are local models now?\n6. [company_action / daily_observation, heatmap, change, case, trend / high] Early on, models were slow, hard to use, and just not that accurate for most programming tasks.\n"
+}
