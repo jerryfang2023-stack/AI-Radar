@@ -90,6 +90,10 @@ Monitoring must cover:
 - financing events, especially emerging-company financing;
 - cases, customer deployments, vertical-industry examples.
 
+Enterprise AI transformation / 企业AI化 is an added monitoring lens for FDE-style implementation signals. It should capture evidence around discovery, technical scoping, system design, build, governance, procurement, pilots, production rollout, demonstrated value, and customer engineering capacity.
+
+This lens does not create a fourth Signal Card type. FDE / Applied AI / Technical Deployment role pages may indicate organization capability or delivery model, but they cannot become formal business-signal facts unless separately supported by source-backed product / service, funding, customer deployment, procurement, or production rollout evidence.
+
 Large-company items are allowed, but they cannot dominate the day.
 
 Current quantity gates:

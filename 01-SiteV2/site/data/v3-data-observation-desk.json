@@ -1,7 +1,10 @@
 {
   "meta": {
     "version": "V3.3.6.3-business-source-artifact-aggregation",
-    "generatedAt": "2026-06-17T01:51:17.273Z",
+    "siteVersion": "SITE-V3.3.8-enterprise-ai-transformation",
+    "businessSignalsColumnVersion": "BSIG-V1.1.0-enterprise-ai-transformation",
+    "enterpriseAiLensVersion": "EAI-V1.0.0-enterprise-ai-transformation",
+    "generatedAt": "2026-06-17T08:03:44.600Z",
     "activeDate": "2026-06-17",
     "top10Count": 10,
     "source": "Signal Cards",
@@ -61039,12 +61042,10 @@
       "status": "pooled",
       "assetLevel": "core_pool",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "融资信息不是单一公司轮次事件",
-      "notPromotedIssues": [
-        "融资信息不是单一公司轮次事件"
-      ],
-      "repairSuggestion": "补齐单一公司的融资金额、轮次、投资方和日期。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "evidenceGate": "core_evidence_candidate",
       "stage": "",
       "evidence": "",
@@ -61104,12 +61105,10 @@
       "status": "pooled",
       "assetLevel": "core_pool",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "页面类型不适合直接成卡，需要回到具体事件页",
-      "notPromotedIssues": [
-        "页面类型不适合直接成卡，需要回到具体事件页"
-      ],
-      "repairSuggestion": "回到有日期、主体、动作的单一公司事件页后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "evidenceGate": "core_evidence_candidate",
       "stage": "",
       "evidence": "",
@@ -63181,6 +63180,88 @@
       "frontstageSelectionTier": "core-pool"
     }
   ],
+  "enterpriseAiTransformation": [
+    {
+      "id": "enterprise-ai:SIG-20260617-A04",
+      "cardId": "SIG-20260617-A04",
+      "date": "2026-06-17",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "AI赋能CMS平台如何变革企业内容运营",
+      "subject": "Artificial Intelligence News",
+      "sourceName": "Artificial Intelligence News（RSS）",
+      "sourceUrl": "https://www.artificialintelligence-news.com/news/how-ai-powered-cms-platforms-are-transforming-enterprise-content-operations",
+      "stage": "governance",
+      "stageLabel": "治理边界",
+      "scenario": "内容运营",
+      "workflow": "内容生产、发布与治理流程",
+      "evidenceBoundary": "已确认：传统企业内容管理系统依赖人工流程与孤立系统，效率低下。AI赋能的CMS将被动存储转变为主动编排，可在单一受管工作流中自动推荐资产、优化文案、标记本地化不一致、预测内容表现并路由审批。工作流自动化提升一致性，实时分析集成至发布层。德勤2025年对1800多名高管的调查显示，近半组织已利用AI简化工作流程，关键在于将AI嵌入内容创建、治理与发布系统，而非作为孤...；未确..."
+    },
+    {
+      "id": "enterprise-ai:SIG-20260617-A05",
+      "cardId": "SIG-20260617-A05",
+      "date": "2026-06-17",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "马来西亚AI智能体消息应用Respond.io获6250万美元融资，瞄准收购",
+      "subject": "AI business signal",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceUrl": "https://techcrunch.com/2026/06/15/malaysias-respond-io-raises-62-5m-eyes-acquisitions-in-north-america-and-europe",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "客户服务与销售",
+      "workflow": "客服响应、线索跟进与知识检索",
+      "evidenceBoundary": "已确认：总部位于吉隆坡的客户对话管理平台Respond.io完成6250万美元B轮融资，Camber Partners领投，Endeavor Catalyst及现有投资者跟投。公司年经常性收入达3500万美元，同比增长169%，利润率为30%。平台通过AI智能体自动处理客户咨询、筛选线索并完成销售，每季度处理20亿条消息，按对话量而非座位收费。主要服务医疗、汽车、...；未确..."
+    },
+    {
+      "id": "enterprise-ai:SIG-20260617-A07",
+      "cardId": "SIG-20260617-A07",
+      "date": "2026-06-17",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元",
+      "subject": "Plaud",
+      "sourceName": "TechCrunch：AI（RSS）",
+      "sourceUrl": "https://techcrunch.com/2026/06/16/plaud-says-its-software-business-topped-100m-in-arr-after-shipping-over-2m-ai-notetakers",
+      "stage": "production_rollout",
+      "stageLabel": "生产上线",
+      "scenario": "知识工作与协作",
+      "workflow": "会议记录、知识沉淀与团队协作",
+      "evidenceBoundary": "已确认：AI记事本公司Plaud宣布售出超200万台设备，订阅业务年化经常性收入（ARR）突破1亿美元。去年推出179美元的Plaud Pro，今年新增类似定价的Plaud Pin S。软件方面，年初上线桌面应用，可录制系统音频为在线会议做笔记；上月推出面向企业的Plaud Teams（含共享记忆）。用户购买硬件可免费获得300分钟转录，约50%的设备用户从基础版...；未确..."
+    },
+    {
+      "id": "enterprise-ai:SIG-20260617-A10",
+      "cardId": "SIG-20260617-A10",
+      "date": "2026-06-17",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "保险公司将AI战略转向核心风险承保",
+      "subject": "Artificialintelligence-News",
+      "sourceName": "Artificial Intelligence News（RSS）",
+      "sourceUrl": "https://www.artificialintelligence-news.com/news/insurers-pivot-ai-strategy-toward-core-risk-underwriting",
+      "stage": "governance",
+      "stageLabel": "治理边界",
+      "scenario": "高合规行业",
+      "workflow": "承保、理赔与风险控制流程",
+      "evidenceBoundary": "已确认：2026年Evident AI Index显示，保险公司正将AI嵌入直接影响承保纪律和资本配置的工作流。过去一年保险从业人员减少2.2%，AI专家增长32%，每50名员工即有一名AI专家。近40%公司设立AI高级主管。智能体AI采用率激增，新公开用例中四分之一涉及智能体编排（六个月前仅为二十分之一）。Zurich凭共享平台ZurichIQ从第12升至第4。...；未确..."
+    },
+    {
+      "id": "enterprise-ai:SIG-20260617-A12",
+      "cardId": "SIG-20260617-A12",
+      "date": "2026-06-17",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "AI红队测试解析：是什么及为何需要",
+      "subject": "AI红队测试解析",
+      "sourceName": "Artificial Intelligence News（RSS）",
+      "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-red-teaming-explained-what-it-is-and-why-you-need-it",
+      "stage": "governance",
+      "stageLabel": "治理边界",
+      "scenario": "安全与治理",
+      "workflow": "模型、Agent 与应用安全测试",
+      "evidenceBoundary": "已确认：AI红队测试通过模拟提示注入、数据操纵、越狱等真实攻击场景，系统性探测模型、智能体及应用的安全缺陷。研究显示AI安全事件从2024年233起增至2026年362起，凸显测试必要性。红队测试可提升模型安全性、对齐NIST AI RMF与EU AI Act等框架、加快事件响应并增强系统韧性。主要服务商包括：CBIZ Pivot Point Security（覆...；未确..."
+    }
+  ],
   "frontstageSelection": [
     {
       "date": "2026-06-17",
@@ -64499,6 +64580,20 @@
     ],
     "edges": [
       {
+        "from": "category:案例",
+        "to": "subject:Artificialintelligence-News",
+        "label": "案例",
+        "weight": 2,
+        "cardIds": [
+          "SIG-20260617-A10",
+          "SIG-20260617-A11"
+        ],
+        "titles": [
+          "保险公司将AI战略转向核心风险承保",
+          "欧盟委员会发布《AI内容标注行为守则》"
+        ]
+      },
+      {
         "from": "category:产品",
         "to": "subject:The-Decoder：AI-News（RSS）",
         "label": "产品",
@@ -64598,16 +64693,98 @@
       },
       {
         "from": "category:案例",
-        "to": "subject:Artificialintelligence-News",
+        "to": "subject:AI红队测试解析",
         "label": "案例",
-        "weight": 2,
+        "weight": 1,
         "cardIds": [
-          "SIG-20260617-A10",
-          "SIG-20260617-A11"
+          "SIG-20260617-A12"
         ],
         "titles": [
-          "保险公司将AI战略转向核心风险承保",
-          "欧盟委员会发布《AI内容标注行为守则》"
+          "AI红队测试解析：是什么及为何需要"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Artificial-Intelligence-News",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A04"
+        ],
+        "titles": [
+          "AI赋能CMS平台如何变革企业内容运营"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:First-Future",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A06"
+        ],
+        "titles": [
+          "First Future ：Case Study: Helping a Vertical SaaS Company Reposition for an AI-First Future"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Googleblog",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A13"
+        ],
+        "titles": [
+          "TPU Developer Hub 正式发布：助力开发者解锁 Google Cloud TPU 全部性能"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Microsoft",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A16"
+        ],
+        "titles": [
+          "M365 Copilot 曝最高严重性漏洞，攻击者可窃取 2FA 码"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Openai",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A15"
+        ],
+        "titles": [
+          "公开聊天数据能否预测真实世界AI失调？"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Tasklet",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A14"
+        ],
+        "titles": [
+          "ycombinator ：Tasklet: The cloud agent operating system for knowledge work"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:TechCrunch：AI（RSS）",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A05"
+        ],
+        "titles": [
+          "马来西亚AI智能体消息应用Respond.io获6250万美元融资，瞄准收购"
         ]
       },
       {
@@ -64896,102 +65073,6 @@
         ],
         "titles": [
           "ycombinator ：Tasklet: The cloud agent operating system for knowledge work"
-        ]
-      },
-      {
-        "from": "subject:Tasklet",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A14"
-        ],
-        "titles": [
-          "ycombinator ：Tasklet: The cloud agent operating system for knowledge work"
-        ]
-      },
-      {
-        "from": "subject:Tasklet",
-        "to": "signal:customer-enterprise",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A14"
-        ],
-        "titles": [
-          "ycombinator ：Tasklet: The cloud agent operating system for knowledge work"
-        ]
-      },
-      {
-        "from": "subject:Stakes-Conversations",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A01"
-        ],
-        "titles": [
-          "Stakes Conversations 融资 $100M"
-        ]
-      },
-      {
-        "from": "subject:Stakes-Conversations",
-        "to": "signal:track-ai-infra",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A01"
-        ],
-        "titles": [
-          "Stakes Conversations 融资 $100M"
-        ]
-      },
-      {
-        "from": "subject:DeepSeek",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A03"
-        ],
-        "titles": [
-          "DeepSeek 完成首轮外部融资，估值超 500 亿美元"
-        ]
-      },
-      {
-        "from": "subject:DeepSeek",
-        "to": "signal:track-ai-coding",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A03"
-        ],
-        "titles": [
-          "DeepSeek 完成首轮外部融资，估值超 500 亿美元"
-        ]
-      },
-      {
-        "from": "subject:DeepSeek",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A03"
-        ],
-        "titles": [
-          "DeepSeek 完成首轮外部融资，估值超 500 亿美元"
-        ]
-      },
-      {
-        "from": "subject:Probably",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A02"
-        ],
-        "titles": [
-          "Probably 获 900 万美元种子轮，构建更可靠的 AI 错误检测系统"
         ]
       }
     ],
@@ -65905,50 +65986,6 @@
   ],
   "historicalTrends": [
     {
-      "id": "TRD-20260519-02",
-      "type": "trend_card",
-      "title": "AI 治理开始从原则讨论转向产品和流程约束",
-      "date": "2026-05-19",
-      "status": "draft",
-      "assetLevel": "candidate",
-      "trendStatus": "early",
-      "stageLabel": "继续观察",
-      "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-      "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-      "boundary": "",
-      "nextObservation": "",
-      "sourceTypes": [],
-      "relatedSignals": [
-        "CHG-20260519-07"
-      ],
-      "tags": {
-        "track": [
-          "track-ai-governance"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [],
-        "evidence": [
-          "evidence-product-launch"
-        ],
-        "stage": [],
-        "region": [
-          "region-global"
-        ],
-        "source": []
-      },
-      "displayTags": [
-        {
-          "id": "track-ai-governance",
-          "label": "AI 治理"
-        },
-        {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
-        }
-      ]
-    },
-    {
       "id": "TRD-20260519-01",
       "type": "trend_card",
       "title": "AI 编程进入预算和工程治理",
@@ -65997,6 +66034,50 @@
         {
           "id": "track-ai-coding",
           "label": "AI Coding"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
+        }
+      ]
+    },
+    {
+      "id": "TRD-20260519-02",
+      "type": "trend_card",
+      "title": "AI 治理开始从原则讨论转向产品和流程约束",
+      "date": "2026-05-19",
+      "status": "draft",
+      "assetLevel": "candidate",
+      "trendStatus": "early",
+      "stageLabel": "继续观察",
+      "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+      "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+      "boundary": "",
+      "nextObservation": "",
+      "sourceTypes": [],
+      "relatedSignals": [
+        "CHG-20260519-07"
+      ],
+      "tags": {
+        "track": [
+          "track-ai-governance"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [],
+        "evidence": [
+          "evidence-product-launch"
+        ],
+        "stage": [],
+        "region": [
+          "region-global"
+        ],
+        "source": []
+      },
+      "displayTags": [
+        {
+          "id": "track-ai-governance",
+          "label": "AI 治理"
         },
         {
           "id": "evidence-product-launch",

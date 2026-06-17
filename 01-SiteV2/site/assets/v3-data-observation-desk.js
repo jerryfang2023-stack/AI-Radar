@@ -250,6 +250,180 @@
       .join(" · ");
   }
 
+  function enterpriseLensText(card = {}) {
+    return [
+      ...cardTitleAliases(card),
+      card.subject,
+      card.sourceName,
+      card.sourceUrl,
+      card.translatedFact,
+      card.visibleFragment,
+      ...(card.originalHighlights || []),
+      ...(card.flatTags || []),
+      ...(card.displayTags || []).map((tag) => tag.label || tag.id || tag),
+    ].filter(Boolean).join(" ");
+  }
+
+  function enterpriseStageFromText(text = "", category = "") {
+    if (/governance|guardrail|security|compliance|risk|permission|identity|audit|合规|安全|权限|审计|治理|风险/iu.test(text)) return "governance";
+    if (/deployed|deployment|rollout|production|at scale|customer adoption|case study|adopts|uses|上线|部署|落地|采用|规模化|客户案例/iu.test(text)) return "production_rollout";
+    if (/pilot|poc|proof of concept|trial|prototype|beta|试点|验证|概念验证|内测/iu.test(text)) return "pilot";
+    if (/platform|enterprise|copilot|gemini|bedrock|databricks|snowflake|api|agentcore|starter|平台|企业版|接入|集成|底座/iu.test(text)) return "platform_enablement";
+    if (category === "case") return "production_rollout";
+    if (category === "product-service") return "platform_enablement";
+    return "ai_transformation";
+  }
+
+  function enterpriseStageLabel(stage = "") {
+    return ({
+      pilot: "试点验证",
+      production_rollout: "生产上线",
+      platform_enablement: "平台使能",
+      governance: "治理边界",
+      ai_transformation: "AI化进程",
+    })[stage] || "AI化进程";
+  }
+
+  function enterpriseScenarioFromText(text = "", tags = []) {
+    const tagText = tags.join(" ");
+    const source = `${text} ${tagText}`;
+    if (/red team|security testing|prompt injection|jailbreak|红队|安全测试|提示注入|越狱/iu.test(source)) return "安全与治理";
+    if (/cms|content management|content operation|content workflow|内容管理|内容运营|内容创建|发布系统|本地化/iu.test(source)) return "内容运营";
+    if (/notetaker|meeting|transcription|minutes|memo|shared memory|记事本|会议|笔记|转录|共享记忆/iu.test(source)) return "知识工作与协作";
+    if (/procurement|purchase|supplier|supply chain|bidding|采购|供应商|供应链|招投标/iu.test(source)) return "采购与供应链";
+    if (/support|customer service|contact center|sales|crm|客服|客户支持|销售|CRM|工单/iu.test(source)) return "客户服务与销售";
+    if (/developer|github|code|software|engineering|devops|开发者|代码|软件研发|工程团队/iu.test(source)) return "软件研发";
+    if (/legal|court|police|government|health|finance|insurance|regulat|司法|法院|警察|政务|医疗|金融|保险|监管/iu.test(source)) return "高合规行业";
+    if (/data|warehouse|analytics|snowflake|databricks|knowledge|rag|数据|分析|知识库|检索/iu.test(source)) return "数据与知识工作";
+    if (/retail|store|restaurant|manufacturing|factory|门店|零售|制造|工厂|餐饮/iu.test(source)) return "一线运营";
+    return "企业工作流";
+  }
+
+  function enterpriseWorkflowFromText(text = "", category = "") {
+    if (/red team|security testing|prompt injection|jailbreak|红队|安全测试|提示注入|越狱/iu.test(text)) return "模型、Agent 与应用安全测试";
+    if (/cms|content management|content operation|content workflow|内容管理|内容运营|内容创建|发布系统|本地化/iu.test(text)) return "内容生产、发布与治理流程";
+    if (/notetaker|meeting|transcription|minutes|memo|shared memory|记事本|会议|笔记|转录|共享记忆/iu.test(text)) return "会议记录、知识沉淀与团队协作";
+    if (/procurement|purchase|supplier|supply chain|bidding|采购|供应商|供应链|招投标/iu.test(text)) return "采购流程自动化与合规校验";
+    if (/support|customer service|contact center|sales|crm|客服|客户支持|销售|CRM|工单/iu.test(text)) return "客服响应、线索跟进与知识检索";
+    if (/insurance|underwriting|claims|risk underwriting|capital allocation|保险|承保|理赔|资本配置/iu.test(text)) return "承保、理赔与风险控制流程";
+    if (/developer|github|code|software|engineering|devops|开发者|代码|软件研发|工程团队/iu.test(text)) return "代码、审查与交付流程";
+    if (/data|warehouse|analytics|knowledge|rag|数据|分析|知识库|检索/iu.test(text)) return "企业数据接入与决策支持";
+    if (/governance|security|compliance|permission|合规|安全|权限|治理/iu.test(text)) return "权限、合规与风险控制";
+    if (category === "funding") return "预算、采购与供应商选择";
+    return "把 Agent 或模型接入业务系统";
+  }
+
+  function enterpriseBoundaryFromCard(card = {}) {
+    const fact = factText(card);
+    if (!fact || isWeakFact(fact)) return "仅确认存在公开信号，暂缺投入、ROI 与长期运行效果。";
+    return compactText(`已确认：${fact}；未确认：内部投入、ROI 与长期运行效果。`, 190);
+  }
+
+  function fallbackEnterpriseAiTransformationItems(date = "") {
+    const seen = new Set();
+    const candidates = [
+      ...(state.payload.cards || []),
+      ...(state.payload.corePoolCandidates || []),
+    ].filter((card) => card.date === date)
+      .filter((card) => {
+        const id = card.linkedCardId || card.id;
+        if (!id || seen.has(id)) return false;
+        seen.add(id);
+        return true;
+      })
+      .map((card) => {
+        const text = enterpriseLensText(card);
+        const tags = card.flatTags || [];
+        let score = Number(card.frontstageEvidenceScore) || 0;
+        if (card.category === "case") score += 28;
+        if (card.category === "product-service") score += 16;
+        if (tags.includes("track-enterprise-workflow")) score += 24;
+        if (tags.includes("customer-enterprise")) score += 18;
+        if (tags.includes("evidence-customer-adoption")) score += 18;
+        if (/enterprise|workflow|customer|deployment|procurement|governance|integration|automation|企业|流程|客户|部署|采购|治理|集成|自动化/iu.test(text)) score += 24;
+        if (/cms|content management|red team|security testing|business workflow|内容管理|内容运营|红队|安全测试|业务流程/iu.test(text)) score += 16;
+        if (/developer hub|cloud tpu|colab|xla|pytorch|kv cache|benchmark|wildchat|public chat|research|paper|dataset|开发者中心|数据集|研究|论文/iu.test(text)) score -= 34;
+        if (/原文 AI 事件|该来源披露的是/u.test(text)) score -= 28;
+        if (/report|guide|top\s+\d+|榜单|指南|报告|清单/iu.test(text)) score -= 18;
+        const stage = enterpriseStageFromText(text, card.category);
+        return {
+          card,
+          score,
+          item: {
+            id: `enterprise-ai:${card.linkedCardId || card.id}`,
+            cardId: card.linkedCardId || card.id,
+            date: card.date,
+            category: card.category,
+            categoryLabel: card.categoryLabel || categoryLabel(card.category),
+            title: cardDisplayTitle(card),
+            subject: card.subject,
+            sourceName: card.sourceName,
+            sourceUrl: card.sourceUrl,
+            stage,
+            stageLabel: enterpriseStageLabel(stage),
+            scenario: enterpriseScenarioFromText(text, tags),
+            workflow: enterpriseWorkflowFromText(text, card.category),
+            evidenceBoundary: enterpriseBoundaryFromCard(card),
+          },
+        };
+      });
+    return candidates
+      .filter((row) => row.score >= 36)
+      .filter((row) => /workflow|customer|deployment|adoption|procurement|cms|content management|red team|security testing|governance|compliance|agentic ai.*business|enterprise system|企业|流程|客户|部署|采用|采购|内容管理|内容运营|红队|安全测试|治理|合规|业务系统/iu.test(enterpriseLensText(row.card)))
+      .sort((a, b) => b.score - a.score || String(a.item.id).localeCompare(String(b.item.id)))
+      .slice(0, 5)
+      .map((row) => row.item);
+  }
+
+  function enterpriseAiTransformationItems() {
+    const date = selectedDate();
+    const published = Array.isArray(state.payload?.enterpriseAiTransformation)
+      ? state.payload.enterpriseAiTransformation
+      : [];
+    const items = published.length
+      ? published.filter((item) => item.date === date)
+      : fallbackEnterpriseAiTransformationItems(date);
+    return items.filter((item) => state.filters.category === "all" || item.category === state.filters.category);
+  }
+
+  function renderEnterpriseAiTransformation() {
+    const root = $("[data-enterprise-ai-transformation]");
+    if (!root) return;
+    const items = enterpriseAiTransformationItems();
+    const count = $("[data-enterprise-ai-count]");
+    if (count) count.textContent = `${items.length} 条`;
+    root.innerHTML = items.length ? `
+      <div class="enterprise-ai-list-head" aria-hidden="true">
+        <span>案例</span>
+        <span>AI化动作</span>
+        <span>Tags</span>
+        <span>入口</span>
+      </div>
+      ${items.map((item) => `
+      <article class="enterprise-ai-card">
+        <div class="enterprise-ai-title-block">
+          <h3>${safe(item.title)}</h3>
+        </div>
+        <p class="enterprise-ai-cell" data-label="AI化动作">${safe(item.workflow || "把 Agent 或模型接入业务系统")}</p>
+        <div class="enterprise-ai-tag-list" data-label="Tags">
+          <span class="enterprise-ai-stage">${safe(item.stageLabel || enterpriseStageLabel(item.stage))}</span>
+          <span>${safe(item.scenario || "企业工作流")}</span>
+        </div>
+        <div class="enterprise-ai-actions">
+          ${item.cardId ? `<button class="detail-link" type="button" data-open-enterprise-detail="${safe(item.cardId)}">详情</button>` : ""}
+          ${item.sourceUrl ? `<a class="detail-link" href="${safe(item.sourceUrl)}" target="_blank" rel="noreferrer">原文</a>` : ""}
+        </div>
+      </article>
+    `).join("")}
+    ` : "<div class=\"empty-state\">等待今日合格信号形成。</div>";
+    root.onclick = (event) => {
+      const detailButton = event.target.closest("[data-open-enterprise-detail]");
+      if (!detailButton) return;
+      const card = findDetailCard(detailButton.dataset.openEnterpriseDetail);
+      if (card) renderDetail(card);
+    };
+  }
+
   function options(values, label = "全部") {
     const unique = [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b));
     return [`<option value="all">${safe(label)}</option>`, ...unique.map((value) => `<option value="${safe(value)}">${safe(value)}</option>`)].join("");
@@ -1523,6 +1697,7 @@
     renderStats();
     renderTable(cards);
     renderList(cards);
+    renderEnterpriseAiTransformation();
     renderRelationshipLinks();
     renderTrendCandidates();
     renderHistoricalTrends();

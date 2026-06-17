@@ -42,9 +42,10 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: SITE-V3.3.7 weekly report intelligence map.
+- Current stage: SITE-V3.3.8 enterprise AI transformation.
 - Current frontstage: `01-SiteV2/site/v3-data-observation.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/weekly-ai-business-change-radar.html`, `01-SiteV2/site/follow-builders.html`, and `01-SiteV2/site/community-intelligence.html`.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
+- Current Business Signals column version: BSIG-V1.1.0-enterprise-ai-transformation.
 - Current Business Signals data contract: V3.3.6.3 business source artifact aggregation.
 - Current core rule source: `context/07-v3-intelligence-generation-rules.md`.
 - V2 website pages and old four-column output rules are retired.
@@ -109,7 +110,7 @@ If an old rule conflicts with V3.3, delete or rebuild it instead of preserving c
 | `context/06-execution-harness.md` | high-risk execution harness |
 | `context/07-v3-intelligence-generation-rules.md` | Raw / Pool / Card / relation / trend-candidate truth source |
 | `context/08-v3-3-automation.md` | V3.3 GitHub / site / Obsidian sync automation loop |
-| `context/09-v3-3-current-action-index.md` | SITE-V3.3.7 current action registry |
+| `context/09-v3-3-current-action-index.md` | SITE-V3.3.8 current action registry |
 | `context/10-v3-3-experience-automation.md` | action logging and retrospective automation |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes daily supervision and Codex repair handoff |
 | `context/context-index.md` | context router |

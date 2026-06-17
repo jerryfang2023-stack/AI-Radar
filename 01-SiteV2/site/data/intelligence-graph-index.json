@@ -1,7 +1,10 @@
 {
   "meta": {
     "version": "V3.3.6.3-business-source-artifact-aggregation",
-    "generatedAt": "2026-06-17T01:51:17.273Z",
+    "siteVersion": "SITE-V3.3.8-enterprise-ai-transformation",
+    "businessSignalsColumnVersion": "BSIG-V1.1.0-enterprise-ai-transformation",
+    "enterpriseAiLensVersion": "EAI-V1.0.0-enterprise-ai-transformation",
+    "generatedAt": "2026-06-17T08:03:44.600Z",
     "activeDate": "2026-06-17",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -37,6 +40,7 @@
     "relationshipNodes": 28,
     "relationshipEdges": 76,
     "relationshipClusters": 2,
+    "enterpriseAiTransformation": 5,
     "tagAssociations": 8,
     "trendLinks": 16,
     "trendCandidates": 0
@@ -74,6 +78,13 @@
       "SIG-20260617-A18",
       "SIG-20260617-A09",
       "SIG-20260617-A21"
+    ],
+    "enterpriseAiTransformationCardIds": [
+      "SIG-20260617-A04",
+      "SIG-20260617-A05",
+      "SIG-20260617-A07",
+      "SIG-20260617-A10",
+      "SIG-20260617-A12"
     ],
     "largeCompanyTop10": [
       {
@@ -33228,12 +33239,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "融资信息不是单一公司轮次事件",
-      "notPromotedIssues": [
-        "融资信息不是单一公司轮次事件"
-      ],
-      "repairSuggestion": "补齐单一公司的融资金额、轮次、投资方和日期。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": true,
       "largeVendorKey": "anthropic",
       "tags": {},
@@ -33277,12 +33286,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "页面类型不适合直接成卡，需要回到具体事件页",
-      "notPromotedIssues": [
-        "页面类型不适合直接成卡，需要回到具体事件页"
-      ],
-      "repairSuggestion": "回到有日期、主体、动作的单一公司事件页后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -35333,6 +35340,20 @@
     ],
     "edges": [
       {
+        "from": "category:案例",
+        "to": "subject:Artificialintelligence-News",
+        "label": "案例",
+        "weight": 2,
+        "cardIds": [
+          "SIG-20260617-A10",
+          "SIG-20260617-A11"
+        ],
+        "titles": [
+          "保险公司将AI战略转向核心风险承保",
+          "欧盟委员会发布《AI内容标注行为守则》"
+        ]
+      },
+      {
         "from": "category:产品",
         "to": "subject:The-Decoder：AI-News（RSS）",
         "label": "产品",
@@ -35432,16 +35453,98 @@
       },
       {
         "from": "category:案例",
-        "to": "subject:Artificialintelligence-News",
+        "to": "subject:AI红队测试解析",
         "label": "案例",
-        "weight": 2,
+        "weight": 1,
         "cardIds": [
-          "SIG-20260617-A10",
-          "SIG-20260617-A11"
+          "SIG-20260617-A12"
         ],
         "titles": [
-          "保险公司将AI战略转向核心风险承保",
-          "欧盟委员会发布《AI内容标注行为守则》"
+          "AI红队测试解析：是什么及为何需要"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Artificial-Intelligence-News",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A04"
+        ],
+        "titles": [
+          "AI赋能CMS平台如何变革企业内容运营"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:First-Future",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A06"
+        ],
+        "titles": [
+          "First Future ：Case Study: Helping a Vertical SaaS Company Reposition for an AI-First Future"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Googleblog",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A13"
+        ],
+        "titles": [
+          "TPU Developer Hub 正式发布：助力开发者解锁 Google Cloud TPU 全部性能"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Microsoft",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A16"
+        ],
+        "titles": [
+          "M365 Copilot 曝最高严重性漏洞，攻击者可窃取 2FA 码"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Openai",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A15"
+        ],
+        "titles": [
+          "公开聊天数据能否预测真实世界AI失调？"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Tasklet",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A14"
+        ],
+        "titles": [
+          "ycombinator ：Tasklet: The cloud agent operating system for knowledge work"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:TechCrunch：AI（RSS）",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260617-A05"
+        ],
+        "titles": [
+          "马来西亚AI智能体消息应用Respond.io获6250万美元融资，瞄准收购"
         ]
       },
       {
@@ -35730,102 +35833,6 @@
         ],
         "titles": [
           "ycombinator ：Tasklet: The cloud agent operating system for knowledge work"
-        ]
-      },
-      {
-        "from": "subject:Tasklet",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A14"
-        ],
-        "titles": [
-          "ycombinator ：Tasklet: The cloud agent operating system for knowledge work"
-        ]
-      },
-      {
-        "from": "subject:Tasklet",
-        "to": "signal:customer-enterprise",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A14"
-        ],
-        "titles": [
-          "ycombinator ：Tasklet: The cloud agent operating system for knowledge work"
-        ]
-      },
-      {
-        "from": "subject:Stakes-Conversations",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A01"
-        ],
-        "titles": [
-          "Stakes Conversations 融资 $100M"
-        ]
-      },
-      {
-        "from": "subject:Stakes-Conversations",
-        "to": "signal:track-ai-infra",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A01"
-        ],
-        "titles": [
-          "Stakes Conversations 融资 $100M"
-        ]
-      },
-      {
-        "from": "subject:DeepSeek",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A03"
-        ],
-        "titles": [
-          "DeepSeek 完成首轮外部融资，估值超 500 亿美元"
-        ]
-      },
-      {
-        "from": "subject:DeepSeek",
-        "to": "signal:track-ai-coding",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A03"
-        ],
-        "titles": [
-          "DeepSeek 完成首轮外部融资，估值超 500 亿美元"
-        ]
-      },
-      {
-        "from": "subject:DeepSeek",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A03"
-        ],
-        "titles": [
-          "DeepSeek 完成首轮外部融资，估值超 500 亿美元"
-        ]
-      },
-      {
-        "from": "subject:Probably",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260617-A02"
-        ],
-        "titles": [
-          "Probably 获 900 万美元种子轮，构建更可靠的 AI 错误检测系统"
         ]
       }
     ],
@@ -36898,50 +36905,6 @@
     ],
     "historicalTrends": [
       {
-        "id": "TRD-20260519-02",
-        "type": "trend_card",
-        "title": "AI 治理开始从原则讨论转向产品和流程约束",
-        "date": "2026-05-19",
-        "status": "draft",
-        "assetLevel": "candidate",
-        "trendStatus": "early",
-        "stageLabel": "继续观察",
-        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "boundary": "",
-        "nextObservation": "",
-        "sourceTypes": [],
-        "relatedSignals": [
-          "CHG-20260519-07"
-        ],
-        "tags": {
-          "track": [
-            "track-ai-governance"
-          ],
-          "function": [],
-          "scenario": [],
-          "customer": [],
-          "evidence": [
-            "evidence-product-launch"
-          ],
-          "stage": [],
-          "region": [
-            "region-global"
-          ],
-          "source": []
-        },
-        "displayTags": [
-          {
-            "id": "track-ai-governance",
-            "label": "AI 治理"
-          },
-          {
-            "id": "evidence-product-launch",
-            "label": "产品发布"
-          }
-        ]
-      },
-      {
         "id": "TRD-20260519-01",
         "type": "trend_card",
         "title": "AI 编程进入预算和工程治理",
@@ -36990,6 +36953,50 @@
           {
             "id": "track-ai-coding",
             "label": "AI Coding"
+          },
+          {
+            "id": "evidence-product-launch",
+            "label": "产品发布"
+          }
+        ]
+      },
+      {
+        "id": "TRD-20260519-02",
+        "type": "trend_card",
+        "title": "AI 治理开始从原则讨论转向产品和流程约束",
+        "date": "2026-05-19",
+        "status": "draft",
+        "assetLevel": "candidate",
+        "trendStatus": "early",
+        "stageLabel": "继续观察",
+        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "boundary": "",
+        "nextObservation": "",
+        "sourceTypes": [],
+        "relatedSignals": [
+          "CHG-20260519-07"
+        ],
+        "tags": {
+          "track": [
+            "track-ai-governance"
+          ],
+          "function": [],
+          "scenario": [],
+          "customer": [],
+          "evidence": [
+            "evidence-product-launch"
+          ],
+          "stage": [],
+          "region": [
+            "region-global"
+          ],
+          "source": []
+        },
+        "displayTags": [
+          {
+            "id": "track-ai-governance",
+            "label": "AI 治理"
           },
           {
             "id": "evidence-product-launch",

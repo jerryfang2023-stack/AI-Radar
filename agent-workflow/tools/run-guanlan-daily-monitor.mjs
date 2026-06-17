@@ -760,7 +760,7 @@ function researchStatusFor(item = {}) {
 }
 
 function isKnownOfficialHost(host = "") {
-  return /(^|\.)?(openai\.com|anthropic\.com|googleblog\.com|developers\.googleblog\.com|deepmind\.google|microsoft\.com|github\.com|aws\.amazon\.com|amazon\.com|nvidia\.com|salesforce\.com|servicenow\.com|cursor\.com|perplexity\.ai|mistral\.ai|huggingface\.co)$/iu.test(host);
+  return /(^|\.)?(openai\.com|anthropic\.com|palantir\.com|scale\.com|googleblog\.com|developers\.googleblog\.com|deepmind\.google|microsoft\.com|github\.com|aws\.amazon\.com|amazon\.com|nvidia\.com|salesforce\.com|servicenow\.com|cursor\.com|perplexity\.ai|mistral\.ai|huggingface\.co)$/iu.test(host);
 }
 
 function isDomesticVendorHost(host = "") {
@@ -838,6 +838,48 @@ function classify(item) {
   return { level: "B", type: "web", acquisition_source_level: acquisitionSourceLevel, research_status: researchStatus };
 }
 
+function enterpriseAiTransformationProfileFromText(text = "") {
+  const normalized = String(text || "").toLowerCase();
+  const roleSignal =
+    /\bfde\b|forward deployed engineer|forward deployed engineering|applied ai engineer|applied ai architect|solutions architect applied ai|technical deployment lead|model deployment for business|customer engineering|domain teams/iu.test(normalized);
+  const implementationSignal =
+    /enterprise ai transformation|ai transformation|ai implementation|production rollout|customer deployment|design partner|pilot customer|technical scoping|system design|workflow automation|business process automation|agent deployment|applied ai deployment|customer engineering/iu.test(normalized);
+  const platformEnablementSignal =
+    /rag deployment|enterprise knowledge base|data integration|ontology|evals?|observability|permission control|audit logging|agent governance|runtime governance/iu.test(normalized);
+  const enterpriseSignal =
+    /enterprise|customer|production|deployment|workflow|procurement|governance|business|industry|domain|pilot|企业|客户|生产|部署|流程|采购|治理|行业/iu.test(normalized);
+
+  if (!(roleSignal || platformEnablementSignal || (implementationSignal && enterpriseSignal))) {
+    return { matched: false, stage: "", reason: "" };
+  }
+
+  let stage = "ai_transformation";
+  if (roleSignal) stage = "org_build";
+  if (/procurement|tender|rfp|marketplace|采购|招投标/iu.test(normalized)) stage = "procurement";
+  if (/production rollout|production deployment|deployed in production|customer deployment|上线|生产部署/iu.test(normalized)) stage = "production_rollout";
+  if (/pilot|design partner|proof of concept|\bpoc\b|试点/iu.test(normalized)) stage = "pilot";
+  if (platformEnablementSignal) stage = "platform_enablement";
+
+  return {
+    matched: true,
+    stage,
+    reason: roleSignal ? "fde_or_applied_ai_org_signal" : "enterprise_ai_implementation_signal",
+  };
+}
+
+function enterpriseAiTransformationProfileForItem(item = {}, bodyText = "") {
+  return enterpriseAiTransformationProfileFromText([
+    item.title,
+    item.summary,
+    bodyText,
+    item.url,
+    item.source,
+    item.search_intent,
+    item.search_path,
+    item.search_path_label,
+  ].filter(Boolean).join(" "));
+}
+
 function importanceProfile(item = {}, bodyText = "") {
   const text = [
     item.title,
@@ -854,6 +896,14 @@ function importanceProfile(item = {}, bodyText = "") {
 
   const add = (type, scoreValue, reason) => candidates.push({ type, score: scoreValue, reason });
   const support = (signal) => supportingSignals.push(signal);
+  const enterpriseAi = enterpriseAiTransformationProfileForItem(item, bodyText);
+
+  if (enterpriseAi.matched) {
+    support("enterprise_ai_transformation_lens");
+    if (enterpriseAi.stage === "production_rollout" || enterpriseAi.stage === "pilot") {
+      add("important_case", enterpriseAi.stage === "production_rollout" ? 5 : 4, "enterprise AI implementation case");
+    }
+  }
 
   if (/case study|customer story|customer case|customer adopts|customer adoption|design partner|pilot|production rollout|客户案例|客户采用|标杆客户|真实客户|试点|上线客户|行业客户/iu.test(text)) {
     add("important_case", /fortune|global 500|enterprise|银行|医院|制造|金融|医疗|法律|大型企业|头部客户/iu.test(text) ? 5 : 4, "real customer or adoption case");
@@ -2232,6 +2282,7 @@ function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
   const flags = accessFlags(item.snapshot);
   const completeness = evidenceCompleteness(item, originalPath, jsonPath, excerpts, fullText);
   const rawQc = rawQcDecisionFor(item, quality, gate, completeness);
+  const enterpriseAi = enterpriseAiTransformationProfileForItem(item, fullText);
   const record = {
     schema_version: "raw-evidence-v2",
     raw_id: id,
@@ -2252,6 +2303,9 @@ function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
     search_intent: item.search_intent || "",
     search_path: item.search_path || "",
     search_path_label: item.search_path_label || "",
+    enterprise_ai_transformation_lens: Boolean(item.enterprise_ai_transformation_lens || enterpriseAi.matched),
+    enterprise_ai_transformation_stage: item.enterprise_ai_transformation_stage || enterpriseAi.stage || "",
+    enterprise_ai_transformation_reason: item.enterprise_ai_transformation_reason || enterpriseAi.reason || "",
     author: item.author || "",
     published_at: item.published_at || "",
     collected_at: collectedAt,
@@ -2919,9 +2973,13 @@ function keywordSearchResultPreGate(result = {}, queryConfig = {}, pathConfig = 
   const url = String(result.url || "").toLowerCase();
   const title = String(result.title || "").toLowerCase();
   const query = String(queryConfig.query || "").toLowerCase();
+  const enterpriseAiProfile = enterpriseAiTransformationProfileFromText(`${text} ${query}`);
+  const trustedEnterpriseAiOrgSignal =
+    enterpriseAiProfile.matched
+    && /openai\.com|anthropic\.com|palantir\.com|scale\.com|microsoft\.com|salesforce\.com|servicenow\.com/iu.test(url);
   const configuredNoise = Array.isArray(rawEntryPolicy.noise_terms) ? rawEntryPolicy.noise_terms : [];
   const noiseHit = configuredNoise.find((term) => text.includes(String(term).toLowerCase()));
-  if (noiseHit) return { keep: false, reason: `noise_term:${noiseHit}` };
+  if (noiseHit && !trustedEnterpriseAiOrgSignal) return { keep: false, reason: `noise_term:${noiseHit}` };
 
   if (/iciba\.com|youdao\.com|dict\.cn|dictionary|translation|pronunciation|是什么意思|翻译|音标|读音|例句/iu.test(text)) {
     return { keep: false, reason: "dictionary_or_translation_page" };
@@ -2932,7 +2990,7 @@ function keywordSearchResultPreGate(result = {}, queryConfig = {}, pathConfig = 
   if (/search\?|\/search\/|\/tag\/|\/tags\/|\/category\/|\/categories\/|tool directory|ai tools directory|工具导航|一站式\s*ai\s*导航/iu.test(text)) {
     return { keep: false, reason: "directory_or_search_page" };
   }
-  if (/salary distribution|jobs\/salaries|\/jobs\/|job listings|glassdoor|indeed\.com|adzuna\.com|ziprecruiter|simplyhired/iu.test(text)) {
+  if (/salary distribution|jobs\/salaries|\/jobs\/|job listings|glassdoor|indeed\.com|adzuna\.com|ziprecruiter|simplyhired/iu.test(text) && !trustedEnterpriseAiOrgSignal) {
     return { keep: false, reason: "job_or_salary_page" };
   }
   if (query.includes("pre-seed") && (/tag-pre|<\s*pre|html\s*pre|pre\s*元素|pre\s*标签/iu.test(text))) {
@@ -2945,7 +3003,7 @@ function keywordSearchResultPreGate(result = {}, queryConfig = {}, pathConfig = 
   if (pathConfig.id === "community_feedback") return { keep: true, reason: "community_feedback_path" };
 
   const aiAnchor = /\bai\b|artificial intelligence|llm|large language model|agentic|agent|copilot|gpt|chatgpt|openai|anthropic|claude|gemini|deepmind|mistral|llama|hugging\s?face|模型|推理|智能体|人工智能|大模型|多模态/iu.test(text);
-  const trustedDomain = /openai\.com|anthropic\.com|deepmind\.google|ai\.google|blog\.google|microsoft\.com|github\.com|huggingface\.co|arxiv\.org|techcrunch\.com|theinformation\.com|reuters\.com|bloomberg\.com|ft\.com|wsj\.com|crunchbase\.com|producthunt\.com|ycombinator\.com|a16z\.com|sequoiacap\.com|accel\.com|lightspeedvp\.com|benchmark\.com/iu.test(url);
+  const trustedDomain = /openai\.com|anthropic\.com|palantir\.com|scale\.com|deepmind\.google|ai\.google|blog\.google|microsoft\.com|github\.com|huggingface\.co|arxiv\.org|techcrunch\.com|theinformation\.com|reuters\.com|bloomberg\.com|ft\.com|wsj\.com|crunchbase\.com|producthunt\.com|ycombinator\.com|a16z\.com|sequoiacap\.com|accel\.com|lightspeedvp\.com|benchmark\.com/iu.test(url);
   if (!aiAnchor && !trustedDomain) {
     return { keep: false, reason: "missing_ai_anchor_in_result" };
   }
@@ -2955,6 +3013,15 @@ function keywordSearchResultPreGate(result = {}, queryConfig = {}, pathConfig = 
 
 function keywordSearchItem(result, queryConfig, pathConfig, extra = {}) {
   const intent = extra.search_intent || inferSearchIntent(queryConfig.query);
+  const enterpriseAiProfile = enterpriseAiTransformationProfileFromText([
+    result.title,
+    result.snippet,
+    result.summary,
+    result.url,
+    result.source,
+    queryConfig.query,
+    pathConfig.id,
+  ].filter(Boolean).join(" "));
   return {
     acquisition_channel: "keyword-search",
     original_id: result.id || result.url || `${pathConfig.id}:${queryConfig.query}:${result.title}`,
@@ -2967,6 +3034,9 @@ function keywordSearchItem(result, queryConfig, pathConfig, extra = {}) {
     search_intent: intent,
     search_path: pathConfig.id,
     search_path_label: pathConfig.label,
+    enterprise_ai_transformation_lens: enterpriseAiProfile.matched,
+    enterprise_ai_transformation_stage: enterpriseAiProfile.stage,
+    enterprise_ai_transformation_reason: enterpriseAiProfile.reason,
     query_theme: queryConfig.query_theme,
     keyword_group: queryConfig.keyword_group,
   };
@@ -4483,6 +4553,15 @@ function makeRawFiles(items, failures, runMeta = {}) {
   const byKeywordGroup = countBy(items, "keyword_group");
   const bySearchPath = countBy(items.filter((item) => item.acquisition_channel === "keyword-search"), "search_path");
   const bySearchIntent = countBy(items.filter((item) => item.acquisition_channel === "keyword-search"), "search_intent");
+  const enterpriseAiTransformationItems = items.filter((item) =>
+    item.enterprise_ai_transformation_lens || item.raw_record?.enterprise_ai_transformation_lens
+  );
+  const byEnterpriseAiTransformationStage = countBy(
+    enterpriseAiTransformationItems.map((item) => ({
+      stage: item.enterprise_ai_transformation_stage || item.raw_record?.enterprise_ai_transformation_stage || "unspecified",
+    })),
+    "stage"
+  );
   const keywordNonCommunity = items.filter((item) => item.acquisition_channel === "keyword-search" && item.search_path && item.search_path !== "community_feedback").length;
   const byPoolRoute = items.reduce((acc, item) => {
     const routes = item.raw_record?.pool_routes?.length ? item.raw_record.pool_routes : ["index_only"];
@@ -4531,6 +4610,10 @@ function makeRawFiles(items, failures, runMeta = {}) {
     `- keyword_search_non_community_count: ${keywordNonCommunity}`,
     `- keyword_search_path_distribution: ${distributionText(bySearchPath)}`,
     `- keyword_search_intent_distribution: ${distributionText(bySearchIntent)}`,    `- source_distribution: ${distributionText(distribution)}`,
+    "- enterprise_ai_transformation_column: 企业AI化",
+    `- enterprise_ai_transformation_candidate_count: ${enterpriseAiTransformationItems.length}`,
+    `- enterprise_ai_transformation_stage_distribution: ${distributionText(byEnterpriseAiTransformationStage)}`,
+    "- enterprise_ai_transformation_boundary: Enterprise AI transformation is a monitoring lens, not a fourth Business Signal Card type; FDE / Applied AI role pages are organization-capability signals and require separate source-backed product, funding, customer deployment, procurement, or production rollout evidence before formal Card use.",
     `- raw_count_by_channel: ${distributionText(distribution)}`,
     `- keyword_monitoring_config: ${rel(keywordMonitoringPath)}`,
     `- keyword_group_distribution: ${distributionText(byKeywordGroup)}`,
@@ -4703,6 +4786,18 @@ async function main() {
         rss_source_count: rss.rss_source_count,
         keyword_search_path_distribution: countBy(items.filter((item) => item.acquisition_channel === "keyword-search"), "search_path"),
         keyword_search_intent_distribution: countBy(items.filter((item) => item.acquisition_channel === "keyword-search"), "search_intent"),
+        enterprise_ai_transformation_column: "企业AI化",
+        enterprise_ai_transformation_candidate_count: items.filter((item) =>
+          item.enterprise_ai_transformation_lens || item.raw_record?.enterprise_ai_transformation_lens
+        ).length,
+        enterprise_ai_transformation_stage_distribution: countBy(
+          items
+            .filter((item) => item.enterprise_ai_transformation_lens || item.raw_record?.enterprise_ai_transformation_lens)
+            .map((item) => ({
+              stage: item.enterprise_ai_transformation_stage || item.raw_record?.enterprise_ai_transformation_stage || "unspecified",
+            })),
+          "stage"
+        ),
         keyword_search_non_community_count: items.filter((item) => item.acquisition_channel === "keyword-search" && item.search_path && item.search_path !== "community_feedback").length,
         keyword_group_distribution: countBy(items, "keyword_group"),
         theme_distribution: countBy(items, "theme"),

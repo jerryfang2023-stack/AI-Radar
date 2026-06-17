@@ -1,6 +1,6 @@
 {
   "schema_version": "v3.3.1-source-registry-1.0",
-  "updated_at": "2026-06-08-podcasts",
+  "updated_at": "2026-06-17-enterprise-ai-transformation",
   "owner": "Intelligence Engine Agent",
   "purpose": "Registry for WaveSight AI V3.3.1 daily source collection. Source levels identify source type and evidence boundary only; they are not value scores.",
   "source_levels": {
@@ -60,7 +60,8 @@
     "aihot_policy": "AI HOT daily selected and recent 24h mode=all are V3.3.1 discovery entrances. Daily selected is fully retained and prioritized, but remains M-level acquisition until original text and page type are checked.",
     "follow_builders_policy": "follow-builders is fully scanned every day and fully written into the frontier opinion library. It is a curated opinion entrance with higher capture priority, not a fact source for company claims.",
     "keyword_search_policy": "Network keyword search must expand overseas big-company events, vertical product news, startup/funding news, customer adoption, industry landing, developer ecosystem, procurement, regulation and counter-evidence. HN/community is feedback only and must not dominate.",
-    "capital_market_signal_policy": "Daily monitoring must cover capital-market signals separately: investments by YC and other known institutions, vertical-sector funding, and frontier-technology investment."
+    "capital_market_signal_policy": "Daily monitoring must cover capital-market signals separately: investments by YC and other known institutions, vertical-sector funding, and frontier-technology investment.",
+    "enterprise_ai_transformation_policy": "企业AI化 / FDE Lens sources are monitored as implementation and organization-capability leads. Official FDE, Applied AI, Technical Deployment, AIP, customer engineering, and production-rollout pages can guide Raw discovery, but formal Business Signal Cards still require source-backed product, funding, customer deployment, procurement, or production rollout evidence."
   },
   "sources": [
     {
@@ -1266,7 +1267,15 @@
       "auth_required": false,
       "rate_limit_note": "public RSS; standard rate",
       "query_scope": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "extraction_fields": ["title", "url", "date", "author", "summary", "source", "tags"],
+      "extraction_fields": [
+        "title",
+        "url",
+        "date",
+        "author",
+        "summary",
+        "source",
+        "tags"
+      ],
       "fallback_path": "Fallback to keyword-search a_media_gdelt path with site:tigera.io.",
       "evidence_role": "supporting-analysis",
       "enabled_default": true,
@@ -1282,11 +1291,114 @@
       "auth_required": false,
       "rate_limit_note": "public RSS; standard rate",
       "query_scope": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
-      "extraction_fields": ["title", "url", "date", "author", "summary", "source", "tags"],
+      "extraction_fields": [
+        "title",
+        "url",
+        "date",
+        "author",
+        "summary",
+        "source",
+        "tags"
+      ],
       "fallback_path": "Fallback to keyword-search industry_landing path with site:dataiku.com.",
       "evidence_role": "supporting-analysis",
       "enabled_default": true,
       "risk_note": "AI platform vendor blog; analysis content supports business signals but is not first-party event evidence."
+    },
+    {
+      "source_id": "openai-fde-careers",
+      "name": "OpenAI Forward Deployed Engineering roles",
+      "source_level": "S",
+      "source_type": "organization-capability",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://openai.com/careers/search/?q=forward%20deployed%20engineer",
+      "auth_required": false,
+      "rate_limit_note": "public careers pages; low-frequency search only",
+      "query_scope": "FDE, model deployment for business, technical deployment, customer engineering and enterprise rollout role signals.",
+      "extraction_fields": [
+        "title",
+        "url",
+        "location",
+        "team",
+        "description",
+        "source",
+        "tags"
+      ],
+      "fallback_path": "Fallback to keyword-search official_original path with site:openai.com FDE / model deployment for business queries.",
+      "evidence_role": "organization-capability-lead-only",
+      "enabled_default": true,
+      "risk_note": "Official role pages can show OpenAI is building deployment capacity, but they are not direct product, funding, customer deployment, procurement, or production rollout evidence for a formal Card."
+    },
+    {
+      "source_id": "anthropic-applied-ai-careers",
+      "name": "Anthropic Applied AI / Forward Deployed roles",
+      "source_level": "S",
+      "source_type": "organization-capability",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://www.anthropic.com/careers/jobs",
+      "auth_required": false,
+      "rate_limit_note": "public careers pages; low-frequency search only",
+      "query_scope": "Applied AI Architect, Forward Deployed Engineer, Solutions Architect, customer success and industry deployment role signals.",
+      "extraction_fields": [
+        "title",
+        "url",
+        "location",
+        "team",
+        "description",
+        "source",
+        "tags"
+      ],
+      "fallback_path": "Fallback to keyword-search official_original path with site:anthropic.com careers Applied AI / Forward Deployed queries.",
+      "evidence_role": "organization-capability-lead-only",
+      "enabled_default": true,
+      "risk_note": "Official role pages are organization-capability leads. Verify customer deployments, product releases, or procurement through separate original evidence before formal Card use."
+    },
+    {
+      "source_id": "palantir-ai-fde-docs",
+      "name": "Palantir AI FDE / AIP docs",
+      "source_level": "S",
+      "source_type": "product",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://palantir.com/docs/foundry/ai-fde/overview/",
+      "auth_required": false,
+      "rate_limit_note": "public docs; low-frequency search only",
+      "query_scope": "AI FDE, AIP, natural-language operations, governance, permissions, audit logging, ontology and production workflow enablement.",
+      "extraction_fields": [
+        "title",
+        "url",
+        "date",
+        "summary",
+        "source",
+        "tags"
+      ],
+      "fallback_path": "Fallback to keyword-search official_original path with site:palantir.com/docs/foundry/ai-fde queries.",
+      "evidence_role": "first-party-event-or-product-source",
+      "enabled_default": true,
+      "risk_note": "Docs pages explain product capability; formal Card use still requires dated release, availability, customer deployment, or other concrete event evidence."
+    },
+    {
+      "source_id": "scale-genai-fde-careers",
+      "name": "Scale AI GenAI Forward Deployed roles",
+      "source_level": "S",
+      "source_type": "organization-capability",
+      "interface_type": "public-web",
+      "endpoint_or_url": "https://scale.com/careers/4593571005",
+      "auth_required": false,
+      "rate_limit_note": "public careers pages; low-frequency search only",
+      "query_scope": "GenAI FDE, customer-facing engineering, business-to-engineering translation, public-sector and enterprise implementation signals.",
+      "extraction_fields": [
+        "title",
+        "url",
+        "location",
+        "team",
+        "description",
+        "source",
+        "tags"
+      ],
+      "fallback_path": "Fallback to keyword-search official_original path with site:scale.com careers forward deployed GenAI queries.",
+      "evidence_role": "organization-capability-lead-only",
+      "enabled_default": true,
+      "risk_note": "Official role pages can indicate delivery model and capability buildout, but they are not direct customer deployment evidence without a separate source-backed event."
     }
   ]
 }

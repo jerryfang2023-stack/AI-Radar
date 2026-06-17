@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-06-15
+last_updated: 2026-06-17
 use_when:
   - large task startup
   - dispatch planning
@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in V3.3.7 Weekly Report Intelligence Map.
+WaveSight AI is now in V3.3.8 Enterprise AI Transformation.
 
 ## Current Positioning
 
@@ -20,13 +20,13 @@ WaveSight AI is now in V3.3.7 Weekly Report Intelligence Map.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
-- V3.3.7 keeps the unified frontstage, preserves First-Line Viewpoints person / date Obsidian timelines, blocks social / repo / list sources from formal Business Signal Cards, event-dedupes public Core Pool candidates, makes Hermes early handoff staged before 10:00, defaults Business Signals to independent source artifact capture before unified Raw / Pool normalization, and adds the Intelligence Map weekly report subcolumn.
+- V3.3.8 keeps the unified frontstage, preserves First-Line Viewpoints person / date Obsidian timelines, blocks social / repo / list sources from formal Business Signal Cards, event-dedupes public Core Pool candidates, makes Hermes early handoff staged before 10:00, defaults Business Signals to independent source artifact capture before unified Raw / Pool normalization, keeps the Intelligence Map weekly report subcolumn, and adds the Business Signals 企业AI化 secondary lens for FDE-style implementation monitoring.
 
 ## Current Entries
 
 | Entry | File | Role |
 |---|---|---|
-| Business Signals | `01-SiteV2/site/v3-data-observation.html` | Main V3.3 frontstage for daily Cards, relationship graph, and trend candidates |
+| Business Signals | `01-SiteV2/site/v3-data-observation.html` | Main V3.3 frontstage for daily Cards, relationship graph, trend candidates, and the 企业AI化 secondary lens |
 | Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph, intelligence map entry, and weekly report subcolumn |
 | First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoint page merged into V3.3 |
 | Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community-sourced cases, AI tool tactics, commercial opportunities, and document links |

@@ -1,8 +1,8 @@
 {
   "schema_version": "v3.3.1-keyword-monitoring-1.0",
-  "updated_at": "2026-06-08-rss-expansion",
+  "updated_at": "2026-06-17-enterprise-ai-transformation",
   "owner": "Intelligence Engine Agent",
-  "purpose": "Executable keyword and importance-type monitoring config for WaveSight AI V3.3.1 Raw / Pool / business-signal generation. It prioritizes original evidence, source diversity, vertical cases, startup funding, customer adoption and industry landing; opinion-source viewpoints are paused and excluded from business-signal generation.",
+  "purpose": "Executable keyword and importance-type monitoring config for WaveSight AI V3.3.1 Raw / Pool / business-signal generation. It prioritizes original evidence, source diversity, vertical cases, startup funding, customer adoption, industry landing, and the 企业AI化 monitoring lens for FDE-style implementation signals. Opinion-source viewpoints remain paused and excluded from business-signal generation.",
   "policy": {
     "raw_max_theme_share": 0.35,
     "pool_max_theme_share": 0.4,
@@ -66,10 +66,24 @@
       "small_mid_company_funding": 2,
       "big_company_product_max_share": 0.45
     },
-    "business_signal_mix_rule": "Raw and Pool can exceed these counts, but Card selection must favor original-evidence vertical cases and small / mid-size company financing before adding extra big-company product announcements. Missing lanes are a quality gap, not a reason to invent or over-summarize."
+    "business_signal_mix_rule": "Raw and Pool can exceed these counts, but Card selection must favor original-evidence vertical cases and small / mid-size company financing before adding extra big-company product announcements. Missing lanes are a quality gap, not a reason to invent or over-summarize.",
+    "enterprise_ai_transformation_lens": {
+      "column_name": "企业AI化",
+      "role": "A monitoring lens for FDE-style enterprise AI implementation opportunities. It helps identify boss-consulting entry points around discovery, scoping, system design, build, governance, procurement, pilot, production rollout, and demonstrated value.",
+      "not_a_card_type": true,
+      "formal_card_boundary": "Formal Business Signal Cards remain product_service, funding, and case. FDE / Applied AI role pages are organization-capability signals only; they require separate source-backed product, funding, customer deployment, procurement, or production rollout evidence before formal Card use.",
+      "stage_tags": [
+        "org_build",
+        "pilot",
+        "production_rollout",
+        "procurement",
+        "platform_enablement",
+        "ai_transformation"
+      ]
+    }
   },
   "raw_entry_policy": {
-    "default_strategy": "AI HOT daily selected + AI HOT full 24h + source registry + keyword rules first. External multi-path search expands vertical cases, customer adoption, startup/funding news, non-big-tech product deployments and industry landing; HN/community is feedback only.",
+    "default_strategy": "AI HOT daily selected + AI HOT full 24h + source registry + keyword rules first. External multi-path search expands vertical cases, customer adoption, startup/funding news, non-big-tech product deployments, industry landing, and 企业AI化 implementation signals; HN/community is feedback only.",
     "aihot_role": "primary_raw_discovery_entrance",
     "aihot_mode": "all",
     "aihot_window_hours": 24,
@@ -178,7 +192,29 @@
       "供应链",
       "物流",
       "零售",
-      "政务"
+      "政务",
+      "FDE",
+      "forward deployed engineer",
+      "forward deployed engineering",
+      "Applied AI",
+      "applied AI engineer",
+      "applied AI architect",
+      "technical deployment lead",
+      "customer engineering",
+      "domain teams",
+      "technical scoping",
+      "system design",
+      "production rollout",
+      "design partner",
+      "pilot customer",
+      "AI implementation",
+      "AI transformation",
+      "enterprise AI transformation",
+      "enterprise AI deployment",
+      "agent governance",
+      "audit logging",
+      "AI化",
+      "企业AI化"
     ],
     "noise_terms": [
       "壁纸",
@@ -245,7 +281,16 @@
     "business_signal_exclusions": [
       "social / opinion-source items without original S/A/B factual evidence"
     ],
-    "vertical_case_and_sme_funding_rule": "Before business-signal Card generation, Raw must include lane-specific searches for vertical cases and small / mid-size company financing. Use original article / announcement text; do not derive business facts from social opinions or discovery-only summaries."
+    "vertical_case_and_sme_funding_rule": "Before business-signal Card generation, Raw must include lane-specific searches for vertical cases and small / mid-size company financing. Use original article / announcement text; do not derive business facts from social opinions or discovery-only summaries.",
+    "enterprise_ai_transformation_rule": "企业AI化 / FDE Lens is a discovery and routing lens, not a fourth Signal Card type. Preserve FDE, Applied AI, Technical Deployment, customer engineering, pilot, production rollout, governance, procurement, and workflow automation signals in Raw / Pool diagnostics. Hiring or role pages can indicate organization capability only and must not become formal business-signal facts without source-backed product, funding, customer deployment, procurement, or production rollout evidence.",
+    "noise_term_exceptions": [
+      "forward deployed engineer",
+      "forward deployed engineering",
+      "applied AI engineer",
+      "applied AI architect",
+      "technical deployment lead",
+      "model deployment for business"
+    ]
   },
   "p0_core_tracks": [
     {
@@ -401,6 +446,39 @@
         "AI 原生公司",
         "一人公司"
       ]
+    },
+    {
+      "id": "enterprise-ai-transformation",
+      "label": "企业AI化 / FDE式落地工程",
+      "terms": [
+        "enterprise AI transformation",
+        "AI implementation",
+        "enterprise AI deployment",
+        "forward deployed engineer",
+        "FDE",
+        "Applied AI Architect",
+        "Applied AI Engineer",
+        "Technical Deployment Lead",
+        "customer engineering",
+        "technical scoping",
+        "system design",
+        "production rollout",
+        "design partner",
+        "pilot customer",
+        "workflow automation",
+        "agent governance",
+        "RAG deployment",
+        "enterprise knowledge base",
+        "permission control",
+        "audit logging",
+        "企业AI化",
+        "AI落地",
+        "AI实施",
+        "生产部署",
+        "试点客户",
+        "流程改造",
+        "权限治理"
+      ]
     }
   ],
   "p1_evidence_terms": {
@@ -491,6 +569,26 @@
       "AI model infrastructure investment",
       "AI research spinout funding",
       "venture capital AI startup"
+    ],
+    "enterprise_ai_transformation": [
+      "enterprise AI transformation",
+      "AI implementation",
+      "enterprise AI deployment",
+      "production rollout",
+      "technical scoping",
+      "system design",
+      "design partner",
+      "pilot customer",
+      "customer engineering",
+      "domain teams",
+      "Applied AI Architect",
+      "Forward Deployed Engineer",
+      "Technical Deployment Lead",
+      "AI workflow automation ROI",
+      "agent governance production",
+      "RAG deployment enterprise knowledge base",
+      "AI procurement implementation",
+      "AI transformation consulting customer case"
     ]
   },
   "theme_groups": [
@@ -532,7 +630,19 @@
         "AI 招标",
         "AI 定价",
         "AI 按量计费",
-        "AI 产品发布"
+        "AI 产品发布",
+        "enterprise AI transformation",
+        "AI implementation",
+        "enterprise AI deployment",
+        "production rollout",
+        "customer engineering",
+        "technical scoping",
+        "design partner",
+        "pilot customer",
+        "企业AI化",
+        "AI落地",
+        "生产部署",
+        "试点客户"
       ],
       "p0_coverage": [
         "agent-workflow",
@@ -540,13 +650,20 @@
         "coding-devtools",
         "knowledge-rag-memory",
         "infra-model-routing",
-        "security-governance-compliance"
+        "security-governance-compliance",
+        "enterprise-ai-transformation"
       ],
       "p1_coverage": [
-        "mature"
+        "mature",
+        "enterprise_ai_transformation"
       ],
       "lanes": {
         "keyword_search": [
+          "enterprise AI transformation production rollout customer deployment",
+          "forward deployed engineer applied AI customer deployment",
+          "AI implementation technical scoping production rollout",
+          "Applied AI architect enterprise customer workflow",
+          "AI transformation workflow automation ROI customer case",
           "AI Agent funding enterprise customers",
           "AI sales agent ARR customers",
           "voice AI agent funding customer adoption",
@@ -567,6 +684,8 @@
           "AI workflow automation procurement"
         ],
         "gdelt": [
+          "enterprise AI transformation production rollout customer deployment",
+          "AI implementation customer engineering production deployment",
           "AI acquisition enterprise software",
           "AI startup funding enterprise customers",
           "AI platform launch enterprise customers"
@@ -623,13 +742,18 @@
         "infra-model-routing",
         "model-capability-edge",
         "security-governance-compliance",
-        "robotics-ai-native"
+        "robotics-ai-native",
+        "enterprise-ai-transformation"
       ],
       "p1_coverage": [
-        "early"
+        "early",
+        "enterprise_ai_transformation"
       ],
       "lanes": {
         "keyword_search": [
+          "AI implementation startup design partner pilot customer",
+          "forward deployed engineer startup applied AI customer engineering",
+          "AI transformation startup pilot customer workflow",
           "pre-seed AI startup vertical AI design partner",
           "seed AI startup agent infra developer adoption",
           "angel round AI workflow pilot customer",
@@ -647,6 +771,8 @@
           "open source AI startup funding"
         ],
         "gdelt": [
+          "AI implementation startup pilot customer",
+          "applied AI startup customer engineering",
           "pre-seed AI startup vertical AI",
           "YC AI startup customers",
           "AI research spinout funding"
@@ -697,20 +823,31 @@
         "AI 可观测",
         "AI SDK",
         "沙箱",
-        "权限控制"
+        "权限控制",
+        "agent governance",
+        "runtime governance",
+        "audit logging",
+        "RAG deployment",
+        "enterprise knowledge base",
+        "AI observability production"
       ],
       "p0_coverage": [
         "agent-workflow",
         "coding-devtools",
         "infra-model-routing",
         "model-capability-edge",
-        "security-governance-compliance"
+        "security-governance-compliance",
+        "enterprise-ai-transformation"
       ],
       "p1_coverage": [
-        "technical_iteration"
+        "technical_iteration",
+        "enterprise_ai_transformation"
       ],
       "lanes": {
         "keyword_search": [
+          "agent governance evals production rollout enterprise AI",
+          "RAG deployment enterprise knowledge base production",
+          "AI observability production rollout enterprise workflow",
           "model release inference cost reduction enterprise adoption",
           "context window update enterprise AI workflow",
           "MCP agent protocol developer adoption",
@@ -731,6 +868,8 @@
           "open source AI evals"
         ],
         "gdelt": [
+          "agent governance production rollout enterprise AI",
+          "RAG deployment enterprise knowledge base production",
           "inference cost reduction AI enterprise",
           "on-device AI enterprise deployment",
           "AI agent runtime governance"
@@ -866,6 +1005,9 @@
       ],
       "lanes": {
         "keyword_search": [
+          "AI implementation startup funding enterprise workflow",
+          "enterprise AI deployment startup funding customer engineering",
+          "applied AI startup raises design partner customers",
           "YC AI startup funding vertical AI",
           "Y Combinator AI startup agent infra",
           "AI startup seed funding vertical workflow",
@@ -900,6 +1042,8 @@
           "AI startup funding developer adoption"
         ],
         "gdelt": [
+          "AI implementation startup funding enterprise workflow",
+          "enterprise AI deployment startup funding customers",
           "YC AI startup funding",
           "AI startup raises vertical AI",
           "frontier AI investment startup",
@@ -960,19 +1104,33 @@
         "AI 教育运营",
         "AI 能源调度",
         "AI 物流规划",
-        "AI 零售运营"
+        "AI 零售运营",
+        "AI transformation consulting",
+        "AI implementation consulting",
+        "enterprise AI adoption roadmap",
+        "AI operating model",
+        "AI workflow audit",
+        "企业AI化路线图",
+        "AI落地咨询",
+        "AI流程诊断"
       ],
       "p0_coverage": [
-        "outside-core"
+        "outside-core",
+        "enterprise-ai-transformation"
       ],
       "p1_coverage": [
         "mature",
         "early",
         "technical_iteration",
-        "developer_ecosystem"
+        "developer_ecosystem",
+        "enterprise_ai_transformation"
       ],
       "lanes": {
         "keyword_search": [
+          "enterprise AI transformation workflow change customer case",
+          "AI transformation consulting implementation customer workflow",
+          "AI operating model enterprise workflow automation",
+          "AI workflow audit enterprise implementation",
           "AI adoption unexpected industry workflow",
           "AI startup unusual vertical customer pain",
           "AI automation back office workflow customer",
@@ -998,6 +1156,8 @@
           "AI automation operator workflow"
         ],
         "gdelt": [
+          "enterprise AI transformation workflow customer case",
+          "AI transformation consulting implementation customer workflow",
           "AI adoption vertical industry workflow",
           "AI procurement public sector workflow",
           "AI customer segment automation",
@@ -1014,7 +1174,7 @@
   "importance_lanes": {
     "important_case": {
       "label": "important case",
-      "raw_goal": "Customer cases, vertical deployments and workflow adoption with named company / customer / workflow evidence. Prefer original articles, customer stories, release notes and case posts over generic summaries.",
+      "raw_goal": "Customer cases, vertical deployments, enterprise AI transformation pilots, production rollouts, and workflow adoption with named company / customer / workflow evidence. Prefer original articles, customer stories, release notes and case posts over generic summaries or role pages.",
       "core_minimum": "Named actor plus real customer/industry scene or repeatable workflow evidence.",
       "core_max_per_day": 3,
       "force_fill": false,
@@ -1054,7 +1214,7 @@
     },
     "important_vertical_solution": {
       "label": "important vertical solution",
-      "raw_goal": "Vertical AI products or deployments in healthcare, legal, logistics, construction, insurance, manufacturing, retail, procurement, finance ops or similar concrete industries. Must identify the workflow or operational object.",
+      "raw_goal": "Vertical AI products or deployments in healthcare, legal, logistics, construction, insurance, manufacturing, retail, procurement, finance ops or similar concrete industries. Must identify the workflow or operational object, and should flag 企业AI化 implementation stage when the evidence shows pilot, production rollout, procurement, governance, or platform enablement.",
       "core_minimum": null,
       "core_max_per_day": 3,
       "force_fill": false,

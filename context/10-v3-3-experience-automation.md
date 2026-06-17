@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-3-experience-automation
-last_updated: 2026-06-15
+last_updated: 2026-06-17
 use_when:
   - record development action
   - summarize execution lessons
@@ -10,7 +10,7 @@ use_when:
 priority: current
 ---
 
-# SITE-V3.3.7 Experience Automation
+# SITE-V3.3.8 Experience Automation
 
 This file defines the lightweight automation for recording development actions and generating experience retrospectives.
 

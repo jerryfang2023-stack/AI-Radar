@@ -109,6 +109,10 @@ Current V3 business-signal `signal_card` types are only:
 - `funding`;
 - `case`.
 
+Enterprise AI transformation / 企业AI化 is a monitoring and frontstage interpretation lens, not a fourth `signal_card` type. It can help identify consulting-relevant evidence about FDE-style implementation, workflow change, governance, procurement, pilots, production rollout, and customer engineering capacity.
+
+FDE / Applied AI / Technical Deployment role pages are organization-capability signals only. They must stay in Raw / Pool diagnostics or supporting context unless a separate original source proves a product / service action, financing event, customer deployment, procurement event, or production rollout that passes the six Signal Card gates below.
+
 Signal Card entry gate is expressed as six required gates. Do not re-expand these into scattered top-level field blockers:
 
 1. `source_auditability`
