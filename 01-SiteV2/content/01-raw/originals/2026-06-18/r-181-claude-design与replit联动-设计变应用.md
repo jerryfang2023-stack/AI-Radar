@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-18T06:02:59.764Z
+collected_at: 2026-06-18T06:41:09.412Z
 language: mixed
 full_text_hash: be77b79a501c2f09
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-181-claude-design与replit联动-设计变应用.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Claude Design与Replit联动，设计变应用","discovery_summary":"在Claude中设计。在Replit中构建。 你现在可以将Claude Design中的设计发送到Replit，将其变成一个可工作的应用。","source_name":"X：Replit (@Replit)","origin_url":"","discovered_at":"2026-06-18T05:58:06.562Z","rank_on_page":9,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Claude Design与Replit联动，设计变应用","discovery_summary":"在Claude中设计。在Replit中构建。 你现在可以将Claude Design中的设计发送到Replit，将其变成一个可工作的应用。","source_name":"X：Replit (@Replit)","origin_url":"","discovered_at":"2026-06-18T06:35:54.498Z","rank_on_page":9,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: be77b79a501c2f09
 semantic_hash: aa3fa98391262d9e
 duplicate_of: ""
-first_seen_at: "2026-06-18T06:02:59.764Z"
-last_seen_at: 2026-06-18T06:02:59.764Z
+first_seen_at: "2026-06-18T06:41:09.412Z"
+last_seen_at: 2026-06-18T06:41:09.412Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -176,7 +176,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"Claude Design与Replit联动，设计变应用","discovery_summary":"在Claude中设计。在Replit中构建。 你现在可以将Claude Design中的设计发送到Replit，将其变成一个可工作的应用。","source_name":"X：Replit (@Replit)","origin_url":"","discovered_at":"2026-06-18T05:58:06.562Z","rank_on_page":9,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Claude Design与Replit联动，设计变应用","discovery_summary":"在Claude中设计。在Replit中构建。 你现在可以将Claude Design中的设计发送到Replit，将其变成一个可工作的应用。","source_name":"X：Replit (@Replit)","origin_url":"","discovered_at":"2026-06-18T06:35:54.498Z","rank_on_page":9,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

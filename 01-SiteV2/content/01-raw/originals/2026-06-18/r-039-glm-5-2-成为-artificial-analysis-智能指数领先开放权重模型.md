@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T11:09:14.748Z"
-collected_at: 2026-06-18T06:02:59.262Z
+collected_at: 2026-06-18T06:41:08.927Z
 language: mixed
 full_text_hash: ee640bacfd28d0ae
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-039-glm-5-2-成为-artificial-analysis-智能指数领先开放权重模型.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: user_feedback_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"GLM-5.2 成为 Artificial Analysis 智能指数领先开放权重模型","discovery_summary":"GLM-5.2 在 Artificial Analysis Intelligence Index v4.1 上得分 51，领先 MiniMax-M3（44）、DeepSeek V4 Pro（max，44）和 Kimi K2.6（43）。模型总参数 744B，活跃参数 40B，上下文窗口 1M tokens，API 定价每百万输入/输出/缓存命中 token 分别为 $1.4/$4.4/$0.26。科学推理显著提升：HLE 得分 40%（+12）、CritPt 21%（+16）。GDPval-AA v2 得分 1524，与 GPT-5.5（xhigh）持平。每任务输出 43k tokens（其中 37k 推理），每任务成本约 $0.46，位于智能 vs 成本帕累托前沿。采用 MIT 许可证，可通过 DeepInfra、Novita 等第三方平台使用。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index","discovered_at":"2026-06-18T05:58:08.892Z","rank_on_page":301,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"GLM-5.2 成为 Artificial Analysis 智能指数领先开放权重模型","discovery_summary":"GLM-5.2 在 Artificial Analysis Intelligence Index v4.1 上得分 51，领先 MiniMax-M3（44）、DeepSeek V4 Pro（max，44）和 Kimi K2.6（43）。模型总参数 744B，活跃参数 40B，上下文窗口 1M tokens，API 定价每百万输入/输出/缓存命中 token 分别为 $1.4/$4.4/$0.26。科学推理显著提升：HLE 得分 40%（+12）、CritPt 21%（+16）。GDPval-AA v2 得分 1524，与 GPT-5.5（xhigh）持平。每任务输出 43k tokens（其中 37k 推理），每任务成本约 $0.46，位于智能 vs 成本帕累托前沿。采用 MIT 许可证，可通过 DeepInfra、Novita 等第三方平台使用。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index","discovered_at":"2026-06-18T06:35:55.967Z","rank_on_page":306,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: ee640bacfd28d0ae
 semantic_hash: 68a686d24cc49c92
 duplicate_of: ""
 first_seen_at: "2026-06-17T11:09:14.748Z"
-last_seen_at: 2026-06-18T06:02:59.262Z
+last_seen_at: 2026-06-18T06:41:08.927Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -245,7 +245,7 @@ June 9, 2026
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"GLM-5.2 成为 Artificial Analysis 智能指数领先开放权重模型","discovery_summary":"GLM-5.2 在 Artificial Analysis Intelligence Index v4.1 上得分 51，领先 MiniMax-M3（44）、DeepSeek V4 Pro（max，44）和 Kimi K2.6（43）。模型总参数 744B，活跃参数 40B，上下文窗口 1M tokens，API 定价每百万输入/输出/缓存命中 token 分别为 $1.4/$4.4/$0.26。科学推理显著提升：HLE 得分 40%（+12）、CritPt 21%（+16）。GDPval-AA v2 得分 1524，与 GPT-5.5（xhigh）持平。每任务输出 43k tokens（其中 37k 推理），每任务成本约 $0.46，位于智能 vs 成本帕累托前沿。采用 MIT 许可证，可通过 DeepInfra、Novita 等第三方平台使用。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index","discovered_at":"2026-06-18T05:58:08.892Z","rank_on_page":301,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"GLM-5.2 成为 Artificial Analysis 智能指数领先开放权重模型","discovery_summary":"GLM-5.2 在 Artificial Analysis Intelligence Index v4.1 上得分 51，领先 MiniMax-M3（44）、DeepSeek V4 Pro（max，44）和 Kimi K2.6（43）。模型总参数 744B，活跃参数 40B，上下文窗口 1M tokens，API 定价每百万输入/输出/缓存命中 token 分别为 $1.4/$4.4/$0.26。科学推理显著提升：HLE 得分 40%（+12）、CritPt 21%（+16）。GDPval-AA v2 得分 1524，与 GPT-5.5（xhigh）持平。每任务输出 43k tokens（其中 37k 推理），每任务成本约 $0.46，位于智能 vs 成本帕累托前沿。采用 MIT 许可证，可通过 DeepInfra、Novita 等第三方平台使用。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index","discovered_at":"2026-06-18T06:35:55.967Z","rank_on_page":306,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

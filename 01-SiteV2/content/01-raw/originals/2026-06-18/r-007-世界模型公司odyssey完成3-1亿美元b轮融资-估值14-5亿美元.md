@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T17:43:07.000Z"
-collected_at: 2026-06-18T06:02:59.136Z
+collected_at: 2026-06-18T06:41:08.803Z
 language: mixed
-full_text_hash: 2ed829f3782e0b4c
+full_text_hash: 75587989c4b9271c
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-007-世界模型公司odyssey完成3-1亿美元b轮融资-估值14-5亿美元.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-007-世界模型公司odyssey完成3-1亿美元b轮融资-估值14-5亿美元.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2ed829f3782e0b4c","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"75587989c4b9271c","missing":[]}
 source_volatility: medium
 community_name: ""
 capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元","discovery_summary":"由自动驾驶领域连续创业者Oliver Cameron（CEO）和Jeff Hawke（CTO）联合创立的世界模型AI公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元。本轮由Natural Capital领投，Amazon、AMD Ventures、GV等跟投。Odyssey成立于2023年，其世界模型通过人员背负相机采集物理世界数据并模拟真实物理效果。公司提供面向游戏制作和机器人等场景的多款世界模型，以从文本提示生成交互视频而知名。AWS成为首选云服务商，模型将针对AWS Trainium芯片优化。天使投资者包括Jeff Dean、Elad Gil等，累计融资3.37亿美元。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names","discovered_at":"2026-06-18T05:58:08.870Z","rank_on_page":199,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元","discovery_summary":"由自动驾驶领域连续创业者Oliver Cameron（CEO）和Jeff Hawke（CTO）联合创立的世界模型AI公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元。本轮由Natural Capital领投，Amazon、AMD Ventures、GV等跟投。Odyssey成立于2023年，其世界模型通过人员背负相机采集物理世界数据并模拟真实物理效果。公司提供面向游戏制作和机器人等场景的多款世界模型，以从文本提示生成交互视频而知名。AWS成为首选云服务商，模型将针对AWS Trainium芯片优化。天使投资者包括Jeff Dean、Elad Gil等，累计融资3.37亿美元。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names","discovered_at":"2026-06-18T06:35:55.944Z","rank_on_page":204,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: merged_provider_duplicates
 url_hash: e94365d0212a78f3
-content_hash: 2ed829f3782e0b4c
+content_hash: 75587989c4b9271c
 semantic_hash: 58a2648df6fb4092
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-17T17:43:07.000Z"
-last_seen_at: 2026-06-18T06:02:59.136Z
+last_seen_at: 2026-06-18T06:41:08.803Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -121,7 +121,7 @@ Theresa Loconsolo
 In Brief
 World model maker Odyssey nabs $1.45B valuation backed by Amazon and other big names
 Julie Bort
-12 hours ago
+13 hours ago
 AI
 Collecting robot training data is dirty, unglamorous work. Some AI labs are already paying XDOF to do it.
 Tim Fernholz
@@ -172,7 +172,7 @@ Theresa Loconsolo
 In Brief
 World model maker Odyssey nabs $1.45B valuation backed by Amazon and other big names
 Julie Bort
-12 hours ago
+13 hours ago
 AI
 Collecting robot training data is dirty, unglamorous work. Some AI labs are already paying XDOF to do it.
 Tim Fernholz
@@ -277,7 +277,7 @@ Tim Fernholz
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元","discovery_summary":"由自动驾驶领域连续创业者Oliver Cameron（CEO）和Jeff Hawke（CTO）联合创立的世界模型AI公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元。本轮由Natural Capital领投，Amazon、AMD Ventures、GV等跟投。Odyssey成立于2023年，其世界模型通过人员背负相机采集物理世界数据并模拟真实物理效果。公司提供面向游戏制作和机器人等场景的多款世界模型，以从文本提示生成交互视频而知名。AWS成为首选云服务商，模型将针对AWS Trainium芯片优化。天使投资者包括Jeff Dean、Elad Gil等，累计融资3.37亿美元。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names","discovered_at":"2026-06-18T05:58:08.870Z","rank_on_page":199,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元","discovery_summary":"由自动驾驶领域连续创业者Oliver Cameron（CEO）和Jeff Hawke（CTO）联合创立的世界模型AI公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元。本轮由Natural Capital领投，Amazon、AMD Ventures、GV等跟投。Odyssey成立于2023年，其世界模型通过人员背负相机采集物理世界数据并模拟真实物理效果。公司提供面向游戏制作和机器人等场景的多款世界模型，以从文本提示生成交互视频而知名。AWS成为首选云服务商，模型将针对AWS Trainium芯片优化。天使投资者包括Jeff Dean、Elad Gil等，累计融资3.37亿美元。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names","discovered_at":"2026-06-18T06:35:55.944Z","rank_on_page":204,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

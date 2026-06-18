@@ -1,5 +1,5 @@
 ---
-id: SIG-20260618-A11
+id: SIG-20260618-A12
 type: signal_card
 signal_type: case
 title: "谷歌发布Agentic Resource Discovery（ARD）开放规范"
@@ -9,8 +9,8 @@ source_title: "谷歌发布Agentic Resource Discovery（ARD）开放规范"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-18T06:03:00.029Z
-updated_at: 2026-06-18T06:03:00.029Z
+created_at: 2026-06-18T06:41:09.947Z
+updated_at: 2026-06-18T06:41:09.947Z
 
 raw_refs: ["R-023"]
 pool_refs: ["P-023"]

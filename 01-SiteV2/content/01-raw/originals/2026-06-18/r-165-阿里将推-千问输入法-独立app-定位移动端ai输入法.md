@@ -1,0 +1,183 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-165
+title: "阿里将推\"千问输入法\"独立App，定位移动端AI输入法"
+original_url: "https://www.ithome.com/0/965/769.htm"
+canonical_url: "https://ithome.com/0/965/769.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-18T02:09:11.000Z"
+collected_at: 2026-06-18T06:41:09.391Z
+language: mixed
+full_text_hash: caefeef232392dd2
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-165-阿里将推-千问输入法-独立app-定位移动端ai输入法.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-165-阿里将推-千问输入法-独立app-定位移动端ai输入法.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: summary-only-low-readable-body
+extraction_quality: failed
+extraction_method: "content-container"
+readability_score: 29
+extractor_diagnostics: {"readability_score":29,"text_length":377,"paragraph_count":4,"sentence_count":4,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+has_full_text: false
+content_length: 102
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["missing_full_text","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"caefeef232392dd2","missing":["missing_full_text"]}
+source_volatility: medium
+community_name: ""
+capture_scope: aihot_visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: discovery_only
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"阿里将推\"千问输入法\"独立App，定位移动端AI输入法","discovery_summary":"据《读佳》今日报道，千问团队将推出名为\"千问输入法\"的独立App，其AI功能与键盘针对手机端操作优化，区别于PC端千问语音输入法。产品已开发完成，择日上线各大应用商店。继微信输入法、豆包输入法后，这将是国内第三家头部互联网大厂入局独立AI输入法赛道。千问语音输入法是今年5月上线的AI语音输入能力，集成于千问App内，支持口语去语气词、纠错、格式化整理，以及基于上下文的智能回复、创作、问答与翻译指令。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/769.htm","discovered_at":"2026-06-18T06:35:55.914Z","rank_on_page":76,"discovery_status":"discovered"}
+source_role: discovery_source
+origin_fetch_status: "summary_only"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: b993cd659f765c5c
+content_hash: caefeef232392dd2
+semantic_hash: 2ccb6e4964fe3fef
+duplicate_of: ""
+first_seen_at: "2026-06-18T02:09:11.000Z"
+last_seen_at: 2026-06-18T06:41:09.391Z
+update_detected: false
+raw_status: ignored
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":2,"case_richness":2,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":[],"roles":[],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":[],"numbers":["5"],"quotes":["独立App，定位移动端AI输入法\n据《读佳》今日报道，千问团队将推出名为"]}
+evidence_seed: {"company_actions":["据《读佳》今日报道，千问团队将推出名为\"千问输入法\"的独立App，其AI功能与键盘针对手机端操作优化，区别于PC端千问语音输入法。产品已开发完成，择日上线各大应用商店。继微信输入法、豆包输入法后，这将是国内第三家头部互联网大厂入局独立AI输入法赛道。千问语音输入法是今年5月上线的AI语音输入能力，集成于千问App内，支持口语去语气词、纠错、格式化整理，以及基于上下文的智能回复、创作、问答与翻译指令。","千问团队将推出名为“千问输入法”的独立 App，与 PC 端的千问语音输入法有一定区别，AI 功能、键盘会更贴合手机端操作，填补千问在移动端 AI 输入法赛道的空白，产品已开发完成，择日上线各大应用商店。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有可用全文快照"]
+key_excerpts: [{"type":"product_update","text":"据《读佳》今日报道，千问团队将推出名为\"千问输入法\"的独立App，其AI功能与键盘针对手机端操作优化，区别于PC端千问语音输入法。产品已开发完成，择日上线各大应用商店。继微信输入法、豆包输入法后，这将是国内第三家头部互联网大厂入局独立AI输入法赛道。千问语音输入法是今年5月上线的AI语音输入能力，集成于千问App内，支持口语去语气词、纠错、格式化整理，以及基于上下文的智能回复、创作、问答与翻译指令。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"千问团队将推出名为“千问输入法”的独立 App，与 PC 端的千问语音输入法有一定区别，AI 功能、键盘会更贴合手机端操作，填补千问在移动端 AI 输入法赛道的空白，产品已开发完成，择日上线各大应用商店。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 阿里将推"千问输入法"独立App，定位移动端AI输入法
+
+## clean_text
+
+千问团队将推出名为“千问输入法”的独立 App，与 PC 端的千问语音输入法有一定区别，AI 功能、键盘会更贴合手机端操作，填补千问在移动端 AI 输入法赛道的空白，产品已开发完成，择日上线各大应用商店。
+
+## full_text
+
+千问团队将推出名为“千问输入法”的独立 App，与 PC 端的千问语音输入法有一定区别，AI 功能、键盘会更贴合手机端操作，填补千问在移动端 AI 输入法赛道的空白，产品已开发完成，择日上线各大应用商店。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 29
+- fetch_status: summary-only-low-readable-body
+- extraction_quality: failed
+- diagnostics: {"readability_score":29,"text_length":377,"paragraph_count":4,"sentence_count":4,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   据《读佳》今日报道，千问团队将推出名为"千问输入法"的独立App，其AI功能与键盘针对手机端操作优化，区别于PC端千问语音输入法。产品已开发完成，择日上线各大应用商店。继微信输入法、豆包输入法后，这将是国内第三家头部互联网大厂入局独立AI输入法赛道。千问语音输入法是今年5月上线的AI语音输入能力，集成于千问App内，支持口语去语气词、纠错、格式化整理，以及基于上下文的智能回复、创作、问答与翻译指令。
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   千问团队将推出名为“千问输入法”的独立 App，与 PC 端的千问语音输入法有一定区别，AI 功能、键盘会更贴合手机端操作，填补千问在移动端 AI 输入法赛道的空白，产品已开发完成，择日上线各大应用商店。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: 暂无公开信息
+- numbers: 5
+- quotes: 独立App，定位移动端AI输入法
+据《读佳》今日报道，千问团队将推出名为
+
+## evidence_seed
+
+- company_actions: 据《读佳》今日报道，千问团队将推出名为"千问输入法"的独立App，其AI功能与键盘针对手机端操作优化，区别于PC端千问语音输入法。产品已开发完成，择日上线各大应用商店。继微信输入法、豆包输入法后，这将是国内第三家头部互联网大厂入局独立AI输入法赛道。千问语音输入法是今年5月上线的AI语音输入能力，集成于千问App内，支持口语去语气词、纠错、格式化整理，以及基于上下文的智能回复、创作、问答与翻译指令。 / 千问团队将推出名为“千问输入法”的独立 App，与 PC 端的千问语音输入法有一定区别，AI 功能、键盘会更贴合手机端操作，填补千问在移动端 AI 输入法赛道的空白，产品已开发完成，择日上线各大应用商店。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 2
+- case_richness: 2
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: true
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有可用全文快照
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: aihot_visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: discovery_only
+- discovery_source: AI HOT
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- discovery_record: {"discovery_title":"阿里将推\"千问输入法\"独立App，定位移动端AI输入法","discovery_summary":"据《读佳》今日报道，千问团队将推出名为\"千问输入法\"的独立App，其AI功能与键盘针对手机端操作优化，区别于PC端千问语音输入法。产品已开发完成，择日上线各大应用商店。继微信输入法、豆包输入法后，这将是国内第三家头部互联网大厂入局独立AI输入法赛道。千问语音输入法是今年5月上线的AI语音输入能力，集成于千问App内，支持口语去语气词、纠错、格式化整理，以及基于上下文的智能回复、创作、问答与翻译指令。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/769.htm","discovered_at":"2026-06-18T06:35:55.914Z","rank_on_page":76,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+据《读佳》今日报道，千问团队将推出名为"千问输入法"的独立App，其AI功能与键盘针对手机端操作优化，区别于PC端千问语音输入法。产品已开发完成，择日上线各大应用商店。继微信输入法、豆包输入法后，这将是国内第三家头部互联网大厂入局独立AI输入法赛道。千问语音输入法是今年5月上线的AI语音输入能力，集成于千问App内，支持口语去语气词、纠错、格式化整理，以及基于上下文的智能回复、创作、问答与翻译指令。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

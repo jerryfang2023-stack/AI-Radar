@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T16:30:09.000Z"
-collected_at: 2026-06-18T06:02:59.125Z
+collected_at: 2026-06-18T06:41:08.792Z
 language: mixed
 full_text_hash: 11c4452c85a30434
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-004-google发布99美元gemini智能音箱.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Google发布99美元Gemini智能音箱","discovery_summary":"Google推出首款专为Gemini打造的智能音箱Google Home Speaker，售价99.99美元。支持自然语言请求和多步指令，可在说话中途纠正，并具备连续对话功能。内置10种新声音。高级AI功能需订阅Google Home Premium（月费10美元或年费100美元），包括Gemini Live自由对话、Nest摄像头活动摘要等。即日起预售，本月发货。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/google-bets-on-gemini-to-reinvent-the-smart-home-speaker","discovered_at":"2026-06-18T05:58:08.875Z","rank_on_page":219,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Google发布99美元Gemini智能音箱","discovery_summary":"Google推出首款专为Gemini打造的智能音箱Google Home Speaker，售价99.99美元。支持自然语言请求和多步指令，可在说话中途纠正，并具备连续对话功能。内置10种新声音。高级AI功能需订阅Google Home Premium（月费10美元或年费100美元），包括Gemini Live自由对话、Nest摄像头活动摘要等。即日起预售，本月发货。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/google-bets-on-gemini-to-reinvent-the-smart-home-speaker","discovered_at":"2026-06-18T06:35:55.949Z","rank_on_page":224,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 11c4452c85a30434
 semantic_hash: 4029a236b1412135
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-17T16:30:09.000Z"
-last_seen_at: 2026-06-18T06:02:59.125Z
+last_seen_at: 2026-06-18T06:41:08.792Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -273,7 +273,7 @@ Error loading the next article
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Google发布99美元Gemini智能音箱","discovery_summary":"Google推出首款专为Gemini打造的智能音箱Google Home Speaker，售价99.99美元。支持自然语言请求和多步指令，可在说话中途纠正，并具备连续对话功能。内置10种新声音。高级AI功能需订阅Google Home Premium（月费10美元或年费100美元），包括Gemini Live自由对话、Nest摄像头活动摘要等。即日起预售，本月发货。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/google-bets-on-gemini-to-reinvent-the-smart-home-speaker","discovered_at":"2026-06-18T05:58:08.875Z","rank_on_page":219,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Google发布99美元Gemini智能音箱","discovery_summary":"Google推出首款专为Gemini打造的智能音箱Google Home Speaker，售价99.99美元。支持自然语言请求和多步指令，可在说话中途纠正，并具备连续对话功能。内置10种新声音。高级AI功能需订阅Google Home Premium（月费10美元或年费100美元），包括Gemini Live自由对话、Nest摄像头活动摘要等。即日起预售，本月发货。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/google-bets-on-gemini-to-reinvent-the-smart-home-speaker","discovered_at":"2026-06-18T06:35:55.949Z","rank_on_page":224,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

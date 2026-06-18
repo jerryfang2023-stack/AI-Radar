@@ -1,0 +1,260 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-053",
+  "title": "Saoussen-CH/adk-multiagent-production-template",
+  "original_url": "https://github.com/Saoussen-CH/adk-multiagent-production-template",
+  "canonical_url": "https://github.com/Saoussen-CH/adk-multiagent-production-template",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-18T06:41:09.012Z",
+  "language": "mixed",
+  "full_text": "Saoussen-CH\nadk-multiagent-production-template\nPublic template\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n45 Commits\n45 Commits\nbackend\nbackend\ncloudbuild\ncloudbuild\ncustomer_support_mas\ncustomer_support_mas\ndeployment\ndeployment\ndocs\ndocs\neval_wrappers\neval_wrappers\nfrontend\nfrontend\nimages\nimages\nops\nops\nterraform\nterraform\ntests\ntests\n.env.dev.example\n.env.dev.example\n.env.example\n.env.example\n.env.prod.example\n.env.prod.example\n.env.staging.example\n.env.staging.example\n.gitignore\n.gitignore\n.pre-commit-config.yaml\n.pre-commit-config.yaml\n.python-version\n.python-version\nGETTING_STARTED.md\nGETTING_STARTED.md\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\npyproject.toml\npyproject.toml\npytest.ini\npytest.ini\nuv.lock\nuv.lock\nView all files\nRepository files navigation\nMulti-Agent AI on GCP: Production-Ready Template\nReference implementation of a customer support system built with Google ADK and Gemini 2.5 Pro, demonstrating production patterns: multi-agent orchestration, RAG, Memory Bank, 5-stage evaluation, CI/CD pipelines, Model Armor, Firestore, Cloud Run, and full infrastructure-as-code with Terraform.\nGetting started? See GETTING_STARTED.md\nBusiness Context\nBuilt for a consumer electronics and office furniture e-commerce store (similar to Best Buy or Newegg). The AI agents handle:\nDomain\nExamples\nProducts\nLaptops, headphones, keyboards, office chairs, standing desks\nOrders\nTracking shipments, delivery status, order history\nBilling\nInvoices, payment status, receipts\nRefunds\n30-day return window, validated refund processing\nThe architecture can be adapted to other retail domains by modifying the product catalog and business rules.\nFor live demo scenarios and test data reference: docs/TESTING_SCENARIOS.md\nArchitecture\nFrontend: React/TypeScript on Cloud Run\nBackend: FastAPI + Cloud Proxy on Cloud Run\nAI Layer: Vertex AI Agent Engine with multi-agent orchestration\nData Layer: Firestore with vector search, Memory Bank for cross-session memory\nFor full details: docs/ARCHITECTURE.md\nKey Features\nFeature\nImplementation\nNotes\nMulti-Agent Orchestration\nRoot + 3 Specialists + Workflow agents\nCost-optimized with Gemini 2.5 Pro + Flash\nSequential Workflows\n3-step refund validation pipeline\nValidation gates prevent invalid operations\nSession Management\nVertex AI Agent Engine sessions\nBackend proxy with JWT auth + multi-user support\nMemory Bank\nVertex AI Memory Bank with callbacks\nCross-session preference recall\nObservability\nLoggingPlugin + Cloud Logging\nProduction-ready monitoring\nEvaluation & Testing\nVertex AI Gen AI Evaluation + AgentEvaluator\n5-stage eval: local → CI → staging → prod → nightly, with eval-gated canary\nRAG Semantic Search\ntext-embedding-004 (768-dim)\nVector search on products\nCI/CD\nCloud Build\nFull pipeline with eval gating across dev/staging/prod\nPost-Deploy Eval\nVertex AI Gen AI Evaluation Service\nLive agent scoring after deploy\nInfrastructure as Code\nTerraform\nMulti-environment (dev/staging/prod) with GCS remote state\nResilience\nCircuit breaker + exponential backoff\nProtects Agent Engine calls: CLOSED/OPEN/HALF_OPEN, 5-failure threshold, 1s→60s retry\nAgent Architecture\nThe system uses a root agent that routes each request to the right specialist:\nUser message\n└─► Root Agent (Gemini 2.5 Pro)\n├─► Product Agent (Gemini 2.5 Flash)\n├─► Order Agent (Gemini 2.5 Flash)\n├─► Billing Agent (Gemini 2.5 Flash)\n└─► Refund Workflow (SequentialAgent)\n├─► Step 1: Validate order\n├─► Step 2: Check eligibility\n└─► Step 3: Process refund\nProduct Agent defaults to get_product_info — a smart unified tool that fetches details + inventory + reviews in one call. Individual tools ( get_product_details , check_inventory , get_product_reviews ) are only used when the user explicitly requests specific data.\nRefund Workflow is a SequentialAgent — the only path to process a refund. Each step must pass before the next runs, preventing invalid refunds.\nTechnology Stack\nFrontend: React 18 · TypeScript · Vite\nBackend: FastAPI · Python 3.11 · Pydantic\nAI/ML: Google ADK · Gemini 2.5 Pro/Flash · Vertex AI Agent Engine · Vertex AI Memory Bank · text-embedding-004\nData: Firestore (NoSQL + vector search)\nInfrastructure: Cloud Run · Artifact Registry · Docker · Cloud Build · Terraform\nTesting: pytest · AgentEvaluator · Vertex AI Gen AI Evaluation Service\nEvaluation Strategy\nThree test layers run before every deployment:\nLayer\nWhat it tests\nCost\nmake test-tools\nPure Python tool functions, no LLM\nFree\nmake test-unit\nSingle-agent behavior via AgentEvaluator\nLow\nmake test-integration\nMulti-agent handoffs through root agent\nLow\nAll three support switchable eval profiles via EVAL_PROFILE :\nProfile\nMetrics\nWhen\nfast\nRouge-1 only\nPRs (free, no LLM judge)\nstandard\n+ tool name F1 / rubric LLM judge\nPush to main (default)\nfull\n+ final response match v2\nNightly\nPlus post-deploy evaluation against the live Agent Engine using Vertex AI Gen AI Evaluation Service ( make eval-post-deploy ENV=staging ).\nAll pre-deploy tests run against in-memory mocks — no live Firestore or RAG calls.\nSee docs/EVALUATION.md for the full strategy.\nCI/CD\nSingle main branch. Environment promotion via git tags:\nEvent\nWhat runs\nPR to main (no agent changes)\nFast eval + lint (free)\nPR to main (agent code changed)\n+ integration eval with LLM judge (auto)\nPush to main\nCI + deploy to dev\nTag v*.*.*-rc.*\nStaging deploy + load tests + eval\nTag v*.*.*\nProd shadow deploy + eval gate + canary\nNightly (Cloud Scheduler)\nRegression monitoring + auto canary promote/rollback\nSee docs/CI_CD.md for full pipeline details.\nSecurity\nModel Armor screens every Gemini call for prompt injection, jailbreaks, and harmful content — automatically, with no changes to agent code. Managed via Terraform per environment.\nDocumentation\nDocument\nWhat it covers\nGETTING_STARTED.md\nStart here: local setup, single-env deploy, multi-env\ndocs/ARCHITECTURE.md\nSystem design, agent hierarchy, data flow\ndocs/DEPLOYMENT.md\nMulti-environment Terraform + CI/CD setup\ndocs/CI_CD.md\nCloud Build pipelines, triggers, branch strategy\ndocs/EVALUATION.md\n5-stage eval architecture + post-deploy eval\ndocs/TESTING_SCENARIOS.md\nDemo scenarios, test data, credentials\ndocs/PREREQUISITES.md\nGCP APIs, IAM roles, manual setup\ndocs/ENV_SETUP.md\nAll environment variables explained\ndocs/MEMORY_BANK.md\nMemory Bank implementation details\ndocs/DATA_MODEL.md\nFirestore collections and schema\nResources\nGoogle ADK Documentation\nVertex AI Agent Engine\nFirestore Vector Search\nVertex AI Gen AI Evaluation\nLicense\nApache 2.0 — see LICENSE file for details.\nAbout\nProduction AgentOps template on GCP: Google ADK + Gemini 2.5, Vertex AI Agent Engine, Terraform IaC (dev/staging/prod), CI/CD (Cloud Build), Model Armor, 5-stage eval pipeline, RAG, Memory Bank, canary deployments and nightly regression monitoring.\nResources\nReadme\nLicense\nApache-2.0 license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv1.0.1 — Fix awk variable escaping in release pipeline\nLatest\nMar 16, 2026\n+ 2 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n70.4%\nTypeScript\n10.0%\nHCL\n7.3%\nShell\n7.2%\nMakefile\n2.5%\nCSS\n2.1%\nOther\n0.5%",
+  "clean_text": "Saoussen-CH\nadk-multiagent-production-template\nPublic template\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n45 Commits\n45 Commits\nbackend\nbackend\ncloudbuild\ncloudbuild\ncustomer_support_mas\ncustomer_support_mas\ndeployment\ndeployment\ndocs\ndocs\neval_wrappers\neval_wrappers\nfrontend\nfrontend\nimages\nimages\nops\nops\nterraform\nterraform\ntests\ntests\n.env.dev.example\n.env.dev.example\n.env.example\n.env.example\n.env.prod.example\n.env.prod.example\n.env.staging.example\n.env.staging.example\n.gitignore\n.gitignore\n.pre-commit-config.yaml\n.pre-commit-config.yaml\n.python-version\n.python-version\nGETTING_STARTED.md\nGETTING_STARTED.md\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\npyproject.toml\npyproject.toml\npytest.ini\npytest.ini\nuv.lock\nuv.lock\nView all files\nRepository files navigation\nMulti-Agent AI on GCP: Production-Ready Template\nReference implementation of a customer support system built with Google ADK and Gemini 2.5 Pro, demonstrating production patterns: multi-agent orchestration, RAG, Memory Bank, 5-stage evaluation, CI/CD pipelines, Model Armor, Firestore, Cloud Run, and full infrastructure-as-code with Terraform.\nGetting started? See GETTING_STARTED.md\nBusiness Context\nBuilt for a consumer electronics and office furniture e-commerce store (similar to Best Buy or Newegg). The AI agents handle:\nDomain\nExamples\nProducts\nLaptops, headphones, keyboards, office chairs, standing desks\nOrders\nTracking shipments, delivery status, order history\nBilling\nInvoices, payment status, receipts\nRefunds\n30-day return window, validated refund processing\nThe architecture can be adapted to other retail domains by modifying the product catalog and business rules.\nFor live demo scenarios and test data reference: docs/TESTING_SCENARIOS.md\nArchitecture\nFrontend: React/TypeScript on Cloud Run\nBackend: FastAPI + Cloud Proxy on Cloud Run\nAI Layer: Vertex AI Agent Engine with multi-agent orchestration\nData Layer: Firestore with vector search, Memory Bank for cross-session memory\nFor full details: docs/ARCHITECTURE.md\nKey Features\nFeature\nImplementation\nNotes\nMulti-Agent Orchestration\nRoot + 3 Specialists + Workflow agents\nCost-optimized with Gemini 2.5 Pro + Flash\nSequential Workflows\n3-step refund validation pipeline\nValidation gates prevent invalid operations\nSession Management\nVertex AI Agent Engine sessions\nBackend proxy with JWT auth + multi-user support\nMemory Bank\nVertex AI Memory Bank with callbacks\nCross-session preference recall\nObservability\nLoggingPlugin + Cloud Logging\nProduction-ready monitoring\nEvaluation & Testing\nVertex AI Gen AI Evaluation + AgentEvaluator\n5-stage eval: local → CI → staging → prod → nightly, with eval-gated canary\nRAG Semantic Search\ntext-embedding-004 (768-dim)\nVector search on products\nCI/CD\nCloud Build\nFull pipeline with eval gating across dev/staging/prod\nPost-Deploy Eval\nVertex AI Gen AI Evaluation Service\nLive agent scoring after deploy\nInfrastructure as Code\nTerraform\nMulti-environment (dev/staging/prod) with GCS remote state\nResilience\nCircuit breaker + exponential backoff\nProtects Agent Engine calls: CLOSED/OPEN/HALF_OPEN, 5-failure threshold, 1s→60s retry\nAgent Architecture\nThe system uses a root agent that routes each request to the right specialist:\nUser message\n└─► Root Agent (Gemini 2.5 Pro)\n├─► Product Agent (Gemini 2.5 Flash)\n├─► Order Agent (Gemini 2.5 Flash)\n├─► Billing Agent (Gemini 2.5 Flash)\n└─► Refund Workflow (SequentialAgent)\n├─► Step 1: Validate order\n├─► Step 2: Check eligibility\n└─► Step 3: Process refund\nProduct Agent defaults to get_product_info — a smart unified tool that fetches details + inventory + reviews in one call. Individual tools ( get_product_details , check_inventory , get_product_reviews ) are only used when the user explicitly requests specific data.\nRefund Workflow is a SequentialAgent — the only path to process a refund. Each step must pass before the next runs, preventing invalid refunds.\nTechnology Stack\nFrontend: React 18 · TypeScript · Vite\nBackend: FastAPI · Python 3.11 · Pydantic\nAI/ML: Google ADK · Gemini 2.5 Pro/Flash · Vertex AI Agent Engine · Vertex AI Memory Bank · text-embedding-004\nData: Firestore (NoSQL + vector search)\nInfrastructure: Cloud Run · Artifact Registry · Docker · Cloud Build · Terraform\nTesting: pytest · AgentEvaluator · Vertex AI Gen AI Evaluation Service\nEvaluation Strategy\nThree test layers run before every deployment:\nLayer\nWhat it tests\nCost\nmake test-tools\nPure Python tool functions, no LLM\nFree\nmake test-unit\nSingle-agent behavior via AgentEvaluator\nLow\nmake test-integration\nMulti-agent handoffs through root agent\nLow\nAll three support switchable eval profiles via EVAL_PROFILE :\nProfile\nMetrics\nWhen\nfast\nRouge-1 only\nPRs (free, no LLM judge)\nstandard\n+ tool name F1 / rubric LLM judge\nPush to main (default)\nfull\n+ final response match v2\nNightly\nPlus post-deploy evaluation against the live Agent Engine using Vertex AI Gen AI Evaluation Service ( make eval-post-deploy ENV=staging ).\nAll pre-deploy tests run against in-memory mocks — no live Firestore or RAG calls.\nSee docs/EVALUATION.md for the full strategy.\nCI/CD\nSingle main branch. Environment promotion via git tags:\nEvent\nWhat runs\nPR to main (no agent changes)\nFast eval + lint (free)\nPR to main (agent code changed)\n+ integration eval with LLM judge (auto)\nPush to main\nCI + deploy to dev\nTag v*.*.*-rc.*\nStaging deploy + load tests + eval\nTag v*.*.*\nProd shadow deploy + eval gate + canary\nNightly (Cloud Scheduler)\nRegression monitoring + auto canary promote/rollback\nSee docs/CI_CD.md for full pipeline details.\nSecurity\nModel Armor screens every Gemini call for prompt injection, jailbreaks, and harmful content — automatically, with no changes to agent code. Managed via Terraform per environment.\nDocumentation\nDocument\nWhat it covers\nGETTING_STARTED.md\nStart here: local setup, single-env deploy, multi-env\ndocs/ARCHITECTURE.md\nSystem design, agent hierarchy, data flow\ndocs/DEPLOYMENT.md\nMulti-environment Terraform + CI/CD setup\ndocs/CI_CD.md\nCloud Build pipelines, triggers, branch strategy\ndocs/EVALUATION.md\n5-stage eval architecture + post-deploy eval\ndocs/TESTING_SCENARIOS.md\nDemo scenarios, test data, credentials\ndocs/PREREQUISITES.md\nGCP APIs, IAM roles, manual setup\ndocs/ENV_SETUP.md\nAll environment variables explained\ndocs/MEMORY_BANK.md\nMemory Bank implementation details\ndocs/DATA_MODEL.md\nFirestore collections and schema\nResources\nGoogle ADK Documentation\nVertex AI Agent Engine\nFirestore Vector Search\nVertex AI Gen AI Evaluation\nLicense\nApache 2.0 — see LICENSE file for details.\nAbout\nProduction AgentOps template on GCP: Google ADK + Gemini 2.5, Vertex AI Agent Engine, Terraform IaC (dev/staging/prod), CI/CD (Cloud Build), Model Armor, 5-stage eval pipeline, RAG, Memory Bank, canary deployments and nightly regression monitoring.\nResources\nReadme\nLicense\nApache-2.0 license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv1.0.1 — Fix awk variable escaping in release pipeline\nLatest\nMar 16, 2026\n+ 2 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n70.4%\nTypeScript\n10.0%\nHCL\n7.3%\nShell\n7.2%\nMakefile\n2.5%\nCSS\n2.1%\nOther\n0.5%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-18/r-053-saoussen-ch-adk-multiagent-production-template.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-18/r-053-saoussen-ch-adk-multiagent-production-template.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 7499,
+    "paragraph_count": 114,
+    "sentence_count": 26,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0036,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 7499,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "a6d2f7918889fddc",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "ac0fdb3934c0a5a3",
+  "content_hash": "a6d2f7918889fddc",
+  "full_text_hash": "a6d2f7918889fddc",
+  "semantic_hash": "f8e341531c144e1d",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-18T06:41:09.012Z",
+  "last_seen_at": "2026-06-18T06:41:09.012Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "Production AgentOps template on GCP: Google ADK + Gemini 2.5, Vertex AI Agent Engine, Terraform IaC (dev/staging/prod), CI/CD (Cloud Build), Model Armor, 5-stage eval pipeline, RAG, Memory Bank, canary deployments and nightly regression monitoring. Reference implementation of a customer support sys.... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=developer_ecosystem",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Saoussen-CH adk-multiagent-production-template Public template Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 45 Commits 45 Commits backend backend cloudbuild cloudbuild customer_support_mas customer_support_mas deployment deployment docs docs eval_wrappers eval_wrappers frontend frontend images images ops ops terraform terraform tests tests ",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "pre-commit-config.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "python-version GETTING_STARTED.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md GETTING_STARTED.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Google"
+    ],
+    "products": [
+      "Gemini",
+      "Agent",
+      "agent",
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "金融 / 保险",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2.5",
+      "5",
+      "45",
+      "30",
+      "3",
+      "004",
+      "768",
+      "1"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "pre-commit-config.",
+      "python-version GETTING_STARTED.",
+      "md GETTING_STARTED."
+    ],
+    "case_details": [
+      "Production AgentOps template on GCP: Google ADK + Gemini 2.5, Vertex AI Agent Engine, Terraform IaC (dev/staging/prod), CI/CD (Cloud Build), Model Armor, 5-stage eval pipeline, RAG, Memory Bank, canary deployments and nightly regression monitoring. Reference implementation of a customer support sys.... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=developer_ecosystem",
+      "Saoussen-CH adk-multiagent-production-template Public template Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 45 Commits 45 Commits backend backend cloudbuild cloudbuild customer_support_mas customer_support_mas deployment deployment docs docs eval_wrappers eval_wrappers frontend frontend images images ops ops terraform terraform tests tests "
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "market_shaping_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Saoussen-CH/adk-multiagent-production-template\n\n- raw_id: R-053\n- original_url: https://github.com/Saoussen-CH/adk-multiagent-production-template\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-18T06:41:09.012Z\n\n## clean_text\n\nSaoussen-CH\nadk-multiagent-production-template\nPublic template\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n45 Commits\n45 Commits\nbackend\nbackend\ncloudbuild\ncloudbuild\ncustomer_support_mas\ncustomer_support_mas\ndeployment\ndeployment\ndocs\ndocs\neval_wrappers\neval_wrappers\nfrontend\nfrontend\nimages\nimages\nops\nops\nterraform\nterraform\ntests\ntests\n.env.dev.example\n.env.dev.example\n.env.example\n.env.example\n.env.prod.example\n.env.prod.example\n.env.staging.example\n.env.staging.example\n.gitignore\n.gitignore\n.pre-commit-config.yaml\n.pre-commit-config.yaml\n.python-version\n.python-version\nGETTING_STARTED.md\nGETTING_STARTED.md\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\npyproject.toml\npyproject.toml\npytest.ini\npytest.ini\nuv.lock\nuv.lock\nView all files\nRepository files navigation\nMulti-Agent AI on GCP: Production-Ready Template\nReference implementation of a customer support system built with Google ADK and Gemini 2.5 Pro, demonstrating production patterns: multi-agent orchestration, RAG, Memory Bank, 5-stage evaluation, CI/CD pipelines, Model Armor, Firestore, Cloud Run, and full infrastructure-as-code with Terraform.\nGetting started? See GETTING_STARTED.md\nBusiness Context\nBuilt for a consumer electronics and office furniture e-commerce store (similar to Best Buy or Newegg). The AI agents handle:\nDomain\nExamples\nProducts\nLaptops, headphones, keyboards, office chairs, standing desks\nOrders\nTracking shipments, delivery status, order history\nBilling\nInvoices, payment status, receipts\nRefunds\n30-day return window, validated refund processing\nThe architecture can be adapted to other retail domains by modifying the product catalog and business rules.\nFor live demo scenarios and test data reference: docs/TESTING_SCENARIOS.md\nArchitecture\nFrontend: React/TypeScript on Cloud Run\nBackend: FastAPI + Cloud Proxy on Cloud Run\nAI Layer: Vertex AI Agent Engine with multi-agent orchestration\nData Layer: Firestore with vector search, Memory Bank for cross-session memory\nFor full details: docs/ARCHITECTURE.md\nKey Features\nFeature\nImplementation\nNotes\nMulti-Agent Orchestration\nRoot + 3 Specialists + Workflow agents\nCost-optimized with Gemini 2.5 Pro + Flash\nSequential Workflows\n3-step refund validation pipeline\nValidation gates prevent invalid operations\nSession Management\nVertex AI Agent Engine sessions\nBackend proxy with JWT auth + multi-user support\nMemory Bank\nVertex AI Memory Bank with callbacks\nCross-session preference recall\nObservability\nLoggingPlugin + Cloud Logging\nProduction-ready monitoring\nEvaluation & Testing\nVertex AI Gen AI Evaluation + AgentEvaluator\n5-stage eval: local → CI → staging → prod → nightly, with eval-gated canary\nRAG Semantic Search\ntext-embedding-004 (768-dim)\nVector search on products\nCI/CD\nCloud Build\nFull pipeline with eval gating across dev/staging/prod\nPost-Deploy Eval\nVertex AI Gen AI Evaluation Service\nLive agent scoring after deploy\nInfrastructure as Code\nTerraform\nMulti-environment (dev/staging/prod) with GCS remote state\nResilience\nCircuit breaker + exponential backoff\nProtects Agent Engine calls: CLOSED/OPEN/HALF_OPEN, 5-failure threshold, 1s→60s retry\nAgent Architecture\nThe system uses a root agent that routes each request to the right specialist:\nUser message\n└─► Root Agent (Gemini 2.5 Pro)\n├─► Product Agent (Gemini 2.5 Flash)\n├─► Order Agent (Gemini 2.5 Flash)\n├─► Billing Agent (Gemini 2.5 Flash)\n└─► Refund Workflow (SequentialAgent)\n├─► Step 1: Validate order\n├─► Step 2: Check eligibility\n└─► Step 3: Process refund\nProduct Agent defaults to get_product_info — a smart unified tool that fetches details + inventory + reviews in one call. Individual tools ( get_product_details , check_inventory , get_product_reviews ) are only used when the user explicitly requests specific data.\nRefund Workflow is a SequentialAgent — the only path to process a refund. Each step must pass before the next runs, preventing invalid refunds.\nTechnology Stack\nFrontend: React 18 · TypeScript · Vite\nBackend: FastAPI · Python 3.11 · Pydantic\nAI/ML: Google ADK · Gemini 2.5 Pro/Flash · Vertex AI Agent Engine · Vertex AI Memory Bank · text-embedding-004\nData: Firestore (NoSQL + vector search)\nInfrastructure: Cloud Run · Artifact Registry · Docker · Cloud Build · Terraform\nTesting: pytest · AgentEvaluator · Vertex AI Gen AI Evaluation Service\nEvaluation Strategy\nThree test layers run before every deployment:\nLayer\nWhat it tests\nCost\nmake test-tools\nPure Python tool functions, no LLM\nFree\nmake test-unit\nSingle-agent behavior via AgentEvaluator\nLow\nmake test-integration\nMulti-agent handoffs through root agent\nLow\nAll three support switchable eval profiles via EVAL_PROFILE :\nProfile\nMetrics\nWhen\nfast\nRouge-1 only\nPRs (free, no LLM judge)\nstandard\n+ tool name F1 / rubric LLM judge\nPush to main (default)\nfull\n+ final response match v2\nNightly\nPlus post-deploy evaluation against the live Agent Engine using Vertex AI Gen AI Evaluation Service ( make eval-post-deploy ENV=staging ).\nAll pre-deploy tests run against in-memory mocks — no live Firestore or RAG calls.\nSee docs/EVALUATION.md for the full strategy.\nCI/CD\nSingle main branch. Environment promotion via git tags:\nEvent\nWhat runs\nPR to main (no agent changes)\nFast eval + lint (free)\nPR to main (agent code changed)\n+ integration eval with LLM judge (auto)\nPush to main\nCI + deploy to dev\nTag v*.*.*-rc.*\nStaging deploy + load tests + eval\nTag v*.*.*\nProd shadow deploy + eval gate + canary\nNightly (Cloud Scheduler)\nRegression monitoring + auto canary promote/rollback\nSee docs/CI_CD.md for full pipeline details.\nSecurity\nModel Armor screens every Gemini call for prompt injection, jailbreaks, and harmful content — automatically, with no changes to agent code. Managed via Terraform per environment.\nDocumentation\nDocument\nWhat it covers\nGETTING_STARTED.md\nStart here: local setup, single-env deploy, multi-env\ndocs/ARCHITECTURE.md\nSystem design, agent hierarchy, data flow\ndocs/DEPLOYMENT.md\nMulti-environment Terraform + CI/CD setup\ndocs/CI_CD.md\nCloud Build pipelines, triggers, branch strategy\ndocs/EVALUATION.md\n5-stage eval architecture + post-deploy eval\ndocs/TESTING_SCENARIOS.md\nDemo scenarios, test data, credentials\ndocs/PREREQUISITES.md\nGCP APIs, IAM roles, manual setup\ndocs/ENV_SETUP.md\nAll environment variables explained\ndocs/MEMORY_BANK.md\nMemory Bank implementation details\ndocs/DATA_MODEL.md\nFirestore collections and schema\nResources\nGoogle ADK Documentation\nVertex AI Agent Engine\nFirestore Vector Search\nVertex AI Gen AI Evaluation\nLicense\nApache 2.0 — see LICENSE file for details.\nAbout\nProduction AgentOps template on GCP: Google ADK + Gemini 2.5, Vertex AI Agent Engine, Terraform IaC (dev/staging/prod), CI/CD (Cloud Build), Model Armor, 5-stage eval pipeline, RAG, Memory Bank, canary deployments and nightly regression monitoring.\nResources\nReadme\nLicense\nApache-2.0 license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv1.0.1 — Fix awk variable escaping in release pipeline\nLatest\nMar 16, 2026\n+ 2 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n70.4%\nTypeScript\n10.0%\nHCL\n7.3%\nShell\n7.2%\nMakefile\n2.5%\nCSS\n2.1%\nOther\n0.5%\n\n## full_text\n\nSaoussen-CH\nadk-multiagent-production-template\nPublic template\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n45 Commits\n45 Commits\nbackend\nbackend\ncloudbuild\ncloudbuild\ncustomer_support_mas\ncustomer_support_mas\ndeployment\ndeployment\ndocs\ndocs\neval_wrappers\neval_wrappers\nfrontend\nfrontend\nimages\nimages\nops\nops\nterraform\nterraform\ntests\ntests\n.env.dev.example\n.env.dev.example\n.env.example\n.env.example\n.env.prod.example\n.env.prod.example\n.env.staging.example\n.env.staging.example\n.gitignore\n.gitignore\n.pre-commit-config.yaml\n.pre-commit-config.yaml\n.python-version\n.python-version\nGETTING_STARTED.md\nGETTING_STARTED.md\nLICENSE\nLICENSE\nMakefile\nMakefile\nREADME.md\nREADME.md\npyproject.toml\npyproject.toml\npytest.ini\npytest.ini\nuv.lock\nuv.lock\nView all files\nRepository files navigation\nMulti-Agent AI on GCP: Production-Ready Template\nReference implementation of a customer support system built with Google ADK and Gemini 2.5 Pro, demonstrating production patterns: multi-agent orchestration, RAG, Memory Bank, 5-stage evaluation, CI/CD pipelines, Model Armor, Firestore, Cloud Run, and full infrastructure-as-code with Terraform.\nGetting started? See GETTING_STARTED.md\nBusiness Context\nBuilt for a consumer electronics and office furniture e-commerce store (similar to Best Buy or Newegg). The AI agents handle:\nDomain\nExamples\nProducts\nLaptops, headphones, keyboards, office chairs, standing desks\nOrders\nTracking shipments, delivery status, order history\nBilling\nInvoices, payment status, receipts\nRefunds\n30-day return window, validated refund processing\nThe architecture can be adapted to other retail domains by modifying the product catalog and business rules.\nFor live demo scenarios and test data reference: docs/TESTING_SCENARIOS.md\nArchitecture\nFrontend: React/TypeScript on Cloud Run\nBackend: FastAPI + Cloud Proxy on Cloud Run\nAI Layer: Vertex AI Agent Engine with multi-agent orchestration\nData Layer: Firestore with vector search, Memory Bank for cross-session memory\nFor full details: docs/ARCHITECTURE.md\nKey Features\nFeature\nImplementation\nNotes\nMulti-Agent Orchestration\nRoot + 3 Specialists + Workflow agents\nCost-optimized with Gemini 2.5 Pro + Flash\nSequential Workflows\n3-step refund validation pipeline\nValidation gates prevent invalid operations\nSession Management\nVertex AI Agent Engine sessions\nBackend proxy with JWT auth + multi-user support\nMemory Bank\nVertex AI Memory Bank with callbacks\nCross-session preference recall\nObservability\nLoggingPlugin + Cloud Logging\nProduction-ready monitoring\nEvaluation & Testing\nVertex AI Gen AI Evaluation + AgentEvaluator\n5-stage eval: local → CI → staging → prod → nightly, with eval-gated canary\nRAG Semantic Search\ntext-embedding-004 (768-dim)\nVector search on products\nCI/CD\nCloud Build\nFull pipeline with eval gating across dev/staging/prod\nPost-Deploy Eval\nVertex AI Gen AI Evaluation Service\nLive agent scoring after deploy\nInfrastructure as Code\nTerraform\nMulti-environment (dev/staging/prod) with GCS remote state\nResilience\nCircuit breaker + exponential backoff\nProtects Agent Engine calls: CLOSED/OPEN/HALF_OPEN, 5-failure threshold, 1s→60s retry\nAgent Architecture\nThe system uses a root agent that routes each request to the right specialist:\nUser message\n└─► Root Agent (Gemini 2.5 Pro)\n├─► Product Agent (Gemini 2.5 Flash)\n├─► Order Agent (Gemini 2.5 Flash)\n├─► Billing Agent (Gemini 2.5 Flash)\n└─► Refund Workflow (SequentialAgent)\n├─► Step 1: Validate order\n├─► Step 2: Check eligibility\n└─► Step 3: Process refund\nProduct Agent defaults to get_product_info — a smart unified tool that fetches details + inventory + reviews in one call. Individual tools ( get_product_details , check_inventory , get_product_reviews ) are only used when the user explicitly requests specific data.\nRefund Workflow is a SequentialAgent — the only path to process a refund. Each step must pass before the next runs, preventing invalid refunds.\nTechnology Stack\nFrontend: React 18 · TypeScript · Vite\nBackend: FastAPI · Python 3.11 · Pydantic\nAI/ML: Google ADK · Gemini 2.5 Pro/Flash · Vertex AI Agent Engine · Vertex AI Memory Bank · text-embedding-004\nData: Firestore (NoSQL + vector search)\nInfrastructure: Cloud Run · Artifact Registry · Docker · Cloud Build · Terraform\nTesting: pytest · AgentEvaluator · Vertex AI Gen AI Evaluation Service\nEvaluation Strategy\nThree test layers run before every deployment:\nLayer\nWhat it tests\nCost\nmake test-tools\nPure Python tool functions, no LLM\nFree\nmake test-unit\nSingle-agent behavior via AgentEvaluator\nLow\nmake test-integration\nMulti-agent handoffs through root agent\nLow\nAll three support switchable eval profiles via EVAL_PROFILE :\nProfile\nMetrics\nWhen\nfast\nRouge-1 only\nPRs (free, no LLM judge)\nstandard\n+ tool name F1 / rubric LLM judge\nPush to main (default)\nfull\n+ final response match v2\nNightly\nPlus post-deploy evaluation against the live Agent Engine using Vertex AI Gen AI Evaluation Service ( make eval-post-deploy ENV=staging ).\nAll pre-deploy tests run against in-memory mocks — no live Firestore or RAG calls.\nSee docs/EVALUATION.md for the full strategy.\nCI/CD\nSingle main branch. Environment promotion via git tags:\nEvent\nWhat runs\nPR to main (no agent changes)\nFast eval + lint (free)\nPR to main (agent code changed)\n+ integration eval with LLM judge (auto)\nPush to main\nCI + deploy to dev\nTag v*.*.*-rc.*\nStaging deploy + load tests + eval\nTag v*.*.*\nProd shadow deploy + eval gate + canary\nNightly (Cloud Scheduler)\nRegression monitoring + auto canary promote/rollback\nSee docs/CI_CD.md for full pipeline details.\nSecurity\nModel Armor screens every Gemini call for prompt injection, jailbreaks, and harmful content — automatically, with no changes to agent code. Managed via Terraform per environment.\nDocumentation\nDocument\nWhat it covers\nGETTING_STARTED.md\nStart here: local setup, single-env deploy, multi-env\ndocs/ARCHITECTURE.md\nSystem design, agent hierarchy, data flow\ndocs/DEPLOYMENT.md\nMulti-environment Terraform + CI/CD setup\ndocs/CI_CD.md\nCloud Build pipelines, triggers, branch strategy\ndocs/EVALUATION.md\n5-stage eval architecture + post-deploy eval\ndocs/TESTING_SCENARIOS.md\nDemo scenarios, test data, credentials\ndocs/PREREQUISITES.md\nGCP APIs, IAM roles, manual setup\ndocs/ENV_SETUP.md\nAll environment variables explained\ndocs/MEMORY_BANK.md\nMemory Bank implementation details\ndocs/DATA_MODEL.md\nFirestore collections and schema\nResources\nGoogle ADK Documentation\nVertex AI Agent Engine\nFirestore Vector Search\nVertex AI Gen AI Evaluation\nLicense\nApache 2.0 — see LICENSE file for details.\nAbout\nProduction AgentOps template on GCP: Google ADK + Gemini 2.5, Vertex AI Agent Engine, Terraform IaC (dev/staging/prod), CI/CD (Cloud Build), Model Armor, 5-stage eval pipeline, RAG, Memory Bank, canary deployments and nightly regression monitoring.\nResources\nReadme\nLicense\nApache-2.0 license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv1.0.1 — Fix awk variable escaping in release pipeline\nLatest\nMar 16, 2026\n+ 2 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n70.4%\nTypeScript\n10.0%\nHCL\n7.3%\nShell\n7.2%\nMakefile\n2.5%\nCSS\n2.1%\nOther\n0.5%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / daily_observation, heatmap, case / high] Production AgentOps template on GCP: Google ADK + Gemini 2.5, Vertex AI Agent Engine, Terraform IaC (dev/staging/prod), CI/CD (Cloud Build), Model Armor, 5-stage eval pipeline, RAG, Memory Bank, canary deployments and nightly regression monitoring. Reference implementation of a customer support sys.... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=developer_ecosystem\n2. [case_detail / daily_observation, heatmap, case / high] Saoussen-CH adk-multiagent-production-template Public template Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 45 Commits 45 Commits backend backend cloudbuild cloudbuild customer_support_mas customer_support_mas deployment deployment docs docs eval_wrappers eval_wrappers frontend frontend images images ops ops terraform terraform tests tests \n3. [company_action / daily_observation, heatmap, change, case, trend / high] pre-commit-config.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] python-version GETTING_STARTED.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] md GETTING_STARTED.\n"
+}

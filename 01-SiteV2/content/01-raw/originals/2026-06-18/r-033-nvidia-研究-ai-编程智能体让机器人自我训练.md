@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T14:55:28.000Z"
-collected_at: 2026-06-18T06:02:59.230Z
+collected_at: 2026-06-18T06:41:08.895Z
 language: mixed
 full_text_hash: c117fec06d27ff52
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-033-nvidia-研究-ai-编程智能体让机器人自我训练.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: supporting_evidence
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Nvidia 研究：AI 编程智能体让机器人自我训练","discovery_summary":"Nvidia、卡内基梅隆大学和 UC Berkeley 联合开发的 ENPIRE 项目，利用 AI 编程智能体让机器人在现实世界中自主进行灵巧抓取训练。8 台双臂 YAM 机器人通过 Git 共享试验结果，智能体自主编写奖励函数、阅读论文并编辑训练代码。在 Push-T 测试、插针和剪扎带等任务上最高达 99% 成功率；从 1 个智能体扩展到 8 个后，Push-T 完成时间从约 5 小时降至 2 小时，插针从 90 分钟降至约 40 分钟。测试了 Codex（GPT-5.5）、Claude Code（Opus 4.7）和 Kimi Code（Kimi K2.6），Codex 表现最佳。现实环境仍比模拟困难，但该方法为机器人自主改进提供了可行路径。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/nvidia-research-shows-robots-that-train-themselves-through-ai-coding-agents","discovered_at":"2026-06-18T05:58:08.881Z","rank_on_page":250,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Nvidia 研究：AI 编程智能体让机器人自我训练","discovery_summary":"Nvidia、卡内基梅隆大学和 UC Berkeley 联合开发的 ENPIRE 项目，利用 AI 编程智能体让机器人在现实世界中自主进行灵巧抓取训练。8 台双臂 YAM 机器人通过 Git 共享试验结果，智能体自主编写奖励函数、阅读论文并编辑训练代码。在 Push-T 测试、插针和剪扎带等任务上最高达 99% 成功率；从 1 个智能体扩展到 8 个后，Push-T 完成时间从约 5 小时降至 2 小时，插针从 90 分钟降至约 40 分钟。测试了 Codex（GPT-5.5）、Claude Code（Opus 4.7）和 Kimi Code（Kimi K2.6），Codex 表现最佳。现实环境仍比模拟困难，但该方法为机器人自主改进提供了可行路径。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/nvidia-research-shows-robots-that-train-themselves-through-ai-coding-agents","discovered_at":"2026-06-18T06:35:55.956Z","rank_on_page":255,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: c117fec06d27ff52
 semantic_hash: 3090cd1700310278
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-17T14:55:28.000Z"
-last_seen_at: 2026-06-18T06:02:59.230Z
+last_seen_at: 2026-06-18T06:41:08.895Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -270,7 +270,7 @@ The study is clear about its limits, though. Robots and compute don't get fully 
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Nvidia 研究：AI 编程智能体让机器人自我训练","discovery_summary":"Nvidia、卡内基梅隆大学和 UC Berkeley 联合开发的 ENPIRE 项目，利用 AI 编程智能体让机器人在现实世界中自主进行灵巧抓取训练。8 台双臂 YAM 机器人通过 Git 共享试验结果，智能体自主编写奖励函数、阅读论文并编辑训练代码。在 Push-T 测试、插针和剪扎带等任务上最高达 99% 成功率；从 1 个智能体扩展到 8 个后，Push-T 完成时间从约 5 小时降至 2 小时，插针从 90 分钟降至约 40 分钟。测试了 Codex（GPT-5.5）、Claude Code（Opus 4.7）和 Kimi Code（Kimi K2.6），Codex 表现最佳。现实环境仍比模拟困难，但该方法为机器人自主改进提供了可行路径。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/nvidia-research-shows-robots-that-train-themselves-through-ai-coding-agents","discovered_at":"2026-06-18T05:58:08.881Z","rank_on_page":250,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Nvidia 研究：AI 编程智能体让机器人自我训练","discovery_summary":"Nvidia、卡内基梅隆大学和 UC Berkeley 联合开发的 ENPIRE 项目，利用 AI 编程智能体让机器人在现实世界中自主进行灵巧抓取训练。8 台双臂 YAM 机器人通过 Git 共享试验结果，智能体自主编写奖励函数、阅读论文并编辑训练代码。在 Push-T 测试、插针和剪扎带等任务上最高达 99% 成功率；从 1 个智能体扩展到 8 个后，Push-T 完成时间从约 5 小时降至 2 小时，插针从 90 分钟降至约 40 分钟。测试了 Codex（GPT-5.5）、Claude Code（Opus 4.7）和 Kimi Code（Kimi K2.6），Codex 表现最佳。现实环境仍比模拟困难，但该方法为机器人自主改进提供了可行路径。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/nvidia-research-shows-robots-that-train-themselves-through-ai-coding-agents","discovered_at":"2026-06-18T06:35:55.956Z","rank_on_page":255,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

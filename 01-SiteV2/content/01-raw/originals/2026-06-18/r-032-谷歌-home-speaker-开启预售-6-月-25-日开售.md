@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T15:57:14.000Z"
-collected_at: 2026-06-18T06:02:59.226Z
+collected_at: 2026-06-18T06:41:08.891Z
 language: mixed
 full_text_hash: e60d240ff0d674bb
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-032-谷歌-home-speaker-开启预售-6-月-25-日开售.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"谷歌 Home Speaker 开启预售，6 月 25 日开售","discovery_summary":"谷歌去年八月发布的新款智能音箱 Google Home Speaker 现已开启预售，售价 $99.99，6 月 25 日正式开售。扁球体织物外观有淡褐、瓷白、翠绿和浆果红四色。支持 360 度声场，底部环形灯带在语音交互时亮起，配备三个远场麦克风和静音开关。内部搭载四核 A55 处理器及专用 NPU，运行本地 AI 模型提升降噪。仅有一个 58mm 全频驱动单元，音质介于 Nest Audio 与 Nest Mini 之间。可与 Google TV Streamer 配对实现沉浸式音频，兼容其他 Nest 设备。购买附赠六个月 Google Home Premium，启用 Gemini Live 支持连续对话。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/google/2026/06/the-gemini-powered-google-home-speaker-arrives-on-june-25-for-100","discovered_at":"2026-06-18T05:58:08.877Z","rank_on_page":231,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"谷歌 Home Speaker 开启预售，6 月 25 日开售","discovery_summary":"谷歌去年八月发布的新款智能音箱 Google Home Speaker 现已开启预售，售价 $99.99，6 月 25 日正式开售。扁球体织物外观有淡褐、瓷白、翠绿和浆果红四色。支持 360 度声场，底部环形灯带在语音交互时亮起，配备三个远场麦克风和静音开关。内部搭载四核 A55 处理器及专用 NPU，运行本地 AI 模型提升降噪。仅有一个 58mm 全频驱动单元，音质介于 Nest Audio 与 Nest Mini 之间。可与 Google TV Streamer 配对实现沉浸式音频，兼容其他 Nest 设备。购买附赠六个月 Google Home Premium，启用 Gemini Live 支持连续对话。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/google/2026/06/the-gemini-powered-google-home-speaker-arrives-on-june-25-for-100","discovered_at":"2026-06-18T06:35:55.952Z","rank_on_page":236,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: e60d240ff0d674bb
 semantic_hash: 775b8be6c89da960
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-17T15:57:14.000Z"
-last_seen_at: 2026-06-18T06:02:59.226Z
+last_seen_at: 2026-06-18T06:41:08.891Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -298,7 +298,7 @@ Customize
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"谷歌 Home Speaker 开启预售，6 月 25 日开售","discovery_summary":"谷歌去年八月发布的新款智能音箱 Google Home Speaker 现已开启预售，售价 $99.99，6 月 25 日正式开售。扁球体织物外观有淡褐、瓷白、翠绿和浆果红四色。支持 360 度声场，底部环形灯带在语音交互时亮起，配备三个远场麦克风和静音开关。内部搭载四核 A55 处理器及专用 NPU，运行本地 AI 模型提升降噪。仅有一个 58mm 全频驱动单元，音质介于 Nest Audio 与 Nest Mini 之间。可与 Google TV Streamer 配对实现沉浸式音频，兼容其他 Nest 设备。购买附赠六个月 Google Home Premium，启用 Gemini Live 支持连续对话。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/google/2026/06/the-gemini-powered-google-home-speaker-arrives-on-june-25-for-100","discovered_at":"2026-06-18T05:58:08.877Z","rank_on_page":231,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"谷歌 Home Speaker 开启预售，6 月 25 日开售","discovery_summary":"谷歌去年八月发布的新款智能音箱 Google Home Speaker 现已开启预售，售价 $99.99，6 月 25 日正式开售。扁球体织物外观有淡褐、瓷白、翠绿和浆果红四色。支持 360 度声场，底部环形灯带在语音交互时亮起，配备三个远场麦克风和静音开关。内部搭载四核 A55 处理器及专用 NPU，运行本地 AI 模型提升降噪。仅有一个 58mm 全频驱动单元，音质介于 Nest Audio 与 Nest Mini 之间。可与 Google TV Streamer 配对实现沉浸式音频，兼容其他 Nest 设备。购买附赠六个月 Google Home Premium，启用 Gemini Live 支持连续对话。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/google/2026/06/the-gemini-powered-google-home-speaker-arrives-on-june-25-for-100","discovered_at":"2026-06-18T06:35:55.952Z","rank_on_page":236,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

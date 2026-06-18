@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-18T06:02:59.734Z
+collected_at: 2026-06-18T06:41:09.383Z
 language: mixed
 full_text_hash: a9ef1b3cc00a383c
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-158-google-医学推理-ai-系统-amie-新研究-从诊断迈向长期疾病管理.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Google 医学推理 AI 系统 AMIE 新研究：从诊断迈向长期疾病管理","discovery_summary":"今日发表在《自然》杂志上的研究展示了 Google 的医学推理 AI 系统 AMIE（Articulate Medical Intelligence Explorer）从单次诊断对话演进到长期疾病管理的能力。AMIE 利用 Gemini 模型的长上下文能力，整合共情对话智能体和深度思考管理推理智能体，可交叉引用数百页临床指南。在盲测中，AMIE 与 21 名初级保健医生相比，在整体管理推理上匹配临床医生，在计划精确性和指南一致性上得分显著更高。","source_name":"Google Blog：AI（RSS）","origin_url":"","discovered_at":"2026-06-18T05:58:06.568Z","rank_on_page":22,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Google 医学推理 AI 系统 AMIE 新研究：从诊断迈向长期疾病管理","discovery_summary":"今日发表在《自然》杂志上的研究展示了 Google 的医学推理 AI 系统 AMIE（Articulate Medical Intelligence Explorer）从单次诊断对话演进到长期疾病管理的能力。AMIE 利用 Gemini 模型的长上下文能力，整合共情对话智能体和深度思考管理推理智能体，可交叉引用数百页临床指南。在盲测中，AMIE 与 21 名初级保健医生相比，在整体管理推理上匹配临床医生，在计划精确性和指南一致性上得分显著更高。","source_name":"Google Blog：AI（RSS）","origin_url":"","discovered_at":"2026-06-18T06:35:54.504Z","rank_on_page":22,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: a9ef1b3cc00a383c
 semantic_hash: 26e10fabbee88254
 duplicate_of: ""
-first_seen_at: "2026-06-18T06:02:59.734Z"
-last_seen_at: 2026-06-18T06:02:59.734Z
+first_seen_at: "2026-06-18T06:41:09.383Z"
+last_seen_at: 2026-06-18T06:41:09.383Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -181,7 +181,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"Google 医学推理 AI 系统 AMIE 新研究：从诊断迈向长期疾病管理","discovery_summary":"今日发表在《自然》杂志上的研究展示了 Google 的医学推理 AI 系统 AMIE（Articulate Medical Intelligence Explorer）从单次诊断对话演进到长期疾病管理的能力。AMIE 利用 Gemini 模型的长上下文能力，整合共情对话智能体和深度思考管理推理智能体，可交叉引用数百页临床指南。在盲测中，AMIE 与 21 名初级保健医生相比，在整体管理推理上匹配临床医生，在计划精确性和指南一致性上得分显著更高。","source_name":"Google Blog：AI（RSS）","origin_url":"","discovered_at":"2026-06-18T05:58:06.568Z","rank_on_page":22,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Google 医学推理 AI 系统 AMIE 新研究：从诊断迈向长期疾病管理","discovery_summary":"今日发表在《自然》杂志上的研究展示了 Google 的医学推理 AI 系统 AMIE（Articulate Medical Intelligence Explorer）从单次诊断对话演进到长期疾病管理的能力。AMIE 利用 Gemini 模型的长上下文能力，整合共情对话智能体和深度思考管理推理智能体，可交叉引用数百页临床指南。在盲测中，AMIE 与 21 名初级保健医生相比，在整体管理推理上匹配临床医生，在计划精确性和指南一致性上得分显著更高。","source_name":"Google Blog：AI（RSS）","origin_url":"","discovered_at":"2026-06-18T06:35:54.504Z","rank_on_page":22,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

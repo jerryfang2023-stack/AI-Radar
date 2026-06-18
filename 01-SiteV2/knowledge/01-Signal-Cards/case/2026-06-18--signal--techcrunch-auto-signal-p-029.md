@@ -1,5 +1,5 @@
 ---
-id: SIG-20260618-A15
+id: SIG-20260618-A16
 type: signal_card
 signal_type: case
 title: "G7领导人担忧美国随时切断AI访问，讨论建立"信任伙伴"计划"
@@ -9,8 +9,8 @@ source_title: "G7领导人担忧美国随时切断AI访问，讨论建立"信任
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-18T06:03:00.029Z
-updated_at: 2026-06-18T06:03:00.029Z
+created_at: 2026-06-18T06:41:09.947Z
+updated_at: 2026-06-18T06:41:09.947Z
 
 raw_refs: ["R-029"]
 pool_refs: ["P-029"]

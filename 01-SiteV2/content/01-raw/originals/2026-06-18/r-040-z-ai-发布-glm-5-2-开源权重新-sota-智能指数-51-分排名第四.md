@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T07:12:13.000Z"
-collected_at: 2026-06-18T06:02:59.266Z
+collected_at: 2026-06-18T06:41:08.931Z
 language: mixed
 full_text_hash: ac21f9bed1756f1e
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-040-z-ai-发布-glm-5-2-开源权重新-sota-智能指数-51-分排名第四.md"
@@ -45,7 +45,7 @@ capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Z ai 发布 GLM-5.2：开源权重新 SOTA，智能指数 51 分排名第四","discovery_summary":"Z ai 推出 GLM-5.2，在 Artificial Analysis Intelligence Index 上得 51 分排名第四，成为开源权重 SOTA。模型规模同 GLM-5.1（744B 总/40B 活跃参数），智能指数 v4.1 提升 11 分。科学推理显著增强：CritPt +16% 至 21%，HLE +12% 至 40%，GPQA Diamond +3% 至 89%。上下文窗口升至 1M tokens。API 定价 $1.4/$4.4/$0.26 每 1M 输入/输出/缓存命中 token，每任务成本约 $0.46，处智能 vs 成本帕累托前沿。MIT 许可证，已上线 DeepInfra 等第三方平台。","source_name":"X：Testing Catalog (@testingcatalog)","origin_url":"https://x.com/testingcatalog/status/2067143261848842670","discovered_at":"2026-06-18T05:58:08.902Z","rank_on_page":347,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Z ai 发布 GLM-5.2：开源权重新 SOTA，智能指数 51 分排名第四","discovery_summary":"Z ai 推出 GLM-5.2，在 Artificial Analysis Intelligence Index 上得 51 分排名第四，成为开源权重 SOTA。模型规模同 GLM-5.1（744B 总/40B 活跃参数），智能指数 v4.1 提升 11 分。科学推理显著增强：CritPt +16% 至 21%，HLE +12% 至 40%，GPQA Diamond +3% 至 89%。上下文窗口升至 1M tokens。API 定价 $1.4/$4.4/$0.26 每 1M 输入/输出/缓存命中 token，每任务成本约 $0.46，处智能 vs 成本帕累托前沿。MIT 许可证，已上线 DeepInfra 等第三方平台。","source_name":"X：Testing Catalog (@testingcatalog)","origin_url":"https://x.com/testingcatalog/status/2067143261848842670","discovered_at":"2026-06-18T06:35:55.977Z","rank_on_page":352,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: ac21f9bed1756f1e
 semantic_hash: 94d5364a74f89a3c
 duplicate_of: ""
 first_seen_at: "2026-06-17T07:12:13.000Z"
-last_seen_at: 2026-06-18T06:02:59.266Z
+last_seen_at: 2026-06-18T06:41:08.931Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
@@ -218,7 +218,7 @@ Read 15 replies
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Z ai 发布 GLM-5.2：开源权重新 SOTA，智能指数 51 分排名第四","discovery_summary":"Z ai 推出 GLM-5.2，在 Artificial Analysis Intelligence Index 上得 51 分排名第四，成为开源权重 SOTA。模型规模同 GLM-5.1（744B 总/40B 活跃参数），智能指数 v4.1 提升 11 分。科学推理显著增强：CritPt +16% 至 21%，HLE +12% 至 40%，GPQA Diamond +3% 至 89%。上下文窗口升至 1M tokens。API 定价 $1.4/$4.4/$0.26 每 1M 输入/输出/缓存命中 token，每任务成本约 $0.46，处智能 vs 成本帕累托前沿。MIT 许可证，已上线 DeepInfra 等第三方平台。","source_name":"X：Testing Catalog (@testingcatalog)","origin_url":"https://x.com/testingcatalog/status/2067143261848842670","discovered_at":"2026-06-18T05:58:08.902Z","rank_on_page":347,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Z ai 发布 GLM-5.2：开源权重新 SOTA，智能指数 51 分排名第四","discovery_summary":"Z ai 推出 GLM-5.2，在 Artificial Analysis Intelligence Index 上得 51 分排名第四，成为开源权重 SOTA。模型规模同 GLM-5.1（744B 总/40B 活跃参数），智能指数 v4.1 提升 11 分。科学推理显著增强：CritPt +16% 至 21%，HLE +12% 至 40%，GPQA Diamond +3% 至 89%。上下文窗口升至 1M tokens。API 定价 $1.4/$4.4/$0.26 每 1M 输入/输出/缓存命中 token，每任务成本约 $0.46，处智能 vs 成本帕累托前沿。MIT 许可证，已上线 DeepInfra 等第三方平台。","source_name":"X：Testing Catalog (@testingcatalog)","origin_url":"https://x.com/testingcatalog/status/2067143261848842670","discovered_at":"2026-06-18T06:35:55.977Z","rank_on_page":352,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

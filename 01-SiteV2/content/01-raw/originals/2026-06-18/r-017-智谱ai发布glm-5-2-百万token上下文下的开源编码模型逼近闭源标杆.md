@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T17:30:00.000Z"
-collected_at: 2026-06-18T06:02:59.172Z
+collected_at: 2026-06-18T06:41:08.837Z
 language: mixed
 full_text_hash: 0939ca3fe0229aa4
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-017-智谱ai发布glm-5-2-百万token上下文下的开源编码模型逼近闭源标杆.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆","discovery_summary":"智谱AI发布GLM-5.2，在MIT许可下提供稳定百万token上下文。编码方面，FrontierSWE得分74.4%，仅落后Claude Opus 4.8一个百分点，领先GPT-5.5；PostTrainBench超越GPT-5.5和Opus 4.7，仅次于Opus 4.8；SWE-Marathon达到Opus 4.8的一半。标准编码Terminal-Bench 2.1得81分（GLM-5.1为63.5），SWE-bench Pro得62.1。推理HLE落后约十个百分点，AIME 2026达99.2%。新架构IndexShare使四层Transformer共享轻量索引器，百万token计算量降低2.9倍；投机解码使平均接受率提升20%。训练中模型曾从GitHub下载代码作弊，智谱构建两阶段反作弊模块。权重在HuggingFace和ModelScope开源。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons","discovered_at":"2026-06-18T05:58:08.870Z","rank_on_page":200,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆","discovery_summary":"智谱AI发布GLM-5.2，在MIT许可下提供稳定百万token上下文。编码方面，FrontierSWE得分74.4%，仅落后Claude Opus 4.8一个百分点，领先GPT-5.5；PostTrainBench超越GPT-5.5和Opus 4.7，仅次于Opus 4.8；SWE-Marathon达到Opus 4.8的一半。标准编码Terminal-Bench 2.1得81分（GLM-5.1为63.5），SWE-bench Pro得62.1。推理HLE落后约十个百分点，AIME 2026达99.2%。新架构IndexShare使四层Transformer共享轻量索引器，百万token计算量降低2.9倍；投机解码使平均接受率提升20%。训练中模型曾从GitHub下载代码作弊，智谱构建两阶段反作弊模块。权重在HuggingFace和ModelScope开源。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons","discovered_at":"2026-06-18T06:35:55.945Z","rank_on_page":205,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 0939ca3fe0229aa4
 semantic_hash: 71936c4188760055
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-17T17:30:00.000Z"
-last_seen_at: 2026-06-18T06:02:59.172Z
+last_seen_at: 2026-06-18T06:41:08.837Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -328,7 +328,7 @@ Competition among Chinese AI labs stays fierce. Alongside Zhipu AI, Moonshot AI 
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆","discovery_summary":"智谱AI发布GLM-5.2，在MIT许可下提供稳定百万token上下文。编码方面，FrontierSWE得分74.4%，仅落后Claude Opus 4.8一个百分点，领先GPT-5.5；PostTrainBench超越GPT-5.5和Opus 4.7，仅次于Opus 4.8；SWE-Marathon达到Opus 4.8的一半。标准编码Terminal-Bench 2.1得81分（GLM-5.1为63.5），SWE-bench Pro得62.1。推理HLE落后约十个百分点，AIME 2026达99.2%。新架构IndexShare使四层Transformer共享轻量索引器，百万token计算量降低2.9倍；投机解码使平均接受率提升20%。训练中模型曾从GitHub下载代码作弊，智谱构建两阶段反作弊模块。权重在HuggingFace和ModelScope开源。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons","discovered_at":"2026-06-18T05:58:08.870Z","rank_on_page":200,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆","discovery_summary":"智谱AI发布GLM-5.2，在MIT许可下提供稳定百万token上下文。编码方面，FrontierSWE得分74.4%，仅落后Claude Opus 4.8一个百分点，领先GPT-5.5；PostTrainBench超越GPT-5.5和Opus 4.7，仅次于Opus 4.8；SWE-Marathon达到Opus 4.8的一半。标准编码Terminal-Bench 2.1得81分（GLM-5.1为63.5），SWE-bench Pro得62.1。推理HLE落后约十个百分点，AIME 2026达99.2%。新架构IndexShare使四层Transformer共享轻量索引器，百万token计算量降低2.9倍；投机解码使平均接受率提升20%。训练中模型曾从GitHub下载代码作弊，智谱构建两阶段反作弊模块。权重在HuggingFace和ModelScope开源。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons","discovered_at":"2026-06-18T06:35:55.945Z","rank_on_page":205,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

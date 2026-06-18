@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T22:54:59.000Z"
-collected_at: 2026-06-18T06:02:59.181Z
+collected_at: 2026-06-18T06:41:08.846Z
 language: mixed
-full_text_hash: 6e4f31621d203dcf
+full_text_hash: fcdc2ddc46903161
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-018-anthropic-fable-5-重新发布或因护栏安全受阻.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-018-anthropic-fable-5-重新发布或因护栏安全受阻.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6e4f31621d203dcf","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fcdc2ddc46903161","missing":[]}
 source_volatility: high
 community_name: "X：Kim (@kimmonismus)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Anthropic Fable 5 重新发布或因护栏安全受阻","discovery_summary":"特朗普政府官员要求 Anthropic 在重新发布 Fable 5 前必须确保模型护栏无法被绕过，但安全专家认为这不可能实现。若该要求属实，Fable 5 短期内可能不会重新发布。","source_name":"X：Kim (@kimmonismus)","origin_url":"https://x.com/kimmonismus/status/2067380514919432539","discovered_at":"2026-06-18T05:58:08.854Z","rank_on_page":128,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Anthropic Fable 5 重新发布或因护栏安全受阻","discovery_summary":"特朗普政府官员要求 Anthropic 在重新发布 Fable 5 前必须确保模型护栏无法被绕过，但安全专家认为这不可能实现。若该要求属实，Fable 5 短期内可能不会重新发布。","source_name":"X：Kim (@kimmonismus)","origin_url":"https://x.com/kimmonismus/status/2067380514919432539","discovered_at":"2026-06-18T06:35:55.928Z","rank_on_page":133,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 568999b68a80c4f9
-content_hash: 6e4f31621d203dcf
-semantic_hash: 1145e8c9b1917b50
+content_hash: fcdc2ddc46903161
+semantic_hash: ac3fa161ea4eb578
 duplicate_of: ""
 first_seen_at: "2026-06-17T22:54:59.000Z"
-last_seen_at: 2026-06-18T06:02:59.181Z
+last_seen_at: 2026-06-18T06:41:08.846Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -65,10 +65,10 @@ change_action_detected: true
 evidence_eligibility: eligible
 evidence_block_reason: ""
 guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
-business_elements: {"companies":["X","Kim (@kimmonismus)","Anthropic"],"products":[],"people":[],"industries":[],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["5","12","10","54","17","2026","50.1","1"],"quotes":[]}
+business_elements: {"companies":["X","Kim (@kimmonismus)","Anthropic"],"products":[],"people":[],"industries":[],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["5","13","10","54","17","2026","53.6","1"],"quotes":[]}
 evidence_seed: {"company_actions":["Post Log in Sign up Post Chubby♨️ @kimmonismus That sounds very bad for a soon-to-be re-release of Fable 5.","\"Trump administration officials tell WIRED that if Anthropic wants to rerelease Fable 5, it will need to ensure the model's guardrails can't be circumvented.","\" If this is true, Fable 5 re-release any time soon."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["特朗普政府官员要求 Anthropic 在重新发布 Fable 5 前必须确保模型护栏无法被绕过，但安全专家认为这不可能实现。若该要求属实，Fable 5 短期内可能不会重新发布。","Security experts say that can't be done."]}
 missing_information: ["没有具体客户或真实企业案例"]
-key_excerpts: [{"type":"supporting_context","text":"特朗普政府官员要求 Anthropic 在重新发布 Fable 5 前必须确保模型护栏无法被绕过，但安全专家认为这不可能实现。若该要求属实，Fable 5 短期内可能不会重新发布。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Post Log in Sign up Post Chubby♨️ @kimmonismus That sounds very bad for a soon-to-be re-release of Fable 5.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"\"Trump administration officials tell WIRED that if Anthropic wants to rerelease Fable 5, it will need to ensure the model's guardrails can't be circumvented.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Security experts say that can't be done.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"product_update","text":"\" If this is true, Fable 5 re-release any time soon.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"WIRED @WIRED 12h Trump administration officials tell WIRED that if Anthropic wants to rerelease Fable 5, it will need to ensure the model's guardrails can't be circumvented.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
+key_excerpts: [{"type":"supporting_context","text":"特朗普政府官员要求 Anthropic 在重新发布 Fable 5 前必须确保模型护栏无法被绕过，但安全专家认为这不可能实现。若该要求属实，Fable 5 短期内可能不会重新发布。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Post Log in Sign up Post Chubby♨️ @kimmonismus That sounds very bad for a soon-to-be re-release of Fable 5.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"\"Trump administration officials tell WIRED that if Anthropic wants to rerelease Fable 5, it will need to ensure the model's guardrails can't be circumvented.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Security experts say that can't be done.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"product_update","text":"\" If this is true, Fable 5 re-release any time soon.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"WIRED @WIRED 13h Trump administration officials tell WIRED that if Anthropic wants to rerelease Fable 5, it will need to ensure the model's guardrails can't be circumvented.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
@@ -88,14 +88,14 @@ That sounds very bad for a soon-to-be re-release of Fable 5.
 If this is true, Fable 5 re-release any time soon.
 WIRED
 @WIRED
-12h
+13h
 Trump administration officials tell WIRED that if Anthropic wants to rerelease Fable 5, it will need to ensure the model's guardrails can't be circumvented. Security experts say that can't be done. wired.com/story/the-whit…
-10:54 PM · Jun 17, 2026 50.1K Views
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 56
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 15
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 1 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 412
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 62
-Read 56 replies
+10:54 PM · Jun 17, 2026 53.6K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 57
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 16
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 2 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 427
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 65
+Read 57 replies
 
 ## full_text
 
@@ -109,14 +109,14 @@ That sounds very bad for a soon-to-be re-release of Fable 5.
 If this is true, Fable 5 re-release any time soon.
 WIRED
 @WIRED
-12h
+13h
 Trump administration officials tell WIRED that if Anthropic wants to rerelease Fable 5, it will need to ensure the model's guardrails can't be circumvented. Security experts say that can't be done. wired.com/story/the-whit…
-10:54 PM · Jun 17, 2026 50.1K Views
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 56
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 15
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 1 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 412
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 62
-Read 56 replies
+10:54 PM · Jun 17, 2026 53.6K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 57
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 16
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 2 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 427
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 65
+Read 57 replies
 
 ## extraction_diagnostics
 
@@ -148,7 +148,7 @@ Read 56 replies
    " If this is true, Fable 5 re-release any time soon.
 
 6. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
-   WIRED @WIRED 12h Trump administration officials tell WIRED that if Anthropic wants to rerelease Fable 5, it will need to ensure the model's guardrails can't be circumvented.
+   WIRED @WIRED 13h Trump administration officials tell WIRED that if Anthropic wants to rerelease Fable 5, it will need to ensure the model's guardrails can't be circumvented.
 
 ## business_elements
 
@@ -160,7 +160,7 @@ Read 56 replies
 - workflows: 权限 / 安全治理
 - business_actions: 发布 / 推出
 - affected_departments: IT / 安全
-- numbers: 5, 12, 10, 54, 17, 2026, 50.1, 1
+- numbers: 5, 13, 10, 54, 17, 2026, 53.6, 1
 - quotes: 暂无公开信息
 
 ## evidence_seed
@@ -217,7 +217,7 @@ Read 56 replies
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Anthropic Fable 5 重新发布或因护栏安全受阻","discovery_summary":"特朗普政府官员要求 Anthropic 在重新发布 Fable 5 前必须确保模型护栏无法被绕过，但安全专家认为这不可能实现。若该要求属实，Fable 5 短期内可能不会重新发布。","source_name":"X：Kim (@kimmonismus)","origin_url":"https://x.com/kimmonismus/status/2067380514919432539","discovered_at":"2026-06-18T05:58:08.854Z","rank_on_page":128,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Anthropic Fable 5 重新发布或因护栏安全受阻","discovery_summary":"特朗普政府官员要求 Anthropic 在重新发布 Fable 5 前必须确保模型护栏无法被绕过，但安全专家认为这不可能实现。若该要求属实，Fable 5 短期内可能不会重新发布。","source_name":"X：Kim (@kimmonismus)","origin_url":"https://x.com/kimmonismus/status/2067380514919432539","discovered_at":"2026-06-18T06:35:55.928Z","rank_on_page":133,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

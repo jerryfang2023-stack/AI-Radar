@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T23:24:02.000Z"
-collected_at: 2026-06-18T06:02:59.139Z
+collected_at: 2026-06-18T06:41:08.806Z
 language: mixed
-full_text_hash: c3429773a769e867
+full_text_hash: 1cb3de9894d0d1bc
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-008-智谱开源glm-5-2-openai用gpt-5-4改进化学反应-minimax规划10t模型.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-008-智谱开源glm-5-2-openai用gpt-5-4改进化学反应-minimax规划10t模型.json"
 html_snapshot_path: ""
@@ -30,33 +30,33 @@ screenshot_path: ""
 fetch_status: fetched-readable-text-main
 extraction_quality: high
 extraction_method: "main"
-readability_score: 82
-extractor_diagnostics: {"readability_score":82,"text_length":3283,"paragraph_count":42,"sentence_count":13,"boilerplate_hits":2,"symbol_ratio":0.0116,"method":"main"}
+readability_score: 87
+extractor_diagnostics: {"readability_score":87,"text_length":3755,"paragraph_count":43,"sentence_count":13,"boilerplate_hits":2,"symbol_ratio":0.0146,"method":"main"}
 has_full_text: true
-content_length: 3283
+content_length: 3755
 fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c3429773a769e867","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1cb3de9894d0d1bc","missing":[]}
 source_volatility: high
 community_name: "X：洪明 (@hongming731)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"智谱开源GLM-5.2，OpenAI用GPT-5.4改进化学反应，MiniMax规划10T模型","discovery_summary":"智谱开源GLM-5.2，Code Arena盲测全球可用模型第一，专注Coding与长程任务，支持百万token无损上下文，单位token FLOPs降至2.9倍，MIT协议全开源。OpenAI将GPT-5.4接入Molecule.one自主改进Chan-Lam偶联反应，两轮10080次实验后平均产率从16.6%升至25.2%，14组底物中11组提升。MiniMax闫俊杰称M3目标无限制用Sonnet/Opus级别模型，计划攻克10T参数模型。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2067387826258489685","discovered_at":"2026-06-18T05:58:08.852Z","rank_on_page":120,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"智谱开源GLM-5.2，OpenAI用GPT-5.4改进化学反应，MiniMax规划10T模型","discovery_summary":"智谱开源GLM-5.2，Code Arena盲测全球可用模型第一，专注Coding与长程任务，支持百万token无损上下文，单位token FLOPs降至2.9倍，MIT协议全开源。OpenAI将GPT-5.4接入Molecule.one自主改进Chan-Lam偶联反应，两轮10080次实验后平均产率从16.6%升至25.2%，14组底物中11组提升。MiniMax闫俊杰称M3目标无限制用Sonnet/Opus级别模型，计划攻克10T参数模型。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2067387826258489685","discovered_at":"2026-06-18T06:35:55.926Z","rank_on_page":125,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 5c2d0c1a166b4b33
-content_hash: c3429773a769e867
+content_hash: 1cb3de9894d0d1bc
 semantic_hash: b63eecf7fee0c137
 duplicate_of: ""
 first_seen_at: "2026-06-17T23:24:02.000Z"
-last_seen_at: 2026-06-18T06:02:59.139Z
+last_seen_at: 2026-06-18T06:41:08.806Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
@@ -131,13 +131,14 @@ BestBlogs 是 AI 驱动的私人阅读助手，帮助你建立稳定、可信、
 在线阅读： bestblogs.dev/explore/brief/…
 ginobefun
 @hongming731
-6h
+7h
 Article
 BestBlogs 早报 · 06-18｜GLM-5.2 开源、AI 化学家、对话闫俊杰
 在线阅读本期早报
 导语
 智谱 GLM-5.2 今天上线并开源，凭 Solid 1M 上下文把长程编程能力拉进开源模型第一梯队；OpenAI 让 GPT-5.4 与化学实验室协作，近乎自主跑通了一个药物合成关键反应的优化；MiniMax...
-11:24 PM · Jun 17, 2026 648 Views
+11:24 PM · Jun 17, 2026 668 Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
 
 ## full_text
@@ -195,22 +196,23 @@ BestBlogs 是 AI 驱动的私人阅读助手，帮助你建立稳定、可信、
 在线阅读： bestblogs.dev/explore/brief/…
 ginobefun
 @hongming731
-6h
+7h
 Article
 BestBlogs 早报 · 06-18｜GLM-5.2 开源、AI 化学家、对话闫俊杰
 在线阅读本期早报
 导语
 智谱 GLM-5.2 今天上线并开源，凭 Solid 1M 上下文把长程编程能力拉进开源模型第一梯队；OpenAI 让 GPT-5.4 与化学实验室协作，近乎自主跑通了一个药物合成关键反应的优化；MiniMax...
-11:24 PM · Jun 17, 2026 648 Views
+11:24 PM · Jun 17, 2026 668 Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
 
 ## extraction_diagnostics
 
 - extraction_method: main
-- readability_score: 82
+- readability_score: 87
 - fetch_status: fetched-readable-text-main
 - extraction_quality: high
-- diagnostics: {"readability_score":82,"text_length":3283,"paragraph_count":42,"sentence_count":13,"boilerplate_hits":2,"symbol_ratio":0.0116,"method":"main"}
+- diagnostics: {"readability_score":87,"text_length":3755,"paragraph_count":43,"sentence_count":13,"boilerplate_hits":2,"symbol_ratio":0.0146,"method":"main"}
 
 ## markdown_snapshot
 
@@ -304,7 +306,7 @@ BestBlogs 早报 · 06-18｜GLM-5.2 开源、AI 化学家、对话闫俊杰
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"智谱开源GLM-5.2，OpenAI用GPT-5.4改进化学反应，MiniMax规划10T模型","discovery_summary":"智谱开源GLM-5.2，Code Arena盲测全球可用模型第一，专注Coding与长程任务，支持百万token无损上下文，单位token FLOPs降至2.9倍，MIT协议全开源。OpenAI将GPT-5.4接入Molecule.one自主改进Chan-Lam偶联反应，两轮10080次实验后平均产率从16.6%升至25.2%，14组底物中11组提升。MiniMax闫俊杰称M3目标无限制用Sonnet/Opus级别模型，计划攻克10T参数模型。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2067387826258489685","discovered_at":"2026-06-18T05:58:08.852Z","rank_on_page":120,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"智谱开源GLM-5.2，OpenAI用GPT-5.4改进化学反应，MiniMax规划10T模型","discovery_summary":"智谱开源GLM-5.2，Code Arena盲测全球可用模型第一，专注Coding与长程任务，支持百万token无损上下文，单位token FLOPs降至2.9倍，MIT协议全开源。OpenAI将GPT-5.4接入Molecule.one自主改进Chan-Lam偶联反应，两轮10080次实验后平均产率从16.6%升至25.2%，14组底物中11组提升。MiniMax闫俊杰称M3目标无限制用Sonnet/Opus级别模型，计划攻克10T参数模型。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2067387826258489685","discovered_at":"2026-06-18T06:35:55.926Z","rank_on_page":125,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

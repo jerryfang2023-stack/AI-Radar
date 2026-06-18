@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T22:09:47.000Z"
-collected_at: 2026-06-18T06:02:59.185Z
+collected_at: 2026-06-18T06:41:08.850Z
 language: mixed
 full_text_hash: 0b8c6c98d7595ace
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-020-z-ai-发布-glm-5-2-等-ai-行业动态.md"
@@ -45,7 +45,7 @@ capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Z.ai 发布 GLM 5.2 等 AI 行业动态","discovery_summary":"Z.ai 推出 GLM 5.2 模型，1M 上下文窗口、MIT 许可开源权重，面向长周期编码智能体。Tensordyne 宣布推理系统，机架吞吐量达 NVIDIA NVL72 GB300 的 13 倍。MIT 研究显示代码量激增 300% 但产出仅增 30%。Google 发布 DiffusionGemma，26B MoE 仅激活 3.8B。Anthropic CEO Dario Amodei 呼吁紧急政策改革。OpenAI 收购 Ona，为 Codex 智能体提供安全云桌面。美国商务部长致信 Anthropic，就禁止外国用户使用 Mythos 和 Fable 做出说明。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2067369141116555485","discovered_at":"2026-06-18T05:58:08.856Z","rank_on_page":138,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Z.ai 发布 GLM 5.2 等 AI 行业动态","discovery_summary":"Z.ai 推出 GLM 5.2 模型，1M 上下文窗口、MIT 许可开源权重，面向长周期编码智能体。Tensordyne 宣布推理系统，机架吞吐量达 NVIDIA NVL72 GB300 的 13 倍。MIT 研究显示代码量激增 300% 但产出仅增 30%。Google 发布 DiffusionGemma，26B MoE 仅激活 3.8B。Anthropic CEO Dario Amodei 呼吁紧急政策改革。OpenAI 收购 Ona，为 Codex 智能体提供安全云桌面。美国商务部长致信 Anthropic，就禁止外国用户使用 Mythos 和 Fable 做出说明。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2067369141116555485","discovered_at":"2026-06-18T06:35:55.931Z","rank_on_page":143,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 0b8c6c98d7595ace
 semantic_hash: b18bc1d380966685
 duplicate_of: ""
 first_seen_at: "2026-06-17T22:09:47.000Z"
-last_seen_at: 2026-06-18T06:02:59.185Z
+last_seen_at: 2026-06-18T06:41:08.850Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
@@ -220,7 +220,7 @@ Read 2 replies
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Z.ai 发布 GLM 5.2 等 AI 行业动态","discovery_summary":"Z.ai 推出 GLM 5.2 模型，1M 上下文窗口、MIT 许可开源权重，面向长周期编码智能体。Tensordyne 宣布推理系统，机架吞吐量达 NVIDIA NVL72 GB300 的 13 倍。MIT 研究显示代码量激增 300% 但产出仅增 30%。Google 发布 DiffusionGemma，26B MoE 仅激活 3.8B。Anthropic CEO Dario Amodei 呼吁紧急政策改革。OpenAI 收购 Ona，为 Codex 智能体提供安全云桌面。美国商务部长致信 Anthropic，就禁止外国用户使用 Mythos 和 Fable 做出说明。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2067369141116555485","discovered_at":"2026-06-18T05:58:08.856Z","rank_on_page":138,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Z.ai 发布 GLM 5.2 等 AI 行业动态","discovery_summary":"Z.ai 推出 GLM 5.2 模型，1M 上下文窗口、MIT 许可开源权重，面向长周期编码智能体。Tensordyne 宣布推理系统，机架吞吐量达 NVIDIA NVL72 GB300 的 13 倍。MIT 研究显示代码量激增 300% 但产出仅增 30%。Google 发布 DiffusionGemma，26B MoE 仅激活 3.8B。Anthropic CEO Dario Amodei 呼吁紧急政策改革。OpenAI 收购 Ona，为 Codex 智能体提供安全云桌面。美国商务部长致信 Anthropic，就禁止外国用户使用 Mythos 和 Fable 做出说明。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2067369141116555485","discovered_at":"2026-06-18T06:35:55.931Z","rank_on_page":143,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

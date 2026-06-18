@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T19:25:19.000Z"
-collected_at: 2026-06-18T06:02:59.160Z
+collected_at: 2026-06-18T06:41:08.826Z
 language: mixed
 full_text_hash: 465df2f1e4250f01
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-014-ai编码智能体教会机器人安装gpu和剪扎带-nvidia-gear等团队开发enpire框架.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"AI编码智能体教会机器人安装GPU和剪扎带--NVIDIA GEAR等团队开发ENPIRE框架","discovery_summary":"NVIDIA GEAR实验室联合卡内基梅隆大学和UC Berkeley开发了ENPIRE框架，让AI编码智能体自主训练机器人。测试了OpenAI Codex（GPT-5.5）、Anthropic Claude Code（Opus 4.7）和月之暗面Kimi Code（Kimi K2.6）。在Push-T、插针盒、剪扎带和GPU安装等任务中，智能体达到99%成功率；插针任务中AI智能体比人类参与方法更快接近100%。8个智能体协作2小时完成Push-T（4个需3小时，单个近5小时）。局限包括机器人闲置、智能体耗时总结彼此想法和token消耗高。团队将开源全部内容。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training","discovered_at":"2026-06-18T05:58:08.864Z","rank_on_page":174,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"AI编码智能体教会机器人安装GPU和剪扎带--NVIDIA GEAR等团队开发ENPIRE框架","discovery_summary":"NVIDIA GEAR实验室联合卡内基梅隆大学和UC Berkeley开发了ENPIRE框架，让AI编码智能体自主训练机器人。测试了OpenAI Codex（GPT-5.5）、Anthropic Claude Code（Opus 4.7）和月之暗面Kimi Code（Kimi K2.6）。在Push-T、插针盒、剪扎带和GPU安装等任务中，智能体达到99%成功率；插针任务中AI智能体比人类参与方法更快接近100%。8个智能体协作2小时完成Push-T（4个需3小时，单个近5小时）。局限包括机器人闲置、智能体耗时总结彼此想法和token消耗高。团队将开源全部内容。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training","discovered_at":"2026-06-18T06:35:55.939Z","rank_on_page":179,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 465df2f1e4250f01
 semantic_hash: 3c5bd26948e0266d
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-17T19:25:19.000Z"
-last_seen_at: 2026-06-18T06:02:59.160Z
+last_seen_at: 2026-06-18T06:41:08.826Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -287,7 +287,7 @@ Customize
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"AI编码智能体教会机器人安装GPU和剪扎带--NVIDIA GEAR等团队开发ENPIRE框架","discovery_summary":"NVIDIA GEAR实验室联合卡内基梅隆大学和UC Berkeley开发了ENPIRE框架，让AI编码智能体自主训练机器人。测试了OpenAI Codex（GPT-5.5）、Anthropic Claude Code（Opus 4.7）和月之暗面Kimi Code（Kimi K2.6）。在Push-T、插针盒、剪扎带和GPU安装等任务中，智能体达到99%成功率；插针任务中AI智能体比人类参与方法更快接近100%。8个智能体协作2小时完成Push-T（4个需3小时，单个近5小时）。局限包括机器人闲置、智能体耗时总结彼此想法和token消耗高。团队将开源全部内容。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training","discovered_at":"2026-06-18T05:58:08.864Z","rank_on_page":174,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"AI编码智能体教会机器人安装GPU和剪扎带--NVIDIA GEAR等团队开发ENPIRE框架","discovery_summary":"NVIDIA GEAR实验室联合卡内基梅隆大学和UC Berkeley开发了ENPIRE框架，让AI编码智能体自主训练机器人。测试了OpenAI Codex（GPT-5.5）、Anthropic Claude Code（Opus 4.7）和月之暗面Kimi Code（Kimi K2.6）。在Push-T、插针盒、剪扎带和GPU安装等任务中，智能体达到99%成功率；插针任务中AI智能体比人类参与方法更快接近100%。8个智能体协作2小时完成Push-T（4个需3小时，单个近5小时）。局限包括机器人闲置、智能体耗时总结彼此想法和token消耗高。团队将开源全部内容。","source_name":"Ars Technica：AI（RSS）","origin_url":"https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training","discovered_at":"2026-06-18T06:35:55.939Z","rank_on_page":179,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

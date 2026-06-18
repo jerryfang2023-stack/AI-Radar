@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T14:15:22.000Z"
-collected_at: 2026-06-18T06:02:59.154Z
+collected_at: 2026-06-18T06:41:08.820Z
 language: mixed
 full_text_hash: 11033ee8b2799d67
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-012-pramaana-labs-获-2700-万美元种子轮融资-用形式化验证提升-ai-可靠性.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Pramaana Labs 获 2700 万美元种子轮融资，用形式化验证提升 AI 可靠性","discovery_summary":"Pramaana Labs 宣布获得 2700 万美元种子轮融资，由 Khosla Ventures 领投，Accel、Boldcap 等跟投。该公司致力于将形式化验证引入 AI 系统，针对法律、药物发现和税务准备等高敏感领域，解决模型幻觉和错误问题。其系统在传统 LLM 之上叠加确定性验证层，利用开源 LEAN 编程语言确保输出正确。每个用例由领域专家监督构建专属形式化验证系统，团队已邀请前 IRS 委员及多所大学教授参与税务、网络安全和药物发现系统的开发。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai","discovered_at":"2026-06-18T05:58:08.884Z","rank_on_page":263,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Pramaana Labs 获 2700 万美元种子轮融资，用形式化验证提升 AI 可靠性","discovery_summary":"Pramaana Labs 宣布获得 2700 万美元种子轮融资，由 Khosla Ventures 领投，Accel、Boldcap 等跟投。该公司致力于将形式化验证引入 AI 系统，针对法律、药物发现和税务准备等高敏感领域，解决模型幻觉和错误问题。其系统在传统 LLM 之上叠加确定性验证层，利用开源 LEAN 编程语言确保输出正确。每个用例由领域专家监督构建专属形式化验证系统，团队已邀请前 IRS 委员及多所大学教授参与税务、网络安全和药物发现系统的开发。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai","discovered_at":"2026-06-18T06:35:55.959Z","rank_on_page":268,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 11033ee8b2799d67
 semantic_hash: 6f23d7bf61410d1d
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-17T14:15:22.000Z"
-last_seen_at: 2026-06-18T06:02:59.154Z
+last_seen_at: 2026-06-18T06:41:08.820Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -267,7 +267,7 @@ Error loading the next article
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Pramaana Labs 获 2700 万美元种子轮融资，用形式化验证提升 AI 可靠性","discovery_summary":"Pramaana Labs 宣布获得 2700 万美元种子轮融资，由 Khosla Ventures 领投，Accel、Boldcap 等跟投。该公司致力于将形式化验证引入 AI 系统，针对法律、药物发现和税务准备等高敏感领域，解决模型幻觉和错误问题。其系统在传统 LLM 之上叠加确定性验证层，利用开源 LEAN 编程语言确保输出正确。每个用例由领域专家监督构建专属形式化验证系统，团队已邀请前 IRS 委员及多所大学教授参与税务、网络安全和药物发现系统的开发。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai","discovered_at":"2026-06-18T05:58:08.884Z","rank_on_page":263,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Pramaana Labs 获 2700 万美元种子轮融资，用形式化验证提升 AI 可靠性","discovery_summary":"Pramaana Labs 宣布获得 2700 万美元种子轮融资，由 Khosla Ventures 领投，Accel、Boldcap 等跟投。该公司致力于将形式化验证引入 AI 系统，针对法律、药物发现和税务准备等高敏感领域，解决模型幻觉和错误问题。其系统在传统 LLM 之上叠加确定性验证层，利用开源 LEAN 编程语言确保输出正确。每个用例由领域专家监督构建专属形式化验证系统，团队已邀请前 IRS 委员及多所大学教授参与税务、网络安全和药物发现系统的开发。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai","discovered_at":"2026-06-18T06:35:55.959Z","rank_on_page":268,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

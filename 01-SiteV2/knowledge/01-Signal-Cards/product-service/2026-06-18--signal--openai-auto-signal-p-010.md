@@ -1,5 +1,5 @@
 ---
-id: SIG-20260618-A17
+id: SIG-20260618-A19
 type: signal_card
 signal_type: product_service
 title: "OpenAI 发布 AI 基础设施能力，切入地产和建筑设计工作流"
@@ -9,8 +9,8 @@ source_title: "XDOF获7000万美元融资，构建机器人训练数据基础设
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-18T06:03:00.029Z
-updated_at: 2026-06-18T06:03:00.029Z
+created_at: 2026-06-18T06:41:09.947Z
+updated_at: 2026-06-18T06:41:09.947Z
 
 raw_refs: ["R-010"]
 pool_refs: ["P-010"]

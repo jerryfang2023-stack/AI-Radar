@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T23:09:09.056Z"
-collected_at: 2026-06-18T06:02:59.129Z
+collected_at: 2026-06-18T06:41:08.795Z
 language: mixed
-full_text_hash: e24c26488dfd754b
+full_text_hash: 91724d461c838f1f
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-005-泄露文件显示openai年营收130亿但亏损远超收入.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-005-泄露文件显示openai年营收130亿但亏损远超收入.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e24c26488dfd754b","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"91724d461c838f1f","missing":[]}
 source_volatility: high
 community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
 capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: user_feedback_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"泄露文件显示OpenAI年营收130亿但亏损远超收入","discovery_summary":"OpenAI 2025年营收130.7亿美元（2024年37亿），但研发成本达191.8亿（含向微软支付105.9亿），收入成本（推理计算）75亿，销售营销成本57.3亿，运营亏损209.2亿。2025年净亏损约390亿，扣除约300亿一次性会计费用后约80亿。2025年3月获1220亿融资（估值8520亿）。ChatGPT周活超9亿，付费约5000万。为控制成本已关闭Sora视频模型并削减非核心业务。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year","discovered_at":"2026-06-18T05:58:08.853Z","rank_on_page":125,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"泄露文件显示OpenAI年营收130亿但亏损远超收入","discovery_summary":"OpenAI 2025年营收130.7亿美元（2024年37亿），但研发成本达191.8亿（含向微软支付105.9亿），收入成本（推理计算）75亿，销售营销成本57.3亿，运营亏损209.2亿。2025年净亏损约390亿，扣除约300亿一次性会计费用后约80亿。2025年3月获1220亿融资（估值8520亿）。ChatGPT周活超9亿，付费约5000万。为控制成本已关闭Sora视频模型并削减非核心业务。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year","discovered_at":"2026-06-18T06:35:55.928Z","rank_on_page":130,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 9868db45791bc58d
-content_hash: e24c26488dfd754b
+content_hash: 91724d461c838f1f
 semantic_hash: 9d418fb7cbb0ab0b
 duplicate_of: ""
 first_seen_at: "2026-06-17T23:09:09.056Z"
-last_seen_at: 2026-06-18T06:02:59.129Z
+last_seen_at: 2026-06-18T06:41:08.795Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -122,7 +122,7 @@ Senior Gaming Editor
 Kyle Orland
 Senior Gaming Editor
 Kyle Orland has been the Senior Gaming Editor at Ars Technica since 2012, writing primarily about the business, tech, and culture behind video games. He has journalism and computer science degrees from University of Maryland. He once wrote a whole book about Minesweeper .
-203 Comments
+212 Comments
 Comments
 Forum view
 Loading comments...
@@ -186,7 +186,7 @@ Senior Gaming Editor
 Kyle Orland
 Senior Gaming Editor
 Kyle Orland has been the Senior Gaming Editor at Ars Technica since 2012, writing primarily about the business, tech, and culture behind video games. He has journalism and computer science degrees from University of Maryland. He once wrote a whole book about Minesweeper .
-203 Comments
+212 Comments
 Comments
 Forum view
 Loading comments...
@@ -303,7 +303,7 @@ Customize
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"泄露文件显示OpenAI年营收130亿但亏损远超收入","discovery_summary":"OpenAI 2025年营收130.7亿美元（2024年37亿），但研发成本达191.8亿（含向微软支付105.9亿），收入成本（推理计算）75亿，销售营销成本57.3亿，运营亏损209.2亿。2025年净亏损约390亿，扣除约300亿一次性会计费用后约80亿。2025年3月获1220亿融资（估值8520亿）。ChatGPT周活超9亿，付费约5000万。为控制成本已关闭Sora视频模型并削减非核心业务。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year","discovered_at":"2026-06-18T05:58:08.853Z","rank_on_page":125,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"泄露文件显示OpenAI年营收130亿但亏损远超收入","discovery_summary":"OpenAI 2025年营收130.7亿美元（2024年37亿），但研发成本达191.8亿（含向微软支付105.9亿），收入成本（推理计算）75亿，销售营销成本57.3亿，运营亏损209.2亿。2025年净亏损约390亿，扣除约300亿一次性会计费用后约80亿。2025年3月获1220亿融资（估值8520亿）。ChatGPT周活超9亿，付费约5000万。为控制成本已关闭Sora视频模型并削减非核心业务。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year","discovered_at":"2026-06-18T06:35:55.928Z","rank_on_page":130,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 
