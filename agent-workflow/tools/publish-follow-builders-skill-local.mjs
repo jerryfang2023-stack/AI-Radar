@@ -125,6 +125,11 @@ function writeReport(lines) {
   fs.writeFileSync(reportFile, `${lines.join("\n")}\n`, "utf8");
 }
 
+function appendReport(lines) {
+  fs.mkdirSync(reportsDir, { recursive: true });
+  fs.appendFileSync(reportFile, `${lines.join("\n")}\n`, "utf8");
+}
+
 function openOrUpdatePr() {
   const bodyFile = path.join(os.tmpdir(), `wavesight-follow-builders-skill-${date}-pr.md`);
   fs.writeFileSync(bodyFile, [
@@ -323,4 +328,20 @@ function main() {
   }, null, 2));
 }
 
-main();
+try {
+  main();
+} catch (error) {
+  const message = String(error?.message || error || "unknown error").replace(/\r?\n/gu, " | ");
+  if (fs.existsSync(reportFile)) {
+    appendReport([
+      "",
+      "## Publish Failure",
+      "",
+      `- publish_status: failed`,
+      `- failed_at: ${new Date().toISOString()}`,
+      `- failed_at_shanghai: ${shanghaiTimestamp()}`,
+      `- publish_error: ${JSON.stringify(message)}`,
+    ]);
+  }
+  throw error;
+}
