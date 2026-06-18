@@ -17,8 +17,8 @@ item_count: 5
 - source_title: Governed AI Agents: How to Deploy and Scale with Confidence
 - source_url: https://boomi.com/blog/ai-agents-deployment-and-governance/
 - source_ref: P-060
-- raw_archive: [Raw 原文快照](../../../../content/01-raw/originals/2026-06-18/r-079-governed-ai-agents-how-to-deploy-and-scale-with-confidence.md) / [Raw JSON](../../../../content/01-raw/originals/2026-06-18/r-079-governed-ai-agents-how-to-deploy-and-scale-with-confidence.json)
-- signal_card: [Signal Card](../../../01-Signal-Cards/case/2026-06-18--signal--governed-ai-agents-auto-signal-p-060.md)
+- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-06-18/r-079-governed-ai-agents-how-to-deploy-and-scale-with-confidence.md) / [Raw JSON](../../01-raw/originals/2026-06-18/r-079-governed-ai-agents-how-to-deploy-and-scale-with-confidence.json)
+- signal_card: [Signal Card](../../../knowledge/01-Signal-Cards/case/2026-06-18--signal--governed-ai-agents-auto-signal-p-060.md)
 - stage: 治理边界
 - scenario: 客户服务与销售
 - workflow: 客服响应、线索跟进与知识检索
@@ -31,7 +31,7 @@ item_count: 5
 - source_title: What a Claude-First Healthcare FDE Pod Actually Does — Field Note
 - source_url: https://genzeon.one/research/field-notes/claude-first-healthcare-fde-pod
 - source_ref: P-055
-- raw_archive: [Raw 原文快照](../../../../content/01-raw/originals/2026-06-18/r-065-what-a-claude-first-healthcare-fde-pod-actually-does-field-note-genzeo.md) / [Raw JSON](../../../../content/01-raw/originals/2026-06-18/r-065-what-a-claude-first-healthcare-fde-pod-actually-does-field-note-genzeo.json)
+- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-06-18/r-065-what-a-claude-first-healthcare-fde-pod-actually-does-field-note-genzeo.md) / [Raw JSON](../../01-raw/originals/2026-06-18/r-065-what-a-claude-first-healthcare-fde-pod-actually-does-field-note-genzeo.json)
 - signal_card: lens-only，未生成正式 Signal Card
 - stage: 生产上线
 - scenario: 高合规行业
@@ -45,8 +45,8 @@ item_count: 5
 - source_title: Ontora: AI agents that interviews every employee to hand context to AI tools.
 - source_url: https://www.ycombinator.com/companies/ontora
 - source_ref: n/a
-- raw_archive: [Raw 原文快照](../../../../content/01-raw/originals/2026-06-18/r-119-ontora-ai-agents-that-interviews-every-employee-to-hand-context-to-ai-.md) / [Raw JSON](../../../../content/01-raw/originals/2026-06-18/r-119-ontora-ai-agents-that-interviews-every-employee-to-hand-context-to-ai-.json)
-- signal_card: [Signal Card](../../../01-Signal-Cards/case/2026-06-18--signal--ontora-auto-signal-p-065.md)
+- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-06-18/r-119-ontora-ai-agents-that-interviews-every-employee-to-hand-context-to-ai-.md) / [Raw JSON](../../01-raw/originals/2026-06-18/r-119-ontora-ai-agents-that-interviews-every-employee-to-hand-context-to-ai-.json)
+- signal_card: [Signal Card](../../../knowledge/01-Signal-Cards/case/2026-06-18--signal--ontora-auto-signal-p-065.md)
 - stage: 生产上线
 - scenario: 数据与知识工作
 - workflow: 企业数据接入与决策支持
@@ -59,8 +59,8 @@ item_count: 5
 - source_title: Announcing the Agentic Resource Discovery specification
 - source_url: https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification
 - source_ref: n/a
-- raw_archive: [Raw 原文快照](../../../../content/01-raw/originals/2026-06-18/r-023-谷歌发布agentic-resource-discovery-ard-开放规范.md) / [Raw JSON](../../../../content/01-raw/originals/2026-06-18/r-023-谷歌发布agentic-resource-discovery-ard-开放规范.json)
-- signal_card: [Signal Card](../../../01-Signal-Cards/case/2026-06-18--signal--googleblog-auto-signal-p-022.md)
+- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-06-18/r-023-谷歌发布agentic-resource-discovery-ard-开放规范.md) / [Raw JSON](../../01-raw/originals/2026-06-18/r-023-谷歌发布agentic-resource-discovery-ard-开放规范.json)
+- signal_card: [Signal Card](../../../knowledge/01-Signal-Cards/case/2026-06-18--signal--googleblog-auto-signal-p-022.md)
 - stage: 生产上线
 - scenario: 软件研发
 - workflow: 代码、审查与交付流程
@@ -73,8 +73,8 @@ item_count: 5
 - source_title: Applied AI Case Studies and Real-World Success Stories
 - source_url: https://gogloby.com/insights/applied-ai-case-studies/
 - source_ref: n/a
-- raw_archive: [Raw 原文快照](../../../../content/01-raw/originals/2026-06-18/r-063-applied-ai-case-studies-and-real-world-success-stories-gogloby.md) / [Raw JSON](../../../../content/01-raw/originals/2026-06-18/r-063-applied-ai-case-studies-and-real-world-success-stories-gogloby.json)
-- signal_card: [Signal Card](../../../01-Signal-Cards/case/2026-06-18--signal--applied-ai-case-studies-and-real-auto-signal-p-051.md)
+- raw_archive: [Raw 原文快照](../../01-raw/originals/2026-06-18/r-063-applied-ai-case-studies-and-real-world-success-stories-gogloby.md) / [Raw JSON](../../01-raw/originals/2026-06-18/r-063-applied-ai-case-studies-and-real-world-success-stories-gogloby.json)
+- signal_card: [Signal Card](../../../knowledge/01-Signal-Cards/case/2026-06-18--signal--applied-ai-case-studies-and-real-auto-signal-p-051.md)
 - stage: 生产上线
 - scenario: 客户服务与销售
 - workflow: 客服响应、线索跟进与知识检索

@@ -4,7 +4,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const siteDataFile = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
-const fdeRoot = path.join(root, "01-SiteV2", "knowledge", "03-Asset-Candidates", "enterprise-ai-fde");
+const fdeRoot = path.join(root, "01-SiteV2", "content", "09-fde");
 const signalCardsRoot = path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards");
 
 const args = new Map(
