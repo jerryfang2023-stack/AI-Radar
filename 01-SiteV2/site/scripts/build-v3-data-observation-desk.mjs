@@ -490,6 +490,41 @@ function recoverCompleteTitleFromFullText(title = "", fullText = "") {
   return match || cleanTitle;
 }
 
+function sourceTitleLineFromFullText(fullText = "") {
+  const lines = String(fullText || "")
+    .split(/\r?\n/u)
+    .map((line) => line.replace(/\s+/gu, " ").trim())
+    .filter(Boolean);
+  for (const line of lines) {
+    if (line.length < 24 || line.length > 180) continue;
+    if (hasCjk(line)) continue;
+    if (/^(Image Credits?|Credit|Photo|Topics?|Most Popular|Loading the next article|Error loading|REGISTER NOW)\b/iu.test(line)) continue;
+    if (/^(AI|Startups?|Government & Policy|Enterprise|News|Opinion|Sponsored)$/iu.test(line)) continue;
+    if (/^(UPDATED|By)\b/iu.test(line)) continue;
+    if (/\b\d{1,2}:\d{2}\s*(?:AM|PM)\b|\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}\s+\d{4}\b/iu.test(line)) continue;
+    const latinWords = line.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+    if (latinWords.length < 5) continue;
+    if (!/\b(AI|agent|agents|raises?|raised|funding|seed|launches?|announces?|introducing|case|platform|models?|enterprise|robot|robots|World leaders|Design Partner|Framework)\b/iu.test(line)) continue;
+    return cleanEnglishTitleForDisplay(line);
+  }
+  return "";
+}
+
+function sourceTitleFromFullText(fullText = "", fallbackTitle = "") {
+  const recovered = recoverCompleteTitleFromFullText(fallbackTitle, fullText);
+  if (recovered && !hasCjk(recovered) && !publicTitleNeedsTranslation(recovered)) return recovered;
+  const sourceLine = sourceTitleLineFromFullText(fullText);
+  return sourceLine || recovered;
+}
+
+function sourceTitleFromUrlOverride(sourceUrl = "") {
+  const normalized = canonicalUrl(sourceUrl).toLowerCase();
+  if (/prnewswire\.com\/news-releases\/voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with-5-5-million-seed-round/iu.test(normalized)) {
+    return "VoiceRun Launches Full-Stack Voice AI Platform for Enterprises with $5.5 Million Seed Round";
+  }
+  return "";
+}
+
 function subjectFromUrl(url = "") {
   try {
     const parsed = new URL(url);
@@ -747,6 +782,31 @@ function cleanEnglishTitleForDisplay(title = "") {
     .trim();
 }
 
+function sourceTitleLiteralTranslation(title = "", sourceUrl = "") {
+  const raw = String(title || "").replace(/\s+/gu, " ").trim();
+  if (!raw) return "";
+  if (hasCjk(raw)) return raw;
+  const text = cleanEnglishTitleForDisplay(raw);
+  const normalized = canonicalUrl(sourceUrl).toLowerCase();
+  const rules = [
+    [/VoiceRun Launches Full-Stack Voice AI Platform for Enterprises/iu, "VoiceRun 推出面向企业的全栈语音 AI 平台，并完成 550 万美元种子轮融资"],
+    [/VoiceRun gets \$5\.5M in seed funding to give enterprises more control over voice AI agents/iu, "VoiceRun 获得 550 万美元种子融资，让企业更好地控制语音 AI Agent"],
+    [/Pramaana Labs raises \$27M seed round from Khosla Ventures to bring formal verification to AI/iu, "Pramaana Labs 获得 Khosla Ventures 领投的 2700 万美元种子轮融资，将形式化验证引入 AI"],
+    [/Applied AI Case Studies and Real-World Success Stories/iu, "应用 AI 案例研究和真实成功故事"],
+    [/Ontora: AI agents that interviews every employee to hand context to AI tools/iu, "Ontora：访谈每位员工并将上下文交给 AI 工具的 AI Agent"],
+    [/A Framework for Finding A Design Partner/iu, "寻找设计伙伴的框架"],
+    [/Introducing Amazon Bedrock Managed Knowledge Base for faster, more accurate enterprise AI applications/iu, "推出 Amazon Bedrock 托管知识库，用于更快、更准确的企业 AI 应用"],
+    [/Enterprise AI Rollout Failures: Causes and Case Studies/iu, "企业 AI 推广失败：原因与案例研究"],
+    [/Governed AI Agents: How to Deploy and Scale with Confidence/iu, "受治理的 AI Agent：如何自信地部署和扩展"],
+    [/Barcelona-based NeuralTrust raises €17\.2 million to secure and govern enterprise AI agents/iu, "巴塞罗那 NeuralTrust 融资 1720 万欧元，用于保护和治理企业 AI Agent"],
+    [/World leaders want American AI\. They just don[’']t want America to be able to turn it off/iu, "世界领导人想要美国 AI，但不希望美国能够将其关闭"],
+    [/Collecting robot training data is dirty, unglamorous work.*XDOF/iu, "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做"],
+    [/Dangerous AI models are coming, no matter what/iu, "危险的 AI 模型无论如何都会到来"],
+  ];
+  const match = rules.find(([pattern]) => pattern.test(`${text}\n${normalized}`));
+  return match?.[1] || "";
+}
+
 function titleSubject(title = "", sourceUrl = "") {
   return subjectFromEnglishTitle(title)
     || subjectFromUrl(sourceUrl)
@@ -890,6 +950,9 @@ function publicTextLooksGarbled(value = "") {
 }
 
 function publicCandidateIsDisplayReady(card = {}) {
+  if (!card.title || !card.displayTitle) return false;
+  const expectedTitle = publicTitleCandidate(sourceFrontstageTitle(card), card.sourceUrl);
+  if (!expectedTitle || card.title !== expectedTitle || card.displayTitle !== expectedTitle) return false;
   if (publicTitleNeedsTranslation(card.title) || publicTitleNeedsTranslation(card.displayTitle)) return false;
   if (publicFactLooksLikeTemplateFallback(card.translatedFact || card.summary || card.visibleFragment)) return false;
   return [card.summary, card.translatedFact, card.visibleFragment]
@@ -947,10 +1010,12 @@ function safeFrontstageTitle(title = "", sourceUrl = "") {
   return hasCjk(translated) ? translated : fallbackChineseTitleForEnglish(translated, sourceUrl);
 }
 
-function sourceFrontstageTitle(card = {}, originalTitle = "") {
+function sourceFrontstageTitle(card = {}, _originalTitle = "") {
   return [
+    sourceTitleFromUrlOverride(card.sourceUrl),
     card.sourceTitle,
-    originalTitle,
+    card.rawTitle,
+    card.originalSourceTitle,
     card.originalTitle,
   ]
     .map((value) => String(value || "").trim())
@@ -959,6 +1024,10 @@ function sourceFrontstageTitle(card = {}, originalTitle = "") {
 
 function isBadPublicDisplayTitle(title = "") {
   return /案例：\s*AI\s*进入|信号：\s*AI\s*进入|用途见原文|原文所述|原文 AI 事件|原文事件标题|的原文业务场景|linkedin\s+(?:的原文|融资)|github\s+的原文|devblogs\s+应用|angelinvestorsnetwork\s+融资/iu.test(String(title || ""));
+}
+
+function isProcessedChineseTitle(title = "") {
+  return hasCjk(title) && /押注|资金流向|业务信号|基础设施能力|可用于观察|值得关注/u.test(String(title || ""));
 }
 
 function cleanBadPublicDisplayTitle(title = "") {
@@ -1001,22 +1070,15 @@ function sourceUrlTitleFallbackForDisplay(sourceUrl = "") {
 function publicTitleCandidate(title = "", sourceUrl = "") {
   const raw = String(title || "").trim();
   if (!raw || isBadPublicDisplayTitle(raw)) return "";
-  const mappedTitle = frontstageChineseTitle(raw, sourceUrl);
-  const candidate = mappedTitle || (hasCjk(raw) ? raw : sourceDerivedChineseTitleForEnglish(raw, sourceUrl));
+  if (isProcessedChineseTitle(raw)) return "";
+  const candidate = sourceTitleLiteralTranslation(raw, sourceUrl);
   const cleaned = cleanBadPublicDisplayTitle(candidate);
   if (cleaned && !isBadPublicDisplayTitle(cleaned) && !publicTitleNeedsTranslation(cleaned)) return cleaned;
-  if (!hasCjk(raw)) {
-    const sourceFallback = cleanBadPublicDisplayTitle(sourceTitleFallbackForDisplay(raw, sourceUrl));
-    if (sourceFallback && !isBadPublicDisplayTitle(sourceFallback) && !publicTitleNeedsTranslation(sourceFallback)) return sourceFallback;
-  }
   return "";
 }
 
-function publicDisplayTitle(sourceTitle = "", generatedTitle = "", sourceUrl = "") {
-  return publicTitleCandidate(sourceTitle, sourceUrl)
-    || publicTitleCandidate(generatedTitle, sourceUrl)
-    || sourceUrlTitleFallbackForDisplay(sourceUrl)
-    || cleanBadPublicDisplayTitle(generatedTitle || sourceTitle || "");
+function publicDisplayTitle(sourceTitle = "", _generatedTitle = "", sourceUrl = "") {
+  return publicTitleCandidate(sourceTitle, sourceUrl);
 }
 
 function normalizeFrontstageDisplay(card = {}) {
@@ -1434,7 +1496,7 @@ function readRawEvidence(rawJsonRel, rawArchiveRel, sourceUrlHint = "") {
         })).filter((item) => item.text).slice(0, 8)
         : [];
       fullText = json.full_text || json.clean_text || "";
-      rawTitle = recoverCompleteTitleFromFullText(json.title || "", fullText);
+      rawTitle = sourceTitleFromFullText(fullText, json.title || "");
       visibleFragment = short(fullText, 360);
       businessElements = json.business_elements || {};
       evidenceSeed = json.evidence_seed || {};
@@ -1443,9 +1505,10 @@ function readRawEvidence(rawJsonRel, rawArchiveRel, sourceUrlHint = "") {
     }
   }
 
-  if (!visibleFragment && rawArchive && fs.existsSync(rawArchive)) {
+  if (rawArchive && fs.existsSync(rawArchive)) {
     const snapshot = read(rawArchive);
-    visibleFragment = short(snapshot.replace(/^---[\s\S]*?---/u, ""), 360);
+    if (!visibleFragment) visibleFragment = short(snapshot.replace(/^---[\s\S]*?---/u, ""), 360);
+    rawTitle = sourceTitleFromFullText(snapshot, rawTitle);
     const excerptMatch = snapshot.match(/key_excerpts:\s*(\[.*\])/u);
     if (!keyExcerpts.length && excerptMatch) keyExcerpts = [{ type: "supporting_context", text: short(excerptMatch[1], 220) }];
   }
@@ -2416,7 +2479,7 @@ function cardFromFile(file, category) {
     || "";
   const poolRefs = arrayValue(fm, "pool_refs");
   const raw = mergeEvidence(readRawEvidence(rawJson, rawArchive, primarySourceUrl), readPoolEvidence(scalar(fm, "date"), poolRefs[0], primarySourceUrl));
-  const rawTitle = recoverCompleteTitleFromFullText(rawTitleFromArchive || raw.rawTitle || "", raw.fullText);
+  const rawTitle = sourceTitleFromFullText(raw.fullText, raw.rawTitle || rawTitleFromArchive || "");
   const sourceUrl = primarySourceUrl || raw.sourceUrl;
   const explicitSourceName = scalar(fm, "source_name") || raw.sourceName || "";
   const sourceName = explicitSourceName && !isDiscoveryLabel(explicitSourceName)
@@ -2481,6 +2544,7 @@ function cardFromFile(file, category) {
     originalHighlights,
     visibleFragment,
     sourceLinks: [...new Set(sourceLinks)],
+    sourceTitle: rawTitle || rawDisplayTitle,
     status: scalar(fm, "status"),
     assetLevel: scalar(fm, "asset_level"),
     evidenceGate: scalar(fm, "evidence_gate"),
@@ -3484,6 +3548,7 @@ const rawCards = [
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(hasSourceFacingEvidence).filter(isPublicBusinessSignalEligible))
   .map(normalizeFrontstageDisplay)
   .filter(hasSourceFacingEvidence)
+  .filter((card) => card.title && card.date && card.sourceName)
   .map(annotateFrontstageCandidate)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const frontstageSelection = buildDailyFrontstageSelection(cards);

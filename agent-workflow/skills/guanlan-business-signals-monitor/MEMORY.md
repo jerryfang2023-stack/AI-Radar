@@ -2,6 +2,15 @@
 
 Keep this file short. Add only durable lane-level lessons from repeated production failures.
 
+## 2026-06-18 Title Correction
+
+- Business Signals public titles must be the original/source title translated into Chinese only. Do not rewrite titles into commercial summaries, add inferred framing, prepend source/domain names, or inject details that are not part of the source title.
+- `title`, `displayTitle`, and Top10-compatible `generatedTitle` must use the same source-title translation. If an English source title has no approved literal translation mapping, block it from Top10 and candidate-pool display instead of falling back to generated titles, URL slugs, or generated Chinese summaries.
+- If an English source title has no approved literal translation mapping, block it from Top10 and candidate-pool display instead of falling back to generated titles, URL slugs, or `subject：English title` hybrids.
+- Recurring English / mixed-title leaks in Business Signals are frontstage generation and gate bugs, not same-day data bugs. A Chinese subject prefix plus `：` must not exempt the remaining English title from translation, and checks must cover both `top10` and `corePoolCandidates`.
+- Template filler facts such as `original source says`, `original AI event`, `specific AI business event`, `signal value is to observe`, or `need to continue verifying customer/product/business outcome` are not valid frontstage details. If cleanup leaves a card with no source-facing fact, remove it before Top10 and candidate-pool selection instead of publishing an incomplete detail.
+- When repairing this class, update the generator, source-first gate, and eval together; then rebuild locally, scan both Top10 and candidate pool for English/template/empty detail leaks, run the unified Business frontstage gate, and publish through the Business Signals automation PR.
+
 ## 2026-06-12
 
 - The public/Hermes Top10 contract is lane-level, not only a Raw / Pool / Card detail. A healthy `frontstageSelection` or `frontstageCards` set is insufficient unless the public `top10` array exists and contains exactly 10 active-date items.

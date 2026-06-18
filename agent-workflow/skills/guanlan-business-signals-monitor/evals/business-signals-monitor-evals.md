@@ -88,6 +88,8 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when page navigation text such as `Back Start free trial`, `Contact Sales`, or language switcher blocks is rejected as public `translatedFact` and replaced by a source-title-derived fact.
     - Pass when a partially translated English source title that still trips the translation heuristic is discarded in favor of the already generated Chinese card title, not forced into public display.
     - Pass when a Chinese subject prefix plus Chinese colon does not exempt the remaining English title from translation, for example `Vendor：Introducing ...` or `Source：Applied AI Case Studies ...`.
+   - Pass when public titles are source-title translations only: translate the original/source title into Chinese without adding interpretation, extra commercial framing, inferred funding purpose, or a rewritten event summary.
+   - Fail when `title`, `displayTitle`, or Top10-compatible `generatedTitle` falls back to model-generated Chinese wording because the English source title has no literal translation mapping.
     - Pass when public facts reject template filler such as `original source says`, `original AI event`, `specific AI business event`, `signal value is to observe`, or `need to continue verifying customer/product/business outcome`; cards cleaned down to no source-facing fact must be removed from the frontstage JSON before Top10 selection.
     - Fail when the unified Business frontstage gate blocks on generic source subjects, untranslated display titles, or navigation fragments after Raw / Pool / Card gates already passed.
 
