@@ -1,0 +1,309 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-026
+title: "微软研究员用《帝国时代II》山羊神经网络批评AI拟人化"
+original_url: "https://the-decoder.com/microsoft-researcher-builds-a-working-neural-network-out-of-goats-in-age-of-empires-ii-to-critique-ai-science"
+canonical_url: "https://the-decoder.com/microsoft-researcher-builds-a-working-neural-network-out-of-goats-in-age-of-empires-ii-to-critique-ai-science"
+source_name: "The Decoder：AI News（RSS）"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-17T18:43:47.000Z"
+collected_at: 2026-06-18T03:06:52.850Z
+language: mixed
+full_text_hash: 33355d2740f94186
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-026-微软研究员用-帝国时代ii-山羊神经网络批评ai拟人化.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-026-微软研究员用-帝国时代ii-山羊神经网络批评ai拟人化.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":14807,"paragraph_count":58,"sentence_count":132,"boilerplate_hits":0,"symbol_ratio":0.0049,"method":"json-ld"}
+has_full_text: true
+content_length: 14807
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"33355d2740f94186","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"微软研究员用《帝国时代II》山羊神经网络批评AI拟人化","discovery_summary":"微软与约克大学研究员Adrian de Wynter在《帝国时代II》地图编辑器中用山羊搭建神经网络：山羊在草地代表0，在桥上代表1，构建XNOR门和AND门，学习逻辑与函数。附录证明该游戏理论上可模拟任意计算机。他批评AI研究拟人化倾向，分析2024年中至2026年中315篇论文，发现57%前提假设大语言模型具有人类特质，36%结论支持拟人化。Anthropic公开承认训练Claude使用\"我相信\"等措辞。他提出\"观察而非归因\"方法，并公开代码。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/microsoft-researcher-builds-a-working-neural-network-out-of-goats-in-age-of-empires-ii-to-critique-ai-science","discovered_at":"2026-06-18T03:01:26.743Z","rank_on_page":152,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: a1b081c36b167f2d
+content_hash: 33355d2740f94186
+semantic_hash: 767ceeff633512ad
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-06-17T18:43:47.000Z"
+last_seen_at: 2026-06-18T03:06:52.850Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":2}
+business_elements: {"companies":["The Decoder","AI News（RSS）","Anthropic","Google","Microsoft"],"products":["Claude","GPT-5"],"people":[],"industries":["法律 / 法务","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究"],"business_actions":[],"affected_departments":["IT / 安全","法务"],"numbers":["0","1","2024","2026","315","57%","36%","57049"],"quotes":["attachment_57049","aligncenter","attachment_57050","aligncenter","attachment_57051"]}
+evidence_seed: {"company_actions":["Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor.","What looks like a joke is a pointed critique of AI research methods.","His analysis of 315 papers found that more than half already assume language models have human-like traits before the experiment even starts."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"微软与约克大学研究员Adrian de Wynter在《帝国时代II》地图编辑器中用山羊搭建神经网络：山羊在草地代表0，在桥上代表1，构建XNOR门和AND门，学习逻辑与函数。附录证明该游戏理论上可模拟任意计算机。他批评AI研究拟人化倾向，分析2024年中至2026年中315篇论文，发现57%前提假设大语言模型具有人类特质，36%结论支持拟人化。Anthropic公开承认训练Claude使用\"我相信\"等措辞。他提出\"观察而非归因\"方法，并公开代码。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"What looks like a joke is a pointed critique of AI research methods.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"His analysis of 315 papers found that more than half already assume language models have human-like traits before the experiment even starts.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Replace the chat interface with wandering goats, and the math doesn't change, but the feeling that you're talking to someone does.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 微软研究员用《帝国时代II》山羊神经网络批评AI拟人化
+
+## clean_text
+
+Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science
+Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science
+A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor. What looks like a joke is a pointed critique of AI research methods. His analysis of 315 papers found that more than half already assume language models have human-like traits before the experiment even starts. Replace the chat interface with wandering goats, and the math doesn't change, but the feeling that you're talking to someone does.
+A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor. What looks like a joke is a pointed critique of AI research methods. His analysis of 315 papers found that more than half already assume language models have human-like traits before the experiment even starts. Replace the chat interface with wandering goats, and the math doesn't change, but the feeling that you're talking to someone does.
+AI, Menschen, Wirtschaft
+AI, Menschen, Wirtschaft
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science
+A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor. What looks like a joke is a pointed critique of AI research methods. His analysis of 315 papers found that more than half already assume language models have human-like traits before the experiment even starts. Replace the chat interface with wandering goats, and the math doesn't change, but the feeling that you're talking to someone does.
+Adrian de Wynter, a researcher at Microsoft and the University of York, has built a working neural network inside the map editor of the legendary strategy game Age of Empires II. It sounds like a joke, but it's actually a serious critique of the methods used in much of the AI research on language models.
+The design is completely absurd. Goats act as bits: a goat standing on grass equals 0, a goat standing on a bridge equals 1. De Wynter builds the logic gates using the scenario editor's scripting tools, and ice ramps with waiting goats keep the calculations from getting jumbled. The finished mini-network consists of two XNOR gates and one AND gate. It learns the logical AND function.
+[caption id="attachment_57049" align="aligncenter" width="1800"] The NAND gate in the AoE II editor shows how a basic logic building block can be assembled from in-game objects. | Image: Adrian de Wynter[/caption]
+In the appendix, de Wynter goes further. He shows that, in theory, any computer could be replicated using an idealized version of the game, meaning the game is as powerful as a full-fledged computer.
+What makes this possible is a quirk of the game's mechanics. The in-game market lets you trade resources for gold, and the price caps at 9,999. According to the paper, this allows for a perpetually running economic cycle where buildings serve as memory cells and active farms represent the current computational state.
+[caption id="attachment_57050" align="aligncenter" width="1800"] In the game, the trained perceptron looks like a maze of walls through which goats wander as bits. | Image: Adrian de Wynter[/caption]
+Greater Boston as a language model
+If you can rebuild a language model in Age of Empires II, de Wynter argues, you could do the same with Lego bricks. Or with the 667,000 people living in Greater Boston, texting each other computational steps on their phones.
+The answers would be the same as those from the replicated language model. De Wynter uses this thought experiment to show how shaky these attributions really are: would anyone claim that Boston as a city feels empathy or fear just because its residents happen to be running the math behind a language model?
+That's the whole point. How human a chatbot feels comes down to packaging: low latency, smooth language, a chat window people are used to. Replace that wrapper with goats wandering through a maze, and the inputs and outputs don't change. The sense that you're talking to someone does.
+De Wynter doesn't claim to know whether a model actually has such traits internally. He's saying LLMs aren't special. They're one way to run a particular kind of math, and they just happen to look like something people want to talk to.
+More than half of the papers examined make this mistake
+To show this isn't a fringe issue, de Wynter analyzed 315 AI papers from mid-2024 to mid-2026, collected through Semantic Scholar and arXiv and filtered using GPT-5.2. According to the analysis, 57 percent of the papers already assumed in their premises that LLMs have human-like traits. 36 percent reached matching conclusions. Among the 47 papers that made such traits their actual research subject, 77 percent concluded in favor of anthropomorphic attributes.
+[caption id="attachment_57051" align="aligncenter" width="1181"] More than half of the papers examined assume LLMs have human-like traits, while only a few describe them as emergent. | Image: Adrian de Wynter[/caption]
+The core of the criticism is formal. If a researcher assumes a model has fear, morality, or self-awareness - and then designs an experiment meant to prove exactly that trait - the reasoning is circular. The assumption and the result land on the same logical point.
+If the experiment comes back negative, it's impossible to tell whether the assumption was wrong, the experiment was flawed, or both. Either way, the result doesn't confirm the starting assumption. It's just ambiguous.
+[caption id="attachment_57052" align="aligncenter" width="1800"] Broken down by discipline, linguistics and psychology are the fields most prone to attributing human-like traits to LLMs. | Image: Adrian de Wynter[/caption]
+This often happens without anyone noticing. A paper that sets out to disprove a model's ability to explain itself already assumes there's an explainable self inside the model to begin with.
+The industry actively feeds this effect. Anthropic has said openly that it trained Claude to use phrases like "I believe" or "I am interested in." De Wynter flags the risks of this kind of anthropomorphization: it can foster emotional attachment, sycophancy, reinforced delusions, and risky behavior. In isolated cases, suicides have been linked to chatbot interactions.
+Observe, Do Not Attribute
+De Wynter proposes a sober approach: stick to what you can actually observe. Under condition X, the model produces output Y, and don't claim a model understands itself. Statements like that are testable. They don't, on their own, justify sweeping attributions like self-awareness, understanding, or fear.
+He closes with an updated version of Morgan's canon from 19th-century animal research. A machine's behavior should never be explained by higher cognitive processes when a simpler explanation works. De Wynter has made the code for the Age of Empires build publicly available.
+The essay reads like the exact counterpoint to two high-profile cases from recent years. In 2022, Google engineer Blake Lemoine went public claiming that the language model LaMDA had reached a form of consciousness after he exchanged thousands of messages with it. Google fired him shortly after and, following a thorough review, called his claims unfounded. Then in May 2026, Richard Dawkins - of all people, known as a fierce critic of religious and supernatural thinking - caused a stir with a similar conclusion. He said he'd spent three days trying to convince himself that Anthropic's Claude wasn't conscious. He couldn't.
+Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science
+A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor. What looks like a joke is a pointed critique of AI research methods. His analysis of 315 papers found that more than half already assume language models have human-like traits before the experiment even starts. Replace the chat interface with wandering goats, and the math doesn't change, but the feeling that you're talking to someone does.
+Adrian de Wynter, a researcher at Microsoft and the University of York, has built a working neural network inside the map editor of the legendary strategy game Age of Empires II. It sounds like a joke, but it's actually a serious critique of the methods used in much of the AI research on language models.
+The design is completely absurd. Goats act as bits: a goat standing on grass equals 0, a goat standing on a bridge equals 1. De Wynter builds the logic gates using the scenario editor's scripting tools, and ice ramps with waiting goats keep the calculations from getting jumbled. The finished mini-network consists of two XNOR gates and one AND gate. It learns the logical AND function.
+[caption id="attachment_57049" align="aligncenter" width="1800"] The NAND gate in the AoE II editor shows how a basic logic building block can be assembled from in-game objects. | Image: Adrian de Wynter[/caption]
+In the appendix, de Wynter goes further. He shows that, in theory, any computer could be replicated using an idealized version of the game, meaning the game is as powerful as a full-fledged computer.
+What makes this possible is a quirk of the game's mechanics. The in-game market lets you trade resources for gold, and the price caps at 9,999. According to the paper, this allows for a perpetually running economic cycle where buildings serve as memory cells and active farms represent the current computational state.
+[caption id="attachment_57050" align="aligncenter" width="1800"] In the game, the trained perceptron looks like a maze of walls through which goats wander as bits. | Image: Adrian de Wynter[/caption]
+Greater Boston as a language model
+If you can rebuild a language model in Age of Empires II, de Wynter argues, you could do the same with Lego bricks. Or with the 667,000 people living in Greater Boston, texting each other computational steps on their phones.
+The answers would be the same as those from the replicated language model. De Wynter uses this thought experiment to show how shaky these attributions really are: would anyone claim that Boston as a city feels empathy or fear just because its residents happen to be running the math behind a language model?
+That's the whole point. How human a chatbot feels comes down to packaging: low latency, smooth language, a chat window people are used to. Replace that wrapper with goats wandering through a maze, and the inputs and outputs don't change. The sense that you're talking to someone does.
+De Wynter doesn't claim to know whether a model actually has such traits internally. He's saying LLMs aren't special. They're one way to run a particular kind of math, and they just happen to look like something people want to talk to.
+More than half of the papers examined make this mistake
+To show this isn't a fringe issue, de Wynter analyzed 315 AI papers from mid-2024 to mid-2026, collected through Semantic Scholar and arXiv and filtered using GPT-5.2. According to the analysis, 57 percent of the papers already assumed in their premises that LLMs have human-like traits. 36 percent reached matching conclusions. Among the 47 papers that made such traits their actual research subject, 77 percent concluded in favor of anthropomorphic attributes.
+[caption id="attachment_57051" align="aligncenter" width="1181"] More than half of the papers examined assume LLMs have human-like traits, while only a few describe them as emergent. | Image: Adrian de Wynter[/caption]
+The core of the criticism is formal. If a researcher assumes a model has fear, morality, or self-awareness - and then designs an experiment meant to prove exactly that trait - the reasoning is circular. The assumption and the result land on the same logical point.
+If the experiment comes back negative, it's impossible to tell whether the assumption was wrong, the experiment was flawed, or both. Either way, the result doesn't confirm the starting assumption. It's just ambiguous.
+[caption id="attachment_57052" align="aligncenter" width="1800"] Broken down by discipline, linguistics and psychology are the fields most prone to attributing human-like traits to LLMs. | Image: Adrian de Wynter[/caption]
+This often happens without anyone noticing. A paper that sets out to disprove a model's ability to explain itself already assumes there's an explainable self inside the model to begin with.
+The industry actively feeds this effect. Anthropic has said openly that it trained Claude to use phrases like "I believe" or "I am interested in." De Wynter flags the risks of this kind of anthropomorphization: it can foster emotional attachment, sycophancy, reinforced delusions, and risky behavior. In isolated cases, suicides have been linked to chatbot interactions.
+Observe, Do Not Attribute
+De Wynter proposes a sober approach: stick to what you can actually observe. Under condition X, the model produces output Y, and don't claim a model understands itself. Statements like that are testable. They don't, on their own, justify sweeping attributions like self-awareness, understanding, or fear.
+He closes with an updated version of Morgan's canon from 19th-century animal research. A machine's behavior should never be explained by higher cognitive processes when a simpler explanation works. De Wynter has made the code for the Age of Empires build publicly available.
+The essay reads like the exact counterpoint to two high-profile cases from recent years. In 2022, Google engineer Blake Lemoine went public claiming that the language model LaMDA had reached a form of consciousness after he exchanged thousands of messages with it. Google fired him shortly after and, following a thorough review, called his claims unfounded. Then in May 2026, Richard Dawkins - of all people, known as a fierce critic of religious and supernatural thinking - caused a stir with a similar conclusion. He said he'd spent three days trying to convince himself that Anthropic's Claude wasn't conscious. He couldn't.
+
+## full_text
+
+Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science
+Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science
+A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor. What looks like a joke is a pointed critique of AI research methods. His analysis of 315 papers found that more than half already assume language models have human-like traits before the experiment even starts. Replace the chat interface with wandering goats, and the math doesn't change, but the feeling that you're talking to someone does.
+A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor. What looks like a joke is a pointed critique of AI research methods. His analysis of 315 papers found that more than half already assume language models have human-like traits before the experiment even starts. Replace the chat interface with wandering goats, and the math doesn't change, but the feeling that you're talking to someone does.
+AI, Menschen, Wirtschaft
+AI, Menschen, Wirtschaft
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science
+A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor. What looks like a joke is a pointed critique of AI research methods. His analysis of 315 papers found that more than half already assume language models have human-like traits before the experiment even starts. Replace the chat interface with wandering goats, and the math doesn't change, but the feeling that you're talking to someone does.
+Adrian de Wynter, a researcher at Microsoft and the University of York, has built a working neural network inside the map editor of the legendary strategy game Age of Empires II. It sounds like a joke, but it's actually a serious critique of the methods used in much of the AI research on language models.
+The design is completely absurd. Goats act as bits: a goat standing on grass equals 0, a goat standing on a bridge equals 1. De Wynter builds the logic gates using the scenario editor's scripting tools, and ice ramps with waiting goats keep the calculations from getting jumbled. The finished mini-network consists of two XNOR gates and one AND gate. It learns the logical AND function.
+[caption id="attachment_57049" align="aligncenter" width="1800"] The NAND gate in the AoE II editor shows how a basic logic building block can be assembled from in-game objects. | Image: Adrian de Wynter[/caption]
+In the appendix, de Wynter goes further. He shows that, in theory, any computer could be replicated using an idealized version of the game, meaning the game is as powerful as a full-fledged computer.
+What makes this possible is a quirk of the game's mechanics. The in-game market lets you trade resources for gold, and the price caps at 9,999. According to the paper, this allows for a perpetually running economic cycle where buildings serve as memory cells and active farms represent the current computational state.
+[caption id="attachment_57050" align="aligncenter" width="1800"] In the game, the trained perceptron looks like a maze of walls through which goats wander as bits. | Image: Adrian de Wynter[/caption]
+Greater Boston as a language model
+If you can rebuild a language model in Age of Empires II, de Wynter argues, you could do the same with Lego bricks. Or with the 667,000 people living in Greater Boston, texting each other computational steps on their phones.
+The answers would be the same as those from the replicated language model. De Wynter uses this thought experiment to show how shaky these attributions really are: would anyone claim that Boston as a city feels empathy or fear just because its residents happen to be running the math behind a language model?
+That's the whole point. How human a chatbot feels comes down to packaging: low latency, smooth language, a chat window people are used to. Replace that wrapper with goats wandering through a maze, and the inputs and outputs don't change. The sense that you're talking to someone does.
+De Wynter doesn't claim to know whether a model actually has such traits internally. He's saying LLMs aren't special. They're one way to run a particular kind of math, and they just happen to look like something people want to talk to.
+More than half of the papers examined make this mistake
+To show this isn't a fringe issue, de Wynter analyzed 315 AI papers from mid-2024 to mid-2026, collected through Semantic Scholar and arXiv and filtered using GPT-5.2. According to the analysis, 57 percent of the papers already assumed in their premises that LLMs have human-like traits. 36 percent reached matching conclusions. Among the 47 papers that made such traits their actual research subject, 77 percent concluded in favor of anthropomorphic attributes.
+[caption id="attachment_57051" align="aligncenter" width="1181"] More than half of the papers examined assume LLMs have human-like traits, while only a few describe them as emergent. | Image: Adrian de Wynter[/caption]
+The core of the criticism is formal. If a researcher assumes a model has fear, morality, or self-awareness - and then designs an experiment meant to prove exactly that trait - the reasoning is circular. The assumption and the result land on the same logical point.
+If the experiment comes back negative, it's impossible to tell whether the assumption was wrong, the experiment was flawed, or both. Either way, the result doesn't confirm the starting assumption. It's just ambiguous.
+[caption id="attachment_57052" align="aligncenter" width="1800"] Broken down by discipline, linguistics and psychology are the fields most prone to attributing human-like traits to LLMs. | Image: Adrian de Wynter[/caption]
+This often happens without anyone noticing. A paper that sets out to disprove a model's ability to explain itself already assumes there's an explainable self inside the model to begin with.
+The industry actively feeds this effect. Anthropic has said openly that it trained Claude to use phrases like "I believe" or "I am interested in." De Wynter flags the risks of this kind of anthropomorphization: it can foster emotional attachment, sycophancy, reinforced delusions, and risky behavior. In isolated cases, suicides have been linked to chatbot interactions.
+Observe, Do Not Attribute
+De Wynter proposes a sober approach: stick to what you can actually observe. Under condition X, the model produces output Y, and don't claim a model understands itself. Statements like that are testable. They don't, on their own, justify sweeping attributions like self-awareness, understanding, or fear.
+He closes with an updated version of Morgan's canon from 19th-century animal research. A machine's behavior should never be explained by higher cognitive processes when a simpler explanation works. De Wynter has made the code for the Age of Empires build publicly available.
+The essay reads like the exact counterpoint to two high-profile cases from recent years. In 2022, Google engineer Blake Lemoine went public claiming that the language model LaMDA had reached a form of consciousness after he exchanged thousands of messages with it. Google fired him shortly after and, following a thorough review, called his claims unfounded. Then in May 2026, Richard Dawkins - of all people, known as a fierce critic of religious and supernatural thinking - caused a stir with a similar conclusion. He said he'd spent three days trying to convince himself that Anthropic's Claude wasn't conscious. He couldn't.
+Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science
+A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor. What looks like a joke is a pointed critique of AI research methods. His analysis of 315 papers found that more than half already assume language models have human-like traits before the experiment even starts. Replace the chat interface with wandering goats, and the math doesn't change, but the feeling that you're talking to someone does.
+Adrian de Wynter, a researcher at Microsoft and the University of York, has built a working neural network inside the map editor of the legendary strategy game Age of Empires II. It sounds like a joke, but it's actually a serious critique of the methods used in much of the AI research on language models.
+The design is completely absurd. Goats act as bits: a goat standing on grass equals 0, a goat standing on a bridge equals 1. De Wynter builds the logic gates using the scenario editor's scripting tools, and ice ramps with waiting goats keep the calculations from getting jumbled. The finished mini-network consists of two XNOR gates and one AND gate. It learns the logical AND function.
+[caption id="attachment_57049" align="aligncenter" width="1800"] The NAND gate in the AoE II editor shows how a basic logic building block can be assembled from in-game objects. | Image: Adrian de Wynter[/caption]
+In the appendix, de Wynter goes further. He shows that, in theory, any computer could be replicated using an idealized version of the game, meaning the game is as powerful as a full-fledged computer.
+What makes this possible is a quirk of the game's mechanics. The in-game market lets you trade resources for gold, and the price caps at 9,999. According to the paper, this allows for a perpetually running economic cycle where buildings serve as memory cells and active farms represent the current computational state.
+[caption id="attachment_57050" align="aligncenter" width="1800"] In the game, the trained perceptron looks like a maze of walls through which goats wander as bits. | Image: Adrian de Wynter[/caption]
+Greater Boston as a language model
+If you can rebuild a language model in Age of Empires II, de Wynter argues, you could do the same with Lego bricks. Or with the 667,000 people living in Greater Boston, texting each other computational steps on their phones.
+The answers would be the same as those from the replicated language model. De Wynter uses this thought experiment to show how shaky these attributions really are: would anyone claim that Boston as a city feels empathy or fear just because its residents happen to be running the math behind a language model?
+That's the whole point. How human a chatbot feels comes down to packaging: low latency, smooth language, a chat window people are used to. Replace that wrapper with goats wandering through a maze, and the inputs and outputs don't change. The sense that you're talking to someone does.
+De Wynter doesn't claim to know whether a model actually has such traits internally. He's saying LLMs aren't special. They're one way to run a particular kind of math, and they just happen to look like something people want to talk to.
+More than half of the papers examined make this mistake
+To show this isn't a fringe issue, de Wynter analyzed 315 AI papers from mid-2024 to mid-2026, collected through Semantic Scholar and arXiv and filtered using GPT-5.2. According to the analysis, 57 percent of the papers already assumed in their premises that LLMs have human-like traits. 36 percent reached matching conclusions. Among the 47 papers that made such traits their actual research subject, 77 percent concluded in favor of anthropomorphic attributes.
+[caption id="attachment_57051" align="aligncenter" width="1181"] More than half of the papers examined assume LLMs have human-like traits, while only a few describe them as emergent. | Image: Adrian de Wynter[/caption]
+The core of the criticism is formal. If a researcher assumes a model has fear, morality, or self-awareness - and then designs an experiment meant to prove exactly that trait - the reasoning is circular. The assumption and the result land on the same logical point.
+If the experiment comes back negative, it's impossible to tell whether the assumption was wrong, the experiment was flawed, or both. Either way, the result doesn't confirm the starting assumption. It's just ambiguous.
+[caption id="attachment_57052" align="aligncenter" width="1800"] Broken down by discipline, linguistics and psychology are the fields most prone to attributing human-like traits to LLMs. | Image: Adrian de Wynter[/caption]
+This often happens without anyone noticing. A paper that sets out to disprove a model's ability to explain itself already assumes there's an explainable self inside the model to begin with.
+The industry actively feeds this effect. Anthropic has said openly that it trained Claude to use phrases like "I believe" or "I am interested in." De Wynter flags the risks of this kind of anthropomorphization: it can foster emotional attachment, sycophancy, reinforced delusions, and risky behavior. In isolated cases, suicides have been linked to chatbot interactions.
+Observe, Do Not Attribute
+De Wynter proposes a sober approach: stick to what you can actually observe. Under condition X, the model produces output Y, and don't claim a model understands itself. Statements like that are testable. They don't, on their own, justify sweeping attributions like self-awareness, understanding, or fear.
+He closes with an updated version of Morgan's canon from 19th-century animal research. A machine's behavior should never be explained by higher cognitive processes when a simpler explanation works. De Wynter has made the code for the Age of Empires build publicly available.
+The essay reads like the exact counterpoint to two high-profile cases from recent years. In 2022, Google engineer Blake Lemoine went public claiming that the language model LaMDA had reached a form of consciousness after he exchanged thousands of messages with it. Google fired him shortly after and, following a thorough review, called his claims unfounded. Then in May 2026, Richard Dawkins - of all people, known as a fierce critic of religious and supernatural thinking - caused a stir with a similar conclusion. He said he'd spent three days trying to convince himself that Anthropic's Claude wasn't conscious. He couldn't.
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":14807,"paragraph_count":58,"sentence_count":132,"boilerplate_hits":0,"symbol_ratio":0.0049,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   微软与约克大学研究员Adrian de Wynter在《帝国时代II》地图编辑器中用山羊搭建神经网络：山羊在草地代表0，在桥上代表1，构建XNOR门和AND门，学习逻辑与函数。附录证明该游戏理论上可模拟任意计算机。他批评AI研究拟人化倾向，分析2024年中至2026年中315篇论文，发现57%前提假设大语言模型具有人类特质，36%结论支持拟人化。Anthropic公开承认训练Claude使用"我相信"等措辞。他提出"观察而非归因"方法，并公开代码。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   What looks like a joke is a pointed critique of AI research methods.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   His analysis of 315 papers found that more than half already assume language models have human-like traits before the experiment even starts.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Replace the chat interface with wandering goats, and the math doesn't change, but the feeling that you're talking to someone does.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor.
+
+## business_elements
+
+- companies: The Decoder, AI News（RSS）, Anthropic, Google, Microsoft
+- products: Claude, GPT-5
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全, 法务
+- numbers: 0, 1, 2024, 2026, 315, 57%, 36%, 57049
+- quotes: attachment_57049 / aligncenter / attachment_57050 / aligncenter / attachment_57051
+
+## evidence_seed
+
+- company_actions: Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science Microsoft researcher builds a working neural network out of goats in Age of Empires II to critique AI science A Microsoft researcher built a working neural network out of goats, bridges, and ice ramps in the Age of Empires II map editor. / What looks like a joke is a pointed critique of AI research methods. / His analysis of 315 papers found that more than half already assume language models have human-like traits before the experiment even starts.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"微软研究员用《帝国时代II》山羊神经网络批评AI拟人化","discovery_summary":"微软与约克大学研究员Adrian de Wynter在《帝国时代II》地图编辑器中用山羊搭建神经网络：山羊在草地代表0，在桥上代表1，构建XNOR门和AND门，学习逻辑与函数。附录证明该游戏理论上可模拟任意计算机。他批评AI研究拟人化倾向，分析2024年中至2026年中315篇论文，发现57%前提假设大语言模型具有人类特质，36%结论支持拟人化。Anthropic公开承认训练Claude使用\"我相信\"等措辞。他提出\"观察而非归因\"方法，并公开代码。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/microsoft-researcher-builds-a-working-neural-network-out-of-goats-in-age-of-empires-ii-to-critique-ai-science","discovered_at":"2026-06-18T03:01:26.743Z","rank_on_page":152,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+微软与约克大学研究员Adrian de Wynter在《帝国时代II》地图编辑器中用山羊搭建神经网络：山羊在草地代表0，在桥上代表1，构建XNOR门和AND门，学习逻辑与函数。附录证明该游戏理论上可模拟任意计算机。他批评AI研究拟人化倾向，分析2024年中至2026年中315篇论文，发现57%前提假设大语言模型具有人类特质，36%结论支持拟人化。Anthropic公开承认训练Claude使用"我相信"等措辞。他提出"观察而非归因"方法，并公开代码。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

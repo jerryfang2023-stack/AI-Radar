@@ -1,0 +1,266 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-062",
+  "title": "ZEISS Case Study: Document Extraction with Dapr Agents | Diagrid",
+  "original_url": "https://www.diagrid.io/case-studies/zeiss-vision-document-extraction",
+  "canonical_url": "https://diagrid.io/case-studies/zeiss-vision-document-extraction",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "industry_landing",
+  "search_path_label": "行业落地路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "org_build",
+  "enterprise_ai_transformation_reason": "fde_or_applied_ai_org_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-18T03:06:53.090Z",
+  "language": "mixed",
+  "full_text": "Dapr Agents ZEISS Vision: Orchestrating Document Data Extraction with Dapr Agents\nZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow, going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system.\nMay 1, 2026\nCompany Background\nZEISS is a German optics and optoelectronics manufacturer, with a global reputation for precision in lenses, microscopes, medical technology, and industrial measurement systems. In the Vision Care segment, ZEISS manufactures prescription lenses worn by patients worldwide. Their manufacturing processes demand exacting accuracy; a fraction of a dioptre in the wrong direction produces a lens that doesn't work for the patient.\nOverview\nZEISS faced a deceptively hard problem at the start of their lens manufacturing pipeline: the input data was a mess. Fabian Steinbach, Software Architect at ZEISS, describes the challenge:\n\"To manufacture precision lenses, you need structured optical data, but sometimes all we have is a photo of a hand-scribbled note.\"\nPrescription documents arrive in every imaginable format: handwritten notes, typed forms, multiple languages, and different writing systems. Getting structured optical data out of those documents accurately and reliably is critical. A wrong value means a wrong lens.\nTo solve this, ZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow , going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system.\nOptical Character Recognition (OCR) Pipeline Solution Architecture\nThe Problem\nPrescription documents received from patients by ZEISS are entirely unstandardized. They range from hand-scribbled notes to typed forms, spanning multiple languages and writing systems, much like the paperwork a patient receives from their doctor. The stakes are high: extracting the wrong value doesn't just cause a software error; it produces the wrong lens for a patient. Manual processing was not a scalable option, so ZEISS set out to automate the extraction reliably.\nWhy Dapr Agents?\nModern AI models proved surprisingly capable of interpreting messy prescription documents. But raw model capability wasn't enough to ship to production. Steinbach identified three non-negotiable requirements for ZEISS: control, reliability, and flexibility .\nControl\nZEISS deliberately avoided a fully autonomous agent setup. Instead, the team constrained the AI within a structured Dapr Workflow : pre-processing → OCR → targeted LLM/agent calls. This gave ZEISS predictable, auditable results rather than the unpredictable outputs a free-running agent might produce.\nReliability\nDapr Workflow's durable execution model persists state after every step. If something fails mid-process, ZEISS's workflow resumes from where it left off — it doesn't start over.\n“ State is persisted after each step. If something goes wrong midway through, the process doesn't start over again. So an expensive, already-completed OCR task doesn't run again. That saves time and cost. ”\nFabian Steinbach\nSoftware Architect, ZEISS\nFlexibility\nThe AI model landscape evolves quickly. By using Dapr's Conversation API building block, ZEISS can swap in a newer or cheaper model by changing configuration alone — no code changes required.\n“ Even when the model landscape changes, the workflow should stay stable. If a better or cheaper model appears tomorrow, we can use Dapr's conversation building block and just change the configuration. ”\nFabian Steinbach\nSoftware Architect, ZEISS\nArchitecture\nThe architecture is designed for future-proofing and scale. By leveraging event-driven scaling with KEDA and decoupled microservices via Dapr, the system is built to seamlessly absorb high-volume, global order loads as new processes are continuously migrated to the new platform. Dive deeper into the architecture.\nKey Takeaways\nSteinbach distilled the ZEISS project into three lessons that apply well beyond their use case:\nConstrain the AI. A workflow-constrained agent outperformed a free-running one for ZEISS's use case. Guardrails aren't a limitation — they're a feature.\nUse the right tool for the job. ZEISS mixed specialized OCR models, general-purpose LLMs, and deterministic logic. If a plain function can do the job, an LLM shouldn't be used.\nDecouple model selection from code. Changing models via config — not code — means ZEISS can always leverage the best available model without engineering overhead.\nResults\nDevelopment time to production in 2 months\nZero labelled training data required\nRecognition accuracy on par with a specialized ML system\nVideo\nYou can watch the video of Fabian Steinbach at KubeCon EU 2026 Keynote — ZEISS Agents Case Study\nKey Resources\nDapr Agents overview\nDapr Workflow overview\nDapr Workflow features & concepts\nDapr Conversation API\nDapr Agents on GitHub\nReady to get started?\nSee how Diagrid can help you run Dapr in production with confidence.\nGet Started for Free Talk to an Expert\nRelated Case Studies\nDapr & Conductor Driving Success in the Automotive Software Industry\nJune 16, 2024\nDiagrid Conductor is Life Insurance for ZEISS' Microservice-based Order Fulfilment App\nJuly 18, 2023\nLeveraging OpenFunction & Dapr to archive automotive data\nFebruary 13, 2023",
+  "clean_text": "Dapr Agents ZEISS Vision: Orchestrating Document Data Extraction with Dapr Agents\nZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow, going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system.\nMay 1, 2026\nCompany Background\nZEISS is a German optics and optoelectronics manufacturer, with a global reputation for precision in lenses, microscopes, medical technology, and industrial measurement systems. In the Vision Care segment, ZEISS manufactures prescription lenses worn by patients worldwide. Their manufacturing processes demand exacting accuracy; a fraction of a dioptre in the wrong direction produces a lens that doesn't work for the patient.\nOverview\nZEISS faced a deceptively hard problem at the start of their lens manufacturing pipeline: the input data was a mess. Fabian Steinbach, Software Architect at ZEISS, describes the challenge:\n\"To manufacture precision lenses, you need structured optical data, but sometimes all we have is a photo of a hand-scribbled note.\"\nPrescription documents arrive in every imaginable format: handwritten notes, typed forms, multiple languages, and different writing systems. Getting structured optical data out of those documents accurately and reliably is critical. A wrong value means a wrong lens.\nTo solve this, ZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow , going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system.\nOptical Character Recognition (OCR) Pipeline Solution Architecture\nThe Problem\nPrescription documents received from patients by ZEISS are entirely unstandardized. They range from hand-scribbled notes to typed forms, spanning multiple languages and writing systems, much like the paperwork a patient receives from their doctor. The stakes are high: extracting the wrong value doesn't just cause a software error; it produces the wrong lens for a patient. Manual processing was not a scalable option, so ZEISS set out to automate the extraction reliably.\nWhy Dapr Agents?\nModern AI models proved surprisingly capable of interpreting messy prescription documents. But raw model capability wasn't enough to ship to production. Steinbach identified three non-negotiable requirements for ZEISS: control, reliability, and flexibility .\nControl\nZEISS deliberately avoided a fully autonomous agent setup. Instead, the team constrained the AI within a structured Dapr Workflow : pre-processing → OCR → targeted LLM/agent calls. This gave ZEISS predictable, auditable results rather than the unpredictable outputs a free-running agent might produce.\nReliability\nDapr Workflow's durable execution model persists state after every step. If something fails mid-process, ZEISS's workflow resumes from where it left off — it doesn't start over.\n“ State is persisted after each step. If something goes wrong midway through, the process doesn't start over again. So an expensive, already-completed OCR task doesn't run again. That saves time and cost. ”\nFabian Steinbach\nSoftware Architect, ZEISS\nFlexibility\nThe AI model landscape evolves quickly. By using Dapr's Conversation API building block, ZEISS can swap in a newer or cheaper model by changing configuration alone — no code changes required.\n“ Even when the model landscape changes, the workflow should stay stable. If a better or cheaper model appears tomorrow, we can use Dapr's conversation building block and just change the configuration. ”\nFabian Steinbach\nSoftware Architect, ZEISS\nArchitecture\nThe architecture is designed for future-proofing and scale. By leveraging event-driven scaling with KEDA and decoupled microservices via Dapr, the system is built to seamlessly absorb high-volume, global order loads as new processes are continuously migrated to the new platform. Dive deeper into the architecture.\nKey Takeaways\nSteinbach distilled the ZEISS project into three lessons that apply well beyond their use case:\nConstrain the AI. A workflow-constrained agent outperformed a free-running one for ZEISS's use case. Guardrails aren't a limitation — they're a feature.\nUse the right tool for the job. ZEISS mixed specialized OCR models, general-purpose LLMs, and deterministic logic. If a plain function can do the job, an LLM shouldn't be used.\nDecouple model selection from code. Changing models via config — not code — means ZEISS can always leverage the best available model without engineering overhead.\nResults\nDevelopment time to production in 2 months\nZero labelled training data required\nRecognition accuracy on par with a specialized ML system\nVideo\nYou can watch the video of Fabian Steinbach at KubeCon EU 2026 Keynote — ZEISS Agents Case Study\nKey Resources\nDapr Agents overview\nDapr Workflow overview\nDapr Workflow features & concepts\nDapr Conversation API\nDapr Agents on GitHub\nReady to get started?\nSee how Diagrid can help you run Dapr in production with confidence.\nGet Started for Free Talk to an Expert\nRelated Case Studies\nDapr & Conductor Driving Success in the Automotive Software Industry\nJune 16, 2024\nDiagrid Conductor is Life Insurance for ZEISS' Microservice-based Order Fulfilment App\nJuly 18, 2023\nLeveraging OpenFunction & Dapr to archive automotive data\nFebruary 13, 2023",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-18/r-062-zeiss-case-study-document-extraction-with-dapr-agents-diagrid.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-18/r-062-zeiss-case-study-document-extraction-with-dapr-agents-diagrid.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 5428,
+    "paragraph_count": 38,
+    "sentence_count": 43,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 5428,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "b2ece5e054e9b2bc",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "56a6c641a41082c0",
+  "content_hash": "b2ece5e054e9b2bc",
+  "full_text_hash": "b2ece5e054e9b2bc",
+  "semantic_hash": "093f998386c464c7",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-18T03:06:53.090Z",
+  "last_seen_at": "2026-06-18T03:06:53.090Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "ZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow, going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system. ZEISS is a German optics and optoelectr.... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=industry_landing",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Dapr Agents ZEISS Vision: Orchestrating Document Data Extraction with Dapr Agents ZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow, going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "May 1, 2026 Company Background ZEISS is a German optics and optoelectronics manufacturer, with a global reputation for precision in lenses, microscopes, medical technology, and industrial measurement systems.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "In the Vision Care segment, ZEISS manufactures prescription lenses worn by patients worldwide.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Their manufacturing processes demand exacting accuracy; a fraction of a dioptre in the wrong direction produces a lens that doesn't work for the patient.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Overview ZEISS faced a deceptively hard problem at the start of their lens manufacturing pipeline: the input data was a mess.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub"
+    ],
+    "products": [
+      "Agents",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "金融 / 保险",
+      "医疗",
+      "制造 / 工业",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "1",
+      "2026",
+      "2 m",
+      "16",
+      "2024",
+      "18",
+      "2023",
+      "13"
+    ],
+    "quotes": [
+      "To manufacture precision lenses, you need structured optical data, but sometimes all we have is a photo of a hand-scribbled note."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "May 1, 2026 Company Background ZEISS is a German optics and optoelectronics manufacturer, with a global reputation for precision in lenses, microscopes, medical technology, and industrial measurement systems.",
+      "In the Vision Care segment, ZEISS manufactures prescription lenses worn by patients worldwide.",
+      "Overview ZEISS faced a deceptively hard problem at the start of their lens manufacturing pipeline: the input data was a mess."
+    ],
+    "case_details": [
+      "ZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow, going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system. ZEISS is a German optics and optoelectr.... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=industry_landing"
+    ],
+    "workflow_changes": [
+      "Dapr Agents ZEISS Vision: Orchestrating Document Data Extraction with Dapr Agents ZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow, going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system.",
+      "Their manufacturing processes demand exacting accuracy; a fraction of a dioptre in the wrong direction produces a lens that doesn't work for the patient."
+    ],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "candidate",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# ZEISS Case Study: Document Extraction with Dapr Agents | Diagrid\n\n- raw_id: R-062\n- original_url: https://www.diagrid.io/case-studies/zeiss-vision-document-extraction\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-18T03:06:53.090Z\n\n## clean_text\n\nDapr Agents ZEISS Vision: Orchestrating Document Data Extraction with Dapr Agents\nZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow, going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system.\nMay 1, 2026\nCompany Background\nZEISS is a German optics and optoelectronics manufacturer, with a global reputation for precision in lenses, microscopes, medical technology, and industrial measurement systems. In the Vision Care segment, ZEISS manufactures prescription lenses worn by patients worldwide. Their manufacturing processes demand exacting accuracy; a fraction of a dioptre in the wrong direction produces a lens that doesn't work for the patient.\nOverview\nZEISS faced a deceptively hard problem at the start of their lens manufacturing pipeline: the input data was a mess. Fabian Steinbach, Software Architect at ZEISS, describes the challenge:\n\"To manufacture precision lenses, you need structured optical data, but sometimes all we have is a photo of a hand-scribbled note.\"\nPrescription documents arrive in every imaginable format: handwritten notes, typed forms, multiple languages, and different writing systems. Getting structured optical data out of those documents accurately and reliably is critical. A wrong value means a wrong lens.\nTo solve this, ZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow , going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system.\nOptical Character Recognition (OCR) Pipeline Solution Architecture\nThe Problem\nPrescription documents received from patients by ZEISS are entirely unstandardized. They range from hand-scribbled notes to typed forms, spanning multiple languages and writing systems, much like the paperwork a patient receives from their doctor. The stakes are high: extracting the wrong value doesn't just cause a software error; it produces the wrong lens for a patient. Manual processing was not a scalable option, so ZEISS set out to automate the extraction reliably.\nWhy Dapr Agents?\nModern AI models proved surprisingly capable of interpreting messy prescription documents. But raw model capability wasn't enough to ship to production. Steinbach identified three non-negotiable requirements for ZEISS: control, reliability, and flexibility .\nControl\nZEISS deliberately avoided a fully autonomous agent setup. Instead, the team constrained the AI within a structured Dapr Workflow : pre-processing → OCR → targeted LLM/agent calls. This gave ZEISS predictable, auditable results rather than the unpredictable outputs a free-running agent might produce.\nReliability\nDapr Workflow's durable execution model persists state after every step. If something fails mid-process, ZEISS's workflow resumes from where it left off — it doesn't start over.\n“ State is persisted after each step. If something goes wrong midway through, the process doesn't start over again. So an expensive, already-completed OCR task doesn't run again. That saves time and cost. ”\nFabian Steinbach\nSoftware Architect, ZEISS\nFlexibility\nThe AI model landscape evolves quickly. By using Dapr's Conversation API building block, ZEISS can swap in a newer or cheaper model by changing configuration alone — no code changes required.\n“ Even when the model landscape changes, the workflow should stay stable. If a better or cheaper model appears tomorrow, we can use Dapr's conversation building block and just change the configuration. ”\nFabian Steinbach\nSoftware Architect, ZEISS\nArchitecture\nThe architecture is designed for future-proofing and scale. By leveraging event-driven scaling with KEDA and decoupled microservices via Dapr, the system is built to seamlessly absorb high-volume, global order loads as new processes are continuously migrated to the new platform. Dive deeper into the architecture.\nKey Takeaways\nSteinbach distilled the ZEISS project into three lessons that apply well beyond their use case:\nConstrain the AI. A workflow-constrained agent outperformed a free-running one for ZEISS's use case. Guardrails aren't a limitation — they're a feature.\nUse the right tool for the job. ZEISS mixed specialized OCR models, general-purpose LLMs, and deterministic logic. If a plain function can do the job, an LLM shouldn't be used.\nDecouple model selection from code. Changing models via config — not code — means ZEISS can always leverage the best available model without engineering overhead.\nResults\nDevelopment time to production in 2 months\nZero labelled training data required\nRecognition accuracy on par with a specialized ML system\nVideo\nYou can watch the video of Fabian Steinbach at KubeCon EU 2026 Keynote — ZEISS Agents Case Study\nKey Resources\nDapr Agents overview\nDapr Workflow overview\nDapr Workflow features & concepts\nDapr Conversation API\nDapr Agents on GitHub\nReady to get started?\nSee how Diagrid can help you run Dapr in production with confidence.\nGet Started for Free Talk to an Expert\nRelated Case Studies\nDapr & Conductor Driving Success in the Automotive Software Industry\nJune 16, 2024\nDiagrid Conductor is Life Insurance for ZEISS' Microservice-based Order Fulfilment App\nJuly 18, 2023\nLeveraging OpenFunction & Dapr to archive automotive data\nFebruary 13, 2023\n\n## full_text\n\nDapr Agents ZEISS Vision: Orchestrating Document Data Extraction with Dapr Agents\nZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow, going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system.\nMay 1, 2026\nCompany Background\nZEISS is a German optics and optoelectronics manufacturer, with a global reputation for precision in lenses, microscopes, medical technology, and industrial measurement systems. In the Vision Care segment, ZEISS manufactures prescription lenses worn by patients worldwide. Their manufacturing processes demand exacting accuracy; a fraction of a dioptre in the wrong direction produces a lens that doesn't work for the patient.\nOverview\nZEISS faced a deceptively hard problem at the start of their lens manufacturing pipeline: the input data was a mess. Fabian Steinbach, Software Architect at ZEISS, describes the challenge:\n\"To manufacture precision lenses, you need structured optical data, but sometimes all we have is a photo of a hand-scribbled note.\"\nPrescription documents arrive in every imaginable format: handwritten notes, typed forms, multiple languages, and different writing systems. Getting structured optical data out of those documents accurately and reliably is critical. A wrong value means a wrong lens.\nTo solve this, ZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow , going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system.\nOptical Character Recognition (OCR) Pipeline Solution Architecture\nThe Problem\nPrescription documents received from patients by ZEISS are entirely unstandardized. They range from hand-scribbled notes to typed forms, spanning multiple languages and writing systems, much like the paperwork a patient receives from their doctor. The stakes are high: extracting the wrong value doesn't just cause a software error; it produces the wrong lens for a patient. Manual processing was not a scalable option, so ZEISS set out to automate the extraction reliably.\nWhy Dapr Agents?\nModern AI models proved surprisingly capable of interpreting messy prescription documents. But raw model capability wasn't enough to ship to production. Steinbach identified three non-negotiable requirements for ZEISS: control, reliability, and flexibility .\nControl\nZEISS deliberately avoided a fully autonomous agent setup. Instead, the team constrained the AI within a structured Dapr Workflow : pre-processing → OCR → targeted LLM/agent calls. This gave ZEISS predictable, auditable results rather than the unpredictable outputs a free-running agent might produce.\nReliability\nDapr Workflow's durable execution model persists state after every step. If something fails mid-process, ZEISS's workflow resumes from where it left off — it doesn't start over.\n“ State is persisted after each step. If something goes wrong midway through, the process doesn't start over again. So an expensive, already-completed OCR task doesn't run again. That saves time and cost. ”\nFabian Steinbach\nSoftware Architect, ZEISS\nFlexibility\nThe AI model landscape evolves quickly. By using Dapr's Conversation API building block, ZEISS can swap in a newer or cheaper model by changing configuration alone — no code changes required.\n“ Even when the model landscape changes, the workflow should stay stable. If a better or cheaper model appears tomorrow, we can use Dapr's conversation building block and just change the configuration. ”\nFabian Steinbach\nSoftware Architect, ZEISS\nArchitecture\nThe architecture is designed for future-proofing and scale. By leveraging event-driven scaling with KEDA and decoupled microservices via Dapr, the system is built to seamlessly absorb high-volume, global order loads as new processes are continuously migrated to the new platform. Dive deeper into the architecture.\nKey Takeaways\nSteinbach distilled the ZEISS project into three lessons that apply well beyond their use case:\nConstrain the AI. A workflow-constrained agent outperformed a free-running one for ZEISS's use case. Guardrails aren't a limitation — they're a feature.\nUse the right tool for the job. ZEISS mixed specialized OCR models, general-purpose LLMs, and deterministic logic. If a plain function can do the job, an LLM shouldn't be used.\nDecouple model selection from code. Changing models via config — not code — means ZEISS can always leverage the best available model without engineering overhead.\nResults\nDevelopment time to production in 2 months\nZero labelled training data required\nRecognition accuracy on par with a specialized ML system\nVideo\nYou can watch the video of Fabian Steinbach at KubeCon EU 2026 Keynote — ZEISS Agents Case Study\nKey Resources\nDapr Agents overview\nDapr Workflow overview\nDapr Workflow features & concepts\nDapr Conversation API\nDapr Agents on GitHub\nReady to get started?\nSee how Diagrid can help you run Dapr in production with confidence.\nGet Started for Free Talk to an Expert\nRelated Case Studies\nDapr & Conductor Driving Success in the Automotive Software Industry\nJune 16, 2024\nDiagrid Conductor is Life Insurance for ZEISS' Microservice-based Order Fulfilment App\nJuly 18, 2023\nLeveraging OpenFunction & Dapr to archive automotive data\nFebruary 13, 2023\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / daily_observation, heatmap, case / high] ZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow, going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system. ZEISS is a German optics and optoelectr.... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=industry_landing\n2. [workflow_change / daily_observation, heatmap, change, case, trend / high] Dapr Agents ZEISS Vision: Orchestrating Document Data Extraction with Dapr Agents ZEISS built a production-grade document extraction pipeline using Dapr Agents and Dapr Workflow, going from prototype to production in just two months, with zero labelled training data and recognition results on par with a specialized machine learning system.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] May 1, 2026 Company Background ZEISS is a German optics and optoelectronics manufacturer, with a global reputation for precision in lenses, microscopes, medical technology, and industrial measurement systems.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] In the Vision Care segment, ZEISS manufactures prescription lenses worn by patients worldwide.\n5. [workflow_change / daily_observation, heatmap, change, case, trend / high] Their manufacturing processes demand exacting accuracy; a fraction of a dioptre in the wrong direction produces a lens that doesn't work for the patient.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] Overview ZEISS faced a deceptively hard problem at the start of their lens manufacturing pipeline: the input data was a mess.\n"
+}

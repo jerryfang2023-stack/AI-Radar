@@ -1,0 +1,344 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-116
+title: "软银携手 OpenAI 推出\"补丁即服务\"AI 驱动网络安全解决方案"
+original_url: "https://www.ithome.com/0/965/290.htm"
+canonical_url: "https://ithome.com/0/965/290.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-17T03:37:00.000Z"
+collected_at: 2026-06-18T03:06:53.299Z
+language: mixed
+full_text_hash: 2f5d897c840bb244
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-116-软银携手-openai-推出-补丁即服务-ai-驱动网络安全解决方案.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-116-软银携手-openai-推出-补丁即服务-ai-驱动网络安全解决方案.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: medium
+extraction_method: "body-visible-text"
+readability_score: 38
+extractor_diagnostics: {"readability_score":38,"text_length":1191,"paragraph_count":16,"sentence_count":6,"boilerplate_hits":3,"symbol_ratio":0.0017,"method":"body-visible-text"}
+has_full_text: true
+content_length: 1191
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2f5d897c840bb244","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"软银携手 OpenAI 推出\"补丁即服务\"AI 驱动网络安全解决方案","discovery_summary":"软银宣布推出\"Patching as a Service\"（补丁即服务），这是一项基于 OpenAI 先进技术与软银自身运营经验的 AI 驱动网络安全解决方案。针对恶意行为者利用 AI 自动化攻击关键基础设施的趋势，软银将此前内部使用 OpenAI 网络安全技术评估大规模系统、识别漏洞的成果融入该服务，为企业提供漏洞评估和修复规划支持。OpenAI 首席执行官 Sam Altman 表示，AI 正在变革网络安全，双方合作旨在将网络安全模型带给更多日本机构以加强系统防御。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/290.htm","discovered_at":"2026-06-18T03:01:26.788Z","rank_on_page":360,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 7b625e836d468878
+content_hash: 2f5d897c840bb244
+semantic_hash: 4971446019761366
+duplicate_of: ""
+first_seen_at: "2026-06-17T03:37:00.000Z"
+last_seen_at: 2026-06-18T03:06:53.299Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","OpenAI","Perplexity"],"products":["GPT-5"],"people":[],"industries":["金融 / 保险","医疗","企业服务"],"roles":[],"workflows":["权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟"],"affected_departments":["IT / 安全"],"numbers":["5","10","11","2026","6","17","37","00"],"quotes":["AI 驱动网络安全解决方案\n软银宣布推出"]}
+evidence_seed: {"company_actions":["恶意行为者正越来越多地利用 AI 自动化网络攻击，关键基础设施系统面临更为严峻的威胁。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["软银携手 OpenAI 推出“补丁即服务”AI 驱动网络安全解决方案 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 软银携手 OpenAI 推出“补丁即服务”AI 驱动网络安全解决方案 2026/6/17 11:37:00 来源： IT之家 作者： 溯波（实习） 责编： 溯波 评论： 感谢IT之家网友 斯文当不了饭吃 、 咩咩洋 的线索投递！","IT之家 6 月 17 日消息，SoftBank（软银）当地时间 16 日宣布推出 Patching as a Service“补丁即服务”，这是一项 基于 OpenAI 先进技术与软银自身运营经验的 AI 驱动网络安全解决方案 。","人工智能已成为网络安全攻防的重要一环。"]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"quote","text":"软银宣布推出\"Patching as a Service\"（补丁即服务），这是一项基于 OpenAI 先进技术与软银自身运营经验的 AI 驱动网络安全解决方案。针对恶意行为者利用 AI 自动化攻击关键基础设施的趋势，软银将此前内部使用 OpenAI 网络安全技术评估大规模系统、识别漏洞的成果融入该服务，为企业提供漏洞评估和修复规划支持。OpenAI 首席执行官 Sam Altman 表示，AI 正在变革网络安全，双方合作旨在将网络安全模型带给更多日本机构以加强系统防御。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"软银携手 OpenAI 推出“补丁即服务”AI 驱动网络安全解决方案 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 软银携手 OpenAI 推出“补丁即服务”AI 驱动网络安全解决方案 2026/6/17 11:37:00 来源： IT之家 作者： 溯波（实习） 责编： 溯波 评论： 感谢IT之家网友 斯文当不了饭吃 、 咩咩洋 的线索投递！","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"IT之家 6 月 17 日消息，SoftBank（软银）当地时间 16 日宣布推出 Patching as a Service“补丁即服务”，这是一项 基于 OpenAI 先进技术与软银自身运营经验的 AI 驱动网络安全解决方案 。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"人工智能已成为网络安全攻防的重要一环。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"恶意行为者正越来越多地利用 AI 自动化网络攻击，关键基础设施系统面临更为严峻的威胁。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"软银此前已在内部利用 OpenAI 的网络安全技术进行了大规模系统评估，在识别潜在漏洞方面取得了优异成果。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 软银携手 OpenAI 推出"补丁即服务"AI 驱动网络安全解决方案
+
+## clean_text
+
+软银携手 OpenAI 推出“补丁即服务”AI 驱动网络安全解决方案 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > IT资讯 > 业界
+软银携手 OpenAI 推出“补丁即服务”AI 驱动网络安全解决方案
+2026/6/17 11:37:00
+来源： IT之家
+作者： 溯波（实习）
+责编： 溯波
+评论：
+感谢IT之家网友 斯文当不了饭吃 、 咩咩洋 的线索投递！
+IT之家 6 月 17 日消息，SoftBank（软银）当地时间 16 日宣布推出 Patching as a Service“补丁即服务”，这是一项 基于 OpenAI 先进技术与软银自身运营经验的 AI 驱动网络安全解决方案 。
+人工智能已成为网络安全攻防的重要一环。恶意行为者正越来越多地利用 AI 自动化网络攻击，关键基础设施系统面临更为严峻的威胁。
+软银此前已在内部利用 OpenAI 的网络安全技术进行了大规模系统评估，在识别潜在漏洞方面取得了优异成果。这些经验也将汇入到“补丁即服务”中，为企业提供网络安全漏洞评估和修复规划支持的网络安全解决方案。
+图源：Pexels OpenAI 首席执行官 Sam Altman（萨姆 · 奥尔特曼）表示：
+人工智能正在变革网络安全，我们致力于构建能够帮助防御者加速发展的持久性项目。我们很高兴能与软银合作，将我们网络安全模型带来的变革性益处带给日本更多机构，并加强我们赖以生存的系统。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 软银 ， AI ， OpenAI ， 网络安全
+Instagram 再曝严重安全漏洞：扎克伯格、姆巴佩等用户身份信息泄露
+Perplexity 开源内部安全扫描工具 Bumblebee，助力行业应对软件供应链投毒
+OpenAI 将推出前沿网络安全模型 GPT-5.5-Cyber，暂不向公众开放
+医院“专家号”被脚本软件“秒抢”，警方抓获非法倒卖号源 10 人
+英国政府警告：若科技公司未能删除非自愿私密影像，高管将面临监禁
+欧美执法机构联手捣毁黑客论坛 LeakBase，据称规模“世界最大”
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## full_text
+
+软银携手 OpenAI 推出“补丁即服务”AI 驱动网络安全解决方案 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > IT资讯 > 业界
+软银携手 OpenAI 推出“补丁即服务”AI 驱动网络安全解决方案
+2026/6/17 11:37:00
+来源： IT之家
+作者： 溯波（实习）
+责编： 溯波
+评论：
+感谢IT之家网友 斯文当不了饭吃 、 咩咩洋 的线索投递！
+IT之家 6 月 17 日消息，SoftBank（软银）当地时间 16 日宣布推出 Patching as a Service“补丁即服务”，这是一项 基于 OpenAI 先进技术与软银自身运营经验的 AI 驱动网络安全解决方案 。
+人工智能已成为网络安全攻防的重要一环。恶意行为者正越来越多地利用 AI 自动化网络攻击，关键基础设施系统面临更为严峻的威胁。
+软银此前已在内部利用 OpenAI 的网络安全技术进行了大规模系统评估，在识别潜在漏洞方面取得了优异成果。这些经验也将汇入到“补丁即服务”中，为企业提供网络安全漏洞评估和修复规划支持的网络安全解决方案。
+图源：Pexels OpenAI 首席执行官 Sam Altman（萨姆 · 奥尔特曼）表示：
+人工智能正在变革网络安全，我们致力于构建能够帮助防御者加速发展的持久性项目。我们很高兴能与软银合作，将我们网络安全模型带来的变革性益处带给日本更多机构，并加强我们赖以生存的系统。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 软银 ， AI ， OpenAI ， 网络安全
+Instagram 再曝严重安全漏洞：扎克伯格、姆巴佩等用户身份信息泄露
+Perplexity 开源内部安全扫描工具 Bumblebee，助力行业应对软件供应链投毒
+OpenAI 将推出前沿网络安全模型 GPT-5.5-Cyber，暂不向公众开放
+医院“专家号”被脚本软件“秒抢”，警方抓获非法倒卖号源 10 人
+英国政府警告：若科技公司未能删除非自愿私密影像，高管将面临监禁
+欧美执法机构联手捣毁黑客论坛 LeakBase，据称规模“世界最大”
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 38
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- diagnostics: {"readability_score":38,"text_length":1191,"paragraph_count":16,"sentence_count":6,"boilerplate_hits":3,"symbol_ratio":0.0017,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   软银宣布推出"Patching as a Service"（补丁即服务），这是一项基于 OpenAI 先进技术与软银自身运营经验的 AI 驱动网络安全解决方案。针对恶意行为者利用 AI 自动化攻击关键基础设施的趋势，软银将此前内部使用 OpenAI 网络安全技术评估大规模系统、识别漏洞的成果融入该服务，为企业提供漏洞评估和修复规划支持。OpenAI 首席执行官 Sam Altman 表示，AI 正在变革网络安全，双方合作旨在将网络安全模型带给更多日本机构以加强系统防御。
+
+2. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   软银携手 OpenAI 推出“补丁即服务”AI 驱动网络安全解决方案 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 软银携手 OpenAI 推出“补丁即服务”AI 驱动网络安全解决方案 2026/6/17 11:37:00 来源： IT之家 作者： 溯波（实习） 责编： 溯波 评论： 感谢IT之家网友 斯文当不了饭吃 、 咩咩洋 的线索投递！
+
+3. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   IT之家 6 月 17 日消息，SoftBank（软银）当地时间 16 日宣布推出 Patching as a Service“补丁即服务”，这是一项 基于 OpenAI 先进技术与软银自身运营经验的 AI 驱动网络安全解决方案 。
+
+4. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   人工智能已成为网络安全攻防的重要一环。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   恶意行为者正越来越多地利用 AI 自动化网络攻击，关键基础设施系统面临更为严峻的威胁。
+
+6. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   软银此前已在内部利用 OpenAI 的网络安全技术进行了大规模系统评估，在识别潜在漏洞方面取得了优异成果。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI, Perplexity
+- products: GPT-5
+- people: 暂无公开信息
+- industries: 金融 / 保险, 医疗, 企业服务
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟
+- affected_departments: IT / 安全
+- numbers: 5, 10, 11, 2026, 6, 17, 37, 00
+- quotes: AI 驱动网络安全解决方案
+软银宣布推出
+
+## evidence_seed
+
+- company_actions: 恶意行为者正越来越多地利用 AI 自动化网络攻击，关键基础设施系统面临更为严峻的威胁。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 软银携手 OpenAI 推出“补丁即服务”AI 驱动网络安全解决方案 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 业界 软银携手 OpenAI 推出“补丁即服务”AI 驱动网络安全解决方案 2026/6/17 11:37:00 来源： IT之家 作者： 溯波（实习） 责编： 溯波 评论： 感谢IT之家网友 斯文当不了饭吃 、 咩咩洋 的线索投递！ / IT之家 6 月 17 日消息，SoftBank（软银）当地时间 16 日宣布推出 Patching as a Service“补丁即服务”，这是一项 基于 OpenAI 先进技术与软银自身运营经验的 AI 驱动网络安全解决方案 。 / 人工智能已成为网络安全攻防的重要一环。
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"软银携手 OpenAI 推出\"补丁即服务\"AI 驱动网络安全解决方案","discovery_summary":"软银宣布推出\"Patching as a Service\"（补丁即服务），这是一项基于 OpenAI 先进技术与软银自身运营经验的 AI 驱动网络安全解决方案。针对恶意行为者利用 AI 自动化攻击关键基础设施的趋势，软银将此前内部使用 OpenAI 网络安全技术评估大规模系统、识别漏洞的成果融入该服务，为企业提供漏洞评估和修复规划支持。OpenAI 首席执行官 Sam Altman 表示，AI 正在变革网络安全，双方合作旨在将网络安全模型带给更多日本机构以加强系统防御。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/290.htm","discovered_at":"2026-06-18T03:01:26.788Z","rank_on_page":360,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+软银宣布推出"Patching as a Service"（补丁即服务），这是一项基于 OpenAI 先进技术与软银自身运营经验的 AI 驱动网络安全解决方案。针对恶意行为者利用 AI 自动化攻击关键基础设施的趋势，软银将此前内部使用 OpenAI 网络安全技术评估大规模系统、识别漏洞的成果融入该服务，为企业提供漏洞评估和修复规划支持。OpenAI 首席执行官 Sam Altman 表示，AI 正在变革网络安全，双方合作旨在将网络安全模型带给更多日本机构以加强系统防御。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
