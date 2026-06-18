@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T03:09:11.275Z"
-collected_at: 2026-06-18T06:02:59.118Z
+collected_at: 2026-06-18T06:41:08.786Z
 language: mixed
-full_text_hash: 458b52d2290a66a6
+full_text_hash: daa044c85b92b393
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-003-cutile-rust-安全无数据竞争的-gpu-内核系统.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-003-cutile-rust-安全无数据竞争的-gpu-内核系统.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"458b52d2290a66a6","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"daa044c85b92b393","missing":[]}
 source_volatility: high
 community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
 capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: user_feedback_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"cuTile Rust：安全无数据竞争的 GPU 内核系统","discovery_summary":"cuTile Rust 是一个基于 tile 的 GPU 编程系统，允许用 Rust 编写内存安全、无数据竞争的内核。它通过 `#【cutile：：module】` 宏将内核 AST 嵌入主机二进制，在运行时经 CUDA Tile IR JIT 编译为 GPU cubin。可变张量在启动前分割，不可变张量共享，启动器在 GPU 工作期间保持所有权。在 NVIDIA B200 上，逐元素操作达 7 TB/s（约 91% 峰值带宽），GEMM 达 2 PFlop/s（约 92% 密集 f16 峰值）。基于 cuTile Rust 构建的 Grout 推理引擎在 RTX 5090 上解码 Qwen3-4B 达 171 tokens/s，在 B200 上解码 Qwen3-32B 达 82 tokens/s。项目处于早期研究阶段。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://github.com/nvlabs/cutile-rs","discovered_at":"2026-06-18T05:58:08.834Z","rank_on_page":48,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"cuTile Rust：安全无数据竞争的 GPU 内核系统","discovery_summary":"cuTile Rust 是一个基于 tile 的 GPU 编程系统，允许用 Rust 编写内存安全、无数据竞争的内核。它通过 `#【cutile：：module】` 宏将内核 AST 嵌入主机二进制，在运行时经 CUDA Tile IR JIT 编译为 GPU cubin。可变张量在启动前分割，不可变张量共享，启动器在 GPU 工作期间保持所有权。在 NVIDIA B200 上，逐元素操作达 7 TB/s（约 91% 峰值带宽），GEMM 达 2 PFlop/s（约 92% 密集 f16 峰值）。基于 cuTile Rust 构建的 Grout 推理引擎在 RTX 5090 上解码 Qwen3-4B 达 171 tokens/s，在 B200 上解码 Qwen3-32B 达 82 tokens/s。项目处于早期研究阶段。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://github.com/nvlabs/cutile-rs","discovered_at":"2026-06-18T06:35:55.909Z","rank_on_page":53,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: f84a91804b44508b
-content_hash: 458b52d2290a66a6
-semantic_hash: bb76282d6fc6b1dd
+content_hash: daa044c85b92b393
+semantic_hash: b4f41e6e416d5f17
 duplicate_of: ""
 first_seen_at: "2026-06-18T03:09:11.275Z"
-last_seen_at: 2026-06-18T06:02:59.118Z
+last_seen_at: 2026-06-18T06:41:08.786Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
@@ -66,9 +66,9 @@ evidence_eligibility: eligible
 evidence_block_reason: ""
 guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
 business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","GitHub","Nvidia"],"products":[],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["200","7","91%","2","92%","16","5090","3"],"quotes":[" /usr/local/cuda-13 "]}
-evidence_seed: {"company_actions":["NVlabs cutile-rs Public Notifications You must be signed in to change notification settings Fork 34 Star 531 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 111 Commits 111 Commits .","github assets assets cuda-async cuda-async cuda-bindings cuda-bindings cuda-core cuda-core cuda-tile-rs cuda-tile-rs cutile-benchmarks cutile-benchmarks cutile-book cutile-book cutile-compiler cutile-compiler cutile-examples cutile-examples cutile-ir cutile-ir cutile-kernels cutile-kernels cutile-macro cutile-macro cutile cutile scripts scripts .","gitmodules CHANGELOG."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+evidence_seed: {"company_actions":["NVlabs cutile-rs Public Notifications You must be signed in to change notification settings Fork 34 Star 533 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 111 Commits 111 Commits .","github assets assets cuda-async cuda-async cuda-bindings cuda-bindings cuda-core cuda-core cuda-tile-rs cuda-tile-rs cutile-benchmarks cutile-benchmarks cutile-book cutile-book cutile-compiler cutile-compiler cutile-examples cutile-examples cutile-ir cutile-ir cutile-kernels cutile-kernels cutile-macro cutile-macro cutile cutile scripts scripts .","gitmodules CHANGELOG."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
 missing_information: ["没有具体客户或真实企业案例"]
-key_excerpts: [{"type":"number","text":"cuTile Rust 是一个基于 tile 的 GPU 编程系统，允许用 Rust 编写内存安全、无数据竞争的内核。它通过 `#【cutile：：module】` 宏将内核 AST 嵌入主机二进制，在运行时经 CUDA Tile IR JIT 编译为 GPU cubin。可变张量在启动前分割，不可变张量共享，启动器在 GPU 工作期间保持所有权。在 NVIDIA B200 上，逐元素操作达 7 TB/s（约 91% 峰值带宽），GEMM 达 2 PFlop/s（约 92% 密集 f16 峰值）。基于 cuTile Rust 构建的 Grout 推理引擎在 RTX 5090 上解码 Qwen3-4B 达 171 tokens/s，在 B200 上解码 Qwen3-32B 达 82 tokens/s。项目处于早期研究阶段。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"NVlabs cutile-rs Public Notifications You must be signed in to change notification settings Fork 34 Star 531 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 111 Commits 111 Commits .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"github assets assets cuda-async cuda-async cuda-bindings cuda-bindings cuda-core cuda-core cuda-tile-rs cuda-tile-rs cutile-benchmarks cutile-benchmarks cutile-book cutile-book cutile-compiler cutile-compiler cutile-examples cutile-examples cutile-ir cutile-ir cutile-kernels cutile-kernels cutile-macro cutile-macro cutile cutile scripts scripts .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"gitmodules CHANGELOG.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"toml LICENSE-APACHE LICENSE-APACHE LICENSE-NVIDIA LICENSE-NVIDIA README.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"nix View all files Repository files navigation cuTile Rust ( cutile-rs ) is a tile-based system for writing memory-safe, data-race-free GPU kernels in idiomatic Rust.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+key_excerpts: [{"type":"number","text":"cuTile Rust 是一个基于 tile 的 GPU 编程系统，允许用 Rust 编写内存安全、无数据竞争的内核。它通过 `#【cutile：：module】` 宏将内核 AST 嵌入主机二进制，在运行时经 CUDA Tile IR JIT 编译为 GPU cubin。可变张量在启动前分割，不可变张量共享，启动器在 GPU 工作期间保持所有权。在 NVIDIA B200 上，逐元素操作达 7 TB/s（约 91% 峰值带宽），GEMM 达 2 PFlop/s（约 92% 密集 f16 峰值）。基于 cuTile Rust 构建的 Grout 推理引擎在 RTX 5090 上解码 Qwen3-4B 达 171 tokens/s，在 B200 上解码 Qwen3-32B 达 82 tokens/s。项目处于早期研究阶段。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"NVlabs cutile-rs Public Notifications You must be signed in to change notification settings Fork 34 Star 533 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 111 Commits 111 Commits .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"github assets assets cuda-async cuda-async cuda-bindings cuda-bindings cuda-core cuda-core cuda-tile-rs cuda-tile-rs cutile-benchmarks cutile-benchmarks cutile-book cutile-book cutile-compiler cutile-compiler cutile-examples cutile-examples cutile-ir cutile-ir cutile-kernels cutile-kernels cutile-macro cutile-macro cutile cutile scripts scripts .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"gitmodules CHANGELOG.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"toml LICENSE-APACHE LICENSE-APACHE LICENSE-NVIDIA LICENSE-NVIDIA README.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"nix View all files Repository files navigation cuTile Rust ( cutile-rs ) is a tile-based system for writing memory-safe, data-race-free GPU kernels in idiomatic Rust.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
@@ -86,7 +86,7 @@ You must be signed in to change notification settings
 Fork
 34
 Star
-531
+533
 main
 Branches Tags
 Go to file
@@ -299,7 +299,7 @@ There was an error while loading. Please reload this page .
 Activity
 Custom properties
 Stars
-531
+533
 stars
 Watchers
 watching
@@ -344,7 +344,7 @@ You must be signed in to change notification settings
 Fork
 34
 Star
-531
+533
 main
 Branches Tags
 Go to file
@@ -557,7 +557,7 @@ There was an error while loading. Please reload this page .
 Activity
 Custom properties
 Stars
-531
+533
 stars
 Watchers
 watching
@@ -610,7 +610,7 @@ Other
    cuTile Rust 是一个基于 tile 的 GPU 编程系统，允许用 Rust 编写内存安全、无数据竞争的内核。它通过 `#【cutile：：module】` 宏将内核 AST 嵌入主机二进制，在运行时经 CUDA Tile IR JIT 编译为 GPU cubin。可变张量在启动前分割，不可变张量共享，启动器在 GPU 工作期间保持所有权。在 NVIDIA B200 上，逐元素操作达 7 TB/s（约 91% 峰值带宽），GEMM 达 2 PFlop/s（约 92% 密集 f16 峰值）。基于 cuTile Rust 构建的 Grout 推理引擎在 RTX 5090 上解码 Qwen3-4B 达 171 tokens/s，在 B200 上解码 Qwen3-32B 达 82 tokens/s。项目处于早期研究阶段。
 
 2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
-   NVlabs cutile-rs Public Notifications You must be signed in to change notification settings Fork 34 Star 531 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 111 Commits 111 Commits .
+   NVlabs cutile-rs Public Notifications You must be signed in to change notification settings Fork 34 Star 533 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 111 Commits 111 Commits .
 
 3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
    github assets assets cuda-async cuda-async cuda-bindings cuda-bindings cuda-core cuda-core cuda-tile-rs cuda-tile-rs cutile-benchmarks cutile-benchmarks cutile-book cutile-book cutile-compiler cutile-compiler cutile-examples cutile-examples cutile-ir cutile-ir cutile-kernels cutile-kernels cutile-macro cutile-macro cutile cutile scripts scripts .
@@ -639,7 +639,7 @@ Other
 
 ## evidence_seed
 
-- company_actions: NVlabs cutile-rs Public Notifications You must be signed in to change notification settings Fork 34 Star 531 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 111 Commits 111 Commits . / github assets assets cuda-async cuda-async cuda-bindings cuda-bindings cuda-core cuda-core cuda-tile-rs cuda-tile-rs cutile-benchmarks cutile-benchmarks cutile-book cutile-book cutile-compiler cutile-compiler cutile-examples cutile-examples cutile-ir cutile-ir cutile-kernels cutile-kernels cutile-macro cutile-macro cutile cutile scripts scripts . / gitmodules CHANGELOG.
+- company_actions: NVlabs cutile-rs Public Notifications You must be signed in to change notification settings Fork 34 Star 533 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 111 Commits 111 Commits . / github assets assets cuda-async cuda-async cuda-bindings cuda-bindings cuda-core cuda-core cuda-tile-rs cuda-tile-rs cutile-benchmarks cutile-benchmarks cutile-book cutile-book cutile-compiler cutile-compiler cutile-examples cutile-examples cutile-ir cutile-ir cutile-kernels cutile-kernels cutile-macro cutile-macro cutile cutile scripts scripts . / gitmodules CHANGELOG.
 - case_details: 暂无公开信息
 - workflow_changes: 暂无公开信息
 - before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
@@ -692,7 +692,7 @@ Other
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"cuTile Rust：安全无数据竞争的 GPU 内核系统","discovery_summary":"cuTile Rust 是一个基于 tile 的 GPU 编程系统，允许用 Rust 编写内存安全、无数据竞争的内核。它通过 `#【cutile：：module】` 宏将内核 AST 嵌入主机二进制，在运行时经 CUDA Tile IR JIT 编译为 GPU cubin。可变张量在启动前分割，不可变张量共享，启动器在 GPU 工作期间保持所有权。在 NVIDIA B200 上，逐元素操作达 7 TB/s（约 91% 峰值带宽），GEMM 达 2 PFlop/s（约 92% 密集 f16 峰值）。基于 cuTile Rust 构建的 Grout 推理引擎在 RTX 5090 上解码 Qwen3-4B 达 171 tokens/s，在 B200 上解码 Qwen3-32B 达 82 tokens/s。项目处于早期研究阶段。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://github.com/nvlabs/cutile-rs","discovered_at":"2026-06-18T05:58:08.834Z","rank_on_page":48,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"cuTile Rust：安全无数据竞争的 GPU 内核系统","discovery_summary":"cuTile Rust 是一个基于 tile 的 GPU 编程系统，允许用 Rust 编写内存安全、无数据竞争的内核。它通过 `#【cutile：：module】` 宏将内核 AST 嵌入主机二进制，在运行时经 CUDA Tile IR JIT 编译为 GPU cubin。可变张量在启动前分割，不可变张量共享，启动器在 GPU 工作期间保持所有权。在 NVIDIA B200 上，逐元素操作达 7 TB/s（约 91% 峰值带宽），GEMM 达 2 PFlop/s（约 92% 密集 f16 峰值）。基于 cuTile Rust 构建的 Grout 推理引擎在 RTX 5090 上解码 Qwen3-4B 达 171 tokens/s，在 B200 上解码 Qwen3-32B 达 82 tokens/s。项目处于早期研究阶段。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://github.com/nvlabs/cutile-rs","discovered_at":"2026-06-18T06:35:55.909Z","rank_on_page":53,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

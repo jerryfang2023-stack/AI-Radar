@@ -1,5 +1,5 @@
 ---
-id: SIG-20260618-A20
+id: SIG-20260618-A22
 type: signal_card
 signal_type: product_service
 title: "GitHub 推出 Agent 工作流能力，切入企业 Agent 协作平台"
@@ -9,8 +9,8 @@ source_title: "Claude Code v2.1.181 发布"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-18T06:03:00.029Z
-updated_at: 2026-06-18T06:03:00.029Z
+created_at: 2026-06-18T06:41:09.947Z
+updated_at: 2026-06-18T06:41:09.947Z
 
 raw_refs: ["R-022"]
 pool_refs: ["P-022"]
@@ -19,7 +19,7 @@ primary_raw:
   raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-022-claude-code-v2-1-181-发布.md"
   raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-022-claude-code-v2-1-181-发布.json"
   source_url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.181"
-  full_text_hash: "8c903bcef029d734"
+  full_text_hash: "5bb3fb57fbd58adf"
   source_level: S
   extraction_quality: high
   has_full_text: true

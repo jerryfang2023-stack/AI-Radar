@@ -9,8 +9,8 @@ source_title: "GLM-5.2：为长周期任务而生"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-18T06:03:00.029Z
-updated_at: 2026-06-18T06:03:00.029Z
+created_at: 2026-06-18T06:41:09.947Z
+updated_at: 2026-06-18T06:41:09.947Z
 
 raw_refs: ["R-034"]
 pool_refs: ["P-034"]
@@ -19,7 +19,7 @@ primary_raw:
   raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-034-glm-5-2-为长周期任务而生.md"
   raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-034-glm-5-2-为长周期任务而生.json"
   source_url: "https://huggingface.co/blog/zai-org/glm-52-blog"
-  full_text_hash: "6d9a4e25e352a130"
+  full_text_hash: "21e4e0033af8dc7f"
   source_level: B
   extraction_quality: high
   has_full_text: true

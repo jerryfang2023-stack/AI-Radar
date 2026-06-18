@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-18T06:02:59.729Z
+collected_at: 2026-06-18T06:41:09.378Z
 language: mixed
 full_text_hash: 7752f319690a7130
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-154-谷歌发布agentic-resource-discovery-ard-开放规范.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"谷歌发布Agentic Resource Discovery（ARD）开放规范","discovery_summary":"Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google Cloud的Gemini Enterprise Agent Platform通过Agent Registry提供企业级支持，包括URN命名、出站策略、工具固定和基于Agent Identity的信任验证。该规范现已发布，开发者可通过托管`ai-catalog.json`文件使其服…","source_name":"Google Developers Blog（RSS）","origin_url":"","discovered_at":"2026-06-18T05:58:06.565Z","rank_on_page":15,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"谷歌发布Agentic Resource Discovery（ARD）开放规范","discovery_summary":"Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google Cloud的Gemini Enterprise Agent Platform通过Agent Registry提供企业级支持，包括URN命名、出站策略、工具固定和基于Agent Identity的信任验证。该规范现已发布，开发者可通过托管`ai-catalog.json`文件使其服…","source_name":"Google Developers Blog（RSS）","origin_url":"","discovered_at":"2026-06-18T06:35:54.501Z","rank_on_page":15,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 7752f319690a7130
 semantic_hash: 2e6570f240ab18ca
 duplicate_of: ""
-first_seen_at: "2026-06-18T06:02:59.729Z"
-last_seen_at: 2026-06-18T06:02:59.729Z
+first_seen_at: "2026-06-18T06:41:09.378Z"
+last_seen_at: 2026-06-18T06:41:09.378Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -186,7 +186,7 @@ Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"谷歌发布Agentic Resource Discovery（ARD）开放规范","discovery_summary":"Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google Cloud的Gemini Enterprise Agent Platform通过Agent Registry提供企业级支持，包括URN命名、出站策略、工具固定和基于Agent Identity的信任验证。该规范现已发布，开发者可通过托管`ai-catalog.json`文件使其服…","source_name":"Google Developers Blog（RSS）","origin_url":"","discovered_at":"2026-06-18T05:58:06.565Z","rank_on_page":15,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"谷歌发布Agentic Resource Discovery（ARD）开放规范","discovery_summary":"Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google Cloud的Gemini Enterprise Agent Platform通过Agent Registry提供企业级支持，包括URN命名、出站策略、工具固定和基于Agent Identity的信任验证。该规范现已发布，开发者可通过托管`ai-catalog.json`文件使其服…","source_name":"Google Developers Blog（RSS）","origin_url":"","discovered_at":"2026-06-18T06:35:54.501Z","rank_on_page":15,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

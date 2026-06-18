@@ -1,6 +1,6 @@
 # 2026-06-18 Guanlan Daily Monitor Log
 
-- generated_at: 2026-06-18T06:02:59.779Z
+- generated_at: 2026-06-18T06:41:09.426Z
 - raw_count: 187
 - aihot_mode: source-artifacts
 - aihot_since: 
@@ -14,28 +14,28 @@
 - external_search_activated: false
 - historical_dedupe_enabled: true
 - historical_raw_records_checked: 3504
-- historical_duplicates_removed_before_fetch: 50
+- historical_duplicates_removed_before_fetch: 48
 - historical_duplicates_removed_after_fetch: 3
 - raw_dedupe_buffer: 40
-- aihot_count: 107
-- keyword_search_count: 70
-- keyword_search_non_community_count: 70
-- keyword_search_path_distribution: developer_ecosystem=16; industry_landing=15; a_media_gdelt=12; official_original=10; capital_startup=9; procurement_marketplace=8
-- keyword_search_intent_distribution: find_original_source=34; find_startups=13; find_market_trend=12; find_customer_case=11
-- source_distribution: aihot=107; keyword-search=70; gdelt=10
+- aihot_count: 105
+- keyword_search_count: 71
+- keyword_search_non_community_count: 71
+- keyword_search_path_distribution: developer_ecosystem=16; industry_landing=14; a_media_gdelt=12; official_original=10; procurement_marketplace=10; capital_startup=9
+- keyword_search_intent_distribution: find_original_source=36; find_market_trend=12; find_startups=12; find_customer_case=11
+- source_distribution: aihot=105; keyword-search=71; gdelt=11
 - enterprise_ai_transformation_column: 企业AI化
-- enterprise_ai_transformation_candidate_count: 89
-- enterprise_ai_transformation_stage_distribution: platform_enablement=38; production_rollout=23; pilot=21; org_build=7
+- enterprise_ai_transformation_candidate_count: 88
+- enterprise_ai_transformation_stage_distribution: platform_enablement=38; production_rollout=25; pilot=18; org_build=7
 - enterprise_ai_transformation_boundary: Enterprise AI transformation is a monitoring lens, not a fourth Business Signal Card type; FDE / Applied AI role pages are organization-capability signals and require separate source-backed product, funding, customer deployment, procurement, or production rollout evidence before formal Card use.
-- raw_count_by_channel: aihot=107; keyword-search=70; gdelt=10
+- raw_count_by_channel: aihot=105; keyword-search=71; gdelt=11
 - keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
-- keyword_group_distribution: technical-iteration-signal=64; mature-commercial-signal=45; developer-ecosystem-signal=41; early-direction-signal=29; outside-core-exploration=7; capital-market-signal=1
-- theme_distribution: technical-iteration-signal=68; mature-commercial-signal=46; developer-ecosystem-signal=34; early-direction-signal=31; outside-core-exploration=7; capital-market-signal=1
+- keyword_group_distribution: technical-iteration-signal=64; mature-commercial-signal=44; developer-ecosystem-signal=43; early-direction-signal=28; outside-core-exploration=7; capital-market-signal=1
+- theme_distribution: technical-iteration-signal=67; mature-commercial-signal=50; developer-ecosystem-signal=32; early-direction-signal=30; outside-core-exploration=7; capital-market-signal=1
 - theme_concentration_warning: none
-- source_level_distribution: B=112; C=34; S=21; A=20
-- evidence_object_type_distribution: case_or_customer=69; event=67; official_index_or_directory=23; community_feedback=8; changelog_or_release=6; supporting_article=5; research_or_report=4; event_on_official_page=2; regulatory_or_procurement=2; pricing_change=1
-- pool_route_distribution: watchlist=77; core_pool=55; emerging_pool=52; user_feedback_pool=46; index_only=42; discard=11
-- pool_index_route_distribution: index_only=33; core_pool=31; watchlist=31; emerging_pool=24; user_feedback_pool=22
+- source_level_distribution: B=113; C=34; A=20; S=20
+- evidence_object_type_distribution: case_or_customer=72; event=69; official_index_or_directory=23; community_feedback=7; changelog_or_release=4; research_or_report=4; supporting_article=4; event_on_official_page=2; pricing_change=1; regulatory_or_procurement=1
+- pool_route_distribution: watchlist=85; emerging_pool=51; user_feedback_pool=49; core_pool=48; index_only=39; discard=13
+- pool_index_route_distribution: index_only=33; watchlist=32; core_pool=30; emerging_pool=23; user_feedback_pool=21
 - pool_index_count: 95
 - pool_target: 75
 - pool_selection_buffer: 20
@@ -43,7 +43,7 @@
 - routed_pool_target: 60
 - core_pool_target: 30
 - core_non_large_vendor_target: 20
-- non_core_pool_count: 31
+- non_core_pool_count: 32
 - index_only_pool_count: 33
 - aihot_index_only_count: 29
 - aihot_core_count: 0
@@ -54,68 +54,68 @@
 - pool_count: 95
 - change_cluster_candidates: not_generated_by_monitor
 - heat_candidates: none
-- failed_sources: source-artifact keyword: keyword-search pre-gate filtered 9 result(s): missing_ai_anchor_in_result=5; job_or_salary_page=2; noise_term:career=2
+- failed_sources: source-artifact keyword: keyword-search pre-gate filtered 11 result(s): missing_ai_anchor_in_result=6; job_or_salary_page=3; directory_or_search_page=1; noise_term:career=1
 - fallback_used: Default monitor uses AI HOT daily feed first, AI HOT all-mode remainder second, then keyword rules. External multi-path keyword search and GDELT activate when the default lanes do not meet the Raw minimum, an importance type is thin, or important candidates lack original text / usable evidence object. HN is feedback only and must not dominate. GDELT failures fall back to A-tier media search.
 - evidence_gaps: keyword-search must not stop at community feedback. If official, developer ecosystem, startup/funding, industry landing, procurement/marketplace or A-media paths fail, the item can only remain Watchlist/User Feedback until non-community evidence is found.
-- raw_count_by_source_type: web=97; community=34; official=14; media=12; developer=9; news=8; marketplace=5; product=4; funding=2; builder=1; industry=1
-- front_signal_sab_source_count: S=2; A=9; B=11; total=22
+- raw_count_by_source_type: web=92; community=34; developer=13; media=12; official=11; news=8; marketplace=7; product=6; funding=2; builder=1; industry=1
+- front_signal_sab_source_count: S=2; A=9; B=12; total=23
 - source_registry_config: 01-SiteV2/content/11-databases/source-registry-v2.json
-- raw_snapshot_status_distribution: fetched-readable-text-main=66; fetched-readable-text-content-container=40; no-url-summary-only=29; fetched-readable-text-json-ld=20; fetched-readable-text-body-visible-text=10; blocked-http-403=9; summary-only-low-readable-body=7; fetched-readable-text-article=4; http-404-fallback-text=1; timeout-fallback-visible-text=1
+- raw_snapshot_status_distribution: fetched-readable-text-main=66; fetched-readable-text-content-container=38; no-url-summary-only=29; fetched-readable-text-json-ld=22; blocked-http-403=10; fetched-readable-text-body-visible-text=10; summary-only-low-readable-body=7; fetched-readable-text-article=2; blocked-http-401=1; http-404-fallback-text=1; timeout-fallback-visible-text=1
 - core_original_evidence_count: pending; to be filled after important-card evidence review.
 - raw_snapshot_policy: Raw originals save clean text snapshots when fetchable; high-volatility sources keep available local text and must be rechecked before downstream use.
 
 ## Source Level Distribution
 
 - C: 34
-- B: 112
+- B: 113
 - A: 20
-- S: 21
+- S: 20
 
 ## Evidence Object Type Distribution
 
-- event: 67
+- event: 69
 - pricing_change: 1
-- changelog_or_release: 6
-- case_or_customer: 69
-- regulatory_or_procurement: 2
+- changelog_or_release: 4
+- case_or_customer: 72
+- regulatory_or_procurement: 1
 - research_or_report: 4
-- community_feedback: 8
-- supporting_article: 5
+- community_feedback: 7
+- supporting_article: 4
 - official_index_or_directory: 23
 - event_on_official_page: 2
 
 ## Theme Distribution
 
-- 早期信号 (early-direction-signal): 31
-- 开发者生态信号 (developer-ecosystem-signal): 34
+- 早期信号 (early-direction-signal): 30
+- 开发者生态信号 (developer-ecosystem-signal): 32
 - 外围探索信号 (outside-core-exploration): 7
-- 成熟信号 (mature-commercial-signal): 46
-- 技术迭代信号 (technical-iteration-signal): 68
+- 成熟信号 (mature-commercial-signal): 50
+- 技术迭代信号 (technical-iteration-signal): 67
 - 资本市场信号 (capital-market-signal): 1
 
 ## Keyword Group Distribution
 
-- early-direction-signal: 29
-- developer-ecosystem-signal: 41
+- early-direction-signal: 28
+- developer-ecosystem-signal: 43
 - outside-core-exploration: 7
-- mature-commercial-signal: 45
+- mature-commercial-signal: 44
 - technical-iteration-signal: 64
 - capital-market-signal: 1
 
 ## Keyword Search Path Distribution
 
 - a_media_gdelt: 12
-- developer_ecosystem: 16
-- procurement_marketplace: 8
 - official_original: 10
-- industry_landing: 15
 - capital_startup: 9
+- developer_ecosystem: 16
+- industry_landing: 14
+- procurement_marketplace: 10
 
 ## Keyword Search Intent Distribution
 
 - find_market_trend: 12
-- find_startups: 13
-- find_original_source: 34
+- find_startups: 12
+- find_original_source: 36
 - find_customer_case: 11
 
 ## Three-Lane Monitor Policy

@@ -9,8 +9,8 @@ source_title: "Pramaana Labs 获 2700 万美元种子轮融资，用形式化验
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-18T06:03:00.029Z
-updated_at: 2026-06-18T06:03:00.029Z
+created_at: 2026-06-18T06:41:09.947Z
+updated_at: 2026-06-18T06:41:09.947Z
 
 raw_refs: ["R-012"]
 pool_refs: ["P-012"]

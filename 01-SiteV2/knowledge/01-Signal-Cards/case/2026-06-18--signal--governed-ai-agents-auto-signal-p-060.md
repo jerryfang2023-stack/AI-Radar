@@ -9,15 +9,15 @@ source_title: "Governed AI Agents: How to Deploy and Scale with Confidence"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-18T03:06:53.669Z
-updated_at: 2026-06-18T03:06:53.669Z
+created_at: 2026-06-18T06:41:09.947Z
+updated_at: 2026-06-18T06:41:09.947Z
 
-raw_refs: ["R-073"]
+raw_refs: ["R-079"]
 pool_refs: ["P-060"]
 primary_raw:
-  raw_ref: R-073
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-073-governed-ai-agents-how-to-deploy-and-scale-with-confidence.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-073-governed-ai-agents-how-to-deploy-and-scale-with-confidence.json"
+  raw_ref: R-079
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-079-governed-ai-agents-how-to-deploy-and-scale-with-confidence.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-079-governed-ai-agents-how-to-deploy-and-scale-with-confidence.json"
   source_url: "https://boomi.com/blog/ai-agents-deployment-and-governance/"
   full_text_hash: "a77b1e36a780aee8"
   source_level: B

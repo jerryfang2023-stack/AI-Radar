@@ -20,7 +20,7 @@ search_path: "procurement_marketplace"
 search_path_label: "采购 / 招投标 / Marketplace 路径"
 author: ""
 published_at: ""
-collected_at: 2026-06-18T06:02:59.704Z
+collected_at: 2026-06-18T06:41:09.354Z
 language: mixed
 full_text_hash: 5b426b03352fa610
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-135-why-aws-marketplace-still-matters-for-startups-in-the-genai-era-the-sc.md"
@@ -55,8 +55,8 @@ url_hash: 5e28460b683b686d
 content_hash: 5b426b03352fa610
 semantic_hash: 28dec551d00b9a19
 duplicate_of: ""
-first_seen_at: "2026-06-18T06:02:59.704Z"
-last_seen_at: 2026-06-18T06:02:59.704Z
+first_seen_at: "2026-06-18T06:41:09.354Z"
+last_seen_at: 2026-06-18T06:41:09.354Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}

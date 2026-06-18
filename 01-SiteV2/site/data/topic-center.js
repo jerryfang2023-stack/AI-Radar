@@ -2,7 +2,7 @@ window.WaveSightTopicCenter = {
   "meta": {
     "version": "V2.2.2-source-title",
     "date": "2026-06-18",
-    "generatedAt": "2026-06-18T06:03:04.974Z",
+    "generatedAt": "2026-06-18T06:41:14.721Z",
     "source": "business-signals + first-line-viewpoints + community-intelligence",
     "rule": "boss_decision_topic_engine",
     "ruleLabel": "老板决策型选题机制",
@@ -16,7 +16,7 @@ window.WaveSightTopicCenter = {
       "styleFit": 5
     },
     "inputCounts": {
-      "businessSignals": 20,
+      "businessSignals": 13,
       "firstLineViewpoints": 2,
       "communityItems": 61
     },
@@ -30,7 +30,7 @@ window.WaveSightTopicCenter = {
       "big_small_contrast": 1,
       "person_story": 1
     },
-    "leadTopicId": "money_leak-谷歌发布agentic-resource-discovery-ard-开放规范"
+    "leadTopicId": "money_leak-发布-agentic-resource-discovery-规范"
   },
   "sources": [
     {
@@ -84,32 +84,32 @@ window.WaveSightTopicCenter = {
   ],
   "topics": [
     {
-      "id": "money_leak-谷歌发布agentic-resource-discovery-ard-开放规范",
+      "id": "money_leak-发布-agentic-resource-discovery-规范",
       "sourceId": "money_leak",
       "sourceName": "漏钱型",
       "sourceDesc": "订单入口、转化漏斗、线索流失",
       "type": "boss_decision_topic",
-      "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
-      "spreadTitle": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
+      "title": "发布 Agentic Resource Discovery 规范",
+      "spreadTitle": "发布 Agentic Resource Discovery 规范",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
-      "relevance": "谷歌发布Agentic Resource Discovery（ARD）开放规范；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
+      "relevance": "Google Developers Blog 原文标题宣布 Agentic Resource Discovery 规范。；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
       "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
       "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
       "oldFrame": "AI 是一个提效工具。",
       "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
       "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
-      "evidence": "谷歌发布Agentic Resource Discovery（ARD）开放规范；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
+      "evidence": "发布 Agentic Resource Discovery 规范；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260618-A11",
-            "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
+            "id": "SIG-20260618-A12",
+            "title": "发布 Agentic Resource Discovery 规范",
             "source": "Google Developers Blog（RSS）",
             "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification",
-            "note": "谷歌发布Agentic Resource Discovery（ARD）开放规范"
+            "note": "Google Developers Blog 原文标题宣布 Agentic Resource Discovery 规范。"
           }
         ],
         "viewpoints": [],
@@ -141,7 +141,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "开头直接问漏钱",
-          "note": "不要先讲 谷歌发布Agentic Resource Disc… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+          "note": "不要先讲 发布 Agentic Resource Disco… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
         },
         {
           "title": "中段拆入口链路",
@@ -158,40 +158,40 @@ window.WaveSightTopicCenter = {
         "结尾给一句新判断，不复述要点"
       ],
       "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
-      "originalTitle": "谷歌发布Agentic Resource Discovery（ARD）开放规范"
+      "originalTitle": "发布 Agentic Resource Discovery 规范"
     },
     {
-      "id": "small_role-gogloby-汇总应用-ai-案例与真实业务成效",
+      "id": "small_role-inxm-获得-570-万欧元-pre-seed-融资-以弥合企业-ai-演示与真实运营部署之间的差距",
       "sourceId": "small_role",
       "sourceName": "小岗位型",
       "sourceDesc": "客服、销售、财务、标书、运营",
       "type": "boss_decision_topic",
-      "title": "GoGloby 汇总应用 AI 案例与真实业务成效",
-      "spreadTitle": "GoGloby 汇总应用 AI 案例与真实业务成效",
+      "title": "INXM 获得 570 万欧元 Pre-Seed 融资，以弥合企业 AI 演示与真实运营部署之间的差距",
+      "spreadTitle": "INXM 获得 570 万欧元 Pre-Seed 融资，以弥合企业 AI 演示与真实运营部署之间的差距",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位、一个明确动作、一个可验收结果里。",
-      "relevance": "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
+      "relevance": "INXM 获得 570 万欧元 Pre-Seed 融资，原文标题说明其目标是弥合企业 AI 演示与真实运营部署之间的差距。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
       "bossPain": "老板最怕 AI 项目太大、太贵、太慢，最后没人用。",
       "moneyLine": "一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。",
       "oldFrame": "做一个什么都能干的 AI 平台。",
       "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
       "actionHint": "先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。",
-      "evidence": "GoGloby 汇总应用 AI 案例与真实业务成效；GoGloby 汇总应用 AI 案例与真实业务成效；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
+      "evidence": "INXM 获得 570 万欧元 Pre-Seed 融资，以弥合企业 AI 演示与真实运营部署之间的差距；应用 AI 案例研究和真实成功故事；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260618-A05",
-            "title": "GoGloby 汇总应用 AI 案例与真实业务成效",
-            "source": "gogloby.com",
-            "url": "https://gogloby.com/insights/applied-ai-case-studies/",
-            "note": "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。"
+            "id": "SIG-20260618-A10",
+            "title": "INXM 获得 570 万欧元 Pre-Seed 融资，以弥合企业 AI 演示与真实运营部署之间的差距",
+            "source": "pulse2.com",
+            "url": "https://pulse2.com/inxm-raises-e5-7-million-pre-seed-to-bridge-the-gap-between-enterprise-ai-demos-and-real-operational-deployment/",
+            "note": "INXM 获得 570 万欧元 Pre-Seed 融资，原文标题说明其目标是弥合企业 AI 演示与真实运营部署之间的差距。"
           },
           {
             "kind": "business_signal",
             "id": "SIG-20260618-A05",
-            "title": "GoGloby 汇总应用 AI 案例与真实业务成效",
+            "title": "应用 AI 案例研究和真实成功故事",
             "source": "gogloby.com",
             "url": "https://gogloby.com/insights/applied-ai-case-studies/",
             "note": "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。"
@@ -209,8 +209,8 @@ window.WaveSightTopicCenter = {
           }
         ]
       },
-      "source": "gogloby.com",
-      "url": "https://gogloby.com/insights/applied-ai-case-studies/",
+      "source": "pulse2.com",
+      "url": "https://pulse2.com/inxm-raises-e5-7-million-pre-seed-to-bridge-the-gap-between-enterprise-ai-demos-and-real-operational-deployment/",
       "date": "2026-06-18",
       "score": 97,
       "grade": "S",
@@ -243,16 +243,16 @@ window.WaveSightTopicCenter = {
         "结尾给一句新判断，不复述要点"
       ],
       "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
-      "originalTitle": "GoGloby 汇总应用 AI 案例与真实业务成效"
+      "originalTitle": "INXM 获得 570 万欧元 Pre-Seed 融资，以弥合企业 AI 演示与真实运营部署之间的差距"
     },
     {
-      "id": "counterintuitive-xdof获7000万美元融资-构建机器人训练数据基础设施",
+      "id": "counterintuitive-收集机器人训练数据是脏活累活-一些-ai-实验室已经在付费让-xdof-来做",
       "sourceId": "counterintuitive",
       "sourceName": "反常识型",
       "sourceDesc": "推翻流行说法，形成可传播判断",
       "type": "boss_decision_topic",
-      "title": "XDOF获7000万美元融资，构建机器人训练数据基础设施",
-      "spreadTitle": "XDOF获7000万美元融资，构建机器人训练数据基础设施",
+      "title": "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做",
+      "spreadTitle": "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "反常识点在于：AI 越强，越不是所有人都被替代，而是会拆任务、会验收结果的人更值钱。",
       "relevance": "机器人训练数据初创公司XDOF结束隐身，获Thrive Capital、a16z等7000万美元投资。公司为AI实验室和机器人公司构建数据管道、采集工具和标注系统，填补物理交互训练数据缺口。XDOF联合UC Berkeley发布ABC数据…；社群里“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”的讨论也在提醒老板，问题不再只是怎么做。",
@@ -261,14 +261,14 @@ window.WaveSightTopicCenter = {
       "oldFrame": "追最新 AI 工具。",
       "newFrame": "先沉淀任务、语料、步骤和验收标准，再让 AI 接手。",
       "actionHint": "今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。",
-      "evidence": "XDOF获7000万美元融资，构建机器人训练数据基础设施；GLM-5.2可能是最强大的纯文本开放式权重LLM；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+      "evidence": "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做；GLM-5.2可能是最强大的纯文本开放式权重LLM；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260618-A17",
-            "title": "XDOF获7000万美元融资，构建机器人训练数据基础设施",
+            "id": "SIG-20260618-A19",
+            "title": "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做",
             "source": "TechCrunch：AI（RSS）",
             "url": "https://techcrunch.com/2026/06/17/collecting-robot-training-data-is-dirty-unglamorous-work-some-ai-labs-are-already-paying-xdof-to-do-it",
             "note": "机器人训练数据初创公司XDOF结束隐身，获Thrive Capital、a16z等7000万美元投资。公司为AI实验室和机器人公司构建数据管道、采集工具和标注系统，填补物理交互训练数据缺口。XDOF联合UC Berkeley发布ABC数据集，含13万条机器人操作轨迹、300小时仿真数据及100小时评估数据，号称迄今最大高质量机器人训练数据集。公司计划通过三…"
@@ -329,35 +329,35 @@ window.WaveSightTopicCenter = {
         "结尾给一句新判断，不复述要点"
       ],
       "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
-      "originalTitle": "XDOF获7000万美元融资，构建机器人训练数据基础设施"
+      "originalTitle": "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做"
     },
     {
-      "id": "big_small_contrast-willow-获得-7m-融资-押注销售线索和收入团队协作",
+      "id": "big_small_contrast-voicerun-推出面向企业的全栈语音-ai-平台-并完成-550-万美元种子轮融资",
       "sourceId": "big_small_contrast",
       "sourceName": "大小对照型",
       "sourceDesc": "大融资对照小生意，大模型对照小岗位",
       "type": "boss_decision_topic",
-      "title": "Willow 获得$7M 融资，押注销售线索和收入团队协作",
-      "spreadTitle": "Willow 获得$7M 融资，押注销售线索和收入团队协作",
+      "title": "VoiceRun 推出面向企业的全栈语音 AI 平台，并完成 550 万美元种子轮融资",
+      "spreadTitle": "VoiceRun 推出面向企业的全栈语音 AI 平台，并完成 550 万美元种子轮融资",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "大新闻负责告诉你资本往哪里押，小机会负责告诉你老板明天愿意为什么付钱。",
-      "relevance": "这条融资信号可用于判断资金流向、投资人押注方向，以及公司后续产品或销售扩张节奏。；同时社群里的“这篇产品调研干货：帮你避开90%独立开发者起步坑”说明一线需求还在配置、流程和交付。",
+      "relevance": "prnewswire 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。；同时社群里的“这篇产品调研干货：帮你避开90%独立开发者起步坑”说明一线需求还在配置、流程和交付。",
       "bossPain": "老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。",
       "moneyLine": "大公司赚基础设施的钱，小服务商赚落地第一公里的钱。",
       "oldFrame": "AI 创业只能跟大模型和融资有关。",
       "newFrame": "普通人的 AI 机会在帮老板跨过配置、流程和交付门槛。",
       "actionHint": "把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。",
-      "evidence": "Willow 获得$7M 融资，押注销售线索和收入团队协作；GLM-5.2可能是最强大的纯文本开放式权重LLM；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
+      "evidence": "VoiceRun 推出面向企业的全栈语音 AI 平台，并完成 550 万美元种子轮融资；GLM-5.2可能是最强大的纯文本开放式权重LLM；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
             "id": "SIG-20260618-A02",
-            "title": "Willow 获得$7M 融资，押注销售线索和收入团队协作",
-            "source": "withwillow.ai",
-            "url": "https://withwillow.ai/blog/willow-7m-seed-funding",
-            "note": "这条融资信号可用于判断资金流向、投资人押注方向，以及公司后续产品或销售扩张节奏。"
+            "title": "VoiceRun 推出面向企业的全栈语音 AI 平台，并完成 550 万美元种子轮融资",
+            "source": "prnewswire.com",
+            "url": "https://www.prnewswire.com/news-releases/voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with-5-5-million-seed-round-302660750.html",
+            "note": "prnewswire 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。"
           }
         ],
         "viewpoints": [
@@ -381,8 +381,8 @@ window.WaveSightTopicCenter = {
           }
         ]
       },
-      "source": "withwillow.ai",
-      "url": "https://withwillow.ai/blog/willow-7m-seed-funding",
+      "source": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with-5-5-million-seed-round-302660750.html",
       "date": "2026-06-18",
       "score": 93,
       "grade": "S",
@@ -415,7 +415,7 @@ window.WaveSightTopicCenter = {
         "结尾给一句新判断，不复述要点"
       ],
       "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
-      "originalTitle": "Willow 获得$7M 融资，押注销售线索和收入团队协作"
+      "originalTitle": "VoiceRun 推出面向企业的全栈语音 AI 平台，并完成 550 万美元种子轮融资"
     },
     {
       "id": "person_story-保姆级教程-经历分享-1-天跑通-最适合新手上手的-ai-项目",
@@ -433,14 +433,14 @@ window.WaveSightTopicCenter = {
       "oldFrame": "写 AI 就要讲技术和趋势。",
       "newFrame": "写给老板的 AI 内容，要先有人、有场景、有结果。",
       "actionHint": "从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。",
-      "evidence": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目；XDOF获7000万美元融资，构建机器人训练数据基础设施；GLM-5.2可能是最强大的纯文本开放式权重LLM",
+      "evidence": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目；收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做；GLM-5.2可能是最强大的纯文本开放式权重LLM",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260618-A17",
-            "title": "XDOF获7000万美元融资，构建机器人训练数据基础设施",
+            "id": "SIG-20260618-A19",
+            "title": "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做",
             "source": "TechCrunch：AI（RSS）",
             "url": "https://techcrunch.com/2026/06/17/collecting-robot-training-data-is-dirty-unglamorous-work-some-ai-labs-are-already-paying-xdof-to-do-it",
             "note": "机器人训练数据初创公司XDOF结束隐身，获Thrive Capital、a16z等7000万美元投资。公司为AI实验室和机器人公司构建数据管道、采集工具和标注系统，填补物理交互训练数据缺口。XDOF联合UC Berkeley发布ABC数据集，含13万条机器人操作轨迹、300小时仿真数据及100小时评估数据，号称迄今最大高质量机器人训练数据集。公司计划通过三…"
@@ -519,17 +519,17 @@ window.WaveSightTopicCenter = {
       "oldFrame": "AI 是员工自己研究的新工具。",
       "newFrame": "AI 是同行正在重做经营速度的生产系统。",
       "actionHint": "每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？",
-      "evidence": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘；谷歌发布Agentic Resource Discovery（ARD）开放规范；GLM-5.2可能是最强大的纯文本开放式权重LLM",
+      "evidence": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘；发布 Agentic Resource Discovery 规范；GLM-5.2可能是最强大的纯文本开放式权重LLM",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260618-A11",
-            "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
+            "id": "SIG-20260618-A12",
+            "title": "发布 Agentic Resource Discovery 规范",
             "source": "Google Developers Blog（RSS）",
             "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification",
-            "note": "谷歌发布Agentic Resource Discovery（ARD）开放规范"
+            "note": "Google Developers Blog 原文标题宣布 Agentic Resource Discovery 规范。"
           }
         ],
         "viewpoints": [
@@ -590,32 +590,32 @@ window.WaveSightTopicCenter = {
       "originalTitle": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘"
     },
     {
-      "id": "pitfall-boomi-讨论受治理-ai-agent-的部署与规模化",
-      "sourceId": "pitfall",
-      "sourceName": "避坑型",
-      "sourceDesc": "工具乱买、权限失控、流程没拆",
+      "id": "save_headcount-应用-ai-案例研究和真实成功故事",
+      "sourceId": "save_headcount",
+      "sourceName": "省人型",
+      "sourceDesc": "少招人、少返工、少加班",
       "type": "boss_decision_topic",
-      "title": "Boomi 讨论受治理 AI Agent 的部署与规模化",
-      "spreadTitle": "Boomi 讨论受治理 AI Agent 的部署与规模化",
+      "title": "应用 AI 案例研究和真实成功故事",
+      "spreadTitle": "应用 AI 案例研究和真实成功故事",
       "audience": "企业老板 / 创业者 / 业务负责人",
-      "core": "AI 从生成内容走向执行动作后，企业问题从“会不会用”变成“谁审核、谁授权、谁负责”。",
-      "relevance": "Boomi 讨论受治理 AI Agent 的部署与规模化，重点是企业在可靠性、安全、治理和集成要求下如何把 Agent 从试点推进到生产环境。；这类信号适合写给老板看，因为它直接关系到业务风险。",
-      "bossPain": "AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。",
-      "moneyLine": "权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。",
-      "oldFrame": "AI 越自主越好。",
-      "newFrame": "AI 越自主，越要先设计权限、复核和责任人。",
-      "actionHint": "先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。",
-      "evidence": "Boomi 讨论受治理 AI Agent 的部署与规模化；GLM-5.2可能是最强大的纯文本开放式权重LLM；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+      "core": "AI 进入企业的第一步，不是替代一个完整的人，而是接住岗位里反复发生、规则清楚、结果可验收的动作。",
+      "relevance": "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。；这类信号比“AI 很强”更接近老板的组织账。",
+      "bossPain": "人越招越多，流程没有变短，管理成本反而被重复动作拖住。",
+      "moneyLine": "少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。",
+      "oldFrame": "AI 上线就是裁员。",
+      "newFrame": "AI 上线的第一阶段，是把岗位动作拆小，让公司少招重复岗位。",
+      "actionHint": "选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。",
+      "evidence": "应用 AI 案例研究和真实成功故事；GLM-5.2可能是最强大的纯文本开放式权重LLM；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260618-A06",
-            "title": "Boomi 讨论受治理 AI Agent 的部署与规模化",
-            "source": "boomi.com",
-            "url": "https://boomi.com/blog/ai-agents-deployment-and-governance/",
-            "note": "Boomi 讨论受治理 AI Agent 的部署与规模化，重点是企业在可靠性、安全、治理和集成要求下如何把 Agent 从试点推进到生产环境。"
+            "id": "SIG-20260618-A05",
+            "title": "应用 AI 案例研究和真实成功故事",
+            "source": "gogloby.com",
+            "url": "https://gogloby.com/insights/applied-ai-case-studies/",
+            "note": "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。"
           }
         ],
         "viewpoints": [
@@ -639,8 +639,94 @@ window.WaveSightTopicCenter = {
           }
         ]
       },
-      "source": "boomi.com",
-      "url": "https://boomi.com/blog/ai-agents-deployment-and-governance/",
+      "source": "gogloby.com",
+      "url": "https://gogloby.com/insights/applied-ai-case-studies/",
+      "date": "2026-06-18",
+      "score": 90,
+      "grade": "S",
+      "priority": "公众号主稿",
+      "scoreBreakdown": {
+        "bossPain": 23,
+        "moneyRelation": 23,
+        "talkability": 16,
+        "spreadability": 13,
+        "actionability": 10,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "用岗位动作替代岗位名称",
+          "note": "不要写 AI 替代某个人，写 AI 先替代接听、归档、质检、催办、汇总这类动作。"
+        },
+        {
+          "title": "把省人写成管理账",
+          "note": "老板关心的不是炫技，是少招人、少返工、少培训。"
+        },
+        {
+          "title": "给一个当天可做的小动作",
+          "note": "用 应用 AI 案例研究和真实成功故事 做例子，把大流程拆成一个可验收动作。"
+        }
+      ],
+      "writingStructure": [
+        "开头 3 句内给冲突或数字",
+        "中段按现象 -> 算账 -> 坑 -> 解法推进",
+        "结尾给一句新判断，不复述要点"
+      ],
+      "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
+      "originalTitle": "应用 AI 案例研究和真实成功故事"
+    },
+    {
+      "id": "pitfall-世界领导人想要美国-ai-但不希望美国能够将其关闭",
+      "sourceId": "pitfall",
+      "sourceName": "避坑型",
+      "sourceDesc": "工具乱买、权限失控、流程没拆",
+      "type": "boss_decision_topic",
+      "title": "世界领导人想要美国 AI，但不希望美国能够将其关闭",
+      "spreadTitle": "世界领导人想要美国 AI，但不希望美国能够将其关闭",
+      "audience": "企业老板 / 创业者 / 业务负责人",
+      "core": "AI 从生成内容走向执行动作后，企业问题从“会不会用”变成“谁审核、谁授权、谁负责”。",
+      "relevance": "在G7峰会上，法国总统马克龙和印度总理莫迪等领导人对美国可能随时切断顶级AI模型访问表示担忧。此前特朗普政府以国家安全为由阻止Anthropic出口其最新模型Mythos 5和Fable 5。加拿大企业AI公司Cohere CEO Aid…；这类信号适合写给老板看，因为它直接关系到业务风险。",
+      "bossPain": "AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。",
+      "moneyLine": "权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。",
+      "oldFrame": "AI 越自主越好。",
+      "newFrame": "AI 越自主，越要先设计权限、复核和责任人。",
+      "actionHint": "先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。",
+      "evidence": "世界领导人想要美国 AI，但不希望美国能够将其关闭；GLM-5.2可能是最强大的纯文本开放式权重LLM；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "sourceInputs": {
+        "businessSignals": [
+          {
+            "kind": "business_signal",
+            "id": "SIG-20260618-A16",
+            "title": "世界领导人想要美国 AI，但不希望美国能够将其关闭",
+            "source": "TechCrunch：AI（RSS）",
+            "url": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off",
+            "note": "在G7峰会上，法国总统马克龙和印度总理莫迪等领导人对美国可能随时切断顶级AI模型访问表示担忧。此前特朗普政府以国家安全为由阻止Anthropic出口其最新模型Mythos 5和Fable 5。加拿大企业AI公司Cohere CEO Aidan Gomez表示，依赖少数大科技公司对弹性构成危险。G7领导人讨论了建立\"信任伙伴\"计划，允许非美国国家从Anthr…"
+          }
+        ],
+        "viewpoints": [
+          {
+            "kind": "first_line_viewpoint",
+            "id": "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything",
+            "title": "GLM-5.2可能是最强大的纯文本开放式权重LLM",
+            "source": "Simon Willison's Blog",
+            "url": "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything",
+            "note": "GLM-5.2可能是最强大的纯文本开放式权重LLM"
+          }
+        ],
+        "communityItems": [
+          {
+            "kind": "community_intelligence",
+            "id": "acc14f1e324feb",
+            "title": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+            "source": "生财有术",
+            "url": "https://scys.com/articleDetail/xq_topic/55522542522288884",
+            "note": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP 生财的圈友们大家好，我是诗意听涛，目前我主要围绕出海游戏站来做业务"
+          }
+        ]
+      },
+      "source": "TechCrunch：AI（RSS）",
+      "url": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off",
       "date": "2026-06-18",
       "score": 88,
       "grade": "A",
@@ -664,7 +750,7 @@ window.WaveSightTopicCenter = {
         },
         {
           "title": "用当天案例推进",
-          "note": "用 Boomi 讨论受治理 AI Agent 的部署与… 做钩子，落到企业内部的授权和复核表。"
+          "note": "用 世界领导人想要美国 AI，但不希望美国能够将其关闭 做钩子，落到企业内部的授权和复核表。"
         }
       ],
       "writingStructure": [
@@ -673,7 +759,7 @@ window.WaveSightTopicCenter = {
         "结尾给一句新判断，不复述要点"
       ],
       "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
-      "originalTitle": "Boomi 讨论受治理 AI Agent 的部署与规模化"
+      "originalTitle": "世界领导人想要美国 AI，但不希望美国能够将其关闭"
     },
     {
       "id": "money_leak-从像素到规划-google-research-发布-vectorized-farmscapes-2020-数据集",
@@ -3639,32 +3725,32 @@ window.WaveSightTopicCenter = {
   ],
   "grouped": {
     "lead": {
-      "id": "money_leak-谷歌发布agentic-resource-discovery-ard-开放规范",
+      "id": "money_leak-发布-agentic-resource-discovery-规范",
       "sourceId": "money_leak",
       "sourceName": "漏钱型",
       "sourceDesc": "订单入口、转化漏斗、线索流失",
       "type": "boss_decision_topic",
-      "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
-      "spreadTitle": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
+      "title": "发布 Agentic Resource Discovery 规范",
+      "spreadTitle": "发布 Agentic Resource Discovery 规范",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
-      "relevance": "谷歌发布Agentic Resource Discovery（ARD）开放规范；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
+      "relevance": "Google Developers Blog 原文标题宣布 Agentic Resource Discovery 规范。；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
       "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
       "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
       "oldFrame": "AI 是一个提效工具。",
       "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
       "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
-      "evidence": "谷歌发布Agentic Resource Discovery（ARD）开放规范；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
+      "evidence": "发布 Agentic Resource Discovery 规范；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260618-A11",
-            "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
+            "id": "SIG-20260618-A12",
+            "title": "发布 Agentic Resource Discovery 规范",
             "source": "Google Developers Blog（RSS）",
             "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification",
-            "note": "谷歌发布Agentic Resource Discovery（ARD）开放规范"
+            "note": "Google Developers Blog 原文标题宣布 Agentic Resource Discovery 规范。"
           }
         ],
         "viewpoints": [],
@@ -3696,7 +3782,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "开头直接问漏钱",
-          "note": "不要先讲 谷歌发布Agentic Resource Disc… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+          "note": "不要先讲 发布 Agentic Resource Disco… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
         },
         {
           "title": "中段拆入口链路",
@@ -3717,32 +3803,32 @@ window.WaveSightTopicCenter = {
     "byEngine": {
       "money_leak": [
         {
-          "id": "money_leak-谷歌发布agentic-resource-discovery-ard-开放规范",
+          "id": "money_leak-发布-agentic-resource-discovery-规范",
           "sourceId": "money_leak",
           "sourceName": "漏钱型",
           "sourceDesc": "订单入口、转化漏斗、线索流失",
           "type": "boss_decision_topic",
-          "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
-          "spreadTitle": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
+          "title": "发布 Agentic Resource Discovery 规范",
+          "spreadTitle": "发布 Agentic Resource Discovery 规范",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
-          "relevance": "谷歌发布Agentic Resource Discovery（ARD）开放规范；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
+          "relevance": "Google Developers Blog 原文标题宣布 Agentic Resource Discovery 规范。；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
           "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
           "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
           "oldFrame": "AI 是一个提效工具。",
           "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
           "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
-          "evidence": "谷歌发布Agentic Resource Discovery（ARD）开放规范；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
+          "evidence": "发布 Agentic Resource Discovery 规范；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260618-A11",
-                "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
+                "id": "SIG-20260618-A12",
+                "title": "发布 Agentic Resource Discovery 规范",
                 "source": "Google Developers Blog（RSS）",
                 "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification",
-                "note": "谷歌发布Agentic Resource Discovery（ARD）开放规范"
+                "note": "Google Developers Blog 原文标题宣布 Agentic Resource Discovery 规范。"
               }
             ],
             "viewpoints": [],
@@ -3774,7 +3860,7 @@ window.WaveSightTopicCenter = {
           "angles": [
             {
               "title": "开头直接问漏钱",
-              "note": "不要先讲 谷歌发布Agentic Resource Disc… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+              "note": "不要先讲 发布 Agentic Resource Disco… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
             },
             {
               "title": "中段拆入口链路",
@@ -3795,13 +3881,13 @@ window.WaveSightTopicCenter = {
       ],
       "save_headcount": [
         {
-          "id": "save_headcount-gogloby-汇总应用-ai-案例与真实业务成效",
+          "id": "save_headcount-应用-ai-案例研究和真实成功故事",
           "sourceId": "save_headcount",
           "sourceName": "省人型",
           "sourceDesc": "少招人、少返工、少加班",
           "type": "boss_decision_topic",
-          "title": "GoGloby 汇总应用 AI 案例与真实业务成效",
-          "spreadTitle": "GoGloby 汇总应用 AI 案例与真实业务成效",
+          "title": "应用 AI 案例研究和真实成功故事",
+          "spreadTitle": "应用 AI 案例研究和真实成功故事",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "AI 进入企业的第一步，不是替代一个完整的人，而是接住岗位里反复发生、规则清楚、结果可验收的动作。",
           "relevance": "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。；这类信号比“AI 很强”更接近老板的组织账。",
@@ -3810,14 +3896,14 @@ window.WaveSightTopicCenter = {
           "oldFrame": "AI 上线就是裁员。",
           "newFrame": "AI 上线的第一阶段，是把岗位动作拆小，让公司少招重复岗位。",
           "actionHint": "选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。",
-          "evidence": "GoGloby 汇总应用 AI 案例与真实业务成效；GLM-5.2可能是最强大的纯文本开放式权重LLM；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "应用 AI 案例研究和真实成功故事；GLM-5.2可能是最强大的纯文本开放式权重LLM；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
                 "id": "SIG-20260618-A05",
-                "title": "GoGloby 汇总应用 AI 案例与真实业务成效",
+                "title": "应用 AI 案例研究和真实成功故事",
                 "source": "gogloby.com",
                 "url": "https://gogloby.com/insights/applied-ai-case-studies/",
                 "note": "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。"
@@ -3869,7 +3955,7 @@ window.WaveSightTopicCenter = {
             },
             {
               "title": "给一个当天可做的小动作",
-              "note": "用 GoGloby 汇总应用 AI 案例与真实业务成效 做例子，把大流程拆成一个可验收动作。"
+              "note": "用 应用 AI 案例研究和真实成功故事 做例子，把大流程拆成一个可验收动作。"
             }
           ],
           "writingStructure": [
@@ -3897,17 +3983,17 @@ window.WaveSightTopicCenter = {
           "oldFrame": "AI 是员工自己研究的新工具。",
           "newFrame": "AI 是同行正在重做经营速度的生产系统。",
           "actionHint": "每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？",
-          "evidence": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘；谷歌发布Agentic Resource Discovery（ARD）开放规范；GLM-5.2可能是最强大的纯文本开放式权重LLM",
+          "evidence": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘；发布 Agentic Resource Discovery 规范；GLM-5.2可能是最强大的纯文本开放式权重LLM",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260618-A11",
-                "title": "谷歌发布Agentic Resource Discovery（ARD）开放规范",
+                "id": "SIG-20260618-A12",
+                "title": "发布 Agentic Resource Discovery 规范",
                 "source": "Google Developers Blog（RSS）",
                 "url": "https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification",
-                "note": "谷歌发布Agentic Resource Discovery（ARD）开放规范"
+                "note": "Google Developers Blog 原文标题宣布 Agentic Resource Discovery 规范。"
               }
             ],
             "viewpoints": [
@@ -3969,32 +4055,32 @@ window.WaveSightTopicCenter = {
       ],
       "pitfall": [
         {
-          "id": "pitfall-boomi-讨论受治理-ai-agent-的部署与规模化",
+          "id": "pitfall-世界领导人想要美国-ai-但不希望美国能够将其关闭",
           "sourceId": "pitfall",
           "sourceName": "避坑型",
           "sourceDesc": "工具乱买、权限失控、流程没拆",
           "type": "boss_decision_topic",
-          "title": "Boomi 讨论受治理 AI Agent 的部署与规模化",
-          "spreadTitle": "Boomi 讨论受治理 AI Agent 的部署与规模化",
+          "title": "世界领导人想要美国 AI，但不希望美国能够将其关闭",
+          "spreadTitle": "世界领导人想要美国 AI，但不希望美国能够将其关闭",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "AI 从生成内容走向执行动作后，企业问题从“会不会用”变成“谁审核、谁授权、谁负责”。",
-          "relevance": "Boomi 讨论受治理 AI Agent 的部署与规模化，重点是企业在可靠性、安全、治理和集成要求下如何把 Agent 从试点推进到生产环境。；这类信号适合写给老板看，因为它直接关系到业务风险。",
+          "relevance": "在G7峰会上，法国总统马克龙和印度总理莫迪等领导人对美国可能随时切断顶级AI模型访问表示担忧。此前特朗普政府以国家安全为由阻止Anthropic出口其最新模型Mythos 5和Fable 5。加拿大企业AI公司Cohere CEO Aid…；这类信号适合写给老板看，因为它直接关系到业务风险。",
           "bossPain": "AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。",
           "moneyLine": "权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。",
           "oldFrame": "AI 越自主越好。",
           "newFrame": "AI 越自主，越要先设计权限、复核和责任人。",
           "actionHint": "先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。",
-          "evidence": "Boomi 讨论受治理 AI Agent 的部署与规模化；GLM-5.2可能是最强大的纯文本开放式权重LLM；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "世界领导人想要美国 AI，但不希望美国能够将其关闭；GLM-5.2可能是最强大的纯文本开放式权重LLM；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260618-A06",
-                "title": "Boomi 讨论受治理 AI Agent 的部署与规模化",
-                "source": "boomi.com",
-                "url": "https://boomi.com/blog/ai-agents-deployment-and-governance/",
-                "note": "Boomi 讨论受治理 AI Agent 的部署与规模化，重点是企业在可靠性、安全、治理和集成要求下如何把 Agent 从试点推进到生产环境。"
+                "id": "SIG-20260618-A16",
+                "title": "世界领导人想要美国 AI，但不希望美国能够将其关闭",
+                "source": "TechCrunch：AI（RSS）",
+                "url": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off",
+                "note": "在G7峰会上，法国总统马克龙和印度总理莫迪等领导人对美国可能随时切断顶级AI模型访问表示担忧。此前特朗普政府以国家安全为由阻止Anthropic出口其最新模型Mythos 5和Fable 5。加拿大企业AI公司Cohere CEO Aidan Gomez表示，依赖少数大科技公司对弹性构成危险。G7领导人讨论了建立\"信任伙伴\"计划，允许非美国国家从Anthr…"
               }
             ],
             "viewpoints": [
@@ -4018,8 +4104,8 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "boomi.com",
-          "url": "https://boomi.com/blog/ai-agents-deployment-and-governance/",
+          "source": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off",
           "date": "2026-06-18",
           "score": 88,
           "grade": "A",
@@ -4043,7 +4129,7 @@ window.WaveSightTopicCenter = {
             },
             {
               "title": "用当天案例推进",
-              "note": "用 Boomi 讨论受治理 AI Agent 的部署与… 做钩子，落到企业内部的授权和复核表。"
+              "note": "用 世界领导人想要美国 AI，但不希望美国能够将其关闭 做钩子，落到企业内部的授权和复核表。"
             }
           ],
           "writingStructure": [
@@ -4056,13 +4142,13 @@ window.WaveSightTopicCenter = {
       ],
       "counterintuitive": [
         {
-          "id": "counterintuitive-xdof获7000万美元融资-构建机器人训练数据基础设施",
+          "id": "counterintuitive-收集机器人训练数据是脏活累活-一些-ai-实验室已经在付费让-xdof-来做",
           "sourceId": "counterintuitive",
           "sourceName": "反常识型",
           "sourceDesc": "推翻流行说法，形成可传播判断",
           "type": "boss_decision_topic",
-          "title": "XDOF获7000万美元融资，构建机器人训练数据基础设施",
-          "spreadTitle": "XDOF获7000万美元融资，构建机器人训练数据基础设施",
+          "title": "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做",
+          "spreadTitle": "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "反常识点在于：AI 越强，越不是所有人都被替代，而是会拆任务、会验收结果的人更值钱。",
           "relevance": "机器人训练数据初创公司XDOF结束隐身，获Thrive Capital、a16z等7000万美元投资。公司为AI实验室和机器人公司构建数据管道、采集工具和标注系统，填补物理交互训练数据缺口。XDOF联合UC Berkeley发布ABC数据…；社群里“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”的讨论也在提醒老板，问题不再只是怎么做。",
@@ -4071,14 +4157,14 @@ window.WaveSightTopicCenter = {
           "oldFrame": "追最新 AI 工具。",
           "newFrame": "先沉淀任务、语料、步骤和验收标准，再让 AI 接手。",
           "actionHint": "今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。",
-          "evidence": "XDOF获7000万美元融资，构建机器人训练数据基础设施；GLM-5.2可能是最强大的纯文本开放式权重LLM；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做；GLM-5.2可能是最强大的纯文本开放式权重LLM；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260618-A17",
-                "title": "XDOF获7000万美元融资，构建机器人训练数据基础设施",
+                "id": "SIG-20260618-A19",
+                "title": "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做",
                 "source": "TechCrunch：AI（RSS）",
                 "url": "https://techcrunch.com/2026/06/17/collecting-robot-training-data-is-dirty-unglamorous-work-some-ai-labs-are-already-paying-xdof-to-do-it",
                 "note": "机器人训练数据初创公司XDOF结束隐身，获Thrive Capital、a16z等7000万美元投资。公司为AI实验室和机器人公司构建数据管道、采集工具和标注系统，填补物理交互训练数据缺口。XDOF联合UC Berkeley发布ABC数据集，含13万条机器人操作轨迹、300小时仿真数据及100小时评估数据，号称迄今最大高质量机器人训练数据集。公司计划通过三…"
@@ -4143,37 +4229,37 @@ window.WaveSightTopicCenter = {
       ],
       "small_role": [
         {
-          "id": "small_role-gogloby-汇总应用-ai-案例与真实业务成效",
+          "id": "small_role-inxm-获得-570-万欧元-pre-seed-融资-以弥合企业-ai-演示与真实运营部署之间的差距",
           "sourceId": "small_role",
           "sourceName": "小岗位型",
           "sourceDesc": "客服、销售、财务、标书、运营",
           "type": "boss_decision_topic",
-          "title": "GoGloby 汇总应用 AI 案例与真实业务成效",
-          "spreadTitle": "GoGloby 汇总应用 AI 案例与真实业务成效",
+          "title": "INXM 获得 570 万欧元 Pre-Seed 融资，以弥合企业 AI 演示与真实运营部署之间的差距",
+          "spreadTitle": "INXM 获得 570 万欧元 Pre-Seed 融资，以弥合企业 AI 演示与真实运营部署之间的差距",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位、一个明确动作、一个可验收结果里。",
-          "relevance": "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
+          "relevance": "INXM 获得 570 万欧元 Pre-Seed 融资，原文标题说明其目标是弥合企业 AI 演示与真实运营部署之间的差距。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
           "bossPain": "老板最怕 AI 项目太大、太贵、太慢，最后没人用。",
           "moneyLine": "一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。",
           "oldFrame": "做一个什么都能干的 AI 平台。",
           "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
           "actionHint": "先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。",
-          "evidence": "GoGloby 汇总应用 AI 案例与真实业务成效；GoGloby 汇总应用 AI 案例与真实业务成效；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
+          "evidence": "INXM 获得 570 万欧元 Pre-Seed 融资，以弥合企业 AI 演示与真实运营部署之间的差距；应用 AI 案例研究和真实成功故事；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260618-A05",
-                "title": "GoGloby 汇总应用 AI 案例与真实业务成效",
-                "source": "gogloby.com",
-                "url": "https://gogloby.com/insights/applied-ai-case-studies/",
-                "note": "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。"
+                "id": "SIG-20260618-A10",
+                "title": "INXM 获得 570 万欧元 Pre-Seed 融资，以弥合企业 AI 演示与真实运营部署之间的差距",
+                "source": "pulse2.com",
+                "url": "https://pulse2.com/inxm-raises-e5-7-million-pre-seed-to-bridge-the-gap-between-enterprise-ai-demos-and-real-operational-deployment/",
+                "note": "INXM 获得 570 万欧元 Pre-Seed 融资，原文标题说明其目标是弥合企业 AI 演示与真实运营部署之间的差距。"
               },
               {
                 "kind": "business_signal",
                 "id": "SIG-20260618-A05",
-                "title": "GoGloby 汇总应用 AI 案例与真实业务成效",
+                "title": "应用 AI 案例研究和真实成功故事",
                 "source": "gogloby.com",
                 "url": "https://gogloby.com/insights/applied-ai-case-studies/",
                 "note": "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。"
@@ -4191,8 +4277,8 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "gogloby.com",
-          "url": "https://gogloby.com/insights/applied-ai-case-studies/",
+          "source": "pulse2.com",
+          "url": "https://pulse2.com/inxm-raises-e5-7-million-pre-seed-to-bridge-the-gap-between-enterprise-ai-demos-and-real-operational-deployment/",
           "date": "2026-06-18",
           "score": 97,
           "grade": "S",
@@ -4229,32 +4315,32 @@ window.WaveSightTopicCenter = {
       ],
       "big_small_contrast": [
         {
-          "id": "big_small_contrast-willow-获得-7m-融资-押注销售线索和收入团队协作",
+          "id": "big_small_contrast-voicerun-推出面向企业的全栈语音-ai-平台-并完成-550-万美元种子轮融资",
           "sourceId": "big_small_contrast",
           "sourceName": "大小对照型",
           "sourceDesc": "大融资对照小生意，大模型对照小岗位",
           "type": "boss_decision_topic",
-          "title": "Willow 获得$7M 融资，押注销售线索和收入团队协作",
-          "spreadTitle": "Willow 获得$7M 融资，押注销售线索和收入团队协作",
+          "title": "VoiceRun 推出面向企业的全栈语音 AI 平台，并完成 550 万美元种子轮融资",
+          "spreadTitle": "VoiceRun 推出面向企业的全栈语音 AI 平台，并完成 550 万美元种子轮融资",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "大新闻负责告诉你资本往哪里押，小机会负责告诉你老板明天愿意为什么付钱。",
-          "relevance": "这条融资信号可用于判断资金流向、投资人押注方向，以及公司后续产品或销售扩张节奏。；同时社群里的“这篇产品调研干货：帮你避开90%独立开发者起步坑”说明一线需求还在配置、流程和交付。",
+          "relevance": "prnewswire 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。；同时社群里的“这篇产品调研干货：帮你避开90%独立开发者起步坑”说明一线需求还在配置、流程和交付。",
           "bossPain": "老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。",
           "moneyLine": "大公司赚基础设施的钱，小服务商赚落地第一公里的钱。",
           "oldFrame": "AI 创业只能跟大模型和融资有关。",
           "newFrame": "普通人的 AI 机会在帮老板跨过配置、流程和交付门槛。",
           "actionHint": "把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。",
-          "evidence": "Willow 获得$7M 融资，押注销售线索和收入团队协作；GLM-5.2可能是最强大的纯文本开放式权重LLM；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
+          "evidence": "VoiceRun 推出面向企业的全栈语音 AI 平台，并完成 550 万美元种子轮融资；GLM-5.2可能是最强大的纯文本开放式权重LLM；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
                 "id": "SIG-20260618-A02",
-                "title": "Willow 获得$7M 融资，押注销售线索和收入团队协作",
-                "source": "withwillow.ai",
-                "url": "https://withwillow.ai/blog/willow-7m-seed-funding",
-                "note": "这条融资信号可用于判断资金流向、投资人押注方向，以及公司后续产品或销售扩张节奏。"
+                "title": "VoiceRun 推出面向企业的全栈语音 AI 平台，并完成 550 万美元种子轮融资",
+                "source": "prnewswire.com",
+                "url": "https://www.prnewswire.com/news-releases/voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with-5-5-million-seed-round-302660750.html",
+                "note": "prnewswire 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。"
               }
             ],
             "viewpoints": [
@@ -4278,8 +4364,8 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "withwillow.ai",
-          "url": "https://withwillow.ai/blog/willow-7m-seed-funding",
+          "source": "prnewswire.com",
+          "url": "https://www.prnewswire.com/news-releases/voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with-5-5-million-seed-round-302660750.html",
           "date": "2026-06-18",
           "score": 93,
           "grade": "S",
@@ -4331,14 +4417,14 @@ window.WaveSightTopicCenter = {
           "oldFrame": "写 AI 就要讲技术和趋势。",
           "newFrame": "写给老板的 AI 内容，要先有人、有场景、有结果。",
           "actionHint": "从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。",
-          "evidence": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目；XDOF获7000万美元融资，构建机器人训练数据基础设施；GLM-5.2可能是最强大的纯文本开放式权重LLM",
+          "evidence": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目；收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做；GLM-5.2可能是最强大的纯文本开放式权重LLM",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260618-A17",
-                "title": "XDOF获7000万美元融资，构建机器人训练数据基础设施",
+                "id": "SIG-20260618-A19",
+                "title": "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做",
                 "source": "TechCrunch：AI（RSS）",
                 "url": "https://techcrunch.com/2026/06/17/collecting-robot-training-data-is-dirty-unglamorous-work-some-ai-labs-are-already-paying-xdof-to-do-it",
                 "note": "机器人训练数据初创公司XDOF结束隐身，获Thrive Capital、a16z等7000万美元投资。公司为AI实验室和机器人公司构建数据管道、采集工具和标注系统，填补物理交互训练数据缺口。XDOF联合UC Berkeley发布ABC数据集，含13万条机器人操作轨迹、300小时仿真数据及100小时评估数据，号称迄今最大高质量机器人训练数据集。公司计划通过三…"

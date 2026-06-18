@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T16:52:50.000Z"
-collected_at: 2026-06-18T06:02:59.183Z
+collected_at: 2026-06-18T06:41:08.848Z
 language: mixed
-full_text_hash: 3fd50f7d9e7cf906
+full_text_hash: f684c2e560e2d0fa
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-019-tensordyne-发布-ai-推理机架-napier-对数运算实现-13-倍于-nvidia-gb300-的吞吐.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-019-tensordyne-发布-ai-推理机架-napier-对数运算实现-13-倍于-nvidia-gb300-的吞吐.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3fd50f7d9e7cf906","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f684c2e560e2d0fa","missing":[]}
 source_volatility: high
 community_name: "X：Rohan Paul (@rohanpaul_ai)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"TensorDyne 发布 AI 推理机架 Napier，对数运算实现 13 倍于 NVIDIA GB300 的吞吐","discovery_summary":"TensorDyne 发布 AI 推理机架 Napier，声称在 DeepSeek-R1 上基于内部模拟达到 363，000 tokens/s（用户速度 210 tokens/s），是 NVIDIA NVL72 GB300（27，400 tokens/s）的 13 倍。Napier 在对数空间中运算，将乘法转为加法，从而降低芯片面积与功耗，更多晶体管用于 SRAM，每 token 能耗更低、推理密度更高。此举改变 AI 推理经济学，不再单纯比拼 FLOPS，而是转向功率、内存局部性、互连延迟与 token 服务成本。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2067289374983954836","discovered_at":"2026-06-18T05:58:08.873Z","rank_on_page":214,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"TensorDyne 发布 AI 推理机架 Napier，对数运算实现 13 倍于 NVIDIA GB300 的吞吐","discovery_summary":"TensorDyne 发布 AI 推理机架 Napier，声称在 DeepSeek-R1 上基于内部模拟达到 363，000 tokens/s（用户速度 210 tokens/s），是 NVIDIA NVL72 GB300（27，400 tokens/s）的 13 倍。Napier 在对数空间中运算，将乘法转为加法，从而降低芯片面积与功耗，更多晶体管用于 SRAM，每 token 能耗更低、推理密度更高。此举改变 AI 推理经济学，不再单纯比拼 FLOPS，而是转向功率、内存局部性、互连延迟与 token 服务成本。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2067289374983954836","discovered_at":"2026-06-18T06:35:55.948Z","rank_on_page":219,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: feef732d23f968e8
-content_hash: 3fd50f7d9e7cf906
+content_hash: f684c2e560e2d0fa
 semantic_hash: 04c10d5e97f7697c
 duplicate_of: ""
 first_seen_at: "2026-06-17T16:52:50.000Z"
-last_seen_at: 2026-06-18T06:02:59.183Z
+last_seen_at: 2026-06-18T06:41:08.848Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
@@ -95,11 +95,11 @@ AI inference is no longer just a FLOPS race. It is a rack-level fight over power
 They reported their TDN Rack reaches 363,000 tokens per second on DeepSeek-R1 at user speeds of 210 tokens per second per internal simulation, compared with 27,400 tokens per second for Nvidia’s NVL72 GB300.
 🧵 1.
 Paid partnership
-4:52 PM · Jun 17, 2026 3.3K Views
+4:52 PM · Jun 17, 2026 3.4K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 40
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 11
 Read 3 replies
 
 ## full_text
@@ -121,11 +121,11 @@ AI inference is no longer just a FLOPS race. It is a rack-level fight over power
 They reported their TDN Rack reaches 363,000 tokens per second on DeepSeek-R1 at user speeds of 210 tokens per second per internal simulation, compared with 27,400 tokens per second for Nvidia’s NVL72 GB300.
 🧵 1.
 Paid partnership
-4:52 PM · Jun 17, 2026 3.3K Views
+4:52 PM · Jun 17, 2026 3.4K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 40
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 11
 Read 3 replies
 
 ## extraction_diagnostics
@@ -228,7 +228,7 @@ Read 3 replies
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"TensorDyne 发布 AI 推理机架 Napier，对数运算实现 13 倍于 NVIDIA GB300 的吞吐","discovery_summary":"TensorDyne 发布 AI 推理机架 Napier，声称在 DeepSeek-R1 上基于内部模拟达到 363，000 tokens/s（用户速度 210 tokens/s），是 NVIDIA NVL72 GB300（27，400 tokens/s）的 13 倍。Napier 在对数空间中运算，将乘法转为加法，从而降低芯片面积与功耗，更多晶体管用于 SRAM，每 token 能耗更低、推理密度更高。此举改变 AI 推理经济学，不再单纯比拼 FLOPS，而是转向功率、内存局部性、互连延迟与 token 服务成本。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2067289374983954836","discovered_at":"2026-06-18T05:58:08.873Z","rank_on_page":214,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"TensorDyne 发布 AI 推理机架 Napier，对数运算实现 13 倍于 NVIDIA GB300 的吞吐","discovery_summary":"TensorDyne 发布 AI 推理机架 Napier，声称在 DeepSeek-R1 上基于内部模拟达到 363，000 tokens/s（用户速度 210 tokens/s），是 NVIDIA NVL72 GB300（27，400 tokens/s）的 13 倍。Napier 在对数空间中运算，将乘法转为加法，从而降低芯片面积与功耗，更多晶体管用于 SRAM，每 token 能耗更低、推理密度更高。此举改变 AI 推理经济学，不再单纯比拼 FLOPS，而是转向功率、内存局部性、互连延迟与 token 服务成本。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2067289374983954836","discovered_at":"2026-06-18T06:35:55.948Z","rank_on_page":219,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

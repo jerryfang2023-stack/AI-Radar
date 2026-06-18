@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T14:07:35.000Z"
-collected_at: 2026-06-18T06:02:59.206Z
+collected_at: 2026-06-18T06:41:08.871Z
 language: mixed
-full_text_hash: e8f4645fbaba1561
+full_text_hash: 6c33eded7c5f960b
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-027-exa-发布托管式-web-research-agent-api-成本低于-gpt-5-5-和-opus.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-027-exa-发布托管式-web-research-agent-api-成本低于-gpt-5-5-和-opus.json"
 html_snapshot_path: ""
@@ -30,33 +30,33 @@ screenshot_path: ""
 fetch_status: fetched-readable-text-main
 extraction_quality: high
 extraction_method: "main"
-readability_score: 80
-extractor_diagnostics: {"readability_score":80,"text_length":2861,"paragraph_count":24,"sentence_count":15,"boilerplate_hits":1,"symbol_ratio":0.0185,"method":"main"}
+readability_score: 86
+extractor_diagnostics: {"readability_score":86,"text_length":3333,"paragraph_count":25,"sentence_count":15,"boilerplate_hits":1,"symbol_ratio":0.021,"method":"main"}
 has_full_text: true
-content_length: 2861
+content_length: 3333
 fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e8f4645fbaba1561","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6c33eded7c5f960b","missing":[]}
 source_volatility: high
 community_name: "X：邵猛 (@shao__meng)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Exa 发布托管式 Web Research Agent API，成本低于 GPT 5.5 和 Opus","discovery_summary":"Exa 正式发布 Exa Agent，一个将前沿模型与自研搜索工具链打包成单一接口的托管式 API，面向深度调研、名单构建和实体 enrichment。核心技术包括：任务分解 + 并行子 Agent（Map-Reduce 架构）；按任务动态混用前沿模型与经济模型的 Model Fusion；Highlights 模型可将 token 用量最高削减 94%。在 WideSearch 基准上采用 Row-F1 评分，Exa Agent 成本不到 GPT 5.5 和 Opus 4.8 的一半，处于 Pareto 前沿。应用场景涵盖金融、GTM/Sales、公司研究及文献/代码 review。","source_name":"X：邵猛 (@shao__meng)","origin_url":"https://x.com/shao__meng/status/2067247791211168152","discovered_at":"2026-06-18T05:58:08.884Z","rank_on_page":264,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Exa 发布托管式 Web Research Agent API，成本低于 GPT 5.5 和 Opus","discovery_summary":"Exa 正式发布 Exa Agent，一个将前沿模型与自研搜索工具链打包成单一接口的托管式 API，面向深度调研、名单构建和实体 enrichment。核心技术包括：任务分解 + 并行子 Agent（Map-Reduce 架构）；按任务动态混用前沿模型与经济模型的 Model Fusion；Highlights 模型可将 token 用量最高削减 94%。在 WideSearch 基准上采用 Row-F1 评分，Exa Agent 成本不到 GPT 5.5 和 Opus 4.8 的一半，处于 Pareto 前沿。应用场景涵盖金融、GTM/Sales、公司研究及文献/代码 review。","source_name":"X：邵猛 (@shao__meng)","origin_url":"https://x.com/shao__meng/status/2067247791211168152","discovered_at":"2026-06-18T06:35:55.959Z","rank_on_page":269,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: ebd2314a728c7909
-content_hash: e8f4645fbaba1561
+content_hash: 6c33eded7c5f960b
 semantic_hash: 5a8115f50a2a6023
 duplicate_of: ""
 first_seen_at: "2026-06-17T14:07:35.000Z"
-last_seen_at: 2026-06-18T06:02:59.206Z
+last_seen_at: 2026-06-18T06:41:08.871Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
@@ -116,8 +116,9 @@ Introducing Exa Agent: frontier web research at less than half the cost of GPT 5
 00:00
 2:07 PM · Jun 17, 2026 1.7K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 11
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 17
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 18
 Read 1 reply
 
 ## full_text
@@ -160,17 +161,18 @@ Introducing Exa Agent: frontier web research at less than half the cost of GPT 5
 00:00
 2:07 PM · Jun 17, 2026 1.7K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 11
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 17
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 18
 Read 1 reply
 
 ## extraction_diagnostics
 
 - extraction_method: main
-- readability_score: 80
+- readability_score: 86
 - fetch_status: fetched-readable-text-main
 - extraction_quality: high
-- diagnostics: {"readability_score":80,"text_length":2861,"paragraph_count":24,"sentence_count":15,"boilerplate_hits":1,"symbol_ratio":0.0185,"method":"main"}
+- diagnostics: {"readability_score":86,"text_length":3333,"paragraph_count":25,"sentence_count":15,"boilerplate_hits":1,"symbol_ratio":0.021,"method":"main"}
 
 ## markdown_snapshot
 
@@ -265,7 +267,7 @@ B, 2025
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Exa 发布托管式 Web Research Agent API，成本低于 GPT 5.5 和 Opus","discovery_summary":"Exa 正式发布 Exa Agent，一个将前沿模型与自研搜索工具链打包成单一接口的托管式 API，面向深度调研、名单构建和实体 enrichment。核心技术包括：任务分解 + 并行子 Agent（Map-Reduce 架构）；按任务动态混用前沿模型与经济模型的 Model Fusion；Highlights 模型可将 token 用量最高削减 94%。在 WideSearch 基准上采用 Row-F1 评分，Exa Agent 成本不到 GPT 5.5 和 Opus 4.8 的一半，处于 Pareto 前沿。应用场景涵盖金融、GTM/Sales、公司研究及文献/代码 review。","source_name":"X：邵猛 (@shao__meng)","origin_url":"https://x.com/shao__meng/status/2067247791211168152","discovered_at":"2026-06-18T05:58:08.884Z","rank_on_page":264,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Exa 发布托管式 Web Research Agent API，成本低于 GPT 5.5 和 Opus","discovery_summary":"Exa 正式发布 Exa Agent，一个将前沿模型与自研搜索工具链打包成单一接口的托管式 API，面向深度调研、名单构建和实体 enrichment。核心技术包括：任务分解 + 并行子 Agent（Map-Reduce 架构）；按任务动态混用前沿模型与经济模型的 Model Fusion；Highlights 模型可将 token 用量最高削减 94%。在 WideSearch 基准上采用 Row-F1 评分，Exa Agent 成本不到 GPT 5.5 和 Opus 4.8 的一半，处于 Pareto 前沿。应用场景涵盖金融、GTM/Sales、公司研究及文献/代码 review。","source_name":"X：邵猛 (@shao__meng)","origin_url":"https://x.com/shao__meng/status/2067247791211168152","discovered_at":"2026-06-18T06:35:55.959Z","rank_on_page":269,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

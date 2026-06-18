@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-18T06:02:59.766Z
+collected_at: 2026-06-18T06:41:09.414Z
 language: mixed
 full_text_hash: 4ff9e5f92408fb25
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-183-claude-opus-4-8-build-day黑客马拉松获奖项目揭晓.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Claude Opus 4.8 Build Day黑客马拉松获奖项目揭晓","discovery_summary":"6月13日，Anthropic在旧金山举办12小时黑客马拉松，310名参与者使用Opus 4.8和$500 credits完成原型。第一名Tekton：输入历史建筑照片后，Claude自动搜集图纸等资料，跨339个施工步骤重建3D模型，每个构件附带证据链；自纠循环反复检查直至20项测试全部通过。第二名Sim Francisco：基于美国人口普查数据生成10,000名合成市民，各具独立世界观，实时对新闻投票，精准预测选举结果。第三名Custom Universe：用手机拍摄物件照片，Opus 4.8将其转为可拖放、实时渲染的3D物体，支持文本指令重设风格。","source_name":"Claude：Blog（网页）","origin_url":"","discovered_at":"2026-06-18T05:58:06.565Z","rank_on_page":17,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Claude Opus 4.8 Build Day黑客马拉松获奖项目揭晓","discovery_summary":"6月13日，Anthropic在旧金山举办12小时黑客马拉松，310名参与者使用Opus 4.8和$500 credits完成原型。第一名Tekton：输入历史建筑照片后，Claude自动搜集图纸等资料，跨339个施工步骤重建3D模型，每个构件附带证据链；自纠循环反复检查直至20项测试全部通过。第二名Sim Francisco：基于美国人口普查数据生成10,000名合成市民，各具独立世界观，实时对新闻投票，精准预测选举结果。第三名Custom Universe：用手机拍摄物件照片，Opus 4.8将其转为可拖放、实时渲染的3D物体，支持文本指令重设风格。","source_name":"Claude：Blog（网页）","origin_url":"","discovered_at":"2026-06-18T06:35:54.502Z","rank_on_page":17,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 4ff9e5f92408fb25
 semantic_hash: 6504e149577886f2
 duplicate_of: ""
-first_seen_at: "2026-06-18T06:02:59.766Z"
-last_seen_at: 2026-06-18T06:02:59.766Z
+first_seen_at: "2026-06-18T06:41:09.414Z"
+last_seen_at: 2026-06-18T06:41:09.414Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -187,7 +187,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"Claude Opus 4.8 Build Day黑客马拉松获奖项目揭晓","discovery_summary":"6月13日，Anthropic在旧金山举办12小时黑客马拉松，310名参与者使用Opus 4.8和$500 credits完成原型。第一名Tekton：输入历史建筑照片后，Claude自动搜集图纸等资料，跨339个施工步骤重建3D模型，每个构件附带证据链；自纠循环反复检查直至20项测试全部通过。第二名Sim Francisco：基于美国人口普查数据生成10,000名合成市民，各具独立世界观，实时对新闻投票，精准预测选举结果。第三名Custom Universe：用手机拍摄物件照片，Opus 4.8将其转为可拖放、实时渲染的3D物体，支持文本指令重设风格。","source_name":"Claude：Blog（网页）","origin_url":"","discovered_at":"2026-06-18T05:58:06.565Z","rank_on_page":17,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Claude Opus 4.8 Build Day黑客马拉松获奖项目揭晓","discovery_summary":"6月13日，Anthropic在旧金山举办12小时黑客马拉松，310名参与者使用Opus 4.8和$500 credits完成原型。第一名Tekton：输入历史建筑照片后，Claude自动搜集图纸等资料，跨339个施工步骤重建3D模型，每个构件附带证据链；自纠循环反复检查直至20项测试全部通过。第二名Sim Francisco：基于美国人口普查数据生成10,000名合成市民，各具独立世界观，实时对新闻投票，精准预测选举结果。第三名Custom Universe：用手机拍摄物件照片，Opus 4.8将其转为可拖放、实时渲染的3D物体，支持文本指令重设风格。","source_name":"Claude：Blog（网页）","origin_url":"","discovered_at":"2026-06-18T06:35:54.502Z","rank_on_page":17,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

@@ -9,15 +9,15 @@ source_title: "Willow Launches with $7M to Build the Future of Enterprise AI Age
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-18T03:06:53.669Z
-updated_at: 2026-06-18T03:06:53.669Z
+created_at: 2026-06-18T06:41:09.947Z
+updated_at: 2026-06-18T06:41:09.947Z
 
-raw_refs: ["R-067"]
+raw_refs: ["R-072"]
 pool_refs: ["P-057"]
 primary_raw:
-  raw_ref: R-067
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-067-willow-launches-with-7m-to-build-the-future-of-enterprise-ai-agent-gov.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-067-willow-launches-with-7m-to-build-the-future-of-enterprise-ai-agent-gov.json"
+  raw_ref: R-072
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-072-willow-launches-with-7m-to-build-the-future-of-enterprise-ai-agent-gov.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-072-willow-launches-with-7m-to-build-the-future-of-enterprise-ai-agent-gov.json"
   source_url: "https://withwillow.ai/blog/willow-7m-seed-funding"
   full_text_hash: "1813316511f838a0"
   source_level: B

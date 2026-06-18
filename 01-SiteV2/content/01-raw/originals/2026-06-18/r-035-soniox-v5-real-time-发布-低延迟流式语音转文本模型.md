@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T14:47:42.000Z"
-collected_at: 2026-06-18T06:02:59.247Z
+collected_at: 2026-06-18T06:41:08.912Z
 language: mixed
 full_text_hash: 857ef286aa06225c
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-035-soniox-v5-real-time-发布-低延迟流式语音转文本模型.md"
@@ -45,7 +45,7 @@ capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Soniox v5 Real-Time 发布：低延迟流式语音转文本模型","discovery_summary":"Soniox 发布 v5 Real-Time 流式 STT 模型，在 AA-WER Streaming 基准上处于准确率与延迟的帕累托前沿。First Final 转录 WER 4.5%（延迟 0.05s），比 Deepgram Flux （7.4%， 0.02s） 和 Nova-3 Realtime （6.7%， 0.06s） 更准确，比 Cartesia Ink-2 （3.7%， 0.09s） 和 ElevenLabs Scribe v2 Realtime （3.6%， 0.14s） 更快。First Partial 转录 WER 4.7%（延迟 0.05s），准确率仅次于上述两款模型但速度更快。价格 $2/1000 分钟，为所有测试专有流式模型最低。支持 60+ 语言及实时翻译。","source_name":"X：Artificial Analysis (@ArtificialAnlys)","origin_url":"https://x.com/ArtificialAnlys/status/2067257887815295291","discovered_at":"2026-06-18T05:58:08.882Z","rank_on_page":254,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Soniox v5 Real-Time 发布：低延迟流式语音转文本模型","discovery_summary":"Soniox 发布 v5 Real-Time 流式 STT 模型，在 AA-WER Streaming 基准上处于准确率与延迟的帕累托前沿。First Final 转录 WER 4.5%（延迟 0.05s），比 Deepgram Flux （7.4%， 0.02s） 和 Nova-3 Realtime （6.7%， 0.06s） 更准确，比 Cartesia Ink-2 （3.7%， 0.09s） 和 ElevenLabs Scribe v2 Realtime （3.6%， 0.14s） 更快。First Partial 转录 WER 4.7%（延迟 0.05s），准确率仅次于上述两款模型但速度更快。价格 $2/1000 分钟，为所有测试专有流式模型最低。支持 60+ 语言及实时翻译。","source_name":"X：Artificial Analysis (@ArtificialAnlys)","origin_url":"https://x.com/ArtificialAnlys/status/2067257887815295291","discovered_at":"2026-06-18T06:35:55.957Z","rank_on_page":259,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 857ef286aa06225c
 semantic_hash: c366db091bff41ce
 duplicate_of: ""
 first_seen_at: "2026-06-17T14:47:42.000Z"
-last_seen_at: 2026-06-18T06:02:59.247Z
+last_seen_at: 2026-06-18T06:41:08.912Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -223,7 +223,7 @@ Read 4 replies
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Soniox v5 Real-Time 发布：低延迟流式语音转文本模型","discovery_summary":"Soniox 发布 v5 Real-Time 流式 STT 模型，在 AA-WER Streaming 基准上处于准确率与延迟的帕累托前沿。First Final 转录 WER 4.5%（延迟 0.05s），比 Deepgram Flux （7.4%， 0.02s） 和 Nova-3 Realtime （6.7%， 0.06s） 更准确，比 Cartesia Ink-2 （3.7%， 0.09s） 和 ElevenLabs Scribe v2 Realtime （3.6%， 0.14s） 更快。First Partial 转录 WER 4.7%（延迟 0.05s），准确率仅次于上述两款模型但速度更快。价格 $2/1000 分钟，为所有测试专有流式模型最低。支持 60+ 语言及实时翻译。","source_name":"X：Artificial Analysis (@ArtificialAnlys)","origin_url":"https://x.com/ArtificialAnlys/status/2067257887815295291","discovered_at":"2026-06-18T05:58:08.882Z","rank_on_page":254,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Soniox v5 Real-Time 发布：低延迟流式语音转文本模型","discovery_summary":"Soniox 发布 v5 Real-Time 流式 STT 模型，在 AA-WER Streaming 基准上处于准确率与延迟的帕累托前沿。First Final 转录 WER 4.5%（延迟 0.05s），比 Deepgram Flux （7.4%， 0.02s） 和 Nova-3 Realtime （6.7%， 0.06s） 更准确，比 Cartesia Ink-2 （3.7%， 0.09s） 和 ElevenLabs Scribe v2 Realtime （3.6%， 0.14s） 更快。First Partial 转录 WER 4.7%（延迟 0.05s），准确率仅次于上述两款模型但速度更快。价格 $2/1000 分钟，为所有测试专有流式模型最低。支持 60+ 语言及实时翻译。","source_name":"X：Artificial Analysis (@ArtificialAnlys)","origin_url":"https://x.com/ArtificialAnlys/status/2067257887815295291","discovered_at":"2026-06-18T06:35:55.957Z","rank_on_page":259,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

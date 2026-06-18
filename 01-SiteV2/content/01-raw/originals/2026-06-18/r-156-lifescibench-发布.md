@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-18T06:02:59.732Z
+collected_at: 2026-06-18T06:41:09.381Z
 language: mixed
 full_text_hash: c150a4c45171a149
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-156-lifescibench-发布.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"LifeSciBench 发布","discovery_summary":"2026 年 6 月，OpenAI 联合 173 位博士级生命科学家发布 LifeSciBench 评测基准，涵盖 750 个真实研究任务，覆盖证据处理、分析、设计优化等七个工作流及七个生物领域。每项任务配有约 25 条细化评分标准（共 19,020 条），评估模型的科学正确性与实用价值。79% 的任务需多步推理，53% 要求解读图表、PDF 等附件数据，旨在衡量 AI 在复杂、不确定的研究任务中的实际能力，而非仅回答结构化问题。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"","discovered_at":"2026-06-18T05:58:06.567Z","rank_on_page":21,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"LifeSciBench 发布","discovery_summary":"2026 年 6 月，OpenAI 联合 173 位博士级生命科学家发布 LifeSciBench 评测基准，涵盖 750 个真实研究任务，覆盖证据处理、分析、设计优化等七个工作流及七个生物领域。每项任务配有约 25 条细化评分标准（共 19,020 条），评估模型的科学正确性与实用价值。79% 的任务需多步推理，53% 要求解读图表、PDF 等附件数据，旨在衡量 AI 在复杂、不确定的研究任务中的实际能力，而非仅回答结构化问题。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"","discovered_at":"2026-06-18T06:35:54.503Z","rank_on_page":21,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: c150a4c45171a149
 semantic_hash: 96f3b4a7bfc48a7e
 duplicate_of: ""
-first_seen_at: "2026-06-18T06:02:59.732Z"
-last_seen_at: 2026-06-18T06:02:59.732Z
+first_seen_at: "2026-06-18T06:41:09.381Z"
+last_seen_at: 2026-06-18T06:41:09.381Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -180,7 +180,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"LifeSciBench 发布","discovery_summary":"2026 年 6 月，OpenAI 联合 173 位博士级生命科学家发布 LifeSciBench 评测基准，涵盖 750 个真实研究任务，覆盖证据处理、分析、设计优化等七个工作流及七个生物领域。每项任务配有约 25 条细化评分标准（共 19,020 条），评估模型的科学正确性与实用价值。79% 的任务需多步推理，53% 要求解读图表、PDF 等附件数据，旨在衡量 AI 在复杂、不确定的研究任务中的实际能力，而非仅回答结构化问题。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"","discovered_at":"2026-06-18T05:58:06.567Z","rank_on_page":21,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"LifeSciBench 发布","discovery_summary":"2026 年 6 月，OpenAI 联合 173 位博士级生命科学家发布 LifeSciBench 评测基准，涵盖 750 个真实研究任务，覆盖证据处理、分析、设计优化等七个工作流及七个生物领域。每项任务配有约 25 条细化评分标准（共 19,020 条），评估模型的科学正确性与实用价值。79% 的任务需多步推理，53% 要求解读图表、PDF 等附件数据，旨在衡量 AI 在复杂、不确定的研究任务中的实际能力，而非仅回答结构化问题。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"","discovered_at":"2026-06-18T06:35:54.503Z","rank_on_page":21,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

@@ -1,5 +1,5 @@
 ---
-id: SIG-20260618-A18
+id: SIG-20260618-A20
 type: signal_card
 signal_type: product_service
 title: "AI编码智能体教会机器人安装GPU和剪扎带 发布 AI 基础设施能力，切入模型部署和算力服务"
@@ -9,8 +9,8 @@ source_title: "AI编码智能体教会机器人安装GPU和剪扎带--NVIDIA GEA
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-18T06:03:00.029Z
-updated_at: 2026-06-18T06:03:00.029Z
+created_at: 2026-06-18T06:41:09.947Z
+updated_at: 2026-06-18T06:41:09.947Z
 
 raw_refs: ["R-014"]
 pool_refs: ["P-014"]

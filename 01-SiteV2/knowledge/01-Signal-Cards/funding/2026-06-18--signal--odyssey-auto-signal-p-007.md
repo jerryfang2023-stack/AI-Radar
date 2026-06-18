@@ -1,5 +1,5 @@
 ---
-id: SIG-20260618-A14
+id: SIG-20260618-A15
 type: signal_card
 signal_type: funding
 title: "Odyssey 获得$310 m 融资，押注销售线索和收入团队协作"
@@ -9,8 +9,8 @@ source_title: "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-18T06:03:00.029Z
-updated_at: 2026-06-18T06:03:00.029Z
+created_at: 2026-06-18T06:41:09.947Z
+updated_at: 2026-06-18T06:41:09.947Z
 
 raw_refs: ["R-007"]
 pool_refs: ["P-007"]
@@ -19,7 +19,7 @@ primary_raw:
   raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-007-世界模型公司odyssey完成3-1亿美元b轮融资-估值14-5亿美元.md"
   raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-007-世界模型公司odyssey完成3-1亿美元b轮融资-估值14-5亿美元.json"
   source_url: "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names"
-  full_text_hash: "2ed829f3782e0b4c"
+  full_text_hash: "75587989c4b9271c"
   source_level: A
   extraction_quality: high
   has_full_text: true

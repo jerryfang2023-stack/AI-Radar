@@ -1,5 +1,5 @@
 ---
-id: SIG-20260618-A21
+id: SIG-20260618-A23
 type: signal_card
 signal_type: product_service
 title: "谷歌 Home Speaker 开启预售，6 月 25 日开售 推出 Agent 工作流能力，切入采购下单自动化"
@@ -9,8 +9,8 @@ source_title: "谷歌 Home Speaker 开启预售，6 月 25 日开售"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-18T06:03:00.029Z
-updated_at: 2026-06-18T06:03:00.029Z
+created_at: 2026-06-18T06:41:09.947Z
+updated_at: 2026-06-18T06:41:09.947Z
 
 raw_refs: ["R-032"]
 pool_refs: ["P-032"]

@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T18:43:47.000Z"
-collected_at: 2026-06-18T06:02:59.214Z
+collected_at: 2026-06-18T06:41:08.880Z
 language: mixed
 full_text_hash: 33355d2740f94186
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-030-微软研究员用-帝国时代ii-山羊神经网络批评ai拟人化.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: supporting_evidence
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"微软研究员用《帝国时代II》山羊神经网络批评AI拟人化","discovery_summary":"微软与约克大学研究员Adrian de Wynter在《帝国时代II》地图编辑器中用山羊搭建神经网络：山羊在草地代表0，在桥上代表1，构建XNOR门和AND门，学习逻辑与函数。附录证明该游戏理论上可模拟任意计算机。他批评AI研究拟人化倾向，分析2024年中至2026年中315篇论文，发现57%前提假设大语言模型具有人类特质，36%结论支持拟人化。Anthropic公开承认训练Claude使用\"我相信\"等措辞。他提出\"观察而非归因\"方法，并公开代码。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/microsoft-researcher-builds-a-working-neural-network-out-of-goats-in-age-of-empires-ii-to-critique-ai-science","discovered_at":"2026-06-18T05:58:08.866Z","rank_on_page":182,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"微软研究员用《帝国时代II》山羊神经网络批评AI拟人化","discovery_summary":"微软与约克大学研究员Adrian de Wynter在《帝国时代II》地图编辑器中用山羊搭建神经网络：山羊在草地代表0，在桥上代表1，构建XNOR门和AND门，学习逻辑与函数。附录证明该游戏理论上可模拟任意计算机。他批评AI研究拟人化倾向，分析2024年中至2026年中315篇论文，发现57%前提假设大语言模型具有人类特质，36%结论支持拟人化。Anthropic公开承认训练Claude使用\"我相信\"等措辞。他提出\"观察而非归因\"方法，并公开代码。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/microsoft-researcher-builds-a-working-neural-network-out-of-goats-in-age-of-empires-ii-to-critique-ai-science","discovered_at":"2026-06-18T06:35:55.941Z","rank_on_page":187,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 33355d2740f94186
 semantic_hash: 767ceeff633512ad
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-17T18:43:47.000Z"
-last_seen_at: 2026-06-18T06:02:59.214Z
+last_seen_at: 2026-06-18T06:41:08.880Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -298,7 +298,7 @@ The essay reads like the exact counterpoint to two high-profile cases from recen
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"微软研究员用《帝国时代II》山羊神经网络批评AI拟人化","discovery_summary":"微软与约克大学研究员Adrian de Wynter在《帝国时代II》地图编辑器中用山羊搭建神经网络：山羊在草地代表0，在桥上代表1，构建XNOR门和AND门，学习逻辑与函数。附录证明该游戏理论上可模拟任意计算机。他批评AI研究拟人化倾向，分析2024年中至2026年中315篇论文，发现57%前提假设大语言模型具有人类特质，36%结论支持拟人化。Anthropic公开承认训练Claude使用\"我相信\"等措辞。他提出\"观察而非归因\"方法，并公开代码。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/microsoft-researcher-builds-a-working-neural-network-out-of-goats-in-age-of-empires-ii-to-critique-ai-science","discovered_at":"2026-06-18T05:58:08.866Z","rank_on_page":182,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"微软研究员用《帝国时代II》山羊神经网络批评AI拟人化","discovery_summary":"微软与约克大学研究员Adrian de Wynter在《帝国时代II》地图编辑器中用山羊搭建神经网络：山羊在草地代表0，在桥上代表1，构建XNOR门和AND门，学习逻辑与函数。附录证明该游戏理论上可模拟任意计算机。他批评AI研究拟人化倾向，分析2024年中至2026年中315篇论文，发现57%前提假设大语言模型具有人类特质，36%结论支持拟人化。Anthropic公开承认训练Claude使用\"我相信\"等措辞。他提出\"观察而非归因\"方法，并公开代码。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/microsoft-researcher-builds-a-working-neural-network-out-of-goats-in-age-of-empires-ii-to-critique-ai-science","discovered_at":"2026-06-18T06:35:55.941Z","rank_on_page":187,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

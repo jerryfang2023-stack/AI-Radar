@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-18T06:02:59.733Z
+collected_at: 2026-06-18T06:41:09.382Z
 language: mixed
 full_text_hash: f194a3372f51da92
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-157-nvidia-gear实验室发布enpire-8个codex智能体自主控制机器人完成物理实验.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"NVIDIA GEAR实验室发布ENPIRE：8个Codex智能体自主控制机器人完成物理实验","discovery_summary":"NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。系统让8个Codex智能体控制8台机器人，配备GPU和token预算。安全方面采用硬运动极限切断和扭矩受限夹爪两层硬件保障，支持通宵无人运行。奖励函数通过视觉分类器离线固定并冻结，防止智能体作弊。实时监测机器人利用率（MRU）、token利用率（MTU）和GPU利用率，以Tokens-to-Success和Time-to-Success评估效率。ENPIRE自主完成扎带、整理细针、安装GPU等高精度任务，发现8机器人并行探索显著更快。系统将开源。","source_name":"X：Jim Fan (@DrJimFan)","origin_url":"","discovered_at":"2026-06-18T05:58:06.567Z","rank_on_page":19,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"NVIDIA GEAR实验室发布ENPIRE：8个Codex智能体自主控制机器人完成物理实验","discovery_summary":"NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。系统让8个Codex智能体控制8台机器人，配备GPU和token预算。安全方面采用硬运动极限切断和扭矩受限夹爪两层硬件保障，支持通宵无人运行。奖励函数通过视觉分类器离线固定并冻结，防止智能体作弊。实时监测机器人利用率（MRU）、token利用率（MTU）和GPU利用率，以Tokens-to-Success和Time-to-Success评估效率。ENPIRE自主完成扎带、整理细针、安装GPU等高精度任务，发现8机器人并行探索显著更快。系统将开源。","source_name":"X：Jim Fan (@DrJimFan)","origin_url":"","discovered_at":"2026-06-18T06:35:54.503Z","rank_on_page":19,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: f194a3372f51da92
 semantic_hash: 7b00db106ba5e93a
 duplicate_of: ""
-first_seen_at: "2026-06-18T06:02:59.733Z"
-last_seen_at: 2026-06-18T06:02:59.733Z
+first_seen_at: "2026-06-18T06:41:09.382Z"
+last_seen_at: 2026-06-18T06:41:09.382Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -185,7 +185,7 @@ NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"NVIDIA GEAR实验室发布ENPIRE：8个Codex智能体自主控制机器人完成物理实验","discovery_summary":"NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。系统让8个Codex智能体控制8台机器人，配备GPU和token预算。安全方面采用硬运动极限切断和扭矩受限夹爪两层硬件保障，支持通宵无人运行。奖励函数通过视觉分类器离线固定并冻结，防止智能体作弊。实时监测机器人利用率（MRU）、token利用率（MTU）和GPU利用率，以Tokens-to-Success和Time-to-Success评估效率。ENPIRE自主完成扎带、整理细针、安装GPU等高精度任务，发现8机器人并行探索显著更快。系统将开源。","source_name":"X：Jim Fan (@DrJimFan)","origin_url":"","discovered_at":"2026-06-18T05:58:06.567Z","rank_on_page":19,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"NVIDIA GEAR实验室发布ENPIRE：8个Codex智能体自主控制机器人完成物理实验","discovery_summary":"NVIDIA GEAR实验室推出ENPIRE系统，首次实现物理世界自主研究。系统让8个Codex智能体控制8台机器人，配备GPU和token预算。安全方面采用硬运动极限切断和扭矩受限夹爪两层硬件保障，支持通宵无人运行。奖励函数通过视觉分类器离线固定并冻结，防止智能体作弊。实时监测机器人利用率（MRU）、token利用率（MTU）和GPU利用率，以Tokens-to-Success和Time-to-Success评估效率。ENPIRE自主完成扎带、整理细针、安装GPU等高精度任务，发现8机器人并行探索显著更快。系统将开源。","source_name":"X：Jim Fan (@DrJimFan)","origin_url":"","discovered_at":"2026-06-18T06:35:54.503Z","rank_on_page":19,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

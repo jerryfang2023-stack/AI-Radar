@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T20:41:29.000Z"
-collected_at: 2026-06-18T06:02:59.204Z
+collected_at: 2026-06-18T06:41:08.869Z
 language: mixed
-full_text_hash: 44e18e147e2b64cc
+full_text_hash: d22ba02a89218891
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-026-openai-发布-lifescibench-生命科学基准测试.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-026-openai-发布-lifescibench-生命科学基准测试.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"44e18e147e2b64cc","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d22ba02a89218891","missing":[]}
 source_volatility: high
 community_name: "X：OpenAI (@OpenAI)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"OpenAI 发布 LifeSciBench 生命科学基准测试","discovery_summary":"推出 LifeSciBench，一个用于衡量和改进 AI 如何支持现实世界生命科学研究的基准测试。 该基准测试与 173 位来自生物技术和制药研究的科学家共同开发，包含 750 项专家编写的任务，覆盖七个生物学研究工作流程。","source_name":"X：OpenAI (@OpenAI)","origin_url":"https://x.com/OpenAI/status/2067346916929937827","discovered_at":"2026-06-18T05:58:08.860Z","rank_on_page":155,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"OpenAI 发布 LifeSciBench 生命科学基准测试","discovery_summary":"推出 LifeSciBench，一个用于衡量和改进 AI 如何支持现实世界生命科学研究的基准测试。 该基准测试与 173 位来自生物技术和制药研究的科学家共同开发，包含 750 项专家编写的任务，覆盖七个生物学研究工作流程。","source_name":"X：OpenAI (@OpenAI)","origin_url":"https://x.com/OpenAI/status/2067346916929937827","discovered_at":"2026-06-18T06:35:55.935Z","rank_on_page":160,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 009be96bb408e032
-content_hash: 44e18e147e2b64cc
+content_hash: d22ba02a89218891
 semantic_hash: 96c7b73787caa2f3
 duplicate_of: ""
 first_seen_at: "2026-06-17T20:41:29.000Z"
-last_seen_at: 2026-06-18T06:02:59.204Z
+last_seen_at: 2026-06-18T06:41:08.869Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -66,9 +66,9 @@ evidence_eligibility: eligible
 evidence_block_reason: ""
 guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
 business_elements: {"companies":["X","OpenAI (@OpenAI)","OpenAI"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["173","750","9","0","8","41","17","2026"],"quotes":[]}
-evidence_seed: {"company_actions":["Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research https://t.","Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research o/JTk0wXHFrT 8:41 PM · Jun 17, 2026 370.","9K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}."],"case_details":[],"workflow_changes":["推出 LifeSciBench，一个用于衡量和改进 AI 如何支持现实世界生命科学研究的基准测试。 该基准测试与 173 位来自生物技术和制药研究的科学家共同开发，包含 750 项专家编写的任务，覆盖七个生物学研究工作流程。","OpenAI on X: \"Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research.","co/JDkKWcnL9F\" / X Post Log in Sign up Post OpenAI @OpenAI Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research."],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+evidence_seed: {"company_actions":["Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research https://t.","Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research o/JTk0wXHFrT 8:41 PM · Jun 17, 2026 381.","8K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}."],"case_details":[],"workflow_changes":["推出 LifeSciBench，一个用于衡量和改进 AI 如何支持现实世界生命科学研究的基准测试。 该基准测试与 173 位来自生物技术和制药研究的科学家共同开发，包含 750 项专家编写的任务，覆盖七个生物学研究工作流程。","OpenAI on X: \"Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research.","co/JDkKWcnL9F\" / X Post Log in Sign up Post OpenAI @OpenAI Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research."],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
 missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
-key_excerpts: [{"type":"workflow_change","text":"推出 LifeSciBench，一个用于衡量和改进 AI 如何支持现实世界生命科学研究的基准测试。 该基准测试与 173 位来自生物技术和制药研究的科学家共同开发，包含 750 项专家编写的任务，覆盖七个生物学研究工作流程。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"OpenAI on X: \"Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research https://t.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"co/JDkKWcnL9F\" / X Post Log in Sign up Post OpenAI @OpenAI Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research o/JTk0wXHFrT 8:41 PM · Jun 17, 2026 370.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"9K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+key_excerpts: [{"type":"workflow_change","text":"推出 LifeSciBench，一个用于衡量和改进 AI 如何支持现实世界生命科学研究的基准测试。 该基准测试与 173 位来自生物技术和制药研究的科学家共同开发，包含 750 项专家编写的任务，覆盖七个生物学研究工作流程。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"OpenAI on X: \"Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research https://t.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"co/JDkKWcnL9F\" / X Post Log in Sign up Post OpenAI @OpenAI Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research o/JTk0wXHFrT 8:41 PM · Jun 17, 2026 381.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"8K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
 theme: technical-iteration-signal
 keyword_group: technical-iteration-signal
 copyright_note: local research archive only
@@ -87,12 +87,12 @@ OpenAI
 @OpenAI
 Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research.
 Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research o/JTk0wXHFrT
-8:41 PM · Jun 17, 2026 370.9K Views
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 151
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 214
+8:41 PM · Jun 17, 2026 381.8K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 158
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 218
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 . 2 K :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2.2K
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 0 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 505
-Read 151 replies
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 2 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 523
+Read 158 replies
 Don't miss what's happening
 People on X are the first to know.
 Log in Sign up
@@ -108,12 +108,12 @@ OpenAI
 @OpenAI
 Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research.
 Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research o/JTk0wXHFrT
-8:41 PM · Jun 17, 2026 370.9K Views
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 151
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 214
+8:41 PM · Jun 17, 2026 381.8K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 158
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 218
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 . 2 K :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2.2K
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 0 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 505
-Read 151 replies
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 2 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 523
+Read 158 replies
 Don't miss what's happening
 People on X are the first to know.
 Log in Sign up
@@ -145,10 +145,10 @@ Log in Sign up
    co/JDkKWcnL9F" / X Post Log in Sign up Post OpenAI @OpenAI Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research.
 
 5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
-   Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research o/JTk0wXHFrT 8:41 PM · Jun 17, 2026 370.
+   Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research o/JTk0wXHFrT 8:41 PM · Jun 17, 2026 381.
 
 6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
-   9K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.
+   8K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.
 
 ## business_elements
 
@@ -165,7 +165,7 @@ Log in Sign up
 
 ## evidence_seed
 
-- company_actions: Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research https://t. / Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research o/JTk0wXHFrT 8:41 PM · Jun 17, 2026 370. / 9K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.
+- company_actions: Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research https://t. / Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research o/JTk0wXHFrT 8:41 PM · Jun 17, 2026 381. / 8K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.
 - case_details: 暂无公开信息
 - workflow_changes: 推出 LifeSciBench，一个用于衡量和改进 AI 如何支持现实世界生命科学研究的基准测试。 该基准测试与 173 位来自生物技术和制药研究的科学家共同开发，包含 750 项专家编写的任务，覆盖七个生物学研究工作流程。 / OpenAI on X: "Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research. / co/JDkKWcnL9F" / X Post Log in Sign up Post OpenAI @OpenAI Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research.
 - before_after_clues: 暂无公开信息
@@ -218,7 +218,7 @@ Log in Sign up
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"OpenAI 发布 LifeSciBench 生命科学基准测试","discovery_summary":"推出 LifeSciBench，一个用于衡量和改进 AI 如何支持现实世界生命科学研究的基准测试。 该基准测试与 173 位来自生物技术和制药研究的科学家共同开发，包含 750 项专家编写的任务，覆盖七个生物学研究工作流程。","source_name":"X：OpenAI (@OpenAI)","origin_url":"https://x.com/OpenAI/status/2067346916929937827","discovered_at":"2026-06-18T05:58:08.860Z","rank_on_page":155,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"OpenAI 发布 LifeSciBench 生命科学基准测试","discovery_summary":"推出 LifeSciBench，一个用于衡量和改进 AI 如何支持现实世界生命科学研究的基准测试。 该基准测试与 173 位来自生物技术和制药研究的科学家共同开发，包含 750 项专家编写的任务，覆盖七个生物学研究工作流程。","source_name":"X：OpenAI (@OpenAI)","origin_url":"https://x.com/OpenAI/status/2067346916929937827","discovered_at":"2026-06-18T06:35:55.935Z","rank_on_page":160,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T21:57:39.000Z"
-collected_at: 2026-06-18T06:02:59.199Z
+collected_at: 2026-06-18T06:41:08.865Z
 language: mixed
-full_text_hash: 31a6468eb44683f9
+full_text_hash: 7035eabee423b1f5
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-024-vllm-与-nvidia-为-minimax-m3-提供开箱即用的-day-0-体验.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-024-vllm-与-nvidia-为-minimax-m3-提供开箱即用的-day-0-体验.json"
 html_snapshot_path: ""
@@ -31,32 +31,32 @@ fetch_status: fetched-readable-text-main
 extraction_quality: high
 extraction_method: "main"
 readability_score: 70
-extractor_diagnostics: {"readability_score":70,"text_length":2857,"paragraph_count":10,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0.0252,"method":"main"}
+extractor_diagnostics: {"readability_score":70,"text_length":2855,"paragraph_count":10,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0.0252,"method":"main"}
 has_full_text: true
-content_length: 2857
+content_length: 2855
 fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"31a6468eb44683f9","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7035eabee423b1f5","missing":[]}
 source_volatility: high
 community_name: "X：SemiAnalysis (@SemiAnalysis_)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"vLLM 与 NVIDIA 为 MiniMax M3 提供开箱即用的 Day 0 体验","discovery_summary":"vLLM 团队与 NVIDIA 合作，为 MiniMax M3 模型提供开箱即用的 day 0 体验，并集成 Inferact 的 EAGLE3 推测解码。当前工作包括：NVIDIA、Inferact 与 SemiAnalysis 推动拆分推理（PR 45879），Inferact 团队启用 FlashInfer M3 MoE 内核（PR 45723），落地后性能将显著提升。NVIDIA 表示 M3 已加入 DeepSeek V4 和 Kimi-K2.6 等前沿开放智能体模型行列。NVIDIA Blackwell Ultra 在 M3 上比 Hopper 实现最高 5 倍 AI 工厂吞吐量，并超过 300 TPS/user。未来通过优化内核、NVFP4 及 NVIDIA Dynamo 拆分推理等，性能有望进一步提升。","source_name":"X：SemiAnalysis (@SemiAnalysis_)","origin_url":"https://x.com/SemiAnalysis_/status/2067366088266915991","discovered_at":"2026-06-18T05:58:08.857Z","rank_on_page":141,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"vLLM 与 NVIDIA 为 MiniMax M3 提供开箱即用的 Day 0 体验","discovery_summary":"vLLM 团队与 NVIDIA 合作，为 MiniMax M3 模型提供开箱即用的 day 0 体验，并集成 Inferact 的 EAGLE3 推测解码。当前工作包括：NVIDIA、Inferact 与 SemiAnalysis 推动拆分推理（PR 45879），Inferact 团队启用 FlashInfer M3 MoE 内核（PR 45723），落地后性能将显著提升。NVIDIA 表示 M3 已加入 DeepSeek V4 和 Kimi-K2.6 等前沿开放智能体模型行列。NVIDIA Blackwell Ultra 在 M3 上比 Hopper 实现最高 5 倍 AI 工厂吞吐量，并超过 300 TPS/user。未来通过优化内核、NVFP4 及 NVIDIA Dynamo 拆分推理等，性能有望进一步提升。","source_name":"X：SemiAnalysis (@SemiAnalysis_)","origin_url":"https://x.com/SemiAnalysis_/status/2067366088266915991","discovered_at":"2026-06-18T06:35:55.932Z","rank_on_page":146,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 2d820eed2b0d6b24
-content_hash: 31a6468eb44683f9
+content_hash: 7035eabee423b1f5
 semantic_hash: 0fc3e28c38a617e2
 duplicate_of: ""
 first_seen_at: "2026-06-17T21:57:39.000Z"
-last_seen_at: 2026-06-18T06:02:59.199Z
+last_seen_at: 2026-06-18T06:41:08.865Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -90,10 +90,10 @@ NVIDIA AI Infrastructure
 13h
 📣: MiniMax M3 has landed, joining models like DeepSeek V4 and Kimi-K2.6 at the frontier of open agentic models — and NVIDIA Blackwell is already delivering leading performance on it.
 NVIDIA Blackwell Ultra delivers up to 5x higher AI factory throughput than NVIDIA Hopper on Show more
-9:57 PM · Jun 17, 2026 19.4K Views
+9:57 PM · Jun 17, 2026 20K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 50
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 52
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 11
 Read 2 replies
 
@@ -111,10 +111,10 @@ NVIDIA AI Infrastructure
 13h
 📣: MiniMax M3 has landed, joining models like DeepSeek V4 and Kimi-K2.6 at the frontier of open agentic models — and NVIDIA Blackwell is already delivering leading performance on it.
 NVIDIA Blackwell Ultra delivers up to 5x higher AI factory throughput than NVIDIA Hopper on Show more
-9:57 PM · Jun 17, 2026 19.4K Views
+9:57 PM · Jun 17, 2026 20K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 50
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 52
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 11
 Read 2 replies
 
@@ -124,7 +124,7 @@ Read 2 replies
 - readability_score: 70
 - fetch_status: fetched-readable-text-main
 - extraction_quality: high
-- diagnostics: {"readability_score":70,"text_length":2857,"paragraph_count":10,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0.0252,"method":"main"}
+- diagnostics: {"readability_score":70,"text_length":2855,"paragraph_count":10,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0.0252,"method":"main"}
 
 ## markdown_snapshot
 
@@ -217,7 +217,7 @@ Read 2 replies
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"vLLM 与 NVIDIA 为 MiniMax M3 提供开箱即用的 Day 0 体验","discovery_summary":"vLLM 团队与 NVIDIA 合作，为 MiniMax M3 模型提供开箱即用的 day 0 体验，并集成 Inferact 的 EAGLE3 推测解码。当前工作包括：NVIDIA、Inferact 与 SemiAnalysis 推动拆分推理（PR 45879），Inferact 团队启用 FlashInfer M3 MoE 内核（PR 45723），落地后性能将显著提升。NVIDIA 表示 M3 已加入 DeepSeek V4 和 Kimi-K2.6 等前沿开放智能体模型行列。NVIDIA Blackwell Ultra 在 M3 上比 Hopper 实现最高 5 倍 AI 工厂吞吐量，并超过 300 TPS/user。未来通过优化内核、NVFP4 及 NVIDIA Dynamo 拆分推理等，性能有望进一步提升。","source_name":"X：SemiAnalysis (@SemiAnalysis_)","origin_url":"https://x.com/SemiAnalysis_/status/2067366088266915991","discovered_at":"2026-06-18T05:58:08.857Z","rank_on_page":141,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"vLLM 与 NVIDIA 为 MiniMax M3 提供开箱即用的 Day 0 体验","discovery_summary":"vLLM 团队与 NVIDIA 合作，为 MiniMax M3 模型提供开箱即用的 day 0 体验，并集成 Inferact 的 EAGLE3 推测解码。当前工作包括：NVIDIA、Inferact 与 SemiAnalysis 推动拆分推理（PR 45879），Inferact 团队启用 FlashInfer M3 MoE 内核（PR 45723），落地后性能将显著提升。NVIDIA 表示 M3 已加入 DeepSeek V4 和 Kimi-K2.6 等前沿开放智能体模型行列。NVIDIA Blackwell Ultra 在 M3 上比 Hopper 实现最高 5 倍 AI 工厂吞吐量，并超过 300 TPS/user。未来通过优化内核、NVFP4 及 NVIDIA Dynamo 拆分推理等，性能有望进一步提升。","source_name":"X：SemiAnalysis (@SemiAnalysis_)","origin_url":"https://x.com/SemiAnalysis_/status/2067366088266915991","discovered_at":"2026-06-18T06:35:55.932Z","rank_on_page":146,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

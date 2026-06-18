@@ -1,12 +1,12 @@
 # 2026-06-18 Guanlan Monitor Quality Gate
 
-- generated_at: 2026-06-18T06:02:59.827Z
+- generated_at: 2026-06-18T06:41:09.472Z
 - attempt: 1/3
 - status: passed
 - production_weekday: thursday
 - weekend_policy: inactive
 - weekend_policy_note: not_applied
-- total_score: 93.31
+- total_score: 93.26
 - diagnostic_score_reference: 85
 - score_mode: diagnostic_only
 - raw_count: 187
@@ -16,15 +16,15 @@
 - index_only_pool_count: 33
 - aihot_index_only_count: 33
 - aihot_core_count: 19
-- keyword_search_non_community_count: 70
+- keyword_search_non_community_count: 71
 - non_community_paths_hit: official_original, developer_ecosystem, capital_startup, industry_landing, procurement_marketplace, a_media_gdelt
-- source_level_distribution: B=112; C=34; S=21; A=20
+- source_level_distribution: B=113; C=34; A=20; S=20
 - ai_relevant_title_ratio: 0.840
 - off_topic_title_count: 0
-- core_pool_count: 31
+- core_pool_count: 30
 - core_pool_min_effective: 30
 - core_pool_min_default: 30
-- usable_core_evidence_count: 31
+- usable_core_evidence_count: 30
 - usable_core_evidence_min_effective: 30
 - usable_core_evidence_min_default: 30
 - homepage_directory_core_count: 0
@@ -35,13 +35,13 @@
 - core_raw_qc_block_count: 0
 - core_raw_qc_degraded_count: 0
 - core_large_vendor_count: 9
-- core_non_large_vendor_count: 22
+- core_non_large_vendor_count: 21
 - core_non_large_vendor_min_effective: 20
 - core_non_large_vendor_min_default: 20
-- core_large_vendor_ratio: 0.290
+- core_large_vendor_ratio: 0.300
 - importance_coverage_gaps: none
 - pool_importance_coverage_gaps: none
-- failed_sources: source-artifact keyword: keyword-search pre-gate filtered 9 result(s): missing_ai_anchor_in_result=5; job_or_salary_page=2; noise_term:career=2
+- failed_sources: source-artifact keyword: keyword-search pre-gate filtered 11 result(s): missing_ai_anchor_in_result=6; job_or_salary_page=3; directory_or_search_page=1; noise_term:career=1
 - evidence_gaps: keyword-search must not stop at community feedback. If official, developer ecosystem, startup/funding, industry landing, procurement/marketplace or A-media paths fail, the item can only remain Watchlist/User Feedback until non-community evidence is found.
 - fallback_used: Default monitor uses AI HOT daily feed first, AI HOT all-mode remainder second, then keyword rules. External multi-path keyword search and GDELT activate when the default lanes do not meet the Raw minimum, an importance type is thin, or important candidates lack original text / usable evidence object. HN is feedback only and must not dominate. GDELT failures fall back to A-tier media search.
 
@@ -52,18 +52,18 @@
 - coverage_scope (15): 15
 - keyword_compliance (15): 15
 - strategic_alignment (15): 15
-- importance_readiness (10): 7.31
+- importance_readiness (10): 7.26
 
 ## Hard Gates
 
 - raw_count_min: passed (187/150)
 - pool_count_min: passed (95/75)
 - routed_pool_count_min: passed (62/60)
-- keyword_search_non_community_min: passed (70/6)
+- keyword_search_non_community_min: passed (71/6)
 - ai_relevant_title_ratio_min: passed (0.84/0.7)
 - off_topic_title_max: passed (0/3)
-- core_pool_min: passed (31/30)
-- usable_core_evidence_min: passed (31/30)
+- core_pool_min: passed (30/30)
+- usable_core_evidence_min: passed (30/30)
 - homepage_directory_core_max: passed (0/0)
 - m_source_only_core_max: passed (0/0)
 - core_missing_full_text_max: passed (0/0)
@@ -71,14 +71,14 @@
 - core_raw_qc_block_max: passed (0/0)
 - core_raw_qc_degraded_max: passed (0/0)
 - core_large_vendor_max: passed (9/10)
-- core_large_vendor_ratio_max: passed (0.29/0.35)
-- core_non_large_vendor_min: passed (22/20)
+- core_large_vendor_ratio_max: passed (0.30/0.35)
+- core_non_large_vendor_min: passed (21/20)
 - importance_coverage_gaps_must_be_none: passed (none; raw_sufficient=187)
 - pool_importance_coverage_gaps_must_be_none: passed (none; raw_sufficient=187)
 
 ## Risks
 
-- failed_sources=3
+- failed_sources=4
 
 ## Skill Feedback
 

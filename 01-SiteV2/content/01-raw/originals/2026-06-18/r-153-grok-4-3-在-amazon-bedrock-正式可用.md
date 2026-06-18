@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-18T06:02:59.728Z
+collected_at: 2026-06-18T06:41:09.377Z
 language: mixed
 full_text_hash: 2d60c81867fcdff6
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-153-grok-4-3-在-amazon-bedrock-正式可用.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Grok 4.3 在 Amazon Bedrock 正式可用","discovery_summary":"6 月 17 日，xAI 宣布 Grok 4.3 在 Amazon Bedrock 上全面可用。该模型在前沿模型中达成最低幻觉率，支持 100 万 token 上下文窗口，并提供可配置推理努力（none/low/medium/high）。在 Artificial Analysis Omniscience 基准排名第一，在 Tau2 Telecom 基准评估客服智能体真实工具调用性能排名第一，在 Vals AI Case Law 和 Corporate Finance 基准的复杂文档理解任务排名第一。定价为输入每百万 token 1.25 美元、输出每百万 token 2.50 美元，每美元智能度是其他前沿模型的 2–10 倍。","source_name":"xAI：News（网页）","origin_url":"","discovered_at":"2026-06-18T05:58:06.557Z","rank_on_page":2,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Grok 4.3 在 Amazon Bedrock 正式可用","discovery_summary":"6 月 17 日，xAI 宣布 Grok 4.3 在 Amazon Bedrock 上全面可用。该模型在前沿模型中达成最低幻觉率，支持 100 万 token 上下文窗口，并提供可配置推理努力（none/low/medium/high）。在 Artificial Analysis Omniscience 基准排名第一，在 Tau2 Telecom 基准评估客服智能体真实工具调用性能排名第一，在 Vals AI Case Law 和 Corporate Finance 基准的复杂文档理解任务排名第一。定价为输入每百万 token 1.25 美元、输出每百万 token 2.50 美元，每美元智能度是其他前沿模型的 2–10 倍。","source_name":"xAI：News（网页）","origin_url":"","discovered_at":"2026-06-18T06:35:54.494Z","rank_on_page":2,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 2d60c81867fcdff6
 semantic_hash: 5fbfc5d3fd554b28
 duplicate_of: ""
-first_seen_at: "2026-06-18T06:02:59.728Z"
-last_seen_at: 2026-06-18T06:02:59.728Z
+first_seen_at: "2026-06-18T06:41:09.377Z"
+last_seen_at: 2026-06-18T06:41:09.377Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -187,7 +187,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"Grok 4.3 在 Amazon Bedrock 正式可用","discovery_summary":"6 月 17 日，xAI 宣布 Grok 4.3 在 Amazon Bedrock 上全面可用。该模型在前沿模型中达成最低幻觉率，支持 100 万 token 上下文窗口，并提供可配置推理努力（none/low/medium/high）。在 Artificial Analysis Omniscience 基准排名第一，在 Tau2 Telecom 基准评估客服智能体真实工具调用性能排名第一，在 Vals AI Case Law 和 Corporate Finance 基准的复杂文档理解任务排名第一。定价为输入每百万 token 1.25 美元、输出每百万 token 2.50 美元，每美元智能度是其他前沿模型的 2–10 倍。","source_name":"xAI：News（网页）","origin_url":"","discovered_at":"2026-06-18T05:58:06.557Z","rank_on_page":2,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Grok 4.3 在 Amazon Bedrock 正式可用","discovery_summary":"6 月 17 日，xAI 宣布 Grok 4.3 在 Amazon Bedrock 上全面可用。该模型在前沿模型中达成最低幻觉率，支持 100 万 token 上下文窗口，并提供可配置推理努力（none/low/medium/high）。在 Artificial Analysis Omniscience 基准排名第一，在 Tau2 Telecom 基准评估客服智能体真实工具调用性能排名第一，在 Vals AI Case Law 和 Corporate Finance 基准的复杂文档理解任务排名第一。定价为输入每百万 token 1.25 美元、输出每百万 token 2.50 美元，每美元智能度是其他前沿模型的 2–10 倍。","source_name":"xAI：News（网页）","origin_url":"","discovered_at":"2026-06-18T06:35:54.494Z","rank_on_page":2,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

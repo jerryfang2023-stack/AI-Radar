@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T18:30:56.000Z"
-collected_at: 2026-06-18T06:02:59.132Z
+collected_at: 2026-06-18T06:41:08.799Z
 language: mixed
 full_text_hash: bf7e2f415dce9df1
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-006-anthropic-加入-frontier-碳去除联盟-成首家-ai-初创成员.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员","discovery_summary":"Anthropic 加入由 Stripe、Google、Shopify 等创立的碳去除集体 Frontier，并贡献 9.15 亿美元新资金，使 Frontier 总承诺额达 18 亿美元。Frontier 已签约近 7 亿美元，覆盖 50 多个项目，累计去除 180 万吨碳。未来 Frontier 将转向更严格审查，减少项目数量，聚焦每年可去除十亿吨 CO2 的项目，新合同期限 8 至 10 年。这是 Anthropic 首笔气候相关交易，此前该公司尚未发布可持续发展报告。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/anthropic-becomes-first-ai-startup-to-join-the-frontier-carbon-removal-coalition","discovered_at":"2026-06-18T05:58:08.867Z","rank_on_page":185,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员","discovery_summary":"Anthropic 加入由 Stripe、Google、Shopify 等创立的碳去除集体 Frontier，并贡献 9.15 亿美元新资金，使 Frontier 总承诺额达 18 亿美元。Frontier 已签约近 7 亿美元，覆盖 50 多个项目，累计去除 180 万吨碳。未来 Frontier 将转向更严格审查，减少项目数量，聚焦每年可去除十亿吨 CO2 的项目，新合同期限 8 至 10 年。这是 Anthropic 首笔气候相关交易，此前该公司尚未发布可持续发展报告。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/anthropic-becomes-first-ai-startup-to-join-the-frontier-carbon-removal-coalition","discovered_at":"2026-06-18T06:35:55.941Z","rank_on_page":190,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: bf7e2f415dce9df1
 semantic_hash: 75e437bbdf437c6c
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-17T18:30:56.000Z"
-last_seen_at: 2026-06-18T06:02:59.132Z
+last_seen_at: 2026-06-18T06:41:08.799Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -274,7 +274,7 @@ Error loading the next article
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员","discovery_summary":"Anthropic 加入由 Stripe、Google、Shopify 等创立的碳去除集体 Frontier，并贡献 9.15 亿美元新资金，使 Frontier 总承诺额达 18 亿美元。Frontier 已签约近 7 亿美元，覆盖 50 多个项目，累计去除 180 万吨碳。未来 Frontier 将转向更严格审查，减少项目数量，聚焦每年可去除十亿吨 CO2 的项目，新合同期限 8 至 10 年。这是 Anthropic 首笔气候相关交易，此前该公司尚未发布可持续发展报告。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/anthropic-becomes-first-ai-startup-to-join-the-frontier-carbon-removal-coalition","discovered_at":"2026-06-18T05:58:08.867Z","rank_on_page":185,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员","discovery_summary":"Anthropic 加入由 Stripe、Google、Shopify 等创立的碳去除集体 Frontier，并贡献 9.15 亿美元新资金，使 Frontier 总承诺额达 18 亿美元。Frontier 已签约近 7 亿美元，覆盖 50 多个项目，累计去除 180 万吨碳。未来 Frontier 将转向更严格审查，减少项目数量，聚焦每年可去除十亿吨 CO2 的项目，新合同期限 8 至 10 年。这是 Anthropic 首笔气候相关交易，此前该公司尚未发布可持续发展报告。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/17/anthropic-becomes-first-ai-startup-to-join-the-frontier-carbon-removal-coalition","discovered_at":"2026-06-18T06:35:55.941Z","rank_on_page":190,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

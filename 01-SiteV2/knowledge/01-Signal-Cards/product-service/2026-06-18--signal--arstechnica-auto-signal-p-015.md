@@ -1,5 +1,5 @@
 ---
-id: SIG-20260618-A19
+id: SIG-20260618-A21
 type: signal_card
 signal_type: product_service
 title: "Arstechnica 发布 AI 基础设施能力，切入模型部署和算力服务"
@@ -9,8 +9,8 @@ source_title: "Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制�
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-18T06:03:00.029Z
-updated_at: 2026-06-18T06:03:00.029Z
+created_at: 2026-06-18T06:41:09.947Z
+updated_at: 2026-06-18T06:41:09.947Z
 
 raw_refs: ["R-015"]
 pool_refs: ["P-015"]
@@ -19,7 +19,7 @@ primary_raw:
   raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-015-anthropic-的-claude-fable-5-和-mythos-5-因美国出口管制下线.md"
   raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-015-anthropic-的-claude-fable-5-和-mythos-5-因美国出口管制下线.json"
   source_url: "https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what"
-  full_text_hash: "b5fa26ed12e9ccaa"
+  full_text_hash: "063b8f9ff0cd68c1"
   source_level: A
   extraction_quality: high
   has_full_text: true

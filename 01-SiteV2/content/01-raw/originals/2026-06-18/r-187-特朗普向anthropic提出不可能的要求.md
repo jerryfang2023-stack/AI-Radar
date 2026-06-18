@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-18T06:02:59.771Z
+collected_at: 2026-06-18T06:41:09.419Z
 language: mixed
 full_text_hash: b1d1cb165af7b59c
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-187-特朗普向anthropic提出不可能的要求.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"特朗普向Anthropic提出不可能的要求","discovery_summary":"特朗普要求Anthropic完成不可能的任务，暴露了生成式AI安全护栏的根本困境。早在2024年1月，Gary Marcus就指出任何护栏都难以在过于严格和过于宽松之间找到平衡。如今这一判断得到验证：基于next-token predictor的大语言模型本质上不适合安全控制。要么对LLM加以限制直至出现更好的技术，要么承受后果。问题并非Anthropic独有，而是整个生成式AI面临的挑战。","source_name":"Gary Marcus：The Road to AI We Can Trust（RSS）","origin_url":"","discovered_at":"2026-06-18T05:58:06.570Z","rank_on_page":29,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"特朗普向Anthropic提出不可能的要求","discovery_summary":"特朗普要求Anthropic完成不可能的任务，暴露了生成式AI安全护栏的根本困境。早在2024年1月，Gary Marcus就指出任何护栏都难以在过于严格和过于宽松之间找到平衡。如今这一判断得到验证：基于next-token predictor的大语言模型本质上不适合安全控制。要么对LLM加以限制直至出现更好的技术，要么承受后果。问题并非Anthropic独有，而是整个生成式AI面临的挑战。","source_name":"Gary Marcus：The Road to AI We Can Trust（RSS）","origin_url":"","discovered_at":"2026-06-18T06:35:54.506Z","rank_on_page":29,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: b1d1cb165af7b59c
 semantic_hash: e9aeac5cb730d4c1
 duplicate_of: ""
-first_seen_at: "2026-06-18T06:02:59.771Z"
-last_seen_at: 2026-06-18T06:02:59.771Z
+first_seen_at: "2026-06-18T06:41:09.419Z"
+last_seen_at: 2026-06-18T06:41:09.419Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -186,7 +186,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"特朗普向Anthropic提出不可能的要求","discovery_summary":"特朗普要求Anthropic完成不可能的任务，暴露了生成式AI安全护栏的根本困境。早在2024年1月，Gary Marcus就指出任何护栏都难以在过于严格和过于宽松之间找到平衡。如今这一判断得到验证：基于next-token predictor的大语言模型本质上不适合安全控制。要么对LLM加以限制直至出现更好的技术，要么承受后果。问题并非Anthropic独有，而是整个生成式AI面临的挑战。","source_name":"Gary Marcus：The Road to AI We Can Trust（RSS）","origin_url":"","discovered_at":"2026-06-18T05:58:06.570Z","rank_on_page":29,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"特朗普向Anthropic提出不可能的要求","discovery_summary":"特朗普要求Anthropic完成不可能的任务，暴露了生成式AI安全护栏的根本困境。早在2024年1月，Gary Marcus就指出任何护栏都难以在过于严格和过于宽松之间找到平衡。如今这一判断得到验证：基于next-token predictor的大语言模型本质上不适合安全控制。要么对LLM加以限制直至出现更好的技术，要么承受后果。问题并非Anthropic独有，而是整个生成式AI面临的挑战。","source_name":"Gary Marcus：The Road to AI We Can Trust（RSS）","origin_url":"","discovered_at":"2026-06-18T06:35:54.506Z","rank_on_page":29,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

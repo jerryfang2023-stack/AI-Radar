@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T22:07:41.000Z"
-collected_at: 2026-06-18T06:02:59.191Z
+collected_at: 2026-06-18T06:41:08.856Z
 language: mixed
-full_text_hash: 8c903bcef029d734
+full_text_hash: 5bb3fb57fbd58adf
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-022-claude-code-v2-1-181-发布.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-022-claude-code-v2-1-181-发布.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8c903bcef029d734","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5bb3fb57fbd58adf","missing":[]}
 source_volatility: medium
 community_name: ""
 capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Claude Code v2.1.181 发布","discovery_summary":"Claude Code v2.1.181 发布，新增 `/config key=value` 语法允许在提示中直接设置任意配置项，新增 `sandbox.allowAppleEvents` 选项使沙盒命令支持 Apple Events，新增 `CLAUDE_CLIENT_PRESENCE_FILE` 环境变量用于抑制移动端推送通知。内置 Bun 运行时升级至 1.4，改进了长段落流式输出（逐行显示）和 API 连接中断后自动重试。子 agent 面板优化：空闲 agent 30 秒自动隐藏、列表最多 5 行。修复了提示缓存读取、Write/Edit 在网络驱动器产生 0 字节文件、启动性能回归（约 120ms）、启动阻塞（最长 15 秒）、macOS TUI 冻结、子 agent 时长显示错误、API 重试指示器残留、AWS 凭证刷新等问题。","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"https://github.com/anthropics/claude-code/releases/tag/v2.1.181","discovered_at":"2026-06-18T05:58:08.857Z","rank_on_page":139,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Claude Code v2.1.181 发布","discovery_summary":"Claude Code v2.1.181 发布，新增 `/config key=value` 语法允许在提示中直接设置任意配置项，新增 `sandbox.allowAppleEvents` 选项使沙盒命令支持 Apple Events，新增 `CLAUDE_CLIENT_PRESENCE_FILE` 环境变量用于抑制移动端推送通知。内置 Bun 运行时升级至 1.4，改进了长段落流式输出（逐行显示）和 API 连接中断后自动重试。子 agent 面板优化：空闲 agent 30 秒自动隐藏、列表最多 5 行。修复了提示缓存读取、Write/Edit 在网络驱动器产生 0 字节文件、启动性能回归（约 120ms）、启动阻塞（最长 15 秒）、macOS TUI 冻结、子 agent 时长显示错误、API 重试指示器残留、AWS 凭证刷新等问题。","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"https://github.com/anthropics/claude-code/releases/tag/v2.1.181","discovered_at":"2026-06-18T06:35:55.931Z","rank_on_page":144,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 48664f324b88008c
-content_hash: 8c903bcef029d734
+content_hash: 5bb3fb57fbd58adf
 semantic_hash: 3959003554179f3c
 duplicate_of: ""
 first_seen_at: "2026-06-17T22:07:41.000Z"
-last_seen_at: 2026-06-18T06:02:59.191Z
+last_seen_at: 2026-06-18T06:41:08.856Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -154,7 +154,7 @@ Assets
 Loading
 Uh oh!
 There was an error while loading. Please reload this page .
-14 people reacted
+15 people reacted
 
 ## full_text
 
@@ -234,7 +234,7 @@ Assets
 Loading
 Uh oh!
 There was an error while loading. Please reload this page .
-14 people reacted
+15 people reacted
 
 ## extraction_diagnostics
 
@@ -335,7 +335,7 @@ Fixed the API retry indicator ( / connecting… / Could not verify worktree stat
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Claude Code v2.1.181 发布","discovery_summary":"Claude Code v2.1.181 发布，新增 `/config key=value` 语法允许在提示中直接设置任意配置项，新增 `sandbox.allowAppleEvents` 选项使沙盒命令支持 Apple Events，新增 `CLAUDE_CLIENT_PRESENCE_FILE` 环境变量用于抑制移动端推送通知。内置 Bun 运行时升级至 1.4，改进了长段落流式输出（逐行显示）和 API 连接中断后自动重试。子 agent 面板优化：空闲 agent 30 秒自动隐藏、列表最多 5 行。修复了提示缓存读取、Write/Edit 在网络驱动器产生 0 字节文件、启动性能回归（约 120ms）、启动阻塞（最长 15 秒）、macOS TUI 冻结、子 agent 时长显示错误、API 重试指示器残留、AWS 凭证刷新等问题。","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"https://github.com/anthropics/claude-code/releases/tag/v2.1.181","discovered_at":"2026-06-18T05:58:08.857Z","rank_on_page":139,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Claude Code v2.1.181 发布","discovery_summary":"Claude Code v2.1.181 发布，新增 `/config key=value` 语法允许在提示中直接设置任意配置项，新增 `sandbox.allowAppleEvents` 选项使沙盒命令支持 Apple Events，新增 `CLAUDE_CLIENT_PRESENCE_FILE` 环境变量用于抑制移动端推送通知。内置 Bun 运行时升级至 1.4，改进了长段落流式输出（逐行显示）和 API 连接中断后自动重试。子 agent 面板优化：空闲 agent 30 秒自动隐藏、列表最多 5 行。修复了提示缓存读取、Write/Edit 在网络驱动器产生 0 字节文件、启动性能回归（约 120ms）、启动阻塞（最长 15 秒）、macOS TUI 冻结、子 agent 时长显示错误、API 重试指示器残留、AWS 凭证刷新等问题。","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"https://github.com/anthropics/claude-code/releases/tag/v2.1.181","discovered_at":"2026-06-18T06:35:55.931Z","rank_on_page":144,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

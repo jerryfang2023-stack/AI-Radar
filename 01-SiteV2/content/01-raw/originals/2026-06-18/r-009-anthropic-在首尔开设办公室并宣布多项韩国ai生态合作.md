@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T15:28:49.951Z"
-collected_at: 2026-06-18T06:02:59.141Z
+collected_at: 2026-06-18T06:41:08.808Z
 language: mixed
 full_text_hash: 6883f391fd63b6cd
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-009-anthropic-在首尔开设办公室并宣布多项韩国ai生态合作.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Anthropic 在首尔开设办公室并宣布多项韩国AI生态合作","discovery_summary":"Anthropic 正式启用首尔办公室，并宣布与韩国AI生态的多项合作。NAVER 在全公司部署 Claude Code，数千工程师用于提升编码效率；Nexon 工程团队用 Claude Code 编写游戏代码。LG CNS 将 Claude 推广至数千员工并计划覆盖整个 LG 集团；Hanwha Solutions 通过 AWS Bedrock 部署 Claude 满足数据驻留与安全要求；Samsung SDS 向三星电子员工部署 Claude（包括 Claude Cowork 和 Claude Code）。初创公司 Channel Corp 用 Claude 驱动客户AI平台 Channel Talk。Anthropic 与韩国国家AI研究实验室合作，向至多60名研究员提供 Claude 用于AI安全等研究。非营利组织 Good Neighbors Korea 部署 Claude 减轻行政工作。Claude for Startups 已在韩国上线，并计划与 Replit 等合办黑客马拉松。","source_name":"Anthropic：Newsroom（网页）","origin_url":"https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem","discovered_at":"2026-06-18T05:58:08.878Z","rank_on_page":236,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Anthropic 在首尔开设办公室并宣布多项韩国AI生态合作","discovery_summary":"Anthropic 正式启用首尔办公室，并宣布与韩国AI生态的多项合作。NAVER 在全公司部署 Claude Code，数千工程师用于提升编码效率；Nexon 工程团队用 Claude Code 编写游戏代码。LG CNS 将 Claude 推广至数千员工并计划覆盖整个 LG 集团；Hanwha Solutions 通过 AWS Bedrock 部署 Claude 满足数据驻留与安全要求；Samsung SDS 向三星电子员工部署 Claude（包括 Claude Cowork 和 Claude Code）。初创公司 Channel Corp 用 Claude 驱动客户AI平台 Channel Talk。Anthropic 与韩国国家AI研究实验室合作，向至多60名研究员提供 Claude 用于AI安全等研究。非营利组织 Good Neighbors Korea 部署 Claude 减轻行政工作。Claude for Startups 已在韩国上线，并计划与 Replit 等合办黑客马拉松。","source_name":"Anthropic：Newsroom（网页）","origin_url":"https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem","discovered_at":"2026-06-18T06:35:55.953Z","rank_on_page":241,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 6883f391fd63b6cd
 semantic_hash: db55726a691d6f3c
 duplicate_of: ""
 first_seen_at: "2026-06-17T15:28:49.951Z"
-last_seen_at: 2026-06-18T06:02:59.141Z
+last_seen_at: 2026-06-18T06:41:08.808Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -244,7 +244,7 @@ Read more
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Anthropic 在首尔开设办公室并宣布多项韩国AI生态合作","discovery_summary":"Anthropic 正式启用首尔办公室，并宣布与韩国AI生态的多项合作。NAVER 在全公司部署 Claude Code，数千工程师用于提升编码效率；Nexon 工程团队用 Claude Code 编写游戏代码。LG CNS 将 Claude 推广至数千员工并计划覆盖整个 LG 集团；Hanwha Solutions 通过 AWS Bedrock 部署 Claude 满足数据驻留与安全要求；Samsung SDS 向三星电子员工部署 Claude（包括 Claude Cowork 和 Claude Code）。初创公司 Channel Corp 用 Claude 驱动客户AI平台 Channel Talk。Anthropic 与韩国国家AI研究实验室合作，向至多60名研究员提供 Claude 用于AI安全等研究。非营利组织 Good Neighbors Korea 部署 Claude 减轻行政工作。Claude for Startups 已在韩国上线，并计划与 Replit 等合办黑客马拉松。","source_name":"Anthropic：Newsroom（网页）","origin_url":"https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem","discovered_at":"2026-06-18T05:58:08.878Z","rank_on_page":236,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Anthropic 在首尔开设办公室并宣布多项韩国AI生态合作","discovery_summary":"Anthropic 正式启用首尔办公室，并宣布与韩国AI生态的多项合作。NAVER 在全公司部署 Claude Code，数千工程师用于提升编码效率；Nexon 工程团队用 Claude Code 编写游戏代码。LG CNS 将 Claude 推广至数千员工并计划覆盖整个 LG 集团；Hanwha Solutions 通过 AWS Bedrock 部署 Claude 满足数据驻留与安全要求；Samsung SDS 向三星电子员工部署 Claude（包括 Claude Cowork 和 Claude Code）。初创公司 Channel Corp 用 Claude 驱动客户AI平台 Channel Talk。Anthropic 与韩国国家AI研究实验室合作，向至多60名研究员提供 Claude 用于AI安全等研究。非营利组织 Good Neighbors Korea 部署 Claude 减轻行政工作。Claude for Startups 已在韩国上线，并计划与 Replit 等合办黑客马拉松。","source_name":"Anthropic：Newsroom（网页）","origin_url":"https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem","discovered_at":"2026-06-18T06:35:55.953Z","rank_on_page":241,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 
