@@ -301,6 +301,7 @@ function main() {
   }
 
   run("git", ["commit", "-m", `Update follow-builders skill for ${date}`]);
+  run("git", ["fetch", "--prune", "origin"]);
   run("git", ["push", "--force-with-lease", "origin", branch]);
   const pr = openOrUpdatePr();
   const mergeStatus = merge ? mergePr(pr.number) : "skipped";
