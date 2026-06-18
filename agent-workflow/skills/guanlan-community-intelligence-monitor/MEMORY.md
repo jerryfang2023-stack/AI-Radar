@@ -14,3 +14,7 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 ## 2026-06-16
 
 - If `npm run collect:community-intelligence` fails because `http://127.0.0.1:9333/json/version` is unavailable or returns 503, use the local launcher wrapper to start Chrome with `.codex-browser-profile/community-scan` and the CDP port instead of treating the lane as unhealthy.
+
+## 2026-06-18
+
+- Same-date Community Intelligence publication can arrive through the local publisher branch `automation/community-intelligence-<date>` before any same-date `daily-community-intelligence-pr.yml` workflow run exists. Hermes daily supervision must treat that PR state as publication evidence instead of raising a false missing-workflow repair.
