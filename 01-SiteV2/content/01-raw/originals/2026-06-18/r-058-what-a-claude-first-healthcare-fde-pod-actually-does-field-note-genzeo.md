@@ -20,7 +20,7 @@ search_path: "industry_landing"
 search_path_label: "行业落地路径"
 author: ""
 published_at: ""
-collected_at: 2026-06-18T03:06:53.067Z
+collected_at: 2026-06-18T06:02:59.385Z
 language: mixed
 full_text_hash: 049a09935ff408ea
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-058-what-a-claude-first-healthcare-fde-pod-actually-does-field-note-genzeo.md"
@@ -55,8 +55,8 @@ url_hash: e3a8e7da5c98257b
 content_hash: a308aa5bae2d9737
 semantic_hash: 062d13dae860f062
 duplicate_of: ""
-first_seen_at: "2026-06-18T03:06:53.067Z"
-last_seen_at: 2026-06-18T03:06:53.067Z
+first_seen_at: "2026-06-18T06:02:59.385Z"
+last_seen_at: 2026-06-18T06:02:59.385Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}

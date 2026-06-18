@@ -1,0 +1,229 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-078
+title: "AI Agents are *the* big topic for enterprises right now. | Aaron Levie"
+original_url: "https://www.linkedin.com/posts/boxaaron_ai-agents-are-the-big-topic-for-enterprises-activity-7310664003473534976-LLw6"
+canonical_url: "https://linkedin.com/posts/boxaaron_ai-agents-are-the-big-topic-for-enterprises-activity-7310664003473534976-LLw6"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-18T06:02:59.508Z
+language: mixed
+full_text_hash: 9a5087c299d9a872
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-078-ai-agents-are-the-big-topic-for-enterprises-right-now-aaron-levie.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-078-ai-agents-are-the-big-topic-for-enterprises-right-now-aaron-levie.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6087,"paragraph_count":20,"sentence_count":58,"boilerplate_hits":0,"symbol_ratio":0,"method":"json-ld"}
+has_full_text: true
+content_length: 6087
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9a5087c299d9a872","missing":[]}
+source_volatility: high
+community_name: "keyword search / Anysearch"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: bef03eaf17e40824
+content_hash: 9a5087c299d9a872
+semantic_hash: 06bda816baab63cf
+duplicate_of: ""
+first_seen_at: "2026-06-18T06:02:59.508Z"
+last_seen_at: 2026-06-18T06:02:59.508Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","Salesforce","ServiceNow"],"products":["Agents","Agent","agents"],"people":[],"industries":["医疗","企业服务"],"roles":["CIO / IT 负责人","销售 / 客服"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["6","1","2","3","4","5","7"],"quotes":["overshared","overshared"]}
+evidence_seed: {"company_actions":["AI Agents are *the* big topic for enterprises right now.","In most conversations with IT leaders, this is the main thing they are figuring out strategies for.","There is a lot of excitement and momentum, and equally a realistic sense of the work that’s ahead."],"case_details":[],"workflow_changes":["Companies will have to go through their own processes for setting their own policies on how much and when you can hand off to an AI Agent. 6."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"Companies will have to go through their own processes for setting their own policies on how much and when you can hand off to an AI Agent. 6.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI Agents are *the* big topic for enterprises right now.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In most conversations with IT leaders, this is the main thing they are figuring out strategies for.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"There is a lot of excitement and momentum, and equally a realistic sense of the work that’s ahead.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Here are some of the major topics that come up when companies start to think about deploying AI Agents at scale: 1.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# AI Agents are *the* big topic for enterprises right now. | Aaron Levie
+
+## clean_text
+
+AI Agents are *the* big topic for enterprises right now.
+AI Agents are *the* big topic for enterprises right now. In most conversations with IT leaders, this is the main thing they are figuring out strategies for.
+There is a lot of excitement and momentum, and equally a realistic sense of the work that’s ahead. Here are some of the major topics that come up when companies start to think about deploying AI Agents at scale:
+1. Agent interoperability: enterprises don’t have their data in just one environment. Salesforce may have their CRM records, Box their documents, Workday their HR data, or ServiceNow their HR and IT workflows; and plenty of Agentic use-cases will span these systems. As an industry we will need to design more interaction patterns for how AI Agents talk to each other and exchange data in the future.
+2. Over-permissioned systems: lots of enterprises deal with the fact that software has “overshared” information over the years. This is fine when a human can’t possibly find everything across the tools, but a huge liability when Agents can get access to nearly anything, instantly, and return them to a user. Software products will have to take permissions and access controls more seriously, and we may need new AI Agent permission paradigms to help customers deal with this.
+3. Data needs to be in an AI-ready environment: decades of technology being adopted in an enterprise means decades of systems that have important data but are not in environments that AI Agents can easily talk to. There will need to be a continued modernization push to modern, cloud environments, as retrofitting these systems will almost certainly not work.
+4. Compliance: given we’re insanely early in the adoption of AI, most industries still haven’t figured out their official stance on where AI can provide suggestions or make decisions. Most regulated industries (like healthcare, life sciences, or financial services) are still in the early innings of developing shared standards for this, and some will need regulatory clarity to be able to do far more.
+5. AI Agents executing the work: for a while the standard has been to have a human in the loop when AI is invoked in a workflow. But this becomes increasingly impractical for all steps of the work as workflows become more agentic. Companies will have to go through their own processes for setting their own policies on how much and when you can hand off to an AI Agent.
+6. Change management: this will probably realistically take the longest. You can’t take a process that’s been run for decades or a century and expect it to radically transform overnight. In particular, most companies still are working what the best order is of deploying AI to get the biggest impact relative to the change required.
+7. Business models of AI Agents: at the moment AI Agents still have a variety of business models being tested. Customers can somewhat feel that we’re early as an industry in getting to the ultimate pricing model of agents, and more stability here will likely go a long way.
+AI Agents are *the* big topic for enterprises right now.
+AI Agents are *the* big topic for enterprises right now. In most conversations with IT leaders, this is the main thing they are figuring out strategies for.
+There is a lot of excitement and momentum, and equally a realistic sense of the work that’s ahead. Here are some of the major topics that come up when companies start to think about deploying AI Agents at scale:
+1. Agent interoperability: enterprises don’t have their data in just one environment. Salesforce may have their CRM records, Box their documents, Workday their HR data, or ServiceNow their HR and IT workflows; and plenty of Agentic use-cases will span these systems. As an industry we will need to design more interaction patterns for how AI Agents talk to each other and exchange data in the future.
+2. Over-permissioned systems: lots of enterprises deal with the fact that software has “overshared” information over the years. This is fine when a human can’t possibly find everything across the tools, but a huge liability when Agents can get access to nearly anything, instantly, and return them to a user. Software products will have to take permissions and access controls more seriously, and we may need new AI Agent permission paradigms to help customers deal with this.
+3. Data needs to be in an AI-ready environment: decades of technology being adopted in an enterprise means decades of systems that have important data but are not in environments that AI Agents can easily talk to. There will need to be a continued modernization push to modern, cloud environments, as retrofitting these systems will almost certainly not work.
+4. Compliance: given we’re insanely early in the adoption of AI, most industries still haven’t figured out their official stance on where AI can provide suggestions or make decisions. Most regulated industries (like healthcare, life sciences, or financial services) are still in the early innings of developing shared standards for this, and some will need regulatory clarity to be able to do far more.
+5. AI Agents executing the work: for a while the standard has been to have a human in the loop when AI is invoked in a workflow. But this becomes increasingly impractical for all steps of the work as workflows become more agentic. Companies will have to go through their own processes for setting their own policies on how much and when you can hand off to an AI Agent.
+6. Change management: this will probably realistically take the longest. You can’t take a process that’s been run for decades or a century and expect it to radically transform overnight. In particular, most companies still are working what the best order is of deploying AI to get the biggest impact relative to the change required.
+7. Business models of AI Agents: at the moment AI Agents still have a variety of business models being tested. Customers can somewhat feel that we’re early as an industry in getting to the ultimate pricing model of agents, and more stability here will likely go a long way.
+
+## full_text
+
+AI Agents are *the* big topic for enterprises right now.
+AI Agents are *the* big topic for enterprises right now. In most conversations with IT leaders, this is the main thing they are figuring out strategies for.
+There is a lot of excitement and momentum, and equally a realistic sense of the work that’s ahead. Here are some of the major topics that come up when companies start to think about deploying AI Agents at scale:
+1. Agent interoperability: enterprises don’t have their data in just one environment. Salesforce may have their CRM records, Box their documents, Workday their HR data, or ServiceNow their HR and IT workflows; and plenty of Agentic use-cases will span these systems. As an industry we will need to design more interaction patterns for how AI Agents talk to each other and exchange data in the future.
+2. Over-permissioned systems: lots of enterprises deal with the fact that software has “overshared” information over the years. This is fine when a human can’t possibly find everything across the tools, but a huge liability when Agents can get access to nearly anything, instantly, and return them to a user. Software products will have to take permissions and access controls more seriously, and we may need new AI Agent permission paradigms to help customers deal with this.
+3. Data needs to be in an AI-ready environment: decades of technology being adopted in an enterprise means decades of systems that have important data but are not in environments that AI Agents can easily talk to. There will need to be a continued modernization push to modern, cloud environments, as retrofitting these systems will almost certainly not work.
+4. Compliance: given we’re insanely early in the adoption of AI, most industries still haven’t figured out their official stance on where AI can provide suggestions or make decisions. Most regulated industries (like healthcare, life sciences, or financial services) are still in the early innings of developing shared standards for this, and some will need regulatory clarity to be able to do far more.
+5. AI Agents executing the work: for a while the standard has been to have a human in the loop when AI is invoked in a workflow. But this becomes increasingly impractical for all steps of the work as workflows become more agentic. Companies will have to go through their own processes for setting their own policies on how much and when you can hand off to an AI Agent.
+6. Change management: this will probably realistically take the longest. You can’t take a process that’s been run for decades or a century and expect it to radically transform overnight. In particular, most companies still are working what the best order is of deploying AI to get the biggest impact relative to the change required.
+7. Business models of AI Agents: at the moment AI Agents still have a variety of business models being tested. Customers can somewhat feel that we’re early as an industry in getting to the ultimate pricing model of agents, and more stability here will likely go a long way.
+AI Agents are *the* big topic for enterprises right now.
+AI Agents are *the* big topic for enterprises right now. In most conversations with IT leaders, this is the main thing they are figuring out strategies for.
+There is a lot of excitement and momentum, and equally a realistic sense of the work that’s ahead. Here are some of the major topics that come up when companies start to think about deploying AI Agents at scale:
+1. Agent interoperability: enterprises don’t have their data in just one environment. Salesforce may have their CRM records, Box their documents, Workday their HR data, or ServiceNow their HR and IT workflows; and plenty of Agentic use-cases will span these systems. As an industry we will need to design more interaction patterns for how AI Agents talk to each other and exchange data in the future.
+2. Over-permissioned systems: lots of enterprises deal with the fact that software has “overshared” information over the years. This is fine when a human can’t possibly find everything across the tools, but a huge liability when Agents can get access to nearly anything, instantly, and return them to a user. Software products will have to take permissions and access controls more seriously, and we may need new AI Agent permission paradigms to help customers deal with this.
+3. Data needs to be in an AI-ready environment: decades of technology being adopted in an enterprise means decades of systems that have important data but are not in environments that AI Agents can easily talk to. There will need to be a continued modernization push to modern, cloud environments, as retrofitting these systems will almost certainly not work.
+4. Compliance: given we’re insanely early in the adoption of AI, most industries still haven’t figured out their official stance on where AI can provide suggestions or make decisions. Most regulated industries (like healthcare, life sciences, or financial services) are still in the early innings of developing shared standards for this, and some will need regulatory clarity to be able to do far more.
+5. AI Agents executing the work: for a while the standard has been to have a human in the loop when AI is invoked in a workflow. But this becomes increasingly impractical for all steps of the work as workflows become more agentic. Companies will have to go through their own processes for setting their own policies on how much and when you can hand off to an AI Agent.
+6. Change management: this will probably realistically take the longest. You can’t take a process that’s been run for decades or a century and expect it to radically transform overnight. In particular, most companies still are working what the best order is of deploying AI to get the biggest impact relative to the change required.
+7. Business models of AI Agents: at the moment AI Agents still have a variety of business models being tested. Customers can somewhat feel that we’re early as an industry in getting to the ultimate pricing model of agents, and more stability here will likely go a long way.
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6087,"paragraph_count":20,"sentence_count":58,"boilerplate_hits":0,"symbol_ratio":0,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Companies will have to go through their own processes for setting their own policies on how much and when you can hand off to an AI Agent. 6.
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   AI Agents are *the* big topic for enterprises right now.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   In most conversations with IT leaders, this is the main thing they are figuring out strategies for.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   There is a lot of excitement and momentum, and equally a realistic sense of the work that’s ahead.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Here are some of the major topics that come up when companies start to think about deploying AI Agents at scale: 1.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Salesforce, ServiceNow
+- products: Agents, Agent, agents
+- people: 暂无公开信息
+- industries: 医疗, 企业服务
+- roles: CIO / IT 负责人, 销售 / 客服
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 6, 1, 2, 3, 4, 5, 7
+- quotes: overshared / overshared
+
+## evidence_seed
+
+- company_actions: AI Agents are *the* big topic for enterprises right now. / In most conversations with IT leaders, this is the main thing they are figuring out strategies for. / There is a lot of excitement and momentum, and equally a realistic sense of the work that’s ahead.
+- case_details: 暂无公开信息
+- workflow_changes: Companies will have to go through their own processes for setting their own policies on how much and when you can hand off to an AI Agent. 6.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: keyword search / Anysearch
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Companies will have to go through their own processes for setting their own policies on how much and when you can hand off to an AI Agent. 6.
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

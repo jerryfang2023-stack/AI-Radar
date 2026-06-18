@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T11:30:35.000Z"
-collected_at: 2026-06-18T03:06:53.289Z
+collected_at: 2026-06-18T06:02:59.629Z
 language: mixed
 full_text_hash: 1273bfaa75ce3e08
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-110-zai用华为ascend训练成本降90.md"
@@ -45,7 +45,7 @@ capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Zai用华为Ascend训练成本降90%","discovery_summary":"值得注意的是 @Zai_org 在 @Huawei Ascend 芯片上训练，没有 NVIDIA （！） 因此你拥有前沿 -3 个月，完全中国堆栈，便宜 90%。 我估计总成本为 2500 万美元，主要在后训练（80%） @Zai_org 市值现在接近 1000 亿美元，$$ 在开源中！","source_name":"X：Emad Mostaque (@EMostaque)","origin_url":"https://x.com/EMostaque/status/2067208281727054123","discovered_at":"2026-06-18T03:01:26.768Z","rank_on_page":267,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Zai用华为Ascend训练成本降90%","discovery_summary":"值得注意的是 @Zai_org 在 @Huawei Ascend 芯片上训练，没有 NVIDIA （！） 因此你拥有前沿 -3 个月，完全中国堆栈，便宜 90%。 我估计总成本为 2500 万美元，主要在后训练（80%） @Zai_org 市值现在接近 1000 亿美元，$$ 在开源中！","source_name":"X：Emad Mostaque (@EMostaque)","origin_url":"https://x.com/EMostaque/status/2067208281727054123","discovered_at":"2026-06-18T05:58:08.891Z","rank_on_page":297,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 1273bfaa75ce3e08
 semantic_hash: 68d51f90a9f1019e
 duplicate_of: ""
 first_seen_at: "2026-06-17T11:30:35.000Z"
-last_seen_at: 2026-06-18T03:06:53.289Z
+last_seen_at: 2026-06-18T06:02:59.629Z
 update_detected: false
 raw_status: candidate
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
@@ -208,7 +208,7 @@ Would estimate the total cost of this to be $25m, largely post training (80%)
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Zai用华为Ascend训练成本降90%","discovery_summary":"值得注意的是 @Zai_org 在 @Huawei Ascend 芯片上训练，没有 NVIDIA （！） 因此你拥有前沿 -3 个月，完全中国堆栈，便宜 90%。 我估计总成本为 2500 万美元，主要在后训练（80%） @Zai_org 市值现在接近 1000 亿美元，$$ 在开源中！","source_name":"X：Emad Mostaque (@EMostaque)","origin_url":"https://x.com/EMostaque/status/2067208281727054123","discovered_at":"2026-06-18T03:01:26.768Z","rank_on_page":267,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Zai用华为Ascend训练成本降90%","discovery_summary":"值得注意的是 @Zai_org 在 @Huawei Ascend 芯片上训练，没有 NVIDIA （！） 因此你拥有前沿 -3 个月，完全中国堆栈，便宜 90%。 我估计总成本为 2500 万美元，主要在后训练（80%） @Zai_org 市值现在接近 1000 亿美元，$$ 在开源中！","source_name":"X：Emad Mostaque (@EMostaque)","origin_url":"https://x.com/EMostaque/status/2067208281727054123","discovered_at":"2026-06-18T05:58:08.891Z","rank_on_page":297,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

@@ -20,7 +20,7 @@ search_path: "industry_landing"
 search_path_label: "行业落地路径"
 author: ""
 published_at: ""
-collected_at: 2026-06-18T03:06:53.090Z
+collected_at: 2026-06-18T06:02:59.412Z
 language: mixed
 full_text_hash: b2ece5e054e9b2bc
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-062-zeiss-case-study-document-extraction-with-dapr-agents-diagrid.md"
@@ -55,8 +55,8 @@ url_hash: 56a6c641a41082c0
 content_hash: b2ece5e054e9b2bc
 semantic_hash: 093f998386c464c7
 duplicate_of: ""
-first_seen_at: "2026-06-18T03:06:53.090Z"
-last_seen_at: 2026-06-18T03:06:53.090Z
+first_seen_at: "2026-06-18T06:02:59.412Z"
+last_seen_at: 2026-06-18T06:02:59.412Z
 update_detected: false
 raw_status: candidate
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}

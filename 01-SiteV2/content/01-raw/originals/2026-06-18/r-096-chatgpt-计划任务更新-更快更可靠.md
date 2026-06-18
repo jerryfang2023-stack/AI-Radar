@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T18:42:27.000Z"
-collected_at: 2026-06-18T03:06:53.264Z
+collected_at: 2026-06-18T06:02:59.603Z
 language: mixed
 full_text_hash: 473fabc0378f41d5
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-096-chatgpt-计划任务更新-更快更可靠.md"
@@ -45,7 +45,7 @@ capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"ChatGPT 计划任务更新：更快更可靠","discovery_summary":"ChatGPT 新功能：更好的任务计划方式。 计划任务更快、更可靠，新的 Scheduled 页面也让管理更轻松。 新的计划任务体验正在向 Go、Plus、Pro、Business 和 Enterprise 用户逐步推出，支持网页和移动端。","source_name":"X：ChatGPT (@ChatGPTapp)","origin_url":"https://x.com/ChatGPTapp/status/2067316960875168181","discovered_at":"2026-06-18T03:01:26.743Z","rank_on_page":153,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"ChatGPT 计划任务更新：更快更可靠","discovery_summary":"ChatGPT 新功能：更好的任务计划方式。 计划任务更快、更可靠，新的 Scheduled 页面也让管理更轻松。 新的计划任务体验正在向 Go、Plus、Pro、Business 和 Enterprise 用户逐步推出，支持网页和移动端。","source_name":"X：ChatGPT (@ChatGPTapp)","origin_url":"https://x.com/ChatGPTapp/status/2067316960875168181","discovered_at":"2026-06-18T05:58:08.866Z","rank_on_page":183,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 473fabc0378f41d5
 semantic_hash: 7fe22a5d019b519f
 duplicate_of: ""
 first_seen_at: "2026-06-17T18:42:27.000Z"
-last_seen_at: 2026-06-18T03:06:53.264Z
+last_seen_at: 2026-06-18T06:02:59.603Z
 update_detected: false
 raw_status: candidate
 usable_for: {"viewpoint":false,"case":false,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -203,7 +203,7 @@ The new scheduled tasks experience is rolling out to Go, Plus, Pro, Business, an
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"ChatGPT 计划任务更新：更快更可靠","discovery_summary":"ChatGPT 新功能：更好的任务计划方式。 计划任务更快、更可靠，新的 Scheduled 页面也让管理更轻松。 新的计划任务体验正在向 Go、Plus、Pro、Business 和 Enterprise 用户逐步推出，支持网页和移动端。","source_name":"X：ChatGPT (@ChatGPTapp)","origin_url":"https://x.com/ChatGPTapp/status/2067316960875168181","discovered_at":"2026-06-18T03:01:26.743Z","rank_on_page":153,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"ChatGPT 计划任务更新：更快更可靠","discovery_summary":"ChatGPT 新功能：更好的任务计划方式。 计划任务更快、更可靠，新的 Scheduled 页面也让管理更轻松。 新的计划任务体验正在向 Go、Plus、Pro、Business 和 Enterprise 用户逐步推出，支持网页和移动端。","source_name":"X：ChatGPT (@ChatGPTapp)","origin_url":"https://x.com/ChatGPTapp/status/2067316960875168181","discovered_at":"2026-06-18T05:58:08.866Z","rank_on_page":183,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

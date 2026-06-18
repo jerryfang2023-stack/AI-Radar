@@ -1,0 +1,70 @@
+---
+id: SIG-20260618-A22
+type: signal_card
+signal_type: case
+title: "A Framework for Finding A Design Partner"
+date: 2026-06-18
+status: published
+source_title: "A Framework for Finding A Design Partner | Andreessen Horowitz"
+asset_level: frontstage
+evidence_gate: core_evidence_passed
+fact_draft_gate: passed
+created_at: 2026-06-18T06:03:00.029Z
+updated_at: 2026-06-18T06:03:00.029Z
+
+raw_refs: ["R-082"]
+pool_refs: ["P-061"]
+primary_raw:
+  raw_ref: R-082
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-082-a-framework-for-finding-a-design-partner-andreessen-horowitz.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-082-a-framework-for-finding-a-design-partner-andreessen-horowitz.json"
+  source_url: "https://a16z.com/a-framework-for-finding-a-design-partner/"
+  full_text_hash: "531d4b1f71fb17e5"
+  source_level: B
+  extraction_quality: high
+  has_full_text: true
+  pool_routes:
+    - core_pool
+  raw_qc_decision: allow
+  importance_type: important_case
+  importance_score: 4
+
+formal_tags:
+  track: ["track-ai-agent", "track-enterprise-workflow"]
+  function: []
+  scenario: []
+  customer: ["customer-enterprise"]
+  evidence: ["evidence-customer-adoption"]
+  stage: []
+  region: []
+  source: ["source-industry-data"]
+
+signal_owner: "A Framework for Finding A Design Partner"
+
+frontend:
+  displayTitle: "A Framework for Finding A Design Partner"
+  sourceLinks:
+    - "https://a16z.com/a-framework-for-finding-a-design-partner/"
+---
+
+# A Framework for Finding A Design Partner
+
+## 新闻事实
+
+A Framework for Finding A Design Partner
+
+## 原文要点
+
+- 原文未提供更多可拆分事实点，需以可见原文片段核对。
+
+## 价值描述
+
+A Framework for Finding A Design Partner 的案例信号可用于观察 AI 是否已经进入 企业智能体协作流程，以及后续是否出现客户、流程或结果指标。
+
+## 可见原文片段
+
+A Framework for Finding A Design Partner
+
+## 证据边界
+
+没有变化前后流程线索

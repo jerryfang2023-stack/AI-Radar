@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T06:59:02.000Z"
-collected_at: 2026-06-18T03:06:53.298Z
+collected_at: 2026-06-18T06:02:59.638Z
 language: mixed
 full_text_hash: 96a0500b0a49e1dc
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-115-chatgpt-语音最大规模升级-openai-正筹备推出-gpt-bidi-1-模型.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"ChatGPT 语音最大规模升级：OpenAI 正筹备推出 GPT-Bidi-1 模型","discovery_summary":"OpenAI 正筹备推出 GPT-Bidi-1 模型，采用双向（BiDi）架构，能同时听和说，吸收用户打断并在对话中实时调整。相比已进化至 GPT-5.5 的文本模型，ChatGPT 的语音能力仍基于较旧音频技术栈，GPT-Bidi-1 旨在弥合这一差距。上线后用户可切换双向模式与现有高级语音模式，并支持 High、Medium 及 Instant 智能等级，按任务调整速度和深度。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/407.htm","discovered_at":"2026-06-18T03:01:26.780Z","rank_on_page":320,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"ChatGPT 语音最大规模升级：OpenAI 正筹备推出 GPT-Bidi-1 模型","discovery_summary":"OpenAI 正筹备推出 GPT-Bidi-1 模型，采用双向（BiDi）架构，能同时听和说，吸收用户打断并在对话中实时调整。相比已进化至 GPT-5.5 的文本模型，ChatGPT 的语音能力仍基于较旧音频技术栈，GPT-Bidi-1 旨在弥合这一差距。上线后用户可切换双向模式与现有高级语音模式，并支持 High、Medium 及 Instant 智能等级，按任务调整速度和深度。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/407.htm","discovered_at":"2026-06-18T05:58:08.903Z","rank_on_page":350,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 96a0500b0a49e1dc
 semantic_hash: 6ffc3fa1425bc3d6
 duplicate_of: ""
 first_seen_at: "2026-06-17T06:59:02.000Z"
-last_seen_at: 2026-06-18T03:06:53.298Z
+last_seen_at: 2026-06-18T06:02:59.638Z
 update_detected: false
 raw_status: candidate
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -328,7 +328,7 @@ Win11之家
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"ChatGPT 语音最大规模升级：OpenAI 正筹备推出 GPT-Bidi-1 模型","discovery_summary":"OpenAI 正筹备推出 GPT-Bidi-1 模型，采用双向（BiDi）架构，能同时听和说，吸收用户打断并在对话中实时调整。相比已进化至 GPT-5.5 的文本模型，ChatGPT 的语音能力仍基于较旧音频技术栈，GPT-Bidi-1 旨在弥合这一差距。上线后用户可切换双向模式与现有高级语音模式，并支持 High、Medium 及 Instant 智能等级，按任务调整速度和深度。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/407.htm","discovered_at":"2026-06-18T03:01:26.780Z","rank_on_page":320,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"ChatGPT 语音最大规模升级：OpenAI 正筹备推出 GPT-Bidi-1 模型","discovery_summary":"OpenAI 正筹备推出 GPT-Bidi-1 模型，采用双向（BiDi）架构，能同时听和说，吸收用户打断并在对话中实时调整。相比已进化至 GPT-5.5 的文本模型，ChatGPT 的语音能力仍基于较旧音频技术栈，GPT-Bidi-1 旨在弥合这一差距。上线后用户可切换双向模式与现有高级语音模式，并支持 High、Medium 及 Instant 智能等级，按任务调整速度和深度。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/407.htm","discovered_at":"2026-06-18T05:58:08.903Z","rank_on_page":350,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 
