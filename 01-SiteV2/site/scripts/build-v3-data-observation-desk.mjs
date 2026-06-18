@@ -504,7 +504,7 @@ function sourceTitleLineFromFullText(fullText = "") {
     if (/\b\d{1,2}:\d{2}\s*(?:AM|PM)\b|\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}\s+\d{4}\b/iu.test(line)) continue;
     const latinWords = line.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
     if (latinWords.length < 5) continue;
-    if (!/\b(AI|agent|agents|raises?|raised|funding|seed|launches?|announces?|introducing|case|platform|models?|enterprise|robot|robots|World leaders|Design Partner|Framework)\b/iu.test(line)) continue;
+    if (!/\b(AI|agent|agents|FDE|Forward Deployed|raises?|raised|funding|seed|launches?|announces?|introducing|case|platform|models?|enterprise|robot|robots|World leaders|Design Partner|Framework)\b/iu.test(line)) continue;
     return cleanEnglishTitleForDisplay(line);
   }
   return "";
@@ -530,6 +530,9 @@ function sourceTitleFromUrlOverride(sourceUrl = "") {
   }
   if (/the-decoder\.com\/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons/iu.test(normalized)) {
     return "Zhipu AI's GLM-5.2 closes in on closed-source leaders in coding marathons";
+  }
+  if (/genzeon\.one\/research\/field-notes\/claude-first-healthcare-fde-pod/iu.test(normalized)) {
+    return "What a Claude-First Healthcare FDE Pod Actually Does — Field Note";
   }
   return "";
 }
@@ -616,6 +619,7 @@ function subjectFromUrl(url = "") {
     if (host === "docs.aws.amazon.com" && pathname.includes("sagemaker-marketplace")) return "Amazon SageMaker";
     if (host === "businesswire.com" && pathname.includes("digitalocean-launches-inference-engine")) return "DigitalOcean";
     if (host === "sisinternational.com") return "SIS International";
+    if (host === "genzeon.one") return "Genzeon Platforms";
     if (host === "linkedin.com" && pathname.includes("pascaldarc")) return "Procurement AI";
     if (host === "linkedin.com" && pathname.includes("jonjessup")) return "Hugging Face";
     if (host === "ithome.com" && pathname.includes("962/220")) return "香港 AI 应用示范社区";
@@ -817,6 +821,7 @@ function sourceTitleLiteralTranslation(title = "", sourceUrl = "") {
     [/World leaders want American AI\. They just don[’']t want America to be able to turn it off/iu, "世界领导人想要美国 AI，但不希望美国能够将其关闭"],
     [/Collecting robot training data is dirty, unglamorous work.*XDOF/iu, "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做"],
     [/Dangerous AI models are coming, no matter what/iu, "危险的 AI 模型无论如何都会到来"],
+    [/What a Claude-First Healthcare FDE Pod Actually Does/iu, "Claude 优先的医疗 FDE Pod 实际做什么"],
   ];
   const match = rules.find(([pattern]) => pattern.test(`${text}\n${normalized}`));
   return match?.[1] || "";
@@ -1225,6 +1230,7 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
     [/voicerun-launches-full-stack-voice-ai-platform|VoiceRun Launches Full-Stack Voice AI Platform|VoiceRun gets \$5\.5M/iu, "VoiceRun 宣布推出企业级全栈语音 AI 平台，并完成 550 万美元种子轮融资；资金用于扩展语音 AI 解决方案和 go-to-market，面向从 demo / pilot 进入规模化部署的企业客户。"],
     [/applied-ai-case-studies|Applied AI Case Studies and Real-World Success Stories/iu, "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。"],
     [/Ontora: AI agents that interviews every employee|ycombinator\.com\/companies\/ontora/iu, "Y Combinator 公司 Ontora 提供 AI Agent，用于访谈每位员工并把组织上下文交给企业 AI 工具，核心信号是企业内部知识采集和上下文传递流程的产品化。"],
+    [/What a Claude-First Healthcare FDE Pod Actually Does|claude-first-healthcare-fde-pod/iu, "Genzeon Platforms 的 field note 描述 Claude 优先的医疗 FDE pod：由 Domain Operator 和 Forward Deployed Engineer 组成 2 人客户嵌入团队，把 agentic AI 交付到受监管支付方工作流。"],
     [/A Framework for Finding A Design Partner|a-framework-for-finding-a-design-partner/iu, "Andreessen Horowitz 发布寻找设计伙伴的框架，材料重点是创业公司在产品设计、用户反馈和早期客户验证中的协作机制。"],
     [/Introducing Amazon Bedrock Managed Knowledge Base|bedrock-managed-knowledge-base/iu, "AWS 发布 Amazon Bedrock Managed Knowledge Base，帮助开发者用企业自有数据更快构建生成式 AI 应用，并降低自建 RAG 管线、连接器和权限处理的复杂度。"],
     [/Enterprise AI Rollout Failures: Causes and Case Studies|enterprise-ai-rollout-failures/iu, "Intuition Labs 分析企业 AI 推广失败原因与案例，指出数据准备、系统集成、治理、组织变更和 ROI 预期是企业 AI 项目落地失败的关键约束。"],
@@ -2483,6 +2489,97 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
     .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.sourceRef || a.id).localeCompare(String(b.sourceRef || b.id)));
 }
 
+function isEnterpriseAiLensPoolSection(section = "") {
+  const text = [
+    poolTitle(section),
+    poolValue(section, "source_url"),
+    poolValue(section, "source"),
+    poolValue(section, "search_path"),
+    poolValue(section, "search_intent"),
+    poolValue(section, "key_excerpts"),
+    poolValue(section, "evidence_seed"),
+    poolValue(section, "missing_information"),
+  ].filter(Boolean).join(" ");
+  const implementation = /FDE|forward deployed|customer-embedded|domain operator|production environment|regulated payer workflow|implementation|workflow|deployment|rollout|customer adoption|case study|business process|pilot|procurement|technical scoping|系统设计|客户嵌入|生产环境|生产上线|业务流程|实施|部署|落地|试点|采购|交付/iu.test(text);
+  const broadGovernance = /world leaders|turn it off|G7|sovereign AI|national security|国家安全|峰会|领导人|关闭模型访问/iu.test(text);
+  return implementation && (!broadGovernance || /workflow|deployment|customer|production|business process|业务流程|部署|客户|生产/iu.test(text));
+}
+
+function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
+  const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
+  return poolCandidateSectionsForDate(activeDate)
+    .filter((section) => {
+      const routes = splitCsv(poolValue(section, "pool_routes"));
+      const supportText = [
+        poolValue(section, "supporting_signals"),
+        poolValue(section, "evidence_level"),
+      ].join(" ");
+      return routes.includes("core_pool") || /enterprise_ai_transformation_lens|core_evidence_candidate/iu.test(supportText);
+    })
+    .filter(isEnterpriseAiLensPoolSection)
+    .map((section) => {
+      const ref = poolRef(section);
+      const sourceUrl = poolValue(section, "source_url");
+      const card = cardsByUrl.get(canonicalUrl(sourceUrl));
+      if (card) return card;
+      const rawTitle = poolTitle(section);
+      const title = frontstageChineseTitle(rawTitle, sourceUrl) || translateEnglishTitle(rawTitle, sourceUrl) || rawTitle;
+      const category = poolCandidateCategory(section);
+      const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
+      const importanceScore = Number(poolValue(section, "importance_score")) || 0;
+      const score = Number(poolValue(section, "score")) || 0;
+      const poolRoutes = splitCsv(poolValue(section, "pool_routes"));
+      const item = {
+        id: `POOL-${activeDate}-${ref}`,
+        type: "enterprise_ai_lens_candidate",
+        category,
+        categoryLabel: categoryLabels[category] || category,
+        title,
+        originalTitle: rawTitle === title ? "" : rawTitle,
+        date: activeDate,
+        subject: frontstageCandidateSubject(sourceUrl, rawTitle, title, poolValue(section, "source")),
+        source: domain(sourceUrl) || poolValue(section, "source"),
+        sourceName: domain(sourceUrl) || poolValue(section, "source"),
+        sourceUrl,
+        sourceLevel: poolValue(section, "source_level"),
+        importanceScore,
+        poolRoutes,
+        publishedAt: "",
+        tags: {},
+        flatTags: ["track-enterprise-workflow", "customer-enterprise"],
+        displayTags: sanitizeDisplayTags([{ id: category, label: categoryLabels[category] || category }]),
+        summary: fact,
+        translatedFact: fact,
+        originalHighlights: [fact].filter(Boolean),
+        visibleFragment: fact,
+        sourceLinks: [sourceUrl].filter(Boolean),
+        status: "pooled",
+        assetLevel: "enterprise_ai_lens",
+        promotionStatus: "enterprise_ai_lens_only",
+        evidenceGate: poolValue(section, "evidence_level") || "core_evidence_candidate",
+        stage: "",
+        evidence: "",
+        track: "",
+        largeVendorKey: largeVendorKeyForCard({ title: rawTitle, sourceUrl }),
+        largeVendor: Boolean(largeVendorKeyForCard({ title: rawTitle, sourceUrl })),
+        frontstageRankScore: score * 100 + importanceScore * 10 + 150,
+        frontstageEditorialScore: score * 100 + importanceScore * 10 + 150,
+        frontstageEvidenceScore: Number(poolValue(section, "readability_score")) || 0,
+        frontstageSelectionReasons: ["企业AI化 / FDE 镜头候选", "保留为实施、部署和工作流证据"],
+        frontstageValueDescription: "该条目用于企业AI化 / FDE 镜头，不改变正式 Top10 Signal Card 类型。",
+        frontstageQualityWarnings: [],
+        frontstageGenericCandidate: false,
+        fromCorePool: poolRoutes.includes("core_pool"),
+        enterpriseAiLensPriority: true,
+        sourceRef: ref,
+      };
+      if (!hasSourceBackedFrontstageFact(item)) return null;
+      return item;
+    })
+    .filter(Boolean)
+    .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.sourceRef || a.id).localeCompare(String(b.sourceRef || b.id)));
+}
+
 function cardFromFile(file, category) {
   const text = read(file);
   const fm = frontmatter(text);
@@ -3330,18 +3427,36 @@ function enterpriseTransformationScore(card = {}) {
   if (tags.has("evidence-customer-adoption")) score += 18;
   if (tags.has("evidence-customer-metric")) score += 12;
   if (tags.has("evidence-product-launch")) score += 8;
+  if (card.enterpriseAiLensPriority) score += 400;
+  if (/FDE|forward deployed|customer-embedded|domain operator|production environment|regulated payer workflow|implementation|workflow|deployment|rollout|customer adoption|business process|技术实施|客户嵌入|生产环境|业务流程|实施|部署|落地/iu.test(text)) score += 48;
   if (/enterprise|workflow|customer|deployment|procurement|governance|integration|automation|agent|企业|流程|客户|部署|采购|治理|集成|自动化|智能体/iu.test(text)) score += 24;
   if (/cms|content management|red team|security testing|business workflow|内容管理|内容运营|红队|安全测试|业务流程/iu.test(text)) score += 16;
+  if (/world leaders|turn it off|G7|sovereign AI|national security|国家安全|峰会|领导人|关闭模型访问/iu.test(text)) score -= 80;
   if (/developer hub|cloud tpu|colab|xla|pytorch|kv cache|benchmark|wildchat|public chat|research|paper|dataset|开发者中心|数据集|研究|论文/iu.test(text)) score -= 34;
   if (/原文 AI 事件|该来源披露的是/u.test(text)) score -= 28;
   if (/report|guide|top\s+\d+|榜单|指南|报告|清单/iu.test(text)) score -= 18;
   return score;
 }
 
+function hasEnterpriseImplementationSignal(card = {}) {
+  const text = enterpriseTransformationText(card);
+  if (!hasSourceBackedFrontstageFact(card)) return false;
+  if (/design partner|brand design|visual identity|launch sequence|设计伙伴|品牌设计|视觉识别/iu.test(text) && !/deployment|production|rollout|FDE|forward deployed|生产|部署|落地/iu.test(text)) return false;
+  const aiRelated = /\bAI\b|agentic|agents?|LLM|model|Claude|Bedrock|智能体|模型|人工智能/u.test(text);
+  if (!aiRelated) return false;
+  const implementation = /FDE|forward deployed|customer-embedded|domain operator|production environment|regulated payer workflow|implementation|workflow|deployment|rollout|customer adoption|case study|business process|pilot|procurement|technical scoping|系统设计|客户嵌入|生产环境|生产上线|业务流程|实施|部署|落地|试点|采购|交付/iu.test(text);
+  if (!implementation) return false;
+  const broadGovernance = /world leaders|turn it off|G7|sovereign AI|national security|国家安全|峰会|领导人|关闭模型访问/iu.test(text);
+  return !broadGovernance || /workflow|deployment|customer|production|business process|业务流程|部署|客户|生产/iu.test(text);
+}
+
 function hasEnterpriseTransformationSubstance(card = {}) {
   const text = enterpriseTransformationText(card);
   if (!hasSourceBackedFrontstageFact(card)) return false;
-  return /workflow|customer|deployment|adoption|procurement|cms|content management|red team|security testing|governance|compliance|agentic ai.*business|enterprise system|企业|流程|客户|部署|采用|采购|内容管理|内容运营|红队|安全测试|治理|合规|业务系统/iu.test(text);
+  if (/design partner|brand design|visual identity|launch sequence|设计伙伴|品牌设计|视觉识别/iu.test(text) && !/deployment|production|rollout|FDE|forward deployed|生产|部署|落地/iu.test(text)) return false;
+  if (!/\bAI\b|agentic|agents?|LLM|model|Claude|Bedrock|智能体|模型|人工智能/u.test(text)) return false;
+  return hasEnterpriseImplementationSignal(card)
+    || /workflow|customer|deployment|adoption|procurement|cms|content management|red team|security testing|agentic ai.*business|enterprise system|企业|流程|客户|部署|采用|采购|内容管理|内容运营|红队|安全测试|业务系统/iu.test(text);
 }
 
 function enterpriseTransformationItem(card = {}) {
@@ -3586,7 +3701,25 @@ const corePoolCandidates = buildCorePoolCandidateItems(cards, activeDate)
   .map(normalizeFrontstageDisplay)
   .filter(publicCandidateIsDisplayReady)
   .filter((card) => !isWeakSubject(card.subject));
-const enterpriseAiTransformation = buildEnterpriseAiTransformation(cards, corePoolCandidates, activeDate);
+const enterpriseAiLensCandidates = buildEnterpriseAiLensCandidateItems(cards, activeDate)
+  .map(normalizeFrontstageDisplay)
+  .map((card) => ({
+    ...card,
+    summary: (
+      card.summary
+      && !publicContentNeedsTranslation(card.summary)
+      && !publicFactLooksLikeTemplateFallback(card.summary)
+    ) ? card.summary : card.translatedFact,
+    visibleFragment: (
+      card.visibleFragment
+      && !publicContentNeedsTranslation(card.visibleFragment)
+      && !publicFactLooksLikeTemplateFallback(card.visibleFragment)
+    ) ? card.visibleFragment : card.translatedFact,
+  }))
+  .filter(publicCandidateIsDisplayReady)
+  .filter(hasEnterpriseImplementationSignal)
+  .filter((card) => !isWeakSubject(card.subject));
+const enterpriseAiTransformation = buildEnterpriseAiTransformation(cards, [...enterpriseAiLensCandidates, ...corePoolCandidates], activeDate);
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {

@@ -340,8 +340,10 @@
         if (tags.includes("track-enterprise-workflow")) score += 24;
         if (tags.includes("customer-enterprise")) score += 18;
         if (tags.includes("evidence-customer-adoption")) score += 18;
+        if (/FDE|forward deployed|customer-embedded|domain operator|production environment|regulated payer workflow|implementation|workflow|deployment|rollout|customer adoption|business process|技术实施|客户嵌入|生产环境|业务流程|实施|部署|落地/iu.test(text)) score += 48;
         if (/enterprise|workflow|customer|deployment|procurement|governance|integration|automation|企业|流程|客户|部署|采购|治理|集成|自动化/iu.test(text)) score += 24;
         if (/cms|content management|red team|security testing|business workflow|内容管理|内容运营|红队|安全测试|业务流程/iu.test(text)) score += 16;
+        if (/world leaders|turn it off|G7|sovereign AI|national security|国家安全|峰会|领导人|关闭模型访问/iu.test(text)) score -= 80;
         if (/developer hub|cloud tpu|colab|xla|pytorch|kv cache|benchmark|wildchat|public chat|research|paper|dataset|开发者中心|数据集|研究|论文/iu.test(text)) score -= 34;
         if (/原文 AI 事件|该来源披露的是/u.test(text)) score -= 28;
         if (/report|guide|top\s+\d+|榜单|指南|报告|清单/iu.test(text)) score -= 18;
@@ -369,7 +371,15 @@
       });
     return candidates
       .filter((row) => row.score >= 36)
-      .filter((row) => /workflow|customer|deployment|adoption|procurement|cms|content management|red team|security testing|governance|compliance|agentic ai.*business|enterprise system|企业|流程|客户|部署|采用|采购|内容管理|内容运营|红队|安全测试|治理|合规|业务系统/iu.test(enterpriseLensText(row.card)))
+      .filter((row) => {
+        const text = enterpriseLensText(row.card);
+        if (/design partner|brand design|visual identity|launch sequence|设计伙伴|品牌设计|视觉识别/iu.test(text) && !/deployment|production|rollout|FDE|forward deployed|生产|部署|落地/iu.test(text)) return false;
+        if (!/\bAI\b|agentic|agents?|LLM|model|Claude|Bedrock|智能体|模型|人工智能/u.test(text)) return false;
+        const implementation = /FDE|forward deployed|customer-embedded|domain operator|production environment|regulated payer workflow|implementation|workflow|deployment|rollout|customer adoption|case study|business process|pilot|procurement|technical scoping|系统设计|客户嵌入|生产环境|生产上线|业务流程|实施|部署|落地|试点|采购|交付/iu.test(text);
+        const broadGovernance = /world leaders|turn it off|G7|sovereign AI|national security|国家安全|峰会|领导人|关闭模型访问/iu.test(text);
+        if (implementation && (!broadGovernance || /workflow|deployment|customer|production|business process|业务流程|部署|客户|生产/iu.test(text))) return true;
+        return /workflow|customer|deployment|adoption|procurement|cms|content management|red team|security testing|agentic ai.*business|enterprise system|企业|流程|客户|部署|采用|采购|内容管理|内容运营|红队|安全测试|业务系统/iu.test(text);
+      })
       .sort((a, b) => b.score - a.score || String(a.item.id).localeCompare(String(b.item.id)))
       .slice(0, 5)
       .map((row) => row.item);

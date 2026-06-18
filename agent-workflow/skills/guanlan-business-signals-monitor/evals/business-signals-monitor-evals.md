@@ -93,6 +93,13 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when public facts reject template filler such as `original source says`, `original AI event`, `specific AI business event`, `signal value is to observe`, or `need to continue verifying customer/product/business outcome`; cards cleaned down to no source-facing fact must be removed from the frontstage JSON before Top10 selection.
     - Fail when the unified Business frontstage gate blocks on generic source subjects, untranslated display titles, or navigation fragments after Raw / Pool / Card gates already passed.
 
+21. `enterprise_ai_fde_lens_precision`
+    - Pass when `enterpriseAiTransformation` prioritizes source-backed FDE / customer-embedded delivery / production deployment / workflow rollout / procurement / pilot / technical-scoping evidence over broad governance or geopolitical AI-access stories.
+    - Pass when each Enterprise AI / FDE lens item title is the original/source title translated directly into Chinese, using the same source-title boundary as Top10 and Core Pool candidate display.
+    - Pass when explicit FDE field notes with usable production-rollout evidence, such as a Claude-first healthcare FDE pod operating in a regulated payer workflow, can enter the Enterprise AI lens without becoming a fourth formal Signal Card type.
+    - Fail when a broad governance item outranks concrete FDE / implementation evidence only because it contains words such as enterprise, security, governance, or compliance.
+    - Fail when an FDE lens title is rewritten into a boss-facing summary instead of a literal source-title translation.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.
