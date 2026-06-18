@@ -83,6 +83,12 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when fallback title cleaning rejects public titles such as `案例：AI 进入...` or `信号：AI 进入...` and derives a traceable title from the source title or URL instead.
     - Fail when a generated case scenario title overwrites the source event title and later trips the source-first/title gate.
 
+20. `frontstage_display_field_hygiene`
+    - Pass when frontstage subjects name the company, product, customer, workflow, or policy actor rather than generic media/source labels such as `Arstechnica`, `Techcrunch`, or `Cfodive`.
+    - Pass when page navigation text such as `Back Start free trial`, `Contact Sales`, or language switcher blocks is rejected as public `translatedFact` and replaced by a source-title-derived fact.
+    - Pass when a partially translated English source title that still trips the translation heuristic is discarded in favor of the already generated Chinese card title, not forced into public display.
+    - Fail when the unified Business frontstage gate blocks on generic source subjects, untranslated display titles, or navigation fragments after Raw / Pool / Card gates already passed.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.

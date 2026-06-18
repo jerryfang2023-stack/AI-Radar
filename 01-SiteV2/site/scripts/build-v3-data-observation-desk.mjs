@@ -667,7 +667,7 @@ function isWeakSubject(value = "") {
   if (!clean || isDiscoveryLabel(clean)) return true;
   if (/^\d{4}$/u.test(clean)) return true;
   if (/^[a-z0-9.-]+\.(com|org|net|io|ai|dev|co)$/iu.test(clean)) return true;
-  if (/^(LinkedIn|Linkedin|TechCrunch|Techcrunch|The[-\s]Decoder|Marktechpost|Siliconangle|Instagram|Apple Podcasts)$/iu.test(clean)) return true;
+  if (/^(LinkedIn|Linkedin|TechCrunch|Techcrunch|Arstechnica|Ars Technica|The[-\s]Decoder|Marktechpost|Siliconangle|Instagram|Apple Podcasts)$/iu.test(clean)) return true;
   if (/^(Requests for Startups|Enterprise AI Execution Problem|The Information'?s TITV)$/iu.test(clean)) return true;
   if (/^(IT之家|Hacker News 热门|MarkTechPost|buzzing\.cc|Weekly Updated B2B Lead Database)/iu.test(clean)) return true;
   if (/^(IT早报|AI早报|早报|日报|周报)/iu.test(clean)) return true;
@@ -854,6 +854,15 @@ function publicContentNeedsTranslation(value = "") {
   return false;
 }
 
+function publicFactLooksLikeNavigation(value = "") {
+  const text = String(value || "").replace(/\s+/gu, " ").trim();
+  if (!text) return false;
+  return /\bBack Start free trial\b/iu.test(text)
+    || /\bPlatform Overview\b.*\bContact Sales\b/iu.test(text)
+    || /\bContact Sales\b.*\bLanguage English\b/iu.test(text)
+    || /\bSolutions Resources Partners Contact Sales\b/iu.test(text);
+}
+
 function publicTextLooksGarbled(value = "") {
   const text = String(value || "");
   const controlCount = text.match(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/gu)?.length || 0;
@@ -975,7 +984,7 @@ function publicTitleCandidate(title = "", sourceUrl = "") {
   const mappedTitle = frontstageChineseTitle(raw, sourceUrl);
   const candidate = mappedTitle || (hasCjk(raw) ? raw : sourceDerivedChineseTitleForEnglish(raw, sourceUrl));
   const cleaned = cleanBadPublicDisplayTitle(candidate);
-  if (cleaned && !isBadPublicDisplayTitle(cleaned)) return cleaned;
+  if (cleaned && !isBadPublicDisplayTitle(cleaned) && !publicTitleNeedsTranslation(cleaned)) return cleaned;
   if (!hasCjk(raw)) {
     const sourceFallback = cleanBadPublicDisplayTitle(sourceTitleFallbackForDisplay(raw, sourceUrl));
     if (sourceFallback && !isBadPublicDisplayTitle(sourceFallback)) return sourceFallback;
@@ -996,6 +1005,10 @@ function normalizeFrontstageDisplay(card = {}) {
   const originalTitle = card.originalTitle || (internalTitle !== card.title ? card.title : "");
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
   const displayTitle = publicDisplayTitle(sourceTitle, internalTitle, card.sourceUrl);
+  const replacementFact = sourceTitleDerivedFact(sourceTitle || originalTitle || displayTitle, card.sourceUrl);
+  const translatedFact = (publicContentNeedsTranslation(card.translatedFact) || publicFactLooksLikeNavigation(card.translatedFact))
+    ? (replacementFact || card.summary || card.translatedFact)
+    : card.translatedFact;
   return {
     ...card,
     title: displayTitle,
@@ -1004,6 +1017,7 @@ function normalizeFrontstageDisplay(card = {}) {
     originalTitle,
     sourceTitle,
     displayTitle,
+    translatedFact,
     subject: safeFrontstageSubject({
       subject: card.subject,
       sourceUrl: card.sourceUrl,
