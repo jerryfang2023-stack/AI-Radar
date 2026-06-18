@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T12:11:17.000Z"
-collected_at: 2026-06-18T03:06:53.296Z
+collected_at: 2026-06-18T06:02:59.637Z
 language: mixed
 full_text_hash: 47ba104332d000d7
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-114-qt-creator-20-开源跨平台-ide-发布-支持接入-ai-智能体.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Qt Creator 20 开源跨平台 IDE 发布，支持接入 AI 智能体","discovery_summary":"Qt Creator 20 开源跨平台 IDE 于 6 月 17 日发布，引入全新 ACP（Agent Client Protocol）框架，兼容 Claude Code、OpenAI Codex 等主流大语言模型和 AI 助手，以及其他支持 ACP 协议的 AI 服务。开发者可在应用内聊天面板直接与 AI 智能体交互。此前 Qt Creator 19 已引入 MCP 协议，本次更新进一步扩展 AI 生态。同时新增\"禅模式\"（Zen Mode），开启后使编辑器界面更沉浸，减少视觉干扰。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/639.htm","discovered_at":"2026-06-18T03:01:26.768Z","rank_on_page":263,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Qt Creator 20 开源跨平台 IDE 发布，支持接入 AI 智能体","discovery_summary":"Qt Creator 20 开源跨平台 IDE 于 6 月 17 日发布，引入全新 ACP（Agent Client Protocol）框架，兼容 Claude Code、OpenAI Codex 等主流大语言模型和 AI 助手，以及其他支持 ACP 协议的 AI 服务。开发者可在应用内聊天面板直接与 AI 智能体交互。此前 Qt Creator 19 已引入 MCP 协议，本次更新进一步扩展 AI 生态。同时新增\"禅模式\"（Zen Mode），开启后使编辑器界面更沉浸，减少视觉干扰。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/639.htm","discovered_at":"2026-06-18T05:58:08.890Z","rank_on_page":293,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 47ba104332d000d7
 semantic_hash: 2e9af2dc1ce51c8b
 duplicate_of: ""
 first_seen_at: "2026-06-17T12:11:17.000Z"
-last_seen_at: 2026-06-18T03:06:53.296Z
+last_seen_at: 2026-06-18T06:02:59.637Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -328,7 +328,7 @@ Win11之家
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Qt Creator 20 开源跨平台 IDE 发布，支持接入 AI 智能体","discovery_summary":"Qt Creator 20 开源跨平台 IDE 于 6 月 17 日发布，引入全新 ACP（Agent Client Protocol）框架，兼容 Claude Code、OpenAI Codex 等主流大语言模型和 AI 助手，以及其他支持 ACP 协议的 AI 服务。开发者可在应用内聊天面板直接与 AI 智能体交互。此前 Qt Creator 19 已引入 MCP 协议，本次更新进一步扩展 AI 生态。同时新增\"禅模式\"（Zen Mode），开启后使编辑器界面更沉浸，减少视觉干扰。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/639.htm","discovered_at":"2026-06-18T03:01:26.768Z","rank_on_page":263,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Qt Creator 20 开源跨平台 IDE 发布，支持接入 AI 智能体","discovery_summary":"Qt Creator 20 开源跨平台 IDE 于 6 月 17 日发布，引入全新 ACP（Agent Client Protocol）框架，兼容 Claude Code、OpenAI Codex 等主流大语言模型和 AI 助手，以及其他支持 ACP 协议的 AI 服务。开发者可在应用内聊天面板直接与 AI 智能体交互。此前 Qt Creator 19 已引入 MCP 协议，本次更新进一步扩展 AI 生态。同时新增\"禅模式\"（Zen Mode），开启后使编辑器界面更沉浸，减少视觉干扰。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/639.htm","discovered_at":"2026-06-18T05:58:08.890Z","rank_on_page":293,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

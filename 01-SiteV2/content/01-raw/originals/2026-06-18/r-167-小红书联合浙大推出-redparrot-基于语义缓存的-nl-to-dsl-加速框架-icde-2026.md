@@ -1,0 +1,194 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-167
+title: "小红书联合浙大推出 RedParrot：基于语义缓存的 NL-to-DSL 加速框架（ICDE 2026）"
+original_url: "https://mp.weixin.qq.com/s/6p4lJrXR8sqsLAcF1XzZCA"
+canonical_url: "https://mp.weixin.qq.com/s/6p4lJrXR8sqsLAcF1XzZCA"
+source_name: "公众号：小红书技术（dots.llm）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-17T09:59:00.000Z"
+collected_at: 2026-06-18T06:02:59.744Z
+language: mixed
+full_text_hash: 8e5d61fd095e0a6e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-167-小红书联合浙大推出-redparrot-基于语义缓存的-nl-to-dsl-加速框架-icde-2026.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-167-小红书联合浙大推出-redparrot-基于语义缓存的-nl-to-dsl-加速框架-icde-2026.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: summary-only-low-readable-body
+extraction_quality: failed
+extraction_method: "none"
+readability_score: 0
+extractor_diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"method":"none"}
+has_full_text: false
+content_length: 246
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["missing_full_text","discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8e5d61fd095e0a6e","missing":["missing_full_text"]}
+source_volatility: medium
+community_name: ""
+capture_scope: aihot_visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: discovery_only
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"小红书联合浙大推出 RedParrot：基于语义缓存的 NL-to-DSL 加速框架（ICDE 2026）","discovery_summary":"RedParrot 是一种面向企业级商业分析的 NL-to-DSL 加速框架，通过查询语义缓存、骨架匹配、实体无关表示学习和多源异构 RAG，将多阶段 LLM 工作流压缩为短链路生成。在小红书真实业务数据集上，平均实现 3.6x 推理加速，执行准确率提升 8.26%，表选择准确率达 85.99%；在开放基准 Spider-DSL 和 BIRD-DSL 上，准确率分别提升 29.9 和 39.7 个百分点。P90 延迟降低至约 21 秒。框架采用短链路与长链路双路径兜底，支持增量缓存更新。","source_name":"公众号：小红书技术（dots.llm）","origin_url":"https://mp.weixin.qq.com/s/6p4lJrXR8sqsLAcF1XzZCA","discovered_at":"2026-06-18T05:58:08.896Z","rank_on_page":319,"discovery_status":"discovered"}
+source_role: discovery_source
+origin_fetch_status: "summary_only"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: fbf832a66723a2ea
+content_hash: 8e5d61fd095e0a6e
+semantic_hash: d7c3e6ae5a97c0e5
+duplicate_of: ""
+first_seen_at: "2026-06-17T09:59:00.000Z"
+last_seen_at: 2026-06-18T06:02:59.744Z
+update_detected: false
+raw_status: ignored
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":2,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["公众号","小红书技术（dots.llm）"],"products":[],"people":[],"industries":["企业服务"],"roles":[],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":[],"numbers":["2026","3.6x","8.26%","85.99%","29.9","39.7","90","21"],"quotes":[]}
+evidence_seed: {"company_actions":["在小红书真实业务数据集上，平均实现 3."],"case_details":["框架采用短链路与长链路双路径兜底，支持增量缓存更新。"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有变化前后流程线索","没有可用全文快照"]
+key_excerpts: [{"type":"number","text":"RedParrot 是一种面向企业级商业分析的 NL-to-DSL 加速框架，通过查询语义缓存、骨架匹配、实体无关表示学习和多源异构 RAG，将多阶段 LLM 工作流压缩为短链路生成。在小红书真实业务数据集上，平均实现 3.6x 推理加速，执行准确率提升 8.26%，表选择准确率达 85.99%；在开放基准 Spider-DSL 和 BIRD-DSL 上，准确率分别提升 29.9 和 39.7 个百分点。P90 延迟降低至约 21 秒。框架采用短链路与长链路双路径兜底，支持增量缓存更新。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"RedParrot 是一种面向企业级商业分析的 NL-to-DSL 加速框架，通过查询语义缓存、骨架匹配、实体无关表示学习和多源异构 RAG，将多阶段 LLM 工作流压缩为短链路生成。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在小红书真实业务数据集上，平均实现 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"6x 推理加速，执行准确率提升 8.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"99%；在开放基准 Spider-DSL 和 BIRD-DSL 上，准确率分别提升 29.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"框架采用短链路与长链路双路径兜底，支持增量缓存更新。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# 小红书联合浙大推出 RedParrot：基于语义缓存的 NL-to-DSL 加速框架（ICDE 2026）
+
+## clean_text
+
+RedParrot 是一种面向企业级商业分析的 NL-to-DSL 加速框架，通过查询语义缓存、骨架匹配、实体无关表示学习和多源异构 RAG，将多阶段 LLM 工作流压缩为短链路生成。在小红书真实业务数据集上，平均实现 3.6x 推理加速，执行准确率提升 8.26%，表选择准确率达 85.99%；在开放基准 Spider-DSL 和 BIRD-DSL 上，准确率分别提升 29.9 和 39.7 个百分点。P90 延迟降低至约 21 秒。框架采用短链路与长链路双路径兜底，支持增量缓存更新。
+
+## full_text
+
+RedParrot 是一种面向企业级商业分析的 NL-to-DSL 加速框架，通过查询语义缓存、骨架匹配、实体无关表示学习和多源异构 RAG，将多阶段 LLM 工作流压缩为短链路生成。在小红书真实业务数据集上，平均实现 3.6x 推理加速，执行准确率提升 8.26%，表选择准确率达 85.99%；在开放基准 Spider-DSL 和 BIRD-DSL 上，准确率分别提升 29.9 和 39.7 个百分点。P90 延迟降低至约 21 秒。框架采用短链路与长链路双路径兜底，支持增量缓存更新。
+
+## extraction_diagnostics
+
+- extraction_method: none
+- readability_score: 0
+- fetch_status: summary-only-low-readable-body
+- extraction_quality: failed
+- diagnostics: {"readability_score":0,"text_length":0,"paragraph_count":0,"sentence_count":0,"boilerplate_hits":0,"symbol_ratio":1,"method":"none"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   RedParrot 是一种面向企业级商业分析的 NL-to-DSL 加速框架，通过查询语义缓存、骨架匹配、实体无关表示学习和多源异构 RAG，将多阶段 LLM 工作流压缩为短链路生成。在小红书真实业务数据集上，平均实现 3.6x 推理加速，执行准确率提升 8.26%，表选择准确率达 85.99%；在开放基准 Spider-DSL 和 BIRD-DSL 上，准确率分别提升 29.9 和 39.7 个百分点。P90 延迟降低至约 21 秒。框架采用短链路与长链路双路径兜底，支持增量缓存更新。
+
+2. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   RedParrot 是一种面向企业级商业分析的 NL-to-DSL 加速框架，通过查询语义缓存、骨架匹配、实体无关表示学习和多源异构 RAG，将多阶段 LLM 工作流压缩为短链路生成。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   在小红书真实业务数据集上，平均实现 3.
+
+4. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   6x 推理加速，执行准确率提升 8.
+
+5. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   99%；在开放基准 Spider-DSL 和 BIRD-DSL 上，准确率分别提升 29.
+
+6. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=medium
+   框架采用短链路与长链路双路径兜底，支持增量缓存更新。
+
+## business_elements
+
+- companies: 公众号, 小红书技术（dots.llm）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: 暂无公开信息
+- numbers: 2026, 3.6x, 8.26%, 85.99%, 29.9, 39.7, 90, 21
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 在小红书真实业务数据集上，平均实现 3.
+- case_details: 框架采用短链路与长链路双路径兜底，支持增量缓存更新。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 2
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: true
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有变化前后流程线索
+- 没有可用全文快照
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: aihot_visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: discovery_only
+- discovery_source: AI HOT
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- discovery_record: {"discovery_title":"小红书联合浙大推出 RedParrot：基于语义缓存的 NL-to-DSL 加速框架（ICDE 2026）","discovery_summary":"RedParrot 是一种面向企业级商业分析的 NL-to-DSL 加速框架，通过查询语义缓存、骨架匹配、实体无关表示学习和多源异构 RAG，将多阶段 LLM 工作流压缩为短链路生成。在小红书真实业务数据集上，平均实现 3.6x 推理加速，执行准确率提升 8.26%，表选择准确率达 85.99%；在开放基准 Spider-DSL 和 BIRD-DSL 上，准确率分别提升 29.9 和 39.7 个百分点。P90 延迟降低至约 21 秒。框架采用短链路与长链路双路径兜底，支持增量缓存更新。","source_name":"公众号：小红书技术（dots.llm）","origin_url":"https://mp.weixin.qq.com/s/6p4lJrXR8sqsLAcF1XzZCA","discovered_at":"2026-06-18T05:58:08.896Z","rank_on_page":319,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+RedParrot 是一种面向企业级商业分析的 NL-to-DSL 加速框架，通过查询语义缓存、骨架匹配、实体无关表示学习和多源异构 RAG，将多阶段 LLM 工作流压缩为短链路生成。在小红书真实业务数据集上，平均实现 3.6x 推理加速，执行准确率提升 8.26%，表选择准确率达 85.99%；在开放基准 Spider-DSL 和 BIRD-DSL 上，准确率分别提升 29.9 和 39.7 个百分点。P90 延迟降低至约 21 秒。框架采用短链路与长链路双路径兜底，支持增量缓存更新。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

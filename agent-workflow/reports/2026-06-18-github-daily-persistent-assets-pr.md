@@ -1,14 +1,14 @@
 # GitHub Business Signals PR
 
 - date: 2026-06-18
-- generated_at: 2026-06-18T11:01:23+08:00
+- generated_at: 2026-06-18T13:58:04+08:00
 - mode: business_signals_pr
 - trigger: workflow_dispatch
 - schedule: 08:57 Asia/Shanghai primary; 09:27 conditional health dispatch; Hermes Business Signals handoff at 09:45 / 09:55
 - business_signal_skip: false
 - business_signal_skip_reason: not_applicable
 - existing_automation_branch: false
-- existing_signal_card_count: 0
+- existing_signal_card_count: 22
 - anysearch_secret: configured
 - tavily_secret: disabled
 - exa_secret: configured

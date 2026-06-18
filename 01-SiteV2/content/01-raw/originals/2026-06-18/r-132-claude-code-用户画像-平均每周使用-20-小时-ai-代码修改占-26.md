@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T07:16:18.000Z"
-collected_at: 2026-06-18T03:06:53.346Z
+collected_at: 2026-06-18T06:02:59.692Z
 language: mixed
 full_text_hash: 8eef2754ed6362f2
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-132-claude-code-用户画像-平均每周使用-20-小时-ai-代码修改占-26.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: supporting_evidence
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Claude Code 用户画像：平均每周使用 20 小时，AI 代码修改占 26%","discovery_summary":"Anthropic 6月16日发布博文，分析2025年10月至2026年4月约23.5万用户的40万次Claude Code会话。用户平均每周使用20小时，其中代码修改占26%，代码编写占25%，合计超半数。典型会话中人类负责约70%规划决策，Claude完成约80%执行决策。新手（1级）每次提示产生约5个操作和600个单词输出，专家（5级）产生2倍操作和5倍输出（约3200个单词）。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/428.htm","discovered_at":"2026-06-18T03:01:26.779Z","rank_on_page":315,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Claude Code 用户画像：平均每周使用 20 小时，AI 代码修改占 26%","discovery_summary":"Anthropic 6月16日发布博文，分析2025年10月至2026年4月约23.5万用户的40万次Claude Code会话。用户平均每周使用20小时，其中代码修改占26%，代码编写占25%，合计超半数。典型会话中人类负责约70%规划决策，Claude完成约80%执行决策。新手（1级）每次提示产生约5个操作和600个单词输出，专家（5级）产生2倍操作和5倍输出（约3200个单词）。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/428.htm","discovered_at":"2026-06-18T05:58:08.902Z","rank_on_page":345,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 8eef2754ed6362f2
 semantic_hash: 3f25d85e88c56c2e
 duplicate_of: ""
 first_seen_at: "2026-06-17T07:16:18.000Z"
-last_seen_at: 2026-06-18T03:06:53.346Z
+last_seen_at: 2026-06-18T06:02:59.692Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -202,7 +202,7 @@ Agentic coding and persistent returns to expertise
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Claude Code 用户画像：平均每周使用 20 小时，AI 代码修改占 26%","discovery_summary":"Anthropic 6月16日发布博文，分析2025年10月至2026年4月约23.5万用户的40万次Claude Code会话。用户平均每周使用20小时，其中代码修改占26%，代码编写占25%，合计超半数。典型会话中人类负责约70%规划决策，Claude完成约80%执行决策。新手（1级）每次提示产生约5个操作和600个单词输出，专家（5级）产生2倍操作和5倍输出（约3200个单词）。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/428.htm","discovered_at":"2026-06-18T03:01:26.779Z","rank_on_page":315,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Claude Code 用户画像：平均每周使用 20 小时，AI 代码修改占 26%","discovery_summary":"Anthropic 6月16日发布博文，分析2025年10月至2026年4月约23.5万用户的40万次Claude Code会话。用户平均每周使用20小时，其中代码修改占26%，代码编写占25%，合计超半数。典型会话中人类负责约70%规划决策，Claude完成约80%执行决策。新手（1级）每次提示产生约5个操作和600个单词输出，专家（5级）产生2倍操作和5倍输出（约3200个单词）。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/428.htm","discovered_at":"2026-06-18T05:58:08.902Z","rank_on_page":345,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

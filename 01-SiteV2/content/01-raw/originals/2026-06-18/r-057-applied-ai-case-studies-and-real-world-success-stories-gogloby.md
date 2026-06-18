@@ -20,7 +20,7 @@ search_path: "industry_landing"
 search_path_label: "行业落地路径"
 author: ""
 published_at: ""
-collected_at: 2026-06-18T03:06:53.059Z
+collected_at: 2026-06-18T06:02:59.376Z
 language: mixed
 full_text_hash: f5e5c799b82db41d
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-057-applied-ai-case-studies-and-real-world-success-stories-gogloby.md"
@@ -50,13 +50,13 @@ source_role: resolved_original_source
 origin_fetch_status: ""
 paywall_status: none
 block_status: none
-duplicate_status: merged_provider_duplicates
+duplicate_status: unique
 url_hash: 4ce9b52e0681c246
 content_hash: eaf6f32f11df84e1
 semantic_hash: 1d1b17fa4d7d2a7b
-duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
-first_seen_at: "2026-06-18T03:06:53.059Z"
-last_seen_at: 2026-06-18T03:06:53.059Z
+duplicate_of: ""
+first_seen_at: "2026-06-18T06:02:59.376Z"
+last_seen_at: 2026-06-18T06:02:59.376Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}

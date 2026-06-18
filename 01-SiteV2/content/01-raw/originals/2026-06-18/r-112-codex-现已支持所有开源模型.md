@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T09:43:41.000Z"
-collected_at: 2026-06-18T03:06:53.293Z
+collected_at: 2026-06-18T06:02:59.633Z
 language: mixed
-full_text_hash: f6e1d2f09b18a190
+full_text_hash: 8ed20476c98d3118
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-112-codex-现已支持所有开源模型.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-112-codex-现已支持所有开源模型.json"
 html_snapshot_path: ""
@@ -30,33 +30,33 @@ screenshot_path: ""
 fetch_status: fetched-readable-text-main
 extraction_quality: medium
 extraction_method: "main"
-readability_score: 55
-extractor_diagnostics: {"readability_score":55,"text_length":2198,"paragraph_count":8,"sentence_count":3,"boilerplate_hits":1,"symbol_ratio":0.0314,"method":"main"}
+readability_score: 53
+extractor_diagnostics: {"readability_score":53,"text_length":2192,"paragraph_count":8,"sentence_count":2,"boilerplate_hits":1,"symbol_ratio":0.0315,"method":"main"}
 has_full_text: true
-content_length: 2198
+content_length: 2192
 fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f6e1d2f09b18a190","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8ed20476c98d3118","missing":[]}
 source_volatility: high
 community_name: "X：Tibo (@thsottiaux)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Codex 现已支持所有开源模型","discovery_summary":"提醒一下，你可以使用 Codex App、CLI 和 SDK 搭配任何开源模型，不仅仅限于 OpenAI 模型。","source_name":"X：Tibo (@thsottiaux)","origin_url":"https://x.com/thsottiaux/status/2067181377028538431","discovered_at":"2026-06-18T03:01:26.774Z","rank_on_page":293,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Codex 现已支持所有开源模型","discovery_summary":"提醒一下，你可以使用 Codex App、CLI 和 SDK 搭配任何开源模型，不仅仅限于 OpenAI 模型。","source_name":"X：Tibo (@thsottiaux)","origin_url":"https://x.com/thsottiaux/status/2067181377028538431","discovered_at":"2026-06-18T05:58:08.897Z","rank_on_page":323,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: cd321d4860bacb04
-content_hash: f6e1d2f09b18a190
-semantic_hash: a446a8901e0b02aa
+content_hash: 8ed20476c98d3118
+semantic_hash: 721bba633fdc6f0e
 duplicate_of: ""
 first_seen_at: "2026-06-17T09:43:41.000Z"
-last_seen_at: 2026-06-18T03:06:53.293Z
+last_seen_at: 2026-06-18T06:02:59.633Z
 update_detected: false
 raw_status: candidate
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
@@ -65,10 +65,10 @@ change_action_detected: true
 evidence_eligibility: eligible
 evidence_block_reason: ""
 guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
-business_elements: {"companies":["X","Tibo (@thsottiaux)","OpenAI"],"products":["Codex"],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["9","43","17","2026","1.3M","1","0.25","2"],"quotes":[]}
+business_elements: {"companies":["X","Tibo (@thsottiaux)","OpenAI"],"products":["Codex"],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["9","43","17","2026","1.5M","1","0.25","2"],"quotes":[]}
 evidence_seed: {"company_actions":["提醒一下，你可以使用 Codex App、CLI 和 SDK 搭配任何开源模型，不仅仅限于 OpenAI 模型。","Post Log in Sign up Post Tibo @thsottiaux Reminder that you can use the Codex App, CLI and SDK with any open source model, not just with OpenAI models.","Advanced Configuration – Codex | OpenAI Developers From developers."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
 missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
-key_excerpts: [{"type":"company_action","text":"提醒一下，你可以使用 Codex App、CLI 和 SDK 搭配任何开源模型，不仅仅限于 OpenAI 模型。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Post Log in Sign up Post Tibo @thsottiaux Reminder that you can use the Codex App, CLI and SDK with any open source model, not just with OpenAI models.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Advanced Configuration – Codex | OpenAI Developers From developers.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"com 9:43 AM · Jun 17, 2026 1.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"3M Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+key_excerpts: [{"type":"company_action","text":"提醒一下，你可以使用 Codex App、CLI 和 SDK 搭配任何开源模型，不仅仅限于 OpenAI 模型。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Post Log in Sign up Post Tibo @thsottiaux Reminder that you can use the Codex App, CLI and SDK with any open source model, not just with OpenAI models.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Advanced Configuration – Codex | OpenAI Developers From developers.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"com 9:43 AM · Jun 17, 2026 1.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"5M Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
@@ -86,12 +86,12 @@ Tibo
 Reminder that you can use the Codex App, CLI and SDK with any open source model, not just with OpenAI models.
 Advanced Configuration – Codex | OpenAI Developers
 From developers.openai.com
-9:43 AM · Jun 17, 2026 1.3M Views
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 0 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 407
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 5 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 555
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 . 8 K :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5.8K
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 . 1 K :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3.1K
-Read 407 replies
+9:43 AM · Jun 17, 2026 1.5M Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 2 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 426
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 0 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 602
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 K :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 6K
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 . 2 K :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3.2K
+Read 426 replies
 
 ## full_text
 
@@ -103,20 +103,20 @@ Tibo
 Reminder that you can use the Codex App, CLI and SDK with any open source model, not just with OpenAI models.
 Advanced Configuration – Codex | OpenAI Developers
 From developers.openai.com
-9:43 AM · Jun 17, 2026 1.3M Views
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 0 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 407
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 5 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 555
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 . 8 K :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5.8K
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 . 1 K :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3.1K
-Read 407 replies
+9:43 AM · Jun 17, 2026 1.5M Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 2 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 426
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 0 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 602
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 K :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 6K
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 . 2 K :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3.2K
+Read 426 replies
 
 ## extraction_diagnostics
 
 - extraction_method: main
-- readability_score: 55
+- readability_score: 53
 - fetch_status: fetched-readable-text-main
 - extraction_quality: medium
-- diagnostics: {"readability_score":55,"text_length":2198,"paragraph_count":8,"sentence_count":3,"boilerplate_hits":1,"symbol_ratio":0.0314,"method":"main"}
+- diagnostics: {"readability_score":53,"text_length":2192,"paragraph_count":8,"sentence_count":2,"boilerplate_hits":1,"symbol_ratio":0.0315,"method":"main"}
 
 ## markdown_snapshot
 
@@ -137,7 +137,7 @@ Read 407 replies
    com 9:43 AM · Jun 17, 2026 1.
 
 5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
-   3M Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.
+   5M Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.
 
 6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
    digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.
@@ -152,7 +152,7 @@ Read 407 replies
 - workflows: 暂无公开信息
 - business_actions: 暂无公开信息
 - affected_departments: IT / 安全
-- numbers: 9, 43, 17, 2026, 1.3M, 1, 0.25, 2
+- numbers: 9, 43, 17, 2026, 1.5M, 1, 0.25, 2
 - quotes: 暂无公开信息
 
 ## evidence_seed
@@ -211,7 +211,7 @@ Read 407 replies
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Codex 现已支持所有开源模型","discovery_summary":"提醒一下，你可以使用 Codex App、CLI 和 SDK 搭配任何开源模型，不仅仅限于 OpenAI 模型。","source_name":"X：Tibo (@thsottiaux)","origin_url":"https://x.com/thsottiaux/status/2067181377028538431","discovered_at":"2026-06-18T03:01:26.774Z","rank_on_page":293,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Codex 现已支持所有开源模型","discovery_summary":"提醒一下，你可以使用 Codex App、CLI 和 SDK 搭配任何开源模型，不仅仅限于 OpenAI 模型。","source_name":"X：Tibo (@thsottiaux)","origin_url":"https://x.com/thsottiaux/status/2067181377028538431","discovered_at":"2026-06-18T05:58:08.897Z","rank_on_page":323,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

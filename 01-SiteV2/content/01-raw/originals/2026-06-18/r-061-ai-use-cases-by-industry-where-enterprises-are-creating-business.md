@@ -20,7 +20,7 @@ search_path: "industry_landing"
 search_path_label: "行业落地路径"
 author: ""
 published_at: ""
-collected_at: 2026-06-18T03:06:53.082Z
+collected_at: 2026-06-18T06:02:59.404Z
 language: mixed
 full_text_hash: d495c16c94dd9041
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-061-ai-use-cases-by-industry-where-enterprises-are-creating-business.md"
@@ -55,10 +55,10 @@ url_hash: 013d891f4e8e4b3e
 content_hash: d495c16c94dd9041
 semantic_hash: 82cc5cf603eb024c
 duplicate_of: ""
-first_seen_at: "2026-06-18T03:06:53.082Z"
-last_seen_at: 2026-06-18T03:06:53.082Z
+first_seen_at: "2026-06-18T06:02:59.404Z"
+last_seen_at: 2026-06-18T06:02:59.404Z
 update_detected: false
-raw_status: pooled
+raw_status: candidate
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
 pool_routes: ["watchlist"]
 change_action_detected: true

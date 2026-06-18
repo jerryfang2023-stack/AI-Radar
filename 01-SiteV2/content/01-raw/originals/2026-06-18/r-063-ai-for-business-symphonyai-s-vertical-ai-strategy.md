@@ -20,7 +20,7 @@ search_path: "industry_landing"
 search_path_label: "行业落地路径"
 author: ""
 published_at: ""
-collected_at: 2026-06-18T03:06:53.094Z
+collected_at: 2026-06-18T06:02:59.416Z
 language: mixed
 full_text_hash: 1743d0e9cc86fd7d
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-063-ai-for-business-symphonyai-s-vertical-ai-strategy.md"
@@ -55,8 +55,8 @@ url_hash: 151a2e97802de5fd
 content_hash: 1743d0e9cc86fd7d
 semantic_hash: 0011f484e46aad0e
 duplicate_of: ""
-first_seen_at: "2026-06-18T03:06:53.094Z"
-last_seen_at: 2026-06-18T03:06:53.094Z
+first_seen_at: "2026-06-18T06:02:59.416Z"
+last_seen_at: 2026-06-18T06:02:59.416Z
 update_detected: false
 raw_status: candidate
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}

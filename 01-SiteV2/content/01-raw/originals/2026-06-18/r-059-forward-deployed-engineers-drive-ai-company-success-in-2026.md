@@ -20,7 +20,7 @@ search_path: "industry_landing"
 search_path_label: "行业落地路径"
 author: ""
 published_at: ""
-collected_at: 2026-06-18T03:06:53.075Z
+collected_at: 2026-06-18T06:02:59.395Z
 language: mixed
 full_text_hash: 104123726a5fc0ea
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-059-forward-deployed-engineers-drive-ai-company-success-in-2026.md"
@@ -55,8 +55,8 @@ url_hash: db9048158bce66e0
 content_hash: 104123726a5fc0ea
 semantic_hash: 9d963543fc87e5b8
 duplicate_of: ""
-first_seen_at: "2026-06-18T03:06:53.075Z"
-last_seen_at: 2026-06-18T03:06:53.075Z
+first_seen_at: "2026-06-18T06:02:59.395Z"
+last_seen_at: 2026-06-18T06:02:59.395Z
 update_detected: false
 raw_status: candidate
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}

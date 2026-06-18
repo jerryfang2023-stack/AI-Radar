@@ -20,7 +20,7 @@ search_path: "developer_ecosystem"
 search_path_label: "开发生态路径"
 author: ""
 published_at: ""
-collected_at: 2026-06-18T03:06:53.152Z
+collected_at: 2026-06-18T06:02:59.473Z
 language: mixed
 full_text_hash: a77b1e36a780aee8
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-073-governed-ai-agents-how-to-deploy-and-scale-with-confidence.md"
@@ -55,8 +55,8 @@ url_hash: 7351afd58ddedfea
 content_hash: a77b1e36a780aee8
 semantic_hash: baffb19240091718
 duplicate_of: ""
-first_seen_at: "2026-06-18T03:06:53.152Z"
-last_seen_at: 2026-06-18T03:06:53.152Z
+first_seen_at: "2026-06-18T06:02:59.473Z"
+last_seen_at: 2026-06-18T06:02:59.473Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}

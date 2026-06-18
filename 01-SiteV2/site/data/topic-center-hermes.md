@@ -2,54 +2,53 @@
 
 - version: V2.2.2-source-title
 - read_mode: all_topics
-- topic_count: 43
+- topic_count: 42
 - json: 01-SiteV2/site/data/topic-center-hermes.json
 
 | Rank | Date | Score | Type | Topic | Boss Pain | Money Line | Action |
 |---:|---|---:|---|---|---|---|---|
 | 1 | 2026-06-18 | 97 | 漏钱型 | 谷歌发布Agentic Resource Discovery（ARD）开放规范 | 老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。 | 先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。 | 今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。 |
-| 2 | 2026-06-18 | 97 | 小岗位型 | 博客现状，2026年中 | 老板最怕 AI 项目太大、太贵、太慢，最后没人用。 | 一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。 | 先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。 |
+| 2 | 2026-06-18 | 97 | 小岗位型 | GoGloby 汇总应用 AI 案例与真实业务成效 | 老板最怕 AI 项目太大、太贵、太慢，最后没人用。 | 一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。 | 先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。 |
 | 3 | 2026-06-18 | 95 | 反常识型 | XDOF获7000万美元融资，构建机器人训练数据基础设施 | 工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。 | 工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。 | 今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。 |
-| 4 | 2026-06-18 | 93 | 大小对照型 | 世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元 | 老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。 | 大公司赚基础设施的钱，小服务商赚落地第一公里的钱。 | 把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。 |
+| 4 | 2026-06-18 | 93 | 大小对照型 | Willow 获得$7M 融资，押注销售线索和收入团队协作 | 老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。 | 大公司赚基础设施的钱，小服务商赚落地第一公里的钱。 | 把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。 |
 | 5 | 2026-06-18 | 92 | 人物故事型 | 【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目 | 老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。 | 一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。 | 从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。 |
 | 6 | 2026-06-18 | 91 | 同行压力型 | 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 | 当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。 | 同行压力真正影响的是获客成本、内容成本和试错周期，而不是老板的技术焦虑。 | 每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？ |
-| 7 | 2026-06-18 | 90 | 省人型 | 智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆 | 人越招越多，流程没有变短，管理成本反而被重复动作拖住。 | 少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。 | 选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。 |
-| 8 | 2026-06-18 | 88 | 避坑型 | Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制下线 | AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。 | 权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。 | 先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。 |
-| 9 | 2026-06-17 | 97 | 漏钱型 | 从像素到规划：Google Research 发布 Vectorized Farmscapes 2020 数据集 | 老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。 | 先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。 | 今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。 |
-| 10 | 2026-06-17 | 97 | 小岗位型 | 欧盟委员会发布《AI内容标注行为守则》 | 老板最怕 AI 项目太大、太贵、太慢，最后没人用。 | 一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。 | 先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。 |
-| 11 | 2026-06-17 | 95 | 反常识型 | TPU Developer Hub 正式发布：助力开发者解锁 Google Cloud TPU 全部性能 | 工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。 | 工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。 | 今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。 |
-| 12 | 2026-06-17 | 93 | 大小对照型 | Stakes Conversations 融资 $100M | 老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。 | 大公司赚基础设施的钱，小服务商赚落地第一公里的钱。 | 把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。 |
-| 13 | 2026-06-17 | 92 | 人物故事型 | 普通人怎么赚到1000万？ | 老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。 | 一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。 | 从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。 |
-| 14 | 2026-06-17 | 91 | 同行压力型 | 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 | 当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。 | 同行压力真正影响的是获客成本、内容成本和试错周期，而不是老板的技术焦虑。 | 每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？ |
-| 15 | 2026-06-17 | 90 | 省人型 | AI赋能CMS平台如何变革企业内容运营 | 人越招越多，流程没有变短，管理成本反而被重复动作拖住。 | 少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。 | 选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。 |
-| 16 | 2026-06-17 | 88 | 避坑型 | 爱沙尼亚语言研究所发布基准测试：衡量AI模型对俄罗斯宣传的易感性 | AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。 | 权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。 | 先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。 |
-| 17 | 2026-06-16 | 97 | 漏钱型 | Salesforce：Agentforce Customer Stories - Salesforce | 老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。 | 先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。 | 今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。 |
-| 18 | 2026-06-16 | 97 | 小岗位型 | Salesforce以36亿美元收购AI客服平台Fin | 老板最怕 AI 项目太大、太贵、太慢，最后没人用。 | 一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。 | 先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。 |
-| 19 | 2026-06-16 | 95 | 反常识型 | 美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼 | 工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。 | 工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。 | 今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。 |
-| 20 | 2026-06-16 | 93 | 大小对照型 | Blitzy 融资 $200M | 老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。 | 大公司赚基础设施的钱，小服务商赚落地第一公里的钱。 | 把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。 |
-| 21 | 2026-06-16 | 92 | 人物故事型 | 普通人怎么赚到1000万？ | 老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。 | 一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。 | 从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。 |
-| 22 | 2026-06-16 | 91 | 同行压力型 | 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 | 当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。 | 同行压力真正影响的是获客成本、内容成本和试错周期，而不是老板的技术焦虑。 | 每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？ |
-| 23 | 2026-06-16 | 88 | 避坑型 | 伯克利RDI发布Agents' Last Exam基准 | AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。 | 权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。 | 先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。 |
-| 24 | 2026-06-15 | 97 | 漏钱型 | Google 如何用 AI 重塑搜索 | 老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。 | 先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。 | 今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。 |
-| 25 | 2026-06-15 | 97 | 小岗位型 | Rocket Close 用 Agentic AI 优化产权运营：AWS 实践案例 | 老板最怕 AI 项目太大、太贵、太慢，最后没人用。 | 一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。 | 先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。 |
-| 26 | 2026-06-15 | 93 | 大小对照型 | Willow 融资 $7M | 老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。 | 大公司赚基础设施的钱，小服务商赚落地第一公里的钱。 | 把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。 |
-| 27 | 2026-06-15 | 92 | 人物故事型 | 普通人怎么赚到1000万？ | 老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。 | 一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。 | 从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。 |
-| 28 | 2026-06-15 | 91 | 同行压力型 | 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 | 当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。 | 同行压力真正影响的是获客成本、内容成本和试错周期，而不是老板的技术焦虑。 | 每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？ |
-| 29 | 2026-06-15 | 90 | 省人型 | Rippling 用 Deep Agents 和 LangSmith 在 6 个月内全面落地 AI | 人越招越多，流程没有变短，管理成本反而被重复动作拖住。 | 少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。 | 选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。 |
-| 30 | 2026-06-15 | 88 | 避坑型 | AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单 | AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。 | 权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。 | 先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。 |
-| 31 | 2026-06-14 | 97 | 漏钱型 | Google Research 的 Gemini-SQL2 在 text-to-SQL 基准测试中以大幅优势领先 | 老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。 | 先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。 | 今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。 |
-| 32 | 2026-06-14 | 97 | 小岗位型 | 毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实 | 老板最怕 AI 项目太大、太贵、太慢，最后没人用。 | 一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。 | 先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。 |
-| 33 | 2026-06-14 | 95 | 反常识型 | MindStudio：用 AI Agent 构建地产开发与建筑设计 SaaS 产品 | 工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。 | 工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。 | 今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。 |
-| 34 | 2026-06-14 | 93 | 大小对照型 | Jedify 获得$24M 融资，押注销售线索和收入团队协作 | 老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。 | 大公司赚基础设施的钱，小服务商赚落地第一公里的钱。 | 把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。 |
-| 35 | 2026-06-14 | 92 | 人物故事型 | 普通人怎么赚到1000万？ | 老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。 | 一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。 | 从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。 |
-| 36 | 2026-06-14 | 91 | 同行压力型 | 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 | 当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。 | 同行压力真正影响的是获客成本、内容成本和试错周期，而不是老板的技术焦虑。 | 每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？ |
-| 37 | 2026-06-14 | 90 | 省人型 | Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点 | 人越招越多，流程没有变短，管理成本反而被重复动作拖住。 | 少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。 | 选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。 |
-| 38 | 2026-06-13 | 97 | 漏钱型 | TCS与Anthropic合作，将Claude引入受监管行业 | 老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。 | 先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。 | 今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。 |
-| 39 | 2026-06-13 | 95 | 反常识型 | olmo-eval：面向模型开发循环的评估工作台 | 工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。 | 工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。 | 今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。 |
-| 40 | 2026-06-13 | 93 | 大小对照型 | Mem0 融资 $24M | 老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。 | 大公司赚基础设施的钱，小服务商赚落地第一公里的钱。 | 把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。 |
-| 41 | 2026-06-13 | 92 | 人物故事型 | 普通人怎么赚到1000万？ | 老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。 | 一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。 | 从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。 |
-| 42 | 2026-06-13 | 91 | 同行压力型 | 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 | 当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。 | 同行压力真正影响的是获客成本、内容成本和试错周期，而不是老板的技术焦虑。 | 每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？ |
-| 43 | 2026-06-13 | 88 | 避坑型 | Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业 | AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。 | 权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。 | 先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。 |
+| 7 | 2026-06-18 | 88 | 避坑型 | Boomi 讨论受治理 AI Agent 的部署与规模化 | AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。 | 权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。 | 先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。 |
+| 8 | 2026-06-17 | 97 | 漏钱型 | 从像素到规划：Google Research 发布 Vectorized Farmscapes 2020 数据集 | 老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。 | 先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。 | 今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。 |
+| 9 | 2026-06-17 | 97 | 小岗位型 | 欧盟委员会发布《AI内容标注行为守则》 | 老板最怕 AI 项目太大、太贵、太慢，最后没人用。 | 一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。 | 先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。 |
+| 10 | 2026-06-17 | 95 | 反常识型 | TPU Developer Hub 正式发布：助力开发者解锁 Google Cloud TPU 全部性能 | 工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。 | 工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。 | 今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。 |
+| 11 | 2026-06-17 | 93 | 大小对照型 | Stakes Conversations 融资 $100M | 老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。 | 大公司赚基础设施的钱，小服务商赚落地第一公里的钱。 | 把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。 |
+| 12 | 2026-06-17 | 92 | 人物故事型 | 普通人怎么赚到1000万？ | 老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。 | 一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。 | 从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。 |
+| 13 | 2026-06-17 | 91 | 同行压力型 | 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 | 当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。 | 同行压力真正影响的是获客成本、内容成本和试错周期，而不是老板的技术焦虑。 | 每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？ |
+| 14 | 2026-06-17 | 90 | 省人型 | AI赋能CMS平台如何变革企业内容运营 | 人越招越多，流程没有变短，管理成本反而被重复动作拖住。 | 少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。 | 选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。 |
+| 15 | 2026-06-17 | 88 | 避坑型 | 爱沙尼亚语言研究所发布基准测试：衡量AI模型对俄罗斯宣传的易感性 | AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。 | 权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。 | 先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。 |
+| 16 | 2026-06-16 | 97 | 漏钱型 | Salesforce：Agentforce Customer Stories - Salesforce | 老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。 | 先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。 | 今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。 |
+| 17 | 2026-06-16 | 97 | 小岗位型 | Salesforce以36亿美元收购AI客服平台Fin | 老板最怕 AI 项目太大、太贵、太慢，最后没人用。 | 一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。 | 先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。 |
+| 18 | 2026-06-16 | 95 | 反常识型 | 美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼 | 工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。 | 工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。 | 今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。 |
+| 19 | 2026-06-16 | 93 | 大小对照型 | Blitzy 融资 $200M | 老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。 | 大公司赚基础设施的钱，小服务商赚落地第一公里的钱。 | 把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。 |
+| 20 | 2026-06-16 | 92 | 人物故事型 | 普通人怎么赚到1000万？ | 老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。 | 一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。 | 从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。 |
+| 21 | 2026-06-16 | 91 | 同行压力型 | 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 | 当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。 | 同行压力真正影响的是获客成本、内容成本和试错周期，而不是老板的技术焦虑。 | 每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？ |
+| 22 | 2026-06-16 | 88 | 避坑型 | 伯克利RDI发布Agents' Last Exam基准 | AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。 | 权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。 | 先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。 |
+| 23 | 2026-06-15 | 97 | 漏钱型 | Google 如何用 AI 重塑搜索 | 老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。 | 先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。 | 今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。 |
+| 24 | 2026-06-15 | 97 | 小岗位型 | Rocket Close 用 Agentic AI 优化产权运营：AWS 实践案例 | 老板最怕 AI 项目太大、太贵、太慢，最后没人用。 | 一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。 | 先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。 |
+| 25 | 2026-06-15 | 93 | 大小对照型 | Willow 融资 $7M | 老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。 | 大公司赚基础设施的钱，小服务商赚落地第一公里的钱。 | 把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。 |
+| 26 | 2026-06-15 | 92 | 人物故事型 | 普通人怎么赚到1000万？ | 老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。 | 一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。 | 从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。 |
+| 27 | 2026-06-15 | 91 | 同行压力型 | 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 | 当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。 | 同行压力真正影响的是获客成本、内容成本和试错周期，而不是老板的技术焦虑。 | 每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？ |
+| 28 | 2026-06-15 | 90 | 省人型 | Rippling 用 Deep Agents 和 LangSmith 在 6 个月内全面落地 AI | 人越招越多，流程没有变短，管理成本反而被重复动作拖住。 | 少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。 | 选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。 |
+| 29 | 2026-06-15 | 88 | 避坑型 | AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单 | AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。 | 权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。 | 先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。 |
+| 30 | 2026-06-14 | 97 | 漏钱型 | Google Research 的 Gemini-SQL2 在 text-to-SQL 基准测试中以大幅优势领先 | 老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。 | 先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。 | 今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。 |
+| 31 | 2026-06-14 | 97 | 小岗位型 | 毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实 | 老板最怕 AI 项目太大、太贵、太慢，最后没人用。 | 一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。 | 先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。 |
+| 32 | 2026-06-14 | 95 | 反常识型 | MindStudio：用 AI Agent 构建地产开发与建筑设计 SaaS 产品 | 工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。 | 工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。 | 今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。 |
+| 33 | 2026-06-14 | 93 | 大小对照型 | Jedify 获得$24M 融资，押注销售线索和收入团队协作 | 老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。 | 大公司赚基础设施的钱，小服务商赚落地第一公里的钱。 | 把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。 |
+| 34 | 2026-06-14 | 92 | 人物故事型 | 普通人怎么赚到1000万？ | 老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。 | 一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。 | 从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。 |
+| 35 | 2026-06-14 | 91 | 同行压力型 | 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 | 当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。 | 同行压力真正影响的是获客成本、内容成本和试错周期，而不是老板的技术焦虑。 | 每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？ |
+| 36 | 2026-06-14 | 90 | 省人型 | Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点 | 人越招越多，流程没有变短，管理成本反而被重复动作拖住。 | 少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。 | 选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。 |
+| 37 | 2026-06-13 | 97 | 漏钱型 | TCS与Anthropic合作，将Claude引入受监管行业 | 老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。 | 先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。 | 今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。 |
+| 38 | 2026-06-13 | 95 | 反常识型 | olmo-eval：面向模型开发循环的评估工作台 | 工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。 | 工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。 | 今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。 |
+| 39 | 2026-06-13 | 93 | 大小对照型 | Mem0 融资 $24M | 老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。 | 大公司赚基础设施的钱，小服务商赚落地第一公里的钱。 | 把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。 |
+| 40 | 2026-06-13 | 92 | 人物故事型 | 普通人怎么赚到1000万？ | 老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。 | 一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。 | 从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。 |
+| 41 | 2026-06-13 | 91 | 同行压力型 | 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 | 当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。 | 同行压力真正影响的是获客成本、内容成本和试错周期，而不是老板的技术焦虑。 | 每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？ |
+| 42 | 2026-06-13 | 88 | 避坑型 | Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业 | AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。 | 权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。 | 先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。 |
 
 ## Raw Materials
 
@@ -59,25 +58,25 @@
   - source: Google Developers Blog（RSS）
   - url: https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification
   - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260618-A11
-  - note: Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google…
+  - note: 谷歌发布Agentic Resource Discovery（ARD）开放规范
 - community_lead / community_intelligence: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘
   - source: 生财有术
   - url: https://scys.com/
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-18.json#id=15072bfe84bddc
   - note: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌
 
-### 2. 博客现状，2026年中
+### 2. GoGloby 汇总应用 AI 案例与真实业务成效
 
-- fact_base / business_signal: 博客现状，2026年中
-  - source: Nathan Lambert：Interconnects（RSS）
-  - url: https://www.interconnects.ai/p/state-of-the-blog-mid-2026
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260618-A07
-  - note: Nathan Lambert 在 Interconnects 博客创办约三年后更新规划。他当前三大目标：为前沿模型演进提供清晰度、创建开放模型生态、建立支撑机构。博客定位为原始、高辨识度的独立声音，避免成为全职分析平台。已披露与 Arcee AI 和 Mercor 签署咨询协议，以深入后训练领域并推动透明评测与开放生态。订阅者突破 7 万，付费约 900 …
-- fact_base / business_signal: 智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆
-  - source: The Decoder：AI News（RSS）
-  - url: https://the-decoder.com/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260618-A10
-  - note: 智谱AI发布GLM-5.2，在MIT许可下提供稳定百万token上下文。编码方面，FrontierSWE得分74.4%，仅落后Claude Opus 4.8一个百分点，领先GPT-5.5；PostTrainBench超越GPT-5.5和Opus 4.7，仅次于Opus 4.8；SWE-Marathon达到Opus 4.8的一半。标准编码Terminal-B…
+- fact_base / business_signal: GoGloby 汇总应用 AI 案例与真实业务成效
+  - source: gogloby.com
+  - url: https://gogloby.com/insights/applied-ai-case-studies/
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260618-A05
+  - note: GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。
+- fact_base / business_signal: GoGloby 汇总应用 AI 案例与真实业务成效
+  - source: gogloby.com
+  - url: https://gogloby.com/insights/applied-ai-case-studies/
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260618-A05
+  - note: GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。
 - community_lead / community_intelligence: 超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑
   - source: 生财有术
   - url: https://scys.com/
@@ -102,13 +101,13 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-18.json#id=acc14f1e324feb
   - note: 全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP 生财的圈友们大家好，我是诗意听涛，目前我主要围绕出海游戏站来做业务
 
-### 4. 世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元
+### 4. Willow 获得$7M 融资，押注销售线索和收入团队协作
 
-- fact_base / business_signal: 世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元
-  - source: TechCrunch：AI（RSS）
-  - url: https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260618-A14
-  - note: 由自动驾驶领域连续创业者Oliver Cameron（CEO）和Jeff Hawke（CTO）联合创立的世界模型AI公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元。本轮由Natural Capital领投，Amazon、AMD Ventures、GV等跟投。Odyssey成立于2023年，其世界模型通过人员背负相机采集物理世界数据并模拟真实…
+- fact_base / business_signal: Willow 获得$7M 融资，押注销售线索和收入团队协作
+  - source: withwillow.ai
+  - url: https://withwillow.ai/blog/willow-7m-seed-funding
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260618-A02
+  - note: 这条融资信号可用于判断资金流向、投资人押注方向，以及公司后续产品或销售扩张节奏。
 - viewpoint_lead / first_line_viewpoint: GLM-5.2可能是最强大的纯文本开放式权重LLM
   - source: Simon Willison's Blog
   - url: https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything
@@ -144,7 +143,7 @@
   - source: Google Developers Blog（RSS）
   - url: https://developers.googleblog.com/announcing-the-agentic-resource-discovery-specification
   - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260618-A11
-  - note: Agentic Resource Discovery（ARD）是一项开放规范，用于在Web上发布、发现和验证AI工具、技能与智能体。它基于两个原语：组织在其自有域名下托管catalog描述可用能力，registry作为搜索引擎索引catalog并响应发现请求。ARD支持加密验证，使客户端与端点连接前确认发布者身份，然后直接通过原生协议调用能力。Google…
+  - note: 谷歌发布Agentic Resource Discovery（ARD）开放规范
 - viewpoint_lead / first_line_viewpoint: GLM-5.2可能是最强大的纯文本开放式权重LLM
   - source: Simon Willison's Blog
   - url: https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything
@@ -156,13 +155,13 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-18.json#id=15072bfe84bddc
   - note: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌
 
-### 7. 智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆
+### 7. Boomi 讨论受治理 AI Agent 的部署与规模化
 
-- fact_base / business_signal: 智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆
-  - source: The Decoder：AI News（RSS）
-  - url: https://the-decoder.com/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260618-A10
-  - note: 智谱AI发布GLM-5.2，在MIT许可下提供稳定百万token上下文。编码方面，FrontierSWE得分74.4%，仅落后Claude Opus 4.8一个百分点，领先GPT-5.5；PostTrainBench超越GPT-5.5和Opus 4.7，仅次于Opus 4.8；SWE-Marathon达到Opus 4.8的一半。标准编码Terminal-B…
+- fact_base / business_signal: Boomi 讨论受治理 AI Agent 的部署与规模化
+  - source: boomi.com
+  - url: https://boomi.com/blog/ai-agents-deployment-and-governance/
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260618-A06
+  - note: Boomi 讨论受治理 AI Agent 的部署与规模化，重点是企业在可靠性、安全、治理和集成要求下如何把 Agent 从试点推进到生产环境。
 - viewpoint_lead / first_line_viewpoint: GLM-5.2可能是最强大的纯文本开放式权重LLM
   - source: Simon Willison's Blog
   - url: https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything
@@ -174,25 +173,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-18.json#id=acc14f1e324feb
   - note: 全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP 生财的圈友们大家好，我是诗意听涛，目前我主要围绕出海游戏站来做业务
 
-### 8. Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制下线
-
-- fact_base / business_signal: Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制下线
-  - source: Ars Technica：AI（RSS）
-  - url: https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260618-A19
-  - note: 美国政府上周禁止外国人使用 Anthropic 的 Claude Fable 5 和 Mythos 5，Anthropic 随后将两模型下线。Mythos 5 自 4 月发布即被定性为双重用途--既能帮助安全专家修补漏洞，也能被恶意利用。Anthropic 通过 Project Glasswing 私下发布 Mythos 5，同时推出受限版 Fable 5…
-- viewpoint_lead / first_line_viewpoint: GLM-5.2可能是最强大的纯文本开放式权重LLM
-  - source: Simon Willison's Blog
-  - url: https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything
-  - local: 01-SiteV2/site/data/follow-builders-daily.json#id=https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything
-  - note: GLM-5.2可能是最强大的纯文本开放式权重LLM
-- community_lead / community_intelligence: 全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP
-  - source: 生财有术
-  - url: https://scys.com/articleDetail/xq_topic/55522542522288884
-  - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-18.json#id=acc14f1e324feb
-  - note: 全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP 生财的圈友们大家好，我是诗意听涛，目前我主要围绕出海游戏站来做业务
-
-### 9. 从像素到规划：Google Research 发布 Vectorized Farmscapes 2020 数据集
+### 8. 从像素到规划：Google Research 发布 Vectorized Farmscapes 2020 数据集
 
 - fact_base / business_signal: 从像素到规划：Google Research 发布 Vectorized Farmscapes 2020 数据集
   - source: Google Research：Blog（网页）
@@ -205,7 +186,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-17.json#id=15072bfe84bddc
   - note: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌
 
-### 10. 欧盟委员会发布《AI内容标注行为守则》
+### 9. 欧盟委员会发布《AI内容标注行为守则》
 
 - fact_base / business_signal: 欧盟委员会发布《AI内容标注行为守则》
   - source: Artificial Intelligence News（RSS）
@@ -223,7 +204,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-17.json#id=612e15d1d9f810
   - note: 超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑 #超级术# 26：今天这篇超级术，我想推荐的是@袁锐钦 的《我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了》，链接：我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了我觉得这篇内容值得被推荐，一个很核心的原因是，它解决的是生财里一类非常普遍、而且越来越重要的问题：…
 
-### 11. TPU Developer Hub 正式发布：助力开发者解锁 Google Cloud TPU 全部性能
+### 10. TPU Developer Hub 正式发布：助力开发者解锁 Google Cloud TPU 全部性能
 
 - fact_base / business_signal: TPU Developer Hub 正式发布：助力开发者解锁 Google Cloud TPU 全部性能
   - source: Google Developers Blog（RSS）
@@ -241,7 +222,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-17.json#id=9319cbd9572bc9
   - note: 21岁休学创业，累计营收70w+，这个05后凭什么
 
-### 12. Stakes Conversations 融资 $100M
+### 11. Stakes Conversations 融资 $100M
 
 - fact_base / business_signal: Stakes Conversations 融资 $100M
   - source: prnewswire.com
@@ -259,7 +240,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-17.json#id=612e15d1d9f810
   - note: 超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑 #超级术# 26：今天这篇超级术，我想推荐的是@袁锐钦 的《我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了》，链接：我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了我觉得这篇内容值得被推荐，一个很核心的原因是，它解决的是生财里一类非常普遍、而且越来越重要的问题：…
 
-### 13. 普通人怎么赚到1000万？
+### 12. 普通人怎么赚到1000万？
 
 - fact_base / business_signal: TPU Developer Hub 正式发布：助力开发者解锁 Google Cloud TPU 全部性能
   - source: Google Developers Blog（RSS）
@@ -277,7 +258,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-17.json#id=45c0347f0a654e
   - note: 普通人怎么赚到1000万？ 普通人怎么赚到1000万？
 
-### 14. 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘
+### 13. 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘
 
 - fact_base / business_signal: 从像素到规划：Google Research 发布 Vectorized Farmscapes 2020 数据集
   - source: Google Research：Blog（网页）
@@ -295,7 +276,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-17.json#id=15072bfe84bddc
   - note: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌
 
-### 15. AI赋能CMS平台如何变革企业内容运营
+### 14. AI赋能CMS平台如何变革企业内容运营
 
 - fact_base / business_signal: AI赋能CMS平台如何变革企业内容运营
   - source: Artificial Intelligence News（RSS）
@@ -313,7 +294,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-17.json#id=9319cbd9572bc9
   - note: 21岁休学创业，累计营收70w+，这个05后凭什么
 
-### 16. 爱沙尼亚语言研究所发布基准测试：衡量AI模型对俄罗斯宣传的易感性
+### 15. 爱沙尼亚语言研究所发布基准测试：衡量AI模型对俄罗斯宣传的易感性
 
 - fact_base / business_signal: 爱沙尼亚语言研究所发布基准测试：衡量AI模型对俄罗斯宣传的易感性
   - source: The Decoder：AI News（RSS）
@@ -331,7 +312,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-17.json#id=9319cbd9572bc9
   - note: 21岁休学创业，累计营收70w+，这个05后凭什么
 
-### 17. Salesforce：Agentforce Customer Stories - Salesforce
+### 16. Salesforce：Agentforce Customer Stories - Salesforce
 
 - fact_base / business_signal: Salesforce：Agentforce Customer Stories - Salesforce
   - source: salesforce.com
@@ -344,7 +325,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-16.json#id=ac2d9cbae4815c
   - note: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌
 
-### 18. Salesforce以36亿美元收购AI客服平台Fin
+### 17. Salesforce以36亿美元收购AI客服平台Fin
 
 - fact_base / business_signal: Salesforce以36亿美元收购AI客服平台Fin
   - source: TechCrunch：AI（RSS）
@@ -362,7 +343,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-16.json#id=420298a9897e36
   - note: 超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑 #超级术# 26：今天这篇超级术，我想推荐的是@袁锐钦 的《我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了》，链接：我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了我觉得这篇内容值得被推荐，一个很核心的原因是，它解决的是生财里一类非常普遍、而且越来越重要的问题：…
 
-### 19. 美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼
+### 18. 美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼
 
 - fact_base / business_signal: 美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼
   - source: IT之家（RSS）
@@ -380,7 +361,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-16.json#id=9319cbd9572bc9
   - note: 21岁休学创业，累计营收70w+，这个05后凭什么
 
-### 20. Blitzy 融资 $200M
+### 19. Blitzy 融资 $200M
 
 - fact_base / business_signal: Blitzy 融资 $200M
   - source: news.crunchbase.com
@@ -398,7 +379,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-16.json#id=420298a9897e36
   - note: 超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑 #超级术# 26：今天这篇超级术，我想推荐的是@袁锐钦 的《我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了》，链接：我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了我觉得这篇内容值得被推荐，一个很核心的原因是，它解决的是生财里一类非常普遍、而且越来越重要的问题：…
 
-### 21. 普通人怎么赚到1000万？
+### 20. 普通人怎么赚到1000万？
 
 - fact_base / business_signal: 美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼
   - source: IT之家（RSS）
@@ -416,7 +397,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-16.json#id=679f12f1ab88e3
   - note: 普通人怎么赚到1000万？ 普通人怎么赚到1000万？
 
-### 22. 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘
+### 21. 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘
 
 - fact_base / business_signal: Salesforce：Agentforce Customer Stories - Salesforce
   - source: salesforce.com
@@ -434,7 +415,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-16.json#id=ac2d9cbae4815c
   - note: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌
 
-### 23. 伯克利RDI发布Agents' Last Exam基准
+### 22. 伯克利RDI发布Agents' Last Exam基准
 
 - fact_base / business_signal: 伯克利RDI发布Agents' Last Exam基准
   - source: Berkeley RDI：Blog（AI 安全与评测）
@@ -452,7 +433,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-16.json#id=9319cbd9572bc9
   - note: 21岁休学创业，累计营收70w+，这个05后凭什么
 
-### 24. Google 如何用 AI 重塑搜索
+### 23. Google 如何用 AI 重塑搜索
 
 - fact_base / business_signal: Google 如何用 AI 重塑搜索
   - source: Bloomberg：Technology（RSS）
@@ -465,7 +446,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=ac2d9cbae4815c
   - note: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌
 
-### 25. Rocket Close 用 Agentic AI 优化产权运营：AWS 实践案例
+### 24. Rocket Close 用 Agentic AI 优化产权运营：AWS 实践案例
 
 - fact_base / business_signal: Rocket Close 用 Agentic AI 优化产权运营：AWS 实践案例
   - source: aws.amazon.com
@@ -483,7 +464,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=420298a9897e36
   - note: 超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑 #超级术# 26：今天这篇超级术，我想推荐的是@袁锐钦 的《我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了》，链接：我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了我觉得这篇内容值得被推荐，一个很核心的原因是，它解决的是生财里一类非常普遍、而且越来越重要的问题：…
 
-### 26. Willow 融资 $7M
+### 25. Willow 融资 $7M
 
 - fact_base / business_signal: Willow 融资 $7M
   - source: prnewswire.com
@@ -501,7 +482,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=420298a9897e36
   - note: 超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑 #超级术# 26：今天这篇超级术，我想推荐的是@袁锐钦 的《我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了》，链接：我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了我觉得这篇内容值得被推荐，一个很核心的原因是，它解决的是生财里一类非常普遍、而且越来越重要的问题：…
 
-### 27. 普通人怎么赚到1000万？
+### 26. 普通人怎么赚到1000万？
 
 - fact_base / business_signal: Rocket Close 用 Agentic AI 优化产权运营：AWS 实践案例
   - source: aws.amazon.com
@@ -519,7 +500,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=596fa19ea0f6a0
   - note: 普通人怎么赚到1000万？ 普通人怎么赚到1000万？
 
-### 28. 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘
+### 27. 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘
 
 - fact_base / business_signal: Google 如何用 AI 重塑搜索
   - source: Bloomberg：Technology（RSS）
@@ -537,7 +518,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=ac2d9cbae4815c
   - note: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌
 
-### 29. Rippling 用 Deep Agents 和 LangSmith 在 6 个月内全面落地 AI
+### 28. Rippling 用 Deep Agents 和 LangSmith 在 6 个月内全面落地 AI
 
 - fact_base / business_signal: Rippling 用 Deep Agents 和 LangSmith 在 6 个月内全面落地 AI
   - source: langchain.com
@@ -555,7 +536,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=a9315999e72ca3
   - note: 21岁休学创业，累计营收70w+，这个05后凭什么
 
-### 30. AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单
+### 29. AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单
 
 - fact_base / business_signal: AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单
   - source: IT之家（RSS）
@@ -573,7 +554,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-15.json#id=a9315999e72ca3
   - note: 21岁休学创业，累计营收70w+，这个05后凭什么
 
-### 31. Google Research 的 Gemini-SQL2 在 text-to-SQL 基准测试中以大幅优势领先
+### 30. Google Research 的 Gemini-SQL2 在 text-to-SQL 基准测试中以大幅优势领先
 
 - fact_base / business_signal: Google Research 的 Gemini-SQL2 在 text-to-SQL 基准测试中以大幅优势领先
   - source: The Decoder：AI News（RSS）
@@ -586,7 +567,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-14.json#id=15072bfe84bddc
   - note: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌
 
-### 32. 毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实
+### 31. 毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实
 
 - fact_base / business_signal: 毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实
   - source: IT之家（RSS）
@@ -604,7 +585,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-14.json#id=612e15d1d9f810
   - note: 超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑 #超级术# 26：今天这篇超级术，我想推荐的是@袁锐钦 的《我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了》，链接：我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了我觉得这篇内容值得被推荐，一个很核心的原因是，它解决的是生财里一类非常普遍、而且越来越重要的问题：…
 
-### 33. MindStudio：用 AI Agent 构建地产开发与建筑设计 SaaS 产品
+### 32. MindStudio：用 AI Agent 构建地产开发与建筑设计 SaaS 产品
 
 - fact_base / business_signal: MindStudio：用 AI Agent 构建地产开发与建筑设计 SaaS 产品
   - source: mindstudio.ai
@@ -622,7 +603,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-14.json#id=9319cbd9572bc9
   - note: 21岁休学创业，累计营收70w+，这个05后凭什么
 
-### 34. Jedify 获得$24M 融资，押注销售线索和收入团队协作
+### 33. Jedify 获得$24M 融资，押注销售线索和收入团队协作
 
 - fact_base / business_signal: Jedify 获得$24M 融资，押注销售线索和收入团队协作
   - source: instagram.com
@@ -640,7 +621,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-14.json#id=612e15d1d9f810
   - note: 超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑 #超级术# 26：今天这篇超级术，我想推荐的是@袁锐钦 的《我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了》，链接：我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了我觉得这篇内容值得被推荐，一个很核心的原因是，它解决的是生财里一类非常普遍、而且越来越重要的问题：…
 
-### 35. 普通人怎么赚到1000万？
+### 34. 普通人怎么赚到1000万？
 
 - fact_base / business_signal: MindStudio：用 AI Agent 构建地产开发与建筑设计 SaaS 产品
   - source: mindstudio.ai
@@ -658,7 +639,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-14.json#id=45c0347f0a654e
   - note: 普通人怎么赚到1000万？ 普通人怎么赚到1000万？
 
-### 36. 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘
+### 35. 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘
 
 - fact_base / business_signal: Google Research 的 Gemini-SQL2 在 text-to-SQL 基准测试中以大幅优势领先
   - source: The Decoder：AI News（RSS）
@@ -676,7 +657,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-14.json#id=15072bfe84bddc
   - note: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌
 
-### 37. Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点
+### 36. Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点
 
 - fact_base / business_signal: Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点
   - source: The Decoder：AI News（RSS）
@@ -694,7 +675,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-14.json#id=9319cbd9572bc9
   - note: 21岁休学创业，累计营收70w+，这个05后凭什么
 
-### 38. TCS与Anthropic合作，将Claude引入受监管行业
+### 37. TCS与Anthropic合作，将Claude引入受监管行业
 
 - fact_base / business_signal: TCS与Anthropic合作，将Claude引入受监管行业
   - source: Anthropic：Newsroom（网页）
@@ -707,7 +688,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-13.json#id=ac2d9cbae4815c
   - note: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌
 
-### 39. olmo-eval：面向模型开发循环的评估工作台
+### 38. olmo-eval：面向模型开发循环的评估工作台
 
 - fact_base / business_signal: olmo-eval：面向模型开发循环的评估工作台
   - source: Hugging Face：Blog（RSS）
@@ -725,7 +706,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-13.json#id=a9315999e72ca3
   - note: 21岁休学创业，累计营收70w+，这个05后凭什么
 
-### 40. Mem0 融资 $24M
+### 39. Mem0 融资 $24M
 
 - fact_base / business_signal: Mem0 融资 $24M
   - source: prnewswire.com
@@ -743,7 +724,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-13.json#id=420298a9897e36
   - note: 超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑 #超级术# 26：今天这篇超级术，我想推荐的是@袁锐钦 的《我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了》，链接：我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了我觉得这篇内容值得被推荐，一个很核心的原因是，它解决的是生财里一类非常普遍、而且越来越重要的问题：…
 
-### 41. 普通人怎么赚到1000万？
+### 40. 普通人怎么赚到1000万？
 
 - fact_base / business_signal: olmo-eval：面向模型开发循环的评估工作台
   - source: Hugging Face：Blog（RSS）
@@ -761,7 +742,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-13.json#id=596fa19ea0f6a0
   - note: 普通人怎么赚到1000万？ 普通人怎么赚到1000万？
 
-### 42. 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘
+### 41. 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘
 
 - fact_base / business_signal: TCS与Anthropic合作，将Claude引入受监管行业
   - source: Anthropic：Newsroom（网页）
@@ -779,7 +760,7 @@
   - local: 01-SiteV2/site/data/community-intelligence-daily/2026-06-13.json#id=ac2d9cbae4815c
   - note: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌
 
-### 43. Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业
+### 42. Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业
 
 - fact_base / business_signal: Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业
   - source: Anthropic：Newsroom（网页）

@@ -9,15 +9,15 @@ source_title: "Ontora: AI agents that interviews every employee to hand context 
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-18T03:06:53.669Z
-updated_at: 2026-06-18T03:06:53.669Z
+created_at: 2026-06-18T06:03:00.029Z
+updated_at: 2026-06-18T06:03:00.029Z
 
-raw_refs: ["R-117"]
+raw_refs: ["R-116"]
 pool_refs: ["P-066"]
 primary_raw:
-  raw_ref: R-117
-  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-117-ontora-ai-agents-that-interviews-every-employee-to-hand-context-to-ai-.md"
-  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-117-ontora-ai-agents-that-interviews-every-employee-to-hand-context-to-ai-.json"
+  raw_ref: R-116
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-18/r-116-ontora-ai-agents-that-interviews-every-employee-to-hand-context-to-ai-.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-18/r-116-ontora-ai-agents-that-interviews-every-employee-to-hand-context-to-ai-.json"
   source_url: "https://www.ycombinator.com/companies/ontora"
   full_text_hash: "7f7a23e4c562faf1"
   source_level: B

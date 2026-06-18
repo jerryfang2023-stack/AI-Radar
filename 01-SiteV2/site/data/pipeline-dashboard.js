@@ -1,6 +1,6 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
-    "generatedAt": "2026-06-18T03:06:58.504Z",
+    "generatedAt": "2026-06-18T06:03:04.823Z",
     "dateRange": {
       "start": "2025-10-13",
       "end": "2026-06-18"
@@ -12,7 +12,7 @@ window.WaveSightPipelineDashboard = {
       "date": "2026-06-18",
       "label": "2026.06.18",
       "shortLabel": "06.18",
-      "raw": 186,
+      "raw": 187,
       "pool": 95,
       "assets": {
         "case": 10,
@@ -21,40 +21,40 @@ window.WaveSightPipelineDashboard = {
       },
       "cards": 22,
       "rawChannels": {
-        "aihot": 104,
-        "keyword_search": 69,
+        "aihot": 107,
+        "keyword_search": 70,
         "follow_builders": 0
       },
       "poolRoutes": {
-        "core_pool": 32,
-        "user_feedback_pool": 17,
-        "watchlist": 30,
-        "emerging_pool": 22,
+        "emerging_pool": 24,
+        "user_feedback_pool": 22,
+        "watchlist": 31,
+        "core_pool": 31,
         "index_only": 33
       },
       "evidenceLevels": {
-        "core_evidence_candidate": 45,
+        "community_signal": 20,
+        "core_evidence_candidate": 40,
         "user_feedback_signal": 4,
-        "community_signal": 15,
         "supporting_evidence": 2,
         "discovery_only": 29
       },
       "sourceLevels": {
-        "B": 53,
+        "C": 17,
+        "B": 51,
         "A": 16,
-        "C": 14,
-        "S": 12
+        "S": 11
       },
       "sourceTypes": {
-        "web": 41,
-        "media": 10,
+        "community": 17,
+        "web": 40,
+        "developer": 7,
         "news": 6,
-        "community": 14,
+        "media": 10,
         "product": 1,
-        "developer": 6,
-        "official": 10,
+        "official": 9,
         "builder": 1,
-        "marketplace": 4,
+        "marketplace": 2,
         "funding": 2
       },
       "assetStatus": {
@@ -676,7 +676,7 @@ window.WaveSightPipelineDashboard = {
     "date": "2026-06-18",
     "label": "2026.06.18",
     "shortLabel": "06.18",
-    "raw": 186,
+    "raw": 187,
     "pool": 95,
     "assets": {
       "case": 10,
@@ -685,40 +685,40 @@ window.WaveSightPipelineDashboard = {
     },
     "cards": 22,
     "rawChannels": {
-      "aihot": 104,
-      "keyword_search": 69,
+      "aihot": 107,
+      "keyword_search": 70,
       "follow_builders": 0
     },
     "poolRoutes": {
-      "core_pool": 32,
-      "user_feedback_pool": 17,
-      "watchlist": 30,
-      "emerging_pool": 22,
+      "emerging_pool": 24,
+      "user_feedback_pool": 22,
+      "watchlist": 31,
+      "core_pool": 31,
       "index_only": 33
     },
     "evidenceLevels": {
-      "core_evidence_candidate": 45,
+      "community_signal": 20,
+      "core_evidence_candidate": 40,
       "user_feedback_signal": 4,
-      "community_signal": 15,
       "supporting_evidence": 2,
       "discovery_only": 29
     },
     "sourceLevels": {
-      "B": 53,
+      "C": 17,
+      "B": 51,
       "A": 16,
-      "C": 14,
-      "S": 12
+      "S": 11
     },
     "sourceTypes": {
-      "web": 41,
-      "media": 10,
+      "community": 17,
+      "web": 40,
+      "developer": 7,
       "news": 6,
-      "community": 14,
+      "media": 10,
       "product": 1,
-      "developer": 6,
-      "official": 10,
+      "official": 9,
       "builder": 1,
-      "marketplace": 4,
+      "marketplace": 2,
       "funding": 2
     },
     "assetStatus": {
@@ -767,7 +767,7 @@ window.WaveSightPipelineDashboard = {
     }
   },
   "totals": {
-    "raw": 3690,
+    "raw": 3691,
     "pool": 1671,
     "assets": {
       "case": 176,
@@ -786,7 +786,7 @@ window.WaveSightPipelineDashboard = {
   },
   "latestRelation": null,
   "engineQuality": {
-    "updatedAt": "2026-06-18T03:06:58.569Z",
+    "updatedAt": "2026-06-18T06:03:04.886Z",
     "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
     "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
     "rows": [
@@ -835,12 +835,12 @@ window.WaveSightPipelineDashboard = {
       {
         "id": "gdelt",
         "label": "GDELT",
-        "total": 431,
+        "total": 429,
         "freshKnown": 23,
         "fresh": 1,
         "duplicates": 74,
         "official": 5,
-        "convertible": 179,
+        "convertible": 180,
         "freshnessRate": 4,
         "duplicateRate": 17,
         "officialRate": 1,
@@ -849,12 +849,12 @@ window.WaveSightPipelineDashboard = {
       {
         "id": "anysearch",
         "label": "AnySearch",
-        "total": 875,
+        "total": 873,
         "freshKnown": 0,
         "fresh": 0,
-        "duplicates": 101,
-        "official": 123,
-        "convertible": 507,
+        "duplicates": 103,
+        "official": 126,
+        "convertible": 508,
         "freshnessRate": null,
         "duplicateRate": 12,
         "officialRate": 14,
@@ -877,12 +877,12 @@ window.WaveSightPipelineDashboard = {
       {
         "id": "aihot",
         "label": "AI HOT",
-        "total": 2430,
-        "freshKnown": 1878,
-        "fresh": 1878,
+        "total": 2433,
+        "freshKnown": 1881,
+        "fresh": 1881,
         "duplicates": 6,
         "official": 236,
-        "convertible": 868,
+        "convertible": 869,
         "freshnessRate": 100,
         "duplicateRate": 0,
         "officialRate": 10,

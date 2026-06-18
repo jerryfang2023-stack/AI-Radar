@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-17T06:16:14.000Z"
-collected_at: 2026-06-18T03:06:53.294Z
+collected_at: 2026-06-18T06:02:59.635Z
 language: mixed
 full_text_hash: 2f659e9f6b5ddb98
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-113-anthropic搁置claude-agent-sdk-token计费变更.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Anthropic搁置Claude Agent SDK Token计费变更","discovery_summary":"Anthropic暂停Claude Agent SDK按API Token计费变更计划。该开源SDK允许通过Python或TypeScript调用Claude Code底层能力。原计划6月15日起将外部SDK调用从标准订阅改为按API费率计费，订阅用户仅获等额抵扣。开发者指出以Opus作为编码助手成本将快速超支，Zed团队警告成本大增。Anthropic于6月15日更新支持页面称\"暂停所述变更，目前没有任何变化\"，正在优化计划。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/372.htm","discovered_at":"2026-06-18T03:01:26.782Z","rank_on_page":329,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Anthropic搁置Claude Agent SDK Token计费变更","discovery_summary":"Anthropic暂停Claude Agent SDK按API Token计费变更计划。该开源SDK允许通过Python或TypeScript调用Claude Code底层能力。原计划6月15日起将外部SDK调用从标准订阅改为按API费率计费，订阅用户仅获等额抵扣。开发者指出以Opus作为编码助手成本将快速超支，Zed团队警告成本大增。Anthropic于6月15日更新支持页面称\"暂停所述变更，目前没有任何变化\"，正在优化计划。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/372.htm","discovered_at":"2026-06-18T05:58:08.905Z","rank_on_page":359,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 2f659e9f6b5ddb98
 semantic_hash: 60630334f8e83e28
 duplicate_of: ""
 first_seen_at: "2026-06-17T06:16:14.000Z"
-last_seen_at: 2026-06-18T03:06:53.294Z
+last_seen_at: 2026-06-18T06:02:59.635Z
 update_detected: false
 raw_status: candidate
 usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -334,7 +334,7 @@ Win11之家
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Anthropic搁置Claude Agent SDK Token计费变更","discovery_summary":"Anthropic暂停Claude Agent SDK按API Token计费变更计划。该开源SDK允许通过Python或TypeScript调用Claude Code底层能力。原计划6月15日起将外部SDK调用从标准订阅改为按API费率计费，订阅用户仅获等额抵扣。开发者指出以Opus作为编码助手成本将快速超支，Zed团队警告成本大增。Anthropic于6月15日更新支持页面称\"暂停所述变更，目前没有任何变化\"，正在优化计划。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/372.htm","discovered_at":"2026-06-18T03:01:26.782Z","rank_on_page":329,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Anthropic搁置Claude Agent SDK Token计费变更","discovery_summary":"Anthropic暂停Claude Agent SDK按API Token计费变更计划。该开源SDK允许通过Python或TypeScript调用Claude Code底层能力。原计划6月15日起将外部SDK调用从标准订阅改为按API费率计费，订阅用户仅获等额抵扣。开发者指出以Opus作为编码助手成本将快速超支，Zed团队警告成本大增。Anthropic于6月15日更新支持页面称\"暂停所述变更，目前没有任何变化\"，正在优化计划。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/965/372.htm","discovered_at":"2026-06-18T05:58:08.905Z","rank_on_page":359,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

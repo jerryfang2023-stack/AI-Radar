@@ -1,16 +1,16 @@
 # 2026-06-18 Daily Production Chain Readiness
 
-- generated_at: 2026-06-18T03:06:58.739Z
+- generated_at: 2026-06-18T06:03:05.045Z
 - stage: pre-commit
 - status: passed
-- final_active_raw_count: 186
+- final_active_raw_count: 187
 - final_active_pool_count: 95
-- logged_raw_count: 186
+- logged_raw_count: 187
 - logged_pool_count: 95
 - historical_dedupe_enabled: true
 - historical_raw_records_checked: 3504
-- historical_duplicates_removed_before_fetch: 47
-- historical_duplicates_removed_after_fetch: 4
+- historical_duplicates_removed_before_fetch: 50
+- historical_duplicates_removed_after_fetch: 3
 - active_historical_duplicate_count: 0
 - active_raw_historical_duplicate_count: 0
 - active_pool_historical_duplicate_count: 0

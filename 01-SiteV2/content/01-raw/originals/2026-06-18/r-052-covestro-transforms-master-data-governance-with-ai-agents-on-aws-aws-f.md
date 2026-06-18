@@ -1,0 +1,345 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-052
+title: "Covestro Transforms Master Data Governance with AI Agents on AWS | AWS for SAP"
+original_url: "https://aws.amazon.com/blogs/awsforsap/covestro-transforms-master-data-governance-with-ai-agents-on-aws/"
+canonical_url: "https://aws.amazon.com/blogs/awsforsap/covestro-transforms-master-data-governance-with-ai-agents-on-aws"
+source_name: "keyword search / Anysearch"
+source_type: marketplace
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "industry_landing"
+search_path_label: "行业落地路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-18T06:02:59.340Z
+language: mixed
+full_text_hash: 3385f8b04d047beb
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-052-covestro-transforms-master-data-governance-with-ai-agents-on-aws-aws-f.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-052-covestro-transforms-master-data-governance-with-ai-agents-on-aws-aws-f.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":18960,"paragraph_count":68,"sentence_count":118,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 18960
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3385f8b04d047beb","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: f98ebfed73378018
+content_hash: fe315fee19585953
+semantic_hash: fa99b4536ba20084
+duplicate_of: ""
+first_seen_at: "2026-06-18T06:02:59.340Z"
+last_seen_at: 2026-06-18T06:02:59.340Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","Anthropic","Microsoft","Amazon","AWS","Deloitte"],"products":["Agents","agents","agent","Agent","Claude"],"people":[],"industries":["医疗","开发者工具","企业服务"],"roles":["采购负责人","销售 / 客服"],"workflows":["权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","采购","销售 / 客服"],"numbers":["48","17","500","12","6 m","12.9 billion","2025","4"],"quotes":[]}
+evidence_seed: {"company_actions":["Skip to Main Content AWS for SAP Covestro Transforms Master Data Governance with AI Agents on AWS This is a guest post by Christian Jantzen, Head of Master Data Excellence & Operations at Covestro; Neelesh Jain, Senior Specialist Lead at Deloitte Germany; Ahmad Shawabkeh, Manager at Deloitte Germany; and Kristina Pietukhova, Senior Consultant at Deloitte Germany, in partnership with AWS Introduction Covestro, a global polymer manufacturer with 48 production sites and approximately 17,500 employees, reduced the time","In this post, you learn how Covestro, in collaboration with Deloitte, designed and deployed MARIS (Material Artificial Realtime Intelligence Specialist) and PARIS (Partner Artificial Realtime Intelligence Specialist) on AWS.","You also discover a reusable blueprint for AI-driven master data governance that you can apply to reduce cycle times, improve data quality, and remove manual bottlenecks in your own SAP landscape."],"case_details":["Covestro, a global polymer manufacturer with 48 production sites and approximately 17,500 employees, reduced the time to create master data records from 12 hours to 6 minutes. The company achieved this by building two AI agents on Amazon Bedrock and integrating them with SAP Master Data Governance (... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=industry_landing"],"workflow_changes":["The company achieved this by building two AI agents on Amazon Bedrock and integrating them with SAP Master Data Governance (MDG), turning one of its most complex operational processes into a conversational, self-service experience."],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"Covestro, a global polymer manufacturer with 48 production sites and approximately 17,500 employees, reduced the time to create master data records from 12 hours to 6 minutes. The company achieved this by building two AI agents on Amazon Bedrock and integrating them with SAP Master Data Governance (... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=industry_landing","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to Main Content AWS for SAP Covestro Transforms Master Data Governance with AI Agents on AWS This is a guest post by Christian Jantzen, Head of Master Data Excellence & Operations at Covestro; Neelesh Jain, Senior Specialist Lead at Deloitte Germany; Ahmad Shawabkeh, Manager at Deloitte Germany; and Kristina Pietukhova, Senior Consultant at Deloitte Germany, in partnership with AWS Introduction Covestro, a global polymer manufacturer with 48 production sites and approximately 17,500 employees, reduced the time","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The company achieved this by building two AI agents on Amazon Bedrock and integrating them with SAP Master Data Governance (MDG), turning one of its most complex operational processes into a conversational, self-service experience.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In this post, you learn how Covestro, in collaboration with Deloitte, designed and deployed MARIS (Material Artificial Realtime Intelligence Specialist) and PARIS (Partner Artificial Realtime Intelligence Specialist) on AWS.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"You also discover a reusable blueprint for AI-driven master data governance that you can apply to reduce cycle times, improve data quality, and remove manual bottlenecks in your own SAP landscape.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The Challenge: Expert Systems Built for Experts Covestro AG , headquartered in Leverkusen, Germany, is a global manufacturer of high-performance polymer materials and components, with approximately €12.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Covestro Transforms Master Data Governance with AI Agents on AWS | AWS for SAP
+
+## clean_text
+
+Skip to Main Content
+AWS for SAP
+Covestro Transforms Master Data Governance with AI Agents on AWS
+This is a guest post by Christian Jantzen, Head of Master Data Excellence & Operations at Covestro; Neelesh Jain, Senior Specialist Lead at Deloitte Germany; Ahmad Shawabkeh, Manager at Deloitte Germany; and Kristina Pietukhova, Senior Consultant at Deloitte Germany, in partnership with AWS
+Introduction
+Covestro, a global polymer manufacturer with 48 production sites and approximately 17,500 employees, reduced the time to create master data records from 12 hours to 6 minutes. The company achieved this by building two AI agents on Amazon Bedrock and integrating them with SAP Master Data Governance (MDG), turning one of its most complex operational processes into a conversational, self-service experience.
+In this post, you learn how Covestro, in collaboration with Deloitte, designed and deployed MARIS (Material Artificial Realtime Intelligence Specialist) and PARIS (Partner Artificial Realtime Intelligence Specialist) on AWS. You also discover a reusable blueprint for AI-driven master data governance that you can apply to reduce cycle times, improve data quality, and remove manual bottlenecks in your own SAP landscape.
+The Challenge: Expert Systems Built for Experts
+Covestro AG , headquartered in Leverkusen, Germany, is a global manufacturer of high-performance polymer materials and components, with approximately €12.9 billion in 2025 sales. The company’s products, including polycarbonates, polyurethanes, coatings, adhesives, and specialty elastomers, serve as critical components across the automotive, construction, electronics, and medical device industries.
+At this scale, master data underpins every supply chain transaction, every customer relationship, and every product lifecycle decision. Yet for years, creating or maintaining master data was challenging. Business users who needed to create new materials, extend a plant assignment, or onboard a new customer or vendor had no direct path into SAP MDG. Instead, they sent unstructured emails to dedicated MDG experts, who would interpret requests, clarify attributes, correct errors, check for duplicates manually, and enter data into the system.
+A single request could take hours or even days to complete. The process was fragmented and error-prone, relying entirely on human intermediaries. As data volumes grew and Covestro accelerated its SAP S/4HANA transformation through the ACT (Accelerate Covestro’s Transformation) program, scaling this manual approach would only increase inefficiency, data quality risks, and limit adoption of SAP MDG.
+The ambition was clear: turn master data governance from a bottleneck into a self-service capability, using AI.
+Figure 1: Covestro’s transformation from manual, expert-led master data request handling to guided self-service with AI agents.
+Meet the AI Twins: PARIS & MARIS
+Born from Covestro’s commitment to digital excellence, PARIS and MARIS are two AI agents jointly developed by Covestro and Deloitte Consulting, built on AWS and integrated with SAP’s enterprise landscape. MARIS went live in Covestro’s legacy SAP ERP (ECC) environment in early 2026. PARIS is planned to go live exclusively on SAP S/4HANA, with deployment expected in early 2027.
+MARIS (Material Artificial Realtime Intelligence Specialist) is the go-to expert for intelligent material and product data management. It handles create, change, and deletion requests for material master data, including packed material creation, plant extensions, and sales organization extensions.
+PARIS (Partner Artificial Realtime Intelligence Specialist) specializes in intelligent business partner data management. It supports the creation and maintenance of customers, vendors, and prospects with built-in duplicate detection, address validation, and golden record enrichment (the process of consolidating and verifying data from multiple sources into a single, trusted master record).
+Together, they share one mission: remove the complexity of master data governance so that business users can manage data directly, without specialized SAP expertise.
+How MARIS Works: From 12 Hours to 6 Minutes
+The transformation MARIS delivers is best illustrated by the numbers: a process that previously took an average of 12 hours now takes just 6 minutes. That is a 99% reduction in cycle time for approximately 1,000 material requests per month, or roughly 12,000 per year.
+MARIS is embedded in Covestro’s Virtual Assistant (CoVA) and accessible via browser or Microsoft Teams. You start a conversation, and MARIS guides you through a lean, step-by-step material creation or extension process, reducing the required data input to a handful of essential items. Behind the scenes, MARIS validates data against SAP tables in real time, checks for duplicates across multiple systems to prevent redundant records, automatically enriches requests with derived data and relevant attributes, and creates and submits SAP MDG Change Requests directly into the connected approval workflows. Manual email coordination and handoffs are eliminated entirely.
+The result is a governed, auditable, end-to-end process that maintains strict data quality standards while making the experience intuitive for business users, with no SAP MDG expertise required.
+“Our AI agent MARIS has transformed our approach to material master data maintenance by providing instant, conversational access to complex processes. We are now available to our stakeholders 24/7, with no waiting times and no manual dependencies.” — Sunny Liu, Global Process Owner for Material Master Data, Covestro
+How PARIS Works: First-Time-Right Business Partner Data
+PARIS applies the same conversational AI approach to business partner master data. When a sales representative needs to onboard a new customer or a procurement team wants to create a vendor, PARIS guides you through the entire process with built-in intelligence at every step.
+PARIS uses CDQ (Corporate Data Quality) technology for three critical data quality functions:
+• Data Mirror and Duplicate Check : PARIS compares company name and address data against a real-time CDQ data mirror of Covestro’s SAP MDG, identifying potential duplicates before creation and preventing redundant records.
+• Address Lookup : PARIS cross-references submitted data against commercial registers and premium sources such as Dun & Bradstreet and Bureau van Dijk, providing a ranked list of verified matches to support first-time-right accuracy.
+• Golden Record Enrichment : PARIS automatically requests the creation of a golden record, enriching address data with tax identification numbers (such as VAT IDs in Europe) and geocodes from official sources, reducing manual maintenance effort.
+The outcome is a cleaner, more reliable business partner data foundation, essential for customer experience, compliance, and financial accuracy. Because PARIS has not yet been deployed in production, quantitative performance metrics will be available after its planned go-live in early 2027.
+The AWS Architecture Powering PARIS & MARIS
+The technical backbone of both AI agents is built on AWS, integrated with SAP’s enterprise landscape via SAP Business Technology Platform (SAP BTP) and SAP Integration Suite.
+Figure 2: PARIS and MARIS Architecture.
+The solution follows a layered, event-driven architecture spanning Covestro’s AWS cloud environment and the SAP landscape.
+User Experience Layer – Users interact through a chatbot application built on AWS Amplify or via Microsoft Teams. Requests flow through Amazon API Gateway to AWS Lambda , which hosts the AI agent runtime. Authentication and authorization are managed by AWS Identity and Access Management ( AWS IAM ) and Amazon Cognito , with encryption handled by AWS Key Management Service ( AWS KMS ).
+AI Agent Layer – At the core sits Amazon Bedrock , a fully managed service that offers a choice of high-performing foundation models (FMs) from leading AI companies via a single API, along with a broad set of capabilities you need to build generative AI applications with security, privacy, and responsible AI. The solution uses Amazon Bedrock AgentCore to host a coordinated set of agents built with the Strands Agents SDK , an open-source framework for building AI agents that can reason, take actions, and interact with users and systems. A Supervisor Agent classifies user intent and routes requests to the appropriate specialized task agent.
+Each task agent handles a domain-specific workflow end to end: collecting required inputs from the user, validating data against enterprise systems, building the appropriate payload, and executing the transaction. The agents operate autonomously through multi-step, stateful conversations, asking follow-up questions and handling confirmations without human intervention in the orchestration logic. Each agent runs on Anthropic Claude foundation models (FMs) through Amazon Bedrock and is configured with its own instructions, tools, and session memory.
+Data Mesh Layer – SAP master data is replicated via AWS Glue into Amazon S3 as Data Mesh tables. Amazon Athena queries these tables in real time to validate material numbers, plant codes, material types, and sales organizations. This allows the agents to verify inputs before calling SAP APIs.
+SAP Integration Layer – Validated payloads are sent to SAP S/4HANA and SAP MDG through SAP BTP Integration Suite (OAuth2-secured). For PARIS, the architecture also integrates with SAP C4C (Cloud for Customer) and CDQ services to provide data quality capabilities such as duplicate checking, address validation, and golden record management.
+End-to-end transaction flow : When a user submits a material creation request, the chatbot sends the message through Amazon API Gateway to AWS Lambda, which invokes the Supervisor Agent in Amazon Bedrock AgentCore. The Supervisor Agent classifies the intent and delegates to the appropriate task agent. The task agent collects and validates required inputs by querying Amazon Athena against the replicated SAP data in Amazon S3. Once validation passes, the agent builds the payload and sends it to SAP MDG through the SAP BTP Integration Suite. The MDG Change Request is created and routed into the standard approval workflow.
+Observability – Amazon DynamoDB captures interaction metrics, workflow completion logs, and error patterns. Amazon Bedrock AgentCore Memory provides persistent conversation memory across sessions. Infrastructure is fully managed as code via AWS CloudFormation.
+Measurable Impact: The Business Value
+The results of deploying MARIS speak for themselves:
+Figure 3: Key Performance Indicators – MARIS
+Beyond the numbers, MARIS has delivered a set of qualitative outcomes that are equally significant. Business users can now create material requests independently without SAP expertise, moving from a centralized, expert-dependent model to true self-service governance. MDG experts, freed from manual corrections and copy-paste activities, focus on value-added governance tasks. The solution provides full traceability from user interaction to Change Request approval, reducing audit findings and improving compliance. With more accurate and timely material availability, Covestro sees faster time-to-market and fewer sales order disruptions. Level 1 support workload has decreased, improving Service Level Agreement adherence across IT operations. The architecture also serves as a scalable blueprint for AI-driven MDG processes across the full material lifecycle and business partner domains.
+“The first time we submitted a material request through MARIS, the intelligent validation caught potential issues immediately, guiding us to provide complete information upfront. Our workdays transformed from reactive problem-solving to proactive execution. MARIS helps us do our jobs more accurately and faster.” — Commercial Operations Requestor Group, APAC, Covestro
+The Role of Deloitte: AI Integration from Day One
+Building AI agents that integrate deeply with SAP enterprise systems requires both technical expertise and industry knowledge. Covestro’s journey to transform SAP processes with AI was shaped through a close partnership with Deloitte Consulting GmbH, the systems integrator entrusted with Covestro’s SAP S/4HANA transformation program, ACT (Accelerate Covestro’s Transformation). Deloitte brought deep industry, technology, and AI experience to the engagement, running focused AI ideation workshops across multiple Covestro workstreams to identify high-value use cases. MARIS and PARIS emerged as one of the most compelling opportunities from this process.
+Deloitte’s specialized AI and SAP workforce helped design and build a robust, globally scalable master data maintenance process that accounts for SAP and non-SAP components in a coherent end-to-end architecture. MARIS went live in Covestro’s legacy SAP ERP (ECC) environment in early 2026. With the SAP S/4HANA go live planned for January 2027, MARIS will transition to SAP S/4HANA, while PARIS is planned to operate exclusively on SAP S/4HANA from the start.
+“At Deloitte, we have embedded AI capabilities into our project approach from day one to enhance business processes and maximize solution efficiency. MARIS exemplifies our commitment to bringing that ambition to life, and we are excited to deliver it with and for Covestro.” — Nicolas Roussel, Partner at Deloitte Consulting GmbH
+Strategic Outlook: A Blueprint for the Future
+MARIS and PARIS are not endpoints. They are the beginning of a broader AI-first master data strategy at Covestro. The modular, cloud-native architecture built on AWS and SAP BTP is designed to scale. As Covestro completes its ACT S/4HANA transformation, the same AI-driven governance pattern will extend to additional master data domains, additional SAP MDG processes, and new user groups across the global organization. If you are modernizing your own SAP landscape, this architecture provides a reusable pattern for applying generative AI to complex enterprise workflows.
+“I see this initiative as an effective showcase of integrating established SAP solutions with emerging AI capabilities. MARIS provides measurable process improvements and data quality enhancements that support our operational objectives. The project represents a balanced approach to technology adoption, combining practical business requirements with proven enterprise solutions.” — Andreas Henjes, Program Manager SAP S/4HANA Transformation, Covestro
+Conclusion
+Covestro’s journey with MARIS and PARIS demonstrates what becomes possible when generative AI, cloud infrastructure, and enterprise data governance converge. By building on Amazon Bedrock and the broader AWS services and integrating deeply with SAP MDG via SAP BTP and SAP Integration Suite, Covestro turned one of its most complex operational challenges into a competitive differentiator.
+Master data governance no longer requires expert intermediaries. It is now an intuitive, conversational, self-service experience available around the clock, globally, to every business user who needs it. The process that once took 12 hours now takes 6 minutes. Clarification requests that once filled inboxes have been reduced by 99%. And the foundation is in place to extend this AI-first approach across the enterprise.
+To learn more about these agents, contact the Deloitte AWS Alliance team at deloitteawsalliance@deloitte.com.
+Next steps and resources:
+• Learn more about Amazon Bedrock and how to build generative AI applications.
+• Explore Amazon Bedrock AgentCore for hosting and managing AI agents.
+• Read the Strands Agents SDK documentation for building multi-agent systems.
+• Visit SAP on AWS for reference architectures and migration guidance.
+• Get started with AWS Glue and Amazon Athena for data integration and analytics.
+• Browse the AWS Architecture Center for enterprise AI patterns.
+About the Authors
+Christian Jantzen is Head of Master Data Excellence & Operations at Covestro Deutschland AG, Information Technology & Digitization. He leads the strategic development and operational excellence of master data management across Covestro’s global SAP landscape, with a focus on AI-driven process transformation, data governance, and the enablement of business users through digital solutions. Christian has presented Covestro’s AI chatbot work at international conferences including the SAP NOW AI Tour Germany and the TBM Annual Excellence MDM Summit in Amsterdam.
+Neelesh Kumar Jain is a Senior Specialist Lead at Deloitte, specializing in AI-powered transformation of SAP landscapes. A trusted advisor to clients, he focuses on designing hybrid architectures that connect modern data services, including cloud-native AI, with mission-critical SAP systems.
+Ahmad Shawabkeh is a Manager in Master Data Management and Functional Lead at Deloitte, dedicated to governed data solutions that push technical boundaries. He specializes in driving measurable client value by building efficient, user-friendly MDM frameworks that serve as the backbone for modern enterprise environments, including AWS.
+Kristina Pietukhova is a Senior Consultant at Deloitte specializing in the architecture of enterprise-grade, serverless systems on AWS, including Amazon Bedrock AgentCore–based agent architectures and artificial intelligence and machine learning (AI/ML) solutions. She focuses on translating business and technical requirements into production-ready enterprise architectures.
+AWS Contributors
+Sachin Bhatt is a Global Senior SAP Partner Solutions Architect at Amazon Web Services (AWS), focused on the Deloitte partnership. He partners with Global System Integrators and enterprise customers to accelerate cloud adoption and business transformation through SAP and AWS solutions. A trusted advisor in the SAP on AWS space, Sachin brings deep experience in architecting scalable, resilient, and high-performing SAP workloads in the cloud. He is passionate about hel
+
+## full_text
+
+Skip to Main Content
+AWS for SAP
+Covestro Transforms Master Data Governance with AI Agents on AWS
+This is a guest post by Christian Jantzen, Head of Master Data Excellence & Operations at Covestro; Neelesh Jain, Senior Specialist Lead at Deloitte Germany; Ahmad Shawabkeh, Manager at Deloitte Germany; and Kristina Pietukhova, Senior Consultant at Deloitte Germany, in partnership with AWS
+Introduction
+Covestro, a global polymer manufacturer with 48 production sites and approximately 17,500 employees, reduced the time to create master data records from 12 hours to 6 minutes. The company achieved this by building two AI agents on Amazon Bedrock and integrating them with SAP Master Data Governance (MDG), turning one of its most complex operational processes into a conversational, self-service experience.
+In this post, you learn how Covestro, in collaboration with Deloitte, designed and deployed MARIS (Material Artificial Realtime Intelligence Specialist) and PARIS (Partner Artificial Realtime Intelligence Specialist) on AWS. You also discover a reusable blueprint for AI-driven master data governance that you can apply to reduce cycle times, improve data quality, and remove manual bottlenecks in your own SAP landscape.
+The Challenge: Expert Systems Built for Experts
+Covestro AG , headquartered in Leverkusen, Germany, is a global manufacturer of high-performance polymer materials and components, with approximately €12.9 billion in 2025 sales. The company’s products, including polycarbonates, polyurethanes, coatings, adhesives, and specialty elastomers, serve as critical components across the automotive, construction, electronics, and medical device industries.
+At this scale, master data underpins every supply chain transaction, every customer relationship, and every product lifecycle decision. Yet for years, creating or maintaining master data was challenging. Business users who needed to create new materials, extend a plant assignment, or onboard a new customer or vendor had no direct path into SAP MDG. Instead, they sent unstructured emails to dedicated MDG experts, who would interpret requests, clarify attributes, correct errors, check for duplicates manually, and enter data into the system.
+A single request could take hours or even days to complete. The process was fragmented and error-prone, relying entirely on human intermediaries. As data volumes grew and Covestro accelerated its SAP S/4HANA transformation through the ACT (Accelerate Covestro’s Transformation) program, scaling this manual approach would only increase inefficiency, data quality risks, and limit adoption of SAP MDG.
+The ambition was clear: turn master data governance from a bottleneck into a self-service capability, using AI.
+Figure 1: Covestro’s transformation from manual, expert-led master data request handling to guided self-service with AI agents.
+Meet the AI Twins: PARIS & MARIS
+Born from Covestro’s commitment to digital excellence, PARIS and MARIS are two AI agents jointly developed by Covestro and Deloitte Consulting, built on AWS and integrated with SAP’s enterprise landscape. MARIS went live in Covestro’s legacy SAP ERP (ECC) environment in early 2026. PARIS is planned to go live exclusively on SAP S/4HANA, with deployment expected in early 2027.
+MARIS (Material Artificial Realtime Intelligence Specialist) is the go-to expert for intelligent material and product data management. It handles create, change, and deletion requests for material master data, including packed material creation, plant extensions, and sales organization extensions.
+PARIS (Partner Artificial Realtime Intelligence Specialist) specializes in intelligent business partner data management. It supports the creation and maintenance of customers, vendors, and prospects with built-in duplicate detection, address validation, and golden record enrichment (the process of consolidating and verifying data from multiple sources into a single, trusted master record).
+Together, they share one mission: remove the complexity of master data governance so that business users can manage data directly, without specialized SAP expertise.
+How MARIS Works: From 12 Hours to 6 Minutes
+The transformation MARIS delivers is best illustrated by the numbers: a process that previously took an average of 12 hours now takes just 6 minutes. That is a 99% reduction in cycle time for approximately 1,000 material requests per month, or roughly 12,000 per year.
+MARIS is embedded in Covestro’s Virtual Assistant (CoVA) and accessible via browser or Microsoft Teams. You start a conversation, and MARIS guides you through a lean, step-by-step material creation or extension process, reducing the required data input to a handful of essential items. Behind the scenes, MARIS validates data against SAP tables in real time, checks for duplicates across multiple systems to prevent redundant records, automatically enriches requests with derived data and relevant attributes, and creates and submits SAP MDG Change Requests directly into the connected approval workflows. Manual email coordination and handoffs are eliminated entirely.
+The result is a governed, auditable, end-to-end process that maintains strict data quality standards while making the experience intuitive for business users, with no SAP MDG expertise required.
+“Our AI agent MARIS has transformed our approach to material master data maintenance by providing instant, conversational access to complex processes. We are now available to our stakeholders 24/7, with no waiting times and no manual dependencies.” — Sunny Liu, Global Process Owner for Material Master Data, Covestro
+How PARIS Works: First-Time-Right Business Partner Data
+PARIS applies the same conversational AI approach to business partner master data. When a sales representative needs to onboard a new customer or a procurement team wants to create a vendor, PARIS guides you through the entire process with built-in intelligence at every step.
+PARIS uses CDQ (Corporate Data Quality) technology for three critical data quality functions:
+• Data Mirror and Duplicate Check : PARIS compares company name and address data against a real-time CDQ data mirror of Covestro’s SAP MDG, identifying potential duplicates before creation and preventing redundant records.
+• Address Lookup : PARIS cross-references submitted data against commercial registers and premium sources such as Dun & Bradstreet and Bureau van Dijk, providing a ranked list of verified matches to support first-time-right accuracy.
+• Golden Record Enrichment : PARIS automatically requests the creation of a golden record, enriching address data with tax identification numbers (such as VAT IDs in Europe) and geocodes from official sources, reducing manual maintenance effort.
+The outcome is a cleaner, more reliable business partner data foundation, essential for customer experience, compliance, and financial accuracy. Because PARIS has not yet been deployed in production, quantitative performance metrics will be available after its planned go-live in early 2027.
+The AWS Architecture Powering PARIS & MARIS
+The technical backbone of both AI agents is built on AWS, integrated with SAP’s enterprise landscape via SAP Business Technology Platform (SAP BTP) and SAP Integration Suite.
+Figure 2: PARIS and MARIS Architecture.
+The solution follows a layered, event-driven architecture spanning Covestro’s AWS cloud environment and the SAP landscape.
+User Experience Layer – Users interact through a chatbot application built on AWS Amplify or via Microsoft Teams. Requests flow through Amazon API Gateway to AWS Lambda , which hosts the AI agent runtime. Authentication and authorization are managed by AWS Identity and Access Management ( AWS IAM ) and Amazon Cognito , with encryption handled by AWS Key Management Service ( AWS KMS ).
+AI Agent Layer – At the core sits Amazon Bedrock , a fully managed service that offers a choice of high-performing foundation models (FMs) from leading AI companies via a single API, along with a broad set of capabilities you need to build generative AI applications with security, privacy, and responsible AI. The solution uses Amazon Bedrock AgentCore to host a coordinated set of agents built with the Strands Agents SDK , an open-source framework for building AI agents that can reason, take actions, and interact with users and systems. A Supervisor Agent classifies user intent and routes requests to the appropriate specialized task agent.
+Each task agent handles a domain-specific workflow end to end: collecting required inputs from the user, validating data against enterprise systems, building the appropriate payload, and executing the transaction. The agents operate autonomously through multi-step, stateful conversations, asking follow-up questions and handling confirmations without human intervention in the orchestration logic. Each agent runs on Anthropic Claude foundation models (FMs) through Amazon Bedrock and is configured with its own instructions, tools, and session memory.
+Data Mesh Layer – SAP master data is replicated via AWS Glue into Amazon S3 as Data Mesh tables. Amazon Athena queries these tables in real time to validate material numbers, plant codes, material types, and sales organizations. This allows the agents to verify inputs before calling SAP APIs.
+SAP Integration Layer – Validated payloads are sent to SAP S/4HANA and SAP MDG through SAP BTP Integration Suite (OAuth2-secured). For PARIS, the architecture also integrates with SAP C4C (Cloud for Customer) and CDQ services to provide data quality capabilities such as duplicate checking, address validation, and golden record management.
+End-to-end transaction flow : When a user submits a material creation request, the chatbot sends the message through Amazon API Gateway to AWS Lambda, which invokes the Supervisor Agent in Amazon Bedrock AgentCore. The Supervisor Agent classifies the intent and delegates to the appropriate task agent. The task agent collects and validates required inputs by querying Amazon Athena against the replicated SAP data in Amazon S3. Once validation passes, the agent builds the payload and sends it to SAP MDG through the SAP BTP Integration Suite. The MDG Change Request is created and routed into the standard approval workflow.
+Observability – Amazon DynamoDB captures interaction metrics, workflow completion logs, and error patterns. Amazon Bedrock AgentCore Memory provides persistent conversation memory across sessions. Infrastructure is fully managed as code via AWS CloudFormation.
+Measurable Impact: The Business Value
+The results of deploying MARIS speak for themselves:
+Figure 3: Key Performance Indicators – MARIS
+Beyond the numbers, MARIS has delivered a set of qualitative outcomes that are equally significant. Business users can now create material requests independently without SAP expertise, moving from a centralized, expert-dependent model to true self-service governance. MDG experts, freed from manual corrections and copy-paste activities, focus on value-added governance tasks. The solution provides full traceability from user interaction to Change Request approval, reducing audit findings and improving compliance. With more accurate and timely material availability, Covestro sees faster time-to-market and fewer sales order disruptions. Level 1 support workload has decreased, improving Service Level Agreement adherence across IT operations. The architecture also serves as a scalable blueprint for AI-driven MDG processes across the full material lifecycle and business partner domains.
+“The first time we submitted a material request through MARIS, the intelligent validation caught potential issues immediately, guiding us to provide complete information upfront. Our workdays transformed from reactive problem-solving to proactive execution. MARIS helps us do our jobs more accurately and faster.” — Commercial Operations Requestor Group, APAC, Covestro
+The Role of Deloitte: AI Integration from Day One
+Building AI agents that integrate deeply with SAP enterprise systems requires both technical expertise and industry knowledge. Covestro’s journey to transform SAP processes with AI was shaped through a close partnership with Deloitte Consulting GmbH, the systems integrator entrusted with Covestro’s SAP S/4HANA transformation program, ACT (Accelerate Covestro’s Transformation). Deloitte brought deep industry, technology, and AI experience to the engagement, running focused AI ideation workshops across multiple Covestro workstreams to identify high-value use cases. MARIS and PARIS emerged as one of the most compelling opportunities from this process.
+Deloitte’s specialized AI and SAP workforce helped design and build a robust, globally scalable master data maintenance process that accounts for SAP and non-SAP components in a coherent end-to-end architecture. MARIS went live in Covestro’s legacy SAP ERP (ECC) environment in early 2026. With the SAP S/4HANA go live planned for January 2027, MARIS will transition to SAP S/4HANA, while PARIS is planned to operate exclusively on SAP S/4HANA from the start.
+“At Deloitte, we have embedded AI capabilities into our project approach from day one to enhance business processes and maximize solution efficiency. MARIS exemplifies our commitment to bringing that ambition to life, and we are excited to deliver it with and for Covestro.” — Nicolas Roussel, Partner at Deloitte Consulting GmbH
+Strategic Outlook: A Blueprint for the Future
+MARIS and PARIS are not endpoints. They are the beginning of a broader AI-first master data strategy at Covestro. The modular, cloud-native architecture built on AWS and SAP BTP is designed to scale. As Covestro completes its ACT S/4HANA transformation, the same AI-driven governance pattern will extend to additional master data domains, additional SAP MDG processes, and new user groups across the global organization. If you are modernizing your own SAP landscape, this architecture provides a reusable pattern for applying generative AI to complex enterprise workflows.
+“I see this initiative as an effective showcase of integrating established SAP solutions with emerging AI capabilities. MARIS provides measurable process improvements and data quality enhancements that support our operational objectives. The project represents a balanced approach to technology adoption, combining practical business requirements with proven enterprise solutions.” — Andreas Henjes, Program Manager SAP S/4HANA Transformation, Covestro
+Conclusion
+Covestro’s journey with MARIS and PARIS demonstrates what becomes possible when generative AI, cloud infrastructure, and enterprise data governance converge. By building on Amazon Bedrock and the broader AWS services and integrating deeply with SAP MDG via SAP BTP and SAP Integration Suite, Covestro turned one of its most complex operational challenges into a competitive differentiator.
+Master data governance no longer requires expert intermediaries. It is now an intuitive, conversational, self-service experience available around the clock, globally, to every business user who needs it. The process that once took 12 hours now takes 6 minutes. Clarification requests that once filled inboxes have been reduced by 99%. And the foundation is in place to extend this AI-first approach across the enterprise.
+To learn more about these agents, contact the Deloitte AWS Alliance team at deloitteawsalliance@deloitte.com.
+Next steps and resources:
+• Learn more about Amazon Bedrock and how to build generative AI applications.
+• Explore Amazon Bedrock AgentCore for hosting and managing AI agents.
+• Read the Strands Agents SDK documentation for building multi-agent systems.
+• Visit SAP on AWS for reference architectures and migration guidance.
+• Get started with AWS Glue and Amazon Athena for data integration and analytics.
+• Browse the AWS Architecture Center for enterprise AI patterns.
+About the Authors
+Christian Jantzen is Head of Master Data Excellence & Operations at Covestro Deutschland AG, Information Technology & Digitization. He leads the strategic development and operational excellence of master data management across Covestro’s global SAP landscape, with a focus on AI-driven process transformation, data governance, and the enablement of business users through digital solutions. Christian has presented Covestro’s AI chatbot work at international conferences including the SAP NOW AI Tour Germany and the TBM Annual Excellence MDM Summit in Amsterdam.
+Neelesh Kumar Jain is a Senior Specialist Lead at Deloitte, specializing in AI-powered transformation of SAP landscapes. A trusted advisor to clients, he focuses on designing hybrid architectures that connect modern data services, including cloud-native AI, with mission-critical SAP systems.
+Ahmad Shawabkeh is a Manager in Master Data Management and Functional Lead at Deloitte, dedicated to governed data solutions that push technical boundaries. He specializes in driving measurable client value by building efficient, user-friendly MDM frameworks that serve as the backbone for modern enterprise environments, including AWS.
+Kristina Pietukhova is a Senior Consultant at Deloitte specializing in the architecture of enterprise-grade, serverless systems on AWS, including Amazon Bedrock AgentCore–based agent architectures and artificial intelligence and machine learning (AI/ML) solutions. She focuses on translating business and technical requirements into production-ready enterprise architectures.
+AWS Contributors
+Sachin Bhatt is a Global Senior SAP Partner Solutions Architect at Amazon Web Services (AWS), focused on the Deloitte partnership. He partners with Global System Integrators and enterprise customers to accelerate cloud adoption and business transformation through SAP and AWS solutions. A trusted advisor in the SAP on AWS space, Sachin brings deep experience in architecting scalable, resilient, and high-performing SAP workloads in the cloud. He is passionate about helping organizations unlock business value by bridging SAP landscapes with the breadth of AWS services, from infrastructure modernization to AI-driven innovation. Outside of work, Sachin enjoys spending time with family and friends, playing cricket, and watching movies.
+Sourav Sadhu is an SAP Specialist SA at AWS specializing in SAP Architecture and Generative AI Integration. He has deep expertise in enterprise workload design and AWS cloud migration, leading customer teams through the strategic implementation of SAP solutions on AWS platforms. Sourav regularly advises business and technical leaders on leveraging Generative AI to modernize SAP business processes, helping organizations achieve greater operational efficiency, innovation, and agility while ensuring robust architectural integrity, scalability, and compliance.
+Resources
+SAP on AWS Case Studies
+SAP on AWS FAQ
+Contact Us
+Find a Partner
+Follow
+Twitter
+Facebook
+LinkedIn
+Twitch
+Email Updates
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":18960,"paragraph_count":68,"sentence_count":118,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Covestro, a global polymer manufacturer with 48 production sites and approximately 17,500 employees, reduced the time to create master data records from 12 hours to 6 minutes. The company achieved this by building two AI agents on Amazon Bedrock and integrating them with SAP Master Data Governance (... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=industry_landing
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Skip to Main Content AWS for SAP Covestro Transforms Master Data Governance with AI Agents on AWS This is a guest post by Christian Jantzen, Head of Master Data Excellence & Operations at Covestro; Neelesh Jain, Senior Specialist Lead at Deloitte Germany; Ahmad Shawabkeh, Manager at Deloitte Germany; and Kristina Pietukhova, Senior Consultant at Deloitte Germany, in partnership with AWS Introduction Covestro, a global polymer manufacturer with 48 production sites and approximately 17,500 employees, reduced the time
+
+3. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The company achieved this by building two AI agents on Amazon Bedrock and integrating them with SAP Master Data Governance (MDG), turning one of its most complex operational processes into a conversational, self-service experience.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   In this post, you learn how Covestro, in collaboration with Deloitte, designed and deployed MARIS (Material Artificial Realtime Intelligence Specialist) and PARIS (Partner Artificial Realtime Intelligence Specialist) on AWS.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   You also discover a reusable blueprint for AI-driven master data governance that you can apply to reduce cycle times, improve data quality, and remove manual bottlenecks in your own SAP landscape.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The Challenge: Expert Systems Built for Experts Covestro AG , headquartered in Leverkusen, Germany, is a global manufacturer of high-performance polymer materials and components, with approximately €12.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Anthropic, Microsoft, Amazon, AWS, Deloitte
+- products: Agents, agents, agent, Agent, Claude
+- people: 暂无公开信息
+- industries: 医疗, 开发者工具, 企业服务
+- roles: 采购负责人, 销售 / 客服
+- workflows: 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 采购, 销售 / 客服
+- numbers: 48, 17, 500, 12, 6 m, 12.9 billion, 2025, 4
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Skip to Main Content AWS for SAP Covestro Transforms Master Data Governance with AI Agents on AWS This is a guest post by Christian Jantzen, Head of Master Data Excellence & Operations at Covestro; Neelesh Jain, Senior Specialist Lead at Deloitte Germany; Ahmad Shawabkeh, Manager at Deloitte Germany; and Kristina Pietukhova, Senior Consultant at Deloitte Germany, in partnership with AWS Introduction Covestro, a global polymer manufacturer with 48 production sites and approximately 17,500 employees, reduced the time / In this post, you learn how Covestro, in collaboration with Deloitte, designed and deployed MARIS (Material Artificial Realtime Intelligence Specialist) and PARIS (Partner Artificial Realtime Intelligence Specialist) on AWS. / You also discover a reusable blueprint for AI-driven master data governance that you can apply to reduce cycle times, improve data quality, and remove manual bottlenecks in your own SAP landscape.
+- case_details: Covestro, a global polymer manufacturer with 48 production sites and approximately 17,500 employees, reduced the time to create master data records from 12 hours to 6 minutes. The company achieved this by building two AI agents on Amazon Bedrock and integrating them with SAP Master Data Governance (... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=industry_landing
+- workflow_changes: The company achieved this by building two AI agents on Amazon Bedrock and integrating them with SAP Master Data Governance (MDG), turning one of its most complex operational processes into a conversational, self-service experience.
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 采购负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Covestro, a global polymer manufacturer with 48 production sites and approximately 17,500 employees, reduced the time to create master data records from 12 hours to 6 minutes. The company achieved this by building two AI agents on Amazon Bedrock and integrating them with SAP Master Data Governance (... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=industry_landing
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
