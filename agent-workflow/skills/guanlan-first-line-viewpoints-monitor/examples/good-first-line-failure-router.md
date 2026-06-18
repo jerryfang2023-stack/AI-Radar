@@ -26,7 +26,10 @@ Use this when First-Line Viewpoints is stale, missing, or reported unhealthy.
    - publish report exists;
    - publish report `builder_items_count > 0`;
    - output and report counts match.
-6. Close Hermes only after validation and a prevention artifact are recorded.
+   - report has no unresolved `Publish Failure` section;
+   - automation branch was pushed, PR merged to `main`, and Pages succeeded when the local task used `-Merge`.
+6. If afternoon feed/archive generation is healthy but push, PR, merge, or Pages failed, classify it as `afternoon_publication_failure`. Repair the publication path only.
+7. Close Hermes only after validation and a prevention artifact are recorded.
 
 ## Incorrect Behavior
 
@@ -34,5 +37,7 @@ Use this when First-Line Viewpoints is stale, missing, or reported unhealthy.
 - Creating an RSS failure inbox before the 09:30 handoff window.
 - Creating an afternoon skill failure inbox before 16:30.
 - Treating a zero-count publish report as success because the report file exists.
+- Treating a healthy builders feed/archive report as full success when push / PR / merge / Pages failed.
+- Re-running or blaming the builders feed when the real error is a stale remote branch ref causing `force-with-lease` rejection after an earlier same-day PR deleted the remote automation branch.
 - Using old `YYYY-MM.md` month timeline files as proof of current person/date sync.
 - Replacing missing morning RSS page-data with the afternoon all-builders archive.

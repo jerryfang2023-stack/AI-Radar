@@ -16,3 +16,8 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 - A local 08:30 Codex RSS miss is recoverable through the single 09:17 GitHub fallback, but it should still be recorded as local automation reliability drift.
 - Hermes must not report First-Line RSS missing before the 09:30 handoff window, and must not report the afternoon skill lane missing before the 16:30 record window.
 - Afternoon skill success requires count consistency: output frontmatter `builder_items_count > 0`, publish report `builder_items_count > 0`, and both counts matching. A report that exists with count `0` is not a healthy publish.
+
+## 2026-06-18
+
+- Afternoon builders feed/archive generation can succeed while publication fails later at branch push, PR merge, or Pages. Treat this as `afternoon_publication_failure`, not as a builders feed failure.
+- Same-day reruns after a merged PR may hit stale remote branch refs because the remote automation branch was deleted. Prune remote refs before `force-with-lease`, and require the publish report or supervision closeout to expose unresolved `Publish Failure` sections.

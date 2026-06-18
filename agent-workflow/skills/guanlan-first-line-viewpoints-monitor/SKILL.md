@@ -11,7 +11,7 @@ metadata:
     upstream: "follow-builders source data, builders workflow, Hermes inbox"
     downstream: "follow-builders-daily.json, frontstage page data, Obsidian opinion timelines, PR publication"
     gates: "builders data assertion, translation gate, URL/tag checks, sync idempotency"
-    recent_learning: "V3.3.6 sync success means same-date person/date timeline files, not old month files."
+    recent_learning: "Afternoon builders skill success requires feed/archive generation plus branch push, PR merge, and Pages publication; stale remote branch refs must be pruned before same-day reruns."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -77,6 +77,7 @@ Classify a failure before rerunning anything:
 - `prewindow_false_alarm`: Hermes checked before 09:30 for RSS or before 16:30 for the afternoon skill lane.
 - `afternoon_skill_runner`: the local `follow-builders` skill publisher failed or did not write its output/report after 16:30.
 - `afternoon_count_mismatch`: the output file count and publish report count disagree, or either is zero.
+- `afternoon_publication_failure`: the afternoon feed/archive output, report, and Obsidian sync are healthy, but branch push, PR creation, PR merge, or Pages publication failed. If same-day reruns fail with `stale info` or `force-with-lease` rejection after a previous PR deleted the remote automation branch, prune stale remote refs and rerun the publication path rather than reclassifying the feed as failed.
 
 Repair the earliest category and rerun the smallest validation. Do not substitute the afternoon skill route for missing morning RSS page data.
 
@@ -109,8 +110,11 @@ Success after 16:30 requires:
 - the report `builder_items_count` is greater than `0`;
 - the report count matches the output count.
 - the report includes Obsidian sync counts.
+- the report does not contain `publish_status: failed` or a `Publish Failure` section;
+- the automation branch was pushed, the PR was merged to `main`, and GitHub Pages completed when the local task runs with `-Merge`.
 
 If the report exists but records `0` while the output contains items, or if the report lacks Obsidian sync counts, repair or regenerate the report before closing Hermes.
+If the report shows healthy feed/archive counts but a publish failure, repair the publication path only. Do not rerun or blame the upstream builders feed unless the output file itself is stale, missing, or zero-count.
 
 ## Lane Boundaries
 

@@ -34,10 +34,11 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
 
 10. `afternoon_follow_builders_skill_lane`
     - Pass when the local afternoon `follow-builders` skill route writes `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, syncs the generated skill viewpoints into `01-SiteV2/knowledge/02-Opinion-Timelines/`, records `agent-workflow/reports/<YYYY-MM-DD>-follow-builders-skill-local-publish.md`, and Hermes records the lane at 16:30.
-    - Fail when the afternoon skill route is judged from morning RSS data only, when a missing 16:30 publish report is ignored, or when Obsidian sync counts are missing from the report.
+    - Pass when the local task running with merge enabled also pushes the automation branch, merges the PR to `main`, and waits for GitHub Pages publication or writes an explicit publish failure.
+    - Fail when the afternoon skill route is judged from morning RSS data only, when a missing 16:30 publish report is ignored, when Obsidian sync counts are missing from the report, or when feed/archive generation success is treated as full publication success without branch / PR / Pages closure.
 
 11. `first_line_failure_router`
-    - Pass when a failure is categorized as `supervision_observability`, `local_rss_cron_missed`, `github_rss_publication`, `data_gate_failure`, `obsidian_sync_failure`, `prewindow_false_alarm`, `afternoon_skill_runner`, or `afternoon_count_mismatch`.
+    - Pass when a failure is categorized as `supervision_observability`, `local_rss_cron_missed`, `github_rss_publication`, `data_gate_failure`, `obsidian_sync_failure`, `prewindow_false_alarm`, `afternoon_skill_runner`, `afternoon_count_mismatch`, or `afternoon_publication_failure`.
     - Pass when the repair targets the earliest category and reruns the smallest relevant validation.
     - Fail when RSS collection, Obsidian sync, GitHub publication, and afternoon skill publish are treated as one generic rerun problem.
 
@@ -53,6 +54,12 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
 14. `report_existence_not_success`
     - Pass when First-Line success checks inspect the content and count inside gate/manifest/publish reports, not only the presence of the files.
     - Fail when a report-only success hides stale data, missing timelines, or a zero-count afternoon publish.
+
+15. `afternoon_publication_closure`
+    - Pass when the afternoon local task distinguishes feed/archive success from publication success: `builder_items_count > 0`, Obsidian sync counts are present, no `Publish Failure` section remains unresolved, the automation branch was pushed, the PR merged to `main`, and GitHub Pages succeeded when the task ran with `-Merge`.
+    - Pass when same-day reruns prune stale remote branch refs before `git push --force-with-lease`, so a previous merged PR deleting `automation/follow-builders-skill-<date>` does not cause a false feed failure.
+    - Fail when a `stale info` / `force-with-lease` rejection after a deleted remote automation branch is classified as feed failure.
+    - Fail when the publish report says the feed/archive output is healthy but also contains `publish_status: failed`, and Hermes or Codex still reports the afternoon lane as fully complete.
 
 ## Repair Loop
 
