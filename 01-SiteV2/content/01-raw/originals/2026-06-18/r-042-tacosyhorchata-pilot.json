@@ -1,0 +1,271 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-042",
+  "title": "TacosyHorchata/Pilot",
+  "original_url": "https://github.com/TacosyHorchata/Pilot",
+  "canonical_url": "https://github.com/TacosyHorchata/Pilot",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "pilot",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-18T03:06:52.937Z",
+  "language": "mixed",
+  "full_text": "TacosyHorchata\nPilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n32\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n34 Commits\n34 Commits\nbenchmark\nbenchmark\ncli\ncli\nextension\nextension\nscripts\nscripts\nsrc\nsrc\ntests\ntests\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npilot-demo.gif\npilot-demo.gif\ntsconfig.json\ntsconfig.json\nvitest.config.ts\nvitest.config.ts\nView all files\nRepository files navigation\npilot — AI agents in your real Chrome\nInstall a Chrome extension. Your AI agent gets a tab in the browser you're already using.\nEvery other browser tool launches a new, anonymous browser . Your agent starts logged out, gets blocked by Cloudflare, can't reach anything behind auth.\nPilot is a Chrome extension + MCP server. It connects your AI agent to your real browser — same sessions, same cookies, same logins. Your agent sees what you see.\nYou: \"Summarize my GitHub notifications\"\n→ New tab opens in YOUR Chrome\n→ Already logged into GitHub\n→ Agent reads, summarizes, done\nNo headless browser. No cookie hacking. No re-authentication. No bot detection.\nHow it works\nAI Agent → MCP Server → WebSocket → Chrome Extension → Tab in your browser\n(stdio) (localhost)\nPilot runs as an MCP server — Claude Code, Cursor, or any MCP client connects via stdio\nThe Chrome extension connects via WebSocket on localhost\nYour agent gets its own tab in your real Chrome — all your sessions intact\nMultiple agents get separate tabs — color-grouped so you can tell them apart\nQuick Start\n1. Add the MCP server\n\"mcpServers\" : {\n\"pilot\" : {\n\"command\" : \" npx \" ,\n\"args\" : [ \" -y \" , \" pilot-mcp \" ]\n2. Install the Chrome extension\nnpx pilot-mcp --install-extension\nOpens Chrome's extensions page. Click Load unpacked → select the path shown in terminal.\n3. Use it\n\"Go to my GitHub notifications and summarize them\"\nA tab opens in your Chrome — already logged in as you.\nLean snapshots\nOther tools dump 50K+ chars per page into your context window. Pilot keeps things small:\nOther tools: navigate(58K) → navigate(58K) → answer = 116K chars\nPilot: navigate(2K) → navigate(2K) → snapshot(9K) = 13K chars\nsnapshot_diff shows only what changed between actions — no redundant re-reads.\nLess context = faster responses, cheaper API calls, fewer hallucinations.\nPilot vs @playwright/mcp\nPilot\n@playwright/mcp\nBrowser\nYour real Chrome (extension)\nNew Chromium instance\nAuth state\nAlready logged in everywhere\nAnonymous — manual setup\nBot detection\nReal fingerprint — not blocked\nBlocked by Cloudflare\nSnapshot size\n~2K navigate, ~9K full\n~50-60K\nSnapshot diff\npilot_snapshot_diff\nCookie import\nChrome, Arc, Brave, Edge, Comet\nManual JSON\nIframes\nTool profiles\ncore (9) / standard (30) / full (61)\n--caps groups\nTransport\nstdio\nstdio, HTTP, SSE\n61 tools across 3 profiles\nMost LLMs degrade past ~30 tools. Load only what you need:\nProfile\nTools\nWhat's included\ncore\nnavigate, snapshot, click, fill, type, press_key, wait, screenshot, snapshot_diff\nstandard\n30\nCore + tabs, scroll, hover, drag, iframes, forms, links, auth, block, find, element_state\nfull\n61\nStandard + network intercept, assertions, clipboard, geolocation, CDP, evaluate, PDF, responsive\n\"mcpServers\" : {\n\"pilot\" : {\n\"command\" : \" npx \" ,\n\"args\" : [ \" -y \" , \" pilot-mcp \" ],\n\"env\" : { \"PILOT_PROFILE\" : \" standard \" }\nDefault: standard . Full tool reference →\nHeaded fallback\nWhen the extension isn't connected, Pilot opens a visible Chromium window automatically.\nImport cookies from your real browser: pilot_import_cookies({ browser: \"chrome\", domains: [\".github.com\"] })\nSupports Chrome, Arc, Brave, Edge, Comet via macOS Keychain / Linux libsecret. For CAPTCHAs: pilot_handoff → you intervene → pilot_resume .\nRequires: npx playwright install chromium\nRequirements\nNode.js >= 18\nChrome + Pilot extension (recommended)\nmacOS or Linux\nFallback only: npx playwright install chromium\nSecurity\nExtension communicates on localhost only (127.0.0.1)\nOutput path validation prevents writes outside PILOT_OUTPUT_DIR\nPath traversal protection on all file operations\nPILOT_PROFILE controls which tools are exposed ( core / standard / full )\nCredits\nCore architecture — ref-based element selection, snapshot diffing, annotated screenshots — ported from gstack by Garry Tan . Built on Playwright and the MCP SDK .\nIf Pilot is useful, star the repo — it helps others find it.\nAbout\nChrome extension + MCP server — AI agents control a tab in your real browser, already logged in\nTopics\nmcp\ncursor\nbrowser-automation\nclaude\nplaywright\nai-agent\nmcp-server\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n32\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv0.2.0 — First public release\nLatest\nMar 25, 2026\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n83.7%\nJavaScript\n15.8%\nHTML\n0.5%",
+  "clean_text": "TacosyHorchata\nPilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n32\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n34 Commits\n34 Commits\nbenchmark\nbenchmark\ncli\ncli\nextension\nextension\nscripts\nscripts\nsrc\nsrc\ntests\ntests\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npilot-demo.gif\npilot-demo.gif\ntsconfig.json\ntsconfig.json\nvitest.config.ts\nvitest.config.ts\nView all files\nRepository files navigation\npilot — AI agents in your real Chrome\nInstall a Chrome extension. Your AI agent gets a tab in the browser you're already using.\nEvery other browser tool launches a new, anonymous browser . Your agent starts logged out, gets blocked by Cloudflare, can't reach anything behind auth.\nPilot is a Chrome extension + MCP server. It connects your AI agent to your real browser — same sessions, same cookies, same logins. Your agent sees what you see.\nYou: \"Summarize my GitHub notifications\"\n→ New tab opens in YOUR Chrome\n→ Already logged into GitHub\n→ Agent reads, summarizes, done\nNo headless browser. No cookie hacking. No re-authentication. No bot detection.\nHow it works\nAI Agent → MCP Server → WebSocket → Chrome Extension → Tab in your browser\n(stdio) (localhost)\nPilot runs as an MCP server — Claude Code, Cursor, or any MCP client connects via stdio\nThe Chrome extension connects via WebSocket on localhost\nYour agent gets its own tab in your real Chrome — all your sessions intact\nMultiple agents get separate tabs — color-grouped so you can tell them apart\nQuick Start\n1. Add the MCP server\n\"mcpServers\" : {\n\"pilot\" : {\n\"command\" : \" npx \" ,\n\"args\" : [ \" -y \" , \" pilot-mcp \" ]\n2. Install the Chrome extension\nnpx pilot-mcp --install-extension\nOpens Chrome's extensions page. Click Load unpacked → select the path shown in terminal.\n3. Use it\n\"Go to my GitHub notifications and summarize them\"\nA tab opens in your Chrome — already logged in as you.\nLean snapshots\nOther tools dump 50K+ chars per page into your context window. Pilot keeps things small:\nOther tools: navigate(58K) → navigate(58K) → answer = 116K chars\nPilot: navigate(2K) → navigate(2K) → snapshot(9K) = 13K chars\nsnapshot_diff shows only what changed between actions — no redundant re-reads.\nLess context = faster responses, cheaper API calls, fewer hallucinations.\nPilot vs @playwright/mcp\nPilot\n@playwright/mcp\nBrowser\nYour real Chrome (extension)\nNew Chromium instance\nAuth state\nAlready logged in everywhere\nAnonymous — manual setup\nBot detection\nReal fingerprint — not blocked\nBlocked by Cloudflare\nSnapshot size\n~2K navigate, ~9K full\n~50-60K\nSnapshot diff\npilot_snapshot_diff\nCookie import\nChrome, Arc, Brave, Edge, Comet\nManual JSON\nIframes\nTool profiles\ncore (9) / standard (30) / full (61)\n--caps groups\nTransport\nstdio\nstdio, HTTP, SSE\n61 tools across 3 profiles\nMost LLMs degrade past ~30 tools. Load only what you need:\nProfile\nTools\nWhat's included\ncore\nnavigate, snapshot, click, fill, type, press_key, wait, screenshot, snapshot_diff\nstandard\n30\nCore + tabs, scroll, hover, drag, iframes, forms, links, auth, block, find, element_state\nfull\n61\nStandard + network intercept, assertions, clipboard, geolocation, CDP, evaluate, PDF, responsive\n\"mcpServers\" : {\n\"pilot\" : {\n\"command\" : \" npx \" ,\n\"args\" : [ \" -y \" , \" pilot-mcp \" ],\n\"env\" : { \"PILOT_PROFILE\" : \" standard \" }\nDefault: standard . Full tool reference →\nHeaded fallback\nWhen the extension isn't connected, Pilot opens a visible Chromium window automatically.\nImport cookies from your real browser: pilot_import_cookies({ browser: \"chrome\", domains: [\".github.com\"] })\nSupports Chrome, Arc, Brave, Edge, Comet via macOS Keychain / Linux libsecret. For CAPTCHAs: pilot_handoff → you intervene → pilot_resume .\nRequires: npx playwright install chromium\nRequirements\nNode.js >= 18\nChrome + Pilot extension (recommended)\nmacOS or Linux\nFallback only: npx playwright install chromium\nSecurity\nExtension communicates on localhost only (127.0.0.1)\nOutput path validation prevents writes outside PILOT_OUTPUT_DIR\nPath traversal protection on all file operations\nPILOT_PROFILE controls which tools are exposed ( core / standard / full )\nCredits\nCore architecture — ref-based element selection, snapshot diffing, annotated screenshots — ported from gstack by Garry Tan . Built on Playwright and the MCP SDK .\nIf Pilot is useful, star the repo — it helps others find it.\nAbout\nChrome extension + MCP server — AI agents control a tab in your real browser, already logged in\nTopics\nmcp\ncursor\nbrowser-automation\nclaude\nplaywright\nai-agent\nmcp-server\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n32\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv0.2.0 — First public release\nLatest\nMar 25, 2026\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n83.7%\nJavaScript\n15.8%\nHTML\n0.5%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-18/r-042-tacosyhorchata-pilot.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-18/r-042-tacosyhorchata-pilot.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 76,
+  "extractor_diagnostics": {
+    "readability_score": 76,
+    "text_length": 5143,
+    "paragraph_count": 67,
+    "sentence_count": 37,
+    "boilerplate_hits": 7,
+    "symbol_ratio": 0.0072,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 5143,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "4b701a61ae623522",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "ea25556d4ece2a3a",
+  "content_hash": "4b701a61ae623522",
+  "full_text_hash": "4b701a61ae623522",
+  "semantic_hash": "544b6ed856567cd1",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-18T03:06:52.937Z",
+  "last_seen_at": "2026-06-18T03:06:52.937Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "# Repository: TacosyHorchata/Pilot Chrome extension + MCP server — AI agents control a tab in your real browser, already logged in # pilot — AI agents in your real Chrome > Install a Chrome extension. Your AI agent gets a tab in the browser you're already using. Pilot is a Chrome extension + MCP... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "TacosyHorchata Pilot Public Notifications You must be signed in to change notification settings Fork Star 32 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 34 Commits 34 Commits benchmark benchmark cli cli extension extension scripts scripts src src tests tests .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore LICENSE LICENSE README.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "json package-lock.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "ts View all files Repository files navigation pilot — AI agents in your real Chrome Install a Chrome extension.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Your AI agent gets a tab in the browser you're already using.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub",
+      "Cursor"
+    ],
+    "products": [
+      "MCP",
+      "agents",
+      "agent",
+      "Agent",
+      "Claude",
+      "Cursor",
+      "mcp",
+      "cursor",
+      "claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "32\nm",
+      "34",
+      "1",
+      "2",
+      "3",
+      "50",
+      "58",
+      "116"
+    ],
+    "quotes": [
+      "Summarize my GitHub notifications",
+      "mcpServers",
+      " pilot-mcp ",
+      "Go to my GitHub notifications and summarize them",
+      "mcpServers"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "gitignore LICENSE LICENSE README.",
+      "json package-lock.",
+      "Your AI agent gets a tab in the browser you're already using."
+    ],
+    "case_details": [
+      "# Repository: TacosyHorchata/Pilot Chrome extension + MCP server — AI agents control a tab in your real browser, already logged in # pilot — AI agents in your real Chrome > Install a Chrome extension. Your AI agent gets a tab in the browser you're already using. Pilot is a Chrome extension + MCP... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem",
+      "TacosyHorchata Pilot Public Notifications You must be signed in to change notification settings Fork Star 32 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 34 Commits 34 Commits benchmark benchmark cli cli extension extension scripts scripts src src tests tests .",
+      "ts View all files Repository files navigation pilot — AI agents in your real Chrome Install a Chrome extension."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# TacosyHorchata/Pilot\n\n- raw_id: R-042\n- original_url: https://github.com/TacosyHorchata/Pilot\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-18T03:06:52.937Z\n\n## clean_text\n\nTacosyHorchata\nPilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n32\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n34 Commits\n34 Commits\nbenchmark\nbenchmark\ncli\ncli\nextension\nextension\nscripts\nscripts\nsrc\nsrc\ntests\ntests\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npilot-demo.gif\npilot-demo.gif\ntsconfig.json\ntsconfig.json\nvitest.config.ts\nvitest.config.ts\nView all files\nRepository files navigation\npilot — AI agents in your real Chrome\nInstall a Chrome extension. Your AI agent gets a tab in the browser you're already using.\nEvery other browser tool launches a new, anonymous browser . Your agent starts logged out, gets blocked by Cloudflare, can't reach anything behind auth.\nPilot is a Chrome extension + MCP server. It connects your AI agent to your real browser — same sessions, same cookies, same logins. Your agent sees what you see.\nYou: \"Summarize my GitHub notifications\"\n→ New tab opens in YOUR Chrome\n→ Already logged into GitHub\n→ Agent reads, summarizes, done\nNo headless browser. No cookie hacking. No re-authentication. No bot detection.\nHow it works\nAI Agent → MCP Server → WebSocket → Chrome Extension → Tab in your browser\n(stdio) (localhost)\nPilot runs as an MCP server — Claude Code, Cursor, or any MCP client connects via stdio\nThe Chrome extension connects via WebSocket on localhost\nYour agent gets its own tab in your real Chrome — all your sessions intact\nMultiple agents get separate tabs — color-grouped so you can tell them apart\nQuick Start\n1. Add the MCP server\n\"mcpServers\" : {\n\"pilot\" : {\n\"command\" : \" npx \" ,\n\"args\" : [ \" -y \" , \" pilot-mcp \" ]\n2. Install the Chrome extension\nnpx pilot-mcp --install-extension\nOpens Chrome's extensions page. Click Load unpacked → select the path shown in terminal.\n3. Use it\n\"Go to my GitHub notifications and summarize them\"\nA tab opens in your Chrome — already logged in as you.\nLean snapshots\nOther tools dump 50K+ chars per page into your context window. Pilot keeps things small:\nOther tools: navigate(58K) → navigate(58K) → answer = 116K chars\nPilot: navigate(2K) → navigate(2K) → snapshot(9K) = 13K chars\nsnapshot_diff shows only what changed between actions — no redundant re-reads.\nLess context = faster responses, cheaper API calls, fewer hallucinations.\nPilot vs @playwright/mcp\nPilot\n@playwright/mcp\nBrowser\nYour real Chrome (extension)\nNew Chromium instance\nAuth state\nAlready logged in everywhere\nAnonymous — manual setup\nBot detection\nReal fingerprint — not blocked\nBlocked by Cloudflare\nSnapshot size\n~2K navigate, ~9K full\n~50-60K\nSnapshot diff\npilot_snapshot_diff\nCookie import\nChrome, Arc, Brave, Edge, Comet\nManual JSON\nIframes\nTool profiles\ncore (9) / standard (30) / full (61)\n--caps groups\nTransport\nstdio\nstdio, HTTP, SSE\n61 tools across 3 profiles\nMost LLMs degrade past ~30 tools. Load only what you need:\nProfile\nTools\nWhat's included\ncore\nnavigate, snapshot, click, fill, type, press_key, wait, screenshot, snapshot_diff\nstandard\n30\nCore + tabs, scroll, hover, drag, iframes, forms, links, auth, block, find, element_state\nfull\n61\nStandard + network intercept, assertions, clipboard, geolocation, CDP, evaluate, PDF, responsive\n\"mcpServers\" : {\n\"pilot\" : {\n\"command\" : \" npx \" ,\n\"args\" : [ \" -y \" , \" pilot-mcp \" ],\n\"env\" : { \"PILOT_PROFILE\" : \" standard \" }\nDefault: standard . Full tool reference →\nHeaded fallback\nWhen the extension isn't connected, Pilot opens a visible Chromium window automatically.\nImport cookies from your real browser: pilot_import_cookies({ browser: \"chrome\", domains: [\".github.com\"] })\nSupports Chrome, Arc, Brave, Edge, Comet via macOS Keychain / Linux libsecret. For CAPTCHAs: pilot_handoff → you intervene → pilot_resume .\nRequires: npx playwright install chromium\nRequirements\nNode.js >= 18\nChrome + Pilot extension (recommended)\nmacOS or Linux\nFallback only: npx playwright install chromium\nSecurity\nExtension communicates on localhost only (127.0.0.1)\nOutput path validation prevents writes outside PILOT_OUTPUT_DIR\nPath traversal protection on all file operations\nPILOT_PROFILE controls which tools are exposed ( core / standard / full )\nCredits\nCore architecture — ref-based element selection, snapshot diffing, annotated screenshots — ported from gstack by Garry Tan . Built on Playwright and the MCP SDK .\nIf Pilot is useful, star the repo — it helps others find it.\nAbout\nChrome extension + MCP server — AI agents control a tab in your real browser, already logged in\nTopics\nmcp\ncursor\nbrowser-automation\nclaude\nplaywright\nai-agent\nmcp-server\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n32\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv0.2.0 — First public release\nLatest\nMar 25, 2026\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n83.7%\nJavaScript\n15.8%\nHTML\n0.5%\n\n## full_text\n\nTacosyHorchata\nPilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\n32\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n34 Commits\n34 Commits\nbenchmark\nbenchmark\ncli\ncli\nextension\nextension\nscripts\nscripts\nsrc\nsrc\ntests\ntests\n.gitignore\n.gitignore\nLICENSE\nLICENSE\nREADME.md\nREADME.md\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npilot-demo.gif\npilot-demo.gif\ntsconfig.json\ntsconfig.json\nvitest.config.ts\nvitest.config.ts\nView all files\nRepository files navigation\npilot — AI agents in your real Chrome\nInstall a Chrome extension. Your AI agent gets a tab in the browser you're already using.\nEvery other browser tool launches a new, anonymous browser . Your agent starts logged out, gets blocked by Cloudflare, can't reach anything behind auth.\nPilot is a Chrome extension + MCP server. It connects your AI agent to your real browser — same sessions, same cookies, same logins. Your agent sees what you see.\nYou: \"Summarize my GitHub notifications\"\n→ New tab opens in YOUR Chrome\n→ Already logged into GitHub\n→ Agent reads, summarizes, done\nNo headless browser. No cookie hacking. No re-authentication. No bot detection.\nHow it works\nAI Agent → MCP Server → WebSocket → Chrome Extension → Tab in your browser\n(stdio) (localhost)\nPilot runs as an MCP server — Claude Code, Cursor, or any MCP client connects via stdio\nThe Chrome extension connects via WebSocket on localhost\nYour agent gets its own tab in your real Chrome — all your sessions intact\nMultiple agents get separate tabs — color-grouped so you can tell them apart\nQuick Start\n1. Add the MCP server\n\"mcpServers\" : {\n\"pilot\" : {\n\"command\" : \" npx \" ,\n\"args\" : [ \" -y \" , \" pilot-mcp \" ]\n2. Install the Chrome extension\nnpx pilot-mcp --install-extension\nOpens Chrome's extensions page. Click Load unpacked → select the path shown in terminal.\n3. Use it\n\"Go to my GitHub notifications and summarize them\"\nA tab opens in your Chrome — already logged in as you.\nLean snapshots\nOther tools dump 50K+ chars per page into your context window. Pilot keeps things small:\nOther tools: navigate(58K) → navigate(58K) → answer = 116K chars\nPilot: navigate(2K) → navigate(2K) → snapshot(9K) = 13K chars\nsnapshot_diff shows only what changed between actions — no redundant re-reads.\nLess context = faster responses, cheaper API calls, fewer hallucinations.\nPilot vs @playwright/mcp\nPilot\n@playwright/mcp\nBrowser\nYour real Chrome (extension)\nNew Chromium instance\nAuth state\nAlready logged in everywhere\nAnonymous — manual setup\nBot detection\nReal fingerprint — not blocked\nBlocked by Cloudflare\nSnapshot size\n~2K navigate, ~9K full\n~50-60K\nSnapshot diff\npilot_snapshot_diff\nCookie import\nChrome, Arc, Brave, Edge, Comet\nManual JSON\nIframes\nTool profiles\ncore (9) / standard (30) / full (61)\n--caps groups\nTransport\nstdio\nstdio, HTTP, SSE\n61 tools across 3 profiles\nMost LLMs degrade past ~30 tools. Load only what you need:\nProfile\nTools\nWhat's included\ncore\nnavigate, snapshot, click, fill, type, press_key, wait, screenshot, snapshot_diff\nstandard\n30\nCore + tabs, scroll, hover, drag, iframes, forms, links, auth, block, find, element_state\nfull\n61\nStandard + network intercept, assertions, clipboard, geolocation, CDP, evaluate, PDF, responsive\n\"mcpServers\" : {\n\"pilot\" : {\n\"command\" : \" npx \" ,\n\"args\" : [ \" -y \" , \" pilot-mcp \" ],\n\"env\" : { \"PILOT_PROFILE\" : \" standard \" }\nDefault: standard . Full tool reference →\nHeaded fallback\nWhen the extension isn't connected, Pilot opens a visible Chromium window automatically.\nImport cookies from your real browser: pilot_import_cookies({ browser: \"chrome\", domains: [\".github.com\"] })\nSupports Chrome, Arc, Brave, Edge, Comet via macOS Keychain / Linux libsecret. For CAPTCHAs: pilot_handoff → you intervene → pilot_resume .\nRequires: npx playwright install chromium\nRequirements\nNode.js >= 18\nChrome + Pilot extension (recommended)\nmacOS or Linux\nFallback only: npx playwright install chromium\nSecurity\nExtension communicates on localhost only (127.0.0.1)\nOutput path validation prevents writes outside PILOT_OUTPUT_DIR\nPath traversal protection on all file operations\nPILOT_PROFILE controls which tools are exposed ( core / standard / full )\nCredits\nCore architecture — ref-based element selection, snapshot diffing, annotated screenshots — ported from gstack by Garry Tan . Built on Playwright and the MCP SDK .\nIf Pilot is useful, star the repo — it helps others find it.\nAbout\nChrome extension + MCP server — AI agents control a tab in your real browser, already logged in\nTopics\nmcp\ncursor\nbrowser-automation\nclaude\nplaywright\nai-agent\nmcp-server\nResources\nReadme\nLicense\nMIT license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n32\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nv0.2.0 — First public release\nLatest\nMar 25, 2026\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n83.7%\nJavaScript\n15.8%\nHTML\n0.5%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 76\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / daily_observation, heatmap, case / high] # Repository: TacosyHorchata/Pilot Chrome extension + MCP server — AI agents control a tab in your real browser, already logged in # pilot — AI agents in your real Chrome > Install a Chrome extension. Your AI agent gets a tab in the browser you're already using. Pilot is a Chrome extension + MCP... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem\n2. [case_detail / daily_observation, heatmap, case / high] TacosyHorchata Pilot Public Notifications You must be signed in to change notification settings Fork Star 32 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 34 Commits 34 Commits benchmark benchmark cli cli extension extension scripts scripts src src tests tests .\n3. [company_action / daily_observation, heatmap, change, case, trend / high] gitignore LICENSE LICENSE README.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] json package-lock.\n5. [case_detail / daily_observation, heatmap, case / high] ts View all files Repository files navigation pilot — AI agents in your real Chrome Install a Chrome extension.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] Your AI agent gets a tab in the browser you're already using.\n"
+}

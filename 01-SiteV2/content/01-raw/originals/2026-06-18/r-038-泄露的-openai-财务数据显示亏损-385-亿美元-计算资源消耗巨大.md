@@ -1,0 +1,238 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-038
+title: "泄露的 OpenAI 财务数据显示亏损 385 亿美元，计算资源消耗巨大"
+original_url: "https://runtimewire.com/article/openai-leaked-financials-altman-compute-burn"
+canonical_url: "https://runtimewire.com/article/openai-leaked-financials-altman-compute-burn"
+source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-17T05:17:06.170Z"
+collected_at: 2026-06-18T03:06:52.907Z
+language: mixed
+full_text_hash: 5589925906614b99
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-038-泄露的-openai-财务数据显示亏损-385-亿美元-计算资源消耗巨大.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-18/r-038-泄露的-openai-财务数据显示亏损-385-亿美元-计算资源消耗巨大.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":6613,"paragraph_count":21,"sentence_count":45,"boilerplate_hits":1,"symbol_ratio":0,"method":"main"}
+has_full_text: true
+content_length: 6613
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5589925906614b99","missing":[]}
+source_volatility: high
+community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: user_feedback_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"泄露的 OpenAI 财务数据显示亏损 385 亿美元，计算资源消耗巨大","discovery_summary":"一份据称泄露的 OpenAI 财务数据被公开，显示该公司亏损达 385 亿美元，同时计算资源（compute）消耗极为巨大。该信息源自 runtimewire.com 的报道，并在 Hacker News 上引发热议，获得 128 个点赞。目前尚无官方回应，但数据揭示了 OpenAI 在维持大模型训练与推理过程中面临的巨大成本压力。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://runtimewire.com/article/openai-leaked-financials-altman-compute-burn","discovered_at":"2026-06-18T03:01:26.783Z","rank_on_page":336,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 6e4024d213972bc8
+content_hash: 5589925906614b99
+semantic_hash: a9f80aaa78f3d712
+duplicate_of: ""
+first_seen_at: "2026-06-17T05:17:06.170Z"
+last_seen_at: 2026-06-18T03:06:52.907Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["user_feedback_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","OpenAI","Microsoft","Amazon","Nvidia"],"products":["ChatGPT"],"people":[],"industries":["金融 / 保险"],"roles":["CIO / IT 负责人","销售 / 客服"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["385 亿","128","$38.53 billion","2025","$13.07 billion","$34 billion","$20.92 billion","$60.35 billion"],"quotes":["more capable, reliable, and broadly useful"]}
+evidence_seed: {"company_actions":["Why it matters OpenAI's leaked financials turn the AI boom's central question into a filing-level debate: whether Altman's revenue machine can outrun the compute bill before the IPO window closes.","The documents themselves are not public."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"一份据称泄露的 OpenAI 财务数据被公开，显示该公司亏损达 385 亿美元，同时计算资源（compute）消耗极为巨大。该信息源自 runtimewire.com 的报道，并在 Hacker News 上引发热议，获得 128 个点赞。目前尚无官方回应，但数据揭示了 OpenAI 在维持大模型训练与推理过程中面临的巨大成本压力。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Why it matters OpenAI's leaked financials turn the AI boom's central question into a filing-level debate: whether Altman's revenue machine can outrun the compute bill before the IPO window closes.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Sam Altman (@sama) 's OpenAI lost $38.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"53 billion attributable to the company in 2025, according to audited financial documents viewed by Ed Zitron and independently verified by the Financial Times , a set of figures that an Ars Technica story pushed into broader circulation Tuesday.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The documents themselves are not public.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"But the reported figures are specific enough to cut through the abstraction that has defined the AI financing cycle: OpenAI generated $13.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 泄露的 OpenAI 财务数据显示亏损 385 亿美元，计算资源消耗巨大
+
+## clean_text
+
+Why it matters
+OpenAI's leaked financials turn the AI boom's central question into a filing-level debate: whether Altman's revenue machine can outrun the compute bill before the IPO window closes.
+Sam Altman (@sama) 's OpenAI lost $38.53 billion attributable to the company in 2025, according to audited financial documents viewed by Ed Zitron and independently verified by the Financial Times , a set of figures that an Ars Technica story pushed into broader circulation Tuesday.
+The documents themselves are not public. But the reported figures are specific enough to cut through the abstraction that has defined the AI financing cycle: OpenAI generated $13.07 billion in revenue in 2025, incurred $34 billion in total costs and expenses, and posted a $20.92 billion loss from operations, according to Zitron's account of the statements. The same documents put the net loss attributable to OpenAI at $38.53 billion after a larger $60.35 billion net loss was reduced by losses attributed to noncontrolling interests.
+For Altman, the former Y Combinator president who became OpenAI's CEO in 2019, the leak lands at the precise moment his company is trying to convert the largest private AI funding story into a public-markets story. OpenAI said on June 8 that it had confidentially submitted a draft S-1 to the SEC, adding that it expected the filing to leak and had not decided when to go public.
+That timing matters because OpenAI has spent the first half of 2026 selling investors a scale argument: that compute, distribution, capital, and consumer habit can compound faster than the cost base. In March, OpenAI said it had closed $122 billion in committed capital at an $852 billion post-money valuation, with the round anchored by Amazon, Nvidia, SoftBank, and Microsoft. In the same announcement, OpenAI said it was generating $2 billion in revenue per month, had more than 900 million weekly active ChatGPT users, and had more than 50 million subscribers.
+The leaked financials do not refute the revenue growth claim. They make the other side of the equation visible.
+The operating loss is the cleanest number
+The headline net loss figure includes a major accounting item tied to OpenAI's restructuring. Zitron reported that 2025 included a $41.55 billion loss related to changes in the fair value of convertible interests and warrant liability. That item is central to interpreting the $38.53 billion attributable loss, because it means part of the year's deficit reflects the mechanics of OpenAI's capital structure rather than only the day-to-day economics of selling AI products.
+The harder number for the business is the $20.92 billion loss from operations. That figure compares with an $8.78 billion operating loss in 2024, when OpenAI reported $3.7 billion of revenue and $12.48 billion of total costs and expenses, according to the same documents described by Zitron. In plain terms: revenue rose roughly 3.5x from 2024 to 2025, but operating losses still expanded by about 2.4x.
+OpenAI's spending mix shows why. The reported 2025 figures include $7.5 billion in cost of revenue, $19.18 billion in research and development, $5.73 billion in sales and marketing, and $1.57 billion in general and administrative expense. That is the financial expression of the strategy Altman has been describing publicly: spend through the constraint, especially on compute, and use capital as a weapon while the product surface expands.
+OpenAI's own February funding announcement put the thesis in Altman's words. He said OpenAI was trying to make AI "more capable, reliable, and broadly useful" through collaboration across infrastructure, research, and products. The same release said OpenAI was raising $110 billion at a $730 billion pre-money valuation, including $30 billion from SoftBank, $30 billion from Nvidia, and $50 billion from Amazon, before the larger March close.
+Microsoft is both partner and cost center
+The leaked documents also sharpen the view of Microsoft's role. Zitron reported that OpenAI paid Microsoft $17.2 billion in expenses in 2025, including $10.59 billion booked as research and development, $6.047 billion related to cost of revenue, $527 million for sales and marketing, and $42 million for general and administrative expenses. Zitron also reported that OpenAI had $3.64 billion in liabilities to Microsoft at year-end.
+That matters because Microsoft is not just another investor on OpenAI's cap table. OpenAI's own structure page says Microsoft held roughly 27% of OpenAI Group as of the closing of OpenAI's 2025 recapitalization. The same page says the OpenAI Foundation held 26%, with the remaining 47% held by current and former employees and investors.
+The economics therefore run in both directions. Microsoft is an equity holder, commercial partner, cloud supplier, and infrastructure dependency. The leaked numbers indicate that OpenAI's model progress and product adoption remain inseparable from a vendor relationship that consumes tens of billions of dollars.
+The restructuring now has a financial shadow
+OpenAI was founded in 2015 as a nonprofit, and OpenAI says it created a for-profit subsidiary in 2019 to scale research and deployment while remaining governed and controlled by the nonprofit. In October 2025, OpenAI said its updated structure made the nonprofit the OpenAI Foundation and the for-profit entity OpenAI Group PBC, a public benefit corporation controlled by the Foundation.
+That structure was designed to solve a capital problem. Frontier-model development requires money at a scale that conventional startup equity rounds were not built to supply. OpenAI's public explanation was that the recapitalization gave OpenAI Group the structure to raise capital and retain talent while preserving mission-focused governance.
+The leaked financials show the price of that solution. OpenAI can point to one of the fastest revenue ramps in technology and one of the largest consumer software audiences ever assembled. But the company is also attempting to take an infrastructure-heavy, loss-making research lab into public-market scrutiny while its cost base is still expanding faster than any ordinary software investor would accept.
+That is the tension Altman has to carry into any IPO roadshow. OpenAI is no longer just asking investors to believe that ChatGPT can become a default interface for work and consumer software. It is asking them to believe that the world's most expensive product roadmap will eventually produce operating leverage before capital markets tire of funding the gap.
+Reader comments
+Conversation for this story loads after sign-in.
+
+## full_text
+
+Why it matters
+OpenAI's leaked financials turn the AI boom's central question into a filing-level debate: whether Altman's revenue machine can outrun the compute bill before the IPO window closes.
+Sam Altman (@sama) 's OpenAI lost $38.53 billion attributable to the company in 2025, according to audited financial documents viewed by Ed Zitron and independently verified by the Financial Times , a set of figures that an Ars Technica story pushed into broader circulation Tuesday.
+The documents themselves are not public. But the reported figures are specific enough to cut through the abstraction that has defined the AI financing cycle: OpenAI generated $13.07 billion in revenue in 2025, incurred $34 billion in total costs and expenses, and posted a $20.92 billion loss from operations, according to Zitron's account of the statements. The same documents put the net loss attributable to OpenAI at $38.53 billion after a larger $60.35 billion net loss was reduced by losses attributed to noncontrolling interests.
+For Altman, the former Y Combinator president who became OpenAI's CEO in 2019, the leak lands at the precise moment his company is trying to convert the largest private AI funding story into a public-markets story. OpenAI said on June 8 that it had confidentially submitted a draft S-1 to the SEC, adding that it expected the filing to leak and had not decided when to go public.
+That timing matters because OpenAI has spent the first half of 2026 selling investors a scale argument: that compute, distribution, capital, and consumer habit can compound faster than the cost base. In March, OpenAI said it had closed $122 billion in committed capital at an $852 billion post-money valuation, with the round anchored by Amazon, Nvidia, SoftBank, and Microsoft. In the same announcement, OpenAI said it was generating $2 billion in revenue per month, had more than 900 million weekly active ChatGPT users, and had more than 50 million subscribers.
+The leaked financials do not refute the revenue growth claim. They make the other side of the equation visible.
+The operating loss is the cleanest number
+The headline net loss figure includes a major accounting item tied to OpenAI's restructuring. Zitron reported that 2025 included a $41.55 billion loss related to changes in the fair value of convertible interests and warrant liability. That item is central to interpreting the $38.53 billion attributable loss, because it means part of the year's deficit reflects the mechanics of OpenAI's capital structure rather than only the day-to-day economics of selling AI products.
+The harder number for the business is the $20.92 billion loss from operations. That figure compares with an $8.78 billion operating loss in 2024, when OpenAI reported $3.7 billion of revenue and $12.48 billion of total costs and expenses, according to the same documents described by Zitron. In plain terms: revenue rose roughly 3.5x from 2024 to 2025, but operating losses still expanded by about 2.4x.
+OpenAI's spending mix shows why. The reported 2025 figures include $7.5 billion in cost of revenue, $19.18 billion in research and development, $5.73 billion in sales and marketing, and $1.57 billion in general and administrative expense. That is the financial expression of the strategy Altman has been describing publicly: spend through the constraint, especially on compute, and use capital as a weapon while the product surface expands.
+OpenAI's own February funding announcement put the thesis in Altman's words. He said OpenAI was trying to make AI "more capable, reliable, and broadly useful" through collaboration across infrastructure, research, and products. The same release said OpenAI was raising $110 billion at a $730 billion pre-money valuation, including $30 billion from SoftBank, $30 billion from Nvidia, and $50 billion from Amazon, before the larger March close.
+Microsoft is both partner and cost center
+The leaked documents also sharpen the view of Microsoft's role. Zitron reported that OpenAI paid Microsoft $17.2 billion in expenses in 2025, including $10.59 billion booked as research and development, $6.047 billion related to cost of revenue, $527 million for sales and marketing, and $42 million for general and administrative expenses. Zitron also reported that OpenAI had $3.64 billion in liabilities to Microsoft at year-end.
+That matters because Microsoft is not just another investor on OpenAI's cap table. OpenAI's own structure page says Microsoft held roughly 27% of OpenAI Group as of the closing of OpenAI's 2025 recapitalization. The same page says the OpenAI Foundation held 26%, with the remaining 47% held by current and former employees and investors.
+The economics therefore run in both directions. Microsoft is an equity holder, commercial partner, cloud supplier, and infrastructure dependency. The leaked numbers indicate that OpenAI's model progress and product adoption remain inseparable from a vendor relationship that consumes tens of billions of dollars.
+The restructuring now has a financial shadow
+OpenAI was founded in 2015 as a nonprofit, and OpenAI says it created a for-profit subsidiary in 2019 to scale research and deployment while remaining governed and controlled by the nonprofit. In October 2025, OpenAI said its updated structure made the nonprofit the OpenAI Foundation and the for-profit entity OpenAI Group PBC, a public benefit corporation controlled by the Foundation.
+That structure was designed to solve a capital problem. Frontier-model development requires money at a scale that conventional startup equity rounds were not built to supply. OpenAI's public explanation was that the recapitalization gave OpenAI Group the structure to raise capital and retain talent while preserving mission-focused governance.
+The leaked financials show the price of that solution. OpenAI can point to one of the fastest revenue ramps in technology and one of the largest consumer software audiences ever assembled. But the company is also attempting to take an infrastructure-heavy, loss-making research lab into public-market scrutiny while its cost base is still expanding faster than any ordinary software investor would accept.
+That is the tension Altman has to carry into any IPO roadshow. OpenAI is no longer just asking investors to believe that ChatGPT can become a default interface for work and consumer software. It is asking them to believe that the world's most expensive product roadmap will eventually produce operating leverage before capital markets tire of funding the gap.
+Reader comments
+Conversation for this story loads after sign-in.
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 94
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":6613,"paragraph_count":21,"sentence_count":45,"boilerplate_hits":1,"symbol_ratio":0,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   一份据称泄露的 OpenAI 财务数据被公开，显示该公司亏损达 385 亿美元，同时计算资源（compute）消耗极为巨大。该信息源自 runtimewire.com 的报道，并在 Hacker News 上引发热议，获得 128 个点赞。目前尚无官方回应，但数据揭示了 OpenAI 在维持大模型训练与推理过程中面临的巨大成本压力。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Why it matters OpenAI's leaked financials turn the AI boom's central question into a filing-level debate: whether Altman's revenue machine can outrun the compute bill before the IPO window closes.
+
+3. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Sam Altman (@sama) 's OpenAI lost $38.
+
+4. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   53 billion attributable to the company in 2025, according to audited financial documents viewed by Ed Zitron and independently verified by the Financial Times , a set of figures that an Ars Technica story pushed into broader circulation Tuesday.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The documents themselves are not public.
+
+6. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   But the reported figures are specific enough to cut through the abstraction that has defined the AI financing cycle: OpenAI generated $13.
+
+## business_elements
+
+- companies: Hacker News 热门（buzzing.cc 中文翻译）, OpenAI, Microsoft, Amazon, Nvidia
+- products: ChatGPT
+- people: 暂无公开信息
+- industries: 金融 / 保险
+- roles: CIO / IT 负责人, 销售 / 客服
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 385 亿, 128, $38.53 billion, 2025, $13.07 billion, $34 billion, $20.92 billion, $60.35 billion
+- quotes: more capable, reliable, and broadly useful
+
+## evidence_seed
+
+- company_actions: Why it matters OpenAI's leaked financials turn the AI boom's central question into a filing-level debate: whether Altman's revenue machine can outrun the compute bill before the IPO window closes. / The documents themselves are not public.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- user_feedback_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: user_feedback_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"泄露的 OpenAI 财务数据显示亏损 385 亿美元，计算资源消耗巨大","discovery_summary":"一份据称泄露的 OpenAI 财务数据被公开，显示该公司亏损达 385 亿美元，同时计算资源（compute）消耗极为巨大。该信息源自 runtimewire.com 的报道，并在 Hacker News 上引发热议，获得 128 个点赞。目前尚无官方回应，但数据揭示了 OpenAI 在维持大模型训练与推理过程中面临的巨大成本压力。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://runtimewire.com/article/openai-leaked-financials-altman-compute-burn","discovered_at":"2026-06-18T03:01:26.783Z","rank_on_page":336,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+一份据称泄露的 OpenAI 财务数据被公开，显示该公司亏损达 385 亿美元，同时计算资源（compute）消耗极为巨大。该信息源自 runtimewire.com 的报道，并在 Hacker News 上引发热议，获得 128 个点赞。目前尚无官方回应，但数据揭示了 OpenAI 在维持大模型训练与推理过程中面临的巨大成本压力。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
