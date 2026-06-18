@@ -1,6 +1,6 @@
 ---
 title: Industry Cases
-date: 2026-06-17
+date: 2026-06-18
 status: active
 type: community-intelligence-industry_case
 source: community-intelligence
@@ -10,15 +10,14 @@ source: community-intelligence
 
 垂直行业、商业场景和可复用案例。
 
-最新归档：[[2026-06-17 Community Intelligence]]
+最新归档：[[2026-06-18 Community Intelligence]]
 
-## 高价值条目（8 条）
+## 高价值条目（6 条）
 
 ### 1. 前几天，破局【三周年星推榜】刚刚揭幕。 我们一个一个谢过了那些把身边的人推荐进破局的星推官。 但是，在每一个亮眼的个人名字背后，还站着一群更重要的人：破局战队长们。 他们带着一整支战队冲在最…
 - 来源：AI破局｜2026-06-15 13:18
 - 分类：行业案例｜AI应用案例
 - 标签：#AI应用案例 #未识别行业 #待确认
-- 原帖：[打开原帖](https://aipoju.com/topic-details/45544551511582118)
 我们一个一个谢过了那些把身边的人推荐进破局的星推官
 - 价值判断：痛点：知识沉淀与效率
 ### 2. 破局私塾线下学习复盘：除了父母，不会有人这样一遍遍拉你了
@@ -47,24 +46,10 @@ source: community-intelligence
 4个半小时，7993字，湖北襄阳第1场线下组局深度复盘：星星之火,可以燎原
 - 价值判断：可复用方法：内容获客路径；痛点：内容生产与账号增长；资料链接：1 个
 - 资料：[资料 1](https://my.feishu.cn/docx/DCz0dZpOFo02FJxzd31cBP2NnNe?from=from_copylink)
-### 6. 破局行动家线下游学 5 小时，我把 4 个人的核心干货全压缩在这了
-- 来源：AI破局｜2026-06-06 23:26
-- 分类：行业案例｜内容生产与IP运营
-- 标签：#内容生产与IP运营 #内容与自媒体 #待确认
-破局行动家线下游学 5 小时，我把 4 个人的核心干货全压缩在这了 今天下午在北京竞园待了快 5 个小时，参加了一场线下游学
-- 价值判断：可复用方法：内容获客路径；痛点：知识沉淀与效率 / 内容生产与账号增长；资料链接：1 个
-- 资料：[资料 1](https://cxc7eefnae6.feishu.cn/docx/XxB1dwf5woP4FFxbMdDc6IcNn0d?from=from_copylink)
-### 7. 两个月在X点赞1000多条，原来这是我工作的一部分
+### 6. 沉浸式翻译用默认慢模型总卡？换DeepL Pro就顺畅了
 - 来源：生财有术｜06-08
 - 分类：行业案例｜AI应用案例
-- 命中关键词：Claude Code / n8n / Dify / Coze / Cursor / Obsidian / 飞书 / RPA
-- 标签：#AI应用案例 #未识别行业 #待确认
-两个月在X点赞1000多条，原来这是我工作的一部分 拉了数据吓一跳，我最近两个月，在 X 上点赞了 1000 多条帖子
-- 价值判断：痛点：知识沉淀与效率
-### 8. 沉浸式翻译用默认慢模型总卡？换DeepL Pro就顺畅了
-- 来源：生财有术｜06-08
-- 分类：行业案例｜AI应用案例
-- 命中关键词：Claude Code / n8n / Dify / Coze / Cursor / Obsidian / 飞书 / RPA
+- 命中关键词：n8n / Dify / Coze / Cursor / Obsidian / 飞书 / RPA / ComfyUI
 - 标签：#AI应用案例 #未识别行业 #待确认
 换DeepL Pro就顺畅了 如果你用沉浸式翻译，那么这个测试会对你很有价值没想到我默认用了个最慢的模型，难怪经常刷到英语等着翻译，切换到 DeepL Pro 后，看不到等待翻译的状态了
 
