@@ -151,10 +151,7 @@ function titleNeedsTranslation(value = "") {
   const text = String(value || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
-  // Titles with Chinese colon (：) after a subject prefix have gone through partial
-  // translation/generation (e.g. "latent ：🔬Searching the Space…"). Accept them as-is
-  // rather than blocking the entire run for untranslated post-colon English text.
-  if (text.includes("\uFF1A")) return false;
+  // A Chinese subject prefix does not make an English source title display-ready.
   if (hanCount >= 5 && /(使用|发布|融资|完成|推出|开发|应用|原文|用途见原文)/u.test(text)) return false;
   const sourceLikeEnglish = /\b(announces?|launches?|raises?|raised|secures?|secured|showcases?|success of|at scale|with new|for enterprise|startup|pre-seed|series\s+[a-z]|funding|financing|case study|report|guide|complete|introducing)\b/iu.test(text);
   if (text.length > 18 && hanCount === 0) return true;
@@ -167,8 +164,7 @@ function publicContentNeedsTranslation(value = "") {
   const text = String(value || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
-  // Text with Chinese colon (：) has partial translation; accept it
-  if (text.includes("\uFF1A")) return false;
+  // Mixed Chinese/English public text still needs enough Chinese source-facing content.
   if (text.length > 70 && latinWords.length >= 10 && hanCount < 10) return true;
   if (text.length > 120 && latinWords.length >= 14 && hanCount < 18) return true;
   return false;
@@ -231,9 +227,24 @@ function top10EventFingerprint(card = {}) {
   return normalized ? `${card.date}|${normalized.slice(0, 80)}` : "";
 }
 
+function publicFactLooksLikeTemplateFallback(value = "") {
+  const text = String(value || "").replace(/\s+/gu, " ").trim();
+  if (!text) return true;
+  return /\u539f\u6587\u6240\u8ff0(?:\u80fd\u529b|\u573a\u666f)/u.test(text)
+    || /\u539f\u6587\s*AI\s*\u4e8b\u4ef6/u.test(text)
+    || /\u516c\u5f00\u6750\u6599\u63d0\u4f9b\u4e86\u4e00\u6761\u53ef\u8ffd\u8e2a\u7684\s*AI\s*\u5546\u4e1a\u4fe1\u53f7/u.test(text)
+    || /\u9700\u7ee7\u7eed\u6838\u5bf9\u5ba2\u6237/u.test(text)
+    || /\u5ba2\u6237\u3001\u4ea7\u54c1\u548c\u4e1a\u52a1\u7ed3\u679c/u.test(text)
+    || /\u8fd9\u6761(?:\u6848\u4f8b|\u878d\u8d44|\u4ea7\u54c1)\u4fe1\u53f7\u53ef\u7528\u4e8e/u.test(text)
+    || /\u4fe1\u53f7\u4ef7\u503c\u5728\u4e8e\u89c2\u5bdf/u.test(text)
+    || /\u5177\u4f53\s*AI\s*\u5546\u4e1a\u4e8b\u4ef6/u.test(text)
+    || /\.\.\./u.test(text);
+}
+
 function top10FactIsWeak(card = {}) {
   const fact = String(card.translatedFact || card.fact || "").trim();
   if (!fact) return true;
+  if (publicFactLooksLikeTemplateFallback(fact)) return true;
   if (/^原始来源链接：?https?:\/\//iu.test(fact)) return true;
   if (/公开材料提供了一条可追踪的 AI 商业信号|需继续核对客户、产品和业务结果|鍏紑鏉愭枡鎻愪緵浜嗕竴鏉/u.test(fact)) return true;
   return false;
@@ -250,6 +261,7 @@ function publicTitleIsGeneric(value = "") {
 function publicCardFactIsWeak(card = {}) {
   const fact = String(card.translatedFact || card.fact || "").trim();
   if (!fact) return true;
+  if (publicFactLooksLikeTemplateFallback(fact)) return true;
   if (/^原始来源链接：?https?:\/\//iu.test(fact)) return true;
   if (/^鍘熵?https?:\/\//iu.test(fact)) return true;
   if (/^##\s*P-\d+/iu.test(fact) || /\braw_ref:|\braw_original_id:|\braw_archive:|\bpool_refs:/iu.test(fact)) return true;

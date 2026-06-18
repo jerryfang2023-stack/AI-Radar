@@ -758,6 +758,13 @@ function sourceDerivedChineseTitleForEnglish(title = "", sourceUrl = "") {
   const text = cleanEnglishTitleForDisplay(title);
   if (!text) return "";
   const known = [
+    [/VoiceRun Launches Full-Stack Voice AI Platform/iu, "VoiceRun 发布企业级全栈语音 AI 平台并完成 550 万美元种子轮融资"],
+    [/Applied AI Case Studies and Real-World Success Stories/iu, "GoGloby 汇总应用 AI 案例与真实业务成效"],
+    [/Ontora: AI agents that interviews every employee/iu, "Ontora 用 AI Agent 访谈员工并向企业 AI 工具传递上下文"],
+    [/A Framework for Finding A Design Partner/iu, "Andreessen Horowitz 发布寻找设计伙伴的框架"],
+    [/Introducing Amazon Bedrock Managed Knowledge Base/iu, "AWS 发布 Amazon Bedrock 托管知识库，加速企业 AI 应用构建"],
+    [/Enterprise AI Rollout Failures: Causes and Case Studies/iu, "Intuition Labs 分析企业 AI 推广失败原因与案例"],
+    [/Governed AI Agents: How to Deploy and Scale with Confidence/iu, "Boomi 讨论受治理 AI Agent 的部署与规模化"],
     [/Algorithms and packages in the AWS Marketplace.*SageMaker/iu, "Amazon SageMaker AI Marketplace 提供算法和模型包"],
     [/ElevenLabs and Better\.com Showcase Success of AI Loan Agent/iu, "ElevenLabs 与 Better.com 展示 AI 贷款 Agent Betsy 的金融服务规模化应用"],
     [/DigitalOcean Launches Inference Engine/iu, "DigitalOcean 发布生产级 AI 推理引擎与 Agentic 工作负载路由"],
@@ -835,7 +842,6 @@ function publicTitleNeedsTranslation(value = "") {
   const text = String(value || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
-  if (text.includes("\uFF1A")) return false;
   if (hanCount >= 5 && /(浣跨敤|鍙戝竷|铻嶈祫|瀹屾垚|鎺ㄥ嚭|寮€鍙憒搴旂敤|鍘熸枃|鐢ㄩ€旇鍘熸枃)/u.test(text)) return false;
   const sourceLikeEnglish = /\b(announces?|launches?|raises?|raised|secures?|secured|showcases?|success of|at scale|with new|for enterprise|startup|pre-seed|series\s+[a-z]|funding|financing|case study|report|guide|complete|introducing)\b/iu.test(text);
   if (text.length > 18 && hanCount === 0) return true;
@@ -848,10 +854,23 @@ function publicContentNeedsTranslation(value = "") {
   const text = String(value || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
-  if (text.includes("\uFF1A")) return false;
   if (text.length > 70 && latinWords.length >= 10 && hanCount < 10) return true;
   if (text.length > 120 && latinWords.length >= 14 && hanCount < 18) return true;
   return false;
+}
+
+function publicFactLooksLikeTemplateFallback(value = "") {
+  const text = String(value || "").replace(/\s+/gu, " ").trim();
+  if (!text) return true;
+  return /\u539f\u6587\u6240\u8ff0(?:\u80fd\u529b|\u573a\u666f)/u.test(text)
+    || /\u539f\u6587\s*AI\s*\u4e8b\u4ef6/u.test(text)
+    || /\u516c\u5f00\u6750\u6599\u63d0\u4f9b\u4e86\u4e00\u6761\u53ef\u8ffd\u8e2a\u7684\s*AI\s*\u5546\u4e1a\u4fe1\u53f7/u.test(text)
+    || /\u9700\u7ee7\u7eed\u6838\u5bf9\u5ba2\u6237/u.test(text)
+    || /\u5ba2\u6237\u3001\u4ea7\u54c1\u548c\u4e1a\u52a1\u7ed3\u679c/u.test(text)
+    || /\u8fd9\u6761(?:\u6848\u4f8b|\u878d\u8d44|\u4ea7\u54c1)\u4fe1\u53f7\u53ef\u7528\u4e8e/u.test(text)
+    || /\u4fe1\u53f7\u4ef7\u503c\u5728\u4e8e\u89c2\u5bdf/u.test(text)
+    || /\u5177\u4f53\s*AI\s*\u5546\u4e1a\u4e8b\u4ef6/u.test(text)
+    || /\.\.\./u.test(text);
 }
 
 function publicFactLooksLikeNavigation(value = "") {
@@ -872,6 +891,7 @@ function publicTextLooksGarbled(value = "") {
 
 function publicCandidateIsDisplayReady(card = {}) {
   if (publicTitleNeedsTranslation(card.title) || publicTitleNeedsTranslation(card.displayTitle)) return false;
+  if (publicFactLooksLikeTemplateFallback(card.translatedFact || card.summary || card.visibleFragment)) return false;
   return [card.summary, card.translatedFact, card.visibleFragment]
     .filter(Boolean)
     .every((value) => !publicTextLooksGarbled(value) && !publicContentNeedsTranslation(value));
@@ -987,7 +1007,7 @@ function publicTitleCandidate(title = "", sourceUrl = "") {
   if (cleaned && !isBadPublicDisplayTitle(cleaned) && !publicTitleNeedsTranslation(cleaned)) return cleaned;
   if (!hasCjk(raw)) {
     const sourceFallback = cleanBadPublicDisplayTitle(sourceTitleFallbackForDisplay(raw, sourceUrl));
-    if (sourceFallback && !isBadPublicDisplayTitle(sourceFallback)) return sourceFallback;
+    if (sourceFallback && !isBadPublicDisplayTitle(sourceFallback) && !publicTitleNeedsTranslation(sourceFallback)) return sourceFallback;
   }
   return "";
 }
@@ -1006,9 +1026,17 @@ function normalizeFrontstageDisplay(card = {}) {
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
   const displayTitle = publicDisplayTitle(sourceTitle, internalTitle, card.sourceUrl);
   const replacementFact = sourceTitleDerivedFact(sourceTitle || originalTitle || displayTitle, card.sourceUrl);
-  const translatedFact = (publicContentNeedsTranslation(card.translatedFact) || publicFactLooksLikeNavigation(card.translatedFact))
-    ? (replacementFact || card.summary || card.translatedFact)
-    : card.translatedFact;
+  const translatedFact = [
+    card.translatedFact,
+    replacementFact,
+    card.visibleFragment,
+    card.summary,
+  ].find((value) => (
+    value
+      && !publicContentNeedsTranslation(value)
+      && !publicFactLooksLikeNavigation(value)
+      && !publicFactLooksLikeTemplateFallback(value)
+  )) || "";
   return {
     ...card,
     title: displayTitle,
@@ -1109,6 +1137,13 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
   const source = `${text}\n${normalized}`;
   const rules = [
+    [/voicerun-launches-full-stack-voice-ai-platform|VoiceRun Launches Full-Stack Voice AI Platform|VoiceRun gets \$5\.5M/iu, "VoiceRun 宣布推出企业级全栈语音 AI 平台，并完成 550 万美元种子轮融资；资金用于扩展语音 AI 解决方案和 go-to-market，面向从 demo / pilot 进入规模化部署的企业客户。"],
+    [/applied-ai-case-studies|Applied AI Case Studies and Real-World Success Stories/iu, "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。"],
+    [/Ontora: AI agents that interviews every employee|ycombinator\.com\/companies\/ontora/iu, "Y Combinator 公司 Ontora 提供 AI Agent，用于访谈每位员工并把组织上下文交给企业 AI 工具，核心信号是企业内部知识采集和上下文传递流程的产品化。"],
+    [/A Framework for Finding A Design Partner|a-framework-for-finding-a-design-partner/iu, "Andreessen Horowitz 发布寻找设计伙伴的框架，材料重点是创业公司在产品设计、用户反馈和早期客户验证中的协作机制。"],
+    [/Introducing Amazon Bedrock Managed Knowledge Base|bedrock-managed-knowledge-base/iu, "AWS 发布 Amazon Bedrock Managed Knowledge Base，帮助开发者用企业自有数据更快构建生成式 AI 应用，并降低自建 RAG 管线、连接器和权限处理的复杂度。"],
+    [/Enterprise AI Rollout Failures: Causes and Case Studies|enterprise-ai-rollout-failures/iu, "Intuition Labs 分析企业 AI 推广失败原因与案例，指出数据准备、系统集成、治理、组织变更和 ROI 预期是企业 AI 项目落地失败的关键约束。"],
+    [/Governed AI Agents: How to Deploy and Scale with Confidence|ai-agents-deployment-and-governance/iu, "Boomi 讨论受治理 AI Agent 的部署与规模化，重点是企业在可靠性、安全、治理和集成要求下如何把 Agent 从试点推进到生产环境。"],
     [/blogs\.nvidia\.com\/blog\/2026-ces-special-presentation|NVIDIA Rubin Platform|open models|autonomous driving/iu, "NVIDIA 在 CES 展示 Rubin 平台、开放模型与自动驾驶路线，材料聚焦其下一代 AI 基础设施与落地能力布局。"],
     [/nimble-way-raises-47m|Nimble raises \$47M/iu, "TechCrunch 报道，Nimble 完成 4700 万美元 B 轮融资，由 Norwest 领投，平台用 AI Agent 实时搜索网页、验证结果，并把信息结构化成可查询的数据表。"],
     [/neocognition.*lands-40m|NeoCognition lands \$40M/iu, "TechCrunch 报道，NeoCognition 从隐身状态推出并完成 4000 万美元种子轮融资，由 Cambium Capital 和 Walden Catalyst Ventures 共同领投，方向是研发自学习 AI Agent。"],
@@ -2007,11 +2042,13 @@ function buildDailyFrontstageSelection(
       .filter((card) => card.fromCorePool)
       .filter((card) => !card.frontstageGenericCandidate && card.frontstageEvidenceScore >= 30)
       .filter(hasSourceBackedFrontstageFact)
+      .filter(publicCandidateIsDisplayReady)
       .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
     const preferredIds = new Set(preferred.map((card) => card.id));
     const fallback = coreCandidates
       .filter((card) => !preferredIds.has(card.id))
       .filter(hasSourceBackedFrontstageFact)
+      .filter(publicCandidateIsDisplayReady)
       .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
     const ranked = [...preferred, ...fallback];
     const rankedIds = new Set(ranked.map((card) => card.id));
@@ -2020,6 +2057,7 @@ function buildDailyFrontstageSelection(
       .filter((card) => !card.largeVendorKey)
       .filter((card) => !card.frontstageGenericCandidate)
       .filter((card) => card.sourceUrl && card.translatedFact && card.frontstageEvidenceScore >= 20)
+      .filter(publicCandidateIsDisplayReady)
       .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
     const rejected = [];
     const selectedForDate = [];
@@ -3445,6 +3483,7 @@ const rawCards = [
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(hasSourceFacingEvidence).filter(isPublicBusinessSignalEligible))
   .map(normalizeFrontstageDisplay)
+  .filter(hasSourceFacingEvidence)
   .map(annotateFrontstageCandidate)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const frontstageSelection = buildDailyFrontstageSelection(cards);
