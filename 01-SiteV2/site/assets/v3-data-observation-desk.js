@@ -241,6 +241,7 @@
     return [
       ...(state.payload.cards || []),
       ...(state.payload.corePoolCandidates || []),
+      ...(state.payload.enterpriseAiLensCandidates || []),
     ].find((item) => item.id === id || item.linkedCardId === id);
   }
 

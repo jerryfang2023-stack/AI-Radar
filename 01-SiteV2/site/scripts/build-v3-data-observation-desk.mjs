@@ -620,6 +620,7 @@ function subjectFromUrl(url = "") {
     if (host === "businesswire.com" && pathname.includes("digitalocean-launches-inference-engine")) return "DigitalOcean";
     if (host === "sisinternational.com") return "SIS International";
     if (host === "genzeon.one") return "Genzeon Platforms";
+    if (host === "gogloby.com") return "GoGloby";
     if (host === "linkedin.com" && pathname.includes("pascaldarc")) return "Procurement AI";
     if (host === "linkedin.com" && pathname.includes("jonjessup")) return "Hugging Face";
     if (host === "ithome.com" && pathname.includes("962/220")) return "香港 AI 应用示范社区";
@@ -3740,6 +3741,7 @@ const payload = {
   top10,
   frontstageCards,
   corePoolCandidates,
+  enterpriseAiLensCandidates,
   enterpriseAiTransformation,
   frontstageSelection: frontstageSelection.reports,
   relationshipDirections: buildRelationshipDirections(cards, activeDate),

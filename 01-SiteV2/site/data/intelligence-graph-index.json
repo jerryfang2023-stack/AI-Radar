@@ -4,7 +4,7 @@
     "siteVersion": "SITE-V3.3.8-enterprise-ai-transformation",
     "businessSignalsColumnVersion": "BSIG-V1.1.0-enterprise-ai-transformation",
     "enterpriseAiLensVersion": "EAI-V1.0.0-enterprise-ai-transformation",
-    "generatedAt": "2026-06-18T07:00:40.951Z",
+    "generatedAt": "2026-06-18T07:07:28.554Z",
     "activeDate": "2026-06-18",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -292,7 +292,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "应用 AI 案例研究和真实成功故事",
-      "subject": "World Success Stories",
+      "subject": "GoGloby",
       "sourceName": "gogloby.com",
       "sourceUrl": "https://gogloby.com/insights/applied-ai-case-studies/",
       "sourceLevel": "B",
@@ -358,7 +358,7 @@
       ],
       "fact": "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。",
       "evidencePoints": [
-        "World Success Stories 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "GoGloby 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
       "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
       "selectionReasons": [
@@ -2303,7 +2303,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "应用 AI 案例研究和真实成功故事",
-      "subject": "World Success Stories",
+      "subject": "GoGloby",
       "sourceName": "gogloby.com",
       "sourceUrl": "https://gogloby.com/insights/applied-ai-case-studies/",
       "sourceLevel": "B",
@@ -2371,7 +2371,7 @@
       ],
       "fact": "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。",
       "evidencePoints": [
-        "World Success Stories 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "GoGloby 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
       "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
       "selectionReasons": [
@@ -3217,6 +3217,14 @@
         "sourceName": "The Decoder：AI News（RSS）"
       },
       {
+        "id": "subject:GoGloby",
+        "label": "GoGloby",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "gogloby.com"
+      },
+      {
         "id": "subject:Googleblog",
         "label": "Googleblog",
         "type": "subject",
@@ -3287,14 +3295,6 @@
         "weight": 1,
         "category": "funding",
         "sourceName": "withwillow.ai"
-      },
-      {
-        "id": "subject:World-Success-Stories",
-        "label": "World Success Stories",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "gogloby.com"
       },
       {
         "id": "signal:track-ai-agent",
@@ -3382,7 +3382,7 @@
       },
       {
         "from": "category:案例",
-        "to": "subject:World-Success-Stories",
+        "to": "subject:GoGloby",
         "label": "案例",
         "weight": 1,
         "cardIds": [
@@ -3525,7 +3525,7 @@
         ]
       },
       {
-        "from": "subject:World-Success-Stories",
+        "from": "subject:GoGloby",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -3537,7 +3537,7 @@
         ]
       },
       {
-        "from": "subject:World-Success-Stories",
+        "from": "subject:GoGloby",
         "to": "signal:track-enterprise-workflow",
         "label": "关联",
         "weight": 1,
@@ -3549,7 +3549,7 @@
         ]
       },
       {
-        "from": "subject:World-Success-Stories",
+        "from": "subject:GoGloby",
         "to": "signal:customer-enterprise",
         "label": "关联",
         "weight": 1,
@@ -3879,7 +3879,7 @@
             "count": 1
           },
           {
-            "label": "Googleblog",
+            "label": "GoGloby",
             "count": 1
           }
         ],
@@ -3902,7 +3902,7 @@
           {
             "id": "SIG-20260618-A05",
             "title": "应用 AI 案例研究和真实成功故事",
-            "subject": "World Success Stories",
+            "subject": "GoGloby",
             "categoryLabel": "案例",
             "sourceName": "gogloby.com",
             "sourceUrl": "https://gogloby.com/insights/applied-ai-case-studies/",
@@ -3999,7 +3999,7 @@
           "count": 1
         },
         {
-          "label": "Googleblog",
+          "label": "GoGloby",
           "count": 1
         }
       ],
@@ -4022,7 +4022,7 @@
         {
           "id": "SIG-20260618-A05",
           "title": "应用 AI 案例研究和真实成功故事",
-          "subject": "World Success Stories",
+          "subject": "GoGloby",
           "categoryLabel": "案例",
           "sourceName": "gogloby.com",
           "sourceUrl": "https://gogloby.com/insights/applied-ai-case-studies/",
@@ -5431,7 +5431,7 @@
           "count": 1
         },
         {
-          "label": "Googleblog",
+          "label": "GoGloby",
           "count": 1
         }
       ],

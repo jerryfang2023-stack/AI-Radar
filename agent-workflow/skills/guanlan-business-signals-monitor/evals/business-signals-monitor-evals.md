@@ -97,8 +97,11 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when `enterpriseAiTransformation` prioritizes source-backed FDE / customer-embedded delivery / production deployment / workflow rollout / procurement / pilot / technical-scoping evidence over broad governance or geopolitical AI-access stories.
     - Pass when each Enterprise AI / FDE lens item title is the original/source title translated directly into Chinese, using the same source-title boundary as Top10 and Core Pool candidate display.
     - Pass when explicit FDE field notes with usable production-rollout evidence, such as a Claude-first healthcare FDE pod operating in a regulated payer workflow, can enter the Enterprise AI lens without becoming a fourth formal Signal Card type.
+    - Pass when every `enterpriseAiTransformation.cardId` resolves to a detail object in `cards`, `corePoolCandidates`, or Enterprise AI lens-only candidates, so the frontstage `详情` action never opens an empty state.
+    - Pass when Enterprise AI lens subjects prefer real company/source subjects such as `Genzeon Platforms` or `GoGloby` over extracted title fragments such as `World Success Stories` or `Field Note`.
     - Fail when a broad governance item outranks concrete FDE / implementation evidence only because it contains words such as enterprise, security, governance, or compliance.
     - Fail when an FDE lens title is rewritten into a boss-facing summary instead of a literal source-title translation.
+    - Fail when a lens-only item is displayed but omitted from the public payload used by the detail modal.
 
 ## Repair Loop
 
