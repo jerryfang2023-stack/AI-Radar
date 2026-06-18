@@ -522,6 +522,15 @@ function sourceTitleFromUrlOverride(sourceUrl = "") {
   if (/prnewswire\.com\/news-releases\/voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with-5-5-million-seed-round/iu.test(normalized)) {
     return "VoiceRun Launches Full-Stack Voice AI Platform for Enterprises with $5.5 Million Seed Round";
   }
+  if (/techcrunch\.com\/2026\/06\/17\/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/iu.test(normalized)) {
+    return "World model maker Odyssey nabs $1.45B valuation, backed by Amazon and other big names";
+  }
+  if (/developers\.googleblog\.com\/announcing-the-agentic-resource-discovery-specification/iu.test(normalized)) {
+    return "Announcing the Agentic Resource Discovery specification";
+  }
+  if (/the-decoder\.com\/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons/iu.test(normalized)) {
+    return "Zhipu AI's GLM-5.2 closes in on closed-source leaders in coding marathons";
+  }
   return "";
 }
 
@@ -791,13 +800,19 @@ function sourceTitleLiteralTranslation(title = "", sourceUrl = "") {
   const rules = [
     [/VoiceRun Launches Full-Stack Voice AI Platform for Enterprises/iu, "VoiceRun 推出面向企业的全栈语音 AI 平台，并完成 550 万美元种子轮融资"],
     [/VoiceRun gets \$5\.5M in seed funding to give enterprises more control over voice AI agents/iu, "VoiceRun 获得 550 万美元种子融资，让企业更好地控制语音 AI Agent"],
+    [/Willow Launches with \$7M to Build the Future of Enterprise AI Agent Governance/iu, "Willow 携 700 万美元融资启动，构建企业 AI Agent 治理的未来"],
+    [/INXM Raises €5\.7 Million Pre-Seed To Bridge The Gap Between Enterprise AI Demos And Real Operational Deployment/iu, "INXM 获得 570 万欧元 Pre-Seed 融资，以弥合企业 AI 演示与真实运营部署之间的差距"],
+    [/World model maker Odyssey nabs \$1\.45B valuation, backed by Amazon and other big names/iu, "世界模型公司 Odyssey 获得 14.5 亿美元估值，并获得 Amazon 等机构支持"],
     [/Pramaana Labs raises \$27M seed round from Khosla Ventures to bring formal verification to AI/iu, "Pramaana Labs 获得 Khosla Ventures 领投的 2700 万美元种子轮融资，将形式化验证引入 AI"],
+    [/Announcing the Agentic Resource Discovery specification/iu, "发布 Agentic Resource Discovery 规范"],
+    [/Zhipu AI's GLM-5\.2 closes in on closed-source leaders in coding marathons/iu, "智谱 AI 的 GLM-5.2 在编码马拉松中逼近闭源领先模型"],
     [/Applied AI Case Studies and Real-World Success Stories/iu, "应用 AI 案例研究和真实成功故事"],
     [/Ontora: AI agents that interviews every employee to hand context to AI tools/iu, "Ontora：访谈每位员工并将上下文交给 AI 工具的 AI Agent"],
     [/A Framework for Finding A Design Partner/iu, "寻找设计伙伴的框架"],
     [/Introducing Amazon Bedrock Managed Knowledge Base for faster, more accurate enterprise AI applications/iu, "推出 Amazon Bedrock 托管知识库，用于更快、更准确的企业 AI 应用"],
     [/Enterprise AI Rollout Failures: Causes and Case Studies/iu, "企业 AI 推广失败：原因与案例研究"],
     [/Governed AI Agents: How to Deploy and Scale with Confidence/iu, "受治理的 AI Agent：如何自信地部署和扩展"],
+    [/New in Amazon Bedrock AgentCore: Build agents with broader knowledge and continuous learning/iu, "Amazon Bedrock AgentCore 新功能：构建拥有更广知识和持续学习能力的 Agent"],
     [/Barcelona-based NeuralTrust raises €17\.2 million to secure and govern enterprise AI agents/iu, "巴塞罗那 NeuralTrust 融资 1720 万欧元，用于保护和治理企业 AI Agent"],
     [/World leaders want American AI\. They just don[’']t want America to be able to turn it off/iu, "世界领导人想要美国 AI，但不希望美国能够将其关闭"],
     [/Collecting robot training data is dirty, unglamorous work.*XDOF/iu, "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做"],
@@ -930,6 +945,8 @@ function publicFactLooksLikeTemplateFallback(value = "") {
     || /\u8fd9\u6761(?:\u6848\u4f8b|\u878d\u8d44|\u4ea7\u54c1)\u4fe1\u53f7\u53ef\u7528\u4e8e/u.test(text)
     || /\u4fe1\u53f7\u4ef7\u503c\u5728\u4e8e\u89c2\u5bdf/u.test(text)
     || /\u5177\u4f53\s*AI\s*\u5546\u4e1a\u4e8b\u4ef6/u.test(text)
+    || /\u516c\u5f00\u8d44\u6599\u663e\u793a\u8d44\u91d1\u7ee7\u7eed\u6d41\u5411\s*AI\s*\u4ea7\u54c1\u5316\u548c\u4f01\u4e1a\u91c7\u7528\u73af\u8282/u.test(text)
+    || /\u8fd9\u6761\u878d\u8d44\u4fe1\u53f7\u53ef\u7528\u4e8e\u5224\u65ad\u8d44\u91d1\u6d41\u5411/u.test(text)
     || /\.\.\./u.test(text);
 }
 
@@ -1199,6 +1216,12 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
   const source = `${text}\n${normalized}`;
   const rules = [
+    [/Willow Launches with \$7M to Build the Future of Enterprise AI Agent Governance/iu, "Willow 原文标题包含启动、700 万美元融资和企业 AI Agent 治理三个事实点。"],
+    [/INXM Raises €5\.7 Million Pre-Seed To Bridge The Gap Between Enterprise AI Demos And Real Operational Deployment/iu, "INXM 获得 570 万欧元 Pre-Seed 融资，原文标题说明其目标是弥合企业 AI 演示与真实运营部署之间的差距。"],
+    [/World model maker Odyssey nabs \$1\.45B valuation, backed by Amazon and other big names/iu, "Odyssey 原文标题说明该世界模型公司获得 14.5 亿美元估值，并得到 Amazon 等机构支持。"],
+    [/Announcing the Agentic Resource Discovery specification/iu, "Google Developers Blog 原文标题宣布 Agentic Resource Discovery 规范。"],
+    [/Zhipu AI's GLM-5\.2 closes in on closed-source leaders in coding marathons/iu, "The Decoder 原文标题称智谱 AI 的 GLM-5.2 在编码马拉松中逼近闭源领先模型。"],
+    [/New in Amazon Bedrock AgentCore: Build agents with broader knowledge and continuous learning/iu, "AWS 发布 Amazon Bedrock AgentCore 新功能，原文标题强调可构建拥有更广知识和持续学习能力的 Agent。"],
     [/voicerun-launches-full-stack-voice-ai-platform|VoiceRun Launches Full-Stack Voice AI Platform|VoiceRun gets \$5\.5M/iu, "VoiceRun 宣布推出企业级全栈语音 AI 平台，并完成 550 万美元种子轮融资；资金用于扩展语音 AI 解决方案和 go-to-market，面向从 demo / pilot 进入规模化部署的企业客户。"],
     [/applied-ai-case-studies|Applied AI Case Studies and Real-World Success Stories/iu, "GoGloby 汇总应用 AI 在客户运营、销售、内容和工作流中的案例，用于观察 AI 是否已经进入真实业务流程和可衡量成效。"],
     [/Ontora: AI agents that interviews every employee|ycombinator\.com\/companies\/ontora/iu, "Y Combinator 公司 Ontora 提供 AI Agent，用于访谈每位员工并把组织上下文交给企业 AI 工具，核心信号是企业内部知识采集和上下文传递流程的产品化。"],
@@ -3545,7 +3568,7 @@ function buildIntelligenceGraphIndex(payload = {}) {
 const rawCards = [
   ...signalRoots.flatMap((rootItem) => walkMarkdown(rootItem.dir).map((file) => cardFromFile(file, rootItem.category))),
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
-const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(hasSourceFacingEvidence).filter(isPublicBusinessSignalEligible))
+const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPublicBusinessSignalEligible))
   .map(normalizeFrontstageDisplay)
   .filter(hasSourceFacingEvidence)
   .filter((card) => card.title && card.date && card.sourceName)
