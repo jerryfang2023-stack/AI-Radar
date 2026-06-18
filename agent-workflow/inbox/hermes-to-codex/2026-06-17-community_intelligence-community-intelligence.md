@@ -1,4 +1,4 @@
-status: open
+status: resolved
 priority: normal
 lane: community_intelligence
 category: community_intelligence
@@ -7,7 +7,12 @@ report_path: agent-workflow/reports/2026-06-17-daily-supervision-report.md
 data_generated: yes
 needed_action: run `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>` or dispatch `.github/workflows/daily-community-intelligence-pr.yml` after local collection and archive pass
 created_at: 2026-06-17T11:19:15+08:00
-updated_at: 2026-06-17T11:19:15+08:00
+updated_at: 2026-06-18T11:24:46+08:00
+resolved_at: 2026-06-18T11:24:46+08:00
+resolver: codex
+fix_commit: pending-local-change
+validation: npm run supervise:daily -- --date=2026-06-18
+prevention_added: gate
 source: hermes-auto
 
 # Hermes Repair Request: Community Intelligence
@@ -29,3 +34,9 @@ source: hermes-auto
 ## User Escalation Needed
 
 - no, unless Codex needs GitHub permission, login state, or business judgment.
+
+## Resolution - 2026-06-18T11:24:46+08:00
+
+- fix_commit: pending-local-change
+- validation: npm run supervise:daily -- --date=2026-06-18
+- prevention_added: gate

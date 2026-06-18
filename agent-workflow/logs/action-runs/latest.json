@@ -1,38 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-17T03:20:58.210Z",
-  "date": "2026-06-17",
-  "action": "Hermes stale follow-builders inbox closure",
+  "generated_at": "2026-06-18T03:24:55.211Z",
+  "date": "2026-06-18",
+  "action": "Hermes community publication evidence fix",
   "action_status": "unregistered",
   "record_level": "required",
   "trigger": "manual",
   "status": "success",
-  "summary": "Validated the 2026-06-14 afternoon first-line skill lane and closed the stale Hermes inbox item without a new code patch.",
+  "summary": "Daily supervision now treats merged/open automation/community-intelligence date PRs as valid publication evidence; resolved 2026-06-17 and 2026-06-18 community Hermes requests after validating 2026-06-18 supervision.",
   "contexts": [],
-  "changed_files": [
-    "agent-workflow/inbox/hermes-to-codex/2026-06-14-builders-skill-afternoon.md",
-    "agent-workflow/inbox/hermes-to-codex/2026-06-17-community_intelligence-community-intelligence.md",
-    "agent-workflow/inbox/hermes-to-codex/2026-06-17-skill_ops-obsidian-sync.md",
-    "agent-workflow/reports/2026-06-17-daily-supervision-report.json",
-    "agent-workflow/reports/2026-06-17-daily-supervision-report.md",
-    "agent-workflow/reports/daily-supervision-report-latest.json",
-    "agent-workflow/reports/daily-supervision-report-latest.md"
-  ],
+  "changed_files": [],
   "outputs": [],
-  "checks": [
-    "npm run supervise:daily -- --date=2026-06-17",
-    "node stale-afternoon-skill-check-2026-06-14"
-  ],
-  "issues": [
-    "The highest-priority Hermes request remained open even though the 2026-06-14 follow-builders report and output were already present and count-consistent."
-  ],
+  "checks": [],
+  "issues": [],
   "risks": [],
-  "lessons": [
-    "Validate the stored report and output pair before re-running the afternoon follow-builders publisher for an old Hermes request."
-  ],
-  "reusable_rules": [
-    "A stale afternoon first-line inbox item can be resolved after report/output existence and count parity are confirmed; do not regenerate same-day follow-builders content before the 16:10/16:30 window."
-  ],
+  "lessons": [],
+  "reusable_rules": [],
   "retired_flags": [],
   "notes": []
 }
