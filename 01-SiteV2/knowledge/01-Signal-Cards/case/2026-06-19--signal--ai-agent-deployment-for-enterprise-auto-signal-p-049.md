@@ -1,0 +1,70 @@
+---
+id: SIG-20260619-A13
+type: signal_card
+signal_type: case
+title: "AI Agent Deployment for Enterprise: From Prototype to Production"
+date: 2026-06-19
+status: published
+source_title: "AI Agent Deployment for Enterprise: From Prototype to Production"
+asset_level: frontstage
+evidence_gate: core_evidence_passed
+fact_draft_gate: passed
+created_at: 2026-06-19T06:41:40.175Z
+updated_at: 2026-06-19T06:41:40.175Z
+
+raw_refs: ["R-052"]
+pool_refs: ["P-049"]
+primary_raw:
+  raw_ref: R-052
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-052-ai-agent-deployment-for-enterprise-from-prototype-to-production.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-052-ai-agent-deployment-for-enterprise-from-prototype-to-production.json"
+  source_url: "https://allcloud.io/blog/scalable-ai-agents-architecting-a-production-ready-deployment-platform/"
+  full_text_hash: "94af74c040699d52"
+  source_level: B
+  extraction_quality: high
+  has_full_text: true
+  pool_routes:
+    - core_pool
+  raw_qc_decision: allow
+  importance_type: important_vertical_solution
+  importance_score: 5
+
+formal_tags:
+  track: ["track-ai-agent", "track-enterprise-workflow"]
+  function: []
+  scenario: []
+  customer: ["customer-enterprise"]
+  evidence: ["evidence-customer-adoption"]
+  stage: []
+  region: []
+  source: ["source-industry-data"]
+
+signal_owner: "AI Agent Deployment for Enterprise"
+
+frontend:
+  displayTitle: "AI Agent Deployment for Enterprise: From Prototype to Production"
+  sourceLinks:
+    - "https://allcloud.io/blog/scalable-ai-agents-architecting-a-production-ready-deployment-platform/"
+---
+
+# AI Agent Deployment for Enterprise: From Prototype to Production
+
+## 新闻事实
+
+AI Agent Deployment for Enterprise: From Prototype to Production
+
+## 原文要点
+
+- 原文未提供更多可拆分事实点，需以可见原文片段核对。
+
+## 价值描述
+
+AI Agent Deployment for Enterprise 的案例信号可用于观察 AI 是否已经进入 地产开发和建筑设计流程，以及后续是否出现客户、流程或结果指标。
+
+## 可见原文片段
+
+AI Agent Deployment for Enterprise: From Prototype to Production
+
+## 证据边界
+
+none

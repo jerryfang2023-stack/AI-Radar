@@ -1,0 +1,272 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-008",
+  "title": "MCP 零接触 OAuth：Enterprise-Managed Authorization 扩展现已稳定",
+  "original_url": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth",
+  "canonical_url": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": false,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-06-19T02:21:11.402Z",
+  "collected_at": "2026-06-19T06:41:39.444Z",
+  "language": "mixed",
+  "full_text": "Table of Contents Per-user auth is high friction\nAuthorize once, inherit everywhere\nEarly adopters\nGet involved\nAcknowledgements\nThe Enterprise-Managed Authorization extension is now stable. Organizations can centrally\nmanage authorization for MCP servers and end-users can access all connected MCP servers\nthrough a single log in. The extension is being adopted by Anthropic, Microsoft, Okta and\na growing number of MCP servers.\nThe Enterprise-Managed Authorization (EMA) extension\nis now stable. We&rsquo;ve heard from the community that authorization and repeated consent\nprompts from connected MCP servers is one of the biggest pain points when it comes to\nmanaging connectivity in enterprise environments. This extension helps address this.\nEMA allows organizations to control MCP server access centrally through their trusted\nidentity provider. For end-users, this means a zero-touch setup: the MCP servers they\nneed are connected on first login, with no per-app OAuth and nothing to configure as a\none-off.\nPer-user auth is high friction #\nThe standard MCP authorization model was designed to be user-scoped and bound to the\ntraditional interactive auth conventions. While this might work well for more general\nconsumer scenarios where individuals decide what touches their data, this doesn&rsquo;t quite\nscale for enterprise deployments:\nEvery employee has to authorize every server individually : onboarding means\nmanually connecting service after service.\nSecurity teams cannot enforce consistent policy : access is whatever each user\nauthorized, with no central control or audit trail.\nWork and personal accounts blur together : there&rsquo;s no way to require a corporate\nidentity, so a user can connect a personal account to a work tool.\nThis combination of factors slows MCP adoption and pushes people toward brittle\nworkarounds. With no universal standard for preserving shared auth state, everyone\ninvents their own bespoke solution. The data and tools are available, but the per-user\nauthorization tax keeps most of them switched off.\nAuthorize once, inherit everywhere #\nEnterprise-Managed Authorization\nmakes the organization&rsquo;s IdP the authoritative decision-maker for MCP server access.\nAdministrators define the policy once and users can authenticate with their existing\nidentity into the MCP host. The IdP can grant or deny access based on group membership,\nrole, and conditional access rules.\nUnder the hood, the client obtains an\nIdentity Assertion JWT Authorization Grant (ID-JAG)\nfrom the IdP during single sign-on and exchanges it for an access token from the MCP\nserver&rsquo;s authorization server. The user is never redirected through a per-server consent\nscreen. Three properties fall out of that flow:\nAuthorize once, inherit everywhere: admins enable a server for the org. Users get\nit automatically, scoped to the groups and roles they already have.\nCentralized policy and audit: access decisions live in the IdP admin console, with\none auditable trail across every connector.\nRemoving personal/enterprise mixups: by removing the interactive account selection\nstep, it&rsquo;s much easier to prevent data flowing between personal and enterprise accounts\nby mistake or compromise.\nWe see this as a brand new baseline for MCP in the enterprise. When users log in, their\nclient should be connected to the tools and data they&rsquo;re authorized to use with no extra\nsteps in between.\nEarly adopters #\nThis launch brought together three groups that collaborated closely on making the\nimplementation real:\nIdentity providers: Okta is the first supported identity provider. Organizations\nusing Okta can provision MCP access to supported servers through any supported client,\nusing\nOkta&rsquo;s Cross App Access (XAA) .\nClients:\nAnthropic has implemented the extension\nin its shared MCP layer for Claude. Admins can authorize MCP servers for users across\nClaude, Claude Code, and Cowork. Additionally,\nVisual Studio Code has also added support\nfor EMA right in the IDE.\nServers: Asana, Atlassian, Canva, Figma, Granola, Linear and Supabase now support\nEMA, with Slack and more actively adding support.\nWe&rsquo;re excited for more identity providers, clients, and servers to adopt\nEnterprise-Managed Auth to help reduce the authorization-related fatigue and\nsignificantly improve the security and observability posture for its implementers.\n&ldquo;The momentum around MCP is incredible, but as we move toward an interconnected AI\nworkforce, security can&rsquo;t be an afterthought. By embedding the Cross App Access protocol\ninto MCP as the Enterprise-Managed Authorization extension, we turn identity into a\ncentralized governance plane and give security teams strict compliance control and users\na seamless, secure experience.&rdquo;\n— Aaron Parecki, Director of Identity Standards, Okta\n&ldquo;The Figma MCP brings the power of code and canvas together so teams can move faster,\nexplore more and ship products that stand out. As MCP adoption grows, XAA makes it\neasier for enterprises to scale their MCP deployments securely without slowing teams\ndown.&rdquo;\n— Devdatta Akhawe, VP of Engineering, Figma\n&ldquo;Logging in once and automatically having all your MCP connectors automatically setup is\npretty magical.&rdquo;\n— Tom Moor, Head of Engineering, Linear\nGet involved #\nAs with all other MCP extensions, features, and enhancements, we welcome your input.\nWe&rsquo;re encouraging clients, servers, and identity platforms to review the extension\nspecification and add support for the new standard into their products:\nRead the requirements: the\nEnterprise-Managed Authorization page\ndocuments the flow for clients, servers, and authorization servers.\nSource and draft spec: see the\next-auth repository and the\ndraft specification\nfor the latest in EMA evolution as well as any support materials that will help you get\nstarted.\nIf you&rsquo;re interested in discussing the extension, sharing compatibility reports, or\niterating on the extension, join the\nEMA Interest Group .\nAcknowledgements #\nEnterprise-Managed Authorization is the work of the MCP community: the authors of\nSEP-990, the maintainers of the\next-auth repository , and the identity\nand MCP providers\nwho tested early implementations and pushed the spec forward. Thank you to everyone who\ncontributed.",
+  "clean_text": "Table of Contents Per-user auth is high friction\nAuthorize once, inherit everywhere\nEarly adopters\nGet involved\nAcknowledgements\nThe Enterprise-Managed Authorization extension is now stable. Organizations can centrally\nmanage authorization for MCP servers and end-users can access all connected MCP servers\nthrough a single log in. The extension is being adopted by Anthropic, Microsoft, Okta and\na growing number of MCP servers.\nThe Enterprise-Managed Authorization (EMA) extension\nis now stable. We&rsquo;ve heard from the community that authorization and repeated consent\nprompts from connected MCP servers is one of the biggest pain points when it comes to\nmanaging connectivity in enterprise environments. This extension helps address this.\nEMA allows organizations to control MCP server access centrally through their trusted\nidentity provider. For end-users, this means a zero-touch setup: the MCP servers they\nneed are connected on first login, with no per-app OAuth and nothing to configure as a\none-off.\nPer-user auth is high friction #\nThe standard MCP authorization model was designed to be user-scoped and bound to the\ntraditional interactive auth conventions. While this might work well for more general\nconsumer scenarios where individuals decide what touches their data, this doesn&rsquo;t quite\nscale for enterprise deployments:\nEvery employee has to authorize every server individually : onboarding means\nmanually connecting service after service.\nSecurity teams cannot enforce consistent policy : access is whatever each user\nauthorized, with no central control or audit trail.\nWork and personal accounts blur together : there&rsquo;s no way to require a corporate\nidentity, so a user can connect a personal account to a work tool.\nThis combination of factors slows MCP adoption and pushes people toward brittle\nworkarounds. With no universal standard for preserving shared auth state, everyone\ninvents their own bespoke solution. The data and tools are available, but the per-user\nauthorization tax keeps most of them switched off.\nAuthorize once, inherit everywhere #\nEnterprise-Managed Authorization\nmakes the organization&rsquo;s IdP the authoritative decision-maker for MCP server access.\nAdministrators define the policy once and users can authenticate with their existing\nidentity into the MCP host. The IdP can grant or deny access based on group membership,\nrole, and conditional access rules.\nUnder the hood, the client obtains an\nIdentity Assertion JWT Authorization Grant (ID-JAG)\nfrom the IdP during single sign-on and exchanges it for an access token from the MCP\nserver&rsquo;s authorization server. The user is never redirected through a per-server consent\nscreen. Three properties fall out of that flow:\nAuthorize once, inherit everywhere: admins enable a server for the org. Users get\nit automatically, scoped to the groups and roles they already have.\nCentralized policy and audit: access decisions live in the IdP admin console, with\none auditable trail across every connector.\nRemoving personal/enterprise mixups: by removing the interactive account selection\nstep, it&rsquo;s much easier to prevent data flowing between personal and enterprise accounts\nby mistake or compromise.\nWe see this as a brand new baseline for MCP in the enterprise. When users log in, their\nclient should be connected to the tools and data they&rsquo;re authorized to use with no extra\nsteps in between.\nEarly adopters #\nThis launch brought together three groups that collaborated closely on making the\nimplementation real:\nIdentity providers: Okta is the first supported identity provider. Organizations\nusing Okta can provision MCP access to supported servers through any supported client,\nusing\nOkta&rsquo;s Cross App Access (XAA) .\nClients:\nAnthropic has implemented the extension\nin its shared MCP layer for Claude. Admins can authorize MCP servers for users across\nClaude, Claude Code, and Cowork. Additionally,\nVisual Studio Code has also added support\nfor EMA right in the IDE.\nServers: Asana, Atlassian, Canva, Figma, Granola, Linear and Supabase now support\nEMA, with Slack and more actively adding support.\nWe&rsquo;re excited for more identity providers, clients, and servers to adopt\nEnterprise-Managed Auth to help reduce the authorization-related fatigue and\nsignificantly improve the security and observability posture for its implementers.\n&ldquo;The momentum around MCP is incredible, but as we move toward an interconnected AI\nworkforce, security can&rsquo;t be an afterthought. By embedding the Cross App Access protocol\ninto MCP as the Enterprise-Managed Authorization extension, we turn identity into a\ncentralized governance plane and give security teams strict compliance control and users\na seamless, secure experience.&rdquo;\n— Aaron Parecki, Director of Identity Standards, Okta\n&ldquo;The Figma MCP brings the power of code and canvas together so teams can move faster,\nexplore more and ship products that stand out. As MCP adoption grows, XAA makes it\neasier for enterprises to scale their MCP deployments securely without slowing teams\ndown.&rdquo;\n— Devdatta Akhawe, VP of Engineering, Figma\n&ldquo;Logging in once and automatically having all your MCP connectors automatically setup is\npretty magical.&rdquo;\n— Tom Moor, Head of Engineering, Linear\nGet involved #\nAs with all other MCP extensions, features, and enhancements, we welcome your input.\nWe&rsquo;re encouraging clients, servers, and identity platforms to review the extension\nspecification and add support for the new standard into their products:\nRead the requirements: the\nEnterprise-Managed Authorization page\ndocuments the flow for clients, servers, and authorization servers.\nSource and draft spec: see the\next-auth repository and the\ndraft specification\nfor the latest in EMA evolution as well as any support materials that will help you get\nstarted.\nIf you&rsquo;re interested in discussing the extension, sharing compatibility reports, or\niterating on the extension, join the\nEMA Interest Group .\nAcknowledgements #\nEnterprise-Managed Authorization is the work of the MCP community: the authors of\nSEP-990, the maintainers of the\next-auth repository , and the identity\nand MCP providers\nwho tested early implementations and pushed the spec forward. Thank you to everyone who\ncontributed.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-19/r-008-mcp-零接触-oauth-enterprise-managed-authorization-扩展现已稳定.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-19/r-008-mcp-零接触-oauth-enterprise-managed-authorization-扩展现已稳定.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 6306,
+    "paragraph_count": 92,
+    "sentence_count": 41,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6306,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "0a2b61255595b776",
+    "missing": []
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "index_only_or_directory_page",
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "MCP 零接触 OAuth：Enterprise-Managed Authorization 扩展现已稳定",
+    "discovery_summary": "Enterprise-Managed Authorization （EMA） 扩展现已稳定。该扩展允许组织通过受信任的身份提供商（如 Okta）集中控制 MCP 服务器的访问权限。终端用户首次登录即可自动连接所有已授权的 MCP 服务器，无需逐个执行 OAuth 授权。Anthropic 已在 Claude、Claude Code 和 Cowork 中实现该扩展，Visual Studio Code 也已支持。Asana、Atlassian、Canva、Figma、Granola、Linear、Supabase 等服务器已启用 EMA，Slack 正在添加支持。Microsoft、Okta 等也参与了采用。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth",
+    "discovered_at": "2026-06-19T06:38:20.338Z",
+    "rank_on_page": 50,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "0586e5610822e6ed",
+  "content_hash": "0a2b61255595b776",
+  "full_text_hash": "0a2b61255595b776",
+  "semantic_hash": "965f60d7a74e8dd7",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-19T02:21:11.402Z",
+  "last_seen_at": "2026-06-19T06:41:39.444Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "Enterprise-Managed Authorization （EMA） 扩展现已稳定。该扩展允许组织通过受信任的身份提供商（如 Okta）集中控制 MCP 服务器的访问权限。终端用户首次登录即可自动连接所有已授权的 MCP 服务器，无需逐个执行 OAuth 授权。Anthropic 已在 Claude、Claude Code 和 Cowork 中实现该扩展，Visual Studio Code 也已支持。Asana、Atlassian、Canva、Figma、Granola、Linear、Supabase 等服务器已启用 EMA，Slack 正在添加支持。Microsoft、Okta 等也参与了采用。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Table of Contents Per-user auth is high friction Authorize once, inherit everywhere Early adopters Get involved Acknowledgements The Enterprise-Managed Authorization extension is now stable.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Organizations can centrally manage authorization for MCP servers and end-users can access all connected MCP servers through a single log in.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The extension is being adopted by Anthropic, Microsoft, Okta and a growing number of MCP servers.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The Enterprise-Managed Authorization (EMA) extension is now stable.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "We&rsquo;ve heard from the community that authorization and repeated consent prompts from connected MCP servers is one of the biggest pain points when it comes to managing connectivity in enterprise environments.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "Anthropic",
+      "Microsoft"
+    ],
+    "products": [
+      "MCP",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "990"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Table of Contents Per-user auth is high friction Authorize once, inherit everywhere Early adopters Get involved Acknowledgements The Enterprise-Managed Authorization extension is now stable.",
+      "Organizations can centrally manage authorization for MCP servers and end-users can access all connected MCP servers through a single log in.",
+      "The extension is being adopted by Anthropic, Microsoft, Okta and a growing number of MCP servers."
+    ],
+    "case_details": [
+      "Enterprise-Managed Authorization （EMA） 扩展现已稳定。该扩展允许组织通过受信任的身份提供商（如 Okta）集中控制 MCP 服务器的访问权限。终端用户首次登录即可自动连接所有已授权的 MCP 服务器，无需逐个执行 OAuth 授权。Anthropic 已在 Claude、Claude Code 和 Cowork 中实现该扩展，Visual Studio Code 也已支持。Asana、Atlassian、Canva、Figma、Granola、Linear、Supabase 等服务器已启用 EMA，Slack 正在添加支持。Microsoft、Okta 等也参与了采用。"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "疑似官网首页、产品目录或导航页，只能索引留存"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# MCP 零接触 OAuth：Enterprise-Managed Authorization 扩展现已稳定\n\n- raw_id: R-008\n- original_url: https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-06-19T06:41:39.444Z\n\n## clean_text\n\nTable of Contents Per-user auth is high friction\nAuthorize once, inherit everywhere\nEarly adopters\nGet involved\nAcknowledgements\nThe Enterprise-Managed Authorization extension is now stable. Organizations can centrally\nmanage authorization for MCP servers and end-users can access all connected MCP servers\nthrough a single log in. The extension is being adopted by Anthropic, Microsoft, Okta and\na growing number of MCP servers.\nThe Enterprise-Managed Authorization (EMA) extension\nis now stable. We&rsquo;ve heard from the community that authorization and repeated consent\nprompts from connected MCP servers is one of the biggest pain points when it comes to\nmanaging connectivity in enterprise environments. This extension helps address this.\nEMA allows organizations to control MCP server access centrally through their trusted\nidentity provider. For end-users, this means a zero-touch setup: the MCP servers they\nneed are connected on first login, with no per-app OAuth and nothing to configure as a\none-off.\nPer-user auth is high friction #\nThe standard MCP authorization model was designed to be user-scoped and bound to the\ntraditional interactive auth conventions. While this might work well for more general\nconsumer scenarios where individuals decide what touches their data, this doesn&rsquo;t quite\nscale for enterprise deployments:\nEvery employee has to authorize every server individually : onboarding means\nmanually connecting service after service.\nSecurity teams cannot enforce consistent policy : access is whatever each user\nauthorized, with no central control or audit trail.\nWork and personal accounts blur together : there&rsquo;s no way to require a corporate\nidentity, so a user can connect a personal account to a work tool.\nThis combination of factors slows MCP adoption and pushes people toward brittle\nworkarounds. With no universal standard for preserving shared auth state, everyone\ninvents their own bespoke solution. The data and tools are available, but the per-user\nauthorization tax keeps most of them switched off.\nAuthorize once, inherit everywhere #\nEnterprise-Managed Authorization\nmakes the organization&rsquo;s IdP the authoritative decision-maker for MCP server access.\nAdministrators define the policy once and users can authenticate with their existing\nidentity into the MCP host. The IdP can grant or deny access based on group membership,\nrole, and conditional access rules.\nUnder the hood, the client obtains an\nIdentity Assertion JWT Authorization Grant (ID-JAG)\nfrom the IdP during single sign-on and exchanges it for an access token from the MCP\nserver&rsquo;s authorization server. The user is never redirected through a per-server consent\nscreen. Three properties fall out of that flow:\nAuthorize once, inherit everywhere: admins enable a server for the org. Users get\nit automatically, scoped to the groups and roles they already have.\nCentralized policy and audit: access decisions live in the IdP admin console, with\none auditable trail across every connector.\nRemoving personal/enterprise mixups: by removing the interactive account selection\nstep, it&rsquo;s much easier to prevent data flowing between personal and enterprise accounts\nby mistake or compromise.\nWe see this as a brand new baseline for MCP in the enterprise. When users log in, their\nclient should be connected to the tools and data they&rsquo;re authorized to use with no extra\nsteps in between.\nEarly adopters #\nThis launch brought together three groups that collaborated closely on making the\nimplementation real:\nIdentity providers: Okta is the first supported identity provider. Organizations\nusing Okta can provision MCP access to supported servers through any supported client,\nusing\nOkta&rsquo;s Cross App Access (XAA) .\nClients:\nAnthropic has implemented the extension\nin its shared MCP layer for Claude. Admins can authorize MCP servers for users across\nClaude, Claude Code, and Cowork. Additionally,\nVisual Studio Code has also added support\nfor EMA right in the IDE.\nServers: Asana, Atlassian, Canva, Figma, Granola, Linear and Supabase now support\nEMA, with Slack and more actively adding support.\nWe&rsquo;re excited for more identity providers, clients, and servers to adopt\nEnterprise-Managed Auth to help reduce the authorization-related fatigue and\nsignificantly improve the security and observability posture for its implementers.\n&ldquo;The momentum around MCP is incredible, but as we move toward an interconnected AI\nworkforce, security can&rsquo;t be an afterthought. By embedding the Cross App Access protocol\ninto MCP as the Enterprise-Managed Authorization extension, we turn identity into a\ncentralized governance plane and give security teams strict compliance control and users\na seamless, secure experience.&rdquo;\n— Aaron Parecki, Director of Identity Standards, Okta\n&ldquo;The Figma MCP brings the power of code and canvas together so teams can move faster,\nexplore more and ship products that stand out. As MCP adoption grows, XAA makes it\neasier for enterprises to scale their MCP deployments securely without slowing teams\ndown.&rdquo;\n— Devdatta Akhawe, VP of Engineering, Figma\n&ldquo;Logging in once and automatically having all your MCP connectors automatically setup is\npretty magical.&rdquo;\n— Tom Moor, Head of Engineering, Linear\nGet involved #\nAs with all other MCP extensions, features, and enhancements, we welcome your input.\nWe&rsquo;re encouraging clients, servers, and identity platforms to review the extension\nspecification and add support for the new standard into their products:\nRead the requirements: the\nEnterprise-Managed Authorization page\ndocuments the flow for clients, servers, and authorization servers.\nSource and draft spec: see the\next-auth repository and the\ndraft specification\nfor the latest in EMA evolution as well as any support materials that will help you get\nstarted.\nIf you&rsquo;re interested in discussing the extension, sharing compatibility reports, or\niterating on the extension, join the\nEMA Interest Group .\nAcknowledgements #\nEnterprise-Managed Authorization is the work of the MCP community: the authors of\nSEP-990, the maintainers of the\next-auth repository , and the identity\nand MCP providers\nwho tested early implementations and pushed the spec forward. Thank you to everyone who\ncontributed.\n\n## full_text\n\nTable of Contents Per-user auth is high friction\nAuthorize once, inherit everywhere\nEarly adopters\nGet involved\nAcknowledgements\nThe Enterprise-Managed Authorization extension is now stable. Organizations can centrally\nmanage authorization for MCP servers and end-users can access all connected MCP servers\nthrough a single log in. The extension is being adopted by Anthropic, Microsoft, Okta and\na growing number of MCP servers.\nThe Enterprise-Managed Authorization (EMA) extension\nis now stable. We&rsquo;ve heard from the community that authorization and repeated consent\nprompts from connected MCP servers is one of the biggest pain points when it comes to\nmanaging connectivity in enterprise environments. This extension helps address this.\nEMA allows organizations to control MCP server access centrally through their trusted\nidentity provider. For end-users, this means a zero-touch setup: the MCP servers they\nneed are connected on first login, with no per-app OAuth and nothing to configure as a\none-off.\nPer-user auth is high friction #\nThe standard MCP authorization model was designed to be user-scoped and bound to the\ntraditional interactive auth conventions. While this might work well for more general\nconsumer scenarios where individuals decide what touches their data, this doesn&rsquo;t quite\nscale for enterprise deployments:\nEvery employee has to authorize every server individually : onboarding means\nmanually connecting service after service.\nSecurity teams cannot enforce consistent policy : access is whatever each user\nauthorized, with no central control or audit trail.\nWork and personal accounts blur together : there&rsquo;s no way to require a corporate\nidentity, so a user can connect a personal account to a work tool.\nThis combination of factors slows MCP adoption and pushes people toward brittle\nworkarounds. With no universal standard for preserving shared auth state, everyone\ninvents their own bespoke solution. The data and tools are available, but the per-user\nauthorization tax keeps most of them switched off.\nAuthorize once, inherit everywhere #\nEnterprise-Managed Authorization\nmakes the organization&rsquo;s IdP the authoritative decision-maker for MCP server access.\nAdministrators define the policy once and users can authenticate with their existing\nidentity into the MCP host. The IdP can grant or deny access based on group membership,\nrole, and conditional access rules.\nUnder the hood, the client obtains an\nIdentity Assertion JWT Authorization Grant (ID-JAG)\nfrom the IdP during single sign-on and exchanges it for an access token from the MCP\nserver&rsquo;s authorization server. The user is never redirected through a per-server consent\nscreen. Three properties fall out of that flow:\nAuthorize once, inherit everywhere: admins enable a server for the org. Users get\nit automatically, scoped to the groups and roles they already have.\nCentralized policy and audit: access decisions live in the IdP admin console, with\none auditable trail across every connector.\nRemoving personal/enterprise mixups: by removing the interactive account selection\nstep, it&rsquo;s much easier to prevent data flowing between personal and enterprise accounts\nby mistake or compromise.\nWe see this as a brand new baseline for MCP in the enterprise. When users log in, their\nclient should be connected to the tools and data they&rsquo;re authorized to use with no extra\nsteps in between.\nEarly adopters #\nThis launch brought together three groups that collaborated closely on making the\nimplementation real:\nIdentity providers: Okta is the first supported identity provider. Organizations\nusing Okta can provision MCP access to supported servers through any supported client,\nusing\nOkta&rsquo;s Cross App Access (XAA) .\nClients:\nAnthropic has implemented the extension\nin its shared MCP layer for Claude. Admins can authorize MCP servers for users across\nClaude, Claude Code, and Cowork. Additionally,\nVisual Studio Code has also added support\nfor EMA right in the IDE.\nServers: Asana, Atlassian, Canva, Figma, Granola, Linear and Supabase now support\nEMA, with Slack and more actively adding support.\nWe&rsquo;re excited for more identity providers, clients, and servers to adopt\nEnterprise-Managed Auth to help reduce the authorization-related fatigue and\nsignificantly improve the security and observability posture for its implementers.\n&ldquo;The momentum around MCP is incredible, but as we move toward an interconnected AI\nworkforce, security can&rsquo;t be an afterthought. By embedding the Cross App Access protocol\ninto MCP as the Enterprise-Managed Authorization extension, we turn identity into a\ncentralized governance plane and give security teams strict compliance control and users\na seamless, secure experience.&rdquo;\n— Aaron Parecki, Director of Identity Standards, Okta\n&ldquo;The Figma MCP brings the power of code and canvas together so teams can move faster,\nexplore more and ship products that stand out. As MCP adoption grows, XAA makes it\neasier for enterprises to scale their MCP deployments securely without slowing teams\ndown.&rdquo;\n— Devdatta Akhawe, VP of Engineering, Figma\n&ldquo;Logging in once and automatically having all your MCP connectors automatically setup is\npretty magical.&rdquo;\n— Tom Moor, Head of Engineering, Linear\nGet involved #\nAs with all other MCP extensions, features, and enhancements, we welcome your input.\nWe&rsquo;re encouraging clients, servers, and identity platforms to review the extension\nspecification and add support for the new standard into their products:\nRead the requirements: the\nEnterprise-Managed Authorization page\ndocuments the flow for clients, servers, and authorization servers.\nSource and draft spec: see the\next-auth repository and the\ndraft specification\nfor the latest in EMA evolution as well as any support materials that will help you get\nstarted.\nIf you&rsquo;re interested in discussing the extension, sharing compatibility reports, or\niterating on the extension, join the\nEMA Interest Group .\nAcknowledgements #\nEnterprise-Managed Authorization is the work of the MCP community: the authors of\nSEP-990, the maintainers of the\next-auth repository , and the identity\nand MCP providers\nwho tested early implementations and pushed the spec forward. Thank you to everyone who\ncontributed.\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / daily_observation, heatmap, case / high] Enterprise-Managed Authorization （EMA） 扩展现已稳定。该扩展允许组织通过受信任的身份提供商（如 Okta）集中控制 MCP 服务器的访问权限。终端用户首次登录即可自动连接所有已授权的 MCP 服务器，无需逐个执行 OAuth 授权。Anthropic 已在 Claude、Claude Code 和 Cowork 中实现该扩展，Visual Studio Code 也已支持。Asana、Atlassian、Canva、Figma、Granola、Linear、Supabase 等服务器已启用 EMA，Slack 正在添加支持。Microsoft、Okta 等也参与了采用。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Table of Contents Per-user auth is high friction Authorize once, inherit everywhere Early adopters Get involved Acknowledgements The Enterprise-Managed Authorization extension is now stable.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] Organizations can centrally manage authorization for MCP servers and end-users can access all connected MCP servers through a single log in.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] The extension is being adopted by Anthropic, Microsoft, Okta and a growing number of MCP servers.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] The Enterprise-Managed Authorization (EMA) extension is now stable.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] We&rsquo;ve heard from the community that authorization and repeated consent prompts from connected MCP servers is one of the biggest pain points when it comes to managing connectivity in enterprise environments.\n"
+}
