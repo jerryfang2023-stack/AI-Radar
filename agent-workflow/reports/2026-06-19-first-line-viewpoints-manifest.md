@@ -1,8 +1,8 @@
 # 2026-06-19 First-Line Viewpoints Manifest
 
-- generated_at: 2026-06-19T09:32:09+08:00
+- generated_at: 2026-06-19T14:32:29+08:00
 - workflow_mode: first_line_viewpoints_pr
-- trigger: workflow_dispatch
+- trigger: schedule
 - skip: false
 - skip_reason: not_applicable
 - existing_data_date: 2026-06-19
