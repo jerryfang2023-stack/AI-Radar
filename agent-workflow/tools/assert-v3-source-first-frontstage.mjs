@@ -278,6 +278,9 @@ function publicCardFactIsWeak(card = {}) {
 function checkPublicCardContract(card = {}, label = "public card") {
   const id = card.id || card.linkedCardId || "(missing id)";
   const isActiveDateItem = !activeDate || card.date === activeDate;
+  if (isActiveDateItem && Object.prototype.hasOwnProperty.call(card, "modelGeneratedTitle")) {
+    issues.push(`${label} ${id} exposes modelGeneratedTitle; public titles must come from source title translation only`);
+  }
   if (!card.title) {
     issues.push(`${label} ${id} is missing public title`);
   }
@@ -376,6 +379,9 @@ if (!Array.isArray(payload.top10)) {
     }
     if (!item.title) {
       issues.push(`payload.top10 card ${item.id || "(missing id)"} is missing public title`);
+    }
+    if (Object.prototype.hasOwnProperty.call(item, "modelGeneratedTitle")) {
+      issues.push(`payload.top10 card ${item.id || "(missing id)"} exposes modelGeneratedTitle; public title must be source-derived`);
     }
     if (!item.sourceTitle && !item.originalTitle && !item.displayTitle) {
       issues.push(`payload.top10 card ${item.id || "(missing id)"} is missing source/display title`);

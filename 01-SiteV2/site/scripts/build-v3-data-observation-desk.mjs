@@ -1162,9 +1162,9 @@ function safeFrontstageSubject({ subject = "", sourceUrl = "", sourceName = "", 
     } catch {
       // Fall through to the neutral fallback.
     }
-    return "AI business signal";
+    return "";
   }
-  return host && !isWeakSubject(host) ? normalizeSubject(host) : "AI business signal";
+  return host && !isWeakSubject(host) ? normalizeSubject(host) : "";
 }
 
 function safeFrontstageTitle(title = "", sourceUrl = "") {
@@ -1239,12 +1239,14 @@ function publicTitleCandidate(title = "", sourceUrl = "") {
   return "";
 }
 
-function publicDisplayTitle(sourceTitle = "", generatedTitle = "", sourceUrl = "") {
+function publicDisplayTitle(sourceTitle = "", generatedTitle = "", sourceUrl = "", options = {}) {
   const sourceCandidate = publicTitleCandidate(sourceTitle, sourceUrl);
   if (sourceCandidate) return sourceCandidate;
-  const fallback = cleanBadPublicDisplayTitle(String(generatedTitle || "").trim());
-  if (fallback && !isBadPublicDisplayTitle(fallback) && !publicTitleNeedsTranslation(fallback)) {
-    return fallback;
+  if (options.allowGeneratedFallback) {
+    const fallback = cleanBadPublicDisplayTitle(String(generatedTitle || "").trim());
+    if (fallback && !isBadPublicDisplayTitle(fallback) && !publicTitleNeedsTranslation(fallback)) {
+      return fallback;
+    }
   }
   return "";
 }
@@ -1289,28 +1291,27 @@ function factDerivedPublicTitle(value = "") {
   return candidate;
 }
 
-function normalizeFrontstageDisplay(card = {}) {
-  const modelGeneratedTitle = card.modelGeneratedTitle || card.generatedTitle || card.title || "";
+function normalizeFrontstageDisplay(card = {}, options = {}) {
+  const strictPublic = options.strictPublic !== false;
+  const modelGeneratedTitle = strictPublic ? undefined : card.modelGeneratedTitle || card.generatedTitle || card.title || "";
   const internalTitle = safeFrontstageTitle(card.title || card.originalTitle, card.sourceUrl);
   const originalTitle = card.originalTitle || (internalTitle !== card.title ? card.title : "");
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
   const replacementFact = sourceTitleDerivedFact(sourceTitle || originalTitle || internalTitle, card.sourceUrl);
-  const translatedFact = [
-    card.translatedFact,
-    replacementFact,
-    card.visibleFragment,
-    card.summary,
-  ].find((value) => (
+  const factCandidates = strictPublic
+    ? [replacementFact, card.translatedFact, card.visibleFragment, card.summary]
+    : [card.translatedFact, replacementFact, card.visibleFragment, card.summary];
+  const translatedFact = factCandidates.find((value) => (
     value
       && !publicContentNeedsTranslation(value)
       && !publicFactLooksLikeNavigation(value)
       && !publicFactLooksLikeTemplateFallback(value)
   )) || "";
   const cleanedTranslatedFact = cleanPublicSourceFact(translatedFact);
-  const preferredDisplayTitle = publicDisplayTitle(sourceTitle, internalTitle, card.sourceUrl);
+  const preferredDisplayTitle = publicDisplayTitle(sourceTitle, strictPublic ? "" : internalTitle, card.sourceUrl, { allowGeneratedFallback: !strictPublic });
   const displayTitle = publicDisplayTitleIsReady(preferredDisplayTitle)
     ? preferredDisplayTitle
-    : factDerivedPublicTitle(cleanedTranslatedFact || card.visibleFragment || card.summary);
+    : strictPublic ? "" : factDerivedPublicTitle(cleanedTranslatedFact || card.visibleFragment || card.summary);
   return {
     ...card,
     title: displayTitle,
@@ -1333,10 +1334,10 @@ function normalizeFrontstageDisplay(card = {}) {
 
 function top10CompatCard(card = {}) {
   const sourceTitle = sourceFrontstageTitle(card, card.originalTitle);
-  const displayTitle = publicDisplayTitle(sourceTitle, card.displayTitle || card.title || "", card.sourceUrl);
+  const displayTitle = publicDisplayTitle(sourceTitle, "", card.sourceUrl);
   return {
     ...card,
-    modelGeneratedTitle: card.modelGeneratedTitle || card.generatedTitle || card.title || "",
+    modelGeneratedTitle: undefined,
     generatedTitle: displayTitle,
     sourceTitle,
     displayTitle,
@@ -4078,8 +4079,9 @@ function buildIntelligenceGraphIndex(payload = {}) {
 const rawCards = [
   ...signalRoots.flatMap((rootItem) => walkMarkdown(rootItem.dir).map((file) => cardFromFile(file, rootItem.category))),
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
+const activeDate = rawCards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPublicBusinessSignalEligible))
-  .map(normalizeFrontstageDisplay)
+  .map((card) => normalizeFrontstageDisplay(card, { strictPublic: card.date === activeDate }))
   .filter(hasSourceFacingEvidence)
   .filter((card) => card.title && card.date && card.sourceName)
   .map(annotateFrontstageCandidate)
@@ -4087,7 +4089,6 @@ const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPubli
 const frontstageSelection = buildDailyFrontstageSelection(cards);
 const frontstageCards = frontstageSelection.cards;
 
-const activeDate = cards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";
 const top10 = frontstageCards
   .filter((card) => card.date === activeDate)
   .slice(0, 10)

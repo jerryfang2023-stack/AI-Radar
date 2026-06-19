@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "EAI-V1.1.0-fde-lens-pool",
-    "generatedAt": "2026-06-19T11:36:46.903Z",
+    "generatedAt": "2026-06-19T11:49:26.271Z",
     "activeDate": "2026-06-19",
     "source": "01-SiteV2/site/data/v3-data-observation-desk.json",
     "fdePoolCount": 3,
-    "itemCount": 5,
+    "itemCount": 6,
     "boundary": "FDE is an Enterprise AI lens pool, not a fourth Business Signals Card type."
   },
   "fdePool": [
@@ -372,7 +372,7 @@
       "stageLabel": "治理边界",
       "scenario": "高合规行业",
       "workflow": "企业数据接入与决策支持",
-      "evidenceBoundary": "已确认：汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021...；未确..."
+      "evidenceBoundary": "已确认：HSBC 与 Google Cloud 签署多年 AI 合作协议，将 Gemini 模型和 Gemini Enterprise Agent 平台用于财富管理、金融犯罪风险管理和内部决策支持。；未确认：内部投入、ROI 与长期运行效果。"
     },
     {
       "id": "enterprise-ai:SIG-20260619-A20-case-https-www-salesforce-com",
@@ -420,7 +420,7 @@
       "stageLabel": "生产上线",
       "scenario": "采购与供应链",
       "workflow": "采购流程自动化与合规校验",
-      "evidenceBoundary": "已确认：计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器...；未确..."
+      "evidenceBoundary": "已确认：零售商正在部署计算机视觉货架跟踪系统；BJ's Wholesale Club 使用 Simbe 机器人监测库存和价格，推动在线拣货效率提升。；未确认：内部投入、ROI 与长期运行效果。"
     },
     {
       "id": "enterprise-ai:SIG-20260619-A06-case-https-www-ellamind-com",
@@ -437,6 +437,22 @@
       "scenario": "客户服务与销售",
       "workflow": "客服响应、线索跟进与知识检索",
       "evidenceBoundary": "已确认：ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。；未确认：内部投入、ROI 与长期运行效果。"
+    },
+    {
+      "id": "enterprise-ai:SIG-20260619-A08",
+      "cardId": "SIG-20260619-A08",
+      "date": "2026-06-19",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Perplexity 推出 Brain",
+      "subject": "Perplexity / Brain",
+      "sourceName": "MarkTechPost（RSS）",
+      "sourceUrl": "https://www.marktechpost.com/2026/06/18/perplexity-launches-brain",
+      "stage": "platform_enablement",
+      "stageLabel": "平台使能",
+      "scenario": "数据与知识工作",
+      "workflow": "企业数据接入与决策支持",
+      "evidenceBoundary": "已确认：Perplexity 为其智能体产品 Computer 推出 Brain 记忆系统，用上下文图记录代理工作、失败和用户修正，以提升后续任务表现。；未确认：内部投入、ROI 与长期运行效果。"
     }
   ]
 }

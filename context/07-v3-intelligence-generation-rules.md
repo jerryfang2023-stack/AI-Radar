@@ -167,9 +167,12 @@ Card title rules:
 
 - keep the event nature of the original title;
 - prefer original title or direct event title;
+- public `title`, `displayTitle`, and Top10-compatible `generatedTitle` must be source-title translations only. If a source-title translation cannot be produced, the item is not ready for active-date frontstage display.
 - do not mechanically rewrite into abstract judgment;
 - do not use phrases like "materials show", "worth watching", "points to", or internal production wording.
 - do not use placeholder phrases such as "original AI event", "use case seen in original", "purpose see original", or source-domain subjects such as "linkedin financing" / "github original title";
+- do not fall back from source-title translation to model-generated title, old card title, source-domain subject, or fact-derived headline;
+- active-date public payloads must not expose `modelGeneratedTitle`;
 - if the title cannot name the actual company, product, funding round, customer, or release, the item is not ready for Top10 display.
 
 Card detail rules:
