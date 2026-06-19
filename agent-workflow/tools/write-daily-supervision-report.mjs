@@ -433,7 +433,7 @@ function buildBusinessSignalsLane() {
       addProblem(problems, `Business Signals workflow conclusion is ${gh.latest_run.conclusion}`);
     }
     if (gh.pr_warning) warnings.push(gh.pr_warning);
-  } else if (isTodayOrPast(date)) {
+  } else if (!gh.available && isTodayOrPast(date)) {
     warnings.push(gh.warning || "GitHub workflow state unavailable");
   }
 
