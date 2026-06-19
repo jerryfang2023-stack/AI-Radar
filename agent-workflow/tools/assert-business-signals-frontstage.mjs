@@ -78,7 +78,7 @@ const gates = [
 ];
 
 const failed = gates.filter((gate) => gate.status !== "passed");
-const categoryText = gates.map((gate) => gate.output).join("\n");
+const categoryText = failed.map((gate) => gate.output).join("\n");
 const failureCategories = failed.length ? classify(categoryText) : [];
 const status = failed.length ? "failed" : "passed";
 const reportBase = path.join(reportsDir, `${date}-business-signals-frontstage-gate`);

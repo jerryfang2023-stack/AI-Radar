@@ -253,6 +253,10 @@ function displayTags(tags) {
     })));
 }
 
+function frontstagePoolRoutes(routes = []) {
+  return routes.filter((route) => route && route !== "index_only");
+}
+
 function sanitizeDisplayTags(tags = []) {
   return tags
     .map((tag) => ({
@@ -2537,7 +2541,7 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
         sourceUrl,
         sourceLevel: poolValue(section, "source_level"),
         importanceScore,
-        poolRoutes: splitCsv(poolValue(section, "pool_routes")),
+        poolRoutes: frontstagePoolRoutes(splitCsv(poolValue(section, "pool_routes"))),
         publishedAt: "",
         tags: {},
         flatTags: [],
@@ -2617,7 +2621,7 @@ function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
       const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
       const importanceScore = Number(poolValue(section, "importance_score")) || 0;
       const score = Number(poolValue(section, "score")) || 0;
-      const poolRoutes = splitCsv(poolValue(section, "pool_routes"));
+      const poolRoutes = frontstagePoolRoutes(splitCsv(poolValue(section, "pool_routes")));
       const item = {
         id: `POOL-${activeDate}-${ref}`,
         type: "enterprise_ai_lens_candidate",

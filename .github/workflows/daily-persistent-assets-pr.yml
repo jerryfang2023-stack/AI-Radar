@@ -454,6 +454,7 @@ jobs:
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-pool-to-card-dedupe-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.md
             agent-workflow/reports/${{ steps.run-date.outputs.date }}-business-signals-frontstage-gate.json
+            agent-workflow/reports/frontstage-regression-gate-*.md
             01-SiteV2/content/01-raw/${{ steps.run-date.outputs.date }}-raw-candidates.md
             01-SiteV2/content/01-raw/originals/${{ steps.run-date.outputs.date }}/**
             01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
