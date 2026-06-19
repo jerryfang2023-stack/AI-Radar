@@ -245,6 +245,11 @@
     ].find((item) => item.id === id || item.linkedCardId === id);
   }
 
+  function findEnterpriseAiItem(id = "") {
+    return enterpriseAiTransformationItems()
+      .find((item) => item.id === id || item.cardId === id || item.linkedCardId === id);
+  }
+
   function sourceText(card) {
     return [card.sourceName, card.publishedAt ? fmtDate(String(card.publishedAt).slice(0, 10)) : ""]
       .filter(Boolean)
@@ -397,6 +402,43 @@
     return items.filter((item) => state.filters.category === "all" || item.category === state.filters.category);
   }
 
+  function renderEnterpriseAiDetail(item = {}) {
+    const root = $("[data-detail-content]");
+    const dialog = $("[data-detail-dialog]");
+    if (!root || !dialog) return;
+    root.innerHTML = `
+      <h2 class="detail-title">${safe(item.title)}</h2>
+      <div class="detail-source-row">
+        <span>${safe(item.categoryLabel || "企业AI化")} · ${safe(fmtDate(item.date || selectedDate()))}</span>
+        <strong>${safe(item.subject || item.sourceName || "FDE lens")}</strong>
+        ${item.sourceUrl ? `<a href="${safe(item.sourceUrl)}" target="_blank" rel="noreferrer">查看原文</a>` : ""}
+      </div>
+      <div class="detail-fact-card">
+        <h3>AI化动作</h3>
+        <p>${safe(item.workflow || "把 Agent 或模型接入业务系统")}</p>
+      </div>
+      <div class="detail-main-grid">
+        <div class="detail-block">
+          <h3>阶段与场景</h3>
+          <p>${safe([item.stageLabel || enterpriseStageLabel(item.stage), item.scenario].filter(Boolean).join(" / ") || "暂无公开说明。")}</p>
+        </div>
+        <div class="detail-block">
+          <h3>证据边界</h3>
+          <p>${safe(item.evidenceBoundary || "已保留为 FDE lens 线索；如未生成正式 Signal Card，则说明它只适合做企业 AI 化观察，不作为正式商业信号卡片。")}</p>
+        </div>
+      </div>
+      <details class="detail-aux">
+        <summary>辅助信息</summary>
+        <div class="detail-grid">
+          ${detailField("主体", item.subject)}
+          ${detailField("来源", item.sourceName || item.sourceUrl)}
+          ${detailField("Card ID", item.cardId || item.id)}
+        </div>
+      </details>
+    `;
+    dialog.showModal();
+  }
+
   function renderEnterpriseAiTransformation() {
     const root = $("[data-enterprise-ai-transformation]");
     if (!root) return;
@@ -430,8 +472,14 @@
     root.onclick = (event) => {
       const detailButton = event.target.closest("[data-open-enterprise-detail]");
       if (!detailButton) return;
-      const card = findDetailCard(detailButton.dataset.openEnterpriseDetail);
-      if (card) renderDetail(card);
+      const id = detailButton.dataset.openEnterpriseDetail;
+      const card = findDetailCard(id);
+      if (card) {
+        renderDetail(card);
+        return;
+      }
+      const item = findEnterpriseAiItem(id);
+      if (item) renderEnterpriseAiDetail(item);
     };
   }
 
