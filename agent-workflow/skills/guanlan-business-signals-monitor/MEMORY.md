@@ -18,6 +18,7 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 - Enterprise AI / FDE lens items must show concrete implementation evidence, not generic enterprise AI relevance. Required evidence includes FDE / forward-deployed work, customer-embedded delivery, production deployment, workflow rollout, procurement, pilot / POC, technical scoping, customer adoption, or a vertical business workflow with source-backed deployment facts.
 - Do not let labels such as `evidence-customer-adoption`, broad terms such as enterprise / workflow / agent, or market-size numbers qualify an item by themselves. Strategy speeches, model research, benchmarks, consumer apps, platform-only releases, and template detail placeholders must stay out of the FDE lens unless a separate source-backed deployment or customer workflow fact is present.
 - When repairing FDE precision, update both the Business Signals data builder and the frontstage regression gate, rebuild `v3-data-observation-desk.json`, run the unified Business frontstage gate, and sync `content/09-fde`.
+- FDE recall should be expanded upstream through dedicated keyword / search paths, not downstream by relaxing the frontstage lens gate. Keep a larger Raw / Pool monitoring pool for `forward deployed`, Applied AI, customer engineering, technical scoping, pilot customers, production rollout, procurement pilots, and vertical workflow deployments; then let source-first and FDE precision gates decide what can display.
 
 ## 2026-06-12
 

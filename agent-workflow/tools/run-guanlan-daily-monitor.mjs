@@ -2912,6 +2912,13 @@ const keywordSearchPaths = [
     querySuffix: "(industry use case OR customer case OR vertical SaaS OR consulting report OR workflow OR adoption)",
   },
   {
+    id: "fde_implementation",
+    label: "Enterprise AI / FDE implementation path",
+    role: "find FDE, applied AI, customer engineering, pilot, production rollout, procurement and vertical workflow deployment evidence",
+    method: "ddg",
+    querySuffix: "(FDE OR \"forward deployed\" OR \"applied AI\" OR \"customer engineering\" OR \"technical scoping\" OR \"production rollout\" OR \"pilot customer\" OR \"customer story\" OR \"case study\")",
+  },
+  {
     id: "procurement_marketplace",
     label: "采购 / 招投标 / Marketplace 路径",
     role: "find procurement, marketplace, app store and job signal",
@@ -2940,6 +2947,12 @@ function selectQueriesForPath(allQueries, pathConfig) {
   if (pathConfig.id === "industry_landing") {
     const verticalQueries = allQueries.filter((query) => /vertical|industry|workflow|customer|adoption|finance|insurance|healthcare|legal|manufacturing|supply chain|public sector/iu.test(query.query || ""));
     if (verticalQueries.length) return verticalQueries.slice(0, limit);
+  }
+  if (pathConfig.id === "fde_implementation") {
+    const fdeQueries = allQueries.filter((query) => /FDE|forward deployed|applied AI|customer engineering|technical scoping|production rollout|pilot customer|design partner|implementation|deployment|customer story|case study|workflow rollout|procurement pilot/iu.test(query.query || ""));
+    const dedicated = fdeQueries.filter((query) => query.query_theme === "enterprise-ai-implementation-signal");
+    const fallback = fdeQueries.filter((query) => query.query_theme !== "enterprise-ai-implementation-signal");
+    if (fdeQueries.length) return [...dedicated, ...fallback].slice(0, limit);
   }
   const byTheme = new Map();
   for (const query of allQueries) {
