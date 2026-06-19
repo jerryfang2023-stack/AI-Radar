@@ -1,0 +1,70 @@
+---
+id: SIG-20260619-A15
+type: signal_card
+signal_type: case
+title: "What Is Forward Deployed Engineering? 4 Ways It Powers AI ..."
+date: 2026-06-19
+status: published
+source_title: "What Is Forward Deployed Engineering? 4 Ways It Powers AI ..."
+asset_level: frontstage
+evidence_gate: core_evidence_passed
+fact_draft_gate: passed
+created_at: 2026-06-19T07:43:58.263Z
+updated_at: 2026-06-19T07:43:58.263Z
+
+raw_refs: ["R-043"]
+pool_refs: ["P-038"]
+primary_raw:
+  raw_ref: R-043
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-043-what-is-forward-deployed-engineering-4-ways-it-powers-ai.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-043-what-is-forward-deployed-engineering-4-ways-it-powers-ai.json"
+  source_url: "https://www.tsia.com/blog/forward-deployed-engineering-ai-era"
+  full_text_hash: "3efe3e0290d30246"
+  source_level: B
+  extraction_quality: high
+  has_full_text: true
+  pool_routes:
+    - core_pool
+  raw_qc_decision: allow
+  importance_type: important_case
+  importance_score: 5
+
+formal_tags:
+  track: ["track-ai-agent", "track-enterprise-workflow"]
+  function: []
+  scenario: []
+  customer: ["customer-enterprise"]
+  evidence: ["evidence-customer-adoption"]
+  stage: []
+  region: []
+  source: ["source-industry-data"]
+
+signal_owner: "Tsia"
+
+frontend:
+  displayTitle: "What Is Forward Deployed Engineering? 4 Ways It Powers AI ..."
+  sourceLinks:
+    - "https://www.tsia.com/blog/forward-deployed-engineering-ai-era"
+---
+
+# What Is Forward Deployed Engineering? 4 Ways It Powers AI ...
+
+## 新闻事实
+
+What Is Forward Deployed Engineering? 4 Ways It Powers AI ...
+
+## 原文要点
+
+- 原文未提供更多可拆分事实点，需以可见原文片段核对。
+
+## 价值描述
+
+Tsia 的案例信号可用于观察 AI 是否已经进入 地产开发和建筑设计流程，以及后续是否出现客户、流程或结果指标。
+
+## 可见原文片段
+
+What Is Forward Deployed Engineering? 4 Ways It Powers AI ...
+
+## 证据边界
+
+none

@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-19T01:20:50.000Z"
-collected_at: 2026-06-19T06:41:39.454Z
+collected_at: 2026-06-19T07:43:57.424Z
 language: mixed
 full_text_hash: 6cf7d68508f66519
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-011-claude-code-v2-1-183-发布.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Claude Code v2.1.183 发布","discovery_summary":"Claude Code v2.1.183 增强了自动模式安全性：未经请求时阻止 `git reset --hard`、`git commit --amend`（非本轮提交）、`terraform destroy` 等破坏性命令。新增 `attribution.sessionUrl` 设置，可省略 claude.ai 会话链接；`/config --help` 列出所有速记键；`/config` 切换行为改为 Enter/Space 变更、Esc 保存退出。修复了 thinking 块导致 400 错误、子智能体 WebSearch 空结果、vim 模式光标滞留、Windows Terminal TUI 错乱、多插件技能重复、MCP 认证存根暴露、tmux 面板启动失败、后台任务被杀、定时任务/Webhook 误判为键盘输入、focus mode 额外计时行等问题。","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"https://github.com/anthropics/claude-code/releases/tag/v2.1.183","discovered_at":"2026-06-19T06:38:20.341Z","rank_on_page":62,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Claude Code v2.1.183 发布","discovery_summary":"Claude Code v2.1.183 增强了自动模式安全性：未经请求时阻止 `git reset --hard`、`git commit --amend`（非本轮提交）、`terraform destroy` 等破坏性命令。新增 `attribution.sessionUrl` 设置，可省略 claude.ai 会话链接；`/config --help` 列出所有速记键；`/config` 切换行为改为 Enter/Space 变更、Esc 保存退出。修复了 thinking 块导致 400 错误、子智能体 WebSearch 空结果、vim 模式光标滞留、Windows Terminal TUI 错乱、多插件技能重复、MCP 认证存根暴露、tmux 面板启动失败、后台任务被杀、定时任务/Webhook 误判为键盘输入、focus mode 额外计时行等问题。","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"https://github.com/anthropics/claude-code/releases/tag/v2.1.183","discovered_at":"2026-06-19T07:39:27.740Z","rank_on_page":67,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 6cf7d68508f66519
 semantic_hash: ca3a587fe1ccad9c
 duplicate_of: ""
 first_seen_at: "2026-06-19T01:20:50.000Z"
-last_seen_at: 2026-06-19T06:41:39.454Z
+last_seen_at: 2026-06-19T07:43:57.424Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -283,7 +283,7 @@ There was an error while loading. Please reload this page .
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Claude Code v2.1.183 发布","discovery_summary":"Claude Code v2.1.183 增强了自动模式安全性：未经请求时阻止 `git reset --hard`、`git commit --amend`（非本轮提交）、`terraform destroy` 等破坏性命令。新增 `attribution.sessionUrl` 设置，可省略 claude.ai 会话链接；`/config --help` 列出所有速记键；`/config` 切换行为改为 Enter/Space 变更、Esc 保存退出。修复了 thinking 块导致 400 错误、子智能体 WebSearch 空结果、vim 模式光标滞留、Windows Terminal TUI 错乱、多插件技能重复、MCP 认证存根暴露、tmux 面板启动失败、后台任务被杀、定时任务/Webhook 误判为键盘输入、focus mode 额外计时行等问题。","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"https://github.com/anthropics/claude-code/releases/tag/v2.1.183","discovered_at":"2026-06-19T06:38:20.341Z","rank_on_page":62,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Claude Code v2.1.183 发布","discovery_summary":"Claude Code v2.1.183 增强了自动模式安全性：未经请求时阻止 `git reset --hard`、`git commit --amend`（非本轮提交）、`terraform destroy` 等破坏性命令。新增 `attribution.sessionUrl` 设置，可省略 claude.ai 会话链接；`/config --help` 列出所有速记键；`/config` 切换行为改为 Enter/Space 变更、Esc 保存退出。修复了 thinking 块导致 400 错误、子智能体 WebSearch 空结果、vim 模式光标滞留、Windows Terminal TUI 错乱、多插件技能重复、MCP 认证存根暴露、tmux 面板启动失败、后台任务被杀、定时任务/Webhook 误判为键盘输入、focus mode 额外计时行等问题。","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"https://github.com/anthropics/claude-code/releases/tag/v2.1.183","discovered_at":"2026-06-19T07:39:27.740Z","rank_on_page":67,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

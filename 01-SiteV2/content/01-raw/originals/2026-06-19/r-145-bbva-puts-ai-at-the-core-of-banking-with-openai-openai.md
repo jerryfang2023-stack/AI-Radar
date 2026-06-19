@@ -20,7 +20,7 @@ search_path: "industry_landing"
 search_path_label: "行业落地路径"
 author: ""
 published_at: ""
-collected_at: 2026-06-19T06:41:39.889Z
+collected_at: 2026-06-19T07:43:57.969Z
 language: mixed
 full_text_hash: 2dcd800a75b50ae6
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-145-bbva-puts-ai-at-the-core-of-banking-with-openai-openai.md"
@@ -55,8 +55,8 @@ url_hash: 043e5abd40266556
 content_hash: 2dcd800a75b50ae6
 semantic_hash: 8d2c2c6ce6b31ec5
 duplicate_of: ""
-first_seen_at: "2026-06-19T06:41:39.889Z"
-last_seen_at: 2026-06-19T06:41:39.889Z
+first_seen_at: "2026-06-19T07:43:57.969Z"
+last_seen_at: 2026-06-19T07:43:57.969Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}

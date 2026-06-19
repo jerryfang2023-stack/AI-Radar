@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-19T02:21:11.402Z"
-collected_at: 2026-06-19T06:41:39.444Z
+collected_at: 2026-06-19T07:43:57.413Z
 language: mixed
 full_text_hash: 0a2b61255595b776
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-008-mcp-零接触-oauth-enterprise-managed-authorization-扩展现已稳定.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: user_feedback_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"MCP 零接触 OAuth：Enterprise-Managed Authorization 扩展现已稳定","discovery_summary":"Enterprise-Managed Authorization （EMA） 扩展现已稳定。该扩展允许组织通过受信任的身份提供商（如 Okta）集中控制 MCP 服务器的访问权限。终端用户首次登录即可自动连接所有已授权的 MCP 服务器，无需逐个执行 OAuth 授权。Anthropic 已在 Claude、Claude Code 和 Cowork 中实现该扩展，Visual Studio Code 也已支持。Asana、Atlassian、Canva、Figma、Granola、Linear、Supabase 等服务器已启用 EMA，Slack 正在添加支持。Microsoft、Okta 等也参与了采用。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth","discovered_at":"2026-06-19T06:38:20.338Z","rank_on_page":50,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"MCP 零接触 OAuth：Enterprise-Managed Authorization 扩展现已稳定","discovery_summary":"Enterprise-Managed Authorization （EMA） 扩展现已稳定。该扩展允许组织通过受信任的身份提供商（如 Okta）集中控制 MCP 服务器的访问权限。终端用户首次登录即可自动连接所有已授权的 MCP 服务器，无需逐个执行 OAuth 授权。Anthropic 已在 Claude、Claude Code 和 Cowork 中实现该扩展，Visual Studio Code 也已支持。Asana、Atlassian、Canva、Figma、Granola、Linear、Supabase 等服务器已启用 EMA，Slack 正在添加支持。Microsoft、Okta 等也参与了采用。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth","discovered_at":"2026-06-19T07:39:27.737Z","rank_on_page":55,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 0a2b61255595b776
 semantic_hash: 965f60d7a74e8dd7
 duplicate_of: ""
 first_seen_at: "2026-06-19T02:21:11.402Z"
-last_seen_at: 2026-06-19T06:41:39.444Z
+last_seen_at: 2026-06-19T07:43:57.413Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -395,7 +395,7 @@ contributed.
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"MCP 零接触 OAuth：Enterprise-Managed Authorization 扩展现已稳定","discovery_summary":"Enterprise-Managed Authorization （EMA） 扩展现已稳定。该扩展允许组织通过受信任的身份提供商（如 Okta）集中控制 MCP 服务器的访问权限。终端用户首次登录即可自动连接所有已授权的 MCP 服务器，无需逐个执行 OAuth 授权。Anthropic 已在 Claude、Claude Code 和 Cowork 中实现该扩展，Visual Studio Code 也已支持。Asana、Atlassian、Canva、Figma、Granola、Linear、Supabase 等服务器已启用 EMA，Slack 正在添加支持。Microsoft、Okta 等也参与了采用。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth","discovered_at":"2026-06-19T06:38:20.338Z","rank_on_page":50,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"MCP 零接触 OAuth：Enterprise-Managed Authorization 扩展现已稳定","discovery_summary":"Enterprise-Managed Authorization （EMA） 扩展现已稳定。该扩展允许组织通过受信任的身份提供商（如 Okta）集中控制 MCP 服务器的访问权限。终端用户首次登录即可自动连接所有已授权的 MCP 服务器，无需逐个执行 OAuth 授权。Anthropic 已在 Claude、Claude Code 和 Cowork 中实现该扩展，Visual Studio Code 也已支持。Asana、Atlassian、Canva、Figma、Granola、Linear、Supabase 等服务器已启用 EMA，Slack 正在添加支持。Microsoft、Okta 等也参与了采用。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://blog.modelcontextprotocol.io/posts/enterprise-managed-auth","discovered_at":"2026-06-19T07:39:27.737Z","rank_on_page":55,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

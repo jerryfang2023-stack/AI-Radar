@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T21:20:13.000Z"
-collected_at: 2026-06-19T06:41:39.464Z
+collected_at: 2026-06-19T07:43:57.435Z
 language: mixed
-full_text_hash: 09af9e8a00ef1c07
+full_text_hash: 3b57b8f0fa90f915
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-015-ai推理公司baseten据报以130亿美元估值融资15亿美元.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-015-ai推理公司baseten据报以130亿美元估值融资15亿美元.json"
 html_snapshot_path: ""
@@ -31,32 +31,32 @@ fetch_status: fetched-readable-text-main
 extraction_quality: high
 extraction_method: "main"
 readability_score: 75
-extractor_diagnostics: {"readability_score":75,"text_length":2628,"paragraph_count":19,"sentence_count":12,"boilerplate_hits":2,"symbol_ratio":0,"method":"main"}
+extractor_diagnostics: {"readability_score":75,"text_length":2629,"paragraph_count":19,"sentence_count":12,"boilerplate_hits":2,"symbol_ratio":0,"method":"main"}
 has_full_text: true
-content_length: 2628
+content_length: 2629
 fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"09af9e8a00ef1c07","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3b57b8f0fa90f915","missing":[]}
 source_volatility: medium
 community_name: ""
 capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"AI推理公司Baseten据报以130亿美元估值融资15亿美元","discovery_summary":"AI推理公司Baseten接近完成15亿美元融资，估值130亿美元，据《华尔街日报》报道。本轮为分价轮，部分投资者以130亿美元估值进入，部分以110亿美元。交易由Spark Capital、Sands Capital、Altimeter Capital和Wellington Management联合领投。五个月前该公司刚完成3亿美元E轮融资（估值50亿美元），再之前九个月完成1.5亿美元D轮。Baseten成立于2019年，致力于快速推理并通过路由请求至最优低成本开源模型来控制成本，受益于\"推理淘金热\"。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round","discovered_at":"2026-06-19T06:38:20.352Z","rank_on_page":106,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"AI推理公司Baseten据报以130亿美元估值融资15亿美元","discovery_summary":"AI推理公司Baseten接近完成15亿美元融资，估值130亿美元，据《华尔街日报》报道。本轮为分价轮，部分投资者以130亿美元估值进入，部分以110亿美元。交易由Spark Capital、Sands Capital、Altimeter Capital和Wellington Management联合领投。五个月前该公司刚完成3亿美元E轮融资（估值50亿美元），再之前九个月完成1.5亿美元D轮。Baseten成立于2019年，致力于快速推理并通过路由请求至最优低成本开源模型来控制成本，受益于\"推理淘金热\"。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round","discovered_at":"2026-06-19T07:39:27.752Z","rank_on_page":111,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: merged_provider_duplicates
 url_hash: b8ade19f739b6588
-content_hash: 09af9e8a00ef1c07
+content_hash: 3b57b8f0fa90f915
 semantic_hash: 65b3900e88cd7dd9
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-18T21:20:13.000Z"
-last_seen_at: 2026-06-19T06:41:39.464Z
+last_seen_at: 2026-06-19T07:43:57.435Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":false,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -101,11 +101,11 @@ Startups
 The 11 standout startups from YC’s Demo Day, according to VCs
 Marina Temkin
 Dominic-Madori Davis
-11 hours ago
+12 hours ago
 AI
 General Intuition in talks to raise $300M at around $2B valuation
 Rebecca Bellan
-15 hours ago
+16 hours ago
 Venture
 Chi-Hua Chien saw Facebook coming — now he says the real AI winners won’t be selling AI
 Connie Loizos
@@ -114,16 +114,16 @@ Latest in Startups
 AI
 Source: Elastic agrees to buy CRV-backed DeductiveAI for up to $85M
 Marina Temkin
-6 hours ago
+7 hours ago
 In Brief
 AI inference startup Baseten reportedly raising $1.5B months after its last mega-round
 Dominic-Madori Davis
-9 hours ago
+10 hours ago
 Startups
 The 11 standout startups from YC’s Demo Day, according to VCs
 Marina Temkin
 Dominic-Madori Davis
-11 hours ago
+12 hours ago
 
 ## full_text
 
@@ -150,11 +150,11 @@ Startups
 The 11 standout startups from YC’s Demo Day, according to VCs
 Marina Temkin
 Dominic-Madori Davis
-11 hours ago
+12 hours ago
 AI
 General Intuition in talks to raise $300M at around $2B valuation
 Rebecca Bellan
-15 hours ago
+16 hours ago
 Venture
 Chi-Hua Chien saw Facebook coming — now he says the real AI winners won’t be selling AI
 Connie Loizos
@@ -163,16 +163,16 @@ Latest in Startups
 AI
 Source: Elastic agrees to buy CRV-backed DeductiveAI for up to $85M
 Marina Temkin
-6 hours ago
+7 hours ago
 In Brief
 AI inference startup Baseten reportedly raising $1.5B months after its last mega-round
 Dominic-Madori Davis
-9 hours ago
+10 hours ago
 Startups
 The 11 standout startups from YC’s Demo Day, according to VCs
 Marina Temkin
 Dominic-Madori Davis
-11 hours ago
+12 hours ago
 
 ## extraction_diagnostics
 
@@ -180,7 +180,7 @@ Dominic-Madori Davis
 - readability_score: 75
 - fetch_status: fetched-readable-text-main
 - extraction_quality: high
-- diagnostics: {"readability_score":75,"text_length":2628,"paragraph_count":19,"sentence_count":12,"boilerplate_hits":2,"symbol_ratio":0,"method":"main"}
+- diagnostics: {"readability_score":75,"text_length":2629,"paragraph_count":19,"sentence_count":12,"boilerplate_hits":2,"symbol_ratio":0,"method":"main"}
 
 ## markdown_snapshot
 
@@ -273,7 +273,7 @@ Dominic-Madori Davis
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"AI推理公司Baseten据报以130亿美元估值融资15亿美元","discovery_summary":"AI推理公司Baseten接近完成15亿美元融资，估值130亿美元，据《华尔街日报》报道。本轮为分价轮，部分投资者以130亿美元估值进入，部分以110亿美元。交易由Spark Capital、Sands Capital、Altimeter Capital和Wellington Management联合领投。五个月前该公司刚完成3亿美元E轮融资（估值50亿美元），再之前九个月完成1.5亿美元D轮。Baseten成立于2019年，致力于快速推理并通过路由请求至最优低成本开源模型来控制成本，受益于\"推理淘金热\"。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round","discovered_at":"2026-06-19T06:38:20.352Z","rank_on_page":106,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"AI推理公司Baseten据报以130亿美元估值融资15亿美元","discovery_summary":"AI推理公司Baseten接近完成15亿美元融资，估值130亿美元，据《华尔街日报》报道。本轮为分价轮，部分投资者以130亿美元估值进入，部分以110亿美元。交易由Spark Capital、Sands Capital、Altimeter Capital和Wellington Management联合领投。五个月前该公司刚完成3亿美元E轮融资（估值50亿美元），再之前九个月完成1.5亿美元D轮。Baseten成立于2019年，致力于快速推理并通过路由请求至最优低成本开源模型来控制成本，受益于\"推理淘金热\"。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round","discovered_at":"2026-06-19T07:39:27.752Z","rank_on_page":111,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

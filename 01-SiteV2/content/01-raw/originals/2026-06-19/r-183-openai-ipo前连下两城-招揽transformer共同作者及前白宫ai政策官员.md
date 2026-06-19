@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-19T06:41:39.936Z
+collected_at: 2026-06-19T07:43:58.016Z
 language: mixed
 full_text_hash: 5881215bed7ed58e
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-183-openai-ipo前连下两城-招揽transformer共同作者及前白宫ai政策官员.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员","discovery_summary":"OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。","source_name":"TechCrunch：AI（RSS）","origin_url":"","discovered_at":"2026-06-19T06:38:17.992Z","rank_on_page":16,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员","discovery_summary":"OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。","source_name":"TechCrunch：AI（RSS）","origin_url":"","discovered_at":"2026-06-19T07:39:26.652Z","rank_on_page":16,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 5881215bed7ed58e
 semantic_hash: 86412a399a580e63
 duplicate_of: ""
-first_seen_at: "2026-06-19T06:41:39.936Z"
-last_seen_at: 2026-06-19T06:41:39.936Z
+first_seen_at: "2026-06-19T07:43:58.016Z"
+last_seen_at: 2026-06-19T07:43:58.016Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -182,7 +182,7 @@ OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Trans
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员","discovery_summary":"OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。","source_name":"TechCrunch：AI（RSS）","origin_url":"","discovered_at":"2026-06-19T06:38:17.992Z","rank_on_page":16,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员","discovery_summary":"OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。","source_name":"TechCrunch：AI（RSS）","origin_url":"","discovered_at":"2026-06-19T07:39:26.652Z","rank_on_page":16,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

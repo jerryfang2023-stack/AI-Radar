@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T20:26:20.000Z"
-collected_at: 2026-06-19T06:41:39.466Z
+collected_at: 2026-06-19T07:43:57.437Z
 language: mixed
 full_text_hash: f9e19beccc17073e
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-016-perplexity-推出自改进记忆系统-brain-构建智能体工作上下文图.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Perplexity 推出自改进记忆系统 Brain，构建智能体工作上下文图","discovery_summary":"Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perplexity 内部测试）。Brain 今日以 Research Preview 形式面向 Perplexity Max 和 Enterprise Max 订阅用户开放。","source_name":"MarkTechPost（RSS）","origin_url":"https://www.marktechpost.com/2026/06/18/perplexity-launches-brain","discovered_at":"2026-06-19T06:38:20.354Z","rank_on_page":115,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Perplexity 推出自改进记忆系统 Brain，构建智能体工作上下文图","discovery_summary":"Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perplexity 内部测试）。Brain 今日以 Research Preview 形式面向 Perplexity Max 和 Enterprise Max 订阅用户开放。","source_name":"MarkTechPost（RSS）","origin_url":"https://www.marktechpost.com/2026/06/18/perplexity-launches-brain","discovered_at":"2026-06-19T07:39:27.754Z","rank_on_page":120,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: f9e19beccc17073e
 semantic_hash: 6aecf7a19d92d7f6
 duplicate_of: ""
 first_seen_at: "2026-06-18T20:26:20.000Z"
-last_seen_at: 2026-06-19T06:41:39.466Z
+last_seen_at: 2026-06-19T07:43:57.437Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -374,7 +374,7 @@ print( / , agent_execute(
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Perplexity 推出自改进记忆系统 Brain，构建智能体工作上下文图","discovery_summary":"Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perplexity 内部测试）。Brain 今日以 Research Preview 形式面向 Perplexity Max 和 Enterprise Max 订阅用户开放。","source_name":"MarkTechPost（RSS）","origin_url":"https://www.marktechpost.com/2026/06/18/perplexity-launches-brain","discovered_at":"2026-06-19T06:38:20.354Z","rank_on_page":115,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Perplexity 推出自改进记忆系统 Brain，构建智能体工作上下文图","discovery_summary":"Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perplexity 内部测试）。Brain 今日以 Research Preview 形式面向 Perplexity Max 和 Enterprise Max 订阅用户开放。","source_name":"MarkTechPost（RSS）","origin_url":"https://www.marktechpost.com/2026/06/18/perplexity-launches-brain","discovered_at":"2026-06-19T07:39:27.754Z","rank_on_page":120,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

@@ -1,5 +1,5 @@
 ---
-id: SIG-20260619-A14
+id: SIG-20260619-A12
 type: signal_card
 signal_type: case
 title: "Google 庆祝A2A协议发布一周年：协作智能体生态"
@@ -9,8 +9,8 @@ source_title: "Google 庆祝A2A协议发布一周年：协作智能体生态"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-19T06:41:40.175Z
-updated_at: 2026-06-19T06:41:40.175Z
+created_at: 2026-06-19T07:43:58.263Z
+updated_at: 2026-06-19T07:43:58.263Z
 
 raw_refs: ["R-019"]
 pool_refs: ["P-017"]

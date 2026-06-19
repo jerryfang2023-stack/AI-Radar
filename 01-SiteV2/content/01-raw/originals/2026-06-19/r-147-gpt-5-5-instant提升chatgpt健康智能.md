@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-19T06:41:39.892Z
+collected_at: 2026-06-19T07:43:57.972Z
 language: mixed
 full_text_hash: 4d773d36536b7142
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-147-gpt-5-5-instant提升chatgpt健康智能.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"GPT-5.5 Instant提升ChatGPT健康智能","discovery_summary":"每周超2.3亿用户通过ChatGPT获取健康信息。GPT-5.5 Instant在健康评估中表现显著提升，最具挑战性评测上达到前沿Thinking模型水平，已面向所有免费用户开放。基于医生编写的HealthBench和HealthBench Professional评估，其回复在准确性、安全性和沟通质量上优于医生手写回复及早期模型，故障模式发生率更低。近两个月生产流量显示，健康类回复事实性问题率下降71%。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"","discovered_at":"2026-06-19T06:38:17.986Z","rank_on_page":4,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"GPT-5.5 Instant提升ChatGPT健康智能","discovery_summary":"每周超2.3亿用户通过ChatGPT获取健康信息。GPT-5.5 Instant在健康评估中表现显著提升，最具挑战性评测上达到前沿Thinking模型水平，已面向所有免费用户开放。基于医生编写的HealthBench和HealthBench Professional评估，其回复在准确性、安全性和沟通质量上优于医生手写回复及早期模型，故障模式发生率更低。近两个月生产流量显示，健康类回复事实性问题率下降71%。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"","discovered_at":"2026-06-19T07:39:26.646Z","rank_on_page":4,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 4d773d36536b7142
 semantic_hash: c9297266525305a9
 duplicate_of: ""
-first_seen_at: "2026-06-19T06:41:39.892Z"
-last_seen_at: 2026-06-19T06:41:39.892Z
+first_seen_at: "2026-06-19T07:43:57.972Z"
+last_seen_at: 2026-06-19T07:43:57.972Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -182,7 +182,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"GPT-5.5 Instant提升ChatGPT健康智能","discovery_summary":"每周超2.3亿用户通过ChatGPT获取健康信息。GPT-5.5 Instant在健康评估中表现显著提升，最具挑战性评测上达到前沿Thinking模型水平，已面向所有免费用户开放。基于医生编写的HealthBench和HealthBench Professional评估，其回复在准确性、安全性和沟通质量上优于医生手写回复及早期模型，故障模式发生率更低。近两个月生产流量显示，健康类回复事实性问题率下降71%。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"","discovered_at":"2026-06-19T06:38:17.986Z","rank_on_page":4,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"GPT-5.5 Instant提升ChatGPT健康智能","discovery_summary":"每周超2.3亿用户通过ChatGPT获取健康信息。GPT-5.5 Instant在健康评估中表现显著提升，最具挑战性评测上达到前沿Thinking模型水平，已面向所有免费用户开放。基于医生编写的HealthBench和HealthBench Professional评估，其回复在准确性、安全性和沟通质量上优于医生手写回复及早期模型，故障模式发生率更低。近两个月生产流量显示，健康类回复事实性问题率下降71%。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"","discovered_at":"2026-06-19T07:39:26.646Z","rank_on_page":4,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

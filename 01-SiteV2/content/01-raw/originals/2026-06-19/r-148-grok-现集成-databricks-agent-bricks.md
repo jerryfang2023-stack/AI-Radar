@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-19T06:41:39.893Z
+collected_at: 2026-06-19T07:43:57.973Z
 language: mixed
 full_text_hash: 20bfabe57a5f8313
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-148-grok-现集成-databricks-agent-bricks.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Grok 现集成 Databricks Agent Bricks","discovery_summary":"Grok 模型现已原生集成到 Databricks Agent Bricks 平台。在 2026 年 Data + AI Summit 上，Databricks 宣布与 SpaceXAI 合作，使 Grok 与其他前沿及开源模型在同一受控平台中可用。Agent Bricks 结合 Lakehouse 数据上下文与控制和选择，帮助工程团队构建处理大规模数据的 AI 智能体。此外，企业也可在 Amazon Bedrock 上运行 Grok 模型。","source_name":"xAI：News（网页）","origin_url":"","discovered_at":"2026-06-19T06:38:17.993Z","rank_on_page":18,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Grok 现集成 Databricks Agent Bricks","discovery_summary":"Grok 模型现已原生集成到 Databricks Agent Bricks 平台。在 2026 年 Data + AI Summit 上，Databricks 宣布与 SpaceXAI 合作，使 Grok 与其他前沿及开源模型在同一受控平台中可用。Agent Bricks 结合 Lakehouse 数据上下文与控制和选择，帮助工程团队构建处理大规模数据的 AI 智能体。此外，企业也可在 Amazon Bedrock 上运行 Grok 模型。","source_name":"xAI：News（网页）","origin_url":"","discovered_at":"2026-06-19T07:39:26.653Z","rank_on_page":18,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 20bfabe57a5f8313
 semantic_hash: 33a15cf9ca92aa8f
 duplicate_of: ""
-first_seen_at: "2026-06-19T06:41:39.893Z"
-last_seen_at: 2026-06-19T06:41:39.893Z
+first_seen_at: "2026-06-19T07:43:57.973Z"
+last_seen_at: 2026-06-19T07:43:57.973Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -182,7 +182,7 @@ Grok 模型现已原生集成到 Databricks Agent Bricks 平台。在 2026 年 D
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"Grok 现集成 Databricks Agent Bricks","discovery_summary":"Grok 模型现已原生集成到 Databricks Agent Bricks 平台。在 2026 年 Data + AI Summit 上，Databricks 宣布与 SpaceXAI 合作，使 Grok 与其他前沿及开源模型在同一受控平台中可用。Agent Bricks 结合 Lakehouse 数据上下文与控制和选择，帮助工程团队构建处理大规模数据的 AI 智能体。此外，企业也可在 Amazon Bedrock 上运行 Grok 模型。","source_name":"xAI：News（网页）","origin_url":"","discovered_at":"2026-06-19T06:38:17.993Z","rank_on_page":18,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Grok 现集成 Databricks Agent Bricks","discovery_summary":"Grok 模型现已原生集成到 Databricks Agent Bricks 平台。在 2026 年 Data + AI Summit 上，Databricks 宣布与 SpaceXAI 合作，使 Grok 与其他前沿及开源模型在同一受控平台中可用。Agent Bricks 结合 Lakehouse 数据上下文与控制和选择，帮助工程团队构建处理大规模数据的 AI 智能体。此外，企业也可在 Amazon Bedrock 上运行 Grok 模型。","source_name":"xAI：News（网页）","origin_url":"","discovered_at":"2026-06-19T07:39:26.653Z","rank_on_page":18,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

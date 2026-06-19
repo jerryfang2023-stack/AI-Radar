@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-19T00:51:11.000Z"
-collected_at: 2026-06-19T06:41:39.423Z
+collected_at: 2026-06-19T07:43:57.391Z
 language: mixed
 full_text_hash: 5ab34d83547e6dfd
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-002-elastic-同意以最高8500万美元收购-ai-初创公司-deductiveai.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Elastic 同意以最高8500万美元收购 AI 初创公司 DeductiveAI","discovery_summary":"DeductiveAI 同意被 Elastic 以最高 8500 万美元收购。这家 2023 年成立的初创公司用 AI 自动捕获和修复软件 bug，去年 11 月结束隐身模式并完成 750 万美元种子轮融资（CRV 领投，Databricks Ventures 等参投），当时估值 3300 万美元。DeductiveAI 技术将整合到 Elastic 的可观测性平台，帮助用户自动监控性能并实时解决系统故障。其年经常性收入约 100 万美元。收购反映了传统科技公司通过收购 AI 原生初创公司融入智能体技术的大趋势。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m","discovered_at":"2026-06-19T06:38:20.342Z","rank_on_page":65,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Elastic 同意以最高8500万美元收购 AI 初创公司 DeductiveAI","discovery_summary":"DeductiveAI 同意被 Elastic 以最高 8500 万美元收购。这家 2023 年成立的初创公司用 AI 自动捕获和修复软件 bug，去年 11 月结束隐身模式并完成 750 万美元种子轮融资（CRV 领投，Databricks Ventures 等参投），当时估值 3300 万美元。DeductiveAI 技术将整合到 Elastic 的可观测性平台，帮助用户自动监控性能并实时解决系统故障。其年经常性收入约 100 万美元。收购反映了传统科技公司通过收购 AI 原生初创公司融入智能体技术的大趋势。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m","discovered_at":"2026-06-19T07:39:27.741Z","rank_on_page":70,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 5ab34d83547e6dfd
 semantic_hash: b190f5c1595f3fd8
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-19T00:51:11.000Z"
-last_seen_at: 2026-06-19T06:41:39.423Z
+last_seen_at: 2026-06-19T07:43:57.391Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -266,7 +266,7 @@ Error loading the next article
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Elastic 同意以最高8500万美元收购 AI 初创公司 DeductiveAI","discovery_summary":"DeductiveAI 同意被 Elastic 以最高 8500 万美元收购。这家 2023 年成立的初创公司用 AI 自动捕获和修复软件 bug，去年 11 月结束隐身模式并完成 750 万美元种子轮融资（CRV 领投，Databricks Ventures 等参投），当时估值 3300 万美元。DeductiveAI 技术将整合到 Elastic 的可观测性平台，帮助用户自动监控性能并实时解决系统故障。其年经常性收入约 100 万美元。收购反映了传统科技公司通过收购 AI 原生初创公司融入智能体技术的大趋势。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m","discovered_at":"2026-06-19T06:38:20.342Z","rank_on_page":65,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Elastic 同意以最高8500万美元收购 AI 初创公司 DeductiveAI","discovery_summary":"DeductiveAI 同意被 Elastic 以最高 8500 万美元收购。这家 2023 年成立的初创公司用 AI 自动捕获和修复软件 bug，去年 11 月结束隐身模式并完成 750 万美元种子轮融资（CRV 领投，Databricks Ventures 等参投），当时估值 3300 万美元。DeductiveAI 技术将整合到 Elastic 的可观测性平台，帮助用户自动监控性能并实时解决系统故障。其年经常性收入约 100 万美元。收购反映了传统科技公司通过收购 AI 原生初创公司融入智能体技术的大趋势。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m","discovered_at":"2026-06-19T07:39:27.741Z","rank_on_page":70,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-19T06:41:39.937Z
+collected_at: 2026-06-19T07:43:58.018Z
 language: mixed
 full_text_hash: 6f031af79607a491
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-184-chatgpt-图像生成器可被绕过滤镜生成暴力和色情内容.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"ChatGPT 图像生成器可被绕过滤镜生成暴力和色情内容","discovery_summary":"Mindgard 红队研究发现，ChatGPT 的图像生成器可通过简单提示词轻易绕过内容过滤器，在未直接请求的情况下自动生成性暴力、血腥谋杀等露骨图像。一个热门的“恢复照片”提示词因输入模糊而绕过输入过滤器，结果如同俄罗斯轮盘赌；进一步添加虚假图像 ID 和“不做审查”指令后，模型持续生成高度性化女性图像，甚至出现被捆绑殴打的尸体，并自动赋予惊悚标题。研究指出，OpenAI 此前声称修复的裸体问题仍未解决，暴露了 AI 工具广泛可及性与不足内容过滤的现实风险。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"","discovered_at":"2026-06-19T06:38:17.993Z","rank_on_page":19,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"ChatGPT 图像生成器可被绕过滤镜生成暴力和色情内容","discovery_summary":"Mindgard 红队研究发现，ChatGPT 的图像生成器可通过简单提示词轻易绕过内容过滤器，在未直接请求的情况下自动生成性暴力、血腥谋杀等露骨图像。一个热门的“恢复照片”提示词因输入模糊而绕过输入过滤器，结果如同俄罗斯轮盘赌；进一步添加虚假图像 ID 和“不做审查”指令后，模型持续生成高度性化女性图像，甚至出现被捆绑殴打的尸体，并自动赋予惊悚标题。研究指出，OpenAI 此前声称修复的裸体问题仍未解决，暴露了 AI 工具广泛可及性与不足内容过滤的现实风险。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"","discovered_at":"2026-06-19T07:39:26.653Z","rank_on_page":19,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 6f031af79607a491
 semantic_hash: 8750ba3f445713f8
 duplicate_of: ""
-first_seen_at: "2026-06-19T06:41:39.937Z"
-last_seen_at: 2026-06-19T06:41:39.937Z
+first_seen_at: "2026-06-19T07:43:58.018Z"
+last_seen_at: 2026-06-19T07:43:58.018Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -182,7 +182,7 @@ Mindgard 红队研究发现，ChatGPT 的图像生成器可通过简单提示词
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"ChatGPT 图像生成器可被绕过滤镜生成暴力和色情内容","discovery_summary":"Mindgard 红队研究发现，ChatGPT 的图像生成器可通过简单提示词轻易绕过内容过滤器，在未直接请求的情况下自动生成性暴力、血腥谋杀等露骨图像。一个热门的“恢复照片”提示词因输入模糊而绕过输入过滤器，结果如同俄罗斯轮盘赌；进一步添加虚假图像 ID 和“不做审查”指令后，模型持续生成高度性化女性图像，甚至出现被捆绑殴打的尸体，并自动赋予惊悚标题。研究指出，OpenAI 此前声称修复的裸体问题仍未解决，暴露了 AI 工具广泛可及性与不足内容过滤的现实风险。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"","discovered_at":"2026-06-19T06:38:17.993Z","rank_on_page":19,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"ChatGPT 图像生成器可被绕过滤镜生成暴力和色情内容","discovery_summary":"Mindgard 红队研究发现，ChatGPT 的图像生成器可通过简单提示词轻易绕过内容过滤器，在未直接请求的情况下自动生成性暴力、血腥谋杀等露骨图像。一个热门的“恢复照片”提示词因输入模糊而绕过输入过滤器，结果如同俄罗斯轮盘赌；进一步添加虚假图像 ID 和“不做审查”指令后，模型持续生成高度性化女性图像，甚至出现被捆绑殴打的尸体，并自动赋予惊悚标题。研究指出，OpenAI 此前声称修复的裸体问题仍未解决，暴露了 AI 工具广泛可及性与不足内容过滤的现实风险。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"","discovered_at":"2026-06-19T07:39:26.653Z","rank_on_page":19,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

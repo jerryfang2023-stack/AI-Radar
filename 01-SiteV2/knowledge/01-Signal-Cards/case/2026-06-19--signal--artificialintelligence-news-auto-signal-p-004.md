@@ -9,8 +9,8 @@ source_title: "计算机视觉货架跟踪推动零售业生产力提升"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-19T06:41:40.175Z
-updated_at: 2026-06-19T06:41:40.175Z
+created_at: 2026-06-19T07:43:58.263Z
+updated_at: 2026-06-19T07:43:58.263Z
 
 raw_refs: ["R-004"]
 pool_refs: ["P-004"]
@@ -19,7 +19,7 @@ primary_raw:
   raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-004-计算机视觉货架跟踪推动零售业生产力提升.md"
   raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-004-计算机视觉货架跟踪推动零售业生产力提升.json"
   source_url: "https://www.artificialintelligence-news.com/news/computer-vision-deployments-drive-retail-productivity-gains"
-  full_text_hash: "3ce849762b811e6e"
+  full_text_hash: "448acbbecf05eba8"
   source_level: B
   extraction_quality: high
   has_full_text: true

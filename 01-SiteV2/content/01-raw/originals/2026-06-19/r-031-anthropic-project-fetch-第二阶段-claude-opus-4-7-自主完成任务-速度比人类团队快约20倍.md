@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T16:22:33.561Z"
-collected_at: 2026-06-19T06:41:39.517Z
+collected_at: 2026-06-19T07:43:57.492Z
 language: mixed
 full_text_hash: 46a1a52b89b05e2b
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-031-anthropic-project-fetch-第二阶段-claude-opus-4-7-自主完成任务-速度比人类团队快约20倍.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: supporting_evidence
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍","discovery_summary":"Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。","source_name":"Anthropic：Research（发表成果 · 网页）","origin_url":"https://www.anthropic.com/research/project-fetch-phase-two","discovered_at":"2026-06-19T06:38:20.371Z","rank_on_page":194,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍","discovery_summary":"Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。","source_name":"Anthropic：Research（发表成果 · 网页）","origin_url":"https://www.anthropic.com/research/project-fetch-phase-two","discovered_at":"2026-06-19T07:39:27.774Z","rank_on_page":199,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 46a1a52b89b05e2b
 semantic_hash: 3945fdb1d797566a
 duplicate_of: ""
 first_seen_at: "2026-06-18T16:22:33.561Z"
-last_seen_at: 2026-06-19T06:41:39.517Z
+last_seen_at: 2026-06-19T07:43:57.492Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -265,7 +265,7 @@ Get updates on our latest red-teaming research and findings.
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍","discovery_summary":"Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。","source_name":"Anthropic：Research（发表成果 · 网页）","origin_url":"https://www.anthropic.com/research/project-fetch-phase-two","discovered_at":"2026-06-19T06:38:20.371Z","rank_on_page":194,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍","discovery_summary":"Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。","source_name":"Anthropic：Research（发表成果 · 网页）","origin_url":"https://www.anthropic.com/research/project-fetch-phase-two","discovered_at":"2026-06-19T07:39:27.774Z","rank_on_page":199,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

@@ -4,7 +4,7 @@
     "siteVersion": "SITE-V3.3.8-enterprise-ai-transformation",
     "businessSignalsColumnVersion": "BSIG-V1.1.0-enterprise-ai-transformation",
     "enterpriseAiLensVersion": "EAI-V1.0.0-enterprise-ai-transformation",
-    "generatedAt": "2026-06-19T07:10:16.690Z",
+    "generatedAt": "2026-06-19T07:44:03.468Z",
     "activeDate": "2026-06-19",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -34,13 +34,13 @@
     "totalCards": 321,
     "todayCards": 14,
     "todayTop10": 10,
-    "corePoolCandidates": 15,
-    "linkedCorePoolCards": 11,
+    "corePoolCandidates": 16,
+    "linkedCorePoolCards": 12,
     "candidateOnlyCorePool": 5,
-    "relationshipNodes": 23,
-    "relationshipEdges": 50,
+    "relationshipNodes": 25,
+    "relationshipEdges": 53,
     "relationshipClusters": 3,
-    "enterpriseAiTransformation": 2,
+    "enterpriseAiTransformation": 3,
     "tagAssociations": 8,
     "trendLinks": 16,
     "trendCandidates": 0
@@ -51,50 +51,52 @@
       "SIG-20260619-A01",
       "SIG-20260619-A04",
       "SIG-20260619-A02",
-      "SIG-20260619-A03",
-      "SIG-20260619-A15",
+      "SIG-20260619-A13",
       "SIG-20260619-A05",
-      "SIG-20260619-A24",
-      "SIG-20260619-A21",
-      "SIG-20260619-A08"
+      "SIG-20260619-A06",
+      "SIG-20260619-A23",
+      "SIG-20260619-A08",
+      "SIG-20260619-A19"
     ],
     "corePoolCardIds": [
       "POOL-2026-06-19-P-006",
       "POOL-2026-06-19-P-011",
-      "POOL-2026-06-19-P-060",
-      "POOL-2026-06-19-P-062",
-      "POOL-2026-06-19-P-051",
+      "POOL-2026-06-19-P-065",
+      "POOL-2026-06-19-P-066",
+      "POOL-2026-06-19-P-041",
       "SIG-20260619-A18",
       "SIG-20260619-A01",
       "SIG-20260619-A04",
       "SIG-20260619-A02",
-      "SIG-20260619-A15",
+      "SIG-20260619-A13",
       "SIG-20260619-A03",
-      "SIG-20260619-A14",
+      "SIG-20260619-A12",
       "SIG-20260618-A03",
-      "SIG-20260619-A24",
-      "SIG-20260619-A21",
+      "SIG-20260619-A06",
+      "SIG-20260619-A22",
+      "SIG-20260619-A15",
       "SIG-20260619-A19"
     ],
     "enterpriseAiTransformationCardIds": [
+      "POOL-2026-06-19-P-041",
       "SIG-20260619-A04",
-      "SIG-20260619-A15"
+      "SIG-20260619-A13"
     ],
     "largeCompanyTop10": [
       {
-        "id": "SIG-20260619-A15",
+        "id": "SIG-20260619-A13",
         "vendor": "google",
         "title": "汇丰银行与Google Cloud扩大AI银行合作"
       },
       {
-        "id": "SIG-20260619-A24",
-        "vendor": "nvidia",
-        "title": "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…"
+        "id": "SIG-20260619-A23",
+        "vendor": "meta",
+        "title": "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职"
       },
       {
-        "id": "SIG-20260619-A21",
-        "vendor": "meta",
-        "title": "AI 账单失控：AT&T、Meta 等巨头急刹车，从\"疯狂消耗\"到\"严苛限制"
+        "id": "SIG-20260619-A19",
+        "vendor": "anthropic",
+        "title": "Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网…"
       }
     ],
     "categoryStats": [
@@ -119,17 +121,17 @@
           {
             "tag": "customer-enterprise",
             "label": "大中型企业",
-            "count": 5
+            "count": 6
           },
           {
             "tag": "track-enterprise-workflow",
             "label": "企业工作流",
-            "count": 5
+            "count": 6
           },
           {
             "tag": "customer-developer-team",
             "label": "开发团队",
-            "count": 4
+            "count": 3
           }
         ]
       },
@@ -323,7 +325,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260619-A15",
+      "id": "SIG-20260619-A13",
       "date": "2026-06-19",
       "type": "signal_card",
       "category": "case",
@@ -425,19 +427,19 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260619-A22",
+      "id": "SIG-20260619-A06",
       "date": "2026-06-19",
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Gemini 联合负责人 Noam Shazeer 加入 OpenAI",
-      "subject": "AI business signal",
-      "sourceName": "The Decoder：AI News（RSS）",
-      "sourceUrl": "https://the-decoder.com/googles-gemini-co-lead-noam-shazeer-joins-openai-after-two-year-return-stint",
-      "sourceLevel": "A",
+      "title": "ellamind 的公开案例显示",
+      "subject": "From the Customer's Side of the Table",
+      "sourceName": "ellamind.com",
+      "sourceUrl": "https://www.ellamind.com/blog/forward-deployed-engineer",
+      "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 636,
-      "evidenceScore": 48,
+      "rankScore": 656,
+      "evidenceScore": 56,
       "poolRoutes": [
         "core_pool"
       ],
@@ -449,20 +451,22 @@
       "notPromotedIssues": [],
       "repairSuggestion": "",
       "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "google",
+      "largeVendor": false,
+      "largeVendorKey": "",
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-ai-coding",
-          "track-ai-infra"
+          "track-enterprise-workflow",
+          "track-ai-customer-service"
         ],
         "function": [
-          "function-engineering"
+          "function-customer-service"
         ],
-        "scenario": [],
+        "scenario": [
+          "scenario-customer-ticket"
+        ],
         "customer": [
-          "customer-developer-team"
+          "customer-enterprise"
         ],
         "evidence": [
           "evidence-customer-adoption"
@@ -470,17 +474,18 @@
         "stage": [],
         "region": [],
         "source": [
-          "source-business-media"
+          "source-industry-data"
         ]
       },
       "flatTags": [
         "track-ai-agent",
-        "track-ai-coding",
-        "track-ai-infra",
-        "function-engineering",
-        "customer-developer-team",
+        "track-enterprise-workflow",
+        "track-ai-customer-service",
+        "function-customer-service",
+        "scenario-customer-ticket",
+        "customer-enterprise",
         "evidence-customer-adoption",
-        "source-business-media"
+        "source-industry-data"
       ],
       "displayTags": [
         {
@@ -488,41 +493,44 @@
           "label": "AI Agent"
         },
         {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
         },
         {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
         },
         {
-          "id": "function-engineering",
-          "label": "工程研发"
+          "id": "function-customer-service",
+          "label": "客服售后"
         },
         {
-          "id": "customer-developer-team",
-          "label": "开发团队"
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
         },
         {
           "id": "evidence-customer-adoption",
           "label": "客户采用"
         }
       ],
-      "fact": "\"Attention Is All You Need\"论文合著者 Noam Shazeer 离开 Google 加入 OpenAI。他此前担任 Google 工程副总裁，与 Jeff Dean、Oriol Vinyals 共同领导 Gemini 模型。Shazeer 于 2000 年加入 Google，2021 年离职创办 AI 聊天机器人初创公司 Character.AI，2024 年作为价值 27 亿美元交易的一部分返回 Goog",
-      "evidencePoints": [],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "fact": "ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "evidencePoints": [
+        "原文未提供更多可拆分事实点，需以可见原文片段核对。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
       "selectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
         "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
+        "有较完整的原文事实支撑"
       ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
+      "qualityWarnings": [],
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260619-A14",
+      "id": "SIG-20260619-A12",
       "date": "2026-06-19",
       "type": "signal_card",
       "category": "case",
@@ -644,7 +652,7 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260619-A21",
+      "id": "SIG-20260619-A22",
       "date": "2026-06-19",
       "type": "signal_card",
       "category": "case",
@@ -881,19 +889,19 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260619-A12",
+      "id": "SIG-20260619-A15",
       "date": "2026-06-19",
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "thoughtworks 发布新的 AI 产品或平台能力",
-      "subject": "Thoughtworks",
-      "sourceName": "thoughtworks.com",
-      "sourceUrl": "https://www.thoughtworks.com/en-us/about-us/news/2026/thoughtworks-launches-agent-works",
+      "title": "tsia 的公开案例显示",
+      "subject": "Tsia",
+      "sourceName": "tsia.com",
+      "sourceUrl": "https://www.tsia.com/blog/forward-deployed-engineering-ai-era",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 610,
-      "evidenceScore": 28,
+      "rankScore": 624,
+      "evidenceScore": 12,
       "poolRoutes": [
         "core_pool"
       ],
@@ -951,7 +959,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "thoughtworks 发布新的 AI 产品或平台能力，信号价值在于观察它是否进入具体企业工作流。",
+      "fact": "tsia 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
       "evidencePoints": [
         "原文未提供更多可拆分事实点，需以可见原文片段核对。"
       ],
@@ -961,7 +969,8 @@
         "指向平台能力、交付成本或生态合作变化"
       ],
       "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
+        "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
     },
@@ -1394,18 +1403,18 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260619-A24",
+      "id": "SIG-20260619-A23",
       "date": "2026-06-19",
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…",
-      "subject": "英伟达在虚幻嘉年华 2026",
+      "title": "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职",
+      "subject": "AI business signal",
       "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/965/989.htm",
+      "sourceUrl": "https://www.ithome.com/0/966/109.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 644,
+      "rankScore": 630,
       "evidenceScore": 66,
       "poolRoutes": [
         "core_pool"
@@ -1419,29 +1428,26 @@
       "repairSuggestion": "",
       "promotePriority": "",
       "largeVendor": true,
-      "largeVendorKey": "nvidia",
+      "largeVendorKey": "meta",
       "tags": {
         "track": [
           "track-ai-agent",
           "track-ai-coding",
-          "track-enterprise-workflow",
-          "track-enterprise-data",
-          "track-ai-infra",
-          "track-ai-customer-service"
+          "track-enterprise-workflow"
         ],
         "function": [
           "function-engineering",
-          "function-customer-service"
+          "function-sales"
         ],
         "scenario": [
-          "scenario-knowledge-base",
-          "scenario-customer-ticket"
+          "scenario-sales-briefing"
         ],
         "customer": [
           "customer-developer-team",
           "customer-enterprise"
         ],
         "evidence": [
+          "evidence-partnership-integration",
           "evidence-product-launch"
         ],
         "stage": [],
@@ -1454,15 +1460,12 @@
         "track-ai-agent",
         "track-ai-coding",
         "track-enterprise-workflow",
-        "track-enterprise-data",
-        "track-ai-infra",
-        "track-ai-customer-service",
         "function-engineering",
-        "function-customer-service",
-        "scenario-knowledge-base",
-        "scenario-customer-ticket",
+        "function-sales",
+        "scenario-sales-briefing",
         "customer-developer-team",
         "customer-enterprise",
+        "evidence-partnership-integration",
         "evidence-product-launch",
         "source-industry-data"
       ],
@@ -1480,32 +1483,16 @@
           "label": "企业工作流"
         },
         {
-          "id": "track-enterprise-data",
-          "label": "企业数据智能"
-        },
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "track-ai-customer-service",
-          "label": "AI 客服"
-        },
-        {
           "id": "function-engineering",
           "label": "工程研发"
         },
         {
-          "id": "function-customer-service",
-          "label": "客服售后"
+          "id": "function-sales",
+          "label": "销售"
         },
         {
-          "id": "scenario-knowledge-base",
-          "label": "知识库问答"
-        },
-        {
-          "id": "scenario-customer-ticket",
-          "label": "工单与质检"
+          "id": "scenario-sales-briefing",
+          "label": "销售日报"
         },
         {
           "id": "customer-developer-team",
@@ -1516,22 +1503,26 @@
           "label": "大中型企业"
         },
         {
+          "id": "evidence-partnership-integration",
+          "label": "合作集成"
+        },
+        {
           "id": "evidence-product-launch",
           "label": "产品发布"
         }
       ],
-      "fact": "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RAG API。已有 KRAFTON 在《绝地求生》推出限时 AI 队友 Ally，",
+      "fact": "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职。她于2015年加入Meta，曾任Threads产品负责人，两个月前刚被指派改进内部AI工具。Meta正推进全公司重组，计划开发能替代人类员工的AI智能体，引发内部强烈反弹。重组涉及裁撤10%员工、调岗及部署鼠标追踪软件。道尔顿·史密斯领导\"智能体转型加速计划\"（ATA）小组，负责企业级AI助手Metamate集成多种AI技能。Meta CTO博斯沃思坦言老员工士气跌至",
       "evidencePoints": [
-        "这套工具允许游戏开发者为搭载 GeForce RTX 显卡的设备构建本地运行的 AI 角色，并包含面向虚幻引擎 5 的插件，覆盖 AI 驱动的自动语音识别、小语言模型和文本转语音组件。",
-        "KRAFTON 近期在《绝地求生：大逃杀》中推出了限时 Beta 测试的 AI 队友 Ally，用于测试和收集玩家对“人机双排模式”的体验反馈。",
-        "IT之家注意到，另一个开发中的案例是 Creative Assembly 在《全面战争：法老》中加入的 AI 顾问。",
-        "据英伟达官方介绍，NVIDIA ACE Game Agent SDK 被设计为一个轻量级的 C/C++ 智能体框架，内置即用型 Qwen 3."
+        "道尔顿 · 史密斯 2015 年加入 Meta，曾任产品管理副总裁，并担任 Threads 的产品负责人。",
+        "约两个月前，Meta 才向员工宣布，道尔顿 · 史密斯将 负责改进内部 AI 工具 。",
+        "Meta 正在推进全公司重组，希望把 AI 同时置于面向用户的产品和内部工作流程中心。",
+        "Meta 希望通过重组开发能够 自主完成人类员工现有工作 的 AI 智能体，但这项计划已经在内部引发强烈反弹。"
       ],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
       "selectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
         "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
         "可见原文片段不足，已降权处理"
@@ -35164,10 +35155,12 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "暂未晋级正式 Card",
-      "notPromotedIssues": [],
-      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
-      "promotePriority": "review",
+      "notPromotedReason": "融资信息不是单一公司轮次事件",
+      "notPromotedIssues": [
+        "融资信息不是单一公司轮次事件"
+      ],
+      "repairSuggestion": "补齐单一公司的融资金额、轮次、投资方和日期。",
+      "promotePriority": "low",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -35237,54 +35230,7 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-19-P-060",
-      "date": "2026-06-19",
-      "type": "core_pool_candidate",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "蔡崇信：阿里全面投入 AI，开源的主要推动力量来自中国企业",
-      "subject": "蔡崇信",
-      "sourceName": "ithome.com",
-      "sourceUrl": "https://www.ithome.com/0/966/318.htm",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 960,
-      "evidenceScore": 41,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-060"
-      ],
-      "linkedCardId": "",
-      "status": "pooled",
-      "promotionStatus": "candidate_only",
-      "notPromotedReason": "暂未晋级正式 Card",
-      "notPromotedIssues": [],
-      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
-      "promotePriority": "review",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {},
-      "flatTags": [],
-      "displayTags": [
-        {
-          "id": "product-service",
-          "label": "产品"
-        }
-      ],
-      "fact": "蔡崇信昨日在 VivaTech 2026 上表示，AI 的总潜在市场规模达 50 万亿美元，对标人类生产力，阿里巴巴正全面投入 AI。其全栈 AI 优势包括：中国高效低成本的能源供给，提前布局的云计算和芯片，全球最受欢迎的开源模型千问（Qwen），以及覆盖电商、即时零售等丰富应用场景。他同时指出，当前全球 AI 开源的主要推动力量来自中国企业，阿里巴巴团队在推动前沿模型开源方面做出巨大贡献。",
-      "evidencePoints": [],
-      "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
-      "selectionReasons": [
-        "进入当天 Core Pool 候选池",
-        "保留为完整证据池材料"
-      ],
-      "qualityWarnings": [],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-19-P-062",
+      "id": "POOL-2026-06-19-P-065",
       "date": "2026-06-19",
       "type": "core_pool_candidate",
       "category": "product-service",
@@ -35301,7 +35247,7 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-062"
+        "P-065"
       ],
       "linkedCardId": "",
       "status": "pooled",
@@ -35331,24 +35277,73 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-19-P-051",
+      "id": "POOL-2026-06-19-P-066",
       "date": "2026-06-19",
       "type": "core_pool_candidate",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "Pixi 发布 iMessage AR 应用，可发送 AI 驱动互动角色",
-      "subject": "Pixi",
-      "sourceName": "techcrunch.com",
-      "sourceUrl": "https://techcrunch.com/2026/06/18/pixis-new-ios-app-turns-text-messages-into-interactive-ar-experiences",
-      "sourceLevel": "A",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "OpenAI 成为 Rust 基金会白金会员，合计赞助 60 万美元",
+      "subject": "OpenAI",
+      "sourceName": "ithome.com",
+      "sourceUrl": "https://www.ithome.com/0/966/146.htm",
+      "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 819.9999999999999,
+      "rankScore": 960,
+      "evidenceScore": 46,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [
+        "P-066"
+      ],
+      "linkedCardId": "",
+      "status": "pooled",
+      "promotionStatus": "candidate_only",
+      "notPromotedReason": "页面类型不适合直接成卡，需要回到具体事件页",
+      "notPromotedIssues": [
+        "页面类型不适合直接成卡，需要回到具体事件页"
+      ],
+      "repairSuggestion": "回到有日期、主体、动作的单一公司事件页后再晋级。",
+      "promotePriority": "low",
+      "largeVendor": true,
+      "largeVendorKey": "openai",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "funding",
+          "label": "融资"
+        }
+      ],
+      "fact": "6月18日，Rust基金会宣布OpenAI以白金会员身份加入，并提供总计60万美元（约406.5万元人民币）的资金支持，涵盖入会费用、额外拨款及生态系统维护。该资金将用于Rust Project Goals、Rust Innovation Lab等计划，为开源项目维护者提供系统化支持。Rust基金会是由AWS、谷歌、微软等联合创立的独立非营利组织。",
+      "evidencePoints": [],
+      "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
+      "selectionReasons": [
+        "进入当天 Core Pool 候选池",
+        "保留为完整证据池材料"
+      ],
+      "qualityWarnings": [],
+      "fromCorePool": true
+    },
+    {
+      "id": "POOL-2026-06-19-P-041",
+      "date": "2026-06-19",
+      "type": "core_pool_candidate",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "delight 的公开案例显示",
+      "subject": "delight 的原文业务场景",
+      "sourceName": "delight.ai",
+      "sourceUrl": "https://delight.ai/customers/norse-atlantic-airways",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 890,
       "evidenceScore": 97,
       "poolRoutes": [
         "core_pool"
       ],
       "poolRefs": [
-        "P-051"
+        "P-041"
       ],
       "linkedCardId": "",
       "status": "pooled",
@@ -35363,11 +35358,11 @@
       "flatTags": [],
       "displayTags": [
         {
-          "id": "product-service",
-          "label": "产品"
+          "id": "case",
+          "label": "案例"
         }
       ],
-      "fact": "Pixi 在 App Store 上线 iMessage 应用，用户可发送 AI 驱动的 AR 角色。角色通过收信人 iPhone 相机实时与真实环境互动，能感知面部表情和周围物体，所有视觉和音频处理在设备端进行以保护隐私。首批角色包括机器人、猫和动画信封，支持井字棋等游戏。未来计划开放市场供品牌和创作者提供专属角色，并允许用户自创。应用免费，品牌可选择性收费。仅支持 iPhone 11 及以上机型，未来将扩展至 Android 和",
+      "fact": "delight 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
       "evidencePoints": [],
       "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
       "selectionReasons": [
@@ -35378,7 +35373,7 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-19-P-052",
+      "id": "POOL-2026-06-19-P-061",
       "date": "2026-06-19",
       "type": "core_pool_candidate",
       "category": "product-service",
@@ -35395,7 +35390,7 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-052"
+        "P-061"
       ],
       "linkedCardId": "SIG-20260619-A18",
       "status": "signal_card",
@@ -35850,7 +35845,7 @@
       "poolRefs": [
         "P-025"
       ],
-      "linkedCardId": "SIG-20260619-A15",
+      "linkedCardId": "SIG-20260619-A13",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -35935,7 +35930,7 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-19-P-043",
+      "id": "POOL-2026-06-19-P-055",
       "date": "2026-06-19",
       "type": "core_pool_candidate",
       "category": "funding",
@@ -35952,7 +35947,7 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-043"
+        "P-055"
       ],
       "linkedCardId": "SIG-20260619-A03",
       "status": "signal_card",
@@ -36049,7 +36044,7 @@
       "poolRefs": [
         "P-017"
       ],
-      "linkedCardId": "SIG-20260619-A14",
+      "linkedCardId": "SIG-20260619-A12",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -36154,7 +36149,7 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-19-P-044",
+      "id": "POOL-2026-06-19-P-056",
       "date": "2026-06-18",
       "type": "core_pool_candidate",
       "category": "funding",
@@ -36171,7 +36166,7 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-044"
+        "P-056"
       ],
       "linkedCardId": "SIG-20260618-A03",
       "status": "signal_card",
@@ -36250,57 +36245,51 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-19-P-063",
+      "id": "POOL-2026-06-19-P-043",
       "date": "2026-06-19",
       "type": "core_pool_candidate",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…",
-      "subject": "英伟达在虚幻嘉年华 2026",
-      "sourceName": "IT之家（RSS）",
-      "sourceUrl": "https://www.ithome.com/0/965/989.htm",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "ellamind 的公开案例显示",
+      "subject": "From the Customer's Side of the Table",
+      "sourceName": "ellamind.com",
+      "sourceUrl": "https://www.ellamind.com/blog/forward-deployed-engineer",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 644,
-      "evidenceScore": 66,
+      "rankScore": 656,
+      "evidenceScore": 56,
       "poolRoutes": [
         "core_pool"
       ],
       "poolRefs": [
-        "P-063"
+        "P-043"
       ],
-      "linkedCardId": "SIG-20260619-A24",
+      "linkedCardId": "SIG-20260619-A06",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
       "notPromotedIssues": [],
       "repairSuggestion": "",
       "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "nvidia",
+      "largeVendor": false,
+      "largeVendorKey": "",
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-ai-coding",
           "track-enterprise-workflow",
-          "track-enterprise-data",
-          "track-ai-infra",
           "track-ai-customer-service"
         ],
         "function": [
-          "function-engineering",
           "function-customer-service"
         ],
         "scenario": [
-          "scenario-knowledge-base",
           "scenario-customer-ticket"
         ],
         "customer": [
-          "customer-developer-team",
           "customer-enterprise"
         ],
         "evidence": [
-          "evidence-product-launch"
+          "evidence-customer-adoption"
         ],
         "stage": [],
         "region": [],
@@ -36310,18 +36299,12 @@
       },
       "flatTags": [
         "track-ai-agent",
-        "track-ai-coding",
         "track-enterprise-workflow",
-        "track-enterprise-data",
-        "track-ai-infra",
         "track-ai-customer-service",
-        "function-engineering",
         "function-customer-service",
-        "scenario-knowledge-base",
         "scenario-customer-ticket",
-        "customer-developer-team",
         "customer-enterprise",
-        "evidence-product-launch",
+        "evidence-customer-adoption",
         "source-industry-data"
       ],
       "displayTags": [
@@ -36330,74 +36313,44 @@
           "label": "AI Agent"
         },
         {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
-        },
-        {
           "id": "track-enterprise-workflow",
           "label": "企业工作流"
-        },
-        {
-          "id": "track-enterprise-data",
-          "label": "企业数据智能"
-        },
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
         },
         {
           "id": "track-ai-customer-service",
           "label": "AI 客服"
         },
         {
-          "id": "function-engineering",
-          "label": "工程研发"
-        },
-        {
           "id": "function-customer-service",
           "label": "客服售后"
-        },
-        {
-          "id": "scenario-knowledge-base",
-          "label": "知识库问答"
         },
         {
           "id": "scenario-customer-ticket",
           "label": "工单与质检"
         },
         {
-          "id": "customer-developer-team",
-          "label": "开发团队"
-        },
-        {
           "id": "customer-enterprise",
           "label": "大中型企业"
         },
         {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
         }
       ],
-      "fact": "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RAG API。已有 KRAFTON 在《绝地求生》推出限时 AI 队友 Ally，",
+      "fact": "ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
       "evidencePoints": [
-        "这套工具允许游戏开发者为搭载 GeForce RTX 显卡的设备构建本地运行的 AI 角色，并包含面向虚幻引擎 5 的插件，覆盖 AI 驱动的自动语音识别、小语言模型和文本转语音组件。",
-        "KRAFTON 近期在《绝地求生：大逃杀》中推出了限时 Beta 测试的 AI 队友 Ally，用于测试和收集玩家对“人机双排模式”的体验反馈。",
-        "IT之家注意到，另一个开发中的案例是 Creative Assembly 在《全面战争：法老》中加入的 AI 顾问。",
-        "据英伟达官方介绍，NVIDIA ACE Game Agent SDK 被设计为一个轻量级的 C/C++ 智能体框架，内置即用型 Qwen 3."
+        "原文未提供更多可拆分事实点，需以可见原文片段核对。"
       ],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
       "selectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
         "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
+        "有较完整的原文事实支撑"
       ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
+      "qualityWarnings": [],
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-19-P-061",
+      "id": "POOL-2026-06-19-P-063",
       "date": "2026-06-19",
       "type": "core_pool_candidate",
       "category": "case",
@@ -36414,9 +36367,9 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-061"
+        "P-063"
       ],
-      "linkedCardId": "SIG-20260619-A21",
+      "linkedCardId": "SIG-20260619-A22",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -36539,7 +36492,95 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-19-P-056",
+      "id": "POOL-2026-06-19-P-038",
+      "date": "2026-06-19",
+      "type": "core_pool_candidate",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "tsia 的公开案例显示",
+      "subject": "Tsia",
+      "sourceName": "tsia.com",
+      "sourceUrl": "https://www.tsia.com/blog/forward-deployed-engineering-ai-era",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 624,
+      "evidenceScore": 12,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [
+        "P-038"
+      ],
+      "linkedCardId": "SIG-20260619-A15",
+      "status": "signal_card",
+      "promotionStatus": "promoted_to_signal_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "customer-enterprise",
+        "evidence-customer-adoption",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "fact": "tsia 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "evidencePoints": [
+        "原文未提供更多可拆分事实点，需以可见原文片段核对。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "POOL-2026-06-19-P-062",
       "date": "2026-06-19",
       "type": "core_pool_candidate",
       "category": "product-service",
@@ -36556,7 +36597,7 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-056"
+        "P-062"
       ],
       "linkedCardId": "SIG-20260619-A19",
       "status": "signal_card",
@@ -36695,22 +36736,6 @@
         "sourceName": "Artificial Intelligence News（RSS）"
       },
       {
-        "id": "subject:The-Decoder：AI-News（RSS）",
-        "label": "The Decoder：AI News（RSS）",
-        "type": "subject",
-        "weight": 2,
-        "category": "case",
-        "sourceName": "The Decoder：AI News（RSS）"
-      },
-      {
-        "id": "subject:英伟达在虚幻嘉年华-2026",
-        "label": "英伟达在虚幻嘉年华 2026",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "IT之家（RSS）"
-      },
-      {
         "id": "subject:AI-账单失控",
         "label": "AI 账单失控",
         "type": "subject",
@@ -36743,12 +36768,28 @@
         "sourceName": "TechCrunch：AI（RSS）"
       },
       {
+        "id": "subject:From-the-Customer's-Side-of-the-Table",
+        "label": "From the Customer's Side of the Table",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "ellamind.com"
+      },
+      {
         "id": "subject:Googleblog",
         "label": "Googleblog",
         "type": "subject",
         "weight": 1,
         "category": "case",
         "sourceName": "Google Developers Blog（RSS）"
+      },
+      {
+        "id": "subject:IT之家（RSS）",
+        "label": "IT之家（RSS）",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
       },
       {
         "id": "subject:Ltd.",
@@ -36775,12 +36816,20 @@
         "sourceName": "TechCrunch：AI（RSS）"
       },
       {
-        "id": "subject:Thoughtworks",
-        "label": "Thoughtworks",
+        "id": "subject:The-Decoder：AI-News（RSS）",
+        "label": "The Decoder：AI News（RSS）",
         "type": "subject",
         "weight": 1,
         "category": "case",
-        "sourceName": "thoughtworks.com"
+        "sourceName": "The Decoder：AI News（RSS）"
+      },
+      {
+        "id": "subject:Tsia",
+        "label": "Tsia",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "tsia.com"
       },
       {
         "id": "signal:track-ai-agent",
@@ -36793,21 +36842,21 @@
         "id": "signal:track-enterprise-workflow",
         "label": "企业工作流",
         "type": "signal",
-        "weight": 10,
+        "weight": 11,
         "tag": "track-enterprise-workflow"
       },
       {
         "id": "signal:track-ai-coding",
         "label": "AI Coding",
         "type": "signal",
-        "weight": 8,
+        "weight": 7,
         "tag": "track-ai-coding"
       },
       {
         "id": "signal:track-ai-infra",
         "label": "AI 基础设施",
         "type": "signal",
-        "weight": 4,
+        "weight": 3,
         "tag": "track-ai-infra"
       },
       {
@@ -36825,11 +36874,11 @@
         "tag": "function-sales"
       },
       {
-        "id": "signal:function-engineering",
-        "label": "工程研发",
+        "id": "signal:track-ai-customer-service",
+        "label": "AI 客服",
         "type": "signal",
         "weight": 1,
-        "tag": "function-engineering"
+        "tag": "track-ai-customer-service"
       },
       {
         "id": "signal:track-enterprise-data",
@@ -36837,37 +36886,16 @@
         "type": "signal",
         "weight": 1,
         "tag": "track-enterprise-data"
+      },
+      {
+        "id": "signal:function-engineering",
+        "label": "工程研发",
+        "type": "signal",
+        "weight": 1,
+        "tag": "function-engineering"
       }
     ],
     "edges": [
-      {
-        "from": "category:案例",
-        "to": "subject:Artificialintelligence-News",
-        "label": "案例",
-        "weight": 2,
-        "cardIds": [
-          "SIG-20260619-A04",
-          "SIG-20260619-A15"
-        ],
-        "titles": [
-          "计算机视觉货架跟踪推动零售业生产力提升",
-          "汇丰银行与Google Cloud扩大AI银行合作"
-        ]
-      },
-      {
-        "from": "category:案例",
-        "to": "subject:The-Decoder：AI-News（RSS）",
-        "label": "案例",
-        "weight": 2,
-        "cardIds": [
-          "SIG-20260619-A22",
-          "SIG-20260619-A05"
-        ],
-        "titles": [
-          "Gemini 联合负责人 Noam Shazeer 加入 OpenAI",
-          "Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心"
-        ]
-      },
       {
         "from": "subject:Artificialintelligence-News",
         "to": "signal:track-ai-agent",
@@ -36875,7 +36903,7 @@
         "weight": 2,
         "cardIds": [
           "SIG-20260619-A04",
-          "SIG-20260619-A15"
+          "SIG-20260619-A13"
         ],
         "titles": [
           "计算机视觉货架跟踪推动零售业生产力提升",
@@ -36889,7 +36917,7 @@
         "weight": 2,
         "cardIds": [
           "SIG-20260619-A04",
-          "SIG-20260619-A15"
+          "SIG-20260619-A13"
         ],
         "titles": [
           "计算机视觉货架跟踪推动零售业生产力提升",
@@ -36897,67 +36925,17 @@
         ]
       },
       {
-        "from": "subject:The-Decoder：AI-News（RSS）",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
+        "from": "category:案例",
+        "to": "subject:Artificialintelligence-News",
+        "label": "案例",
         "weight": 2,
         "cardIds": [
-          "SIG-20260619-A22",
-          "SIG-20260619-A05"
+          "SIG-20260619-A04",
+          "SIG-20260619-A13"
         ],
         "titles": [
-          "Gemini 联合负责人 Noam Shazeer 加入 OpenAI",
-          "Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心"
-        ]
-      },
-      {
-        "from": "subject:The-Decoder：AI-News（RSS）",
-        "to": "signal:track-ai-coding",
-        "label": "关联",
-        "weight": 2,
-        "cardIds": [
-          "SIG-20260619-A22",
-          "SIG-20260619-A05"
-        ],
-        "titles": [
-          "Gemini 联合负责人 Noam Shazeer 加入 OpenAI",
-          "Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心"
-        ]
-      },
-      {
-        "from": "category:案例",
-        "to": "subject:Googleblog",
-        "label": "案例",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260619-A14"
-        ],
-        "titles": [
-          "Google 庆祝A2A协议发布一周年：协作智能体生态"
-        ]
-      },
-      {
-        "from": "category:案例",
-        "to": "subject:AI-账单失控",
-        "label": "案例",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260619-A21"
-        ],
-        "titles": [
-          "AI 账单失控：AT&T、Meta 等巨头急刹车，从\"疯狂消耗\"到\"严苛限制"
-        ]
-      },
-      {
-        "from": "category:案例",
-        "to": "subject:Thoughtworks",
-        "label": "案例",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260619-A12"
-        ],
-        "titles": [
-          "thoughtworks 发布新的 AI 产品或平台能力"
+          "计算机视觉货架跟踪推动零售业生产力提升",
+          "汇丰银行与Google Cloud扩大AI银行合作"
         ]
       },
       {
@@ -36974,14 +36952,14 @@
       },
       {
         "from": "category:产品",
-        "to": "subject:英伟达在虚幻嘉年华-2026",
+        "to": "subject:IT之家（RSS）",
         "label": "产品",
         "weight": 1,
         "cardIds": [
-          "SIG-20260619-A24"
+          "SIG-20260619-A23"
         ],
         "titles": [
-          "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…"
+          "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职"
         ]
       },
       {
@@ -37026,69 +37004,93 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260619-A15"
+          "SIG-20260619-A13"
         ],
         "titles": [
           "汇丰银行与Google Cloud扩大AI银行合作"
         ]
       },
       {
-        "from": "subject:The-Decoder：AI-News（RSS）",
-        "to": "signal:track-ai-infra",
+        "from": "subject:From-the-Customer's-Side-of-the-Table",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A06"
+        ],
+        "titles": [
+          "ellamind 的公开案例显示"
+        ]
+      },
+      {
+        "from": "subject:From-the-Customer's-Side-of-the-Table",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A06"
+        ],
+        "titles": [
+          "ellamind 的公开案例显示"
+        ]
+      },
+      {
+        "from": "subject:From-the-Customer's-Side-of-the-Table",
+        "to": "signal:track-ai-customer-service",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A06"
+        ],
+        "titles": [
+          "ellamind 的公开案例显示"
+        ]
+      },
+      {
+        "from": "subject:Googleblog",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A12"
+        ],
+        "titles": [
+          "Google 庆祝A2A协议发布一周年：协作智能体生态"
+        ]
+      },
+      {
+        "from": "subject:Googleblog",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A12"
+        ],
+        "titles": [
+          "Google 庆祝A2A协议发布一周年：协作智能体生态"
+        ]
+      },
+      {
+        "from": "subject:Googleblog",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A12"
+        ],
+        "titles": [
+          "Google 庆祝A2A协议发布一周年：协作智能体生态"
+        ]
+      },
+      {
+        "from": "subject:AI-账单失控",
+        "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
         "cardIds": [
           "SIG-20260619-A22"
         ],
         "titles": [
-          "Gemini 联合负责人 Noam Shazeer 加入 OpenAI"
-        ]
-      },
-      {
-        "from": "subject:Googleblog",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260619-A14"
-        ],
-        "titles": [
-          "Google 庆祝A2A协议发布一周年：协作智能体生态"
-        ]
-      },
-      {
-        "from": "subject:Googleblog",
-        "to": "signal:track-ai-coding",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260619-A14"
-        ],
-        "titles": [
-          "Google 庆祝A2A协议发布一周年：协作智能体生态"
-        ]
-      },
-      {
-        "from": "subject:Googleblog",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260619-A14"
-        ],
-        "titles": [
-          "Google 庆祝A2A协议发布一周年：协作智能体生态"
-        ]
-      },
-      {
-        "from": "subject:AI-账单失控",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260619-A21"
-        ],
-        "titles": [
           "AI 账单失控：AT&T、Meta 等巨头急刹车，从\"疯狂消耗\"到\"严苛限制"
         ]
       },
@@ -37098,7 +37100,7 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260619-A21"
+          "SIG-20260619-A22"
         ],
         "titles": [
           "AI 账单失控：AT&T、Meta 等巨头急刹车，从\"疯狂消耗\"到\"严苛限制"
@@ -37110,10 +37112,34 @@
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260619-A21"
+          "SIG-20260619-A22"
         ],
         "titles": [
           "AI 账单失控：AT&T、Meta 等巨头急刹车，从\"疯狂消耗\"到\"严苛限制"
+        ]
+      },
+      {
+        "from": "subject:The-Decoder：AI-News（RSS）",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A05"
+        ],
+        "titles": [
+          "Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心"
+        ]
+      },
+      {
+        "from": "subject:The-Decoder：AI-News（RSS）",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A05"
+        ],
+        "titles": [
+          "Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心"
         ]
       },
       {
@@ -37129,39 +37155,39 @@
         ]
       },
       {
-        "from": "subject:Thoughtworks",
+        "from": "subject:Tsia",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260619-A12"
+          "SIG-20260619-A15"
         ],
         "titles": [
-          "thoughtworks 发布新的 AI 产品或平台能力"
+          "tsia 的公开案例显示"
         ]
       },
       {
-        "from": "subject:Thoughtworks",
+        "from": "subject:Tsia",
         "to": "signal:track-enterprise-workflow",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260619-A12"
+          "SIG-20260619-A15"
         ],
         "titles": [
-          "thoughtworks 发布新的 AI 产品或平台能力"
+          "tsia 的公开案例显示"
         ]
       },
       {
-        "from": "subject:Thoughtworks",
+        "from": "subject:Tsia",
         "to": "signal:customer-enterprise",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260619-A12"
+          "SIG-20260619-A15"
         ],
         "titles": [
-          "thoughtworks 发布新的 AI 产品或平台能力"
+          "tsia 的公开案例显示"
         ]
       },
       {
@@ -37309,27 +37335,51 @@
         ]
       },
       {
-        "from": "subject:英伟达在虚幻嘉年华-2026",
+        "from": "subject:IT之家（RSS）",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260619-A24"
+          "SIG-20260619-A23"
         ],
         "titles": [
-          "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…"
+          "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职"
         ]
       },
       {
-        "from": "subject:英伟达在虚幻嘉年华-2026",
+        "from": "subject:IT之家（RSS）",
         "to": "signal:track-ai-coding",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260619-A24"
+          "SIG-20260619-A23"
         ],
         "titles": [
-          "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…"
+          "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职"
+        ]
+      },
+      {
+        "from": "subject:IT之家（RSS）",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A23"
+        ],
+        "titles": [
+          "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职"
+        ]
+      },
+      {
+        "from": "subject:MarkTechPost（RSS）",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A08"
+        ],
+        "titles": [
+          "Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进…"
         ]
       }
     ],
@@ -37343,12 +37393,12 @@
           "企业工作流",
           "大中型企业"
         ],
-        "summary": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... Google 庆祝Agent-to-Agent（A2A）协议发布一周年。A2A专为生成式AI设计，相比传统REST API提供安全边界、零上下文污染、动态自主性和工作负载分布四大架构优势。应用实例FoldRun是一个独立的智能体接口，可在Gemini Enterprise或Gemini CLI等A2A兼容环境中部署，自动管理蛋白质结构预测任务，动态选择Al...",
-        "evidenceMeta": "素材：Artificialintelligence-News / AI 账单失控 / Googleblog",
-        "detailFocus": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... Google 庆祝Agent-to-Agent（A2A）协议发布一周年。A2A专为生成式AI设计，相比传统REST API提供安全边界、零上下文污染、动态自主性和工作负载分布四大架构优势。应用实例FoldRun是一个独立的智能体接口，可在Gemini Enterprise或Gemini CLI等A2A兼容环境中部署，自动管理蛋白质结构预测任务，动态选择Al...",
-        "todayCount": 5,
-        "last7Count": 45,
-        "last30Count": 114,
+        "summary": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+        "evidenceMeta": "素材：Artificialintelligence-News / AI 账单失控 / From the Customer's Side of the Table",
+        "detailFocus": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+        "todayCount": 6,
+        "last7Count": 46,
+        "last30Count": 115,
         "subjects": [
           {
             "label": "Artificialintelligence-News",
@@ -37359,18 +37409,18 @@
             "count": 1
           },
           {
-            "label": "Googleblog",
+            "label": "From the Customer's Side of the Table",
             "count": 1
           },
           {
-            "label": "Thoughtworks",
+            "label": "Googleblog",
             "count": 1
           }
         ],
         "categories": [
           {
             "label": "案例",
-            "count": 5
+            "count": 6
           }
         ],
         "supportingCards": [
@@ -37384,7 +37434,7 @@
             "date": "2026-06-19"
           },
           {
-            "id": "SIG-20260619-A15",
+            "id": "SIG-20260619-A13",
             "title": "汇丰银行与Google Cloud扩大AI银行合作",
             "subject": "Artificialintelligence-News",
             "categoryLabel": "案例",
@@ -37393,45 +37443,41 @@
             "date": "2026-06-19"
           },
           {
-            "id": "SIG-20260619-A14",
+            "id": "SIG-20260619-A06",
+            "title": "ellamind 的公开案例显示",
+            "subject": "From the Customer's Side of the Table",
+            "categoryLabel": "案例",
+            "sourceName": "ellamind.com",
+            "sourceUrl": "https://www.ellamind.com/blog/forward-deployed-engineer",
+            "date": "2026-06-19"
+          },
+          {
+            "id": "SIG-20260619-A12",
             "title": "Google 庆祝A2A协议发布一周年：协作智能体生态",
             "subject": "Googleblog",
             "categoryLabel": "案例",
             "sourceName": "Google Developers Blog（RSS）",
             "sourceUrl": "https://developers.googleblog.com/how-a2a-is-building-a-world-of-collaborative-agents",
             "date": "2026-06-19"
-          },
-          {
-            "id": "SIG-20260619-A21",
-            "title": "AI 账单失控：AT&T、Meta 等巨头急刹车，从\"疯狂消耗\"到\"严苛限制",
-            "subject": "AI 账单失控",
-            "categoryLabel": "案例",
-            "sourceName": "IT之家（RSS）",
-            "sourceUrl": "https://www.ithome.com/0/966/306.htm",
-            "date": "2026-06-19"
           }
         ]
       },
       {
         "id": "product-launch-vs-adoption",
-        "title": "英伟达在虚幻嘉年华 2026、Claude Code 同日出现在企业 AI 产品发布里",
+        "title": "Claude Code、Snap 剥离 AI 视频团队成立新公司 Dotmo 同日出现在企业 AI 产品发布里",
         "direction": "产品发布",
         "relation": [
           "产品发布",
           "客户采用",
           "商业验证"
         ],
-        "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
-        "evidenceMeta": "素材：英伟达在虚幻嘉年华 2026 / Claude Code / Snap 剥离 AI 视频团队成立新公司 Dotmo",
-        "detailFocus": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
+        "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职。她于2015年加入Meta，曾任Threads产品负责人，两个月前刚被指派改进内部AI工具。Meta正推进全公司重组，计划开发能替代人类员工的AI智能体，引发内部强烈反弹。重组涉及裁撤10%员工、调岗及部署鼠标追踪软件。道尔顿·史密斯领导\"智能体转型加速计划\"（ATA）小组，负责企业级AI... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
+        "evidenceMeta": "素材：Claude Code / Snap 剥离 AI 视频团队成立新公司 Dotmo",
+        "detailFocus": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职。她于2015年加入Meta，曾任Threads产品负责人，两个月前刚被指派改进内部AI工具。Meta正推进全公司重组，计划开发能替代人类员工的AI智能体，引发内部强烈反弹。重组涉及裁撤10%员工、调岗及部署鼠标追踪软件。道尔顿·史密斯领导\"智能体转型加速计划\"（ATA）小组，负责企业级AI... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
         "todayCount": 4,
         "last7Count": 49,
         "last30Count": 132,
         "subjects": [
-          {
-            "label": "英伟达在虚幻嘉年华 2026",
-            "count": 1
-          },
           {
             "label": "Claude Code",
             "count": 1
@@ -37458,12 +37504,12 @@
             "date": "2026-06-19"
           },
           {
-            "id": "SIG-20260619-A24",
-            "title": "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…",
-            "subject": "英伟达在虚幻嘉年华 2026",
+            "id": "SIG-20260619-A23",
+            "title": "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职",
+            "subject": "AI business signal",
             "categoryLabel": "产品",
             "sourceName": "IT之家（RSS）",
-            "sourceUrl": "https://www.ithome.com/0/965/989.htm",
+            "sourceUrl": "https://www.ithome.com/0/966/109.htm",
             "date": "2026-06-19"
           },
           {
@@ -37537,12 +37583,12 @@
         "企业工作流",
         "大中型企业"
       ],
-      "summary": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... Google 庆祝Agent-to-Agent（A2A）协议发布一周年。A2A专为生成式AI设计，相比传统REST API提供安全边界、零上下文污染、动态自主性和工作负载分布四大架构优势。应用实例FoldRun是一个独立的智能体接口，可在Gemini Enterprise或Gemini CLI等A2A兼容环境中部署，自动管理蛋白质结构预测任务，动态选择Al...",
-      "evidenceMeta": "素材：Artificialintelligence-News / AI 账单失控 / Googleblog",
-      "detailFocus": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... Google 庆祝Agent-to-Agent（A2A）协议发布一周年。A2A专为生成式AI设计，相比传统REST API提供安全边界、零上下文污染、动态自主性和工作负载分布四大架构优势。应用实例FoldRun是一个独立的智能体接口，可在Gemini Enterprise或Gemini CLI等A2A兼容环境中部署，自动管理蛋白质结构预测任务，动态选择Al...",
-      "todayCount": 5,
-      "last7Count": 45,
-      "last30Count": 114,
+      "summary": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "evidenceMeta": "素材：Artificialintelligence-News / AI 账单失控 / From the Customer's Side of the Table",
+      "detailFocus": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "todayCount": 6,
+      "last7Count": 46,
+      "last30Count": 115,
       "subjects": [
         {
           "label": "Artificialintelligence-News",
@@ -37553,18 +37599,18 @@
           "count": 1
         },
         {
-          "label": "Googleblog",
+          "label": "From the Customer's Side of the Table",
           "count": 1
         },
         {
-          "label": "Thoughtworks",
+          "label": "Googleblog",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 5
+          "count": 6
         }
       ],
       "supportingCards": [
@@ -37578,7 +37624,7 @@
           "date": "2026-06-19"
         },
         {
-          "id": "SIG-20260619-A15",
+          "id": "SIG-20260619-A13",
           "title": "汇丰银行与Google Cloud扩大AI银行合作",
           "subject": "Artificialintelligence-News",
           "categoryLabel": "案例",
@@ -37587,45 +37633,41 @@
           "date": "2026-06-19"
         },
         {
-          "id": "SIG-20260619-A14",
+          "id": "SIG-20260619-A06",
+          "title": "ellamind 的公开案例显示",
+          "subject": "From the Customer's Side of the Table",
+          "categoryLabel": "案例",
+          "sourceName": "ellamind.com",
+          "sourceUrl": "https://www.ellamind.com/blog/forward-deployed-engineer",
+          "date": "2026-06-19"
+        },
+        {
+          "id": "SIG-20260619-A12",
           "title": "Google 庆祝A2A协议发布一周年：协作智能体生态",
           "subject": "Googleblog",
           "categoryLabel": "案例",
           "sourceName": "Google Developers Blog（RSS）",
           "sourceUrl": "https://developers.googleblog.com/how-a2a-is-building-a-world-of-collaborative-agents",
           "date": "2026-06-19"
-        },
-        {
-          "id": "SIG-20260619-A21",
-          "title": "AI 账单失控：AT&T、Meta 等巨头急刹车，从\"疯狂消耗\"到\"严苛限制",
-          "subject": "AI 账单失控",
-          "categoryLabel": "案例",
-          "sourceName": "IT之家（RSS）",
-          "sourceUrl": "https://www.ithome.com/0/966/306.htm",
-          "date": "2026-06-19"
         }
       ]
     },
     {
       "id": "product-launch-vs-adoption",
-      "title": "英伟达在虚幻嘉年华 2026、Claude Code 同日出现在企业 AI 产品发布里",
+      "title": "Claude Code、Snap 剥离 AI 视频团队成立新公司 Dotmo 同日出现在企业 AI 产品发布里",
       "direction": "产品发布",
       "relation": [
         "产品发布",
         "客户采用",
         "商业验证"
       ],
-      "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
-      "evidenceMeta": "素材：英伟达在虚幻嘉年华 2026 / Claude Code / Snap 剥离 AI 视频团队成立新公司 Dotmo",
-      "detailFocus": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
+      "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职。她于2015年加入Meta，曾任Threads产品负责人，两个月前刚被指派改进内部AI工具。Meta正推进全公司重组，计划开发能替代人类员工的AI智能体，引发内部强烈反弹。重组涉及裁撤10%员工、调岗及部署鼠标追踪软件。道尔顿·史密斯领导\"智能体转型加速计划\"（ATA）小组，负责企业级AI... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
+      "evidenceMeta": "素材：Claude Code / Snap 剥离 AI 视频团队成立新公司 Dotmo",
+      "detailFocus": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职。她于2015年加入Meta，曾任Threads产品负责人，两个月前刚被指派改进内部AI工具。Meta正推进全公司重组，计划开发能替代人类员工的AI智能体，引发内部强烈反弹。重组涉及裁撤10%员工、调岗及部署鼠标追踪软件。道尔顿·史密斯领导\"智能体转型加速计划\"（ATA）小组，负责企业级AI... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
       "todayCount": 4,
       "last7Count": 49,
       "last30Count": 132,
       "subjects": [
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
         {
           "label": "Claude Code",
           "count": 1
@@ -37652,12 +37694,12 @@
           "date": "2026-06-19"
         },
         {
-          "id": "SIG-20260619-A24",
-          "title": "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…",
-          "subject": "英伟达在虚幻嘉年华 2026",
+          "id": "SIG-20260619-A23",
+          "title": "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职",
+          "subject": "AI business signal",
           "categoryLabel": "产品",
           "sourceName": "IT之家（RSS）",
-          "sourceUrl": "https://www.ithome.com/0/965/989.htm",
+          "sourceUrl": "https://www.ithome.com/0/966/109.htm",
           "date": "2026-06-19"
         },
         {
@@ -37733,11 +37775,11 @@
           "count": 2
         },
         {
-          "label": "英伟达在虚幻嘉年华 2026",
+          "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI 账单失控",
+          "label": "AI推理公司Baseten据报以130亿美元估值",
           "count": 1
         }
       ],
@@ -37759,49 +37801,49 @@
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 10
+          "count": 11
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 10
+          "count": 11
         },
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 8
+          "count": 7
         },
         {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 8
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 7
         }
       ]
     },
     {
       "object": "customer-enterprise",
       "label": "大中型企业",
-      "todayCount": 10,
-      "last7Count": 84,
-      "last30Count": 232,
+      "todayCount": 11,
+      "last7Count": 85,
+      "last30Count": 233,
       "subjects": [
         {
           "label": "Artificialintelligence-News",
           "count": 2
         },
         {
-          "label": "英伟达在虚幻嘉年华 2026",
+          "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI 账单失控",
+          "label": "Claude Code",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 5
+          "count": 6
         },
         {
           "label": "产品",
@@ -37816,16 +37858,16 @@
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 10
+          "count": 11
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 10
+          "count": 11
         },
         {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
           "count": 6
         },
         {
@@ -37838,27 +37880,27 @@
     {
       "object": "track-enterprise-workflow",
       "label": "企业工作流",
-      "todayCount": 10,
-      "last7Count": 84,
-      "last30Count": 231,
+      "todayCount": 11,
+      "last7Count": 85,
+      "last30Count": 232,
       "subjects": [
         {
           "label": "Artificialintelligence-News",
           "count": 2
         },
         {
-          "label": "英伟达在虚幻嘉年华 2026",
+          "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI 账单失控",
+          "label": "Claude Code",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 5
+          "count": 6
         },
         {
           "label": "产品",
@@ -37873,16 +37915,16 @@
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 10
+          "count": 11
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 10
+          "count": 11
         },
         {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
           "count": 6
         },
         {
@@ -37895,144 +37937,30 @@
     {
       "object": "customer-developer-team",
       "label": "开发团队",
-      "todayCount": 8,
-      "last7Count": 41,
-      "last30Count": 96,
-      "subjects": [
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
-          "label": "AI 账单失控",
-          "count": 1
-        },
-        {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 4
-        },
-        {
-          "label": "产品",
-          "count": 3
-        },
-        {
-          "label": "融资",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 8
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 8
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 8
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 6
-        }
-      ]
-    },
-    {
-      "object": "function-engineering",
-      "label": "工程研发",
-      "todayCount": 8,
-      "last7Count": 41,
-      "last30Count": 97,
-      "subjects": [
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
-          "label": "AI 账单失控",
-          "count": 1
-        },
-        {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 4
-        },
-        {
-          "label": "产品",
-          "count": 3
-        },
-        {
-          "label": "融资",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 8
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 8
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 8
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 6
-        }
-      ]
-    },
-    {
-      "object": "track-ai-coding",
-      "label": "AI Coding",
-      "todayCount": 8,
-      "last7Count": 41,
+      "todayCount": 7,
+      "last7Count": 40,
       "last30Count": 95,
       "subjects": [
         {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
           "label": "AI推理公司Baseten据报以130亿美元估值",
           "count": 1
+        },
+        {
+          "label": "Claude Code",
+          "count": 1
         }
       ],
       "categories": [
         {
-          "label": "案例",
-          "count": 4
+          "label": "产品",
+          "count": 3
         },
         {
-          "label": "产品",
+          "label": "案例",
           "count": 3
         },
         {
@@ -38041,82 +37969,25 @@
         }
       ],
       "coTags": [
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 8
-        },
         {
           "tag": "function-engineering",
           "label": "工程研发",
-          "count": 8
+          "count": 7
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 8
+          "count": 7
         },
         {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 6
-        }
-      ]
-    },
-    {
-      "object": "track-ai-infra",
-      "label": "AI 基础设施",
-      "todayCount": 8,
-      "last7Count": 60,
-      "last30Count": 185,
-      "subjects": [
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
-          "label": "AI 账单失控",
-          "count": 1
-        },
-        {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 4
-        },
-        {
-          "label": "产品",
-          "count": 3
-        },
-        {
-          "label": "融资",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 8
-        },
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 6
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 7
         },
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 6
-        },
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 6
+          "count": 5
         }
       ]
     },
@@ -38136,7 +38007,7 @@
           "count": 1
         },
         {
-          "label": "Googleblog",
+          "label": "From the Customer's Side of the Table",
           "count": 1
         }
       ],
@@ -38151,6 +38022,177 @@
           "tag": "track-ai-agent",
           "label": "AI Agent",
           "count": 7
+        },
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 6
+        },
+        {
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
+          "count": 6
+        },
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "object": "function-engineering",
+      "label": "工程研发",
+      "todayCount": 7,
+      "last7Count": 40,
+      "last30Count": 96,
+      "subjects": [
+        {
+          "label": "AI 账单失控",
+          "count": 1
+        },
+        {
+          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 3
+        },
+        {
+          "label": "案例",
+          "count": 3
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 7
+        },
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 7
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 7
+        },
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "object": "track-ai-coding",
+      "label": "AI Coding",
+      "todayCount": 7,
+      "last7Count": 40,
+      "last30Count": 94,
+      "subjects": [
+        {
+          "label": "AI 账单失控",
+          "count": 1
+        },
+        {
+          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 3
+        },
+        {
+          "label": "案例",
+          "count": 3
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 7
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 7
+        },
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 7
+        },
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "object": "track-ai-infra",
+      "label": "AI 基础设施",
+      "todayCount": 6,
+      "last7Count": 58,
+      "last30Count": 183,
+      "subjects": [
+        {
+          "label": "AI 账单失控",
+          "count": 1
+        },
+        {
+          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "count": 1
+        },
+        {
+          "label": "Artificialintelligence-News",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 3
+        },
+        {
+          "label": "产品",
+          "count": 2
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 6
         },
         {
           "tag": "customer-enterprise",
@@ -38480,6 +38522,50 @@
     ],
     "historicalTrends": [
       {
+        "id": "TRD-20260519-02",
+        "type": "trend_card",
+        "title": "AI 治理开始从原则讨论转向产品和流程约束",
+        "date": "2026-05-19",
+        "status": "draft",
+        "assetLevel": "candidate",
+        "trendStatus": "early",
+        "stageLabel": "继续观察",
+        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "boundary": "",
+        "nextObservation": "",
+        "sourceTypes": [],
+        "relatedSignals": [
+          "CHG-20260519-07"
+        ],
+        "tags": {
+          "track": [
+            "track-ai-governance"
+          ],
+          "function": [],
+          "scenario": [],
+          "customer": [],
+          "evidence": [
+            "evidence-product-launch"
+          ],
+          "stage": [],
+          "region": [
+            "region-global"
+          ],
+          "source": []
+        },
+        "displayTags": [
+          {
+            "id": "track-ai-governance",
+            "label": "AI 治理"
+          },
+          {
+            "id": "evidence-product-launch",
+            "label": "产品发布"
+          }
+        ]
+      },
+      {
         "id": "TRD-20260519-01",
         "type": "trend_card",
         "title": "AI 编程进入预算和工程治理",
@@ -38528,50 +38614,6 @@
           {
             "id": "track-ai-coding",
             "label": "AI Coding"
-          },
-          {
-            "id": "evidence-product-launch",
-            "label": "产品发布"
-          }
-        ]
-      },
-      {
-        "id": "TRD-20260519-02",
-        "type": "trend_card",
-        "title": "AI 治理开始从原则讨论转向产品和流程约束",
-        "date": "2026-05-19",
-        "status": "draft",
-        "assetLevel": "candidate",
-        "trendStatus": "early",
-        "stageLabel": "继续观察",
-        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "boundary": "",
-        "nextObservation": "",
-        "sourceTypes": [],
-        "relatedSignals": [
-          "CHG-20260519-07"
-        ],
-        "tags": {
-          "track": [
-            "track-ai-governance"
-          ],
-          "function": [],
-          "scenario": [],
-          "customer": [],
-          "evidence": [
-            "evidence-product-launch"
-          ],
-          "stage": [],
-          "region": [
-            "region-global"
-          ],
-          "source": []
-        },
-        "displayTags": [
-          {
-            "id": "track-ai-governance",
-            "label": "AI 治理"
           },
           {
             "id": "evidence-product-launch",
@@ -38638,7 +38680,7 @@
         "window": "7 天",
         "object": "customer-enterprise",
         "label": "大中型企业",
-        "cardCount": 84,
+        "cardCount": 85,
         "lastSeen": "2026-06-19",
         "filter": "customer-enterprise"
       },
@@ -38646,7 +38688,7 @@
         "window": "7 天",
         "object": "track-enterprise-workflow",
         "label": "企业工作流",
-        "cardCount": 84,
+        "cardCount": 85,
         "lastSeen": "2026-06-19",
         "filter": "track-enterprise-workflow"
       },
@@ -38654,7 +38696,7 @@
         "window": "7 天",
         "object": "track-ai-infra",
         "label": "AI 基础设施",
-        "cardCount": 60,
+        "cardCount": 58,
         "lastSeen": "2026-06-19",
         "filter": "track-ai-infra"
       },
@@ -38678,7 +38720,7 @@
         "window": "7 天",
         "object": "customer-developer-team",
         "label": "开发团队",
-        "cardCount": 41,
+        "cardCount": 40,
         "lastSeen": "2026-06-19",
         "filter": "customer-developer-team"
       },
@@ -38686,7 +38728,7 @@
         "window": "7 天",
         "object": "function-engineering",
         "label": "工程研发",
-        "cardCount": 41,
+        "cardCount": 40,
         "lastSeen": "2026-06-19",
         "filter": "function-engineering"
       },
@@ -38702,7 +38744,7 @@
         "window": "30 天",
         "object": "customer-enterprise",
         "label": "大中型企业",
-        "cardCount": 232,
+        "cardCount": 233,
         "lastSeen": "2026-06-19",
         "filter": "customer-enterprise"
       },
@@ -38710,7 +38752,7 @@
         "window": "30 天",
         "object": "track-enterprise-workflow",
         "label": "企业工作流",
-        "cardCount": 231,
+        "cardCount": 232,
         "lastSeen": "2026-06-19",
         "filter": "track-enterprise-workflow"
       },
@@ -38718,7 +38760,7 @@
         "window": "30 天",
         "object": "track-ai-infra",
         "label": "AI 基础设施",
-        "cardCount": 185,
+        "cardCount": 183,
         "lastSeen": "2026-06-19",
         "filter": "track-ai-infra"
       },
@@ -38742,7 +38784,7 @@
         "window": "30 天",
         "object": "evidence-partnership-integration",
         "label": "合作集成",
-        "cardCount": 110,
+        "cardCount": 111,
         "lastSeen": "2026-06-19",
         "filter": "evidence-partnership-integration"
       },
@@ -38774,9 +38816,9 @@
       "title": "大中型企业",
       "date": "2026-06-19",
       "signal": "customer-enterprise",
-      "evidenceCount": 232,
+      "evidenceCount": 233,
       "window": "30 天",
-      "summary": "大中型企业 has 232 linked cards in the 30 天 window.",
+      "summary": "大中型企业 has 233 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -38785,9 +38827,9 @@
       "title": "企业工作流",
       "date": "2026-06-19",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 231,
+      "evidenceCount": 232,
       "window": "30 天",
-      "summary": "企业工作流 has 231 linked cards in the 30 天 window.",
+      "summary": "企业工作流 has 232 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -38796,9 +38838,9 @@
       "title": "AI 基础设施",
       "date": "2026-06-19",
       "signal": "track-ai-infra",
-      "evidenceCount": 185,
+      "evidenceCount": 183,
       "window": "30 天",
-      "summary": "AI 基础设施 has 185 linked cards in the 30 天 window.",
+      "summary": "AI 基础设施 has 183 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -38840,9 +38882,9 @@
       "title": "合作集成",
       "date": "2026-06-19",
       "signal": "evidence-partnership-integration",
-      "evidenceCount": 110,
+      "evidenceCount": 111,
       "window": "30 天",
-      "summary": "合作集成 has 110 linked cards in the 30 天 window.",
+      "summary": "合作集成 has 111 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -38862,9 +38904,9 @@
       "title": "大中型企业",
       "date": "2026-06-19",
       "signal": "customer-enterprise",
-      "evidenceCount": 84,
+      "evidenceCount": 85,
       "window": "7 天",
-      "summary": "大中型企业 has 84 linked cards in the 7 天 window.",
+      "summary": "大中型企业 has 85 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -38873,9 +38915,9 @@
       "title": "企业工作流",
       "date": "2026-06-19",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 84,
+      "evidenceCount": 85,
       "window": "7 天",
-      "summary": "企业工作流 has 84 linked cards in the 7 天 window.",
+      "summary": "企业工作流 has 85 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -38884,9 +38926,9 @@
       "title": "AI 基础设施",
       "date": "2026-06-19",
       "signal": "track-ai-infra",
-      "evidenceCount": 60,
+      "evidenceCount": 58,
       "window": "7 天",
-      "summary": "AI 基础设施 has 60 linked cards in the 7 天 window.",
+      "summary": "AI 基础设施 has 58 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -38917,9 +38959,9 @@
       "title": "开发团队",
       "date": "2026-06-19",
       "signal": "customer-developer-team",
-      "evidenceCount": 41,
+      "evidenceCount": 40,
       "window": "7 天",
-      "summary": "开发团队 has 41 linked cards in the 7 天 window.",
+      "summary": "开发团队 has 40 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -38928,9 +38970,9 @@
       "title": "工程研发",
       "date": "2026-06-19",
       "signal": "function-engineering",
-      "evidenceCount": 41,
+      "evidenceCount": 40,
       "window": "7 天",
-      "summary": "工程研发 has 41 linked cards in the 7 天 window.",
+      "summary": "工程研发 has 40 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -38947,11 +38989,11 @@
           "count": 2
         },
         {
-          "label": "英伟达在虚幻嘉年华 2026",
+          "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI 账单失控",
+          "label": "AI推理公司Baseten据报以130亿美元估值",
           "count": 1
         }
       ],
@@ -38973,22 +39015,22 @@
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 10
+          "count": 11
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 10
+          "count": 11
         },
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 8
+          "count": 7
         },
         {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 8
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 7
         }
       ],
       "summary": "AI Agent appears in 14 same-day cards and 310 cards in the 30-day window.",
@@ -39000,26 +39042,26 @@
       "title": "大中型企业",
       "date": "2026-06-19",
       "signal": "customer-enterprise",
-      "evidenceCount": 10,
-      "windowCount": 232,
+      "evidenceCount": 11,
+      "windowCount": 233,
       "subjects": [
         {
           "label": "Artificialintelligence-News",
           "count": 2
         },
         {
-          "label": "英伟达在虚幻嘉年华 2026",
+          "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI 账单失控",
+          "label": "Claude Code",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 5
+          "count": 6
         },
         {
           "label": "产品",
@@ -39034,16 +39076,16 @@
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 10
+          "count": 11
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 10
+          "count": 11
         },
         {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
           "count": 6
         },
         {
@@ -39052,7 +39094,7 @@
           "count": 5
         }
       ],
-      "summary": "大中型企业 appears in 10 same-day cards and 232 cards in the 30-day window.",
+      "summary": "大中型企业 appears in 11 same-day cards and 233 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -39061,26 +39103,26 @@
       "title": "企业工作流",
       "date": "2026-06-19",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 10,
-      "windowCount": 231,
+      "evidenceCount": 11,
+      "windowCount": 232,
       "subjects": [
         {
           "label": "Artificialintelligence-News",
           "count": 2
         },
         {
-          "label": "英伟达在虚幻嘉年华 2026",
+          "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI 账单失控",
+          "label": "Claude Code",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 5
+          "count": 6
         },
         {
           "label": "产品",
@@ -39095,16 +39137,16 @@
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 10
+          "count": 11
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 10
+          "count": 11
         },
         {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
           "count": 6
         },
         {
@@ -39113,7 +39155,7 @@
           "count": 5
         }
       ],
-      "summary": "企业工作流 appears in 10 same-day cards and 231 cards in the 30-day window.",
+      "summary": "企业工作流 appears in 11 same-day cards and 232 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -39122,151 +39164,29 @@
       "title": "开发团队",
       "date": "2026-06-19",
       "signal": "customer-developer-team",
-      "evidenceCount": 8,
-      "windowCount": 96,
-      "subjects": [
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
-          "label": "AI 账单失控",
-          "count": 1
-        },
-        {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 4
-        },
-        {
-          "label": "产品",
-          "count": 3
-        },
-        {
-          "label": "融资",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 8
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 8
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 8
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 6
-        }
-      ],
-      "summary": "开发团队 appears in 8 same-day cards and 96 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
-      "id": "tag:function-engineering",
-      "type": "tag_association",
-      "title": "工程研发",
-      "date": "2026-06-19",
-      "signal": "function-engineering",
-      "evidenceCount": 8,
-      "windowCount": 97,
-      "subjects": [
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
-          "label": "AI 账单失控",
-          "count": 1
-        },
-        {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 4
-        },
-        {
-          "label": "产品",
-          "count": 3
-        },
-        {
-          "label": "融资",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 8
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 8
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 8
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 6
-        }
-      ],
-      "summary": "工程研发 appears in 8 same-day cards and 97 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
-      "id": "tag:track-ai-coding",
-      "type": "tag_association",
-      "title": "AI Coding",
-      "date": "2026-06-19",
-      "signal": "track-ai-coding",
-      "evidenceCount": 8,
+      "evidenceCount": 7,
       "windowCount": 95,
       "subjects": [
         {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
           "label": "AI推理公司Baseten据报以130亿美元估值",
           "count": 1
+        },
+        {
+          "label": "Claude Code",
+          "count": 1
         }
       ],
       "categories": [
         {
-          "label": "案例",
-          "count": 4
+          "label": "产品",
+          "count": 3
         },
         {
-          "label": "产品",
+          "label": "案例",
           "count": 3
         },
         {
@@ -39275,89 +39195,28 @@
         }
       ],
       "coTags": [
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 8
-        },
         {
           "tag": "function-engineering",
           "label": "工程研发",
-          "count": 8
+          "count": 7
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 8
+          "count": 7
         },
         {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 6
-        }
-      ],
-      "summary": "AI Coding appears in 8 same-day cards and 95 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
-      "id": "tag:track-ai-infra",
-      "type": "tag_association",
-      "title": "AI 基础设施",
-      "date": "2026-06-19",
-      "signal": "track-ai-infra",
-      "evidenceCount": 8,
-      "windowCount": 185,
-      "subjects": [
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
-          "label": "AI 账单失控",
-          "count": 1
-        },
-        {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 4
-        },
-        {
-          "label": "产品",
-          "count": 3
-        },
-        {
-          "label": "融资",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 8
-        },
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 6
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 7
         },
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 6
-        },
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 6
+          "count": 5
         }
       ],
-      "summary": "AI 基础设施 appears in 8 same-day cards and 185 cards in the 30-day window.",
+      "summary": "开发团队 appears in 7 same-day cards and 95 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -39378,7 +39237,7 @@
           "count": 1
         },
         {
-          "label": "Googleblog",
+          "label": "From the Customer's Side of the Table",
           "count": 1
         }
       ],
@@ -39397,6 +39256,231 @@
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
+          "count": 6
+        },
+        {
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
+          "count": 6
+        },
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 3
+        }
+      ],
+      "summary": "客户采用 appears in 7 same-day cards and 135 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:function-engineering",
+      "type": "tag_association",
+      "title": "工程研发",
+      "date": "2026-06-19",
+      "signal": "function-engineering",
+      "evidenceCount": 7,
+      "windowCount": 96,
+      "subjects": [
+        {
+          "label": "AI 账单失控",
+          "count": 1
+        },
+        {
+          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 3
+        },
+        {
+          "label": "案例",
+          "count": 3
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 7
+        },
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 7
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 7
+        },
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 5
+        }
+      ],
+      "summary": "工程研发 appears in 7 same-day cards and 96 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "tag:track-ai-coding",
+      "type": "tag_association",
+      "title": "AI Coding",
+      "date": "2026-06-19",
+      "signal": "track-ai-coding",
+      "evidenceCount": 7,
+      "windowCount": 94,
+      "subjects": [
+        {
+          "label": "AI 账单失控",
+          "count": 1
+        },
+        {
+          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 3
+        },
+        {
+          "label": "案例",
+          "count": 3
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 7
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 7
+        },
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 7
+        },
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 5
+        }
+      ],
+      "summary": "AI Coding appears in 7 same-day cards and 94 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "relationship:agent-workflow-enterprise",
+      "type": "relationship_cluster",
+      "title": "Artificialintelligence-News、AI 账单失控 记录 Agent 进入采购、数据连接和企业流程",
+      "date": "2026-06-19",
+      "signal": "企业工作流",
+      "evidenceCount": 6,
+      "windowCount": 115,
+      "subjects": [
+        {
+          "label": "Artificialintelligence-News",
+          "count": 2
+        },
+        {
+          "label": "AI 账单失控",
+          "count": 1
+        },
+        {
+          "label": "From the Customer's Side of the Table",
+          "count": 1
+        },
+        {
+          "label": "Googleblog",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 6
+        }
+      ],
+      "tags": [],
+      "supportingCardIds": [
+        "SIG-20260619-A04",
+        "SIG-20260619-A13",
+        "SIG-20260619-A06",
+        "SIG-20260619-A12"
+      ],
+      "summary": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
+      "whyUseful": "Use this when looking for cross-card commercial relationships."
+    },
+    {
+      "id": "tag:track-ai-infra",
+      "type": "tag_association",
+      "title": "AI 基础设施",
+      "date": "2026-06-19",
+      "signal": "track-ai-infra",
+      "evidenceCount": 6,
+      "windowCount": 183,
+      "subjects": [
+        {
+          "label": "AI 账单失控",
+          "count": 1
+        },
+        {
+          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "count": 1
+        },
+        {
+          "label": "Artificialintelligence-News",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 3
+        },
+        {
+          "label": "产品",
+          "count": 2
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 6
+        },
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
           "count": 5
         },
         {
@@ -39410,64 +39494,18 @@
           "count": 4
         }
       ],
-      "summary": "客户采用 appears in 7 same-day cards and 135 cards in the 30-day window.",
+      "summary": "AI 基础设施 appears in 6 same-day cards and 183 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
-      "id": "relationship:agent-workflow-enterprise",
-      "type": "relationship_cluster",
-      "title": "Artificialintelligence-News、AI 账单失控 记录 Agent 进入采购、数据连接和企业流程",
-      "date": "2026-06-19",
-      "signal": "企业工作流",
-      "evidenceCount": 5,
-      "windowCount": 114,
-      "subjects": [
-        {
-          "label": "Artificialintelligence-News",
-          "count": 2
-        },
-        {
-          "label": "AI 账单失控",
-          "count": 1
-        },
-        {
-          "label": "Googleblog",
-          "count": 1
-        },
-        {
-          "label": "Thoughtworks",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 5
-        }
-      ],
-      "tags": [],
-      "supportingCardIds": [
-        "SIG-20260619-A04",
-        "SIG-20260619-A15",
-        "SIG-20260619-A14",
-        "SIG-20260619-A21"
-      ],
-      "summary": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... Google 庆祝Agent-to-Agent（A2A）协议发布一周年。A2A专为生成式AI设计，相比传统REST API提供安全边界、零上下文污染、动态自主性和工作负载分布四大架构优势。应用实例FoldRun是一个独立的智能体接口，可在Gemini Enterprise或Gemini CLI等A2A兼容环境中部署，自动管理蛋白质结构预测任务，动态选择Al...",
-      "whyUseful": "Use this when looking for cross-card commercial relationships."
     },
     {
       "id": "relationship:product-launch-vs-adoption",
       "type": "relationship_cluster",
-      "title": "英伟达在虚幻嘉年华 2026、Claude Code 同日出现在企业 AI 产品发布里",
+      "title": "Claude Code、Snap 剥离 AI 视频团队成立新公司 Dotmo 同日出现在企业 AI 产品发布里",
       "date": "2026-06-19",
       "signal": "产品发布",
       "evidenceCount": 4,
       "windowCount": 132,
       "subjects": [
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
         {
           "label": "Claude Code",
           "count": 1
@@ -39486,11 +39524,11 @@
       "tags": [],
       "supportingCardIds": [
         "SIG-20260619-A19",
-        "SIG-20260619-A24",
+        "SIG-20260619-A23",
         "SIG-20260619-A08",
         "SIG-20260619-A18"
       ],
-      "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
+      "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职。她于2015年加入Meta，曾任Threads产品负责人，两个月前刚被指派改进内部AI工具。Meta正推进全公司重组，计划开发能替代人类员工的AI智能体，引发内部强烈反弹。重组涉及裁撤10%员工、调岗及部署鼠标追踪软件。道尔顿·史密斯领导\"智能体转型加速计划\"（ATA）小组，负责企业级AI... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
       "whyUseful": "Use this when looking for cross-card commercial relationships."
     },
     {

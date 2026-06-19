@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-19T06:41:39.935Z
+collected_at: 2026-06-19T07:43:58.015Z
 language: mixed
 full_text_hash: 290b4dc2c8387a92
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-182-mosaicleaks-你的研究智能体能保守秘密吗.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"MosaicLeaks: 你的研究智能体能保守秘密吗？","discovery_summary":"深度研究智能体在结合私有本地文档与外部网页检索时存在隐私泄露风险。MosaicLeaks 提出包含 1,001 条多跳研究链的新任务，每条链交错混合本地与公共子问题。测试发现智能体频繁泄露私有信息，单纯优化任务性能反而加剧泄露。基于此，研究提出隐私感知深度研究（PA-DR）强化学习训练方法，将严格链成功率从 48.7% 提升至 58.7%，同时将答案/全面信息泄露率从 34.0% 降至 9.9%。","source_name":"Hugging Face：Blog（RSS）","origin_url":"","discovered_at":"2026-06-19T06:38:17.994Z","rank_on_page":21,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"MosaicLeaks: 你的研究智能体能保守秘密吗？","discovery_summary":"深度研究智能体在结合私有本地文档与外部网页检索时存在隐私泄露风险。MosaicLeaks 提出包含 1,001 条多跳研究链的新任务，每条链交错混合本地与公共子问题。测试发现智能体频繁泄露私有信息，单纯优化任务性能反而加剧泄露。基于此，研究提出隐私感知深度研究（PA-DR）强化学习训练方法，将严格链成功率从 48.7% 提升至 58.7%，同时将答案/全面信息泄露率从 34.0% 降至 9.9%。","source_name":"Hugging Face：Blog（RSS）","origin_url":"","discovered_at":"2026-06-19T07:39:26.654Z","rank_on_page":21,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 290b4dc2c8387a92
 semantic_hash: 5f4931870ba55fcb
 duplicate_of: ""
-first_seen_at: "2026-06-19T06:41:39.935Z"
-last_seen_at: 2026-06-19T06:41:39.935Z
+first_seen_at: "2026-06-19T07:43:58.015Z"
+last_seen_at: 2026-06-19T07:43:58.015Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -187,7 +187,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"MosaicLeaks: 你的研究智能体能保守秘密吗？","discovery_summary":"深度研究智能体在结合私有本地文档与外部网页检索时存在隐私泄露风险。MosaicLeaks 提出包含 1,001 条多跳研究链的新任务，每条链交错混合本地与公共子问题。测试发现智能体频繁泄露私有信息，单纯优化任务性能反而加剧泄露。基于此，研究提出隐私感知深度研究（PA-DR）强化学习训练方法，将严格链成功率从 48.7% 提升至 58.7%，同时将答案/全面信息泄露率从 34.0% 降至 9.9%。","source_name":"Hugging Face：Blog（RSS）","origin_url":"","discovered_at":"2026-06-19T06:38:17.994Z","rank_on_page":21,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"MosaicLeaks: 你的研究智能体能保守秘密吗？","discovery_summary":"深度研究智能体在结合私有本地文档与外部网页检索时存在隐私泄露风险。MosaicLeaks 提出包含 1,001 条多跳研究链的新任务，每条链交错混合本地与公共子问题。测试发现智能体频繁泄露私有信息，单纯优化任务性能反而加剧泄露。基于此，研究提出隐私感知深度研究（PA-DR）强化学习训练方法，将严格链成功率从 48.7% 提升至 58.7%，同时将答案/全面信息泄露率从 34.0% 降至 9.9%。","source_name":"Hugging Face：Blog（RSS）","origin_url":"","discovered_at":"2026-06-19T07:39:26.654Z","rank_on_page":21,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 
