@@ -504,7 +504,7 @@ function buildFirstLineLane() {
     if (gh.pr_warning) warnings.push(gh.pr_warning);
   } else if (gh.available && localDataHealthy && gh.pr_warning) {
     warnings.push(gh.pr_warning);
-  } else if (isTodayOrPast(date)) {
+  } else if (!gh.available && isTodayOrPast(date)) {
     warnings.push(gh.warning || "GitHub workflow state unavailable");
   }
 
