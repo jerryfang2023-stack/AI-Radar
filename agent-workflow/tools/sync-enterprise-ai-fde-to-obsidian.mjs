@@ -130,6 +130,12 @@ function compact(value = "", limit = 420) {
   return `${text.slice(0, limit - 1)}…`;
 }
 
+function cleanSourceTitle(value = "", fallback = "") {
+  const title = String(value || "").replace(/\s+/gu, " ").trim();
+  if (!title || /^Skip to content\b|^Loading\b|^Topics?\b/iu.test(title)) return fallback;
+  return title;
+}
+
 const payload = readJson(siteDataFile);
 const date = args.get("date") || payload.meta?.activeDate;
 if (!date) {
@@ -161,7 +167,7 @@ const enriched = items.map((item) => {
     detail,
     sourceUrl,
     sourceRef,
-    sourceTitle: detail.sourceTitle || detail.originalTitle || item.title || "",
+    sourceTitle: cleanSourceTitle(detail.sourceTitle || detail.originalTitle, item.title || detail.title || ""),
     rawFile,
     rawJson: rawFile ? rawFile.replace(/\.md$/u, ".json") : "",
     signalCard,
@@ -216,8 +222,62 @@ updated_at: ${new Date().toISOString()}
 - ${mdLink(indexFile, dailyFile, `${date} Enterprise AI FDE`)}
 `;
 
-writeText(dailyFile, dailyBody);
-writeText(indexFile, indexBody);
+const cleanDailyBody = [
+  "---",
+  "type: enterprise_ai_fde_daily",
+  `date: ${date}`,
+  "status: synced",
+  `source: ${yamlQuote("01-SiteV2/site/data/v3-data-observation-desk.json")}`,
+  `item_count: ${enriched.length}`,
+  "---",
+  "",
+  `# ${date} Enterprise AI / FDE`,
+  "",
+  "本页是 Business Signals「企业AI化」二级镜头的 Obsidian 索引。原文不复制到本页，保留在 Raw 原文快照中；本页负责把前台条目、原文快照、JSON 快照和正式 Signal Card 串起来。",
+  "",
+  ...enriched.map((item, index) => {
+    const rawLink = item.rawFile ? mdLink(dailyFile, item.rawFile, "Raw 原文快照") : "缺失 Raw 原文快照";
+    const rawJsonLink = item.rawJson && fs.existsSync(item.rawJson) ? mdLink(dailyFile, item.rawJson, "Raw JSON") : "";
+    const cardLink = item.signalCard ? mdLink(dailyFile, item.signalCard, "Signal Card") : "lens-only，未生成正式 Signal Card";
+    return [
+      `## ${index + 1}. ${item.title}`,
+      "",
+      `- card_id: \`${item.cardId || ""}\``,
+      `- subject: ${item.subject || item.detail.subject || ""}`,
+      `- source_title: ${item.sourceTitle}`,
+      `- source_url: ${item.sourceUrl}`,
+      `- source_ref: ${item.sourceRef || "n/a"}`,
+      `- raw_archive: ${rawLink}${rawJsonLink ? ` / ${rawJsonLink}` : ""}`,
+      `- signal_card: ${cardLink}`,
+      `- stage: ${item.stageLabel || item.stage || ""}`,
+      `- scenario: ${item.scenario || ""}`,
+      `- workflow: ${item.workflow || ""}`,
+      `- evidence_boundary: ${compact(item.evidenceBoundary || "")}`,
+      "",
+    ].join("\n");
+  }),
+  "",
+].join("\n");
+
+const cleanIndexBody = [
+  "---",
+  "type: enterprise_ai_fde_index",
+  "status: current",
+  `updated_at: ${new Date().toISOString()}`,
+  "---",
+  "",
+  "# Enterprise AI / FDE Index",
+  "",
+  "这个目录保存 Business Signals「企业AI化」二级镜头的 Obsidian 入口。正式 product / funding / case Signal Card 仍保存在 `01-SiteV2/knowledge/01-Signal-Cards/`；FDE 镜头只做实施、部署、客户嵌入和工作流证据的聚合视图，不新增第四类 Card。",
+  "",
+  "## Daily Views",
+  "",
+  `- ${mdLink(indexFile, dailyFile, `${date} Enterprise AI FDE`)}`,
+  "",
+].join("\n");
+
+writeText(dailyFile, cleanDailyBody);
+writeText(indexFile, cleanIndexBody);
 
 if (missingRaw.length) {
   console.error(`Missing raw archives for ${missingRaw.length} Enterprise AI / FDE items:`);

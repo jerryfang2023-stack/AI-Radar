@@ -4,7 +4,7 @@
     "siteVersion": "SITE-V3.3.8-enterprise-ai-transformation",
     "businessSignalsColumnVersion": "BSIG-V1.1.0-enterprise-ai-transformation",
     "enterpriseAiLensVersion": "EAI-V1.0.0-enterprise-ai-transformation",
-    "generatedAt": "2026-06-19T06:41:45.123Z",
+    "generatedAt": "2026-06-19T07:10:16.690Z",
     "activeDate": "2026-06-19",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -40,7 +40,7 @@
     "relationshipNodes": 23,
     "relationshipEdges": 50,
     "relationshipClusters": 3,
-    "enterpriseAiTransformation": 5,
+    "enterpriseAiTransformation": 2,
     "tagAssociations": 8,
     "trendLinks": 16,
     "trendCandidates": 0
@@ -77,11 +77,8 @@
       "SIG-20260619-A19"
     ],
     "enterpriseAiTransformationCardIds": [
-      "POOL-2026-06-19-P-055",
-      "POOL-2026-06-19-P-008",
-      "POOL-2026-06-19-P-024",
-      "POOL-2026-06-19-P-051",
-      "POOL-2026-06-19-P-053"
+      "SIG-20260619-A04",
+      "SIG-20260619-A15"
     ],
     "largeCompanyTop10": [
       {
@@ -35167,12 +35164,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "融资信息不是单一公司轮次事件",
-      "notPromotedIssues": [
-        "融资信息不是单一公司轮次事件"
-      ],
-      "repairSuggestion": "补齐单一公司的融资金额、轮次、投资方和日期。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -35264,12 +35259,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "页面类型不适合直接成卡，需要回到具体事件页",
-      "notPromotedIssues": [
-        "页面类型不适合直接成卡，需要回到具体事件页"
-      ],
-      "repairSuggestion": "回到有日期、主体、动作的单一公司事件页后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -36710,6 +36703,14 @@
         "sourceName": "The Decoder：AI News（RSS）"
       },
       {
+        "id": "subject:英伟达在虚幻嘉年华-2026",
+        "label": "英伟达在虚幻嘉年华 2026",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
         "id": "subject:AI-账单失控",
         "label": "AI 账单失控",
         "type": "subject",
@@ -36782,14 +36783,6 @@
         "sourceName": "thoughtworks.com"
       },
       {
-        "id": "subject:英伟达在虚幻嘉年华-2026",
-        "label": "英伟达在虚幻嘉年华 2026",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "IT之家（RSS）"
-      },
-      {
         "id": "signal:track-ai-agent",
         "label": "AI Agent",
         "type": "signal",
@@ -36832,21 +36825,49 @@
         "tag": "function-sales"
       },
       {
-        "id": "signal:track-enterprise-data",
-        "label": "企业数据智能",
-        "type": "signal",
-        "weight": 1,
-        "tag": "track-enterprise-data"
-      },
-      {
         "id": "signal:function-engineering",
         "label": "工程研发",
         "type": "signal",
         "weight": 1,
         "tag": "function-engineering"
+      },
+      {
+        "id": "signal:track-enterprise-data",
+        "label": "企业数据智能",
+        "type": "signal",
+        "weight": 1,
+        "tag": "track-enterprise-data"
       }
     ],
     "edges": [
+      {
+        "from": "category:案例",
+        "to": "subject:Artificialintelligence-News",
+        "label": "案例",
+        "weight": 2,
+        "cardIds": [
+          "SIG-20260619-A04",
+          "SIG-20260619-A15"
+        ],
+        "titles": [
+          "计算机视觉货架跟踪推动零售业生产力提升",
+          "汇丰银行与Google Cloud扩大AI银行合作"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:The-Decoder：AI-News（RSS）",
+        "label": "案例",
+        "weight": 2,
+        "cardIds": [
+          "SIG-20260619-A22",
+          "SIG-20260619-A05"
+        ],
+        "titles": [
+          "Gemini 联合负责人 Noam Shazeer 加入 OpenAI",
+          "Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心"
+        ]
+      },
       {
         "from": "subject:Artificialintelligence-News",
         "to": "signal:track-ai-agent",
@@ -36905,30 +36926,38 @@
       },
       {
         "from": "category:案例",
-        "to": "subject:Artificialintelligence-News",
+        "to": "subject:Googleblog",
         "label": "案例",
-        "weight": 2,
+        "weight": 1,
         "cardIds": [
-          "SIG-20260619-A04",
-          "SIG-20260619-A15"
+          "SIG-20260619-A14"
         ],
         "titles": [
-          "计算机视觉货架跟踪推动零售业生产力提升",
-          "汇丰银行与Google Cloud扩大AI银行合作"
+          "Google 庆祝A2A协议发布一周年：协作智能体生态"
         ]
       },
       {
         "from": "category:案例",
-        "to": "subject:The-Decoder：AI-News（RSS）",
+        "to": "subject:AI-账单失控",
         "label": "案例",
-        "weight": 2,
+        "weight": 1,
         "cardIds": [
-          "SIG-20260619-A22",
-          "SIG-20260619-A05"
+          "SIG-20260619-A21"
         ],
         "titles": [
-          "Gemini 联合负责人 Noam Shazeer 加入 OpenAI",
-          "Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心"
+          "AI 账单失控：AT&T、Meta 等巨头急刹车，从\"疯狂消耗\"到\"严苛限制"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Thoughtworks",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A12"
+        ],
+        "titles": [
+          "thoughtworks 发布新的 AI 产品或平台能力"
         ]
       },
       {
@@ -37302,42 +37331,6 @@
         "titles": [
           "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…"
         ]
-      },
-      {
-        "from": "subject:英伟达在虚幻嘉年华-2026",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260619-A24"
-        ],
-        "titles": [
-          "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…"
-        ]
-      },
-      {
-        "from": "subject:MarkTechPost（RSS）",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260619-A08"
-        ],
-        "titles": [
-          "Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进…"
-        ]
-      },
-      {
-        "from": "subject:MarkTechPost（RSS）",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260619-A08"
-        ],
-        "titles": [
-          "Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进…"
-        ]
       }
     ],
     "clusters": [
@@ -37421,7 +37414,7 @@
       },
       {
         "id": "product-launch-vs-adoption",
-        "title": "Claude Code、Snap 剥离 AI 视频团队成立新公司 Dotmo 同日出现在企业 AI 产品发布里",
+        "title": "英伟达在虚幻嘉年华 2026、Claude Code 同日出现在企业 AI 产品发布里",
         "direction": "产品发布",
         "relation": [
           "产品发布",
@@ -37429,22 +37422,22 @@
           "商业验证"
         ],
         "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
-        "evidenceMeta": "素材：Claude Code / Snap 剥离 AI 视频团队成立新公司 Dotmo / 英伟达在虚幻嘉年华 2026",
+        "evidenceMeta": "素材：英伟达在虚幻嘉年华 2026 / Claude Code / Snap 剥离 AI 视频团队成立新公司 Dotmo",
         "detailFocus": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
         "todayCount": 4,
         "last7Count": 49,
         "last30Count": 132,
         "subjects": [
           {
+            "label": "英伟达在虚幻嘉年华 2026",
+            "count": 1
+          },
+          {
             "label": "Claude Code",
             "count": 1
           },
           {
             "label": "Snap 剥离 AI 视频团队成立新公司 Dotmo",
-            "count": 1
-          },
-          {
-            "label": "英伟达在虚幻嘉年华 2026",
             "count": 1
           }
         ],
@@ -37615,7 +37608,7 @@
     },
     {
       "id": "product-launch-vs-adoption",
-      "title": "Claude Code、Snap 剥离 AI 视频团队成立新公司 Dotmo 同日出现在企业 AI 产品发布里",
+      "title": "英伟达在虚幻嘉年华 2026、Claude Code 同日出现在企业 AI 产品发布里",
       "direction": "产品发布",
       "relation": [
         "产品发布",
@@ -37623,22 +37616,22 @@
         "商业验证"
       ],
       "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
-      "evidenceMeta": "素材：Claude Code / Snap 剥离 AI 视频团队成立新公司 Dotmo / 英伟达在虚幻嘉年华 2026",
+      "evidenceMeta": "素材：英伟达在虚幻嘉年华 2026 / Claude Code / Snap 剥离 AI 视频团队成立新公司 Dotmo",
       "detailFocus": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perple...",
       "todayCount": 4,
       "last7Count": 49,
       "last30Count": 132,
       "subjects": [
         {
+          "label": "英伟达在虚幻嘉年华 2026",
+          "count": 1
+        },
+        {
           "label": "Claude Code",
           "count": 1
         },
         {
           "label": "Snap 剥离 AI 视频团队成立新公司 Dotmo",
-          "count": 1
-        },
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
           "count": 1
         }
       ],
@@ -37740,11 +37733,11 @@
           "count": 2
         },
         {
-          "label": "AI 账单失控",
+          "label": "英伟达在虚幻嘉年华 2026",
           "count": 1
         },
         {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "label": "AI 账单失控",
           "count": 1
         }
       ],
@@ -37797,11 +37790,11 @@
           "count": 2
         },
         {
-          "label": "AI 账单失控",
+          "label": "英伟达在虚幻嘉年华 2026",
           "count": 1
         },
         {
-          "label": "Claude Code",
+          "label": "AI 账单失控",
           "count": 1
         }
       ],
@@ -37854,11 +37847,11 @@
           "count": 2
         },
         {
-          "label": "AI 账单失控",
+          "label": "英伟达在虚幻嘉年华 2026",
           "count": 1
         },
         {
-          "label": "Claude Code",
+          "label": "AI 账单失控",
           "count": 1
         }
       ],
@@ -37907,15 +37900,15 @@
       "last30Count": 96,
       "subjects": [
         {
+          "label": "英伟达在虚幻嘉年华 2026",
+          "count": 1
+        },
+        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
           "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        },
-        {
-          "label": "Claude Code",
           "count": 1
         }
       ],
@@ -37964,15 +37957,15 @@
       "last30Count": 97,
       "subjects": [
         {
+          "label": "英伟达在虚幻嘉年华 2026",
+          "count": 1
+        },
+        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
           "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        },
-        {
-          "label": "Claude Code",
           "count": 1
         }
       ],
@@ -38021,15 +38014,15 @@
       "last30Count": 95,
       "subjects": [
         {
+          "label": "英伟达在虚幻嘉年华 2026",
+          "count": 1
+        },
+        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
           "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        },
-        {
-          "label": "Claude Code",
           "count": 1
         }
       ],
@@ -38078,15 +38071,15 @@
       "last30Count": 185,
       "subjects": [
         {
+          "label": "英伟达在虚幻嘉年华 2026",
+          "count": 1
+        },
+        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
           "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        },
-        {
-          "label": "Artificialintelligence-News",
           "count": 1
         }
       ],
@@ -38487,50 +38480,6 @@
     ],
     "historicalTrends": [
       {
-        "id": "TRD-20260519-02",
-        "type": "trend_card",
-        "title": "AI 治理开始从原则讨论转向产品和流程约束",
-        "date": "2026-05-19",
-        "status": "draft",
-        "assetLevel": "candidate",
-        "trendStatus": "early",
-        "stageLabel": "继续观察",
-        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "boundary": "",
-        "nextObservation": "",
-        "sourceTypes": [],
-        "relatedSignals": [
-          "CHG-20260519-07"
-        ],
-        "tags": {
-          "track": [
-            "track-ai-governance"
-          ],
-          "function": [],
-          "scenario": [],
-          "customer": [],
-          "evidence": [
-            "evidence-product-launch"
-          ],
-          "stage": [],
-          "region": [
-            "region-global"
-          ],
-          "source": []
-        },
-        "displayTags": [
-          {
-            "id": "track-ai-governance",
-            "label": "AI 治理"
-          },
-          {
-            "id": "evidence-product-launch",
-            "label": "产品发布"
-          }
-        ]
-      },
-      {
         "id": "TRD-20260519-01",
         "type": "trend_card",
         "title": "AI 编程进入预算和工程治理",
@@ -38579,6 +38528,50 @@
           {
             "id": "track-ai-coding",
             "label": "AI Coding"
+          },
+          {
+            "id": "evidence-product-launch",
+            "label": "产品发布"
+          }
+        ]
+      },
+      {
+        "id": "TRD-20260519-02",
+        "type": "trend_card",
+        "title": "AI 治理开始从原则讨论转向产品和流程约束",
+        "date": "2026-05-19",
+        "status": "draft",
+        "assetLevel": "candidate",
+        "trendStatus": "early",
+        "stageLabel": "继续观察",
+        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "boundary": "",
+        "nextObservation": "",
+        "sourceTypes": [],
+        "relatedSignals": [
+          "CHG-20260519-07"
+        ],
+        "tags": {
+          "track": [
+            "track-ai-governance"
+          ],
+          "function": [],
+          "scenario": [],
+          "customer": [],
+          "evidence": [
+            "evidence-product-launch"
+          ],
+          "stage": [],
+          "region": [
+            "region-global"
+          ],
+          "source": []
+        },
+        "displayTags": [
+          {
+            "id": "track-ai-governance",
+            "label": "AI 治理"
           },
           {
             "id": "evidence-product-launch",
@@ -38954,11 +38947,11 @@
           "count": 2
         },
         {
-          "label": "AI 账单失控",
+          "label": "英伟达在虚幻嘉年华 2026",
           "count": 1
         },
         {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "label": "AI 账单失控",
           "count": 1
         }
       ],
@@ -39015,11 +39008,11 @@
           "count": 2
         },
         {
-          "label": "AI 账单失控",
+          "label": "英伟达在虚幻嘉年华 2026",
           "count": 1
         },
         {
-          "label": "Claude Code",
+          "label": "AI 账单失控",
           "count": 1
         }
       ],
@@ -39076,11 +39069,11 @@
           "count": 2
         },
         {
-          "label": "AI 账单失控",
+          "label": "英伟达在虚幻嘉年华 2026",
           "count": 1
         },
         {
-          "label": "Claude Code",
+          "label": "AI 账单失控",
           "count": 1
         }
       ],
@@ -39133,15 +39126,15 @@
       "windowCount": 96,
       "subjects": [
         {
+          "label": "英伟达在虚幻嘉年华 2026",
+          "count": 1
+        },
+        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
           "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        },
-        {
-          "label": "Claude Code",
           "count": 1
         }
       ],
@@ -39194,15 +39187,15 @@
       "windowCount": 97,
       "subjects": [
         {
+          "label": "英伟达在虚幻嘉年华 2026",
+          "count": 1
+        },
+        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
           "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        },
-        {
-          "label": "Claude Code",
           "count": 1
         }
       ],
@@ -39255,15 +39248,15 @@
       "windowCount": 95,
       "subjects": [
         {
+          "label": "英伟达在虚幻嘉年华 2026",
+          "count": 1
+        },
+        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
           "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        },
-        {
-          "label": "Claude Code",
           "count": 1
         }
       ],
@@ -39316,15 +39309,15 @@
       "windowCount": 185,
       "subjects": [
         {
+          "label": "英伟达在虚幻嘉年华 2026",
+          "count": 1
+        },
+        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
           "label": "AI推理公司Baseten据报以130亿美元估值",
-          "count": 1
-        },
-        {
-          "label": "Artificialintelligence-News",
           "count": 1
         }
       ],
@@ -39465,22 +39458,22 @@
     {
       "id": "relationship:product-launch-vs-adoption",
       "type": "relationship_cluster",
-      "title": "Claude Code、Snap 剥离 AI 视频团队成立新公司 Dotmo 同日出现在企业 AI 产品发布里",
+      "title": "英伟达在虚幻嘉年华 2026、Claude Code 同日出现在企业 AI 产品发布里",
       "date": "2026-06-19",
       "signal": "产品发布",
       "evidenceCount": 4,
       "windowCount": 132,
       "subjects": [
         {
+          "label": "英伟达在虚幻嘉年华 2026",
+          "count": 1
+        },
+        {
           "label": "Claude Code",
           "count": 1
         },
         {
           "label": "Snap 剥离 AI 视频团队成立新公司 Dotmo",
-          "count": 1
-        },
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
           "count": 1
         }
       ],

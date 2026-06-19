@@ -1,7 +1,7 @@
 ---
 type: enterprise_ai_fde_index
 status: current
-updated_at: 2026-06-18T07:33:11.956Z
+updated_at: 2026-06-19T07:13:31.975Z
 ---
 
 # Enterprise AI / FDE Index
@@ -10,4 +10,4 @@ updated_at: 2026-06-18T07:33:11.956Z
 
 ## Daily Views
 
-- [2026-06-18 Enterprise AI FDE](daily/2026-06-18 Enterprise AI FDE.md)
+- [2026-06-19 Enterprise AI FDE](daily/2026-06-19 Enterprise AI FDE.md)

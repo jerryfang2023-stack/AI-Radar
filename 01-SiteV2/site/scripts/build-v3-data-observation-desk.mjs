@@ -2593,6 +2593,7 @@ function isEnterpriseAiLensPoolSection(section = "") {
     poolValue(section, "evidence_seed"),
     poolValue(section, "missing_information"),
   ].filter(Boolean).join(" ");
+  if (!hasConcreteEnterpriseImplementationEvidence({ text })) return false;
   const implementation = /FDE|forward deployed|customer-embedded|domain operator|production environment|regulated payer workflow|implementation|workflow|deployment|rollout|customer adoption|case study|business process|pilot|procurement|technical scoping|系统设计|客户嵌入|生产环境|生产上线|业务流程|实施|部署|落地|试点|采购|交付/iu.test(text);
   const broadGovernance = /world leaders|turn it off|G7|sovereign AI|national security|国家安全|峰会|领导人|关闭模型访问/iu.test(text);
   return implementation && (!broadGovernance || /workflow|deployment|customer|production|business process|业务流程|部署|客户|生产/iu.test(text));
@@ -3470,6 +3471,27 @@ function enterpriseTransformationText(card = {}) {
   ].filter(Boolean).join(" ");
 }
 
+function hasConcreteEnterpriseImplementationEvidence({ card = {}, text = "" } = {}) {
+  const source = String(text || enterpriseTransformationText(card));
+  if (!source) return false;
+
+  const explicitFde = /\bFDE\b|forward deployed|customer-embedded|domain operator|regulated payer workflow/iu.test(source);
+  const productionDelivery = /production (?:deployment|rollout|environment|workflow|workload)|deploys?|deployed|deployment|rollout|go[- ]?live|at scale|scale[sd]? deployment|customer adoption|case study|customer story|implemented|implementation|pilot|poc|proof of concept|procurement|technical scoping|部署|上线|落地|规模化|采用|试点|采购|合作协议|用例|工作流/iu.test(source);
+  const customerOrVertical = /customer|client|enterprise|bank|insurer|insurance|hospital|healthcare|payer|retail|store|manufactur|factory|financial|wealth management|financial crime|claims|underwriting|loan|contact center|support|sales|crm|procurement|supply chain|inventory|shelf|transaction|workflow|企业|客户|银行|金融|保险|医疗|零售|门店|制造|工厂|财富管理|金融犯罪|交易|库存|货架|客服|销售|采购|供应链|工作流/iu.test(source);
+  const businessMetric = /\b\d+(?:\.\d+)?\s?(?:%|percent|x|times|use cases?|transactions?|calls?|bookings?|stores?|employees?|customers?|million|billion|hours?|days?)\b|\d+(?:\.\d+)?\s*(?:个|项|笔|次|家|名|倍|%|亿美元|万美元|万|亿)|超\d+/iu.test(source);
+  const adoptionTag = (card.flatTags || []).some((tag) => /evidence-customer-adoption|evidence-customer-metric|evidence-partnership-integration/iu.test(tag));
+
+  const researchOnly = /benchmark|evaluation|evals?|research|paper|dataset|alignment|reinforcement learning|HealthBench|AA-Briefcase|MLCR|Elo|leaderboard|model capability|model capabilities|open source benchmark|基准|评测|研究|论文|数据集|强化学习|排行榜/iu.test(source);
+  const consumerOnly = /iMessage|App Store|consumer app|AR character|interactive AR|game character|mobile game|social app|消费级|互动角色|移动应用/iu.test(source);
+  const platformOnly = /OAuth|authorization|memory layer|knowledge base|SDK|API|protocol|specification|release notes|developer tool|framework|library|runtime|benchmark/iu.test(source)
+    && !/(customer adoption|customer story|case study|deployed by|used by|implemented by|signed|partnership|procurement|pilot|poc|proof of concept|production deployment|at scale)/iu.test(source);
+  const broadGovernance = /world leaders|turn it off|G7|sovereign AI|national security/iu.test(source);
+
+  if (/原文未提供更多可拆分事实点|是否进入具体企业工作流|signal value is to observe|need to continue verifying/iu.test(source)) return false;
+  if (!explicitFde && (researchOnly || consumerOnly || platformOnly || broadGovernance)) return false;
+  return explicitFde || (productionDelivery && customerOrVertical) || (adoptionTag && productionDelivery && customerOrVertical && businessMetric);
+}
+
 function enterpriseTransformationStage(card = {}, text = "") {
   const explicit = card.enterpriseAiTransformationStage || card.enterprise_ai_transformation_stage || "";
   if (explicit) return explicit;
@@ -3555,6 +3577,7 @@ function hasEnterpriseImplementationSignal(card = {}) {
   if (/design partner|brand design|visual identity|launch sequence|设计伙伴|品牌设计|视觉识别/iu.test(text) && !/deployment|production|rollout|FDE|forward deployed|生产|部署|落地/iu.test(text)) return false;
   const aiRelated = /\bAI\b|agentic|agents?|LLM|model|Claude|Bedrock|智能体|模型|人工智能/u.test(text);
   if (!aiRelated) return false;
+  if (!hasConcreteEnterpriseImplementationEvidence({ card, text })) return false;
   const implementation = /FDE|forward deployed|customer-embedded|domain operator|production environment|regulated payer workflow|implementation|workflow|deployment|rollout|customer adoption|case study|business process|pilot|procurement|technical scoping|系统设计|客户嵌入|生产环境|生产上线|业务流程|实施|部署|落地|试点|采购|交付/iu.test(text);
   if (!implementation) return false;
   const broadGovernance = /world leaders|turn it off|G7|sovereign AI|national security|国家安全|峰会|领导人|关闭模型访问/iu.test(text);
@@ -3566,8 +3589,7 @@ function hasEnterpriseTransformationSubstance(card = {}) {
   if (!hasSourceBackedFrontstageFact(card)) return false;
   if (/design partner|brand design|visual identity|launch sequence|设计伙伴|品牌设计|视觉识别/iu.test(text) && !/deployment|production|rollout|FDE|forward deployed|生产|部署|落地/iu.test(text)) return false;
   if (!/\bAI\b|agentic|agents?|LLM|model|Claude|Bedrock|智能体|模型|人工智能/u.test(text)) return false;
-  return hasEnterpriseImplementationSignal(card)
-    || /workflow|customer|deployment|adoption|procurement|cms|content management|red team|security testing|agentic ai.*business|enterprise system|企业|流程|客户|部署|采用|采购|内容管理|内容运营|红队|安全测试|业务系统/iu.test(text);
+  return hasEnterpriseImplementationSignal(card);
 }
 
 function enterpriseTransformationItem(card = {}) {

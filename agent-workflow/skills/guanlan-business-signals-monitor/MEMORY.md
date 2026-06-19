@@ -13,6 +13,12 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 - The Enterprise AI / FDE lens must prioritize source-backed implementation evidence such as FDE, customer-embedded delivery, production deployment, workflow rollout, procurement, pilot, or technical scoping. Broad AI governance or geopolitical access stories must not outrank concrete implementation materials just because they mention enterprise AI, security, or governance.
 - FDE lens titles follow the same title rule as Top10: display the original/source title translated directly into Chinese. Field notes such as Genzeon's Claude-First Healthcare FDE pod page should show the literal translated source title, not a generated boss-facing interpretation.
 
+## 2026-06-19 FDE Precision
+
+- Enterprise AI / FDE lens items must show concrete implementation evidence, not generic enterprise AI relevance. Required evidence includes FDE / forward-deployed work, customer-embedded delivery, production deployment, workflow rollout, procurement, pilot / POC, technical scoping, customer adoption, or a vertical business workflow with source-backed deployment facts.
+- Do not let labels such as `evidence-customer-adoption`, broad terms such as enterprise / workflow / agent, or market-size numbers qualify an item by themselves. Strategy speeches, model research, benchmarks, consumer apps, platform-only releases, and template detail placeholders must stay out of the FDE lens unless a separate source-backed deployment or customer workflow fact is present.
+- When repairing FDE precision, update both the Business Signals data builder and the frontstage regression gate, rebuild `v3-data-observation-desk.json`, run the unified Business frontstage gate, and sync `content/09-fde`.
+
 ## 2026-06-12
 
 - The public/Hermes Top10 contract is lane-level, not only a Raw / Pool / Card detail. A healthy `frontstageSelection` or `frontstageCards` set is insufficient unless the public `top10` array exists and contains exactly 10 active-date items.
