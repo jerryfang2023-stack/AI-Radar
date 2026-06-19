@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T13:00:01.000Z"
-collected_at: 2026-06-19T06:41:39.529Z
+collected_at: 2026-06-19T07:43:57.505Z
 language: mixed
-full_text_hash: 941a474fe0121ede
+full_text_hash: f4666c3438410500
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-035-soar-2026-挑战赛落幕-单消费级-gpu-推理性能优化.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-035-soar-2026-挑战赛落幕-单消费级-gpu-推理性能优化.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"941a474fe0121ede","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f4666c3438410500","missing":[]}
 source_volatility: high
 community_name: "X：面壁智能 OpenBMB (@OpenBMB)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"SOAR 2026 挑战赛落幕：单消费级 GPU 推理性能优化","discovery_summary":"由 OpenBMB、SGLang 和 NVIDIA 联合主办的 SOAR 2026 挑战赛结束，旨在单消费级 GPU 上最大化 MiniCPM-SALA（稀疏+线性混合注意力模型）推理性能。最终 326 支队伍注册，4300+ 次提交，69 队入围排行榜。冠军团队实现整体 6.33 倍加速，单请求推理峰值达 9.72 倍，方案结合 NVFP4 量化、FlashInfer plan-cache 优化、自定义 Triton 内核、EAGLE-3 推测解码及运行时感知调度。低比特量化、推测解码、稀疏注意力和阶段感知调度被视为下一代高效推理核心支柱。","source_name":"X：面壁智能 OpenBMB (@OpenBMB)","origin_url":"https://x.com/OpenBMB/status/2067593175456465209","discovered_at":"2026-06-19T06:38:20.384Z","rank_on_page":253,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"SOAR 2026 挑战赛落幕：单消费级 GPU 推理性能优化","discovery_summary":"由 OpenBMB、SGLang 和 NVIDIA 联合主办的 SOAR 2026 挑战赛结束，旨在单消费级 GPU 上最大化 MiniCPM-SALA（稀疏+线性混合注意力模型）推理性能。最终 326 支队伍注册，4300+ 次提交，69 队入围排行榜。冠军团队实现整体 6.33 倍加速，单请求推理峰值达 9.72 倍，方案结合 NVFP4 量化、FlashInfer plan-cache 优化、自定义 Triton 内核、EAGLE-3 推测解码及运行时感知调度。低比特量化、推测解码、稀疏注意力和阶段感知调度被视为下一代高效推理核心支柱。","source_name":"X：面壁智能 OpenBMB (@OpenBMB)","origin_url":"https://x.com/OpenBMB/status/2067593175456465209","discovered_at":"2026-06-19T07:39:27.787Z","rank_on_page":258,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: a68006098d973b6a
-content_hash: 941a474fe0121ede
+content_hash: f4666c3438410500
 semantic_hash: 4dfaac8025eac59b
 duplicate_of: ""
 first_seen_at: "2026-06-18T13:00:01.000Z"
-last_seen_at: 2026-06-19T06:41:39.529Z
+last_seen_at: 2026-06-19T07:43:57.505Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -100,7 +100,7 @@ Final Metrics:
 Low-bit quantization, speculative decoding, sparse attention, and phase-aware scheduling are emerging as the core pillars of next-gen efficient inference. SOAR 2026 put that thesis to the test — and the community delivered.
 The leaderboard is closed, but the optimizations, code, and conversations will live on in the open-source ecosystem. 🚀
 🔗 MiniCPM-SALA: huggingface.co/openbmb/MiniCP…
-1:00 PM · Jun 18, 2026 510 Views
+1:00 PM · Jun 18, 2026 512 Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10
@@ -130,7 +130,7 @@ Final Metrics:
 Low-bit quantization, speculative decoding, sparse attention, and phase-aware scheduling are emerging as the core pillars of next-gen efficient inference. SOAR 2026 put that thesis to the test — and the community delivered.
 The leaderboard is closed, but the optimizations, code, and conversations will live on in the open-source ecosystem. 🚀
 🔗 MiniCPM-SALA: huggingface.co/openbmb/MiniCP…
-1:00 PM · Jun 18, 2026 510 Views
+1:00 PM · Jun 18, 2026 512 Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10
@@ -236,7 +236,7 @@ Read 1 reply
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"SOAR 2026 挑战赛落幕：单消费级 GPU 推理性能优化","discovery_summary":"由 OpenBMB、SGLang 和 NVIDIA 联合主办的 SOAR 2026 挑战赛结束，旨在单消费级 GPU 上最大化 MiniCPM-SALA（稀疏+线性混合注意力模型）推理性能。最终 326 支队伍注册，4300+ 次提交，69 队入围排行榜。冠军团队实现整体 6.33 倍加速，单请求推理峰值达 9.72 倍，方案结合 NVFP4 量化、FlashInfer plan-cache 优化、自定义 Triton 内核、EAGLE-3 推测解码及运行时感知调度。低比特量化、推测解码、稀疏注意力和阶段感知调度被视为下一代高效推理核心支柱。","source_name":"X：面壁智能 OpenBMB (@OpenBMB)","origin_url":"https://x.com/OpenBMB/status/2067593175456465209","discovered_at":"2026-06-19T06:38:20.384Z","rank_on_page":253,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"SOAR 2026 挑战赛落幕：单消费级 GPU 推理性能优化","discovery_summary":"由 OpenBMB、SGLang 和 NVIDIA 联合主办的 SOAR 2026 挑战赛结束，旨在单消费级 GPU 上最大化 MiniCPM-SALA（稀疏+线性混合注意力模型）推理性能。最终 326 支队伍注册，4300+ 次提交，69 队入围排行榜。冠军团队实现整体 6.33 倍加速，单请求推理峰值达 9.72 倍，方案结合 NVFP4 量化、FlashInfer plan-cache 优化、自定义 Triton 内核、EAGLE-3 推测解码及运行时感知调度。低比特量化、推测解码、稀疏注意力和阶段感知调度被视为下一代高效推理核心支柱。","source_name":"X：面壁智能 OpenBMB (@OpenBMB)","origin_url":"https://x.com/OpenBMB/status/2067593175456465209","discovered_at":"2026-06-19T07:39:27.787Z","rank_on_page":258,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

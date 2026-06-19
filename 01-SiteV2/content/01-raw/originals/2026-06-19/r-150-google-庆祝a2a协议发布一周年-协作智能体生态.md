@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-19T06:41:39.895Z
+collected_at: 2026-06-19T07:43:57.975Z
 language: mixed
 full_text_hash: b5e751c6749dcce8
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-150-google-庆祝a2a协议发布一周年-协作智能体生态.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Google 庆祝A2A协议发布一周年：协作智能体生态","discovery_summary":"Google 庆祝Agent-to-Agent（A2A）协议发布一周年。A2A专为生成式AI设计，相比传统REST API提供安全边界、零上下文污染、动态自主性和工作负载分布四大架构优势。应用实例FoldRun是一个独立的智能体接口，可在Gemini Enterprise或Gemini CLI等A2A兼容环境中部署，自动管理蛋白质结构预测任务，动态选择AlphaFold 2、OpenFold 3或Boltz-2等模型，无需自定义胶水代码。","source_name":"Google Developers Blog（RSS）","origin_url":"","discovered_at":"2026-06-19T06:38:17.996Z","rank_on_page":28,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Google 庆祝A2A协议发布一周年：协作智能体生态","discovery_summary":"Google 庆祝Agent-to-Agent（A2A）协议发布一周年。A2A专为生成式AI设计，相比传统REST API提供安全边界、零上下文污染、动态自主性和工作负载分布四大架构优势。应用实例FoldRun是一个独立的智能体接口，可在Gemini Enterprise或Gemini CLI等A2A兼容环境中部署，自动管理蛋白质结构预测任务，动态选择AlphaFold 2、OpenFold 3或Boltz-2等模型，无需自定义胶水代码。","source_name":"Google Developers Blog（RSS）","origin_url":"","discovered_at":"2026-06-19T07:39:26.656Z","rank_on_page":28,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: b5e751c6749dcce8
 semantic_hash: 4b91413bd3df6d5e
 duplicate_of: ""
-first_seen_at: "2026-06-19T06:41:39.895Z"
-last_seen_at: 2026-06-19T06:41:39.895Z
+first_seen_at: "2026-06-19T07:43:57.975Z"
+last_seen_at: 2026-06-19T07:43:57.975Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -178,7 +178,7 @@ Google 庆祝Agent-to-Agent（A2A）协议发布一周年。A2A专为生成式AI
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"Google 庆祝A2A协议发布一周年：协作智能体生态","discovery_summary":"Google 庆祝Agent-to-Agent（A2A）协议发布一周年。A2A专为生成式AI设计，相比传统REST API提供安全边界、零上下文污染、动态自主性和工作负载分布四大架构优势。应用实例FoldRun是一个独立的智能体接口，可在Gemini Enterprise或Gemini CLI等A2A兼容环境中部署，自动管理蛋白质结构预测任务，动态选择AlphaFold 2、OpenFold 3或Boltz-2等模型，无需自定义胶水代码。","source_name":"Google Developers Blog（RSS）","origin_url":"","discovered_at":"2026-06-19T06:38:17.996Z","rank_on_page":28,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Google 庆祝A2A协议发布一周年：协作智能体生态","discovery_summary":"Google 庆祝Agent-to-Agent（A2A）协议发布一周年。A2A专为生成式AI设计，相比传统REST API提供安全边界、零上下文污染、动态自主性和工作负载分布四大架构优势。应用实例FoldRun是一个独立的智能体接口，可在Gemini Enterprise或Gemini CLI等A2A兼容环境中部署，自动管理蛋白质结构预测任务，动态选择AlphaFold 2、OpenFold 3或Boltz-2等模型，无需自定义胶水代码。","source_name":"Google Developers Blog（RSS）","origin_url":"","discovered_at":"2026-06-19T07:39:26.656Z","rank_on_page":28,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

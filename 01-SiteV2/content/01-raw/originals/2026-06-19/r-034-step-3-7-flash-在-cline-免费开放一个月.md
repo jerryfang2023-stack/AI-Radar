@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T13:01:01.000Z"
-collected_at: 2026-06-19T06:41:39.527Z
+collected_at: 2026-06-19T07:43:57.503Z
 language: mixed
-full_text_hash: 37c507c1798d66f8
+full_text_hash: 2f7b7558bf2f9e93
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-034-step-3-7-flash-在-cline-免费开放一个月.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-034-step-3-7-flash-在-cline-免费开放一个月.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"37c507c1798d66f8","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2f7b7558bf2f9e93","missing":[]}
 source_volatility: high
 community_name: "X：阶跃星辰 StepFun (@StepFun_ai)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Step 3.7 Flash 在 Cline 免费开放一个月","discovery_summary":"阶跃星辰宣布与 Cline 合作，Step 3.7 Flash 未来一个月在 Cline 免费使用。该模型在 SWE Bench 上击败 Gemini 和 DeepSeek flash 模型，性能接近前沿水平。支持开源权重、256k 上下文窗口，速度快且稳定。用户可通过 Cline 中 `/model` 命令选择 Step 3.7 Flash。","source_name":"X：阶跃星辰 StepFun (@StepFun_ai)","origin_url":"https://x.com/StepFun_ai/status/2067593425470509427","discovered_at":"2026-06-19T06:38:20.384Z","rank_on_page":252,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Step 3.7 Flash 在 Cline 免费开放一个月","discovery_summary":"阶跃星辰宣布与 Cline 合作，Step 3.7 Flash 未来一个月在 Cline 免费使用。该模型在 SWE Bench 上击败 Gemini 和 DeepSeek flash 模型，性能接近前沿水平。支持开源权重、256k 上下文窗口，速度快且稳定。用户可通过 Cline 中 `/model` 命令选择 Step 3.7 Flash。","source_name":"X：阶跃星辰 StepFun (@StepFun_ai)","origin_url":"https://x.com/StepFun_ai/status/2067593425470509427","discovered_at":"2026-06-19T07:39:27.787Z","rank_on_page":257,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 3d5e3f3d48041a1c
-content_hash: 37c507c1798d66f8
+content_hash: 2f7b7558bf2f9e93
 semantic_hash: ed76ef03a26518e5
 duplicate_of: ""
 first_seen_at: "2026-06-18T13:01:01.000Z"
-last_seen_at: 2026-06-19T06:41:39.527Z
+last_seen_at: 2026-06-19T07:43:57.503Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
@@ -65,7 +65,7 @@ change_action_detected: true
 evidence_eligibility: eligible
 evidence_block_reason: ""
 guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":4}
-business_elements: {"companies":["X","阶跃星辰 StepFun (@StepFun_ai)"],"products":["Gemini","agent"],"people":[],"industries":["开发者工具"],"roles":[],"workflows":[],"business_actions":["合作 / 联盟"],"affected_departments":["IT / 安全"],"numbers":["3.7","256","17","1","01","18","2026","1.4"],"quotes":[]}
+business_elements: {"companies":["X","阶跃星辰 StepFun (@StepFun_ai)"],"products":["Gemini","agent"],"people":[],"industries":["开发者工具"],"roles":[],"workflows":[],"business_actions":["合作 / 联盟"],"affected_departments":["IT / 安全"],"numbers":["3.7","256","17","1","01","18","2026","1.5"],"quotes":[]}
 evidence_seed: {"company_actions":["阶跃星辰宣布与 Cline 合作，Step 3.7 Flash 未来一个月在 Cline 免费使用。该模型在 SWE Bench 上击败 Gemini 和 DeepSeek flash 模型，性能接近前沿水平。支持开源权重、256k 上下文窗口，速度快且稳定。用户可通过 Cline 中 `/model` 命令选择 Step 3.7 Flash。","Post Log in Sign up Post StepFun @StepFun_ai Excited to partner with @ cline to bring Step 3.","7 Flash to more coding agent builders."],"case_details":[],"workflow_changes":["7 Flash is now free in Cline for the next month — capable, fast, and reliable for agentic coding workflows."],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
 missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
 key_excerpts: [{"type":"company_action","text":"阶跃星辰宣布与 Cline 合作，Step 3.7 Flash 未来一个月在 Cline 免费使用。该模型在 SWE Bench 上击败 Gemini 和 DeepSeek flash 模型，性能接近前沿水平。支持开源权重、256k 上下文窗口，速度快且稳定。用户可通过 Cline 中 `/model` 命令选择 Step 3.7 Flash。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Post Log in Sign up Post StepFun @StepFun_ai Excited to partner with @ cline to bring Step 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"7 Flash to more coding agent builders.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"7 Flash is now free in Cline for the next month — capable, fast, and reliable for agentic coding workflows.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Try it in Cline: /model → Step 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"7 Flash Big thanks to the Cline team.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
@@ -96,10 +96,10 @@ It beats Gemini and DeepSeek flash models, and comes surprisingly close to front
 Open weights, 256k context window, fast and reliable.
 npm i -g cline
 Run cline > use /model > select Step 3.7 Flash
-1:01 PM · Jun 18, 2026 1.4K Views
+1:01 PM · Jun 18, 2026 1.5K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 24
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 25
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3
 Read 1 reply
 
@@ -123,10 +123,10 @@ It beats Gemini and DeepSeek flash models, and comes surprisingly close to front
 Open weights, 256k context window, fast and reliable.
 npm i -g cline
 Run cline > use /model > select Step 3.7 Flash
-1:01 PM · Jun 18, 2026 1.4K Views
+1:01 PM · Jun 18, 2026 1.5K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 24
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 25
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3
 Read 1 reply
 
@@ -172,7 +172,7 @@ Read 1 reply
 - workflows: 暂无公开信息
 - business_actions: 合作 / 联盟
 - affected_departments: IT / 安全
-- numbers: 3.7, 256, 17, 1, 01, 18, 2026, 1.4
+- numbers: 3.7, 256, 17, 1, 01, 18, 2026, 1.5
 - quotes: 暂无公开信息
 
 ## evidence_seed
@@ -231,7 +231,7 @@ Read 1 reply
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Step 3.7 Flash 在 Cline 免费开放一个月","discovery_summary":"阶跃星辰宣布与 Cline 合作，Step 3.7 Flash 未来一个月在 Cline 免费使用。该模型在 SWE Bench 上击败 Gemini 和 DeepSeek flash 模型，性能接近前沿水平。支持开源权重、256k 上下文窗口，速度快且稳定。用户可通过 Cline 中 `/model` 命令选择 Step 3.7 Flash。","source_name":"X：阶跃星辰 StepFun (@StepFun_ai)","origin_url":"https://x.com/StepFun_ai/status/2067593425470509427","discovered_at":"2026-06-19T06:38:20.384Z","rank_on_page":252,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Step 3.7 Flash 在 Cline 免费开放一个月","discovery_summary":"阶跃星辰宣布与 Cline 合作，Step 3.7 Flash 未来一个月在 Cline 免费使用。该模型在 SWE Bench 上击败 Gemini 和 DeepSeek flash 模型，性能接近前沿水平。支持开源权重、256k 上下文窗口，速度快且稳定。用户可通过 Cline 中 `/model` 命令选择 Step 3.7 Flash。","source_name":"X：阶跃星辰 StepFun (@StepFun_ai)","origin_url":"https://x.com/StepFun_ai/status/2067593425470509427","discovered_at":"2026-06-19T07:39:27.787Z","rank_on_page":257,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

@@ -1,0 +1,315 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-117
+title: "The Ultimate Open-Source AI Agent Directory - The VC Corner"
+original_url: "https://www.thevccorner.com/p/open-source-ai-agents-directory"
+canonical_url: "https://thevccorner.com/p/open-source-ai-agents-directory"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_customer_case"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-19T07:43:57.907Z
+language: mixed
+full_text_hash: cff98e9416614987
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-117-the-ultimate-open-source-ai-agent-directory-the-vc-corner.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-117-the-ultimate-open-source-ai-agent-directory-the-vc-corner.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":3556,"paragraph_count":55,"sentence_count":11,"boilerplate_hits":0,"symbol_ratio":0,"method":"article"}
+has_full_text: true
+content_length: 3556
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cff98e9416614987","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 011f793786fb60c6
+content_hash: cff98e9416614987
+semantic_hash: e48245acab88af3a
+duplicate_of: ""
+first_seen_at: "2026-06-19T07:43:57.907Z"
+last_seen_at: 2026-06-19T07:43:57.907Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","GitHub"],"products":["Agent","agents","agent","Agents","MCP"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全"],"numbers":["22","2025","31","50","000","2","500","300"],"quotes":[]}
+evidence_seed: {"company_actions":["The Ultimate Open-Source AI Agent Directory Run, build, and break real AI agents — directly from GitHub Ruben Dominguez Jul 22, 2025 31 Share If you want to truly understand how AI agents work, don’t just read about them.","The VC Corner The VC Corner is where founders stay ahead — with sharp news, fundraising strategies, battle-tested playbooks, and the tools to grow.","By Ruben Dominguez Ibar This free GitHub repository of open-source AI agents is one of the most hands-on resources out there."],"case_details":["This free GitHub repository of open-source AI agents is one of the most hands-on resources out there. It's not theory or hype. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=capital_startup"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"This free GitHub repository of open-source AI agents is one of the most hands-on resources out there. It's not theory or hype. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=capital_startup","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The Ultimate Open-Source AI Agent Directory Run, build, and break real AI agents — directly from GitHub Ruben Dominguez Jul 22, 2025 31 Share If you want to truly understand how AI agents work, don’t just read about them.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The VC Corner The VC Corner is where founders stay ahead — with sharp news, fundraising strategies, battle-tested playbooks, and the tools to grow.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"By Ruben Dominguez Ibar This free GitHub repository of open-source AI agents is one of the most hands-on resources out there.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It’s not theory or hype.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It’s working code, practical applications, and real-world AI behaviors.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# The Ultimate Open-Source AI Agent Directory - The VC Corner
+
+## clean_text
+
+The Ultimate Open-Source AI Agent Directory
+Run, build, and break real AI agents — directly from GitHub
+Ruben Dominguez
+Jul 22, 2025
+31
+Share
+If you want to truly understand how AI agents work, don’t just read about them.
+Run them. Build with them. Break them.
+The VC Corner The VC Corner is where founders stay ahead — with sharp news, fundraising strategies, battle-tested playbooks, and the tools to grow.
+By Ruben Dominguez Ibar
+This free GitHub repository of open-source AI agents is one of the most hands-on resources out there. It’s not theory or hype. It’s working code, practical applications, and real-world AI behaviors.
+A curated map of the most popular open-source AI agents—grouped by function and ready to run
+What You’ll Find Inside:
+Autonomous workflows
+Multi-agent collaboration
+Retrieval-augmented reasoning (RAG)
+Browser + GitHub automation
+Creative + analytical execution
+Highlight Agents to Explore:
+▫️ AI Self-Evolving Agent : explores recursive learning and autonomous loops
+▫️ AI Deep Research Agent : synthesizes knowledge with RAG and memory
+▫️ AI System Architect Agent : plans and builds complex system architectures
+▫️ AI Product Launch Intelligence Agent : combines strategy, content, and market research
+▫️ AI Investment Agent : simulates structured financial decision-making
+▫️ AI Competitor Intelligence Agent Team : multi-agent analysis for business strategy
+▫️ Multimodal Coding Agent Team : handles code, docs, and UI flows in tandem
+▫️ Browser MCP Agent : automates real browser tasks with precision
+▫️ GitHub MCP Agent : executes tasks on codebases and repos
+▫️ AI Travel Planner MCP Agent : plans full trips by chaining tools and APIs
+▫️ AI Movie Production Agent : coordinates multimedia creation from script to screen
+👉 Browse the full collection and launch your first agent:
+The GitHub home of over 50,000-star open-source AI agents, including RAG, MCP, and multi-agent frameworks
+Awesome LLM Apps GitHub Repository
+If you're serious about building with AI, bookmark this and start experimenting.
+Want more curated tools like this? Check out the following resources 🔥
+✅ SaaS Financial Model
+✅ Cap Table at Series A & B
+✅ The Startup MIS Template : A Excel Dashboard to Track Your Key Metrics
+✅ The Go-To Pricing Guide for Early-Stage Founders + Toolkit
+✅ DCF Valuation Method Template: A Practical Guide for Founders
+✅ How Much Are Your Startup Stock Options Really Worth? Startups
+✅ How VCs Value Startups: The VC Method + Excel Template
+✅ 2,500+ Angel Investors Backing AI & SaaS Startups
+✅ Cap Table Mastery: How to Manage Startup Equity from Seed to Series C
+✅ 300+ VCs That Accept Cold Pitches — No Warm Intro Needed
+✅ 50 Game-Changing AI Agent Startup Ideas for 2025
+✅ 144 Family Offices That Cut Pre-Seed Checks
+✅ 70+ Startup Pitch Decks That Raised Over $1B in 2024
+✅ 89 Best Startup Essays by Top VCs and Founders (Paul Graham, Naval, Altman…)
+✅ The Ultimate Startup Data Room Template (VC-Ready & Founder-Proven)
+✅ The 100+ Pitch Decks That Raised Over $2B
+✅ Ultimate Investor List of Lists (+5k VCs)
+✅ 40 Pitch Decks That Raised Over $460M
+✅ The Startup Founder’s Guide to Financial Modeling (7 free templates included)
+✅ SAFE Note Dilution: How to Calculate & Protect Your Equity (+ Cap Table Template )
+✅ 400+ Seed VCs Backing Startups in the US & Europe
+✅ The Best 23 Accelerators Worldwide for Rapid Growth (and How to Get Into Them)
+✅ The Ultimate Startup & Venture Capital Notion Guide : Knowledge Base & Resources
+✅ AI Co-Pilots Every Startup & VC Needs in Their Toolbox
+31
+Share
+Previous Next
+
+## full_text
+
+The Ultimate Open-Source AI Agent Directory
+Run, build, and break real AI agents — directly from GitHub
+Ruben Dominguez
+Jul 22, 2025
+31
+Share
+If you want to truly understand how AI agents work, don’t just read about them.
+Run them. Build with them. Break them.
+The VC Corner The VC Corner is where founders stay ahead — with sharp news, fundraising strategies, battle-tested playbooks, and the tools to grow.
+By Ruben Dominguez Ibar
+This free GitHub repository of open-source AI agents is one of the most hands-on resources out there. It’s not theory or hype. It’s working code, practical applications, and real-world AI behaviors.
+A curated map of the most popular open-source AI agents—grouped by function and ready to run
+What You’ll Find Inside:
+Autonomous workflows
+Multi-agent collaboration
+Retrieval-augmented reasoning (RAG)
+Browser + GitHub automation
+Creative + analytical execution
+Highlight Agents to Explore:
+▫️ AI Self-Evolving Agent : explores recursive learning and autonomous loops
+▫️ AI Deep Research Agent : synthesizes knowledge with RAG and memory
+▫️ AI System Architect Agent : plans and builds complex system architectures
+▫️ AI Product Launch Intelligence Agent : combines strategy, content, and market research
+▫️ AI Investment Agent : simulates structured financial decision-making
+▫️ AI Competitor Intelligence Agent Team : multi-agent analysis for business strategy
+▫️ Multimodal Coding Agent Team : handles code, docs, and UI flows in tandem
+▫️ Browser MCP Agent : automates real browser tasks with precision
+▫️ GitHub MCP Agent : executes tasks on codebases and repos
+▫️ AI Travel Planner MCP Agent : plans full trips by chaining tools and APIs
+▫️ AI Movie Production Agent : coordinates multimedia creation from script to screen
+👉 Browse the full collection and launch your first agent:
+The GitHub home of over 50,000-star open-source AI agents, including RAG, MCP, and multi-agent frameworks
+Awesome LLM Apps GitHub Repository
+If you're serious about building with AI, bookmark this and start experimenting.
+Want more curated tools like this? Check out the following resources 🔥
+✅ SaaS Financial Model
+✅ Cap Table at Series A & B
+✅ The Startup MIS Template : A Excel Dashboard to Track Your Key Metrics
+✅ The Go-To Pricing Guide for Early-Stage Founders + Toolkit
+✅ DCF Valuation Method Template: A Practical Guide for Founders
+✅ How Much Are Your Startup Stock Options Really Worth? Startups
+✅ How VCs Value Startups: The VC Method + Excel Template
+✅ 2,500+ Angel Investors Backing AI & SaaS Startups
+✅ Cap Table Mastery: How to Manage Startup Equity from Seed to Series C
+✅ 300+ VCs That Accept Cold Pitches — No Warm Intro Needed
+✅ 50 Game-Changing AI Agent Startup Ideas for 2025
+✅ 144 Family Offices That Cut Pre-Seed Checks
+✅ 70+ Startup Pitch Decks That Raised Over $1B in 2024
+✅ 89 Best Startup Essays by Top VCs and Founders (Paul Graham, Naval, Altman…)
+✅ The Ultimate Startup Data Room Template (VC-Ready & Founder-Proven)
+✅ The 100+ Pitch Decks That Raised Over $2B
+✅ Ultimate Investor List of Lists (+5k VCs)
+✅ 40 Pitch Decks That Raised Over $460M
+✅ The Startup Founder’s Guide to Financial Modeling (7 free templates included)
+✅ SAFE Note Dilution: How to Calculate & Protect Your Equity (+ Cap Table Template )
+✅ 400+ Seed VCs Backing Startups in the US & Europe
+✅ The Best 23 Accelerators Worldwide for Rapid Growth (and How to Get Into Them)
+✅ The Ultimate Startup & Venture Capital Notion Guide : Knowledge Base & Resources
+✅ AI Co-Pilots Every Startup & VC Needs in Their Toolbox
+31
+Share
+Previous Next
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 91
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":3556,"paragraph_count":55,"sentence_count":11,"boilerplate_hits":0,"symbol_ratio":0,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   This free GitHub repository of open-source AI agents is one of the most hands-on resources out there. It's not theory or hype. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=capital_startup
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   The Ultimate Open-Source AI Agent Directory Run, build, and break real AI agents — directly from GitHub Ruben Dominguez Jul 22, 2025 31 Share If you want to truly understand how AI agents work, don’t just read about them.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   The VC Corner The VC Corner is where founders stay ahead — with sharp news, fundraising strategies, battle-tested playbooks, and the tools to grow.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   By Ruben Dominguez Ibar This free GitHub repository of open-source AI agents is one of the most hands-on resources out there.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   It’s not theory or hype.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   It’s working code, practical applications, and real-world AI behaviors.
+
+## business_elements
+
+- companies: keyword search, Anysearch, GitHub
+- products: Agent, agents, agent, Agents, MCP
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全
+- numbers: 22, 2025, 31, 50, 000, 2, 500, 300
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: The Ultimate Open-Source AI Agent Directory Run, build, and break real AI agents — directly from GitHub Ruben Dominguez Jul 22, 2025 31 Share If you want to truly understand how AI agents work, don’t just read about them. / The VC Corner The VC Corner is where founders stay ahead — with sharp news, fundraising strategies, battle-tested playbooks, and the tools to grow. / By Ruben Dominguez Ibar This free GitHub repository of open-source AI agents is one of the most hands-on resources out there.
+- case_details: This free GitHub repository of open-source AI agents is one of the most hands-on resources out there. It's not theory or hype. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=capital_startup
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+This free GitHub repository of open-source AI agents is one of the most hands-on resources out there. It's not theory or hype. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,5 +1,5 @@
 ---
-id: SIG-20260619-A15
+id: SIG-20260619-A13
 type: signal_card
 signal_type: case
 title: "汇丰银行与Google Cloud扩大AI银行合作"
@@ -9,8 +9,8 @@ source_title: "汇丰银行与Google Cloud扩大AI银行合作"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-19T06:41:40.175Z
-updated_at: 2026-06-19T06:41:40.175Z
+created_at: 2026-06-19T07:43:58.263Z
+updated_at: 2026-06-19T07:43:58.263Z
 
 raw_refs: ["R-027"]
 pool_refs: ["P-025"]
@@ -19,7 +19,7 @@ primary_raw:
   raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-027-汇丰银行与google-cloud扩大ai银行合作.md"
   raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-027-汇丰银行与google-cloud扩大ai银行合作.json"
   source_url: "https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership"
-  full_text_hash: "a74f0d8a718a237c"
+  full_text_hash: "6b2f7b4d234e4a75"
   source_level: B
   extraction_quality: high
   has_full_text: true

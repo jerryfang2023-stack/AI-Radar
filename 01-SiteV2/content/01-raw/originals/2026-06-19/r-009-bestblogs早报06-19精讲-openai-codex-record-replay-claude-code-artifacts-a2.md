@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T23:23:10.000Z"
-collected_at: 2026-06-19T06:41:39.449Z
+collected_at: 2026-06-19T07:43:57.418Z
 language: mixed
-full_text_hash: 21c47d22286d1cfb
+full_text_hash: 2acdb5f79ca66fdb
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-009-bestblogs早报06-19精讲-openai-codex-record-replay-claude-code-artifacts-a2.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-009-bestblogs早报06-19精讲-openai-codex-record-replay-claude-code-artifacts-a2.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"21c47d22286d1cfb","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2acdb5f79ca66fdb","missing":[]}
 source_volatility: high
 community_name: "X：洪明 (@hongming731)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"BestBlogs早报06-19精讲：OpenAI Codex Record & Replay / Claude Code Artifacts / A2A协议满周岁","discovery_summary":"OpenAI为Codex上线Record & Replay，演示一次完整操作即可复用浏览器工作流；Claude Code支持Artifacts渲染，会话实时生成可视化页面并自动更新，Beta面向Team/Enterprise组织；Google A2A协议满周岁，Python/Go SDK已达1.0 GA，以FoldRun为例展示智能体协作。其他动态：MosaicLeaks基准测试揭示深度研究智能体隐私泄露风险；SGLang-JAX在TPU v7x上优化Ling-2.6-1T MoE模型，延迟降低53%。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2067749994904572321","discovered_at":"2026-06-19T06:38:20.347Z","rank_on_page":84,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"BestBlogs早报06-19精讲：OpenAI Codex Record & Replay / Claude Code Artifacts / A2A协议满周岁","discovery_summary":"OpenAI为Codex上线Record & Replay，演示一次完整操作即可复用浏览器工作流；Claude Code支持Artifacts渲染，会话实时生成可视化页面并自动更新，Beta面向Team/Enterprise组织；Google A2A协议满周岁，Python/Go SDK已达1.0 GA，以FoldRun为例展示智能体协作。其他动态：MosaicLeaks基准测试揭示深度研究智能体隐私泄露风险；SGLang-JAX在TPU v7x上优化Ling-2.6-1T MoE模型，延迟降低53%。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2067749994904572321","discovered_at":"2026-06-19T07:39:27.746Z","rank_on_page":89,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 76451d93c6807f61
-content_hash: 21c47d22286d1cfb
+content_hash: 2acdb5f79ca66fdb
 semantic_hash: 17a7a179b88952d3
 duplicate_of: ""
 first_seen_at: "2026-06-18T23:23:10.000Z"
-last_seen_at: 2026-06-19T06:41:39.449Z
+last_seen_at: 2026-06-19T07:43:57.418Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
@@ -131,7 +131,7 @@ BestBlogs 是 AI 驱动的私人阅读助手，帮助你建立稳定、可信、
 在线阅读： bestblogs.dev/explore/brief/…
 ginobefun
 @hongming731
-7h
+8h
 Article
 BestBlogs 早报 · 06-19｜Codex 录制回放工作流、Claude Code 会话变 Artifacts 页面、A2A 协议满周岁
 在线阅读本期早报
@@ -139,7 +139,7 @@ BestBlogs 早报 · 06-19｜Codex 录制回放工作流、Claude Code 会话变 
 Agent 学习方式正在从"写提示词"转向"看一遍就会"：OpenAI 让 Codex 通过一次录屏掌握完整工作流，Claude Code 把会话过程实时变成可分享的 Artifacts 页面，Google 的 A2A...
 OpenAI Codex Record & Replay：演示一次，即可复用浏览器工作流 | BestBlogs.dev
 From bestblogs.dev
-11:23 PM · Jun 18, 2026 523 Views
+11:23 PM · Jun 18, 2026 551 Views
 
 ## full_text
 
@@ -196,7 +196,7 @@ BestBlogs 是 AI 驱动的私人阅读助手，帮助你建立稳定、可信、
 在线阅读： bestblogs.dev/explore/brief/…
 ginobefun
 @hongming731
-7h
+8h
 Article
 BestBlogs 早报 · 06-19｜Codex 录制回放工作流、Claude Code 会话变 Artifacts 页面、A2A 协议满周岁
 在线阅读本期早报
@@ -204,7 +204,7 @@ BestBlogs 早报 · 06-19｜Codex 录制回放工作流、Claude Code 会话变 
 Agent 学习方式正在从"写提示词"转向"看一遍就会"：OpenAI 让 Codex 通过一次录屏掌握完整工作流，Claude Code 把会话过程实时变成可分享的 Artifacts 页面，Google 的 A2A...
 OpenAI Codex Record & Replay：演示一次，即可复用浏览器工作流 | BestBlogs.dev
 From bestblogs.dev
-11:23 PM · Jun 18, 2026 523 Views
+11:23 PM · Jun 18, 2026 551 Views
 
 ## extraction_diagnostics
 
@@ -306,7 +306,7 @@ From bestblogs.dev
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"BestBlogs早报06-19精讲：OpenAI Codex Record & Replay / Claude Code Artifacts / A2A协议满周岁","discovery_summary":"OpenAI为Codex上线Record & Replay，演示一次完整操作即可复用浏览器工作流；Claude Code支持Artifacts渲染，会话实时生成可视化页面并自动更新，Beta面向Team/Enterprise组织；Google A2A协议满周岁，Python/Go SDK已达1.0 GA，以FoldRun为例展示智能体协作。其他动态：MosaicLeaks基准测试揭示深度研究智能体隐私泄露风险；SGLang-JAX在TPU v7x上优化Ling-2.6-1T MoE模型，延迟降低53%。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2067749994904572321","discovered_at":"2026-06-19T06:38:20.347Z","rank_on_page":84,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"BestBlogs早报06-19精讲：OpenAI Codex Record & Replay / Claude Code Artifacts / A2A协议满周岁","discovery_summary":"OpenAI为Codex上线Record & Replay，演示一次完整操作即可复用浏览器工作流；Claude Code支持Artifacts渲染，会话实时生成可视化页面并自动更新，Beta面向Team/Enterprise组织；Google A2A协议满周岁，Python/Go SDK已达1.0 GA，以FoldRun为例展示智能体协作。其他动态：MosaicLeaks基准测试揭示深度研究智能体隐私泄露风险；SGLang-JAX在TPU v7x上优化Ling-2.6-1T MoE模型，延迟降低53%。","source_name":"X：洪明 (@hongming731)","origin_url":"https://x.com/hongming731/status/2067749994904572321","discovered_at":"2026-06-19T07:39:27.746Z","rank_on_page":89,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

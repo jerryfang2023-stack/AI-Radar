@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T13:06:44.000Z"
-collected_at: 2026-06-19T06:41:39.494Z
+collected_at: 2026-06-19T07:43:57.468Z
 language: mixed
-full_text_hash: fe36762e6e429ab6
+full_text_hash: 8495acb4487526e0
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-025-google-deepmind-发布-ai-控制路线图.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-025-google-deepmind-发布-ai-控制路线图.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fe36762e6e429ab6","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8495acb4487526e0","missing":[]}
 source_volatility: high
 community_name: "X：Google DeepMind (@GoogleDeepMind)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Google DeepMind 发布 AI 控制路线图","discovery_summary":"我们不做AI总会按我们意图行事的假设，而是问：如果它不这样做呢？ 因此我们制定了AI控制路线图：一个用于构建和管理我们在Google内部部署的先进AI的框架。🧵","source_name":"X：Google DeepMind (@GoogleDeepMind)","origin_url":"https://x.com/GoogleDeepMind/status/2067594863785173257","discovered_at":"2026-06-19T06:38:20.383Z","rank_on_page":250,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Google DeepMind 发布 AI 控制路线图","discovery_summary":"我们不做AI总会按我们意图行事的假设，而是问：如果它不这样做呢？ 因此我们制定了AI控制路线图：一个用于构建和管理我们在Google内部部署的先进AI的框架。🧵","source_name":"X：Google DeepMind (@GoogleDeepMind)","origin_url":"https://x.com/GoogleDeepMind/status/2067594863785173257","discovered_at":"2026-06-19T07:39:27.787Z","rank_on_page":255,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 4ccaa88cf9a0ab83
-content_hash: fe36762e6e429ab6
+content_hash: 8495acb4487526e0
 semantic_hash: 40526fbf301d4e69
 duplicate_of: ""
 first_seen_at: "2026-06-18T13:06:44.000Z"
-last_seen_at: 2026-06-19T06:41:39.494Z
+last_seen_at: 2026-06-19T07:43:57.468Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -65,10 +65,10 @@ change_action_detected: true
 evidence_eligibility: eligible
 evidence_block_reason: ""
 guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
-business_elements: {"companies":["X","Google DeepMind (@GoogleDeepMind)","Google"],"products":[],"people":[],"industries":[],"roles":[],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["4","1","06","18","2026","44.9","0.25","2"],"quotes":[]}
+business_elements: {"companies":["X","Google DeepMind (@GoogleDeepMind)","Google"],"products":[],"people":[],"industries":[],"roles":[],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["4","1","06","18","2026","45.8","0.25","2"],"quotes":[]}
 evidence_seed: {"company_actions":["Google DeepMind on X: \"Instead of assuming AI will always do what we intend, we ask: what if it doesn't?","That’s why we’ve developed our AI Control Roadmap: a framework for building and managing the advanced AI we deploy within Google.","co/mCBxmTyCp4\" / X Post Log in Sign up Post Google DeepMind @GoogleDeepMind Instead of assuming AI will always do what we intend, we ask: what if it doesn't?"],"case_details":["我们不做AI总会按我们意图行事的假设，而是问：如果它不这样做呢？ 因此我们制定了AI控制路线图：一个用于构建和管理我们在Google内部部署的先进AI的框架。🧵"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
 missing_information: []
-key_excerpts: [{"type":"case_detail","text":"我们不做AI总会按我们意图行事的假设，而是问：如果它不这样做呢？ 因此我们制定了AI控制路线图：一个用于构建和管理我们在Google内部部署的先进AI的框架。🧵","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Google DeepMind on X: \"Instead of assuming AI will always do what we intend, we ask: what if it doesn't?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"That’s why we’ve developed our AI Control Roadmap: a framework for building and managing the advanced AI we deploy within Google.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"co/mCBxmTyCp4\" / X Post Log in Sign up Post Google DeepMind @GoogleDeepMind Instead of assuming AI will always do what we intend, we ask: what if it doesn't?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"🧵 GIF 1:06 PM · Jun 18, 2026 44.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+key_excerpts: [{"type":"case_detail","text":"我们不做AI总会按我们意图行事的假设，而是问：如果它不这样做呢？ 因此我们制定了AI控制路线图：一个用于构建和管理我们在Google内部部署的先进AI的框架。🧵","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Google DeepMind on X: \"Instead of assuming AI will always do what we intend, we ask: what if it doesn't?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"That’s why we’ve developed our AI Control Roadmap: a framework for building and managing the advanced AI we deploy within Google.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"co/mCBxmTyCp4\" / X Post Log in Sign up Post Google DeepMind @GoogleDeepMind Instead of assuming AI will always do what we intend, we ask: what if it doesn't?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"🧵 GIF 1:06 PM · Jun 18, 2026 45.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
 theme: developer-ecosystem-signal
 keyword_group: developer-ecosystem-signal
 copyright_note: local research archive only
@@ -88,12 +88,12 @@ Google DeepMind
 Instead of assuming AI will always do what we intend, we ask: what if it doesn't?
 That’s why we’ve developed our AI Control Roadmap: a framework for building and managing the advanced AI we deploy within Google. 🧵
 GIF
-1:06 PM · Jun 18, 2026 44.9K Views
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 48
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 9 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 59
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 6 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 462
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 2 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 128
-Read 48 replies
+1:06 PM · Jun 18, 2026 45.8K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 51
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 61
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 7 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 470
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 2 9 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 129
+Read 51 replies
 Don't miss what's happening
 People on X are the first to know.
 Log in Sign up
@@ -110,12 +110,12 @@ Google DeepMind
 Instead of assuming AI will always do what we intend, we ask: what if it doesn't?
 That’s why we’ve developed our AI Control Roadmap: a framework for building and managing the advanced AI we deploy within Google. 🧵
 GIF
-1:06 PM · Jun 18, 2026 44.9K Views
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 48
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 9 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 59
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 6 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 462
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 2 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 128
-Read 48 replies
+1:06 PM · Jun 18, 2026 45.8K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 51
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 61
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 7 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 470
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 2 9 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 129
+Read 51 replies
 Don't miss what's happening
 People on X are the first to know.
 Log in Sign up
@@ -147,7 +147,7 @@ Log in Sign up
    co/mCBxmTyCp4" / X Post Log in Sign up Post Google DeepMind @GoogleDeepMind Instead of assuming AI will always do what we intend, we ask: what if it doesn't?
 
 5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
-   🧵 GIF 1:06 PM · Jun 18, 2026 44.
+   🧵 GIF 1:06 PM · Jun 18, 2026 45.
 
 ## business_elements
 
@@ -159,7 +159,7 @@ Log in Sign up
 - workflows: 部署 / 集成交付
 - business_actions: 发布 / 推出, 部署 / 上线
 - affected_departments: IT / 安全
-- numbers: 4, 1, 06, 18, 2026, 44.9, 0.25, 2
+- numbers: 4, 1, 06, 18, 2026, 45.8, 0.25, 2
 - quotes: 暂无公开信息
 
 ## evidence_seed
@@ -216,7 +216,7 @@ Log in Sign up
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Google DeepMind 发布 AI 控制路线图","discovery_summary":"我们不做AI总会按我们意图行事的假设，而是问：如果它不这样做呢？ 因此我们制定了AI控制路线图：一个用于构建和管理我们在Google内部部署的先进AI的框架。🧵","source_name":"X：Google DeepMind (@GoogleDeepMind)","origin_url":"https://x.com/GoogleDeepMind/status/2067594863785173257","discovered_at":"2026-06-19T06:38:20.383Z","rank_on_page":250,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Google DeepMind 发布 AI 控制路线图","discovery_summary":"我们不做AI总会按我们意图行事的假设，而是问：如果它不这样做呢？ 因此我们制定了AI控制路线图：一个用于构建和管理我们在Google内部部署的先进AI的框架。🧵","source_name":"X：Google DeepMind (@GoogleDeepMind)","origin_url":"https://x.com/GoogleDeepMind/status/2067594863785173257","discovered_at":"2026-06-19T07:39:27.787Z","rank_on_page":255,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

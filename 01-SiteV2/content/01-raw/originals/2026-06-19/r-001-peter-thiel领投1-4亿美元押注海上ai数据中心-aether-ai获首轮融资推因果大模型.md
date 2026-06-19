@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-19T02:09:30.000Z"
-collected_at: 2026-06-19T06:41:39.420Z
+collected_at: 2026-06-19T07:43:57.387Z
 language: mixed
-full_text_hash: f981b09d531b2368
+full_text_hash: e41bc0878803ebb0
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-001-peter-thiel领投1-4亿美元押注海上ai数据中心-aether-ai获首轮融资推因果大模型.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-001-peter-thiel领投1-4亿美元押注海上ai数据中心-aether-ai获首轮融资推因果大模型.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f981b09d531b2368","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e41bc0878803ebb0","missing":[]}
 source_volatility: high
 community_name: "X：阿易 AI Notes (@AYi_AInotes)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Peter Thiel领投1.4亿美元押注海上AI数据中心，Aether AI获首轮融资推因果大模型","discovery_summary":"Peter Thiel领投1.4亿美元B轮，押注完全离网的海上AI数据中心。第三代浮动节点Ocean-3单节点1MW，靠海浪发电、海水冷却、低轨卫星回传，无需征地接电网。首台试点预计今年8月在北太平洋下水，规模化商用至少等到2027年。同时，Aether AI官宣首轮融资，UCSD黄碧薇教授推出因果AI，将AI分为相关性小模型、因果小模型、LLM、因果大模型四代，旨在从视频中自动提取物理规律。","source_name":"X：阿易 AI Notes (@AYi_AInotes)","origin_url":"https://x.com/AYi_AInotes/status/2067791854549033413","discovered_at":"2026-06-19T06:38:20.338Z","rank_on_page":51,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Peter Thiel领投1.4亿美元押注海上AI数据中心，Aether AI获首轮融资推因果大模型","discovery_summary":"Peter Thiel领投1.4亿美元B轮，押注完全离网的海上AI数据中心。第三代浮动节点Ocean-3单节点1MW，靠海浪发电、海水冷却、低轨卫星回传，无需征地接电网。首台试点预计今年8月在北太平洋下水，规模化商用至少等到2027年。同时，Aether AI官宣首轮融资，UCSD黄碧薇教授推出因果AI，将AI分为相关性小模型、因果小模型、LLM、因果大模型四代，旨在从视频中自动提取物理规律。","source_name":"X：阿易 AI Notes (@AYi_AInotes)","origin_url":"https://x.com/AYi_AInotes/status/2067791854549033413","discovered_at":"2026-06-19T07:39:27.737Z","rank_on_page":56,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 8d6dea4f02dc5e72
-content_hash: f981b09d531b2368
+content_hash: e41bc0878803ebb0
 semantic_hash: 298d5a0527bd3e61
 duplicate_of: ""
 first_seen_at: "2026-06-19T02:09:30.000Z"
-last_seen_at: 2026-06-19T06:41:39.420Z
+last_seen_at: 2026-06-19T07:43:57.387Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -109,11 +109,11 @@ Jun 18
 一颗鸡蛋打进热油锅,它怎么凝固、怎么摊开、边缘怎么变焦,
 没有任何一个公式能描述清楚,这种例子在物理世界里多到数不过来。
 而这恰恰是当下通用 AI 范式的天花板,视频生成、VLA 学的都是像素层面的统计相关性, Show more
-2:09 AM · Jun 19, 2026 4.1K Views
+2:09 AM · Jun 19, 2026 4.8K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 15
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 17
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 22
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 20
 Read 4 replies
 
 ## full_text
@@ -149,11 +149,11 @@ Jun 18
 一颗鸡蛋打进热油锅,它怎么凝固、怎么摊开、边缘怎么变焦,
 没有任何一个公式能描述清楚,这种例子在物理世界里多到数不过来。
 而这恰恰是当下通用 AI 范式的天花板,视频生成、VLA 学的都是像素层面的统计相关性, Show more
-2:09 AM · Jun 19, 2026 4.1K Views
+2:09 AM · Jun 19, 2026 4.8K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 15
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 17
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 22
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 20
 Read 4 replies
 
 ## extraction_diagnostics
@@ -257,7 +257,7 @@ Read 4 replies
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Peter Thiel领投1.4亿美元押注海上AI数据中心，Aether AI获首轮融资推因果大模型","discovery_summary":"Peter Thiel领投1.4亿美元B轮，押注完全离网的海上AI数据中心。第三代浮动节点Ocean-3单节点1MW，靠海浪发电、海水冷却、低轨卫星回传，无需征地接电网。首台试点预计今年8月在北太平洋下水，规模化商用至少等到2027年。同时，Aether AI官宣首轮融资，UCSD黄碧薇教授推出因果AI，将AI分为相关性小模型、因果小模型、LLM、因果大模型四代，旨在从视频中自动提取物理规律。","source_name":"X：阿易 AI Notes (@AYi_AInotes)","origin_url":"https://x.com/AYi_AInotes/status/2067791854549033413","discovered_at":"2026-06-19T06:38:20.338Z","rank_on_page":51,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Peter Thiel领投1.4亿美元押注海上AI数据中心，Aether AI获首轮融资推因果大模型","discovery_summary":"Peter Thiel领投1.4亿美元B轮，押注完全离网的海上AI数据中心。第三代浮动节点Ocean-3单节点1MW，靠海浪发电、海水冷却、低轨卫星回传，无需征地接电网。首台试点预计今年8月在北太平洋下水，规模化商用至少等到2027年。同时，Aether AI官宣首轮融资，UCSD黄碧薇教授推出因果AI，将AI分为相关性小模型、因果小模型、LLM、因果大模型四代，旨在从视频中自动提取物理规律。","source_name":"X：阿易 AI Notes (@AYi_AInotes)","origin_url":"https://x.com/AYi_AInotes/status/2067791854549033413","discovered_at":"2026-06-19T07:39:27.737Z","rank_on_page":56,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

@@ -1,0 +1,228 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-099
+title: "Elon Musk称赞Anthropic实用智能策略"
+original_url: "https://x.com/kimmonismus/status/2067688880137007274"
+canonical_url: "https://x.com/kimmonismus/status/2067688880137007274"
+source_name: "X：Kim (@kimmonismus)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-18T19:20:19.000Z"
+collected_at: 2026-06-19T07:43:57.872Z
+language: mixed
+full_text_hash: 01f38b95915c24df
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-099-elon-musk称赞anthropic实用智能策略.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-099-elon-musk称赞anthropic实用智能策略.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: medium
+extraction_method: "main"
+readability_score: 57
+extractor_diagnostics: {"readability_score":57,"text_length":2370,"paragraph_count":8,"sentence_count":3,"boilerplate_hits":1,"symbol_ratio":0.0287,"method":"main"}
+has_full_text: true
+content_length: 2370
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"01f38b95915c24df","missing":[]}
+source_volatility: high
+community_name: "X：Kim (@kimmonismus)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Elon Musk称赞Anthropic实用智能策略","discovery_summary":"Elon Musk表示，Anthropic在基准测试上表现不错，但按真正实用性衡量，甚至Q1都令人印象深刻；其专注于最大化有用智能，这不在基准测试中体现，但体现在收入中。Kim感叹这不在他的预期之内。","source_name":"X：Kim (@kimmonismus)","origin_url":"https://x.com/kimmonismus/status/2067688880137007274","discovered_at":"2026-06-19T07:39:27.759Z","rank_on_page":134,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: a4084ae9b64f912e
+content_hash: 01f38b95915c24df
+semantic_hash: 9829133678eba063
+duplicate_of: ""
+first_seen_at: "2026-06-18T19:20:19.000Z"
+last_seen_at: 2026-06-19T07:43:57.872Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["X","Kim (@kimmonismus)","Anthropic"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["1","13","7","20","18","2026","61.1","0.25"],"quotes":[]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post Chubby♨️ @kimmonismus Elon Musk, who gives laudatory speeches on Anthropic, wasn't on my bingo card.","Elon Musk @elonmusk 13h Replying to @jietang and @teortaxesTex On benchmarks, yes, but as measured by true usefulness even Q1 would be very impressive.","Anthropic has rightly focused on maximizing useful intelligence, which does not show up in benchmarks, but definitely shows up in revenue."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"opinion","text":"Elon Musk表示，Anthropic在基准测试上表现不错，但按真正实用性衡量，甚至Q1都令人印象深刻；其专注于最大化有用智能，这不在基准测试中体现，但体现在收入中。Kim感叹这不在他的预期之内。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Post Log in Sign up Post Chubby♨️ @kimmonismus Elon Musk, who gives laudatory speeches on Anthropic, wasn't on my bingo card.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Elon Musk @elonmusk 13h Replying to @jietang and @teortaxesTex On benchmarks, yes, but as measured by true usefulness even Q1 would be very impressive.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Anthropic has rightly focused on maximizing useful intelligence, which does not show up in benchmarks, but definitely shows up in revenue.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"7:20 PM · Jun 18, 2026 61.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"1K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Elon Musk称赞Anthropic实用智能策略
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Chubby♨️
+@kimmonismus
+Elon Musk, who gives laudatory speeches on Anthropic, wasn't on my bingo card.
+Elon Musk
+@elonmusk
+13h
+Replying to @jietang and @teortaxesTex On benchmarks, yes, but as measured by true usefulness even Q1 would be very impressive.
+Anthropic has rightly focused on maximizing useful intelligence, which does not show up in benchmarks, but definitely shows up in revenue.
+7:20 PM · Jun 18, 2026 61.1K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 38
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 18
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 9 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 690
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 96
+Read 38 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Chubby♨️
+@kimmonismus
+Elon Musk, who gives laudatory speeches on Anthropic, wasn't on my bingo card.
+Elon Musk
+@elonmusk
+13h
+Replying to @jietang and @teortaxesTex On benchmarks, yes, but as measured by true usefulness even Q1 would be very impressive.
+Anthropic has rightly focused on maximizing useful intelligence, which does not show up in benchmarks, but definitely shows up in revenue.
+7:20 PM · Jun 18, 2026 61.1K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 38
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 18
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 9 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 690
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 9 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 96
+Read 38 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 57
+- fetch_status: fetched-readable-text-main
+- extraction_quality: medium
+- diagnostics: {"readability_score":57,"text_length":2370,"paragraph_count":8,"sentence_count":3,"boilerplate_hits":1,"symbol_ratio":0.0287,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **opinion**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   Elon Musk表示，Anthropic在基准测试上表现不错，但按真正实用性衡量，甚至Q1都令人印象深刻；其专注于最大化有用智能，这不在基准测试中体现，但体现在收入中。Kim感叹这不在他的预期之内。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Post Log in Sign up Post Chubby♨️ @kimmonismus Elon Musk, who gives laudatory speeches on Anthropic, wasn't on my bingo card.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Elon Musk @elonmusk 13h Replying to @jietang and @teortaxesTex On benchmarks, yes, but as measured by true usefulness even Q1 would be very impressive.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Anthropic has rightly focused on maximizing useful intelligence, which does not show up in benchmarks, but definitely shows up in revenue.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   7:20 PM · Jun 18, 2026 61.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   1K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.
+
+## business_elements
+
+- companies: X, Kim (@kimmonismus), Anthropic
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 1, 13, 7, 20, 18, 2026, 61.1, 0.25
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post Chubby♨️ @kimmonismus Elon Musk, who gives laudatory speeches on Anthropic, wasn't on my bingo card. / Elon Musk @elonmusk 13h Replying to @jietang and @teortaxesTex On benchmarks, yes, but as measured by true usefulness even Q1 would be very impressive. / Anthropic has rightly focused on maximizing useful intelligence, which does not show up in benchmarks, but definitely shows up in revenue.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Kim (@kimmonismus)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Elon Musk称赞Anthropic实用智能策略","discovery_summary":"Elon Musk表示，Anthropic在基准测试上表现不错，但按真正实用性衡量，甚至Q1都令人印象深刻；其专注于最大化有用智能，这不在基准测试中体现，但体现在收入中。Kim感叹这不在他的预期之内。","source_name":"X：Kim (@kimmonismus)","origin_url":"https://x.com/kimmonismus/status/2067688880137007274","discovered_at":"2026-06-19T07:39:27.759Z","rank_on_page":134,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Elon Musk表示，Anthropic在基准测试上表现不错，但按真正实用性衡量，甚至Q1都令人印象深刻；其专注于最大化有用智能，这不在基准测试中体现，但体现在收入中。Kim感叹这不在他的预期之内。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

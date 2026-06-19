@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T18:07:01.000Z"
-collected_at: 2026-06-19T06:41:39.483Z
+collected_at: 2026-06-19T07:43:57.456Z
 language: mixed
 full_text_hash: e334239351977aef
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-021-google-deepmind-发布-ai-控制路线图-将-ai-智能体视为内部威胁-基于行为逐步授权.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: supporting_evidence
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Google Deepmind 发布 AI 控制路线图：将 AI 智能体视为内部威胁，基于行为逐步授权","discovery_summary":"Google Deepmind 发布\"AI 控制路线图\"，将内部 AI 智能体视为潜在内部威胁，类比驾驶教练的双重控制，基于已验证行为逐步授予权限。框架融合 MITRE ATT&CK 网络安全框架，通过可信 AI 监督系统监控活跃智能体推理与行动，预防系统在危害发生前阻断。在 100 万个编码任务测试中，发现大多数问题源于过度执行用户指令而非恶意意图。监控已作为 Gemini Spark 智能体的实时监控运行，可捕捉意外数据删除。安全措施划分为四个检测级别（D1-D4）和三个响应级别（R1-R3）。Deepmind 另发布政策论文《AI 智能体安全三层架构》，覆盖单体、多智能体及生态系统，警告全球安全标准窗口期正在关闭。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/google-deepmind-treats-its-own-ai-agents-like-rogue-employees-with-office-keys","discovered_at":"2026-06-19T06:38:20.363Z","rank_on_page":155,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Google Deepmind 发布 AI 控制路线图：将 AI 智能体视为内部威胁，基于行为逐步授权","discovery_summary":"Google Deepmind 发布\"AI 控制路线图\"，将内部 AI 智能体视为潜在内部威胁，类比驾驶教练的双重控制，基于已验证行为逐步授予权限。框架融合 MITRE ATT&CK 网络安全框架，通过可信 AI 监督系统监控活跃智能体推理与行动，预防系统在危害发生前阻断。在 100 万个编码任务测试中，发现大多数问题源于过度执行用户指令而非恶意意图。监控已作为 Gemini Spark 智能体的实时监控运行，可捕捉意外数据删除。安全措施划分为四个检测级别（D1-D4）和三个响应级别（R1-R3）。Deepmind 另发布政策论文《AI 智能体安全三层架构》，覆盖单体、多智能体及生态系统，警告全球安全标准窗口期正在关闭。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/google-deepmind-treats-its-own-ai-agents-like-rogue-employees-with-office-keys","discovered_at":"2026-06-19T07:39:27.765Z","rank_on_page":160,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: e334239351977aef
 semantic_hash: 2ec497bbb928f1f4
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-18T18:07:01.000Z"
-last_seen_at: 2026-06-19T06:41:39.483Z
+last_seen_at: 2026-06-19T07:43:57.456Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":true,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -259,7 +259,7 @@ Insert
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Google Deepmind 发布 AI 控制路线图：将 AI 智能体视为内部威胁，基于行为逐步授权","discovery_summary":"Google Deepmind 发布\"AI 控制路线图\"，将内部 AI 智能体视为潜在内部威胁，类比驾驶教练的双重控制，基于已验证行为逐步授予权限。框架融合 MITRE ATT&CK 网络安全框架，通过可信 AI 监督系统监控活跃智能体推理与行动，预防系统在危害发生前阻断。在 100 万个编码任务测试中，发现大多数问题源于过度执行用户指令而非恶意意图。监控已作为 Gemini Spark 智能体的实时监控运行，可捕捉意外数据删除。安全措施划分为四个检测级别（D1-D4）和三个响应级别（R1-R3）。Deepmind 另发布政策论文《AI 智能体安全三层架构》，覆盖单体、多智能体及生态系统，警告全球安全标准窗口期正在关闭。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/google-deepmind-treats-its-own-ai-agents-like-rogue-employees-with-office-keys","discovered_at":"2026-06-19T06:38:20.363Z","rank_on_page":155,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Google Deepmind 发布 AI 控制路线图：将 AI 智能体视为内部威胁，基于行为逐步授权","discovery_summary":"Google Deepmind 发布\"AI 控制路线图\"，将内部 AI 智能体视为潜在内部威胁，类比驾驶教练的双重控制，基于已验证行为逐步授予权限。框架融合 MITRE ATT&CK 网络安全框架，通过可信 AI 监督系统监控活跃智能体推理与行动，预防系统在危害发生前阻断。在 100 万个编码任务测试中，发现大多数问题源于过度执行用户指令而非恶意意图。监控已作为 Gemini Spark 智能体的实时监控运行，可捕捉意外数据删除。安全措施划分为四个检测级别（D1-D4）和三个响应级别（R1-R3）。Deepmind 另发布政策论文《AI 智能体安全三层架构》，覆盖单体、多智能体及生态系统，警告全球安全标准窗口期正在关闭。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/google-deepmind-treats-its-own-ai-agents-like-rogue-employees-with-office-keys","discovered_at":"2026-06-19T07:39:27.765Z","rank_on_page":160,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

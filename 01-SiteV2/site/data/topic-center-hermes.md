@@ -64,7 +64,7 @@
 - fact_base / business_signal: 汇丰银行与Google Cloud扩大AI银行合作
   - source: Artificial Intelligence News（RSS）
   - url: https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260619-A15
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260619-A13
   - note: 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021…
 - community_lead / community_intelligence: 公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘
   - source: 生财有术
@@ -131,7 +131,7 @@
 - fact_base / business_signal: 汇丰银行与Google Cloud扩大AI银行合作
   - source: Artificial Intelligence News（RSS）
   - url: https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership
-  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260619-A15
+  - local: 01-SiteV2/site/data/v3-data-observation-desk.json#id=SIG-20260619-A13
   - note: 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021…
 - viewpoint_lead / first_line_viewpoint: Lynx的工作原理：技术演练
   - source: Tigera Blog (Calico / AI Security)

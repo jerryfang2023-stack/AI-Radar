@@ -20,7 +20,7 @@ search_path: "a_media_gdelt"
 search_path_label: "A 级媒体 / GDELT 路径"
 author: ""
 published_at: ""
-collected_at: 2026-06-19T06:41:39.891Z
+collected_at: 2026-06-19T07:43:57.971Z
 language: mixed
 full_text_hash: 98d80e99c01dfdab
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-146-ai-agents-when-software-starts-running-the-work-studioalpha.md"
@@ -55,8 +55,8 @@ url_hash: 308fe3f931065e48
 content_hash: 98d80e99c01dfdab
 semantic_hash: 1a1f82ce6926b667
 duplicate_of: ""
-first_seen_at: "2026-06-19T06:41:39.891Z"
-last_seen_at: 2026-06-19T06:41:39.891Z
+first_seen_at: "2026-06-19T07:43:57.971Z"
+last_seen_at: 2026-06-19T07:43:57.971Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}

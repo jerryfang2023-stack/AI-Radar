@@ -9,8 +9,8 @@ source_title: "Perplexity 推出自改进记忆系统 Brain，构建智能体工
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-19T06:41:40.175Z
-updated_at: 2026-06-19T06:41:40.175Z
+created_at: 2026-06-19T07:43:58.263Z
+updated_at: 2026-06-19T07:43:58.263Z
 
 raw_refs: ["R-016"]
 pool_refs: ["P-015"]

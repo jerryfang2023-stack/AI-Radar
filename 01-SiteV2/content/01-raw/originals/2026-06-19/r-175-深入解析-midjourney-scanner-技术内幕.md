@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-19T06:41:39.926Z
+collected_at: 2026-06-19T07:43:58.007Z
 language: mixed
 full_text_hash: f60f6a6cfe524917
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-175-深入解析-midjourney-scanner-技术内幕.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"深入解析 Midjourney Scanner 技术内幕","discovery_summary":"我们全新“Midjourney Scanner”的技术深潜。","source_name":"X：Midjourney (@midjourney)","origin_url":"","discovered_at":"2026-06-19T06:38:17.990Z","rank_on_page":11,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"深入解析 Midjourney Scanner 技术内幕","discovery_summary":"我们全新“Midjourney Scanner”的技术深潜。","source_name":"X：Midjourney (@midjourney)","origin_url":"","discovered_at":"2026-06-19T07:39:26.650Z","rank_on_page":11,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: f60f6a6cfe524917
 semantic_hash: 9b7e10842a89f813
 duplicate_of: ""
-first_seen_at: "2026-06-19T06:41:39.926Z"
-last_seen_at: 2026-06-19T06:41:39.926Z
+first_seen_at: "2026-06-19T07:43:58.007Z"
+last_seen_at: 2026-06-19T07:43:58.007Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -173,7 +173,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"深入解析 Midjourney Scanner 技术内幕","discovery_summary":"我们全新“Midjourney Scanner”的技术深潜。","source_name":"X：Midjourney (@midjourney)","origin_url":"","discovered_at":"2026-06-19T06:38:17.990Z","rank_on_page":11,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"深入解析 Midjourney Scanner 技术内幕","discovery_summary":"我们全新“Midjourney Scanner”的技术深潜。","source_name":"X：Midjourney (@midjourney)","origin_url":"","discovered_at":"2026-06-19T07:39:26.650Z","rank_on_page":11,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

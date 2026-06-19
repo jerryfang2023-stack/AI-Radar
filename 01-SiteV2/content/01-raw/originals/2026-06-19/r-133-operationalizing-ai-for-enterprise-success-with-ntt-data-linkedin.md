@@ -1,0 +1,225 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-133
+title: "Operationalizing AI for Enterprise Success with NTT DATA - LinkedIn"
+original_url: "https://www.linkedin.com/posts/bratin-saha-05824b3_paid-program-inside-the-ai-native-operating-activity-7439897234504269826--jG6"
+canonical_url: "https://linkedin.com/posts/bratin-saha-05824b3_paid-program-inside-the-ai-native-operating-activity-7439897234504269826--jG6"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-19T07:43:57.950Z
+language: mixed
+full_text_hash: 18713139d6b0a92d
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-133-operationalizing-ai-for-enterprise-success-with-ntt-data-linkedin.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-133-operationalizing-ai-for-enterprise-success-with-ntt-data-linkedin.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 93
+extractor_diagnostics: {"readability_score":93,"text_length":3751,"paragraph_count":18,"sentence_count":22,"boilerplate_hits":0,"symbol_ratio":0.0005,"method":"json-ld"}
+has_full_text: true
+content_length: 3751
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"18713139d6b0a92d","missing":[]}
+source_volatility: high
+community_name: "keyword search / Anysearch"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 3f3756245ab656ed
+content_hash: 18713139d6b0a92d
+semantic_hash: aa29f5302649708c
+duplicate_of: ""
+first_seen_at: "2026-06-19T07:43:57.950Z"
+last_seen_at: 2026-06-19T07:43:57.950Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["user_feedback_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch"],"products":[],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人"],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["1","2","3","4","8","6"],"quotes":["AI native"]}
+evidence_seed: {"company_actions":["Yutaka Sasaki san and I sat down with the The Wall Street Journal to discuss the question that every enterprise is asking: how do you move from AI experimentation to an AI native operating model?","The primary bottleneck is not technology, rather it is operationalizing AI.","We touched on multiple factors that are required for getting measurable business impact from AI."],"case_details":[],"workflow_changes":["These include: 1) Last mile specialization – when an employee joins a company, they go through new employee orientation and then regular and extensive training to understand how the company operates, the context, the data, the workflows, etc."],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"quote","text":"“AI native” is ultimately an operating model question, not a model question. That distinction is where many organisations will succeed or stall.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Yutaka Sasaki san and I sat down with the The Wall Street Journal to discuss the question that every enterprise is asking: how do you move from AI experimentation to an AI native operating model?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The primary bottleneck is not technology, rather it is operationalizing AI.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"We touched on multiple factors that are required for getting measurable business impact from AI.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"These include: 1) Last mile specialization – when an employee joins a company, they go through new employee orientation and then regular and extensive training to understand how the company operates, the context, the data, the workflows, etc.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Operationalizing AI for Enterprise Success with NTT DATA - LinkedIn
+
+## clean_text
+
+Yutaka Sasaki san and I sat down with the The Wall Street Journal to discuss the question that every enterprise is asking: how do you move from AI experimentation to an AI native operating model?
+Yutaka Sasaki san and I sat down with the The Wall Street Journal to discuss the question that every enterprise is asking: how do you move from AI experimentation to an AI native operating model? The primary bottleneck is not technology, rather it is operationalizing AI. We touched on multiple factors that are required for getting measurable business impact from AI. These include:
+1) Last mile specialization – when an employee joins a company, they go through new employee orientation and then regular and extensive training to understand how the company operates, the context, the data, the workflows, etc. AI needs to be similarly specialized to the client and domain to be most effective.
+2) Governance from day one – while AI is transforming SW, yet SW is an error resilient workflow since no programmer writes perfect code. Most enterprise workflows are not error resilient and so it is important to build in governance to account for AI’s tendency to make errors.
+3) Deep workflow integration and change management – AI is going to change how humans work and understanding the current client workflow and thinking through the change management upfront is important.
+4) Platform approach – AI becomes pervasive only when it can be operationalized in a scalable way. Scalable operationalization requires repeatability, robust building blocks, and a continuous improvement approach that is facilitated through platform based deployment.
+#NTT #NTTDATAGroup #NTTDATAAIVista #EnterpriseAI #AIStrategy #AILeadership #DigitalTransformation #AIGovernance #ai #ml #cloud
+Read the full conversation here: https://lnkd.in/gCWi8u_6
+Paid Program: Inside the AI-Native Operating Model
+Yutaka Sasaki san and I sat down with the The Wall Street Journal to discuss the question that every enterprise is asking: how do you move from AI experimentation to an AI native operating model?
+Yutaka Sasaki san and I sat down with the The Wall Street Journal to discuss the question that every enterprise is asking: how do you move from AI experimentation to an AI native operating model? The primary bottleneck is not technology, rather it is operationalizing AI. We touched on multiple factors that are required for getting measurable business impact from AI. These include:
+1) Last mile specialization – when an employee joins a company, they go through new employee orientation and then regular and extensive training to understand how the company operates, the context, the data, the workflows, etc. AI needs to be similarly specialized to the client and domain to be most effective.
+2) Governance from day one – while AI is transforming SW, yet SW is an error resilient workflow since no programmer writes perfect code. Most enterprise workflows are not error resilient and so it is important to build in governance to account for AI’s tendency to make errors.
+3) Deep workflow integration and change management – AI is going to change how humans work and understanding the current client workflow and thinking through the change management upfront is important.
+4) Platform approach – AI becomes pervasive only when it can be operationalized in a scalable way. Scalable operationalization requires repeatability, robust building blocks, and a continuous improvement approach that is facilitated through platform based deployment.
+#NTT #NTTDATAGroup #NTTDATAAIVista #EnterpriseAI #AIStrategy #AILeadership #DigitalTransformation #AIGovernance #ai #ml #cloud
+Read the full conversation here: https://lnkd.in/gCWi8u_6
+Paid Program: Inside the AI-Native Operating Model
+
+## full_text
+
+Yutaka Sasaki san and I sat down with the The Wall Street Journal to discuss the question that every enterprise is asking: how do you move from AI experimentation to an AI native operating model?
+Yutaka Sasaki san and I sat down with the The Wall Street Journal to discuss the question that every enterprise is asking: how do you move from AI experimentation to an AI native operating model? The primary bottleneck is not technology, rather it is operationalizing AI. We touched on multiple factors that are required for getting measurable business impact from AI. These include:
+1) Last mile specialization – when an employee joins a company, they go through new employee orientation and then regular and extensive training to understand how the company operates, the context, the data, the workflows, etc. AI needs to be similarly specialized to the client and domain to be most effective.
+2) Governance from day one – while AI is transforming SW, yet SW is an error resilient workflow since no programmer writes perfect code. Most enterprise workflows are not error resilient and so it is important to build in governance to account for AI’s tendency to make errors.
+3) Deep workflow integration and change management – AI is going to change how humans work and understanding the current client workflow and thinking through the change management upfront is important.
+4) Platform approach – AI becomes pervasive only when it can be operationalized in a scalable way. Scalable operationalization requires repeatability, robust building blocks, and a continuous improvement approach that is facilitated through platform based deployment.
+#NTT #NTTDATAGroup #NTTDATAAIVista #EnterpriseAI #AIStrategy #AILeadership #DigitalTransformation #AIGovernance #ai #ml #cloud
+Read the full conversation here: https://lnkd.in/gCWi8u_6
+Paid Program: Inside the AI-Native Operating Model
+Yutaka Sasaki san and I sat down with the The Wall Street Journal to discuss the question that every enterprise is asking: how do you move from AI experimentation to an AI native operating model?
+Yutaka Sasaki san and I sat down with the The Wall Street Journal to discuss the question that every enterprise is asking: how do you move from AI experimentation to an AI native operating model? The primary bottleneck is not technology, rather it is operationalizing AI. We touched on multiple factors that are required for getting measurable business impact from AI. These include:
+1) Last mile specialization – when an employee joins a company, they go through new employee orientation and then regular and extensive training to understand how the company operates, the context, the data, the workflows, etc. AI needs to be similarly specialized to the client and domain to be most effective.
+2) Governance from day one – while AI is transforming SW, yet SW is an error resilient workflow since no programmer writes perfect code. Most enterprise workflows are not error resilient and so it is important to build in governance to account for AI’s tendency to make errors.
+3) Deep workflow integration and change management – AI is going to change how humans work and understanding the current client workflow and thinking through the change management upfront is important.
+4) Platform approach – AI becomes pervasive only when it can be operationalized in a scalable way. Scalable operationalization requires repeatability, robust building blocks, and a continuous improvement approach that is facilitated through platform based deployment.
+#NTT #NTTDATAGroup #NTTDATAAIVista #EnterpriseAI #AIStrategy #AILeadership #DigitalTransformation #AIGovernance #ai #ml #cloud
+Read the full conversation here: https://lnkd.in/gCWi8u_6
+Paid Program: Inside the AI-Native Operating Model
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 93
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":93,"text_length":3751,"paragraph_count":18,"sentence_count":22,"boilerplate_hits":0,"symbol_ratio":0.0005,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=high
+   “AI native” is ultimately an operating model question, not a model question. That distinction is where many organisations will succeed or stall.
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Yutaka Sasaki san and I sat down with the The Wall Street Journal to discuss the question that every enterprise is asking: how do you move from AI experimentation to an AI native operating model?
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   The primary bottleneck is not technology, rather it is operationalizing AI.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   We touched on multiple factors that are required for getting measurable business impact from AI.
+
+5. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   These include: 1) Last mile specialization – when an employee joins a company, they go through new employee orientation and then regular and extensive training to understand how the company operates, the context, the data, the workflows, etc.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人
+- workflows: 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 1, 2, 3, 4, 8, 6
+- quotes: AI native
+
+## evidence_seed
+
+- company_actions: Yutaka Sasaki san and I sat down with the The Wall Street Journal to discuss the question that every enterprise is asking: how do you move from AI experimentation to an AI native operating model? / The primary bottleneck is not technology, rather it is operationalizing AI. / We touched on multiple factors that are required for getting measurable business impact from AI.
+- case_details: 暂无公开信息
+- workflow_changes: These include: 1) Last mile specialization – when an employee joins a company, they go through new employee orientation and then regular and extensive training to understand how the company operates, the context, the data, the workflows, etc.
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- user_feedback_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: keyword search / Anysearch
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+“AI native” is ultimately an operating model question, not a model question. That distinction is where many organisations will succeed or stall.
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

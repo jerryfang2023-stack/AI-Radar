@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T15:23:21.000Z"
-collected_at: 2026-06-19T06:41:39.523Z
+collected_at: 2026-06-19T07:43:57.498Z
 language: mixed
-full_text_hash: c733fba45f210547
+full_text_hash: 3cd7abe2362cefff
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-032-openai-发布-lifescibench-生命科学基准.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-032-openai-发布-lifescibench-生命科学基准.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c733fba45f210547","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3cd7abe2362cefff","missing":[]}
 source_volatility: high
 community_name: "X：Elvis Saravia (@omarsar0, DAIR.AI)"
 capture_scope: visible_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: community_signal
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"OpenAI 发布 LifeSciBench 生命科学基准","discovery_summary":"OpenAI 推出 LifeSciBench，用于衡量 AI 支持真实世界生命科学研究的能力。该基准与 173 位生物技术与制药科学家共同开发，包含 750 个专家编写任务，覆盖七种生物研究流程。DAIR.AI 的 Elvis Saravia 推荐阅读，并指出通用模型在处理复杂结构时仍然失败，而面向科学研究的专用模型表现显著更优。","source_name":"X：Elvis Saravia (@omarsar0, DAIR.AI)","origin_url":"https://x.com/omarsar0/status/2067629245493362779","discovered_at":"2026-06-19T06:38:20.375Z","rank_on_page":212,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"OpenAI 发布 LifeSciBench 生命科学基准","discovery_summary":"OpenAI 推出 LifeSciBench，用于衡量 AI 支持真实世界生命科学研究的能力。该基准与 173 位生物技术与制药科学家共同开发，包含 750 个专家编写任务，覆盖七种生物研究流程。DAIR.AI 的 Elvis Saravia 推荐阅读，并指出通用模型在处理复杂结构时仍然失败，而面向科学研究的专用模型表现显著更优。","source_name":"X：Elvis Saravia (@omarsar0, DAIR.AI)","origin_url":"https://x.com/omarsar0/status/2067629245493362779","discovered_at":"2026-06-19T07:39:27.778Z","rank_on_page":217,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: abe41581976e1e86
-content_hash: c733fba45f210547
+content_hash: 3cd7abe2362cefff
 semantic_hash: 645a49520e5709e2
 duplicate_of: ""
 first_seen_at: "2026-06-18T15:23:21.000Z"
-last_seen_at: 2026-06-19T06:41:39.523Z
+last_seen_at: 2026-06-19T07:43:57.498Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
@@ -92,11 +92,11 @@ OpenAI
 Jun 17
 Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research.
 Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research Show more
-3:23 PM · Jun 18, 2026 6.5K Views
+3:23 PM · Jun 18, 2026 6.6K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 34
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 18
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 6
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 35
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 9 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 19
 Read 5 replies
 Don't miss what's happening
 People on X are the first to know.
@@ -118,11 +118,11 @@ OpenAI
 Jun 17
 Introducing LifeSciBench, a benchmark for measuring and improving how well AI supports real-world life science research.
 Developed with 173 scientists from biotechnology and pharmaceutical research, LifeSciBench includes 750 expert-authored tasks across seven biological research Show more
-3:23 PM · Jun 18, 2026 6.5K Views
+3:23 PM · Jun 18, 2026 6.6K Views
 :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 5
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 34
-:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 18
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 6
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 35
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 9 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 19
 Read 5 replies
 Don't miss what's happening
 People on X are the first to know.
@@ -225,7 +225,7 @@ Log in Sign up
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"OpenAI 发布 LifeSciBench 生命科学基准","discovery_summary":"OpenAI 推出 LifeSciBench，用于衡量 AI 支持真实世界生命科学研究的能力。该基准与 173 位生物技术与制药科学家共同开发，包含 750 个专家编写任务，覆盖七种生物研究流程。DAIR.AI 的 Elvis Saravia 推荐阅读，并指出通用模型在处理复杂结构时仍然失败，而面向科学研究的专用模型表现显著更优。","source_name":"X：Elvis Saravia (@omarsar0, DAIR.AI)","origin_url":"https://x.com/omarsar0/status/2067629245493362779","discovered_at":"2026-06-19T06:38:20.375Z","rank_on_page":212,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"OpenAI 发布 LifeSciBench 生命科学基准","discovery_summary":"OpenAI 推出 LifeSciBench，用于衡量 AI 支持真实世界生命科学研究的能力。该基准与 173 位生物技术与制药科学家共同开发，包含 750 个专家编写任务，覆盖七种生物研究流程。DAIR.AI 的 Elvis Saravia 推荐阅读，并指出通用模型在处理复杂结构时仍然失败，而面向科学研究的专用模型表现显著更优。","source_name":"X：Elvis Saravia (@omarsar0, DAIR.AI)","origin_url":"https://x.com/omarsar0/status/2067629245493362779","discovered_at":"2026-06-19T07:39:27.778Z","rank_on_page":217,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

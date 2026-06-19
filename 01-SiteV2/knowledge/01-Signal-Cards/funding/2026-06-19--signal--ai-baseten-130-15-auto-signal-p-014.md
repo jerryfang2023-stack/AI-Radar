@@ -9,8 +9,8 @@ source_title: "AI推理公司Baseten据报以130亿美元估值融资15亿美元
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-19T06:41:40.175Z
-updated_at: 2026-06-19T06:41:40.175Z
+created_at: 2026-06-19T07:43:58.263Z
+updated_at: 2026-06-19T07:43:58.263Z
 
 raw_refs: ["R-015"]
 pool_refs: ["P-014"]
@@ -19,7 +19,7 @@ primary_raw:
   raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-19/r-015-ai推理公司baseten据报以130亿美元估值融资15亿美元.md"
   raw_json: "01-SiteV2/content/01-raw/originals/2026-06-19/r-015-ai推理公司baseten据报以130亿美元估值融资15亿美元.json"
   source_url: "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round"
-  full_text_hash: "09af9e8a00ef1c07"
+  full_text_hash: "3b57b8f0fa90f915"
   source_level: A
   extraction_quality: high
   has_full_text: true

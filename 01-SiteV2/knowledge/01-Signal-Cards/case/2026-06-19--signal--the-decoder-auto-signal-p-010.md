@@ -9,8 +9,8 @@ source_title: "Midjourney 与 Butterfly Network 联手打造全身超声波扫�
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-19T06:41:40.175Z
-updated_at: 2026-06-19T06:41:40.175Z
+created_at: 2026-06-19T07:43:58.263Z
+updated_at: 2026-06-19T07:43:58.263Z
 
 raw_refs: ["R-010"]
 pool_refs: ["P-010"]

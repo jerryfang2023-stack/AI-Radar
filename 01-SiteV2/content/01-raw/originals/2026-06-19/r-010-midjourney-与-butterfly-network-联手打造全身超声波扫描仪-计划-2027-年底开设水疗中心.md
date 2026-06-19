@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T13:21:52.000Z"
-collected_at: 2026-06-19T06:41:39.451Z
+collected_at: 2026-06-19T07:43:57.421Z
 language: mixed
 full_text_hash: 6d34e9021470b311
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-010-midjourney-与-butterfly-network-联手打造全身超声波扫描仪-计划-2027-年底开设水疗中心.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心","discovery_summary":"Midjourney 与 Butterfly Network 合作推出全身超声波扫描仪。用户步入一池金色浅水，身体穿过水下传感器环，约 60 秒内生成无辐射 3D 身体图像。初期提供无需 FDA 批准的身体成分图，计划 2027 年底在旧金山开设首家水疗中心；2031 年前部署超过 5 万台扫描仪，每月完成 10 亿次扫描。第三代扫描仪预计 2028 年推出，采用完全定制硅片，成像质量和扫描时间将有\"昼夜之别\"。CEO David Holz 称，足够早期成像可避免\"30% 的死亡和 50% 的医疗成本\"。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/midjourney-known-for-ai-image-generation-unveils-a-full-body-ultrasound-scanner-and-its-own-spa","discovered_at":"2026-06-19T06:38:20.383Z","rank_on_page":247,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心","discovery_summary":"Midjourney 与 Butterfly Network 合作推出全身超声波扫描仪。用户步入一池金色浅水，身体穿过水下传感器环，约 60 秒内生成无辐射 3D 身体图像。初期提供无需 FDA 批准的身体成分图，计划 2027 年底在旧金山开设首家水疗中心；2031 年前部署超过 5 万台扫描仪，每月完成 10 亿次扫描。第三代扫描仪预计 2028 年推出，采用完全定制硅片，成像质量和扫描时间将有\"昼夜之别\"。CEO David Holz 称，足够早期成像可避免\"30% 的死亡和 50% 的医疗成本\"。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/midjourney-known-for-ai-image-generation-unveils-a-full-body-ultrasound-scanner-and-its-own-spa","discovered_at":"2026-06-19T07:39:27.786Z","rank_on_page":252,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 6d34e9021470b311
 semantic_hash: e431629aebdc5e99
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-18T13:21:52.000Z"
-last_seen_at: 2026-06-19T06:41:39.451Z
+last_seen_at: 2026-06-19T07:43:57.421Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -238,7 +238,7 @@ Insert
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心","discovery_summary":"Midjourney 与 Butterfly Network 合作推出全身超声波扫描仪。用户步入一池金色浅水，身体穿过水下传感器环，约 60 秒内生成无辐射 3D 身体图像。初期提供无需 FDA 批准的身体成分图，计划 2027 年底在旧金山开设首家水疗中心；2031 年前部署超过 5 万台扫描仪，每月完成 10 亿次扫描。第三代扫描仪预计 2028 年推出，采用完全定制硅片，成像质量和扫描时间将有\"昼夜之别\"。CEO David Holz 称，足够早期成像可避免\"30% 的死亡和 50% 的医疗成本\"。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/midjourney-known-for-ai-image-generation-unveils-a-full-body-ultrasound-scanner-and-its-own-spa","discovered_at":"2026-06-19T06:38:20.383Z","rank_on_page":247,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心","discovery_summary":"Midjourney 与 Butterfly Network 合作推出全身超声波扫描仪。用户步入一池金色浅水，身体穿过水下传感器环，约 60 秒内生成无辐射 3D 身体图像。初期提供无需 FDA 批准的身体成分图，计划 2027 年底在旧金山开设首家水疗中心；2031 年前部署超过 5 万台扫描仪，每月完成 10 亿次扫描。第三代扫描仪预计 2028 年推出，采用完全定制硅片，成像质量和扫描时间将有\"昼夜之别\"。CEO David Holz 称，足够早期成像可避免\"30% 的死亡和 50% 的医疗成本\"。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/midjourney-known-for-ai-image-generation-unveils-a-full-body-ultrasound-scanner-and-its-own-spa","discovered_at":"2026-06-19T07:39:27.786Z","rank_on_page":252,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

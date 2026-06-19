@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-19T06:41:39.894Z
+collected_at: 2026-06-19T07:43:57.974Z
 language: mixed
 full_text_hash: 6cd1795083104a7e
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-149-openai-联合多国医生-gpt-5-5-instant-健康问答能力追平前沿-thinking-模型.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"OpenAI 联合多国医生：GPT-5.5 Instant 健康问答能力追平前沿 Thinking 模型","discovery_summary":"OpenAI 与全球 60 个国家、49 种语言、26 个专科的数百名医生合作，通过医生主导的评估大幅提升了 GPT-5.5 Instant 在健康相关问题的智能水平，现已能与公司前沿 Thinking 模型（推理模型）相当。该模型每周为超过 2.3 亿 ChatGPT 用户服务，能更好识别紧急医疗需求、询问相关上下文、解释不确定性并简化复杂信息。由于面向所有 ChatGPT 免费用户开放，这些改进可惠及更多人。","source_name":"X：Greg Brockman (@gdb)","origin_url":"","discovered_at":"2026-06-19T06:38:17.986Z","rank_on_page":5,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"OpenAI 联合多国医生：GPT-5.5 Instant 健康问答能力追平前沿 Thinking 模型","discovery_summary":"OpenAI 与全球 60 个国家、49 种语言、26 个专科的数百名医生合作，通过医生主导的评估大幅提升了 GPT-5.5 Instant 在健康相关问题的智能水平，现已能与公司前沿 Thinking 模型（推理模型）相当。该模型每周为超过 2.3 亿 ChatGPT 用户服务，能更好识别紧急医疗需求、询问相关上下文、解释不确定性并简化复杂信息。由于面向所有 ChatGPT 免费用户开放，这些改进可惠及更多人。","source_name":"X：Greg Brockman (@gdb)","origin_url":"","discovered_at":"2026-06-19T07:39:26.646Z","rank_on_page":5,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 6cd1795083104a7e
 semantic_hash: 20fd6057538419f4
 duplicate_of: ""
-first_seen_at: "2026-06-19T06:41:39.894Z"
-last_seen_at: 2026-06-19T06:41:39.894Z
+first_seen_at: "2026-06-19T07:43:57.974Z"
+last_seen_at: 2026-06-19T07:43:57.974Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -183,7 +183,7 @@ OpenAI 与全球 60 个国家、49 种语言、26 个专科的数百名医生合
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"OpenAI 联合多国医生：GPT-5.5 Instant 健康问答能力追平前沿 Thinking 模型","discovery_summary":"OpenAI 与全球 60 个国家、49 种语言、26 个专科的数百名医生合作，通过医生主导的评估大幅提升了 GPT-5.5 Instant 在健康相关问题的智能水平，现已能与公司前沿 Thinking 模型（推理模型）相当。该模型每周为超过 2.3 亿 ChatGPT 用户服务，能更好识别紧急医疗需求、询问相关上下文、解释不确定性并简化复杂信息。由于面向所有 ChatGPT 免费用户开放，这些改进可惠及更多人。","source_name":"X：Greg Brockman (@gdb)","origin_url":"","discovered_at":"2026-06-19T06:38:17.986Z","rank_on_page":5,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"OpenAI 联合多国医生：GPT-5.5 Instant 健康问答能力追平前沿 Thinking 模型","discovery_summary":"OpenAI 与全球 60 个国家、49 种语言、26 个专科的数百名医生合作，通过医生主导的评估大幅提升了 GPT-5.5 Instant 在健康相关问题的智能水平，现已能与公司前沿 Thinking 模型（推理模型）相当。该模型每周为超过 2.3 亿 ChatGPT 用户服务，能更好识别紧急医疗需求、询问相关上下文、解释不确定性并简化复杂信息。由于面向所有 ChatGPT 免费用户开放，这些改进可惠及更多人。","source_name":"X：Greg Brockman (@gdb)","origin_url":"","discovered_at":"2026-06-19T07:39:26.646Z","rank_on_page":5,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

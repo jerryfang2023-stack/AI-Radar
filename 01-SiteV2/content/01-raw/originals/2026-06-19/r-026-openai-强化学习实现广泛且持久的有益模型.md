@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T18:00:00.000Z"
-collected_at: 2026-06-19T06:41:39.496Z
+collected_at: 2026-06-19T07:43:57.470Z
 language: mixed
 full_text_hash: 070db7bbe974f569
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-026-openai-强化学习实现广泛且持久的有益模型.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: supporting_evidence
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"OpenAI 强化学习实现广泛且持久的有益模型","discovery_summary":"OpenAI 通过强化学习在真实对话场景中训练模型，使其展现诚实、认知谦逊、元认知透明、可纠正性、普遍公平性和对人类福祉的关心等有益特质。训练数据涵盖健康、教育、科学、法律、工程等多个领域。训练后模型在数十项独立对齐评测（包括奖励黑客、欺骗、有害建议、规范遵从等）上均表现提升，且这种改善泛化到未参与训练的领域、任务和评分设定。在对抗性提示或微调下，模型仍难以被导向有害行为，表明有益特质强化学习可产生广泛且持久的对齐泛化。","source_name":"OpenAI：Alignment 研究博客（RSS）","origin_url":"https://alignment.openai.com/beneficial-rl","discovered_at":"2026-06-19T06:38:20.363Z","rank_on_page":157,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"OpenAI 强化学习实现广泛且持久的有益模型","discovery_summary":"OpenAI 通过强化学习在真实对话场景中训练模型，使其展现诚实、认知谦逊、元认知透明、可纠正性、普遍公平性和对人类福祉的关心等有益特质。训练数据涵盖健康、教育、科学、法律、工程等多个领域。训练后模型在数十项独立对齐评测（包括奖励黑客、欺骗、有害建议、规范遵从等）上均表现提升，且这种改善泛化到未参与训练的领域、任务和评分设定。在对抗性提示或微调下，模型仍难以被导向有害行为，表明有益特质强化学习可产生广泛且持久的对齐泛化。","source_name":"OpenAI：Alignment 研究博客（RSS）","origin_url":"https://alignment.openai.com/beneficial-rl","discovered_at":"2026-06-19T07:39:27.765Z","rank_on_page":162,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 070db7bbe974f569
 semantic_hash: 6eb81e0055b09602
 duplicate_of: ""
 first_seen_at: "2026-06-18T18:00:00.000Z"
-last_seen_at: 2026-06-19T06:41:39.496Z
+last_seen_at: 2026-06-19T07:43:57.470Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -300,7 +300,7 @@ url = {https://alignment.openai.com/beneficial-rl/}
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"OpenAI 强化学习实现广泛且持久的有益模型","discovery_summary":"OpenAI 通过强化学习在真实对话场景中训练模型，使其展现诚实、认知谦逊、元认知透明、可纠正性、普遍公平性和对人类福祉的关心等有益特质。训练数据涵盖健康、教育、科学、法律、工程等多个领域。训练后模型在数十项独立对齐评测（包括奖励黑客、欺骗、有害建议、规范遵从等）上均表现提升，且这种改善泛化到未参与训练的领域、任务和评分设定。在对抗性提示或微调下，模型仍难以被导向有害行为，表明有益特质强化学习可产生广泛且持久的对齐泛化。","source_name":"OpenAI：Alignment 研究博客（RSS）","origin_url":"https://alignment.openai.com/beneficial-rl","discovered_at":"2026-06-19T06:38:20.363Z","rank_on_page":157,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"OpenAI 强化学习实现广泛且持久的有益模型","discovery_summary":"OpenAI 通过强化学习在真实对话场景中训练模型，使其展现诚实、认知谦逊、元认知透明、可纠正性、普遍公平性和对人类福祉的关心等有益特质。训练数据涵盖健康、教育、科学、法律、工程等多个领域。训练后模型在数十项独立对齐评测（包括奖励黑客、欺骗、有害建议、规范遵从等）上均表现提升，且这种改善泛化到未参与训练的领域、任务和评分设定。在对抗性提示或微调下，模型仍难以被导向有害行为，表明有益特质强化学习可产生广泛且持久的对齐泛化。","source_name":"OpenAI：Alignment 研究博客（RSS）","origin_url":"https://alignment.openai.com/beneficial-rl","discovered_at":"2026-06-19T07:39:27.765Z","rank_on_page":162,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

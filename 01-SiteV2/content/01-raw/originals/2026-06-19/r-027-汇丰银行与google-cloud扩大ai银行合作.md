@@ -20,9 +20,9 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T10:00:00.000Z"
-collected_at: 2026-06-19T06:41:39.506Z
+collected_at: 2026-06-19T07:43:57.480Z
 language: mixed
-full_text_hash: a74f0d8a718a237c
+full_text_hash: 6b2f7b4d234e4a75
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-027-汇丰银行与google-cloud扩大ai银行合作.md"
 json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-027-汇丰银行与google-cloud扩大ai银行合作.json"
 html_snapshot_path: ""
@@ -38,25 +38,25 @@ fetch_error: ""
 raw_qc_decision: allow
 raw_qc_downstream_use: eligible_after_qc
 degradation_reasons: []
-evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a74f0d8a718a237c","missing":[]}
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6b2f7b4d234e4a75","missing":[]}
 source_volatility: medium
 community_name: ""
 capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"汇丰银行与Google Cloud扩大AI银行合作","discovery_summary":"汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021年试点已发现2-4倍犯罪行为，每月筛查12亿笔交易，新协议下干预速度提升2倍。财富管理结合AI洞察；AI决策助手减少行政时间至分钟级；超2万名开发者使用编码助手，效率提升15%。汇丰于4月任命首位首席AI官。","source_name":"Artificial Intelligence News（RSS）","origin_url":"https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership","discovered_at":"2026-06-19T06:38:20.392Z","rank_on_page":288,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"汇丰银行与Google Cloud扩大AI银行合作","discovery_summary":"汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021年试点已发现2-4倍犯罪行为，每月筛查12亿笔交易，新协议下干预速度提升2倍。财富管理结合AI洞察；AI决策助手减少行政时间至分钟级；超2万名开发者使用编码助手，效率提升15%。汇丰于4月任命首位首席AI官。","source_name":"Artificial Intelligence News（RSS）","origin_url":"https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership","discovered_at":"2026-06-19T07:39:27.796Z","rank_on_page":293,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
 block_status: none
 duplicate_status: unique
 url_hash: 685556313cdf3b20
-content_hash: a74f0d8a718a237c
+content_hash: 6b2f7b4d234e4a75
 semantic_hash: 444f1e59e0d1f505
 duplicate_of: ""
 first_seen_at: "2026-06-18T10:00:00.000Z"
-last_seen_at: 2026-06-19T06:41:39.506Z
+last_seen_at: 2026-06-19T07:43:57.480Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -141,7 +141,7 @@ Click here
 Popular
 Physical AI
 Asylon and Thrive Logic bring physical AI to enterprise perimeter security
-7815 view(s)
+7816 view(s)
 AI Business Strategy , Artificial Intelligence , Features , Finance AI , World of Work
 JPMorgan begins tracking how employees use AI at work
 7269 view(s)
@@ -246,7 +246,7 @@ Click here
 Popular
 Physical AI
 Asylon and Thrive Logic bring physical AI to enterprise perimeter security
-7815 view(s)
+7816 view(s)
 AI Business Strategy , Artificial Intelligence , Features , Finance AI , World of Work
 JPMorgan begins tracking how employees use AI at work
 7269 view(s)
@@ -385,7 +385,7 @@ All our premium content and latest tech news delivered straight to your inbox
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"汇丰银行与Google Cloud扩大AI银行合作","discovery_summary":"汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021年试点已发现2-4倍犯罪行为，每月筛查12亿笔交易，新协议下干预速度提升2倍。财富管理结合AI洞察；AI决策助手减少行政时间至分钟级；超2万名开发者使用编码助手，效率提升15%。汇丰于4月任命首位首席AI官。","source_name":"Artificial Intelligence News（RSS）","origin_url":"https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership","discovered_at":"2026-06-19T06:38:20.392Z","rank_on_page":288,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"汇丰银行与Google Cloud扩大AI银行合作","discovery_summary":"汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021年试点已发现2-4倍犯罪行为，每月筛查12亿笔交易，新协议下干预速度提升2倍。财富管理结合AI洞察；AI决策助手减少行政时间至分钟级；超2万名开发者使用编码助手，效率提升15%。汇丰于4月任命首位首席AI官。","source_name":"Artificial Intelligence News（RSS）","origin_url":"https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership","discovered_at":"2026-06-19T07:39:27.796Z","rank_on_page":293,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

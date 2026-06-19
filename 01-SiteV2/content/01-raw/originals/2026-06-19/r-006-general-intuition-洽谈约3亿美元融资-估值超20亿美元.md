@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-18T15:20:37.000Z"
-collected_at: 2026-06-19T06:41:39.438Z
+collected_at: 2026-06-19T07:43:57.407Z
 language: mixed
 full_text_hash: d8a0ec0643be420b
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-006-general-intuition-洽谈约3亿美元融资-估值超20亿美元.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"General Intuition 洽谈约3亿美元融资，估值超20亿美元","discovery_summary":"从游戏剪辑平台Medal剥离的AI初创公司General Intuition正洽谈约3亿美元融资，估值超20亿美元。本轮距其1.34亿美元种子轮仅8个月，投资方包括Jeff Bezos、Eric Schmidt及现有投资者Khosla Ventures、General Catalyst。公司利用Medal每年20亿条视频（来自1000万月活用户）训练具身AI与世界模型，通过第一人称交互数据实现空间-时间推理。OpenAI曾试图收购Medal。资金将用于扩大算力，计划夏末或初秋发布新产品。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation","discovered_at":"2026-06-19T06:38:20.375Z","rank_on_page":213,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"General Intuition 洽谈约3亿美元融资，估值超20亿美元","discovery_summary":"从游戏剪辑平台Medal剥离的AI初创公司General Intuition正洽谈约3亿美元融资，估值超20亿美元。本轮距其1.34亿美元种子轮仅8个月，投资方包括Jeff Bezos、Eric Schmidt及现有投资者Khosla Ventures、General Catalyst。公司利用Medal每年20亿条视频（来自1000万月活用户）训练具身AI与世界模型，通过第一人称交互数据实现空间-时间推理。OpenAI曾试图收购Medal。资金将用于扩大算力，计划夏末或初秋发布新产品。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation","discovered_at":"2026-06-19T07:39:27.778Z","rank_on_page":218,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: d8a0ec0643be420b
 semantic_hash: af4370bb177306f3
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-18T15:20:37.000Z"
-last_seen_at: 2026-06-19T06:41:39.438Z
+last_seen_at: 2026-06-19T07:43:57.407Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -267,7 +267,7 @@ Error loading the next article
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"General Intuition 洽谈约3亿美元融资，估值超20亿美元","discovery_summary":"从游戏剪辑平台Medal剥离的AI初创公司General Intuition正洽谈约3亿美元融资，估值超20亿美元。本轮距其1.34亿美元种子轮仅8个月，投资方包括Jeff Bezos、Eric Schmidt及现有投资者Khosla Ventures、General Catalyst。公司利用Medal每年20亿条视频（来自1000万月活用户）训练具身AI与世界模型，通过第一人称交互数据实现空间-时间推理。OpenAI曾试图收购Medal。资金将用于扩大算力，计划夏末或初秋发布新产品。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation","discovered_at":"2026-06-19T06:38:20.375Z","rank_on_page":213,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"General Intuition 洽谈约3亿美元融资，估值超20亿美元","discovery_summary":"从游戏剪辑平台Medal剥离的AI初创公司General Intuition正洽谈约3亿美元融资，估值超20亿美元。本轮距其1.34亿美元种子轮仅8个月，投资方包括Jeff Bezos、Eric Schmidt及现有投资者Khosla Ventures、General Catalyst。公司利用Medal每年20亿条视频（来自1000万月活用户）训练具身AI与世界模型，通过第一人称交互数据实现空间-时间推理。OpenAI曾试图收购Medal。资金将用于扩大算力，计划夏末或初秋发布新产品。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation","discovered_at":"2026-06-19T07:39:27.778Z","rank_on_page":218,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

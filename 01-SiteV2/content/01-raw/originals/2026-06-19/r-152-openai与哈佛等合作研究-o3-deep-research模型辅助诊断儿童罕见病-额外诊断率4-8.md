@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-19T06:41:39.898Z
+collected_at: 2026-06-19T07:43:57.978Z
 language: mixed
 full_text_hash: 64abf849860142ef
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-152-openai与哈佛等合作研究-o3-deep-research模型辅助诊断儿童罕见病-额外诊断率4-8.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"OpenAI与哈佛等合作研究：o3 Deep Research模型辅助诊断儿童罕见病，额外诊断率4.8%","discovery_summary":"波士顿儿童医院、哈佛大学与OpenAI合作，在《NEJM AI》发表研究。团队使用OpenAI o3 Deep Research推理模型重新分析376例此前未确诊的罕见病案例，产出基于证据的候选解释。经专家评审、额外检测和临床确认，医生在18例中建立诊断，额外诊断率达4.8%。研究显示，AI辅助工作流可帮助专家在未解病例中生成可检验假设，使定期再分析更具可扩展性。模型不直接诊断或做临床决策，仅提供证据链供专家审查。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"","discovered_at":"2026-06-19T06:38:17.994Z","rank_on_page":22,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"OpenAI与哈佛等合作研究：o3 Deep Research模型辅助诊断儿童罕见病，额外诊断率4.8%","discovery_summary":"波士顿儿童医院、哈佛大学与OpenAI合作，在《NEJM AI》发表研究。团队使用OpenAI o3 Deep Research推理模型重新分析376例此前未确诊的罕见病案例，产出基于证据的候选解释。经专家评审、额外检测和临床确认，医生在18例中建立诊断，额外诊断率达4.8%。研究显示，AI辅助工作流可帮助专家在未解病例中生成可检验假设，使定期再分析更具可扩展性。模型不直接诊断或做临床决策，仅提供证据链供专家审查。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"","discovered_at":"2026-06-19T07:39:26.654Z","rank_on_page":22,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 64abf849860142ef
 semantic_hash: efcf168cd82b7600
 duplicate_of: ""
-first_seen_at: "2026-06-19T06:41:39.898Z"
-last_seen_at: 2026-06-19T06:41:39.898Z
+first_seen_at: "2026-06-19T07:43:57.978Z"
+last_seen_at: 2026-06-19T07:43:57.978Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -185,7 +185,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"OpenAI与哈佛等合作研究：o3 Deep Research模型辅助诊断儿童罕见病，额外诊断率4.8%","discovery_summary":"波士顿儿童医院、哈佛大学与OpenAI合作，在《NEJM AI》发表研究。团队使用OpenAI o3 Deep Research推理模型重新分析376例此前未确诊的罕见病案例，产出基于证据的候选解释。经专家评审、额外检测和临床确认，医生在18例中建立诊断，额外诊断率达4.8%。研究显示，AI辅助工作流可帮助专家在未解病例中生成可检验假设，使定期再分析更具可扩展性。模型不直接诊断或做临床决策，仅提供证据链供专家审查。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"","discovered_at":"2026-06-19T06:38:17.994Z","rank_on_page":22,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"OpenAI与哈佛等合作研究：o3 Deep Research模型辅助诊断儿童罕见病，额外诊断率4.8%","discovery_summary":"波士顿儿童医院、哈佛大学与OpenAI合作，在《NEJM AI》发表研究。团队使用OpenAI o3 Deep Research推理模型重新分析376例此前未确诊的罕见病案例，产出基于证据的候选解释。经专家评审、额外检测和临床确认，医生在18例中建立诊断，额外诊断率达4.8%。研究显示，AI辅助工作流可帮助专家在未解病例中生成可检验假设，使定期再分析更具可扩展性。模型不直接诊断或做临床决策，仅提供证据链供专家审查。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"","discovered_at":"2026-06-19T07:39:26.654Z","rank_on_page":22,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 
