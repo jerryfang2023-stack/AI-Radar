@@ -200,7 +200,7 @@ Execution order:
 3. Generate `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`.
 4. Sync the generated skill viewpoints into `01-SiteV2/knowledge/02-Opinion-Timelines/`.
 5. Record the local publish report at `agent-workflow/reports/<date>-follow-builders-skill-local-publish.md`, including Obsidian sync counts.
-6. Commit and push the publish branch through `automation/follow-builders-skill-<date>`.
+6. Commit and push the publish branch through `automation/follow-builders-skill-<date>` from an isolated temporary Git index based on `origin/main`, staging only First-Line owned outputs. Other lane dirty files in the main workspace and Windows long-path checkout limits must not block the afternoon builders publish.
 7. Create or update the PR.
 8. Auto-merge or enable auto-merge after the skill publish and Obsidian sync pass.
 9. Hermes records the run at 16:30 from the local publish report.

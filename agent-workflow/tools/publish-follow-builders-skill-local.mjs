@@ -101,16 +101,9 @@ function ensureSkillStore() {
   }
 }
 
-function ensureCleanWorktree() {
-  const status = run("git", ["status", "--porcelain"]);
-  if (status) {
-    throw new Error(`Refusing to publish with a dirty worktree:\n${status}`);
-  }
-}
-
-function stageIfExists(file) {
+function stageIfExists(file, env) {
   if (fs.existsSync(path.join(root, file))) {
-    run("git", ["add", "-f", file]);
+    run("git", ["add", "-f", file], { env });
   }
 }
 
@@ -231,7 +224,6 @@ function waitForMerge(prNumber) {
 function main() {
   if (!date) throw new Error("Unable to resolve production date.");
   ensureSkillStore();
-  ensureCleanWorktree();
 
   const originalBranch = run("git", ["branch", "--show-current"]) || "main";
 
@@ -280,29 +272,51 @@ function main() {
   ]);
 
   run("git", ["fetch", "origin", "main"]);
-  run("git", ["config", "user.name", "github-actions[bot]"]);
-  run("git", ["config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com"]);
-  run("git", ["checkout", "-B", branch, "origin/main"]);
+  const indexFile = path.join(os.tmpdir(), `wavesight-follow-builders-${date}-${process.pid}.index`);
+  const gitEnv = {
+    ...process.env,
+    GIT_INDEX_FILE: indexFile,
+    GIT_AUTHOR_NAME: "github-actions[bot]",
+    GIT_AUTHOR_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com",
+    GIT_COMMITTER_NAME: "github-actions[bot]",
+    GIT_COMMITTER_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com",
+  };
+  try {
+    run("git", ["read-tree", "origin/main"], { env: gitEnv });
+    stageIfExists(`agent-workflow/reports/${date}-follow-builders-skill-local-publish.md`, gitEnv);
+    stageIfExists(`01-SiteV2/content/07-points/${date}-builders-viewpoints.md`, gitEnv);
+    stageIfExists("01-SiteV2/knowledge/02-Opinion-Timelines", gitEnv);
 
-  stageIfExists(`agent-workflow/reports/${date}-follow-builders-skill-local-publish.md`);
-  stageIfExists(`01-SiteV2/content/07-points/${date}-builders-viewpoints.md`);
-  stageIfExists("01-SiteV2/knowledge/02-Opinion-Timelines");
+    const staged = run("git", ["diff", "--cached", "--name-only"], { env: gitEnv });
+    if (!staged) {
+      console.log(JSON.stringify({
+        ok: true,
+        changed: false,
+        message: "No follow-builders skill changes to publish.",
+        branch,
+        report: rel(reportFile),
+      }, null, 2));
+      return;
+    }
 
-  const staged = run("git", ["diff", "--cached", "--name-only"]);
-  if (!staged) {
-    console.log(JSON.stringify({
-      ok: true,
-      changed: false,
-      message: "No follow-builders skill changes to publish.",
-      branch,
-      report: rel(reportFile),
-    }, null, 2));
-    return;
+    const tree = run("git", ["write-tree"], { env: gitEnv });
+    const parent = run("git", ["rev-parse", "origin/main"]);
+    const commit = run("git", [
+      "commit-tree",
+      tree,
+      "-p",
+      parent,
+      "-m",
+      `Update follow-builders skill for ${date}`,
+    ], { env: gitEnv });
+    run("git", ["fetch", "--prune", "origin"]);
+    run("git", ["push", "--force-with-lease", "origin", `${commit}:refs/heads/${branch}`]);
+  } finally {
+    fs.rmSync(indexFile, { force: true });
   }
 
-  run("git", ["commit", "-m", `Update follow-builders skill for ${date}`]);
-  run("git", ["fetch", "--prune", "origin"]);
-  run("git", ["push", "--force-with-lease", "origin", branch]);
+  run("git", ["config", "user.name", "github-actions[bot]"]);
+  run("git", ["config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com"]);
   const pr = openOrUpdatePr();
   const mergeStatus = merge ? mergePr(pr.number) : "skipped";
   const merged = merge ? waitForMerge(pr.number) : null;
@@ -312,8 +326,18 @@ function main() {
   }
 
   if (merge && originalBranch === "main") {
-    run("git", ["checkout", "main"]);
-    run("git", ["pull", "--ff-only", "origin", "main"]);
+    const status = run("git", ["status", "--porcelain"]);
+    if (!status) {
+      run("git", ["pull", "--ff-only", "origin", "main"]);
+    } else {
+      appendReport([
+        "",
+        "## Local Pull Skipped",
+        "",
+        "- local_pull_status: skipped_dirty_worktree",
+        "- local_pull_reason: publish succeeded from isolated worktree; current workspace kept existing dirty files intact.",
+      ]);
+    }
   }
 
   console.log(JSON.stringify({
@@ -342,6 +366,16 @@ try {
       `- failed_at: ${new Date().toISOString()}`,
       `- failed_at_shanghai: ${shanghaiTimestamp()}`,
       `- publish_error: ${JSON.stringify(message)}`,
+    ]);
+  } else {
+    writeReport([
+      `# ${date} Follow-Builders Skill Local Publish`,
+      "",
+      `- generated_at: ${new Date().toISOString()}`,
+      `- generated_at_shanghai: ${shanghaiTimestamp()}`,
+      `- publish_status: failed`,
+      `- publish_error: ${JSON.stringify(message)}`,
+      `- hermes_record: ${rel(reportFile)}`,
     ]);
   }
   throw error;
