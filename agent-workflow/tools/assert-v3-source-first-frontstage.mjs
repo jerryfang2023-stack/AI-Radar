@@ -147,6 +147,11 @@ function subjectHasSourceNoise(value = "") {
   return /https?:|[|｜]|RSS|热门|buzzing\.cc|Weekly Updated B2B Lead Database|^(IT早报|AI早报|早报|日报|周报)/iu.test(String(value || ""));
 }
 
+function subjectHasBusinessDisplayNoise(value = "") {
+  return /^(AI business signal|Artificialintelligence-News|Today[’']s Hottest Role|From the Customer[’']s Side of the Table|Ltd\.?|Blog|Article|Post)$/iu.test(String(value || "").trim())
+    || /^(TechCrunch|Techcrunch|Arstechnica|Ars Technica|MarkTechPost|Cfodive|Artificial Intelligence News)$/iu.test(String(value || "").trim());
+}
+
 function titleNeedsTranslation(value = "") {
   const text = String(value || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
@@ -175,12 +180,8 @@ function subjectIsMissing(value = "") {
 }
 
 function subjectIsGeneric(value = "") {
-  // "Blog" is a common subject for AI articles that lack a specific company label;
-  // "AI business signal" is the card-generation fallback label when no specific
-  // company or source is identified. Both are acceptable rather than blocking.
   const text = String(value || "").trim();
-  if (/^AI business/i.test(text)) return false;
-  return /^(Code|Post|Article|Williams|Arstechnica|Techcrunch|Cfodive|MarkTechPost|Market\.us)$/iu.test(text);
+  return /^(AI business signal|Code|Post|Article|Williams|Arstechnica|Techcrunch|Cfodive|MarkTechPost|Market\.us)$/iu.test(text);
 }
 
 function subjectMatchesTitle(card = {}) {
@@ -230,6 +231,9 @@ function top10EventFingerprint(card = {}) {
 function publicFactLooksLikeTemplateFallback(value = "") {
   const text = String(value || "").replace(/\s+/gu, " ").trim();
   if (!text) return true;
+  if (/^[A-Z][A-Za-z0-9&.' -]+ customer story$/iu.test(text)) return true;
+  if (/^(?:Ltd\.?|Inc\.?|LLC|Corp\.?|Company)\s*(?:\u83b7\u5f97|\u83b7|\u5b8c\u6210)\s*\$?\s*\d/iu.test(text)) return true;
+  if (/原文称|的公开案例显示|公开案例显示.*AI\s*正在进入|AI 正在进入客户、采购、商品内容或内部工作流/iu.test(text)) return true;
   return /\u539f\u6587\u6240\u8ff0(?:\u80fd\u529b|\u573a\u666f)/u.test(text)
     || /\u539f\u6587\s*AI\s*\u4e8b\u4ef6/u.test(text)
     || /\u516c\u5f00\u6750\u6599\u63d0\u4f9b\u4e86\u4e00\u6761\u53ef\u8ffd\u8e2a\u7684\s*AI\s*\u5546\u4e1a\u4fe1\u53f7/u.test(text)
@@ -252,6 +256,8 @@ function top10FactIsWeak(card = {}) {
 
 function publicTitleIsGeneric(value = "") {
   const text = String(value || "").trim();
+  if (/\b(?:AI business signal|Artificialintelligence-News|Ltd\.)\b/iu.test(text)) return true;
+  if (/的公开案例显示|公开材料显示|原文称|AI 正在进入客户、采购、商品内容或内部工作流/iu.test(text)) return true;
   if (/^[A-Za-z0-9\u4e00-\u9fff][A-Za-z0-9\u4e00-\u9fff .&'’()-]{1,60}\s+(?:获得|获)\s*\$?\d[\d.,]*(?:\s?(?:M|B|million|billion|万|亿|万美元))?\s*融资/iu.test(text)) {
     return false;
   }
@@ -402,7 +408,7 @@ for (const card of cards) {
   if (!card.translatedFact && !(card.originalHighlights || []).length && !card.visibleFragment) {
     issues.push(`card ${card.id || "(missing id)"} has no source-facing fact/highlight/fragment`);
   }
-  if (card.date === activeDate && (subjectHasSourceNoise(card.subject) || subjectLooksLikeTitle(card.subject) || subjectMatchesTitle(card))) {
+  if (card.date === activeDate && (subjectHasSourceNoise(card.subject) || subjectHasBusinessDisplayNoise(card.subject) || subjectLooksLikeTitle(card.subject) || subjectMatchesTitle(card))) {
     issues.push(`card ${card.id || "(missing id)"} has title-like subject: ${card.subject}`);
   }
   if (card.date === activeDate && subjectIsMissing(card.subject)) {
@@ -462,7 +468,7 @@ for (const card of cards) {
 
 for (const candidate of payload.corePoolCandidates || []) {
   checkPublicCardContract(candidate, `core pool candidate ${candidate.date || "(missing date)"}`);
-  if (candidate.date === activeDate && (subjectHasSourceNoise(candidate.subject) || subjectLooksLikeTitle(candidate.subject) || subjectMatchesTitle(candidate))) {
+  if (candidate.date === activeDate && (subjectHasSourceNoise(candidate.subject) || subjectHasBusinessDisplayNoise(candidate.subject) || subjectLooksLikeTitle(candidate.subject) || subjectMatchesTitle(candidate))) {
     issues.push(`core pool candidate ${candidate.id || "(missing id)"} has title-like subject: ${candidate.subject}`);
   }
   if (candidate.date === activeDate && subjectIsMissing(candidate.subject)) {

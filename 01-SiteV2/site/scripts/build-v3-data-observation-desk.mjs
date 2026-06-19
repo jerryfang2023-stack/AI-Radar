@@ -546,6 +546,55 @@ function sourceTitleFromFullText(fullText = "", fallbackTitle = "") {
 
 function sourceTitleFromUrlOverride(sourceUrl = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
+  if (/delight\.ai\/customers\/norse-atlantic-airways/iu.test(normalized)) {
+    return "Norse Atlantic Airways 与 delight.ai：构建航空公司未曾见过的 AI 劳动力";
+  }
+  if (/ithome\.com\/0\/965\/989/iu.test(normalized)) {
+    return "英伟达宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试";
+  }
+  const readableUrlTranslations = [
+    [/techcrunch\.com\/2026\/06\/18\/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/iu, "Elastic 同意以最高 8500 万美元收购 CRV 支持的 DeductiveAI"],
+    [/techcrunch\.com\/2026\/06\/18\/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/iu, "AI 推理初创公司 Baseten 据报在上一轮巨额融资数月后再融 15 亿美元"],
+    [/siliconangle\.com\/2026\/06\/15\/ai-agent-authorization-startup-arcade-nabs-60m-investment/iu, "AI Agent 授权初创公司 Arcade 获得 6000 万美元投资"],
+    [/the-decoder\.com\/googles-gemini-co-lead-noam-shazeer-joins-openai-after-two-year-return-stint/iu, "Google Gemini 联合负责人 Noam Shazeer 在回归两年后加入 OpenAI"],
+    [/ithome\.com\/0\/966\/109/iu, "负责 Meta AI 重组核心项目的高管埃米莉·道尔顿·史密斯即将离职"],
+    [/artificialintelligence-news\.com\/news\/computer-vision-deployments-drive-retail-productivity-gains/iu, "计算机视觉部署推动零售生产力提升"],
+    [/artificialintelligence-news\.com\/news\/hsbc-google-cloud-ai-partnership/iu, "HSBC 与 Google Cloud 扩大 AI 银行业务合作"],
+    [/salesforce\.com\/ap\/blog\/forward-deployed-engineer/iu, "当下最热门角色：Forward Deployed Engineer - Salesforce"],
+    [/ellamind\.com\/blog\/forward-deployed-engineer/iu, "从客户视角看：Forward Deployed Engineer 实际做什么"],
+    [/the-decoder\.com\/midjourney-known-for-ai-image-generation-unveils-a-full-body-ultrasound-scanner-and-its-own-spa/iu, "以 AI 图像生成闻名的 Midjourney 发布全身超声波扫描仪和自有水疗中心"],
+    [/marktechpost\.com\/2026\/06\/18\/perplexity-launches-brain/iu, "Perplexity 推出 Brain"],
+    [/techcrunch\.com\/2026\/06\/18\/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/iu, "Snap 因成本问题将 AI 视频团队剥离为新公司 Dotmo"],
+  ];
+  const readableUrlMatch = readableUrlTranslations.find(([pattern]) => pattern.test(normalized));
+  if (readableUrlMatch) return readableUrlMatch[1];
+  if (/techcrunch\.com\/2026\/06\/18\/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/iu.test(normalized)) {
+    return "Source: Elastic agrees to buy CRV-backed DeductiveAI for up to $85M";
+  }
+  if (/techcrunch\.com\/2026\/06\/18\/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/iu.test(normalized)) {
+    return "AI inference startup Baseten reportedly raising $1.5B months after its last mega-round";
+  }
+  if (/artificialintelligence-news\.com\/news\/computer-vision-deployments-drive-retail-productivity-gains/iu.test(normalized)) {
+    return "Computer vision deployments drive retail productivity gains";
+  }
+  if (/artificialintelligence-news\.com\/news\/hsbc-google-cloud-ai-partnership/iu.test(normalized)) {
+    return "HSBC and Google Cloud expand AI banking partnership";
+  }
+  if (/salesforce\.com\/ap\/blog\/forward-deployed-engineer/iu.test(normalized)) {
+    return "Today’s Hottest Role: Forward Deployed Engineer - Salesforce";
+  }
+  if (/ellamind\.com\/blog\/forward-deployed-engineer/iu.test(normalized)) {
+    return "From the Customer's Side of the Table: What a Forward Deployed Engineer Actually Does | ellamind Blog";
+  }
+  if (/the-decoder\.com\/midjourney-known-for-ai-image-generation-unveils-a-full-body-ultrasound-scanner-and-its-own-spa/iu.test(normalized)) {
+    return "Midjourney, known for AI image generation, unveils a full-body ultrasound scanner and its own spa";
+  }
+  if (/marktechpost\.com\/2026\/06\/18\/perplexity-launches-brain/iu.test(normalized)) {
+    return "Perplexity launches Brain";
+  }
+  if (/techcrunch\.com\/2026\/06\/18\/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/iu.test(normalized)) {
+    return "Snap spins off AI video team into new company, Dotmo, due to costs";
+  }
   if (/prnewswire\.com\/news-releases\/voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with-5-5-million-seed-round/iu.test(normalized)) {
     return "VoiceRun Launches Full-Stack Voice AI Platform for Enterprises with $5.5 Million Seed Round";
   }
@@ -570,6 +619,20 @@ function subjectFromUrl(url = "") {
     const host = parsed.hostname.replace(/^www\./u, "").toLowerCase();
     const pathname = parsed.pathname.toLowerCase();
     if (host === "openai.com") return "OpenAI";
+    if (host === "techcrunch.com" && pathname.includes("source-elastic-agrees-to-buy-crv-backed-deductiveai")) return "Elastic / DeductiveAI";
+    if (host === "techcrunch.com" && pathname.includes("ai-inference-startup-baseten")) return "Baseten";
+    if (host === "techcrunch.com" && pathname.includes("snap-spins-off-ai-video-team")) return "Snap / Dotmo";
+    if (host === "siliconangle.com" && pathname.includes("ai-agent-authorization-startup-arcade-nabs-60m-investment")) return "Arcade";
+    if (host === "the-decoder.com" && pathname.includes("noam-shazeer-joins-openai")) return "OpenAI / Noam Shazeer";
+    if (host === "ithome.com" && pathname.includes("966/109")) return "Meta / Metamate";
+    if (host === "ithome.com" && pathname.includes("965/989")) return "NVIDIA / ACE Game Agent SDK";
+    if (host === "artificialintelligence-news.com" && pathname.includes("computer-vision-deployments-drive-retail-productivity-gains")) return "Simbe / BJ's Wholesale Club";
+    if (host === "artificialintelligence-news.com" && pathname.includes("hsbc-google-cloud-ai-partnership")) return "HSBC / Google Cloud";
+    if (host === "salesforce.com" && pathname.includes("forward-deployed-engineer")) return "Salesforce / Agentforce";
+    if (host === "ellamind.com" && pathname.includes("forward-deployed-engineer")) return "ellamind / elluminate";
+    if (host === "delight.ai" && pathname.includes("norse-atlantic-airways")) return "Norse Atlantic Airways / delight.ai";
+    if (host === "the-decoder.com" && pathname.includes("midjourney-known-for-ai-image-generation")) return "Midjourney / Butterfly Network";
+    if (host === "marktechpost.com" && pathname.includes("perplexity-launches-brain")) return "Perplexity / Brain";
     if (host.endsWith("bcg.com")) return "BCG";
     if (host === "ai-sdk.dev") return "Vercel AI SDK";
     if (host === "aiseedfund.com") return "AI Seed";
@@ -742,6 +805,8 @@ function isWeakSubject(value = "") {
   const clean = normalizeSubject(value);
   if (!clean || isDiscoveryLabel(clean)) return true;
   if (/^\d{4}$/u.test(clean)) return true;
+  if (/^(AI business signal|Artificialintelligence-News|Today[’']s Hottest Role|From the Customer[’']s Side of the Table|Ltd\.?|Blog|Article|Post)$/iu.test(clean)) return true;
+  if (/^(TechCrunch|Techcrunch|Arstechnica|Ars Technica|MarkTechPost|Cfodive|Artificial Intelligence News)$/iu.test(clean)) return true;
   if (/^[a-z0-9.-]+\.(com|org|net|io|ai|dev|co)$/iu.test(clean)) return true;
   if (/^(LinkedIn|Linkedin|TechCrunch|Techcrunch|Arstechnica|Ars Technica|The[-\s]Decoder|Marktechpost|Siliconangle|Instagram|Apple Podcasts)$/iu.test(clean)) return true;
   if (/^(Requests for Startups|Enterprise AI Execution Problem|The Information'?s TITV)$/iu.test(clean)) return true;
@@ -986,6 +1051,9 @@ function publicContentNeedsTranslation(value = "") {
 function publicFactLooksLikeTemplateFallback(value = "") {
   const text = String(value || "").replace(/\s+/gu, " ").trim();
   if (!text) return true;
+  if (/^[A-Z][A-Za-z0-9&.' -]+ customer story$/iu.test(text)) return true;
+  if (/^(?:Ltd\.?|Inc\.?|LLC|Corp\.?|Company)\s*(?:\u83b7\u5f97|\u83b7|\u5b8c\u6210)\s*\$?\s*\d/iu.test(text)) return true;
+  if (/原文称|的公开案例显示|公开案例显示.*AI\s*正在进入|AI 正在进入客户、采购、商品内容或内部工作流/iu.test(text)) return true;
   return /\u539f\u6587\u6240\u8ff0(?:\u80fd\u529b|\u573a\u666f)/u.test(text)
     || /\u539f\u6587\s*AI\s*\u4e8b\u4ef6/u.test(text)
     || /\u516c\u5f00\u6750\u6599\u63d0\u4f9b\u4e86\u4e00\u6761\u53ef\u8ffd\u8e2a\u7684\s*AI\s*\u5546\u4e1a\u4fe1\u53f7/u.test(text)
@@ -1018,6 +1086,8 @@ function publicTextLooksGarbled(value = "") {
 function publicDisplayTitleIsReady(title = "") {
   const text = String(title || "").trim();
   if (!text) return false;
+  if (/\b(?:AI business signal|Artificialintelligence-News|Ltd\.)\b/iu.test(text)) return false;
+  if (/的公开案例显示|公开材料显示|原文称|AI 正在进入客户、采购、商品内容或内部工作流/iu.test(text)) return false;
   if (isBadPublicDisplayTitle(text) || isProcessedChineseTitle(text) || publicTitleLooksOverprocessed(text)) return false;
   if (publicTextLooksGarbled(text) || publicTitleNeedsTranslation(text)) return false;
   return true;
@@ -1339,7 +1409,26 @@ function translateEnglishTitle(title = "", sourceUrl = "") {
 function chineseFactFromSource(title = "", sourceUrl = "") {
   const text = String(title || "");
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
+  if (/delight\.ai\/customers\/norse-atlantic-airways/iu.test(normalized)) {
+    return "Norse Atlantic Airways 与 delight.ai 合作构建面向航空公司运营的 AI workforce，用于把客户互动和运营任务交给可编排的 AI 工作流处理。";
+  }
   const source = `${text}\n${normalized}`;
+  const readableUrlFacts = [
+    [/techcrunch\.com\/2026\/06\/18\/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/iu, "Elastic 同意以最高 8500 万美元收购 DeductiveAI；DeductiveAI 的 AI SRE 技术将并入 Elastic 可观测性平台，用于自动监控性能并修复系统故障。"],
+    [/techcrunch\.com\/2026\/06\/18\/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/iu, "Baseten 据报正以约 130 亿美元估值洽谈 15 亿美元融资，资金继续流向 AI 推理基础设施和模型部署服务。"],
+    [/siliconangle\.com\/2026\/06\/15\/ai-agent-authorization-startup-arcade-nabs-60m-investment/iu, "Arcade 完成 6000 万美元融资，用于扩展面向 AI Agent 的授权和工具访问控制平台。"],
+    [/the-decoder\.com\/googles-gemini-co-lead-noam-shazeer-joins-openai-after-two-year-return-stint/iu, "Google Gemini 联合负责人 Noam Shazeer 离开 Google 加入 OpenAI；他曾创办 Character.AI，并在回归 Google 后参与领导 Gemini 模型。"],
+    [/ithome\.com\/0\/966\/109/iu, "Meta AI 重组核心项目负责人埃米莉·道尔顿·史密斯即将离职；她负责推进企业级 AI 助手 Metamate 及内部智能体转型相关工作。"],
+    [/artificialintelligence-news\.com\/news\/computer-vision-deployments-drive-retail-productivity-gains/iu, "零售商正在部署计算机视觉货架跟踪系统；BJ's Wholesale Club 使用 Simbe 机器人监测库存和价格，推动在线拣货效率提升。"],
+    [/artificialintelligence-news\.com\/news\/hsbc-google-cloud-ai-partnership/iu, "HSBC 与 Google Cloud 签署多年 AI 合作协议，将 Gemini 模型和 Gemini Enterprise Agent 平台用于财富管理、金融犯罪风险管理和内部决策支持。"],
+    [/salesforce\.com\/ap\/blog\/forward-deployed-engineer/iu, "Salesforce 派出 Forward Deployed Engineer 团队，帮助一家预订平台修复 Agentforce 数据库和 Data 360 同步问题，使其 B2B AI agent 试点恢复运行。"],
+    [/ellamind\.com\/blog\/forward-deployed-engineer/iu, "ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。"],
+    [/the-decoder\.com\/midjourney-known-for-ai-image-generation-unveils-a-full-body-ultrasound-scanner-and-its-own-spa/iu, "Midjourney 与 Butterfly Network 合作推出全身超声波扫描仪，计划先提供身体成分图，并在 2027 年底开设首家水疗中心。"],
+    [/marktechpost\.com\/2026\/06\/18\/perplexity-launches-brain/iu, "Perplexity 为其智能体产品 Computer 推出 Brain 记忆系统，用上下文图记录代理工作、失败和用户修正，以提升后续任务表现。"],
+    [/techcrunch\.com\/2026\/06\/18\/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/iu, "Snap 将内部生成式 AI 视频团队剥离为独立公司 Dotmo，Snap 授权相关技术并取得股权，Dotmo 将继续开发互动游戏体验所需的 AI 模型。"],
+  ];
+  const readableUrlFact = readableUrlFacts.find(([pattern]) => pattern.test(normalized));
+  if (readableUrlFact) return readableUrlFact[1];
   const rules = [
     [/Willow Launches with \$7M to Build the Future of Enterprise AI Agent Governance/iu, "Willow 原文标题包含启动、700 万美元融资和企业 AI Agent 治理三个事实点。"],
     [/INXM Raises €5\.7 Million Pre-Seed To Bridge The Gap Between Enterprise AI Demos And Real Operational Deployment/iu, "INXM 获得 570 万欧元 Pre-Seed 融资，原文标题说明其目标是弥合企业 AI 演示与真实运营部署之间的差距。"],
@@ -2418,6 +2507,8 @@ function corePoolCandidateFact(section = "", title = "", sourceUrl = "") {
   const excerpt = Array.isArray(keyExcerpts)
     ? keyExcerpts.map((item) => translatedSourcePoint(item?.text || "", item?.type || "")).find(Boolean)
     : "";
+  const urlFact = chineseFactFromSource(sourceTitleFromUrlOverride(sourceUrl) || title, sourceUrl);
+  if (urlFact) return short(urlFact, 320);
   return short(
     excerpt
       || chineseFactFromSource(title, sourceUrl)

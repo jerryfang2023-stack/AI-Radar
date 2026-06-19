@@ -4,7 +4,7 @@
     "siteVersion": "SITE-V3.3.8.1",
     "businessSignalsColumnVersion": "BSIG-V1.1.0-enterprise-ai-transformation",
     "enterpriseAiLensVersion": "EAI-V1.1.0-fde-lens-pool",
-    "generatedAt": "2026-06-19T08:28:10.846Z",
+    "generatedAt": "2026-06-19T11:36:46.903Z",
     "activeDate": "2026-06-19",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -31,14 +31,14 @@
   },
   "summary": {
     "activeDate": "2026-06-19",
-    "totalCards": 326,
-    "todayCards": 19,
+    "totalCards": 325,
+    "todayCards": 18,
     "todayTop10": 10,
-    "corePoolCandidates": 18,
-    "linkedCorePoolCards": 14,
-    "candidateOnlyCorePool": 5,
+    "corePoolCandidates": 16,
+    "linkedCorePoolCards": 16,
+    "candidateOnlyCorePool": 1,
     "relationshipNodes": 28,
-    "relationshipEdges": 73,
+    "relationshipEdges": 72,
     "relationshipClusters": 3,
     "enterpriseAiTransformation": 5,
     "tagAssociations": 8,
@@ -48,89 +48,82 @@
   "dailyLens": {
     "top10CardIds": [
       "SIG-20260619-A18",
+      "SIG-20260619-A03",
+      "SIG-20260619-A13-case-https-www-artificialintelligence-news-com",
       "SIG-20260619-A01",
+      "SIG-20260619-A05",
       "SIG-20260619-A04",
       "SIG-20260619-A02",
+      "SIG-20260619-A16-case-https-delight-ai-customers",
       "SIG-20260619-A20-case-https-www-salesforce-com",
-      "SIG-20260619-A13-case-https-www-artificialintelligence-news-com",
-      "SIG-20260619-A05",
-      "SIG-20260619-A06-case-https-www-ellamind-com",
-      "SIG-20260619-A24",
-      "SIG-20260619-A08"
+      "SIG-20260619-A06-case-https-www-ellamind-com"
     ],
     "corePoolCardIds": [
-      "POOL-2026-06-19-P-006",
-      "POOL-2026-06-19-P-011",
       "POOL-2026-06-19-P-065",
-      "POOL-2026-06-19-P-066",
-      "POOL-2026-06-19-P-050",
       "SIG-20260619-A18",
+      "SIG-20260619-A03",
+      "SIG-20260619-A13-case-https-www-artificialintelligence-news-com",
       "SIG-20260619-A01",
+      "SIG-20260619-A05",
       "SIG-20260619-A04",
       "SIG-20260619-A02",
-      "SIG-20260619-A20-case-https-www-salesforce-com",
-      "SIG-20260619-A13-case-https-www-artificialintelligence-news-com",
-      "SIG-20260619-A03",
-      "SIG-20260619-A12",
-      "SIG-20260618-A03",
-      "SIG-20260619-A06-case-https-www-ellamind-com",
       "SIG-20260619-A16-case-https-delight-ai-customers",
+      "SIG-20260619-A20-case-https-www-salesforce-com",
+      "SIG-20260619-A12",
+      "SIG-20260619-A06-case-https-www-ellamind-com",
+      "SIG-20260618-A03",
+      "SIG-20260619-A23",
       "SIG-20260619-A21",
-      "SIG-20260619-A15",
+      "SIG-20260619-A08",
       "SIG-20260619-A19"
     ],
     "enterpriseAiTransformationCardIds": [
-      "FDE-2026-06-19-P-044",
-      "FDE-2026-06-19-P-050",
+      "SIG-20260619-A13-case-https-www-artificialintelligence-news-com",
       "SIG-20260619-A20-case-https-www-salesforce-com",
+      "SIG-20260619-A16-case-https-delight-ai-customers",
       "SIG-20260619-A04",
-      "SIG-20260619-A13-case-https-www-artificialintelligence-news-com"
+      "SIG-20260619-A06-case-https-www-ellamind-com"
     ],
     "largeCompanyTop10": [
+      {
+        "id": "SIG-20260619-A13-case-https-www-artificialintelligence-news-com",
+        "vendor": "google",
+        "title": "HSBC 与 Google Cloud 扩大 AI 银行业务合作"
+      },
       {
         "id": "SIG-20260619-A20-case-https-www-salesforce-com",
         "vendor": "salesforce",
         "title": "当下最热门角色：Forward Deployed Engineer - Salesforce"
-      },
-      {
-        "id": "SIG-20260619-A13-case-https-www-artificialintelligence-news-com",
-        "vendor": "google",
-        "title": "汇丰银行与Google Cloud扩大AI银行合作"
-      },
-      {
-        "id": "SIG-20260619-A24",
-        "vendor": "nvidia",
-        "title": "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…"
       }
     ],
     "categoryStats": [
       {
         "category": "case",
         "label": "案例",
-        "today": 11,
-        "last7": 58,
-        "last30": 140,
-        "total": 143,
+        "today": 10,
+        "last7": 57,
+        "last30": 139,
+        "total": 142,
         "topTags": [
           {
             "tag": "evidence-customer-adoption",
             "label": "客户采用",
-            "count": 11
+            "count": 10
           },
           {
             "tag": "track-ai-agent",
             "label": "AI Agent",
-            "count": 11
+            "count": 10
           },
           {
             "tag": "customer-enterprise",
             "label": "大中型企业",
-            "count": 9
+            "count": 8
           },
           {
             "tag": "track-enterprise-workflow",
             "label": "企业工作流",
-            "count": 9
+            "count": 8
           },
           {
             "tag": "customer-developer-team",
@@ -218,8 +211,8 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "计算机视觉货架跟踪推动零售业生产力提升",
-      "subject": "Artificialintelligence-News",
+      "title": "计算机视觉部署推动零售生产力提升",
+      "subject": "Simbe / BJ's Wholesale Club",
       "sourceName": "Artificial Intelligence News（RSS）",
       "sourceUrl": "https://www.artificialintelligence-news.com/news/computer-vision-deployments-drive-retail-productivity-gains",
       "sourceLevel": "B",
@@ -334,14 +327,14 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "汇丰银行与Google Cloud扩大AI银行合作",
-      "subject": "Artificialintelligence-News",
+      "title": "HSBC 与 Google Cloud 扩大 AI 银行业务合作",
+      "subject": "HSBC / Google Cloud",
       "sourceName": "Artificial Intelligence News（RSS）",
       "sourceUrl": "https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 668,
-      "evidenceScore": 44,
+      "rankScore": 690,
+      "evidenceScore": 66,
       "poolRoutes": [
         "core_pool"
       ],
@@ -418,7 +411,9 @@
         }
       ],
       "fact": "汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021年试点已发现2-4倍犯罪行为，每月筛查12亿笔交易，新协议下干预速度提升2倍。财",
-      "evidencePoints": [],
+      "evidencePoints": [
+        "HSBC / Google Cloud 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
       "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
       "selectionReasons": [
         "涉及资金流向、预算规模或融资信号",
@@ -436,14 +431,14 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "ellamind 的公开案例显示",
-      "subject": "From the Customer's Side of the Table",
+      "title": "从客户视角看：Forward Deployed Engineer 实际做什么",
+      "subject": "ellamind / elluminate",
       "sourceName": "ellamind.com",
       "sourceUrl": "https://www.ellamind.com/blog/forward-deployed-engineer",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 656,
-      "evidenceScore": 56,
+      "rankScore": 662,
+      "evidenceScore": 40,
       "poolRoutes": [
         "core_pool"
       ],
@@ -521,16 +516,17 @@
           "label": "客户采用"
         }
       ],
-      "fact": "ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
-      "evidencePoints": [
-        "原文未提供更多可拆分事实点，需以可见原文片段核对。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "fact": "ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。",
+      "evidencePoints": [],
+      "value": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
       "selectionReasons": [
+        "影响 AI 落地的治理、合规或安全边界",
         "能观察真实客户、业务流程或采购场景",
         "有较完整的原文事实支撑"
       ],
-      "qualityWarnings": [],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
       "fromCorePool": true
     },
     {
@@ -539,8 +535,8 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Gemini 联合负责人 Noam Shazeer 加入 OpenAI",
-      "subject": "AI business signal",
+      "title": "Google Gemini 联合负责人 Noam Shazeer 在回归两年后加入 OpenAI",
+      "subject": "OpenAI",
       "sourceName": "the-decoder.com",
       "sourceUrl": "https://the-decoder.com/googles-gemini-co-lead-noam-shazeer-joins-openai-after-two-year-return-stint",
       "sourceLevel": "A",
@@ -619,7 +615,7 @@
       ],
       "fact": "\"Attention Is All You Need\"论文合著者 Noam Shazeer 离开 Google 加入 OpenAI。他此前担任 Google 工程副总裁，与 Jeff Dean、Oriol Vinyals 共同领导 Gemini 模型。Shazeer 于 2000 年加入 Google，2021 年离职创办 AI 聊天机器人初创公司 Character.AI，2024 年作为价值 27 亿美元交易的一部分返回 Goog",
       "evidencePoints": [
-        "the-decoder 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "OpenAI / Noam Shazeer 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
       "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
       "selectionReasons": [
@@ -900,14 +896,14 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Norse Atlantic Airways 客户故事",
-      "subject": "Norse Atlantic Airways customer story",
+      "title": "Norse Atlantic Airways 与 delight.ai：构建航空公司未曾见过的 AI 劳动力",
+      "subject": "Norse Atlantic Airways / delight.ai",
       "sourceName": "delight.ai",
       "sourceUrl": "https://delight.ai/customers/norse-atlantic-airways",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 634,
-      "evidenceScore": 34,
+      "rankScore": 674,
+      "evidenceScore": 62,
       "poolRoutes": [
         "core_pool"
       ],
@@ -985,16 +981,17 @@
           "label": "客户采用"
         }
       ],
-      "fact": "Norse Atlantic Airways customer story",
+      "fact": "Norse Atlantic Airways 与 delight.ai 合作构建面向航空公司运营的 AI workforce，用于把客户互动和运营任务交给可编排的 AI 工作流处理。",
       "evidencePoints": [
-        "delight 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "Norse Atlantic Airways / delight.ai 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
       "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景"
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -1005,14 +1002,14 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心",
-      "subject": "AI business signal",
+      "title": "以 AI 图像生成闻名的 Midjourney 发布全身超声波扫描仪和自有水疗中心",
+      "subject": "Midjourney / Butterfly Network",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/midjourney-known-for-ai-image-generation-unveils-a-full-body-ultrasound-scanner-and-its-own-spa",
       "sourceLevel": "A",
       "importanceScore": 5,
-      "rankScore": 664,
-      "evidenceScore": 48,
+      "rankScore": 686,
+      "evidenceScore": 70,
       "poolRoutes": [
         "core_pool"
       ],
@@ -1084,7 +1081,9 @@
         }
       ],
       "fact": "Midjourney 与 Butterfly Network 合作推出全身超声波扫描仪。用户步入一池金色浅水，身体穿过水下传感器环，约 60 秒内生成无辐射 3D 身体图像。初期提供无需 FDA 批准的身体成分图，计划 2027 年底在旧金山开设首家水疗中心；2031 年前部署超过 5 万台扫描仪，每月完成 10 亿次扫描。第三代扫描仪预计 2028 年推出，采用完全定制硅片，成像质量和扫描时间将有\"昼夜之别\"。CEO David H",
-      "evidencePoints": [],
+      "evidencePoints": [
+        "Midjourney / Butterfly Network 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
       "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
       "selectionReasons": [
         "能观察真实客户、业务流程或采购场景",
@@ -1188,7 +1187,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "当下最热门角色：Forward Deployed Engineer - Salesforce",
-      "subject": "Today’s Hottest Role",
+      "subject": "Salesforce / Agentforce",
       "sourceName": "salesforce.com",
       "sourceUrl": "https://www.salesforce.com/ap/blog/forward-deployed-engineer/",
       "sourceLevel": "S",
@@ -1266,7 +1265,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "原文称一家预订平台刚用 Salesforce Agentforce 启动首个 B2B AI agent 试点，用于回答使用该服务的客户问题。",
+      "fact": "Salesforce 派出 Forward Deployed Engineer 团队，帮助一家预订平台修复 Agentforce 数据库和 Data 360 同步问题，使其 B2B AI agent 试点恢复运行。",
       "evidencePoints": [
         "原文称该 agent 因 Agentforce 数据库配置问题，部分客户问题无法稳定回答。",
         "原文称该预订平台需要把自身数据连接到 Agentforce，FDE 介入点是数据接入与知识同步。"
@@ -1283,99 +1282,13 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260619-A15",
-      "date": "2026-06-19",
-      "type": "signal_card",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "tsia 的公开案例显示",
-      "subject": "Tsia",
-      "sourceName": "tsia.com",
-      "sourceUrl": "https://www.tsia.com/blog/forward-deployed-engineering-ai-era",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 624,
-      "evidenceScore": 12,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "candidate",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "tsia 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
-      "evidencePoints": [
-        "原文未提供更多可拆分事实点，需以可见原文片段核对。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
-      ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
       "id": "SIG-20260619-A02",
       "date": "2026-06-19",
       "type": "signal_card",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "AI推理公司Baseten接近完成15亿美元融资",
-      "subject": "AI推理公司Baseten据报以130亿美元估值",
+      "title": "AI 推理初创公司 Baseten 据报在上一轮巨额融资数月后再融 15 亿美元",
+      "subject": "Baseten",
       "sourceName": "TechCrunch：AI（RSS）",
       "sourceUrl": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round",
       "sourceLevel": "A",
@@ -1478,8 +1391,8 @@
       "type": "signal_card",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "DeductiveAI 同意被 Elastic 以最高 8500 万美元收购",
-      "subject": "DeductiveAI",
+      "title": "Elastic 同意以最高 8500 万美元收购 CRV 支持的 DeductiveAI",
+      "subject": "Elastic / DeductiveAI",
       "sourceName": "TechCrunch：AI（RSS）",
       "sourceUrl": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m",
       "sourceLevel": "A",
@@ -1588,14 +1501,14 @@
       "type": "signal_card",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "Ltd. 获得6000万美元 融资",
-      "subject": "Ltd.",
+      "title": "AI Agent 授权初创公司 Arcade 获得 6000 万美元投资",
+      "subject": "Arcade",
       "sourceName": "siliconangle.com",
       "sourceUrl": "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment/",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 668,
-      "evidenceScore": 34,
+      "rankScore": 696,
+      "evidenceScore": 62,
       "poolRoutes": [
         "core_pool"
       ],
@@ -1660,17 +1573,17 @@
           "label": "升温"
         }
       ],
-      "fact": "Ltd. 获得$60M 融资，押注企业 Agent 协作平台",
+      "fact": "Arcade 完成 6000 万美元融资，用于扩展面向 AI Agent 的授权和工具访问控制平台。",
       "evidencePoints": [
-        "siliconangle 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "Arcade 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景。",
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
       "selectionReasons": [
         "涉及资金流向、预算规模或融资信号",
-        "能观察真实客户、业务流程或采购场景"
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -1802,8 +1715,8 @@
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…",
-      "subject": "英伟达在虚幻嘉年华 2026",
+      "title": "英伟达宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试",
+      "subject": "NVIDIA",
       "sourceName": "ithome.com",
       "sourceUrl": "https://www.ithome.com/0/965/989.htm",
       "sourceLevel": "B",
@@ -1925,7 +1838,7 @@
       ],
       "fact": "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RAG API。已有 KRAFTON 在《绝地求生》推出限时 AI 队友 Ally，",
       "evidencePoints": [
-        "ithome 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "NVIDIA / ACE Game Agent SDK 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
       "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
       "selectionReasons": [
@@ -1942,14 +1855,14 @@
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职",
-      "subject": "AI business signal",
+      "title": "负责 Meta AI 重组核心项目的高管埃米莉·道尔顿·史密斯即将离职",
+      "subject": "Meta",
       "sourceName": "IT之家（RSS）",
       "sourceUrl": "https://www.ithome.com/0/966/109.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 630,
-      "evidenceScore": 66,
+      "rankScore": 634,
+      "evidenceScore": 82,
       "poolRoutes": [
         "core_pool"
       ],
@@ -2045,7 +1958,7 @@
           "label": "产品发布"
         }
       ],
-      "fact": "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职。她于2015年加入Meta，曾任Threads产品负责人，两个月前刚被指派改进内部AI工具。Meta正推进全公司重组，计划开发能替代人类员工的AI智能体，引发内部强烈反弹。重组涉及裁撤10%员工、调岗及部署鼠标追踪软件。道尔顿·史密斯领导\"智能体转型加速计划\"（ATA）小组，负责企业级AI助手Metamate集成多种AI技能。Meta CTO博斯沃思坦言老员工士气跌至",
+      "fact": "IT之家 6 月 18 日消息，路透社 18 日（今天）援引内部公告消息称，负责 Meta AI 重组核心项目 的高管埃米莉 · 道尔顿 · 史密斯即将离职。",
       "evidencePoints": [
         "道尔顿 · 史密斯 2015 年加入 Meta，曾任产品管理副总裁，并担任 Threads 的产品负责人。",
         "约两个月前，Meta 才向员工宣布，道尔顿 · 史密斯将 负责改进内部 AI 工具 。",
@@ -2058,9 +1971,7 @@
         "指向平台能力、交付成本或生态合作变化",
         "有较完整的原文事实支撑"
       ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
+      "qualityWarnings": [],
       "fromCorePool": true
     },
     {
@@ -2069,8 +1980,8 @@
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进…",
-      "subject": "AI business signal",
+      "title": "Perplexity 推出 Brain",
+      "subject": "Perplexity / Brain",
       "sourceName": "MarkTechPost（RSS）",
       "sourceUrl": "https://www.marktechpost.com/2026/06/18/perplexity-launches-brain",
       "sourceLevel": "B",
@@ -2170,8 +2081,8 @@
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "Snap 将内部生成式 AI 视频团队剥离为独立公司 Dotmo",
-      "subject": "Snap 剥离 AI 视频团队成立新公司 Dotmo",
+      "title": "Snap 因成本问题将 AI 视频团队剥离为新公司 Dotmo",
+      "subject": "Snap / Dotmo",
       "sourceName": "TechCrunch：AI（RSS）",
       "sourceUrl": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs",
       "sourceLevel": "A",
@@ -4901,7 +4812,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "AI赋能CMS平台如何变革企业内容运营",
-      "subject": "Artificial Intelligence News",
+      "subject": "AI business signal",
       "sourceName": "Artificial Intelligence News（RSS）",
       "sourceUrl": "https://www.artificialintelligence-news.com/news/how-ai-powered-cms-platforms-are-transforming-enterprise-content-operations",
       "sourceLevel": "B",
@@ -5010,7 +4921,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "保险公司将AI战略转向核心风险承保",
-      "subject": "Artificialintelligence-News",
+      "subject": "AI business signal",
       "sourceName": "Artificial Intelligence News（RSS）",
       "sourceUrl": "https://www.artificialintelligence-news.com/news/insurers-pivot-ai-strategy-toward-core-risk-underwriting",
       "sourceLevel": "B",
@@ -5107,7 +5018,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "欧盟委员会发布《AI内容标注行为守则》",
-      "subject": "Artificialintelligence-News",
+      "subject": "AI business signal",
       "sourceName": "Artificial Intelligence News（RSS）",
       "sourceUrl": "https://www.artificialintelligence-news.com/news/ai-content-labelling-eu-code-of-practice",
       "sourceLevel": "B",
@@ -13915,7 +13826,7 @@
       "category": "case",
       "categoryLabel": "案例",
       "title": "Visa 将支付基础设施接入 ChatGPT",
-      "subject": "Artificial Intelligence News",
+      "subject": "AI business signal",
       "sourceName": "Artificial Intelligence News（RSS）",
       "sourceUrl": "https://www.artificialintelligence-news.com/news/visa-chatgpt-integration-enables-ai-agent-retail-purchasing",
       "sourceLevel": "B",
@@ -19436,8 +19347,8 @@
       "sourceUrl": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 694,
-      "evidenceScore": 56,
+      "rankScore": 636,
+      "evidenceScore": 28,
       "poolRoutes": [
         "core_pool"
       ],
@@ -19505,7 +19416,8 @@
       ],
       "fact": "prnewswire 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
       "evidencePoints": [
-        "原文未提供更多可拆分事实点，需以可见原文片段核对。"
+        "原文未提供更多可拆分事实点，需以可见原文片段核对。",
+        "prnewswire 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。"
       ],
       "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
       "selectionReasons": [
@@ -19513,7 +19425,9 @@
         "能观察真实客户、业务流程或采购场景",
         "指向平台能力、交付成本或生态合作变化"
       ],
-      "qualityWarnings": [],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
+      ],
       "fromCorePool": true
     },
     {
@@ -21430,8 +21344,8 @@
       "sourceUrl": "https://www.ycombinator.com/companies/lio",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 656,
-      "evidenceScore": 56,
+      "rankScore": 610,
+      "evidenceScore": 28,
       "poolRoutes": [
         "core_pool"
       ],
@@ -21507,12 +21421,13 @@
       "evidencePoints": [
         "原文未提供更多可拆分事实点，需以可见原文片段核对。"
       ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
       "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
+        "能观察真实客户、业务流程或采购场景"
       ],
-      "qualityWarnings": [],
+      "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据"
+      ],
       "fromCorePool": true
     },
     {
@@ -35667,101 +35582,6 @@
   ],
   "corePoolCandidates": [
     {
-      "id": "POOL-2026-06-19-P-006",
-      "date": "2026-06-19",
-      "type": "core_pool_candidate",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "title": "General Intuition 洽谈约3亿美元融资，估值超20亿美元",
-      "subject": "General Intuition 洽谈约3亿美元",
-      "sourceName": "techcrunch.com",
-      "sourceUrl": "https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation",
-      "sourceLevel": "A",
-      "importanceScore": 5,
-      "rankScore": 960,
-      "evidenceScore": 95,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-006"
-      ],
-      "linkedCardId": "",
-      "status": "pooled",
-      "promotionStatus": "candidate_only",
-      "notPromotedReason": "暂未晋级正式 Card",
-      "notPromotedIssues": [],
-      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
-      "promotePriority": "review",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {},
-      "flatTags": [],
-      "displayTags": [
-        {
-          "id": "funding",
-          "label": "融资"
-        }
-      ],
-      "fact": "从游戏剪辑平台Medal剥离的AI初创公司General Intuition正洽谈约3亿美元融资，估值超20亿美元。本轮距其1.34亿美元种子轮仅8个月，投资方包括Jeff Bezos、Eric Schmidt及现有投资者Khosla Ventures、General Catalyst。公司利用Medal每年20亿条视频（来自1000万月活用户）训练具身AI与世界模型，通过第一人称交互数据实现空间-时间推理。OpenAI曾试图收购Me",
-      "evidencePoints": [],
-      "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
-      "selectionReasons": [
-        "进入当天 Core Pool 候选池",
-        "保留为完整证据池材料"
-      ],
-      "qualityWarnings": [],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-19-P-011",
-      "date": "2026-06-19",
-      "type": "core_pool_candidate",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "Claude Code v2.1.183 发布",
-      "subject": "Claude Code",
-      "sourceName": "github.com",
-      "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.183",
-      "sourceLevel": "S",
-      "importanceScore": 5,
-      "rankScore": 960,
-      "evidenceScore": 84,
-      "poolRoutes": [
-        "core_pool",
-        "emerging_pool"
-      ],
-      "poolRefs": [
-        "P-011"
-      ],
-      "linkedCardId": "",
-      "status": "pooled",
-      "promotionStatus": "candidate_only",
-      "notPromotedReason": "暂未晋级正式 Card",
-      "notPromotedIssues": [],
-      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
-      "promotePriority": "review",
-      "largeVendor": true,
-      "largeVendorKey": "anthropic",
-      "tags": {},
-      "flatTags": [],
-      "displayTags": [
-        {
-          "id": "product-service",
-          "label": "产品"
-        }
-      ],
-      "fact": "Claude Code v2.1.183 增强了自动模式安全性：未经请求时阻止 `git reset --hard`、`git commit --amend`（非本轮提交）、`terraform destroy` 等破坏性命令。新增 `attribution.sessionUrl` 设置，可省略 claude.ai 会话链接；`/config --help` 列出所有速记键；`/config` 切换行为改为 Enter/Space 变",
-      "evidencePoints": [],
-      "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
-      "selectionReasons": [
-        "进入当天 Core Pool 候选池",
-        "保留为完整证据池材料"
-      ],
-      "qualityWarnings": [],
-      "fromCorePool": true
-    },
-    {
       "id": "POOL-2026-06-19-P-065",
       "date": "2026-06-19",
       "type": "core_pool_candidate",
@@ -35798,101 +35618,7 @@
           "label": "产品"
         }
       ],
-      "fact": "OpenAI 升级 ChatGPT 医疗能力，新模型 GPT-5.5 Instant 在 HealthBench 及 HealthBench Professional 测试中达到最贵 Thinking 模型水平，成本大幅降低。该模型对所有免费用户开放（有使用限制），其回答在准确性、清晰度和完整性上优于医生书写的回答，过去两个月错误健康陈述减少 71%。超 260 名来自 60 个国家的医生审查了 70 多万条模型响应。每周有超 2.3",
-      "evidencePoints": [],
-      "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
-      "selectionReasons": [
-        "进入当天 Core Pool 候选池",
-        "保留为完整证据池材料"
-      ],
-      "qualityWarnings": [],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-19-P-066",
-      "date": "2026-06-19",
-      "type": "core_pool_candidate",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "title": "OpenAI 成为 Rust 基金会白金会员，合计赞助 60 万美元",
-      "subject": "OpenAI",
-      "sourceName": "ithome.com",
-      "sourceUrl": "https://www.ithome.com/0/966/146.htm",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 960,
-      "evidenceScore": 46,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-066"
-      ],
-      "linkedCardId": "",
-      "status": "pooled",
-      "promotionStatus": "candidate_only",
-      "notPromotedReason": "暂未晋级正式 Card",
-      "notPromotedIssues": [],
-      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
-      "promotePriority": "review",
-      "largeVendor": true,
-      "largeVendorKey": "openai",
-      "tags": {},
-      "flatTags": [],
-      "displayTags": [
-        {
-          "id": "funding",
-          "label": "融资"
-        }
-      ],
-      "fact": "6月18日，Rust基金会宣布OpenAI以白金会员身份加入，并提供总计60万美元（约406.5万元人民币）的资金支持，涵盖入会费用、额外拨款及生态系统维护。该资金将用于Rust Project Goals、Rust Innovation Lab等计划，为开源项目维护者提供系统化支持。Rust基金会是由AWS、谷歌、微软等联合创立的独立非营利组织。",
-      "evidencePoints": [],
-      "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
-      "selectionReasons": [
-        "进入当天 Core Pool 候选池",
-        "保留为完整证据池材料"
-      ],
-      "qualityWarnings": [],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-19-P-050",
-      "date": "2026-06-19",
-      "type": "core_pool_candidate",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "从嵌入式到无处不在：PagerDuty 如何诞生 Forward Deployed Engineering",
-      "subject": "pagerduty 的原文事件标题",
-      "sourceName": "pagerduty.com",
-      "sourceUrl": "https://www.pagerduty.com/eng/from-embedded-to-everywhere-how-forward-deployed-engineering-was-born-at-pagerduty/",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 890,
-      "evidenceScore": 97,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-050"
-      ],
-      "linkedCardId": "",
-      "status": "pooled",
-      "promotionStatus": "candidate_only",
-      "notPromotedReason": "暂未晋级正式 Card",
-      "notPromotedIssues": [],
-      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
-      "promotePriority": "review",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {},
-      "flatTags": [],
-      "displayTags": [
-        {
-          "id": "product-service",
-          "label": "产品"
-        }
-      ],
-      "fact": "原文称 PagerDuty 正式启动 Forward Deployed Engineering 后，工程师用 AI Delivery Workbench 处理客户现场的功能缺口。",
+      "fact": "OpenAI 升级 ChatGPT 医疗能力：GPT-5.5 Instant 达到 Thinking 模型水平，免费可用",
       "evidencePoints": [],
       "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
       "selectionReasons": [
@@ -35908,8 +35634,8 @@
       "type": "core_pool_candidate",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "Snap 将内部生成式 AI 视频团队剥离为独立公司 Dotmo",
-      "subject": "Snap 剥离 AI 视频团队成立新公司 Dotmo",
+      "title": "Snap 因成本问题将 AI 视频团队剥离为新公司 Dotmo",
+      "subject": "Snap / Dotmo",
       "sourceName": "TechCrunch：AI（RSS）",
       "sourceUrl": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs",
       "sourceLevel": "A",
@@ -36020,13 +35746,214 @@
       "fromCorePool": true
     },
     {
+      "id": "POOL-2026-06-19-P-055",
+      "date": "2026-06-19",
+      "type": "core_pool_candidate",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "AI Agent 授权初创公司 Arcade 获得 6000 万美元投资",
+      "subject": "Arcade",
+      "sourceName": "siliconangle.com",
+      "sourceUrl": "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment/",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 696,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [
+        "P-055"
+      ],
+      "linkedCardId": "SIG-20260619-A03",
+      "status": "signal_card",
+      "promotionStatus": "promoted_to_signal_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-funding"
+        ],
+        "stage": [
+          "stage-rising"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "customer-enterprise",
+        "evidence-funding",
+        "stage-rising",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        },
+        {
+          "id": "stage-rising",
+          "label": "升温"
+        }
+      ],
+      "fact": "Arcade 完成 6000 万美元融资，用于扩展面向 AI Agent 的授权和工具访问控制平台。",
+      "evidencePoints": [
+        "Arcade 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "POOL-2026-06-19-P-025",
+      "date": "2026-06-19",
+      "type": "core_pool_candidate",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "HSBC 与 Google Cloud 扩大 AI 银行业务合作",
+      "subject": "HSBC / Google Cloud",
+      "sourceName": "Artificial Intelligence News（RSS）",
+      "sourceUrl": "https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 690,
+      "evidenceScore": 66,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [
+        "P-025"
+      ],
+      "linkedCardId": "SIG-20260619-A13-case-https-www-artificialintelligence-news-com",
+      "status": "signal_card",
+      "promotionStatus": "promoted_to_signal_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": true,
+      "largeVendorKey": "google",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-partnership-integration",
+          "evidence-customer-metric",
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "customer-enterprise",
+        "evidence-partnership-integration",
+        "evidence-customer-metric",
+        "evidence-customer-adoption",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-partnership-integration",
+          "label": "合作集成"
+        },
+        {
+          "id": "evidence-customer-metric",
+          "label": "客户指标"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "fact": "汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021年试点已发现2-4倍犯罪行为，每月筛查12亿笔交易，新协议下干预速度提升2倍。财",
+      "evidencePoints": [
+        "HSBC / Google Cloud 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "POOL-2026-06-19-P-002",
       "date": "2026-06-19",
       "type": "core_pool_candidate",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "DeductiveAI 同意被 Elastic 以最高 8500 万美元收购",
-      "subject": "DeductiveAI",
+      "title": "Elastic 同意以最高 8500 万美元收购 CRV 支持的 DeductiveAI",
+      "subject": "Elastic / DeductiveAI",
       "sourceName": "TechCrunch：AI（RSS）",
       "sourceUrl": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m",
       "sourceLevel": "A",
@@ -36132,13 +36059,114 @@
       "fromCorePool": true
     },
     {
+      "id": "POOL-2026-06-19-P-010",
+      "date": "2026-06-19",
+      "type": "core_pool_candidate",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "以 AI 图像生成闻名的 Midjourney 发布全身超声波扫描仪和自有水疗中心",
+      "subject": "Midjourney / Butterfly Network",
+      "sourceName": "The Decoder：AI News（RSS）",
+      "sourceUrl": "https://the-decoder.com/midjourney-known-for-ai-image-generation-unveils-a-full-body-ultrasound-scanner-and-its-own-spa",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "rankScore": 686,
+      "evidenceScore": 70,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [
+        "P-010"
+      ],
+      "linkedCardId": "SIG-20260619-A05",
+      "status": "signal_card",
+      "promotionStatus": "promoted_to_signal_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-ai-coding"
+        ],
+        "function": [
+          "function-engineering"
+        ],
+        "scenario": [],
+        "customer": [
+          "customer-developer-team"
+        ],
+        "evidence": [
+          "evidence-partnership-integration",
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-business-media"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-ai-coding",
+        "function-engineering",
+        "customer-developer-team",
+        "evidence-partnership-integration",
+        "evidence-customer-adoption",
+        "source-business-media"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
+          "id": "function-engineering",
+          "label": "工程研发"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
+        },
+        {
+          "id": "evidence-partnership-integration",
+          "label": "合作集成"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "fact": "Midjourney 与 Butterfly Network 合作推出全身超声波扫描仪。用户步入一池金色浅水，身体穿过水下传感器环，约 60 秒内生成无辐射 3D 身体图像。初期提供无需 FDA 批准的身体成分图，计划 2027 年底在旧金山开设首家水疗中心；2031 年前部署超过 5 万台扫描仪，每月完成 10 亿次扫描。第三代扫描仪预计 2028 年推出，采用完全定制硅片，成像质量和扫描时间将有\"昼夜之别\"。CEO David H",
+      "evidencePoints": [
+        "Midjourney / Butterfly Network 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "POOL-2026-06-19-P-004",
       "date": "2026-06-19",
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "计算机视觉货架跟踪推动零售业生产力提升",
-      "subject": "Artificialintelligence-News",
+      "title": "计算机视觉部署推动零售生产力提升",
+      "subject": "Simbe / BJ's Wholesale Club",
       "sourceName": "Artificial Intelligence News（RSS）",
       "sourceUrl": "https://www.artificialintelligence-news.com/news/computer-vision-deployments-drive-retail-productivity-gains",
       "sourceLevel": "B",
@@ -36255,8 +36283,8 @@
       "type": "core_pool_candidate",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "AI推理公司Baseten接近完成15亿美元融资",
-      "subject": "AI推理公司Baseten据报以130亿美元估值",
+      "title": "AI 推理初创公司 Baseten 据报在上一轮巨额融资数月后再融 15 亿美元",
+      "subject": "Baseten",
       "sourceName": "TechCrunch：AI（RSS）",
       "sourceUrl": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round",
       "sourceLevel": "A",
@@ -36356,13 +36384,121 @@
       "fromCorePool": true
     },
     {
+      "id": "POOL-2026-06-19-P-041",
+      "date": "2026-06-19",
+      "type": "core_pool_candidate",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "Norse Atlantic Airways 与 delight.ai：构建航空公司未曾见过的 AI 劳动力",
+      "subject": "Norse Atlantic Airways / delight.ai",
+      "sourceName": "delight.ai",
+      "sourceUrl": "https://delight.ai/customers/norse-atlantic-airways",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 674,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [
+        "P-041"
+      ],
+      "linkedCardId": "SIG-20260619-A16-case-https-delight-ai-customers",
+      "status": "signal_card",
+      "promotionStatus": "promoted_to_signal_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-customer-service"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-customer-ticket"
+        ],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-customer-service",
+        "function-customer-service",
+        "scenario-customer-ticket",
+        "customer-enterprise",
+        "evidence-customer-adoption",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
+          "id": "function-customer-service",
+          "label": "客服售后"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "fact": "Norse Atlantic Airways 与 delight.ai 合作构建面向航空公司运营的 AI workforce，用于把客户互动和运营任务交给可编排的 AI 工作流处理。",
+      "evidencePoints": [
+        "Norse Atlantic Airways / delight.ai 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "POOL-2026-06-19-P-034",
       "date": "2026-06-19",
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
       "title": "当下最热门角色：Forward Deployed Engineer - Salesforce",
-      "subject": "Today’s Hottest Role",
+      "subject": "Salesforce / Agentforce",
       "sourceName": "salesforce.com",
       "sourceUrl": "https://www.salesforce.com/ap/blog/forward-deployed-engineer/",
       "sourceLevel": "S",
@@ -36442,7 +36578,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "原文称一家预订平台刚用 Salesforce Agentforce 启动首个 B2B AI agent 试点，用于回答使用该服务的客户问题。",
+      "fact": "Salesforce 派出 Forward Deployed Engineer 团队，帮助一家预订平台修复 Agentforce 数据库和 Data 360 同步问题，使其 B2B AI agent 试点恢复运行。",
       "evidencePoints": [
         "原文称该 agent 因 Agentforce 数据库配置问题，部分客户问题无法稳定回答。",
         "原文称该预订平台需要把自身数据连接到 Agentforce，FDE 介入点是数据接入与知识同步。"
@@ -36454,205 +36590,6 @@
         "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-19-P-025",
-      "date": "2026-06-19",
-      "type": "core_pool_candidate",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "汇丰银行与Google Cloud扩大AI银行合作",
-      "subject": "Artificialintelligence-News",
-      "sourceName": "Artificial Intelligence News（RSS）",
-      "sourceUrl": "https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 668,
-      "evidenceScore": 44,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-025"
-      ],
-      "linkedCardId": "SIG-20260619-A13-case-https-www-artificialintelligence-news-com",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "google",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow",
-          "track-ai-infra"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-partnership-integration",
-          "evidence-customer-metric",
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "track-ai-infra",
-        "customer-enterprise",
-        "evidence-partnership-integration",
-        "evidence-customer-metric",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-partnership-integration",
-          "label": "合作集成"
-        },
-        {
-          "id": "evidence-customer-metric",
-          "label": "客户指标"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021年试点已发现2-4倍犯罪行为，每月筛查12亿笔交易，新协议下干预速度提升2倍。财",
-      "evidencePoints": [],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
-      "selectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-19-P-055",
-      "date": "2026-06-19",
-      "type": "core_pool_candidate",
-      "category": "funding",
-      "categoryLabel": "融资",
-      "title": "Ltd. 获得6000万美元 融资",
-      "subject": "Ltd.",
-      "sourceName": "siliconangle.com",
-      "sourceUrl": "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment/",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 668,
-      "evidenceScore": 34,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-055"
-      ],
-      "linkedCardId": "SIG-20260619-A03",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-funding"
-        ],
-        "stage": [
-          "stage-rising"
-        ],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "customer-enterprise",
-        "evidence-funding",
-        "stage-rising",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-funding",
-          "label": "融资证据"
-        },
-        {
-          "id": "stage-rising",
-          "label": "升温"
-        }
-      ],
-      "fact": "Ltd. 获得$60M 融资，押注企业 Agent 协作平台",
-      "evidencePoints": [
-        "siliconangle 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景。",
-      "selectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
-        "能观察真实客户、业务流程或采购场景"
-      ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -36782,6 +36719,112 @@
       "fromCorePool": true
     },
     {
+      "id": "POOL-2026-06-19-P-043",
+      "date": "2026-06-19",
+      "type": "core_pool_candidate",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "从客户视角看：Forward Deployed Engineer 实际做什么",
+      "subject": "ellamind / elluminate",
+      "sourceName": "ellamind.com",
+      "sourceUrl": "https://www.ellamind.com/blog/forward-deployed-engineer",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 662,
+      "evidenceScore": 40,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [
+        "P-043"
+      ],
+      "linkedCardId": "SIG-20260619-A06-case-https-www-ellamind-com",
+      "status": "signal_card",
+      "promotionStatus": "promoted_to_signal_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-customer-service"
+        ],
+        "function": [
+          "function-customer-service"
+        ],
+        "scenario": [
+          "scenario-customer-ticket"
+        ],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-customer-service",
+        "function-customer-service",
+        "scenario-customer-ticket",
+        "customer-enterprise",
+        "evidence-customer-adoption",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
+          "id": "function-customer-service",
+          "label": "客服售后"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "fact": "ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。",
+      "evidencePoints": [],
+      "value": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "影响 AI 落地的治理、合规或安全边界",
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
       "id": "POOL-2026-06-19-P-056",
       "date": "2026-06-18",
       "type": "core_pool_candidate",
@@ -36878,156 +36921,54 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-19-P-043",
+      "id": "POOL-2026-06-19-P-064",
       "date": "2026-06-19",
       "type": "core_pool_candidate",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "ellamind 的公开案例显示",
-      "subject": "From the Customer's Side of the Table",
-      "sourceName": "ellamind.com",
-      "sourceUrl": "https://www.ellamind.com/blog/forward-deployed-engineer",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 656,
-      "evidenceScore": 56,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-043"
-      ],
-      "linkedCardId": "SIG-20260619-A06-case-https-www-ellamind-com",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow",
-          "track-ai-customer-service"
-        ],
-        "function": [
-          "function-customer-service"
-        ],
-        "scenario": [
-          "scenario-customer-ticket"
-        ],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "track-ai-customer-service",
-        "function-customer-service",
-        "scenario-customer-ticket",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "track-ai-customer-service",
-          "label": "AI 客服"
-        },
-        {
-          "id": "function-customer-service",
-          "label": "客服售后"
-        },
-        {
-          "id": "scenario-customer-ticket",
-          "label": "工单与质检"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
-      "evidencePoints": [
-        "原文未提供更多可拆分事实点，需以可见原文片段核对。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景",
-        "有较完整的原文事实支撑"
-      ],
-      "qualityWarnings": [],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-19-P-041",
-      "date": "2026-06-19",
-      "type": "core_pool_candidate",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "Norse Atlantic Airways 客户故事",
-      "subject": "Norse Atlantic Airways customer story",
-      "sourceName": "delight.ai",
-      "sourceUrl": "https://delight.ai/customers/norse-atlantic-airways",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "负责 Meta AI 重组核心项目的高管埃米莉·道尔顿·史密斯即将离职",
+      "subject": "Meta",
+      "sourceName": "IT之家（RSS）",
+      "sourceUrl": "https://www.ithome.com/0/966/109.htm",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 634,
-      "evidenceScore": 34,
+      "evidenceScore": 82,
       "poolRoutes": [
         "core_pool"
       ],
       "poolRefs": [
-        "P-041"
+        "P-064"
       ],
-      "linkedCardId": "SIG-20260619-A16-case-https-delight-ai-customers",
+      "linkedCardId": "SIG-20260619-A23",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
       "notPromotedIssues": [],
       "repairSuggestion": "",
       "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
+      "largeVendor": true,
+      "largeVendorKey": "meta",
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-enterprise-workflow",
-          "track-ai-customer-service"
+          "track-ai-coding",
+          "track-enterprise-workflow"
         ],
         "function": [
-          "function-customer-service"
+          "function-engineering",
+          "function-sales"
         ],
         "scenario": [
-          "scenario-customer-ticket"
+          "scenario-sales-briefing"
         ],
         "customer": [
+          "customer-developer-team",
           "customer-enterprise"
         ],
         "evidence": [
-          "evidence-customer-adoption"
+          "evidence-partnership-integration",
+          "evidence-product-launch"
         ],
         "stage": [],
         "region": [],
@@ -37037,12 +36978,15 @@
       },
       "flatTags": [
         "track-ai-agent",
+        "track-ai-coding",
         "track-enterprise-workflow",
-        "track-ai-customer-service",
-        "function-customer-service",
-        "scenario-customer-ticket",
+        "function-engineering",
+        "function-sales",
+        "scenario-sales-briefing",
+        "customer-developer-team",
         "customer-enterprise",
-        "evidence-customer-adoption",
+        "evidence-partnership-integration",
+        "evidence-product-launch",
         "source-industry-data"
       ],
       "displayTags": [
@@ -37051,42 +36995,56 @@
           "label": "AI Agent"
         },
         {
+          "id": "track-ai-coding",
+          "label": "AI Coding"
+        },
+        {
           "id": "track-enterprise-workflow",
           "label": "企业工作流"
         },
         {
-          "id": "track-ai-customer-service",
-          "label": "AI 客服"
+          "id": "function-engineering",
+          "label": "工程研发"
         },
         {
-          "id": "function-customer-service",
-          "label": "客服售后"
+          "id": "function-sales",
+          "label": "销售"
         },
         {
-          "id": "scenario-customer-ticket",
-          "label": "工单与质检"
+          "id": "scenario-sales-briefing",
+          "label": "销售日报"
+        },
+        {
+          "id": "customer-developer-team",
+          "label": "开发团队"
         },
         {
           "id": "customer-enterprise",
           "label": "大中型企业"
         },
         {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
+          "id": "evidence-partnership-integration",
+          "label": "合作集成"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
         }
       ],
-      "fact": "Norse Atlantic Airways customer story",
+      "fact": "IT之家 6 月 18 日消息，路透社 18 日（今天）援引内部公告消息称，负责 Meta AI 重组核心项目 的高管埃米莉 · 道尔顿 · 史密斯即将离职。",
       "evidencePoints": [
-        "delight 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "道尔顿 · 史密斯 2015 年加入 Meta，曾任产品管理副总裁，并担任 Threads 的产品负责人。",
+        "约两个月前，Meta 才向员工宣布，道尔顿 · 史密斯将 负责改进内部 AI 工具 。",
+        "Meta 正在推进全公司重组，希望把 AI 同时置于面向用户的产品和内部工作流程中心。",
+        "Meta 希望通过重组开发能够 自主完成人类员工现有工作 的 AI 智能体，但这项计划已经在内部引发强烈反弹。"
       ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
       "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景"
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
       ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
-        "可见原文片段不足，已降权处理"
-      ],
+      "qualityWarnings": [],
       "fromCorePool": true
     },
     {
@@ -37232,26 +37190,26 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-19-P-038",
+      "id": "POOL-2026-06-19-P-015",
       "date": "2026-06-19",
       "type": "core_pool_candidate",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "tsia 的公开案例显示",
-      "subject": "Tsia",
-      "sourceName": "tsia.com",
-      "sourceUrl": "https://www.tsia.com/blog/forward-deployed-engineering-ai-era",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Perplexity 推出 Brain",
+      "subject": "Perplexity / Brain",
+      "sourceName": "MarkTechPost（RSS）",
+      "sourceUrl": "https://www.marktechpost.com/2026/06/18/perplexity-launches-brain",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 624,
-      "evidenceScore": 12,
+      "evidenceScore": 44,
       "poolRoutes": [
         "core_pool"
       ],
       "poolRefs": [
-        "P-038"
+        "P-015"
       ],
-      "linkedCardId": "SIG-20260619-A15",
+      "linkedCardId": "SIG-20260619-A08",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -37263,7 +37221,8 @@
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-enterprise-workflow"
+          "track-enterprise-workflow",
+          "track-ai-infra"
         ],
         "function": [],
         "scenario": [],
@@ -37271,7 +37230,9 @@
           "customer-enterprise"
         ],
         "evidence": [
-          "evidence-customer-adoption"
+          "evidence-pricing-cost",
+          "evidence-customer-metric",
+          "evidence-product-launch"
         ],
         "stage": [],
         "region": [],
@@ -37282,8 +37243,11 @@
       "flatTags": [
         "track-ai-agent",
         "track-enterprise-workflow",
+        "track-ai-infra",
         "customer-enterprise",
-        "evidence-customer-adoption",
+        "evidence-pricing-cost",
+        "evidence-customer-metric",
+        "evidence-product-launch",
         "source-industry-data"
       ],
       "displayTags": [
@@ -37296,25 +37260,34 @@
           "label": "企业工作流"
         },
         {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
           "id": "customer-enterprise",
           "label": "大中型企业"
         },
         {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
+          "id": "evidence-pricing-cost",
+          "label": "价格成本"
+        },
+        {
+          "id": "evidence-customer-metric",
+          "label": "客户指标"
+        },
+        {
+          "id": "evidence-product-launch",
+          "label": "产品发布"
         }
       ],
-      "fact": "tsia 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
-      "evidencePoints": [
-        "原文未提供更多可拆分事实点，需以可见原文片段核对。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "fact": "Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升：答案正确性 +25%、召回 +16%、成本 -13%（基于 Perplexity 内部测试）。Brain 今日以 Research Preview 形式",
+      "evidencePoints": [],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
       "selectionReasons": [
         "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
+        "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -37450,7 +37423,7 @@
         "id": "category:案例",
         "label": "案例",
         "type": "category",
-        "weight": 11,
+        "weight": 10,
         "category": "case"
       },
       {
@@ -37468,22 +37441,6 @@
         "category": "funding"
       },
       {
-        "id": "subject:Artificialintelligence-News",
-        "label": "Artificialintelligence-News",
-        "type": "subject",
-        "weight": 2,
-        "category": "case",
-        "sourceName": "Artificial Intelligence News（RSS）"
-      },
-      {
-        "id": "subject:英伟达在虚幻嘉年华-2026",
-        "label": "英伟达在虚幻嘉年华 2026",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "ithome.com"
-      },
-      {
         "id": "subject:AI-账单失控",
         "label": "AI 账单失控",
         "type": "subject",
@@ -37492,8 +37449,16 @@
         "sourceName": "IT之家（RSS）"
       },
       {
-        "id": "subject:AI推理公司Baseten据报以130亿美元估值",
-        "label": "AI推理公司Baseten据报以130亿美元估值",
+        "id": "subject:Arcade",
+        "label": "Arcade",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "siliconangle.com"
+      },
+      {
+        "id": "subject:Baseten",
+        "label": "Baseten",
         "type": "subject",
         "weight": 1,
         "category": "funding",
@@ -37508,16 +37473,16 @@
         "sourceName": "Claude：Blog（网页）"
       },
       {
-        "id": "subject:DeductiveAI",
-        "label": "DeductiveAI",
+        "id": "subject:Elastic-/-DeductiveAI",
+        "label": "Elastic / DeductiveAI",
         "type": "subject",
         "weight": 1,
         "category": "funding",
         "sourceName": "TechCrunch：AI（RSS）"
       },
       {
-        "id": "subject:From-the-Customer's-Side-of-the-Table",
-        "label": "From the Customer's Side of the Table",
+        "id": "subject:ellamind-/-elluminate",
+        "label": "ellamind / elluminate",
         "type": "subject",
         "weight": 1,
         "category": "case",
@@ -37532,60 +37497,84 @@
         "sourceName": "Google Developers Blog（RSS）"
       },
       {
-        "id": "subject:IT之家（RSS）",
-        "label": "IT之家（RSS）",
+        "id": "subject:HSBC-/-Google-Cloud",
+        "label": "HSBC / Google Cloud",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "Artificial Intelligence News（RSS）"
+      },
+      {
+        "id": "subject:Meta",
+        "label": "Meta",
         "type": "subject",
         "weight": 1,
         "category": "product-service",
         "sourceName": "IT之家（RSS）"
       },
       {
-        "id": "subject:Ltd.",
-        "label": "Ltd.",
-        "type": "subject",
-        "weight": 1,
-        "category": "funding",
-        "sourceName": "siliconangle.com"
-      },
-      {
-        "id": "subject:MarkTechPost（RSS）",
-        "label": "MarkTechPost（RSS）",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "MarkTechPost（RSS）"
-      },
-      {
-        "id": "subject:Norse-Atlantic-Airways-customer-story",
-        "label": "Norse Atlantic Airways customer story",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "delight.ai"
-      },
-      {
-        "id": "subject:Snap-剥离-AI-视频团队成立新公司-Dotmo",
-        "label": "Snap 剥离 AI 视频团队成立新公司 Dotmo",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "TechCrunch：AI（RSS）"
-      },
-      {
-        "id": "subject:The-Decoder：AI-News（RSS）",
-        "label": "The Decoder：AI News（RSS）",
+        "id": "subject:Midjourney-/-Butterfly-Network",
+        "label": "Midjourney / Butterfly Network",
         "type": "subject",
         "weight": 1,
         "category": "case",
         "sourceName": "The Decoder：AI News（RSS）"
       },
       {
-        "id": "subject:the-decoder.com",
-        "label": "the-decoder.com",
+        "id": "subject:Norse-Atlantic-Airways-/-delight.ai",
+        "label": "Norse Atlantic Airways / delight.ai",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "delight.ai"
+      },
+      {
+        "id": "subject:NVIDIA",
+        "label": "NVIDIA",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "ithome.com"
+      },
+      {
+        "id": "subject:OpenAI",
+        "label": "OpenAI",
         "type": "subject",
         "weight": 1,
         "category": "case",
         "sourceName": "the-decoder.com"
+      },
+      {
+        "id": "subject:Perplexity-/-Brain",
+        "label": "Perplexity / Brain",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "MarkTechPost（RSS）"
+      },
+      {
+        "id": "subject:Salesforce-/-Agentforce",
+        "label": "Salesforce / Agentforce",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "salesforce.com"
+      },
+      {
+        "id": "subject:Simbe-/-BJ's-Wholesale-Club",
+        "label": "Simbe / BJ's Wholesale Club",
+        "type": "subject",
+        "weight": 1,
+        "category": "case",
+        "sourceName": "Artificial Intelligence News（RSS）"
+      },
+      {
+        "id": "subject:Snap-/-Dotmo",
+        "label": "Snap / Dotmo",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "TechCrunch：AI（RSS）"
       },
       {
         "id": "subject:Thoughtworks",
@@ -37596,33 +37585,17 @@
         "sourceName": "thoughtworks.com"
       },
       {
-        "id": "subject:Today’s-Hottest-Role",
-        "label": "Today’s Hottest Role",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "salesforce.com"
-      },
-      {
-        "id": "subject:Tsia",
-        "label": "Tsia",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "tsia.com"
-      },
-      {
         "id": "signal:track-ai-agent",
         "label": "AI Agent",
         "type": "signal",
-        "weight": 19,
+        "weight": 18,
         "tag": "track-ai-agent"
       },
       {
         "id": "signal:track-enterprise-workflow",
         "label": "企业工作流",
         "type": "signal",
-        "weight": 15,
+        "weight": 14,
         "tag": "track-enterprise-workflow"
       },
       {
@@ -37640,18 +37613,18 @@
         "tag": "track-ai-infra"
       },
       {
-        "id": "signal:customer-enterprise",
-        "label": "大中型企业",
-        "type": "signal",
-        "weight": 3,
-        "tag": "customer-enterprise"
-      },
-      {
         "id": "signal:function-sales",
         "label": "销售",
         "type": "signal",
         "weight": 3,
         "tag": "function-sales"
+      },
+      {
+        "id": "signal:customer-enterprise",
+        "label": "大中型企业",
+        "type": "signal",
+        "weight": 2,
+        "tag": "customer-enterprise"
       },
       {
         "id": "signal:track-ai-customer-service",
@@ -37664,68 +37637,50 @@
     "edges": [
       {
         "from": "category:案例",
-        "to": "subject:Artificialintelligence-News",
+        "to": "subject:Simbe-/-BJ's-Wholesale-Club",
         "label": "案例",
-        "weight": 2,
+        "weight": 1,
         "cardIds": [
-          "SIG-20260619-A04",
-          "SIG-20260619-A13-case-https-www-artificialintelligence-news-com"
+          "SIG-20260619-A04"
         ],
         "titles": [
-          "计算机视觉货架跟踪推动零售业生产力提升",
-          "汇丰银行与Google Cloud扩大AI银行合作"
-        ]
-      },
-      {
-        "from": "subject:Artificialintelligence-News",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 2,
-        "cardIds": [
-          "SIG-20260619-A04",
-          "SIG-20260619-A13-case-https-www-artificialintelligence-news-com"
-        ],
-        "titles": [
-          "计算机视觉货架跟踪推动零售业生产力提升",
-          "汇丰银行与Google Cloud扩大AI银行合作"
-        ]
-      },
-      {
-        "from": "subject:Artificialintelligence-News",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 2,
-        "cardIds": [
-          "SIG-20260619-A04",
-          "SIG-20260619-A13-case-https-www-artificialintelligence-news-com"
-        ],
-        "titles": [
-          "计算机视觉货架跟踪推动零售业生产力提升",
-          "汇丰银行与Google Cloud扩大AI银行合作"
+          "计算机视觉部署推动零售生产力提升"
         ]
       },
       {
         "from": "category:案例",
-        "to": "subject:From-the-Customer's-Side-of-the-Table",
+        "to": "subject:HSBC-/-Google-Cloud",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A13-case-https-www-artificialintelligence-news-com"
+        ],
+        "titles": [
+          "HSBC 与 Google Cloud 扩大 AI 银行业务合作"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:ellamind-/-elluminate",
         "label": "案例",
         "weight": 1,
         "cardIds": [
           "SIG-20260619-A06-case-https-www-ellamind-com"
         ],
         "titles": [
-          "ellamind 的公开案例显示"
+          "从客户视角看：Forward Deployed Engineer 实际做什么"
         ]
       },
       {
         "from": "category:案例",
-        "to": "subject:the-decoder.com",
+        "to": "subject:OpenAI",
         "label": "案例",
         "weight": 1,
         "cardIds": [
           "SIG-20260619-A22"
         ],
         "titles": [
-          "Gemini 联合负责人 Noam Shazeer 加入 OpenAI"
+          "Google Gemini 联合负责人 Noam Shazeer 在回归两年后加入 OpenAI"
         ]
       },
       {
@@ -37754,26 +37709,26 @@
       },
       {
         "from": "category:案例",
-        "to": "subject:Norse-Atlantic-Airways-customer-story",
+        "to": "subject:Norse-Atlantic-Airways-/-delight.ai",
         "label": "案例",
         "weight": 1,
         "cardIds": [
           "SIG-20260619-A16-case-https-delight-ai-customers"
         ],
         "titles": [
-          "Norse Atlantic Airways 客户故事"
+          "Norse Atlantic Airways 与 delight.ai：构建航空公司未曾见过的 AI 劳动力"
         ]
       },
       {
         "from": "category:案例",
-        "to": "subject:The-Decoder：AI-News（RSS）",
+        "to": "subject:Midjourney-/-Butterfly-Network",
         "label": "案例",
         "weight": 1,
         "cardIds": [
           "SIG-20260619-A05"
         ],
         "titles": [
-          "Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心"
+          "以 AI 图像生成闻名的 Midjourney 发布全身超声波扫描仪和自有水疗中心"
         ]
       },
       {
@@ -37790,7 +37745,7 @@
       },
       {
         "from": "category:案例",
-        "to": "subject:Today’s-Hottest-Role",
+        "to": "subject:Salesforce-/-Agentforce",
         "label": "案例",
         "weight": 1,
         "cardIds": [
@@ -37798,18 +37753,6 @@
         ],
         "titles": [
           "当下最热门角色：Forward Deployed Engineer - Salesforce"
-        ]
-      },
-      {
-        "from": "category:案例",
-        "to": "subject:Tsia",
-        "label": "案例",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260619-A15"
-        ],
-        "titles": [
-          "tsia 的公开案例显示"
         ]
       },
       {
@@ -37826,54 +37769,78 @@
       },
       {
         "from": "category:产品",
-        "to": "subject:英伟达在虚幻嘉年华-2026",
+        "to": "subject:NVIDIA",
         "label": "产品",
         "weight": 1,
         "cardIds": [
           "SIG-20260619-A24"
         ],
         "titles": [
-          "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…"
+          "英伟达宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试"
         ]
       },
       {
         "from": "category:产品",
-        "to": "subject:IT之家（RSS）",
+        "to": "subject:Meta",
         "label": "产品",
         "weight": 1,
         "cardIds": [
           "SIG-20260619-A23"
         ],
         "titles": [
-          "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职"
+          "负责 Meta AI 重组核心项目的高管埃米莉·道尔顿·史密斯即将离职"
         ]
       },
       {
         "from": "category:产品",
-        "to": "subject:MarkTechPost（RSS）",
+        "to": "subject:Perplexity-/-Brain",
         "label": "产品",
         "weight": 1,
         "cardIds": [
           "SIG-20260619-A08"
         ],
         "titles": [
-          "Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进…"
+          "Perplexity 推出 Brain"
         ]
       },
       {
         "from": "category:产品",
-        "to": "subject:Snap-剥离-AI-视频团队成立新公司-Dotmo",
+        "to": "subject:Snap-/-Dotmo",
         "label": "产品",
         "weight": 1,
         "cardIds": [
           "SIG-20260619-A18"
         ],
         "titles": [
-          "Snap 将内部生成式 AI 视频团队剥离为独立公司 Dotmo"
+          "Snap 因成本问题将 AI 视频团队剥离为新公司 Dotmo"
         ]
       },
       {
-        "from": "subject:Artificialintelligence-News",
+        "from": "subject:Simbe-/-BJ's-Wholesale-Club",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A04"
+        ],
+        "titles": [
+          "计算机视觉部署推动零售生产力提升"
+        ]
+      },
+      {
+        "from": "subject:Simbe-/-BJ's-Wholesale-Club",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A04"
+        ],
+        "titles": [
+          "计算机视觉部署推动零售生产力提升"
+        ]
+      },
+      {
+        "from": "subject:Simbe-/-BJ's-Wholesale-Club",
         "to": "signal:function-sales",
         "label": "关联",
         "weight": 1,
@@ -37881,11 +37848,35 @@
           "SIG-20260619-A04"
         ],
         "titles": [
-          "计算机视觉货架跟踪推动零售业生产力提升"
+          "计算机视觉部署推动零售生产力提升"
         ]
       },
       {
-        "from": "subject:Artificialintelligence-News",
+        "from": "subject:HSBC-/-Google-Cloud",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A13-case-https-www-artificialintelligence-news-com"
+        ],
+        "titles": [
+          "HSBC 与 Google Cloud 扩大 AI 银行业务合作"
+        ]
+      },
+      {
+        "from": "subject:HSBC-/-Google-Cloud",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260619-A13-case-https-www-artificialintelligence-news-com"
+        ],
+        "titles": [
+          "HSBC 与 Google Cloud 扩大 AI 银行业务合作"
+        ]
+      },
+      {
+        "from": "subject:HSBC-/-Google-Cloud",
         "to": "signal:track-ai-infra",
         "label": "关联",
         "weight": 1,
@@ -37893,11 +37884,11 @@
           "SIG-20260619-A13-case-https-www-artificialintelligence-news-com"
         ],
         "titles": [
-          "汇丰银行与Google Cloud扩大AI银行合作"
+          "HSBC 与 Google Cloud 扩大 AI 银行业务合作"
         ]
       },
       {
-        "from": "subject:From-the-Customer's-Side-of-the-Table",
+        "from": "subject:ellamind-/-elluminate",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -37905,11 +37896,11 @@
           "SIG-20260619-A06-case-https-www-ellamind-com"
         ],
         "titles": [
-          "ellamind 的公开案例显示"
+          "从客户视角看：Forward Deployed Engineer 实际做什么"
         ]
       },
       {
-        "from": "subject:From-the-Customer's-Side-of-the-Table",
+        "from": "subject:ellamind-/-elluminate",
         "to": "signal:track-enterprise-workflow",
         "label": "关联",
         "weight": 1,
@@ -37917,11 +37908,11 @@
           "SIG-20260619-A06-case-https-www-ellamind-com"
         ],
         "titles": [
-          "ellamind 的公开案例显示"
+          "从客户视角看：Forward Deployed Engineer 实际做什么"
         ]
       },
       {
-        "from": "subject:From-the-Customer's-Side-of-the-Table",
+        "from": "subject:ellamind-/-elluminate",
         "to": "signal:track-ai-customer-service",
         "label": "关联",
         "weight": 1,
@@ -37929,11 +37920,11 @@
           "SIG-20260619-A06-case-https-www-ellamind-com"
         ],
         "titles": [
-          "ellamind 的公开案例显示"
+          "从客户视角看：Forward Deployed Engineer 实际做什么"
         ]
       },
       {
-        "from": "subject:the-decoder.com",
+        "from": "subject:OpenAI",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -37941,11 +37932,11 @@
           "SIG-20260619-A22"
         ],
         "titles": [
-          "Gemini 联合负责人 Noam Shazeer 加入 OpenAI"
+          "Google Gemini 联合负责人 Noam Shazeer 在回归两年后加入 OpenAI"
         ]
       },
       {
-        "from": "subject:the-decoder.com",
+        "from": "subject:OpenAI",
         "to": "signal:track-ai-coding",
         "label": "关联",
         "weight": 1,
@@ -37953,11 +37944,11 @@
           "SIG-20260619-A22"
         ],
         "titles": [
-          "Gemini 联合负责人 Noam Shazeer 加入 OpenAI"
+          "Google Gemini 联合负责人 Noam Shazeer 在回归两年后加入 OpenAI"
         ]
       },
       {
-        "from": "subject:the-decoder.com",
+        "from": "subject:OpenAI",
         "to": "signal:track-ai-infra",
         "label": "关联",
         "weight": 1,
@@ -37965,7 +37956,7 @@
           "SIG-20260619-A22"
         ],
         "titles": [
-          "Gemini 联合负责人 Noam Shazeer 加入 OpenAI"
+          "Google Gemini 联合负责人 Noam Shazeer 在回归两年后加入 OpenAI"
         ]
       },
       {
@@ -38041,7 +38032,7 @@
         ]
       },
       {
-        "from": "subject:Norse-Atlantic-Airways-customer-story",
+        "from": "subject:Norse-Atlantic-Airways-/-delight.ai",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -38049,11 +38040,11 @@
           "SIG-20260619-A16-case-https-delight-ai-customers"
         ],
         "titles": [
-          "Norse Atlantic Airways 客户故事"
+          "Norse Atlantic Airways 与 delight.ai：构建航空公司未曾见过的 AI 劳动力"
         ]
       },
       {
-        "from": "subject:Norse-Atlantic-Airways-customer-story",
+        "from": "subject:Norse-Atlantic-Airways-/-delight.ai",
         "to": "signal:track-enterprise-workflow",
         "label": "关联",
         "weight": 1,
@@ -38061,11 +38052,11 @@
           "SIG-20260619-A16-case-https-delight-ai-customers"
         ],
         "titles": [
-          "Norse Atlantic Airways 客户故事"
+          "Norse Atlantic Airways 与 delight.ai：构建航空公司未曾见过的 AI 劳动力"
         ]
       },
       {
-        "from": "subject:Norse-Atlantic-Airways-customer-story",
+        "from": "subject:Norse-Atlantic-Airways-/-delight.ai",
         "to": "signal:track-ai-customer-service",
         "label": "关联",
         "weight": 1,
@@ -38073,11 +38064,11 @@
           "SIG-20260619-A16-case-https-delight-ai-customers"
         ],
         "titles": [
-          "Norse Atlantic Airways 客户故事"
+          "Norse Atlantic Airways 与 delight.ai：构建航空公司未曾见过的 AI 劳动力"
         ]
       },
       {
-        "from": "subject:The-Decoder：AI-News（RSS）",
+        "from": "subject:Midjourney-/-Butterfly-Network",
         "to": "signal:track-ai-agent",
         "label": "关联",
         "weight": 1,
@@ -38085,11 +38076,11 @@
           "SIG-20260619-A05"
         ],
         "titles": [
-          "Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心"
+          "以 AI 图像生成闻名的 Midjourney 发布全身超声波扫描仪和自有水疗中心"
         ]
       },
       {
-        "from": "subject:The-Decoder：AI-News（RSS）",
+        "from": "subject:Midjourney-/-Butterfly-Network",
         "to": "signal:track-ai-coding",
         "label": "关联",
         "weight": 1,
@@ -38097,7 +38088,7 @@
           "SIG-20260619-A05"
         ],
         "titles": [
-          "Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心"
+          "以 AI 图像生成闻名的 Midjourney 发布全身超声波扫描仪和自有水疗中心"
         ]
       },
       {
@@ -38123,77 +38114,53 @@
         "titles": [
           "Thoughtworks 发布新的 AI 产品或平台能力"
         ]
-      },
-      {
-        "from": "subject:Thoughtworks",
-        "to": "signal:customer-enterprise",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260619-A12-case-https-www-thoughtworks-com"
-        ],
-        "titles": [
-          "Thoughtworks 发布新的 AI 产品或平台能力"
-        ]
-      },
-      {
-        "from": "subject:Today’s-Hottest-Role",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260619-A20-case-https-www-salesforce-com"
-        ],
-        "titles": [
-          "当下最热门角色：Forward Deployed Engineer - Salesforce"
-        ]
       }
     ],
     "clusters": [
       {
         "id": "agent-workflow-enterprise",
-        "title": "Artificialintelligence-News、AI 账单失控 记录 Agent 进入采购、数据连接和企业流程",
+        "title": "AI 账单失控、ellamind / elluminate 记录 Agent 进入采购、数据连接和企业流程",
         "direction": "企业工作流",
         "relation": [
           "AI Agent",
           "企业工作流",
           "大中型企业"
         ],
-        "summary": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
-        "evidenceMeta": "素材：Artificialintelligence-News / AI 账单失控 / From the Customer's Side of the Table",
-        "detailFocus": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
-        "todayCount": 9,
-        "last7Count": 49,
-        "last30Count": 118,
+        "summary": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。",
+        "evidenceMeta": "素材：AI 账单失控 / ellamind / elluminate / Googleblog",
+        "detailFocus": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。",
+        "todayCount": 8,
+        "last7Count": 48,
+        "last30Count": 117,
         "subjects": [
-          {
-            "label": "Artificialintelligence-News",
-            "count": 2
-          },
           {
             "label": "AI 账单失控",
             "count": 1
           },
           {
-            "label": "From the Customer's Side of the Table",
+            "label": "ellamind / elluminate",
             "count": 1
           },
           {
             "label": "Googleblog",
+            "count": 1
+          },
+          {
+            "label": "HSBC / Google Cloud",
             "count": 1
           }
         ],
         "categories": [
           {
             "label": "案例",
-            "count": 9
+            "count": 8
           }
         ],
         "supportingCards": [
           {
             "id": "SIG-20260619-A04",
-            "title": "计算机视觉货架跟踪推动零售业生产力提升",
-            "subject": "Artificialintelligence-News",
+            "title": "计算机视觉部署推动零售生产力提升",
+            "subject": "Simbe / BJ's Wholesale Club",
             "categoryLabel": "案例",
             "sourceName": "Artificial Intelligence News（RSS）",
             "sourceUrl": "https://www.artificialintelligence-news.com/news/computer-vision-deployments-drive-retail-productivity-gains",
@@ -38201,8 +38168,8 @@
           },
           {
             "id": "SIG-20260619-A13-case-https-www-artificialintelligence-news-com",
-            "title": "汇丰银行与Google Cloud扩大AI银行合作",
-            "subject": "Artificialintelligence-News",
+            "title": "HSBC 与 Google Cloud 扩大 AI 银行业务合作",
+            "subject": "HSBC / Google Cloud",
             "categoryLabel": "案例",
             "sourceName": "Artificial Intelligence News（RSS）",
             "sourceUrl": "https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership",
@@ -38210,8 +38177,8 @@
           },
           {
             "id": "SIG-20260619-A06-case-https-www-ellamind-com",
-            "title": "ellamind 的公开案例显示",
-            "subject": "From the Customer's Side of the Table",
+            "title": "从客户视角看：Forward Deployed Engineer 实际做什么",
+            "subject": "ellamind / elluminate",
             "categoryLabel": "案例",
             "sourceName": "ellamind.com",
             "sourceUrl": "https://www.ellamind.com/blog/forward-deployed-engineer",
@@ -38230,30 +38197,34 @@
       },
       {
         "id": "product-launch-vs-adoption",
-        "title": "英伟达在虚幻嘉年华 2026、Claude Code 同日出现在企业 AI 产品发布里",
+        "title": "Claude Code、Meta 同日出现在企业 AI 产品发布里",
         "direction": "产品发布",
         "relation": [
           "产品发布",
           "客户采用",
           "商业验证"
         ],
-        "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... 负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职。她于2015年加入Meta，曾任Threads产品负责人，两个月前刚被指派改进内部AI工具。Meta正推进全公司重组，计划开发能替代人类员工的AI智能体，引发内部强烈反弹。重组涉及裁撤10%员工、调岗及部署鼠标追踪软件。道尔顿·史密斯领导\"智能体转型加速计划\"（ATA）小组，负责企业级AI...",
-        "evidenceMeta": "素材：英伟达在虚幻嘉年华 2026 / Claude Code / Snap 剥离 AI 视频团队成立新公司 Dotmo",
-        "detailFocus": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... 负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职。她于2015年加入Meta，曾任Threads产品负责人，两个月前刚被指派改进内部AI工具。Meta正推进全公司重组，计划开发能替代人类员工的AI智能体，引发内部强烈反弹。重组涉及裁撤10%员工、调岗及部署鼠标追踪软件。道尔顿·史密斯领导\"智能体转型加速计划\"（ATA）小组，负责企业级AI...",
+        "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... IT之家 6 月 18 日消息，路透社 18 日（今天）援引内部公告消息称，负责 Meta AI 重组核心项目 的高管埃米莉 · 道尔顿 · 史密斯即将离职。",
+        "evidenceMeta": "素材：Claude Code / Meta / NVIDIA",
+        "detailFocus": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... IT之家 6 月 18 日消息，路透社 18 日（今天）援引内部公告消息称，负责 Meta AI 重组核心项目 的高管埃米莉 · 道尔顿 · 史密斯即将离职。",
         "todayCount": 5,
         "last7Count": 50,
         "last30Count": 133,
         "subjects": [
           {
-            "label": "英伟达在虚幻嘉年华 2026",
-            "count": 1
-          },
-          {
             "label": "Claude Code",
             "count": 1
           },
           {
-            "label": "Snap 剥离 AI 视频团队成立新公司 Dotmo",
+            "label": "Meta",
+            "count": 1
+          },
+          {
+            "label": "NVIDIA",
+            "count": 1
+          },
+          {
+            "label": "Perplexity / Brain",
             "count": 1
           }
         ],
@@ -38275,8 +38246,8 @@
           },
           {
             "id": "SIG-20260619-A24",
-            "title": "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…",
-            "subject": "英伟达在虚幻嘉年华 2026",
+            "title": "英伟达宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试",
+            "subject": "NVIDIA",
             "categoryLabel": "产品",
             "sourceName": "ithome.com",
             "sourceUrl": "https://www.ithome.com/0/965/989.htm",
@@ -38284,8 +38255,8 @@
           },
           {
             "id": "SIG-20260619-A23",
-            "title": "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职",
-            "subject": "AI business signal",
+            "title": "负责 Meta AI 重组核心项目的高管埃米莉·道尔顿·史密斯即将离职",
+            "subject": "Meta",
             "categoryLabel": "产品",
             "sourceName": "IT之家（RSS）",
             "sourceUrl": "https://www.ithome.com/0/966/109.htm",
@@ -38293,8 +38264,8 @@
           },
           {
             "id": "SIG-20260619-A08",
-            "title": "Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进…",
-            "subject": "AI business signal",
+            "title": "Perplexity 推出 Brain",
+            "subject": "Perplexity / Brain",
             "categoryLabel": "产品",
             "sourceName": "MarkTechPost（RSS）",
             "sourceUrl": "https://www.marktechpost.com/2026/06/18/perplexity-launches-brain",
@@ -38346,48 +38317,48 @@
   "relationshipDirections": [
     {
       "id": "agent-workflow-enterprise",
-      "title": "Artificialintelligence-News、AI 账单失控 记录 Agent 进入采购、数据连接和企业流程",
+      "title": "AI 账单失控、ellamind / elluminate 记录 Agent 进入采购、数据连接和企业流程",
       "direction": "企业工作流",
       "relation": [
         "AI Agent",
         "企业工作流",
         "大中型企业"
       ],
-      "summary": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
-      "evidenceMeta": "素材：Artificialintelligence-News / AI 账单失控 / From the Customer's Side of the Table",
-      "detailFocus": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
-      "todayCount": 9,
-      "last7Count": 49,
-      "last30Count": 118,
+      "summary": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。",
+      "evidenceMeta": "素材：AI 账单失控 / ellamind / elluminate / Googleblog",
+      "detailFocus": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。",
+      "todayCount": 8,
+      "last7Count": 48,
+      "last30Count": 117,
       "subjects": [
-        {
-          "label": "Artificialintelligence-News",
-          "count": 2
-        },
         {
           "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "From the Customer's Side of the Table",
+          "label": "ellamind / elluminate",
           "count": 1
         },
         {
           "label": "Googleblog",
+          "count": 1
+        },
+        {
+          "label": "HSBC / Google Cloud",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 9
+          "count": 8
         }
       ],
       "supportingCards": [
         {
           "id": "SIG-20260619-A04",
-          "title": "计算机视觉货架跟踪推动零售业生产力提升",
-          "subject": "Artificialintelligence-News",
+          "title": "计算机视觉部署推动零售生产力提升",
+          "subject": "Simbe / BJ's Wholesale Club",
           "categoryLabel": "案例",
           "sourceName": "Artificial Intelligence News（RSS）",
           "sourceUrl": "https://www.artificialintelligence-news.com/news/computer-vision-deployments-drive-retail-productivity-gains",
@@ -38395,8 +38366,8 @@
         },
         {
           "id": "SIG-20260619-A13-case-https-www-artificialintelligence-news-com",
-          "title": "汇丰银行与Google Cloud扩大AI银行合作",
-          "subject": "Artificialintelligence-News",
+          "title": "HSBC 与 Google Cloud 扩大 AI 银行业务合作",
+          "subject": "HSBC / Google Cloud",
           "categoryLabel": "案例",
           "sourceName": "Artificial Intelligence News（RSS）",
           "sourceUrl": "https://www.artificialintelligence-news.com/news/hsbc-google-cloud-ai-partnership",
@@ -38404,8 +38375,8 @@
         },
         {
           "id": "SIG-20260619-A06-case-https-www-ellamind-com",
-          "title": "ellamind 的公开案例显示",
-          "subject": "From the Customer's Side of the Table",
+          "title": "从客户视角看：Forward Deployed Engineer 实际做什么",
+          "subject": "ellamind / elluminate",
           "categoryLabel": "案例",
           "sourceName": "ellamind.com",
           "sourceUrl": "https://www.ellamind.com/blog/forward-deployed-engineer",
@@ -38424,30 +38395,34 @@
     },
     {
       "id": "product-launch-vs-adoption",
-      "title": "英伟达在虚幻嘉年华 2026、Claude Code 同日出现在企业 AI 产品发布里",
+      "title": "Claude Code、Meta 同日出现在企业 AI 产品发布里",
       "direction": "产品发布",
       "relation": [
         "产品发布",
         "客户采用",
         "商业验证"
       ],
-      "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... 负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职。她于2015年加入Meta，曾任Threads产品负责人，两个月前刚被指派改进内部AI工具。Meta正推进全公司重组，计划开发能替代人类员工的AI智能体，引发内部强烈反弹。重组涉及裁撤10%员工、调岗及部署鼠标追踪软件。道尔顿·史密斯领导\"智能体转型加速计划\"（ATA）小组，负责企业级AI...",
-      "evidenceMeta": "素材：英伟达在虚幻嘉年华 2026 / Claude Code / Snap 剥离 AI 视频团队成立新公司 Dotmo",
-      "detailFocus": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... 负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职。她于2015年加入Meta，曾任Threads产品负责人，两个月前刚被指派改进内部AI工具。Meta正推进全公司重组，计划开发能替代人类员工的AI智能体，引发内部强烈反弹。重组涉及裁撤10%员工、调岗及部署鼠标追踪软件。道尔顿·史密斯领导\"智能体转型加速计划\"（ATA）小组，负责企业级AI...",
+      "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... IT之家 6 月 18 日消息，路透社 18 日（今天）援引内部公告消息称，负责 Meta AI 重组核心项目 的高管埃米莉 · 道尔顿 · 史密斯即将离职。",
+      "evidenceMeta": "素材：Claude Code / Meta / NVIDIA",
+      "detailFocus": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... IT之家 6 月 18 日消息，路透社 18 日（今天）援引内部公告消息称，负责 Meta AI 重组核心项目 的高管埃米莉 · 道尔顿 · 史密斯即将离职。",
       "todayCount": 5,
       "last7Count": 50,
       "last30Count": 133,
       "subjects": [
         {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
           "label": "Claude Code",
           "count": 1
         },
         {
-          "label": "Snap 剥离 AI 视频团队成立新公司 Dotmo",
+          "label": "Meta",
+          "count": 1
+        },
+        {
+          "label": "NVIDIA",
+          "count": 1
+        },
+        {
+          "label": "Perplexity / Brain",
           "count": 1
         }
       ],
@@ -38469,8 +38444,8 @@
         },
         {
           "id": "SIG-20260619-A24",
-          "title": "英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK…",
-          "subject": "英伟达在虚幻嘉年华 2026",
+          "title": "英伟达宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试",
+          "subject": "NVIDIA",
           "categoryLabel": "产品",
           "sourceName": "ithome.com",
           "sourceUrl": "https://www.ithome.com/0/965/989.htm",
@@ -38478,8 +38453,8 @@
         },
         {
           "id": "SIG-20260619-A23",
-          "title": "负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职",
-          "subject": "AI business signal",
+          "title": "负责 Meta AI 重组核心项目的高管埃米莉·道尔顿·史密斯即将离职",
+          "subject": "Meta",
           "categoryLabel": "产品",
           "sourceName": "IT之家（RSS）",
           "sourceUrl": "https://www.ithome.com/0/966/109.htm",
@@ -38487,8 +38462,8 @@
         },
         {
           "id": "SIG-20260619-A08",
-          "title": "Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进…",
-          "subject": "AI business signal",
+          "title": "Perplexity 推出 Brain",
+          "subject": "Perplexity / Brain",
           "categoryLabel": "产品",
           "sourceName": "MarkTechPost（RSS）",
           "sourceUrl": "https://www.marktechpost.com/2026/06/18/perplexity-launches-brain",
@@ -38540,27 +38515,27 @@
     {
       "object": "track-ai-agent",
       "label": "AI Agent",
-      "todayCount": 19,
-      "last7Count": 126,
-      "last30Count": 315,
+      "todayCount": 18,
+      "last7Count": 125,
+      "last30Count": 314,
       "subjects": [
         {
-          "label": "Artificialintelligence-News",
-          "count": 2
-        },
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
+          "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI 账单失控",
+          "label": "Arcade",
+          "count": 1
+        },
+        {
+          "label": "Baseten",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 11
+          "count": 10
         },
         {
           "label": "产品",
@@ -38575,17 +38550,17 @@
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 15
+          "count": 14
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 15
+          "count": 14
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 11
+          "count": 10
         },
         {
           "tag": "customer-developer-team",
@@ -38597,27 +38572,27 @@
     {
       "object": "customer-enterprise",
       "label": "大中型企业",
-      "todayCount": 15,
-      "last7Count": 89,
-      "last30Count": 237,
+      "todayCount": 14,
+      "last7Count": 88,
+      "last30Count": 236,
       "subjects": [
         {
-          "label": "Artificialintelligence-News",
-          "count": 2
-        },
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
+          "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI 账单失控",
+          "label": "Arcade",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 9
+          "count": 8
         },
         {
           "label": "产品",
@@ -38632,17 +38607,17 @@
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 15
+          "count": 14
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 15
+          "count": 14
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "customer-developer-team",
@@ -38654,27 +38629,27 @@
     {
       "object": "track-enterprise-workflow",
       "label": "企业工作流",
-      "todayCount": 15,
-      "last7Count": 89,
-      "last30Count": 236,
+      "todayCount": 14,
+      "last7Count": 88,
+      "last30Count": 235,
       "subjects": [
         {
-          "label": "Artificialintelligence-News",
-          "count": 2
-        },
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
+          "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI 账单失控",
+          "label": "Arcade",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 9
+          "count": 8
         },
         {
           "label": "产品",
@@ -38689,17 +38664,17 @@
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 15
+          "count": 14
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 15
+          "count": 14
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "customer-developer-team",
@@ -38711,44 +38686,44 @@
     {
       "object": "evidence-customer-adoption",
       "label": "客户采用",
-      "todayCount": 11,
-      "last7Count": 58,
-      "last30Count": 139,
+      "todayCount": 10,
+      "last7Count": 57,
+      "last30Count": 138,
       "subjects": [
-        {
-          "label": "Artificialintelligence-News",
-          "count": 2
-        },
         {
           "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "From the Customer's Side of the Table",
+          "label": "ellamind / elluminate",
+          "count": 1
+        },
+        {
+          "label": "Googleblog",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 11
+          "count": 10
         }
       ],
       "coTags": [
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 11
+          "count": 10
         },
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "customer-developer-team",
@@ -38765,15 +38740,15 @@
       "last30Count": 97,
       "subjects": [
         {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "label": "Baseten",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
           "count": 1
         }
       ],
@@ -38822,15 +38797,15 @@
       "last30Count": 98,
       "subjects": [
         {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "label": "Baseten",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
           "count": 1
         }
       ],
@@ -38879,15 +38854,15 @@
       "last30Count": 96,
       "subjects": [
         {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "label": "Baseten",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
           "count": 1
         }
       ],
@@ -38936,15 +38911,15 @@
       "last30Count": 185,
       "subjects": [
         {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "label": "Baseten",
+          "count": 1
+        },
+        {
+          "label": "Googleblog",
           "count": 1
         }
       ],
@@ -39446,7 +39421,7 @@
         "window": "7 天",
         "object": "track-ai-agent",
         "label": "AI Agent",
-        "cardCount": 126,
+        "cardCount": 125,
         "lastSeen": "2026-06-19",
         "filter": "track-ai-agent"
       },
@@ -39454,7 +39429,7 @@
         "window": "7 天",
         "object": "customer-enterprise",
         "label": "大中型企业",
-        "cardCount": 89,
+        "cardCount": 88,
         "lastSeen": "2026-06-19",
         "filter": "customer-enterprise"
       },
@@ -39462,7 +39437,7 @@
         "window": "7 天",
         "object": "track-enterprise-workflow",
         "label": "企业工作流",
-        "cardCount": 89,
+        "cardCount": 88,
         "lastSeen": "2026-06-19",
         "filter": "track-enterprise-workflow"
       },
@@ -39478,7 +39453,7 @@
         "window": "7 天",
         "object": "evidence-customer-adoption",
         "label": "客户采用",
-        "cardCount": 58,
+        "cardCount": 57,
         "lastSeen": "2026-06-19",
         "filter": "evidence-customer-adoption"
       },
@@ -39510,7 +39485,7 @@
         "window": "30 天",
         "object": "track-ai-agent",
         "label": "AI Agent",
-        "cardCount": 315,
+        "cardCount": 314,
         "lastSeen": "2026-06-19",
         "filter": "track-ai-agent"
       },
@@ -39518,7 +39493,7 @@
         "window": "30 天",
         "object": "customer-enterprise",
         "label": "大中型企业",
-        "cardCount": 237,
+        "cardCount": 236,
         "lastSeen": "2026-06-19",
         "filter": "customer-enterprise"
       },
@@ -39526,7 +39501,7 @@
         "window": "30 天",
         "object": "track-enterprise-workflow",
         "label": "企业工作流",
-        "cardCount": 236,
+        "cardCount": 235,
         "lastSeen": "2026-06-19",
         "filter": "track-enterprise-workflow"
       },
@@ -39542,7 +39517,7 @@
         "window": "30 天",
         "object": "evidence-customer-adoption",
         "label": "客户采用",
-        "cardCount": 139,
+        "cardCount": 138,
         "lastSeen": "2026-06-19",
         "filter": "evidence-customer-adoption"
       },
@@ -39579,9 +39554,9 @@
       "title": "AI Agent",
       "date": "2026-06-19",
       "signal": "track-ai-agent",
-      "evidenceCount": 315,
+      "evidenceCount": 314,
       "window": "30 天",
-      "summary": "AI Agent has 315 linked cards in the 30 天 window.",
+      "summary": "AI Agent has 314 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -39590,9 +39565,9 @@
       "title": "大中型企业",
       "date": "2026-06-19",
       "signal": "customer-enterprise",
-      "evidenceCount": 237,
+      "evidenceCount": 236,
       "window": "30 天",
-      "summary": "大中型企业 has 237 linked cards in the 30 天 window.",
+      "summary": "大中型企业 has 236 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -39601,9 +39576,9 @@
       "title": "企业工作流",
       "date": "2026-06-19",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 236,
+      "evidenceCount": 235,
       "window": "30 天",
-      "summary": "企业工作流 has 236 linked cards in the 30 天 window.",
+      "summary": "企业工作流 has 235 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -39623,9 +39598,9 @@
       "title": "客户采用",
       "date": "2026-06-19",
       "signal": "evidence-customer-adoption",
-      "evidenceCount": 139,
+      "evidenceCount": 138,
       "window": "30 天",
-      "summary": "客户采用 has 139 linked cards in the 30 天 window.",
+      "summary": "客户采用 has 138 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -39645,9 +39620,9 @@
       "title": "AI Agent",
       "date": "2026-06-19",
       "signal": "track-ai-agent",
-      "evidenceCount": 126,
+      "evidenceCount": 125,
       "window": "7 天",
-      "summary": "AI Agent has 126 linked cards in the 7 天 window.",
+      "summary": "AI Agent has 125 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -39678,9 +39653,9 @@
       "title": "大中型企业",
       "date": "2026-06-19",
       "signal": "customer-enterprise",
-      "evidenceCount": 89,
+      "evidenceCount": 88,
       "window": "7 天",
-      "summary": "大中型企业 has 89 linked cards in the 7 天 window.",
+      "summary": "大中型企业 has 88 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -39689,9 +39664,9 @@
       "title": "企业工作流",
       "date": "2026-06-19",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 89,
+      "evidenceCount": 88,
       "window": "7 天",
-      "summary": "企业工作流 has 89 linked cards in the 7 天 window.",
+      "summary": "企业工作流 has 88 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -39711,9 +39686,9 @@
       "title": "客户采用",
       "date": "2026-06-19",
       "signal": "evidence-customer-adoption",
-      "evidenceCount": 58,
+      "evidenceCount": 57,
       "window": "7 天",
-      "summary": "客户采用 has 58 linked cards in the 7 天 window.",
+      "summary": "客户采用 has 57 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -39755,26 +39730,26 @@
       "title": "AI Agent",
       "date": "2026-06-19",
       "signal": "track-ai-agent",
-      "evidenceCount": 19,
-      "windowCount": 315,
+      "evidenceCount": 18,
+      "windowCount": 314,
       "subjects": [
         {
-          "label": "Artificialintelligence-News",
-          "count": 2
-        },
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
+          "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI 账单失控",
+          "label": "Arcade",
+          "count": 1
+        },
+        {
+          "label": "Baseten",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 11
+          "count": 10
         },
         {
           "label": "产品",
@@ -39789,17 +39764,17 @@
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 15
+          "count": 14
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 15
+          "count": 14
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 11
+          "count": 10
         },
         {
           "tag": "customer-developer-team",
@@ -39807,7 +39782,7 @@
           "count": 9
         }
       ],
-      "summary": "AI Agent appears in 19 same-day cards and 315 cards in the 30-day window.",
+      "summary": "AI Agent appears in 18 same-day cards and 314 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -39816,26 +39791,26 @@
       "title": "大中型企业",
       "date": "2026-06-19",
       "signal": "customer-enterprise",
-      "evidenceCount": 15,
-      "windowCount": 237,
+      "evidenceCount": 14,
+      "windowCount": 236,
       "subjects": [
         {
-          "label": "Artificialintelligence-News",
-          "count": 2
-        },
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
+          "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI 账单失控",
+          "label": "Arcade",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 9
+          "count": 8
         },
         {
           "label": "产品",
@@ -39850,17 +39825,17 @@
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 15
+          "count": 14
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 15
+          "count": 14
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "customer-developer-team",
@@ -39868,7 +39843,7 @@
           "count": 6
         }
       ],
-      "summary": "大中型企业 appears in 15 same-day cards and 237 cards in the 30-day window.",
+      "summary": "大中型企业 appears in 14 same-day cards and 236 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -39877,26 +39852,26 @@
       "title": "企业工作流",
       "date": "2026-06-19",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 15,
-      "windowCount": 236,
+      "evidenceCount": 14,
+      "windowCount": 235,
       "subjects": [
         {
-          "label": "Artificialintelligence-News",
-          "count": 2
-        },
-        {
-          "label": "英伟达在虚幻嘉年华 2026",
+          "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI 账单失控",
+          "label": "Arcade",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 9
+          "count": 8
         },
         {
           "label": "产品",
@@ -39911,17 +39886,17 @@
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 15
+          "count": 14
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 15
+          "count": 14
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "customer-developer-team",
@@ -39929,7 +39904,7 @@
           "count": 6
         }
       ],
-      "summary": "企业工作流 appears in 15 same-day cards and 236 cards in the 30-day window.",
+      "summary": "企业工作流 appears in 14 same-day cards and 235 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -39938,72 +39913,15 @@
       "title": "客户采用",
       "date": "2026-06-19",
       "signal": "evidence-customer-adoption",
-      "evidenceCount": 11,
-      "windowCount": 139,
+      "evidenceCount": 10,
+      "windowCount": 138,
       "subjects": [
-        {
-          "label": "Artificialintelligence-News",
-          "count": 2
-        },
         {
           "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "From the Customer's Side of the Table",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 11
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 11
-        },
-        {
-          "tag": "customer-enterprise",
-          "label": "大中型企业",
-          "count": 9
-        },
-        {
-          "tag": "track-enterprise-workflow",
-          "label": "企业工作流",
-          "count": 9
-        },
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 4
-        }
-      ],
-      "summary": "客户采用 appears in 11 same-day cards and 139 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
-      "id": "relationship:agent-workflow-enterprise",
-      "type": "relationship_cluster",
-      "title": "Artificialintelligence-News、AI 账单失控 记录 Agent 进入采购、数据连接和企业流程",
-      "date": "2026-06-19",
-      "signal": "企业工作流",
-      "evidenceCount": 9,
-      "windowCount": 118,
-      "subjects": [
-        {
-          "label": "Artificialintelligence-News",
-          "count": 2
-        },
-        {
-          "label": "AI 账单失控",
-          "count": 1
-        },
-        {
-          "label": "From the Customer's Side of the Table",
+          "label": "ellamind / elluminate",
           "count": 1
         },
         {
@@ -40014,18 +39932,33 @@
       "categories": [
         {
           "label": "案例",
-          "count": 9
+          "count": 10
         }
       ],
-      "tags": [],
-      "supportingCardIds": [
-        "SIG-20260619-A04",
-        "SIG-20260619-A13-case-https-www-artificialintelligence-news-com",
-        "SIG-20260619-A06-case-https-www-ellamind-com",
-        "SIG-20260619-A12"
+      "coTags": [
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 10
+        },
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 8
+        },
+        {
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
+          "count": 8
+        },
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 4
+        }
       ],
-      "summary": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的公开案例显示，AI 正在进入客户、采购、商品内容或内部工作流等业务场景。",
-      "whyUseful": "Use this when looking for cross-card commercial relationships."
+      "summary": "客户采用 appears in 10 same-day cards and 138 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
       "id": "tag:customer-developer-team",
@@ -40037,15 +39970,15 @@
       "windowCount": 97,
       "subjects": [
         {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "label": "Baseten",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
           "count": 1
         }
       ],
@@ -40098,15 +40031,15 @@
       "windowCount": 98,
       "subjects": [
         {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "label": "Baseten",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
           "count": 1
         }
       ],
@@ -40159,15 +40092,15 @@
       "windowCount": 96,
       "subjects": [
         {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "label": "Baseten",
+          "count": 1
+        },
+        {
+          "label": "Claude Code",
           "count": 1
         }
       ],
@@ -40211,6 +40144,48 @@
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
+      "id": "relationship:agent-workflow-enterprise",
+      "type": "relationship_cluster",
+      "title": "AI 账单失控、ellamind / elluminate 记录 Agent 进入采购、数据连接和企业流程",
+      "date": "2026-06-19",
+      "signal": "企业工作流",
+      "evidenceCount": 8,
+      "windowCount": 117,
+      "subjects": [
+        {
+          "label": "AI 账单失控",
+          "count": 1
+        },
+        {
+          "label": "ellamind / elluminate",
+          "count": 1
+        },
+        {
+          "label": "Googleblog",
+          "count": 1
+        },
+        {
+          "label": "HSBC / Google Cloud",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 8
+        }
+      ],
+      "tags": [],
+      "supportingCardIds": [
+        "SIG-20260619-A04",
+        "SIG-20260619-A13-case-https-www-artificialintelligence-news-com",
+        "SIG-20260619-A06-case-https-www-ellamind-com",
+        "SIG-20260619-A12"
+      ],
+      "summary": "计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器... 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金融犯罪检测系统自2021... ellamind 的 Forward Deployed Engineer 参与一家德国法定医保机构的客服聊天机器人上线前评估，把监管语言、测试数据和合规审查转化为可执行的生产系统验证。",
+      "whyUseful": "Use this when looking for cross-card commercial relationships."
+    },
+    {
       "id": "tag:track-ai-infra",
       "type": "tag_association",
       "title": "AI 基础设施",
@@ -40220,15 +40195,15 @@
       "windowCount": 185,
       "subjects": [
         {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
           "label": "AI 账单失控",
           "count": 1
         },
         {
-          "label": "AI推理公司Baseten据报以130亿美元估值",
+          "label": "Baseten",
+          "count": 1
+        },
+        {
+          "label": "Googleblog",
           "count": 1
         }
       ],
@@ -40274,22 +40249,26 @@
     {
       "id": "relationship:product-launch-vs-adoption",
       "type": "relationship_cluster",
-      "title": "英伟达在虚幻嘉年华 2026、Claude Code 同日出现在企业 AI 产品发布里",
+      "title": "Claude Code、Meta 同日出现在企业 AI 产品发布里",
       "date": "2026-06-19",
       "signal": "产品发布",
       "evidenceCount": 5,
       "windowCount": 133,
       "subjects": [
         {
-          "label": "英伟达在虚幻嘉年华 2026",
-          "count": 1
-        },
-        {
           "label": "Claude Code",
           "count": 1
         },
         {
-          "label": "Snap 剥离 AI 视频团队成立新公司 Dotmo",
+          "label": "Meta",
+          "count": 1
+        },
+        {
+          "label": "NVIDIA",
+          "count": 1
+        },
+        {
+          "label": "Perplexity / Brain",
           "count": 1
         }
       ],
@@ -40306,7 +40285,7 @@
         "SIG-20260619-A23",
         "SIG-20260619-A08"
       ],
-      "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... 负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职。她于2015年加入Meta，曾任Threads产品负责人，两个月前刚被指派改进内部AI工具。Meta正推进全公司重组，计划开发能替代人类员工的AI智能体，引发内部强烈反弹。重组涉及裁撤10%员工、调岗及部署鼠标追踪软件。道尔顿·史密斯领导\"智能体转型加速计划\"（ATA）小组，负责企业级AI...",
+      "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试... 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用于决策、Chatterbox Turbo 350M 用于语音合成，包含 UE5 插件，可在 8GB 显存 GPU 上本地运行。SDK 提供 Agent API、Chat API 和 RA... IT之家 6 月 18 日消息，路透社 18 日（今天）援引内部公告消息称，负责 Meta AI 重组核心项目 的高管埃米莉 · 道尔顿 · 史密斯即将离职。",
       "whyUseful": "Use this when looking for cross-card commercial relationships."
     },
     {
