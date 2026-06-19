@@ -5,7 +5,7 @@ import path from "node:path";
 const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const expectedVersion = "V3.3.6.3-business-source-artifact-aggregation";
-const expectedSiteVersion = "SITE-V3.3.8-enterprise-ai-transformation";
+const expectedSiteVersion = "SITE-V3.3.8.1-fde-lens-pool";
 const expectedBusinessSignalsColumnVersion = "BSIG-V1.1.0-enterprise-ai-transformation";
 const expectedEnterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
 const rolloverAcceptedVersions = new Map([

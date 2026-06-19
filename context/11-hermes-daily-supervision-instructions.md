@@ -15,11 +15,11 @@ Hermes is the daily supervisor for WaveSight AI. It should observe, classify, an
 
 ## Current Version Context
 
-- Current site version: `SITE-V3.3.8-enterprise-ai-transformation`.
+- Current site version: `SITE-V3.3.8.1-fde-lens-pool`.
 - Current Hermes supervision contract: `V3.3.6.2-hermes-staged-handoff`.
 - Current Business Signals data contract: `V3.3.6.3-business-source-artifact-aggregation`.
 - Version ledger: `context/version-ledger.md`.
-- SITE-V3.3.8 keeps First-Line Viewpoints person / date Obsidian persistence, Business Signals title / candidate dedupe gates, source-artifact aggregation, the 企业AI化 secondary lens, Community Intelligence local-first collection, the weekly report Intelligence Map route, and Hermes staged early handoff: 09:30 Community / First-Line, 09:45 Business, 09:55 final review only.
+- SITE-V3.3.8.1 keeps First-Line Viewpoints person / date Obsidian persistence, Business Signals title / candidate dedupe gates, source-artifact aggregation, the Enterprise AI / FDE Lens Pool, Community Intelligence local-first collection, the weekly report Intelligence Map route, and Hermes staged early handoff: 09:30 Community / First-Line, 09:45 Business, 09:55 final review only.
 - Hermes must treat old month timeline files such as `YYYY-MM.md` as legacy / cleanup candidates, not as proof that current sync is healthy.
 - Do not judge Codex work by commit author name. In this repository Codex commits may use the configured Git identity.
 

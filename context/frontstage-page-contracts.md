@@ -31,7 +31,7 @@ Business Signals must keep the daily Top10 as the default primary view. It may p
 
 | Scope | Version | Meaning |
 |---|---|---|
-| Main website | `SITE-V3.3.8-enterprise-ai-transformation` | Current GitHub Pages frontstage release. |
+| Main website | `SITE-V3.3.8.1-fde-lens-pool` | Current GitHub Pages frontstage release. |
 | Business Signals column | `BSIG-V1.1.0-enterprise-ai-transformation` | Keeps Top10 as the primary business-signal desk and adds the 企业AI化 secondary lens. |
 | Enterprise AI / 企业AI化 lens | `EAI-V1.0.0-enterprise-ai-transformation` | Boss-facing implementation lens derived from product / funding / case Cards; not a fourth Card type. |
 
