@@ -31,6 +31,7 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 - Weekend mode may lower monitor-stage quantity floors, but it must not relax source-first, six-gate Card entry, Top10 count, or large-company caps. If the strict cap leaves fewer than 10 cards, refill non-large Core Pool supply before publication.
 - A GitHub lookup timeout or missing local report is a supervision evidence gap, not proof that Business Signals data failed. Check same-date run status and activeDate/top10/card counts before dispatching or rerunning.
 - The morning path should fail before expensive downstream work: Raw/Pool supply preflight, Card generation, Top10 preselection, Business frontstage JSON, unified Business frontstage gate, then dashboard/topic-center/publication.
+- If a source title collapses to boilerplate like `Skip to content ...` or taxonomy tag strings, the public title may need a clean generated fallback. In that case, readiness gates must still require a Chinese non-garbled title and source-backed fact, but must not reject the card solely because `publicTitleCandidate(sourceTitle)` is empty.
 - Morning scheduling was optimized to 08:57 primary production plus 09:27 conditional health dispatch. The health dispatch must wait when same-date data is healthy or a same-date run is queued, in progress, or successful; do not restore blind second full-chain cron runs.
 
 ## 2026-06-16
