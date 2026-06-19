@@ -294,7 +294,7 @@ function localGitSyncState() {
   const status = runOptional("git", ["status", "--porcelain"], 8000);
   const head = runOptional("git", ["rev-parse", "HEAD"], 8000);
   const origin = runOptional("git", ["rev-parse", "origin/main"], 8000);
-  const dirtyLines = status.ok ? status.stdout.trim().split(/\r?\n/u).filter(Boolean) : [];
+  const dirtyLines = status.ok ? status.stdout.split(/\r?\n/u).filter((line) => line.trim()) : [];
   const blockingDirtyLines = dirtyLines.filter((line) => !isSupervisionReportStatusLine(line));
   return {
     available: status.ok && head.ok && origin.ok,
