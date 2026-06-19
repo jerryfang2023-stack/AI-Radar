@@ -203,7 +203,7 @@ function hasWindowPassed(targetDate, hhmm) {
   return current !== null && target !== null && current >= target;
 }
 
-function runOptional(command, argsList, timeoutMs = 8000) {
+function runOptional(command, argsList, timeoutMs = 20000) {
   const result = spawnSync(command, argsList, {
     cwd: root,
     encoding: "utf8",
@@ -285,14 +285,22 @@ function githubWorkflowState(workflowFile, branchHead = "") {
   };
 }
 
+function isSupervisionReportStatusLine(line) {
+  const file = line.slice(3).trim().split(" -> ").pop().replace(/\\/gu, "/");
+  return /^agent-workflow\/reports\/(?:daily-supervision-report-latest|\d{4}-\d{2}-\d{2}-daily-supervision-report)\.(?:json|md)$/u.test(file);
+}
+
 function localGitSyncState() {
   const status = runOptional("git", ["status", "--porcelain"], 8000);
   const head = runOptional("git", ["rev-parse", "HEAD"], 8000);
   const origin = runOptional("git", ["rev-parse", "origin/main"], 8000);
+  const dirtyLines = status.ok ? status.stdout.trim().split(/\r?\n/u).filter(Boolean) : [];
+  const blockingDirtyLines = dirtyLines.filter((line) => !isSupervisionReportStatusLine(line));
   return {
     available: status.ok && head.ok && origin.ok,
-    clean: status.ok ? !status.stdout.trim() : null,
-    dirtyFiles: status.ok ? status.stdout.trim().split(/\r?\n/u).filter(Boolean).length : null,
+    clean: status.ok ? blockingDirtyLines.length === 0 : null,
+    dirtyFiles: status.ok ? blockingDirtyLines.length : null,
+    ignoredReportFiles: status.ok ? dirtyLines.length - blockingDirtyLines.length : null,
     head: head.ok ? head.stdout.trim() : "",
     originMain: origin.ok ? origin.stdout.trim() : "",
     fastForwarded: head.ok && origin.ok ? head.stdout.trim() === origin.stdout.trim() : null,
@@ -406,7 +414,7 @@ function buildBusinessSignalsLane() {
   }
 
   if (publicationClosureWindowPassed) {
-    if (!evidence.publicationClosure.businessPrMerged && !gh.latest_run) {
+    if (gh.available && !evidence.publicationClosure.businessPrMerged && !gh.latest_run) {
       warnings.push("10:50 publication closure found no merged Business Signals PR and no same-date workflow run");
     }
     if (pagesActive) {
