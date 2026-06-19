@@ -434,6 +434,28 @@ function headingSection(markdown, heading) {
   return collected.join("\n").trim();
 }
 
+function sectionLines(section = "") {
+  return String(section || "")
+    .split(/\r?\n/u)
+    .map((line) => line.replace(/^\s*-\s*/u, "").trim())
+    .filter(Boolean);
+}
+
+function orderedSectionBodies(markdown = "") {
+  const sections = [];
+  let current = null;
+  for (const line of String(markdown || "").split(/\r?\n/u)) {
+    if (line.startsWith("## ")) {
+      if (current) sections.push(current.join("\n").trim());
+      current = [];
+      continue;
+    }
+    if (current) current.push(line);
+  }
+  if (current) sections.push(current.join("\n").trim());
+  return sections;
+}
+
 function sectionByHeading(markdown = "", headingPrefix = "") {
   const lines = String(markdown || "").split(/\r?\n/u);
   const start = lines.findIndex((line) => line.startsWith(headingPrefix));
@@ -953,7 +975,7 @@ function publicFactLooksLikeTemplateFallback(value = "") {
     || /\u5177\u4f53\s*AI\s*\u5546\u4e1a\u4e8b\u4ef6/u.test(text)
     || /\u516c\u5f00\u8d44\u6599\u663e\u793a\u8d44\u91d1\u7ee7\u7eed\u6d41\u5411\s*AI\s*\u4ea7\u54c1\u5316\u548c\u4f01\u4e1a\u91c7\u7528\u73af\u8282/u.test(text)
     || /\u8fd9\u6761\u878d\u8d44\u4fe1\u53f7\u53ef\u7528\u4e8e\u5224\u65ad\u8d44\u91d1\u6d41\u5411/u.test(text)
-    || /\.\.\./u.test(text);
+    || (/\.\.\./u.test(text) && text.length < 80);
 }
 
 function publicFactLooksLikeNavigation(value = "") {
@@ -972,10 +994,26 @@ function publicTextLooksGarbled(value = "") {
   return controlCount > 0 || replacementCount >= 2;
 }
 
+function publicDisplayTitleIsReady(title = "") {
+  const text = String(title || "").trim();
+  if (!text) return false;
+  if (isBadPublicDisplayTitle(text) || isProcessedChineseTitle(text) || publicTitleLooksOverprocessed(text)) return false;
+  if (publicTextLooksGarbled(text) || publicTitleNeedsTranslation(text)) return false;
+  return true;
+}
+
 function publicCandidateIsDisplayReady(card = {}) {
   if (!card.title || !card.displayTitle) return false;
   const expectedTitle = publicTitleCandidate(sourceFrontstageTitle(card), card.sourceUrl);
-  if (!expectedTitle || card.title !== expectedTitle || card.displayTitle !== expectedTitle) return false;
+  if (expectedTitle) {
+    if (card.title !== expectedTitle || card.displayTitle !== expectedTitle) return false;
+  } else if (
+    card.title !== card.displayTitle
+    || !publicDisplayTitleIsReady(card.title)
+    || !publicDisplayTitleIsReady(card.displayTitle)
+  ) {
+    return false;
+  }
   if (publicTitleNeedsTranslation(card.title) || publicTitleNeedsTranslation(card.displayTitle)) return false;
   if (publicFactLooksLikeTemplateFallback(card.translatedFact || card.summary || card.visibleFragment)) return false;
   return [card.summary, card.translatedFact, card.visibleFragment]
@@ -1100,8 +1138,54 @@ function publicTitleCandidate(title = "", sourceUrl = "") {
   return "";
 }
 
-function publicDisplayTitle(sourceTitle = "", _generatedTitle = "", sourceUrl = "") {
-  return publicTitleCandidate(sourceTitle, sourceUrl);
+function publicDisplayTitle(sourceTitle = "", generatedTitle = "", sourceUrl = "") {
+  const sourceCandidate = publicTitleCandidate(sourceTitle, sourceUrl);
+  if (sourceCandidate) return sourceCandidate;
+  const fallback = cleanBadPublicDisplayTitle(String(generatedTitle || "").trim());
+  if (fallback && !isBadPublicDisplayTitle(fallback) && !publicTitleNeedsTranslation(fallback)) {
+    return fallback;
+  }
+  return "";
+}
+
+function cleanPublicSourceFact(value = "") {
+  return String(value || "")
+    .replace(/\s+/gu, " ")
+    .replace(/(?:\.\.\.|…)+$/u, "")
+    .trim();
+}
+
+function publicTitleLooksOverprocessed(title = "") {
+  const text = String(title || "").trim();
+  return /押注|发布\s*AI\s*基础设施能力|推出\s*Agent\s*工作流能力|切入(?:模型部署和算力服务|地产和建筑设计工作流)/iu.test(text)
+    || /获得\s*\$?\d[\d.,]*(?:\s?(?:M|B|m|b|million|billion))?(?:\s+seed)?\s*融资/iu.test(text);
+}
+
+function normalizeFactDerivedTitle(value = "") {
+  return String(value || "")
+    .replace(/\$\s*(\d+(?:\.\d+)?)\s*m\s*seed/giu, (_, amount) => `${Number(amount) * 100}万美元种子轮`)
+    .replace(/\$\s*(\d+(?:\.\d+)?)\s*m\b/giu, (_, amount) => `${Number(amount) * 100}万美元`)
+    .replace(/\$\s*(\d+(?:\.\d+)?)\s*b\b/giu, (_, amount) => `${amount}亿美元`)
+    .replace(/\bseed\b/giu, "种子轮")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function factDerivedPublicTitle(value = "") {
+  const text = cleanPublicSourceFact(value);
+  if (!text) return "";
+  const sentence = text.split(/[。！？!?]/u).map((item) => item.trim()).find(Boolean) || "";
+  if (!sentence) return "";
+  const clause = sentence
+    .split(/[，,:：]/u)
+    .map((item) => item.trim())
+    .find((item) => item.length >= 10) || sentence;
+  const compact = normalizeFactDerivedTitle(clause);
+  const candidate = compact.length > 44 ? `${compact.slice(0, 44).trim()}…` : compact;
+  if (!candidate || !hasCjk(candidate)) return "";
+  if (isBadPublicDisplayTitle(candidate) || isProcessedChineseTitle(candidate) || publicTitleLooksOverprocessed(candidate)) return "";
+  if (publicTitleNeedsTranslation(candidate) || publicTextLooksGarbled(candidate)) return "";
+  return candidate;
 }
 
 function normalizeFrontstageDisplay(card = {}) {
@@ -1109,8 +1193,7 @@ function normalizeFrontstageDisplay(card = {}) {
   const internalTitle = safeFrontstageTitle(card.title || card.originalTitle, card.sourceUrl);
   const originalTitle = card.originalTitle || (internalTitle !== card.title ? card.title : "");
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
-  const displayTitle = publicDisplayTitle(sourceTitle, internalTitle, card.sourceUrl);
-  const replacementFact = sourceTitleDerivedFact(sourceTitle || originalTitle || displayTitle, card.sourceUrl);
+  const replacementFact = sourceTitleDerivedFact(sourceTitle || originalTitle || internalTitle, card.sourceUrl);
   const translatedFact = [
     card.translatedFact,
     replacementFact,
@@ -1122,6 +1205,11 @@ function normalizeFrontstageDisplay(card = {}) {
       && !publicFactLooksLikeNavigation(value)
       && !publicFactLooksLikeTemplateFallback(value)
   )) || "";
+  const cleanedTranslatedFact = cleanPublicSourceFact(translatedFact);
+  const preferredDisplayTitle = publicDisplayTitle(sourceTitle, internalTitle, card.sourceUrl);
+  const displayTitle = publicDisplayTitleIsReady(preferredDisplayTitle)
+    ? preferredDisplayTitle
+    : factDerivedPublicTitle(cleanedTranslatedFact || card.visibleFragment || card.summary);
   return {
     ...card,
     title: displayTitle,
@@ -1130,7 +1218,7 @@ function normalizeFrontstageDisplay(card = {}) {
     originalTitle,
     sourceTitle,
     displayTitle,
-    translatedFact,
+    translatedFact: cleanedTranslatedFact,
     subject: safeFrontstageSubject({
       subject: card.subject,
       sourceUrl: card.sourceUrl,
@@ -2600,6 +2688,16 @@ function cardFromFile(file, category) {
     || "";
   const poolRefs = arrayValue(fm, "pool_refs");
   const raw = mergeEvidence(readRawEvidence(rawJson, rawArchive, primarySourceUrl), readPoolEvidence(scalar(fm, "date"), poolRefs[0], primarySourceUrl));
+  const [newsFactSection = "", originalPointsSection = "", valueSection = "", visibleFragmentSection = ""] = orderedSectionBodies(text);
+  const markdownFact = short(sectionLines(newsFactSection).join(" "), 320);
+  const markdownHighlights = uniqueNonRepeatingLines(
+    sectionLines(originalPointsSection)
+      .filter((line) => !/鍘熸枃鏈彁渚涙洿澶氬彲鎷嗗垎浜嬪疄鐐?/u.test(line)),
+    [],
+    8
+  );
+  const markdownValue = short(sectionLines(valueSection).join(" "), 260);
+  const markdownVisibleFragment = short(sectionLines(visibleFragmentSection).join(" "), 320);
   const rawTitle = sourceTitleFromFullText(raw.fullText, raw.rawTitle || rawTitleFromArchive || "");
   const sourceUrl = primarySourceUrl || raw.sourceUrl;
   const explicitSourceName = scalar(fm, "source_name") || raw.sourceName || "";
@@ -2611,9 +2709,13 @@ function cardFromFile(file, category) {
   const importanceScore = Number(nestedScalar(fm, "primary_raw", "importance_score") || scalar(fm, "importance_score") || 0) || 0;
   const explicitDisplayTitle = nestedScalar(fm, "frontend", "displayTitle") || scalar(fm, "title") || "";
   const rawDisplayTitle = frontstageTitle(rawTitle || explicitDisplayTitle || path.basename(file, ".md"), rawTitle);
-  const title = frontstageChineseTitle(explicitDisplayTitle || rawDisplayTitle, sourceUrl);
+  const title = frontstageChineseTitle(explicitDisplayTitle || rawDisplayTitle, sourceUrl)
+    || safeFrontstageTitle(explicitDisplayTitle || rawDisplayTitle, sourceUrl)
+    || explicitDisplayTitle
+    || rawDisplayTitle;
   const titleFact = sourceTitleDerivedFact(rawDisplayTitle || title, sourceUrl);
   let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl, [titleFact]);
+  if (!originalHighlights.length) originalHighlights = markdownHighlights;
   if (!originalHighlights.length) originalHighlights = fallbackSourcePoints(rawDisplayTitle, sourceUrl, rawRef);
   const sourceEvidenceExcerpt = buildSourceExcerpt(raw, originalHighlights, rawDisplayTitle);
   const evidenceFact = originalHighlights.find((item) => (
@@ -2623,7 +2725,11 @@ function cardFromFile(file, category) {
     && !isInternalEvidenceDump(item)
     && !textRepeatsAny(item, [title], 0.9)
   )) || "";
-  const translatedFact = evidenceFact || (!isGenericSourceFallback(sourceEvidenceExcerpt) && !isSourceLinkOnlyFact(sourceEvidenceExcerpt) && !isInternalEvidenceDump(sourceEvidenceExcerpt) ? sourceEvidenceExcerpt : "") || titleFact;
+  const translatedFact = evidenceFact
+    || (markdownFact && !publicFactLooksLikeTemplateFallback(markdownFact) ? markdownFact : "")
+    || (!isGenericSourceFallback(sourceEvidenceExcerpt) && !isSourceLinkOnlyFact(sourceEvidenceExcerpt) && !isInternalEvidenceDump(sourceEvidenceExcerpt) ? sourceEvidenceExcerpt : "")
+    || (markdownVisibleFragment && !publicFactLooksLikeTemplateFallback(markdownVisibleFragment) ? markdownVisibleFragment : "")
+    || titleFact;
   const sourceFact = translatedFact || originalHighlights.find((item) => !/^关键数字|原始来源|本地 Raw\/Pool/u.test(item)) || "";
   originalHighlights = uniqueNonRepeatingLines(
     originalHighlights.filter((item) => !/^原始来源标题|原始来源链接|本地 Raw\/Pool/u.test(item)),
@@ -2633,7 +2739,7 @@ function cardFromFile(file, category) {
   const sourceExcerpt = buildSourceExcerpt(raw, originalHighlights, rawDisplayTitle);
   const visibleFragment = sourceExcerpt && !textRepeatsAny(sourceExcerpt, [sourceFact, title, ...originalHighlights], 0.72)
     ? sourceExcerpt
-    : "";
+    : (markdownVisibleFragment && !textRepeatsAny(markdownVisibleFragment, [sourceFact, title, ...originalHighlights], 0.72) ? markdownVisibleFragment : "");
   const sourceValue = sourceValueFromEvidence(category, originalHighlights, rawDisplayTitle, [sourceFact, title]);
 
   const sourceLinks = [
@@ -2660,7 +2766,7 @@ function cardFromFile(file, category) {
     tags,
     flatTags: allTags(tags),
     displayTags: displayTags(tags),
-    summary: short(sourceValue || sourceFact, 260),
+    summary: short(sourceValue || markdownValue || sourceFact, 260),
     translatedFact: short(sourceFact, 320),
     originalHighlights,
     visibleFragment,
