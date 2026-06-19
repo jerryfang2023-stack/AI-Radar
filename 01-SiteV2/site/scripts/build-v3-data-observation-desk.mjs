@@ -7,9 +7,10 @@ const root = process.cwd();
 const siteDataDir = path.join(root, "01-SiteV2", "site", "data");
 const outputFile = path.join(siteDataDir, "v3-data-observation-desk.json");
 const intelligenceGraphIndexFile = path.join(siteDataDir, "intelligence-graph-index.json");
+const enterpriseAiFdeFile = path.join(siteDataDir, "enterprise-ai-fde.json");
 const siteVersion = "SITE-V3.3.8-enterprise-ai-transformation";
 const businessSignalsColumnVersion = "BSIG-V1.1.0-enterprise-ai-transformation";
-const enterpriseAiLensVersion = "EAI-V1.0.0-enterprise-ai-transformation";
+const enterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
 
 const signalRoots = [
   { category: "case", label: "案例", dir: path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "case") },
@@ -828,7 +829,23 @@ function sourceTitleLiteralTranslation(title = "", sourceUrl = "") {
   if (hasCjk(raw)) return raw;
   const text = cleanEnglishTitleForDisplay(raw);
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
+  if (/salesforce\.com\/ap\/blog\/forward-deployed-engineer/iu.test(normalized)) return "当下最热门角色：Forward Deployed Engineer - Salesforce";
+  if (/delight\.ai\/customers\/norse-atlantic-airways/iu.test(normalized)) return "Norse Atlantic Airways 客户故事";
   const rules = [
+    [/Hottest Role:\s*Forward Deployed Engineer\s*-\s*Salesforce/iu, "最热门角色：Forward Deployed Engineer - Salesforce"],
+    [/What Is Forward Deployed Engineering\?\s*4 Ways It Powers AI/iu, "什么是 Forward Deployed Engineering？它驱动 AI 的 4 种方式"],
+    [/Forward Deployed Engineers?\s*\(FDE\):\s*Your Critical Bridge to AI/iu, "Forward Deployed Engineer（FDE）：通往 AI 的关键桥梁"],
+    [/ServiceNow\s*\+\s*Accenture[鈥']s FDE Fix/iu, "ServiceNow 与 Accenture 的 FDE 解法"],
+    [/Ecolab rebuilt retail intelligence on Databricks and Anthropic Claude/iu, "Ecolab 在 Databricks 和 Anthropic Claude 上重建零售智能"],
+    [/Embedded to Everywhere:\s*How Forward Deployed Engineering Was Born at PagerDuty/iu, "从嵌入式到无处不在：PagerDuty 如何诞生 Forward Deployed Engineering"],
+    [/Today[鈥']s Hottest Role:\s*Forward Deployed Engineer\s*-\s*Salesforce/iu, "当下最热门角色：Forward Deployed Engineer - Salesforce"],
+    [/From the Customer[鈥']s Side of the Table:\s*What a Forward Deployed Engineer Actually Does/iu, "从客户视角看：Forward Deployed Engineer 实际做什么"],
+    [/88%\s*AI Pilot Failure:\s*ServiceNow\s*\+\s*Accenture[鈥']s FDE Fix/iu, "88% AI 试点失败：ServiceNow 与 Accenture 的 FDE 解法"],
+    [/AWS Marketplace:\s*Avahi\s*\|\s*Generative AI Production Implementation on AWS/iu, "AWS Marketplace：Avahi 在 AWS 上实施生产级生成式 AI"],
+    [/AI Deployment:\s*The Definitive Guide\s*-\s*Mirantis/iu, "AI 部署权威指南 - Mirantis"],
+    [/From Embedded to Everywhere:\s*How Forward Deployed Engineering Was Born at PagerDuty/iu, "从嵌入式到无处不在：PagerDuty 如何诞生 Forward Deployed Engineering"],
+    [/How Ecolab rebuilt retail intelligence on Databricks and Anthropic Claude/iu, "Ecolab 如何在 Databricks 和 Anthropic Claude 上重建零售智能"],
+    [/AI Agent Governance in CX:\s*ROI vs\.\s*74% Rollback Rate/iu, "客户体验中的 AI Agent 治理：ROI 与 74% 回滚率"],
     [/VoiceRun Launches Full-Stack Voice AI Platform for Enterprises/iu, "VoiceRun 推出面向企业的全栈语音 AI 平台，并完成 550 万美元种子轮融资"],
     [/VoiceRun gets \$5\.5M in seed funding to give enterprises more control over voice AI agents/iu, "VoiceRun 获得 550 万美元种子融资，让企业更好地控制语音 AI Agent"],
     [/Willow Launches with \$7M to Build the Future of Enterprise AI Agent Governance/iu, "Willow 携 700 万美元融资启动，构建企业 AI Agent 治理的未来"],
@@ -1023,6 +1040,16 @@ function publicCandidateIsDisplayReady(card = {}) {
   return [card.summary, card.translatedFact, card.visibleFragment]
     .filter(Boolean)
     .every((value) => !publicTextLooksGarbled(value) && !publicContentNeedsTranslation(value));
+}
+
+function publicFdeCandidateIsDisplayReady(card = {}) {
+  const title = String(card.title || card.displayTitle || "").trim();
+  const fact = String(card.translatedFact || card.visibleFragment || card.summary || "").trim();
+  if (!publicDisplayTitleIsReady(title)) return false;
+  if (!card.sourceUrl) return false;
+  if (!hasSourceBackedFrontstageFact(card)) return false;
+  if (!fact || publicContentNeedsTranslation(fact) || publicFactLooksLikeTemplateFallback(fact)) return false;
+  return true;
 }
 
 function subjectMatchesDisplayTitle(subject = "", title = "", originalTitle = "") {
@@ -1826,6 +1853,21 @@ function translatedSourcePoint(value = "", type = "") {
   const known = translateKnownRawExcerpt(text, type);
   if (known) return known;
   const rules = [
+    [/reservation booking platform had just launched a pilot of its first AI agent.*Agentforce.*answer questions from customers/iu, "原文称一家预订平台刚用 Salesforce Agentforce 启动首个 B2B AI agent 试点，用于回答使用该服务的客户问题。"],
+    [/agent sometimes struggled to provide answers.*Agentforce data library/iu, "原文称该 agent 因 Agentforce 数据库配置问题，部分客户问题无法稳定回答。"],
+    [/booking platform needed help connecting its data to Agentforce/iu, "原文称该预订平台需要把自身数据连接到 Agentforce，FDE 介入点是数据接入与知识同步。"],
+    [/Forward Deployed Engineering.*officially launched at PagerDuty.*AI Delivery Workbench/iu, "原文称 PagerDuty 正式启动 Forward Deployed Engineering 后，工程师用 AI Delivery Workbench 处理客户现场的功能缺口。"],
+    [/traditional Professional Services engagement had hit a feature gap/iu, "原文称传统 Professional Services 交付遇到功能缺口，旧模式需要支持工单、路线图讨论和等待。"],
+    [/old model.*support ticket.*roadmap conversation.*wait/iu, "原文称旧交付模式通常变成支持工单、路线图讨论和等待，FDE 模式试图缩短这个链路。"],
+    [/AI Delivery Workbench.*engineering team.*repo/iu, "原文称 PagerDuty 团队打开客户工程团队的代码库，并用 AI Delivery Workbench 直接处理现场问题。"],
+    [/ServiceNow and Accenture.*Forward Deployed Engineering.*customer environments/iu, "原文称 ServiceNow 与 Accenture 推出联合 FDE 项目，把平台工程师和行业工程师嵌入客户环境，推动 AI 试点进入生产。"],
+    [/74 percent of enterprise AI pilots never reach production/iu, "原文称大量企业 AI 试点无法进入生产环境，FDE 的价值在于把试点推过生产线。"],
+    [/Ecolab uses Anthropic.*Claude.*Databricks.*700-page FDA food safety manuals/iu, "原文称 Ecolab 在 Databricks 上使用 Anthropic Claude，把 700 页 FDA 食品安全手册转化为一线零售员工可引用的实时答案。"],
+    [/store manager.*hot holding temperature.*700-page FDA food code/iu, "原文举例称门店经理要查烤鸡保温温度时，答案原本埋在 700 页 FDA 食品法规中。"],
+    [/data that powered those services lived in nine separate systems/iu, "原文称 Ecolab 的食品安全、虫害和水质服务数据分散在九个系统中，AI 应用的前提是统一这些数据。"],
+    [/Generative AI Production Implementation service delivers enterprise-ready AI systems on Amazon Bedrock and AWS/iu, "原文称 Avahi 的 Generative AI Production Implementation 服务用于在 Amazon Bedrock 和 AWS 上交付企业级 AI 系统。"],
+    [/validated POC.*full production deployment.*enterprise security.*MLOps.*operational monitoring/iu, "原文称该服务把已验证 POC 或新用例推进到完整生产部署，并覆盖企业安全、MLOps 与运行监控。"],
+    [/Deliverables include a production AI application.*CI\/CD pipeline.*model monitoring/iu, "原文称交付物包括生产级 AI 应用、CI/CD 管线、模型监控与再训练框架、安全控制、成本治理和运维手册。"],
     [/Procurement teams.*vendor selection.*Request for Quotation/iu, "原文指出采购团队在供应商选择和 RFQ 流程中面临管理压力。"],
     [/Buyers spend significant time navigating multiple Enterprise Resource Planning systems/iu, "原文指出采购人员需要在多个 ERP 系统和外部数据源之间切换。"],
     [/consolidate supplier information.*validate compliance requirements.*compare costs/iu, "原文指出采购人员要合并供应商信息、验证合规要求，并比较不同供应商成本。"],
@@ -2494,6 +2536,26 @@ function dedupeCorePoolCandidateItems(items = []) {
   return [...byKey.values()];
 }
 
+function enterpriseAiFdePoolEventKey(item = {}) {
+  const url = canonicalUrl(item.sourceUrl);
+  if (url) return `${item.date}|fde|url|${url}`;
+  const subject = normalizedComparableText(item.subject || item.title || item.originalTitle).slice(0, 72);
+  const title = normalizedComparableText(item.originalTitle || item.title).slice(0, 96);
+  return `${item.date}|fde|${subject}|${title}`;
+}
+
+function dedupeEnterpriseAiFdePoolItems(items = []) {
+  const byKey = new Map();
+  for (const item of items) {
+    const key = enterpriseAiFdePoolEventKey(item);
+    const current = byKey.get(key);
+    if (!current || corePoolCandidateQuality(item) > corePoolCandidateQuality(current)) {
+      byKey.set(key, item);
+    }
+  }
+  return [...byKey.values()];
+}
+
 function buildCorePoolCandidateItems(cards = [], activeDate = "") {
   const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
   const notPromotedByRef = corePoolNotPromotedMap(activeDate);
@@ -2599,6 +2661,32 @@ function isEnterpriseAiLensPoolSection(section = "") {
   return implementation && (!broadGovernance || /workflow|deployment|customer|production|business process|业务流程|部署|客户|生产/iu.test(text));
 }
 
+function isEnterpriseAiFdePoolSection(section = "") {
+  if (!isEnterpriseAiLensPoolSection(section)) return false;
+  if (poolValue(section, "raw_qc_decision") && poolValue(section, "raw_qc_decision") !== "allow") return false;
+  const sourceType = poolValue(section, "source_type");
+  if (/community|social/iu.test(sourceType)) return false;
+  if (isSocialOrCommunitySourceUrl(poolValue(section, "source_url"))) return false;
+  const text = [
+    poolTitle(section),
+    poolValue(section, "source_url"),
+    poolValue(section, "source"),
+    poolValue(section, "search_path"),
+    poolValue(section, "search_intent"),
+    poolValue(section, "keyword_group"),
+    poolValue(section, "theme"),
+    poolValue(section, "key_excerpts"),
+    poolValue(section, "evidence_seed"),
+    poolValue(section, "missing_information"),
+  ].filter(Boolean).join(" ");
+  const fdeRoute = /fde_implementation|enterprise-ai-implementation-signal/iu.test(text);
+  const explicitFde = /\bFDE\b|forward deployed|customer-embedded|domain operator|technical scoping|customer environment/iu.test(text);
+  const implementationDelivery = /production implementation|production deployment|customer deployment|pilot of its first AI agent|AI deployment|workflow rollout|go-live|MLOps|operational runbooks|human-in-the-loop approval/iu.test(text);
+  const verticalWorkflow = /bank|retail|store|payer|healthcare|procurement|customer service|contact center|financial crime|wealth management|shelf|inventory|workflow/iu.test(text)
+    && /deploy|deployment|rollout|implementation|case study|customer story|uses|adoption|production/iu.test(text);
+  return fdeRoute || explicitFde || implementationDelivery || verticalWorkflow;
+}
+
 function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
   const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
   return poolCandidateSectionsForDate(activeDate)
@@ -2671,6 +2759,89 @@ function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
       return item;
     })
     .filter(Boolean)
+    .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.sourceRef || a.id).localeCompare(String(b.sourceRef || b.id)));
+}
+
+function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
+  const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
+  const items = poolCandidateSectionsForDate(activeDate)
+    .filter(isEnterpriseAiFdePoolSection)
+    .map((section) => {
+      const ref = poolRef(section);
+      const sourceUrl = poolValue(section, "source_url");
+      const rawTitle = poolTitle(section);
+      const card = cardsByUrl.get(canonicalUrl(sourceUrl));
+      const category = poolCandidateCategory(section);
+      const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
+      const importanceScore = Number(poolValue(section, "importance_score")) || 0;
+      const score = Number(poolValue(section, "score")) || 0;
+      const poolRoutes = frontstagePoolRoutes(splitCsv(poolValue(section, "pool_routes")));
+      const base = card ? {
+        ...card,
+        linkedCardId: card.linkedCardId || card.id,
+        title: frontstageChineseTitle(rawTitle, sourceUrl) || translateEnglishTitle(rawTitle, sourceUrl) || card.title || rawTitle,
+        originalTitle: rawTitle || card.originalTitle,
+        sourceTitle: rawTitle || card.sourceTitle,
+        rawTitle,
+        translatedFact: fact || card.translatedFact,
+        visibleFragment: fact || card.visibleFragment,
+        summary: fact || card.summary,
+        status: card.status || "signal_card",
+        promotionStatus: card.promotionStatus || "promoted_to_signal_card",
+      } : {
+        type: "enterprise_ai_fde_pool_item",
+        category,
+        categoryLabel: categoryLabels[category] || category,
+        title: frontstageChineseTitle(rawTitle, sourceUrl) || translateEnglishTitle(rawTitle, sourceUrl) || rawTitle,
+        originalTitle: rawTitle,
+        sourceTitle: rawTitle,
+        rawTitle,
+        date: activeDate,
+        subject: frontstageCandidateSubject(sourceUrl, rawTitle, rawTitle, poolValue(section, "source")),
+        source: domain(sourceUrl) || poolValue(section, "source"),
+        sourceName: domain(sourceUrl) || poolValue(section, "source"),
+        sourceUrl,
+        sourceLevel: poolValue(section, "source_level"),
+        importanceScore,
+        publishedAt: "",
+        tags: {},
+        flatTags: ["track-enterprise-workflow", "customer-enterprise"],
+        displayTags: sanitizeDisplayTags([{ id: category, label: categoryLabels[category] || category }]),
+        summary: fact,
+        translatedFact: fact,
+        originalHighlights: [fact].filter(Boolean),
+        visibleFragment: fact,
+        sourceLinks: [sourceUrl].filter(Boolean),
+        status: "pooled",
+        promotionStatus: "fde_lens_pool_only",
+      };
+      const item = {
+        ...base,
+        id: `FDE-${activeDate}-${ref}`,
+        assetLevel: "enterprise_ai_fde_pool",
+        evidenceGate: poolValue(section, "evidence_level") || "fde_lens_evidence",
+        poolRoutes,
+        stage: base.stage || "",
+        evidence: base.evidence || "",
+        track: base.track || "",
+        largeVendorKey: largeVendorKeyForCard({ title: rawTitle, sourceUrl }),
+        largeVendor: Boolean(largeVendorKeyForCard({ title: rawTitle, sourceUrl })),
+        frontstageRankScore: score * 100 + importanceScore * 10 + 260,
+        frontstageEditorialScore: score * 100 + importanceScore * 10 + 260,
+        frontstageEvidenceScore: Number(poolValue(section, "readability_score")) || base.frontstageEvidenceScore || 0,
+        frontstageSelectionReasons: ["FDE lens pool", "source-backed implementation evidence"],
+        frontstageValueDescription: "FDE lens pool item preserved outside the formal Business Signals Top10/Card gate.",
+        frontstageQualityWarnings: [],
+        frontstageGenericCandidate: false,
+        fromCorePool: poolRoutes.includes("core_pool"),
+        enterpriseAiLensPriority: true,
+        sourceRef: ref,
+      };
+      if (!hasSourceBackedFrontstageFact(item)) return null;
+      return item;
+    })
+    .filter(Boolean);
+  return dedupeEnterpriseAiFdePoolItems(items)
     .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.sourceRef || a.id).localeCompare(String(b.sourceRef || b.id)));
 }
 
@@ -3614,12 +3785,12 @@ function enterpriseTransformationItem(card = {}) {
   };
 }
 
-function buildEnterpriseAiTransformation(cards = [], corePoolCandidates = [], activeDate = "", limit = 5) {
+function buildEnterpriseAiTransformation(cards = [], corePoolCandidates = [], activeDate = "", limit = 8) {
   const seen = new Set();
   return [...cards, ...corePoolCandidates]
     .filter((card) => card.date === activeDate)
     .filter((card) => {
-      const id = card.linkedCardId || card.id;
+      const id = card.sourceUrl ? `url:${canonicalUrl(card.sourceUrl)}` : (card.linkedCardId || card.id);
       if (!id || seen.has(id)) return false;
       seen.add(id);
       return true;
@@ -3849,10 +4020,49 @@ const enterpriseAiLensCandidates = buildEnterpriseAiLensCandidateItems(cards, ac
       && !publicFactLooksLikeTemplateFallback(card.visibleFragment)
     ) ? card.visibleFragment : card.translatedFact,
   }))
+  .map((card) => {
+    const literalTitle = sourceTitleLiteralTranslation(card.rawTitle || card.sourceTitle || card.originalTitle, card.sourceUrl);
+    if (!literalTitle) return card;
+    return {
+      ...card,
+      title: literalTitle,
+      displayTitle: literalTitle,
+      generatedTitle: literalTitle,
+    };
+  })
   .filter(publicCandidateIsDisplayReady)
   .filter(hasEnterpriseImplementationSignal)
   .filter((card) => !isWeakSubject(card.subject));
-const enterpriseAiTransformation = buildEnterpriseAiTransformation(cards, [...enterpriseAiLensCandidates, ...corePoolCandidates], activeDate);
+const enterpriseAiFdePool = buildEnterpriseAiFdePoolItems(cards, activeDate)
+  .map(normalizeFrontstageDisplay)
+  .map((card) => ({
+    ...card,
+    summary: (
+      card.summary
+      && !publicContentNeedsTranslation(card.summary)
+      && !publicFactLooksLikeTemplateFallback(card.summary)
+    ) ? card.summary : card.translatedFact,
+    visibleFragment: (
+      card.visibleFragment
+      && !publicContentNeedsTranslation(card.visibleFragment)
+      && !publicFactLooksLikeTemplateFallback(card.visibleFragment)
+    ) ? card.visibleFragment : card.translatedFact,
+  }))
+  .map((card) => {
+    const literalTitle = sourceTitleLiteralTranslation(card.rawTitle || card.sourceTitle || card.originalTitle, card.sourceUrl);
+    if (!literalTitle) return card;
+    return {
+      ...card,
+      title: literalTitle,
+      displayTitle: literalTitle,
+      generatedTitle: literalTitle,
+    };
+  })
+  .filter(publicFdeCandidateIsDisplayReady)
+  .filter(hasEnterpriseImplementationSignal)
+  .filter((card) => !isWeakSubject(card.subject));
+const enterpriseAiTransformation = buildEnterpriseAiTransformation(cards, [...enterpriseAiFdePool, ...enterpriseAiLensCandidates, ...corePoolCandidates], activeDate);
+const publicEnterpriseAiFdePool = enterpriseAiFdePool.map(({ rawTitle, modelGeneratedTitle, ...item }) => item);
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {
@@ -3873,6 +4083,7 @@ const payload = {
   top10,
   frontstageCards,
   corePoolCandidates,
+  enterpriseAiFdePool: publicEnterpriseAiFdePool,
   enterpriseAiLensCandidates,
   enterpriseAiTransformation,
   frontstageSelection: frontstageSelection.reports,
@@ -3891,5 +4102,19 @@ const payload = {
 fs.mkdirSync(siteDataDir, { recursive: true });
 fs.writeFileSync(outputFile, JSON.stringify(payload, null, 2), "utf8");
 fs.writeFileSync(intelligenceGraphIndexFile, JSON.stringify(buildIntelligenceGraphIndex(payload), null, 2), "utf8");
+fs.writeFileSync(enterpriseAiFdeFile, JSON.stringify({
+  meta: {
+    version: enterpriseAiLensVersion,
+    generatedAt: payload.meta.generatedAt,
+    activeDate,
+    source: rel(outputFile),
+    fdePoolCount: publicEnterpriseAiFdePool.length,
+    itemCount: enterpriseAiTransformation.length,
+    boundary: "FDE is an Enterprise AI lens pool, not a fourth Business Signals Card type.",
+  },
+  fdePool: publicEnterpriseAiFdePool,
+  items: enterpriseAiTransformation,
+}, null, 2), "utf8");
 console.log(`Wrote ${rel(outputFile)} with ${cards.length} cards.`);
 console.log(`Wrote ${rel(intelligenceGraphIndexFile)} for Hermes Agent.`);
+console.log(`Wrote ${rel(enterpriseAiFdeFile)} with ${enterpriseAiTransformation.length} FDE items.`);

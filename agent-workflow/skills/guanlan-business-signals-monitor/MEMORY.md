@@ -19,6 +19,8 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 - Do not let labels such as `evidence-customer-adoption`, broad terms such as enterprise / workflow / agent, or market-size numbers qualify an item by themselves. Strategy speeches, model research, benchmarks, consumer apps, platform-only releases, and template detail placeholders must stay out of the FDE lens unless a separate source-backed deployment or customer workflow fact is present.
 - When repairing FDE precision, update both the Business Signals data builder and the frontstage regression gate, rebuild `v3-data-observation-desk.json`, run the unified Business frontstage gate, and sync `content/09-fde`.
 - FDE recall should be expanded upstream through dedicated keyword / search paths, not downstream by relaxing the frontstage lens gate. Keep a larger Raw / Pool monitoring pool for `forward deployed`, Applied AI, customer engineering, technical scoping, pilot customers, production rollout, procurement pilots, and vertical workflow deployments; then let source-first and FDE precision gates decide what can display.
+- FDE may share Business Signals Raw capture and Pool evidence, but its frontstage must use the independent `enterpriseAiFdePool` / `enterprise-ai-fde.json` lens pool. Do not require FDE display items to become Top10 Cards, and do not let FDE lens-only evidence weaken formal `product_service` / `funding` / `case` Card gates.
+- FDE lens-only entries must still hide backend fields such as `rawTitle`, use direct Chinese translations of source/original titles, and carry source-backed implementation detail from Pool excerpts before syncing to `content/09-fde`.
 
 ## 2026-06-12
 

@@ -42,10 +42,11 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: SITE-V3.3.8 enterprise AI transformation.
+- Current stage: SITE-V3.3.8.1 enterprise AI FDE lens pool.
 - Current frontstage: `01-SiteV2/site/v3-data-observation.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/weekly-ai-business-change-radar.html`, `01-SiteV2/site/follow-builders.html`, and `01-SiteV2/site/community-intelligence.html`.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V1.1.0-enterprise-ai-transformation.
+- Current Enterprise AI / FDE lens version: EAI-V1.1.0-fde-lens-pool.
 - Current Business Signals data contract: V3.3.6.3 business source artifact aggregation.
 - Current core rule source: `context/07-v3-intelligence-generation-rules.md`.
 - V2 website pages and old four-column output rules are retired.

@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-06-17
+last_updated: 2026-06-19
 use_when:
   - task startup
   - page change
@@ -18,15 +18,15 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.8-enterprise-ai-transformation |
-| Version name | Enterprise AI Transformation Lens |
+| Current version | V3.3.8.1-fde-lens-pool |
+| Version name | Enterprise AI FDE Lens Pool |
 | Version layer | Minor |
-| Release date | 2026-06-17 |
-| Last modified at | 2026-06-17T16:00:05+08:00 |
+| Release date | 2026-06-19 |
+| Last modified at | 2026-06-19T16:10:00+08:00 |
 | Product version | V3.3 |
 | Main website version | SITE-V3.3.8-enterprise-ai-transformation |
 | Business Signals column version | BSIG-V1.1.0-enterprise-ai-transformation |
-| Enterprise AI lens version | EAI-V1.0.0-enterprise-ai-transformation |
+| Enterprise AI lens version | EAI-V1.1.0-fde-lens-pool |
 | Intelligence Map column version | IMAP-V1.1.0-weekly-report |
 | Business Signals data contract | V3.3.6.3-business-source-artifact-aggregation |
 | Weekly Report content source | `01-SiteV2/content/08-report/` |
@@ -40,8 +40,8 @@ This file is the current version baseline. Closeout files prove what happened; t
 - WaveSight AI is now a unified intelligence frontstage, not a V2 four-column content site.
 - V3.3 public frontstage has four entries: Business Signals, Intelligence Map, First-Line Viewpoints, and Community Intelligence.
 - Business Signals uses the Raw / Pool / Card / Relationship Graph / Trend Candidate chain.
-- Business Signals is versioned as `BSIG-V1.1.0-enterprise-ai-transformation` in this release. Its public page keeps Top10 as the primary desk and adds an `EAI-V1.0.0-enterprise-ai-transformation` secondary lens for boss-facing enterprise AI implementation signals.
-- Enterprise AI / 企业AI化 is a frontstage interpretation and monitoring lens derived from product / funding / case Cards. It is not a fourth Card type, and it must not expose backend-only fields.
+- Business Signals is versioned as `BSIG-V1.1.0-enterprise-ai-transformation` in this release. Its public page keeps Top10 as the primary desk and adds an `EAI-V1.1.0-fde-lens-pool` secondary lens for boss-facing enterprise AI implementation signals.
+- Enterprise AI / FDE is a frontstage interpretation and monitoring lens backed by an independent FDE Lens Pool. It is not a fourth Card type, and it must not expose backend-only fields.
 - Business Signals now defaults to independent source artifact collection before unified Raw / Pool normalization: `aihot`, `keyword`, `gdelt`, and `rss` each preserve source-discovered items, while the unified monitor decides final eligibility and release gates.
 - First-Line Viewpoints uses the follow-builders / builders data chain as an independent page, split into a morning RSS route and an afternoon local follow-builders skill route.
 - Community Intelligence uses the logged-in community collection route as an independent page and Obsidian archive stream.
@@ -158,7 +158,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| SITE-V3.3.8-enterprise-ai-transformation / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.0.0-enterprise-ai-transformation | 2026-06-17T16:00:05+08:00 | Adds the 企业AI化 secondary lens to Business Signals for FDE-style implementation monitoring and consulting-relevant reading. The public table uses one case per row, keeps `AI化动作` and `Tags`, and hides diagnostic fields that do not help boss-facing decisions. | current |
+| SITE-V3.3.8-enterprise-ai-transformation / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.1.0-fde-lens-pool | 2026-06-19T16:10:00+08:00 | Splits Enterprise AI / FDE into an independent Lens Pool fed by Raw / Pool evidence while preserving Business Signals Top10 and Card rules. Adds `enterprise-ai-fde.json`, source-backed FDE detail checks, and Obsidian `content/09-fde` sync from the new pool. | current |
+| SITE-V3.3.8-enterprise-ai-transformation / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.0.0-enterprise-ai-transformation | 2026-06-17T16:00:05+08:00 | Adds the 企业AI化 secondary lens to Business Signals for FDE-style implementation monitoring and consulting-relevant reading. The public table uses one case per row, keeps `AI化动作` and `Tags`, and hides diagnostic fields that do not help boss-facing decisions. | upgraded |
 | OPS-V1.0.1 / V2.2.2-source-title | 2026-06-16T21:35:00+08:00 | Fixes Topic Center title semantics: public list titles and Obsidian daily headings now use the primary original source title; boss-facing judgment remains only in core judgment, pain point, money line, angles, and action fields. | current operations backend / current backend column |
 | SITE-V3.3.7-weekly-report-intelligence-map / IMAP-V1.1.0-weekly-report | 2026-06-15T18:44:17+08:00 | Adds the weekly report subcolumn to Intelligence Map, removes Trend Candidates and History from the Intelligence Map page, publishes the first weekly report detail page, and defines `01-SiteV2/content/08-report/` as the future weekly report source path. | upgraded |
 | OPS-V1.0.0 | 2026-06-15T17:40:00+08:00 | Defines the unified Operations Backend version for `operations-console.html`. The backend shell now has one visible and machine-readable version, while modules such as Topic Center keep separate module versions. | upgraded |

@@ -1,7 +1,7 @@
 ---
 type: enterprise_ai_fde_index
 status: current
-updated_at: 2026-06-19T07:13:31.975Z
+updated_at: 2026-06-19T08:07:38.848Z
 ---
 
 # Enterprise AI / FDE Index

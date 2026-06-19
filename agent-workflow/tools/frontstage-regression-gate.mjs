@@ -7,7 +7,7 @@ const reportsDir = path.join(root, "agent-workflow", "reports");
 const expectedVersion = "V3.3.6.3-business-source-artifact-aggregation";
 const expectedSiteVersion = "SITE-V3.3.8-enterprise-ai-transformation";
 const expectedBusinessSignalsColumnVersion = "BSIG-V1.1.0-enterprise-ai-transformation";
-const expectedEnterpriseAiLensVersion = "EAI-V1.0.0-enterprise-ai-transformation";
+const expectedEnterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
 const rolloverAcceptedVersions = new Map([
   ["V3.3.6-business-title-hermes-handoff", new Set(["2026-06-16"])],
 ]);
@@ -232,6 +232,7 @@ function collectGeneratedDataIssues() {
     const detailItems = [
       ...(Array.isArray(data?.cards) ? data.cards : []),
       ...(Array.isArray(data?.corePoolCandidates) ? data.corePoolCandidates : []),
+      ...(Array.isArray(data?.enterpriseAiFdePool) ? data.enterpriseAiFdePool : []),
       ...(Array.isArray(data?.enterpriseAiLensCandidates) ? data.enterpriseAiLensCandidates : []),
     ];
     const detailById = new Map(detailItems.map((item) => [item.id, item]));
