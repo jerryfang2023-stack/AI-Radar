@@ -15,7 +15,7 @@ Hermes is the daily supervisor for WaveSight AI. It should observe, classify, an
 
 ## Current Version Context
 
-- Current site version: `SITE-V3.3.8.1-fde-lens-pool`.
+- Current site version: `SITE-V3.3.8.1`.
 - Current Hermes supervision contract: `V3.3.6.2-hermes-staged-handoff`.
 - Current Business Signals data contract: `V3.3.6.3-business-source-artifact-aggregation`.
 - Version ledger: `context/version-ledger.md`.

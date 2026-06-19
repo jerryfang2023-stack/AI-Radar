@@ -24,7 +24,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Release date | 2026-06-19 |
 | Last modified at | 2026-06-19T16:10:00+08:00 |
 | Product version | V3.3 |
-| Main website version | SITE-V3.3.8.1-fde-lens-pool |
+| Main website version | SITE-V3.3.8.1 |
 | Business Signals column version | BSIG-V1.1.0-enterprise-ai-transformation |
 | Enterprise AI lens version | EAI-V1.1.0-fde-lens-pool |
 | Intelligence Map column version | IMAP-V1.1.0-weekly-report |
@@ -158,7 +158,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| SITE-V3.3.8.1-fde-lens-pool / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.1.0-fde-lens-pool | 2026-06-19T16:10:00+08:00 | Splits Enterprise AI / FDE into an independent Lens Pool fed by Raw / Pool evidence while preserving Business Signals Top10 and Card rules. Adds `enterprise-ai-fde.json`, source-backed FDE detail checks, and Obsidian `content/09-fde` sync from the new pool. | current |
+| SITE-V3.3.8.1 / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.1.0-fde-lens-pool | 2026-06-19T16:10:00+08:00 | Splits Enterprise AI / FDE into an independent Lens Pool fed by Raw / Pool evidence while preserving Business Signals Top10 and Card rules. Adds `enterprise-ai-fde.json`, source-backed FDE detail checks, and Obsidian `content/09-fde` sync from the new pool. | current |
 | SITE-V3.3.8-enterprise-ai-transformation / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.0.0-enterprise-ai-transformation | 2026-06-17T16:00:05+08:00 | Adds the 企业AI化 secondary lens to Business Signals for FDE-style implementation monitoring and consulting-relevant reading. The public table uses one case per row, keeps `AI化动作` and `Tags`, and hides diagnostic fields that do not help boss-facing decisions. | upgraded |
 | OPS-V1.0.1 / V2.2.2-source-title | 2026-06-16T21:35:00+08:00 | Fixes Topic Center title semantics: public list titles and Obsidian daily headings now use the primary original source title; boss-facing judgment remains only in core judgment, pain point, money line, angles, and action fields. | current operations backend / current backend column |
 | SITE-V3.3.7-weekly-report-intelligence-map / IMAP-V1.1.0-weekly-report | 2026-06-15T18:44:17+08:00 | Adds the weekly report subcolumn to Intelligence Map, removes Trend Candidates and History from the Intelligence Map page, publishes the first weekly report detail page, and defines `01-SiteV2/content/08-report/` as the future weekly report source path. | upgraded |

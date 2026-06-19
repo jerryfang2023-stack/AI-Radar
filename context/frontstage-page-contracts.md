@@ -1,7 +1,7 @@
 ---
 status: current
 scope: frontstage-page-contracts
-last_updated: 2026-06-17
+last_updated: 2026-06-19
 use_when:
   - page change
   - navigation change
@@ -25,15 +25,15 @@ Read `context/version-ledger.md` first. This file defines what each current fron
 | Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community Intelligence V1.0; logged-in community cases, AI tool tactics, commercial opportunities, document links; deduped and value-sorted; local Obsidian archive route | Raw duplicate keyword hits; internal scoring/diagnostic fields exposed as card content; community posts treated as verified business-signal facts without promotion | syntax + collector syntax + archive syntax + visual smoke + frontstage regression |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Existing operations backend; production chain, source quality, topic center, content factory, release status | Accidental deletion; frontstage restyling that breaks operations UI; V2 public navigation takeover | syntax + manual smoke |
 
-Business Signals must keep the daily Top10 as the default primary view. It may provide a secondary "All Core Pool" view for the same date, sorted by importance, and a secondary "企业AI化" lens derived from product / funding / case Cards. These secondary views must not replace the editorial Top10 entry or introduce a fourth Card type.
+Business Signals must keep the daily Top10 as the default primary view. It may provide a secondary "All Core Pool" view for the same date, sorted by importance, and a secondary Enterprise AI / FDE lens backed by the independent FDE Lens Pool. These secondary views must not replace the editorial Top10 entry or introduce a fourth Card type.
 
 ## Current Frontstage Versions
 
 | Scope | Version | Meaning |
 |---|---|---|
-| Main website | `SITE-V3.3.8.1-fde-lens-pool` | Current GitHub Pages frontstage release. |
+| Main website | `SITE-V3.3.8.1` | Current GitHub Pages frontstage release. |
 | Business Signals column | `BSIG-V1.1.0-enterprise-ai-transformation` | Keeps Top10 as the primary business-signal desk and adds the 企业AI化 secondary lens. |
-| Enterprise AI / 企业AI化 lens | `EAI-V1.0.0-enterprise-ai-transformation` | Boss-facing implementation lens derived from product / funding / case Cards; not a fourth Card type. |
+| Enterprise AI / FDE lens | `EAI-V1.1.0-fde-lens-pool` | Boss-facing implementation lens backed by the independent FDE Lens Pool; not a fourth Card type. |
 
 ## Unified Navigation
 
