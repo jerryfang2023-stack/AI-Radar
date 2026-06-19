@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Claude"
-opinion_count: 18
-latest_date: 2026-06-17
+opinion_count: 21
+latest_date: 2026-06-18
 ---
 
 # Claude 观点时间线
-共 18 条观点，按人物 + 日期文件聚合。
+共 21 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-06-18](./2026-06-18.md)
 - [2026-06-17](./2026-06-17.md)
 - [2026-06-10](./2026-06-10.md)
 - [2026-06-09](./2026-06-09.md)
