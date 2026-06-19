@@ -7,10 +7,10 @@ report_path: agent-workflow/reports/2026-06-19-daily-supervision-report.md
 data_generated: no_or_stale
 needed_action: send Codex a business_signals repair request with failed gate and report path
 created_at: 2026-06-19T11:20:14+08:00
-updated_at: 2026-06-19T11:45:49+08:00
-resolved_at: 2026-06-19T11:45:49+08:00
+updated_at: 2026-06-19T11:46:40+08:00
+resolved_at: 2026-06-19T11:46:40+08:00
 resolver: codex
-fix_commit: pending-local-change
+fix_commit: 87eb5e8741195ac56fb342e8e055cc14447f87e4
 validation: artifact replay build-v3-data-observation-desk + assert-v3-source-first-frontstage (2026-06-19 passed, top10_count=10)
 prevention_added: memory
 source: hermes-auto
@@ -44,5 +44,11 @@ source: hermes-auto
 ## Resolution - 2026-06-19T11:45:49+08:00
 
 - fix_commit: pending-local-change
+- validation: artifact replay build-v3-data-observation-desk + assert-v3-source-first-frontstage (2026-06-19 passed, top10_count=10)
+- prevention_added: memory
+
+## Resolution - 2026-06-19T11:46:40+08:00
+
+- fix_commit: 87eb5e8741195ac56fb342e8e055cc14447f87e4
 - validation: artifact replay build-v3-data-observation-desk + assert-v3-source-first-frontstage (2026-06-19 passed, top10_count=10)
 - prevention_added: memory
