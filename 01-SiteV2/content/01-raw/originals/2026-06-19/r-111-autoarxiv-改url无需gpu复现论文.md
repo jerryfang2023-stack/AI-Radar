@@ -1,0 +1,230 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-111
+title: "autoarxiv：改URL无需GPU复现论文"
+original_url: "https://x.com/deedydas/status/2067637325467926724"
+canonical_url: "https://x.com/deedydas/status/2067637325467926724"
+source_name: "X：Deedy Das (@deedydas)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: preprint
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-18T15:55:27.000Z"
+collected_at: 2026-06-19T06:41:39.824Z
+language: mixed
+full_text_hash: 72ce3f81887077ac
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-111-autoarxiv-改url无需gpu复现论文.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-111-autoarxiv-改url无需gpu复现论文.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: medium
+extraction_method: "main"
+readability_score: 55
+extractor_diagnostics: {"readability_score":55,"text_length":2389,"paragraph_count":9,"sentence_count":1,"boilerplate_hits":1,"symbol_ratio":0.0285,"method":"main"}
+has_full_text: true
+content_length: 2389
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"72ce3f81887077ac","missing":[]}
+source_volatility: high
+community_name: "X：Deedy Das (@deedydas)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"autoarxiv：改URL无需GPU复现论文","discovery_summary":"只改一个URL就能复现和迭代AI论文，甚至无需自备GPU，这相当不错。","source_name":"X：Deedy Das (@deedydas)","origin_url":"https://x.com/deedydas/status/2067637325467926724","discovered_at":"2026-06-19T06:38:20.374Z","rank_on_page":208,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 9a624813bf9e4837
+content_hash: 72ce3f81887077ac
+semantic_hash: 8d1a0d1d29d06690
+duplicate_of: ""
+first_seen_at: "2026-06-18T15:55:27.000Z"
+last_seen_at: 2026-06-19T06:41:39.824Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["X","Deedy Das (@deedydas)"],"products":["agent"],"people":[],"industries":["开发者工具"],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":["部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["17","00","3","55","18","2026","106.3","1"],"quotes":[]}
+evidence_seed: {"company_actions":["只改一个URL就能复现和迭代AI论文，甚至无需自备GPU，这相当不错。","Post Log in Sign up Post Deedy @deedydas Pretty neat that with one URL change, you can now replicate and iterate on AI papers without having to even provision your own GPUs alphaXiv @askalphaxiv 17h Introducing autoresearch for arXiv papers Change 'arxiv' to 'autoarxiv' in any paper URL An agent deploys to resolve setup issues on the codebase, run a minimal reproduction, and estimate full replication cost.","Read more below 00:00 3:55 PM · Jun 18, 2026 106."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"只改一个URL就能复现和迭代AI论文，甚至无需自备GPU，这相当不错。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Post Log in Sign up Post Deedy @deedydas Pretty neat that with one URL change, you can now replicate and iterate on AI papers without having to even provision your own GPUs alphaXiv @askalphaxiv 17h Introducing autoresearch for arXiv papers Change 'arxiv' to 'autoarxiv' in any paper URL An agent deploys to resolve setup issues on the codebase, run a minimal reproduction, and estimate full replication cost.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Read more below 00:00 3:55 PM · Jun 18, 2026 106.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"3K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"25em) / 2), 1px) 0}.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# autoarxiv：改URL无需GPU复现论文
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Deedy
+@deedydas
+Pretty neat that with one URL change, you can now replicate and iterate on AI papers without having to even provision your own GPUs
+alphaXiv
+@askalphaxiv
+17h
+Introducing autoresearch for arXiv papers
+Change 'arxiv' to 'autoarxiv' in any paper URL
+An agent deploys to resolve setup issues on the codebase, run a minimal reproduction, and estimate full replication cost. Read more below
+00:00
+3:55 PM · Jun 18, 2026 106.3K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 12
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 40
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 0 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 708
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 2 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 627
+Read 12 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Deedy
+@deedydas
+Pretty neat that with one URL change, you can now replicate and iterate on AI papers without having to even provision your own GPUs
+alphaXiv
+@askalphaxiv
+17h
+Introducing autoresearch for arXiv papers
+Change 'arxiv' to 'autoarxiv' in any paper URL
+An agent deploys to resolve setup issues on the codebase, run a minimal reproduction, and estimate full replication cost. Read more below
+00:00
+3:55 PM · Jun 18, 2026 106.3K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 12
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 40
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 0 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 708
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 2 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 627
+Read 12 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 55
+- fetch_status: fetched-readable-text-main
+- extraction_quality: medium
+- diagnostics: {"readability_score":55,"text_length":2389,"paragraph_count":9,"sentence_count":1,"boilerplate_hits":1,"symbol_ratio":0.0285,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   只改一个URL就能复现和迭代AI论文，甚至无需自备GPU，这相当不错。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Post Log in Sign up Post Deedy @deedydas Pretty neat that with one URL change, you can now replicate and iterate on AI papers without having to even provision your own GPUs alphaXiv @askalphaxiv 17h Introducing autoresearch for arXiv papers Change 'arxiv' to 'autoarxiv' in any paper URL An agent deploys to resolve setup issues on the codebase, run a minimal reproduction, and estimate full replication cost.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Read more below 00:00 3:55 PM · Jun 18, 2026 106.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   3K Views :host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   25em) / 2), 1px) 0}.
+
+## business_elements
+
+- companies: X, Deedy Das (@deedydas)
+- products: agent
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 17, 00, 3, 55, 18, 2026, 106.3, 1
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 只改一个URL就能复现和迭代AI论文，甚至无需自备GPU，这相当不错。 / Post Log in Sign up Post Deedy @deedydas Pretty neat that with one URL change, you can now replicate and iterate on AI papers without having to even provision your own GPUs alphaXiv @askalphaxiv 17h Introducing autoresearch for arXiv papers Change 'arxiv' to 'autoarxiv' in any paper URL An agent deploys to resolve setup issues on the codebase, run a minimal reproduction, and estimate full replication cost. / Read more below 00:00 3:55 PM · Jun 18, 2026 106.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Deedy Das (@deedydas)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"autoarxiv：改URL无需GPU复现论文","discovery_summary":"只改一个URL就能复现和迭代AI论文，甚至无需自备GPU，这相当不错。","source_name":"X：Deedy Das (@deedydas)","origin_url":"https://x.com/deedydas/status/2067637325467926724","discovered_at":"2026-06-19T06:38:20.374Z","rank_on_page":208,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+只改一个URL就能复现和迭代AI论文，甚至无需自备GPU，这相当不错。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

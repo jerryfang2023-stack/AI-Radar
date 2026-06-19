@@ -1,0 +1,228 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-024
+title: "OpenAI 挖角特朗普 AI 政策核心人物 Dean Ball"
+original_url: "https://x.com/kimmonismus/status/2067649203241693239"
+canonical_url: "https://x.com/kimmonismus/status/2067649203241693239"
+source_name: "X：Kim (@kimmonismus)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-18T16:42:39.000Z"
+collected_at: 2026-06-19T06:41:39.491Z
+language: mixed
+full_text_hash: b2b9064d1af36105
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-024-openai-挖角特朗普-ai-政策核心人物-dean-ball.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-19/r-024-openai-挖角特朗普-ai-政策核心人物-dean-ball.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 71
+extractor_diagnostics: {"readability_score":71,"text_length":2705,"paragraph_count":11,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0.0251,"method":"main"}
+has_full_text: true
+content_length: 2705
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b2b9064d1af36105","missing":[]}
+source_volatility: high
+community_name: "X：Kim (@kimmonismus)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI 挖角特朗普 AI 政策核心人物 Dean Ball","discovery_summary":"特朗普 AI 政策关键塑造者 Dean Ball 将加入 OpenAI（据 Axios 报道）。此举凸显 OpenAI 通过吸纳与政府关系紧密的政策制定者，提前布局潜在监管冲突并打通政府渠道。与此同时，其最大竞争对手 Anthropic 正面临美国政府关系困境。分析认为，除开源因素外，OpenAI 是 Anthropic 当前挣扎的最大受益方。","source_name":"X：Kim (@kimmonismus)","origin_url":"https://x.com/kimmonismus/status/2067649203241693239","discovered_at":"2026-06-19T06:38:20.370Z","rank_on_page":186,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 5ec363a1a00aaf69
+content_hash: b2b9064d1af36105
+semantic_hash: a4af20abd30f1514
+duplicate_of: ""
+first_seen_at: "2026-06-18T16:42:39.000Z"
+last_seen_at: 2026-06-19T06:41:39.491Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["emerging_pool","user_feedback_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":4}
+business_elements: {"companies":["X","Kim (@kimmonismus)","OpenAI","Anthropic"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["4","42","18","2026","77.6","1","0.25","2"],"quotes":[]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post Chubby♨️ @kimmonismus Huge: Dean Ball, who helped shape the Trump administration's, heading to OpenAI.","Via Axios This is an even more significant shift, and the answer is actually quite simple: While Anthropic, OpenAI's biggest competitor, is having problems with the US government, OpenAI is bringing into the company those people who not only have good relationships with the government but are also significantly involved in shaping it.","This allows them to anticipate solutions to future conflicts and, at the same time, have good access to government circles."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":["特朗普 AI 政策关键塑造者 Dean Ball 将加入 OpenAI（据 Axios 报道）。此举凸显 OpenAI 通过吸纳与政府关系紧密的政策制定者，提前布局潜在监管冲突并打通政府渠道。与此同时，其最大竞争对手 Anthropic 正面临美国政府关系困境。分析认为，除开源因素外，OpenAI 是 Anthropic 当前挣扎的最大受益方。"]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"supporting_context","text":"特朗普 AI 政策关键塑造者 Dean Ball 将加入 OpenAI（据 Axios 报道）。此举凸显 OpenAI 通过吸纳与政府关系紧密的政策制定者，提前布局潜在监管冲突并打通政府渠道。与此同时，其最大竞争对手 Anthropic 正面临美国政府关系困境。分析认为，除开源因素外，OpenAI 是 Anthropic 当前挣扎的最大受益方。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Post Log in Sign up Post Chubby♨️ @kimmonismus Huge: Dean Ball, who helped shape the Trump administration's, heading to OpenAI.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Via Axios This is an even more significant shift, and the answer is actually quite simple: While Anthropic, OpenAI's biggest competitor, is having problems with the US government, OpenAI is bringing into the company those people who not only have good relationships with the government but are also significantly involved in shaping it.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This allows them to anticipate solutions to future conflicts and, at the same time, have good access to government circles.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"All of which is what their biggest competitor, Anthropic, would like to have.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Besides open source, OpenAI is the biggest winner from Anthropic's current struggle.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# OpenAI 挖角特朗普 AI 政策核心人物 Dean Ball
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Chubby♨️
+@kimmonismus
+Huge: Dean Ball, who helped shape the Trump administration's, heading to OpenAI. Via Axios
+This is an even more significant shift, and the answer is actually quite simple:
+While Anthropic, OpenAI's biggest competitor, is having problems with the US government, OpenAI is bringing into the company those people who not only have good relationships with the government but are also significantly involved in shaping it.
+This allows them to anticipate solutions to future conflicts and, at the same time, have good access to government circles.
+All of which is what their biggest competitor, Anthropic, would like to have.
+Besides open source, OpenAI is the biggest winner from Anthropic's current struggle.
+4:42 PM · Jun 18, 2026 77.6K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 18
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 13
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 6 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 264
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 42
+Read 18 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Chubby♨️
+@kimmonismus
+Huge: Dean Ball, who helped shape the Trump administration's, heading to OpenAI. Via Axios
+This is an even more significant shift, and the answer is actually quite simple:
+While Anthropic, OpenAI's biggest competitor, is having problems with the US government, OpenAI is bringing into the company those people who not only have good relationships with the government but are also significantly involved in shaping it.
+This allows them to anticipate solutions to future conflicts and, at the same time, have good access to government circles.
+All of which is what their biggest competitor, Anthropic, would like to have.
+Besides open source, OpenAI is the biggest winner from Anthropic's current struggle.
+4:42 PM · Jun 18, 2026 77.6K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 18
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 13
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 6 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 264
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 42
+Read 18 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 71
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":71,"text_length":2705,"paragraph_count":11,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0.0251,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   特朗普 AI 政策关键塑造者 Dean Ball 将加入 OpenAI（据 Axios 报道）。此举凸显 OpenAI 通过吸纳与政府关系紧密的政策制定者，提前布局潜在监管冲突并打通政府渠道。与此同时，其最大竞争对手 Anthropic 正面临美国政府关系困境。分析认为，除开源因素外，OpenAI 是 Anthropic 当前挣扎的最大受益方。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Post Log in Sign up Post Chubby♨️ @kimmonismus Huge: Dean Ball, who helped shape the Trump administration's, heading to OpenAI.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Via Axios This is an even more significant shift, and the answer is actually quite simple: While Anthropic, OpenAI's biggest competitor, is having problems with the US government, OpenAI is bringing into the company those people who not only have good relationships with the government but are also significantly involved in shaping it.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   This allows them to anticipate solutions to future conflicts and, at the same time, have good access to government circles.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   All of which is what their biggest competitor, Anthropic, would like to have.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Besides open source, OpenAI is the biggest winner from Anthropic's current struggle.
+
+## business_elements
+
+- companies: X, Kim (@kimmonismus), OpenAI, Anthropic
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 4, 42, 18, 2026, 77.6, 1, 0.25, 2
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post Chubby♨️ @kimmonismus Huge: Dean Ball, who helped shape the Trump administration's, heading to OpenAI. / Via Axios This is an even more significant shift, and the answer is actually quite simple: While Anthropic, OpenAI's biggest competitor, is having problems with the US government, OpenAI is bringing into the company those people who not only have good relationships with the government but are also significantly involved in shaping it. / This allows them to anticipate solutions to future conflicts and, at the same time, have good access to government circles.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 特朗普 AI 政策关键塑造者 Dean Ball 将加入 OpenAI（据 Axios 报道）。此举凸显 OpenAI 通过吸纳与政府关系紧密的政策制定者，提前布局潜在监管冲突并打通政府渠道。与此同时，其最大竞争对手 Anthropic 正面临美国政府关系困境。分析认为，除开源因素外，OpenAI 是 Anthropic 当前挣扎的最大受益方。
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- user_feedback_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Kim (@kimmonismus)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI 挖角特朗普 AI 政策核心人物 Dean Ball","discovery_summary":"特朗普 AI 政策关键塑造者 Dean Ball 将加入 OpenAI（据 Axios 报道）。此举凸显 OpenAI 通过吸纳与政府关系紧密的政策制定者，提前布局潜在监管冲突并打通政府渠道。与此同时，其最大竞争对手 Anthropic 正面临美国政府关系困境。分析认为，除开源因素外，OpenAI 是 Anthropic 当前挣扎的最大受益方。","source_name":"X：Kim (@kimmonismus)","origin_url":"https://x.com/kimmonismus/status/2067649203241693239","discovered_at":"2026-06-19T06:38:20.370Z","rank_on_page":186,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+特朗普 AI 政策关键塑造者 Dean Ball 将加入 OpenAI（据 Axios 报道）。此举凸显 OpenAI 通过吸纳与政府关系紧密的政策制定者，提前布局潜在监管冲突并打通政府渠道。与此同时，其最大竞争对手 Anthropic 正面临美国政府关系困境。分析认为，除开源因素外，OpenAI 是 Anthropic 当前挣扎的最大受益方。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
