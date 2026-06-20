@@ -4,7 +4,7 @@
     "siteVersion": "SITE-V3.3.8.1",
     "businessSignalsColumnVersion": "BSIG-V1.1.0-enterprise-ai-transformation",
     "enterpriseAiLensVersion": "EAI-V1.1.0-fde-lens-pool",
-    "generatedAt": "2026-06-20T08:30:40.044Z",
+    "generatedAt": "2026-06-20T11:52:01.756Z",
     "activeDate": "2026-06-20",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -34,13 +34,13 @@
     "totalCards": 323,
     "todayCards": 10,
     "todayTop10": 10,
-    "corePoolCandidates": 13,
+    "corePoolCandidates": 14,
     "linkedCorePoolCards": 10,
-    "candidateOnlyCorePool": 3,
+    "candidateOnlyCorePool": 4,
     "relationshipNodes": 20,
     "relationshipEdges": 40,
     "relationshipClusters": 2,
-    "enterpriseAiTransformation": 4,
+    "enterpriseAiTransformation": 2,
     "tagAssociations": 8,
     "trendLinks": 16,
     "trendCandidates": 0
@@ -62,6 +62,7 @@
       "POOL-2026-06-20-P-007",
       "POOL-2026-06-20-P-063",
       "POOL-2026-06-20-P-060",
+      "POOL-2026-06-20-P-051",
       "SIG-20260620-A03",
       "SIG-20260620-A11",
       "SIG-20260620-A13",
@@ -74,10 +75,8 @@
       "SIG-20260620-A06"
     ],
     "enterpriseAiTransformationCardIds": [
-      "FDE-2026-06-20-P-025",
-      "SIG-20260620-A03",
-      "SIG-20260620-A05",
-      "SIG-20260620-A13"
+      "FDE-2026-06-20-P-051",
+      "FDE-2026-06-20-P-025"
     ],
     "largeCompanyTop10": [
       {
@@ -20566,8 +20565,8 @@
       "sourceUrl": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 674,
-      "evidenceScore": 40,
+      "rankScore": 646,
+      "evidenceScore": 12,
       "poolRoutes": [
         "core_pool"
       ],
@@ -20632,10 +20631,8 @@
           "label": "升温"
         }
       ],
-      "fact": "The Next Web 报道称，两名前高盛和 Meta 创始人融资 300 万美元，建设面向大型科技公司的语音 AI 基础设施。",
-      "evidencePoints": [
-        "Graphon AI 获得 $8.3M seed 融资。"
-      ],
+      "fact": "Graphon AI 获得 $8.3M seed 融资。",
+      "evidencePoints": [],
       "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
       "selectionReasons": [
         "涉及资金流向、预算规模或融资信号",
@@ -20643,6 +20640,7 @@
         "指向平台能力、交付成本或生态合作变化"
       ],
       "qualityWarnings": [
+        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -35397,6 +35395,55 @@
         }
       ],
       "fact": "visionOS 27 今秋推送：M5 Vision Pro 头显独占 Siri 语音定制和苹果最强本地 AI 模型",
+      "evidencePoints": [],
+      "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
+      "selectionReasons": [
+        "进入当天 Core Pool 候选池",
+        "保留为完整证据池材料"
+      ],
+      "qualityWarnings": [],
+      "fromCorePool": true
+    },
+    {
+      "id": "POOL-2026-06-20-P-051",
+      "date": "2026-06-20",
+      "type": "core_pool_candidate",
+      "category": "product-service",
+      "categoryLabel": "产品",
+      "title": "Hitachi 与 Google Cloud 扩大战略联盟，通过 FDE 加速 Physical AI 和网络安全方案落地",
+      "subject": "Company Announcement",
+      "sourceName": "markets.ft.com",
+      "sourceUrl": "https://markets.ft.com/data/announce/detail?dockey=600-202606082020BIZWIRE_USPRX____20260608_BW802379-1",
+      "sourceLevel": "A",
+      "importanceScore": 5,
+      "rankScore": 669.9999999999999,
+      "evidenceScore": 97,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [
+        "P-051"
+      ],
+      "linkedCardId": "",
+      "status": "pooled",
+      "promotionStatus": "candidate_only",
+      "notPromotedReason": "来源不可审计，需要补齐原文或来源等级",
+      "notPromotedIssues": [
+        "来源不可审计，需要补齐原文或来源等级"
+      ],
+      "repairSuggestion": "补齐可审计原文链接、来源等级，避免只依赖搜索入口或聚合页。",
+      "promotePriority": "medium",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {},
+      "flatTags": [],
+      "displayTags": [
+        {
+          "id": "product-service",
+          "label": "产品"
+        }
+      ],
+      "fact": "Hitachi 与 Google Cloud 扩大战略联盟，Hitachi 将建立并全球部署 FDE 模型，把 Lumada、IT/OT 能力与 Google Cloud AI 结合，用于 Physical AI、HMAX 和网络安全方案落地。",
       "evidencePoints": [],
       "value": "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
       "selectionReasons": [

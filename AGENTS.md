@@ -150,6 +150,23 @@ Rules:
 - A single article, opinion, or funding event cannot form a trend.
 - Builders viewpoints must not be used as evidence.
 
+### Enterprise AI / FDE Lens
+
+Read:
+
+1. `agent-workflow/skills/guanlan-enterprise-ai-fde-monitor/SKILL.md`
+2. `context/07-v3-intelligence-generation-rules.md`
+3. `context/05-daily-monitoring.md`
+4. `01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs`
+5. `agent-workflow/tools/sync-enterprise-ai-fde-to-obsidian.mjs`
+
+Rules:
+
+- FDE is an independent implementation lens, not a fourth Business Signal Card type.
+- Every public FDE item must include source-bounded demand / service / result analysis.
+- If the source does not disclose implementation results, state that explicitly instead of inventing ROI or production outcome.
+- FDE detail openability and `content/09-fde` sync are owned by the FDE skill, not by generic Top10 repair.
+
 ### UI / Page Work
 
 Read:

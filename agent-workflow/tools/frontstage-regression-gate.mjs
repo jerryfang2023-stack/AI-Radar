@@ -247,6 +247,10 @@ function collectGeneratedDataIssues() {
       if (!hasConcreteEnterpriseImplementationEvidence(evidenceText)) {
         issues.push(issue(dataFile, "enterprise_ai_fde_lens_imprecise", `${item.title || item.cardId || "untitled"} lacks concrete implementation evidence`));
       }
+      const analysis = item.implementationAnalysis || {};
+      if (!analysis.demand || !analysis.services || !analysis.result) {
+        issues.push(issue(dataFile, "enterprise_ai_fde_analysis_missing", item.cardId || item.title || "missing"));
+      }
     }
   } catch (error) {
     issues.push(issue(dataFile, "v3_data_json_parse_failed", error.message));
@@ -269,6 +273,10 @@ function enterpriseItemEvidenceText(item = {}, detail = {}) {
     item.scenario,
     item.workflow,
     item.evidenceBoundary,
+    item.implementationAnalysis?.demand,
+    item.implementationAnalysis?.services,
+    item.implementationAnalysis?.result,
+    item.implementationAnalysis?.sourceBasis,
     detail.title,
     detail.displayTitle,
     detail.originalTitle,

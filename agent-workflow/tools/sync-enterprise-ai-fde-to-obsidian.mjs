@@ -253,6 +253,10 @@ const cleanDailyBody = [
       `- stage: ${item.stageLabel || item.stage || ""}`,
       `- scenario: ${item.scenario || ""}`,
       `- workflow: ${item.workflow || ""}`,
+      `- demand: ${compact(item.implementationAnalysis?.demand || "")}`,
+      `- services: ${compact(item.implementationAnalysis?.services || "")}`,
+      `- result: ${compact(item.implementationAnalysis?.result || "")}`,
+      `- source_basis: ${compact(item.implementationAnalysis?.sourceBasis || "")}`,
       `- evidence_boundary: ${compact(item.evidenceBoundary || "")}`,
       "",
     ].join("\n");

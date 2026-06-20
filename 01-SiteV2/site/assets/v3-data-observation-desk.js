@@ -241,6 +241,7 @@
     return [
       ...(state.payload.cards || []),
       ...(state.payload.corePoolCandidates || []),
+      ...(state.payload.enterpriseAiFdePool || []),
       ...(state.payload.enterpriseAiLensCandidates || []),
     ].find((item) => item.id === id || item.linkedCardId === id);
   }
@@ -406,6 +407,7 @@
     const root = $("[data-detail-content]");
     const dialog = $("[data-detail-dialog]");
     if (!root || !dialog) return;
+    const analysis = item.implementationAnalysis || {};
     root.innerHTML = `
       <h2 class="detail-title">${safe(item.title)}</h2>
       <div class="detail-source-row">
@@ -418,6 +420,18 @@
         <p>${safe(item.workflow || "把 Agent 或模型接入业务系统")}</p>
       </div>
       <div class="detail-main-grid">
+        <div class="detail-block">
+          <h3>发现的需求</h3>
+          <p>${safe(analysis.demand || "原文未提供足够信息判断具体需求。")}</p>
+        </div>
+        <div class="detail-block">
+          <h3>提供的服务</h3>
+          <p>${safe(analysis.services || "原文未提供足够信息判断具体服务。")}</p>
+        </div>
+        <div class="detail-block">
+          <h3>实施结果</h3>
+          <p>${safe(analysis.result || "原文未披露最终实施结果。")}</p>
+        </div>
         <div class="detail-block">
           <h3>阶段与场景</h3>
           <p>${safe([item.stageLabel || enterpriseStageLabel(item.stage), item.scenario].filter(Boolean).join(" / ") || "暂无公开说明。")}</p>
@@ -432,6 +446,7 @@
         <div class="detail-grid">
           ${detailField("主体", item.subject)}
           ${detailField("来源", item.sourceName || item.sourceUrl)}
+          ${detailField("来源依据", analysis.sourceBasis)}
           ${detailField("Card ID", item.cardId || item.id)}
         </div>
       </details>
@@ -473,13 +488,16 @@
       const detailButton = event.target.closest("[data-open-enterprise-detail]");
       if (!detailButton) return;
       const id = detailButton.dataset.openEnterpriseDetail;
+      const item = findEnterpriseAiItem(id);
+      if (item) {
+        renderEnterpriseAiDetail(item);
+        return;
+      }
       const card = findDetailCard(id);
       if (card) {
         renderDetail(card);
         return;
       }
-      const item = findEnterpriseAiItem(id);
-      if (item) renderEnterpriseAiDetail(item);
     };
   }
 

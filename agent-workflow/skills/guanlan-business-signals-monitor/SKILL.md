@@ -22,6 +22,8 @@ This skill owns the Business Signals production lane. It coordinates source capt
 
 It is the lane owner. It may call narrower skills such as `guanlan-daily-monitor`, `guanlan-monitor-quality-gate`, `guanlan-daily-monitor-qc`, `guanlan-raw-pool-card`, and `guanlan-trend-candidate-writer`.
 
+Enterprise AI / FDE is now owned by `guanlan-enterprise-ai-fde-monitor`. Business Signals may supply Raw / Pool evidence and keep the public lens embedded on the Business page, but FDE precision, demand/service/result analysis, detail openability, and `content/09-fde` sync route through the FDE skill.
+
 ## Current Timing
 
 - GitHub primary production window: 08:57 Asia/Shanghai.
@@ -121,6 +123,7 @@ Weekend monitor quantity floors may be lighter because source volume is lower, b
 
 - Do not write First-Line Viewpoints or Community Intelligence data.
 - Do not use builders viewpoints, opinion cards, or community posts as business-signal facts unless separately verified through Raw / Pool.
+- Do not repair Enterprise AI / FDE precision, detail, or Obsidian sync as a generic Top10 issue; route it to `guanlan-enterprise-ai-fde-monitor`.
 - Do not restore daily observation, business brief, trend report, publiccopy, cardcopy, or copy-style blockers.
 - Do not lower Raw / Pool / Core Pool / Top10 quality gates to make a day look complete.
 - Do not relax the large-company cap to solve weekend low supply; repair non-large Core Pool supply instead.

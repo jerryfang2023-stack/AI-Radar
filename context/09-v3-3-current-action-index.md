@@ -35,7 +35,7 @@ Only these actions are `current` for SITE-V3.3.8.1:
 | Action | Status | Current Role |
 |---|---|---|
 | Daily business-signal production | `current` | Produce the day's 10 most important business-signal Cards. |
-| Enterprise AI transformation lens | `current` | Surface consulting-relevant enterprise AI implementation signals from product / funding / case Cards without creating a fourth Card type. |
+| Enterprise AI / FDE lens | `current` | Independent FDE lens skill surfaces consulting-relevant implementation signals, requires demand / service / result details, syncs `content/09-fde`, and does not create a fourth Card type. |
 | Column monitor skills | `current` | Run and improve independent Business Signals, First-Line Viewpoints, and Community Intelligence monitoring skills. |
 | Hermes feedback loop automation | `current` | Convert daily supervision failures into Codex repair items and close them only after validation and prevention are recorded. |
 | Raw / Pool / Card asset chain | `current` | Separate source capture, evidence screening, and formal Cards. |

@@ -901,6 +901,8 @@ function sourceTitleLiteralTranslation(title = "", sourceUrl = "") {
   if (hasCjk(raw)) return raw;
   const text = cleanEnglishTitleForDisplay(raw);
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
+  if (/thenextweb\.com.*pivot-40m-series-b-agentic-ai-procurement-operating-system/iu.test(normalized)) return "Pivot 获得 4000 万美元 B 轮融资，面向企业采购推出 Agentic AI 操作系统";
+  if (/markets\.ft\.com.*20260608_BW802379/iu.test(normalized)) return "Hitachi 与 Google Cloud 扩大战略联盟，通过 FDE 加速 Physical AI 和网络安全方案落地";
   if (/salesforce\.com\/ap\/blog\/forward-deployed-engineer/iu.test(normalized)) return "当下最热门角色：Forward Deployed Engineer - Salesforce";
   if (/delight\.ai\/customers\/norse-atlantic-airways/iu.test(normalized)) return "Norse Atlantic Airways 客户故事";
   const rules = [
@@ -1372,6 +1374,8 @@ function top10CompatCard(card = {}) {
 function translateEnglishTitle(title = "", sourceUrl = "") {
   const text = String(title || "").trim();
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
+  if (/thenextweb\.com.*pivot-40m-series-b-agentic-ai-procurement-operating-system/iu.test(normalized)) return "Pivot 获得 4000 万美元 B 轮融资，面向企业采购推出 Agentic AI 操作系统";
+  if (/markets\.ft\.com.*20260608_BW802379/iu.test(normalized)) return "Hitachi 与 Google Cloud 扩大战略联盟，通过 FDE 加速 Physical AI 和网络安全方案落地";
   const byUrl = [
     [/techcrunch\.com.*nimble-way-raises-47m/u, "Nimble 融资 4700 万美元，让 AI Agent 获取实时网页数据"],
     [/techcrunch\.com.*neocognition.*lands-40m/u, "NeoCognition 融资 4000 万美元，研发像人类一样学习的自学习 AI Agent"],
@@ -1434,9 +1438,16 @@ function translateEnglishTitle(title = "", sourceUrl = "") {
 function chineseFactFromSource(title = "", sourceUrl = "") {
   const text = String(title || "");
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
+  if (/thenextweb\.com.*pivot-40m-series-b-agentic-ai-procurement-operating-system/iu.test(normalized)) {
+    return "The Next Web 报道称，Pivot 完成 4000 万美元 B 轮融资，将继续深化 ERP 集成，并把面向企业采购的 Agentic AI 平台推进到更多企业环境。";
+  }
+  if (/markets\.ft\.com.*20260608_BW802379/iu.test(normalized)) {
+    return "Hitachi 与 Google Cloud 扩大战略联盟，Hitachi 将建立并全球部署 FDE 模型，把 Lumada、IT/OT 能力与 Google Cloud AI 结合，用于 Physical AI、HMAX 和网络安全方案落地。";
+  }
   if (/delight\.ai\/customers\/norse-atlantic-airways/iu.test(normalized)) {
     return "Norse Atlantic Airways 与 delight.ai 合作构建面向航空公司运营的 AI workforce，用于把客户互动和运营任务交给可编排的 AI 工作流处理。";
   }
+  if (/thenextweb\.com/iu.test(normalized) && !/voice-ai-infrastructure/iu.test(normalized)) return "";
   const source = `${text}\n${normalized}`;
   const readableUrlFacts = [
     [/techcrunch\.com\/2026\/06\/18\/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/iu, "Elastic 同意以最高 8500 万美元收购 DeductiveAI；DeductiveAI 的 AI SRE 技术将并入 Elastic 可观测性平台，用于自动监控性能并修复系统故障。"],
@@ -2890,7 +2901,10 @@ function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
         sourceRef: ref,
       };
       if (!hasSourceBackedFrontstageFact(item)) return null;
-      return item;
+      return {
+        ...item,
+        implementationAnalysis: enterpriseImplementationAnalysis(item),
+      };
     })
     .filter(Boolean)
     .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.sourceRef || a.id).localeCompare(String(b.sourceRef || b.id)));
@@ -2972,7 +2986,10 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
         sourceRef: ref,
       };
       if (!hasSourceBackedFrontstageFact(item)) return null;
-      return item;
+      return {
+        ...item,
+        implementationAnalysis: enterpriseImplementationAnalysis(item),
+      };
     })
     .filter(Boolean);
   return dedupeEnterpriseAiFdePoolItems(items)
@@ -3854,6 +3871,62 @@ function enterpriseTransformationBoundary(card = {}) {
   return short(`已确认：${fact}；未确认：内部投入、ROI 与长期运行效果。`, 190);
 }
 
+function enterpriseImplementationAnalysis(card = {}) {
+  const text = enterpriseTransformationText(card);
+  const fact = cardSourceFact(card) || card.translatedFact || card.summary || card.visibleFragment || "";
+  const scenario = enterpriseTransformationScenario(text, card.flatTags || []);
+  const workflow = enterpriseTransformationWorkflow(text, card.category);
+
+  let demand = `原文显示，企业侧需求集中在${workflow}，需要把 AI / Agent 接入实际业务流程，而不是停留在演示或通用工具层。`;
+  if (/procurement|purchase|supplier|supply chain|bidding|采购|供应商|供应链|招投标/iu.test(text)) {
+    demand = "发现的需求是企业采购、供应商选择和合规校验流程需要自动化，减少人工检索、比价、审批和合同处理中的摩擦。";
+  } else if (/Hitachi|Physical AI|HMAX|frontline worker|frontline|social infrastructure|Google Cloud Security|Mandiant|物理 AI|前线|社会基础设施|网络安全/iu.test(text)) {
+    demand = "发现的需求是制造、基础设施和现场运营场景需要把 AI 从分析推进到真实设备、业务系统和安全运营中，同时降低上线、风险和客户现场约束。";
+  } else if (/healthcare|payer|hospital|claims|underwriting|regulated|医疗|医保|支付方|理赔|承保|监管/iu.test(text)) {
+    demand = "发现的需求是高合规行业需要把 AI 引入受监管工作流，同时保留专业人员审核、数据边界和上线前验证。";
+  } else if (/customer service|contact center|support|sales|crm|客服|客户支持|销售|CRM|工单/iu.test(text)) {
+    demand = "发现的需求是客户服务、销售跟进或工单处理需要更快响应、更准知识检索，并能嵌入现有 CRM / 服务系统。";
+  } else if (/developer|github|code|software|engineering|devops|代码|软件研发|工程团队/iu.test(text)) {
+    demand = "发现的需求是工程团队需要把 AI 接入代码、审查、测试和交付链路，降低从原型到生产环境的落差。";
+  } else if (/data|warehouse|analytics|knowledge|rag|数据|分析|知识库|检索/iu.test(text)) {
+    demand = "发现的需求是企业数据、知识库或分析系统需要被 AI 调用，并在业务决策或工作流里形成可执行输出。";
+  }
+
+  let services = `提供的服务是围绕${scenario}的 AI 实施与交付：做技术 scoping、系统接入、工作流配置、验证和上线支持。`;
+  if (/FDE|forward deployed|customer-embedded|domain operator|customer environment/iu.test(text)) {
+    services = "提供的服务是 FDE / 客户嵌入式工程交付：工程师进入客户环境，完成需求拆解、系统集成、流程验证和上线支持。";
+    if (/Hitachi|Physical AI|HMAX|Google Cloud|Gemini Enterprise|GlobalLogic/iu.test(text)) {
+      services = "提供的服务是 Hitachi FDE 模型：Hitachi 咨询、AX 专家和 GlobalLogic 工程师与 Google Cloud 工程师协作，做现场约束识别、PoC、敏捷实施、HMAX/Gemini Enterprise 集成和安全方案交付。";
+    }
+  } else if (/platform|operating system|agentic|workflow|automation|平台|操作系统|自动化/iu.test(text)) {
+    services = `提供的服务是面向${workflow}的平台或 Agent 系统，把数据、审批、工具调用和人工校验串成可运行流程。`;
+  } else if (/funding|raises?|raised|series|seed|融资|轮融资/iu.test(text)) {
+    services = `提供的服务方向是建设面向${workflow}的企业 AI 产品或交付能力；融资新闻本身只证明供给方在扩张该能力。`;
+  }
+
+  let result = "原文未披露最终实施结果；目前只能确认该项目或产品已经进入公开发布、融资、试点、客户交付或实施准备阶段。";
+  const metric = text.match(/\b\d+(?:\.\d+)?\s?(?:%|percent|x|times|transactions?|calls?|bookings?|stores?|employees?|customers?|hours?|days?|million|billion)\b/iu)?.[0];
+  if (/production|go-live|rollout|deployed|implemented|at scale|上线|生产|部署|落地|规模化/iu.test(text)) {
+    result = metric
+      ? `实施结果已经进入生产/部署阶段，原文同时出现可量化线索 ${metric}；仍需以原文披露范围为边界。`
+      : "实施结果已经进入生产、部署或上线阶段；原文未披露可独立核验的 ROI 或长期运行指标。";
+    if (/Hitachi|Physical AI|HMAX|Google Cloud|Customer Zero/iu.test(text)) {
+      result = "实施结果是双方将全球部署 Hitachi FDE 模型并增强 HMAX；原文提到 Hitachi 以 Customer Zero 方式验证过 Gemini Enterprise 在维护检查中的质量和效率潜力，但未披露独立 ROI 数字。";
+    }
+  } else if (/pilot|poc|proof of concept|trial|试点|概念验证|验证/iu.test(text)) {
+    result = "实施结果处在试点 / POC / 验证阶段；原文未披露是否已经规模化上线。";
+  } else if (/funding|raises?|raised|series|seed|融资|轮融资/iu.test(text)) {
+    result = "实施结果尚未由融资新闻直接证明；已确认的是供给方获得资金以继续建设或推广该企业 AI / FDE 能力。";
+  }
+
+  return {
+    demand: short(demand, 180),
+    services: short(services, 190),
+    result: short(result, 190),
+    sourceBasis: short(fact, 240),
+  };
+}
+
 function enterpriseTransformationScore(card = {}) {
   const text = enterpriseTransformationText(card);
   const tags = new Set(card.flatTags || []);
@@ -3917,6 +3990,7 @@ function enterpriseTransformationItem(card = {}) {
     scenario: enterpriseTransformationScenario(text, tags),
     workflow: enterpriseTransformationWorkflow(text, card.category),
     evidenceBoundary: enterpriseTransformationBoundary(card),
+    implementationAnalysis: enterpriseImplementationAnalysis(card),
   };
 }
 
@@ -4197,7 +4271,7 @@ const enterpriseAiFdePool = buildEnterpriseAiFdePoolItems(cards, activeDate)
   .filter(publicFdeCandidateIsDisplayReady)
   .filter(hasEnterpriseImplementationSignal)
   .filter((card) => !isWeakSubject(card.subject));
-const enterpriseAiTransformation = buildEnterpriseAiTransformation(cards, [...enterpriseAiFdePool, ...enterpriseAiLensCandidates, ...corePoolCandidates], activeDate);
+const enterpriseAiTransformation = buildEnterpriseAiTransformation(enterpriseAiFdePool, [], activeDate);
 const publicEnterpriseAiFdePool = enterpriseAiFdePool.map(({ rawTitle, modelGeneratedTitle, ...item }) => item);
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
