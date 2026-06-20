@@ -522,6 +522,10 @@ function publicCardCopy(raw = "") {
     .replace(/\u7528\u4e8e\u89c4\u6a21\u5316/gu, "\u652f\u6491\u5927\u89c4\u6a21");
 }
 
+function hasCjk(value = "") {
+  return /[\u4e00-\u9fff]/u.test(String(value || ""));
+}
+
 function parseJsonValue(section, key, fallback) {
   const raw = value(section, key);
   if (!raw) return fallback;
@@ -569,7 +573,24 @@ function extractNumbers(raw = "") {
     .map((match) => match[0].replace(/\s+/gu, " ").trim());
 }
 
-function translatedSourcePoint(raw = "", type = "") {
+function sourceBackedChineseFact(raw = "", context = {}) {
+  const text = stripSourceNoise(raw);
+  if (!text) return "";
+  if (!/\b(AI|agent|LLM|model|enterprise|customer|workflow|deployment|platform|cloud|inference|funding|raises?|launched?|announces?|released?|introduced?|case study)\b/iu.test(text)) return "";
+  const company = publicCardCopy(context.company || "");
+  const scenario = publicCardCopy(context.scenario || scenarioFromText(text));
+  const numbers = extractNumbers(text).slice(0, 2);
+  const action =
+    /\b(raises?|raised|funding|financing|seed|series\s+[a-z])\b/iu.test(text) ? "融资或资金流向" :
+    /\b(customer|case study|deployment|deployed|adopted|used by|rollout)\b/iu.test(text) ? "客户部署或应用案例" :
+    /\b(launches?|launched|announces?|released?|introduced?|available|platform|product)\b/iu.test(text) ? "产品或平台动作" :
+    "AI 商业动作";
+  const owner = company ? `${company} 的` : "";
+  const numberNote = numbers.length ? `；原文同时出现 ${numbers.join("、")} 等数字` : "";
+  return `来源材料显示，${owner}${action}涉及${scenario}${numberNote}。`;
+}
+
+function translatedSourcePoint(raw = "", type = "", context = {}) {
   const text = stripSourceNoise(raw);
   if (!text) return "";
   if (/[\u4e00-\u9fff]/u.test(text)) return text.length > 220 ? `${text.slice(0, 219)}...` : text;
@@ -582,11 +603,15 @@ function translatedSourcePoint(raw = "", type = "") {
   if (/\b(designed to take action|automatically execute tasks|updates? records|generating follow-up actions|identifying deal risks|coordinating workflows|customer deployment|case study)\b/iu.test(text)) {
     return "原文描述产品把会议、邮件、工单、CRM 或业务数据转为可执行动作。";
   }
-  return "";
+  return sourceBackedChineseFact(text, context);
 }
 
 function sourcePointsFromSection(section) {
   const raw = readRawJson(section);
+  const context = {
+    company: companyFromSection(section),
+    scenario: scenarioFromText(textForInference(section)),
+  };
   const keyExcerpts = Array.isArray(raw.key_excerpts)
     ? raw.key_excerpts
     : parseJsonValue(section, "key_excerpts", []);
@@ -598,18 +623,22 @@ function sourcePointsFromSection(section) {
     ...(Array.isArray(evidenceSeed.risks_or_constraints) ? evidenceSeed.risks_or_constraints : []),
   ];
   const excerptItems = Array.isArray(keyExcerpts) ? keyExcerpts.map((item) => ({ text: item?.text || "", type: item?.type || "" })) : [];
-  const fromExcerpts = excerptItems.map((item) => translatedSourcePoint(item.text, item.type)).filter(Boolean);
-  const fromSeed = seedItems.map((item) => translatedSourcePoint(item)).filter(Boolean);
+  const fromExcerpts = excerptItems.map((item) => translatedSourcePoint(item.text, item.type, context)).filter(Boolean);
+  const fromSeed = seedItems.map((item) => translatedSourcePoint(item, "", context)).filter(Boolean);
   const fromFullText = sourceSentences(raw.full_text || raw.clean_text || "")
-    .map((item) => translatedSourcePoint(item))
+    .map((item) => translatedSourcePoint(item, "", context))
     .filter(Boolean);
   return [...new Set([...fromExcerpts, ...fromSeed, ...fromFullText])].slice(0, 6);
 }
 
 function sourceExcerptFromSection(section, points = []) {
   const raw = readRawJson(section);
+  const context = {
+    company: companyFromSection(section),
+    scenario: scenarioFromText(textForInference(section)),
+  };
   const firstRaw = sourceSentences(raw.full_text || raw.clean_text || "")
-    .map((item) => translatedSourcePoint(item))
+    .map((item) => translatedSourcePoint(item, "", context))
     .find(Boolean);
   return firstRaw || points[0] || "";
 }
@@ -1242,19 +1271,19 @@ function publicSignalTitle({ type, company, scenario, amount, fundingAngle, text
   const sourceEventTitle = cleanSourceEventTitle(sourceTitle);
   if (type === "funding") {
     const amountText = amount ? `${amount} ` : "";
-    return `${owner} 获得${amountText}融资，押注${lane}`;
+    return `${owner} 获得${amountText}融资，用于${lane}`;
   }
   if (type === "product_service") {
     if (/\b(inference|model|serverless|compute|hosting|gpu|infrastructure|platform)\b|妯″瀷|绠楀姏|閮ㄧ讲/iu.test(signalText)) {
-      return `${owner} 发布 AI 基础设施能力，切入${lane}`;
+      return `${owner} 发布 AI 平台能力，面向${lane}`;
     }
     if (/\b(agent|workflow|assistant|orchestrat|automation)\b|Agent|workflow/iu.test(signalText)) {
-      return `${owner} 推出 Agent 工作流能力，切入${lane}`;
+      return `${owner} 推出 Agent 工作流，面向${lane}`;
     }
-    return `${owner} 发布 AI 产品能力，切入${lane}`;
+    return `${owner} 发布 AI 产品，面向${lane}`;
   }
-  if (sourceEventTitle) return sourceEventTitle;
-  return `${owner} 案例：AI 进入${publicCardCopy(scenario || "企业业务流程")}`;
+  if (hasCjk(sourceEventTitle)) return sourceEventTitle;
+  return `${owner} 记录企业应用场景：${publicCardCopy(scenario || "企业业务流程")}`;
 }
 
 function isNonCommercialPolicyOrEthicsSignal(section) {
