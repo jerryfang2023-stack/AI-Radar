@@ -1173,8 +1173,15 @@ function safeFrontstageTitle(title = "", sourceUrl = "") {
 }
 
 function sourceFrontstageTitle(card = {}, _originalTitle = "") {
+  const cardTitle = String(card.title || "").trim();
+  const cardTitleCandidate = hasCjk(cardTitle)
+    && !isBadPublicDisplayTitle(cardTitle)
+    && !isProcessedChineseTitle(cardTitle)
+    ? cardTitle
+    : "";
   return [
     sourceTitleFromUrlOverride(card.sourceUrl),
+    cardTitleCandidate,
     card.sourceTitle,
     card.rawTitle,
     card.originalSourceTitle,
@@ -1299,7 +1306,7 @@ function normalizeFrontstageDisplay(card = {}, options = {}) {
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
   const replacementFact = sourceTitleDerivedFact(sourceTitle || originalTitle || internalTitle, card.sourceUrl);
   const factCandidates = strictPublic
-    ? [replacementFact, card.translatedFact, card.visibleFragment, card.summary]
+    ? [card.translatedFact, card.visibleFragment, replacementFact, card.summary]
     : [card.translatedFact, replacementFact, card.visibleFragment, card.summary];
   const translatedFact = factCandidates.find((value) => (
     value

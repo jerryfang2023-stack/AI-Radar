@@ -1,47 +1,32 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-19T03:45:49.177Z",
-  "date": "2026-06-19",
-  "action": "Daily business-signal production",
-  "action_status": "current",
+  "generated_at": "2026-06-20T08:03:34.051Z",
+  "date": "2026-06-20",
+  "action": "Hermes business signals Top10 repair",
+  "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "hermes-auto",
+  "trigger": "automation",
   "status": "success",
-  "summary": "Repaired Business Signals 2026-06-19 Top10/source-title fallback regression in frontstage build logic",
-  "contexts": [
-    "AGENTS.md",
-    "context/11-hermes-daily-supervision-instructions.md",
-    "context/10-v3-3-experience-automation.md",
-    "context/05-daily-monitoring.md",
-    "context/06-execution-harness.md",
-    "context/07-v3-intelligence-generation-rules.md",
-    "agent-workflow/skills/guanlan-business-signals-monitor/MEMORY.md"
-  ],
+  "summary": "Restored same-day Business Signals Top10 supply by preserving source-backed facts and aligning daily collection breadth.",
+  "contexts": [],
   "changed_files": [
-    "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs",
-    "agent-workflow/skills/guanlan-business-signals-monitor/MEMORY.md"
+    ".github/workflows/daily-persistent-assets-pr.yml",
+    "agent-workflow/tools/generate-asset-cards-from-pool.mjs",
+    "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"
   ],
   "outputs": [],
   "checks": [
+    "node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs",
     "node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs",
-    "artifact replay build-v3-data-observation-desk.mjs on 2026-06-19 CI bundle",
-    "artifact replay assert-v3-source-first-frontstage.mjs passed with top10_count=10"
+    "scratch replay: generate-asset-cards-from-pool + build-v3-data-observation-desk + assert-business-signals-frontstage --date=2026-06-20"
   ],
   "issues": [
-    "business_signals_top10_missing",
-    "source-title boilerplate blocked display-ready fallback titles",
-    "trailing ellipsis caused source-first weak fact failures"
+    "Business Signals workflow produced same-day cards but frontstage Top10 had fewer than 10 cards because valid source facts were lost or too few source facts were generated."
   ],
-  "risks": [
-    "Local repo data remains at 2026-06-18 so same-day validation required artifact replay workspace"
-  ],
-  "lessons": [
-    "Fallback public titles must stay eligible when source titles collapse to boilerplate",
-    "Trim trailing ellipsis from source-backed facts before source-first gating"
-  ],
+  "risks": [],
+  "lessons": [],
   "reusable_rules": [
-    "When source titles are boilerplate",
-    "derive public titles from source-backed facts instead of generic generated headlines"
+    "Prefer source-backed card facts over title-derived replacement facts in strict frontstage normalization."
   ],
   "retired_flags": [],
   "notes": []
