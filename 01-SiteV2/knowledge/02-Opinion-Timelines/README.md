@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 43
-opinion_count: 598
-generated_at: 2026-06-20T05:45:26.373Z
+opinion_count: 622
+generated_at: 2026-06-20T08:10:54.370Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -11,27 +11,29 @@ generated_at: 2026-06-20T05:45:26.373Z
 
 ## 人物
 
-- [Peter Yang](people/peter-yang/README.md) - 50 条 - 最新 2026-06-19
-- [Swyx](people/swyx/README.md) - 38 条 - 最新 2026-06-19
-- [Nikunj Kothari](people/nikunj-kothari/README.md) - 32 条 - 最新 2026-06-19
-- [Aaron Levie](people/aaron-levie/README.md) - 29 条 - 最新 2026-06-19
-- [Zara Zhang](people/zara-zhang/README.md) - 26 条 - 最新 2026-06-19
-- [Amjad Masad](people/amjad-masad/README.md) - 24 条 - 最新 2026-06-19
-- [Thibault Sottiaux](people/thibault-sottiaux/README.md) - 20 条 - 最新 2026-06-19
-- [Peter Steinberger](people/peter-steinberger/README.md) - 15 条 - 最新 2026-06-19
+- [Peter Yang](people/peter-yang/README.md) - 52 条 - 最新 2026-06-20
+- [Swyx](people/swyx/README.md) - 41 条 - 最新 2026-06-20
+- [Nikunj Kothari](people/nikunj-kothari/README.md) - 34 条 - 最新 2026-06-20
+- [Amjad Masad](people/amjad-masad/README.md) - 26 条 - 最新 2026-06-20
+- [Guillermo Rauch](people/guillermo-rauch/README.md) - 26 条 - 最新 2026-06-20
+- [Thibault Sottiaux](people/thibault-sottiaux/README.md) - 22 条 - 最新 2026-06-20
+- [Peter Steinberger](people/peter-steinberger/README.md) - 16 条 - 最新 2026-06-20
+- [Amanda Askell](people/amanda-askell/README.md) - 5 条 - 最新 2026-06-20
+- [Anthropic Engineering](people/anthropic-engineering/README.md) - 3 条 - 最新 2026-06-20
+- [Garry Tan](people/garry-tan/README.md) - 48 条 - 最新 2026-06-19
+- [Aaron Levie](people/aaron-levie/README.md) - 30 条 - 最新 2026-06-19
+- [Zara Zhang](people/zara-zhang/README.md) - 27 条 - 最新 2026-06-19
+- [Matt Turck](people/matt-turck/README.md) - 13 条 - 最新 2026-06-19
+- [Boris Cherny](people/boris-cherny/README.md) - 7 条 - 最新 2026-06-19
 - [Claude Blog](people/claude-blog/README.md) - 4 条 - 最新 2026-06-19
-- [Amanda Askell](people/amanda-askell/README.md) - 2 条 - 最新 2026-06-19
-- [Garry Tan](people/garry-tan/README.md) - 47 条 - 最新 2026-06-18
 - [Dan Shipper](people/dan-shipper/README.md) - 33 条 - 最新 2026-06-18
-- [Guillermo Rauch](people/guillermo-rauch/README.md) - 24 条 - 最新 2026-06-18
 - [Claude](people/claude/README.md) - 21 条 - 最新 2026-06-18
 - [Sam Altman](people/sam-altman/README.md) - 13 条 - 最新 2026-06-18
 - [Thariq](people/thariq/README.md) - 13 条 - 最新 2026-06-18
-- [Matt Turck](people/matt-turck/README.md) - 12 条 - 最新 2026-06-18
 - [Nan Yu](people/nan-yu/README.md) - 8 条 - 最新 2026-06-18
-- [Boris Cherny](people/boris-cherny/README.md) - 6 条 - 最新 2026-06-18
 - [Madhu Guru](people/madhu-guru/README.md) - 6 条 - 最新 2026-06-18
 - [The MAD Podcast with Matt Turck](people/the-mad-podcast-with-matt-turck/README.md) - 3 条 - 最新 2026-06-18
+- [No Priors](people/no-priors/README.md) - 2 条 - 最新 2026-06-18
 - [Cat Wu](people/cat-wu/README.md) - 1 条 - 最新 2026-06-18
 - [Aditya Agarwal](people/aditya-agarwal/README.md) - 17 条 - 最新 2026-06-17
 - [Josh Woodward](people/josh-woodward/README.md) - 16 条 - 最新 2026-06-17
@@ -42,7 +44,6 @@ generated_at: 2026-06-20T05:45:26.373Z
 - [Dataiku Blog](people/dataiku-blog/README.md) - 2 条 - 最新 2026-06-10
 - [Tigera Blog (Calico / AI Security)](people/tigera-blog-calico-ai-security/README.md) - 2 条 - 最新 2026-06-10
 - [TLDR AI Newsletter](people/tldr-ai-newsletter/README.md) - 2 条 - 最新 2026-06-10
-- [No Priors](people/no-priors/README.md) - 1 条 - 最新 2026-06-10
 - [Alex Albert](people/alex-albert/README.md) - 2 条 - 最新 2026-06-09
 - [Andrej Karpathy](people/andrej-karpathy/README.md) - 2 条 - 最新 2026-06-09
 - [Interconnects (Nathan Lambert)](people/interconnects-nathan-lambert/README.md) - 1 条 - 最新 2026-06-09
@@ -50,7 +51,6 @@ generated_at: 2026-06-20T05:45:26.373Z
 - [Unknown Builder](people/unknown-builder/README.md) - 64 条 - 最新 2026-06-06
 - [DuckDuckGo](people/duckduckgo/README.md) - 12 条 - 最新 2026-06-04
 - [HN builder query](people/hn-builder-query/README.md) - 13 条 - 最新 2026-06-03
-- [Anthropic Engineering](people/anthropic-engineering/README.md) - 2 条 - 最新 2026-05-23
 - [Kevin Weil](people/kevin-weil/README.md) - 2 条 - 最新 2026-05-23
 - [Unsupervised Learning](people/unsupervised-learning/README.md) - 1 条 - 最新 2026-05-22
 - [AI & I by Every](people/ai-i-by-every/README.md) - 2 条 - 最新 2026-05-20
