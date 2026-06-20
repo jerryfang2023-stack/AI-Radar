@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-20T01:32:34.599Z",
+    "generatedAt": "2026-06-20T05:44:35.763Z",
     "feedGeneratedAt": "2026-06-19T08:14:32.084Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
@@ -9,10 +9,10 @@
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
-    "builders": 22,
+    "builders": 21,
     "remarks": 57,
     "podcasts": 1,
-    "blogsBuilt": 6,
+    "blogsBuilt": 5,
     "trackedSources": 0,
     "rawBuilders": 19,
     "rawTweets": 40
@@ -40,6 +40,12 @@
       "name": "Claude",
       "handle": "claudeai",
       "role": "Claude is an AI assistant built by anthropicai to be safe, accurate, and secure. Talk to Claude on https://t.co/ZhTwG8d1e5 or download the app.",
+      "count": 3
+    },
+    {
+      "name": "Dataiku Blog",
+      "handle": "dataiku.com",
+      "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
       "count": 3
     },
     {
@@ -109,12 +115,6 @@
       "count": 2
     },
     {
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "count": 2
-    },
-    {
       "name": "Amanda Askell",
       "handle": "AmandaAskell",
       "role": "Philosopher & ethicist trying to make AI be good AnthropicAI.",
@@ -130,12 +130,6 @@
       "name": "Cat Wu",
       "handle": "_catwu",
       "role": "claude code + cowork anthropicai, prev: dagster, scale_ai",
-      "count": 1
-    },
-    {
-      "name": "Dataiku Blog",
-      "handle": "dataiku.com",
-      "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
       "count": 1
     },
     {
@@ -192,28 +186,28 @@
       "replies": 0
     },
     {
-      "id": "https://www.tigera.io/blog/why-we-built-lynx-bringing-control-to-the-age-of-ai-agents/",
+      "id": "https://www.dataiku.com/stories/blog/governance-acceleration",
       "source": "blog",
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "text": "Why We Built Lynx: Bringing Control to the Age of AI Agents",
-      "content": "For a decade, one idea has guided everything we&#8217;ve built at Tigera: How do you secure a dynamic system with a lot of moving parts that is changing rapidly, with a programmatic approach? Calico has... The post Why We Built Lynx: Bringing Control to the Age of AI Agents appeared first on Tigera",
-      "contentTranslation": "十年来，一个想法指导了我们在Tigera构建的一切：如何通过编程方法来确保一个具有许多快速变化的移动部件的动态系统？ Calico有...我们为什么要建造Lynx ：将控制权带入AI时代的文章首次出现在Tigera上",
+      "name": "Dataiku Blog",
+      "handle": "dataiku.com",
+      "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
+      "text": "Governance as acceleration: data proves it’s not a speed bump",
+      "content": "For years, the enterprise AI governance conversation has been shaped by a quiet assumption: Governance is the thing that slows AI down. This may look like the review cycle that delays the launch, committee that questions the model, or even documentation requirement that sits between a wo",
+      "contentTranslation": "多年来，企业AI治理对话一直被一个安静的假设所塑造：治理是减缓AI的因素。这可能看起来像延迟发布的审核周期、质疑模型的委员会，甚至是WO之间的文档要求",
       "contentTranslationStatus": "translated",
-      "translation": "我们为什么要构建Lynx ：将控制权带入AI智能体时代",
+      "translation": "治理作为加速：数据证明它不是减速带",
       "translationStatus": "translated",
       "translationMethod": "mymemory",
-      "topic": "Agent",
+      "topic": "产品与创业",
       "formalTags": [
         {
-          "id": "opinion-agent-workflow",
-          "name": "Agent 工作流观点",
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
           "group": "opinion"
         },
         {
-          "id": "track-ai-agent",
-          "name": "AI Agent",
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
           "group": "track"
         },
         {
@@ -222,10 +216,49 @@
           "group": "source"
         }
       ],
-      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
-      "createdAt": "Wed, 17 Jun 2026 13:00:22 +0000",
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Wed, 17 Jun 2026 13:00:00 GMT",
       "date": "2026-06-17",
-      "url": "https://www.tigera.io/blog/why-we-built-lynx-bringing-control-to-the-age-of-ai-agents/",
+      "url": "https://www.dataiku.com/stories/blog/governance-acceleration",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://www.dataiku.com/stories/blog/generative-ai-governance-framework",
+      "source": "blog",
+      "name": "Dataiku Blog",
+      "handle": "dataiku.com",
+      "role": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
+      "text": "Generative AI governance framework: building responsible AI systems",
+      "content": "Generative AI is no longer a pilot that leaders can observe from a distance. It is in contact centers, developer workflows, reporting layers, and autonomous agents acting on behalf of the business. As BARC's research on modernizing governance for the era of agentic AI shows, the stakes r",
+      "contentTranslation": "生成式AI不再是领导者可以远距离观察的试点。它存在于联系中心、开发人员工作流、报告层和代表业务行事的自主Agent中。正如BARC关于智能AI时代治理现代化的研究所表明的那样，",
+      "contentTranslationStatus": "translated",
+      "translation": "生成式AI治理框架：构建负责任的AI系统",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Wed, 17 Jun 2026 12:19:13 GMT",
+      "date": "2026-06-17",
+      "url": "https://www.dataiku.com/stories/blog/generative-ai-governance-framework",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -382,45 +415,6 @@
       "createdAt": "Tue, 16 Jun 2026 00:00:00 GMT",
       "date": "2026-06-16",
       "url": "https://tldr.tech/ai/2026-06-16",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://www.tigera.io/blog/how-lynx-works-a-technical-walkthrough/",
-      "source": "blog",
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "text": "How Lynx Works: A Technical Walkthrough",
-      "content": "We launched Lynx this week. Instead of restating the pitch, I want to explain how it&#8217;s built and why we made the architectural choices we did. If you run Kubernetes and you&#8217;re starting to put... The post How Lynx Works: A Technical Walkthrough appeared first on Tigera – Creator of Calico",
-      "contentTranslation": "我们本周推出了Lynx。与其重复推销，我想解释一下它是如何建造的，以及我们为什么做出这样的架构选择。如果你运行Kubernetes并且你开始放...文章Lynx如何工作：技术演练首先出现在Tigera – Calico的创建者",
-      "contentTranslationStatus": "translated",
-      "translation": "Lynx的工作原理：技术演练",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Thu, 18 Jun 2026 17:19:30 +0000",
-      "date": "2026-06-19",
-      "url": "https://www.tigera.io/blog/how-lynx-works-a-technical-walkthrough/",
       "likes": 0,
       "retweets": 0,
       "replies": 0
