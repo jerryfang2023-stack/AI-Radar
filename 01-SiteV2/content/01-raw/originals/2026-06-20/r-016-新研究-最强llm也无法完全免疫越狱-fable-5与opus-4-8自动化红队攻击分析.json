@@ -1,0 +1,254 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-016",
+  "title": "新研究：最强LLM也无法完全免疫越狱--Fable 5与Opus 4.8自动化红队攻击分析",
+  "original_url": "https://x.com/rohanpaul_ai/status/2067957841303085226",
+  "canonical_url": "https://x.com/rohanpaul_ai/status/2067957841303085226",
+  "source_name": "X：Rohan Paul (@rohanpaul_ai)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "regulatory_or_procurement",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-06-19T13:09:04.000Z",
+  "collected_at": "2026-06-20T05:50:41.861Z",
+  "language": "mixed",
+  "full_text": "Post\nLog in Sign up\nPost\nRohan Paul\n@rohanpaul_ai\nPerfect immunity from jailbreak is not possible even for the strongest of LLMs.\nNew study shows that frontier models are getting harder to jailbreak, but not impossible to jailbreak.\nThe study attacks Anthropic’s Fable 5 and Opus 4.8 with automated red-team tools that keep rewriting harmful prompts until the model either refuses or gives a bad answer.\nFable 5 was more robust than Opus 4.8, with its worst attack success rate at 6.1%, while Opus 4.8 reached 11.5% under the strongest attack.\nThe hard truth is that avoiding absolutely every jailbreak is practically impossible, because even a tiny failure rate can produce many harmful completions when attacks are automated and repeated at scale.\nThe most crucial point is, that the old cartoon version of jailbreaks, weird encodings and theatrical role-play, is no longer the main problem.\nThe surviving weakness is contextual, because adaptive attackers rewrite the request after refusals, searching for a frame the model treats as legitimate rather than dangerous.\nThat is why perfect immunity is probably the wrong target; language models do not inspect intent from a clean moral altitude, they infer meaning through phrasing, context, and precedent.\nIn any system this flexible, there will always be boundary cases where a harmful request looks enough like education, safety research, fiction, troubleshooting, or policy analysis to slip through.\n----\nLink – arxiv. org/abs/2606.18193\nTitle: \"A Red-Team Study of Anthropic Fable 5 & Opus 4.8 Models\"\nRohan Paul\n@rohanpaul_ai\n17h\nThe White House and Anthropic may have found the first serious path to restore Mythos and Fable access without pretending jailbreaks can be eliminated.\nAI regulation may be shifting from vague fear to a benchmark based tests of model failure, because completely removing Show more\n1:09 PM · Jun 19, 2026 7.2K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 14\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 7\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 30\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 21\nRead 14 replies",
+  "clean_text": "Post\nLog in Sign up\nPost\nRohan Paul\n@rohanpaul_ai\nPerfect immunity from jailbreak is not possible even for the strongest of LLMs.\nNew study shows that frontier models are getting harder to jailbreak, but not impossible to jailbreak.\nThe study attacks Anthropic’s Fable 5 and Opus 4.8 with automated red-team tools that keep rewriting harmful prompts until the model either refuses or gives a bad answer.\nFable 5 was more robust than Opus 4.8, with its worst attack success rate at 6.1%, while Opus 4.8 reached 11.5% under the strongest attack.\nThe hard truth is that avoiding absolutely every jailbreak is practically impossible, because even a tiny failure rate can produce many harmful completions when attacks are automated and repeated at scale.\nThe most crucial point is, that the old cartoon version of jailbreaks, weird encodings and theatrical role-play, is no longer the main problem.\nThe surviving weakness is contextual, because adaptive attackers rewrite the request after refusals, searching for a frame the model treats as legitimate rather than dangerous.\nThat is why perfect immunity is probably the wrong target; language models do not inspect intent from a clean moral altitude, they infer meaning through phrasing, context, and precedent.\nIn any system this flexible, there will always be boundary cases where a harmful request looks enough like education, safety research, fiction, troubleshooting, or policy analysis to slip through.\n----\nLink – arxiv. org/abs/2606.18193\nTitle: \"A Red-Team Study of Anthropic Fable 5 & Opus 4.8 Models\"\nRohan Paul\n@rohanpaul_ai\n17h\nThe White House and Anthropic may have found the first serious path to restore Mythos and Fable access without pretending jailbreaks can be eliminated.\nAI regulation may be shifting from vague fear to a benchmark based tests of model failure, because completely removing Show more\n1:09 PM · Jun 19, 2026 7.2K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 14\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 7\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 30\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 21\nRead 14 replies",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-20/r-016-新研究-最强llm也无法完全免疫越狱-fable-5与opus-4-8自动化红队攻击分析.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-20/r-016-新研究-最强llm也无法完全免疫越狱-fable-5与opus-4-8自动化红队攻击分析.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 3814,
+    "paragraph_count": 18,
+    "sentence_count": 11,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0184,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3814,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "ed9ce4018ffd9b3e",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "X：Rohan Paul (@rohanpaul_ai)",
+  "capture_scope": "visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "新研究：最强LLM也无法完全免疫越狱--Fable 5与Opus 4.8自动化红队攻击分析",
+    "discovery_summary": "新研究对Anthropic Fable 5和Opus 4.8进行自动化红队攻击，持续改写有害提示词直至模型拒绝或生成坏答案。Fable 5最差攻击成功率6.1%，Opus 4.8为11.5%，证明最强LLM也无法完全免疫越狱--即便微小失败率，规模化自动化攻击仍可产生大量有害内容。旧式编码/角色扮演型越狱已非主要威胁，新弱点在于上下文：自适应攻击者在被拒后不断改写请求，寻找模型视为合法而非危险的框架。白宫与Anthropic正转向基于基准的测试框架，通过评分绕过程度、暴露能力、攻击可重复性及实际后果来量化越狱风险，而非追求不现实的完美免疫。",
+    "source_name": "X：Rohan Paul (@rohanpaul_ai)",
+    "origin_url": "https://x.com/rohanpaul_ai/status/2067957841303085226",
+    "discovered_at": "2026-06-20T05:46:01.051Z",
+    "rank_on_page": 136,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "9b009148221bedd6",
+  "content_hash": "ed9ce4018ffd9b3e",
+  "full_text_hash": "ed9ce4018ffd9b3e",
+  "semantic_hash": "46ee2329860c60ad",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-19T13:09:04.000Z",
+  "last_seen_at": "2026-06-20T05:50:41.861Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "新研究对Anthropic Fable 5和Opus 4.8进行自动化红队攻击，持续改写有害提示词直至模型拒绝或生成坏答案。Fable 5最差攻击成功率6.1%，Opus 4.8为11.5%，证明最强LLM也无法完全免疫越狱--即便微小失败率，规模化自动化攻击仍可产生大量有害内容。旧式编码/角色扮演型越狱已非主要威胁，新弱点在于上下文：自适应攻击者在被拒后不断改写请求，寻找模型视为合法而非危险的框架。白宫与Anthropic正转向基于基准的测试框架，通过评分绕过程度、暴露能力、攻击可重复性及实际后果来量化越狱风险，而非追求不现实的完美免疫。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Post Log in Sign up Post Rohan Paul @rohanpaul_ai Perfect immunity from jailbreak is not possible even for the strongest of LLMs.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "New study shows that frontier models are getting harder to jailbreak, but not impossible to jailbreak.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The study attacks Anthropic’s Fable 5 and Opus 4.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "8 with automated red-team tools that keep rewriting harmful prompts until the model either refuses or gives a bad answer.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Fable 5 was more robust than Opus 4.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "Rohan Paul (@rohanpaul_ai)",
+      "Anthropic"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "5",
+      "4.8",
+      "6.1%",
+      "11.5%",
+      "2606.18193",
+      "4.8 M",
+      "17",
+      "1"
+    ],
+    "quotes": [
+      "A Red-Team Study of Anthropic Fable 5 & Opus 4.8 Models"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Post Log in Sign up Post Rohan Paul @rohanpaul_ai Perfect immunity from jailbreak is not possible even for the strongest of LLMs.",
+      "New study shows that frontier models are getting harder to jailbreak, but not impossible to jailbreak.",
+      "The study attacks Anthropic’s Fable 5 and Opus 4."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "user_feedback_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 新研究：最强LLM也无法完全免疫越狱--Fable 5与Opus 4.8自动化红队攻击分析\n\n- raw_id: R-016\n- original_url: https://x.com/rohanpaul_ai/status/2067957841303085226\n- source_name: X：Rohan Paul (@rohanpaul_ai)\n- collected_at: 2026-06-20T05:50:41.861Z\n\n## clean_text\n\nPost\nLog in Sign up\nPost\nRohan Paul\n@rohanpaul_ai\nPerfect immunity from jailbreak is not possible even for the strongest of LLMs.\nNew study shows that frontier models are getting harder to jailbreak, but not impossible to jailbreak.\nThe study attacks Anthropic’s Fable 5 and Opus 4.8 with automated red-team tools that keep rewriting harmful prompts until the model either refuses or gives a bad answer.\nFable 5 was more robust than Opus 4.8, with its worst attack success rate at 6.1%, while Opus 4.8 reached 11.5% under the strongest attack.\nThe hard truth is that avoiding absolutely every jailbreak is practically impossible, because even a tiny failure rate can produce many harmful completions when attacks are automated and repeated at scale.\nThe most crucial point is, that the old cartoon version of jailbreaks, weird encodings and theatrical role-play, is no longer the main problem.\nThe surviving weakness is contextual, because adaptive attackers rewrite the request after refusals, searching for a frame the model treats as legitimate rather than dangerous.\nThat is why perfect immunity is probably the wrong target; language models do not inspect intent from a clean moral altitude, they infer meaning through phrasing, context, and precedent.\nIn any system this flexible, there will always be boundary cases where a harmful request looks enough like education, safety research, fiction, troubleshooting, or policy analysis to slip through.\n----\nLink – arxiv. org/abs/2606.18193\nTitle: \"A Red-Team Study of Anthropic Fable 5 & Opus 4.8 Models\"\nRohan Paul\n@rohanpaul_ai\n17h\nThe White House and Anthropic may have found the first serious path to restore Mythos and Fable access without pretending jailbreaks can be eliminated.\nAI regulation may be shifting from vague fear to a benchmark based tests of model failure, because completely removing Show more\n1:09 PM · Jun 19, 2026 7.2K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 14\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 7\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 30\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 21\nRead 14 replies\n\n## full_text\n\nPost\nLog in Sign up\nPost\nRohan Paul\n@rohanpaul_ai\nPerfect immunity from jailbreak is not possible even for the strongest of LLMs.\nNew study shows that frontier models are getting harder to jailbreak, but not impossible to jailbreak.\nThe study attacks Anthropic’s Fable 5 and Opus 4.8 with automated red-team tools that keep rewriting harmful prompts until the model either refuses or gives a bad answer.\nFable 5 was more robust than Opus 4.8, with its worst attack success rate at 6.1%, while Opus 4.8 reached 11.5% under the strongest attack.\nThe hard truth is that avoiding absolutely every jailbreak is practically impossible, because even a tiny failure rate can produce many harmful completions when attacks are automated and repeated at scale.\nThe most crucial point is, that the old cartoon version of jailbreaks, weird encodings and theatrical role-play, is no longer the main problem.\nThe surviving weakness is contextual, because adaptive attackers rewrite the request after refusals, searching for a frame the model treats as legitimate rather than dangerous.\nThat is why perfect immunity is probably the wrong target; language models do not inspect intent from a clean moral altitude, they infer meaning through phrasing, context, and precedent.\nIn any system this flexible, there will always be boundary cases where a harmful request looks enough like education, safety research, fiction, troubleshooting, or policy analysis to slip through.\n----\nLink – arxiv. org/abs/2606.18193\nTitle: \"A Red-Team Study of Anthropic Fable 5 & Opus 4.8 Models\"\nRohan Paul\n@rohanpaul_ai\n17h\nThe White House and Anthropic may have found the first serious path to restore Mythos and Fable access without pretending jailbreaks can be eliminated.\nAI regulation may be shifting from vague fear to a benchmark based tests of model failure, because completely removing Show more\n1:09 PM · Jun 19, 2026 7.2K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 14\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 7\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 30\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 21\nRead 14 replies\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] 新研究对Anthropic Fable 5和Opus 4.8进行自动化红队攻击，持续改写有害提示词直至模型拒绝或生成坏答案。Fable 5最差攻击成功率6.1%，Opus 4.8为11.5%，证明最强LLM也无法完全免疫越狱--即便微小失败率，规模化自动化攻击仍可产生大量有害内容。旧式编码/角色扮演型越狱已非主要威胁，新弱点在于上下文：自适应攻击者在被拒后不断改写请求，寻找模型视为合法而非危险的框架。白宫与Anthropic正转向基于基准的测试框架，通过评分绕过程度、暴露能力、攻击可重复性及实际后果来量化越狱风险，而非追求不现实的完美免疫。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Post Log in Sign up Post Rohan Paul @rohanpaul_ai Perfect immunity from jailbreak is not possible even for the strongest of LLMs.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] New study shows that frontier models are getting harder to jailbreak, but not impossible to jailbreak.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] The study attacks Anthropic’s Fable 5 and Opus 4.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] 8 with automated red-team tools that keep rewriting harmful prompts until the model either refuses or gives a bad answer.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] Fable 5 was more robust than Opus 4.\n"
+}

@@ -84,13 +84,22 @@ function main() {
   const links = Array.isArray(payload.links) ? payload.links : [];
   const selectedKeywords = Array.isArray(payload?.meta?.selectedKeywords) ? payload.meta.selectedKeywords : [];
   const errors = Array.isArray(payload?.meta?.errors) ? payload.meta.errors : [];
+  const errorDetails = errors.map((error) => {
+    if (typeof error === "string") return error;
+    return [
+      error?.source,
+      error?.mode,
+      error?.keyword,
+      error?.message,
+    ].filter(Boolean).join(" / ");
+  }).join("; ");
 
   add(Boolean(generatedAt), "meta.generatedAt is present");
   add(generatedDate === date, "generatedAt matches Asia/Shanghai date", `actual=${generatedDate || "invalid"}`);
   add(items.length >= minItems, "items meet minimum", `${items.length}/${minItems}`);
   add(links.length >= minLinks, "deduped links meet minimum", `${links.length}/${minLinks}`);
   add(selectedKeywords.length > 0, "selected keyword rotation is recorded", String(selectedKeywords.length));
-  add(errors.length === 0, "collector recorded no blocking errors", errors.join("; "));
+  add(errors.length === 0, "collector recorded no blocking errors", errorDetails);
 
   const dailyArchive = path.join(archiveRoot, "daily", `${date} Community Intelligence.md`);
   const indexFile = path.join(archiveRoot, "Community Intelligence Index.md");

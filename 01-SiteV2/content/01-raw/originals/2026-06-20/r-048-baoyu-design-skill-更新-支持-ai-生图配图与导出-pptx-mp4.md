@@ -1,0 +1,243 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-048
+title: "baoyu-design skill 更新：支持 AI 生图配图与导出 PPTX/MP4"
+original_url: "https://x.com/dotey/status/2067876611873964284"
+canonical_url: "https://x.com/dotey/status/2067876611873964284"
+source_name: "X：宝玉 (@dotey)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-19T07:46:18.000Z"
+collected_at: 2026-06-20T05:50:42.012Z
+language: mixed
+full_text_hash: ca09fdcf8d7dd9fd
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-20/r-048-baoyu-design-skill-更新-支持-ai-生图配图与导出-pptx-mp4.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-20/r-048-baoyu-design-skill-更新-支持-ai-生图配图与导出-pptx-mp4.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 69
+extractor_diagnostics: {"readability_score":69,"text_length":2552,"paragraph_count":13,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0.0266,"method":"main"}
+has_full_text: true
+content_length: 2552
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ca09fdcf8d7dd9fd","missing":[]}
+source_volatility: high
+community_name: "X：宝玉 (@dotey)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"baoyu-design skill 更新：支持 AI 生图配图与导出 PPTX/MP4","discovery_summary":"baoyu-design skill 更新，支持在制作 PPT、动画视频或网站时调用 AI 生图技能配图，可配合 Codex 或 Claude Code 使用。生成 PPT 时自动在合适位置插入配图，并可导出为 PPTX 格式，支持二次编辑。此外，该 skill 可在本地生成动画视频并导出 mp4，采用声明式动画引擎 f（t），通过无头浏览器逐帧截图经 ffmpeg 合成，确保每帧精确无掉帧。项目已在 GitHub 开源（MIT），获 1.2K star。","source_name":"X：宝玉 (@dotey)","origin_url":"https://x.com/dotey/status/2067876611873964284","discovered_at":"2026-06-20T05:46:01.061Z","rank_on_page":180,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: ee0a427ea0b08139
+content_hash: ca09fdcf8d7dd9fd
+semantic_hash: b701d2b4a5b9cda7
+duplicate_of: ""
+first_seen_at: "2026-06-19T07:46:18.000Z"
+last_seen_at: 2026-06-20T05:50:42.012Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["emerging_pool","user_feedback_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":4,"importance_reason":"technical trend or capability shift; rubric=4 concrete important change","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":4}
+business_elements: {"companies":["X","宝玉 (@dotey)","GitHub"],"products":["Codex","Claude","Agent"],"people":[],"industries":["开发者工具"],"roles":[],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["4\nb","4","1.2","17\nb","00","7","46","19"],"quotes":[]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post 宝玉 @dotey baoyu-design skill 更新：可以在制作 PPT、动画视频或者网站时调用 AI 生图技能配图了，当然需要你本地 Agent 有配置画图 Skill。","如果是 Codex 可以直接调用内置画图工具，如果你用 Claude Code 的话可以配合 baoyu-image-gen skill 去调用 Codex CLI 画图。","用它来生成 PPT 效果特别好，可以自动帮你在 PPT 合适位置插入配图，最牛的是你可以连图片一起导出为 PPTX，还可以接着用 PowerPoint 或者 Keynote 二次编辑。"],"case_details":["baoyu-design skill 更新，支持在制作 PPT、动画视频或网站时调用 AI 生图技能配图，可配合 Codex 或 Claude Code 使用。生成 PPT 时自动在合适位置插入配图，并可导出为 PPTX 格式，支持二次编辑。此外，该 skill 可在本地生成动画视频并导出 mp4，采用声明式动画引擎 f（t），通过无头浏览器逐帧截图经 ffmpeg 合成，确保每帧精确无掉帧。项目已在 GitHub 开源（MIT），获 1.2K star。"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有变化前后流程线索"]
+key_excerpts: [{"type":"case_detail","text":"baoyu-design skill 更新，支持在制作 PPT、动画视频或网站时调用 AI 生图技能配图，可配合 Codex 或 Claude Code 使用。生成 PPT 时自动在合适位置插入配图，并可导出为 PPTX 格式，支持二次编辑。此外，该 skill 可在本地生成动画视频并导出 mp4，采用声明式动画引擎 f（t），通过无头浏览器逐帧截图经 ffmpeg 合成，确保每帧精确无掉帧。项目已在 GitHub 开源（MIT），获 1.2K star。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Post Log in Sign up Post 宝玉 @dotey baoyu-design skill 更新：可以在制作 PPT、动画视频或者网站时调用 AI 生图技能配图了，当然需要你本地 Agent 有配置画图 Skill。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"如果是 Codex 可以直接调用内置画图工具，如果你用 Claude Code 的话可以配合 baoyu-image-gen skill 去调用 Codex CLI 画图。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"用它来生成 PPT 效果特别好，可以自动帮你在 PPT 合适位置插入配图，最牛的是你可以连图片一起导出为 PPTX，还可以接着用 PowerPoint 或者 Keynote 二次编辑。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"推荐去试试看： baoyu-design Skill： github.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com/jimliu/baoyu-d… baoyu-image-gen Skill： github.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# baoyu-design skill 更新：支持 AI 生图配图与导出 PPTX/MP4
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+宝玉
+@dotey
+baoyu-design skill 更新：可以在制作 PPT、动画视频或者网站时调用 AI 生图技能配图了，当然需要你本地 Agent 有配置画图 Skill。
+如果是 Codex 可以直接调用内置画图工具，如果你用 Claude Code 的话可以配合 baoyu-image-gen skill 去调用 Codex CLI 画图。
+用它来生成 PPT 效果特别好，可以自动帮你在 PPT 合适位置插入配图，最牛的是你可以连图片一起导出为 PPTX，还可以接着用 PowerPoint 或者 Keynote 二次编辑。
+推荐去试试看：
+baoyu-design Skill： github.com/jimliu/baoyu-d…
+baoyu-image-gen Skill： github.com/JimLiu/baoyu-s…
+宝玉
+@dotey
+Jun 17
+baoyu-design skill 可以在本地生成动画视频，导出 mp4 格式，就像附件视频这个。
+Claude Design 网页版可以用提示词创建动画视频，但你需要在网页上才能看到视频，无法下载。也有人基于第三方插件录屏软件实现过，不过很麻烦，效果也不是很好。
+在这套 Skill 基础上，我已经实现了直接把动画导出成 Show more
+00:00
+7:46 AM · Jun 19, 2026 52K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 58
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 62
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 4 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 345
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 7 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 374
+Read 58 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+宝玉
+@dotey
+baoyu-design skill 更新：可以在制作 PPT、动画视频或者网站时调用 AI 生图技能配图了，当然需要你本地 Agent 有配置画图 Skill。
+如果是 Codex 可以直接调用内置画图工具，如果你用 Claude Code 的话可以配合 baoyu-image-gen skill 去调用 Codex CLI 画图。
+用它来生成 PPT 效果特别好，可以自动帮你在 PPT 合适位置插入配图，最牛的是你可以连图片一起导出为 PPTX，还可以接着用 PowerPoint 或者 Keynote 二次编辑。
+推荐去试试看：
+baoyu-design Skill： github.com/jimliu/baoyu-d…
+baoyu-image-gen Skill： github.com/JimLiu/baoyu-s…
+宝玉
+@dotey
+Jun 17
+baoyu-design skill 可以在本地生成动画视频，导出 mp4 格式，就像附件视频这个。
+Claude Design 网页版可以用提示词创建动画视频，但你需要在网页上才能看到视频，无法下载。也有人基于第三方插件录屏软件实现过，不过很麻烦，效果也不是很好。
+在这套 Skill 基础上，我已经实现了直接把动画导出成 Show more
+00:00
+7:46 AM · Jun 19, 2026 52K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 8 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 58
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 62
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 4 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 345
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 7 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 374
+Read 58 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 69
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":69,"text_length":2552,"paragraph_count":13,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0.0266,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   baoyu-design skill 更新，支持在制作 PPT、动画视频或网站时调用 AI 生图技能配图，可配合 Codex 或 Claude Code 使用。生成 PPT 时自动在合适位置插入配图，并可导出为 PPTX 格式，支持二次编辑。此外，该 skill 可在本地生成动画视频并导出 mp4，采用声明式动画引擎 f（t），通过无头浏览器逐帧截图经 ffmpeg 合成，确保每帧精确无掉帧。项目已在 GitHub 开源（MIT），获 1.2K star。
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   Post Log in Sign up Post 宝玉 @dotey baoyu-design skill 更新：可以在制作 PPT、动画视频或者网站时调用 AI 生图技能配图了，当然需要你本地 Agent 有配置画图 Skill。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   如果是 Codex 可以直接调用内置画图工具，如果你用 Claude Code 的话可以配合 baoyu-image-gen skill 去调用 Codex CLI 画图。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   用它来生成 PPT 效果特别好，可以自动帮你在 PPT 合适位置插入配图，最牛的是你可以连图片一起导出为 PPTX，还可以接着用 PowerPoint 或者 Keynote 二次编辑。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   推荐去试试看： baoyu-design Skill： github.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   com/jimliu/baoyu-d… baoyu-image-gen Skill： github.
+
+## business_elements
+
+- companies: X, 宝玉 (@dotey), GitHub
+- products: Codex, Claude, Agent
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 4
+b, 4, 1.2, 17
+b, 00, 7, 46, 19
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post 宝玉 @dotey baoyu-design skill 更新：可以在制作 PPT、动画视频或者网站时调用 AI 生图技能配图了，当然需要你本地 Agent 有配置画图 Skill。 / 如果是 Codex 可以直接调用内置画图工具，如果你用 Claude Code 的话可以配合 baoyu-image-gen skill 去调用 Codex CLI 画图。 / 用它来生成 PPT 效果特别好，可以自动帮你在 PPT 合适位置插入配图，最牛的是你可以连图片一起导出为 PPTX，还可以接着用 PowerPoint 或者 Keynote 二次编辑。
+- case_details: baoyu-design skill 更新，支持在制作 PPT、动画视频或网站时调用 AI 生图技能配图，可配合 Codex 或 Claude Code 使用。生成 PPT 时自动在合适位置插入配图，并可导出为 PPTX 格式，支持二次编辑。此外，该 skill 可在本地生成动画视频并导出 mp4，采用声明式动画引擎 f（t），通过无头浏览器逐帧截图经 ffmpeg 合成，确保每帧精确无掉帧。项目已在 GitHub 开源（MIT），获 1.2K star。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 4
+- importance_reason: technical trend or capability shift; rubric=4 concrete important change
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- user_feedback_pool
+- watchlist
+
+## missing_information
+
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：宝玉 (@dotey)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"baoyu-design skill 更新：支持 AI 生图配图与导出 PPTX/MP4","discovery_summary":"baoyu-design skill 更新，支持在制作 PPT、动画视频或网站时调用 AI 生图技能配图，可配合 Codex 或 Claude Code 使用。生成 PPT 时自动在合适位置插入配图，并可导出为 PPTX 格式，支持二次编辑。此外，该 skill 可在本地生成动画视频并导出 mp4，采用声明式动画引擎 f（t），通过无头浏览器逐帧截图经 ffmpeg 合成，确保每帧精确无掉帧。项目已在 GitHub 开源（MIT），获 1.2K star。","source_name":"X：宝玉 (@dotey)","origin_url":"https://x.com/dotey/status/2067876611873964284","discovered_at":"2026-06-20T05:46:01.061Z","rank_on_page":180,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+baoyu-design skill 更新，支持在制作 PPT、动画视频或网站时调用 AI 生图技能配图，可配合 Codex 或 Claude Code 使用。生成 PPT 时自动在合适位置插入配图，并可导出为 PPTX 格式，支持二次编辑。此外，该 skill 可在本地生成动画视频并导出 mp4，采用声明式动画引擎 f（t），通过无头浏览器逐帧截图经 ffmpeg 合成，确保每帧精确无掉帧。项目已在 GitHub 开源（MIT），获 1.2K star。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

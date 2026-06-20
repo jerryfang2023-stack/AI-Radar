@@ -401,6 +401,13 @@ function isRepositoryOrCatalogSourceUrl(sourceUrl = "") {
   if (/docs\.github\.com$|learn\.microsoft\.com$|docs\./u.test(host)) return true;
   if (/npmjs\.com$|pypi\.org$|chromewebstore\.google\.com$|appsource\.microsoft\.com$/u.test(host)) return true;
   if (/huggingface\.co$/u.test(host) && /^\/(?:models|datasets|spaces)\//u.test(path)) return true;
+  if (/ashbyhq\.com$/u.test(host) || /(^|\.)jobs\./u.test(host) || /(^|\/)(jobs?|careers?)(\/|$)/iu.test(path)) return true;
+  if (/startupintros\.com$/u.test(host) || /(^|\/)(orgs?|companies|profiles?)(\/|$)/iu.test(path)) return true;
+  if (/(^|\.)facebook\.com$/u.test(host)) return true;
+  if (/(^|\/)(services?|solutions?|workflow-automation)(\/|$)/iu.test(path)
+    && !/(blog|news|press|release|announc|customer|case-study|story)/iu.test(path)) {
+    return true;
+  }
   if (/(^|\/)(docs?|documentation|api|sdk|marketplace|models?|packages?|tools?|catalog)(\/|$)/iu.test(path)
     && !/(blog|news|press|release|announc|changelog|customer|case-study)/iu.test(path)) {
     return true;
@@ -805,7 +812,7 @@ function isWeakSubject(value = "") {
   const clean = normalizeSubject(value);
   if (!clean || isDiscoveryLabel(clean)) return true;
   if (/^\d{4}$/u.test(clean)) return true;
-  if (/^(AI business signal|Artificialintelligence-News|Today[’']s Hottest Role|From the Customer[’']s Side of the Table|Ltd\.?|Blog|Article|Post)$/iu.test(clean)) return true;
+  if (/^(AI business signal|Artificialintelligence-News|Today[’']s Hottest Role|From the Customer[’']s Side of the Table|Ltd\.?|Blog|Article|Post|The)$/iu.test(clean)) return true;
   if (/^(TechCrunch|Techcrunch|Arstechnica|Ars Technica|MarkTechPost|Cfodive|Artificial Intelligence News)$/iu.test(clean)) return true;
   if (/^[a-z0-9.-]+\.(com|org|net|io|ai|dev|co)$/iu.test(clean)) return true;
   if (/^(LinkedIn|Linkedin|TechCrunch|Techcrunch|Arstechnica|Ars Technica|The[-\s]Decoder|Marktechpost|Siliconangle|Instagram|Apple Podcasts)$/iu.test(clean)) return true;
@@ -1110,6 +1117,16 @@ function publicCandidateIsDisplayReady(card = {}) {
   return [card.summary, card.translatedFact, card.visibleFragment]
     .filter(Boolean)
     .every((value) => !publicTextLooksGarbled(value) && !publicContentNeedsTranslation(value));
+}
+
+function publicCardFillIsDisplayReady(card = {}) {
+  const title = String(card.title || card.displayTitle || "").trim();
+  const fact = String(card.translatedFact || card.visibleFragment || "").trim();
+  if (!publicDisplayTitleIsReady(title)) return false;
+  if (card.displayTitle && !publicDisplayTitleIsReady(card.displayTitle)) return false;
+  if (!card.sourceUrl) return false;
+  if (!fact || publicTextLooksGarbled(fact) || publicContentNeedsTranslation(fact)) return false;
+  return true;
 }
 
 function publicFdeCandidateIsDisplayReady(card = {}) {
@@ -1599,10 +1616,13 @@ function frontstageSubjectOverride(sourceUrl = "", title = "") {
     [/linkedin\.com.*cerebras-systems_partner-spotlight/u, "Cerebras / AWS Marketplace"],
     [/ycombinator\.com\/rfs/u, "Y Combinator"],
     [/the-decoder\.com.*anthropic-poaches-openais/u, "Anthropic / OpenAI"],
+    [/the-decoder\.com.*john-jumper-leaves-for-anthropic/u, "John Jumper / Anthropic"],
     [/techtimes\.com.*openrouter/u, "OpenRouter"],
     [/the-decoder\.com.*deepseek-topped-ramps/u, "DeepSeek / Ramp"],
     [/the-decoder\.com.*perplexitys-search-as-code/u, "Perplexity"],
     [/techcrunch\.com.*tokenpocalypse/u, "Microsoft / GitHub Copilot"],
+    [/techcrunch\.com.*allbirds-new-ai-biz/u, "Allbirds / Smartbird"],
+    [/techcrunch\.com.*ambani-wants-ai/u, "Reliance Industries"],
     [/drewdevault\.com.*circus-freaks-of-foss/u, "Drew DeVault"],
     [/human-in-the-loop\.bearblog\.dev.*llms-are-eroding/u, "Human in the Loop"],
     [/ithome\.com\/0\/961\/146/u, "京东 / 腾讯"],
@@ -2383,6 +2403,11 @@ function buildDailyFrontstageSelection(
       .filter((card) => card.sourceUrl && card.translatedFact && card.frontstageEvidenceScore >= 20)
       .filter(publicCandidateIsDisplayReady)
       .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
+    const sourceBackedFill = coreCandidates
+      .filter((card) => !rankedIds.has(card.id))
+      .filter((card) => !card.frontstageGenericCandidate)
+      .filter(publicCardFillIsDisplayReady)
+      .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
     const rejected = [];
     const selectedForDate = [];
     const selectedIds = new Set();
@@ -2449,6 +2474,16 @@ function buildDailyFrontstageSelection(
       }
       selectCard(card, "non-large-core-fill");
       nonLargeCoreFillCount += 1;
+    }
+    for (const card of sourceBackedFill) {
+      if (datePicked >= limit) break;
+      if (selectedIds.has(card.id)) continue;
+      if (isDuplicateFrontstageEvent(card, selectedForDate)) {
+        rejected.push({ id: card.id, reason: "duplicate event already selected in source-backed fill" });
+        continue;
+      }
+      if (!canSelectUnderLargeCompanyCap(card, "source-backed-fill")) continue;
+      selectCard(card, "source-backed-fill");
     }
     reports.push({
       date,
@@ -2982,8 +3017,9 @@ function cardFromFile(file, category) {
 
   const sourceLevel = String(nestedScalar(fm, "primary_raw", "source_level") || scalar(fm, "source_level") || "").toUpperCase();
   const importanceScore = Number(nestedScalar(fm, "primary_raw", "importance_score") || scalar(fm, "importance_score") || 0) || 0;
+  const explicitSourceTitle = scalar(fm, "source_title");
   const explicitDisplayTitle = nestedScalar(fm, "frontend", "displayTitle") || scalar(fm, "title") || "";
-  const rawDisplayTitle = frontstageTitle(rawTitle || explicitDisplayTitle || path.basename(file, ".md"), rawTitle);
+  const rawDisplayTitle = frontstageTitle(explicitSourceTitle || rawTitle || explicitDisplayTitle || path.basename(file, ".md"), rawTitle);
   const title = frontstageChineseTitle(explicitDisplayTitle || rawDisplayTitle, sourceUrl)
     || safeFrontstageTitle(explicitDisplayTitle || rawDisplayTitle, sourceUrl)
     || explicitDisplayTitle
@@ -3046,7 +3082,7 @@ function cardFromFile(file, category) {
     originalHighlights,
     visibleFragment,
     sourceLinks: [...new Set(sourceLinks)],
-    sourceTitle: rawTitle || rawDisplayTitle,
+    sourceTitle: explicitSourceTitle || rawTitle || rawDisplayTitle,
     status: scalar(fm, "status"),
     assetLevel: scalar(fm, "asset_level"),
     evidenceGate: scalar(fm, "evidence_gate"),
@@ -4091,6 +4127,7 @@ const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPubli
   .map((card) => normalizeFrontstageDisplay(card, { strictPublic: card.date === activeDate }))
   .filter(hasSourceFacingEvidence)
   .filter((card) => card.title && card.date && card.sourceName)
+  .filter(publicCandidateIsDisplayReady)
   .map(annotateFrontstageCandidate)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const frontstageSelection = buildDailyFrontstageSelection(cards);

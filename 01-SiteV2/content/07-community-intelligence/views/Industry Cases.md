@@ -1,6 +1,6 @@
 ---
 title: Industry Cases
-date: 2026-06-19
+date: 2026-06-20
 status: active
 type: community-intelligence-industry_case
 source: community-intelligence
@@ -10,14 +10,14 @@ source: community-intelligence
 
 垂直行业、商业场景和可复用案例。
 
-最新归档：[[2026-06-19 Community Intelligence]]
+最新归档：[[2026-06-20 Community Intelligence]]
 
 ## 高价值条目（6 条）
 
 ### 1. 我的思维变化：从万事问AI、用AI到造Agent解决问题
-- 来源：生财有术｜19小时前
+- 来源：生财有术｜2天前
 - 分类：行业案例｜AI应用案例
-- 命中关键词：Dify / Coze / Cursor / Obsidian / 飞书 / RPA / ComfyUI / 订单
+- 命中关键词：Coze / Cursor / Obsidian / 飞书 / RPA / ComfyUI / 订单 / 营收
 - 标签：#AI应用案例 #未识别行业 #待确认
 - 原帖：[打开原帖](https://scys.com/articleDetail/xq_topic/22255248518182821)
 我的思维变化：从万事问AI、用AI到造Agent解决问题 最近思维方式上有一个变化：从之前的万事问 AI，到万事用 AI，到现在万事造 Agent

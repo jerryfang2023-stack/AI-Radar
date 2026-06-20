@@ -1,0 +1,256 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-055",
+  "title": "AshuSriwastav07/startup-co-pilot",
+  "original_url": "https://github.com/AshuSriwastav07/startup-co-pilot",
+  "canonical_url": "https://github.com/AshuSriwastav07/startup-co-pilot",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-20T05:50:42.041Z",
+  "language": "mixed",
+  "full_text": "AshuSriwastav07\nstartup-co-pilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n24 Commits\n24 Commits\napp\napp\ncomponents\ncomponents\nhooks\nhooks\nlib\nlib\npublic\npublic\nstyles\nstyles\n.gitignore\n.gitignore\nREADME.md\nREADME.md\ncomponents.json\ncomponents.json\nnext.config.mjs\nnext.config.mjs\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npostcss.config.mjs\npostcss.config.mjs\ntailwind.config.ts\ntailwind.config.ts\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\n🚀 Startup Co-Pilot\nAn all-in-one AI-powered startup idea analyzer and development assistant designed to empower aspiring founders and entrepreneurs. Startup Co-Pilot helps you validate your business ideas, evaluate market potential, identify risks, and plan strategic roadmaps — all through a seamless, user-friendly web interface.\n🌐 Overview\nStartup Co-Pilot is a modern AI-based web application crafted to guide entrepreneurs at every stage of their startup journey. Built using cutting-edge tools like v0.dev , Vercel , React , and Tailwind CSS , this platform provides real-time feedback and expert-level insights to refine your business concept and improve execution.\nWhether you're brainstorming your first idea or preparing for investor meetings, Startup Co-Pilot will help you:\nValidate concepts\nAnalyze competitors\nPlan roadmaps\nUnderstand market trends\nAssess risk\n✨ Key Features\n🔍 Idea Validation : AI-powered analysis of your startup description for feasibility and clarity.\n📊 Market Research : Auto-generated market size, trends, and target demographics.\n🏢 Competitive Analysis : Detects and evaluates direct/indirect competitors with strategic insights.\n💡 Business Model Generation : AI-recommended monetization, cost, and resource strategies.\n⚠️ Risk Assessment : Uncovers potential pitfalls and external risks early.\n🛣️ Roadmap Planning : Milestone-based development plan suggestions.\n📈 Real-Time Feedback : Instant and adaptive insights based on user inputs.\n📊 Interactive Dashboard : Responsive UI for clean, intuitive exploration of results.\n🧰 Tech Stack\nFrontend : React.js (Hooks and functional components)\nStyling : Tailwind CSS for mobile-first responsive UI\nDevelopment : v0.dev – for rapid visual prototyping\nHosting : Vercel – automatic deployment\nAI Engine : Advanced language models for intelligent analysis and generation\n🔗 Live Demo\nAccess the application live at:\nstartup-co-pilot.vercel.app\n🧾 Prerequisites\nBefore running this project locally, ensure the following:\nNode.js (version 14 or above)\nnpm or yarn installed\nStable internet connection (for AI/API responses)\nWeb browser (latest version recommended)\n⚙️ Installation & Local Setup\nClone the repository\ngit clone https://github.com/AshuSriwastav07/startup-co-pilot.git\ncd startup-co-pilot\nInstall dependencies\nnpm install\n# or\nyarn install\nConfigure environment\ncp .env.example .env.local\nFill in your environment variables (e.g., API keys).\nRun the local development server\nnpm run dev\n# or\nyarn dev\nLaunch in browser\nVisit http://localhost:3000\n🧠 How It Works\nEnter Your Idea : Briefly describe your startup.\nChoose Type of Analysis : From validation to competitor scanning.\nGenerate Insights : Let the AI break down business components.\nView Suggestions : Understand strengths, weaknesses, and opportunities.\nExport and Save : Download analysis as a report.\n🧩 Core Modules\n🧠 Idea Analyzer\nUnderstands core business value\nHighlights missing components\nOffers alternatives & improvements\n📈 Market Research Engine\nEstimates market size\nFinds trends & opportunities\nSuggests audience targeting\n🥇 Competitive Intelligence\nDetects existing players\nAnalyzes competitor strengths\nFinds your unique edge\n💼 Business Model Canvas\nAuto-generates potential revenue streams\nEstimates cost structure\nMaps out value propositions\n🤝 Contributing Guide\nWe welcome contributors! Here's how to join in:\nFork the project\nCreate a feature branch\ngit checkout -b feature/your-feature-name\nCommit your work\ngit commit -m \" Add new feature \"\nPush and create a PR\ngit push origin feature/your-feature-name\nGuidelines\nFollow project coding standards\nAdd comments and documentation\nEnsure your UI is responsive\nAdd test cases for new logic\n🔄 Auto Deployment (v0.dev + Vercel)\nEdits from v0.dev are auto-synced to GitHub\nGitHub pushes trigger instant Vercel deployments\nEvery deployment is versioned and tracked\n📁 Folder Structure\nstartup-co-pilot/\n├── src/\n│ ├── components/ # Reusable React components\n│ ├── pages/ # Next.js pages (routes)\n│ ├── utils/ # Utility functions/helpers\n│ ├── styles/ # Tailwind and custom styles\n│ └── assets/ # Images and icons\n├── public/ # Static files served at root\n├── tests/ # Unit and integration tests\n├── docs/ # Documentation and usage guides\n└── README.md # You're here\n🐞 Known Limitations\nOptimized mainly for desktop\nSome APIs have rate limits\nRequires internet to access analysis features\n🔮 Future Roadmap\n🚧 Version 2.0\nStartup database integration (Crunchbase/Tracxn)\nInvestment/funding suggestions\nMentor discovery & booking\nAnalytics + progress tracking dashboard\n📜 License\nThis project is licensed under the MIT License. See LICENSE for full terms.\n👨‍💻 Author\nAshu Srivastav\n📬 ashusrivastav07@gmail.com\n🔗 GitHub\n🔗 LinkedIn\n🙏 Acknowledgments\nv0.dev for no-code prototyping tools\nVercel for blazing-fast deployments\nOpen-source devs and contributors worldwide\nOur early adopters and testers for valuable feedback\n⭐ Support & Feedback\nCreate an issue: GitHub Issues\nFor urgent queries: Email directly\nHelp grow the project: ⭐ Star the repo if you find it useful!\nBuilt with passion by Ashu Srivastav\nAbout\nOne step far from your Startup Idea get into Real Startup.\nstartup-co-pilot.vercel.app/\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n97.4%\nCSS\n2.5%\nJavaScript\n0.1%",
+  "clean_text": "AshuSriwastav07\nstartup-co-pilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n24 Commits\n24 Commits\napp\napp\ncomponents\ncomponents\nhooks\nhooks\nlib\nlib\npublic\npublic\nstyles\nstyles\n.gitignore\n.gitignore\nREADME.md\nREADME.md\ncomponents.json\ncomponents.json\nnext.config.mjs\nnext.config.mjs\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npostcss.config.mjs\npostcss.config.mjs\ntailwind.config.ts\ntailwind.config.ts\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\n🚀 Startup Co-Pilot\nAn all-in-one AI-powered startup idea analyzer and development assistant designed to empower aspiring founders and entrepreneurs. Startup Co-Pilot helps you validate your business ideas, evaluate market potential, identify risks, and plan strategic roadmaps — all through a seamless, user-friendly web interface.\n🌐 Overview\nStartup Co-Pilot is a modern AI-based web application crafted to guide entrepreneurs at every stage of their startup journey. Built using cutting-edge tools like v0.dev , Vercel , React , and Tailwind CSS , this platform provides real-time feedback and expert-level insights to refine your business concept and improve execution.\nWhether you're brainstorming your first idea or preparing for investor meetings, Startup Co-Pilot will help you:\nValidate concepts\nAnalyze competitors\nPlan roadmaps\nUnderstand market trends\nAssess risk\n✨ Key Features\n🔍 Idea Validation : AI-powered analysis of your startup description for feasibility and clarity.\n📊 Market Research : Auto-generated market size, trends, and target demographics.\n🏢 Competitive Analysis : Detects and evaluates direct/indirect competitors with strategic insights.\n💡 Business Model Generation : AI-recommended monetization, cost, and resource strategies.\n⚠️ Risk Assessment : Uncovers potential pitfalls and external risks early.\n🛣️ Roadmap Planning : Milestone-based development plan suggestions.\n📈 Real-Time Feedback : Instant and adaptive insights based on user inputs.\n📊 Interactive Dashboard : Responsive UI for clean, intuitive exploration of results.\n🧰 Tech Stack\nFrontend : React.js (Hooks and functional components)\nStyling : Tailwind CSS for mobile-first responsive UI\nDevelopment : v0.dev – for rapid visual prototyping\nHosting : Vercel – automatic deployment\nAI Engine : Advanced language models for intelligent analysis and generation\n🔗 Live Demo\nAccess the application live at:\nstartup-co-pilot.vercel.app\n🧾 Prerequisites\nBefore running this project locally, ensure the following:\nNode.js (version 14 or above)\nnpm or yarn installed\nStable internet connection (for AI/API responses)\nWeb browser (latest version recommended)\n⚙️ Installation & Local Setup\nClone the repository\ngit clone https://github.com/AshuSriwastav07/startup-co-pilot.git\ncd startup-co-pilot\nInstall dependencies\nnpm install\n# or\nyarn install\nConfigure environment\ncp .env.example .env.local\nFill in your environment variables (e.g., API keys).\nRun the local development server\nnpm run dev\n# or\nyarn dev\nLaunch in browser\nVisit http://localhost:3000\n🧠 How It Works\nEnter Your Idea : Briefly describe your startup.\nChoose Type of Analysis : From validation to competitor scanning.\nGenerate Insights : Let the AI break down business components.\nView Suggestions : Understand strengths, weaknesses, and opportunities.\nExport and Save : Download analysis as a report.\n🧩 Core Modules\n🧠 Idea Analyzer\nUnderstands core business value\nHighlights missing components\nOffers alternatives & improvements\n📈 Market Research Engine\nEstimates market size\nFinds trends & opportunities\nSuggests audience targeting\n🥇 Competitive Intelligence\nDetects existing players\nAnalyzes competitor strengths\nFinds your unique edge\n💼 Business Model Canvas\nAuto-generates potential revenue streams\nEstimates cost structure\nMaps out value propositions\n🤝 Contributing Guide\nWe welcome contributors! Here's how to join in:\nFork the project\nCreate a feature branch\ngit checkout -b feature/your-feature-name\nCommit your work\ngit commit -m \" Add new feature \"\nPush and create a PR\ngit push origin feature/your-feature-name\nGuidelines\nFollow project coding standards\nAdd comments and documentation\nEnsure your UI is responsive\nAdd test cases for new logic\n🔄 Auto Deployment (v0.dev + Vercel)\nEdits from v0.dev are auto-synced to GitHub\nGitHub pushes trigger instant Vercel deployments\nEvery deployment is versioned and tracked\n📁 Folder Structure\nstartup-co-pilot/\n├── src/\n│ ├── components/ # Reusable React components\n│ ├── pages/ # Next.js pages (routes)\n│ ├── utils/ # Utility functions/helpers\n│ ├── styles/ # Tailwind and custom styles\n│ └── assets/ # Images and icons\n├── public/ # Static files served at root\n├── tests/ # Unit and integration tests\n├── docs/ # Documentation and usage guides\n└── README.md # You're here\n🐞 Known Limitations\nOptimized mainly for desktop\nSome APIs have rate limits\nRequires internet to access analysis features\n🔮 Future Roadmap\n🚧 Version 2.0\nStartup database integration (Crunchbase/Tracxn)\nInvestment/funding suggestions\nMentor discovery & booking\nAnalytics + progress tracking dashboard\n📜 License\nThis project is licensed under the MIT License. See LICENSE for full terms.\n👨‍💻 Author\nAshu Srivastav\n📬 ashusrivastav07@gmail.com\n🔗 GitHub\n🔗 LinkedIn\n🙏 Acknowledgments\nv0.dev for no-code prototyping tools\nVercel for blazing-fast deployments\nOpen-source devs and contributors worldwide\nOur early adopters and testers for valuable feedback\n⭐ Support & Feedback\nCreate an issue: GitHub Issues\nFor urgent queries: Email directly\nHelp grow the project: ⭐ Star the repo if you find it useful!\nBuilt with passion by Ashu Srivastav\nAbout\nOne step far from your Startup Idea get into Real Startup.\nstartup-co-pilot.vercel.app/\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n97.4%\nCSS\n2.5%\nJavaScript\n0.1%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-20/r-055-ashusriwastav07-startup-co-pilot.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-20/r-055-ashusriwastav07-startup-co-pilot.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 6332,
+    "paragraph_count": 106,
+    "sentence_count": 32,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6332,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "1395aa425f43bc69",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "5dcf98e0fe322f48",
+  "content_hash": "1395aa425f43bc69",
+  "full_text_hash": "1395aa425f43bc69",
+  "semantic_hash": "3c62e3a962cc0b90",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-20T05:50:42.041Z",
+  "last_seen_at": "2026-06-20T05:50:42.041Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "supporting_context",
+      "text": "An all-in-one AI-powered startup idea analyzer and development assistant designed to empower aspiring founders and entrepreneurs. Startup Co-Pilot helps you validate your business ideas, evaluate market potential, identify risks, and plan strategic roadmaps — all through a seamless, user-friendly we... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem",
+      "supports": [
+        "daily_observation",
+        "heatmap"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "AshuSriwastav07 startup-co-pilot Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 24 Commits 24 Commits app app components components hooks hooks lib lib public public styles styles .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "json package-lock.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "json View all files Repository files navigation 🚀 Startup Co-Pilot An all-in-one AI-powered startup idea analyzer and development assistant designed to empower aspiring founders and entrepreneurs.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "Startup Co-Pilot helps you validate your business ideas, evaluate market potential, identify risks, and plan strategic roadmaps — all through a seamless, user-friendly web interface.",
+      "supports": [
+        "daily_observation",
+        "heatmap"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "🌐 Overview Startup Co-Pilot is a modern AI-based web application crafted to guide entrepreneurs at every stage of their startup journey.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "部署 / 上线",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "07",
+      "24",
+      "0",
+      "14",
+      "3000",
+      "2.0",
+      "97.4%",
+      "2.5%"
+    ],
+    "quotes": [
+      " Add new feature "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "json package-lock."
+    ],
+    "case_details": [
+      "AshuSriwastav07 startup-co-pilot Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 24 Commits 24 Commits app app components components hooks hooks lib lib public public styles styles .",
+      "json View all files Repository files navigation 🚀 Startup Co-Pilot An all-in-one AI-powered startup idea analyzer and development assistant designed to empower aspiring founders and entrepreneurs.",
+      "🌐 Overview Startup Co-Pilot is a modern AI-based web application crafted to guide entrepreneurs at every stage of their startup journey."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": [
+      "An all-in-one AI-powered startup idea analyzer and development assistant designed to empower aspiring founders and entrepreneurs. Startup Co-Pilot helps you validate your business ideas, evaluate market potential, identify risks, and plan strategic roadmaps — all through a seamless, user-friendly we... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem",
+      "Startup Co-Pilot helps you validate your business ideas, evaluate market potential, identify risks, and plan strategic roadmaps — all through a seamless, user-friendly web interface."
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# AshuSriwastav07/startup-co-pilot\n\n- raw_id: R-055\n- original_url: https://github.com/AshuSriwastav07/startup-co-pilot\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-20T05:50:42.041Z\n\n## clean_text\n\nAshuSriwastav07\nstartup-co-pilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n24 Commits\n24 Commits\napp\napp\ncomponents\ncomponents\nhooks\nhooks\nlib\nlib\npublic\npublic\nstyles\nstyles\n.gitignore\n.gitignore\nREADME.md\nREADME.md\ncomponents.json\ncomponents.json\nnext.config.mjs\nnext.config.mjs\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npostcss.config.mjs\npostcss.config.mjs\ntailwind.config.ts\ntailwind.config.ts\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\n🚀 Startup Co-Pilot\nAn all-in-one AI-powered startup idea analyzer and development assistant designed to empower aspiring founders and entrepreneurs. Startup Co-Pilot helps you validate your business ideas, evaluate market potential, identify risks, and plan strategic roadmaps — all through a seamless, user-friendly web interface.\n🌐 Overview\nStartup Co-Pilot is a modern AI-based web application crafted to guide entrepreneurs at every stage of their startup journey. Built using cutting-edge tools like v0.dev , Vercel , React , and Tailwind CSS , this platform provides real-time feedback and expert-level insights to refine your business concept and improve execution.\nWhether you're brainstorming your first idea or preparing for investor meetings, Startup Co-Pilot will help you:\nValidate concepts\nAnalyze competitors\nPlan roadmaps\nUnderstand market trends\nAssess risk\n✨ Key Features\n🔍 Idea Validation : AI-powered analysis of your startup description for feasibility and clarity.\n📊 Market Research : Auto-generated market size, trends, and target demographics.\n🏢 Competitive Analysis : Detects and evaluates direct/indirect competitors with strategic insights.\n💡 Business Model Generation : AI-recommended monetization, cost, and resource strategies.\n⚠️ Risk Assessment : Uncovers potential pitfalls and external risks early.\n🛣️ Roadmap Planning : Milestone-based development plan suggestions.\n📈 Real-Time Feedback : Instant and adaptive insights based on user inputs.\n📊 Interactive Dashboard : Responsive UI for clean, intuitive exploration of results.\n🧰 Tech Stack\nFrontend : React.js (Hooks and functional components)\nStyling : Tailwind CSS for mobile-first responsive UI\nDevelopment : v0.dev – for rapid visual prototyping\nHosting : Vercel – automatic deployment\nAI Engine : Advanced language models for intelligent analysis and generation\n🔗 Live Demo\nAccess the application live at:\nstartup-co-pilot.vercel.app\n🧾 Prerequisites\nBefore running this project locally, ensure the following:\nNode.js (version 14 or above)\nnpm or yarn installed\nStable internet connection (for AI/API responses)\nWeb browser (latest version recommended)\n⚙️ Installation & Local Setup\nClone the repository\ngit clone https://github.com/AshuSriwastav07/startup-co-pilot.git\ncd startup-co-pilot\nInstall dependencies\nnpm install\n# or\nyarn install\nConfigure environment\ncp .env.example .env.local\nFill in your environment variables (e.g., API keys).\nRun the local development server\nnpm run dev\n# or\nyarn dev\nLaunch in browser\nVisit http://localhost:3000\n🧠 How It Works\nEnter Your Idea : Briefly describe your startup.\nChoose Type of Analysis : From validation to competitor scanning.\nGenerate Insights : Let the AI break down business components.\nView Suggestions : Understand strengths, weaknesses, and opportunities.\nExport and Save : Download analysis as a report.\n🧩 Core Modules\n🧠 Idea Analyzer\nUnderstands core business value\nHighlights missing components\nOffers alternatives & improvements\n📈 Market Research Engine\nEstimates market size\nFinds trends & opportunities\nSuggests audience targeting\n🥇 Competitive Intelligence\nDetects existing players\nAnalyzes competitor strengths\nFinds your unique edge\n💼 Business Model Canvas\nAuto-generates potential revenue streams\nEstimates cost structure\nMaps out value propositions\n🤝 Contributing Guide\nWe welcome contributors! Here's how to join in:\nFork the project\nCreate a feature branch\ngit checkout -b feature/your-feature-name\nCommit your work\ngit commit -m \" Add new feature \"\nPush and create a PR\ngit push origin feature/your-feature-name\nGuidelines\nFollow project coding standards\nAdd comments and documentation\nEnsure your UI is responsive\nAdd test cases for new logic\n🔄 Auto Deployment (v0.dev + Vercel)\nEdits from v0.dev are auto-synced to GitHub\nGitHub pushes trigger instant Vercel deployments\nEvery deployment is versioned and tracked\n📁 Folder Structure\nstartup-co-pilot/\n├── src/\n│ ├── components/ # Reusable React components\n│ ├── pages/ # Next.js pages (routes)\n│ ├── utils/ # Utility functions/helpers\n│ ├── styles/ # Tailwind and custom styles\n│ └── assets/ # Images and icons\n├── public/ # Static files served at root\n├── tests/ # Unit and integration tests\n├── docs/ # Documentation and usage guides\n└── README.md # You're here\n🐞 Known Limitations\nOptimized mainly for desktop\nSome APIs have rate limits\nRequires internet to access analysis features\n🔮 Future Roadmap\n🚧 Version 2.0\nStartup database integration (Crunchbase/Tracxn)\nInvestment/funding suggestions\nMentor discovery & booking\nAnalytics + progress tracking dashboard\n📜 License\nThis project is licensed under the MIT License. See LICENSE for full terms.\n👨‍💻 Author\nAshu Srivastav\n📬 ashusrivastav07@gmail.com\n🔗 GitHub\n🔗 LinkedIn\n🙏 Acknowledgments\nv0.dev for no-code prototyping tools\nVercel for blazing-fast deployments\nOpen-source devs and contributors worldwide\nOur early adopters and testers for valuable feedback\n⭐ Support & Feedback\nCreate an issue: GitHub Issues\nFor urgent queries: Email directly\nHelp grow the project: ⭐ Star the repo if you find it useful!\nBuilt with passion by Ashu Srivastav\nAbout\nOne step far from your Startup Idea get into Real Startup.\nstartup-co-pilot.vercel.app/\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n97.4%\nCSS\n2.5%\nJavaScript\n0.1%\n\n## full_text\n\nAshuSriwastav07\nstartup-co-pilot\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n24 Commits\n24 Commits\napp\napp\ncomponents\ncomponents\nhooks\nhooks\nlib\nlib\npublic\npublic\nstyles\nstyles\n.gitignore\n.gitignore\nREADME.md\nREADME.md\ncomponents.json\ncomponents.json\nnext.config.mjs\nnext.config.mjs\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npostcss.config.mjs\npostcss.config.mjs\ntailwind.config.ts\ntailwind.config.ts\ntsconfig.json\ntsconfig.json\nView all files\nRepository files navigation\n🚀 Startup Co-Pilot\nAn all-in-one AI-powered startup idea analyzer and development assistant designed to empower aspiring founders and entrepreneurs. Startup Co-Pilot helps you validate your business ideas, evaluate market potential, identify risks, and plan strategic roadmaps — all through a seamless, user-friendly web interface.\n🌐 Overview\nStartup Co-Pilot is a modern AI-based web application crafted to guide entrepreneurs at every stage of their startup journey. Built using cutting-edge tools like v0.dev , Vercel , React , and Tailwind CSS , this platform provides real-time feedback and expert-level insights to refine your business concept and improve execution.\nWhether you're brainstorming your first idea or preparing for investor meetings, Startup Co-Pilot will help you:\nValidate concepts\nAnalyze competitors\nPlan roadmaps\nUnderstand market trends\nAssess risk\n✨ Key Features\n🔍 Idea Validation : AI-powered analysis of your startup description for feasibility and clarity.\n📊 Market Research : Auto-generated market size, trends, and target demographics.\n🏢 Competitive Analysis : Detects and evaluates direct/indirect competitors with strategic insights.\n💡 Business Model Generation : AI-recommended monetization, cost, and resource strategies.\n⚠️ Risk Assessment : Uncovers potential pitfalls and external risks early.\n🛣️ Roadmap Planning : Milestone-based development plan suggestions.\n📈 Real-Time Feedback : Instant and adaptive insights based on user inputs.\n📊 Interactive Dashboard : Responsive UI for clean, intuitive exploration of results.\n🧰 Tech Stack\nFrontend : React.js (Hooks and functional components)\nStyling : Tailwind CSS for mobile-first responsive UI\nDevelopment : v0.dev – for rapid visual prototyping\nHosting : Vercel – automatic deployment\nAI Engine : Advanced language models for intelligent analysis and generation\n🔗 Live Demo\nAccess the application live at:\nstartup-co-pilot.vercel.app\n🧾 Prerequisites\nBefore running this project locally, ensure the following:\nNode.js (version 14 or above)\nnpm or yarn installed\nStable internet connection (for AI/API responses)\nWeb browser (latest version recommended)\n⚙️ Installation & Local Setup\nClone the repository\ngit clone https://github.com/AshuSriwastav07/startup-co-pilot.git\ncd startup-co-pilot\nInstall dependencies\nnpm install\n# or\nyarn install\nConfigure environment\ncp .env.example .env.local\nFill in your environment variables (e.g., API keys).\nRun the local development server\nnpm run dev\n# or\nyarn dev\nLaunch in browser\nVisit http://localhost:3000\n🧠 How It Works\nEnter Your Idea : Briefly describe your startup.\nChoose Type of Analysis : From validation to competitor scanning.\nGenerate Insights : Let the AI break down business components.\nView Suggestions : Understand strengths, weaknesses, and opportunities.\nExport and Save : Download analysis as a report.\n🧩 Core Modules\n🧠 Idea Analyzer\nUnderstands core business value\nHighlights missing components\nOffers alternatives & improvements\n📈 Market Research Engine\nEstimates market size\nFinds trends & opportunities\nSuggests audience targeting\n🥇 Competitive Intelligence\nDetects existing players\nAnalyzes competitor strengths\nFinds your unique edge\n💼 Business Model Canvas\nAuto-generates potential revenue streams\nEstimates cost structure\nMaps out value propositions\n🤝 Contributing Guide\nWe welcome contributors! Here's how to join in:\nFork the project\nCreate a feature branch\ngit checkout -b feature/your-feature-name\nCommit your work\ngit commit -m \" Add new feature \"\nPush and create a PR\ngit push origin feature/your-feature-name\nGuidelines\nFollow project coding standards\nAdd comments and documentation\nEnsure your UI is responsive\nAdd test cases for new logic\n🔄 Auto Deployment (v0.dev + Vercel)\nEdits from v0.dev are auto-synced to GitHub\nGitHub pushes trigger instant Vercel deployments\nEvery deployment is versioned and tracked\n📁 Folder Structure\nstartup-co-pilot/\n├── src/\n│ ├── components/ # Reusable React components\n│ ├── pages/ # Next.js pages (routes)\n│ ├── utils/ # Utility functions/helpers\n│ ├── styles/ # Tailwind and custom styles\n│ └── assets/ # Images and icons\n├── public/ # Static files served at root\n├── tests/ # Unit and integration tests\n├── docs/ # Documentation and usage guides\n└── README.md # You're here\n🐞 Known Limitations\nOptimized mainly for desktop\nSome APIs have rate limits\nRequires internet to access analysis features\n🔮 Future Roadmap\n🚧 Version 2.0\nStartup database integration (Crunchbase/Tracxn)\nInvestment/funding suggestions\nMentor discovery & booking\nAnalytics + progress tracking dashboard\n📜 License\nThis project is licensed under the MIT License. See LICENSE for full terms.\n👨‍💻 Author\nAshu Srivastav\n📬 ashusrivastav07@gmail.com\n🔗 GitHub\n🔗 LinkedIn\n🙏 Acknowledgments\nv0.dev for no-code prototyping tools\nVercel for blazing-fast deployments\nOpen-source devs and contributors worldwide\nOur early adopters and testers for valuable feedback\n⭐ Support & Feedback\nCreate an issue: GitHub Issues\nFor urgent queries: Email directly\nHelp grow the project: ⭐ Star the repo if you find it useful!\nBuilt with passion by Ashu Srivastav\nAbout\nOne step far from your Startup Idea get into Real Startup.\nstartup-co-pilot.vercel.app/\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n97.4%\nCSS\n2.5%\nJavaScript\n0.1%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [supporting_context / daily_observation, heatmap / medium] An all-in-one AI-powered startup idea analyzer and development assistant designed to empower aspiring founders and entrepreneurs. Startup Co-Pilot helps you validate your business ideas, evaluate market potential, identify risks, and plan strategic roadmaps — all through a seamless, user-friendly we... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem\n2. [case_detail / daily_observation, heatmap, case / high] AshuSriwastav07 startup-co-pilot Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 24 Commits 24 Commits app app components components hooks hooks lib lib public public styles styles .\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] json package-lock.\n4. [case_detail / daily_observation, heatmap, case / high] json View all files Repository files navigation 🚀 Startup Co-Pilot An all-in-one AI-powered startup idea analyzer and development assistant designed to empower aspiring founders and entrepreneurs.\n5. [supporting_context / daily_observation, heatmap / medium] Startup Co-Pilot helps you validate your business ideas, evaluate market potential, identify risks, and plan strategic roadmaps — all through a seamless, user-friendly web interface.\n6. [case_detail / daily_observation, heatmap, case / high] 🌐 Overview Startup Co-Pilot is a modern AI-based web application crafted to guide entrepreneurs at every stage of their startup journey.\n"
+}

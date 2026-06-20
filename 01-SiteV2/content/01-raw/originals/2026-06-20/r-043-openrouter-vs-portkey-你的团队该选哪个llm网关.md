@@ -1,0 +1,277 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-043
+title: "OpenRouter vs Portkey：你的团队该选哪个LLM网关？"
+original_url: "https://openrouter.ai/blog/insights/openrouter-vs-portkey"
+canonical_url: "https://openrouter.ai/blog/insights/openrouter-vs-portkey"
+source_name: "OpenRouter：Announcements（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-19T19:00:00.000Z"
+collected_at: 2026-06-20T05:50:41.994Z
+language: mixed
+full_text_hash: 64ba6b5944e598c8
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-20/r-043-openrouter-vs-portkey-你的团队该选哪个llm网关.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-20/r-043-openrouter-vs-portkey-你的团队该选哪个llm网关.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":7039,"paragraph_count":40,"sentence_count":71,"boilerplate_hits":0,"symbol_ratio":0,"method":"main"}
+has_full_text: true
+content_length: 7039
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"64ba6b5944e598c8","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenRouter vs Portkey：你的团队该选哪个LLM网关？","discovery_summary":"OpenRouter是托管路由网络，买credits后通过一个API路由至70+供应商，自动故障转移，无需自有密钥；覆盖300+模型（含20+免费），按用量收费（零加成+5.5%平台费，首100万免费），支持零数据保留和欧盟路由。Portkey是AI控制平面（2026年被Palo Alto收购），置于用户密钥之上，增加治理、提示管理、护栏和可观测性；提供1600+ LLM统一API，按日志计费（Developer免费，Production $49/月），支持HIPAA、SSO、私有部署。两者均可组合使用。","source_name":"OpenRouter：Announcements（RSS）","origin_url":"https://openrouter.ai/blog/insights/openrouter-vs-portkey","discovered_at":"2026-06-20T05:46:01.036Z","rank_on_page":82,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 7ea12f0d795ce949
+content_hash: 64ba6b5944e598c8
+semantic_hash: 23504783df08d0b5
+duplicate_of: ""
+first_seen_at: "2026-06-19T19:00:00.000Z"
+last_seen_at: 2026-06-20T05:50:41.994Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["OpenRouter","Announcements（RSS）","OpenAI","Anthropic","GitHub"],"products":[],"people":[],"industries":["开发者工具","企业服务"],"roles":["开发者 / 工程团队"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["70","300","20","5.5%","100万","2026","1600","$49"],"quotes":[]}
+evidence_seed: {"company_actions":["OpenRouter vs Portkey: Which LLM Gateway for Your Team?","OpenRouter &middot; 6/19/2026 On this page Route across providers, or govern your own keys Count models, but count the right thing Match observability and governance to your team Pick a pricing model that matches your volume Use both, or start where the pain is Frequently asked questions If you’re comparing OpenRouter and Portkey, the real question is whether you want something that routes requests for you, or something that governs the requests you already make.","OpenRouter is a managed routing network."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"OpenRouter是托管路由网络，买credits后通过一个API路由至70+供应商，自动故障转移，无需自有密钥；覆盖300+模型（含20+免费），按用量收费（零加成+5.5%平台费，首100万免费），支持零数据保留和欧盟路由。Portkey是AI控制平面（2026年被Palo Alto收购），置于用户密钥之上，增加治理、提示管理、护栏和可观测性；提供1600+ LLM统一API，按日志计费（Developer免费，Production $49/月），支持HIPAA、SSO、私有部署。两者均可组合使用。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenRouter vs Portkey: Which LLM Gateway for Your Team?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenRouter &middot; 6/19/2026 On this page Route across providers, or govern your own keys Count models, but count the right thing Match observability and governance to your team Pick a pricing model that matches your volume Use both, or start where the pain is Frequently asked questions If you’re comparing OpenRouter and Portkey, the real question is whether you want something that routes requests for you, or something that governs the requests you already make.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenRouter is a managed routing network.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"You buy credits, call one OpenAI-compatible endpoint, and it routes across 70+ providers with automatic failover.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"You never hold a provider key.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# OpenRouter vs Portkey：你的团队该选哪个LLM网关？
+
+## clean_text
+
+OpenRouter vs Portkey: Which LLM Gateway for Your Team?
+OpenRouter &middot;
+6/19/2026
+On this page
+Route across providers, or govern your own keys
+Count models, but count the right thing
+Match observability and governance to your team
+Pick a pricing model that matches your volume
+Use both, or start where the pain is
+Frequently asked questions
+If you’re comparing OpenRouter and Portkey, the real question is whether you want something that routes requests for you, or something that governs the requests you already make.
+OpenRouter is a managed routing network. You buy credits, call one OpenAI-compatible endpoint, and it routes across 70+ providers with automatic failover. You never hold a provider key. Portkey is an AI control plane, now part of Palo Alto Networks after a 2026 acquisition . It sits in front of the provider keys you already have and adds governance, prompt management, guardrails, and observability.
+Pick OpenRouter when you want model access and failover with no infrastructure. Pick Portkey when you need a governance layer over the provider accounts you already run.
+Route across providers, or govern your own keys
+OpenRouter owns the path to the model. Your app calls https://openrouter.ai/api/v1 , OpenRouter picks a provider, and forwards the request on credits you’ve already bought. There are no per-provider accounts to manage, and a request that fails on one provider falls over to another automatically.
+Portkey owns the layer in front of your keys. You bring your own provider credentials (OpenAI, Anthropic, Azure, and the rest), store them as virtual keys, and Portkey routes, caches, and logs every call. Its open-source gateway has 12K+ GitHub stars and installs in 3 lines of code, and you can self-host it or run the managed version.
+With OpenRouter you offload provider relationships entirely; with Portkey you keep them and wrap them in policy.
+Count models, but count the right thing
+Portkey advertises access to 1,600+ LLMs through its unified API. OpenRouter lists 300+ models across 70+ providers , including 20+ free models for evaluation. The raw numbers favor Portkey, but they measure different things.
+Portkey’s count is breadth of models you can address once you’ve supplied the keys. OpenRouter’s count is models it actively routes to, with credits, load balancing, and cross-provider failover handled for you. Its Auto Router , powered by NotDiamond, can even pick a model per prompt, and provider routing lets you filter by price, throughput, latency, data policy, and quantization.
+Count whichever number you like. The decision still rests on whether you want a network that routes for you or a unified front end over the provider accounts you run.
+Match observability and governance to your team
+Portkey centers on governance. It ships in-product logs, traces, and dashboards with tiered retention (3 days on the free Developer plan, 30 days on Production, custom on Enterprise), plus prompt templates with a playground, role-based access control, budget and rate limits, and guardrails that include PII redaction. For a platform team standardizing many internal apps, that control plane is the point.
+OpenRouter takes a lighter approach to observability. Rather than store your logs long-term, Broadcast streams traces to the platforms you already run, including Datadog, Langfuse, LangSmith, Braintrust, OpenTelemetry, and S3. Workspaces add per-team organization and budgets for teams that want structure across many internal apps.
+On compliance, both hold SOC 2 Type 2 and support GDPR. OpenRouter adds Zero Data Retention and EU in-region routing for enterprise accounts, with its report at trust.openrouter.ai . Portkey adds HIPAA and custom BAAs on Enterprise, along with VPC hosting and data isolation. Teams that want data residency without running infrastructure point to OpenRouter.
+Pick a pricing model that matches your volume
+The two price along different axes. OpenRouter passes provider pricing through at 0% markup, then charges a 5.5% platform fee on credit purchases with a $0.80 minimum. Bring Your Own Key drops that to 5%, and the first 1 million requests each month are waived. You pay for usage, nothing else.
+Portkey prices on logs and features. Its Developer tier is free with 10K recorded logs a month, though Portkey marks it as unsuitable for production. Production is $49/month for 100K logs (plus $9 per additional 100K up to 3 million) and adds RBAC and guardrails. Enterprise is custom, with HIPAA, SSO, private deployment, and longer retention. The open-source gateway is free to self-host if you’d rather run it yourself.
+Net cost depends on where your weight sits. Heavy model spend with provider keys already in hand often favors Portkey’s self-hosted gateway; usage you’d rather not meter or operate favors OpenRouter’s pay-as-you-go.
+Use both, or start where the pain is
+These aren’t mutually exclusive. You can point Portkey at OpenRouter as an upstream provider, putting Portkey’s governance and prompt management in front of OpenRouter’s routing network. OpenRouter also lists Portkey as an upcoming broadcast destination , so traces will flow the other direction too.
+If you’re weighing more options, our LLM gateway comparison covers LiteLLM, Helicone, Cloudflare AI Gateway, and others.
+Frequently asked questions
+Is Portkey the same kind of tool as OpenRouter?
+They overlap on a unified API but solve different problems. OpenRouter is a managed routing network: you buy credits and it routes across 70+ providers with automatic failover, no provider keys required. Portkey is a control plane that sits in front of the provider keys you already hold, adding governance, prompt management, and in-product observability.
+Did Palo Alto Networks acquire Portkey?
+Yes. Palo Alto Networks completed its acquisition of Portkey in 2026, folding it into the company’s AI security portfolio. Portkey continues to operate its gateway, including the open-source version.
+How do OpenRouter and Portkey compare on compliance?
+Both hold SOC 2 Type 2 and support GDPR. OpenRouter adds Zero Data Retention and EU in-region routing for enterprise accounts. Portkey offers HIPAA and custom BAAs on its Enterprise plan. For specific certification requirements, check each platform’s trust center.
+Which one is cheaper?
+It depends on volume. OpenRouter charges a 5.5% platform fee on credit purchases (5% with Bring Your Own Key, first 1 million requests each month waived) and 0% markup on provider prices. Portkey is free to self-host or on its Developer tier, then $49/month for Production. High-volume teams that already hold provider keys often run Portkey’s open-source gateway; teams that want managed routing without operating anything pick OpenRouter.
+Can I use OpenRouter and Portkey together?
+Yes. You can point Portkey at OpenRouter as one of its upstream providers, putting Portkey’s governance and observability in front of OpenRouter’s routing network. OpenRouter also lists Portkey as an upcoming broadcast destination for sending traces.
+
+## full_text
+
+OpenRouter vs Portkey: Which LLM Gateway for Your Team?
+OpenRouter &middot;
+6/19/2026
+On this page
+Route across providers, or govern your own keys
+Count models, but count the right thing
+Match observability and governance to your team
+Pick a pricing model that matches your volume
+Use both, or start where the pain is
+Frequently asked questions
+If you’re comparing OpenRouter and Portkey, the real question is whether you want something that routes requests for you, or something that governs the requests you already make.
+OpenRouter is a managed routing network. You buy credits, call one OpenAI-compatible endpoint, and it routes across 70+ providers with automatic failover. You never hold a provider key. Portkey is an AI control plane, now part of Palo Alto Networks after a 2026 acquisition . It sits in front of the provider keys you already have and adds governance, prompt management, guardrails, and observability.
+Pick OpenRouter when you want model access and failover with no infrastructure. Pick Portkey when you need a governance layer over the provider accounts you already run.
+Route across providers, or govern your own keys
+OpenRouter owns the path to the model. Your app calls https://openrouter.ai/api/v1 , OpenRouter picks a provider, and forwards the request on credits you’ve already bought. There are no per-provider accounts to manage, and a request that fails on one provider falls over to another automatically.
+Portkey owns the layer in front of your keys. You bring your own provider credentials (OpenAI, Anthropic, Azure, and the rest), store them as virtual keys, and Portkey routes, caches, and logs every call. Its open-source gateway has 12K+ GitHub stars and installs in 3 lines of code, and you can self-host it or run the managed version.
+With OpenRouter you offload provider relationships entirely; with Portkey you keep them and wrap them in policy.
+Count models, but count the right thing
+Portkey advertises access to 1,600+ LLMs through its unified API. OpenRouter lists 300+ models across 70+ providers , including 20+ free models for evaluation. The raw numbers favor Portkey, but they measure different things.
+Portkey’s count is breadth of models you can address once you’ve supplied the keys. OpenRouter’s count is models it actively routes to, with credits, load balancing, and cross-provider failover handled for you. Its Auto Router , powered by NotDiamond, can even pick a model per prompt, and provider routing lets you filter by price, throughput, latency, data policy, and quantization.
+Count whichever number you like. The decision still rests on whether you want a network that routes for you or a unified front end over the provider accounts you run.
+Match observability and governance to your team
+Portkey centers on governance. It ships in-product logs, traces, and dashboards with tiered retention (3 days on the free Developer plan, 30 days on Production, custom on Enterprise), plus prompt templates with a playground, role-based access control, budget and rate limits, and guardrails that include PII redaction. For a platform team standardizing many internal apps, that control plane is the point.
+OpenRouter takes a lighter approach to observability. Rather than store your logs long-term, Broadcast streams traces to the platforms you already run, including Datadog, Langfuse, LangSmith, Braintrust, OpenTelemetry, and S3. Workspaces add per-team organization and budgets for teams that want structure across many internal apps.
+On compliance, both hold SOC 2 Type 2 and support GDPR. OpenRouter adds Zero Data Retention and EU in-region routing for enterprise accounts, with its report at trust.openrouter.ai . Portkey adds HIPAA and custom BAAs on Enterprise, along with VPC hosting and data isolation. Teams that want data residency without running infrastructure point to OpenRouter.
+Pick a pricing model that matches your volume
+The two price along different axes. OpenRouter passes provider pricing through at 0% markup, then charges a 5.5% platform fee on credit purchases with a $0.80 minimum. Bring Your Own Key drops that to 5%, and the first 1 million requests each month are waived. You pay for usage, nothing else.
+Portkey prices on logs and features. Its Developer tier is free with 10K recorded logs a month, though Portkey marks it as unsuitable for production. Production is $49/month for 100K logs (plus $9 per additional 100K up to 3 million) and adds RBAC and guardrails. Enterprise is custom, with HIPAA, SSO, private deployment, and longer retention. The open-source gateway is free to self-host if you’d rather run it yourself.
+Net cost depends on where your weight sits. Heavy model spend with provider keys already in hand often favors Portkey’s self-hosted gateway; usage you’d rather not meter or operate favors OpenRouter’s pay-as-you-go.
+Use both, or start where the pain is
+These aren’t mutually exclusive. You can point Portkey at OpenRouter as an upstream provider, putting Portkey’s governance and prompt management in front of OpenRouter’s routing network. OpenRouter also lists Portkey as an upcoming broadcast destination , so traces will flow the other direction too.
+If you’re weighing more options, our LLM gateway comparison covers LiteLLM, Helicone, Cloudflare AI Gateway, and others.
+Frequently asked questions
+Is Portkey the same kind of tool as OpenRouter?
+They overlap on a unified API but solve different problems. OpenRouter is a managed routing network: you buy credits and it routes across 70+ providers with automatic failover, no provider keys required. Portkey is a control plane that sits in front of the provider keys you already hold, adding governance, prompt management, and in-product observability.
+Did Palo Alto Networks acquire Portkey?
+Yes. Palo Alto Networks completed its acquisition of Portkey in 2026, folding it into the company’s AI security portfolio. Portkey continues to operate its gateway, including the open-source version.
+How do OpenRouter and Portkey compare on compliance?
+Both hold SOC 2 Type 2 and support GDPR. OpenRouter adds Zero Data Retention and EU in-region routing for enterprise accounts. Portkey offers HIPAA and custom BAAs on its Enterprise plan. For specific certification requirements, check each platform’s trust center.
+Which one is cheaper?
+It depends on volume. OpenRouter charges a 5.5% platform fee on credit purchases (5% with Bring Your Own Key, first 1 million requests each month waived) and 0% markup on provider prices. Portkey is free to self-host or on its Developer tier, then $49/month for Production. High-volume teams that already hold provider keys often run Portkey’s open-source gateway; teams that want managed routing without operating anything pick OpenRouter.
+Can I use OpenRouter and Portkey together?
+Yes. You can point Portkey at OpenRouter as one of its upstream providers, putting Portkey’s governance and observability in front of OpenRouter’s routing network. OpenRouter also lists Portkey as an upcoming broadcast destination for sending traces.
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":7039,"paragraph_count":40,"sentence_count":71,"boilerplate_hits":0,"symbol_ratio":0,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   OpenRouter是托管路由网络，买credits后通过一个API路由至70+供应商，自动故障转移，无需自有密钥；覆盖300+模型（含20+免费），按用量收费（零加成+5.5%平台费，首100万免费），支持零数据保留和欧盟路由。Portkey是AI控制平面（2026年被Palo Alto收购），置于用户密钥之上，增加治理、提示管理、护栏和可观测性；提供1600+ LLM统一API，按日志计费（Developer免费，Production $49/月），支持HIPAA、SSO、私有部署。两者均可组合使用。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   OpenRouter vs Portkey: Which LLM Gateway for Your Team?
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   OpenRouter &middot; 6/19/2026 On this page Route across providers, or govern your own keys Count models, but count the right thing Match observability and governance to your team Pick a pricing model that matches your volume Use both, or start where the pain is Frequently asked questions If you’re comparing OpenRouter and Portkey, the real question is whether you want something that routes requests for you, or something that governs the requests you already make.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   OpenRouter is a managed routing network.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   You buy credits, call one OpenAI-compatible endpoint, and it routes across 70+ providers with automatic failover.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   You never hold a provider key.
+
+## business_elements
+
+- companies: OpenRouter, Announcements（RSS）, OpenAI, Anthropic, GitHub
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 70, 300, 20, 5.5%, 100万, 2026, 1600, $49
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: OpenRouter vs Portkey: Which LLM Gateway for Your Team? / OpenRouter &middot; 6/19/2026 On this page Route across providers, or govern your own keys Count models, but count the right thing Match observability and governance to your team Pick a pricing model that matches your volume Use both, or start where the pain is Frequently asked questions If you’re comparing OpenRouter and Portkey, the real question is whether you want something that routes requests for you, or something that governs the requests you already make. / OpenRouter is a managed routing network.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenRouter vs Portkey：你的团队该选哪个LLM网关？","discovery_summary":"OpenRouter是托管路由网络，买credits后通过一个API路由至70+供应商，自动故障转移，无需自有密钥；覆盖300+模型（含20+免费），按用量收费（零加成+5.5%平台费，首100万免费），支持零数据保留和欧盟路由。Portkey是AI控制平面（2026年被Palo Alto收购），置于用户密钥之上，增加治理、提示管理、护栏和可观测性；提供1600+ LLM统一API，按日志计费（Developer免费，Production $49/月），支持HIPAA、SSO、私有部署。两者均可组合使用。","source_name":"OpenRouter：Announcements（RSS）","origin_url":"https://openrouter.ai/blog/insights/openrouter-vs-portkey","discovered_at":"2026-06-20T05:46:01.036Z","rank_on_page":82,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenRouter是托管路由网络，买credits后通过一个API路由至70+供应商，自动故障转移，无需自有密钥；覆盖300+模型（含20+免费），按用量收费（零加成+5.5%平台费，首100万免费），支持零数据保留和欧盟路由。Portkey是AI控制平面（2026年被Palo Alto收购），置于用户密钥之上，增加治理、提示管理、护栏和可观测性；提供1600+ LLM统一API，按日志计费（Developer免费，Production $49/月），支持HIPAA、SSO、私有部署。两者均可组合使用。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

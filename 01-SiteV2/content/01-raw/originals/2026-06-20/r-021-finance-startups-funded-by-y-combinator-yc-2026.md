@@ -1,0 +1,811 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-021
+title: "Finance Startups funded by Y Combinator (YC) 2026"
+original_url: "https://www.ycombinator.com/companies/industry/finance"
+canonical_url: "https://ycombinator.com/companies/industry/finance"
+source_name: "keyword search / Anysearch"
+source_type: funding
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-20T05:50:41.881Z
+language: mixed
+full_text_hash: c5d4e2b65f74f987
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-20/r-021-finance-startups-funded-by-y-combinator-yc-2026.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-20/r-021-finance-startups-funded-by-y-combinator-yc-2026.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 85
+extractor_diagnostics: {"readability_score":85,"text_length":26624,"paragraph_count":133,"sentence_count":174,"boilerplate_hits":0,"symbol_ratio":0.0001,"method":"body-visible-text"}
+has_full_text: true
+content_length: 26624
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c5d4e2b65f74f987","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 8963c2f75fc7985d
+content_hash: 746a49b45eda7234
+semantic_hash: 076ce5d58fd9542d
+duplicate_of: ""
+first_seen_at: "2026-06-20T05:50:41.881Z"
+last_seen_at: 2026-06-20T05:50:41.881Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","Nvidia"],"products":["agents","Agents","agent","MCP","Claude"],"people":[],"industries":["法律 / 法务","金融 / 保险","医疗","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线","定价 / 计费变化","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["2026","16","365","2026\nB","78","5","000","2"],"quotes":[]}
+evidence_seed: {"company_actions":["We integrate with 16+ ERPs including QuickBooks, NetSuite, SAP, Dynamics 365, and Workday. Find out why enterprise teams choose Mod AI at usemod.ai. fintech. / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup","Finance Startups funded by Y Combinator (YC) 2026 | Y Combinator Finance Startups funded by Y Combinator (YC) 2026 June 2026 Browse 78 of the top Finance startups funded by Y Combinator.","We also have a Startup Directory where you can search through over 5,000 companies ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"We integrate with 16+ ERPs including QuickBooks, NetSuite, SAP, Dynamics 365, and Workday. Find out why enterprise teams choose Mod AI at usemod.ai. fintech. / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Finance Startups funded by Y Combinator (YC) 2026 | Y Combinator Finance Startups funded by Y Combinator (YC) 2026 June 2026 Browse 78 of the top Finance startups funded by Y Combinator.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We also have a Startup Directory where you can search through over 5,000 companies .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Foreman W2026 • Active • 2 employees • San Francisco Foreman is the all-in-one AI-powered project management platform built for construction contractors and the trade industry.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Today, contractors run complex businesses on a patchwork of tools that were never designed for construction — estimates in spreadsheets, plans in email, proposals copy-pasted from old Word docs, photos scattered across phones.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Nothing talks to anything else, and the admin work never stops.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Finance Startups funded by Y Combinator (YC) 2026
+
+## clean_text
+
+Finance Startups funded by Y Combinator (YC) 2026 | Y Combinator
+Finance Startups funded by Y Combinator (YC) 2026
+June 2026
+Browse 78 of the top Finance startups funded by Y Combinator.
+We also have a Startup Directory where you can search through over 5,000 companies .
+Foreman W2026
+• Active • 2 employees • San Francisco Foreman is the all-in-one AI-powered project management platform built for construction contractors and the trade industry.
+Today, contractors run complex businesses on a patchwork of tools that were never designed for construction — estimates in spreadsheets, plans in email, proposals copy-pasted from old Word docs, photos scattered across phones. Nothing talks to anything else, and the admin work never stops.
+Foreman replaces that patchwork with a single platform that manages the full lifecycle of a construction job, from first estimate to final invoice. Contractors upload plans, photos, or a project description, and Foreman's AI instantly generates structured takeoffs, scoped estimates, and professional proposals — in minutes, not hours. From there, every customer record, document, permit, photo, change order, and conversation lives in one place, organized around the job.
+The result: contractors spend less time buried in admin and more time building. They bid faster, manage jobs with less chaos, and close projects cleanly — without duct-taping five tools together to do it.
+construction
+artificial-intelligence
+enterprise-software
+scheduling
+finance
+Goldbridge F2025
+• Active • 3 employees Goldbridge is building the financial operating system for the largest asset class in the world – real estate. More than $1T in rent flows through landlord bank accounts annually, with roughly a quarter locked in idle reserves and security deposits – and billions more leaking from unnecessary property expenses. And with $2.5T in real estate loans about to mature in 2027/28, property owners are desperate to boost their income ASAP.
+Goldbridge solves this problem by creating the first AI-powered banking platform for real estate owners. We are backed by Y Combinator and other world-class investors, and our founding team includes a 2x YC founder, former White House advisor, and 100-unit real estate owner/operator with deep industry expertise. Come help us redefine the future of real estate.
+ai
+real-estate
+neobank
+finance
+proptech
+Locus F2025
+• Active • 2 employees We make your agents pay.
+As agents evolve from tools into dependable, autonomous actors, they’ll need the ability to execute open-ended workflows end-to-end.
+This inevitably means payments: accessing paywalled data, transacting for services or with other specialist agents. But autonomy requires guardrails. Businesses and developers will need a way to ensure their agents only spend how much and on what they’re supposed to.
+The machine economy is coming, and Locus (YC F25) is building the connector businesses will need to participate. We connect agents securely to funds, letting you define permissions and limits for every transaction. Each payment is traceable, auditable, and fully reconcilable with your existing financial stack.
+finance
+ai
+Crunched F2025
+• Active • 5 employees Crunched is the Excel AI analyst for power users - in consulting, investment banking, and private equity. It error-checks workbooks end-to-end, builds models from scratch, and handles grunt work like extracting and linking data from IMs to template models - all within Excel so teams can review and iterate as usual.
+Agents struggle with tabular data - getting reliable, multi-step execution over thousands of interlinked formulas, sheets, and ranges is hard. Making Crunched good enough for people who live in Excel means knowing the pain points deeply.
+Michael and Philip has 10,000+ hours in Excel across consulting and finance. Markus and Lars bring deep expertise in scaling AI and enterprise solutions.
+We've had easy access to first customers and are already live with firms across six European countries - we now plan to expand into the US. With >1bn total Excel users, we focus on the top 2%, highest-value Excel users globally.
+We're solving one pain point at a time to create a product that doesn't just look good in a demo but actually works in production.
+Excel is here to stay, but the way experts model is fundamentally changing - with Crunched.
+finance
+analytics
+productivity
+Selfin F2025
+• Active • 2 employees • San Francisco, CA, USA Selfin is developing AI-powered banking. Users can enjoy personalised recommendations and optimisations of their finances by connecting all their financial products on a single platform.
+consumer-finance
+consumer
+neobank
+fintech
+finance
+Mod AI F2025
+• Active • 4 employees • San Francisco We're building the first fully autonomous accounts payable platform.
+Our AI clerks handle your entire AP workflow: invoice processing, GL coding, PO matching, approvals, responding to vendors, fraud detection and reporting. From the moment an invoice hits your inbox to the moment it's paid, no manual steps required.
+We integrate with 16+ ERPs including QuickBooks, NetSuite, SAP, Dynamics 365, and Workday.
+Find out why enterprise teams choose Mod AI at usemod.ai.
+fintech
+artificial-intelligence
+finance
+enterprise
+Serafis S2025
+• Active • 4 employees • San Francisco, CA, USA Serafis is building super-intelligence for financial markets. We mine petabytes of unstructured data to identify narrative inflections before they become consensus. Think building early conviction in Bitcoin (2014), Tesla (2018), or Nvidia (2022).
+We are already live with 12 organizations managing over $70B in capital.
+finance
+saas
+search
+artificial-intelligence
+investing
+ProcIndex S2025
+• Active • 2 employees • San Francisco, CA, USA ProcIndex is a full stack AI accounting firm, with a suite of agents to automate quote to cash, accounts payable and month end close processes end to end.
+ProcIndex connects with your existing ERP, operates in the background while giving you full visibility into the agent actions and powers accounting teams to become 33% more efficient.
+b2b
+finance
+fintech
+artificial-intelligence
+Parsewise P2025
+• Active • 6 employees • London, UK Parsewise provides multi-document processing and analysis that you can embed in your own product.
+Operations teams use our platform for oversight and control over their fleet of AI agents, and our MCP to make Claude work at scale with traceability.
+Tech teams use our API to replace complex processing pipelines resolving values across documents.
+We help customers assess complex risk at scale: manage casualty, specialty, KYC, and financial risks, so teams can act faster and defend their decisions with confidence.
+documents
+api
+insurance
+finance
+artificial-intelligence
+Tejas AI W2025
+• Active • 2 employees • San Francisco, CA, USA Tejas AI eliminates uncertainty, allowing decision-makers to develop and evaluate credit rules more quickly and effectively.
+fintech
+finance
+b2b
+artificial-intelligence
+TamLabs W2025
+• Active • 2 employees • San Francisco, CA, USA TamLabs' agent teams deliver professional work products for experts across law, finance, and consulting with speed and precision.
+legal
+finance
+ai
+enterprise
+workflow-automation
+Trata W2025
+• Active • 6 employees • New York, NY, USA Trata is an AI-powered research desk for hedge funds. We use agents to interview hedge fund analysts, write investment research, and distribute this through a subscription.
+finance
+investing
+b2b
+community
+ai
+Mesh W2025
+• Active • 3 employees • San Francisco, CA, USA Month-end shouldn’t be a race against the clock.
+For most mid-to-enterprise finance teams, accruals are a manual bottleneck. Chasing missing invoices and manually updating spreadsheets can eat up 4+ days of every month-end close.
+Mesh changes the timeline. We automate 90% of the accruals process by capturing real-time usage and service signals directly from your AP inbox, Slack, Teams, and historical journals. We turn fragmented data into audit-ready outputs, so you can stop guessing and start closing.
+See how top teams are accelerating their close by 4+ days at www.usemesh.com
+ai
+finance
+finops
+fintech
+finbar W2025
+• Active • 4 employees • London finbar is the AI investment analyst used by several top-20 (AUM) hedge funds. It automates financial modelling, research, and data analysis so multi-million-dollar decisions can be made 100x faster.
+fintech
+documents
+workflow-automation
+finance
+Keye F2024
+• Active • 3 employees • New York, NY, USA
+Keye is an AI software that lets private equity firms do due diligence for acquisitions faster and more accurately. Our customers can evaluate 10x more deals and fund better companies which leads directly to better returns/more alpha.
+--
+Our system is the first of its kind to instantly generate complex, comprehensive data packs from raw data in any format, directly from the data room. This enables investors to gain an 80% understanding of a potential deal within moments, empowering them to say No to a deal earlier in the process and focus on high-potential opportunities. Traditionally, creating these detailed data packs—like cohort or retention analyses and customer roll-forwards—takes weeks, during which critical details may be overlooked, potentially costing funds millions in missed insights and poor decisions.
+--
+Keye combines cutting-edge AI with deep private equity expertise to deliver powerful, multi-layered insights that go far beyond the simple summarizers and search functions offered by other tools. Our platform dives deep into both quantitative and qualitative due diligence data, offering high-impact analytics crafted specifically for private equity workflows. This isn’t just automation—it’s a purpose-built solution that uncovers actionable insights, fueling smarter decisions and driving true alpha.
+finance
+artificial-intelligence
+ai
+enterprise-software
+investing
+Clarus F2024
+• Active • 2 employees • New York, NY, USA
+finance
+attimet F2024
+• Active • 3 employees • San Francisco, CA, USA
+trading
+finance
+artificial-intelligence
+Blaze S2024
+• Active • 5 employees • Mexico City, CDMX, Mexico Blaze (YC S24) is global Venmo for cross border payments. It's a peer to peer payments app that uses USDC to make payments fast and cheap between any two people anywhere in the world. The founders scaled their last startup to $1M in ARR, studied mathematics and engineering at Duke, NYU, and Cornell, and have led teams at Spotify, Artsy, and Bitpanda. They're live in the US and Mexico, available for download on iOS and Android: https://blaze.money
+crypto-web3
+payments
+fintech
+travel
+finance
+PathPilot S2024
+• Active • 3 employees • San Francisco Today, onboarding, servicing, and collections still depend on large human teams — which means operations scale linearly with loan volume. PathPilot deploys specialized AI agents that handle 60–80% of high-volume operational workflows, turning human-heavy processes into scalable software. These agents operate alongside internal teams — embedded directly into existing systems. This allows lenders to grow loan volume and revenue without proportional headcount growth.
+finance
+ai
+lending
+b2b
+Modus S2024
+• Active • 3 employees Modus helps companies hire and retain only the people they need instead of becoming bloated messes. Modus connects your HRIS, ATS, and analyzes extensive data across your organization so leaders can detect, inspect, and correct their workforce plans - without relying on spreadsheets or complex systems.
+Lin experienced these challenges firsthand as a VP BizOps at HashiCorp, scaling from 100 employees to IPO, while Chris and Amar faced similar issues scaling 40+ person teams as a fractional CTO. They’re motivated by the belief that companies should have the least number of employees possible.
+b2b
+operations
+hr-tech
+finance
+artificial-intelligence
+Sharpe S2024
+• Active • 3 employees • San Francisco, CA, USA Sharpe helps traders go from idea to profit in minutes with AI, bundling petabytes of market data with high-performance infrastructure. Sharpe helped a top 5 quant firm find $10m+ of profit within a few hours of deployment.
+artificial-intelligence
+finance
+analytics
+data-engineering
+big-data
+LedgerUp S2024
+• Active • 5 employees • San Francisco, CA, USA LedgerUp is your AI billing teammate for B2B SaaS, transforming contract-based billing from a chore into a frictionless, revenue-accelerating process. We parse contracts, issue invoices, and collect payments in real-time, all while surfacing actionable analytics, allowing your finance team to escape spreadsheet chaos and focus on strategic growth. Just close deals and let us handle your billing for you.
+billing
+finance
+ai
+Benchify S2024
+• Active • 4 employees • San Francisco, CA, USA Benchify provides an execution layer for healthcare contracts, applying contract logic across audits, claim processing, and optimization. Payments are calculated correctly today, while contract performance becomes measurable and improvable over time.
+artificial-intelligence
+finance
+insurance
+healthcare
+b2b
+Bayesline S2024
+• Active • 3 employees • New York, NY, USA Bayesline is building a GPU-powered financial analytics suite for institutional investors, like hedge funds.
+Clients use our cloud deployed solution to build custom analytics in seconds, having previously been frustrated with off the shelf solutions that don't generate any alpha. What used to take weeks or months now happens near instantly.
+Sebastian, CFA (ex Bloomberg Quant & AI Research) and Misha, PhD (ex BlackRock Managing Director) met while working at BlackRock in 2016. With a combined 20 years of experience in the space they set out to change the way the industry uses analytics - from one size doesn't fit all to truly tailored to clients' needs.
+finance
+fintech
+analytics
+b2b
+ai
+Elevate S2024
+• Active • 3 employees • New York, NY, USA Elevate is bringing AI to private equity-backed roll-ups.
+For example, one of our customers is Guardian Restoration Partners, which is backed by Alpine Investors, the leading roll-up focused private equity firm. In three months, we integrated 10 acquisitions and enabled them to pilot AI agents built on top of our data warehouse.
+We know this problem personally. Before Elevate, Scott was a Vice President at a $15B private equity firm where he was leading a roll-up. Steve and Jeff are both software engineers with backgrounds across finance, big tech, and start-ups. The founding team has been friends for over a decade from their Duke undergraduate days.
+aiops
+b2b
+finance
+automation
+artificial-intelligence
+Kenley S2024
+• Active • 6 employees • London
+finance
+productivity
+generative-ai
+artificial-intelligence
+FINNY AI S2024
+• Active • 28 employees • New York, NY, USA FINNY is the AI-native organic growth engine for financial advisors, focused on helping them grow their practices
+Our goal is to empower financial advisors to reach the right potential clients at the right time, with the right message. We are building a world where anyone who wants financial advice can connect with the right advisor, while helping advisors ensure organic growth, the most existential problem advisors face.
+The organic growth process has historically been highly inefficient and full of noise. Advisors often waste 60+ hours of business development to convert 1 new client.
+At FINNY, we are certain we can do better with AI. With our tool, advisors can:
+- Identify prospects within their target niche, aggregating thousands of data points per lead
+- Prioritize prospects based on their predicted likelihood of converting using F-Score, a score unique to each advisor and prospect pair
+- Automate the outreach and meeting scheduling with their high priority prospects
+In essence, FINNY does all the rote work for the advisors, letting them focus on what actually matters: the client relationship.
+fintech
+sales-enablement
+machine-learning
+finance
+automation
+Clarum W2024
+• Active • 2 employees • San Francisco, CA, USA Clarum automates diligence, monitoring, and reporting for private market investors. Our AI agents learn how each firm works and automate their process end to end. Everything is individualized (checklists, templates, scoring models) and adapts as your process changes.
+Clarum also acts as a self-updating knowledge base across every document your firm has ever seen, connecting dots no analyst could.
+finance
+fintech
+b2b
+saas
+ai
+Event Horizon Labs W2024
+• Active • 4 employees • San Francisco, CA, USA We are scaling autonomous research, Markets are our verification loop: agents turn hypotheses into strategies, test them, and compound what survives.
+finance
+investing
+artificial-intelligence
+Model ML W2024
+• Active • 80 employees • London, UK Team:
+Chaz: Founder of Fat Llama YC S17 - Acquired by Hygglo. Responsible for Business and Sales
+Arns: Founder of Fancy S20 - Acquired by Gopuff, Responsible for tech and product.
+finance
+b2b
+saas
+artificial-intelligence
+OmniAI W2024
+• Active • 5 employees • San Francisco, CA, USA At Omni, we’re rebuilding how banks and fintechs lend to small businesses.
+There are 34 million small businesses in the U.S., yet getting a loan still means weeks of emails, PDFs, and paperwork. Every deal starts with a pile of documents — tax returns, bank statements, corporate filings, and contracts that no one wants to read but everyone depends on.
+Omni is changing that. We work directly with lenders to modernize the entire stack, from document intake to underwriting, and we’re doing it with a small, fast-moving team that ships real systems used in production every day.
+documents
+finance
+automation
+ai
+Accend S2023
+• Active • 18 employees Accend helps commercial banks and fintechs underwrite business customers faster, win more deals and increase revenue. We provide an end-to-end platform to automate document intake, financial statement / tax spreading, cash flow modeling, credit memos and portfolio management, with audit-ready AI and human-in-the-loop accu
+
+## full_text
+
+Finance Startups funded by Y Combinator (YC) 2026 | Y Combinator
+Finance Startups funded by Y Combinator (YC) 2026
+June 2026
+Browse 78 of the top Finance startups funded by Y Combinator.
+We also have a Startup Directory where you can search through over 5,000 companies .
+Foreman W2026
+• Active • 2 employees • San Francisco Foreman is the all-in-one AI-powered project management platform built for construction contractors and the trade industry.
+Today, contractors run complex businesses on a patchwork of tools that were never designed for construction — estimates in spreadsheets, plans in email, proposals copy-pasted from old Word docs, photos scattered across phones. Nothing talks to anything else, and the admin work never stops.
+Foreman replaces that patchwork with a single platform that manages the full lifecycle of a construction job, from first estimate to final invoice. Contractors upload plans, photos, or a project description, and Foreman's AI instantly generates structured takeoffs, scoped estimates, and professional proposals — in minutes, not hours. From there, every customer record, document, permit, photo, change order, and conversation lives in one place, organized around the job.
+The result: contractors spend less time buried in admin and more time building. They bid faster, manage jobs with less chaos, and close projects cleanly — without duct-taping five tools together to do it.
+construction
+artificial-intelligence
+enterprise-software
+scheduling
+finance
+Goldbridge F2025
+• Active • 3 employees Goldbridge is building the financial operating system for the largest asset class in the world – real estate. More than $1T in rent flows through landlord bank accounts annually, with roughly a quarter locked in idle reserves and security deposits – and billions more leaking from unnecessary property expenses. And with $2.5T in real estate loans about to mature in 2027/28, property owners are desperate to boost their income ASAP.
+Goldbridge solves this problem by creating the first AI-powered banking platform for real estate owners. We are backed by Y Combinator and other world-class investors, and our founding team includes a 2x YC founder, former White House advisor, and 100-unit real estate owner/operator with deep industry expertise. Come help us redefine the future of real estate.
+ai
+real-estate
+neobank
+finance
+proptech
+Locus F2025
+• Active • 2 employees We make your agents pay.
+As agents evolve from tools into dependable, autonomous actors, they’ll need the ability to execute open-ended workflows end-to-end.
+This inevitably means payments: accessing paywalled data, transacting for services or with other specialist agents. But autonomy requires guardrails. Businesses and developers will need a way to ensure their agents only spend how much and on what they’re supposed to.
+The machine economy is coming, and Locus (YC F25) is building the connector businesses will need to participate. We connect agents securely to funds, letting you define permissions and limits for every transaction. Each payment is traceable, auditable, and fully reconcilable with your existing financial stack.
+finance
+ai
+Crunched F2025
+• Active • 5 employees Crunched is the Excel AI analyst for power users - in consulting, investment banking, and private equity. It error-checks workbooks end-to-end, builds models from scratch, and handles grunt work like extracting and linking data from IMs to template models - all within Excel so teams can review and iterate as usual.
+Agents struggle with tabular data - getting reliable, multi-step execution over thousands of interlinked formulas, sheets, and ranges is hard. Making Crunched good enough for people who live in Excel means knowing the pain points deeply.
+Michael and Philip has 10,000+ hours in Excel across consulting and finance. Markus and Lars bring deep expertise in scaling AI and enterprise solutions.
+We've had easy access to first customers and are already live with firms across six European countries - we now plan to expand into the US. With >1bn total Excel users, we focus on the top 2%, highest-value Excel users globally.
+We're solving one pain point at a time to create a product that doesn't just look good in a demo but actually works in production.
+Excel is here to stay, but the way experts model is fundamentally changing - with Crunched.
+finance
+analytics
+productivity
+Selfin F2025
+• Active • 2 employees • San Francisco, CA, USA Selfin is developing AI-powered banking. Users can enjoy personalised recommendations and optimisations of their finances by connecting all their financial products on a single platform.
+consumer-finance
+consumer
+neobank
+fintech
+finance
+Mod AI F2025
+• Active • 4 employees • San Francisco We're building the first fully autonomous accounts payable platform.
+Our AI clerks handle your entire AP workflow: invoice processing, GL coding, PO matching, approvals, responding to vendors, fraud detection and reporting. From the moment an invoice hits your inbox to the moment it's paid, no manual steps required.
+We integrate with 16+ ERPs including QuickBooks, NetSuite, SAP, Dynamics 365, and Workday.
+Find out why enterprise teams choose Mod AI at usemod.ai.
+fintech
+artificial-intelligence
+finance
+enterprise
+Serafis S2025
+• Active • 4 employees • San Francisco, CA, USA Serafis is building super-intelligence for financial markets. We mine petabytes of unstructured data to identify narrative inflections before they become consensus. Think building early conviction in Bitcoin (2014), Tesla (2018), or Nvidia (2022).
+We are already live with 12 organizations managing over $70B in capital.
+finance
+saas
+search
+artificial-intelligence
+investing
+ProcIndex S2025
+• Active • 2 employees • San Francisco, CA, USA ProcIndex is a full stack AI accounting firm, with a suite of agents to automate quote to cash, accounts payable and month end close processes end to end.
+ProcIndex connects with your existing ERP, operates in the background while giving you full visibility into the agent actions and powers accounting teams to become 33% more efficient.
+b2b
+finance
+fintech
+artificial-intelligence
+Parsewise P2025
+• Active • 6 employees • London, UK Parsewise provides multi-document processing and analysis that you can embed in your own product.
+Operations teams use our platform for oversight and control over their fleet of AI agents, and our MCP to make Claude work at scale with traceability.
+Tech teams use our API to replace complex processing pipelines resolving values across documents.
+We help customers assess complex risk at scale: manage casualty, specialty, KYC, and financial risks, so teams can act faster and defend their decisions with confidence.
+documents
+api
+insurance
+finance
+artificial-intelligence
+Tejas AI W2025
+• Active • 2 employees • San Francisco, CA, USA Tejas AI eliminates uncertainty, allowing decision-makers to develop and evaluate credit rules more quickly and effectively.
+fintech
+finance
+b2b
+artificial-intelligence
+TamLabs W2025
+• Active • 2 employees • San Francisco, CA, USA TamLabs' agent teams deliver professional work products for experts across law, finance, and consulting with speed and precision.
+legal
+finance
+ai
+enterprise
+workflow-automation
+Trata W2025
+• Active • 6 employees • New York, NY, USA Trata is an AI-powered research desk for hedge funds. We use agents to interview hedge fund analysts, write investment research, and distribute this through a subscription.
+finance
+investing
+b2b
+community
+ai
+Mesh W2025
+• Active • 3 employees • San Francisco, CA, USA Month-end shouldn’t be a race against the clock.
+For most mid-to-enterprise finance teams, accruals are a manual bottleneck. Chasing missing invoices and manually updating spreadsheets can eat up 4+ days of every month-end close.
+Mesh changes the timeline. We automate 90% of the accruals process by capturing real-time usage and service signals directly from your AP inbox, Slack, Teams, and historical journals. We turn fragmented data into audit-ready outputs, so you can stop guessing and start closing.
+See how top teams are accelerating their close by 4+ days at www.usemesh.com
+ai
+finance
+finops
+fintech
+finbar W2025
+• Active • 4 employees • London finbar is the AI investment analyst used by several top-20 (AUM) hedge funds. It automates financial modelling, research, and data analysis so multi-million-dollar decisions can be made 100x faster.
+fintech
+documents
+workflow-automation
+finance
+Keye F2024
+• Active • 3 employees • New York, NY, USA
+Keye is an AI software that lets private equity firms do due diligence for acquisitions faster and more accurately. Our customers can evaluate 10x more deals and fund better companies which leads directly to better returns/more alpha.
+--
+Our system is the first of its kind to instantly generate complex, comprehensive data packs from raw data in any format, directly from the data room. This enables investors to gain an 80% understanding of a potential deal within moments, empowering them to say No to a deal earlier in the process and focus on high-potential opportunities. Traditionally, creating these detailed data packs—like cohort or retention analyses and customer roll-forwards—takes weeks, during which critical details may be overlooked, potentially costing funds millions in missed insights and poor decisions.
+--
+Keye combines cutting-edge AI with deep private equity expertise to deliver powerful, multi-layered insights that go far beyond the simple summarizers and search functions offered by other tools. Our platform dives deep into both quantitative and qualitative due diligence data, offering high-impact analytics crafted specifically for private equity workflows. This isn’t just automation—it’s a purpose-built solution that uncovers actionable insights, fueling smarter decisions and driving true alpha.
+finance
+artificial-intelligence
+ai
+enterprise-software
+investing
+Clarus F2024
+• Active • 2 employees • New York, NY, USA
+finance
+attimet F2024
+• Active • 3 employees • San Francisco, CA, USA
+trading
+finance
+artificial-intelligence
+Blaze S2024
+• Active • 5 employees • Mexico City, CDMX, Mexico Blaze (YC S24) is global Venmo for cross border payments. It's a peer to peer payments app that uses USDC to make payments fast and cheap between any two people anywhere in the world. The founders scaled their last startup to $1M in ARR, studied mathematics and engineering at Duke, NYU, and Cornell, and have led teams at Spotify, Artsy, and Bitpanda. They're live in the US and Mexico, available for download on iOS and Android: https://blaze.money
+crypto-web3
+payments
+fintech
+travel
+finance
+PathPilot S2024
+• Active • 3 employees • San Francisco Today, onboarding, servicing, and collections still depend on large human teams — which means operations scale linearly with loan volume. PathPilot deploys specialized AI agents that handle 60–80% of high-volume operational workflows, turning human-heavy processes into scalable software. These agents operate alongside internal teams — embedded directly into existing systems. This allows lenders to grow loan volume and revenue without proportional headcount growth.
+finance
+ai
+lending
+b2b
+Modus S2024
+• Active • 3 employees Modus helps companies hire and retain only the people they need instead of becoming bloated messes. Modus connects your HRIS, ATS, and analyzes extensive data across your organization so leaders can detect, inspect, and correct their workforce plans - without relying on spreadsheets or complex systems.
+Lin experienced these challenges firsthand as a VP BizOps at HashiCorp, scaling from 100 employees to IPO, while Chris and Amar faced similar issues scaling 40+ person teams as a fractional CTO. They’re motivated by the belief that companies should have the least number of employees possible.
+b2b
+operations
+hr-tech
+finance
+artificial-intelligence
+Sharpe S2024
+• Active • 3 employees • San Francisco, CA, USA Sharpe helps traders go from idea to profit in minutes with AI, bundling petabytes of market data with high-performance infrastructure. Sharpe helped a top 5 quant firm find $10m+ of profit within a few hours of deployment.
+artificial-intelligence
+finance
+analytics
+data-engineering
+big-data
+LedgerUp S2024
+• Active • 5 employees • San Francisco, CA, USA LedgerUp is your AI billing teammate for B2B SaaS, transforming contract-based billing from a chore into a frictionless, revenue-accelerating process. We parse contracts, issue invoices, and collect payments in real-time, all while surfacing actionable analytics, allowing your finance team to escape spreadsheet chaos and focus on strategic growth. Just close deals and let us handle your billing for you.
+billing
+finance
+ai
+Benchify S2024
+• Active • 4 employees • San Francisco, CA, USA Benchify provides an execution layer for healthcare contracts, applying contract logic across audits, claim processing, and optimization. Payments are calculated correctly today, while contract performance becomes measurable and improvable over time.
+artificial-intelligence
+finance
+insurance
+healthcare
+b2b
+Bayesline S2024
+• Active • 3 employees • New York, NY, USA Bayesline is building a GPU-powered financial analytics suite for institutional investors, like hedge funds.
+Clients use our cloud deployed solution to build custom analytics in seconds, having previously been frustrated with off the shelf solutions that don't generate any alpha. What used to take weeks or months now happens near instantly.
+Sebastian, CFA (ex Bloomberg Quant & AI Research) and Misha, PhD (ex BlackRock Managing Director) met while working at BlackRock in 2016. With a combined 20 years of experience in the space they set out to change the way the industry uses analytics - from one size doesn't fit all to truly tailored to clients' needs.
+finance
+fintech
+analytics
+b2b
+ai
+Elevate S2024
+• Active • 3 employees • New York, NY, USA Elevate is bringing AI to private equity-backed roll-ups.
+For example, one of our customers is Guardian Restoration Partners, which is backed by Alpine Investors, the leading roll-up focused private equity firm. In three months, we integrated 10 acquisitions and enabled them to pilot AI agents built on top of our data warehouse.
+We know this problem personally. Before Elevate, Scott was a Vice President at a $15B private equity firm where he was leading a roll-up. Steve and Jeff are both software engineers with backgrounds across finance, big tech, and start-ups. The founding team has been friends for over a decade from their Duke undergraduate days.
+aiops
+b2b
+finance
+automation
+artificial-intelligence
+Kenley S2024
+• Active • 6 employees • London
+finance
+productivity
+generative-ai
+artificial-intelligence
+FINNY AI S2024
+• Active • 28 employees • New York, NY, USA FINNY is the AI-native organic growth engine for financial advisors, focused on helping them grow their practices
+Our goal is to empower financial advisors to reach the right potential clients at the right time, with the right message. We are building a world where anyone who wants financial advice can connect with the right advisor, while helping advisors ensure organic growth, the most existential problem advisors face.
+The organic growth process has historically been highly inefficient and full of noise. Advisors often waste 60+ hours of business development to convert 1 new client.
+At FINNY, we are certain we can do better with AI. With our tool, advisors can:
+- Identify prospects within their target niche, aggregating thousands of data points per lead
+- Prioritize prospects based on their predicted likelihood of converting using F-Score, a score unique to each advisor and prospect pair
+- Automate the outreach and meeting scheduling with their high priority prospects
+In essence, FINNY does all the rote work for the advisors, letting them focus on what actually matters: the client relationship.
+fintech
+sales-enablement
+machine-learning
+finance
+automation
+Clarum W2024
+• Active • 2 employees • San Francisco, CA, USA Clarum automates diligence, monitoring, and reporting for private market investors. Our AI agents learn how each firm works and automate their process end to end. Everything is individualized (checklists, templates, scoring models) and adapts as your process changes.
+Clarum also acts as a self-updating knowledge base across every document your firm has ever seen, connecting dots no analyst could.
+finance
+fintech
+b2b
+saas
+ai
+Event Horizon Labs W2024
+• Active • 4 employees • San Francisco, CA, USA We are scaling autonomous research, Markets are our verification loop: agents turn hypotheses into strategies, test them, and compound what survives.
+finance
+investing
+artificial-intelligence
+Model ML W2024
+• Active • 80 employees • London, UK Team:
+Chaz: Founder of Fat Llama YC S17 - Acquired by Hygglo. Responsible for Business and Sales
+Arns: Founder of Fancy S20 - Acquired by Gopuff, Responsible for tech and product.
+finance
+b2b
+saas
+artificial-intelligence
+OmniAI W2024
+• Active • 5 employees • San Francisco, CA, USA At Omni, we’re rebuilding how banks and fintechs lend to small businesses.
+There are 34 million small businesses in the U.S., yet getting a loan still means weeks of emails, PDFs, and paperwork. Every deal starts with a pile of documents — tax returns, bank statements, corporate filings, and contracts that no one wants to read but everyone depends on.
+Omni is changing that. We work directly with lenders to modernize the entire stack, from document intake to underwriting, and we’re doing it with a small, fast-moving team that ships real systems used in production every day.
+documents
+finance
+automation
+ai
+Accend S2023
+• Active • 18 employees Accend helps commercial banks and fintechs underwrite business customers faster, win more deals and increase revenue. We provide an end-to-end platform to automate document intake, financial statement / tax spreading, cash flow modeling, credit memos and portfolio management, with audit-ready AI and human-in-the-loop accuracy. Companies like Corpay, Brex, Rippling, Rho, Column, Settle, and many others have reduced application processing time by 80% with Accend, significantly enhancing their credit underwriting efficiency
+Before starting Accend, the founders led Product & Engineering on the Risk team at Brex as well as at Deutsche Bank and Credit Suisse so they have firsthand experienced issues with operational efficiency in credit/underwriting teams. Accend has raised a $3.2M seed round from Y Combinator, Adverb Ventures, General Catalyst and 645 Ventures.
+ai
+finance
+fintech
+generative-ai
+Casca S2023
+• Active • 28 employees • San Francisco, CA, USA Casca is building AGI for Banking.
+Our first product is an AI-native platform transforming small business lending by enabling banks and lenders to originate 10x more loans with 90% less manual effort. We’ve found product market fit already serving top 10 US banks and are scaling our team very quickly.
+Small businesses are the heart of the American economy. Many banks shy away from providing funding because of the manual effort in pursuing those deals. With us, that changes. We unlock affordable, quick bank funding for the 30M+ small businesses in the US who would otherwise be subject to the high interest rates from predatory online lenders.
+We are a world-class team of banking & AI experts from Stanford, MIT & Y Combinator. We like to win and we know that the only thing between us and the title is our own ability to improve every day.
+finance
+machine-learning
+conversational-banking
+fintech
+ai
+VectorShift S2023
+• Active • 30 employees • New York City VectorShift is the AI operating system for private market investors.VectorShift is the AI operating system for private market investors. We capture a firm's institutional knowledge across every deal, decision, and diligence finding, and put it to work across data room analysis, IC memos, portfolio company monitoring, and LP reporting.
+generative-ai
+artificial-intelligence
+finance
+Cedalio S2023
+• Active • 6 employees • San Francisco, CA, USA Cedalio is the AI agent platform for the Office of the CFO. We automate procurement, AP, and the data flows behind them — from invoice intake to 3-way match to payment — so finance teams stop doing the work and start governing it.
+data-engineering
+ai
+finance
+fintech
+Palomma W2023
+• Active • 8 employees • Medellín, Medellin, Antioquia, Colombia Palomma is building the AI-native bank for real estate in LatAm. We start with AI agents for property managers (leasing, sales, collections), then add payments to own the flow of rent. This unlocks credit and insurance products to monetize on the $235Bn of rental flows from tenants and landlords.
+ai
+finance
+payments
+b2b
+saas
+Dataglade W2023
+• Active • 2 employees • New York, NY, USA Dataglade is the smart way to research stocks. Our AI generates clear analyses and financial models for any public company, and our fundamental data fulfills almost every research need. We save investors hours every day by eliminating the need to manually dig through financial filings. Customers trust our reports because every number is backed by citations to our proprietary financial data warehouse. We inform $1+ billion of trades every day, and we’re just getting started. Check us out at dataglade.com.
+generative-ai
+finance
+fintech
+saas
+ai
+Chart W2023
+• Active • 3 employees • San Francisco Chart's Unified Tax Record API provides a direct bridge to tax records from the IRS, state tax agencies, and major tax preparation platforms such as TurboTax and H&R Block.
+finops
+finance
+fintech
+Alphawatch AI W2023
+• Active • 10 employees • San Francisco Alphawatch AI offers a secure document agent that allows you to manipulate and convert PDF and Word files, along with your internal knowledge in your knowledge base.
+ai-assistant
+finance
+workflow-automation
+generative-ai
+enterprise
+Unstatiq W2023
+• Active • 2 employees • San Francisco, CA, USA There are billions of dollars of hospital waste caused by inefficient, disconnected supply chains and finance data. Today, clinics are facing unprecedented backorders, recalls, and purchase verticals (medical devices, SaaS, security, commodities). We are building a single product to 10x a fragmented industry with each tool built almost 20 years ago.
+b2b
+health-tech
+supply-chain
+finance
+Mantys W2023
+• Active • 12 employees • Bengaluru, Karnataka, India Mantys helps SaaS companies calculate and forecast their ARR accurately in real time without using multiple spreadsheets. For example, NextBillion uses Mantys to pull data from HubSpot and Chargebee and create real-time views of their Contracted ARR, Billed ARR, Churn, and forecasted ARR
+b2b
+saas
+india
+finance
+Metal W2023
+• Active • 17 employees • New York, NY, USA Metal is building the world’s most powerful intelligence platform for private market investors. We support deal teams throughout the investment lifecycle - from market research and sourcing to diligence and post-close. Top-tier funds like Berkshire Partners and Clearlake Capital already rely on Metal to move faster and make smarter investment decisions - and we’re just getting started.
+If you're excited to transform how private investors work, collaborate, and make decisions, we’d love to meet you.
+artificial-intelligence
+investing
+saas
+finance
+fintech
+Benchmark W2023
+• Active • 7 employees • New York, NY, USA Benchmark is the trusted AI platform for investment firms. Today, leading firms use Benchmark to screen deals, extract insights from unstructured data, and automate workflows. Our platform combines cutting-edge AI with deep industry expertise to help investment firms make smarter, faster decisions across their entire deal lifecycle.
+finance
+artificial-intelligence
+ai-assistant
+fintech
+Retape W2023
+• Active • 3 employees • Bengaluru Automating call center operations at debt settlement companies, with AI that plugs into CRM, identifies debts to settle, and negotiates with creditors over the phone.
+b2b
+saas
+generative-ai
+finance
+Numeral W2023
+• Active • 100 employees • San Francisco, CA, USA Numeral is the fastest, easiest way to stay compliant with US sales tax and global VAT.
+Trusted by 3,000+ businesses, including Eight Sleep, Ridge, and Manus, our end-to-end platform keeps our customers compliant wherever they sell, with registrations, filings, calculations, and ongoing compliance support.
+Numeral’s AI-native solution covers more than 70 countries and tens of thousands of jurisdictions and is built for accuracy and scale.
+e-commerce
+saas
+finance
+fintech
+compliance
+Mulligan W2023
+• Active • 4 employees • San Francisco, CA, USA Mulligan is an end-to-end AI automation platform for commercial insurance brokers. Automates quoting, policy checking, proposals and more by up to 90%.
+Start for free at usemulligan.com
+workflow-automation
+documents
+generative-ai
+insurance
+finance
+Capix S2022
+• Active • 5 employees • New York, NY, USA Capix makes finding private equity firms fast and accurate by aggregating and enriching data from multiple sources into one customizable platform.
+fintech
+sales-enablement
+finance
+Rima AI (formerly Garage) S2022
+• Active • 5 employees • Austin, TX, USA Rima helps accountants automate document and spreadsheet work with accuracy and cell-level audit tracking.
+For accountants that deal with messy docs and spend their time in Excel, Rima enables them to build workflows in natural language to extract and process financial data from PDFs or ERPs into their Excel templates and reconcile their spreadsheets in minutes. Accountants build these workflows once and our agents do the work for them going forward, preserving their institutional memory and know-how.
+artificial-intelligence
+finance
+b2b
+analytics
+Levers S2022
+• Active • 8 employees • Jeddah Saudi Arabia Levers is an accounts receivable management SaaS that helps B2B companies reduce overdue payments, accelerate cash collection, and boost cashflow. Our software integrates with your accounting system and streamlines your AR process using personalized reminders, cross-team collaboration tools, collection performance analytics, and more.
+saas
+finance
+Stock Unlock W2022
+• Active • 8 employees • New York, NY, USA Stock Unlock is an investment education and analysis platform, built by retail investors, for retail investors. We make it easy for noobies to start their investment journey, and save time for the pros.
+We are building THE place for investors to learn, grow, and invest confidently.
+fintech
+investing
+saas
+finance
+Loading more companies...
+Hottest Startup Categories
+B2B Startups in San Francisco
+Fintech Startups in New York
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 85
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":85,"text_length":26624,"paragraph_count":133,"sentence_count":174,"boilerplate_hits":0,"symbol_ratio":0.0001,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   We integrate with 16+ ERPs including QuickBooks, NetSuite, SAP, Dynamics 365, and Workday. Find out why enterprise teams choose Mod AI at usemod.ai. fintech. / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Finance Startups funded by Y Combinator (YC) 2026 | Y Combinator Finance Startups funded by Y Combinator (YC) 2026 June 2026 Browse 78 of the top Finance startups funded by Y Combinator.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   We also have a Startup Directory where you can search through over 5,000 companies .
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Foreman W2026 • Active • 2 employees • San Francisco Foreman is the all-in-one AI-powered project management platform built for construction contractors and the trade industry.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Today, contractors run complex businesses on a patchwork of tools that were never designed for construction — estimates in spreadsheets, plans in email, proposals copy-pasted from old Word docs, photos scattered across phones.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Nothing talks to anything else, and the admin work never stops.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Nvidia
+- products: agents, Agents, agent, MCP, Claude
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 医疗, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线, 定价 / 计费变化, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 2026, 16, 365, 2026
+B, 78, 5, 000, 2
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: We integrate with 16+ ERPs including QuickBooks, NetSuite, SAP, Dynamics 365, and Workday. Find out why enterprise teams choose Mod AI at usemod.ai. fintech. / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup / Finance Startups funded by Y Combinator (YC) 2026 | Y Combinator Finance Startups funded by Y Combinator (YC) 2026 June 2026 Browse 78 of the top Finance startups funded by Y Combinator. / We also have a Startup Directory where you can search through over 5,000 companies .
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+We integrate with 16+ ERPs including QuickBooks, NetSuite, SAP, Dynamics 365, and Workday. Find out why enterprise teams choose Mod AI at usemod.ai. fintech. / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

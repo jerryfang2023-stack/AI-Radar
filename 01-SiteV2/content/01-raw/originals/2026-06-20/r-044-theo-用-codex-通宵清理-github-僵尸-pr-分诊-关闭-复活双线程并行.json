@@ -1,0 +1,268 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-044",
+  "title": "Theo 用 Codex 通宵清理 GitHub 僵尸 PR：分诊、关闭、复活双线程并行",
+  "original_url": "https://x.com/AYi_AInotes/status/2068004761618501802",
+  "canonical_url": "https://x.com/AYi_AInotes/status/2068004761618501802",
+  "source_name": "X：阿易 AI Notes (@AYi_AInotes)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "community_feedback",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-06-19T16:15:31.000Z",
+  "collected_at": "2026-06-20T05:50:41.999Z",
+  "language": "mixed",
+  "full_text": "Post\nLog in Sign up\nPost\nAYi\n@AYi_AInotes\n卧槽看完这个帖子我真的惊呆了，\nTheo让Codex通宵打扫GitHub的僵尸PR坟场，自己踏踏实实睡了一整晚，\n我把他这套工作流拆出来了，大家可以直接抄作业，\n我翻了下评论区，让 Codex 通宵清理 GitHub 僵尸 PR 这件事，好多人只看到了自动关 PR 的爽感，\n其实真正值钱的是——每个被复活的 PR 同时跑了两个线程，\n一个 Build 线程负责写代码、更新、修复冲突，\n一个 Review 线程负责审查代码，\n相当于给每个任务配了一个写手和一个审稿人，单点幻觉风险被结构性降低了，\n我把这套玩法拆成三步，现在就能抄：\n→ Triage 分诊：让 AI 先把所有 open PR 过一遍，判断哪些没用、哪些有价值但过时了，这是最耗人类脑力的前置步骤，现在被自动化了\n→ 关掉无用的：没意义的直接关，不用纠结\n→ 复活有价值的：给每个还剩一口气的 PR 分配双线程并行推进，人类只在关键节点看一眼\n这真的不是简单的工具升级了兄弟们，把仓库维护从一个人的拖延症，变成了一套 agent 排班制度，真他么妙啊，\n你睡觉，它上班，你醒来只看决策就行了！\n快去看看你的 GitHub 仓库里有没有压了三年的僵尸 PR，今晚扔给 agent 试试 👇\nTheo - t3.gg\n@theo\nJun 18\nI underestimated how cool this workflow is.\nHad Codex go through a bunch of stale PRs last night. Closed all the useless ones, revived all the out of date ones.\nEach \"revived\" pr got a thread to build it and a 2nd to review it.\n4:15 PM · Jun 19, 2026 4.4K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 16\nRead 4 replies",
+  "clean_text": "Post\nLog in Sign up\nPost\nAYi\n@AYi_AInotes\n卧槽看完这个帖子我真的惊呆了，\nTheo让Codex通宵打扫GitHub的僵尸PR坟场，自己踏踏实实睡了一整晚，\n我把他这套工作流拆出来了，大家可以直接抄作业，\n我翻了下评论区，让 Codex 通宵清理 GitHub 僵尸 PR 这件事，好多人只看到了自动关 PR 的爽感，\n其实真正值钱的是——每个被复活的 PR 同时跑了两个线程，\n一个 Build 线程负责写代码、更新、修复冲突，\n一个 Review 线程负责审查代码，\n相当于给每个任务配了一个写手和一个审稿人，单点幻觉风险被结构性降低了，\n我把这套玩法拆成三步，现在就能抄：\n→ Triage 分诊：让 AI 先把所有 open PR 过一遍，判断哪些没用、哪些有价值但过时了，这是最耗人类脑力的前置步骤，现在被自动化了\n→ 关掉无用的：没意义的直接关，不用纠结\n→ 复活有价值的：给每个还剩一口气的 PR 分配双线程并行推进，人类只在关键节点看一眼\n这真的不是简单的工具升级了兄弟们，把仓库维护从一个人的拖延症，变成了一套 agent 排班制度，真他么妙啊，\n你睡觉，它上班，你醒来只看决策就行了！\n快去看看你的 GitHub 仓库里有没有压了三年的僵尸 PR，今晚扔给 agent 试试 👇\nTheo - t3.gg\n@theo\nJun 18\nI underestimated how cool this workflow is.\nHad Codex go through a bunch of stale PRs last night. Closed all the useless ones, revived all the out of date ones.\nEach \"revived\" pr got a thread to build it and a 2nd to review it.\n4:15 PM · Jun 19, 2026 4.4K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 16\nRead 4 replies",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-20/r-044-theo-用-codex-通宵清理-github-僵尸-pr-分诊-关闭-复活双线程并行.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-20/r-044-theo-用-codex-通宵清理-github-僵尸-pr-分诊-关闭-复活双线程并行.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 71,
+  "extractor_diagnostics": {
+    "readability_score": 71,
+    "text_length": 2767,
+    "paragraph_count": 19,
+    "sentence_count": 5,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0249,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 2767,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "8eb5793ce86f1965",
+    "missing": []
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "high",
+  "community_name": "X：阿易 AI Notes (@AYi_AInotes)",
+  "capture_scope": "visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Theo 用 Codex 通宵清理 GitHub 僵尸 PR：分诊、关闭、复活双线程并行",
+    "discovery_summary": "开发者 Theo 让 Codex 通宵处理 GitHub 仓库中过时的 PR：自动分诊判断价值，关闭无用的，复活过时的。每个被复活的 PR 同时运行两个线程--Build 线程负责修复冲突和更新代码，Review 线程负责审查代码，形成写手+审稿人的双保险，降低单点幻觉风险。人类只需在关键节点做决策。工作流将仓库维护从个人拖延症转变为 agent 排班制度，实现\"睡觉时自动干活，醒来只看决策\"。主推文作者拆解出三步：Triage 分诊、关闭无用、复活并行推进，可直接复制使用。",
+    "source_name": "X：阿易 AI Notes (@AYi_AInotes)",
+    "origin_url": "https://x.com/AYi_AInotes/status/2068004761618501802",
+    "discovered_at": "2026-06-20T05:46:01.042Z",
+    "rank_on_page": 103,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "5d5a4a286860b93e",
+  "content_hash": "8eb5793ce86f1965",
+  "full_text_hash": "8eb5793ce86f1965",
+  "semantic_hash": "9f47195d79a5abdc",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-19T16:15:31.000Z",
+  "last_seen_at": "2026-06-20T05:50:41.999Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "开发者 Theo 让 Codex 通宵处理 GitHub 仓库中过时的 PR：自动分诊判断价值，关闭无用的，复活过时的。每个被复活的 PR 同时运行两个线程--Build 线程负责修复冲突和更新代码，Review 线程负责审查代码，形成写手+审稿人的双保险，降低单点幻觉风险。人类只需在关键节点做决策。工作流将仓库维护从个人拖延症转变为 agent 排班制度，实现\"睡觉时自动干活，醒来只看决策\"。主推文作者拆解出三步：Triage 分诊、关闭无用、复活并行推进，可直接复制使用。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "Post Log in Sign up Post AYi @AYi_AInotes 卧槽看完这个帖子我真的惊呆了， Theo让Codex通宵打扫GitHub的僵尸PR坟场，自己踏踏实实睡了一整晚， 我把他这套工作流拆出来了，大家可以直接抄作业， 我翻了下评论区，让 Codex 通宵清理 GitHub 僵尸 PR 这件事，好多人只看到了自动关 PR 的爽感， 其实真正值钱的是——每个被复活的 PR 同时跑了两个线程， 一个 Build 线程负责写代码、更新、修复冲突， 一个 Review 线程负责审查代码， 相当于给每个任务配了一个写手和一个审稿人，单点幻觉风险被结构性降低了， 我把这套玩法拆成三步，现在就能抄： → Triage 分诊：让 AI 先把所有 open PR 过一遍，判断哪些没用、哪些有价值但过时了，这是最耗人类脑力的前置步骤，现在被自动化了 → 关掉无用的：没意义的直接关，不用纠结 → 复活有价值的：给每个还剩一口气的 PR 分配双线程并行推进，人类只在关键节点看一眼 这真的不是简单的工具升级了兄弟们，把仓库维护从一个人的拖延症，变成了一套 agent 排班制度，真他么妙啊， 你睡觉，它上班，你醒来只看决策就行",
+      "supports": [
+        "daily_observation",
+        "heatmap"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "快去看看你的 GitHub 仓库里有没有压了三年的僵尸 PR，今晚扔给 agent 试试 👇 Theo - t3.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "gg @theo Jun 18 I underestimated how cool this workflow is.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Had Codex go through a bunch of stale PRs last night.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Closed all the useless ones, revived all the out of date ones.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "阿易 AI Notes (@AYi_AInotes)",
+      "GitHub"
+    ],
+    "products": [
+      "Codex",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "金融 / 保险",
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "3",
+      "18",
+      "2",
+      "4",
+      "15",
+      "19",
+      "2026",
+      "4.4"
+    ],
+    "quotes": [
+      "睡觉时自动干活，醒来只看决策"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "快去看看你的 GitHub 仓库里有没有压了三年的僵尸 PR，今晚扔给 agent 试试 👇 Theo - t3.",
+      "Had Codex go through a bunch of stale PRs last night.",
+      "Closed all the useless ones, revived all the out of date ones."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "gg @theo Jun 18 I underestimated how cool this workflow is."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": [
+      "Post Log in Sign up Post AYi @AYi_AInotes 卧槽看完这个帖子我真的惊呆了， Theo让Codex通宵打扫GitHub的僵尸PR坟场，自己踏踏实实睡了一整晚， 我把他这套工作流拆出来了，大家可以直接抄作业， 我翻了下评论区，让 Codex 通宵清理 GitHub 僵尸 PR 这件事，好多人只看到了自动关 PR 的爽感， 其实真正值钱的是——每个被复活的 PR 同时跑了两个线程， 一个 Build 线程负责写代码、更新、修复冲突， 一个 Review 线程负责审查代码， 相当于给每个任务配了一个写手和一个审稿人，单点幻觉风险被结构性降低了， 我把这套玩法拆成三步，现在就能抄： → Triage 分诊：让 AI 先把所有 open PR 过一遍，判断哪些没用、哪些有价值但过时了，这是最耗人类脑力的前置步骤，现在被自动化了 → 关掉无用的：没意义的直接关，不用纠结 → 复活有价值的：给每个还剩一口气的 PR 分配双线程并行推进，人类只在关键节点看一眼 这真的不是简单的工具升级了兄弟们，把仓库维护从一个人的拖延症，变成了一套 agent 排班制度，真他么妙啊， 你睡觉，它上班，你醒来只看决策就行"
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 4,
+    "importance_reason": "vertical industry solution; rubric=4 concrete important change",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Theo 用 Codex 通宵清理 GitHub 僵尸 PR：分诊、关闭、复活双线程并行\n\n- raw_id: R-044\n- original_url: https://x.com/AYi_AInotes/status/2068004761618501802\n- source_name: X：阿易 AI Notes (@AYi_AInotes)\n- collected_at: 2026-06-20T05:50:41.999Z\n\n## clean_text\n\nPost\nLog in Sign up\nPost\nAYi\n@AYi_AInotes\n卧槽看完这个帖子我真的惊呆了，\nTheo让Codex通宵打扫GitHub的僵尸PR坟场，自己踏踏实实睡了一整晚，\n我把他这套工作流拆出来了，大家可以直接抄作业，\n我翻了下评论区，让 Codex 通宵清理 GitHub 僵尸 PR 这件事，好多人只看到了自动关 PR 的爽感，\n其实真正值钱的是——每个被复活的 PR 同时跑了两个线程，\n一个 Build 线程负责写代码、更新、修复冲突，\n一个 Review 线程负责审查代码，\n相当于给每个任务配了一个写手和一个审稿人，单点幻觉风险被结构性降低了，\n我把这套玩法拆成三步，现在就能抄：\n→ Triage 分诊：让 AI 先把所有 open PR 过一遍，判断哪些没用、哪些有价值但过时了，这是最耗人类脑力的前置步骤，现在被自动化了\n→ 关掉无用的：没意义的直接关，不用纠结\n→ 复活有价值的：给每个还剩一口气的 PR 分配双线程并行推进，人类只在关键节点看一眼\n这真的不是简单的工具升级了兄弟们，把仓库维护从一个人的拖延症，变成了一套 agent 排班制度，真他么妙啊，\n你睡觉，它上班，你醒来只看决策就行了！\n快去看看你的 GitHub 仓库里有没有压了三年的僵尸 PR，今晚扔给 agent 试试 👇\nTheo - t3.gg\n@theo\nJun 18\nI underestimated how cool this workflow is.\nHad Codex go through a bunch of stale PRs last night. Closed all the useless ones, revived all the out of date ones.\nEach \"revived\" pr got a thread to build it and a 2nd to review it.\n4:15 PM · Jun 19, 2026 4.4K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 16\nRead 4 replies\n\n## full_text\n\nPost\nLog in Sign up\nPost\nAYi\n@AYi_AInotes\n卧槽看完这个帖子我真的惊呆了，\nTheo让Codex通宵打扫GitHub的僵尸PR坟场，自己踏踏实实睡了一整晚，\n我把他这套工作流拆出来了，大家可以直接抄作业，\n我翻了下评论区，让 Codex 通宵清理 GitHub 僵尸 PR 这件事，好多人只看到了自动关 PR 的爽感，\n其实真正值钱的是——每个被复活的 PR 同时跑了两个线程，\n一个 Build 线程负责写代码、更新、修复冲突，\n一个 Review 线程负责审查代码，\n相当于给每个任务配了一个写手和一个审稿人，单点幻觉风险被结构性降低了，\n我把这套玩法拆成三步，现在就能抄：\n→ Triage 分诊：让 AI 先把所有 open PR 过一遍，判断哪些没用、哪些有价值但过时了，这是最耗人类脑力的前置步骤，现在被自动化了\n→ 关掉无用的：没意义的直接关，不用纠结\n→ 复活有价值的：给每个还剩一口气的 PR 分配双线程并行推进，人类只在关键节点看一眼\n这真的不是简单的工具升级了兄弟们，把仓库维护从一个人的拖延症，变成了一套 agent 排班制度，真他么妙啊，\n你睡觉，它上班，你醒来只看决策就行了！\n快去看看你的 GitHub 仓库里有没有压了三年的僵尸 PR，今晚扔给 agent 试试 👇\nTheo - t3.gg\n@theo\nJun 18\nI underestimated how cool this workflow is.\nHad Codex go through a bunch of stale PRs last night. Closed all the useless ones, revived all the out of date ones.\nEach \"revived\" pr got a thread to build it and a 2nd to review it.\n4:15 PM · Jun 19, 2026 4.4K Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 10\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 16\nRead 4 replies\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 71\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [quote / daily_observation, heatmap, viewpoint / high] 开发者 Theo 让 Codex 通宵处理 GitHub 仓库中过时的 PR：自动分诊判断价值，关闭无用的，复活过时的。每个被复活的 PR 同时运行两个线程--Build 线程负责修复冲突和更新代码，Review 线程负责审查代码，形成写手+审稿人的双保险，降低单点幻觉风险。人类只需在关键节点做决策。工作流将仓库维护从个人拖延症转变为 agent 排班制度，实现\"睡觉时自动干活，醒来只看决策\"。主推文作者拆解出三步：Triage 分诊、关闭无用、复活并行推进，可直接复制使用。\n2. [supporting_context / daily_observation, heatmap / high] Post Log in Sign up Post AYi @AYi_AInotes 卧槽看完这个帖子我真的惊呆了， Theo让Codex通宵打扫GitHub的僵尸PR坟场，自己踏踏实实睡了一整晚， 我把他这套工作流拆出来了，大家可以直接抄作业， 我翻了下评论区，让 Codex 通宵清理 GitHub 僵尸 PR 这件事，好多人只看到了自动关 PR 的爽感， 其实真正值钱的是——每个被复活的 PR 同时跑了两个线程， 一个 Build 线程负责写代码、更新、修复冲突， 一个 Review 线程负责审查代码， 相当于给每个任务配了一个写手和一个审稿人，单点幻觉风险被结构性降低了， 我把这套玩法拆成三步，现在就能抄： → Triage 分诊：让 AI 先把所有 open PR 过一遍，判断哪些没用、哪些有价值但过时了，这是最耗人类脑力的前置步骤，现在被自动化了 → 关掉无用的：没意义的直接关，不用纠结 → 复活有价值的：给每个还剩一口气的 PR 分配双线程并行推进，人类只在关键节点看一眼 这真的不是简单的工具升级了兄弟们，把仓库维护从一个人的拖延症，变成了一套 agent 排班制度，真他么妙啊， 你睡觉，它上班，你醒来只看决策就行\n3. [company_action / daily_observation, heatmap, change, case, trend / high] 快去看看你的 GitHub 仓库里有没有压了三年的僵尸 PR，今晚扔给 agent 试试 👇 Theo - t3.\n4. [workflow_change / daily_observation, heatmap, change, case, trend / high] gg @theo Jun 18 I underestimated how cool this workflow is.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] Had Codex go through a bunch of stale PRs last night.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] Closed all the useless ones, revived all the out of date ones.\n"
+}

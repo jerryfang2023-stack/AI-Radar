@@ -1,0 +1,249 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-017
+title: "OpenAI 将前沿健康 AI 能力迁移至免费版 GPT-5.5 Instant"
+original_url: "https://x.com/rohanpaul_ai/status/2067936581441528040"
+canonical_url: "https://x.com/rohanpaul_ai/status/2067936581441528040"
+source_name: "X：Rohan Paul (@rohanpaul_ai)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-19T11:44:36.000Z"
+collected_at: 2026-06-20T05:50:41.864Z
+language: mixed
+full_text_hash: 59b7cbbef2433789
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-20/r-017-openai-将前沿健康-ai-能力迁移至免费版-gpt-5-5-instant.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-20/r-017-openai-将前沿健康-ai-能力迁移至免费版-gpt-5-5-instant.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":4585,"paragraph_count":18,"sentence_count":15,"boilerplate_hits":1,"symbol_ratio":0.015,"method":"main"}
+has_full_text: true
+content_length: 4585
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"59b7cbbef2433789","missing":[]}
+source_volatility: high
+community_name: "X：Rohan Paul (@rohanpaul_ai)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI 将前沿健康 AI 能力迁移至免费版 GPT-5.5 Instant","discovery_summary":"OpenAI 将前沿健康 AI 能力从 premium 推理模型迁移至免费版 GPT-5.5 Instant，使其健康评估表现接近 Thinking 模型。每周超 2.3 亿用户通过 ChatGPT 咨询健康问题。OpenAI 采用知识蒸馏：由更强教师模型与 260+ 名医生（覆盖 60 国、49 种语言、26 专科）审查超 70 万条模型响应，训练学生模型学习临床回答模式。训练结合监督微调与偏好训练，重点提升\"不确定性下的行为\"（如主动询问年龄、症状等缺失信息）。真实健康流量中事实性问题减少 71%。GPT-5.5 Instant 已向全体免费用户开放。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2067936581441528040","discovered_at":"2026-06-20T05:46:01.055Z","rank_on_page":152,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: ce54c9979b0beef8
+content_hash: 59b7cbbef2433789
+semantic_hash: 4f1290f5149e8899
+duplicate_of: ""
+first_seen_at: "2026-06-19T11:44:36.000Z"
+last_seen_at: 2026-06-20T05:50:41.864Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["X","Rohan Paul (@rohanpaul_ai)","OpenAI"],"products":["GPT-5","ChatGPT"],"people":[],"industries":["医疗"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究"],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["5.5","2.3 亿","260","60","49","26","70 万","71%"],"quotes":["不确定性下的行为","distillation","medical facts,"]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post Rohan Paul @rohanpaul_ai This is really good.","OpenAI just moved frontier-level health AI from premium reasoning models into the free GPT-5.","5 Instant now performs near OpenAI’s Thinking models on health evaluations, meaning the cheaper, faster default model is being trained to behave more like the slower models that spend extra computation checking their reasoning."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"OpenAI 将前沿健康 AI 能力从 premium 推理模型迁移至免费版 GPT-5.5 Instant，使其健康评估表现接近 Thinking 模型。每周超 2.3 亿用户通过 ChatGPT 咨询健康问题。OpenAI 采用知识蒸馏：由更强教师模型与 260+ 名医生（覆盖 60 国、49 种语言、26 专科）审查超 70 万条模型响应，训练学生模型学习临床回答模式。训练结合监督微调与偏好训练，重点提升\"不确定性下的行为\"（如主动询问年龄、症状等缺失信息）。真实健康流量中事实性问题减少 71%。GPT-5.5 Instant 已向全体免费用户开放。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Post Log in Sign up Post Rohan Paul @rohanpaul_ai This is really good.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenAI just moved frontier-level health AI from premium reasoning models into the free GPT-5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"5 Instant now performs near OpenAI’s Thinking models on health evaluations, meaning the cheaper, faster default model is being trained to behave more like the slower models that spend extra computation checking their reasoning.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"The update targets the gap between a chatbot that sounds fluent and a health assistant that knows when to slow down, ask for missing details, admit uncertainty, and push the user toward care when symptoms look urgent.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"number","text":"OpenAI says more than 230 million people ask ChatGPT health and wellness questions every week, so moving this capability into the free product changes the scale from premium assistance to mass access.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# OpenAI 将前沿健康 AI 能力迁移至免费版 GPT-5.5 Instant
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Rohan Paul
+@rohanpaul_ai
+This is really good.
+OpenAI just moved frontier-level health AI from premium reasoning models into the free GPT-5.5 Instant model.
+GPT-5.5 Instant now performs near OpenAI’s Thinking models on health evaluations, meaning the cheaper, faster default model is being trained to behave more like the slower models that spend extra computation checking their reasoning.
+The update targets the gap between a chatbot that sounds fluent and a health assistant that knows when to slow down, ask for missing details, admit uncertainty, and push the user toward care when symptoms look urgent.
+OpenAI says more than 230 million people ask ChatGPT health and wellness questions every week, so moving this capability into the free product changes the scale from premium assistance to mass access.
+From OpenAI's blog looks like they did a huge "distillation" to achieve this. i.e. a stronger teacher model and human experts create high-quality responses, and a cheaper student model learns the answer patterns without repeating the same expensive internal search every time.
+i.e. OpenAI's training loop was heavily physician-shaped: more than 260 doctors across 60 countries, 49 languages, and 26 specialties reviewed over 700,000 model responses and judged whether answers were accurate, cautious, clear, complete, and useful.
+OpenAI's likely mechanism seems to be a mix of supervised fine-tuning, where Instant is shown better answers, and preference training, where it learns which answer a physician-led rubric prefers when two outputs differ.
+The physician part is crucial because the target is not just “medical facts,” but clinical response behavior, such as asking for age, pregnancy status, duration, medication history, severe pain, breathing trouble, fever, neurological symptoms, or other missing context before giving guidance.
+So the strongest improvement is not medical trivia but behavior under uncertainty, because a good health answer often means saying what cannot be known yet, what context is missing, what red flags matter, and what the next safe step should be.
+OpenAI also reports 71% fewer flagged factuality issues in real health traffic over two months, which suggests the update is reducing wrong claims in everyday use rather than only improving benchmark scores.
+OpenAI
+@OpenAI
+Jun 18
+GPT-5.5 Instant is now on par with our frontier Thinking models for health-related questions.
+Every week, more than 230 million people turn to ChatGPT with health and wellness questions, and GPT-5.5 Instant is better at recognizing when urgent care may be needed, asking for Show more
+00:00
+11:44 AM · Jun 19, 2026 7.1K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 7
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 50
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 12
+Read 4 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Rohan Paul
+@rohanpaul_ai
+This is really good.
+OpenAI just moved frontier-level health AI from premium reasoning models into the free GPT-5.5 Instant model.
+GPT-5.5 Instant now performs near OpenAI’s Thinking models on health evaluations, meaning the cheaper, faster default model is being trained to behave more like the slower models that spend extra computation checking their reasoning.
+The update targets the gap between a chatbot that sounds fluent and a health assistant that knows when to slow down, ask for missing details, admit uncertainty, and push the user toward care when symptoms look urgent.
+OpenAI says more than 230 million people ask ChatGPT health and wellness questions every week, so moving this capability into the free product changes the scale from premium assistance to mass access.
+From OpenAI's blog looks like they did a huge "distillation" to achieve this. i.e. a stronger teacher model and human experts create high-quality responses, and a cheaper student model learns the answer patterns without repeating the same expensive internal search every time.
+i.e. OpenAI's training loop was heavily physician-shaped: more than 260 doctors across 60 countries, 49 languages, and 26 specialties reviewed over 700,000 model responses and judged whether answers were accurate, cautious, clear, complete, and useful.
+OpenAI's likely mechanism seems to be a mix of supervised fine-tuning, where Instant is shown better answers, and preference training, where it learns which answer a physician-led rubric prefers when two outputs differ.
+The physician part is crucial because the target is not just “medical facts,” but clinical response behavior, such as asking for age, pregnancy status, duration, medication history, severe pain, breathing trouble, fever, neurological symptoms, or other missing context before giving guidance.
+So the strongest improvement is not medical trivia but behavior under uncertainty, because a good health answer often means saying what cannot be known yet, what context is missing, what red flags matter, and what the next safe step should be.
+OpenAI also reports 71% fewer flagged factuality issues in real health traffic over two months, which suggests the update is reducing wrong claims in everyday use rather than only improving benchmark scores.
+OpenAI
+@OpenAI
+Jun 18
+GPT-5.5 Instant is now on par with our frontier Thinking models for health-related questions.
+Every week, more than 230 million people turn to ChatGPT with health and wellness questions, and GPT-5.5 Instant is better at recognizing when urgent care may be needed, asking for Show more
+00:00
+11:44 AM · Jun 19, 2026 7.1K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 4
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 7
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 5 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 50
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 12
+Read 4 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 94
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":4585,"paragraph_count":18,"sentence_count":15,"boilerplate_hits":1,"symbol_ratio":0.015,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   OpenAI 将前沿健康 AI 能力从 premium 推理模型迁移至免费版 GPT-5.5 Instant，使其健康评估表现接近 Thinking 模型。每周超 2.3 亿用户通过 ChatGPT 咨询健康问题。OpenAI 采用知识蒸馏：由更强教师模型与 260+ 名医生（覆盖 60 国、49 种语言、26 专科）审查超 70 万条模型响应，训练学生模型学习临床回答模式。训练结合监督微调与偏好训练，重点提升"不确定性下的行为"（如主动询问年龄、症状等缺失信息）。真实健康流量中事实性问题减少 71%。GPT-5.5 Instant 已向全体免费用户开放。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Post Log in Sign up Post Rohan Paul @rohanpaul_ai This is really good.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   OpenAI just moved frontier-level health AI from premium reasoning models into the free GPT-5.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   5 Instant now performs near OpenAI’s Thinking models on health evaluations, meaning the cheaper, faster default model is being trained to behave more like the slower models that spend extra computation checking their reasoning.
+
+5. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   The update targets the gap between a chatbot that sounds fluent and a health assistant that knows when to slow down, ask for missing details, admit uncertainty, and push the user toward care when symptoms look urgent.
+
+6. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   OpenAI says more than 230 million people ask ChatGPT health and wellness questions every week, so moving this capability into the free product changes the scale from premium assistance to mass access.
+
+## business_elements
+
+- companies: X, Rohan Paul (@rohanpaul_ai), OpenAI
+- products: GPT-5, ChatGPT
+- people: 暂无公开信息
+- industries: 医疗
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 5.5, 2.3 亿, 260, 60, 49, 26, 70 万, 71%
+- quotes: 不确定性下的行为 / distillation / medical facts,
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post Rohan Paul @rohanpaul_ai This is really good. / OpenAI just moved frontier-level health AI from premium reasoning models into the free GPT-5. / 5 Instant now performs near OpenAI’s Thinking models on health evaluations, meaning the cheaper, faster default model is being trained to behave more like the slower models that spend extra computation checking their reasoning.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Rohan Paul (@rohanpaul_ai)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI 将前沿健康 AI 能力迁移至免费版 GPT-5.5 Instant","discovery_summary":"OpenAI 将前沿健康 AI 能力从 premium 推理模型迁移至免费版 GPT-5.5 Instant，使其健康评估表现接近 Thinking 模型。每周超 2.3 亿用户通过 ChatGPT 咨询健康问题。OpenAI 采用知识蒸馏：由更强教师模型与 260+ 名医生（覆盖 60 国、49 种语言、26 专科）审查超 70 万条模型响应，训练学生模型学习临床回答模式。训练结合监督微调与偏好训练，重点提升\"不确定性下的行为\"（如主动询问年龄、症状等缺失信息）。真实健康流量中事实性问题减少 71%。GPT-5.5 Instant 已向全体免费用户开放。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2067936581441528040","discovered_at":"2026-06-20T05:46:01.055Z","rank_on_page":152,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenAI 将前沿健康 AI 能力从 premium 推理模型迁移至免费版 GPT-5.5 Instant，使其健康评估表现接近 Thinking 模型。每周超 2.3 亿用户通过 ChatGPT 咨询健康问题。OpenAI 采用知识蒸馏：由更强教师模型与 260+ 名医生（覆盖 60 国、49 种语言、26 专科）审查超 70 万条模型响应，训练学生模型学习临床回答模式。训练结合监督微调与偏好训练，重点提升"不确定性下的行为"（如主动询问年龄、症状等缺失信息）。真实健康流量中事实性问题减少 71%。GPT-5.5 Instant 已向全体免费用户开放。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

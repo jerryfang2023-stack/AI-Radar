@@ -629,6 +629,7 @@ async function main() {
   ];
   const collected = [];
   const errors = [];
+  const warnings = [];
 
   for (const sourceKey of Object.keys(sources)) {
     for (const job of jobs) {
@@ -636,7 +637,12 @@ async function main() {
         const items = await collectJob(context, sourceKey, job);
         collected.push(...items);
       } catch (error) {
-        errors.push({ source: sourceKey, mode: job.mode, keyword: job.keyword, message: error.message });
+        const issue = { source: sourceKey, mode: job.mode, keyword: job.keyword, message: error.message };
+        if (job.mode === "search") {
+          warnings.push(issue);
+        } else {
+          errors.push(issue);
+        }
       }
     }
   }
@@ -675,6 +681,7 @@ async function main() {
         login: "复用专用浏览器登录态；登录失效时脚本记录错误，需要重新扫码。",
       },
       errors,
+      warnings,
       note: "Read-only collection from logged-in community pages. Private document contents are not bypassed.",
     },
     sources: Object.fromEntries(Object.entries(sources).map(([key, source]) => [key, {
@@ -699,6 +706,7 @@ async function main() {
     links: links.length,
     keywords: selectedKeywords.map((item) => item.keyword),
     errors,
+    warnings,
   }, null, 2));
 }
 

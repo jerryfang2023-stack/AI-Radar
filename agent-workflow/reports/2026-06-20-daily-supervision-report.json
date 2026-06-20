@@ -2,7 +2,7 @@
   "ok": false,
   "status": "failed",
   "date": "2026-06-20",
-  "generated_at": "2026-06-20T07:39:24.414Z",
+  "generated_at": "2026-06-20T08:28:54.866Z",
   "timezone": "Asia/Shanghai",
   "lanes": [
     {
@@ -16,7 +16,7 @@
         "governed": 13,
         "current": 13,
         "laneOwners": 3,
-        "syncDrift": 3,
+        "syncDrift": 2,
         "evalCoverage": 100,
         "exampleCoverage": 100,
         "memoryRequiredMissing": 0
@@ -28,10 +28,6 @@
         },
         {
           "message": "guanlan-raw-pool-card: .skill-store sync state is drift",
-          "severity": "manual_required"
-        },
-        {
-          "message": "guanlan-skill-editor: .skill-store sync state is drift",
           "severity": "manual_required"
         }
       ],
@@ -46,22 +42,22 @@
       "id": "community_intelligence",
       "label": "Community Intelligence",
       "schedule": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30",
-      "status": "failed",
+      "status": "manual_required",
       "evidence": {
-        "generatedAt": "2026-06-19T00:33:02.287Z",
-        "generatedDate": "2026-06-19",
+        "generatedAt": "2026-06-20T08:22:16.436Z",
+        "generatedDate": "2026-06-20",
         "items": 61,
-        "links": 75,
+        "links": 64,
         "selectedKeywords": 8,
         "collectorErrors": 0,
-        "gateStatus": "missing",
-        "gateReport": "missing",
+        "gateStatus": "passed",
+        "gateReport": "agent-workflow/reports/2026-06-20-community-intelligence-gate.md",
         "scheduledTask": {
           "available": true,
           "task": {
             "State": 3,
-            "LastTaskResult": 0,
-            "LastRunTime": "/Date(1781829001000)/",
+            "LastTaskResult": 1,
+            "LastRunTime": "/Date(1781941310000)/",
             "NextRunTime": "/Date(1782001800000)/"
           },
           "stateName": "Ready"
@@ -90,19 +86,16 @@
       },
       "problems": [
         {
-          "message": "community data date is 2026-06-19, expected 2026-06-20",
-          "severity": "failed"
+          "message": "community scheduled task last result is 1",
+          "severity": "manual_required"
         },
         {
           "message": "Community Intelligence publish workflow conclusion is failure",
           "severity": "failed"
         }
       ],
-      "warnings": [
-        "missing community gate report: agent-workflow/reports/2026-06-20-community-intelligence-gate.md"
-      ],
+      "warnings": [],
       "actions": [
-        "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
         "send Codex a community_intelligence repair request with log and gate report path"
       ]
     },
@@ -112,16 +105,16 @@
       "schedule": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55",
       "status": "failed",
       "evidence": {
-        "activeDate": "2026-06-19",
-        "generatedAt": "2026-06-19T11:49:26.271Z",
-        "frontstageSelected": 0,
-        "supplyConstrained": null,
-        "coreCandidateCount": null,
-        "qualifiedCount": null,
-        "signalCardFiles": 0,
-        "manifest": "missing",
-        "qualityGateStatus": "missing",
-        "readinessReport": "missing",
+        "activeDate": "2026-06-20",
+        "generatedAt": "2026-06-20T08:25:09.567Z",
+        "frontstageSelected": 10,
+        "supplyConstrained": true,
+        "coreCandidateCount": 10,
+        "qualifiedCount": 4,
+        "signalCardFiles": 17,
+        "manifest": "agent-workflow/reports/2026-06-20-persistent-asset-manifest.json",
+        "qualityGateStatus": "passed",
+        "readinessReport": "agent-workflow/reports/2026-06-20-daily-production-chain-readiness.md",
         "github": {
           "available": true,
           "latest_run": {
@@ -140,20 +133,20 @@
         },
         "publicationClosure": {
           "checkpoint": "10:50",
-          "businessDataSameDate": false,
-          "top10Count": 0,
+          "businessDataSameDate": true,
+          "top10Count": 10,
           "businessPrMerged": false,
           "businessPrUrl": "",
-          "pagesSuccess": false,
+          "pagesSuccess": true,
           "pagesActive": false,
-          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27863362335",
+          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27865302978",
           "localSync": {
             "available": true,
-            "clean": true,
-            "dirtyFiles": 0,
-            "ignoredReportFiles": 0,
-            "head": "2bdc948eb92ed30ce68a31917cff47d6b0a80125",
-            "originMain": "2bdc948eb92ed30ce68a31917cff47d6b0a80125",
+            "clean": false,
+            "dirtyFiles": 57,
+            "ignoredReportFiles": 2,
+            "head": "72e38d993aacce786d7858d5630b1ef8f53b4e16",
+            "originMain": "72e38d993aacce786d7858d5630b1ef8f53b4e16",
             "fastForwarded": true,
             "warning": ""
           }
@@ -161,15 +154,7 @@
       },
       "problems": [
         {
-          "message": "business-signal activeDate is 2026-06-19, expected 2026-06-20",
-          "severity": "failed"
-        },
-        {
-          "message": "Top10 selected count is 0, expected 10",
-          "severity": "failed"
-        },
-        {
-          "message": "signal card files 0 below 10",
+          "message": "frontstage selection is supply constrained",
           "severity": "failed"
         },
         {
@@ -178,10 +163,7 @@
         }
       ],
       "warnings": [
-        "missing same-date persistent asset manifest: agent-workflow/reports/2026-06-20-persistent-asset-manifest.json",
-        "missing quality gate report: agent-workflow/reports/2026-06-20-guanlan-monitor-quality-gate.md",
-        "missing readiness report: agent-workflow/reports/2026-06-20-daily-production-chain-readiness.md",
-        "latest same-date GitHub Pages workflow conclusion is skipped"
+        "local Obsidian sync may be blocked by 57 dirty file(s)"
       ],
       "actions": [
         "send Codex a business_signals repair request with failed gate and report path"
@@ -193,11 +175,11 @@
       "schedule": "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Hermes RSS handoff 09:30",
       "status": "passed",
       "evidence": {
-        "generatedAt": "2026-06-20T05:44:35.763Z",
+        "generatedAt": "2026-06-20T07:40:35.580Z",
         "generatedDate": "2026-06-20",
         "feedGeneratedAt": "2026-06-19T08:14:32.084Z",
-        "remarks": 57,
-        "builders": 21,
+        "remarks": 62,
+        "builders": 22,
         "gateStatus": "passed",
         "gateReport": "agent-workflow/reports/2026-06-20-follow-builders-data-gate.md",
         "github": {
@@ -245,10 +227,10 @@
       "schedule": "16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45",
       "status": "passed",
       "evidence": {
-        "outputFile": "missing",
-        "reportFile": "missing",
-        "itemCount": 0,
-        "reportCount": 0
+        "outputFile": "01-SiteV2/content/07-points/2026-06-20-builders-viewpoints.md",
+        "reportFile": "agent-workflow/reports/2026-06-20-follow-builders-skill-local-publish.md",
+        "itemCount": 24,
+        "reportCount": 24
       },
       "problems": [],
       "warnings": [],

@@ -691,6 +691,7 @@ function existingSignalCardIndex() {
   const index = new Map();
   for (const file of signalCardFiles()) {
     const text = fs.readFileSync(file, "utf8");
+    const cardDate = path.basename(file).match(/^(\d{4}-\d{2}-\d{2})--signal--/u)?.[1] || "";
     const type = yamlValue(text, "signal_type");
     const owner = yamlValue(text, "signal_owner");
     const title = yamlValue(text, "title");
@@ -703,7 +704,7 @@ function existingSignalCardIndex() {
     ].filter(Boolean);
     for (const fingerprint of fingerprints) {
       if (!index.has(fingerprint)) {
-        index.set(fingerprint, { file, id: yamlValue(text, "id"), title, type, owner });
+        index.set(fingerprint, { file, id: yamlValue(text, "id"), title, type, owner, date: cardDate });
       }
     }
   }
@@ -713,7 +714,7 @@ function existingSignalCardIndex() {
 function findExistingSignalCard(index, spec, section) {
   for (const fingerprint of signalFingerprints(spec, section)) {
     const existing = index.get(fingerprint);
-    if (existing) return existing;
+    if (existing && existing.date === date) return existing;
   }
   return null;
 }
@@ -1228,8 +1229,9 @@ function inferSignalType(section) {
   const sourceUrl = value(section, "source_url");
   const importanceType = value(section, "importance_type");
   if (isSingleCompanyFundingSignal(section)) return "funding";
-  if (importanceType === "important_funding") return "funding";
   if (importanceType === "important_case" || importanceType === "important_vertical_solution") return "case";
+  if (importanceType === "important_funding" && /\b(pivoted?|renamed|compute cluster|infrastructure|platform|deploy|deployment|service|product|business|AI biz)\b|转型|更名|托管计算|基础设施|部署|产品|业务/iu.test(`${text} ${sourceUrl}`)) return "product_service";
+  if (importanceType === "important_funding") return "funding";
   if (/c\.h\.\s*robinson|snaplogic|pwc|deployment|deploys|automates|orders automated|customer case|case study|customer story/iu.test(`${text} ${sourceUrl}`)) return "case";
   if (importanceType === "important_product_or_service" || /\b(launch|release|released|introduced|deploy|marketplace|platform|api|sdk|model|tool)\b|发布|推出|上线/iu.test(text)) return "product_service";
   return "case";
@@ -1294,6 +1296,9 @@ function isNonCommercialPolicyOrEthicsSignal(section) {
     value(section, "key_excerpts"),
     value(section, "evidence_seed"),
   ].join(" ");
+  if (/\b(government|ban|banned|prohibit|national security|policy|regulat(?:ion|or)|controversy)\b|政府|禁令|禁止|国家安全|政策|监管|争议/iu.test(text)) {
+    return true;
+  }
   return /(教皇|通谕|梵蒂冈|人类尊严|深刻的人性|公共伦理|Pope|Vatican|encyclical|humanitas|human dignity)/iu.test(text);
 }
 
@@ -1338,7 +1343,8 @@ function autoSignalSpec(poolRef, section, index) {
     ? `${company} 融资`
     : `${company} 商业信号`;
   const sourceTitle = originalTitle || "";
-  const title = publicSignalTitle({ type, company, scenario, amount, fundingAngle, text, sourceTitle }) || fallbackTitle || "";
+  const sourceEventTitle = cleanSourceEventTitle(sourceTitle);
+  const title = sourceEventTitle || publicSignalTitle({ type, company, scenario, amount, fundingAngle, text, sourceTitle }) || fallbackTitle || "";
   const sourcePoints = sourcePointsFromSection(section);
   const sourceExcerpt = sourceExcerptFromSection(section, sourcePoints);
   const fallbackEventLine = type === "funding"
@@ -1398,7 +1404,7 @@ function autoSignalEligibilityIssues(section) {
   if (!/^(S|A|B)$/u.test(sourceLevel)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, `source_level_not_sab:${sourceLevel || "missing"}`));
   }
-  if (importanceType === "important_funding" && !isSingleCompanyFundingSignal(section) && !directFundingProof) {
+  if (inferSignalType(section) === "funding" && importanceType === "important_funding" && !isSingleCompanyFundingSignal(section) && !directFundingProof) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "funding_not_single_company_round"));
   }
   if (isNonCommercialPolicyOrEthicsSignal(section)) {
@@ -1641,14 +1647,16 @@ function signalCard(spec, section) {
     generatedValueSummary(spec, section);
   const evidenceBoundary = spec.evidenceBoundary || value(section, "missing_information") || "未记录额外缺失项。";
 
+  const yamlString = (input = "") => JSON.stringify(String(input || ""));
+
   return `---
 id: ${spec.id}
 type: signal_card
 signal_type: ${spec.type}
-title: "${spec.title}"
+title: ${yamlString(spec.title)}
 date: ${date}
 status: published
-${spec.sourceTitle ? `source_title: "${spec.sourceTitle}"\n` : ""}asset_level: frontstage
+${spec.sourceTitle ? `source_title: ${yamlString(spec.sourceTitle)}\n` : ""}asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
 created_at: ${now}
@@ -1658,10 +1666,10 @@ raw_refs: ["${rawRef}"]
 pool_refs: ["${spec.poolRef}"]
 primary_raw:
   raw_ref: ${rawRef}
-  raw_archive: "${rawArchive}"
-  raw_json: "${rawJson}"
-  source_url: "${sourceUrl}"
-  full_text_hash: "${hash}"
+  raw_archive: ${yamlString(rawArchive)}
+  raw_json: ${yamlString(rawJson)}
+  source_url: ${yamlString(sourceUrl)}
+  full_text_hash: ${yamlString(hash)}
   source_level: ${sourceLevel}
   extraction_quality: ${extractionQuality}
   has_full_text: true
@@ -1673,12 +1681,12 @@ primary_raw:
 
 ${formalTagsYaml(formalTagsForSignal(spec, sourceLevel))}
 
-signal_owner: "${spec.company}"
+signal_owner: ${yamlString(spec.company)}
 
 frontend:
-  displayTitle: "${spec.title}"
+  displayTitle: ${yamlString(spec.title)}
   sourceLinks:
-    - "${sourceUrl}"
+    - ${yamlString(sourceUrl)}
 ---
 
 # ${spec.title}

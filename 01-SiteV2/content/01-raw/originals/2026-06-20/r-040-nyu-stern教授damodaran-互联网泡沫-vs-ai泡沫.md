@@ -1,0 +1,240 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-040
+title: "NYU Stern教授Damodaran：互联网泡沫 vs AI泡沫"
+original_url: "https://x.com/rohanpaul_ai/status/2068071430592635090"
+canonical_url: "https://x.com/rohanpaul_ai/status/2068071430592635090"
+source_name: "X：Rohan Paul (@rohanpaul_ai)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-19T20:40:26.000Z"
+collected_at: 2026-06-20T05:50:41.983Z
+language: mixed
+full_text_hash: 7b297d38908c9f48
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-20/r-040-nyu-stern教授damodaran-互联网泡沫-vs-ai泡沫.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-20/r-040-nyu-stern教授damodaran-互联网泡沫-vs-ai泡沫.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 93
+extractor_diagnostics: {"readability_score":93,"text_length":3989,"paragraph_count":15,"sentence_count":23,"boilerplate_hits":1,"symbol_ratio":0.0173,"method":"main"}
+has_full_text: true
+content_length: 3989
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7b297d38908c9f48","missing":[]}
+source_volatility: high
+community_name: "X：Rohan Paul (@rohanpaul_ai)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"NYU Stern教授Damodaran：互联网泡沫 vs AI泡沫","discovery_summary":"NYU Stern商学院教授Aswath Damodaran对比互联网泡沫与AI泡沫：互联网泡沫几乎无大规模资本支出，且主要由股权融资，崩盘时股东损失60%-90%，损失仅限于股东。而AI泡沫的资本支出规模为历史罕见（类比100年前的汽车行业），且大量由私人债务而非银行资金驱动。一旦市场修正，企业违约将蔓延至全社会，比股价暴跌更痛苦。他以2008年危机为例，警告放贷者过度放贷的连锁风险。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2068071430592635090","discovered_at":"2026-06-20T05:46:01.034Z","rank_on_page":70,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: f95f5e7d696c08c8
+content_hash: 7b297d38908c9f48
+semantic_hash: 346a8558614c07a1
+duplicate_of: ""
+first_seen_at: "2026-06-19T20:40:26.000Z"
+last_seen_at: 2026-06-20T05:50:41.983Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["user_feedback_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":4,"importance_reason":"vertical industry solution; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["X","Rohan Paul (@rohanpaul_ai)"],"products":[],"people":[],"industries":["金融 / 保险","企业服务"],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":["融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["60%","90%","100","2008","70%","80%","00","8"],"quotes":["Dean of Valuation","\n----\nFrom "]}
+evidence_seed: {"company_actions":["NYU Stern商学院教授Aswath Damodaran对比互联网泡沫与AI泡沫：互联网泡沫几乎无大规模资本支出，且主要由股权融资，崩盘时股东损失60%-90%，损失仅限于股东。而AI泡沫的资本支出规模为历史罕见（类比100年前的汽车行业），且大量由私人债务而非银行资金驱动。一旦市场修正，企业违约将蔓延至全社会，比股价暴跌更痛苦。他以2008年危机为例，警告放贷者过度放贷的连锁风险。","Post Log in Sign up Post Rohan Paul @rohanpaul_ai dot-com bubble vs.","a possible AI bubble."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"NYU Stern商学院教授Aswath Damodaran对比互联网泡沫与AI泡沫：互联网泡沫几乎无大规模资本支出，且主要由股权融资，崩盘时股东损失60%-90%，损失仅限于股东。而AI泡沫的资本支出规模为历史罕见（类比100年前的汽车行业），且大量由私人债务而非银行资金驱动。一旦市场修正，企业违约将蔓延至全社会，比股价暴跌更痛苦。他以2008年危机为例，警告放贷者过度放贷的连锁风险。","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Post Log in Sign up Post Rohan Paul @rohanpaul_ai dot-com bubble vs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"a possible AI bubble.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"From the famous \"Dean of Valuation\", Professor Aswath Damodaran, of NYU Stern School of Business, “And that’s the real big difference between the dot-com boom and bust and the AI boom.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We don’t know whether there’ll be a bust.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"History suggests there will be a bust.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# NYU Stern教授Damodaran：互联网泡沫 vs AI泡沫
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Rohan Paul
+@rohanpaul_ai
+dot-com bubble vs. a possible AI bubble.
+From the famous "Dean of Valuation", Professor Aswath Damodaran, of NYU Stern School of Business,
+“And that’s the real big difference between the dot-com boom and bust and the AI boom. We don’t know whether there’ll be a bust. History suggests there will be a bust.
+The dot-com boom and bust had no huge capital expenditure in that cycle. In fact, there was very little traditional CapEx, or even R&D, driving it. People started apps. They basically started going on it.
+This has been the biggest infrastructure run-up I think I’ve ever seen in business. You can go back and compare it to the automobile business 100 years ago. The amount of money that’s being put into AI CapEx is immense, which means that when the correction comes, the pain will be more intense.
+And herein lies the second problem. The dot-com boom and bust was almost entirely equity-funded. You think, so what? Well, when the bust came, those shareholders lost 60%, 70%, 80%, or 90% of their money. You felt sorry for them, but the loss was restricted to the shareholders.
+The problem with the AI CapEx boom is that not only is it immense, but a big chunk of it is funded with debt, and the debt is coming from private capital rather than banks. There’s a very real chance that if there’s a correction and companies start having problems, that problem is going to show up as distress and default, and that really doesn’t stay restricted. It spills over into the rest of society.
+I’m not saying it’s going to be 2008, but 2008 is an example of what happens when lenders overreach, when they lend money at too low a rate, and the correction comes. The pain spills over.
+So that is my concern with this big market illusion: the potential societal cost of having to deal with debt coming due that you’re unable to pay. It’s much more painful than your share price dropping 90% and you feeling the pain."
+----
+From "Excess Returns" YouTube channel, (link in comment)
+00:00
+8:40 PM · Jun 19, 2026 162K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 8 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 80
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 9 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 194
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 8 4 9 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 849
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 4 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 744
+Read 80 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Rohan Paul
+@rohanpaul_ai
+dot-com bubble vs. a possible AI bubble.
+From the famous "Dean of Valuation", Professor Aswath Damodaran, of NYU Stern School of Business,
+“And that’s the real big difference between the dot-com boom and bust and the AI boom. We don’t know whether there’ll be a bust. History suggests there will be a bust.
+The dot-com boom and bust had no huge capital expenditure in that cycle. In fact, there was very little traditional CapEx, or even R&D, driving it. People started apps. They basically started going on it.
+This has been the biggest infrastructure run-up I think I’ve ever seen in business. You can go back and compare it to the automobile business 100 years ago. The amount of money that’s being put into AI CapEx is immense, which means that when the correction comes, the pain will be more intense.
+And herein lies the second problem. The dot-com boom and bust was almost entirely equity-funded. You think, so what? Well, when the bust came, those shareholders lost 60%, 70%, 80%, or 90% of their money. You felt sorry for them, but the loss was restricted to the shareholders.
+The problem with the AI CapEx boom is that not only is it immense, but a big chunk of it is funded with debt, and the debt is coming from private capital rather than banks. There’s a very real chance that if there’s a correction and companies start having problems, that problem is going to show up as distress and default, and that really doesn’t stay restricted. It spills over into the rest of society.
+I’m not saying it’s going to be 2008, but 2008 is an example of what happens when lenders overreach, when they lend money at too low a rate, and the correction comes. The pain spills over.
+So that is my concern with this big market illusion: the potential societal cost of having to deal with debt coming due that you’re unable to pay. It’s much more painful than your share price dropping 90% and you feeling the pain."
+----
+From "Excess Returns" YouTube channel, (link in comment)
+00:00
+8:40 PM · Jun 19, 2026 162K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 8 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 80
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 9 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 194
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 8 4 9 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 849
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 7 4 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 744
+Read 80 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 93
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":93,"text_length":3989,"paragraph_count":15,"sentence_count":23,"boilerplate_hits":1,"symbol_ratio":0.0173,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   NYU Stern商学院教授Aswath Damodaran对比互联网泡沫与AI泡沫：互联网泡沫几乎无大规模资本支出，且主要由股权融资，崩盘时股东损失60%-90%，损失仅限于股东。而AI泡沫的资本支出规模为历史罕见（类比100年前的汽车行业），且大量由私人债务而非银行资金驱动。一旦市场修正，企业违约将蔓延至全社会，比股价暴跌更痛苦。他以2008年危机为例，警告放贷者过度放贷的连锁风险。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Post Log in Sign up Post Rohan Paul @rohanpaul_ai dot-com bubble vs.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   a possible AI bubble.
+
+4. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   From the famous "Dean of Valuation", Professor Aswath Damodaran, of NYU Stern School of Business, “And that’s the real big difference between the dot-com boom and bust and the AI boom.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   We don’t know whether there’ll be a bust.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   History suggests there will be a bust.
+
+## business_elements
+
+- companies: X, Rohan Paul (@rohanpaul_ai)
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 金融 / 保险, 企业服务
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 60%, 90%, 100, 2008, 70%, 80%, 00, 8
+- quotes: Dean of Valuation / 
+----
+From 
+
+## evidence_seed
+
+- company_actions: NYU Stern商学院教授Aswath Damodaran对比互联网泡沫与AI泡沫：互联网泡沫几乎无大规模资本支出，且主要由股权融资，崩盘时股东损失60%-90%，损失仅限于股东。而AI泡沫的资本支出规模为历史罕见（类比100年前的汽车行业），且大量由私人债务而非银行资金驱动。一旦市场修正，企业违约将蔓延至全社会，比股价暴跌更痛苦。他以2008年危机为例，警告放贷者过度放贷的连锁风险。 / Post Log in Sign up Post Rohan Paul @rohanpaul_ai dot-com bubble vs. / a possible AI bubble.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 4
+- importance_reason: vertical industry solution; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- user_feedback_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Rohan Paul (@rohanpaul_ai)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"NYU Stern教授Damodaran：互联网泡沫 vs AI泡沫","discovery_summary":"NYU Stern商学院教授Aswath Damodaran对比互联网泡沫与AI泡沫：互联网泡沫几乎无大规模资本支出，且主要由股权融资，崩盘时股东损失60%-90%，损失仅限于股东。而AI泡沫的资本支出规模为历史罕见（类比100年前的汽车行业），且大量由私人债务而非银行资金驱动。一旦市场修正，企业违约将蔓延至全社会，比股价暴跌更痛苦。他以2008年危机为例，警告放贷者过度放贷的连锁风险。","source_name":"X：Rohan Paul (@rohanpaul_ai)","origin_url":"https://x.com/rohanpaul_ai/status/2068071430592635090","discovered_at":"2026-06-20T05:46:01.034Z","rank_on_page":70,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+NYU Stern商学院教授Aswath Damodaran对比互联网泡沫与AI泡沫：互联网泡沫几乎无大规模资本支出，且主要由股权融资，崩盘时股东损失60%-90%，损失仅限于股东。而AI泡沫的资本支出规模为历史罕见（类比100年前的汽车行业），且大量由私人债务而非银行资金驱动。一旦市场修正，企业违约将蔓延至全社会，比股价暴跌更痛苦。他以2008年危机为例，警告放贷者过度放贷的连锁风险。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
