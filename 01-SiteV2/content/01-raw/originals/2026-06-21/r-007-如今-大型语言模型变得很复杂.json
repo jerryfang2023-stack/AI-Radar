@@ -1,0 +1,259 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-007",
+  "title": "如今，大型语言模型变得很复杂",
+  "original_url": "https://ianbarber.blog/2026/06/19/llms-are-complicated-now",
+  "canonical_url": "https://ianbarber.blog/2026/06/19/llms-are-complicated-now",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "community_feedback",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-06-20T15:25:07.111Z",
+  "collected_at": "2026-06-21T03:09:48.977Z",
+  "language": "mixed",
+  "full_text": "LLMs are complicated now\nWritten by\nIan\nin\nModelling\nBack in 2022 and 2023 there were two big branches of machine learning happening at Meta 1 . The LLM work that led to Llama was a clean, smooth stack of repeated Transformer modules; the recommendation systems graphs were, by contrast, terrifying. Luckily, the industry has remedied that state of affairs by making LLMs a lot more complicated.\nSeb Raschka maintains an excellent gallery of model architectures. You can use it to diff two of the best open models of their respective eras, Llama 3 and Nemotron 3 Ultra.\nAttention might be all you need, but modern models certainly use a lot of different variants of it: query grouping, compressed, sparse, linear, sliding-window and more. Mixture-of-Experts added selective routing to feed-forward layers, and we have since started routing just about everything else too, from attention blocks to the residual stream. Vision and audio encoders have gone from bolted on to mixed-in, and models have scaled to run at inference time across multiple GPUs, which throws comms ops in that add extra boundaries in the middle of your model.\nThis is not too different from what happened with recsys. The basic architecture of recommendation systems, for the best part of a decade, was a relatively straightforward two-tower sparse neural net. The complexity came from the tension between the need to continually increase capabilities and the need to stay efficient, particularly for inference.\nIt’s tempting to assume that agents will Fix This: that you’ll hand your PyTorch or JAX definition to Claude Telenovela or whatever and have it generate optimally fused kernels 2 . To make that work you need a fixed, usable baseline to make sure that what is generated is… right.\nWhat happened with recsys was that the gap between performance being an optimization and performance being a necessity became very, very small. Conceptually you can keep a pure model definition that gives you a baseline; in practice, training and testing a model takes significant resources and performance improvements become load-bearing.\nIf you want to swap attention variant A for variant B , you can afford for B to be ten percent slower. You probably can’t afford for it to be an order-of-magnitude worse. If A is fused and optimized, you need at least a partially fused and optimized version of B before you can even tell whether it’s worth exploring. The research iteration loop demands a different kind of flexibility than just “optimize this known quantity”. You can’t hand-fuse your way back without investing significant time that might not be worth it, and you can’t generate your way forward without a baseline to check. The only way out is to design for composability up front.\nOne of my favorite kernel developments of the last few years was FlexAttention in PyTorch, which took a whole class of attention operations and allowed you to generate kernels for them, via Triton templates. It built on a huge body of work in attention kernels, and it was designed to be composable and verifiable up front: you can explore with only a very mild impact to performance.\nAndrej Karpathy recently joined Anthropic, in part to develop richer auto-research-style loops at the frontier. As he has spent the last few years showing, though, being able to cut architectures to their essence and make them composable is as important as a clever agentic setup in climbing that kind of hill.\nAnd many smaller ones, shout outs to all my Content Understanding and integrity peeps ↩︎\nLike an automated Hazy Research ↩︎\ngpu llm recsys triton\nMore posts\nLLMs are complicated now\nJune 19, 2026\nFactWorld\nJune 12, 2026\nSomehow, more on distillation\nJune 5, 2026\nWe can distill it for you wholesale\nMay 31, 2026",
+  "clean_text": "LLMs are complicated now\nWritten by\nIan\nin\nModelling\nBack in 2022 and 2023 there were two big branches of machine learning happening at Meta 1 . The LLM work that led to Llama was a clean, smooth stack of repeated Transformer modules; the recommendation systems graphs were, by contrast, terrifying. Luckily, the industry has remedied that state of affairs by making LLMs a lot more complicated.\nSeb Raschka maintains an excellent gallery of model architectures. You can use it to diff two of the best open models of their respective eras, Llama 3 and Nemotron 3 Ultra.\nAttention might be all you need, but modern models certainly use a lot of different variants of it: query grouping, compressed, sparse, linear, sliding-window and more. Mixture-of-Experts added selective routing to feed-forward layers, and we have since started routing just about everything else too, from attention blocks to the residual stream. Vision and audio encoders have gone from bolted on to mixed-in, and models have scaled to run at inference time across multiple GPUs, which throws comms ops in that add extra boundaries in the middle of your model.\nThis is not too different from what happened with recsys. The basic architecture of recommendation systems, for the best part of a decade, was a relatively straightforward two-tower sparse neural net. The complexity came from the tension between the need to continually increase capabilities and the need to stay efficient, particularly for inference.\nIt’s tempting to assume that agents will Fix This: that you’ll hand your PyTorch or JAX definition to Claude Telenovela or whatever and have it generate optimally fused kernels 2 . To make that work you need a fixed, usable baseline to make sure that what is generated is… right.\nWhat happened with recsys was that the gap between performance being an optimization and performance being a necessity became very, very small. Conceptually you can keep a pure model definition that gives you a baseline; in practice, training and testing a model takes significant resources and performance improvements become load-bearing.\nIf you want to swap attention variant A for variant B , you can afford for B to be ten percent slower. You probably can’t afford for it to be an order-of-magnitude worse. If A is fused and optimized, you need at least a partially fused and optimized version of B before you can even tell whether it’s worth exploring. The research iteration loop demands a different kind of flexibility than just “optimize this known quantity”. You can’t hand-fuse your way back without investing significant time that might not be worth it, and you can’t generate your way forward without a baseline to check. The only way out is to design for composability up front.\nOne of my favorite kernel developments of the last few years was FlexAttention in PyTorch, which took a whole class of attention operations and allowed you to generate kernels for them, via Triton templates. It built on a huge body of work in attention kernels, and it was designed to be composable and verifiable up front: you can explore with only a very mild impact to performance.\nAndrej Karpathy recently joined Anthropic, in part to develop richer auto-research-style loops at the frontier. As he has spent the last few years showing, though, being able to cut architectures to their essence and make them composable is as important as a clever agentic setup in climbing that kind of hill.\nAnd many smaller ones, shout outs to all my Content Understanding and integrity peeps ↩︎\nLike an automated Hazy Research ↩︎\ngpu llm recsys triton\nMore posts\nLLMs are complicated now\nJune 19, 2026\nFactWorld\nJune 12, 2026\nSomehow, more on distillation\nJune 5, 2026\nWe can distill it for you wholesale\nMay 31, 2026",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-21/r-007-如今-大型语言模型变得很复杂.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-21/r-007-如今-大型语言模型变得很复杂.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 93,
+  "extractor_diagnostics": {
+    "readability_score": 93,
+    "text_length": 3765,
+    "paragraph_count": 16,
+    "sentence_count": 25,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3765,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "2548360b794151fa",
+    "missing": []
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "discovery_or_feedback_source_boundary"
+  ],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "如今，大型语言模型变得很复杂",
+    "discovery_summary": "2022-2023年Meta的Llama架构还是干净的重复Transformer模块，如今LLM已复杂：多种注意力变体（查询分组、压缩、稀疏、线性、滑动窗口等）、混合专家从FFN扩张到注意力块和残差流、视觉/音频编码器从外挂变为融合、多GPU推理引入通信操作。Seb Raschka的架构图库可对比Llama 3与Nemotron 3 Ultra。PyTorch的FlexAttention通过Triton模板生成可组合注意力核。Andrej Karpathy加入Anthropic，强调架构可组合性与智能体自动研究循环的重要性。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://ianbarber.blog/2026/06/19/llms-are-complicated-now",
+    "discovered_at": "2026-06-21T03:05:14.927Z",
+    "rank_on_page": 51,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "4ff349ea28fd2e56",
+  "content_hash": "2548360b794151fa",
+  "full_text_hash": "2548360b794151fa",
+  "semantic_hash": "2fe48882331f2117",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-20T15:25:07.111Z",
+  "last_seen_at": "2026-06-21T03:09:48.977Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "2022-2023年Meta的Llama架构还是干净的重复Transformer模块，如今LLM已复杂：多种注意力变体（查询分组、压缩、稀疏、线性、滑动窗口等）、混合专家从FFN扩张到注意力块和残差流、视觉/音频编码器从外挂变为融合、多GPU推理引入通信操作。Seb Raschka的架构图库可对比Llama 3与Nemotron 3 Ultra。PyTorch的FlexAttention通过Triton模板生成可组合注意力核。Andrej Karpathy加入Anthropic，强调架构可组合性与智能体自动研究循环的重要性。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "LLMs are complicated now Written by Ian in Modelling Back in 2022 and 2023 there were two big branches of machine learning happening at Meta 1 .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The LLM work that led to Llama was a clean, smooth stack of repeated Transformer modules; the recommendation systems graphs were, by contrast, terrifying.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Luckily, the industry has remedied that state of affairs by making LLMs a lot more complicated.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Seb Raschka maintains an excellent gallery of model architectures.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "You can use it to diff two of the best open models of their respective eras, Llama 3 and Nemotron 3 Ultra.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "Anthropic",
+      "Meta"
+    ],
+    "products": [
+      "agents",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2022",
+      "2023",
+      "3",
+      "1",
+      "2",
+      "19",
+      "2026",
+      "12"
+    ],
+    "quotes": [
+      "optimize this known quantity"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "2022-2023年Meta的Llama架构还是干净的重复Transformer模块，如今LLM已复杂：多种注意力变体（查询分组、压缩、稀疏、线性、滑动窗口等）、混合专家从FFN扩张到注意力块和残差流、视觉/音频编码器从外挂变为融合、多GPU推理引入通信操作。Seb Raschka的架构图库可对比Llama 3与Nemotron 3 Ultra。PyTorch的FlexAttention通过Triton模板生成可组合注意力核。Andrej Karpathy加入Anthropic，强调架构可组合性与智能体自动研究循环的重要性。",
+      "LLMs are complicated now Written by Ian in Modelling Back in 2022 and 2023 there were two big branches of machine learning happening at Meta 1 .",
+      "The LLM work that led to Llama was a clean, smooth stack of repeated Transformer modules; the recommendation systems graphs were, by contrast, terrifying."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# 如今，大型语言模型变得很复杂\n\n- raw_id: R-007\n- original_url: https://ianbarber.blog/2026/06/19/llms-are-complicated-now\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-06-21T03:09:48.977Z\n\n## clean_text\n\nLLMs are complicated now\nWritten by\nIan\nin\nModelling\nBack in 2022 and 2023 there were two big branches of machine learning happening at Meta 1 . The LLM work that led to Llama was a clean, smooth stack of repeated Transformer modules; the recommendation systems graphs were, by contrast, terrifying. Luckily, the industry has remedied that state of affairs by making LLMs a lot more complicated.\nSeb Raschka maintains an excellent gallery of model architectures. You can use it to diff two of the best open models of their respective eras, Llama 3 and Nemotron 3 Ultra.\nAttention might be all you need, but modern models certainly use a lot of different variants of it: query grouping, compressed, sparse, linear, sliding-window and more. Mixture-of-Experts added selective routing to feed-forward layers, and we have since started routing just about everything else too, from attention blocks to the residual stream. Vision and audio encoders have gone from bolted on to mixed-in, and models have scaled to run at inference time across multiple GPUs, which throws comms ops in that add extra boundaries in the middle of your model.\nThis is not too different from what happened with recsys. The basic architecture of recommendation systems, for the best part of a decade, was a relatively straightforward two-tower sparse neural net. The complexity came from the tension between the need to continually increase capabilities and the need to stay efficient, particularly for inference.\nIt’s tempting to assume that agents will Fix This: that you’ll hand your PyTorch or JAX definition to Claude Telenovela or whatever and have it generate optimally fused kernels 2 . To make that work you need a fixed, usable baseline to make sure that what is generated is… right.\nWhat happened with recsys was that the gap between performance being an optimization and performance being a necessity became very, very small. Conceptually you can keep a pure model definition that gives you a baseline; in practice, training and testing a model takes significant resources and performance improvements become load-bearing.\nIf you want to swap attention variant A for variant B , you can afford for B to be ten percent slower. You probably can’t afford for it to be an order-of-magnitude worse. If A is fused and optimized, you need at least a partially fused and optimized version of B before you can even tell whether it’s worth exploring. The research iteration loop demands a different kind of flexibility than just “optimize this known quantity”. You can’t hand-fuse your way back without investing significant time that might not be worth it, and you can’t generate your way forward without a baseline to check. The only way out is to design for composability up front.\nOne of my favorite kernel developments of the last few years was FlexAttention in PyTorch, which took a whole class of attention operations and allowed you to generate kernels for them, via Triton templates. It built on a huge body of work in attention kernels, and it was designed to be composable and verifiable up front: you can explore with only a very mild impact to performance.\nAndrej Karpathy recently joined Anthropic, in part to develop richer auto-research-style loops at the frontier. As he has spent the last few years showing, though, being able to cut architectures to their essence and make them composable is as important as a clever agentic setup in climbing that kind of hill.\nAnd many smaller ones, shout outs to all my Content Understanding and integrity peeps ↩︎\nLike an automated Hazy Research ↩︎\ngpu llm recsys triton\nMore posts\nLLMs are complicated now\nJune 19, 2026\nFactWorld\nJune 12, 2026\nSomehow, more on distillation\nJune 5, 2026\nWe can distill it for you wholesale\nMay 31, 2026\n\n## full_text\n\nLLMs are complicated now\nWritten by\nIan\nin\nModelling\nBack in 2022 and 2023 there were two big branches of machine learning happening at Meta 1 . The LLM work that led to Llama was a clean, smooth stack of repeated Transformer modules; the recommendation systems graphs were, by contrast, terrifying. Luckily, the industry has remedied that state of affairs by making LLMs a lot more complicated.\nSeb Raschka maintains an excellent gallery of model architectures. You can use it to diff two of the best open models of their respective eras, Llama 3 and Nemotron 3 Ultra.\nAttention might be all you need, but modern models certainly use a lot of different variants of it: query grouping, compressed, sparse, linear, sliding-window and more. Mixture-of-Experts added selective routing to feed-forward layers, and we have since started routing just about everything else too, from attention blocks to the residual stream. Vision and audio encoders have gone from bolted on to mixed-in, and models have scaled to run at inference time across multiple GPUs, which throws comms ops in that add extra boundaries in the middle of your model.\nThis is not too different from what happened with recsys. The basic architecture of recommendation systems, for the best part of a decade, was a relatively straightforward two-tower sparse neural net. The complexity came from the tension between the need to continually increase capabilities and the need to stay efficient, particularly for inference.\nIt’s tempting to assume that agents will Fix This: that you’ll hand your PyTorch or JAX definition to Claude Telenovela or whatever and have it generate optimally fused kernels 2 . To make that work you need a fixed, usable baseline to make sure that what is generated is… right.\nWhat happened with recsys was that the gap between performance being an optimization and performance being a necessity became very, very small. Conceptually you can keep a pure model definition that gives you a baseline; in practice, training and testing a model takes significant resources and performance improvements become load-bearing.\nIf you want to swap attention variant A for variant B , you can afford for B to be ten percent slower. You probably can’t afford for it to be an order-of-magnitude worse. If A is fused and optimized, you need at least a partially fused and optimized version of B before you can even tell whether it’s worth exploring. The research iteration loop demands a different kind of flexibility than just “optimize this known quantity”. You can’t hand-fuse your way back without investing significant time that might not be worth it, and you can’t generate your way forward without a baseline to check. The only way out is to design for composability up front.\nOne of my favorite kernel developments of the last few years was FlexAttention in PyTorch, which took a whole class of attention operations and allowed you to generate kernels for them, via Triton templates. It built on a huge body of work in attention kernels, and it was designed to be composable and verifiable up front: you can explore with only a very mild impact to performance.\nAndrej Karpathy recently joined Anthropic, in part to develop richer auto-research-style loops at the frontier. As he has spent the last few years showing, though, being able to cut architectures to their essence and make them composable is as important as a clever agentic setup in climbing that kind of hill.\nAnd many smaller ones, shout outs to all my Content Understanding and integrity peeps ↩︎\nLike an automated Hazy Research ↩︎\ngpu llm recsys triton\nMore posts\nLLMs are complicated now\nJune 19, 2026\nFactWorld\nJune 12, 2026\nSomehow, more on distillation\nJune 5, 2026\nWe can distill it for you wholesale\nMay 31, 2026\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 93\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [company_action / daily_observation, heatmap, change, case, trend / high] 2022-2023年Meta的Llama架构还是干净的重复Transformer模块，如今LLM已复杂：多种注意力变体（查询分组、压缩、稀疏、线性、滑动窗口等）、混合专家从FFN扩张到注意力块和残差流、视觉/音频编码器从外挂变为融合、多GPU推理引入通信操作。Seb Raschka的架构图库可对比Llama 3与Nemotron 3 Ultra。PyTorch的FlexAttention通过Triton模板生成可组合注意力核。Andrej Karpathy加入Anthropic，强调架构可组合性与智能体自动研究循环的重要性。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] LLMs are complicated now Written by Ian in Modelling Back in 2022 and 2023 there were two big branches of machine learning happening at Meta 1 .\n3. [company_action / daily_observation, heatmap, change, case, trend / high] The LLM work that led to Llama was a clean, smooth stack of repeated Transformer modules; the recommendation systems graphs were, by contrast, terrifying.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] Luckily, the industry has remedied that state of affairs by making LLMs a lot more complicated.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] Seb Raschka maintains an excellent gallery of model architectures.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] You can use it to diff two of the best open models of their respective eras, Llama 3 and Nemotron 3 Ultra.\n"
+}

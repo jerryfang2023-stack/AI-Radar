@@ -1,0 +1,344 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-023
+title: "Data2Story：七个AI智能体将CSV文件自动生成可验证的交互式新闻文章"
+original_url: "https://the-decoder.com/data2story-turns-a-csv-file-into-a-verified-interactive-news-article-using-seven-ai-agents"
+canonical_url: "https://the-decoder.com/data2story-turns-a-csv-file-into-a-verified-interactive-news-article-using-seven-ai-agents"
+source_name: "The Decoder：AI News（RSS）"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-20T09:51:55.000Z"
+collected_at: 2026-06-21T03:09:49.060Z
+language: mixed
+full_text_hash: fb0b5bd6d0ee966e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-21/r-023-data2story-七个ai智能体将csv文件自动生成可验证的交互式新闻文章.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-21/r-023-data2story-七个ai智能体将csv文件自动生成可验证的交互式新闻文章.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":19141,"paragraph_count":78,"sentence_count":166,"boilerplate_hits":0,"symbol_ratio":0.0076,"method":"json-ld"}
+has_full_text: true
+content_length: 19141
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fb0b5bd6d0ee966e","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Data2Story：七个AI智能体将CSV文件自动生成可验证的交互式新闻文章","discovery_summary":"Data2Story是牛津和斯坦福研究人员基于Claude Code构建的技能，通过Detective、Analyst、Editor、Designer、Programmer、Auditor、Inspector七个专用AI智能体，将CSV文件自动生成包含研究背景、统计图表和可追溯来源的交互式在线文章。核心\"检查员\"面板为每个声明和图表提供结构化证据，93%的可见陈述可溯源（人类文章基线为25%）。在53位读者对18个数据集的评测中，AI文章在视觉设计、叙事节奏、数据透明度、可验证性和洞察力五个类别均胜出，74%的读者更偏好AI版本。但人类在编辑视角、创意设计和密集图形方面仍保持优势。项目已开源。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/data2story-turns-a-csv-file-into-a-verified-interactive-news-article-using-seven-ai-agents","discovered_at":"2026-06-21T03:05:14.937Z","rank_on_page":84,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: e74206a6d9f2f227
+content_hash: 233dc8dd6154c86d
+semantic_hash: 5fe0568db37952b3
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-06-20T09:51:55.000Z"
+last_seen_at: 2026-06-21T03:09:49.060Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":4,"importance_reason":"real customer or adoption case; rubric=4 concrete important change","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["The Decoder","AI News（RSS）","GitHub","Perplexity"],"products":["Claude","agents","Agent","agent","gpt-5"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["2","93%","25%","53","18","74%","93","74"],"quotes":["Data Journalist Agent","Data Journalist Agent","Data Journalist Agent","Data Journalist Agent","attachment_57389"]}
+evidence_seed: {"company_actions":["Data2Story turns a CSV file into a verified interactive news article using seven AI agents Data2Story turns a CSV file into a verified interactive news article using seven AI agents Seven AI agents work together like a newsroom.","In a reader study, 74 percent preferred the agent's output over the human original.","But against elaborately crafted long-form reports, the agent managed a tie."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"Data2Story是牛津和斯坦福研究人员基于Claude Code构建的技能，通过Detective、Analyst、Editor、Designer、Programmer、Auditor、Inspector七个专用AI智能体，将CSV文件自动生成包含研究背景、统计图表和可追溯来源的交互式在线文章。核心\"检查员\"面板为每个声明和图表提供结构化证据，93%的可见陈述可溯源（人类文章基线为25%）。在53位读者对18个数据集的评测中，AI文章在视觉设计、叙事节奏、数据透明度、可验证性和洞察力五个类别均胜出，74%的读者更偏好AI版本。但人类在编辑视角、创意设计和密集图形方面仍保持优势。项目已开源。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Data2Story turns a CSV file into a verified interactive news article using seven AI agents Data2Story turns a CSV file into a verified interactive news article using seven AI agents Seven AI agents work together like a newsroom.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"The \"Data Journalist Agent\" from Oxford and Stanford turns a CSV file into a finished interactive article with graphics, web research, and verifiable source links for 93 percent of all statements.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In a reader study, 74 percent preferred the agent's output over the human original.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But against elaborately crafted long-form reports, the agent managed a tie.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Seven AI agents work together like a newsroom.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Data2Story：七个AI智能体将CSV文件自动生成可验证的交互式新闻文章
+
+## clean_text
+
+Data2Story turns a CSV file into a verified interactive news article using seven AI agents
+Data2Story turns a CSV file into a verified interactive news article using seven AI agents
+Seven AI agents work together like a newsroom. The "Data Journalist Agent" from Oxford and Stanford turns a CSV file into a finished interactive article with graphics, web research, and verifiable source links for 93 percent of all statements. In a reader study, 74 percent preferred the agent's output over the human original. But against elaborately crafted long-form reports, the agent managed a tie.
+Seven AI agents work together like a newsroom. The "Data Journalist Agent" from Oxford and Stanford turns a CSV file into a finished interactive article with graphics, web research, and verifiable source links for 93 percent of all statements. In a reader study, 74 percent preferred the agent's output over the human original. But against elaborately crafted long-form reports, the agent managed a tie.
+AI, Menschen, Wirtschaft
+AI, Menschen, Wirtschaft
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Data2Story turns a CSV file into a verified interactive news article using seven AI agents
+Seven AI agents work together like a newsroom. The "Data Journalist Agent" from Oxford and Stanford turns a CSV file into a finished interactive article with graphics, web research, and verifiable source links for 93 percent of all statements. In a reader study, 74 percent preferred the agent's output over the human original. But against elaborately crafted long-form reports, the agent managed a tie.
+Data journalism eats time like few other beats. A single investigation can keep a team busy for weeks. A new AI pipeline aims to automate most of that work without sacrificing verifiability.
+Researchers from Oxford and Stanford have built "Data Journalist Agent" (Data2Story), a Claude Code skill that turns a CSV file into a full interactive online article. The output includes research context, statistics, graphics, and a built-in feature linking every visible statement, chart, and interactive element to its evidence, be it code, data sources, or external URLs. The skill is a predefined task set that Claude Code loads and runs on command, orchestrating several specialized agent roles.
+[caption id="attachment_57389" align="aligncenter" width="1800"] Data2Story turns a raw dataset into a verifiable, multimodal web article, shown here with a dataset on the card choices of 1,354 respondents. | Image: Lin et al.[/caption]
+The authors demo the system on a dataset that's gotten little coverage so far, the 2026 FIFA World Cup schedule. From the schedule and host cities, it generates a climate-focused article with an interactive map.
+About four in ten matches are slated for locations the players' union FIFPRO classifies as extremely high heat risk, with humidity rather than air temperature as the main driver. The authors stress these are typical climate conditions, not a forecast for the actual tournament.
+[caption id="attachment_57386" align="aligncenter" width="1800"] Data2Story generates stories from datasets with zero human input, from World Cup stadium climates to ArXiv trends to how people spend their day. | Image: Lin et al.[/caption]
+An "Inspector" panel makes every claim traceable
+The system's core feature is the "Inspector," a panel showing structured evidence for each sentence and asset. Every annotated sentence, chart, and interactive element gets its own index card displaying either the exact line of code (plus the data file behind it) or the external URL backing a claim.
+[caption id="attachment_57387" align="aligncenter" width="1800"] The Inspector links each statement to either an external source or a runnable script that recalculates the figure from the data. | Image: Lin et al.[/caption]
+This lets 93 percent of all visible statements be checked for their origin. That doesn't mean they're correct, the researchers stress, just verifiable. Doubt a figure? Run the code. The baseline for human-written articles is 25 percent, partly because journalists rarely publish analysis code. The gap reflects both a hole in journalism practice and a strength of the system, the researchers claim.
+Seven agents, one editorial workflow
+Behind each article sits a chain of seven specialized agents the team calls a "virtual newsroom." The "Detective" runs web searches for context, since a table alone rarely tells the full story. For the World Cup data, it links host cities to FIFPRO heat risk ratings and Open-Meteo climate data.
+The "Analyst" runs code instead of guessing numbers. The "Editor" picks which findings drive the narrative. The "Designer" chooses the right medium, say a map for geography or an audio clip for music. The "Programmer" builds the HTML page, the "Auditor" checks layout for errors, and the "Inspector" ties everything back to sources.
+[caption id="attachment_36841" align="aligncenter" width="1800"] Each agent role in Data2Story's virtual newsroom handles one step from research to layout. The Inspector links every statement back to its source. | Image: Lin et al.[[/caption]The base model is Claude Opus 4.7 running on Claude Code. For images, video, and audio, the system pulls in OpenRouter models like gpt-5.4-image-2, seedance-2.0, and lyria-3-pro-preview.
+53 readers rate agent articles higher than human originals
+The researchers paired 18 public datasets with matching human-written originals from three distinct sources. They used the concise briefings from The Economist, the lavishly designed long reads from The Pudding, and the community datasets from TidyTuesday. 53 recruited readers rated both versions across five categories, including visual design, narrative rhythm, data transparency, verifiability of claims, and insight gained.
+Data2Story won all five categories. The biggest lead was in transparency, at +1.49 on a seven-point scale. Overall, 74 percent preferred the agent article, 25 percent the human version, and 2 percent called it a draw.
+By source, the picture shifts. The agent won clearly in data-heavy Economist briefings and TidyTuesday pieces. Against Pudding reports, which design teams often spend weeks crafting, it was a statistical tie. The agent couldn't beat handcrafted presentation.
+[caption id="attachment_57385" align="aligncenter" width="1799"] Across 18 article pairs, Data2Story covers about half the human perspective, while journalists catch only a third of the agent's, most strikingly in The Economist. | Image: Lin et al.[/caption]
+When measuring which statements from the human-written article also appear in the agent-generated article, Data2Story covers about half. Conversely, only 35 percent of the agent’s statements are found in the human text.
+The agent adds plenty of its own angles but only partly captures the editorial core. The gap is widest in short, formulaic Economist briefings, where the agent reproduces 73 percent of human findings, likely because those texts hew closely to standard statistics the agent calculates anyway.
+Where humans still win
+The researchers flag three areas where human authors stay ahead. On editorial perspective, reporters explain things the data can't. A Repair Cafe report traces low repair rates to manufacturers of phones, cars, and tractors deliberately blocking access to diagnostic tools and parts. That's a theory grounded in reporting, not data. The agent shows what breaks, but the "why" stays hidden.
+[caption id="attachment_57400" align="aligncenter" width="1800"] The human report explains why repairs fail. Data2Story only charts repair rates by product type. | Image: Lin et al.[/caption]
+On creative design, a Pudding piece on stand-up comedy turns the full transcript of an Ali Wong show into a user interface. Next to each line sits a circle sized to the length of the laugh. For the same content, the agent just embeds a static YouTube thumbnail.
+[caption id="attachment_57399" align="aligncenter" width="1800"] The Pudding team turns the entire transcript into the interface. Data2Story embeds a clickable thumbnail. | Image: Lin et al.[/caption]
+On dense single graphics, an Economist visualization on the space race layers government and commercial providers, success rates, and annotations into one image. The agent scatters the same data across several charts, and the main point gets lost.
+[caption id="attachment_57398" align="aligncenter" width="1800"] The Economist packs government and commercial launches plus annotations into one graphic. Data2Story spreads the data across an interactive view without the notes. | Image: Lin et al.[/caption]
+A collaborator, not a replacement
+The authors frame Data2Story as a newsroom tool. Humans bring perspective and reporting, agents handle computation, graphics, and machine-verifiable sourcing.
+It could prove most useful for topics newsrooms can't cover for lack of capacity, niche datasets that would otherwise never become a readable story. One limitation is that Data2Story currently runs on full autopilot. A version with human-in-the-loop feedback is left for future work. The site is live at data2story.github.io, and the code is on GitHub.
+Machine-verifiability is exactly where current AI systems keep stumbling. A recent Peking University benchmark found that leading models often give the right answer in document analysis but cite the wrong sources, a problem the researchers call "attribution hallucination."
+Another study suggests AI search agents often don't research at all but mostly confirm what they already know from training. Data2Story tries to close this gap by having the analyst calculate figures with runnable code instead of guessing and having the Inspector link every statement to its source. Perplexity takes a similar tack with "Search as Code," where models write their own web searches instead of calling a black-box API.
+Data2Story turns a CSV file into a verified interactive news article using seven AI agents
+Seven AI agents work together like a newsroom. The "Data Journalist Agent" from Oxford and Stanford turns a CSV file into a finished interactive article with graphics, web research, and verifiable source links for 93 percent of all statements. In a reader study, 74 percent preferred the agent's output over the human original. But against elaborately crafted long-form reports, the agent managed a tie.
+Data journalism eats time like few other beats. A single investigation can keep a team busy for weeks. A new AI pipeline aims to automate most of that work without sacrificing verifiability.
+Researchers from Oxford and Stanford have built "Data Journalist Agent" (Data2Story), a Claude Code skill that turns a CSV file into a full interactive online article. The output includes research context, statistics, graphics, and a built-in feature linking every visible statement, chart, and interactive element to its evidence, be it code, data sources, or external URLs. The skill is a predefined task set that Claude Code loads and runs on command, orchestrating several specialized agent roles.
+[caption id="attachment_57389" align="aligncenter" width="1800"] Data2Story turns a raw dataset into a verifiable, multimodal web article, shown here with a dataset on the card choices of 1,354 respondents. | Image: Lin et al.[/caption]
+The authors demo the system on a dataset that's gotten little coverage so far, the 2026 FIFA World Cup schedule. From the schedule and host cities, it generates a climate-focused article with an interactive map.
+About four in ten matches are slated for locations the players' union FIFPRO classifies as extremely high heat risk, with humidity rather than air temperature as the main driver. The authors stress these are typical climate conditions, not a forecast for the actual tournament.
+[caption id="attachment_57386" align="aligncenter" width="1800"] Data2Story generates stories from datasets with zero human input, from World Cup stadium climates to ArXiv trends to how people spend their day. | Image: Lin et al.[/caption]
+An "Inspector" panel makes every claim traceable
+The system's core feature is the "Inspector," a panel showing structured evidence for each sentence and asset. Every annotated sentence, chart, and interactive element gets its own index card displaying either the exact line of code (plus the data file behind it) or the external URL backing a claim.
+[caption id="attachment_57387" align="aligncenter" width="1800"] The Inspector links each statement to either an external source or a runnable script that recalculates the figure from the data. | Image: Lin et al.[/caption]
+This lets 93 percent of all visible statements be checked for their origin. That doesn't mean they're correct, the researchers stress, just verifiable. Doubt a figure? Run the code. The baseline for human-written articles is 25 percent, partly because journalists rarely publish analysis code. The gap reflects both a hole in journalism practice and a strength of the system, the researchers claim.
+Seven agents, one editorial workflow
+Behind each article sits a chain of seven specialized agents the team calls a "virtual newsroom." The "Detective" runs web searches for context, since a table alone rarely tells the full story. For the World Cup data, it links host cities to FIFPRO heat risk ratings and Open-Meteo climate data.
+The "Analyst" runs code instead of guessing numbers. The "Editor" picks which findings drive the narrative. The "Designer" chooses the right medium, say a map for geography or an audio clip for music. The "Programmer" builds the HTML page, the "Auditor" checks layout for errors, and the "Inspector" ties everything back to sources.
+[caption id="attachment_36841" align="aligncenter" width="1800"] Each agent role in Data2Story's virtual newsroom handles one step from research to layout. The Inspector links every statement back to its source. | Image: Lin et al.[[/caption]The base model is Claude Opus 4.7 running on Claude Code. For images, video, and audio, the system pulls in OpenRouter models like gpt-5.4-image-2, seedance-2.0, and lyria-3-pro-preview.
+53 readers rate agent articles higher than human originals
+The researchers paired 18 public datasets with matching human-written originals from three distinct sources. They used the concise briefings from The Economist, the lavishly designed long reads from The Pudding, and the community datasets from TidyTuesday. 53 recruited readers rated both versions across five categories, including visual design, narrative rhythm, data transparency, verifiability of claims, and insight gained.
+Data2Story won all five categories. The biggest lead was in transparency, at +1.49 on a seven-point scale. Overall, 74 percent preferred the agent article, 25 percent the human version, and 2 percent called it a draw.
+By source, the picture shifts. The agent won clearly in data-heavy Economist briefings and TidyTuesday pieces. Against Pudding reports, which design teams often spend weeks crafting, it was a statistical tie. The agent couldn't beat handcrafted presentation.
+[caption id="attachment_57385" align="aligncenter" width="1799"] Across 18 article pairs, Data2Story covers about half the human perspective, while journalists catch only a third of the agent's, most strikingly in The Economist. | Image: Lin et al.[/caption]
+When measuring which statements from the human-written article also appear in the agent-generated article, Data2Story covers about half. Conversely, only 35 percent of the agent’s statements are found in the human text.
+The agent adds plenty of its own angles but only partly captures the editorial core. The gap is widest in short, formulaic Economist briefings, where the agent reproduces 73 percent of human findings, likely because those texts hew closely to standard statistics the agent calculates anyway.
+Where humans still win
+The researchers flag three areas where human authors stay ahead. On editorial perspective, reporters explain things the data can't. A Repair Cafe report traces low repair rates to manufacturers of phones, cars, and tractors deliberately blocking access to diagnostic tools and parts. That's a theory grounded in reporting, not data. The agent shows what breaks, but the "why" stays hidden.
+[caption id="attachment_57400" align="aligncenter" width="1800"] The human report explains why repairs fail. Data2Story only charts repair rates by product type. | Image: Lin et al.[/caption]
+On creative design, a Pudding piece on stand-up comedy turns the full transcript of an Ali Wong show into a user interface. Next to each line sits a circle sized to the length of the laugh. For the same content, the agent just embeds a static YouTube thumbnail.
+[caption id="attachment_57399" align="aligncenter" width="1800"] The Pudding team turns the entire transcript into the interface. Data2Story embeds a clickable thumbnail. | Image: Lin et al.[/caption]
+On dense single graphics, an Economist visualization on the space race layers government and commercial providers, success rates, and annotations into one image. The agent scatters the same data across several charts, and the main point gets lost.
+[caption id="attachment_57398" align="aligncenter" width="1800"] The Economist packs government and commercial launches plus annotations into one graphic. Data2Story spreads the data across an interactive view without the notes. | Image: Lin et al.[/caption]
+A collaborator, not a replacement
+The authors frame Data2Story as a newsroom tool. Humans bring perspective and
+
+## full_text
+
+Data2Story turns a CSV file into a verified interactive news article using seven AI agents
+Data2Story turns a CSV file into a verified interactive news article using seven AI agents
+Seven AI agents work together like a newsroom. The "Data Journalist Agent" from Oxford and Stanford turns a CSV file into a finished interactive article with graphics, web research, and verifiable source links for 93 percent of all statements. In a reader study, 74 percent preferred the agent's output over the human original. But against elaborately crafted long-form reports, the agent managed a tie.
+Seven AI agents work together like a newsroom. The "Data Journalist Agent" from Oxford and Stanford turns a CSV file into a finished interactive article with graphics, web research, and verifiable source links for 93 percent of all statements. In a reader study, 74 percent preferred the agent's output over the human original. But against elaborately crafted long-form reports, the agent managed a tie.
+AI, Menschen, Wirtschaft
+AI, Menschen, Wirtschaft
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Jonathan is a freelance tech journalist, author, and media coach. He covers open AI models, Chinese AI labs, and the technical underpinnings that make them tick – from novel training methods and scaling strategies to benchmark design. He's also an avid vibecoder.
+Data2Story turns a CSV file into a verified interactive news article using seven AI agents
+Seven AI agents work together like a newsroom. The "Data Journalist Agent" from Oxford and Stanford turns a CSV file into a finished interactive article with graphics, web research, and verifiable source links for 93 percent of all statements. In a reader study, 74 percent preferred the agent's output over the human original. But against elaborately crafted long-form reports, the agent managed a tie.
+Data journalism eats time like few other beats. A single investigation can keep a team busy for weeks. A new AI pipeline aims to automate most of that work without sacrificing verifiability.
+Researchers from Oxford and Stanford have built "Data Journalist Agent" (Data2Story), a Claude Code skill that turns a CSV file into a full interactive online article. The output includes research context, statistics, graphics, and a built-in feature linking every visible statement, chart, and interactive element to its evidence, be it code, data sources, or external URLs. The skill is a predefined task set that Claude Code loads and runs on command, orchestrating several specialized agent roles.
+[caption id="attachment_57389" align="aligncenter" width="1800"] Data2Story turns a raw dataset into a verifiable, multimodal web article, shown here with a dataset on the card choices of 1,354 respondents. | Image: Lin et al.[/caption]
+The authors demo the system on a dataset that's gotten little coverage so far, the 2026 FIFA World Cup schedule. From the schedule and host cities, it generates a climate-focused article with an interactive map.
+About four in ten matches are slated for locations the players' union FIFPRO classifies as extremely high heat risk, with humidity rather than air temperature as the main driver. The authors stress these are typical climate conditions, not a forecast for the actual tournament.
+[caption id="attachment_57386" align="aligncenter" width="1800"] Data2Story generates stories from datasets with zero human input, from World Cup stadium climates to ArXiv trends to how people spend their day. | Image: Lin et al.[/caption]
+An "Inspector" panel makes every claim traceable
+The system's core feature is the "Inspector," a panel showing structured evidence for each sentence and asset. Every annotated sentence, chart, and interactive element gets its own index card displaying either the exact line of code (plus the data file behind it) or the external URL backing a claim.
+[caption id="attachment_57387" align="aligncenter" width="1800"] The Inspector links each statement to either an external source or a runnable script that recalculates the figure from the data. | Image: Lin et al.[/caption]
+This lets 93 percent of all visible statements be checked for their origin. That doesn't mean they're correct, the researchers stress, just verifiable. Doubt a figure? Run the code. The baseline for human-written articles is 25 percent, partly because journalists rarely publish analysis code. The gap reflects both a hole in journalism practice and a strength of the system, the researchers claim.
+Seven agents, one editorial workflow
+Behind each article sits a chain of seven specialized agents the team calls a "virtual newsroom." The "Detective" runs web searches for context, since a table alone rarely tells the full story. For the World Cup data, it links host cities to FIFPRO heat risk ratings and Open-Meteo climate data.
+The "Analyst" runs code instead of guessing numbers. The "Editor" picks which findings drive the narrative. The "Designer" chooses the right medium, say a map for geography or an audio clip for music. The "Programmer" builds the HTML page, the "Auditor" checks layout for errors, and the "Inspector" ties everything back to sources.
+[caption id="attachment_36841" align="aligncenter" width="1800"] Each agent role in Data2Story's virtual newsroom handles one step from research to layout. The Inspector links every statement back to its source. | Image: Lin et al.[[/caption]The base model is Claude Opus 4.7 running on Claude Code. For images, video, and audio, the system pulls in OpenRouter models like gpt-5.4-image-2, seedance-2.0, and lyria-3-pro-preview.
+53 readers rate agent articles higher than human originals
+The researchers paired 18 public datasets with matching human-written originals from three distinct sources. They used the concise briefings from The Economist, the lavishly designed long reads from The Pudding, and the community datasets from TidyTuesday. 53 recruited readers rated both versions across five categories, including visual design, narrative rhythm, data transparency, verifiability of claims, and insight gained.
+Data2Story won all five categories. The biggest lead was in transparency, at +1.49 on a seven-point scale. Overall, 74 percent preferred the agent article, 25 percent the human version, and 2 percent called it a draw.
+By source, the picture shifts. The agent won clearly in data-heavy Economist briefings and TidyTuesday pieces. Against Pudding reports, which design teams often spend weeks crafting, it was a statistical tie. The agent couldn't beat handcrafted presentation.
+[caption id="attachment_57385" align="aligncenter" width="1799"] Across 18 article pairs, Data2Story covers about half the human perspective, while journalists catch only a third of the agent's, most strikingly in The Economist. | Image: Lin et al.[/caption]
+When measuring which statements from the human-written article also appear in the agent-generated article, Data2Story covers about half. Conversely, only 35 percent of the agent’s statements are found in the human text.
+The agent adds plenty of its own angles but only partly captures the editorial core. The gap is widest in short, formulaic Economist briefings, where the agent reproduces 73 percent of human findings, likely because those texts hew closely to standard statistics the agent calculates anyway.
+Where humans still win
+The researchers flag three areas where human authors stay ahead. On editorial perspective, reporters explain things the data can't. A Repair Cafe report traces low repair rates to manufacturers of phones, cars, and tractors deliberately blocking access to diagnostic tools and parts. That's a theory grounded in reporting, not data. The agent shows what breaks, but the "why" stays hidden.
+[caption id="attachment_57400" align="aligncenter" width="1800"] The human report explains why repairs fail. Data2Story only charts repair rates by product type. | Image: Lin et al.[/caption]
+On creative design, a Pudding piece on stand-up comedy turns the full transcript of an Ali Wong show into a user interface. Next to each line sits a circle sized to the length of the laugh. For the same content, the agent just embeds a static YouTube thumbnail.
+[caption id="attachment_57399" align="aligncenter" width="1800"] The Pudding team turns the entire transcript into the interface. Data2Story embeds a clickable thumbnail. | Image: Lin et al.[/caption]
+On dense single graphics, an Economist visualization on the space race layers government and commercial providers, success rates, and annotations into one image. The agent scatters the same data across several charts, and the main point gets lost.
+[caption id="attachment_57398" align="aligncenter" width="1800"] The Economist packs government and commercial launches plus annotations into one graphic. Data2Story spreads the data across an interactive view without the notes. | Image: Lin et al.[/caption]
+A collaborator, not a replacement
+The authors frame Data2Story as a newsroom tool. Humans bring perspective and reporting, agents handle computation, graphics, and machine-verifiable sourcing.
+It could prove most useful for topics newsrooms can't cover for lack of capacity, niche datasets that would otherwise never become a readable story. One limitation is that Data2Story currently runs on full autopilot. A version with human-in-the-loop feedback is left for future work. The site is live at data2story.github.io, and the code is on GitHub.
+Machine-verifiability is exactly where current AI systems keep stumbling. A recent Peking University benchmark found that leading models often give the right answer in document analysis but cite the wrong sources, a problem the researchers call "attribution hallucination."
+Another study suggests AI search agents often don't research at all but mostly confirm what they already know from training. Data2Story tries to close this gap by having the analyst calculate figures with runnable code instead of guessing and having the Inspector link every statement to its source. Perplexity takes a similar tack with "Search as Code," where models write their own web searches instead of calling a black-box API.
+Data2Story turns a CSV file into a verified interactive news article using seven AI agents
+Seven AI agents work together like a newsroom. The "Data Journalist Agent" from Oxford and Stanford turns a CSV file into a finished interactive article with graphics, web research, and verifiable source links for 93 percent of all statements. In a reader study, 74 percent preferred the agent's output over the human original. But against elaborately crafted long-form reports, the agent managed a tie.
+Data journalism eats time like few other beats. A single investigation can keep a team busy for weeks. A new AI pipeline aims to automate most of that work without sacrificing verifiability.
+Researchers from Oxford and Stanford have built "Data Journalist Agent" (Data2Story), a Claude Code skill that turns a CSV file into a full interactive online article. The output includes research context, statistics, graphics, and a built-in feature linking every visible statement, chart, and interactive element to its evidence, be it code, data sources, or external URLs. The skill is a predefined task set that Claude Code loads and runs on command, orchestrating several specialized agent roles.
+[caption id="attachment_57389" align="aligncenter" width="1800"] Data2Story turns a raw dataset into a verifiable, multimodal web article, shown here with a dataset on the card choices of 1,354 respondents. | Image: Lin et al.[/caption]
+The authors demo the system on a dataset that's gotten little coverage so far, the 2026 FIFA World Cup schedule. From the schedule and host cities, it generates a climate-focused article with an interactive map.
+About four in ten matches are slated for locations the players' union FIFPRO classifies as extremely high heat risk, with humidity rather than air temperature as the main driver. The authors stress these are typical climate conditions, not a forecast for the actual tournament.
+[caption id="attachment_57386" align="aligncenter" width="1800"] Data2Story generates stories from datasets with zero human input, from World Cup stadium climates to ArXiv trends to how people spend their day. | Image: Lin et al.[/caption]
+An "Inspector" panel makes every claim traceable
+The system's core feature is the "Inspector," a panel showing structured evidence for each sentence and asset. Every annotated sentence, chart, and interactive element gets its own index card displaying either the exact line of code (plus the data file behind it) or the external URL backing a claim.
+[caption id="attachment_57387" align="aligncenter" width="1800"] The Inspector links each statement to either an external source or a runnable script that recalculates the figure from the data. | Image: Lin et al.[/caption]
+This lets 93 percent of all visible statements be checked for their origin. That doesn't mean they're correct, the researchers stress, just verifiable. Doubt a figure? Run the code. The baseline for human-written articles is 25 percent, partly because journalists rarely publish analysis code. The gap reflects both a hole in journalism practice and a strength of the system, the researchers claim.
+Seven agents, one editorial workflow
+Behind each article sits a chain of seven specialized agents the team calls a "virtual newsroom." The "Detective" runs web searches for context, since a table alone rarely tells the full story. For the World Cup data, it links host cities to FIFPRO heat risk ratings and Open-Meteo climate data.
+The "Analyst" runs code instead of guessing numbers. The "Editor" picks which findings drive the narrative. The "Designer" chooses the right medium, say a map for geography or an audio clip for music. The "Programmer" builds the HTML page, the "Auditor" checks layout for errors, and the "Inspector" ties everything back to sources.
+[caption id="attachment_36841" align="aligncenter" width="1800"] Each agent role in Data2Story's virtual newsroom handles one step from research to layout. The Inspector links every statement back to its source. | Image: Lin et al.[[/caption]The base model is Claude Opus 4.7 running on Claude Code. For images, video, and audio, the system pulls in OpenRouter models like gpt-5.4-image-2, seedance-2.0, and lyria-3-pro-preview.
+53 readers rate agent articles higher than human originals
+The researchers paired 18 public datasets with matching human-written originals from three distinct sources. They used the concise briefings from The Economist, the lavishly designed long reads from The Pudding, and the community datasets from TidyTuesday. 53 recruited readers rated both versions across five categories, including visual design, narrative rhythm, data transparency, verifiability of claims, and insight gained.
+Data2Story won all five categories. The biggest lead was in transparency, at +1.49 on a seven-point scale. Overall, 74 percent preferred the agent article, 25 percent the human version, and 2 percent called it a draw.
+By source, the picture shifts. The agent won clearly in data-heavy Economist briefings and TidyTuesday pieces. Against Pudding reports, which design teams often spend weeks crafting, it was a statistical tie. The agent couldn't beat handcrafted presentation.
+[caption id="attachment_57385" align="aligncenter" width="1799"] Across 18 article pairs, Data2Story covers about half the human perspective, while journalists catch only a third of the agent's, most strikingly in The Economist. | Image: Lin et al.[/caption]
+When measuring which statements from the human-written article also appear in the agent-generated article, Data2Story covers about half. Conversely, only 35 percent of the agent’s statements are found in the human text.
+The agent adds plenty of its own angles but only partly captures the editorial core. The gap is widest in short, formulaic Economist briefings, where the agent reproduces 73 percent of human findings, likely because those texts hew closely to standard statistics the agent calculates anyway.
+Where humans still win
+The researchers flag three areas where human authors stay ahead. On editorial perspective, reporters explain things the data can't. A Repair Cafe report traces low repair rates to manufacturers of phones, cars, and tractors deliberately blocking access to diagnostic tools and parts. That's a theory grounded in reporting, not data. The agent shows what breaks, but the "why" stays hidden.
+[caption id="attachment_57400" align="aligncenter" width="1800"] The human report explains why repairs fail. Data2Story only charts repair rates by product type. | Image: Lin et al.[/caption]
+On creative design, a Pudding piece on stand-up comedy turns the full transcript of an Ali Wong show into a user interface. Next to each line sits a circle sized to the length of the laugh. For the same content, the agent just embeds a static YouTube thumbnail.
+[caption id="attachment_57399" align="aligncenter" width="1800"] The Pudding team turns the entire transcript into the interface. Data2Story embeds a clickable thumbnail. | Image: Lin et al.[/caption]
+On dense single graphics, an Economist visualization on the space race layers government and commercial providers, success rates, and annotations into one image. The agent scatters the same data across several charts, and the main point gets lost.
+[caption id="attachment_57398" align="aligncenter" width="1800"] The Economist packs government and commercial launches plus annotations into one graphic. Data2Story spreads the data across an interactive view without the notes. | Image: Lin et al.[/caption]
+A collaborator, not a replacement
+The authors frame Data2Story as a newsroom tool. Humans bring perspective and reporting, agents handle computation, graphics, and machine-verifiable sourcing.
+It could prove most useful for topics newsrooms can't cover for lack of capacity, niche datasets that would otherwise never become a readable story. One limitation is that Data2Story currently runs on full autopilot. A version with human-in-the-loop feedback is left for future work. The site is live at data2story.github.io, and the code is on GitHub.
+Machine-verifiability is exactly where current AI systems keep stumbling. A recent Peking University benchmark found that leading models often give the right answer in document analysis but cite the wrong sources, a problem the researchers call "attribution hallucination."
+Another study suggests AI search agents often don't research at all but mostly confirm what they already know from training. Data2Story tries to close this gap by having the analyst calculate figures with runnable code instead of guessing and having the Inspector link every statement to its source. Perplexity takes a similar tack with "Search as Code," where models write their own web searches instead of calling a black-box API.
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":19141,"paragraph_count":78,"sentence_count":166,"boilerplate_hits":0,"symbol_ratio":0.0076,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Data2Story是牛津和斯坦福研究人员基于Claude Code构建的技能，通过Detective、Analyst、Editor、Designer、Programmer、Auditor、Inspector七个专用AI智能体，将CSV文件自动生成包含研究背景、统计图表和可追溯来源的交互式在线文章。核心"检查员"面板为每个声明和图表提供结构化证据，93%的可见陈述可溯源（人类文章基线为25%）。在53位读者对18个数据集的评测中，AI文章在视觉设计、叙事节奏、数据透明度、可验证性和洞察力五个类别均胜出，74%的读者更偏好AI版本。但人类在编辑视角、创意设计和密集图形方面仍保持优势。项目已开源。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Data2Story turns a CSV file into a verified interactive news article using seven AI agents Data2Story turns a CSV file into a verified interactive news article using seven AI agents Seven AI agents work together like a newsroom.
+
+3. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   The "Data Journalist Agent" from Oxford and Stanford turns a CSV file into a finished interactive article with graphics, web research, and verifiable source links for 93 percent of all statements.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   In a reader study, 74 percent preferred the agent's output over the human original.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   But against elaborately crafted long-form reports, the agent managed a tie.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Seven AI agents work together like a newsroom.
+
+## business_elements
+
+- companies: The Decoder, AI News（RSS）, GitHub, Perplexity
+- products: Claude, agents, Agent, agent, gpt-5
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 2, 93%, 25%, 53, 18, 74%, 93, 74
+- quotes: Data Journalist Agent / Data Journalist Agent / Data Journalist Agent / Data Journalist Agent / attachment_57389
+
+## evidence_seed
+
+- company_actions: Data2Story turns a CSV file into a verified interactive news article using seven AI agents Data2Story turns a CSV file into a verified interactive news article using seven AI agents Seven AI agents work together like a newsroom. / In a reader study, 74 percent preferred the agent's output over the human original. / But against elaborately crafted long-form reports, the agent managed a tie.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 4
+- importance_reason: real customer or adoption case; rubric=4 concrete important change
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Data2Story：七个AI智能体将CSV文件自动生成可验证的交互式新闻文章","discovery_summary":"Data2Story是牛津和斯坦福研究人员基于Claude Code构建的技能，通过Detective、Analyst、Editor、Designer、Programmer、Auditor、Inspector七个专用AI智能体，将CSV文件自动生成包含研究背景、统计图表和可追溯来源的交互式在线文章。核心\"检查员\"面板为每个声明和图表提供结构化证据，93%的可见陈述可溯源（人类文章基线为25%）。在53位读者对18个数据集的评测中，AI文章在视觉设计、叙事节奏、数据透明度、可验证性和洞察力五个类别均胜出，74%的读者更偏好AI版本。但人类在编辑视角、创意设计和密集图形方面仍保持优势。项目已开源。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/data2story-turns-a-csv-file-into-a-verified-interactive-news-article-using-seven-ai-agents","discovered_at":"2026-06-21T03:05:14.937Z","rank_on_page":84,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Data2Story是牛津和斯坦福研究人员基于Claude Code构建的技能，通过Detective、Analyst、Editor、Designer、Programmer、Auditor、Inspector七个专用AI智能体，将CSV文件自动生成包含研究背景、统计图表和可追溯来源的交互式在线文章。核心"检查员"面板为每个声明和图表提供结构化证据，93%的可见陈述可溯源（人类文章基线为25%）。在53位读者对18个数据集的评测中，AI文章在视觉设计、叙事节奏、数据透明度、可验证性和洞察力五个类别均胜出，74%的读者更偏好AI版本。但人类在编辑视角、创意设计和密集图形方面仍保持优势。项目已开源。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

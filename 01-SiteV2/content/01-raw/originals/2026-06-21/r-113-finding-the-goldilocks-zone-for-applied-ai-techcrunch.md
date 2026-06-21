@@ -1,0 +1,307 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-113
+title: "Finding the Goldilocks zone for applied AI - TechCrunch"
+original_url: "https://techcrunch.com/2018/08/14/finding-the-goldilocks-zone-for-applied-ai/"
+canonical_url: "https://techcrunch.com/2018/08/14/finding-the-goldilocks-zone-for-applied-ai"
+source_name: "keyword search / Anysearch"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-21T03:09:49.516Z
+language: mixed
+full_text_hash: 80e10850d515c066
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-21/r-113-finding-the-goldilocks-zone-for-applied-ai-techcrunch.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-21/r-113-finding-the-goldilocks-zone-for-applied-ai-techcrunch.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":12674,"paragraph_count":43,"sentence_count":72,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 12674
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"80e10850d515c066","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 77369c5b2e6ac2cb
+content_hash: 80e10850d515c066
+semantic_hash: 535ee8802e8f4bda
+duplicate_of: ""
+first_seen_at: "2026-06-21T03:09:49.516Z"
+last_seen_at: 2026-06-21T03:09:49.516Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","Anthropic","Cursor"],"products":["Cursor","ChatGPT"],"people":[],"industries":["制造 / 工业","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理"],"business_actions":["发布 / 推出","合作 / 联盟"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["2","00","14","2018","20","360","95","15"],"quotes":[" Goldilocks principle","just right","Just right","Just right","Just right"]}
+evidence_seed: {"company_actions":["Narrowly defining a problem, however, is only the first step to finding valuable business applications of AI .","Here are some ways for aspiring startup founders to thread the needle with their AI strategy, based on what we’ve learned from working with thousands of AI startups."],"case_details":[],"workflow_changes":["Finding the Goldilocks zone for ... | TechCrunch ... While Elon Musk and Mark Zuckerberg debate the dangers of artificial general intelligence, startups applying AI to more narrowly defined problems such as accelerating the performance of sales teams and improving the operating efficiency of manufac","Finding the Goldilocks zone for applied AI Ivy Nguyen 2:00 PM PDT · August 14, 2018 While Elon Musk and Mark Zuckerberg debate the dangers of a rtificial general i ntelligence , startups applying AI to more narrowly defined problems such as accelerating the performance of sales teams and improving the operating efficiency of manufacturing lines are building billion-dollar businesses."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"Finding the Goldilocks zone for ... | TechCrunch ... While Elon Musk and Mark Zuckerberg debate the dangers of artificial general intelligence, startups applying AI to more narrowly defined problems such as accelerating the performance of sales teams and improving the operating efficiency of manufac","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Finding the Goldilocks zone for applied AI Ivy Nguyen 2:00 PM PDT · August 14, 2018 While Elon Musk and Mark Zuckerberg debate the dangers of a rtificial general i ntelligence , startups applying AI to more narrowly defined problems such as accelerating the performance of sales teams and improving the operating efficiency of manufacturing lines are building billion-dollar businesses.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Narrowly defining a problem, however, is only the first step to finding valuable business applications of AI .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"quote","text":"To find the right opportunity around which to build an AI business, startups must apply the “ Goldilocks principle” in several different dimensions to find the sweet spot that is “just right” to begin — not too far in one dimension, not too far in another.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Here are some ways for aspiring startup founders to thread the needle with their AI strategy, based on what we’ve learned from working with thousands of AI startups.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"quote","text":"“Just right” prediction time horizons Unlike pre- intelligence software, AI responds to the environment in which they operate; algorithms take in data and return an answer or prediction.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"}]
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# Finding the Goldilocks zone for applied AI - TechCrunch
+
+## clean_text
+
+Finding the Goldilocks zone for applied AI
+Ivy Nguyen
+2:00 PM PDT · August 14, 2018
+While Elon Musk and Mark Zuckerberg debate the dangers of a rtificial general i ntelligence , startups applying AI to more narrowly defined problems such as accelerating the performance of sales teams and improving the operating efficiency of manufacturing lines are building billion-dollar businesses. Narrowly defining a problem, however, is only the first step to finding valuable business applications of AI .
+To find the right opportunity around which to build an AI business, startups must apply the “ Goldilocks principle” in several different dimensions to find the sweet spot that is “just right” to begin — not too far in one dimension, not too far in another. Here are some ways for aspiring startup founders to thread the needle with their AI strategy, based on what we’ve learned from working with thousands of AI startups.
+“Just right” prediction time horizons
+Unlike pre- intelligence software, AI responds to the environment in which they operate; algorithms take in data and return an answer or prediction. Depending on the application, that prediction may describe an outcome in the near term, such as tomorrow’s weather, or an outcome many years in the future, such as whether a patient will develop cancer in 20 years. The time horizon of the algorithm’s prediction is critical to its usefulness and to whether it offers an opportunity to build defensibility.
+Algorithms making predictions with long time horizons are difficult to evaluate and improve. For example, an algorithm may use the schedule of a contractor’s previous projects to predict that a particular construction project will fall six months behind schedule and go over budget by 20 percent. Until this new project is completed, the algorithm designer and end user can only tell whether the prediction is directionally correct — that is, whether the project is falling behind or costs are higher.
+Even when the final project numbers end up very close to the predicted numbers, it will be difficult to complete the feedback loop and positively reinforce the algorithm. Many factors may influence complex systems like a construction project, making it difficult to A/B test the prediction to tease out the input variables from unknown confounding factors. The more complex the system, the longer it may take the algorithm to complete a reinforcement cycle, and the more difficult it becomes to precisely train the algorithm.
+While many enterprise customers are open to piloting AI solutions, startups must be able to validate the algorithm’s performance in order to complete the sale. The most convincing way to validate an algorithm is by using the customer’s real-time data, but this approach may be difficult to achieve during a pilot. If the startup does get access to the customer’s data, the prediction time horizon should be short enough that the algorithm can be validated during the pilot period.
+Historic data, if it’s available, can serve as a stopgap to train an algorithm and temporarily validate it via backtesting. Training an algorithm making long time horizon predictions on historic data is risky because processes and environments are more likely to have changed the further back you dig into historic records, making historic data sets less descriptive of present-day conditions.
+In other cases, while the historic data describing outcomes exists for you to train an algorithm, it may not capture the input variable under consideration. In the construction example, that could mean that you found out that sites using blue safety hats are more likely to complete projects on time, but since that hat color wasn’t previously helpful in managing projects, that information wasn’t recorded in the archival records. This data must be captured from scratch, which further delays your time to market.
+Instead of making singular “hero” predictions with long time horizons, AI startups should build multiple algorithms making smaller, simpler predictions with short time horizons. Decomposing an environment into simpler subsystems or processes limits the number of inputs, making them easier to control for confounding factors. The BIM 360 Project IQ Team at Autodesk takes this small prediction approach to areas that contribute to construction project delays. Their models predict safety and score vendor and subcontractor quality/reliability, all of which can be measured while a project is ongoing.
+Shorter time horizons make it easier for the algorithm engineer to monitor its change in performance and take action to quickly improve it, instead of being limited to backtesting on historic data. The shorter the time horizon, the shorter the algorithm’s feedback loop will be. As each cycle through the feedback incrementally compounds the algorithm’s performance, shorter feedback loops are better for building defensibility.
+“Just right” actionability window
+Most algorithms model dynamic systems and return a prediction for a human to act on. Depending on how quickly the system is changing, the algorithm’s output may not remain valid for very long: the prediction may “decay” before the user can take action. In order to be useful to the end user, the algorithm must be designed to accommodate the limitations of computing and human speed.
+In a typical AI -human workflow, the human feeds input data into the algorithm, the algorithm runs calculations on that input data and returns an output that predicts a certain outcome or recommends a course of action; the human interprets that information to decide on a course of action, then takes action. The time it takes the algorithm to compute an answer and the time it takes for a human to act on the output are the two largest bottlenecks in this workflow.
+For most of AI history, slow computational speeds have severely limited the scope of applied AI . An algorithm’s prediction depends on the input data, and the input data represents a snapshot in time at the moment it was recorded. If the environment described by the data changes faster than the algorithm can compute the input data, by the time the algorithm completes its computations and returns a prediction, the prediction will only describe a moment in the past and will not be actionable. For example, the algorithm behind the music app Shazam may have needed several hours to identify a song after first “hearing” it using the computational power of a Windows 95 computer.
+The rise of cloud computing and the development of hardware specially optimized for AI computations has dramatically broadened the scope of areas where applied AI is actionable and affordable. While macro tech advancements can greatly advance applied AI , the algorithm is not totally held hostage to current limits of computation; reinforcement through training also can improve the algorithm’s response time. The more of the same example an algorithm encounters, the more quickly it can skip computations to arrive at a prediction. Thanks to advances in computation and reinforcement, today Shazam takes less than 15 seconds to identify a song.
+Automating the decision and action also could help users make use of predictions that decay too quickly to wait for humans to respond. Opsani is one such company using AI to make decisions that are too numerous and fast-moving for humans to make effectively. Unlike human DevOps, who can only move so fast to optimize performance based on recommendations from an algorithm, Opsani applies AI to both identify and automatically improve operations of applications and cloud infrastructure so its customers can enjoy dramatically better performance.
+Not all applications of AI can be completely automated, however, if the perceived risk is too high for end users to accept, or if regulations mandate that humans must approve the decision.
+“Just right” performance minimums
+Just like software startups launch when they have built a minimum viable product (MVP) in order to collect actionable feedback from initial customers, AI startups should launch when they reach the minimum algorithmic performance (MAP) required by early adopters, so that the algorithm can be trained on more diverse and fresh data sets and avoid becoming overfit to a training set.
+Most applications don’t require 100 percent accuracy to be valuable. For example, a fraud detection algorithm may only immediately catch five percent of fraud cases within 24 hours of when they occur, but human fraud investigators catch 15 percent of fraud cases after a month of analysis. In this case, the MAP is zero, because the fraud detection algorithm could serve as a first filter in order to reduce the number of cases the human investigators must process. The startup can go to market immediately in order to secure access to the large volume of fraud data used for training their algorithm. Over time, the algorithms’ accuracy will improve and reduce the burden on human investigators, freeing them to focus on the most complex cases.
+Startups building algorithms for zero or low MAP applications will be able to launch quickly, but may be continuously looking over their shoulder for copycats, if these copycats appear before the algorithm has reached a high level of performance.
+Startups attacking low MAP problems also should watch out for problems that can be solved with near 100 percent accuracy with a very small training set, where the problem being modeled is relatively simple, with few dimensions to track and few possible variations in outcome.
+AI -powered contract processing is a good example of an application where the algorithm’s performance plateaus quickly. There are thousands of contract types, but most of them share key fields: the parties involved, the items of value being exchanged, time frame, etc. Specific document types like mortgage applications or rental agreements are highly standardized in order to comply with regulation. Across multiple startups, we have seen algorithms that automatically process these documents needing only a few hundred examples to train to an acceptable degree of accuracy before additional examples do little to improve the algorithm, making it easy for new entrants to match incumbents and earlier entrants in performance.
+AIs built for applications where human labor is inexpensive and able to easily achieve high accuracy may need to reach a higher MAP before they can find an early adopter. Tasks requiring fine motor skills, for example, have yet to be taken over by robots because human performance sets a very high MAP to overcome. When picking up an object, the AIs powering the robotic hand must gauge an object’s stiffness and weight with a high degree of accuracy, otherwise the hand will damage the object being handled. Humans can very accurately gauge these dimensions with almost no training. Startups attacking high MAP problems must invest more time and capital into acquiring enough data to reach MAP and launch.
+Threading the needle
+Narrow AI can demonstrate impressive gains in a wide range of applications — in the research lab. Building a business around a narrow AI application, on the other hand, requires a new playbook. This process is heavily dependent on the specific use case on all dimensions, and the performance of the algorithm is merely one starting point. There’s no one-size-fits-all approach to moving an algorithm from the research lab to the market, but we hope these ideas will provide a useful blueprint for you to begin.
+Topics
+AI , algorithms , applied AI , Column
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Ivy Nguyen
+Ivy Nguyen is an associate at Zetta Venture Partners .
+View Bio
+June 18
+Los Angeles
+Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.
+REGISTER NOW
+Most Popular
+The US says ASML’s top chip tool may be in China, but how?
+Connie Loizos
+The 11 standout startups from YC’s Demo Day, according to VCs
+Marina Temkin
+Dominic-Madori Davis
+NASA picks Eric Schmidt’s rocket company for Mars mission, setting up a race with SpaceX
+Tim Fernholz
+SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO
+Sean O'Kane
+ChatGPT’s market share slips below 50% for first time
+Ivan Mehta
+The US government’s Anthropic models ban was never about an AI jailbreak
+Zack Whittaker
+The AI layoff wave is becoming a powder keg
+Connie Loizos
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Finding the Goldilocks zone for applied AI
+Ivy Nguyen
+2:00 PM PDT · August 14, 2018
+While Elon Musk and Mark Zuckerberg debate the dangers of a rtificial general i ntelligence , startups applying AI to more narrowly defined problems such as accelerating the performance of sales teams and improving the operating efficiency of manufacturing lines are building billion-dollar businesses. Narrowly defining a problem, however, is only the first step to finding valuable business applications of AI .
+To find the right opportunity around which to build an AI business, startups must apply the “ Goldilocks principle” in several different dimensions to find the sweet spot that is “just right” to begin — not too far in one dimension, not too far in another. Here are some ways for aspiring startup founders to thread the needle with their AI strategy, based on what we’ve learned from working with thousands of AI startups.
+“Just right” prediction time horizons
+Unlike pre- intelligence software, AI responds to the environment in which they operate; algorithms take in data and return an answer or prediction. Depending on the application, that prediction may describe an outcome in the near term, such as tomorrow’s weather, or an outcome many years in the future, such as whether a patient will develop cancer in 20 years. The time horizon of the algorithm’s prediction is critical to its usefulness and to whether it offers an opportunity to build defensibility.
+Algorithms making predictions with long time horizons are difficult to evaluate and improve. For example, an algorithm may use the schedule of a contractor’s previous projects to predict that a particular construction project will fall six months behind schedule and go over budget by 20 percent. Until this new project is completed, the algorithm designer and end user can only tell whether the prediction is directionally correct — that is, whether the project is falling behind or costs are higher.
+Even when the final project numbers end up very close to the predicted numbers, it will be difficult to complete the feedback loop and positively reinforce the algorithm. Many factors may influence complex systems like a construction project, making it difficult to A/B test the prediction to tease out the input variables from unknown confounding factors. The more complex the system, the longer it may take the algorithm to complete a reinforcement cycle, and the more difficult it becomes to precisely train the algorithm.
+While many enterprise customers are open to piloting AI solutions, startups must be able to validate the algorithm’s performance in order to complete the sale. The most convincing way to validate an algorithm is by using the customer’s real-time data, but this approach may be difficult to achieve during a pilot. If the startup does get access to the customer’s data, the prediction time horizon should be short enough that the algorithm can be validated during the pilot period.
+Historic data, if it’s available, can serve as a stopgap to train an algorithm and temporarily validate it via backtesting. Training an algorithm making long time horizon predictions on historic data is risky because processes and environments are more likely to have changed the further back you dig into historic records, making historic data sets less descriptive of present-day conditions.
+In other cases, while the historic data describing outcomes exists for you to train an algorithm, it may not capture the input variable under consideration. In the construction example, that could mean that you found out that sites using blue safety hats are more likely to complete projects on time, but since that hat color wasn’t previously helpful in managing projects, that information wasn’t recorded in the archival records. This data must be captured from scratch, which further delays your time to market.
+Instead of making singular “hero” predictions with long time horizons, AI startups should build multiple algorithms making smaller, simpler predictions with short time horizons. Decomposing an environment into simpler subsystems or processes limits the number of inputs, making them easier to control for confounding factors. The BIM 360 Project IQ Team at Autodesk takes this small prediction approach to areas that contribute to construction project delays. Their models predict safety and score vendor and subcontractor quality/reliability, all of which can be measured while a project is ongoing.
+Shorter time horizons make it easier for the algorithm engineer to monitor its change in performance and take action to quickly improve it, instead of being limited to backtesting on historic data. The shorter the time horizon, the shorter the algorithm’s feedback loop will be. As each cycle through the feedback incrementally compounds the algorithm’s performance, shorter feedback loops are better for building defensibility.
+“Just right” actionability window
+Most algorithms model dynamic systems and return a prediction for a human to act on. Depending on how quickly the system is changing, the algorithm’s output may not remain valid for very long: the prediction may “decay” before the user can take action. In order to be useful to the end user, the algorithm must be designed to accommodate the limitations of computing and human speed.
+In a typical AI -human workflow, the human feeds input data into the algorithm, the algorithm runs calculations on that input data and returns an output that predicts a certain outcome or recommends a course of action; the human interprets that information to decide on a course of action, then takes action. The time it takes the algorithm to compute an answer and the time it takes for a human to act on the output are the two largest bottlenecks in this workflow.
+For most of AI history, slow computational speeds have severely limited the scope of applied AI . An algorithm’s prediction depends on the input data, and the input data represents a snapshot in time at the moment it was recorded. If the environment described by the data changes faster than the algorithm can compute the input data, by the time the algorithm completes its computations and returns a prediction, the prediction will only describe a moment in the past and will not be actionable. For example, the algorithm behind the music app Shazam may have needed several hours to identify a song after first “hearing” it using the computational power of a Windows 95 computer.
+The rise of cloud computing and the development of hardware specially optimized for AI computations has dramatically broadened the scope of areas where applied AI is actionable and affordable. While macro tech advancements can greatly advance applied AI , the algorithm is not totally held hostage to current limits of computation; reinforcement through training also can improve the algorithm’s response time. The more of the same example an algorithm encounters, the more quickly it can skip computations to arrive at a prediction. Thanks to advances in computation and reinforcement, today Shazam takes less than 15 seconds to identify a song.
+Automating the decision and action also could help users make use of predictions that decay too quickly to wait for humans to respond. Opsani is one such company using AI to make decisions that are too numerous and fast-moving for humans to make effectively. Unlike human DevOps, who can only move so fast to optimize performance based on recommendations from an algorithm, Opsani applies AI to both identify and automatically improve operations of applications and cloud infrastructure so its customers can enjoy dramatically better performance.
+Not all applications of AI can be completely automated, however, if the perceived risk is too high for end users to accept, or if regulations mandate that humans must approve the decision.
+“Just right” performance minimums
+Just like software startups launch when they have built a minimum viable product (MVP) in order to collect actionable feedback from initial customers, AI startups should launch when they reach the minimum algorithmic performance (MAP) required by early adopters, so that the algorithm can be trained on more diverse and fresh data sets and avoid becoming overfit to a training set.
+Most applications don’t require 100 percent accuracy to be valuable. For example, a fraud detection algorithm may only immediately catch five percent of fraud cases within 24 hours of when they occur, but human fraud investigators catch 15 percent of fraud cases after a month of analysis. In this case, the MAP is zero, because the fraud detection algorithm could serve as a first filter in order to reduce the number of cases the human investigators must process. The startup can go to market immediately in order to secure access to the large volume of fraud data used for training their algorithm. Over time, the algorithms’ accuracy will improve and reduce the burden on human investigators, freeing them to focus on the most complex cases.
+Startups building algorithms for zero or low MAP applications will be able to launch quickly, but may be continuously looking over their shoulder for copycats, if these copycats appear before the algorithm has reached a high level of performance.
+Startups attacking low MAP problems also should watch out for problems that can be solved with near 100 percent accuracy with a very small training set, where the problem being modeled is relatively simple, with few dimensions to track and few possible variations in outcome.
+AI -powered contract processing is a good example of an application where the algorithm’s performance plateaus quickly. There are thousands of contract types, but most of them share key fields: the parties involved, the items of value being exchanged, time frame, etc. Specific document types like mortgage applications or rental agreements are highly standardized in order to comply with regulation. Across multiple startups, we have seen algorithms that automatically process these documents needing only a few hundred examples to train to an acceptable degree of accuracy before additional examples do little to improve the algorithm, making it easy for new entrants to match incumbents and earlier entrants in performance.
+AIs built for applications where human labor is inexpensive and able to easily achieve high accuracy may need to reach a higher MAP before they can find an early adopter. Tasks requiring fine motor skills, for example, have yet to be taken over by robots because human performance sets a very high MAP to overcome. When picking up an object, the AIs powering the robotic hand must gauge an object’s stiffness and weight with a high degree of accuracy, otherwise the hand will damage the object being handled. Humans can very accurately gauge these dimensions with almost no training. Startups attacking high MAP problems must invest more time and capital into acquiring enough data to reach MAP and launch.
+Threading the needle
+Narrow AI can demonstrate impressive gains in a wide range of applications — in the research lab. Building a business around a narrow AI application, on the other hand, requires a new playbook. This process is heavily dependent on the specific use case on all dimensions, and the performance of the algorithm is merely one starting point. There’s no one-size-fits-all approach to moving an algorithm from the research lab to the market, but we hope these ideas will provide a useful blueprint for you to begin.
+Topics
+AI , algorithms , applied AI , Column
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Ivy Nguyen
+Ivy Nguyen is an associate at Zetta Venture Partners .
+View Bio
+June 18
+Los Angeles
+Get an inside look at what it takes to scale and succeed from leaders at Mach Industries, Founders Fund, and Shinkei Systems. Through candid fireside chats and high-impact networking, you’ll walk away with valuable insights and new connections.
+REGISTER NOW
+Most Popular
+The US says ASML’s top chip tool may be in China, but how?
+Connie Loizos
+The 11 standout startups from YC’s Demo Day, according to VCs
+Marina Temkin
+Dominic-Madori Davis
+NASA picks Eric Schmidt’s rocket company for Mars mission, setting up a race with SpaceX
+Tim Fernholz
+SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO
+Sean O'Kane
+ChatGPT’s market share slips below 50% for first time
+Ivan Mehta
+The US government’s Anthropic models ban was never about an AI jailbreak
+Zack Whittaker
+The AI layoff wave is becoming a powder keg
+Connie Loizos
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":12674,"paragraph_count":43,"sentence_count":72,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Finding the Goldilocks zone for ... | TechCrunch ... While Elon Musk and Mark Zuckerberg debate the dangers of artificial general intelligence, startups applying AI to more narrowly defined problems such as accelerating the performance of sales teams and improving the operating efficiency of manufac
+
+2. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Finding the Goldilocks zone for applied AI Ivy Nguyen 2:00 PM PDT · August 14, 2018 While Elon Musk and Mark Zuckerberg debate the dangers of a rtificial general i ntelligence , startups applying AI to more narrowly defined problems such as accelerating the performance of sales teams and improving the operating efficiency of manufacturing lines are building billion-dollar businesses.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Narrowly defining a problem, however, is only the first step to finding valuable business applications of AI .
+
+4. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=high
+   To find the right opportunity around which to build an AI business, startups must apply the “ Goldilocks principle” in several different dimensions to find the sweet spot that is “just right” to begin — not too far in one dimension, not too far in another.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Here are some ways for aspiring startup founders to thread the needle with their AI strategy, based on what we’ve learned from working with thousands of AI startups.
+
+6. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=high
+   “Just right” prediction time horizons Unlike pre- intelligence software, AI responds to the environment in which they operate; algorithms take in data and return an answer or prediction.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Anthropic, Cursor
+- products: Cursor, ChatGPT
+- people: 暂无公开信息
+- industries: 制造 / 工业, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理
+- business_actions: 发布 / 推出, 合作 / 联盟
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 2, 00, 14, 2018, 20, 360, 95, 15
+- quotes:  Goldilocks principle / just right / Just right / Just right / Just right
+
+## evidence_seed
+
+- company_actions: Narrowly defining a problem, however, is only the first step to finding valuable business applications of AI . / Here are some ways for aspiring startup founders to thread the needle with their AI strategy, based on what we’ve learned from working with thousands of AI startups.
+- case_details: 暂无公开信息
+- workflow_changes: Finding the Goldilocks zone for ... | TechCrunch ... While Elon Musk and Mark Zuckerberg debate the dangers of artificial general intelligence, startups applying AI to more narrowly defined problems such as accelerating the performance of sales teams and improving the operating efficiency of manufac / Finding the Goldilocks zone for applied AI Ivy Nguyen 2:00 PM PDT · August 14, 2018 While Elon Musk and Mark Zuckerberg debate the dangers of a rtificial general i ntelligence , startups applying AI to more narrowly defined problems such as accelerating the performance of sales teams and improving the operating efficiency of manufacturing lines are building billion-dollar businesses.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Finding the Goldilocks zone for ... | TechCrunch ... While Elon Musk and Mark Zuckerberg debate the dangers of artificial general intelligence, startups applying AI to more narrowly defined problems such as accelerating the performance of sales teams and improving the operating efficiency of manufac
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
