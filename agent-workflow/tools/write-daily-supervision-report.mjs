@@ -397,15 +397,29 @@ function buildBusinessSignalsLane() {
     pagesRunUrl: pages.latest_run?.url || "",
     localSync: localGitSyncState(),
   };
+  const selectedCount = selection?.selectedCount ?? sameDateCards.length;
+  const businessDataHealthy =
+    exists(dataFile) &&
+    exists(graphFile) &&
+    activeDate === date &&
+    selectedCount === 10 &&
+    cardFiles >= 10 &&
+    evidence.qualityGateStatus === "passed";
 
   if (windowPassed) {
     if (!exists(dataFile)) addProblem(problems, `missing business-signal data file: ${rel(dataFile)}`);
     if (activeDate !== date) addProblem(problems, `business-signal activeDate is ${activeDate || "missing"}, expected ${date}`);
     if (!exists(graphFile)) addProblem(problems, `missing intelligence map data: ${rel(graphFile)}`);
-    if ((selection?.selectedCount ?? sameDateCards.length) !== 10) {
-      addProblem(problems, `Top10 selected count is ${selection?.selectedCount ?? sameDateCards.length}, expected 10`);
+    if (selectedCount !== 10) {
+      addProblem(problems, `Top10 selected count is ${selectedCount}, expected 10`);
     }
-    if (selection?.supplyConstrained) addProblem(problems, "frontstage selection is supply constrained");
+    if (selection?.supplyConstrained) {
+      if (selectedCount !== 10 || evidence.qualityGateStatus !== "passed") {
+        addProblem(problems, "frontstage selection is supply constrained");
+      } else {
+        warnings.push("frontstage selection reported supply constrained after a valid Top10 and passed gates; treat as supply warning, not data failure");
+      }
+    }
     if (cardFiles < 10) addProblem(problems, `signal card files ${cardFiles} below 10`);
     if (!exists(manifestFile)) warnings.push(`missing same-date persistent asset manifest: ${rel(manifestFile)}`);
     if (evidence.qualityGateStatus === "failed") addProblem(problems, `quality gate failed: ${rel(qualityGateFile)}`);
@@ -438,7 +452,13 @@ function buildBusinessSignalsLane() {
       addProblem(problems, `Business Signals workflow is ${gh.latest_run.status}; downstream tasks should wait`, "waiting");
       actions.push("wait for Business Signals workflow completion before declaring data missing");
     } else if (gh.latest_run?.conclusion && gh.latest_run.conclusion !== "success") {
-      addProblem(problems, `Business Signals workflow conclusion is ${gh.latest_run.conclusion}`);
+      if (mergedPr) {
+        warnings.push(`latest Business Signals workflow conclusion is ${gh.latest_run.conclusion}, but same-date PR already merged: ${mergedPr.url}`);
+      } else if (businessDataHealthy) {
+        addProblem(problems, `Business Signals publication workflow conclusion is ${gh.latest_run.conclusion} after healthy same-date data; repair branch / PR / publication only`);
+      } else {
+        addProblem(problems, `Business Signals workflow conclusion is ${gh.latest_run.conclusion}`);
+      }
     }
     if (gh.pr_warning) warnings.push(gh.pr_warning);
   } else if (!gh.available && isTodayOrPast(date)) {
