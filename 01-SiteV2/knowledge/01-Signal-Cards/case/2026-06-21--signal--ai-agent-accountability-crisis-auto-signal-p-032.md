@@ -2,15 +2,15 @@
 id: SIG-20260621-A09
 type: signal_card
 signal_type: case
-title: "AI Agent Accountability Crisis 记录企业应用场景：地产开发和建筑设计流程"
+title: "The AI Agent Accountability Crisis: Why Governance Isn&#8217;t Keeping Up With Deployment"
 date: 2026-06-21
 status: published
 source_title: "The AI Agent Accountability Crisis: Why Governance Isn&#8217;t Keeping Up With Deployment"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-034"]
 pool_refs: ["P-032"]
@@ -30,9 +30,9 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-governance"]
   function: ["function-engineering"]
-  scenario: ["scenario-construction-real-estate"]
+  scenario: ["scenario-construction-real-estate", "scenario-agent-governance"]
   customer: ["customer-developer-team", "customer-enterprise"]
   evidence: ["evidence-customer-adoption"]
   stage: []
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "AI Agent Accountability Crisis"
 
 frontend:
-  displayTitle: "AI Agent Accountability Crisis 记录企业应用场景：地产开发和建筑设计流程"
+  displayTitle: "The AI Agent Accountability Crisis: Why Governance Isn&#8217;t Keeping Up With Deployment"
   sourceLinks:
     - "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/"
 ---
 
-# AI Agent Accountability Crisis 记录企业应用场景：地产开发和建筑设计流程
+# The AI Agent Accountability Crisis: Why Governance Isn&#8217;t Keeping Up With Deployment
 
 ## 新闻事实
 

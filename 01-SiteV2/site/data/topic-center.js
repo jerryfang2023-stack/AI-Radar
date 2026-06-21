@@ -2,7 +2,7 @@ window.WaveSightTopicCenter = {
   "meta": {
     "version": "V2.2.2-source-title",
     "date": "2026-06-21",
-    "generatedAt": "2026-06-21T04:58:25.980Z",
+    "generatedAt": "2026-06-21T05:09:35.279Z",
     "source": "business-signals + first-line-viewpoints + community-intelligence",
     "rule": "boss_decision_topic_engine",
     "ruleLabel": "老板决策型选题机制",
@@ -16,8 +16,8 @@ window.WaveSightTopicCenter = {
       "styleFit": 5
     },
     "inputCounts": {
-      "businessSignals": 21,
-      "firstLineViewpoints": 62,
+      "businessSignals": 17,
+      "firstLineViewpoints": 42,
       "communityItems": 61
     },
     "sources": {
@@ -30,7 +30,7 @@ window.WaveSightTopicCenter = {
       "big_small_contrast": 1,
       "person_story": 1
     },
-    "leadTopicId": "money_leak-chatgpt-新增-scheduled-侧边栏-统一管理定时任务"
+    "leadTopicId": "money_leak-tigera-ai-agent-问责危机-治理没有跟上部署速度"
   },
   "sources": [
     {
@@ -84,32 +84,32 @@ window.WaveSightTopicCenter = {
   ],
   "topics": [
     {
-      "id": "money_leak-chatgpt-新增-scheduled-侧边栏-统一管理定时任务",
+      "id": "money_leak-tigera-ai-agent-问责危机-治理没有跟上部署速度",
       "sourceId": "money_leak",
       "sourceName": "漏钱型",
       "sourceDesc": "订单入口、转化漏斗、线索流失",
       "type": "boss_decision_topic",
-      "title": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务",
-      "spreadTitle": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务",
+      "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
+      "spreadTitle": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
-      "relevance": "OpenAI 为 ChatGPT 新增「Scheduled」侧边栏页面，集中管理所有定时任务。用户可查看、暂停、编辑或删除任务。研究任务可搜索网页和已连接应用，仅在内容变化时发送提醒。所有任务速度更快、可靠性更高，用户可按具体时间或早晨、…；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
+      "relevance": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
       "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
       "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
       "oldFrame": "AI 是一个提效工具。",
       "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
       "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
-      "evidence": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
+      "evidence": "Tigera：AI Agent 问责危机，治理没有跟上部署速度；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260621-A21",
-            "title": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务",
-            "source": "The Decoder：AI News（RSS）",
-            "url": "https://the-decoder.com/chatgpt-keeps-creeping-toward-becoming-your-ai-personal-assistant-with-new-scheduled-task-controls",
-            "note": "OpenAI 为 ChatGPT 新增「Scheduled」侧边栏页面，集中管理所有定时任务。用户可查看、暂停、编辑或删除任务。研究任务可搜索网页和已连接应用，仅在内容变化时发送提醒。所有任务速度更快、可靠性更高，用户可按具体时间或早晨、下午、晚间时段触发。该功能面向 Plus、Pro、Business、Enterprise 用户，活跃任务数量因套餐而异，…"
+            "id": "SIG-20260621-A09",
+            "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
+            "source": "Tigera Blog (Calico / AI Security)",
+            "url": "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/",
+            "note": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。"
           }
         ],
         "viewpoints": [],
@@ -124,8 +124,8 @@ window.WaveSightTopicCenter = {
           }
         ]
       },
-      "source": "The Decoder：AI News（RSS）",
-      "url": "https://the-decoder.com/chatgpt-keeps-creeping-toward-becoming-your-ai-personal-assistant-with-new-scheduled-task-controls",
+      "source": "Tigera Blog (Calico / AI Security)",
+      "url": "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/",
       "date": "2026-06-21",
       "score": 97,
       "grade": "S",
@@ -141,7 +141,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "开头直接问漏钱",
-          "note": "不要先讲 ChatGPT 新增「Scheduled」侧边栏，… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+          "note": "不要先讲 AI Agent 问责危机，治理没有跟上部署速度 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
         },
         {
           "title": "中段拆入口链路",
@@ -158,7 +158,7 @@ window.WaveSightTopicCenter = {
         "结尾给一句新判断，不复述要点"
       ],
       "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
-      "originalTitle": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务"
+      "originalTitle": "Tigera：AI Agent 问责危机，治理没有跟上部署速度"
     },
     {
       "id": "small_role-bcg-科技服务业存在-2000-亿美元-ai-机会",
@@ -170,13 +170,13 @@ window.WaveSightTopicCenter = {
       "spreadTitle": "BCG：科技服务业存在 2000 亿美元 AI 机会",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位、一个明确动作、一个可验收结果里。",
-      "relevance": "来源材料显示，Bcg 的AI 商业动作涉及销售和收入团队流程。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
+      "relevance": "BCG 估算科技服务业存在 2000 亿美元 AI 机会，信号指向企业技术服务预算和 AI 转型需求。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
       "bossPain": "老板最怕 AI 项目太大、太贵、太慢，最后没人用。",
       "moneyLine": "一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。",
       "oldFrame": "做一个什么都能干的 AI 平台。",
       "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
       "actionHint": "先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。",
-      "evidence": "BCG：科技服务业存在 2000 亿美元 AI 机会；Bcg 记录企业应用场景：地产开发和建筑设计流程；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
+      "evidence": "BCG：科技服务业存在 2000 亿美元 AI 机会；开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
@@ -186,15 +186,15 @@ window.WaveSightTopicCenter = {
             "title": "BCG：科技服务业存在 2000 亿美元 AI 机会",
             "source": "bcg.com",
             "url": "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services",
-            "note": "来源材料显示，Bcg 的AI 商业动作涉及销售和收入团队流程。"
+            "note": "BCG 估算科技服务业存在 2000 亿美元 AI 机会，信号指向企业技术服务预算和 AI 转型需求。"
           },
           {
             "kind": "business_signal",
-            "id": "SIG-20260621-A03",
-            "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
-            "source": "bcg.com",
-            "url": "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai",
-            "note": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。"
+            "id": "SIG-20260621-A23",
+            "title": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
+            "source": "IT之家（RSS）",
+            "url": "https://www.ithome.com/0/966/527.htm",
+            "note": "IT之家报道 Netflix 工程师开源 Headroom，称其可节省 60%-95% Token 消耗，信号指向 AI 工程成本优化。"
           }
         ],
         "viewpoints": [],
@@ -246,42 +246,42 @@ window.WaveSightTopicCenter = {
       "originalTitle": "BCG：科技服务业存在 2000 亿美元 AI 机会"
     },
     {
-      "id": "counterintuitive-开源工具-headroom-爆火-netflix-工程师打造-声称可节省-60-95-token-消耗量",
+      "id": "counterintuitive-开源工具-headroom-爆火-netflix-工程师称可节省-60-95-token-消耗",
       "sourceId": "counterintuitive",
       "sourceName": "反常识型",
       "sourceDesc": "推翻流行说法，形成可传播判断",
       "type": "boss_decision_topic",
-      "title": "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量",
-      "spreadTitle": "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量",
+      "title": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
+      "spreadTitle": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "反常识点在于：AI 越强，越不是所有人都被替代，而是会拆任务、会验收结果的人更值钱。",
-      "relevance": "Netflix 高级工程师 Tejas Chopra 开发的开源工具 Headroom（v0.26.0）在 AI 应用与 LLM 间建立本地透明压缩层，通过压缩 JSON、代码、RAG 片段和对话历史等冗余数据减少 Token 消耗，支持…；社群里“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”的讨论也在提醒老板，问题不再只是怎么做。",
+      "relevance": "IT之家报道 Netflix 工程师开源 Headroom，称其可节省 60%-95% Token 消耗，信号指向 AI 工程成本优化。；社群里“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”的讨论也在提醒老板，问题不再只是怎么做。",
       "bossPain": "工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。",
       "moneyLine": "工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。",
       "oldFrame": "追最新 AI 工具。",
       "newFrame": "先沉淀任务、语料、步骤和验收标准，再让 AI 接手。",
       "actionHint": "今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。",
-      "evidence": "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量；Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+      "evidence": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗；为什么AI没有取代软件工程师，也不会；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
             "id": "SIG-20260621-A23",
-            "title": "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量",
+            "title": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
             "source": "IT之家（RSS）",
             "url": "https://www.ithome.com/0/966/527.htm",
-            "note": "Netflix 高级工程师 Tejas Chopra 开发的开源工具 Headroom（v0.26.0）在 AI 应用与 LLM 间建立本地透明压缩层，通过压缩 JSON、代码、RAG 片段和对话历史等冗余数据减少 Token 消耗，支持可逆压缩与 CCR 缓存机制。实测代码搜索场景 Token 从 17765 降至 1408（节省 92%），SRE 事故…"
+            "note": "IT之家报道 Netflix 工程师开源 Headroom，称其可节省 60%-95% Token 消耗，信号指向 AI 工程成本优化。"
           }
         ],
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2067671912038240487",
-            "title": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
-            "source": "Claude",
-            "url": "https://x.com/claudeai/status/2067671912038240487",
-            "note": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。"
+            "id": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+            "title": "为什么AI没有取代软件工程师，也不会",
+            "source": "Simon Willison's Blog",
+            "url": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+            "note": "为什么AI没有取代软件工程师，也不会"
           }
         ],
         "communityItems": [
@@ -329,45 +329,45 @@ window.WaveSightTopicCenter = {
         "结尾给一句新判断，不复述要点"
       ],
       "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
-      "originalTitle": "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量"
+      "originalTitle": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗"
     },
     {
-      "id": "big_small_contrast-harvey-ai-s-forward-deployed-engineers-记录企业应用场景-模型部署和算力调用",
+      "id": "big_small_contrast-lmarena-的-17-亿美元愿景-评测平台如何走向商业化",
       "sourceId": "big_small_contrast",
       "sourceName": "大小对照型",
       "sourceDesc": "大融资对照小生意，大模型对照小岗位",
       "type": "boss_decision_topic",
-      "title": "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用",
-      "spreadTitle": "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用",
+      "title": "LMArena 的 17 亿美元愿景：评测平台如何走向商业化",
+      "spreadTitle": "LMArena 的 17 亿美元愿景：评测平台如何走向商业化",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "大新闻负责告诉你资本往哪里押，小机会负责告诉你老板明天愿意为什么付钱。",
-      "relevance": "来源材料显示，Harvey AI's Forward Deployed Engineers 的客户部署或应用案例涉及模型部署和算力调用；原文同时出现 $3B 等数字。；同时社群里的“这篇产品调研干货：帮你避开90%独立开发者起步坑”说明一线需求还在配置、流程和交付。",
+      "relevance": "来源材料显示，LMArena 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 $150m、$1.7B 等数字。；同时社群里的“这篇产品调研干货：帮你避开90%独立开发者起步坑”说明一线需求还在配置、流程和交付。",
       "bossPain": "老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。",
       "moneyLine": "大公司赚基础设施的钱，小服务商赚落地第一公里的钱。",
       "oldFrame": "AI 创业只能跟大模型和融资有关。",
       "newFrame": "普通人的 AI 机会在帮老板跨过配置、流程和交付门槛。",
       "actionHint": "把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。",
-      "evidence": "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用；Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
+      "evidence": "LMArena 的 17 亿美元愿景：评测平台如何走向商业化；与客服代表取得成功的主要变量是，您是否可以让客服代表了解完成工作所需的上下文；其中一个主要因素是，您是否可以为该客服代表创建一个人类也能理解的共享工作区域。这就是Agent使用文件系统如此重要的原因之一。它创建了一个统一的系统，个人和Ag…；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260621-A13",
-            "title": "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用",
-            "source": "getperspective.ai",
-            "url": "https://getperspective.ai/blog/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026",
-            "note": "来源材料显示，Harvey AI's Forward Deployed Engineers 的客户部署或应用案例涉及模型部署和算力调用；原文同时出现 $3B 等数字。"
+            "id": "SIG-20260621-A02",
+            "title": "LMArena 的 17 亿美元愿景：评测平台如何走向商业化",
+            "source": "Latent Space",
+            "url": "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision",
+            "note": "来源材料显示，LMArena 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 $150m、$1.7B 等数字。"
           }
         ],
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2067671912038240487",
-            "title": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
-            "source": "Claude",
-            "url": "https://x.com/claudeai/status/2067671912038240487",
-            "note": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。"
+            "id": "2068068247413694532",
+            "title": "与客服代表取得成功的主要变量是，您是否可以让客服代表了解完成工作所需的上下文；其中一个主要因素是，您是否可以为该客服代表创建一个人类也能理解的共享工作区域。这就是Agent使用文件系统如此重要的原因之一。它创建了一个统一的系统，个人和Ag…",
+            "source": "Aaron Levie",
+            "url": "https://x.com/levie/status/2068068247413694532",
+            "note": "与客服代表取得成功的主要变量是，您是否可以让客服代表了解完成工作所需的上下文；其中一个主要因素是，您是否可以为该客服代表创建一个人类也能理解的共享工作区域。这就是Agent使用文件系统如此重要的原因之一。它创建了一个统一的系统，个人和Agent都可以在其中工作以传递数据。 “他们需要的是一个工作集：计划、注释、任务列表、政策、草案、摘要、日志、更正、决定等…"
           }
         ],
         "communityItems": [
@@ -381,8 +381,8 @@ window.WaveSightTopicCenter = {
           }
         ]
       },
-      "source": "getperspective.ai",
-      "url": "https://getperspective.ai/blog/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026",
+      "source": "Latent Space",
+      "url": "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision",
       "date": "2026-06-21",
       "score": 93,
       "grade": "S",
@@ -415,7 +415,7 @@ window.WaveSightTopicCenter = {
         "结尾给一句新判断，不复述要点"
       ],
       "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
-      "originalTitle": "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用"
+      "originalTitle": "LMArena 的 17 亿美元愿景：评测平台如何走向商业化"
     },
     {
       "id": "person_story-普通人怎么赚到1000万",
@@ -433,27 +433,27 @@ window.WaveSightTopicCenter = {
       "oldFrame": "写 AI 就要讲技术和趋势。",
       "newFrame": "写给老板的 AI 内容，要先有人、有场景、有结果。",
       "actionHint": "从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。",
-      "evidence": "普通人怎么赚到1000万？；开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量；Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
+      "evidence": "普通人怎么赚到1000万？；开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗；为什么AI没有取代软件工程师，也不会",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
             "id": "SIG-20260621-A23",
-            "title": "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量",
+            "title": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
             "source": "IT之家（RSS）",
             "url": "https://www.ithome.com/0/966/527.htm",
-            "note": "Netflix 高级工程师 Tejas Chopra 开发的开源工具 Headroom（v0.26.0）在 AI 应用与 LLM 间建立本地透明压缩层，通过压缩 JSON、代码、RAG 片段和对话历史等冗余数据减少 Token 消耗，支持可逆压缩与 CCR 缓存机制。实测代码搜索场景 Token 从 17765 降至 1408（节省 92%），SRE 事故…"
+            "note": "IT之家报道 Netflix 工程师开源 Headroom，称其可节省 60%-95% Token 消耗，信号指向 AI 工程成本优化。"
           }
         ],
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2067671912038240487",
-            "title": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
-            "source": "Claude",
-            "url": "https://x.com/claudeai/status/2067671912038240487",
-            "note": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。"
+            "id": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+            "title": "为什么AI没有取代软件工程师，也不会",
+            "source": "Simon Willison's Blog",
+            "url": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+            "note": "为什么AI没有取代软件工程师，也不会"
           }
         ],
         "communityItems": [
@@ -519,27 +519,27 @@ window.WaveSightTopicCenter = {
       "oldFrame": "AI 是员工自己研究的新工具。",
       "newFrame": "AI 是同行正在重做经营速度的生产系统。",
       "actionHint": "每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？",
-      "evidence": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘；ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务；Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
+      "evidence": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘；Tigera：AI Agent 问责危机，治理没有跟上部署速度；为什么AI没有取代软件工程师，也不会",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260621-A21",
-            "title": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务",
-            "source": "The Decoder：AI News（RSS）",
-            "url": "https://the-decoder.com/chatgpt-keeps-creeping-toward-becoming-your-ai-personal-assistant-with-new-scheduled-task-controls",
-            "note": "OpenAI 为 ChatGPT 新增「Scheduled」侧边栏页面，集中管理所有定时任务。用户可查看、暂停、编辑或删除任务。研究任务可搜索网页和已连接应用，仅在内容变化时发送提醒。所有任务速度更快、可靠性更高，用户可按具体时间或早晨、下午、晚间时段触发。该功能面向 Plus、Pro、Business、Enterprise 用户，活跃任务数量因套餐而异，…"
+            "id": "SIG-20260621-A09",
+            "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
+            "source": "Tigera Blog (Calico / AI Security)",
+            "url": "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/",
+            "note": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。"
           }
         ],
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2067671912038240487",
-            "title": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
-            "source": "Claude",
-            "url": "https://x.com/claudeai/status/2067671912038240487",
-            "note": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。"
+            "id": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+            "title": "为什么AI没有取代软件工程师，也不会",
+            "source": "Simon Willison's Blog",
+            "url": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+            "note": "为什么AI没有取代软件工程师，也不会"
           }
         ],
         "communityItems": [
@@ -588,92 +588,6 @@ window.WaveSightTopicCenter = {
       ],
       "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
       "originalTitle": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘"
-    },
-    {
-      "id": "save_headcount-bcg-记录企业应用场景-地产开发和建筑设计流程",
-      "sourceId": "save_headcount",
-      "sourceName": "省人型",
-      "sourceDesc": "少招人、少返工、少加班",
-      "type": "boss_decision_topic",
-      "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
-      "spreadTitle": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
-      "audience": "企业老板 / 创业者 / 业务负责人",
-      "core": "AI 进入企业的第一步，不是替代一个完整的人，而是接住岗位里反复发生、规则清楚、结果可验收的动作。",
-      "relevance": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。；这类信号比“AI 很强”更接近老板的组织账。",
-      "bossPain": "人越招越多，流程没有变短，管理成本反而被重复动作拖住。",
-      "moneyLine": "少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。",
-      "oldFrame": "AI 上线就是裁员。",
-      "newFrame": "AI 上线的第一阶段，是把岗位动作拆小，让公司少招重复岗位。",
-      "actionHint": "选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。",
-      "evidence": "Bcg 记录企业应用场景：地产开发和建筑设计流程；Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
-      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
-      "sourceInputs": {
-        "businessSignals": [
-          {
-            "kind": "business_signal",
-            "id": "SIG-20260621-A03",
-            "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
-            "source": "bcg.com",
-            "url": "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai",
-            "note": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。"
-          }
-        ],
-        "viewpoints": [
-          {
-            "kind": "first_line_viewpoint",
-            "id": "2067671912038240487",
-            "title": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
-            "source": "Claude",
-            "url": "https://x.com/claudeai/status/2067671912038240487",
-            "note": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。"
-          }
-        ],
-        "communityItems": [
-          {
-            "kind": "community_intelligence",
-            "id": "71c050f6ace65a",
-            "title": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
-            "source": "生财有术",
-            "url": "https://scys.com/",
-            "note": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP 生财的圈友们大家好，我是诗意听涛，目前我主要围绕出海游戏站来做业务"
-          }
-        ]
-      },
-      "source": "bcg.com",
-      "url": "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai",
-      "date": "2026-06-21",
-      "score": 90,
-      "grade": "S",
-      "priority": "公众号主稿",
-      "scoreBreakdown": {
-        "bossPain": 23,
-        "moneyRelation": 23,
-        "talkability": 16,
-        "spreadability": 13,
-        "actionability": 10,
-        "styleFit": 5
-      },
-      "angles": [
-        {
-          "title": "用岗位动作替代岗位名称",
-          "note": "不要写 AI 替代某个人，写 AI 先替代接听、归档、质检、催办、汇总这类动作。"
-        },
-        {
-          "title": "把省人写成管理账",
-          "note": "老板关心的不是炫技，是少招人、少返工、少培训。"
-        },
-        {
-          "title": "给一个当天可做的小动作",
-          "note": "用 地产开发和建筑设计流程 做例子，把大流程拆成一个可验收动作。"
-        }
-      ],
-      "writingStructure": [
-        "开头 3 句内给冲突或数字",
-        "中段按现象 -> 算账 -> 坑 -> 解法推进",
-        "结尾给一句新判断，不复述要点"
-      ],
-      "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
-      "originalTitle": "Bcg 记录企业应用场景：地产开发和建筑设计流程"
     },
     {
       "id": "money_leak-汇丰银行与google-cloud扩大ai银行合作",
@@ -4824,32 +4738,32 @@ window.WaveSightTopicCenter = {
   ],
   "grouped": {
     "lead": {
-      "id": "money_leak-chatgpt-新增-scheduled-侧边栏-统一管理定时任务",
+      "id": "money_leak-tigera-ai-agent-问责危机-治理没有跟上部署速度",
       "sourceId": "money_leak",
       "sourceName": "漏钱型",
       "sourceDesc": "订单入口、转化漏斗、线索流失",
       "type": "boss_decision_topic",
-      "title": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务",
-      "spreadTitle": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务",
+      "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
+      "spreadTitle": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
-      "relevance": "OpenAI 为 ChatGPT 新增「Scheduled」侧边栏页面，集中管理所有定时任务。用户可查看、暂停、编辑或删除任务。研究任务可搜索网页和已连接应用，仅在内容变化时发送提醒。所有任务速度更快、可靠性更高，用户可按具体时间或早晨、…；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
+      "relevance": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
       "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
       "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
       "oldFrame": "AI 是一个提效工具。",
       "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
       "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
-      "evidence": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
+      "evidence": "Tigera：AI Agent 问责危机，治理没有跟上部署速度；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260621-A21",
-            "title": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务",
-            "source": "The Decoder：AI News（RSS）",
-            "url": "https://the-decoder.com/chatgpt-keeps-creeping-toward-becoming-your-ai-personal-assistant-with-new-scheduled-task-controls",
-            "note": "OpenAI 为 ChatGPT 新增「Scheduled」侧边栏页面，集中管理所有定时任务。用户可查看、暂停、编辑或删除任务。研究任务可搜索网页和已连接应用，仅在内容变化时发送提醒。所有任务速度更快、可靠性更高，用户可按具体时间或早晨、下午、晚间时段触发。该功能面向 Plus、Pro、Business、Enterprise 用户，活跃任务数量因套餐而异，…"
+            "id": "SIG-20260621-A09",
+            "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
+            "source": "Tigera Blog (Calico / AI Security)",
+            "url": "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/",
+            "note": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。"
           }
         ],
         "viewpoints": [],
@@ -4864,8 +4778,8 @@ window.WaveSightTopicCenter = {
           }
         ]
       },
-      "source": "The Decoder：AI News（RSS）",
-      "url": "https://the-decoder.com/chatgpt-keeps-creeping-toward-becoming-your-ai-personal-assistant-with-new-scheduled-task-controls",
+      "source": "Tigera Blog (Calico / AI Security)",
+      "url": "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/",
       "date": "2026-06-21",
       "score": 97,
       "grade": "S",
@@ -4881,7 +4795,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "开头直接问漏钱",
-          "note": "不要先讲 ChatGPT 新增「Scheduled」侧边栏，… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+          "note": "不要先讲 AI Agent 问责危机，治理没有跟上部署速度 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
         },
         {
           "title": "中段拆入口链路",
@@ -4902,32 +4816,32 @@ window.WaveSightTopicCenter = {
     "byEngine": {
       "money_leak": [
         {
-          "id": "money_leak-chatgpt-新增-scheduled-侧边栏-统一管理定时任务",
+          "id": "money_leak-tigera-ai-agent-问责危机-治理没有跟上部署速度",
           "sourceId": "money_leak",
           "sourceName": "漏钱型",
           "sourceDesc": "订单入口、转化漏斗、线索流失",
           "type": "boss_decision_topic",
-          "title": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务",
-          "spreadTitle": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务",
+          "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
+          "spreadTitle": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
-          "relevance": "OpenAI 为 ChatGPT 新增「Scheduled」侧边栏页面，集中管理所有定时任务。用户可查看、暂停、编辑或删除任务。研究任务可搜索网页和已连接应用，仅在内容变化时发送提醒。所有任务速度更快、可靠性更高，用户可按具体时间或早晨、…；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
+          "relevance": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
           "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
           "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
           "oldFrame": "AI 是一个提效工具。",
           "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
           "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
-          "evidence": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
+          "evidence": "Tigera：AI Agent 问责危机，治理没有跟上部署速度；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260621-A21",
-                "title": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务",
-                "source": "The Decoder：AI News（RSS）",
-                "url": "https://the-decoder.com/chatgpt-keeps-creeping-toward-becoming-your-ai-personal-assistant-with-new-scheduled-task-controls",
-                "note": "OpenAI 为 ChatGPT 新增「Scheduled」侧边栏页面，集中管理所有定时任务。用户可查看、暂停、编辑或删除任务。研究任务可搜索网页和已连接应用，仅在内容变化时发送提醒。所有任务速度更快、可靠性更高，用户可按具体时间或早晨、下午、晚间时段触发。该功能面向 Plus、Pro、Business、Enterprise 用户，活跃任务数量因套餐而异，…"
+                "id": "SIG-20260621-A09",
+                "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
+                "source": "Tigera Blog (Calico / AI Security)",
+                "url": "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/",
+                "note": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。"
               }
             ],
             "viewpoints": [],
@@ -4942,8 +4856,8 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "The Decoder：AI News（RSS）",
-          "url": "https://the-decoder.com/chatgpt-keeps-creeping-toward-becoming-your-ai-personal-assistant-with-new-scheduled-task-controls",
+          "source": "Tigera Blog (Calico / AI Security)",
+          "url": "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/",
           "date": "2026-06-21",
           "score": 97,
           "grade": "S",
@@ -4959,7 +4873,7 @@ window.WaveSightTopicCenter = {
           "angles": [
             {
               "title": "开头直接问漏钱",
-              "note": "不要先讲 ChatGPT 新增「Scheduled」侧边栏，… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+              "note": "不要先讲 AI Agent 问责危机，治理没有跟上部署速度 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
             },
             {
               "title": "中段拆入口链路",
@@ -4980,42 +4894,42 @@ window.WaveSightTopicCenter = {
       ],
       "save_headcount": [
         {
-          "id": "save_headcount-bcg-记录企业应用场景-地产开发和建筑设计流程",
+          "id": "save_headcount-开源工具-headroom-爆火-netflix-工程师称可节省-60-95-token-消耗",
           "sourceId": "save_headcount",
           "sourceName": "省人型",
           "sourceDesc": "少招人、少返工、少加班",
           "type": "boss_decision_topic",
-          "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
-          "spreadTitle": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
+          "title": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
+          "spreadTitle": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "AI 进入企业的第一步，不是替代一个完整的人，而是接住岗位里反复发生、规则清楚、结果可验收的动作。",
-          "relevance": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。；这类信号比“AI 很强”更接近老板的组织账。",
+          "relevance": "IT之家报道 Netflix 工程师开源 Headroom，称其可节省 60%-95% Token 消耗，信号指向 AI 工程成本优化。；这类信号比“AI 很强”更接近老板的组织账。",
           "bossPain": "人越招越多，流程没有变短，管理成本反而被重复动作拖住。",
           "moneyLine": "少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。",
           "oldFrame": "AI 上线就是裁员。",
           "newFrame": "AI 上线的第一阶段，是把岗位动作拆小，让公司少招重复岗位。",
           "actionHint": "选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。",
-          "evidence": "Bcg 记录企业应用场景：地产开发和建筑设计流程；Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗；与客服代表取得成功的主要变量是，您是否可以让客服代表了解完成工作所需的上下文；其中一个主要因素是，您是否可以为该客服代表创建一个人类也能理解的共享工作区域。这就是Agent使用文件系统如此重要的原因之一。它创建了一个统一的系统，个人和Ag…；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260621-A03",
-                "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
-                "source": "bcg.com",
-                "url": "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai",
-                "note": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。"
+                "id": "SIG-20260621-A23",
+                "title": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
+                "source": "IT之家（RSS）",
+                "url": "https://www.ithome.com/0/966/527.htm",
+                "note": "IT之家报道 Netflix 工程师开源 Headroom，称其可节省 60%-95% Token 消耗，信号指向 AI 工程成本优化。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2067671912038240487",
-                "title": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
-                "source": "Claude",
-                "url": "https://x.com/claudeai/status/2067671912038240487",
-                "note": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。"
+                "id": "2068068247413694532",
+                "title": "与客服代表取得成功的主要变量是，您是否可以让客服代表了解完成工作所需的上下文；其中一个主要因素是，您是否可以为该客服代表创建一个人类也能理解的共享工作区域。这就是Agent使用文件系统如此重要的原因之一。它创建了一个统一的系统，个人和Ag…",
+                "source": "Aaron Levie",
+                "url": "https://x.com/levie/status/2068068247413694532",
+                "note": "与客服代表取得成功的主要变量是，您是否可以让客服代表了解完成工作所需的上下文；其中一个主要因素是，您是否可以为该客服代表创建一个人类也能理解的共享工作区域。这就是Agent使用文件系统如此重要的原因之一。它创建了一个统一的系统，个人和Agent都可以在其中工作以传递数据。 “他们需要的是一个工作集：计划、注释、任务列表、政策、草案、摘要、日志、更正、决定等…"
               }
             ],
             "communityItems": [
@@ -5029,8 +4943,8 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "bcg.com",
-          "url": "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai",
+          "source": "IT之家（RSS）",
+          "url": "https://www.ithome.com/0/966/527.htm",
           "date": "2026-06-21",
           "score": 90,
           "grade": "S",
@@ -5054,7 +4968,7 @@ window.WaveSightTopicCenter = {
             },
             {
               "title": "给一个当天可做的小动作",
-              "note": "用 地产开发和建筑设计流程 做例子，把大流程拆成一个可验收动作。"
+              "note": "用 开源工具 Headroom 爆火：Netflix … 做例子，把大流程拆成一个可验收动作。"
             }
           ],
           "writingStructure": [
@@ -5082,27 +4996,27 @@ window.WaveSightTopicCenter = {
           "oldFrame": "AI 是员工自己研究的新工具。",
           "newFrame": "AI 是同行正在重做经营速度的生产系统。",
           "actionHint": "每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？",
-          "evidence": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘；ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务；Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
+          "evidence": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘；Tigera：AI Agent 问责危机，治理没有跟上部署速度；为什么AI没有取代软件工程师，也不会",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260621-A21",
-                "title": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务",
-                "source": "The Decoder：AI News（RSS）",
-                "url": "https://the-decoder.com/chatgpt-keeps-creeping-toward-becoming-your-ai-personal-assistant-with-new-scheduled-task-controls",
-                "note": "OpenAI 为 ChatGPT 新增「Scheduled」侧边栏页面，集中管理所有定时任务。用户可查看、暂停、编辑或删除任务。研究任务可搜索网页和已连接应用，仅在内容变化时发送提醒。所有任务速度更快、可靠性更高，用户可按具体时间或早晨、下午、晚间时段触发。该功能面向 Plus、Pro、Business、Enterprise 用户，活跃任务数量因套餐而异，…"
+                "id": "SIG-20260621-A09",
+                "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
+                "source": "Tigera Blog (Calico / AI Security)",
+                "url": "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/",
+                "note": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2067671912038240487",
-                "title": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
-                "source": "Claude",
-                "url": "https://x.com/claudeai/status/2067671912038240487",
-                "note": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。"
+                "id": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+                "title": "为什么AI没有取代软件工程师，也不会",
+                "source": "Simon Willison's Blog",
+                "url": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+                "note": "为什么AI没有取代软件工程师，也不会"
               }
             ],
             "communityItems": [
@@ -5154,42 +5068,42 @@ window.WaveSightTopicCenter = {
       ],
       "pitfall": [
         {
-          "id": "pitfall-bcg-记录企业应用场景-地产开发和建筑设计流程",
+          "id": "pitfall-tigera-ai-agent-问责危机-治理没有跟上部署速度",
           "sourceId": "pitfall",
           "sourceName": "避坑型",
           "sourceDesc": "工具乱买、权限失控、流程没拆",
           "type": "boss_decision_topic",
-          "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
-          "spreadTitle": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
+          "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
+          "spreadTitle": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "AI 从生成内容走向执行动作后，企业问题从“会不会用”变成“谁审核、谁授权、谁负责”。",
-          "relevance": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。；这类信号适合写给老板看，因为它直接关系到业务风险。",
+          "relevance": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。；这类信号适合写给老板看，因为它直接关系到业务风险。",
           "bossPain": "AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。",
           "moneyLine": "权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。",
           "oldFrame": "AI 越自主越好。",
           "newFrame": "AI 越自主，越要先设计权限、复核和责任人。",
           "actionHint": "先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。",
-          "evidence": "Bcg 记录企业应用场景：地产开发和建筑设计流程；Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "Tigera：AI Agent 问责危机，治理没有跟上部署速度；欢迎来到AI治理的AGI时代；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260621-A03",
-                "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
-                "source": "bcg.com",
-                "url": "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai",
-                "note": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。"
+                "id": "SIG-20260621-A09",
+                "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
+                "source": "Tigera Blog (Calico / AI Security)",
+                "url": "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/",
+                "note": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2067671912038240487",
-                "title": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
-                "source": "Claude",
-                "url": "https://x.com/claudeai/status/2067671912038240487",
-                "note": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。"
+                "id": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+                "title": "欢迎来到AI治理的AGI时代",
+                "source": "Interconnects (Nathan Lambert)",
+                "url": "https://www.interconnects.ai/p/welcome-to-the-agi-era-of-ai-governance",
+                "note": "欢迎来到AI治理的AGI时代"
               }
             ],
             "communityItems": [
@@ -5203,8 +5117,8 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "bcg.com",
-          "url": "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai",
+          "source": "Tigera Blog (Calico / AI Security)",
+          "url": "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/",
           "date": "2026-06-21",
           "score": 88,
           "grade": "A",
@@ -5228,7 +5142,7 @@ window.WaveSightTopicCenter = {
             },
             {
               "title": "用当天案例推进",
-              "note": "用 地产开发和建筑设计流程 做钩子，落到企业内部的授权和复核表。"
+              "note": "用 AI Agent 问责危机，治理没有跟上部署速度 做钩子，落到企业内部的授权和复核表。"
             }
           ],
           "writingStructure": [
@@ -5241,42 +5155,42 @@ window.WaveSightTopicCenter = {
       ],
       "counterintuitive": [
         {
-          "id": "counterintuitive-开源工具-headroom-爆火-netflix-工程师打造-声称可节省-60-95-token-消耗量",
+          "id": "counterintuitive-开源工具-headroom-爆火-netflix-工程师称可节省-60-95-token-消耗",
           "sourceId": "counterintuitive",
           "sourceName": "反常识型",
           "sourceDesc": "推翻流行说法，形成可传播判断",
           "type": "boss_decision_topic",
-          "title": "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量",
-          "spreadTitle": "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量",
+          "title": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
+          "spreadTitle": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "反常识点在于：AI 越强，越不是所有人都被替代，而是会拆任务、会验收结果的人更值钱。",
-          "relevance": "Netflix 高级工程师 Tejas Chopra 开发的开源工具 Headroom（v0.26.0）在 AI 应用与 LLM 间建立本地透明压缩层，通过压缩 JSON、代码、RAG 片段和对话历史等冗余数据减少 Token 消耗，支持…；社群里“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”的讨论也在提醒老板，问题不再只是怎么做。",
+          "relevance": "IT之家报道 Netflix 工程师开源 Headroom，称其可节省 60%-95% Token 消耗，信号指向 AI 工程成本优化。；社群里“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”的讨论也在提醒老板，问题不再只是怎么做。",
           "bossPain": "工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。",
           "moneyLine": "工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。",
           "oldFrame": "追最新 AI 工具。",
           "newFrame": "先沉淀任务、语料、步骤和验收标准，再让 AI 接手。",
           "actionHint": "今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。",
-          "evidence": "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量；Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗；为什么AI没有取代软件工程师，也不会；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
                 "id": "SIG-20260621-A23",
-                "title": "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量",
+                "title": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
                 "source": "IT之家（RSS）",
                 "url": "https://www.ithome.com/0/966/527.htm",
-                "note": "Netflix 高级工程师 Tejas Chopra 开发的开源工具 Headroom（v0.26.0）在 AI 应用与 LLM 间建立本地透明压缩层，通过压缩 JSON、代码、RAG 片段和对话历史等冗余数据减少 Token 消耗，支持可逆压缩与 CCR 缓存机制。实测代码搜索场景 Token 从 17765 降至 1408（节省 92%），SRE 事故…"
+                "note": "IT之家报道 Netflix 工程师开源 Headroom，称其可节省 60%-95% Token 消耗，信号指向 AI 工程成本优化。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2067671912038240487",
-                "title": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
-                "source": "Claude",
-                "url": "https://x.com/claudeai/status/2067671912038240487",
-                "note": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。"
+                "id": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+                "title": "为什么AI没有取代软件工程师，也不会",
+                "source": "Simon Willison's Blog",
+                "url": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+                "note": "为什么AI没有取代软件工程师，也不会"
               }
             ],
             "communityItems": [
@@ -5337,13 +5251,13 @@ window.WaveSightTopicCenter = {
           "spreadTitle": "BCG：科技服务业存在 2000 亿美元 AI 机会",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位、一个明确动作、一个可验收结果里。",
-          "relevance": "来源材料显示，Bcg 的AI 商业动作涉及销售和收入团队流程。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
+          "relevance": "BCG 估算科技服务业存在 2000 亿美元 AI 机会，信号指向企业技术服务预算和 AI 转型需求。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
           "bossPain": "老板最怕 AI 项目太大、太贵、太慢，最后没人用。",
           "moneyLine": "一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。",
           "oldFrame": "做一个什么都能干的 AI 平台。",
           "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
           "actionHint": "先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。",
-          "evidence": "BCG：科技服务业存在 2000 亿美元 AI 机会；Bcg 记录企业应用场景：地产开发和建筑设计流程；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
+          "evidence": "BCG：科技服务业存在 2000 亿美元 AI 机会；开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
@@ -5353,15 +5267,15 @@ window.WaveSightTopicCenter = {
                 "title": "BCG：科技服务业存在 2000 亿美元 AI 机会",
                 "source": "bcg.com",
                 "url": "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services",
-                "note": "来源材料显示，Bcg 的AI 商业动作涉及销售和收入团队流程。"
+                "note": "BCG 估算科技服务业存在 2000 亿美元 AI 机会，信号指向企业技术服务预算和 AI 转型需求。"
               },
               {
                 "kind": "business_signal",
-                "id": "SIG-20260621-A03",
-                "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
-                "source": "bcg.com",
-                "url": "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai",
-                "note": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。"
+                "id": "SIG-20260621-A23",
+                "title": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
+                "source": "IT之家（RSS）",
+                "url": "https://www.ithome.com/0/966/527.htm",
+                "note": "IT之家报道 Netflix 工程师开源 Headroom，称其可节省 60%-95% Token 消耗，信号指向 AI 工程成本优化。"
               }
             ],
             "viewpoints": [],
@@ -5414,42 +5328,42 @@ window.WaveSightTopicCenter = {
       ],
       "big_small_contrast": [
         {
-          "id": "big_small_contrast-harvey-ai-s-forward-deployed-engineers-记录企业应用场景-模型部署和算力调用",
+          "id": "big_small_contrast-lmarena-的-17-亿美元愿景-评测平台如何走向商业化",
           "sourceId": "big_small_contrast",
           "sourceName": "大小对照型",
           "sourceDesc": "大融资对照小生意，大模型对照小岗位",
           "type": "boss_decision_topic",
-          "title": "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用",
-          "spreadTitle": "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用",
+          "title": "LMArena 的 17 亿美元愿景：评测平台如何走向商业化",
+          "spreadTitle": "LMArena 的 17 亿美元愿景：评测平台如何走向商业化",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "大新闻负责告诉你资本往哪里押，小机会负责告诉你老板明天愿意为什么付钱。",
-          "relevance": "来源材料显示，Harvey AI's Forward Deployed Engineers 的客户部署或应用案例涉及模型部署和算力调用；原文同时出现 $3B 等数字。；同时社群里的“这篇产品调研干货：帮你避开90%独立开发者起步坑”说明一线需求还在配置、流程和交付。",
+          "relevance": "来源材料显示，LMArena 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 $150m、$1.7B 等数字。；同时社群里的“这篇产品调研干货：帮你避开90%独立开发者起步坑”说明一线需求还在配置、流程和交付。",
           "bossPain": "老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。",
           "moneyLine": "大公司赚基础设施的钱，小服务商赚落地第一公里的钱。",
           "oldFrame": "AI 创业只能跟大模型和融资有关。",
           "newFrame": "普通人的 AI 机会在帮老板跨过配置、流程和交付门槛。",
           "actionHint": "把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。",
-          "evidence": "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用；Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
+          "evidence": "LMArena 的 17 亿美元愿景：评测平台如何走向商业化；与客服代表取得成功的主要变量是，您是否可以让客服代表了解完成工作所需的上下文；其中一个主要因素是，您是否可以为该客服代表创建一个人类也能理解的共享工作区域。这就是Agent使用文件系统如此重要的原因之一。它创建了一个统一的系统，个人和Ag…；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260621-A13",
-                "title": "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用",
-                "source": "getperspective.ai",
-                "url": "https://getperspective.ai/blog/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026",
-                "note": "来源材料显示，Harvey AI's Forward Deployed Engineers 的客户部署或应用案例涉及模型部署和算力调用；原文同时出现 $3B 等数字。"
+                "id": "SIG-20260621-A02",
+                "title": "LMArena 的 17 亿美元愿景：评测平台如何走向商业化",
+                "source": "Latent Space",
+                "url": "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision",
+                "note": "来源材料显示，LMArena 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 $150m、$1.7B 等数字。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2067671912038240487",
-                "title": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
-                "source": "Claude",
-                "url": "https://x.com/claudeai/status/2067671912038240487",
-                "note": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。"
+                "id": "2068068247413694532",
+                "title": "与客服代表取得成功的主要变量是，您是否可以让客服代表了解完成工作所需的上下文；其中一个主要因素是，您是否可以为该客服代表创建一个人类也能理解的共享工作区域。这就是Agent使用文件系统如此重要的原因之一。它创建了一个统一的系统，个人和Ag…",
+                "source": "Aaron Levie",
+                "url": "https://x.com/levie/status/2068068247413694532",
+                "note": "与客服代表取得成功的主要变量是，您是否可以让客服代表了解完成工作所需的上下文；其中一个主要因素是，您是否可以为该客服代表创建一个人类也能理解的共享工作区域。这就是Agent使用文件系统如此重要的原因之一。它创建了一个统一的系统，个人和Agent都可以在其中工作以传递数据。 “他们需要的是一个工作集：计划、注释、任务列表、政策、草案、摘要、日志、更正、决定等…"
               }
             ],
             "communityItems": [
@@ -5463,8 +5377,8 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "getperspective.ai",
-          "url": "https://getperspective.ai/blog/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026",
+          "source": "Latent Space",
+          "url": "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision",
           "date": "2026-06-21",
           "score": 93,
           "grade": "S",
@@ -5516,27 +5430,27 @@ window.WaveSightTopicCenter = {
           "oldFrame": "写 AI 就要讲技术和趋势。",
           "newFrame": "写给老板的 AI 内容，要先有人、有场景、有结果。",
           "actionHint": "从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。",
-          "evidence": "普通人怎么赚到1000万？；开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量；Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
+          "evidence": "普通人怎么赚到1000万？；开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗；为什么AI没有取代软件工程师，也不会",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
                 "id": "SIG-20260621-A23",
-                "title": "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量",
+                "title": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
                 "source": "IT之家（RSS）",
                 "url": "https://www.ithome.com/0/966/527.htm",
-                "note": "Netflix 高级工程师 Tejas Chopra 开发的开源工具 Headroom（v0.26.0）在 AI 应用与 LLM 间建立本地透明压缩层，通过压缩 JSON、代码、RAG 片段和对话历史等冗余数据减少 Token 消耗，支持可逆压缩与 CCR 缓存机制。实测代码搜索场景 Token 从 17765 降至 1408（节省 92%），SRE 事故…"
+                "note": "IT之家报道 Netflix 工程师开源 Headroom，称其可节省 60%-95% Token 消耗，信号指向 AI 工程成本优化。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "2067671912038240487",
-                "title": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。",
-                "source": "Claude",
-                "url": "https://x.com/claudeai/status/2067671912038240487",
-                "note": "Claude Code: Artifacts中的新功能。从您的会话构建的交互式页面，如公关演练或实时项目仪表板，通过专用链接与您的团队共享。适用于Team和Enterprise版套餐的测试版。"
+                "id": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+                "title": "为什么AI没有取代软件工程师，也不会",
+                "source": "Simon Willison's Blog",
+                "url": "https://simonwillison.net/2026/Jun/14/why-ai-hasnt-replaced-software-engineers/#atom-everything",
+                "note": "为什么AI没有取代软件工程师，也不会"
               }
             ],
             "communityItems": [

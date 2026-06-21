@@ -1,21 +1,36 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-21T04:58:48.782Z",
+  "generated_at": "2026-06-21T05:18:37.336Z",
   "date": "2026-06-21",
-  "action": "Repair Business Signals auto-card public titles",
+  "action": "Daily monitor repair",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "manual",
-  "status": "success",
-  "summary": "Business Signals Top10 failed because English-source auto cards were filtered from public Top10; changed generator to use source-bounded public title templates for non-CJK source titles, replayed 2026-06-21 workflow artifacts, regenerated 23 signal cards, and passed frontstage/pre-commit gates.",
+  "trigger": "codex",
+  "status": "passed",
+  "summary": "Recovered 2026-06-21 Business Signals from GitHub artifacts, repaired frontstage title/fact overrides, rebuilt site/FDE/topic data, reran Community Intelligence with bounded local collection.",
   "contexts": [],
-  "changed_files": [],
+  "changed_files": [
+    "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs",
+    "01-SiteV2/site/data/v3-data-observation-desk.json",
+    "01-SiteV2/site/data/community-intelligence.json"
+  ],
   "outputs": [],
-  "checks": [],
-  "issues": [],
+  "checks": [
+    "assert-business-frontstage passed",
+    "assert-community-intelligence passed",
+    "pre-commit production chain passed",
+    "sync-enterprise-ai-fde passed"
+  ],
+  "issues": [
+    "Business workflow failed before local recovery",
+    "Community scheduled collection produced stale data"
+  ],
   "risks": [],
   "lessons": [],
-  "reusable_rules": [],
+  "reusable_rules": [
+    "Source title must be translated literally before frontstage display",
+    "Bounded community collection can recover when full detail crawl hangs"
+  ],
   "retired_flags": [],
   "notes": []
 }

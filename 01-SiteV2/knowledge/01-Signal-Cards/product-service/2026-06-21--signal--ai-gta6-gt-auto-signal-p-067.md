@@ -9,8 +9,8 @@ source_title: "独立开发者徐子文用AI自制《GTA6》项目GT-Caliber"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-073"]
 pool_refs: ["P-067"]

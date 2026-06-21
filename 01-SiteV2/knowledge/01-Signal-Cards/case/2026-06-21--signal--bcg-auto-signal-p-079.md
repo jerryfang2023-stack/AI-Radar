@@ -2,15 +2,15 @@
 id: SIG-20260621-A14
 type: signal_card
 signal_type: case
-title: "Bcg 记录企业应用场景：销售和收入团队流程"
+title: "The $200 Billion AI Opportunity in Tech Services"
 date: 2026-06-21
 status: published
 source_title: "The $200 Billion AI Opportunity in Tech Services | BCG"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-110"]
 pool_refs: ["P-079"]
@@ -30,9 +30,9 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
-  function: ["function-sales"]
-  scenario: ["scenario-sales-briefing"]
+  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-customer-service"]
+  function: ["function-customer-service", "function-sales"]
+  scenario: ["scenario-customer-ticket", "scenario-sales-briefing"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-customer-adoption"]
   stage: []
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Bcg"
 
 frontend:
-  displayTitle: "Bcg 记录企业应用场景：销售和收入团队流程"
+  displayTitle: "The $200 Billion AI Opportunity in Tech Services"
   sourceLinks:
     - "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services"
 ---
 
-# Bcg 记录企业应用场景：销售和收入团队流程
+# The $200 Billion AI Opportunity in Tech Services
 
 ## 新闻事实
 

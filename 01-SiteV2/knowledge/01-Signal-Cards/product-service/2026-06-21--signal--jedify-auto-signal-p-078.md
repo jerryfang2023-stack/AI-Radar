@@ -2,15 +2,15 @@
 id: SIG-20260621-A07
 type: signal_card
 signal_type: product_service
-title: "Jedify 发布 AI 平台能力，面向销售线索和收入团队协作"
+title: "Here's Why Context Graphs Are the Next Must-Have for Enterprise AI - Jedify"
 date: 2026-06-21
 status: published
 source_title: "Here's Why Context Graphs Are the Next Must-Have for Enterprise AI - Jedify"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-108"]
 pool_refs: ["P-078"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Jedify"
 
 frontend:
-  displayTitle: "Jedify 发布 AI 平台能力，面向销售线索和收入团队协作"
+  displayTitle: "Here's Why Context Graphs Are the Next Must-Have for Enterprise AI - Jedify"
   sourceLinks:
     - "https://jedify.com/heres-why-context-graphs-are-the-next-must-have-for-enterprise-ai/"
 ---
 
-# Jedify 发布 AI 平台能力，面向销售线索和收入团队协作
+# Here's Why Context Graphs Are the Next Must-Have for Enterprise AI - Jedify
 
 ## 新闻事实
 

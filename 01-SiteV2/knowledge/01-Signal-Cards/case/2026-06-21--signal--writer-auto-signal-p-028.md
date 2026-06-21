@@ -2,15 +2,15 @@
 id: SIG-20260621-A15
 type: signal_card
 signal_type: case
-title: "Writer 记录企业应用场景：地产开发和建筑设计流程"
+title: "Building the Easy Button for Generative AI"
 date: 2026-06-21
 status: published
 source_title: "Building the Easy Button for Generative AI | May Habib, CEO, Writer"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-030"]
 pool_refs: ["P-028"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Writer"
 
 frontend:
-  displayTitle: "Writer 记录企业应用场景：地产开发和建筑设计流程"
+  displayTitle: "Building the Easy Button for Generative AI"
   sourceLinks:
     - "https://podcasters.spotify.com/pod/show/firstmark/episodes/Building-the-Easy-Button-for-Generative-AI--May-Habib--CEO--Writer-e2r9qk6"
 ---
 
-# Writer 记录企业应用场景：地产开发和建筑设计流程
+# Building the Easy Button for Generative AI
 
 ## 新闻事实
 

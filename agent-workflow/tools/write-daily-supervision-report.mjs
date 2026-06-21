@@ -613,6 +613,13 @@ function buildCommunityLane() {
     communityPrOpen: Boolean(openPr),
     communityPrUrl: mergedPr?.url || openPr?.url || "",
   };
+  const communityDataHealthy =
+    exists(dataFile) &&
+    generatedDate === date &&
+    evidence.items >= 12 &&
+    evidence.links >= 3 &&
+    evidence.collectorErrors === 0 &&
+    evidence.gateStatus === "passed";
 
   if (localWindowPassed) {
     if (!exists(dataFile)) addProblem(problems, `missing community data file: ${rel(dataFile)}`);
@@ -632,7 +639,11 @@ function buildCommunityLane() {
       addProblem(problems, `community scheduled task state is ${state || "unknown"}`, "manual_required");
     }
     if (Number.isFinite(lastResult) && lastResult !== 0) {
-      addProblem(problems, `community scheduled task last result is ${lastResult}`, "manual_required");
+      if (communityDataHealthy) {
+        warnings.push(`community scheduled task last result is ${lastResult}, but same-date data and gate are healthy`);
+      } else {
+        addProblem(problems, `community scheduled task last result is ${lastResult}`, "manual_required");
+      }
     }
   } else {
     warnings.push(task.warning || "scheduled task state unavailable");
@@ -651,7 +662,13 @@ function buildCommunityLane() {
       addProblem(problems, `Community Intelligence publish workflow is ${gh.latest_run.status}`, "waiting");
       actions.push("wait for Community Intelligence publish workflow completion");
     } else if (gh.latest_run?.conclusion && gh.latest_run.conclusion !== "success") {
-      addProblem(problems, `Community Intelligence publish workflow conclusion is ${gh.latest_run.conclusion}`);
+      if (mergedPr) {
+        warnings.push(`latest Community Intelligence publish workflow conclusion is ${gh.latest_run.conclusion}, but same-date PR already merged: ${mergedPr.url}`);
+      } else if (communityDataHealthy) {
+        addProblem(problems, `Community Intelligence publish workflow conclusion is ${gh.latest_run.conclusion} after healthy same-date data; repair publish workflow only`);
+      } else {
+        addProblem(problems, `Community Intelligence publish workflow conclusion is ${gh.latest_run.conclusion}`);
+      }
     }
     if (gh.pr_warning) warnings.push(gh.pr_warning);
   } else if (isTodayOrPast(date)) {

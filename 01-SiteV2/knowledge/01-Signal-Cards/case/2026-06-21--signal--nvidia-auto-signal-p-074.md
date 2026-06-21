@@ -2,15 +2,15 @@
 id: SIG-20260621-A17
 type: signal_card
 signal_type: case
-title: "Nvidia 记录企业应用场景：模型部署和算力调用"
+title: "Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards"
 date: 2026-06-21
 status: published
 source_title: "Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-092"]
 pool_refs: ["P-074"]
@@ -30,10 +30,10 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-agent", "track-ai-infra"]
   function: []
   scenario: []
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-customer-adoption"]
   stage: []
   region: []
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Nvidia"
 
 frontend:
-  displayTitle: "Nvidia 记录企业应用场景：模型部署和算力调用"
+  displayTitle: "Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards"
   sourceLinks:
     - "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2025/"
 ---
 
-# Nvidia 记录企业应用场景：模型部署和算力调用
+# Applications Now Open for $60,000 NVIDIA Graduate Fellowship Awards
 
 ## 新闻事实
 

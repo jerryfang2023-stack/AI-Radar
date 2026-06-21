@@ -2,15 +2,15 @@
 id: SIG-20260621-A06
 type: signal_card
 signal_type: product_service
-title: "Tigera 发布 AI 平台能力，面向采购下单自动化"
+title: "The Case for VM and Container Consolidation in 2026"
 date: 2026-06-21
 status: published
 source_title: "The Case for VM and Container Consolidation in 2026"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-032"]
 pool_refs: ["P-030"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Tigera"
 
 frontend:
-  displayTitle: "Tigera 发布 AI 平台能力，面向采购下单自动化"
+  displayTitle: "The Case for VM and Container Consolidation in 2026"
   sourceLinks:
     - "https://www.tigera.io/blog/the-case-for-vm-and-container-consolidation-in-2026/"
 ---
 
-# Tigera 发布 AI 平台能力，面向采购下单自动化
+# The Case for VM and Container Consolidation in 2026
 
 ## 新闻事实
 

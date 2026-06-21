@@ -2,15 +2,15 @@
 id: SIG-20260621-A18
 type: signal_card
 signal_type: product_service
-title: "BT6 发布 AI 平台能力，面向模型部署和算力服务"
+title: "Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security"
 date: 2026-06-21
 status: published
 source_title: "Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-027"]
 pool_refs: ["P-025"]
@@ -30,9 +30,9 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-agent", "track-ai-infra", "track-ai-governance"]
   function: []
-  scenario: []
+  scenario: ["scenario-agent-governance"]
   customer: []
   evidence: ["evidence-product-launch"]
   stage: []
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "BT6"
 
 frontend:
-  displayTitle: "BT6 发布 AI 平台能力，面向模型部署和算力服务"
+  displayTitle: "Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security"
   sourceLinks:
     - "https://www.latent.space/p/jailbreaking-agi-pliny-the-liberator"
 ---
 
-# BT6 发布 AI 平台能力，面向模型部署和算力服务
+# Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security
 
 ## 新闻事实
 

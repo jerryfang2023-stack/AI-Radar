@@ -2,15 +2,15 @@
 id: SIG-20260621-A12
 type: signal_card
 signal_type: case
-title: "Indwes 记录企业应用场景：销售和收入团队流程"
+title: "How Modern Organizations Actually Deploy AI: Tools, Teams, and ..."
 date: 2026-06-21
 status: published
 source_title: "How Modern Organizations Actually Deploy AI: Tools, Teams, and ..."
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-068"]
 pool_refs: ["P-066"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Indwes"
 
 frontend:
-  displayTitle: "Indwes 记录企业应用场景：销售和收入团队流程"
+  displayTitle: "How Modern Organizations Actually Deploy AI: Tools, Teams, and ..."
   sourceLinks:
     - "https://www.indwes.edu/articles/2025/11/modern-organizations-actually-deploy-ai"
 ---
 
-# Indwes 记录企业应用场景：销售和收入团队流程
+# How Modern Organizations Actually Deploy AI: Tools, Teams, and ...
 
 ## 新闻事实
 

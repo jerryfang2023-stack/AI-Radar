@@ -6,12 +6,12 @@ failed_gate: missing
 report_path: agent-workflow/reports/2026-06-21-daily-supervision-report.md
 data_generated: no_or_stale
 needed_action: send Codex a business_signals repair request with failed gate and report path
-created_at: 2026-06-21T12:54:37+08:00
-updated_at: 2026-06-21T12:58:57+08:00
-resolved_at: 2026-06-21T12:58:57+08:00
+created_at: 2026-06-21T12:57:36+08:00
+updated_at: 2026-06-21T13:18:37+08:00
+resolved_at: 2026-06-21T13:18:37+08:00
 resolver: codex
-fix_commit: pending-local-change
-validation: node agent-workflow/tools/assert-business-signals-frontstage.mjs --date=2026-06-21 && node agent-workflow/tools/assert-daily-production-chain.mjs --date=2026-06-21 --stage=pre-commit --raw-min=150 --pool-min=75 --block-stale=true
+fix_commit: pending
+validation: npm run assert:business-frontstage -- --date=2026-06-21
 prevention_added: gate
 source: hermes-auto
 
@@ -27,8 +27,9 @@ source: hermes-auto
 - warning: missing quality gate report: agent-workflow/reports/2026-06-21-guanlan-monitor-quality-gate.md
 - warning: missing readiness report: agent-workflow/reports/2026-06-21-daily-production-chain-readiness.md
 - warning: latest same-date GitHub Pages workflow conclusion is skipped
+- warning: local Obsidian sync may be blocked by 5 dirty file(s)
 - supervision_report: `agent-workflow/reports/2026-06-21-daily-supervision-report.md`
-- categories: business_signals_top10_missing, monitor_or_gate_failure
+- categories: business_signals_top10_missing, monitor_or_gate_failure, obsidian_sync
 
 ## Expected Codex Action
 
@@ -41,8 +42,8 @@ source: hermes-auto
 
 - no, unless Codex needs GitHub permission, login state, or business judgment.
 
-## Resolution - 2026-06-21T12:58:57+08:00
+## Resolution - 2026-06-21T13:18:37+08:00
 
-- fix_commit: pending-local-change
-- validation: node agent-workflow/tools/assert-business-signals-frontstage.mjs --date=2026-06-21 && node agent-workflow/tools/assert-daily-production-chain.mjs --date=2026-06-21 --stage=pre-commit --raw-min=150 --pool-min=75 --block-stale=true
+- fix_commit: pending
+- validation: npm run assert:business-frontstage -- --date=2026-06-21
 - prevention_added: gate

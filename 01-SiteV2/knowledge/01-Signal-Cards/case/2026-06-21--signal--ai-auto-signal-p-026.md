@@ -2,15 +2,15 @@
 id: SIG-20260621-A05
 type: signal_card
 signal_type: case
-title: "AI 记录企业应用场景：地产开发和建筑设计流程"
+title: "Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG"
 date: 2026-06-21
 status: published
 source_title: "Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG | Douwe Kiela, CEO, Contextual AI"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-028"]
 pool_refs: ["P-026"]
@@ -30,9 +30,9 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-enterprise-data"]
   function: ["function-engineering"]
-  scenario: ["scenario-construction-real-estate"]
+  scenario: ["scenario-knowledge-base", "scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
   evidence: ["evidence-customer-adoption"]
   stage: []
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "AI"
 
 frontend:
-  displayTitle: "AI 记录企业应用场景：地产开发和建筑设计流程"
+  displayTitle: "Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG"
   sourceLinks:
     - "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg"
 ---
 
-# AI 记录企业应用场景：地产开发和建筑设计流程
+# Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG
 
 ## 新闻事实
 

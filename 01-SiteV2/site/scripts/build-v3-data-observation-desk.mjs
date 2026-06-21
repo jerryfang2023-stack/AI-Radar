@@ -553,6 +553,8 @@ function sourceTitleFromFullText(fullText = "", fallbackTitle = "") {
 
 function sourceTitleFromUrlOverride(sourceUrl = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
+  const cleanOverride = cleanSourceTitleOverride(sourceUrl);
+  if (cleanOverride) return cleanOverride;
   if (/delight\.ai\/customers\/norse-atlantic-airways/iu.test(normalized)) {
     return "Norse Atlantic Airways 与 delight.ai：构建航空公司未曾见过的 AI 劳动力";
   }
@@ -898,6 +900,8 @@ function cleanEnglishTitleForDisplay(title = "") {
 function sourceTitleLiteralTranslation(title = "", sourceUrl = "") {
   const raw = String(title || "").replace(/\s+/gu, " ").trim();
   if (!raw) return "";
+  const cleanOverride = cleanSourceTitleOverride(sourceUrl);
+  if (cleanOverride) return cleanOverride;
   if (hasCjk(raw)) return raw;
   const text = cleanEnglishTitleForDisplay(raw);
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
@@ -943,6 +947,51 @@ function sourceTitleLiteralTranslation(title = "", sourceUrl = "") {
   ];
   const match = rules.find(([pattern]) => pattern.test(`${text}\n${normalized}`));
   return match?.[1] || "";
+}
+
+function cleanSourceTitleOverride(sourceUrl = "") {
+  const normalized = canonicalUrl(sourceUrl).toLowerCase();
+  const rules = [
+    [/pulse2\.com\/convey-raises-38-million-series-a-to-automate-enterprise-operations-with-ai-teammates/iu, "Convey 获得 3800 万美元 A 轮融资，用 AI Teammates 自动化企业运营"],
+    [/latent\.space\/p\/state-of-evals-lmarenas-17b-vision/iu, "LMArena 的 17 亿美元愿景：评测平台如何走向商业化"],
+    [/bcg\.com\/publications\/2026\/reinventing-the-operating-system-of-work-with-ai/iu, "BCG：用 AI 重塑工作的操作系统"],
+    [/allcloud\.io\/blog\/scalable-ai-agents-architecting-a-production-ready-deployment-platform/iu, "企业 AI Agent 部署：从原型走向生产"],
+    [/tigera\.io\/blog\/the-case-for-vm-and-container-consolidation-in-2026/iu, "Tigera：2026 年虚拟机与容器整合的理由"],
+    [/jedify\.com\/heres-why-context-graphs-are-the-next-must-have-for-enterprise-ai/iu, "Jedify：为什么上下文图谱会成为企业 AI 的下一项必需能力"],
+    [/tigera\.io\/blog\/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/iu, "Tigera：AI Agent 问责危机，治理没有跟上部署速度"],
+    [/stripe\.com\/en-hr\/customers\/retell-ai/iu, "Retell AI 用 Stripe 自动化用量计费，扩展 AI 语音 Agent 业务"],
+    [/neurons-lab\.com\/articles\/top-ai-consulting-firms/iu, "Neurons Lab：面向金融服务机构的 2026 年 AI 咨询公司清单"],
+    [/diginomica\.com\/agentic-ai-hits-difficult-age-salesforces-forward-deployment-engineers/iu, "Salesforce 的 Forward Deployment Engineers 如何帮助企业落地 Agentic AI"],
+    [/getperspective\.ai\/blog\/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026/iu, "Harvey AI 的 Forward Deployed Engineers 如何进入大型律所部署"],
+    [/blogs\.nvidia\.com\/blog\/applications-open-graduate-fellowship-awards-2025/iu, "NVIDIA 开放 6 万美元研究生奖学金申请"],
+    [/podcasters\.spotify\.com\/pod\/show\/firstmark\/episodes\/Building-the-Easy-Button-for-Generative-AI/iu, "Writer CEO May Habib：为生成式 AI 打造 Easy Button"],
+    [/bcg\.com\/publications\/2026\/the-200-billion-dollar-ai-opportunity-in-tech-services/iu, "BCG：科技服务业存在 2000 亿美元 AI 机会"],
+    [/the-decoder\.com\/chatgpt-keeps-creeping-toward-becoming-your-ai-personal-assistant-with-new-scheduled-task-controls/iu, "ChatGPT 新增 Scheduled 侧边栏，统一管理定时任务"],
+    [/ithome\.com\/0\/966\/599/iu, "独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber"],
+    [/ithome\.com\/0\/966\/527/iu, "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗"],
+    [/the-decoder\.com\/data2story-turns-a-csv-file-into-a-verified-interactive-news-article-using-seven-ai-agents/iu, "Data2Story 用七个 AI Agent 将 CSV 自动生成可验证的交互式新闻文章"],
+  ];
+  return rules.find(([pattern]) => pattern.test(normalized))?.[1] || "";
+}
+
+function cleanSourceFactOverride(sourceUrl = "") {
+  const normalized = canonicalUrl(sourceUrl).toLowerCase();
+  const rules = [
+    [/pulse2\.com\/convey-raises-38-million-series-a-to-automate-enterprise-operations-with-ai-teammates/iu, "Convey 宣布完成 3800 万美元 A 轮融资，产品方向是用 AI Teammates 自动化企业运营流程。"],
+    [/bcg\.com\/publications\/2026\/reinventing-the-operating-system-of-work-with-ai/iu, "BCG 文章讨论企业如何用 AI 重塑工作操作系统，重点落在组织流程、岗位协作和业务执行方式的变化。"],
+    [/allcloud\.io\/blog\/scalable-ai-agents-architecting-a-production-ready-deployment-platform/iu, "AllCloud 文章聚焦企业 AI Agent 从原型走向生产部署时需要的架构、平台和治理能力。"],
+    [/tigera\.io\/blog\/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/iu, "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。"],
+    [/stripe\.com\/en-hr\/customers\/retell-ai/iu, "Stripe 客户案例显示 Retell AI 通过自动化用量计费支撑 AI 语音 Agent 业务扩展。"],
+    [/jedify\.com\/heres-why-context-graphs-are-the-next-must-have-for-enterprise-ai/iu, "Jedify 文章把上下文图谱定位为企业 AI 理解业务知识、流程和数据关系的基础能力。"],
+    [/diginomica\.com\/agentic-ai-hits-difficult-age-salesforces-forward-deployment-engineers/iu, "Diginomica 报道 Salesforce 通过 Forward Deployment Engineers 帮助企业把 Agentic AI 从试点推进到实际部署。"],
+    [/getperspective\.ai\/blog\/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026/iu, "Perspective AI 文章分析 Harvey AI 的 Forward Deployed Engineers 如何嵌入大型律所完成法律 AI 部署。"],
+    [/bcg\.com\/publications\/2026\/the-200-billion-dollar-ai-opportunity-in-tech-services/iu, "BCG 估算科技服务业存在 2000 亿美元 AI 机会，信号指向企业技术服务预算和 AI 转型需求。"],
+    [/the-decoder\.com\/chatgpt-keeps-creeping-toward-becoming-your-ai-personal-assistant-with-new-scheduled-task-controls/iu, "The Decoder 报道 ChatGPT 新增 Scheduled 侧边栏，用于集中管理定时任务和个人助理型自动化。"],
+    [/ithome\.com\/0\/966\/599/iu, "IT之家报道独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber，展示个人开发者利用 AI 降低游戏原型开发成本。"],
+    [/ithome\.com\/0\/966\/527/iu, "IT之家报道 Netflix 工程师开源 Headroom，称其可节省 60%-95% Token 消耗，信号指向 AI 工程成本优化。"],
+    [/the-decoder\.com\/data2story-turns-a-csv-file-into-a-verified-interactive-news-article-using-seven-ai-agents/iu, "The Decoder 报道 Data2Story 用七个 AI Agent 把 CSV 文件转成可验证的交互式新闻文章，展示数据到内容生产流程的自动化。"],
+  ];
+  return rules.find(([pattern]) => pattern.test(normalized))?.[1] || "";
 }
 
 function titleSubject(title = "", sourceUrl = "") {
@@ -1323,10 +1372,11 @@ function normalizeFrontstageDisplay(card = {}, options = {}) {
   const internalTitle = safeFrontstageTitle(card.title || card.originalTitle, card.sourceUrl);
   const originalTitle = card.originalTitle || (internalTitle !== card.title ? card.title : "");
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
+  const cleanFact = cleanSourceFactOverride(card.sourceUrl);
   const replacementFact = sourceTitleDerivedFact(sourceTitle || originalTitle || internalTitle, card.sourceUrl);
   const factCandidates = strictPublic
-    ? [card.translatedFact, card.visibleFragment, replacementFact, card.summary]
-    : [card.translatedFact, replacementFact, card.visibleFragment, card.summary];
+    ? [cleanFact, card.translatedFact, card.visibleFragment, replacementFact, card.summary]
+    : [cleanFact, card.translatedFact, replacementFact, card.visibleFragment, card.summary];
   const translatedFact = factCandidates.find((value) => (
     value
       && !publicContentNeedsTranslation(value)

@@ -2,41 +2,28 @@
   "ok": false,
   "status": "failed",
   "date": "2026-06-21",
-  "generated_at": "2026-06-21T04:59:38.718Z",
+  "generated_at": "2026-06-21T05:10:21.719Z",
   "timezone": "Asia/Shanghai",
   "lanes": [
     {
       "id": "skill_ops",
       "label": "Skill Ops Governance",
       "schedule": "daily supervision preflight",
-      "status": "manual_required",
+      "status": "passed",
       "evidence": {
         "command": "npm run check:skill-ops",
         "registryState": "current",
         "governed": 14,
         "current": 14,
         "laneOwners": 4,
-        "syncDrift": 2,
+        "syncDrift": 0,
         "evalCoverage": 100,
         "exampleCoverage": 100,
         "memoryRequiredMissing": 0
       },
-      "problems": [
-        {
-          "message": "guanlan-raw-pool-card: .skill-store sync state is drift",
-          "severity": "manual_required"
-        },
-        {
-          "message": "guanlan-skill-editor: .skill-store sync state is drift",
-          "severity": "manual_required"
-        }
-      ],
+      "problems": [],
       "warnings": [],
-      "actions": [
-        "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
-        "run `npm run audit:skills` after the repair",
-        "run `npm run sync:skill-store` after confirming the project copy is the source of truth"
-      ]
+      "actions": []
     },
     {
       "id": "community_intelligence",
@@ -75,13 +62,22 @@
             "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27891554203"
           },
           "same_date_run_count": 1,
-          "prs": [],
+          "prs": [
+            {
+              "isDraft": false,
+              "mergedAt": "2026-06-21T05:06:51Z",
+              "number": 117,
+              "state": "MERGED",
+              "updatedAt": "2026-06-21T05:07:02Z",
+              "url": "https://github.com/jerryfang2023-stack/AI-Radar/pull/117"
+            }
+          ],
           "pr_warning": ""
         },
         "publication": {
-          "communityPrMerged": false,
+          "communityPrMerged": true,
           "communityPrOpen": false,
-          "communityPrUrl": ""
+          "communityPrUrl": "https://github.com/jerryfang2023-stack/AI-Radar/pull/117"
         }
       },
       "problems": [
@@ -113,11 +109,11 @@
       "status": "failed",
       "evidence": {
         "activeDate": "2026-06-21",
-        "generatedAt": "2026-06-21T04:58:10.525Z",
+        "generatedAt": "2026-06-21T05:09:14.926Z",
         "frontstageSelected": 10,
         "supplyConstrained": false,
-        "coreCandidateCount": 21,
-        "qualifiedCount": 10,
+        "coreCandidateCount": 17,
+        "qualifiedCount": 12,
         "signalCardFiles": 23,
         "manifest": "agent-workflow/reports/2026-06-21-persistent-asset-manifest.json",
         "qualityGateStatus": "passed",
@@ -144,17 +140,17 @@
           "top10Count": 10,
           "businessPrMerged": false,
           "businessPrUrl": "",
-          "pagesSuccess": false,
+          "pagesSuccess": true,
           "pagesActive": false,
-          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27891725470",
+          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27894273442",
           "localSync": {
             "available": true,
             "clean": false,
-            "dirtyFiles": 55,
+            "dirtyFiles": 53,
             "ignoredReportFiles": 4,
             "head": "93059c9bc38433863485a6946d5b0e3e5f50eaf8",
-            "originMain": "93059c9bc38433863485a6946d5b0e3e5f50eaf8",
-            "fastForwarded": true,
+            "originMain": "5387d9768ab45677d4bce1c31f9a5bfc9fc8ac0e",
+            "fastForwarded": false,
             "warning": ""
           }
         }
@@ -166,8 +162,7 @@
         }
       ],
       "warnings": [
-        "latest same-date GitHub Pages workflow conclusion is skipped",
-        "local Obsidian sync may be blocked by 55 dirty file(s)"
+        "local Obsidian sync may be blocked by 53 dirty file(s)"
       ],
       "actions": [
         "send Codex a business_signals repair request with failed gate and report path"
@@ -177,15 +172,15 @@
       "id": "first_line_viewpoints",
       "label": "First-Line Viewpoints",
       "schedule": "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Hermes RSS handoff 09:30",
-      "status": "manual_required",
+      "status": "passed",
       "evidence": {
-        "generatedAt": "2026-06-20T07:40:35.580Z",
-        "generatedDate": "2026-06-20",
-        "feedGeneratedAt": "2026-06-19T08:14:32.084Z",
-        "remarks": 62,
-        "builders": 22,
-        "gateStatus": "missing",
-        "gateReport": "missing",
+        "generatedAt": "2026-06-21T04:54:59.104Z",
+        "generatedDate": "2026-06-21",
+        "feedGeneratedAt": "2026-06-20T07:37:23.218Z",
+        "remarks": 42,
+        "builders": 14,
+        "gateStatus": "passed",
+        "gateReport": "agent-workflow/reports/2026-06-21-follow-builders-data-gate.md",
         "github": {
           "available": true,
           "latest_run": null,
@@ -193,25 +188,11 @@
           "prs": [],
           "pr_warning": ""
         },
-        "localDataHealthy": false
+        "localDataHealthy": true
       },
-      "problems": [
-        {
-          "message": "first-line data date is 2026-06-20, expected 2026-06-21",
-          "severity": "failed"
-        },
-        {
-          "message": "no same-date First-Line Viewpoints RSS run after 09:30 Hermes handoff",
-          "severity": "manual_required"
-        }
-      ],
-      "warnings": [
-        "missing follow-builders gate report: agent-workflow/reports/2026-06-21-follow-builders-data-gate.md"
-      ],
-      "actions": [
-        "run `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>` or dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` for the production date",
-        "send Codex a first_line_viewpoints repair request with gate report path"
-      ]
+      "problems": [],
+      "warnings": [],
+      "actions": []
     },
     {
       "id": "follow_builders_skill",

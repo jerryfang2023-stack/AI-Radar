@@ -2,15 +2,15 @@
 id: SIG-20260621-A01
 type: signal_card
 signal_type: funding
-title: "Convey 获得$38 M 融资，用于企业 Agent 协作平台"
+title: "Convey Raises $38 Million Series A To Automate Enterprise Operations With AI Teammates"
 date: 2026-06-21
 status: published
 source_title: "Convey Raises $38 Million Series A To Automate Enterprise Operations With AI Teammates"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-014"]
 pool_refs: ["P-014"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Convey"
 
 frontend:
-  displayTitle: "Convey 获得$38 M 融资，用于企业 Agent 协作平台"
+  displayTitle: "Convey Raises $38 Million Series A To Automate Enterprise Operations With AI Teammates"
   sourceLinks:
     - "https://pulse2.com/convey-raises-38-million-series-a-to-automate-enterprise-operations-with-ai-teammates/"
 ---
 
-# Convey 获得$38 M 融资，用于企业 Agent 协作平台
+# Convey Raises $38 Million Series A To Automate Enterprise Operations With AI Teammates
 
 ## 新闻事实
 

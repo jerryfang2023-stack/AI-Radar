@@ -4,7 +4,7 @@
     "siteVersion": "SITE-V3.3.8.1",
     "businessSignalsColumnVersion": "BSIG-V1.1.0-enterprise-ai-transformation",
     "enterpriseAiLensVersion": "EAI-V1.1.0-fde-lens-pool",
-    "generatedAt": "2026-06-21T04:58:10.525Z",
+    "generatedAt": "2026-06-21T05:09:14.926Z",
     "activeDate": "2026-06-21",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -31,16 +31,16 @@
   },
   "summary": {
     "activeDate": "2026-06-21",
-    "totalCards": 344,
-    "todayCards": 21,
+    "totalCards": 341,
+    "todayCards": 17,
     "todayTop10": 10,
-    "corePoolCandidates": 17,
-    "linkedCorePoolCards": 22,
+    "corePoolCandidates": 13,
+    "linkedCorePoolCards": 18,
     "candidateOnlyCorePool": 1,
     "relationshipNodes": 28,
-    "relationshipEdges": 81,
-    "relationshipClusters": 4,
-    "enterpriseAiTransformation": 0,
+    "relationshipEdges": 65,
+    "relationshipClusters": 3,
+    "enterpriseAiTransformation": 2,
     "tagAssociations": 8,
     "trendLinks": 16,
     "trendCandidates": 0
@@ -48,152 +48,151 @@
   "dailyLens": {
     "top10CardIds": [
       "SIG-20260621-A13",
+      "SIG-20260621-A02",
       "SIG-20260621-A09",
+      "SIG-20260621-A01",
+      "SIG-20260621-A04",
       "SIG-20260621-A10",
-      "SIG-20260621-A21",
+      "SIG-20260621-A14",
       "SIG-20260621-A03",
       "SIG-20260621-A20",
-      "SIG-20260621-A05",
-      "SIG-20260621-A11",
-      "SIG-20260621-A23",
-      "SIG-20260621-A22"
+      "SIG-20260621-A16"
     ],
     "corePoolCardIds": [
       "POOL-2026-06-21-P-004",
       "SIG-20260621-A13",
       "SIG-20260604-A08",
       "SIG-20260621-A09",
-      "SIG-20260621-A04",
+      "SIG-20260621-A01",
+      "SIG-20260619-A13",
       "SIG-20260621-A10",
       "SIG-20260615-A03-funding-https-www-latent-space",
       "SIG-20260615-A16",
       "SIG-20260615-A11",
       "SIG-20260621-A03",
       "SIG-20260621-A20",
-      "SIG-20260621-A18",
       "SIG-20260615-A05",
-      "SIG-20260615-A06",
-      "SIG-20260621-A11",
-      "SIG-20260621-A12",
-      "SIG-20260621-A08",
-      "SIG-20260621-A06",
-      "SIG-20260621-A19",
-      "SIG-20260621-A07",
       "SIG-20260621-A16",
+      "SIG-20260621-A06",
+      "SIG-20260621-A07",
+      "SIG-20260621-A11",
       "SIG-20260621-A23",
       "SIG-20260621-A22"
     ],
-    "enterpriseAiTransformationCardIds": [],
+    "enterpriseAiTransformationCardIds": [
+      "SIG-20260621-A16",
+      "SIG-20260621-A13"
+    ],
     "largeCompanyTop10": [
       {
-        "id": "SIG-20260621-A21",
-        "vendor": "openai",
-        "title": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务"
+        "id": "SIG-20260621-A16",
+        "vendor": "salesforce",
+        "title": "Salesforce 的 Forward Deployment Engineers 如何帮助企业落地 Agentic AI"
       }
     ],
     "categoryStats": [
       {
         "category": "case",
         "label": "案例",
-        "today": 15,
-        "last7": 64,
-        "last30": 144,
-        "total": 148,
+        "today": 12,
+        "last7": 62,
+        "last30": 142,
+        "total": 146,
         "topTags": [
           {
             "tag": "evidence-customer-adoption",
             "label": "客户采用",
-            "count": 15
+            "count": 12
           },
           {
             "tag": "track-ai-agent",
             "label": "AI Agent",
-            "count": 15
+            "count": 12
           },
           {
             "tag": "customer-enterprise",
             "label": "大中型企业",
-            "count": 14
+            "count": 9
           },
           {
             "tag": "track-enterprise-workflow",
             "label": "企业工作流",
-            "count": 14
+            "count": 9
           },
           {
             "tag": "customer-developer-team",
             "label": "开发团队",
-            "count": 8
+            "count": 6
           }
         ]
       },
       {
         "category": "funding",
         "label": "融资",
-        "today": 0,
-        "last7": 16,
-        "last30": 39,
-        "total": 49,
+        "today": 2,
+        "last7": 18,
+        "last30": 41,
+        "total": 51,
         "topTags": [
+          {
+            "tag": "customer-enterprise",
+            "label": "大中型企业",
+            "count": 2
+          },
           {
             "tag": "evidence-funding",
             "label": "融资证据",
-            "count": 16
+            "count": 2
           },
           {
             "tag": "stage-rising",
             "label": "升温",
-            "count": 16
+            "count": 2
           },
           {
             "tag": "track-ai-agent",
             "label": "AI Agent",
-            "count": 16
+            "count": 2
           },
           {
-            "tag": "track-ai-infra",
-            "label": "AI 基础设施",
-            "count": 6
-          },
-          {
-            "tag": "customer-enterprise",
-            "label": "大中型企业",
-            "count": 5
+            "tag": "track-enterprise-workflow",
+            "label": "企业工作流",
+            "count": 2
           }
         ]
       },
       {
         "category": "product-service",
         "label": "产品",
-        "today": 6,
-        "last7": 52,
-        "last30": 146,
-        "total": 147,
+        "today": 3,
+        "last7": 49,
+        "last30": 143,
+        "total": 144,
         "topTags": [
+          {
+            "tag": "customer-enterprise",
+            "label": "大中型企业",
+            "count": 3
+          },
           {
             "tag": "evidence-product-launch",
             "label": "产品发布",
-            "count": 6
+            "count": 3
           },
           {
             "tag": "track-ai-agent",
             "label": "AI Agent",
-            "count": 6
-          },
-          {
-            "tag": "customer-enterprise",
-            "label": "大中型企业",
-            "count": 4
+            "count": 3
           },
           {
             "tag": "track-enterprise-workflow",
             "label": "企业工作流",
-            "count": 4
+            "count": 3
           },
           {
-            "tag": "track-ai-infra",
-            "label": "AI 基础设施",
-            "count": 3
+            "tag": "customer-developer-team",
+            "label": "开发团队",
+            "count": 1
           }
         ]
       }
@@ -206,7 +205,7 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "AI Agent Accountability Crisis 记录企业应用场景：地产开发和建筑设计流程",
+      "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
       "subject": "AI Agent Accountability Crisis",
       "sourceName": "Tigera Blog (Calico / AI Security)",
       "sourceUrl": "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/",
@@ -231,13 +230,15 @@
         "track": [
           "track-ai-agent",
           "track-ai-coding",
-          "track-enterprise-workflow"
+          "track-enterprise-workflow",
+          "track-ai-governance"
         ],
         "function": [
           "function-engineering"
         ],
         "scenario": [
-          "scenario-construction-real-estate"
+          "scenario-construction-real-estate",
+          "scenario-agent-governance"
         ],
         "customer": [
           "customer-developer-team",
@@ -256,8 +257,10 @@
         "track-ai-agent",
         "track-ai-coding",
         "track-enterprise-workflow",
+        "track-ai-governance",
         "function-engineering",
         "scenario-construction-real-estate",
+        "scenario-agent-governance",
         "customer-developer-team",
         "customer-enterprise",
         "evidence-customer-adoption",
@@ -277,12 +280,20 @@
           "label": "企业工作流"
         },
         {
+          "id": "track-ai-governance",
+          "label": "AI 治理"
+        },
+        {
           "id": "function-engineering",
           "label": "工程研发"
         },
         {
           "id": "scenario-construction-real-estate",
           "label": "建筑地产"
+        },
+        {
+          "id": "scenario-agent-governance",
+          "label": "Agent 权限治理"
         },
         {
           "id": "customer-developer-team",
@@ -297,7 +308,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，AI Agent Accountability Crisis 的客户部署或应用案例涉及地产开发和建筑设计流程。",
+      "fact": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。",
       "evidencePoints": [
         "tigera 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -318,7 +329,7 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "AI Agent Deployment for Enterprise 记录企业应用场景：地产开发和建筑设计流程",
+      "title": "企业 AI Agent 部署：从原型走向生产",
       "subject": "AI Agent Deployment for Enterprise",
       "sourceName": "allcloud.io",
       "sourceUrl": "https://allcloud.io/blog/scalable-ai-agents-architecting-a-production-ready-deployment-platform/",
@@ -409,7 +420,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，AI Agent Deployment for Enterprise 的AI 商业动作涉及地产开发和建筑设计流程。",
+      "fact": "AllCloud 文章聚焦企业 AI Agent 从原型走向生产部署时需要的架构、平台和治理能力。",
       "evidencePoints": [
         "allcloud 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -425,123 +436,12 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260621-A05",
-      "date": "2026-06-21",
-      "type": "signal_card",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "AI 记录企业应用场景：地产开发和建筑设计流程",
-      "subject": "AI",
-      "sourceName": "The MAD Podcast (Matt Turck)",
-      "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 634,
-      "evidenceScore": 34,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "candidate",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-ai-coding",
-          "track-enterprise-workflow"
-        ],
-        "function": [
-          "function-engineering"
-        ],
-        "scenario": [
-          "scenario-construction-real-estate"
-        ],
-        "customer": [
-          "customer-developer-team",
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-ai-coding",
-        "track-enterprise-workflow",
-        "function-engineering",
-        "scenario-construction-real-estate",
-        "customer-developer-team",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "function-engineering",
-          "label": "工程研发"
-        },
-        {
-          "id": "scenario-construction-real-estate",
-          "label": "建筑地产"
-        },
-        {
-          "id": "customer-developer-team",
-          "label": "开发团队"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "来源材料显示，AI 的AI 商业动作涉及地产开发和建筑设计流程。",
-      "evidencePoints": [
-        "podcasters 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景"
-      ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
       "id": "SIG-20260621-A03",
       "date": "2026-06-21",
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
+      "title": "BCG：用 AI 重塑工作的操作系统",
       "subject": "BCG",
       "sourceName": "bcg.com",
       "sourceUrl": "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai",
@@ -632,7 +532,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。",
+      "fact": "BCG 文章讨论企业如何用 AI 重塑工作操作系统，重点落在组织流程、岗位协作和业务执行方式的变化。",
       "evidencePoints": [
         "BCG 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -658,8 +558,8 @@
       "sourceUrl": "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 634,
-      "evidenceScore": 12,
+      "rankScore": 662,
+      "evidenceScore": 40,
       "poolRoutes": [
         "core_pool"
       ],
@@ -676,12 +576,15 @@
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-enterprise-workflow"
+          "track-enterprise-workflow",
+          "track-ai-customer-service"
         ],
         "function": [
+          "function-customer-service",
           "function-sales"
         ],
         "scenario": [
+          "scenario-customer-ticket",
           "scenario-sales-briefing"
         ],
         "customer": [
@@ -699,7 +602,10 @@
       "flatTags": [
         "track-ai-agent",
         "track-enterprise-workflow",
+        "track-ai-customer-service",
+        "function-customer-service",
         "function-sales",
+        "scenario-customer-ticket",
         "scenario-sales-briefing",
         "customer-enterprise",
         "evidence-customer-adoption",
@@ -715,8 +621,20 @@
           "label": "企业工作流"
         },
         {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
+          "id": "function-customer-service",
+          "label": "客服售后"
+        },
+        {
           "id": "function-sales",
           "label": "销售"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
         },
         {
           "id": "scenario-sales-briefing",
@@ -731,17 +649,17 @@
           "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，Bcg 的AI 商业动作涉及销售和收入团队流程。",
+      "fact": "BCG 估算科技服务业存在 2000 亿美元 AI 机会，信号指向企业技术服务预算和 AI 转型需求。",
       "evidencePoints": [
         "BCG 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景。",
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
       "selectionReasons": [
         "涉及资金流向、预算规模或融资信号",
-        "能观察真实客户、业务流程或采购场景"
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -752,14 +670,14 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务",
+      "title": "ChatGPT 新增 Scheduled 侧边栏，统一管理定时任务",
       "subject": "",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/chatgpt-keeps-creeping-toward-becoming-your-ai-personal-assistant-with-new-scheduled-task-controls",
       "sourceLevel": "A",
       "importanceScore": 5,
-      "rankScore": 644,
-      "evidenceScore": 70,
+      "rankScore": 616,
+      "evidenceScore": 42,
       "poolRoutes": [
         "core_pool"
       ],
@@ -831,7 +749,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "OpenAI 为 ChatGPT 新增「Scheduled」侧边栏页面，集中管理所有定时任务。用户可查看、暂停、编辑或删除任务。研究任务可搜索网页和已连接应用，仅在内容变化时发送提醒。所有任务速度更快、可靠性更高，用户可按具体时间或早晨、下午、晚间时段触发。该功能面向 Plus、Pro、Business、Enterprise 用户，活跃任务数量因套餐而异，最多每小时执行一次，用户不活跃时自动暂停。原有「Pulse」功能已整合进定时任务",
+      "fact": "The Decoder 报道 ChatGPT 新增 Scheduled 侧边栏，用于集中管理定时任务和个人助理型自动化。",
       "evidencePoints": [
         "the-decoder 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -851,14 +769,14 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Diginomica 记录企业应用场景：销售和收入团队流程",
+      "title": "Salesforce 的 Forward Deployment Engineers 如何帮助企业落地 Agentic AI",
       "subject": "Diginomica",
       "sourceName": "diginomica.com",
       "sourceUrl": "https://diginomica.com/agentic-ai-hits-difficult-age-salesforces-forward-deployment-engineers-are-hand-well-hold",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 604,
-      "evidenceScore": 34,
+      "rankScore": 632,
+      "evidenceScore": 62,
       "poolRoutes": [
         "core_pool"
       ],
@@ -930,16 +848,16 @@
           "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，Diginomica 的客户部署或应用案例涉及销售和收入团队流程。",
+      "fact": "Diginomica 报道 Salesforce 通过 Forward Deployment Engineers 帮助企业把 Agentic AI 从试点推进到实际部署。",
       "evidencePoints": [
         "diginomica 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
       "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景"
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -950,13 +868,13 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用",
+      "title": "Harvey AI 的 Forward Deployed Engineers 如何进入大型律所部署",
       "subject": "Harvey AI's Forward Deployed Engineers",
       "sourceName": "getperspective.ai",
       "sourceUrl": "https://getperspective.ai/blog/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 718,
+      "rankScore": 698,
       "evidenceScore": 62,
       "poolRoutes": [
         "core_pool"
@@ -974,14 +892,11 @@
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-enterprise-workflow",
           "track-ai-infra"
         ],
         "function": [],
         "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
+        "customer": [],
         "evidence": [
           "evidence-customer-adoption"
         ],
@@ -993,9 +908,7 @@
       },
       "flatTags": [
         "track-ai-agent",
-        "track-enterprise-workflow",
         "track-ai-infra",
-        "customer-enterprise",
         "evidence-customer-adoption",
         "source-industry-data"
       ],
@@ -1005,23 +918,15 @@
           "label": "AI Agent"
         },
         {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
           "id": "track-ai-infra",
           "label": "AI 基础设施"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
         },
         {
           "id": "evidence-customer-adoption",
           "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，Harvey AI's Forward Deployed Engineers 的客户部署或应用案例涉及模型部署和算力调用；原文同时出现 $3B 等数字。",
+      "fact": "Perspective AI 文章分析 Harvey AI 的 Forward Deployed Engineers 如何嵌入大型律所完成法律 AI 部署。",
       "evidencePoints": [
         "getperspective 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -1042,7 +947,7 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量",
+      "title": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
       "subject": "开源工具 Headroom 爆火",
       "sourceName": "IT之家（RSS）",
       "sourceUrl": "https://www.ithome.com/0/966/527.htm",
@@ -1139,7 +1044,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "Netflix 高级工程师 Tejas Chopra 开发的开源工具 Headroom（v0.26.0）在 AI 应用与 LLM 间建立本地透明压缩层，通过压缩 JSON、代码、RAG 片段和对话历史等冗余数据减少 Token 消耗，支持可逆压缩与 CCR 缓存机制。实测代码搜索场景 Token 从 17765 降至 1408（节省 92%），SRE 事故调试场景从 65694 降至 5118（同样节省 92%）。累计帮助用户节省约",
+      "fact": "IT之家报道 Netflix 工程师开源 Headroom，称其可节省 60%-95% Token 消耗，信号指向 AI 工程成本优化。",
       "evidencePoints": [
         "IT之家 6 月 20 日消息，Netflix 高级工程师 Tejas Chopra 开发了一款名为 Headroom 的开源工具，旨在解决 AI 应用日益高昂的词元（Token）成本问题。",
         "该项目于 2026 年 1 月开源，目前已更新至 v0.",
@@ -1159,117 +1064,18 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260621-A12",
-      "date": "2026-06-21",
-      "type": "signal_card",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "Indwes 记录企业应用场景：销售和收入团队流程",
-      "subject": "Indwes",
-      "sourceName": "indwes.edu",
-      "sourceUrl": "https://www.indwes.edu/articles/2025/11/modern-organizations-actually-deploy-ai",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 634,
-      "evidenceScore": 34,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "candidate",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [
-          "function-sales"
-        ],
-        "scenario": [
-          "scenario-sales-briefing"
-        ],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "function-sales",
-        "scenario-sales-briefing",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "function-sales",
-          "label": "销售"
-        },
-        {
-          "id": "scenario-sales-briefing",
-          "label": "销售日报"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "来源材料显示，Indwes 的AI 商业动作涉及销售和收入团队流程。",
-      "evidencePoints": [
-        "indwes 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景"
-      ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
       "id": "SIG-20260621-A11",
       "date": "2026-06-21",
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Neurons-Lab 记录企业应用场景：销售和收入团队流程",
+      "title": "Neurons Lab：面向金融服务机构的 2026 年 AI 咨询公司清单",
       "subject": "Neurons Lab",
       "sourceName": "neurons-lab.com",
       "sourceUrl": "https://neurons-lab.com/articles/top-ai-consulting-firms/",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 634,
+      "rankScore": 606,
       "evidenceScore": 34,
       "poolRoutes": [
         "core_pool"
@@ -1362,13 +1168,13 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Nvidia 记录企业应用场景：模型部署和算力调用",
+      "title": "NVIDIA 开放 6 万美元研究生奖学金申请",
       "subject": "Nvidia",
       "sourceName": "NVIDIA AI Blog",
       "sourceUrl": "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2025/",
       "sourceLevel": "S",
       "importanceScore": 5,
-      "rankScore": 654,
+      "rankScore": 646,
       "evidenceScore": 42,
       "poolRoutes": [
         "core_pool"
@@ -1386,14 +1192,11 @@
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-enterprise-workflow",
           "track-ai-infra"
         ],
         "function": [],
         "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
+        "customer": [],
         "evidence": [
           "evidence-customer-adoption"
         ],
@@ -1405,9 +1208,7 @@
       },
       "flatTags": [
         "track-ai-agent",
-        "track-enterprise-workflow",
         "track-ai-infra",
-        "customer-enterprise",
         "evidence-customer-adoption",
         "source-first-party"
       ],
@@ -1417,16 +1218,8 @@
           "label": "AI Agent"
         },
         {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
           "id": "track-ai-infra",
           "label": "AI 基础设施"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
         },
         {
           "id": "evidence-customer-adoption",
@@ -1454,13 +1247,13 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Retell AI Automates Usage 记录企业应用场景：地产开发和建筑设计流程",
+      "title": "Retell AI 用 Stripe 自动化用量计费，扩展 AI 语音 Agent 业务",
       "subject": "Retell AI Automates Usage",
       "sourceName": "stripe.com",
       "sourceUrl": "https://stripe.com/en-hr/customers/retell-ai",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 662,
+      "rankScore": 668,
       "evidenceScore": 62,
       "poolRoutes": [
         "core_pool"
@@ -1479,19 +1272,23 @@
         "track": [
           "track-ai-agent",
           "track-ai-coding",
-          "track-enterprise-workflow"
+          "track-enterprise-workflow",
+          "track-ai-customer-service"
         ],
         "function": [
-          "function-engineering"
+          "function-engineering",
+          "function-customer-service"
         ],
         "scenario": [
-          "scenario-construction-real-estate"
+          "scenario-construction-real-estate",
+          "scenario-customer-ticket"
         ],
         "customer": [
           "customer-developer-team",
           "customer-enterprise"
         ],
         "evidence": [
+          "evidence-pricing-cost",
           "evidence-customer-adoption"
         ],
         "stage": [],
@@ -1504,10 +1301,14 @@
         "track-ai-agent",
         "track-ai-coding",
         "track-enterprise-workflow",
+        "track-ai-customer-service",
         "function-engineering",
+        "function-customer-service",
         "scenario-construction-real-estate",
+        "scenario-customer-ticket",
         "customer-developer-team",
         "customer-enterprise",
+        "evidence-pricing-cost",
         "evidence-customer-adoption",
         "source-industry-data"
       ],
@@ -1525,12 +1326,24 @@
           "label": "企业工作流"
         },
         {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
           "id": "function-engineering",
           "label": "工程研发"
         },
         {
+          "id": "function-customer-service",
+          "label": "客服售后"
+        },
+        {
           "id": "scenario-construction-real-estate",
           "label": "建筑地产"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
         },
         {
           "id": "customer-developer-team",
@@ -1541,11 +1354,15 @@
           "label": "大中型企业"
         },
         {
+          "id": "evidence-pricing-cost",
+          "label": "价格成本"
+        },
+        {
           "id": "evidence-customer-adoption",
           "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，Retell AI Automates Usage 的客户部署或应用案例涉及地产开发和建筑设计流程。",
+      "fact": "Stripe 客户案例显示 Retell AI 通过自动化用量计费支撑 AI 语音 Agent 业务扩展。",
       "evidencePoints": [
         "stripe 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -1565,7 +1382,7 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Data2Story：七个AI智能体将CSV文件自动生成可验证的交互式新闻文章",
+      "title": "Data2Story 用七个 AI Agent 将 CSV 自动生成可验证的交互式新闻文章",
       "subject": "Data2Story",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/data2story-turns-a-csv-file-into-a-verified-interactive-news-article-using-seven-ai-agents",
@@ -1674,7 +1491,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "Data2Story是牛津和斯坦福研究人员基于Claude Code构建的技能，通过Detective、Analyst、Editor、Designer、Programmer、Auditor、Inspector七个专用AI智能体，将CSV文件自动生成包含研究背景、统计图表和可追溯来源的交互式在线文章。核心\"检查员\"面板为每个声明和图表提供结构化证据，93%的可见陈述可溯源（人类文章基线为25%）。在53位读者对18个数据集的评测中，AI",
+      "fact": "The Decoder 报道 Data2Story 用七个 AI Agent 把 CSV 文件转成可验证的交互式新闻文章，展示数据到内容生产流程的自动化。",
       "evidencePoints": [
         "来源材料显示，The-Decoder 的AI 商业动作涉及企业智能体协作流程。"
       ],
@@ -1690,19 +1507,112 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260621-A15",
+      "id": "SIG-20260621-A01",
       "date": "2026-06-21",
       "type": "signal_card",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "Writer 记录企业应用场景：地产开发和建筑设计流程",
-      "subject": "Writer",
-      "sourceName": "The MAD Podcast (Matt Turck)",
-      "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Building-the-Easy-Button-for-Generative-AI--May-Habib--CEO--Writer-e2r9qk6",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "Convey 获得 3800 万美元 A 轮融资，用 AI Teammates 自动化企业运营",
+      "subject": "Convey",
+      "sourceName": "pulse2.com",
+      "sourceUrl": "https://pulse2.com/convey-raises-38-million-series-a-to-automate-enterprise-operations-with-ai-teammates/",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 634,
-      "evidenceScore": 34,
+      "rankScore": 678,
+      "evidenceScore": 56,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "candidate",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-funding"
+        ],
+        "stage": [
+          "stage-rising"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "customer-enterprise",
+        "evidence-funding",
+        "stage-rising",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        },
+        {
+          "id": "stage-rising",
+          "label": "升温"
+        }
+      ],
+      "fact": "Convey 宣布完成 3800 万美元 A 轮融资，产品方向是用 AI Teammates 自动化企业运营流程。",
+      "evidencePoints": [
+        "来源材料显示，Convey 的融资或资金流向涉及企业智能体协作流程。",
+        "来源材料显示，Convey 的产品或平台动作涉及企业智能体协作流程。",
+        "Convey 获得$38 M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260621-A02",
+      "date": "2026-06-21",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "LMArena 的 17 亿美元愿景：评测平台如何走向商业化",
+      "subject": "LMArena",
+      "sourceName": "Latent Space",
+      "sourceUrl": "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 696,
+      "evidenceScore": 62,
       "poolRoutes": [
         "core_pool"
       ],
@@ -1733,9 +1643,11 @@
           "customer-enterprise"
         ],
         "evidence": [
-          "evidence-customer-adoption"
+          "evidence-funding"
         ],
-        "stage": [],
+        "stage": [
+          "stage-rising"
+        ],
         "region": [],
         "source": [
           "source-industry-data"
@@ -1749,7 +1661,8 @@
         "scenario-construction-real-estate",
         "customer-developer-team",
         "customer-enterprise",
-        "evidence-customer-adoption",
+        "evidence-funding",
+        "stage-rising",
         "source-industry-data"
       ],
       "displayTags": [
@@ -1782,20 +1695,25 @@
           "label": "大中型企业"
         },
         {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
+          "id": "evidence-funding",
+          "label": "融资证据"
+        },
+        {
+          "id": "stage-rising",
+          "label": "升温"
         }
       ],
-      "fact": "来源材料显示，Writer 的产品或平台动作涉及地产开发和建筑设计流程。",
+      "fact": "来源材料显示，LMArena 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 $150m、$1.7B 等数字。",
       "evidencePoints": [
-        "podcasters 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "latent 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
       "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景"
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -1806,7 +1724,7 @@
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "独立开发者徐子文用AI自制《GTA6》项目GT-Caliber",
+      "title": "独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber",
       "subject": "Caliber",
       "sourceName": "IT之家（RSS）",
       "sourceUrl": "https://www.ithome.com/0/966/599.htm",
@@ -1896,7 +1814,7 @@
           "label": "产品发布"
         }
       ],
-      "fact": "IT之家 6 月 21 日消息，一款电子游戏要让玩家等上十三年，实在太过漫长，漫长到有人索性自己做。",
+      "fact": "IT之家报道独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber，展示个人开发者利用 AI 降低游戏原型开发成本。",
       "evidencePoints": [
         "25 岁的徐子文（Ziwen Xu，音译）是人工智能智能体初创公司 HyperEcho 的创始人，他在 X 平台发文，正式启动了这个自制项目。",
         "他写道：“自制《GTA6》，开工第一天。",
@@ -1915,92 +1833,12 @@
       "fromCorePool": true
     },
     {
-      "id": "SIG-20260621-A18",
-      "date": "2026-06-21",
-      "type": "signal_card",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "BT6 发布 AI 平台能力，面向模型部署和算力服务",
-      "subject": "BT6",
-      "sourceName": "Latent Space",
-      "sourceUrl": "https://www.latent.space/p/jailbreaking-agi-pliny-the-liberator",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 634,
-      "evidenceScore": 34,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "candidate",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-ai-infra"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [],
-        "evidence": [
-          "evidence-product-launch"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-ai-infra",
-        "evidence-product-launch",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
-        }
-      ],
-      "fact": "来源材料显示，BT6 的AI 商业动作涉及模型部署和算力调用。",
-      "evidencePoints": [
-        "latent 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
-      "selectionReasons": [
-        "影响 AI 落地的治理、合规或安全边界",
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
-      ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
       "id": "SIG-20260621-A07",
       "date": "2026-06-21",
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "Jedify 发布 AI 平台能力，面向销售线索和收入团队协作",
+      "title": "Jedify：为什么上下文图谱会成为企业 AI 的下一项必需能力",
       "subject": "Jedify",
       "sourceName": "jedify.com",
       "sourceUrl": "https://jedify.com/heres-why-context-graphs-are-the-next-must-have-for-enterprise-ai/",
@@ -2079,173 +1917,9 @@
           "label": "产品发布"
         }
       ],
-      "fact": "来源材料显示，Jedify 的AI 商业动作涉及销售和收入团队流程。",
+      "fact": "Jedify 文章把上下文图谱定位为企业 AI 理解业务知识、流程和数据关系的基础能力。",
       "evidencePoints": [
         "Jedify 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景"
-      ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "SIG-20260621-A08",
-      "date": "2026-06-21",
-      "type": "signal_card",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "Latent 发布 AI 平台能力，面向模型部署和算力服务",
-      "subject": "Latent",
-      "sourceName": "Latent Space",
-      "sourceUrl": "https://www.latent.space/p/state-of-rlreasoning-imoioi-gold",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 632,
-      "evidenceScore": 62,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "candidate",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "openai",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-ai-infra"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [],
-        "evidence": [
-          "evidence-product-launch"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-ai-infra",
-        "evidence-product-launch",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
-        }
-      ],
-      "fact": "来源材料显示，Latent 的AI 商业动作涉及模型部署和算力调用；原文同时出现 2022 b 等数字。",
-      "evidencePoints": [
-        "latent 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
-      "selectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
-      ],
-      "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "SIG-20260621-A19",
-      "date": "2026-06-21",
-      "type": "signal_card",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "Latent 发布 AI 平台能力，面向企业 Agent 协作平台",
-      "subject": "John Yang",
-      "sourceName": "Latent Space",
-      "sourceUrl": "https://www.latent.space/p/state-of-code-evals-after-swe-bench",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 608,
-      "evidenceScore": 34,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [],
-      "linkedCardId": "",
-      "status": "signal_card",
-      "promotionStatus": "candidate",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-product-launch"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "customer-enterprise",
-        "evidence-product-launch",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
-        }
-      ],
-      "fact": "来源材料显示，Latent 的AI 商业动作涉及企业智能体协作流程。",
-      "evidencePoints": [
-        "John Yang 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
       "value": "值得关注：能观察真实客户、业务流程或采购场景。",
       "selectionReasons": [
@@ -2263,7 +1937,7 @@
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "Tigera 发布 AI 平台能力，面向采购下单自动化",
+      "title": "Tigera：2026 年虚拟机与容器整合的理由",
       "subject": "Tigera",
       "sourceName": "Tigera Blog (Calico / AI Security)",
       "sourceUrl": "https://www.tigera.io/blog/the-case-for-vm-and-container-consolidation-in-2026/",
@@ -3440,6 +3114,92 @@
       "fact": "诺贝尔化学奖得主、AlphaFold团队负责人John Jumper在任职近9年后离开Google Deepmind，加入Anthropic。Jumper与Deepmind CEO Demis Hassabis因开发AlphaFold共同获得2024年诺贝尔化学奖，Hassabis感谢二人的\"非凡合作\"。此前不久，Gemini联合负责人Noam Shazeer已离职加入OpenAI。几周内，Anthropic与OpenAI挖走谷歌两位",
       "evidencePoints": [
         "the-decoder 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+      ],
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260619-A13",
+      "date": "2026-06-19",
+      "type": "signal_card",
+      "category": "case",
+      "categoryLabel": "案例",
+      "title": "企业 AI Agent 部署：从原型走向生产",
+      "subject": "AI Agent Deployment for Enterprise",
+      "sourceName": "allcloud.io",
+      "sourceUrl": "https://allcloud.io/blog/scalable-ai-agents-architecting-a-production-ready-deployment-platform/",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 674,
+      "evidenceScore": 62,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "candidate",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-customer-adoption"
+        ],
+        "stage": [],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "customer-enterprise",
+        "evidence-customer-adoption",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
+        }
+      ],
+      "fact": "AllCloud 文章聚焦企业 AI Agent 从原型走向生产部署时需要的架构、平台和治理能力。",
+      "evidencePoints": [
+        "allcloud 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
       "value": "值得关注：能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化；有较完整的原文事实支撑。",
       "selectionReasons": [
@@ -12528,7 +12288,7 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "AI 进入模型部署和算力调用",
+      "title": "NVIDIA 开放 6 万美元研究生奖学金申请",
       "subject": "Nvidia",
       "sourceName": "blogs.nvidia.com",
       "sourceUrl": "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2025/",
@@ -13107,7 +12867,7 @@
       "type": "signal_card",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "LMArena 获得1.7亿美元 融资",
+      "title": "LMArena 的 17 亿美元愿景：评测平台如何走向商业化",
       "subject": "LMArena",
       "sourceName": "latent.space",
       "sourceUrl": "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision",
@@ -26731,7 +26491,7 @@
           "label": "价格成本"
         }
       ],
-      "fact": "谁：Bcg。 做了什么：Bcg 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services，对应本地证据 R-011，材料已保留全文、哈希和出处。 缺什么：目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "fact": "BCG 估算科技服务业存在 2000 亿美元 AI 机会，信号指向企业技术服务预算和 AI 转型需求。",
       "evidencePoints": [
         "BCG 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。",
         "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -37433,12 +37193,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "页面类型不适合直接成卡，需要回到具体事件页",
-      "notPromotedIssues": [
-        "页面类型不适合直接成卡，需要回到具体事件页"
-      ],
-      "repairSuggestion": "回到有日期、主体、动作的单一公司事件页后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": true,
       "largeVendorKey": "anthropic",
       "tags": {},
@@ -37465,13 +37223,13 @@
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用",
+      "title": "Harvey AI 的 Forward Deployed Engineers 如何进入大型律所部署",
       "subject": "Harvey AI's Forward Deployed Engineers",
       "sourceName": "getperspective.ai",
       "sourceUrl": "https://getperspective.ai/blog/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 718,
+      "rankScore": 698,
       "evidenceScore": 62,
       "poolRoutes": [
         "core_pool"
@@ -37491,14 +37249,11 @@
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-enterprise-workflow",
           "track-ai-infra"
         ],
         "function": [],
         "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
+        "customer": [],
         "evidence": [
           "evidence-customer-adoption"
         ],
@@ -37510,9 +37265,7 @@
       },
       "flatTags": [
         "track-ai-agent",
-        "track-enterprise-workflow",
         "track-ai-infra",
-        "customer-enterprise",
         "evidence-customer-adoption",
         "source-industry-data"
       ],
@@ -37522,23 +37275,15 @@
           "label": "AI Agent"
         },
         {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
           "id": "track-ai-infra",
           "label": "AI 基础设施"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
         },
         {
           "id": "evidence-customer-adoption",
           "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，Harvey AI's Forward Deployed Engineers 的客户部署或应用案例涉及模型部署和算力调用；原文同时出现 $3B 等数字。",
+      "fact": "Perspective AI 文章分析 Harvey AI 的 Forward Deployed Engineers 如何嵌入大型律所完成法律 AI 部署。",
       "evidencePoints": [
         "getperspective 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -37682,7 +37427,7 @@
           "label": "价格成本"
         }
       ],
-      "fact": "谁：Bcg。 做了什么：Bcg 把 AI 用进销售和收入团队流程。 证据是什么：来源为 https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services，对应本地证据 R-011，材料已保留全文、哈希和出处。 缺什么：目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "fact": "BCG 估算科技服务业存在 2000 亿美元 AI 机会，信号指向企业技术服务预算和 AI 转型需求。",
       "evidencePoints": [
         "BCG 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。",
         "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
@@ -37704,7 +37449,7 @@
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "AI Agent Accountability Crisis 记录企业应用场景：地产开发和建筑设计流程",
+      "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
       "subject": "AI Agent Accountability Crisis",
       "sourceName": "Tigera Blog (Calico / AI Security)",
       "sourceUrl": "https://www.tigera.io/blog/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/",
@@ -37731,13 +37476,15 @@
         "track": [
           "track-ai-agent",
           "track-ai-coding",
-          "track-enterprise-workflow"
+          "track-enterprise-workflow",
+          "track-ai-governance"
         ],
         "function": [
           "function-engineering"
         ],
         "scenario": [
-          "scenario-construction-real-estate"
+          "scenario-construction-real-estate",
+          "scenario-agent-governance"
         ],
         "customer": [
           "customer-developer-team",
@@ -37756,8 +37503,10 @@
         "track-ai-agent",
         "track-ai-coding",
         "track-enterprise-workflow",
+        "track-ai-governance",
         "function-engineering",
         "scenario-construction-real-estate",
+        "scenario-agent-governance",
         "customer-developer-team",
         "customer-enterprise",
         "evidence-customer-adoption",
@@ -37777,12 +37526,20 @@
           "label": "企业工作流"
         },
         {
+          "id": "track-ai-governance",
+          "label": "AI 治理"
+        },
+        {
           "id": "function-engineering",
           "label": "工程研发"
         },
         {
           "id": "scenario-construction-real-estate",
           "label": "建筑地产"
+        },
+        {
+          "id": "scenario-agent-governance",
+          "label": "Agent 权限治理"
         },
         {
           "id": "customer-developer-team",
@@ -37797,7 +37554,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，AI Agent Accountability Crisis 的客户部署或应用案例涉及地产开发和建筑设计流程。",
+      "fact": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。",
       "evidencePoints": [
         "tigera 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -37813,12 +37570,107 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-21-P-020",
+      "id": "POOL-2026-06-21-P-014",
       "date": "2026-06-21",
+      "type": "core_pool_candidate",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "Convey 获得 3800 万美元 A 轮融资，用 AI Teammates 自动化企业运营",
+      "subject": "Convey",
+      "sourceName": "pulse2.com",
+      "sourceUrl": "https://pulse2.com/convey-raises-38-million-series-a-to-automate-enterprise-operations-with-ai-teammates/",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 678,
+      "evidenceScore": 56,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [
+        "P-014"
+      ],
+      "linkedCardId": "SIG-20260621-A01",
+      "status": "signal_card",
+      "promotionStatus": "promoted_to_signal_card",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-funding"
+        ],
+        "stage": [
+          "stage-rising"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "customer-enterprise",
+        "evidence-funding",
+        "stage-rising",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        },
+        {
+          "id": "stage-rising",
+          "label": "升温"
+        }
+      ],
+      "fact": "Convey 宣布完成 3800 万美元 A 轮融资，产品方向是用 AI Teammates 自动化企业运营流程。",
+      "evidencePoints": [
+        "来源材料显示，Convey 的融资或资金流向涉及企业智能体协作流程。",
+        "来源材料显示，Convey 的产品或平台动作涉及企业智能体协作流程。",
+        "Convey 获得$38 M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景",
+        "有较完整的原文事实支撑"
+      ],
+      "qualityWarnings": [],
+      "fromCorePool": true
+    },
+    {
+      "id": "POOL-2026-06-21-P-020",
+      "date": "2026-06-19",
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "AI Agent Deployment for Enterprise 记录企业应用场景：地产开发和建筑设计流程",
+      "title": "企业 AI Agent 部署：从原型走向生产",
       "subject": "AI Agent Deployment for Enterprise",
       "sourceName": "allcloud.io",
       "sourceUrl": "https://allcloud.io/blog/scalable-ai-agents-architecting-a-production-ready-deployment-platform/",
@@ -37832,7 +37684,7 @@
       "poolRefs": [
         "P-020"
       ],
-      "linkedCardId": "SIG-20260621-A04",
+      "linkedCardId": "SIG-20260619-A13",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -37844,17 +37696,11 @@
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-ai-coding",
           "track-enterprise-workflow"
         ],
-        "function": [
-          "function-engineering"
-        ],
-        "scenario": [
-          "scenario-construction-real-estate"
-        ],
+        "function": [],
+        "scenario": [],
         "customer": [
-          "customer-developer-team",
           "customer-enterprise"
         ],
         "evidence": [
@@ -37868,11 +37714,7 @@
       },
       "flatTags": [
         "track-ai-agent",
-        "track-ai-coding",
         "track-enterprise-workflow",
-        "function-engineering",
-        "scenario-construction-real-estate",
-        "customer-developer-team",
         "customer-enterprise",
         "evidence-customer-adoption",
         "source-industry-data"
@@ -37883,24 +37725,8 @@
           "label": "AI Agent"
         },
         {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
-        },
-        {
           "id": "track-enterprise-workflow",
           "label": "企业工作流"
-        },
-        {
-          "id": "function-engineering",
-          "label": "工程研发"
-        },
-        {
-          "id": "scenario-construction-real-estate",
-          "label": "建筑地产"
-        },
-        {
-          "id": "customer-developer-team",
-          "label": "开发团队"
         },
         {
           "id": "customer-enterprise",
@@ -37911,7 +37737,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，AI Agent Deployment for Enterprise 的AI 商业动作涉及地产开发和建筑设计流程。",
+      "fact": "AllCloud 文章聚焦企业 AI Agent 从原型走向生产部署时需要的架构、平台和治理能力。",
       "evidencePoints": [
         "allcloud 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -37932,13 +37758,13 @@
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Retell AI Automates Usage 记录企业应用场景：地产开发和建筑设计流程",
+      "title": "Retell AI 用 Stripe 自动化用量计费，扩展 AI 语音 Agent 业务",
       "subject": "Retell AI Automates Usage",
       "sourceName": "stripe.com",
       "sourceUrl": "https://stripe.com/en-hr/customers/retell-ai",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 662,
+      "rankScore": 668,
       "evidenceScore": 62,
       "poolRoutes": [
         "core_pool"
@@ -37959,19 +37785,23 @@
         "track": [
           "track-ai-agent",
           "track-ai-coding",
-          "track-enterprise-workflow"
+          "track-enterprise-workflow",
+          "track-ai-customer-service"
         ],
         "function": [
-          "function-engineering"
+          "function-engineering",
+          "function-customer-service"
         ],
         "scenario": [
-          "scenario-construction-real-estate"
+          "scenario-construction-real-estate",
+          "scenario-customer-ticket"
         ],
         "customer": [
           "customer-developer-team",
           "customer-enterprise"
         ],
         "evidence": [
+          "evidence-pricing-cost",
           "evidence-customer-adoption"
         ],
         "stage": [],
@@ -37984,10 +37814,14 @@
         "track-ai-agent",
         "track-ai-coding",
         "track-enterprise-workflow",
+        "track-ai-customer-service",
         "function-engineering",
+        "function-customer-service",
         "scenario-construction-real-estate",
+        "scenario-customer-ticket",
         "customer-developer-team",
         "customer-enterprise",
+        "evidence-pricing-cost",
         "evidence-customer-adoption",
         "source-industry-data"
       ],
@@ -38005,12 +37839,24 @@
           "label": "企业工作流"
         },
         {
+          "id": "track-ai-customer-service",
+          "label": "AI 客服"
+        },
+        {
           "id": "function-engineering",
           "label": "工程研发"
         },
         {
+          "id": "function-customer-service",
+          "label": "客服售后"
+        },
+        {
           "id": "scenario-construction-real-estate",
           "label": "建筑地产"
+        },
+        {
+          "id": "scenario-customer-ticket",
+          "label": "工单与质检"
         },
         {
           "id": "customer-developer-team",
@@ -38021,11 +37867,15 @@
           "label": "大中型企业"
         },
         {
+          "id": "evidence-pricing-cost",
+          "label": "价格成本"
+        },
+        {
           "id": "evidence-customer-adoption",
           "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，Retell AI Automates Usage 的客户部署或应用案例涉及地产开发和建筑设计流程。",
+      "fact": "Stripe 客户案例显示 Retell AI 通过自动化用量计费支撑 AI 语音 Agent 业务扩展。",
       "evidencePoints": [
         "stripe 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -38045,7 +37895,7 @@
       "type": "core_pool_candidate",
       "category": "funding",
       "categoryLabel": "融资",
-      "title": "LMArena 获得1.7亿美元 融资",
+      "title": "LMArena 的 17 亿美元愿景：评测平台如何走向商业化",
       "subject": "LMArena",
       "sourceName": "latent.space",
       "sourceUrl": "https://www.latent.space/p/state-of-evals-lmarenas-17b-vision",
@@ -38134,7 +37984,7 @@
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "AI 进入模型部署和算力调用",
+      "title": "NVIDIA 开放 6 万美元研究生奖学金申请",
       "subject": "Nvidia",
       "sourceName": "blogs.nvidia.com",
       "sourceUrl": "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2025/",
@@ -38330,7 +38180,7 @@
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
+      "title": "BCG：用 AI 重塑工作的操作系统",
       "subject": "BCG",
       "sourceName": "bcg.com",
       "sourceUrl": "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai",
@@ -38423,7 +38273,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。",
+      "fact": "BCG 文章讨论企业如何用 AI 重塑工作操作系统，重点落在组织流程、岗位协作和业务执行方式的变化。",
       "evidencePoints": [
         "BCG 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -38443,7 +38293,7 @@
       "type": "core_pool_candidate",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "独立开发者徐子文用AI自制《GTA6》项目GT-Caliber",
+      "title": "独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber",
       "subject": "Caliber",
       "sourceName": "IT之家（RSS）",
       "sourceUrl": "https://www.ithome.com/0/966/599.htm",
@@ -38535,7 +38385,7 @@
           "label": "产品发布"
         }
       ],
-      "fact": "IT之家 6 月 21 日消息，一款电子游戏要让玩家等上十三年，实在太过漫长，漫长到有人索性自己做。",
+      "fact": "IT之家报道独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber，展示个人开发者利用 AI 降低游戏原型开发成本。",
       "evidencePoints": [
         "25 岁的徐子文（Ziwen Xu，音译）是人工智能智能体初创公司 HyperEcho 的创始人，他在 X 平台发文，正式启动了这个自制项目。",
         "他写道：“自制《GTA6》，开工第一天。",
@@ -38549,88 +38399,6 @@
         "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-21-P-025",
-      "date": "2026-06-21",
-      "type": "core_pool_candidate",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "BT6 发布 AI 平台能力，面向模型部署和算力服务",
-      "subject": "BT6",
-      "sourceName": "Latent Space",
-      "sourceUrl": "https://www.latent.space/p/jailbreaking-agi-pliny-the-liberator",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 634,
-      "evidenceScore": 34,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-025"
-      ],
-      "linkedCardId": "SIG-20260621-A18",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-ai-infra"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [],
-        "evidence": [
-          "evidence-product-launch"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-ai-infra",
-        "evidence-product-launch",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
-        },
-        {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
-        }
-      ],
-      "fact": "来源材料显示，BT6 的AI 商业动作涉及模型部署和算力调用。",
-      "evidencePoints": [
-        "latent 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
-      "selectionReasons": [
-        "影响 AI 落地的治理、合规或安全边界",
-        "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
-      ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
         "可见原文片段不足，已降权处理"
       ],
       "fromCorePool": true
@@ -38749,330 +38517,15 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-21-P-028",
-      "date": "2026-06-15",
-      "type": "core_pool_candidate",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "AI 进入地产开发和建筑设计流程",
-      "subject": "Writer",
-      "sourceName": "podcasters.spotify.com",
-      "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Building-the-Easy-Button-for-Generative-AI--May-Habib--CEO--Writer-e2r9qk6",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 634,
-      "evidenceScore": 34,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-028"
-      ],
-      "linkedCardId": "SIG-20260615-A06",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-ai-coding",
-          "track-enterprise-workflow"
-        ],
-        "function": [
-          "function-engineering"
-        ],
-        "scenario": [
-          "scenario-construction-real-estate"
-        ],
-        "customer": [
-          "customer-developer-team",
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-ai-coding",
-        "track-enterprise-workflow",
-        "function-engineering",
-        "scenario-construction-real-estate",
-        "customer-developer-team",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "function-engineering",
-          "label": "工程研发"
-        },
-        {
-          "id": "scenario-construction-real-estate",
-          "label": "建筑地产"
-        },
-        {
-          "id": "customer-developer-team",
-          "label": "开发团队"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "Writer 案例：AI 进入地产开发和建筑设计流程",
-      "evidencePoints": [
-        "podcasters 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景"
-      ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-21-P-064",
+      "id": "POOL-2026-06-21-P-009",
       "date": "2026-06-21",
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Neurons-Lab 记录企业应用场景：销售和收入团队流程",
-      "subject": "Neurons Lab",
-      "sourceName": "neurons-lab.com",
-      "sourceUrl": "https://neurons-lab.com/articles/top-ai-consulting-firms/",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 634,
-      "evidenceScore": 34,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-064"
-      ],
-      "linkedCardId": "SIG-20260621-A11",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [
-          "function-sales"
-        ],
-        "scenario": [
-          "scenario-sales-briefing"
-        ],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "function-sales",
-        "scenario-sales-briefing",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "function-sales",
-          "label": "销售"
-        },
-        {
-          "id": "scenario-sales-briefing",
-          "label": "销售日报"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "来源材料显示，Neurons-Lab 的AI 商业动作涉及销售和收入团队流程。",
-      "evidencePoints": [
-        "Neurons Lab 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景"
-      ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-21-P-066",
-      "date": "2026-06-21",
-      "type": "core_pool_candidate",
-      "category": "case",
-      "categoryLabel": "案例",
-      "title": "Indwes 记录企业应用场景：销售和收入团队流程",
-      "subject": "Indwes",
-      "sourceName": "indwes.edu",
-      "sourceUrl": "https://www.indwes.edu/articles/2025/11/modern-organizations-actually-deploy-ai",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 634,
-      "evidenceScore": 34,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-066"
-      ],
-      "linkedCardId": "SIG-20260621-A12",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [
-          "function-sales"
-        ],
-        "scenario": [
-          "scenario-sales-briefing"
-        ],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-customer-adoption"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "function-sales",
-        "scenario-sales-briefing",
-        "customer-enterprise",
-        "evidence-customer-adoption",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "function-sales",
-          "label": "销售"
-        },
-        {
-          "id": "scenario-sales-briefing",
-          "label": "销售日报"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-customer-adoption",
-          "label": "客户采用"
-        }
-      ],
-      "fact": "来源材料显示，Indwes 的AI 商业动作涉及销售和收入团队流程。",
-      "evidencePoints": [
-        "indwes 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景"
-      ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
-      "id": "POOL-2026-06-21-P-024",
-      "date": "2026-06-21",
-      "type": "core_pool_candidate",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "Latent 发布 AI 平台能力，面向模型部署和算力服务",
-      "subject": "Latent",
-      "sourceName": "Latent Space",
-      "sourceUrl": "https://www.latent.space/p/state-of-rlreasoning-imoioi-gold",
+      "title": "Salesforce 的 Forward Deployment Engineers 如何帮助企业落地 Agentic AI",
+      "subject": "Diginomica",
+      "sourceName": "diginomica.com",
+      "sourceUrl": "https://diginomica.com/agentic-ai-hits-difficult-age-salesforces-forward-deployment-engineers-are-hand-well-hold",
       "sourceLevel": "B",
       "importanceScore": 5,
       "rankScore": 632,
@@ -39081,9 +38534,9 @@
         "core_pool"
       ],
       "poolRefs": [
-        "P-024"
+        "P-009"
       ],
-      "linkedCardId": "SIG-20260621-A08",
+      "linkedCardId": "SIG-20260621-A16",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
@@ -39091,17 +38544,23 @@
       "repairSuggestion": "",
       "promotePriority": "",
       "largeVendor": true,
-      "largeVendorKey": "openai",
+      "largeVendorKey": "salesforce",
       "tags": {
         "track": [
           "track-ai-agent",
-          "track-ai-infra"
+          "track-enterprise-workflow"
         ],
-        "function": [],
-        "scenario": [],
-        "customer": [],
+        "function": [
+          "function-sales"
+        ],
+        "scenario": [
+          "scenario-sales-briefing"
+        ],
+        "customer": [
+          "customer-enterprise"
+        ],
         "evidence": [
-          "evidence-product-launch"
+          "evidence-customer-adoption"
         ],
         "stage": [],
         "region": [],
@@ -39111,8 +38570,11 @@
       },
       "flatTags": [
         "track-ai-agent",
-        "track-ai-infra",
-        "evidence-product-launch",
+        "track-enterprise-workflow",
+        "function-sales",
+        "scenario-sales-briefing",
+        "customer-enterprise",
+        "evidence-customer-adoption",
         "source-industry-data"
       ],
       "displayTags": [
@@ -39121,23 +38583,34 @@
           "label": "AI Agent"
         },
         {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
         },
         {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
+          "id": "function-sales",
+          "label": "销售"
+        },
+        {
+          "id": "scenario-sales-briefing",
+          "label": "销售日报"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-customer-adoption",
+          "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，Latent 的AI 商业动作涉及模型部署和算力调用；原文同时出现 2022 b 等数字。",
+      "fact": "Diginomica 报道 Salesforce 通过 Forward Deployment Engineers 帮助企业把 Agentic AI 从试点推进到实际部署。",
       "evidencePoints": [
-        "latent 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "diginomica 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
-      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "value": "值得关注：能观察真实客户、业务流程或采购场景；有较完整的原文事实支撑。",
       "selectionReasons": [
-        "涉及资金流向、预算规模或融资信号",
         "能观察真实客户、业务流程或采购场景",
-        "指向平台能力、交付成本或生态合作变化"
+        "有较完整的原文事实支撑"
       ],
       "qualityWarnings": [
         "可见原文片段不足，已降权处理"
@@ -39150,7 +38623,7 @@
       "type": "core_pool_candidate",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "Tigera 发布 AI 平台能力，面向采购下单自动化",
+      "title": "Tigera：2026 年虚拟机与容器整合的理由",
       "subject": "Tigera",
       "sourceName": "Tigera Blog (Calico / AI Security)",
       "sourceUrl": "https://www.tigera.io/blog/the-case-for-vm-and-container-consolidation-in-2026/",
@@ -39247,99 +38720,12 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-21-P-034",
-      "date": "2026-06-21",
-      "type": "core_pool_candidate",
-      "category": "product-service",
-      "categoryLabel": "产品",
-      "title": "Latent 发布 AI 平台能力，面向企业 Agent 协作平台",
-      "subject": "John Yang",
-      "sourceName": "Latent Space",
-      "sourceUrl": "https://www.latent.space/p/state-of-code-evals-after-swe-bench",
-      "sourceLevel": "B",
-      "importanceScore": 5,
-      "rankScore": 608,
-      "evidenceScore": 34,
-      "poolRoutes": [
-        "core_pool"
-      ],
-      "poolRefs": [
-        "P-034"
-      ],
-      "linkedCardId": "SIG-20260621-A19",
-      "status": "signal_card",
-      "promotionStatus": "promoted_to_signal_card",
-      "notPromotedReason": "",
-      "notPromotedIssues": [],
-      "repairSuggestion": "",
-      "promotePriority": "",
-      "largeVendor": false,
-      "largeVendorKey": "",
-      "tags": {
-        "track": [
-          "track-ai-agent",
-          "track-enterprise-workflow"
-        ],
-        "function": [],
-        "scenario": [],
-        "customer": [
-          "customer-enterprise"
-        ],
-        "evidence": [
-          "evidence-product-launch"
-        ],
-        "stage": [],
-        "region": [],
-        "source": [
-          "source-industry-data"
-        ]
-      },
-      "flatTags": [
-        "track-ai-agent",
-        "track-enterprise-workflow",
-        "customer-enterprise",
-        "evidence-product-launch",
-        "source-industry-data"
-      ],
-      "displayTags": [
-        {
-          "id": "track-ai-agent",
-          "label": "AI Agent"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "customer-enterprise",
-          "label": "大中型企业"
-        },
-        {
-          "id": "evidence-product-launch",
-          "label": "产品发布"
-        }
-      ],
-      "fact": "来源材料显示，Latent 的AI 商业动作涉及企业智能体协作流程。",
-      "evidencePoints": [
-        "John Yang 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
-      ],
-      "value": "值得关注：能观察真实客户、业务流程或采购场景。",
-      "selectionReasons": [
-        "能观察真实客户、业务流程或采购场景"
-      ],
-      "qualityWarnings": [
-        "原文事实支撑偏弱，需优先补充 Raw/Pool 证据",
-        "可见原文片段不足，已降权处理"
-      ],
-      "fromCorePool": true
-    },
-    {
       "id": "POOL-2026-06-21-P-078",
       "date": "2026-06-21",
       "type": "core_pool_candidate",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "Jedify 发布 AI 平台能力，面向销售线索和收入团队协作",
+      "title": "Jedify：为什么上下文图谱会成为企业 AI 的下一项必需能力",
       "subject": "Jedify",
       "sourceName": "jedify.com",
       "sourceUrl": "https://jedify.com/heres-why-context-graphs-are-the-next-must-have-for-enterprise-ai/",
@@ -39420,7 +38806,7 @@
           "label": "产品发布"
         }
       ],
-      "fact": "来源材料显示，Jedify 的AI 商业动作涉及销售和收入团队流程。",
+      "fact": "Jedify 文章把上下文图谱定位为企业 AI 理解业务知识、流程和数据关系的基础能力。",
       "evidencePoints": [
         "Jedify 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
@@ -39435,34 +38821,34 @@
       "fromCorePool": true
     },
     {
-      "id": "POOL-2026-06-21-P-009",
+      "id": "POOL-2026-06-21-P-064",
       "date": "2026-06-21",
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Diginomica 记录企业应用场景：销售和收入团队流程",
-      "subject": "Diginomica",
-      "sourceName": "diginomica.com",
-      "sourceUrl": "https://diginomica.com/agentic-ai-hits-difficult-age-salesforces-forward-deployment-engineers-are-hand-well-hold",
+      "title": "Neurons Lab：面向金融服务机构的 2026 年 AI 咨询公司清单",
+      "subject": "Neurons Lab",
+      "sourceName": "neurons-lab.com",
+      "sourceUrl": "https://neurons-lab.com/articles/top-ai-consulting-firms/",
       "sourceLevel": "B",
       "importanceScore": 5,
-      "rankScore": 604,
+      "rankScore": 606,
       "evidenceScore": 34,
       "poolRoutes": [
         "core_pool"
       ],
       "poolRefs": [
-        "P-009"
+        "P-064"
       ],
-      "linkedCardId": "SIG-20260621-A16",
+      "linkedCardId": "SIG-20260621-A11",
       "status": "signal_card",
       "promotionStatus": "promoted_to_signal_card",
       "notPromotedReason": "",
       "notPromotedIssues": [],
       "repairSuggestion": "",
       "promotePriority": "",
-      "largeVendor": true,
-      "largeVendorKey": "salesforce",
+      "largeVendor": false,
+      "largeVendorKey": "",
       "tags": {
         "track": [
           "track-ai-agent",
@@ -39521,9 +38907,9 @@
           "label": "客户采用"
         }
       ],
-      "fact": "来源材料显示，Diginomica 的客户部署或应用案例涉及销售和收入团队流程。",
+      "fact": "来源材料显示，Neurons-Lab 的AI 商业动作涉及销售和收入团队流程。",
       "evidencePoints": [
-        "diginomica 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
+        "Neurons Lab 的公开材料提供了一条可追踪的 AI 商业信号，需继续核对客户、产品和业务结果。"
       ],
       "value": "值得关注：能观察真实客户、业务流程或采购场景。",
       "selectionReasons": [
@@ -39541,7 +38927,7 @@
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量",
+      "title": "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗",
       "subject": "开源工具 Headroom 爆火",
       "sourceName": "IT之家（RSS）",
       "sourceUrl": "https://www.ithome.com/0/966/527.htm",
@@ -39640,7 +39026,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "Netflix 高级工程师 Tejas Chopra 开发的开源工具 Headroom（v0.26.0）在 AI 应用与 LLM 间建立本地透明压缩层，通过压缩 JSON、代码、RAG 片段和对话历史等冗余数据减少 Token 消耗，支持可逆压缩与 CCR 缓存机制。实测代码搜索场景 Token 从 17765 降至 1408（节省 92%），SRE 事故调试场景从 65694 降至 5118（同样节省 92%）。累计帮助用户节省约",
+      "fact": "IT之家报道 Netflix 工程师开源 Headroom，称其可节省 60%-95% Token 消耗，信号指向 AI 工程成本优化。",
       "evidencePoints": [
         "IT之家 6 月 20 日消息，Netflix 高级工程师 Tejas Chopra 开发了一款名为 Headroom 的开源工具，旨在解决 AI 应用日益高昂的词元（Token）成本问题。",
         "该项目于 2026 年 1 月开源，目前已更新至 v0.",
@@ -39665,7 +39051,7 @@
       "type": "core_pool_candidate",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Data2Story：七个AI智能体将CSV文件自动生成可验证的交互式新闻文章",
+      "title": "Data2Story 用七个 AI Agent 将 CSV 自动生成可验证的交互式新闻文章",
       "subject": "Data2Story",
       "sourceName": "The Decoder：AI News（RSS）",
       "sourceUrl": "https://the-decoder.com/data2story-turns-a-csv-file-into-a-verified-interactive-news-article-using-seven-ai-agents",
@@ -39776,7 +39162,7 @@
           "label": "客户采用"
         }
       ],
-      "fact": "Data2Story是牛津和斯坦福研究人员基于Claude Code构建的技能，通过Detective、Analyst、Editor、Designer、Programmer、Auditor、Inspector七个专用AI智能体，将CSV文件自动生成包含研究背景、统计图表和可追溯来源的交互式在线文章。核心\"检查员\"面板为每个声明和图表提供结构化证据，93%的可见陈述可溯源（人类文章基线为25%）。在53位读者对18个数据集的评测中，AI",
+      "fact": "The Decoder 报道 Data2Story 用七个 AI Agent 把 CSV 文件转成可验证的交互式新闻文章，展示数据到内容生产流程的自动化。",
       "evidencePoints": [
         "来源材料显示，The-Decoder 的AI 商业动作涉及企业智能体协作流程。"
       ],
@@ -39799,15 +39185,22 @@
         "id": "category:案例",
         "label": "案例",
         "type": "category",
-        "weight": 15,
+        "weight": 12,
         "category": "case"
       },
       {
         "id": "category:产品",
         "label": "产品",
         "type": "category",
-        "weight": 6,
+        "weight": 3,
         "category": "product-service"
+      },
+      {
+        "id": "category:融资",
+        "label": "融资",
+        "type": "category",
+        "weight": 2,
+        "category": "funding"
       },
       {
         "id": "subject:BCG",
@@ -39826,14 +39219,6 @@
         "sourceName": "IT之家（RSS）"
       },
       {
-        "id": "subject:AI",
-        "label": "AI",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "The MAD Podcast (Matt Turck)"
-      },
-      {
         "id": "subject:AI-Agent-Accountability-Crisis",
         "label": "AI Agent Accountability Crisis",
         "type": "subject",
@@ -39850,20 +39235,20 @@
         "sourceName": "allcloud.io"
       },
       {
-        "id": "subject:BT6",
-        "label": "BT6",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "Latent Space"
-      },
-      {
         "id": "subject:Caliber",
         "label": "Caliber",
         "type": "subject",
         "weight": 1,
         "category": "product-service",
         "sourceName": "IT之家（RSS）"
+      },
+      {
+        "id": "subject:Convey",
+        "label": "Convey",
+        "type": "subject",
+        "weight": 1,
+        "category": "funding",
+        "sourceName": "pulse2.com"
       },
       {
         "id": "subject:Data2Story",
@@ -39890,14 +39275,6 @@
         "sourceName": "getperspective.ai"
       },
       {
-        "id": "subject:Indwes",
-        "label": "Indwes",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "indwes.edu"
-      },
-      {
         "id": "subject:Jedify",
         "label": "Jedify",
         "type": "subject",
@@ -39906,19 +39283,11 @@
         "sourceName": "jedify.com"
       },
       {
-        "id": "subject:John-Yang",
-        "label": "John Yang",
+        "id": "subject:LMArena",
+        "label": "LMArena",
         "type": "subject",
         "weight": 1,
-        "category": "product-service",
-        "sourceName": "Latent Space"
-      },
-      {
-        "id": "subject:Latent",
-        "label": "Latent",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
+        "category": "funding",
         "sourceName": "Latent Space"
       },
       {
@@ -39962,54 +39331,67 @@
         "sourceName": "Tigera Blog (Calico / AI Security)"
       },
       {
-        "id": "subject:Writer",
-        "label": "Writer",
-        "type": "subject",
-        "weight": 1,
-        "category": "case",
-        "sourceName": "The MAD Podcast (Matt Turck)"
-      },
-      {
         "id": "signal:track-ai-agent",
         "label": "AI Agent",
         "type": "signal",
-        "weight": 21,
+        "weight": 17,
         "tag": "track-ai-agent"
       },
       {
         "id": "signal:track-enterprise-workflow",
         "label": "企业工作流",
         "type": "signal",
-        "weight": 18,
+        "weight": 14,
         "tag": "track-enterprise-workflow"
       },
       {
         "id": "signal:track-ai-coding",
         "label": "AI Coding",
         "type": "signal",
-        "weight": 9,
+        "weight": 8,
         "tag": "track-ai-coding"
       },
       {
         "id": "signal:function-sales",
         "label": "销售",
         "type": "signal",
-        "weight": 6,
+        "weight": 4,
         "tag": "function-sales"
+      },
+      {
+        "id": "signal:evidence-customer-adoption",
+        "label": "客户采用",
+        "type": "signal",
+        "weight": 2,
+        "tag": "evidence-customer-adoption"
       },
       {
         "id": "signal:track-ai-infra",
         "label": "AI 基础设施",
         "type": "signal",
-        "weight": 4,
+        "weight": 2,
         "tag": "track-ai-infra"
       },
       {
-        "id": "signal:evidence-product-launch",
-        "label": "产品发布",
+        "id": "signal:function-procurement-bidding",
+        "label": "采购投标",
         "type": "signal",
-        "weight": 2,
-        "tag": "evidence-product-launch"
+        "weight": 1,
+        "tag": "function-procurement-bidding"
+      },
+      {
+        "id": "signal:customer-enterprise",
+        "label": "大中型企业",
+        "type": "signal",
+        "weight": 1,
+        "tag": "customer-enterprise"
+      },
+      {
+        "id": "signal:track-enterprise-data",
+        "label": "企业数据智能",
+        "type": "signal",
+        "weight": 1,
+        "tag": "track-enterprise-data"
       }
     ],
     "edges": [
@@ -40023,7 +39405,7 @@
           "SIG-20260621-A14"
         ],
         "titles": [
-          "Bcg 记录企业应用场景：地产开发和建筑设计流程",
+          "BCG：用 AI 重塑工作的操作系统",
           "BCG：科技服务业存在 2000 亿美元 AI 机会"
         ]
       },
@@ -40037,7 +39419,7 @@
           "SIG-20260621-A14"
         ],
         "titles": [
-          "Bcg 记录企业应用场景：地产开发和建筑设计流程",
+          "BCG：用 AI 重塑工作的操作系统",
           "BCG：科技服务业存在 2000 亿美元 AI 机会"
         ]
       },
@@ -40051,7 +39433,7 @@
           "SIG-20260621-A14"
         ],
         "titles": [
-          "Bcg 记录企业应用场景：地产开发和建筑设计流程",
+          "BCG：用 AI 重塑工作的操作系统",
           "BCG：科技服务业存在 2000 亿美元 AI 机会"
         ]
       },
@@ -40064,7 +39446,7 @@
           "SIG-20260621-A09"
         ],
         "titles": [
-          "AI Agent Accountability Crisis 记录企业应用场景：地产开发和建筑设计流程"
+          "Tigera：AI Agent 问责危机，治理没有跟上部署速度"
         ]
       },
       {
@@ -40076,19 +39458,7 @@
           "SIG-20260621-A04"
         ],
         "titles": [
-          "AI Agent Deployment for Enterprise 记录企业应用场景：地产开发和建筑设计流程"
-        ]
-      },
-      {
-        "from": "category:案例",
-        "to": "subject:AI",
-        "label": "案例",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260621-A05"
-        ],
-        "titles": [
-          "AI 记录企业应用场景：地产开发和建筑设计流程"
+          "企业 AI Agent 部署：从原型走向生产"
         ]
       },
       {
@@ -40100,7 +39470,7 @@
           "SIG-20260621-A21"
         ],
         "titles": [
-          "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务"
+          "ChatGPT 新增 Scheduled 侧边栏，统一管理定时任务"
         ]
       },
       {
@@ -40112,7 +39482,7 @@
           "SIG-20260621-A16"
         ],
         "titles": [
-          "Diginomica 记录企业应用场景：销售和收入团队流程"
+          "Salesforce 的 Forward Deployment Engineers 如何帮助企业落地 Agentic AI"
         ]
       },
       {
@@ -40124,7 +39494,7 @@
           "SIG-20260621-A13"
         ],
         "titles": [
-          "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用"
+          "Harvey AI 的 Forward Deployed Engineers 如何进入大型律所部署"
         ]
       },
       {
@@ -40136,19 +39506,7 @@
           "SIG-20260621-A23"
         ],
         "titles": [
-          "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量"
-        ]
-      },
-      {
-        "from": "category:案例",
-        "to": "subject:Indwes",
-        "label": "案例",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260621-A12"
-        ],
-        "titles": [
-          "Indwes 记录企业应用场景：销售和收入团队流程"
+          "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗"
         ]
       },
       {
@@ -40160,7 +39518,7 @@
           "SIG-20260621-A11"
         ],
         "titles": [
-          "Neurons-Lab 记录企业应用场景：销售和收入团队流程"
+          "Neurons Lab：面向金融服务机构的 2026 年 AI 咨询公司清单"
         ]
       },
       {
@@ -40172,7 +39530,7 @@
           "SIG-20260621-A17"
         ],
         "titles": [
-          "Nvidia 记录企业应用场景：模型部署和算力调用"
+          "NVIDIA 开放 6 万美元研究生奖学金申请"
         ]
       },
       {
@@ -40184,7 +39542,7 @@
           "SIG-20260621-A10"
         ],
         "titles": [
-          "Retell AI Automates Usage 记录企业应用场景：地产开发和建筑设计流程"
+          "Retell AI 用 Stripe 自动化用量计费，扩展 AI 语音 Agent 业务"
         ]
       },
       {
@@ -40196,19 +39554,7 @@
           "SIG-20260621-A22"
         ],
         "titles": [
-          "Data2Story：七个AI智能体将CSV文件自动生成可验证的交互式新闻文章"
-        ]
-      },
-      {
-        "from": "category:案例",
-        "to": "subject:Writer",
-        "label": "案例",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260621-A15"
-        ],
-        "titles": [
-          "Writer 记录企业应用场景：地产开发和建筑设计流程"
+          "Data2Story 用七个 AI Agent 将 CSV 自动生成可验证的交互式新闻文章"
         ]
       },
       {
@@ -40220,19 +39566,7 @@
           "SIG-20260621-A20"
         ],
         "titles": [
-          "独立开发者徐子文用AI自制《GTA6》项目GT-Caliber"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:BT6",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260621-A18"
-        ],
-        "titles": [
-          "BT6 发布 AI 平台能力，面向模型部署和算力服务"
+          "独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber"
         ]
       },
       {
@@ -40244,31 +39578,7 @@
           "SIG-20260621-A07"
         ],
         "titles": [
-          "Jedify 发布 AI 平台能力，面向销售线索和收入团队协作"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:Latent",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260621-A08"
-        ],
-        "titles": [
-          "Latent 发布 AI 平台能力，面向模型部署和算力服务"
-        ]
-      },
-      {
-        "from": "category:产品",
-        "to": "subject:John-Yang",
-        "label": "产品",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260621-A19"
-        ],
-        "titles": [
-          "Latent 发布 AI 平台能力，面向企业 Agent 协作平台"
+          "Jedify：为什么上下文图谱会成为企业 AI 的下一项必需能力"
         ]
       },
       {
@@ -40280,7 +39590,7 @@
           "SIG-20260621-A06"
         ],
         "titles": [
-          "Tigera 发布 AI 平台能力，面向采购下单自动化"
+          "Tigera：2026 年虚拟机与容器整合的理由"
         ]
       },
       {
@@ -40292,7 +39602,7 @@
           "SIG-20260621-A09"
         ],
         "titles": [
-          "AI Agent Accountability Crisis 记录企业应用场景：地产开发和建筑设计流程"
+          "Tigera：AI Agent 问责危机，治理没有跟上部署速度"
         ]
       },
       {
@@ -40304,7 +39614,7 @@
           "SIG-20260621-A09"
         ],
         "titles": [
-          "AI Agent Accountability Crisis 记录企业应用场景：地产开发和建筑设计流程"
+          "Tigera：AI Agent 问责危机，治理没有跟上部署速度"
         ]
       },
       {
@@ -40316,7 +39626,7 @@
           "SIG-20260621-A09"
         ],
         "titles": [
-          "AI Agent Accountability Crisis 记录企业应用场景：地产开发和建筑设计流程"
+          "Tigera：AI Agent 问责危机，治理没有跟上部署速度"
         ]
       },
       {
@@ -40328,7 +39638,7 @@
           "SIG-20260621-A04"
         ],
         "titles": [
-          "AI Agent Deployment for Enterprise 记录企业应用场景：地产开发和建筑设计流程"
+          "企业 AI Agent 部署：从原型走向生产"
         ]
       },
       {
@@ -40340,7 +39650,7 @@
           "SIG-20260621-A04"
         ],
         "titles": [
-          "AI Agent Deployment for Enterprise 记录企业应用场景：地产开发和建筑设计流程"
+          "企业 AI Agent 部署：从原型走向生产"
         ]
       },
       {
@@ -40352,43 +39662,7 @@
           "SIG-20260621-A04"
         ],
         "titles": [
-          "AI Agent Deployment for Enterprise 记录企业应用场景：地产开发和建筑设计流程"
-        ]
-      },
-      {
-        "from": "subject:AI",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260621-A05"
-        ],
-        "titles": [
-          "AI 记录企业应用场景：地产开发和建筑设计流程"
-        ]
-      },
-      {
-        "from": "subject:AI",
-        "to": "signal:track-ai-coding",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260621-A05"
-        ],
-        "titles": [
-          "AI 记录企业应用场景：地产开发和建筑设计流程"
-        ]
-      },
-      {
-        "from": "subject:AI",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260621-A05"
-        ],
-        "titles": [
-          "AI 记录企业应用场景：地产开发和建筑设计流程"
+          "企业 AI Agent 部署：从原型走向生产"
         ]
       },
       {
@@ -40400,19 +39674,7 @@
           "SIG-20260621-A03"
         ],
         "titles": [
-          "Bcg 记录企业应用场景：地产开发和建筑设计流程"
-        ]
-      },
-      {
-        "from": "subject:BCG",
-        "to": "signal:function-sales",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260621-A14"
-        ],
-        "titles": [
-          "BCG：科技服务业存在 2000 亿美元 AI 机会"
+          "BCG：用 AI 重塑工作的操作系统"
         ]
       },
       {
@@ -40424,7 +39686,7 @@
           "SIG-20260621-A21"
         ],
         "titles": [
-          "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务"
+          "ChatGPT 新增 Scheduled 侧边栏，统一管理定时任务"
         ]
       },
       {
@@ -40436,7 +39698,7 @@
           "SIG-20260621-A21"
         ],
         "titles": [
-          "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务"
+          "ChatGPT 新增 Scheduled 侧边栏，统一管理定时任务"
         ]
       },
       {
@@ -40448,7 +39710,7 @@
           "SIG-20260621-A21"
         ],
         "titles": [
-          "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务"
+          "ChatGPT 新增 Scheduled 侧边栏，统一管理定时任务"
         ]
       },
       {
@@ -40460,7 +39722,7 @@
           "SIG-20260621-A16"
         ],
         "titles": [
-          "Diginomica 记录企业应用场景：销售和收入团队流程"
+          "Salesforce 的 Forward Deployment Engineers 如何帮助企业落地 Agentic AI"
         ]
       },
       {
@@ -40472,7 +39734,7 @@
           "SIG-20260621-A16"
         ],
         "titles": [
-          "Diginomica 记录企业应用场景：销售和收入团队流程"
+          "Salesforce 的 Forward Deployment Engineers 如何帮助企业落地 Agentic AI"
         ]
       },
       {
@@ -40484,7 +39746,7 @@
           "SIG-20260621-A16"
         ],
         "titles": [
-          "Diginomica 记录企业应用场景：销售和收入团队流程"
+          "Salesforce 的 Forward Deployment Engineers 如何帮助企业落地 Agentic AI"
         ]
       },
       {
@@ -40496,34 +39758,150 @@
           "SIG-20260621-A13"
         ],
         "titles": [
-          "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用"
+          "Harvey AI 的 Forward Deployed Engineers 如何进入大型律所部署"
+        ]
+      },
+      {
+        "from": "subject:Harvey-AI's-Forward-Deployed-Engineers",
+        "to": "signal:track-ai-infra",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260621-A13"
+        ],
+        "titles": [
+          "Harvey AI 的 Forward Deployed Engineers 如何进入大型律所部署"
+        ]
+      },
+      {
+        "from": "subject:Harvey-AI's-Forward-Deployed-Engineers",
+        "to": "signal:evidence-customer-adoption",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260621-A13"
+        ],
+        "titles": [
+          "Harvey AI 的 Forward Deployed Engineers 如何进入大型律所部署"
+        ]
+      },
+      {
+        "from": "subject:开源工具-Headroom-爆火",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260621-A23"
+        ],
+        "titles": [
+          "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗"
+        ]
+      },
+      {
+        "from": "subject:开源工具-Headroom-爆火",
+        "to": "signal:track-ai-coding",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260621-A23"
+        ],
+        "titles": [
+          "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗"
+        ]
+      },
+      {
+        "from": "subject:开源工具-Headroom-爆火",
+        "to": "signal:track-enterprise-data",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260621-A23"
+        ],
+        "titles": [
+          "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗"
+        ]
+      },
+      {
+        "from": "subject:Neurons-Lab",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260621-A11"
+        ],
+        "titles": [
+          "Neurons Lab：面向金融服务机构的 2026 年 AI 咨询公司清单"
+        ]
+      },
+      {
+        "from": "subject:Neurons-Lab",
+        "to": "signal:track-enterprise-workflow",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260621-A11"
+        ],
+        "titles": [
+          "Neurons Lab：面向金融服务机构的 2026 年 AI 咨询公司清单"
+        ]
+      },
+      {
+        "from": "subject:Neurons-Lab",
+        "to": "signal:function-sales",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260621-A11"
+        ],
+        "titles": [
+          "Neurons Lab：面向金融服务机构的 2026 年 AI 咨询公司清单"
+        ]
+      },
+      {
+        "from": "subject:Nvidia",
+        "to": "signal:track-ai-agent",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260621-A17"
+        ],
+        "titles": [
+          "NVIDIA 开放 6 万美元研究生奖学金申请"
+        ]
+      },
+      {
+        "from": "subject:Nvidia",
+        "to": "signal:track-ai-infra",
+        "label": "关联",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260621-A17"
+        ],
+        "titles": [
+          "NVIDIA 开放 6 万美元研究生奖学金申请"
         ]
       }
     ],
     "clusters": [
       {
         "id": "agent-workflow-enterprise",
-        "title": "BCG、AI 记录 Agent 进入采购、数据连接和企业流程",
+        "title": "BCG、AI Agent Accountability Crisis 记录 Agent 进入采购、数据连接和企业流程",
         "direction": "企业工作流",
         "relation": [
           "AI Agent",
           "企业工作流",
           "大中型企业"
         ],
-        "summary": "来源材料显示，AI Agent Accountability Crisis 的客户部署或应用案例涉及地产开发和建筑设计流程。 来源材料显示，AI Agent Deployment for Enterprise 的AI 商业动作涉及地产开发和建筑设计流程。 来源材料显示，AI 的AI 商业动作涉及地产开发和建筑设计流程。",
-        "evidenceMeta": "素材：BCG / AI / AI Agent Accountability Crisis",
-        "detailFocus": "来源材料显示，AI Agent Accountability Crisis 的客户部署或应用案例涉及地产开发和建筑设计流程。 来源材料显示，AI Agent Deployment for Enterprise 的AI 商业动作涉及地产开发和建筑设计流程。 来源材料显示，AI 的AI 商业动作涉及地产开发和建筑设计流程。",
-        "todayCount": 14,
-        "last7Count": 56,
-        "last30Count": 121,
+        "summary": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。 AllCloud 文章聚焦企业 AI Agent 从原型走向生产部署时需要的架构、平台和治理能力。 BCG 文章讨论企业如何用 AI 重塑工作操作系统，重点落在组织流程、岗位协作和业务执行方式的变化。",
+        "evidenceMeta": "素材：BCG / AI Agent Accountability Crisis / AI Agent Deployment for Enterprise",
+        "detailFocus": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。 AllCloud 文章聚焦企业 AI Agent 从原型走向生产部署时需要的架构、平台和治理能力。 BCG 文章讨论企业如何用 AI 重塑工作操作系统，重点落在组织流程、岗位协作和业务执行方式的变化。",
+        "todayCount": 9,
+        "last7Count": 52,
+        "last30Count": 117,
         "subjects": [
           {
             "label": "BCG",
             "count": 2
-          },
-          {
-            "label": "AI",
-            "count": 1
           },
           {
             "label": "AI Agent Accountability Crisis",
@@ -40532,18 +39910,22 @@
           {
             "label": "AI Agent Deployment for Enterprise",
             "count": 1
+          },
+          {
+            "label": "Data2Story",
+            "count": 1
           }
         ],
         "categories": [
           {
             "label": "案例",
-            "count": 14
+            "count": 9
           }
         ],
         "supportingCards": [
           {
             "id": "SIG-20260621-A09",
-            "title": "AI Agent Accountability Crisis 记录企业应用场景：地产开发和建筑设计流程",
+            "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
             "subject": "AI Agent Accountability Crisis",
             "categoryLabel": "案例",
             "sourceName": "Tigera Blog (Calico / AI Security)",
@@ -40552,7 +39934,7 @@
           },
           {
             "id": "SIG-20260621-A04",
-            "title": "AI Agent Deployment for Enterprise 记录企业应用场景：地产开发和建筑设计流程",
+            "title": "企业 AI Agent 部署：从原型走向生产",
             "subject": "AI Agent Deployment for Enterprise",
             "categoryLabel": "案例",
             "sourceName": "allcloud.io",
@@ -40560,45 +39942,41 @@
             "date": "2026-06-21"
           },
           {
-            "id": "SIG-20260621-A05",
-            "title": "AI 记录企业应用场景：地产开发和建筑设计流程",
-            "subject": "AI",
-            "categoryLabel": "案例",
-            "sourceName": "The MAD Podcast (Matt Turck)",
-            "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg",
-            "date": "2026-06-21"
-          },
-          {
             "id": "SIG-20260621-A03",
-            "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
+            "title": "BCG：用 AI 重塑工作的操作系统",
             "subject": "BCG",
             "categoryLabel": "案例",
             "sourceName": "bcg.com",
             "sourceUrl": "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai",
+            "date": "2026-06-21"
+          },
+          {
+            "id": "SIG-20260621-A14",
+            "title": "BCG：科技服务业存在 2000 亿美元 AI 机会",
+            "subject": "BCG",
+            "categoryLabel": "案例",
+            "sourceName": "bcg.com",
+            "sourceUrl": "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services",
             "date": "2026-06-21"
           }
         ]
       },
       {
         "id": "product-launch-vs-adoption",
-        "title": "BT6、Caliber 同日出现在企业 AI 产品发布里",
+        "title": "Caliber、Jedify 同日出现在企业 AI 产品发布里",
         "direction": "产品发布",
         "relation": [
           "产品发布",
           "客户采用",
           "商业验证"
         ],
-        "summary": "IT之家 6 月 21 日消息，一款电子游戏要让玩家等上十三年，实在太过漫长，漫长到有人索性自己做。 来源材料显示，BT6 的AI 商业动作涉及模型部署和算力调用。 来源材料显示，Jedify 的AI 商业动作涉及销售和收入团队流程。",
-        "evidenceMeta": "素材：BT6 / Caliber / Jedify",
-        "detailFocus": "IT之家 6 月 21 日消息，一款电子游戏要让玩家等上十三年，实在太过漫长，漫长到有人索性自己做。 来源材料显示，BT6 的AI 商业动作涉及模型部署和算力调用。 来源材料显示，Jedify 的AI 商业动作涉及销售和收入团队流程。",
-        "todayCount": 6,
-        "last7Count": 52,
-        "last30Count": 146,
+        "summary": "IT之家报道独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber，展示个人开发者利用 AI 降低游戏原型开发成本。 Jedify 文章把上下文图谱定位为企业 AI 理解业务知识、流程和数据关系的基础能力。 来源材料显示，Tigera 的AI 商业动作涉及采购下单流程。",
+        "evidenceMeta": "素材：Caliber / Jedify / Tigera",
+        "detailFocus": "IT之家报道独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber，展示个人开发者利用 AI 降低游戏原型开发成本。 Jedify 文章把上下文图谱定位为企业 AI 理解业务知识、流程和数据关系的基础能力。 来源材料显示，Tigera 的AI 商业动作涉及采购下单流程。",
+        "todayCount": 3,
+        "last7Count": 49,
+        "last30Count": 143,
         "subjects": [
-          {
-            "label": "BT6",
-            "count": 1
-          },
           {
             "label": "Caliber",
             "count": 1
@@ -40608,20 +39986,20 @@
             "count": 1
           },
           {
-            "label": "John Yang",
+            "label": "Tigera",
             "count": 1
           }
         ],
         "categories": [
           {
             "label": "产品",
-            "count": 6
+            "count": 3
           }
         ],
         "supportingCards": [
           {
             "id": "SIG-20260621-A20",
-            "title": "独立开发者徐子文用AI自制《GTA6》项目GT-Caliber",
+            "title": "独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber",
             "subject": "Caliber",
             "categoryLabel": "产品",
             "sourceName": "IT之家（RSS）",
@@ -40629,17 +40007,8 @@
             "date": "2026-06-21"
           },
           {
-            "id": "SIG-20260621-A18",
-            "title": "BT6 发布 AI 平台能力，面向模型部署和算力服务",
-            "subject": "BT6",
-            "categoryLabel": "产品",
-            "sourceName": "Latent Space",
-            "sourceUrl": "https://www.latent.space/p/jailbreaking-agi-pliny-the-liberator",
-            "date": "2026-06-21"
-          },
-          {
             "id": "SIG-20260621-A07",
-            "title": "Jedify 发布 AI 平台能力，面向销售线索和收入团队协作",
+            "title": "Jedify：为什么上下文图谱会成为企业 AI 的下一项必需能力",
             "subject": "Jedify",
             "categoryLabel": "产品",
             "sourceName": "jedify.com",
@@ -40647,94 +40016,12 @@
             "date": "2026-06-21"
           },
           {
-            "id": "SIG-20260621-A08",
-            "title": "Latent 发布 AI 平台能力，面向模型部署和算力服务",
-            "subject": "Latent",
+            "id": "SIG-20260621-A06",
+            "title": "Tigera：2026 年虚拟机与容器整合的理由",
+            "subject": "Tigera",
             "categoryLabel": "产品",
-            "sourceName": "Latent Space",
-            "sourceUrl": "https://www.latent.space/p/state-of-rlreasoning-imoioi-gold",
-            "date": "2026-06-21"
-          }
-        ]
-      },
-      {
-        "id": "sales-procurement-budget",
-        "title": "Diginomica、Indwes 记录 AI 进入采购、合同和收入流程",
-        "direction": "采购 / 销售",
-        "relation": [
-          "企业采购",
-          "销售 / 收入流程",
-          "预算治理"
-        ],
-        "summary": "来源材料显示，Diginomica 的客户部署或应用案例涉及销售和收入团队流程。 来源材料显示，Indwes 的AI 商业动作涉及销售和收入团队流程。 来源材料显示，Neurons-Lab 的AI 商业动作涉及销售和收入团队流程。",
-        "evidenceMeta": "素材：Diginomica / Indwes / Jedify",
-        "detailFocus": "来源材料显示，Diginomica 的客户部署或应用案例涉及销售和收入团队流程。 来源材料显示，Indwes 的AI 商业动作涉及销售和收入团队流程。 来源材料显示，Neurons-Lab 的AI 商业动作涉及销售和收入团队流程。",
-        "todayCount": 5,
-        "last7Count": 5,
-        "last30Count": 21,
-        "subjects": [
-          {
-            "label": "Diginomica",
-            "count": 1
-          },
-          {
-            "label": "Indwes",
-            "count": 1
-          },
-          {
-            "label": "Jedify",
-            "count": 1
-          },
-          {
-            "label": "Neurons Lab",
-            "count": 1
-          }
-        ],
-        "categories": [
-          {
-            "label": "案例",
-            "count": 3
-          },
-          {
-            "label": "产品",
-            "count": 2
-          }
-        ],
-        "supportingCards": [
-          {
-            "id": "SIG-20260621-A16",
-            "title": "Diginomica 记录企业应用场景：销售和收入团队流程",
-            "subject": "Diginomica",
-            "categoryLabel": "案例",
-            "sourceName": "diginomica.com",
-            "sourceUrl": "https://diginomica.com/agentic-ai-hits-difficult-age-salesforces-forward-deployment-engineers-are-hand-well-hold",
-            "date": "2026-06-21"
-          },
-          {
-            "id": "SIG-20260621-A12",
-            "title": "Indwes 记录企业应用场景：销售和收入团队流程",
-            "subject": "Indwes",
-            "categoryLabel": "案例",
-            "sourceName": "indwes.edu",
-            "sourceUrl": "https://www.indwes.edu/articles/2025/11/modern-organizations-actually-deploy-ai",
-            "date": "2026-06-21"
-          },
-          {
-            "id": "SIG-20260621-A11",
-            "title": "Neurons-Lab 记录企业应用场景：销售和收入团队流程",
-            "subject": "Neurons Lab",
-            "categoryLabel": "案例",
-            "sourceName": "neurons-lab.com",
-            "sourceUrl": "https://neurons-lab.com/articles/top-ai-consulting-firms/",
-            "date": "2026-06-21"
-          },
-          {
-            "id": "SIG-20260621-A07",
-            "title": "Jedify 发布 AI 平台能力，面向销售线索和收入团队协作",
-            "subject": "Jedify",
-            "categoryLabel": "产品",
-            "sourceName": "jedify.com",
-            "sourceUrl": "https://jedify.com/heres-why-context-graphs-are-the-next-must-have-for-enterprise-ai/",
+            "sourceName": "Tigera Blog (Calico / AI Security)",
+            "sourceUrl": "https://www.tigera.io/blog/the-case-for-vm-and-container-consolidation-in-2026/",
             "date": "2026-06-21"
           }
         ]
@@ -40748,9 +40035,9 @@
           "行业 Agent",
           "效率指标"
         ],
-        "summary": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。 来源材料显示，Bcg 的AI 商业动作涉及销售和收入团队流程。",
+        "summary": "BCG 文章讨论企业如何用 AI 重塑工作操作系统，重点落在组织流程、岗位协作和业务执行方式的变化。 BCG 估算科技服务业存在 2000 亿美元 AI 机会，信号指向企业技术服务预算和 AI 转型需求。",
         "evidenceMeta": "素材：BCG",
-        "detailFocus": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。 来源材料显示，Bcg 的AI 商业动作涉及销售和收入团队流程。",
+        "detailFocus": "BCG 文章讨论企业如何用 AI 重塑工作操作系统，重点落在组织流程、岗位协作和业务执行方式的变化。 BCG 估算科技服务业存在 2000 亿美元 AI 机会，信号指向企业技术服务预算和 AI 转型需求。",
         "todayCount": 2,
         "last7Count": 4,
         "last30Count": 11,
@@ -40769,7 +40056,7 @@
         "supportingCards": [
           {
             "id": "SIG-20260621-A03",
-            "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
+            "title": "BCG：用 AI 重塑工作的操作系统",
             "subject": "BCG",
             "categoryLabel": "案例",
             "sourceName": "bcg.com",
@@ -40792,27 +40079,23 @@
   "relationshipDirections": [
     {
       "id": "agent-workflow-enterprise",
-      "title": "BCG、AI 记录 Agent 进入采购、数据连接和企业流程",
+      "title": "BCG、AI Agent Accountability Crisis 记录 Agent 进入采购、数据连接和企业流程",
       "direction": "企业工作流",
       "relation": [
         "AI Agent",
         "企业工作流",
         "大中型企业"
       ],
-      "summary": "来源材料显示，AI Agent Accountability Crisis 的客户部署或应用案例涉及地产开发和建筑设计流程。 来源材料显示，AI Agent Deployment for Enterprise 的AI 商业动作涉及地产开发和建筑设计流程。 来源材料显示，AI 的AI 商业动作涉及地产开发和建筑设计流程。",
-      "evidenceMeta": "素材：BCG / AI / AI Agent Accountability Crisis",
-      "detailFocus": "来源材料显示，AI Agent Accountability Crisis 的客户部署或应用案例涉及地产开发和建筑设计流程。 来源材料显示，AI Agent Deployment for Enterprise 的AI 商业动作涉及地产开发和建筑设计流程。 来源材料显示，AI 的AI 商业动作涉及地产开发和建筑设计流程。",
-      "todayCount": 14,
-      "last7Count": 56,
-      "last30Count": 121,
+      "summary": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。 AllCloud 文章聚焦企业 AI Agent 从原型走向生产部署时需要的架构、平台和治理能力。 BCG 文章讨论企业如何用 AI 重塑工作操作系统，重点落在组织流程、岗位协作和业务执行方式的变化。",
+      "evidenceMeta": "素材：BCG / AI Agent Accountability Crisis / AI Agent Deployment for Enterprise",
+      "detailFocus": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。 AllCloud 文章聚焦企业 AI Agent 从原型走向生产部署时需要的架构、平台和治理能力。 BCG 文章讨论企业如何用 AI 重塑工作操作系统，重点落在组织流程、岗位协作和业务执行方式的变化。",
+      "todayCount": 9,
+      "last7Count": 52,
+      "last30Count": 117,
       "subjects": [
         {
           "label": "BCG",
           "count": 2
-        },
-        {
-          "label": "AI",
-          "count": 1
         },
         {
           "label": "AI Agent Accountability Crisis",
@@ -40821,18 +40104,22 @@
         {
           "label": "AI Agent Deployment for Enterprise",
           "count": 1
+        },
+        {
+          "label": "Data2Story",
+          "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 14
+          "count": 9
         }
       ],
       "supportingCards": [
         {
           "id": "SIG-20260621-A09",
-          "title": "AI Agent Accountability Crisis 记录企业应用场景：地产开发和建筑设计流程",
+          "title": "Tigera：AI Agent 问责危机，治理没有跟上部署速度",
           "subject": "AI Agent Accountability Crisis",
           "categoryLabel": "案例",
           "sourceName": "Tigera Blog (Calico / AI Security)",
@@ -40841,7 +40128,7 @@
         },
         {
           "id": "SIG-20260621-A04",
-          "title": "AI Agent Deployment for Enterprise 记录企业应用场景：地产开发和建筑设计流程",
+          "title": "企业 AI Agent 部署：从原型走向生产",
           "subject": "AI Agent Deployment for Enterprise",
           "categoryLabel": "案例",
           "sourceName": "allcloud.io",
@@ -40849,45 +40136,41 @@
           "date": "2026-06-21"
         },
         {
-          "id": "SIG-20260621-A05",
-          "title": "AI 记录企业应用场景：地产开发和建筑设计流程",
-          "subject": "AI",
-          "categoryLabel": "案例",
-          "sourceName": "The MAD Podcast (Matt Turck)",
-          "sourceUrl": "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg",
-          "date": "2026-06-21"
-        },
-        {
           "id": "SIG-20260621-A03",
-          "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
+          "title": "BCG：用 AI 重塑工作的操作系统",
           "subject": "BCG",
           "categoryLabel": "案例",
           "sourceName": "bcg.com",
           "sourceUrl": "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai",
+          "date": "2026-06-21"
+        },
+        {
+          "id": "SIG-20260621-A14",
+          "title": "BCG：科技服务业存在 2000 亿美元 AI 机会",
+          "subject": "BCG",
+          "categoryLabel": "案例",
+          "sourceName": "bcg.com",
+          "sourceUrl": "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services",
           "date": "2026-06-21"
         }
       ]
     },
     {
       "id": "product-launch-vs-adoption",
-      "title": "BT6、Caliber 同日出现在企业 AI 产品发布里",
+      "title": "Caliber、Jedify 同日出现在企业 AI 产品发布里",
       "direction": "产品发布",
       "relation": [
         "产品发布",
         "客户采用",
         "商业验证"
       ],
-      "summary": "IT之家 6 月 21 日消息，一款电子游戏要让玩家等上十三年，实在太过漫长，漫长到有人索性自己做。 来源材料显示，BT6 的AI 商业动作涉及模型部署和算力调用。 来源材料显示，Jedify 的AI 商业动作涉及销售和收入团队流程。",
-      "evidenceMeta": "素材：BT6 / Caliber / Jedify",
-      "detailFocus": "IT之家 6 月 21 日消息，一款电子游戏要让玩家等上十三年，实在太过漫长，漫长到有人索性自己做。 来源材料显示，BT6 的AI 商业动作涉及模型部署和算力调用。 来源材料显示，Jedify 的AI 商业动作涉及销售和收入团队流程。",
-      "todayCount": 6,
-      "last7Count": 52,
-      "last30Count": 146,
+      "summary": "IT之家报道独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber，展示个人开发者利用 AI 降低游戏原型开发成本。 Jedify 文章把上下文图谱定位为企业 AI 理解业务知识、流程和数据关系的基础能力。 来源材料显示，Tigera 的AI 商业动作涉及采购下单流程。",
+      "evidenceMeta": "素材：Caliber / Jedify / Tigera",
+      "detailFocus": "IT之家报道独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber，展示个人开发者利用 AI 降低游戏原型开发成本。 Jedify 文章把上下文图谱定位为企业 AI 理解业务知识、流程和数据关系的基础能力。 来源材料显示，Tigera 的AI 商业动作涉及采购下单流程。",
+      "todayCount": 3,
+      "last7Count": 49,
+      "last30Count": 143,
       "subjects": [
-        {
-          "label": "BT6",
-          "count": 1
-        },
         {
           "label": "Caliber",
           "count": 1
@@ -40897,20 +40180,20 @@
           "count": 1
         },
         {
-          "label": "John Yang",
+          "label": "Tigera",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "产品",
-          "count": 6
+          "count": 3
         }
       ],
       "supportingCards": [
         {
           "id": "SIG-20260621-A20",
-          "title": "独立开发者徐子文用AI自制《GTA6》项目GT-Caliber",
+          "title": "独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber",
           "subject": "Caliber",
           "categoryLabel": "产品",
           "sourceName": "IT之家（RSS）",
@@ -40918,17 +40201,8 @@
           "date": "2026-06-21"
         },
         {
-          "id": "SIG-20260621-A18",
-          "title": "BT6 发布 AI 平台能力，面向模型部署和算力服务",
-          "subject": "BT6",
-          "categoryLabel": "产品",
-          "sourceName": "Latent Space",
-          "sourceUrl": "https://www.latent.space/p/jailbreaking-agi-pliny-the-liberator",
-          "date": "2026-06-21"
-        },
-        {
           "id": "SIG-20260621-A07",
-          "title": "Jedify 发布 AI 平台能力，面向销售线索和收入团队协作",
+          "title": "Jedify：为什么上下文图谱会成为企业 AI 的下一项必需能力",
           "subject": "Jedify",
           "categoryLabel": "产品",
           "sourceName": "jedify.com",
@@ -40936,94 +40210,12 @@
           "date": "2026-06-21"
         },
         {
-          "id": "SIG-20260621-A08",
-          "title": "Latent 发布 AI 平台能力，面向模型部署和算力服务",
-          "subject": "Latent",
+          "id": "SIG-20260621-A06",
+          "title": "Tigera：2026 年虚拟机与容器整合的理由",
+          "subject": "Tigera",
           "categoryLabel": "产品",
-          "sourceName": "Latent Space",
-          "sourceUrl": "https://www.latent.space/p/state-of-rlreasoning-imoioi-gold",
-          "date": "2026-06-21"
-        }
-      ]
-    },
-    {
-      "id": "sales-procurement-budget",
-      "title": "Diginomica、Indwes 记录 AI 进入采购、合同和收入流程",
-      "direction": "采购 / 销售",
-      "relation": [
-        "企业采购",
-        "销售 / 收入流程",
-        "预算治理"
-      ],
-      "summary": "来源材料显示，Diginomica 的客户部署或应用案例涉及销售和收入团队流程。 来源材料显示，Indwes 的AI 商业动作涉及销售和收入团队流程。 来源材料显示，Neurons-Lab 的AI 商业动作涉及销售和收入团队流程。",
-      "evidenceMeta": "素材：Diginomica / Indwes / Jedify",
-      "detailFocus": "来源材料显示，Diginomica 的客户部署或应用案例涉及销售和收入团队流程。 来源材料显示，Indwes 的AI 商业动作涉及销售和收入团队流程。 来源材料显示，Neurons-Lab 的AI 商业动作涉及销售和收入团队流程。",
-      "todayCount": 5,
-      "last7Count": 5,
-      "last30Count": 21,
-      "subjects": [
-        {
-          "label": "Diginomica",
-          "count": 1
-        },
-        {
-          "label": "Indwes",
-          "count": 1
-        },
-        {
-          "label": "Jedify",
-          "count": 1
-        },
-        {
-          "label": "Neurons Lab",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 3
-        },
-        {
-          "label": "产品",
-          "count": 2
-        }
-      ],
-      "supportingCards": [
-        {
-          "id": "SIG-20260621-A16",
-          "title": "Diginomica 记录企业应用场景：销售和收入团队流程",
-          "subject": "Diginomica",
-          "categoryLabel": "案例",
-          "sourceName": "diginomica.com",
-          "sourceUrl": "https://diginomica.com/agentic-ai-hits-difficult-age-salesforces-forward-deployment-engineers-are-hand-well-hold",
-          "date": "2026-06-21"
-        },
-        {
-          "id": "SIG-20260621-A12",
-          "title": "Indwes 记录企业应用场景：销售和收入团队流程",
-          "subject": "Indwes",
-          "categoryLabel": "案例",
-          "sourceName": "indwes.edu",
-          "sourceUrl": "https://www.indwes.edu/articles/2025/11/modern-organizations-actually-deploy-ai",
-          "date": "2026-06-21"
-        },
-        {
-          "id": "SIG-20260621-A11",
-          "title": "Neurons-Lab 记录企业应用场景：销售和收入团队流程",
-          "subject": "Neurons Lab",
-          "categoryLabel": "案例",
-          "sourceName": "neurons-lab.com",
-          "sourceUrl": "https://neurons-lab.com/articles/top-ai-consulting-firms/",
-          "date": "2026-06-21"
-        },
-        {
-          "id": "SIG-20260621-A07",
-          "title": "Jedify 发布 AI 平台能力，面向销售线索和收入团队协作",
-          "subject": "Jedify",
-          "categoryLabel": "产品",
-          "sourceName": "jedify.com",
-          "sourceUrl": "https://jedify.com/heres-why-context-graphs-are-the-next-must-have-for-enterprise-ai/",
+          "sourceName": "Tigera Blog (Calico / AI Security)",
+          "sourceUrl": "https://www.tigera.io/blog/the-case-for-vm-and-container-consolidation-in-2026/",
           "date": "2026-06-21"
         }
       ]
@@ -41037,9 +40229,9 @@
         "行业 Agent",
         "效率指标"
       ],
-      "summary": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。 来源材料显示，Bcg 的AI 商业动作涉及销售和收入团队流程。",
+      "summary": "BCG 文章讨论企业如何用 AI 重塑工作操作系统，重点落在组织流程、岗位协作和业务执行方式的变化。 BCG 估算科技服务业存在 2000 亿美元 AI 机会，信号指向企业技术服务预算和 AI 转型需求。",
       "evidenceMeta": "素材：BCG",
-      "detailFocus": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。 来源材料显示，Bcg 的AI 商业动作涉及销售和收入团队流程。",
+      "detailFocus": "BCG 文章讨论企业如何用 AI 重塑工作操作系统，重点落在组织流程、岗位协作和业务执行方式的变化。 BCG 估算科技服务业存在 2000 亿美元 AI 机会，信号指向企业技术服务预算和 AI 转型需求。",
       "todayCount": 2,
       "last7Count": 4,
       "last30Count": 11,
@@ -41058,7 +40250,7 @@
       "supportingCards": [
         {
           "id": "SIG-20260621-A03",
-          "title": "Bcg 记录企业应用场景：地产开发和建筑设计流程",
+          "title": "BCG：用 AI 重塑工作的操作系统",
           "subject": "BCG",
           "categoryLabel": "案例",
           "sourceName": "bcg.com",
@@ -41081,9 +40273,9 @@
     {
       "object": "track-ai-agent",
       "label": "AI Agent",
-      "todayCount": 21,
-      "last7Count": 132,
-      "last30Count": 325,
+      "todayCount": 17,
+      "last7Count": 129,
+      "last30Count": 322,
       "subjects": [
         {
           "label": "BCG",
@@ -41094,155 +40286,167 @@
           "count": 1
         },
         {
-          "label": "AI",
+          "label": "AI Agent Accountability Crisis",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 15
+          "count": 12
         },
         {
           "label": "产品",
-          "count": 6
+          "count": 3
+        },
+        {
+          "label": "融资",
+          "count": 2
         }
       ],
       "coTags": [
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 18
+          "count": 14
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 18
+          "count": 14
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 15
+          "count": 12
         },
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 9
+          "count": 8
         }
       ]
     },
     {
       "object": "customer-enterprise",
       "label": "大中型企业",
-      "todayCount": 18,
-      "last7Count": 94,
-      "last30Count": 239,
+      "todayCount": 14,
+      "last7Count": 91,
+      "last30Count": 236,
       "subjects": [
         {
           "label": "BCG",
           "count": 2
         },
         {
-          "label": "AI",
+          "label": "AI Agent Accountability Crisis",
           "count": 1
         },
         {
-          "label": "AI Agent Accountability Crisis",
+          "label": "AI Agent Deployment for Enterprise",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 14
+          "count": 9
         },
         {
           "label": "产品",
-          "count": 4
+          "count": 3
+        },
+        {
+          "label": "融资",
+          "count": 2
         }
       ],
       "coTags": [
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 18
+          "count": 14
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 18
+          "count": 14
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 14
+          "count": 9
         },
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 8
+          "count": 7
         }
       ]
     },
     {
       "object": "track-enterprise-workflow",
       "label": "企业工作流",
-      "todayCount": 18,
-      "last7Count": 94,
-      "last30Count": 238,
+      "todayCount": 14,
+      "last7Count": 91,
+      "last30Count": 235,
       "subjects": [
         {
           "label": "BCG",
           "count": 2
         },
         {
-          "label": "AI",
+          "label": "AI Agent Accountability Crisis",
           "count": 1
         },
         {
-          "label": "AI Agent Accountability Crisis",
+          "label": "AI Agent Deployment for Enterprise",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 14
+          "count": 9
         },
         {
           "label": "产品",
-          "count": 4
+          "count": 3
+        },
+        {
+          "label": "融资",
+          "count": 2
         }
       ],
       "coTags": [
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 18
+          "count": 14
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 18
+          "count": 14
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 14
+          "count": 9
         },
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 8
+          "count": 7
         }
       ]
     },
     {
       "object": "evidence-customer-adoption",
       "label": "客户采用",
-      "todayCount": 15,
-      "last7Count": 64,
-      "last30Count": 143,
+      "todayCount": 12,
+      "last7Count": 62,
+      "last30Count": 141,
       "subjects": [
         {
           "label": "BCG",
@@ -41253,150 +40457,44 @@
           "count": 1
         },
         {
-          "label": "AI",
+          "label": "AI Agent Accountability Crisis",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 15
+          "count": 12
         }
       ],
       "coTags": [
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 15
+          "count": 12
         },
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 14
+          "count": 9
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 14
+          "count": 9
         },
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 8
+          "count": 6
         }
       ]
     },
     {
       "object": "customer-developer-team",
       "label": "开发团队",
-      "todayCount": 9,
-      "last7Count": 46,
-      "last30Count": 108,
-      "subjects": [
-        {
-          "label": "开源工具 Headroom 爆火",
-          "count": 1
-        },
-        {
-          "label": "AI",
-          "count": 1
-        },
-        {
-          "label": "AI Agent Accountability Crisis",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 8
-        },
-        {
-          "label": "产品",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 9
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 9
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 9
-        },
-        {
-          "tag": "customer-enterprise",
-          "label": "大中型企业",
-          "count": 8
-        }
-      ]
-    },
-    {
-      "object": "function-engineering",
-      "label": "工程研发",
-      "todayCount": 9,
-      "last7Count": 46,
-      "last30Count": 109,
-      "subjects": [
-        {
-          "label": "开源工具 Headroom 爆火",
-          "count": 1
-        },
-        {
-          "label": "AI",
-          "count": 1
-        },
-        {
-          "label": "AI Agent Accountability Crisis",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 8
-        },
-        {
-          "label": "产品",
-          "count": 1
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 9
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 9
-        },
-        {
-          "tag": "track-ai-coding",
-          "label": "AI Coding",
-          "count": 9
-        },
-        {
-          "tag": "customer-enterprise",
-          "label": "大中型企业",
-          "count": 8
-        }
-      ]
-    },
-    {
-      "object": "track-ai-coding",
-      "label": "AI Coding",
-      "todayCount": 9,
-      "last7Count": 46,
+      "todayCount": 8,
+      "last7Count": 45,
       "last30Count": 107,
       "subjects": [
         {
@@ -41404,21 +40502,82 @@
           "count": 1
         },
         {
-          "label": "AI",
+          "label": "AI Agent Accountability Crisis",
           "count": 1
         },
         {
-          "label": "AI Agent Accountability Crisis",
+          "label": "AI Agent Deployment for Enterprise",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 8
+          "count": 6
         },
         {
           "label": "产品",
+          "count": 1
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 8
+        },
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 8
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 8
+        },
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "object": "function-engineering",
+      "label": "工程研发",
+      "todayCount": 8,
+      "last7Count": 45,
+      "last30Count": 108,
+      "subjects": [
+        {
+          "label": "开源工具 Headroom 爆火",
+          "count": 1
+        },
+        {
+          "label": "AI Agent Accountability Crisis",
+          "count": 1
+        },
+        {
+          "label": "AI Agent Deployment for Enterprise",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 6
+        },
+        {
+          "label": "产品",
+          "count": 1
+        },
+        {
+          "label": "融资",
           "count": 1
         }
       ],
@@ -41426,38 +40585,95 @@
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 9
-        },
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 9
+          "count": 8
+        },
+        {
+          "tag": "track-ai-coding",
+          "label": "AI Coding",
+          "count": 8
         },
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 8
+          "count": 7
         }
       ]
     },
     {
-      "object": "evidence-product-launch",
-      "label": "产品发布",
-      "todayCount": 6,
-      "last7Count": 52,
-      "last30Count": 147,
+      "object": "track-ai-coding",
+      "label": "AI Coding",
+      "todayCount": 8,
+      "last7Count": 45,
+      "last30Count": 106,
       "subjects": [
         {
-          "label": "BT6",
+          "label": "开源工具 Headroom 爆火",
           "count": 1
         },
         {
-          "label": "Caliber",
+          "label": "AI Agent Accountability Crisis",
+          "count": 1
+        },
+        {
+          "label": "AI Agent Deployment for Enterprise",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 6
+        },
+        {
+          "label": "产品",
+          "count": 1
+        },
+        {
+          "label": "融资",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-developer-team",
+          "label": "开发团队",
+          "count": 8
+        },
+        {
+          "tag": "function-engineering",
+          "label": "工程研发",
+          "count": 8
+        },
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 8
+        },
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "object": "function-sales",
+      "label": "销售",
+      "todayCount": 5,
+      "last7Count": 22,
+      "last30Count": 59,
+      "subjects": [
+        {
+          "label": "BCG",
+          "count": 1
+        },
+        {
+          "label": "Diginomica",
           "count": 1
         },
         {
@@ -41467,30 +40683,34 @@
       ],
       "categories": [
         {
+          "label": "案例",
+          "count": 4
+        },
+        {
           "label": "产品",
-          "count": 6
+          "count": 1
         }
       ],
       "coTags": [
         {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 6
-        },
-        {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 4
+          "count": 5
+        },
+        {
+          "tag": "scenario-sales-briefing",
+          "label": "销售日报",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 5
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 4
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 3
+          "count": 5
         }
       ]
     }
@@ -41955,7 +41175,7 @@
         "window": "7 天",
         "object": "track-ai-agent",
         "label": "AI Agent",
-        "cardCount": 132,
+        "cardCount": 129,
         "lastSeen": "2026-06-21",
         "filter": "track-ai-agent"
       },
@@ -41963,7 +41183,7 @@
         "window": "7 天",
         "object": "customer-enterprise",
         "label": "大中型企业",
-        "cardCount": 94,
+        "cardCount": 91,
         "lastSeen": "2026-06-21",
         "filter": "customer-enterprise"
       },
@@ -41971,7 +41191,7 @@
         "window": "7 天",
         "object": "track-enterprise-workflow",
         "label": "企业工作流",
-        "cardCount": 94,
+        "cardCount": 91,
         "lastSeen": "2026-06-21",
         "filter": "track-enterprise-workflow"
       },
@@ -41979,7 +41199,7 @@
         "window": "7 天",
         "object": "evidence-customer-adoption",
         "label": "客户采用",
-        "cardCount": 64,
+        "cardCount": 62,
         "lastSeen": "2026-06-21",
         "filter": "evidence-customer-adoption"
       },
@@ -41987,7 +41207,7 @@
         "window": "7 天",
         "object": "track-ai-infra",
         "label": "AI 基础设施",
-        "cardCount": 56,
+        "cardCount": 54,
         "lastSeen": "2026-06-21",
         "filter": "track-ai-infra"
       },
@@ -41995,7 +41215,7 @@
         "window": "7 天",
         "object": "evidence-product-launch",
         "label": "产品发布",
-        "cardCount": 52,
+        "cardCount": 49,
         "lastSeen": "2026-06-21",
         "filter": "evidence-product-launch"
       },
@@ -42003,7 +41223,7 @@
         "window": "7 天",
         "object": "customer-developer-team",
         "label": "开发团队",
-        "cardCount": 46,
+        "cardCount": 45,
         "lastSeen": "2026-06-21",
         "filter": "customer-developer-team"
       },
@@ -42011,7 +41231,7 @@
         "window": "7 天",
         "object": "function-engineering",
         "label": "工程研发",
-        "cardCount": 46,
+        "cardCount": 45,
         "lastSeen": "2026-06-21",
         "filter": "function-engineering"
       },
@@ -42019,7 +41239,7 @@
         "window": "30 天",
         "object": "track-ai-agent",
         "label": "AI Agent",
-        "cardCount": 325,
+        "cardCount": 322,
         "lastSeen": "2026-06-21",
         "filter": "track-ai-agent"
       },
@@ -42027,7 +41247,7 @@
         "window": "30 天",
         "object": "customer-enterprise",
         "label": "大中型企业",
-        "cardCount": 239,
+        "cardCount": 236,
         "lastSeen": "2026-06-21",
         "filter": "customer-enterprise"
       },
@@ -42035,7 +41255,7 @@
         "window": "30 天",
         "object": "track-enterprise-workflow",
         "label": "企业工作流",
-        "cardCount": 238,
+        "cardCount": 235,
         "lastSeen": "2026-06-21",
         "filter": "track-enterprise-workflow"
       },
@@ -42043,7 +41263,7 @@
         "window": "30 天",
         "object": "track-ai-infra",
         "label": "AI 基础设施",
-        "cardCount": 187,
+        "cardCount": 185,
         "lastSeen": "2026-06-21",
         "filter": "track-ai-infra"
       },
@@ -42051,7 +41271,7 @@
         "window": "30 天",
         "object": "evidence-product-launch",
         "label": "产品发布",
-        "cardCount": 147,
+        "cardCount": 144,
         "lastSeen": "2026-06-21",
         "filter": "evidence-product-launch"
       },
@@ -42059,7 +41279,7 @@
         "window": "30 天",
         "object": "evidence-customer-adoption",
         "label": "客户采用",
-        "cardCount": 143,
+        "cardCount": 141,
         "lastSeen": "2026-06-21",
         "filter": "evidence-customer-adoption"
       },
@@ -42067,7 +41287,7 @@
         "window": "30 天",
         "object": "function-engineering",
         "label": "工程研发",
-        "cardCount": 109,
+        "cardCount": 108,
         "lastSeen": "2026-06-21",
         "filter": "function-engineering"
       },
@@ -42075,7 +41295,7 @@
         "window": "30 天",
         "object": "customer-developer-team",
         "label": "开发团队",
-        "cardCount": 108,
+        "cardCount": 107,
         "lastSeen": "2026-06-21",
         "filter": "customer-developer-team"
       }
@@ -42088,9 +41308,9 @@
       "title": "AI Agent",
       "date": "2026-06-21",
       "signal": "track-ai-agent",
-      "evidenceCount": 325,
+      "evidenceCount": 322,
       "window": "30 天",
-      "summary": "AI Agent has 325 linked cards in the 30 天 window.",
+      "summary": "AI Agent has 322 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42099,9 +41319,9 @@
       "title": "大中型企业",
       "date": "2026-06-21",
       "signal": "customer-enterprise",
-      "evidenceCount": 239,
+      "evidenceCount": 236,
       "window": "30 天",
-      "summary": "大中型企业 has 239 linked cards in the 30 天 window.",
+      "summary": "大中型企业 has 236 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42110,9 +41330,9 @@
       "title": "企业工作流",
       "date": "2026-06-21",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 238,
+      "evidenceCount": 235,
       "window": "30 天",
-      "summary": "企业工作流 has 238 linked cards in the 30 天 window.",
+      "summary": "企业工作流 has 235 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42121,9 +41341,9 @@
       "title": "AI 基础设施",
       "date": "2026-06-21",
       "signal": "track-ai-infra",
-      "evidenceCount": 187,
+      "evidenceCount": 185,
       "window": "30 天",
-      "summary": "AI 基础设施 has 187 linked cards in the 30 天 window.",
+      "summary": "AI 基础设施 has 185 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42132,9 +41352,9 @@
       "title": "产品发布",
       "date": "2026-06-21",
       "signal": "evidence-product-launch",
-      "evidenceCount": 147,
+      "evidenceCount": 144,
       "window": "30 天",
-      "summary": "产品发布 has 147 linked cards in the 30 天 window.",
+      "summary": "产品发布 has 144 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42143,9 +41363,9 @@
       "title": "客户采用",
       "date": "2026-06-21",
       "signal": "evidence-customer-adoption",
-      "evidenceCount": 143,
+      "evidenceCount": 141,
       "window": "30 天",
-      "summary": "客户采用 has 143 linked cards in the 30 天 window.",
+      "summary": "客户采用 has 141 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42154,9 +41374,9 @@
       "title": "AI Agent",
       "date": "2026-06-21",
       "signal": "track-ai-agent",
-      "evidenceCount": 132,
+      "evidenceCount": 129,
       "window": "7 天",
-      "summary": "AI Agent has 132 linked cards in the 7 天 window.",
+      "summary": "AI Agent has 129 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42165,9 +41385,9 @@
       "title": "工程研发",
       "date": "2026-06-21",
       "signal": "function-engineering",
-      "evidenceCount": 109,
+      "evidenceCount": 108,
       "window": "30 天",
-      "summary": "工程研发 has 109 linked cards in the 30 天 window.",
+      "summary": "工程研发 has 108 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42176,9 +41396,9 @@
       "title": "开发团队",
       "date": "2026-06-21",
       "signal": "customer-developer-team",
-      "evidenceCount": 108,
+      "evidenceCount": 107,
       "window": "30 天",
-      "summary": "开发团队 has 108 linked cards in the 30 天 window.",
+      "summary": "开发团队 has 107 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42187,9 +41407,9 @@
       "title": "大中型企业",
       "date": "2026-06-21",
       "signal": "customer-enterprise",
-      "evidenceCount": 94,
+      "evidenceCount": 91,
       "window": "7 天",
-      "summary": "大中型企业 has 94 linked cards in the 7 天 window.",
+      "summary": "大中型企业 has 91 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42198,9 +41418,9 @@
       "title": "企业工作流",
       "date": "2026-06-21",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 94,
+      "evidenceCount": 91,
       "window": "7 天",
-      "summary": "企业工作流 has 94 linked cards in the 7 天 window.",
+      "summary": "企业工作流 has 91 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42209,9 +41429,9 @@
       "title": "客户采用",
       "date": "2026-06-21",
       "signal": "evidence-customer-adoption",
-      "evidenceCount": 64,
+      "evidenceCount": 62,
       "window": "7 天",
-      "summary": "客户采用 has 64 linked cards in the 7 天 window.",
+      "summary": "客户采用 has 62 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42220,9 +41440,9 @@
       "title": "AI 基础设施",
       "date": "2026-06-21",
       "signal": "track-ai-infra",
-      "evidenceCount": 56,
+      "evidenceCount": 54,
       "window": "7 天",
-      "summary": "AI 基础设施 has 56 linked cards in the 7 天 window.",
+      "summary": "AI 基础设施 has 54 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42231,9 +41451,9 @@
       "title": "产品发布",
       "date": "2026-06-21",
       "signal": "evidence-product-launch",
-      "evidenceCount": 52,
+      "evidenceCount": 49,
       "window": "7 天",
-      "summary": "产品发布 has 52 linked cards in the 7 天 window.",
+      "summary": "产品发布 has 49 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42242,9 +41462,9 @@
       "title": "开发团队",
       "date": "2026-06-21",
       "signal": "customer-developer-team",
-      "evidenceCount": 46,
+      "evidenceCount": 45,
       "window": "7 天",
-      "summary": "开发团队 has 46 linked cards in the 7 天 window.",
+      "summary": "开发团队 has 45 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42253,9 +41473,9 @@
       "title": "工程研发",
       "date": "2026-06-21",
       "signal": "function-engineering",
-      "evidenceCount": 46,
+      "evidenceCount": 45,
       "window": "7 天",
-      "summary": "工程研发 has 46 linked cards in the 7 天 window.",
+      "summary": "工程研发 has 45 linked cards in the 7 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -42264,8 +41484,8 @@
       "title": "AI Agent",
       "date": "2026-06-21",
       "signal": "track-ai-agent",
-      "evidenceCount": 21,
-      "windowCount": 325,
+      "evidenceCount": 17,
+      "windowCount": 322,
       "subjects": [
         {
           "label": "BCG",
@@ -42276,43 +41496,47 @@
           "count": 1
         },
         {
-          "label": "AI",
+          "label": "AI Agent Accountability Crisis",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 15
+          "count": 12
         },
         {
           "label": "产品",
-          "count": 6
+          "count": 3
+        },
+        {
+          "label": "融资",
+          "count": 2
         }
       ],
       "coTags": [
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 18
+          "count": 14
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 18
+          "count": 14
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 15
+          "count": 12
         },
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 9
+          "count": 8
         }
       ],
-      "summary": "AI Agent appears in 21 same-day cards and 325 cards in the 30-day window.",
+      "summary": "AI Agent appears in 17 same-day cards and 322 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -42321,55 +41545,59 @@
       "title": "大中型企业",
       "date": "2026-06-21",
       "signal": "customer-enterprise",
-      "evidenceCount": 18,
-      "windowCount": 239,
+      "evidenceCount": 14,
+      "windowCount": 236,
       "subjects": [
         {
           "label": "BCG",
           "count": 2
         },
         {
-          "label": "AI",
+          "label": "AI Agent Accountability Crisis",
           "count": 1
         },
         {
-          "label": "AI Agent Accountability Crisis",
+          "label": "AI Agent Deployment for Enterprise",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 14
+          "count": 9
         },
         {
           "label": "产品",
-          "count": 4
+          "count": 3
+        },
+        {
+          "label": "融资",
+          "count": 2
         }
       ],
       "coTags": [
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 18
+          "count": 14
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 18
+          "count": 14
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 14
+          "count": 9
         },
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 8
+          "count": 7
         }
       ],
-      "summary": "大中型企业 appears in 18 same-day cards and 239 cards in the 30-day window.",
+      "summary": "大中型企业 appears in 14 same-day cards and 236 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -42378,55 +41606,59 @@
       "title": "企业工作流",
       "date": "2026-06-21",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 18,
-      "windowCount": 238,
+      "evidenceCount": 14,
+      "windowCount": 235,
       "subjects": [
         {
           "label": "BCG",
           "count": 2
         },
         {
-          "label": "AI",
+          "label": "AI Agent Accountability Crisis",
           "count": 1
         },
         {
-          "label": "AI Agent Accountability Crisis",
+          "label": "AI Agent Deployment for Enterprise",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 14
+          "count": 9
         },
         {
           "label": "产品",
-          "count": 4
+          "count": 3
+        },
+        {
+          "label": "融资",
+          "count": 2
         }
       ],
       "coTags": [
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 18
+          "count": 14
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 18
+          "count": 14
         },
         {
           "tag": "evidence-customer-adoption",
           "label": "客户采用",
-          "count": 14
+          "count": 9
         },
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 8
+          "count": 7
         }
       ],
-      "summary": "企业工作流 appears in 18 same-day cards and 238 cards in the 30-day window.",
+      "summary": "企业工作流 appears in 14 same-day cards and 235 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -42435,8 +41667,8 @@
       "title": "客户采用",
       "date": "2026-06-21",
       "signal": "evidence-customer-adoption",
-      "evidenceCount": 15,
-      "windowCount": 143,
+      "evidenceCount": 12,
+      "windowCount": 141,
       "subjects": [
         {
           "label": "BCG",
@@ -42447,56 +41679,94 @@
           "count": 1
         },
         {
-          "label": "AI",
+          "label": "AI Agent Accountability Crisis",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 15
+          "count": 12
         }
       ],
       "coTags": [
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 15
+          "count": 12
         },
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 14
+          "count": 9
         },
         {
           "tag": "track-enterprise-workflow",
           "label": "企业工作流",
-          "count": 14
+          "count": 9
         },
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 8
+          "count": 6
         }
       ],
-      "summary": "客户采用 appears in 15 same-day cards and 143 cards in the 30-day window.",
+      "summary": "客户采用 appears in 12 same-day cards and 141 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
       "id": "relationship:agent-workflow-enterprise",
       "type": "relationship_cluster",
-      "title": "BCG、AI 记录 Agent 进入采购、数据连接和企业流程",
+      "title": "BCG、AI Agent Accountability Crisis 记录 Agent 进入采购、数据连接和企业流程",
       "date": "2026-06-21",
       "signal": "企业工作流",
-      "evidenceCount": 14,
-      "windowCount": 121,
+      "evidenceCount": 9,
+      "windowCount": 117,
       "subjects": [
         {
           "label": "BCG",
           "count": 2
         },
         {
-          "label": "AI",
+          "label": "AI Agent Accountability Crisis",
+          "count": 1
+        },
+        {
+          "label": "AI Agent Deployment for Enterprise",
+          "count": 1
+        },
+        {
+          "label": "Data2Story",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 9
+        }
+      ],
+      "tags": [],
+      "supportingCardIds": [
+        "SIG-20260621-A09",
+        "SIG-20260621-A04",
+        "SIG-20260621-A03",
+        "SIG-20260621-A14"
+      ],
+      "summary": "Tigera 文章指出 AI Agent 部署速度快于治理和问责机制，企业需要补齐权限、可观测性和责任边界。 AllCloud 文章聚焦企业 AI Agent 从原型走向生产部署时需要的架构、平台和治理能力。 BCG 文章讨论企业如何用 AI 重塑工作操作系统，重点落在组织流程、岗位协作和业务执行方式的变化。",
+      "whyUseful": "Use this when looking for cross-card commercial relationships."
+    },
+    {
+      "id": "tag:customer-developer-team",
+      "type": "tag_association",
+      "title": "开发团队",
+      "date": "2026-06-21",
+      "signal": "customer-developer-team",
+      "evidenceCount": 8,
+      "windowCount": 107,
+      "subjects": [
+        {
+          "label": "开源工具 Headroom 爆火",
           "count": 1
         },
         {
@@ -42511,48 +41781,14 @@
       "categories": [
         {
           "label": "案例",
-          "count": 14
-        }
-      ],
-      "tags": [],
-      "supportingCardIds": [
-        "SIG-20260621-A09",
-        "SIG-20260621-A04",
-        "SIG-20260621-A05",
-        "SIG-20260621-A03"
-      ],
-      "summary": "来源材料显示，AI Agent Accountability Crisis 的客户部署或应用案例涉及地产开发和建筑设计流程。 来源材料显示，AI Agent Deployment for Enterprise 的AI 商业动作涉及地产开发和建筑设计流程。 来源材料显示，AI 的AI 商业动作涉及地产开发和建筑设计流程。",
-      "whyUseful": "Use this when looking for cross-card commercial relationships."
-    },
-    {
-      "id": "tag:customer-developer-team",
-      "type": "tag_association",
-      "title": "开发团队",
-      "date": "2026-06-21",
-      "signal": "customer-developer-team",
-      "evidenceCount": 9,
-      "windowCount": 108,
-      "subjects": [
-        {
-          "label": "开源工具 Headroom 爆火",
-          "count": 1
-        },
-        {
-          "label": "AI",
-          "count": 1
-        },
-        {
-          "label": "AI Agent Accountability Crisis",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 8
+          "count": 6
         },
         {
           "label": "产品",
+          "count": 1
+        },
+        {
+          "label": "融资",
           "count": 1
         }
       ],
@@ -42560,25 +41796,25 @@
         {
           "tag": "function-engineering",
           "label": "工程研发",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "track-ai-coding",
           "label": "AI Coding",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 8
+          "count": 7
         }
       ],
-      "summary": "开发团队 appears in 9 same-day cards and 108 cards in the 30-day window.",
+      "summary": "开发团队 appears in 8 same-day cards and 107 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -42587,29 +41823,33 @@
       "title": "工程研发",
       "date": "2026-06-21",
       "signal": "function-engineering",
-      "evidenceCount": 9,
-      "windowCount": 109,
+      "evidenceCount": 8,
+      "windowCount": 108,
       "subjects": [
         {
           "label": "开源工具 Headroom 爆火",
           "count": 1
         },
         {
-          "label": "AI",
+          "label": "AI Agent Accountability Crisis",
           "count": 1
         },
         {
-          "label": "AI Agent Accountability Crisis",
+          "label": "AI Agent Deployment for Enterprise",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 8
+          "count": 6
         },
         {
           "label": "产品",
+          "count": 1
+        },
+        {
+          "label": "融资",
           "count": 1
         }
       ],
@@ -42617,25 +41857,25 @@
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "track-ai-coding",
           "label": "AI Coding",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 8
+          "count": 7
         }
       ],
-      "summary": "工程研发 appears in 9 same-day cards and 109 cards in the 30-day window.",
+      "summary": "工程研发 appears in 8 same-day cards and 108 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -42644,29 +41884,33 @@
       "title": "AI Coding",
       "date": "2026-06-21",
       "signal": "track-ai-coding",
-      "evidenceCount": 9,
-      "windowCount": 107,
+      "evidenceCount": 8,
+      "windowCount": 106,
       "subjects": [
         {
           "label": "开源工具 Headroom 爆火",
           "count": 1
         },
         {
-          "label": "AI",
+          "label": "AI Agent Accountability Crisis",
           "count": 1
         },
         {
-          "label": "AI Agent Accountability Crisis",
+          "label": "AI Agent Deployment for Enterprise",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 8
+          "count": 6
         },
         {
           "label": "产品",
+          "count": 1
+        },
+        {
+          "label": "融资",
           "count": 1
         }
       ],
@@ -42674,166 +41918,119 @@
         {
           "tag": "customer-developer-team",
           "label": "开发团队",
-          "count": 9
+          "count": 8
         },
         {
           "tag": "function-engineering",
           "label": "工程研发",
-          "count": 9
-        },
-        {
-          "tag": "track-ai-agent",
-          "label": "AI Agent",
-          "count": 9
-        },
-        {
-          "tag": "customer-enterprise",
-          "label": "大中型企业",
           "count": 8
-        }
-      ],
-      "summary": "AI Coding appears in 9 same-day cards and 107 cards in the 30-day window.",
-      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
-    },
-    {
-      "id": "relationship:product-launch-vs-adoption",
-      "type": "relationship_cluster",
-      "title": "BT6、Caliber 同日出现在企业 AI 产品发布里",
-      "date": "2026-06-21",
-      "signal": "产品发布",
-      "evidenceCount": 6,
-      "windowCount": 146,
-      "subjects": [
-        {
-          "label": "BT6",
-          "count": 1
         },
-        {
-          "label": "Caliber",
-          "count": 1
-        },
-        {
-          "label": "Jedify",
-          "count": 1
-        },
-        {
-          "label": "John Yang",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 6
-        }
-      ],
-      "tags": [],
-      "supportingCardIds": [
-        "SIG-20260621-A20",
-        "SIG-20260621-A18",
-        "SIG-20260621-A07",
-        "SIG-20260621-A08"
-      ],
-      "summary": "IT之家 6 月 21 日消息，一款电子游戏要让玩家等上十三年，实在太过漫长，漫长到有人索性自己做。 来源材料显示，BT6 的AI 商业动作涉及模型部署和算力调用。 来源材料显示，Jedify 的AI 商业动作涉及销售和收入团队流程。",
-      "whyUseful": "Use this when looking for cross-card commercial relationships."
-    },
-    {
-      "id": "tag:evidence-product-launch",
-      "type": "tag_association",
-      "title": "产品发布",
-      "date": "2026-06-21",
-      "signal": "evidence-product-launch",
-      "evidenceCount": 6,
-      "windowCount": 147,
-      "subjects": [
-        {
-          "label": "BT6",
-          "count": 1
-        },
-        {
-          "label": "Caliber",
-          "count": 1
-        },
-        {
-          "label": "Jedify",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 6
-        }
-      ],
-      "coTags": [
         {
           "tag": "track-ai-agent",
           "label": "AI Agent",
-          "count": 6
+          "count": 8
         },
         {
           "tag": "customer-enterprise",
           "label": "大中型企业",
-          "count": 4
-        },
-        {
-          "tag": "track-enterprise-workflow",
-          "label": "企业工作流",
-          "count": 4
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
-          "count": 3
+          "count": 7
         }
       ],
-      "summary": "产品发布 appears in 6 same-day cards and 147 cards in the 30-day window.",
+      "summary": "AI Coding appears in 8 same-day cards and 106 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
-      "id": "relationship:sales-procurement-budget",
-      "type": "relationship_cluster",
-      "title": "Diginomica、Indwes 记录 AI 进入采购、合同和收入流程",
+      "id": "tag:function-sales",
+      "type": "tag_association",
+      "title": "销售",
       "date": "2026-06-21",
-      "signal": "采购 / 销售",
+      "signal": "function-sales",
       "evidenceCount": 5,
-      "windowCount": 21,
+      "windowCount": 59,
       "subjects": [
+        {
+          "label": "BCG",
+          "count": 1
+        },
         {
           "label": "Diginomica",
           "count": 1
         },
         {
-          "label": "Indwes",
-          "count": 1
-        },
-        {
           "label": "Jedify",
-          "count": 1
-        },
-        {
-          "label": "Neurons Lab",
           "count": 1
         }
       ],
       "categories": [
         {
           "label": "案例",
-          "count": 3
+          "count": 4
         },
         {
           "label": "产品",
-          "count": 2
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "customer-enterprise",
+          "label": "大中型企业",
+          "count": 5
+        },
+        {
+          "tag": "scenario-sales-briefing",
+          "label": "销售日报",
+          "count": 5
+        },
+        {
+          "tag": "track-ai-agent",
+          "label": "AI Agent",
+          "count": 5
+        },
+        {
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
+          "count": 5
+        }
+      ],
+      "summary": "销售 appears in 5 same-day cards and 59 cards in the 30-day window.",
+      "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
+    },
+    {
+      "id": "relationship:product-launch-vs-adoption",
+      "type": "relationship_cluster",
+      "title": "Caliber、Jedify 同日出现在企业 AI 产品发布里",
+      "date": "2026-06-21",
+      "signal": "产品发布",
+      "evidenceCount": 3,
+      "windowCount": 143,
+      "subjects": [
+        {
+          "label": "Caliber",
+          "count": 1
+        },
+        {
+          "label": "Jedify",
+          "count": 1
+        },
+        {
+          "label": "Tigera",
+          "count": 1
+        }
+      ],
+      "categories": [
+        {
+          "label": "产品",
+          "count": 3
         }
       ],
       "tags": [],
       "supportingCardIds": [
-        "SIG-20260621-A16",
-        "SIG-20260621-A12",
-        "SIG-20260621-A11",
-        "SIG-20260621-A07"
+        "SIG-20260621-A20",
+        "SIG-20260621-A07",
+        "SIG-20260621-A06"
       ],
-      "summary": "来源材料显示，Diginomica 的客户部署或应用案例涉及销售和收入团队流程。 来源材料显示，Indwes 的AI 商业动作涉及销售和收入团队流程。 来源材料显示，Neurons-Lab 的AI 商业动作涉及销售和收入团队流程。",
+      "summary": "IT之家报道独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber，展示个人开发者利用 AI 降低游戏原型开发成本。 Jedify 文章把上下文图谱定位为企业 AI 理解业务知识、流程和数据关系的基础能力。 来源材料显示，Tigera 的AI 商业动作涉及采购下单流程。",
       "whyUseful": "Use this when looking for cross-card commercial relationships."
     },
     {
@@ -42861,7 +42058,7 @@
         "SIG-20260621-A03",
         "SIG-20260621-A14"
       ],
-      "summary": "来源材料显示，Bcg 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 60%、10% 等数字。 来源材料显示，Bcg 的AI 商业动作涉及销售和收入团队流程。",
+      "summary": "BCG 文章讨论企业如何用 AI 重塑工作操作系统，重点落在组织流程、岗位协作和业务执行方式的变化。 BCG 估算科技服务业存在 2000 亿美元 AI 机会，信号指向企业技术服务预算和 AI 转型需求。",
       "whyUseful": "Use this when looking for cross-card commercial relationships."
     }
   ]

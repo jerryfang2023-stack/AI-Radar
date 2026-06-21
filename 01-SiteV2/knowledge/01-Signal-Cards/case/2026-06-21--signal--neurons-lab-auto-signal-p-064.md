@@ -2,15 +2,15 @@
 id: SIG-20260621-A11
 type: signal_card
 signal_type: case
-title: "Neurons-Lab 记录企业应用场景：销售和收入团队流程"
+title: "Top AI Consulting Firms in 2026 for FSIs - Neurons Lab"
 date: 2026-06-21
 status: published
 source_title: "Top AI Consulting Firms in 2026 for FSIs - Neurons Lab"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-066"]
 pool_refs: ["P-064"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Neurons-Lab"
 
 frontend:
-  displayTitle: "Neurons-Lab 记录企业应用场景：销售和收入团队流程"
+  displayTitle: "Top AI Consulting Firms in 2026 for FSIs - Neurons Lab"
   sourceLinks:
     - "https://neurons-lab.com/articles/top-ai-consulting-firms/"
 ---
 
-# Neurons-Lab 记录企业应用场景：销售和收入团队流程
+# Top AI Consulting Firms in 2026 for FSIs - Neurons Lab
 
 ## 新闻事实
 

@@ -1,4 +1,4 @@
-status: open
+status: resolved
 priority: normal
 lane: community_intelligence
 category: monitor_or_gate_failure
@@ -6,8 +6,13 @@ failed_gate: missing
 report_path: agent-workflow/reports/2026-06-21-daily-supervision-report.md
 data_generated: no_or_stale
 needed_action: rerun gate
-created_at: 2026-06-21T12:54:37+08:00
-updated_at: 2026-06-21T12:59:38+08:00
+created_at: 2026-06-21T12:57:36+08:00
+updated_at: 2026-06-21T13:18:37+08:00
+resolved_at: 2026-06-21T13:18:37+08:00
+resolver: codex
+fix_commit: pending
+validation: npm run assert:community-intelligence -- --date=2026-06-21
+prevention_added: gate
 source: hermes-auto
 
 # Hermes Repair Request: Community Intelligence
@@ -32,3 +37,9 @@ source: hermes-auto
 ## User Escalation Needed
 
 - no, unless Codex needs GitHub permission, login state, or business judgment.
+
+## Resolution - 2026-06-21T13:18:37+08:00
+
+- fix_commit: pending
+- validation: npm run assert:community-intelligence -- --date=2026-06-21
+- prevention_added: gate

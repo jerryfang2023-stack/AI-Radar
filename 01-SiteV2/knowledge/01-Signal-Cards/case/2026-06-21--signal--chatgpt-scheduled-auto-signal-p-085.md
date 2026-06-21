@@ -9,8 +9,8 @@ source_title: "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-130"]
 pool_refs: ["P-085"]

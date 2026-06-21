@@ -2,15 +2,15 @@
 id: SIG-20260621-A13
 type: signal_card
 signal_type: case
-title: "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用"
+title: "Harvey AI's Forward Deployed Engineers: How the $3B Legal AI Leader Deploys Inside BigLaw | Blog"
 date: 2026-06-21
 status: published
 source_title: "Harvey AI's Forward Deployed Engineers: How the $3B Legal AI Leader Deploys Inside BigLaw | Blog | Perspective AI"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-010"]
 pool_refs: ["P-010"]
@@ -30,10 +30,10 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-agent", "track-ai-infra"]
   function: []
   scenario: []
-  customer: ["customer-enterprise"]
+  customer: []
   evidence: ["evidence-customer-adoption"]
   stage: []
   region: []
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Harvey AI's Forward Deployed Engineers"
 
 frontend:
-  displayTitle: "Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用"
+  displayTitle: "Harvey AI's Forward Deployed Engineers: How the $3B Legal AI Leader Deploys Inside BigLaw | Blog"
   sourceLinks:
     - "https://getperspective.ai/blog/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026"
 ---
 
-# Harvey AI's Forward Deployed Engineers 记录企业应用场景：模型部署和算力调用
+# Harvey AI's Forward Deployed Engineers: How the $3B Legal AI Leader Deploys Inside BigLaw | Blog
 
 ## 新闻事实
 

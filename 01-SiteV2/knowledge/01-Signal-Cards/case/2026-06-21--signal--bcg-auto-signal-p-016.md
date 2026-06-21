@@ -2,15 +2,15 @@
 id: SIG-20260621-A03
 type: signal_card
 signal_type: case
-title: "Bcg 记录企业应用场景：地产开发和建筑设计流程"
+title: "Reinventing the Operating System of Work with AI"
 date: 2026-06-21
 status: published
 source_title: "Reinventing the Operating System of Work with AI | BCG"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-016"]
 pool_refs: ["P-016"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Bcg"
 
 frontend:
-  displayTitle: "Bcg 记录企业应用场景：地产开发和建筑设计流程"
+  displayTitle: "Reinventing the Operating System of Work with AI"
   sourceLinks:
     - "https://www.bcg.com/publications/2026/reinventing-the-operating-system-of-work-with-ai"
 ---
 
-# Bcg 记录企业应用场景：地产开发和建筑设计流程
+# Reinventing the Operating System of Work with AI
 
 ## 新闻事实
 

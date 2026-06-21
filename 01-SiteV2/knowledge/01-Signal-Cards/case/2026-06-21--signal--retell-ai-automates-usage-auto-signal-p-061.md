@@ -2,15 +2,15 @@
 id: SIG-20260621-A10
 type: signal_card
 signal_type: case
-title: "Retell AI Automates Usage 记录企业应用场景：地产开发和建筑设计流程"
+title: "Retell AI Automates Usage-Based Pricing to Scale its AI Voice Agent ..."
 date: 2026-06-21
 status: published
 source_title: "Retell AI Automates Usage-Based Pricing to Scale its AI Voice Agent ..."
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-21T04:57:34.577Z
-updated_at: 2026-06-21T04:57:34.577Z
+created_at: 2026-06-21T03:09:49.896Z
+updated_at: 2026-06-21T03:09:49.896Z
 
 raw_refs: ["R-063"]
 pool_refs: ["P-061"]
@@ -30,11 +30,11 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
-  function: ["function-engineering"]
-  scenario: ["scenario-construction-real-estate"]
+  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-customer-service"]
+  function: ["function-engineering", "function-customer-service"]
+  scenario: ["scenario-construction-real-estate", "scenario-customer-ticket"]
   customer: ["customer-developer-team", "customer-enterprise"]
-  evidence: ["evidence-customer-adoption"]
+  evidence: ["evidence-pricing-cost", "evidence-customer-adoption"]
   stage: []
   region: []
   source: ["source-industry-data"]
@@ -42,12 +42,12 @@ formal_tags:
 signal_owner: "Retell AI Automates Usage"
 
 frontend:
-  displayTitle: "Retell AI Automates Usage 记录企业应用场景：地产开发和建筑设计流程"
+  displayTitle: "Retell AI Automates Usage-Based Pricing to Scale its AI Voice Agent ..."
   sourceLinks:
     - "https://stripe.com/en-hr/customers/retell-ai"
 ---
 
-# Retell AI Automates Usage 记录企业应用场景：地产开发和建筑设计流程
+# Retell AI Automates Usage-Based Pricing to Scale its AI Voice Agent ...
 
 ## 新闻事实
 
