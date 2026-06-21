@@ -1,0 +1,263 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-032",
+  "title": "The Case for VM and Container Consolidation in 2026",
+  "original_url": "https://www.tigera.io/blog/the-case-for-vm-and-container-consolidation-in-2026/",
+  "canonical_url": "https://tigera.io/blog/the-case-for-vm-and-container-consolidation-in-2026",
+  "source_name": "Tigera Blog (Calico / AI Security)",
+  "source_type": "analysis",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "regulatory_or_procurement",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-21T03:09:49.132Z",
+  "language": "mixed",
+  "full_text": "Two platforms, two teams, two procurement relationships, all doing one job. There’s a reason it ended up this way. There isn’t a reason it has to stay this way.\nAsk anyone at a typical enterprise why the VM platform and the container platform are separate, and they’ll give you a sensible answer. The VM estate has been there for fifteen years. It runs the workloads the business depends on. Kubernetes got stood up later, when application teams started building microservices, and giving them their own environment made more sense than retrofitting one onto VMware. Two platforms, two teams, two roadmaps.\nThat’s how most enterprises got here.\nThe reasoning was sound at the time. The question is whether it still is.\nThis is the consolidation question most enterprises haven’t actually revisited, and it’s the one quietly absorbing more of your budget each year.\nFigure 1. The current state most enterprises operate today.\nWhy VM and container platforms ended up separate\nIf you operate both platforms, you know the shape of this already. There’s a VMware team: vSphere admins, network engineers who know NSX, storage specialists, plus a separate procurement relationship for the underlying virtualisation stack. Then there’s a Kubernetes team: platform engineers, CNI specialists, GitOps people, a different set of vendor relationships. Each team runs its own upgrade calendar, its own monitoring stack, its own security posture, its own incident process. They share office space at offsites. They don’t share much else.\nBoth teams are doing the same job. They keep infrastructure available for the workloads above it. One set of those workloads happens to be virtual machines and the other happens to be containers, which is a real technical distinction, but it isn’t the distinction your operational model was built around. Your operational model was built around the platforms themselves, and the platforms are separate because of when they were stood up.\nMost enterprises don’t re-examine this. The platforms are separate because they always have been. The teams are separate because the platforms are. The procurement is separate because the teams are. Every layer of duplication has a reasonable justification, but the foundational decision underneath all of them, that VMs and containers belong on different infrastructure, is one nobody actually revisits.\nWhat KubeVirt changed about running VMs and containers together\nThe technical answer to this stopped being theoretical a few years ago. KubeVirt is a CNCF project that lets virtual machines run as native objects on a Kubernetes cluster. It’s in production at NVIDIA, Cloudflare, and ByteDance. This is no longer “an interesting research direction.” It’s the platform pattern that some of the largest, least forgiving infrastructure operators in the world use to run their VMs.\nFigure 2. The unified state — same workloads, one operational model.\nWhich means the original reason your platforms are separate doesn’t really hold anymore. You don’t need a VMware-specific stack to host VMs and a Kubernetes-specific stack to host containers. Both can run on Kubernetes. The platform team you already have, the one that operates your container infrastructure, can take on the VMs too, with the same tooling, the same security model, the same upgrade pattern. The networking layer is the part most teams underestimate. VMs have to keep their existing IPs, VLANs, and firewall references so the rest of your infrastructure doesn’t break. This is the part Calico was built for. Whether your platform team wants to lift and shift VMs onto Kubernetes with the network they already have, or modernise them onto a more dynamic networking model over time, Calico supports both paths on the same platform. Teams don’t have to commit to one approach up front, and they don’t have to migrate the network and the workload in the same step.\nThis isn’t a pitch about throwing out what you have. The migration is real work, and the order in which you do it matters. But consolidating onto one platform is no longer experimental, and that changes the math on staying where you are.\nWhat VM and container consolidation means for your roadmap\nIf you’re a CTO or VP Engineering, the question to ask your platform leads isn’t “should we adopt KubeVirt?” That’s an implementation question. The strategic question is whether running two platforms is still the right operational model, or whether it’s something worth a look now that the alternative is real.\nRunning two platforms compounds slowly. Two teams, two upgrade cadences, two vendor relationships, two of everything. Until the next renewal cycle, the next hiring round, or the next hardware refresh forces a decision you’d rather have made on your own terms.\nThe first step isn’t the whole programme. Before you can consolidate at scale, you have to migrate one real VM end-to-end without breaking the network it lives on. That’s what your platform team will need to evaluate first, and it’s what our migration guide walks through in detail. It’s written for the engineers who’ll do the work, not for the executive sponsoring it. But if you’re at the point of asking whether the two-platform arrangement is still serving you, it’s the right thing to send their way.\nRead the VM migration guide →\nBest Practices VM Migration Products\nJoin our mailing list\nGet updates on blog posts, workshops, certification programs, new releases, and more!",
+  "clean_text": "Two platforms, two teams, two procurement relationships, all doing one job. There’s a reason it ended up this way. There isn’t a reason it has to stay this way.\nAsk anyone at a typical enterprise why the VM platform and the container platform are separate, and they’ll give you a sensible answer. The VM estate has been there for fifteen years. It runs the workloads the business depends on. Kubernetes got stood up later, when application teams started building microservices, and giving them their own environment made more sense than retrofitting one onto VMware. Two platforms, two teams, two roadmaps.\nThat’s how most enterprises got here.\nThe reasoning was sound at the time. The question is whether it still is.\nThis is the consolidation question most enterprises haven’t actually revisited, and it’s the one quietly absorbing more of your budget each year.\nFigure 1. The current state most enterprises operate today.\nWhy VM and container platforms ended up separate\nIf you operate both platforms, you know the shape of this already. There’s a VMware team: vSphere admins, network engineers who know NSX, storage specialists, plus a separate procurement relationship for the underlying virtualisation stack. Then there’s a Kubernetes team: platform engineers, CNI specialists, GitOps people, a different set of vendor relationships. Each team runs its own upgrade calendar, its own monitoring stack, its own security posture, its own incident process. They share office space at offsites. They don’t share much else.\nBoth teams are doing the same job. They keep infrastructure available for the workloads above it. One set of those workloads happens to be virtual machines and the other happens to be containers, which is a real technical distinction, but it isn’t the distinction your operational model was built around. Your operational model was built around the platforms themselves, and the platforms are separate because of when they were stood up.\nMost enterprises don’t re-examine this. The platforms are separate because they always have been. The teams are separate because the platforms are. The procurement is separate because the teams are. Every layer of duplication has a reasonable justification, but the foundational decision underneath all of them, that VMs and containers belong on different infrastructure, is one nobody actually revisits.\nWhat KubeVirt changed about running VMs and containers together\nThe technical answer to this stopped being theoretical a few years ago. KubeVirt is a CNCF project that lets virtual machines run as native objects on a Kubernetes cluster. It’s in production at NVIDIA, Cloudflare, and ByteDance. This is no longer “an interesting research direction.” It’s the platform pattern that some of the largest, least forgiving infrastructure operators in the world use to run their VMs.\nFigure 2. The unified state — same workloads, one operational model.\nWhich means the original reason your platforms are separate doesn’t really hold anymore. You don’t need a VMware-specific stack to host VMs and a Kubernetes-specific stack to host containers. Both can run on Kubernetes. The platform team you already have, the one that operates your container infrastructure, can take on the VMs too, with the same tooling, the same security model, the same upgrade pattern. The networking layer is the part most teams underestimate. VMs have to keep their existing IPs, VLANs, and firewall references so the rest of your infrastructure doesn’t break. This is the part Calico was built for. Whether your platform team wants to lift and shift VMs onto Kubernetes with the network they already have, or modernise them onto a more dynamic networking model over time, Calico supports both paths on the same platform. Teams don’t have to commit to one approach up front, and they don’t have to migrate the network and the workload in the same step.\nThis isn’t a pitch about throwing out what you have. The migration is real work, and the order in which you do it matters. But consolidating onto one platform is no longer experimental, and that changes the math on staying where you are.\nWhat VM and container consolidation means for your roadmap\nIf you’re a CTO or VP Engineering, the question to ask your platform leads isn’t “should we adopt KubeVirt?” That’s an implementation question. The strategic question is whether running two platforms is still the right operational model, or whether it’s something worth a look now that the alternative is real.\nRunning two platforms compounds slowly. Two teams, two upgrade cadences, two vendor relationships, two of everything. Until the next renewal cycle, the next hiring round, or the next hardware refresh forces a decision you’d rather have made on your own terms.\nThe first step isn’t the whole programme. Before you can consolidate at scale, you have to migrate one real VM end-to-end without breaking the network it lives on. That’s what your platform team will need to evaluate first, and it’s what our migration guide walks through in detail. It’s written for the engineers who’ll do the work, not for the executive sponsoring it. But if you’re at the point of asking whether the two-platform arrangement is still serving you, it’s the right thing to send their way.\nRead the VM migration guide →\nBest Practices VM Migration Products\nJoin our mailing list\nGet updates on blog posts, workshops, certification programs, new releases, and more!",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-21/r-032-the-case-for-vm-and-container-consolidation-in-2026.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-21/r-032-the-case-for-vm-and-container-consolidation-in-2026.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 5439,
+    "paragraph_count": 23,
+    "sentence_count": 58,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 5439,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "caa803444021189b",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "3f0a916cb393487c",
+  "content_hash": "caa803444021189b",
+  "full_text_hash": "caa803444021189b",
+  "semantic_hash": "a1b490fbb3f6be76",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-21T03:09:49.132Z",
+  "last_seen_at": "2026-06-21T03:09:49.132Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "workflow_change",
+      "text": "Two platforms, two teams, two procurement relationships, all doing one job. There’s a reason it ended up this way. There isn’t a reason it has to stay this way. Ask anyone at a typical enterprise... The post The Case for VM and Container Consolidation in 2026 appeared first on Tigera – Creator of Calico. ]]>",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Two platforms, two teams, two procurement relationships, all doing one job.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There’s a reason it ended up this way.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There isn’t a reason it has to stay this way.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Ask anyone at a typical enterprise why the VM platform and the container platform are separate, and they’ll give you a sensible answer.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The VM estate has been there for fifteen years.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Tigera Blog (Calico",
+      "AI Security)",
+      "Nvidia"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "采购负责人"
+    ],
+    "workflows": [
+      "权限 / 安全治理",
+      "采购 / 招投标"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "采购",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2026",
+      "1",
+      "2"
+    ],
+    "quotes": [
+      "an interesting research direction.",
+      "should we adopt KubeVirt?"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "There’s a reason it ended up this way.",
+      "There isn’t a reason it has to stay this way.",
+      "Ask anyone at a typical enterprise why the VM platform and the container platform are separate, and they’ll give you a sensible answer."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "Two platforms, two teams, two procurement relationships, all doing one job. There’s a reason it ended up this way. There isn’t a reason it has to stay this way. Ask anyone at a typical enterprise... The post The Case for VM and Container Consolidation in 2026 appeared first on Tigera – Creator of Calico. ]]>",
+      "Two platforms, two teams, two procurement relationships, all doing one job."
+    ],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "采购负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# The Case for VM and Container Consolidation in 2026\n\n- raw_id: R-032\n- original_url: https://www.tigera.io/blog/the-case-for-vm-and-container-consolidation-in-2026/\n- source_name: Tigera Blog (Calico / AI Security)\n- collected_at: 2026-06-21T03:09:49.132Z\n\n## clean_text\n\nTwo platforms, two teams, two procurement relationships, all doing one job. There’s a reason it ended up this way. There isn’t a reason it has to stay this way.\nAsk anyone at a typical enterprise why the VM platform and the container platform are separate, and they’ll give you a sensible answer. The VM estate has been there for fifteen years. It runs the workloads the business depends on. Kubernetes got stood up later, when application teams started building microservices, and giving them their own environment made more sense than retrofitting one onto VMware. Two platforms, two teams, two roadmaps.\nThat’s how most enterprises got here.\nThe reasoning was sound at the time. The question is whether it still is.\nThis is the consolidation question most enterprises haven’t actually revisited, and it’s the one quietly absorbing more of your budget each year.\nFigure 1. The current state most enterprises operate today.\nWhy VM and container platforms ended up separate\nIf you operate both platforms, you know the shape of this already. There’s a VMware team: vSphere admins, network engineers who know NSX, storage specialists, plus a separate procurement relationship for the underlying virtualisation stack. Then there’s a Kubernetes team: platform engineers, CNI specialists, GitOps people, a different set of vendor relationships. Each team runs its own upgrade calendar, its own monitoring stack, its own security posture, its own incident process. They share office space at offsites. They don’t share much else.\nBoth teams are doing the same job. They keep infrastructure available for the workloads above it. One set of those workloads happens to be virtual machines and the other happens to be containers, which is a real technical distinction, but it isn’t the distinction your operational model was built around. Your operational model was built around the platforms themselves, and the platforms are separate because of when they were stood up.\nMost enterprises don’t re-examine this. The platforms are separate because they always have been. The teams are separate because the platforms are. The procurement is separate because the teams are. Every layer of duplication has a reasonable justification, but the foundational decision underneath all of them, that VMs and containers belong on different infrastructure, is one nobody actually revisits.\nWhat KubeVirt changed about running VMs and containers together\nThe technical answer to this stopped being theoretical a few years ago. KubeVirt is a CNCF project that lets virtual machines run as native objects on a Kubernetes cluster. It’s in production at NVIDIA, Cloudflare, and ByteDance. This is no longer “an interesting research direction.” It’s the platform pattern that some of the largest, least forgiving infrastructure operators in the world use to run their VMs.\nFigure 2. The unified state — same workloads, one operational model.\nWhich means the original reason your platforms are separate doesn’t really hold anymore. You don’t need a VMware-specific stack to host VMs and a Kubernetes-specific stack to host containers. Both can run on Kubernetes. The platform team you already have, the one that operates your container infrastructure, can take on the VMs too, with the same tooling, the same security model, the same upgrade pattern. The networking layer is the part most teams underestimate. VMs have to keep their existing IPs, VLANs, and firewall references so the rest of your infrastructure doesn’t break. This is the part Calico was built for. Whether your platform team wants to lift and shift VMs onto Kubernetes with the network they already have, or modernise them onto a more dynamic networking model over time, Calico supports both paths on the same platform. Teams don’t have to commit to one approach up front, and they don’t have to migrate the network and the workload in the same step.\nThis isn’t a pitch about throwing out what you have. The migration is real work, and the order in which you do it matters. But consolidating onto one platform is no longer experimental, and that changes the math on staying where you are.\nWhat VM and container consolidation means for your roadmap\nIf you’re a CTO or VP Engineering, the question to ask your platform leads isn’t “should we adopt KubeVirt?” That’s an implementation question. The strategic question is whether running two platforms is still the right operational model, or whether it’s something worth a look now that the alternative is real.\nRunning two platforms compounds slowly. Two teams, two upgrade cadences, two vendor relationships, two of everything. Until the next renewal cycle, the next hiring round, or the next hardware refresh forces a decision you’d rather have made on your own terms.\nThe first step isn’t the whole programme. Before you can consolidate at scale, you have to migrate one real VM end-to-end without breaking the network it lives on. That’s what your platform team will need to evaluate first, and it’s what our migration guide walks through in detail. It’s written for the engineers who’ll do the work, not for the executive sponsoring it. But if you’re at the point of asking whether the two-platform arrangement is still serving you, it’s the right thing to send their way.\nRead the VM migration guide →\nBest Practices VM Migration Products\nJoin our mailing list\nGet updates on blog posts, workshops, certification programs, new releases, and more!\n\n## full_text\n\nTwo platforms, two teams, two procurement relationships, all doing one job. There’s a reason it ended up this way. There isn’t a reason it has to stay this way.\nAsk anyone at a typical enterprise why the VM platform and the container platform are separate, and they’ll give you a sensible answer. The VM estate has been there for fifteen years. It runs the workloads the business depends on. Kubernetes got stood up later, when application teams started building microservices, and giving them their own environment made more sense than retrofitting one onto VMware. Two platforms, two teams, two roadmaps.\nThat’s how most enterprises got here.\nThe reasoning was sound at the time. The question is whether it still is.\nThis is the consolidation question most enterprises haven’t actually revisited, and it’s the one quietly absorbing more of your budget each year.\nFigure 1. The current state most enterprises operate today.\nWhy VM and container platforms ended up separate\nIf you operate both platforms, you know the shape of this already. There’s a VMware team: vSphere admins, network engineers who know NSX, storage specialists, plus a separate procurement relationship for the underlying virtualisation stack. Then there’s a Kubernetes team: platform engineers, CNI specialists, GitOps people, a different set of vendor relationships. Each team runs its own upgrade calendar, its own monitoring stack, its own security posture, its own incident process. They share office space at offsites. They don’t share much else.\nBoth teams are doing the same job. They keep infrastructure available for the workloads above it. One set of those workloads happens to be virtual machines and the other happens to be containers, which is a real technical distinction, but it isn’t the distinction your operational model was built around. Your operational model was built around the platforms themselves, and the platforms are separate because of when they were stood up.\nMost enterprises don’t re-examine this. The platforms are separate because they always have been. The teams are separate because the platforms are. The procurement is separate because the teams are. Every layer of duplication has a reasonable justification, but the foundational decision underneath all of them, that VMs and containers belong on different infrastructure, is one nobody actually revisits.\nWhat KubeVirt changed about running VMs and containers together\nThe technical answer to this stopped being theoretical a few years ago. KubeVirt is a CNCF project that lets virtual machines run as native objects on a Kubernetes cluster. It’s in production at NVIDIA, Cloudflare, and ByteDance. This is no longer “an interesting research direction.” It’s the platform pattern that some of the largest, least forgiving infrastructure operators in the world use to run their VMs.\nFigure 2. The unified state — same workloads, one operational model.\nWhich means the original reason your platforms are separate doesn’t really hold anymore. You don’t need a VMware-specific stack to host VMs and a Kubernetes-specific stack to host containers. Both can run on Kubernetes. The platform team you already have, the one that operates your container infrastructure, can take on the VMs too, with the same tooling, the same security model, the same upgrade pattern. The networking layer is the part most teams underestimate. VMs have to keep their existing IPs, VLANs, and firewall references so the rest of your infrastructure doesn’t break. This is the part Calico was built for. Whether your platform team wants to lift and shift VMs onto Kubernetes with the network they already have, or modernise them onto a more dynamic networking model over time, Calico supports both paths on the same platform. Teams don’t have to commit to one approach up front, and they don’t have to migrate the network and the workload in the same step.\nThis isn’t a pitch about throwing out what you have. The migration is real work, and the order in which you do it matters. But consolidating onto one platform is no longer experimental, and that changes the math on staying where you are.\nWhat VM and container consolidation means for your roadmap\nIf you’re a CTO or VP Engineering, the question to ask your platform leads isn’t “should we adopt KubeVirt?” That’s an implementation question. The strategic question is whether running two platforms is still the right operational model, or whether it’s something worth a look now that the alternative is real.\nRunning two platforms compounds slowly. Two teams, two upgrade cadences, two vendor relationships, two of everything. Until the next renewal cycle, the next hiring round, or the next hardware refresh forces a decision you’d rather have made on your own terms.\nThe first step isn’t the whole programme. Before you can consolidate at scale, you have to migrate one real VM end-to-end without breaking the network it lives on. That’s what your platform team will need to evaluate first, and it’s what our migration guide walks through in detail. It’s written for the engineers who’ll do the work, not for the executive sponsoring it. But if you’re at the point of asking whether the two-platform arrangement is still serving you, it’s the right thing to send their way.\nRead the VM migration guide →\nBest Practices VM Migration Products\nJoin our mailing list\nGet updates on blog posts, workshops, certification programs, new releases, and more!\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [workflow_change / daily_observation, heatmap, change, case, trend / high] Two platforms, two teams, two procurement relationships, all doing one job. There’s a reason it ended up this way. There isn’t a reason it has to stay this way. Ask anyone at a typical enterprise... The post The Case for VM and Container Consolidation in 2026 appeared first on Tigera – Creator of Calico. ]]>\n2. [workflow_change / daily_observation, heatmap, change, case, trend / high] Two platforms, two teams, two procurement relationships, all doing one job.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] There’s a reason it ended up this way.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] There isn’t a reason it has to stay this way.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] Ask anyone at a typical enterprise why the VM platform and the container platform are separate, and they’ll give you a sensible answer.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] The VM estate has been there for fifteen years.\n"
+}

@@ -1344,7 +1344,10 @@ function autoSignalSpec(poolRef, section, index) {
     : `${company} 商业信号`;
   const sourceTitle = originalTitle || "";
   const sourceEventTitle = cleanSourceEventTitle(sourceTitle);
-  const title = sourceEventTitle || publicSignalTitle({ type, company, scenario, amount, fundingAngle, text, sourceTitle }) || fallbackTitle || "";
+  const title = (hasCjk(sourceEventTitle) ? sourceEventTitle : "")
+    || publicSignalTitle({ type, company, scenario, amount, fundingAngle, text, sourceTitle })
+    || fallbackTitle
+    || "";
   const sourcePoints = sourcePointsFromSection(section);
   const sourceExcerpt = sourceExcerptFromSection(section, sourcePoints);
   const fallbackEventLine = type === "funding"

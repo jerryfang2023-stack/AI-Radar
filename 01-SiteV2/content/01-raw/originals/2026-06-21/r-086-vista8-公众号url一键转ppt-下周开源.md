@@ -1,0 +1,240 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-086
+title: "Vista8 公众号URL一键转PPT 下周开源"
+original_url: "https://x.com/vista8/status/2068335094436114488"
+canonical_url: "https://x.com/vista8/status/2068335094436114488"
+source_name: "X：Vista (@vista8)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-20T14:08:08.000Z"
+collected_at: 2026-06-21T03:09:49.434Z
+language: mixed
+full_text_hash: 1f6dab032fdb9f78
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-21/r-086-vista8-公众号url一键转ppt-下周开源.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-21/r-086-vista8-公众号url一键转ppt-下周开源.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: medium
+extraction_method: "main"
+readability_score: 69
+extractor_diagnostics: {"readability_score":69,"text_length":2220,"paragraph_count":11,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0.0306,"method":"main"}
+has_full_text: true
+content_length: 2220
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1f6dab032fdb9f78","missing":[]}
+source_volatility: high
+community_name: "X：Vista (@vista8)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Vista8 公众号URL一键转PPT 下周开源","discovery_summary":"开发者 @vista8 推出新项目：只需输入微信公众号文章 URL，即可自动将其转换为 PPT，并保留文章中的图片。支持导出 PPTX（可任意编辑）、HTML 和 PDF 格式。项目仍在开发中，排版尚需优化，预计下周开源。该功能吸收了此前将公众号 URL 转为 Markdown 并下载图片的能力，实现了从文章到演示文档的自动化转换。","source_name":"X：Vista (@vista8)","origin_url":"https://x.com/vista8/status/2068335094436114488","discovered_at":"2026-06-21T03:05:14.931Z","rank_on_page":65,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 84d9c6ebe1e9b4aa
+content_hash: 1f6dab032fdb9f78
+semantic_hash: 1d93518e4cbe1e7b
+duplicate_of: ""
+first_seen_at: "2026-06-20T14:08:08.000Z"
+last_seen_at: 2026-06-21T03:09:49.434Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["emerging_pool","user_feedback_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["X","Vista (@vista8)"],"products":[],"people":[],"industries":["开发者工具"],"roles":["开发者 / 工程团队"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["8","13","2","08","20","2026","6.4","1"],"quotes":[]}
+evidence_seed: {"company_actions":["开发者 @vista8 推出新项目：只需输入微信公众号文章 URL，即可自动将其转换为 PPT，并保留文章中的图片。支持导出 PPTX（可任意编辑）、HTML 和 PDF 格式。项目仍在开发中，排版尚需优化，预计下周开源。该功能吸收了此前将公众号 URL 转为 Markdown 并下载图片的能力，实现了从文章到演示文档的自动化转换。","Post Log in Sign up Post 向阳乔木 @vista8 只需要提供一个公众号URL，就能把文章转成PPT。","导出格式有pptx，html和pdf，pptx可以任意修改。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"product_update","text":"开发者 @vista8 推出新项目：只需输入微信公众号文章 URL，即可自动将其转换为 PPT，并保留文章中的图片。支持导出 PPTX（可任意编辑）、HTML 和 PDF 格式。项目仍在开发中，排版尚需优化，预计下周开源。该功能吸收了此前将公众号 URL 转为 Markdown 并下载图片的能力，实现了从文章到演示文档的自动化转换。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Post Log in Sign up Post 向阳乔木 @vista8 只需要提供一个公众号URL，就能把文章转成PPT。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"导出格式有pptx，html和pdf，pptx可以任意修改。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"项目还在开发中，排版还不够漂亮，等我迭代优化。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"向阳乔木 @vista8 13h 发现卡比一个库也很实用，只需微信公众号URL，就能转成Markdown，还能下载网页中的图片。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"发现内置会用一个叫camoufox的浏览器，看介绍叫Anti-detect 亲测好用，把能力吸收，让公众号文章也能转PPT。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Vista8 公众号URL一键转PPT 下周开源
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+向阳乔木
+@vista8
+只需要提供一个公众号URL，就能把文章转成PPT。
+且会引用文章中的图片。
+导出格式有pptx，html和pdf，pptx可以任意修改。
+项目还在开发中，排版还不够漂亮，等我迭代优化。
+预计下周开源。
+向阳乔木
+@vista8
+13h
+发现卡比一个库也很实用，只需微信公众号URL，就能转成Markdown，还能下载网页中的图片。
+发现内置会用一个叫camoufox的浏览器，看介绍叫Anti-detect
+亲测好用，把能力吸收，让公众号文章也能转PPT。
+地址见评论区
+2:08 PM · Jun 20, 2026 6.4K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 30
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 6
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 46
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 41
+Read 30 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+向阳乔木
+@vista8
+只需要提供一个公众号URL，就能把文章转成PPT。
+且会引用文章中的图片。
+导出格式有pptx，html和pdf，pptx可以任意修改。
+项目还在开发中，排版还不够漂亮，等我迭代优化。
+预计下周开源。
+向阳乔木
+@vista8
+13h
+发现卡比一个库也很实用，只需微信公众号URL，就能转成Markdown，还能下载网页中的图片。
+发现内置会用一个叫camoufox的浏览器，看介绍叫Anti-detect
+亲测好用，把能力吸收，让公众号文章也能转PPT。
+地址见评论区
+2:08 PM · Jun 20, 2026 6.4K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 0 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 30
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 6
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 6 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 46
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 4 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 41
+Read 30 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 69
+- fetch_status: fetched-readable-text-main
+- extraction_quality: medium
+- diagnostics: {"readability_score":69,"text_length":2220,"paragraph_count":11,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0.0306,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   开发者 @vista8 推出新项目：只需输入微信公众号文章 URL，即可自动将其转换为 PPT，并保留文章中的图片。支持导出 PPTX（可任意编辑）、HTML 和 PDF 格式。项目仍在开发中，排版尚需优化，预计下周开源。该功能吸收了此前将公众号 URL 转为 Markdown 并下载图片的能力，实现了从文章到演示文档的自动化转换。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Post Log in Sign up Post 向阳乔木 @vista8 只需要提供一个公众号URL，就能把文章转成PPT。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   导出格式有pptx，html和pdf，pptx可以任意修改。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   项目还在开发中，排版还不够漂亮，等我迭代优化。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   向阳乔木 @vista8 13h 发现卡比一个库也很实用，只需微信公众号URL，就能转成Markdown，还能下载网页中的图片。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   发现内置会用一个叫camoufox的浏览器，看介绍叫Anti-detect 亲测好用，把能力吸收，让公众号文章也能转PPT。
+
+## business_elements
+
+- companies: X, Vista (@vista8)
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 8, 13, 2, 08, 20, 2026, 6.4, 1
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 开发者 @vista8 推出新项目：只需输入微信公众号文章 URL，即可自动将其转换为 PPT，并保留文章中的图片。支持导出 PPTX（可任意编辑）、HTML 和 PDF 格式。项目仍在开发中，排版尚需优化，预计下周开源。该功能吸收了此前将公众号 URL 转为 Markdown 并下载图片的能力，实现了从文章到演示文档的自动化转换。 / Post Log in Sign up Post 向阳乔木 @vista8 只需要提供一个公众号URL，就能把文章转成PPT。 / 导出格式有pptx，html和pdf，pptx可以任意修改。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- user_feedback_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Vista (@vista8)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Vista8 公众号URL一键转PPT 下周开源","discovery_summary":"开发者 @vista8 推出新项目：只需输入微信公众号文章 URL，即可自动将其转换为 PPT，并保留文章中的图片。支持导出 PPTX（可任意编辑）、HTML 和 PDF 格式。项目仍在开发中，排版尚需优化，预计下周开源。该功能吸收了此前将公众号 URL 转为 Markdown 并下载图片的能力，实现了从文章到演示文档的自动化转换。","source_name":"X：Vista (@vista8)","origin_url":"https://x.com/vista8/status/2068335094436114488","discovered_at":"2026-06-21T03:05:14.931Z","rank_on_page":65,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+开发者 @vista8 推出新项目：只需输入微信公众号文章 URL，即可自动将其转换为 PPT，并保留文章中的图片。支持导出 PPTX（可任意编辑）、HTML 和 PDF 格式。项目仍在开发中，排版尚需优化，预计下周开源。该功能吸收了此前将公众号 URL 转为 Markdown 并下载图片的能力，实现了从文章到演示文档的自动化转换。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

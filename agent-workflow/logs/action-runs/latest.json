@@ -1,33 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-20T08:03:34.051Z",
-  "date": "2026-06-20",
-  "action": "Hermes business signals Top10 repair",
+  "generated_at": "2026-06-21T04:58:48.782Z",
+  "date": "2026-06-21",
+  "action": "Repair Business Signals auto-card public titles",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "automation",
+  "trigger": "manual",
   "status": "success",
-  "summary": "Restored same-day Business Signals Top10 supply by preserving source-backed facts and aligning daily collection breadth.",
+  "summary": "Business Signals Top10 failed because English-source auto cards were filtered from public Top10; changed generator to use source-bounded public title templates for non-CJK source titles, replayed 2026-06-21 workflow artifacts, regenerated 23 signal cards, and passed frontstage/pre-commit gates.",
   "contexts": [],
-  "changed_files": [
-    ".github/workflows/daily-persistent-assets-pr.yml",
-    "agent-workflow/tools/generate-asset-cards-from-pool.mjs",
-    "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"
-  ],
+  "changed_files": [],
   "outputs": [],
-  "checks": [
-    "node --check agent-workflow/tools/generate-asset-cards-from-pool.mjs",
-    "node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs",
-    "scratch replay: generate-asset-cards-from-pool + build-v3-data-observation-desk + assert-business-signals-frontstage --date=2026-06-20"
-  ],
-  "issues": [
-    "Business Signals workflow produced same-day cards but frontstage Top10 had fewer than 10 cards because valid source facts were lost or too few source facts were generated."
-  ],
+  "checks": [],
+  "issues": [],
   "risks": [],
   "lessons": [],
-  "reusable_rules": [
-    "Prefer source-backed card facts over title-derived replacement facts in strict frontstage normalization."
-  ],
+  "reusable_rules": [],
   "retired_flags": [],
   "notes": []
 }

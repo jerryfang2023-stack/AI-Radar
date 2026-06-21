@@ -1,0 +1,72 @@
+---
+id: SIG-20260621-A05
+type: signal_card
+signal_type: case
+title: "AI 记录企业应用场景：地产开发和建筑设计流程"
+date: 2026-06-21
+status: published
+source_title: "Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG | Douwe Kiela, CEO, Contextual AI"
+asset_level: frontstage
+evidence_gate: core_evidence_passed
+fact_draft_gate: passed
+created_at: 2026-06-21T04:57:34.577Z
+updated_at: 2026-06-21T04:57:34.577Z
+
+raw_refs: ["R-028"]
+pool_refs: ["P-026"]
+primary_raw:
+  raw_ref: R-028
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-21/r-028-top-ai-researcher-on-gpt-4-5-deepseek-and-agentic-rag-douwe-kiela-ceo-.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-21/r-028-top-ai-researcher-on-gpt-4-5-deepseek-and-agentic-rag-douwe-kiela-ceo-.json"
+  source_url: "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg"
+  full_text_hash: "30555ea54ae0b551"
+  source_level: B
+  extraction_quality: high
+  has_full_text: true
+  pool_routes:
+    - core_pool
+  raw_qc_decision: allow
+  importance_type: important_vertical_solution
+  importance_score: 5
+
+formal_tags:
+  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  function: ["function-engineering"]
+  scenario: ["scenario-construction-real-estate"]
+  customer: ["customer-developer-team", "customer-enterprise"]
+  evidence: ["evidence-customer-adoption"]
+  stage: []
+  region: []
+  source: ["source-industry-data"]
+
+signal_owner: "AI"
+
+frontend:
+  displayTitle: "AI 记录企业应用场景：地产开发和建筑设计流程"
+  sourceLinks:
+    - "https://podcasters.spotify.com/pod/show/firstmark/episodes/Top-AI-Researcher-on-GPT-4-5--DeepSeek-and-Agentic-RAG--Douwe-Kiela--CEO--Contextual-AI-e2vpcmg"
+---
+
+# AI 记录企业应用场景：地产开发和建筑设计流程
+
+## 新闻事实
+
+来源材料显示，AI 的AI 商业动作涉及地产开发和建筑设计流程。
+
+## 原文要点
+
+- 来源材料显示，AI 的产品或平台动作涉及地产开发和建筑设计流程。
+- 来源材料显示，AI 的融资或资金流向涉及地产开发和建筑设计流程。
+- 来源材料显示，AI 的客户部署或应用案例涉及地产开发和建筑设计流程；原文同时出现 $60K 等数字。
+
+## 价值描述
+
+来源材料显示，AI 的融资或资金流向涉及地产开发和建筑设计流程。
+
+## 可见原文片段
+
+来源材料显示，AI 的AI 商业动作涉及地产开发和建筑设计流程。
+
+## 证据边界
+
+none
