@@ -1174,6 +1174,8 @@ function companyFromSection(section) {
     if (pattern.test(`${title} ${text} ${sourceUrl}`)) return company;
   }
   const patterns = [
+    /^([A-Z][A-Za-z0-9.&-]{1,40})(?:[’'`]|鈥檚)\s+s?\b/u,
+    /\bof\s+([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})\b/u,
     /\bstartup\s+([A-Z][A-Za-z0-9.&-]+)\s+(?:raises|raised|said|announced)\b/iu,
     /\bseed\s+for\s+([A-Z][A-Za-z0-9.&-]+)\s+to\b/iu,
     /\b([A-Z][A-Za-z0-9.&-]*(?:\s+[A-Z][A-Za-z0-9.&-]*){0,2})\s+(?:on\s+\w+\s+)?(?:today\s+)?(?:announced|said|revealed|has raised|raised|will use|pulls in|pitches)\b/u,
@@ -1400,6 +1402,7 @@ function autoSignalEligibilityIssues(section) {
   const sourceUrl = value(section, "source_url");
   const sourceLevel = value(section, "source_level");
   const importanceType = value(section, "importance_type");
+  const inferredCompany = companyFromSection(section);
   const text = `${poolTitle(section)} ${sourceUrl} ${value(section, "source_type")}`;
   const directFundingProof =
     importanceType === "important_funding"
@@ -1415,6 +1418,9 @@ function autoSignalEligibilityIssues(section) {
   }
   if (/(learn\.microsoft\.com|\/docs?\/|documentation|README|readme-ov-file|model page|product catalog)/iu.test(text) || /why we.*re investing/iu.test(text)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "docs_or_catalog_or_investing_thesis"));
+  }
+  if (isWeakCompanyName(inferredCompany) || /^(case study|customer story|business case story|blog|unknown)$/iu.test(inferredCompany)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, `weak_signal_owner:${inferredCompany || "missing"}`));
   }
   return uniqueIssues(issues);
 }

@@ -1,0 +1,27 @@
+{
+  "date": "2026-06-22",
+  "generated_at": "2026-06-22T03:57:38.105Z",
+  "workflow_mode": "local_hermes_repair",
+  "outcomes": {
+    "monitor": "success",
+    "monitor_readiness": "success",
+    "raw_pool_gate": "success",
+    "asset_generation": "success",
+    "pool_to_card_dedupe_gate": "success",
+    "business_frontstage_data": "success",
+    "business_frontstage_gate": "success",
+    "operations_data_sync": "success",
+    "pre_commit_gate": "success"
+  },
+  "assets": {
+    "raw_candidates": "present",
+    "source_raw_artifacts": "missing",
+    "raw_originals": "present",
+    "pool_candidates": "present",
+    "business_signals": "present",
+    "signal_card_files": 31,
+    "v3_data_observation_desk": "present",
+    "intelligence_graph_index": "present",
+    "operations_dashboard_data": "present"
+  }
+}

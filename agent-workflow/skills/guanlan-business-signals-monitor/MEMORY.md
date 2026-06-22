@@ -22,6 +22,11 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 - FDE may share Business Signals Raw capture and Pool evidence, but its frontstage must use the independent `enterpriseAiFdePool` / `enterprise-ai-fde.json` lens pool. Do not require FDE display items to become Top10 Cards, and do not let FDE lens-only evidence weaken formal `product_service` / `funding` / `case` Card gates.
 - FDE lens-only entries must still hide backend fields such as `rawTitle`, use direct Chinese translations of source/original titles, and carry source-backed implementation detail from Pool excerpts before syncing to `content/09-fde`.
 
+## 2026-06-22 Resolved Original Discovery
+
+- A community or HN discovery channel must not permanently taint a resolved original source. If the fetched URL is a non-community original article, customer case, release, or blog page and `source_role` / `origin_fetch_status` confirms original-source resolution, classify Core Pool eligibility from the resolved URL and evidence object, not from the discovery source label.
+- Keep direct social, HN, Reddit, LinkedIn, and X URLs out of Core Pool. The exception is only for non-community original URLs that were discovered through those channels and passed Raw QC, full-text, event-object, freshness, and source-first gates.
+
 ## 2026-06-12
 
 - The public/Hermes Top10 contract is lane-level, not only a Raw / Pool / Card detail. A healthy `frontstageSelection` or `frontstageCards` set is insufficient unless the public `top10` array exists and contains exactly 10 active-date items.

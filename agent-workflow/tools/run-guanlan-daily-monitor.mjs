@@ -1580,8 +1580,20 @@ function sourceVolatility(item = {}) {
 
 function isCommunitySource(item = {}) {
   const host = urlHost(item.url || "");
-  const text = `${item.source || ""} ${item.source_type || ""} ${host} ${item.acquisition_channel || ""}`.toLowerCase();
-  return /linkedin\.com|x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social|paused-opinion-source/u.test(text);
+  const hostText = host.toLowerCase();
+  if (/linkedin\.com|x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia/u.test(hostText)) return true;
+
+  const resolvedOriginal =
+    item.source_role === "resolved_original_source"
+    || item.origin_fetch_status === "success"
+    || item.raw_record?.source_role === "resolved_original_source"
+    || item.raw_record?.origin_fetch_status === "success";
+  if (resolvedOriginal && host && !/linkedin\.com|x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia/u.test(hostText)) {
+    return false;
+  }
+
+  const text = `${item.source || ""} ${item.source_type || ""} ${item.acquisition_channel || ""}`.toLowerCase();
+  return /hacker news|community|social|paused-opinion-source/u.test(text);
 }
 
 function communityNameFor(item = {}) {
@@ -1883,6 +1895,14 @@ function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecisi
     gate.evidenceObjectUsable
     && !gate.indexOnlyEvidence
     && !isIndexOnlyEvidenceObject(gate.evidenceObjectType);
+  const currentSourceRole = item.source_role || sourceRoleFor(item, item.snapshot);
+  const currentOriginFetchStatus = item.origin_fetch_status || originFetchStatus(item.snapshot);
+  const resolvedBeyondDiscovery =
+    item.acquisition_source_level !== "M"
+    || (
+      !/discovery_source/iu.test(currentSourceRole || "")
+      && /success|not_applicable|^$/iu.test(currentOriginFetchStatus || "")
+    );
   const coreEvidence =
     computedRawQcDecision === "allow"
     && hasOriginalUrl
@@ -1890,6 +1910,7 @@ function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecisi
     && ["high", "medium"].includes(quality)
     && hasRequiredEvidenceHashes
     && nonIndexEvidenceObject
+    && resolvedBeyondDiscovery
     && !isGenericReportOrListItem(item)
     && !isCommunitySource(item)
     && !isRepositoryOrCatalogCoreBlockedItem(item)
@@ -2336,7 +2357,7 @@ function buildRawRecord(item, id, originalPath, jsonPath, isPooled) {
     discovery_source: item.discovery_source || "",
     discovery_record: item.discovery_record || null,
     source_role: sourceRoleFor(item, item.snapshot),
-    origin_fetch_status: item.acquisition_channel === "aihot" ? originFetchStatus(item.snapshot) : "",
+    origin_fetch_status: originFetchStatus(item.snapshot),
     paywall_status: flags.paywall ? "suspected" : "none",
     block_status: flags.blocked ? "suspected" : "none",
     duplicate_status: item.duplicate_count ? "merged_provider_duplicates" : flags.duplicate ? "duplicate" : "unique",
