@@ -446,6 +446,23 @@ Hermes should send Codex a compact repair request containing:
 
 Codex should make code / rule changes, run the smallest relevant validation, commit the repair, and report the commit hash back. Hermes should then use the next run or a manual dispatch to verify production behavior instead of editing the same files independently.
 
+### Daily Supervision Evidence Precedence
+
+Daily supervision must classify lane health in this order:
+
+1. same-date data and required gate health;
+2. same-date PR / publication evidence;
+3. latest workflow run status;
+4. local scheduled-task history or observability warnings.
+
+Do not let a red latest workflow, missing GitHub run, or non-zero Windows task result override newer same-date data that already passed the lane gate. If a later local repair writes the same-date data and gate after an earlier supervision report, rerun daily supervision or resolve the stale Hermes inbox instead of leaving the old report as the active truth.
+
+Lane-specific rules:
+
+- Business Signals is data-healthy when activeDate matches the production date, public Top10 is exactly 10, signal Card files are at least 10, `intelligence-graph-index.json` exists, and the Business frontstage / monitor gates pass. `frontstageSelection.supplyConstrained=true` is blocking only when Top10 count or gates fail; otherwise it is a supply warning. A red Business workflow after healthy same-date data is a publication / branch / PR repair.
+- First-Line Viewpoints is public-lane healthy when same-date `follow-builders-daily.json` exists, remarks / builders meet floors, and the follow-builders data gate passes. Missing GitHub fallback state is observability only when local data is healthy.
+- Community Intelligence local collection is healthy when same-date `community-intelligence.json` exists, items / links meet floors, collector errors are zero, archive outputs exist, and the community gate passes. A non-zero scheduled-task `LastTaskResult` is warning-only after healthy local data; a red GitHub publish workflow after healthy local data is a publish workflow / PR repair.
+
 ## Project Health Automation
 
 Project maintenance is split into daily supervision, weekly retrospective, and monthly cleanup review. These commands are read-only report generators. They do not delete files, edit rules, merge PRs, or deploy.

@@ -2,6 +2,13 @@
 
 Keep this file short. Add only durable lane-level lessons from repeated production failures.
 
+## 2026-06-21 Supervision Classification
+
+- Community supervision must judge same-date local data and gate before Windows task history or latest GitHub run state. If `community-intelligence.json` is same-date, items / links meet floors, collector errors are zero, and the community gate passes, the local collection stage is healthy.
+- A non-zero Windows scheduled task `LastTaskResult` is a warning when same-date data and gate are healthy. It is a local task reliability signal, not proof that the community lane needs recollection.
+- If a same-date community automation PR has merged, or same-date data / gate are healthy and the publish workflow is red, classify the problem as publish workflow / PR handling only. Do not rerun browser collection unless data is stale, missing, or gate-failed.
+- After a local repair produces same-date data and gate, rerun daily supervision before leaving Hermes inbox items open; stale supervision reports can otherwise keep obsolete red lights alive.
+
 ## 2026-06-12
 
 - Community Intelligence collection depends on local logged-in browser state. GitHub Actions can publish validated same-date files, but it cannot replace the local collector when login state or Chrome profile access is missing.

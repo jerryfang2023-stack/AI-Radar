@@ -1580,8 +1580,18 @@ function sourceVolatility(item = {}) {
 
 function isCommunitySource(item = {}) {
   const host = urlHost(item.url || "");
-  const text = `${item.source || ""} ${item.source_type || ""} ${host} ${item.acquisition_channel || ""}`.toLowerCase();
-  return /linkedin\.com|x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social|paused-opinion-source/u.test(text);
+  const sourceType = String(item.source_type || "").toLowerCase();
+  const acquisitionChannel = String(item.acquisition_channel || "").toLowerCase();
+  const sourceRole = String(item.source_role || item.sourceRole || "").toLowerCase();
+  const directSourceText = `${sourceType} ${host} ${acquisitionChannel}`.toLowerCase();
+  if (/linkedin\.com|x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|community|social|paused-opinion-source/u.test(directSourceText)) {
+    return true;
+  }
+  if (/resolved_original_source|primary_source/u.test(sourceRole) && host) {
+    return false;
+  }
+  const discoveryText = String(item.source || "").toLowerCase();
+  return /hacker news|community|social|paused-opinion-source/u.test(discoveryText);
 }
 
 function communityNameFor(item = {}) {
@@ -1859,6 +1869,8 @@ function usableFor(item, quality, scores, excerpts) {
 
 function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecision = "") {
   const routes = new Set();
+  const sourceRole = sourceRoleFor(item, item.snapshot || {});
+  const sourceBoundaryItem = { ...item, source_role: sourceRole };
   const gate = commercialSignalHardGate(item, item.snapshot?.text || item.summary || "", excerpts);
   const completeness = evidenceCompleteness(
     item,
@@ -1886,12 +1898,13 @@ function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecisi
   const coreEvidence =
     computedRawQcDecision === "allow"
     && hasOriginalUrl
+    && !/discovery_source/iu.test(sourceRole)
     && hasFullText(item.snapshot)
     && ["high", "medium"].includes(quality)
     && hasRequiredEvidenceHashes
     && nonIndexEvidenceObject
     && !isGenericReportOrListItem(item)
-    && !isCommunitySource(item)
+    && !isCommunitySource(sourceBoundaryItem)
     && !isRepositoryOrCatalogCoreBlockedItem(item)
     && !isStaleCoreCandidate(item);
   if (computedRawQcDecision === "block") {

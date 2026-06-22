@@ -1,8 +1,8 @@
 {
-  "ok": false,
-  "status": "failed",
+  "ok": true,
+  "status": "warning",
   "date": "2026-06-21",
-  "generated_at": "2026-06-21T05:10:21.719Z",
+  "generated_at": "2026-06-21T05:32:24.666Z",
   "timezone": "Asia/Shanghai",
   "lanes": [
     {
@@ -29,39 +29,39 @@
       "id": "community_intelligence",
       "label": "Community Intelligence",
       "schedule": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30",
-      "status": "manual_required",
+      "status": "warning",
       "evidence": {
-        "generatedAt": "2026-06-20T08:22:16.436Z",
-        "generatedDate": "2026-06-20",
+        "generatedAt": "2026-06-21T05:18:07.085Z",
+        "generatedDate": "2026-06-21",
         "items": 61,
-        "links": 64,
-        "selectedKeywords": 8,
+        "links": 55,
+        "selectedKeywords": 4,
         "collectorErrors": 0,
-        "gateStatus": "missing",
-        "gateReport": "missing",
+        "gateStatus": "passed",
+        "gateReport": "agent-workflow/reports/2026-06-21-community-intelligence-gate.md",
         "scheduledTask": {
           "available": true,
           "task": {
-            "State": 4,
-            "LastTaskResult": 267009,
+            "State": 3,
+            "LastTaskResult": 1,
             "LastRunTime": "/Date(1782017880000)/",
             "NextRunTime": "/Date(1782088200000)/"
           },
-          "stateName": "Running"
+          "stateName": "Ready"
         },
         "github": {
           "available": true,
           "latest_run": {
-            "conclusion": "failure",
-            "createdAt": "2026-06-21T02:56:58Z",
-            "databaseId": 27891554203,
-            "event": "workflow_dispatch",
+            "conclusion": "success",
+            "createdAt": "2026-06-21T05:30:39Z",
+            "databaseId": 27894759363,
+            "event": "schedule",
             "headBranch": "main",
             "status": "completed",
-            "updatedAt": "2026-06-21T02:57:26Z",
-            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27891554203"
+            "updatedAt": "2026-06-21T05:30:56Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27894759363"
           },
-          "same_date_run_count": 1,
+          "same_date_run_count": 2,
           "prs": [
             {
               "isDraft": false,
@@ -80,33 +80,17 @@
           "communityPrUrl": "https://github.com/jerryfang2023-stack/AI-Radar/pull/117"
         }
       },
-      "problems": [
-        {
-          "message": "community data date is 2026-06-20, expected 2026-06-21",
-          "severity": "failed"
-        },
-        {
-          "message": "community scheduled task last result is 267009",
-          "severity": "manual_required"
-        },
-        {
-          "message": "Community Intelligence publish workflow conclusion is failure",
-          "severity": "failed"
-        }
-      ],
+      "problems": [],
       "warnings": [
-        "missing community gate report: agent-workflow/reports/2026-06-21-community-intelligence-gate.md"
+        "community scheduled task last result is 1, but same-date data and gate are healthy"
       ],
-      "actions": [
-        "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-        "send Codex a community_intelligence repair request with log and gate report path"
-      ]
+      "actions": []
     },
     {
       "id": "business_signals",
       "label": "Business Signals / Intelligence Map / Dashboard",
       "schedule": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55",
-      "status": "failed",
+      "status": "warning",
       "evidence": {
         "activeDate": "2026-06-21",
         "generatedAt": "2026-06-21T05:09:14.926Z",
@@ -121,16 +105,16 @@
         "github": {
           "available": true,
           "latest_run": {
-            "conclusion": "failure",
-            "createdAt": "2026-06-21T03:04:58Z",
-            "databaseId": 27891730227,
-            "event": "workflow_dispatch",
+            "conclusion": "success",
+            "createdAt": "2026-06-21T05:31:13Z",
+            "databaseId": 27894771229,
+            "event": "schedule",
             "headBranch": "main",
             "status": "completed",
-            "updatedAt": "2026-06-21T03:10:00Z",
-            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27891730227"
+            "updatedAt": "2026-06-21T05:31:36Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27894771229"
           },
-          "same_date_run_count": 4,
+          "same_date_run_count": 5,
           "prs": [],
           "pr_warning": ""
         },
@@ -142,31 +126,24 @@
           "businessPrUrl": "",
           "pagesSuccess": true,
           "pagesActive": false,
-          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27894273442",
+          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/27894780007",
           "localSync": {
             "available": true,
             "clean": false,
-            "dirtyFiles": 53,
-            "ignoredReportFiles": 4,
-            "head": "93059c9bc38433863485a6946d5b0e3e5f50eaf8",
-            "originMain": "5387d9768ab45677d4bce1c31f9a5bfc9fc8ac0e",
-            "fastForwarded": false,
+            "dirtyFiles": 8,
+            "ignoredReportFiles": 0,
+            "head": "c2eeaad60fd6bd3de8a3c8f44e593c2a73845397",
+            "originMain": "c2eeaad60fd6bd3de8a3c8f44e593c2a73845397",
+            "fastForwarded": true,
             "warning": ""
           }
         }
       },
-      "problems": [
-        {
-          "message": "Business Signals workflow conclusion is failure",
-          "severity": "failed"
-        }
-      ],
+      "problems": [],
       "warnings": [
-        "local Obsidian sync may be blocked by 53 dirty file(s)"
+        "local Obsidian sync may be blocked by 8 dirty file(s)"
       ],
-      "actions": [
-        "send Codex a business_signals repair request with failed gate and report path"
-      ]
+      "actions": []
     },
     {
       "id": "first_line_viewpoints",

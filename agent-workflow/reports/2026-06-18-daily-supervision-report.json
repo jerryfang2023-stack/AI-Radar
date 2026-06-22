@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "status": "historical_coverage",
+  "date": "2026-06-18",
+  "generated_at": "2026-06-21T05:40:00.000Z",
+  "timezone": "Asia/Shanghai",
+  "coverage_note": "Historical coverage marker. Unified daily supervision did not run on this date; lane evidence was reconstructed from same-date gate and publish reports. Do not use this file as real-time dispatch evidence.",
+  "lanes": [
+    {
+      "id": "business_signals",
+      "label": "Business Signals / Intelligence Map / Dashboard",
+      "status": "historical_evidence_passed",
+      "evidence": {
+        "business_frontstage_gate": "passed",
+        "monitor_quality_gate": "passed",
+        "persistent_asset_manifest": "present"
+      },
+      "problems": [],
+      "warnings": [],
+      "actions": []
+    },
+    {
+      "id": "first_line_viewpoints",
+      "label": "First-Line Viewpoints",
+      "status": "historical_evidence_passed",
+      "evidence": {
+        "follow_builders_data_gate": "passed",
+        "first_line_manifest": "present",
+        "skill_publish_report": "present",
+        "skill_publish_count": 39
+      },
+      "problems": [],
+      "warnings": [],
+      "actions": []
+    },
+    {
+      "id": "community_intelligence",
+      "label": "Community Intelligence",
+      "status": "historical_evidence_passed",
+      "evidence": {
+        "community_gate": "passed",
+        "local_publish_report": "present"
+      },
+      "problems": [],
+      "warnings": [],
+      "actions": []
+    }
+  ]
+}

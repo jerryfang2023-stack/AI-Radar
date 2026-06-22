@@ -1,0 +1,294 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-006
+title: "The Week's 10 Biggest Funding Rounds - Crunchbase News"
+original_url: "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026/"
+canonical_url: "https://news.crunchbase.com/venture/biggest-funding-rounds-june-5-2026"
+source_name: "keyword search / Anysearch"
+source_type: industry
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-22T03:38:47.039Z
+language: mixed
+full_text_hash: 961454e4af933445
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-006-the-week-s-10-biggest-funding-rounds-crunchbase-news.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-006-the-week-s-10-biggest-funding-rounds-crunchbase-news.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":5019,"paragraph_count":25,"sentence_count":42,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 5019
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"961454e4af933445","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 18c7bbf12dad364f
+content_hash: 961454e4af933445
+semantic_hash: e101f3a1f7e5cb9f
+duplicate_of: ""
+first_seen_at: "2026-06-22T03:38:47.039Z"
+last_seen_at: 2026-06-22T03:38:47.039Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Google"],"products":[],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":[],"business_actions":["发布 / 推出","合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算"],"numbers":["10 B","9","$350M","$350","3","1","2023","2022"],"quotes":[]}
+evidence_seed: {"company_actions":["9. AlphaSense, $350M, AI enterprise software: AlphaSense, an AI-enabled market intelligence and workflow orchestration platform, closed on $350 ... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup","Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports Q1 2023 Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia 2022 2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia Joanna Glasner jglasner Shares Email Facebook Twitter LinkedIn Want to keep track of the largest startup funding deals in 2026 with our curated list of $100 million-plus venture deals to U.","Check out The Crunchbase Megadeals Board ."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"funding","text":"9. AlphaSense, $350M, AI enterprise software: AlphaSense, an AI-enabled market intelligence and workflow orchestration platform, closed on $350 ... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports Q1 2023 Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia 2022 2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia Joanna Glasner jglasner Shares Email Facebook Twitter LinkedIn Want to keep track of the largest startup funding deals in 2026 with our curated list of $100 million-plus venture deals to U.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Check out The Crunchbase Megadeals Board .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"This is a weekly feature that runs down the week’s top 10 announced funding rounds in the U.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Check out last week’s biggest funding deal roundup here .","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Startup investors were in a spendy mood this week, backing more than a dozen rounds in the multiple hundreds of millions.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# The Week's 10 Biggest Funding Rounds - Crunchbase News
+
+## clean_text
+
+Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports
+Q1 2023
+Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia
+2022
+2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia
+Joanna Glasner
+jglasner
+Shares
+Email
+Facebook
+Twitter
+LinkedIn
+Want to keep track of the largest startup funding deals in 2026 with our curated list of $100 million-plus venture deals to U.S.-based companies? Check out The Crunchbase Megadeals Board .
+This is a weekly feature that runs down the week’s top 10 announced funding rounds in the U.S. Check out last week’s biggest funding deal roundup here .
+Startup investors were in a spendy mood this week, backing more than a dozen rounds in the multiple hundreds of millions. Of those, the biggest one went to spend-management platform Ramp , which closed on $750 million, followed by three $500 million rounds for companies in the AI and space tech sectors.
+1. Ramp , $750M, finance software: Spend-management software provider Ramp secured $750 million in a financing led by Iconiq , GIC and Ontario Teachers’ Pension Plan . The round set a $44 billion valuation for the 7-year-old, New York-based company.
+2. (tied) Impulse Space , $500M, space tech: Redondo Beach, California-based Impulse Space, a developer of spacecraft and propulsion systems for transport, moving and orbital repositioning in space, raised $500 million in Series D funding. 137 Ventures and Banner VC led the financing which brings total investment to date to more than $1 billion.
+2. (tied) Supabase , $500M, AI developer tools: Supabase, provider of an open source platform for developers and AI app builders, closed on $500 million in fresh funding. GIC led the financing, which set a $10.5 billion valuation for the 6-year-old, San Francisco-based company.
+2. (tied) Flourish , $500M, foundational AI: New York-based Flourish, a startup working on artificial intelligence models inspired by the human brain, raised $500 million in initial funding. Backers include Jeff Bezos , Lux Capital and Google Ventures .
+5. Helion , $465M, fusion energy: Helion, a startup with a mission to build the world’s first fusion power plant, picked up $465 million in Series G funding led by Thrive Capital at a $15.5 billion post-money valuation. The round brings total reported funding for the Everett, Washington-based company to at least $1.5 billion, per Crunchbase data .
+6. NewLimit , $435M, longevity medicines: NewLimit, a developer of medicines designed to restore youthful function in old cells through epigenetic reprogramming, closed on $435 million in Series C funding. Founders Fund led the financing for the South San Francisco, California-based company, which was co-founded by Coinbase CEO Brian Armstrong .
+7. (tied) Suno , $400M, AI for music: Suno, a provider of AI tools for making music, raised $400 million in Series D funding led by Bond . The round set a $5.4 billion valuation for the company, which is currently facing lawsuits from multiple music labels for training its AI on copyrighted materials.
+7. (tied) Generalist AI , $400M, robotics: Generalist AI, a startup focused on using AI to enable robots to do complex tasks, picked up $400 million in new funding led by Radical Ventures . The financing reportedly set a $2 billion valuation for the 2-year-old, San Mateo, California-based company.
+9. AlphaSense , $350M, AI enterprise software: AlphaSense, an AI-enabled market intelligence and workflow orchestration platform, closed on $350 million in a new funding round led by Vitruvian Partners , Accenture Ventures , J.P. Morgan Asset Management , D.E. Shaw Ventures and Pinegrove Opportunity Partners . The round set a $7.5 billion valuation for the New York-based company.
+10. Mach Industries , $300M, defense tech: Defense tech startup Mach Industries raised $300 million in Series C funding at a $1.8 billion valuation. Ribbit Capital and Infinite Capital led the financing for the 3-year-old, Huntington Beach, California-based company.
+Methodology
+We tracked the largest announced rounds in the Crunchbase database that were raised by U.S.-based companies for the period of May 30-June 5. Although most announced rounds are represented in the database, there could be a small time lag as some rounds are reported late in the week.
+Illustration: Dom Guzman
+Tags unicorn
+Stay up to date with recent funding rounds, acquisitions, and more with the
+Crunchbase Daily.
+Featured
+Artificial intelligence &bull; Crypto &bull; M&A &bull; Regional &bull; Seed funding &bull; Startups &bull; Venture
+Q1 Global Startup Funding Posts Strongest Quarter Since Q2 2022 With A Third Going To Massive OpenAI Deal
+April 3, 2025
+7 Min Read
+67.1K Followers
+Follow us on Facebook
+33.4K
+Followers
+Follow us on Twitter
+29K
+Followers
+Follow us on LinkedIn
+4.7K
+Followers
+CTA
+Discover and act on private market opportunities with predictive company intelligence.
+GET STARTED
+Copy link
+Copy Copied
+
+## full_text
+
+Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports
+Q1 2023
+Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia
+2022
+2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia
+Joanna Glasner
+jglasner
+Shares
+Email
+Facebook
+Twitter
+LinkedIn
+Want to keep track of the largest startup funding deals in 2026 with our curated list of $100 million-plus venture deals to U.S.-based companies? Check out The Crunchbase Megadeals Board .
+This is a weekly feature that runs down the week’s top 10 announced funding rounds in the U.S. Check out last week’s biggest funding deal roundup here .
+Startup investors were in a spendy mood this week, backing more than a dozen rounds in the multiple hundreds of millions. Of those, the biggest one went to spend-management platform Ramp , which closed on $750 million, followed by three $500 million rounds for companies in the AI and space tech sectors.
+1. Ramp , $750M, finance software: Spend-management software provider Ramp secured $750 million in a financing led by Iconiq , GIC and Ontario Teachers’ Pension Plan . The round set a $44 billion valuation for the 7-year-old, New York-based company.
+2. (tied) Impulse Space , $500M, space tech: Redondo Beach, California-based Impulse Space, a developer of spacecraft and propulsion systems for transport, moving and orbital repositioning in space, raised $500 million in Series D funding. 137 Ventures and Banner VC led the financing which brings total investment to date to more than $1 billion.
+2. (tied) Supabase , $500M, AI developer tools: Supabase, provider of an open source platform for developers and AI app builders, closed on $500 million in fresh funding. GIC led the financing, which set a $10.5 billion valuation for the 6-year-old, San Francisco-based company.
+2. (tied) Flourish , $500M, foundational AI: New York-based Flourish, a startup working on artificial intelligence models inspired by the human brain, raised $500 million in initial funding. Backers include Jeff Bezos , Lux Capital and Google Ventures .
+5. Helion , $465M, fusion energy: Helion, a startup with a mission to build the world’s first fusion power plant, picked up $465 million in Series G funding led by Thrive Capital at a $15.5 billion post-money valuation. The round brings total reported funding for the Everett, Washington-based company to at least $1.5 billion, per Crunchbase data .
+6. NewLimit , $435M, longevity medicines: NewLimit, a developer of medicines designed to restore youthful function in old cells through epigenetic reprogramming, closed on $435 million in Series C funding. Founders Fund led the financing for the South San Francisco, California-based company, which was co-founded by Coinbase CEO Brian Armstrong .
+7. (tied) Suno , $400M, AI for music: Suno, a provider of AI tools for making music, raised $400 million in Series D funding led by Bond . The round set a $5.4 billion valuation for the company, which is currently facing lawsuits from multiple music labels for training its AI on copyrighted materials.
+7. (tied) Generalist AI , $400M, robotics: Generalist AI, a startup focused on using AI to enable robots to do complex tasks, picked up $400 million in new funding led by Radical Ventures . The financing reportedly set a $2 billion valuation for the 2-year-old, San Mateo, California-based company.
+9. AlphaSense , $350M, AI enterprise software: AlphaSense, an AI-enabled market intelligence and workflow orchestration platform, closed on $350 million in a new funding round led by Vitruvian Partners , Accenture Ventures , J.P. Morgan Asset Management , D.E. Shaw Ventures and Pinegrove Opportunity Partners . The round set a $7.5 billion valuation for the New York-based company.
+10. Mach Industries , $300M, defense tech: Defense tech startup Mach Industries raised $300 million in Series C funding at a $1.8 billion valuation. Ribbit Capital and Infinite Capital led the financing for the 3-year-old, Huntington Beach, California-based company.
+Methodology
+We tracked the largest announced rounds in the Crunchbase database that were raised by U.S.-based companies for the period of May 30-June 5. Although most announced rounds are represented in the database, there could be a small time lag as some rounds are reported late in the week.
+Illustration: Dom Guzman
+Tags unicorn
+Stay up to date with recent funding rounds, acquisitions, and more with the
+Crunchbase Daily.
+Featured
+Artificial intelligence &bull; Crypto &bull; M&A &bull; Regional &bull; Seed funding &bull; Startups &bull; Venture
+Q1 Global Startup Funding Posts Strongest Quarter Since Q2 2022 With A Third Going To Massive OpenAI Deal
+April 3, 2025
+7 Min Read
+67.1K Followers
+Follow us on Facebook
+33.4K
+Followers
+Follow us on Twitter
+29K
+Followers
+Follow us on LinkedIn
+4.7K
+Followers
+CTA
+Discover and act on private market opportunities with predictive company intelligence.
+GET STARTED
+Copy link
+Copy Copied
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":5019,"paragraph_count":25,"sentence_count":42,"boilerplate_hits":0,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   9. AlphaSense, $350M, AI enterprise software: AlphaSense, an AI-enabled market intelligence and workflow orchestration platform, closed on $350 ... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup
+
+2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports Q1 2023 Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia 2022 2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia Joanna Glasner jglasner Shares Email Facebook Twitter LinkedIn Want to keep track of the largest startup funding deals in 2026 with our curated list of $100 million-plus venture deals to U.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Check out The Crunchbase Megadeals Board .
+
+4. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   This is a weekly feature that runs down the week’s top 10 announced funding rounds in the U.
+
+5. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Check out last week’s biggest funding deal roundup here .
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Startup investors were in a spendy mood this week, backing more than a dozen rounds in the multiple hundreds of millions.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Google
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算
+- numbers: 10 B, 9, $350M, $350, 3, 1, 2023, 2022
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 9. AlphaSense, $350M, AI enterprise software: AlphaSense, an AI-enabled market intelligence and workflow orchestration platform, closed on $350 ... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup / Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports Q1 2023 Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia 2022 2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia Joanna Glasner jglasner Shares Email Facebook Twitter LinkedIn Want to keep track of the largest startup funding deals in 2026 with our curated list of $100 million-plus venture deals to U. / Check out The Crunchbase Megadeals Board .
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+9. AlphaSense, $350M, AI enterprise software: AlphaSense, an AI-enabled market intelligence and workflow orchestration platform, closed on $350 ... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

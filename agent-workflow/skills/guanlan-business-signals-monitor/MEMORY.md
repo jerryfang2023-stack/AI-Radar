@@ -2,6 +2,13 @@
 
 Keep this file short. Add only durable lane-level lessons from repeated production failures.
 
+## 2026-06-21 Supervision Classification
+
+- Daily supervision must classify data health before workflow redness. If `v3-data-observation-desk.json` is same-date, public Top10 is exactly 10, signal Card files are at least 10, `intelligence-graph-index.json` exists, and the Business frontstage / monitor gates pass, the lane data is healthy.
+- `frontstageSelection.supplyConstrained=true` is only a blocking Business failure when Top10 count or gates fail. With a valid Top10 and passed gates, it is a supply warning for the next source-refill cycle, not a reason to rerun the full chain.
+- A failed latest Business Signals workflow after healthy same-date data is a publication / branch / PR repair. Do not restart Raw / Pool / Card generation unless activeDate, Top10, Card files, or gates are actually stale or unhealthy.
+- Local Obsidian sync blocked by dirty files is a local sync closure warning. It must not be reported as Business monitor failure and must not trigger direct generated-data pushes to `main`.
+
 ## 2026-06-18 Title Correction
 
 - Business Signals public titles must be the original/source title translated into Chinese only. Do not rewrite titles into commercial summaries, add inferred framing, prepend source/domain names, or inject details that are not part of the source title.

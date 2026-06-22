@@ -1,0 +1,281 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-001
+title: "AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板"
+original_url: "https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps"
+canonical_url: "https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps"
+source_name: "The Decoder：AI News（RSS）"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-21T08:25:41.000Z"
+collected_at: 2026-06-22T03:38:47.010Z
+language: mixed
+full_text_hash: ad7c971ae891192f
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-001-aws推出continuum和context两项新服务-填补ai智能体业务上下文与安全漏洞短板.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-001-aws推出continuum和context两项新服务-填补ai智能体业务上下文与安全漏洞短板.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 88
+extractor_diagnostics: {"readability_score":88,"text_length":7222,"paragraph_count":32,"sentence_count":58,"boilerplate_hits":3,"symbol_ratio":0.0008,"method":"content-container"}
+has_full_text: true
+content_length: 7222
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ad7c971ae891192f","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板","discovery_summary":"在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强制执行模式。Context自动从数据库、文档、邮件等企业数据构建知识图谱，为所有智能体提供共享业务知识，内置访问控制。DevOps Agent新增发布就绪审查（在GitHub/GitLab以注释反馈）和从变更推导测试计划并在类生产环境运行的功能，预览版在美国东部免费开放。智能体Kiro推出iOS原生应用，用于移动端启动任务和审批代码。Bedrock AgentCore扩展托管知识库连接器（S3、SharePoint等）和内置网络搜索。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps","discovered_at":"2026-06-22T03:05:13.686Z","rank_on_page":118,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: 12a5a7047e63a61d
+content_hash: ad7c971ae891192f
+semantic_hash: dffc9ab6950f3672
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-06-21T08:25:41.000Z"
+last_seen_at: 2026-06-22T03:38:47.010Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["The Decoder","AI News（RSS）","Anthropic","Google","GitHub","Amazon","AWS"],"products":["Claude","Agent","agents","agent","Agents"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["3","21","2026\nM","1","2","13"],"quotes":["AI Radar"]}
+evidence_seed: {"company_actions":["The AWS DevOps Agent now includes verification capabilities that check AI-generated code before it goes live, automatically testing it in production-like environments to catch potential system failures early.","At the AWS Summit in New York, Amazon's cloud division unveiled several services designed to make AI agents production-ready."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强制执行模式。Context自动从数据库、文档、邮件等企业数据构建知识图谱，为所有智能体提供共享业务知识，内置访问控制。DevOps Agent新增发布就绪审查（在GitHub/GitLab以注释反馈）和从变更推导测试计划并在类生产环境运行的功能，预览版在美国东部免费开放。智能体Kiro推出iOS原生应用，用于移动端启动任务和审批代码。Bedrock AgentCore扩展托管知识库连接器（S3、SharePoint等）和内置网络搜索。","Ad Skip to content AWS says AI agents lack business context and security, launches two services to patch the gaps Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jun 21, 2026 Midjourney prompted by THE DECODER Key Points Amazon is launching two new AWS services: AWS Continuum, which automates the fixing of code vulnerabilities, and AWS Context, which feeds AI agents business knowledge through a knowledge graph to improve their decision-making.","AWS is also releasing its coding agent Kiro as an iOS app for on-the-go control, while expanding the Bedrock AgentCore platform with additional data connectors and security filters."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"supporting_context","text":"在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强制执行模式。Context自动从数据库、文档、邮件等企业数据构建知识图谱，为所有智能体提供共享业务知识，内置访问控制。DevOps Agent新增发布就绪审查（在GitHub/GitLab以注释反馈）和从变更推导测试计划并在类生产环境运行的功能，预览版在美国东部免费开放。智能体Kiro推出iOS原生应用，用于移动端启动任务和审批代码。Bedrock AgentCore扩展托管知识库连接器（S3、SharePoint等）和内置网络搜索。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Ad Skip to content AWS says AI agents lack business context and security, launches two services to patch the gaps Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jun 21, 2026 Midjourney prompted by THE DECODER Key Points Amazon is launching two new AWS services: AWS Continuum, which automates the fixing of code vulnerabilities, and AWS Context, which feeds AI agents business knowledge through a knowledge graph to improve their decision-making.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The AWS DevOps Agent now includes verification capabilities that check AI-generated code before it goes live, automatically testing it in production-like environments to catch potential system failures early.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"AWS is also releasing its coding agent Kiro as an iOS app for on-the-go control, while expanding the Bedrock AgentCore platform with additional data connectors and security filters.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"At the AWS Summit in New York, Amazon's cloud division unveiled several services designed to make AI agents production-ready.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"They include a security service for code vulnerabilities and a knowledge graph that gives agents the business context they need.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板
+
+## clean_text
+
+Ad
+Skip to content
+AWS says AI agents lack business context and security, launches two services to patch the gaps
+Jonathan Kemper
+View the LinkedIn Profile of Jonathan Kemper
+Jun 21, 2026
+Midjourney prompted by THE DECODER
+Key Points
+Amazon is launching two new AWS services: AWS Continuum, which automates the fixing of code vulnerabilities, and AWS Context, which feeds AI agents business knowledge through a knowledge graph to improve their decision-making.
+The AWS DevOps Agent now includes verification capabilities that check AI-generated code before it goes live, automatically testing it in production-like environments to catch potential system failures early.
+AWS is also releasing its coding agent Kiro as an iOS app for on-the-go control, while expanding the Bedrock AgentCore platform with additional data connectors and security filters.
+At the AWS Summit in New York, Amazon's cloud division unveiled several services designed to make AI agents production-ready. They include a security service for code vulnerabilities and a knowledge graph that gives agents the business context they need.
+The announcements centered on two new services. AWS Continuum tackles security vulnerabilities in code. AWS Context serves as a shared knowledge base for agents.
+Both address typical bottlenecks when deploying AI agents in production. Agents lack business context, and security risks can't keep up with the pace of AI-generated code. Ad
+Automating security as AI-powered threats outpace traditional defenses
+With AWS Continuum, AWS is launching a service that covers the full lifecycle of code vulnerabilities, from detection and prioritization to validation and recommended fixes. The service is initially available only to select pilot customers. Ad
+DEC_D_Incontent-1
+AWS points to specialized security models like Anthropic's Claude Mythos as the driving force, writing in its security blog that such models can spot vulnerabilities and map out attack paths faster than defenders can respond. Traditional approaches built around data collection, storage, and dashboards weren't designed for that kind of speed, and the backlog of unresolved issues keeps piling up.
+AWS Continuum automates the security cycle. Risks are identified, ranked by business impact, validated for exploitability, and addressed with specific remediation steps. | Image: Amazon
+Continuum takes the existing list of open vulnerabilities and also scans for new ones on its own. Then it ranks findings based on business context. Is the affected component even reachable? Is it actively used in production? Ad
+During validation, the service tries to replicate a successful attack in an isolated test environment to separate false positives from real risks. Only then does it suggest specific countermeasures like a modified network config, an adjusted permission setting, or a code patch.
+Continuum picks different frontier models depending on the task. The service can increasingly automate how code vulnerabilities are handled, but it starts in a learning mode that requires human sign-off. As confidence builds, teams can switch it to an enforcement mode where it applies defined fixes on its own. A companion threat modeling tool automatically generates overviews of possible attack scenarios from design documents or source code. Ad
+DEC_D_Incontent-2
+A shared knowledge graph keeps agents from making things up
+AWS Context automatically builds a knowledge graph from existing enterprise data and makes it available to every agent across an organization. A knowledge graph links individual data points into a network of relationships. Ad
+That lets an agent figure out which table belongs to which customer or which source is authoritative for a specific piece of information. The service derives these relationships from databases, documents, emails, and chat messages, then layers in business rules and domain knowledge. Without this layer, agents would too often give confident but wrong recommendations, AWS argues.
+AWS Context collects and indexes documents, images, videos, and audio files from data lakes (S3), databases, and SaaS apps in the AWS Glue Data Catalog and external catalogs. The Agentic Search API enables context-aware queries and delivers results directly to AI and third-party tools. | Image: Amazon
+Context is built on the same knowledge graph foundation as Amazon's AI assistant Quick . Metadata from connected sources is stored in AWS storage in an open table format, so customers can keep using their existing tools. There's no need to set up a separate pipeline to pull in data.
+Built-in access controls make sure agents can only reach information they've been cleared for. With each query, the service learns which sources deliver reliable results. That means later agents benefit from earlier ones.
+Reviewing AI-generated code before it hits production
+During a test phase, the AWS DevOps Agent is gaining two new features aimed at the growing volume of AI-generated code. In a Release Readiness Review, the agent checks every code change against production requirements and looks for dependencies that could cause problems across repository boundaries. Teams can define the underlying standards in plain language.
+Findings show up as comments in GitHub or GitLab and can be accessed from the development environment through a plugin for Kiro or Claude Code. A second feature derives a test plan from the specific change and runs it in a production-like environment rather than relying on a static test suite. The preview is initially available for free in the US East region.
+The new testing layer comes after a string of incidents where autonomous code changes at AWS itself caused problems . In February, reports emerged that Amazon's AI coding tools were allegedly involved in at least two AWS outages. One was a 13-hour outage after Kiro decided to delete and rebuild an environment. Shortly after, Amazon put an internal policy in place requiring experienced engineers to approve all AI-generated code .
+Kiro lands on smartphones while AgentCore gets broader integrations
+AWS is bringing its coding agent Kiro to smartphones as a native iOS app . Sessions still run in a cloud environment. The phone serves as a control interface to start tasks, review code changes, and approve them. Identity, model settings, and connected repositories sync across the IDE, web, and mobile device. Only paying customers get access.
+Bedrock AgentCore, AWS's platform for production-ready agent operations, is getting a managed knowledge base with connectors to S3, SharePoint, Confluence, and Google Drive, plus built-in web search. Through integration with in-house security filters, agent actions can be checked for manipulative prompts, malicious content, and data leaks. Down the line, signals from third-party security providers like Check Point, Zscaler, Rubrik, Netskope, and SentinelOne will be folded in as well.
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: About Amazon
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## full_text
+
+Ad
+Skip to content
+AWS says AI agents lack business context and security, launches two services to patch the gaps
+Jonathan Kemper
+View the LinkedIn Profile of Jonathan Kemper
+Jun 21, 2026
+Midjourney prompted by THE DECODER
+Key Points
+Amazon is launching two new AWS services: AWS Continuum, which automates the fixing of code vulnerabilities, and AWS Context, which feeds AI agents business knowledge through a knowledge graph to improve their decision-making.
+The AWS DevOps Agent now includes verification capabilities that check AI-generated code before it goes live, automatically testing it in production-like environments to catch potential system failures early.
+AWS is also releasing its coding agent Kiro as an iOS app for on-the-go control, while expanding the Bedrock AgentCore platform with additional data connectors and security filters.
+At the AWS Summit in New York, Amazon's cloud division unveiled several services designed to make AI agents production-ready. They include a security service for code vulnerabilities and a knowledge graph that gives agents the business context they need.
+The announcements centered on two new services. AWS Continuum tackles security vulnerabilities in code. AWS Context serves as a shared knowledge base for agents.
+Both address typical bottlenecks when deploying AI agents in production. Agents lack business context, and security risks can't keep up with the pace of AI-generated code. Ad
+Automating security as AI-powered threats outpace traditional defenses
+With AWS Continuum, AWS is launching a service that covers the full lifecycle of code vulnerabilities, from detection and prioritization to validation and recommended fixes. The service is initially available only to select pilot customers. Ad
+DEC_D_Incontent-1
+AWS points to specialized security models like Anthropic's Claude Mythos as the driving force, writing in its security blog that such models can spot vulnerabilities and map out attack paths faster than defenders can respond. Traditional approaches built around data collection, storage, and dashboards weren't designed for that kind of speed, and the backlog of unresolved issues keeps piling up.
+AWS Continuum automates the security cycle. Risks are identified, ranked by business impact, validated for exploitability, and addressed with specific remediation steps. | Image: Amazon
+Continuum takes the existing list of open vulnerabilities and also scans for new ones on its own. Then it ranks findings based on business context. Is the affected component even reachable? Is it actively used in production? Ad
+During validation, the service tries to replicate a successful attack in an isolated test environment to separate false positives from real risks. Only then does it suggest specific countermeasures like a modified network config, an adjusted permission setting, or a code patch.
+Continuum picks different frontier models depending on the task. The service can increasingly automate how code vulnerabilities are handled, but it starts in a learning mode that requires human sign-off. As confidence builds, teams can switch it to an enforcement mode where it applies defined fixes on its own. A companion threat modeling tool automatically generates overviews of possible attack scenarios from design documents or source code. Ad
+DEC_D_Incontent-2
+A shared knowledge graph keeps agents from making things up
+AWS Context automatically builds a knowledge graph from existing enterprise data and makes it available to every agent across an organization. A knowledge graph links individual data points into a network of relationships. Ad
+That lets an agent figure out which table belongs to which customer or which source is authoritative for a specific piece of information. The service derives these relationships from databases, documents, emails, and chat messages, then layers in business rules and domain knowledge. Without this layer, agents would too often give confident but wrong recommendations, AWS argues.
+AWS Context collects and indexes documents, images, videos, and audio files from data lakes (S3), databases, and SaaS apps in the AWS Glue Data Catalog and external catalogs. The Agentic Search API enables context-aware queries and delivers results directly to AI and third-party tools. | Image: Amazon
+Context is built on the same knowledge graph foundation as Amazon's AI assistant Quick . Metadata from connected sources is stored in AWS storage in an open table format, so customers can keep using their existing tools. There's no need to set up a separate pipeline to pull in data.
+Built-in access controls make sure agents can only reach information they've been cleared for. With each query, the service learns which sources deliver reliable results. That means later agents benefit from earlier ones.
+Reviewing AI-generated code before it hits production
+During a test phase, the AWS DevOps Agent is gaining two new features aimed at the growing volume of AI-generated code. In a Release Readiness Review, the agent checks every code change against production requirements and looks for dependencies that could cause problems across repository boundaries. Teams can define the underlying standards in plain language.
+Findings show up as comments in GitHub or GitLab and can be accessed from the development environment through a plugin for Kiro or Claude Code. A second feature derives a test plan from the specific change and runs it in a production-like environment rather than relying on a static test suite. The preview is initially available for free in the US East region.
+The new testing layer comes after a string of incidents where autonomous code changes at AWS itself caused problems . In February, reports emerged that Amazon's AI coding tools were allegedly involved in at least two AWS outages. One was a 13-hour outage after Kiro decided to delete and rebuild an environment. Shortly after, Amazon put an internal policy in place requiring experienced engineers to approve all AI-generated code .
+Kiro lands on smartphones while AgentCore gets broader integrations
+AWS is bringing its coding agent Kiro to smartphones as a native iOS app . Sessions still run in a cloud environment. The phone serves as a control interface to start tasks, review code changes, and approve them. Identity, model settings, and connected repositories sync across the IDE, web, and mobile device. Only paying customers get access.
+Bedrock AgentCore, AWS's platform for production-ready agent operations, is getting a managed knowledge base with connectors to S3, SharePoint, Confluence, and Google Drive, plus built-in web search. Through integration with in-house security filters, agent actions can be checked for manipulative prompts, malicious content, and data leaks. Down the line, signals from third-party security providers like Check Point, Zscaler, Rubrik, Netskope, and SentinelOne will be folded in as well.
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: About Amazon
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 88
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":88,"text_length":7222,"paragraph_count":32,"sentence_count":58,"boilerplate_hits":3,"symbol_ratio":0.0008,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强制执行模式。Context自动从数据库、文档、邮件等企业数据构建知识图谱，为所有智能体提供共享业务知识，内置访问控制。DevOps Agent新增发布就绪审查（在GitHub/GitLab以注释反馈）和从变更推导测试计划并在类生产环境运行的功能，预览版在美国东部免费开放。智能体Kiro推出iOS原生应用，用于移动端启动任务和审批代码。Bedrock AgentCore扩展托管知识库连接器（S3、SharePoint等）和内置网络搜索。
+
+2. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   Ad Skip to content AWS says AI agents lack business context and security, launches two services to patch the gaps Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jun 21, 2026 Midjourney prompted by THE DECODER Key Points Amazon is launching two new AWS services: AWS Continuum, which automates the fixing of code vulnerabilities, and AWS Context, which feeds AI agents business knowledge through a knowledge graph to improve their decision-making.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The AWS DevOps Agent now includes verification capabilities that check AI-generated code before it goes live, automatically testing it in production-like environments to catch potential system failures early.
+
+4. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   AWS is also releasing its coding agent Kiro as an iOS app for on-the-go control, while expanding the Bedrock AgentCore platform with additional data connectors and security filters.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   At the AWS Summit in New York, Amazon's cloud division unveiled several services designed to make AI agents production-ready.
+
+6. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   They include a security service for code vulnerabilities and a knowledge graph that gives agents the business context they need.
+
+## business_elements
+
+- companies: The Decoder, AI News（RSS）, Anthropic, Google, GitHub, Amazon, AWS
+- products: Claude, Agent, agents, agent, Agents
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 3, 21, 2026
+M, 1, 2, 13
+- quotes: AI Radar
+
+## evidence_seed
+
+- company_actions: The AWS DevOps Agent now includes verification capabilities that check AI-generated code before it goes live, automatically testing it in production-like environments to catch potential system failures early. / At the AWS Summit in New York, Amazon's cloud division unveiled several services designed to make AI agents production-ready.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强制执行模式。Context自动从数据库、文档、邮件等企业数据构建知识图谱，为所有智能体提供共享业务知识，内置访问控制。DevOps Agent新增发布就绪审查（在GitHub/GitLab以注释反馈）和从变更推导测试计划并在类生产环境运行的功能，预览版在美国东部免费开放。智能体Kiro推出iOS原生应用，用于移动端启动任务和审批代码。Bedrock AgentCore扩展托管知识库连接器（S3、SharePoint等）和内置网络搜索。 / Ad Skip to content AWS says AI agents lack business context and security, launches two services to patch the gaps Jonathan Kemper View the LinkedIn Profile of Jonathan Kemper Jun 21, 2026 Midjourney prompted by THE DECODER Key Points Amazon is launching two new AWS services: AWS Continuum, which automates the fixing of code vulnerabilities, and AWS Context, which feeds AI agents business knowledge through a knowledge graph to improve their decision-making. / AWS is also releasing its coding agent Kiro as an iOS app for on-the-go control, while expanding the Bedrock AgentCore platform with additional data connectors and security filters.
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板","discovery_summary":"在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强制执行模式。Context自动从数据库、文档、邮件等企业数据构建知识图谱，为所有智能体提供共享业务知识，内置访问控制。DevOps Agent新增发布就绪审查（在GitHub/GitLab以注释反馈）和从变更推导测试计划并在类生产环境运行的功能，预览版在美国东部免费开放。智能体Kiro推出iOS原生应用，用于移动端启动任务和审批代码。Bedrock AgentCore扩展托管知识库连接器（S3、SharePoint等）和内置网络搜索。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps","discovered_at":"2026-06-22T03:05:13.686Z","rank_on_page":118,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强制执行模式。Context自动从数据库、文档、邮件等企业数据构建知识图谱，为所有智能体提供共享业务知识，内置访问控制。DevOps Agent新增发布就绪审查（在GitHub/GitLab以注释反馈）和从变更推导测试计划并在类生产环境运行的功能，预览版在美国东部免费开放。智能体Kiro推出iOS原生应用，用于移动端启动任务和审批代码。Bedrock AgentCore扩展托管知识库连接器（S3、SharePoint等）和内置网络搜索。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

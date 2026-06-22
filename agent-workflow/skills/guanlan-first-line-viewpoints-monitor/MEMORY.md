@@ -2,6 +2,12 @@
 
 Keep this file short. Add only durable lane-level lessons from repeated production failures.
 
+## 2026-06-21 Supervision Classification
+
+- First-Line morning RSS health is local-data-first: if `follow-builders-daily.json` is same-date, remarks and builders meet floors, and `assert-follow-builders-data` passes, the public lane is healthy even when GitHub workflow lookup has no same-date run.
+- A missing same-date GitHub fallback run is not a failure when local 08:30 data / gate already passed. Report it only as observability or local automation evidence, not as a reason to dispatch another RSS workflow.
+- After local repair writes the same-date gate, rerun daily supervision or resolve the stale Hermes inbox. Do not let a pre-repair missing-gate report override the newer passed gate.
+
 ## 2026-06-12
 
 - V3.3.6+ First-Line Viewpoints success requires both fresh frontstage JSON and Obsidian person/date timeline persistence. Old month files such as `YYYY-MM.md` are legacy evidence, not current sync proof.

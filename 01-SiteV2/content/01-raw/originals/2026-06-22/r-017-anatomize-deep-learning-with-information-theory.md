@@ -1,0 +1,348 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-017
+title: "Anatomize Deep Learning with Information Theory"
+original_url: "https://lilianweng.github.io/posts/2017-09-28-information-bottleneck/"
+canonical_url: "https://lilianweng.github.io/posts/2017-09-28-information-bottleneck"
+source_name: "Lilian Weng's Blog (OpenAI)"
+source_type: builder
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-22T03:38:47.110Z
+language: mixed
+full_text_hash: 0474a44c81668bc8
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-017-anatomize-deep-learning-with-information-theory.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-017-anatomize-deep-learning-with-information-theory.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":24531,"paragraph_count":84,"sentence_count":198,"boilerplate_hits":0,"symbol_ratio":0.0144,"method":"json-ld"}
+has_full_text: true
+content_length: 24531
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["discovery_or_feedback_source_boundary"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0474a44c81668bc8","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 55fa32e48d7f3027
+content_hash: 89a5f069bad154b7
+semantic_hash: ea7ff08467fcac68
+duplicate_of: ""
+first_seen_at: "2026-06-22T03:38:47.110Z"
+last_seen_at: 2026-06-22T03:38:47.110Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":[],"novelty":2,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Lilian Weng's Blog (OpenAI)","GitHub"],"products":[],"people":[],"industries":["开发者工具"],"roles":[],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["39","34","2021","1","2015","2","50","400"],"quotes":["Information Theory in Deep Learning","memoryless","Markov Property","amount of information","successive refinement of relevant information"]}
+evidence_seed: {"company_actions":["&lt;!-- This post is a summary of Prof Naftali Tishby&#39;s recent talk on &#34;Information Theory in Deep Learning&#34;. It presented how to apply the information theory to study the growth and transformation of deep neural networks during training. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;Professor Naftali Tishby passed away in 2021. Hope the post can introduce his cool idea of information bottleneck to more people.&lt;/span&gt;&lt;/p&gt; &lt;p&gt;Recently I watched the talk &lt;a hr","Anatomize Deep Learning with Information Theory Professor Naftali Tishby passed away in 2021.","Hope the post can introduce his cool idea of information bottleneck to more people."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"product_update","text":"&lt;!-- This post is a summary of Prof Naftali Tishby&#39;s recent talk on &#34;Information Theory in Deep Learning&#34;. It presented how to apply the information theory to study the growth and transformation of deep neural networks during training. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;Professor Naftali Tishby passed away in 2021. Hope the post can introduce his cool idea of information bottleneck to more people.&lt;/span&gt;&lt;/p&gt; &lt;p&gt;Recently I watched the talk &lt;a hr","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Anatomize Deep Learning with Information Theory Professor Naftali Tishby passed away in 2021.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Hope the post can introduce his cool idea of information bottleneck to more people.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Recently I watched the talk &ldquo;Information Theory in Deep Learning&rdquo; by Prof Naftali Tishby and found it very interesting.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"He presented how to apply the information theory to study the growth and transformation of deep neural networks during training.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Using the Information Bottleneck (IB) method, he proposed a new learning bound for deep neural networks (DNN), as the traditional learning theory fails due to the exponentially large number of parameters.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Anatomize Deep Learning with Information Theory
+
+## clean_text
+
+Anatomize Deep Learning with Information Theory
+Professor Naftali Tishby passed away in 2021. Hope the post can introduce his cool idea of information bottleneck to more people.
+Recently I watched the talk &ldquo;Information Theory in Deep Learning&rdquo; by Prof Naftali Tishby and found it very interesting. He presented how to apply the information theory to study the growth and transformation of deep neural networks during training. Using the Information Bottleneck (IB) method, he proposed a new learning bound for deep neural networks (DNN), as the traditional learning theory fails due to the exponentially large number of parameters. Another keen observation is that DNN training involves two distinct phases: First, the network is trained to fully represent the input data and minimize the generalization error; then, it learns to forget the irrelevant details by compressing the representation of the input.
+Professor Naftali Tishby passed away in 2021. Hope the post can introduce his cool idea of information bottleneck to more people.
+Recently I watched the talk “Information Theory in Deep Learning” by Prof Naftali Tishby and found it very interesting. He presented how to apply the information theory to study the growth and transformation of deep neural networks during training. Using the Information Bottleneck (IB) method, he proposed a new learning bound for deep neural networks (DNN), as the traditional learning theory fails due to the exponentially large number of parameters. Another keen observation is that DNN training involves two distinct phases: First, the network is trained to fully represent the input data and minimize the generalization error; then, it learns to forget the irrelevant details by compressing the representation of the input.
+Most of the materials in this post are from Prof Tishby’s talk and related papers.
+Basic Concepts Markov Chain
+A Markov process is a “memoryless” (also called “Markov Property”) stochastic process. A Markov chain is a type of Markov process containing multiple discrete states. That is being said, the conditional probability of future states of the process is only determined by the current state and does not depend on the past states.
+Kullback–Leibler (KL) Divergence
+KL divergence measures how one probability distribution $p$ diverges from a second expected probability distribution $q$. It is asymmetric.
+$$ \begin{aligned} D_{KL}(p \| q) &= \sum_x p(x) \log \frac{p(x)}{q(x)} \\ &= - \sum_x p(x)\log q(x) + \sum_x p(x)\log p(x) \\ &= H(P, Q) - H(P) \end{aligned} $$ $D_{KL}$ achieves the minimum zero when $p(x)$ == $q(x)$ everywhere.
+Mutual Information
+Mutual information measures the mutual dependence between two variables. It quantifies the “amount of information” obtained about one random variable through the other random variable. Mutual information is symmetric.
+$$ \begin{aligned} I(X;Y) &= D_{KL}[p(x,y) \| p(x)p(y)] \\ &= \sum_{x \in X, y \in Y} p(x, y) \log(\frac{p(x, y)}{p(x)p(y)}) \\ &= \sum_{x \in X, y \in Y} p(x, y) \log(\frac{p(x|y)}{p(x)}) \\ &= H(X) - H(X|Y) \\ \end{aligned} $$ Data Processing Inequality (DPI)
+For any markov chain: $X \to Y \to Z$, we would have $I(X; Y) \geq I(X; Z)$.
+A deep neural network can be viewed as a Markov chain, and thus when we are moving down the layers of a DNN, the mutual information between the layer and the input can only decrease.
+Reparametrization invariance
+For two invertible functions $\phi$, $\psi$, the mutual information still holds: $I(X; Y) = I(\phi(X); \psi(Y))$.
+For example, if we shuffle the weights in one layer of DNN, it would not affect the mutual information between this layer and another.
+Deep Neural Networks as Markov Chains The training data contains sampled observations from the joint distribution of $X$ and $Y$. The input variable $X$ and weights of hidden layers are all high-dimensional random variable. The ground truth target $Y$ and the predicted value $\hat{Y}$ are random variables of smaller dimensions in the classification settings.
+The structure of a deep neural network, which consists of the target label $Y$, input layer $X$, hidden layers $h\_1, \dots, h\_m$ and the final prediction $\hat{Y}$. (Image source: Tishby and Zaslavsky, 2015) If we label the hidden layers of a DNN as $h_1, h_2, \dots, h_m$ as in Fig. 1, we can view each layer as one state of a Markov Chain: $ h_i \to h_{i+1}$. According to DPI, we would have:
+$$ \begin{aligned} H(X) \geq I(X; h_1) \geq I(X; h_2) \geq \dots \geq I(X; h_m) \geq I(X; \hat{Y}) \\ I(X; Y) \geq I(h_1; Y) \geq I(h_2; Y) \geq \dots \geq I(h_m; Y) \geq I(\hat{Y}; Y) \end{aligned} $$ A DNN is designed to learn how to describe $X$ to predict $Y$ and eventually, to compress $X$ to only hold the information related to $Y$. Tishby describes this processing as “successive refinement of relevant information”.
+Information Plane Theorem A DNN has successive internal representations of $X$, a set of hidden layers $\{T_i\}$. The information plane theorem characterizes each layer by its encoder and decoder information. The encoder is a representation of the input data $X$, while the decoder translates the information in the current layer to the target ouput $Y$.
+Precisely, in an information plane plot:
+X-axis: The sample complexity of $T_i$ is determined by the encoder mutual information $I(X; T_i)$. Sample complexity refers to how many samples you need to achieve certain accuracy and generalization. Y-axis: The accuracy (generalization error) is determined by the decoder mutual information $I(T_i; Y)$. The encoder vs decoder mutual information of DNN hidden layers of 50 experiments. Different layers are color-coders, with green being the layer right next to the input and the orange being the furthest. There are three snapshots, at the initial epoch, 400 epochs and 9000 epochs respectively. (Image source: Shwartz-Ziv and Tishby, 2017) Each dot in marks the encoder/ decoder mutual information of one hidden layer of one network simulation (no regularization is applied; no weights decay, no dropout, etc.). They move up as expected because the knowledge about the true labels is increasing (accuracy increases). At the early stage, the hidden layers learn a lot about the input $X$, but later they start to compress to forget some information about the input. Tishby believes that “the most important part of learning is actually forgetting”. Check out this nice video that demonstrates how the mutual information measures of layers are changing in epoch time.
+Here is an aggregated view of Fig 2. The compression happens after the generalization error becomes very small. (Image source: Tishby’ talk 15:15) Two Optimization Phases Tracking the normalized mean and standard deviation of each layer’s weights in time also reveals two optimization phases of the training process.
+The norm of mean and standard deviation of each layer's weight gradients for each layer as a function of training epochs. Different layers are color-coded. (Image source: Shwartz-Ziv and Tishby, 2017) Among early epochs, the mean values are three magnitudes larger than the standard deviations. After a sufficient number of epochs, the error saturates and the standard deviations become much noisier afterward. The further a layer is away from the output, the noisier it gets, because the noises can get amplified and accumulated through the back-prop process (not due to the width of the layer).
+Learning Theory “Old” Generalization Bounds The generalization bounds defined by the classic learning theory is:
+$$ \epsilon^2 < \frac{\log|H_\epsilon| + \log{1/\delta}}{2m} $$ $\epsilon$: The difference between the training error and the generalization error. The generalization error measures how accurate the prediction of an algorithm is for previously unseen data. $H_\epsilon$: $\epsilon$-cover of the hypothesis class. Typically we assume the size $\vert H_\epsilon \vert \sim (1/\epsilon)^d$. $\delta$: Confidence. $m$: The number of training samples. $d$: The VC dimension of the hypothesis. This definition states that the difference between the training error and the generalization error is bounded by a function of the hypothesis space size and the dataset size. The bigger the hypothesis space gets, the bigger the generalization error becomes. I recommend this tutorial on ML theory, part1 and part2, if you are interested in reading more on generalization bounds.
+However, it does not work for deep learning. The larger a network is, the more parameters it needs to learn. With this generalization bounds, larger networks (larger $d$) would have worse bounds. This is contrary to the intuition that larger networks are able to achieve better performance with higher expressivity.
+“New” Input compression bound To solve this counterintuitive observation, Tishby et al. proposed a new input compression bound for DNN.
+First let us have $T_\epsilon$ as an $\epsilon$-partition of the input variable $X$. This partition compresses the input with respect to the homogeneity to the labels into small cells. The cells in total can cover the whole input space. If the prediction outputs binary values, we can replace the cardinality of the hypothesis, $\vert H_\epsilon \vert$, with $2^{\vert T_\epsilon \vert}$.
+$$ |H_\epsilon| \sim 2^{|X|} \to 2^{|T_\epsilon|} $$ When $X$ is large, the size of $X$ is approximately $2^{H(X)}$. Each cell in the $\epsilon$-partition is of size $2^{H(X \vert T_\epsilon)}$. Therefore we have $\vert T_\epsilon \vert \sim \frac{2^{H(X)}}{2^{H(X \vert T_\epsilon)}} = 2^{I(T_\epsilon; X)}$. Then the input compression bound becomes:
+$$ \epsilon^2 < \frac{2^{I(T_\epsilon; X)} + \log{1/\delta}}{2m} $$ The black line is the optimal achievable information bottleneck (IB) limit. The red line corresponds to the upper bound on the out-of-sample IB distortion, when trained on a finite sample set. $\Delta C$ is the complexity gap and $\Delta G$ is the generalization gap. (Recreated based on Tishby’ talk 24:50) Network Size and Training Data Size The Benefit of More Hidden Layers Having more layers give us computational benefits and speed up the training process for good generalization.
+The optimization time is much shorter (fewer epochs) with more hidden layers. (Image source: Shwartz-Ziv and Tishby, 2017) Compression through stochastic relaxation: According to the diffusion equation, the relaxation time of layer $k$ is proportional to the exponential of this layer’s compression amount $\Delta S_k$: $\Delta t_k \sim \exp(\Delta S_k)$. We can compute the layer compression as $\Delta S_k = I(X; T_k) - I(X; T_{k-1})$. Because $\exp(\sum_k \Delta S_k) \geq \sum_k \exp(\Delta S_k)$, we would expect an exponential decrease in training epochs with more hidden layers (larger $k$).
+The Benefit of More Training Samples Fitting more training data requires more information captured by the hidden layers. With increased training data size, the decoder mutual information (recall that this is directly related to the generalization error), $I(T; Y)$, is pushed up and gets closer to the theoretical information bottleneck bound. Tishby emphasized that It is the mutual information, not the layer size or the VC dimension, that determines generalization, different from standard theories.
+The training data of different sizes is color-coded. The information plane of multiple converged networks are plotted. More training data leads to better generalization. (Image source: Shwartz-Ziv and Tishby, 2017) Cited as:
+@article{weng2017infotheory, title = "Anatomize Deep Learning with Information Theory", author = "Weng, Lilian", journal = "lilianweng.github.io", year = "2017", url = "https://lilianweng.github.io/posts/2017-09-28-information-bottleneck/" } References [1] Naftali Tishby. Information Theory of Deep Learning
+[2] Machine Learning Theory - Part 1: Introduction
+[3] Machine Learning Theory - Part 2: Generalization Bounds
+[4] New Theory Cracks Open the Black Box of Deep Learning by Quanta Magazine.
+[5] Naftali Tishby and Noga Zaslavsky. “Deep learning and the information bottleneck principle.” IEEE Information Theory Workshop (ITW), 2015.
+[6] Ravid Shwartz-Ziv and Naftali Tishby. “Opening the Black Box of Deep Neural Networks via Information.” arXiv preprint arXiv:1703.00810, 2017.
+Anatomize Deep Learning with Information Theory
+Professor Naftali Tishby passed away in 2021. Hope the post can introduce his cool idea of information bottleneck to more people.
+Recently I watched the talk &ldquo;Information Theory in Deep Learning&rdquo; by Prof Naftali Tishby and found it very interesting. He presented how to apply the information theory to study the growth and transformation of deep neural networks during training. Using the Information Bottleneck (IB) method, he proposed a new learning bound for deep neural networks (DNN), as the traditional learning theory fails due to the exponentially large number of parameters. Another keen observation is that DNN training involves two distinct phases: First, the network is trained to fully represent the input data and minimize the generalization error; then, it learns to forget the irrelevant details by compressing the representation of the input.
+Professor Naftali Tishby passed away in 2021. Hope the post can introduce his cool idea of information bottleneck to more people.
+Recently I watched the talk “Information Theory in Deep Learning” by Prof Naftali Tishby and found it very interesting. He presented how to apply the information theory to study the growth and transformation of deep neural networks during training. Using the Information Bottleneck (IB) method, he proposed a new learning bound for deep neural networks (DNN), as the traditional learning theory fails due to the exponentially large number of parameters. Another keen observation is that DNN training involves two distinct phases: First, the network is trained to fully represent the input data and minimize the generalization error; then, it learns to forget the irrelevant details by compressing the representation of the input.
+Most of the materials in this post are from Prof Tishby’s talk and related papers.
+Basic Concepts Markov Chain
+A Markov process is a “memoryless” (also called “Markov Property”) stochastic process. A Markov chain is a type of Markov process containing multiple discrete states. That is being said, the conditional probability of future states of the process is only determined by the current state and does not depend on the past states.
+Kullback–Leibler (KL) Divergence
+KL divergence measures how one probability distribution $p$ diverges from a second expected probability distribution $q$. It is asymmetric.
+$$ \begin{aligned} D_{KL}(p \| q) &= \sum_x p(x) \log \frac{p(x)}{q(x)} \\ &= - \sum_x p(x)\log q(x) + \sum_x p(x)\log p(x) \\ &= H(P, Q) - H(P) \end{aligned} $$ $D_{KL}$ achieves the minimum zero when $p(x)$ == $q(x)$ everywhere.
+Mutual Information
+Mutual information measures the mutual dependence between two variables. It quantifies the “amount of information” obtained about one random variable through the other random variable. Mutual information is symmetric.
+$$ \begin{aligned} I(X;Y) &= D_{KL}[p(x,y) \| p(x)p(y)] \\ &= \sum_{x \in X, y \in Y} p(x, y) \log(\frac{p(x, y)}{p(x)p(y)}) \\ &= \sum_{x \in X, y \in Y} p(x, y) \log(\frac{p(x|y)}{p(x)}) \\ &= H(X) - H(X|Y) \\ \end{aligned} $$ Data Processing Inequality (DPI)
+For any markov chain: $X \to Y \to Z$, we would have $I(X; Y) \geq I(X; Z)$.
+A deep neural network can be viewed as a Markov chain, and thus when we are moving down the layers of a DNN, the mutual information between the layer and the input can only decrease.
+Reparametrization invariance
+For two invertible functions $\phi$, $\psi$, the mutual information still holds: $I(X; Y) = I(\phi(X); \psi(Y))$.
+For example, if we shuffle the weights in one layer of DNN, it would not affect the mutual information between this layer and another.
+Deep Neural Networks as Markov Chains The training data contains sampled observations from the joint distribution of $X$ and $Y$. The input variable $X$ and weights of hidden layers are all high-dimensional random variable. The ground truth target $Y$ and the predicted value $\hat{Y}$ are random variables of smaller dimensions in the classification settings.
+The structure of a deep neural network, which consists of the target label $Y$, input layer $X$, hidden layers $h\_1, \dots, h\_m$ and the final prediction $\hat{Y}$. (Image source: Tishby and Zaslavsky, 2015) If we label the hidden layers of a DNN as $h_1, h_2, \dots, h_m$ as in Fig. 1, we can view each layer as one state of a Markov Chain: $ h_i \to h_{i+1}$. According to DPI, we would have:
+$$ \begin{aligned} H(X) \geq I(X; h_1) \geq I(X; h_2) \geq \dots \geq I(X; h_m) \geq I(X; \hat{Y}) \\ I(X; Y) \geq I(h_1; Y) \geq I(h_2; Y) \geq \dots \geq I(h_m; Y) \geq I(\hat{Y}; Y) \end{aligned} $$ A DNN is designed to learn how to describe $X$ to predict $Y$ and eventually, to compress $X$ to only hold the information related to $Y$. Tishby describes this processing as “successive refinement of relevant information”.
+Information Plane Theorem A DNN has successive internal representations of $X$, a set of hidden layers $\{T_i\}$. The information plane theorem characterizes each layer by its encoder and decoder information. The encoder is a representation of the input data $X$, while the decoder translates the information in the current layer to the target ouput $Y$.
+Precisely, in an information plane plot:
+X-axis: The sample complexity of $T_i$ is determined by the encoder mutual information $I(X; T_i)$. Sample complexity refers to how many samples you need to achieve certain accuracy and generalization. Y-axis: The accuracy (generalization error) is determined by the decoder mutual information $I(T_i; Y)$. The encoder vs decoder mutual information of DNN hidden layers of 50 experiments. Different layers are color-coders, with green being the layer right next to the input and the orange being
+
+## full_text
+
+Anatomize Deep Learning with Information Theory
+Professor Naftali Tishby passed away in 2021. Hope the post can introduce his cool idea of information bottleneck to more people.
+Recently I watched the talk &ldquo;Information Theory in Deep Learning&rdquo; by Prof Naftali Tishby and found it very interesting. He presented how to apply the information theory to study the growth and transformation of deep neural networks during training. Using the Information Bottleneck (IB) method, he proposed a new learning bound for deep neural networks (DNN), as the traditional learning theory fails due to the exponentially large number of parameters. Another keen observation is that DNN training involves two distinct phases: First, the network is trained to fully represent the input data and minimize the generalization error; then, it learns to forget the irrelevant details by compressing the representation of the input.
+Professor Naftali Tishby passed away in 2021. Hope the post can introduce his cool idea of information bottleneck to more people.
+Recently I watched the talk “Information Theory in Deep Learning” by Prof Naftali Tishby and found it very interesting. He presented how to apply the information theory to study the growth and transformation of deep neural networks during training. Using the Information Bottleneck (IB) method, he proposed a new learning bound for deep neural networks (DNN), as the traditional learning theory fails due to the exponentially large number of parameters. Another keen observation is that DNN training involves two distinct phases: First, the network is trained to fully represent the input data and minimize the generalization error; then, it learns to forget the irrelevant details by compressing the representation of the input.
+Most of the materials in this post are from Prof Tishby’s talk and related papers.
+Basic Concepts Markov Chain
+A Markov process is a “memoryless” (also called “Markov Property”) stochastic process. A Markov chain is a type of Markov process containing multiple discrete states. That is being said, the conditional probability of future states of the process is only determined by the current state and does not depend on the past states.
+Kullback–Leibler (KL) Divergence
+KL divergence measures how one probability distribution $p$ diverges from a second expected probability distribution $q$. It is asymmetric.
+$$ \begin{aligned} D_{KL}(p \| q) &= \sum_x p(x) \log \frac{p(x)}{q(x)} \\ &= - \sum_x p(x)\log q(x) + \sum_x p(x)\log p(x) \\ &= H(P, Q) - H(P) \end{aligned} $$ $D_{KL}$ achieves the minimum zero when $p(x)$ == $q(x)$ everywhere.
+Mutual Information
+Mutual information measures the mutual dependence between two variables. It quantifies the “amount of information” obtained about one random variable through the other random variable. Mutual information is symmetric.
+$$ \begin{aligned} I(X;Y) &= D_{KL}[p(x,y) \| p(x)p(y)] \\ &= \sum_{x \in X, y \in Y} p(x, y) \log(\frac{p(x, y)}{p(x)p(y)}) \\ &= \sum_{x \in X, y \in Y} p(x, y) \log(\frac{p(x|y)}{p(x)}) \\ &= H(X) - H(X|Y) \\ \end{aligned} $$ Data Processing Inequality (DPI)
+For any markov chain: $X \to Y \to Z$, we would have $I(X; Y) \geq I(X; Z)$.
+A deep neural network can be viewed as a Markov chain, and thus when we are moving down the layers of a DNN, the mutual information between the layer and the input can only decrease.
+Reparametrization invariance
+For two invertible functions $\phi$, $\psi$, the mutual information still holds: $I(X; Y) = I(\phi(X); \psi(Y))$.
+For example, if we shuffle the weights in one layer of DNN, it would not affect the mutual information between this layer and another.
+Deep Neural Networks as Markov Chains The training data contains sampled observations from the joint distribution of $X$ and $Y$. The input variable $X$ and weights of hidden layers are all high-dimensional random variable. The ground truth target $Y$ and the predicted value $\hat{Y}$ are random variables of smaller dimensions in the classification settings.
+The structure of a deep neural network, which consists of the target label $Y$, input layer $X$, hidden layers $h\_1, \dots, h\_m$ and the final prediction $\hat{Y}$. (Image source: Tishby and Zaslavsky, 2015) If we label the hidden layers of a DNN as $h_1, h_2, \dots, h_m$ as in Fig. 1, we can view each layer as one state of a Markov Chain: $ h_i \to h_{i+1}$. According to DPI, we would have:
+$$ \begin{aligned} H(X) \geq I(X; h_1) \geq I(X; h_2) \geq \dots \geq I(X; h_m) \geq I(X; \hat{Y}) \\ I(X; Y) \geq I(h_1; Y) \geq I(h_2; Y) \geq \dots \geq I(h_m; Y) \geq I(\hat{Y}; Y) \end{aligned} $$ A DNN is designed to learn how to describe $X$ to predict $Y$ and eventually, to compress $X$ to only hold the information related to $Y$. Tishby describes this processing as “successive refinement of relevant information”.
+Information Plane Theorem A DNN has successive internal representations of $X$, a set of hidden layers $\{T_i\}$. The information plane theorem characterizes each layer by its encoder and decoder information. The encoder is a representation of the input data $X$, while the decoder translates the information in the current layer to the target ouput $Y$.
+Precisely, in an information plane plot:
+X-axis: The sample complexity of $T_i$ is determined by the encoder mutual information $I(X; T_i)$. Sample complexity refers to how many samples you need to achieve certain accuracy and generalization. Y-axis: The accuracy (generalization error) is determined by the decoder mutual information $I(T_i; Y)$. The encoder vs decoder mutual information of DNN hidden layers of 50 experiments. Different layers are color-coders, with green being the layer right next to the input and the orange being the furthest. There are three snapshots, at the initial epoch, 400 epochs and 9000 epochs respectively. (Image source: Shwartz-Ziv and Tishby, 2017) Each dot in marks the encoder/ decoder mutual information of one hidden layer of one network simulation (no regularization is applied; no weights decay, no dropout, etc.). They move up as expected because the knowledge about the true labels is increasing (accuracy increases). At the early stage, the hidden layers learn a lot about the input $X$, but later they start to compress to forget some information about the input. Tishby believes that “the most important part of learning is actually forgetting”. Check out this nice video that demonstrates how the mutual information measures of layers are changing in epoch time.
+Here is an aggregated view of Fig 2. The compression happens after the generalization error becomes very small. (Image source: Tishby’ talk 15:15) Two Optimization Phases Tracking the normalized mean and standard deviation of each layer’s weights in time also reveals two optimization phases of the training process.
+The norm of mean and standard deviation of each layer's weight gradients for each layer as a function of training epochs. Different layers are color-coded. (Image source: Shwartz-Ziv and Tishby, 2017) Among early epochs, the mean values are three magnitudes larger than the standard deviations. After a sufficient number of epochs, the error saturates and the standard deviations become much noisier afterward. The further a layer is away from the output, the noisier it gets, because the noises can get amplified and accumulated through the back-prop process (not due to the width of the layer).
+Learning Theory “Old” Generalization Bounds The generalization bounds defined by the classic learning theory is:
+$$ \epsilon^2 < \frac{\log|H_\epsilon| + \log{1/\delta}}{2m} $$ $\epsilon$: The difference between the training error and the generalization error. The generalization error measures how accurate the prediction of an algorithm is for previously unseen data. $H_\epsilon$: $\epsilon$-cover of the hypothesis class. Typically we assume the size $\vert H_\epsilon \vert \sim (1/\epsilon)^d$. $\delta$: Confidence. $m$: The number of training samples. $d$: The VC dimension of the hypothesis. This definition states that the difference between the training error and the generalization error is bounded by a function of the hypothesis space size and the dataset size. The bigger the hypothesis space gets, the bigger the generalization error becomes. I recommend this tutorial on ML theory, part1 and part2, if you are interested in reading more on generalization bounds.
+However, it does not work for deep learning. The larger a network is, the more parameters it needs to learn. With this generalization bounds, larger networks (larger $d$) would have worse bounds. This is contrary to the intuition that larger networks are able to achieve better performance with higher expressivity.
+“New” Input compression bound To solve this counterintuitive observation, Tishby et al. proposed a new input compression bound for DNN.
+First let us have $T_\epsilon$ as an $\epsilon$-partition of the input variable $X$. This partition compresses the input with respect to the homogeneity to the labels into small cells. The cells in total can cover the whole input space. If the prediction outputs binary values, we can replace the cardinality of the hypothesis, $\vert H_\epsilon \vert$, with $2^{\vert T_\epsilon \vert}$.
+$$ |H_\epsilon| \sim 2^{|X|} \to 2^{|T_\epsilon|} $$ When $X$ is large, the size of $X$ is approximately $2^{H(X)}$. Each cell in the $\epsilon$-partition is of size $2^{H(X \vert T_\epsilon)}$. Therefore we have $\vert T_\epsilon \vert \sim \frac{2^{H(X)}}{2^{H(X \vert T_\epsilon)}} = 2^{I(T_\epsilon; X)}$. Then the input compression bound becomes:
+$$ \epsilon^2 < \frac{2^{I(T_\epsilon; X)} + \log{1/\delta}}{2m} $$ The black line is the optimal achievable information bottleneck (IB) limit. The red line corresponds to the upper bound on the out-of-sample IB distortion, when trained on a finite sample set. $\Delta C$ is the complexity gap and $\Delta G$ is the generalization gap. (Recreated based on Tishby’ talk 24:50) Network Size and Training Data Size The Benefit of More Hidden Layers Having more layers give us computational benefits and speed up the training process for good generalization.
+The optimization time is much shorter (fewer epochs) with more hidden layers. (Image source: Shwartz-Ziv and Tishby, 2017) Compression through stochastic relaxation: According to the diffusion equation, the relaxation time of layer $k$ is proportional to the exponential of this layer’s compression amount $\Delta S_k$: $\Delta t_k \sim \exp(\Delta S_k)$. We can compute the layer compression as $\Delta S_k = I(X; T_k) - I(X; T_{k-1})$. Because $\exp(\sum_k \Delta S_k) \geq \sum_k \exp(\Delta S_k)$, we would expect an exponential decrease in training epochs with more hidden layers (larger $k$).
+The Benefit of More Training Samples Fitting more training data requires more information captured by the hidden layers. With increased training data size, the decoder mutual information (recall that this is directly related to the generalization error), $I(T; Y)$, is pushed up and gets closer to the theoretical information bottleneck bound. Tishby emphasized that It is the mutual information, not the layer size or the VC dimension, that determines generalization, different from standard theories.
+The training data of different sizes is color-coded. The information plane of multiple converged networks are plotted. More training data leads to better generalization. (Image source: Shwartz-Ziv and Tishby, 2017) Cited as:
+@article{weng2017infotheory, title = "Anatomize Deep Learning with Information Theory", author = "Weng, Lilian", journal = "lilianweng.github.io", year = "2017", url = "https://lilianweng.github.io/posts/2017-09-28-information-bottleneck/" } References [1] Naftali Tishby. Information Theory of Deep Learning
+[2] Machine Learning Theory - Part 1: Introduction
+[3] Machine Learning Theory - Part 2: Generalization Bounds
+[4] New Theory Cracks Open the Black Box of Deep Learning by Quanta Magazine.
+[5] Naftali Tishby and Noga Zaslavsky. “Deep learning and the information bottleneck principle.” IEEE Information Theory Workshop (ITW), 2015.
+[6] Ravid Shwartz-Ziv and Naftali Tishby. “Opening the Black Box of Deep Neural Networks via Information.” arXiv preprint arXiv:1703.00810, 2017.
+Anatomize Deep Learning with Information Theory
+Professor Naftali Tishby passed away in 2021. Hope the post can introduce his cool idea of information bottleneck to more people.
+Recently I watched the talk &ldquo;Information Theory in Deep Learning&rdquo; by Prof Naftali Tishby and found it very interesting. He presented how to apply the information theory to study the growth and transformation of deep neural networks during training. Using the Information Bottleneck (IB) method, he proposed a new learning bound for deep neural networks (DNN), as the traditional learning theory fails due to the exponentially large number of parameters. Another keen observation is that DNN training involves two distinct phases: First, the network is trained to fully represent the input data and minimize the generalization error; then, it learns to forget the irrelevant details by compressing the representation of the input.
+Professor Naftali Tishby passed away in 2021. Hope the post can introduce his cool idea of information bottleneck to more people.
+Recently I watched the talk “Information Theory in Deep Learning” by Prof Naftali Tishby and found it very interesting. He presented how to apply the information theory to study the growth and transformation of deep neural networks during training. Using the Information Bottleneck (IB) method, he proposed a new learning bound for deep neural networks (DNN), as the traditional learning theory fails due to the exponentially large number of parameters. Another keen observation is that DNN training involves two distinct phases: First, the network is trained to fully represent the input data and minimize the generalization error; then, it learns to forget the irrelevant details by compressing the representation of the input.
+Most of the materials in this post are from Prof Tishby’s talk and related papers.
+Basic Concepts Markov Chain
+A Markov process is a “memoryless” (also called “Markov Property”) stochastic process. A Markov chain is a type of Markov process containing multiple discrete states. That is being said, the conditional probability of future states of the process is only determined by the current state and does not depend on the past states.
+Kullback–Leibler (KL) Divergence
+KL divergence measures how one probability distribution $p$ diverges from a second expected probability distribution $q$. It is asymmetric.
+$$ \begin{aligned} D_{KL}(p \| q) &= \sum_x p(x) \log \frac{p(x)}{q(x)} \\ &= - \sum_x p(x)\log q(x) + \sum_x p(x)\log p(x) \\ &= H(P, Q) - H(P) \end{aligned} $$ $D_{KL}$ achieves the minimum zero when $p(x)$ == $q(x)$ everywhere.
+Mutual Information
+Mutual information measures the mutual dependence between two variables. It quantifies the “amount of information” obtained about one random variable through the other random variable. Mutual information is symmetric.
+$$ \begin{aligned} I(X;Y) &= D_{KL}[p(x,y) \| p(x)p(y)] \\ &= \sum_{x \in X, y \in Y} p(x, y) \log(\frac{p(x, y)}{p(x)p(y)}) \\ &= \sum_{x \in X, y \in Y} p(x, y) \log(\frac{p(x|y)}{p(x)}) \\ &= H(X) - H(X|Y) \\ \end{aligned} $$ Data Processing Inequality (DPI)
+For any markov chain: $X \to Y \to Z$, we would have $I(X; Y) \geq I(X; Z)$.
+A deep neural network can be viewed as a Markov chain, and thus when we are moving down the layers of a DNN, the mutual information between the layer and the input can only decrease.
+Reparametrization invariance
+For two invertible functions $\phi$, $\psi$, the mutual information still holds: $I(X; Y) = I(\phi(X); \psi(Y))$.
+For example, if we shuffle the weights in one layer of DNN, it would not affect the mutual information between this layer and another.
+Deep Neural Networks as Markov Chains The training data contains sampled observations from the joint distribution of $X$ and $Y$. The input variable $X$ and weights of hidden layers are all high-dimensional random variable. The ground truth target $Y$ and the predicted value $\hat{Y}$ are random variables of smaller dimensions in the classification settings.
+The structure of a deep neural network, which consists of the target label $Y$, input layer $X$, hidden layers $h\_1, \dots, h\_m$ and the final prediction $\hat{Y}$. (Image source: Tishby and Zaslavsky, 2015) If we label the hidden layers of a DNN as $h_1, h_2, \dots, h_m$ as in Fig. 1, we can view each layer as one state of a Markov Chain: $ h_i \to h_{i+1}$. According to DPI, we would have:
+$$ \begin{aligned} H(X) \geq I(X; h_1) \geq I(X; h_2) \geq \dots \geq I(X; h_m) \geq I(X; \hat{Y}) \\ I(X; Y) \geq I(h_1; Y) \geq I(h_2; Y) \geq \dots \geq I(h_m; Y) \geq I(\hat{Y}; Y) \end{aligned} $$ A DNN is designed to learn how to describe $X$ to predict $Y$ and eventually, to compress $X$ to only hold the information related to $Y$. Tishby describes this processing as “successive refinement of relevant information”.
+Information Plane Theorem A DNN has successive internal representations of $X$, a set of hidden layers $\{T_i\}$. The information plane theorem characterizes each layer by its encoder and decoder information. The encoder is a representation of the input data $X$, while the decoder translates the information in the current layer to the target ouput $Y$.
+Precisely, in an information plane plot:
+X-axis: The sample complexity of $T_i$ is determined by the encoder mutual information $I(X; T_i)$. Sample complexity refers to how many samples you need to achieve certain accuracy and generalization. Y-axis: The accuracy (generalization error) is determined by the decoder mutual information $I(T_i; Y)$. The encoder vs decoder mutual information of DNN hidden layers of 50 experiments. Different layers are color-coders, with green being the layer right next to the input and the orange being the furthest. There are three snapshots, at the initial epoch, 400 epochs and 9000 epochs respectively. (Image source: Shwartz-Ziv and Tishby, 2017) Each dot in marks the encoder/ decoder mutual information of one hidden layer of one network simulation (no regularization is applied; no weights decay, no dropout, etc.). They move up as expected because the knowledge about the true labels is increasing (accuracy increases). At the early stage, the hidden layers learn a lot about the input $X$, but later they start to compress to forget some information about the input. Tishby believes that “the most important part of learning is actually forgetting”. Check out this nice video that demonstrates how the mutual information measures of layers are changing in epoch time.
+Here is an aggregated view of Fig 2. The compression happens after the generalization error becomes very small. (Image source: Tishby’ talk 15:15) Two Optimization Phases Tracking the normalized mean and standard deviation of each layer’s weights in time also reveals two optimization phases of the training process.
+The norm of mean and standard deviation of each layer's weight gradients for each layer as a function of training epochs. Different layers are color-coded. (Image source: Shwartz-Ziv and Tishby, 2017) Among early epochs, the mean values are three magnitudes larger than the standard deviations. After a sufficient number of epochs, the error saturates and the standard deviations become much noisier afterward. The further a layer is away from the output, the noisier it gets, because the noises can get amplified and accumulated through the back-prop process (not due to the width of the layer).
+Learning Theory “Old” Generalization Bounds The generalization bounds defined by the classic learning theory is:
+$$ \epsilon^2 < \frac{\log|H_\epsilon| + \log{1/\delta}}{2m} $$ $\epsilon$: The difference between the training error and the generalization error. The generalization error measures how accurate the prediction of an algorithm is for previously unseen data. $H_\epsilon$: $\epsilon$-cover of the hypothesis class. Typically we assume the size $\vert H_\epsilon \vert \sim (1/\epsilon)^d$. $\delta$: Confidence. $m$: The number of training samples. $d$: The VC dimension of the hypothesis. This definition states that the difference between the training error and the generalization error is bounded by a function of the hypothesis space size and the dataset size. The bigger the hypothesis space gets, the bigger the generalization error becomes. I recommend this tutorial on ML theory, part1 and part2, if you are interested in reading more on generalization bounds.
+However, it does not work for deep learning. The larger a network is, the more parameters it needs to learn. With this generalization bounds, larger networks (larger $d$) would have worse bounds. This is contrary to the intuition that larger networks are able to achieve better performance with higher expressivity.
+“New” Input compression bound To solve this counterintuitive observation, Tishby et al. proposed a new input compression bound for DNN.
+First let us have $T_\epsilon$ as an $\epsilon$-partition of the input variable $X$. This partition compresses the input with respect to the homogeneity to the labels into small cells. The cells in total can cover the whole input space. If the prediction outputs binary values, we can replace the cardinality of the hypothesis, $\vert H_\epsilon \vert$, with $2^{\vert T_\epsilon \vert}$.
+$$ |H_\epsilon| \sim 2^{|X|} \to 2^{|T_\epsilon|} $$ When $X$ is large, the size of $X$ is approximately $2^{H(X)}$. Each cell in the $\epsilon$-partition is of size $2^{H(X \vert T_\epsilon)}$. Therefore we have $\vert T_\epsilon \vert \sim \frac{2^{H(X)}}{2^{H(X \vert T_\epsilon)}} = 2^{I(T_\epsilon; X)}$. Then the input compression bound becomes:
+$$ \epsilon^2 < \frac{2^{I(T_\epsilon; X)} + \log{1/\delta}}{2m} $$ The black line is the optimal achievable information bottleneck (IB) limit. The red line corresponds to the upper bound on the out-of-sample IB distortion, when trained on a finite sample set. $\Delta C$ is the complexity gap and $\Delta G$ is the generalization gap. (Recreated based on Tishby’ talk 24:50) Network Size and Training Data Size The Benefit of More Hidden Layers Having more layers give us computational benefits and speed up the training process for good generalization.
+The optimization time is much shorter (fewer epochs) with more hidden layers. (Image source: Shwartz-Ziv and Tishby, 2017) Compression through stochastic relaxation: According to the diffusion equation, the relaxation time of layer $k$ is proportional to the exponential of this layer’s compression amount $\Delta S_k$: $\Delta t_k \sim \exp(\Delta S_k)$. We can compute the layer compression as $\Delta S_k = I(X; T_k) - I(X; T_{k-1})$. Because $\exp(\sum_k \Delta S_k) \geq \sum_k \exp(\Delta S_k)$, we would expect an exponential decrease in training epochs with more hidden layers (larger $k$).
+The Benefit of More Training Samples Fitting more training data requires more information captured by the hidden layers. With increased training data size, the decoder mutual information (recall that this is directly related to the generalization error), $I(T; Y)$, is pushed up and gets closer to the theoretical information bottleneck bound. Tishby emphasized that It is the mutual information, not the layer size or the VC dimension, that determines generalization, different from standard theories.
+The training data of different sizes is color-coded. The information plane of multiple converged networks are plotted. More training data leads to better generalization. (Image source: Shwartz-Ziv and Tishby, 2017) Cited as:
+@article{weng2017infotheory, title = "Anatomize Deep Learning with Information Theory", author = "Weng, Lilian", journal = "lilianweng.github.io", year = "2017", url = "https://lilianweng.github.io/posts/2017-09-28-information-bottleneck/" } References [1] Naftali Tishby. Information Theory of Deep Learning
+[2] Machine Learning Theory - Part 1: Introduction
+[3] Machine Learning Theory - Part 2: Generalization Bounds
+[4] New Theory Cracks Open the Black Box of Deep Learning by Quanta Magazine.
+[5] Naftali Tishby and Noga Zaslavsky. “Deep learning and the information bottleneck principle.” IEEE Information Theory Workshop (ITW), 2015.
+[6] Ravid Shwartz-Ziv and Naftali Tishby. “Opening the Black Box of Deep Neural Networks via Information.” arXiv preprint arXiv:1703.00810, 2017.
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":24531,"paragraph_count":84,"sentence_count":198,"boilerplate_hits":0,"symbol_ratio":0.0144,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   &lt;!-- This post is a summary of Prof Naftali Tishby&#39;s recent talk on &#34;Information Theory in Deep Learning&#34;. It presented how to apply the information theory to study the growth and transformation of deep neural networks during training. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;Professor Naftali Tishby passed away in 2021. Hope the post can introduce his cool idea of information bottleneck to more people.&lt;/span&gt;&lt;/p&gt; &lt;p&gt;Recently I watched the talk &lt;a hr
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Anatomize Deep Learning with Information Theory Professor Naftali Tishby passed away in 2021.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Hope the post can introduce his cool idea of information bottleneck to more people.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Recently I watched the talk &ldquo;Information Theory in Deep Learning&rdquo; by Prof Naftali Tishby and found it very interesting.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   He presented how to apply the information theory to study the growth and transformation of deep neural networks during training.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Using the Information Bottleneck (IB) method, he proposed a new learning bound for deep neural networks (DNN), as the traditional learning theory fails due to the exponentially large number of parameters.
+
+## business_elements
+
+- companies: Lilian Weng's Blog (OpenAI), GitHub
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 39, 34, 2021, 1, 2015, 2, 50, 400
+- quotes: Information Theory in Deep Learning / memoryless / Markov Property / amount of information / successive refinement of relevant information
+
+## evidence_seed
+
+- company_actions: &lt;!-- This post is a summary of Prof Naftali Tishby&#39;s recent talk on &#34;Information Theory in Deep Learning&#34;. It presented how to apply the information theory to study the growth and transformation of deep neural networks during training. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;Professor Naftali Tishby passed away in 2021. Hope the post can introduce his cool idea of information bottleneck to more people.&lt;/span&gt;&lt;/p&gt; &lt;p&gt;Recently I watched the talk &lt;a hr / Anatomize Deep Learning with Information Theory Professor Naftali Tishby passed away in 2021. / Hope the post can introduce his cool idea of information bottleneck to more people.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals:
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+&lt;!-- This post is a summary of Prof Naftali Tishby&#39;s recent talk on &#34;Information Theory in Deep Learning&#34;. It presented how to apply the information theory to study the growth and transformation of deep neural networks during training. --&gt; &lt;p&gt;&lt;span class=&#34;update&#34;&gt;Professor Naftali Tishby passed away in 2021. Hope the post can introduce his cool idea of information bottleneck to more people.&lt;/span&gt;&lt;/p&gt; &lt;p&gt;Recently I watched the talk &lt;a hr
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -103,6 +103,13 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Fail when an FDE lens title is rewritten into a boss-facing summary instead of a literal source-title translation.
     - Fail when a lens-only item is displayed but omitted from the public payload used by the detail modal.
 
+22. `supervision_data_publication_precedence`
+    - Pass when daily supervision first checks same-date Business data health: activeDate matches the production date, public Top10 count is exactly 10, signal Card files are at least 10, `intelligence-graph-index.json` exists, and Business frontstage / monitor gates pass.
+    - Pass when `frontstageSelection.supplyConstrained=true` is downgraded to a warning if Top10 count is 10 and gates pass.
+    - Pass when a failed latest Business Signals workflow after healthy same-date data is classified as publication / branch / PR repair only.
+    - Pass when local dirty workspace / Obsidian sync warnings are kept separate from Business data-generation status.
+    - Fail when supervision asks for a blind Raw / Pool / Card rerun only because the latest workflow run is red, while same-date data and gates are already healthy.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.

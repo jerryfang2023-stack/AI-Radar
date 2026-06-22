@@ -1,4 +1,4 @@
-status: open
+status: resolved
 priority: normal
 lane: skill_ops
 category: obsidian_sync
@@ -7,7 +7,12 @@ report_path: agent-workflow/reports/2026-06-17-daily-supervision-report.md
 data_generated: not_applicable
 needed_action: repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror
 created_at: 2026-06-17T11:19:15+08:00
-updated_at: 2026-06-17T11:19:15+08:00
+updated_at: 2026-06-21T13:37:15+08:00
+resolved_at: 2026-06-21T13:37:15+08:00
+resolver: codex
+fix_commit: pending
+validation: npm run check:skill-ops
+prevention_added: gate
 source: hermes-auto
 
 # Hermes Repair Request: Skill Ops Governance
@@ -31,3 +36,10 @@ source: hermes-auto
 ## User Escalation Needed
 
 - no, unless Codex needs GitHub permission, login state, or business judgment.
+
+## Resolution - 2026-06-21T13:37:15+08:00
+
+- fix_commit: pending
+- validation: npm run check:skill-ops
+- prevention_added: gate
+- notes: Current Skill Ops governance check passes with registry current, skill-store drift 0, eval/examples coverage 100%; closing stale drift inbox.

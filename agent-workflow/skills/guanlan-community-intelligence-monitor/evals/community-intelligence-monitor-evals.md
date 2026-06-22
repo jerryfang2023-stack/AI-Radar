@@ -44,6 +44,13 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
    - Pass when Saturday / Sunday failures are diagnosed from actual item and link counts before lowering gates.
    - Fail when weekend is used as the explanation despite same-date data meeting the 12 item / 3 link floors.
 
+13. `publication_evidence_precedence`
+   - Pass when supervision checks same-date community data and gate health before treating Windows scheduled task `LastTaskResult` as blocking.
+   - Pass when non-zero `LastTaskResult` is only a warning if same-date data, archive outputs, and gate are healthy.
+   - Pass when a merged same-date community PR is accepted as publication evidence even if the latest `daily-community-intelligence-pr.yml` run is red.
+   - Pass when a red publish workflow after healthy local data is routed to publish workflow / PR repair only.
+   - Fail when GitHub publish failure causes browser recollection, or when stale daily supervision reports remain open after a later same-date gate passes.
+
 ## Repair Loop
 
 When a check fails, repair the local collection, archive, gate, or publisher path. Do not treat local collection success as complete publication until the community PR reaches `main` and Pages deploys when required.

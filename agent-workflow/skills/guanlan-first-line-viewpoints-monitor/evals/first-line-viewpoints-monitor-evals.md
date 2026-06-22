@@ -61,6 +61,12 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Fail when a `stale info` / `force-with-lease` rejection after a deleted remote automation branch is classified as feed failure.
     - Fail when the publish report says the feed/archive output is healthy but also contains `publish_status: failed`, and Hermes or Codex still reports the afternoon lane as fully complete.
 
+16. `local_data_precedence_in_supervision`
+    - Pass when daily supervision treats same-date `follow-builders-daily.json`, remarks / builders floors, and a passed follow-builders data gate as sufficient public-lane health.
+    - Pass when missing or unavailable GitHub workflow state is only an observability warning while local same-date data and gate are healthy.
+    - Pass when a stale Hermes inbox generated before local repair is resolved or regenerated after the newer same-date gate passes.
+    - Fail when supervision dispatches `.github/workflows/daily-first-line-viewpoints-pr.yml` only because no same-date GitHub run exists, while local same-date data and the data gate already pass.
+
 ## Repair Loop
 
 When a check fails, repair the builder data source, build script, gate, or timeline sync path. Do not unblock the lane by weakening translation, source URL, or idempotency requirements.
