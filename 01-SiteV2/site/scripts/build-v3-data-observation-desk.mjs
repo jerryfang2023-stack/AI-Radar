@@ -2231,17 +2231,10 @@ function isLargeVendorCard(card = {}) {
   return Boolean(largeVendorKeyForCard(card));
 }
 
-function sourceLevelScore(level = "") {
-  if (level === "S") return 12;
-  if (level === "A") return 8;
-  if (level === "B") return 4;
-  return 0;
-}
-
 function frontstageImportanceScore(card = {}) {
   const importance = Number(card.importanceScore) || 0;
   const tags = new Set(card.flatTags || []);
-  let score = importance * 100 + sourceLevelScore(card.sourceLevel);
+  let score = importance * 100;
   if (card.category === "funding") score += 24;
   if (card.category === "case") score += 18;
   if (card.category === "product-service") score += 8;
@@ -2317,7 +2310,7 @@ function hasSourceBackedFrontstageFact(card = {}) {
 }
 
 function frontstageEvidenceScore(card = {}) {
-  let score = sourceLevelScore(card.sourceLevel);
+  let score = 0;
   if (isSubstantiveSourceFragment(card.translatedFact)) score += 28;
   if ((card.originalHighlights || []).some(isSubstantiveSourceFragment)) score += 22;
   if (isSubstantiveSourceFragment(card.visibleFragment)) score += 16;

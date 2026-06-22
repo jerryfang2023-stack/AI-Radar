@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-21T09:12:01.000Z"
-collected_at: 2026-06-22T03:38:47.285Z
+collected_at: 2026-06-22T03:45:56.248Z
 language: mixed
 full_text_hash: 8c8a02e1ccab29e1
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-035-sam-altman-称一代研究者因低估-scaling-能力而阻碍-ai-发展.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: supporting_evidence
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Sam Altman 称一代研究者因低估 scaling 能力而阻碍 AI 发展","discovery_summary":"OpenAI CEO Sam Altman 继续押注大语言模型的规模扩展，批评一代研究者过于自信地认为 scaling 行不通。在斯坦福回应 Yann LeCun 等批评者时，Altman 表示有些人将身份与立场绑定，即便数据证明他们错了也不愿放手。他指出 LLMs 已在某些领域超越人类智能，如 OpenAI 模型推翻了一个长期困扰数学家的猜想。但对于需要高判断力的长期复杂任务，LLMs 仍远不如人类。Anthropic CEO Dario Amodei 近期也表达了类似看法。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/sam-altman-says-a-whole-generation-of-researchers-held-ai-back-by-underestimating-what-scaling-could-do","discovered_at":"2026-06-22T03:05:13.685Z","rank_on_page":114,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Sam Altman 称一代研究者因低估 scaling 能力而阻碍 AI 发展","discovery_summary":"OpenAI CEO Sam Altman 继续押注大语言模型的规模扩展，批评一代研究者过于自信地认为 scaling 行不通。在斯坦福回应 Yann LeCun 等批评者时，Altman 表示有些人将身份与立场绑定，即便数据证明他们错了也不愿放手。他指出 LLMs 已在某些领域超越人类智能，如 OpenAI 模型推翻了一个长期困扰数学家的猜想。但对于需要高判断力的长期复杂任务，LLMs 仍远不如人类。Anthropic CEO Dario Amodei 近期也表达了类似看法。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/sam-altman-says-a-whole-generation-of-researchers-held-ai-back-by-underestimating-what-scaling-could-do","discovered_at":"2026-06-22T03:32:56.699Z","rank_on_page":118,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 8c8a02e1ccab29e1
 semantic_hash: a41dd03746b8859d
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-21T09:12:01.000Z"
-last_seen_at: 2026-06-22T03:38:47.285Z
+last_seen_at: 2026-06-22T03:45:56.248Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":true,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -222,7 +222,7 @@ Insert
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Sam Altman 称一代研究者因低估 scaling 能力而阻碍 AI 发展","discovery_summary":"OpenAI CEO Sam Altman 继续押注大语言模型的规模扩展，批评一代研究者过于自信地认为 scaling 行不通。在斯坦福回应 Yann LeCun 等批评者时，Altman 表示有些人将身份与立场绑定，即便数据证明他们错了也不愿放手。他指出 LLMs 已在某些领域超越人类智能，如 OpenAI 模型推翻了一个长期困扰数学家的猜想。但对于需要高判断力的长期复杂任务，LLMs 仍远不如人类。Anthropic CEO Dario Amodei 近期也表达了类似看法。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/sam-altman-says-a-whole-generation-of-researchers-held-ai-back-by-underestimating-what-scaling-could-do","discovered_at":"2026-06-22T03:05:13.685Z","rank_on_page":114,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Sam Altman 称一代研究者因低估 scaling 能力而阻碍 AI 发展","discovery_summary":"OpenAI CEO Sam Altman 继续押注大语言模型的规模扩展，批评一代研究者过于自信地认为 scaling 行不通。在斯坦福回应 Yann LeCun 等批评者时，Altman 表示有些人将身份与立场绑定，即便数据证明他们错了也不愿放手。他指出 LLMs 已在某些领域超越人类智能，如 OpenAI 模型推翻了一个长期困扰数学家的猜想。但对于需要高判断力的长期复杂任务，LLMs 仍远不如人类。Anthropic CEO Dario Amodei 近期也表达了类似看法。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/sam-altman-says-a-whole-generation-of-researchers-held-ai-back-by-underestimating-what-scaling-could-do","discovered_at":"2026-06-22T03:32:56.699Z","rank_on_page":118,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

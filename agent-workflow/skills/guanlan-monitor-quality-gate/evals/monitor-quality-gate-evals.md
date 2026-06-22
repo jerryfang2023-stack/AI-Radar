@@ -16,8 +16,8 @@ Run these pass/fail checks when editing or using the WaveSight AI monitor qualit
 4. `source_path_logging`
    - Pass when the handoff includes source distribution, source level distribution, Raw count by source type, keyword path distribution, failed sources, fallback used, and evidence gaps.
 
-5. `discovery_not_fact_source`
-   - Pass when M-level acquisition channels are not counted as fact source levels.
+5. `source_labels_traceability_only`
+   - Pass when `source_level` and `acquisition_source_level` are logged for traceability but are not used as hard gates, ranking boosts, ranking penalties, or automatic downgrade reasons.
 
 6. `semantic_gap_escalation`
    - Pass when suspicious homepage, directory, search-result, marketplace, or generic tool pages are handed to `guanlan-daily-monitor-qc` instead of being auto-approved.

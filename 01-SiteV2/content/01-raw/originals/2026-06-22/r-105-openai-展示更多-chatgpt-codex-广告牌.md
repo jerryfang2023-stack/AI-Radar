@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-21T23:45:47.000Z"
-collected_at: 2026-06-22T03:38:47.654Z
+collected_at: 2026-06-22T03:45:56.557Z
 language: mixed
 full_text_hash: 3721c3359025cff0
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-105-openai-展示更多-chatgpt-codex-广告牌.md"
@@ -45,7 +45,7 @@ capture_scope: aihot_visible_text
 visible_range: "仅保留采集通道当时可见文本，未抓到原页面正文"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"OpenAI 展示更多 ChatGPT Codex 广告牌","discovery_summary":"很高兴看到 OpenAI 推出更多 ChatGPT Codex 广告牌。","source_name":"X：Jason Liu (@jxnlco)","origin_url":"https://x.com/jxnlco/status/2068842849794453905","discovered_at":"2026-06-22T03:05:13.664Z","rank_on_page":29,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"OpenAI 展示更多 ChatGPT Codex 广告牌","discovery_summary":"很高兴看到 OpenAI 推出更多 ChatGPT Codex 广告牌。","source_name":"X：Jason Liu (@jxnlco)","origin_url":"https://x.com/jxnlco/status/2068842849794453905","discovered_at":"2026-06-22T03:32:56.630Z","rank_on_page":33,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "timeout"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 3721c3359025cff0
 semantic_hash: 77b6f5e517df257e
 duplicate_of: ""
 first_seen_at: "2026-06-21T23:45:47.000Z"
-last_seen_at: 2026-06-22T03:38:47.654Z
+last_seen_at: 2026-06-22T03:45:56.557Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -170,7 +170,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: timeout
-- discovery_record: {"discovery_title":"OpenAI 展示更多 ChatGPT Codex 广告牌","discovery_summary":"很高兴看到 OpenAI 推出更多 ChatGPT Codex 广告牌。","source_name":"X：Jason Liu (@jxnlco)","origin_url":"https://x.com/jxnlco/status/2068842849794453905","discovered_at":"2026-06-22T03:05:13.664Z","rank_on_page":29,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"OpenAI 展示更多 ChatGPT Codex 广告牌","discovery_summary":"很高兴看到 OpenAI 推出更多 ChatGPT Codex 广告牌。","source_name":"X：Jason Liu (@jxnlco)","origin_url":"https://x.com/jxnlco/status/2068842849794453905","discovered_at":"2026-06-22T03:32:56.630Z","rank_on_page":33,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

@@ -20,7 +20,7 @@ search_path: "fde_implementation"
 search_path_label: "Enterprise AI / FDE implementation path"
 author: ""
 published_at: ""
-collected_at: 2026-06-22T03:38:47.418Z
+collected_at: 2026-06-22T03:45:56.314Z
 language: mixed
 full_text_hash: 0b54bec326aeb4d4
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-051-ai-forward-deployed-engineer-vs-ai-engineer-roles-linkedin.md"
@@ -55,8 +55,8 @@ url_hash: b5295c15d27c16e0
 content_hash: 0b54bec326aeb4d4
 semantic_hash: d4f2fc27a178b566
 duplicate_of: ""
-first_seen_at: "2026-06-22T03:38:47.418Z"
-last_seen_at: 2026-06-22T03:38:47.418Z
+first_seen_at: "2026-06-22T03:45:56.314Z"
+last_seen_at: 2026-06-22T03:45:56.314Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}

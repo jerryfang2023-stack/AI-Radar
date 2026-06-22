@@ -116,7 +116,8 @@ FDE / Applied AI / Technical Deployment role pages are organization-capability s
 Signal Card entry gate is expressed as six required gates. Do not re-expand these into scattered top-level field blockers:
 
 1. `source_auditability`
-   - Must have an original source URL, a resolved original-source role rather than a discovery/search entrance, and source level `S` / `A` / `B`.
+   - Must have an original source URL and a resolved original-source role rather than a discovery/search entrance.
+   - `source_level` / `acquisition_source_level` (`S` / `A` / `B` / `C` / `M`) are traceability labels only; they must not be used as Card eligibility gates, core_pool gates, ranking boosts, ranking penalties, or automatic downgrade reasons.
    - Cannot be deleted because downstream facts, Top 10, relationship graph, and trend candidates must be traceable to an auditable source.
 
 2. `evidence_quality`

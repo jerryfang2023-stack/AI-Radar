@@ -20,7 +20,7 @@ search_path: "official_original"
 search_path_label: "官方原始路径"
 author: ""
 published_at: ""
-collected_at: 2026-06-22T03:38:47.430Z
+collected_at: 2026-06-22T03:45:56.320Z
 language: mixed
 full_text_hash: e967a946c5a7b30a
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-053-introducing-gemini-enterprise-agent-platform-google-cloud-blog.md"
@@ -55,8 +55,8 @@ url_hash: 3728f8bff806edab
 content_hash: e967a946c5a7b30a
 semantic_hash: 760eee427b525e4b
 duplicate_of: ""
-first_seen_at: "2026-06-22T03:38:47.430Z"
-last_seen_at: 2026-06-22T03:38:47.430Z
+first_seen_at: "2026-06-22T03:45:56.320Z"
+last_seen_at: 2026-06-22T03:45:56.320Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}

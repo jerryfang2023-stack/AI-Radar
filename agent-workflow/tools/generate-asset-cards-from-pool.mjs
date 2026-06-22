@@ -1031,9 +1031,6 @@ function corePoolSemanticIssues(section) {
   if (/index_only_or_directory_page/iu.test(degradationReasons)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "degradation_reason_index_only"));
   }
-  if (/discovery_or_feedback_source_boundary/iu.test(degradationReasons)) {
-    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "degradation_reason_feedback_or_discovery"));
-  }
   if (/官网首页|产品目录|文档目录|README|包页|模型页|搜索结果|SEO|工具导航|目录页|首页|category page|directory|search result/iu.test(text)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "text_indicates_index_only"));
   }
@@ -1398,15 +1395,11 @@ function uniqueIssues(issues = []) {
 function autoSignalEligibilityIssues(section) {
   const issues = [...corePoolSemanticIssues(section)];
   const sourceUrl = value(section, "source_url");
-  const sourceLevel = value(section, "source_level");
   const importanceType = value(section, "importance_type");
   const text = `${poolTitle(section)} ${sourceUrl} ${value(section, "source_type")}`;
   const directFundingProof =
     importanceType === "important_funding"
     && /Announcing\b.{0,140}\$ ?\d+(?:\.\d+)?\s?(?:M|B|million|billion)\b.{0,100}\b(?:pre-seed|seed|series\s+[a-z])\b.{0,120}\bled by\b/iu.test(textForInference(section));
-  if (!/^(S|A|B)$/u.test(sourceLevel)) {
-    issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, `source_level_not_sab:${sourceLevel || "missing"}`));
-  }
   if (inferSignalType(section) === "funding" && importanceType === "important_funding" && !isSingleCompanyFundingSignal(section) && !directFundingProof) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "funding_not_single_company_round"));
   }

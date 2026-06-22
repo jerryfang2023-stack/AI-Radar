@@ -60,11 +60,10 @@ const titleForSignal = (signal = {}) => cleanText(
 
 const signalScore = (signal = {}, index = 0) => {
   const rawScore = Number(signal.importanceScore || signal.rawImportanceScore || signal.poolScore || 0);
-  const sourceScore = { S: 8, A: 6, B: 4, C: 2 }[String(signal.sourceLevel || signal.frontend?.sourceLinks?.[0]?.level || "").toUpperCase()] || 3;
   const typeScore = signal.signalType === "case" ? 4 : signal.signalType === "funding" ? 3 : 2;
   const tagScore = Math.min(4, (signal.tags || []).length);
   const base = rawScore ? 62 + rawScore * 5 : 66;
-  return Math.max(60, Math.min(98, Math.round(base + sourceScore + typeScore + tagScore - index)));
+  return Math.max(60, Math.min(98, Math.round(base + typeScore + tagScore - index)));
 };
 
 const tagNames = (item = {}, group, limit = 2) => (item.tags || [])

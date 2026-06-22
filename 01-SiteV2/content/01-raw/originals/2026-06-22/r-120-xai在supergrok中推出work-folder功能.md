@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-21T15:08:38.000Z"
-collected_at: 2026-06-22T03:38:47.687Z
+collected_at: 2026-06-22T03:45:56.605Z
 language: mixed
 full_text_hash: da1160a4c7b40235
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-120-xai在supergrok中推出work-folder功能.md"
@@ -34,7 +34,7 @@ readability_score: 0
 extractor_diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
 has_full_text: false
 content_length: 38
-fetch_error: "fetch failed (code=UND_ERR_CONNECT_TIMEOUT)"
+fetch_error: "The operation was aborted due to timeout"
 raw_qc_decision: block
 raw_qc_downstream_use: not_allowed
 degradation_reasons: ["missing_full_text","missing_snapshot","discovery_or_feedback_source_boundary"]
@@ -45,7 +45,7 @@ capture_scope: aihot_visible_text
 visible_range: "仅保留采集通道当时可见文本，未抓到原页面正文"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"xAI在SuperGrok中推出Work Folder功能","discovery_summary":"最新XAI增加了一个work folder，在SuperGrok就可以看到。","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2068712706270748813","discovered_at":"2026-06-22T03:05:13.676Z","rank_on_page":77,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"xAI在SuperGrok中推出Work Folder功能","discovery_summary":"最新XAI增加了一个work folder，在SuperGrok就可以看到。","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2068712706270748813","discovered_at":"2026-06-22T03:32:56.675Z","rank_on_page":81,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "timeout"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: da1160a4c7b40235
 semantic_hash: b4c4c61c24ae3223
 duplicate_of: ""
 first_seen_at: "2026-06-21T15:08:38.000Z"
-last_seen_at: 2026-06-22T03:38:47.687Z
+last_seen_at: 2026-06-22T03:45:56.605Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -170,7 +170,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: timeout
-- discovery_record: {"discovery_title":"xAI在SuperGrok中推出Work Folder功能","discovery_summary":"最新XAI增加了一个work folder，在SuperGrok就可以看到。","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2068712706270748813","discovered_at":"2026-06-22T03:05:13.676Z","rank_on_page":77,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"xAI在SuperGrok中推出Work Folder功能","discovery_summary":"最新XAI增加了一个work folder，在SuperGrok就可以看到。","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2068712706270748813","discovered_at":"2026-06-22T03:32:56.675Z","rank_on_page":81,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

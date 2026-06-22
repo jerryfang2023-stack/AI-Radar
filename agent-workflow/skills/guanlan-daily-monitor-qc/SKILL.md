@@ -30,7 +30,7 @@ Audit only monitoring quality:
 - Pool routing correctness.
 - Full-text and snapshot integrity.
 - Source level and discovery-channel separation.
-- S/A overseas first-line source coverage.
+- source-backed original evidence coverage.
 - Keyword monitoring path coverage.
 - Whether downstream tasks may proceed, downgrade, or pause.
 
@@ -55,13 +55,13 @@ For self-improvement and regression prevention, read `evals/daily-monitor-qc-eva
 
 Read these only when a finding depends on the detail:
 
-- `agent-workflow/product/source-intelligence.md` for source level, source pool, or S/A/B judgment when current context does not settle the question.
+- `agent-workflow/product/source-intelligence.md` for historical source-label reference only when current context does not settle the question.
 - `agent-workflow/product/raw-evidence-schema.md` for Raw field, full text, snapshot, or hash judgment when schema details are needed.
 - `agent-workflow/product/pool-routing-rules.md` for route, downgrade, `core_pool`, or `index_only` judgment only when it does not conflict with current V3 context.
 - `01-SiteV2/content/README.md` for directory or write-path judgment.
 - `source-registry-v2.json`, `keyword-monitoring-v2.json`, and `monitor-quality-gate-v2.json` for executable configuration conflicts.
 
-This skill is stricter than a numeric pass alone. A run can have a high score and still be blocked if it uses low-value pages as core evidence or lacks S/A source coverage for its main topics.
+This skill is stricter than a numeric pass alone. A run can have a high score and still be blocked if it uses low-value pages as core evidence or lacks source-backed original evidence coverage for its main topics.
 
 ## Inputs To Inspect
 
@@ -85,7 +85,7 @@ The run is useful only when it captures real evidence that can support business 
 
 - Raw must preserve readable full text or a clearly marked fallback.
 - Pool must not replace Raw.
-- M-level discovery channels must be traced back to original sources.
+- Discovery channels must be traced back to original sources before their claims are used as facts.
 - Core materials must show an actual change, action, adoption, funding, release, policy, customer movement, pricing change, workflow impact, or market signal.
 - Homepages, directory pages, login pages, generic product pages and search-result pages are indexes, not business signals.
 
@@ -98,11 +98,11 @@ If any P0 item is triggered, mark the run `blocked` and stop downstream card/art
 1. Active Raw count is below 150 unless the run is explicitly marked blocked.
 2. Pool has fewer than 75 items, fewer than 60 routed items, or fewer than 30 usable `core_pool` items unless the run is explicitly marked blocked.
 3. More than 20% of `core_pool` candidates lack usable `full_text`, readable snapshot, or `full_text_hash`.
-4. Any frontstage candidate lacks `source_url`, Raw archive path, Raw JSON path, `source_level`, `has_full_text`, `extraction_quality`, or `usable_for`.
+4. Any frontstage candidate lacks `source_url`, Raw archive path, Raw JSON path, `has_full_text`, `extraction_quality`, or `usable_for`.
 5. A company homepage, open-platform homepage, product directory, docs directory, console/login page, tool navigation page, search-result page, app-store listing, Baidu official page, or generic tool vendor page is routed as `core_pool` without a concrete new event.
 6. AI HOT, follow-builders, HN, X, Reddit, newsletter, RSS or search aggregation text is used as fact主证据 without original-source capture.
-7. The day's leading themes have no S/A overseas first-line source coverage.
-8. Keyword monitoring path is missing, empty, or only contains community/aggregator results when the day has enough public material.
+7. The day's leading themes have no source-backed original evidence coverage.
+8. Keyword monitoring path is missing, empty, or only contains unresolved discovery/aggregator results when the day has enough public material.
 9. `source_distribution`, `failed_sources`, `fallback_used`, `evidence_gaps`, `raw_count_by_source_type`, or `source_level_distribution` is missing from the monitor log.
 10. The run reports success while downstream-worthy Raw is mostly Chinese official homepages, tool homepages, product indexes, SEO pages, or low-information summaries.
 
@@ -110,7 +110,6 @@ If any P0 item is triggered, mark the run `blocked` and stop downstream card/art
 
 The run may continue only after repair or with explicit downgrade notes:
 
-- S/A/B source ratio is weak for core topics.
 - `core_pool` contains items with vague titles and no business action.
 - `index_only` materials are over-promoted to Pool.
 - AI HOT source items are present but original URLs were not fetched.
@@ -122,17 +121,19 @@ The run may continue only after repair or with explicit downgrade notes:
 
 ## Source Quality Rules
 
+Current rule: `source_level` / `acquisition_source_level` are traceability labels only. They must not be used as `core_pool` gates, Card gates, ranking boosts, ranking penalties, or automatic downgrade reasons. A candidate enters `core_pool` only through content and original-evidence checks: original URL, readable full text, hash/excerpt, non-index page type, Raw QC `allow`, concrete business evidence, and relevance.
+
 Treat channels separately from facts:
 
 | Type | Examples | QC Rule |
 |---|---|---|
-| S | Official release/blog/docs with a specific update, SEC/regulatory filing, first-party research, company earnings, primary source transcript | Can be core evidence if it contains a concrete change and full text is saved |
-| A | Reuters, Bloomberg, FT, WSJ, The Information, TechCrunch, VentureBeat, CNBC, Axios, Sifted, top analyst/research sources | Strong supporting or core evidence after full text / snapshot capture |
-| B | VC post, funding database, Product Hunt, GitHub repo, vertical newsletter, ecosystem report | Useful supporting evidence; frontstage core claims often need S/A support |
-| C/D | Low-signal media, SEO page, repost, forum rumor, tool directory, weak blog | Watchlist or supporting only |
+| S | Official release/blog/docs with a specific update, SEC/regulatory filing, first-party research, company earnings, primary source transcript | Historical label only; can be core evidence only if content and original-evidence gates pass |
+| A | Reuters, Bloomberg, FT, WSJ, The Information, TechCrunch, VentureBeat, CNBC, Axios, Sifted, top analyst/research sources | Historical label only; can be core evidence only if content and original-evidence gates pass |
+| B | VC post, funding database, Product Hunt, GitHub repo, vertical newsletter, ecosystem report | Historical label only; frontstage core claims need source-backed original evidence |
+| C/D | Low-signal media, SEO page, repost, forum rumor, tool directory, weak blog | Historical label only; do not auto-downgrade if content and original-evidence gates pass |
 | M | AI HOT, follow-builders, HN, X, Reddit, RSS, search aggregator | Discovery only; must回源 before factual use |
 
-Important: `M` belongs in `acquisition_source_level`, not `source_level`. A discovery channel cannot become a fact source by being popular.
+Important: `M` belongs in `acquisition_source_level`, not `source_level`; neither label decides fact eligibility. A discovery channel can support factual use only after original evidence is captured.
 
 ## Page-Type Routing Rules
 
@@ -179,7 +180,7 @@ Downstream core use requires:
 ```text
 has_full_text = true
 extraction_quality = high | medium
-source_level = S | A | B
+source_url exists
 clear business change
 ```
 
@@ -189,13 +190,13 @@ Check whether the day used the three monitoring lanes:
 
 1. AI HOT recent 24h / all-mode as discovery.
 2. follow-builders full daily scan as viewpoint/frontier signal intake.
-3. Keyword monitoring and web search for S/A/B evidence and topic coverage.
+3. Keyword monitoring and web search for source-backed original evidence and topic coverage.
 
 Do not force equal proportions. follow-builders may only provide around 15 useful items per day because the builder set is limited. The QC target is coverage quality, not a fixed percentage.
 
 The audit must identify:
 
-- Missing high-value overseas S/A sources.
+- Missing high-value source-backed original evidence.
 - Missing official product/release sources.
 - Missing A-grade media or analyst/research sources.
 - Missing developer/research ecosystem sources when the day's topic is technical.
@@ -210,7 +211,7 @@ Use a 100-point score. Passing requires score `>= 85` and no P0 blockers.
 |---|---:|
 | Raw count and acquisition completeness | 10 |
 | Full-text / snapshot / hash integrity | 20 |
-| S/A/B source quality and overseas first-line coverage | 20 |
+| Original-evidence quality and cross-source coverage | 20 |
 | Relevance and business-signal density | 15 |
 | Discovery-channel separation and回源 compliance | 10 |
 | Keyword path and source diversity coverage | 10 |
@@ -233,10 +234,10 @@ Any P0 makes the result `blocked` regardless of score.
 
 1. Count Raw, Pool, source types, source levels, and routes.
 2. Sample all `core_pool` and all frontstage candidates; if too many, inspect at least the highest-priority 20 plus all suspicious homepage/tool/directory items.
-3. Check `full_text`, snapshot, JSON evidence, hash, source URL, origin URL, extraction quality, source level and usable routes.
+3. Check `full_text`, snapshot, JSON evidence, hash, source URL, origin URL, extraction quality and usable routes.
 4. Identify materials that should be downgraded to `index_only`, `watchlist`, `discovery_only`, or `discard`.
 5. Verify AI HOT / follow-builders / HN / X / Reddit items回源 to original sources before factual use.
-6. Verify overseas S/A first-line coverage for the day's main themes.
+6. Verify source-backed original evidence coverage for the day's main themes.
 7. Verify keyword-monitoring coverage and any fallback reasons.
 8. Decide downstream permission.
 9. Output a Markdown QC report.
@@ -270,9 +271,8 @@ Use this structure:
 | Pool count |  | >=75 total / >=60 routed |  |
 | Core pool count |  | >=30 usable `core_pool` |  |
 | Raw with full_text |  | >= 80% overall, >= 90% core |  |
-| Core S/A/B count |  | sufficient for main themes |  |
-| S/A overseas first-line coverage |  | required for main themes |  |
-| M-source-only core items |  | 0 |  |
+| Core original-evidence count |  | sufficient for main themes |  |
+| Source-backed original evidence coverage |  | required for main themes |  |
 | Homepage/directory core items |  | 0 |  |
 
 ## 3. Hard Gates
@@ -292,7 +292,7 @@ Use this structure:
 
 ## 6. Source Coverage
 
-| Theme | Current Sources | Missing S/A Sources | Search / Refetch Needed |
+| Theme | Current Sources | Missing Original Evidence | Search / Refetch Needed |
 |---|---|---|---|
 
 ## 7. Misclassified Core Materials
@@ -330,7 +330,7 @@ When blocked, require one or more actions:
 - Replace AI HOT/follow-builders summary with original source Raw.
 - Downgrade homepage/tool/directory/search-result materials to `index_only`.
 - Delete or quarantine duplicate/noise Raw entries.
-- Add S/A overseas first-line sources for the main theme.
+- Add source-backed original evidence for the main theme.
 - Add official release/blog/docs when available.
 - Add A-grade media or research sources when official sources are insufficient.
 - Rerun keyword monitoring for missing groups.
@@ -344,7 +344,7 @@ Use precise decisions:
 
 ```text
 allow: Raw / Pool quality is sufficient for downstream tasks.
-allow_with_degradation: downstream may proceed only using listed S/A/B items; blocked items must be ignored.
+allow_with_degradation: downstream may proceed only using listed source-backed original-evidence items; blocked items must be ignored.
 block: downstream Signal Cards, relationship graph inputs, trend candidates, and Business Signals frontstage data must pause until repair.
 ```
 

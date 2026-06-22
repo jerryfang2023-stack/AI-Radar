@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-21T07:44:00.000Z"
-collected_at: 2026-06-22T03:38:47.682Z
+collected_at: 2026-06-22T03:45:56.600Z
 language: mixed
 full_text_hash: 3d91b1fad9eca4a8
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-118-gpt-5-6-与-seedance-2-1-下周发布.md"
@@ -45,7 +45,7 @@ capture_scope: aihot_visible_text
 visible_range: "仅保留采集通道当时可见文本，未抓到原页面正文"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"GPT-5.6 与 Seedance 2.1 下周发布","discovery_summary":"下一周估计有几个好玩的事儿吧？ 1️⃣ GPT-5.6 发布 2️⃣ Seedance 2.1 发布 还有什么模型要发布的，然后就看到一堆视频、模型中转站的宣发了😈","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2068600811601691055","discovered_at":"2026-06-22T03:05:13.686Z","rank_on_page":120,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"GPT-5.6 与 Seedance 2.1 下周发布","discovery_summary":"下一周估计有几个好玩的事儿吧？ 1️⃣ GPT-5.6 发布 2️⃣ Seedance 2.1 发布 还有什么模型要发布的，然后就看到一堆视频、模型中转站的宣发了😈","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2068600811601691055","discovered_at":"2026-06-22T03:32:56.704Z","rank_on_page":124,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "timeout"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 3d91b1fad9eca4a8
 semantic_hash: d85de49de5afabf9
 duplicate_of: ""
 first_seen_at: "2026-06-21T07:44:00.000Z"
-last_seen_at: 2026-06-22T03:38:47.682Z
+last_seen_at: 2026-06-22T03:45:56.600Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -176,7 +176,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: timeout
-- discovery_record: {"discovery_title":"GPT-5.6 与 Seedance 2.1 下周发布","discovery_summary":"下一周估计有几个好玩的事儿吧？ 1️⃣ GPT-5.6 发布 2️⃣ Seedance 2.1 发布 还有什么模型要发布的，然后就看到一堆视频、模型中转站的宣发了😈","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2068600811601691055","discovered_at":"2026-06-22T03:05:13.686Z","rank_on_page":120,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"GPT-5.6 与 Seedance 2.1 下周发布","discovery_summary":"下一周估计有几个好玩的事儿吧？ 1️⃣ GPT-5.6 发布 2️⃣ Seedance 2.1 发布 还有什么模型要发布的，然后就看到一堆视频、模型中转站的宣发了😈","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2068600811601691055","discovered_at":"2026-06-22T03:32:56.704Z","rank_on_page":124,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

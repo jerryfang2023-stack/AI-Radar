@@ -20,7 +20,7 @@ search_path: "a_media_gdelt"
 search_path_label: "A 级媒体 / GDELT 路径"
 author: ""
 published_at: ""
-collected_at: 2026-06-22T03:38:47.438Z
+collected_at: 2026-06-22T03:45:56.323Z
 language: mixed
 full_text_hash: 19e406cb71983120
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-054-genpact-named-a-leader-in-isg-provider-lenstm-2026-servicenow.md"
@@ -55,8 +55,8 @@ url_hash: d442de1d20c1bec6
 content_hash: 19e406cb71983120
 semantic_hash: a836db47bf22fdb1
 duplicate_of: ""
-first_seen_at: "2026-06-22T03:38:47.438Z"
-last_seen_at: 2026-06-22T03:38:47.438Z
+first_seen_at: "2026-06-22T03:45:56.323Z"
+last_seen_at: 2026-06-22T03:45:56.323Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}

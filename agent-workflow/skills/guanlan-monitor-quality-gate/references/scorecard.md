@@ -4,20 +4,20 @@ This scorecard is the script pre-gate for `guanlan-daily-monitor`.
 
 It is not the final Raw / Pool quality decision. Final downstream permission comes from `guanlan-daily-monitor-qc`.
 
-## 1. Source Integrity
+## 1. Evidence Integrity
 
 Check:
 
-- S/A/B source ratio meets the configured floor.
-- M-level discovery channels are not counted as fact source levels.
+- Source level distribution is logged for traceability only.
+- `source_level` / `acquisition_source_level` are not used as gates, ranking signals, or downgrade reasons.
 - Non-community keyword evidence exists.
 - Failed sources and fallback paths are logged.
-- Source distribution is not dominated by one weak channel.
+- Source distribution is available for operational diagnosis, not eligibility scoring.
 
 Risk it catches:
 
-- Too many weak or community-only sources.
-- Aggregator/discovery channels inflating source quality.
+- Missing original evidence despite healthy-looking source distribution.
+- Source labels accidentally being reintroduced as quality gates.
 - Missing fallback notes.
 
 ## 2. Full-Text And Evidence Readiness

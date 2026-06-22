@@ -177,13 +177,6 @@ function isHomepageDirectoryCoreItem(item = {}) {
   return false;
 }
 
-function isMSourceOnlyCoreItem(item = {}) {
-  if (!item.routes?.includes("core_pool")) return false;
-  if (/^M$/iu.test(item.acquisitionSourceLevel) && /discovery_source/iu.test(item.sourceRole || "")) return true;
-  if (/^M$/iu.test(item.acquisitionSourceLevel) && !/success|not_applicable|^$/iu.test(item.originFetchStatus || "")) return true;
-  return false;
-}
-
 function isUsableCoreEvidenceItem(item = {}, readabilityMin = 24) {
   if (!item.routes?.includes("core_pool")) return false;
   if (item.rawQcDecision && item.rawQcDecision !== "allow") return false;
@@ -262,7 +255,6 @@ function buildDownstreamRecommendation(metrics, hardFailed) {
   if (metrics.coverageGapFlag) reasons.push("Raw importance coverage gaps remain");
   if (metrics.poolCoverageGapFlag) reasons.push("Pool importance coverage gaps remain");
   if (metrics.homepageDirectoryCoreCount > metrics.homepageDirectoryCoreMax) reasons.push("homepage/directory items promoted to core_pool");
-  if (metrics.mSourceOnlyCoreCount > metrics.mSourceOnlyCoreMax) reasons.push("discovery-entrance-only items promoted to core_pool");
   if (metrics.coreMissingFullTextCount > metrics.coreMissingFullTextMax) reasons.push("core_pool items missing full_text");
   if (metrics.coreLowReadabilityCount > metrics.coreLowReadabilityMax) reasons.push("core_pool items failed readability extraction gate");
   if (metrics.coreRawQcBlockCount > metrics.coreRawQcBlockMax) reasons.push("core_pool items blocked by Raw QC");
@@ -291,7 +283,6 @@ function buildDownstreamRecommendation(metrics, hardFailed) {
     "Raw importance coverage gaps remain",
     "Pool importance coverage gaps remain",
     "homepage/directory items promoted to core_pool",
-    "discovery-entrance-only items promoted to core_pool",
     "core_pool items missing full_text",
     "core_pool items failed readability extraction gate",
     "core_pool items blocked by Raw QC",
@@ -382,7 +373,6 @@ export function runGuanlanMonitorQualityGate({
   const coreLowReadabilityMax = Number(hard.core_low_readability_max ?? 0);
   const usableCoreEvidenceCount = corePoolItems.filter((item) => isUsableCoreEvidenceItem(item, coreReadabilityScoreMin)).length;
   const homepageDirectoryCoreCount = poolItems.filter(isHomepageDirectoryCoreItem).length;
-  const mSourceOnlyCoreCount = poolItems.filter(isMSourceOnlyCoreItem).length;
   const coreMissingFullTextCount = poolItems.filter((item) => item.routes.includes("core_pool") && !item.hasFullText).length;
   const coreLowReadabilityCount = corePoolItems.filter((item) => item.readabilityScore < coreReadabilityScoreMin).length;
   const coreRawQcBlockCount = corePoolItems.filter((item) => item.rawQcDecision === "block").length;
@@ -402,7 +392,6 @@ export function runGuanlanMonitorQualityGate({
   const corePoolMinHard = Number(hard.core_pool_min || 5);
   const usableCoreEvidenceMinHard = Number(hard.usable_core_evidence_min || corePoolMinHard);
   const homepageDirectoryCoreMax = Number(hard.homepage_directory_core_max ?? 0);
-  const mSourceOnlyCoreMax = Number(hard.m_source_only_core_max ?? 0);
   const coreMissingFullTextMax = Number(hard.core_missing_full_text_max ?? 0);
   const coreRawQcBlockMax = Number(hard.core_raw_qc_block_max ?? 0);
   const coreRawQcDegradedMax = Number(hard.core_raw_qc_degraded_max ?? 0);
@@ -457,7 +446,6 @@ export function runGuanlanMonitorQualityGate({
     { key: "core_pool_min", passed: corePoolCount >= effectiveCorePoolMinHard, value: `${corePoolCount}/${effectiveCorePoolMinHard}${weekend.active ? `; default=${corePoolMinHard}` : ""}` },
     { key: "usable_core_evidence_min", passed: usableCoreEvidenceCount >= effectiveUsableCoreEvidenceMinHard, value: `${usableCoreEvidenceCount}/${effectiveUsableCoreEvidenceMinHard}${weekend.active ? `; default=${usableCoreEvidenceMinHard}` : ""}` },
     { key: "homepage_directory_core_max", passed: homepageDirectoryCoreCount <= homepageDirectoryCoreMax, value: `${homepageDirectoryCoreCount}/${homepageDirectoryCoreMax}` },
-    { key: "m_source_only_core_max", passed: mSourceOnlyCoreCount <= mSourceOnlyCoreMax, value: `${mSourceOnlyCoreCount}/${mSourceOnlyCoreMax}` },
     { key: "core_missing_full_text_max", passed: coreMissingFullTextCount <= coreMissingFullTextMax, value: `${coreMissingFullTextCount}/${coreMissingFullTextMax}` },
     { key: "core_readability_score_min", passed: coreLowReadabilityCount <= coreLowReadabilityMax, value: `low=${coreLowReadabilityCount}/${coreLowReadabilityMax}; min=${coreReadabilityScoreMin}` },
     { key: "core_raw_qc_block_max", passed: coreRawQcBlockCount <= coreRawQcBlockMax, value: `${coreRawQcBlockCount}/${coreRawQcBlockMax}` },
@@ -545,8 +533,6 @@ export function runGuanlanMonitorQualityGate({
       poolCoverageGapFlag: poolCoverageGapFlag && !weekendPoolCoveragePassed,
       homepageDirectoryCoreCount,
       homepageDirectoryCoreMax,
-      mSourceOnlyCoreCount,
-      mSourceOnlyCoreMax,
       coreMissingFullTextCount,
       coreMissingFullTextMax,
       coreLowReadabilityCount,
@@ -581,7 +567,6 @@ export function runGuanlanMonitorQualityGate({
     importanceCoverageValue !== "none" ? `importance_coverage_gaps=${importanceCoverageValue}` : "",
     poolImportanceCoverageValue !== "none" ? `pool_importance_coverage_gaps=${poolImportanceCoverageValue}` : "",
     homepageDirectoryCoreCount ? `homepage_directory_core=${homepageDirectoryCoreCount}` : "",
-    mSourceOnlyCoreCount ? `m_source_only_core=${mSourceOnlyCoreCount}` : "",
     coreMissingFullTextCount ? `core_missing_full_text=${coreMissingFullTextCount}` : "",
     coreLowReadabilityCount ? `core_low_readability=${coreLowReadabilityCount}` : "",
     coreRawQcBlockCount ? `core_raw_qc_block=${coreRawQcBlockCount}` : "",
@@ -615,8 +600,8 @@ export function runGuanlanMonitorQualityGate({
   if (poolCoverageGapFlag && !weekendPoolCoveragePassed) {
     skillFeedback.push("Repair Pool importance coverage before downstream assets; each required importance type needs the configured Pool minimum.");
   }
-  if (homepageDirectoryCoreCount || mSourceOnlyCoreCount || coreMissingFullTextCount) {
-    skillFeedback.push("Downgrade index-only/M-source/missing-full-text core items before any downstream card or article use.");
+  if (homepageDirectoryCoreCount || coreMissingFullTextCount) {
+    skillFeedback.push("Downgrade index-only or missing-full-text core items before any downstream card or article use.");
   }
   if (coreLowReadabilityCount) {
     skillFeedback.push("Repair or downgrade core_pool items with low readability_score; full_text must be readable article/body evidence, not navigation or fallback text.");
@@ -668,7 +653,6 @@ export function runGuanlanMonitorQualityGate({
     `- usable_core_evidence_min_effective: ${effectiveUsableCoreEvidenceMinHard}`,
     `- usable_core_evidence_min_default: ${usableCoreEvidenceMinHard}`,
     `- homepage_directory_core_count: ${homepageDirectoryCoreCount}`,
-    `- m_source_only_core_count: ${mSourceOnlyCoreCount}`,
     `- core_missing_full_text_count: ${coreMissingFullTextCount}`,
     `- core_low_readability_count: ${coreLowReadabilityCount}`,
     `- core_readability_score_min: ${coreReadabilityScoreMin}`,
@@ -755,7 +739,6 @@ export function runGuanlanMonitorQualityGate({
       core_pool_count: corePoolCount,
       usable_core_evidence_count: usableCoreEvidenceCount,
       homepage_directory_core_count: homepageDirectoryCoreCount,
-      m_source_only_core_count: mSourceOnlyCoreCount,
       core_missing_full_text_count: coreMissingFullTextCount,
       core_low_readability_count: coreLowReadabilityCount,
       core_readability_score_min: coreReadabilityScoreMin,

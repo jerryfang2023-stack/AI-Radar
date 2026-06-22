@@ -1870,7 +1870,6 @@ function usableFor(item, quality, scores, excerpts) {
 function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecision = "") {
   const routes = new Set();
   const sourceRole = sourceRoleFor(item, item.snapshot || {});
-  const sourceBoundaryItem = { ...item, source_role: sourceRole };
   const gate = commercialSignalHardGate(item, item.snapshot?.text || item.summary || "", excerpts);
   const completeness = evidenceCompleteness(
     item,
@@ -1904,7 +1903,6 @@ function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecisi
     && hasRequiredEvidenceHashes
     && nonIndexEvidenceObject
     && !isGenericReportOrListItem(item)
-    && !isCommunitySource(sourceBoundaryItem)
     && !isRepositoryOrCatalogCoreBlockedItem(item)
     && !isStaleCoreCandidate(item);
   if (computedRawQcDecision === "block") {
@@ -1943,9 +1941,6 @@ function limitRoutesByDegradation(routes = [], degradationReasons = [], rawQcDec
   if (reasons.has("index_only_or_directory_page")) return ["index_only"];
   if (reasons.has("missing_full_text") || reasons.has("missing_snapshot")) {
     return [isAIHotDailySelected(item) ? "index_only" : "watchlist"];
-  }
-  if (reasons.has("discovery_or_feedback_source_boundary") && isCommunitySource(item)) {
-    return ["user_feedback_pool"];
   }
   if (reasons.has("missing_hash") || reasons.has("missing_excerpt")) {
     return routeSet.has("user_feedback_pool") ? ["user_feedback_pool"] : ["watchlist"];
@@ -2186,7 +2181,6 @@ function rawQcDecisionFor(item = {}, quality = "failed", gate = {}, completeness
   if (missing.has("missing_snapshot")) degradationReasons.push("missing_snapshot");
   if (missing.has("missing_hash")) degradationReasons.push("missing_hash");
   if (missing.has("missing_excerpt")) degradationReasons.push("missing_excerpt");
-  if ((item.acquisition_source_level || acquisitionSourceLevelFor(item)) === "M" || isCommunitySource(item)) degradationReasons.push("discovery_or_feedback_source_boundary");
 
   const hardBlock =
     !item.url

@@ -221,6 +221,7 @@ function isFresh(record) {
 }
 
 function isOfficial(record) {
+  record = { ...record, sourceLevel: "" };
   return record.sourceLevel.toUpperCase() === "S"
     || /official|官方/u.test(record.sourceType)
     || /official_original|\/official\//iu.test([record.source, record.searchPath].join(" "));

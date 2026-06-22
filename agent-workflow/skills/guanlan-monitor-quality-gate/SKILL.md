@@ -1,6 +1,6 @@
 ---
 name: guanlan-monitor-quality-gate
-description: Run or repair the WaveSight AI current V3 daily-monitor script pre-gate for automated scoring, hard thresholds, and up to 3 bounded refetch cycles. It checks Raw / Pool counts, routed Pool, core_pool depth, source distribution, S/A/B ratio, keyword paths, non-community evidence, theme concentration, and basic business relevance. It is not final QC; downstream release still requires guanlan-daily-monitor-qc.
+description: Run or repair the WaveSight AI current V3 daily-monitor script pre-gate for automated scoring, hard thresholds, and up to 3 bounded refetch cycles. It checks Raw / Pool counts, routed Pool, core_pool depth, source distribution diagnostics, keyword paths, non-community evidence, theme concentration, and basic business relevance. It is not final QC; downstream release still requires guanlan-daily-monitor-qc.
 metadata:
   guanlan:
     version: "1.0.0"
@@ -45,7 +45,7 @@ It does not answer:
 ```text
 Can downstream cards and articles use this Raw safely?
 Were homepage/tool/directory pages wrongly treated as core evidence?
-Are S/A overseas first-line sources sufficient for the day's main business themes?
+Is there sufficient source-backed original evidence for the day's main business themes?
 ```
 
 Those decisions belong to:
@@ -101,11 +101,11 @@ The monitor must reflect the current V3 production rules:
 
 - Raw-first / Evidence-first.
 - AI HOT, follow-builders, HN, X, Reddit, RSS and search aggregators are discovery channels, not fact sources.
-- Source level `S/A/B/C/D` belongs to the captured original source.
-- Acquisition channel `M` belongs to discovery routes only.
+- Source level `S/A/B/C/D` and acquisition source level `M` are traceability labels only.
+- `source_level` / `acquisition_source_level` must not be used as `core_pool` gates, Card gates, ranking boosts, ranking penalties, or automatic downgrade reasons.
 - Raw target is at least 150 active candidates in the daily production chain.
 - Pool target is at least 75 items, at least 60 routed Pool items, and at least 30 usable `core_pool` items.
-- Core downstream evidence requires `has_full_text=true`, `extraction_quality=high|medium`, `source_level=S|A|B`, and a concrete business change.
+- Core downstream evidence requires original URL, readable full text, `extraction_quality=high|medium`, Raw QC `allow`, non-index evidence object, evidence hashes/excerpts, and a concrete business change.
 - Homepage, open-platform homepage, product directory, docs directory, console/login page, search-result page, tool directory and generic vendor homepage are `index_only` unless they contain a dated concrete new action.
 
 ## Script Score Dimensions
@@ -129,7 +129,6 @@ Fail or rerun if the configured gate detects:
 
 - Raw below floor.
 - Pool below floor.
-- S/A/B ratio below floor.
 - Non-community keyword evidence below floor.
 - Keyword path diversity missing.
 - AI relevance ratio below floor.
@@ -161,7 +160,7 @@ The QC handoff must include:
 - Evidence gaps.
 - `core_pool` candidates.
 - Suspicious homepage / tool / directory / search-result items.
-- M-source-only or discovery-only items.
+- Discovery-only items without original evidence.
 - Items missing `full_text`, snapshot, hash, or Raw JSON.
 
 If the script passes but QC blocks, the day is still blocked. Do not let Signal Cards, relationship graph inputs, trend candidates, or Business Signals frontstage data proceed.

@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-21T23:00:00.000Z"
-collected_at: 2026-06-22T03:38:47.656Z
+collected_at: 2026-06-22T03:45:56.562Z
 language: mixed
 full_text_hash: f41384d1b608a70f
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-106-三星电子向全球员工部署chatgpt-enterprise和codex.md"
@@ -45,7 +45,7 @@ capture_scope: aihot_visible_text
 visible_range: "HTTP 403 fallback 可见文本"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"三星电子向全球员工部署ChatGPT Enterprise和Codex","discovery_summary":"三星电子向全球员工推出ChatGPT Enterprise和Codex，这是OpenAI目前规模最大的企业级AI部署之一。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"https://openai.com/index/samsung-electronics-chatgpt-codex-deployment","discovered_at":"2026-06-22T03:05:13.667Z","rank_on_page":38,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"三星电子向全球员工部署ChatGPT Enterprise和Codex","discovery_summary":"三星电子向全球员工推出ChatGPT Enterprise和Codex，这是OpenAI目前规模最大的企业级AI部署之一。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"https://openai.com/index/samsung-electronics-chatgpt-codex-deployment","discovered_at":"2026-06-22T03:32:56.638Z","rank_on_page":42,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "blocked"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: f41384d1b608a70f
 semantic_hash: da702f26e4e26d61
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-21T23:00:00.000Z"
-last_seen_at: 2026-06-22T03:38:47.656Z
+last_seen_at: 2026-06-22T03:45:56.562Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -168,7 +168,7 @@ copyright_note: local research archive only
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: blocked
-- discovery_record: {"discovery_title":"三星电子向全球员工部署ChatGPT Enterprise和Codex","discovery_summary":"三星电子向全球员工推出ChatGPT Enterprise和Codex，这是OpenAI目前规模最大的企业级AI部署之一。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"https://openai.com/index/samsung-electronics-chatgpt-codex-deployment","discovered_at":"2026-06-22T03:05:13.667Z","rank_on_page":38,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"三星电子向全球员工部署ChatGPT Enterprise和Codex","discovery_summary":"三星电子向全球员工推出ChatGPT Enterprise和Codex，这是OpenAI目前规模最大的企业级AI部署之一。","source_name":"OpenAI：官网动态（RSS · 排除企业/客户案例）","origin_url":"https://openai.com/index/samsung-electronics-chatgpt-codex-deployment","discovered_at":"2026-06-22T03:32:56.638Z","rank_on_page":42,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

@@ -12,8 +12,9 @@ Do not use numeric self-scores without observable evidence. Each check must be `
 2. `raw_pool_quantity_gate`
    - Pass when the report checks at least 150 active Raw candidates, at least 75 Pool items, at least 60 routed Pool items, and at least 30 usable `core_pool` items unless the run is explicitly blocked.
 
-3. `source_integrity_gate`
-   - Pass when every downstream-worthy item has original URL, source level, acquisition channel, full-text status, extraction quality, content hash, and missing-information notes where applicable.
+3. `source_label_traceability_only`
+   - Pass when every downstream-worthy item has original URL, acquisition channel, full-text status, extraction quality, content hash, and missing-information notes where applicable.
+   - Pass when `source_level` / `acquisition_source_level` are logged for traceability but are not used as hard gates, ranking boosts, ranking penalties, or automatic downgrade reasons.
 
 4. `discovery_channel_separation`
    - Pass when AI HOT, follow-builders, HN, X, Reddit, RSS, and search aggregation text are treated as discovery only unless the original source was captured.

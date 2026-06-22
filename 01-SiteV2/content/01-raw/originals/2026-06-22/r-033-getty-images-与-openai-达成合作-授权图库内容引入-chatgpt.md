@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-22T00:38:13.000Z"
-collected_at: 2026-06-22T03:38:47.271Z
+collected_at: 2026-06-22T03:45:56.240Z
 language: mixed
 full_text_hash: 7528c5304165ebd5
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-033-getty-images-与-openai-达成合作-授权图库内容引入-chatgpt.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Getty Images 与 OpenAI 达成合作，授权图库内容引入 ChatGPT","discovery_summary":"6月22日，Getty Images宣布与OpenAI达成展示合作协议，授权图库内容将在ChatGPT的搜索与发现体验中呈现。此前，Getty Images曾与英伟达合作推出\"Generative AI by Getty Images\"工具，允许用户利用其授权图片库训练并承诺法律保护。OpenAI此前已与图片平台Shutterstock延续六年合作，并于2024年与英国《金融时报》签署协议，利用其资料库训练模型并提供新闻摘要链接。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/966/758.htm","discovered_at":"2026-06-22T03:05:13.660Z","rank_on_page":20,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Getty Images 与 OpenAI 达成合作，授权图库内容引入 ChatGPT","discovery_summary":"6月22日，Getty Images宣布与OpenAI达成展示合作协议，授权图库内容将在ChatGPT的搜索与发现体验中呈现。此前，Getty Images曾与英伟达合作推出\"Generative AI by Getty Images\"工具，允许用户利用其授权图片库训练并承诺法律保护。OpenAI此前已与图片平台Shutterstock延续六年合作，并于2024年与英国《金融时报》签署协议，利用其资料库训练模型并提供新闻摘要链接。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/966/758.htm","discovered_at":"2026-06-22T03:32:56.622Z","rank_on_page":24,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: 7528c5304165ebd5
 semantic_hash: 944d9169dfce1053
 duplicate_of: ""
 first_seen_at: "2026-06-22T00:38:13.000Z"
-last_seen_at: 2026-06-22T03:38:47.271Z
+last_seen_at: 2026-06-22T03:45:56.240Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -328,7 +328,7 @@ Win11之家
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"Getty Images 与 OpenAI 达成合作，授权图库内容引入 ChatGPT","discovery_summary":"6月22日，Getty Images宣布与OpenAI达成展示合作协议，授权图库内容将在ChatGPT的搜索与发现体验中呈现。此前，Getty Images曾与英伟达合作推出\"Generative AI by Getty Images\"工具，允许用户利用其授权图片库训练并承诺法律保护。OpenAI此前已与图片平台Shutterstock延续六年合作，并于2024年与英国《金融时报》签署协议，利用其资料库训练模型并提供新闻摘要链接。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/966/758.htm","discovered_at":"2026-06-22T03:05:13.660Z","rank_on_page":20,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Getty Images 与 OpenAI 达成合作，授权图库内容引入 ChatGPT","discovery_summary":"6月22日，Getty Images宣布与OpenAI达成展示合作协议，授权图库内容将在ChatGPT的搜索与发现体验中呈现。此前，Getty Images曾与英伟达合作推出\"Generative AI by Getty Images\"工具，允许用户利用其授权图片库训练并承诺法律保护。OpenAI此前已与图片平台Shutterstock延续六年合作，并于2024年与英国《金融时报》签署协议，利用其资料库训练模型并提供新闻摘要链接。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/966/758.htm","discovered_at":"2026-06-22T03:32:56.622Z","rank_on_page":24,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 
