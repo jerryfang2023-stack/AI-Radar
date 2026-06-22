@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-21T08:25:41.000Z"
-collected_at: 2026-06-22T03:45:56.019Z
+collected_at: 2026-06-22T06:23:05.497Z
 language: mixed
 full_text_hash: ad7c971ae891192f
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-002-aws推出continuum和context两项新服务-填补ai智能体业务上下文与安全漏洞短板.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板","discovery_summary":"在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强制执行模式。Context自动从数据库、文档、邮件等企业数据构建知识图谱，为所有智能体提供共享业务知识，内置访问控制。DevOps Agent新增发布就绪审查（在GitHub/GitLab以注释反馈）和从变更推导测试计划并在类生产环境运行的功能，预览版在美国东部免费开放。智能体Kiro推出iOS原生应用，用于移动端启动任务和审批代码。Bedrock AgentCore扩展托管知识库连接器（S3、SharePoint等）和内置网络搜索。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps","discovered_at":"2026-06-22T03:32:56.701Z","rank_on_page":122,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板","discovery_summary":"在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强制执行模式。Context自动从数据库、文档、邮件等企业数据构建知识图谱，为所有智能体提供共享业务知识，内置访问控制。DevOps Agent新增发布就绪审查（在GitHub/GitLab以注释反馈）和从变更推导测试计划并在类生产环境运行的功能，预览版在美国东部免费开放。智能体Kiro推出iOS原生应用，用于移动端启动任务和审批代码。Bedrock AgentCore扩展托管知识库连接器（S3、SharePoint等）和内置网络搜索。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps","discovered_at":"2026-06-22T06:05:44.568Z","rank_on_page":143,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: ad7c971ae891192f
 semantic_hash: dffc9ab6950f3672
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-21T08:25:41.000Z"
-last_seen_at: 2026-06-22T03:45:56.019Z
+last_seen_at: 2026-06-22T06:23:05.497Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
@@ -270,7 +270,7 @@ M, 1, 2, 13
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板","discovery_summary":"在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强制执行模式。Context自动从数据库、文档、邮件等企业数据构建知识图谱，为所有智能体提供共享业务知识，内置访问控制。DevOps Agent新增发布就绪审查（在GitHub/GitLab以注释反馈）和从变更推导测试计划并在类生产环境运行的功能，预览版在美国东部免费开放。智能体Kiro推出iOS原生应用，用于移动端启动任务和审批代码。Bedrock AgentCore扩展托管知识库连接器（S3、SharePoint等）和内置网络搜索。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps","discovered_at":"2026-06-22T03:32:56.701Z","rank_on_page":122,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板","discovery_summary":"在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强制执行模式。Context自动从数据库、文档、邮件等企业数据构建知识图谱，为所有智能体提供共享业务知识，内置访问控制。DevOps Agent新增发布就绪审查（在GitHub/GitLab以注释反馈）和从变更推导测试计划并在类生产环境运行的功能，预览版在美国东部免费开放。智能体Kiro推出iOS原生应用，用于移动端启动任务和审批代码。Bedrock AgentCore扩展托管知识库连接器（S3、SharePoint等）和内置网络搜索。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps","discovered_at":"2026-06-22T06:05:44.568Z","rank_on_page":143,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

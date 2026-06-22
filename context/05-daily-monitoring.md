@@ -94,6 +94,8 @@ Enterprise AI transformation / 企业AI化 is an added monitoring lens for FDE-s
 
 This lens does not create a fourth Signal Card type. FDE / Applied AI / Technical Deployment role pages may indicate organization capability or delivery model, but they cannot become formal business-signal facts unless separately supported by source-backed product / service, funding, customer deployment, procurement, or production rollout evidence.
 
+Generic FDE / applied-AI implementation pages are non-core by default. Job posts, role explainers, consulting/service landing pages, and "what is FDE" articles may remain in Raw / Pool diagnostics, but they must not satisfy `core_pool`, routed Pool, or Card quantity gates unless the same original source contains a concrete dated customer deployment, product/service launch, funding, procurement, partnership, or production rollout.
+
 Large-company items are allowed, but they cannot dominate the day.
 
 Current quantity gates:
@@ -103,6 +105,8 @@ Current quantity gates:
 - each required importance lane should keep at least 5 Pool candidates before downstream release;
 - frontstage Card presentation must publish exactly 10 business signals per active date.
 - Signal Card assets should cover all qualified Core Pool items so relationship graph and trend-candidate modules can use non-displayed evidence.
+- If `core_pool`, routed Pool, or non-large core supply is thin, targeted refill must search for recent concrete events: customer deployment, production rollout, product launch, funding, procurement, pricing, regulatory, or vertical workflow evidence. Do not repair supply by promoting marketplace listings, directories, generic guides, interviews, old technical posts, broad lists, funding roundups, or generic funding commentary into `core_pool`.
+- `source_level` and `acquisition_source_level` remain traceability-only labels during refill. They must not boost, penalize, gate, or auto-downgrade Raw / Pool / Core Pool eligibility.
 
 Large-company boundary:
 

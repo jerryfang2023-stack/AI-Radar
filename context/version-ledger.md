@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-06-19
+last_updated: 2026-06-22
 use_when:
   - task startup
   - page change
@@ -18,14 +18,14 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.8.1-fde-lens-pool |
-| Version name | Enterprise AI FDE Lens Pool |
+| Current version | V3.3.8.2-business-signal-core-source-hygiene |
+| Version name | Business Signal Core Source Hygiene |
 | Version layer | Minor |
-| Release date | 2026-06-19 |
-| Last modified at | 2026-06-19T16:10:00+08:00 |
+| Release date | 2026-06-22 |
+| Last modified at | 2026-06-22T14:35:00+08:00 |
 | Product version | V3.3 |
-| Main website version | SITE-V3.3.8.1 |
-| Business Signals column version | BSIG-V1.1.0-enterprise-ai-transformation |
+| Main website version | SITE-V3.3.8.2 |
+| Business Signals column version | BSIG-V1.1.1-core-source-hygiene |
 | Enterprise AI lens version | EAI-V1.1.0-fde-lens-pool |
 | Intelligence Map column version | IMAP-V1.1.0-weekly-report |
 | Business Signals data contract | V3.3.6.3-business-source-artifact-aggregation |
@@ -40,7 +40,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - WaveSight AI is now a unified intelligence frontstage, not a V2 four-column content site.
 - V3.3 public frontstage has four entries: Business Signals, Intelligence Map, First-Line Viewpoints, and Community Intelligence.
 - Business Signals uses the Raw / Pool / Card / Relationship Graph / Trend Candidate chain.
-- Business Signals is versioned as `BSIG-V1.1.0-enterprise-ai-transformation` in this release. Its public page keeps Top10 as the primary desk and adds an `EAI-V1.1.0-fde-lens-pool` secondary lens for boss-facing enterprise AI implementation signals.
+- Business Signals is versioned as `BSIG-V1.1.1-core-source-hygiene` in this release. Its public page keeps Top10 as the primary desk, preserves the `EAI-V1.1.0-fde-lens-pool` secondary lens, and blocks generic FDE role/service pages, generic funding commentary, funding roundups, broad lists, stale sources, and search-query artifacts from Core Pool / Card promotion.
 - Enterprise AI / FDE is a frontstage interpretation and monitoring lens backed by an independent FDE Lens Pool. It is not a fourth Card type, and it must not expose backend-only fields.
 - Business Signals now defaults to independent source artifact collection before unified Raw / Pool normalization: `aihot`, `keyword`, `gdelt`, and `rss` each preserve source-discovered items, while the unified monitor decides final eligibility and release gates.
 - First-Line Viewpoints uses the follow-builders / builders data chain as an independent page, split into a morning RSS route and an afternoon local follow-builders skill route.
@@ -49,7 +49,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Dashboard keeps the existing operations backend at `operations-console.html`, but is not exposed in the public frontstage navigation for this release.
 - Daily automation is split by production lane: Business Signals, First-Line Viewpoints, and Community Intelligence each have independent monitoring / gate / persistence / PR publication boundaries.
 - First-Line Viewpoints persists local Obsidian timelines as person / date files under `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<YYYY-MM-DD>.md`; old month files must not be reintroduced.
-- Business Signals blocks social/community posts, repo/catalog pages, marketplace/package/model pages, and generic funding lists from formal Card promotion unless they are recaptured through dated source-backed event pages.
+- Business Signals blocks social/community posts, repo/catalog pages, marketplace/package/model pages, generic funding lists, funding roundups, generic funding commentary, generic FDE role/service pages, job posts, role explainers, consulting/service landing pages, old evergreen technical posts, and search-query artifacts from formal Card promotion unless the same original source contains a concrete dated product/service, funding, customer deployment, procurement, partnership, or production rollout event.
 - Hermes early handoff supervises the three lanes with lane-specific takeover windows: Community Intelligence publish at 09:30 after the 08:30 Windows collector, 08:45 publish check, and 09:00 Codex local fallback / repair window; First-Line Viewpoints RSS at 09:30 after the 08:30 local `builder-observation-daily-sync` collection/build/sync attempt and single 09:17 GitHub fallback; and Business Signals at 09:45 / 09:55. Hermes also records the afternoon follow-builders skill publish at 16:30.
 - Hermes early handoff is staged: 09:30 may dispatch Community publish and First-Line RSS while Business waits; 09:45 may dispatch Business while Community / First-Line only recheck; 09:55 is final review only and cannot start a new routine dispatch.
 - Intelligence Map and Dashboard follow the Business Signals data chain.
@@ -82,7 +82,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 |---|---|---|---|---|
 | Operations Backend / 运营大后台 | `OPS-V1.0.1` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Operations console shell, navigation, module entry contracts, and backend-facing version ledger | HTML meta `wavesight-ops-console-version`, visible sidebar version, version ledger |
 | Topic Center / 选题中心 module | `V2.2.2-source-title` | Automated in the Business Signals daily PR chain at 08:57 Asia/Shanghai; regenerated after the Business frontstage gate passes and deployed through GitHub Pages after auto-merge | `business-signals + first-line-viewpoints + community-intelligence` | `topic-center.json/js`, `topic-center-hermes.json/md`, and local `04-AIP/01-选题库/<date>-每日选题.md` when local sync can run |
-| Business Signals / 商业信号 column | `BSIG-V1.1.0-enterprise-ai-transformation` | Published through the main GitHub Pages frontstage; keeps Top10 as the primary desk and adds the 企业AI化 secondary lens | V3.3.6.3 Card data contract plus Enterprise AI lens rendering | `v3-data-observation.html`, `v3-data-observation-desk.json` meta, version ledger |
+| Business Signals / 商业信号 column | `BSIG-V1.1.1-core-source-hygiene` | Published through the main GitHub Pages frontstage; keeps Top10 as the primary desk and adds the 企业AI化 secondary lens | V3.3.6.3 Card data contract plus Enterprise AI lens rendering plus Core Pool source hygiene gates | `v3-data-observation.html`, `v3-data-observation-desk.json` meta, version ledger |
 | Intelligence Map / 情报地图 column | `IMAP-V1.1.0-weekly-report` | Published through the main GitHub Pages frontstage. Future weekly report issues must be sourced from `01-SiteV2/content/08-report/` before page generation. | Business Signals relationship graph + Weekly Business Change Radar content | `intelligence-map.html`, `weekly-ai-business-change-radar.html`, `assets/weekly-report.css`, `01-SiteV2/content/08-report/*.md` |
 
 ## Current Sources Of Truth
@@ -131,6 +131,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `V3.3.8.2-freeze-business-core-source-hygiene-20260622` | Business Signals / Core Pool / Card generation | 2026-06-22 | 2026-06-22T14:35:00+08:00 | SITE-V3.3.8.2 / BSIG-V1.1.1-core-source-hygiene / EAI-V1.1.0-fde-lens-pool | `source_level` or `acquisition_source_level` used as ranking/gating/downgrade criteria; generic FDE role/service pages, job posts, role explainers, funding roundups, generic funding commentary, broad lists, stale sources, or search-query artifacts promoted into Core Pool or Cards; fixing daily quantity gaps by relaxing Core Pool quality gates | monitor quality loop + daily production chain post-monitor/pre-commit + pool-to-card dedupe + business frontstage gate + source-first/frontstage regression |
 | `V3.3.8-freeze-enterprise-ai-transformation-20260617` | Business Signals / 企业AI化 | 2026-06-17 | 2026-06-17T16:00:05+08:00 | SITE-V3.3.8-enterprise-ai-transformation / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.0.0-enterprise-ai-transformation | 企业AI化 reverting to the old FDE Lens name; multi-column case cards; visible "落地判断" / "老板追问" diagnostic fields; backend-only fields exposed in the public table; treating Enterprise AI as a fourth Card type | business frontstage gate + syntax quality gate + visual smoke + GitHub Pages deploy |
 | `topic-center-v2.2.2-freeze-source-title-20260616` | Dashboard / Topic Center | 2026-06-16 | 2026-06-16T21:35:00+08:00 | V2.2.2-source-title / OPS-V1.0.1 | Topic Center list titles being generated boss judgments; `title` / `spreadTitle` storing AI interpretation instead of original source titles; Obsidian daily topic files carrying judgment titles as headings | `node --check agent-workflow/tools/build-topic-center-data.mjs` + same-date title scan + `node agent-workflow/tools/frontstage-regression-gate.mjs` + GitHub Pages deploy |
 | `V3.3.7-freeze-weekly-report-intelligence-map-20260615` | Business Signals / Intelligence Map / Weekly Report | 2026-06-15 | 2026-06-15T18:44:17+08:00 | SITE-V3.3.7-weekly-report-intelligence-map / IMAP-V1.1.0-weekly-report | weekly report detached from Intelligence Map; weekly report generated from `agent-workflow/reports/` only instead of `01-SiteV2/content/08-report/`; Trend Candidates or History modules returning to Intelligence Map; table-heavy weekly report detail pages; stale frontstage meta version `V3.3.5-builder-obsidian-date-timelines` | syntax + source-first + frontstage regression + visual smoke + GitHub Pages deploy |
@@ -158,7 +159,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| SITE-V3.3.8.1 / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.1.0-fde-lens-pool | 2026-06-19T16:10:00+08:00 | Splits Enterprise AI / FDE into an independent Lens Pool fed by Raw / Pool evidence while preserving Business Signals Top10 and Card rules. Adds `enterprise-ai-fde.json`, source-backed FDE detail checks, and Obsidian `content/09-fde` sync from the new pool. | current |
+| SITE-V3.3.8.2 / BSIG-V1.1.1-core-source-hygiene / EAI-V1.1.0-fde-lens-pool | 2026-06-22T14:35:00+08:00 | Tightens Business Signals Core Pool source hygiene: source labels are traceability-only; generic FDE role/service pages, job posts, role explainers, broad lists, funding roundups, generic funding commentary, stale sources, and search-query artifacts cannot satisfy Core Pool / Card quantity gaps. | current |
+| SITE-V3.3.8.1 / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.1.0-fde-lens-pool | 2026-06-19T16:10:00+08:00 | Splits Enterprise AI / FDE into an independent Lens Pool fed by Raw / Pool evidence while preserving Business Signals Top10 and Card rules. Adds `enterprise-ai-fde.json`, source-backed FDE detail checks, and Obsidian `content/09-fde` sync from the new pool. | upgraded |
 | SITE-V3.3.8-enterprise-ai-transformation / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.0.0-enterprise-ai-transformation | 2026-06-17T16:00:05+08:00 | Adds the 企业AI化 secondary lens to Business Signals for FDE-style implementation monitoring and consulting-relevant reading. The public table uses one case per row, keeps `AI化动作` and `Tags`, and hides diagnostic fields that do not help boss-facing decisions. | upgraded |
 | OPS-V1.0.1 / V2.2.2-source-title | 2026-06-16T21:35:00+08:00 | Fixes Topic Center title semantics: public list titles and Obsidian daily headings now use the primary original source title; boss-facing judgment remains only in core judgment, pain point, money line, angles, and action fields. | current operations backend / current backend column |
 | SITE-V3.3.7-weekly-report-intelligence-map / IMAP-V1.1.0-weekly-report | 2026-06-15T18:44:17+08:00 | Adds the weekly report subcolumn to Intelligence Map, removes Trend Candidates and History from the Intelligence Map page, publishes the first weekly report detail page, and defines `01-SiteV2/content/08-report/` as the future weekly report source path. | upgraded |

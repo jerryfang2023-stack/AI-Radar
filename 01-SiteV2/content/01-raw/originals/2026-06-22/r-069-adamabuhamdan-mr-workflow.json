@@ -1,0 +1,264 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-069",
+  "title": "adamabuhamdan/Mr-WorkFlow",
+  "original_url": "https://github.com/adamabuhamdan/Mr-WorkFlow",
+  "canonical_url": "https://github.com/adamabuhamdan/Mr-WorkFlow",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event_on_official_page",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "ai_transformation",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-22T06:23:06.275Z",
+  "language": "mixed",
+  "full_text": "adamabuhamdan\nMr-WorkFlow\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n16 Commits\n16 Commits\n.github/ workflows\n.github/ workflows\n.vscode\n.vscode\napp\napp\nclient\nclient\n.env.example\n.env.example\n.gitignore\n.gitignore\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ndocker-compose.yml\ndocker-compose.yml\nrequirements.txt\nrequirements.txt\ntemplate.sh\ntemplate.sh\nView all files\nRepository files navigation\nMr WorkFlow AI\nMulti-Modal, Stage-Aware AI Mentor for Founders\nMr WorkFlow AI is a production-ready startup advisor that combines RAG, Gemini Pro, Gemini Vision, and PDF intelligence to deliver contextual, accurate, and deeply actionable guidance for founders at every stage of their journey.\nBuilt for Google's Hackathon | Powered by Qdrant, LangChain & Gemini\n🌟 Key Features\n✅ 1. Text-Based Startup Advisory (RAG Engine)\nGet expert answers to startup questions like:\n\"How do I validate my MVP?\"\n\"How do I prepare for pre-seed funding?\"\n\"How do I grow early traction?\"\n\"How do I build a scalable team?\"\nPipeline:\nStage Detection → Semantic Retrieval → Gemini Pro Generation\n🖼️ 2. Image Analysis (Gemini Vision)\nUpload and analyze:\nPitch deck slides\nUI/UX screenshots\nDiagrams & flowcharts\nGet feedback on:\nSlide critique\nUI/UX recommendations\nNarrative flow evaluation\nInvestor-readiness improvements\n📄 3. PDF Intelligence\nUpload full documents (pitch decks, business plans, market analysis) for:\nSlide-by-slide interpretation\nMissing section detection\nCompetitive positioning critique\nTraction & metrics evaluation\nClarity & investor-readiness scoring\n🧠 Advanced RAG Knowledge Base\nThe core power of Mr WorkFlow AI lies in its curated knowledge base built from:\n✔️ 15+ books on startups, scaling, growth, funding, and leadership\n✔️ Real case studies from: OpenAI, Stripe, Notion, Perplexity, Linear, Vercel, Midjourney (2023–2025)\n✔️ 9 years of practical founder experience in business & sales\n📘 The 8-Stage Knowledge Model\nIdeation – Opportunity spotting, problem discovery\nValidation – MVP iteration, user interviews, rapid experiments\nProduct Building – MVP → V1 → V2, UX, stickiness\nGrowth & Traction – Channels, acquisition, early distribution\nFunding – Angel/VC mechanics, negotiation, term sheets\nTeam & Leadership – Culture, hiring, founder mindset\nScaling – Operations, growth loops, systems, OKRs\nStrategic Maturity – Moats, execution, long-term advantage\nEach vector includes:\nStage classification\nTopic categorization\nComplexity level\nActionable advice\nReal 2025 examples\nCommon pitfalls to avoid\n🏗️ System Architecture\nFrontend\nTechnology : HTML, CSS, JavaScript (lightweight, no frameworks)\nInterface : 3-tab layout\nText Chat (RAG)\nImage Analysis\nFile Analysis\nFeatures :\nAsynchronous fetch API\nStage detection display\nDrag-and-drop uploads\nBackend\nLanguage : Python 3.11\nFramework : FastAPI\nAI Models :\nGemini Pro (text generation)\nGemini Vision (image analysis)\nVector DB : Qdrant Cloud\nTools : LangChain 0.3.x\nEmbeddings : Sentence Transformers (all-mpnet-base-v2)\nVector Database Architecture\nQdrant Cloud provides:\nHigh-speed semantic search\nScalable cloud storage\nMetadata filtering\nProduction-grade reliability\nStored Metadata:\n\"stage\" : \" Validation \" ,\n\"topic\" : \" MVP \" ,\n\"source_book\" : \" The Lean Startup \" ,\n\"tags\" : [ \" experiments \" , \" early_stage \" ],\n\"complexity\" : \" intermediate \" ,\n\"example_year\" : 2025\nRetrieval Flow:\nUser Question → Embedding → Stage Filter → Qdrant Search → Top-k Results → Gemini Pro → Answer\nDocker Deployment\nBuild\ndocker build -t startup-advisor .\nRun\ndocker run -p 8000:8000 startup-advisor\n☁️ Cloud Deployment\nAWS EC2 + ECR\nContainerized backend\nNGINX reverse proxy support\nAuto-start using systemd\nSecure environment variables\n🔥 Example Knowledge Vector\nadvice_1 :\nstage : Idea\ntopic : customer_interviews\ncomplexity : beginner\ntags : [facts_over_opinions, customer_truth, early_stage]\nadvice : |\nFocus every conversation on the customer's past behavior\ninstead of their opinions.\nwhy : |\nPast behavior is the only reliable predictor of real demand.\nexample_2025 : |\nWhen Notion interviewed enterprise teams in 2025, they asked\nabout the last six months of workflow failures instead of\npitching new AI features.\navoid :\n- hypotheticals\n- future_promises\n- generic_opinions\n🚀 Getting Started\nPrerequisites\nPython 3.11+\nDocker (optional)\nQdrant Cloud account\nGoogle AI API key (Gemini)\nInstallation\nClone the repository\ngit clone https://github.com/yourusername/mrworkflow-ai.git\ncd mrworkflow-ai\nInstall dependencies\npip install -r requirements.txt\nSet up environment variables\nexport GOOGLE_API_KEY= \" your_gemini_api_key \"\nexport QDRANT_URL= \" your_qdrant_url \"\nexport QDRANT_API_KEY= \" your_qdrant_api_key \"\nRun the application\nuvicorn main:app --host 0.0.0.0 --port 8000\nOpen your browser\nhttp://localhost:8000\n📚 Tech Stack\nComponent\nTechnology\nBackend Framework\nFastAPI\nAI Models\nGemini Pro, Gemini Vision\nVector Database\nQdrant Cloud\nEmbeddings\nSentence Transformers\nOrchestration\nLangChain 0.3.x\nFrontend\nVanilla JS, HTML, CSS\nContainerization\nDocker\nCloud\nAWS EC2, ECR\n🎯 Use Cases\nPre-seed founders seeking validation strategies\nEarly-stage teams building their first product\nGrowth-stage startups optimizing traction channels\nFundraising founders preparing pitch decks\nSolo founders needing expert guidance 24/7\n📝 License\nThis project is licensed under the MIT License.\n🙏 Acknowledgments\nBuilt with insights from:\nThe Lean Startup (Eric Ries)\nZero to One (Peter Thiel)\nThe Mom Test (Rob Fitzpatrick)\nAnd 12+ other essential startup books\nReal case studies from: OpenAI, Stripe, Notion, Perplexity, Linear, Vercel, Midjourney\n📧 Contact\nFor questions or feedback, please reach out or open an issue.\nMade with ❤️ for founders building the future\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nLicense\nApache-2.0 license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n54.0%\nCSS\n20.6%\nHTML\n15.2%\nJavaScript\n8.9%\nOther\n1.3%",
+  "clean_text": "adamabuhamdan\nMr-WorkFlow\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n16 Commits\n16 Commits\n.github/ workflows\n.github/ workflows\n.vscode\n.vscode\napp\napp\nclient\nclient\n.env.example\n.env.example\n.gitignore\n.gitignore\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ndocker-compose.yml\ndocker-compose.yml\nrequirements.txt\nrequirements.txt\ntemplate.sh\ntemplate.sh\nView all files\nRepository files navigation\nMr WorkFlow AI\nMulti-Modal, Stage-Aware AI Mentor for Founders\nMr WorkFlow AI is a production-ready startup advisor that combines RAG, Gemini Pro, Gemini Vision, and PDF intelligence to deliver contextual, accurate, and deeply actionable guidance for founders at every stage of their journey.\nBuilt for Google's Hackathon | Powered by Qdrant, LangChain & Gemini\n🌟 Key Features\n✅ 1. Text-Based Startup Advisory (RAG Engine)\nGet expert answers to startup questions like:\n\"How do I validate my MVP?\"\n\"How do I prepare for pre-seed funding?\"\n\"How do I grow early traction?\"\n\"How do I build a scalable team?\"\nPipeline:\nStage Detection → Semantic Retrieval → Gemini Pro Generation\n🖼️ 2. Image Analysis (Gemini Vision)\nUpload and analyze:\nPitch deck slides\nUI/UX screenshots\nDiagrams & flowcharts\nGet feedback on:\nSlide critique\nUI/UX recommendations\nNarrative flow evaluation\nInvestor-readiness improvements\n📄 3. PDF Intelligence\nUpload full documents (pitch decks, business plans, market analysis) for:\nSlide-by-slide interpretation\nMissing section detection\nCompetitive positioning critique\nTraction & metrics evaluation\nClarity & investor-readiness scoring\n🧠 Advanced RAG Knowledge Base\nThe core power of Mr WorkFlow AI lies in its curated knowledge base built from:\n✔️ 15+ books on startups, scaling, growth, funding, and leadership\n✔️ Real case studies from: OpenAI, Stripe, Notion, Perplexity, Linear, Vercel, Midjourney (2023–2025)\n✔️ 9 years of practical founder experience in business & sales\n📘 The 8-Stage Knowledge Model\nIdeation – Opportunity spotting, problem discovery\nValidation – MVP iteration, user interviews, rapid experiments\nProduct Building – MVP → V1 → V2, UX, stickiness\nGrowth & Traction – Channels, acquisition, early distribution\nFunding – Angel/VC mechanics, negotiation, term sheets\nTeam & Leadership – Culture, hiring, founder mindset\nScaling – Operations, growth loops, systems, OKRs\nStrategic Maturity – Moats, execution, long-term advantage\nEach vector includes:\nStage classification\nTopic categorization\nComplexity level\nActionable advice\nReal 2025 examples\nCommon pitfalls to avoid\n🏗️ System Architecture\nFrontend\nTechnology : HTML, CSS, JavaScript (lightweight, no frameworks)\nInterface : 3-tab layout\nText Chat (RAG)\nImage Analysis\nFile Analysis\nFeatures :\nAsynchronous fetch API\nStage detection display\nDrag-and-drop uploads\nBackend\nLanguage : Python 3.11\nFramework : FastAPI\nAI Models :\nGemini Pro (text generation)\nGemini Vision (image analysis)\nVector DB : Qdrant Cloud\nTools : LangChain 0.3.x\nEmbeddings : Sentence Transformers (all-mpnet-base-v2)\nVector Database Architecture\nQdrant Cloud provides:\nHigh-speed semantic search\nScalable cloud storage\nMetadata filtering\nProduction-grade reliability\nStored Metadata:\n\"stage\" : \" Validation \" ,\n\"topic\" : \" MVP \" ,\n\"source_book\" : \" The Lean Startup \" ,\n\"tags\" : [ \" experiments \" , \" early_stage \" ],\n\"complexity\" : \" intermediate \" ,\n\"example_year\" : 2025\nRetrieval Flow:\nUser Question → Embedding → Stage Filter → Qdrant Search → Top-k Results → Gemini Pro → Answer\nDocker Deployment\nBuild\ndocker build -t startup-advisor .\nRun\ndocker run -p 8000:8000 startup-advisor\n☁️ Cloud Deployment\nAWS EC2 + ECR\nContainerized backend\nNGINX reverse proxy support\nAuto-start using systemd\nSecure environment variables\n🔥 Example Knowledge Vector\nadvice_1 :\nstage : Idea\ntopic : customer_interviews\ncomplexity : beginner\ntags : [facts_over_opinions, customer_truth, early_stage]\nadvice : |\nFocus every conversation on the customer's past behavior\ninstead of their opinions.\nwhy : |\nPast behavior is the only reliable predictor of real demand.\nexample_2025 : |\nWhen Notion interviewed enterprise teams in 2025, they asked\nabout the last six months of workflow failures instead of\npitching new AI features.\navoid :\n- hypotheticals\n- future_promises\n- generic_opinions\n🚀 Getting Started\nPrerequisites\nPython 3.11+\nDocker (optional)\nQdrant Cloud account\nGoogle AI API key (Gemini)\nInstallation\nClone the repository\ngit clone https://github.com/yourusername/mrworkflow-ai.git\ncd mrworkflow-ai\nInstall dependencies\npip install -r requirements.txt\nSet up environment variables\nexport GOOGLE_API_KEY= \" your_gemini_api_key \"\nexport QDRANT_URL= \" your_qdrant_url \"\nexport QDRANT_API_KEY= \" your_qdrant_api_key \"\nRun the application\nuvicorn main:app --host 0.0.0.0 --port 8000\nOpen your browser\nhttp://localhost:8000\n📚 Tech Stack\nComponent\nTechnology\nBackend Framework\nFastAPI\nAI Models\nGemini Pro, Gemini Vision\nVector Database\nQdrant Cloud\nEmbeddings\nSentence Transformers\nOrchestration\nLangChain 0.3.x\nFrontend\nVanilla JS, HTML, CSS\nContainerization\nDocker\nCloud\nAWS EC2, ECR\n🎯 Use Cases\nPre-seed founders seeking validation strategies\nEarly-stage teams building their first product\nGrowth-stage startups optimizing traction channels\nFundraising founders preparing pitch decks\nSolo founders needing expert guidance 24/7\n📝 License\nThis project is licensed under the MIT License.\n🙏 Acknowledgments\nBuilt with insights from:\nThe Lean Startup (Eric Ries)\nZero to One (Peter Thiel)\nThe Mom Test (Rob Fitzpatrick)\nAnd 12+ other essential startup books\nReal case studies from: OpenAI, Stripe, Notion, Perplexity, Linear, Vercel, Midjourney\n📧 Contact\nFor questions or feedback, please reach out or open an issue.\nMade with ❤️ for founders building the future\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nLicense\nApache-2.0 license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n54.0%\nCSS\n20.6%\nHTML\n15.2%\nJavaScript\n8.9%\nOther\n1.3%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-22/r-069-adamabuhamdan-mr-workflow.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-22/r-069-adamabuhamdan-mr-workflow.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 6416,
+    "paragraph_count": 117,
+    "sentence_count": 20,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0056,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6416,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "399d52cdbe0ede7e",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "defb57d23a820587",
+  "content_hash": "399d52cdbe0ede7e",
+  "full_text_hash": "399d52cdbe0ede7e",
+  "semantic_hash": "d2f3a4c25ab03ef5",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-22T06:23:06.275Z",
+  "last_seen_at": "2026-06-22T06:23:06.275Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "funding",
+      "text": "Mr WorkFlow AI is a production-ready startup advisor that combines RAG, Gemini Pro, Gemini Vision, and PDF intelligence to deliver contextual, accurate, and deeply actionable guidance for founders at every stage of their journey. ... ### ✅ 1. Text-Based Startup Advisory (RAG Engine) ... - \"How do I ... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "adamabuhamdan Mr-WorkFlow Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 16 Commits 16 Commits .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "github/ workflows .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "vscode app app client client .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore Dockerfile Dockerfile LICENSE LICENSE README.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Google",
+      "GitHub",
+      "AWS",
+      "Perplexity"
+    ],
+    "products": [
+      "Gemini"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "workflows": [
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "1",
+      "16",
+      "2",
+      "3",
+      "15",
+      "2023",
+      "2025",
+      "9"
+    ],
+    "quotes": [
+      "How do I validate my MVP?",
+      "How do I prepare for pre-seed funding?",
+      "How do I grow early traction?",
+      "How do I build a scalable team?",
+      " Validation "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Mr WorkFlow AI is a production-ready startup advisor that combines RAG, Gemini Pro, Gemini Vision, and PDF intelligence to deliver contextual, accurate, and deeply actionable guidance for founders at every stage of their journey. ... ### ✅ 1. Text-Based Startup Advisory (RAG Engine) ... - \"How do I ... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem",
+      "vscode app app client client .",
+      "gitignore Dockerfile Dockerfile LICENSE LICENSE README."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "adamabuhamdan Mr-WorkFlow Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 16 Commits 16 Commits .",
+      "github/ workflows ."
+    ],
+    "before_after_clues": [
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# adamabuhamdan/Mr-WorkFlow\n\n- raw_id: R-069\n- original_url: https://github.com/adamabuhamdan/Mr-WorkFlow\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-22T06:23:06.275Z\n\n## clean_text\n\nadamabuhamdan\nMr-WorkFlow\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n16 Commits\n16 Commits\n.github/ workflows\n.github/ workflows\n.vscode\n.vscode\napp\napp\nclient\nclient\n.env.example\n.env.example\n.gitignore\n.gitignore\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ndocker-compose.yml\ndocker-compose.yml\nrequirements.txt\nrequirements.txt\ntemplate.sh\ntemplate.sh\nView all files\nRepository files navigation\nMr WorkFlow AI\nMulti-Modal, Stage-Aware AI Mentor for Founders\nMr WorkFlow AI is a production-ready startup advisor that combines RAG, Gemini Pro, Gemini Vision, and PDF intelligence to deliver contextual, accurate, and deeply actionable guidance for founders at every stage of their journey.\nBuilt for Google's Hackathon | Powered by Qdrant, LangChain & Gemini\n🌟 Key Features\n✅ 1. Text-Based Startup Advisory (RAG Engine)\nGet expert answers to startup questions like:\n\"How do I validate my MVP?\"\n\"How do I prepare for pre-seed funding?\"\n\"How do I grow early traction?\"\n\"How do I build a scalable team?\"\nPipeline:\nStage Detection → Semantic Retrieval → Gemini Pro Generation\n🖼️ 2. Image Analysis (Gemini Vision)\nUpload and analyze:\nPitch deck slides\nUI/UX screenshots\nDiagrams & flowcharts\nGet feedback on:\nSlide critique\nUI/UX recommendations\nNarrative flow evaluation\nInvestor-readiness improvements\n📄 3. PDF Intelligence\nUpload full documents (pitch decks, business plans, market analysis) for:\nSlide-by-slide interpretation\nMissing section detection\nCompetitive positioning critique\nTraction & metrics evaluation\nClarity & investor-readiness scoring\n🧠 Advanced RAG Knowledge Base\nThe core power of Mr WorkFlow AI lies in its curated knowledge base built from:\n✔️ 15+ books on startups, scaling, growth, funding, and leadership\n✔️ Real case studies from: OpenAI, Stripe, Notion, Perplexity, Linear, Vercel, Midjourney (2023–2025)\n✔️ 9 years of practical founder experience in business & sales\n📘 The 8-Stage Knowledge Model\nIdeation – Opportunity spotting, problem discovery\nValidation – MVP iteration, user interviews, rapid experiments\nProduct Building – MVP → V1 → V2, UX, stickiness\nGrowth & Traction – Channels, acquisition, early distribution\nFunding – Angel/VC mechanics, negotiation, term sheets\nTeam & Leadership – Culture, hiring, founder mindset\nScaling – Operations, growth loops, systems, OKRs\nStrategic Maturity – Moats, execution, long-term advantage\nEach vector includes:\nStage classification\nTopic categorization\nComplexity level\nActionable advice\nReal 2025 examples\nCommon pitfalls to avoid\n🏗️ System Architecture\nFrontend\nTechnology : HTML, CSS, JavaScript (lightweight, no frameworks)\nInterface : 3-tab layout\nText Chat (RAG)\nImage Analysis\nFile Analysis\nFeatures :\nAsynchronous fetch API\nStage detection display\nDrag-and-drop uploads\nBackend\nLanguage : Python 3.11\nFramework : FastAPI\nAI Models :\nGemini Pro (text generation)\nGemini Vision (image analysis)\nVector DB : Qdrant Cloud\nTools : LangChain 0.3.x\nEmbeddings : Sentence Transformers (all-mpnet-base-v2)\nVector Database Architecture\nQdrant Cloud provides:\nHigh-speed semantic search\nScalable cloud storage\nMetadata filtering\nProduction-grade reliability\nStored Metadata:\n\"stage\" : \" Validation \" ,\n\"topic\" : \" MVP \" ,\n\"source_book\" : \" The Lean Startup \" ,\n\"tags\" : [ \" experiments \" , \" early_stage \" ],\n\"complexity\" : \" intermediate \" ,\n\"example_year\" : 2025\nRetrieval Flow:\nUser Question → Embedding → Stage Filter → Qdrant Search → Top-k Results → Gemini Pro → Answer\nDocker Deployment\nBuild\ndocker build -t startup-advisor .\nRun\ndocker run -p 8000:8000 startup-advisor\n☁️ Cloud Deployment\nAWS EC2 + ECR\nContainerized backend\nNGINX reverse proxy support\nAuto-start using systemd\nSecure environment variables\n🔥 Example Knowledge Vector\nadvice_1 :\nstage : Idea\ntopic : customer_interviews\ncomplexity : beginner\ntags : [facts_over_opinions, customer_truth, early_stage]\nadvice : |\nFocus every conversation on the customer's past behavior\ninstead of their opinions.\nwhy : |\nPast behavior is the only reliable predictor of real demand.\nexample_2025 : |\nWhen Notion interviewed enterprise teams in 2025, they asked\nabout the last six months of workflow failures instead of\npitching new AI features.\navoid :\n- hypotheticals\n- future_promises\n- generic_opinions\n🚀 Getting Started\nPrerequisites\nPython 3.11+\nDocker (optional)\nQdrant Cloud account\nGoogle AI API key (Gemini)\nInstallation\nClone the repository\ngit clone https://github.com/yourusername/mrworkflow-ai.git\ncd mrworkflow-ai\nInstall dependencies\npip install -r requirements.txt\nSet up environment variables\nexport GOOGLE_API_KEY= \" your_gemini_api_key \"\nexport QDRANT_URL= \" your_qdrant_url \"\nexport QDRANT_API_KEY= \" your_qdrant_api_key \"\nRun the application\nuvicorn main:app --host 0.0.0.0 --port 8000\nOpen your browser\nhttp://localhost:8000\n📚 Tech Stack\nComponent\nTechnology\nBackend Framework\nFastAPI\nAI Models\nGemini Pro, Gemini Vision\nVector Database\nQdrant Cloud\nEmbeddings\nSentence Transformers\nOrchestration\nLangChain 0.3.x\nFrontend\nVanilla JS, HTML, CSS\nContainerization\nDocker\nCloud\nAWS EC2, ECR\n🎯 Use Cases\nPre-seed founders seeking validation strategies\nEarly-stage teams building their first product\nGrowth-stage startups optimizing traction channels\nFundraising founders preparing pitch decks\nSolo founders needing expert guidance 24/7\n📝 License\nThis project is licensed under the MIT License.\n🙏 Acknowledgments\nBuilt with insights from:\nThe Lean Startup (Eric Ries)\nZero to One (Peter Thiel)\nThe Mom Test (Rob Fitzpatrick)\nAnd 12+ other essential startup books\nReal case studies from: OpenAI, Stripe, Notion, Perplexity, Linear, Vercel, Midjourney\n📧 Contact\nFor questions or feedback, please reach out or open an issue.\nMade with ❤️ for founders building the future\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nLicense\nApache-2.0 license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n54.0%\nCSS\n20.6%\nHTML\n15.2%\nJavaScript\n8.9%\nOther\n1.3%\n\n## full_text\n\nadamabuhamdan\nMr-WorkFlow\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n16 Commits\n16 Commits\n.github/ workflows\n.github/ workflows\n.vscode\n.vscode\napp\napp\nclient\nclient\n.env.example\n.env.example\n.gitignore\n.gitignore\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ndocker-compose.yml\ndocker-compose.yml\nrequirements.txt\nrequirements.txt\ntemplate.sh\ntemplate.sh\nView all files\nRepository files navigation\nMr WorkFlow AI\nMulti-Modal, Stage-Aware AI Mentor for Founders\nMr WorkFlow AI is a production-ready startup advisor that combines RAG, Gemini Pro, Gemini Vision, and PDF intelligence to deliver contextual, accurate, and deeply actionable guidance for founders at every stage of their journey.\nBuilt for Google's Hackathon | Powered by Qdrant, LangChain & Gemini\n🌟 Key Features\n✅ 1. Text-Based Startup Advisory (RAG Engine)\nGet expert answers to startup questions like:\n\"How do I validate my MVP?\"\n\"How do I prepare for pre-seed funding?\"\n\"How do I grow early traction?\"\n\"How do I build a scalable team?\"\nPipeline:\nStage Detection → Semantic Retrieval → Gemini Pro Generation\n🖼️ 2. Image Analysis (Gemini Vision)\nUpload and analyze:\nPitch deck slides\nUI/UX screenshots\nDiagrams & flowcharts\nGet feedback on:\nSlide critique\nUI/UX recommendations\nNarrative flow evaluation\nInvestor-readiness improvements\n📄 3. PDF Intelligence\nUpload full documents (pitch decks, business plans, market analysis) for:\nSlide-by-slide interpretation\nMissing section detection\nCompetitive positioning critique\nTraction & metrics evaluation\nClarity & investor-readiness scoring\n🧠 Advanced RAG Knowledge Base\nThe core power of Mr WorkFlow AI lies in its curated knowledge base built from:\n✔️ 15+ books on startups, scaling, growth, funding, and leadership\n✔️ Real case studies from: OpenAI, Stripe, Notion, Perplexity, Linear, Vercel, Midjourney (2023–2025)\n✔️ 9 years of practical founder experience in business & sales\n📘 The 8-Stage Knowledge Model\nIdeation – Opportunity spotting, problem discovery\nValidation – MVP iteration, user interviews, rapid experiments\nProduct Building – MVP → V1 → V2, UX, stickiness\nGrowth & Traction – Channels, acquisition, early distribution\nFunding – Angel/VC mechanics, negotiation, term sheets\nTeam & Leadership – Culture, hiring, founder mindset\nScaling – Operations, growth loops, systems, OKRs\nStrategic Maturity – Moats, execution, long-term advantage\nEach vector includes:\nStage classification\nTopic categorization\nComplexity level\nActionable advice\nReal 2025 examples\nCommon pitfalls to avoid\n🏗️ System Architecture\nFrontend\nTechnology : HTML, CSS, JavaScript (lightweight, no frameworks)\nInterface : 3-tab layout\nText Chat (RAG)\nImage Analysis\nFile Analysis\nFeatures :\nAsynchronous fetch API\nStage detection display\nDrag-and-drop uploads\nBackend\nLanguage : Python 3.11\nFramework : FastAPI\nAI Models :\nGemini Pro (text generation)\nGemini Vision (image analysis)\nVector DB : Qdrant Cloud\nTools : LangChain 0.3.x\nEmbeddings : Sentence Transformers (all-mpnet-base-v2)\nVector Database Architecture\nQdrant Cloud provides:\nHigh-speed semantic search\nScalable cloud storage\nMetadata filtering\nProduction-grade reliability\nStored Metadata:\n\"stage\" : \" Validation \" ,\n\"topic\" : \" MVP \" ,\n\"source_book\" : \" The Lean Startup \" ,\n\"tags\" : [ \" experiments \" , \" early_stage \" ],\n\"complexity\" : \" intermediate \" ,\n\"example_year\" : 2025\nRetrieval Flow:\nUser Question → Embedding → Stage Filter → Qdrant Search → Top-k Results → Gemini Pro → Answer\nDocker Deployment\nBuild\ndocker build -t startup-advisor .\nRun\ndocker run -p 8000:8000 startup-advisor\n☁️ Cloud Deployment\nAWS EC2 + ECR\nContainerized backend\nNGINX reverse proxy support\nAuto-start using systemd\nSecure environment variables\n🔥 Example Knowledge Vector\nadvice_1 :\nstage : Idea\ntopic : customer_interviews\ncomplexity : beginner\ntags : [facts_over_opinions, customer_truth, early_stage]\nadvice : |\nFocus every conversation on the customer's past behavior\ninstead of their opinions.\nwhy : |\nPast behavior is the only reliable predictor of real demand.\nexample_2025 : |\nWhen Notion interviewed enterprise teams in 2025, they asked\nabout the last six months of workflow failures instead of\npitching new AI features.\navoid :\n- hypotheticals\n- future_promises\n- generic_opinions\n🚀 Getting Started\nPrerequisites\nPython 3.11+\nDocker (optional)\nQdrant Cloud account\nGoogle AI API key (Gemini)\nInstallation\nClone the repository\ngit clone https://github.com/yourusername/mrworkflow-ai.git\ncd mrworkflow-ai\nInstall dependencies\npip install -r requirements.txt\nSet up environment variables\nexport GOOGLE_API_KEY= \" your_gemini_api_key \"\nexport QDRANT_URL= \" your_qdrant_url \"\nexport QDRANT_API_KEY= \" your_qdrant_api_key \"\nRun the application\nuvicorn main:app --host 0.0.0.0 --port 8000\nOpen your browser\nhttp://localhost:8000\n📚 Tech Stack\nComponent\nTechnology\nBackend Framework\nFastAPI\nAI Models\nGemini Pro, Gemini Vision\nVector Database\nQdrant Cloud\nEmbeddings\nSentence Transformers\nOrchestration\nLangChain 0.3.x\nFrontend\nVanilla JS, HTML, CSS\nContainerization\nDocker\nCloud\nAWS EC2, ECR\n🎯 Use Cases\nPre-seed founders seeking validation strategies\nEarly-stage teams building their first product\nGrowth-stage startups optimizing traction channels\nFundraising founders preparing pitch decks\nSolo founders needing expert guidance 24/7\n📝 License\nThis project is licensed under the MIT License.\n🙏 Acknowledgments\nBuilt with insights from:\nThe Lean Startup (Eric Ries)\nZero to One (Peter Thiel)\nThe Mom Test (Rob Fitzpatrick)\nAnd 12+ other essential startup books\nReal case studies from: OpenAI, Stripe, Notion, Perplexity, Linear, Vercel, Midjourney\n📧 Contact\nFor questions or feedback, please reach out or open an issue.\nMade with ❤️ for founders building the future\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nLicense\nApache-2.0 license\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstars\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n54.0%\nCSS\n20.6%\nHTML\n15.2%\nJavaScript\n8.9%\nOther\n1.3%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [funding / daily_observation, heatmap, trend / high] Mr WorkFlow AI is a production-ready startup advisor that combines RAG, Gemini Pro, Gemini Vision, and PDF intelligence to deliver contextual, accurate, and deeply actionable guidance for founders at every stage of their journey. ... ### ✅ 1. Text-Based Startup Advisory (RAG Engine) ... - \"How do I ... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem\n2. [workflow_change / daily_observation, heatmap, change, case, trend / high] adamabuhamdan Mr-WorkFlow Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 16 Commits 16 Commits .\n3. [workflow_change / daily_observation, heatmap, change, case, trend / high] github/ workflows .\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] vscode app app client client .\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] gitignore Dockerfile Dockerfile LICENSE LICENSE README.\n"
+}

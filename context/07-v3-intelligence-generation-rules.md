@@ -95,6 +95,9 @@ Pool quantity and balance:
 - default hard boundary: large-company `core_pool` items should be no more than 10 items and no more than 35% of usable `core_pool`;
 - non-large-company `core_pool` depth should be at least 20 items so the frontstage Top 10 does not depend on repeated large-company news;
 - extra large-company items should stay as watchlist / index / supporting evidence unless they remain inside the frontstage large-company quota.
+- When routed Pool, `core_pool`, or non-large core supply is short, fix source supply with targeted searches for recent concrete actions. Valid refill targets include launches, releases, funding, acquisitions, partnerships, customer deployments, production rollouts, procurement, pricing, regulatory, and vertical workflow cases.
+- Refill must not promote marketplace listings, directories, docs indexes, repo roots, package/model pages, generic guides, broad startup/funding lists, funding roundups, generic funding commentary, interviews, old evergreen technical posts, or search snippets into `core_pool` just to satisfy counts.
+- `source_level` and `acquisition_source_level` are still traceability-only during refill; they cannot be used as value scores, core gates, ranking inputs, or automatic downgrade reasons.
 
 ## 4. Card Rules
 
@@ -112,6 +115,8 @@ Current V3 business-signal `signal_card` types are only:
 Enterprise AI transformation / 企业AI化 is a monitoring and frontstage interpretation lens, not a fourth `signal_card` type. It can help identify consulting-relevant evidence about FDE-style implementation, workflow change, governance, procurement, pilots, production rollout, and customer engineering capacity.
 
 FDE / Applied AI / Technical Deployment role pages are organization-capability signals only. They must stay in Raw / Pool diagnostics or supporting context unless a separate original source proves a product / service action, financing event, customer deployment, procurement event, or production rollout that passes the six Signal Card gates below.
+
+Generic FDE / applied-AI implementation pages are not Core Pool evidence by default. Job posts, role explainers, consulting/service landing pages, and "what is FDE" articles cannot be used to fill routed Pool, `core_pool`, or Card quantity gaps unless the same original source has a concrete dated customer deployment, product/service launch, financing event, procurement event, partnership, or production rollout.
 
 Signal Card entry gate is expressed as six required gates. Do not re-expand these into scattered top-level field blockers:
 

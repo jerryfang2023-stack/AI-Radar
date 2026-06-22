@@ -127,6 +127,10 @@ Weekend monitor quantity floors may be lighter because source volume is lower, b
 - Do not restore daily observation, business brief, trend report, publiccopy, cardcopy, or copy-style blockers.
 - Do not lower Raw / Pool / Core Pool / Top10 quality gates to make a day look complete.
 - Do not relax the large-company cap to solve weekend low supply; repair non-large Core Pool supply instead.
+- If routed Pool, Core Pool, or non-large Core Pool is short, repair with targeted recent-event refill: launches, funding, customer deployments, production rollouts, procurement, pricing, regulatory, or vertical workflow cases.
+- Do not satisfy quantity gaps by promoting marketplace listings, directories, repo roots, package/model pages, generic guides, broad lists, funding roundups, generic funding commentary, interviews, old evergreen technical posts, or search snippets into Core Pool.
+- Do not satisfy quantity gaps with generic FDE / applied-AI implementation pages. Job posts, role explainers, consulting/service landing pages, and "what is FDE" articles stay non-core unless the same original source has a concrete dated customer deployment, launch, financing, procurement, partnership, or production rollout.
+- Treat `source_level` / `acquisition_source_level` as traceability-only labels. They must not be value scores, core gates, ranking inputs, or automatic downgrade reasons.
 - Do not rerun the full chain repeatedly for the same failure category without a targeted repair.
 - Do not deploy directly from automation branches.
 

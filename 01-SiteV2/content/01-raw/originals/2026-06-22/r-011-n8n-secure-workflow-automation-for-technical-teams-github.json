@@ -1,0 +1,256 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-011",
+  "title": "n8n - Secure Workflow Automation for Technical Teams - GitHub",
+  "original_url": "https://github.com/n8n-io/n8n",
+  "canonical_url": "https://github.com/n8n-io/n8n",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "ai_transformation",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-22T06:23:05.583Z",
+  "language": "mixed",
+  "full_text": "n8n-io\nn8n\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n58.7k\nStar\n194k\nmaster\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n21,004 Commits\n21,004 Commits\n.agents/ skills\n.agents/ skills\n.claude\n.claude\n.devcontainer\n.devcontainer\n.github\n.github\n.opencode/ skills/ setup-mcps\n.opencode/ skills/ setup-mcps\n.vscode\n.vscode\nassets\nassets\ndocker/ images\ndocker/ images\ndocs\ndocs\npackages\npackages\npatches\npatches\nscripts\nscripts\nsecurity\nsecurity\n.actrc\n.actrc\n.aikido\n.aikido\n.code-health-baseline.json\n.code-health-baseline.json\n.dockerignore\n.dockerignore\n.editorconfig\n.editorconfig\n.env.local.example\n.env.local.example\n.git-blame-ignore-revs\n.git-blame-ignore-revs\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\n.npmignore\n.npmignore\n.npmrc\n.npmrc\n.poutine.yml\n.poutine.yml\n.prettierignore\n.prettierignore\n.prettierrc.js\n.prettierrc.js\n.tbls.postgres.yml\n.tbls.postgres.yml\n.tbls.sqlite.yml\n.tbls.sqlite.yml\nAGENTS.md\nAGENTS.md\nCHANGELOG.md\nCHANGELOG.md\nCLAUDE.md\nCLAUDE.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nCONTRIBUTOR_LICENSE_AGREEMENT.md\nCONTRIBUTOR_LICENSE_AGREEMENT.md\nLICENSE.md\nLICENSE.md\nLICENSE_EE.md\nLICENSE_EE.md\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nbiome.jsonc\nbiome.jsonc\ncodecov.yml\ncodecov.yml\ncubic.yaml\ncubic.yaml\njest.config.js\njest.config.js\njest.coverage-excludes.js\njest.coverage-excludes.js\nlefthook.yml\nlefthook.yml\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\nrenovate.json\nrenovate.json\ntsconfig.json\ntsconfig.json\nturbo.json\nturbo.json\nvitest.workspace.ts\nvitest.workspace.ts\nView all files\nRepository files navigation\nn8n - Secure Workflow Automation for Technical Teams\nn8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.\nKey Capabilities\nCode When You Need It : Write JavaScript/Python, add npm packages, or use the visual interface\nAI-Native Platform : Build AI agent workflows based on LangChain with your own data and models\nFull Control : Self-host with our fair-code license or use our cloud offering\nEnterprise-Ready : Advanced permissions, SSO, and air-gapped deployments\nActive Community : 400+ integrations and 900+ ready-to-use templates\nQuick Start\nTry n8n instantly with npx (requires Node.js ):\nnpx n8n\nOr deploy with Docker :\ndocker volume create n8n_data\ndocker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n\nAccess the editor at http://localhost:5678\nResources\n📚 Documentation\n🔧 400+ Integrations\n💡 Example Workflows\n🤖 AI & LangChain Guide\n👥 Community Forum\n📖 Community Tutorials\nSupport\nNeed help? Our community forum is the place to get support and connect with other users:\ncommunity.n8n.io\nLicense\nn8n is fair-code distributed under the Sustainable Use License and n8n Enterprise License .\nSource Available : Always visible source code\nSelf-Hostable : Deploy anywhere\nExtensible : Add your own nodes and functionality\nEnterprise Licenses available for additional features and support.\nAdditional information about the license model can be found in the docs .\nContributing\nFound a bug 🐛 or have a feature idea ✨? Check our Contributing Guide for a setup guide & best practices.\nJoin the Team\nWant to shape the future of automation? Check out our job posts and join our team!\nWhat does n8n mean?\nShort answer: It means \"nodemation\" and is pronounced as n-eight-n.\nLong answer: \"I get that question quite often (more often than I expected) so I decided it is probably best to answer it here. While looking for a good name for the project with a free domain I realized very quickly that all the good ones I could think of were already taken. So, in the end, I chose nodemation. 'node-' in the sense that it uses a Node-View and that it uses Node.js and '-mation' for 'automation' which is what the project is supposed to help with. However, I did not like how long the name was and I could not imagine writing something that long every time in the CLI. That is when I then ended up on 'n8n'.\" - Jan Oberhauser, Founder and CEO, n8n.io\nAbout\nFair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.\nn8n.io\nTopics\ncli\nworkflow\nintegrations\ndevelopment\nautomation\ntypescript\nai\nmcp\ndata-flow\nself-hosted\nipaas\napis\nworkflow-automation\nlow-code\nno-code\nintegration-framework\nn8n\nlow-code-platform\nmcp-server\nmcp-client\nResources\nReadme\nLicense\nView license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n194k\nstars\nWatchers\n1.1k\nwatching\nForks\n58.7k\nforks\nReport repository\nReleases\n683\nn8n@2.26.8\nLatest\nJun 19, 2026\n+ 682 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n90.9%\nVue\n7.5%\nJavaScript\n0.8%\nSCSS\n0.4%\nPython\n0.3%\nHandlebars\n0.1%",
+  "clean_text": "n8n-io\nn8n\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n58.7k\nStar\n194k\nmaster\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n21,004 Commits\n21,004 Commits\n.agents/ skills\n.agents/ skills\n.claude\n.claude\n.devcontainer\n.devcontainer\n.github\n.github\n.opencode/ skills/ setup-mcps\n.opencode/ skills/ setup-mcps\n.vscode\n.vscode\nassets\nassets\ndocker/ images\ndocker/ images\ndocs\ndocs\npackages\npackages\npatches\npatches\nscripts\nscripts\nsecurity\nsecurity\n.actrc\n.actrc\n.aikido\n.aikido\n.code-health-baseline.json\n.code-health-baseline.json\n.dockerignore\n.dockerignore\n.editorconfig\n.editorconfig\n.env.local.example\n.env.local.example\n.git-blame-ignore-revs\n.git-blame-ignore-revs\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\n.npmignore\n.npmignore\n.npmrc\n.npmrc\n.poutine.yml\n.poutine.yml\n.prettierignore\n.prettierignore\n.prettierrc.js\n.prettierrc.js\n.tbls.postgres.yml\n.tbls.postgres.yml\n.tbls.sqlite.yml\n.tbls.sqlite.yml\nAGENTS.md\nAGENTS.md\nCHANGELOG.md\nCHANGELOG.md\nCLAUDE.md\nCLAUDE.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nCONTRIBUTOR_LICENSE_AGREEMENT.md\nCONTRIBUTOR_LICENSE_AGREEMENT.md\nLICENSE.md\nLICENSE.md\nLICENSE_EE.md\nLICENSE_EE.md\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nbiome.jsonc\nbiome.jsonc\ncodecov.yml\ncodecov.yml\ncubic.yaml\ncubic.yaml\njest.config.js\njest.config.js\njest.coverage-excludes.js\njest.coverage-excludes.js\nlefthook.yml\nlefthook.yml\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\nrenovate.json\nrenovate.json\ntsconfig.json\ntsconfig.json\nturbo.json\nturbo.json\nvitest.workspace.ts\nvitest.workspace.ts\nView all files\nRepository files navigation\nn8n - Secure Workflow Automation for Technical Teams\nn8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.\nKey Capabilities\nCode When You Need It : Write JavaScript/Python, add npm packages, or use the visual interface\nAI-Native Platform : Build AI agent workflows based on LangChain with your own data and models\nFull Control : Self-host with our fair-code license or use our cloud offering\nEnterprise-Ready : Advanced permissions, SSO, and air-gapped deployments\nActive Community : 400+ integrations and 900+ ready-to-use templates\nQuick Start\nTry n8n instantly with npx (requires Node.js ):\nnpx n8n\nOr deploy with Docker :\ndocker volume create n8n_data\ndocker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n\nAccess the editor at http://localhost:5678\nResources\n📚 Documentation\n🔧 400+ Integrations\n💡 Example Workflows\n🤖 AI & LangChain Guide\n👥 Community Forum\n📖 Community Tutorials\nSupport\nNeed help? Our community forum is the place to get support and connect with other users:\ncommunity.n8n.io\nLicense\nn8n is fair-code distributed under the Sustainable Use License and n8n Enterprise License .\nSource Available : Always visible source code\nSelf-Hostable : Deploy anywhere\nExtensible : Add your own nodes and functionality\nEnterprise Licenses available for additional features and support.\nAdditional information about the license model can be found in the docs .\nContributing\nFound a bug 🐛 or have a feature idea ✨? Check our Contributing Guide for a setup guide & best practices.\nJoin the Team\nWant to shape the future of automation? Check out our job posts and join our team!\nWhat does n8n mean?\nShort answer: It means \"nodemation\" and is pronounced as n-eight-n.\nLong answer: \"I get that question quite often (more often than I expected) so I decided it is probably best to answer it here. While looking for a good name for the project with a free domain I realized very quickly that all the good ones I could think of were already taken. So, in the end, I chose nodemation. 'node-' in the sense that it uses a Node-View and that it uses Node.js and '-mation' for 'automation' which is what the project is supposed to help with. However, I did not like how long the name was and I could not imagine writing something that long every time in the CLI. That is when I then ended up on 'n8n'.\" - Jan Oberhauser, Founder and CEO, n8n.io\nAbout\nFair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.\nn8n.io\nTopics\ncli\nworkflow\nintegrations\ndevelopment\nautomation\ntypescript\nai\nmcp\ndata-flow\nself-hosted\nipaas\napis\nworkflow-automation\nlow-code\nno-code\nintegration-framework\nn8n\nlow-code-platform\nmcp-server\nmcp-client\nResources\nReadme\nLicense\nView license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n194k\nstars\nWatchers\n1.1k\nwatching\nForks\n58.7k\nforks\nReport repository\nReleases\n683\nn8n@2.26.8\nLatest\nJun 19, 2026\n+ 682 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n90.9%\nVue\n7.5%\nJavaScript\n0.8%\nSCSS\n0.4%\nPython\n0.3%\nHandlebars\n0.1%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-22/r-011-n8n-secure-workflow-automation-for-technical-teams-github.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-22/r-011-n8n-secure-workflow-automation-for-technical-teams-github.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 5442,
+    "paragraph_count": 47,
+    "sentence_count": 31,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0022,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 5442,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "6355b0dd1480ef4a",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "c37165a31cd3fc39",
+  "content_hash": "6355b0dd1480ef4a",
+  "full_text_hash": "6355b0dd1480ef4a",
+  "semantic_hash": "83a251474c0393c5",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-22T06:23:05.583Z",
+  "last_seen_at": "2026-06-22T06:23:05.583Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "funding",
+      "text": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations. ... n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native ... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "n8n-io n8n Public Notifications You must be signed in to change notification settings Fork 58.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "7k Star 194k master Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 21,004 Commits 21,004 Commits .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "opencode/ skills/ setup-mcps .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "vscode assets assets docker/ images docker/ images docs docs packages packages patches patches scripts scripts security security .",
+      "supports": [
+        "daily_observation",
+        "heatmap"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "GitHub"
+    ],
+    "products": [
+      "agents",
+      "claude",
+      "AGENTS",
+      "CLAUDE",
+      "agent",
+      "mcp"
+    ],
+    "people": [],
+    "industries": [
+      "医疗",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "8",
+      "400",
+      "58.7",
+      "194",
+      "21",
+      "004",
+      "900",
+      "5678"
+    ],
+    "quotes": [
+      "nodemation"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations. ... n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native ... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem",
+      "n8n-io n8n Public Notifications You must be signed in to change notification settings Fork 58.",
+      "7k Star 194k master Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 21,004 Commits 21,004 Commits ."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": [
+      "vscode assets assets docker/ images docker/ images docs docs packages packages patches patches scripts scripts security security ."
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# n8n - Secure Workflow Automation for Technical Teams - GitHub\n\n- raw_id: R-011\n- original_url: https://github.com/n8n-io/n8n\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-22T06:23:05.583Z\n\n## clean_text\n\nn8n-io\nn8n\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n58.7k\nStar\n194k\nmaster\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n21,004 Commits\n21,004 Commits\n.agents/ skills\n.agents/ skills\n.claude\n.claude\n.devcontainer\n.devcontainer\n.github\n.github\n.opencode/ skills/ setup-mcps\n.opencode/ skills/ setup-mcps\n.vscode\n.vscode\nassets\nassets\ndocker/ images\ndocker/ images\ndocs\ndocs\npackages\npackages\npatches\npatches\nscripts\nscripts\nsecurity\nsecurity\n.actrc\n.actrc\n.aikido\n.aikido\n.code-health-baseline.json\n.code-health-baseline.json\n.dockerignore\n.dockerignore\n.editorconfig\n.editorconfig\n.env.local.example\n.env.local.example\n.git-blame-ignore-revs\n.git-blame-ignore-revs\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\n.npmignore\n.npmignore\n.npmrc\n.npmrc\n.poutine.yml\n.poutine.yml\n.prettierignore\n.prettierignore\n.prettierrc.js\n.prettierrc.js\n.tbls.postgres.yml\n.tbls.postgres.yml\n.tbls.sqlite.yml\n.tbls.sqlite.yml\nAGENTS.md\nAGENTS.md\nCHANGELOG.md\nCHANGELOG.md\nCLAUDE.md\nCLAUDE.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nCONTRIBUTOR_LICENSE_AGREEMENT.md\nCONTRIBUTOR_LICENSE_AGREEMENT.md\nLICENSE.md\nLICENSE.md\nLICENSE_EE.md\nLICENSE_EE.md\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nbiome.jsonc\nbiome.jsonc\ncodecov.yml\ncodecov.yml\ncubic.yaml\ncubic.yaml\njest.config.js\njest.config.js\njest.coverage-excludes.js\njest.coverage-excludes.js\nlefthook.yml\nlefthook.yml\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\nrenovate.json\nrenovate.json\ntsconfig.json\ntsconfig.json\nturbo.json\nturbo.json\nvitest.workspace.ts\nvitest.workspace.ts\nView all files\nRepository files navigation\nn8n - Secure Workflow Automation for Technical Teams\nn8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.\nKey Capabilities\nCode When You Need It : Write JavaScript/Python, add npm packages, or use the visual interface\nAI-Native Platform : Build AI agent workflows based on LangChain with your own data and models\nFull Control : Self-host with our fair-code license or use our cloud offering\nEnterprise-Ready : Advanced permissions, SSO, and air-gapped deployments\nActive Community : 400+ integrations and 900+ ready-to-use templates\nQuick Start\nTry n8n instantly with npx (requires Node.js ):\nnpx n8n\nOr deploy with Docker :\ndocker volume create n8n_data\ndocker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n\nAccess the editor at http://localhost:5678\nResources\n📚 Documentation\n🔧 400+ Integrations\n💡 Example Workflows\n🤖 AI & LangChain Guide\n👥 Community Forum\n📖 Community Tutorials\nSupport\nNeed help? Our community forum is the place to get support and connect with other users:\ncommunity.n8n.io\nLicense\nn8n is fair-code distributed under the Sustainable Use License and n8n Enterprise License .\nSource Available : Always visible source code\nSelf-Hostable : Deploy anywhere\nExtensible : Add your own nodes and functionality\nEnterprise Licenses available for additional features and support.\nAdditional information about the license model can be found in the docs .\nContributing\nFound a bug 🐛 or have a feature idea ✨? Check our Contributing Guide for a setup guide & best practices.\nJoin the Team\nWant to shape the future of automation? Check out our job posts and join our team!\nWhat does n8n mean?\nShort answer: It means \"nodemation\" and is pronounced as n-eight-n.\nLong answer: \"I get that question quite often (more often than I expected) so I decided it is probably best to answer it here. While looking for a good name for the project with a free domain I realized very quickly that all the good ones I could think of were already taken. So, in the end, I chose nodemation. 'node-' in the sense that it uses a Node-View and that it uses Node.js and '-mation' for 'automation' which is what the project is supposed to help with. However, I did not like how long the name was and I could not imagine writing something that long every time in the CLI. That is when I then ended up on 'n8n'.\" - Jan Oberhauser, Founder and CEO, n8n.io\nAbout\nFair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.\nn8n.io\nTopics\ncli\nworkflow\nintegrations\ndevelopment\nautomation\ntypescript\nai\nmcp\ndata-flow\nself-hosted\nipaas\napis\nworkflow-automation\nlow-code\nno-code\nintegration-framework\nn8n\nlow-code-platform\nmcp-server\nmcp-client\nResources\nReadme\nLicense\nView license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n194k\nstars\nWatchers\n1.1k\nwatching\nForks\n58.7k\nforks\nReport repository\nReleases\n683\nn8n@2.26.8\nLatest\nJun 19, 2026\n+ 682 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n90.9%\nVue\n7.5%\nJavaScript\n0.8%\nSCSS\n0.4%\nPython\n0.3%\nHandlebars\n0.1%\n\n## full_text\n\nn8n-io\nn8n\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n58.7k\nStar\n194k\nmaster\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n21,004 Commits\n21,004 Commits\n.agents/ skills\n.agents/ skills\n.claude\n.claude\n.devcontainer\n.devcontainer\n.github\n.github\n.opencode/ skills/ setup-mcps\n.opencode/ skills/ setup-mcps\n.vscode\n.vscode\nassets\nassets\ndocker/ images\ndocker/ images\ndocs\ndocs\npackages\npackages\npatches\npatches\nscripts\nscripts\nsecurity\nsecurity\n.actrc\n.actrc\n.aikido\n.aikido\n.code-health-baseline.json\n.code-health-baseline.json\n.dockerignore\n.dockerignore\n.editorconfig\n.editorconfig\n.env.local.example\n.env.local.example\n.git-blame-ignore-revs\n.git-blame-ignore-revs\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\n.npmignore\n.npmignore\n.npmrc\n.npmrc\n.poutine.yml\n.poutine.yml\n.prettierignore\n.prettierignore\n.prettierrc.js\n.prettierrc.js\n.tbls.postgres.yml\n.tbls.postgres.yml\n.tbls.sqlite.yml\n.tbls.sqlite.yml\nAGENTS.md\nAGENTS.md\nCHANGELOG.md\nCHANGELOG.md\nCLAUDE.md\nCLAUDE.md\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nCONTRIBUTOR_LICENSE_AGREEMENT.md\nCONTRIBUTOR_LICENSE_AGREEMENT.md\nLICENSE.md\nLICENSE.md\nLICENSE_EE.md\nLICENSE_EE.md\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nbiome.jsonc\nbiome.jsonc\ncodecov.yml\ncodecov.yml\ncubic.yaml\ncubic.yaml\njest.config.js\njest.config.js\njest.coverage-excludes.js\njest.coverage-excludes.js\nlefthook.yml\nlefthook.yml\npackage.json\npackage.json\npnpm-lock.yaml\npnpm-lock.yaml\npnpm-workspace.yaml\npnpm-workspace.yaml\nrenovate.json\nrenovate.json\ntsconfig.json\ntsconfig.json\nturbo.json\nturbo.json\nvitest.workspace.ts\nvitest.workspace.ts\nView all files\nRepository files navigation\nn8n - Secure Workflow Automation for Technical Teams\nn8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.\nKey Capabilities\nCode When You Need It : Write JavaScript/Python, add npm packages, or use the visual interface\nAI-Native Platform : Build AI agent workflows based on LangChain with your own data and models\nFull Control : Self-host with our fair-code license or use our cloud offering\nEnterprise-Ready : Advanced permissions, SSO, and air-gapped deployments\nActive Community : 400+ integrations and 900+ ready-to-use templates\nQuick Start\nTry n8n instantly with npx (requires Node.js ):\nnpx n8n\nOr deploy with Docker :\ndocker volume create n8n_data\ndocker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n\nAccess the editor at http://localhost:5678\nResources\n📚 Documentation\n🔧 400+ Integrations\n💡 Example Workflows\n🤖 AI & LangChain Guide\n👥 Community Forum\n📖 Community Tutorials\nSupport\nNeed help? Our community forum is the place to get support and connect with other users:\ncommunity.n8n.io\nLicense\nn8n is fair-code distributed under the Sustainable Use License and n8n Enterprise License .\nSource Available : Always visible source code\nSelf-Hostable : Deploy anywhere\nExtensible : Add your own nodes and functionality\nEnterprise Licenses available for additional features and support.\nAdditional information about the license model can be found in the docs .\nContributing\nFound a bug 🐛 or have a feature idea ✨? Check our Contributing Guide for a setup guide & best practices.\nJoin the Team\nWant to shape the future of automation? Check out our job posts and join our team!\nWhat does n8n mean?\nShort answer: It means \"nodemation\" and is pronounced as n-eight-n.\nLong answer: \"I get that question quite often (more often than I expected) so I decided it is probably best to answer it here. While looking for a good name for the project with a free domain I realized very quickly that all the good ones I could think of were already taken. So, in the end, I chose nodemation. 'node-' in the sense that it uses a Node-View and that it uses Node.js and '-mation' for 'automation' which is what the project is supposed to help with. However, I did not like how long the name was and I could not imagine writing something that long every time in the CLI. That is when I then ended up on 'n8n'.\" - Jan Oberhauser, Founder and CEO, n8n.io\nAbout\nFair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.\nn8n.io\nTopics\ncli\nworkflow\nintegrations\ndevelopment\nautomation\ntypescript\nai\nmcp\ndata-flow\nself-hosted\nipaas\napis\nworkflow-automation\nlow-code\nno-code\nintegration-framework\nn8n\nlow-code-platform\nmcp-server\nmcp-client\nResources\nReadme\nLicense\nView license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n194k\nstars\nWatchers\n1.1k\nwatching\nForks\n58.7k\nforks\nReport repository\nReleases\n683\nn8n@2.26.8\nLatest\nJun 19, 2026\n+ 682 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n90.9%\nVue\n7.5%\nJavaScript\n0.8%\nSCSS\n0.4%\nPython\n0.3%\nHandlebars\n0.1%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [funding / daily_observation, heatmap, trend / high] Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations. ... n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native ... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem\n2. [company_action / daily_observation, heatmap, change, case, trend / high] n8n-io n8n Public Notifications You must be signed in to change notification settings Fork 58.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] 7k Star 194k master Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 21,004 Commits 21,004 Commits .\n4. [company_action / daily_observation, heatmap, change, case, trend / high] opencode/ skills/ setup-mcps .\n5. [supporting_context / daily_observation, heatmap / high] vscode assets assets docker/ images docker/ images docs docs packages packages patches patches scripts scripts security security .\n"
+}

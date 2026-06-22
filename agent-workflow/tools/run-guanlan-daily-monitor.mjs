@@ -1347,8 +1347,48 @@ function dayFromUrl(value = "") {
   return `${year}-${month}-${day}`;
 }
 
+function dayFromText(value = "") {
+  const text = String(value || "");
+  const months = {
+    jan: "01",
+    january: "01",
+    feb: "02",
+    february: "02",
+    mar: "03",
+    march: "03",
+    apr: "04",
+    april: "04",
+    may: "05",
+    jun: "06",
+    june: "06",
+    jul: "07",
+    july: "07",
+    aug: "08",
+    august: "08",
+    sep: "09",
+    sept: "09",
+    september: "09",
+    oct: "10",
+    october: "10",
+    nov: "11",
+    november: "11",
+    dec: "12",
+    december: "12",
+  };
+  const match = text.match(/\b(?:published|updated|posted|date)?\s*:?\s*(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t|tember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\.?\s+(\d{1,2})(?:-\d{1,2})?,?\s+(20\d{2})\b/iu);
+  if (!match) return "";
+  const [, rawMonth, rawDay, year] = match;
+  const month = months[rawMonth.toLowerCase()];
+  const day = rawDay.padStart(2, "0");
+  if (!month || !validDateParts(year, month, day)) return "";
+  return `${year}-${month}-${day}`;
+}
+
 function sourceDayForItem(item = {}) {
-  return publishedDay(item.published_at) || dayFromUrl(item.url) || dayFromUrl(item.source);
+  return publishedDay(item.published_at)
+    || dayFromUrl(item.url)
+    || dayFromUrl(item.source)
+    || dayFromText(`${item.title || ""} ${item.summary || ""} ${item.snapshot?.text || ""}`);
 }
 
 function isStaleCoreCandidate(item = {}, maxAgeDays = 14) {
@@ -2032,6 +2072,19 @@ function isRepositoryOrCatalogCoreBlockedItem(item = {}) {
     && !/blog|news|press|release|announc|changelog|customer|case-study/iu.test(`${path} ${text}`);
 }
 
+function isGenericFdeRoleOrServicePage(item = {}) {
+  const host = urlHost(item.url || "");
+  const path = `/${urlPathSegments(item).join("/")}`.toLowerCase();
+  const text = `${item.title || ""} ${item.summary || ""} ${item.url || ""} ${item.source || ""}`.toLowerCase();
+  const combined = `${host} ${path} ${text}`;
+  const eventText = combined.replace(/\/\s*query=.*$/iu, "");
+  const fdeRoleOrService = /forward[-\s]?deployed[-\s]?(?:engineer|engineering)|\bfde\b|applied ai engineer|ai implementation service|customer engineering|technical deployment lead/iu.test(combined);
+  if (!fdeRoleOrService) return false;
+  const genericPage = /(^|\/)(?:hire|forward-deployed-engineer|forward-deployed-engineering|fde|services?|careers?|jobs?|roles?)(?:[-/]|$)|what is|role|career|job|hire|services?|consulting|implementation|for ai implementation|critical bridge|from the customer|embedded ai workflow delivery|customer-embedded function/iu.test(combined);
+  const concreteOriginalEvent = /customer story|case study|customer case|new customer|customer adopts|deployment announced|launch(?:es|ed)?|release(?:s|d)?|announc(?:e|es|ed|ement)|raise(?:s|d)?|funding|acqui(?:re|res|red|sition)|partner(?:s|ed|ship)|procurement|contract|pilot customer/iu.test(eventText);
+  return genericPage && !concreteOriginalEvent;
+}
+
 function classifyEvidenceObjectType(item = {}, snapshotText = "", excerpts = []) {
   const host = urlHost(item.url || "");
   const path = `/${urlPathSegments(item).join("/")}`.toLowerCase();
@@ -2103,7 +2156,10 @@ function isGenericReportOrListItem(item = {}) {
   if (/yc\.com\/companies\/industry|\/research\/enterprise-ai-agent|data-room\/ycombinator|\.pdf(?:$|[?#])|docs\.github\.com|dev\.to|aws marketplace:|docs\.aws\.com\/marketplace|pypi|\/packages?\//iu.test(urlSource)) {
     return true;
   }
-  return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent|series-b-enterprise-ai-agents|ai agent startups insight partners funding/iu.test(titleUrlSource);
+  if (isGenericFdeRoleOrServicePage(item)) {
+    return true;
+  }
+  return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|funding bubble|funding roundup|biggest funding rounds|pre-seed slowdown|fund focused on ai|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent|series-b-enterprise-ai-agents|ai agent startups insight partners funding/iu.test(titleUrlSource);
 }
 
 function hasExplicitChangeAction(item = {}, snapshotText = "", excerpts = []) {
@@ -3832,30 +3888,30 @@ async function runSourceOnly() {
 
 const targetedRefillQueriesByImportance = {
   important_case: [
-    "AI agent case study customer story enterprise deployment",
-    "AI platform customer story case study enterprise automation",
-    "enterprise AI agent customer adopts production rollout case study",
-    "AI agent design partner pilot production rollout customer story",
+    `enterprise AI agent customer story deployment announced ${date.slice(0, 4)}`,
+    `AI platform case study production rollout customer ${date.slice(0, 4)}`,
+    `enterprise AI agent customer adopts production rollout case study ${date.slice(0, 4)}`,
+    `AI agent pilot customer production rollout case study ${date.slice(0, 4)}`,
   ],
   important_funding: [
-    "AI startup funding seed Series A vertical AI enterprise agents",
-    "AI agent startup raises funding seed venture enterprise automation",
-    "YC AI startup funding vertical AI agent workflow",
+    `AI agent startup raises seed Series A funding ${date.slice(0, 4)}`,
+    `vertical AI startup funding enterprise agents announced ${date.slice(0, 4)}`,
+    `AI workflow automation startup raises venture funding ${date.slice(0, 4)}`,
   ],
   important_product_or_service: [
-    "AI agent product launch enterprise workflow platform release",
-    "AI coding agent API SDK launch enterprise product update",
-    "AI platform launches agent workflow automation service",
+    `AI agent product launch enterprise workflow platform announced ${date.slice(0, 4)}`,
+    `AI coding agent API SDK release enterprise product update ${date.slice(0, 4)}`,
+    `AI platform launches agent workflow automation service ${date.slice(0, 4)}`,
   ],
   important_vertical_solution: [
-    "vertical AI solution customer deployment healthcare finance manufacturing",
-    "AI agent vertical SaaS customer workflow deployment case",
-    "enterprise AI deployment industry workflow customer story",
+    `vertical AI solution customer deployment healthcare finance manufacturing ${date.slice(0, 4)}`,
+    `AI agent vertical SaaS customer workflow deployment case ${date.slice(0, 4)}`,
+    `enterprise AI deployment industry workflow customer story ${date.slice(0, 4)}`,
   ],
   important_technical_trend: [
-    "model release inference cost reduction enterprise adoption",
-    "AI infrastructure launch inference optimization enterprise deployment",
-    "agentic AI platform architecture enterprise adoption release",
+    `model release inference cost reduction enterprise adoption ${date.slice(0, 4)}`,
+    `AI infrastructure launch inference optimization enterprise deployment ${date.slice(0, 4)}`,
+    `agentic AI platform architecture enterprise adoption release ${date.slice(0, 4)}`,
   ],
 };
 
@@ -3872,6 +3928,7 @@ const targetedCoreRefillImportanceOrder = [
   "important_funding",
   "important_vertical_solution",
   "important_product_or_service",
+  "important_technical_trend",
 ];
 
 function keywordPathById(id) {
@@ -3882,11 +3939,14 @@ function coreSupplyGaps(items) {
   const poolItems = selectMonitorPoolItems(items);
   const metas = poolItems.map(poolCandidateMeta);
   const coreMetas = metas.filter((meta) => meta.isCore);
+  const routedMetas = metas.filter((meta) => meta.isRouted);
   const nonLargeCoreMetas = coreMetas.filter((meta) => !meta.isLargeVendor);
   return {
     coreCount: coreMetas.length,
+    routedCount: routedMetas.length,
     nonLargeCoreCount: nonLargeCoreMetas.length,
     gaps: [
+      routedMetas.length < routedPoolMinTarget ? `routed_pool=${routedMetas.length}/${routedPoolMinTarget}` : "",
       coreMetas.length < corePoolMinTarget ? `core_pool=${coreMetas.length}/${corePoolMinTarget}` : "",
       nonLargeCoreMetas.length < coreNonLargeVendorMinTarget ? `core_non_large=${nonLargeCoreMetas.length}/${coreNonLargeVendorMinTarget}` : "",
     ].filter(Boolean),
@@ -3897,6 +3957,7 @@ function refillRequestsForPoolState(poolGaps, supplyGaps) {
   if (poolGaps.length) return poolGaps;
   if (!supplyGaps.gaps.length) return [];
   const needed = Math.max(
+    routedPoolMinTarget - supplyGaps.routedCount,
     corePoolMinTarget - supplyGaps.coreCount,
     coreNonLargeVendorMinTarget - supplyGaps.nonLargeCoreCount,
     1

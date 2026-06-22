@@ -31,8 +31,8 @@ Business Signals must keep the daily Top10 as the default primary view. It may p
 
 | Scope | Version | Meaning |
 |---|---|---|
-| Main website | `SITE-V3.3.8.1` | Current GitHub Pages frontstage release. |
-| Business Signals column | `BSIG-V1.1.0-enterprise-ai-transformation` | Keeps Top10 as the primary business-signal desk and adds the 企业AI化 secondary lens. |
+| Main website | `SITE-V3.3.8.2` | Current GitHub Pages frontstage release. |
+| Business Signals column | `BSIG-V1.1.1-core-source-hygiene` | Keeps Top10 as the primary business-signal desk, keeps the 企业AI化 secondary lens, and applies Core Pool source hygiene gates. |
 | Enterprise AI / FDE lens | `EAI-V1.1.0-fde-lens-pool` | Boss-facing implementation lens backed by the independent FDE Lens Pool; not a fourth Card type. |
 
 ## Unified Navigation

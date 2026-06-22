@@ -1,0 +1,266 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-049
+title: "Custom stores, custom tools, and auto-review for the Cursor SDK · Cursor"
+original_url: "https://cursor.com/changelog/sdk-updates-jun-2026"
+canonical_url: "https://cursor.com/changelog/sdk-updates-jun-2026"
+source_name: "keyword search / Anysearch"
+source_type: official
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: changelog_or_release
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-22T06:23:06.099Z
+language: mixed
+full_text_hash: 6994220a6de24e2d
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-049-custom-stores-custom-tools-and-auto-review-for-the-cursor-sdk-cursor.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-049-custom-stores-custom-tools-and-auto-review-for-the-cursor-sdk-cursor.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":5855,"paragraph_count":29,"sentence_count":48,"boilerplate_hits":0,"symbol_ratio":0.0017,"method":"main"}
+has_full_text: true
+content_length: 5855
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6994220a6de24e2d","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 7da739ccef233dea
+content_hash: 6994220a6de24e2d
+semantic_hash: f994dd001fa98b8f
+duplicate_of: ""
+first_seen_at: "2026-06-22T06:23:06.099Z"
+last_seen_at: 2026-06-22T06:23:06.099Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","Cursor"],"products":["Cursor","agent","agents","Agent","MCP","cursor"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["4","2026","1.1","2 b","2305","2307","2","2.5"],"quotes":["allow_instructions","Read-only inspections of build artifacts under ./dist are fine.","block_instructions","Always pause delete operations so I get a chance to review them.","agent not found"]}
+evidence_seed: {"company_actions":["Jun 4, 2026 · Changelog ... We've shipped a batch of new functionality across the TypeScript and Python SDKs. You can now choose how agent and run metadata is persisted, expose your own functions to the agent as tools, route local tool calls through auto-review, and nest subagents to any depth. This... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original","Jun 4, 2026 · Changelog We've shipped a batch of new functionality across the TypeScript and Python SDKs.","You can now choose how agent and run metadata is persisted, expose your own functions to the agent as tools, route local tool calls through auto-review, and nest subagents to any depth."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"Jun 4, 2026 · Changelog ... We've shipped a batch of new functionality across the TypeScript and Python SDKs. You can now choose how agent and run metadata is persisted, expose your own functions to the agent as tools, route local tool calls through auto-review, and nest subagents to any depth. This... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Jun 4, 2026 · Changelog We've shipped a batch of new functionality across the TypeScript and Python SDKs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"You can now choose how agent and run metadata is persisted, expose your own functions to the agent as tools, route local tool calls through auto-review, and nest subagents to any depth.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"This release also brings a set of reliability, performance, and platform fixes that make local and cloud SDK agents easier to run in production scripts, CI, and custom integrations.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"# Custom tools You can now hand the local agent your own tools by passing function definitions through local.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"customTools , on Agent.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Custom stores, custom tools, and auto-review for the Cursor SDK · Cursor
+
+## clean_text
+
+Jun 4, 2026  ·  Changelog
+We've shipped a batch of new functionality across the TypeScript and Python SDKs. You can now choose how agent and run metadata is persisted, expose your own functions to the agent as tools, route local tool calls through auto-review, and nest subagents to any depth. This release also brings a set of reliability, performance, and platform fixes that make local and cloud SDK agents easier to run in production scripts, CI, and custom integrations.
+# Custom tools
+You can now hand the local agent your own tools by passing function definitions through local.customTools , on Agent.create() or per send() . The SDK exposes them to the agent through a built-in MCP server called custom-user-tools , so the model calls your code through the same path and the same permission gate as any other MCP tool.
+Before this, exposing a custom capability meant standing up your own stdio or remote HTTP MCP server and wiring it into the agent. Now a function definition is enough. Custom tools are also visible to every subagent of a parent agent, so a tool you define once is available throughout the whole run.
+# Auto-review
+By default, a local SDK agent runs tool calls without asking for approval, since there's no human in the loop in a headless run. Set local.autoReview to route those calls through auto-review instead. A classifier decides which calls run automatically and which to hold back, rather than bypassing review entirely.
+You steer that classifier with natural-language instructions in permissions.json . The autoRun.allow_instructions field describes call shapes to lean toward allowing, and autoRun.block_instructions describes the ones to hold for review. For example, you can allow read-only inspections of build artifacts while always pausing on destructive operations like deletes.
+"autoRun" : {
+"allow_instructions" : [
+"Read-only inspections of build artifacts under ./dist are fine."
+],
+"block_instructions" : [
+"Always pause delete operations so I get a chance to review them."
+# JSONL and custom stores
+Both SDKs persist agent and run metadata so you can resume an agent after a process restart. Until now, that store was SQLite. You can now opt into a JSONL store instead, which writes a plain, append-only file you can read, diff, and check into version control. Both SqliteLocalAgentStore and JsonlLocalAgentStore are exported directly.
+If neither default fits your setup, implement the public LocalAgentStore interface and pass it through local.store . Build an in-memory store for ephemeral CI runs, or back persistence with Postgres when you want agent state to live next to the rest of your application data. The Python SDK exposes host, JSONL, and composed JSONL stores through the bridge.
+# Nested subagents
+Subagents can now spawn their own subagents, and so on. A reviewer subagent can delegate to a test-writer, which can delegate further, with each level keeping its own prompt and model. There's nothing to turn on; a subagent session registers the executor it needs to call Task , so nesting works automatically for any agent that defines subagents.
+# Reliability, performance, and platform improvements
+This release also includes a batch of quality-of-life fixes across both SDKs.
+Reliability ↓ ↑
+Run correlation : Every send() now carries a platform-generated requestId , exposed on Run and RunResult and persisted across the in-memory, SQLite, and JSONL stores. Tie a script or CI run to backend logs, analytics, and support threads without inferring it from agentId .
+Reliable wait() on local runs : Local runs no longer resolve wait() before the terminal result is written. Hydration keeps refreshing until the run reaches a final state, so automation reads a complete result.
+Safe checkpoints on dispose : Disposing a local agent no longer removes checkpoint data when a root reference is missing but checkpoint blobs still exist. The agent directory is only cleared when there's genuinely nothing left to keep.
+Cloud streaming over HTTP/1.1 : Cloud agent sessions now stream correctly on HTTP/1.1 transports used by some proxies, older Node fetch stacks, and certain CI images. HTTP/2 behavior is unchanged.
+Performance and packaging ↓ ↑
+Lighter import : Importing @cursor/sdk no longer eagerly loads the full local agent stack. Cloud-only and type-only consumers skip the local runtime cost until the first local call, with no API change. The first local call pays a one-time import, then stays cached.
+Self-contained TypeScript types : Published .d.ts files no longer reference unpublished workspace packages. This fixes TS2305 and TS2307 errors under skipLibCheck: false and silent any on stream types like TurnEndedUpdate .
+Bundled ripgrep : Local shell runs use the bundled platform rg binary without modifying your global PATH . On Windows, prepending ripgrep no longer clobbers the Path variable.
+Models ↓ ↑
+Composer 2 routes to Composer 2.5 : SDK clients still pinning retired composer-2 slugs are routed to Composer 2.5 automatically, keeping fast variants intact, so older scripts keep running.
+Python SDK ↓ ↑
+Workspace-scoped list_runs : Client , AsyncClient , and Agent.list_runs take an optional cwd , and the bridge falls back to its launch workspace. This fixes spurious "agent not found" results when the bridge runs as a subprocess.
+Clearer not-found errors : Looking up an agent that isn't in the resolved workspace returns a clear not-found error instead of an opaque internal error.
+0.1.6 release and analytics : cursor-sdk 0.1.6 documents the Buildkite release path and labels SDK usage as sdk-python- for clearer analytics.
+Run npm install @cursor/sdk or pip install cursor-sdk to upgrade. Scripts pinning composer-2 move to Composer 2.5 automatically, and requestId is a safe addition to your run metadata schema. See the TypeScript and Python docs for full details.
+
+## full_text
+
+Jun 4, 2026  ·  Changelog
+We've shipped a batch of new functionality across the TypeScript and Python SDKs. You can now choose how agent and run metadata is persisted, expose your own functions to the agent as tools, route local tool calls through auto-review, and nest subagents to any depth. This release also brings a set of reliability, performance, and platform fixes that make local and cloud SDK agents easier to run in production scripts, CI, and custom integrations.
+# Custom tools
+You can now hand the local agent your own tools by passing function definitions through local.customTools , on Agent.create() or per send() . The SDK exposes them to the agent through a built-in MCP server called custom-user-tools , so the model calls your code through the same path and the same permission gate as any other MCP tool.
+Before this, exposing a custom capability meant standing up your own stdio or remote HTTP MCP server and wiring it into the agent. Now a function definition is enough. Custom tools are also visible to every subagent of a parent agent, so a tool you define once is available throughout the whole run.
+# Auto-review
+By default, a local SDK agent runs tool calls without asking for approval, since there's no human in the loop in a headless run. Set local.autoReview to route those calls through auto-review instead. A classifier decides which calls run automatically and which to hold back, rather than bypassing review entirely.
+You steer that classifier with natural-language instructions in permissions.json . The autoRun.allow_instructions field describes call shapes to lean toward allowing, and autoRun.block_instructions describes the ones to hold for review. For example, you can allow read-only inspections of build artifacts while always pausing on destructive operations like deletes.
+"autoRun" : {
+"allow_instructions" : [
+"Read-only inspections of build artifacts under ./dist are fine."
+],
+"block_instructions" : [
+"Always pause delete operations so I get a chance to review them."
+# JSONL and custom stores
+Both SDKs persist agent and run metadata so you can resume an agent after a process restart. Until now, that store was SQLite. You can now opt into a JSONL store instead, which writes a plain, append-only file you can read, diff, and check into version control. Both SqliteLocalAgentStore and JsonlLocalAgentStore are exported directly.
+If neither default fits your setup, implement the public LocalAgentStore interface and pass it through local.store . Build an in-memory store for ephemeral CI runs, or back persistence with Postgres when you want agent state to live next to the rest of your application data. The Python SDK exposes host, JSONL, and composed JSONL stores through the bridge.
+# Nested subagents
+Subagents can now spawn their own subagents, and so on. A reviewer subagent can delegate to a test-writer, which can delegate further, with each level keeping its own prompt and model. There's nothing to turn on; a subagent session registers the executor it needs to call Task , so nesting works automatically for any agent that defines subagents.
+# Reliability, performance, and platform improvements
+This release also includes a batch of quality-of-life fixes across both SDKs.
+Reliability ↓ ↑
+Run correlation : Every send() now carries a platform-generated requestId , exposed on Run and RunResult and persisted across the in-memory, SQLite, and JSONL stores. Tie a script or CI run to backend logs, analytics, and support threads without inferring it from agentId .
+Reliable wait() on local runs : Local runs no longer resolve wait() before the terminal result is written. Hydration keeps refreshing until the run reaches a final state, so automation reads a complete result.
+Safe checkpoints on dispose : Disposing a local agent no longer removes checkpoint data when a root reference is missing but checkpoint blobs still exist. The agent directory is only cleared when there's genuinely nothing left to keep.
+Cloud streaming over HTTP/1.1 : Cloud agent sessions now stream correctly on HTTP/1.1 transports used by some proxies, older Node fetch stacks, and certain CI images. HTTP/2 behavior is unchanged.
+Performance and packaging ↓ ↑
+Lighter import : Importing @cursor/sdk no longer eagerly loads the full local agent stack. Cloud-only and type-only consumers skip the local runtime cost until the first local call, with no API change. The first local call pays a one-time import, then stays cached.
+Self-contained TypeScript types : Published .d.ts files no longer reference unpublished workspace packages. This fixes TS2305 and TS2307 errors under skipLibCheck: false and silent any on stream types like TurnEndedUpdate .
+Bundled ripgrep : Local shell runs use the bundled platform rg binary without modifying your global PATH . On Windows, prepending ripgrep no longer clobbers the Path variable.
+Models ↓ ↑
+Composer 2 routes to Composer 2.5 : SDK clients still pinning retired composer-2 slugs are routed to Composer 2.5 automatically, keeping fast variants intact, so older scripts keep running.
+Python SDK ↓ ↑
+Workspace-scoped list_runs : Client , AsyncClient , and Agent.list_runs take an optional cwd , and the bridge falls back to its launch workspace. This fixes spurious "agent not found" results when the bridge runs as a subprocess.
+Clearer not-found errors : Looking up an agent that isn't in the resolved workspace returns a clear not-found error instead of an opaque internal error.
+0.1.6 release and analytics : cursor-sdk 0.1.6 documents the Buildkite release path and labels SDK usage as sdk-python- for clearer analytics.
+Run npm install @cursor/sdk or pip install cursor-sdk to upgrade. Scripts pinning composer-2 move to Composer 2.5 automatically, and requestId is a safe addition to your run metadata schema. See the TypeScript and Python docs for full details.
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":5855,"paragraph_count":29,"sentence_count":48,"boilerplate_hits":0,"symbol_ratio":0.0017,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
+   Jun 4, 2026 · Changelog ... We've shipped a batch of new functionality across the TypeScript and Python SDKs. You can now choose how agent and run metadata is persisted, expose your own functions to the agent as tools, route local tool calls through auto-review, and nest subagents to any depth. This... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Jun 4, 2026 · Changelog We've shipped a batch of new functionality across the TypeScript and Python SDKs.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   You can now choose how agent and run metadata is persisted, expose your own functions to the agent as tools, route local tool calls through auto-review, and nest subagents to any depth.
+
+4. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
+   This release also brings a set of reliability, performance, and platform fixes that make local and cloud SDK agents easier to run in production scripts, CI, and custom integrations.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   # Custom tools You can now hand the local agent your own tools by passing function definitions through local.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   customTools , on Agent.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Cursor
+- products: Cursor, agent, agents, Agent, MCP, cursor
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 4, 2026, 1.1, 2 b, 2305, 2307, 2, 2.5
+- quotes: allow_instructions / Read-only inspections of build artifacts under ./dist are fine. / block_instructions / Always pause delete operations so I get a chance to review them. / agent not found
+
+## evidence_seed
+
+- company_actions: Jun 4, 2026 · Changelog ... We've shipped a batch of new functionality across the TypeScript and Python SDKs. You can now choose how agent and run metadata is persisted, expose your own functions to the agent as tools, route local tool calls through auto-review, and nest subagents to any depth. This... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original / Jun 4, 2026 · Changelog We've shipped a batch of new functionality across the TypeScript and Python SDKs. / You can now choose how agent and run metadata is persisted, expose your own functions to the agent as tools, route local tool calls through auto-review, and nest subagents to any depth.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Jun 4, 2026 · Changelog ... We've shipped a batch of new functionality across the TypeScript and Python SDKs. You can now choose how agent and run metadata is persisted, expose your own functions to the agent as tools, route local tool calls through auto-review, and nest subagents to any depth. This... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

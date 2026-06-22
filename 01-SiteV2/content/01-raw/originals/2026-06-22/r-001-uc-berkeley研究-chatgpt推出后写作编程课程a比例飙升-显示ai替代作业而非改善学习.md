@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-21T12:01:46.000Z"
-collected_at: 2026-06-22T03:45:56.010Z
+collected_at: 2026-06-22T06:23:05.483Z
 language: mixed
 full_text_hash: d9b21f7ccc1f712b
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-001-uc-berkeley研究-chatgpt推出后写作编程课程a比例飙升-显示ai替代作业而非改善学习.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"UC Berkeley研究：ChatGPT推出后写作编程课程A比例飙升，显示AI替代作业而非改善学习","discovery_summary":"UC Berkeley分析美国一所大型公立研究型大学超50万份成绩发现，自ChatGPT推出以来，写作和编程任务多的课程A等级比例跃升13个百分点，平均GPA上升0.12分。成绩涨幅主要来自家庭作业而非考试，口头展示类作业成绩未受影响，表明AI替代学生完成作业而非改善学习。研究建议重新设计作业格式。OpenAI CEO Sam Altman警告若不调整教育体系，批判性思维可能萎缩。挪威已在小学全面禁用AI。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/ai-is-inflating-student-grades-and-the-effect-points-to-outsourced-work-not-better-learning","discovered_at":"2026-06-22T03:32:56.691Z","rank_on_page":102,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"UC Berkeley研究：ChatGPT推出后写作编程课程A比例飙升，显示AI替代作业而非改善学习","discovery_summary":"UC Berkeley分析美国一所大型公立研究型大学超50万份成绩发现，自ChatGPT推出以来，写作和编程任务多的课程A等级比例跃升13个百分点，平均GPA上升0.12分。成绩涨幅主要来自家庭作业而非考试，口头展示类作业成绩未受影响，表明AI替代学生完成作业而非改善学习。研究建议重新设计作业格式。OpenAI CEO Sam Altman警告若不调整教育体系，批判性思维可能萎缩。挪威已在小学全面禁用AI。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/ai-is-inflating-student-grades-and-the-effect-points-to-outsourced-work-not-better-learning","discovered_at":"2026-06-22T06:05:44.551Z","rank_on_page":123,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: d9b21f7ccc1f712b
 semantic_hash: 81ad55b1bb2a61ba
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-21T12:01:46.000Z"
-last_seen_at: 2026-06-22T03:45:56.010Z
+last_seen_at: 2026-06-22T06:23:05.483Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -286,7 +286,7 @@ Norway recently mostly banned AI tools from elementary schools and limited their
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"UC Berkeley研究：ChatGPT推出后写作编程课程A比例飙升，显示AI替代作业而非改善学习","discovery_summary":"UC Berkeley分析美国一所大型公立研究型大学超50万份成绩发现，自ChatGPT推出以来，写作和编程任务多的课程A等级比例跃升13个百分点，平均GPA上升0.12分。成绩涨幅主要来自家庭作业而非考试，口头展示类作业成绩未受影响，表明AI替代学生完成作业而非改善学习。研究建议重新设计作业格式。OpenAI CEO Sam Altman警告若不调整教育体系，批判性思维可能萎缩。挪威已在小学全面禁用AI。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/ai-is-inflating-student-grades-and-the-effect-points-to-outsourced-work-not-better-learning","discovered_at":"2026-06-22T03:32:56.691Z","rank_on_page":102,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"UC Berkeley研究：ChatGPT推出后写作编程课程A比例飙升，显示AI替代作业而非改善学习","discovery_summary":"UC Berkeley分析美国一所大型公立研究型大学超50万份成绩发现，自ChatGPT推出以来，写作和编程任务多的课程A等级比例跃升13个百分点，平均GPA上升0.12分。成绩涨幅主要来自家庭作业而非考试，口头展示类作业成绩未受影响，表明AI替代学生完成作业而非改善学习。研究建议重新设计作业格式。OpenAI CEO Sam Altman警告若不调整教育体系，批判性思维可能萎缩。挪威已在小学全面禁用AI。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/ai-is-inflating-student-grades-and-the-effect-points-to-outsourced-work-not-better-learning","discovered_at":"2026-06-22T06:05:44.551Z","rank_on_page":123,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

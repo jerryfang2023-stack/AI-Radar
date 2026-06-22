@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-21T15:28:17.000Z"
-collected_at: 2026-06-22T03:45:56.024Z
+collected_at: 2026-06-22T06:23:05.506Z
 language: mixed
 full_text_hash: e9f73a66a42b730e
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-22/r-003-特朗普政府要求-anthropic-下线两模型引争议.md"
@@ -45,7 +45,7 @@ capture_scope: article_text
 visible_range: "抓取时页面可见正文 / 讨论文本"
 evidence_level: core_evidence_candidate
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"特朗普政府要求 Anthropic 下线两模型引争议","discovery_summary":"特朗普政府以国家安全为由要求 Anthropic 将 Fable 5 和 Mythos 5 模型下线。Anthropic 因难以限制外国国民使用而全面撤下模型。据悉，白宫接到亚马逊 CEO Andy Jassy 举报--亚马逊研究人员发现可绕过 Fable 5 的护栏。网络安全专家签署公开信要求撤销命令，认为移除这些高级网络安全能力对美国网络防御者构成危险。讨论认为此举可能带有报复色彩，与 Anthropic 此前呼吁放缓 AI 却又发布最强大模型的态度有关。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits","discovered_at":"2026-06-22T03:32:56.668Z","rank_on_page":76,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"特朗普政府要求 Anthropic 下线两模型引争议","discovery_summary":"特朗普政府以国家安全为由要求 Anthropic 将 Fable 5 和 Mythos 5 模型下线。Anthropic 因难以限制外国国民使用而全面撤下模型。据悉，白宫接到亚马逊 CEO Andy Jassy 举报--亚马逊研究人员发现可绕过 Fable 5 的护栏。网络安全专家签署公开信要求撤销命令，认为移除这些高级网络安全能力对美国网络防御者构成危险。讨论认为此举可能带有报复色彩，与 Anthropic 此前呼吁放缓 AI 却又发布最强大模型的态度有关。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits","discovered_at":"2026-06-22T06:05:44.528Z","rank_on_page":97,"discovery_status":"discovered"}
 source_role: resolved_original_source
 origin_fetch_status: "success"
 paywall_status: none
@@ -56,7 +56,7 @@ content_hash: e9f73a66a42b730e
 semantic_hash: 957cc29fefb65ab2
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-21T15:28:17.000Z"
-last_seen_at: 2026-06-22T03:45:56.024Z
+last_seen_at: 2026-06-22T06:23:05.506Z
 update_detected: false
 raw_status: pooled
 usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
@@ -302,7 +302,7 @@ Error loading the next article
 - discovery_source: AI HOT
 - source_role: resolved_original_source
 - origin_fetch_status: success
-- discovery_record: {"discovery_title":"特朗普政府要求 Anthropic 下线两模型引争议","discovery_summary":"特朗普政府以国家安全为由要求 Anthropic 将 Fable 5 和 Mythos 5 模型下线。Anthropic 因难以限制外国国民使用而全面撤下模型。据悉，白宫接到亚马逊 CEO Andy Jassy 举报--亚马逊研究人员发现可绕过 Fable 5 的护栏。网络安全专家签署公开信要求撤销命令，认为移除这些高级网络安全能力对美国网络防御者构成危险。讨论认为此举可能带有报复色彩，与 Anthropic 此前呼吁放缓 AI 却又发布最强大模型的态度有关。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits","discovered_at":"2026-06-22T03:32:56.668Z","rank_on_page":76,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"特朗普政府要求 Anthropic 下线两模型引争议","discovery_summary":"特朗普政府以国家安全为由要求 Anthropic 将 Fable 5 和 Mythos 5 模型下线。Anthropic 因难以限制外国国民使用而全面撤下模型。据悉，白宫接到亚马逊 CEO Andy Jassy 举报--亚马逊研究人员发现可绕过 Fable 5 的护栏。网络安全专家签署公开信要求撤销命令，认为移除这些高级网络安全能力对美国网络防御者构成危险。讨论认为此举可能带有报复色彩，与 Anthropic 此前呼吁放缓 AI 却又发布最强大模型的态度有关。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/21/when-the-trump-administration-cracks-down-on-anthropic-who-benefits","discovered_at":"2026-06-22T06:05:44.528Z","rank_on_page":97,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

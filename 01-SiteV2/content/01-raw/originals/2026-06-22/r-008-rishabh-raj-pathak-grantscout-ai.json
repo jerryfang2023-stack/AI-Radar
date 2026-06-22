@@ -1,0 +1,274 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-008",
+  "title": "Rishabh-Raj-Pathak/GrantScout-AI",
+  "original_url": "https://github.com/Rishabh-Raj-Pathak/GrantScout-AI",
+  "canonical_url": "https://github.com/Rishabh-Raj-Pathak/GrantScout-AI",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event_on_official_page",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "ai_transformation",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-22T06:23:05.552Z",
+  "language": "mixed",
+  "full_text": "Rishabh-Raj-Pathak\nGrantScout-AI\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n22 Commits\n22 Commits\nbackend\nbackend\nfrontend\nfrontend\n.gitignore\n.gitignore\nGrantScout-AI-Video final final.mp4\nGrantScout-AI-Video final final.mp4\nREADME.md\nREADME.md\nView all files\nRepository files navigation\n🎯 GrantScout AI - Startup Grant Finder Agent\nAgentHack 2025 Submission\nImagine you’re a startup founder with a brilliant idea. You’re excited to build, but there’s one big problem: money. You know there are grants and funding programs out there, but finding them feels like searching for a needle in a haystack.\nAnd that’s where GrantScout AI comes in.\n🎯The Problem\nToday, if you want to find a grant, you have to dig through endless government websites, private foundations, and accelerator pages. It’s messy. It takes hours. And often, you miss out on opportunities because they’re buried in the noise.\n⭐The Magic\nGrantScout AI makes this whole process simple.\nJust tell it what you’re looking for, maybe you’re building an AI startup, maybe a climate tech idea, or maybe you’re a student with an innovation project. GrantScout listens, understands, and instantly brings back the most relevant funding opportunities.\nNo spreadsheets. No endless tabs. Just answers.\nHow It Feels\nIt’s like having a personal scout, one that never sleeps, never gets tired, and knows exactly where to look. It gathers grants from all over the world, organizes them neatly, and shows you the ones that actually matter for you.\n🩵The Experience\nThe interface is clean, fast, and human. You can type in your query like you’re talking to a friend. GrantScout will even ask you clarifying questions, so it understands exactly what you need.\nAnd when it finds the right matches, it doesn’t just dump data. It presents clear, simple cards with deadlines, eligibility, and funding amounts. So you know instantly if it’s worth applying.\n🚀The Impact\nWith GrantScout AI, what used to take days of manual research now takes minutes. Founders save time, discover hidden opportunities, and focus on what really matters : building their ideas.\n⚙️ Architecture & Implementation\nCore Agent Framework\nPortia SDK Integration : Orchestrates multi-step workflows for grant discovery\nConversational State Management : Maintains context across query refinement sessions\nQuery Processing Pipeline : Natural language to structured search criteria conversion\nResult Ranking Algorithm : Relevance scoring based on startup profile matching\nPortia Tools Integration\nBased on the Portia Tools Catalogue , this implementation utilizes:\nOpen Source Tools:\nBrowser Tool : General purpose web navigation for accessing grant portals\nCrawl Tool : Graph-based website traversal for discovering funding pages across domains\nExtract Tool : Content extraction from grant portals using Tavily Extract\nSearch Tool : Internet search capabilities via Tavily for supplementary grant discovery\nLLM Tool : Query processing, result summarization, and conversation management\nCustom Tools:\nScraperAPI Integration (FALLBACK) : Extended browser capabilities with proxy rotation and anti-bot measures\nGrant Parser : Structured data extraction specifically for funding opportunity formats\nEmail Service : SMTP integration for digest delivery and notification management\nData Processing Pipeline\nMulti-source Aggregation : Concurrent crawling of government and private funding sources\nContent Normalization : Standardized schema for grant data (amount, deadline, eligibility)\nRelevance Scoring : ML-based matching of opportunities to startup criteria\nDeduplication : Hash-based filtering to eliminate duplicate funding opportunities\n🏗️ Technical Stack\nFrontend\n// React 19 + Vite + Tailwind CSS\n\"framework\" : \"React 19\" ,\n\"bundler\" : \"Vite\" ,\n\"styling\" : \"Tailwind CSS\" ,\n\"http_client\" : \"Axios\" ,\n\"state_management\" : \"localStorage\"\nBackend\n# Flask + Portia SDK\n\"framework\" : \"Flask 3.1.2\" ,\n\"agent_sdk\" : \"portia-sdk-python 0.6.2\" ,\n\"llm_client\" : \"OpenAI 1.100.2\" ,\n\"web_scraping\" : \"requests + BeautifulSoup\" ,\n\"email\" : \"smtplib\" ,\n\"cors\" : \"flask-cors 6.0.1\"\nAPI Integrations\n# Required Environment Variables\nPORTIA_API_KEY= # Portia cloud tools access\nOPENAI_API_KEY= # LLM inference (GPT-4o-mini)\nTAVILY_API_KEY= # Web search via Tavily\nSCRAPER_API_KEY= # anti bot evasion scrapping\nSENDER_EMAIL= # Gmail SMTP configuration\nEMAIL_PASSWORD= # Gmail app password\n🔧 Implementation Details\nGrant Discovery Workflow\ndef find_grants ( user_input , mode = \"form\" ):\n# 1. Query processing and criteria extraction\nstructured_query = extract_criteria ( user_input , mode )\n# 2. Multi-source data collection using Portia tools\nportals = identify_relevant_portals ( structured_query )\ngrants = []\nfor portal in portals :\npage_data = browser_tool . navigate_to_url ( portal . url )\ngrant_pages = crawl_tool . discover_grant_pages ( portal . url )\nextracted_grants = extract_tool . parse_grant_data ( grant_pages )\ngrants . extend ( extracted_grants )\n# 3. Data processing and ranking\nvalidated_grants = validate_and_normalize ( grants )\nscored_grants = calculate_relevance_scores ( validated_grants , user_input )\n# 4. Response generation\nreturn generate_agent_response ( scored_grants , user_input )\nScraperAPI Integration\nScraperAPI provides proxy rotation, JavaScript rendering, and anti-bot evasion for accessing government and institutional funding portals that implement blocking mechanisms.\n# Custom browser tool with ScraperAPI\ndef fetch_with_scraper_api ( url ):\nparams = {\n\"api_key\" : SCRAPER_API_KEY ,\n\"url\" : url ,\n\"render\" : \"true\" , # JS rendering\n\"keep_headers\" : \"true\" # Preserve request headers\nreturn requests . get ( SCRAPER_ENDPOINT , params = params )\n🚀 Setup & Installation\nPrerequisites\nNode.js 20.12.0+\nPython 3.9+\nAPI keys for Portia, OpenAI, Tavily, and ScraperAPI\nInstallation\n# Clone repository\ngit clone https://github.com/your-username/grantscout-ai\ncd grantscout-ai\n# Environment configuration\ncp .env.example .env\n# Edit .env with your API keys\n# Frontend setup\ncd frontend\nnpm install\nnpm run dev\n# Backend setup (new terminal)\ncd backend\npython -m venv venv\nsource venv/bin/activate # Windows: venv\\Scripts\\activate\npip install -r requirements.txt\npython app.py\nAPI Configuration\nCreate .env file in project root:\nPORTIA_API_KEY=your_portia_key\nOPENAI_API_KEY=your_openai_key\nTAVILY_API_KEY=your_tavily_key\nSCRAPER_API_KEY=your_scraperapi_key\nSENDER_EMAIL=your_email@gmail.com\nEMAIL_PASSWORD=your_app_password\nDemonstrates:\nForm-based grant search with filtering\nNatural language query processing\nAgent conversation flow with clarification questions\nGrant results display and relevance scoring\nEmail digest functionality\n📊 Technical Metrics\nSystem Performance\nResponse Time : 5-10 seconds for standard queries\nData Sources : 25+ grant portals across multiple countries\nAccuracy : 85%+ relevance matching for filtered results\nAvailability : 99%+ uptime with ScraperAPI failover\nGrant Coverage\nGovernment : SBIR, grants.gov, Horizon Europe, Innovation Norway\nGeographic : US, EU, UK, Canada, Norway, India, Chile\nSectors : AI/ML, Healthcare, Climate Tech, Fintech, General Innovation\nFunding Types : Non-dilutive grants, accelerators, research funding\n🔮 Development Roadmap\nPlanned Features\nNotification System : Deadline alerts and new grant notifications\nAnalytics Dashboard : Funding landscape insights and application tracking\nTeam Collaboration : Shared grant lists and application management\nGlobal Expansion : Additional funding sources and international coverage\nMachine Learning : Improved relevance scoring based on user feedback\nPortia Platform Feedback\nEnhanced Web Scraping Capabilities\nCurrent implementation uses custom tools with ScraperAPI for proxy rotation, JavaScript rendering, and anti-bot evasion. Native Portia support for these web scraping essentials would improve the developer experience.\nGroq API Integration\nDirect Groq integration would be valuable for rapid prototyping and cost-effective inference. Groq's competitive pricing and fast response times make it an attractive option for agent workflows.\nTool Composition\nBetter support for composing multiple tools in complex workflows, particularly for multi-step data collection and processing pipelines.\n🏆 AgentHack 2025 Submission\nPotential Impact\nProblem Scope : Addresses grant discovery inefficiencies affecting early-stage startups\nTarget Market : Startup founders, student entrepreneurs, and innovation teams\nTechnical Solution : Automated aggregation and intelligent filtering of funding opportunities\nCreativity & Originality\nAgent Application : Conversational interface for complex grant discovery workflows\nTool Integration : Custom Portia tools for web scraping and data extraction\nUser Experience : Hybrid form/chat interaction model for different user preferences\nTechnical Implementation\nFramework Integration : Portia SDK for agent orchestration and tool management\nAPI Integration : Multiple external services (ScraperAPI, Tavily, OpenAI)\nData Processing : Real-time content extraction and relevance scoring\nArchitecture : Stateless design with client-side state management\nUser Experience\nInterface Design : Clean, responsive interface with intuitive navigation\nConversation Flow : Natural language processing with context preservation\nResult Presentation : Structured grant cards with filtering and sorting capabilities\n📄 License\nMIT License - Open source for the startup community.\nAcknowledgments\nPortia Labs : For providing the agentic framework\nOpen Source Community : React, Flask, and supporting libraries\nGrantScout AI - Automated grant discovery for startup founders\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJavaScript\n54.7%\nPython\n44.1%\nOther\n1.2%",
+  "clean_text": "Rishabh-Raj-Pathak\nGrantScout-AI\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n22 Commits\n22 Commits\nbackend\nbackend\nfrontend\nfrontend\n.gitignore\n.gitignore\nGrantScout-AI-Video final final.mp4\nGrantScout-AI-Video final final.mp4\nREADME.md\nREADME.md\nView all files\nRepository files navigation\n🎯 GrantScout AI - Startup Grant Finder Agent\nAgentHack 2025 Submission\nImagine you’re a startup founder with a brilliant idea. You’re excited to build, but there’s one big problem: money. You know there are grants and funding programs out there, but finding them feels like searching for a needle in a haystack.\nAnd that’s where GrantScout AI comes in.\n🎯The Problem\nToday, if you want to find a grant, you have to dig through endless government websites, private foundations, and accelerator pages. It’s messy. It takes hours. And often, you miss out on opportunities because they’re buried in the noise.\n⭐The Magic\nGrantScout AI makes this whole process simple.\nJust tell it what you’re looking for, maybe you’re building an AI startup, maybe a climate tech idea, or maybe you’re a student with an innovation project. GrantScout listens, understands, and instantly brings back the most relevant funding opportunities.\nNo spreadsheets. No endless tabs. Just answers.\nHow It Feels\nIt’s like having a personal scout, one that never sleeps, never gets tired, and knows exactly where to look. It gathers grants from all over the world, organizes them neatly, and shows you the ones that actually matter for you.\n🩵The Experience\nThe interface is clean, fast, and human. You can type in your query like you’re talking to a friend. GrantScout will even ask you clarifying questions, so it understands exactly what you need.\nAnd when it finds the right matches, it doesn’t just dump data. It presents clear, simple cards with deadlines, eligibility, and funding amounts. So you know instantly if it’s worth applying.\n🚀The Impact\nWith GrantScout AI, what used to take days of manual research now takes minutes. Founders save time, discover hidden opportunities, and focus on what really matters : building their ideas.\n⚙️ Architecture & Implementation\nCore Agent Framework\nPortia SDK Integration : Orchestrates multi-step workflows for grant discovery\nConversational State Management : Maintains context across query refinement sessions\nQuery Processing Pipeline : Natural language to structured search criteria conversion\nResult Ranking Algorithm : Relevance scoring based on startup profile matching\nPortia Tools Integration\nBased on the Portia Tools Catalogue , this implementation utilizes:\nOpen Source Tools:\nBrowser Tool : General purpose web navigation for accessing grant portals\nCrawl Tool : Graph-based website traversal for discovering funding pages across domains\nExtract Tool : Content extraction from grant portals using Tavily Extract\nSearch Tool : Internet search capabilities via Tavily for supplementary grant discovery\nLLM Tool : Query processing, result summarization, and conversation management\nCustom Tools:\nScraperAPI Integration (FALLBACK) : Extended browser capabilities with proxy rotation and anti-bot measures\nGrant Parser : Structured data extraction specifically for funding opportunity formats\nEmail Service : SMTP integration for digest delivery and notification management\nData Processing Pipeline\nMulti-source Aggregation : Concurrent crawling of government and private funding sources\nContent Normalization : Standardized schema for grant data (amount, deadline, eligibility)\nRelevance Scoring : ML-based matching of opportunities to startup criteria\nDeduplication : Hash-based filtering to eliminate duplicate funding opportunities\n🏗️ Technical Stack\nFrontend\n// React 19 + Vite + Tailwind CSS\n\"framework\" : \"React 19\" ,\n\"bundler\" : \"Vite\" ,\n\"styling\" : \"Tailwind CSS\" ,\n\"http_client\" : \"Axios\" ,\n\"state_management\" : \"localStorage\"\nBackend\n# Flask + Portia SDK\n\"framework\" : \"Flask 3.1.2\" ,\n\"agent_sdk\" : \"portia-sdk-python 0.6.2\" ,\n\"llm_client\" : \"OpenAI 1.100.2\" ,\n\"web_scraping\" : \"requests + BeautifulSoup\" ,\n\"email\" : \"smtplib\" ,\n\"cors\" : \"flask-cors 6.0.1\"\nAPI Integrations\n# Required Environment Variables\nPORTIA_API_KEY= # Portia cloud tools access\nOPENAI_API_KEY= # LLM inference (GPT-4o-mini)\nTAVILY_API_KEY= # Web search via Tavily\nSCRAPER_API_KEY= # anti bot evasion scrapping\nSENDER_EMAIL= # Gmail SMTP configuration\nEMAIL_PASSWORD= # Gmail app password\n🔧 Implementation Details\nGrant Discovery Workflow\ndef find_grants ( user_input , mode = \"form\" ):\n# 1. Query processing and criteria extraction\nstructured_query = extract_criteria ( user_input , mode )\n# 2. Multi-source data collection using Portia tools\nportals = identify_relevant_portals ( structured_query )\ngrants = []\nfor portal in portals :\npage_data = browser_tool . navigate_to_url ( portal . url )\ngrant_pages = crawl_tool . discover_grant_pages ( portal . url )\nextracted_grants = extract_tool . parse_grant_data ( grant_pages )\ngrants . extend ( extracted_grants )\n# 3. Data processing and ranking\nvalidated_grants = validate_and_normalize ( grants )\nscored_grants = calculate_relevance_scores ( validated_grants , user_input )\n# 4. Response generation\nreturn generate_agent_response ( scored_grants , user_input )\nScraperAPI Integration\nScraperAPI provides proxy rotation, JavaScript rendering, and anti-bot evasion for accessing government and institutional funding portals that implement blocking mechanisms.\n# Custom browser tool with ScraperAPI\ndef fetch_with_scraper_api ( url ):\nparams = {\n\"api_key\" : SCRAPER_API_KEY ,\n\"url\" : url ,\n\"render\" : \"true\" , # JS rendering\n\"keep_headers\" : \"true\" # Preserve request headers\nreturn requests . get ( SCRAPER_ENDPOINT , params = params )\n🚀 Setup & Installation\nPrerequisites\nNode.js 20.12.0+\nPython 3.9+\nAPI keys for Portia, OpenAI, Tavily, and ScraperAPI\nInstallation\n# Clone repository\ngit clone https://github.com/your-username/grantscout-ai\ncd grantscout-ai\n# Environment configuration\ncp .env.example .env\n# Edit .env with your API keys\n# Frontend setup\ncd frontend\nnpm install\nnpm run dev\n# Backend setup (new terminal)\ncd backend\npython -m venv venv\nsource venv/bin/activate # Windows: venv\\Scripts\\activate\npip install -r requirements.txt\npython app.py\nAPI Configuration\nCreate .env file in project root:\nPORTIA_API_KEY=your_portia_key\nOPENAI_API_KEY=your_openai_key\nTAVILY_API_KEY=your_tavily_key\nSCRAPER_API_KEY=your_scraperapi_key\nSENDER_EMAIL=your_email@gmail.com\nEMAIL_PASSWORD=your_app_password\nDemonstrates:\nForm-based grant search with filtering\nNatural language query processing\nAgent conversation flow with clarification questions\nGrant results display and relevance scoring\nEmail digest functionality\n📊 Technical Metrics\nSystem Performance\nResponse Time : 5-10 seconds for standard queries\nData Sources : 25+ grant portals across multiple countries\nAccuracy : 85%+ relevance matching for filtered results\nAvailability : 99%+ uptime with ScraperAPI failover\nGrant Coverage\nGovernment : SBIR, grants.gov, Horizon Europe, Innovation Norway\nGeographic : US, EU, UK, Canada, Norway, India, Chile\nSectors : AI/ML, Healthcare, Climate Tech, Fintech, General Innovation\nFunding Types : Non-dilutive grants, accelerators, research funding\n🔮 Development Roadmap\nPlanned Features\nNotification System : Deadline alerts and new grant notifications\nAnalytics Dashboard : Funding landscape insights and application tracking\nTeam Collaboration : Shared grant lists and application management\nGlobal Expansion : Additional funding sources and international coverage\nMachine Learning : Improved relevance scoring based on user feedback\nPortia Platform Feedback\nEnhanced Web Scraping Capabilities\nCurrent implementation uses custom tools with ScraperAPI for proxy rotation, JavaScript rendering, and anti-bot evasion. Native Portia support for these web scraping essentials would improve the developer experience.\nGroq API Integration\nDirect Groq integration would be valuable for rapid prototyping and cost-effective inference. Groq's competitive pricing and fast response times make it an attractive option for agent workflows.\nTool Composition\nBetter support for composing multiple tools in complex workflows, particularly for multi-step data collection and processing pipelines.\n🏆 AgentHack 2025 Submission\nPotential Impact\nProblem Scope : Addresses grant discovery inefficiencies affecting early-stage startups\nTarget Market : Startup founders, student entrepreneurs, and innovation teams\nTechnical Solution : Automated aggregation and intelligent filtering of funding opportunities\nCreativity & Originality\nAgent Application : Conversational interface for complex grant discovery workflows\nTool Integration : Custom Portia tools for web scraping and data extraction\nUser Experience : Hybrid form/chat interaction model for different user preferences\nTechnical Implementation\nFramework Integration : Portia SDK for agent orchestration and tool management\nAPI Integration : Multiple external services (ScraperAPI, Tavily, OpenAI)\nData Processing : Real-time content extraction and relevance scoring\nArchitecture : Stateless design with client-side state management\nUser Experience\nInterface Design : Clean, responsive interface with intuitive navigation\nConversation Flow : Natural language processing with context preservation\nResult Presentation : Structured grant cards with filtering and sorting capabilities\n📄 License\nMIT License - Open source for the startup community.\nAcknowledgments\nPortia Labs : For providing the agentic framework\nOpen Source Community : React, Flask, and supporting libraries\nGrantScout AI - Automated grant discovery for startup founders\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJavaScript\n54.7%\nPython\n44.1%\nOther\n1.2%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-22/r-008-rishabh-raj-pathak-grantscout-ai.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-22/r-008-rishabh-raj-pathak-grantscout-ai.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 85,
+  "extractor_diagnostics": {
+    "readability_score": 85,
+    "text_length": 10257,
+    "paragraph_count": 151,
+    "sentence_count": 52,
+    "boilerplate_hits": 4,
+    "symbol_ratio": 0.0101,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 10257,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "03ef4f69b9b85b31",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "d02582d33d19ee8e",
+  "content_hash": "03ef4f69b9b85b31",
+  "full_text_hash": "03ef4f69b9b85b31",
+  "semantic_hash": "58cd25cdd78b9c46",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-22T06:23:05.552Z",
+  "last_seen_at": "2026-06-22T06:23:05.552Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "funding",
+      "text": "## ⚙️ Architecture & Implementation ... - **Portia SDK Integration**: Orchestrates multi-step workflows for grant discovery - **Conversational State Management**: Maintains context across query refinement sessions - **Query Processing Pipeline**: Natural language to structured search criteria conver... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Rishabh-Raj-Pathak GrantScout-AI Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 22 Commits 22 Commits backend backend frontend frontend .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore GrantScout-AI-Video final final.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "mp4 GrantScout-AI-Video final final.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md View all files Repository files navigation 🎯 GrantScout AI - Startup Grant Finder Agent AgentHack 2025 Submission Imagine you’re a startup founder with a brilliant idea.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "You’re excited to build, but there’s one big problem: money.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "GitHub"
+    ],
+    "products": [
+      "Agent",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "医疗",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "定价 / 计费变化",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "22",
+      "4",
+      "2025",
+      "19",
+      "3.1",
+      "2",
+      "0.6",
+      "1.100"
+    ],
+    "quotes": [
+      "framework",
+      "React 19",
+      "Tailwind CSS",
+      "http_client",
+      "state_management"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "## ⚙️ Architecture & Implementation ... - **Portia SDK Integration**: Orchestrates multi-step workflows for grant discovery - **Conversational State Management**: Maintains context across query refinement sessions - **Query Processing Pipeline**: Natural language to structured search criteria conver... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem",
+      "Rishabh-Raj-Pathak GrantScout-AI Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 22 Commits 22 Commits backend backend frontend frontend .",
+      "gitignore GrantScout-AI-Video final final."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Rishabh-Raj-Pathak/GrantScout-AI\n\n- raw_id: R-008\n- original_url: https://github.com/Rishabh-Raj-Pathak/GrantScout-AI\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-22T06:23:05.552Z\n\n## clean_text\n\nRishabh-Raj-Pathak\nGrantScout-AI\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n22 Commits\n22 Commits\nbackend\nbackend\nfrontend\nfrontend\n.gitignore\n.gitignore\nGrantScout-AI-Video final final.mp4\nGrantScout-AI-Video final final.mp4\nREADME.md\nREADME.md\nView all files\nRepository files navigation\n🎯 GrantScout AI - Startup Grant Finder Agent\nAgentHack 2025 Submission\nImagine you’re a startup founder with a brilliant idea. You’re excited to build, but there’s one big problem: money. You know there are grants and funding programs out there, but finding them feels like searching for a needle in a haystack.\nAnd that’s where GrantScout AI comes in.\n🎯The Problem\nToday, if you want to find a grant, you have to dig through endless government websites, private foundations, and accelerator pages. It’s messy. It takes hours. And often, you miss out on opportunities because they’re buried in the noise.\n⭐The Magic\nGrantScout AI makes this whole process simple.\nJust tell it what you’re looking for, maybe you’re building an AI startup, maybe a climate tech idea, or maybe you’re a student with an innovation project. GrantScout listens, understands, and instantly brings back the most relevant funding opportunities.\nNo spreadsheets. No endless tabs. Just answers.\nHow It Feels\nIt’s like having a personal scout, one that never sleeps, never gets tired, and knows exactly where to look. It gathers grants from all over the world, organizes them neatly, and shows you the ones that actually matter for you.\n🩵The Experience\nThe interface is clean, fast, and human. You can type in your query like you’re talking to a friend. GrantScout will even ask you clarifying questions, so it understands exactly what you need.\nAnd when it finds the right matches, it doesn’t just dump data. It presents clear, simple cards with deadlines, eligibility, and funding amounts. So you know instantly if it’s worth applying.\n🚀The Impact\nWith GrantScout AI, what used to take days of manual research now takes minutes. Founders save time, discover hidden opportunities, and focus on what really matters : building their ideas.\n⚙️ Architecture & Implementation\nCore Agent Framework\nPortia SDK Integration : Orchestrates multi-step workflows for grant discovery\nConversational State Management : Maintains context across query refinement sessions\nQuery Processing Pipeline : Natural language to structured search criteria conversion\nResult Ranking Algorithm : Relevance scoring based on startup profile matching\nPortia Tools Integration\nBased on the Portia Tools Catalogue , this implementation utilizes:\nOpen Source Tools:\nBrowser Tool : General purpose web navigation for accessing grant portals\nCrawl Tool : Graph-based website traversal for discovering funding pages across domains\nExtract Tool : Content extraction from grant portals using Tavily Extract\nSearch Tool : Internet search capabilities via Tavily for supplementary grant discovery\nLLM Tool : Query processing, result summarization, and conversation management\nCustom Tools:\nScraperAPI Integration (FALLBACK) : Extended browser capabilities with proxy rotation and anti-bot measures\nGrant Parser : Structured data extraction specifically for funding opportunity formats\nEmail Service : SMTP integration for digest delivery and notification management\nData Processing Pipeline\nMulti-source Aggregation : Concurrent crawling of government and private funding sources\nContent Normalization : Standardized schema for grant data (amount, deadline, eligibility)\nRelevance Scoring : ML-based matching of opportunities to startup criteria\nDeduplication : Hash-based filtering to eliminate duplicate funding opportunities\n🏗️ Technical Stack\nFrontend\n// React 19 + Vite + Tailwind CSS\n\"framework\" : \"React 19\" ,\n\"bundler\" : \"Vite\" ,\n\"styling\" : \"Tailwind CSS\" ,\n\"http_client\" : \"Axios\" ,\n\"state_management\" : \"localStorage\"\nBackend\n# Flask + Portia SDK\n\"framework\" : \"Flask 3.1.2\" ,\n\"agent_sdk\" : \"portia-sdk-python 0.6.2\" ,\n\"llm_client\" : \"OpenAI 1.100.2\" ,\n\"web_scraping\" : \"requests + BeautifulSoup\" ,\n\"email\" : \"smtplib\" ,\n\"cors\" : \"flask-cors 6.0.1\"\nAPI Integrations\n# Required Environment Variables\nPORTIA_API_KEY= # Portia cloud tools access\nOPENAI_API_KEY= # LLM inference (GPT-4o-mini)\nTAVILY_API_KEY= # Web search via Tavily\nSCRAPER_API_KEY= # anti bot evasion scrapping\nSENDER_EMAIL= # Gmail SMTP configuration\nEMAIL_PASSWORD= # Gmail app password\n🔧 Implementation Details\nGrant Discovery Workflow\ndef find_grants ( user_input , mode = \"form\" ):\n# 1. Query processing and criteria extraction\nstructured_query = extract_criteria ( user_input , mode )\n# 2. Multi-source data collection using Portia tools\nportals = identify_relevant_portals ( structured_query )\ngrants = []\nfor portal in portals :\npage_data = browser_tool . navigate_to_url ( portal . url )\ngrant_pages = crawl_tool . discover_grant_pages ( portal . url )\nextracted_grants = extract_tool . parse_grant_data ( grant_pages )\ngrants . extend ( extracted_grants )\n# 3. Data processing and ranking\nvalidated_grants = validate_and_normalize ( grants )\nscored_grants = calculate_relevance_scores ( validated_grants , user_input )\n# 4. Response generation\nreturn generate_agent_response ( scored_grants , user_input )\nScraperAPI Integration\nScraperAPI provides proxy rotation, JavaScript rendering, and anti-bot evasion for accessing government and institutional funding portals that implement blocking mechanisms.\n# Custom browser tool with ScraperAPI\ndef fetch_with_scraper_api ( url ):\nparams = {\n\"api_key\" : SCRAPER_API_KEY ,\n\"url\" : url ,\n\"render\" : \"true\" , # JS rendering\n\"keep_headers\" : \"true\" # Preserve request headers\nreturn requests . get ( SCRAPER_ENDPOINT , params = params )\n🚀 Setup & Installation\nPrerequisites\nNode.js 20.12.0+\nPython 3.9+\nAPI keys for Portia, OpenAI, Tavily, and ScraperAPI\nInstallation\n# Clone repository\ngit clone https://github.com/your-username/grantscout-ai\ncd grantscout-ai\n# Environment configuration\ncp .env.example .env\n# Edit .env with your API keys\n# Frontend setup\ncd frontend\nnpm install\nnpm run dev\n# Backend setup (new terminal)\ncd backend\npython -m venv venv\nsource venv/bin/activate # Windows: venv\\Scripts\\activate\npip install -r requirements.txt\npython app.py\nAPI Configuration\nCreate .env file in project root:\nPORTIA_API_KEY=your_portia_key\nOPENAI_API_KEY=your_openai_key\nTAVILY_API_KEY=your_tavily_key\nSCRAPER_API_KEY=your_scraperapi_key\nSENDER_EMAIL=your_email@gmail.com\nEMAIL_PASSWORD=your_app_password\nDemonstrates:\nForm-based grant search with filtering\nNatural language query processing\nAgent conversation flow with clarification questions\nGrant results display and relevance scoring\nEmail digest functionality\n📊 Technical Metrics\nSystem Performance\nResponse Time : 5-10 seconds for standard queries\nData Sources : 25+ grant portals across multiple countries\nAccuracy : 85%+ relevance matching for filtered results\nAvailability : 99%+ uptime with ScraperAPI failover\nGrant Coverage\nGovernment : SBIR, grants.gov, Horizon Europe, Innovation Norway\nGeographic : US, EU, UK, Canada, Norway, India, Chile\nSectors : AI/ML, Healthcare, Climate Tech, Fintech, General Innovation\nFunding Types : Non-dilutive grants, accelerators, research funding\n🔮 Development Roadmap\nPlanned Features\nNotification System : Deadline alerts and new grant notifications\nAnalytics Dashboard : Funding landscape insights and application tracking\nTeam Collaboration : Shared grant lists and application management\nGlobal Expansion : Additional funding sources and international coverage\nMachine Learning : Improved relevance scoring based on user feedback\nPortia Platform Feedback\nEnhanced Web Scraping Capabilities\nCurrent implementation uses custom tools with ScraperAPI for proxy rotation, JavaScript rendering, and anti-bot evasion. Native Portia support for these web scraping essentials would improve the developer experience.\nGroq API Integration\nDirect Groq integration would be valuable for rapid prototyping and cost-effective inference. Groq's competitive pricing and fast response times make it an attractive option for agent workflows.\nTool Composition\nBetter support for composing multiple tools in complex workflows, particularly for multi-step data collection and processing pipelines.\n🏆 AgentHack 2025 Submission\nPotential Impact\nProblem Scope : Addresses grant discovery inefficiencies affecting early-stage startups\nTarget Market : Startup founders, student entrepreneurs, and innovation teams\nTechnical Solution : Automated aggregation and intelligent filtering of funding opportunities\nCreativity & Originality\nAgent Application : Conversational interface for complex grant discovery workflows\nTool Integration : Custom Portia tools for web scraping and data extraction\nUser Experience : Hybrid form/chat interaction model for different user preferences\nTechnical Implementation\nFramework Integration : Portia SDK for agent orchestration and tool management\nAPI Integration : Multiple external services (ScraperAPI, Tavily, OpenAI)\nData Processing : Real-time content extraction and relevance scoring\nArchitecture : Stateless design with client-side state management\nUser Experience\nInterface Design : Clean, responsive interface with intuitive navigation\nConversation Flow : Natural language processing with context preservation\nResult Presentation : Structured grant cards with filtering and sorting capabilities\n📄 License\nMIT License - Open source for the startup community.\nAcknowledgments\nPortia Labs : For providing the agentic framework\nOpen Source Community : React, Flask, and supporting libraries\nGrantScout AI - Automated grant discovery for startup founders\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJavaScript\n54.7%\nPython\n44.1%\nOther\n1.2%\n\n## full_text\n\nRishabh-Raj-Pathak\nGrantScout-AI\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n22 Commits\n22 Commits\nbackend\nbackend\nfrontend\nfrontend\n.gitignore\n.gitignore\nGrantScout-AI-Video final final.mp4\nGrantScout-AI-Video final final.mp4\nREADME.md\nREADME.md\nView all files\nRepository files navigation\n🎯 GrantScout AI - Startup Grant Finder Agent\nAgentHack 2025 Submission\nImagine you’re a startup founder with a brilliant idea. You’re excited to build, but there’s one big problem: money. You know there are grants and funding programs out there, but finding them feels like searching for a needle in a haystack.\nAnd that’s where GrantScout AI comes in.\n🎯The Problem\nToday, if you want to find a grant, you have to dig through endless government websites, private foundations, and accelerator pages. It’s messy. It takes hours. And often, you miss out on opportunities because they’re buried in the noise.\n⭐The Magic\nGrantScout AI makes this whole process simple.\nJust tell it what you’re looking for, maybe you’re building an AI startup, maybe a climate tech idea, or maybe you’re a student with an innovation project. GrantScout listens, understands, and instantly brings back the most relevant funding opportunities.\nNo spreadsheets. No endless tabs. Just answers.\nHow It Feels\nIt’s like having a personal scout, one that never sleeps, never gets tired, and knows exactly where to look. It gathers grants from all over the world, organizes them neatly, and shows you the ones that actually matter for you.\n🩵The Experience\nThe interface is clean, fast, and human. You can type in your query like you’re talking to a friend. GrantScout will even ask you clarifying questions, so it understands exactly what you need.\nAnd when it finds the right matches, it doesn’t just dump data. It presents clear, simple cards with deadlines, eligibility, and funding amounts. So you know instantly if it’s worth applying.\n🚀The Impact\nWith GrantScout AI, what used to take days of manual research now takes minutes. Founders save time, discover hidden opportunities, and focus on what really matters : building their ideas.\n⚙️ Architecture & Implementation\nCore Agent Framework\nPortia SDK Integration : Orchestrates multi-step workflows for grant discovery\nConversational State Management : Maintains context across query refinement sessions\nQuery Processing Pipeline : Natural language to structured search criteria conversion\nResult Ranking Algorithm : Relevance scoring based on startup profile matching\nPortia Tools Integration\nBased on the Portia Tools Catalogue , this implementation utilizes:\nOpen Source Tools:\nBrowser Tool : General purpose web navigation for accessing grant portals\nCrawl Tool : Graph-based website traversal for discovering funding pages across domains\nExtract Tool : Content extraction from grant portals using Tavily Extract\nSearch Tool : Internet search capabilities via Tavily for supplementary grant discovery\nLLM Tool : Query processing, result summarization, and conversation management\nCustom Tools:\nScraperAPI Integration (FALLBACK) : Extended browser capabilities with proxy rotation and anti-bot measures\nGrant Parser : Structured data extraction specifically for funding opportunity formats\nEmail Service : SMTP integration for digest delivery and notification management\nData Processing Pipeline\nMulti-source Aggregation : Concurrent crawling of government and private funding sources\nContent Normalization : Standardized schema for grant data (amount, deadline, eligibility)\nRelevance Scoring : ML-based matching of opportunities to startup criteria\nDeduplication : Hash-based filtering to eliminate duplicate funding opportunities\n🏗️ Technical Stack\nFrontend\n// React 19 + Vite + Tailwind CSS\n\"framework\" : \"React 19\" ,\n\"bundler\" : \"Vite\" ,\n\"styling\" : \"Tailwind CSS\" ,\n\"http_client\" : \"Axios\" ,\n\"state_management\" : \"localStorage\"\nBackend\n# Flask + Portia SDK\n\"framework\" : \"Flask 3.1.2\" ,\n\"agent_sdk\" : \"portia-sdk-python 0.6.2\" ,\n\"llm_client\" : \"OpenAI 1.100.2\" ,\n\"web_scraping\" : \"requests + BeautifulSoup\" ,\n\"email\" : \"smtplib\" ,\n\"cors\" : \"flask-cors 6.0.1\"\nAPI Integrations\n# Required Environment Variables\nPORTIA_API_KEY= # Portia cloud tools access\nOPENAI_API_KEY= # LLM inference (GPT-4o-mini)\nTAVILY_API_KEY= # Web search via Tavily\nSCRAPER_API_KEY= # anti bot evasion scrapping\nSENDER_EMAIL= # Gmail SMTP configuration\nEMAIL_PASSWORD= # Gmail app password\n🔧 Implementation Details\nGrant Discovery Workflow\ndef find_grants ( user_input , mode = \"form\" ):\n# 1. Query processing and criteria extraction\nstructured_query = extract_criteria ( user_input , mode )\n# 2. Multi-source data collection using Portia tools\nportals = identify_relevant_portals ( structured_query )\ngrants = []\nfor portal in portals :\npage_data = browser_tool . navigate_to_url ( portal . url )\ngrant_pages = crawl_tool . discover_grant_pages ( portal . url )\nextracted_grants = extract_tool . parse_grant_data ( grant_pages )\ngrants . extend ( extracted_grants )\n# 3. Data processing and ranking\nvalidated_grants = validate_and_normalize ( grants )\nscored_grants = calculate_relevance_scores ( validated_grants , user_input )\n# 4. Response generation\nreturn generate_agent_response ( scored_grants , user_input )\nScraperAPI Integration\nScraperAPI provides proxy rotation, JavaScript rendering, and anti-bot evasion for accessing government and institutional funding portals that implement blocking mechanisms.\n# Custom browser tool with ScraperAPI\ndef fetch_with_scraper_api ( url ):\nparams = {\n\"api_key\" : SCRAPER_API_KEY ,\n\"url\" : url ,\n\"render\" : \"true\" , # JS rendering\n\"keep_headers\" : \"true\" # Preserve request headers\nreturn requests . get ( SCRAPER_ENDPOINT , params = params )\n🚀 Setup & Installation\nPrerequisites\nNode.js 20.12.0+\nPython 3.9+\nAPI keys for Portia, OpenAI, Tavily, and ScraperAPI\nInstallation\n# Clone repository\ngit clone https://github.com/your-username/grantscout-ai\ncd grantscout-ai\n# Environment configuration\ncp .env.example .env\n# Edit .env with your API keys\n# Frontend setup\ncd frontend\nnpm install\nnpm run dev\n# Backend setup (new terminal)\ncd backend\npython -m venv venv\nsource venv/bin/activate # Windows: venv\\Scripts\\activate\npip install -r requirements.txt\npython app.py\nAPI Configuration\nCreate .env file in project root:\nPORTIA_API_KEY=your_portia_key\nOPENAI_API_KEY=your_openai_key\nTAVILY_API_KEY=your_tavily_key\nSCRAPER_API_KEY=your_scraperapi_key\nSENDER_EMAIL=your_email@gmail.com\nEMAIL_PASSWORD=your_app_password\nDemonstrates:\nForm-based grant search with filtering\nNatural language query processing\nAgent conversation flow with clarification questions\nGrant results display and relevance scoring\nEmail digest functionality\n📊 Technical Metrics\nSystem Performance\nResponse Time : 5-10 seconds for standard queries\nData Sources : 25+ grant portals across multiple countries\nAccuracy : 85%+ relevance matching for filtered results\nAvailability : 99%+ uptime with ScraperAPI failover\nGrant Coverage\nGovernment : SBIR, grants.gov, Horizon Europe, Innovation Norway\nGeographic : US, EU, UK, Canada, Norway, India, Chile\nSectors : AI/ML, Healthcare, Climate Tech, Fintech, General Innovation\nFunding Types : Non-dilutive grants, accelerators, research funding\n🔮 Development Roadmap\nPlanned Features\nNotification System : Deadline alerts and new grant notifications\nAnalytics Dashboard : Funding landscape insights and application tracking\nTeam Collaboration : Shared grant lists and application management\nGlobal Expansion : Additional funding sources and international coverage\nMachine Learning : Improved relevance scoring based on user feedback\nPortia Platform Feedback\nEnhanced Web Scraping Capabilities\nCurrent implementation uses custom tools with ScraperAPI for proxy rotation, JavaScript rendering, and anti-bot evasion. Native Portia support for these web scraping essentials would improve the developer experience.\nGroq API Integration\nDirect Groq integration would be valuable for rapid prototyping and cost-effective inference. Groq's competitive pricing and fast response times make it an attractive option for agent workflows.\nTool Composition\nBetter support for composing multiple tools in complex workflows, particularly for multi-step data collection and processing pipelines.\n🏆 AgentHack 2025 Submission\nPotential Impact\nProblem Scope : Addresses grant discovery inefficiencies affecting early-stage startups\nTarget Market : Startup founders, student entrepreneurs, and innovation teams\nTechnical Solution : Automated aggregation and intelligent filtering of funding opportunities\nCreativity & Originality\nAgent Application : Conversational interface for complex grant discovery workflows\nTool Integration : Custom Portia tools for web scraping and data extraction\nUser Experience : Hybrid form/chat interaction model for different user preferences\nTechnical Implementation\nFramework Integration : Portia SDK for agent orchestration and tool management\nAPI Integration : Multiple external services (ScraperAPI, Tavily, OpenAI)\nData Processing : Real-time content extraction and relevance scoring\nArchitecture : Stateless design with client-side state management\nUser Experience\nInterface Design : Clean, responsive interface with intuitive navigation\nConversation Flow : Natural language processing with context preservation\nResult Presentation : Structured grant cards with filtering and sorting capabilities\n📄 License\nMIT License - Open source for the startup community.\nAcknowledgments\nPortia Labs : For providing the agentic framework\nOpen Source Community : React, Flask, and supporting libraries\nGrantScout AI - Automated grant discovery for startup founders\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJavaScript\n54.7%\nPython\n44.1%\nOther\n1.2%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 85\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [funding / daily_observation, heatmap, trend / high] ## ⚙️ Architecture & Implementation ... - **Portia SDK Integration**: Orchestrates multi-step workflows for grant discovery - **Conversational State Management**: Maintains context across query refinement sessions - **Query Processing Pipeline**: Natural language to structured search criteria conver... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Rishabh-Raj-Pathak GrantScout-AI Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 22 Commits 22 Commits backend backend frontend frontend .\n3. [company_action / daily_observation, heatmap, change, case, trend / high] gitignore GrantScout-AI-Video final final.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] mp4 GrantScout-AI-Video final final.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] md View all files Repository files navigation 🎯 GrantScout AI - Startup Grant Finder Agent AgentHack 2025 Submission Imagine you’re a startup founder with a brilliant idea.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] You’re excited to build, but there’s one big problem: money.\n"
+}
