@@ -40,6 +40,22 @@ formal_tags:
   region: ["region-china"]
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "data_silo"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "MiniMax 发布 M3，国产模型继续争夺开发者场景 # MiniMax 发布 M3，国产模型继续争夺开发者场景 ## 信号底稿 谁：MiniMax。"
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 event: "MiniMax 发布 M3，主打编码能力、长上下文和多模态能力。"
 business_meaning: "国产模型继续把竞争重点放在开发者使用场景，企业会比较的不只是榜单分数，还包括上下文长度、调用成本、能接上哪些开发工具、企业能否自己部署。"
 why_selected: "这条信号可以观察中国模型厂商如何争夺工程团队，而不是只看模型发布本身。"

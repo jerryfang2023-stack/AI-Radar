@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["developer_tool"]
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Claude Code v2.1.161 发布 Claude Code v2.1.161 发布 Claude Code v2.1.161 发布了多项功能改进与问题修复。功能方面，现在可将 OTEL_RESOURCE_ATTRIBUTES 的值作为指标数据点的标签，支持按团队或代码库等维度查看使用情况；`claude agents` 命令在分发任务时会显示\"已完成/总数\"；`/mcp` 改进了连接器列表的展示；并行工具调用时，单个 Ba..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 event: "Claude Code v2.1.161 发布 发布新的 AI 能力，面向企业智能体协作流程。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

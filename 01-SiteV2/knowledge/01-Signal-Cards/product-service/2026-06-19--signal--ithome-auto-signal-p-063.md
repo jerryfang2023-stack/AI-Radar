@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building", "knowledge_base_qa"]
+  business_action: ["customer_deployment", "product_launch"]
+  product_form: ["api", "rag_knowledge_base"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Ithome 发布 AI 基础设施能力，切入模型部署和算力服务 英伟达 ACE Game Agent SDK 进入 Beta 测试，内置 Qwen 3.5 4B 模型并支持 UE5 # Ithome 发布 AI 基础设施能力，切入模型部署和算力服务 ## 新闻事实 英伟达在虚幻嘉年华 2026 宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试。该轻量级 C/C++ 框架内置 Qwen 3.5 4B 模型用..."
+  missing_fields: ["adoption_evidence"]
+
 signal_owner: "Ithome"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch", "pricing_change", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "security_compliance"]
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "DeepSeek 在 2026 年 6 月登顶 Ramp 热门软件供应商，美国公司追逐更便宜的 AI DeepSeek 在 2026 年 6 月登顶 Ramp 热门软件供应商，美国公司追逐更便宜的 AI DeepSeek 在 2026 年 6 月成为 Ramp 平台最热门的软件供应商，作为一项付费服务，美国公司直接向其发送数据。Ramp 首席经济学家 Ara Kharazian 指出成本意识是驱动因素，但警告使用中国模型存在安全风险。"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "The-Decoder"
 
 frontend:

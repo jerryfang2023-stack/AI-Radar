@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["product_launch", "procurement_signal", "pricing_change", "research_benchmark"]
+  product_form: ["model_gateway"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "model_routing_complexity", "evaluation_gap"]
+  adoption_evidence: ["customer_metric", "procurement_contract"]
+  source_evidence_type: ["research_paper", "regulatory_or_procurement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Aiweekly 发布 AI 基础设施能力，切入销售线索和收入团队协作 Harvey Cuts Inference Costs 3x With Fireworks AI | AI Weekly - Harvey cut inference costs 3x combining Claude Opus with Fireworks AI models, with no quality loss confirmed."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Aiweekly"
 
 frontend:

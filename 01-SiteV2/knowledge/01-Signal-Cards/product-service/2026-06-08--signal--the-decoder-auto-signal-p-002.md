@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["product_launch", "pricing_change", "research_benchmark"]
+  product_form: ["api"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "evaluation_gap"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Perplexity 推出 \"Search as Code\" 架构，让 AI 模型自行编写搜索管道 Perplexity 推出 \"Search as Code\" 架构，让 AI 模型自行编写搜索管道 Perplexity 的 \"Search as Code\" 架构放弃固定搜索 API，改为让 AI 模型在 Python 沙箱中自主编写搜索例程，自行完成过滤和去重。该方案在关键基准测试中超越 OpenAI 和 Anthropic 的模型..."
+  missing_fields: []
+
 signal_owner: "The-Decoder"
 
 frontend:

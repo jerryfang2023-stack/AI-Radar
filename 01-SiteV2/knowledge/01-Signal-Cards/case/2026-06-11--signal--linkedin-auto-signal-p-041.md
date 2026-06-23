@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["procurement_signal"]
+  product_form: ["workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["regulatory_or_procurement", "community_post"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Linkedin 案例：AI 进入销售和收入团队流程 Invert Procurement AI Thinking from Automation to Augment and ..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Linkedin"
 
 frontend:

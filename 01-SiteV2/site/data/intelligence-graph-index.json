@@ -4,7 +4,7 @@
     "siteVersion": "SITE-V3.3.8.2",
     "businessSignalsColumnVersion": "BSIG-V1.1.1-core-source-hygiene",
     "enterpriseAiLensVersion": "EAI-V1.1.0-fde-lens-pool",
-    "generatedAt": "2026-06-23T02:03:53.292Z",
+    "generatedAt": "2026-06-23T09:47:15.459Z",
     "activeDate": "2026-06-23",
     "purpose": "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
     "sourceDataset": "site/data/v3-data-observation-desk.json",
@@ -31,7 +31,7 @@
   },
   "summary": {
     "activeDate": "2026-06-23",
-    "totalCards": 386,
+    "totalCards": 387,
     "todayCards": 19,
     "todayTop10": 10,
     "corePoolCandidates": 20,
@@ -134,8 +134,8 @@
         "label": "融资",
         "today": 1,
         "last7": 14,
-        "last30": 41,
-        "total": 52,
+        "last30": 42,
+        "total": 53,
         "topTags": [
           {
             "tag": "customer-developer-team",
@@ -24557,7 +24557,7 @@
       "type": "signal_card",
       "category": "case",
       "categoryLabel": "案例",
-      "title": "Merck 和 Home Depot 使用 Gemini Enterprise 开发 A…",
+      "title": "Merck 和 Home Depot 使用 Gemini Enterprise 开发 AI Agent",
       "subject": "Merck / Home Depot / Google Gemini",
       "sourceName": "techtarget.com",
       "sourceUrl": "https://www.techtarget.com/searchitoperations/news/366642097/Merck-Home-Depot-tap-Gemini-Enterprise-for-AI-agent-development",
@@ -27643,7 +27643,7 @@
       "type": "signal_card",
       "category": "product-service",
       "categoryLabel": "产品",
-      "title": "继上周 GTC Taipei 发布后",
+      "title": "NVIDIA 与 KRAFTON、NC、T1 在韩国 PC 房庆祝 RTX Spark 发布",
       "subject": "Nvidia",
       "sourceName": "NVIDIA AI Blog",
       "sourceUrl": "https://blogs.nvidia.com/blog/krafton-nc-t1-korea-gaming-pc-bang-rtx-spark",
@@ -34086,6 +34086,117 @@
         "指向平台能力、交付成本或生态合作变化"
       ],
       "qualityWarnings": [],
+      "fromCorePool": true
+    },
+    {
+      "id": "SIG-20260602-A10",
+      "date": "2026-06-02",
+      "type": "signal_card",
+      "category": "funding",
+      "categoryLabel": "融资",
+      "title": "First Concepts 完成 100 万美元 pre-seed 融资，开发创意工作 AI workspace",
+      "subject": "First Concepts",
+      "sourceName": "tech.eu",
+      "sourceUrl": "https://tech.eu/2026/03/17/first-concepts-raises-1m-to-develop-ai-native-os-for-creative-work/",
+      "sourceLevel": "B",
+      "importanceScore": 5,
+      "rankScore": 692,
+      "evidenceScore": 36,
+      "poolRoutes": [
+        "core_pool"
+      ],
+      "poolRefs": [],
+      "linkedCardId": "",
+      "status": "signal_card",
+      "promotionStatus": "candidate",
+      "notPromotedReason": "",
+      "notPromotedIssues": [],
+      "repairSuggestion": "",
+      "promotePriority": "",
+      "largeVendor": false,
+      "largeVendorKey": "",
+      "tags": {
+        "track": [
+          "track-ai-agent",
+          "track-enterprise-workflow",
+          "track-ai-infra"
+        ],
+        "function": [],
+        "scenario": [],
+        "customer": [
+          "customer-enterprise"
+        ],
+        "evidence": [
+          "evidence-funding",
+          "evidence-partnership-integration",
+          "evidence-pricing-cost"
+        ],
+        "stage": [
+          "stage-rising"
+        ],
+        "region": [],
+        "source": [
+          "source-industry-data"
+        ]
+      },
+      "flatTags": [
+        "track-ai-agent",
+        "track-enterprise-workflow",
+        "track-ai-infra",
+        "customer-enterprise",
+        "evidence-funding",
+        "evidence-partnership-integration",
+        "evidence-pricing-cost",
+        "stage-rising",
+        "source-industry-data"
+      ],
+      "displayTags": [
+        {
+          "id": "track-ai-agent",
+          "label": "AI Agent"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
+          "id": "customer-enterprise",
+          "label": "大中型企业"
+        },
+        {
+          "id": "evidence-funding",
+          "label": "融资证据"
+        },
+        {
+          "id": "evidence-partnership-integration",
+          "label": "合作集成"
+        },
+        {
+          "id": "evidence-pricing-cost",
+          "label": "价格成本"
+        },
+        {
+          "id": "stage-rising",
+          "label": "升温"
+        }
+      ],
+      "fact": "谁：First Concepts。 做了什么：First Concepts 宣布$1M 融资，业务重点落在企业 Agent 协作平台。 证据是什么：来源为 https://tech.eu/2026/03/17/first-concepts-raises-1m-to-develop-ai-native-os-for-creative-work/，对应本地证据 R-013，材料已保留全文、哈希和出处。 缺什么：目前能确认事件方向；客户规模、留存和效果指标仍需后续材料验证。",
+      "evidencePoints": [
+        "tech 获得$1M 融资，公开资料显示资金继续流向 AI 产品化和企业采用环节。"
+      ],
+      "value": "值得关注：涉及资金流向、预算规模或融资信号；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
+      "selectionReasons": [
+        "涉及资金流向、预算规模或融资信号",
+        "能观察真实客户、业务流程或采购场景",
+        "指向平台能力、交付成本或生态合作变化"
+      ],
+      "qualityWarnings": [
+        "可见原文片段不足，已降权处理"
+      ],
       "fromCorePool": true
     },
     {
@@ -41875,12 +41986,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "页面类型不适合直接成卡，需要回到具体事件页",
-      "notPromotedIssues": [
-        "页面类型不适合直接成卡，需要回到具体事件页"
-      ],
-      "repairSuggestion": "回到有日期、主体、动作的单一公司事件页后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -41924,12 +42033,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "页面类型不适合直接成卡，需要回到具体事件页",
-      "notPromotedIssues": [
-        "页面类型不适合直接成卡，需要回到具体事件页"
-      ],
-      "repairSuggestion": "回到有日期、主体、动作的单一公司事件页后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -41973,12 +42080,10 @@
       "linkedCardId": "",
       "status": "pooled",
       "promotionStatus": "candidate_only",
-      "notPromotedReason": "页面类型不适合直接成卡，需要回到具体事件页",
-      "notPromotedIssues": [
-        "页面类型不适合直接成卡，需要回到具体事件页"
-      ],
-      "repairSuggestion": "回到有日期、主体、动作的单一公司事件页后再晋级。",
-      "promotePriority": "low",
+      "notPromotedReason": "暂未晋级正式 Card",
+      "notPromotedIssues": [],
+      "repairSuggestion": "复核证据边界，确认能形成产品、融资或案例事实后再晋级。",
+      "promotePriority": "review",
       "largeVendor": false,
       "largeVendorKey": "",
       "tags": {},
@@ -43851,6 +43956,14 @@
         "sourceName": "Artificial Intelligence News（RSS）"
       },
       {
+        "id": "subject:联想百应-AI-主机-300-体验",
+        "label": "联想百应 AI 主机 300 体验",
+        "type": "subject",
+        "weight": 1,
+        "category": "product-service",
+        "sourceName": "IT之家（RSS）"
+      },
+      {
         "id": "subject:AI-model-deployment",
         "label": "AI model deployment",
         "type": "subject",
@@ -43979,14 +44092,6 @@
         "sourceName": "MarkTechPost（RSS）"
       },
       {
-        "id": "subject:联想百应-AI-主机-300-体验",
-        "label": "联想百应 AI 主机 300 体验",
-        "type": "subject",
-        "weight": 1,
-        "category": "product-service",
-        "sourceName": "IT之家（RSS）"
-      },
-      {
         "id": "signal:track-ai-agent",
         "label": "AI Agent",
         "type": "signal",
@@ -44077,6 +44182,102 @@
         "titles": [
           "欧莱雅与OpenAI合作，将美宝莲虚拟试妆引入ChatGPT",
           "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:AI-model-deployment",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260623-A11"
+        ],
+        "titles": [
+          "AI model deployment 记录企业应用场景：模型部署和算力调用"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Anthropic",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260623-A09"
+        ],
+        "titles": [
+          "Anthropic与Micron计划共同设计AI内存架构"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Design-Partner-Program",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260623-A12"
+        ],
+        "titles": [
+          "Design Partner Program 记录企业应用场景：企业智能体协作流程"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Forward-Deployed-Engineering",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260623-A10"
+        ],
+        "titles": [
+          "Forward Deployed Engineering 记录企业应用场景：企业智能体协作流程"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:Google-ADK-与-A2A-协议",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260623-A08"
+        ],
+        "titles": [
+          "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:xAI-为-Grok-Build",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260623-A03"
+        ],
+        "titles": [
+          "xAI 为 Grok Build 推出 /goal 模式，支持长周期自主编码与内置验证"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:OpenAI",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260623-A04"
+        ],
+        "titles": [
+          "欧莱雅与OpenAI合作，将美宝莲虚拟试妆引入ChatGPT"
+        ]
+      },
+      {
+        "from": "category:案例",
+        "to": "subject:PP",
+        "label": "案例",
+        "weight": 1,
+        "cardIds": [
+          "SIG-20260623-A02"
+        ],
+        "titles": [
+          "PP-OCRv6 on Hugging Face：50 语言 OCR，参数规模 1.5M 至 34.5M"
         ]
       },
       {
@@ -44426,108 +44627,12 @@
         "titles": [
           "PP-OCRv6 on Hugging Face：50 语言 OCR，参数规模 1.5M 至 34.5M"
         ]
-      },
-      {
-        "from": "subject:PP",
-        "to": "signal:evidence-customer-metric",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260623-A02"
-        ],
-        "titles": [
-          "PP-OCRv6 on Hugging Face：50 语言 OCR，参数规模 1.5M 至 34.5M"
-        ]
-      },
-      {
-        "from": "subject:Groq",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260623-A01"
-        ],
-        "titles": [
-          "AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管"
-        ]
-      },
-      {
-        "from": "subject:Groq",
-        "to": "signal:track-ai-coding",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260623-A01"
-        ],
-        "titles": [
-          "AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管"
-        ]
-      },
-      {
-        "from": "subject:Groq",
-        "to": "signal:track-enterprise-data",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260623-A01"
-        ],
-        "titles": [
-          "AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管"
-        ]
-      },
-      {
-        "from": "subject:Claude-Code",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260623-A05"
-        ],
-        "titles": [
-          "Claude Code v2.1.186 发布"
-        ]
-      },
-      {
-        "from": "subject:Claude-Code",
-        "to": "signal:track-ai-coding",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260623-A05"
-        ],
-        "titles": [
-          "Claude Code v2.1.186 发布"
-        ]
-      },
-      {
-        "from": "subject:Claude-Code",
-        "to": "signal:track-enterprise-workflow",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260623-A05"
-        ],
-        "titles": [
-          "Claude Code v2.1.186 发布"
-        ]
-      },
-      {
-        "from": "subject:GLM",
-        "to": "signal:track-ai-agent",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260623-A15"
-        ],
-        "titles": [
-          "GLM-5.2：开放智能体的阶跃变化"
-        ]
       }
     ],
     "clusters": [
       {
         "id": "product-launch-vs-adoption",
-        "title": "Claude Code、GLM 同日出现在企业 AI 产品发布里",
+        "title": "联想百应 AI 主机 300 体验、Claude Code 同日出现在企业 AI 产品发布里",
         "direction": "产品发布",
         "relation": [
           "产品发布",
@@ -44535,12 +44640,16 @@
           "商业验证"
         ],
         "summary": "新增 `claude mcp login/logout` 命令，支持从 CLI 认证 MCP 服务器并完成 SSH 无浏览器重定向。新增 `/workflows` 状态过滤、`/plugin` Skills 部分及 `teammateMode： \"iterm2\"` 设置。`！` bash 命令改为自动触发 Claude 响应，可通过 `respondToB... Z.ai 于 6 月 13 日向 GLM Coding Plan 成员发布 GLM-5.2，6 月 16 日开源 MIT 许可权重。该模型在 Arena 智能体排行榜上成为唯一与 OpenAI 和 Anthropic 最新模型匹敌的开放模型，匹配 Opus 4.8 无思考模式；在 Design Arena 中甚至超越 Claude Fable。作者认为这是... 联想百应 AI 主机 300 搭载 AMD 锐龙 AI Max+ 395 处理器，集成 Radeon 8060S 显卡与 50 TOPS NPU，板载 128GB LPDDR5x 统一内存（可分配 96GB 显存）。本地部署 OpenClaw 和 Qwen3.6 35B 模型；LM Studio 中 Qwen 3.6 35B 输出 61.66 tok/s，...",
-        "evidenceMeta": "素材：Claude Code / GLM / MoonMath AI",
+        "evidenceMeta": "素材：联想百应 AI 主机 300 体验 / Claude Code / GLM",
         "detailFocus": "新增 `claude mcp login/logout` 命令，支持从 CLI 认证 MCP 服务器并完成 SSH 无浏览器重定向。新增 `/workflows` 状态过滤、`/plugin` Skills 部分及 `teammateMode： \"iterm2\"` 设置。`！` bash 命令改为自动触发 Claude 响应，可通过 `respondToB... Z.ai 于 6 月 13 日向 GLM Coding Plan 成员发布 GLM-5.2，6 月 16 日开源 MIT 许可权重。该模型在 Arena 智能体排行榜上成为唯一与 OpenAI 和 Anthropic 最新模型匹敌的开放模型，匹配 Opus 4.8 无思考模式；在 Design Arena 中甚至超越 Claude Fable。作者认为这是... 联想百应 AI 主机 300 搭载 AMD 锐龙 AI Max+ 395 处理器，集成 Radeon 8060S 显卡与 50 TOPS NPU，板载 128GB LPDDR5x 统一内存（可分配 96GB 显存）。本地部署 OpenClaw 和 Qwen3.6 35B 模型；LM Studio 中 Qwen 3.6 35B 输出 61.66 tok/s，...",
         "todayCount": 10,
         "last7Count": 53,
         "last30Count": 147,
         "subjects": [
+          {
+            "label": "联想百应 AI 主机 300 体验",
+            "count": 1
+          },
           {
             "label": "Claude Code",
             "count": 1
@@ -44551,10 +44660,6 @@
           },
           {
             "label": "MoonMath AI",
-            "count": 1
-          },
-          {
-            "label": "Norwest",
             "count": 1
           }
         ],
@@ -44764,7 +44869,7 @@
   "relationshipDirections": [
     {
       "id": "product-launch-vs-adoption",
-      "title": "Claude Code、GLM 同日出现在企业 AI 产品发布里",
+      "title": "联想百应 AI 主机 300 体验、Claude Code 同日出现在企业 AI 产品发布里",
       "direction": "产品发布",
       "relation": [
         "产品发布",
@@ -44772,12 +44877,16 @@
         "商业验证"
       ],
       "summary": "新增 `claude mcp login/logout` 命令，支持从 CLI 认证 MCP 服务器并完成 SSH 无浏览器重定向。新增 `/workflows` 状态过滤、`/plugin` Skills 部分及 `teammateMode： \"iterm2\"` 设置。`！` bash 命令改为自动触发 Claude 响应，可通过 `respondToB... Z.ai 于 6 月 13 日向 GLM Coding Plan 成员发布 GLM-5.2，6 月 16 日开源 MIT 许可权重。该模型在 Arena 智能体排行榜上成为唯一与 OpenAI 和 Anthropic 最新模型匹敌的开放模型，匹配 Opus 4.8 无思考模式；在 Design Arena 中甚至超越 Claude Fable。作者认为这是... 联想百应 AI 主机 300 搭载 AMD 锐龙 AI Max+ 395 处理器，集成 Radeon 8060S 显卡与 50 TOPS NPU，板载 128GB LPDDR5x 统一内存（可分配 96GB 显存）。本地部署 OpenClaw 和 Qwen3.6 35B 模型；LM Studio 中 Qwen 3.6 35B 输出 61.66 tok/s，...",
-      "evidenceMeta": "素材：Claude Code / GLM / MoonMath AI",
+      "evidenceMeta": "素材：联想百应 AI 主机 300 体验 / Claude Code / GLM",
       "detailFocus": "新增 `claude mcp login/logout` 命令，支持从 CLI 认证 MCP 服务器并完成 SSH 无浏览器重定向。新增 `/workflows` 状态过滤、`/plugin` Skills 部分及 `teammateMode： \"iterm2\"` 设置。`！` bash 命令改为自动触发 Claude 响应，可通过 `respondToB... Z.ai 于 6 月 13 日向 GLM Coding Plan 成员发布 GLM-5.2，6 月 16 日开源 MIT 许可权重。该模型在 Arena 智能体排行榜上成为唯一与 OpenAI 和 Anthropic 最新模型匹敌的开放模型，匹配 Opus 4.8 无思考模式；在 Design Arena 中甚至超越 Claude Fable。作者认为这是... 联想百应 AI 主机 300 搭载 AMD 锐龙 AI Max+ 395 处理器，集成 Radeon 8060S 显卡与 50 TOPS NPU，板载 128GB LPDDR5x 统一内存（可分配 96GB 显存）。本地部署 OpenClaw 和 Qwen3.6 35B 模型；LM Studio 中 Qwen 3.6 35B 输出 61.66 tok/s，...",
       "todayCount": 10,
       "last7Count": 53,
       "last30Count": 147,
       "subjects": [
+        {
+          "label": "联想百应 AI 主机 300 体验",
+          "count": 1
+        },
         {
           "label": "Claude Code",
           "count": 1
@@ -44788,10 +44897,6 @@
         },
         {
           "label": "MoonMath AI",
-          "count": 1
-        },
-        {
-          "label": "Norwest",
           "count": 1
         }
       ],
@@ -45003,18 +45108,18 @@
       "label": "AI Agent",
       "todayCount": 19,
       "last7Count": 136,
-      "last30Count": 347,
+      "last30Count": 348,
       "subjects": [
         {
           "label": "OpenAI",
           "count": 2
         },
         {
-          "label": "AI model deployment",
+          "label": "联想百应 AI 主机 300 体验",
           "count": 1
         },
         {
-          "label": "Anthropic",
+          "label": "AI model deployment",
           "count": 1
         }
       ],
@@ -45060,18 +45165,18 @@
       "label": "大中型企业",
       "todayCount": 15,
       "last7Count": 99,
-      "last30Count": 253,
+      "last30Count": 254,
       "subjects": [
         {
           "label": "OpenAI",
           "count": 2
         },
         {
-          "label": "AI model deployment",
+          "label": "联想百应 AI 主机 300 体验",
           "count": 1
         },
         {
-          "label": "Anthropic",
+          "label": "AI model deployment",
           "count": 1
         }
       ],
@@ -45113,18 +45218,18 @@
       "label": "企业工作流",
       "todayCount": 15,
       "last7Count": 99,
-      "last30Count": 252,
+      "last30Count": 253,
       "subjects": [
         {
           "label": "OpenAI",
           "count": 2
         },
         {
-          "label": "AI model deployment",
+          "label": "联想百应 AI 主机 300 体验",
           "count": 1
         },
         {
-          "label": "Anthropic",
+          "label": "AI model deployment",
           "count": 1
         }
       ],
@@ -45166,18 +45271,18 @@
       "label": "AI 基础设施",
       "todayCount": 11,
       "last7Count": 55,
-      "last30Count": 186,
+      "last30Count": 187,
       "subjects": [
+        {
+          "label": "联想百应 AI 主机 300 体验",
+          "count": 1
+        },
         {
           "label": "AI model deployment",
           "count": 1
         },
         {
           "label": "Anthropic",
-          "count": 1
-        },
-        {
-          "label": "GLM",
           "count": 1
         }
       ],
@@ -45226,15 +45331,15 @@
       "last30Count": 148,
       "subjects": [
         {
+          "label": "联想百应 AI 主机 300 体验",
+          "count": 1
+        },
+        {
           "label": "Claude Code",
           "count": 1
         },
         {
           "label": "GLM",
-          "count": 1
-        },
-        {
-          "label": "MoonMath AI",
           "count": 1
         }
       ],
@@ -45741,50 +45846,6 @@
     ],
     "historicalTrends": [
       {
-        "id": "TRD-20260519-02",
-        "type": "trend_card",
-        "title": "AI 治理开始从原则讨论转向产品和流程约束",
-        "date": "2026-05-19",
-        "status": "draft",
-        "assetLevel": "candidate",
-        "trendStatus": "early",
-        "stageLabel": "继续观察",
-        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
-        "boundary": "",
-        "nextObservation": "",
-        "sourceTypes": [],
-        "relatedSignals": [
-          "CHG-20260519-07"
-        ],
-        "tags": {
-          "track": [
-            "track-ai-governance"
-          ],
-          "function": [],
-          "scenario": [],
-          "customer": [],
-          "evidence": [
-            "evidence-product-launch"
-          ],
-          "stage": [],
-          "region": [
-            "region-global"
-          ],
-          "source": []
-        },
-        "displayTags": [
-          {
-            "id": "track-ai-governance",
-            "label": "AI 治理"
-          },
-          {
-            "id": "evidence-product-launch",
-            "label": "产品发布"
-          }
-        ]
-      },
-      {
         "id": "TRD-20260519-01",
         "type": "trend_card",
         "title": "AI 编程进入预算和工程治理",
@@ -45833,6 +45894,50 @@
           {
             "id": "track-ai-coding",
             "label": "AI Coding"
+          },
+          {
+            "id": "evidence-product-launch",
+            "label": "产品发布"
+          }
+        ]
+      },
+      {
+        "id": "TRD-20260519-02",
+        "type": "trend_card",
+        "title": "AI 治理开始从原则讨论转向产品和流程约束",
+        "date": "2026-05-19",
+        "status": "draft",
+        "assetLevel": "candidate",
+        "trendStatus": "early",
+        "stageLabel": "继续观察",
+        "hypothesis": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "relationSummary": "AI 治理材料开始把权限、日志、隔离、评测和责任边界写进产品与部署流程，治理不只出现在原则表述里，也出现在企业采购和系统接入要求里。",
+        "boundary": "",
+        "nextObservation": "",
+        "sourceTypes": [],
+        "relatedSignals": [
+          "CHG-20260519-07"
+        ],
+        "tags": {
+          "track": [
+            "track-ai-governance"
+          ],
+          "function": [],
+          "scenario": [],
+          "customer": [],
+          "evidence": [
+            "evidence-product-launch"
+          ],
+          "stage": [],
+          "region": [
+            "region-global"
+          ],
+          "source": []
+        },
+        "displayTags": [
+          {
+            "id": "track-ai-governance",
+            "label": "AI 治理"
           },
           {
             "id": "evidence-product-launch",
@@ -45955,7 +46060,7 @@
         "window": "30 天",
         "object": "track-ai-agent",
         "label": "AI Agent",
-        "cardCount": 347,
+        "cardCount": 348,
         "lastSeen": "2026-06-23",
         "filter": "track-ai-agent"
       },
@@ -45963,7 +46068,7 @@
         "window": "30 天",
         "object": "customer-enterprise",
         "label": "大中型企业",
-        "cardCount": 253,
+        "cardCount": 254,
         "lastSeen": "2026-06-23",
         "filter": "customer-enterprise"
       },
@@ -45971,7 +46076,7 @@
         "window": "30 天",
         "object": "track-enterprise-workflow",
         "label": "企业工作流",
-        "cardCount": 252,
+        "cardCount": 253,
         "lastSeen": "2026-06-23",
         "filter": "track-enterprise-workflow"
       },
@@ -45979,7 +46084,7 @@
         "window": "30 天",
         "object": "track-ai-infra",
         "label": "AI 基础设施",
-        "cardCount": 186,
+        "cardCount": 187,
         "lastSeen": "2026-06-23",
         "filter": "track-ai-infra"
       },
@@ -46024,9 +46129,9 @@
       "title": "AI Agent",
       "date": "2026-06-23",
       "signal": "track-ai-agent",
-      "evidenceCount": 347,
+      "evidenceCount": 348,
       "window": "30 天",
-      "summary": "AI Agent has 347 linked cards in the 30 天 window.",
+      "summary": "AI Agent has 348 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -46035,9 +46140,9 @@
       "title": "大中型企业",
       "date": "2026-06-23",
       "signal": "customer-enterprise",
-      "evidenceCount": 253,
+      "evidenceCount": 254,
       "window": "30 天",
-      "summary": "大中型企业 has 253 linked cards in the 30 天 window.",
+      "summary": "大中型企业 has 254 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -46046,9 +46151,9 @@
       "title": "企业工作流",
       "date": "2026-06-23",
       "signal": "track-enterprise-workflow",
-      "evidenceCount": 252,
+      "evidenceCount": 253,
       "window": "30 天",
-      "summary": "企业工作流 has 252 linked cards in the 30 天 window.",
+      "summary": "企业工作流 has 253 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -46057,9 +46162,9 @@
       "title": "AI 基础设施",
       "date": "2026-06-23",
       "signal": "track-ai-infra",
-      "evidenceCount": 186,
+      "evidenceCount": 187,
       "window": "30 天",
-      "summary": "AI 基础设施 has 186 linked cards in the 30 天 window.",
+      "summary": "AI 基础设施 has 187 linked cards in the 30 天 window.",
       "whyUseful": "Use this when checking whether a repeated variable is becoming a trend candidate."
     },
     {
@@ -46201,18 +46306,18 @@
       "date": "2026-06-23",
       "signal": "track-ai-agent",
       "evidenceCount": 19,
-      "windowCount": 347,
+      "windowCount": 348,
       "subjects": [
         {
           "label": "OpenAI",
           "count": 2
         },
         {
-          "label": "AI model deployment",
+          "label": "联想百应 AI 主机 300 体验",
           "count": 1
         },
         {
-          "label": "Anthropic",
+          "label": "AI model deployment",
           "count": 1
         }
       ],
@@ -46252,7 +46357,7 @@
           "count": 10
         }
       ],
-      "summary": "AI Agent appears in 19 same-day cards and 347 cards in the 30-day window.",
+      "summary": "AI Agent appears in 19 same-day cards and 348 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -46262,18 +46367,18 @@
       "date": "2026-06-23",
       "signal": "customer-enterprise",
       "evidenceCount": 15,
-      "windowCount": 253,
+      "windowCount": 254,
       "subjects": [
         {
           "label": "OpenAI",
           "count": 2
         },
         {
-          "label": "AI model deployment",
+          "label": "联想百应 AI 主机 300 体验",
           "count": 1
         },
         {
-          "label": "Anthropic",
+          "label": "AI model deployment",
           "count": 1
         }
       ],
@@ -46309,7 +46414,7 @@
           "count": 7
         }
       ],
-      "summary": "大中型企业 appears in 15 same-day cards and 253 cards in the 30-day window.",
+      "summary": "大中型企业 appears in 15 same-day cards and 254 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -46319,18 +46424,18 @@
       "date": "2026-06-23",
       "signal": "track-enterprise-workflow",
       "evidenceCount": 15,
-      "windowCount": 252,
+      "windowCount": 253,
       "subjects": [
         {
           "label": "OpenAI",
           "count": 2
         },
         {
-          "label": "AI model deployment",
+          "label": "联想百应 AI 主机 300 体验",
           "count": 1
         },
         {
-          "label": "Anthropic",
+          "label": "AI model deployment",
           "count": 1
         }
       ],
@@ -46366,7 +46471,7 @@
           "count": 7
         }
       ],
-      "summary": "企业工作流 appears in 15 same-day cards and 252 cards in the 30-day window.",
+      "summary": "企业工作流 appears in 15 same-day cards and 253 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
@@ -46376,18 +46481,18 @@
       "date": "2026-06-23",
       "signal": "track-ai-infra",
       "evidenceCount": 11,
-      "windowCount": 186,
+      "windowCount": 187,
       "subjects": [
+        {
+          "label": "联想百应 AI 主机 300 体验",
+          "count": 1
+        },
         {
           "label": "AI model deployment",
           "count": 1
         },
         {
           "label": "Anthropic",
-          "count": 1
-        },
-        {
-          "label": "GLM",
           "count": 1
         }
       ],
@@ -46427,18 +46532,22 @@
           "count": 6
         }
       ],
-      "summary": "AI 基础设施 appears in 11 same-day cards and 186 cards in the 30-day window.",
+      "summary": "AI 基础设施 appears in 11 same-day cards and 187 cards in the 30-day window.",
       "whyUseful": "Use this when looking for repeated variables and co-occurring tags."
     },
     {
       "id": "relationship:product-launch-vs-adoption",
       "type": "relationship_cluster",
-      "title": "Claude Code、GLM 同日出现在企业 AI 产品发布里",
+      "title": "联想百应 AI 主机 300 体验、Claude Code 同日出现在企业 AI 产品发布里",
       "date": "2026-06-23",
       "signal": "产品发布",
       "evidenceCount": 10,
       "windowCount": 147,
       "subjects": [
+        {
+          "label": "联想百应 AI 主机 300 体验",
+          "count": 1
+        },
         {
           "label": "Claude Code",
           "count": 1
@@ -46449,10 +46558,6 @@
         },
         {
           "label": "MoonMath AI",
-          "count": 1
-        },
-        {
-          "label": "Norwest",
           "count": 1
         }
       ],
@@ -46482,15 +46587,15 @@
       "windowCount": 148,
       "subjects": [
         {
+          "label": "联想百应 AI 主机 300 体验",
+          "count": 1
+        },
+        {
           "label": "Claude Code",
           "count": 1
         },
         {
           "label": "GLM",
-          "count": 1
-        },
-        {
-          "label": "MoonMath AI",
           "count": 1
         }
       ],

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["api"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "latency_sensitive", "evaluation_gap"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Techcrunch 发布 AI 基础设施能力，切入模型部署和算力服务 Decart 发布 Oasis 3：实时世界模型可模拟数小时逼真驾驶场景 Decart 推出 Oasis 3，一个实时世界模型，能够生成逼真的驾驶环境用于自动驾驶车辆测试，现已通过 API 向开发者开放。"
+  missing_fields: []
+
 signal_owner: "Techcrunch"
 
 frontend:

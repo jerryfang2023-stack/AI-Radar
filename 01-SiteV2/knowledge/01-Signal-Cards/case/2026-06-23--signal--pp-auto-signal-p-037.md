@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "PP-OCRv6 on Hugging Face：50 语言 OCR，参数规模 1.5M 至 34.5M PP-OCRv6 on Hugging Face：50 语言 OCR，参数规模 1.5M 至 34.5M PP-OCRv6 是 PaddleOCR 最新一代通用 OCR 模型族，提供 tiny（1.5M）、small（7.7M）和 medium（34.5M）三级。medium 和 small 支持 50 种语言（简体/繁体中文、英..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "PP"
 
 frontend:

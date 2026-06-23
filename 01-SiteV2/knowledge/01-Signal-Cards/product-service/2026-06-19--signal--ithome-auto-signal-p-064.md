@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["sales", "it_security"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["copilot"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["deployment_scale", "partnership_announcement"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Ithome 推出 Agent 工作流能力，切入销售线索和收入团队协作 Meta AI重组核心项目高管道尔顿·史密斯被曝离职，内部士气\"史上最低\" 负责Meta AI重组核心项目的高管埃米莉·道尔顿·史密斯即将离职。她于2015年加入Meta，曾任Threads产品负责人，两个月前刚被指派改进内部AI工具。Meta正推进全公司重组，计划开发能替代人类员工的AI智能体，引发内部强烈反弹。重组涉及裁撤10%员工、调岗及部署鼠标追踪软件。道..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Ithome"
 
 frontend:

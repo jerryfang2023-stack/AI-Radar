@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: []
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Writer 案例：AI 进入地产开发和建筑设计流程 Building the Easy Button for Generative AI | May Habib, CEO, Writer # Writer 案例：AI 进入地产开发和建筑设计流程 ## 新闻事实 Writer 案例：AI 进入地产开发和建筑设计流程 ## 原文要点 - 原文未提供更多可拆分事实点，需以可见原文片段核对。"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Writer"
 
 frontend:

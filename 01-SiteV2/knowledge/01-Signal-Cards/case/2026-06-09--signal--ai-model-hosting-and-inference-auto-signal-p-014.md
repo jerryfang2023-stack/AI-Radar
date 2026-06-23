@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "procurement_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "procurement"]
+  specific_task: ["sales_lead_research", "rfp_response"]
+  business_action: ["procurement_signal", "pricing_change", "research_benchmark", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "security_compliance"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["regulatory_or_procurement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Ai Model Hosting And Inference - Bid Information - Commerce, Department Of - National Institute Of Standards And Technology - Dept Of Commerce Nist | BidNet Direct Ai Model Hosting And Inference - Bid Information - Comm..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Ai Model Hosting And Inference"
 
 frontend:

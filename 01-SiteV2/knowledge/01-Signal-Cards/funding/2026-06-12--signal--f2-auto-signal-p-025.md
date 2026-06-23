@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment"]
+  product_form: ["vertical_saas"]
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "F2 获得$24M 融资，押注模型部署和算力服务 F2 Raises $24M to Build AI for Private Credit F2 Raises $24M to Build AI for Private Credit ## $24M to build the Intelligence Layer for private credit Today, we're announcing $24 million in tota..."
+  missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]
+
 signal_owner: "F2"
 
 frontend:

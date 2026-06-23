@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "acquisition"]
+  product_form: []
+  delivery_model: ["project_based_service"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["case_study"]
+  source_evidence_type: ["first_party_case"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Capital 发布 AI 平台能力，面向企业 Agent 协作平台 Sabre scales agentic AI deployment as Ultra Group expands globally under Linex SOUTHLAKE, Texas and NEW YORK, June 17, 2026 /PRNewswire/ -- Sabre Corporation (NASDAQ: SABR), an AI-nati..."
+  missing_fields: ["specific_task", "product_form"]
+
 signal_owner: "Capital"
 
 frontend:

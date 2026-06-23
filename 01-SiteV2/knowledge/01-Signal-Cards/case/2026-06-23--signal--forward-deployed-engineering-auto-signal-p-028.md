@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "partnership_integration", "hiring_fde"]
+  product_form: ["fde_service"]
+  delivery_model: ["project_based_service", "fde_delivery"]
+  pain_or_constraint: []
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Forward Deployed Engineering 记录企业应用场景：企业智能体协作流程 Forward Deployed Engineering: Delivering Business Outcomes with AI | Databricks Blog - Databricks is launching its Forward Deployed Engineering (FDE) org to accelerate cus..."
+  missing_fields: []
+
 signal_owner: "Forward Deployed Engineering"
 
 frontend:

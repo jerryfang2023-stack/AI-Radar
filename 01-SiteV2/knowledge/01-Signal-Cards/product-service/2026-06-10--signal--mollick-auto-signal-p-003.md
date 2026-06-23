@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["named_customer"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Anthropic 的 Claude Fable 5 能一键生成古怪好玩的视频游戏 Anthropic 的 Claude Fable 5 能一键生成古怪好玩的视频游戏 Anthropic 发布 Claude Fable 5，可一键生成古怪好玩的视频游戏，预计将在网页 vibe coders 中广受欢迎。"
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "Mollick"
 
 frontend:

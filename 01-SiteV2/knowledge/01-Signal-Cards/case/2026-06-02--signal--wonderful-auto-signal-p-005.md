@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-business-media"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["customer_support_team", "enterprise_ai_owner"]
+  team_or_function: ["customer_support"]
+  specific_task: ["customer_ticket_triage"]
+  business_action: ["funding_round", "customer_deployment", "partnership_integration", "pricing_change"]
+  product_form: ["agent_workbench", "workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["model_routing_complexity"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Wonderful 获 1 亿美元 A 轮，扩展客服 Agent 部署 Wonderful raised $100M Series A to put AI agents on the front lines ..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 event: "Wonderful 把 AI 用进地产开发和建筑设计流程。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

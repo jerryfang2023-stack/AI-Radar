@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "procurement_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering", "procurement"]
+  specific_task: ["internal_tool_building", "rfp_response"]
+  business_action: ["product_launch", "procurement_signal", "pricing_change", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "evaluation_gap"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Qwen3.7-Plus：阿里巴巴将多模态AI打造成完全自主智能体 Qwen3.7-Plus：阿里巴巴将多模态AI打造成完全自主智能体 阿里巴巴Qwen团队发布Qwen3.7-Plus，一个将视觉感知、GUI操作和编码能力整合到单一智能体循环中的多模态智能体模型。在演示中，基于该模型的智能体自主开发了一款词汇学习应用，生成了超过10，000行代码，共执行了1，000次智能体调用，耗时11小时。该模型在Qwen自主基准测试的屏幕理解任务..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Plus"
 
 frontend:

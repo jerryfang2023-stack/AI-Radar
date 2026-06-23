@@ -58,6 +58,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["healthcare_provider", "insurance_team", "enterprise_ai_owner"]
+  team_or_function: ["healthcare_operations", "insurance_operations"]
+  specific_task: ["medical_documentation", "insurance_claim_review"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["vertical_saas", "workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "hallucination_risk", "model_routing_complexity"]
+  adoption_evidence: ["customer_metric", "partnership_announcement"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Veltris 发布 VeltrisOne，面向多行业工作流编排 AI Veltris Launches VeltrisOne -- A Vertical AI Orchestration Platform Purpose-Built to Power Micro-Industries Veltris announced VeltrisOne, a live Vertical AI Orchestration Platform to ..."
+  missing_fields: ["delivery_model"]
 ---
 
 # Veltris 发布 VeltrisOne，面向多行业工作流编排 AI

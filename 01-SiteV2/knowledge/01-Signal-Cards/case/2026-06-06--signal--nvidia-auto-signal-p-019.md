@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "healthcare_provider"]
+  team_or_function: ["sales", "customer_support", "healthcare_operations"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage", "medical_documentation"]
+  business_action: ["pricing_change", "open_source_release"]
+  product_form: []
+  delivery_model: ["open_source_commercial", "consulting_diagnostic"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Leading Inference Providers Achieve Lowest Token Cost With Open Source Models on NVIDIA Blackwell | NVIDIA Blog Leading Inference Providers Achieve Lowest Token Cost With Open Source Models on NVIDIA Blackwell | NVIDIA ..."
+  missing_fields: ["product_form", "adoption_evidence"]
+
 signal_owner: "Nvidia"
 
 frontend:

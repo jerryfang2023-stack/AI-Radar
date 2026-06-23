@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "context_management"]
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "/ query=model release inference cost reduction enterprise adoption / intent=find_original_source / path=official_original Gemma 4 QAT models: Optimizing model compression for mobile and laptop efficiency Jun 05, 2026 Sh..."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Google DeepMind"
 
 frontend:

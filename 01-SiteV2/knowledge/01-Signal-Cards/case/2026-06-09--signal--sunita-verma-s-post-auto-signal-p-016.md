@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: []
+  source_evidence_type: ["community_post"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Sunita Verma's Post - LinkedIn Sunita Verma's Post - LinkedIn Inference costs dropped 280-fold over the last two years."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Sunita Verma's Post"
 
 frontend:

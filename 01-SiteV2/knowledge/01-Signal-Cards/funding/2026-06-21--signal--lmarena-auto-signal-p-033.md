@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["context_management", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena We are reupping this episode after LMArena announced their fresh Series..."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "LMArena"
 
 frontend:

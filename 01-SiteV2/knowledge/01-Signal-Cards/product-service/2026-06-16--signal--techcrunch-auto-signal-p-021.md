@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["product_launch", "procurement_signal", "open_source_release", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: ["deployment_scale", "procurement_contract"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Techcrunch 推出 Agent 工作流能力，切入采购下单自动化 76位网络安全专家联名要求撤销美国政府对Anthropic最强模型的出口禁令 76名网络安全专家联名致信美国政府，要求撤销对Anthropic的Fable和Mythos模型的出口管制令，称此举将最强模型从防御者手中夺走，在对手快速进步时非常危险。美国政府近日以国家安全为由要求Anthropic限制出口，Anthropic已暂停全球用户访问。Mythos预览时仅约5..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Techcrunch"
 
 frontend:

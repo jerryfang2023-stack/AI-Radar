@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["product_launch", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["industry_report"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Latent 发布 AI 基础设施能力，切入地产和建筑设计工作流 Why Video Agent models are next — Ethan He, xAI Grok Imagine We’re announcing AIEWF speakers this week!"
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Latent"
 
 frontend:

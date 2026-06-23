@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "engineering_team"]
+  team_or_function: ["sales", "customer_support", "engineering"]
+  specific_task: ["sales_briefing", "customer_ticket_triage", "internal_tool_building"]
+  business_action: ["product_launch", "acquisition"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Salesforce 发布 AI 基础设施能力，切入销售线索和收入团队协作 Salesforce以36亿美元收购AI客服平台Fin Salesforce宣布以36亿美元收购AI客服平台Fin（前身为Intercom）。Fin提供可跨实时聊天、WhatsApp、短信、电话、Slack等多渠道解决客户问题的AI智能体。Salesforce计划利用Fin的技术和团队增强其企业级Agentforce平台，该平台允许企业构建自定义AI智能体以自..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Salesforce"
 
 frontend:

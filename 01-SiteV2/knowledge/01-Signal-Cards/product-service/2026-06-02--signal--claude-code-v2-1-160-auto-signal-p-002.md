@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "latency_sensitive", "security_compliance"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Claude Code v2.1.160 发布 Claude Code v2.1.160 发布 Claude Code v2.1.160版本主要增强安全性和稳定性。新版本在向shell启动文件和.git/config等文件写入内容前增加提示，防止意外命令执行；acceptEdits模式在写入.npmrc等构建配置文件前也会提示。此次更新修复了多个问题，包括Windows/WSL剪贴板、会话恢复、后台会话连接等，并优化了自动模式延迟和后..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 event: "Claude Code v2.1.160 发布 发布新的 AI 能力，面向企业智能体协作流程。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

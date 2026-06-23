@@ -58,6 +58,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment", "partnership_integration", "governance_requirement"]
+  product_form: ["agent_workbench"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "permission_boundary", "security_compliance"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Sycamore Labs 融资 6500 万美元，建设企业 AI Agent 平台 Sycamore Labs Secures $65 Million Seed Funding to Build Enterprise AI Agent Platform | Raising.fi Sycamore Labs Secures $65 Million Seed Funding to Build Enterprise AI Agent Pl..."
+  missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]
 ---
 
 # Sycamore Labs 融资 6500 万美元，建设企业 AI Agent 平台

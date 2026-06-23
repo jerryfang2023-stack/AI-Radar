@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["customer_support_team", "engineering_team", "finance_team"]
+  team_or_function: ["customer_support", "engineering", "finance"]
+  specific_task: ["customer_ticket_triage", "internal_tool_building"]
+  business_action: ["customer_deployment", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "The AI Agent Accountability Crisis: Why Governance Isn&#8217;t Keeping Up With Deployment The AI Agent Accountability Crisis: Why Governance Isn&#8217;t Keeping Up With Deployment Every enterprise is building AI agents."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "AI Agent Accountability Crisis"
 
 frontend:

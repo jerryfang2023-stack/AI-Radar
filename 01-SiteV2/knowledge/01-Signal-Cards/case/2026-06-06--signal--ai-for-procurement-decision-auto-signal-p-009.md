@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["procurement_signal", "pricing_change", "governance_requirement"]
+  product_form: ["workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "security_compliance"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["regulatory_or_procurement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI for procurement decision-making at a Pharma company AI for procurement decision-making at a Pharma company AI for procurement decision-making at a Pharma company # Implementing AI agent for better procurement decisio..."
+  missing_fields: ["specific_task", "delivery_model"]
+
 signal_owner: "AI for procurement decision"
 
 frontend:

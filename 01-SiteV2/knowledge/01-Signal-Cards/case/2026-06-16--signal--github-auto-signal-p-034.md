@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "open_source_release"]
+  product_form: ["copilot", "developer_tool"]
+  delivery_model: ["consulting_diagnostic"]
+  pain_or_constraint: ["latency_sensitive"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "GitHub 案例：AI 进入模型部署和算力调用 GitHub Copilot CLI 初学者指南：常用斜杠命令概览 GitHub Copilot CLI 为初学者提供了常用斜杠命令的概述，帮助用户通过命令控制终端中的 AI 智能体。"
+  missing_fields: []
+
 signal_owner: "GitHub"
 
 frontend:

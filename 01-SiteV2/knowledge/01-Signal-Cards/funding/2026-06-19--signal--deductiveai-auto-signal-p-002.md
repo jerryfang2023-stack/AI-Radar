@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["funding_round", "acquisition"]
+  product_form: ["evaluation_platform"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "DeductiveAI 获得$85M 融资，押注销售线索和收入团队协作 Elastic 同意以最高8500万美元收购 AI 初创公司 DeductiveAI DeductiveAI 同意被 Elastic 以最高 8500 万美元收购。这家 2023 年成立的初创公司用 AI 自动捕获和修复软件 bug，去年 11 月结束隐身模式并完成 750 万美元种子轮融资（CRV 领投，Databricks Ventures 等参投），当时估值..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "DeductiveAI"
 
 frontend:

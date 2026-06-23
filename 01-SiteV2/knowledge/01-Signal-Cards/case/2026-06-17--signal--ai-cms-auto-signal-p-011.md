@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "content_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "marketing_content", "it_security"]
+  specific_task: ["sales_lead_research", "content_workflow"]
+  business_action: ["product_launch", "partnership_integration", "governance_requirement"]
+  product_form: ["model_gateway", "workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  adoption_evidence: ["customer_metric", "partnership_announcement"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI赋能CMS平台如何变革企业内容运营 AI赋能CMS平台如何变革企业内容运营 传统企业内容管理系统依赖人工流程与孤立系统，效率低下。AI赋能的CMS将被动存储转变为主动编排，可在单一受管工作流中自动推荐资产、优化文案、标记本地化不一致、预测内容表现并路由审批。工作流自动化提升一致性，实时分析集成至发布层。德勤2025年对1800多名高管的调查显示，近半组织已利用AI简化工作流程，关键在于将AI嵌入内容创建、治理与发布系统，而非作为孤..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "AI赋能CMS平台如何变革企业内容运营"
 
 frontend:

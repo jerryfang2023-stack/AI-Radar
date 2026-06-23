@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["customer_deployment", "research_benchmark", "governance_requirement"]
+  product_form: []
+  delivery_model: ["consulting_diagnostic"]
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "OpenAI利用WildChat公开数据集（2023年4月至2024年5月收集的100万条对话）模拟模型部署，预测GPT-5.1、GPT-5.2、GPT-5.4在真实生产环境中的不良行为率。与私有生产数据对比发现，WildChat模拟的平均预测误差约3倍；但对技术性和智能体型失调的预测精度下降。研究验证了公开数据集作为外部审计工具的可行性。"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence"]
+
 signal_owner: "Openai"
 
 frontend:

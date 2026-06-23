@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["funding_round", "research_benchmark"]
+  product_form: ["vertical_saas"]
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "research_paper"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "/ query=YC AI startup funding vertical AI / intent=find_startups / path=developer_ecosystem The dataset is currently empty."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "rdjarbeng/yc"
 
 frontend:

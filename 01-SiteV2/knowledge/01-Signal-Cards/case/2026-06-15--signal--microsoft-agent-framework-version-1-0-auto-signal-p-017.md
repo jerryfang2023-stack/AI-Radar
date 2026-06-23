@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: []
+  business_action: []
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Microsoft Agent Framework Version 1.0 案例：AI 进入地产开发和建筑设计流程 Microsoft Agent Framework Version 1.0 | Microsoft Agent Framework # Microsoft Agent Framework Version 1.0 案例：AI 进入地产开发和建筑设计流程 ## 新闻事实 Microsoft Agent Framework V..."
+  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Microsoft Agent Framework Version 1.0"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "legal_team"]
+  team_or_function: ["sales", "engineering", "legal_compliance"]
+  specific_task: ["sales_lead_research", "internal_tool_building", "contract_review"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change", "open_source_release"]
+  product_form: ["agent_workbench", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike", "data_silo", "security_compliance", "evaluation_gap"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战 Google ADK 与 A2A 协议：跨语言多智能体团队构建实战 一篇技术博客展示了如何用 Google Agent Development Kit （ADK） 与 Agent2Agent （A2A） 协议搭建跨语言多智能体流水线：Python agent 调用 Gemini 解析合同条款，Go agent 用纯确定性逻辑校验合规性。A2A 协议通过 Agent C..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战"
 
 frontend:

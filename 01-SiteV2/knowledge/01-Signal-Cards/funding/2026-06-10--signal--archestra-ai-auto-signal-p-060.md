@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "open_source_release"]
+  product_form: ["developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Archestra.AI raises $10M to unlock next-gen agentic use case - Tech.eu Archestra.AI raises $10M to unlock next-gen agentic use case - Tech.eu Archestra.AI raises $10M to unlock next-gen agentic use case - Tech.eu # Arch..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "Archestra.AI"
 
 frontend:

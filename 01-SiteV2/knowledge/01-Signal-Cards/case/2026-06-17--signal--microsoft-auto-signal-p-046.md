@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "governance_requirement"]
+  product_form: ["copilot"]
+  delivery_model: []
+  pain_or_constraint: ["hallucination_risk", "security_compliance"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "M365 Copilot 曝最高严重性漏洞，攻击者可窃取 2FA 码 M365 Copilot 曝最高严重性漏洞，攻击者可窃取 2FA 码 微软修复了 M365 Copilot 平台一个\"最高严重性\"漏洞。安全公司 Varonis 披露，攻击者通过参数到提示注入，向目标发送含恶意 URL 的邮件，利用 URL 中 `q` 参数嵌入指令，诱使 Copilot 搜索用户邮件并提取标题嵌入图片 URL。由于安全护栏仅在\"思考\"阶段后生效，攻..."
+  missing_fields: ["buyer_or_user", "specific_task", "delivery_model"]
+
 signal_owner: "Microsoft"
 
 frontend:

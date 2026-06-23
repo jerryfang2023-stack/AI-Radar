@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["product_launch", "open_source_release"]
+  product_form: []
+  delivery_model: ["open_source_commercial"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Google 发布 Colab CLI，开发者与 AI 智能体可在终端中远程调用 Colab GPU 与 TPU 运行 Python 代码 Google 发布 Colab CLI，开发者与 AI 智能体可在终端中远程调用 Colab GPU 与 TPU 运行 Python 代码 Google 发布 Colab CLI，允许开发者和 AI 智能体在终端中直接运行本地 Python 代码，并利用远程 Colab 的 GPU 与 TPU 运..."
+  missing_fields: ["product_form"]
+
 signal_owner: "Marktechpost"
 
 frontend:

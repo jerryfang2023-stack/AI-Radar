@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building", "knowledge_base_qa"]
+  business_action: ["product_launch", "partnership_integration", "governance_requirement"]
+  product_form: ["api", "rag_knowledge_base"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "data_silo", "latency_sensitive", "security_compliance"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Ithome 推出 Agent 工作流能力，切入企业 Agent 协作平台 微信支付 AI 接入工具箱 2.0 发布，Token 消耗降低 50% 微信支付 AI 接入工具箱升级至 2.0 版本，全面支持中、英、日、韩、法、俄、葡、西、阿拉伯语共 9 种语言。Skill 从仅覆盖\"支付\"和\"券\"升级为全线覆盖所有产品知识，新增技术专家（全链路问答、动态排障）和金融级研发专家（代码质量审查）。新增 CLI 动态排障，支持自然语言查询支付..."
+  missing_fields: []
+
 signal_owner: "Ithome"
 
 frontend:

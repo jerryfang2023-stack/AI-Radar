@@ -45,6 +45,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "research_benchmark"]
+  product_form: ["model_gateway", "workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "hallucination_risk", "model_routing_complexity"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Marktechpost 案例：AI 进入模型部署和算力调用 Perplexity 将 Deep Research 整合进 Perplexity Computer，跨 20 多个前沿模型路由研究子任务 Perplexity 将 Deep Research 功能迁移至 Perplexity Computer 中，自动将复杂问题拆解为多个研究子任务，并路由至 20 多个前沿模型协同完成，支持生成报告、演示文稿和仪表盘。"
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Marktechpost"
 
 frontend:

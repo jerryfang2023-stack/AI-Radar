@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["product_launch", "open_source_release"]
+  product_form: ["developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "hallucination_risk"]
+  adoption_evidence: ["customer_metric", "deployment_scale"]
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Claude Code v2.1.169 发布 Claude Code v2.1.169 发布 Claude Code v2.1.169 新增 `--safe-mode` 标志及环境变量，用于禁用所有自定义配置以排查问题；新增 `/cd` 命令，可在不破坏提示词缓存的情况下切换工作目录；新增 `disableBundledSkills` 设置隐藏内置技能。修复了企业 MCP 策略在重连、IDE 配置及首次会话中不被强制的问题，以及 m..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "GitHub"
 
 frontend:

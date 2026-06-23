@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "finance_team"]
+  team_or_function: ["sales", "engineering", "finance"]
+  specific_task: ["sales_lead_research", "internal_tool_building", "medical_documentation"]
+  business_action: ["partnership_integration", "governance_requirement"]
+  product_form: []
+  delivery_model: ["consulting_diagnostic"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["customer_metric", "deployment_scale", "partnership_announcement"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Anthropic 案例：AI 进入销售和收入团队流程 TCS与Anthropic合作，将Claude引入受监管行业 Anthropic宣布与塔塔咨询服务（TCS）合作。TCS将向56个国家的5万名员工提供Claude，并为金融、医疗等受监管行业客户构建基于Claude的产品，同时加入Claude Partner Network。作为\"客户零号\"，TCS将在自身工程、财务、法律、营销和销售团队中率先使用Claude，并组建专门团队为客..."
+  missing_fields: ["product_form"]
+
 signal_owner: "Anthropic"
 
 frontend:

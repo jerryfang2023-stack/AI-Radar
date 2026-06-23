@@ -40,6 +40,22 @@ formal_tags:
   region: ["region-asia"]
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["operations_team"]
+  team_or_function: ["operations"]
+  specific_task: ["logistics_coordination"]
+  business_action: ["customer_deployment", "partnership_integration", "procurement_signal", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike"]
+  adoption_evidence: ["customer_metric", "partnership_announcement", "procurement_contract"]
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "NVIDIA 披露台积电、富士康等采用 AI 改造制造运营 台湾产业巨头借助NVIDIA加速世界AI基础设施建设 台湾超过500家NVIDIA生态合作伙伴正加速生产Vera Rubin NVL72基础设施，以支持全球智能体AI工厂。产业链涵盖TSMC、Foxconn、QCT、Wistron及Pegatron等厂商。TSMC采用NVIDIA cuLitho库，将计算光刻成本效益或周期时间提升20-50%。Foxconn构建了制造运营管理..."
+  missing_fields: ["product_form", "delivery_model"]
+
 event: "NVIDIA 披露台积电、富士康、QCT、纬创、和硕等台湾产业伙伴正在把加速计算、仿真、AI agents 和物理 AI 用进制造运营。"
 business_meaning: "这让 AI 基础设施供应商的角色发生变化：它不只卖硬件，也把自己的客户变成制造流程改造样板。"
 why_selected: "材料里有具体公司和运营环节，能看到 AI 从研发叙事进入光刻、工厂规划、根因分析和视觉检测等制造任务。"

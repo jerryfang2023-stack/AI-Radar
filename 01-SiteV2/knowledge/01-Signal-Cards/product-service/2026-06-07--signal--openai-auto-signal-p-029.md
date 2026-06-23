@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch", "research_benchmark", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "hallucination_risk", "security_compliance"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "OpenAI 发布 Lockdown Mode 保护敏感数据免受提示词注入攻击 OpenAI 发布 Lockdown Mode 保护敏感数据免受提示词注入攻击 OpenAI 推出 Lockdown Mode，旨在降低敏感数据在提示词注入攻击中被泄露的风险。该功能可限制 ChatGPT 在特定场景下对内部指令的响应，但无法完全杜绝注入攻击，仅将安全收益定位在减少敏感信息泄露几率上。Lockdown Mode 的具体启用方式和适用范围尚未..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "OpenAI"
 
 frontend:

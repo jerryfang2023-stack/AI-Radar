@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "operations_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "operations"]
+  specific_task: ["sales_lead_research", "logistics_coordination"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "procurement_signal"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["security_compliance", "evaluation_gap"]
+  adoption_evidence: ["procurement_contract", "third_party_report"]
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "NVIDIA 发布 Cosmos 3，争夺物理 AI 开发链 使用NVIDIA Cosmos 3开发物理AI推理、世界与行动模型 NVIDIA Cosmos 3是一款面向物理AI的前沿基础模型。它能够帮助机器人、自动驾驶车辆和智能空间理解真实世界、预测事件发展并生成适应特定环境与任务的行动。该模型融合了物理推理、世界理解与行动生成能力。"
+  missing_fields: ["product_form", "delivery_model"]
+
 event: "NVIDIA 发布 Cosmos 3，用世界模型和动作模型支持机器人、自动驾驶和智能空间的开发。"
 business_meaning: "这条信号说明英伟达正在把竞争位置从 GPU 供应继续推向物理 AI 的开发工具链。企业采购这类能力时，问题会从模型接口扩展到仿真、训练数据、边缘硬件和安全责任。"
 why_selected: "Cosmos 3 不是单独的模型新闻。它和 Alpamayo、Vera、DSX OS 等同日线索放在一起，显示英伟达希望把真实空间里的 AI 开发、测试和运行环节留在自己的体系内。"

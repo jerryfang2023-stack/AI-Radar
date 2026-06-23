@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "pricing_change", "open_source_release"]
+  product_form: ["workflow_automation"]
+  delivery_model: ["open_source_commercial"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "latency_sensitive", "model_routing_complexity"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Pipeshift: Inference for real-time production workloads | Y Combinator Pipeshift: Inference for real-time production workloads | Y Combinator Pipeshift: Inference for real-time agents | Y Combinator Pipeshift helps engi..."
+  missing_fields: ["adoption_evidence"]
+
 signal_owner: "Pipeshift"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "engineering_team"]
+  team_or_function: ["sales", "customer_support", "engineering"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage", "internal_tool_building"]
+  business_action: ["customer_deployment", "partnership_integration", "governance_requirement"]
+  product_form: []
+  delivery_model: ["project_based_service"]
+  pain_or_constraint: ["workflow_integration", "permission_boundary", "latency_sensitive"]
+  adoption_evidence: ["customer_metric", "pilot_or_poc"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Design Partner Program 记录企业应用场景：企业智能体协作流程 Design Partner Program - Build AI Agent Governance | APort Design Partner Program - Build AI Agent Governance | APort ..."
+  missing_fields: ["product_form"]
+
 signal_owner: "Design Partner Program"
 
 frontend:

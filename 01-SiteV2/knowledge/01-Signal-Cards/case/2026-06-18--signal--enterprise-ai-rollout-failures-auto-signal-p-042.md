@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["customer_deployment", "partnership_integration", "governance_requirement", "failure_postmortem"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "data_silo"]
+  adoption_evidence: ["partnership_announcement", "pilot_or_poc", "third_party_report"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "/ query=enterprise AI transformation production rollout customer deployment / intent=find_market_trend / path=a_media_gdelt Back to Articles | Updated on 6/18/2026 | 35 min read | Next Article More Download PDF PDF Ente..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "Enterprise AI Rollout Failures"
 
 frontend:

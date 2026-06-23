@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch", "research_benchmark", "failure_postmortem"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "latency_sensitive", "evaluation_gap"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["research_paper", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AA-Briefcase 基准测试：最佳 AI 模型仅完全解决 3% 真实知识工作 AA-Briefcase 基准测试：最佳 AI 模型仅完全解决 3% 真实知识工作 Artificial Analysis 推出的 AA-Briefcase 基准测试将 AI 模型置于包含数千份 Slack 消息、邮件、会议记录等碎片化源文件的多周知识工作项目中。表现最好的 Claude Fable 5 通过率最高，但仅在 3% 的任务中完全达标；91..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "AA"
 
 frontend:

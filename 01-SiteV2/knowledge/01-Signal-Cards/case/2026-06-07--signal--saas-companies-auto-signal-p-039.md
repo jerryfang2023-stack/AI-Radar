@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team"]
+  team_or_function: ["sales", "customer_support"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage"]
+  business_action: []
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["usage_growth"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "How SaaS Companies Are Monetizing AI Agents in 2026 How SaaS Companies Are Monetizing AI Agents in 2026 Salesforce hit $800 million in Agentforce ARR by the end of fiscal 2026, closing 29,000 deals in Q4 alone."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "SaaS companies"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "product_launch", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: ["deployment_scale", "pricing_page"]
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Meta的Hatch AI智能体每月最高200美元，成为其首个付费AI产品 Meta的Hatch AI智能体每月最高200美元，成为其首个付费AI产品 Meta正在开发一款名为\"Hatch\"的付费AI智能体产品，月费最高200美元。用户只需用自然语言描述需求，Hatch即可构建工作工具、安排日程或发送邮件。Meta CEO马克·扎克伯格认为，该产品将开辟广告之外的新收入来源，为公司在AI领域的巨额投资提供资金支持。这是Meta推出的首..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "The-Decoder"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "engineering_team"]
+  team_or_function: ["sales", "customer_support", "engineering"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage", "internal_tool_building"]
+  business_action: ["funding_round"]
+  product_form: ["vertical_saas"]
+  delivery_model: ["consulting_diagnostic"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Structured AI 案例：AI 进入企业智能体协作流程 Structured AI Raises $4.2M Seed to Build the Quality Layer for the Built World - Structured AI Structured AI Raises $4.2M Seed to Build the Quality Layer for the Built World - Structured ..."
+  missing_fields: ["adoption_evidence"]
+
 signal_owner: "Structured AI"
 
 frontend:

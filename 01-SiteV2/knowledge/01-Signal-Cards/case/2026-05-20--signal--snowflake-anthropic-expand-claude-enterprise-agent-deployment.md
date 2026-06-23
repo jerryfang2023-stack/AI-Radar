@@ -58,6 +58,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "procurement_signal"]
+  product_form: ["copilot"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: ["customer_metric", "partnership_announcement", "procurement_contract"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Snowflake 与 Anthropic 扩大合作，推进企业智能体部署 Snowflake and Anthropic announce $200 million partnership to bring agentic AI to global enterprises \\ Anthropic # Snowflake and Anthropic announce $200 million partnership to bring a..."
+  missing_fields: ["delivery_model"]
 ---
 
 # Snowflake 与 Anthropic 扩大合作，推进企业智能体部署

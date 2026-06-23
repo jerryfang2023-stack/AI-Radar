@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["engineering", "it_security"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["api", "developer_tool"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["permission_boundary"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Claude Code v2.1.162 发布 Claude Code v2.1.162 发布 Claude Code v2.1.162 发布，主要包含 Bug 修复和体验优化。`claude agents --json` 新增 `waitingFor` 字段，`/effort` 命令确认级别持久化，远程控制固定底部显示，`/ide` 菜单中 Windsurf 更名为 Devin Desktop。修复了配置文件只读导致启动黑屏、Win..."
+  missing_fields: ["adoption_evidence"]
+
 event: "Claude Code v2.1.162 发布 发布新的 AI 能力，面向企业智能体协作流程。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了企业智能体协作流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

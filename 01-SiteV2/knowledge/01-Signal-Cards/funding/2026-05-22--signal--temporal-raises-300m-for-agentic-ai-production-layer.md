@@ -58,6 +58,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment", "partnership_integration", "governance_requirement"]
+  product_form: []
+  delivery_model: ["consulting_diagnostic"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["partnership_announcement", "pilot_or_poc"]
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Temporal 融资 3 亿美元，补企业 Agent 的生产运行层 Temporal raises Series D funding | Temporal Temporal raises Series D funding | Temporal # Temporal Raises $300M Series D to Make Agentic AI Real for Companies SAN FRANCISCO — February ..."
+  missing_fields: ["specific_task", "product_form"]
 ---
 
 # Temporal 融资 3 亿美元，补企业 Agent 的生产运行层

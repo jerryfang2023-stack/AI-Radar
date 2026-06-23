@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "insurance_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering", "insurance_operations"]
+  specific_task: ["internal_tool_building", "insurance_claim_review"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["copilot", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike", "permission_boundary"]
+  adoption_evidence: ["deployment_scale", "partnership_announcement"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "微软发布新MAI模型 微软发布新MAI模型 微软发布了MAI-Thinking-1与MAI-Code-1-Flash两款新大语言模型。MAI-Thinking-1为35B参数的推理模型，目前向部分早期合作伙伴开放，官方称其在盲测中优于Sonnet 4.6。MAI-Code-1-Flash为5B参数模型，专为GitHub Copilot和VS Code优化，将逐步向VS Code的Copilot个人用户推出。两款模型均强调使用清洁、商业..."
+  missing_fields: ["delivery_model"]
+
 event: "Microsoft 把 AI 用进模型部署和算力调用。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

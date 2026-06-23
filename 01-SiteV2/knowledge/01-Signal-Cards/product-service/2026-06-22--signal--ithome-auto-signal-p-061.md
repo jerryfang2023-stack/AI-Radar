@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["product_launch", "partnership_integration", "governance_requirement"]
+  product_form: ["api"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["security_compliance"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "华为官网发布鸿蒙 HarmonyOS 7 （API 26） 新能力一览 华为官网发布鸿蒙 HarmonyOS 7 （API 26） 新能力一览 华为开发者官网发布 HarmonyOS 7 （API 26） 新能力一览，新增智能化 Skill（Vibe Coding 助力开发）、Agent（支持 A2A 接入）、视觉 AI；空间化沉浸光感组件、3DGS 端侧重建；全场景碰一碰精准分享；空间音频；多窗互动卡片（摇一摇触发）、闪控窗；安全星..."
+  missing_fields: []
+
 signal_owner: "Ithome"
 
 frontend:

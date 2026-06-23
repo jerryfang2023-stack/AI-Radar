@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "healthcare_provider", "insurance_team"]
+  team_or_function: ["engineering", "healthcare_operations", "insurance_operations"]
+  specific_task: ["internal_tool_building", "medical_documentation", "insurance_claim_review"]
+  business_action: ["funding_round"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "hallucination_risk"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Poetic 获得$50M 融资，押注地产和建筑设计工作流 Poetic Raises $50M Series A to Automate the World's Most Complex Enterprise Processes with Reliable AI New funding led by Kleiner Perkins accelerates Poetic's mission to automate complex, h..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Poetic"
 
 frontend:

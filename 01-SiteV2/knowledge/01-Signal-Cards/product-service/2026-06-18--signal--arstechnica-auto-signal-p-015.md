@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "open_source_release", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Arstechnica 发布 AI 基础设施能力，切入模型部署和算力服务 Anthropic 的 Claude Fable 5 和 Mythos 5 因美国出口管制下线 美国政府上周禁止外国人使用 Anthropic 的 Claude Fable 5 和 Mythos 5，Anthropic 随后将两模型下线。Mythos 5 自 4 月发布即被定性为双重用途--既能帮助安全专家修补漏洞，也能被恶意利用。Anthropic 通过 Pr..."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Arstechnica"
 
 frontend:

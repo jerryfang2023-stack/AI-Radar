@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["funding_round", "product_launch", "open_source_release", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "data_silo", "security_compliance", "evaluation_gap"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "MiniMax M3模型正式开源：原生多模态、百万上下文 推出 Agent 工作流能力，切入销售线索和收入团队协作 MiniMax M3模型正式开源：原生多模态、百万上下文 MiniMax M3模型正式开源，支持原生多模态和百万token上下文。发布两周以来，M3在Artificial Analysis综合智能指数排行榜上取得全球开源模型最高排名。"
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "MiniMax M3模型正式开源：原生多模态、百万上下文"
 
 frontend:

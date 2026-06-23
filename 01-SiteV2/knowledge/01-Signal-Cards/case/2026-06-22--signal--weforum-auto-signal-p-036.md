@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["customer_deployment", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["industry_report", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Weforum 记录企业应用场景：地产开发和建筑设计流程 Which AI systems are reshaping enterprise innovation?"
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "Weforum"
 
 frontend:

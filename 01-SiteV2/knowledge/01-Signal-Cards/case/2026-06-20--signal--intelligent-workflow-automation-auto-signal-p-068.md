@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "customer_support"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage"]
+  business_action: []
+  product_form: ["workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Intelligent Workflow Automation - Applied AI Intelligent Workflow Automation - Applied AI In our Customer Triage test case (250 support tickets), 72% of volume could be correctly routed using keyword-based rules before ..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "Intelligent Workflow Automation"
 
 frontend:

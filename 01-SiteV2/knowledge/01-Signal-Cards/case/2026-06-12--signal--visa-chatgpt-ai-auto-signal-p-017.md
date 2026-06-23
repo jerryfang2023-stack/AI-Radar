@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["finance_team", "operations_team", "enterprise_ai_owner"]
+  team_or_function: ["finance", "operations"]
+  specific_task: ["logistics_coordination"]
+  business_action: ["customer_deployment", "partnership_integration"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["deployment_scale", "partnership_announcement"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Visa 与 ChatGPT 集成，AI 智能体可实现零售购买 案例：AI 进入物流订单和邮件处理流程 Visa 与 ChatGPT 集成，AI 智能体可实现零售购买 Visa 将支付基础设施接入 ChatGPT，使 AI 智能体能够推荐零售产品并执行金融交易。该部署去除了零售漏斗最后阶段的人工干预--自主智能体将处理用户提示、评估商家目录，并利用 Visa 支付通道在任何支持商户处完成结账流程。"
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Visa 与 ChatGPT 集成，AI 智能体可实现零售购买"
 
 frontend:

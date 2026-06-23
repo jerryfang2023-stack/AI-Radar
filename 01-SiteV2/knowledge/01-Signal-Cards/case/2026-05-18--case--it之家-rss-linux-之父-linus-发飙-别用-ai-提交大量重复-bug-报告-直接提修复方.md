@@ -47,6 +47,22 @@ formal_tags:
   region: ["region-global"]
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["security_compliance"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "IT之家（RSS）：Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方 # IT之家（RSS）：Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方 ## 这个案例是谁 IT之家（RSS）：Linux 之父 Linus 发飙：别用 AI 提交大量重复 Bug 报告，直接提修复方 是从证据编号 `R-009` 中抽出的 L1 案例。它的价值不在于“又有一家公司发布..."
+  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+
 related_change_cards: ["CHG-20260518-05"]
 related_sources: ["R-009"]
 internal:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "pricing_change", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike", "security_compliance", "evaluation_gap"]
+  adoption_evidence: ["customer_metric", "procurement_contract"]
+  source_evidence_type: ["research_paper", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Claude Fable 5：首个 Mythos 模型 案例：AI 进入模型部署和算力调用 Claude Fable 5：首个 Mythos 模型--强大、昂贵且经过严格过滤 Anthropic 发布 Claude Fable 5，这是新 Mythos 类别的首个模型。该模型在 SWE-bench Verified 上达到 95%，几乎在所有基准测试中领先，但成本是 Opus 4.8 的两倍，每百万 token 价格为 10 美元或 ..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "Claude Fable 5：首个 Mythos 模型"
 
 frontend:

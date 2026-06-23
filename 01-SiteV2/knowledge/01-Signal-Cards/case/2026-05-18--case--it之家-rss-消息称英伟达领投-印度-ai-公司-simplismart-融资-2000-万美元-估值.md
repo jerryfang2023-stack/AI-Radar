@@ -47,6 +47,22 @@ formal_tags:
   region: ["region-global"]
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: ["partnership_announcement"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "IT之家（RSS）：消息称英伟达领投：印度 AI 公司 Simplismart 融资 2000 万美元，估值 # IT之家（RSS）：消息称英伟达领投：印度 AI 公司 Simplismart 融资 2000 万美元，估值 ## 这个案例是谁 IT之家（RSS）：消息称英伟达领投：印度 AI 公司 Simplismart 融资 2000 万美元，估值 是从证据编号 `R-011` 中抽出的 L1 案例。它的价值不在于“又有一家公司发布..."
+  missing_fields: ["product_form", "delivery_model"]
+
 related_change_cards: ["CHG-20260518-06"]
 related_sources: ["R-011"]
 internal:

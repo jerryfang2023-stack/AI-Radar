@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["product_launch", "open_source_release"]
+  product_form: ["developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Audio Interaction：开源语音模型持续监听，每0.4秒决定是否说话或保持沉默 Audio Interaction：开源语音模型持续监听，每0.4秒决定是否说话或保持沉默 Audio Interaction是一个开源语音模型，持续监听环境，每0.4秒判断是否应该说话或保持沉默。与GPT-4o或Qwen3.5-Omni不同，它无需等待录音结束，可在单个流中同时进行翻译、转录、对话并识别咳嗽等日常噪音。代码和模型权重已在Git..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "The-Decoder"
 
 frontend:

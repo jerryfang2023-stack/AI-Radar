@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["context_management"]
+  adoption_evidence: ["enterprise_plan"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "We caught up with Ashvin at NeurIPS 2025 to dig into the inside story of OpenAI’s reasoning team (spoiler: it went from a dozen people to 300+), why IOI Gold felt reachable in 2022 but somehow didn’t change the world wh..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Latent"
 
 frontend:

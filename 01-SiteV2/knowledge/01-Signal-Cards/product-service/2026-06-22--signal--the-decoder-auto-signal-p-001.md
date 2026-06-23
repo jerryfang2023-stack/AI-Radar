@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "UC Berkeley研究：ChatGPT推出后写作编程课程A比例飙升，显示AI替代作业而非改善学习 UC Berkeley研究：ChatGPT推出后写作编程课程A比例飙升，显示AI替代作业而非改善学习 UC Berkeley分析美国一所大型公立研究型大学超50万份成绩发现，自ChatGPT推出以来，写作和编程任务多的课程A等级比例跃升13个百分点，平均GPA上升0.12分。成绩涨幅主要来自家庭作业而非考试，口头展示类作业成绩未受影响..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "The-Decoder"
 
 frontend:

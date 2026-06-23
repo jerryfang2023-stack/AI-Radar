@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "context_management", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "LMArena 获得$1.7B 融资，押注地产和建筑设计工作流 State of Evals] LMArena's $1.7B Vision — Anastasios Angelopoulos, LMArena # LMArena 获得$1.7B 融资，押注地产和建筑设计工作流 ## 新闻事实 LMArena 获得$1.7B 融资，押注地产和建筑设计工作流 ## 原文要点 - 原文未提供更多可拆分事实点，需以可见原文片段核对。"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "LMArena"
 
 frontend:

@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "partnership_integration", "procurement_signal"]
+  product_form: ["developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "data_silo"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["funding_news", "regulatory_or_procurement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Archestra 把 AI 用进销售和收入团队流程 Archestra raises $10M to broker AI agent access to corporate data Archestra Inc., a U.K.-based startup whose open-source platform brokers access between artificial intelligence agents and sens..."
+  missing_fields: ["delivery_model"]
+
 event: "Archestra 把 AI 用进销售和收入团队流程。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

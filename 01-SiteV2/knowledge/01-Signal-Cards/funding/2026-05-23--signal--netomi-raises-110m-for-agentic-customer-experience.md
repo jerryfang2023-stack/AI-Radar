@@ -46,6 +46,22 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["customer_support_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["customer_support", "it_security"]
+  specific_task: ["customer_ticket_triage"]
+  business_action: ["funding_round", "customer_deployment", "governance_requirement", "failure_postmortem"]
+  product_form: []
+  delivery_model: ["consulting_diagnostic"]
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Netomi 融资 1.1 亿美元，扩展高风险客户体验智能体 Netomi Raises $110M from Accenture Ventures, Adobe Ventures, and WndrCo to Deploy Agentic Customer Experiences in the World's Most Complex Environments and Create the AI-Embedded Digital E..."
+  missing_fields: ["product_form"]
+
 event: "Netomi 宣布完成 1.1 亿美元融资，用于扩展面向复杂企业环境的 agentic CX 平台。"
 business_meaning: "企业老板需要关注的不是客服机器人本身，而是客服回复、合规审核、升级转人工和断线后的恢复责任被打包进同一套 AI 交付责任。"
 why_selected: "这条信号把大额融资、企业级客户体验和可审计运行环境放在一起，说明智能体预算正在从通用工具走向高风险业务流程。"

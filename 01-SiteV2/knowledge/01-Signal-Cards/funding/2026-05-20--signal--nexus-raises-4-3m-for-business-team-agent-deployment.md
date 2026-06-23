@@ -58,6 +58,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment", "governance_requirement"]
+  product_form: []
+  delivery_model: ["template_pack"]
+  pain_or_constraint: ["workflow_integration", "permission_boundary"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Nexus 融资 430 万美元，帮助业务团队部署 AI Agents Nexus Raises $4.3M Seed Round to Help Business Teams Deploy Nexus Raises $4.3M Seed Round to Help Business Teams Deploy [...] BRUSSELS and SAN FRANCISCO, March 31, 2026 (GLOBE NEWSWIR..."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence"]
 ---
 
 # Nexus 融资 430 万美元，帮助业务团队部署 AI Agents

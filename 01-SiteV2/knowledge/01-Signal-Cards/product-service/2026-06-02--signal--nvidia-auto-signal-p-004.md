@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["data_silo", "security_compliance"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "NVIDIA 发布 DGX Spark 本地 Agent 方案，支持多节点集群 在NVIDIA DGX Spark上运行更快模型和多节点集群的本地AI智能体 NVIDIA推出NVIDIA DGX Spark，旨在让开发者在自有硬件上本地运行AI智能体，摆脱对云端的依赖。该产品支持使用更快模型和构建多节点集群，以满足自主、长时间运行的AI智能体所产生的新计算需求，这类任务需维持大型上下文窗口、生成并发子智能体并持续迭代。本地运行有助于解..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 event: "Nvidia 发布新的 AI 能力，面向模型部署和算力调用。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

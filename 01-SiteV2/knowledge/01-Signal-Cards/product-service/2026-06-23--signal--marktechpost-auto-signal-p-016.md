@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["engineering", "it_security"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "research_benchmark", "governance_requirement"]
+  product_form: ["agent_workbench", "api", "workflow_automation"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["latency_sensitive", "model_routing_complexity", "security_compliance", "evaluation_gap"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["technical_blog", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Sakana AI 发布多智能体编排系统 Sakana Fugu，对外表现为单一模型 Sakana AI 发布多智能体编排系统 Sakana Fugu，对外表现为单一模型 今日 Sakana AI 发布 Sakana Fugu，一个多智能体编排系统，对外表现为单一模型。用户通过 OpenAI 兼容端点发送请求，Fugu 内部决定直接求解或组建专家模型团队协作。提供两个变体：Fugu（平衡性能与低延迟，支持特定 agent opt-ou..."
+  missing_fields: []
+
 signal_owner: "Marktechpost"
 
 frontend:

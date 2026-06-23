@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "research_benchmark", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "The-Decoder 案例：AI 进入模型部署和算力调用 Claude Fable 5：Anthropic承认\"错误的权衡\"，此前曾暗中限制竞争对手AI研究人员 Anthropic推翻了一项曾暗中削弱竞争对手AI研究人员的政策，公司承认做出了\"错误的权衡\"。然而，另一个争议点仍在持续。"
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "The-Decoder"
 
 frontend:

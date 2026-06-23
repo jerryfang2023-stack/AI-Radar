@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["partnership_integration"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["deployment_scale", "partnership_announcement"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Google 如何用 AI 重塑搜索 案例：AI 进入企业智能体协作流程 Google 如何用 AI 重塑搜索 # Google 如何用 AI 重塑搜索 案例：AI 进入企业智能体协作流程 ## 新闻事实 Google 对其搜索引擎进行 20 多年来最大变革，将 AI 生成的答案、对话式搜索和推理工具直接集成到核心搜索产品中。高级副总裁 Nick Fox 认为，AI 允许用户提出更复杂的问题并得到更快、更有用的答案，同时仍连接人们与网..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "Google 如何用 AI 重塑搜索"
 
 frontend:

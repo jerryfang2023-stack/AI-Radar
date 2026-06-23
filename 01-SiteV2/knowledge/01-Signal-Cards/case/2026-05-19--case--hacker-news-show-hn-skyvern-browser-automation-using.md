@@ -47,6 +47,22 @@ formal_tags:
   region: ["region-global"]
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["product_launch", "procurement_signal", "open_source_release"]
+  product_form: ["developer_tool", "workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["technical_blog", "regulatory_or_procurement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Hacker News：Show HN: Skyvern – Browser automation using Show HN: Skyvern – Browser automation using LLMs and computer vision 422 points / 139 comments / query=AI workflow automation procurement GitHub - Skyvern-AI/skyve..."
+  missing_fields: ["delivery_model"]
+
 related_change_cards: ["CHG-20260519-06"]
 related_sources: ["R-012"]
 internal:

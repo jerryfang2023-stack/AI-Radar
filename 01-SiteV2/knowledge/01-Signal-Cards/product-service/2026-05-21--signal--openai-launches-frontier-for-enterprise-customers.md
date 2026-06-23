@@ -58,6 +58,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["procurement_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["procurement", "it_security"]
+  specific_task: ["rfp_response"]
+  business_action: ["customer_deployment", "product_launch", "procurement_signal", "pricing_change"]
+  product_form: []
+  delivery_model: ["enterprise_subscription"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "OpenAI 推出 Frontier，争取更多企业客户 OpenAI launches Frontier in bid to win more business customers # OpenAI launches new enterprise platform in bid to win more business customers."
+  missing_fields: ["product_form"]
 ---
 
 # OpenAI 推出 Frontier，争取更多企业客户

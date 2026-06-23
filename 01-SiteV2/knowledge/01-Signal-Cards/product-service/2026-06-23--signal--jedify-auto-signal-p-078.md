@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["funding_round", "customer_deployment", "product_launch"]
+  product_form: ["agent_workbench"]
+  delivery_model: ["project_based_service"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作 Jedify: The Missing Layer in Enterprise AI - Norwest # Jedify: The Missing Layer in Enterprise AI ..."
+  missing_fields: ["adoption_evidence"]
+
 signal_owner: "Jedify"
 
 frontend:

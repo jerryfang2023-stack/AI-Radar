@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["operations_team", "enterprise_ai_owner"]
+  team_or_function: ["operations"]
+  specific_task: ["logistics_coordination"]
+  business_action: ["product_launch", "partnership_integration", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  adoption_evidence: ["partnership_announcement"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Ithome 推出 Agent 工作流能力，切入物流订单处理 三星打造50兆瓦海上浮动AI数据中心，获国际海事初步审批 三星造船事业部设计了一座功率达50兆瓦的海上浮动AI数据中心，从零开始建造专用船舶。该设施停靠近海时可通过海底电缆接入电网，驶往远海后借助液化天然气燃料电池自主发电，并直接抽取海水为服务器降温。三星已携手超微在真实河道与海洋环境中对高性能硬件进行极限测试。设计方案已获国际海事监管机构初步审批，去年秋季与OpenAI签..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Ithome"
 
 frontend:

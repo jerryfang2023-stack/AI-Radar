@@ -59,6 +59,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "pricing_change"]
+  product_form: ["vertical_saas"]
+  delivery_model: ["project_based_service"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "hallucination_risk"]
+  adoption_evidence: ["case_study"]
+  source_evidence_type: ["first_party_case"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Built 与 MightyBot 发布建设贷款 Draw Agent 生产案例 Built x MightyBot Case Study: AI Draw Agent in Production Built and MightyBot describe a production Draw Agent for construction lending workflows."
+  missing_fields: ["buyer_or_user", "specific_task"]
 ---
 
 # Built 与 MightyBot 发布建设贷款 Draw Agent 生产案例

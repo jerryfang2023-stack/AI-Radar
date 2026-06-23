@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-business-media"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "finance_team"]
+  team_or_function: ["sales", "engineering", "finance"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: []
+  delivery_model: ["self_serve_saas"]
+  pain_or_constraint: ["workflow_integration", "permission_boundary", "security_compliance"]
+  adoption_evidence: ["customer_metric", "deployment_scale", "partnership_announcement"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Replit 宣布获得 Visa 投资，企业 AI 编程接近支付流程 Replit Expands Enterprise Leadership with Visa Investment and Partnership, Payments Expansion, and Solution Partner Program Visa invests in and partners with Replit; more than 1,000 em..."
+  missing_fields: ["product_form"]
+
 event: "Replit 宣布获得 Visa 投资，并扩展双方在企业使用、支付能力和解决方案伙伴计划上的合作。"
 business_meaning: "AI 编程工具进入企业后，边界会从代码生成扩展到支付、权限、交易确认和责任归属。"
 why_selected: "Visa 不是普通软件客户。它的参与让 Replit 的企业叙事更接近真实交易系统，也让风险和合规问题变得更具体。"

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["customer_deployment", "pricing_change", "open_source_release", "governance_requirement"]
+  product_form: ["api", "model_gateway"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "latency_sensitive", "security_compliance"]
+  adoption_evidence: ["enterprise_plan"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "OpenRouter vs LiteLLM：如何选择 LLM 网关 OpenRouter vs LiteLLM：如何选择 LLM 网关 OpenRouter 是托管在 Cloudflare 边缘的 LLM 网关，无需管理基础设施，收取 5.5% 平台费（前 100 万次请求免费），支持 70+ 提供商和自动故障转移。LiteLLM 是自部署代理（Docker/PostgreSQL/Redis），数据不离开内网，免费开源，但需承担基础设..."
+  missing_fields: ["specific_task"]
+
 signal_owner: "OpenRouter vs LiteLLM：如何选择 LLM 网关"
 
 frontend:

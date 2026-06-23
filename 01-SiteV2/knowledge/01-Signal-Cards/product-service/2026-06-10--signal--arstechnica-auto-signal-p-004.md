@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "latency_sensitive", "security_compliance"]
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Google 发布 Gemini 3.5 Live Translate，实现即时语音到语音翻译 Google 发布 Gemini 3.5 Live Translate，实现即时语音到语音翻译 Gemini 3.5 Live Translate 提供即时语音到语音翻译，能够保留说话者的语调、节奏和音高，并通过 SynthID 水印确保安全性。"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Arstechnica"
 
 frontend:

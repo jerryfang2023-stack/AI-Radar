@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI Deployment: The Definitive Guide - Mirantis AI Deployment: The Definitive Guide - Mirantis # AI Deployment: The Definitive Guide - Mirantis ## 新闻事实 AI Deployment: The Definitive Guide - Mirantis ## 原文要点 - 原文未提供更多可拆分事..."
+  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "AI Deployment"
 
 frontend:

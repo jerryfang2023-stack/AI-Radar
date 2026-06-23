@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "finance_team", "healthcare_provider"]
+  team_or_function: ["sales", "finance", "healthcare_operations"]
+  specific_task: ["sales_lead_research", "medical_documentation", "insurance_claim_review"]
+  business_action: ["customer_deployment", "partnership_integration"]
+  product_form: ["agent_workbench", "vertical_saas", "evaluation_platform"]
+  delivery_model: []
+  pain_or_constraint: ["context_management"]
+  adoption_evidence: ["partnership_announcement"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Rede Mater Dei de Saúde 记录企业应用场景：销售和收入团队流程 Rede Mater Dei de Saúde: Monitoring AI agents in the revenue cycle with Amazon Bedrock AgentCore | Artificial Intelligence The growing adoption of multi-agent AI systems is red..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Rede Mater Dei de Saúde"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["procurement_signal", "governance_requirement"]
+  product_form: ["workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["regulatory_or_procurement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "The Ultimate Guide for AI in Procurement | Sievo The Ultimate Guide for AI in Procurement | Sievo AI in procurement explained: real use cases for spend analysis, supplier risk management, and automation in modern procur..."
+  missing_fields: ["specific_task", "delivery_model"]
+
 signal_owner: "Ultimate Guide for AI in Procurement"
 
 frontend:

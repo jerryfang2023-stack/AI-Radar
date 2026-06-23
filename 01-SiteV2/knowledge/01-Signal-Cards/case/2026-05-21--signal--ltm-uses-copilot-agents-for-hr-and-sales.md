@@ -59,6 +59,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment"]
+  product_form: ["copilot"]
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: ["customer_metric", "deployment_scale"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "LTM 在 HR 和销售组织部署 Copilot Agents LTM transforms HR and Sales Organization with AI-Powered Copilot Agents LTM deployed AI-powered Copilot agents across HR and Sales Organization workflows."
+  missing_fields: ["delivery_model"]
 ---
 
 # LTM 在 HR 和销售组织部署 Copilot Agents

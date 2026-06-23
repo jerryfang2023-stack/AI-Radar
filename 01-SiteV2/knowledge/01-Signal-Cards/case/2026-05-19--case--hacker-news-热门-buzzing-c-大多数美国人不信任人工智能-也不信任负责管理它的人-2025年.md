@@ -47,6 +47,22 @@ formal_tags:
   region: ["region-global"]
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch", "research_benchmark", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["hallucination_risk", "security_compliance"]
+  adoption_evidence: []
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Hacker News 热门（buzzing.c：大多数美国人不信任人工智能--也不信任负责管理它的人（2025年） 大多数美国人不信任人工智能--也不信任负责管理它的人（2025年） 2025年，皮尤研究中心与盖洛普联合发布的调查数据显示，大多数美国人对人工智能技术及其管理者持不信任态度。调查指出，超过六成受访者不信任AI系统的决策能力，同时约七成的人对政府及企业负责AI监管的人员缺乏信心。与2023年相比，不信任度上升约10个百分..."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 related_change_cards: ["CHG-20260519-03"]
 related_sources: ["R-005"]
 internal:

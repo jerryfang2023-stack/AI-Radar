@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release"]
+  product_form: []
+  delivery_model: ["open_source_commercial"]
+  pain_or_constraint: ["evaluation_gap"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "## 原文要点 - 来源材料显示，Marktechpost 的产品或平台动作涉及模型部署和算力调用。"
+  missing_fields: ["product_form"]
+
 signal_owner: "Marktechpost"
 
 frontend:

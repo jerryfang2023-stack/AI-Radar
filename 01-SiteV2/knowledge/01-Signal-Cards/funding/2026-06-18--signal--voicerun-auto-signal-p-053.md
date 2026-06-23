@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["engineering", "it_security"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "governance_requirement"]
+  product_form: ["evaluation_platform"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "hallucination_risk", "security_compliance"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["funding_news", "first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "VoiceRun 获得5 million 融资，押注企业 Agent 协作平台 VoiceRun Launches Full-Stack Voice AI Platform for Enterprises with ..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "VoiceRun"
 
 frontend:

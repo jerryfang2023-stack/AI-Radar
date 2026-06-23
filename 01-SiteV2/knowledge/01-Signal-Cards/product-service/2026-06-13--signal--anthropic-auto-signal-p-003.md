@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch", "procurement_signal", "research_benchmark", "governance_requirement"]
+  product_form: []
+  delivery_model: ["consulting_diagnostic"]
+  pain_or_constraint: ["workflow_integration", "security_compliance", "context_management"]
+  adoption_evidence: ["procurement_contract", "third_party_report"]
+  source_evidence_type: ["industry_report"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Anthropic 推出 Agent 工作流能力，切入采购下单自动化 Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业 Anthropic对近5.2万美国人调查显示：48%将治愈癌症等疾病列为首要期望，36%希望AI帮助残障人士。64%担忧AI导致失业，56%担忧认知依赖，52%担忧信息误导。超70%支持政府监管，最关注隐私（56%）、儿童安全（52%）和责任归属（49%）。仅15%信任AI公司决策。多数议题上..."
+  missing_fields: ["specific_task", "product_form"]
+
 signal_owner: "Anthropic"
 
 frontend:

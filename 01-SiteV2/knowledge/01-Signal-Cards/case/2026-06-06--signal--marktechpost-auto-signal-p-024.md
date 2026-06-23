@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release"]
+  product_form: ["developer_tool"]
+  delivery_model: ["open_source_commercial"]
+  pain_or_constraint: []
+  adoption_evidence: ["enterprise_plan"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Moonshot AI 发布 Kimi Code CLI：基于 TypeScript 的开源终端 AI 编码智能体 Moonshot AI 发布 Kimi Code CLI：基于 TypeScript 的开源终端 AI 编码智能体 Kimi Code CLI 是 Moonshot AI 推出的开源终端 AI 编码智能体，使用 TypeScript 构建，内置子智能体（subagents）与 MCP 配置支持。"
+  missing_fields: []
+
 signal_owner: "Marktechpost"
 
 frontend:

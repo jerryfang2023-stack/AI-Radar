@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch"]
+  product_form: ["copilot"]
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Scout 案例：AI 进入企业智能体协作流程 Microsoft launches Scout, an OpenClaw-inspired personal assistant # Scout 案例：AI 进入企业智能体协作流程 ## 新闻事实 Scout 案例：AI 进入企业智能体协作流程 ## 原文要点 - 原文未提供更多可拆分事实点，需以可见原文片段核对。"
+  missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Scout"
 
 frontend:

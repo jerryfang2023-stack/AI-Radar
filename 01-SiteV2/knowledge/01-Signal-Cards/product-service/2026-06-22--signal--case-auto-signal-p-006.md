@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment", "product_launch"]
+  product_form: ["workflow_automation"]
+  delivery_model: ["project_based_service"]
+  pain_or_constraint: ["workflow_integration", "model_routing_complexity"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["funding_news", "industry_report", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Case 推出 Agent 工作流，面向企业 Agent 协作平台 UiPath Introduces Maestro Case to Orchestrate Dynamic Business Processes | UiPath NEW YORK—June 16, 2026— UiPath, Inc.(NYSE: PATH), a leader in business orchestration and automation, to..."
+  missing_fields: ["specific_task"]
+
 signal_owner: "Case"
 
 frontend:

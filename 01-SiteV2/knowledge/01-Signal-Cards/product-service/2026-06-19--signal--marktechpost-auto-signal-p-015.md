@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "pricing_change", "research_benchmark"]
+  product_form: ["model_gateway"]
+  delivery_model: ["enterprise_subscription"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "audit_log_required", "data_silo"]
+  adoption_evidence: ["customer_metric", "deployment_scale"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Marktechpost 发布 AI 基础设施能力，切入模型部署和算力服务 Perplexity 推出自改进记忆系统 Brain，构建智能体工作上下文图 Perplexity 为其智能体产品 Computer 推出名为 Brain 的自我改进记忆系统。Brain 构建可追溯的上下文图（LLM wiki），记录代理完成的工作、成功、失败及用户修正，并在夜间自动增量合成会话、连接器结果、文档变更和修正结果。该系统通过递归自改进实现性能提升..."
+  missing_fields: ["specific_task"]
+
 signal_owner: "Marktechpost"
 
 frontend:

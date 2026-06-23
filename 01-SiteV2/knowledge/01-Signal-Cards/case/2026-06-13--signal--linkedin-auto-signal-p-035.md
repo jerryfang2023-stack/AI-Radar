@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["pricing_change", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "hallucination_risk", "context_management"]
+  adoption_evidence: []
+  source_evidence_type: ["community_post"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Linkedin 案例：AI 进入地产开发和建筑设计流程 Why companies are slow to adopt open models - LinkedIn According to AI cost optimization research, strategic architecture can reduce inference costs by up to 98% while maintaining accuracy."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Linkedin"
 
 frontend:

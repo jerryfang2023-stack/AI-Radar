@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment"]
+  product_form: ["api", "developer_tool"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "一个Agent如何通过链式调用两个HuggingFace Space构建3D巴黎画廊 一个Agent如何通过链式调用两个HuggingFace Space构建3D巴黎画廊 一个编码Agent调用HuggingFace上的两个Space，从零构建了展示巴黎地标3D高斯散点图的交互式画廊。Agent先用ideogram-ai/ideogram4生成每个纪念碑的黑色背景图像，再通过VAST-AI/TripoSplat从单张图像重建3D高斯散..."
+  missing_fields: ["adoption_evidence"]
+
 signal_owner: "一个Agent如何通过链式调用两个HuggingFace Space构建3D巴黎画廊"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change", "open_source_release"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "微软研究院的Lens：详细描述比原始规模更能训练高效图像生成器 微软研究院的Lens：详细描述比原始规模更能训练高效图像生成器 微软研究院推出Lens，一个仅3.8B参数的文本到图像模型。依靠由GPT-4.1生成的8亿条详细图像标题，而非模糊的网页替代文本，Lens在基准测试上匹配了规模更大的竞品，训练成本仅一小部分。代码和权重以开源许可证公开可用。"
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Lens"
 
 frontend:

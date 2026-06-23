@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "engineering_team"]
+  team_or_function: ["sales", "customer_support", "engineering"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage", "internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: ["case_study", "customer_metric"]
+  source_evidence_type: ["funding_news", "first_party_case"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Bedrock Robotics Builds Autonomous Construction Systems on Anyscale Bedrock Robotics Builds Autonomous Construction Systems on Anyscale Bedrock Robotics Builds Autonomous Construction Systems on Anyscale # Bedrock Robot..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Anyscale"
 
 frontend:

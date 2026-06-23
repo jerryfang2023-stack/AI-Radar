@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "operations_team"]
+  team_or_function: ["sales", "operations"]
+  specific_task: ["sales_lead_research", "logistics_coordination"]
+  business_action: ["customer_deployment", "partnership_integration", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["deployment_scale", "partnership_announcement", "pilot_or_poc"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "欧莱雅与OpenAI合作，将美宝莲虚拟试妆引入ChatGPT 欧莱雅与OpenAI合作，将美宝莲虚拟试妆引入ChatGPT 欧莱雅在VivaTech 2026宣布与OpenAI合作，将美宝莲虚拟试妆（基于ModiFace AR技术）直接集成到ChatGPT。合作覆盖消费者购物工具、产品发现、广告试点及内部AI应用。欧莱雅还将使用OpenAI的生命科学推理模型GPT-Rosalind，从理肤泉品牌开始研究皮肤微生物组，以开发新护肤品。O..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "OpenAI"
 
 frontend:

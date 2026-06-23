@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: ["knowledge_base_qa"]
+  business_action: ["customer_deployment", "research_benchmark", "governance_requirement"]
+  product_form: ["api", "rag_knowledge_base", "evaluation_platform"]
+  delivery_model: ["consulting_diagnostic", "api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "security_compliance", "evaluation_gap"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI红队测试解析：是什么及为何需要 AI红队测试解析：是什么及为何需要 AI红队测试通过模拟提示注入、数据操纵、越狱等真实攻击场景，系统性探测模型、智能体及应用的安全缺陷。研究显示AI安全事件从2024年233起增至2026年362起，凸显测试必要性。红队测试可提升模型安全性、对齐NIST AI RMF与EU AI Act等框架、加快事件响应并增强系统韧性。主要服务商包括：CBIZ Pivot Point Security（覆盖API..."
+  missing_fields: []
+
 signal_owner: "AI红队测试解析：是什么及为何需要"
 
 frontend:

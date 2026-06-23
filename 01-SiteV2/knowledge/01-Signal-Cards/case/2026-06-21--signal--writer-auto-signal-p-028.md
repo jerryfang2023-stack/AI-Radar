@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: ["knowledge_base_qa"]
+  business_action: ["funding_round", "customer_deployment", "partnership_integration"]
+  product_form: ["rag_knowledge_base"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "context_management"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "We also discuss Writer's Autonomous Action functionality, set to revolutionize AI workflows by enabling systems to act autonomously, highlighting AI's potential to acce The MAD Podcast with Matt Turck By Matt Turck The ..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Writer"
 
 frontend:

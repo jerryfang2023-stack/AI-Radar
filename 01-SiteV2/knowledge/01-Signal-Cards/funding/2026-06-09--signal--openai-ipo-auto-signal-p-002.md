@@ -40,6 +40,21 @@ formal_tags:
   region: []
   source: ["source-news-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["finance_team", "it_security_team"]
+  team_or_function: ["finance", "it_security"]
+  specific_task: []
+  business_action: ["funding_round", "pricing_change", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "OpenAI 秘密提交 IPO 申请，估值 8520 亿美元 OpenAI 秘密提交 IPO 申请 OpenAI周一在一篇博客中宣布已秘密提交首次公开募股申请，距其主要竞争对手Anthropic递交类似文件仅一周多时间，两家AI公司的上市竞赛随之升温。OpenAI在最新一轮融资中投后估值达8520亿美元。"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "OpenAI"
 
 frontend:

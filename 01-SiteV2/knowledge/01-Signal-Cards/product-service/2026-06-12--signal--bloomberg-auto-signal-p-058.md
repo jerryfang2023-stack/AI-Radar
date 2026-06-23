@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["product_launch"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["industry_report", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Bloomberg 推出 Agent 工作流能力，切入销售线索和收入团队协作 DoorDash 推出 AI 聊天机器人，帮助处理订单、预订和杂货清单 DoorDash Inc."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Bloomberg"
 
 frontend:

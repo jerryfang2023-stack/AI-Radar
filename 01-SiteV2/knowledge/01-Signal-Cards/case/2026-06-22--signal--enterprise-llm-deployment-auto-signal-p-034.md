@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["customer_deployment", "pricing_change", "governance_requirement"]
+  product_form: ["api"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "latency_sensitive", "security_compliance"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Enterprise LLM Deployment 记录企业应用场景：地产开发和建筑设计流程 Enterprise LLM Deployment: Private vs Cloud Infrastructure-OneSource Cloud Enterprise LLM Deployment: Private vs Cloud Infrastructure-OneSource Cloud."
+  missing_fields: ["specific_task"]
+
 signal_owner: "Enterprise LLM Deployment"
 
 frontend:

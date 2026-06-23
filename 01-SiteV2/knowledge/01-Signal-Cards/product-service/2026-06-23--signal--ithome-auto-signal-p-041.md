@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: ["knowledge_base_qa"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["rag_knowledge_base"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "data_silo"]
+  adoption_evidence: ["partnership_announcement"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "联想百应 AI 主机 300 体验：AI Max+395 芯片加持，能跑 120B 本地大模型 联想百应 AI 主机 300 体验：AI Max+395 芯片加持，能跑 120B 本地大模型 联想百应 AI 主机 300 搭载 AMD 锐龙 AI Max+ 395 处理器，集成 Radeon 8060S 显卡与 50 TOPS NPU，板载 128GB LPDDR5x 统一内存（可分配 96GB 显存）。本地部署 OpenClaw 和..."
+  missing_fields: ["buyer_or_user", "delivery_model"]
+
 signal_owner: "Ithome"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: []
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["hallucination_risk"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT 案例：AI 进入企业智能体协作流程 Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点 Anthropic 的 Claude Fable 5 在 FrontierMath 最困难级别上达到 88% 准确率，远超 OpenAI 的 GPT-5.5（约 75%），领先 13 个百分点。相较于 2026..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["partnership_integration", "open_source_release"]
+  product_form: ["copilot", "developer_tool"]
+  delivery_model: ["self_serve_saas"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["deployment_scale", "partnership_announcement", "third_party_report"]
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "GitHub 构建内部数据分析智能体 Qubot，基于 Copilot 实现自然语言查询 GitHub 构建内部数据分析智能体 Qubot，基于 Copilot 实现自然语言查询 GitHub 内部开发了 Qubot，一个由 Copilot 驱动的数据分析智能体。员工可以用自然语言直接提问公司数据，无需编写 SQL 或使用 BI 工具。团队在构建过程中积累了关于设计、集成和用户体验的经验。"
+  missing_fields: []
+
 signal_owner: "GitHub"
 
 frontend:

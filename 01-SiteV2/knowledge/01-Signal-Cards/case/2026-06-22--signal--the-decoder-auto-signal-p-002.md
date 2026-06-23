@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["engineering", "it_security"]
+  specific_task: ["internal_tool_building", "knowledge_base_qa"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release", "governance_requirement"]
+  product_form: ["rag_knowledge_base", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["permission_boundary", "data_silo", "security_compliance", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板 AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板 在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强制执行模..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "The-Decoder"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["open_source_release"]
+  product_form: ["developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "October '25 enterprise roundup 案例：AI 进入地产开发和建筑设计流程 October '25 enterprise roundup - GitHub # October '25 enterprise roundup 案例：AI 进入地产开发和建筑设计流程 ## 新闻事实 October '25 enterprise roundup 案例：AI 进入地产开发和建筑设计流程 ## 原文要点 - 原文未提供更..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "October '25 enterprise roundup"
 
 frontend:

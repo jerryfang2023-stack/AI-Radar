@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI model deployment 记录企业应用场景：模型部署和算力调用 AI model deployment: Best practices for production environments A developer's guide to deploying ML models using LaunchDarkly AI Configs."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "AI model deployment"
 
 frontend:

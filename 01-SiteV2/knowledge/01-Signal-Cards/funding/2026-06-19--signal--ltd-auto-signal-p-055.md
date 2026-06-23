@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["engineering", "it_security"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "governance_requirement"]
+  product_form: []
+  delivery_model: ["consulting_diagnostic"]
+  pain_or_constraint: ["workflow_integration", "permission_boundary", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "获得$60M 融资，押注企业 Agent 协作平台 AI agent authorization startup Arcade nabs $60M investment - SiliconANGLE startup Arcade nabs $60 ..."
+  missing_fields: ["product_form", "adoption_evidence"]
+
 signal_owner: "Ltd."
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "open_source_release", "hiring_fde"]
+  product_form: ["developer_tool", "fde_service"]
+  delivery_model: ["fde_delivery", "consulting_diagnostic"]
+  pain_or_constraint: ["workflow_integration", "context_management"]
+  adoption_evidence: ["customer_metric", "third_party_report"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Applied AI Case Studies and Real-World Success Stories Applied AI Case Studies and Real-World Success Stories | GoGloby | Company / Source | Industry | Problem Solved | Deployment Model | Measurable Outcome | Was GoGlob..."
+  missing_fields: []
+
 signal_owner: "Applied AI Case Studies and Real"
 
 frontend:

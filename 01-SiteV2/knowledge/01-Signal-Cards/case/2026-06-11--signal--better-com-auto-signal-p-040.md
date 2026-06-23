@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "finance_team"]
+  team_or_function: ["sales", "customer_support", "finance"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: ["case_study", "deployment_scale"]
+  source_evidence_type: ["funding_news", "first_party_case"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Better.com 案例：AI 进入企业智能体协作流程 ElevenLabs and Better.com Showcase Success of AI Loan Agent, Betsy™, at Scale in Financial Services NEW YORK--(BUSINESS WIRE)--ElevenLabs, the AI audio research and deployment company, relea..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Better.com"
 
 frontend:

@@ -47,6 +47,22 @@ formal_tags:
   region: ["region-global"]
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["product_launch"]
+  product_form: ["api"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Hacker News：Show HN: Llmswap v3.0 – CLI and SDK for Open Show HN: Llmswap v3.0 – CLI and SDK for OpenAI, Claude, Gemini, Watsonx 2 points / 0 comments / query=AI SDK developer adoption startup llmswap · PyPI Skip to mai..."
+  missing_fields: ["adoption_evidence"]
+
 related_change_cards: ["CHG-20260517-01"]
 related_sources: ["R-006"]
 internal:

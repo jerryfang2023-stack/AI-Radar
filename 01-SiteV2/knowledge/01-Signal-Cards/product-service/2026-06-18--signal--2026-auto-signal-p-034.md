@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["product_launch", "partnership_integration", "research_benchmark"]
+  product_form: []
+  delivery_model: ["enterprise_subscription", "consulting_diagnostic"]
+  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "博客现状，2026年中 发布 AI 基础设施能力，切入销售线索和收入团队协作 博客现状，2026年中 # 博客现状，2026年中 发布 AI 基础设施能力，切入销售线索和收入团队协作 ## 新闻事实 Nathan Lambert 在 Interconnects 博客创办约三年后更新规划。他当前三大目标：为前沿模型演进提供清晰度、创建开放模型生态、建立支撑机构。博客定位为原始、高辨识度的独立声音，避免成为全职分析平台。已披露与 Arce..."
+  missing_fields: ["product_form", "adoption_evidence"]
+
 signal_owner: "博客现状，2026年中"
 
 frontend:

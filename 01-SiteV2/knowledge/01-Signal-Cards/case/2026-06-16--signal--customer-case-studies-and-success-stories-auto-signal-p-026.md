@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "healthcare_provider", "operations_team"]
+  team_or_function: ["sales", "healthcare_operations", "operations"]
+  specific_task: ["sales_lead_research", "medical_documentation", "logistics_coordination"]
+  business_action: ["customer_deployment", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "hallucination_risk", "security_compliance"]
+  adoption_evidence: ["case_study", "customer_metric"]
+  source_evidence_type: ["first_party_case"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Customer Case Studies & Success Stories 案例：AI 进入物流订单和邮件处理流程 Customer Case Studies & Success Stories - C3 AI View case studies and hear from C3 AI customers on how they are using our industry-leading enterprise AI softwa..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Customer Case Studies & Success Stories"
 
 frontend:

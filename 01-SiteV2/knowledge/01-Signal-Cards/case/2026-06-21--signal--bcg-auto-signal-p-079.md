@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["funding_round"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["funding_news", "industry_report", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "The $200 Billion AI Opportunity in Tech Services The $200 Billion AI Opportunity in Tech Services | BCG By understanding where capital is flowing, technology service providers can gain a clear sense of where agentic AI ..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Bcg"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: []
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["context_management"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Spotify 案例：AI 进入销售和收入团队流程 State of AI 2024: Frontier Models, AI Geopolitics and The Robotics Renaissance | Nathan Benaich, Founder, Air Street Capital # Spotify 案例：AI 进入销售和收入团队流程 ## 新闻事实 Spotify 案例：AI 进入销售和收入团队流程 ## 原文要..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Spotify"
 
 frontend:

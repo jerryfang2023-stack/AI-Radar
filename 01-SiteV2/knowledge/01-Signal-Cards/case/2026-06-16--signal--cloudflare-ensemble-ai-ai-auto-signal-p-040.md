@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike", "context_management"]
+  adoption_evidence: ["customer_metric", "deployment_scale"]
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Cloudflare 引入 Ensemble AI 团队，加速 AI 基础设施研发 案例：AI 进入地产开发和建筑设计流程 Cloudflare 引入 Ensemble AI 团队，加速 AI 基础设施研发 Cloudflare 宣布 Ensemble AI 团队关键成员加入，以加速 AI 基础设施研发。Ensemble 专注于模型压缩与高效推理，开发了 NdLinear（可直接替换 Transformer 标准线性层并保持多维激活结..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Cloudflare 引入 Ensemble AI 团队，加速 AI 基础设施研发"
 
 frontend:

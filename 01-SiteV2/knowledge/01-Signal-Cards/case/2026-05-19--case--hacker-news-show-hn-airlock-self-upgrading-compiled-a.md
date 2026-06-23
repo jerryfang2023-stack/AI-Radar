@@ -47,6 +47,22 @@ formal_tags:
   region: ["region-global"]
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release"]
+  product_form: ["developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Hacker News：Show HN: Airlock – self-upgrading compiled A Show HN: Airlock – self-upgrading compiled AI agents 4 points / 2 comments / query=AI coding agent enterprise deployment GitHub - airlockrun/airlock · GitHub Skip..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 related_change_cards: ["CHG-20260519-05"]
 related_sources: ["R-007"]
 internal:

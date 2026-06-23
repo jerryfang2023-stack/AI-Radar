@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release"]
+  product_form: ["developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "GitHub 推出 Agent 工作流能力，切入模型部署和算力服务 Claude Code v2.1.176 发布 Claude Code v2.1.176 更新：会话标题现按对话语言生成；新增 footerLinksRegexes 设置支持正则匹配页脚行链接徽章；优化 Bedrock 凭证缓存。修复多项问题：环境变量不可再绕过 availableModels 限制；/fast 切换至白名单外模型时拒绝；auto 模式退化为可用 Op..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "GitHub"
 
 frontend:

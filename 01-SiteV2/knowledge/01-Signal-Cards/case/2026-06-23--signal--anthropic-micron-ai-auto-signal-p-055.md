@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "procurement_signal", "research_benchmark"]
+  product_form: ["workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["context_management"]
+  adoption_evidence: ["customer_metric", "procurement_contract"]
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Anthropic与Micron计划共同设计AI内存架构 Anthropic与Micron计划共同设计AI内存架构 Anthropic与Micron达成AI基础设施协议，包括四部分：共同设计AI内存架构、Micron多年期数据中心产品供货合同、在Micron内部署Claude、以及Micron参与Anthropic H轮融资。双方将研究不同AI负载下的内存系统行为，以提升性能与能效；Micron将供应HBM、DRAM和SSD。Anth..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Anthropic与Micron计划共同设计AI内存架构"
 
 frontend:

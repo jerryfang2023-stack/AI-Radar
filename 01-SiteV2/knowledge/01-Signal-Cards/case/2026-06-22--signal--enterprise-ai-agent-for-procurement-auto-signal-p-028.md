@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["operations_team", "enterprise_ai_owner"]
+  team_or_function: ["operations"]
+  specific_task: ["logistics_coordination"]
+  business_action: ["customer_deployment", "partnership_integration", "procurement_signal", "research_benchmark"]
+  product_form: ["vertical_saas"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["partnership_announcement", "procurement_contract"]
+  source_evidence_type: ["regulatory_or_procurement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Enterprise AI Agent for Procurement 记录企业应用场景：地产开发和建筑设计流程 Enterprise AI Agent for Procurement | Madgeek A first-person account of building an AI-powered procurement agent for Tejas Networks."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Enterprise AI Agent for Procurement"
 
 frontend:

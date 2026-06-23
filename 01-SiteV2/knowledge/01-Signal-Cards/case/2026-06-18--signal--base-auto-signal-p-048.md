@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: ["knowledge_base_qa"]
+  business_action: []
+  product_form: ["rag_knowledge_base"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "data_silo"]
+  adoption_evidence: []
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "## 价值描述 Base 的案例信号可用于观察 AI 是否已经进入 地产开发和建筑设计流程，以及后续是否出现客户、流程或结果指标。"
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "Base"
 
 frontend:

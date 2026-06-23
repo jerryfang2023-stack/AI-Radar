@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["product_launch", "procurement_signal"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  adoption_evidence: ["deployment_scale", "procurement_contract"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Bloomberg 推出 Agent 工作流能力，切入采购下单自动化 蚂蚁集团拟为支付宝引入AI智能体界面，与微信争夺用户 # Bloomberg 推出 Agent 工作流能力，切入采购下单自动化 ## 新闻事实 蚂蚁集团正在测试对支付宝超级应用的重大改造，计划引入AI智能体界面。此举标志着与劲敌微信的用户争夺战进一步升级。"
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Bloomberg"
 
 frontend:

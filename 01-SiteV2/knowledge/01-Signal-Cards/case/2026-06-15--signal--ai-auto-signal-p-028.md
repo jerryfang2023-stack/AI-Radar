@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: ["knowledge_base_qa"]
+  business_action: []
+  product_form: ["rag_knowledge_base"]
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI 案例：AI 进入地产开发和建筑设计流程 Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG | Douwe Kiela, CEO, Contextual AI # AI 案例：AI 进入地产开发和建筑设计流程 ## 新闻事实 AI 案例：AI 进入地产开发和建筑设计流程 ## 原文要点 - 原文未提供更多可拆分事实点，需以可见原文片段核对。"
+  missing_fields: ["buyer_or_user", "adoption_evidence", "delivery_model"]
+
 signal_owner: "AI"
 
 frontend:

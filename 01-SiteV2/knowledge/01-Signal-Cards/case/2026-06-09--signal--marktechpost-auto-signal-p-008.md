@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["hallucination_risk"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型 Microsoft AI 推出 MAI-Transcribe-1.5 语音转文本模型 Microsoft AI 发布 MAI-Transcribe-1.5，其自研语音转文本模型的第二代。该模型支持 43 种语言，新增关键词（实体）偏置功能，可针对领域特定术语优化。在 Artificial Analysis 排行榜上词错误率（WER）为 2.4%，在 ..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Marktechpost"
 
 frontend:

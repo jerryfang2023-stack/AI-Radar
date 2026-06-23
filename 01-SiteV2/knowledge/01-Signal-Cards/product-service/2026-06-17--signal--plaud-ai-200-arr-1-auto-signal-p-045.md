@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change"]
+  product_form: ["browser_or_desktop_tool"]
+  delivery_model: ["enterprise_subscription"]
+  pain_or_constraint: ["workflow_integration", "context_management"]
+  adoption_evidence: ["deployment_scale", "usage_growth"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元 推出 Agent 工作流能力，切入销售线索和收入团队协作 Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元 AI记事本公司Plaud宣布售出超200万台设备，订阅业务年化经常性收入（ARR）突破1亿美元。去年推出179美元的Plaud Pro，今年新增类似定价的Plaud Pin S。软件方面，年初上线桌面应用，可录制系统音频为在线会议做笔记；上月推..."
+  missing_fields: []
+
 signal_owner: "Plaud：AI记事本销量超200万台，订阅业务ARR突破1亿美元"
 
 frontend:

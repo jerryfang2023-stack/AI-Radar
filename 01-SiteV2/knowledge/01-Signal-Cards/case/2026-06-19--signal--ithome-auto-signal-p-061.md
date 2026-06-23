@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["engineering", "it_security"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["product_launch", "pricing_change", "open_source_release", "research_benchmark"]
+  product_form: ["copilot", "model_gateway", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike"]
+  adoption_evidence: ["customer_metric", "deployment_scale", "pricing_page"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "## 原文要点 - IT之家 6 月 19 日消息，科技媒体 The Information 昨日（6 月 18 日）发布博文，报道称包括 AT&T、Meta、Uber、微软在内的诸多科技公司已严苛限制内部 AI 工具使用， 正从鼓励 AI 无限使用（tokenmaxxing）转向严格限制（tokenminimizing）。"
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Ithome"
 
 frontend:

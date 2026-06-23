@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员 推出 Agent 工作流能力，切入企业 Agent 协作平台 Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员 # Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员 推出 Agent 工作流能力，切入企业 Agent 协作平台 ## 新闻事实 Anthropic 加入由 Stripe、Google..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员"
 
 frontend:

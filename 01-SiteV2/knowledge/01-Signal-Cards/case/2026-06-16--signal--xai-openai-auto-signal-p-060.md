@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["procurement_signal"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼 案例：AI 进入采购下单流程 美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼 美国一名联邦法官驳回了 xAI 对 OpenAI 提起的诉讼。xAI 指控 OpenAI 诱使其前高级工程师李雪辰泄露与 Grok 4 相关的商业机密。法官丽塔·林认为 xAI 未能提供证据证明 OpenAI 怂恿泄密，且招聘中询问过往工作属行业常规，裁定不可再诉。这是马斯克四周内第..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "美国法官驳回 xAI 指控 OpenAI 窃取商业机密的诉讼"
 
 frontend:

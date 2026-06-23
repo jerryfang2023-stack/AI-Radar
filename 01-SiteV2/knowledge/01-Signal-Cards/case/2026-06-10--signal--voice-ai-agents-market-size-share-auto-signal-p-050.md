@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["funding_round", "customer_deployment", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Voice AI Agents Market Size, Share | CAGR of 34.8% Voice AI Agents Market Size, Share | CAGR of 34.8% Voice AI Agents Market is estimated to reach USD 47.5 billion By 2034, Riding on a Strong 34.8% CAGR throughout the f..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Voice AI Agents Market Size, Share"
 
 frontend:

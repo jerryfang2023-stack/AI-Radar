@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["partnership_integration", "pricing_change", "open_source_release"]
+  product_form: ["copilot", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "大型AI公司计划上市引发价格上涨担忧 大型AI公司计划上市引发价格上涨担忧 大型AI公司计划上市，预计未来将出现更多价格上涨。原文标题探讨这是否标志着Tokenpocalypse的开端。"
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "TechCrunch"
 
 frontend:

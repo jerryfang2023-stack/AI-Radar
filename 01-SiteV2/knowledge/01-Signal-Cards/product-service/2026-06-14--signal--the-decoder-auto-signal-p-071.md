@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "procurement_signal", "failure_postmortem"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["deployment_scale", "procurement_contract"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "The-Decoder 推出 Agent 工作流能力，切入采购下单自动化 美国政府强制Anthropic关闭面向全球用户的Claude Fable 5和Mythos 5 # The-Decoder 推出 Agent 工作流能力，切入采购下单自动化 ## 新闻事实 美国政府以存在所谓越狱风险为由，要求Anthropic立即停止向全球用户提供Claude Fable 5和Mythos 5。Anthropic已服从命令，但公开反驳称漏洞极小..."
+  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+
 signal_owner: "The-Decoder"
 
 frontend:

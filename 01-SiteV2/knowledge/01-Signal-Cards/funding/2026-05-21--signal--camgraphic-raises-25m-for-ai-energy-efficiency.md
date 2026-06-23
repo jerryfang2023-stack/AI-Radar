@@ -58,6 +58,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["finance_team"]
+  team_or_function: ["finance"]
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment", "partnership_integration", "procurement_signal"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike", "latency_sensitive"]
+  adoption_evidence: ["partnership_announcement", "procurement_contract", "enterprise_plan"]
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "CamGraPhIC 获得 2500 万欧元融资，推进 AI 光互连 University spin-out secures funding to improve AI energy efficiency ..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
 ---
 
 # CamGraPhIC 获得 2500 万欧元融资，推进 AI 光互连

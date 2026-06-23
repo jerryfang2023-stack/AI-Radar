@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["research_paper"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "End of SWE 发布 AI 基础设施能力，切入模型部署和算力服务 The End of SWE-Bench Verified — Mia Glaese &amp; Olivia Watkins, OpenAI Frontier Evals &amp; Human Data Olivia Watkins (Frontier Evals team) and Mia Glaese (VP of Research at OpenAI, ..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "End of SWE"
 
 frontend:

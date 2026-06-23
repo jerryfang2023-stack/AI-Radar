@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["copilot"]
+  delivery_model: ["enterprise_subscription"]
+  pain_or_constraint: ["workflow_integration", "context_management"]
+  adoption_evidence: ["deployment_scale", "partnership_announcement", "third_party_report"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "ChatGPT 市场份额首次跌破 50% 推出 Agent 工作流能力，切入企业 Agent 协作平台 ChatGPT 市场份额首次跌破 50% 2026 年 5 月底，ChatGPT 市场份额降至 46.4%，为发布以来首次低于 50%。Gemini 以 27.7% 紧随其后，Claude 占 10.3%。ChatGPT 仍以超 11 亿月活跃用户领先，Gemini 和 Claude 分别拥有 6.62 亿和 2.45 亿用户。用户..."
+  missing_fields: ["specific_task"]
+
 signal_owner: "ChatGPT 市场份额首次跌破 50%"
 
 frontend:

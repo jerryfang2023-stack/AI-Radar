@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "data_silo", "latency_sensitive", "context_management"]
+  adoption_evidence: ["customer_metric", "partnership_announcement"]
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Google DeepMind 案例：AI 进入模型部署和算力调用 DiffusionGemma 开发者指南 DiffusionGemma 是 Google 基于 Gemma 4 架构的实验性文本生成模型，采用扩散式并行生成替代逐 token 自回归，实现更快推理、双向上下文感知和实时自我修正，并可在消费级 GPU 上部署。模型通过迭代去噪并行生成并细化 256-token 块，在处理数独等复杂约束任务上优于传统语言模型，且微调效果显..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Google DeepMind"
 
 frontend:

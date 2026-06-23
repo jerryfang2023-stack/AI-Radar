@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { inferOpportunitySignals, opportunitySignalsYaml } from "./opportunity-signals-utils.mjs";
 
 const root = process.cwd();
 const args = new Map(
@@ -985,6 +986,17 @@ function isGenericReportOrListSection(section) {
   return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent|series-b-enterprise-ai-agents|ai agent startups insight partners funding/iu.test(titleUrlSource);
 }
 
+function hasTextContamination(text = "") {
+  const value = String(text || "");
+  const length = value.length || 1;
+  const replacementCount = (value.match(/\uFFFD/gu) || []).length;
+  const controlCount = (value.match(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/gu) || []).length;
+  return /%PDF|endobj|xref|JFIF|Exif|Photoshop 3\.0|stream\s+x|浼佷笟|鍟嗕笟|鎯呮|寰呯|鍙戝竷|铻嶈祫|瀹屾垚|鍏紑|杩借釜/iu.test(value)
+    || controlCount >= 3
+    || replacementCount >= 8
+    || replacementCount / length > 0.003;
+}
+
 function corePoolSemanticIssues(section) {
   const issues = [];
   const text = textForInference(section);
@@ -999,6 +1011,7 @@ function corePoolSemanticIssues(section) {
   if (!/core_pool/u.test(value(section, "pool_routes"))) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "not_core_pool"));
   if (value(section, "raw_qc_decision") !== "allow") issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "raw_qc_not_allow"));
   if (value(section, "has_full_text") !== "true") issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "missing_full_text"));
+  if (hasTextContamination(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "binary_or_mojibake_text_contamination"));
   if (isGenericReportOrListSection(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "generic_report_or_list_not_fact_signal"));
   if (!sourceUrl || sourceUrl === "no-url") issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, "missing_source_url"));
   if (!value(section, "extraction_method")) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "missing_extraction_method"));
@@ -1611,6 +1624,28 @@ function formalTagsForSignal(spec, sourceLevel) {
   return Object.fromEntries(Object.entries(tags).map(([group, values]) => [group, uniq(values)]));
 }
 
+function opportunitySignalsForSignal(spec, sourceLevel, section) {
+  return inferOpportunitySignals({
+    category: spec.type,
+    signalType: spec.type,
+    title: spec.title,
+    sourceTitle: spec.sourceTitle,
+    sourceUrl: value(section, "source_url"),
+    sourceLevel,
+    keyExcerpts: spec.sourcePoints || [],
+    rawText: [
+      spec.eventLine,
+      spec.whyWatch,
+      spec.businessMeaning,
+      spec.evidenceBoundary,
+      spec.watchWindow,
+      spec.sourceExcerpt,
+      value(section, "key_excerpts"),
+      value(section, "evidence_seed"),
+    ].filter(Boolean).join("\n"),
+  });
+}
+
 function formalTagsForScene(spec) {
   const tags = inferredTagsFromText(`${spec.title} ${spec.industry} ${spec.role} ${spec.workflow} ${spec.changedStep}`);
   tags.evidence.push("evidence-customer-adoption");
@@ -1676,6 +1711,8 @@ primary_raw:
   importance_score: ${importanceScore}
 
 ${formalTagsYaml(formalTagsForSignal(spec, sourceLevel))}
+
+${opportunitySignalsYaml(opportunitySignalsForSignal(spec, sourceLevel, section))}
 
 signal_owner: ${yamlString(spec.company)}
 

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment"]
+  product_form: []
+  delivery_model: ["project_based_service"]
+  pain_or_constraint: ["workflow_integration", "context_management"]
+  adoption_evidence: ["case_study", "third_party_report"]
+  source_evidence_type: ["first_party_case"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Gogloby 记录企业应用场景：企业智能体协作流程 AI Agent Adoption Statistics 2026: Enterprise AI Usage | GoGloby The 2026 AI adoption statistics that separate experimentation from governed execution: 88% use AI, only 23% scale agents, 12% s..."
+  missing_fields: ["specific_task", "product_form"]
+
 signal_owner: "Gogloby"
 
 frontend:
