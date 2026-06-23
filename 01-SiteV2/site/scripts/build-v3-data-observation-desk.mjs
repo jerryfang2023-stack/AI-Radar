@@ -12,6 +12,7 @@ const enterpriseAiFdeFile = path.join(siteDataDir, "enterprise-ai-fde.json");
 const siteVersion = "SITE-V3.3.8.3";
 const businessSignalsColumnVersion = "BSIG-V1.1.1-core-source-hygiene";
 const enterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
+const intelligenceMapColumnVersion = "IMAP-V1.2.0-opportunity-radar";
 
 const signalRoots = [
   { category: "case", label: "案例", dir: path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "case") },
@@ -4188,6 +4189,7 @@ function buildIntelligenceGraphIndex(payload = {}) {
       siteVersion,
       businessSignalsColumnVersion,
       enterpriseAiLensVersion,
+      intelligenceMapColumnVersion,
       generatedAt: payload.meta?.generatedAt || new Date().toISOString(),
       activeDate,
       purpose: "Stable machine-readable entry for Hermes Agent / data-officer analysis.",
@@ -4346,6 +4348,7 @@ const payload = {
     siteVersion,
     businessSignalsColumnVersion,
     enterpriseAiLensVersion,
+    intelligenceMapColumnVersion,
     generatedAt: new Date().toISOString(),
     activeDate,
     top10Count: top10.length,

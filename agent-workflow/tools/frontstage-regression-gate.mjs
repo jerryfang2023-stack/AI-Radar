@@ -8,6 +8,7 @@ const expectedVersion = "V3.3.6.3-business-source-artifact-aggregation";
 const expectedSiteVersion = "SITE-V3.3.8.3";
 const expectedBusinessSignalsColumnVersion = "BSIG-V1.1.1-core-source-hygiene";
 const expectedEnterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
+const expectedIntelligenceMapColumnVersion = "IMAP-V1.2.0-opportunity-radar";
 const rolloverAcceptedVersions = new Map([
   ["V3.3.6-business-title-hermes-handoff", new Set(["2026-06-16"])],
 ]);
@@ -32,6 +33,7 @@ const frontstageFiles = [
   "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs",
   "01-SiteV2/site/scripts/build-follow-builders-page-data.mjs",
   "01-SiteV2/site/data/v3-data-observation-desk.json",
+  "01-SiteV2/site/data/intelligence-graph-index.json",
   "01-SiteV2/site/data/follow-builders-daily.json",
   "01-SiteV2/site/data/community-intelligence.json",
 ].map((file) => path.join(root, file));
@@ -52,6 +54,7 @@ const publicFrontstageTextFiles = [
   "01-SiteV2/site/assets/community-intelligence.css",
   "01-SiteV2/site/assets/community-intelligence.js",
   "01-SiteV2/site/data/v3-data-observation-desk.json",
+  "01-SiteV2/site/data/intelligence-graph-index.json",
   "01-SiteV2/site/data/follow-builders-daily.json",
   "01-SiteV2/site/data/community-intelligence.json",
 ].map((file) => path.join(root, file));
@@ -216,6 +219,9 @@ function collectGeneratedDataIssues() {
     if (data?.meta?.enterpriseAiLensVersion !== expectedEnterpriseAiLensVersion) {
       issues.push(issue(dataFile, "v3_data_enterprise_ai_lens_version_mismatch", `${data?.meta?.enterpriseAiLensVersion || "missing"}; expected ${expectedEnterpriseAiLensVersion}`));
     }
+    if (data?.meta?.intelligenceMapColumnVersion !== expectedIntelligenceMapColumnVersion) {
+      issues.push(issue(dataFile, "v3_data_intelligence_map_column_version_mismatch", `${data?.meta?.intelligenceMapColumnVersion || "missing"}; expected ${expectedIntelligenceMapColumnVersion}`));
+    }
     const activeDate = data?.meta?.activeDate || "";
     const latestDate = latestContentDate();
     if (latestDate && activeDate !== latestDate) {
@@ -333,6 +339,28 @@ function collectVersionMetaIssues() {
     const html = read(file);
     const token = `name="wavesight-version" content="${expectedSiteVersion}"`;
     if (!html.includes(token)) issues.push(issue(file, "site_version_meta_missing", token));
+  }
+  const intelligenceMapPages = [
+    "intelligence-map.html",
+    "weekly-ai-business-change-radar.html",
+    "weekly-ai-business-change-radar-2026-06-15.html",
+  ].map((file) => path.join(root, "01-SiteV2/site", file));
+  for (const file of intelligenceMapPages) {
+    const html = read(file);
+    const token = `name="wavesight-column-version" content="${expectedIntelligenceMapColumnVersion}"`;
+    if (!html.includes(token)) issues.push(issue(file, "intelligence_map_column_version_meta_missing", token));
+  }
+  const graphIndexFile = path.join(root, "01-SiteV2/site/data/intelligence-graph-index.json");
+  try {
+    const graphIndex = JSON.parse(read(graphIndexFile));
+    if (graphIndex?.meta?.siteVersion !== expectedSiteVersion) {
+      issues.push(issue(graphIndexFile, "intelligence_graph_site_version_mismatch", `${graphIndex?.meta?.siteVersion || "missing"}; expected ${expectedSiteVersion}`));
+    }
+    if (graphIndex?.meta?.intelligenceMapColumnVersion !== expectedIntelligenceMapColumnVersion) {
+      issues.push(issue(graphIndexFile, "intelligence_graph_column_version_mismatch", `${graphIndex?.meta?.intelligenceMapColumnVersion || "missing"}; expected ${expectedIntelligenceMapColumnVersion}`));
+    }
+  } catch (error) {
+    issues.push(issue(graphIndexFile, "intelligence_graph_json_parse_failed", error.message));
   }
   return issues;
 }

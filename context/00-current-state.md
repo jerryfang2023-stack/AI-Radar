@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-06-19
+last_updated: 2026-06-23
 use_when:
   - large task startup
   - dispatch planning
@@ -27,7 +27,7 @@ WaveSight AI is now in SITE-V3.3.8.3 Intelligence Map Opportunity Radar.
 | Entry | File | Role |
 |---|---|---|
 | Business Signals | `01-SiteV2/site/v3-data-observation.html` | Main V3.3 frontstage for daily Cards, relationship graph, trend candidates, and the 企业AI化 secondary lens |
-| Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph, intelligence map entry, and weekly report subcolumn |
+| Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph, source-backed opportunity radar, intelligence map entry, and weekly report subcolumn |
 | First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoint page merged into V3.3 |
 | Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community-sourced cases, AI tool tactics, commercial opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Operations backend and production-chain dashboard |
@@ -86,6 +86,7 @@ Old V2 pages are retired. If old rules conflict with V3.3, remove or rebuild the
 2. Run First-Line Viewpoints through its own builders data lane.
 3. Run Community Intelligence through its local logged-in collection lane and independent GitHub publish PR lane.
 4. Keep Intelligence Map and Dashboard aligned with the Business Signals data chain.
+   - Intelligence Map opportunity radar updates weekly from source-backed `opportunity_signals`, not old `formal_tags`.
    - Weekly report content must be sourced from `01-SiteV2/content/08-report/` for future generated issues.
 5. Persist each producing lane through its own commit / PR boundary.
 6. Publish the site only after merged changes reach `main` and GitHub Pages runs.

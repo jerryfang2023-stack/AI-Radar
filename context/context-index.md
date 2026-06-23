@@ -1,7 +1,7 @@
 ---
 status: current
 scope: context-index
-last_updated: 2026-06-17
+last_updated: 2026-06-23
 use_when:
   - decide what to read
   - dispatch task
@@ -50,6 +50,7 @@ This file is the reading router. Do not use old closeout files as current truth.
 | `agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md` | Business Signals lane supervision and repair |
 | `agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md` | First-Line Viewpoints lane supervision and repair |
 | `agent-workflow/skills/guanlan-community-intelligence-monitor/SKILL.md` | Community Intelligence lane supervision and repair |
+| `agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md` | Intelligence Map opportunity radar weekly update and evidence-boundary repair |
 
 ## Active Frontstage
 

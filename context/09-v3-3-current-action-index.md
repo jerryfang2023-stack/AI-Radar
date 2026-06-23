@@ -1,7 +1,7 @@
 ﻿---
 status: current
 scope: v3-3-current-action-index
-last_updated: 2026-06-17
+last_updated: 2026-06-23
 use_when:
   - choose current action
   - recover missing actions

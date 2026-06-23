@@ -1,7 +1,7 @@
 ---
 status: current
 scope: hermes-daily-supervision
-last_updated: 2026-06-17
+last_updated: 2026-06-23
 use_when:
   - hermes daily supervision
   - monitor dispatch
