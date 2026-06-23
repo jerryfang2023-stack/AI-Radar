@@ -1215,9 +1215,35 @@ function collectReadableHtmlCandidates(html = "") {
   return candidates;
 }
 
+function isNonTextContentType(contentType = "") {
+  return /\b(?:application\/pdf|application\/octet-stream|application\/zip|application\/x-gzip|application\/x-tar|image\/|audio\/|video\/|font\/)/iu.test(
+    String(contentType || "")
+  );
+}
+
+function textHygieneDiagnostics(text = "") {
+  const raw = String(text || "");
+  const length = raw.length || 1;
+  const replacementCount = (raw.match(/\uFFFD/gu) || []).length;
+  const controlCount = (raw.match(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/gu) || []).length;
+  const binaryMarkerCount = (raw.match(/%PDF|endobj|xref|JFIF|Exif|Photoshop 3\.0|stream\s+x[\u0000-\uFFFF]{0,4}\uFFFD/giu) || []).length;
+  const mojibakeCount = (raw.match(/浼佷笟|鍟嗕笟|鎯呮|寰呯|鍙戝竷|铻嶈祫|瀹屾垚|鍏紑|杩借釜|鍘熸枃|鐢ㄩ€?/gu) || []).length;
+  return {
+    replacement_count: replacementCount,
+    replacement_ratio: Number((replacementCount / length).toFixed(4)),
+    control_count: controlCount,
+    control_ratio: Number((controlCount / length).toFixed(4)),
+    binary_marker_count: binaryMarkerCount,
+    mojibake_marker_count: mojibakeCount,
+    binary_contaminated: binaryMarkerCount > 0 || controlCount >= 3 || replacementCount >= 8 || replacementCount / length > 0.003,
+    mojibake_contaminated: mojibakeCount > 0,
+  };
+}
+
 function readableDiagnostics(text = "", method = "") {
   const cleaned = String(text || "");
   const length = cleaned.length;
+  const hygiene = textHygieneDiagnostics(cleaned);
   const lines = cleaned.split(/\n/u).filter((line) => line.trim().length >= 20);
   const sentenceCount = (cleaned.match(/[。！？.!?]\s/gu) || []).length + (cleaned.match(/[。！？.!?]$/gu) || []).length;
   const boilerplateHits = (cleaned.match(/navigation|subscribe|sign in|sign up|cookie|privacy policy|terms of service|advertisement|comments drawer|loading comments|menu|footer|newsletter|登录|注册|订阅|隐私|导航|广告/giu) || []).length;
@@ -1228,7 +1254,10 @@ function readableDiagnostics(text = "", method = "") {
   const methodBonus = /article|main|content-container|json-ld/iu.test(method) ? 12 : 0;
   const boilerplatePenalty = Math.min(25, boilerplateHits * 3);
   const symbolPenalty = symbolRatio > 0.08 ? 18 : symbolRatio > 0.04 ? 8 : 0;
-  const score = Math.max(0, Math.min(100, lengthScore + lineScore + sentenceScore + methodBonus - boilerplatePenalty - symbolPenalty));
+  const hygienePenalty = hygiene.mojibake_contaminated ? 40 : 0;
+  const score = hygiene.binary_contaminated
+    ? 0
+    : Math.max(0, Math.min(100, lengthScore + lineScore + sentenceScore + methodBonus - boilerplatePenalty - symbolPenalty - hygienePenalty));
   return {
     readability_score: score,
     text_length: length,
@@ -1236,6 +1265,7 @@ function readableDiagnostics(text = "", method = "") {
     sentence_count: sentenceCount,
     boilerplate_hits: boilerplateHits,
     symbol_ratio: Number(symbolRatio.toFixed(4)),
+    ...hygiene,
     method,
   };
 }
@@ -1254,8 +1284,28 @@ function chooseReadableCandidate(candidates = [], limit = 18000) {
 
 function extractReadableSnapshotText(bodyText = "", contentType = "", limit = 18000) {
   const raw = String(bodyText || "");
+  if (isNonTextContentType(contentType)) {
+    return {
+      text: "",
+      full_text: "",
+      method: "non-text-content-type",
+      diagnostics: { ...readableDiagnostics("", "non-text-content-type"), content_type: contentType, rejected: true },
+      rejected: true,
+    };
+  }
   if (!raw) {
     return { text: "", full_text: "", method: "empty", diagnostics: readableDiagnostics("", "empty") };
+  }
+
+  const rawHygiene = textHygieneDiagnostics(raw);
+  if (rawHygiene.binary_contaminated) {
+    return {
+      text: "",
+      full_text: "",
+      method: "binary-text-rejected",
+      diagnostics: { ...readableDiagnostics("", "binary-text-rejected"), ...rawHygiene, rejected: true },
+      rejected: true,
+    };
   }
 
   if (/json/i.test(contentType)) {
@@ -1589,7 +1639,9 @@ function markdownEscape(text = "") {
 function extractionQuality(snapshot = {}) {
   const length = String(snapshot.text || "").length;
   const status = String(snapshot.status || "");
-  if (/fetch-failed|no-url|blocked|paywall/iu.test(status)) return "failed";
+  const diagnostics = snapshot.extractor_diagnostics || {};
+  if (/fetch-failed|no-url|blocked|paywall|non-text|binary|garbled/iu.test(status)) return "failed";
+  if (diagnostics.rejected || diagnostics.binary_contaminated || diagnostics.mojibake_contaminated) return "failed";
   if (/summary-only/iu.test(status)) return length >= 800 ? "low" : "failed";
   if (/http-\d+/iu.test(status)) return length >= 1200 ? "medium" : "low";
   if (length >= 2500) return "high";
@@ -2463,8 +2515,46 @@ async function fetchSourceSnapshot(item) {
       signal: AbortSignal.timeout(snapshotTimeoutMs),
     });
     const contentType = response.headers.get("content-type") || "";
+    if (isNonTextContentType(contentType)) {
+      const text = summary || "来源返回 PDF、图片、压缩包或其它非文本内容；未写入正文证据，进入 Core Pool / Card 前必须改用可解析原文或专用解析器。";
+      return {
+        status: "non-text-source-rejected",
+        text,
+        full_text: "",
+        excerpt: keyExcerpt(text, summary),
+        fetched_at: fetchedAt,
+        content_type: contentType || "unknown",
+        capture_scope: "summary_only",
+        visible_range: "非文本响应，已拒绝作为正文证据",
+        hash: contentHash(text),
+        full_text_hash: "none",
+        extraction_method: "non-text-content-type",
+        readability_score: 0,
+        extractor_diagnostics: { ...readableDiagnostics("", "non-text-content-type"), content_type: contentType, rejected: true },
+        error: response.ok ? "" : `${response.status} ${response.statusText}`,
+      };
+    }
     const bodyText = await response.text();
     const extracted = extractReadableSnapshotText(bodyText, contentType, 60000);
+    if (extracted.rejected) {
+      const text = summary || "来源正文包含 PDF、图片、压缩流或乱码特征；未写入正文证据，进入 Core Pool / Card 前必须回源重抓。";
+      return {
+        status: extracted.method || "binary-text-rejected",
+        text,
+        full_text: "",
+        excerpt: keyExcerpt(text, summary),
+        fetched_at: fetchedAt,
+        content_type: contentType || "unknown",
+        capture_scope: "summary_only",
+        visible_range: "响应正文未通过文本卫生检查",
+        hash: contentHash(text),
+        full_text_hash: "none",
+        extraction_method: extracted.method || "binary-text-rejected",
+        readability_score: 0,
+        extractor_diagnostics: extracted.diagnostics || { rejected: true },
+        error: "",
+      };
+    }
     const fullText = extracted.full_text || "";
     const extractedText = extracted.text || (fullText ? fullText.slice(0, 18000).trim() : "");
     const metaFallback = extracted.fallback_meta_text || "";

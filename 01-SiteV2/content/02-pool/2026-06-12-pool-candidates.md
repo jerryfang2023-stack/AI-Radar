@@ -1425,6 +1425,16 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
 
 ## P-027｜N/A
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-23T09:49:34.963Z
+degradation_reasons: [historical_text_contamination_repaired]
+evidence_seed: {}
+key_excerpts: []
+readability_score: 0
+has_full_text: false
+extraction_quality: failed
+raw_qc_downstream_use: blocked_historical_text_contamination
+raw_qc_decision: block
+pool_routes: watchlist
 
 - raw_ref: R-030
 - raw_original_id: https://www.cloudera.com/content/dam/www/marketing/resources/analyst-reports/the-future-of-enterprise-ai-agents.pdf?daqp=true&utm=
@@ -1472,8 +1482,8 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.4
 - raw_capture_priority: 21.4
 - usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
-- key_excerpts: [{"type":"funding","text":"To explore how organizations are investing in agentic AI, Cloudera surveyed 1,484 enterprise IT leaders across 14 countries. This report, fielded in February 2025, dives deep into adoption patterns, use cases, and sentiments around AI agents–including industry specific insights across finance, retai... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"7%���� 261 0 obj >endobj xref 261 24 0000000016 00000 n 0000001972 00000 n 0000002134 00000 n 0000002171 00000 n 0000002207 00000 n 0000003243 00000 n 0000003790 00000 n 0000004067 00000 n 0000004649 00000 n 0000004686 00000 n 0000004800 00000 n 0000006378 00000 n 0000006655 00000 n 0000006932 00000 n 0000007547 00000 n 0000008077 00000 n 0000008703 00000 n 0000009251 00000 n 0000025496 00000 n 0000041100 00000 n 0000056992 00000 n 0000059641 00000 n 0000060992 00000 n 0000000776 00000 n trailer ]/Prev 1201501>>sta","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"K���A��\u000f�0��\u001d*\u0018����\u0016��T����� A��iD$8�~\u0013�\u0010\\T\u001eB]�W� �K\u0015�fŠ \u0017�Z�$D\u00175\u0005�����dI ��~�*� 4\u0015�\u0012q>u\u0017i|�\u0003�#���oH�e���4J(T���i]� \u0016� T�\u0012,PO�+\u0006 �P c]�\u0006�\u0002=�eM;�O�5��\"�T\u000f�\u0000j���|I;�HҨz�tE�H�D\u000eD7�\u000e��F�O��co�C1 \u0004jR4��ر�㱂�ZB����^����1�*�P |��)�\u0003���\u000e�J�\u0006��C2�J� MV�%�b����w����7�\u0003�-p���|� ��͞�/�?","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"�n-���$H �\u000f\u0010�_%>��4���J�¶\u0018���6\"�`nfyaݾk��\u0014\\��Ļ��B)�1��5r�DX��\u0006�Y�#����ݍ9�I1��ە�ؽ�Q皋��N���\u000e��ގ��Ӈ=��J\u000e$�]��?","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"s$�JF��\u001bmR^\b\u0013)�u]HMo���hOI�!","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"��,�9 \u0013K\u001c\u0003s���>�K�\u0001\u0000��O9endstreamendobj262 0 obj >>>endobj263 0 obj >endobj264 0 obj >endobj265 0 obj >/ExtGState >/Font >/ProcSet[/PDF/Text/ImageC]/XObject >>>/Rotate 0/Tabs/W/Thumb 242 0 R/TrimBox[0.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["To explore how organizations are investing in agentic AI, Cloudera surveyed 1,484 enterprise IT leaders across 14 countries. This report, fielded in February 2025, dives deep into adoption patterns, use cases, and sentiments around AI agents–including industry specific insights across finance, retai... / query=AI Agent funding enterprise customers / intent=find_startups / path=industry_landing","��,�9 \u0013K\u001c\u0003s���>�K�\u0001\u0000��O9endstreamendobj262 0 obj >>>endobj263 0 obj >endobj264 0 obj >endobj265 0 obj >/ExtGState >/Font >/ProcSet[/PDF/Text/ImageC]/XObject >>>/Rotate 0/Tabs/W/Thumb 242 0 R/TrimBox[0."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。

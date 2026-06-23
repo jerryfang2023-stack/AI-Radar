@@ -177,10 +177,22 @@ function isHomepageDirectoryCoreItem(item = {}) {
   return false;
 }
 
+function hasTextContamination(text = "") {
+  const value = String(text || "");
+  const length = value.length || 1;
+  const replacementCount = (value.match(/\uFFFD/gu) || []).length;
+  const controlCount = (value.match(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/gu) || []).length;
+  return /%PDF|endobj|xref|JFIF|Exif|Photoshop 3\.0|stream\s+x|浼佷笟|鍟嗕笟|鎯呮|寰呯|鍙戝竷|铻嶈祫|瀹屾垚|鍏紑|杩借釜/iu.test(value)
+    || controlCount >= 3
+    || replacementCount >= 8
+    || replacementCount / length > 0.003;
+}
+
 function isUsableCoreEvidenceItem(item = {}, readabilityMin = 24) {
   if (!item.routes?.includes("core_pool")) return false;
   if (item.rawQcDecision && item.rawQcDecision !== "allow") return false;
   if (!item.hasFullText || item.indexOnlyEvidence) return false;
+  if (hasTextContamination(item.text || item.keyExcerpts || "")) return false;
   if (/official_index_or_directory|repo_readme_or_index|ecosystem_package_or_model_index|marketplace_listing|search_result_or_tool_directory|low_quality_chinese_official_or_seo/iu.test(item.evidenceObjectType || "")) return false;
   if (item.extractionQuality && !/^(high|medium)$/iu.test(item.extractionQuality)) return false;
   if (item.readabilityScore < readabilityMin) return false;
@@ -257,6 +269,7 @@ function buildDownstreamRecommendation(metrics, hardFailed) {
   if (metrics.homepageDirectoryCoreCount > metrics.homepageDirectoryCoreMax) reasons.push("homepage/directory items promoted to core_pool");
   if (metrics.coreMissingFullTextCount > metrics.coreMissingFullTextMax) reasons.push("core_pool items missing full_text");
   if (metrics.coreLowReadabilityCount > metrics.coreLowReadabilityMax) reasons.push("core_pool items failed readability extraction gate");
+  if (metrics.coreTextContaminationCount > 0) reasons.push("core_pool items contain binary or mojibake text contamination");
   if (metrics.coreRawQcBlockCount > metrics.coreRawQcBlockMax) reasons.push("core_pool items blocked by Raw QC");
   if (metrics.coreRawQcDegradedCount > metrics.coreRawQcDegradedMax) reasons.push("core_pool items degraded by Raw QC");
   if (metrics.coreLargeVendorCount > metrics.coreLargeVendorMax || metrics.coreLargeVendorRatio > metrics.coreLargeVendorRatioMax) {
@@ -375,6 +388,7 @@ export function runGuanlanMonitorQualityGate({
   const homepageDirectoryCoreCount = poolItems.filter(isHomepageDirectoryCoreItem).length;
   const coreMissingFullTextCount = poolItems.filter((item) => item.routes.includes("core_pool") && !item.hasFullText).length;
   const coreLowReadabilityCount = corePoolItems.filter((item) => item.readabilityScore < coreReadabilityScoreMin).length;
+  const coreTextContaminationCount = corePoolItems.filter((item) => hasTextContamination(item.text || item.keyExcerpts || "")).length;
   const coreRawQcBlockCount = corePoolItems.filter((item) => item.rawQcDecision === "block").length;
   const coreRawQcDegradedCount = corePoolItems.filter((item) => item.rawQcDecision === "allow_with_degradation").length;
   const coreLargeVendorCount = corePoolItems.filter((item) => isLargeVendorText(largeVendorIdentityText(item))).length;
@@ -448,6 +462,7 @@ export function runGuanlanMonitorQualityGate({
     { key: "homepage_directory_core_max", passed: homepageDirectoryCoreCount <= homepageDirectoryCoreMax, value: `${homepageDirectoryCoreCount}/${homepageDirectoryCoreMax}` },
     { key: "core_missing_full_text_max", passed: coreMissingFullTextCount <= coreMissingFullTextMax, value: `${coreMissingFullTextCount}/${coreMissingFullTextMax}` },
     { key: "core_readability_score_min", passed: coreLowReadabilityCount <= coreLowReadabilityMax, value: `low=${coreLowReadabilityCount}/${coreLowReadabilityMax}; min=${coreReadabilityScoreMin}` },
+    { key: "core_text_contamination_max", passed: coreTextContaminationCount === 0, value: `${coreTextContaminationCount}/0` },
     { key: "core_raw_qc_block_max", passed: coreRawQcBlockCount <= coreRawQcBlockMax, value: `${coreRawQcBlockCount}/${coreRawQcBlockMax}` },
     { key: "core_raw_qc_degraded_max", passed: coreRawQcDegradedCount <= coreRawQcDegradedMax, value: `${coreRawQcDegradedCount}/${coreRawQcDegradedMax}` },
     { key: "core_large_vendor_max", passed: coreLargeVendorCount <= coreLargeVendorMax, value: `${coreLargeVendorCount}/${coreLargeVendorMax}` },
@@ -537,6 +552,7 @@ export function runGuanlanMonitorQualityGate({
       coreMissingFullTextMax,
       coreLowReadabilityCount,
       coreLowReadabilityMax,
+      coreTextContaminationCount,
       coreRawQcBlockCount,
       coreRawQcBlockMax,
       coreRawQcDegradedCount,
@@ -569,6 +585,7 @@ export function runGuanlanMonitorQualityGate({
     homepageDirectoryCoreCount ? `homepage_directory_core=${homepageDirectoryCoreCount}` : "",
     coreMissingFullTextCount ? `core_missing_full_text=${coreMissingFullTextCount}` : "",
     coreLowReadabilityCount ? `core_low_readability=${coreLowReadabilityCount}` : "",
+    coreTextContaminationCount ? `core_text_contamination=${coreTextContaminationCount}` : "",
     coreRawQcBlockCount ? `core_raw_qc_block=${coreRawQcBlockCount}` : "",
     coreRawQcDegradedCount ? `core_raw_qc_degraded=${coreRawQcDegradedCount}` : "",
     coreLargeVendorCount > coreLargeVendorMax || coreLargeVendorRatio > coreLargeVendorRatioMax
@@ -605,6 +622,9 @@ export function runGuanlanMonitorQualityGate({
   }
   if (coreLowReadabilityCount) {
     skillFeedback.push("Repair or downgrade core_pool items with low readability_score; full_text must be readable article/body evidence, not navigation or fallback text.");
+  }
+  if (coreTextContaminationCount) {
+    skillFeedback.push("Repair or downgrade core_pool items containing PDF/image/binary text fragments, replacement characters, or GBK-style mojibake before downstream Card generation.");
   }
   if (coreRawQcBlockCount || coreRawQcDegradedCount) {
     skillFeedback.push("Remove Raw-QC blocked or degraded items from core_pool; keep degraded material only in index, watchlist, emerging, or feedback routes.");
@@ -655,6 +675,7 @@ export function runGuanlanMonitorQualityGate({
     `- homepage_directory_core_count: ${homepageDirectoryCoreCount}`,
     `- core_missing_full_text_count: ${coreMissingFullTextCount}`,
     `- core_low_readability_count: ${coreLowReadabilityCount}`,
+    `- core_text_contamination_count: ${coreTextContaminationCount}`,
     `- core_readability_score_min: ${coreReadabilityScoreMin}`,
     `- core_raw_qc_block_count: ${coreRawQcBlockCount}`,
     `- core_raw_qc_degraded_count: ${coreRawQcDegradedCount}`,
@@ -741,6 +762,7 @@ export function runGuanlanMonitorQualityGate({
       homepage_directory_core_count: homepageDirectoryCoreCount,
       core_missing_full_text_count: coreMissingFullTextCount,
       core_low_readability_count: coreLowReadabilityCount,
+      core_text_contamination_count: coreTextContaminationCount,
       core_readability_score_min: coreReadabilityScoreMin,
       core_raw_qc_block_count: coreRawQcBlockCount,
       core_raw_qc_degraded_count: coreRawQcDegradedCount,

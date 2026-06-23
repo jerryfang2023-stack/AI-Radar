@@ -3,6 +3,8 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$Utf8Profile = Join-Path $PSScriptRoot "Set-WaveSightUtf8.ps1"
+if (Test-Path -LiteralPath $Utf8Profile) { . $Utf8Profile }
 
 if (Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue) {
   Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false
