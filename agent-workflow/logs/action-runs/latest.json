@@ -1,35 +1,35 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-21T05:18:37.336Z",
-  "date": "2026-06-21",
-  "action": "Daily monitor repair",
+  "generated_at": "2026-06-23T03:20:29.737Z",
+  "date": "2026-06-23",
+  "action": "Hermes Skill Ops drift repair",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "codex",
-  "status": "passed",
-  "summary": "Recovered 2026-06-21 Business Signals from GitHub artifacts, repaired frontstage title/fact overrides, rebuilt site/FDE/topic data, reran Community Intelligence with bounded local collection.",
+  "trigger": "wavesight-hermes-auto-repair-merge-deploy",
+  "status": "success",
+  "summary": "Normalized Skill Ops rule digests across CRLF/LF, synced skill-store mirror, and cleared 2026-06-23 Skill Ops drift.",
   "contexts": [],
   "changed_files": [
-    "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs",
-    "01-SiteV2/site/data/v3-data-observation-desk.json",
-    "01-SiteV2/site/data/community-intelligence.json"
+    "agent-workflow/tools/lib/guanlan-skill-ops.mjs"
   ],
-  "outputs": [],
+  "outputs": [
+    "agent-workflow/reports/2026-06-23-daily-supervision-report.md",
+    "agent-workflow/reports/2026-06-23-daily-supervision-report.json"
+  ],
   "checks": [
-    "assert-business-frontstage passed",
-    "assert-community-intelligence passed",
-    "pre-commit production chain passed",
-    "sync-enterprise-ai-fde passed"
+    "npm run check:skill-ops -- --json",
+    "npm run audit:skills",
+    "npm run supervise:daily -- --date=2026-06-23"
   ],
   "issues": [
-    "Business workflow failed before local recovery",
-    "Community scheduled collection produced stale data"
+    "Skill Ops false-positive drift from line-ending-only differences in agents/openai.yaml"
   ],
   "risks": [],
-  "lessons": [],
+  "lessons": [
+    "Skill-store governance digests should ignore CRLF/LF-only differences while preserving file/path/content checks."
+  ],
   "reusable_rules": [
-    "Source title must be translated literally before frontstage display",
-    "Bounded community collection can recover when full detail crawl hangs"
+    "Normalize CRLF to LF before hashing governed skill rule assets."
   ],
   "retired_flags": [],
   "notes": []

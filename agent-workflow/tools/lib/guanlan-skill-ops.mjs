@@ -166,7 +166,7 @@ export function ruleDigest(base) {
   for (const rel of files) {
     hash.update(rel);
     hash.update("\0");
-    hash.update(readText(path.join(base, rel)));
+    hash.update(readText(path.join(base, rel)).replace(/\r\n/g, "\n"));
     hash.update("\0");
   }
   return { files, digest: files.length ? hash.digest("hex") : "" };
