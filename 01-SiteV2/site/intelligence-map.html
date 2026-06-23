@@ -50,22 +50,50 @@
             <select aria-label="选择周报时间窗口" data-weekly-report-selector onchange="if (this.value) window.location.assign(this.value);">
               <option value="weekly-ai-business-change-radar.html" selected>2026.06.15 - 06.21</option>
               <option value="weekly-ai-business-change-radar-2026-06-15.html">2026.06.09 - 06.15</option>
+              <option value="" disabled>2026.06.02 - 06.08（待补档）</option>
             </select>
           </label>
         </div>
-        <article class="weekly-radar-card">
-          <div>
-            <span class="weekly-radar-date">2026-06-15 / 2026-06-21</span>
-            <h3>企业 Agent 从工具采用进入部署服务化</h3>
-            <p>企业 Agent 已经从买工具和试 demo 推进到部署、治理、成本、上下文和交付服务的系统问题。本期重点追踪 FDE 式落地服务、模型路由与治理、AI Coding 工作台和社区 AI 企业服务四条主线，用来判断哪些机会值得进入验证。</p>
-            <div class="weekly-radar-tags" aria-label="周报数据口径">
-              <span>Signals 129 张</span>
-              <span>Opinions 51 条</span>
-              <span>Community 41 条</span>
+        <div class="weekly-radar-list" aria-label="每周周报列表">
+          <article class="weekly-radar-card">
+            <div>
+              <span class="weekly-radar-date">2026-06-15 / 2026-06-21</span>
+              <h3>企业 Agent 从工具采用进入部署服务化</h3>
+              <p>企业 Agent 已经从买工具和试 demo 推进到部署、治理、成本、上下文和交付服务的系统问题。本期重点追踪 FDE 式落地服务、模型路由与治理、AI Coding 工作台和社区 AI 企业服务四条主线，用来判断哪些机会值得进入验证。</p>
+              <div class="weekly-radar-tags" aria-label="周报数据口径">
+                <span>Signals 129 张</span>
+                <span>Opinions 51 条</span>
+                <span>Community 41 条</span>
+              </div>
             </div>
-          </div>
-          <a class="weekly-radar-link" href="weekly-ai-business-change-radar.html" data-weekly-report-action>阅读本周周报</a>
-        </article>
+            <a class="weekly-radar-link" href="weekly-ai-business-change-radar.html" data-weekly-report-action>阅读本周周报</a>
+          </article>
+          <article class="weekly-radar-card">
+            <div>
+              <span class="weekly-radar-date">2026-06-09 / 2026-06-15</span>
+              <h3>AI 从工具试用转向业务流程重构</h3>
+              <p>AI 的商业焦点从单点工具试用移向流程重构，企业工作流、AI Coding、基础设施和治理信号同时升温。机会从做一个通用工具，转向把 AI 接进真实交付、获客、知识沉淀和治理体系。</p>
+              <div class="weekly-radar-tags" aria-label="周报数据口径">
+                <span>Signals 101 张</span>
+                <span>Opinions 44 条</span>
+                <span>Community 约 44 条</span>
+              </div>
+            </div>
+            <a class="weekly-radar-link" href="weekly-ai-business-change-radar-2026-06-15.html">阅读归档周报</a>
+          </article>
+          <article class="weekly-radar-card weekly-radar-card-pending" aria-label="待补档周报">
+            <div>
+              <span class="weekly-radar-date">2026-06-02 / 2026-06-08</span>
+              <h3>周报归档待补档</h3>
+              <p>这一周的正式周报尚未发布。页面先保留归档位置，待补齐正式周报后开放阅读入口。</p>
+              <div class="weekly-radar-tags" aria-label="周报状态">
+                <span>待补档</span>
+                <span>Archive slot</span>
+              </div>
+            </div>
+            <span class="weekly-radar-link weekly-radar-link-disabled" aria-disabled="true">待补档</span>
+          </article>
+        </div>
       </div>
     </section>
   </main>

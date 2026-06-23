@@ -1605,6 +1605,29 @@ button {
     var(--paper);
 }
 
+.weekly-radar-list {
+  display: grid;
+  gap: 12px;
+}
+
+.weekly-radar-list .weekly-radar-card + .weekly-radar-card {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .84), rgba(247, 244, 239, .62)),
+    var(--paper);
+}
+
+.weekly-radar-card-pending {
+  border-style: dashed;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .66), rgba(247, 244, 239, .5)),
+    var(--paper);
+}
+
+.weekly-radar-card-pending h3,
+.weekly-radar-card-pending p {
+  color: rgba(7, 24, 39, .56);
+}
+
 .weekly-radar-date {
   display: block;
   margin-bottom: 6px;
@@ -2216,6 +2239,13 @@ button {
   font-weight: var(--gl-weight-title, 600);
   line-height: var(--gl-type-label-line, 18px);
   text-decoration: none;
+}
+
+.weekly-radar-link-disabled {
+  border-color: rgba(7, 24, 39, .16);
+  background: rgba(7, 24, 39, .06);
+  color: rgba(7, 24, 39, .46);
+  cursor: default;
 }
 
 @media (max-width: 1100px) {
