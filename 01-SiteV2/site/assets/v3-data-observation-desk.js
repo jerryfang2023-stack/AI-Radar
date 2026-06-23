@@ -617,123 +617,6 @@
     return tag?.label || tag?.name || tag?.id || tag;
   }
 
-  const opportunityFieldLabels = {
-    buyerOrUser: "买方",
-    teamOrFunction: "职能",
-    specificTask: "任务",
-    productForm: "产品形态",
-    deliveryModel: "交付",
-    painOrConstraint: "约束",
-    adoptionEvidence: "证据",
-  };
-
-  const opportunityValueLabels = {
-    enterprise_ai_owner: "企业 AI 负责人",
-    it_security_team: "IT / 安全 / 平台团队",
-    sales_team: "销售团队",
-    customer_support_team: "客服团队",
-    engineering_team: "工程团队",
-    legal_team: "法务团队",
-    finance_team: "财务团队",
-    procurement_team: "采购团队",
-    healthcare_provider: "医疗机构",
-    insurance_team: "保险团队",
-    operations_team: "运营 / 供应链团队",
-    content_team: "内容团队",
-    smb_owner: "中小企业主",
-    sales: "销售 / RevOps",
-    customer_support: "客服 / 呼叫中心",
-    engineering: "工程研发",
-    legal_compliance: "法务合规",
-    finance: "财务",
-    procurement: "采购",
-    operations: "运营 / 供应链",
-    marketing_content: "内容运营",
-    it_security: "IT / 安全治理",
-    healthcare_operations: "医疗运营",
-    insurance_operations: "保险运营",
-    customer_ticket_triage: "工单分流 / 质检",
-    sales_lead_research: "销售线索研究",
-    sales_briefing: "销售简报 / 拜访准备",
-    contract_review: "合同审阅",
-    rfp_response: "RFP / 标书响应",
-    knowledge_base_qa: "知识库问答",
-    code_review: "代码审查",
-    internal_tool_building: "内部工具构建",
-    model_deployment: "模型部署",
-    cost_monitoring: "成本 / 用量监控",
-    permission_audit: "权限 / 审计",
-    medical_documentation: "医疗文档流程",
-    insurance_claim_review: "保险理赔审核",
-    procurement_supplier_screening: "供应商筛选",
-    content_workflow: "内容工作流",
-    data_analysis_query: "数据分析查询",
-    call_transcription: "通话转写",
-    logistics_coordination: "物流协调",
-    agent_workbench: "Agent 工作台",
-    copilot: "Copilot / 助手",
-    api: "API / SDK",
-    model_gateway: "模型网关",
-    rag_knowledge_base: "RAG / 知识库",
-    vertical_saas: "垂直 SaaS",
-    developer_tool: "开发者工具",
-    workflow_automation: "流程自动化",
-    fde_service: "FDE 服务",
-    managed_service: "托管服务",
-    evaluation_platform: "评测 / 可观测平台",
-    browser_or_desktop_tool: "浏览器 / 桌面工具",
-    self_serve_saas: "自助 SaaS",
-    enterprise_subscription: "企业订阅",
-    api_usage_based: "按量 API",
-    project_based_service: "项目制交付",
-    fde_delivery: "FDE 交付",
-    open_source_commercial: "开源商业化",
-    consulting_diagnostic: "诊断 / 咨询入口",
-    template_pack: "模板 / 流程包",
-    workflow_integration: "流程集成",
-    api_cost_spike: "成本压力",
-    permission_boundary: "权限边界",
-    audit_log_required: "审计留痕",
-    data_silo: "数据孤岛",
-    hallucination_risk: "可信度风险",
-    human_review_required: "人工复核",
-    latency_sensitive: "延迟 / 稳定性",
-    model_routing_complexity: "模型路由复杂度",
-    security_compliance: "安全合规",
-    deployment_failure: "部署失败",
-    context_management: "上下文管理",
-    evaluation_gap: "评测缺口",
-    named_customer: "具名客户",
-    case_study: "客户案例",
-    customer_metric: "结果指标",
-    deployment_scale: "部署规模",
-    partnership_announcement: "合作集成",
-    procurement_contract: "采购 / 合同证据",
-    pricing_page: "公开定价",
-    enterprise_plan: "企业版 / 安全包",
-    usage_growth: "用量 / 收入增长",
-    pilot_or_poc: "试点 / POC",
-    third_party_report: "第三方报告",
-  };
-
-  function opportunityValues(card, field) {
-    const signals = card.opportunitySignals || {};
-    const values = signals[field] || [];
-    return Array.isArray(values) ? values : [];
-  }
-
-  function opportunityVariableTags(card, limit = 6) {
-    const fields = ["specificTask", "productForm", "deliveryModel", "painOrConstraint", "adoptionEvidence", "buyerOrUser", "teamOrFunction"];
-    const tags = fields.flatMap((field) => opportunityValues(card, field).map((value) => ({
-      id: `opp:${field}:${value}`,
-      label: `${opportunityFieldLabels[field] || "机会"}：${opportunityValueLabels[value] || value}`,
-      dimensionLabel: opportunityFieldLabels[field] || "机会字段",
-      value,
-      field,
-    })));
-    return tags.slice(0, limit);
-  }
-
   function isRelationshipVariableTag(tag) {
     const id = String(tag?.id || tag || "");
     const excludedIds = new Set(["scenario-sales-briefing", "scenario-frontier-opinion", "customer-developer-team"]);
@@ -742,8 +625,6 @@
   }
 
   function relationshipVariableTags(card, limit = 6) {
-    const opportunityTags = opportunityVariableTags(card, limit);
-    if (opportunityTags.length) return opportunityTags;
     return cardTagItems(card).filter(isRelationshipVariableTag).slice(0, limit);
   }
 
@@ -806,7 +687,7 @@
 
   function relationshipAction(card) {
     if (card.category === "funding") return { id: "action:funding", label: "融资" };
-    if (card.category === "case") return { id: "action:case", label: "案例 / 应用场景" };
+    if (card.category === "case") return { id: "action:case", label: "采用 / 部署" };
     return { id: "action:product", label: "发布 / 推出" };
   }
 
@@ -868,7 +749,7 @@
     const actionRows = [
       { id: "action:funding", label: "融资", y: 26 },
       { id: "action:product", label: "发布 / 推出", y: 50 },
-      { id: "action:case", label: "案例 / 应用场景", y: 74 },
+      { id: "action:case", label: "采用 / 部署", y: 74 },
     ];
     const activeActionIds = new Set(cards.map((card) => relationshipAction(card).id));
     actionRows.filter((action) => activeActionIds.has(action.id)).forEach((action, index) => {
@@ -1037,7 +918,6 @@
         const row = tags.get(id) || {
           id,
           label: cardTagLabel(tag),
-          dimensionLabel: tag.dimensionLabel || "机会字段",
           cards: [],
           categories: new Set(),
           latest: card.date,
@@ -1071,7 +951,7 @@
         <article class="relation-tag-card">
           <div class="relation-tag-head">
             <strong>${safe(row.label)}</strong>
-            <em>${safe(row.dimensionLabel)} · ${safe(row.cards.length)} cards · ${safe(row.categories.size)} types</em>
+            <em>${safe(row.cards.length)} cards · ${safe(row.categories.size)} types</em>
           </div>
           <div class="relation-type-bars" aria-label="类型构成">
             <span class="relation-total-fill" style="width:${safe(totalWidth)}%"></span>
@@ -1082,57 +962,199 @@
     }).join("");
   }
 
-  function relationshipCandidates(cards) {
-    const fromTags = relationshipTagCards(cards)
-      .filter((row) => row.cards.length >= 2)
-      .map((row) => ({
-        id: `tag:${row.id}`,
-        title: `${row.label} 正在聚集`,
-        summary: `近 30 天有 ${row.cards.length} 张 Card 指向这个${row.dimensionLabel || "机会字段"}，覆盖 ${row.categories.size} 类商业信号。`,
-        boundary: row.categories.size >= 2 ? "已有多类型证据，可继续观察客户、产品或资金动作是否延续。" : "目前仍偏同一类证据，只能作为观察变量，不能直接形成趋势结论。",
-        evidenceCount: row.cards.length,
-        categoryCount: row.categories.size,
-      }));
-    const visibleIds = new Set(cards.map((card) => card.id));
-    const fromDirections = (state.payload.relationshipDirections || [])
-      .map((item) => {
-        const supporting = (item.supportingCards || []).filter((card) => visibleIds.has(card.id));
-        return {
-          ...item,
-          supportingCards: supporting,
-          evidenceCount: supporting.length,
-          categoryCount: new Set(supporting.map((card) => card.categoryLabel || card.category)).size,
-        };
-      })
-      .filter((item) => item.evidenceCount >= 2)
-      .map((item) => ({
-        id: item.id,
-        title: item.title || item.direction,
-        summary: item.summary || item.evidenceMeta || "保留为关系方向候选。",
-        boundary: item.categoryCount >= 2 ? "由多类型 Card 支撑，可继续观察变量是否扩散。" : "当前仍偏同一类型证据，不作为正式趋势结论。",
-        evidenceCount: item.evidenceCount,
-        categoryCount: item.categoryCount,
-        source: "direction",
-      }));
-    return [...fromTags, ...fromDirections]
-      .sort((a, b) => b.categoryCount - a.categoryCount || b.evidenceCount - a.evidenceCount)
-      .slice(0, 4);
+  const opportunityLabels = {
+    enterprise_ai_owner: "企业 AI 负责人",
+    sales_team: "销售团队",
+    engineering_team: "开发团队",
+    customer_support_team: "客服团队",
+    legal_team: "法务团队",
+    procurement_team: "采购部门",
+    healthcare_provider: "医疗机构",
+    finance_team: "财务团队",
+    insurance_team: "保险机构",
+    internal_tool_building: "内部工具构建",
+    sales_lead_research: "销售线索整理",
+    customer_ticket_triage: "客服质检",
+    contract_review: "合同审查",
+    rfp_response: "投标响应",
+    knowledge_base_qa: "知识库问答",
+    medical_documentation: "医疗文书",
+    insurance_claim_review: "保险理赔",
+    workflow_integration: "集成难",
+    api_cost_spike: "成本",
+    security_compliance: "合规",
+    evaluation_gap: "评测困难",
+    context_management: "上下文不足",
+    latency_sensitive: "延迟",
+    data_silo: "数据",
+    hallucination_risk: "幻觉",
+    permission_boundary: "权限",
+    agent_workbench: "Agent",
+    copilot: "Copilot",
+    rag_knowledge_base: "RAG",
+    model_gateway: "模型网关",
+    api: "API",
+    developer_tool: "工作台",
+    workflow_automation: "自动化脚本",
+    vertical_saas: "垂直 SaaS",
+    fde_service: "FDE 服务",
+    evaluation_platform: "评测平台",
+    customer_metric: "增长数字",
+    deployment_scale: "部署规模",
+    procurement_contract: "合同 / 采购",
+    case_study: "案例页面",
+    partnership_announcement: "合作公告",
+    third_party_report: "第三方报道",
+  };
+
+  const painProductRows = [
+    { label: "成本", values: ["api_cost_spike"] },
+    { label: "权限", values: ["permission_boundary", "audit_log_required"] },
+    { label: "数据", values: ["data_silo", "context_management"] },
+    { label: "幻觉", values: ["hallucination_risk"] },
+    { label: "延迟", values: ["latency_sensitive"] },
+    { label: "集成", values: ["workflow_integration", "model_routing_complexity"] },
+    { label: "评测", values: ["evaluation_gap"] },
+    { label: "人工复核", values: ["human_review_required"] },
+  ];
+
+  const painProductColumns = [
+    { label: "Agent", values: ["agent_workbench"] },
+    { label: "Copilot", values: ["copilot"] },
+    { label: "RAG", values: ["rag_knowledge_base"] },
+    { label: "网关", values: ["model_gateway", "api"] },
+    { label: "工作台", values: ["developer_tool", "browser_or_desktop_tool"] },
+    { label: "FDE 服务", values: ["fde_service"] },
+    { label: "垂直 SaaS", values: ["vertical_saas", "workflow_automation"] },
+  ];
+
+  function opportunityValues(card, field) {
+    const values = card.opportunitySignals?.[field] || [];
+    return Array.isArray(values) ? values : [];
   }
 
-  function renderRelationshipCandidates(cards) {
-    const candidates = relationshipCandidates(cards);
-    if (!candidates.length) return "<div class=\"empty-state compact-empty\">当前筛选下暂无多张 Card 支撑的迹象候选。</div>";
-    return candidates.map((item) => `
-      <article class="relation-candidate-card ${item.categoryCount < 2 ? "is-quiet" : ""}" ${item.source === "direction" ? `data-open-relationship="${safe(item.id)}"` : ""}>
-        <div class="relation-signal-meta">
-          <span class="evidence-pill">${safe(item.evidenceCount)} evidence</span>
-          <span class="date-pill">${safe(item.categoryCount)} types</span>
+  function opportunityLabel(value) {
+    return opportunityLabels[value] || value || "";
+  }
+
+  function hasOpportunityValue(card, field, values) {
+    const wanted = new Set(values);
+    return opportunityValues(card, field).some((value) => wanted.has(value));
+  }
+
+  function opportunityWindowCards(days = 30) {
+    const activeDate = selectedDate();
+    return state.payload.cards
+      .filter((card) => card.category !== "opinion")
+      .filter((card) => card.opportunitySignals)
+      .filter((card) => {
+        const diff = daysBetween(activeDate, card.date);
+        return diff >= 0 && diff <= days - 1;
+      });
+  }
+
+  const entryPointRows = [
+    { label: "客服", fields: ["buyerOrUser", "teamOrFunction"], values: ["customer_support_team", "customer_support"] },
+    { label: "销售", fields: ["buyerOrUser", "teamOrFunction"], values: ["sales_team", "sales"] },
+    { label: "法务", fields: ["buyerOrUser", "teamOrFunction"], values: ["legal_team", "legal_compliance"] },
+    { label: "研发", fields: ["buyerOrUser", "teamOrFunction"], values: ["engineering_team", "engineering"] },
+    { label: "采购", fields: ["buyerOrUser", "teamOrFunction"], values: ["procurement_team", "procurement"] },
+    { label: "医疗", fields: ["buyerOrUser", "teamOrFunction"], values: ["healthcare_provider", "healthcare_operations"] },
+    { label: "金融", fields: ["buyerOrUser", "teamOrFunction"], values: ["finance_team", "finance", "insurance_team", "insurance_operations"] },
+    { label: "内容团队", fields: ["buyerOrUser", "teamOrFunction"], values: ["content_team", "marketing_content"] },
+  ];
+
+  const entryPointColumns = [
+    { label: "问答", values: ["knowledge_base_qa", "data_analysis_query"] },
+    { label: "审查", values: ["contract_review", "code_review", "insurance_claim_review", "permission_audit"] },
+    { label: "生成", values: ["sales_briefing", "rfp_response", "content_workflow"] },
+    { label: "质检", values: ["customer_ticket_triage"] },
+    { label: "检索", values: ["sales_lead_research", "procurement_supplier_screening"] },
+    { label: "自动执行", values: ["internal_tool_building", "model_deployment", "logistics_coordination"] },
+    { label: "预测", values: ["cost_monitoring"] },
+    { label: "工作流编排", values: ["medical_documentation", "call_transcription"] },
+  ];
+
+  function hasOpportunityAny(card, fields, values) {
+    return fields.some((field) => hasOpportunityValue(card, field, values));
+  }
+
+  function renderEntryPointMap(cards) {
+    const cells = entryPointRows.flatMap((row) => entryPointColumns.map((column) => {
+      const cellCards = cards.filter((card) => hasOpportunityAny(card, row.fields, row.values)
+        && hasOpportunityValue(card, "specificTask", column.values));
+      return { row, column, cards: cellCards };
+    }));
+    const maxCount = Math.max(...cells.map((cell) => cell.cards.length), 1);
+    return `
+      <div class="entry-point-grid" style="--entry-cols:${safe(entryPointColumns.length)}">
+        <div class="entry-point-corner">买方</div>
+        ${entryPointColumns.map((column) => `<div class="entry-point-col">${safe(column.label)}</div>`).join("")}
+        ${entryPointRows.map((row) => `
+          <div class="entry-point-row">${safe(row.label)}</div>
+          ${entryPointColumns.map((column) => {
+            const cell = cells.find((item) => item.row === row && item.column === column);
+            const count = cell?.cards.length || 0;
+            const heat = count ? Math.max(.12, count / maxCount) : 0;
+            return `<div class="entry-point-cell ${count ? "has-signal" : ""}" style="--heat:${safe(heat.toFixed(2))}"><strong>${safe(count || "")}</strong></div>`;
+          }).join("")}
+        `).join("")}
+      </div>
+    `;
+  }
+
+  function renderProductPainMap(cards) {
+    const cells = painProductRows.flatMap((row) => painProductColumns.map((column) => {
+      const cellCards = cards.filter((card) => hasOpportunityValue(card, "painOrConstraint", row.values)
+        && (hasOpportunityValue(card, "productForm", column.values) || hasOpportunityValue(card, "deliveryModel", column.values)));
+      return { row, column, cards: cellCards };
+    }));
+    const maxCount = Math.max(...cells.map((cell) => cell.cards.length), 1);
+    return `
+      <div class="product-pain-grid" style="--pain-cols:${safe(painProductColumns.length)}">
+        <div class="product-pain-corner">痛点</div>
+        ${painProductColumns.map((column) => `<div class="product-pain-col">${safe(column.label)}</div>`).join("")}
+        ${painProductRows.map((row) => `
+          <div class="product-pain-row">${safe(row.label)}</div>
+          ${painProductColumns.map((column) => {
+            const cell = cells.find((item) => item.row === row && item.column === column);
+            const count = cell?.cards.length || 0;
+            const heat = count ? Math.max(.12, count / maxCount) : 0;
+            return `<div class="product-pain-cell ${count ? "has-signal" : ""}" style="--heat:${safe(heat.toFixed(2))}"><strong>${safe(count || "")}</strong></div>`;
+          }).join("")}
+        `).join("")}
+      </div>
+    `;
+  }
+
+  function renderOpportunityPanels() {
+    const root = $("[data-opportunity-panels]");
+    if (!root) return;
+    const cards = opportunityWindowCards(30);
+    root.innerHTML = `
+      <section class="opportunity-panels" aria-label="切入点图与产品痛点图">
+        <div class="opportunity-panel">
+          <div class="relationship-panel-head">
+            <div>
+              <p class="desk-kicker">Entry Point Map</p>
+              <h3>切入点图</h3>
+            </div>
+            <span>买方 × 具体任务</span>
+          </div>
+          <div class="entry-point-scroll">${renderEntryPointMap(cards)}</div>
         </div>
-        <h3>${safe(compactText(item.title, 58))}</h3>
-        <p>${safe(compactText(item.summary, 150))}</p>
-        <p>${safe(item.boundary)}</p>
-      </article>
-    `).join("");
+        <div class="opportunity-panel">
+          <div class="relationship-panel-head">
+            <div>
+              <p class="desk-kicker">Product Pain Map</p>
+              <h3>产品痛点图</h3>
+            </div>
+            <span>痛点 × 产品形态</span>
+          </div>
+          <div class="product-pain-scroll">${renderProductPainMap(cards)}</div>
+        </div>
+      </section>
+    `;
   }
 
   function renderStats() {
@@ -1191,35 +1213,6 @@
             <div class="relation-signal-list">${renderRelationshipSignalList(cards)}</div>
           </aside>
         </div>
-        <div class="relationship-insight-grid">
-          <div class="relationship-insight-panel">
-            <div class="relationship-panel-head">
-              <div>
-                <p class="desk-kicker">Timeline</p>
-                <h3>时间聚集</h3>
-              </div>
-            </div>
-            <div class="relation-timeline">${renderRelationshipTimeline(cards)}</div>
-          </div>
-          <div class="relationship-insight-panel">
-            <div class="relationship-panel-head">
-              <div>
-                <p class="desk-kicker">Tags</p>
-                <h3>Tag 聚合</h3>
-              </div>
-            </div>
-            <div class="relation-tag-list">${renderRelationshipTagAggregation(cards)}</div>
-          </div>
-          <div class="relationship-insight-panel">
-            <div class="relationship-panel-head">
-              <div>
-                <p class="desk-kicker">Signal Candidates</p>
-                <h3>迹象候选</h3>
-              </div>
-            </div>
-            <div class="relation-candidate-list">${renderRelationshipCandidates(cards)}</div>
-          </div>
-        </div>
       </section>
     `;
     root.onclick = (event) => {
@@ -1261,6 +1254,7 @@
     };
     const graphSummaryPanel = $("[data-day-summary]");
     if (graphSummaryPanel) graphSummaryPanel.textContent = `${fmtDate(date)} · ${displayModeLabel()}`;
+    renderOpportunityPanels();
     return;
     const graphStats = visibleCategories().map((item) => ({
       ...item,

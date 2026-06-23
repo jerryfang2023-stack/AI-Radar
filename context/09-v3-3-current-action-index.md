@@ -5,14 +5,14 @@ last_updated: 2026-06-17
 use_when:
   - choose current action
   - recover missing actions
-  - dispatch SITE-V3.3.8.2 production work
+  - dispatch SITE-V3.3.8.3 production work
   - distinguish current actions from historical tasks
 priority: current
 ---
 
-# SITE-V3.3.8.2 Current Action Index
+# SITE-V3.3.8.3 Current Action Index
 
-This file is the current action registry for WaveSight AI SITE-V3.3.8.2.
+This file is the current action registry for WaveSight AI SITE-V3.3.8.3.
 
 Use it before historical dispatch boards, feature lists, closeouts, or V2 action records. Historical files can explain why a rule exists, but they must not add actions back into the current production system.
 
@@ -22,15 +22,15 @@ Every action, old or new, must be treated as one of these classes:
 
 | Status | Meaning | Codex Behavior |
 |---|---|---|
-| `current` | Active SITE-V3.3.8.2 production action. | May be used as a default execution route. |
+| `current` | Active SITE-V3.3.8.3 production action. | May be used as a default execution route. |
 | `manual/archive` | Historical or diagnostic action with reference value. | May be read or manually consulted, but must not run by default. |
 | `retired` | Explicitly stopped action or output. | Must not be restored, required, or used as a blocker. |
 
-Do not mark an old action as `current` just because it existed before. Only a SITE-V3.3.8.2-compatible route that serves the current asset system can be `current`.
+Do not mark an old action as `current` just because it existed before. Only a SITE-V3.3.8.3-compatible route that serves the current asset system can be `current`.
 
 ## Current Actions
 
-Only these actions are `current` for SITE-V3.3.8.2:
+Only these actions are `current` for SITE-V3.3.8.3:
 
 | Action | Status | Current Role |
 |---|---|---|
@@ -42,6 +42,7 @@ Only these actions are `current` for SITE-V3.3.8.2:
 | Source-first check | `current` | Ensure frontstage facts are original-source backed. |
 | Pool-to-Card dedupe | `current` | Prevent duplicate evidence from becoming duplicate Cards. |
 | Relationship graph build | `current` | Build Card-derived nodes, edges, and evidence links. |
+| Opportunity radar weekly update | `current` | Refresh the Intelligence Map Entry Point Map and Product Pain Map once per week from source-backed opportunity_signals. |
 | Intelligence Map weekly report | `current` | Publish the weekly report entry and detail page from the weekly business-change radar report. |
 | Trend candidate judgment | `current` | Judge repeated same-direction signals, not trend reports. |
 | First-line viewpoints RSS update | `current` | Update builders viewpoints from the morning RSS / podcast route independently from business signals. |
@@ -201,6 +202,42 @@ Boundaries:
 - Use Card nodes and source-backed edges only.
 - Do not include builders viewpoints or opinion-only materials.
 - Do not replace the graph with long prose cards.
+
+### 5.1 Opportunity Radar Weekly Update
+
+Purpose:
+
+- Refresh the Intelligence Map's two startup-oriented opportunity panels once per week:
+  - Entry Point Map / 切入点图: buyer or user x concrete task.
+  - Product Pain Map / 产品痛点图: pain or constraint x product form / delivery model.
+
+Primary route:
+
+- `agent-workflow/skills/guanlan-opportunity-radar-updater/SKILL.md`.
+
+Reads:
+
+- accepted Business Signal Cards.
+- original source excerpts.
+- `agent-workflow/product/opportunity-signal-taxonomy.json`.
+- `01-SiteV2/site/data/v3-data-observation-desk.json`.
+
+Cadence:
+
+- Update once per week after the weekly Business Signals data is complete.
+- Use latest 7 days for current heat, 30 days for baseline, and 90 days only as persistence context.
+
+Outputs:
+
+- refreshed `opportunity_signals` when source-near fields need repair.
+- updated Intelligence Map opportunity panels.
+- validation report from frontstage regression when page or data output changes.
+
+Boundaries:
+
+- Do not use old `formal_tags` aggregation for these maps.
+- Do not use First-Line Viewpoints or Community Intelligence as direct map evidence unless separately promoted through Raw / Pool / Card.
+- Do not modify relationship graph tag logic from this route.
 
 ### 6. Intelligence Map Weekly Report
 

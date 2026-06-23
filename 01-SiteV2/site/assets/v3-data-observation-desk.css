@@ -987,7 +987,7 @@ button {
 
 .relationship-insight-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(320px, .75fr) minmax(360px, .9fr);
+  grid-template-columns: minmax(0, 1.1fr) minmax(340px, .9fr);
   gap: 12px;
   align-items: stretch;
   height: 560px;
@@ -1161,9 +1161,98 @@ button {
   opacity: .68;
 }
 
+.opportunity-panels {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.opportunity-panel {
+  min-width: 0;
+  border: 1px solid var(--line-soft);
+  background: linear-gradient(180deg, rgba(255, 255, 255, .88), rgba(255, 253, 248, .76));
+  box-shadow: var(--gl-shadow-card, 0 8px 24px rgba(7, 24, 39, .04));
+}
+
+.entry-point-scroll,
+.product-pain-scroll {
+  overflow-x: auto;
+  padding: 12px;
+}
+
+.entry-point-grid,
+.product-pain-grid {
+  min-width: max(560px, calc((var(--pain-cols) + 1) * 78px));
+  display: grid;
+  gap: 1px;
+  background: rgba(7, 24, 39, .06);
+}
+
+.entry-point-grid {
+  min-width: max(640px, calc((var(--entry-cols) + 1) * 78px));
+  grid-template-columns: 86px repeat(var(--entry-cols), minmax(62px, 1fr));
+}
+
+.product-pain-grid {
+  grid-template-columns: 86px repeat(var(--pain-cols), minmax(62px, 1fr));
+}
+
+.entry-point-corner,
+.entry-point-col,
+.entry-point-row,
+.entry-point-cell,
+.product-pain-corner,
+.product-pain-col,
+.product-pain-row,
+.product-pain-cell {
+  min-height: 38px;
+  display: grid;
+  align-items: center;
+  padding: 6px 7px;
+  background: rgba(255, 253, 248, .9);
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: var(--gl-weight-title, 600);
+  line-height: 14px;
+}
+
+.entry-point-corner,
+.entry-point-col,
+.entry-point-row,
+.product-pain-corner,
+.product-pain-col,
+.product-pain-row {
+  background: rgba(255, 255, 255, .78);
+}
+
+.entry-point-cell,
+.product-pain-cell {
+  justify-items: center;
+  background: rgba(255, 253, 248, .82);
+}
+
+.entry-point-cell.has-signal,
+.product-pain-cell.has-signal {
+  border: 1px solid rgba(13, 53, 92, calc(.08 + var(--heat) * .22));
+  background:
+    linear-gradient(135deg, rgba(13, 53, 92, calc(.035 + var(--heat) * .16)), rgba(200, 167, 102, calc(.055 + var(--heat) * .2))),
+    rgba(255, 253, 248, .9);
+}
+
+.entry-point-cell strong,
+.product-pain-cell strong {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 16px;
+}
+
 @media (max-width: 1180px) {
   .relationship-workbench-grid,
-  .relationship-insight-grid {
+  .relationship-insight-grid,
+  .opportunity-panels {
     grid-template-columns: 1fr;
   }
 
@@ -1209,6 +1298,7 @@ button {
   .relation-timeline-items {
     margin-left: 4px;
   }
+
 }
 
 .stat-card h3 {
