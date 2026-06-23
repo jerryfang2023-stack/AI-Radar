@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["healthcare_provider", "enterprise_ai_owner"]
+  team_or_function: ["healthcare_operations"]
+  specific_task: ["medical_documentation"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["research_paper"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Research 推出 Agent 工作流能力，切入企业 Agent 协作平台 从像素到规划：Google Research 发布 Vectorized Farmscapes 2020 数据集 Google Research 发布 Vectorized Farmscapes 2020 向量化数据集，将英格兰超 130，000 km2 高分辨率栅格地图转化为树篱、石墙、小树林等精细生态特征量化清单。该数据集基于 RSF 的 Vision..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Research"
 
 frontend:

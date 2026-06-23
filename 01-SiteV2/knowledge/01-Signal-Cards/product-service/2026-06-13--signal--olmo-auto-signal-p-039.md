@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release", "research_benchmark"]
+  product_form: ["developer_tool", "evaluation_platform"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "olmo 发布 AI 基础设施能力，切入地产和建筑设计工作流 olmo-eval：面向模型开发循环的评估工作台 olmo-eval 是基于 OLMES 标准构建的评估工作台，专为 LLM 持续开发中的反复评测场景设计。相比 OLMES，它减少了新增评测的实现工作量，支持 agentic 和多轮评测作为一等用例，并允许根据基准需求选择轻量直接运行或容器化隔离运行。采用模块化架构，模型、工具、容器环境、辅助模型均可独立替换。评测结果同时报..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "olmo"
 
 frontend:

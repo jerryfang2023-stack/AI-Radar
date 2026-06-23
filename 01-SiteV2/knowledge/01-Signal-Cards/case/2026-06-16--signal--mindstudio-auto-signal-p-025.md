@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "customer_support"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage"]
+  business_action: ["customer_deployment", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["case_study"]
+  source_evidence_type: ["first_party_case"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Mindstudio 案例：AI 进入销售和收入团队流程 How an Enterprise Rolled Out AI Agents to Sales Teams | MindStudio This case study examines how a mid-market B2B software company deployed AI agents across their 120-person sales organizatio..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Mindstudio"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["customer_support_team"]
+  team_or_function: ["customer_support"]
+  specific_task: ["customer_ticket_triage"]
+  business_action: ["funding_round", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["hallucination_risk"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Voice Agents 2.0 — Activant Voice Agents 2.0 — Activant , building internal trust for future expansion."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Voice Agents 2.0 — Activant"
 
 frontend:

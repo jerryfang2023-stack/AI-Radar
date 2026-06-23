@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch"]
+  product_form: ["copilot", "api"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Cloudflare 为 AI 智能体推出临时账户 Cloudflare 为 AI 智能体推出临时账户 Cloudflare 在 Workers 上推出临时账户（Temporary Accounts），允许 AI 智能体直接运行 `wrangler deploy --temporary`，在数秒内获取一个可用的实时 Worker，无需绕开面向人类设计的部署流程。该功能旨在降低智能体部署门槛。"
+  missing_fields: []
+
 signal_owner: "Cloudflare"
 
 frontend:

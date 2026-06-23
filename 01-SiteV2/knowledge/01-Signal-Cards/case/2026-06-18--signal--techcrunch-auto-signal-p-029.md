@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["security_compliance"]
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "## 价值描述 Techcrunch 的案例信号可用于观察 AI 是否已经进入 模型部署和算力调用，以及后续是否出现客户、流程或结果指标。"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Techcrunch"
 
 frontend:

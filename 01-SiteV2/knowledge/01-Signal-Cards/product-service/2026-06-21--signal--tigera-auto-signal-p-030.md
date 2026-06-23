@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["procurement_signal"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["regulatory_or_procurement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "The Case for VM and Container Consolidation in 2026 The Case for VM and Container Consolidation in 2026 Two platforms, two teams, two procurement relationships, all doing one job."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "Tigera"
 
 frontend:

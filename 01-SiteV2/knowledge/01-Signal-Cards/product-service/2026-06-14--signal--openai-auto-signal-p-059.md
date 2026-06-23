@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch", "procurement_signal"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "OpenAI 面临多州检察长调查 发布 AI 基础设施能力，切入采购下单自动化 OpenAI 面临多州检察长调查 # OpenAI 面临多州检察长调查 发布 AI 基础设施能力，切入采购下单自动化 ## 新闻事实 多个州检察长正在对 OpenAI 展开调查，问题涉及该公司的广告政策以及健康数据处理方式，但具体哪些州参与调查尚不明确。"
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "OpenAI 面临多州检察长调查"
 
 frontend:

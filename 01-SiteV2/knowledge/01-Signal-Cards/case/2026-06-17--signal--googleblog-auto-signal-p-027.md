@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "security_compliance"]
+  adoption_evidence: ["deployment_scale", "partnership_announcement"]
+  source_evidence_type: ["technical_blog", "first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "TPU Developer Hub 正式发布：助力开发者解锁 Google Cloud TPU 全部性能 TPU Developer Hub 正式发布：助力开发者解锁 Google Cloud TPU 全部性能 谷歌今日推出 TPU Developer Hub，面向模型构建者与开发者提供端到端教育资源。内容覆盖预训练、后训练及推理工作负载，涵盖硬件架构、软件栈（XLA、PyTorch 零成本迁移）、追踪调试（XProf 工具）、并行优..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Googleblog"
 
 frontend:

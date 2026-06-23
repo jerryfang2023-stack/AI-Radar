@@ -59,6 +59,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["healthcare_provider"]
+  team_or_function: ["healthcare_operations"]
+  specific_task: ["medical_documentation"]
+  business_action: ["customer_deployment"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Druid AI 部署语音 Agent，手术预约时间减少 50% AI voice agents cut surgery scheduling time by 50% for a European ophthalmology group A European ophthalmology group uses Druid AI voice agents for patient experience workflows."
+  missing_fields: ["product_form", "delivery_model"]
 ---
 
 # Druid AI 部署语音 Agent，手术预约时间减少 50%

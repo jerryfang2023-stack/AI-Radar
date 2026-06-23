@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-business-media"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "insurance_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering", "insurance_operations"]
+  specific_task: ["internal_tool_building", "insurance_claim_review"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change"]
+  product_form: ["developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "英伟达推出 RTX Spark，试图把 AI 开发拉回本地 PC 英伟达发布 RTX Spark，称其为\"史上最高效的 PC 芯片\" 英伟达正式进军消费级笔记本电脑市场，推出了 RTX Spark 芯片。该公司将其称为\"有史以来最高效的 PC 芯片\"。"
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 event: "英伟达推出 RTX Spark 芯片方向，面向轻薄电脑和桌面设备上的本地 AI 工作负载。"
 business_meaning: "本地 AI 算力如果变得更便宜，开发者和企业小团队会把一部分测试、推理和原型工作从云端移回本地。"
 why_selected: "这条信号关系到 AI 开发成本和数据边界，不只是 PC 芯片新闻。"

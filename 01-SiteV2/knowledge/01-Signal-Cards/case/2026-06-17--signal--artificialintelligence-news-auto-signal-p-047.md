@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "engineering_team"]
+  team_or_function: ["sales", "customer_support", "engineering"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "governance_requirement"]
+  product_form: []
+  delivery_model: ["template_pack"]
+  pain_or_constraint: ["security_compliance"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "欧盟委员会发布《AI内容标注行为守则》 欧盟委员会发布《AI内容标注行为守则》 欧盟委员会6月10日发布《AI内容标注行为守则》，为2026年8月2日生效的《EU AI法案》第50条提供自愿性合规路径。从8月起，深度伪造及涉及公共利益、未经人工审查的AI生成或篡改文本必须标注标签；与交互式AI系统（如客服机器人）对话的用户也需被告知正与机器交流。该守则由六位独立专家起草、逾180个利益相关方参与，采用开放技术标准和统一EU图标。守则现..."
+  missing_fields: ["product_form"]
+
 signal_owner: "Artificialintelligence-News"
 
 frontend:

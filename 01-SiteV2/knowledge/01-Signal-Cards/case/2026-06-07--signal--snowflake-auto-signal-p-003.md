@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["partnership_integration", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "data_silo"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Snowflake Expands AWS Collaboration with $6B AI Commitment Snowflake Expands AWS Collaboration with $6B AI Commitment Snowflake expands its AWS collaboration with a $6B infrastructure commitment to help enterprises buil..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Snowflake"
 
 frontend:

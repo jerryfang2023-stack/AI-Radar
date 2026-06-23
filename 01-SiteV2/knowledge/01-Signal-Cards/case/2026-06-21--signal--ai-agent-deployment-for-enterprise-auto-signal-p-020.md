@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["customer_deployment", "governance_requirement"]
+  product_form: ["evaluation_platform"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "security_compliance", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI Agent Deployment for Enterprise: From Prototype to Production AI Agent Deployment for Enterprise: From Prototype to Production Transitioning an AI agent from a local prototype to an enterprise-grade environment—Day 2..."
+  missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]
+
 signal_owner: "AI Agent Deployment for Enterprise"
 
 frontend:

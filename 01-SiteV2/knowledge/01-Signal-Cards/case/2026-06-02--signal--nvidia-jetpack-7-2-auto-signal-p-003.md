@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "pricing_change"]
+  product_form: ["model_gateway", "evaluation_platform"]
+  delivery_model: []
+  pain_or_constraint: ["latency_sensitive", "security_compliance", "context_management"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["funding_news", "technical_blog", "first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "NVIDIA JetPack 7.2 发布，简化边缘 Agent 部署 NVIDIA JetPack 7.2支持内存优化的边缘智能体部署 NVIDIA JetPack 7.2发布，支持一键部署开源NVIDIA NemoClaw堆栈，该堆栈为OpenClaw添加了隐私与安全控制。同时引入NVIDIA agent skills for Jetson，为Jetson设备提供智能体技能。该版本优化了内存效率，旨在加速AI代理从数字世界向物理环..."
+  missing_fields: ["delivery_model"]
+
 event: "NVIDIA 发布 JetPack 7.2，加入 NemoClaw 一键部署、Jetson Agent skills 和 MIG 支持。"
 business_meaning: "边缘设备上的 Agent 部署开始从模型运行，转向安全、内存、隔离和设备侧开发工具的组合交付。"
 why_selected: "这条变化值得看，是因为物理世界和工业场景里的 Agent 需要在本地设备上稳定运行，而不是只依赖云端推理。"

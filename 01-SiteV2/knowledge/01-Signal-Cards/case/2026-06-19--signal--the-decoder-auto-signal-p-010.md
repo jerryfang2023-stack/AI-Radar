@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["healthcare_provider", "enterprise_ai_owner"]
+  team_or_function: ["healthcare_operations"]
+  specific_task: ["medical_documentation"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike", "human_review_required"]
+  adoption_evidence: ["deployment_scale", "partnership_announcement", "pricing_page"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心 Midjourney 与 Butterfly Network 联手打造全身超声波扫描仪，计划 2027 年底开设水疗中心 Midjourney 与 Butterfly Network 合作推出全身超声波扫描仪。用户步入一池金色浅水，身体穿过水下传感器环，约 60 秒内生成无辐射 3D 身体图像。初期提供无需 FDA..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "The-Decoder"
 
 frontend:

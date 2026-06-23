@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "open_source_release"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["data_silo"]
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆 智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆 # 智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆 ## 新闻事实 智谱AI发布GLM-5.2，在MIT许可下提供稳定百万token上下文。编码方面，FrontierSWE得分74.4%，仅落后Claude Opus 4.8一个百分点，领先GPT-5...."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "FrontierSWE"
 
 frontend:

@@ -59,6 +59,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["operations_team"]
+  team_or_function: ["operations"]
+  specific_task: ["logistics_coordination"]
+  business_action: ["customer_deployment", "failure_postmortem"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Choco 部署 OpenAI Agent 处理食品分销订单 Choco automates food distribution with AI agents Choco uses OpenAI-powered agents to automate food distribution order workflows."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 ---
 
 # Choco 部署 OpenAI Agent 处理食品分销订单

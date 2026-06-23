@@ -47,6 +47,22 @@ formal_tags:
   region: ["region-global"]
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch", "partnership_integration"]
+  product_form: ["copilot"]
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "keyword search：千问 - 阿里Qwen大模型打造的 AI 对话助手 # keyword search：千问 - 阿里Qwen大模型打造的 AI 对话助手 ## 这个案例是谁 keyword search：千问 - 阿里Qwen大模型打造的 AI 对话助手 是从证据编号 `R-004` 中抽出的 L1 案例。它的价值不在于“又有一家公司发布了东西”，而在于这条材料暴露了一个可继续跟踪的客户、产品、流程或交付动作。"
+  missing_fields: ["buyer_or_user", "specific_task", "delivery_model"]
+
 related_change_cards: ["CHG-20260518-03"]
 related_sources: ["R-004"]
 internal:

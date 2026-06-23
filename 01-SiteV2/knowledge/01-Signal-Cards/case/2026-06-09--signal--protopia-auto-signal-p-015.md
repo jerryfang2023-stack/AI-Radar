@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["partnership_integration", "procurement_signal", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "security_compliance"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Protopia AI Now Available on AWS Marketplace Protopia AI Now Available on AWS Marketplace Lower total cost of inference by running secure workloads on infrastructure shared among different data owners concurrently, / qu..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "Protopia"
 
 frontend:

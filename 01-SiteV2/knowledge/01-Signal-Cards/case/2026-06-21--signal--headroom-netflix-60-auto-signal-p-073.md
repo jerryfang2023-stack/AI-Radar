@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building", "knowledge_base_qa"]
+  business_action: ["pricing_change", "open_source_release", "failure_postmortem"]
+  product_form: ["model_gateway", "rag_knowledge_base", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike"]
+  adoption_evidence: ["customer_metric", "deployment_scale"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量 开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%-95% Token 消耗量 Netflix 高级工程师 Tejas Chopra 开发的开源工具 Headroom（v0.26.0）在 AI 应用与 LLM 间建立本地透明压缩层，通过压缩 JSON、代码、RAG 片段和对话历史等冗余数据减少 T..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "开源工具 Headroom 爆火：Netflix 工程师打造，声称可节省 60%"
 
 frontend:

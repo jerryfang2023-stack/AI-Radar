@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI编码智能体教会机器人安装GPU和剪扎带 发布 AI 基础设施能力，切入模型部署和算力服务 AI编码智能体教会机器人安装GPU和剪扎带--NVIDIA GEAR等团队开发ENPIRE框架 # AI编码智能体教会机器人安装GPU和剪扎带 发布 AI 基础设施能力，切入模型部署和算力服务 ## 新闻事实 NVIDIA GEAR实验室联合卡内基梅隆大学和UC Berkeley开发了ENPIRE框架，让AI编码智能体自主训练机器人。测试了O..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "AI编码智能体教会机器人安装GPU和剪扎带"
 
 frontend:

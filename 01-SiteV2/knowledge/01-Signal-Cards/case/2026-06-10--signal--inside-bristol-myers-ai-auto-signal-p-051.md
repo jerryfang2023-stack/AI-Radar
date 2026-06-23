@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "procurement_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "procurement", "it_security"]
+  specific_task: ["sales_lead_research", "rfp_response"]
+  business_action: ["procurement_signal", "governance_requirement"]
+  product_form: ["workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "permission_boundary"]
+  adoption_evidence: ["customer_metric", "procurement_contract"]
+  source_evidence_type: ["regulatory_or_procurement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Inside Bristol Myers’ AI-powered procurement overhaul | CFO Dive Inside Bristol Myers’ AI-powered procurement overhaul | CFO Dive # Inside Bristol Myers’ AI-powered procurement overhaul The pharmaceutical giant cut proc..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Inside Bristol Myers’ AI"
 
 frontend:

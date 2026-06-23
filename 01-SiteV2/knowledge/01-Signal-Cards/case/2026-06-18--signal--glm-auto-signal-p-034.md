@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "open_source_release", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["data_silo", "latency_sensitive", "evaluation_gap"]
+  adoption_evidence: ["customer_metric", "enterprise_plan"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "GLM-5.2：为长周期任务而生 GLM-5.2：为长周期任务而生 GLM-5.2 发布，支持 1M token 上下文，采用 IndexShare 架构--每 4 个稀疏注意力层共用一个轻量索引器，将 1M 上下文下每 token FLOPs 降低 2.9 倍；MTP 层改进使推测解码接受长度提升 20%。长周期编码基准上，FrontierSWE 落后 Opus 4.8 仅 1%、领先 GPT-5.5 1%；PostTrainBen..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "GLM"
 
 frontend:

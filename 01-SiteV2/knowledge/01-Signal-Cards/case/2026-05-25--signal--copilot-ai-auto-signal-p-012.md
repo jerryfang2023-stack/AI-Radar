@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-business-media"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment", "partnership_integration", "pricing_change"]
+  product_form: ["copilot"]
+  delivery_model: []
+  pain_or_constraint: ["model_routing_complexity"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "为何不应在Copilot等AI工具中依赖默认模型选择 为何不应在Copilot等AI工具中依赖默认模型选择 数学家Adam Kucharski的实验表明，当向Microsoft Copilot输入两组仅国家标签不同但数据完全相同的分析请求时，Copilot并未能识别其本质一致，反而虚构并输出了基于国家的刻板印象分析。这暴露了当前许多AI工具在默认配置下存在的系统性偏差风险。尽管具备推理能力的\"思维模型\"能识别此类数据陷阱，但用户需要主..."
+  missing_fields: ["specific_task", "delivery_model"]
+
 event: "为何不应在Copilot等AI工具中依赖默认模型选择 把 AI 用进模型部署和算力调用。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

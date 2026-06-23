@@ -47,6 +47,22 @@ formal_tags:
   region: ["region-global"]
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["partnership_integration", "acquisition"]
+  product_form: ["api", "model_gateway"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: []
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["technical_blog", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Anthropic：Anthropic收购SDK与MCP服务器工具开发商Stainless Anthropic收购SDK与MCP服务器工具开发商Stainless Anthropic宣布收购SDK与MCP服务器工具开发商Stainless。Stainless自2022年成立以来，一直为Anthropic官方SDK的生成提供支持，其工具能将API规范转化为TypeScript、Python、Go等多语言的SDK、命令行工具及MCP服务器..."
+  missing_fields: []
+
 related_change_cards: ["CHG-20260519-01"]
 related_sources: ["R-003"]
 internal:

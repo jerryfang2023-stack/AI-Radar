@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "/ query=voice AI agent funding customer adoption / intent=find_startups / path=industry_landing Skip to content Advanced Voice AI Platforms 2026 Market Insights™ March, 2026 Get Access Now Login to Download Download Dow..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 event: "Avasant 发布新的 AI 能力，面向模型部署和算力调用。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

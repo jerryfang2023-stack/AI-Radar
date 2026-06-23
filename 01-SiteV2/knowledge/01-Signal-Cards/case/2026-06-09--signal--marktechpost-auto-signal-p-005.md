@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: ["knowledge_base_qa"]
+  business_action: ["product_launch", "research_benchmark", "failure_postmortem"]
+  product_form: ["agent_workbench", "rag_knowledge_base"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "hallucination_risk"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询 Google Research 为 Gemini Enterprise Agent Platform 引入 Agentic RAG 与 Sufficient Context Agent 支持多跳查询 Google Research 在 G..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Marktechpost"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "partnership_integration", "procurement_signal", "pricing_change"]
+  product_form: ["agent_workbench", "vertical_saas"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["funding_news", "regulatory_or_procurement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Monq 获得$3 M 融资，押注地产和建筑设计工作流 Startuply.vc: Monq's $3 Million Pre-Seed Lands on the AI Agent for the Procurement Officer q's $ -Seed Lands on the AI Agent for the Procurement Officer The most expensive conversation in a l..."
+  missing_fields: ["specific_task", "delivery_model"]
+
 signal_owner: "Monq"
 
 frontend:

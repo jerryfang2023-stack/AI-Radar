@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch", "procurement_signal"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["customer_metric", "procurement_contract"]
+  source_evidence_type: ["first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "谷歌 Home Speaker 开启预售，6 月 25 日开售 推出 Agent 工作流能力，切入采购下单自动化 谷歌 Home Speaker 开启预售，6 月 25 日开售 # 谷歌 Home Speaker 开启预售，6 月 25 日开售 推出 Agent 工作流能力，切入采购下单自动化 ## 新闻事实 谷歌去年八月发布的新款智能音箱 Google Home Speaker 现已开启预售，售价 $99.99，6 月 25 日正式..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "谷歌 Home Speaker 开启预售，6 月 25 日开售"
 
 frontend:

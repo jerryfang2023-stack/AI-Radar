@@ -1641,6 +1641,16 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
 
 ## P-031｜系统卡：Claude Fable 5 和 Claude Mythos 5 【pdf】
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-23T09:49:34.963Z
+degradation_reasons: [historical_text_contamination_repaired]
+evidence_seed: {}
+key_excerpts: []
+readability_score: 0
+has_full_text: false
+extraction_quality: failed
+raw_qc_downstream_use: blocked_historical_text_contamination
+raw_qc_decision: block
+pool_routes: watchlist
 
 - raw_ref: R-038
 - raw_original_id: cmq6ye8kz00qrslbhyxanz4tp
@@ -1688,8 +1698,8 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 22.1
 - usable_for: case, change, trend, daily_observation, heatmap, briefing, user_feedback_pool, watchlist
-- key_excerpts: [{"type":"supporting_context","text":"Anthropic 发布了 Claude Fable 5 和 Claude Mythos 5 的系统卡（System Card），以 PDF 格式公开，内容涵盖两个模型的架构、安全评估与部署限制。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"number","text":"4 %���� 1 0 obj endobj 3 0 obj endobj 6 0 obj endobj 8 0 obj > stream x����J�`\u0014��Ԃ(��\u000e\u001d\u001c28�h��mRpi#\u0016�V!","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"ހ�e(\b\u000e��%���|�:t�����\u001c�� �\u001c@V��\u001fG�zM�� \u0013�&|)�4\u000ec�Ƃ��� �\u001d�ٛbw��0\u0012�o�Π?","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"�һY���M�\u0002֩\u0013\u0010УO� > stream x���r�8���'��1eWY\u0014U$\u0001\u0002 %�9go�>�\u0001��U�A�Ҹ菲)��H�'Vt����\u0000\b.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"\u0000 �\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00000\u0011cL]���g\u0019k�mß��L����?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"�P��\u0007���\u0012m�6�dYVU��ߪ����ʲ���\u0001\u0000\u0000\u00002���\u001d^p/�zu�4�=������� t���_��_�����\u0019$\u001e\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000#��(˲�����l#8���_BqM�,Kc�pN�,���G�\u0000\u0000\u0000��_����������h�}��e�ߞ�˟�\u0000\u0016�es �y\u001e��]zb:�������r~!","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["\u0000 �\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u00000\u0011cL]���g\u0019k�mß��L����?"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["Anthropic 发布了 Claude Fable 5 和 Claude Mythos 5 的系统卡（System Card），以 PDF 格式公开，内容涵盖两个模型的架构、安全评估与部署限制。"]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 没有具体客户或真实企业案例
 - 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
 - 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。

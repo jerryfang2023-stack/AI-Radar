@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "latency_sensitive"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Baseten 案例：AI 进入模型部署和算力调用 Mercury 2, the first reasoning diffusion LLM, is now on Baseten Inception's Mercury 2 is now live on Baseten, making us the first inference platform to deliver production-grade diffusion LLMs (..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Baseten"
 
 frontend:

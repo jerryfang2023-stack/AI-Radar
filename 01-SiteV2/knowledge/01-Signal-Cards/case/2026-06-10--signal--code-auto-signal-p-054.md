@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release"]
+  product_form: ["evaluation_platform"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "data_silo"]
+  adoption_evidence: []
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Cohere发布North Mini Code：面向开发者的开源编码模型 Cohere发布North Mini Code：面向开发者的开源编码模型 Cohere发布North Mini Code，一款30B参数MoE模型（3B活跃参数），Apache 2.0开源。在Artificial Analysis Coding Index上得分33.4，超越Qwen3.5、Gemma 4等同类模型。后训练采用两阶段SFT和RLVR，在SWE-B..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "Code"
 
 frontend:

@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["copilot", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: ["customer_metric", "partnership_announcement"]
+  source_evidence_type: ["funding_news", "technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "NVIDIA 与 Microsoft 深化合作，推出从设备到云的统一加速计算栈以支持 AI 智能体部署 NVIDIA 与 Microsoft 深化合作，推出从设备到云的统一加速计算栈以支持 AI 智能体部署 在2026年 Microsoft Build 大会上，NVIDIA 与 Microsoft 宣布深化合作，推出从 Windows 设备到 Azure 云再到本地部署的统一加速计算栈，支持 AI 智能体的开发、运行与扩展。核心产品包..."
+  missing_fields: ["delivery_model"]
+
 event: "Microsoft Foundry 把 AI 用进模型部署和算力调用。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

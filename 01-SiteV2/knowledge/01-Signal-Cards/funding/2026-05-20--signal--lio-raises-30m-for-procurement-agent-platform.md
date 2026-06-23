@@ -64,6 +64,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["procurement_team", "enterprise_ai_owner"]
+  team_or_function: ["procurement"]
+  specific_task: ["procurement_supplier_screening"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["partnership_announcement", "procurement_contract"]
+  source_evidence_type: ["funding_news", "regulatory_or_procurement", "first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Lio 融资 3000 万美元，推进企业采购智能体平台 Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement NEW YORK, March 5, 2026 /PRNewswire/ -- Lio (formerly known as askLio), the company building an agentic AI platform for ..."
+  missing_fields: ["product_form", "delivery_model"]
 ---
 
 # Lio 融资 3000 万美元，推进企业采购智能体平台

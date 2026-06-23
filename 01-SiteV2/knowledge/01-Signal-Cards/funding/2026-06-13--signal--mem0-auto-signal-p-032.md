@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building", "knowledge_base_qa"]
+  business_action: ["funding_round", "open_source_release"]
+  product_form: ["rag_knowledge_base", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "context_management"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Mem0 获得$24M 融资，押注企业 Agent 协作平台 Mem0 Raises $24M Series A to Build Memory Layer for AI Agents Mem0 Raises $24M Series A to Build Memory Layer for AI Agents Accessibility Statement Skip Navigation - With 14M+ downloads, o..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "Mem0"
 
 frontend:

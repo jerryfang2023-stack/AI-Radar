@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "healthcare_provider"]
+  team_or_function: ["engineering", "healthcare_operations"]
+  specific_task: ["internal_tool_building", "medical_documentation"]
+  business_action: ["customer_deployment", "product_launch"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["pilot_or_poc"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Built with Opus 4.7 Claude Code 黑客马拉松获奖者揭晓 推出 Agent 工作流能力，切入模型部署和算力服务 Built with Opus 4.7 Claude Code 黑客马拉松获奖者揭晓 Anthropic 举办的 Built with Opus 4.7 Claude Code 黑客马拉松公布三位获奖者。第一名 Medkit（Bedirhan Keskin 构建）是模拟真实诊疗场景的医学训练工具，..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Built with Opus 4.7 Claude Code 黑客马拉松获奖者揭晓"
 
 frontend:

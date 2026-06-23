@@ -3,6 +3,9 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$Utf8Profile = Join-Path $PSScriptRoot "tools\Set-WaveSightUtf8.ps1"
+if (Test-Path -LiteralPath $Utf8Profile) { . $Utf8Profile }
+
 $Root = Split-Path -Parent $PSScriptRoot
 $HealthScript = Join-Path $PSScriptRoot "verification\site-health.ps1"
 

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI Deployment: The Definitive Guide - Mirantis AI Deployment: The Definitive Guide - Mirantis Learn what artificial intelligence deployment is, how to move from prototype to production, and how Mirantis helps enterprise..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "AI Deployment"
 
 frontend:

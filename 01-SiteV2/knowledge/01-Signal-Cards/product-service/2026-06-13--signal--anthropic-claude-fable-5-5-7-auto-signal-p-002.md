@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "pricing_change", "research_benchmark"]
+  product_form: ["model_gateway"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "security_compliance", "evaluation_gap"]
+  adoption_evidence: ["customer_metric", "enterprise_plan"]
+  source_evidence_type: ["research_paper", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7% 发布 AI 基础设施能力，切入模型部署和算力服务 Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7% Claude Fable 5 在 Artificial Analysis Intelligence Index 中取得 64.9 分，在十项基准测试中有五项创下纪录。相比 Opus 4.8，性能提升仅 5.7%，但 token ..."
+  missing_fields: ["specific_task", "delivery_model"]
+
 signal_owner: "Anthropic Claude Fable 5：价格翻倍，性能仅提升5.7%"
 
 frontend:

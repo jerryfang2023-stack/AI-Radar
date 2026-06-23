@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["model_gateway", "workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "model_routing_complexity", "security_compliance"]
+  adoption_evidence: ["partnership_announcement"]
+  source_evidence_type: ["funding_news", "technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师 NVIDIA 推出 NemoClaw 平台，助力工业软件厂商构建自主 AI 工程师 在 COMPUTEX 上，NVIDIA 发布了 NemoClaw 平台，这是一个用于构建专业、长时间运行 AI 智能体的开放蓝图。该平台提供安全运行时、前沿模型支持以及多种编排框架集成选项，可通过 DGX Spark、数据中心或云端部署。其核心开源运行时 OpenShe..."
+  missing_fields: ["delivery_model"]
+
 event: "Nvidia 把 AI 用进地产开发和建筑设计流程。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

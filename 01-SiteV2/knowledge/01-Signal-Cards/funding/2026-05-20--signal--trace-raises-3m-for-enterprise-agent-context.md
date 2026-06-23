@@ -58,6 +58,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "permission_boundary", "data_silo", "model_routing_complexity"]
+  adoption_evidence: ["partnership_announcement"]
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Trace 融资 300 万美元，瞄准企业智能体上下文管理 Trace raises $3M to solve the AI agent adoption problem in enterprise | TechCrunch Trace raises $3M to solve the AI agent adoption problem in enterprise | TechCrunch [...] # Trace raises $3..."
+  missing_fields: ["specific_task", "delivery_model"]
 ---
 
 # Trace 融资 300 万美元，瞄准企业智能体上下文管理

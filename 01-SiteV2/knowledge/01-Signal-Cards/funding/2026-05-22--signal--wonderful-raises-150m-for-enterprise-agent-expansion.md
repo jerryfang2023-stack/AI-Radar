@@ -58,6 +58,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["healthcare_provider", "enterprise_ai_owner"]
+  team_or_function: ["healthcare_operations"]
+  specific_task: ["medical_documentation"]
+  business_action: ["funding_round", "customer_deployment", "procurement_signal", "pricing_change"]
+  product_form: ["agent_workbench"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "context_management"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Wonderful 融资 1.5 亿美元，扩张企业 AI Agent 平台 Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets Accessibility..."
+  missing_fields: ["delivery_model"]
 ---
 
 # Wonderful 融资 1.5 亿美元，扩张企业 AI Agent 平台

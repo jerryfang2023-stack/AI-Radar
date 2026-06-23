@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "hiring_fde"]
+  product_form: ["fde_service"]
+  delivery_model: ["fde_delivery"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["pilot_or_poc"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Today’s Hottest Role: Forward Deployed Engineer - Salesforce Today’s Hottest Role: Forward Deployed Engineer - Salesforce A reservation booking platform had just launched a pilot of its first AI agent and was bumping in..."
+  missing_fields: ["buyer_or_user", "specific_task"]
+
 signal_owner: "Today’s Hottest Role"
 
 frontend:

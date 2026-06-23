@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch", "partnership_integration"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["partnership_announcement"]
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "NVIDIA 与 KRAFTON、NC、T1 在韩国 PC 房庆祝 RTX Spark 发布 NVIDIA 与 KRAFTON、NC、T1 在韩国 PC 房庆祝 RTX Spark 发布 继上周 GTC Taipei 发布后，NVIDIA CEO Jensen Huang 前往韩国，向当地游戏社区正式介绍 RTX Spark 超芯片。该芯片集成 30 年 NVIDIA 技术，可在 Windows 笔记本上实现全天续航，并以 1440p..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "Nvidia"
 
 frontend:

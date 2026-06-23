@@ -250,7 +250,7 @@ function top10FactIsWeak(card = {}) {
   if (!fact) return true;
   if (publicFactLooksLikeTemplateFallback(fact)) return true;
   if (/^原始来源链接：?https?:\/\//iu.test(fact)) return true;
-  if (/公开材料提供了一条可追踪的 AI 商业信号|需继续核对客户、产品和业务结果|鍏紑鏉愭枡鎻愪緵浜嗕竴鏉/u.test(fact)) return true;
+  if (/公开材料提供了一条可追踪的 AI 商业信号|需继续核对客户、产品和业务结果/u.test(fact)) return true;
   return false;
 }
 

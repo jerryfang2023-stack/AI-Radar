@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["api", "model_gateway"]
+  delivery_model: ["project_based_service", "api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "data_silo", "security_compliance", "context_management"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 构建基于SuperClaude框架的工作流：融合命令、代理、模式与会话记忆 一篇技术教程详细介绍了如何构建一个高级工作流系统。该系统以SuperClaude框架为核心，作为一层结构化中间件部署在Anthropic API之上。教程核心内容围绕如何整合命令解析、智能代理调度、多种操作模式切换以及跨会话的上下文记忆能力，从而打造出一个功能更全面、上下文连贯性更强的..."
+  missing_fields: []
+
 event: "Marktechpost 发布新的 AI 能力，面向模型部署和算力调用。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

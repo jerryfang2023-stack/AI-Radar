@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research", "knowledge_base_qa"]
+  business_action: ["funding_round", "product_launch", "acquisition"]
+  product_form: ["rag_knowledge_base", "vertical_saas"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "data_silo"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Zaro.ai 推出 Agent 工作流，面向销售线索和收入团队协作 Zaro.ai Secures $5.1M to Unify Enterprise AI Agents, Data, and Applications in a Single Context Layer Zaro.ai Secures $5.1M to Unify Enterprise AI Agents, Data, and Applications in a S..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "Zaro.ai"
 
 frontend:

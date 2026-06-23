@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["open_source_release"]
+  product_form: ["copilot", "api", "developer_tool"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  adoption_evidence: ["enterprise_plan"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "GitHub's plan for Agents — Kyle Daigle, GitHub - Latent.Space GitHub's plan for Agents — Kyle Daigle, GitHub - Latent.Space GitHub pioneered the modern AI coding era with Copilot, and the resulting explosion in agentic ..."
+  missing_fields: []
+
 signal_owner: "Latent"
 
 frontend:

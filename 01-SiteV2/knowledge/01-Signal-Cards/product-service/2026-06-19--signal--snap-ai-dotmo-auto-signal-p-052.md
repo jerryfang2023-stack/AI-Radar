@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment", "product_launch", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Snap 剥离 AI 视频团队成立新公司 Dotmo 推出 Agent 工作流能力，切入模型部署和算力服务 Snap 剥离 AI 视频团队成立新公司 Dotmo # Snap 剥离 AI 视频团队成立新公司 Dotmo 推出 Agent 工作流能力，切入模型部署和算力服务 ## 新闻事实 Snap 将内部生成式 AI 视频团队剥离为独立公司 Dotmo，专注开发用于互动游戏体验的 AI 模型，原因为内部开展此类工作成本高昂。Dotmo..."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Snap 剥离 AI 视频团队成立新公司 Dotmo"
 
 frontend:

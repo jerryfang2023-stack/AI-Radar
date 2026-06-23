@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "procurement_signal", "open_source_release"]
+  product_form: ["developer_tool", "workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "latency_sensitive", "model_routing_complexity"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Kestra 完成 2500 万美元融资，定位 AI 时代的编排控制平面 We are the Orchestration Control Plane of the AI Era: Kestra raises $25M | Kestra Orchestration has just reached its tipping point."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Kestra"
 
 frontend:

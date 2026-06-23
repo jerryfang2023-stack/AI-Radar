@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: []
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "## 价值描述 Applied AI Case Studies and Real 的案例信号可用于观察 AI 是否已经进入 销售和收入团队流程，以及后续是否出现客户、流程或结果指标。"
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Applied AI Case Studies and Real"
 
 frontend:

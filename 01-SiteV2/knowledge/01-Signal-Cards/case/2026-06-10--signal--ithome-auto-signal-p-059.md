@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["engineering", "it_security"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["partnership_integration", "acquisition", "open_source_release", "governance_requirement"]
+  product_form: ["copilot", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["security_compliance"]
+  adoption_evidence: ["named_customer", "deployment_scale", "partnership_announcement"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI 编程独角兽 Cursor 欧洲总部落子伦敦，SpaceX 手握 600 亿美元收购选择权 AI 编程独角兽 Cursor 欧洲总部落子伦敦，SpaceX 手握 600 亿美元收购选择权 Cursor 将欧洲总部设在伦敦，计划招聘约 200 名员工，并在巴黎、慕尼黑等地开设小型办事处。SpaceX 拥有以 600 亿美元收购 Cursor 的选择权，或支付 100 亿美元开展全新合作。Cursor 目前 B2B 年化营收约 26 ..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Ithome"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "pricing_change", "research_benchmark"]
+  product_form: ["copilot"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "hallucination_risk"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "## 原文要点 - 来源材料显示，ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务 的AI 商业动作涉及销售和收入团队流程。"
+  missing_fields: ["delivery_model"]
+
 signal_owner: "ChatGPT 新增「Scheduled」侧边栏，统一管理定时任务"
 
 frontend:

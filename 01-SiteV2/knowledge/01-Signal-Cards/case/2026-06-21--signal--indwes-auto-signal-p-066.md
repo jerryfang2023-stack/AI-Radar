@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["sales", "it_security"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "research_benchmark", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "How Modern Organizations Actually Deploy AI: Tools, Teams, and ..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Indwes"
 
 frontend:

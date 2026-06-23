@@ -45,6 +45,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["finance_team", "enterprise_ai_owner"]
+  team_or_function: ["finance"]
+  specific_task: []
+  business_action: ["product_launch"]
+  product_form: ["copilot"]
+  delivery_model: ["project_based_service"]
+  pain_or_constraint: ["hallucination_risk"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Ithome 案例：AI 进入企业智能体协作流程 毕马威AI报告被指由AI生成：引文45条仅5条准确，多处案例不实 # Ithome 案例：AI 进入企业智能体协作流程 ## 新闻事实 毕马威去年10月发布的AI报告被指由AI生成，充斥幻觉。GPTZero检测发现，45条引文中仅5条准确对应真实来源，28条对真实标题改写或添加不存在内容，约一半主张存在虚假。例如，阿联酋航空的Sara被描述为可更改航班的AI聊天机器人，实为移动助手；瑞..."
+  missing_fields: ["specific_task"]
+
 signal_owner: "Ithome"
 
 frontend:

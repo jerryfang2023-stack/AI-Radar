@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "procurement_signal"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: ["partnership_announcement", "procurement_contract"]
+  source_evidence_type: ["regulatory_or_procurement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Now 发布 AI 基础设施能力，切入地产和建筑设计工作流 Carmen Li 的计划：为计算资源构建期货市场 | Odd Lots DRW 的 Don Wilson 去年提出构建可能比石油市场更庞大的 GPU 市场，如今他与 Carmen Li 合作落地。Li 同时担任 Silicon Data 与 Compute Exchange 两家公司 CEO，前者构建 GPU 定价指数，后者运营现货采购平台。本期播客探讨从零构建 GPU 市..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "Now"
 
 frontend:

@@ -47,6 +47,22 @@ formal_tags:
   region: ["region-global"]
   source: ["source-business-media"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["funding_round", "product_launch", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["hallucination_risk", "security_compliance", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "The Decoder：与MAGA结盟的团体要求对前沿AI模型进行政府监管 与MAGA结盟的团体要求对前沿AI模型进行政府监管 一个以Humans First为首的保守派联盟发表公开信，呼吁特朗普总统发布行政命令，强制要求前沿AI模型在发布前必须通过安全测试。该联盟主张政府对这些尖端AI技术实施监管，以应对潜在的安全风险。这一动向反映了美国政治光谱中部分势力对AI发展治理关切的升级。"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 related_change_cards: ["CHG-20260519-02"]
 related_sources: ["R-004"]
 internal:

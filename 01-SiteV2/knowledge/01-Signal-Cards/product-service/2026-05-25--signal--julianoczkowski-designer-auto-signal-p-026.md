@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["vertical_saas", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "julianoczkowski/designer-skills julianoczkowski/designer-skills Repository: julianoczkowski/designer-skills # Designer Skills for Claude Code & Cursor A collection of agent skills for designers who prototype and build w..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 event: "julianoczkowski/designer 发布新的 AI 能力，面向地产开发和建筑设计流程。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了地产开发和建筑设计流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

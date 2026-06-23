@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["open_source_release", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["audit_log_required", "evaluation_gap"]
+  adoption_evidence: ["customer_metric", "third_party_report"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Data2Story turns a CSV file into a verified interactive news article using seven AI agents Data2Story turns a CSV file into a verified interactive news article using seven AI agents Seven AI agents work together like a ..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "The-Decoder"
 
 frontend:

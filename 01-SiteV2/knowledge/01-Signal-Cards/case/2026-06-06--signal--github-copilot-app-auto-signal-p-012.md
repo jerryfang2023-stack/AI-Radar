@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["open_source_release"]
+  product_form: ["copilot", "developer_tool"]
+  delivery_model: ["enterprise_subscription"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["enterprise_plan"]
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "GitHub Copilot app: The agent-native desktop experience - The GitHub Blog GitHub Copilot app: The agent-native desktop experience - The GitHub Blog GitHub Copilot app: The agent-native desktop experience - The GitHub Bl..."
+  missing_fields: []
+
 signal_owner: "GitHub Copilot app"
 
 frontend:

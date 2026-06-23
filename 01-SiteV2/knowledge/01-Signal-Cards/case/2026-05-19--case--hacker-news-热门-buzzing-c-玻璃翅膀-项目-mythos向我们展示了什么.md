@@ -47,6 +47,22 @@ formal_tags:
   region: ["region-global"]
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["product_launch", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["security_compliance"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["technical_blog", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Hacker News 热门（buzzing.c：\"玻璃翅膀\"项目：Mythos向我们展示了什么 \"玻璃翅膀\"项目：Mythos向我们展示了什么 Cloudflare推出\"玻璃翅膀\"项目（Project Glasswing），通过Mythos展示了网络安全前沿模型的创新突破。该项目在Hacker News上获得108点热议，标志着在防护技术和模型效率方面的显著提升。Mythos作为核心组件，揭示了未来网络防御的智能化趋势，推动行业向更..."
+  missing_fields: ["product_form", "delivery_model"]
+
 related_change_cards: ["CHG-20260519-04"]
 related_sources: ["R-006"]
 internal:

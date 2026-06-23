@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "finance_team"]
+  team_or_function: ["sales", "engineering", "finance"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "partnership_integration", "governance_requirement"]
+  product_form: ["agent_workbench", "copilot"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["customer_metric", "partnership_announcement", "pricing_page"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "汇丰银行与Google Cloud扩大AI银行合作 汇丰银行与Google Cloud扩大AI银行合作 汇丰银行与Google Cloud签署多年合作协议，将在财富管理、金融犯罪风险管理和内部决策支持中部署AI工具，采用Gemini模型和Gemini Enterprise Agent平台。合作预计两年内支持超过200个AI用例，部分有望带来超1亿美元直接收益或效率提升。汇丰现有600多个AI用例，涵盖欺诈检测、交易监控、客户服务等。金..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Artificialintelligence-News"
 
 frontend:

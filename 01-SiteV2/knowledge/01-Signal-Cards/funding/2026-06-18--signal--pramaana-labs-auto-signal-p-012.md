@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "open_source_release", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "hallucination_risk", "latency_sensitive", "security_compliance"]
+  adoption_evidence: ["customer_metric", "pilot_or_poc"]
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Pramaana Labs 获得$27M 融资，押注模型部署和算力服务 Pramaana Labs 获 2700 万美元种子轮融资，用形式化验证提升 AI 可靠性 Pramaana Labs 宣布获得 2700 万美元种子轮融资，由 Khosla Ventures 领投，Accel、Boldcap 等跟投。该公司致力于将形式化验证引入 AI 系统，针对法律、药物发现和税务准备等高敏感领域，解决模型幻觉和错误问题。其系统在传统 LLM ..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Pramaana Labs"
 
 frontend:

@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-06-22
+last_updated: 2026-06-23
 use_when:
   - task startup
   - page change
@@ -18,16 +18,16 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.8.2-business-signal-core-source-hygiene |
-| Version name | Business Signal Core Source Hygiene |
+| Current version | V3.3.8.3-intelligence-map-opportunity-radar |
+| Version name | Intelligence Map Opportunity Radar |
 | Version layer | Minor |
-| Release date | 2026-06-22 |
-| Last modified at | 2026-06-23T15:25:00+08:00 |
+| Release date | 2026-06-23 |
+| Last modified at | 2026-06-23T19:35:00+08:00 |
 | Product version | V3.3 |
-| Main website version | SITE-V3.3.8.2 |
+| Main website version | SITE-V3.3.8.3 |
 | Business Signals column version | BSIG-V1.1.1-core-source-hygiene |
 | Enterprise AI lens version | EAI-V1.1.0-fde-lens-pool |
-| Intelligence Map column version | IMAP-V1.1.1-weekly-report-archive-list |
+| Intelligence Map column version | IMAP-V1.2.0-opportunity-radar |
 | Business Signals data contract | V3.3.6.3-business-source-artifact-aggregation |
 | Weekly Report content source | `01-SiteV2/content/08-report/` |
 | Operations backend version | OPS-V1.0.1 |
@@ -53,7 +53,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Hermes early handoff supervises the three lanes with lane-specific takeover windows: Community Intelligence publish at 09:30 after the 08:30 Windows collector, 08:45 publish check, and 09:00 Codex local fallback / repair window; First-Line Viewpoints RSS at 09:30 after the 08:30 local `builder-observation-daily-sync` collection/build/sync attempt and single 09:17 GitHub fallback; and Business Signals at 09:45 / 09:55. Hermes also records the afternoon follow-builders skill publish at 16:30.
 - Hermes early handoff is staged: 09:30 may dispatch Community publish and First-Line RSS while Business waits; 09:45 may dispatch Business while Community / First-Line only recheck; 09:55 is final review only and cannot start a new routine dispatch.
 - Intelligence Map and Dashboard follow the Business Signals data chain.
-- Intelligence Map is versioned independently as `IMAP-V1.1.1-weekly-report-archive-list`. Its weekly report subcolumn reads future weekly report content from `01-SiteV2/content/08-report/`, shows the current issue plus archive entries, and keeps unpublished archive slots visibly marked instead of linking to missing reports.
+- Intelligence Map is versioned independently as `IMAP-V1.2.0-opportunity-radar`. Its relationship graph keeps graph tags, while the standalone Entry Point Map and Product Pain Map use source-backed `opportunity_signals`. Its weekly report subcolumn still reads future weekly report content from `01-SiteV2/content/08-report/`, shows the current issue plus archive entries, and keeps unpublished archive slots visibly marked instead of linking to missing reports.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
@@ -83,7 +83,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | Operations Backend / 运营大后台 | `OPS-V1.0.1` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Operations console shell, navigation, module entry contracts, and backend-facing version ledger | HTML meta `wavesight-ops-console-version`, visible sidebar version, version ledger |
 | Topic Center / 选题中心 module | `V2.2.2-source-title` | Automated in the Business Signals daily PR chain at 08:57 Asia/Shanghai; regenerated after the Business frontstage gate passes and deployed through GitHub Pages after auto-merge | `business-signals + first-line-viewpoints + community-intelligence` | `topic-center.json/js`, `topic-center-hermes.json/md`, and local `04-AIP/01-选题库/<date>-每日选题.md` when local sync can run |
 | Business Signals / 商业信号 column | `BSIG-V1.1.1-core-source-hygiene` | Published through the main GitHub Pages frontstage; keeps Top10 as the primary desk and adds the 企业AI化 secondary lens | V3.3.6.3 Card data contract plus Enterprise AI lens rendering plus Core Pool source hygiene gates | `v3-data-observation.html`, `v3-data-observation-desk.json` meta, version ledger |
-| Intelligence Map / 情报地图 column | `IMAP-V1.1.1-weekly-report-archive-list` | Published through the main GitHub Pages frontstage. Future weekly report issues must be sourced from `01-SiteV2/content/08-report/` before page generation. The weekly section shows current and archive weekly report cards with explicit pending states for missing archive issues. | Business Signals relationship graph + Weekly Business Change Radar content | `intelligence-map.html`, `weekly-ai-business-change-radar.html`, `weekly-ai-business-change-radar-2026-06-15.html`, `assets/weekly-report.css`, `assets/v3-data-observation-desk.css`, `01-SiteV2/content/08-report/*.md` |
+| Intelligence Map / 情报地图 column | `IMAP-V1.2.0-opportunity-radar` | Published through the main GitHub Pages frontstage. The relationship graph remains tag/edge based; the Entry Point Map and Product Pain Map are standalone opportunity radar panels backed by `opportunity_signals` and the weekly radar updater skill. Future weekly report issues must still be sourced from `01-SiteV2/content/08-report/` before page generation. | Business Signals relationship graph + source-backed opportunity_signals + Weekly Business Change Radar content | `intelligence-map.html`, `weekly-ai-business-change-radar.html`, `weekly-ai-business-change-radar-2026-06-15.html`, `assets/weekly-report.css`, `assets/v3-data-observation-desk.css`, `agent-workflow/skills/guanlan-opportunity-radar-updater/`, `01-SiteV2/content/08-report/*.md` |
 
 ## Current Sources Of Truth
 
@@ -131,6 +131,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `SITE-V3.3.8.3-freeze-intelligence-map-opportunity-radar-20260623` | Intelligence Map / Opportunity Radar / Skill Ops | 2026-06-23 | 2026-06-23T19:35:00+08:00 | SITE-V3.3.8.3 / IMAP-V1.2.0-opportunity-radar | Signal Candidates, 时间聚集, or Tag 聚合 modules returning; Entry Point Map or Product Pain Map being driven by old `formal_tags` or generic AI-generated labels; relationship graph being converted to `opportunity_signals`; weekly opportunity radar updates running without the `guanlan-opportunity-radar-updater` skill rules | `node --check 01-SiteV2/site/assets/v3-data-observation-desk.js` + `node agent-workflow/tools/frontstage-regression-gate.mjs` + `npm run validate:guanlan-skills` + GitHub Pages deploy |
 | `V3.3.8.2-freeze-business-core-source-hygiene-20260622` | Business Signals / Core Pool / Card generation | 2026-06-22 | 2026-06-22T14:35:00+08:00 | SITE-V3.3.8.2 / BSIG-V1.1.1-core-source-hygiene / EAI-V1.1.0-fde-lens-pool | `source_level` or `acquisition_source_level` used as ranking/gating/downgrade criteria; generic FDE role/service pages, job posts, role explainers, funding roundups, generic funding commentary, broad lists, stale sources, or search-query artifacts promoted into Core Pool or Cards; fixing daily quantity gaps by relaxing Core Pool quality gates | monitor quality loop + daily production chain post-monitor/pre-commit + pool-to-card dedupe + business frontstage gate + source-first/frontstage regression |
 | `V3.3.8-freeze-enterprise-ai-transformation-20260617` | Business Signals / 企业AI化 | 2026-06-17 | 2026-06-17T16:00:05+08:00 | SITE-V3.3.8-enterprise-ai-transformation / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.0.0-enterprise-ai-transformation | 企业AI化 reverting to the old FDE Lens name; multi-column case cards; visible "落地判断" / "老板追问" diagnostic fields; backend-only fields exposed in the public table; treating Enterprise AI as a fourth Card type | business frontstage gate + syntax quality gate + visual smoke + GitHub Pages deploy |
 | `topic-center-v2.2.2-freeze-source-title-20260616` | Dashboard / Topic Center | 2026-06-16 | 2026-06-16T21:35:00+08:00 | V2.2.2-source-title / OPS-V1.0.1 | Topic Center list titles being generated boss judgments; `title` / `spreadTitle` storing AI interpretation instead of original source titles; Obsidian daily topic files carrying judgment titles as headings | `node --check agent-workflow/tools/build-topic-center-data.mjs` + same-date title scan + `node agent-workflow/tools/frontstage-regression-gate.mjs` + GitHub Pages deploy |
@@ -159,8 +160,9 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| IMAP-V1.1.1-weekly-report-archive-list | 2026-06-23T15:25:00+08:00 | Updates the Intelligence Map weekly report subcolumn from a single current report card to a three-entry weekly archive list, adds stable selector routing and a 2026-06-15 archive detail page, and marks missing archive weeks as pending instead of linking to nonexistent reports. | current intelligence map column |
-| SITE-V3.3.8.2 / BSIG-V1.1.1-core-source-hygiene / EAI-V1.1.0-fde-lens-pool | 2026-06-22T14:35:00+08:00 | Tightens Business Signals Core Pool source hygiene: source labels are traceability-only; generic FDE role/service pages, job posts, role explainers, broad lists, funding roundups, generic funding commentary, stale sources, and search-query artifacts cannot satisfy Core Pool / Card quantity gaps. | current |
+| SITE-V3.3.8.3 / IMAP-V1.2.0-opportunity-radar | 2026-06-23T19:35:00+08:00 | Rebuilds the Intelligence Map opportunity area around two source-backed startup radar panels: Entry Point Map and Product Pain Map. Relationship graph stays on graph tags; heat and opportunity panels use `opportunity_signals`; the new `guanlan-opportunity-radar-updater` skill defines weekly update cadence and evidence boundaries. | current |
+| IMAP-V1.1.1-weekly-report-archive-list | 2026-06-23T15:25:00+08:00 | Updates the Intelligence Map weekly report subcolumn from a single current report card to a three-entry weekly archive list, adds stable selector routing and a 2026-06-15 archive detail page, and marks missing archive weeks as pending instead of linking to nonexistent reports. | upgraded |
+| SITE-V3.3.8.2 / BSIG-V1.1.1-core-source-hygiene / EAI-V1.1.0-fde-lens-pool | 2026-06-22T14:35:00+08:00 | Tightens Business Signals Core Pool source hygiene: source labels are traceability-only; generic FDE role/service pages, job posts, role explainers, broad lists, funding roundups, generic funding commentary, stale sources, and search-query artifacts cannot satisfy Core Pool / Card quantity gaps. | current Business Signals baseline; site upgraded |
 | SITE-V3.3.8.1 / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.1.0-fde-lens-pool | 2026-06-19T16:10:00+08:00 | Splits Enterprise AI / FDE into an independent Lens Pool fed by Raw / Pool evidence while preserving Business Signals Top10 and Card rules. Adds `enterprise-ai-fde.json`, source-backed FDE detail checks, and Obsidian `content/09-fde` sync from the new pool. | upgraded |
 | SITE-V3.3.8-enterprise-ai-transformation / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.0.0-enterprise-ai-transformation | 2026-06-17T16:00:05+08:00 | Adds the 企业AI化 secondary lens to Business Signals for FDE-style implementation monitoring and consulting-relevant reading. The public table uses one case per row, keeps `AI化动作` and `Tags`, and hides diagnostic fields that do not help boss-facing decisions. | upgraded |
 | OPS-V1.0.1 / V2.2.2-source-title | 2026-06-16T21:35:00+08:00 | Fixes Topic Center title semantics: public list titles and Obsidian daily headings now use the primary original source title; boss-facing judgment remains only in core judgment, pain point, money line, angles, and action fields. | current operations backend / current backend column |

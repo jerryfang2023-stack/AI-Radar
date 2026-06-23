@@ -39,6 +39,21 @@ formal_tags:
   region: ["region-china"]
   source: ["source-news-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "research_paper", "first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍 月之暗面（Moonshot AI）寻求 300 亿美元估值，较 2025 年底增长超 6 倍 月之暗面（Moonshot AI），Kimi 聊天机器人母公司，正寻求在新一轮融资中获得最高 300 亿美元的估值，这一数字是 2025 年底公司估值的 6 倍以上。"
+  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Moonshot AI"
 
 frontend:

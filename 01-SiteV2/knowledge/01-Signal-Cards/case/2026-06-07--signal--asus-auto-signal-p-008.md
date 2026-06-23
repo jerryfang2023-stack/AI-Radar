@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["healthcare_provider", "operations_team", "enterprise_ai_owner"]
+  team_or_function: ["healthcare_operations", "operations"]
+  specific_task: ["medical_documentation", "logistics_coordination"]
+  business_action: ["customer_deployment", "partnership_integration", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026 ASUS Brings Enterprise - to - Edge AI to Life at Computex 2026 2026-06-02T06:15:00Z / query=model release inference cost reduction enterprise adoption / int..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "ASUS"
 
 frontend:

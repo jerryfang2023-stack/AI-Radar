@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["engineering", "it_security"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "pricing_change", "acquisition", "governance_requirement"]
+  product_form: ["api", "model_gateway", "evaluation_platform"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "security_compliance"]
+  adoption_evidence: ["deployment_scale", "enterprise_plan"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "OpenRouter是托管路由网络，买credits后通过一个API路由至70+供应商，自动故障转移，无需自有密钥；覆盖300+模型（含20+免费），按用量收费（零加成+5.5%平台费，首100万免费），支持零数据保留和欧盟路由。Portkey是AI控制平面（2026年被Palo Alto收购），置于用户密钥之上，增加治理、提示管理、护栏和可观测性；提供1600+ LLM统一API，按日志计费（Developer免费，Producti..."
+  missing_fields: []
+
 signal_owner: "Openrouter"
 
 frontend:

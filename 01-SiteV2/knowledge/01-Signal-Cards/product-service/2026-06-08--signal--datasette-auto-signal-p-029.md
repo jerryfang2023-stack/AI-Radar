@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "datasette-agent-edit 0.1a0 发布 datasette-agent-edit 0.1a0 发布 datasette-agent-edit 0.1a0 插件发布，为 Datasette Agent 提供智能体编辑文本的核心工具。其设计借鉴 Claude text editor，实现三个工具：view（按行号查看文件片段）、str_replace（精确替换唯一字符串）、insert（在指定行号后插入文本）。该插件作..."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "datasette"
 
 frontend:

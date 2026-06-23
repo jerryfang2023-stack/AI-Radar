@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["product_launch"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "在联想集团与咪咕视频联合推出的《世界杯预测人机大战》活动中， 12 家大模型也给出了完全一致的判断：全部预测乌拉圭获胜 。"
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Ithome"
 
 frontend:

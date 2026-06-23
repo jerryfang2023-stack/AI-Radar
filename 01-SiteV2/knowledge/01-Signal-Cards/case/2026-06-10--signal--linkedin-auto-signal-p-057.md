@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["open_source_release", "governance_requirement"]
+  product_form: ["agent_workbench", "copilot", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: []
+  source_evidence_type: ["community_post"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "This open-source kit lets engineers build powerful AI agents and multi-agent workflows in .NET and Python, making complex ..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "Linkedin"
 
 frontend:

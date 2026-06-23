@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: []
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT 案例：AI 进入企业智能体协作流程 Claude Fable 5 在 FrontierMath 最难题目上超越 GPT-5.5 13 个百分点 # Claude Fable 5 在 FrontierMath 最难题目上超越 GPT 案例：AI 进入企业智能体协作流程 ## 新闻事实 Anthropic 的 Claude Fable 5 在 Fronti..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Claude Fable 5 在 FrontierMath 最难题目上超越 GPT"
 
 frontend:

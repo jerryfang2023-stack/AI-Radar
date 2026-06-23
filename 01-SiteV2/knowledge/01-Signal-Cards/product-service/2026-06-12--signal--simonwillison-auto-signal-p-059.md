@@ -45,6 +45,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["product_launch", "open_source_release"]
+  product_form: ["api"]
+  delivery_model: ["open_source_commercial", "api_usage_based"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Simonwillison 推出 Agent 工作流能力，切入地产和建筑设计工作流 Datasette 1.0a33 发布 Datasette 1.0a33 发布，这是迈向稳定版 1.0 的重要步骤。该版本将在 1.0a3 中引入的 `？_extra=` 模式从表格扩展至查询和行数据，该模式现已加入文档。为演示新特性，作者使用 Claude Code 中的 Claude Fable 5 制定计划，再由 Codex Desktop 中的..."
+  missing_fields: ["adoption_evidence"]
+
 signal_owner: "Simonwillison"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["partnership_integration", "open_source_release"]
+  product_form: []
+  delivery_model: ["open_source_commercial"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["partnership_announcement"]
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "英伟达与斗山集团合作推进物理AI及AI工厂基础设施 英伟达与斗山集团合作推进物理AI及AI工厂基础设施 英伟达与斗山集团扩大合作，覆盖斗山机器人、斗山山猫、斗山能源及斗山电子材料四大板块。斗山机器人将集成英伟达Isaac Sim、Isaac Lab、Cosmos世界基础模型、Newton物理引擎及Jetson Thor，推进Agentic Robot OS，探索卸垛、打磨等参考用例及双臂/人形机器人。斗山山猫计划将物理AI技术用于建筑..."
+  missing_fields: ["specific_task", "product_form"]
+
 signal_owner: "Nvidia"
 
 frontend:

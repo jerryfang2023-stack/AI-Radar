@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: ["knowledge_base_qa"]
+  business_action: ["customer_deployment"]
+  product_form: ["rag_knowledge_base"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "permission_boundary", "data_silo"]
+  adoption_evidence: []
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Organizations building agentic AI applications need secure, reliable, and up-to-date access to..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "Base"
 
 frontend:

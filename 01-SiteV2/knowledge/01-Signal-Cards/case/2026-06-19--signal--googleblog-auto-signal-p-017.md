@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "governance_requirement"]
+  product_form: ["api"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "data_silo", "security_compliance"]
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Google 庆祝A2A协议发布一周年：协作智能体生态 Google 庆祝A2A协议发布一周年：协作智能体生态 Google 庆祝Agent-to-Agent（A2A）协议发布一周年。A2A专为生成式AI设计，相比传统REST API提供安全边界、零上下文污染、动态自主性和工作负载分布四大架构优势。应用实例FoldRun是一个独立的智能体接口，可在Gemini Enterprise或Gemini CLI等A2A兼容环境中部署，自动管理..."
+  missing_fields: ["adoption_evidence"]
+
 signal_owner: "Googleblog"
 
 frontend:

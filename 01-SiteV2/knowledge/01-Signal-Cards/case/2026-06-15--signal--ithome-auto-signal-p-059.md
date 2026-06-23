@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "legal_team"]
+  team_or_function: ["sales", "legal_compliance"]
+  specific_task: ["sales_lead_research", "contract_review"]
+  business_action: ["customer_deployment", "partnership_integration", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["hallucination_risk"]
+  adoption_evidence: ["pilot_or_poc"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Ithome 案例：AI 进入模型部署和算力调用 AI 幻觉让法官头疼，韩国计划向滥用 AI 的律师开罚单 韩国法院行政处推动修订法案，计划对提交虚假法条和判例的律师处以罚款。因 AI 大模型产生幻觉，律师在法律文书中引用不存在的\"虚假判例\"现象激增，首尔、大邱、蔚山等多地法院出现典型案例，有律师承认使用谷歌 Gemini 检索后未核对内容。今年 2 月，韩国司法信息公开门户新增案例编号核验功能，并向法官发放含专用提示词的虚假判例甄别..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Ithome"
 
 frontend:

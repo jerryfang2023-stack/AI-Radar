@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "pricing_change"]
+  product_form: ["model_gateway"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Engine 案例：AI 进入模型部署和算力调用 DigitalOcean Launches Inference Engine with New Capabilities for Production AI, Including Inference Router for Efficient Scaling of Agentic Workloads Built alongside early design partners, the I..."
+  missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Engine"
 
 frontend:

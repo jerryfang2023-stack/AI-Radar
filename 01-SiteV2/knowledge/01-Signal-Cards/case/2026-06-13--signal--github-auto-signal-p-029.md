@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["customer_deployment", "open_source_release"]
+  product_form: ["agent_workbench", "developer_tool"]
+  delivery_model: ["open_source_commercial"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "GitHub 案例：AI 进入销售和收入团队流程 GitHub - CloudGeometry/langbuilder at LangBuilder_V1.2 · GitHub # LangBuilder AI Agent Platform — Open Source, Enterprise-Ready, Yours to Own - Deploy on your cloud, VPC, or even OnPrem - No-cod..."
+  missing_fields: ["adoption_evidence"]
+
 signal_owner: "GitHub"
 
 frontend:

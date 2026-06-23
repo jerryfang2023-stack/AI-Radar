@@ -1,0 +1,159 @@
+{
+  "schema_version": "opportunity-signals-v1",
+  "purpose": "Source-near opportunity fields for AI-native startup and FDE analysis. These fields sit beside formal_tags and should not be used as broad topic labels.",
+  "fields": {
+    "buyer_or_user": {
+      "role": "Who appears to buy, deploy, operate, or directly use the AI system.",
+      "values": {
+        "enterprise_ai_owner": "Enterprise AI / transformation owner",
+        "it_security_team": "IT, security, governance, or platform team",
+        "sales_team": "Sales or revenue team",
+        "customer_support_team": "Customer support or contact-center team",
+        "engineering_team": "Engineering or developer team",
+        "legal_team": "Legal, compliance, or contract team",
+        "finance_team": "Finance, billing, or accounting team",
+        "procurement_team": "Procurement, sourcing, or bidding team",
+        "healthcare_provider": "Hospital, clinic, payer, or healthcare operator",
+        "insurance_team": "Insurance claims, underwriting, or operations team",
+        "operations_team": "Operations, logistics, supply-chain, or back-office team",
+        "content_team": "Content, marketing, media, or CMS team",
+        "smb_owner": "SMB owner or small team"
+      }
+    },
+    "team_or_function": {
+      "role": "The business function where work is changing.",
+      "values": {
+        "sales": "Sales / revenue operations",
+        "customer_support": "Customer support / contact center",
+        "engineering": "Engineering / software development",
+        "legal_compliance": "Legal / compliance",
+        "finance": "Finance / accounting",
+        "procurement": "Procurement / sourcing / bidding",
+        "operations": "Operations / supply chain / back office",
+        "marketing_content": "Marketing / content operations",
+        "it_security": "IT / security / platform governance",
+        "healthcare_operations": "Healthcare operations",
+        "insurance_operations": "Insurance operations"
+      }
+    },
+    "specific_task": {
+      "role": "The concrete workflow step or job-to-be-done mentioned or strongly implied by the source.",
+      "values": {
+        "customer_ticket_triage": "Ticket triage, routing, QA, or support resolution",
+        "sales_lead_research": "Lead research, account research, or pipeline enrichment",
+        "sales_briefing": "Sales briefing, call prep, or revenue-team coordination",
+        "contract_review": "Contract review, clause extraction, or legal document work",
+        "rfp_response": "RFP, bid, or proposal response",
+        "knowledge_base_qa": "Enterprise knowledge-base Q&A or retrieval workflow",
+        "code_review": "Code review, coding agent, or software change workflow",
+        "internal_tool_building": "Building internal tools, apps, or automations",
+        "model_deployment": "Model deployment, inference, routing, or production rollout",
+        "cost_monitoring": "AI cost, usage, rate-limit, or billing monitoring",
+        "permission_audit": "Permissions, audit logs, access review, or agent governance",
+        "medical_documentation": "Clinical documentation, imaging, or healthcare workflow",
+        "insurance_claim_review": "Insurance claim review, adjudication, or underwriting",
+        "procurement_supplier_screening": "Supplier screening, procurement intake, or sourcing",
+        "content_workflow": "Content creation, CMS, publishing, or media workflow",
+        "data_analysis_query": "Data analysis, analytics query, or business intelligence",
+        "call_transcription": "Call transcription, summarization, or voice workflow",
+        "logistics_coordination": "Shipment, logistics, dispatch, inventory, or supply-chain coordination"
+      }
+    },
+    "business_action": {
+      "role": "The observable business move in the source.",
+      "values": {
+        "product_launch": "Product, feature, model, API, or platform launch",
+        "customer_deployment": "Customer deployment, rollout, pilot, case study, or adoption",
+        "funding_round": "Funding, financing, or investment round",
+        "partnership_integration": "Partnership, integration, channel, or ecosystem move",
+        "procurement_signal": "Procurement, public contract, RFP, or bidding signal",
+        "pricing_change": "Pricing, packaging, cost, usage-limit, or billing change",
+        "acquisition": "Acquisition, merger, or team purchase",
+        "open_source_release": "Open-source release or repository launch",
+        "research_benchmark": "Benchmark, paper, evaluation, or research result",
+        "governance_requirement": "Governance, regulation, security, or compliance requirement",
+        "hiring_fde": "FDE, solution engineer, or customer-embedded delivery hiring",
+        "failure_postmortem": "Shutdown, rollout failure, incident, or postmortem"
+      }
+    },
+    "product_form": {
+      "role": "The commercial shape a founder could learn from.",
+      "values": {
+        "agent_workbench": "Agent workbench or multi-agent collaboration surface",
+        "copilot": "Copilot or assistant embedded into an existing workflow",
+        "api": "API, SDK, or developer-facing service",
+        "model_gateway": "Model gateway, router, proxy, or inference control layer",
+        "rag_knowledge_base": "RAG, enterprise search, memory, or knowledge-base layer",
+        "vertical_saas": "Vertical SaaS application for a named industry or function",
+        "developer_tool": "Developer tool, coding agent, IDE, or software lifecycle tool",
+        "workflow_automation": "Workflow automation or process orchestration product",
+        "fde_service": "Forward-deployed engineering or implementation service",
+        "managed_service": "Managed service or done-for-you operations",
+        "evaluation_platform": "Evaluation, benchmarking, observability, or testing platform",
+        "browser_or_desktop_tool": "Browser, desktop, or local productivity tool"
+      }
+    },
+    "delivery_model": {
+      "role": "How the value appears to be packaged or delivered.",
+      "values": {
+        "self_serve_saas": "Self-serve SaaS",
+        "enterprise_subscription": "Enterprise subscription",
+        "api_usage_based": "API or usage-based pricing",
+        "project_based_service": "Project-based implementation service",
+        "fde_delivery": "FDE or customer-embedded delivery",
+        "managed_service": "Managed service",
+        "open_source_commercial": "Open-source with commercial layer",
+        "consulting_diagnostic": "Consulting, audit, or diagnostic entry product",
+        "template_pack": "Template, playbook, or packaged workflow"
+      }
+    },
+    "pain_or_constraint": {
+      "role": "The constraint that may create willingness to pay.",
+      "values": {
+        "workflow_integration": "Integration into existing workflow or systems",
+        "api_cost_spike": "AI usage cost, inference cost, or billing pressure",
+        "permission_boundary": "Permissions, data access, or responsibility boundary",
+        "audit_log_required": "Audit log, traceability, or compliance record required",
+        "data_silo": "Data silo, fragmented context, or missing knowledge layer",
+        "hallucination_risk": "Hallucination, accuracy, or trust risk",
+        "human_review_required": "Human review, approval, or expert-in-the-loop required",
+        "latency_sensitive": "Latency, reliability, or production performance constraint",
+        "model_routing_complexity": "Model routing, vendor selection, or multi-model operations",
+        "security_compliance": "Security, privacy, or regulatory compliance",
+        "deployment_failure": "Deployment, rollout, or change-management failure",
+        "context_management": "Context, memory, or state management",
+        "evaluation_gap": "Evaluation, QA, testing, or measurement gap"
+      }
+    },
+    "adoption_evidence": {
+      "role": "What kind of adoption evidence is actually visible from the source.",
+      "values": {
+        "named_customer": "Named customer or client appears",
+        "case_study": "Case study, customer story, or deployment write-up",
+        "customer_metric": "Customer outcome metric, usage number, or quantified result",
+        "deployment_scale": "Deployment scale, seats, locations, users, or volume disclosed",
+        "partnership_announcement": "Partnership or integration announcement",
+        "procurement_contract": "Procurement contract, RFP, tender, or public award",
+        "pricing_page": "Pricing page or published price",
+        "enterprise_plan": "Enterprise plan, security plan, or governance package",
+        "usage_growth": "Usage growth, ARR, revenue, or customer-count growth",
+        "pilot_or_poc": "Pilot, POC, trial, or early rollout",
+        "third_party_report": "Third-party report, industry report, or analyst evidence"
+      }
+    },
+    "source_evidence_type": {
+      "role": "The source form that supports the field assignment.",
+      "values": {
+        "first_party_announcement": "Company announcement, press release, docs, or blog",
+        "first_party_case": "First-party case study or customer story",
+        "funding_news": "Funding news or investor announcement",
+        "business_media": "Business or industry media article",
+        "industry_report": "Industry report, analyst report, or institutional report",
+        "technical_blog": "Technical blog, developer doc, or engineering post",
+        "community_post": "Community, forum, or social post",
+        "research_paper": "Research paper, benchmark, or dataset",
+        "regulatory_or_procurement": "Regulatory, procurement, government, or tender source"
+      }
+    }
+  }
+}

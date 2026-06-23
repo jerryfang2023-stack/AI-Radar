@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "context_management"]
+  adoption_evidence: []
+  source_evidence_type: ["research_paper"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "下一代投机解码：DFlash 与 Spec V2 发布 AI 基础设施能力，切入模型部署和算力服务 下一代投机解码：DFlash 与 Spec V2 Z Lab、Modal 与 SGLang 团队联合发布 DFlash 投机解码模型和 SGLang 的默认 Spec V2 引擎。DFlash 采用块扩散+KV 注入并行生成整块 draft token，在 Qwen 3.5 397B-A17B（BF16）的 HumanEval 数据集上..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "下一代投机解码：DFlash 与 Spec V2"
 
 frontend:

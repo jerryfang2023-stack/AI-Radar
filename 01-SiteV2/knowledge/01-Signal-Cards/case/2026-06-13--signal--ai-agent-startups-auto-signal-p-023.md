@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["funding_round", "partnership_integration"]
+  product_form: []
+  delivery_model: ["template_pack"]
+  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  adoption_evidence: ["partnership_announcement"]
+  source_evidence_type: ["funding_news", "community_post"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI Agent Startups 案例：AI 进入销售和收入团队流程 AI Agent Startups: Rewriting VC Funding Playbook, Reaching $100 ..."
+  missing_fields: ["product_form"]
+
 signal_owner: "AI Agent Startups"
 
 frontend:

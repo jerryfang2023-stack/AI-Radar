@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "insurance_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering", "insurance_operations"]
+  specific_task: ["internal_tool_building", "insurance_claim_review"]
+  business_action: ["product_launch", "pricing_change", "open_source_release", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["research_paper", "first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Berkeley 推出 Agent 工作流能力，切入地产和建筑设计工作流 伯克利RDI发布Agents' Last Exam基准 2026年6月，伯克利RDI发布Agents' Last Exam（ALE）基准，包含1，500余项源于真实工作的任务，覆盖55个非体力职业。对Fable 5、GPT-5.5、Composer 2.5等前沿智能体的测评显示：在最困难层级成功率均为0%；整体任务表现接近，但单任务成本差异巨大（Fable 5约..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Berkeley"
 
 frontend:

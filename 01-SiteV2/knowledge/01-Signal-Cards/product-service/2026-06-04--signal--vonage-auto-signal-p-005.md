@@ -46,6 +46,22 @@ formal_tags:
   region: []
   source: ["source-business-media"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "healthcare_provider"]
+  team_or_function: ["sales", "customer_support", "healthcare_operations"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage", "medical_documentation"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["vertical_saas"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["enterprise_plan"]
+  source_evidence_type: ["funding_news", "first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Vonage 发布 AI 能力，指向销售和收入团队流程 Vonage Launches Industry-Specific AI Agents for Healthcare ..."
+  missing_fields: ["delivery_model"]
+
 event: "Vonage 发布新的 AI 能力，面向销售和收入团队流程。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

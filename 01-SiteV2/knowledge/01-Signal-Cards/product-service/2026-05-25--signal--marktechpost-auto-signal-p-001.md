@@ -50,6 +50,22 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: ["model_gateway"]
+  delivery_model: ["open_source_commercial"]
+  pain_or_constraint: ["context_management", "evaluation_gap"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "微软研究院推出Webwright终端原生浏览器代理框架 微软研究院推出Webwright终端原生浏览器代理框架 微软研究院近日发布了Webwright，这是一个终端原生的浏览器代理框架。它通过可复用的Playwright脚本取代传统点击追踪的网页自动化方式，基于包含三个模块的单一代理循环构建，代码量约1000行。由GPT-5.4驱动的Webwright在长周期Odysseys基准测试中取得60.1%的得分，较基线模型的33.5%提升近..."
+  missing_fields: []
+
 event: "Marktechpost 发布新的 AI 能力，面向模型部署和算力调用。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了模型部署和算力调用：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

@@ -59,6 +59,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "insurance_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "insurance_operations", "it_security"]
+  specific_task: ["sales_lead_research", "insurance_claim_review"]
+  business_action: ["customer_deployment", "governance_requirement"]
+  product_form: ["model_gateway"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "欧洲保险公司部署 Druid AI Agent 处理理赔通知 Top European insurer accelerates claims notification with Druid AI agents A European insurer uses Druid AI agents to automate claims notification workflows."
+  missing_fields: ["delivery_model"]
 ---
 
 # 欧洲保险公司部署 Druid AI Agent 处理理赔通知

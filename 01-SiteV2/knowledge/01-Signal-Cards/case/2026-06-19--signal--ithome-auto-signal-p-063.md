@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["engineering", "it_security"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["product_launch", "pricing_change", "open_source_release", "research_benchmark"]
+  product_form: ["copilot", "model_gateway", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike"]
+  adoption_evidence: ["customer_metric", "deployment_scale", "pricing_page"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI 账单失控：AT&T、Meta 等巨头急刹车，从\"疯狂消耗\"到\"严苛限制 AI 账单失控：AT&T、Meta 等巨头急刹车，从\"疯狂消耗\"到\"严苛限制\" 科技公司从鼓励无限使用 AI（tokenmaxxing）转向严格限制（tokenminimizing）。2025 年尚在鼓励，2026 年面对每月每员工高达 7500 美元的账单，AT&T、Meta、Uber、微软等纷纷踩刹车。Uber 四个月花光全年 AI 编码预算，将人均月上..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Ithome"
 
 frontend:

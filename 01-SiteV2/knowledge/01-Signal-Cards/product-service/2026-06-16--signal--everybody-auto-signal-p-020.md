@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "open_source_release", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "human_review_required", "security_compliance"]
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Everybody 推出 Agent 工作流能力，切入模型部署和算力服务 美国政府指责Anthropic，安全专家称不可破解的LLM不现实 美国政府官员指责Anthropic无视特朗普网络安全行政令，未等指定审查机构设立就擅自发布Fable 5，并指控其明知存在jailbreak风险却未披露。但安全专家指出，任何LLM都可以被破解，OpenAI也曾警告提示注入可能永远无法完全解决。超过100名安全专家和高管联名致信商务部，要求解除对F..."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Everybody"
 
 frontend:

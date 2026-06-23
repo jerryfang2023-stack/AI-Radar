@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["context_management"]
+  adoption_evidence: []
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "GLM-5.2：开放智能体的阶跃变化 GLM-5.2：开放智能体的阶跃变化 Z.ai 于 6 月 13 日向 GLM Coding Plan 成员发布 GLM-5.2，6 月 16 日开源 MIT 许可权重。该模型在 Arena 智能体排行榜上成为唯一与 OpenAI 和 Anthropic 最新模型匹敌的开放模型，匹配 Opus 4.8 无思考模式；在 Design Arena 中甚至超越 Claude Fable。作者认为这是自 ..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "GLM"
 
 frontend:

@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "customer_support"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage"]
+  business_action: ["funding_round", "customer_deployment", "partnership_integration", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["partnership_announcement", "usage_growth"]
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Parloa 获 3.5 亿美元融资，强化企业客服 Agent 合作 Parloa deploys $350M with SAP, Microsoft, OpenAI partnerships Parloa deploys $350M with SAP, Microsoft, OpenAI partnerships Parloa, the Berlin-founded AI agent management platform valu..."
+  missing_fields: ["product_form", "delivery_model"]
+
 event: "Parloa 把 AI 用进销售和收入团队流程。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

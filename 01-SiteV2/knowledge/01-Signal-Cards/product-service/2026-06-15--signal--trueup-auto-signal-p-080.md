@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["sales", "it_security"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["funding_round", "product_launch", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "TrueUp 发布 AI 基础设施能力，切入销售线索和收入团队协作 AI裁员浪潮成为火药桶 今年科技公司已累计裁员约15万人，日均974人，速度比去年快44%；上月裁员近4万创两年新高，AI连续三个月被列为裁员首要原因。Block近半数员工被裁后，CEO Jack Dorsey否认AI是根源，Marc Andreessen则称AI只是\"银弹借口\"。Uber裁撤23%人事部门，但此前CTO透露AI编码预算四个月内耗尽。与此同时，AI芯片..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "TrueUp"
 
 frontend:

@@ -40,6 +40,22 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_briefing"]
+  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["funding_news", "regulatory_or_procurement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "| THE D[AI]LY BRIEF On May 19, 2026, OpenAI moved a piece on the enterprise AI board that procurement teams have been waiting two years to see."
+  missing_fields: ["product_form", "delivery_model"]
+
 event: "Capacity 把 AI 用进销售和收入团队流程。"
 business_meaning: "企业评估这类产品时，不应只看模型能力，还要看它接入哪个流程、由谁买单、出了问题谁负责。"
 why_selected: "这条变化值得看，是因为它把竞争点放到了销售和收入团队流程：客户是否买单，要看流程结果、交付速度和团队协作有没有实际改善。"

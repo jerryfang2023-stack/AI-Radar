@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["funding_round"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Factorial 完成 1.5 亿美元 D 轮融资，估值 25 亿美元，成欧洲最具价值 AI 创业公司之一 Factorial Raises $150M Series D, Reaches $2.5 Billion Valuation to Become One of the Most Valuable AI Scale-Ups in Europe - General Catalyst leads $150M equity inve..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Factorial"
 
 frontend:

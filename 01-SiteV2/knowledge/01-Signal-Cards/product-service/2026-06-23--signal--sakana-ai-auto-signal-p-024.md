@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "research_benchmark"]
+  product_form: ["api"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["evaluation_gap"]
+  adoption_evidence: ["customer_metric", "deployment_scale"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Sakana AI 推出 Fugu：动态协调多 LLM 的系统，匹配 Anthropic 顶级模型性能 Sakana AI 推出 Fugu：动态协调多 LLM 的系统，匹配 Anthropic 顶级模型性能 日本 AI 初创公司 Sakana AI 发布 Fugu，一个能动态协调多个大语言模型的系统。Fugu 本身也是一个语言模型，可从可替换的智能体池中调用其他 LLM（含自身副本），通过单一 OpenAI 兼容 API 提供服务。F..."
+  missing_fields: ["specific_task"]
+
 signal_owner: "Sakana AI"
 
 frontend:

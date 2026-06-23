@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "insurance_team", "operations_team"]
+  team_or_function: ["sales", "insurance_operations", "operations"]
+  specific_task: ["sales_lead_research", "insurance_claim_review", "logistics_coordination"]
+  business_action: ["customer_deployment", "partnership_integration", "governance_requirement"]
+  product_form: []
+  delivery_model: ["project_based_service", "consulting_diagnostic"]
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: ["enterprise_plan", "pilot_or_poc"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "/ query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem Segments Wealth Management Retail Banking Small Business Banking Insurance Private Banking Corporate Bank..."
+  missing_fields: ["product_form"]
+
 signal_owner: "Neurons-Lab"
 
 frontend:

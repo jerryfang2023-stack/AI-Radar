@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["healthcare_provider", "enterprise_ai_owner"]
+  team_or_function: ["healthcare_operations"]
+  specific_task: ["medical_documentation"]
+  business_action: ["funding_round", "customer_deployment"]
+  product_form: ["workflow_automation"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI SaaS Market Size, Industry Share, Forecast, 2034 AI SaaS Market Size, Industry Share, Forecast, 2034 AI SaaS platforms support use cases such as customer analytics, process automation, fraud detection, personalizatio..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Fortunebusinessinsights"
 
 frontend:

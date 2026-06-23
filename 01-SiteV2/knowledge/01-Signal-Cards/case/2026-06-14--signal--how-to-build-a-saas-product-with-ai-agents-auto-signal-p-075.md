@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: []
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: ["enterprise_plan"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "How to Build a SaaS Product with AI Agents 案例：AI 进入地产开发和建筑设计流程 How to Build a SaaS Product with AI Agents: Lessons from a $1M ..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "How to Build a SaaS Product with AI Agents"
 
 frontend:

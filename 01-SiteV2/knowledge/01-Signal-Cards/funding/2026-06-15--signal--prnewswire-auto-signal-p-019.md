@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Prnewswire 获得$30M 融资，押注地产和建筑设计工作流 Dapple Closes $30M Seed to Scale the Enterprise OS Cloud # Prnewswire 获得$30M 融资，押注地产和建筑设计工作流 ## 新闻事实 NEW YORK 获得 $30 m seed 融资。"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Prnewswire"
 
 frontend:

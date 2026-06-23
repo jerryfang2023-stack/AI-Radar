@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["finance_team", "enterprise_ai_owner"]
+  team_or_function: ["finance"]
+  specific_task: ["knowledge_base_qa"]
+  business_action: ["customer_deployment", "pricing_change", "research_benchmark"]
+  product_form: ["agent_workbench", "rag_knowledge_base"]
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Langchain 案例：AI 进入地产开发和建筑设计流程 How Rippling built production AI in 6 months with Deep Agents and LangSmith How Rippling built production AI in 6 months with Deep Agents and LangSmith [...] # How Rippling Went AI-Native A..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "Langchain"
 
 frontend:

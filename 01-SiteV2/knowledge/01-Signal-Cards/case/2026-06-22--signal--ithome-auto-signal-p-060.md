@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["customer_deployment", "governance_requirement"]
+  product_form: ["copilot"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "微软将默认向符合条件Win11设备自动安装Microsoft 365 Copilot 微软将默认向符合条件Win11设备自动安装Microsoft 365 Copilot 微软计划在2026年6月中旬至7月中旬，向搭载Microsoft 365桌面客户端的合规Windows设备自动安装Microsoft 365 Copilot独立客户端。系统默认开启安装与激活，企业管理员需手动选择\"退出自动部署\"才能阻止。部署通过Office内置更新..."
+  missing_fields: ["specific_task", "delivery_model"]
+
 signal_owner: "Ithome"
 
 frontend:

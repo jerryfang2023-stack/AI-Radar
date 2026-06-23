@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "customer_support"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage"]
+  business_action: ["customer_deployment", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["case_study", "third_party_report"]
+  source_evidence_type: ["first_party_case"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Agentforce Customer Stories 案例：AI 进入销售和收入团队流程 Agentforce Customer Stories - Salesforce Discover real-life success stories from Agentforce users."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Agentforce Customer Stories"
 
 frontend:

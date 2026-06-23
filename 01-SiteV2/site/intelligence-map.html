@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-version" content="SITE-V3.3.8.2">
-  <meta name="wavesight-column-version" content="IMAP-V1.1.1-weekly-report-archive-list">
+  <meta name="wavesight-version" content="SITE-V3.3.8.3">
+  <meta name="wavesight-column-version" content="IMAP-V1.2.0-opportunity-radar">
   <meta name="weekly-report-source" content="01-SiteV2/content/08-report/">
   <title>情报地图｜观澜 AI</title>
   <link rel="stylesheet" href="assets/wavesight-nav.css">
-  <link rel="stylesheet" href="assets/v3-data-observation-desk.css?v=20260615-imap-v1-1-0">
+  <link rel="stylesheet" href="assets/v3-data-observation-desk.css?v=20260623-opportunity-stacked">
 </head>
 <body class="v3-data-observation-page">
   <header class="wavesight-topbar" aria-label="观澜 AI 导航">
@@ -39,6 +39,7 @@
         </div>
       </div>
       <div class="relationship-overview" data-relationship-overview></div>
+      <div data-opportunity-panels></div>
       <div class="weekly-radar-entry" aria-labelledby="weekly-radar-title">
         <div class="section-head">
           <div>
@@ -105,7 +106,7 @@
     </div>
   </dialog>
 
-  <script src="assets/v3-data-observation-desk.js?v=20260612-top10-source-title" defer></script>
+  <script src="assets/v3-data-observation-desk.js?v=20260623-opportunity-stacked" defer></script>
   <script>
     (() => {
       const selector = document.querySelector("[data-weekly-report-selector]");

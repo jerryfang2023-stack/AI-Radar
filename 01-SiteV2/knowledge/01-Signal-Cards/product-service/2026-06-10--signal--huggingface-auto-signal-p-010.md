@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change", "open_source_release"]
+  product_form: ["evaluation_platform"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Hugging Face 博客发布语音智能体代码切换基准测试 Hugging Face 博客发布语音智能体代码切换基准测试 Hugging Face 博客发布针对语音智能体处理代码切换语音的基准测试。数据集覆盖西班牙语-英语、法语-英语、加拿大法语-英语和德语-英语四对语言，基于人力资源与IT服务管理场景构建。采用词错误率、语义词错误率和答案错误率三项指标评估七种ASR系统，包括AssemblyAI Universal 3-Pro、D..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "Huggingface"
 
 frontend:

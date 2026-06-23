@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment", "hiring_fde"]
+  product_form: ["fde_service"]
+  delivery_model: ["fde_delivery"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "As agentic AI hits 'a difficult age', Salesforce's Forward Deployment Engineers are on hand to, well, hold enterprise ha As agentic AI hits 'a difficult age', Salesforce's Forward Deployment Engineers are on hand to, we..."
+  missing_fields: []
+
 signal_owner: "Diginomica"
 
 frontend:

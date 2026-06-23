@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment"]
+  product_form: ["api"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Tasklet: The cloud agent operating system for knowledge work Tasklet: The cloud agent operating system for knowledge work | Y Combinator Tasklet: Agents that own the work | Y Combinator Tasklet’s AI agents connect to ev..."
+  missing_fields: ["specific_task", "adoption_evidence"]
+
 signal_owner: "Tasklet"
 
 frontend:

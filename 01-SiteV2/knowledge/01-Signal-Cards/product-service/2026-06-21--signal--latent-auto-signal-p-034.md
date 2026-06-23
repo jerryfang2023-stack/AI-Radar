@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["product_launch", "open_source_release", "research_benchmark"]
+  product_form: ["developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["context_management", "evaluation_gap"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["research_paper"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "State of Code Evals] After SWE-bench, Code Clash &amp; SOTA Coding Benchmarks recap — John Yang State of Code Evals] After SWE-bench, Code Clash &amp; SOTA Coding Benchmarks recap — John Yang From creating SWE-bench in ..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "Latent"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["funding_round", "customer_deployment", "acquisition"]
+  product_form: []
+  delivery_model: ["project_based_service"]
+  pain_or_constraint: ["workflow_integration", "data_silo"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "About two years ago, when language models emerged, that frustration became an opportunity to finally deliver the intelligence needed for software applications, AI agents, humans and more to fulfill their purpose at scal..."
+  missing_fields: ["product_form"]
+
 signal_owner: "Jedify"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment", "partnership_integration"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Convey Raises $38 Million Series A To Automate Enterprise Operations With AI Teammates Convey Raises $38 Million Series A To Automate Enterprise Operations With AI Teammates Convey announced that it has raised $38 milli..."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Convey"
 
 frontend:

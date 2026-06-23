@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "INXM 获得€5.7 M 融资，押注企业 Agent 协作平台 INXM Raises €5.7 Million Pre-Seed To Bridge The Gap Between Enterprise AI Demos And Real Operational Deployment # INXM Raises €5.7 Million Pre-Seed To Bridge The Gap Between Enterprise A..."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "INXM"
 
 frontend:

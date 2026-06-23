@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["finance_team", "insurance_team", "enterprise_ai_owner"]
+  team_or_function: ["finance", "insurance_operations", "it_security"]
+  specific_task: ["insurance_claim_review"]
+  business_action: ["customer_deployment", "research_benchmark", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["deployment_scale", "third_party_report"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Skip to content World of Work Insurers pivot AI strategy toward core risk underwriting Ryan Daws June 16, 2026 Share this story: Tags: ai claims enterprise fintech governance insurance report research study underwriting..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Artificialintelligence-News"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment", "pricing_change", "open_source_release"]
+  product_form: ["model_gateway"]
+  delivery_model: ["consulting_diagnostic"]
+  pain_or_constraint: ["api_cost_spike"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI推理公司Baseten据报以130亿美元估值融资15亿美元 获得5 billion 融资，押注模型部署和算力服务 AI推理公司Baseten据报以130亿美元估值融资15亿美元 AI推理公司Baseten接近完成15亿美元融资，估值130亿美元，据《华尔街日报》报道。本轮为分价轮，部分投资者以130亿美元估值进入，部分以110亿美元。交易由Spark Capital、Sands Capital、Altimeter Capital和..."
+  missing_fields: ["specific_task", "adoption_evidence"]
+
 signal_owner: "AI推理公司Baseten据报以130亿美元估值融资15亿美元"
 
 frontend:

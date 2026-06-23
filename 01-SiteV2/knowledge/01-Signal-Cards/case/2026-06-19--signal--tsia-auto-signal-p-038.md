@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "hiring_fde"]
+  product_form: ["fde_service"]
+  delivery_model: ["fde_delivery"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "What Is Forward Deployed Engineering?"
+  missing_fields: ["adoption_evidence"]
+
 signal_owner: "Tsia"
 
 frontend:

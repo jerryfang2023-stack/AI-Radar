@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in V3.3.8.2 Business Signal Core Source Hygiene.
+WaveSight AI is now in SITE-V3.3.8.3 Intelligence Map Opportunity Radar.
 
 ## Current Positioning
 
@@ -20,7 +20,7 @@ WaveSight AI is now in V3.3.8.2 Business Signal Core Source Hygiene.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
-- V3.3.8.2 keeps the unified frontstage, preserves First-Line Viewpoints person / date Obsidian timelines, blocks social / repo / list sources from formal Business Signal Cards, event-dedupes public Core Pool candidates, makes Hermes early handoff staged before 10:00, defaults Business Signals to independent source artifact capture before unified Raw / Pool normalization, keeps the Intelligence Map weekly report subcolumn, keeps the Business Signals Enterprise AI / FDE secondary lens as an independent Lens Pool, and tightens Business Signals Core Pool source hygiene so generic FDE role/service pages, funding roundups, generic funding commentary, stale sources, and search-query artifacts cannot fill Core Pool / Card quantity gaps.
+- SITE-V3.3.8.3 keeps the unified frontstage, preserves First-Line Viewpoints person / date Obsidian timelines, blocks social / repo / list sources from formal Business Signal Cards, event-dedupes public Core Pool candidates, makes Hermes early handoff staged before 10:00, defaults Business Signals to independent source artifact capture before unified Raw / Pool normalization, keeps the Business Signals Enterprise AI / FDE secondary lens as an independent Lens Pool, keeps the Intelligence Map weekly report subcolumn, and upgrades Intelligence Map with a source-backed opportunity radar: relationship graph stays on graph tags while the Entry Point Map and Product Pain Map use `opportunity_signals` and a weekly update skill.
 
 ## Current Entries
 

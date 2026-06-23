@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "finance_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering", "finance"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "pricing_change"]
+  product_form: ["copilot", "developer_tool"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "model_routing_complexity"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "微软 Copilot Cowork 转向按用量计费，考虑采用 DeepSeek V4 发布 AI 基础设施能力，切入模型部署和算力服务 微软 Copilot Cowork 转向按用量计费，考虑采用 DeepSeek V4 微软正考虑采用自托管微调版 DeepSeek V4 作为 Copilot Cowork 的更廉价模型选项，同时将 Cowork 改为按使用量计费。Cowork 基于 Anthropic 的 Claude 技术。Cop..."
+  missing_fields: []
+
 signal_owner: "微软 Copilot Cowork 转向按用量计费，考虑采用 DeepSeek V4"
 
 frontend:

@@ -59,6 +59,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["healthcare_provider", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["healthcare_operations", "it_security"]
+  specific_task: ["medical_documentation"]
+  business_action: ["customer_deployment", "product_launch", "governance_requirement"]
+  product_form: ["vertical_saas"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AdventHealth 部署 ChatGPT for Healthcare，推进医疗服务工作流 AdventHealth advances whole-person care with OpenAI AdventHealth uses ChatGPT for Healthcare in a whole-person care story published by OpenAI."
+  missing_fields: ["delivery_model"]
 ---
 
 # AdventHealth 部署 ChatGPT for Healthcare，推进医疗服务工作流

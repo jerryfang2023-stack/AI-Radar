@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch"]
+  product_form: ["copilot"]
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Due to the Digital Markets Act, Siri AI will not launch on iPhones and iPads in the EU, though it will be available on macOS and visionOS."
+  missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Apple Intelligence 借助 Google 和 Nvidia 再获新生"
 
 frontend:

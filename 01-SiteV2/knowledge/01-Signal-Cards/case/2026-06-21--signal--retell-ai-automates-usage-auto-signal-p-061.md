@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "finance_team"]
+  team_or_function: ["sales", "customer_support", "finance"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "pricing_change"]
+  product_form: ["agent_workbench"]
+  delivery_model: ["api_usage_based", "project_based_service"]
+  pain_or_constraint: ["api_cost_spike"]
+  adoption_evidence: ["deployment_scale", "pricing_page", "pilot_or_poc"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Retell AI Automates Usage-Based Pricing to Scale its AI Voice Agent ..."
+  missing_fields: []
+
 signal_owner: "Retell AI Automates Usage"
 
 frontend:

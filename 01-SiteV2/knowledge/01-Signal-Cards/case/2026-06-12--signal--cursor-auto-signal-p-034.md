@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["engineering", "it_security"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "research_benchmark", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["permission_boundary", "data_silo", "latency_sensitive", "security_compliance"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Cursor 案例：AI 进入模型部署和算力调用 Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限 Cursor 近日推出 Auto-review，通过一个专门的分类器智能体在工具调用前审查动作风险。该分类器根据上下文判断动作是否与用户意图一致，高风险时阻止并返回解释给父智能体，低风险时放行。分类器采用小模型，运行在智能体循环内以避免额外延迟，并能读取工作区文件辅助判断。测试基于约12小时内部开发..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Cursor"
 
 frontend:

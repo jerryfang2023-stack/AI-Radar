@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["product_launch", "partnership_integration", "open_source_release", "governance_requirement"]
+  product_form: []
+  delivery_model: ["open_source_commercial", "consulting_diagnostic"]
+  pain_or_constraint: ["security_compliance", "evaluation_gap"]
+  adoption_evidence: ["partnership_announcement", "third_party_report"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划 OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划 OpenAI 联合安全公司 Trail of Bits 启动\"Patch the Planet\"计划，帮助开源项目修复安全漏洞。Trail of Bits 工程师将直接与维护者合作，利用 OpenAI 的 Codex Secu..."
+  missing_fields: ["product_form"]
+
 signal_owner: "OpenAI"
 
 frontend:

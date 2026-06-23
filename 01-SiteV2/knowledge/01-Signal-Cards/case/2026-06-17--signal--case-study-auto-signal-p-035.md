@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "customer_support", "it_security"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage"]
+  business_action: ["funding_round", "customer_deployment", "governance_requirement"]
+  product_form: ["vertical_saas", "workflow_automation"]
+  delivery_model: ["enterprise_subscription"]
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: ["case_study"]
+  source_evidence_type: ["funding_news", "first_party_case"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Case Study: Helping a Vertical SaaS Company Reposition for an AI ..."
+  missing_fields: []
+
 signal_owner: "Case Study"
 
 frontend:

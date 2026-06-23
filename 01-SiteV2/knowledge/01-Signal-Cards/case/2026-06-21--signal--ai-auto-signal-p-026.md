@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: ["knowledge_base_qa"]
+  business_action: ["funding_round", "customer_deployment", "partnership_integration", "research_benchmark"]
+  product_form: ["rag_knowledge_base"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "context_management"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG Top AI Researcher on GPT 4.5, DeepSeek and Agentic RAG | Douwe Kiela, CEO, Contextual AI Retrieval-Augmented Generation (RAG) has become a dominant architecture in ..."
+  missing_fields: ["delivery_model"]
+
 signal_owner: "AI"
 
 frontend:

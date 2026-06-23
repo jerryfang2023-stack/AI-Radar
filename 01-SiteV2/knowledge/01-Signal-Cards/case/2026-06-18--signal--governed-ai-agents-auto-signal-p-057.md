@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: []
+  product_form: []
+  delivery_model: ["self_serve_saas"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["pilot_or_poc"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Governed AI Agents: How to Deploy and Scale with Confidence Governed AI Agents: How to Deploy and Scale with Confidence # Governed AI Agents: How to Deploy and Scale with Confidence ## 新闻事实 Back Start free trial Platfor..."
+  missing_fields: ["product_form"]
+
 signal_owner: "Governed AI Agents"
 
 frontend:

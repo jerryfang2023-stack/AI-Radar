@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change", "open_source_release"]
+  product_form: ["copilot", "api", "developer_tool"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "model_routing_complexity"]
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "GitHub Copilot SDK GA：能做什么、成本多少、是否值得自建 GitHub Copilot SDK GA: What You Can Build, What It Costs, and Whether It Beats Rolling Your Own | Pondero GitHub Copilot SDK GA: What You Can Build, What It Costs, and Whether It B..."
+  missing_fields: ["adoption_evidence"]
+
 signal_owner: "GitHub Copilot SDK GA"
 
 frontend:

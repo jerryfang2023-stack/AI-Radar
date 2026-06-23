@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
+  specific_task: []
+  business_action: ["governance_requirement", "failure_postmortem"]
+  product_form: ["copilot"]
+  delivery_model: []
+  pain_or_constraint: ["hallucination_risk", "security_compliance", "evaluation_gap"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成 英国警方被叫停使用AI撰写法庭陈述，因合规评估未完成 英国多个警察部门被叫停使用商用AI系统撰写法庭陈述及开展刑事司法工作，因未完成全面合规评估。Police.AI负责人亚历克斯·默里要求立即暂停，强调刑事司法技术须达到排除合理怀疑的准确性。Police.AI今年获内政部三年1.15亿英镑资金。部分警队利用AI将审讯笔录整理为法庭陈述；此前西米德兰兹郡警方因使用Copilot生成虚..."
+  missing_fields: ["specific_task", "delivery_model"]
+
 signal_owner: "UK police"
 
 frontend:

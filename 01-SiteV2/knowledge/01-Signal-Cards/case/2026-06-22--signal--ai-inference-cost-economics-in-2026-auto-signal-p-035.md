@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "customer_support_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "customer_support"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage"]
+  business_action: ["customer_deployment", "pricing_change"]
+  product_form: ["api"]
+  delivery_model: ["template_pack", "api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: ["case_study", "pricing_page"]
+  source_evidence_type: ["first_party_case"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用 AI Inference Cost Economics in 2026: GPU FinOps Playbook # AI Inference Cost Economics in 2026: GPU FinOps Playbook."
+  missing_fields: []
+
 signal_owner: "AI Inference Cost Economics in 2026"
 
 frontend:

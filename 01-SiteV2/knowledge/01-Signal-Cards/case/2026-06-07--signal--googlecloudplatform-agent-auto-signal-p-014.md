@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "open_source_release", "research_benchmark"]
+  product_form: ["developer_tool", "evaluation_platform"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "GoogleCloudPlatform/agent-starter-pack - GitHub GoogleCloudPlatform/agent-starter-pack - GitHub Ship AI Agents to Google Cloud in minutes, not months."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "GoogleCloudPlatform/agent"
 
 frontend:

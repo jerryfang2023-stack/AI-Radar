@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Tldr 记录企业应用场景：企业智能体协作流程 Meta AI mode 📱, Factory 2.0 👨‍💻, Sakana’s autonomous researcher 🐟 Meta AI mode 📱, Factory 2."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "Tldr"
 
 frontend:

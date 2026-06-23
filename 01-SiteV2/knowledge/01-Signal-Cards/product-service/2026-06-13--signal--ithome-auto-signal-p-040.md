@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration", "governance_requirement"]
+  product_form: ["api"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: ["customer_metric", "partnership_announcement", "enterprise_plan"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Ithome 推出 Agent 工作流能力，切入模型部署和算力服务 华为发布HarmonyOS开发套件26.0.0 Beta1 IT之家 6 月 12 日消息， HarmonyOS 开发套件 26.0.0 Beta1 版本在 HDC2026 正式面向开发者发布。"
+  missing_fields: []
+
 signal_owner: "Ithome"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["sales", "it_security"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["funding_round", "product_launch", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Willow 获得$7M 融资，押注销售线索和收入团队协作 Willow Launches with $7M to Build the Future of Enterprise AI Agent Governance | Willow # Willow 获得$7M 融资，押注销售线索和收入团队协作 ## 新闻事实 Herzliya 获得 $7 m seed 融资。"
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Willow"
 
 frontend:

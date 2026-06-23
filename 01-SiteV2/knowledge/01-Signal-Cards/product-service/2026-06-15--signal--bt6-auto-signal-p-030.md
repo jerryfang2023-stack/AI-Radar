@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "BT6 发布 AI 基础设施能力，切入模型部署和算力服务 Jailbreaking AGI: Pliny the Liberator &amp; John V on Red Teaming, BT6, and the Future of AI Security # BT6 发布 AI 基础设施能力，切入模型部署和算力服务 ## 新闻事实 BT6 发布 AI 基础设施能力，切入模型部署和算力服务 ## 原文要点 - 原文未提供更多可拆分..."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "BT6"
 
 frontend:

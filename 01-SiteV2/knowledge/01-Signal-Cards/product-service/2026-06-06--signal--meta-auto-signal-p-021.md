@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["product_launch"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Meta 在其 AI 应用中推出 AI 生成的点击诱饵新闻 feed Meta 在其 AI 应用中推出 AI 生成的点击诱饵新闻 feed Meta 在其独立的 Meta AI 应用中新增了\"For You\"栏目，自动填充由 AI 生成的点击诱饵风格文章。这些文章的主题、图片和文本均由 AI 生成，质量存疑。此前该应用主要提供公开的\"Discover\"信息流，展示 AI 生成的图片和用户对话，现已改为标准聊天机器人界面。"
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Meta"
 
 frontend:

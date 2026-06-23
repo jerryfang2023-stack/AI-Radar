@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "engineering"]
+  specific_task: ["sales_lead_research", "internal_tool_building"]
+  business_action: ["funding_round", "product_launch", "governance_requirement"]
+  product_form: ["api"]
+  delivery_model: ["project_based_service", "api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "security_compliance", "context_management"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "C1 发布 AI 基础设施能力，切入销售线索和收入团队协作 Introducing the C1 Autonomous Worker # Introducing the ..."
+  missing_fields: ["adoption_evidence"]
+
 signal_owner: "C1"
 
 frontend:

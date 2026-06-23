@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["engineering", "it_security"]
+  specific_task: ["code_review"]
+  business_action: ["open_source_release", "governance_requirement"]
+  product_form: ["copilot", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "GitHub 案例：AI 进入企业智能体协作流程 How to govern AI agents in your GitHub Enterprise #193359 # Organization: GitHub Community (@community) Ask questions, get answers, share expertise."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "GitHub"
 
 frontend:

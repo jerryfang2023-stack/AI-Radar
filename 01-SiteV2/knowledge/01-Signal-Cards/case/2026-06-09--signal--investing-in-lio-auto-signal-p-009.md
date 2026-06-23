@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "partnership_integration", "procurement_signal"]
+  product_form: ["vertical_saas"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: ["funding_news", "regulatory_or_procurement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Investing in Lio | Andreessen Horowitz Investing in Lio | Andreessen Horowitz Enterprise procurement remains one of the last bastions of manual back-office administration."
+  missing_fields: ["specific_task", "delivery_model"]
+
 signal_owner: "Investing in Lio"
 
 frontend:

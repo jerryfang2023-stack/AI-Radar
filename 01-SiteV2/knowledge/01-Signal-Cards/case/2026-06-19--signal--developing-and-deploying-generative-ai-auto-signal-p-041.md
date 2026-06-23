@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: []
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Developing and Deploying Generative AI - Altman Solon Developing and Deploying Generative AI - Altman Solon # Developing and Deploying Generative AI - Altman Solon ## 新闻事实 Developing and Deploying Generative AI - Altman..."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Developing and Deploying Generative AI"
 
 frontend:

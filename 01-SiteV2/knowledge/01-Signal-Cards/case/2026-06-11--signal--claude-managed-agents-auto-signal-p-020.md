@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "research_benchmark", "governance_requirement"]
+  product_form: ["api", "evaluation_platform"]
+  delivery_model: ["api_usage_based"]
+  pain_or_constraint: ["security_compliance", "context_management"]
+  adoption_evidence: []
+  source_evidence_type: ["technical_blog"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "智能体表面的演进：使用 Claude Managed Agents 构建 案例：AI 进入地产开发和建筑设计流程 智能体表面的演进：使用 Claude Managed Agents 构建 Anthropic 推出 Claude Managed Agents，一套可组合 API 套件，用于构建和部署生产级智能体。该产品从早期简单 API 演进至 Claude Agent SDK，再到将智能体调度层与代码执行沙箱解耦的 Managed A..."
+  missing_fields: ["adoption_evidence"]
+
 signal_owner: "智能体表面的演进：使用 Claude Managed Agents 构建"
 
 frontend:

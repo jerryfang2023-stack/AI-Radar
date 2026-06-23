@@ -10,6 +10,8 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$Utf8Profile = Join-Path $PSScriptRoot "Set-WaveSightUtf8.ps1"
+if (Test-Path -LiteralPath $Utf8Profile) { . $Utf8Profile }
 
 function Write-LogLine {
   param([string]$Message)

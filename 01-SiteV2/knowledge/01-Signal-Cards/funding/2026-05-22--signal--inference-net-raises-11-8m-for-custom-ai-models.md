@@ -58,6 +58,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Inference.net 融资 1180 万美元，推进企业定制模型部署 Announcing our $11.8M Series Seed | Inference.net Announcing our $11.8M Series Seed | Inference.net # Announcing our $11.8M Series Seed We’re excited to announce that we have raised ..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
 ---
 
 # Inference.net 融资 1180 万美元，推进企业定制模型部署

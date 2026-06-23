@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "operations_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "operations"]
+  specific_task: ["sales_lead_research", "logistics_coordination"]
+  business_action: ["funding_round", "customer_deployment", "partnership_integration", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike"]
+  adoption_evidence: ["customer_metric", "deployment_scale", "partnership_announcement"]
+  source_evidence_type: ["funding_news", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "计算机视觉货架跟踪推动零售业生产力提升 计算机视觉货架跟踪推动零售业生产力提升 计算机视觉自动跟踪货架正帮助零售商应对利润侵蚀。行业低效消耗6.4%总销售额，2026年损失将达1964亿美元（同比增21%），远超3%的销售增速。九成零售商面临管理困难，全面部署商店智能平台的企业占60%（同比升18个百分点）；年收入超50亿美元的公司中73%已规模化部署，低于10亿美元的仅42%。BJ's Wholesale Club部署Simbe机器..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Artificialintelligence-News"
 
 frontend:

@@ -2,13 +2,14 @@
 import fs from "node:fs";
 import path from "node:path";
 import { readTagTaxonomy } from "../../../agent-workflow/tools/tag-taxonomy-utils.mjs";
+import { OPPORTUNITY_SIGNAL_FIELDS, opportunitySignalLabel } from "../../../agent-workflow/tools/opportunity-signals-utils.mjs";
 
 const root = process.cwd();
 const siteDataDir = path.join(root, "01-SiteV2", "site", "data");
 const outputFile = path.join(siteDataDir, "v3-data-observation-desk.json");
 const intelligenceGraphIndexFile = path.join(siteDataDir, "intelligence-graph-index.json");
 const enterpriseAiFdeFile = path.join(siteDataDir, "enterprise-ai-fde.json");
-const siteVersion = "SITE-V3.3.8.2";
+const siteVersion = "SITE-V3.3.8.3";
 const businessSignalsColumnVersion = "BSIG-V1.1.1-core-source-hygiene";
 const enterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
 
@@ -222,6 +223,27 @@ function formalTags(fm) {
   const result = {};
   for (const group of tagGroups) {
     result[group] = nestedList(fm, "formal_tags", group).filter((tag) => allowedTagIds.has(tag));
+  }
+  return result;
+}
+
+function camelOpportunityField(field = "") {
+  return field.replace(/_([a-z])/gu, (_, letter) => letter.toUpperCase());
+}
+
+function opportunitySignals(fm) {
+  const result = {
+    schemaVersion: nestedScalar(fm, "opportunity_signals", "schema_version") || "opportunity-signals-v1",
+    evidenceBasis: nestedScalar(fm, "opportunity_signals", "evidence_basis"),
+    sourceExcerpt: nestedScalar(fm, "opportunity_signals", "source_excerpt"),
+    missingFields: nestedList(fm, "opportunity_signals", "missing_fields"),
+    labels: {},
+  };
+  for (const field of OPPORTUNITY_SIGNAL_FIELDS) {
+    const values = nestedList(fm, "opportunity_signals", field);
+    result[field] = values;
+    result[camelOpportunityField(field)] = values;
+    result.labels[field] = values.map((value) => ({ id: value, label: opportunitySignalLabel(root, field, value) }));
   }
   return result;
 }
@@ -1089,7 +1111,7 @@ function publicTitleNeedsTranslation(value = "") {
   const text = String(value || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
-  if (hanCount >= 5 && /(浣跨敤|鍙戝竷|铻嶈祫|瀹屾垚|鎺ㄥ嚭|寮€鍙憒搴旂敤|鍘熸枃|鐢ㄩ€旇鍘熸枃)/u.test(text)) return false;
+  if (hanCount >= 5 && /(使用|发布|融资|完成|推出|开发|应用|原文|用途见原文)/u.test(text)) return false;
   const sourceLikeEnglish = /\b(announces?|launches?|raises?|raised|secures?|secured|showcases?|success of|at scale|with new|for enterprise|startup|pre-seed|series\s+[a-z]|funding|financing|case study|report|guide|complete|introducing)\b/iu.test(text);
   if (text.length > 18 && hanCount === 0) return true;
   if (latinWords.length >= 7 && hanCount < 10) return true;
@@ -2289,7 +2311,7 @@ function isSubstantiveSourceFragment(value = "") {
 function isGenericSourceFallback(value = "") {
   const text = String(value || "");
   if (/公开材料提供了一条可追踪的\s*AI\s*商业信号|需继续核对客户、产品和业务结果/iu.test(text)) return true;
-  return /公开材料提供了一条可追踪的 AI 商业信号|需继续核对客户、产品和业务结果|鍏紑鏉愭枡鎻愪緵浜嗕竴鏉″彲杩借釜/iu.test(String(value || ""));
+  return /公开材料提供了一条可追踪的 AI 商业信号|需继续核对客户、产品和业务结果/iu.test(String(value || ""));
 }
 
 function isSourceLinkOnlyFact(value = "") {
@@ -3137,6 +3159,7 @@ function cardFromFile(file, category) {
     tags,
     flatTags: allTags(tags),
     displayTags: displayTags(tags),
+    opportunitySignals: opportunitySignals(fm),
     summary: short(sourceValue || markdownValue || sourceFact, 260),
     translatedFact: short(sourceFact, 320),
     originalHighlights,

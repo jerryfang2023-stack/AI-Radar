@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: ["customer_metric", "partnership_announcement", "pilot_or_poc"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Deepmind 推出 Agent 工作流能力，切入地产和建筑设计工作流 Google DeepMind 基于 Gemini 与英国政府合作开发 AI 规划原型，目标将家庭申请处理时间减半 Google DeepMind 与英国政府合作，基于 Gemini 构建 AI 规划原型，旨在将家庭规划申请处理时间减半。该工具可整合数据、识别本地政策、总结公众反馈并起草评估报告，但规划官员保留最终决策权。原型已在 Barnet、Camden 和..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "Deepmind"
 
 frontend:

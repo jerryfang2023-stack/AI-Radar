@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["industry_report", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Officer Dario Amodei 案例：AI 进入模型部署和算力调用 Anthropic CEO 称政府应有权阻止高风险新 AI 模型部署 Anthropic PBC CEO Dario Amodei 表示，政府应当有权阻止人工智能开发者部署存在特定风险的新模型。"
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Officer Dario Amodei"
 
 frontend:

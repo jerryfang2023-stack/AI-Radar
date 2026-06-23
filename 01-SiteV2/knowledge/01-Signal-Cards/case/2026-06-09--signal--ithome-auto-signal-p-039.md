@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "engineering_team", "healthcare_provider"]
+  team_or_function: ["sales", "engineering", "healthcare_operations"]
+  specific_task: ["sales_lead_research", "internal_tool_building", "medical_documentation"]
+  business_action: ["customer_deployment"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["security_compliance"]
+  adoption_evidence: ["deployment_scale", "pilot_or_poc"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Meta 智能眼镜暗藏人脸识别代码，曝光仅一天后被紧急移除 Meta 智能眼镜暗藏人脸识别代码，曝光仅一天后被紧急移除 Meta 智能眼镜配套应用中发现一段休眠人脸识别代码，内部代号\"姓名标签\"，可将面部影像转化为设备本地生物特征标识并交叉比对。《连线》6月4日发现该代码，Meta 次日即推送更新彻底删除。Meta 通讯副总裁称该功能仅为试点项目，尚未做正式决定。此前 Meta 智能眼镜已因偷拍、审核图像隐私问题遭集体诉讼。"
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Ithome"
 
 frontend:

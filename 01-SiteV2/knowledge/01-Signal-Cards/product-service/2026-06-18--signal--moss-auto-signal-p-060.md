@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "customer_deployment", "product_launch", "open_source_release"]
+  product_form: ["evaluation_platform"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "MOSS 发布 AI 基础设施能力，切入模型部署和算力服务 MOSS-TTS-Local-Transformer-v1.5 在 SGLang-Omni 上：原生流式 48 kHz 语音服务 # MOSS 发布 AI 基础设施能力，切入模型部署和算力服务 ## 新闻事实 MOSS-TTS-Local-Transformer-v1.5 是一款开源 TTS 模型，支持 48 kHz 立体声、零样本声音克隆、最长 10 分钟长文本合成、时长控..."
+  missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]
+
 signal_owner: "MOSS"
 
 frontend:

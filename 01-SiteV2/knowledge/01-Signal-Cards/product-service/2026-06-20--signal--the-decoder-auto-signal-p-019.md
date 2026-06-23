@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["research_benchmark", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  adoption_evidence: ["customer_metric"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "OpenAI研究人员：少量\"有益特质\"训练让AI模型更安全且更难被操纵 OpenAI研究人员：少量\"有益特质\"训练让AI模型更安全且更难被操纵 OpenAI用强化学习在真实对话中训练模型具备诚实、认知谦逊、可纠正性等特质。仅将少量该数据混入常规强化学习后训练流程，模型便在53个独立基准（衡量欺骗、谄媚、奖励黑客等）中的44个上获得改进。健康数据训练也提升非健康评估，反之亦然。模型对有害提示和有害微调更具抵抗力，同时保持有用可操控性，研..."
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
+
 signal_owner: "The-Decoder"
 
 frontend:

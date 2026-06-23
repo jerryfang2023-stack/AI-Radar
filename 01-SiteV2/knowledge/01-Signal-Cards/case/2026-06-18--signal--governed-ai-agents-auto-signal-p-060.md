@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "healthcare_provider", "enterprise_ai_owner"]
+  team_or_function: ["sales", "healthcare_operations", "it_security"]
+  specific_task: ["sales_lead_research", "medical_documentation"]
+  business_action: ["customer_deployment", "partnership_integration", "pricing_change", "governance_requirement"]
+  product_form: ["api"]
+  delivery_model: ["self_serve_saas", "api_usage_based"]
+  pain_or_constraint: ["workflow_integration", "api_cost_spike", "hallucination_risk", "security_compliance"]
+  adoption_evidence: ["partnership_announcement", "pilot_or_poc"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Governed AI Agents: How to Deploy and Scale with Confidence Governed AI Agents: How to Deploy and Scale with Confidence Learn how enterprises can deploy AI agents to production with confidence, prevent agent sprawl, red..."
+  missing_fields: []
+
 signal_owner: "Governed AI Agents"
 
 frontend:

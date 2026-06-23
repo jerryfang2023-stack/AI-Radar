@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-first-party"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "finance_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering", "finance"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["product_launch", "partnership_integration", "pricing_change", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  adoption_evidence: ["partnership_announcement"]
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Anthropic 启动 Claude Corps 全国奖学金项目 推出 Agent 工作流能力，切入地产和建筑设计工作流 Anthropic 启动 Claude Corps 全国奖学金项目 Anthropic 推出 Claude Corps 奖学金项目，面向早期职业生涯的年轻人，培训 1，000 名研究员使用 Claude，并匹配给美国非营利组织全职工作一年。研究员年薪 85，000 美元及福利，每周接受 5 小时持续培训。Anth..."
+  missing_fields: ["product_form", "delivery_model"]
+
 signal_owner: "Anthropic 启动 Claude Corps 全国奖学金项目"
 
 frontend:

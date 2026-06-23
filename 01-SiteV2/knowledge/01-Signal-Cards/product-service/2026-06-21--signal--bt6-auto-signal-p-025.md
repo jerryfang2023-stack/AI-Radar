@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["security_compliance"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Voices have been changed for opsec.From jailbreaking every frontier model and turning down Anthropic’s Constitutional AI challenge to leading BT6, a 28-operator white-hat hacker collective obsessed with radical transpar..."
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "BT6"
 
 frontend:

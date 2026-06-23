@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round", "pricing_change"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["api_cost_spike"]
+  adoption_evidence: []
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Techcrunch 案例：AI 进入企业智能体协作流程 AI公司竞相上市，谁在搭便车？"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Techcrunch"
 
 frontend:

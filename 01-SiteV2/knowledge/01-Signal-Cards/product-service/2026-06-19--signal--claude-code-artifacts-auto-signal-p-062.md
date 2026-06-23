@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["engineering", "it_security"]
+  specific_task: ["code_review"]
+  business_action: ["product_launch", "governance_requirement", "failure_postmortem"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "permission_boundary", "data_silo", "latency_sensitive"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Claude Code 现已支持 artifacts 推出 Agent 工作流能力，切入地产和建筑设计工作流 Claude Code 现已支持 artifacts 从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
+
 signal_owner: "Claude Code 现已支持 artifacts"
 
 frontend:

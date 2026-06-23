@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release"]
+  product_form: ["copilot", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: ["community_post"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Linkedin 案例：AI 进入模型部署和算力调用 GitHub Enterprise Adoption Drives 376% ROI - LinkedIn You can now use production-grade AI models and agents directly inside GitHub — with free usage to start."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "Linkedin"
 
 frontend:

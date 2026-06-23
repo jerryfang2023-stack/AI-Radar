@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-business-media"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["insurance_team", "enterprise_ai_owner"]
+  team_or_function: ["insurance_operations"]
+  specific_task: ["insurance_claim_review"]
+  business_action: ["customer_deployment", "research_benchmark"]
+  product_form: []
+  delivery_model: ["project_based_service"]
+  pain_or_constraint: ["hallucination_risk"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["first_party_announcement", "business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Techcrunch 案例：AI 进入模型部署和算力调用 毕马威因明显的模型幻觉撤回AI使用报告 毕马威撤回了关于AI使用情况的报告，原因是报告中出现了明显的模型幻觉，再次证明AI在提供自身相关信息时并不可靠。"
+  missing_fields: ["product_form"]
+
 signal_owner: "Techcrunch"
 
 frontend:

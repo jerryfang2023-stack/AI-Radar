@@ -47,6 +47,22 @@ formal_tags:
   region: ["region-global"]
   source: ["source-industry-data"]
   opinion: []
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: []
+  business_action: ["product_launch", "research_benchmark"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "keyword search：全球 AI 发展最新评估——斯坦福2026年 AI 指数报告解读_腾讯新闻 # keyword search：全球 AI 发展最新评估——斯坦福2026年 AI 指数报告解读_腾讯新闻 ## 这个案例是谁 keyword search：全球 AI 发展最新评估——斯坦福2026年 AI 指数报告解读_腾讯新闻 是从证据编号 `R-001` 中抽出的 L1 案例。它的价值不在于“又有一家公司发布了东西”，而..."
+  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+
 related_change_cards: ["CHG-20260518-01"]
 related_sources: ["R-001"]
 internal:

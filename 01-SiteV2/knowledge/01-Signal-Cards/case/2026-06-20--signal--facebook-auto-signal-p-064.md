@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "partnership_integration"]
+  product_form: []
+  delivery_model: ["project_based_service"]
+  pain_or_constraint: []
+  adoption_evidence: ["pilot_or_poc"]
+  source_evidence_type: ["first_party_announcement"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "/ query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem Yeastar's Post Online status indicator Active Yeastar June 3 at 4:00 AM · 𝐘𝐞𝐚𝐡𝐬 𝐀𝐰𝐚𝐫𝐝𝐬 𝟐𝟎𝟐\ud835..."
+  missing_fields: ["buyer_or_user", "specific_task", "product_form"]
+
 signal_owner: "Facebook"
 
 frontend:

@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["product_launch"]
+  product_form: ["developer_tool"]
+  delivery_model: ["enterprise_subscription", "project_based_service"]
+  pain_or_constraint: []
+  adoption_evidence: ["deployment_scale"]
+  source_evidence_type: ["business_media"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "xAI 为 Grok Build 推出 /goal 模式，支持长周期自主编码与内置验证 xAI 为 Grok Build 推出 /goal 模式，支持长周期自主编码与内置验证 xAI 在终端编码智能体 Grok Build 中新增 /goal 模式。用户输入一条目标指令后，Grok Build 自动规划步骤、生成进度清单，逐一执行并验证（审查代码、检查网页或运行脚本）直至完成。期间可用 `/goal status`、`/goal pa..."
+  missing_fields: []
+
 signal_owner: "Marktechpost"
 
 frontend:

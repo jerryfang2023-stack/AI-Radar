@@ -39,6 +39,21 @@ formal_tags:
   region: []
   source: ["source-industry-data"]
 
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  team_or_function: ["engineering"]
+  specific_task: ["internal_tool_building"]
+  business_action: ["open_source_release"]
+  product_form: ["agent_workbench", "developer_tool"]
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: []
+  evidence_basis: "raw_source_text"
+  source_excerpt: "GitHub release notes agent - Agno GitHub release notes agent - Agno Automatically turn commits, pull requests, and diffs into polished release notes that communicate benefits and user value."
+  missing_fields: ["adoption_evidence", "delivery_model"]
+
 signal_owner: "Agno"
 
 frontend:
