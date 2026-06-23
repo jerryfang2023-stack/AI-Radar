@@ -47,7 +47,7 @@
           </div>
           <label class="weekly-radar-filter">
             <span>时间窗口</span>
-            <select aria-label="选择周报时间窗口" onchange="if (this.value) window.location.href = this.value;">
+            <select aria-label="选择周报时间窗口" data-weekly-report-selector onchange="if (this.value) window.location.assign(this.value);">
               <option value="weekly-ai-business-change-radar.html" selected>2026.06.15 - 06.21</option>
               <option value="weekly-ai-business-change-radar-2026-06-15.html">2026.06.09 - 06.15</option>
             </select>
@@ -64,7 +64,7 @@
               <span>Community 41 条</span>
             </div>
           </div>
-          <a class="weekly-radar-link" href="weekly-ai-business-change-radar.html">阅读本周周报</a>
+          <a class="weekly-radar-link" href="weekly-ai-business-change-radar.html" data-weekly-report-action>阅读本周周报</a>
         </article>
       </div>
     </section>
@@ -78,5 +78,24 @@
   </dialog>
 
   <script src="assets/v3-data-observation-desk.js?v=20260612-top10-source-title" defer></script>
+  <script>
+    (() => {
+      const selector = document.querySelector("[data-weekly-report-selector]");
+      const action = document.querySelector("[data-weekly-report-action]");
+      const syncAction = () => {
+        if (selector?.value && action) action.href = selector.value;
+      };
+      const openSelectedReport = () => {
+        syncAction();
+        if (selector?.value && window.location.pathname.split("/").pop() !== selector.value) {
+          window.location.assign(selector.value);
+        }
+      };
+      selector?.addEventListener("input", syncAction);
+      selector?.addEventListener("change", openSelectedReport);
+      window.addEventListener("pageshow", syncAction);
+      syncAction();
+    })();
+  </script>
 </body>
 </html>

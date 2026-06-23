@@ -31,7 +31,7 @@
           <h1 id="weekly-report-title">企业 Agent 从工具采用进入部署服务化</h1>
           <label class="weekly-report-window">
             <span>时间窗口</span>
-            <select aria-label="选择周报时间窗口" onchange="if (this.value) window.location.href = this.value;">
+            <select aria-label="选择周报时间窗口" data-weekly-report-selector onchange="if (this.value) window.location.assign(this.value);">
               <option value="weekly-ai-business-change-radar.html" selected>2026.06.15 - 06.21</option>
               <option value="weekly-ai-business-change-radar-2026-06-15.html">2026.06.09 - 06.15</option>
             </select>
@@ -393,5 +393,16 @@
       </article>
     </div>
   </main>
+  <script>
+    (() => {
+      const selector = document.querySelector("[data-weekly-report-selector]");
+      const openSelectedReport = () => {
+        if (selector?.value && window.location.pathname.split("/").pop() !== selector.value) {
+          window.location.assign(selector.value);
+        }
+      };
+      selector?.addEventListener("change", openSelectedReport);
+    })();
+  </script>
 </body>
 </html>

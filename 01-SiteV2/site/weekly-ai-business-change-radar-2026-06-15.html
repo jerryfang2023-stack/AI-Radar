@@ -31,7 +31,7 @@
           <h1 id="weekly-report-title">AI 从工具试用转向业务流程重构</h1>
           <label class="weekly-report-window">
             <span>时间窗口</span>
-            <select aria-label="选择周报时间窗口" onchange="if (this.value) window.location.href = this.value;">
+            <select aria-label="选择周报时间窗口" data-weekly-report-selector onchange="if (this.value) window.location.assign(this.value);">
               <option value="weekly-ai-business-change-radar.html">2026.06.15 - 06.21</option>
               <option value="weekly-ai-business-change-radar-2026-06-15.html" selected>2026.06.09 - 06.15</option>
             </select>
@@ -436,9 +436,19 @@
           <h2 id="section-0-title">数据口径与边界</h2>
           <ul><li>时间窗口：2026-06-09 至 2026-06-15，按最近 7 天滚动。</li><li>Signals：<code>01-SiteV2/site/data/v3-data-observation-desk.json</code>，窗口内 101 张 Business Signal Cards，其中案例 44、产品 38、融资 19。</li><li>Opinions：<code>01-SiteV2/site/data/follow-builders-daily.json</code>，窗口内 44 条 First-Line Viewpoints，其中产品与创业 33、AI 基础设施 6、AI 编程 5。</li><li>Community：<code>01-SiteV2/site/data/community-intelligence-daily/*.json</code>，窗口内按 URL 优先、标题辅助粗去重后约 44 条，其中 opportunity 30、tool_tip 7、industry_case 7。</li><li>边界：Opinions 和 Community 只用于解释权与需求互证，不作为 Business Signal Card 的事实证据。</li></ul>
         </section>
-        <p class="weekly-report-footer">Source: agent-workflow/reports/2026-06-15-weekly-ai-business-change-radar.md · Method: S×O×C 三方交叉验证 + 趋势链五步法 + 100分机会评分</p>
       </article>
     </div>
   </main>
+  <script>
+    (() => {
+      const selector = document.querySelector("[data-weekly-report-selector]");
+      const openSelectedReport = () => {
+        if (selector?.value && window.location.pathname.split("/").pop() !== selector.value) {
+          window.location.assign(selector.value);
+        }
+      };
+      selector?.addEventListener("change", openSelectedReport);
+    })();
+  </script>
 </body>
 </html>
