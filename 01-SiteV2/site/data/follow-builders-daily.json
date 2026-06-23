@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-23T01:34:49.422Z",
+    "generatedAt": "2026-06-23T05:15:09.540Z",
     "feedGeneratedAt": "2026-06-22T08:29:37.749Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
@@ -9,10 +9,10 @@
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
-    "builders": 17,
-    "remarks": 50,
+    "builders": 18,
+    "remarks": 51,
     "podcasts": 1,
-    "blogsBuilt": 6,
+    "blogsBuilt": 7,
     "trackedSources": 0,
     "rawBuilders": 11,
     "rawTweets": 27
@@ -22,7 +22,7 @@
       "name": "Simon Willison's Blog",
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "count": 10
+      "count": 9
     },
     {
       "name": "Dataiku Blog",
@@ -109,6 +109,12 @@
       "count": 2
     },
     {
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "count": 2
+    },
+    {
       "name": "Zara Zhang",
       "handle": "zarazhangrui",
       "role": "Builder. Dangerously skips permissions. Harvard’17. GitHub: https://t.co/KCuEajezlL YouTube: https://t.co/8xzbGWtf6w",
@@ -157,6 +163,45 @@
       "createdAt": "Wed, 17 Jun 2026 14:29:06 GMT",
       "date": "2026-06-17",
       "url": "https://www.interconnects.ai/p/state-of-the-blog-mid-2026",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://www.tigera.io/blog/why-we-built-lynx-bringing-control-to-the-age-of-ai-agents/",
+      "source": "blog",
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "text": "Why We Built Lynx: Bringing Control to the Age of AI Agents",
+      "content": "For a decade, one idea has guided everything we&#8217;ve built at Tigera: How do you secure a dynamic system with a lot of moving parts that is changing rapidly, with a programmatic approach? Calico has... The post Why We Built Lynx: Bringing Control to the Age of AI Agents appeared first on Tigera",
+      "contentTranslation": "十年来，一个想法指导了我们在Tigera构建的一切：如何通过编程方法来确保一个具有许多快速变化的移动部件的动态系统？ Calico有...我们为什么要建造Lynx ：将控制权带入AI时代的文章首次出现在Tigera上",
+      "contentTranslationStatus": "translated",
+      "translation": "我们为什么要构建Lynx ：将控制权带入AI智能体时代",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "Agent",
+      "formalTags": [
+        {
+          "id": "opinion-agent-workflow",
+          "name": "Agent 工作流观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-ai-agent",
+          "name": "AI Agent",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论可作为 Agent 产品形态、协作方式或能力边界的观察入口；只代表公开观点，不作为公司事实主证据。",
+      "createdAt": "Wed, 17 Jun 2026 13:00:22 +0000",
+      "date": "2026-06-17",
+      "url": "https://www.tigera.io/blog/why-we-built-lynx-bringing-control-to-the-age-of-ai-agents/",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -391,6 +436,45 @@
       "createdAt": "Tue, 16 Jun 2026 13:01:05 GMT",
       "date": "2026-06-16",
       "url": "https://www.bensbites.com/p/bye-bye-fable",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://www.tigera.io/blog/how-lynx-works-a-technical-walkthrough/",
+      "source": "blog",
+      "name": "Tigera Blog (Calico / AI Security)",
+      "handle": "tigera.io",
+      "role": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
+      "text": "How Lynx Works: A Technical Walkthrough",
+      "content": "We launched Lynx this week. Instead of restating the pitch, I want to explain how it&#8217;s built and why we made the architectural choices we did. If you run Kubernetes and you&#8217;re starting to put... The post How Lynx Works: A Technical Walkthrough appeared first on Tigera – Creator of Calico",
+      "contentTranslation": "我们本周推出了Lynx。与其重复推销，我想解释一下它是如何建造的，以及我们为什么做出这样的架构选择。如果你运行Kubernetes并且你开始放...文章Lynx如何工作：技术演练首先出现在Tigera – Calico的创建者",
+      "contentTranslationStatus": "translated",
+      "translation": "Lynx的工作原理：技术演练",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Thu, 18 Jun 2026 17:19:30 +0000",
+      "date": "2026-06-19",
+      "url": "https://www.tigera.io/blog/how-lynx-works-a-technical-walkthrough/",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -1954,45 +2038,6 @@
       "createdAt": "2026-06-16T05:20:29+00:00",
       "date": "2026-06-16",
       "url": "https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Quoting Matteo Wong, The Atlantic",
-      "content": "Katie Moussouris, a cybersecurity expert and the CEO of Luta Security, told me that Anthropic shared with her a copy of the White House",
-      "contentTranslation": "网络安全专家兼Luta Security首席执行官Katie Moussouris告诉我， Anthropic与她分享了白宫的副本",
-      "contentTranslationStatus": "translated",
-      "translation": "引用Matteo Wong ，《大西洋月刊》",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-06-16T03:07:54+00:00",
-      "date": "2026-06-16",
-      "url": "https://simonwillison.net/2026/Jun/16/matteo-wong-the-atlantic/#atom-everything",
       "likes": 0,
       "retweets": 0,
       "replies": 0
