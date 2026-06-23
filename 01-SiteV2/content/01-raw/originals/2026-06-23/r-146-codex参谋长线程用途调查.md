@@ -1,0 +1,228 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-146
+title: "Codex参谋长线程用途调查"
+original_url: "https://x.com/jxnlco/status/2069094992929550576"
+canonical_url: "https://x.com/jxnlco/status/2069094992929550576"
+source_name: "X：Jason Liu (@jxnlco)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-22T16:27:42.000Z"
+collected_at: 2026-06-23T02:03:46.823Z
+language: mixed
+full_text_hash: 8f8a07e281ad9f7e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-23/r-146-codex参谋长线程用途调查.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-23/r-146-codex参谋长线程用途调查.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: medium
+extraction_method: "body-visible-text"
+readability_score: 51
+extractor_diagnostics: {"readability_score":51,"text_length":2312,"paragraph_count":11,"sentence_count":5,"boilerplate_hits":2,"symbol_ratio":0.0294,"method":"body-visible-text"}
+has_full_text: true
+content_length: 2312
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8f8a07e281ad9f7e","missing":[]}
+source_volatility: high
+community_name: "X：Jason Liu (@jxnlco)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Codex参谋长线程用途调查","discovery_summary":"你们中有多少人有一个Codex参谋长线程？ 你们让它们查看什么样的事情？","source_name":"X：Jason Liu (@jxnlco)","origin_url":"https://x.com/jxnlco/status/2069094992929550576","discovered_at":"2026-06-23T01:57:11.609Z","rank_on_page":124,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: d8aba06c08175f31
+content_hash: 8f8a07e281ad9f7e
+semantic_hash: f712e00d9a9bc497
+duplicate_of: ""
+first_seen_at: "2026-06-22T16:27:42.000Z"
+last_seen_at: 2026-06-23T02:03:46.823Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"none","importance_score":1,"importance_reason":"no core WaveSight importance signal","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":3}
+business_elements: {"companies":["X","Jason Liu (@jxnlco)"],"products":["Codex","codex"],"people":[],"industries":["开发者工具"],"roles":[],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["5","4","27","22","2026","13.8","1","0.25"],"quotes":["how many of you have a codex chief of staff thread?\nwhat kinds of stuff do you have them look over? https://t.co/Hktez5iYIB"]}
+evidence_seed: {"company_actions":["你们中有多少人有一个Codex参谋长线程？ 你们让它们查看什么样的事情？","jason on X: \"how many of you have a codex chief of staff thread?","what kinds of stuff do you have them look over?"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"company_action","text":"你们中有多少人有一个Codex参谋长线程？ 你们让它们查看什么样的事情？","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"jason on X: \"how many of you have a codex chief of staff thread?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"what kinds of stuff do you have them look over?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"co/Hktez5iYIB\" / X Post Log in Sign up Post jason @jxnlco how many of you have a codex chief of staff thread?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"4:27 PM · Jun 22, 2026 13.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Codex参谋长线程用途调查
+
+## clean_text
+
+jason on X: "how many of you have a codex chief of staff thread?
+what kinds of stuff do you have them look over? https://t.co/Hktez5iYIB" / X
+Post
+Log in Sign up
+Post
+jason
+@jxnlco
+how many of you have a codex chief of staff thread?
+what kinds of stuff do you have them look over?
+4:27 PM · Jun 22, 2026 13.8K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 34
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 6 9 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 169
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 104
+Read 34 replies
+Don't miss what's happening
+People on X are the first to know.
+Log in Sign up
+
+## full_text
+
+jason on X: "how many of you have a codex chief of staff thread?
+what kinds of stuff do you have them look over? https://t.co/Hktez5iYIB" / X
+Post
+Log in Sign up
+Post
+jason
+@jxnlco
+how many of you have a codex chief of staff thread?
+what kinds of stuff do you have them look over?
+4:27 PM · Jun 22, 2026 13.8K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 34
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 2
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 6 9 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 169
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 0 4 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 104
+Read 34 replies
+Don't miss what's happening
+People on X are the first to know.
+Log in Sign up
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 51
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- diagnostics: {"readability_score":51,"text_length":2312,"paragraph_count":11,"sentence_count":5,"boilerplate_hits":2,"symbol_ratio":0.0294,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   你们中有多少人有一个Codex参谋长线程？ 你们让它们查看什么样的事情？
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   jason on X: "how many of you have a codex chief of staff thread?
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   what kinds of stuff do you have them look over?
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   co/Hktez5iYIB" / X Post Log in Sign up Post jason @jxnlco how many of you have a codex chief of staff thread?
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   4:27 PM · Jun 22, 2026 13.
+
+## business_elements
+
+- companies: X, Jason Liu (@jxnlco)
+- products: Codex, codex
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 5, 4, 27, 22, 2026, 13.8, 1, 0.25
+- quotes: how many of you have a codex chief of staff thread?
+what kinds of stuff do you have them look over? https://t.co/Hktez5iYIB
+
+## evidence_seed
+
+- company_actions: 你们中有多少人有一个Codex参谋长线程？ 你们让它们查看什么样的事情？ / jason on X: "how many of you have a codex chief of staff thread? / what kinds of stuff do you have them look over?
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: none
+- importance_score: 1
+- importance_reason: no core WaveSight importance signal
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Jason Liu (@jxnlco)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Codex参谋长线程用途调查","discovery_summary":"你们中有多少人有一个Codex参谋长线程？ 你们让它们查看什么样的事情？","source_name":"X：Jason Liu (@jxnlco)","origin_url":"https://x.com/jxnlco/status/2069094992929550576","discovered_at":"2026-06-23T01:57:11.609Z","rank_on_page":124,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+你们中有多少人有一个Codex参谋长线程？ 你们让它们查看什么样的事情？
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

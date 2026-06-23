@@ -1,0 +1,261 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-003",
+  "title": "OpenAI Daybreak、美团海报生成、PP-OCRv6、GLM 5.2 等 AI 进展",
+  "original_url": "https://x.com/hongming731/status/2069208819708887359",
+  "canonical_url": "https://x.com/hongming731/status/2069208819708887359",
+  "source_name": "X：洪明 (@hongming731)",
+  "source_type": "community",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-06-23T00:00:01.000Z",
+  "collected_at": "2026-06-23T02:03:46.430Z",
+  "language": "mixed",
+  "full_text": "Post\nLog in Sign up\nPost\nginobefun\n@hongming731\nBestBlogs 早报 · 06-23\n# OpenAI Daybreak / GPT-5.5-Cyber / Gray Swan / 提示注入 / 美团 PosterCraft\n[1] ★ 精讲｜Daybreak：保护全球每一家组织的安全工具\n本文出自 OpenAI 官方博客，介绍网络安全计划 Daybreak。核心观点：AI 已让漏洞发现不再是瓶颈，真正瓶颈是「修补」。关键支撑：Codex Security 已扫描超 3000 万次提交、覆盖 3 万多个代码库，超 50 万个问题被自动修复；GPT-5.5-Cyber 在 CyberGym 上达到 85.6% 最高得分（对比 81.8%）。值得读：安全能力首次系统化转向「补丁交付」。\n来源：OpenAI News\nbestblogs.dev/article/ea8af0…\n[2] ★ 精讲｜美团海报生成 AIGC 技术创新与实践\n本文来自美团技术团队，拆解其海报生成技术体系。核心观点：海报生成不止文生图，团队构建「生成-编辑-评判」闭环——PosterCraft（ICLR 2026）统一优化文字版式；PosterOmni（CVPR 2026）一模型覆盖六类编辑任务；PosterReward 作为首个海报奖励模型，在 PosterRewardBench-Advanced 上达到 86.0% 准确率，远超基线 40%-53%。已落地外卖套餐图、IP「袋鼠团团」等场景，值得读。\n来源：美团 · 技术团队\nbestblogs.dev/article/e06839…\n[3] ★ 精讲｜神话模型之后的红队测试访谈：对话 Zico Kolter 与 Matt Fredrikson（Gray Swan）\n本文是 Latent.Space 对 Gray Swan 联合创始人 Zico Kolter（OpenAI 安全委员会成员）与 Matt Fredrikson（CMU 教授、Gray Swan CEO）的访谈，两人是提示注入论文共同作者。核心观点：模型越大不会自动更安全，要把模型当「不可信系统」防御。关键支撑：其红队系统 Shade 已能比人类更擅长攻破模型；「人类 vs 浏览器智能体」挑战中人类抗钓鱼仅排第四，熟练红队仍能 60%-70% 成功率钓到真人。\n来源： Latent.Space\nbestblogs.dev/article/c4be1c…\n[4] 提示注入的机制解释（以及为什么你应该研究角色）— LessWrong\n本文解释了提示注入的本质在于 LLM 并非通过标签（如 <think>、<user>）来感知角色，而是依赖写作风格，这使得像 CoT Forgery 这样的攻击成为可能，并通过机制探测展示了角色混淆现象。\n来源：LessWrong\nbestblogs.dev/article/8f187d…\n[5] PP-OCRv6 登陆 Hugging Face：参数从 1.5M 到 34.5M，支持 50 种语言的 OCR 模型\nPP-OCRv6 是 PaddleOCR 推出的新一代多语言 OCR 模型系列，提供从 1.5M 到 34.5M 参数三个档次，支持多达 50 种语言，精度较前代显著提升。\n来源：Hugging Face - Blog\nbestblogs.dev/article/cebb20…\n[6] 当 RAG 用户提出模糊问题时：澄清一次，学习默认值\n本文提出了一种在 RAG 系统中处理用户模糊查询的模式：提出一次有针对性的澄清，从答案中学习默认值，之后对类似问题保持沉默。\n来源：Towards Data Science\nbestblogs.dev/article/b00e30…\n[7] 独家｜获超亿美元融资， Sand.ai 曹越：为什么视频是通往世界模型最重要的路径\n本文通过独家深度访谈 Sand.ai 创始人曹越，阐述了其从自回归路线、音画同出到 MoE 架构的三代技术赌注，并论证视频数据是走向世界模型最重要的路径。\n来源：智能涌现\nbestblogs.dev/article/ffc441…\n[8] AI 用得好不好，跟你会不会管人，我觉得越来越是同一件事。\n本文通过与 AI 协作重构项目的亲身经历，类比人员管理不同层级需要不同的管理颗粒度，并延伸思考在未来 AI 越来越强的背景下，人类管理者应聚焦于「思考应该思考什么」。\n来源：数字生命卡兹克\nbestblogs.dev/article/4b5966…\n[9] 2026「端侧 AI 战事」升级，苹果谷歌们在拼什么？\n文章通过采访面壁智能 CEO 李大海，分析 2026 年端侧 AI 战事升级：苹果、谷歌等巨头从压缩模型转向软硬协同，端侧模型落地面临芯片适配、量化极限与端云分工等关键挑战。\n来源：腾讯科技\nbestblogs.dev/article/4981e3…\n[10] GLM 5.2 + Browser Use v2 QA 子智能体在网站设计上击败 Fable 5\nGLM 5.2（纯文本模型）与 Browser Use v2 多模态 QA 子智能体配合，在网站设计上击败了 Fable 5，总成本不到 0.75 美元。\n来源：Browser Use( @ browser_use )\nbestblogs.dev/status/2068405…\n---\nBestBlogs.dev · 发现真正适合你的高质量内容\nBestBlogs 是 AI 驱动的私人阅读助手，帮助你发现真正适合你的高质量内容，欢迎体验。\n在线阅读： bestblogs.dev/explore/brief/…\nginobefun\n@hongming731\n2h\nArticle\nBestBlogs 早报 · 06-23｜OpenAI Daybreak 把补丁规模化，美团做出海报闭环，Gray Swan 谈红队对抗\n在线阅读本期早报\nBestBlogs.dev 是 AI 驱动的私人阅读助手。这是面向所有人的每日早报内容，如果你希望它基于你的兴趣和阅读习惯整理，可以体验「我的早报」。\n导语\nAI...\nbestblogs.dev\nDaybreak：保护全球每一家组织的安全工具 | BestBlogs.dev\nOpenAI 通过 Codex Security 插件、GPT-5.5-Cyber 模型、合作伙伴计划以及 Patch the Planet 倡议扩展 Daybreak，以加速大规模漏洞修复。\n12:00 AM · Jun 23, 2026 424 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3",
+  "clean_text": "Post\nLog in Sign up\nPost\nginobefun\n@hongming731\nBestBlogs 早报 · 06-23\n# OpenAI Daybreak / GPT-5.5-Cyber / Gray Swan / 提示注入 / 美团 PosterCraft\n[1] ★ 精讲｜Daybreak：保护全球每一家组织的安全工具\n本文出自 OpenAI 官方博客，介绍网络安全计划 Daybreak。核心观点：AI 已让漏洞发现不再是瓶颈，真正瓶颈是「修补」。关键支撑：Codex Security 已扫描超 3000 万次提交、覆盖 3 万多个代码库，超 50 万个问题被自动修复；GPT-5.5-Cyber 在 CyberGym 上达到 85.6% 最高得分（对比 81.8%）。值得读：安全能力首次系统化转向「补丁交付」。\n来源：OpenAI News\nbestblogs.dev/article/ea8af0…\n[2] ★ 精讲｜美团海报生成 AIGC 技术创新与实践\n本文来自美团技术团队，拆解其海报生成技术体系。核心观点：海报生成不止文生图，团队构建「生成-编辑-评判」闭环——PosterCraft（ICLR 2026）统一优化文字版式；PosterOmni（CVPR 2026）一模型覆盖六类编辑任务；PosterReward 作为首个海报奖励模型，在 PosterRewardBench-Advanced 上达到 86.0% 准确率，远超基线 40%-53%。已落地外卖套餐图、IP「袋鼠团团」等场景，值得读。\n来源：美团 · 技术团队\nbestblogs.dev/article/e06839…\n[3] ★ 精讲｜神话模型之后的红队测试访谈：对话 Zico Kolter 与 Matt Fredrikson（Gray Swan）\n本文是 Latent.Space 对 Gray Swan 联合创始人 Zico Kolter（OpenAI 安全委员会成员）与 Matt Fredrikson（CMU 教授、Gray Swan CEO）的访谈，两人是提示注入论文共同作者。核心观点：模型越大不会自动更安全，要把模型当「不可信系统」防御。关键支撑：其红队系统 Shade 已能比人类更擅长攻破模型；「人类 vs 浏览器智能体」挑战中人类抗钓鱼仅排第四，熟练红队仍能 60%-70% 成功率钓到真人。\n来源： Latent.Space\nbestblogs.dev/article/c4be1c…\n[4] 提示注入的机制解释（以及为什么你应该研究角色）— LessWrong\n本文解释了提示注入的本质在于 LLM 并非通过标签（如 <think>、<user>）来感知角色，而是依赖写作风格，这使得像 CoT Forgery 这样的攻击成为可能，并通过机制探测展示了角色混淆现象。\n来源：LessWrong\nbestblogs.dev/article/8f187d…\n[5] PP-OCRv6 登陆 Hugging Face：参数从 1.5M 到 34.5M，支持 50 种语言的 OCR 模型\nPP-OCRv6 是 PaddleOCR 推出的新一代多语言 OCR 模型系列，提供从 1.5M 到 34.5M 参数三个档次，支持多达 50 种语言，精度较前代显著提升。\n来源：Hugging Face - Blog\nbestblogs.dev/article/cebb20…\n[6] 当 RAG 用户提出模糊问题时：澄清一次，学习默认值\n本文提出了一种在 RAG 系统中处理用户模糊查询的模式：提出一次有针对性的澄清，从答案中学习默认值，之后对类似问题保持沉默。\n来源：Towards Data Science\nbestblogs.dev/article/b00e30…\n[7] 独家｜获超亿美元融资， Sand.ai 曹越：为什么视频是通往世界模型最重要的路径\n本文通过独家深度访谈 Sand.ai 创始人曹越，阐述了其从自回归路线、音画同出到 MoE 架构的三代技术赌注，并论证视频数据是走向世界模型最重要的路径。\n来源：智能涌现\nbestblogs.dev/article/ffc441…\n[8] AI 用得好不好，跟你会不会管人，我觉得越来越是同一件事。\n本文通过与 AI 协作重构项目的亲身经历，类比人员管理不同层级需要不同的管理颗粒度，并延伸思考在未来 AI 越来越强的背景下，人类管理者应聚焦于「思考应该思考什么」。\n来源：数字生命卡兹克\nbestblogs.dev/article/4b5966…\n[9] 2026「端侧 AI 战事」升级，苹果谷歌们在拼什么？\n文章通过采访面壁智能 CEO 李大海，分析 2026 年端侧 AI 战事升级：苹果、谷歌等巨头从压缩模型转向软硬协同，端侧模型落地面临芯片适配、量化极限与端云分工等关键挑战。\n来源：腾讯科技\nbestblogs.dev/article/4981e3…\n[10] GLM 5.2 + Browser Use v2 QA 子智能体在网站设计上击败 Fable 5\nGLM 5.2（纯文本模型）与 Browser Use v2 多模态 QA 子智能体配合，在网站设计上击败了 Fable 5，总成本不到 0.75 美元。\n来源：Browser Use( @ browser_use )\nbestblogs.dev/status/2068405…\n---\nBestBlogs.dev · 发现真正适合你的高质量内容\nBestBlogs 是 AI 驱动的私人阅读助手，帮助你发现真正适合你的高质量内容，欢迎体验。\n在线阅读： bestblogs.dev/explore/brief/…\nginobefun\n@hongming731\n2h\nArticle\nBestBlogs 早报 · 06-23｜OpenAI Daybreak 把补丁规模化，美团做出海报闭环，Gray Swan 谈红队对抗\n在线阅读本期早报\nBestBlogs.dev 是 AI 驱动的私人阅读助手。这是面向所有人的每日早报内容，如果你希望它基于你的兴趣和阅读习惯整理，可以体验「我的早报」。\n导语\nAI...\nbestblogs.dev\nDaybreak：保护全球每一家组织的安全工具 | BestBlogs.dev\nOpenAI 通过 Codex Security 插件、GPT-5.5-Cyber 模型、合作伙伴计划以及 Patch the Planet 倡议扩展 Daybreak，以加速大规模漏洞修复。\n12:00 AM · Jun 23, 2026 424 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-23/r-003-openai-daybreak-美团海报生成-pp-ocrv6-glm-5-2-等-ai-进展.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-23/r-003-openai-daybreak-美团海报生成-pp-ocrv6-glm-5-2-等-ai-进展.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 85,
+  "extractor_diagnostics": {
+    "readability_score": 85,
+    "text_length": 3242,
+    "paragraph_count": 44,
+    "sentence_count": 16,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0133,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3242,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "52fbde4bb47efdf7",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "X：洪明 (@hongming731)",
+  "capture_scope": "visible_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "OpenAI Daybreak、美团海报生成、PP-OCRv6、GLM 5.2 等 AI 进展",
+    "discovery_summary": "OpenAI 发布网络安全计划 Daybreak，其 GPT-5.5-Cyber 在 CyberGym 上达 85.6% 最高得分（对比 81.8%），Codex Security 已扫描超 3000 万次提交、自动修复超 50 万问题。美团推出海报生成技术体系 PosterCraft（ICLR 2026）、PosterOmni（CVPR 2026），PosterReward 在相应基准上达 86.0% 准确率。PP-OCRv6 登陆 HuggingFace，参数 1.5M-34.5M，支持 50 种语言。GLM 5.2 与 Browser Use v2 多模态 QA 子智能体配合，以不到 0.75 美元成本在网站设计上击败 Fable 5。",
+    "source_name": "X：洪明 (@hongming731)",
+    "origin_url": "https://x.com/hongming731/status/2069208819708887359",
+    "discovered_at": "2026-06-23T01:57:11.586Z",
+    "rank_on_page": 37,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "0a07456fd2c075b2",
+  "content_hash": "52fbde4bb47efdf7",
+  "full_text_hash": "52fbde4bb47efdf7",
+  "semantic_hash": "5bc70c9ae506e43d",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-23T00:00:01.000Z",
+  "last_seen_at": "2026-06-23T02:03:46.430Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "OpenAI 发布网络安全计划 Daybreak，其 GPT-5.5-Cyber 在 CyberGym 上达 85.6% 最高得分（对比 81.8%），Codex Security 已扫描超 3000 万次提交、自动修复超 50 万问题。美团推出海报生成技术体系 PosterCraft（ICLR 2026）、PosterOmni（CVPR 2026），PosterReward 在相应基准上达 86.0% 准确率。PP-OCRv6 登陆 HuggingFace，参数 1.5M-34.5M，支持 50 种语言。GLM 5.2 与 Browser Use v2 多模态 QA 子智能体配合，以不到 0.75 美元成本在网站设计上击败 Fable 5。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Post Log in Sign up Post ginobefun @hongming731 BestBlogs 早报 · 06-23 # OpenAI Daybreak / GPT-5.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "5-Cyber / Gray Swan / 提示注入 / 美团 PosterCraft [1] ★ 精讲｜Daybreak：保护全球每一家组织的安全工具 本文出自 OpenAI 官方博客，介绍网络安全计划 Daybreak。",
+      "supports": [
+        "daily_observation",
+        "heatmap"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "opinion",
+      "text": "核心观点：AI 已让漏洞发现不再是瓶颈，真正瓶颈是「修补」。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "关键支撑：Codex Security 已扫描超 3000 万次提交、覆盖 3 万多个代码库，超 50 万个问题被自动修复；GPT-5.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5-Cyber 在 CyberGym 上达到 85.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "X",
+      "洪明 (@hongming731)",
+      "OpenAI"
+    ],
+    "products": [
+      "GPT-5",
+      "Codex"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "6",
+      "5.2",
+      "5.5",
+      "85.6%",
+      "81.8%",
+      "3000 万",
+      "50 万",
+      "2026"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Post Log in Sign up Post ginobefun @hongming731 BestBlogs 早报 · 06-23 # OpenAI Daybreak / GPT-5.",
+      "5-Cyber 在 CyberGym 上达到 85."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": [
+      "5-Cyber / Gray Swan / 提示注入 / 美团 PosterCraft [1] ★ 精讲｜Daybreak：保护全球每一家组织的安全工具 本文出自 OpenAI 官方博客，介绍网络安全计划 Daybreak。"
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "user_feedback_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# OpenAI Daybreak、美团海报生成、PP-OCRv6、GLM 5.2 等 AI 进展\n\n- raw_id: R-003\n- original_url: https://x.com/hongming731/status/2069208819708887359\n- source_name: X：洪明 (@hongming731)\n- collected_at: 2026-06-23T02:03:46.430Z\n\n## clean_text\n\nPost\nLog in Sign up\nPost\nginobefun\n@hongming731\nBestBlogs 早报 · 06-23\n# OpenAI Daybreak / GPT-5.5-Cyber / Gray Swan / 提示注入 / 美团 PosterCraft\n[1] ★ 精讲｜Daybreak：保护全球每一家组织的安全工具\n本文出自 OpenAI 官方博客，介绍网络安全计划 Daybreak。核心观点：AI 已让漏洞发现不再是瓶颈，真正瓶颈是「修补」。关键支撑：Codex Security 已扫描超 3000 万次提交、覆盖 3 万多个代码库，超 50 万个问题被自动修复；GPT-5.5-Cyber 在 CyberGym 上达到 85.6% 最高得分（对比 81.8%）。值得读：安全能力首次系统化转向「补丁交付」。\n来源：OpenAI News\nbestblogs.dev/article/ea8af0…\n[2] ★ 精讲｜美团海报生成 AIGC 技术创新与实践\n本文来自美团技术团队，拆解其海报生成技术体系。核心观点：海报生成不止文生图，团队构建「生成-编辑-评判」闭环——PosterCraft（ICLR 2026）统一优化文字版式；PosterOmni（CVPR 2026）一模型覆盖六类编辑任务；PosterReward 作为首个海报奖励模型，在 PosterRewardBench-Advanced 上达到 86.0% 准确率，远超基线 40%-53%。已落地外卖套餐图、IP「袋鼠团团」等场景，值得读。\n来源：美团 · 技术团队\nbestblogs.dev/article/e06839…\n[3] ★ 精讲｜神话模型之后的红队测试访谈：对话 Zico Kolter 与 Matt Fredrikson（Gray Swan）\n本文是 Latent.Space 对 Gray Swan 联合创始人 Zico Kolter（OpenAI 安全委员会成员）与 Matt Fredrikson（CMU 教授、Gray Swan CEO）的访谈，两人是提示注入论文共同作者。核心观点：模型越大不会自动更安全，要把模型当「不可信系统」防御。关键支撑：其红队系统 Shade 已能比人类更擅长攻破模型；「人类 vs 浏览器智能体」挑战中人类抗钓鱼仅排第四，熟练红队仍能 60%-70% 成功率钓到真人。\n来源： Latent.Space\nbestblogs.dev/article/c4be1c…\n[4] 提示注入的机制解释（以及为什么你应该研究角色）— LessWrong\n本文解释了提示注入的本质在于 LLM 并非通过标签（如 <think>、<user>）来感知角色，而是依赖写作风格，这使得像 CoT Forgery 这样的攻击成为可能，并通过机制探测展示了角色混淆现象。\n来源：LessWrong\nbestblogs.dev/article/8f187d…\n[5] PP-OCRv6 登陆 Hugging Face：参数从 1.5M 到 34.5M，支持 50 种语言的 OCR 模型\nPP-OCRv6 是 PaddleOCR 推出的新一代多语言 OCR 模型系列，提供从 1.5M 到 34.5M 参数三个档次，支持多达 50 种语言，精度较前代显著提升。\n来源：Hugging Face - Blog\nbestblogs.dev/article/cebb20…\n[6] 当 RAG 用户提出模糊问题时：澄清一次，学习默认值\n本文提出了一种在 RAG 系统中处理用户模糊查询的模式：提出一次有针对性的澄清，从答案中学习默认值，之后对类似问题保持沉默。\n来源：Towards Data Science\nbestblogs.dev/article/b00e30…\n[7] 独家｜获超亿美元融资， Sand.ai 曹越：为什么视频是通往世界模型最重要的路径\n本文通过独家深度访谈 Sand.ai 创始人曹越，阐述了其从自回归路线、音画同出到 MoE 架构的三代技术赌注，并论证视频数据是走向世界模型最重要的路径。\n来源：智能涌现\nbestblogs.dev/article/ffc441…\n[8] AI 用得好不好，跟你会不会管人，我觉得越来越是同一件事。\n本文通过与 AI 协作重构项目的亲身经历，类比人员管理不同层级需要不同的管理颗粒度，并延伸思考在未来 AI 越来越强的背景下，人类管理者应聚焦于「思考应该思考什么」。\n来源：数字生命卡兹克\nbestblogs.dev/article/4b5966…\n[9] 2026「端侧 AI 战事」升级，苹果谷歌们在拼什么？\n文章通过采访面壁智能 CEO 李大海，分析 2026 年端侧 AI 战事升级：苹果、谷歌等巨头从压缩模型转向软硬协同，端侧模型落地面临芯片适配、量化极限与端云分工等关键挑战。\n来源：腾讯科技\nbestblogs.dev/article/4981e3…\n[10] GLM 5.2 + Browser Use v2 QA 子智能体在网站设计上击败 Fable 5\nGLM 5.2（纯文本模型）与 Browser Use v2 多模态 QA 子智能体配合，在网站设计上击败了 Fable 5，总成本不到 0.75 美元。\n来源：Browser Use( @ browser_use )\nbestblogs.dev/status/2068405…\n---\nBestBlogs.dev · 发现真正适合你的高质量内容\nBestBlogs 是 AI 驱动的私人阅读助手，帮助你发现真正适合你的高质量内容，欢迎体验。\n在线阅读： bestblogs.dev/explore/brief/…\nginobefun\n@hongming731\n2h\nArticle\nBestBlogs 早报 · 06-23｜OpenAI Daybreak 把补丁规模化，美团做出海报闭环，Gray Swan 谈红队对抗\n在线阅读本期早报\nBestBlogs.dev 是 AI 驱动的私人阅读助手。这是面向所有人的每日早报内容，如果你希望它基于你的兴趣和阅读习惯整理，可以体验「我的早报」。\n导语\nAI...\nbestblogs.dev\nDaybreak：保护全球每一家组织的安全工具 | BestBlogs.dev\nOpenAI 通过 Codex Security 插件、GPT-5.5-Cyber 模型、合作伙伴计划以及 Patch the Planet 倡议扩展 Daybreak，以加速大规模漏洞修复。\n12:00 AM · Jun 23, 2026 424 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3\n\n## full_text\n\nPost\nLog in Sign up\nPost\nginobefun\n@hongming731\nBestBlogs 早报 · 06-23\n# OpenAI Daybreak / GPT-5.5-Cyber / Gray Swan / 提示注入 / 美团 PosterCraft\n[1] ★ 精讲｜Daybreak：保护全球每一家组织的安全工具\n本文出自 OpenAI 官方博客，介绍网络安全计划 Daybreak。核心观点：AI 已让漏洞发现不再是瓶颈，真正瓶颈是「修补」。关键支撑：Codex Security 已扫描超 3000 万次提交、覆盖 3 万多个代码库，超 50 万个问题被自动修复；GPT-5.5-Cyber 在 CyberGym 上达到 85.6% 最高得分（对比 81.8%）。值得读：安全能力首次系统化转向「补丁交付」。\n来源：OpenAI News\nbestblogs.dev/article/ea8af0…\n[2] ★ 精讲｜美团海报生成 AIGC 技术创新与实践\n本文来自美团技术团队，拆解其海报生成技术体系。核心观点：海报生成不止文生图，团队构建「生成-编辑-评判」闭环——PosterCraft（ICLR 2026）统一优化文字版式；PosterOmni（CVPR 2026）一模型覆盖六类编辑任务；PosterReward 作为首个海报奖励模型，在 PosterRewardBench-Advanced 上达到 86.0% 准确率，远超基线 40%-53%。已落地外卖套餐图、IP「袋鼠团团」等场景，值得读。\n来源：美团 · 技术团队\nbestblogs.dev/article/e06839…\n[3] ★ 精讲｜神话模型之后的红队测试访谈：对话 Zico Kolter 与 Matt Fredrikson（Gray Swan）\n本文是 Latent.Space 对 Gray Swan 联合创始人 Zico Kolter（OpenAI 安全委员会成员）与 Matt Fredrikson（CMU 教授、Gray Swan CEO）的访谈，两人是提示注入论文共同作者。核心观点：模型越大不会自动更安全，要把模型当「不可信系统」防御。关键支撑：其红队系统 Shade 已能比人类更擅长攻破模型；「人类 vs 浏览器智能体」挑战中人类抗钓鱼仅排第四，熟练红队仍能 60%-70% 成功率钓到真人。\n来源： Latent.Space\nbestblogs.dev/article/c4be1c…\n[4] 提示注入的机制解释（以及为什么你应该研究角色）— LessWrong\n本文解释了提示注入的本质在于 LLM 并非通过标签（如 <think>、<user>）来感知角色，而是依赖写作风格，这使得像 CoT Forgery 这样的攻击成为可能，并通过机制探测展示了角色混淆现象。\n来源：LessWrong\nbestblogs.dev/article/8f187d…\n[5] PP-OCRv6 登陆 Hugging Face：参数从 1.5M 到 34.5M，支持 50 种语言的 OCR 模型\nPP-OCRv6 是 PaddleOCR 推出的新一代多语言 OCR 模型系列，提供从 1.5M 到 34.5M 参数三个档次，支持多达 50 种语言，精度较前代显著提升。\n来源：Hugging Face - Blog\nbestblogs.dev/article/cebb20…\n[6] 当 RAG 用户提出模糊问题时：澄清一次，学习默认值\n本文提出了一种在 RAG 系统中处理用户模糊查询的模式：提出一次有针对性的澄清，从答案中学习默认值，之后对类似问题保持沉默。\n来源：Towards Data Science\nbestblogs.dev/article/b00e30…\n[7] 独家｜获超亿美元融资， Sand.ai 曹越：为什么视频是通往世界模型最重要的路径\n本文通过独家深度访谈 Sand.ai 创始人曹越，阐述了其从自回归路线、音画同出到 MoE 架构的三代技术赌注，并论证视频数据是走向世界模型最重要的路径。\n来源：智能涌现\nbestblogs.dev/article/ffc441…\n[8] AI 用得好不好，跟你会不会管人，我觉得越来越是同一件事。\n本文通过与 AI 协作重构项目的亲身经历，类比人员管理不同层级需要不同的管理颗粒度，并延伸思考在未来 AI 越来越强的背景下，人类管理者应聚焦于「思考应该思考什么」。\n来源：数字生命卡兹克\nbestblogs.dev/article/4b5966…\n[9] 2026「端侧 AI 战事」升级，苹果谷歌们在拼什么？\n文章通过采访面壁智能 CEO 李大海，分析 2026 年端侧 AI 战事升级：苹果、谷歌等巨头从压缩模型转向软硬协同，端侧模型落地面临芯片适配、量化极限与端云分工等关键挑战。\n来源：腾讯科技\nbestblogs.dev/article/4981e3…\n[10] GLM 5.2 + Browser Use v2 QA 子智能体在网站设计上击败 Fable 5\nGLM 5.2（纯文本模型）与 Browser Use v2 多模态 QA 子智能体配合，在网站设计上击败了 Fable 5，总成本不到 0.75 美元。\n来源：Browser Use( @ browser_use )\nbestblogs.dev/status/2068405…\n---\nBestBlogs.dev · 发现真正适合你的高质量内容\nBestBlogs 是 AI 驱动的私人阅读助手，帮助你发现真正适合你的高质量内容，欢迎体验。\n在线阅读： bestblogs.dev/explore/brief/…\nginobefun\n@hongming731\n2h\nArticle\nBestBlogs 早报 · 06-23｜OpenAI Daybreak 把补丁规模化，美团做出海报闭环，Gray Swan 谈红队对抗\n在线阅读本期早报\nBestBlogs.dev 是 AI 驱动的私人阅读助手。这是面向所有人的每日早报内容，如果你希望它基于你的兴趣和阅读习惯整理，可以体验「我的早报」。\n导语\nAI...\nbestblogs.dev\nDaybreak：保护全球每一家组织的安全工具 | BestBlogs.dev\nOpenAI 通过 Codex Security 插件、GPT-5.5-Cyber 模型、合作伙伴计划以及 Patch the Planet 倡议扩展 Daybreak，以加速大规模漏洞修复。\n12:00 AM · Jun 23, 2026 424 Views\n:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 3\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 85\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] OpenAI 发布网络安全计划 Daybreak，其 GPT-5.5-Cyber 在 CyberGym 上达 85.6% 最高得分（对比 81.8%），Codex Security 已扫描超 3000 万次提交、自动修复超 50 万问题。美团推出海报生成技术体系 PosterCraft（ICLR 2026）、PosterOmni（CVPR 2026），PosterReward 在相应基准上达 86.0% 准确率。PP-OCRv6 登陆 HuggingFace，参数 1.5M-34.5M，支持 50 种语言。GLM 5.2 与 Browser Use v2 多模态 QA 子智能体配合，以不到 0.75 美元成本在网站设计上击败 Fable 5。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Post Log in Sign up Post ginobefun @hongming731 BestBlogs 早报 · 06-23 # OpenAI Daybreak / GPT-5.\n3. [supporting_context / daily_observation, heatmap / high] 5-Cyber / Gray Swan / 提示注入 / 美团 PosterCraft [1] ★ 精讲｜Daybreak：保护全球每一家组织的安全工具 本文出自 OpenAI 官方博客，介绍网络安全计划 Daybreak。\n4. [opinion / daily_observation, heatmap, viewpoint / high] 核心观点：AI 已让漏洞发现不再是瓶颈，真正瓶颈是「修补」。\n5. [number / daily_observation, heatmap, case, trend / high] 关键支撑：Codex Security 已扫描超 3000 万次提交、覆盖 3 万多个代码库，超 50 万个问题被自动修复；GPT-5.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] 5-Cyber 在 CyberGym 上达到 85.\n"
+}
