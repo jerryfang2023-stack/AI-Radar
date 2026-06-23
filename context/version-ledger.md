@@ -22,12 +22,12 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Version name | Business Signal Core Source Hygiene |
 | Version layer | Minor |
 | Release date | 2026-06-22 |
-| Last modified at | 2026-06-22T14:35:00+08:00 |
+| Last modified at | 2026-06-23T15:25:00+08:00 |
 | Product version | V3.3 |
 | Main website version | SITE-V3.3.8.2 |
 | Business Signals column version | BSIG-V1.1.1-core-source-hygiene |
 | Enterprise AI lens version | EAI-V1.1.0-fde-lens-pool |
-| Intelligence Map column version | IMAP-V1.1.0-weekly-report |
+| Intelligence Map column version | IMAP-V1.1.1-weekly-report-archive-list |
 | Business Signals data contract | V3.3.6.3-business-source-artifact-aggregation |
 | Weekly Report content source | `01-SiteV2/content/08-report/` |
 | Operations backend version | OPS-V1.0.1 |
@@ -53,7 +53,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Hermes early handoff supervises the three lanes with lane-specific takeover windows: Community Intelligence publish at 09:30 after the 08:30 Windows collector, 08:45 publish check, and 09:00 Codex local fallback / repair window; First-Line Viewpoints RSS at 09:30 after the 08:30 local `builder-observation-daily-sync` collection/build/sync attempt and single 09:17 GitHub fallback; and Business Signals at 09:45 / 09:55. Hermes also records the afternoon follow-builders skill publish at 16:30.
 - Hermes early handoff is staged: 09:30 may dispatch Community publish and First-Line RSS while Business waits; 09:45 may dispatch Business while Community / First-Line only recheck; 09:55 is final review only and cannot start a new routine dispatch.
 - Intelligence Map and Dashboard follow the Business Signals data chain.
-- Intelligence Map is versioned independently as `IMAP-V1.1.0-weekly-report`. Its weekly report subcolumn reads future weekly report content from `01-SiteV2/content/08-report/`, with the current static frontstage page acting as the first published issue.
+- Intelligence Map is versioned independently as `IMAP-V1.1.1-weekly-report-archive-list`. Its weekly report subcolumn reads future weekly report content from `01-SiteV2/content/08-report/`, shows the current issue plus archive entries, and keeps unpublished archive slots visibly marked instead of linking to missing reports.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
@@ -83,7 +83,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | Operations Backend / 运营大后台 | `OPS-V1.0.1` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Operations console shell, navigation, module entry contracts, and backend-facing version ledger | HTML meta `wavesight-ops-console-version`, visible sidebar version, version ledger |
 | Topic Center / 选题中心 module | `V2.2.2-source-title` | Automated in the Business Signals daily PR chain at 08:57 Asia/Shanghai; regenerated after the Business frontstage gate passes and deployed through GitHub Pages after auto-merge | `business-signals + first-line-viewpoints + community-intelligence` | `topic-center.json/js`, `topic-center-hermes.json/md`, and local `04-AIP/01-选题库/<date>-每日选题.md` when local sync can run |
 | Business Signals / 商业信号 column | `BSIG-V1.1.1-core-source-hygiene` | Published through the main GitHub Pages frontstage; keeps Top10 as the primary desk and adds the 企业AI化 secondary lens | V3.3.6.3 Card data contract plus Enterprise AI lens rendering plus Core Pool source hygiene gates | `v3-data-observation.html`, `v3-data-observation-desk.json` meta, version ledger |
-| Intelligence Map / 情报地图 column | `IMAP-V1.1.0-weekly-report` | Published through the main GitHub Pages frontstage. Future weekly report issues must be sourced from `01-SiteV2/content/08-report/` before page generation. | Business Signals relationship graph + Weekly Business Change Radar content | `intelligence-map.html`, `weekly-ai-business-change-radar.html`, `assets/weekly-report.css`, `01-SiteV2/content/08-report/*.md` |
+| Intelligence Map / 情报地图 column | `IMAP-V1.1.1-weekly-report-archive-list` | Published through the main GitHub Pages frontstage. Future weekly report issues must be sourced from `01-SiteV2/content/08-report/` before page generation. The weekly section shows current and archive weekly report cards with explicit pending states for missing archive issues. | Business Signals relationship graph + Weekly Business Change Radar content | `intelligence-map.html`, `weekly-ai-business-change-radar.html`, `weekly-ai-business-change-radar-2026-06-15.html`, `assets/weekly-report.css`, `assets/v3-data-observation-desk.css`, `01-SiteV2/content/08-report/*.md` |
 
 ## Current Sources Of Truth
 
@@ -159,6 +159,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
+| IMAP-V1.1.1-weekly-report-archive-list | 2026-06-23T15:25:00+08:00 | Updates the Intelligence Map weekly report subcolumn from a single current report card to a three-entry weekly archive list, adds stable selector routing and a 2026-06-15 archive detail page, and marks missing archive weeks as pending instead of linking to nonexistent reports. | current intelligence map column |
 | SITE-V3.3.8.2 / BSIG-V1.1.1-core-source-hygiene / EAI-V1.1.0-fde-lens-pool | 2026-06-22T14:35:00+08:00 | Tightens Business Signals Core Pool source hygiene: source labels are traceability-only; generic FDE role/service pages, job posts, role explainers, broad lists, funding roundups, generic funding commentary, stale sources, and search-query artifacts cannot satisfy Core Pool / Card quantity gaps. | current |
 | SITE-V3.3.8.1 / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.1.0-fde-lens-pool | 2026-06-19T16:10:00+08:00 | Splits Enterprise AI / FDE into an independent Lens Pool fed by Raw / Pool evidence while preserving Business Signals Top10 and Card rules. Adds `enterprise-ai-fde.json`, source-backed FDE detail checks, and Obsidian `content/09-fde` sync from the new pool. | upgraded |
 | SITE-V3.3.8-enterprise-ai-transformation / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.0.0-enterprise-ai-transformation | 2026-06-17T16:00:05+08:00 | Adds the 企业AI化 secondary lens to Business Signals for FDE-style implementation monitoring and consulting-relevant reading. The public table uses one case per row, keeps `AI化动作` and `Tags`, and hides diagnostic fields that do not help boss-facing decisions. | upgraded |
