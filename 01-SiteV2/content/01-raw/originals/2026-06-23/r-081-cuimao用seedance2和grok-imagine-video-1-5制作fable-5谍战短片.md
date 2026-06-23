@@ -1,0 +1,246 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-081
+title: "CuiMao用seedance2和Grok Imagine Video 1.5制作Fable 5谍战短片"
+original_url: "https://x.com/berryxia/status/2068965050027851994"
+canonical_url: "https://x.com/berryxia/status/2068965050027851994"
+source_name: "X：Berry Xia (@berryxia)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-22T07:51:22.000Z"
+collected_at: 2026-06-23T02:03:46.678Z
+language: mixed
+full_text_hash: b3bef308031527d6
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-23/r-081-cuimao用seedance2和grok-imagine-video-1-5制作fable-5谍战短片.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-23/r-081-cuimao用seedance2和grok-imagine-video-1-5制作fable-5谍战短片.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: medium
+extraction_method: "main"
+readability_score: 67
+extractor_diagnostics: {"readability_score":67,"text_length":2068,"paragraph_count":12,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0.0247,"method":"main"}
+has_full_text: true
+content_length: 2068
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b3bef308031527d6","missing":[]}
+source_volatility: high
+community_name: "X：Berry Xia (@berryxia)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"CuiMao用seedance2和Grok Imagine Video 1.5制作Fable 5谍战短片","discovery_summary":"CuiMao使用seedance2与Grok Imagine Video 1.5制作了一部7分钟谍战短片，讲述Fable 5发布后24小时内的虚构事件：Anthropic CEO Dario突然失联，美国国防部长Pete亲自审讯，正在美国度假看世界杯的CuiMao收到神秘取件短信，内含验证码、太阳花与自毁录音。短片将近期真实出口管制事件包装成完整剧情，结尾暗示封杀背后更深原因。近日CuiMao为扩大影响力，追加了日语字幕版本。","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2068965050027851994","discovered_at":"2026-06-23T01:57:11.633Z","rank_on_page":229,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 97f04fd6e4c5ed78
+content_hash: b3bef308031527d6
+semantic_hash: 418fef88bb383edb
+duplicate_of: ""
+first_seen_at: "2026-06-22T07:51:22.000Z"
+last_seen_at: 2026-06-23T02:03:46.678Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":3,"importance_reason":"product teaser without enough launch evidence; rubric=3 plausible but not core-ready","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":4,"emerging_signal_score":4}
+business_elements: {"companies":["X","Berry Xia (@berryxia)","Anthropic"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["2","1.5","5","7","24","00","20","00\nM"],"quotes":[]}
+evidence_seed: {"company_actions":["CuiMao使用seedance2与Grok Imagine Video 1.5制作了一部7分钟谍战短片，讲述Fable 5发布后24小时内的虚构事件：Anthropic CEO Dario突然失联，美国国防部长Pete亲自审讯，正在美国度假看世界杯的CuiMao收到神秘取件短信，内含验证码、太阳花与自毁录音。短片将近期真实出口管制事件包装成完整剧情，结尾暗示封杀背后更深原因。近日CuiMao为扩大影响力，追加了日语字幕版本。","Post Log in Sign up Post Berryxia.","必须卧槽了… 为了给Cuimao扩大影响力，我添加了日语字幕版本！"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"funding","text":"CuiMao使用seedance2与Grok Imagine Video 1.5制作了一部7分钟谍战短片，讲述Fable 5发布后24小时内的虚构事件：Anthropic CEO Dario突然失联，美国国防部长Pete亲自审讯，正在美国度假看世界杯的CuiMao收到神秘取件短信，内含验证码、太阳花与自毁录音。短片将近期真实出口管制事件包装成完整剧情，结尾暗示封杀背后更深原因。近日CuiMao为扩大影响力，追加了日语字幕版本。","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Post Log in Sign up Post Berryxia.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"必须卧槽了… 为了给Cuimao扩大影响力，我添加了日语字幕版本！","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"CuiMao把Fable 5被封杀的真实事件，拍成了一部7分钟的谍战短片，还把Dario和美国国防部长都请进了剧情。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"CuiMao用seedance2 + Grok Imagine Video 1.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"5做的这个短片，讲了Fable 5发布后24小时内发生的事。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# CuiMao用seedance2和Grok Imagine Video 1.5制作Fable 5谍战短片
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Berryxia.AI
+@berryxia
+兄弟们！必须卧槽了…
+为了给Cuimao扩大影响力，我添加了日语字幕版本！
+CuiMao把Fable 5被封杀的真实事件，拍成了一部7分钟的谍战短片，还把Dario和美国国防部长都请进了剧情。
+CuiMao用seedance2 + Grok Imagine Video 1.5做的这个短片，讲了Fable 5发布后24小时内发生的事。
+Anthropic CEO Dario突然失联，美国国防部长Pete亲自出面审讯，而正在美国度假看世界杯的CuiMao收到了一条来自Dario的神秘取件短信。
+验证码、太阳花、自毁录音……
+整个故事把最近真实发生的出口管制事件，包装成了一个有开头、有高潮、有伏笔的完整谍战剧。
+结尾甚至暗示Fable 5被封杀背后有更深的“原因”。
+日本的朋友们可以直接无障碍欣赏了… 太牛了Z
+00:00
+CuiMao
+@CuiMao
+20h
+Fable 5发布后的24小时内，Anthropic CEO Dario突然失联，美国国防部长Pete亲自审讯。与此同时，在美国度假观看世界杯的 CuiMao收到一条来自Dario的神秘取件短信。一个验证码，一朵太阳花，一段即将自毁的录音，将揭开 Fable 5 被封杀背后真正的原因。
+00:00
+Made with AI
+7:51 AM · Jun 22, 2026 16.1K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 35
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 23
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 11
+Read 35 replies
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Berryxia.AI
+@berryxia
+兄弟们！必须卧槽了…
+为了给Cuimao扩大影响力，我添加了日语字幕版本！
+CuiMao把Fable 5被封杀的真实事件，拍成了一部7分钟的谍战短片，还把Dario和美国国防部长都请进了剧情。
+CuiMao用seedance2 + Grok Imagine Video 1.5做的这个短片，讲了Fable 5发布后24小时内发生的事。
+Anthropic CEO Dario突然失联，美国国防部长Pete亲自出面审讯，而正在美国度假看世界杯的CuiMao收到了一条来自Dario的神秘取件短信。
+验证码、太阳花、自毁录音……
+整个故事把最近真实发生的出口管制事件，包装成了一个有开头、有高潮、有伏笔的完整谍战剧。
+结尾甚至暗示Fable 5被封杀背后有更深的“原因”。
+日本的朋友们可以直接无障碍欣赏了… 太牛了Z
+00:00
+CuiMao
+@CuiMao
+20h
+Fable 5发布后的24小时内，Anthropic CEO Dario突然失联，美国国防部长Pete亲自审讯。与此同时，在美国度假观看世界杯的 CuiMao收到一条来自Dario的神秘取件短信。一个验证码，一朵太阳花，一段即将自毁的录音，将揭开 Fable 5 被封杀背后真正的原因。
+00:00
+Made with AI
+7:51 AM · Jun 22, 2026 16.1K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 3 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 35
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 3 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 23
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 11
+Read 35 replies
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 67
+- fetch_status: fetched-readable-text-main
+- extraction_quality: medium
+- diagnostics: {"readability_score":67,"text_length":2068,"paragraph_count":12,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0.0247,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
+   CuiMao使用seedance2与Grok Imagine Video 1.5制作了一部7分钟谍战短片，讲述Fable 5发布后24小时内的虚构事件：Anthropic CEO Dario突然失联，美国国防部长Pete亲自审讯，正在美国度假看世界杯的CuiMao收到神秘取件短信，内含验证码、太阳花与自毁录音。短片将近期真实出口管制事件包装成完整剧情，结尾暗示封杀背后更深原因。近日CuiMao为扩大影响力，追加了日语字幕版本。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Post Log in Sign up Post Berryxia.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   必须卧槽了… 为了给Cuimao扩大影响力，我添加了日语字幕版本！
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   CuiMao把Fable 5被封杀的真实事件，拍成了一部7分钟的谍战短片，还把Dario和美国国防部长都请进了剧情。
+
+5. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
+   CuiMao用seedance2 + Grok Imagine Video 1.
+
+6. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   5做的这个短片，讲了Fable 5发布后24小时内发生的事。
+
+## business_elements
+
+- companies: X, Berry Xia (@berryxia), Anthropic
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 2, 1.5, 5, 7, 24, 00, 20, 00
+M
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: CuiMao使用seedance2与Grok Imagine Video 1.5制作了一部7分钟谍战短片，讲述Fable 5发布后24小时内的虚构事件：Anthropic CEO Dario突然失联，美国国防部长Pete亲自审讯，正在美国度假看世界杯的CuiMao收到神秘取件短信，内含验证码、太阳花与自毁录音。短片将近期真实出口管制事件包装成完整剧情，结尾暗示封杀背后更深原因。近日CuiMao为扩大影响力，追加了日语字幕版本。 / Post Log in Sign up Post Berryxia. / 必须卧槽了… 为了给Cuimao扩大影响力，我添加了日语字幕版本！
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 3
+- importance_reason: product teaser without enough launch evidence; rubric=3 plausible but not core-ready
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 4
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Berry Xia (@berryxia)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"CuiMao用seedance2和Grok Imagine Video 1.5制作Fable 5谍战短片","discovery_summary":"CuiMao使用seedance2与Grok Imagine Video 1.5制作了一部7分钟谍战短片，讲述Fable 5发布后24小时内的虚构事件：Anthropic CEO Dario突然失联，美国国防部长Pete亲自审讯，正在美国度假看世界杯的CuiMao收到神秘取件短信，内含验证码、太阳花与自毁录音。短片将近期真实出口管制事件包装成完整剧情，结尾暗示封杀背后更深原因。近日CuiMao为扩大影响力，追加了日语字幕版本。","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2068965050027851994","discovered_at":"2026-06-23T01:57:11.633Z","rank_on_page":229,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+CuiMao使用seedance2与Grok Imagine Video 1.5制作了一部7分钟谍战短片，讲述Fable 5发布后24小时内的虚构事件：Anthropic CEO Dario突然失联，美国国防部长Pete亲自审讯，正在美国度假看世界杯的CuiMao收到神秘取件短信，内含验证码、太阳花与自毁录音。短片将近期真实出口管制事件包装成完整剧情，结尾暗示封杀背后更深原因。近日CuiMao为扩大影响力，追加了日语字幕版本。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,220 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-084
+title: "百川智能联合清华发布医疗增强大模型 Baichuan-M4，登顶 OpenAI 医疗评测"
+original_url: "https://www.ithome.com/0/967/106.htm"
+canonical_url: "https://ithome.com/0/967/106.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-22T09:12:18.000Z"
+collected_at: 2026-06-23T02:03:46.684Z
+language: mixed
+full_text_hash: 75b570527cdfc043
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-23/r-084-百川智能联合清华发布医疗增强大模型-baichuan-m4-登顶-openai-医疗评测.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-23/r-084-百川智能联合清华发布医疗增强大模型-baichuan-m4-登顶-openai-医疗评测.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 61
+extractor_diagnostics: {"readability_score":61,"text_length":1100,"paragraph_count":13,"sentence_count":12,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+has_full_text: true
+content_length: 1100
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"75b570527cdfc043","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"百川智能联合清华发布医疗增强大模型 Baichuan-M4，登顶 OpenAI 医疗评测","discovery_summary":"6月22日，百川智能与清华大学联合发布医疗增强大模型Baichuan-M4。该模型在OpenAI提出的HealthBench及Hard、Professional三个榜单上同时位列世界第一，综合得分68.6，领先第二名GPT-5.5超10分，幻觉率仅3.3%。M4会主动追问症状细节并优先排查危急重症。在基于OSCE构建的动态问诊评测SCAN-bench中，M4初诊79.0、复诊74.7，全面领先GPT-5.5等模型。模型具备\"全病程记忆\"，长上下文临床记忆得分86.9；首创\"证据锚定\"循证引用，精度达90.0，远超GPT-5.5和OpenEvidence。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/967/106.htm","discovered_at":"2026-06-23T01:57:11.630Z","rank_on_page":213,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e93cbfd3ba6c29cd
+content_hash: 75b570527cdfc043
+semantic_hash: fa9919918ce3b5ac
+duplicate_of: ""
+first_seen_at: "2026-06-22T09:12:18.000Z"
+last_seen_at: 2026-06-23T02:03:46.684Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）","OpenAI"],"products":["GPT-5","Claude"],"people":[],"industries":["医疗"],"roles":[],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["4","6","22","68.6","5.5","10","3.3%","79.0"],"quotes":["，长上下文临床记忆得分86.9；首创"]}
+evidence_seed: {"company_actions":["IT之家 6 月 22 日消息，百川智能与清华大学研究团队今日联合发布 新一代医疗增强大模型 Baichuan-M4 。","该模型在 HealthBench 及其 Hard、Professional 三个榜单上 同时位列世界第一 ，全面超越 GPT-5.","7、DeepSeek-V4-Pro，幻觉率低至 3."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"number","text":"6月22日，百川智能与清华大学联合发布医疗增强大模型Baichuan-M4。该模型在OpenAI提出的HealthBench及Hard、Professional三个榜单上同时位列世界第一，综合得分68.6，领先第二名GPT-5.5超10分，幻觉率仅3.3%。M4会主动追问症状细节并优先排查危急重症。在基于OSCE构建的动态问诊评测SCAN-bench中，M4初诊79.0、复诊74.7，全面领先GPT-5.5等模型。模型具备\"全病程记忆\"，长上下文临床记忆得分86.9；首创\"证据锚定\"循证引用，精度达90.0，远超GPT-5.5和OpenEvidence。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT之家 6 月 22 日消息，百川智能与清华大学研究团队今日联合发布 新一代医疗增强大模型 Baichuan-M4 。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该模型在 HealthBench 及其 Hard、Professional 三个榜单上 同时位列世界第一 ，全面超越 GPT-5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"7、DeepSeek-V4-Pro，幻觉率低至 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"在 OpenAI 提出的医疗评测 HealthBench 上，M4 综合得分 68.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"6，位列世界第一， 领先第二名 GPT-5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 百川智能联合清华发布医疗增强大模型 Baichuan-M4，登顶 OpenAI 医疗评测
+
+## clean_text
+
+IT之家 6 月 22 日消息，百川智能与清华大学研究团队今日联合发布 新一代医疗增强大模型 Baichuan-M4 。
+该模型在 HealthBench 及其 Hard、Professional 三个榜单上 同时位列世界第一 ，全面超越 GPT-5.5、Claude Opus 4.7、DeepSeek-V4-Pro，幻觉率低至 3.3%。
+在 OpenAI 提出的医疗评测 HealthBench 上，M4 综合得分 68.6，位列世界第一， 领先第二名 GPT-5.5 超过 10 分 ；在最考验复杂临床决策的 Hard 子集上，M4 领先达 15.9 分。
+M4 会主动追问症状的性质与诱因 ，优先识别和排查危急重症，而不是被动等待用户提供完整信息，更不会为了尽快给出答案而跳过该问的关键病史。
+百川智能介绍称，该公司借鉴医学教育中长期使用的 OSCE（客观结构化临床考试）方法，联合 150 多位一线医生，构建了动态问诊评测体系 SCAN-bench 。它不考查静态记忆，而是以真实临床经验为评分标准，通过多轮、动态的方式完整模拟医生从接诊到确诊的全过程。
+在这套评测中， M4 初诊 79.0、复诊 74.7 ，均明显领先 GPT-5.5、DeepSeek-V4-Pro 和 Claude Opus 4.7。
+此外，Baichuan-M4 推出「全病程记忆」，打通历史病历、多轮问诊、化验趋势与用药反馈， 让模型在多次对话中始终掌握患者是谁、既往有过哪些疾病、各项指标如何变化，而不必每次从零开始 。
+在长上下文临床记忆评测中，M4 取得 86.9 分，为同类最高，较上一代 M3 提升 21.1 分。
+百川还首创“证据锚定”， 要求模型生成的每一句医学结论，都精确对应到原始论文或指南中的具体段落 ，而不只是标注引自哪篇文献。依托六源循证范式，模型只在权威医学来源中检索，不从开放网络抓取资料。
+M4 在此之上，把权威指南、专家共识与真实诊疗流程，进一步拆解为标准化、可复用的临床路径单元，目前已超过 1000 个、覆盖 200 余种疾病，每一条都由资深临床专家定义和校验。
+在百川构建的循证医学评测 Baichuan-EBM 上，M4 的循证引用精度达到 90.0，GPT-5.5 为 54.7，OpenEvidence 为 55.9。
+IT之家附技术报告链接如下：
+https://arxiv.org/abs/2606.08982
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 22 日消息，百川智能与清华大学研究团队今日联合发布 新一代医疗增强大模型 Baichuan-M4 。
+该模型在 HealthBench 及其 Hard、Professional 三个榜单上 同时位列世界第一 ，全面超越 GPT-5.5、Claude Opus 4.7、DeepSeek-V4-Pro，幻觉率低至 3.3%。
+在 OpenAI 提出的医疗评测 HealthBench 上，M4 综合得分 68.6，位列世界第一， 领先第二名 GPT-5.5 超过 10 分 ；在最考验复杂临床决策的 Hard 子集上，M4 领先达 15.9 分。
+M4 会主动追问症状的性质与诱因 ，优先识别和排查危急重症，而不是被动等待用户提供完整信息，更不会为了尽快给出答案而跳过该问的关键病史。
+百川智能介绍称，该公司借鉴医学教育中长期使用的 OSCE（客观结构化临床考试）方法，联合 150 多位一线医生，构建了动态问诊评测体系 SCAN-bench 。它不考查静态记忆，而是以真实临床经验为评分标准，通过多轮、动态的方式完整模拟医生从接诊到确诊的全过程。
+在这套评测中， M4 初诊 79.0、复诊 74.7 ，均明显领先 GPT-5.5、DeepSeek-V4-Pro 和 Claude Opus 4.7。
+此外，Baichuan-M4 推出「全病程记忆」，打通历史病历、多轮问诊、化验趋势与用药反馈， 让模型在多次对话中始终掌握患者是谁、既往有过哪些疾病、各项指标如何变化，而不必每次从零开始 。
+在长上下文临床记忆评测中，M4 取得 86.9 分，为同类最高，较上一代 M3 提升 21.1 分。
+百川还首创“证据锚定”， 要求模型生成的每一句医学结论，都精确对应到原始论文或指南中的具体段落 ，而不只是标注引自哪篇文献。依托六源循证范式，模型只在权威医学来源中检索，不从开放网络抓取资料。
+M4 在此之上，把权威指南、专家共识与真实诊疗流程，进一步拆解为标准化、可复用的临床路径单元，目前已超过 1000 个、覆盖 200 余种疾病，每一条都由资深临床专家定义和校验。
+在百川构建的循证医学评测 Baichuan-EBM 上，M4 的循证引用精度达到 90.0，GPT-5.5 为 54.7，OpenEvidence 为 55.9。
+IT之家附技术报告链接如下：
+https://arxiv.org/abs/2606.08982
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 61
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":61,"text_length":1100,"paragraph_count":13,"sentence_count":12,"boilerplate_hits":1,"symbol_ratio":0,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   6月22日，百川智能与清华大学联合发布医疗增强大模型Baichuan-M4。该模型在OpenAI提出的HealthBench及Hard、Professional三个榜单上同时位列世界第一，综合得分68.6，领先第二名GPT-5.5超10分，幻觉率仅3.3%。M4会主动追问症状细节并优先排查危急重症。在基于OSCE构建的动态问诊评测SCAN-bench中，M4初诊79.0、复诊74.7，全面领先GPT-5.5等模型。模型具备"全病程记忆"，长上下文临床记忆得分86.9；首创"证据锚定"循证引用，精度达90.0，远超GPT-5.5和OpenEvidence。
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   IT之家 6 月 22 日消息，百川智能与清华大学研究团队今日联合发布 新一代医疗增强大模型 Baichuan-M4 。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   该模型在 HealthBench 及其 Hard、Professional 三个榜单上 同时位列世界第一 ，全面超越 GPT-5.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   7、DeepSeek-V4-Pro，幻觉率低至 3.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   在 OpenAI 提出的医疗评测 HealthBench 上，M4 综合得分 68.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   6，位列世界第一， 领先第二名 GPT-5.
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI
+- products: GPT-5, Claude
+- people: 暂无公开信息
+- industries: 医疗
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 4, 6, 22, 68.6, 5.5, 10, 3.3%, 79.0
+- quotes: ，长上下文临床记忆得分86.9；首创
+
+## evidence_seed
+
+- company_actions: IT之家 6 月 22 日消息，百川智能与清华大学研究团队今日联合发布 新一代医疗增强大模型 Baichuan-M4 。 / 该模型在 HealthBench 及其 Hard、Professional 三个榜单上 同时位列世界第一 ，全面超越 GPT-5. / 7、DeepSeek-V4-Pro，幻觉率低至 3.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"百川智能联合清华发布医疗增强大模型 Baichuan-M4，登顶 OpenAI 医疗评测","discovery_summary":"6月22日，百川智能与清华大学联合发布医疗增强大模型Baichuan-M4。该模型在OpenAI提出的HealthBench及Hard、Professional三个榜单上同时位列世界第一，综合得分68.6，领先第二名GPT-5.5超10分，幻觉率仅3.3%。M4会主动追问症状细节并优先排查危急重症。在基于OSCE构建的动态问诊评测SCAN-bench中，M4初诊79.0、复诊74.7，全面领先GPT-5.5等模型。模型具备\"全病程记忆\"，长上下文临床记忆得分86.9；首创\"证据锚定\"循证引用，精度达90.0，远超GPT-5.5和OpenEvidence。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/967/106.htm","discovered_at":"2026-06-23T01:57:11.630Z","rank_on_page":213,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+6月22日，百川智能与清华大学联合发布医疗增强大模型Baichuan-M4。该模型在OpenAI提出的HealthBench及Hard、Professional三个榜单上同时位列世界第一，综合得分68.6，领先第二名GPT-5.5超10分，幻觉率仅3.3%。M4会主动追问症状细节并优先排查危急重症。在基于OSCE构建的动态问诊评测SCAN-bench中，M4初诊79.0、复诊74.7，全面领先GPT-5.5等模型。模型具备"全病程记忆"，长上下文临床记忆得分86.9；首创"证据锚定"循证引用，精度达90.0，远超GPT-5.5和OpenEvidence。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

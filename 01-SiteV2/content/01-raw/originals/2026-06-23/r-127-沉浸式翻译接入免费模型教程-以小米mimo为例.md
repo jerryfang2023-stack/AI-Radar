@@ -1,0 +1,261 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-127
+title: "沉浸式翻译接入免费模型教程：以小米MiMo为例"
+original_url: "https://x.com/berryxia/status/2069070151723671760"
+canonical_url: "https://x.com/berryxia/status/2069070151723671760"
+source_name: "X：Berry Xia (@berryxia)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-22T14:49:00.000Z"
+collected_at: 2026-06-23T02:03:46.777Z
+language: mixed
+full_text_hash: 5ccf4f81c9dc7c36
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-23/r-127-沉浸式翻译接入免费模型教程-以小米mimo为例.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-23/r-127-沉浸式翻译接入免费模型教程-以小米mimo为例.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 77
+extractor_diagnostics: {"readability_score":77,"text_length":2574,"paragraph_count":16,"sentence_count":12,"boilerplate_hits":1,"symbol_ratio":0.0264,"method":"main"}
+has_full_text: true
+content_length: 2574
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5ccf4f81c9dc7c36","missing":[]}
+source_volatility: high
+community_name: "X：Berry Xia (@berryxia)"
+capture_scope: visible_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"沉浸式翻译接入免费模型教程：以小米MiMo为例","discovery_summary":"教程演示如何将免费或低成本模型接入沉浸式翻译。步骤：设置→翻译服务→添加自定义翻译服务→选择\"自定义AI\"→填入API Key和接口地址（以小米MiMo为例，Base URL： `https：//api.xiaomimimo.com/v1/chat/completions`）→选择对应模型（可勾选\"输入自定义模型名称\"）→点击测试服务，通过即完成配置。后续可在服务选项中切换使用自定义模型。全程视频演示。","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2069070151723671760","discovered_at":"2026-06-23T01:57:11.616Z","rank_on_page":156,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 7fbc4994da0f106f
+content_hash: 5ccf4f81c9dc7c36
+semantic_hash: 83a05e85f7aad2bc
+duplicate_of: ""
+first_seen_at: "2026-06-22T14:49:00.000Z"
+last_seen_at: 2026-06-23T02:03:46.777Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["emerging_pool","user_feedback_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"none","importance_score":1,"importance_reason":"no core WaveSight importance signal","supporting_signals":[],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":4}
+business_elements: {"companies":["X","Berry Xia (@berryxia)"],"products":["Agent"],"people":[],"industries":[],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["1","2","3","4","5","00","19","49"],"quotes":["→填入API Key和接口地址（以小米MiMo为例，Base URL： `https：//api.xiaomimimo.com/v1/chat/completions`）→选择对应模型（可勾选","添加自定义翻译服务","输入自定义模型名称"]}
+evidence_seed: {"company_actions":["Post Log in Sign up Post Berryxia.","AI @berryxia 兄弟们，睡前搞个小教程给大家！","直接教你将免费或者低成本的模型接入到沉浸式翻译，不废话直接看视频操作，包你学会。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"quote","text":"教程演示如何将免费或低成本模型接入沉浸式翻译。步骤：设置→翻译服务→添加自定义翻译服务→选择\"自定义AI\"→填入API Key和接口地址（以小米MiMo为例，Base URL： `https：//api.xiaomimimo.com/v1/chat/completions`）→选择对应模型（可勾选\"输入自定义模型名称\"）→点击测试服务，通过即完成配置。后续可在服务选项中切换使用自定义模型。全程视频演示。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Post Log in Sign up Post Berryxia.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"AI @berryxia 兄弟们，睡前搞个小教程给大家！","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"直接教你将免费或者低成本的模型接入到沉浸式翻译，不废话直接看视频操作，包你学会。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"进入设置后，点击左侧的“翻译服务” 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"quote","text":"点击右上角的“添加自定义翻译服务”，然后选择“自定义 AI” 4.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# 沉浸式翻译接入免费模型教程：以小米MiMo为例
+
+## clean_text
+
+Post
+Log in Sign up
+Post
+Berryxia.AI
+@berryxia
+兄弟们，睡前搞个小教程给大家！
+直接教你将免费或者低成本的模型接入到沉浸式翻译，不废话直接看视频操作，包你学会。
+操作步骤如下：
+1. 打开沉浸式翻译，点击“设置”
+2. 进入设置后，点击左侧的“翻译服务”
+3. 点击右上角的“添加自定义翻译服务”，然后选择“自定义 AI”
+4. 在自定义 AI 页面填入 API Key，以及你接入的大模型 API 接口地址
+(a) 接口地址务必填对，不同的模型可能会有一些差别，可以查看对应的官方文档
+(b) 选择对应的模型。如果你使用的是自定义模型，请勾选下方框中的“输入自定义模型名称”
+(c) 我这里以小米的 MiMo 模型为例，给大家进行视频演示 （Base URL ： api.xiaomimimo.com/v1/chat/comple… ）
+5. 填好后点击“测试服务”，如果测试通过，就完成了对应的配置
+如果你想要切换使用，直接在沉浸式翻译的服务选项中，选择你刚刚自定义的模型即可，非常方便。
+你学会了吗？
+记得一键三连啊，兄弟们！
+00:00
+铁锤人
+@lxfater
+19h
+Article
+如何用AI加速阅读学习？以便惊艳所有人
+小龙虾火了之后，大家都开始让 Agent 帮自己读文章了
+但真学到了吗？
+只要你还在做决策，AI 就是工具 瓶颈永远在人这边，就算用一样的 AI 工具，不学习，别人用得就是比你好...
+2:49 PM · Jun 22, 2026 3.3K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 17
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 25
+Read 1 reply
+
+## full_text
+
+Post
+Log in Sign up
+Post
+Berryxia.AI
+@berryxia
+兄弟们，睡前搞个小教程给大家！
+直接教你将免费或者低成本的模型接入到沉浸式翻译，不废话直接看视频操作，包你学会。
+操作步骤如下：
+1. 打开沉浸式翻译，点击“设置”
+2. 进入设置后，点击左侧的“翻译服务”
+3. 点击右上角的“添加自定义翻译服务”，然后选择“自定义 AI”
+4. 在自定义 AI 页面填入 API Key，以及你接入的大模型 API 接口地址
+(a) 接口地址务必填对，不同的模型可能会有一些差别，可以查看对应的官方文档
+(b) 选择对应的模型。如果你使用的是自定义模型，请勾选下方框中的“输入自定义模型名称”
+(c) 我这里以小米的 MiMo 模型为例，给大家进行视频演示 （Base URL ： api.xiaomimimo.com/v1/chat/comple… ）
+5. 填好后点击“测试服务”，如果测试通过，就完成了对应的配置
+如果你想要切换使用，直接在沉浸式翻译的服务选项中，选择你刚刚自定义的模型即可，非常方便。
+你学会了吗？
+记得一键三连啊，兄弟们！
+00:00
+铁锤人
+@lxfater
+19h
+Article
+如何用AI加速阅读学习？以便惊艳所有人
+小龙虾火了之后，大家都开始让 Agent 帮自己读文章了
+但真学到了吗？
+只要你还在做决策，AI 就是工具 瓶颈永远在人这边，就算用一样的 AI 工具，不学习，别人用得就是比你好...
+2:49 PM · Jun 22, 2026 3.3K Views
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 1
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 1 7 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 17
+:host{display:inline-block;direction:ltr;white-space:nowrap;line-height:1}span{display:inline-block}:host([data-will-change]) span{will-change:transform}.number,.digit{padding:round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) 0}.symbol{white-space:pre} 2 5 :where(number-flow-react){line-height:1}number-flow-react > span{font-kerning:none;display:inline-block;padding:calc(round(nearest, calc(var(--number-flow-mask-height, 0.25em) / 2), 1px) * 2) 0} 25
+Read 1 reply
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 77
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":77,"text_length":2574,"paragraph_count":16,"sentence_count":12,"boilerplate_hits":1,"symbol_ratio":0.0264,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=high
+   教程演示如何将免费或低成本模型接入沉浸式翻译。步骤：设置→翻译服务→添加自定义翻译服务→选择"自定义AI"→填入API Key和接口地址（以小米MiMo为例，Base URL： `https：//api.xiaomimimo.com/v1/chat/completions`）→选择对应模型（可勾选"输入自定义模型名称"）→点击测试服务，通过即完成配置。后续可在服务选项中切换使用自定义模型。全程视频演示。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Post Log in Sign up Post Berryxia.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   AI @berryxia 兄弟们，睡前搞个小教程给大家！
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   直接教你将免费或者低成本的模型接入到沉浸式翻译，不废话直接看视频操作，包你学会。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   进入设置后，点击左侧的“翻译服务” 3.
+
+6. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=high
+   点击右上角的“添加自定义翻译服务”，然后选择“自定义 AI” 4.
+
+## business_elements
+
+- companies: X, Berry Xia (@berryxia)
+- products: Agent
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 1, 2, 3, 4, 5, 00, 19, 49
+- quotes: →填入API Key和接口地址（以小米MiMo为例，Base URL： `https：//api.xiaomimimo.com/v1/chat/completions`）→选择对应模型（可勾选 / 添加自定义翻译服务 / 输入自定义模型名称
+
+## evidence_seed
+
+- company_actions: Post Log in Sign up Post Berryxia. / AI @berryxia 兄弟们，睡前搞个小教程给大家！ / 直接教你将免费或者低成本的模型接入到沉浸式翻译，不废话直接看视频操作，包你学会。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: none
+- importance_score: 1
+- importance_reason: no core WaveSight importance signal
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: true
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- user_feedback_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：Berry Xia (@berryxia)
+- capture_scope: visible_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"沉浸式翻译接入免费模型教程：以小米MiMo为例","discovery_summary":"教程演示如何将免费或低成本模型接入沉浸式翻译。步骤：设置→翻译服务→添加自定义翻译服务→选择\"自定义AI\"→填入API Key和接口地址（以小米MiMo为例，Base URL： `https：//api.xiaomimimo.com/v1/chat/completions`）→选择对应模型（可勾选\"输入自定义模型名称\"）→点击测试服务，通过即完成配置。后续可在服务选项中切换使用自定义模型。全程视频演示。","source_name":"X：Berry Xia (@berryxia)","origin_url":"https://x.com/berryxia/status/2069070151723671760","discovered_at":"2026-06-23T01:57:11.616Z","rank_on_page":156,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+教程演示如何将免费或低成本模型接入沉浸式翻译。步骤：设置→翻译服务→添加自定义翻译服务→选择"自定义AI"→填入API Key和接口地址（以小米MiMo为例，Base URL： `https：//api.xiaomimimo.com/v1/chat/completions`）→选择对应模型（可勾选"输入自定义模型名称"）→点击测试服务，通过即完成配置。后续可在服务选项中切换使用自定义模型。全程视频演示。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

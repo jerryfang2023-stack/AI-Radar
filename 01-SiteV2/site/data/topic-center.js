@@ -1,8 +1,8 @@
 window.WaveSightTopicCenter = {
   "meta": {
     "version": "V2.2.2-source-title",
-    "date": "2026-06-22",
-    "generatedAt": "2026-06-22T06:36:55.116Z",
+    "date": "2026-06-23",
+    "generatedAt": "2026-06-23T02:03:54.302Z",
     "source": "business-signals + first-line-viewpoints + community-intelligence",
     "rule": "boss_decision_topic_engine",
     "ruleLabel": "老板决策型选题机制",
@@ -16,9 +16,9 @@ window.WaveSightTopicCenter = {
       "styleFit": 5
     },
     "inputCounts": {
-      "businessSignals": 20,
+      "businessSignals": 19,
       "firstLineViewpoints": 2,
-      "communityItems": 61
+      "communityItems": 31
     },
     "sources": {
       "money_leak": 1,
@@ -30,7 +30,7 @@ window.WaveSightTopicCenter = {
       "big_small_contrast": 1,
       "person_story": 1
     },
-    "leadTopicId": "money_leak-ai-inference-cost-economics-in-2026-记录企业应用场景-模型部署和算力调用"
+    "leadTopicId": "money_leak-google-adk-与-a2a-协议-跨语言多智能体团队构建实战"
   },
   "sources": [
     {
@@ -83,6 +83,426 @@ window.WaveSightTopicCenter = {
     }
   ],
   "topics": [
+    {
+      "id": "money_leak-google-adk-与-a2a-协议-跨语言多智能体团队构建实战",
+      "sourceId": "money_leak",
+      "sourceName": "漏钱型",
+      "sourceDesc": "订单入口、转化漏斗、线索流失",
+      "type": "boss_decision_topic",
+      "title": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战",
+      "spreadTitle": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战",
+      "audience": "企业老板 / 创业者 / 业务负责人",
+      "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
+      "relevance": "一篇技术博客展示了如何用 Google Agent Development Kit （ADK） 与 Agent2Agent （A2A） 协议搭建跨语言多智能体流水线：Python agent 调用 Gemini 解析合同条款，Go age…；社群里也出现了“花3个月时间，我把10年设计经验沉淀搭建自己专属的…”这类一线反馈。",
+      "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
+      "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
+      "oldFrame": "AI 是一个提效工具。",
+      "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
+      "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
+      "evidence": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右。",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "sourceInputs": {
+        "businessSignals": [
+          {
+            "kind": "business_signal",
+            "id": "SIG-20260623-A08",
+            "title": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战",
+            "source": "Google Developers Blog（RSS）",
+            "url": "https://developers.googleblog.com/build-cross-language-multi-agent-team-with-google-agent-development-kit-and-a2a",
+            "note": "一篇技术博客展示了如何用 Google Agent Development Kit （ADK） 与 Agent2Agent （A2A） 协议搭建跨语言多智能体流水线：Python agent 调用 Gemini 解析合同条款，Go agent 用纯确定性逻辑校验合规性。A2A 协议通过 Agent Card 实现能力发现、JSON-RPC 2.0 完成通信…"
+          }
+        ],
+        "viewpoints": [],
+        "communityItems": [
+          {
+            "kind": "community_intelligence",
+            "id": "98b315dce51758",
+            "title": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右。",
+            "source": "AI破局",
+            "url": "https://aipoju.com/index",
+            "note": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右"
+          }
+        ]
+      },
+      "source": "Google Developers Blog（RSS）",
+      "url": "https://developers.googleblog.com/build-cross-language-multi-agent-team-with-google-agent-development-kit-and-a2a",
+      "date": "2026-06-23",
+      "score": 97,
+      "grade": "S",
+      "priority": "公众号主稿",
+      "scoreBreakdown": {
+        "bossPain": 25,
+        "moneyRelation": 25,
+        "talkability": 19,
+        "spreadability": 14,
+        "actionability": 9,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "开头直接问漏钱",
+          "note": "不要先讲 Google ADK 与 A2A 协议：跨语言多智… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+        },
+        {
+          "title": "中段拆入口链路",
+          "note": "看见、点击、咨询、记录、跟进、成交，每一步都能放 AI，但先看哪里漏。"
+        },
+        {
+          "title": "结尾落到老板动作",
+          "note": "让老板今天就拉一张入口表，而不是收藏一堆工具。"
+        }
+      ],
+      "writingStructure": [
+        "开头 3 句内给冲突或数字",
+        "中段按现象 -> 算账 -> 坑 -> 解法推进",
+        "结尾给一句新判断，不复述要点"
+      ],
+      "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
+      "originalTitle": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战"
+    },
+    {
+      "id": "small_role-ai-芯片公司-groq-完成-6-5-亿美元融资-英伟达-200-亿美元-挖角-后重组高管",
+      "sourceId": "small_role",
+      "sourceName": "小岗位型",
+      "sourceDesc": "客服、销售、财务、标书、运营",
+      "type": "boss_decision_topic",
+      "title": "AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管",
+      "spreadTitle": "AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管",
+      "audience": "企业老板 / 创业者 / 业务负责人",
+      "core": "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位、一个明确动作、一个可验收结果里。",
+      "relevance": "6 月 23 日，AI 芯片公司 Groq 宣布完成 6.5 亿美元新融资。此前约 6 个月，英伟达签署非独占性技术许可协议并挖走其创始人兼 CEO Jonathan Ross、总裁 Sunny Madra 等核心员工，交易金额为 200…；这类材料说明岗位级 AI 比大而全平台更容易落地。",
+      "bossPain": "老板最怕 AI 项目太大、太贵、太慢，最后没人用。",
+      "moneyLine": "一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。",
+      "oldFrame": "做一个什么都能干的 AI 平台。",
+      "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
+      "actionHint": "先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。",
+      "evidence": "AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管；Jedify 推出 Agent 工作流，面向销售线索和收入团队协作；AI洞察34：AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "sourceInputs": {
+        "businessSignals": [
+          {
+            "kind": "business_signal",
+            "id": "SIG-20260623-A01",
+            "title": "AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管",
+            "source": "TechCrunch：AI（RSS）",
+            "url": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal",
+            "note": "6 月 23 日，AI 芯片公司 Groq 宣布完成 6.5 亿美元新融资。此前约 6 个月，英伟达签署非独占性技术许可协议并挖走其创始人兼 CEO Jonathan Ross、总裁 Sunny Madra 等核心员工，交易金额为 200 亿美元。Groq 未披露新估值，上一轮 7.5 亿美元融资后估值为 69 亿美元。Groq 已转向 neocloud …"
+          },
+          {
+            "kind": "business_signal",
+            "id": "SIG-20260623-A13",
+            "title": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作",
+            "source": "norwest.com",
+            "url": "https://www.norwest.com/blog/jedify-the-missing-layer-in-enterprise-ai/",
+            "note": "来源材料显示，Jedify 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $24M 等数字。"
+          }
+        ],
+        "viewpoints": [],
+        "communityItems": [
+          {
+            "kind": "community_intelligence",
+            "id": "98be750ce21c9b",
+            "title": "AI洞察34：AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一",
+            "source": "AI破局",
+            "url": "https://aipoju.com/index",
+            "note": "AI洞察34：AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一 大家好，勤奋洋哥又来了，为了让我更勤奋，大家可以先点赞后看，养成习惯"
+          }
+        ]
+      },
+      "source": "TechCrunch：AI（RSS）",
+      "url": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal",
+      "date": "2026-06-23",
+      "score": 97,
+      "grade": "S",
+      "priority": "公众号主稿",
+      "scoreBreakdown": {
+        "bossPain": 25,
+        "moneyRelation": 24,
+        "talkability": 18,
+        "spreadability": 15,
+        "actionability": 10,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "用小岗位对抗大平台",
+          "note": "这是最适合你现有表达的主线：不做大而全，先做小而深。"
+        },
+        {
+          "title": "每个岗位给一个可验收结果",
+          "note": "客服看接通率，销售看跟进率，内容看线索，流程看错误率。"
+        },
+        {
+          "title": "避免写成创业方向清单",
+          "note": "要写一个岗位打穿逻辑，不要罗列 10 个机会。"
+        }
+      ],
+      "writingStructure": [
+        "开头 3 句内给冲突或数字",
+        "中段按现象 -> 算账 -> 坑 -> 解法推进",
+        "结尾给一句新判断，不复述要点"
+      ],
+      "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
+      "originalTitle": "AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管"
+    },
+    {
+      "id": "counterintuitive-openai-携手-trail-of-bits-推出-patch-the-planet-开源漏洞修复计划",
+      "sourceId": "counterintuitive",
+      "sourceName": "反常识型",
+      "sourceDesc": "推翻流行说法，形成可传播判断",
+      "type": "boss_decision_topic",
+      "title": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划",
+      "spreadTitle": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划",
+      "audience": "企业老板 / 创业者 / 业务负责人",
+      "core": "反常识点在于：AI 越强，越不是所有人都被替代，而是会拆任务、会验收结果的人更值钱。",
+      "relevance": "OpenAI 联合安全公司 Trail of Bits 启动\"Patch the Planet\"计划，帮助开源项目修复安全漏洞。Trail of Bits 工程师将直接与维护者合作，利用 OpenAI 的 Codex Security 等…；社群里“21岁休学创业，累计营收70w+，这个05后凭什么？”的讨论也在提醒老板，问题不再只是怎么做。",
+      "bossPain": "工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。",
+      "moneyLine": "工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。",
+      "oldFrame": "追最新 AI 工具。",
+      "newFrame": "先沉淀任务、语料、步骤和验收标准，再让 AI 接手。",
+      "actionHint": "今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。",
+      "evidence": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划；作为角色混淆提示注射；21岁休学创业，累计营收70w+，这个05后凭什么？",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "sourceInputs": {
+        "businessSignals": [
+          {
+            "kind": "business_signal",
+            "id": "SIG-20260623-A14",
+            "title": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划",
+            "source": "TechCrunch：AI（RSS）",
+            "url": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs",
+            "note": "OpenAI 联合安全公司 Trail of Bits 启动\"Patch the Planet\"计划，帮助开源项目修复安全漏洞。Trail of Bits 工程师将直接与维护者合作，利用 OpenAI 的 Codex Security 等工具审查代码、开发补丁和测试，旨在减少维护者的安全报告处理负担，而非增加工作量。开源软件是商业基础但常因分散化而存在漏洞…"
+          }
+        ],
+        "viewpoints": [
+          {
+            "kind": "first_line_viewpoint",
+            "id": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+            "title": "作为角色混淆提示注射",
+            "source": "Simon Willison's Blog",
+            "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+            "note": "作为角色混淆提示注射"
+          }
+        ],
+        "communityItems": [
+          {
+            "kind": "community_intelligence",
+            "id": "9319cbd9572bc9",
+            "title": "21岁休学创业，累计营收70w+，这个05后凭什么？",
+            "source": "AI破局",
+            "url": "https://aipoju.com/index",
+            "note": "21岁休学创业，累计营收70w+，这个05后凭什么"
+          }
+        ]
+      },
+      "source": "TechCrunch：AI（RSS）",
+      "url": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs",
+      "date": "2026-06-23",
+      "score": 95,
+      "grade": "S",
+      "priority": "公众号主稿",
+      "scoreBreakdown": {
+        "bossPain": 24,
+        "moneyRelation": 23,
+        "talkability": 18,
+        "spreadability": 15,
+        "actionability": 10,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "先打脸工具崇拜",
+          "note": "开头写：买工具不是 AI 转型，能稳定交付结果才算。"
+        },
+        {
+          "title": "中段讲任务拆解",
+          "note": "把提示词、流程、知识库和验收标准放在同一张图里讲。"
+        },
+        {
+          "title": "结尾给金句",
+          "note": "AI 工具不是资产，能反复跑通的任务系统才是资产。"
+        }
+      ],
+      "writingStructure": [
+        "开头 3 句内给冲突或数字",
+        "中段按现象 -> 算账 -> 坑 -> 解法推进",
+        "结尾给一句新判断，不复述要点"
+      ],
+      "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
+      "originalTitle": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划"
+    },
+    {
+      "id": "big_small_contrast-jedify-推出-agent-工作流-面向销售线索和收入团队协作",
+      "sourceId": "big_small_contrast",
+      "sourceName": "大小对照型",
+      "sourceDesc": "大融资对照小生意，大模型对照小岗位",
+      "type": "boss_decision_topic",
+      "title": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作",
+      "spreadTitle": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作",
+      "audience": "企业老板 / 创业者 / 业务负责人",
+      "core": "大新闻负责告诉你资本往哪里押，小机会负责告诉你老板明天愿意为什么付钱。",
+      "relevance": "来源材料显示，Jedify 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $24M 等数字。；同时社群里的“AI企业服务，千亿大市场却有小切口，这可能是接下来…”说明一线需求还在配置、流程和交付。",
+      "bossPain": "老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。",
+      "moneyLine": "大公司赚基础设施的钱，小服务商赚落地第一公里的钱。",
+      "oldFrame": "AI 创业只能跟大模型和融资有关。",
+      "newFrame": "普通人的 AI 机会在帮老板跨过配置、流程和交付门槛。",
+      "actionHint": "把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。",
+      "evidence": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作；作为角色混淆提示注射；AI洞察34：AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "sourceInputs": {
+        "businessSignals": [
+          {
+            "kind": "business_signal",
+            "id": "SIG-20260623-A13",
+            "title": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作",
+            "source": "norwest.com",
+            "url": "https://www.norwest.com/blog/jedify-the-missing-layer-in-enterprise-ai/",
+            "note": "来源材料显示，Jedify 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $24M 等数字。"
+          }
+        ],
+        "viewpoints": [
+          {
+            "kind": "first_line_viewpoint",
+            "id": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+            "title": "作为角色混淆提示注射",
+            "source": "Simon Willison's Blog",
+            "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+            "note": "作为角色混淆提示注射"
+          }
+        ],
+        "communityItems": [
+          {
+            "kind": "community_intelligence",
+            "id": "98be750ce21c9b",
+            "title": "AI洞察34：AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一",
+            "source": "AI破局",
+            "url": "https://aipoju.com/index",
+            "note": "AI洞察34：AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一 大家好，勤奋洋哥又来了，为了让我更勤奋，大家可以先点赞后看，养成习惯"
+          }
+        ]
+      },
+      "source": "norwest.com",
+      "url": "https://www.norwest.com/blog/jedify-the-missing-layer-in-enterprise-ai/",
+      "date": "2026-06-23",
+      "score": 93,
+      "grade": "S",
+      "priority": "公众号主稿",
+      "scoreBreakdown": {
+        "bossPain": 21,
+        "moneyRelation": 24,
+        "talkability": 20,
+        "spreadability": 15,
+        "actionability": 8,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "用大钱和小钱制造冲突",
+          "note": "大融资负责制造注意力，小服务负责让老板觉得和自己有关。"
+        },
+        {
+          "title": "写出两套赚钱逻辑",
+          "note": "资本逻辑：长期技术押注；服务逻辑：帮老板完成第一公里。"
+        },
+        {
+          "title": "落到可卖服务包",
+          "note": "流程诊断、工具配置、知识库搭建、首个工作流，这是老板可理解的产品。"
+        }
+      ],
+      "writingStructure": [
+        "开头 3 句内给冲突或数字",
+        "中段按现象 -> 算账 -> 坑 -> 解法推进",
+        "结尾给一句新判断，不复述要点"
+      ],
+      "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
+      "originalTitle": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作"
+    },
+    {
+      "id": "person_story-普通人怎么赚到1000万",
+      "sourceId": "person_story",
+      "sourceName": "人物故事型",
+      "sourceDesc": "具体人、具体场景、具体结果",
+      "type": "boss_decision_topic",
+      "title": "普通人怎么赚到1000万？",
+      "spreadTitle": "普通人怎么赚到1000万？",
+      "audience": "企业老板 / 创业者 / 业务负责人",
+      "core": "人物故事的价值不在鸡汤，而在把一个抽象趋势压缩成老板能看懂的场景、成本和选择。",
+      "relevance": "普通人怎么赚到1000万？ 普通人怎么赚到1000万？；这类材料适合做传播入口，再回到老板的业务判断。",
+      "bossPain": "老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。",
+      "moneyLine": "一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。",
+      "oldFrame": "写 AI 就要讲技术和趋势。",
+      "newFrame": "写给老板的 AI 内容，要先有人、有场景、有结果。",
+      "actionHint": "从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。",
+      "evidence": "普通人怎么赚到1000万？；OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划；作为角色混淆提示注射",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "sourceInputs": {
+        "businessSignals": [
+          {
+            "kind": "business_signal",
+            "id": "SIG-20260623-A14",
+            "title": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划",
+            "source": "TechCrunch：AI（RSS）",
+            "url": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs",
+            "note": "OpenAI 联合安全公司 Trail of Bits 启动\"Patch the Planet\"计划，帮助开源项目修复安全漏洞。Trail of Bits 工程师将直接与维护者合作，利用 OpenAI 的 Codex Security 等工具审查代码、开发补丁和测试，旨在减少维护者的安全报告处理负担，而非增加工作量。开源软件是商业基础但常因分散化而存在漏洞…"
+          }
+        ],
+        "viewpoints": [
+          {
+            "kind": "first_line_viewpoint",
+            "id": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+            "title": "作为角色混淆提示注射",
+            "source": "Simon Willison's Blog",
+            "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+            "note": "作为角色混淆提示注射"
+          }
+        ],
+        "communityItems": [
+          {
+            "kind": "community_intelligence",
+            "id": "45c0347f0a654e",
+            "title": "普通人怎么赚到1000万？",
+            "source": "AI破局",
+            "url": "https://aipoju.com/index",
+            "note": "普通人怎么赚到1000万？ 普通人怎么赚到1000万？"
+          }
+        ]
+      },
+      "source": "AI破局",
+      "url": "https://aipoju.com/index",
+      "date": "2026-06-23",
+      "score": 92,
+      "grade": "S",
+      "priority": "公众号主稿",
+      "scoreBreakdown": {
+        "bossPain": 23,
+        "moneyRelation": 21,
+        "talkability": 20,
+        "spreadability": 14,
+        "actionability": 9,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "用人物场景开头",
+          "note": "不要先讲 AI 趋势，先讲 普通人怎么赚到1000万？ 这类具体处境。"
+        },
+        {
+          "title": "把故事转成商业判断",
+          "note": "重点不是感动，而是这个故事说明老板该改哪个流程、补哪个能力。"
+        },
+        {
+          "title": "结尾回到老板动作",
+          "note": "让老板知道明天可以拿哪个人、哪个岗位、哪个场景做试点。"
+        }
+      ],
+      "writingStructure": [
+        "开头 3 句内给冲突或数字",
+        "中段按现象 -> 算账 -> 坑 -> 解法推进",
+        "结尾给一句新判断，不复述要点"
+      ],
+      "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
+      "originalTitle": "普通人怎么赚到1000万？"
+    },
     {
       "id": "money_leak-ai-inference-cost-economics-in-2026-记录企业应用场景-模型部署和算力调用",
       "sourceId": "money_leak",
@@ -5330,49 +5750,49 @@ window.WaveSightTopicCenter = {
   ],
   "grouped": {
     "lead": {
-      "id": "money_leak-ai-inference-cost-economics-in-2026-记录企业应用场景-模型部署和算力调用",
+      "id": "money_leak-google-adk-与-a2a-协议-跨语言多智能体团队构建实战",
       "sourceId": "money_leak",
       "sourceName": "漏钱型",
       "sourceDesc": "订单入口、转化漏斗、线索流失",
       "type": "boss_decision_topic",
-      "title": "AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用",
-      "spreadTitle": "AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用",
+      "title": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战",
+      "spreadTitle": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
-      "relevance": "来源材料显示，AI Inference Cost Economics in 2026 的AI 商业动作涉及模型部署和算力调用。；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
+      "relevance": "一篇技术博客展示了如何用 Google Agent Development Kit （ADK） 与 Agent2Agent （A2A） 协议搭建跨语言多智能体流水线：Python agent 调用 Gemini 解析合同条款，Go age…；社群里也出现了“花3个月时间，我把10年设计经验沉淀搭建自己专属的…”这类一线反馈。",
       "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
       "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
       "oldFrame": "AI 是一个提效工具。",
       "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
       "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
-      "evidence": "AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
+      "evidence": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右。",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260622-A09",
-            "title": "AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用",
-            "source": "spheron.network",
-            "url": "https://www.spheron.network/blog/ai-inference-cost-economics-2026",
-            "note": "来源材料显示，AI Inference Cost Economics in 2026 的AI 商业动作涉及模型部署和算力调用。"
+            "id": "SIG-20260623-A08",
+            "title": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战",
+            "source": "Google Developers Blog（RSS）",
+            "url": "https://developers.googleblog.com/build-cross-language-multi-agent-team-with-google-agent-development-kit-and-a2a",
+            "note": "一篇技术博客展示了如何用 Google Agent Development Kit （ADK） 与 Agent2Agent （A2A） 协议搭建跨语言多智能体流水线：Python agent 调用 Gemini 解析合同条款，Go agent 用纯确定性逻辑校验合规性。A2A 协议通过 Agent Card 实现能力发现、JSON-RPC 2.0 完成通信…"
           }
         ],
         "viewpoints": [],
         "communityItems": [
           {
             "kind": "community_intelligence",
-            "id": "15072bfe84bddc",
-            "title": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
-            "source": "生财有术",
-            "url": "https://scys.com/",
-            "note": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌"
+            "id": "98b315dce51758",
+            "title": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右。",
+            "source": "AI破局",
+            "url": "https://aipoju.com/index",
+            "note": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右"
           }
         ]
       },
-      "source": "spheron.network",
-      "url": "https://www.spheron.network/blog/ai-inference-cost-economics-2026",
-      "date": "2026-06-22",
+      "source": "Google Developers Blog（RSS）",
+      "url": "https://developers.googleblog.com/build-cross-language-multi-agent-team-with-google-agent-development-kit-and-a2a",
+      "date": "2026-06-23",
       "score": 97,
       "grade": "S",
       "priority": "公众号主稿",
@@ -5387,7 +5807,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "开头直接问漏钱",
-          "note": "不要先讲 AI Inference Cost Economi… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+          "note": "不要先讲 Google ADK 与 A2A 协议：跨语言多智… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
         },
         {
           "title": "中段拆入口链路",
@@ -5408,49 +5828,49 @@ window.WaveSightTopicCenter = {
     "byEngine": {
       "money_leak": [
         {
-          "id": "money_leak-ai-inference-cost-economics-in-2026-记录企业应用场景-模型部署和算力调用",
+          "id": "money_leak-google-adk-与-a2a-协议-跨语言多智能体团队构建实战",
           "sourceId": "money_leak",
           "sourceName": "漏钱型",
           "sourceDesc": "订单入口、转化漏斗、线索流失",
           "type": "boss_decision_topic",
-          "title": "AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用",
-          "spreadTitle": "AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用",
+          "title": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战",
+          "spreadTitle": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
-          "relevance": "来源材料显示，AI Inference Cost Economics in 2026 的AI 商业动作涉及模型部署和算力调用。；社群里也出现了“公众号新人30天变现7000+，我是如何用微信贴图…”这类一线反馈。",
+          "relevance": "一篇技术博客展示了如何用 Google Agent Development Kit （ADK） 与 Agent2Agent （A2A） 协议搭建跨语言多智能体流水线：Python agent 调用 Gemini 解析合同条款，Go age…；社群里也出现了“花3个月时间，我把10年设计经验沉淀搭建自己专属的…”这类一线反馈。",
           "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
           "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
           "oldFrame": "AI 是一个提效工具。",
           "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
           "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
-          "evidence": "AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用；公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
+          "evidence": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战；花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右。",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260622-A09",
-                "title": "AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用",
-                "source": "spheron.network",
-                "url": "https://www.spheron.network/blog/ai-inference-cost-economics-2026",
-                "note": "来源材料显示，AI Inference Cost Economics in 2026 的AI 商业动作涉及模型部署和算力调用。"
+                "id": "SIG-20260623-A08",
+                "title": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战",
+                "source": "Google Developers Blog（RSS）",
+                "url": "https://developers.googleblog.com/build-cross-language-multi-agent-team-with-google-agent-development-kit-and-a2a",
+                "note": "一篇技术博客展示了如何用 Google Agent Development Kit （ADK） 与 Agent2Agent （A2A） 协议搭建跨语言多智能体流水线：Python agent 调用 Gemini 解析合同条款，Go agent 用纯确定性逻辑校验合规性。A2A 协议通过 Agent Card 实现能力发现、JSON-RPC 2.0 完成通信…"
               }
             ],
             "viewpoints": [],
             "communityItems": [
               {
                 "kind": "community_intelligence",
-                "id": "15072bfe84bddc",
-                "title": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
-                "source": "生财有术",
-                "url": "https://scys.com/",
-                "note": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌"
+                "id": "98b315dce51758",
+                "title": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右。",
+                "source": "AI破局",
+                "url": "https://aipoju.com/index",
+                "note": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右"
               }
             ]
           },
-          "source": "spheron.network",
-          "url": "https://www.spheron.network/blog/ai-inference-cost-economics-2026",
-          "date": "2026-06-22",
+          "source": "Google Developers Blog（RSS）",
+          "url": "https://developers.googleblog.com/build-cross-language-multi-agent-team-with-google-agent-development-kit-and-a2a",
+          "date": "2026-06-23",
           "score": 97,
           "grade": "S",
           "priority": "公众号主稿",
@@ -5465,7 +5885,7 @@ window.WaveSightTopicCenter = {
           "angles": [
             {
               "title": "开头直接问漏钱",
-              "note": "不要先讲 AI Inference Cost Economi… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+              "note": "不要先讲 Google ADK 与 A2A 协议：跨语言多智… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
             },
             {
               "title": "中段拆入口链路",
@@ -5486,58 +5906,58 @@ window.WaveSightTopicCenter = {
       ],
       "save_headcount": [
         {
-          "id": "save_headcount-zaro-ai-推出-agent-工作流-面向销售线索和收入团队协作",
+          "id": "save_headcount-jedify-推出-agent-工作流-面向销售线索和收入团队协作",
           "sourceId": "save_headcount",
           "sourceName": "省人型",
           "sourceDesc": "少招人、少返工、少加班",
           "type": "boss_decision_topic",
-          "title": "Zaro.ai 推出 Agent 工作流，面向销售线索和收入团队协作",
-          "spreadTitle": "Zaro.ai 推出 Agent 工作流，面向销售线索和收入团队协作",
+          "title": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作",
+          "spreadTitle": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "AI 进入企业的第一步，不是替代一个完整的人，而是接住岗位里反复发生、规则清楚、结果可验收的动作。",
-          "relevance": "来源材料显示，Zaro.ai 的AI 商业动作涉及销售和收入团队流程；原文同时出现 1M、7 m 等数字。；这类信号比“AI 很强”更接近老板的组织账。",
+          "relevance": "来源材料显示，Jedify 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $24M 等数字。；这类信号比“AI 很强”更接近老板的组织账。",
           "bossPain": "人越招越多，流程没有变短，管理成本反而被重复动作拖住。",
           "moneyLine": "少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。",
           "oldFrame": "AI 上线就是裁员。",
           "newFrame": "AI 上线的第一阶段，是把岗位动作拆小，让公司少招重复岗位。",
           "actionHint": "选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。",
-          "evidence": "Zaro.ai 推出 Agent 工作流，面向销售线索和收入团队协作；AIAgent的临时Cloudflare帐户；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作；作为角色混淆提示注射；21岁休学创业，累计营收70w+，这个05后凭什么？",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260622-A17",
-                "title": "Zaro.ai 推出 Agent 工作流，面向销售线索和收入团队协作",
-                "source": "theaiinsider.tech",
-                "url": "https://theaiinsider.tech/2026/06/19/zaro-ai-secures-5-1m-to-unify-enterprise-ai-agents-data-and-applications-in-a-single-context-layer/",
-                "note": "来源材料显示，Zaro.ai 的AI 商业动作涉及销售和收入团队流程；原文同时出现 1M、7 m 等数字。"
+                "id": "SIG-20260623-A13",
+                "title": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作",
+                "source": "norwest.com",
+                "url": "https://www.norwest.com/blog/jedify-the-missing-layer-in-enterprise-ai/",
+                "note": "来源材料显示，Jedify 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $24M 等数字。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything",
-                "title": "AIAgent的临时Cloudflare帐户",
+                "id": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+                "title": "作为角色混淆提示注射",
                 "source": "Simon Willison's Blog",
-                "url": "https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything",
-                "note": "AIAgent的临时Cloudflare帐户"
+                "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+                "note": "作为角色混淆提示注射"
               }
             ],
             "communityItems": [
               {
                 "kind": "community_intelligence",
-                "id": "71c050f6ace65a",
-                "title": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
-                "source": "生财有术",
-                "url": "https://scys.com/",
-                "note": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP 生财的圈友们大家好，我是诗意听涛，目前我主要围绕出海游戏站来做业务"
+                "id": "9319cbd9572bc9",
+                "title": "21岁休学创业，累计营收70w+，这个05后凭什么？",
+                "source": "AI破局",
+                "url": "https://aipoju.com/index",
+                "note": "21岁休学创业，累计营收70w+，这个05后凭什么"
               }
             ]
           },
-          "source": "theaiinsider.tech",
-          "url": "https://theaiinsider.tech/2026/06/19/zaro-ai-secures-5-1m-to-unify-enterprise-ai-agents-data-and-applications-in-a-single-context-layer/",
-          "date": "2026-06-22",
+          "source": "norwest.com",
+          "url": "https://www.norwest.com/blog/jedify-the-missing-layer-in-enterprise-ai/",
+          "date": "2026-06-23",
           "score": 90,
           "grade": "S",
           "priority": "公众号主稿",
@@ -5560,7 +5980,7 @@ window.WaveSightTopicCenter = {
             },
             {
               "title": "给一个当天可做的小动作",
-              "note": "用 Zaro.ai 推出 Agent 工作流，面向销售… 做例子，把大流程拆成一个可验收动作。"
+              "note": "用 Jedify 推出 Agent 工作流，面向销售线… 做例子，把大流程拆成一个可验收动作。"
             }
           ],
           "writingStructure": [
@@ -5573,58 +5993,58 @@ window.WaveSightTopicCenter = {
       ],
       "peer_pressure": [
         {
-          "id": "peer_pressure-公众号新人30天变现7000-我是如何用微信贴图来快速起号-靠发公众号文章来扩大收益的复盘",
+          "id": "peer_pressure-花3个月时间-我把10年设计经验沉淀搭建自己专属的skills-全方位接管我的虚拟电商和公众号内容-附搭建流程-本文一共-110",
           "sourceId": "peer_pressure",
           "sourceName": "同行压力型",
           "sourceDesc": "同行已做、对手先跑、老板焦虑",
           "type": "boss_decision_topic",
-          "title": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
-          "spreadTitle": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
+          "title": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右。",
+          "spreadTitle": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右。",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "最能触发老板的不是技术解释，而是别人已经把 AI 用到获客、内容、交付、产品试错里，并且开始看到结果。",
-          "relevance": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌；这类社群信号代表一线老板和操盘手已经在算产出。",
+          "relevance": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右；这类社群信号代表一线老板和操盘手已经在算产出。",
           "bossPain": "当同行用 AI 降低试错成本时，你还在用人工流程慢慢排队。",
           "moneyLine": "同行压力真正影响的是获客成本、内容成本和试错周期，而不是老板的技术焦虑。",
           "oldFrame": "AI 是员工自己研究的新工具。",
           "newFrame": "AI 是同行正在重做经营速度的生产系统。",
           "actionHint": "每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？",
-          "evidence": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘；AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用；sqlite-utils 4.0rc1添加迁移和嵌套事务",
+          "evidence": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右。；Google ADK 与 A2A 协议：跨语言多智能体团队构建实战；作为角色混淆提示注射",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260622-A09",
-                "title": "AI Inference Cost Economics in 2026 记录企业应用场景：模型部署和算力调用",
-                "source": "spheron.network",
-                "url": "https://www.spheron.network/blog/ai-inference-cost-economics-2026",
-                "note": "来源材料显示，AI Inference Cost Economics in 2026 的AI 商业动作涉及模型部署和算力调用。"
+                "id": "SIG-20260623-A08",
+                "title": "Google ADK 与 A2A 协议：跨语言多智能体团队构建实战",
+                "source": "Google Developers Blog（RSS）",
+                "url": "https://developers.googleblog.com/build-cross-language-multi-agent-team-with-google-agent-development-kit-and-a2a",
+                "note": "一篇技术博客展示了如何用 Google Agent Development Kit （ADK） 与 Agent2Agent （A2A） 协议搭建跨语言多智能体流水线：Python agent 调用 Gemini 解析合同条款，Go agent 用纯确定性逻辑校验合规性。A2A 协议通过 Agent Card 实现能力发现、JSON-RPC 2.0 完成通信…"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
-                "title": "sqlite-utils 4.0rc1添加迁移和嵌套事务",
+                "id": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+                "title": "作为角色混淆提示注射",
                 "source": "Simon Willison's Blog",
-                "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
-                "note": "sqlite-utils 4.0rc1添加迁移和嵌套事务"
+                "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+                "note": "作为角色混淆提示注射"
               }
             ],
             "communityItems": [
               {
                 "kind": "community_intelligence",
-                "id": "15072bfe84bddc",
-                "title": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘",
-                "source": "生财有术",
-                "url": "https://scys.com/",
-                "note": "公众号新人30天变现7000+，我是如何用微信贴图来快速起号，靠发公众号文章来扩大收益的复盘 生财的朋友们大家好，我是21年加入的老圈友清歌"
+                "id": "98b315dce51758",
+                "title": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右。",
+                "source": "AI破局",
+                "url": "https://aipoju.com/index",
+                "note": "花3个月时间，我把10年设计经验沉淀搭建自己专属的Skills，全方位接管我的虚拟电商和公众号内容（附搭建流程） ⏱ 本文一共 11000 多字，可能会花掉你 30 分钟左右"
               }
             ]
           },
-          "source": "生财有术",
-          "url": "https://scys.com/",
-          "date": "2026-06-22",
+          "source": "AI破局",
+          "url": "https://aipoju.com/index",
+          "date": "2026-06-23",
           "score": 91,
           "grade": "S",
           "priority": "公众号主稿",
@@ -5660,58 +6080,58 @@ window.WaveSightTopicCenter = {
       ],
       "pitfall": [
         {
-          "id": "pitfall-aws推出continuum和context两项新服务-填补ai智能体业务上下文与安全漏洞短板",
+          "id": "pitfall-openai-携手-trail-of-bits-推出-patch-the-planet-开源漏洞修复计划",
           "sourceId": "pitfall",
           "sourceName": "避坑型",
           "sourceDesc": "工具乱买、权限失控、流程没拆",
           "type": "boss_decision_topic",
-          "title": "AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板",
-          "spreadTitle": "AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板",
+          "title": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划",
+          "spreadTitle": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "AI 从生成内容走向执行动作后，企业问题从“会不会用”变成“谁审核、谁授权、谁负责”。",
-          "relevance": "在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强…；这类信号适合写给老板看，因为它直接关系到业务风险。",
+          "relevance": "OpenAI 联合安全公司 Trail of Bits 启动\"Patch the Planet\"计划，帮助开源项目修复安全漏洞。Trail of Bits 工程师将直接与维护者合作，利用 OpenAI 的 Codex Security 等…；这类信号适合写给老板看，因为它直接关系到业务风险。",
           "bossPain": "AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。",
           "moneyLine": "权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。",
           "oldFrame": "AI 越自主越好。",
           "newFrame": "AI 越自主，越要先设计权限、复核和责任人。",
           "actionHint": "先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。",
-          "evidence": "AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板；sqlite-utils 4.0rc1添加迁移和嵌套事务；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划；作为角色混淆提示注射；21岁休学创业，累计营收70w+，这个05后凭什么？",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260622-A16",
-                "title": "AWS推出Continuum和Context两项新服务，填补AI智能体业务上下文与安全漏洞短板",
-                "source": "The Decoder：AI News（RSS）",
-                "url": "https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps",
-                "note": "在纽约AWS峰会上，亚马逊云发布AWS Continuum和AWS Context两项服务。Continuum覆盖代码漏洞从检测、排序、验证到修复的全生命周期，引用Anthropic Claude Mythos等安全模型，支持学习模式与强制执行模式。Context自动从数据库、文档、邮件等企业数据构建知识图谱，为所有智能体提供共享业务知识，内置访问控制。D…"
+                "id": "SIG-20260623-A14",
+                "title": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划",
+                "source": "TechCrunch：AI（RSS）",
+                "url": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs",
+                "note": "OpenAI 联合安全公司 Trail of Bits 启动\"Patch the Planet\"计划，帮助开源项目修复安全漏洞。Trail of Bits 工程师将直接与维护者合作，利用 OpenAI 的 Codex Security 等工具审查代码、开发补丁和测试，旨在减少维护者的安全报告处理负担，而非增加工作量。开源软件是商业基础但常因分散化而存在漏洞…"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
-                "title": "sqlite-utils 4.0rc1添加迁移和嵌套事务",
+                "id": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+                "title": "作为角色混淆提示注射",
                 "source": "Simon Willison's Blog",
-                "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
-                "note": "sqlite-utils 4.0rc1添加迁移和嵌套事务"
+                "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+                "note": "作为角色混淆提示注射"
               }
             ],
             "communityItems": [
               {
                 "kind": "community_intelligence",
-                "id": "71c050f6ace65a",
-                "title": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
-                "source": "生财有术",
-                "url": "https://scys.com/",
-                "note": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP 生财的圈友们大家好，我是诗意听涛，目前我主要围绕出海游戏站来做业务"
+                "id": "9319cbd9572bc9",
+                "title": "21岁休学创业，累计营收70w+，这个05后凭什么？",
+                "source": "AI破局",
+                "url": "https://aipoju.com/index",
+                "note": "21岁休学创业，累计营收70w+，这个05后凭什么"
               }
             ]
           },
-          "source": "The Decoder：AI News（RSS）",
-          "url": "https://the-decoder.com/aws-says-ai-agents-lack-business-context-and-security-launches-two-services-to-patch-the-gaps",
-          "date": "2026-06-22",
+          "source": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs",
+          "date": "2026-06-23",
           "score": 88,
           "grade": "A",
           "priority": "公众号主稿",
@@ -5734,7 +6154,7 @@ window.WaveSightTopicCenter = {
             },
             {
               "title": "用当天案例推进",
-              "note": "用 AWS推出Continuum和Context两项新… 做钩子，落到企业内部的授权和复核表。"
+              "note": "用 OpenAI 携手 Trail of Bits 推… 做钩子，落到企业内部的授权和复核表。"
             }
           ],
           "writingStructure": [
@@ -5747,58 +6167,58 @@ window.WaveSightTopicCenter = {
       ],
       "counterintuitive": [
         {
-          "id": "counterintuitive-best-ai-deployment-platforms-in-2026-记录企业应用场景-地产开发和建筑设计流程",
+          "id": "counterintuitive-openai-携手-trail-of-bits-推出-patch-the-planet-开源漏洞修复计划",
           "sourceId": "counterintuitive",
           "sourceName": "反常识型",
           "sourceDesc": "推翻流行说法，形成可传播判断",
           "type": "boss_decision_topic",
-          "title": "Best AI deployment platforms in 2026 记录企业应用场景：地产开发和建筑设计流程",
-          "spreadTitle": "Best AI deployment platforms in 2026 记录企业应用场景：地产开发和建筑设计流程",
+          "title": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划",
+          "spreadTitle": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "反常识点在于：AI 越强，越不是所有人都被替代，而是会拆任务、会验收结果的人更值钱。",
-          "relevance": "来源材料显示，Best AI deployment platforms in 2026 的客户部署或应用案例涉及地产开发和建筑设计流程；原文同时出现 63b 等数字。；社群里“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”的讨论也在提醒老板，问题不再只是怎么做。",
+          "relevance": "OpenAI 联合安全公司 Trail of Bits 启动\"Patch the Planet\"计划，帮助开源项目修复安全漏洞。Trail of Bits 工程师将直接与维护者合作，利用 OpenAI 的 Codex Security 等…；社群里“21岁休学创业，累计营收70w+，这个05后凭什么？”的讨论也在提醒老板，问题不再只是怎么做。",
           "bossPain": "工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。",
           "moneyLine": "工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。",
           "oldFrame": "追最新 AI 工具。",
           "newFrame": "先沉淀任务、语料、步骤和验收标准，再让 AI 接手。",
           "actionHint": "今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。",
-          "evidence": "Best AI deployment platforms in 2026 记录企业应用场景：地产开发和建筑设计流程；sqlite-utils 4.0rc1添加迁移和嵌套事务；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划；作为角色混淆提示注射；21岁休学创业，累计营收70w+，这个05后凭什么？",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260622-A12",
-                "title": "Best AI deployment platforms in 2026 记录企业应用场景：地产开发和建筑设计流程",
-                "source": "northflank.com",
-                "url": "https://northflank.com/blog/ai-deployment-platforms",
-                "note": "来源材料显示，Best AI deployment platforms in 2026 的客户部署或应用案例涉及地产开发和建筑设计流程；原文同时出现 63b 等数字。"
+                "id": "SIG-20260623-A14",
+                "title": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划",
+                "source": "TechCrunch：AI（RSS）",
+                "url": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs",
+                "note": "OpenAI 联合安全公司 Trail of Bits 启动\"Patch the Planet\"计划，帮助开源项目修复安全漏洞。Trail of Bits 工程师将直接与维护者合作，利用 OpenAI 的 Codex Security 等工具审查代码、开发补丁和测试，旨在减少维护者的安全报告处理负担，而非增加工作量。开源软件是商业基础但常因分散化而存在漏洞…"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
-                "title": "sqlite-utils 4.0rc1添加迁移和嵌套事务",
+                "id": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+                "title": "作为角色混淆提示注射",
                 "source": "Simon Willison's Blog",
-                "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
-                "note": "sqlite-utils 4.0rc1添加迁移和嵌套事务"
+                "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+                "note": "作为角色混淆提示注射"
               }
             ],
             "communityItems": [
               {
                 "kind": "community_intelligence",
-                "id": "71c050f6ace65a",
-                "title": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
-                "source": "生财有术",
-                "url": "https://scys.com/",
-                "note": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP 生财的圈友们大家好，我是诗意听涛，目前我主要围绕出海游戏站来做业务"
+                "id": "9319cbd9572bc9",
+                "title": "21岁休学创业，累计营收70w+，这个05后凭什么？",
+                "source": "AI破局",
+                "url": "https://aipoju.com/index",
+                "note": "21岁休学创业，累计营收70w+，这个05后凭什么"
               }
             ]
           },
-          "source": "northflank.com",
-          "url": "https://northflank.com/blog/ai-deployment-platforms",
-          "date": "2026-06-22",
+          "source": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs",
+          "date": "2026-06-23",
           "score": 95,
           "grade": "S",
           "priority": "公众号主稿",
@@ -5834,57 +6254,57 @@ window.WaveSightTopicCenter = {
       ],
       "small_role": [
         {
-          "id": "small_role-best-ai-deployment-platforms-in-2026-记录企业应用场景-地产开发和建筑设计流程",
+          "id": "small_role-ai-芯片公司-groq-完成-6-5-亿美元融资-英伟达-200-亿美元-挖角-后重组高管",
           "sourceId": "small_role",
           "sourceName": "小岗位型",
           "sourceDesc": "客服、销售、财务、标书、运营",
           "type": "boss_decision_topic",
-          "title": "Best AI deployment platforms in 2026 记录企业应用场景：地产开发和建筑设计流程",
-          "spreadTitle": "Best AI deployment platforms in 2026 记录企业应用场景：地产开发和建筑设计流程",
+          "title": "AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管",
+          "spreadTitle": "AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位、一个明确动作、一个可验收结果里。",
-          "relevance": "来源材料显示，Best AI deployment platforms in 2026 的客户部署或应用案例涉及地产开发和建筑设计流程；原文同时出现 63b 等数字。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
+          "relevance": "6 月 23 日，AI 芯片公司 Groq 宣布完成 6.5 亿美元新融资。此前约 6 个月，英伟达签署非独占性技术许可协议并挖走其创始人兼 CEO Jonathan Ross、总裁 Sunny Madra 等核心员工，交易金额为 200…；这类材料说明岗位级 AI 比大而全平台更容易落地。",
           "bossPain": "老板最怕 AI 项目太大、太贵、太慢，最后没人用。",
           "moneyLine": "一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。",
           "oldFrame": "做一个什么都能干的 AI 平台。",
           "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
           "actionHint": "先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。",
-          "evidence": "Best AI deployment platforms in 2026 记录企业应用场景：地产开发和建筑设计流程；Zaro.ai 推出 Agent 工作流，面向销售线索和收入团队协作；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
+          "evidence": "AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管；Jedify 推出 Agent 工作流，面向销售线索和收入团队协作；AI洞察34：AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260622-A12",
-                "title": "Best AI deployment platforms in 2026 记录企业应用场景：地产开发和建筑设计流程",
-                "source": "northflank.com",
-                "url": "https://northflank.com/blog/ai-deployment-platforms",
-                "note": "来源材料显示，Best AI deployment platforms in 2026 的客户部署或应用案例涉及地产开发和建筑设计流程；原文同时出现 63b 等数字。"
+                "id": "SIG-20260623-A01",
+                "title": "AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管",
+                "source": "TechCrunch：AI（RSS）",
+                "url": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal",
+                "note": "6 月 23 日，AI 芯片公司 Groq 宣布完成 6.5 亿美元新融资。此前约 6 个月，英伟达签署非独占性技术许可协议并挖走其创始人兼 CEO Jonathan Ross、总裁 Sunny Madra 等核心员工，交易金额为 200 亿美元。Groq 未披露新估值，上一轮 7.5 亿美元融资后估值为 69 亿美元。Groq 已转向 neocloud …"
               },
               {
                 "kind": "business_signal",
-                "id": "SIG-20260622-A17",
-                "title": "Zaro.ai 推出 Agent 工作流，面向销售线索和收入团队协作",
-                "source": "theaiinsider.tech",
-                "url": "https://theaiinsider.tech/2026/06/19/zaro-ai-secures-5-1m-to-unify-enterprise-ai-agents-data-and-applications-in-a-single-context-layer/",
-                "note": "来源材料显示，Zaro.ai 的AI 商业动作涉及销售和收入团队流程；原文同时出现 1M、7 m 等数字。"
+                "id": "SIG-20260623-A13",
+                "title": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作",
+                "source": "norwest.com",
+                "url": "https://www.norwest.com/blog/jedify-the-missing-layer-in-enterprise-ai/",
+                "note": "来源材料显示，Jedify 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $24M 等数字。"
               }
             ],
             "viewpoints": [],
             "communityItems": [
               {
                 "kind": "community_intelligence",
-                "id": "612e15d1d9f810",
-                "title": "超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
-                "source": "生财有术",
-                "url": "https://scys.com/",
-                "note": "超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑 #超级术# 26：今天这篇超级术，我想推荐的是@袁锐钦 的《我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了》，链接：我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了我觉得这篇内容值得被推荐，一个很核心的原因是，它解决的是生财里一类非常普遍、而且越来越重要的问题：…"
+                "id": "98be750ce21c9b",
+                "title": "AI洞察34：AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一",
+                "source": "AI破局",
+                "url": "https://aipoju.com/index",
+                "note": "AI洞察34：AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一 大家好，勤奋洋哥又来了，为了让我更勤奋，大家可以先点赞后看，养成习惯"
               }
             ]
           },
-          "source": "northflank.com",
-          "url": "https://northflank.com/blog/ai-deployment-platforms",
-          "date": "2026-06-22",
+          "source": "TechCrunch：AI（RSS）",
+          "url": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal",
+          "date": "2026-06-23",
           "score": 97,
           "grade": "S",
           "priority": "公众号主稿",
@@ -5920,58 +6340,58 @@ window.WaveSightTopicCenter = {
       ],
       "big_small_contrast": [
         {
-          "id": "big_small_contrast-weforum-记录企业应用场景-地产开发和建筑设计流程",
+          "id": "big_small_contrast-jedify-推出-agent-工作流-面向销售线索和收入团队协作",
           "sourceId": "big_small_contrast",
           "sourceName": "大小对照型",
           "sourceDesc": "大融资对照小生意，大模型对照小岗位",
           "type": "boss_decision_topic",
-          "title": "Weforum 记录企业应用场景：地产开发和建筑设计流程",
-          "spreadTitle": "Weforum 记录企业应用场景：地产开发和建筑设计流程",
+          "title": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作",
+          "spreadTitle": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "大新闻负责告诉你资本往哪里押，小机会负责告诉你老板明天愿意为什么付钱。",
-          "relevance": "来源材料显示，Weforum 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 $45 b、$8.5 b 等数字。；同时社群里的“这篇产品调研干货：帮你避开90%独立开发者起步坑”说明一线需求还在配置、流程和交付。",
+          "relevance": "来源材料显示，Jedify 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $24M 等数字。；同时社群里的“AI企业服务，千亿大市场却有小切口，这可能是接下来…”说明一线需求还在配置、流程和交付。",
           "bossPain": "老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。",
           "moneyLine": "大公司赚基础设施的钱，小服务商赚落地第一公里的钱。",
           "oldFrame": "AI 创业只能跟大模型和融资有关。",
           "newFrame": "普通人的 AI 机会在帮老板跨过配置、流程和交付门槛。",
           "actionHint": "把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。",
-          "evidence": "Weforum 记录企业应用场景：地产开发和建筑设计流程；AIAgent的临时Cloudflare帐户；超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
+          "evidence": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作；作为角色混淆提示注射；AI洞察34：AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260622-A10",
-                "title": "Weforum 记录企业应用场景：地产开发和建筑设计流程",
-                "source": "weforum.org",
-                "url": "https://www.weforum.org/stories/2026/01/how-agentic-physical-and-sovereign-ai-are-rewriting-the-rules-of-enterprise-innovation/",
-                "note": "来源材料显示，Weforum 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 $45 b、$8.5 b 等数字。"
+                "id": "SIG-20260623-A13",
+                "title": "Jedify 推出 Agent 工作流，面向销售线索和收入团队协作",
+                "source": "norwest.com",
+                "url": "https://www.norwest.com/blog/jedify-the-missing-layer-in-enterprise-ai/",
+                "note": "来源材料显示，Jedify 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $24M 等数字。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything",
-                "title": "AIAgent的临时Cloudflare帐户",
+                "id": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+                "title": "作为角色混淆提示注射",
                 "source": "Simon Willison's Blog",
-                "url": "https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything",
-                "note": "AIAgent的临时Cloudflare帐户"
+                "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+                "note": "作为角色混淆提示注射"
               }
             ],
             "communityItems": [
               {
                 "kind": "community_intelligence",
-                "id": "612e15d1d9f810",
-                "title": "超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑",
-                "source": "生财有术",
-                "url": "https://scys.com/",
-                "note": "超级术：这篇产品调研干货：帮你避开90%独立开发者起步坑 #超级术# 26：今天这篇超级术，我想推荐的是@袁锐钦 的《我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了》，链接：我花3小时调研了一个出海产品，发现90%的独立开发者第一步就走错了我觉得这篇内容值得被推荐，一个很核心的原因是，它解决的是生财里一类非常普遍、而且越来越重要的问题：…"
+                "id": "98be750ce21c9b",
+                "title": "AI洞察34：AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一",
+                "source": "AI破局",
+                "url": "https://aipoju.com/index",
+                "note": "AI洞察34：AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一 大家好，勤奋洋哥又来了，为了让我更勤奋，大家可以先点赞后看，养成习惯"
               }
             ]
           },
-          "source": "weforum.org",
-          "url": "https://www.weforum.org/stories/2026/01/how-agentic-physical-and-sovereign-ai-are-rewriting-the-rules-of-enterprise-innovation/",
-          "date": "2026-06-22",
+          "source": "norwest.com",
+          "url": "https://www.norwest.com/blog/jedify-the-missing-layer-in-enterprise-ai/",
+          "date": "2026-06-23",
           "score": 93,
           "grade": "S",
           "priority": "公众号主稿",
@@ -6022,27 +6442,27 @@ window.WaveSightTopicCenter = {
           "oldFrame": "写 AI 就要讲技术和趋势。",
           "newFrame": "写给老板的 AI 内容，要先有人、有场景、有结果。",
           "actionHint": "从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。",
-          "evidence": "普通人怎么赚到1000万？；Best AI deployment platforms in 2026 记录企业应用场景：地产开发和建筑设计流程；sqlite-utils 4.0rc1添加迁移和嵌套事务",
+          "evidence": "普通人怎么赚到1000万？；OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划；作为角色混淆提示注射",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260622-A12",
-                "title": "Best AI deployment platforms in 2026 记录企业应用场景：地产开发和建筑设计流程",
-                "source": "northflank.com",
-                "url": "https://northflank.com/blog/ai-deployment-platforms",
-                "note": "来源材料显示，Best AI deployment platforms in 2026 的客户部署或应用案例涉及地产开发和建筑设计流程；原文同时出现 63b 等数字。"
+                "id": "SIG-20260623-A14",
+                "title": "OpenAI 携手 Trail of Bits 推出\"Patch the Planet\"开源漏洞修复计划",
+                "source": "TechCrunch：AI（RSS）",
+                "url": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs",
+                "note": "OpenAI 联合安全公司 Trail of Bits 启动\"Patch the Planet\"计划，帮助开源项目修复安全漏洞。Trail of Bits 工程师将直接与维护者合作，利用 OpenAI 的 Codex Security 等工具审查代码、开发补丁和测试，旨在减少维护者的安全报告处理负担，而非增加工作量。开源软件是商业基础但常因分散化而存在漏洞…"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
-                "title": "sqlite-utils 4.0rc1添加迁移和嵌套事务",
+                "id": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+                "title": "作为角色混淆提示注射",
                 "source": "Simon Willison's Blog",
-                "url": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
-                "note": "sqlite-utils 4.0rc1添加迁移和嵌套事务"
+                "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+                "note": "作为角色混淆提示注射"
               }
             ],
             "communityItems": [
@@ -6058,7 +6478,7 @@ window.WaveSightTopicCenter = {
           },
           "source": "AI破局",
           "url": "https://aipoju.com/index",
-          "date": "2026-06-22",
+          "date": "2026-06-23",
           "score": 92,
           "grade": "S",
           "priority": "公众号主稿",

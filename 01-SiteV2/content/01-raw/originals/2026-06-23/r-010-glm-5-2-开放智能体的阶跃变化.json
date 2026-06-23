@@ -1,0 +1,279 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-010",
+  "title": "GLM-5.2：开放智能体的阶跃变化",
+  "original_url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+  "canonical_url": "https://interconnects.ai/p/glm-52-is-the-step-change-for-open",
+  "source_name": "Nathan Lambert：Interconnects（RSS）",
+  "source_type": "builder",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-06-22T14:52:45.000Z",
+  "collected_at": "2026-06-23T02:03:46.451Z",
+  "language": "mixed",
+  "full_text": "GLM-5.2 is the step change for open agents\nA capability threshold I've been carefully monitoring.\nNathan Lambert\nJun 22, 2026\n72\nShare\nArticle voiceover\n0:00\n-9:27\nAudio playback is not supported on your browser. Please upgrade. Housekeeping: Following my “ State of the blog ” post last week, noting a slight increase in paid features, it’s a good time to remind folks that I offer group subscriptions with larger discounts proportional to the number of seats.\nI also released a new paper today on open RL recipes for terminal agents, read more here . A bit over a week ago, when the AI world was still reeling from the shocking export restriction, and effective banning , of Claude Fable 5 , Z.ai released their latest model, GLM-5.2. This model was rolled out unusually on a Saturday, June 13th, to GLM Coding Plan members. This is an unusual release practice, normally when an AI model is released on a weekend it’s for a weird reason (most famously, Llama 4 ). 1 In this case, it seemed like Z.ai was excited to capitalize on the zeitgeist of “Anthropic being anti open-science” with their silent safeguards on AI researchers. For the past year or two, the Chinese open-weight labs have taken every opportunity they have for easy marketing wins like this.\nShare\nGLM-5.2, in a common naming convention across the industry, looked potentially like an incremental update following the popular GLM-5.1 model. At this point, Moonshot AI, makers of the Kimi models, and Z.ai, makers of the GLM models, have consolidated the top of the reputational market with the most beloved open-weight models among AI researchers. What unfolded is a common lesson in tracking AI models that often minor version numbers can have AI models crossing meaningful user experience thresholds. A small change in benchmarks and training can open a wide range of new use-cases.\nWhat has followed is a slow, groundswell of hype for GLM-5.2. The official, MIT-licensed model weights and release blog dropped three days after the initial rollout, on June 16th. One could ramble many technical details, such as the strong benchmark scores, the very popular RL framework that Z.ai uses ( SLIME ), the recommendation of always using the model on Max thinking effort, and so on, but the initial release blogs usually aren’t the thing to focus on. You can wait and read the ecosystem reaction to know if it’s the real deal. Benchmarks are half dead these days , anyways.\nWhat followed on the 16th was a slew of community benchmarks showing better-than-expected results for GLM-5.2. Arena’s agent leaderboard had it as the only open model mixing it up with OpenAI and Anthropic’s latest models (notably matching Opus 4.8’s no-thinking effort to GLM-5.2’s max mode). This is one of many evals GLM-5.2 is crushing Gemini on, but that’s a topic for another time. A benchmark that has mixed perception in the community (particularly among actual designers), Design Arena even had GLM-5.2 besting Claude Fable itself — the recently banned hype machine!\nPretty much everyone I respect among the AI commentariat and researcher class has praised the model after using it personally. Such a focal point of discussion among the community has only been so clear with an open model release once before — DeepSeek R1 . This is not a comparison I make lightly, and when I compared Kimi K2’s release to a “DeepSeek Moment,” GLM-5.2 has well exceeded that. What made Kimi K2 impressive was that big steps in open model performance could seemingly come from anywhere in China. The step that GLM-5.2 has taken is more of a one way door for AI progress.\nAnthropic’s record revenue growth rate on the back of Claude Code is heavily driven by being the best model, and the only model that can really do this. GLM-5.2 is the first of many (coming soon) open weight models to offer credible alternatives. The parallel is very clear, to when DeepSeek R1 showed that open-weight labs, with far fewer resources, could also replicate the chain-of-thought reasoning models that OpenAI championed with o1. As AI systems get more complex and far more expensive to build, with tools, integrated harnesses, and scaled model weights, it was not a given that this GLM-5.2 moment would happen at all.\nThe key point is that GLM-5.2 is the open weight model that feels right in coding harnesses as a general agent . It’s the first one. I was personally overdue in trying some of the recent peer models, such as Kimi K2.7 or GLM-5.1, but the hype was too much for me to ignore. I put it to work helping make content for my post-training course with Fireworks’ API in Claude Code ( setting this up was very easy). There were some minor knife cuts, such as the Claude Code harness / my repo documentation trying to send images to the model, which would brick Fireworks API for the session — forcing a manual context clear. Overall, the model capabilities immediately felt right, and I still have some tinkering to do in which harness and inference provider to use.\nFor more hype, you can sample the Z.ai founder telling Elon that “ open-weight Fable capabilities will be here sooner than Q1 2027 ,” the CEO of Vercel saying “Genuinely impressed, almost shocked, at how good GLM-5.2 by @zai_org is at coding. This changes things,” and much more from a mix of people whose opinions I deeply respect and others I’m new to .\nInterconnects AI is a reader-supported publication. Consider becoming a subscriber.\nSo, this is a good model, where does this leave us?\nThere are many trends at play. To start, let’s ground things in the open-closed capabilities gap. I’ve written how I expect an “ explosion in usage ” if open models crossed the Opus 4.5 in Claude Code threshold from around the start of 2026. Here we are. With Claude Opus 4.5’s release on November 24th, 2025, the gap in time to GLM-5.2’s release on June 16th, 2026 is 204 days — or about 6.8 months. This puts us square in the 6-9 month time gap that many people claim as the performance lag between the U.S.’s closed labs and China’s open counterparts.\nUpon writing this, I’m surprised. As the U.S. labs have so rapidly ramped compute in the last ~year, I’ve expected the gap in performance to grow in time. A very meaningful step in this trajectory will also be Claude Fable 5’s release — which was more reliant on scale, and therefore the most advanced GPUs, relative to the Claude Opus models. Still, that’s not a satisfactory answer. Continuing to unpack the trajectory here involves more nuance than I can afford to fit in a signposting article.\nThe most immediate meaning of this is far more serious pricing pressure within the organizations tokenmaxxing, sending Anthropic’s revenue to the moon. Some would predict Anthropic doesn’t realize its forecasted ARR numbers, but I don’t think that prices in the true demand for these models and the inevitable growth. This model existing is a huge boon for the open model economy . All the likes of Fireworks, Together, Thinky (via Tinker), Prime Intellect, and whoever else sells open model inference or finetuning just hit another inflection point.\nIt’ll take a long time for the effects here to diffuse into the broader economy (and use-cases). Workflows are becoming more complex, with people using different models for planning, primary coding, and subagent dispatch. I expect the hype to continue to grow, and heck, as I’m writing this on a Sunday evening, I could see the media and market reaction on the Monday being a thing just like the DeepSeek R1 release. This diffusion happening while Anthropic’s, and by extension the U.S.’s flagship model, is still banned is a severe economic dagger. GLM-5.2 is being given time to carve out the economic underbelly of the frontier labs when they want to be pushing forward into higher margin, higher revenue domains enabled only by the absolute frontier models.\nThe economic concern mirrors a story that has been told many times in AI, so it’s unclear when it’ll stick.\nThe conversation that feels more core to the trajectory of AI is that of regulation and control of open models. I think it is an economic good for cheap intelligence to diffuse widely, and our default position should be to cheer for open models, but this model’s release date will have it be permanently associated with Claude Fable — and therefore Claude Mythos — in the mental map of AI power structures. We are at a point where Mythos-class model capabilities are deemed not safe for release by the U.S. Government and the Chinese model makers are charging forward in capabilities available to all.\nThese trend lines aren’t necessarily causally linked, as we don’t know the cyber performance of GLM-5.2 versus its predecessors, but the capabilities are definitely correlated. Without anything changing, this points to a potentiality where the U.S. Government decides a certain open-weights Chinese model is not safe for the public. There are many other potential scenarios here too, but what is clear is that we have a lot of work to do in mapping them out, preparing our infrastructure, and messaging to society.\nIt’ll take a lot more people than just me to imagine and communicate a world to decision makers for how to manage evermore capable open models. 2 We have years more of AI progress to come, with Nvidia’s next generation chips already in production and a constant stream of algorithmic advancements. It feels like a narrow path for open model advocates to take, but we need to figure out how to make them viable so the massive leaps in performance don’t only go to closed models.\nI totally see why it is scary to imagine an openly accessible Mythos class model, but if open models get banned now and only closed models get 10 or 100X better in 2 years in the hands of one or two companies, I think we will have bigger problems on our hands.\n1 Something that has always stood out to me is how fast the Chinese labs release their models. I’ve heard from multiple labs that the time to upload the weights publicly to HuggingFace after the model finishes training could be measured in hours rather than days. This has at least slowed a bit, now that they need to prepare to serve the model to a wider inference market.\n2 Something that will need to be discussed more is how even closed models, e.g. Mythos preview, are regularly in the hands of unauthorized users or jailbroken. So, the open vs. closed dichotomy on access isn’t totally black and white.\n72\nShare\nPrevious",
+  "clean_text": "GLM-5.2 is the step change for open agents\nA capability threshold I've been carefully monitoring.\nNathan Lambert\nJun 22, 2026\n72\nShare\nArticle voiceover\n0:00\n-9:27\nAudio playback is not supported on your browser. Please upgrade. Housekeeping: Following my “ State of the blog ” post last week, noting a slight increase in paid features, it’s a good time to remind folks that I offer group subscriptions with larger discounts proportional to the number of seats.\nI also released a new paper today on open RL recipes for terminal agents, read more here . A bit over a week ago, when the AI world was still reeling from the shocking export restriction, and effective banning , of Claude Fable 5 , Z.ai released their latest model, GLM-5.2. This model was rolled out unusually on a Saturday, June 13th, to GLM Coding Plan members. This is an unusual release practice, normally when an AI model is released on a weekend it’s for a weird reason (most famously, Llama 4 ). 1 In this case, it seemed like Z.ai was excited to capitalize on the zeitgeist of “Anthropic being anti open-science” with their silent safeguards on AI researchers. For the past year or two, the Chinese open-weight labs have taken every opportunity they have for easy marketing wins like this.\nShare\nGLM-5.2, in a common naming convention across the industry, looked potentially like an incremental update following the popular GLM-5.1 model. At this point, Moonshot AI, makers of the Kimi models, and Z.ai, makers of the GLM models, have consolidated the top of the reputational market with the most beloved open-weight models among AI researchers. What unfolded is a common lesson in tracking AI models that often minor version numbers can have AI models crossing meaningful user experience thresholds. A small change in benchmarks and training can open a wide range of new use-cases.\nWhat has followed is a slow, groundswell of hype for GLM-5.2. The official, MIT-licensed model weights and release blog dropped three days after the initial rollout, on June 16th. One could ramble many technical details, such as the strong benchmark scores, the very popular RL framework that Z.ai uses ( SLIME ), the recommendation of always using the model on Max thinking effort, and so on, but the initial release blogs usually aren’t the thing to focus on. You can wait and read the ecosystem reaction to know if it’s the real deal. Benchmarks are half dead these days , anyways.\nWhat followed on the 16th was a slew of community benchmarks showing better-than-expected results for GLM-5.2. Arena’s agent leaderboard had it as the only open model mixing it up with OpenAI and Anthropic’s latest models (notably matching Opus 4.8’s no-thinking effort to GLM-5.2’s max mode). This is one of many evals GLM-5.2 is crushing Gemini on, but that’s a topic for another time. A benchmark that has mixed perception in the community (particularly among actual designers), Design Arena even had GLM-5.2 besting Claude Fable itself — the recently banned hype machine!\nPretty much everyone I respect among the AI commentariat and researcher class has praised the model after using it personally. Such a focal point of discussion among the community has only been so clear with an open model release once before — DeepSeek R1 . This is not a comparison I make lightly, and when I compared Kimi K2’s release to a “DeepSeek Moment,” GLM-5.2 has well exceeded that. What made Kimi K2 impressive was that big steps in open model performance could seemingly come from anywhere in China. The step that GLM-5.2 has taken is more of a one way door for AI progress.\nAnthropic’s record revenue growth rate on the back of Claude Code is heavily driven by being the best model, and the only model that can really do this. GLM-5.2 is the first of many (coming soon) open weight models to offer credible alternatives. The parallel is very clear, to when DeepSeek R1 showed that open-weight labs, with far fewer resources, could also replicate the chain-of-thought reasoning models that OpenAI championed with o1. As AI systems get more complex and far more expensive to build, with tools, integrated harnesses, and scaled model weights, it was not a given that this GLM-5.2 moment would happen at all.\nThe key point is that GLM-5.2 is the open weight model that feels right in coding harnesses as a general agent . It’s the first one. I was personally overdue in trying some of the recent peer models, such as Kimi K2.7 or GLM-5.1, but the hype was too much for me to ignore. I put it to work helping make content for my post-training course with Fireworks’ API in Claude Code ( setting this up was very easy). There were some minor knife cuts, such as the Claude Code harness / my repo documentation trying to send images to the model, which would brick Fireworks API for the session — forcing a manual context clear. Overall, the model capabilities immediately felt right, and I still have some tinkering to do in which harness and inference provider to use.\nFor more hype, you can sample the Z.ai founder telling Elon that “ open-weight Fable capabilities will be here sooner than Q1 2027 ,” the CEO of Vercel saying “Genuinely impressed, almost shocked, at how good GLM-5.2 by @zai_org is at coding. This changes things,” and much more from a mix of people whose opinions I deeply respect and others I’m new to .\nInterconnects AI is a reader-supported publication. Consider becoming a subscriber.\nSo, this is a good model, where does this leave us?\nThere are many trends at play. To start, let’s ground things in the open-closed capabilities gap. I’ve written how I expect an “ explosion in usage ” if open models crossed the Opus 4.5 in Claude Code threshold from around the start of 2026. Here we are. With Claude Opus 4.5’s release on November 24th, 2025, the gap in time to GLM-5.2’s release on June 16th, 2026 is 204 days — or about 6.8 months. This puts us square in the 6-9 month time gap that many people claim as the performance lag between the U.S.’s closed labs and China’s open counterparts.\nUpon writing this, I’m surprised. As the U.S. labs have so rapidly ramped compute in the last ~year, I’ve expected the gap in performance to grow in time. A very meaningful step in this trajectory will also be Claude Fable 5’s release — which was more reliant on scale, and therefore the most advanced GPUs, relative to the Claude Opus models. Still, that’s not a satisfactory answer. Continuing to unpack the trajectory here involves more nuance than I can afford to fit in a signposting article.\nThe most immediate meaning of this is far more serious pricing pressure within the organizations tokenmaxxing, sending Anthropic’s revenue to the moon. Some would predict Anthropic doesn’t realize its forecasted ARR numbers, but I don’t think that prices in the true demand for these models and the inevitable growth. This model existing is a huge boon for the open model economy . All the likes of Fireworks, Together, Thinky (via Tinker), Prime Intellect, and whoever else sells open model inference or finetuning just hit another inflection point.\nIt’ll take a long time for the effects here to diffuse into the broader economy (and use-cases). Workflows are becoming more complex, with people using different models for planning, primary coding, and subagent dispatch. I expect the hype to continue to grow, and heck, as I’m writing this on a Sunday evening, I could see the media and market reaction on the Monday being a thing just like the DeepSeek R1 release. This diffusion happening while Anthropic’s, and by extension the U.S.’s flagship model, is still banned is a severe economic dagger. GLM-5.2 is being given time to carve out the economic underbelly of the frontier labs when they want to be pushing forward into higher margin, higher revenue domains enabled only by the absolute frontier models.\nThe economic concern mirrors a story that has been told many times in AI, so it’s unclear when it’ll stick.\nThe conversation that feels more core to the trajectory of AI is that of regulation and control of open models. I think it is an economic good for cheap intelligence to diffuse widely, and our default position should be to cheer for open models, but this model’s release date will have it be permanently associated with Claude Fable — and therefore Claude Mythos — in the mental map of AI power structures. We are at a point where Mythos-class model capabilities are deemed not safe for release by the U.S. Government and the Chinese model makers are charging forward in capabilities available to all.\nThese trend lines aren’t necessarily causally linked, as we don’t know the cyber performance of GLM-5.2 versus its predecessors, but the capabilities are definitely correlated. Without anything changing, this points to a potentiality where the U.S. Government decides a certain open-weights Chinese model is not safe for the public. There are many other potential scenarios here too, but what is clear is that we have a lot of work to do in mapping them out, preparing our infrastructure, and messaging to society.\nIt’ll take a lot more people than just me to imagine and communicate a world to decision makers for how to manage evermore capable open models. 2 We have years more of AI progress to come, with Nvidia’s next generation chips already in production and a constant stream of algorithmic advancements. It feels like a narrow path for open model advocates to take, but we need to figure out how to make them viable so the massive leaps in performance don’t only go to closed models.\nI totally see why it is scary to imagine an openly accessible Mythos class model, but if open models get banned now and only closed models get 10 or 100X better in 2 years in the hands of one or two companies, I think we will have bigger problems on our hands.\n1 Something that has always stood out to me is how fast the Chinese labs release their models. I’ve heard from multiple labs that the time to upload the weights publicly to HuggingFace after the model finishes training could be measured in hours rather than days. This has at least slowed a bit, now that they need to prepare to serve the model to a wider inference market.\n2 Something that will need to be discussed more is how even closed models, e.g. Mythos preview, are regularly in the hands of unauthorized users or jailbroken. So, the open vs. closed dichotomy on access isn’t totally black and white.\n72\nShare\nPrevious",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-23/r-010-glm-5-2-开放智能体的阶跃变化.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-23/r-010-glm-5-2-开放智能体的阶跃变化.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 94,
+  "extractor_diagnostics": {
+    "readability_score": 94,
+    "text_length": 10440,
+    "paragraph_count": 24,
+    "sentence_count": 84,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0002,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 10440,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "668cc19c2b96454e",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "GLM-5.2：开放智能体的阶跃变化",
+    "discovery_summary": "Z.ai 于 6 月 13 日向 GLM Coding Plan 成员发布 GLM-5.2，6 月 16 日开源 MIT 许可权重。该模型在 Arena 智能体排行榜上成为唯一与 OpenAI 和 Anthropic 最新模型匹敌的开放模型，匹配 Opus 4.8 无思考模式；在 Design Arena 中甚至超越 Claude Fable。作者认为这是自 DeepSeek R1 以来最受关注的开放模型发布，GLM-5.2 是首个在编码工具中作为通用智能体表现合格的开放权重模型。从 Claude Opus 4.5 发布（2025 年 11 月 24 日）到 GLM-5.2 发布（2026 年 6 月 16 日）间隔约 6.8 个月。",
+    "source_name": "Nathan Lambert：Interconnects（RSS）",
+    "origin_url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+    "discovered_at": "2026-06-23T01:57:11.616Z",
+    "rank_on_page": 155,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "merged_provider_duplicates",
+  "url_hash": "b573ab867d9ce879",
+  "content_hash": "668cc19c2b96454e",
+  "full_text_hash": "668cc19c2b96454e",
+  "semantic_hash": "0d85f8da993edc6d",
+  "duplicate_of": "merged 1 duplicate provider hit(s) before Raw selection",
+  "first_seen_at": "2026-06-22T14:52:45.000Z",
+  "last_seen_at": "2026-06-23T02:03:46.451Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "Z.ai 于 6 月 13 日向 GLM Coding Plan 成员发布 GLM-5.2，6 月 16 日开源 MIT 许可权重。该模型在 Arena 智能体排行榜上成为唯一与 OpenAI 和 Anthropic 最新模型匹敌的开放模型，匹配 Opus 4.8 无思考模式；在 Design Arena 中甚至超越 Claude Fable。作者认为这是自 DeepSeek R1 以来最受关注的开放模型发布，GLM-5.2 是首个在编码工具中作为通用智能体表现合格的开放权重模型。从 Claude Opus 4.5 发布（2025 年 11 月 24 日）到 GLM-5.2 发布（2026 年 6 月 16 日）间隔约 6.8 个月。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "2 is the step change for open agents A capability threshold I've been carefully monitoring.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Nathan Lambert Jun 22, 2026 72 Share Article voiceover 0:00 -9:27 Audio playback is not supported on your browser.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "quote",
+      "text": "Housekeeping: Following my “ State of the blog ” post last week, noting a slight increase in paid features, it’s a good time to remind folks that I offer group subscriptions with larger discounts proportional to the number of seats.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "I also released a new paper today on open RL recipes for terminal agents, read more here .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "A bit over a week ago, when the AI world was still reeling from the shocking export restriction, and effective banning , of Claude Fable 5 , Z.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Nathan Lambert",
+      "Interconnects（RSS）",
+      "OpenAI",
+      "Anthropic",
+      "Nvidia"
+    ],
+    "products": [
+      "Claude",
+      "agents",
+      "agent",
+      "Gemini"
+    ],
+    "people": [],
+    "industries": [
+      "制造 / 工业",
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "定价 / 计费变化",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "5.2",
+      "6",
+      "13",
+      "16",
+      "4.8",
+      "1",
+      "4.5",
+      "2025"
+    ],
+    "quotes": [
+      " State of the blog ",
+      "Anthropic being anti open-science",
+      "DeepSeek Moment,",
+      " open-weight Fable capabilities will be here sooner than Q1 2027 ,",
+      "Genuinely impressed, almost shocked, at how good GLM-5.2 by @zai_org is at coding. This changes things,"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Z.ai 于 6 月 13 日向 GLM Coding Plan 成员发布 GLM-5.2，6 月 16 日开源 MIT 许可权重。该模型在 Arena 智能体排行榜上成为唯一与 OpenAI 和 Anthropic 最新模型匹敌的开放模型，匹配 Opus 4.8 无思考模式；在 Design Arena 中甚至超越 Claude Fable。作者认为这是自 DeepSeek R1 以来最受关注的开放模型发布，GLM-5.2 是首个在编码工具中作为通用智能体表现合格的开放权重模型。从 Claude Opus 4.5 发布（2025 年 11 月 24 日）到 GLM-5.2 发布（2026 年 6 月 16 日）间隔约 6.8 个月。",
+      "2 is the step change for open agents A capability threshold I've been carefully monitoring.",
+      "I also released a new paper today on open RL recipes for terminal agents, read more here ."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "Nathan Lambert Jun 22, 2026 72 Share Article voiceover 0:00 -9:27 Audio playback is not supported on your browser."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# GLM-5.2：开放智能体的阶跃变化\n\n- raw_id: R-010\n- original_url: https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open\n- source_name: Nathan Lambert：Interconnects（RSS）\n- collected_at: 2026-06-23T02:03:46.451Z\n\n## clean_text\n\nGLM-5.2 is the step change for open agents\nA capability threshold I've been carefully monitoring.\nNathan Lambert\nJun 22, 2026\n72\nShare\nArticle voiceover\n0:00\n-9:27\nAudio playback is not supported on your browser. Please upgrade. Housekeeping: Following my “ State of the blog ” post last week, noting a slight increase in paid features, it’s a good time to remind folks that I offer group subscriptions with larger discounts proportional to the number of seats.\nI also released a new paper today on open RL recipes for terminal agents, read more here . A bit over a week ago, when the AI world was still reeling from the shocking export restriction, and effective banning , of Claude Fable 5 , Z.ai released their latest model, GLM-5.2. This model was rolled out unusually on a Saturday, June 13th, to GLM Coding Plan members. This is an unusual release practice, normally when an AI model is released on a weekend it’s for a weird reason (most famously, Llama 4 ). 1 In this case, it seemed like Z.ai was excited to capitalize on the zeitgeist of “Anthropic being anti open-science” with their silent safeguards on AI researchers. For the past year or two, the Chinese open-weight labs have taken every opportunity they have for easy marketing wins like this.\nShare\nGLM-5.2, in a common naming convention across the industry, looked potentially like an incremental update following the popular GLM-5.1 model. At this point, Moonshot AI, makers of the Kimi models, and Z.ai, makers of the GLM models, have consolidated the top of the reputational market with the most beloved open-weight models among AI researchers. What unfolded is a common lesson in tracking AI models that often minor version numbers can have AI models crossing meaningful user experience thresholds. A small change in benchmarks and training can open a wide range of new use-cases.\nWhat has followed is a slow, groundswell of hype for GLM-5.2. The official, MIT-licensed model weights and release blog dropped three days after the initial rollout, on June 16th. One could ramble many technical details, such as the strong benchmark scores, the very popular RL framework that Z.ai uses ( SLIME ), the recommendation of always using the model on Max thinking effort, and so on, but the initial release blogs usually aren’t the thing to focus on. You can wait and read the ecosystem reaction to know if it’s the real deal. Benchmarks are half dead these days , anyways.\nWhat followed on the 16th was a slew of community benchmarks showing better-than-expected results for GLM-5.2. Arena’s agent leaderboard had it as the only open model mixing it up with OpenAI and Anthropic’s latest models (notably matching Opus 4.8’s no-thinking effort to GLM-5.2’s max mode). This is one of many evals GLM-5.2 is crushing Gemini on, but that’s a topic for another time. A benchmark that has mixed perception in the community (particularly among actual designers), Design Arena even had GLM-5.2 besting Claude Fable itself — the recently banned hype machine!\nPretty much everyone I respect among the AI commentariat and researcher class has praised the model after using it personally. Such a focal point of discussion among the community has only been so clear with an open model release once before — DeepSeek R1 . This is not a comparison I make lightly, and when I compared Kimi K2’s release to a “DeepSeek Moment,” GLM-5.2 has well exceeded that. What made Kimi K2 impressive was that big steps in open model performance could seemingly come from anywhere in China. The step that GLM-5.2 has taken is more of a one way door for AI progress.\nAnthropic’s record revenue growth rate on the back of Claude Code is heavily driven by being the best model, and the only model that can really do this. GLM-5.2 is the first of many (coming soon) open weight models to offer credible alternatives. The parallel is very clear, to when DeepSeek R1 showed that open-weight labs, with far fewer resources, could also replicate the chain-of-thought reasoning models that OpenAI championed with o1. As AI systems get more complex and far more expensive to build, with tools, integrated harnesses, and scaled model weights, it was not a given that this GLM-5.2 moment would happen at all.\nThe key point is that GLM-5.2 is the open weight model that feels right in coding harnesses as a general agent . It’s the first one. I was personally overdue in trying some of the recent peer models, such as Kimi K2.7 or GLM-5.1, but the hype was too much for me to ignore. I put it to work helping make content for my post-training course with Fireworks’ API in Claude Code ( setting this up was very easy). There were some minor knife cuts, such as the Claude Code harness / my repo documentation trying to send images to the model, which would brick Fireworks API for the session — forcing a manual context clear. Overall, the model capabilities immediately felt right, and I still have some tinkering to do in which harness and inference provider to use.\nFor more hype, you can sample the Z.ai founder telling Elon that “ open-weight Fable capabilities will be here sooner than Q1 2027 ,” the CEO of Vercel saying “Genuinely impressed, almost shocked, at how good GLM-5.2 by @zai_org is at coding. This changes things,” and much more from a mix of people whose opinions I deeply respect and others I’m new to .\nInterconnects AI is a reader-supported publication. Consider becoming a subscriber.\nSo, this is a good model, where does this leave us?\nThere are many trends at play. To start, let’s ground things in the open-closed capabilities gap. I’ve written how I expect an “ explosion in usage ” if open models crossed the Opus 4.5 in Claude Code threshold from around the start of 2026. Here we are. With Claude Opus 4.5’s release on November 24th, 2025, the gap in time to GLM-5.2’s release on June 16th, 2026 is 204 days — or about 6.8 months. This puts us square in the 6-9 month time gap that many people claim as the performance lag between the U.S.’s closed labs and China’s open counterparts.\nUpon writing this, I’m surprised. As the U.S. labs have so rapidly ramped compute in the last ~year, I’ve expected the gap in performance to grow in time. A very meaningful step in this trajectory will also be Claude Fable 5’s release — which was more reliant on scale, and therefore the most advanced GPUs, relative to the Claude Opus models. Still, that’s not a satisfactory answer. Continuing to unpack the trajectory here involves more nuance than I can afford to fit in a signposting article.\nThe most immediate meaning of this is far more serious pricing pressure within the organizations tokenmaxxing, sending Anthropic’s revenue to the moon. Some would predict Anthropic doesn’t realize its forecasted ARR numbers, but I don’t think that prices in the true demand for these models and the inevitable growth. This model existing is a huge boon for the open model economy . All the likes of Fireworks, Together, Thinky (via Tinker), Prime Intellect, and whoever else sells open model inference or finetuning just hit another inflection point.\nIt’ll take a long time for the effects here to diffuse into the broader economy (and use-cases). Workflows are becoming more complex, with people using different models for planning, primary coding, and subagent dispatch. I expect the hype to continue to grow, and heck, as I’m writing this on a Sunday evening, I could see the media and market reaction on the Monday being a thing just like the DeepSeek R1 release. This diffusion happening while Anthropic’s, and by extension the U.S.’s flagship model, is still banned is a severe economic dagger. GLM-5.2 is being given time to carve out the economic underbelly of the frontier labs when they want to be pushing forward into higher margin, higher revenue domains enabled only by the absolute frontier models.\nThe economic concern mirrors a story that has been told many times in AI, so it’s unclear when it’ll stick.\nThe conversation that feels more core to the trajectory of AI is that of regulation and control of open models. I think it is an economic good for cheap intelligence to diffuse widely, and our default position should be to cheer for open models, but this model’s release date will have it be permanently associated with Claude Fable — and therefore Claude Mythos — in the mental map of AI power structures. We are at a point where Mythos-class model capabilities are deemed not safe for release by the U.S. Government and the Chinese model makers are charging forward in capabilities available to all.\nThese trend lines aren’t necessarily causally linked, as we don’t know the cyber performance of GLM-5.2 versus its predecessors, but the capabilities are definitely correlated. Without anything changing, this points to a potentiality where the U.S. Government decides a certain open-weights Chinese model is not safe for the public. There are many other potential scenarios here too, but what is clear is that we have a lot of work to do in mapping them out, preparing our infrastructure, and messaging to society.\nIt’ll take a lot more people than just me to imagine and communicate a world to decision makers for how to manage evermore capable open models. 2 We have years more of AI progress to come, with Nvidia’s next generation chips already in production and a constant stream of algorithmic advancements. It feels like a narrow path for open model advocates to take, but we need to figure out how to make them viable so the massive leaps in performance don’t only go to closed models.\nI totally see why it is scary to imagine an openly accessible Mythos class model, but if open models get banned now and only closed models get 10 or 100X better in 2 years in the hands of one or two companies, I think we will have bigger problems on our hands.\n1 Something that has always stood out to me is how fast the Chinese labs release their models. I’ve heard from multiple labs that the time to upload the weights publicly to HuggingFace after the model finishes training could be measured in hours rather than days. This has at least slowed a bit, now that they need to prepare to serve the model to a wider inference market.\n2 Something that will need to be discussed more is how even closed models, e.g. Mythos preview, are regularly in the hands of unauthorized users or jailbroken. So, the open vs. closed dichotomy on access isn’t totally black and white.\n72\nShare\nPrevious\n\n## full_text\n\nGLM-5.2 is the step change for open agents\nA capability threshold I've been carefully monitoring.\nNathan Lambert\nJun 22, 2026\n72\nShare\nArticle voiceover\n0:00\n-9:27\nAudio playback is not supported on your browser. Please upgrade. Housekeeping: Following my “ State of the blog ” post last week, noting a slight increase in paid features, it’s a good time to remind folks that I offer group subscriptions with larger discounts proportional to the number of seats.\nI also released a new paper today on open RL recipes for terminal agents, read more here . A bit over a week ago, when the AI world was still reeling from the shocking export restriction, and effective banning , of Claude Fable 5 , Z.ai released their latest model, GLM-5.2. This model was rolled out unusually on a Saturday, June 13th, to GLM Coding Plan members. This is an unusual release practice, normally when an AI model is released on a weekend it’s for a weird reason (most famously, Llama 4 ). 1 In this case, it seemed like Z.ai was excited to capitalize on the zeitgeist of “Anthropic being anti open-science” with their silent safeguards on AI researchers. For the past year or two, the Chinese open-weight labs have taken every opportunity they have for easy marketing wins like this.\nShare\nGLM-5.2, in a common naming convention across the industry, looked potentially like an incremental update following the popular GLM-5.1 model. At this point, Moonshot AI, makers of the Kimi models, and Z.ai, makers of the GLM models, have consolidated the top of the reputational market with the most beloved open-weight models among AI researchers. What unfolded is a common lesson in tracking AI models that often minor version numbers can have AI models crossing meaningful user experience thresholds. A small change in benchmarks and training can open a wide range of new use-cases.\nWhat has followed is a slow, groundswell of hype for GLM-5.2. The official, MIT-licensed model weights and release blog dropped three days after the initial rollout, on June 16th. One could ramble many technical details, such as the strong benchmark scores, the very popular RL framework that Z.ai uses ( SLIME ), the recommendation of always using the model on Max thinking effort, and so on, but the initial release blogs usually aren’t the thing to focus on. You can wait and read the ecosystem reaction to know if it’s the real deal. Benchmarks are half dead these days , anyways.\nWhat followed on the 16th was a slew of community benchmarks showing better-than-expected results for GLM-5.2. Arena’s agent leaderboard had it as the only open model mixing it up with OpenAI and Anthropic’s latest models (notably matching Opus 4.8’s no-thinking effort to GLM-5.2’s max mode). This is one of many evals GLM-5.2 is crushing Gemini on, but that’s a topic for another time. A benchmark that has mixed perception in the community (particularly among actual designers), Design Arena even had GLM-5.2 besting Claude Fable itself — the recently banned hype machine!\nPretty much everyone I respect among the AI commentariat and researcher class has praised the model after using it personally. Such a focal point of discussion among the community has only been so clear with an open model release once before — DeepSeek R1 . This is not a comparison I make lightly, and when I compared Kimi K2’s release to a “DeepSeek Moment,” GLM-5.2 has well exceeded that. What made Kimi K2 impressive was that big steps in open model performance could seemingly come from anywhere in China. The step that GLM-5.2 has taken is more of a one way door for AI progress.\nAnthropic’s record revenue growth rate on the back of Claude Code is heavily driven by being the best model, and the only model that can really do this. GLM-5.2 is the first of many (coming soon) open weight models to offer credible alternatives. The parallel is very clear, to when DeepSeek R1 showed that open-weight labs, with far fewer resources, could also replicate the chain-of-thought reasoning models that OpenAI championed with o1. As AI systems get more complex and far more expensive to build, with tools, integrated harnesses, and scaled model weights, it was not a given that this GLM-5.2 moment would happen at all.\nThe key point is that GLM-5.2 is the open weight model that feels right in coding harnesses as a general agent . It’s the first one. I was personally overdue in trying some of the recent peer models, such as Kimi K2.7 or GLM-5.1, but the hype was too much for me to ignore. I put it to work helping make content for my post-training course with Fireworks’ API in Claude Code ( setting this up was very easy). There were some minor knife cuts, such as the Claude Code harness / my repo documentation trying to send images to the model, which would brick Fireworks API for the session — forcing a manual context clear. Overall, the model capabilities immediately felt right, and I still have some tinkering to do in which harness and inference provider to use.\nFor more hype, you can sample the Z.ai founder telling Elon that “ open-weight Fable capabilities will be here sooner than Q1 2027 ,” the CEO of Vercel saying “Genuinely impressed, almost shocked, at how good GLM-5.2 by @zai_org is at coding. This changes things,” and much more from a mix of people whose opinions I deeply respect and others I’m new to .\nInterconnects AI is a reader-supported publication. Consider becoming a subscriber.\nSo, this is a good model, where does this leave us?\nThere are many trends at play. To start, let’s ground things in the open-closed capabilities gap. I’ve written how I expect an “ explosion in usage ” if open models crossed the Opus 4.5 in Claude Code threshold from around the start of 2026. Here we are. With Claude Opus 4.5’s release on November 24th, 2025, the gap in time to GLM-5.2’s release on June 16th, 2026 is 204 days — or about 6.8 months. This puts us square in the 6-9 month time gap that many people claim as the performance lag between the U.S.’s closed labs and China’s open counterparts.\nUpon writing this, I’m surprised. As the U.S. labs have so rapidly ramped compute in the last ~year, I’ve expected the gap in performance to grow in time. A very meaningful step in this trajectory will also be Claude Fable 5’s release — which was more reliant on scale, and therefore the most advanced GPUs, relative to the Claude Opus models. Still, that’s not a satisfactory answer. Continuing to unpack the trajectory here involves more nuance than I can afford to fit in a signposting article.\nThe most immediate meaning of this is far more serious pricing pressure within the organizations tokenmaxxing, sending Anthropic’s revenue to the moon. Some would predict Anthropic doesn’t realize its forecasted ARR numbers, but I don’t think that prices in the true demand for these models and the inevitable growth. This model existing is a huge boon for the open model economy . All the likes of Fireworks, Together, Thinky (via Tinker), Prime Intellect, and whoever else sells open model inference or finetuning just hit another inflection point.\nIt’ll take a long time for the effects here to diffuse into the broader economy (and use-cases). Workflows are becoming more complex, with people using different models for planning, primary coding, and subagent dispatch. I expect the hype to continue to grow, and heck, as I’m writing this on a Sunday evening, I could see the media and market reaction on the Monday being a thing just like the DeepSeek R1 release. This diffusion happening while Anthropic’s, and by extension the U.S.’s flagship model, is still banned is a severe economic dagger. GLM-5.2 is being given time to carve out the economic underbelly of the frontier labs when they want to be pushing forward into higher margin, higher revenue domains enabled only by the absolute frontier models.\nThe economic concern mirrors a story that has been told many times in AI, so it’s unclear when it’ll stick.\nThe conversation that feels more core to the trajectory of AI is that of regulation and control of open models. I think it is an economic good for cheap intelligence to diffuse widely, and our default position should be to cheer for open models, but this model’s release date will have it be permanently associated with Claude Fable — and therefore Claude Mythos — in the mental map of AI power structures. We are at a point where Mythos-class model capabilities are deemed not safe for release by the U.S. Government and the Chinese model makers are charging forward in capabilities available to all.\nThese trend lines aren’t necessarily causally linked, as we don’t know the cyber performance of GLM-5.2 versus its predecessors, but the capabilities are definitely correlated. Without anything changing, this points to a potentiality where the U.S. Government decides a certain open-weights Chinese model is not safe for the public. There are many other potential scenarios here too, but what is clear is that we have a lot of work to do in mapping them out, preparing our infrastructure, and messaging to society.\nIt’ll take a lot more people than just me to imagine and communicate a world to decision makers for how to manage evermore capable open models. 2 We have years more of AI progress to come, with Nvidia’s next generation chips already in production and a constant stream of algorithmic advancements. It feels like a narrow path for open model advocates to take, but we need to figure out how to make them viable so the massive leaps in performance don’t only go to closed models.\nI totally see why it is scary to imagine an openly accessible Mythos class model, but if open models get banned now and only closed models get 10 or 100X better in 2 years in the hands of one or two companies, I think we will have bigger problems on our hands.\n1 Something that has always stood out to me is how fast the Chinese labs release their models. I’ve heard from multiple labs that the time to upload the weights publicly to HuggingFace after the model finishes training could be measured in hours rather than days. This has at least slowed a bit, now that they need to prepare to serve the model to a wider inference market.\n2 Something that will need to be discussed more is how even closed models, e.g. Mythos preview, are regularly in the hands of unauthorized users or jailbroken. So, the open vs. closed dichotomy on access isn’t totally black and white.\n72\nShare\nPrevious\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 94\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n1. [product_update / daily_observation, heatmap, change / high] Z.ai 于 6 月 13 日向 GLM Coding Plan 成员发布 GLM-5.2，6 月 16 日开源 MIT 许可权重。该模型在 Arena 智能体排行榜上成为唯一与 OpenAI 和 Anthropic 最新模型匹敌的开放模型，匹配 Opus 4.8 无思考模式；在 Design Arena 中甚至超越 Claude Fable。作者认为这是自 DeepSeek R1 以来最受关注的开放模型发布，GLM-5.2 是首个在编码工具中作为通用智能体表现合格的开放权重模型。从 Claude Opus 4.5 发布（2025 年 11 月 24 日）到 GLM-5.2 发布（2026 年 6 月 16 日）间隔约 6.8 个月。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] 2 is the step change for open agents A capability threshold I've been carefully monitoring.\n3. [workflow_change / daily_observation, heatmap, change, case, trend / high] Nathan Lambert Jun 22, 2026 72 Share Article voiceover 0:00 -9:27 Audio playback is not supported on your browser.\n4. [quote / daily_observation, heatmap, viewpoint / high] Housekeeping: Following my “ State of the blog ” post last week, noting a slight increase in paid features, it’s a good time to remind folks that I offer group subscriptions with larger discounts proportional to the number of seats.\n5. [product_update / daily_observation, heatmap, change / high] I also released a new paper today on open RL recipes for terminal agents, read more here .\n6. [company_action / daily_observation, heatmap, change, case, trend / high] A bit over a week ago, when the AI world was still reeling from the shocking export restriction, and effective banning , of Claude Fable 5 , Z.\n"
+}
