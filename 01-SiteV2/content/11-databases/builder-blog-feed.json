@@ -1,10 +1,12 @@
 {
-  "generatedAt": "2026-06-22T06:41:22.379Z",
+  "generatedAt": "2026-06-23T01:34:47.141Z",
   "stats": {
-    "blogsBuilt": 7,
-    "totalItems": 38,
+    "blogsBuilt": 6,
+    "totalItems": 32,
     "sourceCount": 8,
-    "errors": []
+    "errors": [
+      "tigera-blog: HTTP 415"
+    ]
   },
   "blogs": [
     {
@@ -12,6 +14,26 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+          "text": "Prompt Injection as Role Confusion",
+          "summary": "<p><strong><a href=\"https://role-confusion.github.io\">Prompt Injection as Role Confusion</a></strong></p>\nFirst, I absolutely love this:</p>\n<blockquote>\n<p>This is a blog-style writeup of the paper.</p>\n</blockquote>\n<p>I wish <em>every paper</em> would come with one of these. Academic writing is p",
+          "createdAt": "2026-06-22T23:59:53+00:00",
+          "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything",
+          "text": "Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code",
+          "summary": "<p>This morning <a href=\"https://news.ycombinator.com/item?id=48630171\">on Hacker News</a> I saw <a href=\"https://hustvl.github.io/Moebius/\">Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance</a>, describing a small but effective inpainting model - a model where you can ",
+          "createdAt": "2026-06-22T23:43:51+00:00",
+          "url": "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything",
           "text": "sqlite-utils 4.0rc1 adds migrations and nested transactions",
@@ -161,56 +183,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/16/captcha-on-at-least-one-ampersand/#atom-everything",
-          "text": "Cloudflare CAPTCHA on at least one ampersand",
-          "summary": "<p><strong>TIL:</strong> <a href=\"https://til.simonwillison.net/cloudflare/captcha-on-at-least-one-ampersand\">Cloudflare CAPTCHA on at least one ampersand</a></p>\n        <p>I'm using Cloudflare's CAPTCHA (they call it a \"Web Application Firewall > Custom rules > Managed Challenge\" these days) to pr",
-          "createdAt": "2026-06-16T00:21:36+00:00",
-          "url": "https://simonwillison.net/2026/Jun/16/captcha-on-at-least-one-ampersand/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/15/datasette-apps-2/#atom-everything",
-          "text": "datasette-apps 0.1a3",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-apps/releases/tag/0.1a3\">datasette-apps 0.1a3</a></p>\n        <blockquote>\n<ul>\n<li>Fixed a bug where users without the <code>create-app</code> permission could still create apps. <a href=\"https://github.com/datasette/datas",
-          "createdAt": "2026-06-15T20:25:07+00:00",
-          "url": "https://simonwillison.net/2026/Jun/15/datasette-apps-2/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/15/datasette-apps/#atom-everything",
-          "text": "datasette-apps 0.1a2",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-apps/releases/tag/0.1a2\">datasette-apps 0.1a2</a></p>\n        <blockquote>\n<ul>\n<li>Custom network/CSP origins for apps are now guarded by a new <code>apps-set-csp</code> permission, with an optional <code>allowed_csp_origi",
-          "createdAt": "2026-06-15T17:26:11+00:00",
-          "url": "https://simonwillison.net/2026/Jun/15/datasette-apps/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/15/datasette-agent/#atom-everything",
-          "text": "datasette-agent 0.3a0",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-agent/releases/tag/0.3a0\">datasette-agent 0.3a0</a></p>\n        <blockquote>\n<ul>\n<li>New tool, <code>execute_write_sql</code>, which requests user approval and then writes to a database - taking user permissions into accou",
-          "createdAt": "2026-06-15T17:19:27+00:00",
-          "url": "https://simonwillison.net/2026/Jun/15/datasette-agent/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/15/axios-clashes-anthropics/#atom-everything",
-          "text": "\"They screwed us\": Personality clashes sent Anthropic's models offline",
-          "summary": "<p><strong><a href=\"https://www.axios.com/2026/06/15/anthropic-white-house-fable-mythos\">\"They screwed us\": Personality clashes sent Anthropic's models offline</a></strong></p>\nLots of \"source familiar with the administration's thinking\" and \"source close to Anthropic\" in this Axios piece, which is ",
-          "createdAt": "2026-06-15T14:57:33+00:00",
-          "url": "https://simonwillison.net/2026/Jun/15/axios-clashes-anthropics/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -219,6 +191,16 @@
       "handle": "interconnects.ai",
       "bio": "AI research industry analysis, model evaluations, open-source AI, Llama ecosystem, inference.",
       "tweets": [
+        {
+          "id": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+          "text": "GLM-5.2 is the step change for open agents",
+          "summary": "A capability threshold I've been carefully monitoring.",
+          "createdAt": "Mon, 22 Jun 2026 14:52:45 GMT",
+          "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://www.interconnects.ai/p/banning-open-source-ai-would-be-a",
           "text": "Banning Open Source AI Would Be A Mistake",
@@ -301,6 +283,16 @@
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
         {
+          "id": "https://tldr.tech/ai/2026-06-22",
+          "text": "Orchestration models 🤖, DeepMind exodus 👋, loop engineering 🔄",
+          "summary": "",
+          "createdAt": "Mon, 22 Jun 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-06-22",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
           "id": "https://tldr.tech/ai/2026-06-19",
           "text": "GPT-5.6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠",
           "summary": "",
@@ -326,43 +318,6 @@
           "summary": "",
           "createdAt": "Wed, 17 Jun 2026 00:00:00 GMT",
           "url": "https://tldr.tech/ai/2026-06-17",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-06-16",
-          "text": "Meta AI mode 📱, Factory 2.0 👨‍💻, Sakana’s autonomous researcher 🐟",
-          "summary": "",
-          "createdAt": "Tue, 16 Jun 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-06-16",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        }
-      ]
-    },
-    {
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "bio": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "tweets": [
-        {
-          "id": "https://www.tigera.io/blog/how-lynx-works-a-technical-walkthrough/",
-          "text": "How Lynx Works: A Technical Walkthrough",
-          "summary": "We launched Lynx this week. Instead of restating the pitch, I want to explain how it&#8217;s built and why we made the architectural choices we did. If you run Kubernetes and you&#8217;re starting to put...\nThe post How Lynx Works: A Technical Walkthrough appeared first on Tigera – Creator of Calico",
-          "createdAt": "Thu, 18 Jun 2026 17:19:30 +0000",
-          "url": "https://www.tigera.io/blog/how-lynx-works-a-technical-walkthrough/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.tigera.io/blog/why-we-built-lynx-bringing-control-to-the-age-of-ai-agents/",
-          "text": "Why We Built Lynx: Bringing Control to the Age of AI Agents",
-          "summary": "For a decade, one idea has guided everything we&#8217;ve built at Tigera: How do you secure a dynamic system with a lot of moving parts that is changing rapidly, with a programmatic approach? Calico has...\nThe post Why We Built Lynx: Bringing Control to the Age of AI Agents appeared first on Tigera ",
-          "createdAt": "Wed, 17 Jun 2026 13:00:22 +0000",
-          "url": "https://www.tigera.io/blog/why-we-built-lynx-bringing-control-to-the-age-of-ai-agents/",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -410,26 +365,6 @@
           "summary": " \r\n    \r\n \r\nLast week, a government order took the world's best AI model offline in hours. No one deleted it and no server failed. A single directive put the most capable model on the market out of reach for everyone not a citizen of one country.",
           "createdAt": "Tue, 16 Jun 2026 13:45:51 GMT",
           "url": "https://www.dataiku.com/stories/blog/sovereignty-ai",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.dataiku.com/stories/blog/what-is-ai-orchestration-layer",
-          "text": "What is an AI orchestration layer? Architecture, benefits, and enterprise use cases",
-          "summary": " \r\n    \r\n \r\nAI investments are multiplying, but coordination between models, agents, and data pipelines remains an afterthought in most enterprises. The result is predictable: duplicated workflows, inconsistent outputs, ungoverned decisions, and AI initiatives that never graduate from pilot to produ",
-          "createdAt": "Mon, 15 Jun 2026 13:00:00 GMT",
-          "url": "https://www.dataiku.com/stories/blog/what-is-ai-orchestration-layer",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.dataiku.com/stories/blog/ai-explainability-in-enterprise-ai",
-          "text": "AI explainability in enterprise AI: methods, tools, and why it matters for trustworthy models and agents",
-          "summary": " \r\n    \r\n \r\nAI models, generative AI (GenAI) applications, and agents are making decisions that affect credit scores, patient care, and hiring outcomes. Enterprises deploying these systems are accumulating regulatory and reputational risk proportional to the number of decisions that cannot be explai",
-          "createdAt": "Mon, 15 Jun 2026 13:00:00 GMT",
-          "url": "https://www.dataiku.com/stories/blog/ai-explainability-in-enterprise-ai",
           "likes": 0,
           "retweets": 0,
           "replies": 0
