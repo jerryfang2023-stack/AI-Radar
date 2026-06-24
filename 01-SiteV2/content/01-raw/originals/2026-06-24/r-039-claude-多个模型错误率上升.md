@@ -1,0 +1,243 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-039
+title: "Claude 多个模型错误率上升"
+original_url: "https://status.claude.com/incidents/jbhf20wjmzrf"
+canonical_url: "https://status.claude.com/incidents/jbhf20wjmzrf"
+source_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: community_feedback
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-23T14:52:24.596Z"
+collected_at: 2026-06-24T01:53:52.493Z
+language: mixed
+full_text_hash: d435de749a75781a
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-24/r-039-claude-多个模型错误率上升.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-24/r-039-claude-多个模型错误率上升.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: medium
+extraction_method: "body-visible-text"
+readability_score: 49
+extractor_diagnostics: {"readability_score":49,"text_length":1030,"paragraph_count":17,"sentence_count":8,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 1030
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d435de749a75781a","missing":[]}
+source_volatility: high
+community_name: "Hacker News 热门（buzzing.cc 中文翻译）"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: user_feedback_signal
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Claude 多个模型错误率上升","discovery_summary":"Claude 状态页面 status.claude.com 显示多个模型出现 elevated error rate（错误率升高），该信息于 22：19 发布，在 Hacker News 上获得 112 个点赞。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://status.claude.com/incidents/jbhf20wjmzrf","discovered_at":"2026-06-24T01:47:16.531Z","rank_on_page":175,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 2d63069d2e24770b
+content_hash: d435de749a75781a
+semantic_hash: cb33331ad248825a
+duplicate_of: ""
+first_seen_at: "2026-06-23T14:52:24.596Z"
+last_seen_at: 2026-06-24T01:53:52.493Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Hacker News 热门（buzzing.cc 中文翻译）","Anthropic"],"products":["Claude","claude"],"people":[],"industries":["开发者工具"],"roles":[],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["22","19","112","23","2026","16","44","7"],"quotes":[]}
+evidence_seed: {"company_actions":["Claude 状态页面 status.claude.com 显示多个模型出现 elevated error rate（错误率升高），该信息于 22：19 发布，在 Hacker News 上获得 112 个点赞。","Posted Jun 23 , 2026 - 16:44 UTC Update We have seen error rates broadly return to normal success levels across all models.","We saw elevated error rates on requests to multiple models from 7:08am PT / 14:08 UTC through 8:33am PT / 15:33 UTC."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":["Claude Status - Elevated error rate across multiple models Elevated error rate across multiple models Incident Report for Claude Resolved This incident has been resolved."]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"product_update","text":"Claude 状态页面 status.claude.com 显示多个模型出现 elevated error rate（错误率升高），该信息于 22：19 发布，在 Hacker News 上获得 112 个点赞。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"Claude Status - Elevated error rate across multiple models Elevated error rate across multiple models Incident Report for Claude Resolved This incident has been resolved.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Posted Jun 23 , 2026 - 16:44 UTC Update We have seen error rates broadly return to normal success levels across all models.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"We saw elevated error rates on requests to multiple models from 7:08am PT / 14:08 UTC through 8:33am PT / 15:33 UTC.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Posted Jun 23 , 2026 - 16:05 UTC Update We are continuing to monitor for any further issues.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Posted Jun 23 , 2026 - 15:28 UTC Monitoring A fix has been implemented and we are monitoring the results.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Claude 多个模型错误率上升
+
+## clean_text
+
+Claude Status - Elevated error rate across multiple models
+Elevated error rate across multiple models
+Incident
+Report for Claude
+Resolved
+This incident has been resolved.
+Posted Jun 23 , 2026 - 16:44 UTC
+Update
+We have seen error rates broadly return to normal success levels across all models. We saw elevated error rates on requests to multiple models from 7:08am PT / 14:08 UTC through 8:33am PT / 15:33 UTC.
+Posted Jun 23 , 2026 - 16:05 UTC
+Update
+We are continuing to monitor for any further issues.
+Posted Jun 23 , 2026 - 15:28 UTC
+Monitoring
+A fix has been implemented and we are monitoring the results.
+Posted Jun 23 , 2026 - 14:53 UTC
+Identified
+The issue has been identified and a fix is being implemented.
+Posted Jun 23 , 2026 - 14:25 UTC
+Investigating
+We are currently investigating this issue.
+Posted Jun 23 , 2026 - 14:19 UTC
+This incident affected: claude.ai, Claude Console (platform.claude.com), Claude API (api.anthropic.com), Claude Code, and Claude Cowork.
+&larr; Current Status
+Powered by Atlassian Statuspage
+
+## full_text
+
+Claude Status - Elevated error rate across multiple models
+Elevated error rate across multiple models
+Incident
+Report for Claude
+Resolved
+This incident has been resolved.
+Posted Jun 23 , 2026 - 16:44 UTC
+Update
+We have seen error rates broadly return to normal success levels across all models. We saw elevated error rates on requests to multiple models from 7:08am PT / 14:08 UTC through 8:33am PT / 15:33 UTC.
+Posted Jun 23 , 2026 - 16:05 UTC
+Update
+We are continuing to monitor for any further issues.
+Posted Jun 23 , 2026 - 15:28 UTC
+Monitoring
+A fix has been implemented and we are monitoring the results.
+Posted Jun 23 , 2026 - 14:53 UTC
+Identified
+The issue has been identified and a fix is being implemented.
+Posted Jun 23 , 2026 - 14:25 UTC
+Investigating
+We are currently investigating this issue.
+Posted Jun 23 , 2026 - 14:19 UTC
+This incident affected: claude.ai, Claude Console (platform.claude.com), Claude API (api.anthropic.com), Claude Code, and Claude Cowork.
+&larr; Current Status
+Powered by Atlassian Statuspage
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 49
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- diagnostics: {"readability_score":49,"text_length":1030,"paragraph_count":17,"sentence_count":8,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   Claude 状态页面 status.claude.com 显示多个模型出现 elevated error rate（错误率升高），该信息于 22：19 发布，在 Hacker News 上获得 112 个点赞。
+
+2. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=medium
+   Claude Status - Elevated error rate across multiple models Elevated error rate across multiple models Incident Report for Claude Resolved This incident has been resolved.
+
+3. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   Posted Jun 23 , 2026 - 16:44 UTC Update We have seen error rates broadly return to normal success levels across all models.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   We saw elevated error rates on requests to multiple models from 7:08am PT / 14:08 UTC through 8:33am PT / 15:33 UTC.
+
+5. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   Posted Jun 23 , 2026 - 16:05 UTC Update We are continuing to monitor for any further issues.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Posted Jun 23 , 2026 - 15:28 UTC Monitoring A fix has been implemented and we are monitoring the results.
+
+## business_elements
+
+- companies: Hacker News 热门（buzzing.cc 中文翻译）, Anthropic
+- products: Claude, claude
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 22, 19, 112, 23, 2026, 16, 44, 7
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Claude 状态页面 status.claude.com 显示多个模型出现 elevated error rate（错误率升高），该信息于 22：19 发布，在 Hacker News 上获得 112 个点赞。 / Posted Jun 23 , 2026 - 16:44 UTC Update We have seen error rates broadly return to normal success levels across all models. / We saw elevated error rates on requests to multiple models from 7:08am PT / 14:08 UTC through 8:33am PT / 15:33 UTC.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: Claude Status - Elevated error rate across multiple models Elevated error rate across multiple models Incident Report for Claude Resolved This incident has been resolved.
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: user_feedback_signal
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Claude 多个模型错误率上升","discovery_summary":"Claude 状态页面 status.claude.com 显示多个模型出现 elevated error rate（错误率升高），该信息于 22：19 发布，在 Hacker News 上获得 112 个点赞。","source_name":"Hacker News 热门（buzzing.cc 中文翻译）","origin_url":"https://status.claude.com/incidents/jbhf20wjmzrf","discovered_at":"2026-06-24T01:47:16.531Z","rank_on_page":175,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Claude 状态页面 status.claude.com 显示多个模型出现 elevated error rate（错误率升高），该信息于 22：19 发布，在 Hacker News 上获得 112 个点赞。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

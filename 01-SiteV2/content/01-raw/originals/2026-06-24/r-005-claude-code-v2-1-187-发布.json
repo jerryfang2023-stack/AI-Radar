@@ -1,0 +1,278 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-005",
+  "title": "Claude Code v2.1.187 发布",
+  "original_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.187",
+  "canonical_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.187",
+  "source_name": "Claude Code：GitHub Releases（RSS）",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-06-23T21:03:48.000Z",
+  "collected_at": "2026-06-24T01:53:52.345Z",
+  "language": "mixed",
+  "full_text": "anthropics\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.7k\nStar\n134k\nv2.1.187\nLatest\nLatest\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading. Please reload this page .\nNo results found\nView all tags\nashwin-ant\nreleased this\n23 Jun 21:03\nv2.1.187\n2aa6ef3\nWhat's changed\nAdded sandbox.credentials setting to block sandboxed commands from reading credential files and secret environment variables\nAdded org-configured model restrictions to the model picker, --model , /model , and ANTHROPIC_MODEL , with a \"restricted by your organization's settings\" message when a restricted model is selected\nAdded mouse click support to select menus (permission prompts, /model , /config , etc.) in fullscreen mode\nFixed --resume failing with \"No conversation found\" when the original -p run produced no model turns\nFixed --json-schema and workflow agent({schema}) structured output: the model can no longer re-call StructuredOutput indefinitely after a successful call, and follow-up turns now reliably return structured output\nFixed remote MCP tool calls that hang with no response for 5 minutes — they now abort with an error instead of blocking indefinitely (override with CLAUDE_CODE_MCP_TOOL_IDLE_TIMEOUT )\nFixed Claude Code Remote sessions taking ~2.7s longer to start after the agent proxy CA system-trust install was added\nFixed pasted Korean/CJK text turning into mojibake in terminals that deliver paste as per-byte extended-key events\nFixed /update over Remote Control hanging when a startup trust dialog would have shown\nFixed background jobs in the agents view getting stuck in \"working\" indefinitely when the agent ended a turn without producing structured output\nFixed channel connections dropping after navigating to the agents view and back, and after /bg , /tui , or /update\nFixed agent stop notifications not correctly attributing who stopped the agent, and improved wording (\"finished\"/\"stopped\" instead of \"came to rest\")\nFixed subagent depth tracking: resumed subagents now restore their original spawn depth, and forked subagents now count toward the depth cap\nFixed leaked agent worktree registrations: locked .git/worktrees/ entries from killed agents are now cleaned up automatically\nFixed Cmd+click not opening URLs in fullscreen mode in Ghostty on macOS\nFixed claude --help not listing the --bg / --background flag\nFixed Esc, Ctrl-C, and Ctrl-D not working while /share is uploading\nImproved /install-github-app : GitHub Actions workflow setup is now optional — you can install just the GitHub App and skip the workflow/secret steps\nImproved /btw with ←/→ arrow navigation to step through earlier answers\nImproved /plugin to surface plugins you haven't used recently so you can clean them up\n[VSCode] Fixed extension becoming unresponsive when resuming a large session\nAssets\n12\nLoading\nUh oh!\nThere was an error while loading. Please reload this page .\n4 people reacted",
+  "clean_text": "anthropics\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.7k\nStar\n134k\nv2.1.187\nLatest\nLatest\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading. Please reload this page .\nNo results found\nView all tags\nashwin-ant\nreleased this\n23 Jun 21:03\nv2.1.187\n2aa6ef3\nWhat's changed\nAdded sandbox.credentials setting to block sandboxed commands from reading credential files and secret environment variables\nAdded org-configured model restrictions to the model picker, --model , /model , and ANTHROPIC_MODEL , with a \"restricted by your organization's settings\" message when a restricted model is selected\nAdded mouse click support to select menus (permission prompts, /model , /config , etc.) in fullscreen mode\nFixed --resume failing with \"No conversation found\" when the original -p run produced no model turns\nFixed --json-schema and workflow agent({schema}) structured output: the model can no longer re-call StructuredOutput indefinitely after a successful call, and follow-up turns now reliably return structured output\nFixed remote MCP tool calls that hang with no response for 5 minutes — they now abort with an error instead of blocking indefinitely (override with CLAUDE_CODE_MCP_TOOL_IDLE_TIMEOUT )\nFixed Claude Code Remote sessions taking ~2.7s longer to start after the agent proxy CA system-trust install was added\nFixed pasted Korean/CJK text turning into mojibake in terminals that deliver paste as per-byte extended-key events\nFixed /update over Remote Control hanging when a startup trust dialog would have shown\nFixed background jobs in the agents view getting stuck in \"working\" indefinitely when the agent ended a turn without producing structured output\nFixed channel connections dropping after navigating to the agents view and back, and after /bg , /tui , or /update\nFixed agent stop notifications not correctly attributing who stopped the agent, and improved wording (\"finished\"/\"stopped\" instead of \"came to rest\")\nFixed subagent depth tracking: resumed subagents now restore their original spawn depth, and forked subagents now count toward the depth cap\nFixed leaked agent worktree registrations: locked .git/worktrees/ entries from killed agents are now cleaned up automatically\nFixed Cmd+click not opening URLs in fullscreen mode in Ghostty on macOS\nFixed claude --help not listing the --bg / --background flag\nFixed Esc, Ctrl-C, and Ctrl-D not working while /share is uploading\nImproved /install-github-app : GitHub Actions workflow setup is now optional — you can install just the GitHub App and skip the workflow/secret steps\nImproved /btw with ←/→ arrow navigation to step through earlier answers\nImproved /plugin to surface plugins you haven't used recently so you can clean them up\n[VSCode] Fixed extension becoming unresponsive when resuming a large session\nAssets\n12\nLoading\nUh oh!\nThere was an error while loading. Please reload this page .\n4 people reacted",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-24/r-005-claude-code-v2-1-187-发布.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-24/r-005-claude-code-v2-1-187-发布.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 77,
+  "extractor_diagnostics": {
+    "readability_score": 77,
+    "text_length": 3029,
+    "paragraph_count": 27,
+    "sentence_count": 8,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0036,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3029,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "1de0f18ca566022b",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Claude Code v2.1.187 发布",
+    "discovery_summary": "Claude Code v2.1.187 新增 `sandbox.credentials` 设置，可阻止沙箱化命令读取凭证和秘密环境变量；模型选择器及相关参数现已支持组织配置的模型限制，选中受限模型时显示\"受组织设置限制\"提示。全屏模式下选择菜单支持鼠标点击。修复多项问题：`--resume` 在 `-p` 无模型回合时失败、`--json-schema` 和工作流智能体结构化输出循环、远程 MCP 工具调用 5 分钟无响应后阻塞、Remote 会话启动延迟约 2.7 秒、韩文/中日韩文本粘贴乱码、子智能体深度追踪不准确、被杀智能体工作树注册残留未清理等。",
+    "source_name": "Claude Code：GitHub Releases（RSS）",
+    "origin_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.187",
+    "discovered_at": "2026-06-24T01:47:16.507Z",
+    "rank_on_page": 79,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "0d10a691ebcb0e61",
+  "content_hash": "1de0f18ca566022b",
+  "full_text_hash": "1de0f18ca566022b",
+  "semantic_hash": "6c14b68db563ab46",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-23T21:03:48.000Z",
+  "last_seen_at": "2026-06-24T01:53:52.345Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "Claude Code v2.1.187 新增 `sandbox.credentials` 设置，可阻止沙箱化命令读取凭证和秘密环境变量；模型选择器及相关参数现已支持组织配置的模型限制，选中受限模型时显示\"受组织设置限制\"提示。全屏模式下选择菜单支持鼠标点击。修复多项问题：`--resume` 在 `-p` 无模型回合时失败、`--json-schema` 和工作流智能体结构化输出循环、远程 MCP 工具调用 5 分钟无响应后阻塞、Remote 会话启动延迟约 2.7 秒、韩文/中日韩文本粘贴乱码、子智能体深度追踪不准确、被杀智能体工作树注册残留未清理等。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "187 Latest Latest Compare Choose a tag to compare Sorry, something went wrong.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Filter Loading Sorry, something went wrong.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Claude Code",
+      "GitHub Releases（RSS）",
+      "GitHub"
+    ],
+    "products": [
+      "Claude",
+      "MCP",
+      "claude",
+      "agent",
+      "agents"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2.1",
+      "187",
+      "5",
+      "2.7",
+      "21.7",
+      "134",
+      "23",
+      "21"
+    ],
+    "quotes": [
+      "restricted by your organization's settings",
+      "No conversation found",
+      "finished",
+      " instead of "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Claude Code v2.1.187 新增 `sandbox.credentials` 设置，可阻止沙箱化命令读取凭证和秘密环境变量；模型选择器及相关参数现已支持组织配置的模型限制，选中受限模型时显示\"受组织设置限制\"提示。全屏模式下选择菜单支持鼠标点击。修复多项问题：`--resume` 在 `-p` 无模型回合时失败、`--json-schema` 和工作流智能体结构化输出循环、远程 MCP 工具调用 5 分钟无响应后阻塞、Remote 会话启动延迟约 2.7 秒、韩文/中日韩文本粘贴乱码、子智能体深度追踪不准确、被杀智能体工作树注册残留未清理等。",
+      "anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.",
+      "187 Latest Latest Compare Choose a tag to compare Sorry, something went wrong."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Claude Code v2.1.187 发布\n\n- raw_id: R-005\n- original_url: https://github.com/anthropics/claude-code/releases/tag/v2.1.187\n- source_name: Claude Code：GitHub Releases（RSS）\n- collected_at: 2026-06-24T01:53:52.345Z\n\n## clean_text\n\nanthropics\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.7k\nStar\n134k\nv2.1.187\nLatest\nLatest\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading. Please reload this page .\nNo results found\nView all tags\nashwin-ant\nreleased this\n23 Jun 21:03\nv2.1.187\n2aa6ef3\nWhat's changed\nAdded sandbox.credentials setting to block sandboxed commands from reading credential files and secret environment variables\nAdded org-configured model restrictions to the model picker, --model , /model , and ANTHROPIC_MODEL , with a \"restricted by your organization's settings\" message when a restricted model is selected\nAdded mouse click support to select menus (permission prompts, /model , /config , etc.) in fullscreen mode\nFixed --resume failing with \"No conversation found\" when the original -p run produced no model turns\nFixed --json-schema and workflow agent({schema}) structured output: the model can no longer re-call StructuredOutput indefinitely after a successful call, and follow-up turns now reliably return structured output\nFixed remote MCP tool calls that hang with no response for 5 minutes — they now abort with an error instead of blocking indefinitely (override with CLAUDE_CODE_MCP_TOOL_IDLE_TIMEOUT )\nFixed Claude Code Remote sessions taking ~2.7s longer to start after the agent proxy CA system-trust install was added\nFixed pasted Korean/CJK text turning into mojibake in terminals that deliver paste as per-byte extended-key events\nFixed /update over Remote Control hanging when a startup trust dialog would have shown\nFixed background jobs in the agents view getting stuck in \"working\" indefinitely when the agent ended a turn without producing structured output\nFixed channel connections dropping after navigating to the agents view and back, and after /bg , /tui , or /update\nFixed agent stop notifications not correctly attributing who stopped the agent, and improved wording (\"finished\"/\"stopped\" instead of \"came to rest\")\nFixed subagent depth tracking: resumed subagents now restore their original spawn depth, and forked subagents now count toward the depth cap\nFixed leaked agent worktree registrations: locked .git/worktrees/ entries from killed agents are now cleaned up automatically\nFixed Cmd+click not opening URLs in fullscreen mode in Ghostty on macOS\nFixed claude --help not listing the --bg / --background flag\nFixed Esc, Ctrl-C, and Ctrl-D not working while /share is uploading\nImproved /install-github-app : GitHub Actions workflow setup is now optional — you can install just the GitHub App and skip the workflow/secret steps\nImproved /btw with ←/→ arrow navigation to step through earlier answers\nImproved /plugin to surface plugins you haven't used recently so you can clean them up\n[VSCode] Fixed extension becoming unresponsive when resuming a large session\nAssets\n12\nLoading\nUh oh!\nThere was an error while loading. Please reload this page .\n4 people reacted\n\n## full_text\n\nanthropics\nclaude-code\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n21.7k\nStar\n134k\nv2.1.187\nLatest\nLatest\nCompare\nChoose a tag to compare\nSorry, something went wrong.\nFilter\nLoading\nSorry, something went wrong.\nUh oh!\nThere was an error while loading. Please reload this page .\nNo results found\nView all tags\nashwin-ant\nreleased this\n23 Jun 21:03\nv2.1.187\n2aa6ef3\nWhat's changed\nAdded sandbox.credentials setting to block sandboxed commands from reading credential files and secret environment variables\nAdded org-configured model restrictions to the model picker, --model , /model , and ANTHROPIC_MODEL , with a \"restricted by your organization's settings\" message when a restricted model is selected\nAdded mouse click support to select menus (permission prompts, /model , /config , etc.) in fullscreen mode\nFixed --resume failing with \"No conversation found\" when the original -p run produced no model turns\nFixed --json-schema and workflow agent({schema}) structured output: the model can no longer re-call StructuredOutput indefinitely after a successful call, and follow-up turns now reliably return structured output\nFixed remote MCP tool calls that hang with no response for 5 minutes — they now abort with an error instead of blocking indefinitely (override with CLAUDE_CODE_MCP_TOOL_IDLE_TIMEOUT )\nFixed Claude Code Remote sessions taking ~2.7s longer to start after the agent proxy CA system-trust install was added\nFixed pasted Korean/CJK text turning into mojibake in terminals that deliver paste as per-byte extended-key events\nFixed /update over Remote Control hanging when a startup trust dialog would have shown\nFixed background jobs in the agents view getting stuck in \"working\" indefinitely when the agent ended a turn without producing structured output\nFixed channel connections dropping after navigating to the agents view and back, and after /bg , /tui , or /update\nFixed agent stop notifications not correctly attributing who stopped the agent, and improved wording (\"finished\"/\"stopped\" instead of \"came to rest\")\nFixed subagent depth tracking: resumed subagents now restore their original spawn depth, and forked subagents now count toward the depth cap\nFixed leaked agent worktree registrations: locked .git/worktrees/ entries from killed agents are now cleaned up automatically\nFixed Cmd+click not opening URLs in fullscreen mode in Ghostty on macOS\nFixed claude --help not listing the --bg / --background flag\nFixed Esc, Ctrl-C, and Ctrl-D not working while /share is uploading\nImproved /install-github-app : GitHub Actions workflow setup is now optional — you can install just the GitHub App and skip the workflow/secret steps\nImproved /btw with ←/→ arrow navigation to step through earlier answers\nImproved /plugin to surface plugins you haven't used recently so you can clean them up\n[VSCode] Fixed extension becoming unresponsive when resuming a large session\nAssets\n12\nLoading\nUh oh!\nThere was an error while loading. Please reload this page .\n4 people reacted\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 77\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [company_action / daily_observation, heatmap, change, case, trend / high] Claude Code v2.1.187 新增 `sandbox.credentials` 设置，可阻止沙箱化命令读取凭证和秘密环境变量；模型选择器及相关参数现已支持组织配置的模型限制，选中受限模型时显示\"受组织设置限制\"提示。全屏模式下选择菜单支持鼠标点击。修复多项问题：`--resume` 在 `-p` 无模型回合时失败、`--json-schema` 和工作流智能体结构化输出循环、远程 MCP 工具调用 5 分钟无响应后阻塞、Remote 会话启动延迟约 2.7 秒、韩文/中日韩文本粘贴乱码、子智能体深度追踪不准确、被杀智能体工作树注册残留未清理等。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] 187 Latest Latest Compare Choose a tag to compare Sorry, something went wrong.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] Filter Loading Sorry, something went wrong.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] There was an error while loading.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] Please reload this page .\n"
+}
