@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Matt Turck"
-opinion_count: 15
-latest_date: 2026-06-22
+opinion_count: 16
+latest_date: 2026-06-23
 ---
 
 # Matt Turck 观点时间线
-共 15 条观点，按人物 + 日期文件聚合。
+共 16 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-06-23](./2026-06-23.md)
 - [2026-06-22](./2026-06-22.md)
 - [2026-06-19](./2026-06-19.md)
 - [2026-06-18](./2026-06-18.md)
