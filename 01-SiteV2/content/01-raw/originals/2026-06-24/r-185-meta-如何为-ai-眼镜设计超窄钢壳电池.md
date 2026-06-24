@@ -1,0 +1,195 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-185
+title: "Meta 如何为 AI 眼镜设计超窄钢壳电池"
+original_url: ""
+canonical_url: ""
+source_name: "Meta Engineering Blog（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: official_index_or_directory
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: true
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-24T01:53:52.654Z
+language: mixed
+full_text_hash: 9c82761c07ed0ade
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-24/r-185-meta-如何为-ai-眼镜设计超窄钢壳电池.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-24/r-185-meta-如何为-ai-眼镜设计超窄钢壳电池.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: no-url-summary-only
+extraction_quality: failed
+extraction_method: "no_url_summary_fallback"
+readability_score: 0
+extractor_diagnostics: {"method":"no_url_summary_fallback"}
+has_full_text: false
+content_length: 279
+fetch_error: ""
+raw_qc_decision: block
+raw_qc_downstream_use: not_allowed
+degradation_reasons: ["index_only_or_directory_page","missing_full_text","missing_snapshot"]
+evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9c82761c07ed0ade","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+source_volatility: medium
+community_name: ""
+capture_scope: summary_only
+visible_range: "采集通道提供的标题与摘要"
+evidence_level: discovery_only
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Meta 如何为 AI 眼镜设计超窄钢壳电池","discovery_summary":"Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。","source_name":"Meta Engineering Blog（RSS）","origin_url":"","discovered_at":"2026-06-24T01:47:15.390Z","rank_on_page":24,"discovery_status":"discovered"}
+source_role: discovery_source
+origin_fetch_status: "summary_only"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: e3b0c44298fc1c14
+content_hash: 9c82761c07ed0ade
+semantic_hash: f8d76a642ebc837f
+duplicate_of: ""
+first_seen_at: "2026-06-24T01:53:52.654Z"
+last_seen_at: 2026-06-24T01:53:52.654Z
+update_detected: false
+raw_status: ignored
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "homepage_or_directory_observation"
+guanlan_scores: {"importance_type":"none","importance_score":1,"importance_reason":"no core WaveSight importance signal","supporting_signals":[],"novelty":3,"evidence_strength":2,"case_richness":4,"trend_relevance":2,"guanlan_relevance":2,"emerging_signal_score":2}
+business_elements: {"companies":["Meta Engineering Blog（RSS）","Meta"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":[],"affected_departments":[],"numbers":["7m","100","2","160 m","210 m","248 m"],"quotes":[]}
+evidence_seed: {"company_actions":["Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。","Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。","传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","疑似官网首页、产品目录或导航页，只能索引留存","没有具体客户或真实企业案例","没有变化前后流程线索","没有可用全文快照"]
+key_excerpts: [{"type":"company_action","text":"Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Meta 如何为 AI 眼镜设计超窄钢壳电池
+
+## clean_text
+
+Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。
+
+## full_text
+
+Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。
+
+## extraction_diagnostics
+
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- fetch_status: no-url-summary-only
+- extraction_quality: failed
+- diagnostics: {"method":"no_url_summary_fallback"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
+   Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。
+
+## business_elements
+
+- companies: Meta Engineering Blog（RSS）, Meta
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: 暂无公开信息
+- numbers: 7m, 100, 2, 160 m, 210 m, 248 m
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。 / Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。 / 传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: none
+- importance_score: 1
+- importance_reason: no core WaveSight importance signal
+- supporting_signals: 
+- novelty: 3
+- evidence_strength: 2
+- case_richness: 4
+- trend_relevance: 2
+- guanlan_relevance: 2
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 疑似官网首页、产品目录或导航页，只能索引留存
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+- 没有可用全文快照
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- visible_range: 采集通道提供的标题与摘要
+- evidence_level: discovery_only
+- discovery_source: AI HOT
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- discovery_record: {"discovery_title":"Meta 如何为 AI 眼镜设计超窄钢壳电池","discovery_summary":"Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。","source_name":"Meta Engineering Blog（RSS）","origin_url":"","discovered_at":"2026-06-24T01:47:15.390Z","rank_on_page":24,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

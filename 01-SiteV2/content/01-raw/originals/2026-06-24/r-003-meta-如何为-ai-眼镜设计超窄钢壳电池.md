@@ -1,0 +1,318 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-003
+title: "Meta 如何为 AI 眼镜设计超窄钢壳电池"
+original_url: "https://engineering.fb.com/2026/06/23/production-engineering/how-meta-built-ultra-narrow-batteries-for-ai-glasses-meta-tech-podcast"
+canonical_url: "https://engineering.fb.com/2026/06/23/production-engineering/how-meta-built-ultra-narrow-batteries-for-ai-glasses-meta-tech-podcast"
+source_name: "Meta Engineering Blog（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-23T16:00:38.000Z"
+collected_at: 2026-06-24T01:53:52.336Z
+language: mixed
+full_text_hash: 11a2a84e1d7952a2
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-24/r-003-meta-如何为-ai-眼镜设计超窄钢壳电池.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-24/r-003-meta-如何为-ai-眼镜设计超窄钢壳电池.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":5349,"paragraph_count":44,"sentence_count":33,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 5349
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"11a2a84e1d7952a2","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Meta 如何为 AI 眼镜设计超窄钢壳电池","discovery_summary":"Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。","source_name":"Meta Engineering Blog（RSS）","origin_url":"https://engineering.fb.com/2026/06/23/production-engineering/how-meta-built-ultra-narrow-batteries-for-ai-glasses-meta-tech-podcast","discovered_at":"2026-06-24T01:47:16.524Z","rank_on_page":145,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: f7fe58089bbe1487
+content_hash: 11a2a84e1d7952a2
+semantic_hash: f5bd68fa3c867e95
+duplicate_of: ""
+first_seen_at: "2026-06-23T16:00:38.000Z"
+last_seen_at: 2026-06-24T01:53:52.336Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["Meta Engineering Blog（RSS）","Meta","Apple"],"products":[],"people":[],"industries":["制造 / 工业"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["7m","100","2","160 m","210 m","248 m","86","100 m"],"quotes":["jelly roll"]}
+evidence_seed: {"company_actions":["Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。","Smart glasses like the Ray-Ban Meta and Oakley Meta Vanguards need to pack enough energy to power features like cameras, speakers, AI workloads, and even a display.","But it all has to fit into the glasses’ temple arms."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"company_action","text":"Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Smart glasses like the Ray-Ban Meta and Oakley Meta Vanguards need to pack enough energy to power features like cameras, speakers, AI workloads, and even a display.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But it all has to fit into the glasses’ temple arms.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"So how do you place a battery with enough power to run a pair of smart glasses all day into a form factor narrower than an adult’s pinky finger?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"You have to rethink how batteries are made.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In episode 86 of the Meta Tech Podcast , host Pascal Hartig sat down with Karthik and Myuran, the engineers behind Meta’s steel can battery technology, for a conversation on powering the newest and next generation of wearables.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Meta 如何为 AI 眼镜设计超窄钢壳电池
+
+## clean_text
+
+Smart glasses like the Ray-Ban Meta and Oakley Meta Vanguards need to pack enough energy to power features like cameras, speakers, AI workloads, and even a display. But it all has to fit into the glasses’ temple arms.
+So how do you place a battery with enough power to run a pair of smart glasses all day into a form factor narrower than an adult’s pinky finger? You have to rethink how batteries are made.
+In episode 86 of the Meta Tech Podcast , host Pascal Hartig sat down with Karthik and Myuran, the engineers behind Meta’s steel can battery technology, for a conversation on powering the newest and next generation of wearables.
+Why Traditional Batteries Fall Short for Smart Glasses
+Traditional pouch cells — the batteries in most phones and laptops– can’t cut it for devices like smart glasses because they’re difficult to reshape and shrink down. Their folds waste volume, their tolerances eat into precious millimeters of space, and at smaller sizes they can difficulty providing peak power for multitasking (for example, if someone is using the camera and asking the AI model to perform a task at the same time).
+Smart glasses need a battery that can claim every micron of space – something rigid, precise, and shaped to the product rather than the other way around.
+Enter Steel-Can Cells (at Never-Before-Seen Widths)
+Steel-can batteries aren’t new. Power tools and watches use them. But Meta’s AI glasses needed batteries with widths as narrow as 7mm, narrower than anything that existed before. Getting there meant rethinking nearly every internal component of the battery.
+The Electrode Architecture
+Traditional steel-can cells use a wound “jelly roll” of electrode material. Meta’s engineers replaced that with die-cut stacked layers, similar to wiring small resistors in parallel. The result is dramatically lower impedance, which matters when peak power is required so that the device can avoid brownouts if a lot of power is being demanded at the same time (because someone may be making a recording while asking the AI a question at the same time).
+Tolerances
+A steel-can cell holds its shape to roughly 100 microns. On a 10mm-wide battery, that gives back real usable volume that translates directly into additional energy density and runtime.
+New Challenges With Each Generation
+From Gen 1 to Gen 2 the Meta Ray-Ban’s, cell capacity grew from 160 mAh to 210 mAh — roughly a 30 percent bump. Yet the product shipped with claims of double the runtime. The chemistry didn’t change. The extra gains came from system-level efficiency improvements across hardware and software such as better power management, tighter firmware control, and a form factor that allowed for a larger cell
+The Oakley Meta Vanguards actually feature a battery in each temple arm, which introduced a real systems puzzle at the intersection of electrical, firmware, and mechanical engineering. The cells in each temple arm are symmetric, but the electronic loads aren’t split evenly between the two sides. That creates cross-charging risks and sequencing complexity at boot and shutdown.
+Then the Meta Ray-Ban Display glasses introduced the most demanding power profile yet. Its screen draws sustained power rather than short bursts, which required designing a 248 mAh steel-can cell, the largest in Meta’s lineup.
+More Power to the Wearables
+The ultra-narrow steel-can approach we developed for our smart glasses is proving adaptable to other form factors across Meta’s hardware portfolio.
+Meta is now focused on scaling and democratizing this technology across multiple vendors, ensuring we have resilient supply and can bring these batteries to the next generation of wearables.
+Listen to the full episode to hear the complete story — from first sketch to global shelf — including details on cross-charging two-battery systems, software versus hardware iteration cycles, and what it’s really like to collaborate across time zones to build something the world has never seen.
+Listen now
+You can also find the episode wherever you get your podcasts, including:
+Spotify
+Apple Podcasts
+PocketCasts
+Timestamps
+0:06 — Intro and News
+1:49 — Guest intros
+4:16 — The problem with existing batteries
+6:40 — Pouch vs. steel-can batteries
+10:27 — What lower impedance means
+12:25 — Power requirements
+16:02 — Synchronizing two batteries
+23:11 — Manufacturing never-done-before batteries
+28:12 — Software vs. hardware iteration cycles
+30:51 — Collaborations across the globe
+37:00 — Market compliance
+42:24 — Outro
+The Meta Tech Podcast is a podcast, brought to you by Meta, where we highlight the work Meta’s engineers are doing at every level – from low-level frameworks to end-user features.
+Send us feedback on Instagram , Threads , or X .
+And if you’re interested in learning more about career opportunities at Meta visit the Meta Careers page.
+Share this:
+Share on Facebook (Opens in new window)
+Facebook
+Share on Threads (Opens in new window)
+Threads
+Share on WhatsApp (Opens in new window)
+WhatsApp
+Share on LinkedIn (Opens in new window)
+LinkedIn
+Share on Reddit (Opens in new window)
+Reddit
+Share on X (Opens in new window)
+Share on Bluesky (Opens in new window)
+Bluesky
+Share on Mastodon (Opens in new window)
+Mastodon
+Share on Hacker News (Opens in new window)
+Hacker News
+Email a link to a friend (Opens in new window)
+Email
+Read More in Culture
+View All
+
+## full_text
+
+Smart glasses like the Ray-Ban Meta and Oakley Meta Vanguards need to pack enough energy to power features like cameras, speakers, AI workloads, and even a display. But it all has to fit into the glasses’ temple arms.
+So how do you place a battery with enough power to run a pair of smart glasses all day into a form factor narrower than an adult’s pinky finger? You have to rethink how batteries are made.
+In episode 86 of the Meta Tech Podcast , host Pascal Hartig sat down with Karthik and Myuran, the engineers behind Meta’s steel can battery technology, for a conversation on powering the newest and next generation of wearables.
+Why Traditional Batteries Fall Short for Smart Glasses
+Traditional pouch cells — the batteries in most phones and laptops– can’t cut it for devices like smart glasses because they’re difficult to reshape and shrink down. Their folds waste volume, their tolerances eat into precious millimeters of space, and at smaller sizes they can difficulty providing peak power for multitasking (for example, if someone is using the camera and asking the AI model to perform a task at the same time).
+Smart glasses need a battery that can claim every micron of space – something rigid, precise, and shaped to the product rather than the other way around.
+Enter Steel-Can Cells (at Never-Before-Seen Widths)
+Steel-can batteries aren’t new. Power tools and watches use them. But Meta’s AI glasses needed batteries with widths as narrow as 7mm, narrower than anything that existed before. Getting there meant rethinking nearly every internal component of the battery.
+The Electrode Architecture
+Traditional steel-can cells use a wound “jelly roll” of electrode material. Meta’s engineers replaced that with die-cut stacked layers, similar to wiring small resistors in parallel. The result is dramatically lower impedance, which matters when peak power is required so that the device can avoid brownouts if a lot of power is being demanded at the same time (because someone may be making a recording while asking the AI a question at the same time).
+Tolerances
+A steel-can cell holds its shape to roughly 100 microns. On a 10mm-wide battery, that gives back real usable volume that translates directly into additional energy density and runtime.
+New Challenges With Each Generation
+From Gen 1 to Gen 2 the Meta Ray-Ban’s, cell capacity grew from 160 mAh to 210 mAh — roughly a 30 percent bump. Yet the product shipped with claims of double the runtime. The chemistry didn’t change. The extra gains came from system-level efficiency improvements across hardware and software such as better power management, tighter firmware control, and a form factor that allowed for a larger cell
+The Oakley Meta Vanguards actually feature a battery in each temple arm, which introduced a real systems puzzle at the intersection of electrical, firmware, and mechanical engineering. The cells in each temple arm are symmetric, but the electronic loads aren’t split evenly between the two sides. That creates cross-charging risks and sequencing complexity at boot and shutdown.
+Then the Meta Ray-Ban Display glasses introduced the most demanding power profile yet. Its screen draws sustained power rather than short bursts, which required designing a 248 mAh steel-can cell, the largest in Meta’s lineup.
+More Power to the Wearables
+The ultra-narrow steel-can approach we developed for our smart glasses is proving adaptable to other form factors across Meta’s hardware portfolio.
+Meta is now focused on scaling and democratizing this technology across multiple vendors, ensuring we have resilient supply and can bring these batteries to the next generation of wearables.
+Listen to the full episode to hear the complete story — from first sketch to global shelf — including details on cross-charging two-battery systems, software versus hardware iteration cycles, and what it’s really like to collaborate across time zones to build something the world has never seen.
+Listen now
+You can also find the episode wherever you get your podcasts, including:
+Spotify
+Apple Podcasts
+PocketCasts
+Timestamps
+0:06 — Intro and News
+1:49 — Guest intros
+4:16 — The problem with existing batteries
+6:40 — Pouch vs. steel-can batteries
+10:27 — What lower impedance means
+12:25 — Power requirements
+16:02 — Synchronizing two batteries
+23:11 — Manufacturing never-done-before batteries
+28:12 — Software vs. hardware iteration cycles
+30:51 — Collaborations across the globe
+37:00 — Market compliance
+42:24 — Outro
+The Meta Tech Podcast is a podcast, brought to you by Meta, where we highlight the work Meta’s engineers are doing at every level – from low-level frameworks to end-user features.
+Send us feedback on Instagram , Threads , or X .
+And if you’re interested in learning more about career opportunities at Meta visit the Meta Careers page.
+Share this:
+Share on Facebook (Opens in new window)
+Facebook
+Share on Threads (Opens in new window)
+Threads
+Share on WhatsApp (Opens in new window)
+WhatsApp
+Share on LinkedIn (Opens in new window)
+LinkedIn
+Share on Reddit (Opens in new window)
+Reddit
+Share on X (Opens in new window)
+Share on Bluesky (Opens in new window)
+Bluesky
+Share on Mastodon (Opens in new window)
+Mastodon
+Share on Hacker News (Opens in new window)
+Hacker News
+Email a link to a friend (Opens in new window)
+Email
+Read More in Culture
+View All
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":5349,"paragraph_count":44,"sentence_count":33,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Smart glasses like the Ray-Ban Meta and Oakley Meta Vanguards need to pack enough energy to power features like cameras, speakers, AI workloads, and even a display.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   But it all has to fit into the glasses’ temple arms.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   So how do you place a battery with enough power to run a pair of smart glasses all day into a form factor narrower than an adult’s pinky finger?
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   You have to rethink how batteries are made.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   In episode 86 of the Meta Tech Podcast , host Pascal Hartig sat down with Karthik and Myuran, the engineers behind Meta’s steel can battery technology, for a conversation on powering the newest and next generation of wearables.
+
+## business_elements
+
+- companies: Meta Engineering Blog（RSS）, Meta, Apple
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 制造 / 工业
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 7m, 100, 2, 160 m, 210 m, 248 m, 86, 100 m
+- quotes: jelly roll
+
+## evidence_seed
+
+- company_actions: Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。 / Smart glasses like the Ray-Ban Meta and Oakley Meta Vanguards need to pack enough energy to power features like cameras, speakers, AI workloads, and even a display. / But it all has to fit into the glasses’ temple arms.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Meta 如何为 AI 眼镜设计超窄钢壳电池","discovery_summary":"Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。","source_name":"Meta Engineering Blog（RSS）","origin_url":"https://engineering.fb.com/2026/06/23/production-engineering/how-meta-built-ultra-narrow-batteries-for-ai-glasses-meta-tech-podcast","discovered_at":"2026-06-24T01:47:16.524Z","rank_on_page":145,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
