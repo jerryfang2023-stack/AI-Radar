@@ -1,6 +1,6 @@
 # 2026-06-24 Business Signals Frontstage Gate
 
-- generated_at: 2026-06-24T01:53:59.460Z
+- generated_at: 2026-06-24T02:02:26.615Z
 - status: passed
 - failure_categories: none
 
@@ -36,6 +36,6 @@
   "ok": true,
   "status": "passed",
   "issue_count": 0,
-  "report": "agent-workflow/reports/frontstage-regression-gate-20260624015359.md"
+  "report": "agent-workflow/reports/frontstage-regression-gate-20260624020226.md"
 }
 ```

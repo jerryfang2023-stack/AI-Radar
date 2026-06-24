@@ -9,7 +9,7 @@ const signalCardsRoot = path.join(root, "01-SiteV2", "knowledge", "01-Signal-Car
 
 const args = new Map(
   process.argv.slice(2).map((arg) => {
-    const [key, ...rest] = arg.replace(/^--/, "").split("=");
+    const [key, ...rest] = arg.replace(/^--/u, "").split("=");
     return [key, rest.join("=") || "true"];
   })
 );
@@ -17,7 +17,7 @@ const args = new Map(
 const dryRun = args.get("dry-run") === "true";
 
 function rel(file) {
-  return path.relative(root, file).replace(/\\/g, "/");
+  return path.relative(root, file).replace(/\\/gu, "/");
 }
 
 function readJson(file) {
@@ -69,7 +69,7 @@ function yamlQuote(value = "") {
 
 function mdLink(fromFile, targetFile, label) {
   if (!targetFile) return "";
-  const relative = path.relative(path.dirname(fromFile), targetFile).replace(/\\/g, "/");
+  const relative = path.relative(path.dirname(fromFile), targetFile).replace(/\\/gu, "/");
   return `[${label}](${relative})`;
 }
 
@@ -92,7 +92,10 @@ function rawArchiveIndex(date) {
 }
 
 function signalCardIndex(date) {
-  const files = walkFiles(signalCardsRoot, (file) => file.endsWith(".md") && path.basename(file).startsWith(`${date}--`));
+  const files = walkFiles(
+    signalCardsRoot,
+    (file) => file.endsWith(".md") && path.basename(file).startsWith(`${date}--`)
+  );
   const byId = new Map();
   const byPoolRef = new Map();
   const byUrl = new Map();
@@ -161,7 +164,11 @@ const enriched = items.map((item) => {
   const sourceUrl = item.sourceUrl || detail.sourceUrl || (detail.sourceLinks || [])[0] || "";
   const sourceRef = detail.sourceRef || "";
   const rawFile = rawByUrl.get(normalizeUrl(sourceUrl)) || "";
-  const signalCard = signalCards.byPoolRef.get(sourceRef) || signalCards.byUrl.get(normalizeUrl(sourceUrl)) || signalCards.byId.get(item.cardId) || "";
+  const signalCard =
+    signalCards.byPoolRef.get(sourceRef) ||
+    signalCards.byUrl.get(normalizeUrl(sourceUrl)) ||
+    signalCards.byId.get(item.cardId) ||
+    "";
   if (!rawFile) missingRaw.push(`${item.cardId || "unknown"} ${sourceUrl}`);
   return {
     ...item,
@@ -175,55 +182,7 @@ const enriched = items.map((item) => {
   };
 });
 
-const dailyBody = `---
-type: enterprise_ai_fde_daily
-date: ${date}
-status: synced
-source: ${yamlQuote("01-SiteV2/site/data/v3-data-observation-desk.json")}
-item_count: ${enriched.length}
----
-
-# ${date} Enterprise AI / FDE
-
-本页是 Business Signals「企业AI化」二级镜头的 Obsidian 索引。原文不复制到本页，保留在 Raw 原文快照中；本页负责把前台条目、原文快照、JSON 快照和正式 Signal Card 串起来。
-
-${enriched.map((item, index) => {
-  const rawLink = item.rawFile ? mdLink(dailyFile, item.rawFile, "Raw 原文快照") : "缺失 Raw 原文快照";
-  const rawJsonLink = item.rawJson && fs.existsSync(item.rawJson) ? mdLink(dailyFile, item.rawJson, "Raw JSON") : "";
-  const cardLink = item.signalCard ? mdLink(dailyFile, item.signalCard, "Signal Card") : "lens-only，未生成正式 Signal Card";
-  return `## ${index + 1}. ${item.title}
-
-- card_id: \`${item.cardId || ""}\`
-- subject: ${item.subject || item.detail.subject || ""}
-- source_title: ${item.sourceTitle}
-- source_url: ${item.sourceUrl}
-- source_ref: ${item.sourceRef || "n/a"}
-- raw_archive: ${rawLink}${rawJsonLink ? ` / ${rawJsonLink}` : ""}
-- signal_card: ${cardLink}
-- stage: ${item.stageLabel || item.stage || ""}
-- scenario: ${item.scenario || ""}
-- workflow: ${item.workflow || ""}
-- evidence_boundary: ${compact(item.evidenceBoundary || "")}
-`;
-}).join("\n")}
-`;
-
-const indexBody = `---
-type: enterprise_ai_fde_index
-status: current
-updated_at: ${new Date().toISOString()}
----
-
-# Enterprise AI / FDE Index
-
-这个目录保存 Business Signals「企业AI化」二级镜头的 Obsidian 入口。正式 product / funding / case Signal Card 仍保存在 \`01-SiteV2/knowledge/01-Signal-Cards/\`；FDE 镜头只做实施、部署、客户嵌入和工作流证据的聚合视图，不新增第四类 Card。
-
-## Daily Views
-
-- ${mdLink(indexFile, dailyFile, `${date} Enterprise AI FDE`)}
-`;
-
-const cleanDailyBody = [
+const dailyBody = [
   "---",
   "type: enterprise_ai_fde_daily",
   `date: ${date}`,
@@ -234,7 +193,7 @@ const cleanDailyBody = [
   "",
   `# ${date} Enterprise AI / FDE`,
   "",
-  "本页是 Business Signals「企业AI化」二级镜头的 Obsidian 索引。原文不复制到本页，保留在 Raw 原文快照中；本页负责把前台条目、原文快照、JSON 快照和正式 Signal Card 串起来。",
+  "本页是 Business Signals「企业 AI 化」二级镜头的 Obsidian 索引。原文不复制到本页，保留在 Raw 原文快照中；本页负责把前台条目、原文快照、JSON 快照和正式 Signal Card 串起来。",
   "",
   ...enriched.map((item, index) => {
     const rawLink = item.rawFile ? mdLink(dailyFile, item.rawFile, "Raw 原文快照") : "缺失 Raw 原文快照";
@@ -264,7 +223,7 @@ const cleanDailyBody = [
   "",
 ].join("\n");
 
-const cleanIndexBody = [
+const indexBody = [
   "---",
   "type: enterprise_ai_fde_index",
   "status: current",
@@ -273,7 +232,7 @@ const cleanIndexBody = [
   "",
   "# Enterprise AI / FDE Index",
   "",
-  "这个目录保存 Business Signals「企业AI化」二级镜头的 Obsidian 入口。正式 product / funding / case Signal Card 仍保存在 `01-SiteV2/knowledge/01-Signal-Cards/`；FDE 镜头只做实施、部署、客户嵌入和工作流证据的聚合视图，不新增第四类 Card。",
+  "这个目录保存 Business Signals「企业 AI 化」二级镜头的 Obsidian 入口。正式 product / funding / case Signal Card 仍保存在 `01-SiteV2/knowledge/01-Signal-Cards/`；FDE 镜头只做实施、部署、客户嵌入和工作流证据的聚合视图，不新增第四类 Card。",
   "",
   "## Daily Views",
   "",
@@ -281,8 +240,8 @@ const cleanIndexBody = [
   "",
 ].join("\n");
 
-writeText(dailyFile, cleanDailyBody);
-writeText(indexFile, cleanIndexBody);
+writeText(dailyFile, dailyBody);
+writeText(indexFile, indexBody);
 
 if (missingRaw.length) {
   console.error(`Missing raw archives for ${missingRaw.length} Enterprise AI / FDE items:`);
