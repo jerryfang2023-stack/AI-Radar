@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FDE Skill Store · 观澜AI</title>
+<style>
+  :root {
+    --page: #fffdf8;
+    --paper: #ffffff;
+    --soft: #f7f4ef;
+    --ink: #071827;
+    --muted: #667386;
+    --line: rgba(7, 24, 39, .12);
+    --blue: #123a5f;
+    --gold: #c8a45d;
+    --green: #377c61;
+    --orange: #b85f28;
+    --red: #9a4832;
+    --purple: #6f5a93;
+    --shadow: 0 4px 20px rgba(7, 24, 39, .07);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    color: var(--ink);
+    background: linear-gradient(180deg, rgba(255,253,248,.96), rgba(247,244,239,.68)), var(--page);
+    font-family: Inter, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  button, input, select { font: inherit; cursor: pointer; }
+
+  /* ── Layout ── */
+  .shell { max-width: 1360px; margin: 0 auto; padding: 32px 28px; }
+
+  /* ── Header ── */
+  .header { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 20px; border-bottom: 1px solid var(--line); margin-bottom: 28px; }
+  .header-left .eyebrow { font-size: 11px; font-weight: 700; color: var(--gold); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 4px; }
+  .header-left h1 { font: 700 28px/1.2 Georgia, "Noto Serif SC", serif; color: var(--ink); }
+  .header-left .subtitle { color: var(--muted); font-size: 13px; margin-top: 4px; }
+  .header-right { font-size: 12px; color: var(--muted); text-align: right; }
+  .header-right a { color: var(--blue); text-decoration: none; }
+  .header-right a:hover { text-decoration: underline; }
+
+  /* ── Stats ── */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 24px; }
+  .stat {
+    background: rgba(255,255,255,.82);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 16px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .stat-icon { font-size: 22px; line-height: 1; }
+  .stat-val { font-size: 22px; font-weight: 700; color: var(--blue); line-height: 1; }
+  .stat-label { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+  /* ── Controls ── */
+  .controls { display: flex; gap: 10px; align-items: center; margin-bottom: 22px; flex-wrap: wrap; }
+  .search-wrap { position: relative; flex: 1; min-width: 200px; }
+  .search-wrap input {
+    width: 100%; padding: 9px 14px 9px 36px;
+    border: 1px solid var(--line); border-radius: 8px;
+    background: rgba(255,255,255,.9); color: var(--ink);
+    font-size: 13px; outline: none;
+  }
+  .search-wrap input:focus { border-color: var(--blue); }
+  .search-wrap .icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 14px; pointer-events: none; }
+  .filter-tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+  .filter-tab {
+    padding: 7px 14px; border: 1px solid var(--line); border-radius: 20px;
+    background: rgba(255,255,255,.8); color: var(--muted);
+    font-size: 12px; font-weight: 600; transition: all .15s;
+  }
+  .filter-tab:hover { border-color: var(--blue); color: var(--blue); }
+  .filter-tab.active { background: var(--blue); color: #fff; border-color: var(--blue); }
+
+  /* ── Grid ── */
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+
+  /* ── Skill Card ── */
+  .skill-card {
+    background: rgba(255,255,255,.88);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: box-shadow .15s, border-color .15s, transform .1s;
+    position: relative;
+    overflow: hidden;
+  }
+  .skill-card:hover { box-shadow: 0 8px 28px rgba(7,24,39,.12); border-color: rgba(18,58,95,.25); transform: translateY(-1px); }
+  .skill-card.expanded { border-color: var(--blue); }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
+  .card-meta { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge {
+    font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 20px;
+    letter-spacing: .03em;
+  }
+  .badge-status-可用 { background: #d4edda; color: #1d6c35; }
+  .badge-status-试运行 { background: #fff3cd; color: #856404; }
+  .badge-status-废弃 { background: #f8d7da; color: #721c24; }
+  .badge-type { background: var(--soft); color: var(--muted); }
+  .badge-evolution { background: #fef3e2; color: #b85f28; }
+  .card-title { font-size: 15px; font-weight: 700; color: var(--ink); margin-bottom: 6px; line-height: 1.3; }
+  .card-name { font-size: 11px; color: var(--muted); font-family: monospace; margin-bottom: 8px; }
+  .card-desc { font-size: 12px; color: var(--muted); line-height: 1.6; }
+  .card-stars { display: flex; gap: 2px; margin-top: 10px; }
+  .star { font-size: 12px; }
+  .star.filled { color: var(--gold); }
+  .star.empty { color: var(--line); }
+  .card-category-tag { font-size: 10px; color: var(--blue); font-weight: 600; margin-top: 6px; }
+
+  /* ── Expanded Detail ── */
+  .detail {
+    display: none;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+  }
+  .skill-card.expanded .detail { display: block; }
+  .detail-row { margin-bottom: 10px; }
+  .detail-label { font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 3px; }
+  .detail-val { color: var(--ink); line-height: 1.6; }
+  .code-inline { font-family: monospace; background: var(--soft); padding: 1px 5px; border-radius: 4px; font-size: 11px; }
+  .howto { background: var(--soft); border-radius: 6px; padding: 8px 10px; font-family: monospace; font-size: 11px; color: var(--ink); white-space: pre-wrap; margin-top: 4px; }
+
+  /* Evolution suggestions */
+  .evolution-list { margin-top: 8px; }
+  .evolution-item {
+    background: #fef3e2; border: 1px solid rgba(200,164,93,.3);
+    border-radius: 6px; padding: 8px 10px; margin-bottom: 6px;
+  }
+  .evolution-meta { font-size: 10px; color: var(--muted); margin-bottom: 3px; }
+  .evolution-text { font-size: 12px; color: var(--ink); line-height: 1.5; }
+  .evolution-applied { background: #d4edda; border-color: rgba(55,124,97,.25); }
+  .evolution-applied .evolution-text { color: var(--muted); text-decoration: line-through; }
+  .apply-btn {
+    font-size: 10px; padding: 2px 8px; border-radius: 4px;
+    border: 1px solid var(--gold); background: transparent; color: var(--gold);
+    margin-top: 4px; font-weight: 600;
+  }
+  .apply-btn:hover { background: var(--gold); color: #fff; }
+
+  /* ── Empty state ── */
+  .empty { text-align: center; padding: 60px 20px; color: var(--muted); }
+  .empty h3 { font-size: 16px; margin-bottom: 6px; }
+  .empty p { font-size: 13px; }
+
+  /* ── Footer ── */
+  .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; align-items: center; }
+
+  @media (max-width: 600px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .header { flex-direction: column; align-items: flex-start; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <div class="eyebrow">观澜AI · FDE Skill Store</div>
+      <h1>FDE 技能库</h1>
+      <div class="subtitle">所有 Claude Skills — 一键触发，可进化，持续沉淀</div>
+    </div>
+    <div class="header-right">
+      <div id="updated-at">更新于 —</div>
+      <div style="margin-top:4px">
+        <a href="local-skill-store.html">运营 Skill Store →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats" id="stats">
+    <div class="stat">
+      <div class="stat-icon">📦</div>
+      <div>
+        <div class="stat-val" id="stat-total">—</div>
+        <div class="stat-label">Skills 总数</div>
+      </div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon">✅</div>
+      <div>
+        <div class="stat-val" id="stat-available">—</div>
+        <div class="stat-label">可用</div>
+      </div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon">🧪</div>
+      <div>
+        <div class="stat-val" id="stat-trial">—</div>
+        <div class="stat-label">试运行</div>
+      </div>
+    </div>
+    <div class="stat">
+      <div class="stat-icon">🌱</div>
+      <div>
+        <div class="stat-val" id="stat-evolution">—</div>
+        <div class="stat-label">待进化</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <div class="search-wrap">
+      <span class="icon">🔍</span>
+      <input type="text" id="search" placeholder="搜索 skill 名称、标签、描述…" oninput="renderGrid()">
+    </div>
+    <div class="filter-tabs" id="filter-tabs"></div>
+  </div>
+
+  <!-- Grid -->
+  <div class="grid" id="grid"></div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span>数据源: <code>data/fde-skill-store-data.js</code></span>
+    <span>Vault: <code>/Users/jerry/obsidian/FDE项目/.claude/skills/</code></span>
+  </div>
+</div>
+
+<script src="data/fde-skill-store-data.js"></script>
+<script>
+const store = window.FDESkillStore;
+const skills = store.skills;
+const categories = store.categories;
+
+let activeCategory = 'all';
+
+// ── Init ──────────────────────────────────────────────────────────────
+function init() {
+  document.getElementById('updated-at').textContent = '更新于 ' + store.meta.updatedAt;
+
+  // Stats
+  const pendingEvo = skills.filter(s => s.evolutionSuggestions.some(e => !e.applied)).length;
+  document.getElementById('stat-total').textContent = store.meta.total;
+  document.getElementById('stat-available').textContent = store.meta.available;
+  document.getElementById('stat-trial').textContent = store.meta.trial;
+  document.getElementById('stat-evolution').textContent = pendingEvo;
+
+  // Category tabs
+  const tabsEl = document.getElementById('filter-tabs');
+  tabsEl.innerHTML = `
+    <button class="filter-tab active" onclick="setCategory('all', this)">全部 (${skills.length})</button>
+    ${categories.map(c => `<button class="filter-tab" onclick="setCategory('${c.id}', this)">${c.label} (${c.count})</button>`).join('')}
+  `;
+
+  renderGrid();
+}
+
+function setCategory(cat, btn) {
+  activeCategory = cat;
+  document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderGrid();
+}
+
+// ── Render ────────────────────────────────────────────────────────────
+function renderGrid() {
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  const filtered = skills.filter(s => {
+    const catMatch = activeCategory === 'all' || s.category === activeCategory;
+    const qMatch = !q || [s.displayName, s.name, s.description, ...(s.tags || [])].join(' ').toLowerCase().includes(q);
+    return catMatch && qMatch;
+  });
+
+  const grid = document.getElementById('grid');
+  if (!filtered.length) {
+    grid.innerHTML = `<div class="empty" style="grid-column:1/-1"><h3>没有找到相关 skill</h3><p>试试其他关键词或分类</p></div>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.map(s => renderCard(s)).join('');
+}
+
+function stars(score) {
+  return Array.from({length: 5}, (_, i) =>
+    `<span class="star ${i < score ? 'filled' : 'empty'}">${i < score ? '★' : '☆'}</span>`
+  ).join('');
+}
+
+function renderCard(s) {
+  const pendingEvo = s.evolutionSuggestions.filter(e => !e.applied);
+  const evoBadge = pendingEvo.length
+    ? `<span class="badge badge-evolution">🌱 待进化 ${pendingEvo.length}</span>`
+    : '';
+
+  const evoItems = s.evolutionSuggestions.map((e, i) => `
+    <div class="evolution-item ${e.applied ? 'evolution-applied' : ''}" id="evo-${s.id}-${i}">
+      <div class="evolution-meta">${e.date} · ${e.source}</div>
+      <div class="evolution-text">${e.suggestion}</div>
+      ${!e.applied ? `<button class="apply-btn" onclick="markApplied('${s.id}', ${i}, event)">已应用</button>` : '<div style="font-size:10px;color:var(--green);margin-top:3px">✓ 已应用</div>'}
+    </div>
+  `).join('') || '<div style="color:var(--muted);font-size:12px">暂无进化建议</div>';
+
+  return `
+    <div class="skill-card" id="card-${s.id}" onclick="toggleCard('${s.id}')">
+      <div class="card-top">
+        <div class="card-meta">
+          <span class="badge badge-status-${s.status}">${s.status}</span>
+          <span class="badge badge-type">${s.type}</span>
+          ${evoBadge}
+        </div>
+      </div>
+      <div class="card-title">${s.displayName}</div>
+      <div class="card-name">/${s.name}</div>
+      <div class="card-desc">${s.description}</div>
+      <div class="card-stars">${stars(s.reliability.score)}</div>
+      <div class="card-category-tag">${s.category}</div>
+
+      <div class="detail">
+        <div class="detail-row">
+          <div class="detail-label">使用方式</div>
+          <div class="howto">${s.howToUse}</div>
+        </div>
+        <div class="detail-row">
+          <div class="detail-label">使用边界</div>
+          <div class="detail-val">${s.usageBoundary}</div>
+        </div>
+        <div class="detail-row">
+          <div class="detail-label">可靠性备注</div>
+          <div class="detail-val">${s.reliability.note}</div>
+        </div>
+        <div class="detail-row">
+          <div class="detail-label">版本</div>
+          <div class="detail-val"><span class="code-inline">${s.version}</span></div>
+        </div>
+        <div class="detail-row">
+          <div class="detail-label">进化建议 (${s.evolutionSuggestions.length})</div>
+          <div class="evolution-list">${evoItems}</div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function toggleCard(id) {
+  const card = document.getElementById('card-' + id);
+  card.classList.toggle('expanded');
+}
+
+function markApplied(skillId, evoIdx, e) {
+  e.stopPropagation();
+  const skill = skills.find(s => s.id === skillId);
+  if (skill) {
+    skill.evolutionSuggestions[evoIdx].applied = true;
+    renderGrid();
+    // Re-expand the card
+    setTimeout(() => {
+      const card = document.getElementById('card-' + skillId);
+      if (card) card.classList.add('expanded');
+    }, 0);
+  }
+}
+
+init();
+</script>
+</body>
+</html>
