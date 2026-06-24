@@ -45,7 +45,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current stage: SITE-V3.3.8.3.
 - Current frontstage: `01-SiteV2/site/v3-data-observation.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/weekly-ai-business-change-radar.html`, `01-SiteV2/site/follow-builders.html`, and `01-SiteV2/site/community-intelligence.html`.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
-- Current Business Signals column version: BSIG-V1.1.1-core-source-hygiene.
+- Current Business Signals column version: BSIG-V1.1.2-source-title-translation-lock.
 - Current Enterprise AI / FDE lens version: EAI-V1.1.0-fde-lens-pool.
 - Current Intelligence Map column version: IMAP-V1.2.0-opportunity-radar.
 - Current Business Signals data contract: V3.3.6.3 business source artifact aggregation.

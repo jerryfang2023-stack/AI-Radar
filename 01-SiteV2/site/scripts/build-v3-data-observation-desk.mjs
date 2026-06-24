@@ -9,8 +9,9 @@ const siteDataDir = path.join(root, "01-SiteV2", "site", "data");
 const outputFile = path.join(siteDataDir, "v3-data-observation-desk.json");
 const intelligenceGraphIndexFile = path.join(siteDataDir, "intelligence-graph-index.json");
 const enterpriseAiFdeFile = path.join(siteDataDir, "enterprise-ai-fde.json");
+const sourceTitleTranslationsFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
 const siteVersion = "SITE-V3.3.8.3";
-const businessSignalsColumnVersion = "BSIG-V1.1.1-core-source-hygiene";
+const businessSignalsColumnVersion = "BSIG-V1.1.2-source-title-translation-lock";
 const enterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
 const intelligenceMapColumnVersion = "IMAP-V1.2.0-opportunity-radar";
 
@@ -36,9 +37,40 @@ const tagDictionary = loadTagDictionary();
 const allowedTagIds = new Set(tagDictionary.keys());
 const internalFrontstageTagIds = new Set(["stage-watch", "core-pool"]);
 const internalFrontstageTagLabels = new Set(["core pool"]);
+const sourceTitleTranslations = loadSourceTitleTranslations();
 
 function rel(file) {
   return path.relative(root, file).replace(/\\/g, "/");
+}
+
+function titleTranslationKey(value = "") {
+  return cleanEnglishTitleForDisplay(cleanBadPublicDisplayTitle(value))
+    .toLowerCase()
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function loadSourceTitleTranslations() {
+  if (!fs.existsSync(sourceTitleTranslationsFile)) return new Map();
+  try {
+    const json = JSON.parse(read(sourceTitleTranslationsFile));
+    const entries = Array.isArray(json) ? json : (Array.isArray(json.translations) ? json.translations : []);
+    const map = new Map();
+    for (const entry of entries) {
+      const sourceTitle = String(entry?.sourceTitle || "").trim();
+      const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
+      if (!sourceTitle || !zhTitle) continue;
+      const keys = [
+        sourceTitle,
+        cleanEnglishTitleForDisplay(sourceTitle),
+      ].map(titleTranslationKey).filter(Boolean);
+      for (const key of keys) map.set(key, zhTitle);
+    }
+    return map;
+  } catch (error) {
+    console.warn(`Warning: failed to read ${rel(sourceTitleTranslationsFile)}: ${error.message}`);
+    return new Map();
+  }
 }
 
 function canonicalUrl(url = "") {
@@ -233,10 +265,11 @@ function camelOpportunityField(field = "") {
 }
 
 function opportunitySignals(fm) {
+  const sourceExcerpt = nestedScalar(fm, "opportunity_signals", "source_excerpt");
   const result = {
     schemaVersion: nestedScalar(fm, "opportunity_signals", "schema_version") || "opportunity-signals-v1",
     evidenceBasis: nestedScalar(fm, "opportunity_signals", "evidence_basis"),
-    sourceExcerpt: nestedScalar(fm, "opportunity_signals", "source_excerpt"),
+    sourceExcerpt: titleLooksLikeGeneratedTemplate(sourceExcerpt) ? "" : sourceExcerpt,
     missingFields: nestedList(fm, "opportunity_signals", "missing_fields"),
     labels: {},
   };
@@ -574,76 +607,6 @@ function sourceTitleFromFullText(fullText = "", fallbackTitle = "") {
   return sourceLine || recovered;
 }
 
-function sourceTitleFromUrlOverride(sourceUrl = "") {
-  const normalized = canonicalUrl(sourceUrl).toLowerCase();
-  const cleanOverride = cleanSourceTitleOverride(sourceUrl);
-  if (cleanOverride) return cleanOverride;
-  if (/delight\.ai\/customers\/norse-atlantic-airways/iu.test(normalized)) {
-    return "Norse Atlantic Airways 与 delight.ai：构建航空公司未曾见过的 AI 劳动力";
-  }
-  if (/ithome\.com\/0\/965\/989/iu.test(normalized)) {
-    return "英伟达宣布 NVIDIA ACE Game Agent SDK 进入 Beta 测试";
-  }
-  const readableUrlTranslations = [
-    [/techcrunch\.com\/2026\/06\/18\/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/iu, "Elastic 同意以最高 8500 万美元收购 CRV 支持的 DeductiveAI"],
-    [/techcrunch\.com\/2026\/06\/18\/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/iu, "AI 推理初创公司 Baseten 据报在上一轮巨额融资数月后再融 15 亿美元"],
-    [/siliconangle\.com\/2026\/06\/15\/ai-agent-authorization-startup-arcade-nabs-60m-investment/iu, "AI Agent 授权初创公司 Arcade 获得 6000 万美元投资"],
-    [/the-decoder\.com\/googles-gemini-co-lead-noam-shazeer-joins-openai-after-two-year-return-stint/iu, "Google Gemini 联合负责人 Noam Shazeer 在回归两年后加入 OpenAI"],
-    [/ithome\.com\/0\/966\/109/iu, "负责 Meta AI 重组核心项目的高管埃米莉·道尔顿·史密斯即将离职"],
-    [/artificialintelligence-news\.com\/news\/computer-vision-deployments-drive-retail-productivity-gains/iu, "计算机视觉部署推动零售生产力提升"],
-    [/artificialintelligence-news\.com\/news\/hsbc-google-cloud-ai-partnership/iu, "HSBC 与 Google Cloud 扩大 AI 银行业务合作"],
-    [/salesforce\.com\/ap\/blog\/forward-deployed-engineer/iu, "当下最热门角色：Forward Deployed Engineer - Salesforce"],
-    [/ellamind\.com\/blog\/forward-deployed-engineer/iu, "从客户视角看：Forward Deployed Engineer 实际做什么"],
-    [/the-decoder\.com\/midjourney-known-for-ai-image-generation-unveils-a-full-body-ultrasound-scanner-and-its-own-spa/iu, "以 AI 图像生成闻名的 Midjourney 发布全身超声波扫描仪和自有水疗中心"],
-    [/marktechpost\.com\/2026\/06\/18\/perplexity-launches-brain/iu, "Perplexity 推出 Brain"],
-    [/techcrunch\.com\/2026\/06\/18\/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/iu, "Snap 因成本问题将 AI 视频团队剥离为新公司 Dotmo"],
-  ];
-  const readableUrlMatch = readableUrlTranslations.find(([pattern]) => pattern.test(normalized));
-  if (readableUrlMatch) return readableUrlMatch[1];
-  if (/techcrunch\.com\/2026\/06\/18\/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/iu.test(normalized)) {
-    return "Source: Elastic agrees to buy CRV-backed DeductiveAI for up to $85M";
-  }
-  if (/techcrunch\.com\/2026\/06\/18\/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/iu.test(normalized)) {
-    return "AI inference startup Baseten reportedly raising $1.5B months after its last mega-round";
-  }
-  if (/artificialintelligence-news\.com\/news\/computer-vision-deployments-drive-retail-productivity-gains/iu.test(normalized)) {
-    return "Computer vision deployments drive retail productivity gains";
-  }
-  if (/artificialintelligence-news\.com\/news\/hsbc-google-cloud-ai-partnership/iu.test(normalized)) {
-    return "HSBC and Google Cloud expand AI banking partnership";
-  }
-  if (/salesforce\.com\/ap\/blog\/forward-deployed-engineer/iu.test(normalized)) {
-    return "Today’s Hottest Role: Forward Deployed Engineer - Salesforce";
-  }
-  if (/ellamind\.com\/blog\/forward-deployed-engineer/iu.test(normalized)) {
-    return "From the Customer's Side of the Table: What a Forward Deployed Engineer Actually Does | ellamind Blog";
-  }
-  if (/the-decoder\.com\/midjourney-known-for-ai-image-generation-unveils-a-full-body-ultrasound-scanner-and-its-own-spa/iu.test(normalized)) {
-    return "Midjourney, known for AI image generation, unveils a full-body ultrasound scanner and its own spa";
-  }
-  if (/marktechpost\.com\/2026\/06\/18\/perplexity-launches-brain/iu.test(normalized)) {
-    return "Perplexity launches Brain";
-  }
-  if (/techcrunch\.com\/2026\/06\/18\/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/iu.test(normalized)) {
-    return "Snap spins off AI video team into new company, Dotmo, due to costs";
-  }
-  if (/prnewswire\.com\/news-releases\/voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with-5-5-million-seed-round/iu.test(normalized)) {
-    return "VoiceRun Launches Full-Stack Voice AI Platform for Enterprises with $5.5 Million Seed Round";
-  }
-  if (/techcrunch\.com\/2026\/06\/17\/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/iu.test(normalized)) {
-    return "World model maker Odyssey nabs $1.45B valuation, backed by Amazon and other big names";
-  }
-  if (/developers\.googleblog\.com\/announcing-the-agentic-resource-discovery-specification/iu.test(normalized)) {
-    return "Announcing the Agentic Resource Discovery specification";
-  }
-  if (/the-decoder\.com\/zhipu-ais-glm-5-2-closes-in-on-closed-source-leaders-in-coding-marathons/iu.test(normalized)) {
-    return "Zhipu AI's GLM-5.2 closes in on closed-source leaders in coding marathons";
-  }
-  if (/genzeon\.one\/research\/field-notes\/claude-first-healthcare-fde-pod/iu.test(normalized)) {
-    return "What a Claude-First Healthcare FDE Pod Actually Does — Field Note";
-  }
-  return "";
-}
 
 function subjectFromUrl(url = "") {
   try {
@@ -880,17 +843,6 @@ function subjectFromEnglishTitle(title = "") {
   return "";
 }
 
-function fallbackChineseTitleForEnglish(title = "", sourceUrl = "") {
-  const text = String(title || "").replace(/\s+/gu, " ").trim();
-  if (!text) return "";
-  const subject = subjectFromUrl(sourceUrl) || subjectFromEnglishTitle(text) || domain(sourceUrl).split(".")[0] || "AI";
-  if (/\b(raises|raised|lands|landed|secures|secured|funding|financing|series|seed|pre-seed)\b/iu.test(text)) return `${subject} 融资，资金流向 AI 商业化环节`;
-  if (/\b(launches|launch|introduces|introduced|releases|released|announces|announced|general availability)\b/iu.test(text)) return `${subject} 发布 AI 产品能力，切入企业工作流`;
-  if (/\b(procurement|purchase|supply chain|customer|adoption|case study|workflow|overhaul|visuals?|furniture|companies)\b/iu.test(text)) return `${subject} 案例：AI 进入企业业务流程`;
-  if (/\b(inference|model|serverless|compute|gpu|infrastructure|platform)\b/iu.test(text)) return `${subject} 发布 AI 基础设施能力`;
-  if (/\b(report|benchmark|market|adoption|guide|complete)\b/iu.test(text)) return `${subject} 报告：AI 商业采用继续分化`;
-  return `${subject} 信号：AI 进入企业业务流程`;
-}
 
 function fallbackChineseFactForEnglish(title = "", sourceUrl = "") {
   const text = String(title || "").replace(/\s+/gu, " ").trim();
@@ -920,82 +872,7 @@ function cleanEnglishTitleForDisplay(title = "") {
     .trim();
 }
 
-function sourceTitleLiteralTranslation(title = "", sourceUrl = "") {
-  const raw = String(title || "").replace(/\s+/gu, " ").trim();
-  if (!raw) return "";
-  const cleanOverride = cleanSourceTitleOverride(sourceUrl);
-  if (cleanOverride) return cleanOverride;
-  if (hasCjk(raw)) return raw;
-  const text = cleanEnglishTitleForDisplay(raw);
-  const normalized = canonicalUrl(sourceUrl).toLowerCase();
-  if (/thenextweb\.com.*pivot-40m-series-b-agentic-ai-procurement-operating-system/iu.test(normalized)) return "Pivot 获得 4000 万美元 B 轮融资，面向企业采购推出 Agentic AI 操作系统";
-  if (/markets\.ft\.com.*20260608_BW802379/iu.test(normalized)) return "Hitachi 与 Google Cloud 扩大战略联盟，通过 FDE 加速 Physical AI 和网络安全方案落地";
-  if (/salesforce\.com\/ap\/blog\/forward-deployed-engineer/iu.test(normalized)) return "当下最热门角色：Forward Deployed Engineer - Salesforce";
-  if (/delight\.ai\/customers\/norse-atlantic-airways/iu.test(normalized)) return "Norse Atlantic Airways 客户故事";
-  const rules = [
-    [/Hottest Role:\s*Forward Deployed Engineer\s*-\s*Salesforce/iu, "最热门角色：Forward Deployed Engineer - Salesforce"],
-    [/What Is Forward Deployed Engineering\?\s*4 Ways It Powers AI/iu, "什么是 Forward Deployed Engineering？它驱动 AI 的 4 种方式"],
-    [/Forward Deployed Engineers?\s*\(FDE\):\s*Your Critical Bridge to AI/iu, "Forward Deployed Engineer（FDE）：通往 AI 的关键桥梁"],
-    [/ServiceNow\s*\+\s*Accenture[鈥']s FDE Fix/iu, "ServiceNow 与 Accenture 的 FDE 解法"],
-    [/Ecolab rebuilt retail intelligence on Databricks and Anthropic Claude/iu, "Ecolab 在 Databricks 和 Anthropic Claude 上重建零售智能"],
-    [/Embedded to Everywhere:\s*How Forward Deployed Engineering Was Born at PagerDuty/iu, "从嵌入式到无处不在：PagerDuty 如何诞生 Forward Deployed Engineering"],
-    [/Today[鈥']s Hottest Role:\s*Forward Deployed Engineer\s*-\s*Salesforce/iu, "当下最热门角色：Forward Deployed Engineer - Salesforce"],
-    [/From the Customer[鈥']s Side of the Table:\s*What a Forward Deployed Engineer Actually Does/iu, "从客户视角看：Forward Deployed Engineer 实际做什么"],
-    [/88%\s*AI Pilot Failure:\s*ServiceNow\s*\+\s*Accenture[鈥']s FDE Fix/iu, "88% AI 试点失败：ServiceNow 与 Accenture 的 FDE 解法"],
-    [/AWS Marketplace:\s*Avahi\s*\|\s*Generative AI Production Implementation on AWS/iu, "AWS Marketplace：Avahi 在 AWS 上实施生产级生成式 AI"],
-    [/AI Deployment:\s*The Definitive Guide\s*-\s*Mirantis/iu, "AI 部署权威指南 - Mirantis"],
-    [/From Embedded to Everywhere:\s*How Forward Deployed Engineering Was Born at PagerDuty/iu, "从嵌入式到无处不在：PagerDuty 如何诞生 Forward Deployed Engineering"],
-    [/How Ecolab rebuilt retail intelligence on Databricks and Anthropic Claude/iu, "Ecolab 如何在 Databricks 和 Anthropic Claude 上重建零售智能"],
-    [/AI Agent Governance in CX:\s*ROI vs\.\s*74% Rollback Rate/iu, "客户体验中的 AI Agent 治理：ROI 与 74% 回滚率"],
-    [/VoiceRun Launches Full-Stack Voice AI Platform for Enterprises/iu, "VoiceRun 推出面向企业的全栈语音 AI 平台，并完成 550 万美元种子轮融资"],
-    [/VoiceRun gets \$5\.5M in seed funding to give enterprises more control over voice AI agents/iu, "VoiceRun 获得 550 万美元种子融资，让企业更好地控制语音 AI Agent"],
-    [/Willow Launches with \$7M to Build the Future of Enterprise AI Agent Governance/iu, "Willow 携 700 万美元融资启动，构建企业 AI Agent 治理的未来"],
-    [/INXM Raises €5\.7 Million Pre-Seed To Bridge The Gap Between Enterprise AI Demos And Real Operational Deployment/iu, "INXM 获得 570 万欧元 Pre-Seed 融资，以弥合企业 AI 演示与真实运营部署之间的差距"],
-    [/World model maker Odyssey nabs \$1\.45B valuation, backed by Amazon and other big names/iu, "世界模型公司 Odyssey 获得 14.5 亿美元估值，并获得 Amazon 等机构支持"],
-    [/Pramaana Labs raises \$27M seed round from Khosla Ventures to bring formal verification to AI/iu, "Pramaana Labs 获得 Khosla Ventures 领投的 2700 万美元种子轮融资，将形式化验证引入 AI"],
-    [/Announcing the Agentic Resource Discovery specification/iu, "发布 Agentic Resource Discovery 规范"],
-    [/Zhipu AI's GLM-5\.2 closes in on closed-source leaders in coding marathons/iu, "智谱 AI 的 GLM-5.2 在编码马拉松中逼近闭源领先模型"],
-    [/Applied AI Case Studies and Real-World Success Stories/iu, "应用 AI 案例研究和真实成功故事"],
-    [/Ontora: AI agents that interviews every employee to hand context to AI tools/iu, "Ontora：访谈每位员工并将上下文交给 AI 工具的 AI Agent"],
-    [/A Framework for Finding A Design Partner/iu, "寻找设计伙伴的框架"],
-    [/Introducing Amazon Bedrock Managed Knowledge Base for faster, more accurate enterprise AI applications/iu, "推出 Amazon Bedrock 托管知识库，用于更快、更准确的企业 AI 应用"],
-    [/Enterprise AI Rollout Failures: Causes and Case Studies/iu, "企业 AI 推广失败：原因与案例研究"],
-    [/Governed AI Agents: How to Deploy and Scale with Confidence/iu, "受治理的 AI Agent：如何自信地部署和扩展"],
-    [/New in Amazon Bedrock AgentCore: Build agents with broader knowledge and continuous learning/iu, "Amazon Bedrock AgentCore 新功能：构建拥有更广知识和持续学习能力的 Agent"],
-    [/Barcelona-based NeuralTrust raises €17\.2 million to secure and govern enterprise AI agents/iu, "巴塞罗那 NeuralTrust 融资 1720 万欧元，用于保护和治理企业 AI Agent"],
-    [/World leaders want American AI\. They just don[’']t want America to be able to turn it off/iu, "世界领导人想要美国 AI，但不希望美国能够将其关闭"],
-    [/Collecting robot training data is dirty, unglamorous work.*XDOF/iu, "收集机器人训练数据是脏活累活，一些 AI 实验室已经在付费让 XDOF 来做"],
-    [/Dangerous AI models are coming, no matter what/iu, "危险的 AI 模型无论如何都会到来"],
-    [/What a Claude-First Healthcare FDE Pod Actually Does/iu, "Claude 优先的医疗 FDE Pod 实际做什么"],
-  ];
-  const match = rules.find(([pattern]) => pattern.test(`${text}\n${normalized}`));
-  return match?.[1] || "";
-}
 
-function cleanSourceTitleOverride(sourceUrl = "") {
-  const normalized = canonicalUrl(sourceUrl).toLowerCase();
-  const rules = [
-    [/pulse2\.com\/convey-raises-38-million-series-a-to-automate-enterprise-operations-with-ai-teammates/iu, "Convey 获得 3800 万美元 A 轮融资，用 AI Teammates 自动化企业运营"],
-    [/latent\.space\/p\/state-of-evals-lmarenas-17b-vision/iu, "LMArena 的 17 亿美元愿景：评测平台如何走向商业化"],
-    [/bcg\.com\/publications\/2026\/reinventing-the-operating-system-of-work-with-ai/iu, "BCG：用 AI 重塑工作的操作系统"],
-    [/allcloud\.io\/blog\/scalable-ai-agents-architecting-a-production-ready-deployment-platform/iu, "企业 AI Agent 部署：从原型走向生产"],
-    [/tigera\.io\/blog\/the-case-for-vm-and-container-consolidation-in-2026/iu, "Tigera：2026 年虚拟机与容器整合的理由"],
-    [/jedify\.com\/heres-why-context-graphs-are-the-next-must-have-for-enterprise-ai/iu, "Jedify：为什么上下文图谱会成为企业 AI 的下一项必需能力"],
-    [/tigera\.io\/blog\/the-ai-agent-accountability-crisis-why-governance-isnt-keeping-up-with-deployment/iu, "Tigera：AI Agent 问责危机，治理没有跟上部署速度"],
-    [/stripe\.com\/en-hr\/customers\/retell-ai/iu, "Retell AI 用 Stripe 自动化用量计费，扩展 AI 语音 Agent 业务"],
-    [/neurons-lab\.com\/articles\/top-ai-consulting-firms/iu, "Neurons Lab：面向金融服务机构的 2026 年 AI 咨询公司清单"],
-    [/diginomica\.com\/agentic-ai-hits-difficult-age-salesforces-forward-deployment-engineers/iu, "Salesforce 的 Forward Deployment Engineers 如何帮助企业落地 Agentic AI"],
-    [/getperspective\.ai\/blog\/harvey-ai-forward-deployed-engineers-biglaw-deployment-playbook-2026/iu, "Harvey AI 的 Forward Deployed Engineers 如何进入大型律所部署"],
-    [/blogs\.nvidia\.com\/blog\/applications-open-graduate-fellowship-awards-2025/iu, "NVIDIA 开放 6 万美元研究生奖学金申请"],
-    [/podcasters\.spotify\.com\/pod\/show\/firstmark\/episodes\/Building-the-Easy-Button-for-Generative-AI/iu, "Writer CEO May Habib：为生成式 AI 打造 Easy Button"],
-    [/bcg\.com\/publications\/2026\/the-200-billion-dollar-ai-opportunity-in-tech-services/iu, "BCG：科技服务业存在 2000 亿美元 AI 机会"],
-    [/the-decoder\.com\/chatgpt-keeps-creeping-toward-becoming-your-ai-personal-assistant-with-new-scheduled-task-controls/iu, "ChatGPT 新增 Scheduled 侧边栏，统一管理定时任务"],
-    [/ithome\.com\/0\/966\/599/iu, "独立开发者徐子文用 AI 自制《GTA6》项目 GT-Caliber"],
-    [/ithome\.com\/0\/966\/527/iu, "开源工具 Headroom 爆火：Netflix 工程师称可节省 60%-95% Token 消耗"],
-    [/the-decoder\.com\/data2story-turns-a-csv-file-into-a-verified-interactive-news-article-using-seven-ai-agents/iu, "Data2Story 用七个 AI Agent 将 CSV 自动生成可验证的交互式新闻文章"],
-  ];
-  return rules.find(([pattern]) => pattern.test(normalized))?.[1] || "";
-}
 
 function cleanSourceFactOverride(sourceUrl = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
@@ -1024,56 +901,13 @@ function titleSubject(title = "", sourceUrl = "") {
     || "AI";
 }
 
-function sourceDerivedChineseTitleForEnglish(title = "", sourceUrl = "") {
-  const text = cleanEnglishTitleForDisplay(title);
-  if (!text) return "";
-  const known = [
-    [/VoiceRun Launches Full-Stack Voice AI Platform/iu, "VoiceRun 发布企业级全栈语音 AI 平台并完成 550 万美元种子轮融资"],
-    [/Applied AI Case Studies and Real-World Success Stories/iu, "GoGloby 汇总应用 AI 案例与真实业务成效"],
-    [/Ontora: AI agents that interviews every employee/iu, "Ontora 用 AI Agent 访谈员工并向企业 AI 工具传递上下文"],
-    [/A Framework for Finding A Design Partner/iu, "Andreessen Horowitz 发布寻找设计伙伴的框架"],
-    [/Introducing Amazon Bedrock Managed Knowledge Base/iu, "AWS 发布 Amazon Bedrock 托管知识库，加速企业 AI 应用构建"],
-    [/Enterprise AI Rollout Failures: Causes and Case Studies/iu, "Intuition Labs 分析企业 AI 推广失败原因与案例"],
-    [/Governed AI Agents: How to Deploy and Scale with Confidence/iu, "Boomi 讨论受治理 AI Agent 的部署与规模化"],
-    [/Algorithms and packages in the AWS Marketplace.*SageMaker/iu, "Amazon SageMaker AI Marketplace 提供算法和模型包"],
-    [/ElevenLabs and Better\.com Showcase Success of AI Loan Agent/iu, "ElevenLabs 与 Better.com 展示 AI 贷款 Agent Betsy 的金融服务规模化应用"],
-    [/DigitalOcean Launches Inference Engine/iu, "DigitalOcean 发布生产级 AI 推理引擎与 Agentic 工作负载路由"],
-    [/Top European insurer accelerates claims notification with Druid AI agents/iu, "欧洲保险公司使用 Druid AI Agent 加速理赔通知"],
-    [/LTM transforms HR and Sales Organization with AI-Powered Copilot Agents/iu, "LTM 使用 AI Copilot Agent 改造 HR 与销售组织"],
-    [/Built x MightyBot Case Study.*AI Draw Agent/iu, "Built 与 MightyBot 案例：AI 绘图 Agent 进入生产"],
-  ];
-  const knownMatch = known.find(([pattern]) => pattern.test(text));
-  if (knownMatch) return knownMatch[1];
-  const amount = text.match(/\$ ?\d+(?:\.\d+)?\s?(?:M|B|m|b|million|billion)?|\d+(?:\.\d+)?\s?(?:million|billion)/u)?.[0] || "";
-  const subject = titleSubject(text, sourceUrl);
-  const fundingPurpose = text.match(/\bto\s+(build|bring|scale|advance|accelerate|deploy|automate|secure|expand|help)\s+(.+)$/iu)?.[2] || "";
-  if (/\b(raises|raised|lands|landed|secures|secured|pulls in|gets|funding|financing|series|seed|pre-seed)\b/iu.test(text)) {
-    const purpose = fundingPurpose ? `，用途见原文：${fundingPurpose}` : "";
-    return `${subject} 融资${amount ? ` ${amount}` : ""}${purpose}`.slice(0, 120);
-  }
-  const launchMatch = text.match(/^(.+?)\s+(?:launches|introduces|releases|announces|showcases|unveils)\s+(.+)$/iu);
-  if (launchMatch) {
-    return `${subject} 发布原文所述能力：${launchMatch[2]}`.slice(0, 120);
-  }
-  const withMatch = text.match(/^(.+?)\s+(?:uses|using|with|books over|accelerates|transforms|delivers|automates|showcase(?:s)? success of)\s+(.+)$/iu);
-  if (withMatch) {
-    return `${subject} 应用原文所述场景：${withMatch[2]}`.slice(0, 120);
-  }
-  if (/procurement|purchase|supply chain|workflow|claims|loan|customer|support|sales|HR|revenue/iu.test(text)) {
-    return `${subject} 的原文业务场景：${text}`.slice(0, 120);
-  }
-  if (/agent|model|inference|platform|marketplace|sagemaker|copilot|voice ai|ai/iu.test(text)) {
-    return `${subject} 的原文 AI 事件：${text}`.slice(0, 120);
-  }
-  return `${subject} 的原文事件标题：${text}`.slice(0, 120);
-}
 
 function sourceTitleDerivedFact(title = "", sourceUrl = "") {
   const rawTitle = String(title || "").replace(/\s+/gu, " ").trim();
   if (!rawTitle) return "";
   const direct = chineseFactFromSource(rawTitle, sourceUrl);
   if (direct && !isGenericSourceFallback(direct) && !isSourceLinkOnlyFact(direct)) return direct;
-  const displayTitle = frontstageChineseTitle(rawTitle, sourceUrl) || safeFrontstageTitle(rawTitle, sourceUrl) || rawTitle;
+  const displayTitle = rawTitle;
   const subject = safeFrontstageSubject({
     sourceUrl,
     rawTitle,
@@ -1169,8 +1003,8 @@ function publicDisplayTitleIsReady(title = "") {
   if (!text) return false;
   if (/\b(?:AI business signal|Artificialintelligence-News|Ltd\.)\b/iu.test(text)) return false;
   if (/的公开案例显示|公开材料显示|原文称|AI 正在进入客户、采购、商品内容或内部工作流/iu.test(text)) return false;
-  if (isBadPublicDisplayTitle(text) || isProcessedChineseTitle(text) || publicTitleLooksOverprocessed(text)) return false;
-  if (publicTextLooksGarbled(text) || publicTitleNeedsTranslation(text)) return false;
+  if (isBadPublicDisplayTitle(text) || isProcessedChineseTitle(text) || publicTitleLooksOverprocessed(text) || titleLooksLikeGeneratedTemplate(text)) return false;
+  if (publicTextLooksGarbled(text)) return false;
   return true;
 }
 
@@ -1186,7 +1020,6 @@ function publicCandidateIsDisplayReady(card = {}) {
   ) {
     return false;
   }
-  if (publicTitleNeedsTranslation(card.title) || publicTitleNeedsTranslation(card.displayTitle)) return false;
   if (publicFactLooksLikeTemplateFallback(card.translatedFact || card.summary || card.visibleFragment)) return false;
   return [card.summary, card.translatedFact, card.visibleFragment]
     .filter(Boolean)
@@ -1258,28 +1091,21 @@ function safeFrontstageSubject({ subject = "", sourceUrl = "", sourceName = "", 
   return host && !isWeakSubject(host) ? normalizeSubject(host) : "";
 }
 
-function safeFrontstageTitle(title = "", sourceUrl = "") {
-  const translated = frontstageChineseTitle(title, sourceUrl) || title;
-  return hasCjk(translated) ? translated : fallbackChineseTitleForEnglish(translated, sourceUrl);
-}
 
 function sourceFrontstageTitle(card = {}, _originalTitle = "") {
-  const cardTitle = String(card.title || "").trim();
-  const cardTitleCandidate = hasCjk(cardTitle)
-    && !isBadPublicDisplayTitle(cardTitle)
-    && !isProcessedChineseTitle(cardTitle)
-    ? cardTitle
-    : "";
   return [
-    sourceTitleFromUrlOverride(card.sourceUrl),
-    cardTitleCandidate,
-    card.sourceTitle,
     card.rawTitle,
     card.originalSourceTitle,
     card.originalTitle,
+    card.sourceTitle,
   ]
     .map((value) => String(value || "").trim())
+    .filter((value) => !isBadPublicDisplayTitle(value) && !isProcessedChineseTitle(value) && !titleLooksLikeGeneratedTemplate(value))
     .find(Boolean) || "";
+}
+
+function titleLooksLikeGeneratedTemplate(title = "") {
+  return /\u8bb0\u5f55\u4f01\u4e1a\u5e94\u7528\u573a\u666f|\u516c\u5f00\u6750\u6599\u663e\u793a|\u5546\u4e1a\u4fe1\u53f7/iu.test(String(title || ""));
 }
 
 function isBadPublicDisplayTitle(title = "") {
@@ -1301,51 +1127,33 @@ function cleanBadPublicDisplayTitle(title = "") {
     .trim();
 }
 
-function sourceTitleFallbackForDisplay(title = "", sourceUrl = "") {
-  const clean = cleanEnglishTitleForDisplay(title);
-  if (!clean) return "";
-  return `${titleSubject(clean, sourceUrl)}：${clean}`.slice(0, 120);
+
+
+function titleNeedsChineseTranslation(title = "") {
+  const text = String(title || "").trim();
+  const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
+  const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+  return text.length > 12 && hanCount < 4 && latinWords.length >= 3;
 }
 
-function sourceUrlTitleFallbackForDisplay(sourceUrl = "") {
-  try {
-    const parsed = new URL(sourceUrl);
-    const slug = decodeURIComponent(parsed.pathname)
-      .split("/")
-      .filter(Boolean)
-      .at(-1)
-      ?.replace(/\.[a-z0-9]+$/iu, "")
-      .replace(/[-_]+/gu, " ")
-      .replace(/\b(?:e\d+[a-z0-9]*|podcast|episode|post|article)\b/giu, "")
-      .replace(/\s+/gu, " ")
-      .trim();
-    if (!slug || slug.length < 6) return "";
-    const title = slug.replace(/\b\w/gu, (match) => match.toUpperCase());
-    return `${titleSubject(title, sourceUrl)}：${title}`.slice(0, 120);
-  } catch {
-    return "";
-  }
-}
-
-function publicTitleCandidate(title = "", sourceUrl = "") {
+function sourceTitleDisplayFromOriginal(title = "") {
   const raw = String(title || "").trim();
-  if (!raw || isBadPublicDisplayTitle(raw)) return "";
-  if (isProcessedChineseTitle(raw)) return "";
-  const candidate = sourceTitleLiteralTranslation(raw, sourceUrl);
-  const cleaned = cleanBadPublicDisplayTitle(candidate);
-  if (cleaned && !isBadPublicDisplayTitle(cleaned) && !publicTitleNeedsTranslation(cleaned)) return cleaned;
-  return "";
+  if (!raw || isBadPublicDisplayTitle(raw) || isProcessedChineseTitle(raw) || titleLooksLikeGeneratedTemplate(raw)) return "";
+  const cleaned = cleanEnglishTitleForDisplay(cleanBadPublicDisplayTitle(raw));
+  if (!cleaned || isBadPublicDisplayTitle(cleaned) || titleLooksLikeGeneratedTemplate(cleaned) || publicTextLooksGarbled(cleaned)) return "";
+  if (!titleNeedsChineseTranslation(cleaned)) return cleaned;
+  const translated = sourceTitleTranslations.get(titleTranslationKey(cleaned)) || "";
+  if (!translated || !hasCjk(translated) || titleLooksLikeGeneratedTemplate(translated) || publicTextLooksGarbled(translated)) return "";
+  return translated;
+}
+
+function publicTitleCandidate(title = "", _sourceUrl = "") {
+  return sourceTitleDisplayFromOriginal(title);
 }
 
 function publicDisplayTitle(sourceTitle = "", generatedTitle = "", sourceUrl = "", options = {}) {
   const sourceCandidate = publicTitleCandidate(sourceTitle, sourceUrl);
   if (sourceCandidate) return sourceCandidate;
-  if (options.allowGeneratedFallback) {
-    const fallback = cleanBadPublicDisplayTitle(String(generatedTitle || "").trim());
-    if (fallback && !isBadPublicDisplayTitle(fallback) && !publicTitleNeedsTranslation(fallback)) {
-      return fallback;
-    }
-  }
   return "";
 }
 
@@ -1372,27 +1180,10 @@ function normalizeFactDerivedTitle(value = "") {
     .trim();
 }
 
-function factDerivedPublicTitle(value = "") {
-  const text = cleanPublicSourceFact(value);
-  if (!text) return "";
-  const sentence = text.split(/[。！？!?]/u).map((item) => item.trim()).find(Boolean) || "";
-  if (!sentence) return "";
-  const clause = sentence
-    .split(/[，,:：]/u)
-    .map((item) => item.trim())
-    .find((item) => item.length >= 10) || sentence;
-  const compact = normalizeFactDerivedTitle(clause);
-  const candidate = compact.length > 44 ? `${compact.slice(0, 44).trim()}…` : compact;
-  if (!candidate || !hasCjk(candidate)) return "";
-  if (isBadPublicDisplayTitle(candidate) || isProcessedChineseTitle(candidate) || publicTitleLooksOverprocessed(candidate)) return "";
-  if (publicTitleNeedsTranslation(candidate) || publicTextLooksGarbled(candidate)) return "";
-  return candidate;
-}
 
 function normalizeFrontstageDisplay(card = {}, options = {}) {
   const strictPublic = options.strictPublic !== false;
-  const modelGeneratedTitle = strictPublic ? undefined : card.modelGeneratedTitle || card.generatedTitle || card.title || "";
-  const internalTitle = safeFrontstageTitle(card.title || card.originalTitle, card.sourceUrl);
+  const internalTitle = publicTitleCandidate(card.originalTitle || card.sourceTitle || card.rawTitle, card.sourceUrl);
   const originalTitle = card.originalTitle || (internalTitle !== card.title ? card.title : "");
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
   const cleanFact = cleanSourceFactOverride(card.sourceUrl);
@@ -1410,11 +1201,10 @@ function normalizeFrontstageDisplay(card = {}, options = {}) {
   const preferredDisplayTitle = publicDisplayTitle(sourceTitle, strictPublic ? "" : internalTitle, card.sourceUrl, { allowGeneratedFallback: !strictPublic });
   const displayTitle = publicDisplayTitleIsReady(preferredDisplayTitle)
     ? preferredDisplayTitle
-    : strictPublic ? "" : factDerivedPublicTitle(cleanedTranslatedFact || card.visibleFragment || card.summary);
+    : "";
   return {
     ...card,
     title: displayTitle,
-    modelGeneratedTitle,
     generatedTitle: displayTitle,
     originalTitle,
     sourceTitle,
@@ -1436,7 +1226,6 @@ function top10CompatCard(card = {}) {
   const displayTitle = publicDisplayTitle(sourceTitle, "", card.sourceUrl);
   return {
     ...card,
-    modelGeneratedTitle: undefined,
     generatedTitle: displayTitle,
     sourceTitle,
     displayTitle,
@@ -1444,69 +1233,6 @@ function top10CompatCard(card = {}) {
   };
 }
 
-function translateEnglishTitle(title = "", sourceUrl = "") {
-  const text = String(title || "").trim();
-  const normalized = canonicalUrl(sourceUrl).toLowerCase();
-  if (/thenextweb\.com.*pivot-40m-series-b-agentic-ai-procurement-operating-system/iu.test(normalized)) return "Pivot 获得 4000 万美元 B 轮融资，面向企业采购推出 Agentic AI 操作系统";
-  if (/markets\.ft\.com.*20260608_BW802379/iu.test(normalized)) return "Hitachi 与 Google Cloud 扩大战略联盟，通过 FDE 加速 Physical AI 和网络安全方案落地";
-  const byUrl = [
-    [/techcrunch\.com.*nimble-way-raises-47m/u, "Nimble 融资 4700 万美元，让 AI Agent 获取实时网页数据"],
-    [/techcrunch\.com.*neocognition.*lands-40m/u, "NeoCognition 融资 4000 万美元，研发像人类一样学习的自学习 AI Agent"],
-    [/unite\.ai.*airspeed-raises-20m-series-a/u, "Airspeed 融资 2000 万美元，打造面向收入团队的 AI「商业大脑」"],
-    [/aimultiple\.com.*ai-procurement/u, "10 个 AI 采购用例与案例研究"],
-    [/aws\.amazon\.com.*procurement.*agentcore/u, "AWS：使用 Amazon Bedrock AgentCore 自动化采购工作流"],
-    [/aws\.amazon\.com\/blogs\/aws\/announcing-amazon-sagemaker-inference-for-custom-amazon-nova-models/u, "AWS：SageMaker Inference 支持部署自定义 Amazon Nova 模型"],
-    [/siliconangle.*archestra/u, "Archestra 融资 1000 万美元，为企业数据接入 AI Agent 搭建中介层"],
-    [/linkedin\.com.*seed.*pre-seed/u, "57 家早期 AI 初创公司一周融资 3.16 亿美元"],
-    [/thenextweb\.com.*voice-ai-infrastructure/u, "前高盛和 Meta 创始人融资 300 万美元，建设语音 AI 基础设施"],
-    [/riseuplabs\.com.*cost.*implementing-ai/u, "2026 年企业实施 AI 的真实成本"],
-    [/github\.com.*agent-ready-enterprise/u, "面向 Agent-ready 企业的 AI 开发者平台"],
-    [/avasant\.com.*advanced-voice-ai/u, "2026 年高级语音 AI 平台市场观察"],
-    [/firecrawl\.dev.*frameworks.*ai-agents/u, "2026 年构建 AI Agent 的开源框架"],
-    [/github\.com.*governing-agents/u, "GitHub Enterprise 中的 Agent 治理"],
-    [/kpmg.*procurement.*intelligent/u, "KPMG：用智能技术改造采购流程"],
-    [/bidnetdirect.*2668201217/u, "NIST 寻求承包商提供 AI 模型托管和推理服务"],
-    [/linkedin.*sunita-verma.*inference/u, "Sunita Verma：推理成本两年下降 280 倍"],
-    [/fortunebusinessinsights.*ai-saas-market/u, "AI SaaS 市场规模与预测（至 2034 年）"],
-    [/protopia.*protopia-ai-on-aws/u, "Protopia AI 现已登陆 AWS Marketplace"],
-    [/huggingface.*rdjarbeng.*yc-rfs/u, "Y Combinator RFS 数据集：创业方向分析"],
-  ];
-  const urlMatch = byUrl.find(([pattern]) => pattern.test(normalized));
-  if (urlMatch) return urlMatch[1];
-  const byTitle = [
-    [/^How Druid AI helped a global appliance retailer/iu, "Druid AI 帮助全球家电零售商自动化联络中心客服流程"],
-    [/^ASUS Brings Enterprise\s*-\s*to\s*-\s*Edge AI/iu, "华硕在 Computex 2026 展示企业到边缘的 AI 部署方案"],
-    [/^GitHub release notes agent\s*-\s*Agno/iu, "Agno 发布 GitHub Release Notes Agent"],
-    [/^GoogleCloudPlatform\/agent-starter-pack/iu, "Google Cloud 发布 Agent Starter Pack 开源模板"],
-    [/^How SaaS Companies Are Monetizing AI Agents in 2026/iu, "SaaS 公司开始探索 AI Agent 的商业化路径"],
-    [/^Top AI Pre-Seed Investors/iu, "AI Pre-seed 投资人榜单"],
-    [/^Snowflake Expands AWS Collaboration with \$6B AI Commitment/iu, "Snowflake 扩大 AWS 合作并承诺 60 亿美元 AI 投入"],
-    [/^Pipeshift: Inference for real-time production workloads/iu, "Pipeshift 为实时生产工作负载提供 AI 推理服务"],
-    [/^Gemma 4 with quantization-aware training/iu, "Google DeepMind 发布支持量化感知训练的 Gemma 4"],
-    [/^10 AI Procurement Use Cases/iu, "10 个 AI 采购用例与案例研究"],
-    [/^Automate Procurement Workflows/iu, "使用 AI Agent 自动化采购工作流"],
-    [/^Archestra raises \$10M/iu, "Archestra 融资 1000 万美元，为企业数据接入 AI Agent 搭建中介层"],
-    [/^57 early stage AI startups/iu, "57 家早期 AI 初创公司一周融资 3.16 亿美元"],
-    [/^Ex-Goldman Sachs and Meta founders raise \$3M/iu, "前高盛和 Meta 创始人融资 300 万美元，建设语音 AI 基础设施"],
-    [/^The True Cost of Implementing AI/iu, "2026 年企业实施 AI 的真实成本"],
-    [/^The AI-powered developer platform/iu, "面向 Agent-ready 企业的 AI 开发者平台"],
-    [/^Advanced Voice AI Platforms 2026/iu, "2026 年高级语音 AI 平台市场观察"],
-    [/^The best open source frameworks/iu, "2026 年构建 AI Agent 的开源框架"],
-    [/^Governing agents in GitHub Enterprise/iu, "GitHub Enterprise 中的 Agent 治理"],
-    [/^Transforming procurement through intelligent technology/iu, "KPMG：用智能技术改造采购流程"],
-  ];
-  byTitle.push(
-    [/^How to govern AI agents in your GitHub Enterprise/iu, "GitHub Enterprise 中的 AI Agent 治理"],
-    [/^Mercury 2, the first reasoning diffusion LLM, is now on Baseten/iu, "Baseten 上线 Mercury 2 推理扩散大模型"],
-    [/^Bill Joplin.*ServiceTitan AI Voice Agent/iu, "Bill Joplin 使用 ServiceTitan AI 语音 Agent 处理 90% 以上来电"],
-    [/^F2 Raises \$24M to Build AI for Private Credit/iu, "F2 融资 2400 万美元，建设私募信贷 AI 平台"],
-    [/^Notch Raises \$30 Million to Build the AI Operating System for Regulated Industries/iu, "Notch 融资 3000 万美元，建设受监管行业 AI 操作系统"],
-    [/^Poetic Raises \$50M Series A/iu, "Poetic 完成 5000 万美元 A 轮融资，自动化复杂企业流程"]
-  );
-  const titleMatch = byTitle.find(([pattern]) => pattern.test(text));
-  if (titleMatch) return titleMatch[1];
-  return sourceDerivedChineseTitleForEnglish(text, sourceUrl) || fallbackChineseTitleForEnglish(text, sourceUrl);
-}
 
 function chineseFactFromSource(title = "", sourceUrl = "") {
   const text = String(title || "");
@@ -1590,90 +1316,6 @@ function chineseFactFromSource(title = "", sourceUrl = "") {
   return fallbackChineseFactForEnglish(text, sourceUrl);
 }
 
-function frontstageChineseTitle(title = "", sourceUrl = "") {
-  const normalized = canonicalUrl(sourceUrl).toLowerCase();
-  const rules = [
-    [/blogs\.nvidia\.com\/blog\/2026-ces-special-presentation/u, "NVIDIA 在 CES 展示 Rubin 平台、开放模型与自动驾驶蓝图"],
-    [/hpcwire\.com.*tensormesh-raises-20m-launches-ai-inference-platform/u, "Tensormesh \u5728 HPCwire \u53d1\u5e03 2000 \u4e07\u7f8e\u5143\u878d\u8d44\u4e0e AI \u63a8\u7406\u5e73\u53f0"],
-    [/happyrobot\.ai\/customer-story\/kuehne-nagel/u, "Kuehne+Nagel \u4e0e HappyRobot\uff1aAI \u8fdb\u5165\u7269\u6d41\u8ba2\u5355\u548c\u90ae\u4ef6\u5904\u7406"],
-    [/mariothomas\.com\/blog\/inference-migration/u, "Mario Thomas\uff1a\u6d88\u8d39\u7ea7 Agent \u7ecf\u9a8c\u8fdb\u5165\u4f01\u4e1a AI \u4e0b\u4e00\u9636\u6bb5"],
-    [/mindstudio\.ai\/blog\/build-saas-with-ai-agents-1m-arr-case-study/u, "MindStudio\uff1a\u7528 AI Agent \u6784\u5efa\u5730\u4ea7\u5f00\u53d1\u4e0e\u5efa\u7b51\u8bbe\u8ba1 SaaS \u4ea7\u54c1"],
-    [/saastr\.com\/the-wave-of-ai-agent-churn-to-come-prompts-are-portable/u, "SaaStr\uff1aAgent \u63d0\u793a\u53ef\u8fc1\u79fb\u5e26\u6765\u5ba2\u6237\u6d41\u5931\u98ce\u9669"],
-    [/instagram\.com\/reel\/dzdwa08yixg/u, "Instagram\uff1aAI \u65f6\u4ee3\u4f01\u4e1a\u5185\u90e8\u77e5\u8bc6\u6210\u4e3a\u5173\u952e\u8d44\u4ea7"],
-    [/foundra\.ai\/key-reads\/why-vertical-ai-is-the-real-moat/u, "Time Founders\uff1a\u5782\u76f4 AI \u6210\u4e3a\u9996\u6b21\u521b\u4e1a\u8005\u62a4\u57ce\u6cb3"],
-    [/latent\.space\/p\/cuspai/u, "Latent Space\uff1aCuspAI \u7528 AI \u641c\u7d22\u6f5c\u5728\u6750\u6599\u7a7a\u95f4"],
-    [/latent\.space\/p\/video-agents/u, "Latent Space\uff1a\u89c6\u9891 Agent \u6a21\u578b\u6210\u4e3a\u591a\u6a21\u6001\u5e94\u7528\u65b0\u65b9\u5411"],
-    [/blog\.mean\.ceo\/vertical-ai-startup-statistics-by-industry/u, "Mean CEO\uff1a\u6309\u884c\u4e1a\u62c6\u89e3\u5782\u76f4 AI \u521b\u4e1a\u516c\u53f8\u7edf\u8ba1"],
-    [/vntr\.vc\/media\/the-vertical-software-window/u, "VNTR\uff1a\u884c\u4e1a\u5782\u76f4 AI \u5de5\u5177\u5438\u5f15\u6218\u7565\u8d44\u672c"],
-    [/bizdata360\.com\/benefit-most-from-ai-workflow-automation/u, "Bizdata360\uff1a5 \u4e2a\u884c\u4e1a\u6700\u53ef\u80fd\u53d7\u76ca\u4e8e AI \u5de5\u4f5c\u6d41\u81ea\u52a8\u5316"],
-    [/databricks\.com\/blog\/state-ai-enterprise-adoption-growth-trends/u, "Databricks\uff1a\u4f01\u4e1a AI \u91c7\u7528\u4e0e\u589e\u957f\u8d8b\u52bf"],
-    [/sycamore\.so\/press-releases\/sycamore-raises-65m-seed/u, "Sycamore 融资 6500 万美元，建设企业 Agent 操作系统"],
-    [/infoworld\.com.*github-launches-agent-hq/u, "GitHub 推出 Agent HQ，统一管理 AI 编码代理"],
-    [/bcg\.com.*200-billion-dollar-ai-opportunity/u, "BCG：科技服务业存在 2000 亿美元 AI 机会"],
-    [/research\.ibm\.com.*agentic-scaling-laws/u, "IBM：企业 AI 采用需要可扩展的 Agent 逻辑"],
-    [/huggingface\.co\/blog\/ibm-research\/agent-logic/u, "IBM：企业 AI 采用需要可扩展的 Agent 逻辑"],
-    [/googlecloudpresscorner.*home-depot.*gemini-enterprise/u, "家得宝用 Google Cloud Gemini 企业版把客服响应提速四倍"],
-    [/techcrunch\.com.*49-us-ai-startups.*raised-100m/u, "美国已有 49 家 AI 初创公司融资超过 1 亿美元"],
-    [/friendli\.ai.*series-a-funding/u, "FriendliAI 融资 2000 万美元，押注 AI 推理基础设施"],
-    [/friendli\.ai.*raises-20m/u, "FriendliAI 融资 2000 万美元，押注 AI 推理基础设施"],
-    [/linkedin\.com.*ai-adoption-numbers/u, "企业 AI 采用数字：哪些场景真正落地"],
-    [/firecrawl\.dev.*ai-agent-sandbox/u, "AI Agent 沙盒：如何安全运行自主智能体"],
-    [/ai-sdk\.dev/u, "Vercel AI SDK：面向应用与 Agent 的 TypeScript 工具包"],
-    [/adya\.ai.*pricing/u, "Adya AI 企业定价：AI 采用回到预算与用量治理"],
-    [/youtube\.com.*tecd/u, "AI 编程智能体将如何改变开发者工作"],
-    [/northflank\.com.*sandbox-ai-agents/u, "2026 年 AI Agent 沙盒：MicroVM、gVisor 与隔离边界"],
-    [/youtube\.com.*71qv/u, "不理解 AI 评测，就不要急着构建 AI"],
-    [/menlovc\.com.*state-of-generative-ai-in-the-enterprise/u, "Menlo Ventures：2025 企业生成式 AI 状态报告"],
-    [/itnegotiationservices.*genai-contract-negotiation/u, "AI 与 GenAI 合同谈判顾问：企业采购进入 AI 议价流程"],
-    [/itnegotiationservices\.com\/services\/genai/u, "AI 与 GenAI 合同谈判顾问：企业采购进入 AI 议价流程"],
-    [/atonementlicensing.*ai-procurement-guide/u, "2026 企业 AI 采购指南：合同、定价与采购边界"],
-    [/github\.com.*anthropics.*claude-code.*v2\.1\.162/u, "Claude Code v2.1.162 发布"],
-    [/research\.google.*flood-resilience/u, "Google 开源水文建模框架，推进洪水韧性建设"],
-    [/holo31/u, "本地计算机使用 Agent Holo3.1 发布"],
-    [/anthropic\.com.*claude-opus-4-8/u, "Anthropic 发布 Claude Opus 4.8"],
-    [/linkedin\.com.*genai-aieconomics/u, "Menlo Ventures 报告：AI 战略与运营的三个要点"],
-    [/linkedin\.com.*menlo.*key-takeaways/u, "Menlo Ventures 报告：AI 战略与运营的三个要点"],
-    [/siliconangle.*vapi/u, "Vapi 融资 5000 万美元，推动语音 AI 更接近真人交互"],
-    [/ft\.com.*vonage/u, "Vonage 推出面向医疗行业的专用 AI Agent"],
-    [/zoneandco\.com.*tripadvisor-streamlines-global-procurement/u, "Tripadvisor 使用 Zone & Co 优化全球采购流程"],
-    [/github\.blog.*welcome-home-agents/u, "GitHub 推出 Agent HQ 统一管理编码智能体"],
-    [/metronome\.com.*hugging-face/u, "Hugging Face 使用 Metronome 支持计量计费"],
-    [/ycombinator\.com.*companies\/industry\/open-source/u, "Y Combinator 2026 开源创业公司索引"],
-    [/growthlist\.co.*yc-startups/u, "Y Combinator 创业公司完整索引"],
-    [/a16z\.com\/announcement\/investing-in-lio/u, "a16z 投资 Lio，押注垂直 AI 基础设施"],
-    [/gist\.github\.com\/anthonyalcaraz\/7b2e6e454cdbbb2a02d99a435e9a68d9/u, "Agent 基础设施：访问权限成为真正前沿"],
-    [/linkedin\.com\/pulse\/vertical-ai-investing-foundations-future/u, "Vertical AI：投资未来的基础设施"],
-    [/growthlist\.co\/ai-startups/u, "GrowthList：2026 年已融资 AI 创业公司数据库"],
-    [/partners\.wsj\.com\/broadcom\/powering-the-ai-revolution/u, "WSJ / Broadcom：下一代企业 AI 基础设施"],
-    [/partners\.wsj\.com\/capgemini\/the-business-of-ai/u, "WSJ / Capgemini：生成式 AI 如何改变软件工程"],
-    [/heliad\.com\/highlights\/lio-technologies-raises-30m/u, "Lio Technologies 融资 3000 万美元，用 Agentic AI 改造企业采购"],
-    [/tech\.eu.*archestraai-raises-10m/u, "Archestra.AI 融资 1000 万美元，解锁下一代 Agentic 用例"],
-    [/market\.us\/report\/voice-ai-agents-market/u, "语音 AI Agent 市场预计以 34.8% 年复合增长率扩张"],
-    [/cfodive\.com.*bristol-myers-ai-powered-procurement/u, "Bristol Myers 用 AI 改造采购流程"],
-    [/activantcapital\.com\/research\/voice-agents-2-0/u, "Activant：语音 Agent 2.0 正进入客户工作流"],
-    [/techtarget\.com.*merck-home-depot-tap-gemini-enterprise/u, "Merck 和 Home Depot 使用 Gemini Enterprise 开发 AI Agent"],
-    [/linkedin\.com\/posts\/ningz_/u, "用 VSCode 和 GitHub 进行 AI 软件开发"],
-    [/ithome\.com\/0\/961\/868/u, "Cursor 欧洲总部落子伦敦，SpaceX 获 600 亿美元收购选择权"],
-    [/x\.com\/testingcatalog\/status\/2064410031144014090/u, "Creatify Agent Wave 2：从广告制作到全自动跨平台发布"],
-    [/aarushgupta\.io\/posts\/kan-fpga/u, "基于 KAN 的 FPGA 超高速机器学习方案"],
-    [/sievo\.com\/resources\/ai-in-procurement/u, "Sievo：企业 AI 采购实战指南"],
-    [/the-decoder\.com\/apple-intelligence-gets-a-second-go/u, "Apple Intelligence 借助 Google 和 Nvidia 再获新生"],
-    [/huggingface\.co\/blog\/mishig\/spaces-agents-md/u, "Hugging Face：Agent 链式调用两个 Space 构建 3D 巴黎画廊"],
-    [/techcrunch\.com.*token-bill-comes-due/u, "AI token 账单压力迫使行业管理推理成本"],
-  ];
-  const match = rules.find(([pattern]) => pattern.test(normalized));
-  if (match) return match[1];
-  if (!hasCjk(title)) return translateEnglishTitle(title, sourceUrl);
-  if (/^the \$200 billion ai opportunity/iu.test(title)) return "BCG：科技服务业存在 2000 亿美元 AI 机会";
-  if (/^ai workflow builder/iu.test(title)) return "AI 工作流构建工具 Wireflow";
-  if (/^enterprise pricing/iu.test(title)) return "Adya AI 企业定价：AI 采用回到预算与用量治理";
-  if (/^introducing claude opus/iu.test(title)) return "Anthropic 发布 Claude Opus 4.8";
-  if (/^beyond llms/iu.test(title)) return "IBM：企业 AI 采用需要可扩展的 Agent 逻辑";
-  if (/^menlo ventures report/iu.test(title)) return "Menlo Ventures 报告：AI 战略与运营的三个要点";
-  if (/^vonage launches/iu.test(title)) return "Vonage 推出面向医疗行业的专用 AI Agent";
-  if (/^how /iu.test(title)) return title.replace(/^How /iu, "如何");
-  return title;
-}
 
 function frontstageSubjectOverride(sourceUrl = "", title = "") {
   const normalized = canonicalUrl(sourceUrl).toLowerCase();
@@ -2195,7 +1837,7 @@ function sourceValueFromEvidence(category, highlights = [], rawDisplayTitle = ""
 }
 
 function fallbackSourcePoints(rawDisplayTitle = "", sourceUrl = "", rawRef = "") {
-  const title = frontstageChineseTitle(rawDisplayTitle, sourceUrl);
+  const title = publicTitleCandidate(rawDisplayTitle, sourceUrl);
   const points = [];
   if (/procurement guide|采购指南|contracts.*pricing/iu.test(rawDisplayTitle)) {
     points.push("原始来源主题集中在企业 AI 采购中的合同、定价和采购边界。");
@@ -2627,12 +2269,11 @@ function corePoolCandidateFact(section = "", title = "", sourceUrl = "") {
   const excerpt = Array.isArray(keyExcerpts)
     ? keyExcerpts.map((item) => translatedSourcePoint(item?.text || "", item?.type || "")).find(Boolean)
     : "";
-  const urlFact = chineseFactFromSource(sourceTitleFromUrlOverride(sourceUrl) || title, sourceUrl);
+  const urlFact = chineseFactFromSource(title, sourceUrl);
   if (urlFact) return short(urlFact, 320);
   return short(
     excerpt
       || chineseFactFromSource(title, sourceUrl)
-      || frontstageChineseTitle(title, sourceUrl)
       || title,
     320
   );
@@ -2795,7 +2436,7 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
       }
       const promotion = candidatePromotionCopy(notPromotedByRef.get(ref) || {});
       const rawTitle = poolTitle(section);
-      const title = frontstageChineseTitle(rawTitle, sourceUrl) || translateEnglishTitle(rawTitle, sourceUrl) || rawTitle;
+      const title = publicTitleCandidate(rawTitle, sourceUrl);
       const category = poolCandidateCategory(section);
       const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
       const importanceScore = Number(poolValue(section, "importance_score")) || 0;
@@ -2916,7 +2557,7 @@ function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
       const card = cardsByUrl.get(canonicalUrl(sourceUrl));
       if (card) return card;
       const rawTitle = poolTitle(section);
-      const title = frontstageChineseTitle(rawTitle, sourceUrl) || translateEnglishTitle(rawTitle, sourceUrl) || rawTitle;
+      const title = publicTitleCandidate(rawTitle, sourceUrl);
       const category = poolCandidateCategory(section);
       const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
       const importanceScore = Number(poolValue(section, "importance_score")) || 0;
@@ -2993,7 +2634,7 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
       const base = card ? {
         ...card,
         linkedCardId: card.linkedCardId || card.id,
-        title: frontstageChineseTitle(rawTitle, sourceUrl) || translateEnglishTitle(rawTitle, sourceUrl) || card.title || rawTitle,
+        title: publicTitleCandidate(rawTitle, sourceUrl),
         originalTitle: rawTitle || card.originalTitle,
         sourceTitle: rawTitle || card.sourceTitle,
         rawTitle,
@@ -3006,7 +2647,7 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
         type: "enterprise_ai_fde_pool_item",
         category,
         categoryLabel: categoryLabels[category] || category,
-        title: frontstageChineseTitle(rawTitle, sourceUrl) || translateEnglishTitle(rawTitle, sourceUrl) || rawTitle,
+        title: publicTitleCandidate(rawTitle, sourceUrl),
         originalTitle: rawTitle,
         sourceTitle: rawTitle,
         rawTitle,
@@ -3102,11 +2743,8 @@ function cardFromFile(file, category) {
   const importanceScore = Number(nestedScalar(fm, "primary_raw", "importance_score") || scalar(fm, "importance_score") || 0) || 0;
   const explicitSourceTitle = scalar(fm, "source_title");
   const explicitDisplayTitle = nestedScalar(fm, "frontend", "displayTitle") || scalar(fm, "title") || "";
-  const rawDisplayTitle = frontstageTitle(explicitSourceTitle || rawTitle || explicitDisplayTitle || path.basename(file, ".md"), rawTitle);
-  const title = frontstageChineseTitle(explicitDisplayTitle || rawDisplayTitle, sourceUrl)
-    || safeFrontstageTitle(explicitDisplayTitle || rawDisplayTitle, sourceUrl)
-    || explicitDisplayTitle
-    || rawDisplayTitle;
+  const rawDisplayTitle = frontstageTitle(explicitSourceTitle || rawTitle || path.basename(file, ".md"), rawTitle);
+  const title = publicTitleCandidate(explicitSourceTitle || rawTitle || rawDisplayTitle, sourceUrl);
   const titleFact = sourceTitleDerivedFact(rawDisplayTitle || title, sourceUrl);
   let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl, [titleFact]);
   if (!originalHighlights.length) originalHighlights = markdownHighlights;
@@ -4299,7 +3937,7 @@ const enterpriseAiLensCandidates = buildEnterpriseAiLensCandidateItems(cards, ac
     ) ? card.visibleFragment : card.translatedFact,
   }))
   .map((card) => {
-    const literalTitle = sourceTitleLiteralTranslation(card.rawTitle || card.sourceTitle || card.originalTitle, card.sourceUrl);
+    const literalTitle = publicTitleCandidate(card.rawTitle || card.sourceTitle || card.originalTitle, card.sourceUrl);
     if (!literalTitle) return card;
     return {
       ...card,
@@ -4327,7 +3965,7 @@ const enterpriseAiFdePool = buildEnterpriseAiFdePoolItems(cards, activeDate)
     ) ? card.visibleFragment : card.translatedFact,
   }))
   .map((card) => {
-    const literalTitle = sourceTitleLiteralTranslation(card.rawTitle || card.sourceTitle || card.originalTitle, card.sourceUrl);
+    const literalTitle = publicTitleCandidate(card.rawTitle || card.sourceTitle || card.originalTitle, card.sourceUrl);
     if (!literalTitle) return card;
     return {
       ...card,
@@ -4340,7 +3978,7 @@ const enterpriseAiFdePool = buildEnterpriseAiFdePoolItems(cards, activeDate)
   .filter(hasEnterpriseImplementationSignal)
   .filter((card) => !isWeakSubject(card.subject));
 const enterpriseAiTransformation = buildEnterpriseAiTransformation(enterpriseAiFdePool, [], activeDate);
-const publicEnterpriseAiFdePool = enterpriseAiFdePool.map(({ rawTitle, modelGeneratedTitle, ...item }) => item);
+const publicEnterpriseAiFdePool = enterpriseAiFdePool.map(({ rawTitle, ...item }) => item);
 const trendAssets = buildTrendAssets(activeDate, cards);
 const payload = {
   meta: {

@@ -3,6 +3,7 @@ import path from "node:path";
 
 const root = process.cwd();
 const jsonPath = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
+const sourceTitleTranslationsFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
 
 const forbiddenKeys = new Set([
   "eventLine",
@@ -37,6 +38,31 @@ const forbiddenTextPatterns = [
 function rel(file) {
   return path.relative(root, file).replace(/\\/g, "/");
 }
+
+function titleTranslationKey(value = "") {
+  return cleanOriginalTitle(value).toLowerCase().replace(/\s+/gu, " ").trim();
+}
+
+function loadSourceTitleTranslations() {
+  if (!fs.existsSync(sourceTitleTranslationsFile)) return new Map();
+  try {
+    const json = JSON.parse(fs.readFileSync(sourceTitleTranslationsFile, "utf8"));
+    const entries = Array.isArray(json) ? json : (Array.isArray(json.translations) ? json.translations : []);
+    const map = new Map();
+    for (const entry of entries) {
+      const sourceTitle = String(entry?.sourceTitle || "").trim();
+      const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
+      if (!sourceTitle || !zhTitle) continue;
+      map.set(titleTranslationKey(sourceTitle), zhTitle);
+    }
+    return map;
+  } catch (error) {
+    console.error(JSON.stringify({ ok: false, status: "failed", reason: `invalid ${rel(sourceTitleTranslationsFile)}: ${error.message}` }, null, 2));
+    process.exit(1);
+  }
+}
+
+const sourceTitleTranslations = loadSourceTitleTranslations();
 
 function normalizedComparableText(value = "") {
   return String(value || "")
@@ -152,24 +178,11 @@ function subjectHasBusinessDisplayNoise(value = "") {
     || /^(TechCrunch|Techcrunch|Arstechnica|Ars Technica|MarkTechPost|Cfodive|Artificial Intelligence News)$/iu.test(String(value || "").trim());
 }
 
-function titleNeedsTranslation(value = "") {
-  const text = String(value || "").trim();
-  const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
-  const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
-  // A Chinese subject prefix does not make an English source title display-ready.
-  if (hanCount >= 5 && /(使用|发布|融资|完成|推出|开发|应用|原文|用途见原文)/u.test(text)) return false;
-  const sourceLikeEnglish = /\b(announces?|launches?|raises?|raised|secures?|secured|showcases?|success of|at scale|with new|for enterprise|startup|pre-seed|series\s+[a-z]|funding|financing|case study|report|guide|complete|introducing)\b/iu.test(text);
-  if (text.length > 18 && hanCount === 0) return true;
-  if (latinWords.length >= 7 && hanCount < 10) return true;
-  if (sourceLikeEnglish && latinWords.length >= 5 && hanCount < 14) return true;
-  return false;
-}
 
 function publicContentNeedsTranslation(value = "") {
   const text = String(value || "").trim();
   const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
-  // Mixed Chinese/English public text still needs enough Chinese source-facing content.
   if (text.length > 70 && latinWords.length >= 10 && hanCount < 10) return true;
   if (text.length > 120 && latinWords.length >= 14 && hanCount < 18) return true;
   return false;
@@ -257,11 +270,54 @@ function top10FactIsWeak(card = {}) {
 function publicTitleIsGeneric(value = "") {
   const text = String(value || "").trim();
   if (/\b(?:AI business signal|Artificialintelligence-News|Ltd\.)\b/iu.test(text)) return true;
+  if (titleLooksLikeGeneratedTemplate(text)) return true;
   if (/的公开案例显示|公开材料显示|原文称|AI 正在进入客户、采购、商品内容或内部工作流/iu.test(text)) return true;
   if (/^[A-Za-z0-9\u4e00-\u9fff][A-Za-z0-9\u4e00-\u9fff .&'’()-]{1,60}\s+(?:获得|获)\s*\$?\d[\d.,]*(?:\s?(?:M|B|million|billion|万|亿|万美元))?\s*融资/iu.test(text)) {
     return false;
   }
   return /案例：\s*AI\s*进入|获得\s*\$|发布\s*AI\s*能力|把\s*AI\s*用进|信号：\s*AI\s*进入|推出\s*Agent\s*工作流能力，切入/iu.test(text);
+}
+
+function titleLooksLikeGeneratedTemplate(title = "") {
+  return /\u8bb0\u5f55\u4f01\u4e1a\u5e94\u7528\u573a\u666f|\u516c\u5f00\u6750\u6599\u663e\u793a|\u5546\u4e1a\u4fe1\u53f7/iu.test(String(title || ""));
+}
+
+function cleanOriginalTitle(value = "") {
+  return String(value || "")
+    .replace(/\s*\|\s*[^|]{2,60}$/u, "")
+    .replace(/\s+-\s*(TechCrunch|SiliconANGLE|BusinessWire|PR Newswire|Markets Insider|CFO Dive|Google Cloud Press Corner)$/iu, "")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function hasCjk(value = "") {
+  return /[\u4e00-\u9fff]/u.test(String(value || ""));
+}
+
+function sourceTitleNeedsChineseTranslation(value = "") {
+  const text = cleanOriginalTitle(value);
+  const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
+  const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+  return text.length > 12 && hanCount < 4 && latinWords.length >= 3;
+}
+
+function translatedSourceTitle(value = "") {
+  return cleanOriginalTitle(sourceTitleTranslations.get(titleTranslationKey(value)) || "");
+}
+
+function titleBackedByOriginalSource(card = {}) {
+  const title = cleanOriginalTitle(card.title || card.displayTitle);
+  if (!title || titleLooksLikeGeneratedTemplate(title)) return false;
+  return [card.sourceTitle, card.originalTitle]
+    .map(cleanOriginalTitle)
+    .filter((value) => value && !titleLooksLikeGeneratedTemplate(value))
+    .some((sourceTitle) => {
+      if (sourceTitleNeedsChineseTranslation(sourceTitle)) {
+        const translated = translatedSourceTitle(sourceTitle);
+        return translated && hasCjk(title) && title === translated;
+      }
+      return title === sourceTitle;
+    });
 }
 
 function publicCardFactIsWeak(card = {}) {
@@ -293,8 +349,8 @@ function checkPublicCardContract(card = {}, label = "public card") {
   if (isActiveDateItem && publicTitleIsGeneric(card.title)) {
     issues.push(`${label} ${id} exposes generic generated title: ${card.title}`);
   }
-  if (isActiveDateItem && titleNeedsTranslation(card.title)) {
-    issues.push(`${label} ${id} has untranslated public title: ${card.title}`);
+  if (isActiveDateItem && !titleBackedByOriginalSource(card)) {
+    issues.push(`${label} ${id} public title must match original source title or registered Chinese translation; got ${card.title || "(missing title)"}`);
   }
   if (publicCardFactIsWeak(card)) {
     issues.push(`${label} ${id} has weak news fact; use source-derived facts instead of links or generic fallback`);
@@ -392,8 +448,8 @@ if (!Array.isArray(payload.top10)) {
     if (item.displayTitle && item.title !== item.displayTitle) {
       issues.push(`payload.top10 card ${item.id || "(missing id)"} public title does not match displayTitle`);
     }
-    if (titleNeedsTranslation(item.title)) {
-      issues.push(`payload.top10 card ${item.id || "(missing id)"} has untranslated public title: ${item.title}`);
+    if (!titleBackedByOriginalSource(item)) {
+      issues.push(`payload.top10 card ${item.id || "(missing id)"} public title must match original source title or registered Chinese translation; got ${item.title || "(missing title)"}`);
     }
     if (top10FactIsWeak(item)) {
       issues.push(`payload.top10 card ${item.id || "(missing id)"} has weak news fact; use source-derived facts instead of links or generic fallback`);
@@ -426,8 +482,8 @@ for (const card of cards) {
   if (card.date === activeDate && sourceUrlIsRootLike(card.sourceUrl)) {
     issues.push(`card ${card.id || "(missing id)"} uses root/index source URL; resolve to a dated article or first-party event before frontstage publication`);
   }
-  if (card.date === activeDate && titleNeedsTranslation(card.title)) {
-    issues.push(`card ${card.id || "(missing id)"} has untranslated frontstage title: ${card.title}`);
+  if (card.date === activeDate && !titleBackedByOriginalSource(card)) {
+    issues.push(`card ${card.id || "(missing id)"} public title must match original source title or registered Chinese translation; got ${card.title || "(missing title)"}`);
   }
   if (card.date === activeDate) {
     for (const [field, value] of [
@@ -483,8 +539,8 @@ for (const candidate of payload.corePoolCandidates || []) {
   if (candidate.date === activeDate && subjectIsGeneric(candidate.subject)) {
     issues.push(`core pool candidate ${candidate.id || "(missing id)"} has generic frontstage subject: ${candidate.subject}`);
   }
-  if (candidate.date === activeDate && titleNeedsTranslation(candidate.title)) {
-    issues.push(`core pool candidate ${candidate.id || "(missing id)"} has untranslated frontstage title: ${candidate.title}`);
+  if (candidate.date === activeDate && !titleBackedByOriginalSource(candidate)) {
+    issues.push(`core pool candidate ${candidate.id || "(missing id)"} public title must match original source title or registered Chinese translation; got ${candidate.title || "(missing title)"}`);
   }
   if (candidate.date === activeDate) {
     for (const [field, value] of [

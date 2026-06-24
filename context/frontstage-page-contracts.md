@@ -32,7 +32,7 @@ Business Signals must keep the daily Top10 as the default primary view. It may p
 | Scope | Version | Meaning |
 |---|---|---|
 | Main website | `SITE-V3.3.8.3` | Current GitHub Pages frontstage release. |
-| Business Signals column | `BSIG-V1.1.1-core-source-hygiene` | Keeps Top10 as the primary business-signal desk, keeps the 企业AI化 secondary lens, and applies Core Pool source hygiene gates. |
+| Business Signals column | `BSIG-V1.1.2-source-title-translation-lock` | Keeps Top10 as the primary business-signal desk, keeps the 企业AI化 secondary lens, applies Core Pool source hygiene gates, and locks public titles to source titles or registered Chinese translations of English source titles. |
 | Enterprise AI / FDE lens | `EAI-V1.1.0-fde-lens-pool` | Boss-facing implementation lens backed by the independent FDE Lens Pool; not a fourth Card type. |
 | Intelligence Map column | `IMAP-V1.2.0-opportunity-radar` | Keeps relationship graph on graph tags and renders the source-backed Entry Point Map and Product Pain Map from `opportunity_signals`, governed by the weekly opportunity radar skill. |
 

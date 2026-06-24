@@ -1276,28 +1276,6 @@ function cleanSourceEventTitle(title = "") {
   return text.slice(0, 120);
 }
 
-function publicSignalTitle({ type, company, scenario, amount, fundingAngle, text, sourceTitle }) {
-  const owner = publicCardCopy(company || "未标注主体");
-  const lane = publicCardCopy(fundingAngle || scenario || "企业业务流程");
-  const signalText = String(text || "");
-  const sourceEventTitle = cleanSourceEventTitle(sourceTitle);
-  if (type === "funding") {
-    const amountText = amount ? `${amount} ` : "";
-    return `${owner} 获得${amountText}融资，用于${lane}`;
-  }
-  if (type === "product_service") {
-    if (/\b(inference|model|serverless|compute|hosting|gpu|infrastructure|platform)\b|妯″瀷|绠楀姏|閮ㄧ讲/iu.test(signalText)) {
-      return `${owner} 发布 AI 平台能力，面向${lane}`;
-    }
-    if (/\b(agent|workflow|assistant|orchestrat|automation)\b|Agent|workflow/iu.test(signalText)) {
-      return `${owner} 推出 Agent 工作流，面向${lane}`;
-    }
-    return `${owner} 发布 AI 产品，面向${lane}`;
-  }
-  if (hasCjk(sourceEventTitle)) return sourceEventTitle;
-  return `${owner} 记录企业应用场景：${publicCardCopy(scenario || "企业业务流程")}`;
-}
-
 function isNonCommercialPolicyOrEthicsSignal(section) {
   const text = [
     poolTitle(section),
@@ -1349,15 +1327,10 @@ function autoSignalSpec(poolRef, section, index) {
   const prefix = `SIG-${date.replaceAll("-", "")}-A${String(index).padStart(2, "0")}`;
   const fundingAngle = fundingAngleFromScenario(scenario);
   const originalTitle = poolTitle(section);
-  const fallbackTitle = type === "funding"
-    ? `${company} 融资`
-    : `${company} 商业信号`;
   const sourceTitle = originalTitle || "";
   const sourceEventTitle = cleanSourceEventTitle(sourceTitle);
-  const title = (hasCjk(sourceEventTitle) ? sourceEventTitle : "")
-    || publicSignalTitle({ type, company, scenario, amount, fundingAngle, text, sourceTitle })
-    || fallbackTitle
-    || "";
+  const title = sourceEventTitle;
+  if (!title) return null;
   const sourcePoints = sourcePointsFromSection(section);
   const sourceExcerpt = sourceExcerptFromSection(section, sourcePoints);
   const fallbackEventLine = type === "funding"
