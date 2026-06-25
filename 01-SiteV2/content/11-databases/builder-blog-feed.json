@@ -1,10 +1,12 @@
 {
-  "generatedAt": "2026-06-24T05:12:11.036Z",
+  "generatedAt": "2026-06-25T01:37:59.988Z",
   "stats": {
-    "blogsBuilt": 7,
-    "totalItems": 28,
+    "blogsBuilt": 6,
+    "totalItems": 24,
     "sourceCount": 8,
-    "errors": []
+    "errors": [
+      "tigera-blog: HTTP 415"
+    ]
   },
   "blogs": [
     {
@@ -13,9 +15,29 @@
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
         {
+          "id": "https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything",
+          "text": "simonw/browser-compat-db",
+          "summary": "<p><strong><a href=\"https://github.com/simonw/browser-compat-db\">simonw/browser-compat-db</a></strong></p>\nInspired by Mozilla's <a href=\"https://developer.mozilla.org/en-US/blog/introducing-mdn-mcp-server/\">new MDN MCP service</a> - <a href=\"https://github.com/mdn/mcp\">source code here</a> - I deci",
+          "createdAt": "2026-06-24T23:59:03+00:00",
+          "url": "https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything",
+          "text": "Quoting Tom MacWright",
+          "summary": "<blockquote cite=\"https://macwright.com/2026/06/24/accidental-anonymity.html\"><p>In the last few months, I've started to see [job applications] that were clearly cowritten by an LLM, link to an LLM-generated portfolio site, which then links to LLM-generated GitHub projects, with purely LLM-generated",
+          "createdAt": "2026-06-24T18:13:51+00:00",
+          "url": "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
           "id": "https://simonwillison.net/2026/Jun/23/datasette/#atom-everything",
           "text": "datasette 1.0a35",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a35\">datasette 1.0a35</a></p>\n        <p>I'll write more about this one tomorrow, but it's a big release. Three highlights from the release notes:</p>\n<blockquote>\n<ul>\n<li>New \"Create table\" interface in the d",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/simonw/datasette/releases/tag/1.0a35\">datasette 1.0a35</a></p>\n        <p>I'll write more about this one soon, but it's a big release. Three highlights from the release notes:</p>\n<blockquote>\n<ul>\n<li>New \"Create table\" interface in the datab",
           "createdAt": "2026-06-23T21:34:37+00:00",
           "url": "https://simonwillison.net/2026/Jun/23/datasette/#atom-everything",
           "likes": 0,
@@ -111,26 +133,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything",
-          "text": "GLM-5.2 is probably the most powerful text-only open weights LLM",
-          "summary": "<p>Chinese AI lab <a href=\"https://z.ai/\">Z.ai</a> released GLM-5.2 <a href=\"https://x.com/Zai_org/status/2065704919299235870\">to their coding plan subscribers</a> on June 13th, and then yesterday (June 16th) released the full open weights under an MIT license. Similar in size to their previous GLM-",
-          "createdAt": "2026-06-17T23:58:39+00:00",
-          "url": "https://simonwillison.net/2026/Jun/17/glm-52/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything",
-          "text": "Quoting Charity Majors",
-          "summary": "<blockquote cite=\"https://charitydotwtf.substack.com/p/ai-demands-more-engineering-discipline#footnote-2\"><p>What happened in 2025 was this: <strong>the economics of code production were turned upside down</strong>. Instead of being very hard, time-consuming, and expensive to generate code, it becam",
-          "createdAt": "2026-06-17T17:12:41+00:00",
-          "url": "https://simonwillison.net/2026/Jun/17/charity-majors/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -155,16 +157,6 @@
           "summary": "This post was originally an op-ed co-authored with Kevin Xu of Interconnected for a general, non-technical audience.",
           "createdAt": "Fri, 19 Jun 2026 13:02:47 GMT",
           "url": "https://www.interconnects.ai/p/banning-open-source-ai-would-be-a",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.interconnects.ai/p/state-of-the-blog-mid-2026",
-          "text": "State of the blog, mid-2026",
-          "summary": "About 3 years since I started writing weekly.",
-          "createdAt": "Wed, 17 Jun 2026 14:29:06 GMT",
-          "url": "https://www.interconnects.ai/p/state-of-the-blog-mid-2026",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -221,6 +213,16 @@
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
         {
+          "id": "https://tldr.tech/ai/2026-06-24",
+          "text": "Claude Tag 💬, Seedance 2.5 🎥, Mistral OCR 4 🧠",
+          "summary": "",
+          "createdAt": "Wed, 24 Jun 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-06-24",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
           "id": "https://tldr.tech/ai/2026-06-23",
           "text": "SpaceX Colossus deal 🚀, GPT-5.5 Cyber launch 🛡️, Codex as workspace 🤖",
           "summary": "",
@@ -249,43 +251,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-06-18",
-          "text": "ChatGPT marketshare drops 📉, Vercel eve 🤖, Replit links Claude 🔌",
-          "summary": "",
-          "createdAt": "Thu, 18 Jun 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-06-18",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        }
-      ]
-    },
-    {
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "bio": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "tweets": [
-        {
-          "id": "https://www.tigera.io/blog/how-lynx-works-a-technical-walkthrough/",
-          "text": "How Lynx Works: A Technical Walkthrough",
-          "summary": "We launched Lynx this week. Instead of restating the pitch, I want to explain how it&#8217;s built and why we made the architectural choices we did. If you run Kubernetes and you&#8217;re starting to put...\nThe post How Lynx Works: A Technical Walkthrough appeared first on Tigera – Creator of Calico",
-          "createdAt": "Thu, 18 Jun 2026 17:19:30 +0000",
-          "url": "https://www.tigera.io/blog/how-lynx-works-a-technical-walkthrough/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.tigera.io/blog/why-we-built-lynx-bringing-control-to-the-age-of-ai-agents/",
-          "text": "Why We Built Lynx: Bringing Control to the Age of AI Agents",
-          "summary": "For a decade, one idea has guided everything we&#8217;ve built at Tigera: How do you secure a dynamic system with a lot of moving parts that is changing rapidly, with a programmatic approach? Calico has...\nThe post Why We Built Lynx: Bringing Control to the Age of AI Agents appeared first on Tigera ",
-          "createdAt": "Wed, 17 Jun 2026 13:00:22 +0000",
-          "url": "https://www.tigera.io/blog/why-we-built-lynx-bringing-control-to-the-age-of-ai-agents/",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -294,6 +259,16 @@
       "handle": "dataiku.com",
       "bio": "AI governance, enterprise AI platform deployment, MLOps, analytics, agent orchestration.",
       "tweets": [
+        {
+          "id": "https://www.dataiku.com/stories/blog/dataiku-named-gartner-magic-quadrant-leader-fifth-time",
+          "text": "Dataiku named a Gartner Magic Quadrant Leader for 5th consecutive year",
+          "summary": " \r\n    \r\n \r\nFor the fifth consecutive year, Dataiku has been named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Platforms for Data Science and Machine Learning, once again recognized in the Leader quadrant for both “Completeness of Vision” and “Ability to Execute.” ",
+          "createdAt": "Wed, 24 Jun 2026 15:16:56 GMT",
+          "url": "https://www.dataiku.com/stories/blog/dataiku-named-gartner-magic-quadrant-leader-fifth-time",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://www.dataiku.com/stories/blog/ai-explainability-for-financial-services",
           "text": "AI explainability in finance: auditable models, GenAI, and agents",
@@ -310,26 +285,6 @@
           "summary": " \r\n    \r\n \r\nMost vendors claim their agentic AI platform is enterprise-grade. In a market where the term has lost almost all meaning, the real test is not the demo. It is what happens after, when agents meet real data, real governance requirements, and the organizational complexity that no sandbox c",
           "createdAt": "Fri, 19 Jun 2026 06:15:58 GMT",
           "url": "https://www.dataiku.com/stories/blog/agentic-ai-tools-for-enterprises",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.dataiku.com/stories/blog/governance-acceleration",
-          "text": "Governance as acceleration: data proves it’s not a speed bump",
-          "summary": " \r\n    \r\n \r\nFor years, the enterprise AI governance conversation has been shaped by a quiet assumption: Governance is the thing that slows AI down. This may look like the review cycle that delays the launch, committee that questions the model, or even documentation requirement that sits between a wo",
-          "createdAt": "Wed, 17 Jun 2026 13:00:00 GMT",
-          "url": "https://www.dataiku.com/stories/blog/governance-acceleration",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.dataiku.com/stories/blog/generative-ai-governance-framework",
-          "text": "Generative AI governance framework: building responsible AI systems",
-          "summary": " \r\n    \r\n \r\nGenerative AI is no longer a pilot that leaders can observe from a distance. It is in contact centers, developer workflows, reporting layers, and autonomous agents acting on behalf of the business. As BARC's research on modernizing governance for the era of agentic AI shows, the stakes r",
-          "createdAt": "Wed, 17 Jun 2026 12:19:13 GMT",
-          "url": "https://www.dataiku.com/stories/blog/generative-ai-governance-framework",
           "likes": 0,
           "retweets": 0,
           "replies": 0
