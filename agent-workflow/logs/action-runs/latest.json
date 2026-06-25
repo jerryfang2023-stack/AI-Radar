@@ -1,21 +1,38 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-23T11:42:54.866Z",
-  "date": "2026-06-23",
-  "action": "Release Intelligence Map opportunity radar",
-  "action_status": "unregistered",
+  "generated_at": "2026-06-25T05:14:28.480Z",
+  "date": "2026-06-25",
+  "action": "Daily business-signal production",
+  "action_status": "current",
   "record_level": "required",
-  "trigger": "manual",
-  "status": "success",
-  "summary": "Released SITE-V3.3.8.3 / IMAP-V1.2.0-opportunity-radar, added the weekly opportunity radar updater skill, pushed PR #129, and deployed through GitHub Pages run 28023623271.",
+  "trigger": "codex_repair",
+  "status": "passed",
+  "summary": "Repaired Business Signals source-artifact Raw selection so RSS fills after higher-signal sources, restored 2026-06-25 Raw/Pool/Card/Top10, and tightened frontstage date gates.",
   "contexts": [],
-  "changed_files": [],
-  "outputs": [],
-  "checks": [],
+  "changed_files": [
+    "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
+    "agent-workflow/tools/assert-business-signals-frontstage.mjs",
+    "agent-workflow/tools/assert-v3-source-first-frontstage.mjs",
+    "agent-workflow/tools/frontstage-regression-gate.mjs"
+  ],
+  "outputs": [
+    "01-SiteV2/content/01-raw/2026-06-25-raw-candidates.md",
+    "01-SiteV2/content/02-pool/2026-06-25-pool-candidates.md",
+    "01-SiteV2/content/04-business-signals/signals/2026-06-25-signals.md",
+    "01-SiteV2/site/data/v3-data-observation-desk.json"
+  ],
+  "checks": [
+    "monitor QC passed raw=187 pool=95 score=91.18",
+    "business frontstage gate passed",
+    "pre-commit production chain passed",
+    "daily supervision warning only for local dirty sync"
+  ],
   "issues": [],
   "risks": [],
   "lessons": [],
   "reusable_rules": [],
   "retired_flags": [],
-  "notes": []
+  "notes": [
+    "Hermes inbox resolved with fix_commit=pending and prevention=gate"
+  ]
 }

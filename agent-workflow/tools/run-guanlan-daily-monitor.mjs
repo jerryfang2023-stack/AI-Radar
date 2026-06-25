@@ -4190,10 +4190,12 @@ function normalize(items) {
       pickedKeys.add(key);
       count -= 1;
     }
-  };  take("gdelt");
+  };
+  take("gdelt");
   take("keyword-search");
   take("hn", Math.min(hnTarget, 8));
   take("aihot");
+  take("rss-feed");
 
   for (const item of normalized) {
     if (picked.length >= target) break;

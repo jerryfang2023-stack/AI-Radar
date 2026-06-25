@@ -18,8 +18,8 @@ function rel(file) {
   return path.relative(root, file).replace(/\\/g, "/");
 }
 
-function runGate(id, label, script) {
-  const result = spawnSync(process.execPath, [script], {
+function runGate(id, label, script, extraArgs = []) {
+  const result = spawnSync(process.execPath, [script, ...extraArgs], {
     cwd: root,
     encoding: "utf8",
     windowsHide: true,
@@ -72,9 +72,10 @@ function markdownCode(text = "") {
   return ["```text", body.slice(0, 12000), "```"].join("\n");
 }
 
+const gateArgs = [`--date=${date}`];
 const gates = [
-  runGate("source_first", "V3 source-first frontstage gate", "agent-workflow/tools/assert-v3-source-first-frontstage.mjs"),
-  runGate("frontstage_regression", "Frontstage regression gate", "agent-workflow/tools/frontstage-regression-gate.mjs"),
+  runGate("source_first", "V3 source-first frontstage gate", "agent-workflow/tools/assert-v3-source-first-frontstage.mjs", gateArgs),
+  runGate("frontstage_regression", "Frontstage regression gate", "agent-workflow/tools/frontstage-regression-gate.mjs", gateArgs),
 ];
 
 const failed = gates.filter((gate) => gate.status !== "passed");
