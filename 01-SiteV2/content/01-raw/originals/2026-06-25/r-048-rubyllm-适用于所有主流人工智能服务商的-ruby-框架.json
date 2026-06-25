@@ -1,0 +1,292 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-048",
+  "title": "RubyLLM：适用于所有主流人工智能服务商的 Ruby 框架",
+  "original_url": "https://rubyllm.com/",
+  "canonical_url": "https://rubyllm.com",
+  "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "official_index_or_directory",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": true,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-06-24T16:12:21.507Z",
+  "collected_at": "2026-06-25T03:26:00.548Z",
+  "language": "mixed",
+  "full_text": "Copy page\nStar\nA single, beautiful Ruby framework for all major AI providers. Easily build chatbots, AI agents, RAG applications, content generators, and every AI workflow you can think of.\nGet started GitHub\nBattle tested at - Fully private work AI\nBuild a working Ruby AI chat in two minutes\nUsing RubyLLM? Share your story ! Takes 5 minutes.\nWhy RubyLLM?\nEvery AI provider ships their own bloated client. Different APIs. Different response formats. Different conventions. It’s exhausting.\nRubyLLM gives you one beautiful framework for all of them. Same interface whether you’re using GPT, Claude, or your local Ollama. Just three dependencies: Faraday, Zeitwerk, and Marcel. That’s it.\nShow me the code\n# Just ask questions\nchat = RubyLLM . chat\nchat . ask \"What's the best way to learn Ruby?\"\n# Analyze any file type\nchat . ask \"What's in this image?\" , with: \"ruby_conf.jpg\"\nchat . ask \"What's happening in this video?\" , with: \"video.mp4\"\nchat . ask \"Describe this meeting\" , with: \"meeting.wav\"\nchat . ask \"Summarize this document\" , with: \"contract.pdf\"\nchat . ask \"Explain this code\" , with: \"app.rb\"\n# Multiple files at once\nchat . ask \"Analyze these files\" , with: [ \"diagram.png\" , \"report.pdf\" , \"notes.txt\" ]\n# Stream responses\nchat . ask \"Tell me a story about Ruby\" do | chunk |\nprint chunk . content\nend\n# Generate images\nRubyLLM . paint \"a sunset over mountains in watercolor style\"\n# Create embeddings\nRubyLLM . embed \"Ruby is elegant and expressive\"\n# Transcribe audio to text\nRubyLLM . transcribe \"meeting.wav\"\n# Moderate content for safety\nRubyLLM . moderate \"Check if this text is safe\"\n# Let AI use your code\nclass Weather < RubyLLM :: Tool\ndesc \"Get current weather\"\ndef execute ( latitude :, longitude :)\nurl = \"https://api.open-meteo.com/v1/forecast?latitude= #{ latitude } &longitude= #{ longitude } &current=temperature_2m,wind_speed_10m\"\nJSON . parse ( Faraday . get ( url ). body )\nend\nend\nchat . with_tool ( Weather ). ask \"What's the weather in Berlin?\"\n# Define an agent with instructions + tools\nclass WeatherAssistant < RubyLLM :: Agent\nmodel \"gpt-5-nano\"\ninstructions \"Be concise and always use tools for weather.\"\ntools Weather\nend\nWeatherAssistant . new . ask \"What's the weather in Berlin?\"\n# Get structured output\nclass ProductSchema < RubyLLM :: Schema\nstring :name\nnumber :price\narray :features do\nstring\nend\nend\nresponse = chat . with_schema ( ProductSchema ). ask \"Analyze this product\" , with: \"product.txt\"\nFeatures\nChat: Conversational AI with RubyLLM.chat\nVision: Analyze images and videos\nAudio: Transcribe and understand speech with RubyLLM.transcribe\nDocuments: Extract from PDFs, CSVs, JSON, any file type\nImage generation: Create images with RubyLLM.paint\nEmbeddings: Generate embeddings with RubyLLM.embed\nModeration: Content safety with RubyLLM.moderate\nTools: Let AI call your Ruby methods\nAgents: Reusable assistants with RubyLLM::Agent\nStructured output: JSON schemas that just work\nStreaming: Real-time responses with blocks\nRails: ActiveRecord integration with acts_as_chat\nAsync: Fiber-based concurrency\nModel registry: 800+ models with capability detection and pricing\nExtended thinking: Control, view, and persist model deliberation\nProviders: OpenAI, xAI, Anthropic, Gemini, VertexAI, Bedrock, DeepSeek, Mistral, Ollama, OpenRouter, Perplexity, GPUStack, and any OpenAI-compatible API\nInstallation\nAdd to your Gemfile:\ngem 'ruby_llm'\nThen bundle install .\nConfigure your API keys:\n# config/initializers/ruby_llm.rb\nRubyLLM . configure do | config |\nconfig . openai_api_key = ENV [ 'OPENAI_API_KEY' ]\nend\nRails\n# Install Rails Integration\nbin/rails generate ruby_llm:install\nbin/rails db:migrate\nbin/rails ruby_llm:load_models # v1.13+\n# Add Chat UI (optional)\nbin/rails generate ruby_llm:chat_ui\nclass Chat < ApplicationRecord\nacts_as_chat\nend\nchat = Chat . create! model: \"claude-sonnet-4\"\nchat . ask \"What's in this file?\" , with: \"report.pdf\"\nVisit http://localhost:3000/chats for a ready-to-use chat interface!",
+  "clean_text": "Copy page\nStar\nA single, beautiful Ruby framework for all major AI providers. Easily build chatbots, AI agents, RAG applications, content generators, and every AI workflow you can think of.\nGet started GitHub\nBattle tested at - Fully private work AI\nBuild a working Ruby AI chat in two minutes\nUsing RubyLLM? Share your story ! Takes 5 minutes.\nWhy RubyLLM?\nEvery AI provider ships their own bloated client. Different APIs. Different response formats. Different conventions. It’s exhausting.\nRubyLLM gives you one beautiful framework for all of them. Same interface whether you’re using GPT, Claude, or your local Ollama. Just three dependencies: Faraday, Zeitwerk, and Marcel. That’s it.\nShow me the code\n# Just ask questions\nchat = RubyLLM . chat\nchat . ask \"What's the best way to learn Ruby?\"\n# Analyze any file type\nchat . ask \"What's in this image?\" , with: \"ruby_conf.jpg\"\nchat . ask \"What's happening in this video?\" , with: \"video.mp4\"\nchat . ask \"Describe this meeting\" , with: \"meeting.wav\"\nchat . ask \"Summarize this document\" , with: \"contract.pdf\"\nchat . ask \"Explain this code\" , with: \"app.rb\"\n# Multiple files at once\nchat . ask \"Analyze these files\" , with: [ \"diagram.png\" , \"report.pdf\" , \"notes.txt\" ]\n# Stream responses\nchat . ask \"Tell me a story about Ruby\" do | chunk |\nprint chunk . content\nend\n# Generate images\nRubyLLM . paint \"a sunset over mountains in watercolor style\"\n# Create embeddings\nRubyLLM . embed \"Ruby is elegant and expressive\"\n# Transcribe audio to text\nRubyLLM . transcribe \"meeting.wav\"\n# Moderate content for safety\nRubyLLM . moderate \"Check if this text is safe\"\n# Let AI use your code\nclass Weather < RubyLLM :: Tool\ndesc \"Get current weather\"\ndef execute ( latitude :, longitude :)\nurl = \"https://api.open-meteo.com/v1/forecast?latitude= #{ latitude } &longitude= #{ longitude } &current=temperature_2m,wind_speed_10m\"\nJSON . parse ( Faraday . get ( url ). body )\nend\nend\nchat . with_tool ( Weather ). ask \"What's the weather in Berlin?\"\n# Define an agent with instructions + tools\nclass WeatherAssistant < RubyLLM :: Agent\nmodel \"gpt-5-nano\"\ninstructions \"Be concise and always use tools for weather.\"\ntools Weather\nend\nWeatherAssistant . new . ask \"What's the weather in Berlin?\"\n# Get structured output\nclass ProductSchema < RubyLLM :: Schema\nstring :name\nnumber :price\narray :features do\nstring\nend\nend\nresponse = chat . with_schema ( ProductSchema ). ask \"Analyze this product\" , with: \"product.txt\"\nFeatures\nChat: Conversational AI with RubyLLM.chat\nVision: Analyze images and videos\nAudio: Transcribe and understand speech with RubyLLM.transcribe\nDocuments: Extract from PDFs, CSVs, JSON, any file type\nImage generation: Create images with RubyLLM.paint\nEmbeddings: Generate embeddings with RubyLLM.embed\nModeration: Content safety with RubyLLM.moderate\nTools: Let AI call your Ruby methods\nAgents: Reusable assistants with RubyLLM::Agent\nStructured output: JSON schemas that just work\nStreaming: Real-time responses with blocks\nRails: ActiveRecord integration with acts_as_chat\nAsync: Fiber-based concurrency\nModel registry: 800+ models with capability detection and pricing\nExtended thinking: Control, view, and persist model deliberation\nProviders: OpenAI, xAI, Anthropic, Gemini, VertexAI, Bedrock, DeepSeek, Mistral, Ollama, OpenRouter, Perplexity, GPUStack, and any OpenAI-compatible API\nInstallation\nAdd to your Gemfile:\ngem 'ruby_llm'\nThen bundle install .\nConfigure your API keys:\n# config/initializers/ruby_llm.rb\nRubyLLM . configure do | config |\nconfig . openai_api_key = ENV [ 'OPENAI_API_KEY' ]\nend\nRails\n# Install Rails Integration\nbin/rails generate ruby_llm:install\nbin/rails db:migrate\nbin/rails ruby_llm:load_models # v1.13+\n# Add Chat UI (optional)\nbin/rails generate ruby_llm:chat_ui\nclass Chat < ApplicationRecord\nacts_as_chat\nend\nchat = Chat . create! model: \"claude-sonnet-4\"\nchat . ask \"What's in this file?\" , with: \"report.pdf\"\nVisit http://localhost:3000/chats for a ready-to-use chat interface!",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-25/r-048-rubyllm-适用于所有主流人工智能服务商的-ruby-框架.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-25/r-048-rubyllm-适用于所有主流人工智能服务商的-ruby-框架.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 96,
+  "extractor_diagnostics": {
+    "readability_score": 96,
+    "text_length": 3979,
+    "paragraph_count": 71,
+    "sentence_count": 45,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0113,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 3979,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "7947102d56ee8981",
+    "missing": []
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "index_only_or_directory_page"
+  ],
+  "source_volatility": "high",
+  "community_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "user_feedback_signal",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "RubyLLM：适用于所有主流人工智能服务商的 Ruby 框架",
+    "discovery_summary": "RubyLLM 是一个统一的 Ruby 框架，以相同接口对接 OpenAI、xAI、Anthropic、Gemini、DeepSeek、Mistral、Ollama 等十余家 AI 提供商的 API。支持聊天、图像/视频/音频分析、PDF/CSV/JSON 文档处理、图像生成、嵌入向量、内容审核、工具调用与 Agent 定义，并提供结构化输出（JSON Schema）和流式响应。仅依赖 Faraday、Zeitwerk 和 Marcel 三个库。内置 800+ 模型注册表，包含能力检测与定价信息。可与 Rails 集成（acts_as_chat），支持异步 Fiber 并发。",
+    "source_name": "Hacker News 热门（buzzing.cc 中文翻译）",
+    "origin_url": "https://rubyllm.com/",
+    "discovered_at": "2026-06-25T03:03:30.138Z",
+    "rank_on_page": 167,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "2e3af16a6a9e3355",
+  "content_hash": "7947102d56ee8981",
+  "full_text_hash": "7947102d56ee8981",
+  "semantic_hash": "6244b16e8e60ecfb",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-24T16:12:21.507Z",
+  "last_seen_at": "2026-06-25T03:26:00.548Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "RubyLLM 是一个统一的 Ruby 框架，以相同接口对接 OpenAI、xAI、Anthropic、Gemini、DeepSeek、Mistral、Ollama 等十余家 AI 提供商的 API。支持聊天、图像/视频/音频分析、PDF/CSV/JSON 文档处理、图像生成、嵌入向量、内容审核、工具调用与 Agent 定义，并提供结构化输出（JSON Schema）和流式响应。仅依赖 Faraday、Zeitwerk 和 Marcel 三个库。内置 800+ 模型注册表，包含能力检测与定价信息。可与 Rails 集成（acts_as_chat），支持异步 Fiber 并发。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Copy page Star A single, beautiful Ruby framework for all major AI providers.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Easily build chatbots, AI agents, RAG applications, content generators, and every AI workflow you can think of.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Get started GitHub Battle tested at - Fully private work AI Build a working Ruby AI chat in two minutes Using RubyLLM?",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Share your story !",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Every AI provider ships their own bloated client.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Hacker News 热门（buzzing.cc 中文翻译）",
+      "OpenAI",
+      "Anthropic",
+      "GitHub",
+      "Perplexity",
+      "Mistral"
+    ],
+    "products": [
+      "Gemini",
+      "Agent",
+      "agents",
+      "Claude",
+      "agent",
+      "gpt-5",
+      "Agents",
+      "claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "800",
+      "5 m",
+      "4",
+      "1",
+      "2m",
+      "10m",
+      "5",
+      "1.13"
+    ],
+    "quotes": [
+      "What's the best way to learn Ruby?",
+      "What's in this image?",
+      "ruby_conf.jpg",
+      "What's happening in this video?",
+      "video.mp4"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "RubyLLM 是一个统一的 Ruby 框架，以相同接口对接 OpenAI、xAI、Anthropic、Gemini、DeepSeek、Mistral、Ollama 等十余家 AI 提供商的 API。支持聊天、图像/视频/音频分析、PDF/CSV/JSON 文档处理、图像生成、嵌入向量、内容审核、工具调用与 Agent 定义，并提供结构化输出（JSON Schema）和流式响应。仅依赖 Faraday、Zeitwerk 和 Marcel 三个库。内置 800+ 模型注册表，包含能力检测与定价信息。可与 Rails 集成（acts_as_chat），支持异步 Fiber 并发。",
+      "Copy page Star A single, beautiful Ruby framework for all major AI providers.",
+      "Get started GitHub Battle tested at - Fully private work AI Build a working Ruby AI chat in two minutes Using RubyLLM?"
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "Easily build chatbots, AI agents, RAG applications, content generators, and every AI workflow you can think of."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 4,
+    "importance_reason": "vertical industry solution; rubric=4 concrete important change",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "change": false,
+    "trend": false,
+    "daily_observation": false,
+    "heatmap": false,
+    "briefing": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "homepage_or_directory_observation",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "疑似官网首页、产品目录或导航页，只能索引留存",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# RubyLLM：适用于所有主流人工智能服务商的 Ruby 框架\n\n- raw_id: R-048\n- original_url: https://rubyllm.com/\n- source_name: Hacker News 热门（buzzing.cc 中文翻译）\n- collected_at: 2026-06-25T03:26:00.548Z\n\n## clean_text\n\nCopy page\nStar\nA single, beautiful Ruby framework for all major AI providers. Easily build chatbots, AI agents, RAG applications, content generators, and every AI workflow you can think of.\nGet started GitHub\nBattle tested at - Fully private work AI\nBuild a working Ruby AI chat in two minutes\nUsing RubyLLM? Share your story ! Takes 5 minutes.\nWhy RubyLLM?\nEvery AI provider ships their own bloated client. Different APIs. Different response formats. Different conventions. It’s exhausting.\nRubyLLM gives you one beautiful framework for all of them. Same interface whether you’re using GPT, Claude, or your local Ollama. Just three dependencies: Faraday, Zeitwerk, and Marcel. That’s it.\nShow me the code\n# Just ask questions\nchat = RubyLLM . chat\nchat . ask \"What's the best way to learn Ruby?\"\n# Analyze any file type\nchat . ask \"What's in this image?\" , with: \"ruby_conf.jpg\"\nchat . ask \"What's happening in this video?\" , with: \"video.mp4\"\nchat . ask \"Describe this meeting\" , with: \"meeting.wav\"\nchat . ask \"Summarize this document\" , with: \"contract.pdf\"\nchat . ask \"Explain this code\" , with: \"app.rb\"\n# Multiple files at once\nchat . ask \"Analyze these files\" , with: [ \"diagram.png\" , \"report.pdf\" , \"notes.txt\" ]\n# Stream responses\nchat . ask \"Tell me a story about Ruby\" do | chunk |\nprint chunk . content\nend\n# Generate images\nRubyLLM . paint \"a sunset over mountains in watercolor style\"\n# Create embeddings\nRubyLLM . embed \"Ruby is elegant and expressive\"\n# Transcribe audio to text\nRubyLLM . transcribe \"meeting.wav\"\n# Moderate content for safety\nRubyLLM . moderate \"Check if this text is safe\"\n# Let AI use your code\nclass Weather < RubyLLM :: Tool\ndesc \"Get current weather\"\ndef execute ( latitude :, longitude :)\nurl = \"https://api.open-meteo.com/v1/forecast?latitude= #{ latitude } &longitude= #{ longitude } &current=temperature_2m,wind_speed_10m\"\nJSON . parse ( Faraday . get ( url ). body )\nend\nend\nchat . with_tool ( Weather ). ask \"What's the weather in Berlin?\"\n# Define an agent with instructions + tools\nclass WeatherAssistant < RubyLLM :: Agent\nmodel \"gpt-5-nano\"\ninstructions \"Be concise and always use tools for weather.\"\ntools Weather\nend\nWeatherAssistant . new . ask \"What's the weather in Berlin?\"\n# Get structured output\nclass ProductSchema < RubyLLM :: Schema\nstring :name\nnumber :price\narray :features do\nstring\nend\nend\nresponse = chat . with_schema ( ProductSchema ). ask \"Analyze this product\" , with: \"product.txt\"\nFeatures\nChat: Conversational AI with RubyLLM.chat\nVision: Analyze images and videos\nAudio: Transcribe and understand speech with RubyLLM.transcribe\nDocuments: Extract from PDFs, CSVs, JSON, any file type\nImage generation: Create images with RubyLLM.paint\nEmbeddings: Generate embeddings with RubyLLM.embed\nModeration: Content safety with RubyLLM.moderate\nTools: Let AI call your Ruby methods\nAgents: Reusable assistants with RubyLLM::Agent\nStructured output: JSON schemas that just work\nStreaming: Real-time responses with blocks\nRails: ActiveRecord integration with acts_as_chat\nAsync: Fiber-based concurrency\nModel registry: 800+ models with capability detection and pricing\nExtended thinking: Control, view, and persist model deliberation\nProviders: OpenAI, xAI, Anthropic, Gemini, VertexAI, Bedrock, DeepSeek, Mistral, Ollama, OpenRouter, Perplexity, GPUStack, and any OpenAI-compatible API\nInstallation\nAdd to your Gemfile:\ngem 'ruby_llm'\nThen bundle install .\nConfigure your API keys:\n# config/initializers/ruby_llm.rb\nRubyLLM . configure do | config |\nconfig . openai_api_key = ENV [ 'OPENAI_API_KEY' ]\nend\nRails\n# Install Rails Integration\nbin/rails generate ruby_llm:install\nbin/rails db:migrate\nbin/rails ruby_llm:load_models # v1.13+\n# Add Chat UI (optional)\nbin/rails generate ruby_llm:chat_ui\nclass Chat < ApplicationRecord\nacts_as_chat\nend\nchat = Chat . create! model: \"claude-sonnet-4\"\nchat . ask \"What's in this file?\" , with: \"report.pdf\"\nVisit http://localhost:3000/chats for a ready-to-use chat interface!\n\n## full_text\n\nCopy page\nStar\nA single, beautiful Ruby framework for all major AI providers. Easily build chatbots, AI agents, RAG applications, content generators, and every AI workflow you can think of.\nGet started GitHub\nBattle tested at - Fully private work AI\nBuild a working Ruby AI chat in two minutes\nUsing RubyLLM? Share your story ! Takes 5 minutes.\nWhy RubyLLM?\nEvery AI provider ships their own bloated client. Different APIs. Different response formats. Different conventions. It’s exhausting.\nRubyLLM gives you one beautiful framework for all of them. Same interface whether you’re using GPT, Claude, or your local Ollama. Just three dependencies: Faraday, Zeitwerk, and Marcel. That’s it.\nShow me the code\n# Just ask questions\nchat = RubyLLM . chat\nchat . ask \"What's the best way to learn Ruby?\"\n# Analyze any file type\nchat . ask \"What's in this image?\" , with: \"ruby_conf.jpg\"\nchat . ask \"What's happening in this video?\" , with: \"video.mp4\"\nchat . ask \"Describe this meeting\" , with: \"meeting.wav\"\nchat . ask \"Summarize this document\" , with: \"contract.pdf\"\nchat . ask \"Explain this code\" , with: \"app.rb\"\n# Multiple files at once\nchat . ask \"Analyze these files\" , with: [ \"diagram.png\" , \"report.pdf\" , \"notes.txt\" ]\n# Stream responses\nchat . ask \"Tell me a story about Ruby\" do | chunk |\nprint chunk . content\nend\n# Generate images\nRubyLLM . paint \"a sunset over mountains in watercolor style\"\n# Create embeddings\nRubyLLM . embed \"Ruby is elegant and expressive\"\n# Transcribe audio to text\nRubyLLM . transcribe \"meeting.wav\"\n# Moderate content for safety\nRubyLLM . moderate \"Check if this text is safe\"\n# Let AI use your code\nclass Weather < RubyLLM :: Tool\ndesc \"Get current weather\"\ndef execute ( latitude :, longitude :)\nurl = \"https://api.open-meteo.com/v1/forecast?latitude= #{ latitude } &longitude= #{ longitude } &current=temperature_2m,wind_speed_10m\"\nJSON . parse ( Faraday . get ( url ). body )\nend\nend\nchat . with_tool ( Weather ). ask \"What's the weather in Berlin?\"\n# Define an agent with instructions + tools\nclass WeatherAssistant < RubyLLM :: Agent\nmodel \"gpt-5-nano\"\ninstructions \"Be concise and always use tools for weather.\"\ntools Weather\nend\nWeatherAssistant . new . ask \"What's the weather in Berlin?\"\n# Get structured output\nclass ProductSchema < RubyLLM :: Schema\nstring :name\nnumber :price\narray :features do\nstring\nend\nend\nresponse = chat . with_schema ( ProductSchema ). ask \"Analyze this product\" , with: \"product.txt\"\nFeatures\nChat: Conversational AI with RubyLLM.chat\nVision: Analyze images and videos\nAudio: Transcribe and understand speech with RubyLLM.transcribe\nDocuments: Extract from PDFs, CSVs, JSON, any file type\nImage generation: Create images with RubyLLM.paint\nEmbeddings: Generate embeddings with RubyLLM.embed\nModeration: Content safety with RubyLLM.moderate\nTools: Let AI call your Ruby methods\nAgents: Reusable assistants with RubyLLM::Agent\nStructured output: JSON schemas that just work\nStreaming: Real-time responses with blocks\nRails: ActiveRecord integration with acts_as_chat\nAsync: Fiber-based concurrency\nModel registry: 800+ models with capability detection and pricing\nExtended thinking: Control, view, and persist model deliberation\nProviders: OpenAI, xAI, Anthropic, Gemini, VertexAI, Bedrock, DeepSeek, Mistral, Ollama, OpenRouter, Perplexity, GPUStack, and any OpenAI-compatible API\nInstallation\nAdd to your Gemfile:\ngem 'ruby_llm'\nThen bundle install .\nConfigure your API keys:\n# config/initializers/ruby_llm.rb\nRubyLLM . configure do | config |\nconfig . openai_api_key = ENV [ 'OPENAI_API_KEY' ]\nend\nRails\n# Install Rails Integration\nbin/rails generate ruby_llm:install\nbin/rails db:migrate\nbin/rails ruby_llm:load_models # v1.13+\n# Add Chat UI (optional)\nbin/rails generate ruby_llm:chat_ui\nclass Chat < ApplicationRecord\nacts_as_chat\nend\nchat = Chat . create! model: \"claude-sonnet-4\"\nchat . ask \"What's in this file?\" , with: \"report.pdf\"\nVisit http://localhost:3000/chats for a ready-to-use chat interface!\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 96\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [product_update / daily_observation, heatmap, change / high] RubyLLM 是一个统一的 Ruby 框架，以相同接口对接 OpenAI、xAI、Anthropic、Gemini、DeepSeek、Mistral、Ollama 等十余家 AI 提供商的 API。支持聊天、图像/视频/音频分析、PDF/CSV/JSON 文档处理、图像生成、嵌入向量、内容审核、工具调用与 Agent 定义，并提供结构化输出（JSON Schema）和流式响应。仅依赖 Faraday、Zeitwerk 和 Marcel 三个库。内置 800+ 模型注册表，包含能力检测与定价信息。可与 Rails 集成（acts_as_chat），支持异步 Fiber 并发。\n2. [company_action / daily_observation, heatmap, change, case, trend / high] Copy page Star A single, beautiful Ruby framework for all major AI providers.\n3. [workflow_change / daily_observation, heatmap, change, case, trend / high] Easily build chatbots, AI agents, RAG applications, content generators, and every AI workflow you can think of.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] Get started GitHub Battle tested at - Fully private work AI Build a working Ruby AI chat in two minutes Using RubyLLM?\n5. [company_action / daily_observation, heatmap, change, case, trend / high] Share your story !\n6. [company_action / daily_observation, heatmap, change, case, trend / high] Every AI provider ships their own bloated client.\n"
+}

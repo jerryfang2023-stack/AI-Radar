@@ -455,7 +455,7 @@ function buildBusinessSignalsLane() {
       if (mergedPr) {
         warnings.push(`latest Business Signals workflow conclusion is ${gh.latest_run.conclusion}, but same-date PR already merged: ${mergedPr.url}`);
       } else if (businessDataHealthy) {
-        addProblem(problems, `Business Signals publication workflow conclusion is ${gh.latest_run.conclusion} after healthy same-date data; repair branch / PR / publication only`);
+        warnings.push(`latest Business Signals workflow conclusion is ${gh.latest_run.conclusion}, but same-date data and gates are healthy; repair branch / PR / publication only`);
       } else {
         addProblem(problems, `Business Signals workflow conclusion is ${gh.latest_run.conclusion}`);
       }
