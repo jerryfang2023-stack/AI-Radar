@@ -1,0 +1,239 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-011
+title: "Assort Health Raises $120 Million Series C to Scale Largest Deployment of AI Agents for the Patient Journey | Assort Health"
+original_url: "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey"
+canonical_url: "https://assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-25T03:26:00.335Z
+language: mixed
+full_text_hash: 7c2003856d2cd4b5
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-25/r-011-assort-health-raises-120-million-series-c-to-scale-largest-deployment-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-25/r-011-assort-health-raises-120-million-series-c-to-scale-largest-deployment-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":8078,"paragraph_count":21,"sentence_count":54,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 8078
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7c2003856d2cd4b5","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 5d39da76fdbfdfd9
+content_hash: 7c2003856d2cd4b5
+semantic_hash: 4e99d347a0e6e66e
+duplicate_of: ""
+first_seen_at: "2026-06-25T03:26:00.335Z"
+last_seen_at: 2026-06-25T03:26:00.335Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","Anthropic"],"products":["Agents","agents","agent","copilot"],"people":[],"industries":["金融 / 保险","医疗","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["$120 Million","$120 million","$1.2 billion","$222 million","24","2026","$1.1 trillion","190 million"],"quotes":["After investing in Anthropic, our thesis was simple: find the best application-layer companies in every category,","Every so often a company comes along that fundamentally reimagines how an industry operates. Assort is that company for healthcare,","We evaluated every AI solution on the market. Assort was the only true platform,"]}
+evidence_seed: {"company_actions":["Assort Health, the most widely-used AI agents platform for the patient journey, today announced a $120 million Series C led by Menlo Ventures at a valuation of $1.2 billion. Assort has now raised more than $222 million to become the standard for healthcare organizations wanting to transform the pati... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original","SAN FRANCISCO, June 24, 2026 – Assort Health , the most widely-used AI agents platform for the patient journey, today announced a $120 million Series C led by Menlo Ventures at a valuation of $1.","Assort has now raised more than $222 million to become the standard for healthcare organizations wanting to transform the patient journey with AI."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Assort Health, the most widely-used AI agents platform for the patient journey, today announced a $120 million Series C led by Menlo Ventures at a valuation of $1.2 billion. Assort has now raised more than $222 million to become the standard for healthcare organizations wanting to transform the pati... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"SAN FRANCISCO, June 24, 2026 – Assort Health , the most widely-used AI agents platform for the patient journey, today announced a $120 million Series C led by Menlo Ventures at a valuation of $1.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Assort has now raised more than $222 million to become the standard for healthcare organizations wanting to transform the patient journey with AI.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Healthcare providers now spend nearly twice as much on administration as on direct patient care.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"1 trillion in annual administrative burden, from scheduling calls to intake forms to referral loops, is one of the most consequential and correctable failures in modern healthcare.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Assort was founded on a simple, uncomfortable conviction: the industry would never fix this problem from the middle.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Assort Health Raises $120 Million Series C to Scale Largest Deployment of AI Agents for the Patient Journey | Assort Health
+
+## clean_text
+
+SAN FRANCISCO, June 24, 2026 – Assort Health , the most widely-used AI agents platform for the patient journey, today announced a $120 million Series C led by Menlo Ventures at a valuation of $1.2 billion. Assort has now raised more than $222 million to become the standard for healthcare organizations wanting to transform the patient journey with AI.
+Healthcare providers now spend nearly twice as much on administration as on direct patient care. That $1.1 trillion in annual administrative burden, from scheduling calls to intake forms to referral loops, is one of the most consequential and correctable failures in modern healthcare. Assort was founded on a simple, uncomfortable conviction: the industry would never fix this problem from the middle. You had to start at the front door.
+What began as the first voice AI agent to schedule a specialty appointment is now a platform spanning scheduling, intake forms, referrals, document processing, medication refills, real time eligibility, lab requests, and payments. That expansion has been powered by more than 190 million patient interactions, 62,000 care protocols, and 1.6 million decision pathways, creating the largest proprietary specialty dataset in healthcare.
+Synapse , Assort's proprietary AI model, learns the patterns of specialty workflows across every deployment, then generates the edge cases, tests, and simulations each one has to handle. Even the most complex, provider-specific workflows go live with high automation and resolution rates. That advantage compounds with scale. In the last 15 months, revenue has grown 20x.
+“After investing in Anthropic, our thesis was simple: find the best application-layer companies in every category,” said Matt Murphy, Partner at Menlo Ventures. “The value of Assort's platform compounds with every patient interaction. Each one surfaces a new edge case and a new way to improve care, and the platform gets better for the next patient, automatically. That is a structural advantage that grows with scale, and it lets Assort deliver outsized value for every customer in a way other platforms simply haven't matched.”
+“Every so often a company comes along that fundamentally reimagines how an industry operates. Assort is that company for healthcare,” said JP Sanday, Partner at Menlo Ventures. “They've built not just another point solution, but a unified platform of AI agents that elevates the entire patient journey. Assort's customer-obsessed approach and exceptional product velocity position them to lead the AI transformation of the multi-trillion-dollar healthcare industry, which is why the best healthcare groups keep working with Assort.”
+Assort’s platform now includes:
+Concierge : handles inbound calls, triage, lab requests, med refills, scheduling, insurance eligibility, and intake in any language;
+Activate: reaches patients proactively to close referral loops, automatically act on detected care gaps (i.e. mammograms, colonoscopies, vaccines), recover no-shows, and resolve payments;
+Orchestrate: runs the operational work behind each visit and writes every detail back to the EHR, including referrals, document processing, patient intake, and personalized pre-post visit forms;
+Empower: equips staff with an AI copilot to manage complex patient access needs in real time. It unlocks the ability to build and ship personalized AI agents with access to real time benchmarking data and insights on patient journey performance.
+All four products are connected by Patient Journey Memory , patient context that creates a continuous record for each patient, allowing the platform to: 1) give every patient a personalized experience with their agent, 2) identify and act on signals across every modality, and 3) activate patients when they’re high intent, creating one continuous and unified patient journey across every interaction. Healthcare organizations are already seeing the impact of a more connected patient journey.
+“When a patient reaches out for care, you often get one chance to earn their trust. A mishandled interaction doesn’t just create operational problems; it can mean losing that patient altogether,” said Jon Shaker, Executive Director, Boston Bone and Joint Institute. “That’s why we wanted a partner with a proven track record of handling specialty care complexity at scale. Assort’s experience across hundreds of deployments gave us confidence they could deliver from day one, and they’ve helped us ensure patients move through the right care journey from their very first interaction.”
+“We evaluated every AI solution on the market. Assort was the only true platform,” said Dr. Parinita Amin, CEO of MDCS Dermatology. “It runs the full patient journey as one connected system, from referrals and document processing to intake, care gap closure, real-time eligibility, and payments. The difference is memory. Everyone else automates one piece and forgets the rest. Assort remembers every patient across every interaction and connects it all into one conversation. Our automation rate climbs every quarter as they execute against an ambitious roadmap, and the gap between Assort and everyone else keeps widening.”
+“This market is going to consolidate in the same way every other one has. Provider groups know it, and the smart ones aren't buying another point solution. They want one partner with the capital and the engineering depth to transform how they operate over the long run. That's what we built. Our engineers learn across hundreds of customers and build every implementation for the specific practice in front of them, and we have now raised over $220M to make that engine better,” said Jon Wang, Founder and Co-CEO of Assort Health.
+Assort also announced a major expansion into health system operations, bringing the platform behind the largest AI-powered patient access deployment among provider groups to health systems ranging from large community-based organizations to academic medical centers. Several health systems, such as John Muir Health, are partnering with Assort as demand grows for platforms that can support increasingly complex ambulatory operations.
+“Specialty care is a different discipline than most AI vendors realize, and that difficulty only compounds at large health systems. It’s exactly what we built Synapse for. Our proprietary model learns the patterns of specialty workflows and gets sharper with every deployment, and that's what lets us move past answering calls to automating the entire patient journey. That depth is our advantage, and Synapse is the foundation that lets us build faster than anyone in the market,” said Jeffery Liu, Founder and Co-CEO of Assort Health.
+In addition to Menlo Ventures, investors participating in this latest round include Lightspeed Venture Partners, Felicis, First Round Capital, Chemistry, Joe Montana, Tau Ventures, and Quiet Capital. JP Sanday, partner at Menlo Ventures, will join Assort's Board, and fellow partner Matt Murphy, will serve as a Board observer.
+For more information, or to join the team, visit assorthealth.com .
+About Assort Health
+Assort Health is the most-widely used AI agents platform for the patient journey, from scheduling and intake to referrals, forms, document processing, medication refills, and payments. It is built on 190 million specialty patient interactions and a model that updates in real time to handle the complexity of healthcare that general-purpose AI can’t. That foundation now powers patient access across multi-site practices, multi-specialty groups, and health systems. Customers see a 5% lift in appointment volume, a 115% increase in labor capacity, and a 4.3 out of 5 patient satisfaction score. The platform integrates natively with leading EHR and practice management systems, including Epic and Athena, enabling deployment without disrupting existing clinical workflows. Provider groups and health systems turn to Assort when the complexity outgrows their existing tools. To learn more, visit assorthealth.com .
+Media Contact: Kara Spak, 120/80 MKTG, assorthealth@12080group.com
+AH
+Assort Health
+
+## full_text
+
+SAN FRANCISCO, June 24, 2026 – Assort Health , the most widely-used AI agents platform for the patient journey, today announced a $120 million Series C led by Menlo Ventures at a valuation of $1.2 billion. Assort has now raised more than $222 million to become the standard for healthcare organizations wanting to transform the patient journey with AI.
+Healthcare providers now spend nearly twice as much on administration as on direct patient care. That $1.1 trillion in annual administrative burden, from scheduling calls to intake forms to referral loops, is one of the most consequential and correctable failures in modern healthcare. Assort was founded on a simple, uncomfortable conviction: the industry would never fix this problem from the middle. You had to start at the front door.
+What began as the first voice AI agent to schedule a specialty appointment is now a platform spanning scheduling, intake forms, referrals, document processing, medication refills, real time eligibility, lab requests, and payments. That expansion has been powered by more than 190 million patient interactions, 62,000 care protocols, and 1.6 million decision pathways, creating the largest proprietary specialty dataset in healthcare.
+Synapse , Assort's proprietary AI model, learns the patterns of specialty workflows across every deployment, then generates the edge cases, tests, and simulations each one has to handle. Even the most complex, provider-specific workflows go live with high automation and resolution rates. That advantage compounds with scale. In the last 15 months, revenue has grown 20x.
+“After investing in Anthropic, our thesis was simple: find the best application-layer companies in every category,” said Matt Murphy, Partner at Menlo Ventures. “The value of Assort's platform compounds with every patient interaction. Each one surfaces a new edge case and a new way to improve care, and the platform gets better for the next patient, automatically. That is a structural advantage that grows with scale, and it lets Assort deliver outsized value for every customer in a way other platforms simply haven't matched.”
+“Every so often a company comes along that fundamentally reimagines how an industry operates. Assort is that company for healthcare,” said JP Sanday, Partner at Menlo Ventures. “They've built not just another point solution, but a unified platform of AI agents that elevates the entire patient journey. Assort's customer-obsessed approach and exceptional product velocity position them to lead the AI transformation of the multi-trillion-dollar healthcare industry, which is why the best healthcare groups keep working with Assort.”
+Assort’s platform now includes:
+Concierge : handles inbound calls, triage, lab requests, med refills, scheduling, insurance eligibility, and intake in any language;
+Activate: reaches patients proactively to close referral loops, automatically act on detected care gaps (i.e. mammograms, colonoscopies, vaccines), recover no-shows, and resolve payments;
+Orchestrate: runs the operational work behind each visit and writes every detail back to the EHR, including referrals, document processing, patient intake, and personalized pre-post visit forms;
+Empower: equips staff with an AI copilot to manage complex patient access needs in real time. It unlocks the ability to build and ship personalized AI agents with access to real time benchmarking data and insights on patient journey performance.
+All four products are connected by Patient Journey Memory , patient context that creates a continuous record for each patient, allowing the platform to: 1) give every patient a personalized experience with their agent, 2) identify and act on signals across every modality, and 3) activate patients when they’re high intent, creating one continuous and unified patient journey across every interaction. Healthcare organizations are already seeing the impact of a more connected patient journey.
+“When a patient reaches out for care, you often get one chance to earn their trust. A mishandled interaction doesn’t just create operational problems; it can mean losing that patient altogether,” said Jon Shaker, Executive Director, Boston Bone and Joint Institute. “That’s why we wanted a partner with a proven track record of handling specialty care complexity at scale. Assort’s experience across hundreds of deployments gave us confidence they could deliver from day one, and they’ve helped us ensure patients move through the right care journey from their very first interaction.”
+“We evaluated every AI solution on the market. Assort was the only true platform,” said Dr. Parinita Amin, CEO of MDCS Dermatology. “It runs the full patient journey as one connected system, from referrals and document processing to intake, care gap closure, real-time eligibility, and payments. The difference is memory. Everyone else automates one piece and forgets the rest. Assort remembers every patient across every interaction and connects it all into one conversation. Our automation rate climbs every quarter as they execute against an ambitious roadmap, and the gap between Assort and everyone else keeps widening.”
+“This market is going to consolidate in the same way every other one has. Provider groups know it, and the smart ones aren't buying another point solution. They want one partner with the capital and the engineering depth to transform how they operate over the long run. That's what we built. Our engineers learn across hundreds of customers and build every implementation for the specific practice in front of them, and we have now raised over $220M to make that engine better,” said Jon Wang, Founder and Co-CEO of Assort Health.
+Assort also announced a major expansion into health system operations, bringing the platform behind the largest AI-powered patient access deployment among provider groups to health systems ranging from large community-based organizations to academic medical centers. Several health systems, such as John Muir Health, are partnering with Assort as demand grows for platforms that can support increasingly complex ambulatory operations.
+“Specialty care is a different discipline than most AI vendors realize, and that difficulty only compounds at large health systems. It’s exactly what we built Synapse for. Our proprietary model learns the patterns of specialty workflows and gets sharper with every deployment, and that's what lets us move past answering calls to automating the entire patient journey. That depth is our advantage, and Synapse is the foundation that lets us build faster than anyone in the market,” said Jeffery Liu, Founder and Co-CEO of Assort Health.
+In addition to Menlo Ventures, investors participating in this latest round include Lightspeed Venture Partners, Felicis, First Round Capital, Chemistry, Joe Montana, Tau Ventures, and Quiet Capital. JP Sanday, partner at Menlo Ventures, will join Assort's Board, and fellow partner Matt Murphy, will serve as a Board observer.
+For more information, or to join the team, visit assorthealth.com .
+About Assort Health
+Assort Health is the most-widely used AI agents platform for the patient journey, from scheduling and intake to referrals, forms, document processing, medication refills, and payments. It is built on 190 million specialty patient interactions and a model that updates in real time to handle the complexity of healthcare that general-purpose AI can’t. That foundation now powers patient access across multi-site practices, multi-specialty groups, and health systems. Customers see a 5% lift in appointment volume, a 115% increase in labor capacity, and a 4.3 out of 5 patient satisfaction score. The platform integrates natively with leading EHR and practice management systems, including Epic and Athena, enabling deployment without disrupting existing clinical workflows. Provider groups and health systems turn to Assort when the complexity outgrows their existing tools. To learn more, visit assorthealth.com .
+Media Contact: Kara Spak, 120/80 MKTG, assorthealth@12080group.com
+AH
+Assort Health
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":8078,"paragraph_count":21,"sentence_count":54,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Assort Health, the most widely-used AI agents platform for the patient journey, today announced a $120 million Series C led by Menlo Ventures at a valuation of $1.2 billion. Assort has now raised more than $222 million to become the standard for healthcare organizations wanting to transform the pati... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original
+
+2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   SAN FRANCISCO, June 24, 2026 – Assort Health , the most widely-used AI agents platform for the patient journey, today announced a $120 million Series C led by Menlo Ventures at a valuation of $1.
+
+3. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Assort has now raised more than $222 million to become the standard for healthcare organizations wanting to transform the patient journey with AI.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Healthcare providers now spend nearly twice as much on administration as on direct patient care.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   1 trillion in annual administrative burden, from scheduling calls to intake forms to referral loops, is one of the most consequential and correctable failures in modern healthcare.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Assort was founded on a simple, uncomfortable conviction: the industry would never fix this problem from the middle.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Anthropic
+- products: Agents, agents, agent, copilot
+- people: 暂无公开信息
+- industries: 金融 / 保险, 医疗, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: $120 Million, $120 million, $1.2 billion, $222 million, 24, 2026, $1.1 trillion, 190 million
+- quotes: After investing in Anthropic, our thesis was simple: find the best application-layer companies in every category, / Every so often a company comes along that fundamentally reimagines how an industry operates. Assort is that company for healthcare, / We evaluated every AI solution on the market. Assort was the only true platform,
+
+## evidence_seed
+
+- company_actions: Assort Health, the most widely-used AI agents platform for the patient journey, today announced a $120 million Series C led by Menlo Ventures at a valuation of $1.2 billion. Assort has now raised more than $222 million to become the standard for healthcare organizations wanting to transform the pati... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original / SAN FRANCISCO, June 24, 2026 – Assort Health , the most widely-used AI agents platform for the patient journey, today announced a $120 million Series C led by Menlo Ventures at a valuation of $1. / Assort has now raised more than $222 million to become the standard for healthcare organizations wanting to transform the patient journey with AI.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Assort Health, the most widely-used AI agents platform for the patient journey, today announced a $120 million Series C led by Menlo Ventures at a valuation of $1.2 billion. Assort has now raised more than $222 million to become the standard for healthcare organizations wanting to transform the pati... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

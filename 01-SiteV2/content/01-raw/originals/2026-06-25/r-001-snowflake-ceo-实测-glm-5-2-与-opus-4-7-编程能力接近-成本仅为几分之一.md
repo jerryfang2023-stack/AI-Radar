@@ -1,0 +1,292 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-001
+title: "Snowflake CEO 实测：GLM-5.2 与 Opus 4.7 编程能力接近，成本仅为几分之一"
+original_url: "https://the-decoder.com/snowflake-ceo-finds-glm-5-2-competitive-with-opus-4-7-at-a-fraction-of-the-cost"
+canonical_url: "https://the-decoder.com/snowflake-ceo-finds-glm-5-2-competitive-with-opus-4-7-at-a-fraction-of-the-cost"
+source_name: "The Decoder：AI News（RSS）"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-24T17:07:37.000Z"
+collected_at: 2026-06-25T03:26:00.287Z
+language: mixed
+full_text_hash: 3dc9d8eabeed92a3
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-25/r-001-snowflake-ceo-实测-glm-5-2-与-opus-4-7-编程能力接近-成本仅为几分之一.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-25/r-001-snowflake-ceo-实测-glm-5-2-与-opus-4-7-编程能力接近-成本仅为几分之一.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 83
+extractor_diagnostics: {"readability_score":83,"text_length":3666,"paragraph_count":17,"sentence_count":30,"boilerplate_hits":3,"symbol_ratio":0.0016,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 3666
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3dc9d8eabeed92a3","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Snowflake CEO 实测：GLM-5.2 与 Opus 4.7 编程能力接近，成本仅为几分之一","discovery_summary":"Snowflake 内部基准测试显示，在每项任务三次尝试下，GLM-5.2 解决 66% 的编程问题，Anthropic 的 Opus 4.7 解决 67%，两者几乎持平。首次尝试准确率 Opus 为 53.7%，GLM 为 47.6%；GLM 每任务平均迭代 99 次、消耗 8.6 亿 token，Opus 则为 80 次、4.39 亿 token。成本方面，GLM-5.2 输出 token 价格为 $4.40/百万，远低于 Opus 的 $25 和 GPT-5.5 的 $30；输入 token 仅 $1.40/百万。GLM 存在过早放弃和过度检查等弱点，但其定价优势可能对西方 AI 公司的高估值构成压力。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/snowflake-ceo-finds-glm-5-2-competitive-with-opus-4-7-at-a-fraction-of-the-cost","discovered_at":"2026-06-25T03:03:30.132Z","rank_on_page":145,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: da265834ee307462
+content_hash: 3dc9d8eabeed92a3
+semantic_hash: 9be5b9ee8364c5ed
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-06-24T17:07:37.000Z"
+last_seen_at: 2026-06-25T03:26:00.287Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: true
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["The Decoder","AI News（RSS）","OpenAI","Anthropic"],"products":["GPT-5","Claude"],"people":[],"industries":["开发者工具"],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":["定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["5.2","4.7","66%","67%","53.7%","47.6%","99 次","8.6 亿"],"quotes":["AI Radar"]}
+evidence_seed: {"company_actions":["Snowflake 内部基准测试显示，在每项任务三次尝试下，GLM-5.2 解决 66% 的编程问题，Anthropic 的 Opus 4.7 解决 67%，两者几乎持平。首次尝试准确率 Opus 为 53.7%，GLM 为 47.6%；GLM 每任务平均迭代 99 次、消耗 8.6 亿 token，Opus 则为 80 次、4.39 亿 token。成本方面，GLM-5.2 输出 token 价格为 $4.40/百万，远低于 Opus 的 $25 和 GPT-5.5 的 $30；输入 token 仅 $1.40/百万。GLM 存在过早放弃和过度检查等弱点，但其定价优势可能对西方 AI 公司的高估值构成压力。","Ad Skip to content Snowflake CEO finds GLM-5.","2 competitive with Opus 4."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"Snowflake 内部基准测试显示，在每项任务三次尝试下，GLM-5.2 解决 66% 的编程问题，Anthropic 的 Opus 4.7 解决 67%，两者几乎持平。首次尝试准确率 Opus 为 53.7%，GLM 为 47.6%；GLM 每任务平均迭代 99 次、消耗 8.6 亿 token，Opus 则为 80 次、4.39 亿 token。成本方面，GLM-5.2 输出 token 价格为 $4.40/百万，远低于 Opus 的 $25 和 GPT-5.5 的 $30；输入 token 仅 $1.40/百万。GLM 存在过早放弃和过度检查等弱点，但其定价优势可能对西方 AI 公司的高估值构成压力。","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Ad Skip to content Snowflake CEO finds GLM-5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"2 competitive with Opus 4.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"7 at a fraction of the cost Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 24, 2026 Key Points In a real-world programming benchmark conducted by Snowflake, the Chinese AI model GLM-5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"2 and Anthropic's Opus-4.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"7 performed nearly identically when given three attempts per task, solving 66 and 67 percent of problems, respectively.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Snowflake CEO 实测：GLM-5.2 与 Opus 4.7 编程能力接近，成本仅为几分之一
+
+## clean_text
+
+Ad
+Skip to content
+Snowflake CEO finds GLM-5.2 competitive with Opus 4.7 at a fraction of the cost
+Matthias Bastian
+View the LinkedIn Profile of Matthias Bastian
+Jun 24, 2026
+Key Points
+In a real-world programming benchmark conducted by Snowflake, the Chinese AI model GLM-5.2 and Anthropic's Opus-4.7 performed nearly identically when given three attempts per task, solving 66 and 67 percent of problems, respectively.
+Opus holds an edge on first-attempt accuracy at 53.7 percent versus GLM's 47.6 percent, and is more efficient overall—GLM requires an average of 99 iterations per task compared to 80 for Opus and consumes nearly twice as many tokens.
+Despite these efficiency gaps, GLM-5.2 is dramatically cheaper at $4.40 per million output tokens, creating significant price pressure that could challenge the high valuations of Western AI companies like OpenAI.
+Snowflake compared GLM-5.2 and Opus 4.7 in a hands-on benchmark. The Chinese model held its own.
+The test covered 103 tasks, each run three times, where models had to write code that works on both DuckDB and Snowflake. When each model got three attempts per task, the two were neck and neck: 66% vs. 67% of tasks solved.
+First-attempt accuracy diverges: Opus hit 53.7%, GLM only 47.6%, showing GLM's output is less consistent. The Chinese model also averaged 99 runs per task versus Opus's 80 and burned through 860 million tokens, nearly double Opus's 439 million. Ad
+Opus 4.7 is the better model, but GLM is competitive in Snowflake's code benchmark and costs far less. | Image: via X[ GLM's strength is validating code reliably across both platforms (DuckDB and Snowflake) at the same time. According to Snowflake CEO Sridhar Ramaswamy , that's why only GLM could solve certain tasks. Ad
+DEC_D_Incontent-1
+Its weaknesses are giving up too early and obsessively checking the wrong things. On one task, GLM fired off 411 tool calls in 24 minutes, checking row counts, distributions, null values, and column types, and still failed all three attempts. Opus solved the same task with 49 calls in 9 minutes.
+The claim that GLM produces cleaner code didn't hold up, Ramaswamy said. More checks don't lead to more correct results. Still, the team is excited about GLM-5.2 and wants to make it available to customers. Ad
+China's pricing puts real pressure on the Western AI bubble
+The results matter most in the context of price. GLM-5.2 costs $1.40 per million input tokens and $4.40 per million output tokens, according to Zhipu's official price sheet . Some third-party providers undercut Zhipu's price even further. Claude Opus 4.7 runs $5 input and $25 output. GPT-5.5 costs $5 input and $30 output.
+Model
+Input
+Cached Input
+Output
+GLM-5.2
+$1.40
+$0.26
+$4.40
+Claude Opus 4.7
+$5.00
+$0.50 (Cache Hit)
+$25.00
+GPT-5.5
+$5.00
+$0.50
+$30.00
+GPT-5.4
+$2.50
+$0.25
+$15.00
+GLM's higher token usage eats into that price gap somewhat . But Anthropic and OpenAI are facing serious pricing pressure, and right in coding, the flagship use case both Western AI labs are betting on. Ad
+DEC_D_Incontent-2
+If that pressure slows revenue growth, or worse, shrinks it, the already inflated AI market faces a real stress test. OpenAI's and Anthropic's valuations rest on the assumption that revenue keeps climbing fast. Those valuations are tied to billions in bets on AI infrastructure buildout, from data centers to chip orders. Ad
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: via X
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## full_text
+
+Ad
+Skip to content
+Snowflake CEO finds GLM-5.2 competitive with Opus 4.7 at a fraction of the cost
+Matthias Bastian
+View the LinkedIn Profile of Matthias Bastian
+Jun 24, 2026
+Key Points
+In a real-world programming benchmark conducted by Snowflake, the Chinese AI model GLM-5.2 and Anthropic's Opus-4.7 performed nearly identically when given three attempts per task, solving 66 and 67 percent of problems, respectively.
+Opus holds an edge on first-attempt accuracy at 53.7 percent versus GLM's 47.6 percent, and is more efficient overall—GLM requires an average of 99 iterations per task compared to 80 for Opus and consumes nearly twice as many tokens.
+Despite these efficiency gaps, GLM-5.2 is dramatically cheaper at $4.40 per million output tokens, creating significant price pressure that could challenge the high valuations of Western AI companies like OpenAI.
+Snowflake compared GLM-5.2 and Opus 4.7 in a hands-on benchmark. The Chinese model held its own.
+The test covered 103 tasks, each run three times, where models had to write code that works on both DuckDB and Snowflake. When each model got three attempts per task, the two were neck and neck: 66% vs. 67% of tasks solved.
+First-attempt accuracy diverges: Opus hit 53.7%, GLM only 47.6%, showing GLM's output is less consistent. The Chinese model also averaged 99 runs per task versus Opus's 80 and burned through 860 million tokens, nearly double Opus's 439 million. Ad
+Opus 4.7 is the better model, but GLM is competitive in Snowflake's code benchmark and costs far less. | Image: via X[ GLM's strength is validating code reliably across both platforms (DuckDB and Snowflake) at the same time. According to Snowflake CEO Sridhar Ramaswamy , that's why only GLM could solve certain tasks. Ad
+DEC_D_Incontent-1
+Its weaknesses are giving up too early and obsessively checking the wrong things. On one task, GLM fired off 411 tool calls in 24 minutes, checking row counts, distributions, null values, and column types, and still failed all three attempts. Opus solved the same task with 49 calls in 9 minutes.
+The claim that GLM produces cleaner code didn't hold up, Ramaswamy said. More checks don't lead to more correct results. Still, the team is excited about GLM-5.2 and wants to make it available to customers. Ad
+China's pricing puts real pressure on the Western AI bubble
+The results matter most in the context of price. GLM-5.2 costs $1.40 per million input tokens and $4.40 per million output tokens, according to Zhipu's official price sheet . Some third-party providers undercut Zhipu's price even further. Claude Opus 4.7 runs $5 input and $25 output. GPT-5.5 costs $5 input and $30 output.
+Model
+Input
+Cached Input
+Output
+GLM-5.2
+$1.40
+$0.26
+$4.40
+Claude Opus 4.7
+$5.00
+$0.50 (Cache Hit)
+$25.00
+GPT-5.5
+$5.00
+$0.50
+$30.00
+GPT-5.4
+$2.50
+$0.25
+$15.00
+GLM's higher token usage eats into that price gap somewhat . But Anthropic and OpenAI are facing serious pricing pressure, and right in coding, the flagship use case both Western AI labs are betting on. Ad
+DEC_D_Incontent-2
+If that pressure slows revenue growth, or worse, shrinks it, the already inflated AI market faces a real stress test. OpenAI's and Anthropic's valuations rest on the assumption that revenue keeps climbing fast. Those valuations are tied to billions in bets on AI infrastructure buildout, from data centers to chip orders. Ad
+AI News Without the Hype – Curated by Humans
+Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.
+Subscribe now
+Source: via X
+BETA-TEST
+&times;
+wpDiscuz
+Insert
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 83
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":83,"text_length":3666,"paragraph_count":17,"sentence_count":30,"boilerplate_hits":3,"symbol_ratio":0.0016,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Snowflake 内部基准测试显示，在每项任务三次尝试下，GLM-5.2 解决 66% 的编程问题，Anthropic 的 Opus 4.7 解决 67%，两者几乎持平。首次尝试准确率 Opus 为 53.7%，GLM 为 47.6%；GLM 每任务平均迭代 99 次、消耗 8.6 亿 token，Opus 则为 80 次、4.39 亿 token。成本方面，GLM-5.2 输出 token 价格为 $4.40/百万，远低于 Opus 的 $25 和 GPT-5.5 的 $30；输入 token 仅 $1.40/百万。GLM 存在过早放弃和过度检查等弱点，但其定价优势可能对西方 AI 公司的高估值构成压力。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Ad Skip to content Snowflake CEO finds GLM-5.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   2 competitive with Opus 4.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   7 at a fraction of the cost Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 24, 2026 Key Points In a real-world programming benchmark conducted by Snowflake, the Chinese AI model GLM-5.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   2 and Anthropic's Opus-4.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   7 performed nearly identically when given three attempts per task, solving 66 and 67 percent of problems, respectively.
+
+## business_elements
+
+- companies: The Decoder, AI News（RSS）, OpenAI, Anthropic
+- products: GPT-5, Claude
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 5.2, 4.7, 66%, 67%, 53.7%, 47.6%, 99 次, 8.6 亿
+- quotes: AI Radar
+
+## evidence_seed
+
+- company_actions: Snowflake 内部基准测试显示，在每项任务三次尝试下，GLM-5.2 解决 66% 的编程问题，Anthropic 的 Opus 4.7 解决 67%，两者几乎持平。首次尝试准确率 Opus 为 53.7%，GLM 为 47.6%；GLM 每任务平均迭代 99 次、消耗 8.6 亿 token，Opus 则为 80 次、4.39 亿 token。成本方面，GLM-5.2 输出 token 价格为 $4.40/百万，远低于 Opus 的 $25 和 GPT-5.5 的 $30；输入 token 仅 $1.40/百万。GLM 存在过早放弃和过度检查等弱点，但其定价优势可能对西方 AI 公司的高估值构成压力。 / Ad Skip to content Snowflake CEO finds GLM-5. / 2 competitive with Opus 4.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Snowflake CEO 实测：GLM-5.2 与 Opus 4.7 编程能力接近，成本仅为几分之一","discovery_summary":"Snowflake 内部基准测试显示，在每项任务三次尝试下，GLM-5.2 解决 66% 的编程问题，Anthropic 的 Opus 4.7 解决 67%，两者几乎持平。首次尝试准确率 Opus 为 53.7%，GLM 为 47.6%；GLM 每任务平均迭代 99 次、消耗 8.6 亿 token，Opus 则为 80 次、4.39 亿 token。成本方面，GLM-5.2 输出 token 价格为 $4.40/百万，远低于 Opus 的 $25 和 GPT-5.5 的 $30；输入 token 仅 $1.40/百万。GLM 存在过早放弃和过度检查等弱点，但其定价优势可能对西方 AI 公司的高估值构成压力。","source_name":"The Decoder：AI News（RSS）","origin_url":"https://the-decoder.com/snowflake-ceo-finds-glm-5-2-competitive-with-opus-4-7-at-a-fraction-of-the-cost","discovered_at":"2026-06-25T03:03:30.132Z","rank_on_page":145,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Snowflake 内部基准测试显示，在每项任务三次尝试下，GLM-5.2 解决 66% 的编程问题，Anthropic 的 Opus 4.7 解决 67%，两者几乎持平。首次尝试准确率 Opus 为 53.7%，GLM 为 47.6%；GLM 每任务平均迭代 99 次、消耗 8.6 亿 token，Opus 则为 80 次、4.39 亿 token。成本方面，GLM-5.2 输出 token 价格为 $4.40/百万，远低于 Opus 的 $25 和 GPT-5.5 的 $30；输入 token 仅 $1.40/百万。GLM 存在过早放弃和过度检查等弱点，但其定价优势可能对西方 AI 公司的高估值构成压力。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
