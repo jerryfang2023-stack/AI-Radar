@@ -1,4 +1,4 @@
-﻿status: resolved
+status: resolved
 priority: urgent
 lane: business_signals
 category: business_signals_top10_missing
@@ -7,10 +7,10 @@ report_path: agent-workflow/reports/2026-06-26-daily-supervision-report.md
 data_generated: no_or_stale
 needed_action: send Codex a business_signals repair request with failed gate and report path
 created_at: 2026-06-26T11:19:25+08:00
-updated_at: 2026-06-26T11:37:56+08:00
-resolved_at: 2026-06-26T11:37:56+08:00
+updated_at: 2026-06-26T11:46:22+08:00
+resolved_at: 2026-06-26T11:46:22+08:00
 resolver: codex
-fix_commit: pending-local-change
+fix_commit: 343e59abdf4ead1b6a0609a2358c09f3075cfe12
 validation: node agent-workflow/tools/assert-daily-production-chain.mjs --date=2026-06-26 --stage=pre-commit --raw-min=150 --pool-min=75 --block-stale=true
 prevention_added: eval
 source: hermes-auto
@@ -44,5 +44,11 @@ source: hermes-auto
 ## Resolution - 2026-06-26T11:37:56+08:00
 
 - fix_commit: pending-local-change
+- validation: node agent-workflow/tools/assert-daily-production-chain.mjs --date=2026-06-26 --stage=pre-commit --raw-min=150 --pool-min=75 --block-stale=true
+- prevention_added: eval
+
+## Resolution - 2026-06-26T11:46:22+08:00
+
+- fix_commit: 343e59abdf4ead1b6a0609a2358c09f3075cfe12
 - validation: node agent-workflow/tools/assert-daily-production-chain.mjs --date=2026-06-26 --stage=pre-commit --raw-min=150 --pool-min=75 --block-stale=true
 - prevention_added: eval
