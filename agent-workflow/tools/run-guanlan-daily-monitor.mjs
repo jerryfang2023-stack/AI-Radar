@@ -4190,8 +4190,10 @@ function normalize(items) {
       pickedKeys.add(key);
       count -= 1;
     }
-  };  take("gdelt");
+  };
+  take("gdelt");
   take("keyword-search");
+  take("rss-feed");
   take("hn", Math.min(hnTarget, 8));
   take("aihot");
 
