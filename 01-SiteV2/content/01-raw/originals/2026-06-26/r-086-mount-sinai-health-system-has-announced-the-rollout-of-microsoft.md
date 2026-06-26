@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-086
 title: "Mount Sinai Health System has announced the rollout of Microsoft ..."

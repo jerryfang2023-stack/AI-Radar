@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-117
 title: "Behind every seamless digital experience is a frontend engineer ..."

@@ -2,7 +2,7 @@ window.WaveSightTopicCenter = {
   "meta": {
     "version": "V2.2.2-source-title",
     "date": "2026-06-26",
-    "generatedAt": "2026-06-26T03:36:35.210Z",
+    "generatedAt": "2026-06-26T07:36:40.456Z",
     "source": "business-signals + first-line-viewpoints + community-intelligence",
     "rule": "boss_decision_topic_engine",
     "ruleLabel": "老板决策型选题机制",
@@ -30,7 +30,7 @@ window.WaveSightTopicCenter = {
       "big_small_contrast": 1,
       "person_story": 1
     },
-    "leadTopicId": "money_leak-google将电脑控制功能直接集成到gemini-3-5-flash中"
+    "leadTopicId": "money_leak-seltz-获得-1250-万美元种子轮融资-重建面向-ai-智能体的网页搜索"
   },
   "sources": [
     {
@@ -84,32 +84,32 @@ window.WaveSightTopicCenter = {
   ],
   "topics": [
     {
-      "id": "money_leak-google将电脑控制功能直接集成到gemini-3-5-flash中",
+      "id": "money_leak-seltz-获得-1250-万美元种子轮融资-重建面向-ai-智能体的网页搜索",
       "sourceId": "money_leak",
       "sourceName": "漏钱型",
       "sourceDesc": "订单入口、转化漏斗、线索流失",
       "type": "boss_decision_topic",
-      "title": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中",
-      "spreadTitle": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中",
+      "title": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索",
+      "spreadTitle": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
-      "relevance": "Google将\"Computer Use\"功能直接集成到Gemini 3.5 Flash，模型可自主看、理解并操作电脑、浏览器和移动设备，此前该功能仅作为独立Gemini 2.5模型提供。结合函数调用、Search和Maps等工具，开发者…；社群里也出现了“用 Codex + Obsidian，把装修行业经…”这类一线反馈。",
+      "relevance": "来源材料显示，Seltz 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 2 b、$200 m 等数字。；社群里也出现了“用 Codex + Obsidian，把装修行业经…”这类一线反馈。",
       "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
       "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
       "oldFrame": "AI 是一个提效工具。",
       "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
       "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
-      "evidence": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中；用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
+      "evidence": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索；用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260626-A21",
-            "title": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中",
-            "source": "The Decoder：AI News（RSS）",
-            "url": "https://the-decoder.com/google-bakes-computer-control-directly-into-gemini-3-5-flash-letting-the-model-see-and-operate-your-screen",
-            "note": "Google将\"Computer Use\"功能直接集成到Gemini 3.5 Flash，模型可自主看、理解并操作电脑、浏览器和移动设备，此前该功能仅作为独立Gemini 2.5模型提供。结合函数调用、Search和Maps等工具，开发者可构建跨平台智能体，用于软件测试或办公自动化。在OSWorld基准测试中，Gemini 3.5 Flash得分78.4，…"
+            "id": "SIG-20260626-A01",
+            "title": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索",
+            "source": "fortune.com",
+            "url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+            "note": "来源材料显示，Seltz 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 2 b、$200 m 等数字。"
           }
         ],
         "viewpoints": [],
@@ -124,8 +124,8 @@ window.WaveSightTopicCenter = {
           }
         ]
       },
-      "source": "The Decoder：AI News（RSS）",
-      "url": "https://the-decoder.com/google-bakes-computer-control-directly-into-gemini-3-5-flash-letting-the-model-see-and-operate-your-screen",
+      "source": "fortune.com",
+      "url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
       "date": "2026-06-26",
       "score": 97,
       "grade": "S",
@@ -141,7 +141,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "开头直接问漏钱",
-          "note": "不要先讲 Google将电脑控制功能直接集成到Gemini … 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+          "note": "不要先讲 Seltz 获得 1250 万美元种子轮融资，重建… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
         },
         {
           "title": "中段拆入口链路",
@@ -158,43 +158,43 @@ window.WaveSightTopicCenter = {
         "结尾给一句新判断，不复述要点"
       ],
       "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
-      "originalTitle": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中"
+      "originalTitle": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索"
     },
     {
-      "id": "small_role-sustainability-atlas-发布-ai-智能体与工作流自动化案例",
+      "id": "small_role-dreamztech-案例显示-ai-财务自动化将月结从-11-天缩短到-3-天",
       "sourceId": "small_role",
       "sourceName": "小岗位型",
       "sourceDesc": "客服、销售、财务、标书、运营",
       "type": "boss_decision_topic",
-      "title": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例",
-      "spreadTitle": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例",
+      "title": "DreamzTech 案例显示 AI 财务自动化将月结从 11 天缩短到 3 天",
+      "spreadTitle": "DreamzTech 案例显示 AI 财务自动化将月结从 11 天缩短到 3 天",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位、一个明确动作、一个可验收结果里。",
-      "relevance": "来源材料显示，Case study 的AI 商业动作涉及销售和收入团队流程；原文同时出现 $7 等数字。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
+      "relevance": "原文描述产品把会议、邮件、工单、CRM 或业务数据转为可执行动作。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
       "bossPain": "老板最怕 AI 项目太大、太贵、太慢，最后没人用。",
       "moneyLine": "一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。",
       "oldFrame": "做一个什么都能干的 AI 平台。",
       "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
       "actionHint": "先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。",
-      "evidence": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例；Sustainability Atlas 发布 AI 智能体与工作流自动化案例；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+      "evidence": "DreamzTech 案例显示 AI 财务自动化将月结从 11 天缩短到 3 天；Runlayer 获得 3000 万美元 A 轮融资，推进企业 AI 工作流；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260626-A04",
-            "title": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例",
-            "source": "sustainableatlas.org",
-            "url": "https://sustainableatlas.org/post/case-study-ai-agents-workflow-automation-a-startup-to-enterprise-scale-story-1207",
-            "note": "来源材料显示，Case study 的AI 商业动作涉及销售和收入团队流程；原文同时出现 $7 等数字。"
+            "id": "SIG-20260626-A11",
+            "title": "DreamzTech 案例显示 AI 财务自动化将月结从 11 天缩短到 3 天",
+            "source": "dreamztech.com",
+            "url": "https://www.dreamztech.com/ai-finance-automation-agent-case-study/",
+            "note": "原文描述产品把会议、邮件、工单、CRM 或业务数据转为可执行动作。"
           },
           {
             "kind": "business_signal",
-            "id": "SIG-20260626-A04",
-            "title": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例",
-            "source": "sustainableatlas.org",
-            "url": "https://sustainableatlas.org/post/case-study-ai-agents-workflow-automation-a-startup-to-enterprise-scale-story-1207",
-            "note": "来源材料显示，Case study 的AI 商业动作涉及销售和收入团队流程；原文同时出现 $7 等数字。"
+            "id": "SIG-20260626-A07",
+            "title": "Runlayer 获得 3000 万美元 A 轮融资，推进企业 AI 工作流",
+            "source": "runlayer.com",
+            "url": "https://www.runlayer.com/blog/series-A-30m-fundraise-felicis-khosla",
+            "note": "来源材料显示，Runlayer 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $30 m 等数字。"
           }
         ],
         "viewpoints": [],
@@ -209,8 +209,8 @@ window.WaveSightTopicCenter = {
           }
         ]
       },
-      "source": "sustainableatlas.org",
-      "url": "https://sustainableatlas.org/post/case-study-ai-agents-workflow-automation-a-startup-to-enterprise-scale-story-1207",
+      "source": "dreamztech.com",
+      "url": "https://www.dreamztech.com/ai-finance-automation-agent-case-study/",
       "date": "2026-06-26",
       "score": 97,
       "grade": "S",
@@ -243,35 +243,35 @@ window.WaveSightTopicCenter = {
         "结尾给一句新判断，不复述要点"
       ],
       "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
-      "originalTitle": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例"
+      "originalTitle": "DreamzTech 案例显示 AI 财务自动化将月结从 11 天缩短到 3 天"
     },
     {
-      "id": "counterintuitive-patronus-ai-获-5000-万美元-b-轮融资-构建-数字世界-压力测试-ai-智能体",
+      "id": "counterintuitive-zensar-发布-zenseai-agentmesh-加速企业智能体编排",
       "sourceId": "counterintuitive",
       "sourceName": "反常识型",
       "sourceDesc": "推翻流行说法，形成可传播判断",
       "type": "boss_decision_topic",
-      "title": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体",
-      "spreadTitle": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体",
+      "title": "Zensar 发布 ZenseAI.AgentMesh，加速企业智能体编排",
+      "spreadTitle": "Zensar 发布 ZenseAI.AgentMesh，加速企业智能体编排",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "反常识点在于：AI 越强，越不是所有人都被替代，而是会拆任务、会验收结果的人更值钱。",
-      "relevance": "Patronus AI 宣布完成 5000 万美元 B 轮融资，由 Greenfield Partners 领投，Notable Capital、Lightspeed、Datadog 和 Samsung 参投，累计融资达 7000 万美元…；社群里“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”的讨论也在提醒老板，问题不再只是怎么做。",
+      "relevance": "来源材料显示，Zensar Technologies 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 50 B 等数字。；社群里“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”的讨论也在提醒老板，问题不再只是怎么做。",
       "bossPain": "工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。",
       "moneyLine": "工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。",
       "oldFrame": "追最新 AI 工具。",
       "newFrame": "先沉淀任务、语料、步骤和验收标准，再让 AI 接手。",
       "actionHint": "今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。",
-      "evidence": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体；我们是否正在朝着AI可以做到人类所能做的一切的未来迈进？ Edwin Chen （ @ echen ）认为我们可能会这样做。他是Surge AI的首席执行官， Surge AI是前沿实验室最大的专家数据提供商之一。Surge在没有筹集任何…；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+      "evidence": "Zensar 发布 ZenseAI.AgentMesh，加速企业智能体编排；我们是否正在朝着AI可以做到人类所能做的一切的未来迈进？ Edwin Chen （ @ echen ）认为我们可能会这样做。他是Surge AI的首席执行官， Surge AI是前沿实验室最大的专家数据提供商之一。Surge在没有筹集任何…；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260626-A03",
-            "title": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体",
-            "source": "TechCrunch：AI（RSS）",
-            "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents",
-            "note": "Patronus AI 宣布完成 5000 万美元 B 轮融资，由 Greenfield Partners 领投，Notable Capital、Lightspeed、Datadog 和 Samsung 参投，累计融资达 7000 万美元。该公司由前 Meta AI 研究员于 2023 年创立，利用\"数字世界模型\"创建网站和内部系统的模拟副本，通过强化学习…"
+            "id": "SIG-20260626-A05",
+            "title": "Zensar 发布 ZenseAI.AgentMesh，加速企业智能体编排",
+            "source": "markets.ft.com",
+            "url": "https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1",
+            "note": "来源材料显示，Zensar Technologies 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 50 B 等数字。"
           }
         ],
         "viewpoints": [
@@ -295,8 +295,8 @@ window.WaveSightTopicCenter = {
           }
         ]
       },
-      "source": "TechCrunch：AI（RSS）",
-      "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents",
+      "source": "markets.ft.com",
+      "url": "https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1",
       "date": "2026-06-26",
       "score": 95,
       "grade": "S",
@@ -329,7 +329,93 @@ window.WaveSightTopicCenter = {
         "结尾给一句新判断，不复述要点"
       ],
       "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
-      "originalTitle": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体"
+      "originalTitle": "Zensar 发布 ZenseAI.AgentMesh，加速企业智能体编排"
+    },
+    {
+      "id": "big_small_contrast-netris-获得-1500-万美元-a-轮融资-帮助-ai-新云服务更快上线",
+      "sourceId": "big_small_contrast",
+      "sourceName": "大小对照型",
+      "sourceDesc": "大融资对照小生意，大模型对照小岗位",
+      "type": "boss_decision_topic",
+      "title": "Netris 获得 1500 万美元 A 轮融资，帮助 AI 新云服务更快上线",
+      "spreadTitle": "Netris 获得 1500 万美元 A 轮融资，帮助 AI 新云服务更快上线",
+      "audience": "企业老板 / 创业者 / 业务负责人",
+      "core": "大新闻负责告诉你资本往哪里押，小机会负责告诉你老板明天愿意为什么付钱。",
+      "relevance": "来源材料显示，Netris 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $15M 等数字。；同时社群里的“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”说明一线需求还在配置、流程和交付。",
+      "bossPain": "老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。",
+      "moneyLine": "大公司赚基础设施的钱，小服务商赚落地第一公里的钱。",
+      "oldFrame": "AI 创业只能跟大模型和融资有关。",
+      "newFrame": "普通人的 AI 机会在帮老板跨过配置、流程和交付门槛。",
+      "actionHint": "把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。",
+      "evidence": "Netris 获得 1500 万美元 A 轮融资，帮助 AI 新云服务更快上线；本次发布中有一些微妙之处在实践中非常重要。这不仅仅是您通过Slack以一对一形式与Claude互动。在这种情况下， Claude充当同事，任何用户都可以以共享的方式进入。我们已经看到一些Agent编码系统开始采用这种模式（以及OpenCl…；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "sourceInputs": {
+        "businessSignals": [
+          {
+            "kind": "business_signal",
+            "id": "SIG-20260626-A02",
+            "title": "Netris 获得 1500 万美元 A 轮融资，帮助 AI 新云服务更快上线",
+            "source": "TechCrunch AI",
+            "url": "https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/",
+            "note": "来源材料显示，Netris 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $15M 等数字。"
+          }
+        ],
+        "viewpoints": [
+          {
+            "kind": "first_line_viewpoint",
+            "id": "2069975251476422664",
+            "title": "本次发布中有一些微妙之处在实践中非常重要。这不仅仅是您通过Slack以一对一形式与Claude互动。在这种情况下， Claude充当同事，任何用户都可以以共享的方式进入。我们已经看到一些Agent编码系统开始采用这种模式（以及OpenCl…",
+            "source": "Aaron Levie",
+            "url": "https://x.com/levie/status/2069975251476422664",
+            "note": "本次发布中有一些微妙之处在实践中非常重要。这不仅仅是您通过Slack以一对一形式与Claude互动。在这种情况下， Claude充当同事，任何用户都可以以共享的方式进入。我们已经看到一些Agent编码系统开始采用这种模式（以及OpenClaw和Hermes ） ，并将其用于通用知识工作，继续推动这一想法。 因此，这意味着这位Agent同事需要自己的一套资源…"
+          }
+        ],
+        "communityItems": [
+          {
+            "kind": "community_intelligence",
+            "id": "71c050f6ace65a",
+            "title": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+            "source": "生财有术",
+            "url": "https://scys.com/",
+            "note": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP 生财的圈友们大家好，我是诗意听涛，目前我主要围绕出海游戏站来做业务"
+          }
+        ]
+      },
+      "source": "TechCrunch AI",
+      "url": "https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/",
+      "date": "2026-06-26",
+      "score": 93,
+      "grade": "S",
+      "priority": "公众号主稿",
+      "scoreBreakdown": {
+        "bossPain": 21,
+        "moneyRelation": 24,
+        "talkability": 20,
+        "spreadability": 15,
+        "actionability": 8,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "用大钱和小钱制造冲突",
+          "note": "大融资负责制造注意力，小服务负责让老板觉得和自己有关。"
+        },
+        {
+          "title": "写出两套赚钱逻辑",
+          "note": "资本逻辑：长期技术押注；服务逻辑：帮老板完成第一公里。"
+        },
+        {
+          "title": "落到可卖服务包",
+          "note": "流程诊断、工具配置、知识库搭建、首个工作流，这是老板可理解的产品。"
+        }
+      ],
+      "writingStructure": [
+        "开头 3 句内给冲突或数字",
+        "中段按现象 -> 算账 -> 坑 -> 解法推进",
+        "结尾给一句新判断，不复述要点"
+      ],
+      "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
+      "originalTitle": "Netris 获得 1500 万美元 A 轮融资，帮助 AI 新云服务更快上线"
     },
     {
       "id": "person_story-保姆级教程-经历分享-1-天跑通-最适合新手上手的-ai-项目",
@@ -347,17 +433,17 @@ window.WaveSightTopicCenter = {
       "oldFrame": "写 AI 就要讲技术和趋势。",
       "newFrame": "写给老板的 AI 内容，要先有人、有场景、有结果。",
       "actionHint": "从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。",
-      "evidence": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目；Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体；我们是否正在朝着AI可以做到人类所能做的一切的未来迈进？ Edwin Chen （ @ echen ）认为我们可能会这样做。他是Surge AI的首席执行官， Surge AI是前沿实验室最大的专家数据提供商之一。Surge在没有筹集任何…",
+      "evidence": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目；Zensar 发布 ZenseAI.AgentMesh，加速企业智能体编排；我们是否正在朝着AI可以做到人类所能做的一切的未来迈进？ Edwin Chen （ @ echen ）认为我们可能会这样做。他是Surge AI的首席执行官， Surge AI是前沿实验室最大的专家数据提供商之一。Surge在没有筹集任何…",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260626-A03",
-            "title": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体",
-            "source": "TechCrunch：AI（RSS）",
-            "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents",
-            "note": "Patronus AI 宣布完成 5000 万美元 B 轮融资，由 Greenfield Partners 领投，Notable Capital、Lightspeed、Datadog 和 Samsung 参投，累计融资达 7000 万美元。该公司由前 Meta AI 研究员于 2023 年创立，利用\"数字世界模型\"创建网站和内部系统的模拟副本，通过强化学习…"
+            "id": "SIG-20260626-A05",
+            "title": "Zensar 发布 ZenseAI.AgentMesh，加速企业智能体编排",
+            "source": "markets.ft.com",
+            "url": "https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1",
+            "note": "来源材料显示，Zensar Technologies 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 50 B 等数字。"
           }
         ],
         "viewpoints": [
@@ -418,42 +504,42 @@ window.WaveSightTopicCenter = {
       "originalTitle": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目"
     },
     {
-      "id": "pitfall-it早报0626-anthropic登顶独角兽榜-文心一言官网关闭-苹果涨价",
-      "sourceId": "pitfall",
-      "sourceName": "避坑型",
-      "sourceDesc": "工具乱买、权限失控、流程没拆",
+      "id": "save_headcount-runlayer-获得-3000-万美元-a-轮融资-推进企业-ai-工作流",
+      "sourceId": "save_headcount",
+      "sourceName": "省人型",
+      "sourceDesc": "少招人、少返工、少加班",
       "type": "boss_decision_topic",
-      "title": "IT早报0626：Anthropic登顶独角兽榜，文心一言官网关闭，苹果涨价",
-      "spreadTitle": "IT早报0626：Anthropic登顶独角兽榜，文心一言官网关闭，苹果涨价",
+      "title": "Runlayer 获得 3000 万美元 A 轮融资，推进企业 AI 工作流",
+      "spreadTitle": "Runlayer 获得 3000 万美元 A 轮融资，推进企业 AI 工作流",
       "audience": "企业老板 / 创业者 / 业务负责人",
-      "core": "AI 从生成内容走向执行动作后，企业问题从“会不会用”变成“谁审核、谁授权、谁负责”。",
-      "relevance": "Anthropic以6.6万亿价值登顶胡润《2026全球独角兽榜》，OpenAI紧随其后。Anthropic致信美参议院，指责阿里实施\"最大规模蒸馏攻击\"。月之暗面表示Kimi目标与海外三家模型竞争，B端占比持续提升。文心一言官网提问入口…；这类信号适合写给老板看，因为它直接关系到业务风险。",
-      "bossPain": "AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。",
-      "moneyLine": "权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。",
-      "oldFrame": "AI 越自主越好。",
-      "newFrame": "AI 越自主，越要先设计权限、复核和责任人。",
-      "actionHint": "先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。",
-      "evidence": "IT早报0626：Anthropic登顶独角兽榜，文心一言官网关闭，苹果涨价；我们没有在旧金山做这种垃圾，因为我们看到了这些无情的政治家对亚洲长老杀害的公民所做的事情公共教育被拆除如果你开始计算他们的身体并谈论他们的退位职责，那么强硬的左派就无法获胜；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+      "core": "AI 进入企业的第一步，不是替代一个完整的人，而是接住岗位里反复发生、规则清楚、结果可验收的动作。",
+      "relevance": "来源材料显示，Runlayer 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $30 m 等数字。；这类信号比“AI 很强”更接近老板的组织账。",
+      "bossPain": "人越招越多，流程没有变短，管理成本反而被重复动作拖住。",
+      "moneyLine": "少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。",
+      "oldFrame": "AI 上线就是裁员。",
+      "newFrame": "AI 上线的第一阶段，是把岗位动作拆小，让公司少招重复岗位。",
+      "actionHint": "选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。",
+      "evidence": "Runlayer 获得 3000 万美元 A 轮融资，推进企业 AI 工作流；本次发布中有一些微妙之处在实践中非常重要。这不仅仅是您通过Slack以一对一形式与Claude互动。在这种情况下， Claude充当同事，任何用户都可以以共享的方式进入。我们已经看到一些Agent编码系统开始采用这种模式（以及OpenCl…；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260626-A19",
-            "title": "IT早报0626：Anthropic登顶独角兽榜，文心一言官网关闭，苹果涨价",
-            "source": "IT之家（RSS）",
-            "url": "https://www.ithome.com/0/968/735.htm",
-            "note": "Anthropic以6.6万亿价值登顶胡润《2026全球独角兽榜》，OpenAI紧随其后。Anthropic致信美参议院，指责阿里实施\"最大规模蒸馏攻击\"。月之暗面表示Kimi目标与海外三家模型竞争，B端占比持续提升。文心一言官网提问入口6月25日关闭，7月26日服务迁移至百度文心网站。苹果因AI数据中心内存短缺提高Mac、iPad价格。尊界S800 Gr…"
+            "id": "SIG-20260626-A07",
+            "title": "Runlayer 获得 3000 万美元 A 轮融资，推进企业 AI 工作流",
+            "source": "runlayer.com",
+            "url": "https://www.runlayer.com/blog/series-A-30m-fundraise-felicis-khosla",
+            "note": "来源材料显示，Runlayer 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $30 m 等数字。"
           }
         ],
         "viewpoints": [
           {
             "kind": "first_line_viewpoint",
-            "id": "2069806049847321020",
-            "title": "我们没有在旧金山做这种垃圾，因为我们看到了这些无情的政治家对亚洲长老杀害的公民所做的事情公共教育被拆除如果你开始计算他们的身体并谈论他们的退位职责，那么强硬的左派就无法获胜",
-            "source": "Garry Tan",
-            "url": "https://x.com/garrytan/status/2069806049847321020",
-            "note": "我们没有在旧金山做这种垃圾，因为我们看到了这些无情的政治家对亚洲长老杀害的公民所做的事情公共教育被拆除如果你开始计算他们的身体并谈论他们的退位职责，那么强硬的左派就无法获胜"
+            "id": "2069975251476422664",
+            "title": "本次发布中有一些微妙之处在实践中非常重要。这不仅仅是您通过Slack以一对一形式与Claude互动。在这种情况下， Claude充当同事，任何用户都可以以共享的方式进入。我们已经看到一些Agent编码系统开始采用这种模式（以及OpenCl…",
+            "source": "Aaron Levie",
+            "url": "https://x.com/levie/status/2069975251476422664",
+            "note": "本次发布中有一些微妙之处在实践中非常重要。这不仅仅是您通过Slack以一对一形式与Claude互动。在这种情况下， Claude充当同事，任何用户都可以以共享的方式进入。我们已经看到一些Agent编码系统开始采用这种模式（以及OpenClaw和Hermes ） ，并将其用于通用知识工作，继续推动这一想法。 因此，这意味着这位Agent同事需要自己的一套资源…"
           }
         ],
         "communityItems": [
@@ -467,32 +553,32 @@ window.WaveSightTopicCenter = {
           }
         ]
       },
-      "source": "IT之家（RSS）",
-      "url": "https://www.ithome.com/0/968/735.htm",
+      "source": "runlayer.com",
+      "url": "https://www.runlayer.com/blog/series-A-30m-fundraise-felicis-khosla",
       "date": "2026-06-26",
-      "score": 88,
-      "grade": "A",
+      "score": 90,
+      "grade": "S",
       "priority": "公众号主稿",
       "scoreBreakdown": {
-        "bossPain": 22,
-        "moneyRelation": 21,
-        "talkability": 18,
+        "bossPain": 23,
+        "moneyRelation": 23,
+        "talkability": 16,
         "spreadability": 13,
-        "actionability": 9,
+        "actionability": 10,
         "styleFit": 5
       },
       "angles": [
         {
-          "title": "不要写安全科普，写老板责任",
-          "note": "老板不关心分类器模型，关心 AI 搞错后谁背锅。"
+          "title": "用岗位动作替代岗位名称",
+          "note": "不要写 AI 替代某个人，写 AI 先替代接听、归档、质检、催办、汇总这类动作。"
         },
         {
-          "title": "把权限拆成人话",
-          "note": "只读、建议、执行三个等级，比讲治理框架更容易传播。"
+          "title": "把省人写成管理账",
+          "note": "老板关心的不是炫技，是少招人、少返工、少培训。"
         },
         {
-          "title": "用当天案例推进",
-          "note": "用 Anthropic登顶独角兽榜，文心一言官网关闭，… 做钩子，落到企业内部的授权和复核表。"
+          "title": "给一个当天可做的小动作",
+          "note": "用 Runlayer 获得 3000 万美元 A 轮融… 做例子，把大流程拆成一个可验收动作。"
         }
       ],
       "writingStructure": [
@@ -501,7 +587,7 @@ window.WaveSightTopicCenter = {
         "结尾给一句新判断，不复述要点"
       ],
       "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
-      "originalTitle": "IT早报0626：Anthropic登顶独角兽榜，文心一言官网关闭，苹果涨价"
+      "originalTitle": "Runlayer 获得 3000 万美元 A 轮融资，推进企业 AI 工作流"
     },
     {
       "id": "money_leak-ai研究员持续从google流向竞争对手",
@@ -7010,32 +7096,32 @@ window.WaveSightTopicCenter = {
   ],
   "grouped": {
     "lead": {
-      "id": "money_leak-google将电脑控制功能直接集成到gemini-3-5-flash中",
+      "id": "money_leak-seltz-获得-1250-万美元种子轮融资-重建面向-ai-智能体的网页搜索",
       "sourceId": "money_leak",
       "sourceName": "漏钱型",
       "sourceDesc": "订单入口、转化漏斗、线索流失",
       "type": "boss_decision_topic",
-      "title": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中",
-      "spreadTitle": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中",
+      "title": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索",
+      "spreadTitle": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
-      "relevance": "Google将\"Computer Use\"功能直接集成到Gemini 3.5 Flash，模型可自主看、理解并操作电脑、浏览器和移动设备，此前该功能仅作为独立Gemini 2.5模型提供。结合函数调用、Search和Maps等工具，开发者…；社群里也出现了“用 Codex + Obsidian，把装修行业经…”这类一线反馈。",
+      "relevance": "来源材料显示，Seltz 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 2 b、$200 m 等数字。；社群里也出现了“用 Codex + Obsidian，把装修行业经…”这类一线反馈。",
       "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
       "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
       "oldFrame": "AI 是一个提效工具。",
       "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
       "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
-      "evidence": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中；用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
+      "evidence": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索；用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260626-A21",
-            "title": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中",
-            "source": "The Decoder：AI News（RSS）",
-            "url": "https://the-decoder.com/google-bakes-computer-control-directly-into-gemini-3-5-flash-letting-the-model-see-and-operate-your-screen",
-            "note": "Google将\"Computer Use\"功能直接集成到Gemini 3.5 Flash，模型可自主看、理解并操作电脑、浏览器和移动设备，此前该功能仅作为独立Gemini 2.5模型提供。结合函数调用、Search和Maps等工具，开发者可构建跨平台智能体，用于软件测试或办公自动化。在OSWorld基准测试中，Gemini 3.5 Flash得分78.4，…"
+            "id": "SIG-20260626-A01",
+            "title": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索",
+            "source": "fortune.com",
+            "url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+            "note": "来源材料显示，Seltz 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 2 b、$200 m 等数字。"
           }
         ],
         "viewpoints": [],
@@ -7050,8 +7136,8 @@ window.WaveSightTopicCenter = {
           }
         ]
       },
-      "source": "The Decoder：AI News（RSS）",
-      "url": "https://the-decoder.com/google-bakes-computer-control-directly-into-gemini-3-5-flash-letting-the-model-see-and-operate-your-screen",
+      "source": "fortune.com",
+      "url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
       "date": "2026-06-26",
       "score": 97,
       "grade": "S",
@@ -7067,7 +7153,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "开头直接问漏钱",
-          "note": "不要先讲 Google将电脑控制功能直接集成到Gemini … 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+          "note": "不要先讲 Seltz 获得 1250 万美元种子轮融资，重建… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
         },
         {
           "title": "中段拆入口链路",
@@ -7088,32 +7174,32 @@ window.WaveSightTopicCenter = {
     "byEngine": {
       "money_leak": [
         {
-          "id": "money_leak-google将电脑控制功能直接集成到gemini-3-5-flash中",
+          "id": "money_leak-seltz-获得-1250-万美元种子轮融资-重建面向-ai-智能体的网页搜索",
           "sourceId": "money_leak",
           "sourceName": "漏钱型",
           "sourceDesc": "订单入口、转化漏斗、线索流失",
           "type": "boss_decision_topic",
-          "title": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中",
-          "spreadTitle": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中",
+          "title": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索",
+          "spreadTitle": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
-          "relevance": "Google将\"Computer Use\"功能直接集成到Gemini 3.5 Flash，模型可自主看、理解并操作电脑、浏览器和移动设备，此前该功能仅作为独立Gemini 2.5模型提供。结合函数调用、Search和Maps等工具，开发者…；社群里也出现了“用 Codex + Obsidian，把装修行业经…”这类一线反馈。",
+          "relevance": "来源材料显示，Seltz 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 2 b、$200 m 等数字。；社群里也出现了“用 Codex + Obsidian，把装修行业经…”这类一线反馈。",
           "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
           "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
           "oldFrame": "AI 是一个提效工具。",
           "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
           "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
-          "evidence": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中；用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
+          "evidence": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索；用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260626-A21",
-                "title": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中",
-                "source": "The Decoder：AI News（RSS）",
-                "url": "https://the-decoder.com/google-bakes-computer-control-directly-into-gemini-3-5-flash-letting-the-model-see-and-operate-your-screen",
-                "note": "Google将\"Computer Use\"功能直接集成到Gemini 3.5 Flash，模型可自主看、理解并操作电脑、浏览器和移动设备，此前该功能仅作为独立Gemini 2.5模型提供。结合函数调用、Search和Maps等工具，开发者可构建跨平台智能体，用于软件测试或办公自动化。在OSWorld基准测试中，Gemini 3.5 Flash得分78.4，…"
+                "id": "SIG-20260626-A01",
+                "title": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索",
+                "source": "fortune.com",
+                "url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+                "note": "来源材料显示，Seltz 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 2 b、$200 m 等数字。"
               }
             ],
             "viewpoints": [],
@@ -7128,8 +7214,8 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "The Decoder：AI News（RSS）",
-          "url": "https://the-decoder.com/google-bakes-computer-control-directly-into-gemini-3-5-flash-letting-the-model-see-and-operate-your-screen",
+          "source": "fortune.com",
+          "url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
           "date": "2026-06-26",
           "score": 97,
           "grade": "S",
@@ -7145,7 +7231,7 @@ window.WaveSightTopicCenter = {
           "angles": [
             {
               "title": "开头直接问漏钱",
-              "note": "不要先讲 Google将电脑控制功能直接集成到Gemini … 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+              "note": "不要先讲 Seltz 获得 1250 万美元种子轮融资，重建… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
             },
             {
               "title": "中段拆入口链路",
@@ -7166,32 +7252,32 @@ window.WaveSightTopicCenter = {
       ],
       "save_headcount": [
         {
-          "id": "save_headcount-sustainability-atlas-发布-ai-智能体与工作流自动化案例",
+          "id": "save_headcount-runlayer-获得-3000-万美元-a-轮融资-推进企业-ai-工作流",
           "sourceId": "save_headcount",
           "sourceName": "省人型",
           "sourceDesc": "少招人、少返工、少加班",
           "type": "boss_decision_topic",
-          "title": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例",
-          "spreadTitle": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例",
+          "title": "Runlayer 获得 3000 万美元 A 轮融资，推进企业 AI 工作流",
+          "spreadTitle": "Runlayer 获得 3000 万美元 A 轮融资，推进企业 AI 工作流",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "AI 进入企业的第一步，不是替代一个完整的人，而是接住岗位里反复发生、规则清楚、结果可验收的动作。",
-          "relevance": "来源材料显示，Case study 的AI 商业动作涉及销售和收入团队流程；原文同时出现 $7 等数字。；这类信号比“AI 很强”更接近老板的组织账。",
+          "relevance": "来源材料显示，Runlayer 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $30 m 等数字。；这类信号比“AI 很强”更接近老板的组织账。",
           "bossPain": "人越招越多，流程没有变短，管理成本反而被重复动作拖住。",
           "moneyLine": "少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。",
           "oldFrame": "AI 上线就是裁员。",
           "newFrame": "AI 上线的第一阶段，是把岗位动作拆小，让公司少招重复岗位。",
           "actionHint": "选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。",
-          "evidence": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例；本次发布中有一些微妙之处在实践中非常重要。这不仅仅是您通过Slack以一对一形式与Claude互动。在这种情况下， Claude充当同事，任何用户都可以以共享的方式进入。我们已经看到一些Agent编码系统开始采用这种模式（以及OpenCl…；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "Runlayer 获得 3000 万美元 A 轮融资，推进企业 AI 工作流；本次发布中有一些微妙之处在实践中非常重要。这不仅仅是您通过Slack以一对一形式与Claude互动。在这种情况下， Claude充当同事，任何用户都可以以共享的方式进入。我们已经看到一些Agent编码系统开始采用这种模式（以及OpenCl…；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260626-A04",
-                "title": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例",
-                "source": "sustainableatlas.org",
-                "url": "https://sustainableatlas.org/post/case-study-ai-agents-workflow-automation-a-startup-to-enterprise-scale-story-1207",
-                "note": "来源材料显示，Case study 的AI 商业动作涉及销售和收入团队流程；原文同时出现 $7 等数字。"
+                "id": "SIG-20260626-A07",
+                "title": "Runlayer 获得 3000 万美元 A 轮融资，推进企业 AI 工作流",
+                "source": "runlayer.com",
+                "url": "https://www.runlayer.com/blog/series-A-30m-fundraise-felicis-khosla",
+                "note": "来源材料显示，Runlayer 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $30 m 等数字。"
               }
             ],
             "viewpoints": [
@@ -7215,8 +7301,8 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "sustainableatlas.org",
-          "url": "https://sustainableatlas.org/post/case-study-ai-agents-workflow-automation-a-startup-to-enterprise-scale-story-1207",
+          "source": "runlayer.com",
+          "url": "https://www.runlayer.com/blog/series-A-30m-fundraise-felicis-khosla",
           "date": "2026-06-26",
           "score": 90,
           "grade": "S",
@@ -7240,7 +7326,7 @@ window.WaveSightTopicCenter = {
             },
             {
               "title": "给一个当天可做的小动作",
-              "note": "用 Sustainability Atlas 发布 A… 做例子，把大流程拆成一个可验收动作。"
+              "note": "用 Runlayer 获得 3000 万美元 A 轮融… 做例子，把大流程拆成一个可验收动作。"
             }
           ],
           "writingStructure": [
@@ -7268,17 +7354,17 @@ window.WaveSightTopicCenter = {
           "oldFrame": "AI 是员工自己研究的新工具。",
           "newFrame": "AI 是同行正在重做经营速度的生产系统。",
           "actionHint": "每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？",
-          "evidence": "用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业；Google将电脑控制功能直接集成到Gemini 3.5 Flash中；我们是否正在朝着AI可以做到人类所能做的一切的未来迈进？ Edwin Chen （ @ echen ）认为我们可能会这样做。他是Surge AI的首席执行官， Surge AI是前沿实验室最大的专家数据提供商之一。Surge在没有筹集任何…",
+          "evidence": "用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业；Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索；我们是否正在朝着AI可以做到人类所能做的一切的未来迈进？ Edwin Chen （ @ echen ）认为我们可能会这样做。他是Surge AI的首席执行官， Surge AI是前沿实验室最大的专家数据提供商之一。Surge在没有筹集任何…",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260626-A21",
-                "title": "Google将电脑控制功能直接集成到Gemini 3.5 Flash中",
-                "source": "The Decoder：AI News（RSS）",
-                "url": "https://the-decoder.com/google-bakes-computer-control-directly-into-gemini-3-5-flash-letting-the-model-see-and-operate-your-screen",
-                "note": "Google将\"Computer Use\"功能直接集成到Gemini 3.5 Flash，模型可自主看、理解并操作电脑、浏览器和移动设备，此前该功能仅作为独立Gemini 2.5模型提供。结合函数调用、Search和Maps等工具，开发者可构建跨平台智能体，用于软件测试或办公自动化。在OSWorld基准测试中，Gemini 3.5 Flash得分78.4，…"
+                "id": "SIG-20260626-A01",
+                "title": "Seltz 获得 1250 万美元种子轮融资，重建面向 AI 智能体的网页搜索",
+                "source": "fortune.com",
+                "url": "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/",
+                "note": "来源材料显示，Seltz 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 2 b、$200 m 等数字。"
               }
             ],
             "viewpoints": [
@@ -7340,32 +7426,32 @@ window.WaveSightTopicCenter = {
       ],
       "pitfall": [
         {
-          "id": "pitfall-it早报0626-anthropic登顶独角兽榜-文心一言官网关闭-苹果涨价",
+          "id": "pitfall-dreamztech-案例显示-ai-财务自动化将月结从-11-天缩短到-3-天",
           "sourceId": "pitfall",
           "sourceName": "避坑型",
           "sourceDesc": "工具乱买、权限失控、流程没拆",
           "type": "boss_decision_topic",
-          "title": "IT早报0626：Anthropic登顶独角兽榜，文心一言官网关闭，苹果涨价",
-          "spreadTitle": "IT早报0626：Anthropic登顶独角兽榜，文心一言官网关闭，苹果涨价",
+          "title": "DreamzTech 案例显示 AI 财务自动化将月结从 11 天缩短到 3 天",
+          "spreadTitle": "DreamzTech 案例显示 AI 财务自动化将月结从 11 天缩短到 3 天",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "AI 从生成内容走向执行动作后，企业问题从“会不会用”变成“谁审核、谁授权、谁负责”。",
-          "relevance": "Anthropic以6.6万亿价值登顶胡润《2026全球独角兽榜》，OpenAI紧随其后。Anthropic致信美参议院，指责阿里实施\"最大规模蒸馏攻击\"。月之暗面表示Kimi目标与海外三家模型竞争，B端占比持续提升。文心一言官网提问入口…；这类信号适合写给老板看，因为它直接关系到业务风险。",
+          "relevance": "原文描述产品把会议、邮件、工单、CRM 或业务数据转为可执行动作。；这类信号适合写给老板看，因为它直接关系到业务风险。",
           "bossPain": "AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。",
           "moneyLine": "权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。",
           "oldFrame": "AI 越自主越好。",
           "newFrame": "AI 越自主，越要先设计权限、复核和责任人。",
           "actionHint": "先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。",
-          "evidence": "IT早报0626：Anthropic登顶独角兽榜，文心一言官网关闭，苹果涨价；我们没有在旧金山做这种垃圾，因为我们看到了这些无情的政治家对亚洲长老杀害的公民所做的事情公共教育被拆除如果你开始计算他们的身体并谈论他们的退位职责，那么强硬的左派就无法获胜；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "DreamzTech 案例显示 AI 财务自动化将月结从 11 天缩短到 3 天；我们没有在旧金山做这种垃圾，因为我们看到了这些无情的政治家对亚洲长老杀害的公民所做的事情公共教育被拆除如果你开始计算他们的身体并谈论他们的退位职责，那么强硬的左派就无法获胜；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260626-A19",
-                "title": "IT早报0626：Anthropic登顶独角兽榜，文心一言官网关闭，苹果涨价",
-                "source": "IT之家（RSS）",
-                "url": "https://www.ithome.com/0/968/735.htm",
-                "note": "Anthropic以6.6万亿价值登顶胡润《2026全球独角兽榜》，OpenAI紧随其后。Anthropic致信美参议院，指责阿里实施\"最大规模蒸馏攻击\"。月之暗面表示Kimi目标与海外三家模型竞争，B端占比持续提升。文心一言官网提问入口6月25日关闭，7月26日服务迁移至百度文心网站。苹果因AI数据中心内存短缺提高Mac、iPad价格。尊界S800 Gr…"
+                "id": "SIG-20260626-A11",
+                "title": "DreamzTech 案例显示 AI 财务自动化将月结从 11 天缩短到 3 天",
+                "source": "dreamztech.com",
+                "url": "https://www.dreamztech.com/ai-finance-automation-agent-case-study/",
+                "note": "原文描述产品把会议、邮件、工单、CRM 或业务数据转为可执行动作。"
               }
             ],
             "viewpoints": [
@@ -7389,8 +7475,8 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "IT之家（RSS）",
-          "url": "https://www.ithome.com/0/968/735.htm",
+          "source": "dreamztech.com",
+          "url": "https://www.dreamztech.com/ai-finance-automation-agent-case-study/",
           "date": "2026-06-26",
           "score": 88,
           "grade": "A",
@@ -7414,7 +7500,7 @@ window.WaveSightTopicCenter = {
             },
             {
               "title": "用当天案例推进",
-              "note": "用 Anthropic登顶独角兽榜，文心一言官网关闭，… 做钩子，落到企业内部的授权和复核表。"
+              "note": "用 DreamzTech 案例显示 AI 财务自动化将… 做钩子，落到企业内部的授权和复核表。"
             }
           ],
           "writingStructure": [
@@ -7427,32 +7513,32 @@ window.WaveSightTopicCenter = {
       ],
       "counterintuitive": [
         {
-          "id": "counterintuitive-patronus-ai-获-5000-万美元-b-轮融资-构建-数字世界-压力测试-ai-智能体",
+          "id": "counterintuitive-zensar-发布-zenseai-agentmesh-加速企业智能体编排",
           "sourceId": "counterintuitive",
           "sourceName": "反常识型",
           "sourceDesc": "推翻流行说法，形成可传播判断",
           "type": "boss_decision_topic",
-          "title": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体",
-          "spreadTitle": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体",
+          "title": "Zensar 发布 ZenseAI.AgentMesh，加速企业智能体编排",
+          "spreadTitle": "Zensar 发布 ZenseAI.AgentMesh，加速企业智能体编排",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "反常识点在于：AI 越强，越不是所有人都被替代，而是会拆任务、会验收结果的人更值钱。",
-          "relevance": "Patronus AI 宣布完成 5000 万美元 B 轮融资，由 Greenfield Partners 领投，Notable Capital、Lightspeed、Datadog 和 Samsung 参投，累计融资达 7000 万美元…；社群里“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”的讨论也在提醒老板，问题不再只是怎么做。",
+          "relevance": "来源材料显示，Zensar Technologies 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 50 B 等数字。；社群里“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”的讨论也在提醒老板，问题不再只是怎么做。",
           "bossPain": "工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。",
           "moneyLine": "工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。",
           "oldFrame": "追最新 AI 工具。",
           "newFrame": "先沉淀任务、语料、步骤和验收标准，再让 AI 接手。",
           "actionHint": "今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。",
-          "evidence": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体；我们是否正在朝着AI可以做到人类所能做的一切的未来迈进？ Edwin Chen （ @ echen ）认为我们可能会这样做。他是Surge AI的首席执行官， Surge AI是前沿实验室最大的专家数据提供商之一。Surge在没有筹集任何…；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "Zensar 发布 ZenseAI.AgentMesh，加速企业智能体编排；我们是否正在朝着AI可以做到人类所能做的一切的未来迈进？ Edwin Chen （ @ echen ）认为我们可能会这样做。他是Surge AI的首席执行官， Surge AI是前沿实验室最大的专家数据提供商之一。Surge在没有筹集任何…；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260626-A03",
-                "title": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体",
-                "source": "TechCrunch：AI（RSS）",
-                "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents",
-                "note": "Patronus AI 宣布完成 5000 万美元 B 轮融资，由 Greenfield Partners 领投，Notable Capital、Lightspeed、Datadog 和 Samsung 参投，累计融资达 7000 万美元。该公司由前 Meta AI 研究员于 2023 年创立，利用\"数字世界模型\"创建网站和内部系统的模拟副本，通过强化学习…"
+                "id": "SIG-20260626-A05",
+                "title": "Zensar 发布 ZenseAI.AgentMesh，加速企业智能体编排",
+                "source": "markets.ft.com",
+                "url": "https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1",
+                "note": "来源材料显示，Zensar Technologies 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 50 B 等数字。"
               }
             ],
             "viewpoints": [
@@ -7476,8 +7562,8 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "TechCrunch：AI（RSS）",
-          "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents",
+          "source": "markets.ft.com",
+          "url": "https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1",
           "date": "2026-06-26",
           "score": 95,
           "grade": "S",
@@ -7514,40 +7600,40 @@ window.WaveSightTopicCenter = {
       ],
       "small_role": [
         {
-          "id": "small_role-sustainability-atlas-发布-ai-智能体与工作流自动化案例",
+          "id": "small_role-dreamztech-案例显示-ai-财务自动化将月结从-11-天缩短到-3-天",
           "sourceId": "small_role",
           "sourceName": "小岗位型",
           "sourceDesc": "客服、销售、财务、标书、运营",
           "type": "boss_decision_topic",
-          "title": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例",
-          "spreadTitle": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例",
+          "title": "DreamzTech 案例显示 AI 财务自动化将月结从 11 天缩短到 3 天",
+          "spreadTitle": "DreamzTech 案例显示 AI 财务自动化将月结从 11 天缩短到 3 天",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位、一个明确动作、一个可验收结果里。",
-          "relevance": "来源材料显示，Case study 的AI 商业动作涉及销售和收入团队流程；原文同时出现 $7 等数字。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
+          "relevance": "原文描述产品把会议、邮件、工单、CRM 或业务数据转为可执行动作。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
           "bossPain": "老板最怕 AI 项目太大、太贵、太慢，最后没人用。",
           "moneyLine": "一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。",
           "oldFrame": "做一个什么都能干的 AI 平台。",
           "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
           "actionHint": "先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。",
-          "evidence": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例；Sustainability Atlas 发布 AI 智能体与工作流自动化案例；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "DreamzTech 案例显示 AI 财务自动化将月结从 11 天缩短到 3 天；Runlayer 获得 3000 万美元 A 轮融资，推进企业 AI 工作流；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260626-A04",
-                "title": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例",
-                "source": "sustainableatlas.org",
-                "url": "https://sustainableatlas.org/post/case-study-ai-agents-workflow-automation-a-startup-to-enterprise-scale-story-1207",
-                "note": "来源材料显示，Case study 的AI 商业动作涉及销售和收入团队流程；原文同时出现 $7 等数字。"
+                "id": "SIG-20260626-A11",
+                "title": "DreamzTech 案例显示 AI 财务自动化将月结从 11 天缩短到 3 天",
+                "source": "dreamztech.com",
+                "url": "https://www.dreamztech.com/ai-finance-automation-agent-case-study/",
+                "note": "原文描述产品把会议、邮件、工单、CRM 或业务数据转为可执行动作。"
               },
               {
                 "kind": "business_signal",
-                "id": "SIG-20260626-A04",
-                "title": "Sustainability Atlas 发布 AI 智能体与工作流自动化案例",
-                "source": "sustainableatlas.org",
-                "url": "https://sustainableatlas.org/post/case-study-ai-agents-workflow-automation-a-startup-to-enterprise-scale-story-1207",
-                "note": "来源材料显示，Case study 的AI 商业动作涉及销售和收入团队流程；原文同时出现 $7 等数字。"
+                "id": "SIG-20260626-A07",
+                "title": "Runlayer 获得 3000 万美元 A 轮融资，推进企业 AI 工作流",
+                "source": "runlayer.com",
+                "url": "https://www.runlayer.com/blog/series-A-30m-fundraise-felicis-khosla",
+                "note": "来源材料显示，Runlayer 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $30 m 等数字。"
               }
             ],
             "viewpoints": [],
@@ -7562,8 +7648,8 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "sustainableatlas.org",
-          "url": "https://sustainableatlas.org/post/case-study-ai-agents-workflow-automation-a-startup-to-enterprise-scale-story-1207",
+          "source": "dreamztech.com",
+          "url": "https://www.dreamztech.com/ai-finance-automation-agent-case-study/",
           "date": "2026-06-26",
           "score": 97,
           "grade": "S",
@@ -7600,32 +7686,32 @@ window.WaveSightTopicCenter = {
       ],
       "big_small_contrast": [
         {
-          "id": "big_small_contrast-patronus-ai-获-5000-万美元-b-轮融资-构建-数字世界-压力测试-ai-智能体",
+          "id": "big_small_contrast-netris-获得-1500-万美元-a-轮融资-帮助-ai-新云服务更快上线",
           "sourceId": "big_small_contrast",
           "sourceName": "大小对照型",
           "sourceDesc": "大融资对照小生意，大模型对照小岗位",
           "type": "boss_decision_topic",
-          "title": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体",
-          "spreadTitle": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体",
+          "title": "Netris 获得 1500 万美元 A 轮融资，帮助 AI 新云服务更快上线",
+          "spreadTitle": "Netris 获得 1500 万美元 A 轮融资，帮助 AI 新云服务更快上线",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "大新闻负责告诉你资本往哪里押，小机会负责告诉你老板明天愿意为什么付钱。",
-          "relevance": "Patronus AI 宣布完成 5000 万美元 B 轮融资，由 Greenfield Partners 领投，Notable Capital、Lightspeed、Datadog 和 Samsung 参投，累计融资达 7000 万美元…；同时社群里的“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”说明一线需求还在配置、流程和交付。",
+          "relevance": "来源材料显示，Netris 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $15M 等数字。；同时社群里的“全自动化月上百站，单月净赚3700刀：游戏攻略站底…”说明一线需求还在配置、流程和交付。",
           "bossPain": "老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。",
           "moneyLine": "大公司赚基础设施的钱，小服务商赚落地第一公里的钱。",
           "oldFrame": "AI 创业只能跟大模型和融资有关。",
           "newFrame": "普通人的 AI 机会在帮老板跨过配置、流程和交付门槛。",
           "actionHint": "把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。",
-          "evidence": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体；本次发布中有一些微妙之处在实践中非常重要。这不仅仅是您通过Slack以一对一形式与Claude互动。在这种情况下， Claude充当同事，任何用户都可以以共享的方式进入。我们已经看到一些Agent编码系统开始采用这种模式（以及OpenCl…；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+          "evidence": "Netris 获得 1500 万美元 A 轮融资，帮助 AI 新云服务更快上线；本次发布中有一些微妙之处在实践中非常重要。这不仅仅是您通过Slack以一对一形式与Claude互动。在这种情况下， Claude充当同事，任何用户都可以以共享的方式进入。我们已经看到一些Agent编码系统开始采用这种模式（以及OpenCl…；全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260626-A03",
-                "title": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体",
-                "source": "TechCrunch：AI（RSS）",
-                "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents",
-                "note": "Patronus AI 宣布完成 5000 万美元 B 轮融资，由 Greenfield Partners 领投，Notable Capital、Lightspeed、Datadog 和 Samsung 参投，累计融资达 7000 万美元。该公司由前 Meta AI 研究员于 2023 年创立，利用\"数字世界模型\"创建网站和内部系统的模拟副本，通过强化学习…"
+                "id": "SIG-20260626-A02",
+                "title": "Netris 获得 1500 万美元 A 轮融资，帮助 AI 新云服务更快上线",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/",
+                "note": "来源材料显示，Netris 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $15M 等数字。"
               }
             ],
             "viewpoints": [
@@ -7649,8 +7735,8 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "TechCrunch：AI（RSS）",
-          "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents",
+          "source": "TechCrunch AI",
+          "url": "https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/",
           "date": "2026-06-26",
           "score": 93,
           "grade": "S",
@@ -7702,17 +7788,17 @@ window.WaveSightTopicCenter = {
           "oldFrame": "写 AI 就要讲技术和趋势。",
           "newFrame": "写给老板的 AI 内容，要先有人、有场景、有结果。",
           "actionHint": "从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。",
-          "evidence": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目；Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体；我们是否正在朝着AI可以做到人类所能做的一切的未来迈进？ Edwin Chen （ @ echen ）认为我们可能会这样做。他是Surge AI的首席执行官， Surge AI是前沿实验室最大的专家数据提供商之一。Surge在没有筹集任何…",
+          "evidence": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目；Zensar 发布 ZenseAI.AgentMesh，加速企业智能体编排；我们是否正在朝着AI可以做到人类所能做的一切的未来迈进？ Edwin Chen （ @ echen ）认为我们可能会这样做。他是Surge AI的首席执行官， Surge AI是前沿实验室最大的专家数据提供商之一。Surge在没有筹集任何…",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260626-A03",
-                "title": "Patronus AI 获 5000 万美元 B 轮融资，构建\"数字世界\"压力测试 AI 智能体",
-                "source": "TechCrunch：AI（RSS）",
-                "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents",
-                "note": "Patronus AI 宣布完成 5000 万美元 B 轮融资，由 Greenfield Partners 领投，Notable Capital、Lightspeed、Datadog 和 Samsung 参投，累计融资达 7000 万美元。该公司由前 Meta AI 研究员于 2023 年创立，利用\"数字世界模型\"创建网站和内部系统的模拟副本，通过强化学习…"
+                "id": "SIG-20260626-A05",
+                "title": "Zensar 发布 ZenseAI.AgentMesh，加速企业智能体编排",
+                "source": "markets.ft.com",
+                "url": "https://markets.ft.com/data/announce/detail?dockey=600-202606190950PR_NEWS_USPRX____IO87878-1",
+                "note": "来源材料显示，Zensar Technologies 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 50 B 等数字。"
               }
             ],
             "viewpoints": [

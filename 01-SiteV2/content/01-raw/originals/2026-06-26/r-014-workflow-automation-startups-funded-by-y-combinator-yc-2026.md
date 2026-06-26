@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-014
 title: "Workflow Automation Startups funded by Y Combinator (YC) 2026"

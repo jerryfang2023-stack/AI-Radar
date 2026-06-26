@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-033
 title: "Enterprise AI Implementation Guide: Strategy to Production"

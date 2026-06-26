@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-115
 title: "So what is Leverage doing in AI? Quick peek here - Instagram"

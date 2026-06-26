@@ -1,0 +1,89 @@
+---
+id: SIG-20260626-A03
+type: signal_card
+signal_type: funding
+title: "Runlayer Raises $30M Series A to Help Enterprises Go All In On AI"
+date: 2026-06-26
+status: published
+source_title: "Runlayer Raises $30M Series A to Help Enterprises Go All In On AI"
+asset_level: frontstage
+evidence_gate: core_evidence_passed
+fact_draft_gate: passed
+created_at: 2026-06-26T07:29:05.388Z
+updated_at: 2026-06-26T07:29:05.388Z
+
+raw_refs: ["R-003"]
+pool_refs: ["P-003"]
+primary_raw:
+  raw_ref: R-003
+  raw_archive: "01-SiteV2/content/01-raw/originals/2026-06-26/r-003-runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai.md"
+  raw_json: "01-SiteV2/content/01-raw/originals/2026-06-26/r-003-runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai.json"
+  source_url: "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html"
+  full_text_hash: "6fd7da0cbf7f6306"
+  source_level: B
+  extraction_quality: high
+  has_full_text: true
+  pool_routes:
+    - core_pool
+  raw_qc_decision: allow
+  importance_type: important_funding
+  importance_score: 5
+
+formal_tags:
+  track: ["track-ai-agent", "track-enterprise-workflow"]
+  function: ["function-sales"]
+  scenario: ["scenario-sales-briefing"]
+  customer: ["customer-enterprise"]
+  evidence: ["evidence-funding"]
+  stage: ["stage-rising"]
+  region: []
+  source: ["source-industry-data"]
+
+opportunity_signals:
+  schema_version: "opportunity-signals-v1"
+  buyer_or_user: ["sales_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["sales", "it_security"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["funding_round", "customer_deployment", "governance_requirement"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  adoption_evidence: ["named_customer"]
+  source_evidence_type: ["funding_news"]
+  evidence_basis: "raw_source_text"
+  source_excerpt: "Runlayer Raises $30M Series A to Help Enterprises Go All In On AI Runlayer Raises $30M Series A to Help Enterprises Go All In On AI NEW YORK 获得 $30 m Series A 融资。"
+  missing_fields: ["product_form", "delivery_model"]
+
+signal_owner: "Runlayer"
+
+frontend:
+  displayTitle: "Runlayer Raises $30M Series A to Help Enterprises Go All In On AI"
+  sourceLinks:
+    - "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html"
+---
+
+# Runlayer Raises $30M Series A to Help Enterprises Go All In On AI
+
+## 新闻事实
+
+NEW YORK 获得 $30 m Series A 融资。
+
+## 原文要点
+
+- 来源材料显示，Runlayer 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $30 m 等数字。
+- 来源材料显示，Runlayer 的产品或平台动作涉及销售和收入团队流程。
+- 来源材料显示，Runlayer 的产品或平台动作涉及销售和收入团队流程；原文同时出现 Fortune 500 等数字。
+- 来源材料显示，Runlayer 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $30 m、$42 m 等数字。
+- 来源材料显示，Runlayer 的AI 商业动作涉及销售和收入团队流程。
+
+## 价值描述
+
+来源材料显示，Runlayer 的产品或平台动作涉及销售和收入团队流程。
+
+## 可见原文片段
+
+来源材料显示，Runlayer 的融资或资金流向涉及销售和收入团队流程；原文同时出现 $30 m 等数字。
+
+## 证据边界
+
+none

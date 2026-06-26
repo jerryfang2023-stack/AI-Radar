@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-055
 title: "Agentic AI startup Quash raised $635K Pre-seed funding from Arali Ventures 鈥?Incubees"

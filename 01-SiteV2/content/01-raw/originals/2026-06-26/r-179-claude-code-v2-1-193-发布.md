@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: ""
-collected_at: 2026-06-26T03:32:32.424Z
+collected_at: 2026-06-26T07:13:35.054Z
 language: mixed
 full_text_hash: 4ce51b4e2c949682
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-179-claude-code-v2-1-193-发布.md"
@@ -45,7 +45,7 @@ capture_scope: summary_only
 visible_range: "采集通道提供的标题与摘要"
 evidence_level: discovery_only
 discovery_source: "AI HOT"
-discovery_record: {"discovery_title":"Claude Code v2.1.193 发布","discovery_summary":"Claude Code v2.1.193 新增 `autoMode.classifyAllShell` 设置，将全部 Bash/PowerShell 命令经自动模式分类器处理。自动模式拒绝原因现加入转录、拒绝提示及 `/permissions` 页面。新增 `claude_code.assistant_response` OpenTelemetry 日志事件（默认不记录，需设置 `OTEL_LOG_ASSISTANT_RESPONSES=1`）。Bash 模式支持实时文件路径自动补全；MCP 服务器需认证时显示启动提示。新增空闲后台 shell 命令自动内存压力回收（可禁用）。修复 `/model` UI 状态滞后、后台任务误取消、…","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"","discovered_at":"2026-06-26T03:23:11.039Z","rank_on_page":7,"discovery_status":"discovered"}
+discovery_record: {"discovery_title":"Claude Code v2.1.193 发布","discovery_summary":"Claude Code v2.1.193 新增 `autoMode.classifyAllShell` 设置，将全部 Bash/PowerShell 命令经自动模式分类器处理。自动模式拒绝原因现加入转录、拒绝提示及 `/permissions` 页面。新增 `claude_code.assistant_response` OpenTelemetry 日志事件（默认不记录，需设置 `OTEL_LOG_ASSISTANT_RESPONSES=1`）。Bash 模式支持实时文件路径自动补全；MCP 服务器需认证时显示启动提示。新增空闲后台 shell 命令自动内存压力回收（可禁用）。修复 `/model` UI 状态滞后、后台任务误取消、…","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"","discovered_at":"2026-06-26T07:06:28.169Z","rank_on_page":7,"discovery_status":"discovered"}
 source_role: discovery_source
 origin_fetch_status: "summary_only"
 paywall_status: none
@@ -55,8 +55,8 @@ url_hash: e3b0c44298fc1c14
 content_hash: 4ce51b4e2c949682
 semantic_hash: 3f8b3c8f0087b91b
 duplicate_of: ""
-first_seen_at: "2026-06-26T03:32:32.424Z"
-last_seen_at: 2026-06-26T03:32:32.424Z
+first_seen_at: "2026-06-26T07:13:35.054Z"
+last_seen_at: 2026-06-26T07:13:35.054Z
 update_detected: false
 raw_status: ignored
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
@@ -185,7 +185,7 @@ Claude Code v2.1.193 新增 `autoMode.classifyAllShell` 设置，将全部 Bash/
 - discovery_source: AI HOT
 - source_role: discovery_source
 - origin_fetch_status: summary_only
-- discovery_record: {"discovery_title":"Claude Code v2.1.193 发布","discovery_summary":"Claude Code v2.1.193 新增 `autoMode.classifyAllShell` 设置，将全部 Bash/PowerShell 命令经自动模式分类器处理。自动模式拒绝原因现加入转录、拒绝提示及 `/permissions` 页面。新增 `claude_code.assistant_response` OpenTelemetry 日志事件（默认不记录，需设置 `OTEL_LOG_ASSISTANT_RESPONSES=1`）。Bash 模式支持实时文件路径自动补全；MCP 服务器需认证时显示启动提示。新增空闲后台 shell 命令自动内存压力回收（可禁用）。修复 `/model` UI 状态滞后、后台任务误取消、…","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"","discovered_at":"2026-06-26T03:23:11.039Z","rank_on_page":7,"discovery_status":"discovered"}
+- discovery_record: {"discovery_title":"Claude Code v2.1.193 发布","discovery_summary":"Claude Code v2.1.193 新增 `autoMode.classifyAllShell` 设置，将全部 Bash/PowerShell 命令经自动模式分类器处理。自动模式拒绝原因现加入转录、拒绝提示及 `/permissions` 页面。新增 `claude_code.assistant_response` OpenTelemetry 日志事件（默认不记录，需设置 `OTEL_LOG_ASSISTANT_RESPONSES=1`）。Bash 模式支持实时文件路径自动补全；MCP 服务器需认证时显示启动提示。新增空闲后台 shell 命令自动内存压力回收（可禁用）。修复 `/model` UI 状态滞后、后台任务误取消、…","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"","discovered_at":"2026-06-26T07:06:28.169Z","rank_on_page":7,"discovery_status":"discovered"}
 
 ## 原始摘要 / 采集文本
 

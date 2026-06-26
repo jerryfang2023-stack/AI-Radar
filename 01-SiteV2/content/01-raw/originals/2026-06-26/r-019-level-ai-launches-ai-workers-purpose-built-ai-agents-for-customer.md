@@ -1,0 +1,261 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-019
+title: "Level AI launches AI Workers, purpose-built AI agents for customer ..."
+original_url: "https://www.prnewswire.com/news-releases/level-ai-launches-ai-workers-purpose-built-ai-agents-for-customer-centric-teams-302771976.html"
+canonical_url: "https://prnewswire.com/news-releases/level-ai-launches-ai-workers-purpose-built-ai-agents-for-customer-centric-teams-302771976.html"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-26T07:13:34.333Z
+language: mixed
+full_text_hash: d5359dfbb9a94d2f
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-019-level-ai-launches-ai-workers-purpose-built-ai-agents-for-customer.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-019-level-ai-launches-ai-workers-purpose-built-ai-agents-for-customer.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":4796,"paragraph_count":26,"sentence_count":28,"boilerplate_hits":0,"symbol_ratio":0.0004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 4796
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d5359dfbb9a94d2f","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 325fe5f3f64048d3
+content_hash: d5359dfbb9a94d2f
+semantic_hash: 2953806fb888a42e
+duplicate_of: ""
+first_seen_at: "2026-06-26T07:13:34.333Z"
+last_seen_at: 2026-06-26T07:13:34.333Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","PwC"],"products":["agents","agent","copilot","Agent"],"people":[],"industries":["法律 / 法务","开发者工具","企业服务"],"roles":["法务 / 律师"],"workflows":["合同审阅 / 法律研究"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","法务"],"numbers":["80%","2026","14","100","25","000","56%","21 %"],"quotes":["Every AI tool CX operations has been given stops at summarization,","The actual workflow, from insight to coaching plan to quality improvement, still runs on manual effort.","Contact centers ran out of headcount strategies years ago,"]}
+evidence_seed: {"company_actions":["MOUNTAIN VIEW, Calif.","Nearly 100 enterprise contact centers are already running AI Workers, with more than 25,000 Worker runs executed and overwhelmingly positive user feedback.","Teams at Smartsheet, VistaPrint, and Ollie Pets use them in daily operations."],"case_details":[", May 14, 2026 /PRNewswire/ -- Level AI, the customer intelligence platform for enterprise contact centers, today announced AI Workers, a suite of specialized AI agents each scoped to a specific customer-centric role, automating the research, analysis, and planning workflows that consume the majority of time for coaches, analysts, QA leads, and CX executives."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"number","text":"AI agents are rewriting how enterprises operate, from coding agents producing over 80% of code to legal agents handling deep research and review ... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"MOUNTAIN VIEW, Calif.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":", May 14, 2026 /PRNewswire/ -- Level AI, the customer intelligence platform for enterprise contact centers, today announced AI Workers, a suite of specialized AI agents each scoped to a specific customer-centric role, automating the research, analysis, and planning workflows that consume the majority of time for coaches, analysts, QA leads, and CX executives.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Nearly 100 enterprise contact centers are already running AI Workers, with more than 25,000 Worker runs executed and overwhelmingly positive user feedback.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Teams at Smartsheet, VistaPrint, and Ollie Pets use them in daily operations.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"AI agents are rewriting how enterprises operate, from coding agents producing over 80% of code to legal agents handling deep research and review.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Level AI launches AI Workers, purpose-built AI agents for customer ...
+
+## clean_text
+
+MOUNTAIN VIEW, Calif. , May 14, 2026 /PRNewswire/ -- Level AI, the customer intelligence platform for enterprise contact centers, today announced AI Workers, a suite of specialized AI agents each scoped to a specific customer-centric role, automating the research, analysis, and planning workflows that consume the majority of time for coaches, analysts, QA leads, and CX executives.
+Nearly 100 enterprise contact centers are already running AI Workers, with more than 25,000 Worker runs executed and overwhelmingly positive user feedback. Teams at Smartsheet, VistaPrint, and Ollie Pets use them in daily operations.
+AI agents are rewriting how enterprises operate, from coding agents producing over 80% of code to legal agents handling deep research and review. In customer experience, that investment has gone almost entirely to the front office. Over the past decade, enterprise CX has invested billions in voice bots, chat deflection, self-service portals, and IVR routing. But the people running operations behind those interactions received none of it.
+General-purpose AI tools haven't met this need. They solve for shallow extraction: summarize a call, tag a sentiment, but don't account for scoring rubrics or the workflows that connect an insight to a coaching plan, a quality trend, or a product fix. In fact, 56% of CEOs report no measurable return from AI investments ( PwC Global CEO Survey, 2026 ).
+"Every AI tool CX operations has been given stops at summarization," said Ashish Nagar, CEO and co-founder of Level AI. "The actual workflow, from insight to coaching plan to quality improvement, still runs on manual effort."
+Each AI Worker owns a defined job, produces a specific deliverable, and runs on the same customer intelligence data that an organization's QA and analytics teams already use. The launch includes:
+Coaching Plan Worker which reads every interaction for an agent and produces a structured coaching brief with specific calls, moments, and talking points
+Conversation Research Worker which searches transcripts semantically and produces thematic research reports with direct customer language
+Executive Research Worker which runs multi-step investigations across data domains and synthesizes cited long-form reports
+Additional workers at launch include the Conversation Analytics, Team Performance, Product Feedback, Resolution Insights, Sentiment Insights, iCSAT Insights, and VoC.
+AI Workers run on a shared intelligence layer that links conversations and transcripts, QA frameworks, CRM records, team hierarchy, and AI-enriched signals such as sentiment, effort, resolution outcomes, and VoC themes. Every worker draws from the same scored and structured data that existing QA and analytics programs rely on, with no parallel data pipeline or reconciliation step.
+A dual retrieval system searches transcripts and queries structured data in the same request, while a multi-agent orchestration layer breaks complex queries into parallel sub-tasks. Every output traces back to the source data it came from.
+An enterprise benefits administration company that deployed AI Workers during beta reported that surfacing performance data and coaching opportunities through a single prompt fundamentally changed how their team prepares for client conversations.
+Their VP of Member Experience notes, "Having that level of information at our fingertips allows us to bring data and trends to our clients or use it internally for coaching on individual strengths, weaknesses, or opportunities within the tool. It has been really cool to work through."
+"Contact centers ran out of headcount strategies years ago," said Nagar, "Enterprise software is shifting from a system of record to a system of action. A copilot doubles a person's throughput at best. A worker creates a new line on the org chart. That is the operating model CX leaders need, and what this category is for."
+AI Workers are available now for Level AI customers. To learn more or request a demo, visit thelevel.ai/ai-workers .
+Media contact: Phyllis Fang, [email protected]
+SOURCE Level AI
+21 %
+more press release views with
+Request a Demo
+&times;
+Modal title
+Also from this source
+Level AI welcomes Rob Dwyer as the industry's first ever CX Executive in Residence
+Level AI proudly welcomes Rob Dwyer as the Customer Experience industry's first Executive in Residence (EIR). In this role, Rob, a recognized...
+Level AI Announces Major AI Virtual Agent Expansion: Delivering Human-Quality AI for Every Interaction
+Level AI, a leader in customer experience AI, is significantly expanding its full-stack agentic CX platform, redefining the standard for customer...
+More Releases From This Source
+Explore
+Computer & Electronics
+Computer Software
+Computer Software
+Data Analytics
+News Releases in Similar Topics
+
+## full_text
+
+MOUNTAIN VIEW, Calif. , May 14, 2026 /PRNewswire/ -- Level AI, the customer intelligence platform for enterprise contact centers, today announced AI Workers, a suite of specialized AI agents each scoped to a specific customer-centric role, automating the research, analysis, and planning workflows that consume the majority of time for coaches, analysts, QA leads, and CX executives.
+Nearly 100 enterprise contact centers are already running AI Workers, with more than 25,000 Worker runs executed and overwhelmingly positive user feedback. Teams at Smartsheet, VistaPrint, and Ollie Pets use them in daily operations.
+AI agents are rewriting how enterprises operate, from coding agents producing over 80% of code to legal agents handling deep research and review. In customer experience, that investment has gone almost entirely to the front office. Over the past decade, enterprise CX has invested billions in voice bots, chat deflection, self-service portals, and IVR routing. But the people running operations behind those interactions received none of it.
+General-purpose AI tools haven't met this need. They solve for shallow extraction: summarize a call, tag a sentiment, but don't account for scoring rubrics or the workflows that connect an insight to a coaching plan, a quality trend, or a product fix. In fact, 56% of CEOs report no measurable return from AI investments ( PwC Global CEO Survey, 2026 ).
+"Every AI tool CX operations has been given stops at summarization," said Ashish Nagar, CEO and co-founder of Level AI. "The actual workflow, from insight to coaching plan to quality improvement, still runs on manual effort."
+Each AI Worker owns a defined job, produces a specific deliverable, and runs on the same customer intelligence data that an organization's QA and analytics teams already use. The launch includes:
+Coaching Plan Worker which reads every interaction for an agent and produces a structured coaching brief with specific calls, moments, and talking points
+Conversation Research Worker which searches transcripts semantically and produces thematic research reports with direct customer language
+Executive Research Worker which runs multi-step investigations across data domains and synthesizes cited long-form reports
+Additional workers at launch include the Conversation Analytics, Team Performance, Product Feedback, Resolution Insights, Sentiment Insights, iCSAT Insights, and VoC.
+AI Workers run on a shared intelligence layer that links conversations and transcripts, QA frameworks, CRM records, team hierarchy, and AI-enriched signals such as sentiment, effort, resolution outcomes, and VoC themes. Every worker draws from the same scored and structured data that existing QA and analytics programs rely on, with no parallel data pipeline or reconciliation step.
+A dual retrieval system searches transcripts and queries structured data in the same request, while a multi-agent orchestration layer breaks complex queries into parallel sub-tasks. Every output traces back to the source data it came from.
+An enterprise benefits administration company that deployed AI Workers during beta reported that surfacing performance data and coaching opportunities through a single prompt fundamentally changed how their team prepares for client conversations.
+Their VP of Member Experience notes, "Having that level of information at our fingertips allows us to bring data and trends to our clients or use it internally for coaching on individual strengths, weaknesses, or opportunities within the tool. It has been really cool to work through."
+"Contact centers ran out of headcount strategies years ago," said Nagar, "Enterprise software is shifting from a system of record to a system of action. A copilot doubles a person's throughput at best. A worker creates a new line on the org chart. That is the operating model CX leaders need, and what this category is for."
+AI Workers are available now for Level AI customers. To learn more or request a demo, visit thelevel.ai/ai-workers .
+Media contact: Phyllis Fang, [email protected]
+SOURCE Level AI
+21 %
+more press release views with
+Request a Demo
+&times;
+Modal title
+Also from this source
+Level AI welcomes Rob Dwyer as the industry's first ever CX Executive in Residence
+Level AI proudly welcomes Rob Dwyer as the Customer Experience industry's first Executive in Residence (EIR). In this role, Rob, a recognized...
+Level AI Announces Major AI Virtual Agent Expansion: Delivering Human-Quality AI for Every Interaction
+Level AI, a leader in customer experience AI, is significantly expanding its full-stack agentic CX platform, redefining the standard for customer...
+More Releases From This Source
+Explore
+Computer & Electronics
+Computer Software
+Computer Software
+Data Analytics
+News Releases in Similar Topics
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":4796,"paragraph_count":26,"sentence_count":28,"boilerplate_hits":0,"symbol_ratio":0.0004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   AI agents are rewriting how enterprises operate, from coding agents producing over 80% of code to legal agents handling deep research and review ... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   MOUNTAIN VIEW, Calif.
+
+3. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   , May 14, 2026 /PRNewswire/ -- Level AI, the customer intelligence platform for enterprise contact centers, today announced AI Workers, a suite of specialized AI agents each scoped to a specific customer-centric role, automating the research, analysis, and planning workflows that consume the majority of time for coaches, analysts, QA leads, and CX executives.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Nearly 100 enterprise contact centers are already running AI Workers, with more than 25,000 Worker runs executed and overwhelmingly positive user feedback.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Teams at Smartsheet, VistaPrint, and Ollie Pets use them in daily operations.
+
+6. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   AI agents are rewriting how enterprises operate, from coding agents producing over 80% of code to legal agents handling deep research and review.
+
+## business_elements
+
+- companies: keyword search, Anysearch, PwC
+- products: agents, agent, copilot, Agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具, 企业服务
+- roles: 法务 / 律师
+- workflows: 合同审阅 / 法律研究
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 法务
+- numbers: 80%, 2026, 14, 100, 25, 000, 56%, 21 %
+- quotes: Every AI tool CX operations has been given stops at summarization, / The actual workflow, from insight to coaching plan to quality improvement, still runs on manual effort. / Contact centers ran out of headcount strategies years ago,
+
+## evidence_seed
+
+- company_actions: MOUNTAIN VIEW, Calif. / Nearly 100 enterprise contact centers are already running AI Workers, with more than 25,000 Worker runs executed and overwhelmingly positive user feedback. / Teams at Smartsheet, VistaPrint, and Ollie Pets use them in daily operations.
+- case_details: , May 14, 2026 /PRNewswire/ -- Level AI, the customer intelligence platform for enterprise contact centers, today announced AI Workers, a suite of specialized AI agents each scoped to a specific customer-centric role, automating the research, analysis, and planning workflows that consume the majority of time for coaches, analysts, QA leads, and CX executives.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+AI agents are rewriting how enterprises operate, from coding agents producing over 80% of code to legal agents handling deep research and review ... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

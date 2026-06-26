@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-121
 title: "May 19, 2026 - Rushi's"

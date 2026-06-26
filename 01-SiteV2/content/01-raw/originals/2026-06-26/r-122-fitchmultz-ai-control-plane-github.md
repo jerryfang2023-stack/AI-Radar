@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-122
 title: "fitchmultz/ai-control-plane - GitHub"

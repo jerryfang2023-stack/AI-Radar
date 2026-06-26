@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-097
 title: "10 Best Open Source Agent Projects to Star on GitHub (2026) - Flowith"

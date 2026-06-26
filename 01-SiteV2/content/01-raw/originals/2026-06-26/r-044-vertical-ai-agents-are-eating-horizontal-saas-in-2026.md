@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-044
 title: "Vertical AI Agents Are Eating Horizontal SaaS in 2026"

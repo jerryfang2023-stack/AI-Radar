@@ -1,0 +1,241 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-096
+title: "Investing in Probook"
+original_url: "https://www.a16z.news/p/investing-in-probook"
+canonical_url: "https://a16z.news/p/investing-in-probook"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-26T07:13:34.910Z
+language: mixed
+full_text_hash: 4d1e5eacf18af4f9
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-096-investing-in-probook.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-096-investing-in-probook.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 76
+extractor_diagnostics: {"readability_score":76,"text_length":5458,"paragraph_count":16,"sentence_count":43,"boilerplate_hits":7,"symbol_ratio":0.0007,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 5458
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4d1e5eacf18af4f9","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: eb5360db234dc60c
+content_hash: 4d1e5eacf18af4f9
+semantic_hash: f87e8abc02f08275
+duplicate_of: ""
+first_seen_at: "2026-06-26T07:13:34.910Z"
+last_seen_at: 2026-06-26T07:13:34.910Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["agents","copilot"],"people":[],"industries":["法律 / 法务","企业服务"],"roles":["CIO / IT 负责人","法务 / 律师"],"workflows":["合同审阅 / 法律研究"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","法务"],"numbers":["16","23","2026","$34 million","$40 million","14","260","2"],"quotes":[]}
+evidence_seed: {"company_actions":["### a16z leads Probook's Series A ... Jun 23, 2026 ... Our thesis is simple: in vertical AI, you do not win by adding another tool at the edge. You win by owning the hardest, most central decision in the business and building outward from it. Probook is doing exactly that in home services, and today... / query=vertical AI startup funding enterprise agents announced 2026 / intent=find_startups / path=capital_startup","Investing in Probook a16z leads Probook's Series A Alex Rampell , David Haber , Olivia Moore , and Seema Amble Jun 23, 2026 Share America | Tech | Opinion | Culture | Charts Every business has one decision that everything else bends around.","In home services, that decision is dispatch: which technician goes to which job, in what order, at what time."],"case_details":["Get it right and revenue, technician utilization, and customer experience all move up together."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"funding","text":"### a16z leads Probook's Series A ... Jun 23, 2026 ... Our thesis is simple: in vertical AI, you do not win by adding another tool at the edge. You win by owning the hardest, most central decision in the business and building outward from it. Probook is doing exactly that in home services, and today... / query=vertical AI startup funding enterprise agents announced 2026 / intent=find_startups / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Investing in Probook a16z leads Probook's Series A Alex Rampell , David Haber , Olivia Moore , and Seema Amble Jun 23, 2026 Share America | Tech | Opinion | Culture | Charts Every business has one decision that everything else bends around.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In home services, that decision is dispatch: which technician goes to which job, in what order, at what time.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"Get it right and revenue, technician utilization, and customer experience all move up together.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Get it wrong and no amount of marketing or lead-gen can save the day.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Dispatch is the brain of the business.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Investing in Probook
+
+## clean_text
+
+Investing in Probook
+a16z leads Probook's Series A
+Alex Rampell , David Haber , Olivia Moore , and Seema Amble
+Jun 23, 2026
+Share
+America | Tech | Opinion | Culture | Charts
+Every business has one decision that everything else bends around. In home services, that decision is dispatch: which technician goes to which job, in what order, at what time. Get it right and revenue, technician utilization, and customer experience all move up together. Get it wrong and no amount of marketing or lead-gen can save the day. Dispatch is the brain of the business.
+So it is striking that, for the last three years, almost everyone building AI for the trades skipped it. They rushed to the edges instead - voice agents, chat widgets, follow-up bots - clustered at the top of the funnel where leads come in. It is the most visible part of the business and the easiest place to bolt on a model. The result was a stack of disconnected point solutions, each owning a sliver of the customer, none of them talking to each other, and none of them touching the decision that actually determines whether an operator makes money.
+Our thesis is simple: in vertical AI, you do not win by adding another tool at the edge. You win by owning the hardest, most central decision in the business and building outward from it. Probook is doing exactly that in home services, and today we are thrilled to announce that a16z is leading Probook’s $34 million Series A, bringing the company’s total funding to $40 million after a seed round led by Sequoia.
+Probook built dispatch first, the part most vendors avoid because it is genuinely hard. Routing the closest available technician is easy; routing the right one is not. Technicians have different skills, conversion rates, and areas of expertise, and the gap between a good match and a bad one shows up directly in revenue. Only after owning that decision layer did Probook expand into the rest of the front office: intake, data scrubbing, customer messaging, and outbound.
+Because everything shares one context layer, the whole system works as one. Every customer stays on a single text thread with a single number, from the first call to the technician at the front door. Every inbound lead is answered with full information. Every booking is cleaned before it is assigned. Humans handle the exceptions; the software handles the rest. This is not a copilot that hands work back to an already-overloaded front office. It does the work, and operators add points to their EBITDA as a result.
+Probook is hard to replicate because of where it came from. CEO George Eliadis grew up in the industry, pressure washing alongside his dad in upstate New York across six summers in the truck. He knows what it is to be up on a ladder washing a house and miss the call that would have booked the next job. Years later, he spent a summer inside TR Miller, a $40 million HVAC, plumbing, and electrical shop in Illinois that became Probook’s first customer, and saw the same problems play out at scale.
+George and his co-founders, CTO Lewis Zhang and Ben Cervantez, have paired that hard-won domain empathy with outlier technical depth. It shows in how they build. Probook deploys with customers in person, configures the platform shoulder to shoulder with their front-line teams, and stays on the hook for the outcomes it sells. In a category full of software that is sold and forgotten, that posture has made Probook a rare vendor that operators actually trust to run their business.
+Probook already runs across hundreds of locations nationwide, from independently owned shops to private-equity-backed platforms, including TurnPoint Services, Master Trades Group, Del-Air, Peterman Brothers, and Sila Services. Summers Plumbing, Heating & Cooling, with 14 locations and 260 technicians on the platform, booked 2,542 jobs in its first month on Probook with zero human intervention. Del-Air more than doubled productivity from 10 to 22 techs per dispatcher.
+We could not be more excited to partner with George, Lewis, Ben, and the entire Probook team. If you operate a home services business, see Probook for yourself at probook.ai, and if you want to help build it, they’re hiring.
+Everything is Recorded Now
+David Haber
+Jun 10
+Read full story
+Marketplaces in the Age of AI
+Olivia Moore
+November 17, 2025
+Read full story
+This newsletter is provided for informational purposes only, and should not be relied upon as legal, business, investment, or tax advice. Furthermore, this content is not investment advice, nor is it intended for use by any investors or prospective investors in any a16z funds. This newsletter may link to other websites or contain other information obtained from third-party sources - a16z has not independently verified nor makes any representations about the current or enduring accuracy of such information. If this content includes third-party advertisements, a16z has not reviewed such advertisements and does not endorse any advertising content or related companies contained therein. Any investments or portfolio companies mentioned, referred to, or described are not representative of all investments in vehicles managed by a16z; visit https://a16z.com/investment-list/ for a full list of investments. Other important information can be found at a16z.com/disclosures . You’re receiving this newsletter since you opted in earlier; if you would like to opt out of future newsletters you may unsubscribe immediately.
+Share
+
+## full_text
+
+Investing in Probook
+a16z leads Probook's Series A
+Alex Rampell , David Haber , Olivia Moore , and Seema Amble
+Jun 23, 2026
+Share
+America | Tech | Opinion | Culture | Charts
+Every business has one decision that everything else bends around. In home services, that decision is dispatch: which technician goes to which job, in what order, at what time. Get it right and revenue, technician utilization, and customer experience all move up together. Get it wrong and no amount of marketing or lead-gen can save the day. Dispatch is the brain of the business.
+So it is striking that, for the last three years, almost everyone building AI for the trades skipped it. They rushed to the edges instead - voice agents, chat widgets, follow-up bots - clustered at the top of the funnel where leads come in. It is the most visible part of the business and the easiest place to bolt on a model. The result was a stack of disconnected point solutions, each owning a sliver of the customer, none of them talking to each other, and none of them touching the decision that actually determines whether an operator makes money.
+Our thesis is simple: in vertical AI, you do not win by adding another tool at the edge. You win by owning the hardest, most central decision in the business and building outward from it. Probook is doing exactly that in home services, and today we are thrilled to announce that a16z is leading Probook’s $34 million Series A, bringing the company’s total funding to $40 million after a seed round led by Sequoia.
+Probook built dispatch first, the part most vendors avoid because it is genuinely hard. Routing the closest available technician is easy; routing the right one is not. Technicians have different skills, conversion rates, and areas of expertise, and the gap between a good match and a bad one shows up directly in revenue. Only after owning that decision layer did Probook expand into the rest of the front office: intake, data scrubbing, customer messaging, and outbound.
+Because everything shares one context layer, the whole system works as one. Every customer stays on a single text thread with a single number, from the first call to the technician at the front door. Every inbound lead is answered with full information. Every booking is cleaned before it is assigned. Humans handle the exceptions; the software handles the rest. This is not a copilot that hands work back to an already-overloaded front office. It does the work, and operators add points to their EBITDA as a result.
+Probook is hard to replicate because of where it came from. CEO George Eliadis grew up in the industry, pressure washing alongside his dad in upstate New York across six summers in the truck. He knows what it is to be up on a ladder washing a house and miss the call that would have booked the next job. Years later, he spent a summer inside TR Miller, a $40 million HVAC, plumbing, and electrical shop in Illinois that became Probook’s first customer, and saw the same problems play out at scale.
+George and his co-founders, CTO Lewis Zhang and Ben Cervantez, have paired that hard-won domain empathy with outlier technical depth. It shows in how they build. Probook deploys with customers in person, configures the platform shoulder to shoulder with their front-line teams, and stays on the hook for the outcomes it sells. In a category full of software that is sold and forgotten, that posture has made Probook a rare vendor that operators actually trust to run their business.
+Probook already runs across hundreds of locations nationwide, from independently owned shops to private-equity-backed platforms, including TurnPoint Services, Master Trades Group, Del-Air, Peterman Brothers, and Sila Services. Summers Plumbing, Heating & Cooling, with 14 locations and 260 technicians on the platform, booked 2,542 jobs in its first month on Probook with zero human intervention. Del-Air more than doubled productivity from 10 to 22 techs per dispatcher.
+We could not be more excited to partner with George, Lewis, Ben, and the entire Probook team. If you operate a home services business, see Probook for yourself at probook.ai, and if you want to help build it, they’re hiring.
+Everything is Recorded Now
+David Haber
+Jun 10
+Read full story
+Marketplaces in the Age of AI
+Olivia Moore
+November 17, 2025
+Read full story
+This newsletter is provided for informational purposes only, and should not be relied upon as legal, business, investment, or tax advice. Furthermore, this content is not investment advice, nor is it intended for use by any investors or prospective investors in any a16z funds. This newsletter may link to other websites or contain other information obtained from third-party sources - a16z has not independently verified nor makes any representations about the current or enduring accuracy of such information. If this content includes third-party advertisements, a16z has not reviewed such advertisements and does not endorse any advertising content or related companies contained therein. Any investments or portfolio companies mentioned, referred to, or described are not representative of all investments in vehicles managed by a16z; visit https://a16z.com/investment-list/ for a full list of investments. Other important information can be found at a16z.com/disclosures . You’re receiving this newsletter since you opted in earlier; if you would like to opt out of future newsletters you may unsubscribe immediately.
+Share
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 76
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":76,"text_length":5458,"paragraph_count":16,"sentence_count":43,"boilerplate_hits":7,"symbol_ratio":0.0007,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   ### a16z leads Probook's Series A ... Jun 23, 2026 ... Our thesis is simple: in vertical AI, you do not win by adding another tool at the edge. You win by owning the hardest, most central decision in the business and building outward from it. Probook is doing exactly that in home services, and today... / query=vertical AI startup funding enterprise agents announced 2026 / intent=find_startups / path=capital_startup
+
+2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Investing in Probook a16z leads Probook's Series A Alex Rampell , David Haber , Olivia Moore , and Seema Amble Jun 23, 2026 Share America | Tech | Opinion | Culture | Charts Every business has one decision that everything else bends around.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   In home services, that decision is dispatch: which technician goes to which job, in what order, at what time.
+
+4. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Get it right and revenue, technician utilization, and customer experience all move up together.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Get it wrong and no amount of marketing or lead-gen can save the day.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Dispatch is the brain of the business.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: agents, copilot
+- people: 暂无公开信息
+- industries: 法律 / 法务, 企业服务
+- roles: CIO / IT 负责人, 法务 / 律师
+- workflows: 合同审阅 / 法律研究
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 法务
+- numbers: 16, 23, 2026, $34 million, $40 million, 14, 260, 2
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: ### a16z leads Probook's Series A ... Jun 23, 2026 ... Our thesis is simple: in vertical AI, you do not win by adding another tool at the edge. You win by owning the hardest, most central decision in the business and building outward from it. Probook is doing exactly that in home services, and today... / query=vertical AI startup funding enterprise agents announced 2026 / intent=find_startups / path=capital_startup / Investing in Probook a16z leads Probook's Series A Alex Rampell , David Haber , Olivia Moore , and Seema Amble Jun 23, 2026 Share America | Tech | Opinion | Culture | Charts Every business has one decision that everything else bends around. / In home services, that decision is dispatch: which technician goes to which job, in what order, at what time.
+- case_details: Get it right and revenue, technician utilization, and customer experience all move up together.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+### a16z leads Probook's Series A ... Jun 23, 2026 ... Our thesis is simple: in vertical AI, you do not win by adding another tool at the edge. You win by owning the hardest, most central decision in the business and building outward from it. Probook is doing exactly that in home services, and today... / query=vertical AI startup funding enterprise agents announced 2026 / intent=find_startups / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

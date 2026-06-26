@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-047
 title: "Top Enterprise AI Agent Platforms in 2026 | VDF AI"

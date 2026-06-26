@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-094
 title: "Startup Funding: Quantstruct (Founding)"

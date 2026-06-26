@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-061
 title: "GitHub - CoderJeffrey/Startup-funding-opportunities: Collection of Startup funding opportunities (pre-seed, seed round funding, startup competitions)"

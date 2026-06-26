@@ -1,0 +1,456 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-018
+title: "AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech"
+original_url: "https://www.dreamztech.com/ai-finance-automation-agent-case-study/"
+canonical_url: "https://dreamztech.com/ai-finance-automation-agent-case-study"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_customer_case"
+search_path: "industry_landing"
+search_path_label: "行业落地路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-26T07:13:34.325Z
+language: mixed
+full_text_hash: 14a5ef582dc1a1aa
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-018-ai-finance-automation-case-study-month-end-close-11-3-days-850k-saved-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-018-ai-finance-automation-case-study-month-end-close-11-3-days-850k-saved-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: high
+extraction_method: "body-visible-text"
+readability_score: 85
+extractor_diagnostics: {"readability_score":85,"text_length":15160,"paragraph_count":98,"sentence_count":122,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 15160
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"14a5ef582dc1a1aa","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 409aca848ee65c07
+content_hash: 14a5ef582dc1a1aa
+semantic_hash: 174fd868def729e2
+duplicate_of: ""
+first_seen_at: "2026-06-26T07:13:34.325Z"
+last_seen_at: 2026-06-26T07:13:34.325Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic","Microsoft","Amazon","Salesforce","ServiceNow"],"products":["Claude","agent","Agent","agents","Agents"],"people":[],"industries":["法律 / 法务","金融 / 保险","医疗","制造 / 工业","企业服务"],"roles":["CIO / IT 负责人","法务 / 律师","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["11","3","$850","3.5","38","5","800","404"],"quotes":[]}
+evidence_seed: {"company_actions":["We built a multi-agent finance platform on LangGraph + Temporal + Anthropic Claude 3."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师","销售 / 客服"],"risks_or_constraints":["Their 38-person finance team was closing the books in 11 working days — three plants behind the Day-5 industry benchmark, 800+ overtime hours per cycle, and a fresh SOX 404 ITGC finding on close-cycle concentration risk. We built a multi-agent finance platform on LangGraph + Temporal + Anthropic Cla... / query=vertical AI solution customer deployment healthcare finance manufacturing 2026 / intent=find_customer_case / path=industry_landing","2B Specialty Chemicals Maker Closed Its Books in 3 Days Instead of 11 — Across SAP, Oracle and NetSuite Their 38-person finance team was closing the books in 11 working days — three plants behind the Day-5 industry benchmark, 800+ overtime hours per cycle, and a fresh SOX 404 ITGC finding on close-cycle concentration risk."]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"supporting_context","text":"Their 38-person finance team was closing the books in 11 working days — three plants behind the Day-5 industry benchmark, 800+ overtime hours per cycle, and a fresh SOX 404 ITGC finding on close-cycle concentration risk. We built a multi-agent finance platform on LangGraph + Temporal + Anthropic Cla... / query=vertical AI solution customer deployment healthcare finance manufacturing 2026 / intent=find_customer_case / path=industry_landing","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"number","text":"AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"5 + SAP/Oracle/NetSuite | DreamzTech Case Study How a $1.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"2B Specialty Chemicals Maker Closed Its Books in 3 Days Instead of 11 — Across SAP, Oracle and NetSuite Their 38-person finance team was closing the books in 11 working days — three plants behind the Day-5 industry benchmark, 800+ overtime hours per cycle, and a fresh SOX 404 ITGC finding on close-cycle concentration risk.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We built a multi-agent finance platform on LangGraph + Temporal + Anthropic Claude 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"5 Sonnet spanning all three of their ERPs — SAP S/4HANA, Oracle E-Business Suite and NetSuite — and unlocked month-end close collapsed from 11 days to 3, 85% auto-posting on monthly journals, and $850K in annualised savings with zero SOX findings inside 12 months .","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech
+
+## clean_text
+
+AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech
+Case Study
+How a $1.2B Specialty Chemicals Maker Closed Its Books in 3 Days Instead of 11 — Across SAP, Oracle and NetSuite
+Their 38-person finance team was closing the books in 11 working days — three plants behind the Day-5 industry benchmark, 800+ overtime hours per cycle, and a fresh SOX 404 ITGC finding on close-cycle concentration risk. We built a multi-agent finance platform on LangGraph + Temporal + Anthropic Claude 3.5 Sonnet spanning all three of their ERPs — SAP S/4HANA, Oracle E-Business Suite and NetSuite — and unlocked month-end close collapsed from 11 days to 3, 85% auto-posting on monthly journals, and $850K in annualised savings with zero SOX findings inside 12 months . Faster close. Cleaner controls. Audit-ready every cycle.
+Discuss Your Project
+Trusted By Startups, SMBs to Fortune 500 Brands
+Quick Answers
+Skim the case in 60 seconds — what was breaking, what we built, what changed in year one.
+The problem. An 11-working-day close cycle (Day-5 is the industry benchmark), 800+ overtime hours per cycle across 38 finance staff, 9,400+ manual journal entries a month, and a recent SOX 404 ITGC finding flagging close-cycle concentration risk.
+The build. A multi-agent finance platform on LangGraph + Temporal stateful workflow orchestration, powered by Anthropic Claude 3.5 Sonnet, with native integration into SAP S/4HANA, Oracle E-Business Suite and NetSuite — all three ERPs talking to one close-orchestration layer.
+The year-one result. Month-end close collapsed from 11 days to 3, 85% auto-post rate on monthly journals, 73% reduction in manual entry, $850K in annualised savings and zero SOX findings — inside 12 months of go-live.
+The timeline. Two-plant pilot in 12 weeks. All 14 plants on the platform by week 22. Year-one outcomes — including the SOX-clean year — by month 12.
+How it stays accurate. Every controller override feeds a weekly retraining job; reconciliation accuracy and post-failure rate are monitored per ERP, per GL account, so confidence thresholds tune themselves over time.
+Overview
+Meet the manufacturer. A $1.2B-revenue specialty chemicals company with 1,400 employees, 14 plants across 9 countries, and three different ERPs that had to consolidate every month into a clean set of books.
+Challenges
+Five forces were dragging the close cycle past Day-11 — heterogeneous ERPs, manual journal entry volume, overtime burnout, audit-trail gaps, and a fresh SOX 404 finding on close-cycle concentration risk.
+The close cycle was twice the benchmark. 11 working days against a Day-5 standard. Every additional day was visible to the board, the auditors and the credit-rating committee.
+Overtime had become a structural cost. 800+ overtime hours per close cycle across 38 finance staff — a recurring P&L hit and a known retention risk for the controllership team.
+Three ERPs, no single source of truth. SAP S/4HANA across 8 plants, Oracle E-Business Suite across 4, NetSuite across 2 — every consolidation step bridged systems that didn't speak the same language.
+Manual journal entry was the bottleneck. 9,400+ entries a month with 40% of the close cycle consumed by manual posting and review — enough that any error rippled across the whole timeline.
+SOX 404 had already drawn blood. A recent ITGC finding cited concentration risk on close-cycle execution. Any next-cycle slip would have escalated to a material weakness.
+How the AI Finance Automation Agent Platform Works
+Five steps, end to end — from the moment a sub-ledger entry hits any of the three ERPs to the moment the consolidated journal posts and the audit pack is closed. Most of those steps, the agent crew now runs entirely on its own.
+1. Ingest from every ERP. SAP S/4HANA, Oracle E-Business Suite and NetSuite all stream sub-ledger activity into a single normalised close pipeline — RPC, IDoc, REST, BAPI, all wired in.
+2. Specialist agents reconcile. Six LangGraph specialist agents take the high-volume tasks — bank-rec, inter-company elimination, accruals, prepaid amortisation, fixed-asset depreciation, FX revaluation — each with its own scoped tools.
+3. Claude 3.5 Sonnet judges the edge cases. Where templates can't decide — vendor-name normalisation across DBA aliases, GL-account classification on novel descriptions, accrual-period inference — Claude reasons over the supporting docs and writes an audit-ready justification.
+4. Confidence-gated posting. High-confidence journals auto-post into the right ERP via API; lower-confidence or material entries route to a human controller with the proposed journal, the agent's reasoning trace, and the supporting evidence already attached.
+5. Audit pack writes itself. Temporal orchestrates the whole close as a stateful workflow; every step writes an immutable SOX evidence entry — so the audit pack assembles itself as the close runs, not after.
+Solutions Delivered
+Four architectural pillars carry the load. Each was chosen for a specific reason; together they're what cut the close from 11 days to 3 across three heterogeneous ERPs.
+LangGraph + Temporal Stateful Workflow Orchestration
+The close cycle is a long-running, multi-week workflow with dependencies, retries, approvals and audit checkpoints — far more than a single LLM call can manage. We built it on LangGraph for the agent topology and Temporal for the stateful workflow layer. Temporal keeps every close cycle durable end-to-end: if a SAP push fails at 11pm, the workflow resumes from the failure step the next morning with the agent’s last-known state intact. The result is a close that actually finishes — even when an ERP misbehaves mid-cycle.
+Anthropic Claude 3.5 Sonnet for Accounting Reasoning
+Claude 3.5 Sonnet drives the judgement-heavy steps — the ones traditional automation tools have always failed at: vendor-name normalisation across DBA aliases and abbreviations, GL-account classification on free-text descriptions, accrual-period inference from supplier invoices, and FX-revaluation explanations a controller can actually defend. Every Claude decision writes an evidence-cited reasoning trace into the SOX audit log — so ‘why did the AI do that’ is never an unanswered question at year-end.
+Native SAP, Oracle and NetSuite Integration
+The platform speaks all three ERPs natively. SAP S/4HANA via OData and IDoc; Oracle E-Business Suite via REST and concurrent-program calls; NetSuite via SuiteScript and SuiteTalk. Inter-company eliminations span all three; consolidation runs in a single GAAP layer. We didn’t replace the ERPs — we built the connective tissue that finally made them act like one.
+Audit-Ready by Design — Every Step, Every Cycle
+SOX 404 was the unstated requirement on every design decision. Every agent action, every Claude reasoning trace, every controller override is written to an immutable audit log. The close-cycle audit pack assembles itself as the close runs — supporting schedules, reconciliations, JE evidence, all auto-attached. The result: a year-one SOX audit with zero ITGC findings on the close cycle, and a controllership team that stopped dreading the auditor’s visit.
+Success Metrics
+Year-one results, measured the way a manufacturing CFO measures them — days-to-close, auto-post rate, overtime hours, audit findings. No vanity metrics.
+11 → 3 days
+Month-end close cycle collapsed from 11 working days to 3
+85%
+Auto-post rate on monthly journals — the AI closes them, the controllers approve
+$850K
+Annualised savings unlocked in the first 12 months of production
+Zero
+SOX 404, ITGC and internal-audit findings in year one
+9,400+
+Monthly journal entries now flowing through the agent crew
+3 ERPs
+SAP S/4HANA, Oracle E-Business Suite and NetSuite — one consolidation layer
+The New Normal for Month-End Close
+What started as a Day-11 close became a Day-3 close — and a SOX-clean year. Today, 85% of monthly journals post themselves into the right ERP — accurately, evidence-cited, audit-ready — while the controllership team focuses on the complex, judgement-heavy entries that genuinely need an accountant. Overtime hours are down. The close cost line is down $850K a year . The audit pack writes itself. And the agent crew gets smarter every cycle, learning from every controller override fed back into the LangGraph + Temporal + Claude stack. The bigger story: AI didn't replace the finance team — it gave them their evenings back. That's the difference between an automation tool and an AI finance agent.
+Schedule a Call
+Trusted by Industry Leaders Worldwide
+Powering Growth Through Technology
+From AI driven platforms to enterprise software and custom applications, businesses across industries rely on DreamzTech to accelerate innovation, improve operations, and drive measurable growth. Let’s discuss how we can help your business next.
+Book a Discovery Call
+Talk to Our AI Finance Automation Agent Team
+Looking to build a custom AI month-end close automation platform with specialist-agent extraction, Anthropic Claude 3.5 PO + GR + journal entry PO + GR + journal entry three-way match, Power Automate human review, and SAP S/4HANA + Oracle E-Business Suite + NetSuite (heterogeneous ERPs) / NetSuite integration? DreamzTech specialises in financial-services AI document processing on LangGraph + Temporal stateful workflow orchestration with Anthropic Claude 3.5 Sonnet — Microsoft Solutions Partner with signed SOX evidence chain, SOC 2-aligned security and SOX-ready audit trails.
+Schedule a Call
+NEXT STEPS
+Explore Our Solutions
+Six purpose-built AI agent platforms — one for every operations team. Pick a use case, see exactly what we ship.
+AI Agents for Customer Service
+AI Agents for IT Service Desk
+AI Agents for Sales
+AI Agents for Finance & Accounting
+AI Agents for HR
+AI Agents for Marketing
+Proven Impact
+More AI Success Stories
+Explore how DreamzTech helps businesses automate document heavy workflows across legal and insurance sectors with faster processing, improved accuracy, and measurable ROI.
+75% Tier-1 deflection · $2.1M saved
+Their Tier-1 support desk was drowning in 140,000+ monthly tickets. We rebuilt it as an autonomous multi-agent AI on LangGraph + Anthropic Claude 3.5 Sonnet — and unlocked 75% ticket deflection, $2.1M in annual savings and a 9-point CSAT lift inside 12 months. Faster answers. Happier customers. Zero added headcount.
+Read More →
+18K L1 tickets/month · $1.8M saved
+An 85,000-employee global retail bank automated its IT service desk with a LangGraph hierarchical multi-agent platform on OpenAI GPT-4o + Microsoft AutoGen specialists with deep ServiceNow integration. Year one: 18,000 L1 tickets auto-resolved monthly, $1.8M direct cost saved and zero SOX 404 ITGC findings.
+Read More →
+4.2× SQL conversion lift · $14.2M Q1 pipeline
+A Series D B2B cybersecurity SaaS replaced manual lead qualification with a four-agent CrewAI sales crew on Anthropic Claude 3.5 + OpenAI GPT-4o with native Salesforce + HubSpot + Apollo + ZoomInfo + 6sense integration. Year one: 4.2× lead-to-SQL conversion lift, $14.2M Q1 pipeline and 67% SDR productivity gain.
+Read More →
+Month-end close 11→3 days · $850K saved · zero SOX findings
+A $1.2B-revenue specialty chemicals manufacturer cut month-end close from 11 working days to 3 with a LangGraph + Temporal multi-agent finance platform integrating SAP S/4HANA + Oracle E-Business Suite + NetSuite. Year one: $850K annualised savings, 9,400 monthly journals automated and zero SOX 404 ITGC findings.
+Read More →
+85% PA automation · 9-min → 38-sec · $6.2M saved
+A regional integrated healthcare network with 18 hospitals and 142 outpatient clinics automated 85% of prior-authorisation reviews with a HIPAA-eligible four-agent CrewAI platform on Amazon Bedrock + Anthropic Claude 3.5 (fine-tuned). Year one: $6.2M annualised savings, physician satisfaction lifted from 18% to 76% and 64% drop in cancelled procedures.
+Read More →
+Our AI Capabilities
+Industry Focused AI Development Services
+Explore our comprehensive AI solutions tailored for different industries, including AI agents, multi agent systems, automation platforms, consulting, and enterprise AI integrations.
+Industries We Build For
+AI agents for healthcare
+AI agents for finance industry
+AI agents for retail industry
+AI agents for manufacturing
+AI agents for legal industry
+AI Agent Services
+End-to-End AI Agent Implementation
+AI Agent Consulting
+Managed AI Agent Services
+AI Agent Integration Services
+AI Workflow Automation Services
+Multi-Agent AI System Development
+LLM Agent Development Services
+Frequently Asked Questions (FAQ)
+The questions manufacturing CFOs, controllers and SOX program leads ask us most when scoping a close-automation build like this one.
+What kinds of journal entries does the AI handle on its own?
+High-volume, well-defined entries — accruals, prepaid amortisation, fixed-asset depreciation, FX revaluation, intercompany eliminations, bank reconciliations, and any journal where the supporting evidence and posting rules are clear. Material, judgement-heavy or unusual entries always route to a human controller.
+What happens when the AI can't auto-post a journal?
+The entry routes to a human controller inside their ERP’s approval workflow, with the proposed journal, the agent’s reasoning trace, every cited supporting document, and a confidence breakdown attached. The controller either approves, edits or rejects — and every override is captured for the next retraining cycle.
+Is the platform SOX-compliant and audit-ready?
+Yes. Every agent action — every ERP call, every reasoning step, every controller override — writes an immutable audit entry. The close-cycle audit pack assembles itself as the close runs. SOC 2 Type II controls in place across the full pipeline. The manufacturer in this case ran their first year on the platform with zero SOX 404 ITGC findings.
+How long does an implementation typically take?
+Twelve weeks to a single-plant production pilot. Twenty-two weeks for the full 14-plant rollout the manufacturer ran. Year-one outcomes — 11→3 day close, $850K savings, zero SOX findings — landed by month 12.
+Does it work with SAP, Oracle, NetSuite, Workday and Sage?
+Yes. Native integration with SAP S/4HANA and ECC (OData, IDoc, BAPI), Oracle E-Business Suite and Cloud ERP (REST, concurrent programs), NetSuite (SuiteScript, SuiteTalk), Workday Financial Management (REST/RaaS), and Sage Intacct (API). We’ve also integrated bespoke ERPs where the customer’s data model required it — the agent crew is ERP-portable by design.
+How does the AI keep getting smarter after launch?
+Every controller override is captured, labelled and fed into a weekly retraining job. Per-ERP, per-GL-account reconciliation accuracy and post-failure rates are tracked on dashboards, so confidence thresholds can be tuned where the agents are over- or under-posting. Most engagements see auto-post rate climb another 5–10 percentage points in the first six months after launch.
+Navigate
+Quick Answers
+Overview
+Challenges
+How the Platform Works
+Solutions Delivered
+Success Metrics
+Conclusion
+Contact Us
+Discuss your Project ➜
+Awards & Recognitions
+
+## full_text
+
+AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite | DreamzTech
+Case Study
+How a $1.2B Specialty Chemicals Maker Closed Its Books in 3 Days Instead of 11 — Across SAP, Oracle and NetSuite
+Their 38-person finance team was closing the books in 11 working days — three plants behind the Day-5 industry benchmark, 800+ overtime hours per cycle, and a fresh SOX 404 ITGC finding on close-cycle concentration risk. We built a multi-agent finance platform on LangGraph + Temporal + Anthropic Claude 3.5 Sonnet spanning all three of their ERPs — SAP S/4HANA, Oracle E-Business Suite and NetSuite — and unlocked month-end close collapsed from 11 days to 3, 85% auto-posting on monthly journals, and $850K in annualised savings with zero SOX findings inside 12 months . Faster close. Cleaner controls. Audit-ready every cycle.
+Discuss Your Project
+Trusted By Startups, SMBs to Fortune 500 Brands
+Quick Answers
+Skim the case in 60 seconds — what was breaking, what we built, what changed in year one.
+The problem. An 11-working-day close cycle (Day-5 is the industry benchmark), 800+ overtime hours per cycle across 38 finance staff, 9,400+ manual journal entries a month, and a recent SOX 404 ITGC finding flagging close-cycle concentration risk.
+The build. A multi-agent finance platform on LangGraph + Temporal stateful workflow orchestration, powered by Anthropic Claude 3.5 Sonnet, with native integration into SAP S/4HANA, Oracle E-Business Suite and NetSuite — all three ERPs talking to one close-orchestration layer.
+The year-one result. Month-end close collapsed from 11 days to 3, 85% auto-post rate on monthly journals, 73% reduction in manual entry, $850K in annualised savings and zero SOX findings — inside 12 months of go-live.
+The timeline. Two-plant pilot in 12 weeks. All 14 plants on the platform by week 22. Year-one outcomes — including the SOX-clean year — by month 12.
+How it stays accurate. Every controller override feeds a weekly retraining job; reconciliation accuracy and post-failure rate are monitored per ERP, per GL account, so confidence thresholds tune themselves over time.
+Overview
+Meet the manufacturer. A $1.2B-revenue specialty chemicals company with 1,400 employees, 14 plants across 9 countries, and three different ERPs that had to consolidate every month into a clean set of books.
+Challenges
+Five forces were dragging the close cycle past Day-11 — heterogeneous ERPs, manual journal entry volume, overtime burnout, audit-trail gaps, and a fresh SOX 404 finding on close-cycle concentration risk.
+The close cycle was twice the benchmark. 11 working days against a Day-5 standard. Every additional day was visible to the board, the auditors and the credit-rating committee.
+Overtime had become a structural cost. 800+ overtime hours per close cycle across 38 finance staff — a recurring P&L hit and a known retention risk for the controllership team.
+Three ERPs, no single source of truth. SAP S/4HANA across 8 plants, Oracle E-Business Suite across 4, NetSuite across 2 — every consolidation step bridged systems that didn't speak the same language.
+Manual journal entry was the bottleneck. 9,400+ entries a month with 40% of the close cycle consumed by manual posting and review — enough that any error rippled across the whole timeline.
+SOX 404 had already drawn blood. A recent ITGC finding cited concentration risk on close-cycle execution. Any next-cycle slip would have escalated to a material weakness.
+How the AI Finance Automation Agent Platform Works
+Five steps, end to end — from the moment a sub-ledger entry hits any of the three ERPs to the moment the consolidated journal posts and the audit pack is closed. Most of those steps, the agent crew now runs entirely on its own.
+1. Ingest from every ERP. SAP S/4HANA, Oracle E-Business Suite and NetSuite all stream sub-ledger activity into a single normalised close pipeline — RPC, IDoc, REST, BAPI, all wired in.
+2. Specialist agents reconcile. Six LangGraph specialist agents take the high-volume tasks — bank-rec, inter-company elimination, accruals, prepaid amortisation, fixed-asset depreciation, FX revaluation — each with its own scoped tools.
+3. Claude 3.5 Sonnet judges the edge cases. Where templates can't decide — vendor-name normalisation across DBA aliases, GL-account classification on novel descriptions, accrual-period inference — Claude reasons over the supporting docs and writes an audit-ready justification.
+4. Confidence-gated posting. High-confidence journals auto-post into the right ERP via API; lower-confidence or material entries route to a human controller with the proposed journal, the agent's reasoning trace, and the supporting evidence already attached.
+5. Audit pack writes itself. Temporal orchestrates the whole close as a stateful workflow; every step writes an immutable SOX evidence entry — so the audit pack assembles itself as the close runs, not after.
+Solutions Delivered
+Four architectural pillars carry the load. Each was chosen for a specific reason; together they're what cut the close from 11 days to 3 across three heterogeneous ERPs.
+LangGraph + Temporal Stateful Workflow Orchestration
+The close cycle is a long-running, multi-week workflow with dependencies, retries, approvals and audit checkpoints — far more than a single LLM call can manage. We built it on LangGraph for the agent topology and Temporal for the stateful workflow layer. Temporal keeps every close cycle durable end-to-end: if a SAP push fails at 11pm, the workflow resumes from the failure step the next morning with the agent’s last-known state intact. The result is a close that actually finishes — even when an ERP misbehaves mid-cycle.
+Anthropic Claude 3.5 Sonnet for Accounting Reasoning
+Claude 3.5 Sonnet drives the judgement-heavy steps — the ones traditional automation tools have always failed at: vendor-name normalisation across DBA aliases and abbreviations, GL-account classification on free-text descriptions, accrual-period inference from supplier invoices, and FX-revaluation explanations a controller can actually defend. Every Claude decision writes an evidence-cited reasoning trace into the SOX audit log — so ‘why did the AI do that’ is never an unanswered question at year-end.
+Native SAP, Oracle and NetSuite Integration
+The platform speaks all three ERPs natively. SAP S/4HANA via OData and IDoc; Oracle E-Business Suite via REST and concurrent-program calls; NetSuite via SuiteScript and SuiteTalk. Inter-company eliminations span all three; consolidation runs in a single GAAP layer. We didn’t replace the ERPs — we built the connective tissue that finally made them act like one.
+Audit-Ready by Design — Every Step, Every Cycle
+SOX 404 was the unstated requirement on every design decision. Every agent action, every Claude reasoning trace, every controller override is written to an immutable audit log. The close-cycle audit pack assembles itself as the close runs — supporting schedules, reconciliations, JE evidence, all auto-attached. The result: a year-one SOX audit with zero ITGC findings on the close cycle, and a controllership team that stopped dreading the auditor’s visit.
+Success Metrics
+Year-one results, measured the way a manufacturing CFO measures them — days-to-close, auto-post rate, overtime hours, audit findings. No vanity metrics.
+11 → 3 days
+Month-end close cycle collapsed from 11 working days to 3
+85%
+Auto-post rate on monthly journals — the AI closes them, the controllers approve
+$850K
+Annualised savings unlocked in the first 12 months of production
+Zero
+SOX 404, ITGC and internal-audit findings in year one
+9,400+
+Monthly journal entries now flowing through the agent crew
+3 ERPs
+SAP S/4HANA, Oracle E-Business Suite and NetSuite — one consolidation layer
+The New Normal for Month-End Close
+What started as a Day-11 close became a Day-3 close — and a SOX-clean year. Today, 85% of monthly journals post themselves into the right ERP — accurately, evidence-cited, audit-ready — while the controllership team focuses on the complex, judgement-heavy entries that genuinely need an accountant. Overtime hours are down. The close cost line is down $850K a year . The audit pack writes itself. And the agent crew gets smarter every cycle, learning from every controller override fed back into the LangGraph + Temporal + Claude stack. The bigger story: AI didn't replace the finance team — it gave them their evenings back. That's the difference between an automation tool and an AI finance agent.
+Schedule a Call
+Trusted by Industry Leaders Worldwide
+Powering Growth Through Technology
+From AI driven platforms to enterprise software and custom applications, businesses across industries rely on DreamzTech to accelerate innovation, improve operations, and drive measurable growth. Let’s discuss how we can help your business next.
+Book a Discovery Call
+Talk to Our AI Finance Automation Agent Team
+Looking to build a custom AI month-end close automation platform with specialist-agent extraction, Anthropic Claude 3.5 PO + GR + journal entry PO + GR + journal entry three-way match, Power Automate human review, and SAP S/4HANA + Oracle E-Business Suite + NetSuite (heterogeneous ERPs) / NetSuite integration? DreamzTech specialises in financial-services AI document processing on LangGraph + Temporal stateful workflow orchestration with Anthropic Claude 3.5 Sonnet — Microsoft Solutions Partner with signed SOX evidence chain, SOC 2-aligned security and SOX-ready audit trails.
+Schedule a Call
+NEXT STEPS
+Explore Our Solutions
+Six purpose-built AI agent platforms — one for every operations team. Pick a use case, see exactly what we ship.
+AI Agents for Customer Service
+AI Agents for IT Service Desk
+AI Agents for Sales
+AI Agents for Finance & Accounting
+AI Agents for HR
+AI Agents for Marketing
+Proven Impact
+More AI Success Stories
+Explore how DreamzTech helps businesses automate document heavy workflows across legal and insurance sectors with faster processing, improved accuracy, and measurable ROI.
+75% Tier-1 deflection · $2.1M saved
+Their Tier-1 support desk was drowning in 140,000+ monthly tickets. We rebuilt it as an autonomous multi-agent AI on LangGraph + Anthropic Claude 3.5 Sonnet — and unlocked 75% ticket deflection, $2.1M in annual savings and a 9-point CSAT lift inside 12 months. Faster answers. Happier customers. Zero added headcount.
+Read More →
+18K L1 tickets/month · $1.8M saved
+An 85,000-employee global retail bank automated its IT service desk with a LangGraph hierarchical multi-agent platform on OpenAI GPT-4o + Microsoft AutoGen specialists with deep ServiceNow integration. Year one: 18,000 L1 tickets auto-resolved monthly, $1.8M direct cost saved and zero SOX 404 ITGC findings.
+Read More →
+4.2× SQL conversion lift · $14.2M Q1 pipeline
+A Series D B2B cybersecurity SaaS replaced manual lead qualification with a four-agent CrewAI sales crew on Anthropic Claude 3.5 + OpenAI GPT-4o with native Salesforce + HubSpot + Apollo + ZoomInfo + 6sense integration. Year one: 4.2× lead-to-SQL conversion lift, $14.2M Q1 pipeline and 67% SDR productivity gain.
+Read More →
+Month-end close 11→3 days · $850K saved · zero SOX findings
+A $1.2B-revenue specialty chemicals manufacturer cut month-end close from 11 working days to 3 with a LangGraph + Temporal multi-agent finance platform integrating SAP S/4HANA + Oracle E-Business Suite + NetSuite. Year one: $850K annualised savings, 9,400 monthly journals automated and zero SOX 404 ITGC findings.
+Read More →
+85% PA automation · 9-min → 38-sec · $6.2M saved
+A regional integrated healthcare network with 18 hospitals and 142 outpatient clinics automated 85% of prior-authorisation reviews with a HIPAA-eligible four-agent CrewAI platform on Amazon Bedrock + Anthropic Claude 3.5 (fine-tuned). Year one: $6.2M annualised savings, physician satisfaction lifted from 18% to 76% and 64% drop in cancelled procedures.
+Read More →
+Our AI Capabilities
+Industry Focused AI Development Services
+Explore our comprehensive AI solutions tailored for different industries, including AI agents, multi agent systems, automation platforms, consulting, and enterprise AI integrations.
+Industries We Build For
+AI agents for healthcare
+AI agents for finance industry
+AI agents for retail industry
+AI agents for manufacturing
+AI agents for legal industry
+AI Agent Services
+End-to-End AI Agent Implementation
+AI Agent Consulting
+Managed AI Agent Services
+AI Agent Integration Services
+AI Workflow Automation Services
+Multi-Agent AI System Development
+LLM Agent Development Services
+Frequently Asked Questions (FAQ)
+The questions manufacturing CFOs, controllers and SOX program leads ask us most when scoping a close-automation build like this one.
+What kinds of journal entries does the AI handle on its own?
+High-volume, well-defined entries — accruals, prepaid amortisation, fixed-asset depreciation, FX revaluation, intercompany eliminations, bank reconciliations, and any journal where the supporting evidence and posting rules are clear. Material, judgement-heavy or unusual entries always route to a human controller.
+What happens when the AI can't auto-post a journal?
+The entry routes to a human controller inside their ERP’s approval workflow, with the proposed journal, the agent’s reasoning trace, every cited supporting document, and a confidence breakdown attached. The controller either approves, edits or rejects — and every override is captured for the next retraining cycle.
+Is the platform SOX-compliant and audit-ready?
+Yes. Every agent action — every ERP call, every reasoning step, every controller override — writes an immutable audit entry. The close-cycle audit pack assembles itself as the close runs. SOC 2 Type II controls in place across the full pipeline. The manufacturer in this case ran their first year on the platform with zero SOX 404 ITGC findings.
+How long does an implementation typically take?
+Twelve weeks to a single-plant production pilot. Twenty-two weeks for the full 14-plant rollout the manufacturer ran. Year-one outcomes — 11→3 day close, $850K savings, zero SOX findings — landed by month 12.
+Does it work with SAP, Oracle, NetSuite, Workday and Sage?
+Yes. Native integration with SAP S/4HANA and ECC (OData, IDoc, BAPI), Oracle E-Business Suite and Cloud ERP (REST, concurrent programs), NetSuite (SuiteScript, SuiteTalk), Workday Financial Management (REST/RaaS), and Sage Intacct (API). We’ve also integrated bespoke ERPs where the customer’s data model required it — the agent crew is ERP-portable by design.
+How does the AI keep getting smarter after launch?
+Every controller override is captured, labelled and fed into a weekly retraining job. Per-ERP, per-GL-account reconciliation accuracy and post-failure rates are tracked on dashboards, so confidence thresholds can be tuned where the agents are over- or under-posting. Most engagements see auto-post rate climb another 5–10 percentage points in the first six months after launch.
+Navigate
+Quick Answers
+Overview
+Challenges
+How the Platform Works
+Solutions Delivered
+Success Metrics
+Conclusion
+Contact Us
+Discuss your Project ➜
+Awards & Recognitions
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 85
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- diagnostics: {"readability_score":85,"text_length":15160,"paragraph_count":98,"sentence_count":122,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   Their 38-person finance team was closing the books in 11 working days — three plants behind the Day-5 industry benchmark, 800+ overtime hours per cycle, and a fresh SOX 404 ITGC finding on close-cycle concentration risk. We built a multi-agent finance platform on LangGraph + Temporal + Anthropic Cla... / query=vertical AI solution customer deployment healthcare finance manufacturing 2026 / intent=find_customer_case / path=industry_landing
+
+2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.
+
+3. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   5 + SAP/Oracle/NetSuite | DreamzTech Case Study How a $1.
+
+4. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
+   2B Specialty Chemicals Maker Closed Its Books in 3 Days Instead of 11 — Across SAP, Oracle and NetSuite Their 38-person finance team was closing the books in 11 working days — three plants behind the Day-5 industry benchmark, 800+ overtime hours per cycle, and a fresh SOX 404 ITGC finding on close-cycle concentration risk.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   We built a multi-agent finance platform on LangGraph + Temporal + Anthropic Claude 3.
+
+6. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   5 Sonnet spanning all three of their ERPs — SAP S/4HANA, Oracle E-Business Suite and NetSuite — and unlocked month-end close collapsed from 11 days to 3, 85% auto-posting on monthly journals, and $850K in annualised savings with zero SOX findings inside 12 months .
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic, Microsoft, Amazon, Salesforce, ServiceNow
+- products: Claude, agent, Agent, agents, Agents
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 医疗, 制造 / 工业, 企业服务
+- roles: CIO / IT 负责人, 法务 / 律师, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 11, 3, $850, 3.5, 38, 5, 800, 404
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: We built a multi-agent finance platform on LangGraph + Temporal + Anthropic Claude 3.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 法务 / 律师, 销售 / 客服
+- risks_or_constraints: Their 38-person finance team was closing the books in 11 working days — three plants behind the Day-5 industry benchmark, 800+ overtime hours per cycle, and a fresh SOX 404 ITGC finding on close-cycle concentration risk. We built a multi-agent finance platform on LangGraph + Temporal + Anthropic Cla... / query=vertical AI solution customer deployment healthcare finance manufacturing 2026 / intent=find_customer_case / path=industry_landing / 2B Specialty Chemicals Maker Closed Its Books in 3 Days Instead of 11 — Across SAP, Oracle and NetSuite Their 38-person finance team was closing the books in 11 working days — three plants behind the Day-5 industry benchmark, 800+ overtime hours per cycle, and a fresh SOX 404 ITGC finding on close-cycle concentration risk.
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Their 38-person finance team was closing the books in 11 working days — three plants behind the Day-5 industry benchmark, 800+ overtime hours per cycle, and a fresh SOX 404 ITGC finding on close-cycle concentration risk. We built a multi-agent finance platform on LangGraph + Temporal + Anthropic Cla... / query=vertical AI solution customer deployment healthcare finance manufacturing 2026 / intent=find_customer_case / path=industry_landing
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

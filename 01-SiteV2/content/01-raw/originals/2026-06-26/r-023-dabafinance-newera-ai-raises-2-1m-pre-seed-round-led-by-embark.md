@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-023
 title: "Dabafinance - Newera.ai Raises $2.1M Pre-Seed Round Led By Embark"

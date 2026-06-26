@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-018
 title: "Accelerating UX Innovation: How GitHub Copilot Coding Agent ..."

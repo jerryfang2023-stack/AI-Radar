@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-038
 title: "AWS Marketplace: Custom solution development"

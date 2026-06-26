@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-114
 title: "Kilo Code Raises $8M Seed Round to Scale Open-Source AI Coding Agent - VC Tavern"

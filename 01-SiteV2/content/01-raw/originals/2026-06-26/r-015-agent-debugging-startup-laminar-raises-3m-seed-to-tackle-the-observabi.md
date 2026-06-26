@@ -1,0 +1,263 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-015
+title: "Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents - Tech.eu"
+original_url: "https://tech.eu/2026/03/17/agent-debugging-startup-laminar-raises-3m-seed-to-tackle-the-observability-gap-in-ai-agents/"
+canonical_url: "https://tech.eu/2026/03/17/agent-debugging-startup-laminar-raises-3m-seed-to-tackle-the-observability-gap-in-ai-agents"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-26T07:13:34.315Z
+language: mixed
+full_text_hash: 423cc61d9bb854c1
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-015-agent-debugging-startup-laminar-raises-3m-seed-to-tackle-the-observabi.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-015-agent-debugging-startup-laminar-raises-3m-seed-to-tackle-the-observabi.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 87
+extractor_diagnostics: {"readability_score":87,"text_length":3224,"paragraph_count":21,"sentence_count":19,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 3224
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"423cc61d9bb854c1","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 27dd45274aed7308
+content_hash: 423cc61d9bb854c1
+semantic_hash: 5b5aec0a0da9a7e5
+duplicate_of: ""
+first_seen_at: "2026-06-26T07:13:34.315Z"
+last_seen_at: 2026-06-26T07:13:34.315Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","AWS"],"products":["Agent","agents","agent"],"people":[],"industries":["法律 / 法务","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":[],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全","法务"],"numbers":["$3M","17 M","2026","$3 million","24","40 m","2025"],"quotes":[]}
+evidence_seed: {"company_actions":["Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents - Tech.eu ... # Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents ... Cate Lawrence 17 March 2026 ... Laminar today announces a $3 million seed round led by Atlanti... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup","Software development Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents Laminar’s platform captures every LLM call, tool use, and browser action to help developers debug long-running AI agents.","Cate Lawrence 17 March 2026 Share Facebook Twitter Linkedin Share Send email Copy link Laminar today announces a $3 million seed round led by Atlantic."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"funding","text":"Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents - Tech.eu ... # Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents ... Cate Lawrence 17 March 2026 ... Laminar today announces a $3 million seed round led by Atlanti... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Software development Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents Laminar’s platform captures every LLM call, tool use, and browser action to help developers debug long-running AI agents.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Cate Lawrence 17 March 2026 Share Facebook Twitter Linkedin Share Send email Copy link Laminar today announces a $3 million seed round led by Atlantic.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"vc , with participation from Y-Combinator, AAL.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"vc, and notable angels including Ben Sigelman, co-creator of OpenTelemetry and Ant Wilson, CTO of Supabase .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Founders Robert Kim (CEO) and Dinmukhamed Mailibay (CTO) grew up together in Kazakhstan, studied at KAIST, and worked side by side in London before founding Laminar.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents - Tech.eu
+
+## clean_text
+
+Software development
+Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents
+Laminar’s platform captures every LLM call, tool use, and browser action to help developers debug long-running AI agents.
+Cate Lawrence
+17 March 2026
+Share
+Facebook
+Twitter
+Linkedin
+Share
+Send email
+Copy link
+Laminar today announces a $3 million seed round led by Atlantic.vc , with participation from Y-Combinator, AAL.vc, and notable angels including Ben Sigelman, co-creator of OpenTelemetry and Ant Wilson, CTO of Supabase .
+Founders Robert Kim (CEO) and Dinmukhamed Mailibay (CTO) grew up together in Kazakhstan, studied at KAIST, and worked side by side in London before founding Laminar. Robert built infrastructure at Palantir and Bloomberg; Din built payment infrastructure at AWS. They are YC S24 alumni.
+The observability tools that exist today were designed for single LLM calls and simple chains. They weren't built for agents that run for hours, generate thousands of spans per session, and need browser session replay to debug ---Laminar was.
+With a single line of code, Laminar captures everything an agent does: every LLM call, tool use, and function execution.
+For browser agents, Laminar even captures browser session recordings and syncs them directly with traces, so developers can see exactly what the agent was looking at when it made a decision.
+Its Signals feature uses AI to automatically surface failure patterns and anomalies at scale, turning raw observability data into a continuous improvement loop. Its Agent Debugger lets developers rerun an agent from any step, preserving full prior context, so they can iterate without starting from scratch.
+According to Robert Kim, CEO, Laminar:
+"When your agent fails 40 minutes into a task, today's tools show you a wall of thousands of spans and say 'good luck.' We built Laminar so you can pinpoint the exact decision that went wrong and rerun from that point."
+Since launching in 2025, Laminar already counts Browser Use , OpenHands , Rye.com, and Alai among its customers.
+Its SDK is directly integrated into OpenHands' software agent and benchmarking infrastructure, and it is the default observability solution in Browser Use's documentation.
+Multiple companies have chosen Laminar over incumbent platforms specifically for its Signals feature, and at least one well-funded AI company has built a similar capability in-house, validating that agent-native observability is becoming a critical layer in the stack.
+"Robert and Din are technically exceptional and deeply customer-obsessed. Agent observability is a critical infrastructure layer for the next generation of AI, and Laminar has the right architecture to own it,” shared Lukas Erbguth, Principal at Atlantic.vc
+The funding will accelerate product development and go-to-market expansion as AI agents move from prototypes into production at scale.
+Laminar
+Atlantic VC
+Y Combinator
+software development
+Write Comment
+Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents
+Comments
+Would you like to write the first comment?
+Login to post comments
+Follow the developments in the technology world. What would you like us to deliver to you?
+
+## full_text
+
+Software development
+Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents
+Laminar’s platform captures every LLM call, tool use, and browser action to help developers debug long-running AI agents.
+Cate Lawrence
+17 March 2026
+Share
+Facebook
+Twitter
+Linkedin
+Share
+Send email
+Copy link
+Laminar today announces a $3 million seed round led by Atlantic.vc , with participation from Y-Combinator, AAL.vc, and notable angels including Ben Sigelman, co-creator of OpenTelemetry and Ant Wilson, CTO of Supabase .
+Founders Robert Kim (CEO) and Dinmukhamed Mailibay (CTO) grew up together in Kazakhstan, studied at KAIST, and worked side by side in London before founding Laminar. Robert built infrastructure at Palantir and Bloomberg; Din built payment infrastructure at AWS. They are YC S24 alumni.
+The observability tools that exist today were designed for single LLM calls and simple chains. They weren't built for agents that run for hours, generate thousands of spans per session, and need browser session replay to debug ---Laminar was.
+With a single line of code, Laminar captures everything an agent does: every LLM call, tool use, and function execution.
+For browser agents, Laminar even captures browser session recordings and syncs them directly with traces, so developers can see exactly what the agent was looking at when it made a decision.
+Its Signals feature uses AI to automatically surface failure patterns and anomalies at scale, turning raw observability data into a continuous improvement loop. Its Agent Debugger lets developers rerun an agent from any step, preserving full prior context, so they can iterate without starting from scratch.
+According to Robert Kim, CEO, Laminar:
+"When your agent fails 40 minutes into a task, today's tools show you a wall of thousands of spans and say 'good luck.' We built Laminar so you can pinpoint the exact decision that went wrong and rerun from that point."
+Since launching in 2025, Laminar already counts Browser Use , OpenHands , Rye.com, and Alai among its customers.
+Its SDK is directly integrated into OpenHands' software agent and benchmarking infrastructure, and it is the default observability solution in Browser Use's documentation.
+Multiple companies have chosen Laminar over incumbent platforms specifically for its Signals feature, and at least one well-funded AI company has built a similar capability in-house, validating that agent-native observability is becoming a critical layer in the stack.
+"Robert and Din are technically exceptional and deeply customer-obsessed. Agent observability is a critical infrastructure layer for the next generation of AI, and Laminar has the right architecture to own it,” shared Lukas Erbguth, Principal at Atlantic.vc
+The funding will accelerate product development and go-to-market expansion as AI agents move from prototypes into production at scale.
+Laminar
+Atlantic VC
+Y Combinator
+software development
+Write Comment
+Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents
+Comments
+Would you like to write the first comment?
+Login to post comments
+Follow the developments in the technology world. What would you like us to deliver to you?
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 87
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":87,"text_length":3224,"paragraph_count":21,"sentence_count":19,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents - Tech.eu ... # Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents ... Cate Lawrence 17 March 2026 ... Laminar today announces a $3 million seed round led by Atlanti... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup
+
+2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Software development Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents Laminar’s platform captures every LLM call, tool use, and browser action to help developers debug long-running AI agents.
+
+3. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Cate Lawrence 17 March 2026 Share Facebook Twitter Linkedin Share Send email Copy link Laminar today announces a $3 million seed round led by Atlantic.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   vc , with participation from Y-Combinator, AAL.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   vc, and notable angels including Ben Sigelman, co-creator of OpenTelemetry and Ant Wilson, CTO of Supabase .
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Founders Robert Kim (CEO) and Dinmukhamed Mailibay (CTO) grew up together in Kazakhstan, studied at KAIST, and worked side by side in London before founding Laminar.
+
+## business_elements
+
+- companies: keyword search, Anysearch, AWS
+- products: Agent, agents, agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全, 法务
+- numbers: $3M, 17 M, 2026, $3 million, 24, 40 m, 2025
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents - Tech.eu ... # Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents ... Cate Lawrence 17 March 2026 ... Laminar today announces a $3 million seed round led by Atlanti... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup / Software development Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents Laminar’s platform captures every LLM call, tool use, and browser action to help developers debug long-running AI agents. / Cate Lawrence 17 March 2026 Share Facebook Twitter Linkedin Share Send email Copy link Laminar today announces a $3 million seed round led by Atlantic.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents - Tech.eu ... # Agent debugging startup Laminar raises $3M seed to tackle the observability gap in AI agents ... Cate Lawrence 17 March 2026 ... Laminar today announces a $3 million seed round led by Atlanti... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

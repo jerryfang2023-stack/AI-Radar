@@ -11,7 +11,7 @@ metadata:
     upstream: "external monitoring sources"
     downstream: "Raw / Pool outputs and daily reports"
     gates: "source capture, pool thresholds, quality gating"
-    recent_learning: "Keep workflow, dry-run, and manual monitor parameters aligned with V3.3.6 thresholds; Core Pool failures usually need better source routing, not more HN."
+    recent_learning: "Diagnose failed stage and source-artifact channel before full reruns; Raw shortages can be downstream selector bugs, not source scarcity."
     mirrored_in_skill_store: true
     memory_required: false
 ---
@@ -31,7 +31,7 @@ Read only what is needed:
 5. `agent-workflow/skills/guanlan-monitor-quality-gate/SKILL.md`
 6. `agent-workflow/skills/guanlan-daily-monitor-qc/SKILL.md`
 
-For regression prevention, read `evals/daily-monitor-evals.md` when running, repairing, or updating this skill. When checking threshold or evidence-shape regressions, also read `examples/good-monitor-run.md` and `examples/bad-old-thresholds.md`.
+For regression prevention, read `evals/daily-monitor-evals.md` when running, repairing, or updating this skill. When checking threshold, evidence-shape, or rerun-scope regressions, also read `examples/good-monitor-run.md`, `examples/bad-old-thresholds.md`, and `examples/bad-full-rerun-after-localized-failure.md`.
 
 ## Mission
 

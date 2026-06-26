@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-040
 title: "How Forward Deployed Engineering Is Closing the Enterprise Gap"

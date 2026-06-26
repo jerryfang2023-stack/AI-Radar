@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-088
 title: "June Chapter Meeting Applied AI in Project Management: Leading ..."

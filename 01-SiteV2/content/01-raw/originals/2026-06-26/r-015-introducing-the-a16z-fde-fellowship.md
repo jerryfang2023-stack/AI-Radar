@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-015
 title: "Introducing the a16z FDE Fellowship"

@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-045
 title: "Enterprise AI Agent Governance Plan for Production Teams"
