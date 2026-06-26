@@ -1,10 +1,12 @@
 {
-  "generatedAt": "2026-06-25T05:16:17.908Z",
+  "generatedAt": "2026-06-26T01:40:29.689Z",
   "stats": {
     "blogsBuilt": 7,
     "totalItems": 25,
     "sourceCount": 8,
-    "errors": []
+    "errors": [
+      "tigera-blog: HTTP 415"
+    ]
   },
   "blogs": [
     {
@@ -12,6 +14,26 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Jun/25/ai-and-liability/#atom-everything",
+          "text": "AI and Liability",
+          "summary": "<p><strong><a href=\"https://www.schneier.com/blog/archives/2026/06/ai-and-liability.html\">AI and Liability</a></strong></p>\nBruce Schneier on the recent <a href=\"https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/\"",
+          "createdAt": "2026-06-25T22:28:46+00:00",
+          "url": "https://simonwillison.net/2026/Jun/25/ai-and-liability/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/25/datasette-export-database/#atom-everything",
+          "text": "datasette-export-database 0.3a2",
+          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-export-database/releases/tag/0.3a2\">datasette-export-database 0.3a2</a></p>\n        <p>An embarrassingly tiny release. The <code>pyproject.toml</code> had pinned to <code>datasette==1.0a27</code>, inadvertently making this ",
+          "createdAt": "2026-06-25T17:21:09+00:00",
+          "url": "https://simonwillison.net/2026/Jun/25/datasette-export-database/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything",
           "text": "simonw/browser-compat-db",
@@ -111,23 +133,20 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
+        }
+      ]
+    },
+    {
+      "name": "Lilian Weng's Blog (OpenAI)",
+      "handle": "lilianweng.github.io",
+      "bio": "AI research deep-dives, LLM architectures, agent systems, multimodal, alignment, safety.",
+      "tweets": [
         {
-          "id": "https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything",
-          "text": "Datasette Apps: Host custom HTML applications inside Datasette",
-          "summary": "<p>Today we launched a new plugin for Datasette, <a href=\"https://github.com/datasette/datasette-apps\">datasette-apps</a>, with <a href=\"https://datasette.io/blog/2026/datasette-apps/\">this launch announcement post</a> on the Datasette project blog. That post has the <em>what</em>, but I'm going to ",
-          "createdAt": "2026-06-18T23:58:38+00:00",
-          "url": "https://simonwillison.net/2026/Jun/18/datasette-apps/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/18/datasette-acl/#atom-everything",
-          "text": "datasette-acl 0.6a0",
-          "summary": "<p><strong>Release:</strong> <a href=\"https://github.com/datasette/datasette-acl/releases/tag/0.6a0\">datasette-acl 0.6a0</a></p>\n        <blockquote>\n<p>This release expands <code>datasette-acl</code> from table-only permissions toward a general resource-sharing system.</p>\n</blockquote>\n<p>Alex Gar",
-          "createdAt": "2026-06-18T19:03:13+00:00",
-          "url": "https://simonwillison.net/2026/Jun/18/datasette-acl/#atom-everything",
+          "id": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
+          "text": "Scaling Laws, Carefully",
+          "summary": "Scaling laws are one of the most critical empirical findings in deep learning. The observation is simple in form: the training loss $L$ decreases predictably as we scale up model size $N$, dataset size $D$, and compute $C$, following a power-law curve, which appears as a straight line on a log-log p",
+          "createdAt": "Wed, 24 Jun 2026 00:00:00 +0000",
+          "url": "https://lilianweng.github.io/posts/2026-06-24-scaling-laws/",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -184,21 +203,21 @@
       "bio": "Daily AI news curation: product launches, funding, models, tools, industry highlights.",
       "tweets": [
         {
-          "id": "https://www.bensbites.com/p/record-a-skill",
-          "text": "Record a skill",
-          "summary": "5.5-cyber vs mythos",
-          "createdAt": "Tue, 23 Jun 2026 13:02:42 GMT",
-          "url": "https://www.bensbites.com/p/record-a-skill",
+          "id": "https://www.bensbites.com/p/claude-code-in-slack",
+          "text": "Claude Code in Slack",
+          "summary": "a tip to get better UI from Codex",
+          "createdAt": "Thu, 25 Jun 2026 13:04:03 GMT",
+          "url": "https://www.bensbites.com/p/claude-code-in-slack",
           "likes": 0,
           "retweets": 0,
           "replies": 0
         },
         {
-          "id": "https://www.bensbites.com/p/the-first-big-exit-in-ai",
-          "text": "The first big exit in AI",
-          "summary": "little tools for making life easier",
-          "createdAt": "Thu, 18 Jun 2026 13:03:58 GMT",
-          "url": "https://www.bensbites.com/p/the-first-big-exit-in-ai",
+          "id": "https://www.bensbites.com/p/record-a-skill",
+          "text": "Record a skill",
+          "summary": "5.5-cyber vs mythos",
+          "createdAt": "Tue, 23 Jun 2026 13:02:42 GMT",
+          "url": "https://www.bensbites.com/p/record-a-skill",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -210,6 +229,16 @@
       "handle": "tldr.tech",
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
+        {
+          "id": "https://tldr.tech/ai/2026-06-25",
+          "text": "Jalapeño chip 🌶️, Anthropic accuses Alibaba ⚖️, Gemini computer use 🖥️",
+          "summary": "",
+          "createdAt": "Thu, 25 Jun 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-06-25",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://tldr.tech/ai/2026-06-24",
           "text": "Claude Tag 💬, Seedance 2.5 🎥, Mistral OCR 4 🧠",
@@ -236,33 +265,6 @@
           "summary": "",
           "createdAt": "Mon, 22 Jun 2026 00:00:00 GMT",
           "url": "https://tldr.tech/ai/2026-06-22",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-06-19",
-          "text": "GPT-5.6 Tuesday 🤖, Claude Code artifacts 👨‍💻, Perplexity’s Brain memory 🧠",
-          "summary": "",
-          "createdAt": "Fri, 19 Jun 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-06-19",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        }
-      ]
-    },
-    {
-      "name": "Tigera Blog (Calico / AI Security)",
-      "handle": "tigera.io",
-      "bio": "AI agent governance, security, accountability frameworks, enterprise AI deployment policy.",
-      "tweets": [
-        {
-          "id": "https://www.tigera.io/blog/how-lynx-works-a-technical-walkthrough/",
-          "text": "How Lynx Works: A Technical Walkthrough",
-          "summary": "We launched Lynx this week. Instead of restating the pitch, I want to explain how it&#8217;s built and why we made the architectural choices we did. If you run Kubernetes and you&#8217;re starting to put...\nThe post How Lynx Works: A Technical Walkthrough appeared first on Tigera – Creator of Calico",
-          "createdAt": "Thu, 18 Jun 2026 17:19:30 +0000",
-          "url": "https://www.tigera.io/blog/how-lynx-works-a-technical-walkthrough/",
           "likes": 0,
           "retweets": 0,
           "replies": 0
