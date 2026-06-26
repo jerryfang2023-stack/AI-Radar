@@ -3824,7 +3824,7 @@ function sourceRunArtifactItems(items, sourceId) {
 }
 
 function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems, sourceItems) {
-  const sourceRunDir = path.join(reportsDir, "source-runs", date);
+  const sourceRunDir = sourceArtifactDir;
   const jsonPath = path.join(sourceRunDir, `${sourceId}-raw-source-candidates.json`);
   const reportPath = path.join(sourceRunDir, `${sourceId}-raw-source-report.md`);
   const failures = Array.isArray(sourceResult.failures) ? sourceResult.failures : [];

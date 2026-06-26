@@ -29,6 +29,11 @@ const maxCycles = Math.max(1, Number(args.get("max-cycles") || config.max_retry_
 const monitorTimeoutMs = Math.max(60_000, Number(args.get("monitor-timeout-ms") || 420_000));
 const node = process.platform === "win32" ? "node" : process.execPath;
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
+const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
+const sourceArtifactDir = args.get("source-artifact-dir")
+  ? path.resolve(root, args.get("source-artifact-dir"))
+  : path.join(reportsDir, "source-runs", date);
+const sourceArtifactRefreshSources = ["aihot", "keyword", "gdelt", "rss"];
 
 function toNumber(value, fallback) {
   const numeric = Number(value);
@@ -59,8 +64,6 @@ function buildMonitorArgsForCycle(cycle) {
   const hnBase = toNumber(args.get("hn-limit"), 8);
   const fetchTimeout = toNumber(args.get("fetch-timeout-ms"), 20000);
   const snapshotTimeout = toNumber(args.get("snapshot-timeout-ms"), 16000);
-  const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
-  const sourceArtifactDir = args.get("source-artifact-dir");
   const searchLimitStep = toNumber(retryTuning.search_limit_step, 10);
   const searchPathStep = toNumber(retryTuning.search_path_query_limit_step, 1);
   const gdeltStep = toNumber(retryTuning.gdelt_query_limit_step, 1);
@@ -90,6 +93,69 @@ function buildMonitorArgsForCycle(cycle) {
   return monitorArgs;
 }
 
+function buildSourceRefreshArgsForCycle(cycle, source) {
+  return [
+    ...buildMonitorArgsForCycle(cycle).filter(
+      (arg) => arg !== "--use-source-artifacts=true" && !arg.startsWith("--source-artifact-dir=")
+    ),
+    `--source-only=${source}`,
+    `--source-artifact-dir=${sourceArtifactDir}`,
+  ];
+}
+
+function writeFailedSourceArtifact(source, cycle, message) {
+  fs.mkdirSync(sourceArtifactDir, { recursive: true });
+  const artifactPath = path.join(sourceArtifactDir, `${source}-raw-source-candidates.json`);
+  const payload = {
+    date,
+    generated_at: new Date().toISOString(),
+    mode: "business_source_raw",
+    source_id: source,
+    source_label: source,
+    status: "failed",
+    discovered_count: 0,
+    raw_candidate_count: 0,
+    failures: [`retry cycle ${cycle} source refresh failed: ${message}`],
+    items: [],
+  };
+  fs.writeFileSync(artifactPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+}
+
+function refreshSourceArtifactsForCycle(cycle) {
+  if (!useSourceArtifacts || cycle <= 1) {
+    return { status: "not_required", failures: [] };
+  }
+
+  fs.mkdirSync(sourceArtifactDir, { recursive: true });
+  const failures = [];
+  for (const source of sourceArtifactRefreshSources) {
+    const sourceArgs = buildSourceRefreshArgsForCycle(cycle, source);
+    const logPath = path.join(sourceArtifactDir, `${source}-source-run-retry-${cycle}.log`);
+    const run = spawnSync(node, ["agent-workflow/tools/run-guanlan-daily-monitor.mjs", ...sourceArgs], {
+      cwd: root,
+      encoding: "utf8",
+      maxBuffer: 20 * 1024 * 1024,
+      timeout: monitorTimeoutMs,
+      killSignal: "SIGTERM",
+      shell: false,
+    });
+    const output = [run.stdout || "", run.stderr || (run.error ? String(run.error.message || run.error) : "")]
+      .filter(Boolean)
+      .join("\n");
+    fs.writeFileSync(logPath, output, "utf8");
+    if (run.status !== 0) {
+      const message = String(run.stderr || run.error?.message || "source refresh command failed").trim();
+      failures.push(`${source}: ${message}`);
+      writeFailedSourceArtifact(source, cycle, message);
+    }
+  }
+
+  return {
+    status: failures.length ? "partial_failure" : "refreshed",
+    failures,
+  };
+}
+
 function appendAutomationMemory(text) {
   const userHome = process.env.USERPROFILE || process.env.HOME || "";
   if (!userHome) return;
@@ -106,6 +172,8 @@ function writeLoopReport(loopResult) {
     .map(
       (cycle) => [
         `### Cycle ${cycle.cycle}`,
+        `- source_artifacts_refresh: ${cycle.sourceArtifactsRefreshStatus || "not_required"}`,
+        `- source_artifacts_refresh_failures: ${(cycle.sourceArtifactsRefreshFailures || []).join("; ") || "none"}`,
         `- monitor_status: ${cycle.monitorStatus}`,
         `- failed_stage: ${cycle.monitorStage}`,
         `- monitor_raw_count: ${cycle.monitorRawCount}`,
@@ -150,6 +218,7 @@ function writeLoopReport(loopResult) {
 }
 
 function runMonitorCycle(cycle) {
+  const sourceRefresh = refreshSourceArtifactsForCycle(cycle);
   const monitorArgs = buildMonitorArgsForCycle(cycle);
   const commandArgs = ["agent-workflow/tools/run-guanlan-daily-monitor.mjs", ...monitorArgs];
   const run = spawnSync(node, commandArgs, {
@@ -173,6 +242,7 @@ function runMonitorCycle(cycle) {
     timedOut,
     args: monitorArgs,
     parsed,
+    sourceRefresh,
   };
 }
 
@@ -209,6 +279,8 @@ function main() {
       hardFailed,
       qualityReport: quality.report_path,
       monitorArgs: monitorRun.args,
+      sourceArtifactsRefreshStatus: monitorRun.sourceRefresh?.status || "not_required",
+      sourceArtifactsRefreshFailures: monitorRun.sourceRefresh?.failures || [],
       monitorFailure: monitorRun.status === 0 ? "" : String(monitorRun.stderr || "monitor command failed").trim(),
       monitorStage: monitorRun.status === 0 ? "completed" : monitorRun.timedOut ? "monitor_collection_timeout" : "monitor_collection_failed",
       evidenceGaps: quality.metrics?.importance_coverage_gaps || "unknown",

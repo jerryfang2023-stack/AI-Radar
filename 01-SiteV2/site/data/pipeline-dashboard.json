@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-25T05:11:52.805Z",
+    "generatedAt": "2026-06-26T07:54:46.603Z",
     "dateRange": {
       "start": "2025-10-13",
       "end": "2026-06-25"
@@ -16,9 +16,10 @@
       "pool": 95,
       "assets": {
         "case": 4,
-        "product-service": 17
+        "product-service": 17,
+        "opinion": 10
       },
-      "cards": 21,
+      "cards": 31,
       "rawChannels": {
         "aihot": 158,
         "keyword_search": 24,
@@ -100,9 +101,9 @@
         "case": 9,
         "funding": 3,
         "product-service": 5,
-        "opinion": 12
+        "opinion": 32
       },
-      "cards": 29,
+      "cards": 49,
       "rawChannels": {
         "aihot": 165,
         "keyword_search": 21,
@@ -647,9 +648,10 @@
     "pool": 95,
     "assets": {
       "case": 4,
-      "product-service": 17
+      "product-service": 17,
+      "opinion": 10
     },
-    "cards": 21,
+    "cards": 31,
     "rawChannels": {
       "aihot": 158,
       "keyword_search": 24,
@@ -727,21 +729,21 @@
     "assets": {
       "case": 269,
       "product-service": 223,
+      "opinion": 773,
       "funding": 68,
-      "opinion": 743,
       "trend": 6,
       "scene": 3,
       "change": 14
     }
   },
   "opinionTimelines": {
-    "timelineFiles": 345,
+    "timelineFiles": 361,
     "people": 44,
-    "detailBlocks": 743
+    "detailBlocks": 773
   },
   "latestRelation": null,
   "engineQuality": {
-    "updatedAt": "2026-06-25T05:11:52.863Z",
+    "updatedAt": "2026-06-26T07:54:46.682Z",
     "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
     "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
     "rows": [
