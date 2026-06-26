@@ -27,6 +27,7 @@ const config = (() => {
 const diagnosticScoreReference = Number(args.get("pass-score") || config.diagnostic_score_reference || config.pass_score || 85);
 const maxCycles = Math.max(1, Number(args.get("max-cycles") || config.max_retry_cycles || 3));
 const monitorTimeoutMs = Math.max(60_000, Number(args.get("monitor-timeout-ms") || 420_000));
+const sourceRefreshTimeoutMs = Math.min(monitorTimeoutMs, Math.max(60_000, Number(args.get("source-refresh-timeout-ms") || 180_000)));
 const node = process.platform === "win32" ? "node" : process.execPath;
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 
@@ -90,6 +91,62 @@ function buildMonitorArgsForCycle(cycle) {
   return monitorArgs;
 }
 
+function refreshSourceArtifactsForCycle(cycle, monitorArgs) {
+  const sourceArtifactDir = args.get("source-artifact-dir");
+  if (cycle <= 1 || !sourceArtifactDir) return { refreshed: false, failures: [] };
+
+  fs.mkdirSync(path.resolve(root, sourceArtifactDir), { recursive: true });
+  const baseArgs = monitorArgs.filter(
+    (arg) => !arg.startsWith("--use-source-artifacts") && !arg.startsWith("--source-artifact-dir=")
+  );
+  const sources = ["aihot", "keyword", "gdelt", "rss"];
+  const failures = [];
+
+  for (const source of sources) {
+    const sourceArgs = [
+      "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
+      ...baseArgs,
+      `--source-only=${source}`,
+    ];
+    const run = spawnSync(node, sourceArgs, {
+      cwd: root,
+      encoding: "utf8",
+      maxBuffer: 20 * 1024 * 1024,
+      timeout: sourceRefreshTimeoutMs,
+      killSignal: "SIGTERM",
+      shell: false,
+    });
+    if (run.status === 0) continue;
+
+    const message = String(run.stderr || run.error?.message || "source artifact refresh failed").trim();
+    failures.push(`${source}: ${message || "source artifact refresh failed"}`);
+    const failedArtifact = path.join(root, sourceArtifactDir, `${source}-raw-source-candidates.json`);
+    fs.writeFileSync(
+      failedArtifact,
+      `${JSON.stringify(
+        {
+          date,
+          generated_at: new Date().toISOString(),
+          mode: "business_source_raw",
+          source_id: source,
+          source_label: source,
+          status: "failed",
+          discovered_count: 0,
+          source_item_count: 0,
+          raw_candidate_count: 0,
+          failures: [`source artifact refresh failed on retry cycle ${cycle}; ${message}`],
+          items: [],
+        },
+        null,
+        2
+      )}\n`,
+      "utf8"
+    );
+  }
+
+  return { refreshed: true, failures };
+}
+
 function appendAutomationMemory(text) {
   const userHome = process.env.USERPROFILE || process.env.HOME || "";
   if (!userHome) return;
@@ -112,6 +169,8 @@ function writeLoopReport(loopResult) {
         `- quality_status: ${cycle.qualityStatus}`,
         `- quality_score: ${cycle.qualityScore}`,
         `- hard_failed: ${cycle.hardFailed.join(", ") || "none"}`,
+        `- source_artifacts_refreshed: ${cycle.sourceRefresh?.refreshed ? "yes" : "no"}`,
+        `- source_artifact_refresh_failures: ${(cycle.sourceRefresh?.failures || []).join(" | ") || "none"}`,
         `- failed_sources: ${cycle.failedSources || "none"}`,
         `- fallback_used: ${cycle.fallbackUsed || "unknown"}`,
         `- evidence_gaps: ${cycle.evidenceGaps || "unknown"}`,
@@ -151,6 +210,7 @@ function writeLoopReport(loopResult) {
 
 function runMonitorCycle(cycle) {
   const monitorArgs = buildMonitorArgsForCycle(cycle);
+  const sourceRefresh = refreshSourceArtifactsForCycle(cycle, monitorArgs);
   const commandArgs = ["agent-workflow/tools/run-guanlan-daily-monitor.mjs", ...monitorArgs];
   const run = spawnSync(node, commandArgs, {
     cwd: root,
@@ -172,6 +232,7 @@ function runMonitorCycle(cycle) {
     stderr: run.stderr || (run.error ? String(run.error.message || run.error) : ""),
     timedOut,
     args: monitorArgs,
+    sourceRefresh,
     parsed,
   };
 }
@@ -210,6 +271,7 @@ function main() {
       qualityReport: quality.report_path,
       monitorArgs: monitorRun.args,
       monitorFailure: monitorRun.status === 0 ? "" : String(monitorRun.stderr || "monitor command failed").trim(),
+      sourceRefresh: monitorRun.sourceRefresh,
       monitorStage: monitorRun.status === 0 ? "completed" : monitorRun.timedOut ? "monitor_collection_timeout" : "monitor_collection_failed",
       evidenceGaps: quality.metrics?.importance_coverage_gaps || "unknown",
       fallbackUsed: readFallbackUsedFromLog(date),

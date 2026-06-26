@@ -1,0 +1,293 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-079
+title: "Claude Code v2.1.193 发布"
+original_url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.193"
+canonical_url: "https://github.com/anthropics/claude-code/releases/tag/v2.1.193"
+source_name: "Claude Code：GitHub Releases（RSS）"
+source_type: developer
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: changelog_or_release
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-25T21:45:57.000Z"
+collected_at: 2026-06-26T03:32:31.768Z
+language: mixed
+full_text_hash: b9452ccd43d1bf0a
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-079-claude-code-v2-1-193-发布.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-079-claude-code-v2-1-193-发布.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: medium
+extraction_method: "main"
+readability_score: 79
+extractor_diagnostics: {"readability_score":79,"text_length":2482,"paragraph_count":22,"sentence_count":14,"boilerplate_hits":0,"symbol_ratio":0.0081,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 2482
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b9452ccd43d1bf0a","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Claude Code v2.1.193 发布","discovery_summary":"Claude Code v2.1.193 新增 `autoMode.classifyAllShell` 设置，将全部 Bash/PowerShell 命令经自动模式分类器处理。自动模式拒绝原因现加入转录、拒绝提示及 `/permissions` 页面。新增 `claude_code.assistant_response` OpenTelemetry 日志事件（默认不记录，需设置 `OTEL_LOG_ASSISTANT_RESPONSES=1`）。Bash 模式支持实时文件路径自动补全；MCP 服务器需认证时显示启动提示。新增空闲后台 shell 命令自动内存压力回收（可禁用）。修复 `/model` UI 状态滞后、后台任务误取消、子 agent 隐藏同级等问题，并改进了后台 agent 启动指令、MCP 认证重连、插件自动重命名等行为。","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"https://github.com/anthropics/claude-code/releases/tag/v2.1.193","discovered_at":"2026-06-26T03:23:11.247Z","rank_on_page":95,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 90898b3ef3744bf8
+content_hash: b9452ccd43d1bf0a
+semantic_hash: b862fd5da31ca4de
+duplicate_of: ""
+first_seen_at: "2026-06-25T21:45:57.000Z"
+last_seen_at: 2026-06-26T03:32:31.768Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Claude Code","GitHub Releases（RSS）"],"products":["Claude","MCP","agent","claude","mcp","agents"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人"],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["2.1","193","1","21.7","134","25","21","45"],"quotes":["N background tasks would be abandoned","Continue from where you left off","general-purpose (resumed)","end your response"]}
+evidence_seed: {"company_actions":["Claude Code v2.1.193 新增 `autoMode.classifyAllShell` 设置，将全部 Bash/PowerShell 命令经自动模式分类器处理。自动模式拒绝原因现加入转录、拒绝提示及 `/permissions` 页面。新增 `claude_code.assistant_response` OpenTelemetry 日志事件（默认不记录，需设置 `OTEL_LOG_ASSISTANT_RESPONSES=1`）。Bash 模式支持实时文件路径自动补全；MCP 服务器需认证时显示启动提示。新增空闲后台 shell 命令自动内存压力回收（可禁用）。修复 `/model` UI 状态滞后、后台任务误取消、子 agent 隐藏同级等问题，并改进了后台 agent 启动指令、MCP 认证重连、插件自动重命名等行为。","There was an error while loading.","Please reload this page ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Claude Code v2.1.193 新增 `autoMode.classifyAllShell` 设置，将全部 Bash/PowerShell 命令经自动模式分类器处理。自动模式拒绝原因现加入转录、拒绝提示及 `/permissions` 页面。新增 `claude_code.assistant_response` OpenTelemetry 日志事件（默认不记录，需设置 `OTEL_LOG_ASSISTANT_RESPONSES=1`）。Bash 模式支持实时文件路径自动补全；MCP 服务器需认证时显示启动提示。新增空闲后台 shell 命令自动内存压力回收（可禁用）。修复 `/model` UI 状态滞后、后台任务误取消、子 agent 隐藏同级等问题，并改进了后台 agent 启动指令、MCP 认证重连、插件自动重命名等行为。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"There was an error while loading.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Please reload this page .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"193 Latest Latest Compare Choose a tag to compare Sorry, something went wrong.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Filter Loading Sorry, something went wrong.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# Claude Code v2.1.193 发布
+
+## clean_text
+
+Uh oh!
+There was an error while loading. Please reload this page .
+anthropics
+claude-code
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+21.7k
+Star
+134k
+v2.1.193
+Latest
+Latest
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading. Please reload this page .
+No results found
+View all tags
+ashwin-ant
+released this
+25 Jun 21:45
+v2.1.193
+f0919a1
+What's changed
+Added autoMode.classifyAllShell setting to route all Bash/PowerShell commands through the auto-mode classifier instead of only arbitrary-code-execution patterns
+Added auto-mode denial reasons to the transcript, the denial toast, and /permissions recent denials
+Added claude_code.assistant_response OpenTelemetry log event containing the model's response text. Redacted unless OTEL_LOG_ASSISTANT_RESPONSES=1 ; when that var is unset it follows OTEL_LOG_USER_PROMPTS , so deployments that already log prompt content will start receiving response content on upgrade — set OTEL_LOG_ASSISTANT_RESPONSES=0 to keep prompts-only.
+Added live file path autocomplete to bash mode ( ! )
+Added a startup notice when MCP servers need authentication, pointing at /mcp
+Added automatic memory-pressure reaping for idle background shell commands (disable with CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1 )
+Fixed /model and other client-data-gated UI showing stale/empty state immediately after /login
+Fixed backgrounding (←←) spuriously cancelling with "N background tasks would be abandoned" when all running tasks carry over to the new session
+Fixed pinned background agents being re-prompted to "Continue from where you left off" after every auto-update
+Fixed backgrounding the main turn spawning a phantom "general-purpose (resumed)" subagent that re-ran the main conversation
+Fixed agent panel hiding sibling agents when viewing a subagent
+Improved background agents: the launch result no longer instructs Claude to "end your response" — it keeps working on other tasks while the agent runs
+Improved MCP headersHelper auth: the helper now re-runs and reconnects automatically when a tool call returns 401/403
+Improved plugin auto-rename: marketplace renames maps are now followed automatically, updating your settings to the new name
+Improved /add-dir message when the directory is already a working directory
+Assets
+12
+Loading
+Uh oh!
+There was an error while loading. Please reload this page .
+15 people reacted
+
+## full_text
+
+Uh oh!
+There was an error while loading. Please reload this page .
+anthropics
+claude-code
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+21.7k
+Star
+134k
+v2.1.193
+Latest
+Latest
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading. Please reload this page .
+No results found
+View all tags
+ashwin-ant
+released this
+25 Jun 21:45
+v2.1.193
+f0919a1
+What's changed
+Added autoMode.classifyAllShell setting to route all Bash/PowerShell commands through the auto-mode classifier instead of only arbitrary-code-execution patterns
+Added auto-mode denial reasons to the transcript, the denial toast, and /permissions recent denials
+Added claude_code.assistant_response OpenTelemetry log event containing the model's response text. Redacted unless OTEL_LOG_ASSISTANT_RESPONSES=1 ; when that var is unset it follows OTEL_LOG_USER_PROMPTS , so deployments that already log prompt content will start receiving response content on upgrade — set OTEL_LOG_ASSISTANT_RESPONSES=0 to keep prompts-only.
+Added live file path autocomplete to bash mode ( ! )
+Added a startup notice when MCP servers need authentication, pointing at /mcp
+Added automatic memory-pressure reaping for idle background shell commands (disable with CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1 )
+Fixed /model and other client-data-gated UI showing stale/empty state immediately after /login
+Fixed backgrounding (←←) spuriously cancelling with "N background tasks would be abandoned" when all running tasks carry over to the new session
+Fixed pinned background agents being re-prompted to "Continue from where you left off" after every auto-update
+Fixed backgrounding the main turn spawning a phantom "general-purpose (resumed)" subagent that re-ran the main conversation
+Fixed agent panel hiding sibling agents when viewing a subagent
+Improved background agents: the launch result no longer instructs Claude to "end your response" — it keeps working on other tasks while the agent runs
+Improved MCP headersHelper auth: the helper now re-runs and reconnects automatically when a tool call returns 401/403
+Improved plugin auto-rename: marketplace renames maps are now followed automatically, updating your settings to the new name
+Improved /add-dir message when the directory is already a working directory
+Assets
+12
+Loading
+Uh oh!
+There was an error while loading. Please reload this page .
+15 people reacted
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 79
+- fetch_status: fetched-readable-text-main
+- extraction_quality: medium
+- diagnostics: {"readability_score":79,"text_length":2482,"paragraph_count":22,"sentence_count":14,"boilerplate_hits":0,"symbol_ratio":0.0081,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Claude Code v2.1.193 新增 `autoMode.classifyAllShell` 设置，将全部 Bash/PowerShell 命令经自动模式分类器处理。自动模式拒绝原因现加入转录、拒绝提示及 `/permissions` 页面。新增 `claude_code.assistant_response` OpenTelemetry 日志事件（默认不记录，需设置 `OTEL_LOG_ASSISTANT_RESPONSES=1`）。Bash 模式支持实时文件路径自动补全；MCP 服务器需认证时显示启动提示。新增空闲后台 shell 命令自动内存压力回收（可禁用）。修复 `/model` UI 状态滞后、后台任务误取消、子 agent 隐藏同级等问题，并改进了后台 agent 启动指令、MCP 认证重连、插件自动重命名等行为。
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   There was an error while loading.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Please reload this page .
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   193 Latest Latest Compare Choose a tag to compare Sorry, something went wrong.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   Filter Loading Sorry, something went wrong.
+
+## business_elements
+
+- companies: Claude Code, GitHub Releases（RSS）
+- products: Claude, MCP, agent, claude, mcp, agents
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 2.1, 193, 1, 21.7, 134, 25, 21, 45
+- quotes: N background tasks would be abandoned / Continue from where you left off / general-purpose (resumed) / end your response
+
+## evidence_seed
+
+- company_actions: Claude Code v2.1.193 新增 `autoMode.classifyAllShell` 设置，将全部 Bash/PowerShell 命令经自动模式分类器处理。自动模式拒绝原因现加入转录、拒绝提示及 `/permissions` 页面。新增 `claude_code.assistant_response` OpenTelemetry 日志事件（默认不记录，需设置 `OTEL_LOG_ASSISTANT_RESPONSES=1`）。Bash 模式支持实时文件路径自动补全；MCP 服务器需认证时显示启动提示。新增空闲后台 shell 命令自动内存压力回收（可禁用）。修复 `/model` UI 状态滞后、后台任务误取消、子 agent 隐藏同级等问题，并改进了后台 agent 启动指令、MCP 认证重连、插件自动重命名等行为。 / There was an error while loading. / Please reload this page .
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Claude Code v2.1.193 发布","discovery_summary":"Claude Code v2.1.193 新增 `autoMode.classifyAllShell` 设置，将全部 Bash/PowerShell 命令经自动模式分类器处理。自动模式拒绝原因现加入转录、拒绝提示及 `/permissions` 页面。新增 `claude_code.assistant_response` OpenTelemetry 日志事件（默认不记录，需设置 `OTEL_LOG_ASSISTANT_RESPONSES=1`）。Bash 模式支持实时文件路径自动补全；MCP 服务器需认证时显示启动提示。新增空闲后台 shell 命令自动内存压力回收（可禁用）。修复 `/model` UI 状态滞后、后台任务误取消、子 agent 隐藏同级等问题，并改进了后台 agent 启动指令、MCP 认证重连、插件自动重命名等行为。","source_name":"Claude Code：GitHub Releases（RSS）","origin_url":"https://github.com/anthropics/claude-code/releases/tag/v2.1.193","discovered_at":"2026-06-26T03:23:11.247Z","rank_on_page":95,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Claude Code v2.1.193 新增 `autoMode.classifyAllShell` 设置，将全部 Bash/PowerShell 命令经自动模式分类器处理。自动模式拒绝原因现加入转录、拒绝提示及 `/permissions` 页面。新增 `claude_code.assistant_response` OpenTelemetry 日志事件（默认不记录，需设置 `OTEL_LOG_ASSISTANT_RESPONSES=1`）。Bash 模式支持实时文件路径自动补全；MCP 服务器需认证时显示启动提示。新增空闲后台 shell 命令自动内存压力回收（可禁用）。修复 `/model` UI 状态滞后、后台任务误取消、子 agent 隐藏同级等问题，并改进了后台 agent 启动指令、MCP 认证重连、插件自动重命名等行为。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
