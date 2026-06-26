@@ -184,14 +184,16 @@ jobs:
           sources=(aihot keyword gdelt rss)
           pids=()
           logs=()
+          source_timeout="${SOURCE_COLLECTION_TIMEOUT:-8m}"
 
           for source in "${sources[@]}"; do
             log_file="agent-workflow/reports/source-runs/${RUN_DATE}/${source}-source-run.log"
             logs+=("$log_file")
             {
-              node agent-workflow/tools/run-guanlan-daily-monitor.mjs \
+              timeout "$source_timeout" node agent-workflow/tools/run-guanlan-daily-monitor.mjs \
                 --date="${RUN_DATE}" \
                 --source-only="$source" \
+                --source-artifact-dir="agent-workflow/reports/source-runs/${RUN_DATE}" \
                 --search-limit=200 \
                 --search-path-query-limit=5 \
                 --gdelt-query-limit=12 \
