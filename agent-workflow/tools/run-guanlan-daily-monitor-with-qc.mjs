@@ -107,6 +107,7 @@ function refreshSourceArtifactsForCycle(cycle, monitorArgs) {
       "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
       ...baseArgs,
       `--source-only=${source}`,
+      `--source-artifact-dir=${sourceArtifactDir}`,
     ];
     const run = spawnSync(node, sourceArgs, {
       cwd: root,
