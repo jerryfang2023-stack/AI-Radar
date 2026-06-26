@@ -27,7 +27,7 @@ const config = (() => {
 const diagnosticScoreReference = Number(args.get("pass-score") || config.diagnostic_score_reference || config.pass_score || 85);
 const maxCycles = Math.max(1, Number(args.get("max-cycles") || config.max_retry_cycles || 3));
 const monitorTimeoutMs = Math.max(60_000, Number(args.get("monitor-timeout-ms") || 420_000));
-const sourceRefreshTimeoutMs = Math.min(monitorTimeoutMs, Math.max(60_000, Number(args.get("source-refresh-timeout-ms") || 180_000)));
+const sourceRefreshTimeoutMs = Math.min(monitorTimeoutMs, Math.max(60_000, Number(args.get("source-refresh-timeout-ms") || 420_000)));
 const node = process.platform === "win32" ? "node" : process.execPath;
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 
@@ -122,6 +122,7 @@ function refreshSourceArtifactsForCycle(cycle, monitorArgs) {
     const message = String(run.stderr || run.error?.message || "source artifact refresh failed").trim();
     failures.push(`${source}: ${message || "source artifact refresh failed"}`);
     const failedArtifact = path.join(root, sourceArtifactDir, `${source}-raw-source-candidates.json`);
+    if (fs.existsSync(failedArtifact)) continue;
     fs.writeFileSync(
       failedArtifact,
       `${JSON.stringify(
