@@ -1066,13 +1066,13 @@ function signalEventClusterKey(spec, section) {
 }
 
 function signalClusterKey(spec, section) {
-  const eventKey = signalEventClusterKey(spec, section);
-  if (eventKey) return eventKey;
   const sourceUrl = value(section, "source_url");
   const hash = value(section, "raw_full_text_hash") || value(section, "full_text_hash");
+  if (hash) return `hash:${hash}`;
+  const eventKey = signalEventClusterKey(spec, section);
+  if (eventKey) return eventKey;
   const title = poolTitle(section) || spec.title;
   const company = normalizedSignalText(spec.company || companyFromSection(section));
-  if (hash) return `hash:${hash}`;
   if (sourceUrl) return `url:${normalizedUrl(sourceUrl)}`;
   return `event:${company}:${normalizedSignalText(`${spec.type} ${title}`).slice(0, 120)}`;
 }
