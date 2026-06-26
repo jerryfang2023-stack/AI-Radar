@@ -1,0 +1,286 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-031",
+  "title": "Agentex is here | Scale AI",
+  "original_url": "https://scale.com/blog/agentex",
+  "canonical_url": "https://scale.com/blog/agentex",
+  "source_name": "keyword search / Tavily",
+  "source_type": "organization-capability",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_market_trend",
+  "search_path": "a_media_gdelt",
+  "search_path_label": "A 级媒体 / GDELT 路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-26T03:32:31.268Z",
+  "language": "mixed",
+  "full_text": "← Blog Enterprise\nIntroducing Agentex: Open-Source Infrastructure for Enterprise AI Agents\nBy Priya Ponnapalli · November 12, 2025 · 5 min read\nCopy Link\nExplore Agentex on GitHub or jump to the developer docs .\nBuilding AI agent demos is easy. Building a suite of agents that are reliable and securely connected across environments is the hard part.\nOver the past few years, Scale has helped the world’s largest enterprises bring AI into complex workflows. We’ve learned that the biggest challenges aren’t about what agents can do, but how they run. As teams adopt AI, they naturally build agents in different ways, which is okay. The real challenge is connecting them, keeping them reliable, and deploying them securely in production. The more agents you build, the harder they are to manage.\nWe set out to fix this problem, and that’s why we’re open-sourcing Agentex : the agentic infrastructure layer inside the Scale GenAI Platform. Agentex is an enterprise-grade framework for building, deploying, and managing AI agents. It gives developers a standard way to host and orchestrate long-running, asynchronous agents at scale. And now, we’re making it available to everyone.\nIntroducing Agentex\nWe sat down as a team to demo Agentex and discuss how it’s used across our enterprise customers today. We also talk about our decision to open-source and how we hope to collaborate with the community. Watch our conversation below.\nWhy Agentex?\nMost agents built today focus on relatively simple behaviors: they answer a question, use a tool, and exit. They’re often single-turn reasoning or limited tool use in response to a prompt. These are valuable but incomplete. In real-world environments, agents need to do much more than respond once and exit.\nThink about insurance claims processing. An agent today might be prompted by a claims agent to review a document, analyze its contents, and return a policy summary. But a truly transformational agentic system is autonomous and continuously monitors new submissions, automatically processes claims as they arrive, and orchestrates other agents or systems (software, databases, or even humans) to complete each case. It can wait indefinitely for a response and resume seamlessly from where it left off.\nThese kinds of always-on, persistent agents unlock transformational enterprise applications across industries. We built Agentex to enable these types of agentic applications.\nInside Agentex\nSee developer docs here.\nUnder the hood, Agentex handles async and long-running processes, multi-agent communication, persistent state and logs, and durable workflows through deep integration with Temporal.\nIt includes a Python SDK to define agent behavior, a CLI for scaffolding and managing agents, a backend Agent Server for running agents locally or in production, and a developer UI to test, debug, and observe them. The framework is Docker and Kubernetes native. This lets teams build agents that stay running, coordinate with other systems, and reliably recover if interrupted.\nYou can start with a single local agent on your laptop, or scale up to a suite of agents communicating across a production environment.\nPython SDK\nDefines how agents are structured and run\nCLI\nScaffolds, runs, and manages agents\nAgent Server\nBackend runtime that hosts agents locally or in production\nDeveloper UI\nFrontend to test, debug, and monitor agents\nDocker + Kubernetes native\nRuns locally or deploys to any cloud environment\nDurable Workflows\nEnsures agents can pause, resume, and recover seamlessly using persistent state and workflow durability\nAgent Communication\nEnables agents to message, coordinate, and trigger one another across distributed systems\nLong-Running Processes\nSupports asynchronous, always-on agents that can wait for events, external inputs, or human actions before continuing\nWhy We’re Open-Sourcing\nEvery enterprise we work with builds AI agents differently. There wasn’t an open, vendor-agnostic framework that could support those variations while remaining lightweight, secure, and inspectable. So we built one.\nBy open-sourcing Agentex, we’re making enterprise-grade agentic infrastructure accessible to all developers. Whether you’re experimenting locally or managing a portfolio of live agents, Agentex provides a shared, flexible foundation to build on.\nOpen-source also ensures transparency and community evolution. We want developers to see how these systems work under the hood, extend them freely, and help define what “production-grade” agentic systems look like. We believe Agentex will become the standard layer for hosting and orchestrating agents, enabling developers to build freely while giving enterprises the control and reliability they need for production systems.\nAgentex is for Individual Developers and Enterprise Teams\nFor individual developers, Agentex offers an easy on-ramp to building agents. You can scaffold, run, and observe your agent locally in minutes with a familiar Python-first experience. These capabilities are open-source.\nFor enterprise teams, Agentex powers a managed, zero-ops deployment layer as part of the Scale GenAI Platform. This includes CI/CD automation, authentication (SSO/SAML), compliance, and full lifecycle management. This enables your teams to focus on business logic rather than infrastructure.\nHere’s a quick guide to the difference between the open-source and enterprise editions.\nFeature\nOpen Source Edition\nEnterprise Edition\nSource Code\n✅ Open source server, developer UI, and SDK\n✅ Open source server, developer UI, and SDK\nLocal Development\n✅ Use this repo for local development\n✅ Use this repo for local development\nCommunity Support\n✅ GitHub issues, discussions, pull requests\n✅ GitHub issues, discussions, pull requests\nGitOps Setup\n❌ DIY deployment using public helm charts and the agentex CLI in CI/CD\n✅ Scale sets up CI/CD on select repositories for automatic agent deployment\nBuilder Tools\n❌ Bring your own (vector stores, models, etc.)\n✅ Model inference, knowledge bases, etc.\nAgent Operations\n❌ Not included\n✅ Full agent lifecycle management: hosting, version control, interaction UI, tracing, evaluation\nIdentity Management\n❌ No user management\n✅ SSO/SAML authentication, centralized API key management\nEnterprise Operations\n❌ Self-service setup\n✅ Uptime/availability SLAs, security reviews, deployment, installation, ongoing maintenance\nHow to get started\nVisit github.com/scaleapi/scale-agentex\nVisit scale.com/demo\nGet Started with Agentex\nWe’re excited to make Agentex available to the broader community and we’d love your feedback as it evolves. Please collaborate with us, share what you build, and help make this framework even better.\nFor Developers:\nStart building today at github.com/scaleapi/scale-agentex.\nFor Enterprise Teams:\nTo deploy Agentex at scale, book a demo with our team.\nJoin Us Live:\nCurious how you use Agentex to build and orchestrate a suite of long-running agents for enterprise use?\nJoin us for a webinar where the founding engineers of Agentex dive into the advanced capabilities of the framework. We’ll demo an enterprise procurement agent as an example of how Agentex powers complex, stateful systems designed to run reliably at scale.\nJoin us on Thursday, November 20 from 10-11AM PT. Register here .\nReady to break through your data bottleneck?\nScale's team will match your project to the right experts, fast.\nTalk to our experts",
+  "clean_text": "← Blog Enterprise\nIntroducing Agentex: Open-Source Infrastructure for Enterprise AI Agents\nBy Priya Ponnapalli · November 12, 2025 · 5 min read\nCopy Link\nExplore Agentex on GitHub or jump to the developer docs .\nBuilding AI agent demos is easy. Building a suite of agents that are reliable and securely connected across environments is the hard part.\nOver the past few years, Scale has helped the world’s largest enterprises bring AI into complex workflows. We’ve learned that the biggest challenges aren’t about what agents can do, but how they run. As teams adopt AI, they naturally build agents in different ways, which is okay. The real challenge is connecting them, keeping them reliable, and deploying them securely in production. The more agents you build, the harder they are to manage.\nWe set out to fix this problem, and that’s why we’re open-sourcing Agentex : the agentic infrastructure layer inside the Scale GenAI Platform. Agentex is an enterprise-grade framework for building, deploying, and managing AI agents. It gives developers a standard way to host and orchestrate long-running, asynchronous agents at scale. And now, we’re making it available to everyone.\nIntroducing Agentex\nWe sat down as a team to demo Agentex and discuss how it’s used across our enterprise customers today. We also talk about our decision to open-source and how we hope to collaborate with the community. Watch our conversation below.\nWhy Agentex?\nMost agents built today focus on relatively simple behaviors: they answer a question, use a tool, and exit. They’re often single-turn reasoning or limited tool use in response to a prompt. These are valuable but incomplete. In real-world environments, agents need to do much more than respond once and exit.\nThink about insurance claims processing. An agent today might be prompted by a claims agent to review a document, analyze its contents, and return a policy summary. But a truly transformational agentic system is autonomous and continuously monitors new submissions, automatically processes claims as they arrive, and orchestrates other agents or systems (software, databases, or even humans) to complete each case. It can wait indefinitely for a response and resume seamlessly from where it left off.\nThese kinds of always-on, persistent agents unlock transformational enterprise applications across industries. We built Agentex to enable these types of agentic applications.\nInside Agentex\nSee developer docs here.\nUnder the hood, Agentex handles async and long-running processes, multi-agent communication, persistent state and logs, and durable workflows through deep integration with Temporal.\nIt includes a Python SDK to define agent behavior, a CLI for scaffolding and managing agents, a backend Agent Server for running agents locally or in production, and a developer UI to test, debug, and observe them. The framework is Docker and Kubernetes native. This lets teams build agents that stay running, coordinate with other systems, and reliably recover if interrupted.\nYou can start with a single local agent on your laptop, or scale up to a suite of agents communicating across a production environment.\nPython SDK\nDefines how agents are structured and run\nCLI\nScaffolds, runs, and manages agents\nAgent Server\nBackend runtime that hosts agents locally or in production\nDeveloper UI\nFrontend to test, debug, and monitor agents\nDocker + Kubernetes native\nRuns locally or deploys to any cloud environment\nDurable Workflows\nEnsures agents can pause, resume, and recover seamlessly using persistent state and workflow durability\nAgent Communication\nEnables agents to message, coordinate, and trigger one another across distributed systems\nLong-Running Processes\nSupports asynchronous, always-on agents that can wait for events, external inputs, or human actions before continuing\nWhy We’re Open-Sourcing\nEvery enterprise we work with builds AI agents differently. There wasn’t an open, vendor-agnostic framework that could support those variations while remaining lightweight, secure, and inspectable. So we built one.\nBy open-sourcing Agentex, we’re making enterprise-grade agentic infrastructure accessible to all developers. Whether you’re experimenting locally or managing a portfolio of live agents, Agentex provides a shared, flexible foundation to build on.\nOpen-source also ensures transparency and community evolution. We want developers to see how these systems work under the hood, extend them freely, and help define what “production-grade” agentic systems look like. We believe Agentex will become the standard layer for hosting and orchestrating agents, enabling developers to build freely while giving enterprises the control and reliability they need for production systems.\nAgentex is for Individual Developers and Enterprise Teams\nFor individual developers, Agentex offers an easy on-ramp to building agents. You can scaffold, run, and observe your agent locally in minutes with a familiar Python-first experience. These capabilities are open-source.\nFor enterprise teams, Agentex powers a managed, zero-ops deployment layer as part of the Scale GenAI Platform. This includes CI/CD automation, authentication (SSO/SAML), compliance, and full lifecycle management. This enables your teams to focus on business logic rather than infrastructure.\nHere’s a quick guide to the difference between the open-source and enterprise editions.\nFeature\nOpen Source Edition\nEnterprise Edition\nSource Code\n✅ Open source server, developer UI, and SDK\n✅ Open source server, developer UI, and SDK\nLocal Development\n✅ Use this repo for local development\n✅ Use this repo for local development\nCommunity Support\n✅ GitHub issues, discussions, pull requests\n✅ GitHub issues, discussions, pull requests\nGitOps Setup\n❌ DIY deployment using public helm charts and the agentex CLI in CI/CD\n✅ Scale sets up CI/CD on select repositories for automatic agent deployment\nBuilder Tools\n❌ Bring your own (vector stores, models, etc.)\n✅ Model inference, knowledge bases, etc.\nAgent Operations\n❌ Not included\n✅ Full agent lifecycle management: hosting, version control, interaction UI, tracing, evaluation\nIdentity Management\n❌ No user management\n✅ SSO/SAML authentication, centralized API key management\nEnterprise Operations\n❌ Self-service setup\n✅ Uptime/availability SLAs, security reviews, deployment, installation, ongoing maintenance\nHow to get started\nVisit github.com/scaleapi/scale-agentex\nVisit scale.com/demo\nGet Started with Agentex\nWe’re excited to make Agentex available to the broader community and we’d love your feedback as it evolves. Please collaborate with us, share what you build, and help make this framework even better.\nFor Developers:\nStart building today at github.com/scaleapi/scale-agentex.\nFor Enterprise Teams:\nTo deploy Agentex at scale, book a demo with our team.\nJoin Us Live:\nCurious how you use Agentex to build and orchestrate a suite of long-running agents for enterprise use?\nJoin us for a webinar where the founding engineers of Agentex dive into the advanced capabilities of the framework. We’ll demo an enterprise procurement agent as an example of how Agentex powers complex, stateful systems designed to run reliably at scale.\nJoin us on Thursday, November 20 from 10-11AM PT. Register here .\nReady to break through your data bottleneck?\nScale's team will match your project to the right experts, fast.\nTalk to our experts",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-26/r-031-agentex-is-here-scale-ai.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-26/r-031-agentex-is-here-scale-ai.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 7401,
+    "paragraph_count": 60,
+    "sentence_count": 59,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 7401,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "7990663ef694e74d",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "b449993f68e7b976",
+  "content_hash": "7990663ef694e74d",
+  "full_text_hash": "7990663ef694e74d",
+  "semantic_hash": "fcbb152ce330a4b1",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-26T03:32:31.268Z",
+  "last_seen_at": "2026-06-26T03:32:31.268Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "# Introducing Agentex: Open-Source Infrastructure for Enterprise AI Agents. *Explore Agentex on GitHub or jump to the developer docs.*. Building a suite of agents that are reliable and securely connected across environments is the hard part. The more agents you build, the harder they are to manage. We set out to fix this problem, and that’s why we’re open-sourcing Agentex: the agentic infrastructure layer inside the Scale GenAI Platform. Agentex is an enterprise-grade framework for building, deploying, and managing",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "← Blog Enterprise Introducing Agentex: Open-Source Infrastructure for Enterprise AI Agents By Priya Ponnapalli · November 12, 2025 · 5 min read Copy Link Explore Agentex on GitHub or jump to the developer docs .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Building AI agent demos is easy.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Building a suite of agents that are reliable and securely connected across environments is the hard part.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Over the past few years, Scale has helped the world’s largest enterprises bring AI into complex workflows.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "We’ve learned that the biggest challenges aren’t about what agents can do, but how they run.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Tavily",
+      "GitHub"
+    ],
+    "products": [
+      "Agents",
+      "agents",
+      "agent",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "金融 / 保险",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "采购负责人"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "权限 / 安全治理",
+      "采购 / 招投标",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "采购",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "0.736",
+      "12",
+      "2025",
+      "5 m",
+      "20",
+      "10",
+      "11"
+    ],
+    "quotes": [
+      "production-grade"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "# Introducing Agentex: Open-Source Infrastructure for Enterprise AI Agents. *Explore Agentex on GitHub or jump to the developer docs.*. Building a suite of agents that are reliable and securely connected across environments is the hard part. The more agents you build, the harder they are to manage. We set out to fix this problem, and that’s why we’re open-sourcing Agentex: the agentic infrastructure layer inside the Scale GenAI Platform. Agentex is an enterprise-grade framework for building, deploying, and managing",
+      "← Blog Enterprise Introducing Agentex: Open-Source Infrastructure for Enterprise AI Agents By Priya Ponnapalli · November 12, 2025 · 5 min read Copy Link Explore Agentex on GitHub or jump to the developer docs .",
+      "Building AI agent demos is easy."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "Over the past few years, Scale has helped the world’s largest enterprises bring AI into complex workflows."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "采购负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "market_shaping_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Agentex is here | Scale AI\n\n- raw_id: R-031\n- original_url: https://scale.com/blog/agentex\n- source_name: keyword search / Tavily\n- collected_at: 2026-06-26T03:32:31.268Z\n\n## clean_text\n\n← Blog Enterprise\nIntroducing Agentex: Open-Source Infrastructure for Enterprise AI Agents\nBy Priya Ponnapalli · November 12, 2025 · 5 min read\nCopy Link\nExplore Agentex on GitHub or jump to the developer docs .\nBuilding AI agent demos is easy. Building a suite of agents that are reliable and securely connected across environments is the hard part.\nOver the past few years, Scale has helped the world’s largest enterprises bring AI into complex workflows. We’ve learned that the biggest challenges aren’t about what agents can do, but how they run. As teams adopt AI, they naturally build agents in different ways, which is okay. The real challenge is connecting them, keeping them reliable, and deploying them securely in production. The more agents you build, the harder they are to manage.\nWe set out to fix this problem, and that’s why we’re open-sourcing Agentex : the agentic infrastructure layer inside the Scale GenAI Platform. Agentex is an enterprise-grade framework for building, deploying, and managing AI agents. It gives developers a standard way to host and orchestrate long-running, asynchronous agents at scale. And now, we’re making it available to everyone.\nIntroducing Agentex\nWe sat down as a team to demo Agentex and discuss how it’s used across our enterprise customers today. We also talk about our decision to open-source and how we hope to collaborate with the community. Watch our conversation below.\nWhy Agentex?\nMost agents built today focus on relatively simple behaviors: they answer a question, use a tool, and exit. They’re often single-turn reasoning or limited tool use in response to a prompt. These are valuable but incomplete. In real-world environments, agents need to do much more than respond once and exit.\nThink about insurance claims processing. An agent today might be prompted by a claims agent to review a document, analyze its contents, and return a policy summary. But a truly transformational agentic system is autonomous and continuously monitors new submissions, automatically processes claims as they arrive, and orchestrates other agents or systems (software, databases, or even humans) to complete each case. It can wait indefinitely for a response and resume seamlessly from where it left off.\nThese kinds of always-on, persistent agents unlock transformational enterprise applications across industries. We built Agentex to enable these types of agentic applications.\nInside Agentex\nSee developer docs here.\nUnder the hood, Agentex handles async and long-running processes, multi-agent communication, persistent state and logs, and durable workflows through deep integration with Temporal.\nIt includes a Python SDK to define agent behavior, a CLI for scaffolding and managing agents, a backend Agent Server for running agents locally or in production, and a developer UI to test, debug, and observe them. The framework is Docker and Kubernetes native. This lets teams build agents that stay running, coordinate with other systems, and reliably recover if interrupted.\nYou can start with a single local agent on your laptop, or scale up to a suite of agents communicating across a production environment.\nPython SDK\nDefines how agents are structured and run\nCLI\nScaffolds, runs, and manages agents\nAgent Server\nBackend runtime that hosts agents locally or in production\nDeveloper UI\nFrontend to test, debug, and monitor agents\nDocker + Kubernetes native\nRuns locally or deploys to any cloud environment\nDurable Workflows\nEnsures agents can pause, resume, and recover seamlessly using persistent state and workflow durability\nAgent Communication\nEnables agents to message, coordinate, and trigger one another across distributed systems\nLong-Running Processes\nSupports asynchronous, always-on agents that can wait for events, external inputs, or human actions before continuing\nWhy We’re Open-Sourcing\nEvery enterprise we work with builds AI agents differently. There wasn’t an open, vendor-agnostic framework that could support those variations while remaining lightweight, secure, and inspectable. So we built one.\nBy open-sourcing Agentex, we’re making enterprise-grade agentic infrastructure accessible to all developers. Whether you’re experimenting locally or managing a portfolio of live agents, Agentex provides a shared, flexible foundation to build on.\nOpen-source also ensures transparency and community evolution. We want developers to see how these systems work under the hood, extend them freely, and help define what “production-grade” agentic systems look like. We believe Agentex will become the standard layer for hosting and orchestrating agents, enabling developers to build freely while giving enterprises the control and reliability they need for production systems.\nAgentex is for Individual Developers and Enterprise Teams\nFor individual developers, Agentex offers an easy on-ramp to building agents. You can scaffold, run, and observe your agent locally in minutes with a familiar Python-first experience. These capabilities are open-source.\nFor enterprise teams, Agentex powers a managed, zero-ops deployment layer as part of the Scale GenAI Platform. This includes CI/CD automation, authentication (SSO/SAML), compliance, and full lifecycle management. This enables your teams to focus on business logic rather than infrastructure.\nHere’s a quick guide to the difference between the open-source and enterprise editions.\nFeature\nOpen Source Edition\nEnterprise Edition\nSource Code\n✅ Open source server, developer UI, and SDK\n✅ Open source server, developer UI, and SDK\nLocal Development\n✅ Use this repo for local development\n✅ Use this repo for local development\nCommunity Support\n✅ GitHub issues, discussions, pull requests\n✅ GitHub issues, discussions, pull requests\nGitOps Setup\n❌ DIY deployment using public helm charts and the agentex CLI in CI/CD\n✅ Scale sets up CI/CD on select repositories for automatic agent deployment\nBuilder Tools\n❌ Bring your own (vector stores, models, etc.)\n✅ Model inference, knowledge bases, etc.\nAgent Operations\n❌ Not included\n✅ Full agent lifecycle management: hosting, version control, interaction UI, tracing, evaluation\nIdentity Management\n❌ No user management\n✅ SSO/SAML authentication, centralized API key management\nEnterprise Operations\n❌ Self-service setup\n✅ Uptime/availability SLAs, security reviews, deployment, installation, ongoing maintenance\nHow to get started\nVisit github.com/scaleapi/scale-agentex\nVisit scale.com/demo\nGet Started with Agentex\nWe’re excited to make Agentex available to the broader community and we’d love your feedback as it evolves. Please collaborate with us, share what you build, and help make this framework even better.\nFor Developers:\nStart building today at github.com/scaleapi/scale-agentex.\nFor Enterprise Teams:\nTo deploy Agentex at scale, book a demo with our team.\nJoin Us Live:\nCurious how you use Agentex to build and orchestrate a suite of long-running agents for enterprise use?\nJoin us for a webinar where the founding engineers of Agentex dive into the advanced capabilities of the framework. We’ll demo an enterprise procurement agent as an example of how Agentex powers complex, stateful systems designed to run reliably at scale.\nJoin us on Thursday, November 20 from 10-11AM PT. Register here .\nReady to break through your data bottleneck?\nScale's team will match your project to the right experts, fast.\nTalk to our experts\n\n## full_text\n\n← Blog Enterprise\nIntroducing Agentex: Open-Source Infrastructure for Enterprise AI Agents\nBy Priya Ponnapalli · November 12, 2025 · 5 min read\nCopy Link\nExplore Agentex on GitHub or jump to the developer docs .\nBuilding AI agent demos is easy. Building a suite of agents that are reliable and securely connected across environments is the hard part.\nOver the past few years, Scale has helped the world’s largest enterprises bring AI into complex workflows. We’ve learned that the biggest challenges aren’t about what agents can do, but how they run. As teams adopt AI, they naturally build agents in different ways, which is okay. The real challenge is connecting them, keeping them reliable, and deploying them securely in production. The more agents you build, the harder they are to manage.\nWe set out to fix this problem, and that’s why we’re open-sourcing Agentex : the agentic infrastructure layer inside the Scale GenAI Platform. Agentex is an enterprise-grade framework for building, deploying, and managing AI agents. It gives developers a standard way to host and orchestrate long-running, asynchronous agents at scale. And now, we’re making it available to everyone.\nIntroducing Agentex\nWe sat down as a team to demo Agentex and discuss how it’s used across our enterprise customers today. We also talk about our decision to open-source and how we hope to collaborate with the community. Watch our conversation below.\nWhy Agentex?\nMost agents built today focus on relatively simple behaviors: they answer a question, use a tool, and exit. They’re often single-turn reasoning or limited tool use in response to a prompt. These are valuable but incomplete. In real-world environments, agents need to do much more than respond once and exit.\nThink about insurance claims processing. An agent today might be prompted by a claims agent to review a document, analyze its contents, and return a policy summary. But a truly transformational agentic system is autonomous and continuously monitors new submissions, automatically processes claims as they arrive, and orchestrates other agents or systems (software, databases, or even humans) to complete each case. It can wait indefinitely for a response and resume seamlessly from where it left off.\nThese kinds of always-on, persistent agents unlock transformational enterprise applications across industries. We built Agentex to enable these types of agentic applications.\nInside Agentex\nSee developer docs here.\nUnder the hood, Agentex handles async and long-running processes, multi-agent communication, persistent state and logs, and durable workflows through deep integration with Temporal.\nIt includes a Python SDK to define agent behavior, a CLI for scaffolding and managing agents, a backend Agent Server for running agents locally or in production, and a developer UI to test, debug, and observe them. The framework is Docker and Kubernetes native. This lets teams build agents that stay running, coordinate with other systems, and reliably recover if interrupted.\nYou can start with a single local agent on your laptop, or scale up to a suite of agents communicating across a production environment.\nPython SDK\nDefines how agents are structured and run\nCLI\nScaffolds, runs, and manages agents\nAgent Server\nBackend runtime that hosts agents locally or in production\nDeveloper UI\nFrontend to test, debug, and monitor agents\nDocker + Kubernetes native\nRuns locally or deploys to any cloud environment\nDurable Workflows\nEnsures agents can pause, resume, and recover seamlessly using persistent state and workflow durability\nAgent Communication\nEnables agents to message, coordinate, and trigger one another across distributed systems\nLong-Running Processes\nSupports asynchronous, always-on agents that can wait for events, external inputs, or human actions before continuing\nWhy We’re Open-Sourcing\nEvery enterprise we work with builds AI agents differently. There wasn’t an open, vendor-agnostic framework that could support those variations while remaining lightweight, secure, and inspectable. So we built one.\nBy open-sourcing Agentex, we’re making enterprise-grade agentic infrastructure accessible to all developers. Whether you’re experimenting locally or managing a portfolio of live agents, Agentex provides a shared, flexible foundation to build on.\nOpen-source also ensures transparency and community evolution. We want developers to see how these systems work under the hood, extend them freely, and help define what “production-grade” agentic systems look like. We believe Agentex will become the standard layer for hosting and orchestrating agents, enabling developers to build freely while giving enterprises the control and reliability they need for production systems.\nAgentex is for Individual Developers and Enterprise Teams\nFor individual developers, Agentex offers an easy on-ramp to building agents. You can scaffold, run, and observe your agent locally in minutes with a familiar Python-first experience. These capabilities are open-source.\nFor enterprise teams, Agentex powers a managed, zero-ops deployment layer as part of the Scale GenAI Platform. This includes CI/CD automation, authentication (SSO/SAML), compliance, and full lifecycle management. This enables your teams to focus on business logic rather than infrastructure.\nHere’s a quick guide to the difference between the open-source and enterprise editions.\nFeature\nOpen Source Edition\nEnterprise Edition\nSource Code\n✅ Open source server, developer UI, and SDK\n✅ Open source server, developer UI, and SDK\nLocal Development\n✅ Use this repo for local development\n✅ Use this repo for local development\nCommunity Support\n✅ GitHub issues, discussions, pull requests\n✅ GitHub issues, discussions, pull requests\nGitOps Setup\n❌ DIY deployment using public helm charts and the agentex CLI in CI/CD\n✅ Scale sets up CI/CD on select repositories for automatic agent deployment\nBuilder Tools\n❌ Bring your own (vector stores, models, etc.)\n✅ Model inference, knowledge bases, etc.\nAgent Operations\n❌ Not included\n✅ Full agent lifecycle management: hosting, version control, interaction UI, tracing, evaluation\nIdentity Management\n❌ No user management\n✅ SSO/SAML authentication, centralized API key management\nEnterprise Operations\n❌ Self-service setup\n✅ Uptime/availability SLAs, security reviews, deployment, installation, ongoing maintenance\nHow to get started\nVisit github.com/scaleapi/scale-agentex\nVisit scale.com/demo\nGet Started with Agentex\nWe’re excited to make Agentex available to the broader community and we’d love your feedback as it evolves. Please collaborate with us, share what you build, and help make this framework even better.\nFor Developers:\nStart building today at github.com/scaleapi/scale-agentex.\nFor Enterprise Teams:\nTo deploy Agentex at scale, book a demo with our team.\nJoin Us Live:\nCurious how you use Agentex to build and orchestrate a suite of long-running agents for enterprise use?\nJoin us for a webinar where the founding engineers of Agentex dive into the advanced capabilities of the framework. We’ll demo an enterprise procurement agent as an example of how Agentex powers complex, stateful systems designed to run reliably at scale.\nJoin us on Thursday, November 20 from 10-11AM PT. Register here .\nReady to break through your data bottleneck?\nScale's team will match your project to the right experts, fast.\nTalk to our experts\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [company_action / daily_observation, heatmap, change, case, trend / high] # Introducing Agentex: Open-Source Infrastructure for Enterprise AI Agents. *Explore Agentex on GitHub or jump to the developer docs.*. Building a suite of agents that are reliable and securely connected across environments is the hard part. The more agents you build, the harder they are to manage. We set out to fix this problem, and that’s why we’re open-sourcing Agentex: the agentic infrastructure layer inside the Scale GenAI Platform. Agentex is an enterprise-grade framework for building, deploying, and managing\n2. [company_action / daily_observation, heatmap, change, case, trend / high] ← Blog Enterprise Introducing Agentex: Open-Source Infrastructure for Enterprise AI Agents By Priya Ponnapalli · November 12, 2025 · 5 min read Copy Link Explore Agentex on GitHub or jump to the developer docs .\n3. [company_action / daily_observation, heatmap, change, case, trend / high] Building AI agent demos is easy.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] Building a suite of agents that are reliable and securely connected across environments is the hard part.\n5. [workflow_change / daily_observation, heatmap, change, case, trend / high] Over the past few years, Scale has helped the world’s largest enterprises bring AI into complex workflows.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] We’ve learned that the biggest challenges aren’t about what agents can do, but how they run.\n"
+}

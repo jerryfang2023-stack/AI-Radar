@@ -1,4 +1,4 @@
-# Daily Monitor Evals
+﻿# Daily Monitor Evals
 
 Run these pass/fail checks when running, repairing, or updating the current WaveSight AI daily monitor source-capture layer.
 
@@ -36,6 +36,10 @@ Run these pass/fail checks when running, repairing, or updating the current Wave
     - Pass when Business Signals PR, production-chain dry run, Hermes recovery dispatch, and manual skill examples share the same production monitor baseline: diagnostic reference `85`, `search-limit=200`, `search-path-query-limit=5`, `gdelt-query-limit=12`, `hn-limit=8`, `fetch-timeout-ms=20000`, `snapshot-timeout-ms=16000`, and `monitor-timeout-ms=840000`.
     - Pass when HN remains feedback-only and is not expanded as the primary fix for routed Pool / Core Pool shortages.
     - Fail when dry-run or skill examples keep lightweight historical parameters such as `search-limit=30`, `search-path-query-limit=1`, `gdelt-query-limit=4`, `hn-limit=20`, or diagnostic `pass-score=80`.
+
+11. `source_artifact_retry_refresh`
+    - Pass when source-artifact production retries refresh `aihot`, `keyword`, `gdelt`, and `rss` artifacts with the current retry-cycle search / GDELT limits before rerunning the unified monitor.
+    - Fail when retry cycles only replay first-pass source artifacts, because `raw_count_min` cannot recover from additional search ceilings if source artifacts remain stale.
 
 ## Repair Loop
 

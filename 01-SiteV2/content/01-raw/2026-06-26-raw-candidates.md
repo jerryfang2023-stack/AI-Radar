@@ -1,0 +1,5959 @@
+﻿---
+date: 2026-06-26
+stage: raw
+status: guanlan-daily-monitor-collected
+raw_count: 188
+aihot_mode: source-artifacts
+aihot_since: ""
+aihot_discovered_count: 0
+aihot_daily_discovered_count: 0
+aihot_all_discovered_count: 0
+aihot_daily_included_count: 0
+aihot_daily_pool_policy: full_daily_selected_to_pool_index
+aihot_rejected_by_raw_entry_rules: 0
+external_search_activated: false
+source_artifacts_used: true
+source_artifact_files: agent-workflow/reports/source-runs/2026-06-26/aihot-raw-source-candidates.json, agent-workflow/reports/source-runs/2026-06-26/gdelt-raw-source-candidates.json, agent-workflow/reports/source-runs/2026-06-26/keyword-raw-source-candidates.json, agent-workflow/reports/source-runs/2026-06-26/rss-raw-source-candidates.json
+historical_dedupe_enabled: true
+historical_raw_records_checked: 5095
+historical_duplicates_removed_before_fetch: 96
+historical_duplicates_removed_after_fetch: 2
+raw_dedupe_buffer: 40
+aihot_count: 86
+keyword_search_count: 102
+follow_operators_count: 0
+keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
+source_registry_config: 01-SiteV2/content/11-databases/source-registry-v2.json
+pool_target: 75
+pool_selection_buffer: 20
+routed_pool_target: 60
+core_pool_target: 30
+core_non_large_vendor_target: 20
+generated_at: 2026-06-26T03:32:30.883Z
+---
+
+# 2026-06-26 Raw Candidates
+
+璇存槑锛氭湰鏂囦欢鐢?`agent-workflow/tools/run-guanlan-daily-monitor.mjs` 鐢熸垚銆傞粯璁ら噰鐢ㄤ笁娈靛紡绛栫暐锛欰I HOT daily 绮鹃€変笌鏈€杩?24 灏忔椂鍏ㄩ噺浣滀负 Raw 涓诲叆鍙ｏ紝paused-opinion-source 鍏ㄩ噺杩涘叆鍓嶆部瑙傜偣鍏ュ彛锛屽叧閿瘝瑙勫垯琛ラ綈娴峰澶у巶銆佸瀭鐩磋禌閬撱€佽瀺璧勩€佸鎴烽噰鐢ㄥ拰琛屼笟钀藉湴缂哄彛锛汬N / 绀惧尯鍙綔涓哄弽棣堣ˉ鍏呫€侫I HOT銆乸aused-opinion-source銆佹悳绱㈣仛鍚堝拰绀惧尯鏉愭枡閮藉彧鏄?discovery 鍏ュ彛锛岃繘鍏ラ噸瑕佸崱鐗囥€佷粖鏃ヨ瀵熸垨鍟嗕笟鍐呭弬鍓嶅繀椤诲洖鍒板師濮?URL锛屼繚瀛樺叏鏂囨垨褰撴椂鍙鏂囨湰锛屽苟閲嶆柊鍒ゅ畾椤甸潰绫诲瀷涓庝簨浠惰瘉鎹€?
+### R-001锝淧atronus AI 鑾?5000 涓囩編鍏?B 杞瀺璧勶紝鏋勫缓"鏁板瓧涓栫晫"鍘嬪姏娴嬭瘯 AI 鏅鸿兘浣?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-001-patronus-ai-鑾?5000-涓囩編鍏?b-杞瀺璧?鏋勫缓-鏁板瓧涓栫晫-鍘嬪姏娴嬭瘯-ai-鏅鸿兘浣?md`
+- 鍑哄锛歍echCrunch锛欰I锛圧SS锛夛綔https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歯ews
+- 鏉ユ簮绛夌骇锛欰
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T20:19:25.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=5a215f2089e06864
+- 鍘熸枃鎶撳彇浼樺厛绾э細22.1
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-002锝淩unway鍙戝竷Agent 2.0
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-002-runway鍙戝竷agent-2-0.md`
+- 鍑哄锛歊unway锛歂ews锛堢綉椤碉級锝渉ttps://runwayml.com/news/introducing-agent-2
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬鍥存帰绱俊鍙?- 鍏抽敭璇嶇粍锛歰utside-core-exploration
+- 鍙戝竷鏃堕棿锛?026-06-25T18:41:58.502Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=7b2e498e79a7fa6a
+- 鍘熸枃鎶撳彇浼樺厛绾э細22.1
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-003锝淕oogle Finance 鎺ㄥ嚭棣栨鐙珛 Android 搴旂敤锛宨OS 鐗堣鍒掍粖骞存櫄浜涙椂鍊欎笂绾?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-003-google-finance-鎺ㄥ嚭棣栨鐙珛-android-搴旂敤-ios-鐗堣鍒掍粖骞存櫄浜涙椂鍊欎笂绾?md`
+- 鍑哄锛欰rs Technica锛欰I锛圧SS锛夛綔https://arstechnica.com/google/2026/06/google-finance-finally-gets-a-mobile-app-as-ai-powered-overhaul-leaves-beta
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歮edia
+- 鏉ユ簮绛夌骇锛欰
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T18:38:51.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=36f07cf0d3ed6f1a
+- 鍘熸枃鎶撳彇浼樺厛绾э細22.1
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-004锝淕eneral Intuition 23浜跨編鍏冧及鍊煎畬鎴?.2浜跨編鍏冭瀺璧?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-004-general-intuition-23浜跨編鍏冧及鍊煎畬鎴?-2浜跨編鍏冭瀺璧?md`
+- 鍑哄锛歍echCrunch锛欰I锛圧SS锛夛綔https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歯ews
+- 鏉ユ簮绛夌骇锛欰
+- evidence_object_type: event
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T16:55:00.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=01b9cc29b285066d
+- 鍘熸枃鎶撳彇浼樺厛绾э細22.1
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-005锝淕eneral Intuition 瀹屾垚 3.2 浜跨編鍏冭瀺璧勶紝鐢ㄦ父鎴忔暟鎹缁冮€氱敤 AI 鏅鸿兘浣?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-005-general-intuition-瀹屾垚-3-2-浜跨編鍏冭瀺璧?鐢ㄦ父鎴忔暟鎹缁冮€氱敤-ai-鏅鸿兘浣?md`
+- 鍑哄锛歍echCrunch锛欰I锛圧SS锛夛綔https://techcrunch.com/2026/06/25/from-fortnite-to-robots-general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歯ews
+- 鏉ユ簮绛夌骇锛欰
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T16:00:00.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=01b9cc29b285066d
+- 鍘熸枃鎶撳彇浼樺厛绾э細22.1
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-006锝滅櫧瀹洜瀹夊叏鎷呭咖瑕佹眰OpenAI寤剁紦鍙戝竷鏂版ā鍨?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-006-鐧藉鍥犲畨鍏ㄦ媴蹇ц姹俹penai寤剁紦鍙戝竷鏂版ā鍨?md`
+- 鍑哄锛歍echCrunch锛欰I锛圧SS锛夛綔https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歯ews
+- 鏉ユ簮绛夌骇锛欰
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T23:34:39.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=fb79a911f3f9cfd0
+- 鍘熸枃鎶撳彇浼樺厛绾э細22.1
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-007锝淕oogle Finance 鍏ㄦ柊 Android 搴旂敤涓庢姇璧勭粍鍚堝姛鑳戒笂绾?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-007-google-finance-鍏ㄦ柊-android-搴旂敤涓庢姇璧勭粍鍚堝姛鑳戒笂绾?md`
+- 鍑哄锛欸oogle Blog锛欰I锛圧SS锛夛綔https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歱roduct
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T16:00:00.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=1293a6cfff3daf79
+- 鍘熸枃鎶撳彇浼樺厛绾э細22.1
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-008锝淚T鏃╂姤0626锛欰nthropic鐧婚《鐙鍏芥锛屾枃蹇冧竴瑷€瀹樼綉鍏抽棴锛岃嫻鏋滄定浠?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-008-it鏃╂姤0626-anthropic鐧婚《鐙鍏芥-鏂囧績涓€瑷€瀹樼綉鍏抽棴-鑻规灉娑ㄤ环.md`
+- 鍑哄锛欼T涔嬪锛圧SS锛夛綔https://www.ithome.com/0/968/735.htm
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: pricing_change
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T23:30:52.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: automotive_vertical_context, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=e2f3846d1854ec58
+- 鍘熸枃鎶撳彇浼樺厛绾э細22.1
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歷iewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-009锝淢eta 闅愮鎰熺煡鍩虹璁炬柦鐨勮祫浜у垎绫伙細娣峰悎妯″紡灏?LLM 钂搁涓虹‘瀹氭€ц鍒?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-009-meta-闅愮鎰熺煡鍩虹璁炬柦鐨勮祫浜у垎绫?娣峰悎妯″紡灏?llm-钂搁涓虹‘瀹氭€ц鍒?md`
+- 鍑哄锛歁eta Engineering Blog锛圧SS锛夛綔https://engineering.fb.com/2026/06/25/security/privacy-aware-infrastructure-in-the-ai-native-era-an-asset-classification-case-study
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T22:30:51.000Z
+- 鍒嗙被锛歵ip
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=072c4fd2bd192dd6
+- 鍘熸枃鎶撳彇浼樺厛绾э細22.1
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?
+### R-010锝滃紑鏀炬潈閲嶆ā鍨嬬殑闅句互蹇嶅彈鐨勫粔浠锋劅
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-010-寮€鏀炬潈閲嶆ā鍨嬬殑闅句互蹇嶅彈鐨勫粔浠锋劅.md`
+- 鍑哄锛欻acker News 鐑棬锛坆uzzing.cc 涓枃缈昏瘧锛夛綔https://jamesoclaire.com/2026/06/25/the-unbearable-cheapness-of-open-weight-models
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: pricing_change
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T16:27:59.428Z
+- 鍒嗙被锛歵ip
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=b46abe65baadf9e5
+- 鍘熸枃鎶撳彇浼樺厛绾э細22.1
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool, user_feedback_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, user_feedback_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-011锝淎nthropic 绉伴樋閲屽反宸村繀椤讳负鏈€澶ц妯?Claude 鍏嬮殕鏀诲嚮鍙楃綒
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-011-anthropic-绉伴樋閲屽反宸村繀椤讳负鏈€澶ц妯?claude-鍏嬮殕鏀诲嚮鍙楃綒.md`
+- 鍑哄锛欰rs Technica锛欰I锛圧SS锛夛綔https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歮edia
+- 鏉ユ簮绛夌骇锛欰
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T18:01:48.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=dcaa52f0513d773f
+- 鍘熸枃鎶撳彇浼樺厛绾э細22.1
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歷iewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-012锝淎nthropic鐨凜laude姝ｈ耽寰椾粯璐笰I娑堣垂鑰咃紝鎸戞垬ChatGPT涓诲鍦颁綅
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-012-anthropic鐨刢laude姝ｈ耽寰椾粯璐筧i娑堣垂鑰?鎸戞垬chatgpt涓诲鍦颁綅.md`
+- 鍑哄锛歍echCrunch锛欰I锛圧SS锛夛綔https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歯ews
+- 鏉ユ簮绛夌骇锛欰
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T17:38:27.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=e4948861b38b2a5a
+- 鍘熸枃鎶撳彇浼樺厛绾э細22.1
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-013锝滃鏁颁富娴丄I鑱婂ぉ鏈哄櫒浜烘斂娌荤珛鍦哄亸宸︼紝"鍙嶈閱?妯″瀷涔熶笉渚嬪
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-013-澶氭暟涓绘祦ai鑱婂ぉ鏈哄櫒浜烘斂娌荤珛鍦哄亸宸?鍙嶈閱?妯″瀷涔熶笉渚嬪.md`
+- 鍑哄锛歍he Decoder锛欰I News锛圧SS锛夛綔https://the-decoder.com/most-major-ai-chatbots-still-lean-left-on-political-questions-even-anti-woke-models-are-no-exception
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歮edia
+- 鏉ユ簮绛夌骇锛欰
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T16:04:32.000Z
+- 鍒嗙被锛歵ip
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: market_shaping_risk_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=e4f994378785ef5c
+- 鍘熸枃鎶撳彇浼樺厛绾э細22.1
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歷iewpoint
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储
+
+### R-014锝淲orkflow Automation Startups funded by Y Combinator (YC) 2026
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-014-workflow-automation-startups-funded-by-y-combinator-yc-2026.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.ycombinator.com/companies/industry/workflow-automation
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歠unding
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氳祫鏈競鍦轰俊鍙?- 鍏抽敭璇嶇粍锛歝apital-market-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-body-visible-text锝渜uality=high锝渉as_full_text=true锝渉ash=958bf0879f37c8c7
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-015锝淚ntroducing the a16z FDE Fellowship
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-015-introducing-the-a16z-fde-fellowship.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.a16z.news/p/introducing-the-a16z-fde-fellowship
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歠de_implementation
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛欵nterprise AI / FDE implementation signal
+- 鍏抽敭璇嶇粍锛歟nterprise-ai-implementation-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歠de_implementation
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-article锝渜uality=high锝渉as_full_text=true锝渉ash=cd4d3363f4161af9
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-016锝淐ase study: AI agents & workflow automation 鈥?a startup-to-enterprise scale story | Sustainability Atlas
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-016-case-study-ai-agents-workflow-automation-a-startup-to-enterprise-scale.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://sustainableatlas.org/post/case-study-ai-agents-workflow-automation-a-startup-to-enterprise-scale-story-1207
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氳祫鏈競鍦轰俊鍙?- 鍏抽敭璇嶇粍锛歝apital-market-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=0cd97d440337a4d4
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?
+### R-017锝淓nterprise technology 2026: 15 AI, SaaS, data, business trends to watch | Constellation Research
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-017-enterprise-technology-2026-15-ai-saas-data-business-trends-to-watch-co.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.constellationr.com/insights/news/enterprise-technology-2026-15-ai-saas-data-business-trends-watch
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=ba821f9010deabd9
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-018锝淎ccelerating UX Innovation: How GitHub Copilot Coding Agent ...
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-018-accelerating-ux-innovation-how-github-copilot-coding-agent.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/orgs/community/discussions/174926
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=12bb0236428b3a35
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-019锝淎WS Marketplace: Enterprise-Scale AI Development and Deployment
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-019-aws-marketplace-enterprise-scale-ai-development-and-deployment.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://aws.amazon.com/marketplace/pp/prodview-ei3jz4iqci63o
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歮arketplace
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=d7d85b17a66afdb0
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-020锝淲hat an AI Implementation Partner Actually Does For Startups and Enterprises - Byteonic Labs
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-020-what-an-ai-implementation-partner-actually-does-for-startups-and-enter.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://byteoniclabs.com/insights/what-is-an-ai-implementation-partner
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=8861c69d2ebdbbb3
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歷iewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-021锝淲hat a Successful Enterprise AI Support Deployment Looks Like in 2026
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-021-what-a-successful-enterprise-ai-support-deployment-looks-like-in-2026.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.chitika.com/what-a-successful-enterprise-ai-support-deployment-looks-like-in-2026
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=201c6a9bb125bfd2
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-022锝淛une 2026 announcements - Partner Center - Microsoft Learn
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-022-june-2026-announcements-partner-center-microsoft-learn.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://learn.microsoft.com/en-us/partner-center/announcements/2026-june
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歰fficial
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=4e3b48d1be2cf1f4
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-023锝淒abafinance - Newera.ai Raises $2.1M Pre-Seed Round Led By Embark
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-023-dabafinance-newera-ai-raises-2-1m-pre-seed-round-led-by-embark.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.dabafinance.com/en/news/saudi-ai-startup-newera-ai-pre-seed-embark
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歝apital_startup
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歝apital_startup
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=a95a7d1fc4df8c55
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-024锝淕itHub Copilot 路 Your AI pair programmer
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-024-github-copilot-your-ai-pair-programmer.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/features/copilot
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=d17dd4239b33be74
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-025锝淒eploying and Scaling Enterprise AI Agents - Eloquent AI
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-025-deploying-and-scaling-enterprise-ai-agents-eloquent-ai.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.eloquentai.co/resources/deploying-and-scaling-enterprise-ai-agents
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=e3d8f6284a34782b
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-026锝渨ell-architected/well-architected/saas/ai-strategy.md at main 路 MicrosoftDocs/well-architected 路 GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-026-well-architected-well-architected-saas-ai-strategy-md-at-main-microsof.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/MicrosoftDocs/well-architected/blob/main/well-architected/saas/ai-strategy.md
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=c78d71bdada70040
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-027锝淐runchbase rival: Dutch-founded startup data repository Dealroom snags 鈧?M funding 鈥?TFN
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-027-crunchbase-rival-dutch-founded-startup-data-repository-dealroom-snags-.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://techfundingnews.com/crunchbase-rival-dutch-founded-startup-data-repository-dealroom-snags-e6m-funding
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歝apital_startup
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歝apital_startup
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=29f3e478e9bd539b
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-028锝淭he Enterprise AI Revolution: 20 SaaS and AI Trends Redefining Corporate America in 2026
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-028-the-enterprise-ai-revolution-20-saas-and-ai-trends-redefining-corporat.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://correctcontext.com/the-enterprise-ai-revolution-20-saas-and-ai-trends-redefining-corporate-america-in-2026
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=6cbf4313c6535973
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-029锝淎WS Marketplace: Inadev Professional Services
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-029-aws-marketplace-inadev-professional-services.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://aws.amazon.com/marketplace/pp/prodview-l5j6imrf6zzbm
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歮arketplace
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=6f46e175640c9476
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-030锝淓nterprise Ai Adoption 鈥?Software & Technology Articles | MarketScale | MarketScale
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-030-enterprise-ai-adoption-software-technology-articles-marketscale-market.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.marketscale.com/industries/software-and-technology/topic/enterprise-ai-adoption
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歰fficial
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-body-visible-text锝渜uality=high锝渉as_full_text=true锝渉ash=3f72b971e02e3166
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-031锝淎gentex is here | Scale AI
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-031-agentex-is-here-scale-ai.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://scale.com/blog/agentex
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歰rganization-capability
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=7990663ef694e74d
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-032锝淎I Agent Marketplaces Are Here: Google, Microsoft, and Oracle Are All In. Where Does Your SaaS Fit? - Stactize
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-032-ai-agent-marketplaces-are-here-google-microsoft-and-oracle-are-all-in-.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://stactize.com/artikel/ai-agent-marketplaces-are-here-google-microsoft-and-oracle-are-all-in-where-does-your-saas-fit
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=8aaf2603e075d365
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-033锝淓nterprise AI Implementation Guide: Strategy to Production
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-033-enterprise-ai-implementation-guide-strategy-to-production.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.ai-agentsplus.com/blog/enterprise-ai-implementation-guide
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-article锝渜uality=high锝渉as_full_text=true锝渉ash=671495736f01fc60
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-034锝淟angBuilder 鈥?Enterprise AI Agent Platform with Open Source Flexibility
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-034-langbuilder-enterprise-ai-agent-platform-with-open-source-flexibility.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.cloudgeometry.com/solutions/langbuilder
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=b2cc0becb90a91f8
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-035锝淭he 12 Months AI Implementation Roadmap Enterprise for Growth
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-035-the-12-months-ai-implementation-roadmap-enterprise-for-growth.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://samta.ai/blogs/ai-implementation-roadmap-enterprise
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=4652e203aec36a82
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-036锝渆nterprise-ai 路 GitHub Topics
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-036-enterprise-ai-github-topics.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/topics/enterprise-ai?l=go
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=80f238d049f87ac7
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-037锝淎ugust 鈥?5 enterprise roundup 路 GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-037-august-25-enterprise-roundup-github.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/resources/insights/enterprise-content-roundup-august
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=139c491d382cd059
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-038锝淎WS Marketplace: Custom solution development
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-038-aws-marketplace-custom-solution-development.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://aws.amazon.com/marketplace/pp/prodview-ljyb5a3xavgam
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歮arketplace
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=2769410b2d6ea5be
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-039锝淓nterprise AI Implementation and Deployment - Alephic
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-039-enterprise-ai-implementation-and-deployment-alephic.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.alephic.com/ai-implementation
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=2d59b5d8683a058e
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-040锝淗ow Forward Deployed Engineering Is Closing the Enterprise Gap
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-040-how-forward-deployed-engineering-is-closing-the-enterprise-gap.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.youtube.com/watch?v=n_X_JZwt7S4
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=high锝渉as_full_text=true锝渉ash=3bfe5a093a70dd87
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-041锝淎 role designed for CX in the age of AI
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-041-a-role-designed-for-cx-in-the-age-of-ai.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.cxnetwork.com/artificial-intelligence/articles/role-designed-for-cx-ai-forward-deployed-engineer
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-json-ld锝渜uality=high锝渉as_full_text=true锝渉ash=b706d0c32d8a089c
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-042锝淎I Automation ROI in 2026: The Business Case | AnovaGrowth
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-042-ai-automation-roi-in-2026-the-business-case-anovagrowth.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://anovagrowth.com/blog/ai-automation-roi-2026-enterprise-adoption
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=9c7eb631f70a6b5b
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-043锝淎I Automation ROI for Small Business: Case Studies 2026
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-043-ai-automation-roi-for-small-business-case-studies-2026.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.raasautomazioni.it/en/blog/articoli/ai-automation-roi-small-business-case-studies-2026
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=c0158079938f152c
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-044锝淰ertical AI Agents Are Eating Horizontal SaaS in 2026
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-044-vertical-ai-agents-are-eating-horizontal-saas-in-2026.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.saasmag.com/vertical-ai-agents-eating-horizontal-saas
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=d19f3e4aaa1e7292
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?
+### R-045锝淓nterprise AI Agent Governance Plan for Production Teams
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-045-enterprise-ai-agent-governance-plan-for-production-teams.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://nextpageit.com/blog/enterprise-ai-agent-governance
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=8ddc6f813236c2b0
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-046锝淓indhoven-based Luna.ai Raises $2.5M in a Pre-Seed Funding
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-046-eindhoven-based-luna-ai-raises-2-5m-in-a-pre-seed-funding.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://startuprise.co.uk/luna-ai-raises-2-5m-in-a-pre-seed-funding
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歝apital_startup
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歝apital_startup
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=51aa50ac5c508ca4
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-047锝淭op Enterprise AI Agent Platforms in 2026 | VDF AI
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-047-top-enterprise-ai-agent-platforms-in-2026-vdf-ai.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://vdf.ai/blog/enterprise-ai-agent-vendor-landscape-2026
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-article锝渜uality=high锝渉as_full_text=true锝渉ash=66410eff93da994a
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-048锝淎I Agent Governance Checklist for Enterprise CISOs - Zenity
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-048-ai-agent-governance-checklist-for-enterprise-cisos-zenity.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://zenity.io/blog/security/ai-agent-governance
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=a9d05f93dd640dad
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-049锝淓nterprise AI Agent Pilot to Production: A Scaling Framework
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-049-enterprise-ai-agent-pilot-to-production-a-scaling-framework.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://agility-at-scale.com/ai/agents/pilot-to-production-scaling
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歰fficial
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=a10af38d346b3ad7
+- 鍘熸枃鎶撳彇浼樺厛绾э細21.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔?
+### R-050锝淩ight Off The Batch: 50% Of YC W24 Is Built With AI. Who Got ...
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-050-right-off-the-batch-50-of-yc-w24-is-built-with-ai-who-got.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://news.crunchbase.com/venture/yc-winter-batch-2024-ai-startup-seed-funding
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歝apital_startup
+- 鏉ユ簮绫诲瀷锛歩ndustry
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歝apital_startup
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=8a90c9bfd6a51c18
+- 鍘熸枃鎶撳彇浼樺厛绾э細20
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-051锝淎WS Marketplace: AI Strategy Sprint + Pilot Plan - Amazon.com
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-051-aws-marketplace-ai-strategy-sprint-pilot-plan-amazon-com.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://aws.amazon.com/marketplace/pp/prodview-x3bprkt3elj34
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歮arketplace
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=a06c458f2202bc5a
+- 鍘熸枃鎶撳彇浼樺厛绾э細20
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-052锝淎I Automation ROI: CFO-Ready Business Case Guide 2026 | AGIX Technologies
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-052-ai-automation-roi-cfo-ready-business-case-guide-2026-agix-technologies.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://agixtech.com/insights/ai-automation-roi-building-the-business-case
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: pricing_change
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-article锝渜uality=high锝渉as_full_text=true锝渉ash=864afc0a7032febc
+- 鍘熸枃鎶撳彇浼樺厛绾э細20
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-053锝淎I Global Summit | WMF 2026 - We Make Future
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-053-ai-global-summit-wmf-2026-we-make-future.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://en.wemakefuture.it/next/events/ai-global-summit
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歠de_implementation
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: search_result_or_tool_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歠ormal_report
+- 涓婚鍒嗙被锛欵nterprise AI / FDE implementation signal
+- 鍏抽敭璇嶇粍锛歟nterprise-ai-implementation-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歠de_implementation
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens
+- 鏈湴蹇収锛歨ttp-400-fallback-text锝渜uality=medium锝渉as_full_text=true锝渉ash=ee0dcce693da681f
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.9
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-054锝?026: The year AI SaaS companies act like AI Services companies. I keep seeing the same pattern: AI vendors send technical consultants on-site to run discovery and build custom solutions for each鈥?| Alex Furmansky | 18 comments
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-054-2026-the-year-ai-saas-companies-act-like-ai-services-companies-i-keep-.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.linkedin.com/posts/alexfurmansky_2026-the-year-ai-saas-companies-act-like-activity-7434685284962955264-xFtN
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歨ttp-451-fallback-text锝渜uality=medium锝渉as_full_text=true锝渉ash=4b97da1beaf23f99
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.9
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歶ser_feedback_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, user_feedback_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-055锝淎gentic AI startup Quash raised $635K Pre-seed funding from Arali Ventures 鈥?Incubees
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-055-agentic-ai-startup-quash-raised-635k-pre-seed-funding-from-arali-ventu.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://incubees.com/agentic-ai-startup-quash-raised-635k-pre-seed-funding-from-arali-ventures
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歝apital_startup
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歝apital_startup
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-json-ld锝渜uality=high锝渉as_full_text=true锝渉ash=1d7bff75e7129429
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-056锝淎I Software Startup Heizen Secures $500,000 Pre-Seed Funding Led by Titan Capital - Indian Startup Times
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-056-ai-software-startup-heizen-secures-500-000-pre-seed-funding-led-by-tit.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.indianstartuptimes.com/investment/ai-software-startup-heizen-secures-500000-pre-seed-funding-led-by-titan-capital
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歝apital_startup
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歝apital_startup
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=ad6ef54a62ae9742
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-057锝淢icrosoft Marketplace opens for AI apps, agents | InfoWorld
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-057-microsoft-marketplace-opens-for-ai-apps-agents-infoworld.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.infoworld.com/article/4063548/microsoft-marketplace-opens-for-ai-apps-agents.html
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=db4b0f355aacb44c
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-058锝淥pen Source Coding Agent Kilo Raises $8M in Seed Funding
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-058-open-source-coding-agent-kilo-raises-8m-in-seed-funding.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://technews180.com/funding-news/open-source-coding-agent-kilo-raises-8m-in-seed-funding
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歝apital_startup
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歝apital_startup
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=18eddeaed2197e6b
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-059锝淭op 10 Open-Source AI Agent Frameworks for Enterprise (2026) | Nexus
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-059-top-10-open-source-ai-agent-frameworks-for-enterprise-2026-nexus.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://agent.nexus/blog/top-10-open-source-ai-agent-frameworks
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=8315495d697b8234
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-060锝淎RUNAGIRINATHAN-K/awesome-ai-agents-2026 - GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-060-arunagirinathan-k-awesome-ai-agents-2026-github.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/ARUNAGIRINATHAN-K/awesome-ai-agents-2026
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=high锝渉as_full_text=true锝渉ash=f85a8c61e4972b92
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-061锝淕itHub - CoderJeffrey/Startup-funding-opportunities: Collection of Startup funding opportunities (pre-seed, seed round funding, startup competitions)
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-061-github-coderjeffrey-startup-funding-opportunities-collection-of-startu.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/CoderJeffrey/Startup-funding-opportunities
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歝apital_startup
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歝apital_startup
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=high锝渉as_full_text=true锝渉ash=37b2d4ca7482bbed
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-062锝淎wesome AI Agents: Tools, Resources, and Projects - GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-062-awesome-ai-agents-tools-resources-and-projects-github.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/jim-schwoebel/awesome_ai_agents
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: repo_readme_or_index
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=high锝渉as_full_text=true锝渉ash=f075709309083547
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-063锝渃aramaschiHG/awesome-ai-agents-2026: The most comprehensive ...
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-063-caramaschihg-awesome-ai-agents-2026-the-most-comprehensive.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/caramaschiHG/awesome-ai-agents-2026
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=high锝渉as_full_text=true锝渉ash=aea6f0cda94a2a5f
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-064锝淲PP Enterprise Solutions signs strategic AI agreement with AWS | Portal ERP
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-064-wpp-enterprise-solutions-signs-strategic-ai-agreement-with-aws-portal-.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://portalerp.com/noticia/wpp-enterprise-solutions-signs-strategic-ai-agreement-with-aws
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=01422cdba708c915
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-065锝淓nterprise AI Implementation Guide 2026 - SSNTPL
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-065-enterprise-ai-implementation-guide-2026-ssntpl.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://ssntpl.com/enterprise-ai-implementation-complete-2026-guide
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-article锝渜uality=high锝渉as_full_text=true锝渉ash=c0bdc98cf5cd0c43
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歷iewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-066锝淶ijian-Ni/awesome-ai-agents-2026 - GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-066-zijian-ni-awesome-ai-agents-2026-github.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/Zijian-Ni/awesome-ai-agents-2026
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=high锝渉as_full_text=true锝渉ash=c58102e0c668cc42
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-067锝淜ore.ai announces the availability of its AI for work, AI for process ...
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-067-kore-ai-announces-the-availability-of-its-ai-for-work-ai-for-process.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.kore.ai/news/kore-ai-announces-the-availability-of-its-ai-for-work-ai-for-process-and-ai-for-service-in-the-new-aws-marketplace-ai-agents-and-tools-category
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=0b0071509b751ded
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-068锝淓nterprise agent systems: how to design, deploy, and govern AI ...
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-068-enterprise-agent-systems-how-to-design-deploy-and-govern-ai.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.dataiku.com/stories/blog/enterprise-agent-systems
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歛nalysis
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=7df23555d0be32ac
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-069锝淓nterprise AI Governance for Secure Agentic Automation | xpander ...
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-069-enterprise-ai-governance-for-secure-agentic-automation-xpander.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://xpander.ai/blog/enterprise-ai-governance-for-secure-agentic-automation
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=9aeca1c80aa67128
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-070锝淥penAI AgentKit Review (2026): Builder, ChatKit, Evals & Pricing
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-070-openai-agentkit-review-2026-builder-chatkit-evals-pricing.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.toolworthy.ai/tool/openai-agentkit
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=37547f11a4f03773
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-071锝淥penAI AgentKit Review (2026): Builder, ChatKit, Evals & Pricing
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-071-openai-agentkit-review-2026-builder-chatkit-evals-pricing.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://toolworthy.ai/en/tool/openai-agentkit
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=37547f11a4f03773
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-072锝淭he Top 11 AI Agent Frameworks For Developers In September 2026
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-072-the-top-11-ai-agent-frameworks-for-developers-in-september-2026.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.vellum.ai/blog/top-ai-agent-frameworks-for-developers#why-use-ai-agent-frameworks
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-article锝渜uality=high锝渉as_full_text=true锝渉ash=e6c8038174e8ea42
+- 鍘熸枃鎶撳彇浼樺厛绾э細19.4
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-073锝滄秷鎭О缇庡浗鏀垮簻瑕佹眰OpenAI瀹℃牳鍚庡垎鎵瑰彂甯僄PT-5.6
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-073-娑堟伅绉扮編鍥芥斂搴滆姹俹penai瀹℃牳鍚庡垎鎵瑰彂甯僩pt-5-6.md`
+- 鍑哄锛欼T涔嬪锛圧SS锛夛綔https://www.ithome.com/0/968/762.htm
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: pricing_change
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-26T01:29:58.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-body-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=d6fd7d94645b7b04
+- 鍘熸枃鎶撳彇浼樺厛绾э細18.6
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-074锝滆嫻鏋?Xcode 26.6 姝ｅ紡鐗堝彂甯冿紝鏂板璋锋瓕 Gemini 缂栫▼鍔╂墜鏀寔
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-074-鑻规灉-xcode-26-6-姝ｅ紡鐗堝彂甯?鏂板璋锋瓕-gemini-缂栫▼鍔╂墜鏀寔.md`
+- 鍑哄锛欼T涔嬪锛圧SS锛夛綔https://www.ithome.com/0/968/787.htm
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: pricing_change
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-26T02:25:18.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-body-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=9647659ddecf0547
+- 鍘熸枃鎶撳彇浼樺厛绾э細18.6
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-075锝淟inux 鍩洪噾浼氳仈鍚堝鏂规帹鍑?Akrites 椤圭洰锛屾姷寰?AI 椹卞姩寮€婧愯蒋浠舵紡娲炴敾鍑?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-075-linux-鍩洪噾浼氳仈鍚堝鏂规帹鍑?akrites-椤圭洰-鎶靛尽-ai-椹卞姩寮€婧愯蒋浠舵紡娲炴敾鍑?md`
+- 鍑哄锛欼T涔嬪锛圧SS锛夛綔https://www.ithome.com/0/968/756.htm
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-26T01:10:12.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-body-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=17e80a737cfbf605
+- 鍘熸枃鎶撳彇浼樺厛绾э細18.6
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-076锝滃崐瀵间綋琛屼笟閲嶅ぇ绐佺牬锛両BM鎺ㄥ嚭鍏ㄧ悆棣栦釜浜?绾崇背鑺墖鎶€鏈?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-076-鍗婂浣撹涓氶噸澶х獊鐮?ibm鎺ㄥ嚭鍏ㄧ悆棣栦釜浜?绾崇背鑺墖鎶€鏈?md`
+- 鍑哄锛欼T涔嬪锛圧SS锛夛綔https://www.ithome.com/0/968/648.htm
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬鍥存帰绱俊鍙?- 鍏抽敭璇嶇粍锛歰utside-core-exploration
+- 鍙戝竷鏃堕棿锛?026-06-25T10:14:14.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-body-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=fffd8686f4e71a71
+- 鍘熸枃鎶撳彇浼樺厛绾э細18.6
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-077锝滆胺姝屾牳蹇傾I鐮旂┒浜哄憳鎸佺画娴佸け鑷矨nthropic鍜孫penAI
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-077-璋锋瓕鏍稿績ai鐮旂┒浜哄憳鎸佺画娴佸け鑷砤nthropic鍜宱penai.md`
+- 鍑哄锛歍he Decoder锛欰I News锛圧SS锛夛綔https://the-decoder.com/google-keeps-losing-top-ai-researchers-to-rivals
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歮edia
+- 鏉ユ簮绛夌骇锛欰
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T10:04:32.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歠etched-readable-text-json-ld锝渜uality=medium锝渉as_full_text=true锝渉ash=8a345ac786eff7d9
+- 鍘熸枃鎶撳彇浼樺厛绾э細18.6
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-078锝淥penAI 鑰冭檻灏?IPO 鎺ㄨ繜鑷虫槑骞达紝鍧氭寔涓囦嚎缇庡厓浼板€煎簳绾?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-078-openai-鑰冭檻灏?ipo-鎺ㄨ繜鑷虫槑骞?鍧氭寔涓囦嚎缇庡厓浼板€煎簳绾?md`
+- 鍑哄锛欼T涔嬪锛圧SS锛夛綔https://www.ithome.com/0/968/734.htm
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T23:29:58.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-body-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=dc1169631e4d2e69
+- 鍘熸枃鎶撳彇浼樺厛绾э細18.6
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-079锝淐laude Code v2.1.193 鍙戝竷
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-079-claude-code-v2-1-193-鍙戝竷.md`
+- 鍑哄锛欳laude Code锛欸itHub Releases锛圧SS锛夛綔https://github.com/anthropics/claude-code/releases/tag/v2.1.193
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T21:45:57.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=medium锝渉as_full_text=true锝渉ash=b9452ccd43d1bf0a
+- 鍘熸枃鎶撳彇浼樺厛绾э細18.6
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-080锝淕oogle灏嗙數鑴戞帶鍒跺姛鑳界洿鎺ラ泦鎴愬埌Gemini 3.5 Flash涓?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-080-google灏嗙數鑴戞帶鍒跺姛鑳界洿鎺ラ泦鎴愬埌gemini-3-5-flash涓?md`
+- 鍑哄锛歍he Decoder锛欰I News锛圧SS锛夛綔https://the-decoder.com/google-bakes-computer-control-directly-into-gemini-3-5-flash-letting-the-model-see-and-operate-your-screen
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歮edia
+- 鏉ユ簮绛夌骇锛欰
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T09:04:46.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-json-ld锝渜uality=medium锝渉as_full_text=true锝渉ash=1acffd5a211fe2ef
+- 鍘熸枃鎶撳彇浼樺厛绾э細18.6
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歷iewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-081锝滄牳蹇冪爺绌跺憳鎺ヨ繛绂昏亴鍚庯紝娑堟伅绉拌胺姝岄噸缁?AI 缂栫▼灏忕粍璇曞浘杩借刀 Anthropic
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-081-鏍稿績鐮旂┒鍛樻帴杩炵鑱屽悗-娑堟伅绉拌胺姝岄噸缁?ai-缂栫▼灏忕粍璇曞浘杩借刀-anthropic.md`
+- 鍑哄锛欼T涔嬪锛圧SS锛夛綔https://www.ithome.com/0/968/722.htm
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T15:50:43.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-body-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=eab3ef183d1394da
+- 鍘熸枃鎶撳彇浼樺厛绾э細18.6
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歷iewpoint
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄
+
+### R-082锝淕rok AI 娌︿负鑹叉儏骞冲彴锛氳秴鍗婃暟娴侀噺鐢ㄤ簬鎴愪汉鍐呭
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-082-grok-ai-娌︿负鑹叉儏骞冲彴-瓒呭崐鏁版祦閲忕敤浜庢垚浜哄唴瀹?md`
+- 鍑哄锛歍he Decoder锛欰I News锛圧SS锛夛綔https://the-decoder.com/grok-ai-is-reportedly-a-porn-platform-now-with-over-half-its-traffic-tied-to-adult-content
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歮edia
+- 鏉ユ簮绛夌骇锛欰
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T13:40:46.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=medium锝渉as_full_text=true锝渉ash=86c9355efd93f1cc
+- 鍘熸枃鎶撳彇浼樺厛绾э細18.6
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歝ore_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-083锝淟inkrunner, an AI-powered MMP, raises Rs 5 crore in pre-seed round | Indian Startup News posted on the topic | LinkedIn
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-083-linkrunner-an-ai-powered-mmp-raises-rs-5-crore-in-pre-seed-round-india.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.linkedin.com/posts/indianstartupnews_ai-mobile-measurement-activity-7348336647022727169-dcL9
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歝apital_startup
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歝apital_startup
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歨ttp-451-fallback-text锝渜uality=medium锝渉as_full_text=true锝渉ash=ce0a168a959f2f0e
+- 鍘熸枃鎶撳彇浼樺厛绾э細18.5
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, user_feedback_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, user_feedback_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-084锝淭op 14 AI Implementation Partners to Consider in 2026
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-084-top-14-ai-implementation-partners-to-consider-in-2026.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.datatobiz.com/blog/ai-implementation-partners
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氫腑绛夌浉鍏冲€欓€夛紝淇濈暀涓鸿瀵熺嚎绱紝闇€浜屾鎼滅储纭鏄惁灞炰簬鍏被瑙傛緶閲嶈鎬с€?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=high锝渉as_full_text=true锝渉ash=02775470409e59d9
+- 鍘熸枃鎶撳彇浼樺厛绾э細18
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-085锝淚nstagram
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-085-instagram.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.instagram.com/p/DOqo4iNDlq0
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氳祫鏈競鍦轰俊鍙?- 鍏抽敭璇嶇粍锛歝apital-market-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=09d261dd1fb525b4
+- 鍘熸枃鎶撳彇浼樺厛绾э細17.9
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-086锝淢ount Sinai Health System has announced the rollout of Microsoft ...
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-086-mount-sinai-health-system-has-announced-the-rollout-of-microsoft.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.instagram.com/p/DQ4Z0Z1jpJN?hl=en
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歠de_implementation
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛欵nterprise AI / FDE implementation signal
+- 鍏抽敭璇嶇粍锛歟nterprise-ai-implementation-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歠de_implementation
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=efb57f5e30aedc25
+- 鍘熸枃鎶撳彇浼樺厛绾э細17.9
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-087锝淚nstagram
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-087-instagram.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.instagram.com/reel/DRByh-hjVyk
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氳祫鏈競鍦轰俊鍙?- 鍏抽敭璇嶇粍锛歝apital-market-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=a9483dd3946ab168
+- 鍘熸枃鎶撳彇浼樺厛绾э細17.9
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歷iewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-088锝淛une Chapter Meeting Applied AI in Project Management: Leading ...
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-088-june-chapter-meeting-applied-ai-in-project-management-leading.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.facebook.com/PMIGhanaChapter/posts/june-chapter-meetingapplied-ai-in-project-management-leading-projects-in-the-age/1056312690395500
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歠de_implementation
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛欵nterprise AI / FDE implementation signal
+- 鍏抽敭璇嶇粍锛歟nterprise-ai-implementation-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歠de_implementation
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=194522d545584d5b
+- 鍘熸枃鎶撳彇浼樺厛绾э細17.9
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-089锝淪tartup India seed funding: Latest News & Videos, Photos about Startup India seed funding | The Economic Times - Page 1
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-089-startup-india-seed-funding-latest-news-videos-photos-about-startup-ind.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://m.economictimes.com/topic/Startup-India-seed-funding
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歝apital_startup
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歝apital_startup
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=476e9d250d337859
+- 鍘熸枃鎶撳彇浼樺厛绾э細17.9
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储
+
+### R-090锝淭race Raises $3 Million in Seed Round
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-090-trace-raises-3-million-in-seed-round.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.thesaasnews.com/news/trace-raises-3-million-in-seed-round
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歝apital_startup
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歝apital_startup
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=medium锝渉as_full_text=true锝渉ash=259245b3af1c2580
+- 鍘熸枃鎶撳彇浼樺厛绾э細17.9
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-091锝淎 Comprehensive List of The Best AI Agents - GitHub Gist
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-091-a-comprehensive-list-of-the-best-ai-agents-github-gist.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://gist.github.com/devinschumacher/6b50d08249bf97f147657a33869eef07
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: repo_readme_or_index
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=fa5b827323bb6c3e
+- 鍘熸枃鎶撳彇浼樺厛绾э細17.9
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-092锝淚AAR-Shanghai/Awesome-AI-Memory - GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-092-iaar-shanghai-awesome-ai-memory-github.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/IAAR-Shanghai/Awesome-AI-Memory
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=medium锝渉as_full_text=true锝渉ash=1bb5caaf2d1a8ec2
+- 鍘熸枃鎶撳彇浼樺厛绾э細16.5
+- Raw 鐘舵€侊細pooled
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-093锝淪till managing IT operations the old way? What if AI could monitor ...
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-093-still-managing-it-operations-the-old-way-what-if-ai-could-monitor.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.instagram.com/reel/DZ9RuKYv0Az
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氳祫鏈競鍦轰俊鍙?- 鍏抽敭璇嶇粍锛歝apital-market-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=dc9bd0e9b13b2514
+- 鍘熸枃鎶撳彇浼樺厛绾э細15.9
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歷iewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-094锝淪tartup Funding: Quantstruct (Founding)
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-094-startup-funding-quantstruct-founding.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://startupinvestments.investinglists.com/startupfunding/159586_quantstruct_founding
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氳祫鏈競鍦轰俊鍙?- 鍏抽敭璇嶇粍锛歝apital-market-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歨ttp-429-fallback-text锝渜uality=medium锝渉as_full_text=true锝渉ash=d16153c0fb5f2a0f
+- 鍘熸枃鎶撳彇浼樺厛绾э細15.9
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-095锝淕itHub Partner Program
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-095-github-partner-program.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/partners
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=medium锝渉as_full_text=true锝渉ash=4931c457d2406f6f
+- 鍘熸枃鎶撳彇浼樺厛绾э細15.9
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-096锝渁gentic-ai 路 GitHub Topics
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-096-agentic-ai-github-topics.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/topics/agentic-ai
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: repo_readme_or_index
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=95712919930d776f
+- 鍘熸枃鎶撳彇浼樺厛绾э細15.9
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-097锝?0 Best Open Source Agent Projects to Star on GitHub (2026) - Flowith
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-097-10-best-open-source-agent-projects-to-star-on-github-2026-flowith.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://flowith.io/blog/10-best-open-source-agent-projects-github-2026
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=d99f9362407e7670
+- 鍘熸枃鎶撳彇浼樺厛绾э細15.9
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-098锝淕itHub - mmTheBest/AI-Agents-for-Production: A live, evolving collection of open-source AI agents and real examples showing how businesses can use AI to automate work, save time, and explore new ideas. 路 GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-098-github-mmthebest-ai-agents-for-production-a-live-evolving-collection-o.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/mmTheBest/AI-Agents-for-Production
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=840d08ea6d52ef79
+- 鍘熸枃鎶撳彇浼樺厛绾э細15.9
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-099锝淭he Death of SaaS | Why "Vertical AI" is Taking Over in 2026
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-099-the-death-of-saas-why-vertical-ai-is-taking-over-in-2026.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.youtube.com/watch?v=-_NbEobmiAY
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: supporting_article
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=ac4dc80a7188e7fc
+- 鍘熸枃鎶撳彇浼樺厛绾э細15.9
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歷iewpoint
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-100锝淧redictions for 2026: the post-SaaS reality of enterprise AI | by Jens Eriksvik | Medium
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-100-predictions-for-2026-the-post-saas-reality-of-enterprise-ai-by-jens-er.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://medium.com/@jens.eriksvik/predictions-for-2026-the-post-saas-reality-of-enterprise-ai-80c3dba33ee9
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歩ndustry
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=887cba87d32e84fc
+- 鍘熸枃鎶撳彇浼樺厛绾э細15.9
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-101锝淎WS Marketplace: Agentic AI Solutions on AWS: Enterprise Agent Platform Implementation
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-101-aws-marketplace-agentic-ai-solutions-on-aws-enterprise-agent-platform-.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://aws.amazon.com/marketplace/pp/prodview-bbrge4myuvs3o
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歮arketplace
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=789b17f59398086d
+- 鍘熸枃鎶撳彇浼樺厛绾э細15.9
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-102锝淪caling AI Agents from 10 to 10000 鈥?Governance Lessons #699
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-102-scaling-ai-agents-from-10-to-10000-governance-lessons-699.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/microsoft/agent-governance-toolkit/issues/699
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=74f37fd2c7a09df0
+- 鍘熸枃鎶撳彇浼樺厛绾э細15.9
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-103锝淏oost AI Agent Quality with Microsoft's ai-agent-evals | Aneesh Pulukkul posted on the topic | LinkedIn
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-103-boost-ai-agent-quality-with-microsoft-s-ai-agent-evals-aneesh-pulukkul.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.linkedin.com/posts/aneeshpulukkul_github-microsoftai-agent-evals-github-activity-7364333060525355009-snma
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歨ttp-451-fallback-text锝渜uality=medium锝渉as_full_text=true锝渉ash=a6028985c42d60b7
+- 鍘熸枃鎶撳彇浼樺厛绾э細15.9
+- Raw 鐘舵€侊細candidate
+- Pool 鍒嗘祦锛歶ser_feedback_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, user_feedback_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-104锝渁gent-governance-toolkit/agent-governance-python/agent-sre/README.md at main 路 microsoft/agent-governance-toolkit 路 GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-104-agent-governance-toolkit-agent-governance-python-agent-sre-readme-md-a.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/microsoft/agent-governance-toolkit/blob/main/agent-governance-python/agent-sre/README.md
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: repo_readme_or_index
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=medium锝渉as_full_text=true锝渉ash=7d3cc6534d4506b3
+- 鍘熸枃鎶撳彇浼樺厛绾э細15.9
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歷iewpoint
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-105锝淎I Agents Statistics 2026: Shocking Growth - SQ Magazine
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-105-ai-agents-statistics-2026-shocking-growth-sq-magazine.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://sqmagazine.co.uk/ai-agents-statistics
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氫腑绛夌浉鍏冲€欓€夛紝淇濈暀涓鸿瀵熺嚎绱紝闇€浜屾鎼滅储纭鏄惁灞炰簬鍏被瑙傛緶閲嶈鎬с€?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=e645b4b507f4c54d
+- 鍘熸枃鎶撳彇浼樺厛绾э細15.7
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歝ore_pool, emerging_pool
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-106锝淚BM AI Enterprise Workflow Specialization 路 GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-106-ibm-ai-enterprise-workflow-specialization-github.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/lvallejomendez/coursera-ibm_ai_enterprise_workflow
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氳祫鏈競鍦轰俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氫腑绛夌浉鍏冲€欓€夛紝淇濈暀涓鸿瀵熺嚎绱紝闇€浜屾鎼滅储纭鏄惁灞炰簬鍏被瑙傛緶閲嶈鎬с€?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=1ceeb3189ba765b6
+- 鍘熸枃鎶撳彇浼樺厛绾э細13.7
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-107锝淕itHub - nurettincoban/ai-prd-workflow: A structured prompt pipeline that turns vague ideas into implementable RFCs 鈥?works with any AI assistant. 路 GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-107-github-nurettincoban-ai-prd-workflow-a-structured-prompt-pipeline-that.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/nurettincoban/ai-prd-workflow
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: none
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氳祫鏈競鍦轰俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氫腑绛夌浉鍏冲€欓€夛紝淇濈暀涓鸿瀵熺嚎绱紝闇€浜屾鎼滅储纭鏄惁灞炰簬鍏被瑙傛緶閲嶈鎬с€?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=e9b035e87cbae2b3
+- 鍘熸枃鎶撳彇浼樺厛绾э細13.7
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歟merging_pool, watchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歝ase, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-108锝淕itHub - VsevolodUstinov/ai-first-workspace-template 路 GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-108-github-vsevolodustinov-ai-first-workspace-template-github.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/VsevolodUstinov/ai-first-workspace-template
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: repo_readme_or_index
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氳祫鏈競鍦轰俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氫腑绛夌浉鍏冲€欓€夛紝淇濈暀涓鸿瀵熺嚎绱紝闇€浜屾鎼滅储纭鏄惁灞炰簬鍏被瑙傛緶閲嶈鎬с€?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-main锝渜uality=high锝渉as_full_text=true锝渉ash=7912411a4dab8972
+- 鍘熸枃鎶撳彇浼樺厛绾э細13.7
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
+
+### R-109锝滆彍楦?GT 2026 鏃犱汉杞︿寒鐩革細1780kg 杞介噸锛岀画鑸?230km
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-109-鑿滈笩-gt-2026-鏃犱汉杞︿寒鐩?1780kg-杞介噸-缁埅-230km.md`
+- 鍑哄锛欼T涔嬪锛圧SS锛夛綔https://www.ithome.com/0/968/646.htm
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T10:10:26.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歠etched-readable-text-content-container锝渜uality=low锝渉as_full_text=true锝渉ash=1c1f5efc198d11fb
+- 鍘熸枃鎶撳彇浼樺厛绾э細13.1
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-110锝淎I Transformation Roadmap for Enterprises - LinkedIn
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-110-ai-transformation-roadmap-for-enterprises-linkedin.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.linkedin.com/pulse/ai-transformation-roadmap-enterprises-from-strategy-scaled-i9vfc
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歨ttp-451-fallback-text锝渜uality=low锝渉as_full_text=true锝渉ash=0fff16aaafd72d06
+- 鍘熸枃鎶撳彇浼樺厛绾э細12.4
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-111锝淎I Rollout Progression for Business Transformation - LinkedIn
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-111-ai-rollout-progression-for-business-transformation-linkedin.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.linkedin.com/posts/alex-lieberman_been-working-with-execs-on-ai-rollouts-for-activity-7473037300776452096--WPq
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歨ttp-451-fallback-text锝渜uality=low锝渉as_full_text=true锝渉ash=e0412494dc227bda
+- 鍘熸枃鎶撳彇浼樺厛绾э細12.4
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛歯one
+
+### R-112锝淎I in Venture Capital: NuFund's Workflow and Investment Process
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-112-ai-in-venture-capital-nufund-s-workflow-and-investment-process.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.linkedin.com/posts/nufundventures_how-ai-is-reshaping-startup-fundraising-activity-7458863374299348992-tnif
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_market_trend
+- 鎼滅储璺緞锛歛_media_gdelt
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=present; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: insufficient_usable_evidence_object
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氳祫鏈競鍦轰俊鍙?- 鍏抽敭璇嶇粍锛歝apital-market-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歛_media_gdelt
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歨ttp-451-fallback-text锝渜uality=low锝渉as_full_text=true锝渉ash=e9855b22ec63b46d
+- 鍘熸枃鎶撳彇浼樺厛绾э細11
+- Raw 鐘舵€侊細indexed
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?
+### R-113锝淢icrosoft plans aggressive maneuvers to gain an edge in fight for AI agent market share | MSDynamicsWorld.com
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-113-microsoft-plans-aggressive-maneuvers-to-gain-an-edge-in-fight-for-ai-a.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://msdynamicsworld.com/story/microsoft-plans-aggressive-maneuvers-gain-edge-fight-ai-agent-market-share
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歠de_implementation
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛欵nterprise AI / FDE implementation signal
+- 鍏抽敭璇嶇粍锛歟nterprise-ai-implementation-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歠de_implementation
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歜locked-http-403锝渜uality=failed锝渉as_full_text=false锝渉ash=2a7d0c1438d356ed
+- 鍘熸枃鎶撳彇浼樺厛绾э細3.4000000000000004
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-114锝淜ilo Code Raises $8M Seed Round to Scale Open-Source AI Coding Agent - VC Tavern
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-114-kilo-code-raises-8m-seed-round-to-scale-open-source-ai-coding-agent-vc.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://vctavern.com/kilo-code-raises-8m-seed-round-to-scale-open-source-ai-coding-agent
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歝apital_startup
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歝apital_startup
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歜locked-http-403锝渜uality=failed锝渉as_full_text=false锝渉ash=c057897da9b1da18
+- 鍘熸枃鎶撳彇浼樺厛绾э細3.4000000000000004
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-115锝淪o what is Leverage doing in AI? Quick peek here - Instagram
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-115-so-what-is-leverage-doing-in-ai-quick-peek-here-instagram.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.instagram.com/reel/DU5dmDpAc0R
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歱rocurement_marketplace
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氳祫鏈競鍦轰俊鍙?- 鍏抽敭璇嶇粍锛歝apital-market-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歱rocurement_marketplace
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=81373008867b7e51
+- 鍘熸枃鎶撳彇浼樺厛绾э細2.4000000000000004
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-116锝淚ntroducing the a16z FDE Fellowship - a16z Build Newsletter
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-116-introducing-the-a16z-fde-fellowship-a16z-build-newsletter.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://a16zbuild.substack.com/p/introducing-the-a16z-fde-fellowship
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歠de_implementation
+- 鏉ユ簮绫诲瀷锛歩ndustry
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛欵nterprise AI / FDE implementation signal
+- 鍏抽敭璇嶇粍锛歟nterprise-ai-implementation-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歠de_implementation
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=491b6f3d44c4c42f
+- 鍘熸枃鎶撳彇浼樺厛绾э細2.4000000000000004
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-117锝淏ehind every seamless digital experience is a frontend engineer ...
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-117-behind-every-seamless-digital-experience-is-a-frontend-engineer.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.instagram.com/reel/DZ4oe9NCI2P
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歠de_implementation
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛欵nterprise AI / FDE implementation signal
+- 鍏抽敭璇嶇粍锛歟nterprise-ai-implementation-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歠de_implementation
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=b872ece39307ffa0
+- 鍘熸枃鎶撳彇浼樺厛绾э細2.4000000000000004
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-118锝淎pplied AI Coach - Salesforce Careers
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-118-applied-ai-coach-salesforce-careers.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://careers.salesforce.com/en/jobs/jr339277/applied-ai-coach
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歠de_implementation
+- 鏉ユ簮绫诲瀷锛歰fficial
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: missing_full_text
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛欵nterprise AI / FDE implementation signal
+- 鍏抽敭璇嶇粍锛歟nterprise-ai-implementation-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歠de_implementation
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歴ummary-only-low-readable-body锝渜uality=failed锝渉as_full_text=false锝渉ash=0e067f0b4e93e92e
+- 鍘熸枃鎶撳彇浼樺厛绾э細2.4000000000000004
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-119锝淒aily Papers - Hugging Face
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-119-daily-papers-hugging-face.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://huggingface.co/papers?q=on-premises+deployments
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歠ormal_report
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=fecc7a35c12a7d74
+- 鍘熸枃鎶撳彇浼樺厛绾э細2.4000000000000004
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-120锝淪implified enterprise AI deployment driving the Artificial Intelligence ...
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-120-simplified-enterprise-ai-deployment-driving-the-artificial-intelligenc.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://world.einnews.com/amp/pr_news/900209680/simplified-enterprise-ai-deployment-driving-the-artificial-intelligence-software-as-a-service-saas-market-2026
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=571c3bbd5532d9d7
+- 鍘熸枃鎶撳彇浼樺厛绾э細2.4000000000000004
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-121锝淢ay 19, 2026 - Rushi's
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-121-may-19-2026-rushi-s.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.rushis.com/2026/05/19
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_customer_case
+- 鎼滅储璺緞锛歩ndustry_landing
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: missing_full_text
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry_landing
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歴ummary-only-low-readable-body锝渜uality=failed锝渉as_full_text=false锝渉ash=fea729b5996b97f3
+- 鍘熸枃鎶撳彇浼樺厛绾э細2.4000000000000004
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-122锝渇itchmultz/ai-control-plane - GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-122-fitchmultz-ai-control-plane-github.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/fitchmultz/ai-control-plane
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: repo_readme_or_index
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=fa1e63b494c13d7a
+- 鍘熸枃鎶撳彇浼樺厛绾э細2.4000000000000004
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-123锝渢echwithaijack-beep/enterprise-ai-agent-blueprint ... - GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-123-techwithaijack-beep-enterprise-ai-agent-blueprint-github.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/techwithaijack-beep/enterprise-ai-agent-blueprint
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: repo_readme_or_index
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=f487173630af34a9
+- 鍘熸枃鎶撳彇浼樺厛绾э細2.4000000000000004
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-124锝淩unway鍙戝竷Agent 2.0
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-124-runway鍙戝竷agent-2-0.md`
+- 鍑哄锛歊unway锛歂ews锛堢綉椤碉級锝渘o-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=41220223ce29e547
+- 鍘熸枃鎶撳彇浼樺厛绾э細1.0999999999999996
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-125锝淕oogle Finance 鍏ㄦ柊 Android 搴旂敤涓庢姇璧勭粍鍚堝姛鑳戒笂绾?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-125-google-finance-鍏ㄦ柊-android-搴旂敤涓庢姇璧勭粍鍚堝姛鑳戒笂绾?md`
+- 鍑哄锛欸oogle Blog锛欰I锛圧SS锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歰fficial
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=92dbc115c772ba51
+- 鍘熸枃鎶撳彇浼樺厛绾э細1.0999999999999996
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-126锝滅編鍥芥斂搴滆姹侽penAI鏆傜紦GPT-5.6骞挎硾鍙戝竷
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-126-缇庡浗鏀垮簻瑕佹眰openai鏆傜紦gpt-5-6骞挎硾鍙戝竷.md`
+- 鍑哄锛歑锛歊ohan Paul (@rohanpaul_ai)锝渘o-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=df178ec97e6f1d1c
+- 鍘熸枃鎶撳彇浼樺厛绾э細1.0999999999999996
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-127锝淐odex 鍦?ChatGPT 绉诲姩 App 姝ｅ紡鍙敤
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-127-codex-鍦?chatgpt-绉诲姩-app-姝ｅ紡鍙敤.md`
+- 鍑哄锛歑锛歄penAI Developers (@OpenAIDevs)锝渘o-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歰fficial
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=c3deb75beba2f141
+- 鍘熸枃鎶撳彇浼樺厛绾э細1.0999999999999996
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夋垚鏈€佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-128锝淕eneral Intuition 瀹屾垚 3.2 浜跨編鍏冭瀺璧勶紝鐢ㄦ父鎴忔暟鎹缁冮€氱敤 AI 鏅鸿兘浣?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-128-general-intuition-瀹屾垚-3-2-浜跨編鍏冭瀺璧?鐢ㄦ父鎴忔暟鎹缁冮€氱敤-ai-鏅鸿兘浣?md`
+- 鍑哄锛歍echCrunch锛欰I锛圧SS锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歮edia
+- 鏉ユ簮绛夌骇锛欰
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=b58b561e520eb87a
+- 鍘熸枃鎶撳彇浼樺厛绾э細1.0999999999999996
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-129锝滃鏁颁富娴丄I鑱婂ぉ鏈哄櫒浜烘斂娌荤珛鍦哄亸宸︼紝鈥滃弽瑙夐啋鈥濇ā鍨嬩篃涓嶄緥澶?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-129-澶氭暟涓绘祦ai鑱婂ぉ鏈哄櫒浜烘斂娌荤珛鍦哄亸宸?鍙嶈閱?妯″瀷涔熶笉渚嬪.md`
+- 鍑哄锛歍he Decoder锛欰I News锛圧SS锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=315b2f4dd5993179
+- 鍘熸枃鎶撳彇浼樺厛绾э細1.0999999999999996
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-130锝淥penAI鍐呴儴鎶ュ憡锛氭櫤鑳戒綋Codex濡備綍鏀瑰彉宸ヤ綔
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-130-openai鍐呴儴鎶ュ憡-鏅鸿兘浣揷odex濡備綍鏀瑰彉宸ヤ綔.md`
+- 鍑哄锛歄penAI锛氬畼缃戝姩鎬侊紙RSS 路 鎺掗櫎浼佷笟/瀹㈡埛妗堜緥锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歰fficial
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: case_or_customer
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=a2eecab95bde619e
+- 鍘熸枃鎶撳彇浼樺厛绾э細1.0999999999999996
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-131锝滅敤绾挎€у脊鎬х紦瀛樹紭鍖栦簯缁忔祹
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-131-鐢ㄧ嚎鎬у脊鎬х紦瀛樹紭鍖栦簯缁忔祹.md`
+- 鍑哄锛欸oogle Research锛欱log锛堢綉椤碉級锝渘o-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歰fficial
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=e203923663fb4fc2
+- 鍘熸枃鎶撳彇浼樺厛绾э細1.0999999999999996
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-132锝淎rtificial+Intelligence Startups funded by Y Combinator (YC) 2026 | Y Combinator
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-132-artificial-intelligence-startups-funded-by-y-combinator-yc-2026-y-comb.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://www.ycombinator.com/companies/industry/Artificial+Intelligence
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_startups
+- 鎼滅储璺緞锛歰fficial_original
+- 鏉ユ簮绫诲瀷锛歠unding
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: missing_full_text
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歰fficial_original
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 4
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歴ummary-only-low-readable-body锝渜uality=failed锝渉as_full_text=false锝渉ash=bb3d32349d6c408c
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.9999999999999991
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-133锝淩eal-World AI/ML Ecosystem | Enterprise AI Platform Recipe - GitHub
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-133-real-world-ai-ml-ecosystem-enterprise-ai-platform-recipe-github.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/DeepHiveMind/EnterpriseAI_Platform_MLOps
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=81b517e023dd23f1
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.40000000000000036
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-134锝渁i-accelerator-toolkit/AI_Accelerator_Product_Overview.md at ...
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-134-ai-accelerator-toolkit-ai-accelerator-product-overview-md-at.md`
+- 鍑哄锛歬eyword search / Tavily锝渉ttps://github.com/sumankrsh/ai-accelerator-toolkit/blob/master/AI_Accelerator_Product_Overview.md
+- 閲囬泦閫氶亾锛歬eyword-search
+- 鎼滅储鎰忓浘锛歠ind_original_source
+- 鎼滅储璺緞锛歞eveloper_ecosystem
+- 鏉ユ簮绫诲瀷锛歞eveloper
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歞eveloper_ecosystem
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=a8873e02b9a1fc57
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.40000000000000036
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-135锝淥penAI Codex 灏嗘帹鍑虹ぜ鐗╀笌绉垎鍔熻兘
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-135-openai-codex-灏嗘帹鍑虹ぜ鐗╀笌绉垎鍔熻兘.md`
+- 鍑哄锛歑锛歍esting Catalog (@testingcatalog)锝渉ttps://x.com/testingcatalog/status/2070299350601789652
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬鍥存帰绱俊鍙?- 鍏抽敭璇嶇粍锛歰utside-core-exploration
+- 鍙戝竷鏃堕棿锛?026-06-26T00:13:24.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=efddd763744de672
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-136锝滅壒鏈楁櫘鏀垮簻瑕佹眰OpenAI鍒嗛樁娈靛彂甯僄PT-5.6
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-136-鐗规湕鏅斂搴滆姹俹penai鍒嗛樁娈靛彂甯僩pt-5-6.md`
+- 鍑哄锛歑锛氶偟鐚?(@shao__meng)锝渉ttps://x.com/shao__meng/status/2070306723961987505
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛?026-06-26T00:42:42.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=556adb8d88ed9f14
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-137锝淢icrosoft Copilot in Excel 鎺ㄥ嚭 Skills 閲戣瀺鍔熻兘
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-137-microsoft-copilot-in-excel-鎺ㄥ嚭-skills-閲戣瀺鍔熻兘.md`
+- 鍑哄锛歑锛歍esting Catalog (@testingcatalog)锝渉ttps://x.com/testingcatalog/status/2070297474581807266
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬鍥存帰绱俊鍙?- 鍏抽敭璇嶇粍锛歰utside-core-exploration
+- 鍙戝竷鏃堕棿锛?026-06-26T00:05:56.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=d127dd1a47eb823c
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夋垚鏈€佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-138锝淎nthropic 闆囦剑缁忔祹瀛﹀ Chad Jones锛屾帰璁?AI 鐢熷瓨椋庨櫓
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-138-anthropic-闆囦剑缁忔祹瀛﹀-chad-jones-鎺㈣-ai-鐢熷瓨椋庨櫓.md`
+- 鍑哄锛歑锛歊ohan Paul (@rohanpaul_ai)锝渉ttps://x.com/rohanpaul_ai/status/2070202157476028901
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T17:47:11.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=c354ec7c009d4541
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-139锝淎nthropic 杈炬垚鐩殑锛歄penAI 妯″瀷涓婄嚎瑙勫垯鏀剁揣
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-139-anthropic-杈炬垚鐩殑-openai-妯″瀷涓婄嚎瑙勫垯鏀剁揣.md`
+- 鍑哄锛歑锛氭钘?(@op7418)锝渉ttps://x.com/op7418/status/2070336764620026339
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-26T02:42:04.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=c7f0f15bc864aad7
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-140锝淎nthropic绉拌捀棣忔湭鍋滐紝鎸佺画杩涜
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-140-anthropic绉拌捀棣忔湭鍋?鎸佺画杩涜.md`
+- 鍑哄锛歑锛欿im (@kimmonismus)锝渉ttps://x.com/kimmonismus/status/2070147789011521734
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T14:11:09.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=116db3e7e380a366
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-141锝淧imDeWitte涓栫晫妯″瀷鏁版嵁涓氬姟鑾?.2浜跨編鍏傾杞瀺璧?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-141-pimdewitte涓栫晫妯″瀷鏁版嵁涓氬姟鑾?-2浜跨編鍏僡杞瀺璧?md`
+- 鍑哄锛歑锛歴wyx (@swyx)锝渉ttps://x.com/swyx/status/2070232647830585639
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T19:48:20.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=0fd3880cc4b78a4d
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-142锝淕oogle 鍦?Gemini App 鎺ㄥ嚭鍏嶈垂瀛︿範绗旇鏈?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-142-google-鍦?gemini-app-鎺ㄥ嚭鍏嶈垂瀛︿範绗旇鏈?md`
+- 鍑哄锛歑锛欵lvis Saravia (@omarsar0, DAIR.AI)锝渉ttps://x.com/omarsar0/status/2070198765697278284
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬鍥存帰绱俊鍙?- 鍏抽敭璇嶇粍锛歰utside-core-exploration
+- 鍙戝竷鏃堕棿锛?026-06-25T17:33:42.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=f879606b46fc2173
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-143锝淥penAI鍊惧悜2027骞碔PO锛孏PT-5.6琚姹傚畨鍏ㄥ鏌ュ彂甯?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-143-openai鍊惧悜2027骞磇po-gpt-5-6琚姹傚畨鍏ㄥ鏌ュ彂甯?md`
+- 鍑哄锛歑锛歊ohan Paul (@rohanpaul_ai)锝渉ttps://x.com/rohanpaul_ai/status/2070312153266172153
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-26T01:04:16.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=81f4cdf2278453f5
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-144锝滃皬浜掑紑婧愪釜浜篒P閰嶅浘鎶€鑳?灏忎簰IP Studio"锛屽惈31涓師鍒涜鑹?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-144-灏忎簰寮€婧愪釜浜篿p閰嶅浘鎶€鑳?灏忎簰ip-studio-鍚?1涓師鍒涜鑹?md`
+- 鍑哄锛歑锛氬皬浜?(@xiaohu)锝渉ttps://x.com/xiaohu/status/2070317717811540149
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-26T01:26:23.000Z
+- 鍒嗙被锛歵ip
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=1d58a390a0bdf3e2
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-145锝滆捀棣廜pus 4.8鍙揪Mythos锛屽崕涓簍oken宸ュ巶寮曞叧娉?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-145-钂搁opus-4-8鍙揪mythos-鍗庝负token宸ュ巶寮曞叧娉?md`
+- 鍑哄锛歑锛欵mad Mostaque (@EMostaque)锝渉ttps://x.com/EMostaque/status/2070146203937808600
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬鍥存帰绱俊鍙?- 鍏抽敭璇嶇粍锛歰utside-core-exploration
+- 鍙戝竷鏃堕棿锛?026-06-25T14:04:51.000Z
+- 鍒嗙被锛歵ip
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=0f0714b55f112286
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-146锝淎nthropic 鎸囨帶闃块噷鍗冮棶鐢?2.5 涓囪处鍙疯捀棣?Claude
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-146-anthropic-鎸囨帶闃块噷鍗冮棶鐢?2-5-涓囪处鍙疯捀棣?claude.md`
+- 鍑哄锛歑锛氶偟鐚?(@shao__meng)锝渉ttps://x.com/shao__meng/status/2070073944959508810
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T09:17:43.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=c47f6b9cb1badffd
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-147锝滅壒鏈楁櫘鏀垮簻瑕佹眰OpenAI鍒嗛樁娈靛彂甯僄PT-5.6锛屽鎴烽渶閫愪釜瀹℃壒
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-147-鐗规湕鏅斂搴滆姹俹penai鍒嗛樁娈靛彂甯僩pt-5-6-瀹㈡埛闇€閫愪釜瀹℃壒.md`
+- 鍑哄锛歑锛欱erry Xia (@berryxia)锝渉ttps://x.com/berryxia/status/2070301133223109030
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-26T00:20:29.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=985d97378112459a
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-148锝淥penAI Codex 涓€骞存暟鎹細鐭ヨ瘑宸ヤ綔杞悜闀垮懆鏈熶换鍔★紝瑕嗙洊鎵€鏈夐儴闂?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-148-openai-codex-涓€骞存暟鎹?鐭ヨ瘑宸ヤ綔杞悜闀垮懆鏈熶换鍔?瑕嗙洊鎵€鏈夐儴闂?md`
+- 鍑哄锛歑锛氶偟鐚?(@shao__meng)锝渉ttps://x.com/shao__meng/status/2070307018603470884
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-26T00:43:52.000Z
+- 鍒嗙被锛歵ip
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=4cfdef016980a817
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-149锝滅壒鏈楁櫘鏀垮簻瑕佹眰OpenAI鍒嗛樁娈靛彂甯冧笅涓€浠ｆā鍨嬶紙GPT-5.6锛?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-149-鐗规湕鏅斂搴滆姹俹penai鍒嗛樁娈靛彂甯冧笅涓€浠ｆā鍨?gpt-5-6.md`
+- 鍑哄锛歑锛欱erry Xia (@berryxia)锝渉ttps://x.com/berryxia/status/2070296978354036843
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-26T00:03:58.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=3cb1f1ff65a9b25c
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-150锝滅悊瑙ｅ墠娌緼I鍙戝竷鐨勬斂搴滃畨鍏ㄦ媴蹇?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-150-鐞嗚В鍓嶆部ai鍙戝竷鐨勬斂搴滃畨鍏ㄦ媴蹇?md`
+- 鍑哄锛歑锛欵than Mollick (@emollick)锝渉ttps://x.com/emollick/status/2070272952210227622
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T22:28:30.000Z
+- 鍒嗙被锛歵ip
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=530808311c00263a
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, emerging_pool, watchlist
+- 缂哄け淇℃伅锛氭病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-151锝滀负浣曟洿澶х殑妯″瀷瀛﹀緱鏇村锛氬閲忋€佸共鎵颁笌缃曡浠诲姟淇濈暀鐨勫奖鍝?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-151-涓轰綍鏇村ぇ鐨勬ā鍨嬪寰楁洿澶?瀹归噺-骞叉壈涓庣綍瑙佷换鍔′繚鐣欑殑褰卞搷.md`
+- 鍑哄锛歑锛歊ohan Paul (@rohanpaul_ai)锝渉ttps://x.com/rohanpaul_ai/status/2070085181239971967
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭棭鏈熶俊鍙?- 鍏抽敭璇嶇粍锛歟arly-direction-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T10:02:22.000Z
+- 鍒嗙被锛歱aper
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=1e2362fbd3c638c3
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-152锝淐odex 鍦?ChatGPT 绉诲姩 App 姝ｅ紡鍙敤
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-152-codex-鍦?chatgpt-绉诲姩-app-姝ｅ紡鍙敤.md`
+- 鍑哄锛歑锛歄penAI Developers (@OpenAIDevs)锝渉ttps://x.com/OpenAIDevs/status/2070254532911882707
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歰fficial
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T21:15:18.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=c3deb75beba2f141
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夋垚鏈€佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-153锝滅壒鏈楁櫘鏀垮簻瑕佹眰 OpenAI 鍒嗛樁娈靛彂甯?GPT-5.6
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-153-鐗规湕鏅斂搴滆姹?openai-鍒嗛樁娈靛彂甯?gpt-5-6.md`
+- 鍑哄锛歑锛歂athan Lambert (@natolambert)锝渉ttps://x.com/natolambert/status/2070273102114951664
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T22:29:06.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=a876f219460c61f4
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-154锝淥penWebUI宸茶繍琛屼簬OpenRouter锛氱粺涓€鐣岄潰涓庢帹鐞?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-154-openwebui宸茶繍琛屼簬openrouter-缁熶竴鐣岄潰涓庢帹鐞?md`
+- 鍑哄锛歑锛歄penRouter (@OpenRouter)锝渉ttps://x.com/OpenRouter/status/2070246148204593596
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T20:41:59.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=d26d2fcb604a11d4
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-155锝淥penAI GPT-5.6 鍥犳斂搴滆姹傚皢鍒嗘壒鍙戝竷锛屼粎闄愰儴鍒嗗悎浣滀紮浼?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-155-openai-gpt-5-6-鍥犳斂搴滆姹傚皢鍒嗘壒鍙戝竷-浠呴檺閮ㄥ垎鍚堜綔浼欎即.md`
+- 鍑哄锛歑锛氬疂鐜?(@dotey)锝渉ttps://x.com/dotey/status/2070269155706577013
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T22:13:25.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=89e8c928d5f87cc6
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-156锝淥penAI 鍐呴儴璁烘枃锛欳odex 宸插崰 99.8% 鍐呴儴杈撳嚭 tokens锛屾櫤鑳戒綋姝ｅ悜鍏ㄩ儴闂ㄦ墿鏁?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-156-openai-鍐呴儴璁烘枃-codex-宸插崰-99-8-鍐呴儴杈撳嚭-tokens-鏅鸿兘浣撴鍚戝叏閮ㄩ棬鎵╂暎.md`
+- 鍑哄锛歑锛歊ohan Paul (@rohanpaul_ai)锝渉ttps://x.com/rohanpaul_ai/status/2070221621676441642
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T19:04:32.000Z
+- 鍒嗙被锛歱aper
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=847748e050f10e6b
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-157锝滅敤绾挎€у脊鎬х紦瀛樹紭鍖栦簯缁忔祹
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-157-鐢ㄧ嚎鎬у脊鎬х紦瀛樹紭鍖栦簯缁忔祹.md`
+- 鍑哄锛欸oogle Research锛欱log锛堢綉椤碉級锝渉ttps://research.google/blog/optimizing-cloud-economics-with-linear-elastic-caching
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歰fficial
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T17:37:20.444Z
+- 鍒嗙被锛歱aper
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=d9235f1dc2f2c720
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-158锝淐laude Tag娣卞害鍒嗘瀽锛氫紒涓氬簲"绉熺敤鏅鸿兘锛屼絾鎷ユ湁涓婁笅鏂?
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-158-claude-tag娣卞害鍒嗘瀽-浼佷笟搴?绉熺敤鏅鸿兘-浣嗘嫢鏈変笂涓嬫枃.md`
+- 鍑哄锛歑锛欵lvis Saravia (@omarsar0, DAIR.AI)锝渉ttps://x.com/omarsar0/status/2070261155403125052
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T21:41:37.000Z
+- 鍒嗙被锛歵ip
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=fedb3b6056ed60be
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋垚鏈€佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-159锝淥penAI GPT-5.6 鍥犳斂搴滆姹傚欢杩熷彂甯?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-159-openai-gpt-5-6-鍥犳斂搴滆姹傚欢杩熷彂甯?md`
+- 鍑哄锛歑锛歍esting Catalog (@testingcatalog)锝渉ttps://x.com/testingcatalog/status/2070253352840028408
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T21:10:37.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=7e31efcdc549e8a9
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-160锝淕emini 3.5 Flash 鐨?Computer Use 宸ュ叿姝ｅ紡鍙敤
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-160-gemini-3-5-flash-鐨?computer-use-宸ュ叿姝ｅ紡鍙敤.md`
+- 鍑哄锛歑锛欸oogle AI for Developers (@googleaidevs)锝渉ttps://x.com/googleaidevs/status/2070175289481576777
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歰fficial
+- 鏉ユ簮绛夌骇锛歋
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T16:00:25.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=fe99f6ca7c756ddf
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-161锝滅編鍥芥斂搴滆姹侽penAI鏆傜紦GPT-5.6骞挎硾鍙戝竷
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-161-缇庡浗鏀垮簻瑕佹眰openai鏆傜紦gpt-5-6骞挎硾鍙戝竷.md`
+- 鍑哄锛歑锛歊ohan Paul (@rohanpaul_ai)锝渉ttps://x.com/rohanpaul_ai/status/2070252433109049466
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T21:06:58.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=df178ec97e6f1d1c
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-162锝滄郸鍙戦摱琛屾惡鎵嬬櫨搴︽櫤鑳戒簯锛氳秴2500涓噾铻嶆櫤鑳戒綋涓婂矖锛岃鐩栬惀閿€椋庢帶绛夋牳蹇冨満鏅?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-162-娴﹀彂閾惰鎼烘墜鐧惧害鏅鸿兘浜?瓒?500涓噾铻嶆櫤鑳戒綋涓婂矖-瑕嗙洊钀ラ攢椋庢帶绛夋牳蹇冨満鏅?md`
+- 鍑哄锛氬叕浼楀彿锛氱櫨搴︽櫤鑳戒簯锛堟枃蹇冿級锝渉ttps://mp.weixin.qq.com/s/0bpWunB0a-2UT2yqbpcrHA
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=present; hash=present; excerpt=present
+- degradation_reasons: missing_full_text
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T11:26:23.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歴ummary-only-low-readable-body锝渜uality=failed锝渉as_full_text=false锝渉ash=64040710880aaba5
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歸atchlist
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-163锝淥penAI 鎹姤灏?GPT-5.6 浠呬綔涓烘湁闄愰瑙堝彂甯冪粰灏戞暟鍚堜綔浼欎即
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-163-openai-鎹姤灏?gpt-5-6-浠呬綔涓烘湁闄愰瑙堝彂甯冪粰灏戞暟鍚堜綔浼欎即.md`
+- 鍑哄锛歑锛欿im (@kimmonismus)锝渉ttps://x.com/kimmonismus/status/2070245282026319945
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T20:38:33.000Z
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=4c153706f0db8797
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-164锝淯nsloth 灏?GLM-5.2 鍘嬬缉涓?1-bit GGUF锛屾湰鍦板垱鎰忚緭鍑轰笉閫婇棴婧愭ā鍨?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-164-unsloth-灏?glm-5-2-鍘嬬缉涓?1-bit-gguf-鏈湴鍒涙剰杈撳嚭涓嶉€婇棴婧愭ā鍨?md`
+- 鍑哄锛歑锛欱erry Xia (@berryxia)锝渉ttps://x.com/berryxia/status/2070074068322369615
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T09:18:12.000Z
+- 鍒嗙被锛歛i-models
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=6d41e611d6730ced
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-165锝淓lvis Saravia 鍒嗕韩鍔ㄦ€佸伐浣滄祦璁ㄨ绗旇
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-165-elvis-saravia-鍒嗕韩鍔ㄦ€佸伐浣滄祦璁ㄨ绗旇.md`
+- 鍑哄锛歑锛欵lvis Saravia (@omarsar0, DAIR.AI)锝渉ttps://x.com/omarsar0/status/2070241450227331120
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T20:23:19.000Z
+- 鍒嗙被锛歵ip
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=52a071392418210f
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-166锝淢eta Autodata锛氭櫤鑳戒綋鑷姩鏋勫缓鍚堟垚璁粌鏁版嵁
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-166-meta-autodata-鏅鸿兘浣撹嚜鍔ㄦ瀯寤哄悎鎴愯缁冩暟鎹?md`
+- 鍑哄锛歑锛欵lvis Saravia (@omarsar0, DAIR.AI)锝渉ttps://x.com/omarsar0/status/2070235085732000228
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T19:58:02.000Z
+- 鍒嗙被锛歱aper
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=087d320f7cdafa98
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-167锝滃井杞皢 Excel Copilot 杞彉涓洪噾铻嶅伐浣滄祦绯荤粺
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-167-寰蒋灏?excel-copilot-杞彉涓洪噾铻嶅伐浣滄祦绯荤粺.md`
+- 鍑哄锛歑锛歊ohan Paul (@rohanpaul_ai)锝渉ttps://x.com/rohanpaul_ai/status/2070234632692670812
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T19:56:14.000Z
+- 鍒嗙被锛歛i-products
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=632d56fef3f4ac82
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-168锝淢eta璁烘枃Autodata锛氭櫤鑳戒綋鏁版嵁绉戝瀹剁敓鎴愰珮璐ㄩ噺鍚堟垚鏁版嵁
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-168-meta璁烘枃autodata-鏅鸿兘浣撴暟鎹瀛﹀鐢熸垚楂樿川閲忓悎鎴愭暟鎹?md`
+- 鍑哄锛歑锛歊ohan Paul (@rohanpaul_ai)锝渉ttps://x.com/rohanpaul_ai/status/2070190298261864494
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T17:00:04.000Z
+- 鍒嗙被锛歱aper
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=2b38311f802b9c54
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-169锝淥penAI 璁烘枃锛氫粠鑱婂ぉ鍒版櫤鑳戒綋濮旀墭
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-169-openai-璁烘枃-浠庤亰澶╁埌鏅鸿兘浣撳鎵?md`
+- 鍑哄锛歑锛欽ason Liu (@jxnlco)锝渉ttps://x.com/jxnlco/status/2070187014356693009
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T16:47:01.000Z
+- 鍒嗙被锛歱aper
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=de27e58bddcd17ed
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储锛涙病鏈夋垚鏈€佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-170锝淰iktor 鏋勫缓 AI 宸ヤ綔娴佸眰杩炴帴 3000+ 宸ュ叿
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-170-viktor-鏋勫缓-ai-宸ヤ綔娴佸眰杩炴帴-3000-宸ュ叿.md`
+- 鍑哄锛歑锛歊ohan Paul (@rohanpaul_ai)锝渉ttps://x.com/rohanpaul_ai/status/2070185987649782204
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: community_feedback
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T16:42:56.000Z
+- 鍒嗙被锛歵ip
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=648f83a32d7428da
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渘ot_event_case_or_trend_evidence
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-171锝滃井杞?MAI-Image-2.5 鍦?Artificial Analysis Image Arena 鎺掕姒滀綅鍒楁枃鏈埌鍥惧儚绗?銆佸浘鍍忕紪杈戠3
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-171-寰蒋-mai-image-2-5-鍦?artificial-analysis-image-arena-鎺掕姒滀綅鍒楁枃鏈埌鍥惧儚绗?-鍥惧儚缂栬緫绗?.md`
+- 鍑哄锛歑锛欰rtificial Analysis (@ArtificialAnlys)锝渉ttps://x.com/ArtificialAnlys/status/2070178150571786454
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T16:11:47.000Z
+- 鍒嗙被锛歵ip
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=9dd29809e65e1907
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-172锝淕LM-5.2 寮€婧愬彂甯冿細鐧句竾涓婁笅鏂囬€艰繎 Claude Opus 4.8 鍜?GPT-5.5锛岀編鍥藉叕鍙告敹绱?AI 棰勭畻
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-172-glm-5-2-寮€婧愬彂甯?鐧句竾涓婁笅鏂囬€艰繎-claude-opus-4-8-鍜?gpt-5-5-缇庡浗鍏徃鏀剁揣-ai-棰勭畻.md`
+- 鍑哄锛歑锛歑.PIN (@thexpin)锝渉ttps://x.com/thexpin/status/2070069224316563580
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歝ommunity
+- 鏉ユ簮绛夌骇锛欳
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: missing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛?026-06-25T08:58:57.000Z
+- 鍒嗙被锛歵ip
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- 鏈湴蹇収锛歵imeout-fallback-visible-text锝渜uality=failed锝渉as_full_text=false锝渉ash=4290eb3dbd4960a8
+- 鍘熸枃鎶撳彇浼樺厛绾э細0.09999999999999964
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歞iscard
+- 璇佹嵁瀵硅薄闂ㄧ锛歟ligible
+- 鍙敤鏂瑰悜锛歨eatmap, watchlist
+- 缂哄け淇℃伅锛氭病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-173锝淢idjourney 棰勮 V8.2 骞跺姞閫熻崏绋挎ā寮?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-173-midjourney-棰勮-v8-2-骞跺姞閫熻崏绋挎ā寮?md`
+- 鍑哄锛歑锛歁idjourney (@midjourney)锝渘o-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=2f2ed9510d99005c
+- 鍘熸枃鎶撳彇浼樺厛绾э細-0.3000000000000007
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-174锝淪uno 鎺ㄥ嚭 Spark锛氭敮鎸佷笅涓€浠ｇ嫭绔嬭壓鏈
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-174-suno-鎺ㄥ嚭-spark-鏀寔涓嬩竴浠ｇ嫭绔嬭壓鏈.md`
+- 鍑哄锛歋uno锛欱log锛堢綉椤碉級锝渘o-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=1b860566fa06d9fe
+- 鍘熸枃鎶撳彇浼樺厛绾э細-0.3000000000000007
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-175锝淍exponentialview 鍙戝竷銆奡tate of the AI Economy銆嬫姤鍛婏細AI缁忔祹骞村寲鏀跺叆瓒?750浜跨編鍏?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-175-exponentialview-鍙戝竷-state-of-the-ai-economy-鎶ュ憡-ai缁忔祹骞村寲鏀跺叆瓒?750浜跨編鍏?md`
+- 鍑哄锛歑锛歊ohan Paul (@rohanpaul_ai)锝渘o-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: pricing_change
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=92d88a862868945b
+- 鍘熸枃鎶撳彇浼樺厛绾э細-0.3000000000000007
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-176锝淥rnith-1.0 寮€婧愭ā鍨嬪鏃忓彂甯冿紝涓撴敞 Agentic Coding 鍏ㄥ弬鏁拌妯?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-176-ornith-1-0-寮€婧愭ā鍨嬪鏃忓彂甯?涓撴敞-agentic-coding-鍏ㄥ弬鏁拌妯?md`
+- 鍑哄锛歑锛欱erry Xia (@berryxia)锝渘o-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=8f21d70d369762f9
+- 鍘熸枃鎶撳彇浼樺厛绾э細-0.3000000000000007
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-177锝滆法妯″瀷涓庝换鍔＄殑 GitHub Copilot agentic harness 鎬ц兘涓庢晥鐜囪瘎浼?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-177-璺ㄦā鍨嬩笌浠诲姟鐨?github-copilot-agentic-harness-鎬ц兘涓庢晥鐜囪瘎浼?md`
+- 鍑哄锛欸itHub Blog锝渘o-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氬紑鍙戣€呯敓鎬佷俊鍙?- 鍏抽敭璇嶇粍锛歞eveloper-ecosystem-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_case
+- importance_score: 4
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=d6943c3601062e5e
+- 鍘熸枃鎶撳彇浼樺厛绾э細-0.3000000000000007
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-178锝淥penRouter MCP 鏈嶅姟鍣ㄥ彂甯?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-178-openrouter-mcp-鏈嶅姟鍣ㄥ彂甯?md`
+- 鍑哄锛歄penRouter锛欰nnouncements锛圧SS锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context, adoption_context
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=9095c7bd05d40d5c
+- 鍘熸枃鎶撳彇浼樺厛绾э細-0.3000000000000007
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-179锝淐laude Code v2.1.193 鍙戝竷
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-179-claude-code-v2-1-193-鍙戝竷.md`
+- 鍑哄锛欳laude Code锛欸itHub Releases锛圧SS锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=4ce51b4e2c949682
+- 鍘熸枃鎶撳彇浼樺厛绾э細-0.3000000000000007
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-180锝淥LMo Hybrid vs Transformer锛氭贩鍚堟ā鍨嬪湪瀹炰箟璇嶄笂浼樺娍鏄庢樉锛屼絾閲嶅鐭涓婂嚑鏃犱紭鍔?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-180-olmo-hybrid-vs-transformer-娣峰悎妯″瀷鍦ㄥ疄涔夎瘝涓婁紭鍔挎槑鏄?浣嗛噸澶嶇煭璇笂鍑犳棤浼樺娍.md`
+- 鍑哄锛欻ugging Face锛欱log锛圧SS锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=54a5df3fa2755756
+- 鍘熸枃鎶撳彇浼樺厛绾э細-0.3000000000000007
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-181锝淪ail Research 鏋勫缓闆嗙兢鎰熺煡缂栨帓锛屽姞閫熷紓姝ユ帹鐞?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-181-sail-research-鏋勫缓闆嗙兢鎰熺煡缂栨帓-鍔犻€熷紓姝ユ帹鐞?md`
+- 鍑哄锛歍omer Tunguz 鍗氬锛圴C 鍒嗘瀽锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=38fe299ae4aa2649
+- 鍘熸枃鎶撳彇浼樺厛绾э細-0.3000000000000007
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-182锝淕enerative AI Fizzle鈩細鐢熸垚寮廇I娉℃搏姝ｅ湪缂撴參娑堥€€
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-182-generative-ai-fizzletm-鐢熸垚寮廰i娉℃搏姝ｅ湪缂撴參娑堥€€.md`
+- 鍑哄锛欸ary Marcus锛歍he Road to AI We Can Trust锛圧SS锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氶珮鐩稿叧鍊欓€夛紝鍛戒腑閲嶈妗堜緥銆佽瀺璧勩€佹妧鏈秼鍔裤€佷骇鍝佹湇鍔°€佸瀭鐩存柟妗堟垨閲嶈瑙傜偣銆?- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=38caa408246a7fd0
+- 鍘熸枃鎶撳彇浼樺厛绾э細-0.3000000000000007
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-183锝淢idjourney V8.1 鑽夌妯″紡鏂板闅忔満椋庢牸鍔熻兘
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-183-midjourney-v8-1-鑽夌妯″紡鏂板闅忔満椋庢牸鍔熻兘.md`
+- 鍑哄锛歁idjourney锛歎pdates锛圧SS锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氫腑绛夌浉鍏冲€欓€夛紝淇濈暀涓鸿瀵熺嚎绱紝闇€浜屾鎼滅储纭鏄惁灞炰簬鍏被瑙傛緶閲嶈鎬с€?- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=ce072276a0ee2d1c
+- 鍘熸枃鎶撳彇浼樺厛绾э細-4.5
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-184锝滆但搴撳叞灏煎鍙ゅ嵎棣栨琚畬鏁磋櫄鎷熻В璇?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-184-璧簱鍏板凹濮嗗彜鍗烽娆¤瀹屾暣铏氭嫙瑙ｈ.md`
+- 鍑哄锛欻acker News 鐑棬锛坆uzzing.cc 涓枃缈昏瘧锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氫腑绛夌浉鍏冲€欓€夛紝淇濈暀涓鸿瀵熺嚎绱紝闇€浜屾鎼滅储纭鏄惁灞炰簬鍏被瑙傛緶閲嶈鎬с€?- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=7499bca4cb11daad
+- 鍘熸枃鎶撳彇浼樺厛绾э細-4.5
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-185锝淎nthropic绉伴樋閲屽反宸撮潪娉曡幏鍙栦簡Claude AI妯″瀷鐨勫姛鑳?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-185-anthropic绉伴樋閲屽反宸撮潪娉曡幏鍙栦簡claude-ai妯″瀷鐨勫姛鑳?md`
+- 鍑哄锛欻acker News 鐑棬锛坆uzzing.cc 涓枃缈昏瘧锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氫腑绛夌浉鍏冲€欓€夛紝淇濈暀涓鸿瀵熺嚎绱紝闇€浜屾鎼滅储纭鏄惁灞炰簬鍏被瑙傛緶閲嶈鎬с€?- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=be50fffa3ca887dd
+- 鍘熸枃鎶撳彇浼樺厛绾э細-4.5
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-186锝滅泩閫忚瘉鍒革紙Interactive Brokers锛変笌 Grok 闆嗘垚锛氱粍鍚堝垎鏋愩€佹儏鏅缓妯′笌瀹炴椂浜ゆ槗鎸囦护鐢熸垚
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-186-鐩堥€忚瘉鍒?interactive-brokers-涓?grok-闆嗘垚-缁勫悎鍒嗘瀽-鎯呮櫙寤烘ā涓庡疄鏃朵氦鏄撴寚浠ょ敓鎴?md`
+- 鍑哄锛歺AI锛歂ews锛堢綉椤碉級锝渘o-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭垚鐔熶俊鍙?- 鍏抽敭璇嶇粍锛歮ature-commercial-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氫腑绛夌浉鍏冲€欓€夛紝淇濈暀涓鸿瀵熺嚎绱紝闇€浜屾鎼滅储纭鏄惁灞炰簬鍏被瑙傛緶閲嶈鎬с€?- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=04a2d687071a1344
+- 鍘熸枃鎶撳彇浼樺厛绾э細-4.6
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夋垚鏈€佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
+
+### R-187锝淢eta鍛樺伐璀﹀憡AI鍐呭瀹℃牳閮ㄧ讲杩囧揩
+
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-187-meta鍛樺伐璀﹀憡ai鍐呭瀹℃牳閮ㄧ讲杩囧揩.md`
+- 鍑哄锛歍he Decoder锛欰I News锛圧SS锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: case_or_customer
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氫腑绛夌浉鍏冲€欓€夛紝淇濈暀涓鸿瀵熺嚎绱紝闇€浜屾鎼滅储纭鏄惁灞炰簬鍏被瑙傛緶閲嶈鎬с€?- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: adoption_context
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=1f87f77c3efbb792
+- 鍘熸枃鎶撳彇浼樺厛绾э細-4.6
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?
+### R-188锝淢eta 闅愮鎰熺煡鍩虹璁炬柦鐨勮祫浜у垎绫伙細娣峰悎妯″紡灏?LLM 钂搁涓虹‘瀹氭€ц鍒?
+- 鍘熸枃妗ｆ锛歚01-SiteV2/content/01-raw/originals/2026-06-26/r-188-meta-闅愮鎰熺煡鍩虹璁炬柦鐨勮祫浜у垎绫?娣峰悎妯″紡灏?llm-钂搁涓虹‘瀹氭€ц鍒?md`
+- 鍑哄锛歁eta Engineering Blog锛圧SS锛夛綔no-url
+- 閲囬泦閫氶亾锛歛ihot
+- 鎼滅储鎰忓浘锛歯ot_applicable
+- 鎼滅储璺緞锛歯ot_applicable
+- 鏉ユ簮绫诲瀷锛歸eb
+- 鏉ユ簮绛夌骇锛欱
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- evidence_completeness: full_text=missing_or_summary_only; snapshot=missing_or_fetch_failed; hash=present; excerpt=present
+- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- 閲囬泦鍏ュ彛鏍囪锛歁
+- research_status锛歯ot_research
+- 涓婚鍒嗙被锛氭妧鏈凯浠ｄ俊鍙?- 鍏抽敭璇嶇粍锛歵echnical-iteration-signal
+- 鍙戝竷鏃堕棿锛歶nknown
+- 鍒嗙被锛歩ndustry
+- 閲囬泦鐞嗙敱锛氫腑绛夌浉鍏冲€欓€夛紝淇濈暀涓鸿瀵熺嚎绱紝闇€浜屾鎼滅储纭鏄惁灞炰簬鍏被瑙傛緶閲嶈鎬с€?- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- 鏈湴蹇収锛歯o-url-summary-only锝渜uality=failed锝渉as_full_text=false锝渉ash=1bd7245b81ae8cbb
+- 鍘熸枃鎶撳彇浼樺厛绾э細-4.6
+- Raw 鐘舵€侊細ignored
+- Pool 鍒嗘祦锛歩ndex_only
+- 璇佹嵁瀵硅薄闂ㄧ锛歜locked锝渉omepage_or_directory_observation
+- 鍙敤鏂瑰悜锛歩ndex_only
+- 缂哄け淇℃伅锛氳瘉鎹璞′笉鍙敤锛氱枒浼肩储寮曢〉銆佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収

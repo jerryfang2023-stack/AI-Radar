@@ -1,0 +1,274 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-107",
+  "title": "GitHub - nurettincoban/ai-prd-workflow: A structured prompt pipeline that turns vague ideas into implementable RFCs — works with any AI assistant. · GitHub",
+  "original_url": "https://github.com/nurettincoban/ai-prd-workflow",
+  "canonical_url": "https://github.com/nurettincoban/ai-prd-workflow",
+  "source_name": "keyword search / Tavily",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "ai_transformation",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-26T03:32:32.039Z",
+  "language": "mixed",
+  "full_text": "nurettincoban\nai-prd-workflow\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n28\nStar\n264\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n15 Commits\n15 Commits\nexamples/ url-shortener\nexamples/ url-shortener\nCHANGELOG.md\nCHANGELOG.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ncode-review-prompt.md\ncode-review-prompt.md\ncopy-prompt.sh\ncopy-prompt.sh\nimplementation-prompt-template.md\nimplementation-prompt-template.md\ninteractive-prd-creation-prompt.md\ninteractive-prd-creation-prompt.md\nprd-change-management-prompt.md\nprd-change-management-prompt.md\nprd-comprehensive-verification-prompt.md\nprd-comprehensive-verification-prompt.md\nprd-to-features-prompt.md\nprd-to-features-prompt.md\nprd-to-rfcs-prompt.md\nprd-to-rfcs-prompt.md\nprd-to-rules-prompt.md\nprd-to-rules-prompt.md\ntesting-strategy-prompt.md\ntesting-strategy-prompt.md\nView all files\nRepository files navigation\nAI PRD Workflow\nAI-Powered Product Development\nA collection of reusable AI prompts to streamline your product development workflow. Copy and paste these prompts into any AI assistant (Claude, ChatGPT, Cursor, Windsurf, or any AI-powered IDE) to automate common tasks in your product development process.\nQuick Start\nPick a prompt from Available Prompts below\nCopy its contents (or use ./copy-prompt.sh --list to browse)\nPaste into any AI assistant with your project context attached\nNew here? Check the examples/url-shortener folder for sample outputs from every step.\nTip\nWhy PRD & RFC Driven Development? This approach significantly improves AI collaboration by providing clear boundaries, reducing hallucinations, and ensuring consistent understanding between humans and AI. Jump to full benefits\nTable of Contents\nBenefits of PRD & RFC Driven Development\nAvailable Prompts\nRecommended Workflow\nExamples\nHow to Use\nCompatibility\nQuick Tips\nContributing\nLicense\nBenefits of PRD & RFC Driven Development\nFollowing a structured PRD & RFC driven development approach offers significant advantages, especially when collaborating with AI tools:\nEnhanced AI\nCollaboration\nImproved\nDevelopment\nBusiness\nBenefits\nAI-Specific\nAdvantages\nEnhanced AI Collaboration\nClearer Instructions : Well-defined PRDs and RFCs provide AI with precise context, resulting in more accurate implementations\nReduced Hallucinations : Structured documentation minimizes AI's tendency to fill in gaps with incorrect assumptions\nConsistent Mental Model : Both humans and AI work from the same documented understanding\nImproved Development Process\nBoundary Setting : Clearly defined scope prevents AI from implementing unwanted features\nIncremental Verification : Breaking work into RFCs allows validation at each step\nTraceability : Each implementation traces back to specific requirements\nReduced Rework : Clear specifications minimize major revisions\nBusiness Benefits\nPredictable Outcomes : Structured approach leads to more predictable timelines and results\nKnowledge Preservation : Documentation persists even as team members or AI tools change\nStakeholder Alignment : PRDs create shared understanding between business, technical teams, and AI\nFaster Onboarding : New team members or AI tools quickly understand goals and constraints\nAI-Specific Advantages\nContext Window Optimization : Focused RFCs help AI work within context window limitations\nTargeted Expertise : Different aspects can be directed to specialized AI models or prompts\nQuality Control : Structured documentation provides clear criteria for AI to self-evaluate\nAvailable Prompts\nPrompt\nDescription\nInteractive PRD Creation\nCreate a PRD through a guided step-by-step questioning process\nPRD Comprehensive Verification\nVerify and improve your PRD by identifying gaps and quality issues\nPRD to Features Extraction\nExtract and organize features from your PRD\nPRD to Rules\nGenerate technical guidelines and standards for development\nPRD to RFCs\nBreak down your PRD into manageable implementation units\nImplementation Template\nTemplate for implementing individual RFCs\nCode Review\nReview implementation against RFC, rules, security, and performance\nTesting Strategy\nGenerate comprehensive test plan from features and RFCs\nPRD Change Management\nManage changes to your PRD during development\nRecommended Workflow\n┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐\n│ Create │ │ Verify │ │ Extract │ │ Create │ │ Generate │ │Implement │ │ Code │ │ Testing │\n│ PRD │──>│ PRD │──>│ Features │──>│ Rules │──>│ RFCs │──>│ RFCs │──>│ Review │──>│ Strategy │\n└──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘\nInitial Development\nCreate PRD - Start with a vague idea and develop it into a complete PRD using the Interactive Creation prompt\nVerify PRD - Identify critical gaps and improve quality using the Comprehensive Verification prompt\nExtract Features - Transform your verified PRD into organized features with priorities and acceptance criteria\nCreate Rules - Establish technical guidelines and standards based on your PRD and features\nGenerate RFCs - Break down the project into logical, manageable implementation units\nImplement RFCs - Use the implementation template for each RFC to guide development\nCode Review - Review each implementation against its RFC specification and project standards\nTesting Strategy - Generate and execute a comprehensive test plan for implemented features\nManaging Changes\nWhen new requirements or changes arise during development:\nAnalyze Changes - Use the Change Management prompt to assess impact and integration strategy\nUpdate Documents - Revise affected PRD, features, rules, and RFCs based on the analysis\nContinue Implementation - Resume development with the updated documentation\nExamples\nThe examples/ folder contains complete sample outputs for a URL shortener project, demonstrating each step of the workflow:\nPRD - Product Requirements Document\nFeatures - Extracted features with MoSCoW prioritization\nRules - Development standards and guidelines\nRFCs - Implementation units (3 RFCs)\nUse these as a reference for what each prompt produces.\nHow to Use\nMethod 1: Manual Copy\nOpen the desired prompt file\nCopy the entire contents\nPaste into your AI assistant\nAttach your PRD or relevant documents\nLet the AI process your request\nMethod 2: Using the Copy Script\n# Make the script executable (first time only)\nchmod +x copy-prompt.sh\n# List all available prompts\n./copy-prompt.sh --list\n# Copy a prompt to clipboard\n./copy-prompt.sh interactive-prd-creation-prompt.md\nThen paste the prompt into your AI assistant and proceed as normal.\nCompatibility\nThese prompts work with any modern LLM, including:\nClaude (Anthropic) - Claude 3.5, Claude 4.x\nGPT-4 / ChatGPT (OpenAI) - GPT-4, GPT-4o, GPT-4.5\nGemini (Google) - Gemini 1.5, Gemini 2.x\nLocal models - Llama, Mistral, etc. (with sufficient context windows)\nThey also work in AI-powered IDEs like Cursor , Windsurf , Cline , and GitHub Copilot .\nQuick Tips\nProvide complete documents when possible\nAnswer any clarifying questions the AI asks\nReview and customize AI outputs before implementation\nUse the prompts in sequence for best results\nFor complex projects, iterate through prompts as needed\nContributing\nSee CONTRIBUTING.md for guidelines on submitting new prompts, quality standards, and testing approach.\nLicense\nThis project is licensed under the MIT License - see the LICENSE file for details.\nMade with care for better product development with AI\nAbout\nA structured prompt pipeline that turns vague ideas into implementable RFCs — works with any AI assistant.\nTopics\nrfc\nprd\nclaude\nai-tools\nllm\nprompt-engineering\nai-workflow\ncursor-ai\nvibe-coding\nclaude-code\nResources\nReadme\nLicense\nMIT license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n264\nstars\nWatchers\nwatching\nForks\n28\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nShell\n100.0%",
+  "clean_text": "nurettincoban\nai-prd-workflow\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n28\nStar\n264\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n15 Commits\n15 Commits\nexamples/ url-shortener\nexamples/ url-shortener\nCHANGELOG.md\nCHANGELOG.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ncode-review-prompt.md\ncode-review-prompt.md\ncopy-prompt.sh\ncopy-prompt.sh\nimplementation-prompt-template.md\nimplementation-prompt-template.md\ninteractive-prd-creation-prompt.md\ninteractive-prd-creation-prompt.md\nprd-change-management-prompt.md\nprd-change-management-prompt.md\nprd-comprehensive-verification-prompt.md\nprd-comprehensive-verification-prompt.md\nprd-to-features-prompt.md\nprd-to-features-prompt.md\nprd-to-rfcs-prompt.md\nprd-to-rfcs-prompt.md\nprd-to-rules-prompt.md\nprd-to-rules-prompt.md\ntesting-strategy-prompt.md\ntesting-strategy-prompt.md\nView all files\nRepository files navigation\nAI PRD Workflow\nAI-Powered Product Development\nA collection of reusable AI prompts to streamline your product development workflow. Copy and paste these prompts into any AI assistant (Claude, ChatGPT, Cursor, Windsurf, or any AI-powered IDE) to automate common tasks in your product development process.\nQuick Start\nPick a prompt from Available Prompts below\nCopy its contents (or use ./copy-prompt.sh --list to browse)\nPaste into any AI assistant with your project context attached\nNew here? Check the examples/url-shortener folder for sample outputs from every step.\nTip\nWhy PRD & RFC Driven Development? This approach significantly improves AI collaboration by providing clear boundaries, reducing hallucinations, and ensuring consistent understanding between humans and AI. Jump to full benefits\nTable of Contents\nBenefits of PRD & RFC Driven Development\nAvailable Prompts\nRecommended Workflow\nExamples\nHow to Use\nCompatibility\nQuick Tips\nContributing\nLicense\nBenefits of PRD & RFC Driven Development\nFollowing a structured PRD & RFC driven development approach offers significant advantages, especially when collaborating with AI tools:\nEnhanced AI\nCollaboration\nImproved\nDevelopment\nBusiness\nBenefits\nAI-Specific\nAdvantages\nEnhanced AI Collaboration\nClearer Instructions : Well-defined PRDs and RFCs provide AI with precise context, resulting in more accurate implementations\nReduced Hallucinations : Structured documentation minimizes AI's tendency to fill in gaps with incorrect assumptions\nConsistent Mental Model : Both humans and AI work from the same documented understanding\nImproved Development Process\nBoundary Setting : Clearly defined scope prevents AI from implementing unwanted features\nIncremental Verification : Breaking work into RFCs allows validation at each step\nTraceability : Each implementation traces back to specific requirements\nReduced Rework : Clear specifications minimize major revisions\nBusiness Benefits\nPredictable Outcomes : Structured approach leads to more predictable timelines and results\nKnowledge Preservation : Documentation persists even as team members or AI tools change\nStakeholder Alignment : PRDs create shared understanding between business, technical teams, and AI\nFaster Onboarding : New team members or AI tools quickly understand goals and constraints\nAI-Specific Advantages\nContext Window Optimization : Focused RFCs help AI work within context window limitations\nTargeted Expertise : Different aspects can be directed to specialized AI models or prompts\nQuality Control : Structured documentation provides clear criteria for AI to self-evaluate\nAvailable Prompts\nPrompt\nDescription\nInteractive PRD Creation\nCreate a PRD through a guided step-by-step questioning process\nPRD Comprehensive Verification\nVerify and improve your PRD by identifying gaps and quality issues\nPRD to Features Extraction\nExtract and organize features from your PRD\nPRD to Rules\nGenerate technical guidelines and standards for development\nPRD to RFCs\nBreak down your PRD into manageable implementation units\nImplementation Template\nTemplate for implementing individual RFCs\nCode Review\nReview implementation against RFC, rules, security, and performance\nTesting Strategy\nGenerate comprehensive test plan from features and RFCs\nPRD Change Management\nManage changes to your PRD during development\nRecommended Workflow\n┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐\n│ Create │ │ Verify │ │ Extract │ │ Create │ │ Generate │ │Implement │ │ Code │ │ Testing │\n│ PRD │──>│ PRD │──>│ Features │──>│ Rules │──>│ RFCs │──>│ RFCs │──>│ Review │──>│ Strategy │\n└──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘\nInitial Development\nCreate PRD - Start with a vague idea and develop it into a complete PRD using the Interactive Creation prompt\nVerify PRD - Identify critical gaps and improve quality using the Comprehensive Verification prompt\nExtract Features - Transform your verified PRD into organized features with priorities and acceptance criteria\nCreate Rules - Establish technical guidelines and standards based on your PRD and features\nGenerate RFCs - Break down the project into logical, manageable implementation units\nImplement RFCs - Use the implementation template for each RFC to guide development\nCode Review - Review each implementation against its RFC specification and project standards\nTesting Strategy - Generate and execute a comprehensive test plan for implemented features\nManaging Changes\nWhen new requirements or changes arise during development:\nAnalyze Changes - Use the Change Management prompt to assess impact and integration strategy\nUpdate Documents - Revise affected PRD, features, rules, and RFCs based on the analysis\nContinue Implementation - Resume development with the updated documentation\nExamples\nThe examples/ folder contains complete sample outputs for a URL shortener project, demonstrating each step of the workflow:\nPRD - Product Requirements Document\nFeatures - Extracted features with MoSCoW prioritization\nRules - Development standards and guidelines\nRFCs - Implementation units (3 RFCs)\nUse these as a reference for what each prompt produces.\nHow to Use\nMethod 1: Manual Copy\nOpen the desired prompt file\nCopy the entire contents\nPaste into your AI assistant\nAttach your PRD or relevant documents\nLet the AI process your request\nMethod 2: Using the Copy Script\n# Make the script executable (first time only)\nchmod +x copy-prompt.sh\n# List all available prompts\n./copy-prompt.sh --list\n# Copy a prompt to clipboard\n./copy-prompt.sh interactive-prd-creation-prompt.md\nThen paste the prompt into your AI assistant and proceed as normal.\nCompatibility\nThese prompts work with any modern LLM, including:\nClaude (Anthropic) - Claude 3.5, Claude 4.x\nGPT-4 / ChatGPT (OpenAI) - GPT-4, GPT-4o, GPT-4.5\nGemini (Google) - Gemini 1.5, Gemini 2.x\nLocal models - Llama, Mistral, etc. (with sufficient context windows)\nThey also work in AI-powered IDEs like Cursor , Windsurf , Cline , and GitHub Copilot .\nQuick Tips\nProvide complete documents when possible\nAnswer any clarifying questions the AI asks\nReview and customize AI outputs before implementation\nUse the prompts in sequence for best results\nFor complex projects, iterate through prompts as needed\nContributing\nSee CONTRIBUTING.md for guidelines on submitting new prompts, quality standards, and testing approach.\nLicense\nThis project is licensed under the MIT License - see the LICENSE file for details.\nMade with care for better product development with AI\nAbout\nA structured prompt pipeline that turns vague ideas into implementable RFCs — works with any AI assistant.\nTopics\nrfc\nprd\nclaude\nai-tools\nllm\nprompt-engineering\nai-workflow\ncursor-ai\nvibe-coding\nclaude-code\nResources\nReadme\nLicense\nMIT license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n264\nstars\nWatchers\nwatching\nForks\n28\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nShell\n100.0%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-26/r-107-github-nurettincoban-ai-prd-workflow-a-structured-prompt-pipeline-that.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-26/r-107-github-nurettincoban-ai-prd-workflow-a-structured-prompt-pipeline-that.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 8241,
+    "paragraph_count": 122,
+    "sentence_count": 22,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0008,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 8241,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "e9b035e87cbae2b3",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "9e06e4c60a1e13f2",
+  "content_hash": "e9b035e87cbae2b3",
+  "full_text_hash": "e9b035e87cbae2b3",
+  "semantic_hash": "81c8940d9e5928c9",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-26T03:32:32.039Z",
+  "last_seen_at": "2026-06-26T03:32:32.039Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "workflow_change",
+      "text": "# nurettincoban/ai-prd-workflow. | code-review-prompt.md | | code-review-prompt.md | | |. | implementation-prompt-template.md | | implementation-prompt-template.md | | |. | interactive-prd-creation-prompt.md | | interactive-prd-creation-prompt.md | | |. | prd-change-management-prompt.md | | prd-change-management-prompt.md | | |. | prd-comprehensive-verification-prompt.md | | prd-comprehensive-verification-prompt.md | | |. | prd-to-features-prompt.md | | prd-to-features-prompt.md | | |. | prd-to-rfcs-prompt.md | | p",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "nurettincoban ai-prd-workflow Public Notifications You must be signed in to change notification settings Fork 28 Star 264 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 15 Commits 15 Commits examples/ url-shortener examples/ url-shortener CHANGELOG.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md LICENSE LICENSE README.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md code-review-prompt.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "sh implementation-prompt-template.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Tavily",
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "GitHub",
+      "Cursor",
+      "Mistral"
+    ],
+    "products": [
+      "Claude",
+      "ChatGPT",
+      "Cursor",
+      "GPT-4",
+      "Gemini",
+      "Copilot",
+      "claude",
+      "cursor"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "0.086",
+      "28",
+      "264\nm",
+      "15",
+      "3",
+      "1",
+      "2",
+      "3.5"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "md LICENSE LICENSE README.",
+      "md code-review-prompt.",
+      "sh implementation-prompt-template."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "# nurettincoban/ai-prd-workflow. | code-review-prompt.md | | code-review-prompt.md | | |. | implementation-prompt-template.md | | implementation-prompt-template.md | | |. | interactive-prd-creation-prompt.md | | interactive-prd-creation-prompt.md | | |. | prd-change-management-prompt.md | | prd-change-management-prompt.md | | |. | prd-comprehensive-verification-prompt.md | | prd-comprehensive-verification-prompt.md | | |. | prd-to-features-prompt.md | | prd-to-features-prompt.md | | |. | prd-to-rfcs-prompt.md | | p",
+      "nurettincoban ai-prd-workflow Public Notifications You must be signed in to change notification settings Fork 28 Star 264 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 15 Commits 15 Commits examples/ url-shortener examples/ url-shortener CHANGELOG."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "ignored",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# GitHub - nurettincoban/ai-prd-workflow: A structured prompt pipeline that turns vague ideas into implementable RFCs — works with any AI assistant. · GitHub\n\n- raw_id: R-107\n- original_url: https://github.com/nurettincoban/ai-prd-workflow\n- source_name: keyword search / Tavily\n- collected_at: 2026-06-26T03:32:32.039Z\n\n## clean_text\n\nnurettincoban\nai-prd-workflow\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n28\nStar\n264\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n15 Commits\n15 Commits\nexamples/ url-shortener\nexamples/ url-shortener\nCHANGELOG.md\nCHANGELOG.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ncode-review-prompt.md\ncode-review-prompt.md\ncopy-prompt.sh\ncopy-prompt.sh\nimplementation-prompt-template.md\nimplementation-prompt-template.md\ninteractive-prd-creation-prompt.md\ninteractive-prd-creation-prompt.md\nprd-change-management-prompt.md\nprd-change-management-prompt.md\nprd-comprehensive-verification-prompt.md\nprd-comprehensive-verification-prompt.md\nprd-to-features-prompt.md\nprd-to-features-prompt.md\nprd-to-rfcs-prompt.md\nprd-to-rfcs-prompt.md\nprd-to-rules-prompt.md\nprd-to-rules-prompt.md\ntesting-strategy-prompt.md\ntesting-strategy-prompt.md\nView all files\nRepository files navigation\nAI PRD Workflow\nAI-Powered Product Development\nA collection of reusable AI prompts to streamline your product development workflow. Copy and paste these prompts into any AI assistant (Claude, ChatGPT, Cursor, Windsurf, or any AI-powered IDE) to automate common tasks in your product development process.\nQuick Start\nPick a prompt from Available Prompts below\nCopy its contents (or use ./copy-prompt.sh --list to browse)\nPaste into any AI assistant with your project context attached\nNew here? Check the examples/url-shortener folder for sample outputs from every step.\nTip\nWhy PRD & RFC Driven Development? This approach significantly improves AI collaboration by providing clear boundaries, reducing hallucinations, and ensuring consistent understanding between humans and AI. Jump to full benefits\nTable of Contents\nBenefits of PRD & RFC Driven Development\nAvailable Prompts\nRecommended Workflow\nExamples\nHow to Use\nCompatibility\nQuick Tips\nContributing\nLicense\nBenefits of PRD & RFC Driven Development\nFollowing a structured PRD & RFC driven development approach offers significant advantages, especially when collaborating with AI tools:\nEnhanced AI\nCollaboration\nImproved\nDevelopment\nBusiness\nBenefits\nAI-Specific\nAdvantages\nEnhanced AI Collaboration\nClearer Instructions : Well-defined PRDs and RFCs provide AI with precise context, resulting in more accurate implementations\nReduced Hallucinations : Structured documentation minimizes AI's tendency to fill in gaps with incorrect assumptions\nConsistent Mental Model : Both humans and AI work from the same documented understanding\nImproved Development Process\nBoundary Setting : Clearly defined scope prevents AI from implementing unwanted features\nIncremental Verification : Breaking work into RFCs allows validation at each step\nTraceability : Each implementation traces back to specific requirements\nReduced Rework : Clear specifications minimize major revisions\nBusiness Benefits\nPredictable Outcomes : Structured approach leads to more predictable timelines and results\nKnowledge Preservation : Documentation persists even as team members or AI tools change\nStakeholder Alignment : PRDs create shared understanding between business, technical teams, and AI\nFaster Onboarding : New team members or AI tools quickly understand goals and constraints\nAI-Specific Advantages\nContext Window Optimization : Focused RFCs help AI work within context window limitations\nTargeted Expertise : Different aspects can be directed to specialized AI models or prompts\nQuality Control : Structured documentation provides clear criteria for AI to self-evaluate\nAvailable Prompts\nPrompt\nDescription\nInteractive PRD Creation\nCreate a PRD through a guided step-by-step questioning process\nPRD Comprehensive Verification\nVerify and improve your PRD by identifying gaps and quality issues\nPRD to Features Extraction\nExtract and organize features from your PRD\nPRD to Rules\nGenerate technical guidelines and standards for development\nPRD to RFCs\nBreak down your PRD into manageable implementation units\nImplementation Template\nTemplate for implementing individual RFCs\nCode Review\nReview implementation against RFC, rules, security, and performance\nTesting Strategy\nGenerate comprehensive test plan from features and RFCs\nPRD Change Management\nManage changes to your PRD during development\nRecommended Workflow\n┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐\n│ Create │ │ Verify │ │ Extract │ │ Create │ │ Generate │ │Implement │ │ Code │ │ Testing │\n│ PRD │──>│ PRD │──>│ Features │──>│ Rules │──>│ RFCs │──>│ RFCs │──>│ Review │──>│ Strategy │\n└──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘\nInitial Development\nCreate PRD - Start with a vague idea and develop it into a complete PRD using the Interactive Creation prompt\nVerify PRD - Identify critical gaps and improve quality using the Comprehensive Verification prompt\nExtract Features - Transform your verified PRD into organized features with priorities and acceptance criteria\nCreate Rules - Establish technical guidelines and standards based on your PRD and features\nGenerate RFCs - Break down the project into logical, manageable implementation units\nImplement RFCs - Use the implementation template for each RFC to guide development\nCode Review - Review each implementation against its RFC specification and project standards\nTesting Strategy - Generate and execute a comprehensive test plan for implemented features\nManaging Changes\nWhen new requirements or changes arise during development:\nAnalyze Changes - Use the Change Management prompt to assess impact and integration strategy\nUpdate Documents - Revise affected PRD, features, rules, and RFCs based on the analysis\nContinue Implementation - Resume development with the updated documentation\nExamples\nThe examples/ folder contains complete sample outputs for a URL shortener project, demonstrating each step of the workflow:\nPRD - Product Requirements Document\nFeatures - Extracted features with MoSCoW prioritization\nRules - Development standards and guidelines\nRFCs - Implementation units (3 RFCs)\nUse these as a reference for what each prompt produces.\nHow to Use\nMethod 1: Manual Copy\nOpen the desired prompt file\nCopy the entire contents\nPaste into your AI assistant\nAttach your PRD or relevant documents\nLet the AI process your request\nMethod 2: Using the Copy Script\n# Make the script executable (first time only)\nchmod +x copy-prompt.sh\n# List all available prompts\n./copy-prompt.sh --list\n# Copy a prompt to clipboard\n./copy-prompt.sh interactive-prd-creation-prompt.md\nThen paste the prompt into your AI assistant and proceed as normal.\nCompatibility\nThese prompts work with any modern LLM, including:\nClaude (Anthropic) - Claude 3.5, Claude 4.x\nGPT-4 / ChatGPT (OpenAI) - GPT-4, GPT-4o, GPT-4.5\nGemini (Google) - Gemini 1.5, Gemini 2.x\nLocal models - Llama, Mistral, etc. (with sufficient context windows)\nThey also work in AI-powered IDEs like Cursor , Windsurf , Cline , and GitHub Copilot .\nQuick Tips\nProvide complete documents when possible\nAnswer any clarifying questions the AI asks\nReview and customize AI outputs before implementation\nUse the prompts in sequence for best results\nFor complex projects, iterate through prompts as needed\nContributing\nSee CONTRIBUTING.md for guidelines on submitting new prompts, quality standards, and testing approach.\nLicense\nThis project is licensed under the MIT License - see the LICENSE file for details.\nMade with care for better product development with AI\nAbout\nA structured prompt pipeline that turns vague ideas into implementable RFCs — works with any AI assistant.\nTopics\nrfc\nprd\nclaude\nai-tools\nllm\nprompt-engineering\nai-workflow\ncursor-ai\nvibe-coding\nclaude-code\nResources\nReadme\nLicense\nMIT license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n264\nstars\nWatchers\nwatching\nForks\n28\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nShell\n100.0%\n\n## full_text\n\nnurettincoban\nai-prd-workflow\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n28\nStar\n264\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n15 Commits\n15 Commits\nexamples/ url-shortener\nexamples/ url-shortener\nCHANGELOG.md\nCHANGELOG.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ncode-review-prompt.md\ncode-review-prompt.md\ncopy-prompt.sh\ncopy-prompt.sh\nimplementation-prompt-template.md\nimplementation-prompt-template.md\ninteractive-prd-creation-prompt.md\ninteractive-prd-creation-prompt.md\nprd-change-management-prompt.md\nprd-change-management-prompt.md\nprd-comprehensive-verification-prompt.md\nprd-comprehensive-verification-prompt.md\nprd-to-features-prompt.md\nprd-to-features-prompt.md\nprd-to-rfcs-prompt.md\nprd-to-rfcs-prompt.md\nprd-to-rules-prompt.md\nprd-to-rules-prompt.md\ntesting-strategy-prompt.md\ntesting-strategy-prompt.md\nView all files\nRepository files navigation\nAI PRD Workflow\nAI-Powered Product Development\nA collection of reusable AI prompts to streamline your product development workflow. Copy and paste these prompts into any AI assistant (Claude, ChatGPT, Cursor, Windsurf, or any AI-powered IDE) to automate common tasks in your product development process.\nQuick Start\nPick a prompt from Available Prompts below\nCopy its contents (or use ./copy-prompt.sh --list to browse)\nPaste into any AI assistant with your project context attached\nNew here? Check the examples/url-shortener folder for sample outputs from every step.\nTip\nWhy PRD & RFC Driven Development? This approach significantly improves AI collaboration by providing clear boundaries, reducing hallucinations, and ensuring consistent understanding between humans and AI. Jump to full benefits\nTable of Contents\nBenefits of PRD & RFC Driven Development\nAvailable Prompts\nRecommended Workflow\nExamples\nHow to Use\nCompatibility\nQuick Tips\nContributing\nLicense\nBenefits of PRD & RFC Driven Development\nFollowing a structured PRD & RFC driven development approach offers significant advantages, especially when collaborating with AI tools:\nEnhanced AI\nCollaboration\nImproved\nDevelopment\nBusiness\nBenefits\nAI-Specific\nAdvantages\nEnhanced AI Collaboration\nClearer Instructions : Well-defined PRDs and RFCs provide AI with precise context, resulting in more accurate implementations\nReduced Hallucinations : Structured documentation minimizes AI's tendency to fill in gaps with incorrect assumptions\nConsistent Mental Model : Both humans and AI work from the same documented understanding\nImproved Development Process\nBoundary Setting : Clearly defined scope prevents AI from implementing unwanted features\nIncremental Verification : Breaking work into RFCs allows validation at each step\nTraceability : Each implementation traces back to specific requirements\nReduced Rework : Clear specifications minimize major revisions\nBusiness Benefits\nPredictable Outcomes : Structured approach leads to more predictable timelines and results\nKnowledge Preservation : Documentation persists even as team members or AI tools change\nStakeholder Alignment : PRDs create shared understanding between business, technical teams, and AI\nFaster Onboarding : New team members or AI tools quickly understand goals and constraints\nAI-Specific Advantages\nContext Window Optimization : Focused RFCs help AI work within context window limitations\nTargeted Expertise : Different aspects can be directed to specialized AI models or prompts\nQuality Control : Structured documentation provides clear criteria for AI to self-evaluate\nAvailable Prompts\nPrompt\nDescription\nInteractive PRD Creation\nCreate a PRD through a guided step-by-step questioning process\nPRD Comprehensive Verification\nVerify and improve your PRD by identifying gaps and quality issues\nPRD to Features Extraction\nExtract and organize features from your PRD\nPRD to Rules\nGenerate technical guidelines and standards for development\nPRD to RFCs\nBreak down your PRD into manageable implementation units\nImplementation Template\nTemplate for implementing individual RFCs\nCode Review\nReview implementation against RFC, rules, security, and performance\nTesting Strategy\nGenerate comprehensive test plan from features and RFCs\nPRD Change Management\nManage changes to your PRD during development\nRecommended Workflow\n┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐\n│ Create │ │ Verify │ │ Extract │ │ Create │ │ Generate │ │Implement │ │ Code │ │ Testing │\n│ PRD │──>│ PRD │──>│ Features │──>│ Rules │──>│ RFCs │──>│ RFCs │──>│ Review │──>│ Strategy │\n└──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘\nInitial Development\nCreate PRD - Start with a vague idea and develop it into a complete PRD using the Interactive Creation prompt\nVerify PRD - Identify critical gaps and improve quality using the Comprehensive Verification prompt\nExtract Features - Transform your verified PRD into organized features with priorities and acceptance criteria\nCreate Rules - Establish technical guidelines and standards based on your PRD and features\nGenerate RFCs - Break down the project into logical, manageable implementation units\nImplement RFCs - Use the implementation template for each RFC to guide development\nCode Review - Review each implementation against its RFC specification and project standards\nTesting Strategy - Generate and execute a comprehensive test plan for implemented features\nManaging Changes\nWhen new requirements or changes arise during development:\nAnalyze Changes - Use the Change Management prompt to assess impact and integration strategy\nUpdate Documents - Revise affected PRD, features, rules, and RFCs based on the analysis\nContinue Implementation - Resume development with the updated documentation\nExamples\nThe examples/ folder contains complete sample outputs for a URL shortener project, demonstrating each step of the workflow:\nPRD - Product Requirements Document\nFeatures - Extracted features with MoSCoW prioritization\nRules - Development standards and guidelines\nRFCs - Implementation units (3 RFCs)\nUse these as a reference for what each prompt produces.\nHow to Use\nMethod 1: Manual Copy\nOpen the desired prompt file\nCopy the entire contents\nPaste into your AI assistant\nAttach your PRD or relevant documents\nLet the AI process your request\nMethod 2: Using the Copy Script\n# Make the script executable (first time only)\nchmod +x copy-prompt.sh\n# List all available prompts\n./copy-prompt.sh --list\n# Copy a prompt to clipboard\n./copy-prompt.sh interactive-prd-creation-prompt.md\nThen paste the prompt into your AI assistant and proceed as normal.\nCompatibility\nThese prompts work with any modern LLM, including:\nClaude (Anthropic) - Claude 3.5, Claude 4.x\nGPT-4 / ChatGPT (OpenAI) - GPT-4, GPT-4o, GPT-4.5\nGemini (Google) - Gemini 1.5, Gemini 2.x\nLocal models - Llama, Mistral, etc. (with sufficient context windows)\nThey also work in AI-powered IDEs like Cursor , Windsurf , Cline , and GitHub Copilot .\nQuick Tips\nProvide complete documents when possible\nAnswer any clarifying questions the AI asks\nReview and customize AI outputs before implementation\nUse the prompts in sequence for best results\nFor complex projects, iterate through prompts as needed\nContributing\nSee CONTRIBUTING.md for guidelines on submitting new prompts, quality standards, and testing approach.\nLicense\nThis project is licensed under the MIT License - see the LICENSE file for details.\nMade with care for better product development with AI\nAbout\nA structured prompt pipeline that turns vague ideas into implementable RFCs — works with any AI assistant.\nTopics\nrfc\nprd\nclaude\nai-tools\nllm\nprompt-engineering\nai-workflow\ncursor-ai\nvibe-coding\nclaude-code\nResources\nReadme\nLicense\nMIT license\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n264\nstars\nWatchers\nwatching\nForks\n28\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nShell\n100.0%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [workflow_change / daily_observation, heatmap, change, case, trend / high] # nurettincoban/ai-prd-workflow. | code-review-prompt.md | | code-review-prompt.md | | |. | implementation-prompt-template.md | | implementation-prompt-template.md | | |. | interactive-prd-creation-prompt.md | | interactive-prd-creation-prompt.md | | |. | prd-change-management-prompt.md | | prd-change-management-prompt.md | | |. | prd-comprehensive-verification-prompt.md | | prd-comprehensive-verification-prompt.md | | |. | prd-to-features-prompt.md | | prd-to-features-prompt.md | | |. | prd-to-rfcs-prompt.md | | p\n2. [workflow_change / daily_observation, heatmap, change, case, trend / high] nurettincoban ai-prd-workflow Public Notifications You must be signed in to change notification settings Fork 28 Star 264 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 15 Commits 15 Commits examples/ url-shortener examples/ url-shortener CHANGELOG.\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] md LICENSE LICENSE README.\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] md code-review-prompt.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] sh implementation-prompt-template.\n"
+}
