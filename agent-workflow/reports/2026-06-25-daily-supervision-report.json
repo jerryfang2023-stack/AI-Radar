@@ -2,7 +2,7 @@
   "ok": true,
   "status": "warning",
   "date": "2026-06-25",
-  "generated_at": "2026-06-25T05:13:35.883Z",
+  "generated_at": "2026-06-25T03:28:39.903Z",
   "timezone": "Asia/Shanghai",
   "lanes": [
     {
@@ -31,10 +31,10 @@
       "schedule": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30",
       "status": "warning",
       "evidence": {
-        "generatedAt": "2026-06-25T00:42:37.545Z",
+        "generatedAt": "2026-06-24T17:06:21.284Z",
         "generatedDate": "2026-06-25",
-        "items": 61,
-        "links": 72,
+        "items": 31,
+        "links": 50,
         "selectedKeywords": 8,
         "collectorErrors": 0,
         "gateStatus": "passed",
@@ -53,15 +53,15 @@
           "available": true,
           "latest_run": {
             "conclusion": "success",
-            "createdAt": "2026-06-25T04:53:12Z",
-            "databaseId": 28147732842,
-            "event": "schedule",
+            "createdAt": "2026-06-25T01:37:40Z",
+            "databaseId": 28141079493,
+            "event": "workflow_dispatch",
             "headBranch": "main",
             "status": "completed",
-            "updatedAt": "2026-06-25T04:53:31Z",
-            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28147732842"
+            "updatedAt": "2026-06-25T01:38:05Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28141079493"
           },
-          "same_date_run_count": 2,
+          "same_date_run_count": 1,
           "prs": [
             {
               "isDraft": false,
@@ -93,28 +93,28 @@
       "status": "warning",
       "evidence": {
         "activeDate": "2026-06-25",
-        "generatedAt": "2026-06-25T05:11:33.134Z",
+        "generatedAt": "2026-06-25T03:26:30.540Z",
         "frontstageSelected": 10,
         "supplyConstrained": false,
-        "coreCandidateCount": 16,
-        "qualifiedCount": 16,
-        "signalCardFiles": 21,
-        "manifest": "agent-workflow/reports/2026-06-25-persistent-asset-manifest.json",
+        "coreCandidateCount": 13,
+        "qualifiedCount": 12,
+        "signalCardFiles": 27,
+        "manifest": "missing",
         "qualityGateStatus": "passed",
         "readinessReport": "agent-workflow/reports/2026-06-25-daily-production-chain-readiness.md",
         "github": {
           "available": true,
           "latest_run": {
-            "conclusion": "success",
-            "createdAt": "2026-06-25T04:54:44Z",
-            "databaseId": 28147786053,
-            "event": "schedule",
+            "conclusion": "failure",
+            "createdAt": "2026-06-25T03:03:09Z",
+            "databaseId": 28144004145,
+            "event": "workflow_dispatch",
             "headBranch": "main",
             "status": "completed",
-            "updatedAt": "2026-06-25T04:55:04Z",
-            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28147786053"
+            "updatedAt": "2026-06-25T03:10:58Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28144004145"
           },
-          "same_date_run_count": 5,
+          "same_date_run_count": 4,
           "prs": [],
           "pr_warning": ""
         },
@@ -124,24 +124,27 @@
           "top10Count": 10,
           "businessPrMerged": false,
           "businessPrUrl": "",
-          "pagesSuccess": true,
+          "pagesSuccess": false,
           "pagesActive": false,
-          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28147798943",
+          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28143994338",
           "localSync": {
             "available": true,
             "clean": false,
-            "dirtyFiles": 57,
+            "dirtyFiles": 56,
             "ignoredReportFiles": 4,
-            "head": "66d62db382eccad04fb9d3a0e0b796dcd239950c",
-            "originMain": "0037b3e183a52c67439423ab16938108402baac5",
-            "fastForwarded": false,
+            "head": "92513427d1bf56fa9241133e3d1a88d7181f3c33",
+            "originMain": "92513427d1bf56fa9241133e3d1a88d7181f3c33",
+            "fastForwarded": true,
             "warning": ""
           }
         }
       },
       "problems": [],
       "warnings": [
-        "local Obsidian sync may be blocked by 57 dirty file(s)"
+        "missing same-date persistent asset manifest: agent-workflow/reports/2026-06-25-persistent-asset-manifest.json",
+        "latest same-date GitHub Pages workflow conclusion is skipped",
+        "local Obsidian sync may be blocked by 56 dirty file(s)",
+        "latest Business Signals workflow conclusion is failure, but same-date data and gates are healthy; repair branch / PR / publication only"
       ],
       "actions": []
     },
@@ -151,11 +154,11 @@
       "schedule": "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Hermes RSS handoff 09:30",
       "status": "passed",
       "evidence": {
-        "generatedAt": "2026-06-24T16:32:35.465Z",
+        "generatedAt": "2026-06-25T01:38:02.061Z",
         "generatedDate": "2026-06-25",
         "feedGeneratedAt": "2026-06-24T07:29:07.207Z",
-        "remarks": 59,
-        "builders": 26,
+        "remarks": 56,
+        "builders": 25,
         "gateStatus": "passed",
         "gateReport": "agent-workflow/reports/2026-06-25-follow-builders-data-gate.md",
         "github": {

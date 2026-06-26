@@ -1,0 +1,193 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-059
+title: "ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times"
+original_url: "https://economictimes.indiatimes.com/tech/artificial-intelligence/servicenow-nvidia-expand-partnership-launch-new-ai-agent/articleshow/120999550.cms"
+canonical_url: "https://economictimes.indiatimes.com/tech/artificial-intelligence/servicenow-nvidia-expand-partnership-launch-new-ai-agent/articleshow/120999550.cms"
+source_name: "keyword search / Tavily"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-25T03:26:00.603Z
+language: mixed
+full_text_hash: 868c005b6bb9b466
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-25/r-059-servicenow-nvidia-expand-partnership-launch-new-ai-agent-the-economic-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-25/r-059-servicenow-nvidia-expand-partnership-launch-new-ai-agent-the-economic-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: timeout-fallback-visible-text
+extraction_quality: high
+extraction_method: "fetch_failed_summary_fallback"
+readability_score: 0
+extractor_diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+has_full_text: true
+content_length: 2717
+fetch_error: "fetch failed (code=UND_ERR_CONNECT_TIMEOUT)"
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["missing_snapshot"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"868c005b6bb9b466","missing":["missing_snapshot"]}
+source_volatility: low
+community_name: ""
+capture_scope: summary_only
+visible_range: "仅保留采集通道当时可见文本，未抓到原页面正文"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: discovery_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: fcccd946e393ce61
+content_hash: 868c005b6bb9b466
+semantic_hash: b2361848fbeaf050
+duplicate_of: ""
+first_seen_at: "2026-06-25T03:26:00.603Z"
+last_seen_at: 2026-06-25T03:26:00.603Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Tavily","Google","Microsoft","Amazon","AWS","Nvidia","ServiceNow"],"products":["agent","agents","Agent"],"people":[],"industries":["企业服务"],"roles":[],"workflows":["权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟"],"affected_departments":["IT / 安全"],"numbers":["15B","3 trillion","0.697","2026"],"quotes":[]}
+evidence_seed: {"company_actions":["Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent.","# ServiceNow, Nvidia expand partnership, launch new AI agent.","ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agents across the enterprise, called Apriel Nemotron 15B."],"case_details":[],"workflow_changes":["Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent. # ServiceNow, Nvidia expand partnership, launch new AI agent. ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use. ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agen","ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use.","ServiceNow is a leading AI platform for business transformation, while NVIDIA is the leading provider of graphics processing units, which have powered the AI boom and lifted the company's market cap to almost USD 3 trillion."],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent. # ServiceNow, Nvidia expand partnership, launch new AI agent. ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use. ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agen","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"# ServiceNow, Nvidia expand partnership, launch new AI agent.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agents across the enterprise, called Apriel Nemotron 15B.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"ServiceNow is a leading AI platform for business transformation, while NVIDIA is the leading provider of graphics processing units, which have powered the AI boom and lifted the company's market cap to almost USD 3 trillion.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times
+
+## clean_text
+
+Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent. # ServiceNow, Nvidia expand partnership, launch new AI agent. ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use. ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agents across the enterprise, called Apriel Nemotron 15B. ServiceNow is a leading AI platform for business transformation, while NVIDIA is the leading provider of graphics processing units, which have powered the AI boom and lifted the company's market cap to almost USD 3 trillion. ServiceNow and NVIDIA also unveiled a new collaboration on a joint data flywheel architecture that will integrate ServiceNow Workflow Data Fabric and select NVIDIA NeMo microservices. ServiceNow also launched the AI Control Tower, a centralised command centre to govern, manage, secure, and realize value from any ServiceNow and third-party AI agent, model, and workflow on a single unified platform. ServiceNow partners, including Accenture, Adobe, Box, Cisco, Google Cloud, IBM, Jit, Microsoft, Moonhub, RADCOM, UKG, and Zoom are among those to be offering the first AI Agent Fabric integrations for seamless, wall to wall enterprise workflows across third-party agents, a company statement said. ServiceNow opened its annual customer and partner event by unveiling the new ServiceNow AI Platform to put any AI agent, or model to work across the enterprise. At the conference, ServiceNow launched AI agents to power the rise of self-defending enterprises. The new agents, available within ServiceNow's industry-leading Security and Risk solutions, are designed to improve consistency, identify insights, and reduce response times. ServiceNow also unveiled new Workflow Data Fabric capabilities, including a data ecosystem built to power AI agents and workflows with real-time intelligence. The new Workflow Data Network is a broad ecosystem of data platforms, applications, and enterprise tools that enhance Workflow Data Fabric and connect, understand, and take action from any data source, all on the ServiceNow AI Platform. At the conference, ServiceNow and Amazon Web Services (AWS) announced a new solution designed to help customers unify and act on enterprise data more efficiently through new, bi-directional data integration and automated workflow orchestration. / score=0.697 / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original
+
+## full_text
+
+Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent. # ServiceNow, Nvidia expand partnership, launch new AI agent. ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use. ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agents across the enterprise, called Apriel Nemotron 15B. ServiceNow is a leading AI platform for business transformation, while NVIDIA is the leading provider of graphics processing units, which have powered the AI boom and lifted the company's market cap to almost USD 3 trillion. ServiceNow and NVIDIA also unveiled a new collaboration on a joint data flywheel architecture that will integrate ServiceNow Workflow Data Fabric and select NVIDIA NeMo microservices. ServiceNow also launched the AI Control Tower, a centralised command centre to govern, manage, secure, and realize value from any ServiceNow and third-party AI agent, model, and workflow on a single unified platform. ServiceNow partners, including Accenture, Adobe, Box, Cisco, Google Cloud, IBM, Jit, Microsoft, Moonhub, RADCOM, UKG, and Zoom are among those to be offering the first AI Agent Fabric integrations for seamless, wall to wall enterprise workflows across third-party agents, a company statement said. ServiceNow opened its annual customer and partner event by unveiling the new ServiceNow AI Platform to put any AI agent, or model to work across the enterprise. At the conference, ServiceNow launched AI agents to power the rise of self-defending enterprises. The new agents, available within ServiceNow's industry-leading Security and Risk solutions, are designed to improve consistency, identify insights, and reduce response times. ServiceNow also unveiled new Workflow Data Fabric capabilities, including a data ecosystem built to power AI agents and workflows with real-time intelligence. The new Workflow Data Network is a broad ecosystem of data platforms, applications, and enterprise tools that enhance Workflow Data Fabric and connect, understand, and take action from any data source, all on the ServiceNow AI Platform. At the conference, ServiceNow and Amazon Web Services (AWS) announced a new solution designed to help customers unify and act on enterprise data more efficiently through new, bi-directional data integration and automated workflow orchestration. / score=0.697 / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original
+
+## extraction_diagnostics
+
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- fetch_status: timeout-fallback-visible-text
+- extraction_quality: high
+- diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent. # ServiceNow, Nvidia expand partnership, launch new AI agent. ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use. ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agen
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
+   Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent.
+
+3. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
+   # ServiceNow, Nvidia expand partnership, launch new AI agent.
+
+4. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use.
+
+5. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
+   ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agents across the enterprise, called Apriel Nemotron 15B.
+
+6. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   ServiceNow is a leading AI platform for business transformation, while NVIDIA is the leading provider of graphics processing units, which have powered the AI boom and lifted the company's market cap to almost USD 3 trillion.
+
+## business_elements
+
+- companies: keyword search, Tavily, Google, Microsoft, Amazon, AWS, Nvidia, ServiceNow
+- products: agent, agents, Agent
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: 暂无公开信息
+- workflows: 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟
+- affected_departments: IT / 安全
+- numbers: 15B, 3 trillion, 0.697, 2026
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent. / # ServiceNow, Nvidia expand partnership, launch new AI agent. / ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agents across the enterprise, called Apriel Nemotron 15B.
+- case_details: 暂无公开信息
+- workflow_changes: Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent. # ServiceNow, Nvidia expand partnership, launch new AI agent. ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use. ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agen / ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use. / ServiceNow is a leading AI platform for business transformation, while NVIDIA is the leading provider of graphics processing units, which have powered the AI boom and lifted the company's market cap to almost USD 3 trillion.
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- visible_range: 仅保留采集通道当时可见文本，未抓到原页面正文
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Title: ServiceNow, Nvidia expand partnership, launch new AI agent - The Economic Times Business NewsTechAIServiceNow, Nvidia expand partnership, launch new AI agent. # ServiceNow, Nvidia expand partnership, launch new AI agent. ServiceNow and Nvidia unveiled Apriel Nemotron 15B, a new AI reasoning model, and launched the AI Control Tower and Workflow Data Fabric to optimise enterprise AI use. ServiceNow and Nvidia have announced an expansion of their partnership with the launch of a new class of intelligent AI agents across the enterprise, called Apriel Nemotron 15B. ServiceNow is a leading AI platform for business transformation, while NVIDIA is the leading provider of graphics processing units, which have powered the AI boom and lifted the company's market cap to almost USD 3 trillion. ServiceNow and NVIDIA also unveiled a new collaboration on a joint data flywheel architecture that will integrate ServiceNow Workflow Data Fabric and select NVIDIA NeMo microservices. ServiceNow also launched the AI Control Tower, a centralised command centre to govern, manage, secure, and realize value from any ServiceNow and third-party AI agent, model, and workflow on a single unified platform. ServiceNow partners, including Accenture, Adobe, Box, Cisco, Google Cloud, IBM, Jit, Microsoft, Moonhub, RADCOM, UKG, and Zoom are among those to be offering the first AI Agent Fabric integrations for seamless, wall to wall enterprise workflows across third-party agents, a company statement said. ServiceNow opened its annual customer and partner event by unveiling the new ServiceNow AI Platform to put any AI agent, or model to work across the enterprise. At the conference, ServiceNow launched AI agents to power the rise of self-defending enterprises. The new agents, available within ServiceNow's industry-leading Security and Risk solutions, are designed to improve consistency, identify insights, and reduce response times. ServiceNow also unveiled new Workflow Data Fabric capabilities, including a data ecosystem built to power AI agents and workflows with real-time intelligence. The new Workflow Data Network is a broad ecosystem of data platforms, applications, and enterprise tools that enhance Workflow Data Fabric and connect, understand, and take action from any data source, all on the ServiceNow AI Platform. At the conference, ServiceNow and Amazon Web Services (AWS) announced a new solution designed to help customers unify and act on enterprise data more efficiently through new, bi-directional data integration and automated workflow orchestration. / score=0.697 / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

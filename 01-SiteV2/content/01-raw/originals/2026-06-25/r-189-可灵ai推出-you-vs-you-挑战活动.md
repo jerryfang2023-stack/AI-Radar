@@ -1,0 +1,192 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-189
+title: "可灵AI推出\"You Vs You\"挑战活动"
+original_url: "https://x.com/Kling_ai/status/2069768362251489747"
+canonical_url: "https://x.com/Kling_ai/status/2069768362251489747"
+source_name: "X：可灵 Kling AI (@Kling_ai)"
+source_type: community
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-24T13:03:26.000Z"
+collected_at: 2026-06-25T03:26:01.035Z
+language: mixed
+full_text_hash: a2adbcfe1f59c0de
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-25/r-189-可灵ai推出-you-vs-you-挑战活动.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-25/r-189-可灵ai推出-you-vs-you-挑战活动.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: timeout-fallback-visible-text
+extraction_quality: failed
+extraction_method: "fetch_failed_summary_fallback"
+readability_score: 0
+extractor_diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+has_full_text: false
+content_length: 230
+fetch_error: "fetch failed (code=UND_ERR_CONNECT_TIMEOUT)"
+raw_qc_decision: block
+raw_qc_downstream_use: not_allowed
+degradation_reasons: ["missing_full_text","missing_snapshot"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a2adbcfe1f59c0de","missing":["missing_full_text","missing_snapshot"]}
+source_volatility: high
+community_name: "X：可灵 Kling AI (@Kling_ai)"
+capture_scope: aihot_visible_text
+visible_range: "仅保留采集通道当时可见文本，未抓到原页面正文"
+evidence_level: discovery_only
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"可灵AI推出\"You Vs You\"挑战活动","discovery_summary":"可灵AI（Kling AI）发起\"You Vs You\"挑战，概念为\"你的下一个对手就是你自己\"。参与者需发布带可灵水印的AI生成视频，添加话题#youvsyou并@Kling_ai，同时私信提供UID。投稿期2026年6月23日至6月30日（UTC-8），点赞统计截止7月5日，奖励7月6日至10日发放。按跨平台总点赞数排名：第1名获16，000 Credits（1人），第2名11，000 Credits（2人），第3名7，500 Credits（3人）。","source_name":"X：可灵 Kling AI (@Kling_ai)","origin_url":"https://x.com/Kling_ai/status/2069768362251489747","discovered_at":"2026-06-25T03:03:30.159Z","rank_on_page":227,"discovery_status":"discovered"}
+source_role: discovery_source
+origin_fetch_status: "timeout"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: ef3a0b46ee56e9a4
+content_hash: a2adbcfe1f59c0de
+semantic_hash: 350e4d4c22bcb64d
+duplicate_of: ""
+first_seen_at: "2026-06-24T13:03:26.000Z"
+last_seen_at: 2026-06-25T03:26:01.035Z
+update_detected: false
+raw_status: ignored
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["discard"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":4,"importance_reason":"new product or service; rubric=4 concrete important change","supporting_signals":[],"novelty":3,"evidence_strength":2,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["X","可灵 Kling AI (@Kling_ai)"],"products":[],"people":[],"industries":[],"roles":[],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["2026","6","23","30","8","7","5","10"],"quotes":["You Vs You","You Vs You","你的下一个对手就是你自己","You Vs You","你的下一个对手就是你自己"]}
+evidence_seed: {"company_actions":["参与者需发布带可灵水印的AI生成视频，添加话题#youvsyou并@Kling_ai，同时私信提供UID。","投稿期2026年6月23日至6月30日（UTC-8），点赞统计截止7月5日，奖励7月6日至10日发放。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索","没有可用全文快照"]
+key_excerpts: [{"type":"number","text":"可灵AI（Kling AI）发起\"You Vs You\"挑战，概念为\"你的下一个对手就是你自己\"。参与者需发布带可灵水印的AI生成视频，添加话题#youvsyou并@Kling_ai，同时私信提供UID。投稿期2026年6月23日至6月30日（UTC-8），点赞统计截止7月5日，奖励7月6日至10日发放。按跨平台总点赞数排名：第1名获16，000 Credits（1人），第2名11，000 Credits（2人），第3名7，500 Credits（3人）。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"quote","text":"可灵AI（Kling AI）发起\"You Vs You\"挑战，概念为\"你的下一个对手就是你自己\"。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"参与者需发布带可灵水印的AI生成视频，添加话题#youvsyou并@Kling_ai，同时私信提供UID。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"投稿期2026年6月23日至6月30日（UTC-8），点赞统计截止7月5日，奖励7月6日至10日发放。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"按跨平台总点赞数排名：第1名获16，000 Credits（1人），第2名11，000 Credits（2人），第3名7，500 Credits（3人）。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# 可灵AI推出"You Vs You"挑战活动
+
+## clean_text
+
+可灵AI（Kling AI）发起"You Vs You"挑战，概念为"你的下一个对手就是你自己"。参与者需发布带可灵水印的AI生成视频，添加话题#youvsyou并@Kling_ai，同时私信提供UID。投稿期2026年6月23日至6月30日（UTC-8），点赞统计截止7月5日，奖励7月6日至10日发放。按跨平台总点赞数排名：第1名获16，000 Credits（1人），第2名11，000 Credits（2人），第3名7，500 Credits（3人）。
+
+## full_text
+
+可灵AI（Kling AI）发起"You Vs You"挑战，概念为"你的下一个对手就是你自己"。参与者需发布带可灵水印的AI生成视频，添加话题#youvsyou并@Kling_ai，同时私信提供UID。投稿期2026年6月23日至6月30日（UTC-8），点赞统计截止7月5日，奖励7月6日至10日发放。按跨平台总点赞数排名：第1名获16，000 Credits（1人），第2名11，000 Credits（2人），第3名7，500 Credits（3人）。
+
+## extraction_diagnostics
+
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- fetch_status: timeout-fallback-visible-text
+- extraction_quality: failed
+- diagnostics: {"method":"fetch_failed_summary_fallback","error_type":"timeout"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   可灵AI（Kling AI）发起"You Vs You"挑战，概念为"你的下一个对手就是你自己"。参与者需发布带可灵水印的AI生成视频，添加话题#youvsyou并@Kling_ai，同时私信提供UID。投稿期2026年6月23日至6月30日（UTC-8），点赞统计截止7月5日，奖励7月6日至10日发放。按跨平台总点赞数排名：第1名获16，000 Credits（1人），第2名11，000 Credits（2人），第3名7，500 Credits（3人）。
+
+2. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   可灵AI（Kling AI）发起"You Vs You"挑战，概念为"你的下一个对手就是你自己"。
+
+3. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
+   参与者需发布带可灵水印的AI生成视频，添加话题#youvsyou并@Kling_ai，同时私信提供UID。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   投稿期2026年6月23日至6月30日（UTC-8），点赞统计截止7月5日，奖励7月6日至10日发放。
+
+5. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
+   按跨平台总点赞数排名：第1名获16，000 Credits（1人），第2名11，000 Credits（2人），第3名7，500 Credits（3人）。
+
+## business_elements
+
+- companies: X, 可灵 Kling AI (@Kling_ai)
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 2026, 6, 23, 30, 8, 7, 5, 10
+- quotes: You Vs You / You Vs You / 你的下一个对手就是你自己 / You Vs You / 你的下一个对手就是你自己
+
+## evidence_seed
+
+- company_actions: 参与者需发布带可灵水印的AI生成视频，添加话题#youvsyou并@Kling_ai，同时私信提供UID。 / 投稿期2026年6月23日至6月30日（UTC-8），点赞统计截止7月5日，奖励7月6日至10日发放。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 4
+- importance_reason: new product or service; rubric=4 concrete important change
+- supporting_signals:
+- novelty: 3
+- evidence_strength: 2
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: true
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- discard
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+- 没有可用全文快照
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: X：可灵 Kling AI (@Kling_ai)
+- capture_scope: aihot_visible_text
+- visible_range: 仅保留采集通道当时可见文本，未抓到原页面正文
+- evidence_level: discovery_only
+- discovery_source: AI HOT
+- source_role: discovery_source
+- origin_fetch_status: timeout
+- discovery_record: {"discovery_title":"可灵AI推出\"You Vs You\"挑战活动","discovery_summary":"可灵AI（Kling AI）发起\"You Vs You\"挑战，概念为\"你的下一个对手就是你自己\"。参与者需发布带可灵水印的AI生成视频，添加话题#youvsyou并@Kling_ai，同时私信提供UID。投稿期2026年6月23日至6月30日（UTC-8），点赞统计截止7月5日，奖励7月6日至10日发放。按跨平台总点赞数排名：第1名获16，000 Credits（1人），第2名11，000 Credits（2人），第3名7，500 Credits（3人）。","source_name":"X：可灵 Kling AI (@Kling_ai)","origin_url":"https://x.com/Kling_ai/status/2069768362251489747","discovered_at":"2026-06-25T03:03:30.159Z","rank_on_page":227,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+可灵AI（Kling AI）发起"You Vs You"挑战，概念为"你的下一个对手就是你自己"。参与者需发布带可灵水印的AI生成视频，添加话题#youvsyou并@Kling_ai，同时私信提供UID。投稿期2026年6月23日至6月30日（UTC-8），点赞统计截止7月5日，奖励7月6日至10日发放。按跨平台总点赞数排名：第1名获16，000 Credits（1人），第2名11，000 Credits（2人），第3名7，500 Credits（3人）。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

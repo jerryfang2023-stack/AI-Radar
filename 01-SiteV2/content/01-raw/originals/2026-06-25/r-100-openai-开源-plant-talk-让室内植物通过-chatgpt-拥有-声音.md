@@ -1,0 +1,209 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-100
+title: "OpenAI 开源 Plant Talk：让室内植物通过 ChatGPT 拥有\"声音\""
+original_url: "https://www.ithome.com/0/968/028.htm"
+canonical_url: "https://ithome.com/0/968/028.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-24T08:51:20.000Z"
+collected_at: 2026-06-25T03:26:00.764Z
+language: mixed
+full_text_hash: 597b6d3841601f5e
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-25/r-100-openai-开源-plant-talk-让室内植物通过-chatgpt-拥有-声音.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-25/r-100-openai-开源-plant-talk-让室内植物通过-chatgpt-拥有-声音.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: low
+extraction_method: "content-container"
+readability_score: 40
+extractor_diagnostics: {"readability_score":40,"text_length":659,"paragraph_count":7,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 659
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"597b6d3841601f5e","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"OpenAI 开源 Plant Talk：让室内植物通过 ChatGPT 拥有\"声音\"","discovery_summary":"OpenAI 在 GitHub 开源 Plant Talk 项目，通过 Codex Desktop 连接 ChatGPT，让室内植物具备语音能力。用户可与植物语音交流，如询问\"最近怎么样？\"\"需要浇水吗？\"等。系统支持 Arduino、土壤湿度传感器、LM393 光照传感器获取环境数据，还可连接二氧化碳传感器、空气湿度传感器。用户可创建不同植物人格，如高冷仙人掌、话痨绿萝、吐槽多肉。搭建需配备麦克风、摄像头、扬声器的电脑及 OpenAI 账户。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/968/028.htm","discovered_at":"2026-06-25T03:03:30.168Z","rank_on_page":268,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: edaa6fcbf5396a8f
+content_hash: 597b6d3841601f5e
+semantic_hash: 28c9ed82b2b093dd
+duplicate_of: ""
+first_seen_at: "2026-06-24T08:51:20.000Z"
+last_seen_at: 2026-06-25T03:26:00.764Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":true,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":[],"novelty":3,"evidence_strength":3,"case_richness":3,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","OpenAI","GitHub"],"products":["ChatGPT","Codex"],"people":[],"industries":["开发者工具"],"roles":[],"workflows":[],"business_actions":[],"affected_departments":["IT / 安全"],"numbers":["393","6","24"],"quotes":["\nOpenAI 在 GitHub 开源 Plant Talk 项目，通过 Codex Desktop 连接 ChatGPT，让室内植物具备语音能力。用户可与植物语音交流，如询问","Plant Talk","最近过得怎么样？"]}
+evidence_seed: {"company_actions":["OpenAI 在 GitHub 开源 Plant Talk 项目，通过 Codex Desktop 连接 ChatGPT，让室内植物具备语音能力。用户可与植物语音交流，如询问\"最近怎么样？\"\"需要浇水吗？\"等。系统支持 Arduino、土壤湿度传感器、LM393 光照传感器获取环境数据，还可连接二氧化碳传感器、空气湿度传感器。用户可创建不同植物人格，如高冷仙人掌、话痨绿萝、吐槽多肉。搭建需配备麦克风、摄像头、扬声器的电脑及 OpenAI 账户。","IT之家从官方文档了解到，搭建这套系统需要一台安装了 Codex Desktop 的电脑、稳定网络连接，以及 OpenAI 账户。","电脑需要带有麦克风、摄像头和扬声器，当然植物也是必不可少的。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"company_action","text":"OpenAI 在 GitHub 开源 Plant Talk 项目，通过 Codex Desktop 连接 ChatGPT，让室内植物具备语音能力。用户可与植物语音交流，如询问\"最近怎么样？\"\"需要浇水吗？\"等。系统支持 Arduino、土壤湿度传感器、LM393 光照传感器获取环境数据，还可连接二氧化碳传感器、空气湿度传感器。用户可创建不同植物人格，如高冷仙人掌、话痨绿萝、吐槽多肉。搭建需配备麦克风、摄像头、扬声器的电脑及 OpenAI 账户。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"quote","text":"IT之家 6 月 24 日消息，OpenAI 最近在 GitHub 平台公布了“Plant Talk”开源项目，可以让室内的植物“接入”ChatGPT， 并为植物赋予“声音” 。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家从官方文档了解到，搭建这套系统需要一台安装了 Codex Desktop 的电脑、稳定网络连接，以及 OpenAI 账户。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"电脑需要带有麦克风、摄像头和扬声器，当然植物也是必不可少的。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"如果希望获取环境数据，你还可以准备 Arduino、土壤湿度传感器、LM393 光照传感器、跳线和面包板。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"准备工作完成后，你可以打开 Codex Desktop 并输入以下命令： Help me make Plant Talk https://github.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# OpenAI 开源 Plant Talk：让室内植物通过 ChatGPT 拥有"声音"
+
+## clean_text
+
+IT之家 6 月 24 日消息，OpenAI 最近在 GitHub 平台公布了“Plant Talk”开源项目，可以让室内的植物“接入”ChatGPT， 并为植物赋予“声音” 。
+IT之家从官方文档了解到，搭建这套系统需要一台安装了 Codex Desktop 的电脑、稳定网络连接，以及 OpenAI 账户。电脑需要带有麦克风、摄像头和扬声器，当然植物也是必不可少的。如果希望获取环境数据，你还可以准备 Arduino、土壤湿度传感器、LM393 光照传感器、跳线和面包板。
+准备工作完成后，你可以打开 Codex Desktop 并输入以下命令：
+Help me make Plant Talk https://github.com/openai/planttalk 系统会自动帮你完成下载、初始设置，你只需要按照屏幕上的步骤完成整个搭建过程。当配置完成后，Plant Talk 可以变成专属于植物的控制中心，用户可以与植物进行语音交流，向植物问“最近过得怎么样？”“需要浇水吗？”“光照是否充足？”等问题。
+此外，这套系统还能够支持二氧化碳传感器、空气湿度传感器等，用户还可以创建新的植物人格，如高冷仙人掌、话痨绿萝、吐槽多肉等。
+参考：
+openai/planttalk: Give your houseplants a voice with ChatGPT
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 24 日消息，OpenAI 最近在 GitHub 平台公布了“Plant Talk”开源项目，可以让室内的植物“接入”ChatGPT， 并为植物赋予“声音” 。
+IT之家从官方文档了解到，搭建这套系统需要一台安装了 Codex Desktop 的电脑、稳定网络连接，以及 OpenAI 账户。电脑需要带有麦克风、摄像头和扬声器，当然植物也是必不可少的。如果希望获取环境数据，你还可以准备 Arduino、土壤湿度传感器、LM393 光照传感器、跳线和面包板。
+准备工作完成后，你可以打开 Codex Desktop 并输入以下命令：
+Help me make Plant Talk https://github.com/openai/planttalk 系统会自动帮你完成下载、初始设置，你只需要按照屏幕上的步骤完成整个搭建过程。当配置完成后，Plant Talk 可以变成专属于植物的控制中心，用户可以与植物进行语音交流，向植物问“最近过得怎么样？”“需要浇水吗？”“光照是否充足？”等问题。
+此外，这套系统还能够支持二氧化碳传感器、空气湿度传感器等，用户还可以创建新的植物人格，如高冷仙人掌、话痨绿萝、吐槽多肉等。
+参考：
+openai/planttalk: Give your houseplants a voice with ChatGPT
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 40
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: low
+- diagnostics: {"readability_score":40,"text_length":659,"paragraph_count":7,"sentence_count":5,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   OpenAI 在 GitHub 开源 Plant Talk 项目，通过 Codex Desktop 连接 ChatGPT，让室内植物具备语音能力。用户可与植物语音交流，如询问"最近怎么样？""需要浇水吗？"等。系统支持 Arduino、土壤湿度传感器、LM393 光照传感器获取环境数据，还可连接二氧化碳传感器、空气湿度传感器。用户可创建不同植物人格，如高冷仙人掌、话痨绿萝、吐槽多肉。搭建需配备麦克风、摄像头、扬声器的电脑及 OpenAI 账户。
+
+2. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=medium
+   IT之家 6 月 24 日消息，OpenAI 最近在 GitHub 平台公布了“Plant Talk”开源项目，可以让室内的植物“接入”ChatGPT， 并为植物赋予“声音” 。
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   IT之家从官方文档了解到，搭建这套系统需要一台安装了 Codex Desktop 的电脑、稳定网络连接，以及 OpenAI 账户。
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   电脑需要带有麦克风、摄像头和扬声器，当然植物也是必不可少的。
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   如果希望获取环境数据，你还可以准备 Arduino、土壤湿度传感器、LM393 光照传感器、跳线和面包板。
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=medium
+   准备工作完成后，你可以打开 Codex Desktop 并输入以下命令： Help me make Plant Talk https://github.
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI, GitHub
+- products: ChatGPT, Codex
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: 暂无公开信息
+- workflows: 暂无公开信息
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全
+- numbers: 393, 6, 24
+- quotes:
+OpenAI 在 GitHub 开源 Plant Talk 项目，通过 Codex Desktop 连接 ChatGPT，让室内植物具备语音能力。用户可与植物语音交流，如询问 / Plant Talk / 最近过得怎么样？
+
+## evidence_seed
+
+- company_actions: OpenAI 在 GitHub 开源 Plant Talk 项目，通过 Codex Desktop 连接 ChatGPT，让室内植物具备语音能力。用户可与植物语音交流，如询问"最近怎么样？""需要浇水吗？"等。系统支持 Arduino、土壤湿度传感器、LM393 光照传感器获取环境数据，还可连接二氧化碳传感器、空气湿度传感器。用户可创建不同植物人格，如高冷仙人掌、话痨绿萝、吐槽多肉。搭建需配备麦克风、摄像头、扬声器的电脑及 OpenAI 账户。 / IT之家从官方文档了解到，搭建这套系统需要一台安装了 Codex Desktop 的电脑、稳定网络连接，以及 OpenAI 账户。 / 电脑需要带有麦克风、摄像头和扬声器，当然植物也是必不可少的。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals:
+- novelty: 3
+- evidence_strength: 3
+- case_richness: 3
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: true
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"OpenAI 开源 Plant Talk：让室内植物通过 ChatGPT 拥有\"声音\"","discovery_summary":"OpenAI 在 GitHub 开源 Plant Talk 项目，通过 Codex Desktop 连接 ChatGPT，让室内植物具备语音能力。用户可与植物语音交流，如询问\"最近怎么样？\"\"需要浇水吗？\"等。系统支持 Arduino、土壤湿度传感器、LM393 光照传感器获取环境数据，还可连接二氧化碳传感器、空气湿度传感器。用户可创建不同植物人格，如高冷仙人掌、话痨绿萝、吐槽多肉。搭建需配备麦克风、摄像头、扬声器的电脑及 OpenAI 账户。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/968/028.htm","discovered_at":"2026-06-25T03:03:30.168Z","rank_on_page":268,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+OpenAI 在 GitHub 开源 Plant Talk 项目，通过 Codex Desktop 连接 ChatGPT，让室内植物具备语音能力。用户可与植物语音交流，如询问"最近怎么样？""需要浇水吗？"等。系统支持 Arduino、土壤湿度传感器、LM393 光照传感器获取环境数据，还可连接二氧化碳传感器、空气湿度传感器。用户可创建不同植物人格，如高冷仙人掌、话痨绿萝、吐槽多肉。搭建需配备麦克风、摄像头、扬声器的电脑及 OpenAI 账户。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

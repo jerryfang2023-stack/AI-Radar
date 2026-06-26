@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { spawnSync } from "node:child_process";
+import { spawn, spawnSync } from "node:child_process";
 import { runGuanlanMonitorQualityGate } from "./guanlan-monitor-quality-gate.mjs";
 
 const root = process.cwd();
@@ -27,13 +27,9 @@ const config = (() => {
 const diagnosticScoreReference = Number(args.get("pass-score") || config.diagnostic_score_reference || config.pass_score || 85);
 const maxCycles = Math.max(1, Number(args.get("max-cycles") || config.max_retry_cycles || 3));
 const monitorTimeoutMs = Math.max(60_000, Number(args.get("monitor-timeout-ms") || 420_000));
+const sourceRefreshTimeoutMs = Math.min(monitorTimeoutMs, Math.max(60_000, Number(args.get("source-refresh-timeout-ms") || 420_000)));
 const node = process.platform === "win32" ? "node" : process.execPath;
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
-const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
-const sourceArtifactDir = args.get("source-artifact-dir")
-  ? path.resolve(root, args.get("source-artifact-dir"))
-  : path.join(reportsDir, "source-runs", date);
-const sourceArtifactRefreshSources = ["aihot", "keyword", "gdelt", "rss"];
 
 function toNumber(value, fallback) {
   const numeric = Number(value);
@@ -64,6 +60,8 @@ function buildMonitorArgsForCycle(cycle) {
   const hnBase = toNumber(args.get("hn-limit"), 8);
   const fetchTimeout = toNumber(args.get("fetch-timeout-ms"), 20000);
   const snapshotTimeout = toNumber(args.get("snapshot-timeout-ms"), 16000);
+  const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
+  const sourceArtifactDir = args.get("source-artifact-dir");
   const searchLimitStep = toNumber(retryTuning.search_limit_step, 10);
   const searchPathStep = toNumber(retryTuning.search_path_query_limit_step, 1);
   const gdeltStep = toNumber(retryTuning.gdelt_query_limit_step, 1);
@@ -93,67 +91,106 @@ function buildMonitorArgsForCycle(cycle) {
   return monitorArgs;
 }
 
-function buildSourceRefreshArgsForCycle(cycle, source) {
-  return [
-    ...buildMonitorArgsForCycle(cycle).filter(
-      (arg) => arg !== "--use-source-artifacts=true" && !arg.startsWith("--source-artifact-dir=")
-    ),
+function runSourceArtifactRefresh(source, baseArgs, sourceArtifactDir) {
+  const sourceArgs = [
+    "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
+    ...baseArgs,
     `--source-only=${source}`,
     `--source-artifact-dir=${sourceArtifactDir}`,
   ];
-}
 
-function writeFailedSourceArtifact(source, cycle, message) {
-  fs.mkdirSync(sourceArtifactDir, { recursive: true });
-  const artifactPath = path.join(sourceArtifactDir, `${source}-raw-source-candidates.json`);
-  const payload = {
-    date,
-    generated_at: new Date().toISOString(),
-    mode: "business_source_raw",
-    source_id: source,
-    source_label: source,
-    status: "failed",
-    discovered_count: 0,
-    raw_candidate_count: 0,
-    failures: [`retry cycle ${cycle} source refresh failed: ${message}`],
-    items: [],
-  };
-  fs.writeFileSync(artifactPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-}
-
-function refreshSourceArtifactsForCycle(cycle) {
-  if (!useSourceArtifacts || cycle <= 1) {
-    return { status: "not_required", failures: [] };
-  }
-
-  fs.mkdirSync(sourceArtifactDir, { recursive: true });
-  const failures = [];
-  for (const source of sourceArtifactRefreshSources) {
-    const sourceArgs = buildSourceRefreshArgsForCycle(cycle, source);
-    const logPath = path.join(sourceArtifactDir, `${source}-source-run-retry-${cycle}.log`);
-    const run = spawnSync(node, ["agent-workflow/tools/run-guanlan-daily-monitor.mjs", ...sourceArgs], {
+  return new Promise((resolve) => {
+    const child = spawn(node, sourceArgs, {
       cwd: root,
-      encoding: "utf8",
-      maxBuffer: 20 * 1024 * 1024,
-      timeout: monitorTimeoutMs,
-      killSignal: "SIGTERM",
+      windowsHide: true,
       shell: false,
+      stdio: ["ignore", "pipe", "pipe"],
     });
-    const output = [run.stdout || "", run.stderr || (run.error ? String(run.error.message || run.error) : "")]
-      .filter(Boolean)
-      .join("\n");
-    fs.writeFileSync(logPath, output, "utf8");
-    if (run.status !== 0) {
-      const message = String(run.stderr || run.error?.message || "source refresh command failed").trim();
-      failures.push(`${source}: ${message}`);
-      writeFailedSourceArtifact(source, cycle, message);
-    }
+    let stdout = "";
+    let stderr = "";
+    let timedOut = false;
+    let settled = false;
+    const maxOutputLength = 20 * 1024 * 1024;
+
+    const appendOutput = (target, chunk) => {
+      if (target.length >= maxOutputLength) return target;
+      return `${target}${String(chunk)}`.slice(-maxOutputLength);
+    };
+    const finish = (status, errorMessage = "") => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timeout);
+      resolve({
+        source,
+        status: status ?? (timedOut ? 124 : 1),
+        stdout,
+        stderr,
+        timedOut,
+        message: String(stderr || errorMessage || (timedOut ? "source artifact refresh timed out" : "source artifact refresh failed")).trim(),
+      });
+    };
+    const timeout = setTimeout(() => {
+      timedOut = true;
+      child.kill("SIGTERM");
+    }, sourceRefreshTimeoutMs);
+
+    child.stdout?.on("data", (chunk) => {
+      stdout = appendOutput(stdout, chunk);
+    });
+    child.stderr?.on("data", (chunk) => {
+      stderr = appendOutput(stderr, chunk);
+    });
+    child.on("error", (error) => finish(1, error?.message || String(error)));
+    child.on("close", (status) => finish(status));
+  });
+}
+
+async function refreshSourceArtifactsForCycle(cycle, monitorArgs) {
+  const sourceArtifactDir = args.get("source-artifact-dir");
+  if (cycle <= 1 || !sourceArtifactDir) return { refreshed: false, failures: [] };
+
+  fs.mkdirSync(path.resolve(root, sourceArtifactDir), { recursive: true });
+  const baseArgs = monitorArgs.filter(
+    (arg) => !arg.startsWith("--use-source-artifacts") && !arg.startsWith("--source-artifact-dir=")
+  );
+  const sources = ["aihot", "keyword", "gdelt", "rss"];
+  const results = await Promise.all(
+    sources.map((source) => runSourceArtifactRefresh(source, baseArgs, sourceArtifactDir))
+  );
+  const failures = [];
+
+  for (const run of results) {
+    if (run.status === 0) continue;
+
+    const { source } = run;
+    const message = run.message || "source artifact refresh failed";
+    failures.push(`${source}: ${message}`);
+    const failedArtifact = path.join(root, sourceArtifactDir, `${source}-raw-source-candidates.json`);
+    if (fs.existsSync(failedArtifact)) continue;
+    fs.writeFileSync(
+      failedArtifact,
+      `${JSON.stringify(
+        {
+          date,
+          generated_at: new Date().toISOString(),
+          mode: "business_source_raw",
+          source_id: source,
+          source_label: source,
+          status: "failed",
+          discovered_count: 0,
+          source_item_count: 0,
+          raw_candidate_count: 0,
+          failures: [`source artifact refresh failed on retry cycle ${cycle}; ${message}`],
+          items: [],
+        },
+        null,
+        2
+      )}\n`,
+      "utf8"
+    );
   }
 
-  return {
-    status: failures.length ? "partial_failure" : "refreshed",
-    failures,
-  };
+  return { refreshed: true, failures };
 }
 
 function appendAutomationMemory(text) {
@@ -172,14 +209,14 @@ function writeLoopReport(loopResult) {
     .map(
       (cycle) => [
         `### Cycle ${cycle.cycle}`,
-        `- source_artifacts_refresh: ${cycle.sourceArtifactsRefreshStatus || "not_required"}`,
-        `- source_artifacts_refresh_failures: ${(cycle.sourceArtifactsRefreshFailures || []).join("; ") || "none"}`,
         `- monitor_status: ${cycle.monitorStatus}`,
         `- failed_stage: ${cycle.monitorStage}`,
         `- monitor_raw_count: ${cycle.monitorRawCount}`,
         `- quality_status: ${cycle.qualityStatus}`,
         `- quality_score: ${cycle.qualityScore}`,
         `- hard_failed: ${cycle.hardFailed.join(", ") || "none"}`,
+        `- source_artifacts_refreshed: ${cycle.sourceRefresh?.refreshed ? "yes" : "no"}`,
+        `- source_artifact_refresh_failures: ${(cycle.sourceRefresh?.failures || []).join(" | ") || "none"}`,
         `- failed_sources: ${cycle.failedSources || "none"}`,
         `- fallback_used: ${cycle.fallbackUsed || "unknown"}`,
         `- evidence_gaps: ${cycle.evidenceGaps || "unknown"}`,
@@ -217,9 +254,9 @@ function writeLoopReport(loopResult) {
   return { reportPath, latestPath };
 }
 
-function runMonitorCycle(cycle) {
-  const sourceRefresh = refreshSourceArtifactsForCycle(cycle);
+async function runMonitorCycle(cycle) {
   const monitorArgs = buildMonitorArgsForCycle(cycle);
+  const sourceRefresh = await refreshSourceArtifactsForCycle(cycle, monitorArgs);
   const commandArgs = ["agent-workflow/tools/run-guanlan-daily-monitor.mjs", ...monitorArgs];
   const run = spawnSync(node, commandArgs, {
     cwd: root,
@@ -241,12 +278,12 @@ function runMonitorCycle(cycle) {
     stderr: run.stderr || (run.error ? String(run.error.message || run.error) : ""),
     timedOut,
     args: monitorArgs,
-    parsed,
     sourceRefresh,
+    parsed,
   };
 }
 
-function main() {
+async function main() {
   const cycles = [];
   const mergedSkillFeedback = new Set();
   let finalStatus = "failed";
@@ -254,7 +291,7 @@ function main() {
   let finalCycle = maxCycles;
 
   for (let cycle = 1; cycle <= maxCycles; cycle += 1) {
-    const monitorRun = runMonitorCycle(cycle);
+    const monitorRun = await runMonitorCycle(cycle);
     const quality = runGuanlanMonitorQualityGate({
       date,
       configPath,
@@ -279,9 +316,8 @@ function main() {
       hardFailed,
       qualityReport: quality.report_path,
       monitorArgs: monitorRun.args,
-      sourceArtifactsRefreshStatus: monitorRun.sourceRefresh?.status || "not_required",
-      sourceArtifactsRefreshFailures: monitorRun.sourceRefresh?.failures || [],
       monitorFailure: monitorRun.status === 0 ? "" : String(monitorRun.stderr || "monitor command failed").trim(),
+      sourceRefresh: monitorRun.sourceRefresh,
       monitorStage: monitorRun.status === 0 ? "completed" : monitorRun.timedOut ? "monitor_collection_timeout" : "monitor_collection_failed",
       evidenceGaps: quality.metrics?.importance_coverage_gaps || "unknown",
       fallbackUsed: readFallbackUsedFromLog(date),
@@ -359,4 +395,7 @@ function readFallbackUsedFromLog(targetDate) {
   return "unknown";
 }
 
-main();
+main().catch((error) => {
+  console.error(error?.stack || error?.message || String(error));
+  process.exitCode = 1;
+});

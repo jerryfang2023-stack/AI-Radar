@@ -20,7 +20,7 @@ search_path: ""
 search_path_label: ""
 author: ""
 published_at: "2026-06-24T17:07:37.000Z"
-collected_at: 2026-06-25T05:10:40.013Z
+collected_at: 2026-06-25T03:26:00.287Z
 language: mixed
 full_text_hash: 3dc9d8eabeed92a3
 markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-25/r-001-snowflake-ceo-实测-glm-5-2-与-opus-4-7-编程能力接近-成本仅为几分之一.md"
@@ -56,7 +56,7 @@ content_hash: 3dc9d8eabeed92a3
 semantic_hash: 9be5b9ee8364c5ed
 duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
 first_seen_at: "2026-06-24T17:07:37.000Z"
-last_seen_at: 2026-06-25T05:10:40.013Z
+last_seen_at: 2026-06-25T03:26:00.287Z
 update_detected: false
 raw_status: indexed
 usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}

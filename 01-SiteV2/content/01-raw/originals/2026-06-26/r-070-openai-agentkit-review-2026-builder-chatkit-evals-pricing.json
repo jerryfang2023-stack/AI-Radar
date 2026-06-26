@@ -1,0 +1,288 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-070",
+  "title": "OpenAI AgentKit Review (2026): Builder, ChatKit, Evals & Pricing",
+  "original_url": "https://www.toolworthy.ai/tool/openai-agentkit",
+  "canonical_url": "https://toolworthy.ai/tool/openai-agentkit",
+  "source_name": "keyword search / Tavily",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-26T03:32:31.672Z",
+  "language": "mixed",
+  "full_text": "OpenAI AgentKit\nVerified\nBuilds, deploys, and optimizes AI agents with a visual workflow builder, embeddable chat UI, and evaluation tools.\nReviewed by ToolWorthy Editors · updated 1 month ago\nPricing: Paid\nCategories : AI Workflow Generator AI Agent\nGet Started\nWatch updates\nJump to section Overview\nOverview Alternatives Pricing & Plans Pros & Cons FAQ\nFeatured alternatives\nMakersClaw\nMake.com\nAtomic Mail Agentic\nDarkmoon\nn8n\nHappycapy\nPros & Cons\nEditor-reviewed\nPros\nCombines workflow design, embedded chat UI, connector governance, and eval tooling into one official OpenAI stack\nReduces custom build effort for teams shipping chat-based agents inside real products\nEvals and trace grading make it more production-minded than many agent demos\nBuilt directly on OpenAI's Responses API and Agents SDK, which lowers integration friction for existing OpenAI teams\nGuardrails and admin tooling make it more enterprise-credible than prompt-only workflows\nCons\nAgentKit is a bundle, not a single simple product, so scoping and adoption can be confusing\nSome pieces remain beta or limited rollout, especially Agent Builder and Connector Registry\nFinal cost is tied to underlying API usage rather than a predictable standalone subscription\nBest fit is for development teams already committed to OpenAI infrastructure\nEnterprise governance features such as Connector Registry depend on broader admin setup and account eligibility\nJump to section Overview\nOverview Alternatives Pricing & Plans Pros & Cons FAQ\nOverview\nOpenAI AgentKit is OpenAI's bundled toolkit for developers and enterprises building, deploying, and optimizing production agents. Introduced on October 6, 2025, it packages several previously separate needs into one product layer: visual workflow building, embedded chat UI, connector governance, evaluation tooling, and reinforcement fine-tuning enhancements.\nThe key point is that AgentKit is not a single feature. OpenAI positions it as a complete agent-building toolset built on top of the Responses API and Agents SDK. In practical terms, that means teams can move from orchestration and experimentation to in-product chat experiences and performance evaluation without stitching together as much custom frontend, prompt iteration, and connector administration work.\nIf you're comparing AI agent platforms, AgentKit sits closer to an application-development toolkit than to a general chatbot product. It is designed for teams building support agents, internal assistants, onboarding flows, deep research tools, and enterprise workflows where deployment speed and reliability matter more than hobbyist experimentation.\nFor adjacent research, compare AI design tools , AI UI design tools .\nKey Features\nAgent Builder visual workflow canvas — OpenAI describes Agent Builder as a visual canvas for creating and versioning multi-agent workflows. It supports drag-and-drop node composition, preview runs, inline eval configuration, templates, and workflow versioning.\nConnector Registry for enterprise governance — Connector Registry is described by OpenAI as a central place to manage how tools and data connect across products. It reportedly includes prebuilt connectors such as Dropbox, Google Drive, SharePoint, and Microsoft Teams, plus third-party MCPs; availability may vary by account tier and rollout status.\nChatKit for embedded agent experiences — ChatKit is a toolkit for embedding chat-based agent interfaces into apps and websites. OpenAI positions it as a way to avoid rebuilding streaming UIs, thread handling, model-thinking views, and customization from scratch.\nExpanded Evals capabilities — AgentKit launches alongside stronger Evals features including datasets, trace grading, automated prompt optimization, and third-party model support. That makes it more relevant to teams that care about measurable agent quality rather than demo-only behavior.\nGuardrails integration — OpenAI states that developers can enable Guardrails in Agent Builder to mask or flag PII, detect jailbreaks, and apply additional safety controls; specific capabilities and defaults may depend on implementation and SDK usage. Guardrails are also available as open-source libraries for Python and JavaScript.\nReinforcement fine-tuning improvements — OpenAI pairs AgentKit with reinforcement fine-tuning features such as custom tool calls and custom graders, which matter for teams pushing agent performance beyond prompt-only optimization.\nPricing & Plans\nAgentKit does not have a simple standalone subscription fee. According to OpenAI's launch materials, these capabilities are included within standard API model pricing; however, exact availability and cost depend on model usage and account eligibility. Please verify current pricing on the official OpenAI pricing page.\nComponent\nAvailability\nPricing note\nChatKit\nGenerally available\nIncluded with standard API model pricing\nNew Evals capabilities\nGenerally available\nIncluded with standard API model pricing\nAgent Builder\nBeta\nIncluded with standard API model pricing\nConnector Registry\nBeta rollout (limited availability) to some API, ChatGPT Enterprise, and Edu customers\nRequires Global Admin Console and eligible account setup; confirm eligibility requirements in official documentation.\nThat means the practical cost of using AgentKit depends on the models, API traffic, and deployment pattern behind your agent rather than on a separate AgentKit seat fee; actual costs should be validated against current OpenAI API pricing and usage limits. This is important for buyers: AgentKit is a packaging and tooling layer on top of OpenAI's API platform, not a standalone fixed-price SaaS workspace.\nBest For\nProduct and platform teams building customer support, research, onboarding, or internal knowledge agents\nDevelopers who want OpenAI-native workflow design and embedded chat without assembling every layer manually\nEnterprises that need agent evals, connector control, and safer deployment patterns\nTeams already using the Responses API and Agents SDK who want to move faster toward production\nBuyers comparing agent-development stacks rather than one-off AI chatbot widgets\nFAQ\nWhat is included in OpenAI AgentKit?\nOpenAI AgentKit includes Agent Builder, Connector Registry, ChatKit, expanded Evals capabilities, and related reinforcement fine-tuning improvements. It is positioned as a complete toolkit for building, deploying, and optimizing agents.\nIs AgentKit a separate paid product?\nNot in the usual SaaS sense. OpenAI says these tools are included with standard API model pricing. So you are primarily paying for the underlying model and API usage rather than for a standalone AgentKit license.\nWhat is Agent Builder?\nAgent Builder is OpenAI's visual workflow canvas for composing and versioning multi-agent workflows. It supports drag-and-drop logic, preview runs, templates, and inline evaluation configuration.\nWhat is ChatKit?\nChatKit is OpenAI's toolkit for embedding customizable chat-based agent experiences into apps or websites. It is meant to handle the UI plumbing that teams would otherwise need to build themselves.\nWho can use Connector Registry?\nAt launch, Connector Registry is rolling out in beta to some API, ChatGPT Enterprise, and Edu customers with a Global Admin Console. It is not positioned as universally available to every developer account yet.\nDoes AgentKit help with agent evaluation?\nYes. OpenAI explicitly ties AgentKit to stronger Evals capabilities, including datasets, trace grading, automated prompt optimization, and third-party model support.\nIs AgentKit good for small teams?\nIt can be, especially if a small team is already building on OpenAI APIs and wants to reduce custom frontend and evaluation work. But the bundle is most compelling when you are shipping production agents rather than experimenting casually.\nHow is AgentKit different from the Agents SDK?\nThe Agents SDK provides developer primitives. AgentKit adds a broader product layer around those primitives, including visual workflow building, embedded chat UI, connector governance, and evaluation tooling.\nTop alternatives\nDify is an open-source platform for developing generative AI applications, offering tools for workflow orchestration, prompt design, and integration.",
+  "clean_text": "OpenAI AgentKit\nVerified\nBuilds, deploys, and optimizes AI agents with a visual workflow builder, embeddable chat UI, and evaluation tools.\nReviewed by ToolWorthy Editors · updated 1 month ago\nPricing: Paid\nCategories : AI Workflow Generator AI Agent\nGet Started\nWatch updates\nJump to section Overview\nOverview Alternatives Pricing & Plans Pros & Cons FAQ\nFeatured alternatives\nMakersClaw\nMake.com\nAtomic Mail Agentic\nDarkmoon\nn8n\nHappycapy\nPros & Cons\nEditor-reviewed\nPros\nCombines workflow design, embedded chat UI, connector governance, and eval tooling into one official OpenAI stack\nReduces custom build effort for teams shipping chat-based agents inside real products\nEvals and trace grading make it more production-minded than many agent demos\nBuilt directly on OpenAI's Responses API and Agents SDK, which lowers integration friction for existing OpenAI teams\nGuardrails and admin tooling make it more enterprise-credible than prompt-only workflows\nCons\nAgentKit is a bundle, not a single simple product, so scoping and adoption can be confusing\nSome pieces remain beta or limited rollout, especially Agent Builder and Connector Registry\nFinal cost is tied to underlying API usage rather than a predictable standalone subscription\nBest fit is for development teams already committed to OpenAI infrastructure\nEnterprise governance features such as Connector Registry depend on broader admin setup and account eligibility\nJump to section Overview\nOverview Alternatives Pricing & Plans Pros & Cons FAQ\nOverview\nOpenAI AgentKit is OpenAI's bundled toolkit for developers and enterprises building, deploying, and optimizing production agents. Introduced on October 6, 2025, it packages several previously separate needs into one product layer: visual workflow building, embedded chat UI, connector governance, evaluation tooling, and reinforcement fine-tuning enhancements.\nThe key point is that AgentKit is not a single feature. OpenAI positions it as a complete agent-building toolset built on top of the Responses API and Agents SDK. In practical terms, that means teams can move from orchestration and experimentation to in-product chat experiences and performance evaluation without stitching together as much custom frontend, prompt iteration, and connector administration work.\nIf you're comparing AI agent platforms, AgentKit sits closer to an application-development toolkit than to a general chatbot product. It is designed for teams building support agents, internal assistants, onboarding flows, deep research tools, and enterprise workflows where deployment speed and reliability matter more than hobbyist experimentation.\nFor adjacent research, compare AI design tools , AI UI design tools .\nKey Features\nAgent Builder visual workflow canvas — OpenAI describes Agent Builder as a visual canvas for creating and versioning multi-agent workflows. It supports drag-and-drop node composition, preview runs, inline eval configuration, templates, and workflow versioning.\nConnector Registry for enterprise governance — Connector Registry is described by OpenAI as a central place to manage how tools and data connect across products. It reportedly includes prebuilt connectors such as Dropbox, Google Drive, SharePoint, and Microsoft Teams, plus third-party MCPs; availability may vary by account tier and rollout status.\nChatKit for embedded agent experiences — ChatKit is a toolkit for embedding chat-based agent interfaces into apps and websites. OpenAI positions it as a way to avoid rebuilding streaming UIs, thread handling, model-thinking views, and customization from scratch.\nExpanded Evals capabilities — AgentKit launches alongside stronger Evals features including datasets, trace grading, automated prompt optimization, and third-party model support. That makes it more relevant to teams that care about measurable agent quality rather than demo-only behavior.\nGuardrails integration — OpenAI states that developers can enable Guardrails in Agent Builder to mask or flag PII, detect jailbreaks, and apply additional safety controls; specific capabilities and defaults may depend on implementation and SDK usage. Guardrails are also available as open-source libraries for Python and JavaScript.\nReinforcement fine-tuning improvements — OpenAI pairs AgentKit with reinforcement fine-tuning features such as custom tool calls and custom graders, which matter for teams pushing agent performance beyond prompt-only optimization.\nPricing & Plans\nAgentKit does not have a simple standalone subscription fee. According to OpenAI's launch materials, these capabilities are included within standard API model pricing; however, exact availability and cost depend on model usage and account eligibility. Please verify current pricing on the official OpenAI pricing page.\nComponent\nAvailability\nPricing note\nChatKit\nGenerally available\nIncluded with standard API model pricing\nNew Evals capabilities\nGenerally available\nIncluded with standard API model pricing\nAgent Builder\nBeta\nIncluded with standard API model pricing\nConnector Registry\nBeta rollout (limited availability) to some API, ChatGPT Enterprise, and Edu customers\nRequires Global Admin Console and eligible account setup; confirm eligibility requirements in official documentation.\nThat means the practical cost of using AgentKit depends on the models, API traffic, and deployment pattern behind your agent rather than on a separate AgentKit seat fee; actual costs should be validated against current OpenAI API pricing and usage limits. This is important for buyers: AgentKit is a packaging and tooling layer on top of OpenAI's API platform, not a standalone fixed-price SaaS workspace.\nBest For\nProduct and platform teams building customer support, research, onboarding, or internal knowledge agents\nDevelopers who want OpenAI-native workflow design and embedded chat without assembling every layer manually\nEnterprises that need agent evals, connector control, and safer deployment patterns\nTeams already using the Responses API and Agents SDK who want to move faster toward production\nBuyers comparing agent-development stacks rather than one-off AI chatbot widgets\nFAQ\nWhat is included in OpenAI AgentKit?\nOpenAI AgentKit includes Agent Builder, Connector Registry, ChatKit, expanded Evals capabilities, and related reinforcement fine-tuning improvements. It is positioned as a complete toolkit for building, deploying, and optimizing agents.\nIs AgentKit a separate paid product?\nNot in the usual SaaS sense. OpenAI says these tools are included with standard API model pricing. So you are primarily paying for the underlying model and API usage rather than for a standalone AgentKit license.\nWhat is Agent Builder?\nAgent Builder is OpenAI's visual workflow canvas for composing and versioning multi-agent workflows. It supports drag-and-drop logic, preview runs, templates, and inline evaluation configuration.\nWhat is ChatKit?\nChatKit is OpenAI's toolkit for embedding customizable chat-based agent experiences into apps or websites. It is meant to handle the UI plumbing that teams would otherwise need to build themselves.\nWho can use Connector Registry?\nAt launch, Connector Registry is rolling out in beta to some API, ChatGPT Enterprise, and Edu customers with a Global Admin Console. It is not positioned as universally available to every developer account yet.\nDoes AgentKit help with agent evaluation?\nYes. OpenAI explicitly ties AgentKit to stronger Evals capabilities, including datasets, trace grading, automated prompt optimization, and third-party model support.\nIs AgentKit good for small teams?\nIt can be, especially if a small team is already building on OpenAI APIs and wants to reduce custom frontend and evaluation work. But the bundle is most compelling when you are shipping production agents rather than experimenting casually.\nHow is AgentKit different from the Agents SDK?\nThe Agents SDK provides developer primitives. AgentKit adds a broader product layer around those primitives, including visual workflow building, embedded chat UI, connector governance, and evaluation tooling.\nTop alternatives\nDify is an open-source platform for developing generative AI applications, offering tools for workflow orchestration, prompt design, and integration.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-26/r-070-openai-agentkit-review-2026-builder-chatkit-evals-pricing.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-26/r-070-openai-agentkit-review-2026-builder-chatkit-evals-pricing.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 8254,
+    "paragraph_count": 57,
+    "sentence_count": 52,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 8254,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "37547f11a4f03773",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "aee851a405e30caf",
+  "content_hash": "37547f11a4f03773",
+  "full_text_hash": "37547f11a4f03773",
+  "semantic_hash": "71c1e1132d279809",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-26T03:32:31.672Z",
+  "last_seen_at": "2026-06-26T03:32:31.672Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "workflow_change",
+      "text": "Title: OpenAI AgentKit Review (2026): Builder, ChatKit, Evals & Pricing # OpenAI AgentKit. Builds, deploys, and optimizes AI agents with a visual workflow builder, embeddable chat UI, and evaluation tools. OpenAI AgentKit page showing builder, connectors, and chat toolkit features. ### Pros & Cons. * Combines workflow design, embedded chat UI, connector governance, and eval tooling into one official OpenAI stack. * Built directly on OpenAI's Responses API and Agents SDK, which lowers integration friction for existi",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "OpenAI AgentKit Verified Builds, deploys, and optimizes AI agents with a visual workflow builder, embeddable chat UI, and evaluation tools.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Reviewed by ToolWorthy Editors · updated 1 month ago Pricing: Paid Categories : AI Workflow Generator AI Agent Get Started Watch updates Jump to section Overview Overview Alternatives Pricing & Plans Pros & Cons FAQ Featured alternatives MakersClaw Make.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "com Atomic Mail Agentic Darkmoon n8n Happycapy Pros & Cons Editor-reviewed Pros Combines workflow design, embedded chat UI, connector governance, and eval tooling into one official OpenAI stack Reduces custom build effort for teams shipping chat-based agents inside real products Evals and trace grading make it more production-minded than many agent demos Built directly on OpenAI's Responses API and Agents SDK, which lowers integration friction for existing OpenAI teams Guardrails and admin tooling make it more ente",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Introduced on October 6, 2025, it packages several previously separate needs into one product layer: visual workflow building, embedded chat UI, connector governance, evaluation tooling, and reinforcement fine-tuning enhancements.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The key point is that AgentKit is not a single feature.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Tavily",
+      "OpenAI",
+      "Google",
+      "Microsoft"
+    ],
+    "products": [
+      "agents",
+      "Agents",
+      "agent",
+      "Agent",
+      "ChatGPT"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2026",
+      "6",
+      "2025",
+      "0.662",
+      "1 m",
+      "8"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "The key point is that AgentKit is not a single feature."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "Title: OpenAI AgentKit Review (2026): Builder, ChatKit, Evals & Pricing # OpenAI AgentKit. Builds, deploys, and optimizes AI agents with a visual workflow builder, embeddable chat UI, and evaluation tools. OpenAI AgentKit page showing builder, connectors, and chat toolkit features. ### Pros & Cons. * Combines workflow design, embedded chat UI, connector governance, and eval tooling into one official OpenAI stack. * Built directly on OpenAI's Responses API and Agents SDK, which lowers integration friction for existi",
+      "OpenAI AgentKit Verified Builds, deploys, and optimizes AI agents with a visual workflow builder, embeddable chat UI, and evaluation tools.",
+      "Reviewed by ToolWorthy Editors · updated 1 month ago Pricing: Paid Categories : AI Workflow Generator AI Agent Get Started Watch updates Jump to section Overview Overview Alternatives Pricing & Plans Pros & Cons FAQ Featured alternatives MakersClaw Make."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "candidate",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# OpenAI AgentKit Review (2026): Builder, ChatKit, Evals & Pricing\n\n- raw_id: R-070\n- original_url: https://www.toolworthy.ai/tool/openai-agentkit\n- source_name: keyword search / Tavily\n- collected_at: 2026-06-26T03:32:31.672Z\n\n## clean_text\n\nOpenAI AgentKit\nVerified\nBuilds, deploys, and optimizes AI agents with a visual workflow builder, embeddable chat UI, and evaluation tools.\nReviewed by ToolWorthy Editors · updated 1 month ago\nPricing: Paid\nCategories : AI Workflow Generator AI Agent\nGet Started\nWatch updates\nJump to section Overview\nOverview Alternatives Pricing & Plans Pros & Cons FAQ\nFeatured alternatives\nMakersClaw\nMake.com\nAtomic Mail Agentic\nDarkmoon\nn8n\nHappycapy\nPros & Cons\nEditor-reviewed\nPros\nCombines workflow design, embedded chat UI, connector governance, and eval tooling into one official OpenAI stack\nReduces custom build effort for teams shipping chat-based agents inside real products\nEvals and trace grading make it more production-minded than many agent demos\nBuilt directly on OpenAI's Responses API and Agents SDK, which lowers integration friction for existing OpenAI teams\nGuardrails and admin tooling make it more enterprise-credible than prompt-only workflows\nCons\nAgentKit is a bundle, not a single simple product, so scoping and adoption can be confusing\nSome pieces remain beta or limited rollout, especially Agent Builder and Connector Registry\nFinal cost is tied to underlying API usage rather than a predictable standalone subscription\nBest fit is for development teams already committed to OpenAI infrastructure\nEnterprise governance features such as Connector Registry depend on broader admin setup and account eligibility\nJump to section Overview\nOverview Alternatives Pricing & Plans Pros & Cons FAQ\nOverview\nOpenAI AgentKit is OpenAI's bundled toolkit for developers and enterprises building, deploying, and optimizing production agents. Introduced on October 6, 2025, it packages several previously separate needs into one product layer: visual workflow building, embedded chat UI, connector governance, evaluation tooling, and reinforcement fine-tuning enhancements.\nThe key point is that AgentKit is not a single feature. OpenAI positions it as a complete agent-building toolset built on top of the Responses API and Agents SDK. In practical terms, that means teams can move from orchestration and experimentation to in-product chat experiences and performance evaluation without stitching together as much custom frontend, prompt iteration, and connector administration work.\nIf you're comparing AI agent platforms, AgentKit sits closer to an application-development toolkit than to a general chatbot product. It is designed for teams building support agents, internal assistants, onboarding flows, deep research tools, and enterprise workflows where deployment speed and reliability matter more than hobbyist experimentation.\nFor adjacent research, compare AI design tools , AI UI design tools .\nKey Features\nAgent Builder visual workflow canvas — OpenAI describes Agent Builder as a visual canvas for creating and versioning multi-agent workflows. It supports drag-and-drop node composition, preview runs, inline eval configuration, templates, and workflow versioning.\nConnector Registry for enterprise governance — Connector Registry is described by OpenAI as a central place to manage how tools and data connect across products. It reportedly includes prebuilt connectors such as Dropbox, Google Drive, SharePoint, and Microsoft Teams, plus third-party MCPs; availability may vary by account tier and rollout status.\nChatKit for embedded agent experiences — ChatKit is a toolkit for embedding chat-based agent interfaces into apps and websites. OpenAI positions it as a way to avoid rebuilding streaming UIs, thread handling, model-thinking views, and customization from scratch.\nExpanded Evals capabilities — AgentKit launches alongside stronger Evals features including datasets, trace grading, automated prompt optimization, and third-party model support. That makes it more relevant to teams that care about measurable agent quality rather than demo-only behavior.\nGuardrails integration — OpenAI states that developers can enable Guardrails in Agent Builder to mask or flag PII, detect jailbreaks, and apply additional safety controls; specific capabilities and defaults may depend on implementation and SDK usage. Guardrails are also available as open-source libraries for Python and JavaScript.\nReinforcement fine-tuning improvements — OpenAI pairs AgentKit with reinforcement fine-tuning features such as custom tool calls and custom graders, which matter for teams pushing agent performance beyond prompt-only optimization.\nPricing & Plans\nAgentKit does not have a simple standalone subscription fee. According to OpenAI's launch materials, these capabilities are included within standard API model pricing; however, exact availability and cost depend on model usage and account eligibility. Please verify current pricing on the official OpenAI pricing page.\nComponent\nAvailability\nPricing note\nChatKit\nGenerally available\nIncluded with standard API model pricing\nNew Evals capabilities\nGenerally available\nIncluded with standard API model pricing\nAgent Builder\nBeta\nIncluded with standard API model pricing\nConnector Registry\nBeta rollout (limited availability) to some API, ChatGPT Enterprise, and Edu customers\nRequires Global Admin Console and eligible account setup; confirm eligibility requirements in official documentation.\nThat means the practical cost of using AgentKit depends on the models, API traffic, and deployment pattern behind your agent rather than on a separate AgentKit seat fee; actual costs should be validated against current OpenAI API pricing and usage limits. This is important for buyers: AgentKit is a packaging and tooling layer on top of OpenAI's API platform, not a standalone fixed-price SaaS workspace.\nBest For\nProduct and platform teams building customer support, research, onboarding, or internal knowledge agents\nDevelopers who want OpenAI-native workflow design and embedded chat without assembling every layer manually\nEnterprises that need agent evals, connector control, and safer deployment patterns\nTeams already using the Responses API and Agents SDK who want to move faster toward production\nBuyers comparing agent-development stacks rather than one-off AI chatbot widgets\nFAQ\nWhat is included in OpenAI AgentKit?\nOpenAI AgentKit includes Agent Builder, Connector Registry, ChatKit, expanded Evals capabilities, and related reinforcement fine-tuning improvements. It is positioned as a complete toolkit for building, deploying, and optimizing agents.\nIs AgentKit a separate paid product?\nNot in the usual SaaS sense. OpenAI says these tools are included with standard API model pricing. So you are primarily paying for the underlying model and API usage rather than for a standalone AgentKit license.\nWhat is Agent Builder?\nAgent Builder is OpenAI's visual workflow canvas for composing and versioning multi-agent workflows. It supports drag-and-drop logic, preview runs, templates, and inline evaluation configuration.\nWhat is ChatKit?\nChatKit is OpenAI's toolkit for embedding customizable chat-based agent experiences into apps or websites. It is meant to handle the UI plumbing that teams would otherwise need to build themselves.\nWho can use Connector Registry?\nAt launch, Connector Registry is rolling out in beta to some API, ChatGPT Enterprise, and Edu customers with a Global Admin Console. It is not positioned as universally available to every developer account yet.\nDoes AgentKit help with agent evaluation?\nYes. OpenAI explicitly ties AgentKit to stronger Evals capabilities, including datasets, trace grading, automated prompt optimization, and third-party model support.\nIs AgentKit good for small teams?\nIt can be, especially if a small team is already building on OpenAI APIs and wants to reduce custom frontend and evaluation work. But the bundle is most compelling when you are shipping production agents rather than experimenting casually.\nHow is AgentKit different from the Agents SDK?\nThe Agents SDK provides developer primitives. AgentKit adds a broader product layer around those primitives, including visual workflow building, embedded chat UI, connector governance, and evaluation tooling.\nTop alternatives\nDify is an open-source platform for developing generative AI applications, offering tools for workflow orchestration, prompt design, and integration.\n\n## full_text\n\nOpenAI AgentKit\nVerified\nBuilds, deploys, and optimizes AI agents with a visual workflow builder, embeddable chat UI, and evaluation tools.\nReviewed by ToolWorthy Editors · updated 1 month ago\nPricing: Paid\nCategories : AI Workflow Generator AI Agent\nGet Started\nWatch updates\nJump to section Overview\nOverview Alternatives Pricing & Plans Pros & Cons FAQ\nFeatured alternatives\nMakersClaw\nMake.com\nAtomic Mail Agentic\nDarkmoon\nn8n\nHappycapy\nPros & Cons\nEditor-reviewed\nPros\nCombines workflow design, embedded chat UI, connector governance, and eval tooling into one official OpenAI stack\nReduces custom build effort for teams shipping chat-based agents inside real products\nEvals and trace grading make it more production-minded than many agent demos\nBuilt directly on OpenAI's Responses API and Agents SDK, which lowers integration friction for existing OpenAI teams\nGuardrails and admin tooling make it more enterprise-credible than prompt-only workflows\nCons\nAgentKit is a bundle, not a single simple product, so scoping and adoption can be confusing\nSome pieces remain beta or limited rollout, especially Agent Builder and Connector Registry\nFinal cost is tied to underlying API usage rather than a predictable standalone subscription\nBest fit is for development teams already committed to OpenAI infrastructure\nEnterprise governance features such as Connector Registry depend on broader admin setup and account eligibility\nJump to section Overview\nOverview Alternatives Pricing & Plans Pros & Cons FAQ\nOverview\nOpenAI AgentKit is OpenAI's bundled toolkit for developers and enterprises building, deploying, and optimizing production agents. Introduced on October 6, 2025, it packages several previously separate needs into one product layer: visual workflow building, embedded chat UI, connector governance, evaluation tooling, and reinforcement fine-tuning enhancements.\nThe key point is that AgentKit is not a single feature. OpenAI positions it as a complete agent-building toolset built on top of the Responses API and Agents SDK. In practical terms, that means teams can move from orchestration and experimentation to in-product chat experiences and performance evaluation without stitching together as much custom frontend, prompt iteration, and connector administration work.\nIf you're comparing AI agent platforms, AgentKit sits closer to an application-development toolkit than to a general chatbot product. It is designed for teams building support agents, internal assistants, onboarding flows, deep research tools, and enterprise workflows where deployment speed and reliability matter more than hobbyist experimentation.\nFor adjacent research, compare AI design tools , AI UI design tools .\nKey Features\nAgent Builder visual workflow canvas — OpenAI describes Agent Builder as a visual canvas for creating and versioning multi-agent workflows. It supports drag-and-drop node composition, preview runs, inline eval configuration, templates, and workflow versioning.\nConnector Registry for enterprise governance — Connector Registry is described by OpenAI as a central place to manage how tools and data connect across products. It reportedly includes prebuilt connectors such as Dropbox, Google Drive, SharePoint, and Microsoft Teams, plus third-party MCPs; availability may vary by account tier and rollout status.\nChatKit for embedded agent experiences — ChatKit is a toolkit for embedding chat-based agent interfaces into apps and websites. OpenAI positions it as a way to avoid rebuilding streaming UIs, thread handling, model-thinking views, and customization from scratch.\nExpanded Evals capabilities — AgentKit launches alongside stronger Evals features including datasets, trace grading, automated prompt optimization, and third-party model support. That makes it more relevant to teams that care about measurable agent quality rather than demo-only behavior.\nGuardrails integration — OpenAI states that developers can enable Guardrails in Agent Builder to mask or flag PII, detect jailbreaks, and apply additional safety controls; specific capabilities and defaults may depend on implementation and SDK usage. Guardrails are also available as open-source libraries for Python and JavaScript.\nReinforcement fine-tuning improvements — OpenAI pairs AgentKit with reinforcement fine-tuning features such as custom tool calls and custom graders, which matter for teams pushing agent performance beyond prompt-only optimization.\nPricing & Plans\nAgentKit does not have a simple standalone subscription fee. According to OpenAI's launch materials, these capabilities are included within standard API model pricing; however, exact availability and cost depend on model usage and account eligibility. Please verify current pricing on the official OpenAI pricing page.\nComponent\nAvailability\nPricing note\nChatKit\nGenerally available\nIncluded with standard API model pricing\nNew Evals capabilities\nGenerally available\nIncluded with standard API model pricing\nAgent Builder\nBeta\nIncluded with standard API model pricing\nConnector Registry\nBeta rollout (limited availability) to some API, ChatGPT Enterprise, and Edu customers\nRequires Global Admin Console and eligible account setup; confirm eligibility requirements in official documentation.\nThat means the practical cost of using AgentKit depends on the models, API traffic, and deployment pattern behind your agent rather than on a separate AgentKit seat fee; actual costs should be validated against current OpenAI API pricing and usage limits. This is important for buyers: AgentKit is a packaging and tooling layer on top of OpenAI's API platform, not a standalone fixed-price SaaS workspace.\nBest For\nProduct and platform teams building customer support, research, onboarding, or internal knowledge agents\nDevelopers who want OpenAI-native workflow design and embedded chat without assembling every layer manually\nEnterprises that need agent evals, connector control, and safer deployment patterns\nTeams already using the Responses API and Agents SDK who want to move faster toward production\nBuyers comparing agent-development stacks rather than one-off AI chatbot widgets\nFAQ\nWhat is included in OpenAI AgentKit?\nOpenAI AgentKit includes Agent Builder, Connector Registry, ChatKit, expanded Evals capabilities, and related reinforcement fine-tuning improvements. It is positioned as a complete toolkit for building, deploying, and optimizing agents.\nIs AgentKit a separate paid product?\nNot in the usual SaaS sense. OpenAI says these tools are included with standard API model pricing. So you are primarily paying for the underlying model and API usage rather than for a standalone AgentKit license.\nWhat is Agent Builder?\nAgent Builder is OpenAI's visual workflow canvas for composing and versioning multi-agent workflows. It supports drag-and-drop logic, preview runs, templates, and inline evaluation configuration.\nWhat is ChatKit?\nChatKit is OpenAI's toolkit for embedding customizable chat-based agent experiences into apps or websites. It is meant to handle the UI plumbing that teams would otherwise need to build themselves.\nWho can use Connector Registry?\nAt launch, Connector Registry is rolling out in beta to some API, ChatGPT Enterprise, and Edu customers with a Global Admin Console. It is not positioned as universally available to every developer account yet.\nDoes AgentKit help with agent evaluation?\nYes. OpenAI explicitly ties AgentKit to stronger Evals capabilities, including datasets, trace grading, automated prompt optimization, and third-party model support.\nIs AgentKit good for small teams?\nIt can be, especially if a small team is already building on OpenAI APIs and wants to reduce custom frontend and evaluation work. But the bundle is most compelling when you are shipping production agents rather than experimenting casually.\nHow is AgentKit different from the Agents SDK?\nThe Agents SDK provides developer primitives. AgentKit adds a broader product layer around those primitives, including visual workflow building, embedded chat UI, connector governance, and evaluation tooling.\nTop alternatives\nDify is an open-source platform for developing generative AI applications, offering tools for workflow orchestration, prompt design, and integration.\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [workflow_change / daily_observation, heatmap, change, case, trend / high] Title: OpenAI AgentKit Review (2026): Builder, ChatKit, Evals & Pricing # OpenAI AgentKit. Builds, deploys, and optimizes AI agents with a visual workflow builder, embeddable chat UI, and evaluation tools. OpenAI AgentKit page showing builder, connectors, and chat toolkit features. ### Pros & Cons. * Combines workflow design, embedded chat UI, connector governance, and eval tooling into one official OpenAI stack. * Built directly on OpenAI's Responses API and Agents SDK, which lowers integration friction for existi\n2. [workflow_change / daily_observation, heatmap, change, case, trend / high] OpenAI AgentKit Verified Builds, deploys, and optimizes AI agents with a visual workflow builder, embeddable chat UI, and evaluation tools.\n3. [workflow_change / daily_observation, heatmap, change, case, trend / high] Reviewed by ToolWorthy Editors · updated 1 month ago Pricing: Paid Categories : AI Workflow Generator AI Agent Get Started Watch updates Jump to section Overview Overview Alternatives Pricing & Plans Pros & Cons FAQ Featured alternatives MakersClaw Make.\n4. [workflow_change / daily_observation, heatmap, change, case, trend / high] com Atomic Mail Agentic Darkmoon n8n Happycapy Pros & Cons Editor-reviewed Pros Combines workflow design, embedded chat UI, connector governance, and eval tooling into one official OpenAI stack Reduces custom build effort for teams shipping chat-based agents inside real products Evals and trace grading make it more production-minded than many agent demos Built directly on OpenAI's Responses API and Agents SDK, which lowers integration friction for existing OpenAI teams Guardrails and admin tooling make it more ente\n5. [workflow_change / daily_observation, heatmap, change, case, trend / high] Introduced on October 6, 2025, it packages several previously separate needs into one product layer: visual workflow building, embedded chat UI, connector governance, evaluation tooling, and reinforcement fine-tuning enhancements.\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] The key point is that AgentKit is not a single feature.\n"
+}

@@ -1,150 +1,143 @@
-# Quality Gates Report
+﻿# Quality Gates Report
 
-生成时间：2026/6/26 12:56:49
+鐢熸垚鏃堕棿锛?026/6/26 11:22:31
 
-## 结论
+## 缁撹
 
-- 模式：syntax
-- 日期参数：2026-06-26
-- 状态：passed
-- 检查项：18
-- 失败项：0
+- 妯″紡锛歴yntax
+- 鏃ユ湡鍙傛暟锛?026-06-26
+- 鐘舵€侊細passed
+- 妫€鏌ラ」锛?8
+- 澶辫触椤癸細0
 
-## 检查明细
-
+## 妫€鏌ユ槑缁?
 ### 1. v2 frontend app syntax
 
-- 命令：`node --check 01-SiteV2/site/assets/app.js`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check 01-SiteV2/site/assets/app.js`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 2. v2 dev-server syntax
 
-- 命令：`node --check 01-SiteV2/site/dev-server.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check 01-SiteV2/site/dev-server.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 3. run-quality-gates syntax
 
-- 命令：`node --check agent-workflow/tools/run-quality-gates.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/run-quality-gates.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 4. v2-source-probe syntax
 
-- 命令：`node --check agent-workflow/tools/v2-source-probe.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/v2-source-probe.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 5. v2-source-quality-gate syntax
 
-- 命令：`node --check agent-workflow/tools/v2-source-quality-gate.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/v2-source-quality-gate.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 6. guanlan monitor quality gate syntax
 
-- 命令：`node --check agent-workflow/tools/guanlan-monitor-quality-gate.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/guanlan-monitor-quality-gate.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 7. guanlan daily monitor syntax
 
-- 命令：`node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 8. guanlan daily monitor with qc syntax
 
-- 命令：`node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 9. writer-style-gate syntax
 
-- 命令：`node --check agent-workflow/tools/writer-style-gate.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/writer-style-gate.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 10. v2-typography-gate syntax
 
-- 命令：`node --check agent-workflow/tools/v2-typography-gate.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/v2-typography-gate.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 11. frontstage regression gate syntax
 
-- 命令：`node --check agent-workflow/tools/frontstage-regression-gate.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/frontstage-regression-gate.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 12. v2-raw-evidence-gate syntax
 
-- 命令：`node --check agent-workflow/tools/v2-raw-evidence-gate.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/v2-raw-evidence-gate.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 13. tag quality gate syntax
 
-- 命令：`node --check agent-workflow/tools/check-tags.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/check-tags.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 14. daily production chain gate syntax
 
-- 命令：`node --check agent-workflow/tools/assert-daily-production-chain.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/assert-daily-production-chain.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 15. pool-to-card dedupe gate syntax
 
-- 命令：`node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/assert-pool-to-card-dedupe.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 16. follow-builders data gate syntax
 
-- 命令：`node --check agent-workflow/tools/assert-follow-builders-data.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/assert-follow-builders-data.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 17. trend candidate decision syntax
 
-- 命令：`node --check agent-workflow/tools/run-trend-candidate-decision.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/run-trend-candidate-decision.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 ### 18. automation readiness report syntax
 
-- 命令：`node --check agent-workflow/tools/write-automation-readiness-report.mjs`
-- 状态：passed (0)
-- stdout：skipped: child_process spawn blocked (EPERM) in this environment
-- stderr：-
+- 鍛戒护锛歚node --check agent-workflow/tools/write-automation-readiness-report.mjs`
+- 鐘舵€侊細passed (0)
+- stdout锛歴kipped: child_process spawn blocked (EPERM) in this environment
+- stderr锛?
 
 
-## 说明
+## 璇存槑
 
-- 本脚本是 `quality-gates.md` 的统一入口。
-- SITE-V3.3.8.3 阶段默认检查 `01-SiteV2/site/` 与当前 `agent-workflow/tools/` 脚本。
-- `all` 会运行当前可用的内容、前台回归和 tag 质量门；需要指定日期时使用 `--date=YYYY-MM-DD`。
-- `style` 会检查三个 writer 的文章产物是否出现禁词、抽象名词和高频重复句式。
-- `regression` 会检查前台是否出现旧版本口径、已退休组件、旧模块文案、合成 fallback 内容、过期前台日期、过期缓存参数或趋势泛关联。
-- `automation` 检查 SITE-V3.3.8.3 Business Signals / Intelligence Map / Weekly Report / First-Line Viewpoints / Community Intelligence / Dashboard 生产线相关脚本语法。
-- 未覆盖的浏览器截图、多身份权限和人工内容判断，仍需 Build & Release 发布检查或 Product Commander 专项复核。
+- 鏈剼鏈槸 `quality-gates.md` 鐨勭粺涓€鍏ュ彛銆?- SITE-V3.3.8.3 闃舵榛樿妫€鏌?`01-SiteV2/site/` 涓庡綋鍓?`agent-workflow/tools/` 鑴氭湰銆?- `all` 浼氳繍琛屽綋鍓嶅彲鐢ㄧ殑鍐呭銆佸墠鍙板洖褰掑拰 tag 璐ㄩ噺闂紱闇€瑕佹寚瀹氭棩鏈熸椂浣跨敤 `--date=YYYY-MM-DD`銆?- `style` 浼氭鏌ヤ笁涓?writer 鐨勬枃绔犱骇鐗╂槸鍚﹀嚭鐜扮璇嶃€佹娊璞″悕璇嶅拰楂橀閲嶅鍙ュ紡銆?- `regression` 浼氭鏌ュ墠鍙版槸鍚﹀嚭鐜版棫鐗堟湰鍙ｅ緞銆佸凡閫€浼戠粍浠躲€佹棫妯″潡鏂囨銆佸悎鎴?fallback 鍐呭銆佽繃鏈熷墠鍙版棩鏈熴€佽繃鏈熺紦瀛樺弬鏁版垨瓒嬪娍娉涘叧鑱斻€?- `automation` 妫€鏌?SITE-V3.3.8.3 Business Signals / Intelligence Map / Weekly Report / First-Line Viewpoints / Community Intelligence / Dashboard 鐢熶骇绾跨浉鍏宠剼鏈娉曘€?- 鏈鐩栫殑娴忚鍣ㄦ埅鍥俱€佸韬唤鏉冮檺鍜屼汉宸ュ唴瀹瑰垽鏂紝浠嶉渶 Build & Release 鍙戝竷妫€鏌ユ垨 Product Commander 涓撻」澶嶆牳銆?

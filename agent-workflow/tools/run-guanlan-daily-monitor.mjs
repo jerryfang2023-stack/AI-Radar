@@ -4193,6 +4193,7 @@ function normalize(items) {
   };
   take("gdelt");
   take("keyword-search");
+  take("rss-feed");
   take("hn", Math.min(hnTarget, 8));
   take("aihot");
   take("rss-feed");

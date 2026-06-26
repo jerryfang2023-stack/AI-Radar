@@ -1,8 +1,8 @@
 {
   "ok": false,
-  "status": "failed",
+  "status": "manual_required",
   "date": "2026-06-26",
-  "generated_at": "2026-06-26T04:57:34.488Z",
+  "generated_at": "2026-06-26T03:39:23.727Z",
   "timezone": "Asia/Shanghai",
   "lanes": [
     {
@@ -29,16 +29,16 @@
       "id": "community_intelligence",
       "label": "Community Intelligence",
       "schedule": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30",
-      "status": "waiting",
+      "status": "manual_required",
       "evidence": {
-        "generatedAt": "2026-06-26T00:45:19.373Z",
-        "generatedDate": "2026-06-26",
-        "items": 61,
-        "links": 66,
+        "generatedAt": "2026-06-24T17:06:21.284Z",
+        "generatedDate": "2026-06-25",
+        "items": 31,
+        "links": 50,
         "selectedKeywords": 8,
         "collectorErrors": 0,
-        "gateStatus": "passed",
-        "gateReport": "agent-workflow/reports/2026-06-26-community-intelligence-gate.md",
+        "gateStatus": "missing",
+        "gateReport": "missing",
         "scheduledTask": {
           "available": true,
           "task": {
@@ -73,15 +73,24 @@
       },
       "problems": [
         {
+          "message": "community data date is 2026-06-25, expected 2026-06-26",
+          "severity": "failed"
+        },
+        {
+          "message": "community scheduled task last result is 1",
+          "severity": "manual_required"
+        },
+        {
           "message": "Community Intelligence publication PR is open: https://github.com/jerryfang2023-stack/AI-Radar/pull/140",
           "severity": "waiting"
         }
       ],
       "warnings": [
-        "community scheduled task last result is 1, but same-date data and gate are healthy"
+        "missing community gate report: agent-workflow/reports/2026-06-26-community-intelligence-gate.md"
       ],
       "actions": [
         "wait for Community Intelligence PR merge before declaring publication missing",
+        "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
         "send Codex a community_intelligence repair request with log and gate report path"
       ]
     },
@@ -89,18 +98,18 @@
       "id": "business_signals",
       "label": "Business Signals / Intelligence Map / Dashboard",
       "schedule": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55",
-      "status": "failed",
+      "status": "warning",
       "evidence": {
-        "activeDate": "2026-06-25",
-        "generatedAt": "2026-06-25T05:11:33.134Z",
-        "frontstageSelected": 0,
-        "supplyConstrained": null,
-        "coreCandidateCount": null,
-        "qualifiedCount": null,
-        "signalCardFiles": 0,
-        "manifest": "missing",
-        "qualityGateStatus": "missing",
-        "readinessReport": "missing",
+        "activeDate": "2026-06-26",
+        "generatedAt": "2026-06-26T03:36:16.638Z",
+        "frontstageSelected": 10,
+        "supplyConstrained": false,
+        "coreCandidateCount": 13,
+        "qualifiedCount": 11,
+        "signalCardFiles": 21,
+        "manifest": "agent-workflow/reports/2026-06-26-persistent-asset-manifest.json",
+        "qualityGateStatus": "passed",
+        "readinessReport": "agent-workflow/reports/2026-06-26-daily-production-chain-readiness.md",
         "github": {
           "available": true,
           "latest_run": {
@@ -119,52 +128,32 @@
         },
         "publicationClosure": {
           "checkpoint": "10:50",
-          "businessDataSameDate": false,
-          "top10Count": 0,
+          "businessDataSameDate": true,
+          "top10Count": 10,
           "businessPrMerged": false,
           "businessPrUrl": "",
-          "pagesSuccess": true,
+          "pagesSuccess": false,
           "pagesActive": false,
-          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28215850045",
+          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28214579625",
           "localSync": {
             "available": true,
             "clean": false,
-            "dirtyFiles": 47,
+            "dirtyFiles": 59,
             "ignoredReportFiles": 4,
-            "head": "d412efd8d40e9be18c3d7347f2e643c379dbb534",
-            "originMain": "1f127c53a96285d53e48ccd02f42add57302ba2c",
-            "fastForwarded": false,
+            "head": "5915b4bf80f45930a69f8c8d566ba9c319853fe3",
+            "originMain": "5915b4bf80f45930a69f8c8d566ba9c319853fe3",
+            "fastForwarded": true,
             "warning": ""
           }
         }
       },
-      "problems": [
-        {
-          "message": "business-signal activeDate is 2026-06-25, expected 2026-06-26",
-          "severity": "failed"
-        },
-        {
-          "message": "Top10 selected count is 0, expected 10",
-          "severity": "failed"
-        },
-        {
-          "message": "signal card files 0 below 10",
-          "severity": "failed"
-        },
-        {
-          "message": "Business Signals workflow conclusion is failure",
-          "severity": "failed"
-        }
-      ],
+      "problems": [],
       "warnings": [
-        "missing same-date persistent asset manifest: agent-workflow/reports/2026-06-26-persistent-asset-manifest.json",
-        "missing quality gate report: agent-workflow/reports/2026-06-26-guanlan-monitor-quality-gate.md",
-        "missing readiness report: agent-workflow/reports/2026-06-26-daily-production-chain-readiness.md",
-        "local Obsidian sync may be blocked by 47 dirty file(s)"
+        "latest same-date GitHub Pages workflow conclusion is skipped",
+        "local Obsidian sync may be blocked by 59 dirty file(s)",
+        "latest Business Signals workflow conclusion is failure, but same-date data and gates are healthy; repair branch / PR / publication only"
       ],
-      "actions": [
-        "send Codex a business_signals repair request with failed gate and report path"
-      ]
+      "actions": []
     },
     {
       "id": "first_line_viewpoints",
@@ -172,10 +161,10 @@
       "schedule": "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Hermes RSS handoff 09:30",
       "status": "passed",
       "evidence": {
-        "generatedAt": "2026-06-25T16:32:25.397Z",
+        "generatedAt": "2026-06-26T01:40:32.610Z",
         "generatedDate": "2026-06-26",
         "feedGeneratedAt": "2026-06-25T07:29:59.185Z",
-        "remarks": 45,
+        "remarks": 42,
         "builders": 20,
         "gateStatus": "passed",
         "gateReport": "agent-workflow/reports/2026-06-26-follow-builders-data-gate.md",
