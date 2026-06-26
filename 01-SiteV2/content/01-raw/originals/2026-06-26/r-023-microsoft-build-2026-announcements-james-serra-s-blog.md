@@ -1,0 +1,344 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-023
+title: "Microsoft Build 2026 announcements - James Serra's Blog"
+original_url: "https://www.jamesserra.com/archive/2026/06/microsoft-build-2026-announcements/"
+canonical_url: "https://jamesserra.com/archive/2026/06/microsoft-build-2026-announcements"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: changelog_or_release
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-26T07:13:34.357Z
+language: mixed
+full_text_hash: 87aa93c12be78d87
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-023-microsoft-build-2026-announcements-james-serra-s-blog.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-023-microsoft-build-2026-announcements-james-serra-s-blog.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":20565,"paragraph_count":73,"sentence_count":135,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 20565
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"87aa93c12be78d87","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 301f30fc0af6df22
+content_hash: c27193f841e77ca9
+semantic_hash: 0354e096dd4acf0d
+duplicate_of: ""
+first_seen_at: "2026-06-26T07:13:34.357Z"
+last_seen_at: 2026-06-26T07:13:34.357Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","Microsoft","GitHub","Nvidia","Cursor"],"products":["Agent","agent","Copilot","Claude","Cursor","MCP","agents","Agents"],"people":[],"industries":["医疗","制造 / 工业","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["2026","365","2","00"],"quotes":["AI helped me build this","AI created a scavenger hunt for me.","which version is the truth?","meet users where they are","Are we there yet?"]}
+evidence_seed: {"company_actions":["Agent Skills for Power BI are about using an AI assistant or AI agent to help create and improve the analytics experience itself, including ... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original","&darr; Home My Book FAQ Presentations Data Consulting About Me Contact Me Home &rarr; Microsoft Fabric &rarr; Microsoft Build 2026 announcements Once again there were a number of Microsoft Build announcements related to data and AI, and some were very impressive.","Below are my favorites."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"Agent Skills for Power BI are about using an AI assistant or AI agent to help create and improve the analytics experience itself, including ... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"&darr; Home My Book FAQ Presentations Data Consulting About Me Contact Me Home &rarr; Microsoft Fabric &rarr; Microsoft Build 2026 announcements Once again there were a number of Microsoft Build announcements related to data and AI, and some were very impressive.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Below are my favorites.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"I am prioritizing the data announcements first, because that is where my brain naturally goes (and because AI without good data is just a very confident intern with access to a keyboard).","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"The biggest announcements across Microsoft Fabric and databases can be found in the Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases blog post.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Here you go: Agent Skills for Power BI (Preview): This was one of the biggest announcements for me.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Microsoft Build 2026 announcements - James Serra's Blog
+
+## clean_text
+
+&darr;
+Home
+My Book
+FAQ
+Presentations
+Data Consulting
+About Me
+Contact Me
+Home &rarr; Microsoft Fabric &rarr; Microsoft Build 2026 announcements
+Once again there were a number of Microsoft Build announcements related to data and AI, and some were very impressive. Below are my favorites. I am prioritizing the data announcements first, because that is where my brain naturally goes (and because AI without good data is just a very confident intern with access to a keyboard).
+The biggest announcements across Microsoft Fabric and databases can be found in the Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases blog post.
+Here you go:
+Agent Skills for Power BI (Preview):
+This was one of the biggest announcements for me. Agent Skills for Power BI are about using an AI assistant or AI agent to help create and improve the analytics experience itself, including automatic creation of semantic models, report pages, layouts, PBIR files, publishing, and iterative design improvements. More broadly, Skills for Fabric is basically a set of reusable instructions that make an AI coding assistant much smarter about Microsoft Fabric. Skills tell the AI assistant, such as GitHub Copilot CLI, VS Code Copilot, Claude Code, Cursor, or Windsurf, how to work with Fabric correctly. MCP servers and other tools then give that assistant live access to actually do things (for example, a skill can call a Power BI Modeling MCP server to build a semantic model). The important point is that the agent is not just guessing against a pile of tables. It can work through the trusted semantic layer, where the business logic, relationships, measures, and definitions already exist. That matters because a pretty report is nice, but a pretty report based on bad assumptions is just a faster way to be wrong. Start using it via AI-Powered Power BI reporting: From design to deployment with agent skills (Preview) . Skills include PBI report authoring , PBI report design , PBI report planner and management , and PBI semantic model authoring . Note these report authoring skills work with PBIP/PBIR projects and Power BI Desktop; web-based report authoring is not currently supported.
+This is different from using Copilot in the Power BI report authoring experience, whether in Power BI Desktop or the Power BI service. Copilot helps you create or refine report pages, usually from an existing semantic model, and can use a screenshot or image as a design reference with your text instructions. Agent Skills for Power BI go further by letting an AI assistant, such as GitHub Copilot CLI, help create and manage semantic models, author PBIR/PBIP report files, validate reports, update formatting and themes, and support more of the end-to-end Power BI project.
+Fabric Apps (Preview):
+Fabric Apps are different from Agent Skills for Power BI. In the current experience, the data app template is a Fabric Apps starting point for building custom web apps connected to Power BI semantic models. Agent Skills help create analytics assets, such as semantic models and Power BI reports, while Fabric Apps help developers turn governed data and analytics assets into custom application experiences . This is important because custom web apps can go beyond the limits of traditional BI reports, especially when developers need more flexibility, embedded workflows, write-back style experiences, custom user interfaces, or highly specialized business requirements. In short, Fabric Apps are a new workspace item type for making web apps, meaning programs that live in your browser. This web app can be many things, including a dashboard or an interactive app to manage data, services, or Fabric itself.
+At a high level, Fabric Apps introduce a new AI-first approach to building custom web apps, with Microsoft Fabric serving as the managed backend and the open-source Rayfin SDK helping power the experience. The data app template can use Power BI semantic models as a trusted foundation, including governed business logic, metrics, relationships, and security, instead of recreating that logic somewhere else. It also uses Agent Skills to teach the LLM how to generate DAX, query the model, and handle Fabric-specific authentication, visualization, and formatting patterns.
+In plain English, this helps close the gap between analytics and operational applications, because the same semantic model used for reporting can also support richer business apps. One important clarification: Fabric Apps overall are broader than semantic models, but the current analytics/data app template is focused on building apps connected to Power BI semantic models. More Fabric data sources are expected in the future. The app shows up directly in a Fabric workspace with the item type of “App,” and eventually these apps are expected to be embeddable outside of Fabric as well. For a video on Agent Skills and Fabric Apps, check out Build Agentic Analytics with Power BI and Microsoft Fabric .
+Fabric Skills for GitHub Copilot, Claude, Cursor, Windsurf, and CLI (Available now / open source):
+I also really like the announcement around Skills for Fabric, also referred to as Fabric Skills for GitHub Copilot, Claude, Cursor, Windsurf, and CLI . The problem with general AI coding tools is that they often know the syntax, but not the product-specific details that make code actually work. They may produce something that looks right, calls the wrong endpoint, misses the correct authentication pattern, or invents something that sounds plausible but does not exist. Fabric Skills are meant to give those tools Microsoft-authored instructions, API patterns, CLI guidance, and best practices so the AI agent has a better chance of doing the right thing the first time.
+Unlike Agent Skills for Power BI, which are focused specifically on planning, designing, authoring, and improving Power BI semantic models and reports, Skills for Fabric span the entire Fabric platform. They provide domain expertise for many Fabric workloads—including Data Factory, Data Engineering, Data Warehouse, Real-Time Intelligence, OneLake, Fabric IQ, and Power BI—so AI agents can create, manage, and automate Fabric artifacts beyond just analytics and reporting.
+That is the difference between “AI helped me build this” and “AI created a scavenger hunt for me.” In short, Agent Skills for Power BI are a subset of the broader Skills for Fabric ecosystem: Power BI skills help build analytics solutions, while Skills for Fabric help AI agents work across the entire Fabric platform.
+Copilot in web modeling (Preview):
+Copilot in web modeling is another practical step toward making semantic model development easier. The idea is to let model authors use natural language directly in the Power BI service to analyze and improve an existing semantic model, including schema cleanup, table and column renames, relationship changes, and DAX measure creation. I would not describe this as creating a brand-new semantic model from scratch. For that, the related Agent Skills for Power BI approach is the better fit, because the semantic model authoring skill can create new semantic models in Import, DirectQuery, or Direct Lake mode. That distinction matters. Copilot in web modeling helps improve the model you already have, while Agent Skills can help create and author new analytics assets. Reports get the attention, but the semantic model is what determines whether the answers are actually useful.
+GPU-accelerated Fabric Data Warehouse (Early Access Preview):
+The GPU-accelerated Fabric Data Warehouse announcement is a very big deal. The idea is simple: use NVIDIA accelerated computing to make eligible SQL queries run faster without requiring users to rewrite their queries or manage a separate system. That last part is the key. Data teams usually do not want one more specialized engine to administer, tune, explain, fund, and eventually apologize for. If this works as advertised, it makes the warehouse more useful for high-concurrency reporting, agent-driven analytics, and application workloads where every query is suddenly part of an interactive experience.
+Graph in Fabric (Generally Available):
+Graph in Fabric is now generally available, and I really like this one because so much of business is about relationships, not just rows and columns. Customers are connected to orders, products are connected to suppliers, devices are connected to identities, and one small change can ripple across the whole business. Graph helps model, visualize, and analyze those relationships directly in Fabric. This is especially important for AI because agents need to understand how things are connected, not just retrieve a value from a table and pretend the rest of the world does not exist.
+OneLake shortcuts to SharePoint and OneDrive (Generally Available):
+The general availability of OneLake shortcuts to SharePoint and OneDrive is another practical announcement that may not sound flashy at first, but will matter a lot in the real world. A lot of important business data still lives in files, folders, spreadsheets, and productivity content. Being able to connect that content into OneLake without constantly copying and moving it helps reduce duplication and makes the data estate feel more connected. This is one of those features that sounds simple until you think about how many organizations are still running critical processes out of Excel files sitting in someone’s OneDrive (not that any of us have ever seen that before).
+Shortcuts from Fabric Data Warehouses (Preview):
+Along with the OneLake shortcut updates, Microsoft also announced the ability to create shortcuts directly from Fabric Data Warehouses , now in preview. I like this because it continues the zero-copy story, which is one of the most important architectural ideas in Fabric. The more we can avoid copying data just to make another engine happy, the better. Copies create cost, confusion, governance problems, reconciliation debates, and the occasional “which version is the truth?” conversation that nobody enjoys.
+Fabric IQ and Operations Agents (Generally Available):
+Fabric IQ and Operations Agents are about giving people and agents a shared understanding of the business. That means more than connecting to data; it means understanding business entities, relationships, semantic models, live signals, rules, and actions. Operations agents are designed to monitor real-time data, detect patterns or anomalies, and act based on predefined business logic. This is where the agent story becomes more interesting, because the goal is not just answering questions. The goal is helping organizations observe what is happening, understand what it means, and take action while it still matters.
+Fabric IQ integrations with Microsoft Foundry and Agent 365 (Preview):
+Another important announcement is the expansion of Fabric IQ across more agent experiences . Ontologies are becoming available as knowledge sources in Microsoft Foundry, and Fabric IQ is being integrated with Microsoft Agent 365 as a first-party MCP tool. Fabric IQ tools and skills for data insights are also accessible through GitHub Copilot CLI, which means developers can ask natural language questions about Fabric data, Power BI reports, and semantic models right from the terminal. That may sound like a developer convenience, but it is bigger than that. It brings governed business context closer to where work is actually happening.
+Org apps in Power BI (GA coming soon):
+Org apps in Power BI are also worth calling out. Microsoft announced that general availability is coming soon, bringing a more polished, stable, enterprise-ready way to distribute curated analytics experiences at scale. This matters because not everyone needs to see everything, and not every user should have to navigate the underlying workspace structure to find what they need. The best analytics experiences often feel boringly simple to the end user. That is a compliment, by the way.
+Visualizations in data agents (Preview):
+Visualizations in data agents are coming soon in preview, and this is a very useful addition. Today, natural-language questions are often answered with text or tabular results, which is helpful, but not always the fastest way to understand what is happening. Visualization support will let users turn natural-language questions into charts directly in the data agent experience, making it easier to explore trends, compare results, and spot patterns. That matters because many business questions are visual by nature. Sometimes you do not just want the answer; you want to see the shape of the answer.
+Data agents in Microsoft 365 Copilot (Generally Available):
+Data agents in Microsoft 365 Copilot are now generally available, which brings Fabric data questions into the place where many users already work. Users can ask questions about governed Fabric data without needing to leave their normal productivity experience. The latest improvements also support longer-running operations, so more complex questions can complete instead of timing out. This is a big part of the “meet users where they are” story. Most business users do not wake up excited to learn another portal. Shocking, I know.
+Real-Time Dashboards powered by AI (Preview):
+The new AI-assisted editing experience for Real-Time Dashboards is another good step forward. Users can describe what they need in natural language and have Copilot generate a visualization, while still allowing developers to refine the KQL and formatting manually. I like this pattern because it does not pretend everyone wants to become a KQL expert before building a useful operational dashboard. It lowers the barrier for business and operations teams while still leaving room for technical users to fine-tune the result.
+Real-Time Dashboards Live Refresh (Generally Available):
+Live Refresh for Real-Time Dashboards is now generally available, and this is one of those features that feels obvious once you see it. Instead of refreshing on a fixed schedule regardless of whether anything changed, dashboards can refresh when new data arrives. That should help with both responsiveness and cost, because the dashboard is reacting to actual data activity instead of constantly polling like an impatient child in the back seat asking, “Are we there yet?” For operational monitoring scenarios, that is exactly the kind of behavior you want.
+Business Events in Eventhouse and Real-Time Dashboards (Preview):
+The Business Events in Eventhouse and Real-Time Dashboards preview is another announcement I like because it makes events more durable and useful. A business event could be a payment failure, shipment delay, equipment outage, or some other meaningful business moment. With Eventhouse enabled by default, those events can be stored, queried with KQL, analyzed historically, and visualized in Real-Time Dashboards. That means business signals do not just disappear after an alert fires. They become part of an analytical record you can learn from.
+Activator as a Business Event Publisher (Preview):
+Activator as a Business Event Publisher is a nice complement to that story. Activator can now publish structured business events when it detects a condition in a Power BI report, Real-Time Dashboard, KQL query, or Fabric Warehouse SQL query. This turns an alert into something more reusable: a governed signal that can be discovered, consumed, analyzed, and acted on across the organization. That is a subtle but important shift. It moves from “someone got notified” to “the business now has an event it can reason over.”
+Mirrored Database Change Feed connector for Eventstreams (Preview):
+The Mirrored Database Change Feed connector lets users stream Delta Change Data Feed updates from mirrored databases directly into Fabric Eventstreams. That means inserts, updates, and deletes can flow into real-time processing without writing custom Spark jobs or polling for changes. It supports sources such as Azure SQL, Snowflake, Cosmos DB, Oracle, PostgreSQL, and Open Mirroring partners. This is important because many organizations already have operational data flowing into Fabric through mirroring. This gives them a cleaner path from “we have the data” to “we can react to changes as they happen.”
+Eventstream observability through Workspace Monitoring (Preview):
+Eventstream observability through Workspace Monitoring is another practical improvement. It gives teams visibility into Eventstream health, throughput, and errors through automatically created monitoring tables in Eventhouse. That means you can query status, metrics, and error information with KQL, build dashboards, and set alerts when something goes wrong. This is the kind of feature that may not sound exciting until you are the person responsible for troubleshooting a streaming pipeline at 2:00 a.m. Then suddenly it sounds very exciting.
+Migration Assistant for Fabric Data Warehouse live connectivity (Generally Available) and SQL file migration (Preview):
+The Migration Assistant enhancements for Fabric Data Warehouse are important for the less glamorous but very real world of modernization. Migration Assistant now supports live connectivity generally available, so teams can connect directly to source systems without requiring a DACPAC file. It also supports migration using SQL files in preview, which helps with offline or disconnected scenarios. This matters because migrations often fail not because the destination platform is bad, but because the path to get there is too manual, too risky, or too confusing. Reducing friction here is a big deal.
+SQL analytics endpoint and warehouse operations improvements (Preview):
+There were also several warehouse and SQL analytics endpoint improvements that are worth mentioning together. CI/CD support for the SQL analytics endpoint, pre- and post-scripts for Fabric Warehouse deployments, ALTER COLUMN support, Datawarehouse Monitor, configurable retention, and time travel in the SQL analytic
+
+## full_text
+
+&darr;
+Home
+My Book
+FAQ
+Presentations
+Data Consulting
+About Me
+Contact Me
+Home &rarr; Microsoft Fabric &rarr; Microsoft Build 2026 announcements
+Once again there were a number of Microsoft Build announcements related to data and AI, and some were very impressive. Below are my favorites. I am prioritizing the data announcements first, because that is where my brain naturally goes (and because AI without good data is just a very confident intern with access to a keyboard).
+The biggest announcements across Microsoft Fabric and databases can be found in the Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases blog post.
+Here you go:
+Agent Skills for Power BI (Preview):
+This was one of the biggest announcements for me. Agent Skills for Power BI are about using an AI assistant or AI agent to help create and improve the analytics experience itself, including automatic creation of semantic models, report pages, layouts, PBIR files, publishing, and iterative design improvements. More broadly, Skills for Fabric is basically a set of reusable instructions that make an AI coding assistant much smarter about Microsoft Fabric. Skills tell the AI assistant, such as GitHub Copilot CLI, VS Code Copilot, Claude Code, Cursor, or Windsurf, how to work with Fabric correctly. MCP servers and other tools then give that assistant live access to actually do things (for example, a skill can call a Power BI Modeling MCP server to build a semantic model). The important point is that the agent is not just guessing against a pile of tables. It can work through the trusted semantic layer, where the business logic, relationships, measures, and definitions already exist. That matters because a pretty report is nice, but a pretty report based on bad assumptions is just a faster way to be wrong. Start using it via AI-Powered Power BI reporting: From design to deployment with agent skills (Preview) . Skills include PBI report authoring , PBI report design , PBI report planner and management , and PBI semantic model authoring . Note these report authoring skills work with PBIP/PBIR projects and Power BI Desktop; web-based report authoring is not currently supported.
+This is different from using Copilot in the Power BI report authoring experience, whether in Power BI Desktop or the Power BI service. Copilot helps you create or refine report pages, usually from an existing semantic model, and can use a screenshot or image as a design reference with your text instructions. Agent Skills for Power BI go further by letting an AI assistant, such as GitHub Copilot CLI, help create and manage semantic models, author PBIR/PBIP report files, validate reports, update formatting and themes, and support more of the end-to-end Power BI project.
+Fabric Apps (Preview):
+Fabric Apps are different from Agent Skills for Power BI. In the current experience, the data app template is a Fabric Apps starting point for building custom web apps connected to Power BI semantic models. Agent Skills help create analytics assets, such as semantic models and Power BI reports, while Fabric Apps help developers turn governed data and analytics assets into custom application experiences . This is important because custom web apps can go beyond the limits of traditional BI reports, especially when developers need more flexibility, embedded workflows, write-back style experiences, custom user interfaces, or highly specialized business requirements. In short, Fabric Apps are a new workspace item type for making web apps, meaning programs that live in your browser. This web app can be many things, including a dashboard or an interactive app to manage data, services, or Fabric itself.
+At a high level, Fabric Apps introduce a new AI-first approach to building custom web apps, with Microsoft Fabric serving as the managed backend and the open-source Rayfin SDK helping power the experience. The data app template can use Power BI semantic models as a trusted foundation, including governed business logic, metrics, relationships, and security, instead of recreating that logic somewhere else. It also uses Agent Skills to teach the LLM how to generate DAX, query the model, and handle Fabric-specific authentication, visualization, and formatting patterns.
+In plain English, this helps close the gap between analytics and operational applications, because the same semantic model used for reporting can also support richer business apps. One important clarification: Fabric Apps overall are broader than semantic models, but the current analytics/data app template is focused on building apps connected to Power BI semantic models. More Fabric data sources are expected in the future. The app shows up directly in a Fabric workspace with the item type of “App,” and eventually these apps are expected to be embeddable outside of Fabric as well. For a video on Agent Skills and Fabric Apps, check out Build Agentic Analytics with Power BI and Microsoft Fabric .
+Fabric Skills for GitHub Copilot, Claude, Cursor, Windsurf, and CLI (Available now / open source):
+I also really like the announcement around Skills for Fabric, also referred to as Fabric Skills for GitHub Copilot, Claude, Cursor, Windsurf, and CLI . The problem with general AI coding tools is that they often know the syntax, but not the product-specific details that make code actually work. They may produce something that looks right, calls the wrong endpoint, misses the correct authentication pattern, or invents something that sounds plausible but does not exist. Fabric Skills are meant to give those tools Microsoft-authored instructions, API patterns, CLI guidance, and best practices so the AI agent has a better chance of doing the right thing the first time.
+Unlike Agent Skills for Power BI, which are focused specifically on planning, designing, authoring, and improving Power BI semantic models and reports, Skills for Fabric span the entire Fabric platform. They provide domain expertise for many Fabric workloads—including Data Factory, Data Engineering, Data Warehouse, Real-Time Intelligence, OneLake, Fabric IQ, and Power BI—so AI agents can create, manage, and automate Fabric artifacts beyond just analytics and reporting.
+That is the difference between “AI helped me build this” and “AI created a scavenger hunt for me.” In short, Agent Skills for Power BI are a subset of the broader Skills for Fabric ecosystem: Power BI skills help build analytics solutions, while Skills for Fabric help AI agents work across the entire Fabric platform.
+Copilot in web modeling (Preview):
+Copilot in web modeling is another practical step toward making semantic model development easier. The idea is to let model authors use natural language directly in the Power BI service to analyze and improve an existing semantic model, including schema cleanup, table and column renames, relationship changes, and DAX measure creation. I would not describe this as creating a brand-new semantic model from scratch. For that, the related Agent Skills for Power BI approach is the better fit, because the semantic model authoring skill can create new semantic models in Import, DirectQuery, or Direct Lake mode. That distinction matters. Copilot in web modeling helps improve the model you already have, while Agent Skills can help create and author new analytics assets. Reports get the attention, but the semantic model is what determines whether the answers are actually useful.
+GPU-accelerated Fabric Data Warehouse (Early Access Preview):
+The GPU-accelerated Fabric Data Warehouse announcement is a very big deal. The idea is simple: use NVIDIA accelerated computing to make eligible SQL queries run faster without requiring users to rewrite their queries or manage a separate system. That last part is the key. Data teams usually do not want one more specialized engine to administer, tune, explain, fund, and eventually apologize for. If this works as advertised, it makes the warehouse more useful for high-concurrency reporting, agent-driven analytics, and application workloads where every query is suddenly part of an interactive experience.
+Graph in Fabric (Generally Available):
+Graph in Fabric is now generally available, and I really like this one because so much of business is about relationships, not just rows and columns. Customers are connected to orders, products are connected to suppliers, devices are connected to identities, and one small change can ripple across the whole business. Graph helps model, visualize, and analyze those relationships directly in Fabric. This is especially important for AI because agents need to understand how things are connected, not just retrieve a value from a table and pretend the rest of the world does not exist.
+OneLake shortcuts to SharePoint and OneDrive (Generally Available):
+The general availability of OneLake shortcuts to SharePoint and OneDrive is another practical announcement that may not sound flashy at first, but will matter a lot in the real world. A lot of important business data still lives in files, folders, spreadsheets, and productivity content. Being able to connect that content into OneLake without constantly copying and moving it helps reduce duplication and makes the data estate feel more connected. This is one of those features that sounds simple until you think about how many organizations are still running critical processes out of Excel files sitting in someone’s OneDrive (not that any of us have ever seen that before).
+Shortcuts from Fabric Data Warehouses (Preview):
+Along with the OneLake shortcut updates, Microsoft also announced the ability to create shortcuts directly from Fabric Data Warehouses , now in preview. I like this because it continues the zero-copy story, which is one of the most important architectural ideas in Fabric. The more we can avoid copying data just to make another engine happy, the better. Copies create cost, confusion, governance problems, reconciliation debates, and the occasional “which version is the truth?” conversation that nobody enjoys.
+Fabric IQ and Operations Agents (Generally Available):
+Fabric IQ and Operations Agents are about giving people and agents a shared understanding of the business. That means more than connecting to data; it means understanding business entities, relationships, semantic models, live signals, rules, and actions. Operations agents are designed to monitor real-time data, detect patterns or anomalies, and act based on predefined business logic. This is where the agent story becomes more interesting, because the goal is not just answering questions. The goal is helping organizations observe what is happening, understand what it means, and take action while it still matters.
+Fabric IQ integrations with Microsoft Foundry and Agent 365 (Preview):
+Another important announcement is the expansion of Fabric IQ across more agent experiences . Ontologies are becoming available as knowledge sources in Microsoft Foundry, and Fabric IQ is being integrated with Microsoft Agent 365 as a first-party MCP tool. Fabric IQ tools and skills for data insights are also accessible through GitHub Copilot CLI, which means developers can ask natural language questions about Fabric data, Power BI reports, and semantic models right from the terminal. That may sound like a developer convenience, but it is bigger than that. It brings governed business context closer to where work is actually happening.
+Org apps in Power BI (GA coming soon):
+Org apps in Power BI are also worth calling out. Microsoft announced that general availability is coming soon, bringing a more polished, stable, enterprise-ready way to distribute curated analytics experiences at scale. This matters because not everyone needs to see everything, and not every user should have to navigate the underlying workspace structure to find what they need. The best analytics experiences often feel boringly simple to the end user. That is a compliment, by the way.
+Visualizations in data agents (Preview):
+Visualizations in data agents are coming soon in preview, and this is a very useful addition. Today, natural-language questions are often answered with text or tabular results, which is helpful, but not always the fastest way to understand what is happening. Visualization support will let users turn natural-language questions into charts directly in the data agent experience, making it easier to explore trends, compare results, and spot patterns. That matters because many business questions are visual by nature. Sometimes you do not just want the answer; you want to see the shape of the answer.
+Data agents in Microsoft 365 Copilot (Generally Available):
+Data agents in Microsoft 365 Copilot are now generally available, which brings Fabric data questions into the place where many users already work. Users can ask questions about governed Fabric data without needing to leave their normal productivity experience. The latest improvements also support longer-running operations, so more complex questions can complete instead of timing out. This is a big part of the “meet users where they are” story. Most business users do not wake up excited to learn another portal. Shocking, I know.
+Real-Time Dashboards powered by AI (Preview):
+The new AI-assisted editing experience for Real-Time Dashboards is another good step forward. Users can describe what they need in natural language and have Copilot generate a visualization, while still allowing developers to refine the KQL and formatting manually. I like this pattern because it does not pretend everyone wants to become a KQL expert before building a useful operational dashboard. It lowers the barrier for business and operations teams while still leaving room for technical users to fine-tune the result.
+Real-Time Dashboards Live Refresh (Generally Available):
+Live Refresh for Real-Time Dashboards is now generally available, and this is one of those features that feels obvious once you see it. Instead of refreshing on a fixed schedule regardless of whether anything changed, dashboards can refresh when new data arrives. That should help with both responsiveness and cost, because the dashboard is reacting to actual data activity instead of constantly polling like an impatient child in the back seat asking, “Are we there yet?” For operational monitoring scenarios, that is exactly the kind of behavior you want.
+Business Events in Eventhouse and Real-Time Dashboards (Preview):
+The Business Events in Eventhouse and Real-Time Dashboards preview is another announcement I like because it makes events more durable and useful. A business event could be a payment failure, shipment delay, equipment outage, or some other meaningful business moment. With Eventhouse enabled by default, those events can be stored, queried with KQL, analyzed historically, and visualized in Real-Time Dashboards. That means business signals do not just disappear after an alert fires. They become part of an analytical record you can learn from.
+Activator as a Business Event Publisher (Preview):
+Activator as a Business Event Publisher is a nice complement to that story. Activator can now publish structured business events when it detects a condition in a Power BI report, Real-Time Dashboard, KQL query, or Fabric Warehouse SQL query. This turns an alert into something more reusable: a governed signal that can be discovered, consumed, analyzed, and acted on across the organization. That is a subtle but important shift. It moves from “someone got notified” to “the business now has an event it can reason over.”
+Mirrored Database Change Feed connector for Eventstreams (Preview):
+The Mirrored Database Change Feed connector lets users stream Delta Change Data Feed updates from mirrored databases directly into Fabric Eventstreams. That means inserts, updates, and deletes can flow into real-time processing without writing custom Spark jobs or polling for changes. It supports sources such as Azure SQL, Snowflake, Cosmos DB, Oracle, PostgreSQL, and Open Mirroring partners. This is important because many organizations already have operational data flowing into Fabric through mirroring. This gives them a cleaner path from “we have the data” to “we can react to changes as they happen.”
+Eventstream observability through Workspace Monitoring (Preview):
+Eventstream observability through Workspace Monitoring is another practical improvement. It gives teams visibility into Eventstream health, throughput, and errors through automatically created monitoring tables in Eventhouse. That means you can query status, metrics, and error information with KQL, build dashboards, and set alerts when something goes wrong. This is the kind of feature that may not sound exciting until you are the person responsible for troubleshooting a streaming pipeline at 2:00 a.m. Then suddenly it sounds very exciting.
+Migration Assistant for Fabric Data Warehouse live connectivity (Generally Available) and SQL file migration (Preview):
+The Migration Assistant enhancements for Fabric Data Warehouse are important for the less glamorous but very real world of modernization. Migration Assistant now supports live connectivity generally available, so teams can connect directly to source systems without requiring a DACPAC file. It also supports migration using SQL files in preview, which helps with offline or disconnected scenarios. This matters because migrations often fail not because the destination platform is bad, but because the path to get there is too manual, too risky, or too confusing. Reducing friction here is a big deal.
+SQL analytics endpoint and warehouse operations improvements (Preview):
+There were also several warehouse and SQL analytics endpoint improvements that are worth mentioning together. CI/CD support for the SQL analytics endpoint, pre- and post-scripts for Fabric Warehouse deployments, ALTER COLUMN support, Datawarehouse Monitor, configurable retention, and time travel in the SQL analytics endpoint are all in preview. The enhanced metadata sync for SQL analytics endpoints is especially interesting because it targets fresher metadata availability after delta logs reflecting a data change are available in storage. These may sound like “plumbing” features, but plumbing matters. Nobody compliments the plumbing until it breaks.
+OneLake storage tiers and item-size reporting (Preview):
+OneLake storage tiers and lifecycle management are in preview, giving admins a way to automatically move older data into more cost-effective tiers based on rules. OneLake item-size reporting is also in preview, providing better visibility into storage usage across items in a workspace, including system and soft-deleted data. These features matter because as data platforms grow, storage becomes both a cost issue and a governance issue. It is much easier to manage what you can actually see. That sounds obvious, but in enterprise data, obvious things are often the hardest things to get right.
+Azure HorizonDB (Public Preview):
+On the database side, Azure HorizonDB is worth watching. It is a new fully managed, PostgreSQL-compatible database in public preview, designed for the demands of AI-powered applications. It includes capabilities such as vector search, integrated AI model management, and connectivity to Microsoft Foundry and Fabric. I see this as part of a broader trend: operational databases are becoming part of the AI architecture, not something sitting off to the side waiting to be copied into an analytics system later.
+More info:
+Fabric June 2026 Feature Summary – Microsoft Fabric Community
+Fabric Apps explained: Visualization as code in a data app dashboard
+We tested the New Power BI Report Skills: The Future of AI-Powered Reporting? [Steb by step demo] (video)
+Microsoft Fabric Apps Tutorial – How I Built a Fabric App with Copilot (video)
+GitHub Copilot CLI for Beginners (video playlist)
+Share:
+Share on LinkedIn (Opens in new window)
+LinkedIn
+Share on X (Opens in new window)
+Share on Facebook (Opens in new window)
+Facebook
+Email a link to a friend (Opens in new window)
+Email
+Print (Opens in new window)
+Print
+More
+Share on Reddit (Opens in new window)
+Reddit
+Share on Tumblr (Opens in new window)
+Tumblr
+Share on Pinterest (Opens in new window)
+Pinterest
+Related posts:
+Microsoft Build announcements
+Microsoft Build event announcements on Fabric
+Announcements from the Microsoft Fabric Community Conference
+Announcements from the Microsoft Fabric Community Conference
+Microsoft Build event announcements
+Comments are closed.
+&uarr;
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":20565,"paragraph_count":73,"sentence_count":135,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   Agent Skills for Power BI are about using an AI assistant or AI agent to help create and improve the analytics experience itself, including ... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   &darr; Home My Book FAQ Presentations Data Consulting About Me Contact Me Home &rarr; Microsoft Fabric &rarr; Microsoft Build 2026 announcements Once again there were a number of Microsoft Build announcements related to data and AI, and some were very impressive.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Below are my favorites.
+
+4. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   I am prioritizing the data announcements first, because that is where my brain naturally goes (and because AI without good data is just a very confident intern with access to a keyboard).
+
+5. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   The biggest announcements across Microsoft Fabric and databases can be found in the Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases blog post.
+
+6. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   Here you go: Agent Skills for Power BI (Preview): This was one of the biggest announcements for me.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Microsoft, GitHub, Nvidia, Cursor
+- products: Agent, agent, Copilot, Claude, Cursor, MCP, agents, Agents
+- people: 暂无公开信息
+- industries: 医疗, 制造 / 工业, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 2026, 365, 2, 00
+- quotes: AI helped me build this / AI created a scavenger hunt for me. / which version is the truth? / meet users where they are / Are we there yet?
+
+## evidence_seed
+
+- company_actions: Agent Skills for Power BI are about using an AI assistant or AI agent to help create and improve the analytics experience itself, including ... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original / &darr; Home My Book FAQ Presentations Data Consulting About Me Contact Me Home &rarr; Microsoft Fabric &rarr; Microsoft Build 2026 announcements Once again there were a number of Microsoft Build announcements related to data and AI, and some were very impressive. / Below are my favorites.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Agent Skills for Power BI are about using an AI assistant or AI agent to help create and improve the analytics experience itself, including ... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-028
 title: "The Enterprise AI Revolution: 20 SaaS and AI Trends Redefining Corporate America in 2026"

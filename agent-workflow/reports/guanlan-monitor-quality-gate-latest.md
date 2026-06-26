@@ -1,4 +1,4 @@
-﻿# 2026-06-26 Guanlan Monitor Quality Gate
+# 2026-06-26 Guanlan Monitor Quality Gate
 
 - generated_at: 2026-06-26T03:32:35.088Z
 - attempt: 1/3

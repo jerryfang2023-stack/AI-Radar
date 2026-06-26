@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-098
 title: "GitHub - mmTheBest/AI-Agents-for-Production: A live, evolving collection of open-source AI agents and real examples showing how businesses can use AI to automate work, save time, and explore new ideas. 路 GitHub"

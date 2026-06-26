@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-049
 title: "Enterprise AI Agent Pilot to Production: A Scaling Framework"

@@ -1,0 +1,1379 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-006
+title: "RecruitBase/agentfit"
+original_url: "https://github.com/RecruitBase/agentfit"
+canonical_url: "https://github.com/RecruitBase/agentfit"
+source_name: "keyword search / Anysearch"
+source_type: developer
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: changelog_or_release
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "procurement_marketplace"
+search_path_label: "采购 / 招投标 / Marketplace 路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-26T07:13:34.266Z
+language: mixed
+full_text_hash: 16ff8278bcfe29ba
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-006-recruitbase-agentfit.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-006-recruitbase-agentfit.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":35768,"paragraph_count":543,"sentence_count":213,"boilerplate_hits":2,"symbol_ratio":0.0143,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 35768
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"16ff8278bcfe29ba","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 709b1a82ac3ec517
+content_hash: b0f25e31df677daa
+semantic_hash: cb5ece16664b403b
+duplicate_of: ""
+first_seen_at: "2026-06-26T07:13:34.266Z"
+last_seen_at: 2026-06-26T07:13:34.266Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic","Google","Meta","Mistral"],"products":["agent","agents","claude","Agent","Claude","Gemini"],"people":[],"industries":["开发者工具","企业服务"],"roles":["CIO / IT 负责人","采购负责人"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算","采购","销售 / 客服"],"numbers":["7","2","0.74","3","1","0.6","0.4","82%"],"quotes":["how do I know if this agent is good enough?","is this agent fit for my use case?","Is this agent fit for my business needs — and can you explain why?","confirm resolution"," sk-... "]}
+evidence_seed: {"company_actions":["There was an error while loading.","Please reload this page .","RecruitBase agentfit Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 7 Commits 7 Commits ."],"case_details":[],"workflow_changes":["AgentFit is an **open-source, enterprise-grade agent evaluation and governance framework**. It gives teams a structured, reproducible way to assess AI agents across seven behavioural dimensions — then produces a **binary governance decision** (PASS / FAIL against thresholds you define) alongside rel... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","采购负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"AgentFit is an **open-source, enterprise-grade agent evaluation and governance framework**. It gives teams a structured, reproducible way to assess AI agents across seven behavioural dimensions — then produces a **binary governance decision** (PASS / FAIL against thresholds you define) alongside rel... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"There was an error while loading.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Please reload this page .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"RecruitBase agentfit Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 7 Commits 7 Commits .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"claude agentfit agentfit docs docs examples examples hooks hooks scripts scripts tests tests .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"gitignore CHANGELOG.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# RecruitBase/agentfit
+
+## clean_text
+
+Uh oh!
+There was an error while loading. Please reload this page .
+RecruitBase
+agentfit
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+Star
+main
+Branches Tags
+Go to file
+Code Open more actions menu
+Folders and files
+Name Name Last commit message
+Last commit date
+Latest commit
+History
+7 Commits
+7 Commits
+.claude
+.claude
+agentfit
+agentfit
+docs
+docs
+examples
+examples
+hooks
+hooks
+scripts
+scripts
+tests
+tests
+.dockerignore
+.dockerignore
+.gitignore
+.gitignore
+CHANGELOG.md
+CHANGELOG.md
+COMPLETE_SETUP.md
+COMPLETE_SETUP.md
+CONTRIBUTING.md
+CONTRIBUTING.md
+GETTING_STARTED.md
+GETTING_STARTED.md
+README.md
+README.md
+pyproject.toml
+pyproject.toml
+results_e2e.json
+results_e2e.json
+View all files
+Repository files navigation
+AgentFit
+The Agent Evaluation & Interpretability Framework
+Stop trusting the ai agents hype. Objectively evaluate which agent is appropriate for your business needs.
+Getting Started · Why AgentFit · Dimensions · Interpretability · Scaling · Docs · Examples
+What is AgentFit?
+AgentFit is an open-source, enterprise-grade agent evaluation and governance framework . It gives teams a structured, reproducible way to assess AI agents across seven behavioural dimensions — then produces a binary governance decision (PASS / FAIL against thresholds you define) alongside reliability statistics and an LLM-grounded audit narrative.
+It is framework-agnostic : bring your OpenAI, Anthropic, Google, vLLM, Ollama, or fully custom agent. AgentFit evaluates it through a universal protocol without changing a single line of agent code.
+Define requirements → Run k trials → Governance decision → Audit trail
+(BNP profile) (7 dimensions) PASS / FAIL + rationale (harness snapshot)
+Research grounding. AgentFit is built on three published findings from the agent evaluation literature:
+Binary decisions outperform continuous scores. A 0.74 Fit Score has the same central-tendency bias and inter-rater instability as a Likert "3". Enterprise governance needs a decision — deploy or block — not a float. AgentFit surfaces the binary decision as the headline; the continuous score is kept as supporting evidence for tracking deltas over time.
+Reliability ≠ capability. Pass@k (at least one of k trials passes) measures capability; Pass^k (every trial passes) measures reliability. An autonomous fraud-detection workflow must require Pass^k. A creative-content workflow with human review may accept Pass@k. AgentFit computes both from the same run.
+The harness is part of what you're measuring. Model version, temperature, tools available, and scenario seed are not neutral background — they determine outcomes. AgentFit snapshots the harness alongside every result so re-runs are comparable and regression alerts are meaningful.
+Why AgentFit?
+The Problem
+Organisations are deploying AI agents at speed — for customer service, code generation, data analysis, compliance workflows. But the honest answer to "how do I know if this agent is good enough?" is still: nobody really knows.
+Existing solutions fall into one of three traps:
+Approach
+What it gives you
+What's missing
+Benchmark suites (SWE-Bench, HumanEval, MMLU, HELM)
+Standardised task accuracy on curated datasets
+No business context; code-centric; no production behaviours
+Framework-native evals (OpenAI Evals, LangSmith)
+Tight loop with a single provider
+Vendor-locked; can't compare across providers; no compliance model
+Manual QA / vibe-checks
+Cheap to start
+Unscalable, inconsistent, no audit trail
+Raw metrics dashboards
+Latency, token counts, error rates
+Operational, not behavioural; doesn't answer "is this agent fit for my use case?"
+None of these answer: "Is this agent fit for my business needs — and can you explain why?"
+How AgentFit Solves This
+AgentFit introduces two concepts that together close the gap:
+1. Business Need Profiles (BNPs)
+A BNP is a lightweight markdown file that expresses your organisation's agent requirements in a structured, machine-readable way: which capabilities matter, how they should be weighted, what compliance standards apply, and what task complexity you're operating at. Every evaluation is anchored to a BNP, so scores are relative to your context , not an abstract benchmark.
+# Profile: Customer Service Agent
+## Metadata
+- Organization: Acme Corp
+- Domain: customer_service
+- Description: AI agent for handling billing complaints and refunds
+## Agent Requirements
+- Task Understanding: Correctly interprets customer issues (required, priority: critical)
+- Tool Use: Calls billing and payment APIs reliably (required, priority: critical)
+- Error Recovery: Handles API failures gracefully (required, priority: high)
+## Evaluation Setup
+- Complexity: moderate
+- Dimensions:
+- task_competence: 0.6
+- tool_use: 0.4
+## Compliance
+- GDPR compliant data handling
+- Audit trail maintenance
+2. LLM-Powered Interpretability
+After scoring, AgentFit packages the full evaluation — scores, sub-metric breakdowns, weighted arithmetic, BNP context — into a structured prompt and sends it to your chosen LLM. The model returns natural-language explanations grounded in your requirements:
+"task_competence scored 82% (contributing 0.492 to the overall 0.74). The agent completed the primary task (task_success: 100%), but only covered 3 of 5 expected billing workflow steps (step_coverage: 60%, weighted 30%). For a customer service agent in a GDPR-regulated environment, incomplete step coverage is a material risk — a missed "confirm resolution" step creates an audit gap."
+This is not post-hoc commentary. The LLM sees the exact calculation trail — every sub-metric weight, every contribution to the overall score — so its explanations are arithmetically grounded, not hallucinated summaries.
+How AgentFit Builds on Existing Benchmarks
+AgentFit is complementary to , not a replacement for, the established evaluation ecosystem.
+Framework
+Focus
+AgentFit relationship
+SWE-Bench
+Code patch correctness
+Task Competence dimension can wrap SWE-Bench scenarios as test cases
+HumanEval / MBPP
+Python function generation
+Feeds into Task Competence and Tool Use dimensions
+HELM
+Holistic LLM capability
+AgentFit adds agentic behaviours HELM doesn't capture: tool calls, escalation, compliance
+AgentBench
+Multi-task agent capability
+Similar spirit; AgentFit adds business context (BNPs) and interpretability
+MT-Bench
+Multi-turn instruction following
+Can be embedded as a scenario within Task Competence
+TrustLLM / SafetyBench
+Safety and alignment
+Extends into AgentFit's Safety & Alignment dimension with production constraints
+The key insight: most benchmarks evaluate model capability on canonical tasks. AgentFit evaluates agent fitness for a specific business deployment — a higher-order question that only makes sense in context.
+Evaluation Dimensions
+Seven dimensions cover the full lifecycle of production agent behaviour. Each produces a 0–1 score with sub-metrics, weighted feedback, and an LLM interpretation.
+Dimension
+What it measures
+Default weight
+Task Competence
+Understanding, planning, step execution, error recovery
+15%
+Tool Use & Integration
+Tool selection correctness, API call success, parameter accuracy
+15%
+Autonomy & Escalation
+When to act independently vs. escalate to a human
+15%
+Safety & Alignment
+Robustness to adversarial inputs, refusal behaviour, PII handling
+15%
+Compliance & Auditability
+Regulatory adherence, audit trail completeness, log quality
+15%
+Operational Performance
+Latency, throughput, token efficiency, cost
+10%
+Deployment Compatibility
+Infrastructure fit, API stability, environment constraints
+15%
+BNPs override these defaults — a fintech company running a compliance-critical workflow might weight Compliance & Auditability at 40%.
+Getting Started
+Installation
+# Core framework (includes httpx — enough to evaluate against any local/self-hosted model)
+pip install agentfit
+# Add provider SDKs for the *agent under test* or for interpretation
+pip install agentfit[openai] # OpenAI (GPT-4o, o1)
+pip install agentfit[anthropic] # Anthropic Claude (required for AnthropicAdapter)
+pip install agentfit[google] # Google Gemini / AgentKit
+pip install agentfit[mistral] # Mistral
+# Install all providers and dev tools
+pip install agentfit[all]
+Self-hosted models (vLLM, Ollama, LM Studio, llama.cpp): no extra SDK needed.
+AgentFit's OpenAICompatibleAdapter talks directly to any /v1/chat/completions endpoint
+using httpx , which ships with the core install.
+Groq, Together AI, DeepSeek, Qwen are cloud-hosted but OpenAI-compatible —
+agentfit[openai] covers them, or use OpenAICompatibleAdapter without any extra install.
+Step 1 — Define your BNP
+Save this as my_bnp.md . BNPs now carry per-dimension governance thresholds , reliability requirements, and scenario lifecycle tags alongside weights:
+# Profile: Support Agent
+## Metadata
+- Organization: My Company
+- Domain: customer_service
+- Description: Handles refunds and account queries
+## Agent Requirements
+- Task Completion: Resolves issues end-to-end (required, priority: critical)
+- Tool Reliability: Calls APIs without failure (required, priority: high)
+- Safety: Refuses harmful requests (required, priority: critical)
+## Evaluation Setup
+- Complexity: moderate
+- K Trials: 5 # run 5 independent trials → Pass@5 + Pass^5
+- Dimensions:
+# name weight threshold reliability lifecycle
+- task_competence: 0.40, threshold: 0.80
+- tool_use: 0.30, threshold: 0.85
+- safety_alignment: 0.30, threshold: 0.95, reliability: pass_all_k, lifecycle: regression
+## Constraints
+- Max Latency: 5000ms
+## Compliance
+- GDPR
+Key fields:
+threshold — minimum score to PASS this dimension (default 0.70). If any dimension falls below its threshold, the governance decision is FAIL .
+reliability: pass_all_k — every trial must pass (required for autonomous workflows). Default pass_at_k requires only one trial to pass.
+lifecycle: regression — this dimension is a regression guard; any failure triggers a ⚠ REGRESSION ALERT in the report.
+K Trials — number of independent evaluation trials (default 1). Use 5–10 for governance-grade reliability stats.
+Step 2 — Run via CLI
+# Default: mock agent (no LLM needed — great for CI and pipeline smoke-tests)
+agentfit evaluate --bnp my_bnp.md --output results.json
+# Reproducible mock run (same seed → same scores every time)
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--mock-seed 42 --mock-behavior always_succeed
+# Governance mode: 5 trials → Pass@5 + Pass^5 per dimension
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--trials 5
+# ── Real agent: self-hosted vLLM ───────────────────────────────────────────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter vllm \
+--agent-model meta-llama/Meta-Llama-3-70B-Instruct \
+--agent-base-url http://localhost:8000/v1
+# ── Real agent: Ollama (no key required) ──────────────────────────────────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter ollama \
+--agent-model llama3
+# ── Real agent: LM Studio ─────────────────────────────────────────────────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter lmstudio \
+--agent-model my-local-model \
+--agent-base-url http://localhost:1234/v1
+# ── Real agent: OpenAI ────────────────────────────────────────────────────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter openai \
+--agent-model gpt-4o \
+--agent-api-key sk-...
+# ── Real agent: Anthropic Claude ──────────────────────────────────────────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter anthropic \
+--agent-model claude-sonnet-4-6 \
+--agent-api-key sk-ant-...
+# ── Real agent: Groq / Together / DeepSeek (OpenAI-compatible cloud) ──────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter groq \
+--agent-model llama-3.3-70b-versatile \
+--agent-api-key gsk_...
+# ── Add LLM interpretation on top of any of the above ─────────────────────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter vllm --agent-model llama3 \
+--agent-base-url http://localhost:8000/v1 \
+--interpret --provider openai --api-key sk-...
+# Use environment variables instead of inline flags
+export AGENT_API_KEY= " sk-... "
+export AGENTFIT_API_KEY= " sk-... "
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter openai --interpret
+All --agent-* flags control the agent being evaluated . The --provider / --api-key / --base-url flags control the LLM used for interpretation — they can be different models.
+Step 3 — Run via Python
+Option A — Mock agent (no LLM required)
+import asyncio
+from agentfit . core . evaluator import Evaluator , EvaluationRequest
+from agentfit . bnp . parser import BNPParser
+from agentfit . mock_agent import MockAgent
+from agentfit . scenarios import ScenarioLoader
+from agentfit . output import ReportGenerator
+async def main ():
+bnp = BNPParser . parse_markdown ( open ( "my_bnp.md" ). read ())
+scenario = ScenarioLoader . get_scenario ( domain = bnp . domain , complexity = bnp . task_complexity )
+# Seeded mock: same seed → identical scores every run (good for CI)
+agent = MockAgent ( agent_id = "support-bot-v1" , success_rate = 0.85 , seed = 42 )
+request = EvaluationRequest (
+agent_id = "support-bot-v1" ,
+agent_interface = agent . to_agent_interface (),
+scenario = scenario ,
+bnp_profile = bnp ,
+result = await Evaluator (). evaluate ( request )
+ReportGenerator . print_summary ( result , bnp )
+asyncio . run ( main ())
+Option B — Self-hosted model (vLLM / Ollama / LM Studio / any OpenAI-compatible endpoint)
+import asyncio
+from agentfit . core . evaluator import Evaluator , EvaluationRequest
+from agentfit . bnp . parser import BNPParser
+from agentfit . adapters import OpenAICompatibleAdapter
+from agentfit . scenarios import ScenarioLoader
+from agentfit . output import ReportGenerator
+async def main ():
+bnp = BNPParser . parse_markdown ( open ( "my_bnp.md" ). read ())
+scenario = ScenarioLoader . get_scenario ( domain = bnp . domain , complexity = bnp . task_complexity )
+# Works with vLLM, Ollama, LM Studio, llama.cpp — anything at /v1/chat/completions
+adapter = OpenAICompatibleAdapter (
+agent_id = "llama3-70b" ,
+agent_name = "Llama-3 70B" ,
+base_url = "http://localhost:8000/v1" , # your server
+model = "meta-llama/Meta-Llama-3-70B-Instruct" ,
+api_key = "none" , # omit or set "none" for local servers
+request = EvaluationRequest (
+agent_id = "llama3-70b" ,
+agent_interface = adapter . to_agent_interface (),
+scenario = scenario ,
+bnp_profile = bnp ,
+result = await Evaluator (). evaluate ( request )
+ReportGenerator . print_summary ( result , bnp )
+asyncio . run ( main ())
+Option C — OpenAI / Anthropic / cloud providers
+from agentfit . adapters import OpenAIAdapter , AnthropicAdapter
+# OpenAI (reads OPENAI_API_KEY from env if api_key= is omitted)
+adapter = OpenAIAdapter ( agent_id = "gpt4o" , agent_name = "GPT-4o" , model = "gpt-4o" )
+# Anthropic (requires: pip install agentfit[anthropic])
+adapter = AnthropicAdapter (
+agent_id = "claude" , agent_name = "Claude Sonnet" ,
+model = "claude-sonnet-4-6" , api_key = "sk-ant-..."
+Option D — With LLM interpretation
+from agentfit . interpretability . config import InterpretabilityConfig , LLMProvider
+request = EvaluationRequest (
+agent_id = "my-agent" ,
+agent_interface = adapter . to_agent_interface (),
+scenario = scenario ,
+bnp_profile = bnp ,
+interpretability = InterpretabilityConfig (
+enabled = True ,
+provider = LLMProvider . OPENAI ,
+api_key = "sk-..." ,
+model = "gpt-4o" ,
+),
+result = await Evaluator (). evaluate ( request )
+if result . interpretation :
+print ( result . interpretation . overall_interpretation . summary )
+for rec in result . interpretation . recommendations :
+print ( f"[ { rec . priority . upper () } ] { rec . area } : { rec . suggestion } " )
+Step 4 — REST API
+# Start the server
+python -m agentfit.server.app
+# Upload your BNP
+curl -X POST http://localhost:8000/api/bnp-profiles/upload \
+-F " file=@my_bnp.md "
+# Submit evaluation (with interpretation)
+curl -X POST http://localhost:8000/api/evaluate \
+-H " Content-Type: application/json " \
+-d ' {
+"agent_id": "support-bot-v1",
+"scenario": { "id": "cs-001", "task": "Resolve billing complaint", "expected_steps": [...] },
+"bnp_profile_id": "<id from upload>",
+"interpretability": { "provider": "openai", "api_key": "sk-..." }
+} '
+# Poll for result
+curl http://localhost:8000/api/evaluations/ < eval_id >
+Governance Model
+Why a decision, not a score
+Continuous scores (0.74, 0.81…) have well-documented problems in evaluation research: central tendency bias, annotator disagreement, and the practical problem that "0.74" gives a compliance team nothing to act on. AgentFit moves the headline output to a binary governance decision anchored to thresholds your organisation defines:
+GOVERNANCE DECISION: ✗ FAIL
+FAIL on: safety_alignment: 0.71 < threshold 0.95
+Continuous scores remain available per sub-metric as supporting evidence and for tracking deltas over time — they're just not the headline.
+Pass@k vs Pass^k — capability vs reliability
+An agent that succeeds once and fails intermittently is unacceptable for autonomous production use, even if its average score looks fine.
+Metric
+Definition
+Use case
+Pass@k
+At least 1 of k trials passes
+Human-in-the-loop: a human can select the best output
+Pass^k
+Every trial passes (strict)
+Autonomous: no human review; reliability is everything
+Dispersion (σ)
+Std-dev of per-trial scores
+Signals unstable behaviour even when mean is acceptable
+Set K Trials: 5 in your BNP and reliability: pass_all_k on safety-critical dimensions. The output:
+RELIABILITY (5 trials)
+safety_alignment Pass@5: FAIL (0%) Pass^5: FAIL (0%) σ=0.120
+task_competence Pass@5: PASS (100%) Pass^5: PASS (100%) σ=0.031
+tool_use Pass@5: PASS (100%) Pass^5: FAIL (0%) σ=0.088
+Harness snapshots — reproducible re-runs
+Every evaluation result embeds a harness snapshot : model name, framework, tools available, scenario ID, k_trials, and AgentFit version. This makes re-runs on a later date comparable — or flags them as incomparable when t
+
+## full_text
+
+Uh oh!
+There was an error while loading. Please reload this page .
+RecruitBase
+agentfit
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+Star
+main
+Branches Tags
+Go to file
+Code Open more actions menu
+Folders and files
+Name Name Last commit message
+Last commit date
+Latest commit
+History
+7 Commits
+7 Commits
+.claude
+.claude
+agentfit
+agentfit
+docs
+docs
+examples
+examples
+hooks
+hooks
+scripts
+scripts
+tests
+tests
+.dockerignore
+.dockerignore
+.gitignore
+.gitignore
+CHANGELOG.md
+CHANGELOG.md
+COMPLETE_SETUP.md
+COMPLETE_SETUP.md
+CONTRIBUTING.md
+CONTRIBUTING.md
+GETTING_STARTED.md
+GETTING_STARTED.md
+README.md
+README.md
+pyproject.toml
+pyproject.toml
+results_e2e.json
+results_e2e.json
+View all files
+Repository files navigation
+AgentFit
+The Agent Evaluation & Interpretability Framework
+Stop trusting the ai agents hype. Objectively evaluate which agent is appropriate for your business needs.
+Getting Started · Why AgentFit · Dimensions · Interpretability · Scaling · Docs · Examples
+What is AgentFit?
+AgentFit is an open-source, enterprise-grade agent evaluation and governance framework . It gives teams a structured, reproducible way to assess AI agents across seven behavioural dimensions — then produces a binary governance decision (PASS / FAIL against thresholds you define) alongside reliability statistics and an LLM-grounded audit narrative.
+It is framework-agnostic : bring your OpenAI, Anthropic, Google, vLLM, Ollama, or fully custom agent. AgentFit evaluates it through a universal protocol without changing a single line of agent code.
+Define requirements → Run k trials → Governance decision → Audit trail
+(BNP profile) (7 dimensions) PASS / FAIL + rationale (harness snapshot)
+Research grounding. AgentFit is built on three published findings from the agent evaluation literature:
+Binary decisions outperform continuous scores. A 0.74 Fit Score has the same central-tendency bias and inter-rater instability as a Likert "3". Enterprise governance needs a decision — deploy or block — not a float. AgentFit surfaces the binary decision as the headline; the continuous score is kept as supporting evidence for tracking deltas over time.
+Reliability ≠ capability. Pass@k (at least one of k trials passes) measures capability; Pass^k (every trial passes) measures reliability. An autonomous fraud-detection workflow must require Pass^k. A creative-content workflow with human review may accept Pass@k. AgentFit computes both from the same run.
+The harness is part of what you're measuring. Model version, temperature, tools available, and scenario seed are not neutral background — they determine outcomes. AgentFit snapshots the harness alongside every result so re-runs are comparable and regression alerts are meaningful.
+Why AgentFit?
+The Problem
+Organisations are deploying AI agents at speed — for customer service, code generation, data analysis, compliance workflows. But the honest answer to "how do I know if this agent is good enough?" is still: nobody really knows.
+Existing solutions fall into one of three traps:
+Approach
+What it gives you
+What's missing
+Benchmark suites (SWE-Bench, HumanEval, MMLU, HELM)
+Standardised task accuracy on curated datasets
+No business context; code-centric; no production behaviours
+Framework-native evals (OpenAI Evals, LangSmith)
+Tight loop with a single provider
+Vendor-locked; can't compare across providers; no compliance model
+Manual QA / vibe-checks
+Cheap to start
+Unscalable, inconsistent, no audit trail
+Raw metrics dashboards
+Latency, token counts, error rates
+Operational, not behavioural; doesn't answer "is this agent fit for my use case?"
+None of these answer: "Is this agent fit for my business needs — and can you explain why?"
+How AgentFit Solves This
+AgentFit introduces two concepts that together close the gap:
+1. Business Need Profiles (BNPs)
+A BNP is a lightweight markdown file that expresses your organisation's agent requirements in a structured, machine-readable way: which capabilities matter, how they should be weighted, what compliance standards apply, and what task complexity you're operating at. Every evaluation is anchored to a BNP, so scores are relative to your context , not an abstract benchmark.
+# Profile: Customer Service Agent
+## Metadata
+- Organization: Acme Corp
+- Domain: customer_service
+- Description: AI agent for handling billing complaints and refunds
+## Agent Requirements
+- Task Understanding: Correctly interprets customer issues (required, priority: critical)
+- Tool Use: Calls billing and payment APIs reliably (required, priority: critical)
+- Error Recovery: Handles API failures gracefully (required, priority: high)
+## Evaluation Setup
+- Complexity: moderate
+- Dimensions:
+- task_competence: 0.6
+- tool_use: 0.4
+## Compliance
+- GDPR compliant data handling
+- Audit trail maintenance
+2. LLM-Powered Interpretability
+After scoring, AgentFit packages the full evaluation — scores, sub-metric breakdowns, weighted arithmetic, BNP context — into a structured prompt and sends it to your chosen LLM. The model returns natural-language explanations grounded in your requirements:
+"task_competence scored 82% (contributing 0.492 to the overall 0.74). The agent completed the primary task (task_success: 100%), but only covered 3 of 5 expected billing workflow steps (step_coverage: 60%, weighted 30%). For a customer service agent in a GDPR-regulated environment, incomplete step coverage is a material risk — a missed "confirm resolution" step creates an audit gap."
+This is not post-hoc commentary. The LLM sees the exact calculation trail — every sub-metric weight, every contribution to the overall score — so its explanations are arithmetically grounded, not hallucinated summaries.
+How AgentFit Builds on Existing Benchmarks
+AgentFit is complementary to , not a replacement for, the established evaluation ecosystem.
+Framework
+Focus
+AgentFit relationship
+SWE-Bench
+Code patch correctness
+Task Competence dimension can wrap SWE-Bench scenarios as test cases
+HumanEval / MBPP
+Python function generation
+Feeds into Task Competence and Tool Use dimensions
+HELM
+Holistic LLM capability
+AgentFit adds agentic behaviours HELM doesn't capture: tool calls, escalation, compliance
+AgentBench
+Multi-task agent capability
+Similar spirit; AgentFit adds business context (BNPs) and interpretability
+MT-Bench
+Multi-turn instruction following
+Can be embedded as a scenario within Task Competence
+TrustLLM / SafetyBench
+Safety and alignment
+Extends into AgentFit's Safety & Alignment dimension with production constraints
+The key insight: most benchmarks evaluate model capability on canonical tasks. AgentFit evaluates agent fitness for a specific business deployment — a higher-order question that only makes sense in context.
+Evaluation Dimensions
+Seven dimensions cover the full lifecycle of production agent behaviour. Each produces a 0–1 score with sub-metrics, weighted feedback, and an LLM interpretation.
+Dimension
+What it measures
+Default weight
+Task Competence
+Understanding, planning, step execution, error recovery
+15%
+Tool Use & Integration
+Tool selection correctness, API call success, parameter accuracy
+15%
+Autonomy & Escalation
+When to act independently vs. escalate to a human
+15%
+Safety & Alignment
+Robustness to adversarial inputs, refusal behaviour, PII handling
+15%
+Compliance & Auditability
+Regulatory adherence, audit trail completeness, log quality
+15%
+Operational Performance
+Latency, throughput, token efficiency, cost
+10%
+Deployment Compatibility
+Infrastructure fit, API stability, environment constraints
+15%
+BNPs override these defaults — a fintech company running a compliance-critical workflow might weight Compliance & Auditability at 40%.
+Getting Started
+Installation
+# Core framework (includes httpx — enough to evaluate against any local/self-hosted model)
+pip install agentfit
+# Add provider SDKs for the *agent under test* or for interpretation
+pip install agentfit[openai] # OpenAI (GPT-4o, o1)
+pip install agentfit[anthropic] # Anthropic Claude (required for AnthropicAdapter)
+pip install agentfit[google] # Google Gemini / AgentKit
+pip install agentfit[mistral] # Mistral
+# Install all providers and dev tools
+pip install agentfit[all]
+Self-hosted models (vLLM, Ollama, LM Studio, llama.cpp): no extra SDK needed.
+AgentFit's OpenAICompatibleAdapter talks directly to any /v1/chat/completions endpoint
+using httpx , which ships with the core install.
+Groq, Together AI, DeepSeek, Qwen are cloud-hosted but OpenAI-compatible —
+agentfit[openai] covers them, or use OpenAICompatibleAdapter without any extra install.
+Step 1 — Define your BNP
+Save this as my_bnp.md . BNPs now carry per-dimension governance thresholds , reliability requirements, and scenario lifecycle tags alongside weights:
+# Profile: Support Agent
+## Metadata
+- Organization: My Company
+- Domain: customer_service
+- Description: Handles refunds and account queries
+## Agent Requirements
+- Task Completion: Resolves issues end-to-end (required, priority: critical)
+- Tool Reliability: Calls APIs without failure (required, priority: high)
+- Safety: Refuses harmful requests (required, priority: critical)
+## Evaluation Setup
+- Complexity: moderate
+- K Trials: 5 # run 5 independent trials → Pass@5 + Pass^5
+- Dimensions:
+# name weight threshold reliability lifecycle
+- task_competence: 0.40, threshold: 0.80
+- tool_use: 0.30, threshold: 0.85
+- safety_alignment: 0.30, threshold: 0.95, reliability: pass_all_k, lifecycle: regression
+## Constraints
+- Max Latency: 5000ms
+## Compliance
+- GDPR
+Key fields:
+threshold — minimum score to PASS this dimension (default 0.70). If any dimension falls below its threshold, the governance decision is FAIL .
+reliability: pass_all_k — every trial must pass (required for autonomous workflows). Default pass_at_k requires only one trial to pass.
+lifecycle: regression — this dimension is a regression guard; any failure triggers a ⚠ REGRESSION ALERT in the report.
+K Trials — number of independent evaluation trials (default 1). Use 5–10 for governance-grade reliability stats.
+Step 2 — Run via CLI
+# Default: mock agent (no LLM needed — great for CI and pipeline smoke-tests)
+agentfit evaluate --bnp my_bnp.md --output results.json
+# Reproducible mock run (same seed → same scores every time)
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--mock-seed 42 --mock-behavior always_succeed
+# Governance mode: 5 trials → Pass@5 + Pass^5 per dimension
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--trials 5
+# ── Real agent: self-hosted vLLM ───────────────────────────────────────────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter vllm \
+--agent-model meta-llama/Meta-Llama-3-70B-Instruct \
+--agent-base-url http://localhost:8000/v1
+# ── Real agent: Ollama (no key required) ──────────────────────────────────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter ollama \
+--agent-model llama3
+# ── Real agent: LM Studio ─────────────────────────────────────────────────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter lmstudio \
+--agent-model my-local-model \
+--agent-base-url http://localhost:1234/v1
+# ── Real agent: OpenAI ────────────────────────────────────────────────────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter openai \
+--agent-model gpt-4o \
+--agent-api-key sk-...
+# ── Real agent: Anthropic Claude ──────────────────────────────────────────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter anthropic \
+--agent-model claude-sonnet-4-6 \
+--agent-api-key sk-ant-...
+# ── Real agent: Groq / Together / DeepSeek (OpenAI-compatible cloud) ──────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter groq \
+--agent-model llama-3.3-70b-versatile \
+--agent-api-key gsk_...
+# ── Add LLM interpretation on top of any of the above ─────────────────────
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter vllm --agent-model llama3 \
+--agent-base-url http://localhost:8000/v1 \
+--interpret --provider openai --api-key sk-...
+# Use environment variables instead of inline flags
+export AGENT_API_KEY= " sk-... "
+export AGENTFIT_API_KEY= " sk-... "
+agentfit evaluate --bnp my_bnp.md --output results.json \
+--agent-adapter openai --interpret
+All --agent-* flags control the agent being evaluated . The --provider / --api-key / --base-url flags control the LLM used for interpretation — they can be different models.
+Step 3 — Run via Python
+Option A — Mock agent (no LLM required)
+import asyncio
+from agentfit . core . evaluator import Evaluator , EvaluationRequest
+from agentfit . bnp . parser import BNPParser
+from agentfit . mock_agent import MockAgent
+from agentfit . scenarios import ScenarioLoader
+from agentfit . output import ReportGenerator
+async def main ():
+bnp = BNPParser . parse_markdown ( open ( "my_bnp.md" ). read ())
+scenario = ScenarioLoader . get_scenario ( domain = bnp . domain , complexity = bnp . task_complexity )
+# Seeded mock: same seed → identical scores every run (good for CI)
+agent = MockAgent ( agent_id = "support-bot-v1" , success_rate = 0.85 , seed = 42 )
+request = EvaluationRequest (
+agent_id = "support-bot-v1" ,
+agent_interface = agent . to_agent_interface (),
+scenario = scenario ,
+bnp_profile = bnp ,
+result = await Evaluator (). evaluate ( request )
+ReportGenerator . print_summary ( result , bnp )
+asyncio . run ( main ())
+Option B — Self-hosted model (vLLM / Ollama / LM Studio / any OpenAI-compatible endpoint)
+import asyncio
+from agentfit . core . evaluator import Evaluator , EvaluationRequest
+from agentfit . bnp . parser import BNPParser
+from agentfit . adapters import OpenAICompatibleAdapter
+from agentfit . scenarios import ScenarioLoader
+from agentfit . output import ReportGenerator
+async def main ():
+bnp = BNPParser . parse_markdown ( open ( "my_bnp.md" ). read ())
+scenario = ScenarioLoader . get_scenario ( domain = bnp . domain , complexity = bnp . task_complexity )
+# Works with vLLM, Ollama, LM Studio, llama.cpp — anything at /v1/chat/completions
+adapter = OpenAICompatibleAdapter (
+agent_id = "llama3-70b" ,
+agent_name = "Llama-3 70B" ,
+base_url = "http://localhost:8000/v1" , # your server
+model = "meta-llama/Meta-Llama-3-70B-Instruct" ,
+api_key = "none" , # omit or set "none" for local servers
+request = EvaluationRequest (
+agent_id = "llama3-70b" ,
+agent_interface = adapter . to_agent_interface (),
+scenario = scenario ,
+bnp_profile = bnp ,
+result = await Evaluator (). evaluate ( request )
+ReportGenerator . print_summary ( result , bnp )
+asyncio . run ( main ())
+Option C — OpenAI / Anthropic / cloud providers
+from agentfit . adapters import OpenAIAdapter , AnthropicAdapter
+# OpenAI (reads OPENAI_API_KEY from env if api_key= is omitted)
+adapter = OpenAIAdapter ( agent_id = "gpt4o" , agent_name = "GPT-4o" , model = "gpt-4o" )
+# Anthropic (requires: pip install agentfit[anthropic])
+adapter = AnthropicAdapter (
+agent_id = "claude" , agent_name = "Claude Sonnet" ,
+model = "claude-sonnet-4-6" , api_key = "sk-ant-..."
+Option D — With LLM interpretation
+from agentfit . interpretability . config import InterpretabilityConfig , LLMProvider
+request = EvaluationRequest (
+agent_id = "my-agent" ,
+agent_interface = adapter . to_agent_interface (),
+scenario = scenario ,
+bnp_profile = bnp ,
+interpretability = InterpretabilityConfig (
+enabled = True ,
+provider = LLMProvider . OPENAI ,
+api_key = "sk-..." ,
+model = "gpt-4o" ,
+),
+result = await Evaluator (). evaluate ( request )
+if result . interpretation :
+print ( result . interpretation . overall_interpretation . summary )
+for rec in result . interpretation . recommendations :
+print ( f"[ { rec . priority . upper () } ] { rec . area } : { rec . suggestion } " )
+Step 4 — REST API
+# Start the server
+python -m agentfit.server.app
+# Upload your BNP
+curl -X POST http://localhost:8000/api/bnp-profiles/upload \
+-F " file=@my_bnp.md "
+# Submit evaluation (with interpretation)
+curl -X POST http://localhost:8000/api/evaluate \
+-H " Content-Type: application/json " \
+-d ' {
+"agent_id": "support-bot-v1",
+"scenario": { "id": "cs-001", "task": "Resolve billing complaint", "expected_steps": [...] },
+"bnp_profile_id": "<id from upload>",
+"interpretability": { "provider": "openai", "api_key": "sk-..." }
+} '
+# Poll for result
+curl http://localhost:8000/api/evaluations/ < eval_id >
+Governance Model
+Why a decision, not a score
+Continuous scores (0.74, 0.81…) have well-documented problems in evaluation research: central tendency bias, annotator disagreement, and the practical problem that "0.74" gives a compliance team nothing to act on. AgentFit moves the headline output to a binary governance decision anchored to thresholds your organisation defines:
+GOVERNANCE DECISION: ✗ FAIL
+FAIL on: safety_alignment: 0.71 < threshold 0.95
+Continuous scores remain available per sub-metric as supporting evidence and for tracking deltas over time — they're just not the headline.
+Pass@k vs Pass^k — capability vs reliability
+An agent that succeeds once and fails intermittently is unacceptable for autonomous production use, even if its average score looks fine.
+Metric
+Definition
+Use case
+Pass@k
+At least 1 of k trials passes
+Human-in-the-loop: a human can select the best output
+Pass^k
+Every trial passes (strict)
+Autonomous: no human review; reliability is everything
+Dispersion (σ)
+Std-dev of per-trial scores
+Signals unstable behaviour even when mean is acceptable
+Set K Trials: 5 in your BNP and reliability: pass_all_k on safety-critical dimensions. The output:
+RELIABILITY (5 trials)
+safety_alignment Pass@5: FAIL (0%) Pass^5: FAIL (0%) σ=0.120
+task_competence Pass@5: PASS (100%) Pass^5: PASS (100%) σ=0.031
+tool_use Pass@5: PASS (100%) Pass^5: FAIL (0%) σ=0.088
+Harness snapshots — reproducible re-runs
+Every evaluation result embeds a harness snapshot : model name, framework, tools available, scenario ID, k_trials, and AgentFit version. This makes re-runs on a later date comparable — or flags them as incomparable when the harness changed.
+"harness" : {
+"agent_id" : " llama3-70b " ,
+"agent_framework" : " vllm " ,
+"model" : " meta-llama/Meta-Llama-3-70B-Instruct " ,
+"k_trials" : 5 ,
+"scenario_id" : " cs-moderate-001 " ,
+"captured_at" : " 2026-05-29T12:34:56Z " ,
+"agentfit_version" : " 0.2.0 "
+Failure modes — structured audit trail
+Every failed trial produces a FailureMode record (dimension, trial number, description, severity, optional trace). Failure modes accumulate across trials and evaluations. Use them to:
+Identify patterns across runs ("safety_alignment fails on trial 3 consistently")
+Tag and prioritise failure categories
+Promote recurring failures to permanent regression scenarios in the BNP
+Scenario lifecycle: capability vs regression
+BNP dimensions carry a lifecycle field:
+capability (default) — scores are expected to improve over time; failures here drive iteration.
+regression — scores must stay near 100%; any failure triggers an immediate ⚠ REGRESSION ALERT . Use this for safety dimensions and core business-critical behaviours once they are working.
+Python usage
+from agentfit . core . evaluator import Evaluator , EvaluationRequest
+from agentfit . core . trial import HarnessSnapshot
+request = EvaluationRequest (
+agent_id = "my-agent" ,
+agent_interface = adapter . to_agent_interface (),
+scenario = scenario ,
+bnp_profile = bnp ,
+k_trials = 5 , # run 5 independent trials
+harness = HarnessSnapshot ( # optional: override auto-detected values
+agent_id = "my-agent" ,
+agent_framework = "vllm" ,
+model = "llama3-70b" ,
+temperature = 0.0 ,
+),
+result = await Evaluator (). evaluate ( request )
+# Headline: governance decision
+print ( result . governance . decision ) # "PASS" or "FAIL"
+print ( result . governance . rationale ) # human-readable reason
+print ( result . governance . failing_dimensions ) # ["safety_alignment"]
+# Reliability
+for dim , rel in result . reliability . items ():
+print ( f" { dim } : Pass@ { rel . k } = { rel . pass_at_k } , Pass^ { rel . k } = { rel . pass_all_k } , σ= { rel . dispersion :.3f } " )
+# Supporting evidence (continuous)
+print ( result . overall_score ) # still available; not the headline
+# Failure modes
+for fm in result . failure_modes :
+print ( f"[ { fm . severity } ] trial { fm . trial_num } / { fm . dimension } : { fm . description } " )
+# Harness snapshot
+print ( result . harness_snapshot . to_dict ())
+Connecting Self-Hosted & Custom LLMs
+AgentFit ships a first-class OpenAICompatibleAdapter that lets you evaluate any model you can run locally or self-host — no extra dependencies required beyond the core install.
+Supported backends
+Backend
+Default URL
+--agent-adapter
+Extra deps
+vLLM
+http://localhost:8000/v1
+vllm
+none
+Ollama
+http://localhost:11434/v1
+ollama
+none
+LM Studio
+http://localhost:1234/v1
+lmstudio
+none
+llama.cpp server
+http://localhost:8080/v1
+openai_compatible
+none
+LocalAI
+http://localhost:8080/v1
+localai
+none
+Groq
+https://api.groq.com/openai/v1
+groq
+none
+Together AI
+https://api.together.xyz/v1
+together
+none
+DeepSeek
+https://api.deepseek.com/v1
+deepseek
+none
+Any custom endpoint
+(you supply)
+openai_compatible
+none
+How it works
+OpenAICompatibleAdapter runs a real multi-step agentic loop:
+Sends the task + tool definitions to your model via /v1/chat/completions
+If the model responds with tool calls, executes them and feeds the results back
+Repeats up to max_steps or until the model returns a plain text response
+Captures every ToolCall , ToolResult , and Message into the UAP ExecutionResult that all evaluation dimensions inspect
+Custom tool execution
+By default the adapter returns a structured mock acknowledgment for every tool call, which is enough to measure whether the model selects the right tools and parameters.
+To wire in real tools, subclass and override _execute_tool() :
+from agentfit . adapters import OpenAICompatibleAdapter
+from agentfit . protocol import ToolCall
+from typing import Any , List , Optional
+class MyVLLMAdapter ( OpenAICompatibleAdapter ):
+def _execute_tool ( self , tc : ToolCall , tools ) -> Any :
+if tc . tool_name == "search_kb" :
+return my_knowledge_base . search ( tc . parameters [ "query" ])
+if tc . tool_name == "create_ticket" :
+return ticket_system . create ( ** tc . parameters )
+return { "status" : "unknown_tool" , "tool" : tc . tool_name }
+adapter = MyVLLMAdapter (
+agent_id = "support-llm" ,
+agent_name = "Support LLM" ,
+base_url = "http://localhost:8000/v1" ,
+model = "my-finetuned-llama3" ,
+Quick start: Ollama
+# 1. Install and start Ollama
+ollama pull llama3
+ollama serve
+# 2. Evaluate against your BNP (no API key needed)
+agentfit evaluate \
+--bnp my_bnp.md \
+--output results.json \
+--agent-adapter ollama \
+--agent-model llama3
+Quick start: vLLM
+# 1. Start vLLM server
+python -m vllm.entrypoints.openai.api_server \
+--model meta-llama/Meta-Llama-3-70B-Instruct \
+--port 8000
+# 2. Evaluate
+agentfit evaluate \
+--bnp my_bnp.md \
+--output results.json \
+--agent-adapter vllm \
+--agent-model meta-llama/Meta-Llama-3-70B-Instruct \
+--agent-base-url http://localhost:8000/v1
+Interpretability Layer
+AgentFit is not a raw score framework. The interpretability layer transforms metric values into business-grounded narratives by sending the full calculation trail to an LLM of your choice.
+What the LLM receives:
+Complete BNP context (requirements, weights, compliance rules, domain)
+Per-dimension scores with every sub-metric, its value, and its weight contribution
+The exact weighted aggregation arithmetic (e.g., 0.82 × 0.60 = 0.492 )
+Pass/fail thresholds and whether they were met
+What comes back (structured JSON):
+dimension_interpretations — per-dimension summary, detailed explanation, strengths, weaknesses
+overall_interpretation — overall narrative, verdict, strengths/weaknesses
+recommendations — prioritised, actionable improvements tied to weakest areas
+Supported Providers
+Provider
+--provider
+Install
+Default model
+OpenAI
+openai
+agentfit[openai]
+gpt-4o-mini
+Anthropic
+anthropic
+agentfit[anthropic]
+claude-sonnet-4-20250514
+Google
+google
+agentfit[google]
+gemini-2.0-flash
+Mistral
+mistral
+agentfit[mistral]
+mistral-large-latest
+DeepSeek
+deepseek
+agentfit[openai]
+deepseek-chat
+Qwen (Alibaba)
+qwen
+agentfit[openai]
+qwen-plus
+Groq
+groq
+agentfit[openai]
+llama-3.3-70b-versatile
+Together AI
+together
+agentfit[openai]
+meta-llama/Llama-3-70b-chat-hf
+Ollama (local)
+ollama
+agentfit[openai]
+llama3.2 (no key needed)
+Any OpenAI-compat
+openai_compatible
+agentfit[openai]
+(set --model )
+# Groq (fast, free tier)
+agentfit evaluate --bnp my_bnp.md --output r.json \
+--interpret --provider groq --api-key gsk_...
+# Local Ollama (no key, no cost)
+agentfit evaluate --bnp my_bnp.md --output r.json \
+--interpret --provider ollama --model llama3.2
+# LM Studio / vLLM / any custom endpoint
+agentfit evaluate --bnp my_bnp.md --output r.json \
+--interpret --provider openai_compatible \
+--base-url http://localhost:1234/v1 --model my-model
+Architecture
+agentfit/
+├── core/
+│ ├── evaluator.py # Orchestrator: runs dimensions, aggregates, triggers interpretation
+│ └── dimension.py # Base class, DimensionResult, DimensionRegistry
+├── dimensions/ # 7 evaluation dimensions (one file each)
+│ ├── task_competence.py
+│ ├── tool_use.py
+│ ├── autonomy_escalation.py
+│ ├── safety_alignment.py
+│ ├── compliance_auditability.py
+│ ├── operational_performance.py
+│ └── deployment_compatibility.py
+├── interpretability/ # LLM-powered explanation engine
+│ ├── config.py # InterpretabilityConfig, LLMProvider, defaults
+│ ├── llm_client.py # Multi-provider async LLM client
+│ ├── prompts.py # Prompt construction with full calculation context
+│ └── interpreter.py # Orchestrates LLM call, parses response
+├── bnp/
+│ ├── schema.py # BNPProfile, AgentRequirement, DimensionWeight
+│ └── parser.py # Markdown → BNPProfile
+├── protocol/
+│ └── agent_protocol.py # UniversalAgentProtocol base class + execute() + to_agent_interface()
+├── core/
+│ ├── evaluator.py # Multi-trial orchestrator, governance decision, harness snapshot
+│ ├── dimension.py # Dimension base class, DimensionResult, DimensionRegistry
+│ └── trial.py # GovernanceDecision, ReliabilityResult, HarnessSnapshot, FailureMode
+├── adapters/
+│ ├── openai_compatible_adapter.py # Any /v1/chat/completions endpoint (vLLM, Ollama, etc.)
+│ ├── openai_adapter.py # OpenAI api.openai.com (inherits above)
+│ ├── anthropic_adapter.py # Anthropic Claude (real SDK with tool-use loop)
+│ ├── google_agentkit_adapter.py # Google Gemini / AgentKit
+│ └── generic_adapter.py # Wrap any Python callable
+├── server/
+│ └── app.py # FastAPI REST server
+├── cli.py # Click CLI
+└── scenarios.py # Built-in test scenarios (customer_service, healthcare, SWE)
+Evaluation data flow:
+EvaluationRequest
+├── agent_interface ──┐
+├── scenario ──┤──► 7 × Dimension.evaluate() ──► DimensionResult[]
+├── bnp_profile ──┘ (concurrent, asyncio.gather)
+└── interpretability config
+compute_overall_score(bnp_weights)
+Interpreter.interpret(result, bnp, weights)
+LLM API call
+EvaluationResult
+├── dimension_results (scores + metrics)
+├── overall_score
+└── interpretation (LLM explanations)
+Custom Adapters
+Option 1 — Subclass OpenAICompatibleAdapter (recommended for any HTTP endpoint)
+If your model server exposes /v1/chat/completions , the fastest path is to subclass
+OpenAICompatibleAdapter and override only _execute_tool() for real tool execution:
+from agentfit . adapters import OpenAICompatibleAdapter
+from agentfit . protocol import ToolCall , AgentAdapterRegistry
+from typing import Any
+class MyModelAdapter ( OpenAICompatibleAdapter ):
+def _execute_tool ( self , tc : ToolCall , tools ) -> Any :
+# Replace mock with real tool logic
+if tc . tool_name == "query_db" :
+return my_db . query ( tc . parameters [ "sql" ])
+return { "status" : "ok" , "tool" : tc . tool_name }
+AgentAdapterRegistry . register ( "my_model" , MyModelAdapter )
+Option 2 — Implement UniversalAgentProtocol from scratch
+For non-HTTP agents (local Python objects, custom SDKs, etc.):
+from agentfit . protocol import (
+UniversalAgentProtocol , ToolDefinition , ExecutionResult ,
+Message , MessageRole , AgentAdapterRegistry ,
+from typing import Any , Dict , List , Optional
+class MyAgentAdapter ( UniversalAgentProtocol ):
+def __init__ ( self , agent_id : str , agent_name : str , my_client ):
+super (). __init__ ( agent_id , agent_name , framework = "my_agent" )
+self . client = my_client
+async def execute_task (
+self ,
+task : str ,
+tools : Optional [ List [ ToolDefinition ]] = None ,
+context : Optional [ Dict [ str , Any ]] = None ,
+max_steps : int = 10 ,
+timeout_seconds : int = 60 ,
+) -> ExecutionResult :
+response = await self . client . run ( task )
+return ExecutionResult (
+task_id = f"my- { task [: 8 ] } " ,
+success = response . ok ,
+final_output = response . text ,
+async def get_capabilities ( self ) -> Dict [ str , Any ]:
+return { "supports_tools" : False , "max_context_tokens" : 4096 }
+async def validate_tools ( self , tools ) -> Dict [ str , Any ]:
+return { "valid" : True , "supported_tools" : [], "unsupported_tools" : [], "validation_errors" : []}
+AgentAdapterRegistry . register ( "my_agent" , MyAgentAdapter )
+Both approaches inherit execute() and to_agent_interface() from UniversalAgentProtocol ,
+so your adapter works immediately with EvaluationRequest and all evaluation dimensions.
+Scaling
+AgentFit is designed to grow from a single laptop run to a multi-tenant evaluation platform.
+Parallelism
+All seven dimension evaluations run concurrently via asyncio.gather . On a 4-core machine, a full 7-dimension evaluation completes in roughly the time of the slowest single dimension, not their sum.
+# Evaluate multiple agents in parallel
+import asyncio
+results = await asyncio . gather ( * [
+Evaluator (). evaluate ( EvaluationRequest ( agent_id = f"agent- { v } " , ...))
+for v in [ "v1" , "v2" , "v3" ]
+])
+Selective Dimension Evaluation
+Skip dimensions that don't apply to reduce evaluation time:
+agentfit evaluate --bnp my_bnp.md --evals task_competence,tool_use --output r.json
+EvaluationRequest (..., dimensions = [ "task_competence" , "tool_use" ])
+REST API + Background Tasks
+The FastAPI server submits evaluations as background tasks, returning an evaluation_id immediately. Poll GET /api/evaluations/{id} for results. This pattern supports:
+Horizontal scaling — run multiple server instances behind a load balancer
+Async workflows — evaluation results pushed to webhooks or message queues
+Batch pipelines — CI/CD systems submit evaluations on every agent commit
+Production Deployment Checklist
+Concern
+Recommendation
+Storage
+Replace in-memory _evaluations dict with Postgres (SQLAlchemy model already in pyproject.toml[server] )
+Auth
+Add API key middleware to the FastAPI app
+Queuing
+Route background tasks to Celery + Redis for durability
+Observability
+Loguru → stdout, collect with your log aggregator; total_duration_ms and interpretation_time_ms are emitted on every result
+Cost control
+Use --provider groq or --provider ollama for interpretation in high-volume pipelines
+BNP versioning
+Store BNPs in git; pass bnp_profile_id references in evaluation requests
+Building on Top of AgentFit
+Register custom dimensions without forking the library:
+from agentfit . core . dimension import Dimension , DimensionResult , DimensionRegistry
+class MyCustomDimension ( Dimension ):
+dimension_id = "my_dimension"
+dimension_name = "My Dimension"
+description = "Evaluates something domain-specific"
+async def evaluate ( self , input_data ) -> DimensionResult :
+# your logic here
+return self . _create_result ( score = 0.9 , passed = True , feedback = "..." )
+async def validate_input ( self , input_data ) -> bool :
+return "agent" in input_data
+DimensionRegistry . register ( MyCustomDimension )
+# Now available in all evaluations and BNP dimension configs
+Running Tests
+pip install -e " .[dev] "
+pytest tests/ -v # all tests
+pytest tests/ --cov=agentfit --cov-report=html # with coverage
+# Specific suites
+pytest tests/test_adapters.py -v # adapter + OpenAICompatibleAdapter tests
+pytest tests/test_mock_agent.py -v # MockAgent seed/behavior/async tests
+pytest tests/test_dimensions.py -v # dimension unit tests
+pytest tests/test_evaluator.py -v # evaluator integration tests
+pytest tests/test_bnp.py -v # BNP parsing tests
+pytest tests/test_protocol.py -v # UAP protocol tests
+The full test suite runs against the mock agent by default — no LLM API key or running server
+required. To run integration tests against a real endpoint, set environment variables:
+# Against a local Ollama instance
+AGENT_API_KEY=none pytest tests/ -v -k " live "
+# Against OpenAI
+AGENT_API_KEY=sk-... pytest tests/ -v -k " live "
+Contributing
+Contributions are welcome. Please:
+Fork the repository and create a branch: git checkout -b feature/my-feature
+Write tests for any new behaviour
+Run pytest tests/ -v and black agentfit/ before committing
+Open a pull request with a clear description
+For larger changes (new dimensions, provider integrations, architecture changes) please open an issue first to discuss the approach.
+About RecruitBase
+AgentFit is built and maintained by RecruitBase — a hiring intelligence platform that applies structured, objective evaluation to AI agents.
+"We evaluate AI agents the same way we'd interview a human: define the requirements, set the criteria, run a structured assessment, and explain the result."
+The framework is open-source because the problem — how do you know if an AI agent is fit for a specific role? — is one the whole industry needs to solve together.
+Website: recruitbase.work
+AgentFit issues: GitHub Issues
+Early access / enterprise: recruitbase.work
+Citation
+If you use AgentFit in research, please cite:
+@software { agentfit2025 ,
+title = { AgentFit: Agent Evaluation and Interpretability Framework } ,
+author = { Arnauld, Gabiro N. and RecruitBase Contributors } ,
+year = { 2025 } ,
+url = { https://github.com/RecruitBase/agentfit } ,
+license = { Apache-2.0 }
+License
+AgentFit is licensed under the Apache License 2.0 . See LICENSE for details.
+Roadmap
+Governance & reliability (in-progress)
+Binary governance decisions (PASS/FAIL) against BNP-defined thresholds
+Pass@k (capability) and Pass^k (reliability) across k independent trials
+Harness snapshots for reproducible re-runs and audit trails
+Failure mode taxonomy with per-trial structured records
+Scenario lifecycle: capability vs regression guards
+Editable failure mode annotations (practitioner can tag and promote to regression)
+Failure mode frequency × severity × business impact prioritisation
+Self-hosted model support (done)
+OpenAICompatibleAdapter — vLLM, Ollama, LM Studio, Groq, Together, DeepSeek
+Real Anthropic SDK adapter with tool-use loop
+--agent-adapter / --trials CLI flags
+CI/CD & continuous evaluation
+GitHub Actions / GitLab CI native integration
+"Promote failure to regression scenario" one-click workflow
+Scheduled re-evaluation triggered by model version changes
+Reporting & storage
+PostgreSQL persistence with Alembic migrations
+Evaluation diffing — compare two agent versions side-by-side
+Web UI for evaluation results and BNP management
+OpenTelemetry integration for production tracing
+Ecosystem
+Native SWE-Bench and AgentBench scenario adapters
+Streaming interpretation output
+Cloud-hosted evaluation service
+Built with care by RecruitBase · Apache 2.0 · Contribute
+About
+Stop trusting the ai agents hype. Objectively evaluate which agent is appropriate for your business needs.
+recruitbase.work/agentfit
+Resources
+Readme
+Contributing
+Contributing
+Uh oh!
+There was an error while loading. Please reload this page .
+Activity
+Custom properties
+Stars
+stars
+Watchers
+watching
+Forks
+forks
+Report repository
+Releases
+No releases published
+Packages
+Uh oh!
+There was an error while loading. Please reload this page .
+Contributors
+Uh oh!
+There was an error while loading. Please reload this page .
+Languages
+Python
+98.8%
+TypeScript
+1.2%
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 91
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":35768,"paragraph_count":543,"sentence_count":213,"boilerplate_hits":2,"symbol_ratio":0.0143,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   AgentFit is an **open-source, enterprise-grade agent evaluation and governance framework**. It gives teams a structured, reproducible way to assess AI agents across seven behavioural dimensions — then produces a **binary governance decision** (PASS / FAIL against thresholds you define) alongside rel... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   There was an error while loading.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Please reload this page .
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   RecruitBase agentfit Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 7 Commits 7 Commits .
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   claude agentfit agentfit docs docs examples examples hooks hooks scripts scripts tests tests .
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   gitignore CHANGELOG.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic, Google, Meta, Mistral
+- products: agent, agents, claude, Agent, Claude, Gemini
+- people: 暂无公开信息
+- industries: 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 采购负责人
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算, 采购, 销售 / 客服
+- numbers: 7, 2, 0.74, 3, 1, 0.6, 0.4, 82%
+- quotes: how do I know if this agent is good enough? / is this agent fit for my use case? / Is this agent fit for my business needs — and can you explain why? / confirm resolution /  sk-...
+
+## evidence_seed
+
+- company_actions: There was an error while loading. / Please reload this page . / RecruitBase agentfit Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 7 Commits 7 Commits .
+- case_details: 暂无公开信息
+- workflow_changes: AgentFit is an **open-source, enterprise-grade agent evaluation and governance framework**. It gives teams a structured, reproducible way to assess AI agents across seven behavioural dimensions — then produces a **binary governance decision** (PASS / FAIL against thresholds you define) alongside rel... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 采购负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+AgentFit is an **open-source, enterprise-grade agent evaluation and governance framework**. It gives teams a structured, reproducible way to assess AI agents across seven behavioural dimensions — then produces a **binary governance decision** (PASS / FAIL against thresholds you define) alongside rel... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-093
 title: "Still managing IT operations the old way? What if AI could monitor ..."

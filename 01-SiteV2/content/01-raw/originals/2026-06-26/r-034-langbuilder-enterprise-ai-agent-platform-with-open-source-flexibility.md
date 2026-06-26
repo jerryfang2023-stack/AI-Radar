@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-034
 title: "LangBuilder 鈥?Enterprise AI Agent Platform with Open Source Flexibility"

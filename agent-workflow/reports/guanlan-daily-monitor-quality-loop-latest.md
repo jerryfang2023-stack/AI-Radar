@@ -1,4 +1,4 @@
-﻿# 2026-06-26 Guanlan Monitor Quality Loop
+# 2026-06-26 Guanlan Monitor Quality Loop
 
 - generated_at: 2026-06-26T03:32:35.116Z
 - status: passed

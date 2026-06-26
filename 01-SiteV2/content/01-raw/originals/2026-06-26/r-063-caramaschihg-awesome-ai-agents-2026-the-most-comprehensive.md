@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-063
 title: "caramaschiHG/awesome-ai-agents-2026: The most comprehensive ..."

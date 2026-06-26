@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-058
 title: "Open Source Coding Agent Kilo Raises $8M in Seed Funding"

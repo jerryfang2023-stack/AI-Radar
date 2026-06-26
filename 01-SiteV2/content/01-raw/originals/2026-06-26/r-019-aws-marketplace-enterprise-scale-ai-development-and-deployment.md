@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-019
 title: "AWS Marketplace: Enterprise-Scale AI Development and Deployment"

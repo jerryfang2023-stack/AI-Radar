@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-025
 title: "Deploying and Scaling Enterprise AI Agents - Eloquent AI"

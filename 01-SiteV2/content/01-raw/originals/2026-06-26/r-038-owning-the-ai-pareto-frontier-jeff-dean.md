@@ -1,0 +1,515 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-038
+title: "Owning the AI Pareto Frontier — Jeff Dean"
+original_url: "https://www.latent.space/p/jeffdean"
+canonical_url: "https://latent.space/p/jeffdean"
+source_name: "Latent Space"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-26T07:13:34.460Z
+language: mixed
+full_text_hash: b1d852bd708dfa27
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-038-owning-the-ai-pareto-frontier-jeff-dean.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-26/r-038-owning-the-ai-pareto-frontier-jeff-dean.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":60000,"paragraph_count":182,"sentence_count":624,"boilerplate_hits":0,"symbol_ratio":0.0036,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 60000
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b1d852bd708dfa27","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: f8a09e5133bce7ac
+content_hash: cc8034723a34d438
+semantic_hash: a639c3079f7d0716
+duplicate_of: ""
+first_seen_at: "2026-06-26T07:13:34.460Z"
+last_seen_at: 2026-06-26T07:13:34.460Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Latent Space","Google"],"products":["Gemini","agents","agent"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["2000","38","1","0","00","23","30","12"],"quotes":["own the Pareto frontier,","bigger model, more data, better results","outrageously large","Software Engineering Advice from\nBuilding Large-Scale Distributed Systems","Important AI Trends"]}
+evidence_seed: {"company_actions":["From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research, Jeff Dean has quietly shaped nearly every layer of the modern AI stack. As Chief AI Scientist at Google and a driving force behind Gemini, Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code.Jeff joins us to unpack what it really means to “own the Pareto fro","Owning the AI Pareto Frontier — Jeff Dean Feb 12, 2026 38 Share Transcript From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research , Jeff Dean has quietly shaped nearly every layer of the modern AI stack.","As Chief AI Scientist at Google and a driving force behind Gemini , Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code."],"case_details":[],"workflow_changes":["Latent Space: The AI Engineer Podcast Owning the AI Pareto Frontier — Jeff Dean 38 1× 0:00 Current time: 0:00 / Total time: -1:23:30 -1:23:30 Audio playback is not supported on your browser."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research, Jeff Dean has quietly shaped nearly every layer of the modern AI stack. As Chief AI Scientist at Google and a driving force behind Gemini, Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code.Jeff joins us to unpack what it really means to “own the Pareto fro","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast Owning the AI Pareto Frontier — Jeff Dean 38 1× 0:00 Current time: 0:00 / Total time: -1:23:30 -1:23:30 Audio playback is not supported on your browser.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Owning the AI Pareto Frontier — Jeff Dean Feb 12, 2026 38 Share Transcript From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research , Jeff Dean has quietly shaped nearly every layer of the modern AI stack.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As Chief AI Scientist at Google and a driving force behind Gemini , Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"Jeff joins us to unpack what it really means to “own the Pareto frontier,” why distillation is the engine behind every Flash model breakthrough , how energy (in picojoules) not FLOPs is becoming the true bottleneck, what it was like leading the charge to unify all of Google’s AI teams, and why the next leap won’t come from bigger context windows alone, but from systems that give the illusion of attending to trillions of tokens.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"quote","text":"We discuss: Jeff’s early neural net thesis in 1990 : parallel training before it was cool, why he believed scaling would win decades early, and the “bigger model, more data, better results” mantra that held for 15 years The evolution of Google Search: sharding, moving the entire index into memory in 2001, softening query semantics pre-LLMs, and why retrieval pipelines already resemble modern LLM systems Pareto frontier strategy: why you need both frontier “Pro” models and low-latency “Flash” models, and how distill","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"}]
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Owning the AI Pareto Frontier — Jeff Dean
+
+## clean_text
+
+Latent Space: The AI Engineer Podcast
+Owning the AI Pareto Frontier — Jeff Dean
+38
+1×
+0:00
+Current time: 0:00 / Total time: -1:23:30
+-1:23:30
+Audio playback is not supported on your browser. Please upgrade.
+Owning the AI Pareto Frontier — Jeff Dean
+Feb 12, 2026
+38
+Share
+Transcript
+From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research , Jeff Dean has quietly shaped nearly every layer of the modern AI stack. As Chief AI Scientist at Google and a driving force behind Gemini , Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code.
+Jeff joins us to unpack what it really means to “own the Pareto frontier,” why distillation is the engine behind every Flash model breakthrough , how energy (in picojoules) not FLOPs is becoming the true bottleneck, what it was like leading the charge to unify all of Google’s AI teams, and why the next leap won’t come from bigger context windows alone, but from systems that give the illusion of attending to trillions of tokens.
+We discuss:
+Jeff’s early neural net thesis in 1990 : parallel training before it was cool, why he believed scaling would win decades early, and the “bigger model, more data, better results” mantra that held for 15 years
+The evolution of Google Search: sharding, moving the entire index into memory in 2001, softening query semantics pre-LLMs, and why retrieval pipelines already resemble modern LLM systems
+Pareto frontier strategy: why you need both frontier “Pro” models and low-latency “Flash” models, and how distillation lets smaller models surpass prior generations
+Jeff Dean @JeffDean
+We’ve pushed out the Pareto frontier of efficiency vs. intelligence again.
+With Gemini 3 Flash ⚡️, we are seeing reasoning capabilities previously reserved for our largest models, now running at Flash-level latency. This opens up entirely new categories of near real-time
+4:06 PM · Dec 17, 2025 · 157K Views
+52 Replies · 196 Reposts · 1.78K Likes
+Distillation deep dive : ensembles → compression → logits as soft supervision, and why you need the biggest model to make the smallest one good
+Latency as a first-class objective: why 10–50x lower latency changes UX entirely, and how future reasoning workloads will demand 10,000 tokens/sec
+Energy-based thinking: picojoules per bit, why moving data costs 1000x more than a multiply, batching through the lens of energy, and speculative decoding as amortization
+TPU co-design: predicting ML workloads 2–6 years out, speculative hardware features, precision reduction, sparsity, and the constant feedback loop between model architecture and silicon
+Sparse models and “outrageously large” networks: trillions of parameters with 1–5% activation, and why sparsity was always the right abstraction
+Unified vs. specialized models: abandoning symbolic systems, why general multimodal models tend to dominate vertical silos, and when vertical fine-tuning still makes sense
+Long context and the illusion of scale: beyond needle-in-a-haystack benchmarks toward systems that narrow trillions of tokens to 117 relevant documents
+Personalized AI: attending to your emails, photos, and documents (with permission), and why retrieval + reasoning will unlock deeply personal assistants
+Coding agents: 50 AI interns, crisp specifications as a new core skill, and how ultra-low latency will reshape human–agent collaboration
+Why ideas still matter: transformers, sparsity, RL, hardware, systems — scaling wasn’t blind; the pieces had to multiply together
+Show Notes:
+Gemma 3 Paper
+Gemma 3
+Gemini 2.5 Report
+Jeff Dean’s “Software Engineering Advice from
+Building Large-Scale Distributed Systems” Presentation (with Back of the Envelope Calculations)
+Latency Numbers Every Programmer Should Know by Jeff Dean
+The Jeff Dean Facts
+Jeff Dean Google Bio
+Jeff Dean on “Important AI Trends” @Stanford AI Club
+Jeff Dean & Noam Shazeer — 25 years at Google (Dwarkesh)
+Jeff Dean
+LinkedIn: https://www.linkedin.com/in/jeff-dean-8b212555
+X: https://x.com/jeffdean
+Google
+https://google.com
+https://deepmind.google
+Full Video Episode
+Timestamps
+00:00:04 — Introduction: Alessio & Swyx welcome Jeff Dean, chief AI scientist at Google, to the Latent Space podcast
+00:00:30 — Owning the Pareto Frontier & balancing frontier vs low-latency models
+00:01:31 — Frontier models vs Flash models + role of distillation
+00:03:52 — History of distillation and its original motivation
+00:05:09 — Distillation’s role in modern model scaling
+00:07:02 — Model hierarchy (Flash, Pro, Ultra) and distillation sources
+00:07:46 — Flash model economics & wide deployment
+00:08:10 — Latency importance for complex tasks
+00:09:19 — Saturation of some tasks and future frontier tasks
+00:11:26 — On benchmarks, public vs internal
+00:12:53 — Example long-context benchmarks & limitations
+00:15:01 — Long-context goals: attending to trillions of tokens
+00:16:26 — Realistic use cases beyond pure language
+00:18:04 — Multimodal reasoning and non-text modalities
+00:19:05 — Importance of vision & motion modalities
+00:20:11 — Video understanding example (extracting structured info)
+00:20:47 — Search ranking analogy for LLM retrieval
+00:23:08 — LLM representations vs keyword search
+00:24:06 — Early Google search evolution & in-memory index
+00:26:47 — Design principles for scalable systems
+00:28:55 — Real-time index updates & recrawl strategies
+00:30:06 — Classic “Latency numbers every programmer should know”
+00:32:09 — Cost of memory vs compute and energy emphasis
+00:34:33 — TPUs & hardware trade-offs for serving models
+00:35:57 — TPU design decisions & co-design with ML
+00:38:06 — Adapting model architecture to hardware
+00:39:50 — Alternatives: energy-based models, speculative decoding
+00:42:21 — Open research directions: complex workflows, RL
+00:44:56 — Non-verifiable RL domains & model evaluation
+00:46:13 — Transition away from symbolic systems toward unified LLMs
+00:47:59 — Unified models vs specialized ones
+00:50:38 — Knowledge vs reasoning & retrieval + reasoning
+00:52:24 — Vertical model specialization & modules
+00:55:21 — Token count considerations for vertical domains
+00:56:09 — Low resource languages & contextual learning
+00:59:22 — Origins: Dean’s early neural network work
+01:10:07 — AI for coding & human–model interaction styles
+01:15:52 — Importance of crisp specification for coding agents
+01:19:23 — Prediction: personalized models & state retrieval
+01:22:36 — Token-per-second targets (10k+) and reasoning throughput
+01:23:20 — Episode conclusion and thanks
+Transcript
+Alessio Fanelli [00:00:04]: Hey everyone, welcome to the Latent Space podcast. This is Alessio, founder of Kernel Labs, and I’m joined by Swyx, editor of Latent Space.
+Shawn Wang [00:00:11]: Hello, hello. We’re here in the studio with Jeff Dean, chief AI scientist at Google. Welcome. Thanks for having me. It’s a bit surreal to have you in the studio. I’ve watched so many of your talks, and obviously your career has been super legendary. So, I mean, congrats. I think the first thing must be said, congrats on owning the Pareto Frontier.
+Jeff Dean [00:00:30]: Thank you, thank you. Pareto Frontiers are good. It’s good to be out there.
+Shawn Wang [00:00:34]: Yeah, I mean, I think it’s a combination of both. You have to own the Pareto Frontier. You have to have like frontier capability, but also efficiency, and then offer that range of models that people like to use. And, you know, some part of this was started because of your hardware work. Some part of that is your model work, and I’m sure there’s lots of secret sauce that you guys have worked on cumulatively. But, like, it’s really impressive to see it all come together in, like, this slittily advanced.
+Jeff Dean [00:01:04]: Yeah, yeah. I mean, I think, as you say, it’s not just one thing. It’s like a whole bunch of things up and down the stack. And, you know, all of those really combine to help make UNOS able to make highly capable large models, as well as, you know, software techniques to get those large model capabilities into much smaller, lighter weight models that are, you know, much more cost effective and lower latency, but still, you know, quite capable for their size. Yeah.
+Alessio Fanelli [00:01:31]: How much pressure do you have on, like, having the lower bound of the Pareto Frontier, too? I think, like, the new labs are always trying to push the top performance frontier because they need to raise more money and all of that. And you guys have billions of users. And I think initially when you worked on the CPU, you were thinking about, you know, if everybody that used Google, we use the voice model for, like, three minutes a day, they were like, you need to double your CPU number. Like, what’s that discussion today at Google? Like, how do you prioritize frontier versus, like, we have to do this? How do we actually need to deploy it if we build it?
+Jeff Dean [00:02:03]: Yeah, I mean, I think we always want to have models that are at the frontier or pushing the frontier because I think that’s where you see what capabilities now exist that didn’t exist at the sort of slightly less capable last year’s version or last six months ago version. At the same time, you know, we know those are going to be really useful for a bunch of use cases, but they’re going to be a bit slower and a bit more expensive than people might like for a bunch of other broader models. So I think what we want to do is always have kind of a highly capable sort of affordable model that enables a whole bunch of, you know, lower latency use cases. People can use them for agentic coding much more readily and then have the high-end, you know, frontier model that is really useful for, you know, deep reasoning, you know, solving really complicated math problems, those kinds of things. And it’s not that. One or the other is useful. They’re both useful. So I think we’d like to do both. And also, you know, through distillation, which is a key technique for making the smaller models more capable, you know, you have to have the frontier model in order to then distill it into your smaller model. So it’s not like an either or choice. You sort of need that in order to actually get a highly capable, more modest size model. Yeah.
+Alessio Fanelli [00:03:24]: I mean, you and Jeffrey came up with the solution in 2014.
+Jeff Dean [00:03:28]: Don’t forget, L’Oreal Vinyls as well. Yeah, yeah.
+Alessio Fanelli [00:03:30]: A long time ago. But like, I’m curious how you think about the cycle of these ideas, even like, you know, sparse models and, you know, how do you reevaluate them? How do you think about in the next generation of model, what is worth revisiting? Like, yeah, they’re just kind of like, you know, you worked on so many ideas that end up being influential, but like in the moment, they might not feel that way necessarily. Yeah.
+Jeff Dean [00:03:52]: I mean, I think distillation was originally motivated because we were seeing that we had a very large image data set at the time, you know, 300 million images that we could train on. And we were seeing that if you create specialists for different subsets of those image categories, you know, this one’s going to be really good at sort of mammals, and this one’s going to be really good at sort of indoor room scenes or whatever, and you can cluster those categories and train on an enriched stream of data after you do pre-training on a much broader set of images. You get much better performance. If you then treat that whole set of maybe 50 models you’ve trained as a large ensemble, but that’s not a very practical thing to serve, right? So distillation really came about from the idea of, okay, what if we want to actually serve that and train all these independent sort of expert models and then squish it into something that actually fits in a form factor that you can actually serve? And that’s, you know, not that different from what we’re doing today. You know, often today we’re instead of having an ensemble of 50 models. We’re having a much larger scale model that we then distill into a much smaller scale model.
+Shawn Wang [00:05:09]: Yeah. A part of me also wonders if distillation also has a story with the RL revolution. So let me maybe try to articulate what I mean by that, which is you can, RL basically spikes models in a certain part of the distribution. And then you have to sort of, well, you can spike models, but usually sometimes... It might be lossy in other areas and it’s kind of like an uneven technique, but you can probably distill it back and you can, I think that the sort of general dream is to be able to advance capabilities without regressing on anything else. And I think like that, that whole capability merging without loss, I feel like it’s like, you know, some part of that should be a distillation process, but I can’t quite articulate it. I haven’t seen much papers about it.
+Jeff Dean [00:06:01]: Yeah, I mean, I tend to think of one of the key advantages of distillation is that you can have a much smaller model and you can have a very large, you know, training data set and you can get utility out of making many passes over that data set because you’re now getting the logits from the much larger model in order to sort of coax the right behavior out of the smaller model that you wouldn’t otherwise get with just the hard labels. And so, you know, I think that’s what we’ve observed. Is you can get, you know, very close to your largest model performance with distillation approaches. And that seems to be, you know, a nice sweet spot for a lot of people because it enables us to kind of, for multiple Gemini generations now, we’ve been able to make the sort of flash version of the next generation as good or even substantially better than the previous generations pro. And I think we’re going to keep trying to do that because that seems like a good trend to follow.
+Shawn Wang [00:07:02]: So, Dara asked, so it was the original map was Flash Pro and Ultra. Are you just sitting on Ultra and distilling from that? Is that like the mother load?
+Jeff Dean [00:07:12]: I mean, we have a lot of different kinds of models. Some are internal ones that are not necessarily meant to be released or served. Some are, you know, our pro scale model and we can distill from that as well into our Flash scale model. So I think, you know, it’s an important set of capabilities to have and also inference time scaling. It can also be a useful thing to improve the capabilities of the model.
+Shawn Wang [00:07:35]: And yeah, yeah, cool. Yeah. And obviously, I think the economy of Flash is what led to the total dominance. I think the latest number is like 50 trillion tokens. I don’t know. I mean, obviously, it’s changing every day.
+Jeff Dean [00:07:46]: Yeah, yeah. But, you know, by market share, hopefully up.
+Shawn Wang [00:07:50]: No, I mean, there’s no I mean, there’s just the economics wise, like because Flash is so economical, like you can use it for everything. Like it’s in Gmail now. It’s in YouTube. Like it’s yeah. It’s in everything.
+Jeff Dean [00:08:02]: We’re using it more in our search products of various AI mode reviews.
+Shawn Wang [00:08:05]: Oh, my God. Flash past the AI mode. Oh, my God. Yeah, that’s yeah, I didn’t even think about that.
+Jeff Dean [00:08:10]: I mean, I think one of the things that is quite nice about the Flash model is not only is it more affordable, it’s also a lower latency. And I think latency is actually a pretty important characteristic for these models because we’re going to want models to do much more complicated things that are going to involve, you know, generating many more tokens from when you ask the model to do so. So, you know, if you’re going to ask the model to do something until it actually finishes what you ask it to do, because you’re going to ask now, not just write me a for loop, but like write me a whole software package to do X or Y or Z. And so having low latency systems that can do that seems really important. And Flash is one direction, one way of doing that. You know, obviously our hardware platforms enable a bunch of interesting aspects of our, you know, serving stack as well, like TPUs, the interconnect between. Chips on the TPUs is actually quite, quite high performance and quite amenable to, for example, long context kind of attention operations, you know, having sparse models with lots of experts. These kinds of things really, really matter a lot in terms of how do you make them servable at scale.
+Alessio Fanelli [00:09:19]: Yeah. Does it feel like there’s some breaking point for like the proto Flash distillation, kind of like one generation delayed? I almost think about almost like the capability as a. In certain tasks, like the pro model today is a saturated, some sort of task. So next generation, that same task will be saturated at the Flash price point. And I think for most of the things that people use models for at some point, the Flash model in two generation will be able to do basically everything. And how do you make it economical to like keep pushing the pro frontier when a lot of the population will be okay with the Flash model? I’m curious how you think about that.
+Jeff Dean [00:09:59]: I mean, I think that’s true. If your distribution of what people are asking people, the models to do is stationary, right? But I think what often happens is as the models become more capable, people ask them to do more, right? So, I mean, I think this happens in my own usage. Like I used to try our models a year ago for some sort of coding task, and it was okay at some simpler things, but wouldn’t do work very well for more complicated things. And since then, we’ve improved dramatically on the more complicated coding tasks. And now I’ll ask it to do much more complicated things. And I think that’s true, not just of coding, but of, you know, now, you know, can you a
+
+## full_text
+
+Latent Space: The AI Engineer Podcast
+Owning the AI Pareto Frontier — Jeff Dean
+38
+1×
+0:00
+Current time: 0:00 / Total time: -1:23:30
+-1:23:30
+Audio playback is not supported on your browser. Please upgrade.
+Owning the AI Pareto Frontier — Jeff Dean
+Feb 12, 2026
+38
+Share
+Transcript
+From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research , Jeff Dean has quietly shaped nearly every layer of the modern AI stack. As Chief AI Scientist at Google and a driving force behind Gemini , Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code.
+Jeff joins us to unpack what it really means to “own the Pareto frontier,” why distillation is the engine behind every Flash model breakthrough , how energy (in picojoules) not FLOPs is becoming the true bottleneck, what it was like leading the charge to unify all of Google’s AI teams, and why the next leap won’t come from bigger context windows alone, but from systems that give the illusion of attending to trillions of tokens.
+We discuss:
+Jeff’s early neural net thesis in 1990 : parallel training before it was cool, why he believed scaling would win decades early, and the “bigger model, more data, better results” mantra that held for 15 years
+The evolution of Google Search: sharding, moving the entire index into memory in 2001, softening query semantics pre-LLMs, and why retrieval pipelines already resemble modern LLM systems
+Pareto frontier strategy: why you need both frontier “Pro” models and low-latency “Flash” models, and how distillation lets smaller models surpass prior generations
+Jeff Dean @JeffDean
+We’ve pushed out the Pareto frontier of efficiency vs. intelligence again.
+With Gemini 3 Flash ⚡️, we are seeing reasoning capabilities previously reserved for our largest models, now running at Flash-level latency. This opens up entirely new categories of near real-time
+4:06 PM · Dec 17, 2025 · 157K Views
+52 Replies · 196 Reposts · 1.78K Likes
+Distillation deep dive : ensembles → compression → logits as soft supervision, and why you need the biggest model to make the smallest one good
+Latency as a first-class objective: why 10–50x lower latency changes UX entirely, and how future reasoning workloads will demand 10,000 tokens/sec
+Energy-based thinking: picojoules per bit, why moving data costs 1000x more than a multiply, batching through the lens of energy, and speculative decoding as amortization
+TPU co-design: predicting ML workloads 2–6 years out, speculative hardware features, precision reduction, sparsity, and the constant feedback loop between model architecture and silicon
+Sparse models and “outrageously large” networks: trillions of parameters with 1–5% activation, and why sparsity was always the right abstraction
+Unified vs. specialized models: abandoning symbolic systems, why general multimodal models tend to dominate vertical silos, and when vertical fine-tuning still makes sense
+Long context and the illusion of scale: beyond needle-in-a-haystack benchmarks toward systems that narrow trillions of tokens to 117 relevant documents
+Personalized AI: attending to your emails, photos, and documents (with permission), and why retrieval + reasoning will unlock deeply personal assistants
+Coding agents: 50 AI interns, crisp specifications as a new core skill, and how ultra-low latency will reshape human–agent collaboration
+Why ideas still matter: transformers, sparsity, RL, hardware, systems — scaling wasn’t blind; the pieces had to multiply together
+Show Notes:
+Gemma 3 Paper
+Gemma 3
+Gemini 2.5 Report
+Jeff Dean’s “Software Engineering Advice from
+Building Large-Scale Distributed Systems” Presentation (with Back of the Envelope Calculations)
+Latency Numbers Every Programmer Should Know by Jeff Dean
+The Jeff Dean Facts
+Jeff Dean Google Bio
+Jeff Dean on “Important AI Trends” @Stanford AI Club
+Jeff Dean & Noam Shazeer — 25 years at Google (Dwarkesh)
+Jeff Dean
+LinkedIn: https://www.linkedin.com/in/jeff-dean-8b212555
+X: https://x.com/jeffdean
+Google
+https://google.com
+https://deepmind.google
+Full Video Episode
+Timestamps
+00:00:04 — Introduction: Alessio & Swyx welcome Jeff Dean, chief AI scientist at Google, to the Latent Space podcast
+00:00:30 — Owning the Pareto Frontier & balancing frontier vs low-latency models
+00:01:31 — Frontier models vs Flash models + role of distillation
+00:03:52 — History of distillation and its original motivation
+00:05:09 — Distillation’s role in modern model scaling
+00:07:02 — Model hierarchy (Flash, Pro, Ultra) and distillation sources
+00:07:46 — Flash model economics & wide deployment
+00:08:10 — Latency importance for complex tasks
+00:09:19 — Saturation of some tasks and future frontier tasks
+00:11:26 — On benchmarks, public vs internal
+00:12:53 — Example long-context benchmarks & limitations
+00:15:01 — Long-context goals: attending to trillions of tokens
+00:16:26 — Realistic use cases beyond pure language
+00:18:04 — Multimodal reasoning and non-text modalities
+00:19:05 — Importance of vision & motion modalities
+00:20:11 — Video understanding example (extracting structured info)
+00:20:47 — Search ranking analogy for LLM retrieval
+00:23:08 — LLM representations vs keyword search
+00:24:06 — Early Google search evolution & in-memory index
+00:26:47 — Design principles for scalable systems
+00:28:55 — Real-time index updates & recrawl strategies
+00:30:06 — Classic “Latency numbers every programmer should know”
+00:32:09 — Cost of memory vs compute and energy emphasis
+00:34:33 — TPUs & hardware trade-offs for serving models
+00:35:57 — TPU design decisions & co-design with ML
+00:38:06 — Adapting model architecture to hardware
+00:39:50 — Alternatives: energy-based models, speculative decoding
+00:42:21 — Open research directions: complex workflows, RL
+00:44:56 — Non-verifiable RL domains & model evaluation
+00:46:13 — Transition away from symbolic systems toward unified LLMs
+00:47:59 — Unified models vs specialized ones
+00:50:38 — Knowledge vs reasoning & retrieval + reasoning
+00:52:24 — Vertical model specialization & modules
+00:55:21 — Token count considerations for vertical domains
+00:56:09 — Low resource languages & contextual learning
+00:59:22 — Origins: Dean’s early neural network work
+01:10:07 — AI for coding & human–model interaction styles
+01:15:52 — Importance of crisp specification for coding agents
+01:19:23 — Prediction: personalized models & state retrieval
+01:22:36 — Token-per-second targets (10k+) and reasoning throughput
+01:23:20 — Episode conclusion and thanks
+Transcript
+Alessio Fanelli [00:00:04]: Hey everyone, welcome to the Latent Space podcast. This is Alessio, founder of Kernel Labs, and I’m joined by Swyx, editor of Latent Space.
+Shawn Wang [00:00:11]: Hello, hello. We’re here in the studio with Jeff Dean, chief AI scientist at Google. Welcome. Thanks for having me. It’s a bit surreal to have you in the studio. I’ve watched so many of your talks, and obviously your career has been super legendary. So, I mean, congrats. I think the first thing must be said, congrats on owning the Pareto Frontier.
+Jeff Dean [00:00:30]: Thank you, thank you. Pareto Frontiers are good. It’s good to be out there.
+Shawn Wang [00:00:34]: Yeah, I mean, I think it’s a combination of both. You have to own the Pareto Frontier. You have to have like frontier capability, but also efficiency, and then offer that range of models that people like to use. And, you know, some part of this was started because of your hardware work. Some part of that is your model work, and I’m sure there’s lots of secret sauce that you guys have worked on cumulatively. But, like, it’s really impressive to see it all come together in, like, this slittily advanced.
+Jeff Dean [00:01:04]: Yeah, yeah. I mean, I think, as you say, it’s not just one thing. It’s like a whole bunch of things up and down the stack. And, you know, all of those really combine to help make UNOS able to make highly capable large models, as well as, you know, software techniques to get those large model capabilities into much smaller, lighter weight models that are, you know, much more cost effective and lower latency, but still, you know, quite capable for their size. Yeah.
+Alessio Fanelli [00:01:31]: How much pressure do you have on, like, having the lower bound of the Pareto Frontier, too? I think, like, the new labs are always trying to push the top performance frontier because they need to raise more money and all of that. And you guys have billions of users. And I think initially when you worked on the CPU, you were thinking about, you know, if everybody that used Google, we use the voice model for, like, three minutes a day, they were like, you need to double your CPU number. Like, what’s that discussion today at Google? Like, how do you prioritize frontier versus, like, we have to do this? How do we actually need to deploy it if we build it?
+Jeff Dean [00:02:03]: Yeah, I mean, I think we always want to have models that are at the frontier or pushing the frontier because I think that’s where you see what capabilities now exist that didn’t exist at the sort of slightly less capable last year’s version or last six months ago version. At the same time, you know, we know those are going to be really useful for a bunch of use cases, but they’re going to be a bit slower and a bit more expensive than people might like for a bunch of other broader models. So I think what we want to do is always have kind of a highly capable sort of affordable model that enables a whole bunch of, you know, lower latency use cases. People can use them for agentic coding much more readily and then have the high-end, you know, frontier model that is really useful for, you know, deep reasoning, you know, solving really complicated math problems, those kinds of things. And it’s not that. One or the other is useful. They’re both useful. So I think we’d like to do both. And also, you know, through distillation, which is a key technique for making the smaller models more capable, you know, you have to have the frontier model in order to then distill it into your smaller model. So it’s not like an either or choice. You sort of need that in order to actually get a highly capable, more modest size model. Yeah.
+Alessio Fanelli [00:03:24]: I mean, you and Jeffrey came up with the solution in 2014.
+Jeff Dean [00:03:28]: Don’t forget, L’Oreal Vinyls as well. Yeah, yeah.
+Alessio Fanelli [00:03:30]: A long time ago. But like, I’m curious how you think about the cycle of these ideas, even like, you know, sparse models and, you know, how do you reevaluate them? How do you think about in the next generation of model, what is worth revisiting? Like, yeah, they’re just kind of like, you know, you worked on so many ideas that end up being influential, but like in the moment, they might not feel that way necessarily. Yeah.
+Jeff Dean [00:03:52]: I mean, I think distillation was originally motivated because we were seeing that we had a very large image data set at the time, you know, 300 million images that we could train on. And we were seeing that if you create specialists for different subsets of those image categories, you know, this one’s going to be really good at sort of mammals, and this one’s going to be really good at sort of indoor room scenes or whatever, and you can cluster those categories and train on an enriched stream of data after you do pre-training on a much broader set of images. You get much better performance. If you then treat that whole set of maybe 50 models you’ve trained as a large ensemble, but that’s not a very practical thing to serve, right? So distillation really came about from the idea of, okay, what if we want to actually serve that and train all these independent sort of expert models and then squish it into something that actually fits in a form factor that you can actually serve? And that’s, you know, not that different from what we’re doing today. You know, often today we’re instead of having an ensemble of 50 models. We’re having a much larger scale model that we then distill into a much smaller scale model.
+Shawn Wang [00:05:09]: Yeah. A part of me also wonders if distillation also has a story with the RL revolution. So let me maybe try to articulate what I mean by that, which is you can, RL basically spikes models in a certain part of the distribution. And then you have to sort of, well, you can spike models, but usually sometimes... It might be lossy in other areas and it’s kind of like an uneven technique, but you can probably distill it back and you can, I think that the sort of general dream is to be able to advance capabilities without regressing on anything else. And I think like that, that whole capability merging without loss, I feel like it’s like, you know, some part of that should be a distillation process, but I can’t quite articulate it. I haven’t seen much papers about it.
+Jeff Dean [00:06:01]: Yeah, I mean, I tend to think of one of the key advantages of distillation is that you can have a much smaller model and you can have a very large, you know, training data set and you can get utility out of making many passes over that data set because you’re now getting the logits from the much larger model in order to sort of coax the right behavior out of the smaller model that you wouldn’t otherwise get with just the hard labels. And so, you know, I think that’s what we’ve observed. Is you can get, you know, very close to your largest model performance with distillation approaches. And that seems to be, you know, a nice sweet spot for a lot of people because it enables us to kind of, for multiple Gemini generations now, we’ve been able to make the sort of flash version of the next generation as good or even substantially better than the previous generations pro. And I think we’re going to keep trying to do that because that seems like a good trend to follow.
+Shawn Wang [00:07:02]: So, Dara asked, so it was the original map was Flash Pro and Ultra. Are you just sitting on Ultra and distilling from that? Is that like the mother load?
+Jeff Dean [00:07:12]: I mean, we have a lot of different kinds of models. Some are internal ones that are not necessarily meant to be released or served. Some are, you know, our pro scale model and we can distill from that as well into our Flash scale model. So I think, you know, it’s an important set of capabilities to have and also inference time scaling. It can also be a useful thing to improve the capabilities of the model.
+Shawn Wang [00:07:35]: And yeah, yeah, cool. Yeah. And obviously, I think the economy of Flash is what led to the total dominance. I think the latest number is like 50 trillion tokens. I don’t know. I mean, obviously, it’s changing every day.
+Jeff Dean [00:07:46]: Yeah, yeah. But, you know, by market share, hopefully up.
+Shawn Wang [00:07:50]: No, I mean, there’s no I mean, there’s just the economics wise, like because Flash is so economical, like you can use it for everything. Like it’s in Gmail now. It’s in YouTube. Like it’s yeah. It’s in everything.
+Jeff Dean [00:08:02]: We’re using it more in our search products of various AI mode reviews.
+Shawn Wang [00:08:05]: Oh, my God. Flash past the AI mode. Oh, my God. Yeah, that’s yeah, I didn’t even think about that.
+Jeff Dean [00:08:10]: I mean, I think one of the things that is quite nice about the Flash model is not only is it more affordable, it’s also a lower latency. And I think latency is actually a pretty important characteristic for these models because we’re going to want models to do much more complicated things that are going to involve, you know, generating many more tokens from when you ask the model to do so. So, you know, if you’re going to ask the model to do something until it actually finishes what you ask it to do, because you’re going to ask now, not just write me a for loop, but like write me a whole software package to do X or Y or Z. And so having low latency systems that can do that seems really important. And Flash is one direction, one way of doing that. You know, obviously our hardware platforms enable a bunch of interesting aspects of our, you know, serving stack as well, like TPUs, the interconnect between. Chips on the TPUs is actually quite, quite high performance and quite amenable to, for example, long context kind of attention operations, you know, having sparse models with lots of experts. These kinds of things really, really matter a lot in terms of how do you make them servable at scale.
+Alessio Fanelli [00:09:19]: Yeah. Does it feel like there’s some breaking point for like the proto Flash distillation, kind of like one generation delayed? I almost think about almost like the capability as a. In certain tasks, like the pro model today is a saturated, some sort of task. So next generation, that same task will be saturated at the Flash price point. And I think for most of the things that people use models for at some point, the Flash model in two generation will be able to do basically everything. And how do you make it economical to like keep pushing the pro frontier when a lot of the population will be okay with the Flash model? I’m curious how you think about that.
+Jeff Dean [00:09:59]: I mean, I think that’s true. If your distribution of what people are asking people, the models to do is stationary, right? But I think what often happens is as the models become more capable, people ask them to do more, right? So, I mean, I think this happens in my own usage. Like I used to try our models a year ago for some sort of coding task, and it was okay at some simpler things, but wouldn’t do work very well for more complicated things. And since then, we’ve improved dramatically on the more complicated coding tasks. And now I’ll ask it to do much more complicated things. And I think that’s true, not just of coding, but of, you know, now, you know, can you analyze all the, you know, renewable energy deployments in the world and give me a report on solar panel deployment or whatever. That’s a very complicated, you know, more complicated task than people would have asked a year ago. And so you are going to want more capable models to push the frontier in the absence of what people ask the models to do. And that also then gives us. Insight into, okay, where does the, where do things break down? How can we improve the model in these, these particular areas, uh, in order to sort of, um, make the next generation even better.
+Alessio Fanelli [00:11:11]: Yeah. Are there any benchmarks or like test sets they use internally? Because it’s almost like the same benchmarks get reported every time. And it’s like, all right, it’s like 99 instead of 97. Like, how do you have to keep pushing the team internally to it? Or like, this is what we’re building towards. Yeah.
+Jeff Dean [00:11:26]: I mean, I think. Benchmarks, particularly external ones that are publicly available. Have their utility, but they often kind of have a lifespan of utility where they’re introduced and maybe they’re quite hard for current models. You know, I, I like to think of the best kinds of benchmarks are ones where the initial scores are like 10 to 20 or 30%, maybe, but not higher. And then you can sort of work on improving that capability for, uh, whatever it is, the benchmark is trying to assess and get it up to like 80, 90%, whatever. I, I think once it hits kind of 95% or something, you get very diminishing returns from really focusing on that benchmark, cuz it’s sort of, it’s either the case that you’ve now achieved that capability, or there’s also the issue of leakage in public data or very related kind of data being, being in your training data. Um, so we have a bunch of held out internal benchmarks that we really look at where we know that wasn’t represented in the training data at all. There are capabilities that we want the model to have. Um, yeah. Yeah. Um, that it doesn’t have now, and then we can work on, you know, assessing, you know, how do we make the model better at these kinds of things? Is it, we need different kind of data to train on that’s more specialized for this particular kind of task. Do we need, um, you know, a bunch of, uh, you know, architectural improvements or some sort of, uh, model capability improvements, you know, what would help make that better?
+Shawn Wang [00:12:53]: Is there, is there such an example that you, uh, a benchmark inspired in architectural improvement? Like, uh, I’m just kind of. Jumping on that because you just.
+Jeff Dean [00:13:02]: Uh, I mean, I think some of the long context capability of the, of the Gemini models that came, I guess, first in 1.5 really were about looking at, okay, we want to have, um, you know,
+Shawn Wang [00:13:15]: immediately everyone jumped to like completely green charts of like, everyone had, I was like, how did everyone crack this at the same time? Right. Yeah. Yeah.
+Jeff Dean [00:13:23]: I mean, I think, um, and once you’re set, I mean, as you say that needed single needle and a half. Hey, stack benchmark is really saturated for at least context links up to 1, 2 and K or something. Don’t actually have, you know, much larger than 1, 2 and 8 K these days or two or something. We’re trying to push the frontier of 1 million or 2 million context, which is good because I think there are a lot of use cases where. Yeah. You know, putting a thousand pages of text or putting, you know, multiple hour long videos and the context and then actually being able to make use of that as useful. Try to, to explore the über graduation are fairly large. But the single needle in a haystack benchmark is sort of saturated. So you really want more complicated, sort of multi-needle or more realistic, take all this content and produce this kind of answer from a long context that sort of better assesses what it is people really want to do with long context. Which is not just, you know, can you tell me the product number for this particular thing?
+Shawn Wang [00:14:31]: Yeah, it’s retrieval. It’s retrieval within machine learning. It’s interesting because I think the more meta level I’m trying to operate at here is you have a benchmark. You’re like, okay, I see the architectural thing I need to do in order to go fix that. But should you do it? Because sometimes that’s an inductive bias, basically. It’s what Jason Wei, who used to work at Google, would say. Exactly the kind of thing. Yeah, you’re going to win. Short term. Longer term, I don’t know if that’s going to scale. You might have to undo that.
+Jeff Dean [00:15:01]: I mean, I like to sort of not focus on exactly what solution we’re going to derive, but what capability would you want? And I think we’re very convinced that, you know, long context is useful, but it’s way too short today. Right? Like, I think what you would really want is, can I attend to the internet while I answer my question? Right? But that’s not going to happen. I think that’s going to be solved by purely scaling the existing solutions, which are quadratic. So a million tokens kind of pushes what you can do. You’re not going to do that to a trillion tokens, let alone, you know, a billion tokens, let alone a trillion. But I think if you could give the illusion that you can attend to trillions of tokens, that would be amazing. You’d find all kinds of uses for that. You would have attend to the internet. You could attend to the pixels of YouTube and the sort of deeper representations that we can find. You could attend to the form for a single video, but across many videos, you know, on a personal Gemini level, you could attend to all of your personal state with your permission. So like your emails, your photos, your docs, your plane tickets you have. I think that would be really, really useful. And the question is, how do you get algorithmic improvements and system level improvements that get you to something where you actually can attend to trillions of tokens? Right. In a meaningful way. Yeah.
+Shawn Wang [00:16:26]: But by the way, I think I did some math and it’s like, if you spoke all day, every day for eight hours a day, you only generate a maximum of like a hundred K tokens, which like very comfortably fits.
+Jeff Dean [00:16:38]: Right. But if you then say, okay, I want to be able to understand everything people are putting on videos.
+Shawn Wang [00:16:46]: Well, also, I think that the classic example is you start going beyond language into like proteins and whatever else is extremely information dense. Yeah. Yeah.
+Jeff Dean [00:16:55]: I mean, I think one of the things about Gemini’s multimodal aspects is we’ve always wanted it to be multimodal from the start. And so, you know, that sometimes to people means text and images and video sort of human-like and audio, audio, human-like modalities. But I think it’s also really useful to have Gemini know about non-human modalities. Yeah. Like LIDAR sensor data from. Yes. Say, Waymo vehicles or. Like robots or, you know, various kinds of health modalities, x-rays and MRIs and imaging and genomics information. And I think there’s probably hundreds of modalities of data where you’d like the model to be able to at least be exposed to the fact that this is an interesting modality and has certain meaning in the world. Where even if you haven’t trained on all the LIDAR data or MRI data, you could have, because maybe that’s not, you know, it doesn’t make sense in terms of trade-offs of. You know, what you include in your main pre-training data mix, at least including a little bit of it is actually quite useful. Yeah. Because it sort of tempts the model that this is a thing.
+Shawn Wang [00:18:04]: Yeah. Do you believe, I mean, since we’re on this topic and something I just get to ask you all the questions I always wanted to ask, which is fantastic. Like, are there some king modalities, like modalities that supersede all the other modalities? So a simple example was Vision can, on a pixel level, encode text. And DeepSeq had this DeepSeq CR paper that did that. Vision. And Vision has also been shown to maybe incorporate audio because you can do audio spectrograms and that’s, that’s also like a Vision capable thing. Like, so, so maybe Vision is just the king modality and like. Yeah.
+Jeff Dean [00:18:36]: I mean, Vision and Motion are quite important things, right? Motion. Well, like video as opposed to static images, because I mean, there’s a reason evolution has evolved eyes like 23 independent ways, because it’s such a useful capability for sensing the world around you, which is really what we want these models to be. So I think the only thing that we can be able to do is interpret the things we’re seeing or the things we’re paying attention to and then help us in using that information to do things. Yeah.
+Shawn Wang [00:19:05]: I think motion, you know, I still want to shout out, I think Gemini, still the only native video understanding model that’s out there. So I use it for YouTube all the time. Nice.
+Jeff Dean [00:19:15]: Yeah. Yeah. I mean, it’s actually, I think people kind of are not necessarily aware of what the Gemini models can actually do. Yeah. Like I have an example I’ve used in one of my talks. It had like, it was like a YouTube highlight video of 18 memorable sports moments across the last 20 years or something. So it has like Michael Jordan hitting some jump shot at the end of the finals and, you know, some soccer goals and things like that. And you can literally just give it the video and say, can you please make me a table of what all these different events are? What when the date is when they happened? And a short description. And so you get like now an 18 row table of that information extracted from the video, which is, you know, not something most people think of as like a turn video into sequel like table.
+Alessio Fanelli [00:20:11]: Has there been any discussion inside of Google of like, you mentioned tending to the whole internet, right? Google, it’s almost built because a human cannot tend to the whole internet and you need some sort of ranking to find what you need. Yep. That ranking is like much different for an LLM because you can expect a person to look at maybe the first five, six links in a Google search versus for an LLM. Should you expect to have 20 links that are highly relevant? Like how do you internally figure out, you know, how do we build the AI mode that is like maybe like much broader search and span versus like the more human one? Yeah.
+Jeff Dean [00:20:47]: I mean, I think even pre-language model based work, you know, our ranking systems would be built to start. I mean, I think even pre-language model based work, you know, our ranking systems would be built to start. With a giant number of web pages in our index, many of them are not relevant. So you identify a subset of them that are relevant with very lightweight kinds of methods. You know, you’re down to like 30,000 documents or something. And then you gradually refine that to apply more and more sophisticated algorithms and more and more sophisticated sort of signals of various kinds in order to get down to ultimately what you show, which is, you know, the final 10 results or, you know, 10 results plus. Other kinds of information. And I think an LLM based system is not going to be that dissimilar, right? You’re going to attend to trillions of tokens, but you’re going to want to identify, you know, what are the 30,000 ish documents that are with the, you know, maybe 30 million interesting tokens. And then how do you go from that into what are the 117 documents I really should be paying attention to in order to carry out the tasks that the user has asked? And I think, you know, you can imagine systems where you have, you know, a lot of highly parallel processing to identify those initial 30,000 candidates, maybe with very lightweight kinds of models. Then you have some system that sort of helps you narrow down from 30,000 to the 117 with maybe a little bit more sophisticated model or set of models. And then maybe the final model is the thing that looks. So the 117 things that might be your most capable model. So I think it has to, it’s going to be some system like that, that is really enables you to give the illusion of attending to trillions of tokens. Sort of the way Google search gives you, you know, not the illusion, but you are searching the internet, but you’re finding, you know, a very small subset of things that are, that are relevant.
+Shawn Wang [00:22:47]: Yeah. I often tell a lot of people that are not steeped in like Google search history that, well, you know, like Bert was. Like he was like basically immediately inside of Google search and that improves results a lot, right? Like I don’t, I don’t have any numbers off the top of my head, but like, I’m sure you guys, that’s obviously the most important numbers to Google. Yeah.
+Jeff Dean [00:23:08]: I mean, I think going to an LLM based representation of text and words and so on enables you to get out of the explicit hard notion of, of particular words having to be on the page, but really getting at the notion of this topic of this page or this page. Paragraph is highly relevant to this query. Yeah.
+Shawn Wang [00:23:28]: I don’t think people understand how much LLMs have taken over all these very high traffic system, very high traffic. Yeah. Like it’s Google, it’s YouTube. YouTube has this like semantics ID thing where it’s just like every token or every item in the vocab is a YouTube video or something that predicts the video using a code book, which is absurd to me for YouTube size.
+Jeff Dean [00:23:50]: And then most recently GROK also for, for XAI, which is like, yeah. I mean, I’ll call out even before LLMs were used extensively in search, we put a lot of emphasis on softening the notion of what the user actually entered into the query.
+Shawn Wang [00:24:06]: So do you have like a history of like, what’s the progression? Oh yeah.
+Jeff Dean [00:24:09]: I mean, I actually gave a talk in, uh, I guess, uh, web search and data mining conference in 2009, uh, where we never actually published any papers about the origins of Google search, uh, sort of, but we went through sort of four or five or six. generations, four or five or six generations of, uh, redesigning of the search and retrieval system, uh, from about 1999 through 2004 or five. And that talk is really about that evolution. And one of the things that really happened in 2001 was we were sort of working to scale the system in multiple dimensions. So one is we wanted to make our index bigger, so we could retrieve from a larger index, which always helps your quality in general. Uh, because if you don’t have the page in your index, you’re going to not do well. Um, and then we also needed to scale our capacity because we were, our traffic was growing quite extensively. Um, and so we had, you know, a sharded system where you have more and more shards as the index grows, you have like 30 shards. And then if you want to double the index size, you make 60 shards so that you can bound the latency by which you respond for any particular user query. Um, and then as traffic grows, you add, you add more and more replicas of each of those. And so we eventually did the math that realized that in a data center where we had say 60 shards and, um, you know, 20 copies of each shard, we now had 1200 machines, uh, with disks. And we did the math and we’re like, Hey, one copy of that index would actually fit in memory across 1200 machines. So in 2001, we introduced, uh, we put our entire index in memory and what that enabled from a quality perspective was amazing. Um, and so we had more and more replicas of each of those. Before you had to be really careful about, you know, how many different terms you looked at for a query, because every one of them would involve a disk seek on every one of the 60 shards. And so you, as you make your index bigger, that becomes even more inefficient. But once you have the whole index in memory, it’s totally fine to have 50 terms you throw into the query from the user’s original three or four word query, because now you can add synonyms like restaurant and restaurants and cafe and, uh, you know, things like that. Uh, bistro and all these things. And you can suddenly start, uh, sort of really, uh, getting at the meaning of the word as opposed to the exact semantic form the user typed in. And that was, you know, 2001, very much pre LLM, but really it was about softening the, the strict definition of what the user typed in order to get at the meaning.
+Alessio Fanelli [00:26:47]: What are like principles that you use to like design the systems, especially when you have, I mean, in 2001, the internet is like. Doubling, tripling every year in size is not like, uh, you know, and I think today you kind of see that with LLMs too, where like every year the jumps in size and like capabilities are just so big. Are there just any, you know, principles that you use to like, think about this? Yeah.
+Jeff Dean [00:27:08]: I mean, I think, uh, you know, first, whenever you’re designing a system, you want to understand what are the sort of design parameters that are going to be most important in designing that, you know? So, you know, how many queries per second do you need to handle? How big is the internet? How big is the index you need to handle? How much data do you need to keep for every document in the index? How are you going to look at it when you retrieve things? Um, what happens if traffic were to double or triple, you know, will that system work well? And I think a good design principle is you’re going to want to design a system so that the most important characteristics could scale by like factors of five or 10, but probably not beyond that because often what happens is if you design a system for X. And something suddenly becomes a hundred X, that would enable a very different point in the design space that would not make sense at X. But all of a sudden at a hundred X makes total sense. So like going from a disk space index to a in memory index makes a lot of sense once you have enough traffic, because now you have enough replicas of the sort of state on disk that those machines now actually can hold, uh, you know, a full copy of the, uh, index and memory. Yeah. And that all of a sudden enabled. A completely different design that wouldn’t have been practical before. Yeah. Um, so I’m, I’m a big fan of thinking through designs in your head, just kind of playing with the design space a little before you actually do a lot of writing of code. But, you know, as you said, in the early days of Google, we were growing the index, uh, quite extensively. We were growing the update rate of the index. So the update rate actually is the parameter that changed the most. Surprising. So it used to be once a month.
+Shawn Wang [00:28:55]: Yeah.
+Jeff Dean [00:28:56]: And then we went to a system that could update any particular page in like sub one minute. Okay.
+Shawn Wang [00:29:02]: Yeah. Because this is a competitive advantage, right?
+Jeff Dean [00:29:04]: Because all of a sudden news related queries, you know, if you’re, if you’ve got last month’s news index, it’s not actually that useful for.
+Shawn Wang [00:29:11]: News is a special beast. Was there any, like you could have split it onto a separate system.
+Jeff Dean [00:29:15]: Well, we did. We launched a Google news product, but you also want news related queries that people type into the main index to also be sort of updated.
+Shawn Wang [00:29:23]: So, yeah, it’s interesting. And then you have to like classify whether the page is, you have to decide which pages should be updated and what frequency. Oh yeah.
+Jeff Dean [00:29:30]: There’s a whole like, uh, system behind the scenes that’s trying to decide update rates and importance of the pages. So even if the update rate seems low, you might still want to recrawl important pages quite often because, uh, the likelihood they change might be low, but the value of having updated is high.
+Shawn Wang [00:29:50]: Yeah, yeah, yeah, yeah. Uh, well, you know, yeah. This, uh, you know, mention of latency and, and saving things to this reminds me of one of your classics, which I have to bring up, which is latency numbers. Every programmer should know, uh, was there a, was it just a, just a general story behind that? Did you like just write it down?
+Jeff Dean [00:30:06]: I mean, this has like sort of eight or 10 different kinds of metrics that are like, how long does a cache mistake? How long does branch mispredict take? How long does a reference domain memory take? How long does it take to send, you know, a packet from the U S to the Netherlands or something? Um,
+Shawn Wang [00:30:21]: why Netherlands, by the way, or is it, is that because of Chrome?
+Jeff Dean [00:30:25]: Uh, we had a data center in the Netherlands, um, so, I mean, I think this gets to the point of being able to do the back of the envelope calculations. So these are sort of the raw ingredients of those, and you can use them to say, okay, well, if I need to design a system to do image search and thumb nailing or something of the result page, you know, how, what I do that I could pre-compute the image thumbnails. I could like. Try to thumbnail them on the fly from the larger images. What would that do? How much dis bandwidth than I need? How many des seeks would I do? Um, and you can sort of actually do thought experiments in, you know, 30 seconds or a minute with the sort of, uh, basic, uh, basic numbers at your fingertips. Uh, and then as you sort of build software using higher level libraries, you kind of want to develop the same intuitions for how long does it take to, you know, look up something in this particular kind of.
+Shawn Wang [00:31:21]: I’ll see you next time.
+Shawn Wang [00:31:51]: Which is a simple byte conversion. That’s nothing interesting. I wonder if you have any, if you were to update your...
+Jeff Dean [00:31:58]: I mean, I think it’s really good to think about calculations you’re doing in a model, either for training or inference.
+Jeff Dean [00:32:09]: Often a good way to view that is how much state will you need to bring in from memory, either like on-chip SRAM or HBM from the accelerator. Attached memory or DRAM or over the network. And then how expensive is that data motion relative to the cost of, say, an actual multiply in the matrix multiply unit? And that cost is actually really, really low, right? Because it’s order, depending on your precision, I think it’s like sub one picodule.
+Shawn Wang [00:32:50]: Oh, okay. You measure it by energy. Yeah. Yeah.
+Jeff Dean [00:32:52]: Yeah. I mean, it’s all going to be about energy and how do you make the most energy efficient system. And then moving data from the SRAM on the other side of the chip, not even off the off chip, but on the other side of the same chip can be, you know, a thousand picodules. Oh, yeah. And so all of a sudden, this is why your accelerators require batching. Because if you move, like, say, the parameter of a model from SRAM on the, on the chip into the multiplier unit, that’s going to cost you a thousand picodules. So you better make use of that, that thing that you moved many, many times with. So that’s where the batch dimension comes in. Because all of a sudden, you know, if you have a batch of 256 or something, that’s not so bad. But if you have a batch of one, that’s really not good.
+Shawn Wang [00:33:40]: Yeah. Yeah. Right.
+Jeff Dean [00:33:41]: Because then you paid a thousand picodules in order to do your one picodule multiply.
+Shawn Wang [00:33:46]: I have never heard an energy-based analysis of batching.
+Jeff Dean [00:33:50]: Yeah. I mean, that’s why people batch. Yeah. Ideally, you’d like to use batch size one because the latency would be great.
+Shawn Wang [00:33:56]: The best latency.
+Jeff Dean [00:33:56]: But the energy cost and the compute cost inefficiency that you get is quite large. So, yeah.
+Shawn Wang [00:34:04]: Is there a similar trick like, like, like you did with, you know, putting everything in memory? Like, you know, I think obviously NVIDIA has caused a lot of waves with betting very hard on SRAM with Grok. I wonder if, like, that’s something that you already saw with, with the TPUs, right? Like that, that you had to. Uh, to serve at your scale, uh, you probably sort of saw that coming. Like what, what, what hardware, uh, innovations or insights were formed because of what you’re seeing there?
+Jeff Dean [00:34:33]: Yeah. I mean, I think, you know, TPUs have this nice, uh, sort of regular structure of 2D or 3D meshes with a bunch of chips connected. Yeah. And each one of those has HBM attached. Um, I think for serving some kinds of models, uh, you know, you, you pay a lot higher cost. Uh, and time latency, um, bringing things in from HBM than you do bringing them in from, uh, SRAM on the chip. So if you have a small enough model, you can actually do model parallelism, spread it out over lots of chips and you actually get quite good throughput improvements and latency improvements from doing that. And so you’re now sort of striping your smallish scale model over say 16 or 64 chips. Uh, but as if you do that and it all fits in. In SRAM, uh, that can be a big win. So yeah, that’s not a surprise, but it is a good technique.
+Alessio Fanelli [00:35:27]: Yeah. What about the TPU design? Like how much do you decide where the improvements have to go? So like, this is like a good example of like, is there a way to bring the thousand picojoules down to 50? Like, is it worth designing a new chip to do that? The extreme is like when people say, oh, you should burn the model on the ASIC and that’s kind of like the most extreme thing. How much of it? Is it worth doing an hardware when things change so quickly? Like what was the internal discussion? Yeah.
+Jeff Dean [00:35:57]: I mean, we, we have a lot of interaction between say the TPU chip design architecture team and the sort of higher level modeling, uh, experts, because you really want to take advantage of being able to co-design what should future TPUs look like based on where we think the sort of ML research puck is going, uh, in some sense, because, uh, you know, as a hardware designer for ML and in particular, you’re trying to design a chip starting today and that design might take two years before it even lands in a data center. And then it has to sort of be a reasonable lifetime of the chip to take you three, four or five years. So you’re trying to predict two to six years out where, what ML computations will people want to run two to six years out in a very fast changing field. And so having people with interest. Interesting ML research ideas of things we think will start to work in that timeframe or will be more important in that timeframe, uh, really enables us to then get, you know, interesting hardware features put into, you know, TPU N plus two, where TPU N is what we have today.
+Shawn Wang [00:37:10]: Oh, the cycle time is plus two.
+Jeff Dean [00:37:12]: Roughly. Wow. Because, uh, I mean, sometimes you can squeeze some changes into N plus one, but, you know, bigger changes are going to require the chip. Yeah. Design be earlier in its lifetime design process. Um, so whenever we can do that, it’s generally good. And sometimes you can put in speculative features that maybe won’t cost you much chip area, but if it works out, it would make something, you know, 10 times as fast. And if it doesn’t work out, well, you burned a little bit of tiny amount of your chip area on that thing, but it’s not that big a deal. Uh, sometimes it’s a very big change and we want to be pretty sure this is going to work out. So we’ll do like lots of carefulness. Uh, ML experimentation to show us, uh, this is actually the, the way we want to go. Yeah.
+Alessio Fanelli [00:37:58]: Is there a reverse of like, we already committed to this chip design so we can not take the model architecture that way because it doesn’t quite fit?
+Jeff Dean [00:38:06]: Yeah. I mean, you, you definitely have things where you’re going to adapt what the model architecture looks like so that they’re efficient on the chips that you’re going to have for both training and inference of that, of that, uh, generation of model. So I think it kind of goes both ways. Um, you know, sometimes you can take advantage of, you know, lower precision things that are coming in a future generation. So you can, might train it at that lower precision, even if the current generation doesn’t quite do that. Mm.
+Shawn Wang [00:38:40]: Yeah. How low can we go in precision?
+Jeff Dean [00:38:43]: Because people are saying like ternary is like, uh, yeah, I mean, I’m a big fan of very low precision because I think that gets, that saves you a tremendous amount of time. Right. Because it’s picojoules per bit that you’re transferring and reducing the number of bits is a really good way to, to reduce that. Um, you know, I think people have gotten a lot of luck, uh, mileage out of having very low bit precision things, but then having scaling factors that apply to a whole bunch of, uh, those, those weights. Scaling. How does it, how does it, okay.
+Shawn Wang [00:39:15]: Interesting. You, so low, low precision, but scaled up weights. Yeah. Huh. Yeah. Never considered that. Yeah. Interesting. Uh, w w while we’re on this topic, you know, I think there’s a lot of, um, uh, this, the concept of precision at all is weird when we’re sampling, you know, uh, we just, at the end of this, we’re going to have all these like chips that I’ll do like very good math. And then we’re just going to throw a random number generator at the start. So, I mean, there’s a movement towards, uh, energy based, uh, models and processors. I’m just curious if you’ve, obviously you’ve thought about it, but like, what’s your commentary?
+Jeff Dean [00:39:50]: Yeah. I mean, I think. There’s a bunch of interesting trends though. Energy based models is one, you know, diffusion based models, which don’t sort of sequentially decode tokens is another, um, you know, speculative decoding is a way that you can get sort of an equivalent, very small.
+Shawn Wang [00:40:06]: Draft.
+Jeff Dean [00:40:07]: Batch factor, uh, for like you predict eight tokens out and that enables you to sort of increase the effective batch size of what you’re doing by a factor of eight, even, and then you maybe accept five or six of those tokens. So you get. A five, a five X improvement in the amortization of moving weights, uh, into the multipliers to do the prediction for the, the tokens. So these are all really good techniques and I think it’s really good to look at them from the lens of, uh, energy, real energy, not energy based models, um, and, and also latency and throughput, right? If you look at things from that lens, that sort of guides you to. Two solutions that are gonna be, uh, you know, better from, uh, you know, being able to serve larger models or, you know, equivalent size models more cheaply and with lower latency.
+Shawn Wang [00:41:03]: Yeah. Well, I think, I think I, um, it’s appealing intellectually, uh, haven’t seen it like really hit the mainstream, but, um, I do think that, uh, there’s some poetry in the sense that, uh, you know, we don’t have to do, uh, a lot of shenanigans if like we fundamentally. Design it into the hardware. Yeah, yeah.
+Jeff Dean [00:41:23]: I mean, I think there’s still a, there’s also sort of the more exotic things like analog based, uh, uh, computing substrates as opposed to digital ones. Uh, I’m, you know, I think those are super interesting cause they can be potentially low power. Uh, but I think you often end up wanting to interface that with digital systems and you end up losing a lot of the power advantages in the digital to analog and analog to digital conversions. You end up doing, uh, at the sort of boundaries. And periphery of that system. Um, I still think there’s a tremendous distance we can go from where we are today in terms of energy efficiency with sort of, uh, much better and specialized hardware for the models we care about.
+Shawn Wang [00:42:05]: Yeah.
+Alessio Fanelli [00:42:06]: Um, any other interesting research ideas that you’ve seen, or like maybe things that you cannot pursue a Google that you would be interested in seeing researchers take a step at, I guess you have a lot of researchers. Yeah, I guess you have enough, but our, our research.
+Jeff Dean [00:42:21]: Our research portfolio is pretty broad. I would say, um, I mean, I think, uh, in terms of research directions, there’s a whole bunch of, uh, you know, open problems and how do you make these models reliable and able to do much longer, kind of, uh, more complex tasks that have lots of subtasks. How do you orchestrate, you know, maybe one model that’s using other models as tools in order to sort of build, uh, things that can accomplish, uh, you know, much more. Yeah. Significant pieces of work, uh, collectively, then you would ask a single model to do. Um, so that’s super interesting. How do you get more verifiable, uh, you know, how do you get RL to work for non-verifiable domains? I think it’s a pretty interesting open problem because I think that would broaden out the capabilities of the models, the improvements that you’re seeing in both math and coding. Uh, if we could apply those to other less verifiable domains, because we’ve come up with RL techniques that actually enable us to do that. Uh, effectively, that would, that would really make the models improve quite a lot. I think.
+Alessio Fanelli [00:43:26]: I’m curious, like when we had Noam Brown on the podcast, he said, um, they already proved you can do it with deep research. Um, you kind of have it with AI mode in a way it’s not verifiable. I’m curious if there’s any thread that you think is interesting there. Like what is it? Both are like information retrieval of JSON. So I wonder if it’s like the retrieval is like the verifiable part. That you can score or what are like, yeah, yeah. How, how would you model that, that problem?
+Jeff Dean [00:43:55]: Yeah. I mean, I think there are ways of having other models that can evaluate the results of what a first model did, maybe even retrieving. Can you have another model that says, is this things, are these things you retrieved relevant? Or can you rate these 2000 things you retrieved to assess which ones are the 50 most relevant or something? Um, I think those kinds of techniques are actually quite effective. Sometimes I can even be the same model, just prompted differently to be a, you know, a critic as opposed to a, uh, actual retrieval system. Yeah.
+Shawn Wang [00:44:28]: Um, I do think like there, there is that, that weird cliff where like, it feels like we’ve done the easy stuff and then now it’s, but it always feels like that every year. It’s like, oh, like we know, we know, and the next part is super hard and nobody’s figured it out. And, uh, exactly with this RLVR thing where like everyone’s talking about, well, okay, how do we. the next stage of the non-verifiable stuff. And everyone’s like, I don’t know, you know, Ellen judge.
+Jeff Dean [00:44:56]: I mean, I feel like the nice thing about this field is there’s lots and lots of smart people thinking about creative solutions to some of the problems that we all see. Uh, because I think everyone sort of sees that the models, you know, are great at some things and they fall down around the edges of those things and, and are not as capable as we’d like in those areas. And then coming up with good techniques and trying those. And seeing which ones actually make a difference is sort of what the whole research aspect of this field is, is pushing forward. And I think that’s why it’s super interesting. You know, if you think about two years ago, we were struggling with GSM, eight K problems, right? Like, you know, Fred has two rabbits. He gets three more rabbits. How many rabbits does he have? That’s a pretty far cry from the kinds of mathematics that the models can, and now you’re doing IMO and Erdos problems in pure language. Yeah. Yeah. Pure language. So that is a really, really amazing jump in capabilities in, you know, in a year and a half or something. And I think, um, for other areas, it’d be great if we could make that kind of leap. Uh, and you know, we don’t exactly see how to do it for some, some areas, but we do see it for some other areas and we’re going to work hard on making that better. Yeah.
+Shawn Wang [00:46:13]: Yeah.
+Alessio Fanelli [00:46:14]: Like YouTube thumbnail generation. That would be very helpful. We need that. That would be AGI. We need that.
+Shawn Wang [00:46:20]: That would be. As far as content creators go.
+Jeff Dean [00:46:22]: I guess I’m not a YouTube creator, so I don’t care that much about that problem, but I guess, uh, many people do.
+Shawn Wang [00:46:27]: It does. Yeah. It doesn’t, it doesn’t matter. People do judge books by their covers as it turns out. Um, uh, just to draw a bit on the IMO goal. Um, I’m still not over the fact that a year ago we had alpha proof and alpha geometry and all those things. And then this year we were like, screw that we’ll just chuck it into Gemini. Yeah. What’s your reflection? Like, I think this, this question about. Like the merger of like symbolic systems and like, and, and LMS, uh, was a very much core belief. And then somewhere along the line, people would just said, Nope, we’ll just all do it in the LLM.
+Jeff Dean [00:47:02]: Yeah. I mean, I think it makes a lot of sense to me because, you know, humans manipulate symbols, but we probably don’t have like a symbolic representation in our heads. Right. We have some distributed representation that is neural net, like in some way of lots of different neurons. And activation patterns firing when we see certain things and that enables us to reason and plan and, you know, do chains of thought and, you know, roll them back now that, that approach for solving the problem doesn’t seem like it’s going to work. I’m going to try this one. And, you know, in a lot of ways we’re emulating what we intuitively think, uh, is happening inside real brains in neural net based models. So it never made sense to me to have like completely separate. Uh, discrete, uh, symbolic things, and then a completely different way of, of, uh, you know, thinking about those things.
+Shawn Wang [00:47:59]: Interesting. Yeah. Uh, I mean, it’s maybe seems obvious to you, but it wasn’t obvious to me a year ago. Yeah.
+Jeff Dean [00:48:06]: I mean, I do think like that IMO with, you know, translating to lean and using lean and then the next year and also a specialized geometry model. And then this year switching to a single unified model. That is roughly the production model with a little bit more inference budget, uh, is actually, you know, quite good because it shows you that the capabilities of that general model have improved dramatically and, and now you don’t need the specialized model. This is actually sort of very similar to the 2013 to 16 era of machine learning, right? Like it used to be, people would train separate models for lots of different, each different problem, right? I have, I want to recognize street signs and something. So I train a street sign. Recognition recognition model, or I want to, you know, decode speech recognition. I have a speech model, right? I think now the era of unified models that do everything is really upon us. And the question is how well do those models generalize to new things they’ve never been asked to do and they’re getting better and better.
+Shawn Wang [00:49:10]: And you don’t need domain experts. Like one of my, uh, so I interviewed ETA who was on, who was on that team. Uh, and he was like, yeah, I, I don’t know how they work. I don’t know where the IMO competition was held. I don’t know the rules of it. I just trained the models, the training models. Yeah. Yeah. And it’s kind of interesting that like people with these, this like universal skill set of just like machine learning, you just give them data and give them enough compute and they can kind of tackle any task, which is the bitter lesson, I guess. I don’t know. Yeah.
+Jeff Dean [00:49:39]: I mean, I think, uh, general models, uh, will win out over specialized ones in most cases.
+Shawn Wang [00:49:45]: Uh, so I want to push there a bit. I think there’s one hole here, which is like, uh. There’s this concept of like, uh, maybe capacity of a model, like abstractly a model can only contain the number of bits that it has. And, uh, and so it, you know, God knows like Gemini pro is like one to 10 trillion parameters. We don’t know, but, uh, the Gemma models, for example, right? Like a lot of people want like the open source local models that are like that, that, that, and, and, uh, they have some knowledge, which is not necessary, right? Like they can’t know everything like, like you have the. The luxury of you have the big model and big model should be able to capable of everything. But like when, when you’re distilling and you’re going down to the small models, you know, you’re actually memorizing things that are not useful. Yeah. And so like, how do we, I guess, do we want to extract that? Can we, can we divorce knowledge from reasoning, you know?
+Jeff Dean [00:50:38]: Yeah. I mean, I think you do want the model to be most effective at reasoning if it can retrieve things, right? Because having the model devote precious parameter space. To remembering obscure facts that could be looked up is actually not the best use of that parameter space, right? Like you might prefer something that is more generally useful in more settings than this obscure fact that it has. Um, so I think that’s always attention at the same time. You also don’t want your mode
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 97
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":60000,"paragraph_count":182,"sentence_count":624,"boilerplate_hits":0,"symbol_ratio":0.0036,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research, Jeff Dean has quietly shaped nearly every layer of the modern AI stack. As Chief AI Scientist at Google and a driving force behind Gemini, Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code.Jeff joins us to unpack what it really means to “own the Pareto fro
+
+2. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Latent Space: The AI Engineer Podcast Owning the AI Pareto Frontier — Jeff Dean 38 1× 0:00 Current time: 0:00 / Total time: -1:23:30 -1:23:30 Audio playback is not supported on your browser.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Owning the AI Pareto Frontier — Jeff Dean Feb 12, 2026 38 Share Transcript From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research , Jeff Dean has quietly shaped nearly every layer of the modern AI stack.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   As Chief AI Scientist at Google and a driving force behind Gemini , Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code.
+
+5. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   Jeff joins us to unpack what it really means to “own the Pareto frontier,” why distillation is the engine behind every Flash model breakthrough , how energy (in picojoules) not FLOPs is becoming the true bottleneck, what it was like leading the charge to unify all of Google’s AI teams, and why the next leap won’t come from bigger context windows alone, but from systems that give the illusion of attending to trillions of tokens.
+
+6. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   We discuss: Jeff’s early neural net thesis in 1990 : parallel training before it was cool, why he believed scaling would win decades early, and the “bigger model, more data, better results” mantra that held for 15 years The evolution of Google Search: sharding, moving the entire index into memory in 2001, softening query semantics pre-LLMs, and why retrieval pipelines already resemble modern LLM systems Pareto frontier strategy: why you need both frontier “Pro” models and low-latency “Flash” models, and how distill
+
+## business_elements
+
+- companies: Latent Space, Google
+- products: Gemini, agents, agent
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 2000, 38, 1, 0, 00, 23, 30, 12
+- quotes: own the Pareto frontier, / bigger model, more data, better results / outrageously large / Software Engineering Advice from
+Building Large-Scale Distributed Systems / Important AI Trends
+
+## evidence_seed
+
+- company_actions: From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research, Jeff Dean has quietly shaped nearly every layer of the modern AI stack. As Chief AI Scientist at Google and a driving force behind Gemini, Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code.Jeff joins us to unpack what it really means to “own the Pareto fro / Owning the AI Pareto Frontier — Jeff Dean Feb 12, 2026 38 Share Transcript From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research , Jeff Dean has quietly shaped nearly every layer of the modern AI stack. / As Chief AI Scientist at Google and a driving force behind Gemini , Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code.
+- case_details: 暂无公开信息
+- workflow_changes: Latent Space: The AI Engineer Podcast Owning the AI Pareto Frontier — Jeff Dean 38 1× 0:00 Current time: 0:00 / Total time: -1:23:30 -1:23:30 Audio playback is not supported on your browser.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research, Jeff Dean has quietly shaped nearly every layer of the modern AI stack. As Chief AI Scientist at Google and a driving force behind Gemini, Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code.Jeff joins us to unpack what it really means to “own the Pareto fro
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

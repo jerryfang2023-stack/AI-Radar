@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-107
 title: "GitHub - nurettincoban/ai-prd-workflow: A structured prompt pipeline that turns vague ideas into implementable RFCs 鈥?works with any AI assistant. 路 GitHub"

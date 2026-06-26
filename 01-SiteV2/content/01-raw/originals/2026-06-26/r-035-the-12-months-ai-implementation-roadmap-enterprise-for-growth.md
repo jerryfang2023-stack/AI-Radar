@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-035
 title: "The 12 Months AI Implementation Roadmap Enterprise for Growth"

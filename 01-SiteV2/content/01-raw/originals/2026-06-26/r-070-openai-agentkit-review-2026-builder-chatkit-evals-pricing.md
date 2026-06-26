@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-070
 title: "OpenAI AgentKit Review (2026): Builder, ChatKit, Evals & Pricing"

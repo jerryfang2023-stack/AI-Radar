@@ -1,4 +1,4 @@
-﻿# Daily Monitor Evals
+# Daily Monitor Evals
 
 Run these pass/fail checks when running, repairing, or updating the current WaveSight AI daily monitor source-capture layer.
 
@@ -41,6 +41,12 @@ Run these pass/fail checks when running, repairing, or updating the current Wave
     - Pass when source-artifact production retries refresh `aihot`, `keyword`, `gdelt`, and `rss` artifacts with the current retry-cycle search / GDELT limits before rerunning the unified monitor.
     - Fail when retry cycles only replay first-pass source artifacts, because `raw_count_min` cannot recover from additional search ceilings if source artifacts remain stale.
 
+12. `localized_repair_before_full_rerun`
+    - Pass when a failed run first identifies the failing stage and channel from existing reports / source artifacts, then reruns only the missing or repaired stage.
+    - Pass when Raw shortage diagnosis compares `raw_candidate_count` by source artifact with final `raw_count_by_channel` before starting any new source collection.
+    - Fail when a localized script, aggregation, Card, or gate issue triggers repeated full Business Signals workflow reruns that recollect already available AIHOT / keyword / GDELT / RSS artifacts.
+    - Fail when the repair loop reruns all channels before checking whether the issue is a downstream selector, dedupe gate, frontstage gate, or workflow-result condition.
+
 ## Repair Loop
 
-When a check fails, repair Raw capture, Pool routing, configuration, or monitor log output before downstream Signal Card generation. Do not lower gates to make a run appear complete.
+When a check fails, repair Raw capture, Pool routing, configuration, or monitor log output before downstream Signal Card generation. Do not lower gates to make a run appear complete. Do not spend a full source-collection run when existing artifacts can prove the failing lane or downstream stage.

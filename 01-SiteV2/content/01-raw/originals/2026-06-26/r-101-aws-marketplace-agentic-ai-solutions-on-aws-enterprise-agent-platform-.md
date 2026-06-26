@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-101
 title: "AWS Marketplace: Agentic AI Solutions on AWS: Enterprise Agent Platform Implementation"

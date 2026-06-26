@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-083
 title: "Linkrunner, an AI-powered MMP, raises Rs 5 crore in pre-seed round | Indian Startup News posted on the topic | LinkedIn"

@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-051
 title: "AWS Marketplace: AI Strategy Sprint + Pilot Plan - Amazon.com"

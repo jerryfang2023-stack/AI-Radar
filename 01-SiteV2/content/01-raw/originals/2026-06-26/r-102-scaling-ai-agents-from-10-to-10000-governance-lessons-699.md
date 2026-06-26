@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-102
 title: "Scaling AI Agents from 10 to 10000 鈥?Governance Lessons #699"

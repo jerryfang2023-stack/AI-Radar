@@ -1,80 +1,88 @@
-﻿# 2026-06-26 Pool-to-Card Handoff
+# 2026-06-26 Pool-to-Card Handoff
 
-- generated_at: 2026-06-26T03:32:45.967Z
-- written_count: 22
+- generated_at: 2026-06-26T07:29:06.403Z
+- written_count: 23
 - merged_count: 0
 - skipped_count: 0
-- signal_asset_count: 21
-- core_pool_not_promoted_count: 12
+- signal_asset_count: 22
+- core_pool_not_promoted_count: 3
 - frontstage_target_count: 10
 - signal_asset_mode: all qualified Core Pool items
 
 ## Signal Card Assets
 
-- SIG-20260626-A01锝淧-050锝淩ight Off The Batch: 50% Of YC W24 Is Built With AI. Who Got ...
-- SIG-20260626-A02锝淧-055锝淎gentic AI startup Quash raised $635K Pre-seed funding from Arali Ventures 鈥?Incubees
-- SIG-20260626-A03锝淧-001锝淧atronus AI 鑾?5000 涓囩編鍏?B 杞瀺璧勶紝鏋勫缓"鏁板瓧涓栫晫"鍘嬪姏娴嬭瘯 AI 鏅鸿兘浣?- SIG-20260626-A04锝淧-016锝淐ase study: AI agents & workflow automation 鈥?a startup-to-enterprise scale story
-- SIG-20260626-A05锝淧-021锝淲hat a Successful Enterprise AI Support Deployment Looks Like in 2026
-- SIG-20260626-A06锝淧-025锝淒eploying and Scaling Enterprise AI Agents - Eloquent AI
-- SIG-20260626-A07锝淧-005锝淕eneral Intuition 瀹屾垚 3.2 浜跨編鍏冭瀺璧勶紝鐢ㄦ父鎴忔暟鎹缁冮€氱敤 AI 鏅鸿兘浣?- SIG-20260626-A08锝淧-063锝淐laude Code v2.1.193 鍙戝竷
-- SIG-20260626-A09锝淧-002锝淩unway鍙戝竷Agent 2.0
-- SIG-20260626-A10锝淧-028锝淭he Enterprise AI Revolution: 20 SaaS and AI Trends Redefining Corporate America in 2026
-- SIG-20260626-A11锝淧-033锝淓nterprise AI Implementation Guide: Strategy to Production
-- SIG-20260626-A12锝淧-037锝淎ugust 鈥?5 enterprise roundup 路 GitHub
-- SIG-20260626-A13锝淧-042锝淎I Automation ROI in 2026: The Business Case
-- SIG-20260626-A14锝淧-043锝淎I Automation ROI for Small Business: Case Studies 2026
-- SIG-20260626-A15锝淧-049锝淓nterprise AI Agent Pilot to Production: A Scaling Framework
-- SIG-20260626-A16锝淧-052锝淎I Automation ROI: CFO-Ready Business Case Guide 2026
-- SIG-20260626-A17锝淧-039锝淓nterprise AI Implementation and Deployment - Alephic
-- SIG-20260626-A18锝淧-003锝淕oogle Finance 鎺ㄥ嚭棣栨鐙珛 Android 搴旂敤锛宨OS 鐗堣鍒掍粖骞存櫄浜涙椂鍊欎笂绾?- SIG-20260626-A19锝淧-008锝淚T鏃╂姤0626锛欰nthropic鐧婚《鐙鍏芥锛屾枃蹇冧竴瑷€瀹樼綉鍏抽棴锛岃嫻鏋滄定浠?- SIG-20260626-A20锝淧-044锝淰ertical AI Agents Are Eating Horizontal SaaS in 2026
-- SIG-20260626-A21锝淧-064锝淕oogle灏嗙數鑴戞帶鍒跺姛鑳界洿鎺ラ泦鎴愬埌Gemini 3.5 Flash涓?
+- SIG-20260626-A01｜P-014｜Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round
+- SIG-20260626-A02｜P-031｜Netris raises $15M Series A from a16z to help AI neoclouds go live faster
+- SIG-20260626-A03｜P-003｜Runlayer Raises $30M Series A to Help Enterprises Go All In On AI
+- SIG-20260626-A04｜P-021｜Databricks Launches Genie One: All-New Agentic Coworker for Every Team - Databricks
+- SIG-20260626-A05｜P-029｜Zensar Technologies Launches 'ZenseAI.AgentMesh' to Accelerate ...
+- SIG-20260626-A06｜P-063｜How enterprise analytics platforms are evolving: from dashboards to AI-driven decisions
+- SIG-20260626-A07｜P-002｜Runlayer raises $30M Series A to go all in on AI
+- SIG-20260626-A08｜P-016｜Probook Raises $40M from Andreessen Horowitz and Sequoia to
+- SIG-20260626-A09｜P-066｜Getting more from each token: How Copilot improves context handling and model routing
+- SIG-20260626-A10｜P-065｜Enterprise agentic AI platforms: 2026 buyer's guide - MarketScale
+- SIG-20260626-A11｜P-018｜AI Finance Automation Case Study: Month-End Close 11→3 Days, $850K Saved on LangGraph + Claude 3.5 + SAP/Oracle/NetSuite
+- SIG-20260626-A12｜P-023｜Microsoft Build 2026 announcements - James Serra's Blog
+- SIG-20260626-A13｜P-008｜The Corporate AI Learning Curve Is Flatlining - Paid Program
+- SIG-20260626-A14｜P-034｜The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI
+- SIG-20260626-A15｜P-067｜Evaluating Long-Context Question &amp; Answer Systems
+- SIG-20260626-A16｜P-068｜GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱
+- SIG-20260626-A17｜P-026｜Best AI Agent Builder Platforms in 2026 (Ranked Honestly) - Dapta
+- SIG-20260626-A18｜P-071｜Investing in Probook
+- SIG-20260626-A19｜P-033｜OpenAI reveals its first AI processor: Jalapeño
+- SIG-20260626-A20｜P-057｜GitHub’s COO Explains Why AI Hasn’t Replaced Developers
+- SIG-20260626-A21｜P-069｜Vertical AI Agents Are Eating Horizontal SaaS in 2026
+- SIG-20260626-A22｜P-070｜GitHub is purchasing AWS cloud capacity to manage an ... - Instagram
+
 ## Cluster / Dedupe Rows
 
-- P-050锝渆vent:funding:right off the batch: 50锝渁ccepted
-- P-055锝渆vent:funding:quash:$635锝渁ccepted
-- P-001锝渆vent:funding:techcrunch: 5000 涓囷綔accepted
-- P-016锝渆vent:case:case study:1207锝渁ccepted
-- P-021锝渆vent:case:software: 2026 锝渁ccepted
-- P-025锝渆vent:case:deploying and scaling enterprise ai agents:case deploying and scaling enterprise ai agents eloquent ai锝渁ccepted
-- P-005锝渆vent:product_service:techcrunch: 3.2 浜匡綔accepted
-- P-063锝渆vent:product_service:github:2.1锝渁ccepted
-- P-002锝渆vent:product_service:runwayml: 2.0 锝渁ccepted
-- P-028锝渆vent:case:enterprise ai revolution: 20 锝渁ccepted
-- P-033锝渆vent:case:enterprise ai implementation guide:case enterprise ai implementation guide strategy to production锝渁ccepted
-- P-037锝渆vent:case:august 25 enterprise roundup github:25 锝渁ccepted
-- P-042锝渆vent:case:ai automation roi in 2026: 2026锝渁ccepted
-- P-043锝渆vent:case:ai automation roi for small business: 2026 锝渁ccepted
-- P-049锝渆vent:case:enterprise ai agent pilot to production:case enterprise ai agent pilot to production a scaling framework锝渁ccepted
-- P-052锝渆vent:case:ai automation roi: 2026 锝渁ccepted
-- P-039锝渆vent:case:alephic:case enterprise ai implementation and deployment alephic锝渁ccepted
-- P-003锝渆vent:product_service:arstechnica:2026锝渁ccepted
-- P-008锝渆vent:product_service:ithome:0626锝渁ccepted
-- P-044锝渆vent:product_service:sierra: 2026 锝渁ccepted
-- P-064锝渆vent:product_service:the decoder: 3.5 锝渁ccepted
+- P-014｜hash:4395d88402a3ea76｜accepted
+- P-031｜hash:39ac0a803507402e｜accepted
+- P-003｜hash:6fd7da0cbf7f6306｜accepted
+- P-021｜hash:ca71f6dc7daf9194｜accepted
+- P-029｜hash:8d31d2e331059d2b｜accepted
+- P-063｜hash:44ec38a780aad76e｜accepted
+- P-002｜hash:b9ede5d5eacfb435｜accepted
+- P-016｜hash:16af0d3e75b94e37｜accepted
+- P-066｜hash:683997c6fa9d3f3f｜accepted
+- P-065｜hash:c6e5b1bf42965f2a｜accepted
+- P-018｜hash:14a5ef582dc1a1aa｜accepted
+- P-023｜hash:87aa93c12be78d87｜accepted
+- P-008｜hash:5a50af0a65a725a4｜accepted
+- P-034｜hash:6d564e11e8fa912d｜accepted
+- P-067｜hash:6955b100ca5ed40e｜accepted
+- P-068｜hash:0e630014531c2a4e｜accepted
+- P-026｜hash:858520c46251929a｜accepted
+- P-071｜hash:4d1e5eacf18af4f9｜accepted
+- P-033｜hash:8be9af0faf571c82｜accepted
+- P-057｜hash:16005c47bbfc5a6b｜accepted
+- P-069｜hash:cfb84f2e10fdf8aa｜accepted
+- P-070｜hash:dd508184fec727db｜accepted
 
 ## Written
 
-- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-26--signal--right-off-the-batch-auto-signal-p-050.md
-- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-26--signal--quash-auto-signal-p-055.md
-- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-26--signal--techcrunch-auto-signal-p-001.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--case-study-auto-signal-p-016.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--software-auto-signal-p-021.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--deploying-and-scaling-enterprise-ai-agents-auto-signal-p-025.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--techcrunch-auto-signal-p-005.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--github-auto-signal-p-063.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--runwayml-auto-signal-p-002.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--enterprise-ai-revolution-auto-signal-p-028.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--enterprise-ai-implementation-guide-auto-signal-p-033.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--august-25-enterprise-roundup-github-auto-signal-p-037.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--ai-automation-roi-in-2026-auto-signal-p-042.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--ai-automation-roi-for-small-business-auto-signal-p-043.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--enterprise-ai-agent-pilot-to-production-auto-signal-p-049.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--ai-automation-roi-auto-signal-p-052.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--alephic-auto-signal-p-039.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--arstechnica-auto-signal-p-003.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--ithome-auto-signal-p-008.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--sierra-auto-signal-p-044.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--the-decoder-auto-signal-p-064.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-26--signal--seltz-auto-signal-p-014.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-26--signal--netris-auto-signal-p-031.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-26--signal--runlayer-auto-signal-p-003.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--databricks-auto-signal-p-021.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--zensar-technologies-auto-signal-p-029.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--dataiku-auto-signal-p-063.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--runlayer-auto-signal-p-002.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--probook-auto-signal-p-016.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--getting-more-from-each-token-auto-signal-p-066.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--enterprise-agentic-ai-platforms-auto-signal-p-065.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--ai-finance-automation-case-study-auto-signal-p-018.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--microsoft-build-2026-announcements-auto-signal-p-023.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--corporate-ai-learning-curve-is-flatlining-auto-signal-p-008.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--latent-auto-signal-p-034.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--evaluating-long-auto-signal-p-067.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--glm-5-2-deepseek-auto-signal-p-068.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-26--signal--dapta-auto-signal-p-026.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--investing-in-probook-auto-signal-p-071.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--openai-reveals-its-first-ai-processor-auto-signal-p-033.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--spotify-auto-signal-p-057.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--sierra-auto-signal-p-069.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-26--signal--instagram-auto-signal-p-070.md
 - 01-SiteV2/content/04-business-signals/signals/2026-06-26-signals.md
 
 ## Merged
@@ -87,12 +95,6 @@
 
 ## Core Pool Not Promoted
 
-- P-006: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=鐧藉鍥犲畨鍏ㄦ媴蹇ц姹侽penAI寤剁紦鍙戝竷鏂版ā鍨?- P-010: fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.; priority=low; title=寮€鏀炬潈閲嶆ā鍨嬬殑闅句互蹇嶅彈鐨勫粔浠锋劅
-- P-011: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=Anthropic 绉伴樋閲屽反宸村繀椤讳负鏈€澶ц妯?Claude 鍏嬮殕鏀诲嚮鍙楃綒
-- P-014: valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Workflow Automation Startups funded by Y Combinator (YC) 2026
-- P-018: fact_type_constraints:social_or_community_source_not_verified_fact; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=Accelerating UX Innovation: How GitHub Copilot Coding Agent ...
-- P-026: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=well-architected/well-architected/saas/ai-strategy.md at main 路 MicrosoftDocs/well-architected 路 GitHub
-- P-030: valid_page_type:index_or_directory_url; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Enterprise Ai Adoption 鈥?Software & Technology Articles | MarketScale | MarketScale
-- P-045: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=Enterprise AI Agent Governance Plan for Production Teams
-- P-056: valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Open Source Coding Agent Kilo Raises $8M in Seed Funding
-- P-059: valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Linux 鍩洪噾浼氳仈鍚堝鏂规帹鍑?Akrites 椤圭洰锛屾姷寰?AI 椹卞姩寮€婧愯蒋浠舵紡娲炴敾鍑?- P-060: valid_page_type:text_indicates_index_only; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=鍗婂浣撹涓氶噸澶х獊鐮达紒IBM鎺ㄥ嚭鍏ㄧ悆棣栦釜浜?绾崇背鑺墖鎶€鏈?- P-066: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=Grok AI 娌︿负鑹叉儏骞冲彴锛氳秴鍗婃暟娴侀噺鐢ㄤ簬鎴愪汉鍐呭
+- P-028: fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact; repair=Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.; priority=low; title=Designing for the Inference Era in AI Infrastructure | Gajen Kandiah ...
+- P-032: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=OpenAI will delay GPT-5.6 after Trump administration request
+- P-064: fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact; repair=Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.; priority=low; title=Andrew Ng on AI's Impact on Startups | Andy Hock posted on the topic

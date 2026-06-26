@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-026
 title: "well-architected/well-architected/saas/ai-strategy.md at main 路 MicrosoftDocs/well-architected 路 GitHub"

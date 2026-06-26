@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-056
 title: "AI Software Startup Heizen Secures $500,000 Pre-Seed Funding Led by Titan Capital - Indian Startup Times"
