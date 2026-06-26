@@ -1,9 +1,14 @@
 {
-  "generatedAt": "2026-06-26T05:38:21.009Z",
+  "generatedAt": "2026-06-25T16:32:16.874Z",
   "stats": {
-    "podcastsBuilt": 4,
-    "totalEpisodes": 22,
-    "errors": []
+    "podcastsBuilt": 2,
+    "totalEpisodes": 6,
+    "errors": [
+      "Latent Space: fetch failed",
+      "The MAD Podcast (Matt Turck): fetch failed",
+      "AI & I by Every: fetch failed",
+      "The MAD Podcast with Matt Turck: fetch failed"
+    ]
   },
   "podcasts": [
     {
@@ -15,60 +20,44 @@
       "name": "Unsupervised Learning (Redpoint)"
     },
     {
-      "title": "🔬ESM: The Bitter Lesson is Coming for Proteins - Alex Rives, BioHub",
-      "url": "https://www.latent.space/p/esmfold2",
-      "publishedAt": "Wed, 27 May 2026 17:46:16 GMT",
-      "excerpt": "Editor’s note: In our first BioHub pod with Priscilla and Mark they discussed their acquisition of EvoScale, led by Alex Rives, who is now Head of Science at BioHub. With ESM-1 they trained language models on millions of protein sequences drawn from across life, with a simple “next token” objective: predict the amino acids that have been randomly masked out, based on the context of the rest of the sequence. But they soon found that these models also learned biological structure and function, including properties the model had never been explicitly s…",
+      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
+      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
+      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…",
       "source": "podcast",
-      "name": "Latent Space"
+      "name": "Unsupervised Learning"
     },
     {
-      "title": "We Automated Everything With AI and Tripled Our Headcount",
-      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/We-Automated-Everything-With-AI-and-Tripled-Our-Headcount-e3jvmqf",
-      "publishedAt": "Wed, 27 May 2026 16:28:59 GMT",
-      "excerpt": "Dan Shipper runs one of the most AI-native companies today. Every has agents embedded in nearly every workflow—“if you swing a stick in our Slack, you're as likely to hit a human as an agent,” he says. And yet the company has grown from four people to 30 since GPT-3 came out, and is still hiring.Why does Dan believe there's more human work to do than ever?In a format flip for AI & I, Every's COO Brandon Gell turns the tables and interviews Dan about his latest essay, “After Automation”—an 8,000-word argument for why rising automation doesn't eliminate demand for human work, it increases it. The thesis: AI makes yesterday's expert competence cheap and widely available, which floods every field with output that's close but not quite right—and that creates more demand for the humans who can take it the rest of the way.Dan talked with Brandon about the paradox at the heart of a…",
+      "title": "Ep 88: Unpacking DeepMind&apos;s Quest for SuperIntelligence with Demis Hassabis&apos; Biographer",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-88-unpacking-deepminds-quest-for-superintelligence-with-demis-hassabis-biographer-ojelyqia",
+      "publishedAt": "Mon, 1 Jun 2026 12:46:52 +0000",
+      "excerpt": "Sebastian Mallaby spent three years and 30+ hours interviewing Demis Hassabis in the back of a British pub to write The Infinity Machine, and the conversation uses that reporting to surface the most underexplored figure in AI. Demis founded the original AI lab in 2010, won a Nobel Prize, runs models that consistently top the leaderboards, and yet remains so unrecognized that Sebastian's own publisher worried no one would buy a book with his face on the cover.  The throughline is a paradox: Demis tried to prevent the AI race we're now all living through, and now finds himself one of its central protagonists. He used to believe a single lab could carry the safety burden to AGI; he now sees safety as a collective action problem only governments can solve. He hedged DeepMind's research bets across every promising direction, and as a result missed the two most consumer-defining moments…",
       "source": "podcast",
-      "name": "AI & I by Every"
+      "name": "Unsupervised Learning (Redpoint)"
     },
     {
-      "title": "Building a School Where AI Models Learn About Humanity",
-      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/Building-a-School-Where-AI-Models-Learn-About-Humanity-e3l6god",
-      "publishedAt": "Wed, 24 Jun 2026 14:55:00 GMT",
-      "excerpt": "If scaling laws hold—and Surge AI CEO Edwin Chen believes they do—we’re hurtling toward a future where there’s nothing humans can do that AI can’t do better. When OpenAI’s models disproved an open conjecture posed by mathematician Paul Erdős using novel algebraic geometry techniques, Fields medalist Timothy Gowers felt the shift acutely. He initially thought the model had proved an upper bound, and braced himself: that would mean it was “all over for mathematicians very soon.” When he realized it had only found a counterexample, he was relieved—it bought him another year or two before the thing he’s devoted his life to becomes something AI does better.As founder and CEO of the company behind the data environments and evals the major model companies use to train their models, Chen has a unique perspective on how quickly AI models are absorbing tasks we used to think of as uniqu…",
+      "title": "Ep 88: Unpacking DeepMind&apos;s Quest for SuperIntelligence with Demis Hassabis&apos; Biographer",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-88-unpacking-deepminds-quest-for-superintelligence-with-demis-hassabis-biographer-ojelyqia",
+      "publishedAt": "Mon, 1 Jun 2026 12:46:52 +0000",
+      "excerpt": "Sebastian Mallaby spent three years and 30+ hours interviewing Demis Hassabis in the back of a British pub to write The Infinity Machine, and the conversation uses that reporting to surface the most underexplored figure in AI. Demis founded the original AI lab in 2010, won a Nobel Prize, runs models that consistently top the leaderboards, and yet remains so unrecognized that Sebastian's own publisher worried no one would buy a book with his face on the cover.  The throughline is a paradox: Demis tried to prevent the AI race we're now all living through, and now finds himself one of its central protagonists. He used to believe a single lab could carry the safety burden to AGI; he now sees safety as a collective action problem only governments can solve. He hedged DeepMind's research bets across every promising direction, and as a result missed the two most consumer-defining moments…",
       "source": "podcast",
-      "name": "AI & I by Every"
+      "name": "Unsupervised Learning"
     },
     {
-      "title": "🔬 The Self-Driving Lab — Joseph Krause, Radical AI",
-      "url": "https://www.latent.space/p/radical-ai",
-      "publishedAt": "Wed, 17 Jun 2026 17:58:06 GMT",
-      "excerpt": "On the Science pod, we’ve been covering a lot of the ground on how AI is revolutionizing STEM, but one of our favorite off the record topics since our launch is which field is harder to accelerate: math, bio, or physics? Today we’re back in Materials Science land with Radical — Unlike biological molecules that can be represented (and predicted!) by token strings, the success of materials involve many more macro complex variables like supply chains, microstructures, and manufacturing processes. If you recall the LK99 drama of 2023…",
+      "title": "AI Vibe Check: Lab Wars, Why APIs Might Vanish & Future Predictions",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ai-vibe-check-lab-wars-why-apis-might-vanish-future-predictions-sr_Mp2pR",
+      "publishedAt": "Fri, 12 Jun 2026 12:51:00 +0000",
+      "excerpt": "Six months after their last roundup, Jacob sits down with Ari Morcos (Datology AI CEO, former Meta AI researcher) and Rob Toews (Radical Ventures partner, Forbes AI columnist) to take stock of an AI landscape that has shifted dramatically: coding agents crossing the long-time-horizon threshold has turned engineers into managers of agents, near-frontier open weight AI looks like it may be disappearing as Meta and the Chinese labs pull back, and Anthropic's restrictions on its newly released Fable model have its biggest supporters questioning whether safety framing is masking competitive positioning. The conversation runs through the full state of the lab wars, including Rob doubling down on his Sam Altman ouster prediction and the Bret Taylor succession theory, why Google's structural advantages remain intact despite falling behind on coding, what xAI's Cursor acquisition is really for, and Ari'…",
       "source": "podcast",
-      "name": "Latent Space"
+      "name": "Unsupervised Learning (Redpoint)"
     },
     {
-      "title": "GitHub’s COO Explains Why AI Hasn’t Replaced Developers",
-      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/GitHubs-COO-Explains-Why-AI-Hasnt-Replaced-Developers-e3ktu6s",
-      "publishedAt": "Wed, 17 Jun 2026 15:58:16 GMT",
-      "excerpt": "Last year, there were 1 billion commits on GitHub. This year, Kyle Daigle expects that number to exceed 14 billion, a two-component explosion caused by more humans—and their agents—issuing pull requests. In March alone, 17 million pull requests on GitHub were created by agents.Daigle is the COO of GitHub and Microsoft’s chief marketing officer for developer products. He’s been at GitHub for 13 years, and is paying close attention to how AI is expanding the platform’s user base. Along with agents, legal, sales, and marketing professionals are building apps with the GitHub Copilot app. The line between developer and non-developer is disappearing.On this episode of AI & I, guest host Mike Taylor sat down with Daigle at Microsoft Build to discuss how GitHub is building infrastructure for an agent-native world: agentic code review, model routers that automatically select the right mode…",
+      "title": "AI Vibe Check: Lab Wars, Why APIs Might Vanish & Future Predictions",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ai-vibe-check-lab-wars-why-apis-might-vanish-future-predictions-sr_Mp2pR",
+      "publishedAt": "Fri, 12 Jun 2026 12:51:00 +0000",
+      "excerpt": "Six months after their last roundup, Jacob sits down with Ari Morcos (Datology AI CEO, former Meta AI researcher) and Rob Toews (Radical Ventures partner, Forbes AI columnist) to take stock of an AI landscape that has shifted dramatically: coding agents crossing the long-time-horizon threshold has turned engineers into managers of agents, near-frontier open weight AI looks like it may be disappearing as Meta and the Chinese labs pull back, and Anthropic's restrictions on its newly released Fable model have its biggest supporters questioning whether safety framing is masking competitive positioning. The conversation runs through the full state of the lab wars, including Rob doubling down on his Sam Altman ouster prediction and the Bret Taylor succession theory, why Google's structural advantages remain intact despite falling behind on coding, what xAI's Cursor acquisition is really for, and Ari'…",
       "source": "podcast",
-      "name": "AI & I by Every"
-    },
-    {
-      "title": "How Anthropic Uses Claude Fable 5 With Mike Krieger",
-      "url": "https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-Anthropic-Uses-Claude-Fable-5-With-Mike-Krieger-e3kjrg7",
-      "publishedAt": "Wed, 10 Jun 2026 17:27:38 GMT",
-      "excerpt": "Mike Krieger built one of the most consequential consumer apps of the last two decades as the cofounder of Instagram. He is now at the frontier of AI-native product development as head of Anthropic Labs, the team responsible for figuring out what the most capable AI models can do in the hands of real builders.When Krieger first got access to Fable 5 months before its public release, it was exciting and disorienting. “I feel like a total newbie again,” he remembers telling his team. The way he’d been thinking about productivity, strategy, and time management was out of date. The model had outpaced his workflows.Dan Shipper talked with Krieger for AI & I about what it looks like to build with a model as capable as Fable 5, including the new rhythms, challenges, and possibilities it reveals.If you found this episode interesting, please like, subscribe, comment, and share!To hear more from Dan Ship…",
-      "source": "podcast",
-      "name": "AI & I by Every"
-    },
-    {
-      "title": "🔬Scaling Past Informal AI - Carina Hong, Axiom Math",
-      "url": "https://www.latent.space/p/axiom",
-      "publishedAt": "Wed, 03 Jun 2026 19:27:49 GMT",
-      "excerpt": "In 2025, seven-month-old startup Axiom solved all 12 of the problems Putnam exam (scoring 8/12 in the time limit) a prestigious undergraduate math exam. The 12/12 score is better than the top undergraduates (110/120) and the closest AI system that reported a result (DeepSeek 103/120), although it is unclear what the people and other systems would have scored with more time. Nonetheless, the Putnam exam is legendary for its difficulty, with the median score typically being 0 or 1 points. Taken by itself, this seems like a minor feather in the cap of AI; one of a long series of accomplishments by AI systems in elite competitions with humans, starting with Deep Blue beating Kasparov.Fast forward to mid-2026, and Claude Code is eating the world. In 2024 Anthropic’s bet on code and enterprise looked lik…",
-      "source": "podcast",
-      "name": "Latent Space"
+      "name": "Unsupervised Learning"
     }
   ]
 }

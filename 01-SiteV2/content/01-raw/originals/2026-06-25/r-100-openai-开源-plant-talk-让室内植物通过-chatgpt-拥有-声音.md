@@ -141,7 +141,7 @@ openai/planttalk: Give your houseplants a voice with ChatGPT
 - business_actions: 暂无公开信息
 - affected_departments: IT / 安全
 - numbers: 393, 6, 24
-- quotes: 
+- quotes:
 OpenAI 在 GitHub 开源 Plant Talk 项目，通过 Codex Desktop 连接 ChatGPT，让室内植物具备语音能力。用户可与植物语音交流，如询问 / Plant Talk / 最近过得怎么样？
 
 ## evidence_seed
@@ -158,7 +158,7 @@ OpenAI 在 GitHub 开源 Plant Talk 项目，通过 Codex Desktop 连接 ChatGPT
 - importance_type: important_product_or_service
 - importance_score: 5
 - importance_reason: new product or service; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 3
 - case_richness: 3

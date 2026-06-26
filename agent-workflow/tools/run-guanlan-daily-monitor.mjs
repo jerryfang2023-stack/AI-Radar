@@ -4196,6 +4196,7 @@ function normalize(items) {
   take("rss-feed");
   take("hn", Math.min(hnTarget, 8));
   take("aihot");
+  take("rss-feed");
 
   for (const item of normalized) {
     if (picked.length >= target) break;

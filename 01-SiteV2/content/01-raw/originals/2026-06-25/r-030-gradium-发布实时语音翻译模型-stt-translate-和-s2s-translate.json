@@ -1,0 +1,282 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-030",
+  "title": "Gradium 发布实时语音翻译模型 stt-translate 和 s2s-translate",
+  "original_url": "https://www.marktechpost.com/2026/06/24/gradium-launches-stt-translate-and-s2s-translate-real-time-speech-translation-models-beating-gpt-realtime-translate-on-accuracy-and-latency",
+  "canonical_url": "https://marktechpost.com/2026/06/24/gradium-launches-stt-translate-and-s2s-translate-real-time-speech-translation-models-beating-gpt-realtime-translate-on-accuracy-and-latency",
+  "source_name": "MarkTechPost（RSS）",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "aihot",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-06-24T20:00:21.000Z",
+  "collected_at": "2026-06-25T05:10:40.152Z",
+  "language": "mixed",
+  "full_text": "Technology\nArtificial Intelligence\nLanguage Model\nAudio Language Model\nEditors Pick\nNew Releases\nStaff\nVoice AI\nGradium today released two real-time speech translation models: stt-translate and s2s-translate . Both run across five languages and stream results live in the browser.\nGradium claims a better accuracy-latency tradeoff than gpt-realtime-translate and gemini-3.5-live-translate . It also adds output voice control, including cloning, that gpt-realtime-translate lacks.\nTL;DR\nGradium launched two real-time speech translation models: stt-translate (speech → text) and s2s-translate (speech → speech).\nThey cover five languages (EN, FR, DE, ES, PT) and 20 pairs, collapsing the usual 3-model cascade into 2.\nAccuracy leads gemini-3.5-live-translate on BLEU and MetricX, and beats gpt-realtime-translate on BLEU (comparable on MetricX).\nLatency averages 3.0s — ahead of gpt-realtime-translate (3.6s), just behind gemini-3.5-live-translate (2.9s).\nUnlike gpt-realtime-translate , you pick the output voice or clone your own, all over one duplex WebSocket.\nstt-translate\nstt-translate takes speech in one language and returns text in another. It supports English ( EN ), French ( FR ), German ( DE ), Spanish ( ES ), and Portuguese ( PT ).\nAny source maps to any target across that set. That is 20 language pairs in total, in every direction.\nThe key design choice is collapsing two steps into one. Transcription and translation happen in a single pass, inside the speech model. There is no intermediate transcript to wait on and no handoff between systems.\nAccording to Gradium: the approach draws on the Hibiki-Zero framework . The model optimizes low latency and high accuracy jointly through Reinforcement Learning. This means fewer moving parts in the pipeline.\ns2s-translate\ns2s-translate turns spoken audio in one language into spoken audio in another, end to end. It builds on stt-translate and pairs it with a Gradium TTS model in one service.\nYou stream audio in over a WebSocket. You receive both the synthesized output audio and the translated transcript as they are produced.\nThat removes integration work. You do not wire STT and TTS together yourself or manage two connections. The server runs the pipeline and streams results back.\nInput audio is PCM at 24 kHz, 16-bit signed mono. Output audio is PCM at 48 kHz, 16-bit signed mono. WAV, Opus, mu-law, and A-law are also supported.\nHow Gradium Measures Quality: BLEU and MetricX\nTranslation quality is not one number, so Gradium reports two complementary metrics:\nBLEU (Bilingual Evaluation Understudy) is the long-standing machine translation standard (Papineni et al.). It measures n-gram overlap between model output and human reference translations. It runs from 0 to 100, where higher is better.\nBLEU is fast, reproducible, and comparable across systems. Its limit is that it rewards surface word matching. A correct translation using different wording can be penalized.\nMetricX is a learned, neural quality metric developed by Google (Juraska et al.). It predicts how a human would rate a translation. It is an error score, so lower is better, and it tracks human judgment more closely than BLEU.\nThe two catch different failures. BLEU checks lexical fidelity; MetricX checks semantic adequacy.\nBenchmark\nGradium benchmarks on a proprietary dataset of conversational speech. The data reflects everyday topics like work, travel, and weather, rather than scripted text.\nAgainst gemini-3.5-live-translate , Gradium leads on both BLEU and MetricX. Against gpt-realtime-translate , Gradium leads on BLEU and is comparable on MetricX.\nCapability Gradium gpt-realtime-translate gemini-3.5-live-translate\nAverage latency (all pairs) 3.0s 3.6s 2.9s\nBLEU (higher is better) Leads both Lower than Gradium Lower than Gradium\nMetricX (lower error is better) Comparable to GPT; leads Gemini Comparable to Gradium Higher error than Gradium\nChoose output voice Yes (catalogue) No Not stated\nClone your own voice Yes No Not stated\nLanguages 5 languages, 20 pairs Not stated Not stated\nAccuracy (BLEU and MetricX) is measured on stt-translate ‘s translation; latency is for the full s2s-translate pipeline. Read it as a tradeoff, not a clean sweep. Gemini is fractionally faster; Gradium is more accurate and adds voice control.\nWhy Two Models Beat Three\nThe standard speech-to-speech stack uses three models: Speech-To-Text, then Text-To-Text translation, then Text-To-Speech. Each stage is a separate inference call. Each adds processing time and a handoff.\nGradium uses two. stt-translate performs transcription and translation in a single pass. The dedicated Text-To-Text stage disappears entirely.\nThat removes one full model from the critical path, along with its latency and handoff. The end-to-end path is shorter than a three-model cascade at equivalent quality.\nThe numbers back the design. s2s-translate averages 3.0s across all language pairs. That beats gpt-realtime-translate at 3.6s and sits near gemini-3.5-live-translate at 2.9s.\nUse Cases With Examples\nLive dubbing and localization : Clone a presenter’s voice once. Translate a French keynote into Spanish that still sounds like the original speaker.\nMultilingual voice agents : Route a support call through s2s-translate . An English agent hears a German caller in English, and replies stream back in German.\nReal-time meetings : Pipe microphone audio in over the WebSocket. Each participant receives translated speech and transcript in their own language.\nAccessibility and captioning : Use stt-translate alone when you only need text. Render live translated captions without generating audio.\nTranslate in a Few Lines of Code\nThe Python SDK streams audio through the Speech-To-Speech endpoint and returns translated audio plus transcript.\nCopy Code Copied Use a different Browser\nimport asyncio\nimport numpy as np\nfrom gradium import client as gradium_client\ngrc = gradium_client.GradiumClient() # reads GRADIUM_API_KEY from the environment\nsetup = {\n\"model_name\": \"s2s-translate\",\n\"input_format\": \"pcm_24000\", # 24 kHz, 16-bit signed mono input\n\"output_format\": \"pcm_48000\", # 48 kHz, 16-bit signed mono output\n\"voice_id\": \"cLONiZ4hQ8VpQ4Sz\", # must be a voice in the target language\n\"stt_model_name\": \"stt-translate\",\n\"tts_model_name\": \"default\",\n\"target_language\": \"en\",\n# Raw 24 kHz, 16-bit mono PCM bytes (from a file, buffer, or microphone).\nwith open(\"input_24k_mono.pcm\", \"rb\") as f:\npcm = f.read()\nasync def main() -> np.ndarray:\naudio_out: list[bytes] = []\nasync with grc.s2s_realtime(wait_for_ready_on_start=True, **setup) as s2s:\nasync def send_loop():\nfor i in range(0, len(pcm), 1920): # 1920 bytes = 40 ms at 24 kHz\nawait s2s.send_audio(pcm[i : i + 1920])\nawait s2s.send_eos() # signal end of input\nasync def recv_loop():\nasync for msg in s2s:\nif msg[\"type\"] == \"audio\":\naudio_out.append(msg[\"audio\"]) # translated speech (bytes)\nelif msg[\"type\"] == \"text\":\nprint(msg[\"text\"], end=\" \", flush=True) # translated transcript\nelif msg[\"type\"] == \"end_of_stream\":\nbreak\nasync with asyncio.TaskGroup() as tg:\ntg.create_task(send_loop())\ntg.create_task(recv_loop())\nreturn np.frombuffer(b\"\".join(audio_out), dtype=np.int16) # 48 kHz mono PCM\ntranslated_pcm = asyncio.run(main())\nThe SDK exposes three ways to drive S2S. Use s2s_realtime for live sources, s2s_stream for finite iterables, and s2s for buffered files. All three talk to wss://api.gradium.ai/api/speech/s2s .\nStrengths and Weaknesses\nStrengths\nSingle-pass stt-translate removes one model from the latency path\nLeads gemini-3.5-live-translate on both BLEU and MetricX\nOutput voice choice and cloning, which gpt-realtime-translate lacks\nOne duplex WebSocket replaces a hand-wired STT-plus-TTS pipeline\nWeaknesses\nFive languages at launch, with 20 pairs only across that set\ngemini-3.5-live-translate is fractionally lower latency at 2.9s\nMetricX is only comparable to, not ahead of, gpt-realtime-translate\nBenchmarks use a proprietary dataset, so external replication is limited\nInteractive Explainer\nYou can test real-time translation in the browser at gradium.ai/translate , with integration details in the API docs . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\ntinyfish.ai Open Source\nBig Set\nDescribe your ideal dataset in plain English, and BigSet builds it.\ndataset.build() auto&middot;refresh\nExplore on GitHub &rarr;",
+  "clean_text": "Technology\nArtificial Intelligence\nLanguage Model\nAudio Language Model\nEditors Pick\nNew Releases\nStaff\nVoice AI\nGradium today released two real-time speech translation models: stt-translate and s2s-translate . Both run across five languages and stream results live in the browser.\nGradium claims a better accuracy-latency tradeoff than gpt-realtime-translate and gemini-3.5-live-translate . It also adds output voice control, including cloning, that gpt-realtime-translate lacks.\nTL;DR\nGradium launched two real-time speech translation models: stt-translate (speech → text) and s2s-translate (speech → speech).\nThey cover five languages (EN, FR, DE, ES, PT) and 20 pairs, collapsing the usual 3-model cascade into 2.\nAccuracy leads gemini-3.5-live-translate on BLEU and MetricX, and beats gpt-realtime-translate on BLEU (comparable on MetricX).\nLatency averages 3.0s — ahead of gpt-realtime-translate (3.6s), just behind gemini-3.5-live-translate (2.9s).\nUnlike gpt-realtime-translate , you pick the output voice or clone your own, all over one duplex WebSocket.\nstt-translate\nstt-translate takes speech in one language and returns text in another. It supports English ( EN ), French ( FR ), German ( DE ), Spanish ( ES ), and Portuguese ( PT ).\nAny source maps to any target across that set. That is 20 language pairs in total, in every direction.\nThe key design choice is collapsing two steps into one. Transcription and translation happen in a single pass, inside the speech model. There is no intermediate transcript to wait on and no handoff between systems.\nAccording to Gradium: the approach draws on the Hibiki-Zero framework . The model optimizes low latency and high accuracy jointly through Reinforcement Learning. This means fewer moving parts in the pipeline.\ns2s-translate\ns2s-translate turns spoken audio in one language into spoken audio in another, end to end. It builds on stt-translate and pairs it with a Gradium TTS model in one service.\nYou stream audio in over a WebSocket. You receive both the synthesized output audio and the translated transcript as they are produced.\nThat removes integration work. You do not wire STT and TTS together yourself or manage two connections. The server runs the pipeline and streams results back.\nInput audio is PCM at 24 kHz, 16-bit signed mono. Output audio is PCM at 48 kHz, 16-bit signed mono. WAV, Opus, mu-law, and A-law are also supported.\nHow Gradium Measures Quality: BLEU and MetricX\nTranslation quality is not one number, so Gradium reports two complementary metrics:\nBLEU (Bilingual Evaluation Understudy) is the long-standing machine translation standard (Papineni et al.). It measures n-gram overlap between model output and human reference translations. It runs from 0 to 100, where higher is better.\nBLEU is fast, reproducible, and comparable across systems. Its limit is that it rewards surface word matching. A correct translation using different wording can be penalized.\nMetricX is a learned, neural quality metric developed by Google (Juraska et al.). It predicts how a human would rate a translation. It is an error score, so lower is better, and it tracks human judgment more closely than BLEU.\nThe two catch different failures. BLEU checks lexical fidelity; MetricX checks semantic adequacy.\nBenchmark\nGradium benchmarks on a proprietary dataset of conversational speech. The data reflects everyday topics like work, travel, and weather, rather than scripted text.\nAgainst gemini-3.5-live-translate , Gradium leads on both BLEU and MetricX. Against gpt-realtime-translate , Gradium leads on BLEU and is comparable on MetricX.\nCapability Gradium gpt-realtime-translate gemini-3.5-live-translate\nAverage latency (all pairs) 3.0s 3.6s 2.9s\nBLEU (higher is better) Leads both Lower than Gradium Lower than Gradium\nMetricX (lower error is better) Comparable to GPT; leads Gemini Comparable to Gradium Higher error than Gradium\nChoose output voice Yes (catalogue) No Not stated\nClone your own voice Yes No Not stated\nLanguages 5 languages, 20 pairs Not stated Not stated\nAccuracy (BLEU and MetricX) is measured on stt-translate ‘s translation; latency is for the full s2s-translate pipeline. Read it as a tradeoff, not a clean sweep. Gemini is fractionally faster; Gradium is more accurate and adds voice control.\nWhy Two Models Beat Three\nThe standard speech-to-speech stack uses three models: Speech-To-Text, then Text-To-Text translation, then Text-To-Speech. Each stage is a separate inference call. Each adds processing time and a handoff.\nGradium uses two. stt-translate performs transcription and translation in a single pass. The dedicated Text-To-Text stage disappears entirely.\nThat removes one full model from the critical path, along with its latency and handoff. The end-to-end path is shorter than a three-model cascade at equivalent quality.\nThe numbers back the design. s2s-translate averages 3.0s across all language pairs. That beats gpt-realtime-translate at 3.6s and sits near gemini-3.5-live-translate at 2.9s.\nUse Cases With Examples\nLive dubbing and localization : Clone a presenter’s voice once. Translate a French keynote into Spanish that still sounds like the original speaker.\nMultilingual voice agents : Route a support call through s2s-translate . An English agent hears a German caller in English, and replies stream back in German.\nReal-time meetings : Pipe microphone audio in over the WebSocket. Each participant receives translated speech and transcript in their own language.\nAccessibility and captioning : Use stt-translate alone when you only need text. Render live translated captions without generating audio.\nTranslate in a Few Lines of Code\nThe Python SDK streams audio through the Speech-To-Speech endpoint and returns translated audio plus transcript.\nCopy Code Copied Use a different Browser\nimport asyncio\nimport numpy as np\nfrom gradium import client as gradium_client\ngrc = gradium_client.GradiumClient() # reads GRADIUM_API_KEY from the environment\nsetup = {\n\"model_name\": \"s2s-translate\",\n\"input_format\": \"pcm_24000\", # 24 kHz, 16-bit signed mono input\n\"output_format\": \"pcm_48000\", # 48 kHz, 16-bit signed mono output\n\"voice_id\": \"cLONiZ4hQ8VpQ4Sz\", # must be a voice in the target language\n\"stt_model_name\": \"stt-translate\",\n\"tts_model_name\": \"default\",\n\"target_language\": \"en\",\n# Raw 24 kHz, 16-bit mono PCM bytes (from a file, buffer, or microphone).\nwith open(\"input_24k_mono.pcm\", \"rb\") as f:\npcm = f.read()\nasync def main() -> np.ndarray:\naudio_out: list[bytes] = []\nasync with grc.s2s_realtime(wait_for_ready_on_start=True, **setup) as s2s:\nasync def send_loop():\nfor i in range(0, len(pcm), 1920): # 1920 bytes = 40 ms at 24 kHz\nawait s2s.send_audio(pcm[i : i + 1920])\nawait s2s.send_eos() # signal end of input\nasync def recv_loop():\nasync for msg in s2s:\nif msg[\"type\"] == \"audio\":\naudio_out.append(msg[\"audio\"]) # translated speech (bytes)\nelif msg[\"type\"] == \"text\":\nprint(msg[\"text\"], end=\" \", flush=True) # translated transcript\nelif msg[\"type\"] == \"end_of_stream\":\nbreak\nasync with asyncio.TaskGroup() as tg:\ntg.create_task(send_loop())\ntg.create_task(recv_loop())\nreturn np.frombuffer(b\"\".join(audio_out), dtype=np.int16) # 48 kHz mono PCM\ntranslated_pcm = asyncio.run(main())\nThe SDK exposes three ways to drive S2S. Use s2s_realtime for live sources, s2s_stream for finite iterables, and s2s for buffered files. All three talk to wss://api.gradium.ai/api/speech/s2s .\nStrengths and Weaknesses\nStrengths\nSingle-pass stt-translate removes one model from the latency path\nLeads gemini-3.5-live-translate on both BLEU and MetricX\nOutput voice choice and cloning, which gpt-realtime-translate lacks\nOne duplex WebSocket replaces a hand-wired STT-plus-TTS pipeline\nWeaknesses\nFive languages at launch, with 20 pairs only across that set\ngemini-3.5-live-translate is fractionally lower latency at 2.9s\nMetricX is only comparable to, not ahead of, gpt-realtime-translate\nBenchmarks use a proprietary dataset, so external replication is limited\nInteractive Explainer\nYou can test real-time translation in the browser at gradium.ai/translate , with integration details in the API docs . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\ntinyfish.ai Open Source\nBig Set\nDescribe your ideal dataset in plain English, and BigSet builds it.\ndataset.build() auto&middot;refresh\nExplore on GitHub &rarr;",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-25/r-030-gradium-发布实时语音翻译模型-stt-translate-和-s2s-translate.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-25/r-030-gradium-发布实时语音翻译模型-stt-translate-和-s2s-translate.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 8598,
+    "paragraph_count": 93,
+    "sentence_count": 78,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0084,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 8598,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "af78b5f66c08e55d",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "AI HOT",
+  "discovery_record": {
+    "discovery_title": "Gradium 发布实时语音翻译模型 stt-translate 和 s2s-translate",
+    "discovery_summary": "Gradium 发布两款实时语音翻译模型：stt-translate（语音转文本）和 s2s-translate（语音转语音）。两者覆盖英语、法语、德语、西班牙语、葡萄牙语共 5 种语言、20 个语言对，将转录和翻译合并为一步，传统 3 模型级联缩减为 2 模型。stt-translate 在 BLEU 和 MetricX 指标上领先 gemini-3.5-live-translate，BLEU 领先 gpt-realtime-translate，MetricX 可比。s2s-translate 平均延迟 3.0s，优于 gpt-realtime-translate（3.6s），略逊于 gemini-3.5-live-translate（2.9s）。支持从目录选择输出语音或克隆自己的声音，通过单条双工 WebSocket 传输。",
+    "source_name": "MarkTechPost（RSS）",
+    "origin_url": "https://www.marktechpost.com/2026/06/24/gradium-launches-stt-translate-and-s2s-translate-real-time-speech-translation-models-beating-gpt-realtime-translate-on-accuracy-and-latency",
+    "discovered_at": "2026-06-25T03:03:30.122Z",
+    "rank_on_page": 103,
+    "discovery_status": "discovered"
+  },
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "success",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "db5467f962519d57",
+  "content_hash": "af78b5f66c08e55d",
+  "full_text_hash": "af78b5f66c08e55d",
+  "semantic_hash": "4c5040a9df401457",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-24T20:00:21.000Z",
+  "last_seen_at": "2026-06-25T05:10:40.152Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "Gradium 发布两款实时语音翻译模型：stt-translate（语音转文本）和 s2s-translate（语音转语音）。两者覆盖英语、法语、德语、西班牙语、葡萄牙语共 5 种语言、20 个语言对，将转录和翻译合并为一步，传统 3 模型级联缩减为 2 模型。stt-translate 在 BLEU 和 MetricX 指标上领先 gemini-3.5-live-translate，BLEU 领先 gpt-realtime-translate，MetricX 可比。s2s-translate 平均延迟 3.0s，优于 gpt-realtime-translate（3.6s），略逊于 gemini-3.5-live-translate（2.9s）。支持从目录选择输出语音或克隆自己的声音，通过单条双工 WebSocket 传输。",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Technology Artificial Intelligence Language Model Audio Language Model Editors Pick New Releases Staff Voice AI Gradium today released two real-time speech translation models: stt-translate and s2s-translate .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Both run across five languages and stream results live in the browser.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Gradium claims a better accuracy-latency tradeoff than gpt-realtime-translate and gemini-3.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "5-live-translate .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It also adds output voice control, including cloning, that gpt-realtime-translate lacks.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "MarkTechPost（RSS）",
+      "Google",
+      "GitHub"
+    ],
+    "products": [
+      "gemini",
+      "Gemini",
+      "agents",
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人"
+    ],
+    "workflows": [
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "合作 / 联盟"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2",
+      "5",
+      "20",
+      "3",
+      "3.5",
+      "3.0",
+      "3.6",
+      "2.9"
+    ],
+    "quotes": [
+      "model_name",
+      "s2s-translate",
+      "input_format",
+      "pcm_24000",
+      "output_format"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Gradium 发布两款实时语音翻译模型：stt-translate（语音转文本）和 s2s-translate（语音转语音）。两者覆盖英语、法语、德语、西班牙语、葡萄牙语共 5 种语言、20 个语言对，将转录和翻译合并为一步，传统 3 模型级联缩减为 2 模型。stt-translate 在 BLEU 和 MetricX 指标上领先 gemini-3.5-live-translate，BLEU 领先 gpt-realtime-translate，MetricX 可比。s2s-translate 平均延迟 3.0s，优于 gpt-realtime-translate（3.6s），略逊于 gemini-3.5-live-translate（2.9s）。支持从目录选择输出语音或克隆自己的声音，通过单条双工 WebSocket 传输。",
+      "Technology Artificial Intelligence Language Model Audio Language Model Editors Pick New Releases Staff Voice AI Gradium today released two real-time speech translation models: stt-translate and s2s-translate .",
+      "Both run across five languages and stream results live in the browser."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Gradium 发布实时语音翻译模型 stt-translate 和 s2s-translate\n\n- raw_id: R-030\n- original_url: https://www.marktechpost.com/2026/06/24/gradium-launches-stt-translate-and-s2s-translate-real-time-speech-translation-models-beating-gpt-realtime-translate-on-accuracy-and-latency\n- source_name: MarkTechPost（RSS）\n- collected_at: 2026-06-25T05:10:40.152Z\n\n## clean_text\n\nTechnology\nArtificial Intelligence\nLanguage Model\nAudio Language Model\nEditors Pick\nNew Releases\nStaff\nVoice AI\nGradium today released two real-time speech translation models: stt-translate and s2s-translate . Both run across five languages and stream results live in the browser.\nGradium claims a better accuracy-latency tradeoff than gpt-realtime-translate and gemini-3.5-live-translate . It also adds output voice control, including cloning, that gpt-realtime-translate lacks.\nTL;DR\nGradium launched two real-time speech translation models: stt-translate (speech → text) and s2s-translate (speech → speech).\nThey cover five languages (EN, FR, DE, ES, PT) and 20 pairs, collapsing the usual 3-model cascade into 2.\nAccuracy leads gemini-3.5-live-translate on BLEU and MetricX, and beats gpt-realtime-translate on BLEU (comparable on MetricX).\nLatency averages 3.0s — ahead of gpt-realtime-translate (3.6s), just behind gemini-3.5-live-translate (2.9s).\nUnlike gpt-realtime-translate , you pick the output voice or clone your own, all over one duplex WebSocket.\nstt-translate\nstt-translate takes speech in one language and returns text in another. It supports English ( EN ), French ( FR ), German ( DE ), Spanish ( ES ), and Portuguese ( PT ).\nAny source maps to any target across that set. That is 20 language pairs in total, in every direction.\nThe key design choice is collapsing two steps into one. Transcription and translation happen in a single pass, inside the speech model. There is no intermediate transcript to wait on and no handoff between systems.\nAccording to Gradium: the approach draws on the Hibiki-Zero framework . The model optimizes low latency and high accuracy jointly through Reinforcement Learning. This means fewer moving parts in the pipeline.\ns2s-translate\ns2s-translate turns spoken audio in one language into spoken audio in another, end to end. It builds on stt-translate and pairs it with a Gradium TTS model in one service.\nYou stream audio in over a WebSocket. You receive both the synthesized output audio and the translated transcript as they are produced.\nThat removes integration work. You do not wire STT and TTS together yourself or manage two connections. The server runs the pipeline and streams results back.\nInput audio is PCM at 24 kHz, 16-bit signed mono. Output audio is PCM at 48 kHz, 16-bit signed mono. WAV, Opus, mu-law, and A-law are also supported.\nHow Gradium Measures Quality: BLEU and MetricX\nTranslation quality is not one number, so Gradium reports two complementary metrics:\nBLEU (Bilingual Evaluation Understudy) is the long-standing machine translation standard (Papineni et al.). It measures n-gram overlap between model output and human reference translations. It runs from 0 to 100, where higher is better.\nBLEU is fast, reproducible, and comparable across systems. Its limit is that it rewards surface word matching. A correct translation using different wording can be penalized.\nMetricX is a learned, neural quality metric developed by Google (Juraska et al.). It predicts how a human would rate a translation. It is an error score, so lower is better, and it tracks human judgment more closely than BLEU.\nThe two catch different failures. BLEU checks lexical fidelity; MetricX checks semantic adequacy.\nBenchmark\nGradium benchmarks on a proprietary dataset of conversational speech. The data reflects everyday topics like work, travel, and weather, rather than scripted text.\nAgainst gemini-3.5-live-translate , Gradium leads on both BLEU and MetricX. Against gpt-realtime-translate , Gradium leads on BLEU and is comparable on MetricX.\nCapability Gradium gpt-realtime-translate gemini-3.5-live-translate\nAverage latency (all pairs) 3.0s 3.6s 2.9s\nBLEU (higher is better) Leads both Lower than Gradium Lower than Gradium\nMetricX (lower error is better) Comparable to GPT; leads Gemini Comparable to Gradium Higher error than Gradium\nChoose output voice Yes (catalogue) No Not stated\nClone your own voice Yes No Not stated\nLanguages 5 languages, 20 pairs Not stated Not stated\nAccuracy (BLEU and MetricX) is measured on stt-translate ‘s translation; latency is for the full s2s-translate pipeline. Read it as a tradeoff, not a clean sweep. Gemini is fractionally faster; Gradium is more accurate and adds voice control.\nWhy Two Models Beat Three\nThe standard speech-to-speech stack uses three models: Speech-To-Text, then Text-To-Text translation, then Text-To-Speech. Each stage is a separate inference call. Each adds processing time and a handoff.\nGradium uses two. stt-translate performs transcription and translation in a single pass. The dedicated Text-To-Text stage disappears entirely.\nThat removes one full model from the critical path, along with its latency and handoff. The end-to-end path is shorter than a three-model cascade at equivalent quality.\nThe numbers back the design. s2s-translate averages 3.0s across all language pairs. That beats gpt-realtime-translate at 3.6s and sits near gemini-3.5-live-translate at 2.9s.\nUse Cases With Examples\nLive dubbing and localization : Clone a presenter’s voice once. Translate a French keynote into Spanish that still sounds like the original speaker.\nMultilingual voice agents : Route a support call through s2s-translate . An English agent hears a German caller in English, and replies stream back in German.\nReal-time meetings : Pipe microphone audio in over the WebSocket. Each participant receives translated speech and transcript in their own language.\nAccessibility and captioning : Use stt-translate alone when you only need text. Render live translated captions without generating audio.\nTranslate in a Few Lines of Code\nThe Python SDK streams audio through the Speech-To-Speech endpoint and returns translated audio plus transcript.\nCopy Code Copied Use a different Browser\nimport asyncio\nimport numpy as np\nfrom gradium import client as gradium_client\ngrc = gradium_client.GradiumClient() # reads GRADIUM_API_KEY from the environment\nsetup = {\n\"model_name\": \"s2s-translate\",\n\"input_format\": \"pcm_24000\", # 24 kHz, 16-bit signed mono input\n\"output_format\": \"pcm_48000\", # 48 kHz, 16-bit signed mono output\n\"voice_id\": \"cLONiZ4hQ8VpQ4Sz\", # must be a voice in the target language\n\"stt_model_name\": \"stt-translate\",\n\"tts_model_name\": \"default\",\n\"target_language\": \"en\",\n# Raw 24 kHz, 16-bit mono PCM bytes (from a file, buffer, or microphone).\nwith open(\"input_24k_mono.pcm\", \"rb\") as f:\npcm = f.read()\nasync def main() -> np.ndarray:\naudio_out: list[bytes] = []\nasync with grc.s2s_realtime(wait_for_ready_on_start=True, **setup) as s2s:\nasync def send_loop():\nfor i in range(0, len(pcm), 1920): # 1920 bytes = 40 ms at 24 kHz\nawait s2s.send_audio(pcm[i : i + 1920])\nawait s2s.send_eos() # signal end of input\nasync def recv_loop():\nasync for msg in s2s:\nif msg[\"type\"] == \"audio\":\naudio_out.append(msg[\"audio\"]) # translated speech (bytes)\nelif msg[\"type\"] == \"text\":\nprint(msg[\"text\"], end=\" \", flush=True) # translated transcript\nelif msg[\"type\"] == \"end_of_stream\":\nbreak\nasync with asyncio.TaskGroup() as tg:\ntg.create_task(send_loop())\ntg.create_task(recv_loop())\nreturn np.frombuffer(b\"\".join(audio_out), dtype=np.int16) # 48 kHz mono PCM\ntranslated_pcm = asyncio.run(main())\nThe SDK exposes three ways to drive S2S. Use s2s_realtime for live sources, s2s_stream for finite iterables, and s2s for buffered files. All three talk to wss://api.gradium.ai/api/speech/s2s .\nStrengths and Weaknesses\nStrengths\nSingle-pass stt-translate removes one model from the latency path\nLeads gemini-3.5-live-translate on both BLEU and MetricX\nOutput voice choice and cloning, which gpt-realtime-translate lacks\nOne duplex WebSocket replaces a hand-wired STT-plus-TTS pipeline\nWeaknesses\nFive languages at launch, with 20 pairs only across that set\ngemini-3.5-live-translate is fractionally lower latency at 2.9s\nMetricX is only comparable to, not ahead of, gpt-realtime-translate\nBenchmarks use a proprietary dataset, so external replication is limited\nInteractive Explainer\nYou can test real-time translation in the browser at gradium.ai/translate , with integration details in the API docs . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\ntinyfish.ai Open Source\nBig Set\nDescribe your ideal dataset in plain English, and BigSet builds it.\ndataset.build() auto&middot;refresh\nExplore on GitHub &rarr;\n\n## full_text\n\nTechnology\nArtificial Intelligence\nLanguage Model\nAudio Language Model\nEditors Pick\nNew Releases\nStaff\nVoice AI\nGradium today released two real-time speech translation models: stt-translate and s2s-translate . Both run across five languages and stream results live in the browser.\nGradium claims a better accuracy-latency tradeoff than gpt-realtime-translate and gemini-3.5-live-translate . It also adds output voice control, including cloning, that gpt-realtime-translate lacks.\nTL;DR\nGradium launched two real-time speech translation models: stt-translate (speech → text) and s2s-translate (speech → speech).\nThey cover five languages (EN, FR, DE, ES, PT) and 20 pairs, collapsing the usual 3-model cascade into 2.\nAccuracy leads gemini-3.5-live-translate on BLEU and MetricX, and beats gpt-realtime-translate on BLEU (comparable on MetricX).\nLatency averages 3.0s — ahead of gpt-realtime-translate (3.6s), just behind gemini-3.5-live-translate (2.9s).\nUnlike gpt-realtime-translate , you pick the output voice or clone your own, all over one duplex WebSocket.\nstt-translate\nstt-translate takes speech in one language and returns text in another. It supports English ( EN ), French ( FR ), German ( DE ), Spanish ( ES ), and Portuguese ( PT ).\nAny source maps to any target across that set. That is 20 language pairs in total, in every direction.\nThe key design choice is collapsing two steps into one. Transcription and translation happen in a single pass, inside the speech model. There is no intermediate transcript to wait on and no handoff between systems.\nAccording to Gradium: the approach draws on the Hibiki-Zero framework . The model optimizes low latency and high accuracy jointly through Reinforcement Learning. This means fewer moving parts in the pipeline.\ns2s-translate\ns2s-translate turns spoken audio in one language into spoken audio in another, end to end. It builds on stt-translate and pairs it with a Gradium TTS model in one service.\nYou stream audio in over a WebSocket. You receive both the synthesized output audio and the translated transcript as they are produced.\nThat removes integration work. You do not wire STT and TTS together yourself or manage two connections. The server runs the pipeline and streams results back.\nInput audio is PCM at 24 kHz, 16-bit signed mono. Output audio is PCM at 48 kHz, 16-bit signed mono. WAV, Opus, mu-law, and A-law are also supported.\nHow Gradium Measures Quality: BLEU and MetricX\nTranslation quality is not one number, so Gradium reports two complementary metrics:\nBLEU (Bilingual Evaluation Understudy) is the long-standing machine translation standard (Papineni et al.). It measures n-gram overlap between model output and human reference translations. It runs from 0 to 100, where higher is better.\nBLEU is fast, reproducible, and comparable across systems. Its limit is that it rewards surface word matching. A correct translation using different wording can be penalized.\nMetricX is a learned, neural quality metric developed by Google (Juraska et al.). It predicts how a human would rate a translation. It is an error score, so lower is better, and it tracks human judgment more closely than BLEU.\nThe two catch different failures. BLEU checks lexical fidelity; MetricX checks semantic adequacy.\nBenchmark\nGradium benchmarks on a proprietary dataset of conversational speech. The data reflects everyday topics like work, travel, and weather, rather than scripted text.\nAgainst gemini-3.5-live-translate , Gradium leads on both BLEU and MetricX. Against gpt-realtime-translate , Gradium leads on BLEU and is comparable on MetricX.\nCapability Gradium gpt-realtime-translate gemini-3.5-live-translate\nAverage latency (all pairs) 3.0s 3.6s 2.9s\nBLEU (higher is better) Leads both Lower than Gradium Lower than Gradium\nMetricX (lower error is better) Comparable to GPT; leads Gemini Comparable to Gradium Higher error than Gradium\nChoose output voice Yes (catalogue) No Not stated\nClone your own voice Yes No Not stated\nLanguages 5 languages, 20 pairs Not stated Not stated\nAccuracy (BLEU and MetricX) is measured on stt-translate ‘s translation; latency is for the full s2s-translate pipeline. Read it as a tradeoff, not a clean sweep. Gemini is fractionally faster; Gradium is more accurate and adds voice control.\nWhy Two Models Beat Three\nThe standard speech-to-speech stack uses three models: Speech-To-Text, then Text-To-Text translation, then Text-To-Speech. Each stage is a separate inference call. Each adds processing time and a handoff.\nGradium uses two. stt-translate performs transcription and translation in a single pass. The dedicated Text-To-Text stage disappears entirely.\nThat removes one full model from the critical path, along with its latency and handoff. The end-to-end path is shorter than a three-model cascade at equivalent quality.\nThe numbers back the design. s2s-translate averages 3.0s across all language pairs. That beats gpt-realtime-translate at 3.6s and sits near gemini-3.5-live-translate at 2.9s.\nUse Cases With Examples\nLive dubbing and localization : Clone a presenter’s voice once. Translate a French keynote into Spanish that still sounds like the original speaker.\nMultilingual voice agents : Route a support call through s2s-translate . An English agent hears a German caller in English, and replies stream back in German.\nReal-time meetings : Pipe microphone audio in over the WebSocket. Each participant receives translated speech and transcript in their own language.\nAccessibility and captioning : Use stt-translate alone when you only need text. Render live translated captions without generating audio.\nTranslate in a Few Lines of Code\nThe Python SDK streams audio through the Speech-To-Speech endpoint and returns translated audio plus transcript.\nCopy Code Copied Use a different Browser\nimport asyncio\nimport numpy as np\nfrom gradium import client as gradium_client\ngrc = gradium_client.GradiumClient() # reads GRADIUM_API_KEY from the environment\nsetup = {\n\"model_name\": \"s2s-translate\",\n\"input_format\": \"pcm_24000\", # 24 kHz, 16-bit signed mono input\n\"output_format\": \"pcm_48000\", # 48 kHz, 16-bit signed mono output\n\"voice_id\": \"cLONiZ4hQ8VpQ4Sz\", # must be a voice in the target language\n\"stt_model_name\": \"stt-translate\",\n\"tts_model_name\": \"default\",\n\"target_language\": \"en\",\n# Raw 24 kHz, 16-bit mono PCM bytes (from a file, buffer, or microphone).\nwith open(\"input_24k_mono.pcm\", \"rb\") as f:\npcm = f.read()\nasync def main() -> np.ndarray:\naudio_out: list[bytes] = []\nasync with grc.s2s_realtime(wait_for_ready_on_start=True, **setup) as s2s:\nasync def send_loop():\nfor i in range(0, len(pcm), 1920): # 1920 bytes = 40 ms at 24 kHz\nawait s2s.send_audio(pcm[i : i + 1920])\nawait s2s.send_eos() # signal end of input\nasync def recv_loop():\nasync for msg in s2s:\nif msg[\"type\"] == \"audio\":\naudio_out.append(msg[\"audio\"]) # translated speech (bytes)\nelif msg[\"type\"] == \"text\":\nprint(msg[\"text\"], end=\" \", flush=True) # translated transcript\nelif msg[\"type\"] == \"end_of_stream\":\nbreak\nasync with asyncio.TaskGroup() as tg:\ntg.create_task(send_loop())\ntg.create_task(recv_loop())\nreturn np.frombuffer(b\"\".join(audio_out), dtype=np.int16) # 48 kHz mono PCM\ntranslated_pcm = asyncio.run(main())\nThe SDK exposes three ways to drive S2S. Use s2s_realtime for live sources, s2s_stream for finite iterables, and s2s for buffered files. All three talk to wss://api.gradium.ai/api/speech/s2s .\nStrengths and Weaknesses\nStrengths\nSingle-pass stt-translate removes one model from the latency path\nLeads gemini-3.5-live-translate on both BLEU and MetricX\nOutput voice choice and cloning, which gpt-realtime-translate lacks\nOne duplex WebSocket replaces a hand-wired STT-plus-TTS pipeline\nWeaknesses\nFive languages at launch, with 20 pairs only across that set\ngemini-3.5-live-translate is fractionally lower latency at 2.9s\nMetricX is only comparable to, not ahead of, gpt-realtime-translate\nBenchmarks use a proprietary dataset, so external replication is limited\nInteractive Explainer\nYou can test real-time translation in the browser at gradium.ai/translate , with integration details in the API docs . Also, feel free to follow us on Twitter and don’t forget to join our 150k+ML SubReddit and Subscribe to our Newsletter . Wait! are you on telegram? now you can join us on telegram as well.\nNeed to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.? Connect with us\ntinyfish.ai Open Source\nBig Set\nDescribe your ideal dataset in plain English, and BigSet builds it.\ndataset.build() auto&middot;refresh\nExplore on GitHub &rarr;\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 91\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n1. [product_update / daily_observation, heatmap, change / high] Gradium 发布两款实时语音翻译模型：stt-translate（语音转文本）和 s2s-translate（语音转语音）。两者覆盖英语、法语、德语、西班牙语、葡萄牙语共 5 种语言、20 个语言对，将转录和翻译合并为一步，传统 3 模型级联缩减为 2 模型。stt-translate 在 BLEU 和 MetricX 指标上领先 gemini-3.5-live-translate，BLEU 领先 gpt-realtime-translate，MetricX 可比。s2s-translate 平均延迟 3.0s，优于 gpt-realtime-translate（3.6s），略逊于 gemini-3.5-live-translate（2.9s）。支持从目录选择输出语音或克隆自己的声音，通过单条双工 WebSocket 传输。\n2. [product_update / daily_observation, heatmap, change / high] Technology Artificial Intelligence Language Model Audio Language Model Editors Pick New Releases Staff Voice AI Gradium today released two real-time speech translation models: stt-translate and s2s-translate .\n3. [company_action / daily_observation, heatmap, change, case, trend / high] Both run across five languages and stream results live in the browser.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] Gradium claims a better accuracy-latency tradeoff than gpt-realtime-translate and gemini-3.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] 5-live-translate .\n6. [company_action / daily_observation, heatmap, change, case, trend / high] It also adds output voice control, including cloning, that gpt-realtime-translate lacks.\n"
+}

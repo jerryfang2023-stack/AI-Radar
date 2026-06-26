@@ -3,7 +3,7 @@
 - generated_at: 2026-06-25T03:26:01.183Z
 - raw_count: 244
 - aihot_mode: source-artifacts
-- aihot_since: 
+- aihot_since:
 - aihot_discovered_count: 0
 - aihot_daily_discovered_count: 0
 - aihot_all_discovered_count: 0

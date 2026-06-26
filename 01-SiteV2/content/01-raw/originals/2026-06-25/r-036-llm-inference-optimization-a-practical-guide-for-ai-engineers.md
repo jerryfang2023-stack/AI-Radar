@@ -431,7 +431,7 @@ Prefill processes the entire input prompt in parallel (compute-bound, like train
 ## key_excerpts
 
 1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
-   # LLM Inference Optimization: A Practical Guide for *AI Engineers*. KV cache optimization, quantization, speculative decoding, Flash Attention, and continuous batching — the techniques that separate production-grade LLM systems from expensive demos. If you're deploying LLMs in production in 2026, inference is almost certainly your biggest line item. The difference between naive and optimized inference is often 5-10x in cost and 3-5x in latency. For ML and AI engineers, understanding these techniques isn't optional 
+   # LLM Inference Optimization: A Practical Guide for *AI Engineers*. KV cache optimization, quantization, speculative decoding, Flash Attention, and continuous batching — the techniques that separate production-grade LLM systems from expensive demos. If you're deploying LLMs in production in 2026, inference is almost certainly your biggest line item. The difference between naive and optimized inference is often 5-10x in cost and 3-5x in latency. For ML and AI engineers, understanding these techniques isn't optional
 
 2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
    If you're deploying LLMs in production in 2026, inference is almost certainly your biggest line item.

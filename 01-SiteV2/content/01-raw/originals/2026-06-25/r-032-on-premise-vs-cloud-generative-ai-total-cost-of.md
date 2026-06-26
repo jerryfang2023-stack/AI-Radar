@@ -757,7 +757,7 @@ Cookie Preferences
 ## key_excerpts
 
 1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
-   # On-Premise vs Cloud: Generative AI Total Cost of Ownership (2026 Edition). This whitepaper analyzes the shifting economic landscape of Generative AI infrastructure in 2026, positing that the industry’s transition from experimental prototyping to sustained, high-throughput inference has fundamentally altered the Total Cost of Ownership (TCO) calculus in favor of on-premises solutions. Through a rigorous financial comparison of Lenovo ThinkSystem configurations (utilizing NVIDIA Hopper and Blackwell architectures) 
+   # On-Premise vs Cloud: Generative AI Total Cost of Ownership (2026 Edition). This whitepaper analyzes the shifting economic landscape of Generative AI infrastructure in 2026, positing that the industry’s transition from experimental prototyping to sustained, high-throughput inference has fundamentally altered the Total Cost of Ownership (TCO) calculus in favor of on-premises solutions. Through a rigorous financial comparison of Lenovo ThinkSystem configurations (utilizing NVIDIA Hopper and Blackwell architectures)
 
 2. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
    Lenovo Press PC & TABLETS PHONES SERVERS & STORAGE SMART DEVICES SERVICES & SOLUTIONS SUPPORT Employee Login skip to main content Lenovo Press Lenovo Press Home " href="/"> Home Portfolio " aria-haspopup="true"> Portfolio Portfolio Guide 3D Tour Catalog OSIG (Server OS support) Seller Training Courses Servers " aria-haspopup="true"> Servers ThinkSystem V4 SR860 V4 SR850 V4 SC777 V4 SC750 V4 SR680a V4 SR650a V4 SR650 V4 SR630 V4 WR3220 G5 WR5220 G5 ThinkSystem V3 SR950 V3 SR860 V3 SR850 V3 SR780a V3 SR685a V3 SR680a
@@ -769,7 +769,7 @@ Cookie Preferences
    Lenovo Account Login 您也可以联系客户 & 合作伙伴服务热线 400-819-6776 或者 获取进一步支持。
 
 5. **supporting_context**｜supports=daily_observation, heatmap｜importance=high｜confidence=high
-   For questions regarding access to Lenovo Press, please call hotline 400-819-6776 or send an email to About Lenovo Our Company Smarter Technology For All News Investors Relations Compliance ESG Product Recycling Product Security Product Recalls Executive Briefing Center Lenovo Cares Careers Formula 1 Partnership Products & Services Laptops & Ultrabooks Desktop Computers Workstations Gaming & VR Tablets Servers, Storage, & Networking Accessories & Software Services & Warranty Product FAQs Outlet Deals Lenovo Coupons 
+   For questions regarding access to Lenovo Press, please call hotline 400-819-6776 or send an email to About Lenovo Our Company Smarter Technology For All News Investors Relations Compliance ESG Product Recycling Product Security Product Recalls Executive Briefing Center Lenovo Cares Careers Formula 1 Partnership Products & Services Laptops & Ultrabooks Desktop Computers Workstations Gaming & VR Tablets Servers, Storage, & Networking Accessories & Software Services & Warranty Product FAQs Outlet Deals Lenovo Coupons
 
 6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
    All rights reserved.
@@ -802,7 +802,7 @@ Servers
 - workflow_changes: 暂无公开信息
 - before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
 - affected_roles: CIO / IT 负责人, 销售 / 客服
-- risks_or_constraints: For questions regarding access to Lenovo Press, please call hotline 400-819-6776 or send an email to About Lenovo Our Company Smarter Technology For All News Investors Relations Compliance ESG Product Recycling Product Security Product Recalls Executive Briefing Center Lenovo Cares Careers Formula 1 Partnership Products & Services Laptops & Ultrabooks Desktop Computers Workstations Gaming & VR Tablets Servers, Storage, & Networking Accessories & Software Services & Warranty Product FAQs Outlet Deals Lenovo Coupons 
+- risks_or_constraints: For questions regarding access to Lenovo Press, please call hotline 400-819-6776 or send an email to About Lenovo Our Company Smarter Technology For All News Investors Relations Compliance ESG Product Recycling Product Security Product Recalls Executive Briefing Center Lenovo Cares Careers Formula 1 Partnership Products & Services Laptops & Ultrabooks Desktop Computers Workstations Gaming & VR Tablets Servers, Storage, & Networking Accessories & Software Services & Warranty Product FAQs Outlet Deals Lenovo Coupons
 
 ## guanlan_scores
 

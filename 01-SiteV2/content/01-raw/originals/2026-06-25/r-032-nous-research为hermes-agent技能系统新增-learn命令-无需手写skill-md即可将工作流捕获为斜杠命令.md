@@ -1,0 +1,397 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-032
+title: "Nous Research为Hermes Agent技能系统新增/learn命令，无需手写SKILL.md即可将工作流捕获为斜杠命令"
+original_url: "https://www.marktechpost.com/2026/06/24/nous-research-adds-learn-to-hermes-agents-skills-system-capturing-workflows-as-slash-commands-without-hand-writing-skill-md"
+canonical_url: "https://marktechpost.com/2026/06/24/nous-research-adds-learn-to-hermes-agents-skills-system-capturing-workflows-as-slash-commands-without-hand-writing-skill-md"
+source_name: "MarkTechPost（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-24T09:21:49.000Z"
+collected_at: 2026-06-25T05:10:40.160Z
+language: mixed
+full_text_hash: e2b19f0fbd43e4b8
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-25/r-032-nous-research为hermes-agent技能系统新增-learn命令-无需手写skill-md即可将工作流捕获为斜杠命令.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-25/r-032-nous-research为hermes-agent技能系统新增-learn命令-无需手写skill-md即可将工作流捕获为斜杠命令.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":7051,"paragraph_count":72,"sentence_count":67,"boilerplate_hits":0,"symbol_ratio":0.004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 7051
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e2b19f0fbd43e4b8","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Nous Research为Hermes Agent技能系统新增/learn命令，无需手写SKILL.md即可将工作流捕获为斜杠命令","discovery_summary":"Nous Research为开源自改进智能体Hermes Agent的技能系统新增/learn命令。指向文档页面、本地SDK目录、历史对话或粘贴笔记后，Agent自动收集材料并按照标准格式编写SKILL.md。所有技能存放在~/.hermes/skills/，自动映射为斜杠命令（如/plan、/axolotl）。技能采用三级加载（Level 0返回名称与描述约3k tokens，Level 1加载全文，Level 2加载特定文件），避免大技能库撑满上下文窗口。除/learn外，还支持手动编写、skill_manage自动捕获、Skills Hub安装三种创建方式。/learn在CLI、消息网关、TUI和仪表板上均可使用，仪表板额外提供\"Learn a skill\"按钮。","source_name":"MarkTechPost（RSS）","origin_url":"https://www.marktechpost.com/2026/06/24/nous-research-adds-learn-to-hermes-agents-skills-system-capturing-workflows-as-slash-commands-without-hand-writing-skill-md","discovered_at":"2026-06-25T03:03:30.167Z","rank_on_page":262,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 1a4c0e847b58151c
+content_hash: e2b19f0fbd43e4b8
+semantic_hash: e44c58b8eae6ed22
+duplicate_of: ""
+first_seen_at: "2026-06-24T09:21:49.000Z"
+last_seen_at: 2026-06-25T05:10:40.160Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["MarkTechPost（RSS）","GitHub"],"products":["Agent","Agents","agent"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["0","3","1","2","23","2026","60","1.0"],"quotes":["Learn a skill"]}
+evidence_seed: {"company_actions":["Editors Pick Agentic AI AI Agents Technology AI Shorts Artificial Intelligence Applications New Releases Software Engineering Staff Tech News Nous Research has expanded the Skills System inside Hermes Agent, its open-source self-improving agent.","The new addition is /learn , a command that writes a reusable skill for you .","Point it at a document page, a local SDK, a past conversation, or pasted notes."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"quote","text":"Nous Research为开源自改进智能体Hermes Agent的技能系统新增/learn命令。指向文档页面、本地SDK目录、历史对话或粘贴笔记后，Agent自动收集材料并按照标准格式编写SKILL.md。所有技能存放在~/.hermes/skills/，自动映射为斜杠命令（如/plan、/axolotl）。技能采用三级加载（Level 0返回名称与描述约3k tokens，Level 1加载全文，Level 2加载特定文件），避免大技能库撑满上下文窗口。除/learn外，还支持手动编写、skill_manage自动捕获、Skills Hub安装三种创建方式。/learn在CLI、消息网关、TUI和仪表板上均可使用，仪表板额外提供\"Learn a skill\"按钮。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Editors Pick Agentic AI AI Agents Technology AI Shorts Artificial Intelligence Applications New Releases Software Engineering Staff Tech News Nous Research has expanded the Skills System inside Hermes Agent, its open-source self-improving agent.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The new addition is /learn , a command that writes a reusable skill for you .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Point it at a document page, a local SDK, a past conversation, or pasted notes.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The live agent gathers the material, then authors a SKILL.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"md on your behalf.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Nous Research为Hermes Agent技能系统新增/learn命令，无需手写SKILL.md即可将工作流捕获为斜杠命令
+
+## clean_text
+
+Editors Pick
+Agentic AI
+AI Agents
+Technology
+AI Shorts
+Artificial Intelligence
+Applications
+New Releases
+Software Engineering
+Staff
+Tech News
+Nous Research has expanded the Skills System inside Hermes Agent, its open-source self-improving agent. The new addition is /learn , a command that writes a reusable skill for you . Point it at a document page, a local SDK, a past conversation, or pasted notes. The live agent gathers the material, then authors a SKILL.md on your behalf.
+Hermes Agent can now /learn from anything: feed it directories of any source material (code, API docs, manuals, PDFs, configs) and it distills a verifiable reusable skill pic.twitter.com/oRznwCRF3E
+&mdash; Nous Research (@NousResearch) June 23, 2026
+Hermes Skills System
+Skills are on-demand knowledge documents the agent loads when needed. Each one is a folder containing a SKILL.md file with instructions. They follow a progressive disclosure pattern to keep token usage low. The format is compatible with the agentskills.io open standard.
+All skills live in ~/.hermes/skills/ , the single source of truth. On a fresh install, bundled skills are copied from the repo. Hub-installed and agent-created skills land there too. Every installed skill becomes a slash command automatically. Running /plan or /axolotl loads that skill’s instructions into the turn.
+Think of a skill as a reference document the agent reads only when relevant. Memory, by contrast, holds small durable facts that should always stay in context.
+How /learn Works
+/learn removes the hand-writing step. You describe a source, and the agent does the sourcing with tools it already has. It reads local directories with read_file and search_files . It fetches online docs with web_extract . It can also capture a workflow you just walked it through.
+Copy Code Copied Use a different Browser
+# A local SDK or doc directory
+/learn the REST client in ~/projects/acme-sdk, focus on auth + pagination
+# An online doc page
+/learn https://docs.example.com/api/quickstart
+# The workflow you just completed in this conversation
+/learn how I just deployed the staging server
+# Pasted notes or a described procedure
+/learn filing an expense: open the portal, New > Expense, attach receipt, submit
+The agent then authors a skill that follows the house authoring standards. That means a description under 60 characters, the standard section order, and Hermes-tool framing. It does not invent commands that do not exist.
+There is no separate ingestion engine. /learn builds a standards-guided prompt and hands it to the agent as a normal turn. So it works the same in the CLI, the messaging gateway, the TUI, and the dashboard. It also works on any terminal backend, whether local, Docker, or remote. The dashboard adds a Learn a skill button with a directory field, a URL field, and a text box.
+The agent saves the result with the skill_manage tool. If you have the write-approval gate on, that approval step still applies.
+Why Skills Stay Cheap
+Skills load in three levels, so the agent pays only for what it uses.
+Level Call Returns Approx. cost
+0 skills_list() Names, descriptions, categories ~3k tokens
+1 skill_view(name) Full content plus metadata Varies
+2 skill_view(name, path) A specific reference file Varies
+The agent sees a compact index at all times. It loads full skill content only when a task needs it. This keeps a large skill library from flooding the context window.
+Four Ways to Create a Skill
+/learn is one path among several. The right choice depends on who authors the skill and where the source lives.
+Method Who authors Source input Review gate Best for
+Hand-write SKILL.md You Your own knowledge None Full control over wording
+/learn The live agent Dir, URL, conversation, notes skill_manage gate Turning existing material into a skill fast
+skill_manage (auto) The agent itself A workflow it just solved write_approval gate Capturing procedural memory after hard tasks
+Skills Hub install A third party Registry or GitHub repo Security scanner Reusing community or vendor skills
+Agent-created skills are the agent’s procedural memory. The agent may save an approach after a complex task of five or more tool calls. It also saves when it hit a dead end and found the working path. By default, write_approval is false, so the agent writes freely. Set it to true to stage every write for review under ~/.hermes/pending/skills/ .
+Use Cases With Examples
+Onboarding an internal API : Run /learn on your private docs URL. The agent produces a skill covering auth, pagination, and common calls. New teammates then invoke it as a slash command.
+Capturing a deploy runbook : Walk the agent through one staging deploy. Then run /learn how I just deployed the staging server . The procedure becomes repeatable across the CLI and chat platforms.
+Grouping a recurring task : Use a skill bundle to load several skills at once. One slash command then pulls in review, test, and PR skills together.
+Copy Code Copied Use a different Browser
+# ~/.hermes/skill-bundles/backend-dev.yaml
+name: backend-dev
+description: Backend feature work — review, test, PR workflow.
+skills:
+- github-code-review
+- test-driven-development
+- github-pr-workflow
+instruction: |
+Always start by writing failing tests, then implement.
+A Look at the SKILL.md Format
+A skill is mostly a markdown file with YAML frontmatter. The body follows a fixed section order. /learn targets this exact shape so output stays consistent.
+Copy Code Copied Use a different Browser
+---
+name: my-skill
+description: Brief description of what this skill does
+version: 1.0.0
+platforms: [macos, linux] # Optional — restrict to specific OS
+metadata:
+hermes:
+tags: [python, automation]
+category: devops
+---
+# Skill Title
+## When to Use
+Trigger conditions for this skill.
+## Procedure
+1. Step one
+2. Step two
+## Pitfalls
+- Known failure modes and fixes
+## Verification
+How to confirm it worked.
+The platforms field can hide a skill on incompatible operating systems. Conditional fields can also show a skill only when certain toolsets are present or absent.
+Interactive Explainer
+Key Takeaways
+Hermes Agent’s new /learn command authors a reusable skill from a directory, URL, conversation, or pasted notes — no hand-writing needed.
+The live agent sources material with its own tools ( read_file , search_files , web_extract ), then writes a standards-compliant SKILL.md .
+There is no separate ingestion engine, so /learn works the same across the CLI, TUI, messaging gateway, and dashboard.
+Progressive disclosure keeps skills cheap: a ~3k-token index loads first, and full content loads only when a task needs it.
+Skills save via skill_manage , so the write_approval gate can stage every write for review before it lands.
+Sources
+Skills System — Hermes Agent documentation
+Learning a skill from sources (/learn)
+Hermes Agent documentation home
+NousResearch/hermes-agent — GitHub
+Nous Research on X
+tinyfish.ai Open Source
+Big Set
+Describe your ideal dataset in plain English, and BigSet builds it.
+dataset.build() auto&middot;refresh
+Explore on GitHub &rarr;
+
+## full_text
+
+Editors Pick
+Agentic AI
+AI Agents
+Technology
+AI Shorts
+Artificial Intelligence
+Applications
+New Releases
+Software Engineering
+Staff
+Tech News
+Nous Research has expanded the Skills System inside Hermes Agent, its open-source self-improving agent. The new addition is /learn , a command that writes a reusable skill for you . Point it at a document page, a local SDK, a past conversation, or pasted notes. The live agent gathers the material, then authors a SKILL.md on your behalf.
+Hermes Agent can now /learn from anything: feed it directories of any source material (code, API docs, manuals, PDFs, configs) and it distills a verifiable reusable skill pic.twitter.com/oRznwCRF3E
+&mdash; Nous Research (@NousResearch) June 23, 2026
+Hermes Skills System
+Skills are on-demand knowledge documents the agent loads when needed. Each one is a folder containing a SKILL.md file with instructions. They follow a progressive disclosure pattern to keep token usage low. The format is compatible with the agentskills.io open standard.
+All skills live in ~/.hermes/skills/ , the single source of truth. On a fresh install, bundled skills are copied from the repo. Hub-installed and agent-created skills land there too. Every installed skill becomes a slash command automatically. Running /plan or /axolotl loads that skill’s instructions into the turn.
+Think of a skill as a reference document the agent reads only when relevant. Memory, by contrast, holds small durable facts that should always stay in context.
+How /learn Works
+/learn removes the hand-writing step. You describe a source, and the agent does the sourcing with tools it already has. It reads local directories with read_file and search_files . It fetches online docs with web_extract . It can also capture a workflow you just walked it through.
+Copy Code Copied Use a different Browser
+# A local SDK or doc directory
+/learn the REST client in ~/projects/acme-sdk, focus on auth + pagination
+# An online doc page
+/learn https://docs.example.com/api/quickstart
+# The workflow you just completed in this conversation
+/learn how I just deployed the staging server
+# Pasted notes or a described procedure
+/learn filing an expense: open the portal, New > Expense, attach receipt, submit
+The agent then authors a skill that follows the house authoring standards. That means a description under 60 characters, the standard section order, and Hermes-tool framing. It does not invent commands that do not exist.
+There is no separate ingestion engine. /learn builds a standards-guided prompt and hands it to the agent as a normal turn. So it works the same in the CLI, the messaging gateway, the TUI, and the dashboard. It also works on any terminal backend, whether local, Docker, or remote. The dashboard adds a Learn a skill button with a directory field, a URL field, and a text box.
+The agent saves the result with the skill_manage tool. If you have the write-approval gate on, that approval step still applies.
+Why Skills Stay Cheap
+Skills load in three levels, so the agent pays only for what it uses.
+Level Call Returns Approx. cost
+0 skills_list() Names, descriptions, categories ~3k tokens
+1 skill_view(name) Full content plus metadata Varies
+2 skill_view(name, path) A specific reference file Varies
+The agent sees a compact index at all times. It loads full skill content only when a task needs it. This keeps a large skill library from flooding the context window.
+Four Ways to Create a Skill
+/learn is one path among several. The right choice depends on who authors the skill and where the source lives.
+Method Who authors Source input Review gate Best for
+Hand-write SKILL.md You Your own knowledge None Full control over wording
+/learn The live agent Dir, URL, conversation, notes skill_manage gate Turning existing material into a skill fast
+skill_manage (auto) The agent itself A workflow it just solved write_approval gate Capturing procedural memory after hard tasks
+Skills Hub install A third party Registry or GitHub repo Security scanner Reusing community or vendor skills
+Agent-created skills are the agent’s procedural memory. The agent may save an approach after a complex task of five or more tool calls. It also saves when it hit a dead end and found the working path. By default, write_approval is false, so the agent writes freely. Set it to true to stage every write for review under ~/.hermes/pending/skills/ .
+Use Cases With Examples
+Onboarding an internal API : Run /learn on your private docs URL. The agent produces a skill covering auth, pagination, and common calls. New teammates then invoke it as a slash command.
+Capturing a deploy runbook : Walk the agent through one staging deploy. Then run /learn how I just deployed the staging server . The procedure becomes repeatable across the CLI and chat platforms.
+Grouping a recurring task : Use a skill bundle to load several skills at once. One slash command then pulls in review, test, and PR skills together.
+Copy Code Copied Use a different Browser
+# ~/.hermes/skill-bundles/backend-dev.yaml
+name: backend-dev
+description: Backend feature work — review, test, PR workflow.
+skills:
+- github-code-review
+- test-driven-development
+- github-pr-workflow
+instruction: |
+Always start by writing failing tests, then implement.
+A Look at the SKILL.md Format
+A skill is mostly a markdown file with YAML frontmatter. The body follows a fixed section order. /learn targets this exact shape so output stays consistent.
+Copy Code Copied Use a different Browser
+---
+name: my-skill
+description: Brief description of what this skill does
+version: 1.0.0
+platforms: [macos, linux] # Optional — restrict to specific OS
+metadata:
+hermes:
+tags: [python, automation]
+category: devops
+---
+# Skill Title
+## When to Use
+Trigger conditions for this skill.
+## Procedure
+1. Step one
+2. Step two
+## Pitfalls
+- Known failure modes and fixes
+## Verification
+How to confirm it worked.
+The platforms field can hide a skill on incompatible operating systems. Conditional fields can also show a skill only when certain toolsets are present or absent.
+Interactive Explainer
+Key Takeaways
+Hermes Agent’s new /learn command authors a reusable skill from a directory, URL, conversation, or pasted notes — no hand-writing needed.
+The live agent sources material with its own tools ( read_file , search_files , web_extract ), then writes a standards-compliant SKILL.md .
+There is no separate ingestion engine, so /learn works the same across the CLI, TUI, messaging gateway, and dashboard.
+Progressive disclosure keeps skills cheap: a ~3k-token index loads first, and full content loads only when a task needs it.
+Skills save via skill_manage , so the write_approval gate can stage every write for review before it lands.
+Sources
+Skills System — Hermes Agent documentation
+Learning a skill from sources (/learn)
+Hermes Agent documentation home
+NousResearch/hermes-agent — GitHub
+Nous Research on X
+tinyfish.ai Open Source
+Big Set
+Describe your ideal dataset in plain English, and BigSet builds it.
+dataset.build() auto&middot;refresh
+Explore on GitHub &rarr;
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 97
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":7051,"paragraph_count":72,"sentence_count":67,"boilerplate_hits":0,"symbol_ratio":0.004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=high｜confidence=high
+   Nous Research为开源自改进智能体Hermes Agent的技能系统新增/learn命令。指向文档页面、本地SDK目录、历史对话或粘贴笔记后，Agent自动收集材料并按照标准格式编写SKILL.md。所有技能存放在~/.hermes/skills/，自动映射为斜杠命令（如/plan、/axolotl）。技能采用三级加载（Level 0返回名称与描述约3k tokens，Level 1加载全文，Level 2加载特定文件），避免大技能库撑满上下文窗口。除/learn外，还支持手动编写、skill_manage自动捕获、Skills Hub安装三种创建方式。/learn在CLI、消息网关、TUI和仪表板上均可使用，仪表板额外提供"Learn a skill"按钮。
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   Editors Pick Agentic AI AI Agents Technology AI Shorts Artificial Intelligence Applications New Releases Software Engineering Staff Tech News Nous Research has expanded the Skills System inside Hermes Agent, its open-source self-improving agent.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The new addition is /learn , a command that writes a reusable skill for you .
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Point it at a document page, a local SDK, a past conversation, or pasted notes.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The live agent gathers the material, then authors a SKILL.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   md on your behalf.
+
+## business_elements
+
+- companies: MarkTechPost（RSS）, GitHub
+- products: Agent, Agents, agent
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 0, 3, 1, 2, 23, 2026, 60, 1.0
+- quotes: Learn a skill
+
+## evidence_seed
+
+- company_actions: Editors Pick Agentic AI AI Agents Technology AI Shorts Artificial Intelligence Applications New Releases Software Engineering Staff Tech News Nous Research has expanded the Skills System inside Hermes Agent, its open-source self-improving agent. / The new addition is /learn , a command that writes a reusable skill for you . / Point it at a document page, a local SDK, a past conversation, or pasted notes.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Nous Research为Hermes Agent技能系统新增/learn命令，无需手写SKILL.md即可将工作流捕获为斜杠命令","discovery_summary":"Nous Research为开源自改进智能体Hermes Agent的技能系统新增/learn命令。指向文档页面、本地SDK目录、历史对话或粘贴笔记后，Agent自动收集材料并按照标准格式编写SKILL.md。所有技能存放在~/.hermes/skills/，自动映射为斜杠命令（如/plan、/axolotl）。技能采用三级加载（Level 0返回名称与描述约3k tokens，Level 1加载全文，Level 2加载特定文件），避免大技能库撑满上下文窗口。除/learn外，还支持手动编写、skill_manage自动捕获、Skills Hub安装三种创建方式。/learn在CLI、消息网关、TUI和仪表板上均可使用，仪表板额外提供\"Learn a skill\"按钮。","source_name":"MarkTechPost（RSS）","origin_url":"https://www.marktechpost.com/2026/06/24/nous-research-adds-learn-to-hermes-agents-skills-system-capturing-workflows-as-slash-commands-without-hand-writing-skill-md","discovered_at":"2026-06-25T03:03:30.167Z","rank_on_page":262,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Nous Research为开源自改进智能体Hermes Agent的技能系统新增/learn命令。指向文档页面、本地SDK目录、历史对话或粘贴笔记后，Agent自动收集材料并按照标准格式编写SKILL.md。所有技能存放在~/.hermes/skills/，自动映射为斜杠命令（如/plan、/axolotl）。技能采用三级加载（Level 0返回名称与描述约3k tokens，Level 1加载全文，Level 2加载特定文件），避免大技能库撑满上下文窗口。除/learn外，还支持手动编写、skill_manage自动捕获、Skills Hub安装三种创建方式。/learn在CLI、消息网关、TUI和仪表板上均可使用，仪表板额外提供"Learn a skill"按钮。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

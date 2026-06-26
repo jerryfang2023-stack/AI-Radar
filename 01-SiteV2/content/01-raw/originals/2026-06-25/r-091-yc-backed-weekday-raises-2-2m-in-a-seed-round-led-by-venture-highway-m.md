@@ -99,7 +99,7 @@ Title: YC-backed Weekday raises $2.2M in a seed round led by Venture Highway | M
 ## key_excerpts
 
 1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
-   Title: YC-backed Weekday raises $2.2M in a seed round led by Venture Highway | Medial ## YC-backed Weekday raises $2.2M in a seed round led by Venture Highway. YC-backed Weekday raises $2.2M in a seed round led by Venture Highway. ### Y-Combinator-backed startup Weekday, helping companies hire engineers, has raised $2.2 million in a seed funding round led by Venture Highway, with participation from other notable investors. ### Repello AI, an AI-backed security solutions startup, raised $1.2 million in seed funding 
+   Title: YC-backed Weekday raises $2.2M in a seed round led by Venture Highway | Medial ## YC-backed Weekday raises $2.2M in a seed round led by Venture Highway. YC-backed Weekday raises $2.2M in a seed round led by Venture Highway. ### Y-Combinator-backed startup Weekday, helping companies hire engineers, has raised $2.2 million in a seed funding round led by Venture Highway, with participation from other notable investors. ### Repello AI, an AI-backed security solutions startup, raised $1.2 million in seed funding
 
 2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
    Title: YC-backed Weekday raises $2.

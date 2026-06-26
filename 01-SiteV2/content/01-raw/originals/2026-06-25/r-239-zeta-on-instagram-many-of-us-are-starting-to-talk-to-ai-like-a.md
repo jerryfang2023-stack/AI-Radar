@@ -119,7 +119,7 @@ zetaglobal on June 2, 2026: "Many of us are starting to talk to AI like a cowork
 - affected_departments: IT / 安全
 - numbers: 2, 2026
 - quotes: Many of us are starting to talk to AI like a ...
-zetaglobal on June 2, 2026: 
+zetaglobal on June 2, 2026:
 
 ## evidence_seed
 
@@ -135,7 +135,7 @@ zetaglobal on June 2, 2026:
 - importance_type: none
 - importance_score: 1
 - importance_reason: no core WaveSight importance signal
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 2

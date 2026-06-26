@@ -239,7 +239,7 @@ Back to top
 - importance_type: important_case
 - importance_score: 5
 - importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 4
 - case_richness: 5

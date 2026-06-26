@@ -3,7 +3,14 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
+const args = new Map(
+  process.argv.slice(2).map((arg) => {
+    const [key, ...rest] = arg.replace(/^--/, "").split("=");
+    return [key, rest.join("=") || "true"];
+  })
+);
 const reportsDir = path.join(root, "agent-workflow", "reports");
+const expectedDate = args.get("date") || "";
 const expectedVersion = "V3.3.6.3-business-source-artifact-aggregation";
 const expectedSiteVersion = "SITE-V3.3.8.3";
 const expectedBusinessSignalsColumnVersion = "BSIG-V1.1.2-source-title-translation-lock";
@@ -223,6 +230,9 @@ function collectGeneratedDataIssues() {
       issues.push(issue(dataFile, "v3_data_intelligence_map_column_version_mismatch", `${data?.meta?.intelligenceMapColumnVersion || "missing"}; expected ${expectedIntelligenceMapColumnVersion}`));
     }
     const activeDate = data?.meta?.activeDate || "";
+    if (expectedDate && activeDate !== expectedDate) {
+      issues.push(issue(dataFile, "v3_data_active_date_unexpected", `${activeDate || "missing"} != ${expectedDate}`));
+    }
     const latestDate = latestContentDate();
     if (latestDate && activeDate !== latestDate) {
       issues.push(issue(dataFile, "v3_data_active_date_stale", `${activeDate || "missing"} != ${latestDate}`));

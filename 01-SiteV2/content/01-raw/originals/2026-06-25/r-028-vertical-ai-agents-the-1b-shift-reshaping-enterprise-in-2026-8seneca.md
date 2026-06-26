@@ -225,7 +225,7 @@ May 19, 2026 6 min read
 ## key_excerpts
 
 1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
-   Vertical AI Agents: The $1B Shift Reshaping Enterprise in 2026. An AI that answers calls for plumbing businesses at 3 a.m. just hit a $1 billion valuation. Avoca, a voice AI startup targeting field-service trades — HVAC, plumbing, roofing, electrical — announced $125 million in funding on April 27, 2026. It’s a signal that the enterprise AI market has permanently shifted: vertical AI agents are replacing the generic AI assistant with something far more capable, far more deployable, and far more profitable. ## What 
+   Vertical AI Agents: The $1B Shift Reshaping Enterprise in 2026. An AI that answers calls for plumbing businesses at 3 a.m. just hit a $1 billion valuation. Avoca, a voice AI startup targeting field-service trades — HVAC, plumbing, roofing, electrical — announced $125 million in funding on April 27, 2026. It’s a signal that the enterprise AI market has permanently shifted: vertical AI agents are replacing the generic AI assistant with something far more capable, far more deployable, and far more profitable. ## What
 
 2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
    Blog Share An AI that answers calls for plumbing businesses at 3 a.
