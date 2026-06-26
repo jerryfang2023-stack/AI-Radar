@@ -1,4 +1,4 @@
-﻿status: resolved
+status: resolved
 priority: normal
 lane: skill_ops
 category: monitor_or_gate_failure
@@ -7,10 +7,10 @@ report_path: agent-workflow/reports/2026-06-26-daily-supervision-report.md
 data_generated: not_applicable
 needed_action: repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror
 created_at: 2026-06-26T11:37:02+08:00
-updated_at: 2026-06-26T11:38:15+08:00
-resolved_at: 2026-06-26T11:38:15+08:00
+updated_at: 2026-06-26T11:46:23+08:00
+resolved_at: 2026-06-26T11:46:23+08:00
 resolver: codex
-fix_commit: pending-local-change
+fix_commit: 343e59abdf4ead1b6a0609a2358c09f3075cfe12
 validation: npm run audit:skills
 prevention_added: eval
 source: hermes-auto
@@ -39,5 +39,11 @@ source: hermes-auto
 ## Resolution - 2026-06-26T11:38:15+08:00
 
 - fix_commit: pending-local-change
+- validation: npm run audit:skills
+- prevention_added: eval
+
+## Resolution - 2026-06-26T11:46:23+08:00
+
+- fix_commit: 343e59abdf4ead1b6a0609a2358c09f3075cfe12
 - validation: npm run audit:skills
 - prevention_added: eval
