@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { spawnSync } from "node:child_process";
+import { spawn, spawnSync } from "node:child_process";
 import { runGuanlanMonitorQualityGate } from "./guanlan-monitor-quality-gate.mjs";
 
 const root = process.cwd();
@@ -91,7 +91,61 @@ function buildMonitorArgsForCycle(cycle) {
   return monitorArgs;
 }
 
-function refreshSourceArtifactsForCycle(cycle, monitorArgs) {
+function runSourceArtifactRefresh(source, baseArgs, sourceArtifactDir) {
+  const sourceArgs = [
+    "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
+    ...baseArgs,
+    `--source-only=${source}`,
+    `--source-artifact-dir=${sourceArtifactDir}`,
+  ];
+
+  return new Promise((resolve) => {
+    const child = spawn(node, sourceArgs, {
+      cwd: root,
+      windowsHide: true,
+      shell: false,
+      stdio: ["ignore", "pipe", "pipe"],
+    });
+    let stdout = "";
+    let stderr = "";
+    let timedOut = false;
+    let settled = false;
+    const maxOutputLength = 20 * 1024 * 1024;
+
+    const appendOutput = (target, chunk) => {
+      if (target.length >= maxOutputLength) return target;
+      return `${target}${String(chunk)}`.slice(-maxOutputLength);
+    };
+    const finish = (status, errorMessage = "") => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timeout);
+      resolve({
+        source,
+        status: status ?? (timedOut ? 124 : 1),
+        stdout,
+        stderr,
+        timedOut,
+        message: String(stderr || errorMessage || (timedOut ? "source artifact refresh timed out" : "source artifact refresh failed")).trim(),
+      });
+    };
+    const timeout = setTimeout(() => {
+      timedOut = true;
+      child.kill("SIGTERM");
+    }, sourceRefreshTimeoutMs);
+
+    child.stdout?.on("data", (chunk) => {
+      stdout = appendOutput(stdout, chunk);
+    });
+    child.stderr?.on("data", (chunk) => {
+      stderr = appendOutput(stderr, chunk);
+    });
+    child.on("error", (error) => finish(1, error?.message || String(error)));
+    child.on("close", (status) => finish(status));
+  });
+}
+
+async function refreshSourceArtifactsForCycle(cycle, monitorArgs) {
   const sourceArtifactDir = args.get("source-artifact-dir");
   if (cycle <= 1 || !sourceArtifactDir) return { refreshed: false, failures: [] };
 
@@ -100,27 +154,17 @@ function refreshSourceArtifactsForCycle(cycle, monitorArgs) {
     (arg) => !arg.startsWith("--use-source-artifacts") && !arg.startsWith("--source-artifact-dir=")
   );
   const sources = ["aihot", "keyword", "gdelt", "rss"];
+  const results = await Promise.all(
+    sources.map((source) => runSourceArtifactRefresh(source, baseArgs, sourceArtifactDir))
+  );
   const failures = [];
 
-  for (const source of sources) {
-    const sourceArgs = [
-      "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
-      ...baseArgs,
-      `--source-only=${source}`,
-      `--source-artifact-dir=${sourceArtifactDir}`,
-    ];
-    const run = spawnSync(node, sourceArgs, {
-      cwd: root,
-      encoding: "utf8",
-      maxBuffer: 20 * 1024 * 1024,
-      timeout: sourceRefreshTimeoutMs,
-      killSignal: "SIGTERM",
-      shell: false,
-    });
+  for (const run of results) {
     if (run.status === 0) continue;
 
-    const message = String(run.stderr || run.error?.message || "source artifact refresh failed").trim();
-    failures.push(`${source}: ${message || "source artifact refresh failed"}`);
+    const { source } = run;
+    const message = run.message || "source artifact refresh failed";
+    failures.push(`${source}: ${message}`);
     const failedArtifact = path.join(root, sourceArtifactDir, `${source}-raw-source-candidates.json`);
     if (fs.existsSync(failedArtifact)) continue;
     fs.writeFileSync(
@@ -210,9 +254,9 @@ function writeLoopReport(loopResult) {
   return { reportPath, latestPath };
 }
 
-function runMonitorCycle(cycle) {
+async function runMonitorCycle(cycle) {
   const monitorArgs = buildMonitorArgsForCycle(cycle);
-  const sourceRefresh = refreshSourceArtifactsForCycle(cycle, monitorArgs);
+  const sourceRefresh = await refreshSourceArtifactsForCycle(cycle, monitorArgs);
   const commandArgs = ["agent-workflow/tools/run-guanlan-daily-monitor.mjs", ...monitorArgs];
   const run = spawnSync(node, commandArgs, {
     cwd: root,
@@ -239,7 +283,7 @@ function runMonitorCycle(cycle) {
   };
 }
 
-function main() {
+async function main() {
   const cycles = [];
   const mergedSkillFeedback = new Set();
   let finalStatus = "failed";
@@ -247,7 +291,7 @@ function main() {
   let finalCycle = maxCycles;
 
   for (let cycle = 1; cycle <= maxCycles; cycle += 1) {
-    const monitorRun = runMonitorCycle(cycle);
+    const monitorRun = await runMonitorCycle(cycle);
     const quality = runGuanlanMonitorQualityGate({
       date,
       configPath,
@@ -351,4 +395,7 @@ function readFallbackUsedFromLog(targetDate) {
   return "unknown";
 }
 
-main();
+main().catch((error) => {
+  console.error(error?.stack || error?.message || String(error));
+  process.exitCode = 1;
+});
