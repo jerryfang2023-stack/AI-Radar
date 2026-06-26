@@ -1,14 +1,15 @@
 ---
 type: opinion_person_timeline
 person_name: "Thibault Sottiaux"
-opinion_count: 34
-latest_date: 2026-06-25
+opinion_count: 35
+latest_date: 2026-06-26
 ---
 
 # Thibault Sottiaux 观点时间线
-共 34 条观点，按人物 + 日期文件聚合。
+共 35 条观点，按人物 + 日期文件聚合。
 ## 日期
 
+- [2026-06-26](./2026-06-26.md)
 - [2026-06-25](./2026-06-25.md)
 - [2026-06-24](./2026-06-24.md)
 - [2026-06-23](./2026-06-23.md)

@@ -1,7 +1,7 @@
 # Community Intelligence Data Gate - 2026-06-26
 
 - status: passed
-- generated_at: 2026-06-26T07:59:04.056Z
+- generated_at: 2026-06-26T08:13:51.011Z
 - data_file: 01-SiteV2/site/data/community-intelligence.json
 - items: 61
 - links: 66
@@ -23,3 +23,4 @@
 - passed: archive view exists: Tool Tips.md - 01-SiteV2/content/07-community-intelligence/views/Tool Tips.md
 - passed: archive view exists: Opportunities.md - 01-SiteV2/content/07-community-intelligence/views/Opportunities.md
 - passed: archive view exists: Resource Links.md - 01-SiteV2/content/07-community-intelligence/views/Resource Links.md
+
