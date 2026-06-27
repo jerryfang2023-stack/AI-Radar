@@ -36,6 +36,8 @@ const lanes = [
     dispatchStages: ["09:45"],
     dispatchInputs: () => ({ date, pass_score: passScore }),
     assetsReady: businessSignalAssetsReady,
+    canDispatch: (assets) => !assets.targetedRepairOnly,
+    limitation: "If active-date Cards exist but public Top10 is blocked by source-title translations or frontstage build, Hermes must hand off a targeted Codex repair instead of dispatching another full Business chain.",
     goodExample: "A formal Signal Card keeps a source-backed original event, an accurate title, and a first-party or reporting URL.",
     badExample: "A LinkedIn repost, GitHub repo tree, or generic funding list is promoted as a Top10 business fact.",
   },
@@ -155,6 +157,30 @@ function readJson(file, fallback = null) {
   }
 }
 
+function readText(file, fallback = "") {
+  try {
+    return fs.readFileSync(file, "utf8");
+  } catch {
+    return fallback;
+  }
+}
+
+function normalizeSourceTitle(value = "") {
+  return String(value).trim().replace(/^["']|["']$/gu, "").replace(/\s+/gu, " ");
+}
+
+function extractSourceTitle(markdown = "") {
+  const match = markdown.match(/^source_title:\s*(.+)$/mu);
+  return normalizeSourceTitle(match?.[1] || "");
+}
+
+function statusFromGate(file) {
+  const text = readText(file);
+  if (!text) return "missing";
+  const match = text.match(/^- status:\s*([^\r\n]+)/mu);
+  return match ? match[1].trim() : "unknown";
+}
+
 function workflowRuns(workflowFile) {
   const result = tryRun("gh", [
     "run",
@@ -217,12 +243,60 @@ function businessSignalAssetsReady() {
   const data = readJson(path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json"), {});
   const activeDate = data?.meta?.activeDate || "";
   const top10 = Array.isArray(data.top10) ? data.top10 : [];
+  const sameDateTop10 = top10.filter((item) => !item?.date || item.date === date);
+  const signalCardFiles = walkFiles(path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards"))
+    .filter((file) => new RegExp(`^${date}--signal--.*\\.md$`, "u").test(path.basename(file)));
+  const translationsDb = readJson(path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json"), {});
+  const translatedTitles = new Set((Array.isArray(translationsDb.translations) ? translationsDb.translations : [])
+    .map((item) => normalizeSourceTitle(item.sourceTitle))
+    .filter(Boolean));
+  const missingSourceTitleTranslations = signalCardFiles
+    .map((file) => extractSourceTitle(readText(file)))
+    .filter((title) => title && /[A-Za-z]{3}/u.test(title) && !translatedTitles.has(title));
+  const qualityGateStatus = statusFromGate(path.join(reportsDir, `${date}-guanlan-monitor-quality-gate.md`));
   const badTitleCount = top10.filter((item) => badBusinessTitle(item.title || item.displayTitle || "")).length;
+  const ready = activeDate === date && sameDateTop10.length === 10 && badTitleCount === 0 && signalCardFiles.length >= 10 && qualityGateStatus === "passed";
+  let category = ready ? "passed" : "no_run_or_stale_assets";
+  let reason = ready ? "same-date Business assets are healthy" : `activeDate=${activeDate || "missing"}, expected ${date}`;
+  let neededAction = ready ? "none" : "dispatch Business Signals production only after confirming no active/successful same-date run";
+  let targetedRepairOnly = false;
+  if (!ready && activeDate === date && signalCardFiles.length >= 10 && sameDateTop10.length !== 10 && missingSourceTitleTranslations.length > 0) {
+    category = "translation_title";
+    reason = `${missingSourceTitleTranslations.length} source title translation(s) missing while active-date Signal Cards exist`;
+    neededAction = "repair source-title translations/upstream sync and rebuild Business frontstage JSON only";
+    targetedRepairOnly = true;
+  } else if (!ready && activeDate === date && sameDateTop10.length !== 10) {
+    category = "top10_contract";
+    reason = `public Top10 count is ${sameDateTop10.length}, expected 10`;
+    neededAction = "repair Top10/frontstage build contract before considering Raw/Pool rerun";
+    targetedRepairOnly = true;
+  } else if (!ready && activeDate === date && signalCardFiles.length < 10) {
+    category = "core_supply_shortfall";
+    reason = `signal Card files ${signalCardFiles.length} below 10`;
+    neededAction = "diagnose Raw/Pool/Core/non-large Core counts and refill only deficient source/channel";
+  } else if (!ready && activeDate === date && qualityGateStatus === "failed") {
+    category = "source_first_frontstage_gate";
+    reason = "Business quality gate failed";
+    neededAction = "repair the failed gate and rerun the smallest validation";
+    targetedRepairOnly = true;
+  } else if (!ready && activeDate === date && qualityGateStatus === "missing") {
+    category = "supervision_observability";
+    reason = "Business quality gate report is missing while active-date assets exist";
+    neededAction = "rerun the Business frontstage gate or daily supervision before dispatching a full chain";
+    targetedRepairOnly = true;
+  }
   return {
-    ready: activeDate === date && top10.length === 10 && badTitleCount === 0,
+    ready,
     activeDate,
-    top10: top10.length,
+    top10: sameDateTop10.length,
     badTitleCount,
+    signalCardFiles: signalCardFiles.length,
+    qualityGateStatus,
+    category,
+    reason,
+    neededAction,
+    targetedRepairOnly,
+    missingSourceTitleTranslations: [...new Set(missingSourceTitleTranslations)].slice(0, 8),
   };
 }
 
@@ -328,7 +402,7 @@ function superviseLane(lane) {
     ok = false;
   } else if (lane.canDispatch && !lane.canDispatch(assets)) {
     action = "manual_required";
-    reason = `${lane.label} primary local output is missing or invalid; Hermes cannot replace the local collector and should hand off to Codex / human operator`;
+    reason = assets.neededAction || `${lane.label} primary local output is missing or invalid; Hermes should hand off to Codex / human operator`;
     ok = false;
   } else {
     dispatch = dispatchWorkflow(lane);
@@ -380,15 +454,22 @@ function writeInbox(laneResult, reportPath) {
   fs.mkdirSync(inboxDir, { recursive: true });
   const file = path.join(inboxDir, `${date}-${laneResult.lane}-early-handoff.md`);
   const failedRuns = laneResult.failed_runs.map((run) => `- ${run.conclusion || run.status}: ${run.url}`).join("\n") || "- none";
+  const category = laneResult.lane === "business_signals" && laneResult.assets?.category
+    ? laneResult.assets.category
+    : "three_lane_early_handoff_failure";
+  const dataGenerated = ["translation_title", "top10_contract", "source_first_frontstage_gate"].includes(category)
+    ? "yes"
+    : category === "no_run_or_stale_assets" ? "no_or_stale" : "unknown";
+  const neededAction = laneResult.assets?.neededAction || "repair rule";
   const content = [
     "status: open",
     "priority: urgent",
     `lane: ${laneResult.lane}`,
-    "category: three_lane_early_handoff_failure",
+    `category: ${category}`,
     `failed_gate: ${rel(reportPath)}`,
     `report_path: ${rel(reportPath)}`,
-    "data_generated: unknown",
-    "needed_action: repair rule",
+    `data_generated: ${dataGenerated}`,
+    `needed_action: ${neededAction}`,
     `created_at: ${shanghaiTimestamp()}`,
     `updated_at: ${shanghaiTimestamp()}`,
     "source: hermes-three-lane-early-handoff",
@@ -399,6 +480,9 @@ function writeInbox(laneResult, reportPath) {
     "",
     `- action: ${laneResult.action}`,
     `- reason: ${laneResult.reason}`,
+    laneResult.assets?.category ? `- category: ${laneResult.assets.category}` : "",
+    laneResult.assets?.reason ? `- diagnosis: ${laneResult.assets.reason}` : "",
+    laneResult.assets?.missingSourceTitleTranslations?.length ? `- missing_source_title_translations: ${laneResult.assets.missingSourceTitleTranslations.join(" | ")}` : "",
     `- primary_window_failures: ${laneResult.primary_window_failures}`,
     `- same_date_failures: ${laneResult.same_date_failures}`,
     `- report: \`${rel(reportPath)}\``,
@@ -410,8 +494,9 @@ function writeInbox(laneResult, reportPath) {
     "",
     "## Required Codex Action",
     "",
-    "- Inspect the failed workflow logs and the early handoff report.",
-    "- Repair the earliest failing stage instead of blindly rerunning.",
+    `- ${neededAction}.`,
+    "- Inspect the early handoff report and only inspect workflow logs if the diagnosis category is workflow/publication related.",
+    "- Repair the earliest failing stage instead of blindly rerunning Raw / Pool / Cards.",
     "- Add or tighten the relevant lane skill eval / example before closing this item.",
     "- Close with `npm run resolve:hermes -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>`.",
     "",
