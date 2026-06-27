@@ -2,6 +2,11 @@
 
 Keep this file short. Add only durable lane-level lessons from repeated production failures.
 
+## 2026-06-27 Source-Title Translation Starvation
+
+- If Raw / Pool and Signal Card generation succeed but active-date Top10 is 0, check whether same-date English source titles are missing from `01-SiteV2/content/11-databases/source-title-translations.json` before rerunning collection. The source-title lock is intentional; repair the translation database or upstream title-translation step, then rerun the unified Business frontstage gate.
+- Do not bypass the lock by exposing English titles, generated summaries, or URL-derived titles. A valid repair keeps `title`, `displayTitle`, and Top10-compatible `generatedTitle` equal to the approved direct Chinese source-title translation.
+
 ## 2026-06-21 Supervision Classification
 
 - Daily supervision must classify data health before workflow redness. If `v3-data-observation-desk.json` is same-date, public Top10 is exactly 10, signal Card files are at least 10, `intelligence-graph-index.json` exists, and the Business frontstage / monitor gates pass, the lane data is healthy.

@@ -1,0 +1,367 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-022
+title: "Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune"
+original_url: "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/"
+canonical_url: "https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "capital_startup"
+search_path_label: "资本与创业公司路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-27T03:15:05.800Z
+language: mixed
+full_text_hash: 2159da855c1c45fd
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-27/r-022-exclusive-seltz-a-startup-trying-to-reinvent-web-search-for-ai-agents-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-27/r-022-exclusive-seltz-a-startup-trying-to-reinvent-web-search-for-ai-agents-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 85
+extractor_diagnostics: {"readability_score":85,"text_length":8950,"paragraph_count":39,"sentence_count":56,"boilerplate_hits":4,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 8950
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2159da855c1c45fd","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 148deafb6bafc43e
+content_hash: 2159da855c1c45fd
+semantic_hash: e1dffac8b9f15fe9
+duplicate_of: ""
+first_seen_at: "2026-06-27T03:15:05.800Z"
+last_seen_at: 2026-06-27T03:15:05.800Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":false,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: false
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":5}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic","Google","Amazon","Perplexity","Mistral"],"products":["agents","agent"],"people":[],"industries":["金融 / 保险","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":[],"business_actions":["发布 / 推出","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["$12.5","$12.5 million","24","2026","7","00","$19.2 billion","$200 million"],"quotes":["research agents","The old search methods don’t work because they were architected for humans,","The revolution is back again,"]}
+evidence_seed: {"company_actions":["Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune ... # Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12.5 million in seed funding ... June 24, 2026, 7:00 AM ET ... The founding team at Seltz, a startup trying to rei... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup","just had its 'Suez moment'—and history says what comes next could end an empire Startups & Venture Venture Capital Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"funding","text":"Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune ... # Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12.5 million in seed funding ... June 24, 2026, 7:00 AM ET ... The founding team at Seltz, a startup trying to rei... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Trending now MacKenzie Scott alone accounted for one-third of America's $19.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"2 billion in megagifts last year Now worth $200 million, Sarah Jessica Parker credits being ‘one of eight kids that struggled financially’ for her hunger, ambition, and work ethic Ray Dalio says the U.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"just had its 'Suez moment'—and history says what comes next could end an empire MacKenzie Scott alone accounted for one-third of America's $19.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"just had its 'Suez moment'—and history says what comes next could end an empire Startups & Venture Venture Capital Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune
+
+## clean_text
+
+Trending now
+MacKenzie Scott alone accounted for one-third of America's $19.2 billion in megagifts last year
+Now worth $200 million, Sarah Jessica Parker credits being ‘one of eight kids that struggled financially’ for her hunger, ambition, and work ethic
+Ray Dalio says the U.S. just had its 'Suez moment'—and history says what comes next could end an empire
+MacKenzie Scott alone accounted for one-third of America's $19.2 billion in megagifts last year
+Now worth $200 million, Sarah Jessica Parker credits being ‘one of eight kids that struggled financially’ for her hunger, ambition, and work ethic
+Ray Dalio says the U.S. just had its 'Suez moment'—and history says what comes next could end an empire
+Startups & Venture Venture Capital
+Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12.5 million in seed funding
+By Jeremy Kahn
+Jeremy Kahn
+Editor, AI
+By Jeremy Kahn
+Jeremy Kahn
+Editor, AI
+June 24, 2026, 7:00 AM ET
+The founding team at Seltz, a startup trying to reinvent web search for AI agents, pose for a group photo with San Francisco's Golden Gate Bridge in the background. Seltz founder and CEO Antonio Mallia is the second from the left in the front row. Photo courtesy of Seltz
+Add Fortune on Google for similar content.
+Add us on Google
+Add us on Google
+The rise of AI has rekindled the long-dormant search wars. Chatbots and AI agents need to surface timely, relevant information about news and all kinds of products and services. AI startup Seltz is among the players lining up to take on Google, betting that AI agents and chatbots demand a new kind of search engine.
+Recommended Video
+Today Seltz announced that it has raised $12.5 million in seed funding. The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company.
+Seltz founder and CEO Antonio Mallia said traditional search engines were designed for people typing short keyword-based queries and then skimming a list of ranked links. AI agents work differently. They fire off long, precise queries—some “research agents” send dozens or hundreds of queries in parallel—and they need machine-ready information they can cite, not a snippet designed to entice a human to click through.
+“The old search methods don’t work because they were architected for humans,” Mallia told Fortune. “The information [the AI agent needs] is actually not in the snippet. It’s in the body of the web page, it’s in things like tables, images, and other forms of representation that can be useful for an LLM or for an agent.”
+Mallia has been preparing for this moment for much of his career. His PhD. work in computer science at New York University focused on information retrieval, and he worked as an applied scientist on Amazon’s artificial general intelligence team and as a research scientist at the vector-database company Pinecone before deciding to found Seltz. He told Fortune the current moment reminds him of the early 2000s, when Google’s PageRank upended how search worked. “The revolution is back again,” he said—this time driven by transformer models and the AI workflows that increasingly do the searching themselves.
+What sets Seltz apart, Mallia argues, is that it owns the entire search stack—web crawler, search index, retrieval models, and ranking—rather than wrapping someone else’s search engine. Many AI search products are built on top of Google, Bing, or Brave’s APIs. Some AI companies, such as OpenAI and Perplexity, have also reportedly been working to build their own search indexes and use their own web crawlers to scrape information from the web to respond to queries that demand current information. Still, Google is considered to have the best search index because its massive scale, with billions of daily users, enables it to see far more of the web than any rival product.
+In December, Google sued SerpApi—a service that scraped Google’s results and counted OpenAI among its reported customers—for allegedly circumventing its anti-bot protections. Anthropic and Mistral, meanwhile, have been reported to lean on Brave’s index to power web search in their chatbots. Mallia points to such arrangements as evidence that even the largest labs have not built genuinely independent web retrieval, leaving room for a purpose-built alternative.
+Seltz’s system crawls hundreds of millions of pages a day, and returns results in under 200 milliseconds. Instead of always handing back a full page or a summary, Mallia said, it scores individual passages and extracts the specific table, text, or image an agent actually needs—an exercise in what he calls context engineering.
+The startup is entering a crowded field with a number of better-funded competitors. Parallel, founded by former Twitter CEO Parag Agrawal, recently raised $100 million at a $2 billion valuation; another AI native search company, Exa, pulled in $85 million; and another called Tavily was acquired by the AI-cloud company Nebius for up to $400 million earlier this year. But Mallia said he is confident that controlling the entire search stack and building a better product will prove decisive.
+Seltz, incorporated in the U.S. and founded last October, is a lean operation: it currently employs just 15 people, only a half dozen of whom are full time employees. The team, which works fully remote, is split between the San Francisco Bay Area and hubs near European universities in Pisa, Italy, and Leipzig, Germany. Mallia said many on the team hold Ph.D.s in information retrieval and he has recruited other veterans of Amazon’s AI efforts. Seltz’s advisers and angel investors include executives from Google, Ramp, Cohere, Synthesia, and Databricks, along with academics from information-retrieval labs at NYU and the University of Glasgow.
+Seltz said the funding it has raised will go towards continuing to develop its search stack, hiring, and the start of an enterprise sales effort.
+Subscribe to Fortune Gulf Brief . Every Tuesday, this new newsletter delivers clear-eyed, authoritative intelligence on the deals, decisions, policies, and power shifts shaping one of the world’s most consequential regions, written for the people who need to act on it. Sign up here.
+About the Author By Jeremy Kahn Editor, AI
+Jeremy Kahn is the AI editor at Fortune , spearheading the publication's coverage of artificial intelligence. He also co-authors Eye on AI , Fortune ’s flagship AI newsletter.
+See full bio
+Add Fortune on Google for similar content.
+Add us on Google
+Latest in Startups & Venture
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Most Popular
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+
+## full_text
+
+Trending now
+MacKenzie Scott alone accounted for one-third of America's $19.2 billion in megagifts last year
+Now worth $200 million, Sarah Jessica Parker credits being ‘one of eight kids that struggled financially’ for her hunger, ambition, and work ethic
+Ray Dalio says the U.S. just had its 'Suez moment'—and history says what comes next could end an empire
+MacKenzie Scott alone accounted for one-third of America's $19.2 billion in megagifts last year
+Now worth $200 million, Sarah Jessica Parker credits being ‘one of eight kids that struggled financially’ for her hunger, ambition, and work ethic
+Ray Dalio says the U.S. just had its 'Suez moment'—and history says what comes next could end an empire
+Startups & Venture Venture Capital
+Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12.5 million in seed funding
+By Jeremy Kahn
+Jeremy Kahn
+Editor, AI
+By Jeremy Kahn
+Jeremy Kahn
+Editor, AI
+June 24, 2026, 7:00 AM ET
+The founding team at Seltz, a startup trying to reinvent web search for AI agents, pose for a group photo with San Francisco's Golden Gate Bridge in the background. Seltz founder and CEO Antonio Mallia is the second from the left in the front row. Photo courtesy of Seltz
+Add Fortune on Google for similar content.
+Add us on Google
+Add us on Google
+The rise of AI has rekindled the long-dormant search wars. Chatbots and AI agents need to surface timely, relevant information about news and all kinds of products and services. AI startup Seltz is among the players lining up to take on Google, betting that AI agents and chatbots demand a new kind of search engine.
+Recommended Video
+Today Seltz announced that it has raised $12.5 million in seed funding. The round was led by the European venture firm Speedinvest and the global investor B Capital, with participation from the Italian Founders Fund, United Ventures, and Future Back Ventures, the venture arm of Bain & Company.
+Seltz founder and CEO Antonio Mallia said traditional search engines were designed for people typing short keyword-based queries and then skimming a list of ranked links. AI agents work differently. They fire off long, precise queries—some “research agents” send dozens or hundreds of queries in parallel—and they need machine-ready information they can cite, not a snippet designed to entice a human to click through.
+“The old search methods don’t work because they were architected for humans,” Mallia told Fortune. “The information [the AI agent needs] is actually not in the snippet. It’s in the body of the web page, it’s in things like tables, images, and other forms of representation that can be useful for an LLM or for an agent.”
+Mallia has been preparing for this moment for much of his career. His PhD. work in computer science at New York University focused on information retrieval, and he worked as an applied scientist on Amazon’s artificial general intelligence team and as a research scientist at the vector-database company Pinecone before deciding to found Seltz. He told Fortune the current moment reminds him of the early 2000s, when Google’s PageRank upended how search worked. “The revolution is back again,” he said—this time driven by transformer models and the AI workflows that increasingly do the searching themselves.
+What sets Seltz apart, Mallia argues, is that it owns the entire search stack—web crawler, search index, retrieval models, and ranking—rather than wrapping someone else’s search engine. Many AI search products are built on top of Google, Bing, or Brave’s APIs. Some AI companies, such as OpenAI and Perplexity, have also reportedly been working to build their own search indexes and use their own web crawlers to scrape information from the web to respond to queries that demand current information. Still, Google is considered to have the best search index because its massive scale, with billions of daily users, enables it to see far more of the web than any rival product.
+In December, Google sued SerpApi—a service that scraped Google’s results and counted OpenAI among its reported customers—for allegedly circumventing its anti-bot protections. Anthropic and Mistral, meanwhile, have been reported to lean on Brave’s index to power web search in their chatbots. Mallia points to such arrangements as evidence that even the largest labs have not built genuinely independent web retrieval, leaving room for a purpose-built alternative.
+Seltz’s system crawls hundreds of millions of pages a day, and returns results in under 200 milliseconds. Instead of always handing back a full page or a summary, Mallia said, it scores individual passages and extracts the specific table, text, or image an agent actually needs—an exercise in what he calls context engineering.
+The startup is entering a crowded field with a number of better-funded competitors. Parallel, founded by former Twitter CEO Parag Agrawal, recently raised $100 million at a $2 billion valuation; another AI native search company, Exa, pulled in $85 million; and another called Tavily was acquired by the AI-cloud company Nebius for up to $400 million earlier this year. But Mallia said he is confident that controlling the entire search stack and building a better product will prove decisive.
+Seltz, incorporated in the U.S. and founded last October, is a lean operation: it currently employs just 15 people, only a half dozen of whom are full time employees. The team, which works fully remote, is split between the San Francisco Bay Area and hubs near European universities in Pisa, Italy, and Leipzig, Germany. Mallia said many on the team hold Ph.D.s in information retrieval and he has recruited other veterans of Amazon’s AI efforts. Seltz’s advisers and angel investors include executives from Google, Ramp, Cohere, Synthesia, and Databricks, along with academics from information-retrieval labs at NYU and the University of Glasgow.
+Seltz said the funding it has raised will go towards continuing to develop its search stack, hiring, and the start of an enterprise sales effort.
+Subscribe to Fortune Gulf Brief . Every Tuesday, this new newsletter delivers clear-eyed, authoritative intelligence on the deals, decisions, policies, and power shifts shaping one of the world’s most consequential regions, written for the people who need to act on it. Sign up here.
+About the Author By Jeremy Kahn Editor, AI
+Jeremy Kahn is the AI editor at Fortune , spearheading the publication's coverage of artificial intelligence. He also co-authors Eye on AI , Fortune ’s flagship AI newsletter.
+See full bio
+Add Fortune on Google for similar content.
+Add us on Google
+Latest in Startups & Venture
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Most Popular
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+Finance
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+By Fortune Editors
+October 20, 2025
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 85
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":85,"text_length":8950,"paragraph_count":39,"sentence_count":56,"boilerplate_hits":4,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune ... # Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12.5 million in seed funding ... June 24, 2026, 7:00 AM ET ... The founding team at Seltz, a startup trying to rei... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup
+
+2. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Trending now MacKenzie Scott alone accounted for one-third of America's $19.
+
+3. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   2 billion in megagifts last year Now worth $200 million, Sarah Jessica Parker credits being ‘one of eight kids that struggled financially’ for her hunger, ambition, and work ethic Ray Dalio says the U.
+
+4. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   just had its 'Suez moment'—and history says what comes next could end an empire MacKenzie Scott alone accounted for one-third of America's $19.
+
+5. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   just had its 'Suez moment'—and history says what comes next could end an empire Startups & Venture Venture Capital Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic, Google, Amazon, Perplexity, Mistral
+- products: agents, agent
+- people: 暂无公开信息
+- industries: 金融 / 保险, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: $12.5, $12.5 million, 24, 2026, 7, 00, $19.2 billion, $200 million
+- quotes: research agents / The old search methods don’t work because they were architected for humans, / The revolution is back again,
+
+## evidence_seed
+
+- company_actions: Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune ... # Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12.5 million in seed funding ... June 24, 2026, 7:00 AM ET ... The founding team at Seltz, a startup trying to rei... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup / just had its 'Suez moment'—and history says what comes next could end an empire Startups & Venture Venture Capital Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 5
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: false
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune ... # Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12.5 million in seed funding ... June 24, 2026, 7:00 AM ET ... The founding team at Seltz, a startup trying to rei... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

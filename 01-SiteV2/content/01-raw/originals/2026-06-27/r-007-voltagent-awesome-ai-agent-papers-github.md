@@ -1,0 +1,312 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-007
+title: "VoltAgent/awesome-ai-agent-papers - GitHub"
+original_url: "https://github.com/VoltAgent/awesome-ai-agent-papers"
+canonical_url: "https://github.com/VoltAgent/awesome-ai-agent-papers"
+source_name: "keyword search / Anysearch"
+source_type: developer
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event_on_official_page
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: formal_report
+search_intent: "find_customer_case"
+search_path: "developer_ecosystem"
+search_path_label: "开发生态路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-27T03:15:05.682Z
+language: mixed
+full_text_hash: fff46929f343e54c
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-27/r-007-voltagent-awesome-ai-agent-papers-github.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-27/r-007-voltagent-awesome-ai-agent-papers-github.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":15098,"paragraph_count":57,"sentence_count":59,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 15098
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fff46929f343e54c","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0a6e06286c13e9b6
+content_hash: fff46929f343e54c
+semantic_hash: 941ecef50f0235d0
+duplicate_of: ""
+first_seen_at: "2026-06-27T03:15:05.682Z"
+last_seen_at: 2026-06-27T03:15:05.682Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch","GitHub","Meta"],"products":["agent","Agent","agents","Agents","copilot"],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","法务","财务 / 预算"],"numbers":["2026","56","2"],"quotes":[]}
+evidence_seed: {"company_actions":["Memory & RAG (56) Paper arXiv ID Corpus2Skill: Don't Retrieve, Navigate — Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG - Compiles a corpus offline into a hierarchical tree of Agent Skills that the LLM agent navigates at query time, replacing retrieval with skill-tree traversal.","Learning to Share: Selective Memory for Efficient Parallel Agentic Systems - Proposes a shared memory bank with a learned controller that decides what information is worth passing between parallel agent teams to reduce redundant work.","CompactRAG: Reducing LLM Calls and Token Overhead in Multi-Hop Question Answering - Explores converting a corpus into atomic QA pairs offline to resolve multi-hop questions with just two LLM calls regardless of hop count."],"case_details":["A curated collection of AI agent research papers released in 2026, covering agent engineering, memory, evaluation, workflows, and autonomous systems. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem"],"workflow_changes":["BudgetMem: Learning Query-Aware Budget-Tier Routing for Runtime Agent Memory - Investigates routing agent memory queries to different processing tiers based on query difficulty to control the cost-accuracy trade-off at runtime."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"A curated collection of AI agent research papers released in 2026, covering agent engineering, memory, evaluation, workflows, and autonomous systems. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Memory & RAG (56) Paper arXiv ID Corpus2Skill: Don't Retrieve, Navigate — Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG - Compiles a corpus offline into a hierarchical tree of Agent Skills that the LLM agent navigates at query time, replacing retrieval with skill-tree traversal.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"BudgetMem: Learning Query-Aware Budget-Tier Routing for Runtime Agent Memory - Investigates routing agent memory queries to different processing tiers based on query difficulty to control the cost-accuracy trade-off at runtime.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Learning to Share: Selective Memory for Efficient Parallel Agentic Systems - Proposes a shared memory bank with a learned controller that decides what information is worth passing between parallel agent teams to reduce redundant work.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"CompactRAG: Reducing LLM Calls and Token Overhead in Multi-Hop Question Answering - Explores converting a corpus into atomic QA pairs offline to resolve multi-hop questions with just two LLM calls regardless of hop count.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Mitigating Hallucination in Financial Retrieval-Augmented Generation via Fine-Grained Knowledge Verification - Examines breaking financial RAG answers into atomic facts and verifying each against retrieved documents using reinforcement learning rewards.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: developer-ecosystem-signal
+keyword_group: developer-ecosystem-signal
+copyright_note: local research archive only
+---
+
+# VoltAgent/awesome-ai-agent-papers - GitHub
+
+## clean_text
+
+Memory & RAG (56)
+Paper
+arXiv ID
+Corpus2Skill: Don't Retrieve, Navigate — Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG - Compiles a corpus offline into a hierarchical tree of Agent Skills that the LLM agent navigates at query time, replacing retrieval with skill-tree traversal.
+BudgetMem: Learning Query-Aware Budget-Tier Routing for Runtime Agent Memory - Investigates routing agent memory queries to different processing tiers based on query difficulty to control the cost-accuracy trade-off at runtime.
+Learning to Share: Selective Memory for Efficient Parallel Agentic Systems - Proposes a shared memory bank with a learned controller that decides what information is worth passing between parallel agent teams to reduce redundant work.
+CompactRAG: Reducing LLM Calls and Token Overhead in Multi-Hop Question Answering - Explores converting a corpus into atomic QA pairs offline to resolve multi-hop questions with just two LLM calls regardless of hop count.
+Mitigating Hallucination in Financial Retrieval-Augmented Generation via Fine-Grained Knowledge Verification - Examines breaking financial RAG answers into atomic facts and verifying each against retrieved documents using reinforcement learning rewards.
+Graph-based Agent Memory: Taxonomy, Techniques, and Applications - Surveys graph-based memory architectures for agents, covering extraction, storage, retrieval, and how memory evolves over time.
+AI Agent Systems for Supply Chains: Structured Decision Prompts and Memory Retrieval - Proposes a multi-agent system for inventory management that retrieves similar past decisions to adapt ordering across various supply chain scenarios.
+SOPRAG: Multi-view Graph Experts Retrieval for Industrial Standard Operating Procedures - Explores replacing flat chunk-based RAG with graph experts that understand entity relationships, causality, and process flows for structured documents like SOPs.
+ProcMEM: Learning Reusable Procedural Memory from Experience via Non-Parametric PPO for LLM Agents - Investigates letting agents save step-by-step procedural skills from past runs and reuse them later without retraining to reduce repeated computation.
+Aggregation Queries over Unstructured Text: Benchmark and Agentic Method - Proposes an agentic method for aggregation queries over unstructured text that tries to find all matching evidence, breaking the task into disambiguation, filtering, and aggregation stages.
+DIVERGE: Diversity-Enhanced RAG for Open-Ended Information Seeking - Proposes an agentic RAG framework that uses reflection and memory-based refinement to generate diverse answers for open-ended questions.
+JADE: Bridging the Strategic-Operational Gap in Dynamic Agentic RAG - Proposes joint optimization of planning and execution in agentic RAG by modeling the system as a cooperative multi-agent team with shared backbone and outcome-based rewards.
+ProRAG: Process-Supervised Reinforcement Learning for Retrieval-Augmented Generation - Proposes process-supervised reinforcement learning for RAG that uses MCTS-based step-level rewards to identify and fix flawed reasoning steps in multi-hop retrieval.
+E-mem: Multi-agent based Episodic Context Reconstruction for LLM Agent Memory - Introduces an episodic memory framework where assistant agents maintain uncompressed memory contexts while a master agent orchestrates global planning, replacing destructive memory compression with context reconstruction.
+ShardMemo: Masked MoE Routing for Sharded Agentic LLM Memory - Proposes a tiered memory service for agentic LLM systems that uses masked mixture-of-experts routing to probe only eligible memory shards under a fixed budget.
+When should I search more: Adaptive Complex Query Optimization with Reinforcement Learning - Explores adaptive query optimization in RAG using reinforcement learning to dynamically decide when to split complex queries into sub-queries and fuse the retrieved results.
+A2RAG: Adaptive Agentic Graph Retrieval for Cost-Aware and Reliable Reasoning - Introduces an adaptive agentic Graph-RAG framework that verifies evidence sufficiency and progressively escalates retrieval effort, mapping graph signals back to source text to handle extraction loss.
+MemCtrl: Using MLLMs as Active Memory Controllers on Embodied Agents - Investigates augmenting multimodal LLMs with a trainable memory gate that decides which observations to retain, update, or discard during online embodied agent exploration.
+AMA: Adaptive Memory via Multi-Agent Collaboration - Proposes a multi-agent memory framework with hierarchical granularity, adaptive query routing, consistency verification, and targeted memory refresh for long-term agent interaction.
+When Iterative RAG Beats Ideal Evidence: A Diagnostic Study in Scientific Multi-hop Question Answering - Examines when iterative retrieval-reasoning loops outperform static gold-context RAG in scientific multi-hop QA, diagnosing failure modes across retrieval coverage, hypothesis drift, and stopping calibration.
+Dep-Search: Learning Dependency-Aware Reasoning Traces with Persistent Memory - Introduces a dependency-aware search framework that uses GRPO reinforcement learning to teach LLMs to decompose questions with dependency relationships and store intermediate results in persistent memory.
+FadeMem: Biologically-Inspired Forgetting for Efficient Agent Memory - Proposes a biologically-inspired agent memory architecture with adaptive exponential decay, LLM-guided conflict resolution, and intelligent memory fusion across a dual-layer hierarchy.
+FastInsight: Fast and Insightful Retrieval via Fusion Operators for Graph RAG - Explores two fusion operators for Graph RAG that combine graph-aware reranking with semantic-topological expansion to improve retrieval accuracy and generation quality.
+Less is More for RAG: Information Gain Pruning for Generator-Aligned Reranking and Evidence Selection - Proposes a generator-aligned reranking and pruning module for RAG that selects evidence using utility signals and filters weak or harmful passages before context truncation.
+DeepEra: A Deep Evidence Reranking Agent for Scientific Retrieval-Augmented Generated Question Answering - Introduces a step-by-step reasoning reranking agent for RAG that distinguishes semantically similar but logically irrelevant passages in retrieval-augmented question answering.
+SPARC-RAG: Adaptive Sequential-Parallel Scaling with Context Management for Retrieval-Augmented Generation - Introduces a multi-agent RAG framework that coordinates sequential and parallel inference-time scaling under unified context management to prevent contamination and improve multi-hop reasoning.
+Incorporating Q&A Nuggets into Retrieval-Augmented Generation - Proposes a nugget-augmented generation system that constructs a bank of Q&A nuggets from retrieved documents to guide extraction, selection, and report generation with citation provenance.
+Augmenting Question Answering with A Hybrid RAG Approach - Introduces a hybrid RAG architecture combining query augmentation, agentic routing, and structured retrieval that merges vector and graph-based techniques with context unification for question answering.
+Utilizing Metadata for Better Retrieval-Augmented Generation - Presents a systematic study of metadata-aware retrieval strategies for RAG, comparing prefix, suffix, unified embedding, and late-fusion approaches with field-level ablations on embedding space structure.
+Deep GraphRAG: A Balanced Approach to Hierarchical Retrieval and Adaptive Integration - Proposes a hierarchical global-to-local retrieval strategy for GraphRAG with beam search-optimized re-ranking and a compact LLM integration module trained via dynamic-weighting reinforcement learning.
+Grounding Agent Memory in Contextual Intent - Introduces an agentic memory system that indexes trajectory steps with structured contextual intent cues and retrieves history by intent compatibility to reduce interference in long-horizon goal-oriented interactions.
+Structure and Diversity Aware Context Bubble Construction for Enterprise Retrieval Augmented Systems - Proposes a structure-informed and diversity-constrained context bubble construction framework for RAG that preserves document structure and balances relevance, coverage, and redundancy under strict token budgets.
+Topo-RAG: Topology-aware retrieval for hybrid text-table documents - Introduces a dual-architecture RAG framework that routes narrative through dense retrievers and tabular data through a cell-aware late interaction mechanism to preserve spatial relationships in hybrid documents.
+Continuum Memory Architectures for Long-Horizon LLM Agents - Defines a class of memory systems for long-horizon agents that maintain persistent, temporally chained internal state instead of stateless RAG lookups, specifying the architectural requirements they must satisfy.
+Rethinking Memory Mechanisms of Foundation Agents in the Second Half: A Survey - Surveys foundation agent memory organized by substrate (internal/external), cognitive mechanism (episodic, semantic, working, procedural), and subject (agent- vs user-centric).
+The AI Hippocampus: How Far are We From Human Memory? - Surveys memory in LLMs and multimodal LLMs across implicit, explicit, and agentic paradigms, covering cross-modal integration and challenges like capacity, alignment, and factual consistency.
+AtomMem: Learnable Dynamic Agentic Memory with Atomic Memory Operation - Decomposes memory management into atomic CRUD operations and learns an autonomous policy via SFT + RL to study whether learnable memory outperforms static-workflow methods on long-context tasks.
+OpenDecoder: Open LLM Decoding to Incorporate Document Quality in RAG - Feeds explicit document quality signals (relevance score, ranking, QPP) into RAG generation to study whether exposing retrieval metadata makes the model more robust to noisy context.
+Reliable Graph-RAG for Codebases: AST-Derived Graphs vs LLM-Extracted Knowledge Graphs - Benchmarks vector-only, LLM-extracted KG, and AST-derived graph pipelines for code RAG, comparing correctness and indexing cost across deterministic and LLM-based graph construction.
+To Retrieve or To Think? An Agentic Approach for Context Evolution - Proposes an agentic RAG framework that dynamically decides whether to retrieve new evidence or reason over existing context at each step, aiming to eliminate redundant retrieval.
+Parallel Context-of-Experts Decoding for Retrieval Augmented Generation - Proposes a training-free RAG decoding method that treats retrieved documents as isolated "experts" and aggregates their logits via retrieval-aware contrastive decoding to recover cross-document reasoning.
+SwiftMem: Fast Agentic Memory via Query-aware Indexing - Proposes a query-aware agentic memory system that achieves sub-linear retrieval through temporal and semantic DAG-Tag indexing with an embedding-tag co-consolidation mechanism for memory fragmentation.
+Learning How to Remember: A Meta-Cognitive Management Method for Structured and Transferable Agent Memory - Proposes treating memory abstraction as a learnable cognitive skill, training a memory copilot via DPO to determine how memories should be structured, abstracted, and reused across tasks.
+Beyond Dialogue Time: Temporal Semantic Memory for Personalized LLM Agents - Introduces a temporal semantic memory framework that organizes memories by actual occurrence time rather than dialogue time and consolidates temporally continuous information into durative memory.
+Active Context Compression: Autonomous Memory Management in LLM Agents - Proposes an agent-centric architecture inspired by Physarum polycephalum where the agent autonomously decides when to consolidate learnings and prune raw interaction history to manage context growth.
+Relink: Constructing Query-Driven Evidence Graph On-the-Fly for GraphRAG - Proposes a reason-and-construct paradigm for GraphRAG that dynamically builds query-specific evidence graphs by instantiating facts from a latent relation pool and discarding distractor facts.
+Seeing through the Conflict: Transparent Knowledge Conflict Handling in RAG - Introduces a plug-and-play RAG framework that disentangles semantic match from factual consistency and estimates self-answerability to make the conflict-resolution decision process observable and controllable.
+CIRAG: Construction-Integration Retrieval and Adaptive Generation for Multi-hop Question Answering - Proposes a construction-integration approach for multi-hop RAG that preserves multiple evidence chains via iterative triple construction and adaptively expands context granularity from triples to full passages.
+Amory: Building Coherent Narrative-Driven Agent Memory through Agentic Reasoning - Proposes a working memory framework that constructs structured episodic narratives from conversational fragments, consolidates memories with momentum, and semanticizes peripheral facts into semantic memory during offline time.
+L-RAG: Balancing Context and Retrieval with Entropy-Based Lazy Loading - Proposes an adaptive RAG framework that uses entropy-based gating to bypass vector database retrieval when model uncertainty is low, triggering expensive chunk retrieval only when genuine uncertainty is detected.
+PRISMA: Reinforcement Learning Guided Two-Stage Policy Optimization in Multi-Agent Architecture for Open-Domain Multi-Hop QA - Proposes a decoupled multi-agent RAG framework for multi-hop QA with a Plan-Retrieve-Inspect-Solve-Memoize architecture and two-stage GRPO optimization to address retrieval collapse over large corpora.
+Controllable Memory Usage: Balancing Anchoring and Innovation in Long-Term Human-Agent Interaction - Proposes a framework for user-controllable memory reliance in long-term agent interactions, modeling memory dependence as an explicit and steerable dimension.
+Beyond Static Summarization: Proactive Memory Extraction for LLM Agents - Proposes proactive memory extraction using self-questioning feedback loops instead of one-off static summarization to recover missing information and correct errors iteratively.
+Membox: Weaving Topic Continuity into Long-Range Memory for LLM Agents - Proposes a hierarchical memory architecture with a Topic Loom that groups consecutive same-topic dialogue turns into coherent memory boxes and links them via long-range event-timeline traces.
+MAGMA: A Multi-Graph based Agentic Memory Architecture - Proposes a multi-graph agentic memory architecture that represents memories across orthogonal semantic, temporal, causal, and entity graphs with policy-guided traversal for retrieval.
+HiMeS: Hippocampus-inspired Memory System for Personalized AI Assistants - Proposes a hippocampus-inspired memory architecture for AI assistants that fuses RL-trained short-term memory extraction with partitioned long-term memory for personalization.
+SimpleMem: Efficient Lifelong Memory for LLM Agents - Proposes a three-stage memory framework based on semantic lossless compression with structured compression, online semantic synthesis, and intent-aware retrieval planning.
+
+## full_text
+
+Memory & RAG (56)
+Paper
+arXiv ID
+Corpus2Skill: Don't Retrieve, Navigate — Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG - Compiles a corpus offline into a hierarchical tree of Agent Skills that the LLM agent navigates at query time, replacing retrieval with skill-tree traversal.
+BudgetMem: Learning Query-Aware Budget-Tier Routing for Runtime Agent Memory - Investigates routing agent memory queries to different processing tiers based on query difficulty to control the cost-accuracy trade-off at runtime.
+Learning to Share: Selective Memory for Efficient Parallel Agentic Systems - Proposes a shared memory bank with a learned controller that decides what information is worth passing between parallel agent teams to reduce redundant work.
+CompactRAG: Reducing LLM Calls and Token Overhead in Multi-Hop Question Answering - Explores converting a corpus into atomic QA pairs offline to resolve multi-hop questions with just two LLM calls regardless of hop count.
+Mitigating Hallucination in Financial Retrieval-Augmented Generation via Fine-Grained Knowledge Verification - Examines breaking financial RAG answers into atomic facts and verifying each against retrieved documents using reinforcement learning rewards.
+Graph-based Agent Memory: Taxonomy, Techniques, and Applications - Surveys graph-based memory architectures for agents, covering extraction, storage, retrieval, and how memory evolves over time.
+AI Agent Systems for Supply Chains: Structured Decision Prompts and Memory Retrieval - Proposes a multi-agent system for inventory management that retrieves similar past decisions to adapt ordering across various supply chain scenarios.
+SOPRAG: Multi-view Graph Experts Retrieval for Industrial Standard Operating Procedures - Explores replacing flat chunk-based RAG with graph experts that understand entity relationships, causality, and process flows for structured documents like SOPs.
+ProcMEM: Learning Reusable Procedural Memory from Experience via Non-Parametric PPO for LLM Agents - Investigates letting agents save step-by-step procedural skills from past runs and reuse them later without retraining to reduce repeated computation.
+Aggregation Queries over Unstructured Text: Benchmark and Agentic Method - Proposes an agentic method for aggregation queries over unstructured text that tries to find all matching evidence, breaking the task into disambiguation, filtering, and aggregation stages.
+DIVERGE: Diversity-Enhanced RAG for Open-Ended Information Seeking - Proposes an agentic RAG framework that uses reflection and memory-based refinement to generate diverse answers for open-ended questions.
+JADE: Bridging the Strategic-Operational Gap in Dynamic Agentic RAG - Proposes joint optimization of planning and execution in agentic RAG by modeling the system as a cooperative multi-agent team with shared backbone and outcome-based rewards.
+ProRAG: Process-Supervised Reinforcement Learning for Retrieval-Augmented Generation - Proposes process-supervised reinforcement learning for RAG that uses MCTS-based step-level rewards to identify and fix flawed reasoning steps in multi-hop retrieval.
+E-mem: Multi-agent based Episodic Context Reconstruction for LLM Agent Memory - Introduces an episodic memory framework where assistant agents maintain uncompressed memory contexts while a master agent orchestrates global planning, replacing destructive memory compression with context reconstruction.
+ShardMemo: Masked MoE Routing for Sharded Agentic LLM Memory - Proposes a tiered memory service for agentic LLM systems that uses masked mixture-of-experts routing to probe only eligible memory shards under a fixed budget.
+When should I search more: Adaptive Complex Query Optimization with Reinforcement Learning - Explores adaptive query optimization in RAG using reinforcement learning to dynamically decide when to split complex queries into sub-queries and fuse the retrieved results.
+A2RAG: Adaptive Agentic Graph Retrieval for Cost-Aware and Reliable Reasoning - Introduces an adaptive agentic Graph-RAG framework that verifies evidence sufficiency and progressively escalates retrieval effort, mapping graph signals back to source text to handle extraction loss.
+MemCtrl: Using MLLMs as Active Memory Controllers on Embodied Agents - Investigates augmenting multimodal LLMs with a trainable memory gate that decides which observations to retain, update, or discard during online embodied agent exploration.
+AMA: Adaptive Memory via Multi-Agent Collaboration - Proposes a multi-agent memory framework with hierarchical granularity, adaptive query routing, consistency verification, and targeted memory refresh for long-term agent interaction.
+When Iterative RAG Beats Ideal Evidence: A Diagnostic Study in Scientific Multi-hop Question Answering - Examines when iterative retrieval-reasoning loops outperform static gold-context RAG in scientific multi-hop QA, diagnosing failure modes across retrieval coverage, hypothesis drift, and stopping calibration.
+Dep-Search: Learning Dependency-Aware Reasoning Traces with Persistent Memory - Introduces a dependency-aware search framework that uses GRPO reinforcement learning to teach LLMs to decompose questions with dependency relationships and store intermediate results in persistent memory.
+FadeMem: Biologically-Inspired Forgetting for Efficient Agent Memory - Proposes a biologically-inspired agent memory architecture with adaptive exponential decay, LLM-guided conflict resolution, and intelligent memory fusion across a dual-layer hierarchy.
+FastInsight: Fast and Insightful Retrieval via Fusion Operators for Graph RAG - Explores two fusion operators for Graph RAG that combine graph-aware reranking with semantic-topological expansion to improve retrieval accuracy and generation quality.
+Less is More for RAG: Information Gain Pruning for Generator-Aligned Reranking and Evidence Selection - Proposes a generator-aligned reranking and pruning module for RAG that selects evidence using utility signals and filters weak or harmful passages before context truncation.
+DeepEra: A Deep Evidence Reranking Agent for Scientific Retrieval-Augmented Generated Question Answering - Introduces a step-by-step reasoning reranking agent for RAG that distinguishes semantically similar but logically irrelevant passages in retrieval-augmented question answering.
+SPARC-RAG: Adaptive Sequential-Parallel Scaling with Context Management for Retrieval-Augmented Generation - Introduces a multi-agent RAG framework that coordinates sequential and parallel inference-time scaling under unified context management to prevent contamination and improve multi-hop reasoning.
+Incorporating Q&A Nuggets into Retrieval-Augmented Generation - Proposes a nugget-augmented generation system that constructs a bank of Q&A nuggets from retrieved documents to guide extraction, selection, and report generation with citation provenance.
+Augmenting Question Answering with A Hybrid RAG Approach - Introduces a hybrid RAG architecture combining query augmentation, agentic routing, and structured retrieval that merges vector and graph-based techniques with context unification for question answering.
+Utilizing Metadata for Better Retrieval-Augmented Generation - Presents a systematic study of metadata-aware retrieval strategies for RAG, comparing prefix, suffix, unified embedding, and late-fusion approaches with field-level ablations on embedding space structure.
+Deep GraphRAG: A Balanced Approach to Hierarchical Retrieval and Adaptive Integration - Proposes a hierarchical global-to-local retrieval strategy for GraphRAG with beam search-optimized re-ranking and a compact LLM integration module trained via dynamic-weighting reinforcement learning.
+Grounding Agent Memory in Contextual Intent - Introduces an agentic memory system that indexes trajectory steps with structured contextual intent cues and retrieves history by intent compatibility to reduce interference in long-horizon goal-oriented interactions.
+Structure and Diversity Aware Context Bubble Construction for Enterprise Retrieval Augmented Systems - Proposes a structure-informed and diversity-constrained context bubble construction framework for RAG that preserves document structure and balances relevance, coverage, and redundancy under strict token budgets.
+Topo-RAG: Topology-aware retrieval for hybrid text-table documents - Introduces a dual-architecture RAG framework that routes narrative through dense retrievers and tabular data through a cell-aware late interaction mechanism to preserve spatial relationships in hybrid documents.
+Continuum Memory Architectures for Long-Horizon LLM Agents - Defines a class of memory systems for long-horizon agents that maintain persistent, temporally chained internal state instead of stateless RAG lookups, specifying the architectural requirements they must satisfy.
+Rethinking Memory Mechanisms of Foundation Agents in the Second Half: A Survey - Surveys foundation agent memory organized by substrate (internal/external), cognitive mechanism (episodic, semantic, working, procedural), and subject (agent- vs user-centric).
+The AI Hippocampus: How Far are We From Human Memory? - Surveys memory in LLMs and multimodal LLMs across implicit, explicit, and agentic paradigms, covering cross-modal integration and challenges like capacity, alignment, and factual consistency.
+AtomMem: Learnable Dynamic Agentic Memory with Atomic Memory Operation - Decomposes memory management into atomic CRUD operations and learns an autonomous policy via SFT + RL to study whether learnable memory outperforms static-workflow methods on long-context tasks.
+OpenDecoder: Open LLM Decoding to Incorporate Document Quality in RAG - Feeds explicit document quality signals (relevance score, ranking, QPP) into RAG generation to study whether exposing retrieval metadata makes the model more robust to noisy context.
+Reliable Graph-RAG for Codebases: AST-Derived Graphs vs LLM-Extracted Knowledge Graphs - Benchmarks vector-only, LLM-extracted KG, and AST-derived graph pipelines for code RAG, comparing correctness and indexing cost across deterministic and LLM-based graph construction.
+To Retrieve or To Think? An Agentic Approach for Context Evolution - Proposes an agentic RAG framework that dynamically decides whether to retrieve new evidence or reason over existing context at each step, aiming to eliminate redundant retrieval.
+Parallel Context-of-Experts Decoding for Retrieval Augmented Generation - Proposes a training-free RAG decoding method that treats retrieved documents as isolated "experts" and aggregates their logits via retrieval-aware contrastive decoding to recover cross-document reasoning.
+SwiftMem: Fast Agentic Memory via Query-aware Indexing - Proposes a query-aware agentic memory system that achieves sub-linear retrieval through temporal and semantic DAG-Tag indexing with an embedding-tag co-consolidation mechanism for memory fragmentation.
+Learning How to Remember: A Meta-Cognitive Management Method for Structured and Transferable Agent Memory - Proposes treating memory abstraction as a learnable cognitive skill, training a memory copilot via DPO to determine how memories should be structured, abstracted, and reused across tasks.
+Beyond Dialogue Time: Temporal Semantic Memory for Personalized LLM Agents - Introduces a temporal semantic memory framework that organizes memories by actual occurrence time rather than dialogue time and consolidates temporally continuous information into durative memory.
+Active Context Compression: Autonomous Memory Management in LLM Agents - Proposes an agent-centric architecture inspired by Physarum polycephalum where the agent autonomously decides when to consolidate learnings and prune raw interaction history to manage context growth.
+Relink: Constructing Query-Driven Evidence Graph On-the-Fly for GraphRAG - Proposes a reason-and-construct paradigm for GraphRAG that dynamically builds query-specific evidence graphs by instantiating facts from a latent relation pool and discarding distractor facts.
+Seeing through the Conflict: Transparent Knowledge Conflict Handling in RAG - Introduces a plug-and-play RAG framework that disentangles semantic match from factual consistency and estimates self-answerability to make the conflict-resolution decision process observable and controllable.
+CIRAG: Construction-Integration Retrieval and Adaptive Generation for Multi-hop Question Answering - Proposes a construction-integration approach for multi-hop RAG that preserves multiple evidence chains via iterative triple construction and adaptively expands context granularity from triples to full passages.
+Amory: Building Coherent Narrative-Driven Agent Memory through Agentic Reasoning - Proposes a working memory framework that constructs structured episodic narratives from conversational fragments, consolidates memories with momentum, and semanticizes peripheral facts into semantic memory during offline time.
+L-RAG: Balancing Context and Retrieval with Entropy-Based Lazy Loading - Proposes an adaptive RAG framework that uses entropy-based gating to bypass vector database retrieval when model uncertainty is low, triggering expensive chunk retrieval only when genuine uncertainty is detected.
+PRISMA: Reinforcement Learning Guided Two-Stage Policy Optimization in Multi-Agent Architecture for Open-Domain Multi-Hop QA - Proposes a decoupled multi-agent RAG framework for multi-hop QA with a Plan-Retrieve-Inspect-Solve-Memoize architecture and two-stage GRPO optimization to address retrieval collapse over large corpora.
+Controllable Memory Usage: Balancing Anchoring and Innovation in Long-Term Human-Agent Interaction - Proposes a framework for user-controllable memory reliance in long-term agent interactions, modeling memory dependence as an explicit and steerable dimension.
+Beyond Static Summarization: Proactive Memory Extraction for LLM Agents - Proposes proactive memory extraction using self-questioning feedback loops instead of one-off static summarization to recover missing information and correct errors iteratively.
+Membox: Weaving Topic Continuity into Long-Range Memory for LLM Agents - Proposes a hierarchical memory architecture with a Topic Loom that groups consecutive same-topic dialogue turns into coherent memory boxes and links them via long-range event-timeline traces.
+MAGMA: A Multi-Graph based Agentic Memory Architecture - Proposes a multi-graph agentic memory architecture that represents memories across orthogonal semantic, temporal, causal, and entity graphs with policy-guided traversal for retrieval.
+HiMeS: Hippocampus-inspired Memory System for Personalized AI Assistants - Proposes a hippocampus-inspired memory architecture for AI assistants that fuses RL-trained short-term memory extraction with partitioned long-term memory for personalization.
+SimpleMem: Efficient Lifelong Memory for LLM Agents - Proposes a three-stage memory framework based on semantic lossless compression with structured compression, online semantic synthesis, and intent-aware retrieval planning.
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":15098,"paragraph_count":57,"sentence_count":59,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   A curated collection of AI agent research papers released in 2026, covering agent engineering, memory, evaluation, workflows, and autonomous systems. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Memory & RAG (56) Paper arXiv ID Corpus2Skill: Don't Retrieve, Navigate — Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG - Compiles a corpus offline into a hierarchical tree of Agent Skills that the LLM agent navigates at query time, replacing retrieval with skill-tree traversal.
+
+3. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   BudgetMem: Learning Query-Aware Budget-Tier Routing for Runtime Agent Memory - Investigates routing agent memory queries to different processing tiers based on query difficulty to control the cost-accuracy trade-off at runtime.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Learning to Share: Selective Memory for Efficient Parallel Agentic Systems - Proposes a shared memory bank with a learned controller that decides what information is worth passing between parallel agent teams to reduce redundant work.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   CompactRAG: Reducing LLM Calls and Token Overhead in Multi-Hop Question Answering - Explores converting a corpus into atomic QA pairs offline to resolve multi-hop questions with just two LLM calls regardless of hop count.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Mitigating Hallucination in Financial Retrieval-Augmented Generation via Fine-Grained Knowledge Verification - Examines breaking financial RAG answers into atomic facts and verifying each against retrieved documents using reinforcement learning rewards.
+
+## business_elements
+
+- companies: keyword search, Anysearch, GitHub, Meta
+- products: agent, Agent, agents, Agents, copilot
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 法务, 财务 / 预算
+- numbers: 2026, 56, 2
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Memory & RAG (56) Paper arXiv ID Corpus2Skill: Don't Retrieve, Navigate — Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG - Compiles a corpus offline into a hierarchical tree of Agent Skills that the LLM agent navigates at query time, replacing retrieval with skill-tree traversal. / Learning to Share: Selective Memory for Efficient Parallel Agentic Systems - Proposes a shared memory bank with a learned controller that decides what information is worth passing between parallel agent teams to reduce redundant work. / CompactRAG: Reducing LLM Calls and Token Overhead in Multi-Hop Question Answering - Explores converting a corpus into atomic QA pairs offline to resolve multi-hop questions with just two LLM calls regardless of hop count.
+- case_details: A curated collection of AI agent research papers released in 2026, covering agent engineering, memory, evaluation, workflows, and autonomous systems. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem
+- workflow_changes: BudgetMem: Learning Query-Aware Budget-Tier Routing for Runtime Agent Memory - Investigates routing agent memory queries to different processing tiers based on query difficulty to control the cost-accuracy trade-off at runtime.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+A curated collection of AI agent research papers released in 2026, covering agent engineering, memory, evaluation, workflows, and autonomous systems. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,293 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-032
+title: "Netris raises $15M Series A from a16z to help AI neoclouds go live faster"
+original_url: "https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/"
+canonical_url: "https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster"
+source_name: "TechCrunch AI"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-27T03:15:05.864Z
+language: mixed
+full_text_hash: 577ba7cc7490d477
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-27/r-032-netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-fast.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-27/r-032-netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-fast.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":5539,"paragraph_count":33,"sentence_count":45,"boilerplate_hits":0,"symbol_ratio":0.0004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 5539
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"577ba7cc7490d477","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: eb6bed7dfdf7bd76
+content_hash: 577ba7cc7490d477
+semantic_hash: 98b70f884d9ee296
+duplicate_of: ""
+first_seen_at: "2026-06-27T03:15:05.864Z"
+last_seen_at: 2026-06-27T03:15:05.864Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["TechCrunch AI","OpenAI","Google","Microsoft","Meta","AWS","Nvidia"],"products":[],"people":[],"industries":["企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["$15M","16","2026","30","$190","26","1","000"],"quotes":[]}
+evidence_seed: {"company_actions":["Netris provides software that runs on network switches, and offers a platform that helps neocloud operators reduce the time it takes to go live.","–:–:–:– The first StrictlyVC of 2026 hits SF on April 30.","Tickets are going fast."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Netris provides software that runs on network switches, and offers a platform that helps neocloud operators reduce the time it takes to go live.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"–:–:–:– The first StrictlyVC of 2026 hits SF on April 30.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Tickets are going fast.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Founder Summit ticket savings of up to $190 end June 26.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Join 1,000+ founders and VCs for all-day bootcamp.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Close Image Credits: YASUYOSHI CHIBA/AFP / Getty Images AI Netris raises $15M Series A from a16z to help AI neoclouds go live faster Ram Iyer 7:55 AM PDT · June 25, 2026 The AI boom has encouraged everyone and their uncle to launch a data center business.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Netris raises $15M Series A from a16z to help AI neoclouds go live faster
+
+## clean_text
+
+–:–:–:–
+The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.
+Founder Summit ticket savings of up to $190 end June 26. Join 1,000+ founders and VCs for all-day bootcamp. REGISTER NOW.
+Close
+Image Credits: YASUYOSHI CHIBA/AFP / Getty Images
+AI
+Netris raises $15M Series A from a16z to help AI neoclouds go live faster
+Ram Iyer
+7:55 AM PDT · June 25, 2026
+The AI boom has encouraged everyone and their uncle to launch a data center business. But spinning up a data center isn’t easy.
+Even if you solve the problem of securing the GPUs, network switches, and storage, you still have to get everything configured, running, and be able to cater to customers’ various needs. Getting a data center ready to provide cloud-computing services, specifically for AI inference and training, can take months of work. And the longer you take to get to market, the higher the cost of having all those precious GPUs sitting idle.
+Network automation startup Netris claims it can make that problem disappear for neoclouds. The company provides software that runs on network switches, and it also offers a platform that connects to switches to help neocloud operators reduce the time it takes to go live by automating setup, configuration, and operations. The platform also provides network abstraction, so hardware configurations can be changed as required, and it isolates servers and resources at the hardware layer so neoclouds can serve multiple customers (multi-tenancy).
+If that sounds like a solution to an obvious problem, you’re not wrong. Until recently, data centers were largely the domain of large infrastructure operators like Equinix, NTT, Digital Realty, Oracle, Microsoft, AWS, or Google. Those companies pretty much solved network setup, configuration, and multi-tenancy for themselves by hiring ranks of engineers or building the automation themselves. Small neocloud businesses rarely have such resources at their disposal.
+“As a GPU cluster operator, you need to make configuration changes to every link, every day. At traditional data centers, they were using something called SDN [software-defined networking] to do this, but SDN is falling short, because it’s a software technology,” Netris’ CEO Alex Saroyan told TechCrunch. “For AI, software is not okay, because the amount of traffic is so high, everything must be hardware accelerated. So you need something like SDN, but completely hardware accelerated. This is what we do, and this is what we’ve been doing for eight years.”
+An abstracted view of a data center’s topology Image Credits: Netris
+Saroyan said Netris’ platform is vendor-agnostic, compatible with networking equipment and standards used at data centers, both for Nvidia and AMD’s servers.
+The startup’s promise has found many believers, one of which is Nvidia. Two years ago, the chipmaking giant was so impressed by a demo of Netris’ technology that it recommended the company to several customers. Today, Netris is live at more than 35 GPU clusters around the world (about a million GPUs total), operated by the likes of Lightning AI, Foxconn, Visionbay, Hewlett Packard Enterprise, TensorWave, Telus, and others.
+To build on that momentum, Netris has now raised $15 million in a Series A round from Andreessen Horowitz, TechCrunch has exclusively learned.
+Notably, there’s no AI at work here. Saroyan said the company only uses algorithms it had developed previously for running and configuring automation and operations.
+“We started way before AI. We understood the challenge early on, and we started developing this algorithm early on. AI is not deterministic, right? Sometimes it likes to do things on its own. It’s good for creative work, but for changing many thousands of switch configurations, you don’t need to be creative. You need to be very persistent and repeatable.”
+a16z partner Guido Appenzeller is joining the company’s board. Looking forward, Netris aims to use the funding to hire more engineers and sales staff, add support for more hardware vendors, and implement more functionality in its algorithm.
+Topics
+a16z , AI , data centers , neocloud , Netris
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Ram Iyer
+Editor
+Ram is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.
+You can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Former Infosys chief has a new startup that wants to challenge the IT services world
+Jagmeet Singh
+OpenAI unveils its first custom chip, built by Broadcom
+Russell Brandom
+Slate Auto’s radically simple electric truck starts at $24,950
+Sean O'Kane
+HaloBraid raises $7M from Seven Seven Six to end the six-hour hair salon appointment
+Dominic-Madori Davis
+WhatsApp gets new chief as Meta taps India’s CRED founder Kunal Shah and invests $900M in startup
+Jagmeet Singh
+Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27
+Sarah Perez
+Every new iOS 27 feature that’s worth knowing about
+Lauren Forristal
+Loading the next article
+Error loading the next article
+
+## full_text
+
+–:–:–:–
+The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. Register now.
+Founder Summit ticket savings of up to $190 end June 26. Join 1,000+ founders and VCs for all-day bootcamp. REGISTER NOW.
+Close
+Image Credits: YASUYOSHI CHIBA/AFP / Getty Images
+AI
+Netris raises $15M Series A from a16z to help AI neoclouds go live faster
+Ram Iyer
+7:55 AM PDT · June 25, 2026
+The AI boom has encouraged everyone and their uncle to launch a data center business. But spinning up a data center isn’t easy.
+Even if you solve the problem of securing the GPUs, network switches, and storage, you still have to get everything configured, running, and be able to cater to customers’ various needs. Getting a data center ready to provide cloud-computing services, specifically for AI inference and training, can take months of work. And the longer you take to get to market, the higher the cost of having all those precious GPUs sitting idle.
+Network automation startup Netris claims it can make that problem disappear for neoclouds. The company provides software that runs on network switches, and it also offers a platform that connects to switches to help neocloud operators reduce the time it takes to go live by automating setup, configuration, and operations. The platform also provides network abstraction, so hardware configurations can be changed as required, and it isolates servers and resources at the hardware layer so neoclouds can serve multiple customers (multi-tenancy).
+If that sounds like a solution to an obvious problem, you’re not wrong. Until recently, data centers were largely the domain of large infrastructure operators like Equinix, NTT, Digital Realty, Oracle, Microsoft, AWS, or Google. Those companies pretty much solved network setup, configuration, and multi-tenancy for themselves by hiring ranks of engineers or building the automation themselves. Small neocloud businesses rarely have such resources at their disposal.
+“As a GPU cluster operator, you need to make configuration changes to every link, every day. At traditional data centers, they were using something called SDN [software-defined networking] to do this, but SDN is falling short, because it’s a software technology,” Netris’ CEO Alex Saroyan told TechCrunch. “For AI, software is not okay, because the amount of traffic is so high, everything must be hardware accelerated. So you need something like SDN, but completely hardware accelerated. This is what we do, and this is what we’ve been doing for eight years.”
+An abstracted view of a data center’s topology Image Credits: Netris
+Saroyan said Netris’ platform is vendor-agnostic, compatible with networking equipment and standards used at data centers, both for Nvidia and AMD’s servers.
+The startup’s promise has found many believers, one of which is Nvidia. Two years ago, the chipmaking giant was so impressed by a demo of Netris’ technology that it recommended the company to several customers. Today, Netris is live at more than 35 GPU clusters around the world (about a million GPUs total), operated by the likes of Lightning AI, Foxconn, Visionbay, Hewlett Packard Enterprise, TensorWave, Telus, and others.
+To build on that momentum, Netris has now raised $15 million in a Series A round from Andreessen Horowitz, TechCrunch has exclusively learned.
+Notably, there’s no AI at work here. Saroyan said the company only uses algorithms it had developed previously for running and configuring automation and operations.
+“We started way before AI. We understood the challenge early on, and we started developing this algorithm early on. AI is not deterministic, right? Sometimes it likes to do things on its own. It’s good for creative work, but for changing many thousands of switch configurations, you don’t need to be creative. You need to be very persistent and repeatable.”
+a16z partner Guido Appenzeller is joining the company’s board. Looking forward, Netris aims to use the funding to hire more engineers and sales staff, add support for more hardware vendors, and implement more functionality in its algorithm.
+Topics
+a16z , AI , data centers , neocloud , Netris
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Ram Iyer
+Editor
+Ram is a financial and tech reporter and editor. He covered North American and European M&A, equity, regulatory news and debt markets at Reuters and Acuris Global, and has also written about travel, tourism, entertainment and books.
+You can contact or verify outreach from Ram by emailing ram.iyer@techcrunch.com .
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Former Infosys chief has a new startup that wants to challenge the IT services world
+Jagmeet Singh
+OpenAI unveils its first custom chip, built by Broadcom
+Russell Brandom
+Slate Auto’s radically simple electric truck starts at $24,950
+Sean O'Kane
+HaloBraid raises $7M from Seven Seven Six to end the six-hour hair salon appointment
+Dominic-Madori Davis
+WhatsApp gets new chief as Meta taps India’s CRED founder Kunal Shah and invests $900M in startup
+Jagmeet Singh
+Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27
+Sarah Perez
+Every new iOS 27 feature that’s worth knowing about
+Lauren Forristal
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":5539,"paragraph_count":33,"sentence_count":45,"boilerplate_hits":0,"symbol_ratio":0.0004,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Netris provides software that runs on network switches, and offers a platform that helps neocloud operators reduce the time it takes to go live.
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   –:–:–:– The first StrictlyVC of 2026 hits SF on April 30.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Tickets are going fast.
+
+4. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   Founder Summit ticket savings of up to $190 end June 26.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Join 1,000+ founders and VCs for all-day bootcamp.
+
+6. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Close Image Credits: YASUYOSHI CHIBA/AFP / Getty Images AI Netris raises $15M Series A from a16z to help AI neoclouds go live faster Ram Iyer 7:55 AM PDT · June 25, 2026 The AI boom has encouraged everyone and their uncle to launch a data center business.
+
+## business_elements
+
+- companies: TechCrunch AI, OpenAI, Google, Microsoft, Meta, AWS, Nvidia
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: $15M, 16, 2026, 30, $190, 26, 1, 000
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Netris provides software that runs on network switches, and offers a platform that helps neocloud operators reduce the time it takes to go live. / –:–:–:– The first StrictlyVC of 2026 hits SF on April 30. / Tickets are going fast.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Netris provides software that runs on network switches, and offers a platform that helps neocloud operators reduce the time it takes to go live.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
