@@ -27,6 +27,16 @@ Regenerate them with:
 npm run sync:data-lake
 ```
 
+Install the local daily sync task with:
+
+```powershell
+npm run install:data-lake-sync-task -- -At 11:10 -RunOnceNow
+```
+
+The scheduled task is named `WaveSight Data Lake Sync`. It runs daily at 11:10 Asia/Shanghai local machine time and at Windows logon. It only writes ignored generated files.
+
+If Windows blocks scheduled-task registration, the installer writes a Startup fallback command instead. The fallback starts a hidden sync loop at Windows logon and checks every 60 minutes.
+
 ## Current Tables
 
 | Table | Source | Purpose |

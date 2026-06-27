@@ -93,4 +93,4 @@ Old V2 pages are retired. If old rules conflict with V3.3, remove or rebuild the
 5. Persist each producing lane through its own commit / PR boundary.
 6. Publish the site only after merged changes reach `main` and GitHub Pages runs.
 7. Sync merged assets to local Obsidian when the local machine is online.
-8. Regenerate the local DuckDB data-lake index when cross-day statistics, contamination audits, source linkage checks, or column-level production diagnostics are needed.
+8. Regenerate the local DuckDB data-lake index through the local `WaveSight Data Lake Sync` scheduled task after daily monitoring output is available; use it for cross-day statistics, contamination audits, source linkage checks, and column-level production diagnostics.
