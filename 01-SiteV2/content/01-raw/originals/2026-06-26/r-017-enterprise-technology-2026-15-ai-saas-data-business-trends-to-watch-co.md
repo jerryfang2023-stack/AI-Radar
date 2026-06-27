@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-017
 title: "Enterprise technology 2026: 15 AI, SaaS, data, business trends to watch | Constellation Research"

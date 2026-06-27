@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-059
 title: "Top 10 Open-Source AI Agent Frameworks for Enterprise (2026) | Nexus"

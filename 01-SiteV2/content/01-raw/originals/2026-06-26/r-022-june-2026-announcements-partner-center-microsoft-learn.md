@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-022
 title: "June 2026 announcements - Partner Center - Microsoft Learn"

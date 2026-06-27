@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "status": "warning",
+  "status": "passed",
   "date": "2026-06-27",
-  "generated_at": "2026-06-27T03:25:29.393Z",
+  "generated_at": "2026-06-27T06:51:44.323Z",
   "timezone": "Asia/Shanghai",
   "lanes": [
     {
@@ -53,15 +53,15 @@
           "available": true,
           "latest_run": {
             "conclusion": "success",
-            "createdAt": "2026-06-27T02:57:54Z",
-            "databaseId": 28276557686,
-            "event": "workflow_dispatch",
+            "createdAt": "2026-06-27T06:16:49Z",
+            "databaseId": 28280950158,
+            "event": "schedule",
             "headBranch": "main",
             "status": "completed",
-            "updatedAt": "2026-06-27T02:58:26Z",
-            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28276557686"
+            "updatedAt": "2026-06-27T06:17:07Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28280950158"
           },
-          "same_date_run_count": 1,
+          "same_date_run_count": 3,
           "prs": [
             {
               "isDraft": false,
@@ -88,7 +88,7 @@
       "id": "business_signals",
       "label": "Business Signals / Intelligence Map / Dashboard",
       "schedule": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55",
-      "status": "warning",
+      "status": "passed",
       "evidence": {
         "activeDate": "2026-06-27",
         "generatedAt": "2026-06-27T03:23:57.647Z",
@@ -103,16 +103,16 @@
         "github": {
           "available": true,
           "latest_run": {
-            "conclusion": "failure",
-            "createdAt": "2026-06-27T03:06:44Z",
-            "databaseId": 28276763724,
-            "event": "workflow_dispatch",
+            "conclusion": "success",
+            "createdAt": "2026-06-27T04:41:36Z",
+            "databaseId": 28278875040,
+            "event": "schedule",
             "headBranch": "main",
             "status": "completed",
-            "updatedAt": "2026-06-27T03:15:20Z",
-            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28276763724"
+            "updatedAt": "2026-06-27T04:41:58Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28278875040"
           },
-          "same_date_run_count": 4,
+          "same_date_run_count": 5,
           "prs": [],
           "pr_warning": ""
         },
@@ -122,27 +122,23 @@
           "top10Count": 10,
           "businessPrMerged": false,
           "businessPrUrl": "",
-          "pagesSuccess": false,
+          "pagesSuccess": true,
           "pagesActive": false,
-          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28276756019",
+          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28280957412",
           "localSync": {
             "available": true,
-            "clean": false,
-            "dirtyFiles": 49,
-            "ignoredReportFiles": 4,
-            "head": "f229397f274e1ab4a36bb15ca26ac0ba790ad6b8",
-            "originMain": "f229397f274e1ab4a36bb15ca26ac0ba790ad6b8",
-            "fastForwarded": true,
+            "clean": true,
+            "dirtyFiles": 0,
+            "ignoredReportFiles": 0,
+            "head": "f54eefd06d8e0fc244a7dc04dccfc1aba784fdd2",
+            "originMain": "13f0196b8605897e98b65687623283ac5f35d492",
+            "fastForwarded": false,
             "warning": ""
           }
         }
       },
       "problems": [],
-      "warnings": [
-        "latest same-date GitHub Pages workflow conclusion is skipped",
-        "local Obsidian sync may be blocked by 49 dirty file(s)",
-        "latest Business Signals workflow conclusion is failure, but same-date data and gates are healthy; repair branch / PR / publication only"
-      ],
+      "warnings": [],
       "actions": []
     },
     {
@@ -151,7 +147,7 @@
       "schedule": "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Hermes RSS handoff 09:30",
       "status": "passed",
       "evidence": {
-        "generatedAt": "2026-06-27T01:32:29.179Z",
+        "generatedAt": "2026-06-27T05:04:31.281Z",
         "generatedDate": "2026-06-27",
         "feedGeneratedAt": "2026-06-26T07:36:20.057Z",
         "remarks": 47,
@@ -162,16 +158,24 @@
           "available": true,
           "latest_run": {
             "conclusion": "success",
-            "createdAt": "2026-06-27T01:32:07Z",
-            "databaseId": 28274537911,
-            "event": "workflow_dispatch",
+            "createdAt": "2026-06-27T05:04:09Z",
+            "databaseId": 28279369938,
+            "event": "schedule",
             "headBranch": "main",
             "status": "completed",
-            "updatedAt": "2026-06-27T01:33:12Z",
-            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28274537911"
+            "updatedAt": "2026-06-27T05:05:17Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28279369938"
           },
-          "same_date_run_count": 1,
+          "same_date_run_count": 2,
           "prs": [
+            {
+              "isDraft": false,
+              "mergedAt": "2026-06-27T05:05:13Z",
+              "number": 157,
+              "state": "MERGED",
+              "updatedAt": "2026-06-27T05:05:15Z",
+              "url": "https://github.com/jerryfang2023-stack/AI-Radar/pull/157"
+            },
             {
               "isDraft": false,
               "mergedAt": "2026-06-27T01:33:08Z",

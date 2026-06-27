@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-084
 title: "Top 14 AI Implementation Partners to Consider in 2026"

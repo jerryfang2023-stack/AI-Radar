@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-054
 title: "2026: The year AI SaaS companies act like AI Services companies. I keep seeing the same pattern: AI vendors send technical consultants on-site to run discovery and build custom solutions for each鈥?| Alex Furmansky | 18 comments"

@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-134
 title: "ai-accelerator-toolkit/AI_Accelerator_Product_Overview.md at ..."

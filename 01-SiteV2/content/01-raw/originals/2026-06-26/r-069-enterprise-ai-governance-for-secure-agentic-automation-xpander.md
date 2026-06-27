@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-069
 title: "Enterprise AI Governance for Secure Agentic Automation | xpander ..."

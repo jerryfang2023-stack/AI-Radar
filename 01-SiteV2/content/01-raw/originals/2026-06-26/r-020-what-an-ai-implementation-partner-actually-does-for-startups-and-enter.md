@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-020
 title: "What an AI Implementation Partner Actually Does For Startups and Enterprises - Byteonic Labs"

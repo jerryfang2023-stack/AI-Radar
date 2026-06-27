@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-021
 title: "What a Successful Enterprise AI Support Deployment Looks Like in 2026"

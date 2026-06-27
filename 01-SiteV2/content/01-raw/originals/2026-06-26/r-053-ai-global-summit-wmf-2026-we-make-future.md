@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-053
 title: "AI Global Summit | WMF 2026 - We Make Future"

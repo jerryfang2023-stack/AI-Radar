@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-116
 title: "Introducing the a16z FDE Fellowship - a16z Build Newsletter"

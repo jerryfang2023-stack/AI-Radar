@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-046
 title: "Eindhoven-based Luna.ai Raises $2.5M in a Pre-Seed Funding"

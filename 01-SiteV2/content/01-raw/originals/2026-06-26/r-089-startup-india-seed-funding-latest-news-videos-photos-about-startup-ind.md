@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-089
 title: "Startup India seed funding: Latest News & Videos, Photos about Startup India seed funding | The Economic Times - Page 1"

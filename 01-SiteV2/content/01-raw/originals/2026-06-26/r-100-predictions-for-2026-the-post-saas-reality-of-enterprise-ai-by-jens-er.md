@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-100
 title: "Predictions for 2026: the post-SaaS reality of enterprise AI | by Jens Eriksvik | Medium"

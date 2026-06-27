@@ -41,6 +41,34 @@ function readText(file) {
   }
 }
 
+function relProjectPath(file) {
+  if (!file) return "";
+  const relative = path.relative(root, file).replaceAll(path.sep, "/");
+  return relative && !relative.startsWith("..") ? relative : file;
+}
+
+function readExistingPayload(file) {
+  const content = readText(file).trim();
+  const prefix = "window.WaveSightLocalSkillStore = ";
+  if (!content.startsWith(prefix)) return null;
+  try {
+    return JSON.parse(content.slice(prefix.length).replace(/;\s*$/u, ""));
+  } catch {
+    return null;
+  }
+}
+
+function withoutGenerationStamp(payload) {
+  return {
+    ...payload,
+    meta: {
+      ...payload.meta,
+      generatedAt: "",
+      generatedDate: "",
+    },
+  };
+}
+
 function exists(file) {
   return fs.existsSync(file);
 }
@@ -468,7 +496,7 @@ function buildSkill(name, registryMap, usageMap, generatedDate, observation) {
     description: registry?.responsibility || frontmatter.description || "",
     originalDescription: frontmatter.description || "",
     localPath: storeExists ? storePath : "",
-    projectPath: projectExists ? projectPath : "",
+    projectPath: projectExists ? relProjectPath(projectPath) : "",
     hasSkillMd: exists(skillMd),
     hasEvals,
     hasExamples,
@@ -567,9 +595,9 @@ const payload = {
     generatedAt: formatDateTime(generatedAt),
     generatedDate: formatDate(generatedAt),
     storeDir,
-    projectSkillDir,
-    registryPath,
-    cleanupObservationPath,
+    projectSkillDir: relProjectPath(projectSkillDir),
+    registryPath: relProjectPath(registryPath),
+    cleanupObservationPath: relProjectPath(cleanupObservationPath),
     version: readSkillStoreVersion(skillOpsPaths),
     cleanupPolicy: CLEANUP_POLICY,
     summary: summarize(skills),
@@ -577,6 +605,12 @@ const payload = {
   cleanupQueue,
   skills,
 };
+
+const existingPayload = readExistingPayload(outFile);
+if (existingPayload && JSON.stringify(withoutGenerationStamp(existingPayload)) === JSON.stringify(withoutGenerationStamp(payload))) {
+  payload.meta.generatedAt = existingPayload.meta?.generatedAt || payload.meta.generatedAt;
+  payload.meta.generatedDate = existingPayload.meta?.generatedDate || payload.meta.generatedDate;
+}
 
 fs.mkdirSync(path.dirname(outFile), { recursive: true });
 const json = JSON.stringify(payload, null, 2).replaceAll("<", "\\u003c");

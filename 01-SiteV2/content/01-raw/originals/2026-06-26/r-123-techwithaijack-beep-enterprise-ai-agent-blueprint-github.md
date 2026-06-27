@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-123
 title: "techwithaijack-beep/enterprise-ai-agent-blueprint ... - GitHub"

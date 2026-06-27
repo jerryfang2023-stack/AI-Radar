@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-111
 title: "AI Rollout Progression for Business Transformation - LinkedIn"

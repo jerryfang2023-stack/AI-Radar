@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-133
 title: "Real-World AI/ML Ecosystem | Enterprise AI Platform Recipe - GitHub"
