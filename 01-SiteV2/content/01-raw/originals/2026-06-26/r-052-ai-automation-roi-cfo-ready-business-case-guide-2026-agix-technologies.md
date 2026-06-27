@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-052
 title: "AI Automation ROI: CFO-Ready Business Case Guide 2026 | AGIX Technologies"

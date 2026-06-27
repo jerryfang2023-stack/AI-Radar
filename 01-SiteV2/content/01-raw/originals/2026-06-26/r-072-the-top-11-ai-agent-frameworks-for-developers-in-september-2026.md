@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-072
 title: "The Top 11 AI Agent Frameworks For Developers In September 2026"

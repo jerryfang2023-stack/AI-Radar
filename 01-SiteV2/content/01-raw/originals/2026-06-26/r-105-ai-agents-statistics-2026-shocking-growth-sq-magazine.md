@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-105
 title: "AI Agents Statistics 2026: Shocking Growth - SQ Magazine"

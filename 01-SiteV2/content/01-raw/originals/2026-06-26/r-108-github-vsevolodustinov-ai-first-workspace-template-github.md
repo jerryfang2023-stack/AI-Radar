@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-108
 title: "GitHub - VsevolodUstinov/ai-first-workspace-template 路 GitHub"

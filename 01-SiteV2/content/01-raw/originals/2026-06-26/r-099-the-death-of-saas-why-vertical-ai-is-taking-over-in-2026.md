@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-099
 title: "The Death of SaaS | Why \"Vertical AI\" is Taking Over in 2026"

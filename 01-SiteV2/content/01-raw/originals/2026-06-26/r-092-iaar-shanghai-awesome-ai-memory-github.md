@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-092
 title: "IAAR-Shanghai/Awesome-AI-Memory - GitHub"

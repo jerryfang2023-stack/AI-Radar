@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-037
 title: "August 鈥?5 enterprise roundup 路 GitHub"

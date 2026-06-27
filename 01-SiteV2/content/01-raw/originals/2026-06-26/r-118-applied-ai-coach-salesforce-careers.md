@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-118
 title: "Applied AI Coach - Salesforce Careers"

@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-016
 title: "Case study: AI agents & workflow automation 鈥?a startup-to-enterprise scale story | Sustainability Atlas"

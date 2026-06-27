@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-043
 title: "AI Automation ROI for Small Business: Case Studies 2026"

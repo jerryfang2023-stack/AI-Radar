@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-113
 title: "Microsoft plans aggressive maneuvers to gain an edge in fight for AI agent market share | MSDynamicsWorld.com"

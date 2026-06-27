@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-024
 title: "GitHub Copilot 路 Your AI pair programmer"

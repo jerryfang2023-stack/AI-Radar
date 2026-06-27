@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-112
 title: "AI in Venture Capital: NuFund's Workflow and Investment Process"

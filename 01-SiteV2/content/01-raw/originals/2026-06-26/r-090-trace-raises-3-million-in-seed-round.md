@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-090
 title: "Trace Raises $3 Million in Seed Round"

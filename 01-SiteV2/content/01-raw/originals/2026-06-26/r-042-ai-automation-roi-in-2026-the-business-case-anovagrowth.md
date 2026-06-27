@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-042
 title: "AI Automation ROI in 2026: The Business Case | AnovaGrowth"

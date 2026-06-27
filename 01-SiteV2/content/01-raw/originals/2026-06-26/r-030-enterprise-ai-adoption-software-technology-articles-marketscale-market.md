@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-030
 title: "Enterprise Ai Adoption 鈥?Software & Technology Articles | MarketScale | MarketScale"

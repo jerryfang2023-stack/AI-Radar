@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-067
 title: "Kore.ai announces the availability of its AI for work, AI for process ..."

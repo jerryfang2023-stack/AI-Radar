@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-027
 title: "Crunchbase rival: Dutch-founded startup data repository Dealroom snags 鈧?M funding 鈥?TFN"

@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-062
 title: "Awesome AI Agents: Tools, Resources, and Projects - GitHub"

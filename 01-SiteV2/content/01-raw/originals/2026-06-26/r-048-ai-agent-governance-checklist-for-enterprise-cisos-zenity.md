@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-048
 title: "AI Agent Governance Checklist for Enterprise CISOs - Zenity"

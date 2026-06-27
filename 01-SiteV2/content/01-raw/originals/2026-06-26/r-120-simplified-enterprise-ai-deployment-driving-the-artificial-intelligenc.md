@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-120
 title: "Simplified enterprise AI deployment driving the Artificial Intelligence ..."

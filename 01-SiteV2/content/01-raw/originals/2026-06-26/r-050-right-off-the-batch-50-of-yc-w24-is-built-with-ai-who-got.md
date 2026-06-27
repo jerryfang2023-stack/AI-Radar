@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-050
 title: "Right Off The Batch: 50% Of YC W24 Is Built With AI. Who Got ..."

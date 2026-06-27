@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-060
 title: "ARUNAGIRINATHAN-K/awesome-ai-agents-2026 - GitHub"

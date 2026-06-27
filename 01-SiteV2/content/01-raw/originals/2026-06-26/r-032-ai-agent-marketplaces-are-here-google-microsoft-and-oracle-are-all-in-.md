@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-032
 title: "AI Agent Marketplaces Are Here: Google, Microsoft, and Oracle Are All In. Where Does Your SaaS Fit? - Stactize"

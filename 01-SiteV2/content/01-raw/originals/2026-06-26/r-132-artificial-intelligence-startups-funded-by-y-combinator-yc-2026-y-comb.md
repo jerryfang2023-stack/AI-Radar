@@ -1,4 +1,4 @@
-﻿---
+---
 schema_version: raw-evidence-v2
 raw_id: R-132
 title: "Artificial+Intelligence Startups funded by Y Combinator (YC) 2026 | Y Combinator"
