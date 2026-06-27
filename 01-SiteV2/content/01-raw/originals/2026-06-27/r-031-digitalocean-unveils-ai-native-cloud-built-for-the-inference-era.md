@@ -1,0 +1,283 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-031
+title: "DigitalOcean Unveils AI-Native Cloud Built for the Inference Era"
+original_url: "https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202604281630BIZWIRE_USPRX____20260428_BW061753-1"
+canonical_url: "https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202604281630BIZWIRE_USPRX____20260428_BW061753-1"
+source_name: "keyword search / Anysearch"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "a_media_gdelt"
+search_path_label: "A 级媒体 / GDELT 路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-27T03:15:05.858Z
+language: mixed
+full_text_hash: 29767eb8f21ef394
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-27/r-031-digitalocean-unveils-ai-native-cloud-built-for-the-inference-era.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-27/r-031-digitalocean-unveils-ai-native-cloud-built-for-the-inference-era.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":9653,"paragraph_count":39,"sentence_count":51,"boilerplate_hits":0,"symbol_ratio":0.0005,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 9653
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"29767eb8f21ef394","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 6241cc8af6a9e8e5
+content_hash: 29767eb8f21ef394
+semantic_hash: 7b9bc845c9ba6b51
+duplicate_of: ""
+first_seen_at: "2026-06-27T03:15:05.858Z"
+last_seen_at: 2026-06-27T03:15:05.858Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","AWS","Nvidia"],"products":["agents","Agents","agent","Claude","MCP","Agent"],"people":[],"industries":["法律 / 法务","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["2026","28","21","30 B","50","90%","4x","15x"],"quotes":["Open models are giving builders more choice in how they build AI applications,"]}
+evidence_seed: {"company_actions":["DigitalOcean Holdings Inc DigitalOcean Unveils AI-Native Cloud Built for the Inference Era Apr 28 2026 21:30 BST AI workloads have outgrown the clouds built for the last era.","DigitalOcean ’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitching together fragmented services.","SAN FRANCISCO --(BUSINESS WIRE)--Apr."],"case_details":["AI workloads have outgrown the clouds built for the last era. DigitalOcean’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitch... / query=AI infrastructure launch inference optimization enterprise deployment 2026 / intent=find_original_source / path=a_media_gdelt"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"AI workloads have outgrown the clouds built for the last era. DigitalOcean’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitch... / query=AI infrastructure launch inference optimization enterprise deployment 2026 / intent=find_original_source / path=a_media_gdelt","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"DigitalOcean Holdings Inc DigitalOcean Unveils AI-Native Cloud Built for the Inference Era Apr 28 2026 21:30 BST AI workloads have outgrown the clouds built for the last era.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"DigitalOcean ’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitching together fragmented services.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"SAN FRANCISCO --(BUSINESS WIRE)--Apr.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"28, 2026-- DigitalOcean (NYSE: DOCN) today introduced the DigitalOcean AI-Native Cloud, the first cloud built end-to-end for the inference and agentic era.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"The integrated platform spans five layers: infrastructure, core cloud, inference, data, and managed agents, and is already running production workloads at Higgsfield AI, Hippocratic AI , ISMG, Bright Data, and LawVo.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# DigitalOcean Unveils AI-Native Cloud Built for the Inference Era
+
+## clean_text
+
+DigitalOcean Holdings Inc
+DigitalOcean Unveils AI-Native Cloud Built for the Inference Era
+Apr 28 2026 21:30 BST
+AI workloads have outgrown the clouds built for the last era. DigitalOcean ’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitching together fragmented services.
+SAN FRANCISCO --(BUSINESS WIRE)--Apr. 28, 2026--
+DigitalOcean (NYSE: DOCN) today introduced the DigitalOcean AI-Native Cloud, the first cloud built end-to-end for the inference and agentic era. The integrated platform spans five layers: infrastructure, core cloud, inference, data, and managed agents, and is already running production workloads at Higgsfield AI, Hippocratic AI , ISMG, Bright Data, and LawVo. The platform debuts at Deploy 2026 , the company's conference for builders, and is available to customers today.
+AI-native builders are caught between imperfect options: hyperscalers built for the enterprise cloud era, with complex services and unpredictable costs, and newer GPU clouds that rent bare metal and tokens, but leave teams to assemble the surrounding platform themselves. Both approaches add complexity when AI companies need to move faster, control costs, and scale production AI efficiently. DigitalOcean’s AI-Native Cloud is purpose-built for production AI, bringing the full AI application stack together with the best of the AI ecosystem into one, developer-first platform.
+AI workloads have outgrown the last era's cloud
+The DigitalOcean AI-Native Cloud is engineered for the four shifts redefining production AI: the rise of inference over training, reasoning models as the default, autonomous agents at scale, and open-source models reaching quality parity at a fraction of the cost.
+These shifts change what infrastructure has to do. A typical agentic task can consume hundreds of model calls, hundreds of database queries, and over a million tokens. 50 to 90% of that workload runs on CPUs, not GPUs, requiring orchestration, sandboxes, state, and tool calls. Agentic systems consume approximately 4x more CPU capacity than equivalent traditional workloads, and consume 15x more tokens than human users.
+DigitalOcean's answer: a five-layer stack, from infrastructure to agents
+Five layers, one integrated platform, enabling builders to spend their time on AI, not on stitching disparate services and infrastructure together:
+Managed Agents: Open agent harness support, secure sandboxes, durable state management, and agent orchestration.
+Data and Learning: PostgreSQL with pgvector, Valkey, Knowledge Bases, and real-time data capabilities.
+Inference Engine: Serverless and dedicated endpoints, batch processing, an intelligent model router, a growing model catalog, and bring-your-own-model support, with custom vLLM forks, tuned KV-cache, speculative decoding, and GPU-aware scheduling under the hood.
+Core Cloud: Kubernetes (DOKS), CPU and GPU Droplets, VPC networking, and S3-compatible object, block, and file storage.
+Infrastructure: 20 global data centers of CPU and GPU capacity purpose built for AI, including owned NVIDIA H100, H200, and HGX™ B300 and AMD Instinct™ MI300X, MI350X, and MI355X GPUs on a 400G RoCE RDMA fabric, backed by 15 years of operating cloud at scale for more than 640,000 customers.
+Across the platform, DigitalOcean's analysis of a representative 1M-bookings/month corporate-travel agent workload prices the AI-Native Cloud at $67,727 per month, compared to $84,827 on Baseten + AWS and $110,337 on AWS AgentCore. That 20-40% savings comes with no egress fees between layers and transparent, consumption-based pricing.
+Open source throughout the stack, frontier models when you need them, bringing builders the best of the AI ecosystem
+DigitalOcean’s AI-Native Cloud supports open standards and open-source technologies at every layer, because lock-in is the single biggest tax on AI builders today: OpenCode and LangGraph for agent harnesses; PostgreSQL, MySQL, pgvector, and Qdrant for data; DeepSeek , Llama, Qwen, and NVIDIA Nemotron 3 Nano Omni alongside frontier closed models like Claude and GPT for inference; and Kubernetes, Cilium, and S3-compatible storage at the cloud primitive layer. Customers can mix open and closed models in a single application, route between them dynamically, and switch when something better ships — without rewriting their stack.
+"Open models are giving builders more choice in how they build AI applications," said Kari Briski , Vice President of Generative AI Software at NVIDIA. "AI companies need agents that can run continuously and improve over time. Our work with DigitalOcean brings NVIDIA Nemotron models to an open, full-stack platform that gives developers the infrastructure to build, deploy, and scale real-world AI applications more easily."
+Customers are improving performance and unit economics on DigitalOcean’s AI-Native Cloud
+AI teams see these platform gains translate into production outcomes. Information Security Media Group (ISMG) cut infrastructure costs over 5x by consolidating on DigitalOcean . Different workloads, different stakes, same platform. Bright Data scaled from 4,000 Droplets to 75,000 vCPUs in eight months while moving 765 petabytes of egress in a single month. And Higgsfield AI runs the multi-model creative workflows powering its consumer product on DigitalOcean's integrated stack:
+“At Higgsfield, we are building for a world where AI-generated content becomes part of everyday creative work. That requires more than access to GPUs or models; we need an AI-native platform that can support fast iteration, multi-model workflows, and production scale,” explained Alex Mashrabov, CEO & Co-founder, Higgsfield AI. “DigitalOcean's integrated cloud provides the infrastructure, inference, and simplicity we need to move quickly while staying focused on the creative experience for our users.”
+Delivering the AI-Native Cloud with notable launches
+The AI-Native Cloud arrives with 15+ new general availability and preview launches across the stack, detailed here . Highlights include:
+Inference Router: Developers define a model pool, describe tasks and priorities in natural language mapped to a model, and optimize each request for cost and latency. Powered by DigitalOcean’s purpose-built MoE (Mixture of Expert) router model, Early customers like LawVo, a legal-tech platform, runs 130+ AI agents against 500M+ tokens per week with a 42% inference cost reduction after switching with zero code changes.
+Bring Your Own Model with Dedicated & Batch Inference: Run custom or fine-tuned models across Serverless, Dedicated, or Batch Inference on the same OpenAI-compatible API. Dedicated Inference offers reserved per-GPU-hour pricing; Batch Inference cuts costs up to 50% with a 24-hour completion window.
+Expanded Models and Services: 70+ open-source and frontier models with day-zero access, discoverable through a centralized Model Catalog with clear pricing, performance, and hardware insights. New additions include NVIDIA Nemotron 3 Nano Omni (first on DigitalOcean ), DeepSeek V3.2, Llama 3.3 70B, Qwen 3.5, and MiniMax M2. New Evaluations and Guardrails services round out production safety and quality monitoring.
+Knowledge Bases: A complete RAG pipeline exposed as an MCP tool. A RAG-native SaaS customer moved from prototype to production in nine days, with answer accuracy jumping from 71% to 94%.
+Managed Weaviate: A fully managed vector database for production AI workloads, with native integration to Knowledge Bases and the Inference Engine, eliminating the operational overhead of self-hosting Weaviate at scale.
+A market measured in trillions of tokens
+By 2030, the world is projected to process more than 500 trillion inference tokens per day, up from ~50 trillion today, a 10x increase in under five years. DigitalOcean is targeting three workload patterns with the AI-Native Cloud: Cloud-Native SaaS adding AI features; AI-Native products where every interaction burns tokens; and Agent-Native systems running autonomously in long loops.
+“AI has moved from thinking to doing, and that changes what builders need from the cloud. AI-native companies are no longer building simple applications that make a single model call; they are building distributed, stateful, multi-agent systems that need infrastructure, inference, data, orchestration, and agents working together,” said Paddy Srinivasan , CEO, DigitalOcean . “DigitalOcean’s AI-Native Cloud brings those layers together on one integrated platform so teams can move faster, scale production AI, and focus on their products instead of stitching infrastructure together.”
+Build, deploy, and scale AI-native applications on the cloud built for the Inference Era. Builders can get started today with new GA and public preview products, or request access to private previews on the DigitalOcean AI-Native Cloud.
+About DigitalOcean
+DigitalOcean (NYSE: DOCN) is the AI-Native Cloud — a fully integrated platform spanning infrastructure, core cloud, inference, data, and managed agents, purpose-built for the workloads defining modern software. Serving more than 640,000 customers across 20 data centers in 5 global regions, DigitalOcean gives builders everything they need to ship production AI on one open platform with no lock-in. Learn more at digitalocean.com .
+View source version on businesswire.com :
+https://www.businesswire.com/news/home/20260428061753/en/
+Media Relations
+Meghan Grady
+[email protected]
+Investor Relations
+Radu Patrichi , CFA
+[email protected]
+Source: DigitalOcean
+
+## full_text
+
+DigitalOcean Holdings Inc
+DigitalOcean Unveils AI-Native Cloud Built for the Inference Era
+Apr 28 2026 21:30 BST
+AI workloads have outgrown the clouds built for the last era. DigitalOcean ’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitching together fragmented services.
+SAN FRANCISCO --(BUSINESS WIRE)--Apr. 28, 2026--
+DigitalOcean (NYSE: DOCN) today introduced the DigitalOcean AI-Native Cloud, the first cloud built end-to-end for the inference and agentic era. The integrated platform spans five layers: infrastructure, core cloud, inference, data, and managed agents, and is already running production workloads at Higgsfield AI, Hippocratic AI , ISMG, Bright Data, and LawVo. The platform debuts at Deploy 2026 , the company's conference for builders, and is available to customers today.
+AI-native builders are caught between imperfect options: hyperscalers built for the enterprise cloud era, with complex services and unpredictable costs, and newer GPU clouds that rent bare metal and tokens, but leave teams to assemble the surrounding platform themselves. Both approaches add complexity when AI companies need to move faster, control costs, and scale production AI efficiently. DigitalOcean’s AI-Native Cloud is purpose-built for production AI, bringing the full AI application stack together with the best of the AI ecosystem into one, developer-first platform.
+AI workloads have outgrown the last era's cloud
+The DigitalOcean AI-Native Cloud is engineered for the four shifts redefining production AI: the rise of inference over training, reasoning models as the default, autonomous agents at scale, and open-source models reaching quality parity at a fraction of the cost.
+These shifts change what infrastructure has to do. A typical agentic task can consume hundreds of model calls, hundreds of database queries, and over a million tokens. 50 to 90% of that workload runs on CPUs, not GPUs, requiring orchestration, sandboxes, state, and tool calls. Agentic systems consume approximately 4x more CPU capacity than equivalent traditional workloads, and consume 15x more tokens than human users.
+DigitalOcean's answer: a five-layer stack, from infrastructure to agents
+Five layers, one integrated platform, enabling builders to spend their time on AI, not on stitching disparate services and infrastructure together:
+Managed Agents: Open agent harness support, secure sandboxes, durable state management, and agent orchestration.
+Data and Learning: PostgreSQL with pgvector, Valkey, Knowledge Bases, and real-time data capabilities.
+Inference Engine: Serverless and dedicated endpoints, batch processing, an intelligent model router, a growing model catalog, and bring-your-own-model support, with custom vLLM forks, tuned KV-cache, speculative decoding, and GPU-aware scheduling under the hood.
+Core Cloud: Kubernetes (DOKS), CPU and GPU Droplets, VPC networking, and S3-compatible object, block, and file storage.
+Infrastructure: 20 global data centers of CPU and GPU capacity purpose built for AI, including owned NVIDIA H100, H200, and HGX™ B300 and AMD Instinct™ MI300X, MI350X, and MI355X GPUs on a 400G RoCE RDMA fabric, backed by 15 years of operating cloud at scale for more than 640,000 customers.
+Across the platform, DigitalOcean's analysis of a representative 1M-bookings/month corporate-travel agent workload prices the AI-Native Cloud at $67,727 per month, compared to $84,827 on Baseten + AWS and $110,337 on AWS AgentCore. That 20-40% savings comes with no egress fees between layers and transparent, consumption-based pricing.
+Open source throughout the stack, frontier models when you need them, bringing builders the best of the AI ecosystem
+DigitalOcean’s AI-Native Cloud supports open standards and open-source technologies at every layer, because lock-in is the single biggest tax on AI builders today: OpenCode and LangGraph for agent harnesses; PostgreSQL, MySQL, pgvector, and Qdrant for data; DeepSeek , Llama, Qwen, and NVIDIA Nemotron 3 Nano Omni alongside frontier closed models like Claude and GPT for inference; and Kubernetes, Cilium, and S3-compatible storage at the cloud primitive layer. Customers can mix open and closed models in a single application, route between them dynamically, and switch when something better ships — without rewriting their stack.
+"Open models are giving builders more choice in how they build AI applications," said Kari Briski , Vice President of Generative AI Software at NVIDIA. "AI companies need agents that can run continuously and improve over time. Our work with DigitalOcean brings NVIDIA Nemotron models to an open, full-stack platform that gives developers the infrastructure to build, deploy, and scale real-world AI applications more easily."
+Customers are improving performance and unit economics on DigitalOcean’s AI-Native Cloud
+AI teams see these platform gains translate into production outcomes. Information Security Media Group (ISMG) cut infrastructure costs over 5x by consolidating on DigitalOcean . Different workloads, different stakes, same platform. Bright Data scaled from 4,000 Droplets to 75,000 vCPUs in eight months while moving 765 petabytes of egress in a single month. And Higgsfield AI runs the multi-model creative workflows powering its consumer product on DigitalOcean's integrated stack:
+“At Higgsfield, we are building for a world where AI-generated content becomes part of everyday creative work. That requires more than access to GPUs or models; we need an AI-native platform that can support fast iteration, multi-model workflows, and production scale,” explained Alex Mashrabov, CEO & Co-founder, Higgsfield AI. “DigitalOcean's integrated cloud provides the infrastructure, inference, and simplicity we need to move quickly while staying focused on the creative experience for our users.”
+Delivering the AI-Native Cloud with notable launches
+The AI-Native Cloud arrives with 15+ new general availability and preview launches across the stack, detailed here . Highlights include:
+Inference Router: Developers define a model pool, describe tasks and priorities in natural language mapped to a model, and optimize each request for cost and latency. Powered by DigitalOcean’s purpose-built MoE (Mixture of Expert) router model, Early customers like LawVo, a legal-tech platform, runs 130+ AI agents against 500M+ tokens per week with a 42% inference cost reduction after switching with zero code changes.
+Bring Your Own Model with Dedicated & Batch Inference: Run custom or fine-tuned models across Serverless, Dedicated, or Batch Inference on the same OpenAI-compatible API. Dedicated Inference offers reserved per-GPU-hour pricing; Batch Inference cuts costs up to 50% with a 24-hour completion window.
+Expanded Models and Services: 70+ open-source and frontier models with day-zero access, discoverable through a centralized Model Catalog with clear pricing, performance, and hardware insights. New additions include NVIDIA Nemotron 3 Nano Omni (first on DigitalOcean ), DeepSeek V3.2, Llama 3.3 70B, Qwen 3.5, and MiniMax M2. New Evaluations and Guardrails services round out production safety and quality monitoring.
+Knowledge Bases: A complete RAG pipeline exposed as an MCP tool. A RAG-native SaaS customer moved from prototype to production in nine days, with answer accuracy jumping from 71% to 94%.
+Managed Weaviate: A fully managed vector database for production AI workloads, with native integration to Knowledge Bases and the Inference Engine, eliminating the operational overhead of self-hosting Weaviate at scale.
+A market measured in trillions of tokens
+By 2030, the world is projected to process more than 500 trillion inference tokens per day, up from ~50 trillion today, a 10x increase in under five years. DigitalOcean is targeting three workload patterns with the AI-Native Cloud: Cloud-Native SaaS adding AI features; AI-Native products where every interaction burns tokens; and Agent-Native systems running autonomously in long loops.
+“AI has moved from thinking to doing, and that changes what builders need from the cloud. AI-native companies are no longer building simple applications that make a single model call; they are building distributed, stateful, multi-agent systems that need infrastructure, inference, data, orchestration, and agents working together,” said Paddy Srinivasan , CEO, DigitalOcean . “DigitalOcean’s AI-Native Cloud brings those layers together on one integrated platform so teams can move faster, scale production AI, and focus on their products instead of stitching infrastructure together.”
+Build, deploy, and scale AI-native applications on the cloud built for the Inference Era. Builders can get started today with new GA and public preview products, or request access to private previews on the DigitalOcean AI-Native Cloud.
+About DigitalOcean
+DigitalOcean (NYSE: DOCN) is the AI-Native Cloud — a fully integrated platform spanning infrastructure, core cloud, inference, data, and managed agents, purpose-built for the workloads defining modern software. Serving more than 640,000 customers across 20 data centers in 5 global regions, DigitalOcean gives builders everything they need to ship production AI on one open platform with no lock-in. Learn more at digitalocean.com .
+View source version on businesswire.com :
+https://www.businesswire.com/news/home/20260428061753/en/
+Media Relations
+Meghan Grady
+[email protected]
+Investor Relations
+Radu Patrichi , CFA
+[email protected]
+Source: DigitalOcean
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":9653,"paragraph_count":39,"sentence_count":51,"boilerplate_hits":0,"symbol_ratio":0.0005,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   AI workloads have outgrown the clouds built for the last era. DigitalOcean’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitch... / query=AI infrastructure launch inference optimization enterprise deployment 2026 / intent=find_original_source / path=a_media_gdelt
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   DigitalOcean Holdings Inc DigitalOcean Unveils AI-Native Cloud Built for the Inference Era Apr 28 2026 21:30 BST AI workloads have outgrown the clouds built for the last era.
+
+3. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   DigitalOcean ’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitching together fragmented services.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   SAN FRANCISCO --(BUSINESS WIRE)--Apr.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   28, 2026-- DigitalOcean (NYSE: DOCN) today introduced the DigitalOcean AI-Native Cloud, the first cloud built end-to-end for the inference and agentic era.
+
+6. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
+   The integrated platform spans five layers: infrastructure, core cloud, inference, data, and managed agents, and is already running production workloads at Higgsfield AI, Hippocratic AI , ISMG, Bright Data, and LawVo.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, AWS, Nvidia
+- products: agents, Agents, agent, Claude, MCP, Agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 2026, 28, 21, 30 B, 50, 90%, 4x, 15x
+- quotes: Open models are giving builders more choice in how they build AI applications,
+
+## evidence_seed
+
+- company_actions: DigitalOcean Holdings Inc DigitalOcean Unveils AI-Native Cloud Built for the Inference Era Apr 28 2026 21:30 BST AI workloads have outgrown the clouds built for the last era. / DigitalOcean ’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitching together fragmented services. / SAN FRANCISCO --(BUSINESS WIRE)--Apr.
+- case_details: AI workloads have outgrown the clouds built for the last era. DigitalOcean’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitch... / query=AI infrastructure launch inference optimization enterprise deployment 2026 / intent=find_original_source / path=a_media_gdelt
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+AI workloads have outgrown the clouds built for the last era. DigitalOcean’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitch... / query=AI infrastructure launch inference optimization enterprise deployment 2026 / intent=find_original_source / path=a_media_gdelt
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

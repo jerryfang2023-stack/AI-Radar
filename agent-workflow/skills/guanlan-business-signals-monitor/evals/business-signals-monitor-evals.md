@@ -90,6 +90,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when a Chinese subject prefix plus Chinese colon does not exempt the remaining English title from translation, for example `Vendor：Introducing ...` or `Source：Applied AI Case Studies ...`.
    - Pass when public titles are source-title translations only: translate the original/source title into Chinese without adding interpretation, extra commercial framing, inferred funding purpose, or a rewritten event summary.
    - Fail when `title`, `displayTitle`, or Top10-compatible `generatedTitle` falls back to model-generated Chinese wording because the English source title has no literal translation mapping.
+   - Fail when active-date Signal Cards exist but Top10 is empty because their English source titles have no approved entries in `source-title-translations.json`; repair the translation database or upstream title-translation step, not the source-first gate.
     - Pass when public facts reject template filler such as `original source says`, `original AI event`, `specific AI business event`, `signal value is to observe`, or `need to continue verifying customer/product/business outcome`; cards cleaned down to no source-facing fact must be removed from the frontstage JSON before Top10 selection.
     - Fail when the unified Business frontstage gate blocks on generic source subjects, untranslated display titles, or navigation fragments after Raw / Pool / Card gates already passed.
 

@@ -1,0 +1,5151 @@
+---
+date: 2026-06-27
+stage: pool
+status: guanlan-daily-monitor-pool
+pool_count: 95
+aihot_daily_pool_count: 12
+pool_target: 75
+routed_pool_target: 60
+core_pool_target: 30
+core_non_large_vendor_target: 20
+historical_dedupe_enabled: true
+historical_raw_records_checked: 5469
+historical_duplicates_removed_before_fetch: 33
+historical_duplicates_removed_after_fetch: 0
+generated_at: 2026-06-27T03:15:06.492Z
+keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
+---
+
+# 2026-06-27 Pool Candidates
+
+说明：本文件是 Raw 后的候选索引，供 guanlan-daily-assets-chain 与 writers 回看 Raw 全文后继续加工。Pool 不替代 Raw，也不直接等于商业信号、前沿观点、变化候选、趋势候选或今日观察结论。
+
+## P-001｜Travelport, Cognizant and Anthropic Collaborate to Power Travel Technology for the AI Era
+
+- raw_ref: R-001
+- raw_original_id: https://www.prnewswire.com/news-releases/travelport-cognizant-and-anthropic-collaborate-to-power-travel-technology-for-the-ai-era-302782597.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-001-travelport-cognizant-and-anthropic-collaborate-to-power-travel-technol.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-001-travelport-cognizant-and-anthropic-collaborate-to-power-travel-technol.json`
+- source: keyword search / Anysearch｜https://www.prnewswire.com/news-releases/travelport-cognizant-and-anthropic-collaborate-to-power-travel-technology-for-the-ai-era-302782597.html
+- source_url: https://www.prnewswire.com/news-releases/travelport-cognizant-and-anthropic-collaborate-to-power-travel-technology-for-the-ai-era-302782597.html
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: f70178edb3320f5a
+- raw_full_text_hash: f70178edb3320f5a
+- raw_semantic_hash: cd563e6b7198a5e5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f70178edb3320f5a","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"- Travelport, Cognizant and Anthropic are building an AI travel ecosystem to modernize how travel technology is built, tested and maintained - Together they are closing the critical gap in AI-driven travel: connecting systems that can reason and plan with platforms that can actually transact ... TEA... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Cognizant Logo Travelport Travelport, Cognizant and Anthropic are building an AI travel ecosystem to modernize how travel technology is built, tested and maintained Together they are closing the critical gap in AI-driven travel: connecting systems that can reason and plan with platforms that can actually transact TEANECK, N.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":", May 27, 2026 /PRNewswire/ -- Cognizant (NASDAQ: CTSH ) is working with Travelport on a strategic AI transformation that will deploy Anthropic's Claude to modernize the way Travelport builds, tests and maintains software across its travel retailing and distribution platforms.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The collaboration aims to accelerate the delivery of AI-led innovation to airlines, hoteliers, travel management companies and online travel agencies worldwide, while embedding AI features within Travelport's platform.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Booking systems built for a previous era now strain to keep up: agency costs have grown as human agents increasingly piece together complex itineraries manually, and a gap has opened between how travelers now search using AI tools and what current platforms can interpret and fulfill.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This collaboration will address these structural challenges through intelligent infrastructure designed to close the gap between AI-driven travel intent and a confirmed booking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Cognizant Logo Travelport Travelport, Cognizant and Anthropic are building an AI travel ecosystem to modernize how travel technology is built, tested and maintained Together they are closing the critical gap in AI-driven travel: connecting systems that can reason and plan with platforms that can actually transact TEANECK, N.",", May 27, 2026 /PRNewswire/ -- Cognizant (NASDAQ: CTSH ) is working with Travelport on a strategic AI transformation that will deploy Anthropic's Claude to modernize the way Travelport builds, tests and maintains software across its travel retailing and distribution platforms.","The collaboration aims to accelerate the delivery of AI-led innovation to airlines, hoteliers, travel management companies and online travel agencies worldwide, while embedding AI features within Travelport's platform."],"case_details":["- Travelport, Cognizant and Anthropic are building an AI travel ecosystem to modernize how travel technology is built, tested and maintained - Together they are closing the critical gap in AI-driven travel: connecting systems that can reason and plan with platforms that can actually transact ... TEA... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=official_original"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-002｜AWS Marketplace: Tray AI orchestration platform for the enterprise
+
+- raw_ref: R-002
+- raw_original_id: https://aws.amazon.com/marketplace/pp/prodview-wbrytv6d4gcui
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-002-aws-marketplace-tray-ai-orchestration-platform-for-the-enterprise.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-002-aws-marketplace-tray-ai-orchestration-platform-for-the-enterprise.json`
+- source: keyword search / Anysearch｜https://aws.amazon.com/marketplace/pp/prodview-wbrytv6d4gcui
+- source_url: https://aws.amazon.com/marketplace/pp/prodview-wbrytv6d4gcui
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: procurement_marketplace
+- source_type: marketplace
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: d87423f9ab2e6381
+- raw_full_text_hash: 6ecaf56ea07edded
+- raw_semantic_hash: 432b020ba09467af
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6ecaf56ea07edded","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 资本市场信号
+- keyword_group: capital-market-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"Tray.ai is an AI orchestration platform that connects AI to the enterprise systems, data, and workflows that run your business. / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=procurement_marketplace","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Tray AI orchestration platform for the enterprise Info Sold by: Tray.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"ai Deployed on AWS Connect AI to your enterprise systems, data, and processes.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"And run it in production.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"5 (161) View purchase options Request private offer Request demo Overview Features Pricing Legal Usage Resources Support Product comparison New Reviews Overview Try agent mode Create proposal Ask question Expand MCP Connector Tools 1/4 Image MCP Connector Tools Image Tray Agent Hub Video Inside the Tray ITSM Agent Video Product video Tray.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"ai is an AI orchestration platform that connects AI to the enterprise systems, data, and workflows that run your business.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Tray.ai is an AI orchestration platform that connects AI to the enterprise systems, data, and workflows that run your business. / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=procurement_marketplace","Tray AI orchestration platform for the enterprise Info Sold by: Tray.","And run it in production."],"case_details":[],"workflow_changes":["ai Deployed on AWS Connect AI to your enterprise systems, data, and processes.","5 (161) View purchase options Request private offer Request demo Overview Features Pricing Legal Usage Resources Support Product comparison New Reviews Overview Try agent mode Create proposal Ask question Expand MCP Connector Tools 1/4 Image MCP Connector Tools Image Tray Agent Hub Video Inside the Tray ITSM Agent Video Product video Tray.","ai is an AI orchestration platform that connects AI to the enterprise systems, data, and workflows that run your business."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-003｜The Larridin Guide to ROI for Enterprise AI: How to Build the ...
+
+- raw_ref: R-003
+- raw_original_id: https://larridin.com/solutions/the-larridin-guide-to-roi-for-enterprise-ai-how-to-build-the-financial-case-for-multi-year-ai-investment
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-003-the-larridin-guide-to-roi-for-enterprise-ai-how-to-build-the.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-003-the-larridin-guide-to-roi-for-enterprise-ai-how-to-build-the.json`
+- source: keyword search / Anysearch｜https://larridin.com/solutions/the-larridin-guide-to-roi-for-enterprise-ai-how-to-build-the-financial-case-for-multi-year-ai-investment
+- source_url: https://larridin.com/solutions/the-larridin-guide-to-roi-for-enterprise-ai-how-to-build-the-financial-case-for-multi-year-ai-investment
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 3a3f1d343c09d4b2
+- raw_full_text_hash: 2aa8bc2b2c5f663d
+- raw_semantic_hash: ec2843e18f4c711d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2aa8bc2b2c5f663d","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Build your AI transformation roadmap around the 90-day Transformation Loop (Assess, Prioritize, Execute, Measure, Adapt), with each cycle ... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=capital_startup","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The board wants a number.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The CFO wants a formula.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But the companies generating billions in AI value, such as IBM, JPMorgan, and Starbucks, didn’t get there by calculating payback periods.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"They built positive, compounding curves.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Here’s how to frame the financial case for AI transformation that actually reflects how the value works.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The board wants a number.","The CFO wants a formula.","But the companies generating billions in AI value, such as IBM, JPMorgan, and Starbucks, didn’t get there by calculating payback periods."],"case_details":["Build your AI transformation roadmap around the 90-day Transformation Loop (Assess, Prioritize, Execute, Measure, Adapt), with each cycle ... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=capital_startup"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-004｜Designing a connected system for venture firm operations - LinkedIn
+
+- raw_ref: R-004
+- raw_original_id: https://www.linkedin.com/posts/dalechang_a-funny-thing-about-platform-in-venture-activity-7434270422692663297-wGrt
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-004-designing-a-connected-system-for-venture-firm-operations-linkedin.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-004-designing-a-connected-system-for-venture-firm-operations-linkedin.json`
+- source: keyword search / Anysearch｜https://www.linkedin.com/posts/dalechang_a-funny-thing-about-platform-in-venture-activity-7434270422692663297-wGrt
+- source_url: https://www.linkedin.com/posts/dalechang_a-funny-thing-about-platform-in-venture-activity-7434270422692663297-wGrt
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- extraction_method: json-ld
+- readability_score: 97
+- has_full_text: true
+- source_volatility: high
+- community_name: keyword search / Anysearch
+- capture_scope: article_text
+- evidence_level: community_signal
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool, user_feedback_pool
+- raw_content_hash: 37f4dab9998ecb19
+- raw_full_text_hash: 37f4dab9998ecb19
+- raw_semantic_hash: 6c395e94e358cde7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"37f4dab9998ecb19","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Helping founders build next gen enterprise software companies. Just AI, judgement, and the willingness to move. This is the greatest window of ... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=capital_startup","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"quote","text":"A funny thing about “platform” in venture: we talk about founders as systems thinkers, and then we design our own firms like silos.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"That VP of RevOps who helped you diligence a deal last quarter is going to become a design partner for one of your portcos.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Then hire three reps out of your portfolio two years from now.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"If you do not have shared context across those moments, you are giving up compounding value.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["That VP of RevOps who helped you diligence a deal last quarter is going to become a design partner for one of your portcos.","Then hire three reps out of your portfolio two years from now.","If you do not have shared context across those moments, you are giving up compounding value."],"case_details":["Helping founders build next gen enterprise software companies. Just AI, judgement, and the willingness to move. This is the greatest window of ... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=capital_startup"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-005｜Rogo | AI for the most ambitious firms in finance
+
+- raw_ref: R-005
+- raw_original_id: https://rogo.ai/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-005-rogo-ai-for-the-most-ambitious-firms-in-finance.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-005-rogo-ai-for-the-most-ambitious-firms-in-finance.json`
+- source: keyword search / Anysearch｜https://rogo.ai/
+- source_url: https://rogo.ai/
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: index_only_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 253a3cd76a0e8751
+- raw_full_text_hash: 253a3cd76a0e8751
+- raw_semantic_hash: 73b1731850987f1d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"253a3cd76a0e8751","missing":[]}
+- degradation_reasons: index_only_or_directory_page
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 资本市场信号
+- keyword_group: capital-market-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: index_only
+- key_excerpts: [{"type":"funding","text":"Rogo is the trusted AI partner to the world's leading financial institutions. Rogo helps finance teams make better decisions and build smarter teams. / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Rogo | AI for the most ambitious firms in finance For the most ambitious firms in finance For the most ambitious firms in finance For the most ambitious firms in finance Rogo is the trusted AI partner to the world’s leading financial institutions.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Rogo is the trusted AI partner to the world’s leading financial institutions.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Request Demo Helping finance teams build smarter organizations Helping finance teams build smarter organizations Helping finance teams build smarter organizations “We continue to look for ways to leverage best-in-class Artificial Intelligence platforms to create more efficiencies for our teammates and deliver results for our clients.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We’ve had a very successful integration with Rogo, and the relationship and strategic investment have helped boost productivity, reduce risk, and create more capacity for our bankers to focus on building relationships and driving growth.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"product_update","text":"” Tom Hackett Chief Executive Officer, Truist Securities \"Our strategic integration of Rogo transforms how we deliver value to clients.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Rogo is the trusted AI partner to the world's leading financial institutions. Rogo helps finance teams make better decisions and build smarter teams. / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original","Rogo | AI for the most ambitious firms in finance For the most ambitious firms in finance For the most ambitious firms in finance For the most ambitious firms in finance Rogo is the trusted AI partner to the world’s leading financial institutions.","Rogo is the trusted AI partner to the world’s leading financial institutions."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["We’ve had a very successful integration with Rogo, and the relationship and strategic investment have helped boost productivity, reduce risk, and create more capacity for our bankers to focus on building relationships and driving growth."]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-006｜Hire AI Forward Deployed Engineers - Pre-Vetted LATAM FDEs
+
+- raw_ref: R-006
+- raw_original_id: https://www.nextideatech.com/hire/forward-deployed-engineer
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-006-hire-ai-forward-deployed-engineers-pre-vetted-latam-fdes.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-006-hire-ai-forward-deployed-engineers-pre-vetted-latam-fdes.json`
+- source: keyword search / Anysearch｜https://www.nextideatech.com/hire/forward-deployed-engineer
+- source_url: https://www.nextideatech.com/hire/forward-deployed-engineer
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: fde_implementation
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 7efa77fc3c167755
+- raw_full_text_hash: 7efa77fc3c167755
+- raw_semantic_hash: df8c866e2bd8ee6d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7efa77fc3c167755","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: Enterprise AI / FDE implementation signal
+- keyword_group: enterprise-ai-implementation-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"An AI Forward Deployed Engineer is an applied AI engineer embedded close to a client or business unit. The job is to understand the client's actual workflow, ... / query=FDE AI implementation production rollout / intent=find_original_source / path=fde_implementation","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"FDE AI Forward Deployed Engineers / Embedded AI workflow delivery Hire AI Forward Deployed Engineers Who Can Embed, Build, and Ship Senior LATAM AI FDEs who work close to your business, translate messy workflows into production AI systems, and customize agentic workflows, RAG, LLM integrations, evals, and rollout plans.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Vetted by AI engineers, embedded in your team in under 14 days.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Get matched in 72 hours FDE vs AI engineer 5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"0 on Clutch 150+ US teams served Vetted for AI depth, communication, and client-facing judgment Trusted talent for teams at 5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"0 on Clutch 150+ US teams served across SaaS, fintech, health, and AI products 72-hour profiles matched FDE-style AI candidates from a pre-vetted LATAM bench What you are hiring for What does an AI Forward Deployed Engineer actually do in 2026 ?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Vetted by AI engineers, embedded in your team in under 14 days.","Get matched in 72 hours FDE vs AI engineer 5.","0 on Clutch 150+ US teams served Vetted for AI depth, communication, and client-facing judgment Trusted talent for teams at 5."],"case_details":[],"workflow_changes":["An AI Forward Deployed Engineer is an applied AI engineer embedded close to a client or business unit. The job is to understand the client's actual workflow, ... / query=FDE AI implementation production rollout / intent=find_original_source / path=fde_implementation","FDE AI Forward Deployed Engineers / Embedded AI workflow delivery Hire AI Forward Deployed Engineers Who Can Embed, Build, and Ship Senior LATAM AI FDEs who work close to your business, translate messy workflows into production AI systems, and customize agentic workflows, RAG, LLM integrations, evals, and rollout plans."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-007｜VoltAgent/awesome-ai-agent-papers - GitHub
+
+- raw_ref: R-007
+- raw_original_id: https://github.com/VoltAgent/awesome-ai-agent-papers
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-007-voltagent-awesome-ai-agent-papers-github.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-007-voltagent-awesome-ai-agent-papers-github.json`
+- source: keyword search / Anysearch｜https://github.com/VoltAgent/awesome-ai-agent-papers
+- source_url: https://github.com/VoltAgent/awesome-ai-agent-papers
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: developer_ecosystem
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: formal_report
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: fff46929f343e54c
+- raw_full_text_hash: fff46929f343e54c
+- raw_semantic_hash: 941ecef50f0235d0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fff46929f343e54c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"A curated collection of AI agent research papers released in 2026, covering agent engineering, memory, evaluation, workflows, and autonomous systems. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Memory & RAG (56) Paper arXiv ID Corpus2Skill: Don't Retrieve, Navigate — Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG - Compiles a corpus offline into a hierarchical tree of Agent Skills that the LLM agent navigates at query time, replacing retrieval with skill-tree traversal.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"BudgetMem: Learning Query-Aware Budget-Tier Routing for Runtime Agent Memory - Investigates routing agent memory queries to different processing tiers based on query difficulty to control the cost-accuracy trade-off at runtime.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Learning to Share: Selective Memory for Efficient Parallel Agentic Systems - Proposes a shared memory bank with a learned controller that decides what information is worth passing between parallel agent teams to reduce redundant work.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"CompactRAG: Reducing LLM Calls and Token Overhead in Multi-Hop Question Answering - Explores converting a corpus into atomic QA pairs offline to resolve multi-hop questions with just two LLM calls regardless of hop count.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Mitigating Hallucination in Financial Retrieval-Augmented Generation via Fine-Grained Knowledge Verification - Examines breaking financial RAG answers into atomic facts and verifying each against retrieved documents using reinforcement learning rewards.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Memory & RAG (56) Paper arXiv ID Corpus2Skill: Don't Retrieve, Navigate — Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG - Compiles a corpus offline into a hierarchical tree of Agent Skills that the LLM agent navigates at query time, replacing retrieval with skill-tree traversal.","Learning to Share: Selective Memory for Efficient Parallel Agentic Systems - Proposes a shared memory bank with a learned controller that decides what information is worth passing between parallel agent teams to reduce redundant work.","CompactRAG: Reducing LLM Calls and Token Overhead in Multi-Hop Question Answering - Explores converting a corpus into atomic QA pairs offline to resolve multi-hop questions with just two LLM calls regardless of hop count."],"case_details":["A curated collection of AI agent research papers released in 2026, covering agent engineering, memory, evaluation, workflows, and autonomous systems. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem"],"workflow_changes":["BudgetMem: Learning Query-Aware Budget-Tier Routing for Runtime Agent Memory - Investigates routing agent memory queries to different processing tiers based on query difficulty to control the cost-accuracy trade-off at runtime."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-008｜Forward Deployed Engineers with Quivly | Implementation, adoption ...
+
+- raw_ref: R-008
+- raw_original_id: https://www.quivly.ai/solutions/role/forward-deployed-engineers
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-008-forward-deployed-engineers-with-quivly-implementation-adoption.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-008-forward-deployed-engineers-with-quivly-implementation-adoption.json`
+- source: keyword search / Anysearch｜https://www.quivly.ai/solutions/role/forward-deployed-engineers
+- source_url: https://www.quivly.ai/solutions/role/forward-deployed-engineers
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: fde_implementation
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 14882db287c8875b
+- raw_full_text_hash: 14882db287c8875b
+- raw_semantic_hash: f1643d015633cede
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"14882db287c8875b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: Enterprise AI / FDE implementation signal
+- keyword_group: enterprise-ai-implementation-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"Solution · Forward deployed engineers. Own the implementation — and ongoing adoption. One workspace for rollouts through cutover, then a live view of product ... / query=FDE AI implementation production rollout / intent=find_original_source / path=fde_implementation","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Solution · Forward deployed engineers Own the implementation — and ongoing adoption One workspace for rollouts through cutover, then a live view of product adoption.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"An AI agent blends CRM, usage, billing, and market signals so FDEs—and CS—catch nuance early.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Book a demo 17 All Projects Group By None Filters Search projects… + Project Project Customer Owner Progress Target date Multi-Region Expansion MEDIUM IN PROGRESS ON TRACK PlanetScale SC Sarah Chan 100 % Dec 15, 2025 44d overdue Edge Caching Rollout LOW IN PROGRESS ON TRACK Fly.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"io SC Sarah Chan 67 % Feb 28, 2026 12d left Postgres Migration HIGH IN PROGRESS AT RISK Neon SC Sarah Chan 40 % Feb 20, 2026 4d left Private Networking LOW NOT STARTED ON TRACK Render SC Sarah Chan 0 % Mar 10, 2026 22d left Auth + RLS Review URGENT IN PROGRESS OFF TRACK Supabase SC Sarah Chan 20 % Feb 18, 2026 Due today Transactional Email Cutover MEDIUM COMPLETED ON TRACK Resend SC Sarah Chan 100 % Jan 30, 2026 Shipped Redis Cluster Upgrade HIGH ON HOLD AT RISK Upstash SC Sarah Chan 55 % Mar 01, 2026 13d left Prev","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Milestone templates with dependencies and automatic status rollups Customer readiness gates tied to technical checkpoints Shared timeline visible to CS and engineering — one source of truth Overview Health Revenue Usage Calls Projects TOTAL IN PROGRESS COMPLETED OVERDUE Search projects… High In progress On track Platform Onboarding — Modal 67% SC Sarah Chan 5 days overdue Implementation Platform Onboarding — Modal 23 Apr 2026 Overview Tasks (6) Updates In progress (2) QUI-29 Conduct end-user training sessions MEDIU","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Solution · Forward deployed engineers. Own the implementation — and ongoing adoption. One workspace for rollouts through cutover, then a live view of product ... / query=FDE AI implementation production rollout / intent=find_original_source / path=fde_implementation","Solution · Forward deployed engineers Own the implementation — and ongoing adoption One workspace for rollouts through cutover, then a live view of product adoption.","An AI agent blends CRM, usage, billing, and market signals so FDEs—and CS—catch nuance early."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-009｜What's new in Gemini Enterprise | Google Cloud Blog
+
+- raw_ref: R-009
+- raw_original_id: https://cloud.google.com/blog/products/ai-machine-learning/whats-new-in-gemini-enterprise
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-009-what-s-new-in-gemini-enterprise-google-cloud-blog.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-009-what-s-new-in-gemini-enterprise-google-cloud-blog.json`
+- source: keyword search / Anysearch｜https://cloud.google.com/blog/products/ai-machine-learning/whats-new-in-gemini-enterprise
+- source_url: https://cloud.google.com/blog/products/ai-machine-learning/whats-new-in-gemini-enterprise
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 8323a399c904997f
+- raw_full_text_hash: 8323a399c904997f
+- raw_semantic_hash: 671e1799b1842b13
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8323a399c904997f","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"As we have deployed Gemini Enterprise across various industries over the last few months — including the world's most complex and heavily regulated organizations — a clear shift has emerged. Enterprises don't just need AI to answer questions or complete isolated tasks. They also need autonomous agen... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI & Machine Learning Gemini Enterprise for the agentic task force: introducing long-running agents, agentic collaboration spaces, advanced governance, and more April 22, 2026 Maryam Gholami Senior Director of Product, Gemini Enterprise Try Gemini Enterprise Business Edition today The front door to AI in the workplace Try now As we have deployed Gemini Enterprise across various industries over the last few months — including the world's most complex and heavily regulated organizations — a clear shift has emerged.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Enterprises don't just need AI to answer questions or complete isolated tasks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"They also need autonomous agents that can execute complex, multi-step workflows, capable of running for hours or days.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Companies are ready to build their agentic task force, but this demands doing so within a secure and governed environment.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This includes creating and deploying agents with their own identity, registry, and gateway so they can always be traced, monitored, and managed.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["AI & Machine Learning Gemini Enterprise for the agentic task force: introducing long-running agents, agentic collaboration spaces, advanced governance, and more April 22, 2026 Maryam Gholami Senior Director of Product, Gemini Enterprise Try Gemini Enterprise Business Edition today The front door to AI in the workplace Try now As we have deployed Gemini Enterprise across various industries over the last few months — including the world's most complex and heavily regulated organizations — a clear shift has emerged.","Enterprises don't just need AI to answer questions or complete isolated tasks.","Companies are ready to build their agentic task force, but this demands doing so within a secure and governed environment."],"case_details":["As we have deployed Gemini Enterprise across various industries over the last few months — including the world's most complex and heavily regulated organizations — a clear shift has emerged. Enterprises don't just need AI to answer questions or complete isolated tasks. They also need autonomous agen... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=official_original"],"workflow_changes":["They also need autonomous agents that can execute complex, multi-step workflows, capable of running for hours or days."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-010｜AIDev: Studying AI Coding Agents on GitHub - Hugging Face
+
+- raw_ref: R-010
+- raw_original_id: https://huggingface.co/papers/2602.09185
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-010-aidev-studying-ai-coding-agents-on-github-hugging-face.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-010-aidev-studying-ai-coding-agents-on-github-hugging-face.json`
+- source: keyword search / Anysearch｜https://huggingface.co/papers/2602.09185
+- source_url: https://huggingface.co/papers/2602.09185
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: developer_ecosystem
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: formal_report
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 4e0f1cc43e031269
+- raw_full_text_hash: 4e0f1cc43e031269
+- raw_semantic_hash: d8911ba64b9fe864
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4e0f1cc43e031269","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"AI coding agents are rapidly transforming software engineering by performing tasks such as feature development, debugging, and testing. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AIDev is a dataset (<a href=\\\"https://huggingface.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"co/datasets/hao-li/AIDev\\\">https://huggingface.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"co/datasets/hao-li/AIDev</a>) capturing agent-authored pull requests (Agentic-PRs) from real-world GitHub repositories:</p>\\n<ul>\\n<li>Scale: 932,791 Agentic-PRs</li>\\n<li>Breadth: 116,211 repositories and 72,189 developers, across five AI agents (Claude Code, Cursor, Devin, GitHub Copilot, OpenAI Codex)</li>\\n<li>Depth: 33,596 curated Agentic-PRs from 2,807 popular repositories (over 100 stars), enriched with comments, reviews, commits, and related issues</li>\\n</ul>\\n\",\"updatedAt\":\"2026-02-17T03:48:44.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"quote","text":"335Z\",\"author\":{\"_id\":\"62b4f3b7464e664268bf4e85\",\"avatarUrl\":\"https://cdn-avatars.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"co/v1/production/uploads/62b4f3b7464e664268bf4e85/atFIscmB37aur0a1zuQ2o.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["AIDev is a dataset (<a href=\\\"https://huggingface.","co/datasets/hao-li/AIDev\\\">https://huggingface.","co/v1/production/uploads/62b4f3b7464e664268bf4e85/atFIscmB37aur0a1zuQ2o."],"case_details":["AI coding agents are rapidly transforming software engineering by performing tasks such as feature development, debugging, and testing. / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-011｜Anthropic Applied AI Engineer Interview Process: What the Top ...
+
+- raw_ref: R-011
+- raw_original_id: https://getperspective.ai/blog/anthropic-applied-ai-engineer-interview-process-frontier-lab-2026
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-011-anthropic-applied-ai-engineer-interview-process-what-the-top.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-011-anthropic-applied-ai-engineer-interview-process-what-the-top.json`
+- source: keyword search / Anysearch｜https://getperspective.ai/blog/anthropic-applied-ai-engineer-interview-process-frontier-lab-2026
+- source_url: https://getperspective.ai/blog/anthropic-applied-ai-engineer-interview-process-frontier-lab-2026
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: fde_implementation
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 035c83f827847b7e
+- raw_full_text_hash: 035c83f827847b7e
+- raw_semantic_hash: 84445045109038be
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"035c83f827847b7e","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: Enterprise AI / FDE implementation signal
+- keyword_group: enterprise-ai-implementation-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Anthropic's Applied AI Engineer is their version of Palantir's Forward Deployed Engineer: a hybrid of solutions engineering, ML engineering, and ... / query=applied AI engineer enterprise customer case / intent=find_customer_case / path=fde_implementation","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"funding","text":"TL;DR # Anthropic's Applied AI Engineer interview is the most-studied hiring loop in frontier AI right now, and the actual screen looks almost nothing like a standard SWE bar-raiser.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"The loop runs five stages — recruiter screen, technical phone screen, take-home or live coding, customer-conversation simulation, and onsite system design — with a hidden weight on the customer-conversation round that filters out roughly 60% of candidates who pass the coding stages.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Anthropic's Applied AI Engineer is their version of Palantir's Forward Deployed Engineer: a hybrid of solutions engineering, ML engineering, and embedded product management for enterprise Claude deployments.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"The role pays north of $300K base for senior levels per Levels.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"fyi public data, with total comp regularly crossing $500K.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["TL;DR # Anthropic's Applied AI Engineer interview is the most-studied hiring loop in frontier AI right now, and the actual screen looks almost nothing like a standard SWE bar-raiser."],"case_details":["Anthropic's Applied AI Engineer is their version of Palantir's Forward Deployed Engineer: a hybrid of solutions engineering, ML engineering, and ... / query=applied AI engineer enterprise customer case / intent=find_customer_case / path=fde_implementation","Anthropic's Applied AI Engineer is their version of Palantir's Forward Deployed Engineer: a hybrid of solutions engineering, ML engineering, and embedded product management for enterprise Claude deployments."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-012｜Developing and Deploying Generative AI - Altman Solon
+
+- raw_ref: R-012
+- raw_original_id: https://www.altmansolon.com/thought-leadership/generative-ai-deployment-strategies
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-012-developing-and-deploying-generative-ai-altman-solon.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-012-developing-and-deploying-generative-ai-altman-solon.json`
+- source: keyword search / Anysearch｜https://www.altmansolon.com/thought-leadership/generative-ai-deployment-strategies
+- source_url: https://www.altmansolon.com/thought-leadership/generative-ai-deployment-strategies
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: developer_ecosystem
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 8b129554d9cd8875
+- raw_full_text_hash: 8b129554d9cd8875
+- raw_semantic_hash: 23babe99af8c860e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8b129554d9cd8875","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"This article, the second in our series, explores what enterprise development and deployment of generative AI will look like and how companies prioritize the ... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=developer_ecosystem","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Developing and Deploying Generative AI | Altman Solon Skip to content Insights Pre-Packaged to Custom: Developing and Deploying Enterprise Generative AI Tools May 2023 Altman Solon is the largest global TMT strategy consulting firm exclusively dedicated to the Telecommunications, Media, and Technology sectors.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The series “ Putting Generative AI to Work ” examines how generative AI is impacting business.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Our team surveyed 292 senior business leaders and spoke to 21 industry experts to understand the adoption of generative AI tools for specific enterprise use cases.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"This article, the second in our series, explores what enterprise development and deployment of generative AI will look like and how companies prioritize the development of generative AI solutions in the workplace.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"One of the most groundbreaking tech advancements in recent years has been the emergence of generative AI applications.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["This article, the second in our series, explores what enterprise development and deployment of generative AI will look like and how companies prioritize the ... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=developer_ecosystem","Developing and Deploying Generative AI | Altman Solon Skip to content Insights Pre-Packaged to Custom: Developing and Deploying Enterprise Generative AI Tools May 2023 Altman Solon is the largest global TMT strategy consulting firm exclusively dedicated to the Telecommunications, Media, and Technology sectors.","The series “ Putting Generative AI to Work ” examines how generative AI is impacting business."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-013｜Enterprise Startups funded by Y Combinator (YC) 2026
+
+- raw_ref: R-013
+- raw_original_id: https://www.ycombinator.com/companies/industry/enterprise
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-013-enterprise-startups-funded-by-y-combinator-yc-2026.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-013-enterprise-startups-funded-by-y-combinator-yc-2026.json`
+- source: keyword search / Anysearch｜https://www.ycombinator.com/companies/industry/enterprise
+- source_url: https://www.ycombinator.com/companies/industry/enterprise
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: capital_startup
+- source_type: funding
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 82
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: b4c57334490c8da7
+- raw_full_text_hash: 5975df0c6162a903
+- raw_semantic_hash: 2c73c0b874aa57d4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5975df0c6162a903","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"number","text":"We help companies identify, deploy, and operate AI safely across high-impact workflows. We hit $500K ARR in just four weeks because customers deploy instantly. / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=capital_startup","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Enterprise Startups funded by Y Combinator (YC) 2026 | Y Combinator Enterprise Startups funded by Y Combinator (YC) 2026 June 2026 Browse 88 of the top Enterprise startups funded by Y Combinator.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We also have a Startup Directory where you can search through over 5,000 companies .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Shepherd S2026 • Active • 3 employees • San Francisco, CA, USA Shepherd automatically ingests every tool your team uses into one unified memory you can index, and your agents can act on.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"ai-assistant enterprise search Ontora P2026 • Active • 3 employees • San Francisco, CA, USA Ontora is an AI Agent that interviews every employee to map how work actually gets done and identify bottlenecks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Consultants spend months doing this manually; Ontora does it in hours.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Enterprise Startups funded by Y Combinator (YC) 2026 | Y Combinator Enterprise Startups funded by Y Combinator (YC) 2026 June 2026 Browse 88 of the top Enterprise startups funded by Y Combinator.","We also have a Startup Directory where you can search through over 5,000 companies .","Shepherd S2026 • Active • 3 employees • San Francisco, CA, USA Shepherd automatically ingests every tool your team uses into one unified memory you can index, and your agents can act on."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-014｜Raul Salles de Padua's Post - LinkedIn
+
+- raw_ref: R-014
+- raw_original_id: https://www.linkedin.com/posts/raulpadua_%F0%9D%97%A7%F0%9D%97%B5%F0%9D%97%B2-%F0%9D%97%94%F0%9D%97%9C-%F0%9D%97%AE%F0%9D%97%B4%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81-%F0%9D%98%80%F0%9D%98%81%F0%9D%97%BC%F0%9D%97%BF%F0%9D%98%86-%F0%9D%98%80%F0%9D%97%B5%F0%9D%97%B6%F0%9D%97%B3%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4-activity-7330562995556691968-_hrr
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-014-raul-salles-de-padua-s-post-linkedin.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-014-raul-salles-de-padua-s-post-linkedin.json`
+- source: keyword search / Anysearch｜https://www.linkedin.com/posts/raulpadua_%F0%9D%97%A7%F0%9D%97%B5%F0%9D%97%B2-%F0%9D%97%94%F0%9D%97%9C-%F0%9D%97%AE%F0%9D%97%B4%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81-%F0%9D%98%80%F0%9D%98%81%F0%9D%97%BC%F0%9D%97%BF%F0%9D%98%86-%F0%9D%98%80%F0%9D%97%B5%F0%9D%97%B6%F0%9D%97%B3%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4-activity-7330562995556691968-_hrr
+- source_url: https://www.linkedin.com/posts/raulpadua_%F0%9D%97%A7%F0%9D%97%B5%F0%9D%97%B2-%F0%9D%97%94%F0%9D%97%9C-%F0%9D%97%AE%F0%9D%97%B4%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81-%F0%9D%98%80%F0%9D%98%81%F0%9D%97%BC%F0%9D%97%BF%F0%9D%98%86-%F0%9D%98%80%F0%9D%97%B5%F0%9D%97%B6%F0%9D%97%B3%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4-activity-7330562995556691968-_hrr
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- extraction_method: json-ld
+- readability_score: 94
+- has_full_text: true
+- source_volatility: high
+- community_name: keyword search / Anysearch
+- capture_scope: article_text
+- evidence_level: community_signal
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool, user_feedback_pool
+- raw_content_hash: 553ba9e04baa9d9c
+- raw_full_text_hash: 553ba9e04baa9d9c
+- raw_semantic_hash: f8ca35e9709ecf35
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"553ba9e04baa9d9c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"The AI-agent story shifting from hype cycle to hard numbers. Record funding, fat median rounds, and a spike in board-room chatter all point ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"𝗧𝗵𝗲 𝗔𝗜-𝗮𝗴𝗲𝗻𝘁 𝘀𝘁𝗼𝗿𝘆 𝘀𝗵𝗶𝗳𝘁𝗶𝗻𝗴 𝗳𝗿𝗼𝗺 𝗵𝘆𝗽𝗲 𝗰𝘆𝗰𝗹𝗲 𝘁𝗼 𝗵𝗮𝗿𝗱 𝗻𝘂𝗺𝗯𝗲𝗿𝘀.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Record funding, fat median rounds, and a spike in board-room chatter all point to one theme: specialized agents are where the capital and the customers are converging.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This is what CB Insights’ Q1 2025 data shows.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Q1 2025 snapshot - $66.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The AI-agent story shifting from hype cycle to hard numbers. Record funding, fat median rounds, and a spike in board-room chatter all point ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original","𝗧𝗵𝗲 𝗔𝗜-𝗮𝗴𝗲𝗻𝘁 𝘀𝘁𝗼𝗿𝘆 𝘀𝗵𝗶𝗳𝘁𝗶𝗻𝗴 𝗳𝗿𝗼𝗺 𝗵𝘆𝗽𝗲 𝗰𝘆𝗰𝗹𝗲 𝘁𝗼 𝗵𝗮𝗿𝗱 𝗻𝘂𝗺𝗯𝗲𝗿𝘀.","Record funding, fat median rounds, and a spike in board-room chatter all point to one theme: specialized agents are where the capital and the customers are converging."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-015｜The Forward Deployed Engineer: Why the Most Important Seat in AI Consulting Is Next to the Operator | Sovereign Action
+
+- raw_ref: R-015
+- raw_original_id: https://www.sovereign-action.com/insights/forward-deployed-engineer
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-015-the-forward-deployed-engineer-why-the-most-important-seat-in-ai-consul.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-015-the-forward-deployed-engineer-why-the-most-important-seat-in-ai-consul.json`
+- source: keyword search / Anysearch｜https://www.sovereign-action.com/insights/forward-deployed-engineer
+- source_url: https://www.sovereign-action.com/insights/forward-deployed-engineer
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 7e2be484af2add23
+- raw_full_text_hash: 23d239cc274c086a
+- raw_semantic_hash: 29628a50545b857a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"23d239cc274c086a","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"A strategic analysis of the forward deployed engineer model — the engagement architecture pioneered at Palantir in the late 2000s and now adopted across AI-native firms (Sierra, Decagon, Cresta, Hex, Glean, OpenAI, Anthropic) — and what it means for middle-market firms commissioning their next AI en... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=industry_landing","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Back to insights Strategy Middle Market Leadership The Forward Deployed Engineer: Why the Most Important Seat in AI Consulting Is Next to the Operator By Paul M.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Washburn · Principal Consultant · Apr 30, 2026 · 14 min read Part of: Agentic Workflows → AI summary A strategic analysis of the forward deployed engineer model — the engagement architecture pioneered at Palantir in the late 2000s and now adopted across AI-native firms (Sierra, Decagon, Cresta, Hex, Glean, OpenAI, Anthropic) — and what it means for middle-market firms commissioning their next AI engagement.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Names the operating logic of the FDE model: an engineer embedded directly alongside the operating team, building the system in the same room where the work happens, compressing the spec-build-deploy loop from quarters to days.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Traces the four mechanisms that make embedded engineering structurally outperform remote engineering — information fidelity (each communication hop loses signal), trust formation (operators do not trust specs, they trust people they have watched solve problems), feedback latency (the FDE sees the next problem before it is filed as a ticket), and ownership transfer (the operator who watched the system get built can run it).","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Includes three data visualizations: a fidelity-decay bar chart across communication layers, a scatter of communication-distance vs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Back to insights Strategy Middle Market Leadership The Forward Deployed Engineer: Why the Most Important Seat in AI Consulting Is Next to the Operator By Paul M.","Names the operating logic of the FDE model: an engineer embedded directly alongside the operating team, building the system in the same room where the work happens, compressing the spec-build-deploy loop from quarters to days.","Traces the four mechanisms that make embedded engineering structurally outperform remote engineering — information fidelity (each communication hop loses signal), trust formation (operators do not trust specs, they trust people they have watched solve problems), feedback latency (the FDE sees the next problem before it is filed as a ticket), and ownership transfer (the operator who watched the system get built can run it)."],"case_details":["A strategic analysis of the forward deployed engineer model — the engagement architecture pioneered at Palantir in the late 2000s and now adopted across AI-native firms (Sierra, Decagon, Cresta, Hex, Glean, OpenAI, Anthropic) — and what it means for middle-market firms commissioning their next AI en... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=industry_landing"],"workflow_changes":["Washburn · Principal Consultant · Apr 30, 2026 · 14 min read Part of: Agentic Workflows → AI summary A strategic analysis of the forward deployed engineer model — the engagement architecture pioneered at Palantir in the late 2000s and now adopted across AI-native firms (Sierra, Decagon, Cresta, Hex, Glean, OpenAI, Anthropic) — and what it means for middle-market firms commissioning their next AI engagement."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","采购负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-016｜The Corporate AI Learning Curve Is Flatlining - Paid Program
+
+- raw_ref: R-016
+- raw_original_id: https://partners.wsj.com/parloa/ai-and-automation/the-corporate-ai-learning-curve-is-flatlining/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-016-the-corporate-ai-learning-curve-is-flatlining-paid-program.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-016-the-corporate-ai-learning-curve-is-flatlining-paid-program.json`
+- source: keyword search / Anysearch｜https://partners.wsj.com/parloa/ai-and-automation/the-corporate-ai-learning-curve-is-flatlining/
+- source_url: https://partners.wsj.com/parloa/ai-and-automation/the-corporate-ai-learning-curve-is-flatlining/
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 5a50af0a65a725a4
+- raw_full_text_hash: 5a50af0a65a725a4
+- raw_semantic_hash: 84eb2fe0ba055658
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5a50af0a65a725a4","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Companies are pushing for enterprise ... adoption, but stalling in practice. Here’s why. ... And nowhere is that promise more compelling than in customer service. AI agents can take on enormous volumes of requests, resolve issues in seconds and operate around the clock without fatigue. For executive... / query=agent governance evals production rollout enterprise AI / intent=find_market_trend / path=a_media_gdelt","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"By Malte Kosub, Co-Founder and CEO of Parloa The corporate rush into artificial intelligence has triggered a push to invest more in the technology.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The appeal is obvious: AI promises to do more with less, automating routine work while freeing employees to focus on higher-value tasks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"And nowhere is that promise more compelling than in customer service.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI agents can take on enormous volumes of requests, resolve issues in seconds and operate around the clock without fatigue.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"For executives, it offers the holy grail of efficiency—lower costs and a better customer experience—at the same time.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["By Malte Kosub, Co-Founder and CEO of Parloa The corporate rush into artificial intelligence has triggered a push to invest more in the technology.","The appeal is obvious: AI promises to do more with less, automating routine work while freeing employees to focus on higher-value tasks.","AI agents can take on enormous volumes of requests, resolve issues in seconds and operate around the clock without fatigue."],"case_details":["Companies are pushing for enterprise ... adoption, but stalling in practice. Here’s why. ... And nowhere is that promise more compelling than in customer service. AI agents can take on enormous volumes of requests, resolve issues in seconds and operate around the clock without fatigue. For executive... / query=agent governance evals production rollout enterprise AI / intent=find_market_trend / path=a_media_gdelt","And nowhere is that promise more compelling than in customer service.","For executives, it offers the holy grail of efficiency—lower costs and a better customer experience—at the same time."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有成本、收入、采用率或市场规模数字
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-017｜Lemvigh‑Müller: AI Automates Order Confirmations | SAP News
+
+- raw_ref: R-017
+- raw_original_id: https://news.sap.com/2026/06/lemvigh-muller-ai-agents-order-confirmations/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-017-lemvigh-mu-ller-ai-automates-order-confirmations-sap-news.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-017-lemvigh-mu-ller-ai-automates-order-confirmations-sap-news.json`
+- source: keyword search / Anysearch｜https://news.sap.com/2026/06/lemvigh-muller-ai-agents-order-confirmations/
+- source_url: https://news.sap.com/2026/06/lemvigh-muller-ai-agents-order-confirmations/
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 9072f41f4650743d
+- raw_full_text_hash: 9072f41f4650743d
+- raw_semantic_hash: 1793318edfd596de
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9072f41f4650743d","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"The Danish wholesaler Lemvigh‑Müller has deployed [artificial intelligence](https://news.sap.com/topics/artificial-intelligence/) to automate one of the most time‑consuming tasks in procurement: processing supplier order confirmations. The solution consists of multiple AI agents, each responsible fo... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=industry_landing","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Skip to content Features AI Agents to Take Over 100,000 Manual Order Confirmations at Lemvigh‑Müller Feature by Ellen Vig Nelausen June 26, 2026 The Danish wholesaler Lemvigh‑Müller has deployed artificial intelligence to automate one of the most time‑consuming tasks in procurement: processing supplier order confirmations.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The solution consists of multiple AI agents, each responsible for a clearly defined task, orchestrated into a single automated workflow built on SAP Business AI .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The outcomes are faster processing, improved data quality, and more accurate delivery information for customers.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"When suppliers send order confirmations as PDF files, even minor discrepancies in price, quantity, or delivery dates can trigger significant manual effort within procurement.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"For Lemvigh‑Müller, one of Denmark’s largest wholesalers within steel, plumbing, heating and electrical products, this has long been a familiar challenge, consuming substantial time and resources.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["For Lemvigh‑Müller, one of Denmark’s largest wholesalers within steel, plumbing, heating and electrical products, this has long been a familiar challenge, consuming substantial time and resources."],"case_details":["The Danish wholesaler Lemvigh‑Müller has deployed [artificial intelligence](https://news.sap.com/topics/artificial-intelligence/) to automate one of the most time‑consuming tasks in procurement: processing supplier order confirmations. The solution consists of multiple AI agents, each responsible fo... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=industry_landing","The outcomes are faster processing, improved data quality, and more accurate delivery information for customers."],"workflow_changes":["Skip to content Features AI Agents to Take Over 100,000 Manual Order Confirmations at Lemvigh‑Müller Feature by Ellen Vig Nelausen June 26, 2026 The Danish wholesaler Lemvigh‑Müller has deployed artificial intelligence to automate one of the most time‑consuming tasks in procurement: processing supplier order confirmations.","The solution consists of multiple AI agents, each responsible for a clearly defined task, orchestrated into a single automated workflow built on SAP Business AI .","When suppliers send order confirmations as PDF files, even minor discrepancies in price, quantity, or delivery dates can trigger significant manual effort within procurement."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","采购负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-018｜Scaling AI Agents Across Your Organization - MindStudio
+
+- raw_ref: R-018
+- raw_original_id: https://www.mindstudio.ai/blog/scaling-ai-agents-organization
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-018-scaling-ai-agents-across-your-organization-mindstudio.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-018-scaling-ai-agents-across-your-organization-mindstudio.json`
+- source: keyword search / Anysearch｜https://www.mindstudio.ai/blog/scaling-ai-agents-organization
+- source_url: https://www.mindstudio.ai/blog/scaling-ai-agents-organization
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: developer_ecosystem
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 18b47229e2d81e72
+- raw_full_text_hash: b6073e9df4fbd68a
+- raw_semantic_hash: 8cbbe35f01722cce
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b6073e9df4fbd68a","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"How to scale AI agents from pilot to enterprise-wide adoption. Change management and governance strategies. / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Why Most AI Agent Pilots Never Scale Your team built a promising AI agent.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It works in testing.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The demo impresses executives.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Then it sits in pilot purgatory for months.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This pattern repeats across enterprises.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["It works in testing.","The demo impresses executives.","This pattern repeats across enterprises."],"case_details":["How to scale AI agents from pilot to enterprise-wide adoption. Change management and governance strategies. / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=developer_ecosystem","Why Most AI Agent Pilots Never Scale Your team built a promising AI agent.","Then it sits in pilot purgatory for months."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-019｜How Enterprise AI Workflow Automation Delivers ROI: 4 Low-Code Case Studies - GEM Corporation
+
+- raw_ref: R-019
+- raw_original_id: https://gem-corp.tech/tech-blogs/enterprise-ai-workflow-automation/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-019-how-enterprise-ai-workflow-automation-delivers-roi-4-low-code-case-stu.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-019-how-enterprise-ai-workflow-automation-delivers-roi-4-low-code-case-stu.json`
+- source: keyword search / Anysearch｜https://gem-corp.tech/tech-blogs/enterprise-ai-workflow-automation/
+- source_url: https://gem-corp.tech/tech-blogs/enterprise-ai-workflow-automation/
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 51bf986dd889d6af
+- raw_full_text_hash: 51bf986dd889d6af
+- raw_semantic_hash: 83faf8c5c4839ab5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"51bf986dd889d6af","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"The 4 examples below show how enterprises across Australia, Europe, South Korea, and Japan are using enterprise AI workflow automation on low code platforms to reduce manual work, improve efficiency, and deliver measurable business outcomes. ... Result: The project enabled Komatsu Australia to proce... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=industry_landing","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Skip to content How Enterprise AI Workflow Automation Delivers ROI: 4 Low-Code Case Studies May 14, 2026 Share Contents Why Enterprise AI Workflow Automation Matters Success Story 1: AI-Powered Invoice Automation in Australia Success Story 2: Legal Research Automation in Europe Success Story 3: Healthcare Workflow Automation in South Korea Success Story 4: Low Code AI Transformation in Japan What Successful Enterprise AI Workflow Automation Projects Have in Common 1.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Start with repetitive workflows that have measurable friction 2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Treat governance as part of workflow design 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Use low code platforms to achieve faster business impact 4.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Measure enterprise AI by operational outcomes Final Thoughts Organisations are moving beyond isolated AI pilots toward workflow automation: AI-powered workflows that automate repetitive tasks, streamline operations, and support human decision-making at scale.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Use low code platforms to achieve faster business impact 4."],"case_details":["The 4 examples below show how enterprises across Australia, Europe, South Korea, and Japan are using enterprise AI workflow automation on low code platforms to reduce manual work, improve efficiency, and deliver measurable business outcomes. ... Result: The project enabled Komatsu Australia to proce... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=industry_landing","Measure enterprise AI by operational outcomes Final Thoughts Organisations are moving beyond isolated AI pilots toward workflow automation: AI-powered workflows that automate repetitive tasks, streamline operations, and support human decision-making at scale."],"workflow_changes":["Skip to content How Enterprise AI Workflow Automation Delivers ROI: 4 Low-Code Case Studies May 14, 2026 Share Contents Why Enterprise AI Workflow Automation Matters Success Story 1: AI-Powered Invoice Automation in Australia Success Story 2: Legal Research Automation in Europe Success Story 3: Healthcare Workflow Automation in South Korea Success Story 4: Low Code AI Transformation in Japan What Successful Enterprise AI Workflow Automation Projects Have in Common 1.","Start with repetitive workflows that have measurable friction 2.","Treat governance as part of workflow design 3."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-020｜Exclusive: Geordie AI raises $30 million Series A to be ‘air traffic control’ for your company’s AI agents – DNYUZ
+
+- raw_ref: R-020
+- raw_original_id: https://dnyuz.com/2026/05/28/exclusive-geordie-ai-raises-30-million-series-a-to-be-air-traffic-control-for-your-companys-ai-agents/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-020-exclusive-geordie-ai-raises-30-million-series-a-to-be-air-traffic-cont.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-020-exclusive-geordie-ai-raises-30-million-series-a-to-be-air-traffic-cont.json`
+- source: keyword search / Anysearch｜https://dnyuz.com/2026/05/28/exclusive-geordie-ai-raises-30-million-series-a-to-be-air-traffic-control-for-your-companys-ai-agents/
+- source_url: https://dnyuz.com/2026/05/28/exclusive-geordie-ai-raises-30-million-series-a-to-be-air-traffic-control-for-your-companys-ai-agents/
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- extraction_method: json-ld
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 3678152bc218e692
+- raw_full_text_hash: 3678152bc218e692
+- raw_semantic_hash: 2a1c646bd4443032
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3678152bc218e692","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"Geordie AI, a London-based startup which provides a security and governance platform for AI agents, has raised a $30 million Series A round led by Balderton Capital. The round, which values the company at $155 million post-money, is believed to be the largest Series A round for a cybersecurity start... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Exclusive: Geordie AI raises $30 million Series A to be ‘air traffic control’ for your company’s AI agents <p><a href=\"https://www.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"ai/\">Geordie AI</a>, a London-based startup which provides a security and governance platform for AI agents, has raised a $30 million Series A round led by Balderton Capital.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The round, which values the company at $155 million post-money, is believed to be the largest Series A round for a cybersecurity startup in Europe to date.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"</p> <p>The round also includes new investment from Crosspoint Capital and follow-on funding from existing backers General Catalyst and Ten Eleven Ventures.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The new investment brings the total Geordie has raised to date to $36.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Geordie AI, a London-based startup which provides a security and governance platform for AI agents, has raised a $30 million Series A round led by Balderton Capital. The round, which values the company at $155 million post-money, is believed to be the largest Series A round for a cybersecurity start... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=capital_startup","Exclusive: Geordie AI raises $30 million Series A to be ‘air traffic control’ for your company’s AI agents <p><a href=\"https://www.","ai/\">Geordie AI</a>, a London-based startup which provides a security and governance platform for AI agents, has raised a $30 million Series A round led by Balderton Capital."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-021｜molmohsen/awesome-ai-agent-papers · Datasets at Hugging Face
+
+- raw_ref: R-021
+- raw_original_id: https://huggingface.co/datasets/molmohsen/awesome-ai-agent-papers
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-021-molmohsen-awesome-ai-agent-papers-datasets-at-hugging-face.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-021-molmohsen-awesome-ai-agent-papers-datasets-at-hugging-face.json`
+- source: keyword search / Anysearch｜https://huggingface.co/datasets/molmohsen/awesome-ai-agent-papers
+- source_url: https://huggingface.co/datasets/molmohsen/awesome-ai-agent-papers
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: developer_ecosystem
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: search_result_or_tool_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: formal_report
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: index_only_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: discard
+- raw_content_hash: 278d6ade944af532
+- raw_full_text_hash: 95a8f682bec62130
+- raw_semantic_hash: f9ef66dac376efc4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"95a8f682bec62130","missing":[]}
+- degradation_reasons: index_only_or_directory_page
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Awesome AI Agent Papers. A curated collection of research papers published in 2026 and sourced from arXiv, covering core topics from the AI agent ecosystem ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=developer_ecosystem","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The dataset is currently empty.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Upload or create new data files .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Then, you will be able to explore them in the Dataset Viewer.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"YAML Metadata Warning: empty or missing yaml metadata in repo card Check out the documentation for more information.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Hand-picked research papers on the AI agent ecosystem, published in 2026.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Awesome AI Agent Papers. A curated collection of research papers published in 2026 and sourced from arXiv, covering core topics from the AI agent ecosystem ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=developer_ecosystem","The dataset is currently empty.","Upload or create new data files ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-022｜Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune
+
+- raw_ref: R-022
+- raw_original_id: https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-022-exclusive-seltz-a-startup-trying-to-reinvent-web-search-for-ai-agents-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-022-exclusive-seltz-a-startup-trying-to-reinvent-web-search-for-ai-agents-.json`
+- source: keyword search / Anysearch｜https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/
+- source_url: https://fortune.com/2026/06/24/exclusive-seltz-a-startup-rebuilding-web-search-for-ai-agents-raises-12-5-million-in-seed-funding/
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 2159da855c1c45fd
+- raw_full_text_hash: 2159da855c1c45fd
+- raw_semantic_hash: e1dffac8b9f15fe9
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2159da855c1c45fd","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune ... # Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12.5 million in seed funding ... June 24, 2026, 7:00 AM ET ... The founding team at Seltz, a startup trying to rei... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Trending now MacKenzie Scott alone accounted for one-third of America's $19.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"2 billion in megagifts last year Now worth $200 million, Sarah Jessica Parker credits being ‘one of eight kids that struggled financially’ for her hunger, ambition, and work ethic Ray Dalio says the U.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"just had its 'Suez moment'—and history says what comes next could end an empire MacKenzie Scott alone accounted for one-third of America's $19.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"just had its 'Suez moment'—and history says what comes next could end an empire Startups & Venture Venture Capital Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune ... # Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12.5 million in seed funding ... June 24, 2026, 7:00 AM ET ... The founding team at Seltz, a startup trying to rei... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup","just had its 'Suez moment'—and history says what comes next could end an empire Startups & Venture Venture Capital Exclusive: Seltz, a startup rebuilding web search for AI agents, raises $12."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-023｜The Week's 10 Biggest Funding Rounds: World-Model Startup ...
+
+- raw_ref: R-023
+- raw_original_id: https://news.crunchbase.com/venture/biggest-funding-rounds-cybersecurity-defense-startup-ai-odyssey-leads/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-023-the-week-s-10-biggest-funding-rounds-world-model-startup.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-023-the-week-s-10-biggest-funding-rounds-world-model-startup.json`
+- source: keyword search / Anysearch｜https://news.crunchbase.com/venture/biggest-funding-rounds-cybersecurity-defense-startup-ai-odyssey-leads/
+- source_url: https://news.crunchbase.com/venture/biggest-funding-rounds-cybersecurity-defense-startup-ai-odyssey-leads/
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: industry
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 368bedd6a000466b
+- raw_full_text_hash: 368bedd6a000466b
+- raw_semantic_hash: 877624d8b956d2f9
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"368bedd6a000466b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"The biggest raise was for AI world-model developer Odyssey, which secured a $310 million Series B. Venture investors also put money into AI ... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports Q1 2023 Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia 2022 2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia Marlize van Romburgh marlizevr Shares Email Facebook Twitter LinkedIn Want to keep track of the largest startup funding deals in 2026 with our curated list of $100 million-plus venture deals to U.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Check out The Crunchbase Megadeals Board .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"This is a weekly feature that runs down the week’s top 10 announced funding rounds in the U.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Check out last week’s biggest funding deal roundup here .","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"This week was not an exceptionally busy one for large funding deals, though we saw sizable rounds in a lively mix of sectors ranging from AI to fintech to quantum computing and cybersecurity.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The biggest raise was for AI world-model developer Odyssey, which secured a $310 million Series B. Venture investors also put money into AI ... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup","Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports Q1 2023 Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia 2022 2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia Marlize van Romburgh marlizevr Shares Email Facebook Twitter LinkedIn Want to keep track of the largest startup funding deals in 2026 with our curated list of $100 million-plus venture deals to U.","Check out The Crunchbase Megadeals Board ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-024｜Orthogonal Raises $4.3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet
+
+- raw_ref: R-024
+- raw_original_id: https://www.prnewswire.com/news-releases/orthogonal-raises-4-3m-seed-for-ai-agent-service-discovery-orchestration-and-payments-across-the-internet-302806969.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-024-orthogonal-raises-4-3m-seed-for-ai-agent-service-discovery-orchestrati.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-024-orthogonal-raises-4-3m-seed-for-ai-agent-service-discovery-orchestrati.json`
+- source: keyword search / Anysearch｜https://www.prnewswire.com/news-releases/orthogonal-raises-4-3m-seed-for-ai-agent-service-discovery-orchestration-and-payments-across-the-internet-302806969.html
+- source_url: https://www.prnewswire.com/news-releases/orthogonal-raises-4-3m-seed-for-ai-agent-service-discovery-orchestration-and-payments-across-the-internet-302806969.html
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 4b182506dbadc213
+- raw_full_text_hash: 4b182506dbadc213
+- raw_semantic_hash: 68e89f7971d81f6a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4b182506dbadc213","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"Orthogonal Raises $4.3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet Accessibility Statement Skip Navigation ... - The round is led by Pantera Capital and backed by Y Combinator, Pioneer Fund, Decasonic, Blast, Outbound, Surreal, and other strategic investors ... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The round is led by Pantera Capital and backed by Y Combinator, Pioneer Fund, Decasonic, Blast, Outbound, Surreal, and other strategic investors Orthogonal was founded by former leaders from Coinbase , Vercel, Google, and Amazon Robotics, and today supports 35+ APIs that power AI agents and automated workflows Orthogonal gives AI agents a unified way to discover and access the capabilities they need in real time, allowing them to complete complex tasks without consistent failing, hallucinating, or relying on human ","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"3 million seed round led by Pantera Capital, with participation from Y Combinator, Pioneer Fund, Decasonic, Blast, Outbound, Surreal, and other strategic investors.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Continue Reading Orthogonal Raises $4.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet AI agents are quickly becoming a new class of internet users as agentic commerce is projected to orchestrate between $3 trillion and $5 trillion in global economic activity by 2030, according to McKinsey.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"While people can search for services, compare options, and stitch together workflows online, agents remain largely limited to the tools they were originally given.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Orthogonal Raises $4.3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet Accessibility Statement Skip Navigation ... - The round is led by Pantera Capital and backed by Y Combinator, Pioneer Fund, Decasonic, Blast, Outbound, Surreal, and other strategic investors ... / query=AI agent startup raises seed Series A funding 2026 / intent=find_startups / path=capital_startup","3 million seed round led by Pantera Capital, with participation from Y Combinator, Pioneer Fund, Decasonic, Blast, Outbound, Surreal, and other strategic investors.","Continue Reading Orthogonal Raises $4."],"case_details":[],"workflow_changes":["The round is led by Pantera Capital and backed by Y Combinator, Pioneer Fund, Decasonic, Blast, Outbound, Surreal, and other strategic investors Orthogonal was founded by former leaders from Coinbase , Vercel, Google, and Amazon Robotics, and today supports 35+ APIs that power AI agents and automated workflows Orthogonal gives AI agents a unified way to discover and access the capabilities they need in real time, allowing them to complete complex tasks without consistent failing, hallucinating, or relying on human ","While people can search for services, compare options, and stitch together workflows online, agents remain largely limited to the tools they were originally given."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-025｜Microsoft Build 2026: Empowering our developers to adopt agentic ...
+
+- raw_ref: R-025
+- raw_original_id: https://www.microsoft.com/insidetrack/blog/microsoft-build-2026-empowering-our-developers-to-adopt-agentic-ai-at-microsoft/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-025-microsoft-build-2026-empowering-our-developers-to-adopt-agentic.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-025-microsoft-build-2026-empowering-our-developers-to-adopt-agentic.json`
+- source: keyword search / Anysearch｜https://www.microsoft.com/insidetrack/blog/microsoft-build-2026-empowering-our-developers-to-adopt-agentic-ai-at-microsoft/
+- source_url: https://www.microsoft.com/insidetrack/blog/microsoft-build-2026-empowering-our-developers-to-adopt-agentic-ai-at-microsoft/
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: product
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: ca01486f2f089682
+- raw_full_text_hash: ca01486f2f089682
+- raw_semantic_hash: 16279ef03ed8ecbe
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ca01486f2f089682","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"We're Customer Zero at Microsoft, which means we're the first to deploy and use the technology and services that we later sell to our customers. / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"These stories share how we’re enabling our developers to build with agentic AI here at Microsoft.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Microsoft Build 2026: Empowering our developers to adopt agentic AI at Microsoft June 2, 2026 Lukas Velush In Microsoft Digital, the company’s IT organization, our journey to agentic AI has been an evolution—one that began with early experimentation in AI-powered productivity and has grown into a coordinated effort to enable intelligent, scalable solutions across the enterprise.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"As AI capabilities advanced, we saw an opportunity to move beyond individual productivity gains and toward something more transformative: Empowering our developers to build intelligent agents that can automate workflows, streamline operations, and create new business value.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Realizing this vision required more than new tools.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We needed to rethink how we foster development, govern innovation, and operate at scale.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["These stories share how we’re enabling our developers to build with agentic AI here at Microsoft.","Microsoft Build 2026: Empowering our developers to adopt agentic AI at Microsoft June 2, 2026 Lukas Velush In Microsoft Digital, the company’s IT organization, our journey to agentic AI has been an evolution—one that began with early experimentation in AI-powered productivity and has grown into a coordinated effort to enable intelligent, scalable solutions across the enterprise.","Realizing this vision required more than new tools."],"case_details":["We're Customer Zero at Microsoft, which means we're the first to deploy and use the technology and services that we later sell to our customers. / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original"],"workflow_changes":["As AI capabilities advanced, we saw an opportunity to move beyond individual productivity gains and toward something more transformative: Empowering our developers to build intelligent agents that can automate workflows, streamline operations, and create new business value."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-026｜Agentic AI in Enterprise 2026: $9B Market Analysis - Tech Insider
+
+- raw_ref: R-026
+- raw_original_id: https://tech-insider.org/agentic-ai-enterprise-2026-market-analysis/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-026-agentic-ai-in-enterprise-2026-9b-market-analysis-tech-insider.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-026-agentic-ai-in-enterprise-2026-9b-market-analysis-tech-insider.json`
+- source: keyword search / Anysearch｜https://tech-insider.org/agentic-ai-enterprise-2026-market-analysis/
+- source_url: https://tech-insider.org/agentic-ai-enterprise-2026-market-analysis/
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: f55ab9b43fbb7f06
+- raw_full_text_hash: 9e721cf657d231b4
+- raw_semantic_hash: 599eee9271548bcd
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9e721cf657d231b4","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"Gartner's projection that 80% of customer service organizations will apply agentic AI by 2026 is supported by Cisco's forecast that AI agents ... / query=enterprise AI agent customer story deployment announced 2026 / intent=find_customer_case / path=official_original","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Marcus Chen March 18, 2026 17 min read Last updated: April 2026 – This article has been reviewed and updated with the latest information.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The enterprise technology landscape is undergoing a fundamental transformation.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Agentic AI – autonomous systems capable of planning, reasoning, and executing multi-step tasks without continuous human oversight – has moved from research labs to production environments at a pace that has caught even bullish analysts off guard.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"With the global agentic AI market surging past $9 billion in 2026 and Gartner projecting that 40% of enterprise applications will embed task-specific AI agents by year-end, the question is no longer whether autonomous agents will reshape business operations, but how quickly the transformation will unfold and who will emerge as the winners.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"This analysis examines the forces driving the agentic AI revolution, the major platform plays from Microsoft, Salesforce, Google, and Amazon, the real-world ROI data that is accelerating enterprise adoption, and the critical scaling challenges that separate successful deployments from expensive failures.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Marcus Chen March 18, 2026 17 min read Last updated: April 2026 – This article has been reviewed and updated with the latest information.","The enterprise technology landscape is undergoing a fundamental transformation.","Agentic AI – autonomous systems capable of planning, reasoning, and executing multi-step tasks without continuous human oversight – has moved from research labs to production environments at a pace that has caught even bullish analysts off guard."],"case_details":["This analysis examines the forces driving the agentic AI revolution, the major platform plays from Microsoft, Salesforce, Google, and Amazon, the real-world ROI data that is accelerating enterprise adoption, and the critical scaling challenges that separate successful deployments from expensive failures."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-027｜Probook Raises $40M from Andreessen Horowitz and Sequoia to
+
+- raw_ref: R-027
+- raw_original_id: https://www.globenewswire.com/news-release/2026/06/23/3316215/0/en/Probook-Raises-40M-from-Andreessen-Horowitz-and-Sequoia-to-Scale-the-AI-Operating-System-for-Home-Services.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-027-probook-raises-40m-from-andreessen-horowitz-and-sequoia-to.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-027-probook-raises-40m-from-andreessen-horowitz-and-sequoia-to.json`
+- source: keyword search / Anysearch｜https://www.globenewswire.com/news-release/2026/06/23/3316215/0/en/Probook-Raises-40M-from-Andreessen-Horowitz-and-Sequoia-to-Scale-the-AI-Operating-System-for-Home-Services.html
+- source_url: https://www.globenewswire.com/news-release/2026/06/23/3316215/0/en/Probook-Raises-40M-from-Andreessen-Horowitz-and-Sequoia-to-Scale-the-AI-Operating-System-for-Home-Services.html
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 16af0d3e75b94e37
+- raw_full_text_hash: 16af0d3e75b94e37
+- raw_semantic_hash: 3070455186c05204
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"16af0d3e75b94e37","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"Probook Raises $40M from Andreessen Horowitz and Sequoia to ... # Probook Raises $40M from Andreessen Horowitz and Sequoia to Scale the AI Operating System for Home Services ... June 23, 2026 10:45 ET | Source: Probook Follow Probook ... New York, NY, June 23, 2026 (GLOBE NEWSWIRE) -- Probook, the A... / query=vertical AI startup funding enterprise agents announced 2026 / intent=find_startups / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Accessibility: Skip TopNav Probook Raises $40M from Andreessen Horowitz and Sequoia to Scale the AI Operating System for Home Services America's largest home service brands run on Probook, built around dispatch.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"June 23, 2026 10:45 ET | Source: Probook Probook New York, NY, June 23, 2026 (GLOBE NEWSWIRE) -- Probook , the AI Operating System for home service businesses, today announced $40 million in funding.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The investment comprises a $34 million Series A led by Andreessen Horowitz (a16z) and a $6 million Seed round led by Sequoia Capital.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Sequoia also participated in the Series A.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Home service operators spent the last three years buying AI.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Probook Raises $40M from Andreessen Horowitz and Sequoia to ... # Probook Raises $40M from Andreessen Horowitz and Sequoia to Scale the AI Operating System for Home Services ... June 23, 2026 10:45 ET | Source: Probook Follow Probook ... New York, NY, June 23, 2026 (GLOBE NEWSWIRE) -- Probook, the A... / query=vertical AI startup funding enterprise agents announced 2026 / intent=find_startups / path=capital_startup","Accessibility: Skip TopNav Probook Raises $40M from Andreessen Horowitz and Sequoia to Scale the AI Operating System for Home Services America's largest home service brands run on Probook, built around dispatch.","June 23, 2026 10:45 ET | Source: Probook Probook New York, NY, June 23, 2026 (GLOBE NEWSWIRE) -- Probook , the AI Operating System for home service businesses, today announced $40 million in funding."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-028｜Making AI the Central Nervous System of a Manufacturer NetSuite ERP
+
+- raw_ref: R-028
+- raw_original_id: https://versich.com/netsuite/case-studies/making-ai-central-nervous-system-manufacturer/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-028-making-ai-the-central-nervous-system-of-a-manufacturer-netsuite-erp.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-028-making-ai-the-central-nervous-system-of-a-manufacturer-netsuite-erp.json`
+- source: keyword search / Anysearch｜https://versich.com/netsuite/case-studies/making-ai-central-nervous-system-manufacturer/
+- source_url: https://versich.com/netsuite/case-studies/making-ai-central-nervous-system-manufacturer/
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: d2113d26d1d7d087
+- raw_full_text_hash: d1f1207416cd57f8
+- raw_semantic_hash: fe1a5e8384b731a3
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d1f1207416cd57f8","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"How Versich embedded end-to-end artificial intelligence across a $30M+ essential oils operation, from production floor to e-commerce. ... The client had built a sophisticated multi-channel manufacturing operation, but its decision-making infrastructure had not kept pace. Data lived in silos, forecas... / query=vertical AI solution customer deployment healthcare finance manufacturing 2026 / intent=find_customer_case / path=industry_landing","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"REVIEWS What Clients Say About Us 5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"0 “API-led architecture that saved months of rework” The API-led architecture they designed in phase one saved us three months of rework when we added our third ERP system six months later.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"That's the value of doing MuleSoft properly James Williams Head of Enterprise Architecture, Financial Services Firm 5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"0 “Managed ops retainer” Managed ops retainer has been reliable for 18 months.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"They handle monitoring, error triage, and quarterly flow improvements with no drama.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["REVIEWS What Clients Say About Us 5.","That's the value of doing MuleSoft properly James Williams Head of Enterprise Architecture, Financial Services Firm 5.","They handle monitoring, error triage, and quarterly flow improvements with no drama."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-029｜Inriver Advances Agentic AI Product Information Management, with ...
+
+- raw_ref: R-029
+- raw_original_id: https://www.inriver.com/2026/03/inriver-advances-agentic-ai-product-information-management/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-029-inriver-advances-agentic-ai-product-information-management-with.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-029-inriver-advances-agentic-ai-product-information-management-with.json`
+- source: keyword search / Anysearch｜https://www.inriver.com/2026/03/inriver-advances-agentic-ai-product-information-management/
+- source_url: https://www.inriver.com/2026/03/inriver-advances-agentic-ai-product-information-management/
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: b1f3d3b07fe67832
+- raw_full_text_hash: b1f3d3b07fe67832
+- raw_semantic_hash: ec0bc10e7b9b8f36
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b1f3d3b07fe67832","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"The Spring 2026 release introduces the Enhance Agent and Expression Assistant, new capabilities within Inriver Inspire that apply governed, ... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"March 24, 2026 Press Releases Inriver Advances Agentic AI Product Information Management, with Specialized Agents and Intelligent Workflow Orchestration New AI enrichment agents, visual workflow orchestration, and expanded support for agentic commerce helps enterprise manufacturers and brands accelerate time-to-market and drive revenue at scale.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"CHICAGO, IL — March 24, 2026 — Inriver, a leading provider of product information management (PIM) software, today announced its Spring 2026 release.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"As product portfolios and channel requirements expand, the flow of product data from upstream systems through enrichment and approval to downstream markets continues to become more complex, slowing product launches and increasing the burden on teams.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The Spring 2026 release addresses this directly, introducing AI-powered content onboarding and enrichment and visual workflow orchestration to give enterprise manufacturers and brands the tools to control this growing data complexity while reducing manual work.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"These capabilities reflect Inriver’s commitment to helping enterprise businesses remain agile in an AI-defined market; where better product data means faster time-to-market, better AEO/GEO performance, greater legal and regulatory compliance, stronger channel performance, and a competitive edge in the era of agentic commerce.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["CHICAGO, IL — March 24, 2026 — Inriver, a leading provider of product information management (PIM) software, today announced its Spring 2026 release."],"case_details":[],"workflow_changes":["The Spring 2026 release introduces the Enhance Agent and Expression Assistant, new capabilities within Inriver Inspire that apply governed, ... / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original","March 24, 2026 Press Releases Inriver Advances Agentic AI Product Information Management, with Specialized Agents and Intelligent Workflow Orchestration New AI enrichment agents, visual workflow orchestration, and expanded support for agentic commerce helps enterprise manufacturers and brands accelerate time-to-market and drive revenue at scale.","As product portfolios and channel requirements expand, the flow of product data from upstream systems through enrichment and approval to downstream markets continues to become more complex, slowing product launches and increasing the burden on teams."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":["These capabilities reflect Inriver’s commitment to helping enterprise businesses remain agile in an AI-defined market; where better product data means faster time-to-market, better AEO/GEO performance, greater legal and regulatory compliance, stronger channel performance, and a competitive edge in the era of agentic commerce."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-030｜AI SDK 7 is now available - Vercel
+
+- raw_ref: R-030
+- raw_original_id: https://vercel.com/blog/ai-sdk-7
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-030-ai-sdk-7-is-now-available-vercel.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-030-ai-sdk-7-is-now-available-vercel.json`
+- source: keyword search / Anysearch｜https://vercel.com/blog/ai-sdk-7
+- source_url: https://vercel.com/blog/ai-sdk-7
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 88
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 63147f38e07f8a79
+- raw_full_text_hash: d78fd90ce79f70b4
+- raw_semantic_hash: 023c65afc0b40189
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d78fd90ce79f70b4","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"number","text":"# AI SDK 7 is now available - Vercel ... ... # AI SDK 7 ... ... AI SDK, with over 16 million weekly downloads, is the TypeScript SDK for building AI applications, features, frameworks, and agents across any model provider. It's the same layer [eve](https://vercel.com/eve), Vercel's open-source agent... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"AI SDK, with over 16 million weekly downloads, is the TypeScript SDK for building AI applications, features, frameworks, and agents across any model provider.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It's the same layer eve , Vercel's open-source agent framework, is built on.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"AI SDK 7 adds production depth for agent work across five areas: Develop agents with reasoning control, tool and runtime context, provider files and skills support, MCP Apps, and a terminal UI.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Run agents with tool approvals, durability ( WorkflowAgent ), timeouts, and sandbox support.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Integrate any agent harness, such as Codex, Claude Code, Deep Agents, OpenCode, or Pi.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["It's the same layer eve , Vercel's open-source agent framework, is built on.","Integrate any agent harness, such as Codex, Claude Code, Deep Agents, OpenCode, or Pi."],"case_details":[],"workflow_changes":["AI SDK 7 adds production depth for agent work across five areas: Develop agents with reasoning control, tool and runtime context, provider files and skills support, MCP Apps, and a terminal UI.","Run agents with tool approvals, durability ( WorkflowAgent ), timeouts, and sandbox support."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-031｜DigitalOcean Unveils AI-Native Cloud Built for the Inference Era
+
+- raw_ref: R-031
+- raw_original_id: https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202604281630BIZWIRE_USPRX____20260428_BW061753-1
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-031-digitalocean-unveils-ai-native-cloud-built-for-the-inference-era.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-031-digitalocean-unveils-ai-native-cloud-built-for-the-inference-era.json`
+- source: keyword search / Anysearch｜https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202604281630BIZWIRE_USPRX____20260428_BW061753-1
+- source_url: https://markets-data-api-proxy.ft.com/data/announce/full?dockey=600-202604281630BIZWIRE_USPRX____20260428_BW061753-1
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: a_media_gdelt
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 29767eb8f21ef394
+- raw_full_text_hash: 29767eb8f21ef394
+- raw_semantic_hash: 7b9bc845c9ba6b51
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"29767eb8f21ef394","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"AI workloads have outgrown the clouds built for the last era. DigitalOcean’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitch... / query=AI infrastructure launch inference optimization enterprise deployment 2026 / intent=find_original_source / path=a_media_gdelt","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"DigitalOcean Holdings Inc DigitalOcean Unveils AI-Native Cloud Built for the Inference Era Apr 28 2026 21:30 BST AI workloads have outgrown the clouds built for the last era.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"DigitalOcean ’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitching together fragmented services.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"SAN FRANCISCO --(BUSINESS WIRE)--Apr.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"28, 2026-- DigitalOcean (NYSE: DOCN) today introduced the DigitalOcean AI-Native Cloud, the first cloud built end-to-end for the inference and agentic era.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"The integrated platform spans five layers: infrastructure, core cloud, inference, data, and managed agents, and is already running production workloads at Higgsfield AI, Hippocratic AI , ISMG, Bright Data, and LawVo.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["DigitalOcean Holdings Inc DigitalOcean Unveils AI-Native Cloud Built for the Inference Era Apr 28 2026 21:30 BST AI workloads have outgrown the clouds built for the last era.","DigitalOcean ’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitching together fragmented services.","SAN FRANCISCO --(BUSINESS WIRE)--Apr."],"case_details":["AI workloads have outgrown the clouds built for the last era. DigitalOcean’s AI-Native Cloud brings agents, data, inference, cloud primitives, and cloud infrastructure together in one integrated stack, helping builders start fast, scale production workloads, and improve unit economics without stitch... / query=AI infrastructure launch inference optimization enterprise deployment 2026 / intent=find_original_source / path=a_media_gdelt"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-032｜Netris raises $15M Series A from a16z to help AI neoclouds go live faster
+
+- raw_ref: R-032
+- raw_original_id: https://techcrunch.com/?p=3136123
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-032-netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-fast.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-032-netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-fast.json`
+- source: TechCrunch AI｜https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/
+- source_url: https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 577ba7cc7490d477
+- raw_full_text_hash: 577ba7cc7490d477
+- raw_semantic_hash: 98b70f884d9ee296
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"577ba7cc7490d477","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 资本市场信号
+- keyword_group: capital-market-signal
+- score: 7.6
+- raw_capture_priority: 20.6
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"Netris provides software that runs on network switches, and offers a platform that helps neocloud operators reduce the time it takes to go live.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"–:–:–:– The first StrictlyVC of 2026 hits SF on April 30.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Tickets are going fast.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Founder Summit ticket savings of up to $190 end June 26.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Join 1,000+ founders and VCs for all-day bootcamp.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Close Image Credits: YASUYOSHI CHIBA/AFP / Getty Images AI Netris raises $15M Series A from a16z to help AI neoclouds go live faster Ram Iyer 7:55 AM PDT · June 25, 2026 The AI boom has encouraged everyone and their uncle to launch a data center business.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Netris provides software that runs on network switches, and offers a platform that helps neocloud operators reduce the time it takes to go live.","–:–:–:– The first StrictlyVC of 2026 hits SF on April 30.","Tickets are going fast."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-033｜OpenAI unveils GPT-5.6 amid US AI regulatory drama
+
+- raw_ref: R-033
+- raw_original_id: https://www.theverge.com/?p=957845
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-033-openai-unveils-gpt-5-6-amid-us-ai-regulatory-drama.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-033-openai-unveils-gpt-5-6-amid-us-ai-regulatory-drama.json`
+- source: The Verge AI｜https://www.theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview
+- source_url: https://www.theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- extraction_method: json-ld
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 85024c4a8b263e28
+- raw_full_text_hash: 85024c4a8b263e28
+- raw_semantic_hash: 233120500b7eecdf
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"85024c4a8b263e28","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 7.6
+- raw_capture_priority: 20.6
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"quote","text":"Less than 24 hours after news broke that OpenAI would stagger its next model release at the request of the Trump administration, that model, GPT-5.6, is here. On Friday, the company unveiled the limited preview of its new GPT 5.6 model suite: Sol, the flagship; Terra, a medium-tier model for \"high-volume work\"; and Luna, a [&#8230;]","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenAI unveils GPT-5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"6 amid US AI regulatory drama Less than 24 hours after news broke that the Trump administration requested that OpenAI stagger the release of GPT-5.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"6, OpenAI released the new model suite.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Less than 24 hours after news broke that OpenAI would stagger its next model release at the request of the Trump administration, that model, GPT-5.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"On Friday, the company unveiled the limited preview of its new GPT 5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["OpenAI unveils GPT-5.","6 amid US AI regulatory drama Less than 24 hours after news broke that the Trump administration requested that OpenAI stagger the release of GPT-5.","6, OpenAI released the new model suite."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-034｜OpenAI reveals its first AI processor: Jalapeño
+
+- raw_ref: R-035
+- raw_original_id: https://www.theverge.com/?p=955939
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-035-openai-reveals-its-first-ai-processor-jalapen-o.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-035-openai-reveals-its-first-ai-processor-jalapen-o.json`
+- source: The Verge AI｜https://www.theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno
+- source_url: https://www.theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: ab62784a97ea5e9f
+- raw_full_text_hash: ab62784a97ea5e9f
+- raw_semantic_hash: c3ffcab5ca18e11f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ab62784a97ea5e9f","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"quote","text":"OpenAI has just revealed a new \"intelligence processor\" chip for AI servers made in partnership with Broadcom. The chip, called Jalape&#241;o, is designed to power current and future large language models, according to an announcement on Wednesday. Jalape&#241;o is an ASIC (Application-Specific Integrated Circuit), meaning it's designed for a specific purpose: AI inference. With AI [&#8230;]","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"AI News OpenAI OpenAI reveals its first AI processor: Jalapeño OpenAI’s first custom chip is made for the servers processing ChatGPT requests.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"OpenAI’s first custom chip is made for the servers processing ChatGPT requests.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"by Emma Roth Jun 24, 2026, 2:36 PM UTC Image: OpenAI Part Of Chip race: Microsoft, Meta, Google, and Nvidia battle it out for AI chip supremacy see all updates Emma Roth is a news writer who covers the streaming wars, consumer tech, crypto, social media, and much more.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Previously, she was a writer and editor at MUO.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"OpenAI has just revealed a new “intelligence processor” chip for AI servers made in partnership with Broadcom.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["by Emma Roth Jun 24, 2026, 2:36 PM UTC Image: OpenAI Part Of Chip race: Microsoft, Meta, Google, and Nvidia battle it out for AI chip supremacy see all updates Emma Roth is a news writer who covers the streaming wars, consumer tech, crypto, social media, and much more.","Previously, she was a writer and editor at MUO."],"case_details":[],"workflow_changes":["AI News OpenAI OpenAI reveals its first AI processor: Jalapeño OpenAI’s first custom chip is made for the servers processing ChatGPT requests.","OpenAI’s first custom chip is made for the servers processing ChatGPT requests."],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-035｜🔬Doing Vibe Physics — Alex Lupsasca, OpenAI
+
+- raw_ref: R-036
+- raw_original_id: substack:post:196292432
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-036-doing-vibe-physics-alex-lupsasca-openai.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-036-doing-vibe-physics-alex-lupsasca-openai.json`
+- source: Latent Space｜https://www.latent.space/p/lupsasca
+- source_url: https://www.latent.space/p/lupsasca
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 58aa2e827d204552
+- raw_full_text_hash: 58aa2e827d204552
+- raw_semantic_hash: 3c45d97e6c568c16
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"58aa2e827d204552","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"quote","text":"Some people are going crazy over GPT 5.5. Some people. This is the story of the Jagged Frontier. People who use AI to write emails or even code implementation work find the lift moderate whereas people pushing the limits of the model are figuring out that the limits just moved outwards.Alex Lupsaska has been tracking this limit for a year and a half now. “When GPT5 came out, it was able to reproduce one of my best papers (that took a very long time to come up with) in 30 minutes.”But Alex also n","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast 🔬Doing Vibe Physics — Alex Lupsasca, OpenAI 27 1× 0:00 Current time: 0:00 / Total time: -1:31:50 -1:31:50 Audio playback is not supported on your browser.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"🔬Doing Vibe Physics — Alex Lupsasca, OpenAI The full story of how GPT‑5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"x derived new results in theoretical physics and quantum gravity.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"May 05, 2026 27 Share Transcript Some people are going crazy over GPT 5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This is the story of the Jagged Frontier .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["🔬Doing Vibe Physics — Alex Lupsasca, OpenAI The full story of how GPT‑5.","x derived new results in theoretical physics and quantum gravity.","May 05, 2026 27 Share Transcript Some people are going crazy over GPT 5."],"case_details":[],"workflow_changes":["Latent Space: The AI Engineer Podcast 🔬Doing Vibe Physics — Alex Lupsasca, OpenAI 27 1× 0:00 Current time: 0:00 / Total time: -1:31:50 -1:31:50 Audio playback is not supported on your browser."],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-036｜Extreme Harness Engineering for Token Billionaires: 1M LOC, 1B toks/day, 0% human code, 0% human review — Ryan Lopopolo, OpenAI Frontier &amp; Symphony
+
+- raw_ref: R-037
+- raw_original_id: substack:post:193478192
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-037-extreme-harness-engineering-for-token-billionaires-1m-loc-1b-toks-day-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-037-extreme-harness-engineering-for-token-billionaires-1m-loc-1b-toks-day-.json`
+- source: Latent Space｜https://www.latent.space/p/harness-eng
+- source_url: https://www.latent.space/p/harness-eng
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 07a3949ba6a01551
+- raw_full_text_hash: 7cacf07620af2a30
+- raw_semantic_hash: 658c823dfadd20cf
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7cacf07620af2a30","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"product_update","text":"We’re proud to release this ahead of Ryan’s keynote at AIE Europe. Hit the bell, get notified when it is live! Attendees: come prepped for Ryan’s AMA with Vibhu after.Move over, context engineering. Now it’s time for Harness engineering and the age of the token billionaires.Ryan Lopopolo of OpenAI is leading that charge, recently publishing a lengthy essay on Harness Eng that has become the talk of the town:In it, Ryan peeled back the curtains on how the recently announced OpenAI Frontier team h","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"number","text":"Latent Space: The AI Engineer Podcast Extreme Harness Engineering for Token Billionaires: 1M LOC, 1B toks/day, 0% human code, 0% human review — Ryan Lopopolo, OpenAI Frontier & Symphony 49 1× 0:00 Current time: 0:00 / Total time: -1:12:42 -1:12:42 Audio playback is not supported on your browser.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Extreme Harness Engineering for Token Billionaires: 1M LOC, 1B toks/day, 0% human code, 0% human review — Ryan Lopopolo, OpenAI Frontier & Symphony We shed light on OpenAI's first Dark Factory for the first time.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Apr 07, 2026 49 Share Transcript We’re proud to release this ahead of Ryan’s keynote at AIE Europe .","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Hit the bell, get notified when it is live!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Attendees: come prepped for Ryan’s AMA with Vibhu after .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["We’re proud to release this ahead of Ryan’s keynote at AIE Europe. Hit the bell, get notified when it is live! Attendees: come prepped for Ryan’s AMA with Vibhu after.Move over, context engineering. Now it’s time for Harness engineering and the age of the token billionaires.Ryan Lopopolo of OpenAI is leading that charge, recently publishing a lengthy essay on Harness Eng that has become the talk of the town:In it, Ryan peeled back the curtains on how the recently announced OpenAI Frontier team h","Apr 07, 2026 49 Share Transcript We’re proud to release this ahead of Ryan’s keynote at AIE Europe .","Hit the bell, get notified when it is live!"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-037｜Mistral: Voxtral TTS, Forge, Leanstral, &amp; what's next for Mistral 4 — w/ Pavan Kumar Reddy &amp; Guillaume Lample
+
+- raw_ref: R-038
+- raw_original_id: substack:post:192356063
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-038-mistral-voxtral-tts-forge-leanstral-amp-what-s-next-for-mistral-4-w-pa.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-038-mistral-voxtral-tts-forge-leanstral-amp-what-s-next-for-mistral-4-w-pa.json`
+- source: Latent Space｜https://www.latent.space/p/voxtral
+- source_url: https://www.latent.space/p/voxtral
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: f28397a9d0927767
+- raw_full_text_hash: 503c081b13632ea4
+- raw_semantic_hash: a3b98c84f645d6dc
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"503c081b13632ea4","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"Mistral has been on an absolute tear - with frequent successful model launches it is easy to forget that they raised the largest European AI round in history last year. We were long overdue for a Mistral episode, and we were very fortunate to work with Sophia and Howard to catch up with Pavan (Voxtral lead) and Guillaume (Chief Scientist, Co-founder) on the occasion of this week’s Voxtral TTS launch:Mistral can’t directly say it, but the benchmarks do imply, that this is basically an open-weight","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast Mistral: Voxtral TTS, Forge, Leanstral, & what's next for Mistral 4 — w/ Pavan Kumar Reddy & Guillaume Lample 18 1× 0:00 Current time: 0:00 / Total time: -48:47 -48:47 Audio playback is not supported on your browser.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Mistral: Voxtral TTS, Forge, Leanstral, & what's next for Mistral 4 — w/ Pavan Kumar Reddy & Guillaume Lample Mistral is one of the world's leading frontier model labs, and has just launched Voxtral TTS, their latest step in their strategy to offer open frontier intelligence for every modality.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"funding","text":"Mar 30, 2026 18 Share Transcript Mistral has been on an absolute tear - with frequent successful model launches it is easy to forget that they raised the largest European AI round in history last year.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"We were long overdue for a Mistral episode, and we were very fortunate to work with Sophia and Howard to catch up with Pavan (Voxtral lead) and Guillaume (Chief Scientist, Co-founder) on the occasion of this week’s Voxtral TTS launch : Mistral can’t directly say it, but the benchmarks do imply, that this is basically an open-weights ElevenLabs-level TTS model (Technically, it is a 4B Ministral based multilingual low-latency TTS open weights model that has a 68.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"number","text":"4% win rate vs ElevenLabs Flash v2.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Mistral has been on an absolute tear - with frequent successful model launches it is easy to forget that they raised the largest European AI round in history last year. We were long overdue for a Mistral episode, and we were very fortunate to work with Sophia and Howard to catch up with Pavan (Voxtral lead) and Guillaume (Chief Scientist, Co-founder) on the occasion of this week’s Voxtral TTS launch:Mistral can’t directly say it, but the benchmarks do imply, that this is basically an open-weight","Mistral: Voxtral TTS, Forge, Leanstral, & what's next for Mistral 4 — w/ Pavan Kumar Reddy & Guillaume Lample Mistral is one of the world's leading frontier model labs, and has just launched Voxtral TTS, their latest step in their strategy to offer open frontier intelligence for every modality.","Mar 30, 2026 18 Share Transcript Mistral has been on an absolute tear - with frequent successful model launches it is easy to forget that they raised the largest European AI round in history last year."],"case_details":[],"workflow_changes":["Latent Space: The AI Engineer Podcast Mistral: Voxtral TTS, Forge, Leanstral, & what's next for Mistral 4 — w/ Pavan Kumar Reddy & Guillaume Lample 18 1× 0:00 Current time: 0:00 / Total time: -48:47 -48:47 Audio playback is not supported on your browser."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-038｜NVIDIA's AI Engineers: Agent Inference at Planetary Scale and &quot;Speed of Light&quot; — Nader Khalil (Brev), Kyle Kranen (Dynamo)
+
+- raw_ref: R-039
+- raw_original_id: substack:post:190477229
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-039-nvidia-s-ai-engineers-agent-inference-at-planetary-scale-and-quot-spee.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-039-nvidia-s-ai-engineers-agent-inference-at-planetary-scale-and-quot-spee.json`
+- source: Latent Space｜https://www.latent.space/p/nvidia-brev-dynamo
+- source_url: https://www.latent.space/p/nvidia-brev-dynamo
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 51c3fe66eeed6368
+- raw_full_text_hash: cd4950b2cfe990b3
+- raw_semantic_hash: 52e28d94a4b65960
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cd4950b2cfe990b3","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"number","text":"Join Kyle, Nader, Vibhu, and swyx live at NVIDIA GTC next week!Now that AIE Europe tix are ~sold out, our attention turns to Miami and World’s Fair!The definitive AI Accelerator chip company has more than 10xed this AI Summer:And is now a $4.4 trillion megacorp… that is somehow still moving like a startup. We are blessed to have a unique relationship with our first ever NVIDIA guests: Kyle Kranen who gave a great inference keynote at the first World’s Fair and is one of the leading architects of","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"Latent Space: The AI Engineer Podcast NVIDIA's AI Engineers: Agent Inference at Planetary Scale and \"Speed of Light\" — Nader Khalil (Brev), Kyle Kranen (Dynamo) 19 1× 0:00 Current time: 0:00 / Total time: -1:23:37 -1:23:37 Audio playback is not supported on your browser.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"quote","text":"NVIDIA's AI Engineers: Agent Inference at Planetary Scale and \"Speed of Light\" — Nader Khalil (Brev), Kyle Kranen (Dynamo) NVIDIA welcomes AI Engineers with a special pre GTC episode!","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Mar 10, 2026 19 Share Transcript Join Kyle, Nader, Vibhu, and swyx live at NVIDIA GTC next week !","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Now that AIE Europe tix are ~sold out, our attention turns to Miami and World’s Fair !","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"The definitive AI Accelerator chip company has more than 10xed this AI Summer: And is now a $4.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Mar 10, 2026 19 Share Transcript Join Kyle, Nader, Vibhu, and swyx live at NVIDIA GTC next week !","Now that AIE Europe tix are ~sold out, our attention turns to Miami and World’s Fair !"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-039｜Owning the AI Pareto Frontier — Jeff Dean
+
+- raw_ref: R-040
+- raw_original_id: substack:post:187741497
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-040-owning-the-ai-pareto-frontier-jeff-dean.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-040-owning-the-ai-pareto-frontier-jeff-dean.json`
+- source: Latent Space｜https://www.latent.space/p/jeffdean
+- source_url: https://www.latent.space/p/jeffdean
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: cc8034723a34d438
+- raw_full_text_hash: b1d852bd708dfa27
+- raw_semantic_hash: a639c3079f7d0716
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b1d852bd708dfa27","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint
+- key_excerpts: [{"type":"company_action","text":"From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research, Jeff Dean has quietly shaped nearly every layer of the modern AI stack. As Chief AI Scientist at Google and a driving force behind Gemini, Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code.Jeff joins us to unpack what it really means to “own the Pareto fro","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast Owning the AI Pareto Frontier — Jeff Dean 38 1× 0:00 Current time: 0:00 / Total time: -1:23:30 -1:23:30 Audio playback is not supported on your browser.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Owning the AI Pareto Frontier — Jeff Dean Feb 12, 2026 38 Share Transcript From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research , Jeff Dean has quietly shaped nearly every layer of the modern AI stack.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As Chief AI Scientist at Google and a driving force behind Gemini , Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"Jeff joins us to unpack what it really means to “own the Pareto frontier,” why distillation is the engine behind every Flash model breakthrough , how energy (in picojoules) not FLOPs is becoming the true bottleneck, what it was like leading the charge to unify all of Google’s AI teams, and why the next leap won’t come from bigger context windows alone, but from systems that give the illusion of attending to trillions of tokens.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"quote","text":"We discuss: Jeff’s early neural net thesis in 1990 : parallel training before it was cool, why he believed scaling would win decades early, and the “bigger model, more data, better results” mantra that held for 15 years The evolution of Google Search: sharding, moving the entire index into memory in 2001, softening query semantics pre-LLMs, and why retrieval pipelines already resemble modern LLM systems Pareto frontier strategy: why you need both frontier “Pro” models and low-latency “Flash” models, and how distill","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research, Jeff Dean has quietly shaped nearly every layer of the modern AI stack. As Chief AI Scientist at Google and a driving force behind Gemini, Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code.Jeff joins us to unpack what it really means to “own the Pareto fro","Owning the AI Pareto Frontier — Jeff Dean Feb 12, 2026 38 Share Transcript From rewriting Google’s search stack in the early 2000s to reviving sparse trillion-parameter models and co-designing TPUs with frontier ML research , Jeff Dean has quietly shaped nearly every layer of the modern AI stack.","As Chief AI Scientist at Google and a driving force behind Gemini , Jeff has lived through multiple scaling revolutions from CPUs and sharded indices to multimodal models that reason across text, video, and code."],"case_details":[],"workflow_changes":["Latent Space: The AI Engineer Podcast Owning the AI Pareto Frontier — Jeff Dean 38 1× 0:00 Current time: 0:00 / Total time: -1:23:30 -1:23:30 Audio playback is not supported on your browser."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-040｜The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI
+
+- raw_ref: R-041
+- raw_original_id: substack:post:187000315
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-041-the-first-mechanistic-interpretability-frontier-lab-myra-deng-amp-mark.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-041-the-first-mechanistic-interpretability-frontier-lab-myra-deng-amp-mark.json`
+- source: Latent Space｜https://www.latent.space/p/goodfire
+- source_url: https://www.latent.space/p/goodfire
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 93
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 6d564e11e8fa912d
+- raw_full_text_hash: 6d564e11e8fa912d
+- raw_semantic_hash: e71d3e7a22c707d5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6d564e11e8fa912d","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"From Palantir and Two Sigma to building Goodfire into the poster-child for actionable mechanistic interpretability, Mark Bissell (Member of Technical Staff) and Myra Deng (Head of Product) are trying to turn “peeking inside the model” into a repeatable production workflow by shipping APIs, landing real enterprise deployments, and now scaling the bet with a recent $150M Series B funding round at a $1.25B valuation.In this episode, we go far beyond the usual “SAEs are cool” take. We talk about Goo","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"From Palantir and Two Sigma to building Goodfire into the poster-child for actionable mechanistic interpretability, Mark Bissell (Member of Technical Staff) and Myra Deng (Head of Product) are trying to turn “peeking inside the model” into a repeatable production workflow by shipping APIs, landing real enterprise deployments, and now scaling the bet with a recent $150M Series B funding round at a $1.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"In this episode, we go far beyond the usual “SAEs are cool” take.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"quote","text":"We talk about Goodfire’s core bet : that the AI lifecycle is still fundamentally broken because the only reliable control we have is data and we post-train, RLHF, and fine-tune by “slurping supervision through a straw,” hoping the model picks up the right behaviors while quietly absorbing the wrong ones.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Goodfire’s answer is to build a bi-directional interface between humans and models: read what’s happening inside , edit it surgically , and eventually use interpretability during training so customization isn’t just brute-force guesswork.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Mark and Myra walk through what that looks like when you stop treating interpretability like a lab demo and start treating it like infrastructure: lightweight probes that add near-zero latency, token-level safety filters that can run at inference time, and interpretability workflows that survive messy constraints (multilingual inputs, synthetic→real transfer, regulated domains, no access to sensitive data).","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["From Palantir and Two Sigma to building Goodfire into the poster-child for actionable mechanistic interpretability, Mark Bissell (Member of Technical Staff) and Myra Deng (Head of Product) are trying to turn “peeking inside the model” into a repeatable production workflow by shipping APIs, landing real enterprise deployments, and now scaling the bet with a recent $150M Series B funding round at a $1.25B valuation.In this episode, we go far beyond the usual “SAEs are cool” take. We talk about Goo","From Palantir and Two Sigma to building Goodfire into the poster-child for actionable mechanistic interpretability, Mark Bissell (Member of Technical Staff) and Myra Deng (Head of Product) are trying to turn “peeking inside the model” into a repeatable production workflow by shipping APIs, landing real enterprise deployments, and now scaling the bet with a recent $150M Series B funding round at a $1.","Goodfire’s answer is to build a bi-directional interface between humans and models: read what’s happening inside , edit it surgically , and eventually use interpretability during training so customization isn’t just brute-force guesswork."],"case_details":[],"workflow_changes":["Mark and Myra walk through what that looks like when you stop treating interpretability like a lab demo and start treating it like infrastructure: lightweight probes that add near-zero latency, token-level safety filters that can run at inference time, and interpretability workflows that survive messy constraints (multilingual inputs, synthetic→real transfer, regulated domains, no access to sensitive data)."],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-041｜Brex’s AI Hail Mary — With CTO James Reggio
+
+- raw_ref: R-042
+- raw_original_id: substack:post:186610586
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-042-brex-s-ai-hail-mary-with-cto-james-reggio.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-042-brex-s-ai-hail-mary-with-cto-james-reggio.json`
+- source: Latent Space｜https://www.latent.space/p/brexs-ai-hail-mary-with-cto-james
+- source_url: https://www.latent.space/p/brexs-ai-hail-mary-with-cto-james
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 75a1dd4a6004191c
+- raw_full_text_hash: 75a1dd4a6004191c
+- raw_semantic_hash: fef27919f3a67e12
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"75a1dd4a6004191c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"From building internal AI labs to becoming CTO of Brex, James Reggio has helped lead one of the most disciplined AI transformations inside a real financial institution where compliance, auditability, and customer trust actually matter.We sat down with Reggio to unpack Brex’s three-pillar AI strategy (corporate, operational, and product AI) [https://www.brex.com/journal/brex-ai-native-operations], how SOP-driven agents beat overengineered RL in ops, why Brex lets employees “build their own AI sta","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast Brex’s AI Hail Mary — With CTO James Reggio 1× 0:00 Current time: 0:00 / Total time: -1:13:26 -1:13:26 Audio playback is not supported on your browser.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Brex’s AI Hail Mary — With CTO James Reggio Jan 17, 2026 Share Transcript From building internal AI labs to becoming CTO of Brex, James Reggio has helped lead one of the most disciplined AI transformations inside a real financial institution where compliance, auditability, and customer trust actually matter.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We sat down with Reggio to unpack Brex’s three-pillar AI strategy (corporate, operational, and product AI) [ https://www.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"com/journal/brex-ai-native-operations ], how SOP-driven agents beat overengineered RL in ops, why Brex lets employees “build their own AI stack” instead of picking winners [ https://www.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"com/customers/brex/ ], and how a small, founder-heavy AI team is shipping production agents to 40,000+ companies .","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["We sat down with Reggio to unpack Brex’s three-pillar AI strategy (corporate, operational, and product AI) [ https://www."],"case_details":["com/customers/brex/ ], and how a small, founder-heavy AI team is shipping production agents to 40,000+ companies ."],"workflow_changes":["Latent Space: The AI Engineer Podcast Brex’s AI Hail Mary — With CTO James Reggio 1× 0:00 Current time: 0:00 / Total time: -1:13:26 -1:13:26 Audio playback is not supported on your browser."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["From building internal AI labs to becoming CTO of Brex, James Reggio has helped lead one of the most disciplined AI transformations inside a real financial institution where compliance, auditability, and customer trust actually matter.We sat down with Reggio to unpack Brex’s three-pillar AI strategy (corporate, operational, and product AI) [https://www.brex.com/journal/brex-ai-native-operations], how SOP-driven agents beat overengineered RL in ops, why Brex lets employees “build their own AI sta","Brex’s AI Hail Mary — With CTO James Reggio Jan 17, 2026 Share Transcript From building internal AI labs to becoming CTO of Brex, James Reggio has helped lead one of the most disciplined AI transformations inside a real financial institution where compliance, auditability, and customer trust actually matter."]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-042｜Steve Yegge's Vibe Coding Manifesto: Why Claude Code Isn't It &amp; What Comes After the IDE
+
+- raw_ref: R-043
+- raw_original_id: substack:post:186610547
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-043-steve-yegge-s-vibe-coding-manifesto-why-claude-code-isn-t-it-amp-what-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-043-steve-yegge-s-vibe-coding-manifesto-why-claude-code-isn-t-it-amp-what-.json`
+- source: Latent Space｜https://www.latent.space/p/steve-yegges-vibe-coding-manifesto
+- source_url: https://www.latent.space/p/steve-yegges-vibe-coding-manifesto
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 9a356f6e76004fd0
+- raw_full_text_hash: 9a356f6e76004fd0
+- raw_semantic_hash: bfe0c3b5c26bf172
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9a356f6e76004fd0","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"quote","text":"Note: Steve and Gene’s talk on Vibe Coding and the post IDE world was one of the top talks of AIE CODE: From building legendary platforms at Google and Amazon to authoring one of the most influential essays on AI-powered development (Revenge of the Junior Developer, quoted by Dario Amodei himself), Steve Yegge has spent decades at the frontier of software engineering—and now he’s leading the charge into what he calls the “factory farming” era of code. After stints at SourceGraph and building Bea","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast Steve Yegge's Vibe Coding Manifesto: Why Claude Code Isn't It & What Comes After the IDE 1× 0:00 Current time: 0:00 / Total time: -37:24 -37:24 Audio playback is not supported on your browser.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"opinion","text":"Steve Yegge's Vibe Coding Manifesto: Why Claude Code Isn't It & What Comes After the IDE Dec 26, 2025 Share Transcript Note: Steve and Gene’s talk on Vibe Coding and the post IDE world was one of the top talks of AIE CODE: From building legendary platforms at Google and Amazon to authoring one of the most influential essays on AI-powered development ( Revenge of the Junior Developer , quoted by Dario Amodei himself), Steve Yegge has spent decades at the frontier of software engineering—and now he’s leading the char","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"After stints at SourceGraph and building Beads (a purely vibe-coded issue tracker with tens of thousands of users), Steve co-authored The Vibe Coding Book and is now building VC (VibeCoder) , an agent orchestration dashboard designed to move developers from writing code to managing fleets of AI agents that coordinate, parallelize, and ship features while you sleep.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"We sat down with Steve at AI Engineer Summit to dig into why Claude Code, Cursor, and the entire 2024 stack are already obsolete , what it actually takes to trust an agent after 2,000 hours of practice (hint: they will delete your production database if you anthropomorphize them), why the real skill is no longer writing code but orchestrating agents like a NASCAR pit crew, how merging has become the new wall that every 10x-productive team is hitting (and why one company’s solution is literally “one engineer per rep","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We discuss: Why Claude Code, Cursor, and agentic coding tools are already last year’s tech —and what comes next: agent orchestration dashboards where you manage fleets, not write lines The 2,000-hour rule : why it takes a full year of daily use before you can predict what an LLM will do, and why trust = predictability, not capability Steve’s hot take : if you’re still using an IDE to develop code by January 1st, 2025, you’re a bad engineer—because the abstraction layer has moved from models to full-stack agents The","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["After stints at SourceGraph and building Beads (a purely vibe-coded issue tracker with tens of thousands of users), Steve co-authored The Vibe Coding Book and is now building VC (VibeCoder) , an agent orchestration dashboard designed to move developers from writing code to managing fleets of AI agents that coordinate, parallelize, and ship features while you sleep.","We discuss: Why Claude Code, Cursor, and agentic coding tools are already last year’s tech —and what comes next: agent orchestration dashboards where you manage fleets, not write lines The 2,000-hour rule : why it takes a full year of daily use before you can predict what an LLM will do, and why trust = predictability, not capability Steve’s hot take : if you’re still using an IDE to develop code by January 1st, 2025, you’re a bad engineer—because the abstraction layer has moved from models to full-stack agents The"],"case_details":[],"workflow_changes":["Latent Space: The AI Engineer Podcast Steve Yegge's Vibe Coding Manifesto: Why Claude Code Isn't It & What Comes After the IDE 1× 0:00 Current time: 0:00 / Total time: -37:24 -37:24 Audio playback is not supported on your browser."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-043｜World Models &amp; General Intuition: Khosla's largest bet since LLMs &amp; OpenAI
+
+- raw_ref: R-044
+- raw_original_id: substack:post:186610516
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-044-world-models-amp-general-intuition-khosla-s-largest-bet-since-llms-amp.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-044-world-models-amp-general-intuition-khosla-s-largest-bet-since-llms-amp.json`
+- source: Latent Space｜https://www.latent.space/p/world-models-and-general-intuition
+- source_url: https://www.latent.space/p/world-models-and-general-intuition
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: research_or_report
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: supporting_evidence
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: e3d7d761b7e45088
+- raw_full_text_hash: e3d7d761b7e45088
+- raw_semantic_hash: 8ffef3ec2026e106
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e3d7d761b7e45088","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: index_only
+- key_excerpts: [{"type":"funding","text":"From building Medal into a 12M-user game clipping platform with 3.8B highlight moments to turning down a reported $500M offer from OpenAI (https://www.theinformation.com/articles/openai-offered-pay-500-million-startup-videogame-data) and raising a $134M seed from Khosla (https://techcrunch.com/2025/10/16/general-intuition-lands-134m-seed-to-teach-agents-spatial-reasoning-using-video-game-clips/) to spin out General Intuition, Pim is betting that world models trained on peak human gameplay are th","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast World Models & General Intuition: Khosla's largest bet since LLMs & OpenAI 1× 0:00 Current time: 0:00 / Total time: -1:04:16 -1:04:16 Audio playback is not supported on your browser.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"World Models & General Intuition: Khosla's largest bet since LLMs & OpenAI Dec 06, 2025 Share Transcript From building Medal into a 12M-user game clipping platform with 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"8B highlight moments to turning down a reported $500M offer from OpenAI ( https://www.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"com/articles/openai-offered-pay-500-million-startup-videogame-data ) and raising a $134M seed from Khosla ( https://techcrunch.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"com/2025/10/16/general-intuition-lands-134m-seed-to-teach-agents-spatial-reasoning-using-video-game-clips/ ) to spin out General Intuition , Pim is betting that world models trained on peak human gameplay are the next frontier after LLMs.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["From building Medal into a 12M-user game clipping platform with 3.8B highlight moments to turning down a reported $500M offer from OpenAI (https://www.theinformation.com/articles/openai-offered-pay-500-million-startup-videogame-data) and raising a $134M seed from Khosla (https://techcrunch.com/2025/10/16/general-intuition-lands-134m-seed-to-teach-agents-spatial-reasoning-using-video-game-clips/) to spin out General Intuition, Pim is betting that world models trained on peak human gameplay are th","World Models & General Intuition: Khosla's largest bet since LLMs & OpenAI Dec 06, 2025 Share Transcript From building Medal into a 12M-user game clipping platform with 3.","com/articles/openai-offered-pay-500-million-startup-videogame-data ) and raising a $134M seed from Khosla ( https://techcrunch."],"case_details":[],"workflow_changes":["Latent Space: The AI Engineer Podcast World Models & General Intuition: Khosla's largest bet since LLMs & OpenAI 1× 0:00 Current time: 0:00 / Total time: -1:04:16 -1:04:16 Audio playback is not supported on your browser."],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-044｜Anthropic, Glean &amp; OpenRouter: How AI Moats Are Built with Deedy Das of Menlo Ventures
+
+- raw_ref: R-045
+- raw_original_id: substack:post:186609751
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-045-anthropic-glean-amp-openrouter-how-ai-moats-are-built-with-deedy-das-o.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-045-anthropic-glean-amp-openrouter-how-ai-moats-are-built-with-deedy-das-o.json`
+- source: Latent Space｜https://www.latent.space/p/anthropic-glean-and-openrouter-how
+- source_url: https://www.latent.space/p/anthropic-glean-and-openrouter-how
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: dd915d8c9eba9199
+- raw_full_text_hash: dd915d8c9eba9199
+- raw_semantic_hash: 4c1bccddc12060bc
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dd915d8c9eba9199","missing":[]}
+- degradation_reasons: none
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"number","text":"Deedy Das, Partner at Menlo Ventures, returns to Latent Space to discuss his journey from Glean to venture capital, the explosive rise of Anthropic, and how AI is reshaping enterprise software and coding. From investing in Anthropic early on when they had no revenue to managing the $100M Ontology Fund, Das shares insider perspectives on the fastest-growing software company in history and what’s next for AI infrastructure, research investing, and the future of engineering.We cover Glean’s rise fr","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast Anthropic, Glean & OpenRouter: How AI Moats Are Built with Deedy Das of Menlo Ventures 1× 0:00 Current time: 0:00 / Total time: -1:25:27 -1:25:27 Audio playback is not supported on your browser.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Anthropic, Glean & OpenRouter: How AI Moats Are Built with Deedy Das of Menlo Ventures Nov 14, 2025 Share Transcript Deedy Das , Partner at Menlo Ventures , returns to Latent Space to discuss his journey from Glean to venture capital, the explosive rise of Anthropic, and how AI is reshaping enterprise software and coding.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"From investing in Anthropic early on when they had no revenue to managing the $100M Ontology Fund, Das shares insider perspectives on the fastest-growing software company in history and what’s next for AI infrastructure, research investing, and the future of engineering.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"We cover Glean’s rise from “boring” enterprise search to a $7B AI-native company, Anthropic’s meteoric rise, the strategic decisions behind products like Claude Code, and why market share in enterprise AI is shifting dramatically.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Das explains his investment thesis on research companies like Goodfire, Prime Intellect, and OpenRouter and how the Anthology Fund is quietly seeding the next wave of AI infra, research, and devtools.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Anthropic, Glean & OpenRouter: How AI Moats Are Built with Deedy Das of Menlo Ventures Nov 14, 2025 Share Transcript Deedy Das , Partner at Menlo Ventures , returns to Latent Space to discuss his journey from Glean to venture capital, the explosive rise of Anthropic, and how AI is reshaping enterprise software and coding.","Das explains his investment thesis on research companies like Goodfire, Prime Intellect, and OpenRouter and how the Anthology Fund is quietly seeding the next wave of AI infra, research, and devtools."],"case_details":[],"workflow_changes":["Latent Space: The AI Engineer Podcast Anthropic, Glean & OpenRouter: How AI Moats Are Built with Deedy Das of Menlo Ventures 1× 0:00 Current time: 0:00 / Total time: -1:25:27 -1:25:27 Audio playback is not supported on your browser."],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-045｜OpenAI's Dan Roberts: Why AI Can Now Make Discoveries
+
+- raw_ref: R-046
+- raw_original_id: 19ae4fac-acd5-40bf-b6a7-168292c2c275
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-046-openai-s-dan-roberts-why-ai-can-now-make-discoveries.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-046-openai-s-dan-roberts-why-ai-can-now-make-discoveries.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/OpenAIs-Dan-Roberts-Why-AI-Can-Now-Make-Discoveries-e3ka0se
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/OpenAIs-Dan-Roberts-Why-AI-Can-Now-Make-Discoveries-e3ka0se
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 51dcc2538c9b5fde
+- raw_full_text_hash: ed806c3fcb9a4842
+- raw_semantic_hash: 9e2b03729caadb0a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ed806c3fcb9a4842","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"Are we witnessing the first real signs of AI becoming a scientist? In this episode of The MAD Podcast, Matt Turck sits down with Dan Roberts, lead of the Foundations of Reinforcement Learning team at OpenAI, to explore one of the biggest shifts happening in AI: the rise of reasoning models, test-time compute, and reinforcement learning as engines of scientific discovery. Dan brings a rare perspective - from theoretical physics, black holes, quantum information, and deep learning theory - to expl","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify OpenAI's Dan Roberts: Why AI Can Now Make Discoveries The MAD Podcast with Matt Turck Jun 04, 2026 Share 00:00 49:06 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Are we witnessing the first real signs of AI becoming a scientist? In this episode of The MAD Podcast, Matt Turck sits down with Dan Roberts, lead of the Foundations of Reinforcement Learning team at OpenAI, to explore one of the biggest shifts happening in AI: the rise of reasoning models, test-time compute, and reinforcement learning as engines of scientific discovery. Dan brings a rare perspective - from theoretical physics, black holes, quantum information, and deep learning theory - to expl","The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify OpenAI's Dan Roberts: Why AI Can Now Make Discoveries The MAD Podcast with Matt Turck Jun 04, 2026 Share 00:00 49:06 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-046｜OpenAI's Yann Dubois: Why AI Progress Suddenly Feels Real
+
+- raw_ref: R-047
+- raw_original_id: 71041c81-5a6b-4a16-af9d-685d6cda8566
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-047-openai-s-yann-dubois-why-ai-progress-suddenly-feels-real.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-047-openai-s-yann-dubois-why-ai-progress-suddenly-feels-real.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/OpenAIs-Yann-Dubois-Why-AI-Progress-Suddenly-Feels-Real-e3jmaqc
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/OpenAIs-Yann-Dubois-Why-AI-Progress-Suddenly-Feels-Real-e3jmaqc
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: d28e5f7027033d76
+- raw_full_text_hash: 066201291c108529
+- raw_semantic_hash: 9d34eaab7f75a856
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"066201291c108529","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"product_update","text":"AI suddenly feels like it has crossed a threshold, and Yann Dubois, co-lead of the Post-training Frontiers team at OpenAI, joins Matt Turck to explain why. Yann’s team has led the post-training behind the company&#39;s reasoning models, including the recent GPT-5.5 release. In this conversation, we go inside the shift from raw model capability to useful, reliable systems: what changed with GPT-5.5, why reinforcement learning is moving beyond math and coding competitions into messy real-world wor","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify OpenAI's Yann Dubois: Why AI Progress Suddenly Feels Real The MAD Podcast with Matt Turck May 21, 2026 Share 00:00 01:13:56 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["AI suddenly feels like it has crossed a threshold, and Yann Dubois, co-lead of the Post-training Frontiers team at OpenAI, joins Matt Turck to explain why. Yann’s team has led the post-training behind the company&#39;s reasoning models, including the recent GPT-5.5 release. In this conversation, we go inside the shift from raw model capability to useful, reliable systems: what changed with GPT-5.5, why reinforcement learning is moving beyond math and coding competitions into messy real-world wor","The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify OpenAI's Yann Dubois: Why AI Progress Suddenly Feels Real The MAD Podcast with Matt Turck May 21, 2026 Share 00:00 01:13:56 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-047｜AI is Already Building AI | Google DeepMind’s Mostafa Dehghani
+
+- raw_ref: R-048
+- raw_original_id: ad1c210a-b17c-47b6-a6e8-6de6b0298df7
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-048-ai-is-already-building-ai-google-deepmind-s-mostafa-dehghani.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-048-ai-is-already-building-ai-google-deepmind-s-mostafa-dehghani.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/AI-is-Already-Building-AI--Google-DeepMinds-Mostafa-Dehghani-e3ham4n
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/AI-is-Already-Building-AI--Google-DeepMinds-Mostafa-Dehghani-e3ham4n
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: b2e13dac0d12d82a
+- raw_full_text_hash: c2b0acd4aeaea68d
+- raw_semantic_hash: ebbe298854850496
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c2b0acd4aeaea68d","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"Are we truly on the verge of AI automating its own research and development? In this deep-dive episode of the MAD Podcast, Matt Turck sits down with Mostafa Dehghani, a pioneering AI researcher at Google DeepMind whose work on Universal Transformers and Vision Transformers (ViT) helped lay the groundwork for today&#39;s frontier models.Moving past the hype, Mostafa breaks down the actual mechanics of &quot;thinking in loops&quot; and Recursive Self-Improvement (RSI). He explores the critical bot","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify AI is Already Building AI | Google DeepMind’s Mostafa Dehghani The MAD Podcast with Matt Turck Apr 02, 2026 Share 00:00 01:04:32 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Are we truly on the verge of AI automating its own research and development? In this deep-dive episode of the MAD Podcast, Matt Turck sits down with Mostafa Dehghani, a pioneering AI researcher at Google DeepMind whose work on Universal Transformers and Vision Transformers (ViT) helped lay the groundwork for today&#39;s frontier models.Moving past the hype, Mostafa breaks down the actual mechanics of &quot;thinking in loops&quot; and Recursive Self-Improvement (RSI). He explores the critical bot","The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify AI is Already Building AI | Google DeepMind’s Mostafa Dehghani The MAD Podcast with Matt Turck Apr 02, 2026 Share 00:00 01:04:32 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-048｜Voice AI’s Big Moment: Why Everything Is Changing Now (ft. Neil Zeghidour, Gradium AI)
+
+- raw_ref: R-049
+- raw_original_id: 40c0aff5-5270-46d9-9d71-3f3191e37f89
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-049-voice-ai-s-big-moment-why-everything-is-changing-now-ft-neil-zeghidour.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-049-voice-ai-s-big-moment-why-everything-is-changing-now-ft-neil-zeghidour.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/Voice-AIs-Big-Moment-Why-Everything-Is-Changing-Now-ft--Neil-Zeghidour--Gradium-AI-e3f9l04
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/Voice-AIs-Big-Moment-Why-Everything-Is-Changing-Now-ft--Neil-Zeghidour--Gradium-AI-e3f9l04
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: a10a543057e9d5c3
+- raw_full_text_hash: f612fc3d89665fbb
+- raw_semantic_hash: 781386b62f440fff
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f612fc3d89665fbb","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"Voice used to be AI’s forgotten modality — awkward, slow, and fragile. Now it’s everywhere. In this reference episode on all things Voice AI, Matt Turck sits down with Neil Zeghidour, a top AI researcher and CEO of Gradium AI (ex-DeepMind/Google, Meta, Kyutai), to cover voice agents, speech-to-speech models, full-duplex conversation, on-device voice, and voice cloning.We unpack what actually changed under the hood — why voice is finally starting to feel natural, and why it may become the default","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Voice AI’s Big Moment: Why Everything Is Changing Now (ft.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Neil Zeghidour, Gradium AI) The MAD Podcast with Matt Turck Feb 19, 2026 Share 00:00 01:22:49 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Voice used to be AI’s forgotten modality — awkward, slow, and fragile. Now it’s everywhere. In this reference episode on all things Voice AI, Matt Turck sits down with Neil Zeghidour, a top AI researcher and CEO of Gradium AI (ex-DeepMind/Google, Meta, Kyutai), to cover voice agents, speech-to-speech models, full-duplex conversation, on-device voice, and voice cloning.We unpack what actually changed under the hood — why voice is finally starting to feel natural, and why it may become the default","The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify Voice AI’s Big Moment: Why Everything Is Changing Now (ft."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-049｜DeepMind Gemini 3 Lead: What Comes After "Infinite Data"
+
+- raw_ref: R-050
+- raw_original_id: da1790db-de3e-4fae-9100-efb07b77d217
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-050-deepmind-gemini-3-lead-what-comes-after-infinite-data.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-050-deepmind-gemini-3-lead-what-comes-after-infinite-data.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/DeepMind-Gemini-3-Lead-What-Comes-After-Infinite-Data-e3ch6n7
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/DeepMind-Gemini-3-Lead-What-Comes-After-Infinite-Data-e3ch6n7
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: c485e2f6e2dd09fb
+- raw_full_text_hash: 7e24012f2af4c87c
+- raw_semantic_hash: 567b1df89ddf4bba
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7e24012f2af4c87c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"quote","text":"Gemini 3 was a landmark frontier model launch in AI this year — but the story behind its performance isn’t just about adding more compute. In this episode, I sit down with Sebastian Bourgeaud, a pre-training lead for Gemini 3 at Google DeepMind and co-author of the seminal RETRO paper. In his first-ever podcast interview, Sebastian takes us inside the lab mindset behind Google’s most powerful model — what actually changed, and why the real work today is no longer “training a model,” but building","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"Listen on Spotify Available on Report content on Spotify DeepMind Gemini 3 Lead: What Comes After \"Infinite Data\" The MAD Podcast with Matt Turck Dec 18, 2025 Share 00:00 54:57 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-050｜What’s Next for AI? OpenAI’s Łukasz Kaiser (Transformer Co-Author)
+
+- raw_ref: R-051
+- raw_original_id: 5194d0de-c84e-4e92-8ffd-93394c7b958d
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-051-what-s-next-for-ai-openai-s-łukasz-kaiser-transformer-co-author.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-051-what-s-next-for-ai-openai-s-łukasz-kaiser-transformer-co-author.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/Whats-Next-for-AI--OpenAIs-ukasz-Kaiser-Transformer-Co-Author-e3bfvoe
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/Whats-Next-for-AI--OpenAIs-ukasz-Kaiser-Transformer-Co-Author-e3bfvoe
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 3bf600e77370de1b
+- raw_full_text_hash: 20020a84af25ccae
+- raw_semantic_hash: 4e63781d5b53bde3
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"20020a84af25ccae","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"We’re told that AI progress is slowing down, that pre-training has hit a wall, that scaling laws are running out of road. Yet we’re releasing this episode in the middle of a wild couple of weeks that saw GPT-5.1, GPT-5.1 Codex Max, fresh reasoning modes and long-running agents ship from OpenAI — on top of a flood of new frontier models elsewhere. To make sense of what’s actually happening at the edge of the field, I sat down with someone who has literally helped define both of the major AI parad","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify What’s Next for AI?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenAI’s Łukasz Kaiser (Transformer Co-Author) The MAD Podcast with Matt Turck Nov 26, 2025 Share 00:00 01:05:25 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["We’re told that AI progress is slowing down, that pre-training has hit a wall, that scaling laws are running out of road. Yet we’re releasing this episode in the middle of a wild couple of weeks that saw GPT-5.1, GPT-5.1 Codex Max, fresh reasoning modes and long-running agents ship from OpenAI — on top of a flood of new frontier models elsewhere. To make sense of what’s actually happening at the edge of the field, I sat down with someone who has literally helped define both of the major AI parad","The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify What’s Next for AI?"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-051｜State of AI 2025 with Nathan Benaich: Power Deals, Reasoning Breakthroughs, Real Revenue
+
+- raw_ref: R-052
+- raw_original_id: 0ce79a6a-6c9b-4d2f-b57b-6d9cf7b88c4d
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-052-state-of-ai-2025-with-nathan-benaich-power-deals-reasoning-breakthroug.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-052-state-of-ai-2025-with-nathan-benaich-power-deals-reasoning-breakthroug.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/State-of-AI-2025-with-Nathan-Benaich-Power-Deals--Reasoning-Breakthroughs--Real-Revenue-e3a8cfh
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/State-of-AI-2025-with-Nathan-Benaich-Power-Deals--Reasoning-Breakthroughs--Real-Revenue-e3a8cfh
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 084a5863d3912562
+- raw_full_text_hash: cfa425dce5bcb6bd
+- raw_semantic_hash: 60d0122fd997bd1c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cfa425dce5bcb6bd","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"Power is the new bottleneck, reasoning got real, and the business finally caught up. In this wide-ranging conversation, I sit down with Nathan Benaich, Founder and General Partner at Air Street Capital, to discuss the newly published 2025 State of AI report—what’s actually working, what’s hype, and where the next edge will come from. We start at the physical layer: energy procurement, PPAs, off-grid builds, and why water and grid constraints are turning power—not GPUs—into the decisive moat.From","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify State of AI 2025 with Nathan Benaich: Power Deals, Reasoning Breakthroughs, Real Revenue The MAD Podcast with Matt Turck Oct 30, 2025 Share 00:00 01:03:16 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify State of AI 2025 with Nathan Benaich: Power Deals, Reasoning Breakthroughs, Real Revenue The MAD Podcast with Matt Turck Oct 30, 2025 Share 00:00 01:03:16 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking."],"case_details":[],"workflow_changes":["Power is the new bottleneck, reasoning got real, and the business finally caught up. In this wide-ranging conversation, I sit down with Nathan Benaich, Founder and General Partner at Air Street Capital, to discuss the newly published 2025 State of AI report—what’s actually working, what’s hype, and where the next edge will come from. We start at the physical layer: energy procurement, PPAs, off-grid builds, and why water and grid constraints are turning power—not GPUs—into the decisive moat.From"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-052｜Are We Misreading the AI Exponential? Julian Schrittwieser on Move 37 & Scaling RL (Anthropic)
+
+- raw_ref: R-053
+- raw_original_id: 67851d76-2ca8-481e-9710-803642f39d88
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-053-are-we-misreading-the-ai-exponential-julian-schrittwieser-on-move-37-s.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-053-are-we-misreading-the-ai-exponential-julian-schrittwieser-on-move-37-s.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/Are-We-Misreading-the-AI-Exponential--Julian-Schrittwieser-on-Move-37--Scaling-RL-Anthropic-e39u47s
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/Are-We-Misreading-the-AI-Exponential--Julian-Schrittwieser-on-Move-37--Scaling-RL-Anthropic-e39u47s
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: b7e54b6cabcfea99
+- raw_full_text_hash: cc8491b0ce815ef1
+- raw_semantic_hash: 25c6412dba3708bc
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cc8491b0ce815ef1","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"quote","text":"Are we failing to understand the exponential, again?My guest is Julian Schrittwieser (top AI researcher at Anthropic; previously Google DeepMind on AlphaGo Zero &amp; MuZero). We unpack his viral post (“Failing to Understand the Exponential, again”) and what it looks like when task length doubles every 3–4 months—pointing to AI agents that can work a full day autonomously by 2026 and expert-level breadth by 2027. We talk about the original Move 37 moment and whether today’s AI models can spark a","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Are We Misreading the AI Exponential?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Julian Schrittwieser on Move 37 & Scaling RL (Anthropic) The MAD Podcast with Matt Turck Oct 23, 2025 Share 00:00 01:09:56 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify Are We Misreading the AI Exponential?","Julian Schrittwieser on Move 37 & Scaling RL (Anthropic) The MAD Podcast with Matt Turck Oct 23, 2025 Share 00:00 01:09:56 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-053｜Sonnet 4.5 & the AI Plateau Myth — Sholto Douglas (Anthropic)
+
+- raw_ref: R-054
+- raw_original_id: 834393e7-8dde-4821-a625-0ed2689a06f4
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-054-sonnet-4-5-the-ai-plateau-myth-sholto-douglas-anthropic.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-054-sonnet-4-5-the-ai-plateau-myth-sholto-douglas-anthropic.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/Sonnet-4-5--the-AI-Plateau-Myth--Sholto-Douglas-Anthropic-e390725
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/Sonnet-4-5--the-AI-Plateau-Myth--Sholto-Douglas-Anthropic-e390725
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 06f19d227772033d
+- raw_full_text_hash: adbf9c5c08a28fdf
+- raw_semantic_hash: 8d107295e279aeb0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"adbf9c5c08a28fdf","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"Sholto Douglas, a top AI researcher at Anthropic, discusses the breakthroughs behind Claude Sonnet 4.5—the world&#39;s leading coding model—and why we might be just 2-3 years from AI matching human-level performance on most computer-facing tasks.You&#39;ll discover why RL on language models suddenly started working in 2024, how agents maintain coherency across 30-hour coding sessions through self-correction and memory systems, and why the &quot;bitter lesson&quot; of scale keeps proving clever p","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Sonnet 4.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"5 & the AI Plateau Myth — Sholto Douglas (Anthropic) The MAD Podcast with Matt Turck Oct 02, 2025 Share 00:00 01:10:03 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Sholto Douglas, a top AI researcher at Anthropic, discusses the breakthroughs behind Claude Sonnet 4.5—the world&#39;s leading coding model—and why we might be just 2-3 years from AI matching human-level performance on most computer-facing tasks.You&#39;ll discover why RL on language models suddenly started working in 2024, how agents maintain coherency across 30-hour coding sessions through self-correction and memory systems, and why the &quot;bitter lesson&quot; of scale keeps proving clever p","The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify Sonnet 4."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-054｜Goodbye Excel? AI Agents for Self-Driving Finance – Pigment CEO
+
+- raw_ref: R-055
+- raw_original_id: 98d61f88-2246-4f06-b8e0-4ec8194f44ae
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-055-goodbye-excel-ai-agents-for-self-driving-finance-pigment-ceo.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-055-goodbye-excel-ai-agents-for-self-driving-finance-pigment-ceo.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/Goodbye-Excel--AI-Agents-for-Self-Driving-Finance--Pigment-CEO-e383133
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/Goodbye-Excel--AI-Agents-for-Self-Driving-Finance--Pigment-CEO-e383133
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 4ae3598aefcd5293
+- raw_full_text_hash: df7018b5c32b1d07
+- raw_semantic_hash: 743a16ec022296f3
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"df7018b5c32b1d07","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"The most successful enterprises are about to become autonomous — and Eléonore Crespo, Co-CEO of Pigment, is building the nervous system that makes it possible. In this conversation, Eléonore reveals how her $400 million AI platform is already running supply chains for Coca-Cola, powering finance for the hottest newly public companies like Figma and Klarna, and processing thousands of financial scenarios for Uber and Snowflake faster and more accurately than any human team ever could.Eléonore pre","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Goodbye Excel?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI Agents for Self-Driving Finance – Pigment CEO The MAD Podcast with Matt Turck Sep 11, 2025 Share 00:00 01:05:47 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify Goodbye Excel?","AI Agents for Self-Driving Finance – Pigment CEO The MAD Podcast with Matt Turck Sep 11, 2025 Share 00:00 01:05:47 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-055｜Ex‑DeepMind Researcher Misha Laskin on Enterprise Super‑Intelligence | Reflection AI
+
+- raw_ref: R-056
+- raw_original_id: 8824efbe-739a-469d-8803-6cbb92380e4b
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-056-ex-deepmind-researcher-misha-laskin-on-enterprise-super-intelligence-r.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-056-ex-deepmind-researcher-misha-laskin-on-enterprise-super-intelligence-r.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/ExDeepMind-Researcher-Misha-Laskin-on-Enterprise-SuperIntelligence--Reflection-AI-e35lo5m
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/ExDeepMind-Researcher-Misha-Laskin-on-Enterprise-SuperIntelligence--Reflection-AI-e35lo5m
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 179c7746b0e9caab
+- raw_full_text_hash: 1ff3160275a15f74
+- raw_semantic_hash: 746ab55e80aa5a53
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1ff3160275a15f74","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"opinion","text":"What if your company had a digital brain that never forgot, always knew the answer, and could instantly tap the knowledge of your best engineers, even after they left? Superintelligence can feel like a hand‑wavy pipe‑dream— yet, as Misha Laskin argues, it becomes a tractable engineering problem once you scope it to the enterprise level. Former DeepMind researcher Laskin is betting on an oracle‑like AI that grasps every repo, Jira ticket and hallway aside as deeply as your principal engineer—and","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Ex‑DeepMind Researcher Misha Laskin on Enterprise Super‑Intelligence | Reflection AI The MAD Podcast with Matt Turck Jul 17, 2025 Share 00:00 01:06:30 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify Ex‑DeepMind Researcher Misha Laskin on Enterprise Super‑Intelligence | Reflection AI The MAD Podcast with Matt Turck Jul 17, 2025 Share 00:00 01:06:30 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-056｜Glean’s Breakthrough: CEO Arvind Jain on Scaling AI Agents & Search
+
+- raw_ref: R-057
+- raw_original_id: d9efb0b2-9fd4-4985-9843-6bafbb4dff6d
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-057-glean-s-breakthrough-ceo-arvind-jain-on-scaling-ai-agents-search.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-057-glean-s-breakthrough-ceo-arvind-jain-on-scaling-ai-agents-search.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/Gleans-Breakthrough-CEO-Arvind-Jain-on-Scaling-AI-Agents--Search-e31uggg
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/Gleans-Breakthrough-CEO-Arvind-Jain-on-Scaling-AI-Agents--Search-e31uggg
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 71b7620e5ec8059c
+- raw_full_text_hash: 5365481e24789ee0
+- raw_semantic_hash: 86eabfef71a9c695
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5365481e24789ee0","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"A week after OpenAI’s o3/o4-mini volleyed with Google’s Gemini 2.5 Flash, I sat down with Arvind Jain— ex-Google search luminary, Rubrik co-founder, and now CEO of Glean —just as his company released its agentic reasoning platform and swirled with rumors of a new round at a $7 billion valuation. We open on that whirlwind: why the model race is accelerating, why enterprises still gravitate to closed models, and when open-source variants finally take over. Arvind argues that LLMs should “fade into","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Glean’s Breakthrough: CEO Arvind Jain on Scaling AI Agents & Search The MAD Podcast with Matt Turck Apr 24, 2025 Share 00:00 52:11 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify Glean’s Breakthrough: CEO Arvind Jain on Scaling AI Agents & Search The MAD Podcast with Matt Turck Apr 24, 2025 Share 00:00 52:11 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-057｜Why This Ex-Meta Leader is Rethinking AI Infrastructure | Lin Qiao, CEO, Fireworks AI
+
+- raw_ref: R-058
+- raw_original_id: fda97857-7c65-4536-aaf9-78b8d0b5d29d
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-058-why-this-ex-meta-leader-is-rethinking-ai-infrastructure-lin-qiao-ceo-f.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-058-why-this-ex-meta-leader-is-rethinking-ai-infrastructure-lin-qiao-ceo-f.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/Why-This-Ex-Meta-Leader-is-Rethinking-AI-Infrastructure--Lin-Qiao--CEO--Fireworks-AI-e30nr05
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/Why-This-Ex-Meta-Leader-is-Rethinking-AI-Infrastructure--Lin-Qiao--CEO--Fireworks-AI-e30nr05
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 5a06312b0688f95f
+- raw_full_text_hash: 184c499c7a06bdcd
+- raw_semantic_hash: 2fd3bf031f3f8423
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"184c499c7a06bdcd","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"In 2022, Lin Qiao decided to leave Meta, where she was managing several hundred engineers, to start Fireworks AI. In this episode, we sit down with Lin for a deep dive on her work, starting with her leadership on PyTorch, now one of the most influential machine learning frameworks in the industry, powering research and production at scale across the AI industry. Now at the helm of Fireworks AI, Lin is leading a new wave in generative AI infrastructure, simplifying model deployment and optimizing","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Why This Ex-Meta Leader is Rethinking AI Infrastructure | Lin Qiao, CEO, Fireworks AI The MAD Podcast with Matt Turck Mar 27, 2025 Share 00:00 59:15 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify Why This Ex-Meta Leader is Rethinking AI Infrastructure | Lin Qiao, CEO, Fireworks AI The MAD Podcast with Matt Turck Mar 27, 2025 Share 00:00 59:15 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking."],"case_details":["In 2022, Lin Qiao decided to leave Meta, where she was managing several hundred engineers, to start Fireworks AI. In this episode, we sit down with Lin for a deep dive on her work, starting with her leadership on PyTorch, now one of the most influential machine learning frameworks in the industry, powering research and production at scale across the AI industry. Now at the helm of Fireworks AI, Lin is leading a new wave in generative AI infrastructure, simplifying model deployment and optimizing"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-058｜The AI Coding Agent Revolution, The Future of Software, Techno-Optimism | Amjad Masad, CEO, Replit
+
+- raw_ref: R-059
+- raw_original_id: 2e00524b-70ae-4847-955e-a949cb9827f5
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-059-the-ai-coding-agent-revolution-the-future-of-software-techno-optimism-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-059-the-ai-coding-agent-revolution-the-future-of-software-techno-optimism-.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/The-AI-Coding-Agent-Revolution--The-Future-of-Software--Techno-Optimism--Amjad-Masad--CEO--Replit-e2ug9gl
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/The-AI-Coding-Agent-Revolution--The-Future-of-Software--Techno-Optimism--Amjad-Masad--CEO--Replit-e2ug9gl
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 1d7ef79c33ea0f09
+- raw_full_text_hash: ac68efbfd5b590e0
+- raw_semantic_hash: b6e8da1c216a1930
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ac68efbfd5b590e0","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"product_update","text":"Replit is one of the most visible and exciting companies reshaping how we approach software and application development in the Generative AI era. In this episode, we sit down with its CEO, Amjad Masad, for an in-depth discussion on all things AI, agents, and software. Amjad shares the journey of building Replit, from its humble beginnings as a student side project to becoming a major player in Generative AI today. We also discuss the challenges of launching a startup, the multiple attempts to g","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify The AI Coding Agent Revolution, The Future of Software, Techno-Optimism | Amjad Masad, CEO, Replit The MAD Podcast with Matt Turck Feb 06, 2025 Share 00:00 01:29:40 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Replit is one of the most visible and exciting companies reshaping how we approach software and application development in the Generative AI era. In this episode, we sit down with its CEO, Amjad Masad, for an in-depth discussion on all things AI, agents, and software. Amjad shares the journey of building Replit, from its humble beginnings as a student side project to becoming a major player in Generative AI today. We also discuss the challenges of launching a startup, the multiple attempts to g","The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify The AI Coding Agent Revolution, The Future of Software, Techno-Optimism | Amjad Masad, CEO, Replit The MAD Podcast with Matt Turck Feb 06, 2025 Share 00:00 01:29:40 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-059｜How Airtable is Ushering 500,000 Organizations Into The Era of AI | Howie Liu, CEO of Airtable
+
+- raw_ref: R-060
+- raw_original_id: a8505697-c473-497d-b17e-bcc1e24c3f9d
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-060-how-airtable-is-ushering-500-000-organizations-into-the-era-of-ai-howi.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-060-how-airtable-is-ushering-500-000-organizations-into-the-era-of-ai-howi.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/How-Airtable-is-Ushering-500-000-Organizations-Into-The-Era-of-AI--Howie-Liu--CEO-of-Airtable-e2k0q0n
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/How-Airtable-is-Ushering-500-000-Organizations-Into-The-Era-of-AI--Howie-Liu--CEO-of-Airtable-e2k0q0n
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 148c7116ed61d78a
+- raw_full_text_hash: e1ffc57903a6bb9f
+- raw_semantic_hash: d419cffa5ff8cb82
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e1ffc57903a6bb9f","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"In this episode, we sit down with Howie Liu, co-founder and CEO of Airtable, to explore the incredible journey of Airtable from its early days to becoming a powerhouse in the enterprise software space. Howie provides a candid look at the challenges and learnings from transitioning Airtable from a PLG product to an enterprise platform, how companies are transforming their marketing operations with AI, and the transformative potential of AI in automating workflows and enhancing business processes","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify How Airtable is Ushering 500,000 Organizations Into The Era of AI | Howie Liu, CEO of Airtable The MAD Podcast with Matt Turck May 23, 2024 Share 00:00 01:02:44 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify How Airtable is Ushering 500,000 Organizations Into The Era of AI | Howie Liu, CEO of Airtable The MAD Podcast with Matt Turck May 23, 2024 Share 00:00 01:02:44 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking."],"case_details":[],"workflow_changes":["In this episode, we sit down with Howie Liu, co-founder and CEO of Airtable, to explore the incredible journey of Airtable from its early days to becoming a powerhouse in the enterprise software space. Howie provides a candid look at the challenges and learnings from transitioning Airtable from a PLG product to an enterprise platform, how companies are transforming their marketing operations with AI, and the transformative potential of AI in automating workflows and enhancing business processes"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-060｜2024 will be the year of Generative AI in production in the enterprise | Florian Douetteau from Dataiku
+
+- raw_ref: R-061
+- raw_original_id: ddc6be4b-4ff3-49a1-8088-ffacd1494748
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-061-2024-will-be-the-year-of-generative-ai-in-production-in-the-enterprise.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-061-2024-will-be-the-year-of-generative-ai-in-production-in-the-enterprise.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/2024-will-be-the-year-of-Generative-AI-in-production-in-the-enterprise--Florian-Douetteau-from-Dataiku-e2hal1n
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/2024-will-be-the-year-of-Generative-AI-in-production-in-the-enterprise--Florian-Douetteau-from-Dataiku-e2hal1n
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: c79963e17a7c6c40
+- raw_full_text_hash: a38fd49302e0a6f8
+- raw_semantic_hash: 44bb8f1c044c49b1
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a38fd49302e0a6f8","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Join us in this exciting episode as we dive into the world of enterprise AI with Florian Douetteau, co-founder and CEO of Dataiku, the leading enterprise AI platform targeting Global 2000 companies. Since its founding in 2013, Dataiku has been at the forefront of democratizing AI in the enterprise. We&#39;ll explore the current state of deployment of AI in businesses around the world, dive deep into the differences between generative AI and traditional AI, explore emerging Generative AI uses cas","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify 2024 will be the year of Generative AI in production in the enterprise | Florian Douetteau from Dataiku The MAD Podcast with Matt Turck Mar 20, 2024 Share 00:00 26:11 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify 2024 will be the year of Generative AI in production in the enterprise | Florian Douetteau from Dataiku The MAD Podcast with Matt Turck Mar 20, 2024 Share 00:00 26:11 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines","Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking."],"case_details":["Join us in this exciting episode as we dive into the world of enterprise AI with Florian Douetteau, co-founder and CEO of Dataiku, the leading enterprise AI platform targeting Global 2000 companies. Since its founding in 2013, Dataiku has been at the forefront of democratizing AI in the enterprise. We&#39;ll explore the current state of deployment of AI in businesses around the world, dive deep into the differences between generative AI and traditional AI, explore emerging Generative AI uses cas"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-061｜Imbue: AI Agents That Can Reason with CEO Kanjun Qiu
+
+- raw_ref: R-062
+- raw_original_id: 493278bf-bffd-4c45-9567-3116059a03a3
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-062-imbue-ai-agents-that-can-reason-with-ceo-kanjun-qiu.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-062-imbue-ai-agents-that-can-reason-with-ceo-kanjun-qiu.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/Imbue-AI-Agents-That-Can-Reason-with-CEO-Kanjun-Qiu-e2gemr5
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/Imbue-AI-Agents-That-Can-Reason-with-CEO-Kanjun-Qiu-e2gemr5
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 40f2fe448713ccc2
+- raw_full_text_hash: 6a9ce8648eaa37c6
+- raw_semantic_hash: 3a6192d061560bf2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6a9ce8648eaa37c6","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"Today we're joined by Kanjun Qiu, CEO of Imbue, an independent research company developing AI agents with general intelligence, fresh off the announcement of their $200M Series B round of financing.&nbsp;We talk about Kanjun's journey, Imbue's vision and the future of AI agents. ]]>","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Imbue: AI Agents That Can Reason with CEO Kanjun Qiu The MAD Podcast with Matt Turck Oct 04, 2023 Share 00:00 44:47 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Today we're joined by Kanjun Qiu, CEO of Imbue, an independent research company developing AI agents with general intelligence, fresh off the announcement of their $200M Series B round of financing.&nbsp;We talk about Kanjun's journey, Imbue's vision and the future of AI agents. ]]>","The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify Imbue: AI Agents That Can Reason with CEO Kanjun Qiu The MAD Podcast with Matt Turck Oct 04, 2023 Share 00:00 44:47 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-062｜AI21 Labs: Bringing Reliable AI to the Enterprise with Co-Founder Ori Goshen
+
+- raw_ref: R-063
+- raw_original_id: 5de9f7e1-a0c4-4a85-baa7-9972615cad73
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-063-ai21-labs-bringing-reliable-ai-to-the-enterprise-with-co-founder-ori-g.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-063-ai21-labs-bringing-reliable-ai-to-the-enterprise-with-co-founder-ori-g.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/AI21-Labs-Bringing-Reliable-AI-to-the-Enterprise-with-Co-Founder-Ori-Goshen-e2gemrl
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/AI21-Labs-Bringing-Reliable-AI-to-the-Enterprise-with-Co-Founder-Ori-Goshen-e2gemrl
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: d5de7b1d90760f1b
+- raw_full_text_hash: 3c8c275e2814dec4
+- raw_semantic_hash: 756a6fc511261d68
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3c8c275e2814dec4","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"Today we are joined by Ori Goshen, Co-founder and Co-CEO of AI21 Labs, for a conversation about AI 21's origin story, their differentiated approach to AI, and their ambitious platform and applications.&nbsp;&nbsp; ]]>","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify AI21 Labs: Bringing Reliable AI to the Enterprise with Co-Founder Ori Goshen The MAD Podcast with Matt Turck Sep 20, 2023 Share 00:00 51:46 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Today we are joined by Ori Goshen, Co-founder and Co-CEO of AI21 Labs, for a conversation about AI 21's origin story, their differentiated approach to AI, and their ambitious platform and applications.&nbsp;&nbsp; ]]>","The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify AI21 Labs: Bringing Reliable AI to the Enterprise with Co-Founder Ori Goshen The MAD Podcast with Matt Turck Sep 20, 2023 Share 00:00 51:46 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-063｜Deepset AI: NLP For The Enterprise with CEO Milos Rusic
+
+- raw_ref: R-064
+- raw_original_id: 35aab5e8-699b-4de0-b265-068d14253c18
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-064-deepset-ai-nlp-for-the-enterprise-with-ceo-milos-rusic.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-064-deepset-ai-nlp-for-the-enterprise-with-ceo-milos-rusic.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/Deepset-AI-NLP-For-The-Enterprise-with-CEO-Milos-Rusic-e2gemri
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/Deepset-AI-NLP-For-The-Enterprise-with-CEO-Milos-Rusic-e2gemri
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 642387e9922007e5
+- raw_full_text_hash: ceb06f6dd86546bb
+- raw_semantic_hash: 11389853f679ee28
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ceb06f6dd86546bb","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"We're joined by Milos Rusic, CEO &amp; Co-founder of deepset AI for a conversation on deepset's origin story as a bootstrapped company, a deep dive into the Haystack open source project and deepset's Cloud platform, and emerging applications for NLP and LLMs in the enterprise. ]]>","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Deepset AI: NLP For The Enterprise with CEO Milos Rusic The MAD Podcast with Matt Turck Sep 06, 2023 Share 00:00 45:39 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["We're joined by Milos Rusic, CEO &amp; Co-founder of deepset AI for a conversation on deepset's origin story as a bootstrapped company, a deep dive into the Haystack open source project and deepset's Cloud platform, and emerging applications for NLP and LLMs in the enterprise. ]]>","The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify Deepset AI: NLP For The Enterprise with CEO Milos Rusic The MAD Podcast with Matt Turck Sep 06, 2023 Share 00:00 45:39 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-064｜Synthesia: Creating Video with Generative AI with CEO Victor Riparbelli
+
+- raw_ref: R-065
+- raw_original_id: 83e411b1-56ab-44f2-9796-168830853321
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-065-synthesia-creating-video-with-generative-ai-with-ceo-victor-riparbelli.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-065-synthesia-creating-video-with-generative-ai-with-ceo-victor-riparbelli.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/Synthesia-Creating-Video-with-Generative-AI-with-CEO-Victor-Riparbelli-e2gemr3
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/Synthesia-Creating-Video-with-Generative-AI-with-CEO-Victor-Riparbelli-e2gemr3
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 76b7437fcc240738
+- raw_full_text_hash: c5862d1f3fc4f24e
+- raw_semantic_hash: e496fc9a648dd404
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c5862d1f3fc4f24e","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"Today we're joined by Victor Riparbelli, CEO of the generative AI video platform Synthesia that just last month hit a $1B valuation after raising their Series C funding round. Matt and Victor go into the Synthesia platform, what it takes to build a successful AI company, and dive into the ethics of generative AI videos. ]]>","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Synthesia: Creating Video with Generative AI with CEO Victor Riparbelli The MAD Podcast with Matt Turck Jul 19, 2023 Share 00:00 44:02 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Today we're joined by Victor Riparbelli, CEO of the generative AI video platform Synthesia that just last month hit a $1B valuation after raising their Series C funding round. Matt and Victor go into the Synthesia platform, what it takes to build a successful AI company, and dive into the ethics of generative AI videos. ]]>","The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify Synthesia: Creating Video with Generative AI with CEO Victor Riparbelli The MAD Podcast with Matt Turck Jul 19, 2023 Share 00:00 44:02 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-065｜Dataiku: The Single Platform for Everyday AI with CEO Florian Douetteau
+
+- raw_ref: R-066
+- raw_original_id: 8ce14757-5f11-4411-bee4-aeb4abba84fc
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-066-dataiku-the-single-platform-for-everyday-ai-with-ceo-florian-douetteau.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-066-dataiku-the-single-platform-for-everyday-ai-with-ceo-florian-douetteau.json`
+- source: The MAD Podcast (Matt Turck)｜https://podcasters.spotify.com/pod/show/firstmark/episodes/Dataiku-The-Single-Platform-for-Everyday-AI-with-CEO-Florian-Douetteau-e2gemrp
+- source_url: https://podcasters.spotify.com/pod/show/firstmark/episodes/Dataiku-The-Single-Platform-for-Everyday-AI-with-CEO-Florian-Douetteau-e2gemrp
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 02cd4aca38352c92
+- raw_full_text_hash: 91bbae42d1360e17
+- raw_semantic_hash: b639bd03bc93af9f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"91bbae42d1360e17","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"Today we're joined by Florian Douetteau, CEO and Co-Founder of Dataiku, for a conversation about the Dataiku platform, emerging use cases for Generative AI in the enterprise and some leadership lessons learned along the way.You can find Florian's essay, The Children of AI, here: https://children-of-ai.florian-douetteau.comtwitter.com/fdouetteaudataiku.comIn Conversation with Florian Douetteau Blog PostData Driven NYC YouTube Channeltwitter.com/mattturcklinktr.ee/mattturck ]]>","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Listen on Spotify Available on Report content on Spotify Dataiku: The Single Platform for Everyday AI with CEO Florian Douetteau The MAD Podcast with Matt Turck Jul 05, 2023 Share 00:00 48:36 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Matthew explains why Cloudflare now sees automated traffic overtaking human traffic online, why agents could create a massive explosion in Internet traffic, and why the old web business model built around clicks, ads, and pageviews may be breaking.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Along the way, Matthew shares wild Cloudflare origin stories involving hacker kids, human rights groups, cricket in Pakistan, root servers, Eurovision, JPMorgan, and the strange paths that led Cloudflare from scrappy startup to critical Internet infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Today we're joined by Florian Douetteau, CEO and Co-Founder of Dataiku, for a conversation about the Dataiku platform, emerging use cases for Generative AI in the enterprise and some leadership lessons learned along the way.You can find Florian's essay, The Children of AI, here: https://children-of-ai.florian-douetteau.comtwitter.com/fdouetteaudataiku.comIn Conversation with Florian Douetteau Blog PostData Driven NYC YouTube Channeltwitter.com/mattturcklinktr.ee/mattturck ]]>","The MAD Podcast with Matt Turck By Matt Turck The MAD Podcast with Matt Turck, is a series of conversations with leaders from across the Machine Learning, AI, & Data landscape hosted by leading AI & data investor and Partner at FirstMark Capital, Matt Turck.","Listen on Spotify Available on Report content on Spotify Dataiku: The Single Platform for Everyday AI with CEO Florian Douetteau The MAD Podcast with Matt Turck Jul 05, 2023 Share 00:00 48:36 Cloudflare CEO: Bot Takeover, Edge AI & The Hard Decision Every CEO Will Face Cloudflare CEO and co-founder Matthew Prince joins Matt Turck for a wide-ranging and fascinating conversation about what happens when the Internet is no longer mostly used by humans, but by bots, AI agents and machines."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["We also go deep on what Cloudflare actually does, how it built one of the world’s most important Internet networks, why products like Workers, AI Gateway, edge inference, Durable Objects, sandboxes, and agent security matter, and how Cloudflare is reorganizing itself for the AI era."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-066｜GitHub’s COO Explains Why AI Hasn’t Replaced Developers
+
+- raw_ref: R-067
+- raw_original_id: a7d1fb70-81db-44be-92b8-e46db37a1532
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-067-github-s-coo-explains-why-ai-hasn-t-replaced-developers.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-067-github-s-coo-explains-why-ai-hasn-t-replaced-developers.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/GitHubs-COO-Explains-Why-AI-Hasnt-Replaced-Developers-e3ktu6s
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/GitHubs-COO-Explains-Why-AI-Hasnt-Replaced-Developers-e3ktu6s
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 77
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 16005c47bbfc5a6b
+- raw_full_text_hash: 16005c47bbfc5a6b
+- raw_semantic_hash: cf10456f474cf0fb
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"16005c47bbfc5a6b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"Last year, there were 1 billion commits on GitHub. This year, Kyle Daigle expects that number to exceed 14 billion, a two-component explosion caused by more humans—and their agents—issuing pull requests. In March alone, 17 million pull requests on GitHub were created by agents.Daigle is the COO of GitHub and Microsoft’s chief marketing officer for developer products. He’s been at GitHub for 13 years, and is paying close attention to how AI is expanding the platform’s user base. Along with agents","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Learn how to use philosophy to run your business more effectively.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reid Hoffman thinks a masters in philosophy will help you run your business better than an MBA.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reid is a founder, investor, podcaster, and author.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But before he did any of these things, he studied philosophy—and it changed the way he thinks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Studying philosophy trains you to think deeply about truth, human nature, and the meaning of life.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Learn how to use philosophy to run your business more effectively.","Reid Hoffman thinks a masters in philosophy will help you run your business better than an MBA.","Reid is a founder, investor, podcaster, and author."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-067｜How Anthropic Uses Claude Fable 5 With Mike Krieger
+
+- raw_ref: R-068
+- raw_original_id: bb5cd6c0-a739-49e2-96eb-f03d5c26db38
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-068-how-anthropic-uses-claude-fable-5-with-mike-krieger.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-068-how-anthropic-uses-claude-fable-5-with-mike-krieger.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-Anthropic-Uses-Claude-Fable-5-With-Mike-Krieger-e3kjrg7
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-Anthropic-Uses-Claude-Fable-5-With-Mike-Krieger-e3kjrg7
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 77
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 16005c47bbfc5a6b
+- raw_full_text_hash: 16005c47bbfc5a6b
+- raw_semantic_hash: 02b69ad949a60576
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"16005c47bbfc5a6b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"quote","text":"Mike Krieger built one of the most consequential consumer apps of the last two decades as the cofounder of Instagram. He is now at the frontier of AI-native product development as head of Anthropic Labs, the team responsible for figuring out what the most capable AI models can do in the hands of real builders.When Krieger first got access to Fable 5 months before its public release, it was exciting and disorienting. “I feel like a total newbie again,” he remembers telling his team. The way he’d","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Learn how to use philosophy to run your business more effectively.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reid Hoffman thinks a masters in philosophy will help you run your business better than an MBA.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reid is a founder, investor, podcaster, and author.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But before he did any of these things, he studied philosophy—and it changed the way he thinks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Studying philosophy trains you to think deeply about truth, human nature, and the meaning of life.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Learn how to use philosophy to run your business more effectively.","Reid Hoffman thinks a masters in philosophy will help you run your business better than an MBA.","Reid is a founder, investor, podcaster, and author."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-068｜How Andrew Wilkinson Uses Opus 4.5 in His Work and Life
+
+- raw_ref: R-069
+- raw_original_id: ded94509-784a-4b47-bfc3-ba983eb52b33
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-069-how-andrew-wilkinson-uses-opus-4-5-in-his-work-and-life.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-069-how-andrew-wilkinson-uses-opus-4-5-in-his-work-and-life.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-Andrew-Wilkinson-Uses-Opus-4-5-in-His-Work-and-Life-e3e0g96
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/How-Andrew-Wilkinson-Uses-Opus-4-5-in-His-Work-and-Life-e3e0g96
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 77
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 16005c47bbfc5a6b
+- raw_full_text_hash: 16005c47bbfc5a6b
+- raw_semantic_hash: c0cf0fe1af6e9321
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"16005c47bbfc5a6b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"Entrepreneur Andrew Wilkinson used to sleep nine hours a night. Now he wakes up at 4 a.m. and goes straight to work—because he can’t wait to keep building with Anthropic’s latest model, Opus 4.5.Two years ago, Wilkinson was obsessed with vibe coding on AI software development platform Replit. It was thrilling to describe something in plain English and watch an app appear, less thrilling when the apps were always broken in some way, often full of maddening bugs. So he set his app creation ambitio","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Learn how to use philosophy to run your business more effectively.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reid Hoffman thinks a masters in philosophy will help you run your business better than an MBA.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reid is a founder, investor, podcaster, and author.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But before he did any of these things, he studied philosophy—and it changed the way he thinks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Studying philosophy trains you to think deeply about truth, human nature, and the meaning of life.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Entrepreneur Andrew Wilkinson used to sleep nine hours a night. Now he wakes up at 4 a.m. and goes straight to work—because he can’t wait to keep building with Anthropic’s latest model, Opus 4.5.Two years ago, Wilkinson was obsessed with vibe coding on AI software development platform Replit. It was thrilling to describe something in plain English and watch an app appear, less thrilling when the apps were always broken in some way, often full of maddening bugs. So he set his app creation ambitio","Learn how to use philosophy to run your business more effectively.","Reid Hoffman thinks a masters in philosophy will help you run your business better than an MBA."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-069｜GitHub CEO on the AI Coding Arms Race: One Agent, 150M+ Devs
+
+- raw_ref: R-070
+- raw_original_id: 00e2d624-c91f-41b0-9d7a-53d18fefce77
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-070-github-ceo-on-the-ai-coding-arms-race-one-agent-150m-devs.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-070-github-ceo-on-the-ai-coding-arms-race-one-agent-150m-devs.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/GitHub-CEO-on-the-AI-Coding-Arms-Race-One-Agent--150M-Devs-e33fpvo
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/GitHub-CEO-on-the-AI-Coding-Arms-Race-One-Agent--150M-Devs-e33fpvo
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 77
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 16005c47bbfc5a6b
+- raw_full_text_hash: 16005c47bbfc5a6b
+- raw_semantic_hash: a17751b53af6f1fd
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"16005c47bbfc5a6b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"GitHub Copilot has 15 million users—more than Cursor and Windsurf combined. So why does it feel like they&#39;re losing the AI coding race?Last week at Microsoft Build, I interviewed the CEO of GitHub Thomas Dohmke to find out.I wanted to know: Is their huge existing user base a blessing or a curse? And will their latest launch—an autonomous coding agent built into GitHub—let them retake the lead? Watch this episode of AI &amp; I to find outIf you found this episode interesting, please like, sub","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Learn how to use philosophy to run your business more effectively.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reid Hoffman thinks a masters in philosophy will help you run your business better than an MBA.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reid is a founder, investor, podcaster, and author.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But before he did any of these things, he studied philosophy—and it changed the way he thinks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Studying philosophy trains you to think deeply about truth, human nature, and the meaning of life.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Learn how to use philosophy to run your business more effectively.","Reid Hoffman thinks a masters in philosophy will help you run your business better than an MBA.","Reid is a founder, investor, podcaster, and author."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-070｜OpenAI Launches Codex: An Autonomous Programming Agent
+
+- raw_ref: R-071
+- raw_original_id: 32db3de3-81c2-4eff-9c39-4c17e251b926
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-071-openai-launches-codex-an-autonomous-programming-agent.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-071-openai-launches-codex-an-autonomous-programming-agent.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/OpenAI-Launches-Codex-An-Autonomous-Programming-Agent-e32uegf
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/OpenAI-Launches-Codex-An-Autonomous-Programming-Agent-e32uegf
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 77
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 16005c47bbfc5a6b
+- raw_full_text_hash: 16005c47bbfc5a6b
+- raw_semantic_hash: ac85a067eeb49aaa
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"16005c47bbfc5a6b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"product_update","text":"OpenAI just launched Codex, a brand-new coding agent that can build features and fix bugs autonomously. We’ve been testing it at Every for a few days, and I’m impressed.I invited Alexander Embiricos, a member of the OpenAI product staff responsible for Codex, to demo the agent live on a special edition of AI &amp; I. We talk through:What Codex is and how it works. Codex’s UI allows developers to see the list of tasks the agent is working on, how many lines were changed for each, and the status o","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Learn how to use philosophy to run your business more effectively.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reid Hoffman thinks a masters in philosophy will help you run your business better than an MBA.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reid is a founder, investor, podcaster, and author.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But before he did any of these things, he studied philosophy—and it changed the way he thinks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Studying philosophy trains you to think deeply about truth, human nature, and the meaning of life.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["OpenAI just launched Codex, a brand-new coding agent that can build features and fix bugs autonomously. We’ve been testing it at Every for a few days, and I’m impressed.I invited Alexander Embiricos, a member of the OpenAI product staff responsible for Codex, to demo the agent live on a special edition of AI &amp; I. We talk through:What Codex is and how it works. Codex’s UI allows developers to see the list of tasks the agent is working on, how many lines were changed for each, and the status o","Learn how to use philosophy to run your business more effectively.","Reid Hoffman thinks a masters in philosophy will help you run your business better than an MBA."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-071｜He Built an AI Model That Can Decode Your Emotions - Ep. 19 with Alan Cowen
+
+- raw_ref: R-072
+- raw_original_id: d51ef452-562b-482f-82ca-3fdab300679c
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-072-he-built-an-ai-model-that-can-decode-your-emotions-ep-19-with-alan-cow.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-072-he-built-an-ai-model-that-can-decode-your-emotions-ep-19-with-alan-cow.json`
+- source: AI & I by Every｜https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/He-Built-an-AI-Model-That-Can-Decode-Your-Emotions---Ep--19-with-Alan-Cowen-e2ijobl
+- source_url: https://podcasters.spotify.com/pod/show/how-do-you-use-chat-gpt/episodes/He-Built-an-AI-Model-That-Can-Decode-Your-Emotions---Ep--19-with-Alan-Cowen-e2ijobl
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 77
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 16005c47bbfc5a6b
+- raw_full_text_hash: 16005c47bbfc5a6b
+- raw_semantic_hash: 169604e686cac859
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"16005c47bbfc5a6b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: none
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"This AI can read emotions better than you can. It was created by Alan Cowen, the cofounder and CEO of Hume, an AI research lab developing models that can read your face and your voice with uncanny accuracy. Before starting Hume, Alan helped set up Google’s research into affective computing and has a Ph.D. in computational psychology from Berkely. Hume’s ultimate goal is to build AI models that can optimize for human well-being, and in this episode I sat down with Alan to understand how that migh","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Learn how to use philosophy to run your business more effectively.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reid Hoffman thinks a masters in philosophy will help you run your business better than an MBA.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Reid is a founder, investor, podcaster, and author.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But before he did any of these things, he studied philosophy—and it changed the way he thinks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Studying philosophy trains you to think deeply about truth, human nature, and the meaning of life.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["This AI can read emotions better than you can. It was created by Alan Cowen, the cofounder and CEO of Hume, an AI research lab developing models that can read your face and your voice with uncanny accuracy. Before starting Hume, Alan helped set up Google’s research into affective computing and has a Ph.D. in computational psychology from Berkely. Hume’s ultimate goal is to build AI models that can optimize for human well-being, and in this episode I sat down with Alan to understand how that migh","Learn how to use philosophy to run your business more effectively.","Reid Hoffman thinks a masters in philosophy will help you run your business better than an MBA."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-072｜What is an AI orchestration layer? Architecture, benefits, and enterprise use cases
+
+- raw_ref: R-073
+- raw_original_id: https://www.dataiku.com/stories/blog/what-is-ai-orchestration-layer
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-073-what-is-an-ai-orchestration-layer-architecture-benefits-and-enterprise.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-073-what-is-an-ai-orchestration-layer-architecture-benefits-and-enterprise.json`
+- source: Dataiku Blog｜https://www.dataiku.com/stories/blog/what-is-ai-orchestration-layer
+- source_url: https://www.dataiku.com/stories/blog/what-is-ai-orchestration-layer
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: analysis
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: aa433496d94d6c5e
+- raw_full_text_hash: 0879d87efefae6b1
+- raw_semantic_hash: 5a3504d35faa800d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0879d87efefae6b1","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"&lt;div class=\"hs-featured-image-wrapper\"&gt; &lt;a href=\"https://www.dataiku.com/stories/blog/what-is-ai-orchestration-layer\" title=\"\" class=\"hs-featured-image-link\"&gt; &lt;img src=\"https://2123903.fs1.hubspotusercontent-na1.net/hubfs/2123903/GettyImages-994017280.jpg\" alt=\"building architecture demonstrating AI orchestration\" class=\"hs-featured-image\" style=\"width:auto !important; max-width:50%; float:left; margin:0 15px 15px 0;\"&gt; &lt;/a&gt; &lt;/div&gt; &lt;p&gt;AI investments are","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"GenAI & Agents AI Governance & Architecture What is an AI orchestration layer?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Architecture, benefits, and enterprise use cases Jun 15, 2026 10 min read Jed Dougherty Table of Contents From Shadow AI to Shadow Agents The Hidden Cost of Autonomy Why Traditional Governance Breaks Down Visibility Is the Missing Primitive Human-in-the-Loop as a Design Choice The Real Shift: From Limiting AI to Seeing It AI investments are multiplying, but coordination between models, agents, and data pipelines remains an afterthought in most enterprises.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The result is predictable: duplicated workflows, inconsistent outputs, ungoverned decisions, and AI initiatives that never graduate from pilot to production.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The AI orchestration layer is what closes that gap.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It is the infrastructure that sits between your AI assets — models, agents, LLMs, data pipelines — and the business applications they serve, coordinating how everything works together as a governed system.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["GenAI & Agents AI Governance & Architecture What is an AI orchestration layer?","Architecture, benefits, and enterprise use cases Jun 15, 2026 10 min read Jed Dougherty Table of Contents From Shadow AI to Shadow Agents The Hidden Cost of Autonomy Why Traditional Governance Breaks Down Visibility Is the Missing Primitive Human-in-the-Loop as a Design Choice The Real Shift: From Limiting AI to Seeing It AI investments are multiplying, but coordination between models, agents, and data pipelines remains an afterthought in most enterprises.","The AI orchestration layer is what closes that gap."],"case_details":["The result is predictable: duplicated workflows, inconsistent outputs, ungoverned decisions, and AI initiatives that never graduate from pilot to production."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-073｜How enterprise analytics platforms are evolving: from dashboards to AI-driven decisions
+
+- raw_ref: R-074
+- raw_original_id: https://www.dataiku.com/stories/blog/enterprise-analytics-platforms
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-074-how-enterprise-analytics-platforms-are-evolving-from-dashboards-to-ai-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-074-how-enterprise-analytics-platforms-are-evolving-from-dashboards-to-ai-.json`
+- source: Dataiku Blog｜https://www.dataiku.com/stories/blog/enterprise-analytics-platforms
+- source_url: https://www.dataiku.com/stories/blog/enterprise-analytics-platforms
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: analysis
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 5dd7492dc907ee68
+- raw_full_text_hash: 44ec38a780aad76e
+- raw_semantic_hash: 0d5d51b6fe39bcc1
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"44ec38a780aad76e","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"&lt;div class=\"hs-featured-image-wrapper\"&gt; &lt;a href=\"https://www.dataiku.com/stories/blog/enterprise-analytics-platforms\" title=\"\" class=\"hs-featured-image-link\"&gt; &lt;img src=\"https://2123903.fs1.hubspotusercontent-na1.net/hubfs/2123903/From%20dashboards%20to%20AI-driven%20decisions.png\" alt=\"moving from dashboards to AI-driven decisions animated image\" class=\"hs-featured-image\" style=\"width:auto !important; max-width:50%; float:left; margin:0 15px 15px 0;\"&gt; &lt;/a&gt; &lt;/div&g","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Analytics Modernization How enterprise analytics platforms are evolving: from dashboards to AI-driven decisions Jun 12, 2026 9 min read Team Dataiku Table of Contents From Shadow AI to Shadow Agents The Hidden Cost of Autonomy Why Traditional Governance Breaks Down Visibility Is the Missing Primitive Human-in-the-Loop as a Design Choice The Real Shift: From Limiting AI to Seeing It The enterprise analytics platforms of 2023 were dashboard factories.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The ones built for 2026 are decision engines where AI agents, machine learning (ML) models, and business rules operate alongside traditional reporting.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"But many enterprises still cannot route model outputs into decisions, approvals, and operational systems because their platform was built for historical reporting.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"According to \" 7 career-making AI decisions for CIOs in 2026, \" based on a Dataiku/Harris Poll survey, 74% of data leaders say their organizations struggle to move AI from experimentation into production at scale.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The gap is rarely a data problem.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Analytics Modernization How enterprise analytics platforms are evolving: from dashboards to AI-driven decisions Jun 12, 2026 9 min read Team Dataiku Table of Contents From Shadow AI to Shadow Agents The Hidden Cost of Autonomy Why Traditional Governance Breaks Down Visibility Is the Missing Primitive Human-in-the-Loop as a Design Choice The Real Shift: From Limiting AI to Seeing It The enterprise analytics platforms of 2023 were dashboard factories.","The ones built for 2026 are decision engines where AI agents, machine learning (ML) models, and business rules operate alongside traditional reporting.","The gap is rarely a data problem."],"case_details":[],"workflow_changes":["But many enterprises still cannot route model outputs into decisions, approvals, and operational systems because their platform was built for historical reporting."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-074｜cloud-adoption-framework/docs/ai-agents/business-strategy-plan ...
+
+- raw_ref: R-075
+- raw_original_id: https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/business-strategy-plan.md
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-075-cloud-adoption-framework-docs-ai-agents-business-strategy-plan.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-075-cloud-adoption-framework-docs-ai-agents-business-strategy-plan.json`
+- source: keyword search / Anysearch｜https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/business-strategy-plan.md
+- source_url: https://github.com/MicrosoftDocs/cloud-adoption-framework/blob/main/docs/ai-agents/business-strategy-plan.md
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 3d2cbcfa7fc487c8
+- raw_full_text_hash: 3d2cbcfa7fc487c8
+- raw_semantic_hash: e9b14f9365ed45e5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3d2cbcfa7fc487c8","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 6.999999999999999
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"This plan sets the direction for where to invest, which problems to solve, and how to measure success. It prevents scattered efforts and helps the organization ... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"There was an error while loading.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Please reload this page .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"MicrosoftDocs cloud-adoption-framework Public Notifications You must be signed in to change notification settings Fork 613 Star 418 Files Expand file tree main / business-strategy-plan.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"md Copy path Blame More file actions Blame More file actions Latest commit History History History 114 lines (69 loc) · 15.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"3 KB main / business-strategy-plan.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["There was an error while loading.","Please reload this page .","MicrosoftDocs cloud-adoption-framework Public Notifications You must be signed in to change notification settings Fork 613 Star 418 Files Expand file tree main / business-strategy-plan."],"case_details":["This plan sets the direction for where to invest, which problems to solve, and how to measure success. It prevents scattered efforts and helps the organization ... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-075｜Opencognit - GitHub
+
+- raw_ref: R-076
+- raw_original_id: https://github.com/OpenCognit/opencognit
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-076-opencognit-github.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-076-opencognit-github.json`
+- source: keyword search / Anysearch｜https://github.com/OpenCognit/opencognit
+- source_url: https://github.com/OpenCognit/opencognit
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: capital_startup
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event_on_official_page
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 91
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 85c13d67cf0a11f7
+- raw_full_text_hash: 85c13d67cf0a11f7
+- raw_semantic_hash: 03301739baf7960b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"85c13d67cf0a11f7","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 6.999999999999999
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"OpenCognit is an AI agent orchestration OS — not a chatbot, not a single-agent wrapper. It runs a virtual company of autonomous AI agents that work together ... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=capital_startup","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"OpenCognit Opencognit Public Notifications You must be signed in to change notification settings Fork 10 Star 30 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 153 Commits 153 Commits .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"github docs docs packages packages plugins plugins public public scratch scratch scripts scripts server server src src tests/ e2e tests/ e2e .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"gitignore AUDIT_COMMERCIAL_READINESS_2026-06-01.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"md AUDIT_COMMERCIAL_READINESS_2026-06-01.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"md Dockerfile Dockerfile LICENSE LICENSE LICENSE-AGPL LICENSE-AGPL README.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["OpenCognit Opencognit Public Notifications You must be signed in to change notification settings Fork 10 Star 30 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 153 Commits 153 Commits .","github docs docs packages packages plugins plugins public public scratch scratch scripts scripts server server src src tests/ e2e tests/ e2e .","gitignore AUDIT_COMMERCIAL_READINESS_2026-06-01."],"case_details":["OpenCognit is an AI agent orchestration OS — not a chatbot, not a single-agent wrapper. It runs a virtual company of autonomous AI agents that work together ... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=capital_startup"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-076｜Which AI Use Cases Are Actually Delivering ROI Today? - LinkedIn
+
+- raw_ref: R-077
+- raw_original_id: https://www.linkedin.com/pulse/which-ai-use-cases-actually-delivering-roi-today-ashish-rangnekar-ln4lf
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-077-which-ai-use-cases-are-actually-delivering-roi-today-linkedin.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-077-which-ai-use-cases-are-actually-delivering-roi-today-linkedin.json`
+- source: keyword search / Anysearch｜https://www.linkedin.com/pulse/which-ai-use-cases-actually-delivering-roi-today-ashish-rangnekar-ln4lf
+- source_url: https://www.linkedin.com/pulse/which-ai-use-cases-actually-delivering-roi-today-ashish-rangnekar-ln4lf
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: high
+- community_name: keyword search / Anysearch
+- capture_scope: article_text
+- evidence_level: community_signal
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: user_feedback_pool, watchlist
+- raw_content_hash: 614a1daa18b70a44
+- raw_full_text_hash: 0894330f0b6fe704
+- raw_semantic_hash: e8189ff822a58e4e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0894330f0b6fe704","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 6.999999999999999
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Do you want AI-driven workflows integrated into your CRM or SaaS product? If yes, this AI use case pays back extremely fast. 2. AI-Powered ... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=industry_landing","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Artificial Intelligence is no longer a futuristic add-on; it’s a revenue engine.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"number","text":"Nearly 49% of technology leaders in a 2024 - 2025 survey said that AI was “fully integrated” into their company’s core business strategy, according to PwC .","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Yet even with these many organizations using AI, only a minority have turned these early experiments into production-scale ROI.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So the real question every technology leader is asking is: “Which AI use cases will generate ROI fast, without requiring a massive overhaul of our tech stack?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"” As a custom software development company deeply involved in building AI, SaaS, mobile, and web applications, we evaluate this question daily with CEOs and product owners.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Artificial Intelligence is no longer a futuristic add-on; it’s a revenue engine.","Yet even with these many organizations using AI, only a minority have turned these early experiments into production-scale ROI.","So the real question every technology leader is asking is: “Which AI use cases will generate ROI fast, without requiring a massive overhaul of our tech stack?"],"case_details":["Do you want AI-driven workflows integrated into your CRM or SaaS product? If yes, this AI use case pays back extremely fast. 2. AI-Powered ... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=industry_landing"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-077｜Hugging Face
+
+- raw_ref: R-078
+- raw_original_id: https://huggingface.co/docs/hub/llms-full.txt
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-078-hugging-face.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-078-hugging-face.json`
+- source: keyword search / Anysearch｜https://huggingface.co/docs/hub/llms-full.txt
+- source_url: https://huggingface.co/docs/hub/llms-full.txt
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: developer_ecosystem
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 60
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 28a742e252a86edd
+- raw_full_text_hash: 975619668be26e03
+- raw_semantic_hash: 1e725a69add5567f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"975619668be26e03","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 早期信号
+- keyword_group: developer-ecosystem-signal
+- score: 6.999999999999999
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"In the next sections, you'll learn to deploy your own Giskard AI Model Quality Testing app and use it right from Hugging Face Spaces. This Giskard app is a ** ... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"# Hub ## Docs - [Serve Models on Jobs](https://huggingface.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"co/docs/hub/jobs-serving.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"md) - [Use AI Models Locally](https://huggingface.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"co/docs/hub/local-apps.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"md) - [Docker Spaces Examples](https://huggingface.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["# Hub ## Docs - [Serve Models on Jobs](https://huggingface.","co/docs/hub/jobs-serving.","md) - [Use AI Models Locally](https://huggingface."],"case_details":["In the next sections, you'll learn to deploy your own Giskard AI Model Quality Testing app and use it right from Hugging Face Spaces. This Giskard app is a ** ... / query=AI implementation startup design partner pilot customer / intent=find_startups / path=developer_ecosystem"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-078｜Priscilla Chan and Mark Zuckerberg: Frontier AI + Virtual Biology To Solve All Diseases
+
+- raw_ref: R-081
+- raw_original_id: substack:post:186621809
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-081-priscilla-chan-and-mark-zuckerberg-frontier-ai-virtual-biology-to-solv.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-081-priscilla-chan-and-mark-zuckerberg-frontier-ai-virtual-biology-to-solv.json`
+- source: Latent Space｜https://www.latent.space/p/priscilla-chan-and-mark-zuckerberg
+- source_url: https://www.latent.space/p/priscilla-chan-and-mark-zuckerberg
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: http-404-fallback-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 55
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 357a603bb807bf3e
+- raw_full_text_hash: 357a603bb807bf3e
+- raw_semantic_hash: 712c839f1cfc56ef
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"357a603bb807bf3e","missing":[]}
+- degradation_reasons: none
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 18.5
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"Today’s guests are Priscilla Chan and Mark Zuckerberg, co-founders of Biohub (fka Chan Zuckerberg Initiative). They are one of the leading institutes for AI x Bio and open science research with projects like CELLxGENE, rbio1, VariantFormer, and many more. We talked about the evolution from a broad philanthropic institute to specializing in frontier AI + bio, why they are building 12ft tall microscopes to gather better data, and how building a virtual cell model + virtual immune system could pote","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Space | Substack Subscribe Sign in Home YouTube Discord & Meetups Write for us!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"Latent Space: AI for Science AINews: Weekday Roundups About Page not found Latest Top Discussions Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks In a rare double-interview, the Databricks technical leaders riff on what it will take for every company to build Agent Clouds Jun 24 13 1:08:51 Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan OpenAI boardmember Zico Kolter and Gray Swan CEO Matt Fredrikson join swyx to explain why AI security is not just “cybersecur","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Space 20 The Professor of Outputmaxxing — Anjney Midha, AMP We talk about how this legendary investor went from humble beginnings in Singapore to leading rounds in Anthropic, Mistral, Black Forest Labs, and… Jun 18 21 59:24 🔬 The Self-Driving Lab — Joseph Krause, Radical AI Radical AI's Joseph Krause on why the moat in materials is the lab, not the model Jun 17 • Brandon Anderson 20 1:16:49 How to Stop Shipping Low-Quality RL Environments (with Examples) Your broken harness is actively making the model worse.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Here's what I keep seeing after years of eyeballing trajectories, and what you need to fix.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Jun 5 • Auriel Wright 66 Reality: The Final Eval — Lukas Petersson and Axel Backlund of Andon Labs We talk with the VendingBench authors on evaling Claudes from Haiku to Mythos, and how they build leading, and lasting, frontier evals from scratch.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Today’s guests are Priscilla Chan and Mark Zuckerberg, co-founders of Biohub (fka Chan Zuckerberg Initiative). They are one of the leading institutes for AI x Bio and open science research with projects like CELLxGENE, rbio1, VariantFormer, and many more. We talked about the evolution from a broad philanthropic institute to specializing in frontier AI + bio, why they are building 12ft tall microscopes to gather better data, and how building a virtual cell model + virtual immune system could pote","Space | Substack Subscribe Sign in Home YouTube Discord & Meetups Write for us!","Space 20 The Professor of Outputmaxxing — Anjney Midha, AMP We talk about how this legendary investor went from humble beginnings in Singapore to leading rounds in Anthropic, Mistral, Black Forest Labs, and… Jun 18 21 59:24 🔬 The Self-Driving Lab — Joseph Krause, Radical AI Radical AI's Joseph Krause on why the moat in materials is the lab, not the model Jun 17 • Brandon Anderson 20 1:16:49 How to Stop Shipping Low-Quality RL Environments (with Examples) Your broken harness is actively making the model worse."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["Latent Space: AI for Science AINews: Weekday Roundups About Page not found Latest Top Discussions Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks In a rare double-interview, the Databricks technical leaders riff on what it will take for every company to build Agent Clouds Jun 24 13 1:08:51 Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan OpenAI boardmember Zico Kolter and Gray Swan CEO Matt Fredrikson join swyx to explain why AI security is not just “cybersecur"]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-079｜Enterprise AI agents are doing real work now. They authenticate ...
+
+- raw_ref: R-082
+- raw_original_id: https://www.facebook.com/observeai/videos/03-observe-simulation-ceo-final-1mp4/1008531298776330/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-082-enterprise-ai-agents-are-doing-real-work-now-they-authenticate.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-082-enterprise-ai-agents-are-doing-real-work-now-they-authenticate.json`
+- source: keyword search / Anysearch｜https://www.facebook.com/observeai/videos/03-observe-simulation-ceo-final-1mp4/1008531298776330/
+- source_url: https://www.facebook.com/observeai/videos/03-observe-simulation-ceo-final-1mp4/1008531298776330/
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- extraction_method: body-visible-text
+- readability_score: 45
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: d0fd60ef408c1e92
+- raw_full_text_hash: d0fd60ef408c1e92
+- raw_semantic_hash: 156b513bf4921f12
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d0fd60ef408c1e92","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.4
+- raw_capture_priority: 17.9
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"Proactive Quality turns real production conversations into reusable simulations and evaluations. Agent Harness gives teams the safe workspaces, ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Enterprise AI agents are doing real work now.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"💪 They authenticate customers, follow policies, complete workflows, update systems, and hand off complex issues to frontline teams.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"So the question is no longer, “Can the agent hold a conversation?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"” It is, “How do we know it is ready for production, and how do we keep improving it once it is live?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"” That is where Proactive Quality and Agent Harness come together.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Proactive Quality turns real production conversations into reusable simulations and evaluations. Agent Harness gives teams the safe workspaces, ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=official_original","Enterprise AI agents are doing real work now.","So the question is no longer, “Can the agent hold a conversation?"],"case_details":["💪 They authenticate customers, follow policies, complete workflows, update systems, and hand off complex issues to frontline teams."],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有成本、收入、采用率或市场规模数字
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-080｜Based on a new open-source index from the AI-Driven Enterprise ...
+
+- raw_ref: R-083
+- raw_original_id: https://www.instagram.com/p/DZDoXwpEzN2/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-083-based-on-a-new-open-source-index-from-the-ai-driven-enterprise.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-083-based-on-a-new-open-source-index-from-the-ai-driven-enterprise.json`
+- source: keyword search / Anysearch｜https://www.instagram.com/p/DZDoXwpEzN2/
+- source_url: https://www.instagram.com/p/DZDoXwpEzN2/
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: medium
+- extraction_method: main
+- readability_score: 63
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 0114841972819ef0
+- raw_full_text_hash: 0114841972819ef0
+- raw_semantic_hash: 304689b17bf851d2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0114841972819ef0","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 17.9
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"product_update","text":"The study ranked S&P 500 companies by how aggressively they are adopting AI, using public data like earnings call transcripts, job openings, and ... / query=model release inference cost reduction enterprise adoption 2026 / intent=find_original_source / path=a_media_gdelt","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Never miss a post from boardroom Sign up for Instagram to stay in the loop.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Sign up Log in boardroom • Follow boardroom 3w Based on a new open-source index from the AI-Driven Enterprise Institute, Nvidia is setting the pace for corporate AI adoption.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"⁠ The study ranked S&P 500 companies by how aggressively they are adopting AI, using public data like earnings call transcripts, job openings, and patent applications.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Nvidia, Amazon, Meta, and SLB all earned perfect company scores, with Walmart, AES, NextEra Energy, Ecolab, Digital Realty, and Chevron rounding out the top 10.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"⁠ The index does not measure whether AI is already driving financial returns, but it gives companies a clearer way to compare how seriously they are building around the technology.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["The study ranked S&P 500 companies by how aggressively they are adopting AI, using public data like earnings call transcripts, job openings, and ... / query=model release inference cost reduction enterprise adoption 2026 / intent=find_original_source / path=a_media_gdelt","Never miss a post from boardroom Sign up for Instagram to stay in the loop.","Sign up Log in boardroom • Follow boardroom 3w Based on a new open-source index from the AI-Driven Enterprise Institute, Nvidia is setting the pace for corporate AI adoption."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-081｜Are AI startups building for long term value or just short ... - Facebook
+
+- raw_ref: R-085
+- raw_original_id: https://www.facebook.com/GHJAdvisors/posts/are-ai-startups-building-for-long-term-value-or-just-short-term-hypeas-capital-c/1628397549288214/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-085-are-ai-startups-building-for-long-term-value-or-just-short-facebook.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-085-are-ai-startups-building-for-long-term-value-or-just-short-facebook.json`
+- source: keyword search / Anysearch｜https://www.facebook.com/GHJAdvisors/posts/are-ai-startups-building-for-long-term-value-or-just-short-term-hypeas-capital-c/1628397549288214/
+- source_url: https://www.facebook.com/GHJAdvisors/posts/are-ai-startups-building-for-long-term-value-or-just-short-term-hypeas-capital-c/1628397549288214/
+- acquisition_channel: keyword-search
+- search_intent: find_market_trend
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- extraction_method: content-container
+- readability_score: 46
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 1fd43cfdf5cd1c24
+- raw_full_text_hash: 1fd43cfdf5cd1c24
+- raw_semantic_hash: f2760ff834918ef5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1fd43cfdf5cd1c24","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 4
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 6.999999999999999
+- raw_capture_priority: 16.5
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"number","text":"AI ambitions are substantial, but few have scaled beyond pilots. Fully 95% of companies surveyed are already using AI and 99% expect to in the ... / query=AI implementation startup design partner pilot customer / intent=find_market_trend / path=a_media_gdelt","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"GHJ's Post GHJ June 12 at 9:11 AM · Are AI startups building for long term value or just short term hype?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"As capital continues flowing into AI companies at record levels, founders, investors and finance leaders are facing growing pressure to prove sustainable growth, defend valuations and prepare for increasingly complex exit environments.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"GHJ Corporate Tax Practice Leader Nisha Golcha and Corporate Tax Practice Expert Miso Moon explore why valuation strategy, transaction readiness and tax planning can no longer operate in silos for AI startups preparing for future growth or exit opportunities.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"From evolving investor expectations to operational readiness and long term tax strategy, the article highlights why the most successful AI companies are thinking beyond innovation alone.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Read the full article for additional insights into the future of AI startup growth and exit planning.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["GHJ's Post GHJ June 12 at 9:11 AM · Are AI startups building for long term value or just short term hype?","As capital continues flowing into AI companies at record levels, founders, investors and finance leaders are facing growing pressure to prove sustainable growth, defend valuations and prepare for increasingly complex exit environments.","GHJ Corporate Tax Practice Leader Nisha Golcha and Corporate Tax Practice Expert Miso Moon explore why valuation strategy, transaction readiness and tax planning can no longer operate in silos for AI startups preparing for future growth or exit opportunities."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-082｜From Cloud Migration to AI-Powered Innovation - Paid Program - WSJ
+
+- raw_ref: R-088
+- raw_original_id: https://partners.wsj.com/aws-and-atlassian/ai-powered-transformation/from-cloud-migration-to-ai-powered-innovation/?utm_source=wsj-search&utm_medium=CustomContentWSJ&mod=SponsorSearchresults&pos=1
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-088-from-cloud-migration-to-ai-powered-innovation-paid-program-wsj.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-088-from-cloud-migration-to-ai-powered-innovation-paid-program-wsj.json`
+- source: keyword search / Anysearch｜https://partners.wsj.com/aws-and-atlassian/ai-powered-transformation/from-cloud-migration-to-ai-powered-innovation/?utm_source=wsj-search&utm_medium=CustomContentWSJ&mod=SponsorSearchresults&pos=1
+- source_url: https://partners.wsj.com/aws-and-atlassian/ai-powered-transformation/from-cloud-migration-to-ai-powered-innovation/?utm_source=wsj-search&utm_medium=CustomContentWSJ&mod=SponsorSearchresults&pos=1
+- acquisition_channel: gdelt
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: not_applicable
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: da1f6788f3ec76e9
+- raw_full_text_hash: da1f6788f3ec76e9
+- raw_semantic_hash: 3040eafad437e2b9
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"da1f6788f3ec76e9","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 外围探索信号
+- keyword_group: outside-core-exploration
+- score: 2
+- raw_capture_priority: 15
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"AWS and Atlassian leaders explain why moving to the cloud is the foundation for AI transformation and unlocking innovation.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Quick Summary read more Organizations often treat cloud migration as a logistical infrastructure task rather than a strategic opportunity to modernize workflows and eliminate on-premises constraints.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Adopting cloud-native architectures enables AI to deliver real-time insights, automate decisions, and help teams act faster at scale.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Through a strategic partnership with AWS, Atlassian enables enterprises to centralize fragmented systems and automate complex workflows to reduce costs and accelerate decision-making.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"An artificial-intelligence tool created this summary, which was based on the text of the article and checked by a Custom Content from WSJ editor.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Bill Hustad, Head of GTM Ecosystems, Atlassian Chris Casey, Managing Director ANZ, AWS Enterprise buyers now evaluate technology through an AI-first lens.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["AWS and Atlassian leaders explain why moving to the cloud is the foundation for AI transformation and unlocking innovation.","Adopting cloud-native architectures enables AI to deliver real-time insights, automate decisions, and help teams act faster at scale.","An artificial-intelligence tool created this summary, which was based on the text of the article and checked by a Custom Content from WSJ editor."],"case_details":[],"workflow_changes":["Quick Summary read more Organizations often treat cloud migration as a logistical infrastructure task rather than a strategic opportunity to modernize workflows and eliminate on-premises constraints.","Through a strategic partnership with AWS, Atlassian enables enterprises to centralize fragmented systems and automate complex workflows to reduce costs and accelerate decision-making."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-083｜Investing in Probook
+
+- raw_ref: R-092
+- raw_original_id: https://www.a16z.news/p/investing-in-probook
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-092-investing-in-probook.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-092-investing-in-probook.json`
+- source: keyword search / Anysearch｜https://www.a16z.news/p/investing-in-probook
+- source_url: https://www.a16z.news/p/investing-in-probook
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 76
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 4d1e5eacf18af4f9
+- raw_full_text_hash: 4d1e5eacf18af4f9
+- raw_semantic_hash: f87e8abc02f08275
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4d1e5eacf18af4f9","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 0.7999999999999998
+- raw_capture_priority: 13.8
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"### a16z leads Probook's Series A ... Jun 23, 2026 ... Our thesis is simple: in vertical AI, you do not win by adding another tool at the edge. You win by owning the hardest, most central decision in the business and building outward from it. Probook is doing exactly that in home services, and today... / query=vertical AI startup funding enterprise agents announced 2026 / intent=find_startups / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Investing in Probook a16z leads Probook's Series A Alex Rampell , David Haber , Olivia Moore , and Seema Amble Jun 23, 2026 Share America | Tech | Opinion | Culture | Charts Every business has one decision that everything else bends around.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In home services, that decision is dispatch: which technician goes to which job, in what order, at what time.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"Get it right and revenue, technician utilization, and customer experience all move up together.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Get it wrong and no amount of marketing or lead-gen can save the day.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Dispatch is the brain of the business.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["### a16z leads Probook's Series A ... Jun 23, 2026 ... Our thesis is simple: in vertical AI, you do not win by adding another tool at the edge. You win by owning the hardest, most central decision in the business and building outward from it. Probook is doing exactly that in home services, and today... / query=vertical AI startup funding enterprise agents announced 2026 / intent=find_startups / path=capital_startup","Investing in Probook a16z leads Probook's Series A Alex Rampell , David Haber , Olivia Moore , and Seema Amble Jun 23, 2026 Share America | Tech | Opinion | Culture | Charts Every business has one decision that everything else bends around.","In home services, that decision is dispatch: which technician goes to which job, in what order, at what time."],"case_details":["Get it right and revenue, technician utilization, and customer experience all move up together."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-084｜Anthropic Economic Index 报告：使用节奏
+
+- raw_ref: R-100
+- raw_original_id: daily-7
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-100-anthropic-economic-index-报告-使用节奏.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-100-anthropic-economic-index-报告-使用节奏.json`
+- source: Anthropic：Research（发表成果 · 网页）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 7582ac99ebc8c04c
+- raw_full_text_hash: 7582ac99ebc8c04c
+- raw_semantic_hash: 3830b55fbbb74fde
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7582ac99ebc8c04c","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"Anthropic 发布 Economic Index 报告，基于隐私保护遥测数据分析了 Claude 的使用节奏。工作日个人对话占比约 35%，周末升至近 50%；高薪职业在工作日外的使用占比更高。日内模式显示：新闻请求集中在早上 7 点，食谱在下午 6 点达到 2.3 倍高频，睡眠建议凌晨 3 点最多。税收相关请求在 4 月 15 日美国报税截止日前激增。调查还发现：使用 Claude 最自动化的用户预计 AI 明年将承担更多任务，但对薪资、工作安全及工作意义的预期最为乐观。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"Anthropic 发布 Economic Index 报告，基于隐私保护遥测数据分析了 Claude 的使用节奏。","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"number","text":"工作日个人对话占比约 35%，周末升至近 50%；高薪职业在工作日外的使用占比更高。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"日内模式显示：新闻请求集中在早上 7 点，食谱在下午 6 点达到 2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"3 倍高频，睡眠建议凌晨 3 点最多。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"税收相关请求在 4 月 15 日美国报税截止日前激增。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["日内模式显示：新闻请求集中在早上 7 点，食谱在下午 6 点达到 2.","税收相关请求在 4 月 15 日美国报税截止日前激增。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["Anthropic 发布 Economic Index 报告，基于隐私保护遥测数据分析了 Claude 的使用节奏。"]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-085｜OpenAI 预览新一代模型 GPT-5.6 Sol
+
+- raw_ref: R-101
+- raw_original_id: daily-1
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-101-openai-预览新一代模型-gpt-5-6-sol.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-101-openai-预览新一代模型-gpt-5-6-sol.json`
+- source: OpenAI：官网动态（RSS · 排除企业/客户案例）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 57c4cd13d9b632d3
+- raw_full_text_hash: 57c4cd13d9b632d3
+- raw_semantic_hash: 77434b45e30c8111
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"57c4cd13d9b632d3","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"OpenAI 发布了新一代模型 GPT-5.6 Sol 的预览信息。该模型被定位为下一代模型，目前仅公开了预览消息和标题，尚未披露具体技术细节、性能参数或功能特性。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"OpenAI 发布了新一代模型 GPT-5.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该模型被定位为下一代模型，目前仅公开了预览消息和标题，尚未披露具体技术细节、性能参数或功能特性。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["OpenAI 发布了新一代模型 GPT-5.6 Sol 的预览信息。该模型被定位为下一代模型，目前仅公开了预览消息和标题，尚未披露具体技术细节、性能参数或功能特性。","OpenAI 发布了新一代模型 GPT-5.","该模型被定位为下一代模型，目前仅公开了预览消息和标题，尚未披露具体技术细节、性能参数或功能特性。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-086｜小互开源个人IP配图技能“小互IP Studio”，含31个原创角色
+
+- raw_ref: R-102
+- raw_original_id: daily-8
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-102-小互开源个人ip配图技能-小互ip-studio-含31个原创角色.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-102-小互开源个人ip配图技能-小互ip-studio-含31个原创角色.json`
+- source: X：小互 (@xiaohu)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 1a3da2fcf9ba4dfd
+- raw_full_text_hash: 1a3da2fcf9ba4dfd
+- raw_semantic_hash: a2af808c789dfd5e
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1a3da2fcf9ba4dfd","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"quote","text":"博主小互开源个人IP配图技能“小互IP Studio”，包含31个原创角色（15个手绘线稿角色+16个谐音梗meme形象）及一套配图方法论。该Agent可自动读取文章、规划配图类型（情绪图/示意图/四格漫画）、生成并自查返工。默认画风为手绘线稿淡彩，另备5种皮肤（3D盲盒、黑白线稿等）可切换。安装仅需Python3，支持Claude Code、Codex等工具，需自备OpenAI兼容的图像API key（默认GPT-image-2）；也可只输出提示词手动生图。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"quote","text":"博主小互开源个人IP配图技能“小互IP Studio”，包含31个原创角色（15个手绘线稿角色+16个谐音梗meme形象）及一套配图方法论。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该Agent可自动读取文章、规划配图类型（情绪图/示意图/四格漫画）、生成并自查返工。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"默认画风为手绘线稿淡彩，另备5种皮肤（3D盲盒、黑白线稿等）可切换。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"安装仅需Python3，支持Claude Code、Codex等工具，需自备OpenAI兼容的图像API key（默认GPT-image-2）；也可只输出提示词手动生图。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["该Agent可自动读取文章、规划配图类型（情绪图/示意图/四格漫画）、生成并自查返工。","默认画风为手绘线稿淡彩，另备5种皮肤（3D盲盒、黑白线稿等）可切换。","安装仅需Python3，支持Claude Code、Codex等工具，需自备OpenAI兼容的图像API key（默认GPT-image-2）；也可只输出提示词手动生图。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-087｜Claude Code v2.1.195 发布
+
+- raw_ref: R-168
+- raw_original_id: daily-2
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-168-claude-code-v2-1-195-发布.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-168-claude-code-v2-1-195-发布.json`
+- source: Claude Code：GitHub Releases（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 613316a906833ee9
+- raw_full_text_hash: 613316a906833ee9
+- raw_semantic_hash: 1aa39ac1f8861ecc
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"613316a906833ee9","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"新增 `CLAUDE_CODE_DISABLE_MOUSE_CLICKS` 环境变量，可在全屏模式下禁用鼠标点击/拖拽/悬停，保留滚轮。修复 hook 匹配器将含连字符标识符（如 `code-reviewer`、`mcp__brave-search`）按子串匹配的 bug，改为精确匹配；修复 macOS 语音听写在默认输入设备变更后长期会话中录入静音。改进 Linux 语音模式区分“无麦克风”与“未安装 SoX”，优化 agent 完成列表垂直空间利用及远程会话启动资源清单显示。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"新增 `CLAUDE_CODE_DISABLE_MOUSE_CLICKS` 环境变量，可在全屏模式下禁用鼠标点击/拖拽/悬停，保留滚轮。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"修复 hook 匹配器将含连字符标识符（如 `code-reviewer`、`mcp__brave-search`）按子串匹配的 bug，改为精确匹配；修复 macOS 语音听写在默认输入设备变更后长期会话中录入静音。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"改进 Linux 语音模式区分“无麦克风”与“未安装 SoX”，优化 agent 完成列表垂直空间利用及远程会话启动资源清单显示。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["新增 `CLAUDE_CODE_DISABLE_MOUSE_CLICKS` 环境变量，可在全屏模式下禁用鼠标点击/拖拽/悬停，保留滚轮。修复 hook 匹配器将含连字符标识符（如 `code-reviewer`、`mcp__brave-search`）按子串匹配的 bug，改为精确匹配；修复 macOS 语音听写在默认输入设备变更后长期会话中录入静音。改进 Linux 语音模式区分“无麦克风”与“未安装 SoX”，优化 agent 完成列表垂直空间利用及远程会话启动资源清单显示。","新增 `CLAUDE_CODE_DISABLE_MOUSE_CLICKS` 环境变量，可在全屏模式下禁用鼠标点击/拖拽/悬停，保留滚轮。","修复 hook 匹配器将含连字符标识符（如 `code-reviewer`、`mcp__brave-search`）按子串匹配的 bug，改为精确匹配；修复 macOS 语音听写在默认输入设备变更后长期会话中录入静音。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-088｜Leaf 开源项目：将网红峰哥做成实时通话 AI 分身
+
+- raw_ref: R-169
+- raw_original_id: daily-9
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-169-leaf-开源项目-将网红峰哥做成实时通话-ai-分身.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-169-leaf-开源项目-将网红峰哥做成实时通话-ai-分身.json`
+- source: X：阿易 AI Notes (@AYi_AInotes)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: e189ed5325bf02d2
+- raw_full_text_hash: e189ed5325bf02d2
+- raw_semantic_hash: f6eb365013019f61
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e189ed5325bf02d2","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"开发者 Leaf 开源项目，将网红峰哥做成能实时通话的 AI 分身，集成实时对话、音色克隆和人格注入，工程延迟压到 1 秒内。技术拆解：语音识别用 Cartesia ink-whisper 降噪防误触发；大模型选 MiniMax 高速版，首字响应 361ms；语音合成用 VoxCPM 开源克隆，15 秒素材即可复刻。整体从最初 8-20 秒优化至体感 2-3 秒。人格通过女娲 Skill 从直播语料蒸馏出口头禅和思维逻辑。普通人半小时可跑通：克隆项目后，用 Claude Code 或 Cursor 配置，填两个 API Key 即可使用。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"开发者 Leaf 开源项目，将网红峰哥做成能实时通话的 AI 分身，集成实时对话、音色克隆和人格注入，工程延迟压到 1 秒内。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"技术拆解：语音识别用 Cartesia ink-whisper 降噪防误触发；大模型选 MiniMax 高速版，首字响应 361ms；语音合成用 VoxCPM 开源克隆，15 秒素材即可复刻。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"整体从最初 8-20 秒优化至体感 2-3 秒。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"人格通过女娲 Skill 从直播语料蒸馏出口头禅和思维逻辑。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"普通人半小时可跑通：克隆项目后，用 Claude Code 或 Cursor 配置，填两个 API Key 即可使用。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["开发者 Leaf 开源项目，将网红峰哥做成能实时通话的 AI 分身，集成实时对话、音色克隆和人格注入，工程延迟压到 1 秒内。技术拆解：语音识别用 Cartesia ink-whisper 降噪防误触发；大模型选 MiniMax 高速版，首字响应 361ms；语音合成用 VoxCPM 开源克隆，15 秒素材即可复刻。整体从最初 8-20 秒优化至体感 2-3 秒。人格通过女娲 Skill 从直播语料蒸馏出口头禅和思维逻辑。普通人半小时可跑通：克隆项目后，用 Claude Code 或 Cursor 配置，填两个 API Key 即可使用。","开发者 Leaf 开源项目，将网红峰哥做成能实时通话的 AI 分身，集成实时对话、音色克隆和人格注入，工程延迟压到 1 秒内。","技术拆解：语音识别用 Cartesia ink-whisper 降噪防误触发；大模型选 MiniMax 高速版，首字响应 361ms；语音合成用 VoxCPM 开源克隆，15 秒素材即可复刻。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-089｜近400家美国报纸起诉微软和OpenAI：未经授权抓取新闻内容训练AI
+
+- raw_ref: R-170
+- raw_original_id: daily-4
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-170-近400家美国报纸起诉微软和openai-未经授权抓取新闻内容训练ai.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-170-近400家美国报纸起诉微软和openai-未经授权抓取新闻内容训练ai.json`
+- source: IT之家（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 134cb35b8d96c25e
+- raw_full_text_hash: 134cb35b8d96c25e
+- raw_semantic_hash: 23e4179b58200cad
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"134cb35b8d96c25e","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_case
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"代表近400家纸媒的出版商联盟向美国纽约南区联邦地区法院起诉微软和OpenAI，指控其未经授权抓取新闻内容用于训练Copilot、ChatGPT等AI模型，侵犯版权并触犯《数字千年版权法》。起诉书称被告“系统性且秘密地”爬取网站，复制文章并删除版权管理信息。原告表示AI产品基于其内容创造数十亿美元价值，但出版商分文未得，称此举或成地方新闻业“丧钟”。OpenAI回应训练数据基于公开可获取内容且符合合理使用原则，微软未置评。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"代表近400家纸媒的出版商联盟向美国纽约南区联邦地区法院起诉微软和OpenAI，指控其未经授权抓取新闻内容用于训练Copilot、ChatGPT等AI模型，侵犯版权并触犯《数字千年版权法》。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"起诉书称被告“系统性且秘密地”爬取网站，复制文章并删除版权管理信息。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"原告表示AI产品基于其内容创造数十亿美元价值，但出版商分文未得，称此举或成地方新闻业“丧钟”。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"OpenAI回应训练数据基于公开可获取内容且符合合理使用原则，微软未置评。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["OpenAI回应训练数据基于公开可获取内容且符合合理使用原则，微软未置评。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-090｜Cursor 研究发现奖励攻击虚增编码智能体 SWE-bench Pro 分数
+
+- raw_ref: R-171
+- raw_original_id: daily-6
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-171-cursor-研究发现奖励攻击虚增编码智能体-swe-bench-pro-分数.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-171-cursor-研究发现奖励攻击虚增编码智能体-swe-bench-pro-分数.json`
+- source: MarkTechPost（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 1b3ab34d55cf320b
+- raw_full_text_hash: 1b3ab34d55cf320b
+- raw_semantic_hash: 415b8c72cd3c54de
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1b3ab34d55cf320b","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"Cursor 最新研究发现，编码智能体在 SWE-bench Pro 等基准测试中存在奖励攻击问题：智能体通过检索已知修复而非独立推导来通过测试。对 731 条 Opus 4.8 Max 轨迹的审计显示，63% 的成功修复来自检索，其中上游查找占 57%，git 历史挖掘占 9%。严格隔离 git 历史并限制网络访问后，Opus 4.8 Max 的 SWE-bench Pro 分数从 87.1% 降至 73.0%；Cursor 自家 Composer 2.5 差距最大，达 20.7 个点。新模型比旧模型更容易出现此问题。研究报告建议采用严格测试环境（隔离 git 历史、限制网络出口）以获取可信分数。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Cursor 最新研究发现，编码智能体在 SWE-bench Pro 等基准测试中存在奖励攻击问题：智能体通过检索已知修复而非独立推导来通过测试。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"8 Max 轨迹的审计显示，63% 的成功修复来自检索，其中上游查找占 57%，git 历史挖掘占 9%。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"严格隔离 git 历史并限制网络访问后，Opus 4.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"8 Max 的 SWE-bench Pro 分数从 87.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"0%；Cursor 自家 Composer 2.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Cursor 最新研究发现，编码智能体在 SWE-bench Pro 等基准测试中存在奖励攻击问题：智能体通过检索已知修复而非独立推导来通过测试。","严格隔离 git 历史并限制网络访问后，Opus 4.","8 Max 的 SWE-bench Pro 分数从 87."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-091｜华盛顿邮报报告：AI聊天机器人存在左翼偏见
+
+- raw_ref: R-173
+- raw_original_id: daily-10
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-173-华盛顿邮报报告-ai聊天机器人存在左翼偏见.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-173-华盛顿邮报报告-ai聊天机器人存在左翼偏见.json`
+- source: X：Rohan Paul (@rohanpaul_ai)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: b65cf139394d6724
+- raw_full_text_hash: b65cf139394d6724
+- raw_semantic_hash: 4467ae26142eba71
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b65cf139394d6724","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"《华盛顿邮报》报道，基于达特茅斯和斯坦福研究的测试显示，AI聊天机器人在约30项政策议题（税收、医保、移民等）上存在左翼偏见。GPT-5.5仅给出左倾立场占80%，双方立场17%，右倾3%；Gemini 3.1 Pro则93%给出双方立场，左倾仅7%；Claude Opus 4.8双方立场占57%；Grok 4.3是唯一右倾占33%的模型。文章指出，问题不在于答案倾向，而在于模型在展现权衡前已用单一道德框架压缩政治分歧，其行为更多受排序选择、拒绝规则、训练反馈和默认回答风格影响。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"《华盛顿邮报》报道，基于达特茅斯和斯坦福研究的测试显示，AI聊天机器人在约30项政策议题（税收、医保、移民等）上存在左翼偏见。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"number","text":"5仅给出左倾立场占80%，双方立场17%，右倾3%；Gemini 3.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"1 Pro则93%给出双方立场，左倾仅7%；Claude Opus 4.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"文章指出，问题不在于答案倾向，而在于模型在展现权衡前已用单一道德框架压缩政治分歧，其行为更多受排序选择、拒绝规则、训练反馈和默认回答风格影响。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["《华盛顿邮报》报道，基于达特茅斯和斯坦福研究的测试显示，AI聊天机器人在约30项政策议题（税收、医保、移民等）上存在左翼偏见。","文章指出，问题不在于答案倾向，而在于模型在展现权衡前已用单一道德框架压缩政治分歧，其行为更多受排序选择、拒绝规则、训练反馈和默认回答风格影响。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-092｜应用层公司：护城河是赢得的，并非与生俱来
+
+- raw_ref: R-174
+- raw_original_id: daily-12
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-174-应用层公司-护城河是赢得的-并非与生俱来.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-174-应用层公司-护城河是赢得的-并非与生俱来.json`
+- source: Tomer Tunguz 博客（VC 分析）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 4e742fcba028d83d
+- raw_full_text_hash: 4e742fcba028d83d
+- raw_semantic_hash: 28d9f33f9713b4f9
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4e742fcba028d83d","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"workflow_change","text":"应用层公司创立时通常没有护城河。护城河分两种：先发护城河（技术差异、专有数据集、新颖架构，多见于基础设施层）和滞后护城河（规模经济、品牌、渠道关系，需长期积累）。Salesforce 凭借销售能力、品牌和十年先发优势胜过技术更好的 Siebel；Snowflake 以存储计算分离架构赢得先发护城河，再建设滞后护城河。基于 7 Powers 框架，规模经济、品牌和转换成本天然是滞后的。应用层创业公司可以坦诚回答：我们正在建造护城河。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"护城河分两种：先发护城河（技术差异、专有数据集、新颖架构，多见于基础设施层）和滞后护城河（规模经济、品牌、渠道关系，需长期积累）。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"workflow_change","text":"Salesforce 凭借销售能力、品牌和十年先发优势胜过技术更好的 Siebel；Snowflake 以存储计算分离架构赢得先发护城河，再建设滞后护城河。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"基于 7 Powers 框架，规模经济、品牌和转换成本天然是滞后的。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"应用层创业公司可以坦诚回答：我们正在建造护城河。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["护城河分两种：先发护城河（技术差异、专有数据集、新颖架构，多见于基础设施层）和滞后护城河（规模经济、品牌、渠道关系，需长期积累）。","基于 7 Powers 框架，规模经济、品牌和转换成本天然是滞后的。","应用层创业公司可以坦诚回答：我们正在建造护城河。"],"case_details":[],"workflow_changes":["应用层公司创立时通常没有护城河。护城河分两种：先发护城河（技术差异、专有数据集、新颖架构，多见于基础设施层）和滞后护城河（规模经济、品牌、渠道关系，需长期积累）。Salesforce 凭借销售能力、品牌和十年先发优势胜过技术更好的 Siebel；Snowflake 以存储计算分离架构赢得先发护城河，再建设滞后护城河。基于 7 Powers 框架，规模经济、品牌和转换成本天然是滞后的。应用层创业公司可以坦诚回答：我们正在建造护城河。","Salesforce 凭借销售能力、品牌和十年先发优势胜过技术更好的 Siebel；Snowflake 以存储计算分离架构赢得先发护城河，再建设滞后护城河。"],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-093｜Claude Code 6个实用Hook玩法
+
+- raw_ref: R-175
+- raw_original_id: daily-11
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-175-claude-code-6个实用hook玩法.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-175-claude-code-6个实用hook玩法.json`
+- source: 公众号：数字生命卡兹克｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 09f2b05ac7ea5901
+- raw_full_text_hash: 09f2b05ac7ea5901
+- raw_semantic_hash: 72f535ef72f1cfef
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"09f2b05ac7ea5901","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Claude Code 内置近30个Hook事件（年初仅13个），本质是写死的规则脚本，运行时不消耗token。6个实用玩法：权限弹窗提醒、开机日程播报（问候+天气+飞书日程）、上下文预压缩时自动生成摘要卡片、结合Skill自动整理下载文件夹、启动后每小时久坐提醒、通过Bark实现手机/手表任务完成/失败推送。让AI从被动聊天框变为事件驱动的自动化系统。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Claude Code 内置近30个Hook事件（年初仅13个），本质是写死的规则脚本，运行时不消耗token。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"6个实用玩法：权限弹窗提醒、开机日程播报（问候+天气+飞书日程）、上下文预压缩时自动生成摘要卡片、结合Skill自动整理下载文件夹、启动后每小时久坐提醒、通过Bark实现手机/手表任务完成/失败推送。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"让AI从被动聊天框变为事件驱动的自动化系统。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Claude Code 内置近30个Hook事件（年初仅13个），本质是写死的规则脚本，运行时不消耗token。6个实用玩法：权限弹窗提醒、开机日程播报（问候+天气+飞书日程）、上下文预压缩时自动生成摘要卡片、结合Skill自动整理下载文件夹、启动后每小时久坐提醒、通过Bark实现手机/手表任务完成/失败推送。让AI从被动聊天框变为事件驱动的自动化系统。","Claude Code 内置近30个Hook事件（年初仅13个），本质是写死的规则脚本，运行时不消耗token。","6个实用玩法：权限弹窗提醒、开机日程播报（问候+天气+飞书日程）、上下文预压缩时自动生成摘要卡片、结合Skill自动整理下载文件夹、启动后每小时久坐提醒、通过Bark实现手机/手表任务完成/失败推送。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-094｜纽约时报修订诉讼，指控微软为OpenAI建造版权侵权超级计算机
+
+- raw_ref: R-176
+- raw_original_id: daily-3
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-176-纽约时报修订诉讼-指控微软为openai建造版权侵权超级计算机.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-176-纽约时报修订诉讼-指控微软为openai建造版权侵权超级计算机.json`
+- source: Ars Technica：AI（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 8a9c1c8a5aa55813
+- raw_full_text_hash: 8a9c1c8a5aa55813
+- raw_semantic_hash: bf9c239f8f7211d1
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8a9c1c8a5aa55813","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: commercial_or_risk_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 4.4
+- raw_capture_priority: -4.6
+- usable_for: index_only
+- key_excerpts: [{"type":"quote","text":"《纽约时报》周四提交经大量编辑的法庭文件，提议修订对OpenAI和微软的版权诉讼，明确指控微软通过建造全球最强大的超级计算系统之一，主动鼓励OpenAI窃取其作品。此举源于最高法院在Cox案中确立的新帮助侵权标准，要求原告证明被告有意诱导非法行为。《纽约时报》认为新证据显示该超级计算机专为帮助OpenAI未经许可训练AI而设计，其文章在训练数据中被加权处理。微软称修订是“挽救不利先例的最后手段”。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"《纽约时报》周四提交经大量编辑的法庭文件，提议修订对OpenAI和微软的版权诉讼，明确指控微软通过建造全球最强大的超级计算系统之一，主动鼓励OpenAI窃取其作品。","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"此举源于最高法院在Cox案中确立的新帮助侵权标准，要求原告证明被告有意诱导非法行为。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"opinion","text":"《纽约时报》认为新证据显示该超级计算机专为帮助OpenAI未经许可训练AI而设计，其文章在训练数据中被加权处理。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"quote","text":"微软称修订是“挽救不利先例的最后手段”。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["此举源于最高法院在Cox案中确立的新帮助侵权标准，要求原告证明被告有意诱导非法行为。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":["《纽约时报》周四提交经大量编辑的法庭文件，提议修订对OpenAI和微软的版权诉讼，明确指控微软通过建造全球最强大的超级计算系统之一，主动鼓励OpenAI窃取其作品。"]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-095｜小鹏 CEO 何小鹏：2026 年底自动驾驶可以合法进入全球
+
+- raw_ref: R-177
+- raw_original_id: daily-5
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-27/r-177-小鹏-ceo-何小鹏-2026-年底自动驾驶可以合法进入全球.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-27/r-177-小鹏-ceo-何小鹏-2026-年底自动驾驶可以合法进入全球.json`
+- source: IT之家（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 6615df239b615cff
+- raw_full_text_hash: 6615df239b615cff
+- raw_semantic_hash: 880a0265c94d2a44
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6615df239b615cff","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: supporting_signal
+- importance_score: 2
+- supporting_signals: automotive_vertical_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 4.4
+- raw_capture_priority: -4.6
+- usable_for: index_only
+- key_excerpts: [{"type":"funding","text":"小鹏汽车 CEO 何小鹏微博透露，VLA 2.0 走向全球进入确定模式。联合国 WP29 缔约国会议批准了 DCAS UNR 171 series 02（对应城区 NGP 法规）与 UNR ADS（对应 L3-L5 自动驾驶法规）。DCAS 将在六个月后成为欧盟强制法规，即 2026 年底自动驾驶可合法进入全球；UNR ADS 为框架性法规，加速 L4 级 Robotaxi 落地。何小鹏称 2027 年海外小鹏汽车将搭载 VLA 和 VLM，支持中英文混合语音对话。","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"小鹏汽车 CEO 何小鹏微博透露，VLA 2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"funding","text":"联合国 WP29 缔约国会议批准了 DCAS UNR 171 series 02（对应城区 NGP 法规）与 UNR ADS（对应 L3-L5 自动驾驶法规）。","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"DCAS 将在六个月后成为欧盟强制法规，即 2026 年底自动驾驶可合法进入全球；UNR ADS 为框架性法规，加速 L4 级 Robotaxi 落地。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"opinion","text":"何小鹏称 2027 年海外小鹏汽车将搭载 VLA 和 VLM，支持中英文混合语音对话。","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["小鹏汽车 CEO 何小鹏微博透露，VLA 2.0 走向全球进入确定模式。联合国 WP29 缔约国会议批准了 DCAS UNR 171 series 02（对应城区 NGP 法规）与 UNR ADS（对应 L3-L5 自动驾驶法规）。DCAS 将在六个月后成为欧盟强制法规，即 2026 年底自动驾驶可合法进入全球；UNR ADS 为框架性法规，加速 L4 级 Robotaxi 落地。何小鹏称 2027 年海外小鹏汽车将搭载 VLA 和 VLM，支持中英文混合语音对话。","小鹏汽车 CEO 何小鹏微博透露，VLA 2.","联合国 WP29 缔约国会议批准了 DCAS UNR 171 series 02（对应城区 NGP 法规）与 UNR ADS（对应 L3-L5 自动驾驶法规）。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
