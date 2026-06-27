@@ -1,0 +1,283 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-076",
+  "title": "Opencognit - GitHub",
+  "original_url": "https://github.com/OpenCognit/opencognit",
+  "canonical_url": "https://github.com/OpenCognit/opencognit",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event_on_official_page",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "capital_startup",
+  "search_path_label": "资本与创业公司路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-27T03:15:06.265Z",
+  "language": "mixed",
+  "full_text": "OpenCognit\nOpencognit\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n10\nStar\n30\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n153 Commits\n153 Commits\n.github\n.github\ndocs\ndocs\npackages\npackages\nplugins\nplugins\npublic\npublic\nscratch\nscratch\nscripts\nscripts\nserver\nserver\nsrc\nsrc\ntests/ e2e\ntests/ e2e\n.env.example\n.env.example\n.env.production.example\n.env.production.example\n.gitignore\n.gitignore\nAUDIT_COMMERCIAL_READINESS_2026-06-01.md\nAUDIT_COMMERCIAL_READINESS_2026-06-01.md\nCLAUDE.md\nCLAUDE.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nLICENSE-AGPL\nLICENSE-AGPL\nREADME.md\nREADME.md\ndocker-compose.yml\ndocker-compose.yml\ndrizzle.config.ts\ndrizzle.config.ts\nindex.html\nindex.html\ninstall.sh\ninstall.sh\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npackage.json.new\npackage.json.new\nplaywright.config.ts\nplaywright.config.ts\nsetup.sh\nsetup.sh\ntailwind.config.ts\ntailwind.config.ts\ntsconfig.json\ntsconfig.json\nvite.config.ts\nvite.config.ts\nvitest.config.ts\nvitest.config.ts\nvitest.server.config.ts\nvitest.server.config.ts\nvitest.ui.config.ts\nvitest.ui.config.ts\nView all files\nRepository files navigation\nOpenCognit\nBuild Your Zero Human Company.\nThe AI agent orchestration OS — CEO orchestrator, persistent memory, real execution, atomic budgets. Self-hosted. No cloud lock-in.\n⚠️ License Change Notice\nThis repository contains OpenCognit Community Edition v0.9.0, the final AGPL-3.0 release.\nAs of June 2026, OpenCognit is no longer open source. Active development continues under a commercial license as OpenCognit Pro .\nThe Community Edition remains available under AGPL-3.0 but is no longer maintained . Security patches and new features are exclusive to Pro.\nRead the full announcement →\nWhat is OpenCognit?\nOpenCognit is an AI agent orchestration OS — not a chatbot, not a single-agent wrapper. It runs a virtual company of autonomous AI agents that work together without you watching.\nYou set a goal. The CEO agent breaks it down, assigns tasks to specialists, reviews their work with a built-in Critic loop, and escalates blockers — while you sleep.\nYou → Goal → CEO Agent → Dev Agent → Writer Agent → Researcher Agent\n↑ ↓ ↓\nPersistent Memory ←── Critic ←── Results ←────┘\nOpenCognit Pro vs Community Edition\nFeature\nCommunity Edition (AGPL)\nOpenCognit Pro\nLicense\nAGPL-3.0\nCommercial\nActive Development\n❌ Archived\n✅ Continuous\nSecurity Patches\n❌ None\n✅ Monthly\nDocker Sandbox\n❌ Blocklist only\n✅ Mandatory isolation\nPostgreSQL Support\n⚠️ Experimental\n✅ Production-ready\nAudit Logging\n✅ Full compliance trail\nPer-Tenant Rate Limiting\nSSO / SAML\n✅ Enterprise\nSupport\n✅ Email + Priority\nPrice\nFree\nFrom €29/mo\nCore Features\nCEO Orchestrator — Extended Thinking before delegation\nPersistent Memory — MemPalace + Semantic + SOUL documents per agent\nCritic Loop — Every output reviewed before \"done\"\nAtomic Budgets — Hard limits enforced at the cent level\nTask DAG — Dependencies auto-resolve, downstream tasks unlock\nWar Room — Live agent grid with real-time execution traces\nOrg Chart — Agent hierarchies, roles, and peer meetings\nPlugin System — Custom adapters, widgets, API endpoints\nMCP Server — Use OpenCognit from Cursor, Claude Code, Windsurf\nCLI Executor — Live bash streaming with SSE\nQuick Start (Community Edition)\n⚠️ The Community Edition is provided as-is without support or updates.\n# 1. Clone\ngit clone https://github.com/OpenCognit/opencognit.git\ncd opencognit\n# 2. Setup\nbash setup.sh\n# 3. Run\nnpm run dev\nThe UI opens at http://localhost:3200 . The API runs on http://localhost:3201 .\nGet OpenCognit Pro\nOpenCognit Pro is the actively developed, commercially licensed version with enterprise security, priority support, and regular updates.\nPricing\nPlan\nPrice\nIncludes\nSolo\n€29/mo\n10 agents, 1 company, email support\nTeam\n€99/mo\nUnlimited agents, 5 companies, SSO, priority support\nEnterprise\nCustom\nUnlimited everything, SAML, on-premise, SLA\n👉 Start Free Trial →\nArchitecture\n┌─────────────────────────────────────────┐\n│ React 19 + Vite 6 │\n│ Glassmorphism UI, Dark Mode │\n└─────────────┬───────────────────────────┘\n│ REST / SSE / WebSocket\n┌─────────────▼───────────────────────────┐\n│ Express 5 + SQLite/PostgreSQL │\n│ ┌─────────┐ ┌─────────┐ ┌──────────┐ │\n│ │ CEO │ │ Critic │ │ Memory │ │\n│ │Orchestr.│ │ Loop │ │ Palace │ │\n│ └─────────┘ └─────────┘ └──────────┘ │\n│ ┌─────────┐ ┌─────────┐ ┌──────────┐ │\n│ │ Task │ │ Budget │ │ Agent │ │\n│ │ DAG │ │ Control │ │ Registry │ │\n│ └─────────┘ └─────────┘ └──────────┘ │\n└─────────────────────────────────────────┘\n│ Adapters (Anthropic, OpenAI, Ollama, ...)\n┌─────────────▼───────────────────────────┐\n│ LLM Providers + Local Models │\n└─────────────────────────────────────────┘\nTech Stack\nLayer\nTechnology\nFrontend\nReact 19, Vite 6, Tailwind CSS, Framer Motion\nBackend\nExpress 5, TypeScript strict, ESM\nDatabase\nSQLite (WAL) / PostgreSQL\nORM\nDrizzle ORM\nAuth\nBetterAuth + JWT fallback\nReal-time\nWebSocket + Server-Sent Events\nValidation\nZod\nTesting\nVitest + Playwright\nWhy the license change?\nOpenCognit started as an AGPL project to push the boundaries of autonomous AI agents. After 6 months of development, the reality is clear:\nAGPL blocks enterprise adoption — legal teams reject it\nNo sustainable funding — 30 stars don't pay server bills\nCompetitors (Paperclip, CrewAI) have 1000× more resources with MIT/Apache\nTo keep building OpenCognit into a production-grade product , we need a sustainable model. The Community Edition remains free and open (AGPL). Pro funds continued development.\nRead the full reasoning →\nCommunity\n🐦 X / Twitter\nLicense\nThis repository contains OpenCognit Community Edition v0.9.0 , licensed under AGPL-3.0 .\nOpenCognit Pro is licensed under the OpenCognit Commercial License Agreement .\nCopyright © 2026 Panto. All rights reserved.\nAbout\nThe open-source AI agent OS. CEO orchestrator, persistent memory, real execution, atomic budgets. Self-hosted. No cloud lock-in.\nopencognit.mytherrablockchain.org\nTopics\nopen-source\ntypescript\nself-hosted\nmulti-agent\nopenai\nautonomous-agents\nai-agents\nclaude-api\nopenrouter\nollama\nllm-orchestration\nai-orchestration\nResources\nReadme\nLicense\nUnknown, Unknown licenses found\nLicenses found\nUnknown\nLICENSE\nUnknown\nLICENSE-AGPL\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n30\nstars\nWatchers\nwatching\nForks\n10\nforks\nReport repository\nReleases\ntags\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n97.4%\nJavaScript\n1.3%\nCSS\n1.0%\nShell\n0.3%\nPLpgSQL\n0.0%\nDockerfile\n0.0%",
+  "clean_text": "OpenCognit\nOpencognit\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n10\nStar\n30\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n153 Commits\n153 Commits\n.github\n.github\ndocs\ndocs\npackages\npackages\nplugins\nplugins\npublic\npublic\nscratch\nscratch\nscripts\nscripts\nserver\nserver\nsrc\nsrc\ntests/ e2e\ntests/ e2e\n.env.example\n.env.example\n.env.production.example\n.env.production.example\n.gitignore\n.gitignore\nAUDIT_COMMERCIAL_READINESS_2026-06-01.md\nAUDIT_COMMERCIAL_READINESS_2026-06-01.md\nCLAUDE.md\nCLAUDE.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nLICENSE-AGPL\nLICENSE-AGPL\nREADME.md\nREADME.md\ndocker-compose.yml\ndocker-compose.yml\ndrizzle.config.ts\ndrizzle.config.ts\nindex.html\nindex.html\ninstall.sh\ninstall.sh\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npackage.json.new\npackage.json.new\nplaywright.config.ts\nplaywright.config.ts\nsetup.sh\nsetup.sh\ntailwind.config.ts\ntailwind.config.ts\ntsconfig.json\ntsconfig.json\nvite.config.ts\nvite.config.ts\nvitest.config.ts\nvitest.config.ts\nvitest.server.config.ts\nvitest.server.config.ts\nvitest.ui.config.ts\nvitest.ui.config.ts\nView all files\nRepository files navigation\nOpenCognit\nBuild Your Zero Human Company.\nThe AI agent orchestration OS — CEO orchestrator, persistent memory, real execution, atomic budgets. Self-hosted. No cloud lock-in.\n⚠️ License Change Notice\nThis repository contains OpenCognit Community Edition v0.9.0, the final AGPL-3.0 release.\nAs of June 2026, OpenCognit is no longer open source. Active development continues under a commercial license as OpenCognit Pro .\nThe Community Edition remains available under AGPL-3.0 but is no longer maintained . Security patches and new features are exclusive to Pro.\nRead the full announcement →\nWhat is OpenCognit?\nOpenCognit is an AI agent orchestration OS — not a chatbot, not a single-agent wrapper. It runs a virtual company of autonomous AI agents that work together without you watching.\nYou set a goal. The CEO agent breaks it down, assigns tasks to specialists, reviews their work with a built-in Critic loop, and escalates blockers — while you sleep.\nYou → Goal → CEO Agent → Dev Agent → Writer Agent → Researcher Agent\n↑ ↓ ↓\nPersistent Memory ←── Critic ←── Results ←────┘\nOpenCognit Pro vs Community Edition\nFeature\nCommunity Edition (AGPL)\nOpenCognit Pro\nLicense\nAGPL-3.0\nCommercial\nActive Development\n❌ Archived\n✅ Continuous\nSecurity Patches\n❌ None\n✅ Monthly\nDocker Sandbox\n❌ Blocklist only\n✅ Mandatory isolation\nPostgreSQL Support\n⚠️ Experimental\n✅ Production-ready\nAudit Logging\n✅ Full compliance trail\nPer-Tenant Rate Limiting\nSSO / SAML\n✅ Enterprise\nSupport\n✅ Email + Priority\nPrice\nFree\nFrom €29/mo\nCore Features\nCEO Orchestrator — Extended Thinking before delegation\nPersistent Memory — MemPalace + Semantic + SOUL documents per agent\nCritic Loop — Every output reviewed before \"done\"\nAtomic Budgets — Hard limits enforced at the cent level\nTask DAG — Dependencies auto-resolve, downstream tasks unlock\nWar Room — Live agent grid with real-time execution traces\nOrg Chart — Agent hierarchies, roles, and peer meetings\nPlugin System — Custom adapters, widgets, API endpoints\nMCP Server — Use OpenCognit from Cursor, Claude Code, Windsurf\nCLI Executor — Live bash streaming with SSE\nQuick Start (Community Edition)\n⚠️ The Community Edition is provided as-is without support or updates.\n# 1. Clone\ngit clone https://github.com/OpenCognit/opencognit.git\ncd opencognit\n# 2. Setup\nbash setup.sh\n# 3. Run\nnpm run dev\nThe UI opens at http://localhost:3200 . The API runs on http://localhost:3201 .\nGet OpenCognit Pro\nOpenCognit Pro is the actively developed, commercially licensed version with enterprise security, priority support, and regular updates.\nPricing\nPlan\nPrice\nIncludes\nSolo\n€29/mo\n10 agents, 1 company, email support\nTeam\n€99/mo\nUnlimited agents, 5 companies, SSO, priority support\nEnterprise\nCustom\nUnlimited everything, SAML, on-premise, SLA\n👉 Start Free Trial →\nArchitecture\n┌─────────────────────────────────────────┐\n│ React 19 + Vite 6 │\n│ Glassmorphism UI, Dark Mode │\n└─────────────┬───────────────────────────┘\n│ REST / SSE / WebSocket\n┌─────────────▼───────────────────────────┐\n│ Express 5 + SQLite/PostgreSQL │\n│ ┌─────────┐ ┌─────────┐ ┌──────────┐ │\n│ │ CEO │ │ Critic │ │ Memory │ │\n│ │Orchestr.│ │ Loop │ │ Palace │ │\n│ └─────────┘ └─────────┘ └──────────┘ │\n│ ┌─────────┐ ┌─────────┐ ┌──────────┐ │\n│ │ Task │ │ Budget │ │ Agent │ │\n│ │ DAG │ │ Control │ │ Registry │ │\n│ └─────────┘ └─────────┘ └──────────┘ │\n└─────────────────────────────────────────┘\n│ Adapters (Anthropic, OpenAI, Ollama, ...)\n┌─────────────▼───────────────────────────┐\n│ LLM Providers + Local Models │\n└─────────────────────────────────────────┘\nTech Stack\nLayer\nTechnology\nFrontend\nReact 19, Vite 6, Tailwind CSS, Framer Motion\nBackend\nExpress 5, TypeScript strict, ESM\nDatabase\nSQLite (WAL) / PostgreSQL\nORM\nDrizzle ORM\nAuth\nBetterAuth + JWT fallback\nReal-time\nWebSocket + Server-Sent Events\nValidation\nZod\nTesting\nVitest + Playwright\nWhy the license change?\nOpenCognit started as an AGPL project to push the boundaries of autonomous AI agents. After 6 months of development, the reality is clear:\nAGPL blocks enterprise adoption — legal teams reject it\nNo sustainable funding — 30 stars don't pay server bills\nCompetitors (Paperclip, CrewAI) have 1000× more resources with MIT/Apache\nTo keep building OpenCognit into a production-grade product , we need a sustainable model. The Community Edition remains free and open (AGPL). Pro funds continued development.\nRead the full reasoning →\nCommunity\n🐦 X / Twitter\nLicense\nThis repository contains OpenCognit Community Edition v0.9.0 , licensed under AGPL-3.0 .\nOpenCognit Pro is licensed under the OpenCognit Commercial License Agreement .\nCopyright © 2026 Panto. All rights reserved.\nAbout\nThe open-source AI agent OS. CEO orchestrator, persistent memory, real execution, atomic budgets. Self-hosted. No cloud lock-in.\nopencognit.mytherrablockchain.org\nTopics\nopen-source\ntypescript\nself-hosted\nmulti-agent\nopenai\nautonomous-agents\nai-agents\nclaude-api\nopenrouter\nollama\nllm-orchestration\nai-orchestration\nResources\nReadme\nLicense\nUnknown, Unknown licenses found\nLicenses found\nUnknown\nLICENSE\nUnknown\nLICENSE-AGPL\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n30\nstars\nWatchers\nwatching\nForks\n10\nforks\nReport repository\nReleases\ntags\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n97.4%\nJavaScript\n1.3%\nCSS\n1.0%\nShell\n0.3%\nPLpgSQL\n0.0%\nDockerfile\n0.0%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-27/r-076-opencognit-github.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-27/r-076-opencognit-github.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 6786,
+    "paragraph_count": 88,
+    "sentence_count": 43,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0009,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6786,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "85c13d67cf0a11f7",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "6b1d43b01b14a2e1",
+  "content_hash": "85c13d67cf0a11f7",
+  "full_text_hash": "85c13d67cf0a11f7",
+  "semantic_hash": "03301739baf7960b",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-27T03:15:06.265Z",
+  "last_seen_at": "2026-06-27T03:15:06.265Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "OpenCognit is an AI agent orchestration OS — not a chatbot, not a single-agent wrapper. It runs a virtual company of autonomous AI agents that work together ... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=capital_startup",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "OpenCognit Opencognit Public Notifications You must be signed in to change notification settings Fork 10 Star 30 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 153 Commits 153 Commits .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "github docs docs packages packages plugins plugins public public scratch scratch scripts scripts server server src src tests/ e2e tests/ e2e .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore AUDIT_COMMERCIAL_READINESS_2026-06-01.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md AUDIT_COMMERCIAL_READINESS_2026-06-01.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md Dockerfile Dockerfile LICENSE LICENSE LICENSE-AGPL LICENSE-AGPL README.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Anthropic",
+      "GitHub",
+      "Cursor"
+    ],
+    "products": [
+      "agent",
+      "agents",
+      "CLAUDE",
+      "Agent",
+      "MCP",
+      "Cursor",
+      "Claude",
+      "claude"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "法务 / 律师"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "定价 / 计费变化",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "10",
+      "30\nm",
+      "153",
+      "2",
+      "2026",
+      "06",
+      "01",
+      "0.9"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "OpenCognit Opencognit Public Notifications You must be signed in to change notification settings Fork 10 Star 30 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 153 Commits 153 Commits .",
+      "github docs docs packages packages plugins plugins public public scratch scratch scripts scripts server server src src tests/ e2e tests/ e2e .",
+      "gitignore AUDIT_COMMERCIAL_READINESS_2026-06-01."
+    ],
+    "case_details": [
+      "OpenCognit is an AI agent orchestration OS — not a chatbot, not a single-agent wrapper. It runs a virtual company of autonomous AI agents that work together ... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=capital_startup"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "法务 / 律师"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Opencognit - GitHub\n\n- raw_id: R-076\n- original_url: https://github.com/OpenCognit/opencognit\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-27T03:15:06.265Z\n\n## clean_text\n\nOpenCognit\nOpencognit\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n10\nStar\n30\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n153 Commits\n153 Commits\n.github\n.github\ndocs\ndocs\npackages\npackages\nplugins\nplugins\npublic\npublic\nscratch\nscratch\nscripts\nscripts\nserver\nserver\nsrc\nsrc\ntests/ e2e\ntests/ e2e\n.env.example\n.env.example\n.env.production.example\n.env.production.example\n.gitignore\n.gitignore\nAUDIT_COMMERCIAL_READINESS_2026-06-01.md\nAUDIT_COMMERCIAL_READINESS_2026-06-01.md\nCLAUDE.md\nCLAUDE.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nLICENSE-AGPL\nLICENSE-AGPL\nREADME.md\nREADME.md\ndocker-compose.yml\ndocker-compose.yml\ndrizzle.config.ts\ndrizzle.config.ts\nindex.html\nindex.html\ninstall.sh\ninstall.sh\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npackage.json.new\npackage.json.new\nplaywright.config.ts\nplaywright.config.ts\nsetup.sh\nsetup.sh\ntailwind.config.ts\ntailwind.config.ts\ntsconfig.json\ntsconfig.json\nvite.config.ts\nvite.config.ts\nvitest.config.ts\nvitest.config.ts\nvitest.server.config.ts\nvitest.server.config.ts\nvitest.ui.config.ts\nvitest.ui.config.ts\nView all files\nRepository files navigation\nOpenCognit\nBuild Your Zero Human Company.\nThe AI agent orchestration OS — CEO orchestrator, persistent memory, real execution, atomic budgets. Self-hosted. No cloud lock-in.\n⚠️ License Change Notice\nThis repository contains OpenCognit Community Edition v0.9.0, the final AGPL-3.0 release.\nAs of June 2026, OpenCognit is no longer open source. Active development continues under a commercial license as OpenCognit Pro .\nThe Community Edition remains available under AGPL-3.0 but is no longer maintained . Security patches and new features are exclusive to Pro.\nRead the full announcement →\nWhat is OpenCognit?\nOpenCognit is an AI agent orchestration OS — not a chatbot, not a single-agent wrapper. It runs a virtual company of autonomous AI agents that work together without you watching.\nYou set a goal. The CEO agent breaks it down, assigns tasks to specialists, reviews their work with a built-in Critic loop, and escalates blockers — while you sleep.\nYou → Goal → CEO Agent → Dev Agent → Writer Agent → Researcher Agent\n↑ ↓ ↓\nPersistent Memory ←── Critic ←── Results ←────┘\nOpenCognit Pro vs Community Edition\nFeature\nCommunity Edition (AGPL)\nOpenCognit Pro\nLicense\nAGPL-3.0\nCommercial\nActive Development\n❌ Archived\n✅ Continuous\nSecurity Patches\n❌ None\n✅ Monthly\nDocker Sandbox\n❌ Blocklist only\n✅ Mandatory isolation\nPostgreSQL Support\n⚠️ Experimental\n✅ Production-ready\nAudit Logging\n✅ Full compliance trail\nPer-Tenant Rate Limiting\nSSO / SAML\n✅ Enterprise\nSupport\n✅ Email + Priority\nPrice\nFree\nFrom €29/mo\nCore Features\nCEO Orchestrator — Extended Thinking before delegation\nPersistent Memory — MemPalace + Semantic + SOUL documents per agent\nCritic Loop — Every output reviewed before \"done\"\nAtomic Budgets — Hard limits enforced at the cent level\nTask DAG — Dependencies auto-resolve, downstream tasks unlock\nWar Room — Live agent grid with real-time execution traces\nOrg Chart — Agent hierarchies, roles, and peer meetings\nPlugin System — Custom adapters, widgets, API endpoints\nMCP Server — Use OpenCognit from Cursor, Claude Code, Windsurf\nCLI Executor — Live bash streaming with SSE\nQuick Start (Community Edition)\n⚠️ The Community Edition is provided as-is without support or updates.\n# 1. Clone\ngit clone https://github.com/OpenCognit/opencognit.git\ncd opencognit\n# 2. Setup\nbash setup.sh\n# 3. Run\nnpm run dev\nThe UI opens at http://localhost:3200 . The API runs on http://localhost:3201 .\nGet OpenCognit Pro\nOpenCognit Pro is the actively developed, commercially licensed version with enterprise security, priority support, and regular updates.\nPricing\nPlan\nPrice\nIncludes\nSolo\n€29/mo\n10 agents, 1 company, email support\nTeam\n€99/mo\nUnlimited agents, 5 companies, SSO, priority support\nEnterprise\nCustom\nUnlimited everything, SAML, on-premise, SLA\n👉 Start Free Trial →\nArchitecture\n┌─────────────────────────────────────────┐\n│ React 19 + Vite 6 │\n│ Glassmorphism UI, Dark Mode │\n└─────────────┬───────────────────────────┘\n│ REST / SSE / WebSocket\n┌─────────────▼───────────────────────────┐\n│ Express 5 + SQLite/PostgreSQL │\n│ ┌─────────┐ ┌─────────┐ ┌──────────┐ │\n│ │ CEO │ │ Critic │ │ Memory │ │\n│ │Orchestr.│ │ Loop │ │ Palace │ │\n│ └─────────┘ └─────────┘ └──────────┘ │\n│ ┌─────────┐ ┌─────────┐ ┌──────────┐ │\n│ │ Task │ │ Budget │ │ Agent │ │\n│ │ DAG │ │ Control │ │ Registry │ │\n│ └─────────┘ └─────────┘ └──────────┘ │\n└─────────────────────────────────────────┘\n│ Adapters (Anthropic, OpenAI, Ollama, ...)\n┌─────────────▼───────────────────────────┐\n│ LLM Providers + Local Models │\n└─────────────────────────────────────────┘\nTech Stack\nLayer\nTechnology\nFrontend\nReact 19, Vite 6, Tailwind CSS, Framer Motion\nBackend\nExpress 5, TypeScript strict, ESM\nDatabase\nSQLite (WAL) / PostgreSQL\nORM\nDrizzle ORM\nAuth\nBetterAuth + JWT fallback\nReal-time\nWebSocket + Server-Sent Events\nValidation\nZod\nTesting\nVitest + Playwright\nWhy the license change?\nOpenCognit started as an AGPL project to push the boundaries of autonomous AI agents. After 6 months of development, the reality is clear:\nAGPL blocks enterprise adoption — legal teams reject it\nNo sustainable funding — 30 stars don't pay server bills\nCompetitors (Paperclip, CrewAI) have 1000× more resources with MIT/Apache\nTo keep building OpenCognit into a production-grade product , we need a sustainable model. The Community Edition remains free and open (AGPL). Pro funds continued development.\nRead the full reasoning →\nCommunity\n🐦 X / Twitter\nLicense\nThis repository contains OpenCognit Community Edition v0.9.0 , licensed under AGPL-3.0 .\nOpenCognit Pro is licensed under the OpenCognit Commercial License Agreement .\nCopyright © 2026 Panto. All rights reserved.\nAbout\nThe open-source AI agent OS. CEO orchestrator, persistent memory, real execution, atomic budgets. Self-hosted. No cloud lock-in.\nopencognit.mytherrablockchain.org\nTopics\nopen-source\ntypescript\nself-hosted\nmulti-agent\nopenai\nautonomous-agents\nai-agents\nclaude-api\nopenrouter\nollama\nllm-orchestration\nai-orchestration\nResources\nReadme\nLicense\nUnknown, Unknown licenses found\nLicenses found\nUnknown\nLICENSE\nUnknown\nLICENSE-AGPL\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n30\nstars\nWatchers\nwatching\nForks\n10\nforks\nReport repository\nReleases\ntags\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n97.4%\nJavaScript\n1.3%\nCSS\n1.0%\nShell\n0.3%\nPLpgSQL\n0.0%\nDockerfile\n0.0%\n\n## full_text\n\nOpenCognit\nOpencognit\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n10\nStar\n30\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n153 Commits\n153 Commits\n.github\n.github\ndocs\ndocs\npackages\npackages\nplugins\nplugins\npublic\npublic\nscratch\nscratch\nscripts\nscripts\nserver\nserver\nsrc\nsrc\ntests/ e2e\ntests/ e2e\n.env.example\n.env.example\n.env.production.example\n.env.production.example\n.gitignore\n.gitignore\nAUDIT_COMMERCIAL_READINESS_2026-06-01.md\nAUDIT_COMMERCIAL_READINESS_2026-06-01.md\nCLAUDE.md\nCLAUDE.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nDockerfile\nDockerfile\nLICENSE\nLICENSE\nLICENSE-AGPL\nLICENSE-AGPL\nREADME.md\nREADME.md\ndocker-compose.yml\ndocker-compose.yml\ndrizzle.config.ts\ndrizzle.config.ts\nindex.html\nindex.html\ninstall.sh\ninstall.sh\npackage-lock.json\npackage-lock.json\npackage.json\npackage.json\npackage.json.new\npackage.json.new\nplaywright.config.ts\nplaywright.config.ts\nsetup.sh\nsetup.sh\ntailwind.config.ts\ntailwind.config.ts\ntsconfig.json\ntsconfig.json\nvite.config.ts\nvite.config.ts\nvitest.config.ts\nvitest.config.ts\nvitest.server.config.ts\nvitest.server.config.ts\nvitest.ui.config.ts\nvitest.ui.config.ts\nView all files\nRepository files navigation\nOpenCognit\nBuild Your Zero Human Company.\nThe AI agent orchestration OS — CEO orchestrator, persistent memory, real execution, atomic budgets. Self-hosted. No cloud lock-in.\n⚠️ License Change Notice\nThis repository contains OpenCognit Community Edition v0.9.0, the final AGPL-3.0 release.\nAs of June 2026, OpenCognit is no longer open source. Active development continues under a commercial license as OpenCognit Pro .\nThe Community Edition remains available under AGPL-3.0 but is no longer maintained . Security patches and new features are exclusive to Pro.\nRead the full announcement →\nWhat is OpenCognit?\nOpenCognit is an AI agent orchestration OS — not a chatbot, not a single-agent wrapper. It runs a virtual company of autonomous AI agents that work together without you watching.\nYou set a goal. The CEO agent breaks it down, assigns tasks to specialists, reviews their work with a built-in Critic loop, and escalates blockers — while you sleep.\nYou → Goal → CEO Agent → Dev Agent → Writer Agent → Researcher Agent\n↑ ↓ ↓\nPersistent Memory ←── Critic ←── Results ←────┘\nOpenCognit Pro vs Community Edition\nFeature\nCommunity Edition (AGPL)\nOpenCognit Pro\nLicense\nAGPL-3.0\nCommercial\nActive Development\n❌ Archived\n✅ Continuous\nSecurity Patches\n❌ None\n✅ Monthly\nDocker Sandbox\n❌ Blocklist only\n✅ Mandatory isolation\nPostgreSQL Support\n⚠️ Experimental\n✅ Production-ready\nAudit Logging\n✅ Full compliance trail\nPer-Tenant Rate Limiting\nSSO / SAML\n✅ Enterprise\nSupport\n✅ Email + Priority\nPrice\nFree\nFrom €29/mo\nCore Features\nCEO Orchestrator — Extended Thinking before delegation\nPersistent Memory — MemPalace + Semantic + SOUL documents per agent\nCritic Loop — Every output reviewed before \"done\"\nAtomic Budgets — Hard limits enforced at the cent level\nTask DAG — Dependencies auto-resolve, downstream tasks unlock\nWar Room — Live agent grid with real-time execution traces\nOrg Chart — Agent hierarchies, roles, and peer meetings\nPlugin System — Custom adapters, widgets, API endpoints\nMCP Server — Use OpenCognit from Cursor, Claude Code, Windsurf\nCLI Executor — Live bash streaming with SSE\nQuick Start (Community Edition)\n⚠️ The Community Edition is provided as-is without support or updates.\n# 1. Clone\ngit clone https://github.com/OpenCognit/opencognit.git\ncd opencognit\n# 2. Setup\nbash setup.sh\n# 3. Run\nnpm run dev\nThe UI opens at http://localhost:3200 . The API runs on http://localhost:3201 .\nGet OpenCognit Pro\nOpenCognit Pro is the actively developed, commercially licensed version with enterprise security, priority support, and regular updates.\nPricing\nPlan\nPrice\nIncludes\nSolo\n€29/mo\n10 agents, 1 company, email support\nTeam\n€99/mo\nUnlimited agents, 5 companies, SSO, priority support\nEnterprise\nCustom\nUnlimited everything, SAML, on-premise, SLA\n👉 Start Free Trial →\nArchitecture\n┌─────────────────────────────────────────┐\n│ React 19 + Vite 6 │\n│ Glassmorphism UI, Dark Mode │\n└─────────────┬───────────────────────────┘\n│ REST / SSE / WebSocket\n┌─────────────▼───────────────────────────┐\n│ Express 5 + SQLite/PostgreSQL │\n│ ┌─────────┐ ┌─────────┐ ┌──────────┐ │\n│ │ CEO │ │ Critic │ │ Memory │ │\n│ │Orchestr.│ │ Loop │ │ Palace │ │\n│ └─────────┘ └─────────┘ └──────────┘ │\n│ ┌─────────┐ ┌─────────┐ ┌──────────┐ │\n│ │ Task │ │ Budget │ │ Agent │ │\n│ │ DAG │ │ Control │ │ Registry │ │\n│ └─────────┘ └─────────┘ └──────────┘ │\n└─────────────────────────────────────────┘\n│ Adapters (Anthropic, OpenAI, Ollama, ...)\n┌─────────────▼───────────────────────────┐\n│ LLM Providers + Local Models │\n└─────────────────────────────────────────┘\nTech Stack\nLayer\nTechnology\nFrontend\nReact 19, Vite 6, Tailwind CSS, Framer Motion\nBackend\nExpress 5, TypeScript strict, ESM\nDatabase\nSQLite (WAL) / PostgreSQL\nORM\nDrizzle ORM\nAuth\nBetterAuth + JWT fallback\nReal-time\nWebSocket + Server-Sent Events\nValidation\nZod\nTesting\nVitest + Playwright\nWhy the license change?\nOpenCognit started as an AGPL project to push the boundaries of autonomous AI agents. After 6 months of development, the reality is clear:\nAGPL blocks enterprise adoption — legal teams reject it\nNo sustainable funding — 30 stars don't pay server bills\nCompetitors (Paperclip, CrewAI) have 1000× more resources with MIT/Apache\nTo keep building OpenCognit into a production-grade product , we need a sustainable model. The Community Edition remains free and open (AGPL). Pro funds continued development.\nRead the full reasoning →\nCommunity\n🐦 X / Twitter\nLicense\nThis repository contains OpenCognit Community Edition v0.9.0 , licensed under AGPL-3.0 .\nOpenCognit Pro is licensed under the OpenCognit Commercial License Agreement .\nCopyright © 2026 Panto. All rights reserved.\nAbout\nThe open-source AI agent OS. CEO orchestrator, persistent memory, real execution, atomic budgets. Self-hosted. No cloud lock-in.\nopencognit.mytherrablockchain.org\nTopics\nopen-source\ntypescript\nself-hosted\nmulti-agent\nopenai\nautonomous-agents\nai-agents\nclaude-api\nopenrouter\nollama\nllm-orchestration\nai-orchestration\nResources\nReadme\nLicense\nUnknown, Unknown licenses found\nLicenses found\nUnknown\nLICENSE\nUnknown\nLICENSE-AGPL\nContributing\nContributing\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nStars\n30\nstars\nWatchers\nwatching\nForks\n10\nforks\nReport repository\nReleases\ntags\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nTypeScript\n97.4%\nJavaScript\n1.3%\nCSS\n1.0%\nShell\n0.3%\nPLpgSQL\n0.0%\nDockerfile\n0.0%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / daily_observation, heatmap, case / high] OpenCognit is an AI agent orchestration OS — not a chatbot, not a single-agent wrapper. It runs a virtual company of autonomous AI agents that work together ... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=capital_startup\n2. [company_action / daily_observation, heatmap, change, case, trend / medium] OpenCognit Opencognit Public Notifications You must be signed in to change notification settings Fork 10 Star 30 main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 153 Commits 153 Commits .\n3. [company_action / daily_observation, heatmap, change, case, trend / medium] github docs docs packages packages plugins plugins public public scratch scratch scripts scripts server server src src tests/ e2e tests/ e2e .\n4. [company_action / daily_observation, heatmap, change, case, trend / medium] gitignore AUDIT_COMMERCIAL_READINESS_2026-06-01.\n5. [company_action / daily_observation, heatmap, change, case, trend / medium] md AUDIT_COMMERCIAL_READINESS_2026-06-01.\n6. [company_action / daily_observation, heatmap, change, case, trend / medium] md Dockerfile Dockerfile LICENSE LICENSE LICENSE-AGPL LICENSE-AGPL README.\n"
+}
