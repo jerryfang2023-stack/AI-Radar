@@ -1,7 +1,7 @@
 # WaveSight Daily Supervision - 2026-06-27
 
-- generated_at: 2026-06-27T03:25:29.393Z
-- status: warning
+- generated_at: 2026-06-27T06:51:44.323Z
+- status: passed
 - github_mode: auto
 - scheduled_task_mode: auto
 
@@ -9,7 +9,7 @@
 |---|---|---|---:|---:|
 | Skill Ops Governance | daily supervision preflight | passed | 0 | 0 |
 | Community Intelligence | 08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30 | passed | 0 | 0 |
-| Business Signals / Intelligence Map / Dashboard | 08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55 | warning | 0 | 3 |
+| Business Signals / Intelligence Map / Dashboard | 08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55 | passed | 0 | 0 |
 | First-Line Viewpoints | 08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Hermes RSS handoff 09:30 | passed | 0 | 0 |
 | First-Line Viewpoints Skill | 16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45 | passed | 0 | 0 |
 
@@ -59,7 +59,7 @@ none
 ```
 ## Business Signals / Intelligence Map / Dashboard
 
-- status: warning
+- status: passed
 - schedule: 08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55
 
 ### Problems
@@ -68,9 +68,7 @@ none
 
 ### Warnings
 
-- latest same-date GitHub Pages workflow conclusion is skipped
-- local Obsidian sync may be blocked by 49 dirty file(s)
-- latest Business Signals workflow conclusion is failure, but same-date data and gates are healthy; repair branch / PR / publication only
+- none
 
 ### Actions
 
