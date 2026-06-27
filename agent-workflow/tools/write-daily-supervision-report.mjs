@@ -99,6 +99,43 @@ function countFiles(dir, pattern) {
   }, 0);
 }
 
+function listFiles(dir, pattern) {
+  if (!exists(dir)) return [];
+  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const file = path.join(dir, entry.name);
+    if (entry.isDirectory()) return listFiles(file, pattern);
+    return pattern.test(entry.name) ? [file] : [];
+  });
+}
+
+function normalizeSourceTitle(value = "") {
+  return String(value).trim().replace(/^["']|["']$/gu, "").replace(/\s+/gu, " ");
+}
+
+function extractSourceTitle(markdown = "") {
+  const match = markdown.match(/^source_title:\s*(.+)$/mu);
+  return normalizeSourceTitle(match?.[1] || "");
+}
+
+function sourceTitleTranslationDiagnostics(cardFiles = []) {
+  const dbFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
+  const db = readJson(dbFile, {});
+  const translations = new Set((Array.isArray(db.translations) ? db.translations : [])
+    .map((item) => normalizeSourceTitle(item.sourceTitle))
+    .filter(Boolean));
+  const missing = [];
+  for (const file of cardFiles) {
+    const sourceTitle = extractSourceTitle(readText(file));
+    if (!sourceTitle || !/[A-Za-z]{3}/u.test(sourceTitle)) continue;
+    if (!translations.has(sourceTitle)) missing.push(sourceTitle);
+  }
+  return {
+    translationDb: exists(dbFile) ? rel(dbFile) : "missing",
+    missingCount: missing.length,
+    missingSourceTitles: [...new Set(missing)].slice(0, 8),
+  };
+}
+
 function laneStatus(problems, warnings) {
   if (problems.some((item) => item.severity === "manual_required")) return "manual_required";
   if (problems.length && problems.every((item) => item.severity === "waiting")) return "waiting";
@@ -138,6 +175,14 @@ function shanghaiTimestamp(value = new Date()) {
 }
 
 function incidentCategories(lane) {
+  if (lane.id === "business_signals" && lane.evidence?.diagnosis?.category) {
+    const categories = [lane.evidence.diagnosis.category];
+    if (lane.evidence.diagnosis.category !== "monitor_or_gate_failure" && lane.problems.some((item) => /quality gate|workflow|gate failed/iu.test(item.message))) {
+      categories.push("monitor_or_gate_failure");
+    }
+    return [...new Set(categories)];
+  }
+
   const haystack = [
     lane.id,
     lane.status,
@@ -163,6 +208,9 @@ function incidentCategories(lane) {
 
 function repairDataGenerated(lane) {
   if (lane.id === "skill_ops") return "not_applicable";
+  const category = lane.evidence?.diagnosis?.category || "";
+  if (category === "no_run_or_stale_assets") return "no_or_stale";
+  if (["translation_title", "top10_contract", "publication", "local_sync", "supervision_observability"].includes(category)) return "yes";
   if (lane.problems.some((item) => /date is|missing .*data file/iu.test(item.message))) return "no_or_stale";
   if (lane.problems.some((item) => /workflow is queued|workflow is in_progress|wait for/iu.test(item.message))) return "unknown";
   return "yes";
@@ -176,6 +224,7 @@ function repairGate(lane) {
 }
 
 function repairNeededAction(lane) {
+  if (lane.evidence?.diagnosis?.neededAction) return lane.evidence.diagnosis.neededAction;
   const action = lane.actions.find((item) => /repair|rerun|manual|wait|dispatch|send codex/iu.test(item))
     || lane.actions[0]
     || "inspect and classify";
@@ -365,10 +414,15 @@ function buildBusinessSignalsLane() {
   const selection = Array.isArray(data.frontstageSelection)
     ? data.frontstageSelection.find((item) => item.date === date)
     : null;
+  const top10 = Array.isArray(data.top10) ? data.top10 : [];
+  const sameDateTop10 = top10.filter((card) => !card?.date || card.date === date);
   const sameDateCards = Array.isArray(data.frontstageCards)
     ? data.frontstageCards.filter((card) => card.date === date)
     : [];
-  const cardFiles = countFiles(path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards"), new RegExp(`^${date}--signal--.*\\.md$`, "u"));
+  const signalCardRoot = path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards");
+  const cardFileList = listFiles(signalCardRoot, new RegExp(`^${date}--signal--.*\\.md$`, "u"));
+  const cardFiles = cardFileList.length;
+  const titleTranslations = sourceTitleTranslationDiagnostics(cardFileList);
   const gh = githubWorkflowState("daily-persistent-assets-pr.yml", `automation/business-signals-${date}`);
   const pages = githubWorkflowState("github-pages.yml");
   const mergedPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.mergedAt) : null;
@@ -377,11 +431,13 @@ function buildBusinessSignalsLane() {
 
   evidence.activeDate = activeDate;
   evidence.generatedAt = data?.meta?.generatedAt || "";
+  evidence.publicTop10Count = sameDateTop10.length;
   evidence.frontstageSelected = selection?.selectedCount ?? sameDateCards.length;
   evidence.supplyConstrained = selection?.supplyConstrained ?? null;
   evidence.coreCandidateCount = selection?.coreCandidateCount ?? null;
   evidence.qualifiedCount = selection?.qualifiedCount ?? null;
   evidence.signalCardFiles = cardFiles;
+  evidence.titleTranslations = titleTranslations;
   evidence.manifest = exists(manifestFile) ? rel(manifestFile) : "missing";
   evidence.qualityGateStatus = statusFromGate(qualityGateFile);
   evidence.readinessReport = exists(readinessFile) ? rel(readinessFile) : "missing";
@@ -402,16 +458,48 @@ function buildBusinessSignalsLane() {
     exists(dataFile) &&
     exists(graphFile) &&
     activeDate === date &&
-    selectedCount === 10 &&
+    sameDateTop10.length === 10 &&
     cardFiles >= 10 &&
     evidence.qualityGateStatus === "passed";
+  evidence.dataHealth = {
+    dataFile: exists(dataFile) ? rel(dataFile) : "missing",
+    graphFile: exists(graphFile) ? rel(graphFile) : "missing",
+    activeDateMatches: activeDate === date,
+    publicTop10Count: sameDateTop10.length,
+    frontstageSelected: selectedCount,
+    signalCardFiles: cardFiles,
+    qualityGateStatus: evidence.qualityGateStatus,
+    healthy: businessDataHealthy,
+  };
+  evidence.diagnosis = {
+    category: businessDataHealthy ? "passed" : "supervision_observability",
+    reason: businessDataHealthy ? "same-date Business data, public Top10, Cards, graph, and gate are healthy" : "not classified yet",
+    neededAction: businessDataHealthy ? "none" : "inspect and classify",
+    preRerunChecklist: {
+      activeDate,
+      publicTop10Count: sameDateTop10.length,
+      frontstageSelected: selectedCount,
+      signalCardFiles: cardFiles,
+      rawCount: null,
+      poolCount: null,
+      routedPoolCount: null,
+      corePoolCount: evidence.coreCandidateCount,
+      nonLargeCorePoolCount: null,
+      sourceArtifactFreshness: "not_checked_by_daily_supervision",
+      missingSourceTitleTranslations: titleTranslations.missingSourceTitles,
+      businessPrMerged: Boolean(mergedPr),
+      pagesState: pages.latest_run?.conclusion || pages.latest_run?.status || "unknown",
+      localDirtyFiles: evidence.publicationClosure.localSync.dirtyFiles,
+      localFastForwarded: evidence.publicationClosure.localSync.fastForwarded,
+    },
+  };
 
   if (windowPassed) {
     if (!exists(dataFile)) addProblem(problems, `missing business-signal data file: ${rel(dataFile)}`);
     if (activeDate !== date) addProblem(problems, `business-signal activeDate is ${activeDate || "missing"}, expected ${date}`);
     if (!exists(graphFile)) addProblem(problems, `missing intelligence map data: ${rel(graphFile)}`);
-    if (selectedCount !== 10) {
-      addProblem(problems, `Top10 selected count is ${selectedCount}, expected 10`);
+    if (sameDateTop10.length !== 10) {
+      addProblem(problems, `public Top10 count is ${sameDateTop10.length}, expected 10`);
     }
     if (selection?.supplyConstrained) {
       if (selectedCount !== 10 || evidence.qualityGateStatus !== "passed") {
@@ -463,6 +551,45 @@ function buildBusinessSignalsLane() {
     if (gh.pr_warning) warnings.push(gh.pr_warning);
   } else if (!gh.available && isTodayOrPast(date)) {
     warnings.push(gh.warning || "GitHub workflow state unavailable");
+  }
+
+  if (!businessDataHealthy) {
+    if (!exists(dataFile) || activeDate !== date) {
+      evidence.diagnosis.category = "no_run_or_stale_assets";
+      evidence.diagnosis.reason = `activeDate is ${activeDate || "missing"}, expected ${date}`;
+      evidence.diagnosis.neededAction = "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow";
+    } else if (cardFiles >= 10 && sameDateTop10.length !== 10 && titleTranslations.missingCount > 0) {
+      evidence.diagnosis.category = "translation_title";
+      evidence.diagnosis.reason = `${titleTranslations.missingCount} active-date Signal Card source title(s) lack approved Chinese translations`;
+      evidence.diagnosis.neededAction = "repair source-title translations or upstream title sync, rebuild Business frontstage JSON, rerun the unified Business gate only";
+    } else if (sameDateTop10.length !== 10) {
+      evidence.diagnosis.category = "top10_contract";
+      evidence.diagnosis.reason = `public Top10 count is ${sameDateTop10.length}, expected 10`;
+      evidence.diagnosis.neededAction = "repair Top10/frontstage build contract; do not recollect Raw unless supply counts prove a specific source/channel shortage";
+    } else if (cardFiles < 10) {
+      evidence.diagnosis.category = "core_supply_shortfall";
+      evidence.diagnosis.reason = `signal Card files ${cardFiles} below 10`;
+      evidence.diagnosis.neededAction = "diagnose Raw/Pool/Core/non-large Core counts and refill only the deficient source/channel";
+    } else if (evidence.qualityGateStatus === "failed") {
+      evidence.diagnosis.category = "source_first_frontstage_gate";
+      evidence.diagnosis.reason = `quality gate failed: ${rel(qualityGateFile)}`;
+      evidence.diagnosis.neededAction = "repair the failed source-first/frontstage gate and rerun that gate";
+    } else if (problems.some((item) => /workflow is queued|workflow is in_progress|Pages workflow is/iu.test(item.message))) {
+      evidence.diagnosis.category = "publication";
+      evidence.diagnosis.reason = "workflow or Pages is still queued/in_progress";
+      evidence.diagnosis.neededAction = "wait for publication workflow completion and rerun supervision";
+    } else if (evidence.publicationClosure.localSync.available && !evidence.publicationClosure.localSync.clean) {
+      evidence.diagnosis.category = "local_sync";
+      evidence.diagnosis.reason = `local workspace has ${evidence.publicationClosure.localSync.dirtyFiles} dirty file(s)`;
+      evidence.diagnosis.neededAction = "clean or isolate local sync blockers; do not rerun Business generated assets";
+    }
+  } else if (
+    problems.some((item) => /workflow is queued|workflow is in_progress|Pages workflow is/iu.test(item.message))
+    || warnings.some((item) => /workflow conclusion|Pages|publication|manifest|Obsidian|dirty/iu.test(item))
+  ) {
+    evidence.diagnosis.category = warnings.some((item) => /Obsidian|dirty/iu.test(item)) ? "local_sync" : "publication";
+    evidence.diagnosis.reason = "same-date data is healthy; remaining issue is publication/local sync closure";
+    evidence.diagnosis.neededAction = "repair publication/local sync closure only; do not rerun Raw/Pool/Card generation";
   }
 
   if (problems.length) {
