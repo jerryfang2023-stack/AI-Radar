@@ -111,6 +111,22 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when local dirty workspace / Obsidian sync warnings are kept separate from Business data-generation status.
     - Fail when supervision asks for a blind Raw / Pool / Card rerun only because the latest workflow run is red, while same-date data and gates are already healthy.
 
+23. `targeted_repair_before_full_rerun`
+    - Pass when a Business repair records the pre-rerun checklist before starting a full chain: activeDate, Top10 count, signal Card count, Raw count, Pool/routed/Core/non-large Core counts, source-artifact freshness by source/channel, missing source-title translations, PR/Pages state, and local dirty / fast-forward state.
+    - Pass when a deficient source lane triggers only the relevant source-artifact refill or retry refresh, and a translation-title shortage triggers only translation registry / frontstage rebuild work.
+    - Fail when Raw / Pool / Card generation is rerun before ruling out stale local checkout, healthy remote assets, source-title translation starvation, publication failure, or local sync blockage.
+    - Fail when a report says "raw shortage" without naming which source/channel or downstream eligibility bucket is actually short.
+
+24. `weekly_repeated_failure_review`
+    - Pass when two or more Business Hermes items with the same category in a seven-day window produce a weekly failure review report and a durable skill memory/eval update.
+    - Pass when the review distinguishes true Business data failures from supervision observability, publication, and local-sync warnings.
+    - Fail when repeated `business_signals_top10_missing` incidents are closed as same-day data fixes without identifying whether the root was stale assets, source-artifact retry, translation-title starvation, publication, or supervision classification.
+
+25. `hermes_inbox_resolution_quality`
+    - Pass when a resolved Business Hermes inbox item records the final fix commit or PR, exact validation command, and prevention artifact.
+    - Pass when `pending-local-change` is used only before commit / PR publication and is updated after merge if the item is marked resolved.
+    - Fail when a resolved item keeps `fix_commit=pending`, mixes contradictory resolution records, or omits the gate/eval/memory/context prevention artifact for a recurring failure.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.

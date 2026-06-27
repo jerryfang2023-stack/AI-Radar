@@ -11,7 +11,7 @@ metadata:
     upstream: "external source capture, daily persistent assets workflow, Hermes inbox"
     downstream: "Signal Cards, public Top10, graph inputs, trend candidates, PR publication"
     gates: "monitor QC, post-monitor Raw / Pool gate, six-gate Card entry, Card generation, source-first, frontstage Top10"
-    recent_learning: "Signal Card entry must use the six grouped gates, not scattered field-level blockers; Top10 is not complete unless the public top10 contract is present and current."
+    recent_learning: "Repeated Top10-missing incidents must be split into stale assets, source-artifact retry, translation-title, publication/local-sync, and supervision-observability categories before any full rerun."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -79,10 +79,11 @@ When repairing repeated morning failures, also read `examples/good-failure-route
    - `translation_title`: English/mixed/placeholder title or title-like subject;
    - `large_company_cap`: Top10 cap failure;
    - `publication`: PR, merge, or Pages failure after valid assets.
-6. Repair the smallest script, rule, gate, or skill path needed for the failing category.
-7. Rerun the exact failed gate or the smallest relevant validation.
-8. Add or tighten an eval before adding long prose when the failure is recurring.
-9. Close the Hermes inbox item only after validation and prevention are recorded.
+6. Before any full-chain rerun, record the pre-rerun checklist: activeDate, Top10 count, Card count, Raw / Pool / routed / Core / non-large Core counts, source-artifact freshness by source/channel, missing source-title translations, PR / Pages state, and local dirty / fast-forward state.
+7. Repair the smallest script, rule, gate, or skill path needed for the failing category.
+8. Rerun the exact failed gate or the smallest relevant validation.
+9. Add or tighten an eval before adding long prose when the failure is recurring.
+10. Close the Hermes inbox item only after validation, final commit or PR, and prevention are recorded.
 
 ## Morning Fast Path
 
@@ -128,6 +129,7 @@ Weekend monitor quantity floors may be lighter because source volume is lower, b
 - Do not lower Raw / Pool / Core Pool / Top10 quality gates to make a day look complete.
 - Do not relax the large-company cap to solve weekend low supply; repair non-large Core Pool supply instead.
 - If routed Pool, Core Pool, or non-large Core Pool is short, repair with targeted recent-event refill: launches, funding, customer deployments, production rollouts, procurement, pricing, regulatory, or vertical workflow cases.
+- If Raw is reported short, identify the deficient source/channel or downstream eligibility bucket before rerunning. Do not call a translation-title, stale local checkout, publication, or local-sync issue a Raw shortage.
 - Do not satisfy quantity gaps by promoting marketplace listings, directories, repo roots, package/model pages, generic guides, broad lists, funding roundups, generic funding commentary, interviews, old evergreen technical posts, or search snippets into Core Pool.
 - Do not satisfy quantity gaps with generic FDE / applied-AI implementation pages. Job posts, role explainers, consulting/service landing pages, and "what is FDE" articles stay non-core unless the same original source has a concrete dated customer deployment, launch, financing, procurement, partnership, or production rollout.
 - Treat `source_level` / `acquisition_source_level` as traceability-only labels. They must not be value scores, core gates, ranking inputs, or automatic downgrade reasons.
