@@ -73,6 +73,48 @@ function loadSourceTitleTranslations() {
   }
 }
 
+function syncSourceTitleTranslationsFromCards(rawCards = [], activeDate = "") {
+  let json = {
+    version: "source-title-translations-v1",
+    description: "Business Signals frontstage title translations. Keys are original source titles only; do not add URL, keyword, company-name, or AI-generated title rules here.",
+    translations: [],
+  };
+  if (fs.existsSync(sourceTitleTranslationsFile)) {
+    try {
+      json = JSON.parse(read(sourceTitleTranslationsFile));
+    } catch (error) {
+      console.warn(`Warning: failed to update ${rel(sourceTitleTranslationsFile)}: ${error.message}`);
+      return;
+    }
+  }
+  const translations = Array.isArray(json.translations) ? json.translations : [];
+  json.translations = translations;
+  const seen = new Set(
+    translations
+      .map((entry) => titleTranslationKey(entry?.sourceTitle || ""))
+      .filter(Boolean)
+  );
+  let added = 0;
+  for (const card of rawCards) {
+    if (!card || card.date !== activeDate) continue;
+    const zhTitle = String(card.title || "").trim();
+    if (!zhTitle || !hasCjk(zhTitle) || titleLooksLikeGeneratedTemplate(zhTitle) || publicTextLooksGarbled(zhTitle)) continue;
+    for (const sourceTitle of [card.sourceTitle, card.originalTitle].map(cleanEnglishTitleForDisplay).filter(Boolean)) {
+      if (!titleNeedsChineseTranslation(sourceTitle)) continue;
+      const key = titleTranslationKey(sourceTitle);
+      if (!key || seen.has(key)) continue;
+      translations.push({ sourceTitle, zhTitle });
+      seen.add(key);
+      sourceTitleTranslations.set(key, zhTitle);
+      added += 1;
+    }
+  }
+  if (!added) return;
+  fs.mkdirSync(path.dirname(sourceTitleTranslationsFile), { recursive: true });
+  fs.writeFileSync(sourceTitleTranslationsFile, `${JSON.stringify(json, null, 2)}\n`, "utf8");
+  console.log(`Updated ${rel(sourceTitleTranslationsFile)} with ${added} active-date source title translation(s).`);
+}
+
 function canonicalUrl(url = "") {
   try {
     const parsed = new URL(url);
@@ -3903,6 +3945,7 @@ const rawCards = [
   ...signalRoots.flatMap((rootItem) => walkMarkdown(rootItem.dir).map((file) => cardFromFile(file, rootItem.category))),
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const activeDate = rawCards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";
+syncSourceTitleTranslationsFromCards(rawCards, activeDate);
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPublicBusinessSignalEligible))
   .map((card) => normalizeFrontstageDisplay(card, { strictPublic: card.date === activeDate }))
   .filter(hasSourceFacingEvidence)
