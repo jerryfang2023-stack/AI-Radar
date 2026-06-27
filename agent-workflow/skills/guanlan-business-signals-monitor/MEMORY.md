@@ -2,6 +2,14 @@
 
 Keep this file short. Add only durable lane-level lessons from repeated production failures.
 
+## 2026-06-27 Weekly Failure Review: Targeted Repair Before Full Rerun
+
+- The 2026-06-21 through 2026-06-27 Business incidents were not one repeated root cause. Separate `no_run_or_stale_assets`, source-artifact retry freshness, `translation_title`, `publication`, local Obsidian sync, and `supervision_observability` before choosing any repair.
+- Before a full Raw / Pool / Card rerun, check same-date state in this order: activeDate, Top10 count, signal Card count, Raw count, Pool/routed/Core/non-large Core counts, source-artifact freshness by source/channel, missing source-title translations, PR/Pages state, and local dirty / fast-forward state.
+- If Raw / Pool / Cards are healthy but Top10 is 0, do not recollect sources until `translation_title` has been ruled out. Repair `source-title-translations.json`, the upstream title-translation sync, or the frontstage build, then rerun the unified Business frontstage gate only.
+- If same-date data and gates are healthy but the latest workflow is red, Pages is skipped, a manifest is missing, or local Obsidian sync is blocked, classify the issue as `publication`, `local_sync`, or `supervision_observability`. Do not report it as Business data-generation failure and do not rerun generated assets.
+- Hermes inbox closure must record the final commit or PR, exact validation, and prevention artifact. A resolved item should not keep `fix_commit=pending` after the repair has merged.
+
 ## 2026-06-27 Source-Title Translation Starvation
 
 - If Raw / Pool and Signal Card generation succeed but active-date Top10 is 0, check whether same-date English source titles are missing from `01-SiteV2/content/11-databases/source-title-translations.json` before rerunning collection. The source-title lock is intentional; repair the translation database or upstream title-translation step, then rerun the unified Business frontstage gate.
