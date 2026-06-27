@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-memory
-last_updated: 2026-06-17
+last_updated: 2026-06-27
 use_when:
   - project startup
   - agent handoff
@@ -22,6 +22,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - Business Signals is the source-backed asset chain for Raw / Pool / Card / relationship graph / trend-candidate work.
 - First-Line Viewpoints is an independent builders / operator viewpoints column.
 - Community Intelligence is an independent logged-in community collection and archive stream.
+- The local DuckDB data lake is an analytical index layer for machine queries; Obsidian remains the human-readable knowledge base.
 
 ## Non-Negotiable Rules
 
@@ -49,6 +50,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - First-Line Viewpoints must keep morning RSS collection and afternoon follow-builders skill publishing separate.
 - Community Intelligence depends on local logged-in collection; GitHub can publish already collected data but cannot replace the logged-in local collector.
 - Weekly report content should be sourced from `01-SiteV2/content/08-report/` before site generation.
+- Generated DuckDB files and JSONL tables must be rebuilt from source files and must not become production truth or Git-tracked content.
 
 ## Memory Boundaries
 
@@ -57,4 +59,3 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - Daily monitoring results belong in reports and Hermes inbox items.
 - Skill-specific learnings belong in each skill's `MEMORY.md`.
 - Temporary task closeouts should not be copied here unless they create a durable rule.
-

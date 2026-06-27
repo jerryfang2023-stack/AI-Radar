@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-06-23
+last_updated: 2026-06-27
 use_when:
   - large task startup
   - dispatch planning
@@ -47,6 +47,7 @@ External sources
 -> relationship graph
 -> trend candidates
 -> V3.3 frontstage + operations data
+-> local DuckDB data-lake index
 -> GitHub PR / merge
 -> GitHub Pages
 -> local Obsidian sync
@@ -79,6 +80,7 @@ Old V2 pages are retired. If old rules conflict with V3.3, remove or rebuild the
 - Business signals must cover big-company product actions, vertical-industry cases, and emerging-company funding. Big-company news must not dominate the whole day.
 - Trend candidates cannot be generated from a single article, single viewpoint, or trend essay.
 - Builders viewpoints are independent first-line viewpoints only.
+- `data-lake/wavesight.duckdb` is a local generated analytical index, not a source of truth. Rebuild it from Git-tracked Raw / Pool / Card / site data and keep generated tables / database files out of Git.
 
 ## Current Automation Goal
 
@@ -91,3 +93,4 @@ Old V2 pages are retired. If old rules conflict with V3.3, remove or rebuild the
 5. Persist each producing lane through its own commit / PR boundary.
 6. Publish the site only after merged changes reach `main` and GitHub Pages runs.
 7. Sync merged assets to local Obsidian when the local machine is online.
+8. Regenerate the local DuckDB data-lake index when cross-day statistics, contamination audits, source linkage checks, or column-level production diagnostics are needed.

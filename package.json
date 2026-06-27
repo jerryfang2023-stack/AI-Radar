@@ -41,7 +41,8 @@
     "audit:skills": "npm run sync:skill-store && npm run build:skill-store-dashboard && npm run check:skill-ops",
     "build:skill-store-dashboard": "npm run build:skill-registry && node agent-workflow/tools/build-skill-store-dashboard.mjs",
     "export:public-daily-brief": "node 01-SiteV2/site/scripts/export-public-daily-brief.mjs",
-    "sync:enterprise-ai-fde": "node agent-workflow/tools/sync-enterprise-ai-fde-to-obsidian.mjs"
+    "sync:enterprise-ai-fde": "node agent-workflow/tools/sync-enterprise-ai-fde-to-obsidian.mjs",
+    "sync:data-lake": "node agent-workflow/tools/sync-light-data-lake.mjs"
   },
   "repository": {
     "type": "git",
