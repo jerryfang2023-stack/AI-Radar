@@ -277,7 +277,7 @@ Get started for free
 - business_actions: 发布 / 推出, 合作 / 联盟
 - affected_departments: IT / 安全, 销售 / 客服
 - numbers: 24, 2026
-- quotes: Teams at OpenAI use Figma to iterate, refine, and make decisions about how a product comes together, / Now, Codex can find and use all the important design context in Figma to help us build higher quality products more efficiently. /  Codex can find and use all the important design context in Figma to help us build higher quality products more efficiently.  / The best products come from teams who care deeply about the details, /  Skills teach Claude Code how to work directly in the design canvas, so you can build in a way that stays true to your team’s intent and judgment. 
+- quotes: Teams at OpenAI use Figma to iterate, refine, and make decisions about how a product comes together, / Now, Codex can find and use all the important design context in Figma to help us build higher quality products more efficiently. /  Codex can find and use all the important design context in Figma to help us build higher quality products more efficiently.  / The best products come from teams who care deeply about the details, /  Skills teach Claude Code how to work directly in the design canvas, so you can build in a way that stays true to your team’s intent and judgment.
 
 ## evidence_seed
 

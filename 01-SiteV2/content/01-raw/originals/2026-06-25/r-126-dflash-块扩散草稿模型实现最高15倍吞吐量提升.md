@@ -143,7 +143,7 @@ DFlash 由 UC San Diego 团队提出，是一种用于投机解码的轻量块�
 - importance_type: important_technical_trend
 - importance_score: 5
 - importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 4

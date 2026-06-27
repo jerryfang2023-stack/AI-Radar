@@ -157,7 +157,7 @@ Maximilian Schreiner is Managing Editor at THE DECODER and has covered artificia
 - importance_type: important_product_or_service
 - importance_score: 4
 - importance_reason: new product or service; rubric=4 concrete important change
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 4
 - case_richness: 3

@@ -413,7 +413,7 @@ Manage consent
 ## key_excerpts
 
 1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
-   # OpenAI DevDay 2025: AgentKit Launch, ChatGPT Apps SDK & Major Updates. OpenAI DevDay 2025 announcements including AgentKit, ChatGPT Apps SDK, and Codex general availability. OpenAI DevDay 2025 has just concluded with game-changing announcements that reshape the AI development landscape. CEO Sam Altman revealed that ChatGPT now serves **800 million weekly active users**—doubling from 400 million just eight months ago—while processing over 6 billion tokens per minute through the API. The event introduced AgentKit, 
+   # OpenAI DevDay 2025: AgentKit Launch, ChatGPT Apps SDK & Major Updates. OpenAI DevDay 2025 announcements including AgentKit, ChatGPT Apps SDK, and Codex general availability. OpenAI DevDay 2025 has just concluded with game-changing announcements that reshape the AI development landscape. CEO Sam Altman revealed that ChatGPT now serves **800 million weekly active users**—doubling from 400 million just eight months ago—while processing over 6 billion tokens per minute through the API. The event introduced AgentKit,
 
 2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=high
    Skip to content OpenAI DevDay 2025: AgentKit Launch, ChatGPT Apps SDK & Major Updates Updated: October 6, 2025 OpenAI DevDay 2025 has just concluded with game-changing announcements that reshape the AI development landscape.

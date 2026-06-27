@@ -2,8 +2,15 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
+const args = new Map(
+  process.argv.slice(2).map((arg) => {
+    const [key, ...rest] = arg.replace(/^--/, "").split("=");
+    return [key, rest.join("=") || "true"];
+  })
+);
 const jsonPath = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
 const sourceTitleTranslationsFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
+const expectedDate = args.get("date") || "";
 
 const forbiddenKeys = new Set([
   "eventLine",
@@ -144,6 +151,9 @@ const frontstageCards = Array.isArray(payload.frontstageCards) ? payload.frontst
 const top10 = Array.isArray(payload.top10) ? payload.top10 : [];
 const cardIds = new Set(cards.map((card) => card.id).filter(Boolean));
 const activeDate = payload.meta?.activeDate || "";
+if (expectedDate && activeDate !== expectedDate) {
+  issues.push(`payload activeDate is ${activeDate || "(missing)"}, expected ${expectedDate}`);
+}
 
 const largeVendorPatterns = [
   ["anthropic", /\bAnthropic\b|\bClaude\b/iu],

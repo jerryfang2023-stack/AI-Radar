@@ -99,7 +99,7 @@ copyright_note: local research archive only
 ## key_excerpts
 
 1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=medium
-   * [Dreamdata 1](https://sema4.ai/blog/ai-agent-use-cases#)[Learn more about this provider![Image 8: opens in a new window](blob:http://localhost/7c37f61654102a88a9be209f9569ef78)](https://drive.google.com/file/d/1gsF_mvGNDiKForPjwi4chkb1Jr7XFkfj/view "Learn more about this provider Dreamdata's privacy policy - opens in a new window")**ajs_anonymous_id**This cookie is used to identify a specific visitor - this information is used to identify the number of specific visitors on a website.**Maximum Storage Duration**: 
+   * [Dreamdata 1](https://sema4.ai/blog/ai-agent-use-cases#)[Learn more about this provider![Image 8: opens in a new window](blob:http://localhost/7c37f61654102a88a9be209f9569ef78)](https://drive.google.com/file/d/1gsF_mvGNDiKForPjwi4chkb1Jr7XFkfj/view "Learn more about this provider Dreamdata's privacy policy - opens in a new window")**ajs_anonymous_id**This cookie is used to identify a specific visitor - this information is used to identify the number of specific visitors on a website.**Maximum Storage Duration**:
 
 2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=medium
    * [Dreamdata 1](https://sema4.

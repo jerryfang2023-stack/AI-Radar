@@ -249,7 +249,7 @@ Book Demo Start now
 - importance_type: important_vertical_solution
 - importance_score: 4
 - importance_reason: vertical industry solution; rubric=4 concrete important change
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 4
 - case_richness: 5

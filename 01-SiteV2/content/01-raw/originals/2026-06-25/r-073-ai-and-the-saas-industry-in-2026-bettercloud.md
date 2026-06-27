@@ -99,7 +99,7 @@ copyright_note: local research archive only
 ## key_excerpts
 
 1. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
-   [Learn more.](https://www.prnewswire.com/news-releases/bettercloud-unveils-ai-native-next-generation-saas-management-platform-to-help-enterprises-govern-ai-at-scale-302803242.html?tc=eml_cleartime).**. * [What’s the role of trust in agentic AI?](https://www.bettercloud.com/monitor/saas-industry#whats_the_role_of_trust_in_agentic_ai). For IT and business leaders, the future lies in selecting [integrated platforms](https://www.bettercloud.com/monitor/all-in-one-saas-management-platform/) with strong AI roadmaps that 
+   [Learn more.](https://www.prnewswire.com/news-releases/bettercloud-unveils-ai-native-next-generation-saas-management-platform-to-help-enterprises-govern-ai-at-scale-302803242.html?tc=eml_cleartime).**. * [What’s the role of trust in agentic AI?](https://www.bettercloud.com/monitor/saas-industry#whats_the_role_of_trust_in_agentic_ai). For IT and business leaders, the future lies in selecting [integrated platforms](https://www.bettercloud.com/monitor/all-in-one-saas-management-platform/) with strong AI roadmaps that
 
 2. **product_update**｜supports=daily_observation, heatmap, change｜importance=high｜confidence=medium
    com/news-releases/bettercloud-unveils-ai-native-next-generation-saas-management-platform-to-help-enterprises-govern-ai-at-scale-302803242.

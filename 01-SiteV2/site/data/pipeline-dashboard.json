@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-26T03:36:30.799Z",
+    "generatedAt": "2026-06-26T07:58:50.752Z",
     "dateRange": {
       "start": "2025-10-13",
       "end": "2026-06-26"
@@ -110,11 +110,12 @@
       "raw": 244,
       "pool": 95,
       "assets": {
-        "case": 9,
+        "case": 13,
         "funding": 2,
-        "product-service": 16
+        "product-service": 33,
+        "opinion": 10
       },
-      "cards": 27,
+      "cards": 58,
       "rawChannels": {
         "aihot": 158,
         "keyword_search": 81,
@@ -153,46 +154,46 @@
       },
       "assetStatus": {
         "case": {
-          "published": 9
+          "published": 13
         },
         "funding": {
           "published": 2
         },
         "product-service": {
-          "published": 16
+          "published": 33
         }
       },
       "assetLevels": {
         "case": {
-          "frontstage": 9
+          "frontstage": 13
         },
         "funding": {
           "frontstage": 2
         },
         "product-service": {
-          "frontstage": 16
+          "frontstage": 33
         }
       },
       "assetEvidenceGates": {
         "case": {
-          "core_evidence_passed": 9
+          "core_evidence_passed": 13
         },
         "funding": {
           "core_evidence_passed": 2
         },
         "product-service": {
-          "core_evidence_passed": 16
+          "core_evidence_passed": 33
         }
       },
       "assetCopyGates": {
         "case": {
-          "unknown": 9
+          "unknown": 13
         },
         "funding": {
           "unknown": 2
         },
         "product-service": {
-          "unknown": 16
+          "unknown": 33
         }
       }
     },
@@ -206,9 +207,9 @@
         "case": 9,
         "funding": 3,
         "product-service": 5,
-        "opinion": 12
+        "opinion": 32
       },
-      "cards": 29,
+      "cards": 49,
       "rawChannels": {
         "aihot": 165,
         "keyword_search": 21,
@@ -751,39 +752,39 @@
     "raw": 5283,
     "pool": 2431,
     "assets": {
-      "case": 285,
+      "case": 289,
       "funding": 73,
-      "product-service": 229,
-      "opinion": 743,
+      "product-service": 246,
+      "opinion": 773,
       "trend": 6,
       "scene": 3,
       "change": 14
     }
   },
   "opinionTimelines": {
-    "timelineFiles": 345,
+    "timelineFiles": 361,
     "people": 44,
-    "detailBlocks": 743
+    "detailBlocks": 773
   },
   "latestRelation": null,
   "engineQuality": {
-    "updatedAt": "2026-06-26T03:36:30.861Z",
+    "updatedAt": "2026-06-26T07:58:50.858Z",
     "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
     "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
     "rows": [
       {
         "id": "tavily",
         "label": "Tavily",
-        "total": 216,
+        "total": 114,
         "freshKnown": 0,
         "fresh": 0,
-        "duplicates": 4,
-        "official": 47,
-        "convertible": 116,
+        "duplicates": 1,
+        "official": 28,
+        "convertible": 64,
         "freshnessRate": null,
-        "duplicateRate": 2,
-        "officialRate": 22,
-        "conversionRate": 54
+        "duplicateRate": 1,
+        "officialRate": 25,
+        "conversionRate": 56
       },
       {
         "id": "exa",
@@ -816,16 +817,16 @@
       {
         "id": "gdelt",
         "label": "GDELT",
-        "total": 539,
+        "total": 523,
         "freshKnown": 25,
         "fresh": 1,
         "duplicates": 84,
-        "official": 6,
-        "convertible": 224,
+        "official": 5,
+        "convertible": 214,
         "freshnessRate": 4,
         "duplicateRate": 16,
         "officialRate": 1,
-        "conversionRate": 42
+        "conversionRate": 41
       },
       {
         "id": "anysearch",
@@ -833,7 +834,7 @@
         "total": 1176,
         "freshKnown": 0,
         "fresh": 0,
-        "duplicates": 132,
+        "duplicates": 131,
         "official": 162,
         "convertible": 651,
         "freshnessRate": null,
@@ -858,12 +859,12 @@
       {
         "id": "aihot",
         "label": "AI HOT",
-        "total": 3483,
-        "freshKnown": 2794,
-        "fresh": 2794,
+        "total": 3397,
+        "freshKnown": 2732,
+        "fresh": 2732,
         "duplicates": 6,
-        "official": 219,
-        "convertible": 1206,
+        "official": 212,
+        "convertible": 1193,
         "freshnessRate": 100,
         "duplicateRate": 0,
         "officialRate": 6,

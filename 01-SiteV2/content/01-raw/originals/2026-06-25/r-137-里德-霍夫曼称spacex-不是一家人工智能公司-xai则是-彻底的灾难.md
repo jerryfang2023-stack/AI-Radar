@@ -124,7 +124,7 @@ LinkedIn联合创始人、Anthropic和OpenAI投资者Reid Hoffman在播客中公
 - business_actions: 融资 / 投资
 - affected_departments: 暂无公开信息
 - numbers: 6, 12, 11, 5
-- quotes: 不是一家人工智能公司 / 
+- quotes: 不是一家人工智能公司 /
 LinkedIn联合创始人、Anthropic和OpenAI投资者Reid Hoffman在播客中公开批评SpaceX和xAI。他指出SpaceX / ，6月12日上市后收购AI编程工具Cursor属于 / ，所有11位联合创始人已离职，Grok模型在基准测试中落后于Anthropic和OpenAI。他还批评美国政府6月11日以出口管制为由强制Anthropic下架Fable和Mythos模型，理由仅为Amazon CEO报告Fable 5存在jailbreak漏洞，称此举 / 。Hoffman认为Anthropic和OpenAI均有巨大发展空间，但Cursor可能已过巅峰。他建议年轻人不要抵制AI。
 LinkedIn联合创始人、Anthropic和OpenAI投资者Reid Hoffman在播客中公开批评SpaceX和xAI。他指出SpaceX
 
@@ -142,7 +142,7 @@ LinkedIn联合创始人、Anthropic和OpenAI投资者Reid Hoffman在播客中公
 - importance_type: important_technical_trend
 - importance_score: 5
 - importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 4

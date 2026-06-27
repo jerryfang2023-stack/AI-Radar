@@ -1,0 +1,4336 @@
+{
+  "meta": {
+    "generatedAt": "2026-06-26T00:45:19.373Z",
+    "cdpUrl": "http://127.0.0.1:9333",
+    "scrolls": 1,
+    "homeDetailLimit": 6,
+    "searchDetailLimit": 1,
+    "searchLimit": 8,
+    "selectedKeywords": [
+      {
+        "group": "opportunity",
+        "keyword": "订单"
+      },
+      {
+        "group": "opportunity",
+        "keyword": "营收"
+      },
+      {
+        "group": "opportunity",
+        "keyword": "变现"
+      },
+      {
+        "group": "opportunity",
+        "keyword": "月入"
+      },
+      {
+        "group": "opportunity",
+        "keyword": "降本"
+      },
+      {
+        "group": "opportunity",
+        "keyword": "提效"
+      },
+      {
+        "group": "opportunity",
+        "keyword": "求助"
+      },
+      {
+        "group": "opportunity",
+        "keyword": "需求"
+      }
+    ],
+    "updateMechanism": {
+      "dailyFeed": "每次运行先抓两个社群首页信息流，捕捉当天高频讨论。",
+      "targetedSearch": "再按关键词池轮询搜索行业、场景、工具、机会词，补充垂直案例和历史高价值内容。",
+      "dedupe": "按原帖 URL 优先去重；没有详情 URL 时按来源 + 规范化标题/正文指纹去重，并合并多个命中关键词。",
+      "valueScoring": "按资料链接、结果信号、可复用方法、工具/流程密度、痛点/需求信号、商业结果等计算价值分，高价值内容靠前。",
+      "login": "复用专用浏览器登录态；登录失效时脚本记录错误，需要重新扫码。"
+    },
+    "errors": [],
+    "warnings": [],
+    "note": "Read-only collection from logged-in community pages. Private document contents are not bypassed.",
+    "date": "2026-06-26"
+  },
+  "sources": {
+    "scys": {
+      "name": "生财有术",
+      "url": "https://scys.com/"
+    },
+    "aipoju": {
+      "name": "AI破局",
+      "url": "https://aipoju.com/index"
+    }
+  },
+  "keywordGroups": {
+    "industry": [
+      "留学",
+      "教育",
+      "健身房",
+      "本地生活",
+      "餐饮",
+      "外贸",
+      "跨境电商",
+      "企业培训",
+      "招聘",
+      "财税"
+    ],
+    "scenario": [
+      "获客",
+      "成交",
+      "交付",
+      "私域",
+      "自动化",
+      "内容生产",
+      "客服",
+      "销售",
+      "SOP",
+      "知识库"
+    ],
+    "tools": [
+      "Codex",
+      "Claude Code",
+      "n8n",
+      "Dify",
+      "Coze",
+      "Cursor",
+      "Obsidian",
+      "飞书",
+      "RPA",
+      "ComfyUI"
+    ],
+    "opportunity": [
+      "订单",
+      "营收",
+      "变现",
+      "月入",
+      "降本",
+      "提效",
+      "求助",
+      "需求",
+      "代运营",
+      "工具包"
+    ]
+  },
+  "links": [
+    {
+      "href": "https://yuchangwenhua.feishu.cn/wiki/YrzxwcjV9i3TKXk4JhCc1l02nAc?from=from_copylink",
+      "text": "https://yuchangwenhua.feishu.cn/wiki/YrzxwcjV9i3TK...",
+      "itemId": "bf5822bd152ab3",
+      "itemTitle": "【保姆级教程】把 AI 融入日常工作，随手做出一个小红书笔记发布工具",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://yuchangwenhua.feishu.cn/wiki/YrzxwcjV9i3TK",
+      "text": "https://yuchangwenhua.feishu.cn/wiki/YrzxwcjV9i3TK",
+      "itemId": "bf5822bd152ab3",
+      "itemTitle": "【保姆级教程】把 AI 融入日常工作，随手做出一个小红书笔记发布工具",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://e0tolnpfkgm.feishu.cn/docx/M8ffdB6mpoZquLx78CIcslfKnOc",
+      "text": "https://e0tolnpfkgm.feishu.cn/docx/M8ffdB6mpoZquLx78CIcslfKnOc",
+      "itemId": "311d29ab4e5743",
+      "itemTitle": "\"万物复苏\", 小红书虚拟产品最好的入场时机来了 这篇帖子把一件事讲透：为什么小红书虚拟产品，是最适合一人公司实现商业闭环的项目，并且现在是最好的入场时机，以及这期行动营30天到底带你干什么。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://jotkdaof9v.feishu.cn/docx/Zm6TdlmIaoHfZBx19W8c2CeYnk6?from=from_copylink",
+      "text": "https://jotkdaof9v.feishu.cn/docx/Zm6TdlmIaoHfZBx1...",
+      "itemId": "3d1c2f8cb187bf",
+      "itemTitle": "万字干货深度解析：一人公司怎么做AI企业服务赛道？",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://jotkdaof9v.feishu.cn/docx/Zm6TdlmIaoHfZBx1",
+      "text": "https://jotkdaof9v.feishu.cn/docx/Zm6TdlmIaoHfZBx1",
+      "itemId": "3d1c2f8cb187bf",
+      "itemTitle": "万字干货深度解析：一人公司怎么做AI企业服务赛道？",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/docx/Ca5wd5oTToQxALxB1W9coi3onPd?from=from_copylink",
+      "text": "https://my.feishu.cn/docx/Ca5wd5oTToQxALxB1W9coi3onPd?from=from_copylink",
+      "itemId": "8dc824a8d6413b",
+      "itemTitle": "AI写作出海项目拆解帖（第11期）",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://pa23ntdf1gf.feishu.cn/wiki/D5eDw1t1rizoc1kmzl4cS19RnXb?from=from_copylink",
+      "text": "https://pa23ntdf1gf.feishu.cn/wiki/D5eDw1t1rizoc1kmzl4cS19RnXb?from=from_copylink",
+      "itemId": "975a8b4b59fa10",
+      "itemTitle": "公众号漫画 7 大赛道拆解：从 0 到 1 跑通自动化工作流",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://my.feishu.cn/docx/SDBhdGbdSonMqWx2oqvccpIbncf",
+      "text": "https://my.feishu.cn/docx/SDBhdGbdSonMqWx2oqvccpIbncf",
+      "itemId": "45d8440604df53",
+      "itemTitle": "观星Meta 行动家 星火师 2026-06-24 11:14 精华 【含派单】AI·PPT实战营拆解（第二期） 不过有句话我得跟你说在前头：上面这是我们团队整体的订单盘，几千上万的大单也有。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://icn2kodop27a.feishu.cn/wiki/Q3GtwBW3riT3exkZagycUlwRneN",
+      "text": "https://icn2kodop27a.feishu.cn/wiki/Q3GtwBW3riT3exkZagycUlwRneN",
+      "itemId": "45d8440604df53",
+      "itemTitle": "观星Meta 行动家 星火师 2026-06-24 11:14 精华 【含派单】AI·PPT实战营拆解（第二期） 不过有句话我得跟你说在前头：上面这是我们团队整体的订单盘，几千上万的大单也有。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/Ivyqw187AiqW3nkc3YIcblz0nlb",
+      "text": "https://my.feishu.cn/wiki/Ivyqw187AiqW3nkc3YIcblz0nlb",
+      "itemId": "45d8440604df53",
+      "itemTitle": "观星Meta 行动家 星火师 2026-06-24 11:14 精华 【含派单】AI·PPT实战营拆解（第二期） 不过有句话我得跟你说在前头：上面这是我们团队整体的订单盘，几千上万的大单也有。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://my.feishu.cn/docx/IIIzdqkHUoPhSpxtVEpc23hLnog",
+      "text": "视频号-人物故事 AI 视频制作提效复盘\"ql-ui\" contenteditable=\"false\">",
+      "itemId": "45d8440604df53",
+      "itemTitle": "观星Meta 行动家 星火师 2026-06-24 11:14 精华 【含派单】AI·PPT实战营拆解（第二期） 不过有句话我得跟你说在前头：上面这是我们团队整体的订单盘，几千上万的大单也有。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/GNQew3G0qiRSrrkVcoAcn7nZnrf",
+      "text": "【图文视频提效工具",
+      "itemId": "45d8440604df53",
+      "itemTitle": "观星Meta 行动家 星火师 2026-06-24 11:14 精华 【含派单】AI·PPT实战营拆解（第二期） 不过有句话我得跟你说在前头：上面这是我们团队整体的订单盘，几千上万的大单也有。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/GWczwryVUitugNkZdtDcDikjn8b",
+      "text": "https://my.feishu.cn/wiki/GWczwryVUitugNkZdtDcDikjn8b",
+      "itemId": "45d8440604df53",
+      "itemTitle": "观星Meta 行动家 星火师 2026-06-24 11:14 精华 【含派单】AI·PPT实战营拆解（第二期） 不过有句话我得跟你说在前头：上面这是我们团队整体的订单盘，几千上万的大单也有。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://vcnkc8uq9kjy.feishu.cn/docx/A8SIdeDsUo4a3yxYvbPcniDsnVW?from=from_copylink",
+      "text": "https://vcnkc8uq9kjy.feishu.cn/docx/A8SIdeDsUo4a3yxYvbPcniDsnVW?from=from_copylink",
+      "itemId": "45d8440604df53",
+      "itemTitle": "观星Meta 行动家 星火师 2026-06-24 11:14 精华 【含派单】AI·PPT实战营拆解（第二期） 不过有句话我得跟你说在前头：上面这是我们团队整体的订单盘，几千上万的大单也有。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/G4MIwKY5kiqzQvkGgw4coqKYnNg",
+      "text": "https://my.feishu.cn/wiki/G4MIwKY5kiqzQvkGgw4coqKYnNg",
+      "itemId": "45d8440604df53",
+      "itemTitle": "观星Meta 行动家 星火师 2026-06-24 11:14 精华 【含派单】AI·PPT实战营拆解（第二期） 不过有句话我得跟你说在前头：上面这是我们团队整体的订单盘，几千上万的大单也有。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/G4MIwKY5kiqzQvkGgw4coqKYnNg?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/G4MIwKY5kiqzQvkGgw4coqKYnNg?from=from_copylink",
+      "itemId": "45d8440604df53",
+      "itemTitle": "观星Meta 行动家 星火师 2026-06-24 11:14 精华 【含派单】AI·PPT实战营拆解（第二期） 不过有句话我得跟你说在前头：上面这是我们团队整体的订单盘，几千上万的大单也有。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://pcnc4by6km18.feishu.cn/wiki/KvMfwaFHfiC8AfkdgRWc2ZXzneg?from=from_copylink",
+      "text": "https://pcnc4by6km18.feishu.cn/wiki/KvMfwaFHfiC8AfkdgRWc2ZXzneg?from=from_copylink",
+      "itemId": "45d8440604df53",
+      "itemTitle": "观星Meta 行动家 星火师 2026-06-24 11:14 精华 【含派单】AI·PPT实战营拆解（第二期） 不过有句话我得跟你说在前头：上面这是我们团队整体的订单盘，几千上万的大单也有。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://uv31v1xfgt.feishu.cn/docx/CUAvdXyISomCczxjDg8cSy5zn0d?from=from_copylink",
+      "text": "https://uv31v1xfgt.feishu.cn/docx/CUAvdXyISomCczxjDg8cSy5zn0d?from=from_copylink",
+      "itemId": "45d8440604df53",
+      "itemTitle": "观星Meta 行动家 星火师 2026-06-24 11:14 精华 【含派单】AI·PPT实战营拆解（第二期） 不过有句话我得跟你说在前头：上面这是我们团队整体的订单盘，几千上万的大单也有。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://my.feishu.cn/docx/TIQxdcWjJojtRexh8QscHdRPn6d",
+      "text": "https://my.feishu.cn/docx/TIQxdcWjJojtRexh8QscHdRP...",
+      "itemId": "d8945678130093",
+      "itemTitle": "实体店倒闭后，大龄小白在抖音自然流CPS破百万GMV的复盘",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/docx/TIQxdcWjJojtRexh8QscHdRP",
+      "text": "https://my.feishu.cn/docx/TIQxdcWjJojtRexh8QscHdRP",
+      "itemId": "d8945678130093",
+      "itemTitle": "实体店倒闭后，大龄小白在抖音自然流CPS破百万GMV的复盘",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/docx/CnTmd3wsEo5DCexQ4R0cyVVTnwg?from=from_copylink",
+      "text": "https://my.feishu.cn/docx/CnTmd3wsEo5DCexQ4R0cyVVT...",
+      "itemId": "905ebbe3b78a14",
+      "itemTitle": "第一次创业做TEMU，月销123万、类目TOP1：我的实战复盘",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/docx/CnTmd3wsEo5DCexQ4R0cyVVT",
+      "text": "https://my.feishu.cn/docx/CnTmd3wsEo5DCexQ4R0cyVVT",
+      "itemId": "905ebbe3b78a14",
+      "itemTitle": "第一次创业做TEMU，月销123万、类目TOP1：我的实战复盘",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtUn8f?from=from_copylink",
+      "text": "https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtU...",
+      "itemId": "b47e19d1d3a793",
+      "itemTitle": "踩中5次风口，赚了100w+，万字拆解，普通人如何找到适合自己的风口",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtU",
+      "text": "https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtU",
+      "itemId": "b47e19d1d3a793",
+      "itemTitle": "踩中5次风口，赚了100w+，万字拆解，普通人如何找到适合自己的风口",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://ia7bfeeph3.feishu.cn/docx/MTCEdmwV6ojqgHxCyUkcVdqPnQd?from=from_copylink",
+      "text": "https://ia7bfeeph3.feishu.cn/docx/MTCEdmwV6ojqgHxC...",
+      "itemId": "a20e6fcf6f7a12",
+      "itemTitle": "AI赋能企业实战：我用AI帮一家移民机构搭了3套自动化系统，日均精准进线从0到20+",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://ia7bfeeph3.feishu.cn/docx/MTCEdmwV6ojqgHxC",
+      "text": "https://ia7bfeeph3.feishu.cn/docx/MTCEdmwV6ojqgHxC",
+      "itemId": "a20e6fcf6f7a12",
+      "itemTitle": "AI赋能企业实战：我用AI帮一家移民机构搭了3套自动化系统，日均精准进线从0到20+",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/LuglwGbx5i9q7SkkY7rcD30KnPb?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/LuglwGbx5i9q7SkkY7rcD30K...",
+      "itemId": "bc6f1d0c344a67",
+      "itemTitle": "通过3月航海，每天约3小时，我靠AI视频定制做到月收入 5000+ 的项目复盘",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/LuglwGbx5i9q7SkkY7rcD30K",
+      "text": "https://my.feishu.cn/wiki/LuglwGbx5i9q7SkkY7rcD30K",
+      "itemId": "bc6f1d0c344a67",
+      "itemTitle": "通过3月航海，每天约3小时，我靠AI视频定制做到月收入 5000+ 的项目复盘",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://rcnpkqb7315p.feishu.cn/docx/KN6VdWNB8oY0JUx7vBPciHEDnug",
+      "text": "https://rcnpkqb7315p.feishu.cn/docx/KN6VdWNB8oY0JUx7vBPciHEDnug",
+      "itemId": "6dba46230eb854",
+      "itemTitle": "AI一人公司短视频制作项目拆解",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://wcnjsfs339xu.feishu.cn/wiki/T8kTwh2dii6jzCkFoMCcSQqlnig",
+      "text": "https://wcnjsfs339xu.feishu.cn/wiki/T8kTwh2dii6jzCkFoMCcSQqlnig",
+      "itemId": "b3d4deed24897e",
+      "itemTitle": "21天教你从0做个赚钱的公众号细分AIP",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://xcn3y8gxfv7e.feishu.cn/docx/MfoodQ75ZoMONPxWaZ5chKzenTf?from=from_copylink",
+      "text": "https://xcn3y8gxfv7e.feishu.cn/docx/MfoodQ75ZoMONPxWaZ5chKzenTf?from=from_copylink",
+      "itemId": "909648d4aff6d3",
+      "itemTitle": "AI带货正在成为普通人的低门槛变现机会（附带货精华帖合集）",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://d16rg8unadx.feishu.cn/wiki/MSfbw5JR2iMldLkb52WcSRNan3b?from=from_copylink",
+      "text": "https://d16rg8unadx.feishu.cn/wiki/MSfbw5JR2iMldLkb52WcSRNan3b?from=from_copylink",
+      "itemId": "b60195e0930d43",
+      "itemTitle": "圈友们，5月会员日开奖啦~ 上期的会员日主题为：回顾10期破局好事，共赴11期成长新征程。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://d16rg8unadx.feishu.cn/docx/X9IgdwXnzokd0jx6UMCcjwksn9g?from=from_copylink",
+      "text": "https://d16rg8unadx.feishu.cn/docx/X9IgdwXnzokd0jx6UMCcjwksn9g?from=from_copylink",
+      "itemId": "f4d1ef5985ffaf",
+      "itemTitle": "破局AI视频生成系统即将公测：把爆款视频的做法，变成普通人也能跟着走的流程~",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://d16rg8unadx.feishu.cn/docx/NydRdABL6oiObqxFR47cWNRDnGW?from=from_copylink",
+      "text": "https://d16rg8unadx.feishu.cn/docx/NydRdABL6oiObqxFR47cWNRDnGW?from=from_copylink",
+      "itemId": "58c1c9bebe72fb",
+      "itemTitle": "别再凭感觉找项目了，先判断，再下场",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://dcn7y5714c1m.feishu.cn/wiki/W6QwwJ7iRiH4AmkgRi4ceVGdnQg?from=from_copylink",
+      "text": "https://dcn7y5714c1m.feishu.cn/wiki/W6QwwJ7iRiH4AmkgRi4ceVGdnQg?from=from_copylink",
+      "itemId": "e9b09a995dc9e3",
+      "itemTitle": "用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://k874t2qh8w.feishu.cn/wiki/U4b8wsBc2iihAQku9cpcaz3Vnlb?from=from_copylink",
+      "text": "https://k874t2qh8w.feishu.cn/wiki/U4b8wsBc2iihAQku9cpcaz3Vnlb?from=from_copylink",
+      "itemId": "93ed68caed3a01",
+      "itemTitle": "做了三个月公众号贴图，用ai+多维表格矩阵运营10个号，单号最高变现3000，我看到的内容红利",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://shengcaiyoushu01.feishu.cn/wiki/LskGwvUali7e44kdjxhceBxXnxc",
+      "text": "https://shengcaiyoushu01.feishu.cn/wiki/LskGwvUali...",
+      "itemId": "a2f9700c808de9",
+      "itemTitle": "要像礼物一样出现在别人的生命里 | 6.6航海家大课收官贴",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://shengcaiyoushu01.feishu.cn/wiki/LskGwvUali",
+      "text": "https://shengcaiyoushu01.feishu.cn/wiki/LskGwvUali",
+      "itemId": "a2f9700c808de9",
+      "itemTitle": "要像礼物一样出现在别人的生命里 | 6.6航海家大课收官贴",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/docx/I5dXdhasNosEsMxjuliccrKan5c",
+      "text": "https://my.feishu.cn/docx/I5dXdhasNosEsMxjuliccrKan5c",
+      "itemId": "3b657988cc9506",
+      "itemTitle": "11 期破局行动 Codex 实战做产品行动营拆解贴",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://xcnpidz82m12.feishu.cn/wiki/H2odw07xmi54clkRQEfct86bnoe",
+      "text": "https://xcnpidz82m12.feishu.cn/wiki/H2odw07xmi54clkRQEfct86bnoe",
+      "itemId": "d6bf972118a7d7",
+      "itemTitle": "AI教育微课拆解：30天，跑通AI写稿、AI做PPT、AI做视频变现全流程",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://vcnb821mkki2.feishu.cn/wiki/Bc9QwQg8pih9k4ksFvPcheRYnhK?from=from_copylink",
+      "text": "https://vcnb821mkki2.feishu.cn/wiki/Bc9QwQg8pih9k4...",
+      "itemId": "e88282e8f07759",
+      "itemTitle": "小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://vcnb821mkki2.feishu.cn/wiki/Bc9QwQg8pih9k4",
+      "text": "https://vcnb821mkki2.feishu.cn/wiki/Bc9QwQg8pih9k4",
+      "itemId": "e88282e8f07759",
+      "itemTitle": "小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7kkKwHcoTBun9e?from=from_copylink",
+      "text": "https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7k...",
+      "itemId": "f06f9199d9ea84",
+      "itemTitle": "2个月、1000万播放、5万粉丝,分享我用remotion做视频的经验",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7k...https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7k",
+      "text": "https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7k...https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7k",
+      "itemId": "f06f9199d9ea84",
+      "itemTitle": "2个月、1000万播放、5万粉丝,分享我用remotion做视频的经验",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://d16rg8unadx.feishu.cn/wiki/SLHJwLVpsinMvck2EIHczRmTnPh?from=from_copylink",
+      "text": "https://d16rg8unadx.feishu.cn/wiki/SLHJwLVpsinMvck2EIHczRmTnPh?from=from_copylink",
+      "itemId": "d8323e5c2d3773",
+      "itemTitle": "真正赚钱的方式，应该是顺着自己的性子来。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://b1bjvcu0j47.feishu.cn/wiki/NRrowGK1WivhjdkoCWCcQ9Q4nKh?from=from_copylink",
+      "text": "https://b1bjvcu0j47.feishu.cn/wiki/NRrowGK1WivhjdkoCWCcQ9Q4nKh?from=from_copylink",
+      "itemId": "26480a6e4241e6",
+      "itemTitle": "小红书虚拟产品卖了近2万后，我才明白最值钱的不是变现",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://xiyangshiai.feishu.cn/docx/KHmddGn4VoJ6iYxxxmPcQLDxnd2",
+      "text": "https://xiyangshiai.feishu.cn/docx/KHmddGn4VoJ6iYxxxmPcQLDxnd2",
+      "itemId": "0f58f8bf019f20",
+      "itemTitle": "大家好，我是西羊石小石学长，《AI视频一本通》和《AI漫剧创作一本通》书籍作者，专注 AI视频及其Agent自动化。",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://ccnx8k9v2rxx.feishu.cn/docx/COmZdNr1koPMtcxwuqociQ9wnye?from=from_copylink",
+      "text": "https://ccnx8k9v2rxx.feishu.cn/docx/COmZdNr1koPMtcxwuqociQ9wnye?from=from_copylink",
+      "itemId": "9d874e378ebe72",
+      "itemTitle": "🔥 月入2万+，我研究了5个腾讯ima知识号真实案例，写出了这份可复制的变现攻略",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/PL0Zw5EkgiGWO0kMjflcZOtLnke?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/PL0Zw5EkgiGWO0kMjflcZOtLnke?from=from_copylink",
+      "itemId": "aeff55e60e6724",
+      "itemTitle": "私塾线下课复盘——AI搞钱真正拉开差距的，不只是工具和执行力",
+      "source": "aipoju",
+      "sourceName": "AI破局"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/M0wgwTJzMiPtZMkEeIocgw2Gn6W?from=from_copylink",
+      "text": "《飞书完整文档，点击》",
+      "itemId": "fa3d7a5b166f19",
+      "itemTitle": "靠这套AI编程打法SOP，1个月从「只会提需求」到能交付能变现，附录7个完整的提示词",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://icnqpu3z244v.feishu.cn/wiki/FyMewVEP3i3JR6kO2sccaIMDn9b",
+      "text": "https://icnqpu3z244v.feishu.cn/wiki/FyMewVEP3i3JR6kO2sccaIMDn9b",
+      "itemId": "71c050f6ace65a",
+      "itemTitle": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://higjmmrwjkh.feishu.cn/wiki/BZXowanioimo3qkzQbKcSK7Injg?from=from_copylink",
+      "text": "https://higjmmrwjkh.feishu.cn/wiki/BZXowanioimo3qkzQbKcSK7Injg?from=from_copylink",
+      "itemId": "d80e7811148269",
+      "itemTitle": "用 NotebookLM 做原创课件：从0到月入6w，我踩过的坑和跑通的路径",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://ncnmu5q1eqm9.feishu.cn/wiki/R3LXwoQ1NiOLZokVfeJcoeQHn1l",
+      "text": "https://ncnmu5q1eqm9.feishu.cn/wiki/R3LXwoQ1NiOLZokVfeJcoeQHn1l",
+      "itemId": "c705de64428038",
+      "itemTitle": "YouTube月入万刀、视频号百万GMV，通过AI视频拿到结果的圈友都做对了什么",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://ocnsg70itv51.feishu.cn/wiki/F1Xpwl846iq8xik3VrFcDiyvndg?from=from_copylink",
+      "text": "https://ocnsg70itv51.feishu.cn/wiki/F1Xpwl846iq8xi...",
+      "itemId": "bbe5596205d0e1",
+      "itemTitle": "做宠物用品无人超市，每周工作3小时，年营收做到近40万的复盘与心得",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://ocnsg70itv51.feishu.cn/wiki/F1Xpwl846iq8xi",
+      "text": "https://ocnsg70itv51.feishu.cn/wiki/F1Xpwl846iq8xi",
+      "itemId": "bbe5596205d0e1",
+      "itemTitle": "做宠物用品无人超市，每周工作3小时，年营收做到近40万的复盘与心得",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/FeY4wc8AXiyGglk8VFRc3rIQnuh?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/FeY4wc8AXiyGglk8VFRc3rIQ...",
+      "itemId": "4813debba78072",
+      "itemTitle": "3年跑通10+项目，6年大厂烧掉2个亿写成13万字书：我是如何选项目、换项目不内耗的？",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/FeY4wc8AXiyGglk8VFRc3rIQ",
+      "text": "https://my.feishu.cn/wiki/FeY4wc8AXiyGglk8VFRc3rIQ",
+      "itemId": "4813debba78072",
+      "itemTitle": "3年跑通10+项目，6年大厂烧掉2个亿写成13万字书：我是如何选项目、换项目不内耗的？",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/WN6RwKXakiqSubkCIsncGLfNnMc?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/WN6RwKXakiqSubkCIsncGLfN...",
+      "itemId": "cc2eb8b05209a2",
+      "itemTitle": "我用两条抖音视频，搭出了一个会自我生长的个人知识库入口",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/WN6RwKXakiqSubkCIsncGLfN",
+      "text": "https://my.feishu.cn/wiki/WN6RwKXakiqSubkCIsncGLfN",
+      "itemId": "cc2eb8b05209a2",
+      "itemTitle": "我用两条抖音视频，搭出了一个会自我生长的个人知识库入口",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://yuchangwenhua.feishu.cn/wiki/R3ZJwAtTciXEO0k80YYccQvknhe?from=from_copylink",
+      "text": "https://yuchangwenhua.feishu.cn/wiki/R3ZJwAtTciXEO...",
+      "itemId": "da828d143f4389",
+      "itemTitle": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://yuchangwenhua.feishu.cn/wiki/R3ZJwAtTciXEO",
+      "text": "https://yuchangwenhua.feishu.cn/wiki/R3ZJwAtTciXEO",
+      "itemId": "da828d143f4389",
+      "itemTitle": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://shengcaiyoushu01.feishu.cn/wiki/CzZTwloyri8qBSkqOGQcaAvTnCe?from=from_copylink",
+      "text": "https://shengcaiyoushu01.feishu.cn/wiki/CzZTwloyri...",
+      "itemId": "f653441dbd6266",
+      "itemTitle": "访谈生财传术师kosan：AI时代一定要做IP，做IP你是品牌，不做你就是白牌！",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://shengcaiyoushu01.feishu.cn/wiki/CzZTwloyri...这篇对谈最打动我的地方",
+      "text": "https://shengcaiyoushu01.feishu.cn/wiki/CzZTwloyri...这篇对谈最打动我的地方",
+      "itemId": "f653441dbd6266",
+      "itemTitle": "访谈生财传术师kosan：AI时代一定要做IP，做IP你是品牌，不做你就是白牌！",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/NLuOwKJLHiBGrok945McHQVMnXg?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/NLuOwKJLHiBGrok945McHQVMnXg?from=from_copylink",
+      "itemId": "b40f4aa0b8b2e8",
+      "itemTitle": "大四学生做公众号一年靠变现 6 万+，深耕大学生赛道的我如何通过流量主、商单和私域变现，新人可参考",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://ccnemahmrxxq.feishu.cn/wiki/Eqk6wdjwJiV4gDkSpWDc425lnBg?from=from_copylink",
+      "text": "https://ccnemahmrxxq.feishu.cn/wiki/Eqk6wdjwJiV4gD...",
+      "itemId": "fabe9bafae1f73",
+      "itemTitle": "靠生财520找了老公，又靠生财CP做成贴图号：2个月9000+实战复盘",
+      "source": "scys",
+      "sourceName": "生财有术"
+    },
+    {
+      "href": "https://ccnemahmrxxq.feishu.cn/wiki/Eqk6wdjwJiV4gD",
+      "text": "https://ccnemahmrxxq.feishu.cn/wiki/Eqk6wdjwJiV4gD",
+      "itemId": "fabe9bafae1f73",
+      "itemTitle": "靠生财520找了老公，又靠生财CP做成贴图号：2个月9000+实战复盘",
+      "source": "scys",
+      "sourceName": "生财有术"
+    }
+  ],
+  "items": [
+    {
+      "id": "3e9fb6a0743bfc",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "竹子｜洋哥助理",
+      "role": "星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-25 19:39",
+      "title": "破局AI带货系统已经正式上线 之前洋哥在星球多次提到的破局AI带货系统，经过技术团队紧张开发和多轮迭代，已经正式上线了。",
+      "url": "https://aipoju.com/topic-details/82255244188451242",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率",
+        "工具配置与AI基建门槛"
+      ],
+      "resultSignal": "成交",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 58,
+      "valueScore": 100,
+      "summary": "破局AI带货系统已经正式上线 之前洋哥在星球多次提到的破局AI带货系统，经过技术团队紧张开发和多轮迭代，已经正式上线了",
+      "evidence": "破局AI带货系统已经正式上线 之前洋哥在星球多次提到的破局AI带货系统，经过技术团队紧张开发和多轮迭代，已经正式上线了。现在正处于内测阶段，在行动营正式开启之前，我们会给大家开放使用。 作为洋哥给大家的福利，所有报名全域AI带货行动营的圈友，都可以免费使用带货系统1个月。 系统能帮你完成什么 首先，我得说清楚什么是AI带货这个项目。 AI带货本质上不是一个单点工具项目，而是一条完整的内容电商链路。 从赛道判断、账号搭建、选品、爆款拆解、文案二创、AI图片和视频制作，到发布节奏、数据复盘、违规规避、矩阵放大，每一个环节都会影响你的最终成交。这是一个系统工程。 所以我们做这套系统，就是为了帮助大家更系统、更高效地完成这个完整的链路。 它不是点一下就保证爆的工具，也不是替你拍脑袋做决定。它更像一个流程助手：把商品、…",
+      "excerpt": "现在正处于内测阶段，在行动营正式开启之前，我们会给大家开放使用。 作为洋哥给大家的福利，所有报名全域AI带货行动营的圈友，都可以免费使用带货系统1个月。 系统能帮你完成什么 首先，我得说清楚什么是AI带货这个项目。 AI带货本质上不是一个单点工具项目，而是一条完整的内容电商链路。 从赛道判断、账号搭建、选品、爆款拆解、文案二创、AI图片和视频制作，到发布节奏、数据复盘、违规规避、矩阵放大，每一个环节都会影响你的最终成交。这是一个系统工程。 所以我们做这套系统，就是为了帮助大家更系统、更高效地完成这个完整的链路。 …",
+      "links": [],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "bf5822bd152ab3",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "郭晓文",
+      "role": "航海家",
+      "relativeTime": "18小时前",
+      "publishedAt": "",
+      "title": "【保姆级教程】把 AI 融入日常工作，随手做出一个小红书笔记发布工具",
+      "url": "https://scys.com/articleDetail/xq_topic/45544522211518158",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "Codex",
+        "Claude Code",
+        "Claude",
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率",
+        "工具配置与AI基建门槛",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "收费也不便宜",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 84,
+      "valueScore": 100,
+      "summary": "【保姆级教程】把 AI 融入日常工作，随手做出一个小红书笔记发布工具 ----大家好，我叫郭晓文，江湖人称最懂新手的男人，7 年生财老圈友，17篇精华帖作者",
+      "evidence": "大家好，我叫郭晓文，江湖人称最懂新手的男人，7 年生财老圈友，17篇精华帖作者。 感谢大家的认可和支持，上周我写的【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目，已经成了近3 个月点赞榜的第一名。我也看到了不少小伙伴在评论区反馈自己执行之后，已经拿到了正反馈！ 今天的这篇文章，依然会保持之前的风格——保姆级、落地。希望屏幕前的你，可以在实践中，学习 AI，感受 AI，拥抱 AI，最终实实在在地通过 AI 获得财富！ --- 写这篇文章的初衷，依然是因为我看到了一个巨大的矛盾： 市面上大多和 AI 相关的内容： 1. 要么是「术」的极端，呈现的是AI 某项能力的极限，比如说借助 AI 日产 1000 条视频。但大多数人，因为没有应用这个「术」的场景，很容易陷入盲目追求技术的误区，又或者说不知道…",
+      "excerpt": "----大家好，我叫郭晓文，江湖人称最懂新手的男人，7 年生财老圈友，17篇精华帖作者。感谢大家的认可和支持，上周我写的【保姆级教程&经历复盘】1天跑...【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目，已经成了近3 个月点赞榜的第一名。我也看到了不少小伙伴在评论区反馈自己执行之后，已经拿到了正反馈！今天的这篇文章，依然会保持之前的风格——保姆级、落地。希望屏幕前的你，可以在实践中，学习 AI，感受 AI，拥抱 AI，最终实实在在地通过 AI 获得财富！---写这篇文章的初衷，依然是因为我看到了…",
+      "links": [
+        {
+          "href": "https://yuchangwenhua.feishu.cn/wiki/YrzxwcjV9i3TKXk4JhCc1l02nAc?from=from_copylink",
+          "text": "https://yuchangwenhua.feishu.cn/wiki/YrzxwcjV9i3TK..."
+        },
+        {
+          "href": "https://yuchangwenhua.feishu.cn/wiki/YrzxwcjV9i3TK",
+          "text": "https://yuchangwenhua.feishu.cn/wiki/YrzxwcjV9i3TK"
+        }
+      ],
+      "metrics": "20 114 12 26",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "311d29ab4e5743",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "卡尔_Heinz",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-25 13:15",
+      "title": "\"万物复苏\", 小红书虚拟产品最好的入场时机来了 这篇帖子把一件事讲透：为什么小红书虚拟产品，是最适合一人公司实现商业闭环的项目，并且现在是最好的入场时机，以及这期行动营30天到底带你干什么。",
+      "url": "https://aipoju.com/topic-details/14422411181244112",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 44,
+      "valueScore": 52,
+      "summary": "\"万物复苏\", 小红书虚拟产品最好的入场时机来了 这篇帖子把一件事讲透：为什么小红书虚拟产品，是最适合一人公司实现商业闭环的项目，并且现在是最好的入场时机，以及这期行动营30天到底带你干什么",
+      "evidence": "\"万物复苏\", 小红书虚拟产品最好的入场时机来了 这篇帖子把一件事讲透：为什么小红书虚拟产品，是最适合一人公司实现商业闭环的项目，并且现在是最好的入场时机，以及这期行动营30天到底带你干什么。 不画饼，不喊口号，全是我自己下场带这个项目的真实判断。 先说我是谁。我是卡尔，破局行动家，在破局担任过7次小红书项目的总教练，这次是第8次。国企裸辞创业一年多，10倍曾经的主业。自己跑这个项目，连续两周起两个新店，都在一周内突破日销3k+，亲自带的虚拟电商学员也早已实现总利润七位数。 正文请见飞书： https://e0tolnpfkgm.feishu.cn/docx/M8ffdB6mpoZquLx78CIcslfKnOc",
+      "excerpt": "不画饼，不喊口号，全是我自己下场带这个项目的真实判断。 先说我是谁。我是卡尔，破局行动家，在破局担任过7次小红书项目的总教练，这次是第8次。国企裸辞创业一年多，10倍曾经的主业。自己跑这个项目，连续两周起两个新店，都在一周内突破日销3k+，亲自带的虚拟电商学员也早已实现总利润七位数。 正文请见飞书： https://e0tolnpfkgm.feishu.cn/docx/M8ffdB6mpoZquLx78CIcslfKnOc",
+      "links": [
+        {
+          "href": "https://e0tolnpfkgm.feishu.cn/docx/M8ffdB6mpoZquLx78CIcslfKnOc",
+          "text": "https://e0tolnpfkgm.feishu.cn/docx/M8ffdB6mpoZquLx78CIcslfKnOc"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "3d1c2f8cb187bf",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "乐阳",
+      "role": "航海家",
+      "relativeTime": "1天前",
+      "publishedAt": "",
+      "title": "万字干货深度解析：一人公司怎么做AI企业服务赛道？",
+      "url": "https://scys.com/articleDetail/xq_topic/45544522854515258",
+      "scene": "交付与服务自动化",
+      "industry": "企业服务",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 72,
+      "valueScore": 95,
+      "summary": "万字干货深度解析：一人公司怎么做AI企业服务赛道",
+      "evidence": "各位圈友好，我是乐阳。我从2023年开始做AI企业服务，做过企业内训、智能体工作流工具定制、AI代运营和算力服务。收过3万的内训，做过10万级定制，也做过最高100万的代运营项目。 做AI企业服务的过程中，我们也遇到过很多问题。 这些问题，也是我这几年一路踩坑后才慢慢想清楚的。 1.普通人怎么拿到第一个企业AI服务客户？ 2.没有企业资源和背书怎么办？ 3.怎么在30分钟内挖出企业老板真正愿意付费的需求？ 4.AI服务的报价，到底该报几千、几万，还是几十万？ 5.企业最愿意为什么买单？ 6.未来三年，企业AI最大的机会到底在哪里？ 这篇一万多字，我把自己从0做AI企业服务的真实路径、踩过的坑和关键判断都拆开讲一遍。 如果你也想做或者在做企业AI服务，这篇应该值得看完。 全文在飞书👇 https://jotk…",
+      "excerpt": "各位圈友好，我是乐阳。我从2023年开始做AI企业服务，做过企业内训、智能体工作流工具定制、AI代运营和算力服务。收过3万的内训，做过10万级定制，也做过最高100万的代运营项目。做AI企业服务的过程中，我们也遇到过很多问题。这些问题，也是我这几年一路踩坑后才慢慢想清楚的。1.普通人怎么拿到第一个企业AI服务客户？2.没有企业资源和背书怎么办？3.怎么在30分钟内挖出企业老板真正愿意付费的需求？4.AI服务的报价，到底该报几千、几万，还是几十万？5.企业最愿意为什么买单？6.未来三年，企业AI最大的机会到底在哪里…",
+      "links": [
+        {
+          "href": "https://jotkdaof9v.feishu.cn/docx/Zm6TdlmIaoHfZBx19W8c2CeYnk6?from=from_copylink",
+          "text": "https://jotkdaof9v.feishu.cn/docx/Zm6TdlmIaoHfZBx1..."
+        },
+        {
+          "href": "https://jotkdaof9v.feishu.cn/docx/Zm6TdlmIaoHfZBx1",
+          "text": "https://jotkdaof9v.feishu.cn/docx/Zm6TdlmIaoHfZBx1"
+        }
+      ],
+      "metrics": "147 147 14 77",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "b567e48f41256c",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "晓君@AI破局",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-06-24 19:42",
+      "title": "破局2026年权益升级",
+      "url": "https://aipoju.com/topic-details/45544522821445888",
+      "scene": "交付与服务自动化",
+      "industry": "企业服务",
+      "tools": [],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "交付标准化与复购",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 46,
+      "valueScore": 63,
+      "summary": "破局2026年权益升级 破局2026年权益升级",
+      "evidence": "📢破局6.29正式涨价至2399 之前其实也预告过几次，今天来兑现了：6月29日，破局正式涨价到 2399。 想真诚的说一句，涨价不是因为我们想多赚钱，是因为我们在不断增加交付的厚度和重量。 破局第四年刚过了几个月，很多洋哥年初立下的flag，已经一个一个实现了。 作为星球运营负责人，我简单盘了一下这段时间破局干成的事： 1/ AI项目库正式上线。我们把圈友真实跑通、验证过的实战项目，一个一个沉淀成可复制的资产。不用你自己摸索踩坑，谁来都能照着SOP直接干，这是破局给新人最快的起飞通道。 2/ 官网彻底改版。破局的门面、内容的呈现、圈友找资料的体验，又往上抬了一个大台阶，让大家在学习的时候能够有更舒适、个性化的体验。 3/ AI千人大会落地。全国TOP级的AI+行业行动家、创业者、企业家齐聚一堂，已经从赛道…",
+      "excerpt": "破局2026年权益升级",
+      "links": [],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "8dc824a8d6413b",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "沛钰",
+      "role": "行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-06-24 18:46",
+      "title": "AI写作出海项目拆解帖（第11期）",
+      "url": "https://aipoju.com/topic-details/45544522828285258",
+      "scene": "交付与服务自动化",
+      "industry": "留学教育",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "交付标准化与复购"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 60,
+      "valueScore": 72,
+      "summary": "AI写作出海项目拆解帖（第11期） AI写作出海项目拆解帖（第11期）",
+      "evidence": "大家好，我是沛钰，这期“AI写作出海”行动营的主教练，00后破局行动家。2023 年加入破局，2024 年开始跟着破局做 AI 写作项目，后面每一期行动营我基本都跟着跑。也是因为破局一直给普通人提供这种“不是听课，而是直接下场实战”的机会，我才从一个什么都不懂的小白，慢慢做到留学生写作交付、线下全链路工作室，再到今天能来带大家做这一期项目 这期我们不是来教一堆理论的，开营第一天就直接实操。别把自己当学生，咱们是来赚钱的。你不用等所有知识都学完再开始，先动手，先拿反馈，卡住了再问，问完继续改。这一期我们教练的交付，除了提供非常详细的 SOP 之外，还配有大概7场直播讲解，以及群内的随时答疑。关于本期这个项目的具体拆解，移步飞书https://my.feishu.cn/docx/Ca5wd5oTToQxALxB1…",
+      "excerpt": "AI写作出海项目拆解帖（第11期）",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/Ca5wd5oTToQxALxB1W9coi3onPd?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/Ca5wd5oTToQxALxB1W9coi3onPd?from=from_copylink"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "9d0e6611f4cf38",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "findyi",
+      "role": "星主 行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-06-24 16:25",
+      "title": "AI洞察35：微信小微背后，AI正在定义人的决策，AI agent市场和AI时代的操作系统的雏形诞生了，TO AI的规划、GEO、AI超级个体的影响，一篇讲透 聊聊微信小微，一个新的红利生态。",
+      "url": "https://aipoju.com/topic-details/45544522851244528",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 52,
+      "valueScore": 90,
+      "summary": "AI洞察35：微信小微背后，AI正在定义人的决策，AI agent市场和AI时代的操作系统的雏形诞生了，TO AI的规划、GEO、AI超级个体的影响，一篇讲透 聊聊微信小微，一个新的红利生态",
+      "evidence": "AI洞察35：微信小微背后，AI正在定义人的决策，AI agent市场和AI时代的操作系统的雏形诞生了，TO AI的规划、GEO、AI超级个体的影响，一篇讲透 聊聊微信小微，一个新的红利生态。 先说一句重要的话：破局圈友千万别看热闹，做消费者，一定要做小微时代的创作者。 好了，以下是正文，大家记得先点赞后看，养成好习惯： 这几天，微信干了一件大事。 它的原生AI助手\"小微\"，开始扩大内测了。 很多人更新到最新版本，点一下左上角，或者把主界面往右一滑，就能跟它说话： 帮我给妈妈发条生日快乐、总结一下最近两天的朋友圈、点一杯瑞幸、做一个记录心情的小工具。 我没有被灰度到，但有同事被灰度到了，我使用了一天，讲一些最新的我的洞察和看法： 1/微信做小微，根本不是想多一个聊天机器人 它真正要要做的是AI时代的操作系统。…",
+      "excerpt": "先说一句重要的话：破局圈友千万别看热闹，做消费者，一定要做小微时代的创作者。 好了，以下是正文，大家记得先点赞后看，养成好习惯： 这几天，微信干了一件大事。 它的原生AI助手\"小微\"，开始扩大内测了。 很多人更新到最新版本，点一下左上角，或者把主界面往右一滑，就能跟它说话： 帮我给妈妈发条生日快乐、总结一下最近两天的朋友圈、点一杯瑞幸、做一个记录心情的小工具。 我没有被灰度到，但有同事被灰度到了，我使用了一天，讲一些最新的我的洞察和看法： 1/微信做小微，根本不是想多一个聊天机器人 它真正要要做的是AI时代的操作…",
+      "links": [],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "975a8b4b59fa10",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "后端小肥肠",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-24 13:17",
+      "title": "公众号漫画 7 大赛道拆解：从 0 到 1 跑通自动化工作流",
+      "url": "https://aipoju.com/topic-details/82255244882215212",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "n8n",
+        "Coze"
+      ],
+      "monetization": "资料产品 / 工具包",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "粉丝和私域400多人的社群",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 54,
+      "valueScore": 96,
+      "summary": "公众号漫画 7 大赛道拆解：从 0 到 1 跑通自动化工作流 公众号漫画 7 大赛道拆解：从 0 到 1 跑通自动化工作流",
+      "evidence": "各位新老圈友大家好，我是后端小肥肠~ 后端程序员出身，之前在行业龙头公司做后端架构，2025年被优化后开始创业做一人公司+个人IP，现在全网已积累2.6w+粉丝和私域400多人的社群。 我应该是最早入局公众号 AI 漫画自动化赛道的一批人。目前深耕 Coze、n8n、Skill 等 AI 工具搭建全流程自动化工作流，自己运营的老纪漫画号也有过入池记录。在 AI 破局俱乐部我先后担任过 2 次智能体教练（普通营 + 2 个月加强营），也做过 n8n 训练营的教练，这次是咱们公众号漫画工作流行动营的主教练。 在这里感谢洋哥一直的指点和支持，也非常感谢我们这期行动营的志愿者团队全力配合，以及教练团一起打磨出了这套详细的漫画工作流实战手册。 这次我带着自己踩坑跑通的公众号 AI 漫画全流程经验，联合各位教练一起筹备了…",
+      "excerpt": "公众号漫画 7 大赛道拆解：从 0 到 1 跑通自动化工作流",
+      "links": [
+        {
+          "href": "https://pa23ntdf1gf.feishu.cn/wiki/D5eDw1t1rizoc1kmzl4cS19RnXb?from=from_copylink",
+          "text": "https://pa23ntdf1gf.feishu.cn/wiki/D5eDw1t1rizoc1kmzl4cS19RnXb?from=from_copylink"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "e5b3390d7ac0fb",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "观星Meta",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-24 11:14",
+      "title": "【含派单】AI·PPT实战营拆解（第二期）",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "订单： 答辩、汇报、各类 PPT 都有",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 76,
+      "valueScore": 100,
+      "summary": "【含派单】AI·PPT实战营拆解（第二期） 【含派单】AI·PPT实战营拆解（第二期）",
+      "evidence": "【含派单】AI·PPT实战营拆解（第二期）",
+      "excerpt": "【含派单】AI·PPT实战营拆解（第二期）",
+      "links": [],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "45d8440604df53",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "search",
+        "group": "opportunity",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "观星Meta",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-24 11:14",
+      "title": "观星Meta 行动家 星火师 2026-06-24 11:14 精华 【含派单】AI·PPT实战营拆解（第二期） 不过有句话我得跟你说在前头：上面这是我们团队整体的订单盘，几千上万的大单也有。",
+      "url": "https://aipoju.com/search",
+      "scene": "交付与服务自动化",
+      "industry": "企业服务",
+      "tools": [
+        "ChatGPT",
+        "飞书",
+        "Gemini",
+        "Claude",
+        "RPA",
+        "Coze",
+        "Codex",
+        "Openclaw",
+        "n8n"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率",
+        "内容生产与账号增长",
+        "获客成本与精准线索",
+        "工具配置与AI基建门槛"
+      ],
+      "resultSignal": "订单盘",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "前端获客 + 后端交付拆分",
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 58,
+      "valueScore": 100,
+      "summary": "丹丹 2026-05-26 13:53 闲鱼月入过万，转战AI壁纸3小时直播跟学，从赚钱不快乐到快乐赚钱的完整复盘 之前我做闲鱼月入过万，这次壁纸到现在收入几十，却感到希望无限，被滋养，特别美 好... #AI绘画&音视频 27 5 2 曰商是常：请问现在还能开通后台吗 回复 2026-06-08 22:17 天山：👍👍👍👍👍👍 回复 2026…",
+      "evidence": "但这种高价单，是留给持续交付、被我们一单单验证过靠谱的老手的。 而且结营之后，这帮人没散，订单群里照样天天有人接单、报喜。 而且这帮人不只闷头赚钱，还特别爱晒、爱复盘。这一期，我们盯着「怎么让你更快破蛋、走稳从 0 到 1 这一步」，把这几块重点优化了一遍： ① 订单量翻了两倍。 0 4 2 教应：offic也可以吧 ，不用非得wps吧 回复 2026-06-25 15:39 野生老肖：冒泡冒泡😬😬😬，第二个月4000➕收入了。当然这还是在淘宝做黑奴的收益，[捂脸]，我还菜，得多练。💪 回复 2026-06-25 12:28 椰子：干了兄弟们，我是上学期的学员，我一开始真的，什么都不懂，纯小白，在我看来AIPPT真的是个正反馈极高的赛道，非常值得去深耕，行动营不仅教练非常友好，讲课也非常有趣，同样课时…",
+      "excerpt": "但这种高价单，是留给持续交付、被我们一单单验证过靠谱的老手的。 而且结营之后，这帮人没散，订单群里照样天天有人接单、报喜。 而且这帮人不只闷头赚钱，还特别爱晒、爱复盘。这一期，我们盯着「怎么让你更快破蛋、走稳从 0 到 1 这一步」，把这几块重点优化了一遍： ① 订单量翻了两倍。 0 4 2 教应：offic也可以吧 ，不用非得wps吧 回复 2026-06-25 15:39 野生老肖：冒泡冒泡😬😬😬，第二个月4000➕收入了。当然这还是在淘宝做黑奴的收益，[捂脸]，我还菜，得多练。💪 回复 2026-0…",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/SDBhdGbdSonMqWx2oqvccpIbncf",
+          "text": "https://my.feishu.cn/docx/SDBhdGbdSonMqWx2oqvccpIbncf"
+        },
+        {
+          "href": "https://icn2kodop27a.feishu.cn/wiki/Q3GtwBW3riT3exkZagycUlwRneN",
+          "text": "https://icn2kodop27a.feishu.cn/wiki/Q3GtwBW3riT3exkZagycUlwRneN"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/Ivyqw187AiqW3nkc3YIcblz0nlb",
+          "text": "https://my.feishu.cn/wiki/Ivyqw187AiqW3nkc3YIcblz0nlb"
+        },
+        {
+          "href": "https://my.feishu.cn/docx/IIIzdqkHUoPhSpxtVEpc23hLnog",
+          "text": "视频号-人物故事 AI 视频制作提效复盘\"ql-ui\" contenteditable=\"false\">"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/GNQew3G0qiRSrrkVcoAcn7nZnrf",
+          "text": "【图文视频提效工具"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/GWczwryVUitugNkZdtDcDikjn8b",
+          "text": "https://my.feishu.cn/wiki/GWczwryVUitugNkZdtDcDikjn8b"
+        },
+        {
+          "href": "https://vcnkc8uq9kjy.feishu.cn/docx/A8SIdeDsUo4a3yxYvbPcniDsnVW?from=from_copylink",
+          "text": "https://vcnkc8uq9kjy.feishu.cn/docx/A8SIdeDsUo4a3yxYvbPcniDsnVW?from=from_copylink"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/G4MIwKY5kiqzQvkGgw4coqKYnNg",
+          "text": "https://my.feishu.cn/wiki/G4MIwKY5kiqzQvkGgw4coqKYnNg"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/G4MIwKY5kiqzQvkGgw4coqKYnNg?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/G4MIwKY5kiqzQvkGgw4coqKYnNg?from=from_copylink"
+        },
+        {
+          "href": "https://pcnc4by6km18.feishu.cn/wiki/KvMfwaFHfiC8AfkdgRWc2ZXzneg?from=from_copylink",
+          "text": "https://pcnc4by6km18.feishu.cn/wiki/KvMfwaFHfiC8AfkdgRWc2ZXzneg?from=from_copylink"
+        },
+        {
+          "href": "https://uv31v1xfgt.feishu.cn/docx/CUAvdXyISomCczxjDg8cSy5zn0d?from=from_copylink",
+          "text": "https://uv31v1xfgt.feishu.cn/docx/CUAvdXyISomCczxjDg8cSy5zn0d?from=from_copylink"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 80
+    },
+    {
+      "id": "0c55bf40c38174",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "醒狮",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-06-24 11:14",
+      "title": "AI设计(含GPTImage 2)训练营拆解",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "本地生活",
+      "tools": [],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 58,
+      "valueScore": 76,
+      "summary": "AI设计(含GPTImage 2)训练营拆解 AI设计(含GPTImage 2)训练营拆解",
+      "evidence": "AI设计(含GPTImage 2)训练营拆解",
+      "excerpt": "AI设计(含GPTImage 2)训练营拆解",
+      "links": [],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "0bd24536d64be0",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "竹子｜洋哥助理",
+      "role": "星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-24 09:45",
+      "title": "11期破局行动6月24日10:00正式开启报名 报名时间：6月24日10:00 - 7月3日，7月10日正式开营。",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "留学教育",
+      "tools": [
+        "Codex",
+        "Claude Code",
+        "Claude",
+        "Obsidian"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "GMV1536.8元成交35单",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 82,
+      "valueScore": 100,
+      "summary": "11期破局行动6月24日10:00正式开启报名 报名时间：6月24日10:00 - 7月3日，7月10日正式开营",
+      "evidence": "报名11期的破局行动项目，复制链接到微信内报名或电脑点击链接后用手机扫码报名：AI破局官网 2026年上半年，AI的变化速度超出了所有人的预期。 Codex让不会写代码的人也能做出能上线的产品，GPT Image 2把AI设计拉到了商用级水准，Claude Code加Obsidian让一个人搭出一整套内容生产系统成为现实。 与此同时，视频号全面加速商业化，小红书虚拟产品经历一轮洗牌，玩法彻底变了，AI编程出海的门槛也在被Codex快速拉低。 每隔一两个月，就有新的工具、新的平台、新的打法冒出来。你今天觉得还有时间慢慢研究，下个月回头看可能窗口已经变了。 AI的迭代不等人，窗口期更不等人。 但比工具迭代更重要的，是用AI做事的方式在变。 洋哥在最近的AI洞察里讲了一个判断：2026年的AI红利，不再属于追着工具…",
+      "excerpt": "报名11期的破局行动项目，复制链接到微信内报名或电脑点击链接后用手机扫码报名：AI破局官网 2026年上半年，AI的变化速度超出了所有人的预期。 Codex让不会写代码的人也能做出能上线的产品，GPT Image 2把AI设计拉到了商用级水准，Claude Code加Obsidian让一个人搭出一整套内容生产系统成为现实。 与此同时，视频号全面加速商业化，小红书虚拟产品经历一轮洗牌，玩法彻底变了，AI编程出海的门槛也在被Codex快速拉低。 每隔一两个月，就有新的工具、新的平台、新的打法冒出来。你今天觉得还有时间…",
+      "links": [],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "d8945678130093",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "search",
+        "group": "opportunity",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "德华",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "实体店倒闭后，大龄小白在抖音自然流CPS破百万GMV的复盘",
+      "url": "https://scys.com/articleDetail/xq_topic/45544525142415188",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "GMV的复盘 大家好",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 72,
+      "valueScore": 100,
+      "summary": "实体店倒闭后，大龄小白在抖音自然流CPS破百万GMV的复盘 大家好，我是德华",
+      "evidence": "大家好，我是德华。大环境影响下，我的线下实体便利店被迫关门。作为不太擅长社交的大龄小白，加入生财后我曾一度陷入“信息过载”的迷茫。直到这次参加抖音自然流CPS的mini航海，我才真正迎来了破局点，跑通了从0到1，拿到了破百万GMV的结果，6月9日结营时，航海排行榜第1名。这次的复盘，我把做这个项目以来的跌宕起伏、踩坑经验以及沉淀下来的实操SOP都毫无保留地总结了下来。【文章大纲如下】一、 加入生财后的“信息过载”与瞎折腾二、 破局点：一分钱的震撼与过山车般的流量三、 深度拆解：这破百万的GMV，到底是怎么推出来的？四、 踩坑与迭代：普通人可以复制的实操SOP（标签公式、互动策略与风控应对）五、 写在最后的话强烈建议大家点开飞书链接阅读包含详细配图的完整版⬇️：https://my.feishu.cn/docx…",
+      "excerpt": "大家好，我是德华。大环境影响下，我的线下实体便利店被迫关门。作为不太擅长社交的大龄小白，加入生财后我曾一度陷入“信息过载”的迷茫。直到这次参加抖音自然流CPS的mini航海，我才真正迎来了破局点，跑通了从0到1，拿到了破百万GMV的结果，6月9日结营时，航海排行榜第1名。这次的复盘，我把做这个项目以来的跌宕起伏、踩坑经验以及沉淀下来的实操SOP都毫无保留地总结了下来。【文章大纲如下】一、 加入生财后的“信息过载”与瞎折腾二、 破局点：一分钱的震撼与过山车般的流量三、 深度拆解：这破百万的GMV，到底是怎么推出来的…",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/TIQxdcWjJojtRexh8QscHdRPn6d",
+          "text": "https://my.feishu.cn/docx/TIQxdcWjJojtRexh8QscHdRP..."
+        },
+        {
+          "href": "https://my.feishu.cn/docx/TIQxdcWjJojtRexh8QscHdRP",
+          "text": "https://my.feishu.cn/docx/TIQxdcWjJojtRexh8QscHdRP"
+        }
+      ],
+      "metrics": "16 55 12 8",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "905ebbe3b78a14",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "陈敬婷💓",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "第一次创业做TEMU，月销123万、类目TOP1：我的实战复盘",
+      "url": "https://scys.com/articleDetail/xq_topic/14422414852125182",
+      "scene": "知识库与组织提效",
+      "industry": "跨境出海",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [],
+      "resultSignal": "GMV、单月利润10W+",
+      "reusableMethod": [
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 62,
+      "valueScore": 100,
+      "summary": "第一次创业做TEMU，月销123万、类目TOP1：我的实战复盘 大家好，我是陈敬婷",
+      "evidence": "大家好，我是陈敬婷。2024年从大厂离职后，我第一次创业，选择做 TEMU全托管 + 袜子类目，最高做到 月销123万GMV、单月利润10W+，跑到 女士户外袜TOP1、儿童配件热卖榜第4。 这篇文章我想复盘的，不只是结果，而是这个项目背后真正起作用的几件事： 为什么我会选择TEMU、 为什么第一次创业选袜子、 怎么谈下比1688低35%的供货价和1年账期， 以及在核价、测款、补货、库存和罚款这些关键环节里，我具体是怎么做、又踩过哪些坑。 详细复盘和操作教程请移步飞书https://my.feishu.cn/docx/CnTmd3wsEo5DCexQ4R0cyVVT...",
+      "excerpt": "大家好，我是陈敬婷。2024年从大厂离职后，我第一次创业，选择做 TEMU全托管 + 袜子类目，最高做到 月销123万GMV、单月利润10W+，跑到 女士户外袜TOP1、儿童配件热卖榜第4。这篇文章我想复盘的，不只是结果，而是这个项目背后真正起作用的几件事：为什么我会选择TEMU、为什么第一次创业选袜子、怎么谈下比1688低35%的供货价和1年账期，以及在核价、测款、补货、库存和罚款这些关键环节里，我具体是怎么做、又踩过哪些坑。详细复盘和操作教程请移步飞书https://my.feishu.cn/docx/CnT…",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/CnTmd3wsEo5DCexQ4R0cyVVTnwg?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/CnTmd3wsEo5DCexQ4R0cyVVT..."
+        },
+        {
+          "href": "https://my.feishu.cn/docx/CnTmd3wsEo5DCexQ4R0cyVVT",
+          "text": "https://my.feishu.cn/docx/CnTmd3wsEo5DCexQ4R0cyVVT"
+        }
+      ],
+      "metrics": "24 63 15 15",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "b47e19d1d3a793",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "叁斤",
+      "role": "航海家",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "踩中5次风口，赚了100w+，万字拆解，普通人如何找到适合自己的风口",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 50,
+      "valueScore": 100,
+      "summary": "踩中5次风口，赚了100w+，万字拆解，普通人如何找到适合自己的风口 哈喽，我是叁斤",
+      "evidence": "哈喽，我是叁斤。从2020年开始做小红书到现在，我一共踩中了5次比较大的风口，每次至少能赚10w+。- 刚开始的小红书博主商单，至少10w+。- 小红书电商，月10w+。- 虚拟电商月10w+。- 还有企业AI培训，刚开始，现在月5w+差不多。复盘这几次经历我发现，其实我从来没有刻意去追过什么风口，也没研究趋势报告，没有提前布局什么赛道，每次就是在做当下的事，然后发现自己就站在风口上。今天这篇文章我把所有经历写出来，包括我当时怎么想的、怎么做的。以及在这几次压中风口的过程中，我发现的一些规律，如何做组合创新，对所有在做业务、或者遇到瓶颈的小伙伴，都会有帮助。内容有点长，我想把如何找到自己的新业务讲清楚。移步飞书：https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrt…",
+      "excerpt": "哈喽，我是叁斤。从2020年开始做小红书到现在，我一共踩中了5次比较大的风口，每次至少能赚10w+。- 刚开始的小红书博主商单，至少10w+。- 小红书电商，月10w+。- 虚拟电商月10w+。- 还有企业AI培训，刚开始，现在月5w+差不多。复盘这几次经历我发现，其实我从来没有刻意去追过什么风口，也没研究趋势报告，没有提前布局什么赛道，每次就是在做当下的事，然后发现自己就站在风口上。今天这篇文章我把所有经历写出来，包括我当时怎么想的、怎么做的。以及在这几次压中风口的过程中，我发现的一些规律，如何做组合创新，对所…",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtUn8f?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtU..."
+        },
+        {
+          "href": "https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtU",
+          "text": "https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtU"
+        }
+      ],
+      "metrics": "212 328 32 107",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "a20e6fcf6f7a12",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "鱼晓枫",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "AI赋能企业实战：我用AI帮一家移民机构搭了3套自动化系统，日均精准进线从0到20+",
+      "url": "https://scys.com/articleDetail/xq_topic/45544525145588428",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "交付标准化与复购",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 50,
+      "valueScore": 91,
+      "summary": "AI赋能企业实战：我用AI帮一家移民机构搭了3套自动化系统，日均精准进线从0到20+ 各位圈友好,我是于枫,04年的,23年加入生财",
+      "evidence": "各位圈友好,我是于枫,04年的,23年加入生财。 亦仁老大提的「企业AI学习与服务」这个超级标,让我确认了自己这一年一直在做的事是对的——用AI帮企业把那些最耗人的业务流程,整套整套地自动化掉。 这一个月,我帮一家做香港移民的机构落地了一套GEO方案,从用户调研、内容批量生产,到五个平台自动分发、公众号矩阵发布、抖音同行监控,一共搭了三套自动化系统。豆包搜索那边,七天进前四,一个月做到第一,超过了一批做了十几年的老牌机构,现在这条线每天稳定来十几二十个精准咨询。 整个过程我一行代码没手写,全是靠对业务的拆解和对AI的驾驭做出来的 我一直觉得,AI时代真正稀缺的不是会写代码的人,是能看懂一门生意、知道哪个环节该被自动化、然后让AI把它实现的人 这篇一万一千字,我把完整的交付过程、技术选型、踩过的坑、用的提示词都…",
+      "excerpt": "各位圈友好,我是于枫,04年的,23年加入生财。亦仁老大提的「企业AI学习与服务」这个超级标,让我确认了自己这一年一直在做的事是对的——用AI帮企业把那些最耗人的业务流程,整套整套地自动化掉。这一个月,我帮一家做香港移民的机构落地了一套GEO方案,从用户调研、内容批量生产,到五个平台自动分发、公众号矩阵发布、抖音同行监控,一共搭了三套自动化系统。豆包搜索那边,七天进前四,一个月做到第一,超过了一批做了十几年的老牌机构,现在这条线每天稳定来十几二十个精准咨询。整个过程我一行代码没手写,全是靠对业务的拆解和对AI的驾…",
+      "links": [
+        {
+          "href": "https://ia7bfeeph3.feishu.cn/docx/MTCEdmwV6ojqgHxCyUkcVdqPnQd?from=from_copylink",
+          "text": "https://ia7bfeeph3.feishu.cn/docx/MTCEdmwV6ojqgHxC..."
+        },
+        {
+          "href": "https://ia7bfeeph3.feishu.cn/docx/MTCEdmwV6ojqgHxC",
+          "text": "https://ia7bfeeph3.feishu.cn/docx/MTCEdmwV6ojqgHxC"
+        }
+      ],
+      "metrics": "41 68 26 44",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "bc6f1d0c344a67",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "search",
+        "group": "opportunity",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "003",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "通过3月航海，每天约3小时，我靠AI视频定制做到月收入 5000+ 的项目复盘",
+      "url": "https://scys.com/articleDetail/xq_topic/45544522454884258",
+      "scene": "线下组局与培训复盘",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [],
+      "opportunityScore": 56,
+      "valueScore": 73,
+      "summary": "通过3月航海，每天约3小时，我靠AI视频定制做到月收入 5000+ 的项目复盘 圈友们好，我是003，生财一年级新生，在校学生一位",
+      "evidence": "圈友们好，我是003，生财一年级新生，在校学生一位。这次受邀，和大家分享我通过【3月ai定制服务航海】从0到1跑项目的经历，以及新人路上大概率会踩的坑。 这篇只讲三件事：新人怎么在2天内快速跑通0-1、我踩过哪些坑、以及具体怎么实操。这篇文章帮你解决 6 个问题：​一、新人如何快速接触ai视频 二、新人如何接单三、我踩了哪些坑？ 四、怎么快速制作一个 AI 视频 五、怎么根据目标制定 AI 视频精进方向六、怎么判断能否接单下面是具体文档https://my.feishu.cn/wiki/LuglwGbx5i9q7SkkY7rcD30K...",
+      "excerpt": "圈友们好，我是003，生财一年级新生，在校学生一位。这次受邀，和大家分享我通过【3月ai定制服务航海】从0到1跑项目的经历，以及新人路上大概率会踩的坑。 这篇只讲三件事：新人怎么在2天内快速跑通0-1、我踩过哪些坑、以及具体怎么实操。这篇文章帮你解决 6 个问题：​一、新人如何快速接触ai视频 二、新人如何接单三、我踩了哪些坑？ 四、怎么快速制作一个 AI 视频 五、怎么根据目标制定 AI 视频精进方向六、怎么判断能否接单下面是具体文档https://my.feishu.cn/wiki/LuglwGbx5i9q7…",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/LuglwGbx5i9q7SkkY7rcD30KnPb?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/LuglwGbx5i9q7SkkY7rcD30K..."
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/LuglwGbx5i9q7SkkY7rcD30K",
+          "text": "https://my.feishu.cn/wiki/LuglwGbx5i9q7SkkY7rcD30K"
+        }
+      ],
+      "metrics": "21 109 14 62",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "6dba46230eb854",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "十二",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-06-24 08:42",
+      "title": "AI一人公司短视频制作项目拆解",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "Claude Code",
+        "Claude",
+        "Obsidian",
+        "飞书"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "工具配置与AI基建门槛",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 44,
+      "valueScore": 86,
+      "summary": "AI一人公司短视频制作项目拆解 各位小伙伴们大家好，我是十二，本次AI一人公司短视频行动营教练",
+      "evidence": "各位小伙伴们大家好，我是十二，本次AI一人公司短视频行动营教练。 很多人想做短视频，但第一步就卡住了 不是卡在拍摄，也不是卡在剪辑，而是坐到镜头前，突然不知道自己该说什么。 明明有经历，有想法，也看过不少爆款视频，但真要写成一条自己的口播稿，就很容易变成三种情况： 一、脑子里东西很多，但整理不成一条能拍的视频文案 二、AI 能写出来，但 AI 味儿很重，自己读着都别扭 三、看到爆款视频觉得可以学，但不知道怎么拆成自己的版本 这次「AI一人公司短视频制作行动营」，重点解决的就是这个问题。 我们不是让你先学一堆复杂概念，也不是让 AI 随便生成一篇通用稿。 而是先把你的账号方向、个人经历、内容素材和表达习惯整理清楚，再让 AI 帮你萃取素材、拆解爆款文案，生成更像你自己的短视频选题和口播稿。 最后你要拿到的，不是…",
+      "excerpt": "各位小伙伴们大家好，我是十二，本次AI一人公司短视频行动营教练。 很多人想做短视频，但第一步就卡住了 不是卡在拍摄，也不是卡在剪辑，而是坐到镜头前，突然不知道自己该说什么。 明明有经历，有想法，也看过不少爆款视频，但真要写成一条自己的口播稿，就很容易变成三种情况： 一、脑子里东西很多，但整理不成一条能拍的视频文案 二、AI 能写出来，但 AI 味儿很重，自己读着都别扭 三、看到爆款视频觉得可以学，但不知道怎么拆成自己的版本 这次「AI一人公司短视频制作行动营」，重点解决的就是这个问题。 我们不是让你先学一堆复杂概…",
+      "links": [
+        {
+          "href": "https://rcnpkqb7315p.feishu.cn/docx/KN6VdWNB8oY0JUx7vBPciHEDnug",
+          "text": "https://rcnpkqb7315p.feishu.cn/docx/KN6VdWNB8oY0JUx7vBPciHEDnug"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "b3d4deed24897e",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "小0妈",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-23 22:41",
+      "title": "21天教你从0做个赚钱的公众号细分AIP",
+      "url": "https://aipoju.com/index",
+      "scene": "内容生产与IP运营",
+      "industry": "内容与自媒体",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "粉丝开始变现？ 八、本次行动营为什么值得期待？会有哪些新内容",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 62,
+      "valueScore": 84,
+      "summary": "21天教你从0做个赚钱的公众号细分AIP 大家好，我是小0妈AI",
+      "evidence": "大家好，我是小0妈AI。 非常荣幸担任本次公众号细分AIP打造的行动营教练。我将跟着本次行动营的总教练七哥Seven和其他优秀的教练（卿久、小乐、尼尼、李贝拉、流月，排名不分先后），一起来为大家分享公众号细分AIP的打造方法。 这篇文章我将跟大家详细拆解本次公众号细分AIP行动营。 文章具体包括以下内容： 一、什么是公众号细分AIP？ 二、公众号细分AIP为什么值得做？ 三、公众号细分AIP的变现渠道 四、公众号平台的特点 五、经典案例分享 六、从0开始做公众号的方法介绍 七、如何从第一个粉丝开始变现？ 八、本次行动营为什么值得期待？会有哪些新内容？ 争取通过这一篇文章，快速跟大家讲清楚公众号细分AIP打造的大体方法，以及本次行动营的价值。 全文都是手搓的，如果有收获，辛苦大家动动发财的小手帮忙点个赞，谢谢了…",
+      "excerpt": "大家好，我是小0妈AI。 非常荣幸担任本次公众号细分AIP打造的行动营教练。我将跟着本次行动营的总教练七哥Seven和其他优秀的教练（卿久、小乐、尼尼、李贝拉、流月，排名不分先后），一起来为大家分享公众号细分AIP的打造方法。 这篇文章我将跟大家详细拆解本次公众号细分AIP行动营。 文章具体包括以下内容： 一、什么是公众号细分AIP？ 二、公众号细分AIP为什么值得做？ 三、公众号细分AIP的变现渠道 四、公众号平台的特点 五、经典案例分享 六、从0开始做公众号的方法介绍 七、如何从第一个粉丝开始变现？ 八、本次…",
+      "links": [
+        {
+          "href": "https://wcnjsfs339xu.feishu.cn/wiki/T8kTwh2dii6jzCkFoMCcSQqlnig",
+          "text": "https://wcnjsfs339xu.feishu.cn/wiki/T8kTwh2dii6jzCkFoMCcSQqlnig"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "33e789635b91d0",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "西昂",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-06-23 21:53",
+      "title": "AI小程序拆解贴 大家好，我是西昂。",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "本地生活",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "工具配置与AI基建门槛"
+      ],
+      "resultSignal": "收费",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 76,
+      "valueScore": 100,
+      "summary": "今天跟大家拆解一下这次新开的行动营：AI小程序",
+      "evidence": "今天跟大家拆解一下这次新开的行动营：AI小程序。 先说我自己。 做小程序一年多了，前前后后做了几十个，十几个都在稳定变现。 零编程背景，全程AI写代码，一行都不会写。 这条路我自己趟过一遍了，踩过的坑、走过的弯路、搞明白的事，都会在营里系统地教给大家。 这个营干嘛的 实操营，不是认知营。 21天带你跑通一个小程序从开发到赚钱的完整流程。 营结束的时候，你手里得有一个已经上线、能赚钱的微信小程序。不是demo，是真的发布到微信上、用户能搜到、能产生收益的。 适合什么人 想做副业但不知道做什么的，有内容能力但缺变现工具的，想搞一个能持续产生收入的东西但没有技术背景的——都可以。 技术零基础完全没关系。你不用会写代码，也不用懂底层原理，跟着做就行。 一个前提：你得愿意动手。核心是干活，听了不做，跟看免费教程没区别。…",
+      "excerpt": "今天跟大家拆解一下这次新开的行动营：AI小程序。 先说我自己。 做小程序一年多了，前前后后做了几十个，十几个都在稳定变现。 零编程背景，全程AI写代码，一行都不会写。 这条路我自己趟过一遍了，踩过的坑、走过的弯路、搞明白的事，都会在营里系统地教给大家。 这个营干嘛的 实操营，不是认知营。 21天带你跑通一个小程序从开发到赚钱的完整流程。 营结束的时候，你手里得有一个已经上线、能赚钱的微信小程序。不是demo，是真的发布到微信上、用户能搜到、能产生收益的。 适合什么人 想做副业但不知道做什么的，有内容能力但缺变现工…",
+      "links": [],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "909648d4aff6d3",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "安妮Annie",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-06-23 21:31",
+      "title": "AI带货正在成为普通人的低门槛变现机会（附带货精华帖合集）",
+      "url": "https://aipoju.com/index",
+      "scene": "内容生产与IP运营",
+      "industry": "内容与自媒体",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "工具配置与AI基建门槛",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "月入过万",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 62,
+      "valueScore": 100,
+      "summary": "AI带货正在成为普通人的低门槛变现机会（附带货精华帖合集） AI带货正在成为普通人的低门槛变现机会（附带货精华帖合集）",
+      "evidence": "AI带货正在成为普通人的低门槛变现机会（附带货精华帖合集）",
+      "excerpt": "AI带货正在成为普通人的低门槛变现机会（附带货精华帖合集）",
+      "links": [
+        {
+          "href": "https://xcn3y8gxfv7e.feishu.cn/docx/MfoodQ75ZoMONPxWaZ5chKzenTf?from=from_copylink",
+          "text": "https://xcn3y8gxfv7e.feishu.cn/docx/MfoodQ75ZoMONPxWaZ5chKzenTf?from=from_copylink"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "aa1bc7f64d848f",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "孟健AI编程",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-23 20:28",
+      "title": "为什么我说，AI 编程产品出海，是 2026 年最值得普通人投入的方向",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "Codex",
+        "Claude Code",
+        "Claude",
+        "Cursor",
+        "Openclaw"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "月入千刀",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 82,
+      "valueScore": 100,
+      "summary": "为什么我说，AI 编程产品出海，是 2026 年最值得普通人投入的方向 为什么我说，AI 编程产品出海，是 2026 年最值得普通人投入的方向",
+      "evidence": "为什么我说，AI 编程产品出海，是 2026 年最值得普通人投入的方向",
+      "excerpt": "为什么我说，AI 编程产品出海，是 2026 年最值得普通人投入的方向",
+      "links": [],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "b60195e0930d43",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "破局私域官｜韩亮",
+      "role": "星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-23 18:55",
+      "title": "圈友们，5月会员日开奖啦~ 上期的会员日主题为：回顾10期破局好事，共赴11期成长新征程。",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "Obsidian"
+      ],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "粉丝也在逐渐增加了",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 66,
+      "valueScore": 100,
+      "summary": "圈友们，5月会员日开奖啦~ 上期的会员日主题为：回顾10期破局好事，共赴11期成长新征程",
+      "evidence": "原帖直达：#会员日#|圈友们，5月会员日... 破局者，正当时！2026年的进度条已悄然过半。回望过去的五月，圈友们用实打实的战绩，在成长的画卷上留下了浓墨重彩的一笔。 今天，让我们共同翻开这份专属于破局者的 “成长成绩单” —— 这里没有华丽的辞藻，只有从 “知道” 到 “做到” 的蜕变；每一个故事都在诉说着：真正的成长，是敢于打破常规，在行动中重塑自己的边界。 从 “知道” 到 “做到”，他们让AI成为破局的利刃 @古语 10期里我逼着自己每周至少做一个最小闭环：从选题、用AI拆解需求、生成初稿，到修改交付。这个节奏跑起来后，我明显感觉自己不再是“看热闹式学习”，而是在一点点建立可复用的能力。 对我来说最有成就感的一个瞬间，是我用AI把一项原本要反复沟通的内容整理流程做成了半自动模板，沟通成本降了很多，交…",
+      "excerpt": "原帖直达：#会员日#|圈友们，5月会员日... 破局者，正当时！2026年的进度条已悄然过半。回望过去的五月，圈友们用实打实的战绩，在成长的画卷上留下了浓墨重彩的一笔。 今天，让我们共同翻开这份专属于破局者的 “成长成绩单” —— 这里没有华丽的辞藻，只有从 “知道” 到 “做到” 的蜕变；每一个故事都在诉说着：真正的成长，是敢于打破常规，在行动中重塑自己的边界。 从 “知道” 到 “做到”，他们让AI成为破局的利刃 @古语 10期里我逼着自己每周至少做一个最小闭环：从选题、用AI拆解需求、生成初稿，到修改交付。…",
+      "links": [
+        {
+          "href": "https://d16rg8unadx.feishu.cn/wiki/MSfbw5JR2iMldLkb52WcSRNan3b?from=from_copylink",
+          "text": "https://d16rg8unadx.feishu.cn/wiki/MSfbw5JR2iMldLkb52WcSRNan3b?from=from_copylink"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "f4d1ef5985ffaf",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "kano",
+      "role": "行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-06-23 16:26",
+      "title": "破局AI视频生成系统即将公测：把爆款视频的做法，变成普通人也能跟着走的流程~",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "资料产品 / 工具包",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "工具配置与AI基建门槛"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 54,
+      "valueScore": 76,
+      "summary": "破局AI视频生成系统即将公测：把爆款视频的做法，变成普通人也能跟着走的流程~ 破局AI视频生成系统即将公测：把爆款视频的做法，变成普通人也能跟着走的流程~",
+      "evidence": "破局AI视频生成系统即将公测：把爆款视频的做法，变成普通人也能跟着走的流程~",
+      "excerpt": "破局AI视频生成系统即将公测：把爆款视频的做法，变成普通人也能跟着走的流程~",
+      "links": [
+        {
+          "href": "https://d16rg8unadx.feishu.cn/docx/X9IgdwXnzokd0jx6UMCcjwksn9g?from=from_copylink",
+          "text": "https://d16rg8unadx.feishu.cn/docx/X9IgdwXnzokd0jx6UMCcjwksn9g?from=from_copylink"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "58c1c9bebe72fb",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "水月",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-06-23 15:04",
+      "title": "别再凭感觉找项目了，先判断，再下场",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "线索",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 72,
+      "valueScore": 100,
+      "summary": "别再凭感觉找项目了，先判断，再下场 别再凭感觉找项目了，先判断，再下场",
+      "evidence": "别再凭感觉找项目了，先判断，再下场",
+      "excerpt": "别再凭感觉找项目了，先判断，再下场",
+      "links": [
+        {
+          "href": "https://d16rg8unadx.feishu.cn/docx/NydRdABL6oiObqxFR47cWNRDnGW?from=from_copylink",
+          "text": "https://d16rg8unadx.feishu.cn/docx/NydRdABL6oiObqxFR47cWNRDnGW?from=from_copylink"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "e9b09a995dc9e3",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "苏苏",
+      "role": "",
+      "relativeTime": "3天前",
+      "publishedAt": "",
+      "title": "用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "Codex",
+        "Obsidian"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "成交",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 78,
+      "valueScore": 100,
+      "summary": "用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业 不知道有没有人和我一样：刚开始看生财项目帖时，总觉得别人做副业、做个体创业，好像很容易跑通",
+      "evidence": "不知道有没有人和我一样：刚开始看生财项目帖时，总觉得别人做副业、做个体创业，好像很容易跑通。 但自己真正下场后才发现，好像不是这么回事，后面证明不是项目问题，更多是自己定位的问题。 这两年，我陆续做了近10个项目：视频号带货、小红书虚拟资料、私域、内容工厂 有的赚了几十元，有的赚了几百元，也有项目做到了几万元。 但项目做得越多，我反而越焦虑：能赚钱，不代表能持续；拿到一次结果，也不代表可以长期积累。 直到今年3月，我重新复盘过去的经历，才发现真正让我拿到结果的，始终是原有的客户资源、行业经验和交付能力。 于是，我开始把服务装修行业3年积累的案例、方法和转化经验，整理成一套可以重复交付的行业知识库。 后来，一家大模型公司主动找到我，采购标准化的电商投放经验，这让我更加确定了自己的方向 AI可以很快生成内容，但只…",
+      "excerpt": "不知道有没有人和我一样：刚开始看生财项目帖时，总觉得别人做副业、做个体创业，好像很容易跑通。 但自己真正下场后才发现，好像不是这么回事，后面证明不是项目问题，更多是自己定位的问题。 这两年，我陆续做了近10个项目：视频号带货、小红书虚拟资料、私域、内容工厂 有的赚了几十元，有的赚了几百元，也有项目做到了几万元。 但项目做得越多，我反而越焦虑：能赚钱，不代表能持续；拿到一次结果，也不代表可以长期积累。 直到今年3月，我重新复盘过去的经历，才发现真正让我拿到结果的，始终是原有的客户资源、行业经验和交付能力。 于是，我…",
+      "links": [
+        {
+          "href": "https://dcn7y5714c1m.feishu.cn/wiki/W6QwwJ7iRiH4AmkgRi4ceVGdnQg?from=from_copylink",
+          "text": "https://dcn7y5714c1m.feishu.cn/wiki/W6QwwJ7iRiH4AmkgRi4ceVGdnQg?from=from_copylink"
+        }
+      ],
+      "metrics": "39 85 13 60",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "93ed68caed3a01",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "⃰辰风",
+      "role": "",
+      "relativeTime": "3天前",
+      "publishedAt": "",
+      "title": "做了三个月公众号贴图，用ai+多维表格矩阵运营10个号，单号最高变现3000，我看到的内容红利",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "Codex",
+        "Obsidian"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 62,
+      "valueScore": 100,
+      "summary": "做了三个月公众号贴图，用ai+多维表格矩阵运营10个号，单号最高变现3000，我看到的内容红利 大家好，我是辰风，生财资深传术师，也一直在躬身入局研究流量主，上次受七天教练邀请在武汉做了一场线下项目沙龙的分享，也非常感谢我们的组局官@jack 的大力支持，以及整个生财团队，让我们的活动能够顺利开展",
+      "evidence": "大家好，我是辰风，生财资深传术师，也一直在躬身入局研究流量主，上次受七天教练邀请在武汉做了一场线下项目沙龙的分享，也非常感谢我们的组局官@jack 的大力支持，以及整个生财团队，让我们的活动能够顺利开展。 我们连桌布选择的都是非常有生财特色的生财绿，非常亲切！ 包括最近贴图的玩法比较火爆，也算是在生财，发了一条贴图的精华帖，影响很多朋友来尝试做贴图账号，也有不少圈友跟我报喜说通过贴图拿到了还算不错的结果。公众号贴图流量可观，联动垂直小号做涨粉，内容曝光，卖货，和私域变现 我做自媒体有近6年左右的时间，在这6年，大部分的时间都是在尝试做公众号。我觉得公主号越玩越精彩，尤其是有了AI的加入之后，包括现在也在学习通过codex+obsidian来产出公众号的文章，包括做短视频的文本，也是想通过这种方式来提高内容的产…",
+      "excerpt": "大家好，我是辰风，生财资深传术师，也一直在躬身入局研究流量主，上次受七天教练邀请在武汉做了一场线下项目沙龙的分享，也非常感谢我们的组局官@jack 的大力支持，以及整个生财团队，让我们的活动能够顺利开展。 我们连桌布选择的都是非常有生财特色的生财绿，非常亲切！ 包括最近贴图的玩法比较火爆，也算是在生财，发了一条贴图的精华帖，影响很多朋友来尝试做贴图账号，也有不少圈友跟我报喜说通过贴图拿到了还算不错的结果。公众号贴图流量可观，联动垂直小号做涨粉，内容曝光，卖货，和私域变现 我做自媒体有近6年左右的时间，在这6年，大…",
+      "links": [
+        {
+          "href": "https://k874t2qh8w.feishu.cn/wiki/U4b8wsBc2iihAQku9cpcaz3Vnlb?from=from_copylink",
+          "text": "https://k874t2qh8w.feishu.cn/wiki/U4b8wsBc2iihAQku9cpcaz3Vnlb?from=from_copylink"
+        }
+      ],
+      "metrics": "41 70 1 56",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "a2f9700c808de9",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "坤汀",
+      "role": "合伙人",
+      "relativeTime": "3天前",
+      "publishedAt": "",
+      "title": "要像礼物一样出现在别人的生命里 | 6.6航海家大课收官贴",
+      "url": "https://scys.com/",
+      "scene": "内容生产与IP运营",
+      "industry": "内容与自媒体",
+      "tools": [
+        "Claude"
+      ],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "交付标准化与复购",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 44,
+      "valueScore": 94,
+      "summary": "要像礼物一样出现在别人的生命里 | 6.6航海家大课收官贴 半年前，我和包子在重庆聊AI，他说了一句话，我一直记到现在：学 AI 这件事，最重要的是勇气",
+      "evidence": "半年前，我和包子在重庆聊AI，他说了一句话，我一直记到现在：学 AI 这件事，最重要的是勇气。但他说的不是辞职、创业、押上身家那种\"人生大决定\"的勇气——而是当一项新技术摆在你面前、你发现它有学习门槛的时候，你敢不敢下决心，用一个星期，高强度、很陡峭地把它啃下来。他拿自己举例：当年学 Next.js，官方文档全是英文，他硬是花了半个月，一个章节一个章节全过了一遍。过完那一遍，后面就越走越顺。他说，难的不是学，是迈出去的那一下——心里那句\"我一定要把它学会\"。这段话，几乎就是这次大课的全部答案。因为大多数人，恰恰卡在这\"一下\"上。他们不是学不会 AI，是从没给自己留出那一个星期去硬啃；而这条路上还全是卡点——装环境报错、一行命令跑不通、文档看不懂——随便哪个，都够让人默默关掉电脑，跟自己说一句\"以后再说\"。所以…",
+      "excerpt": "半年前，我和包子在重庆聊AI，他说了一句话，我一直记到现在：学 AI 这件事，最重要的是勇气。但他说的不是辞职、创业、押上身家那种\"人生大决定\"的勇气——而是当一项新技术摆在你面前、你发现它有学习门槛的时候，你敢不敢下决心，用一个星期，高强度、很陡峭地把它啃下来。他拿自己举例：当年学 Next.js，官方文档全是英文，他硬是花了半个月，一个章节一个章节全过了一遍。过完那一遍，后面就越走越顺。他说，难的不是学，是迈出去的那一下——心里那句\"我一定要把它学会\"。这段话，几乎就是这次大课的全部答案。因为大多数人，恰恰卡…",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/wiki/LskGwvUali7e44kdjxhceBxXnxc",
+          "text": "https://shengcaiyoushu01.feishu.cn/wiki/LskGwvUali..."
+        },
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/wiki/LskGwvUali",
+          "text": "https://shengcaiyoushu01.feishu.cn/wiki/LskGwvUali"
+        }
+      ],
+      "metrics": "22 150 14 36",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "144ae2266d1c5e",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "亦仁",
+      "role": "星主",
+      "relativeTime": "3天前",
+      "publishedAt": "",
+      "title": "生财有术圈友 Token 消耗排行榜正式上线。",
+      "url": "https://scys.com/",
+      "scene": "产品化工具与项目库",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "交付标准化与复购"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "前端获客 + 后端交付拆分",
+        "工具产品化"
+      ],
+      "opportunityScore": 40,
+      "valueScore": 47,
+      "summary": "生财有术圈友 Token 消耗排行榜正式上线",
+      "evidence": "生财有术·会员榜单 如果想上榜，可以点击榜单右上角，按照提示操作即可。欢迎大家上榜，连续三日消耗 1 个亿以上的可以联系鱼丸或者生财团队，邀请进 TokenRank 用户交流群。提醒，不要刷数据，有防刷机制，被识别后可能会被从榜单移除。前几天在航海家群邀请了一些航海家参与测试，果然是 AI 先进群体，日消耗都不简单。目前榜一大哥的单日 Token 消耗大约在 20 个亿左右，进入 top 3 的日 Token 消耗大约在 15 个亿，top 10 的日 Token 消耗大约在 6 个亿，top 100 的日 Token 消耗大约在 7000万。Token 作为 AI 时代生产力最重要的标志，我希望所有圈友一起努力，争取早日达成生财有术圈友累计日消耗 Token 过万亿的目标，那说明我们生财圈友 AI 能力都到…",
+      "excerpt": "生财有术·会员榜单 如果想上榜，可以点击榜单右上角，按照提示操作即可。欢迎大家上榜，连续三日消耗 1 个亿以上的可以联系鱼丸或者生财团队，邀请进 TokenRank 用户交流群。提醒，不要刷数据，有防刷机制，被识别后可能会被从榜单移除。前几天在航海家群邀请了一些航海家参与测试，果然是 AI 先进群体，日消耗都不简单。目前榜一大哥的单日 Token 消耗大约在 20 个亿左右，进入 top 3 的日 Token 消耗大约在 15 个亿，top 10 的日 Token 消耗大约在 6 个亿，top 100 的日 To…",
+      "links": [],
+      "metrics": "11 179 91 11",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "3b657988cc9506",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "大鹏",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-22 21:56",
+      "title": "11 期破局行动 Codex 实战做产品行动营拆解贴",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "Codex",
+        "飞书"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 44,
+      "valueScore": 73,
+      "summary": "11 期破局行动 Codex 实战做产品行动营拆解贴 11 期破局行动 Codex 实战做产品行动营拆解贴",
+      "evidence": "11 期破局行动 Codex 实战做产品行动营拆解贴",
+      "excerpt": "11 期破局行动 Codex 实战做产品行动营拆解贴",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/I5dXdhasNosEsMxjuliccrKan5c",
+          "text": "https://my.feishu.cn/docx/I5dXdhasNosEsMxjuliccrKan5c"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "dd1ae832bef9d3",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "是苗苗呀",
+      "role": "行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-06-22 21:42",
+      "title": "破局新栏目《破局者说》今日上线了！ 一个05后一开始只想挣点小钱，却在破局实现了累计营收70w+。这不仅是一个赚钱的故事，更是一个不断升级的故事。 俊国的故事特别的地方在于，他不只是单纯地告诉",
+      "url": "https://aipoju.com/index",
+      "scene": "产品化工具与项目库",
+      "industry": "企业服务",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [],
+      "resultSignal": "营收70w+",
+      "reusableMethod": [
+        "工具产品化"
+      ],
+      "opportunityScore": 64,
+      "valueScore": 63,
+      "summary": "一个05后一开始只想挣点小钱，却在破局实现了累计营收70w+",
+      "evidence": "大家怎样用AI工具赚钱，而是讲怎样用AI和系统思维重构商业模式。 从廉价写手到高端文书申请，从单兵作战到合伙打拼，又从一个“AI工具达人”上升到“企业AI培训”。每一次升级，都有明确的决策逻辑和可复制的系统。 这也是破局社群想要传递的故事：不是一夜暴富的神话，而是有方法、有系统、能复制的破局路径。 #破局者说#",
+      "excerpt": "大家怎样用AI工具赚钱，而是讲怎样用AI和系统思维重构商业模式。 从廉价写手到高端文书申请，从单兵作战到合伙打拼，又从一个“AI工具达人”上升到“企业AI培训”。每一次升级，都有明确的决策逻辑和可复制的系统。 这也是破局社群想要传递的故事：不是一夜暴富的神话，而是有方法、有系统、能复制的破局路径。 #破局者说#",
+      "links": [],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "d6bf972118a7d7",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "盖子",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-22 21:14",
+      "title": "AI教育微课拆解：30天，跑通AI写稿、AI做PPT、AI做视频变现全流程",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "留学教育",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "交付标准化与复购",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "营收突破十万",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 68,
+      "valueScore": 100,
+      "summary": "AI教育微课拆解：30天，跑通AI写稿、AI做PPT、AI做视频变现全流程 AI教育微课拆解：30天，跑通AI写稿、AI做PPT、AI做视频变现全流程",
+      "evidence": "AI教育微课拆解：30天，跑通AI写稿、AI做PPT、AI做视频变现全流程",
+      "excerpt": "AI教育微课拆解：30天，跑通AI写稿、AI做PPT、AI做视频变现全流程",
+      "links": [
+        {
+          "href": "https://xcnpidz82m12.feishu.cn/wiki/H2odw07xmi54clkRQEfct86bnoe",
+          "text": "https://xcnpidz82m12.feishu.cn/wiki/H2odw07xmi54clkRQEfct86bnoe"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "d17baae08b6584",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "findyi",
+      "role": "星主 行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-06-22 20:09",
+      "title": "重要通知：7月11日-12日，深圳破局行动家AI+行业大会正式开启报名了。",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "留学教育",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "粉丝",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 76,
+      "valueScore": 100,
+      "summary": "重要通知：7月11日-12日，深圳破局行动家AI+行业大会正式开启报名了",
+      "evidence": "这次找嘉宾，我们的标准只有一个：真用AI在行业里拿到结果的人，不是在台上讲概念的，是已经跑出数据、赚过钱的，甚至用AI改变了行业格局的。 总名额500人，想直接报名的，可以戳这里：AI破局官网 不着急的，可以来看看嘉宾阵容： 从年入过亿的AI操盘手，到负债翻身的破局新人；从传统行业的AI转型者，到00后创业精英，20+位嘉宾，个个都是带着“真刀真枪”的实战经验来的。 下面我来介绍下这次深圳大会的嘉宾们： 【陈厂长】AI企业服务&内容工厂 陈厂长曾经是网易游戏制作人（居然是我老同事），后来自己创业，在抖音上有百万粉丝，还成立了MCN机构，最巅峰年入数千万，却遭遇了激进的投资破产的至暗时刻。 但厂长慢慢爬起来了，尤其在AI时代，2025年年底启盘AI企业培训&AI企业服务，直接快速起飞。 陈厂长现在主攻tob的企…",
+      "excerpt": "这次找嘉宾，我们的标准只有一个：真用AI在行业里拿到结果的人，不是在台上讲概念的，是已经跑出数据、赚过钱的，甚至用AI改变了行业格局的。 总名额500人，想直接报名的，可以戳这里：AI破局官网 不着急的，可以来看看嘉宾阵容： 从年入过亿的AI操盘手，到负债翻身的破局新人；从传统行业的AI转型者，到00后创业精英，20+位嘉宾，个个都是带着“真刀真枪”的实战经验来的。 下面我来介绍下这次深圳大会的嘉宾们： 【陈厂长】AI企业服务&内容工厂 陈厂长曾经是网易游戏制作人（居然是我老同事），后来自己创业，在抖音上有百万粉…",
+      "links": [],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "355d31c9a7ec7b",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "中流击水",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-22 11:23",
+      "title": "AI 内容工厂自动化赛道拆解：21 天，把内容生产从手工作坊搭成流水线",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "Codex",
+        "Claude Code",
+        "Claude",
+        "Obsidian",
+        "飞书",
+        "Coze"
+      ],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 64,
+      "valueScore": 100,
+      "summary": "AI 内容工厂自动化赛道拆解：21 天，把内容生产从手工作坊搭成流水线 AI 内容工厂自动化赛道拆解：21 天，把内容生产从手工作坊搭成流水线",
+      "evidence": "AI 内容工厂自动化赛道拆解：21 天，把内容生产从手工作坊搭成流水线",
+      "excerpt": "AI 内容工厂自动化赛道拆解：21 天，把内容生产从手工作坊搭成流水线",
+      "links": [],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "e88282e8f07759",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "晓豪",
+      "role": "",
+      "relativeTime": "4天前",
+      "publishedAt": "",
+      "title": "小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "交付标准化与复购"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 60,
+      "valueScore": 86,
+      "summary": "小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享 大家好，我叫晓豪，常驻江西吉安，今年是我小红书创业第4年",
+      "evidence": "大家好，我叫晓豪，常驻江西吉安，今年是我小红书创业第4年。今天给大家分享我搭建团队的流程和经验。我23年做虚拟资料电商，后面业务慢慢起来，我就开始招聘制作素材，到了24年开始全面开始招聘全职。目前工作室全职稳定在3-4个人+2个长期兼职在运营。目前我们工作室主要还是在主要在做图书和虚拟资料。今天这篇文章主要以为团队搭建中的场地/招聘/培训/SOP和薪资设计经验分享飞书原文链接：https://vcnb821mkki2.feishu.cn/wiki/Bc9QwQg8pih9k4...",
+      "excerpt": "大家好，我叫晓豪，常驻江西吉安，今年是我小红书创业第4年。今天给大家分享我搭建团队的流程和经验。我23年做虚拟资料电商，后面业务慢慢起来，我就开始招聘制作素材，到了24年开始全面开始招聘全职。目前工作室全职稳定在3-4个人+2个长期兼职在运营。目前我们工作室主要还是在主要在做图书和虚拟资料。今天这篇文章主要以为团队搭建中的场地/招聘/培训/SOP和薪资设计经验分享飞书原文链接：https://vcnb821mkki2.feishu.cn/wiki/Bc9QwQg8pih9k4...",
+      "links": [
+        {
+          "href": "https://vcnb821mkki2.feishu.cn/wiki/Bc9QwQg8pih9k4ksFvPcheRYnhK?from=from_copylink",
+          "text": "https://vcnb821mkki2.feishu.cn/wiki/Bc9QwQg8pih9k4..."
+        },
+        {
+          "href": "https://vcnb821mkki2.feishu.cn/wiki/Bc9QwQg8pih9k4",
+          "text": "https://vcnb821mkki2.feishu.cn/wiki/Bc9QwQg8pih9k4"
+        }
+      ],
+      "metrics": "48 172 35 86",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "40a4ef9e9750ca",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "袁锐钦",
+      "role": "",
+      "relativeTime": "5天前",
+      "publishedAt": "",
+      "title": "奶茶店3个月亏30万，教会我怎么做互联网生意",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "本地生活",
+      "tools": [
+        "Claude Code",
+        "Claude"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "订单在开厂之前已经有了",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 82,
+      "valueScore": 100,
+      "summary": "奶茶店3个月亏30万，教会我怎么做互联网生意 2019年10月，我退伍后第一个月，在揭阳开了家奶茶店",
+      "evidence": "2019年10月，我退伍后第一个月，在揭阳开了家奶茶店。 2020年除夕夜，店转让了。收回来一万多。 三个月，净亏30多万。 那是我第一次创业。后来这几年，我做了虎课网讲师、AI绘画课程、白墨打印工厂、PNG部落生图工具、公众号日更、生财有术深海群教练。从实体跨到互联网，从亏30万到跑出几个能赚钱的项目。 回头看，奶茶店那30万不是白亏的。它像一笔预付款，买了一套我后来反复用的决策方法。今天我把它完整拆给你看——不只是「我犯了什么错」，是「后来怎么做对的」，以及「你拿了就能用」。 一、我是怎么做垮一家奶茶店的 2019年9月退伍。当兵五年出来，别人都在往前走，我想赶紧做成点什么。 奶茶店那时候很火。揭阳街上到处是奶茶店，好位置基本被占完了。我找了一个店面——没怎么观察人流量，在门口站了几次，觉得差不多就行。「…",
+      "excerpt": "2019年10月，我退伍后第一个月，在揭阳开了家奶茶店。 2020年除夕夜，店转让了。收回来一万多。 三个月，净亏30多万。 那是我第一次创业。后来这几年，我做了虎课网讲师、AI绘画课程、白墨打印工厂、PNG部落生图工具、公众号日更、生财有术深海群教练。从实体跨到互联网，从亏30万到跑出几个能赚钱的项目。 回头看，奶茶店那30万不是白亏的。它像一笔预付款，买了一套我后来反复用的决策方法。今天我把它完整拆给你看——不只是「我犯了什么错」，是「后来怎么做对的」，以及「你拿了就能用」。 一、我是怎么做垮一家奶茶店的 2…",
+      "links": [],
+      "metrics": "22 102 14 18",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "f06f9199d9ea84",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "奋斗蟹老板",
+      "role": "",
+      "relativeTime": "5天前",
+      "publishedAt": "",
+      "title": "2个月、1000万播放、5万粉丝,分享我用remotion做视频的经验",
+      "url": "https://scys.com/",
+      "scene": "交付与服务自动化",
+      "industry": "企业服务",
+      "tools": [
+        "Codex"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "粉丝,分享我用remotion做视频的经验 remotion",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径"
+      ],
+      "opportunityScore": 44,
+      "valueScore": 100,
+      "summary": "2个月、1000万播放、5万粉丝,分享我用remotion做视频的经验 remotion现在是确定性比较高的AI做视频流程",
+      "evidence": "remotion现在是确定性比较高的AI做视频流程。结合现在的codex加hyperframes，现有的视频制作、剪辑效果都能够AI实现。如果你是矩阵玩家以及工作室可以考虑往这方面走，用它来做自己赛道的批量视频以及剪辑，还有很大的增长潜力。把这整个流程打通之后，其实后期还能把这个AI模型做视频也放进来，把它单独作为一个模块，穿插到自己的视频里面。就以后做视频真的不需要剪辑了，完全就用AI来操作就可以了。#项目实操# 项目拆解 https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7k...https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7k...",
+      "excerpt": "remotion现在是确定性比较高的AI做视频流程。结合现在的codex加hyperframes，现有的视频制作、剪辑效果都能够AI实现。如果你是矩阵玩家以及工作室可以考虑往这方面走，用它来做自己赛道的批量视频以及剪辑，还有很大的增长潜力。把这整个流程打通之后，其实后期还能把这个AI模型做视频也放进来，把它单独作为一个模块，穿插到自己的视频里面。就以后做视频真的不需要剪辑了，完全就用AI来操作就可以了。#项目实操# 项目拆解 https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56…",
+      "links": [
+        {
+          "href": "https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7kkKwHcoTBun9e?from=from_copylink",
+          "text": "https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7k..."
+        },
+        {
+          "href": "https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7k...https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7k",
+          "text": "https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7k...https://fv2fbshiww0.feishu.cn/wiki/KTQtw8R56igHE7k"
+        }
+      ],
+      "metrics": "48 144 16 105",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "074584c575e0f6",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "亦仁",
+      "role": "星主",
+      "relativeTime": "5天前",
+      "publishedAt": "",
+      "title": "如果给你每天 10 亿的免费 token，需要你全部用完，不允许无意义的浪费，你会怎么做？",
+      "url": "https://scys.com/",
+      "scene": "AI应用案例",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [],
+      "opportunityScore": 30,
+      "valueScore": 44,
+      "summary": "如果给你每天 10 亿的免费 token，需要你全部用完，不允许无意义的浪费，你会怎么做",
+      "evidence": "亦仁 星主 · 5天前 如果给你每天 10 亿的免费 token，需要你全部用完，不允许无意义的浪费，你会怎么做？ 15 117 115 12 亦仁",
+      "excerpt": "亦仁 星主 · 5天前 如果给你每天 10 亿的免费 token，需要你全部用完，不允许无意义的浪费，你会怎么做？ 15 117 115 12 亦仁",
+      "links": [],
+      "metrics": "15 117 115 12",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "d8323e5c2d3773",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "是苗苗呀",
+      "role": "行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-06-18 19:03",
+      "title": "真正赚钱的方式，应该是顺着自己的性子来。",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "企业服务",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率",
+        "工具配置与AI基建门槛"
+      ],
+      "resultSignal": "粉丝和后续商单价值远超过1000块",
+      "reusableMethod": [
+        "内容获客路径",
+        "前端获客 + 后端交付拆分",
+        "工具产品化"
+      ],
+      "opportunityScore": 68,
+      "valueScore": 100,
+      "summary": "真正赚钱的方式，应该是顺着自己的性子来",
+      "evidence": "不是所有人都擅长写代码、做工程。但每个人都可能在AI时代找到自己的位置。 我们的新栏目《100个AI破局者》第5期来了，这期的主人公是破局的Jackson（大鼻哥）。 Jackson（大鼻哥）是个普通人，没有技术背景，被裁员后经历了很长的求职困境。通过在破局学习AI技能，顺利获得了一份AI产品经理的工作。在尝试了10多个赛道后，他凭着对新鲜事物的敏锐度和分享欲，最终选择在AI工具测评赛道深耕，实现了工作副业双开花，副业月收入达到了4w+。 更牛的是，他的商单报价快速从1000元涨到了8000元。他给大家总结出了三条接商单的铁规，避免大家踩坑： 铁规一：低价单不接。 因为一条商单从对接、测试、写文案、剪视频到交付，最少3到5天。赚1000块还不如花3天时间做两条自己的内容，爆一条带来的粉丝和后续商单价值远超过1…",
+      "excerpt": "不是所有人都擅长写代码、做工程。但每个人都可能在AI时代找到自己的位置。 我们的新栏目《100个AI破局者》第5期来了，这期的主人公是破局的Jackson（大鼻哥）。 Jackson（大鼻哥）是个普通人，没有技术背景，被裁员后经历了很长的求职困境。通过在破局学习AI技能，顺利获得了一份AI产品经理的工作。在尝试了10多个赛道后，他凭着对新鲜事物的敏锐度和分享欲，最终选择在AI工具测评赛道深耕，实现了工作副业双开花，副业月收入达到了4w+。 更牛的是，他的商单报价快速从1000元涨到了8000元。他给大家总结出了三…",
+      "links": [
+        {
+          "href": "https://d16rg8unadx.feishu.cn/wiki/SLHJwLVpsinMvck2EIHczRmTnPh?from=from_copylink",
+          "text": "https://d16rg8unadx.feishu.cn/wiki/SLHJwLVpsinMvck2EIHczRmTnPh?from=from_copylink"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "26480a6e4241e6",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "雨降情升",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-06-18 14:33",
+      "title": "小红书虚拟产品卖了近2万后，我才明白最值钱的不是变现",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "订单1125单",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 62,
+      "valueScore": 100,
+      "summary": "小红书虚拟产品卖了近2万后，我才明白最值钱的不是变现 小红书虚拟产品卖了近2万后，我才明白最值钱的不是变现",
+      "evidence": "小红书虚拟产品卖了近2万后，我才明白最值钱的不是变现",
+      "excerpt": "小红书虚拟产品卖了近2万后，我才明白最值钱的不是变现",
+      "links": [
+        {
+          "href": "https://b1bjvcu0j47.feishu.cn/wiki/NRrowGK1WivhjdkoCWCcQ9Q4nKh?from=from_copylink",
+          "text": "https://b1bjvcu0j47.feishu.cn/wiki/NRrowGK1WivhjdkoCWCcQ9Q4nKh?from=from_copylink"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "115555d4c00fe1",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "东舟",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-06-18 14:11",
+      "title": "一文看懂：小红书起号如何从0到1搭建内容系统",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "工具配置与AI基建门槛",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 36,
+      "valueScore": 74,
+      "summary": "一文看懂：小红书起号如何从0到1搭建内容系统 一文看懂：小红书起号如何从0到1搭建内容系统",
+      "evidence": "一文看懂：小红书起号如何从0到1搭建内容系统",
+      "excerpt": "一文看懂：小红书起号如何从0到1搭建内容系统",
+      "links": [],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "0664f99d2f2222",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "黎梨",
+      "role": "行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-06-17 23:01",
+      "title": "大家好，我是黎梨。 六月的北京阳光有些刺眼。拖着行李箱搬来北京这座城市，加入AI破局俱乐部成为洋哥的IP助理，最近每天的信息量都在疯狂冲刷着我。",
+      "url": "https://aipoju.com/index",
+      "scene": "内容生产与IP运营",
+      "industry": "企业服务",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 50,
+      "valueScore": 65,
+      "summary": "拖着行李箱搬来北京这座城市，加入AI破局俱乐部成为洋哥的IP助理，最近每天的信息量都在疯狂冲刷着我",
+      "evidence": "今天中午，洋哥在星球里面发了篇精华帖——《AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一》。 作为洋哥的IP助理，我第一时间仔细拜读了这篇文章。他在帖子里的观点是：以前大家都在做个人AI提效和IP，但真正的下一波大红利在B端，中小企业对AI极度饥渴，这会是普通人逆袭的绝佳切口。 很多圈友看完可能还在心里犯嘀咕：这片蓝海真能起势这么快吗？真的能做吗？ 无独有偶，洋哥刚发完帖子没多久，黄有璨老师就来到破局找洋哥询问他的一个想法是否可行，期间谈到的趋势和规划基本和洋哥帖子里的战略判断相差无几，两位行业大佬对未来趋势的判断竟然出奇地一致。 作为助理，我坐在旁边全程旁听并负责记录，越听越觉得以往的认知被彻底打破重组了。 下面，我想以我的第一视角，给大家还原一下这场极具信息量的高维战…",
+      "excerpt": "今天中午，洋哥在星球里面发了篇精华帖——《AI企业服务，千亿大市场却有小切口，这可能是接下来2-3年普通人天花板最高的方向之一》。 作为洋哥的IP助理，我第一时间仔细拜读了这篇文章。他在帖子里的观点是：以前大家都在做个人AI提效和IP，但真正的下一波大红利在B端，中小企业对AI极度饥渴，这会是普通人逆袭的绝佳切口。 很多圈友看完可能还在心里犯嘀咕：这片蓝海真能起势这么快吗？真的能做吗？ 无独有偶，洋哥刚发完帖子没多久，黄有璨老师就来到破局找洋哥询问他的一个想法是否可行，期间谈到的趋势和规划基本和洋哥帖子里的战略判…",
+      "links": [
+        {
+          "href": "https://icn2kodop27a.feishu.cn/wiki/Q3GtwBW3riT3exkZagycUlwRneN",
+          "text": "https://icn2kodop27a.feishu.cn/wiki/Q3GtwBW3riT3exkZagycUlwRneN"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "9ace4ec3145ef7",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "醒狮",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-06-17 20:32",
+      "title": "从工具教学到商业增长：惠州私塾游学对AI培训行业的十万字思考",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "留学教育",
+      "tools": [
+        "ChatGPT",
+        "Gemini",
+        "NotebookLM",
+        "Coze"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "成交",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 82,
+      "valueScore": 100,
+      "summary": "从工具教学到商业增长：惠州私塾游学对AI培训行业的十万字思考 从工具教学到商业增长：惠州私塾游学对AI培训行业的十万字思考",
+      "evidence": "从工具教学到商业增长：惠州私塾游学对AI培训行业的十万字思考",
+      "excerpt": "从工具教学到商业增长：惠州私塾游学对AI培训行业的十万字思考",
+      "links": [],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "0f58f8bf019f20",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "中流击水",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-17 20:28",
+      "title": "大家好，我是西羊石小石学长，《AI视频一本通》和《AI漫剧创作一本通》书籍作者，专注 AI视频及其Agent自动化。",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "未识别行业",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "交付标准化与复购",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分",
+        "工具产品化"
+      ],
+      "opportunityScore": 44,
+      "valueScore": 70,
+      "summary": "大家好，我是西羊石小石学长，《AI视频一本通》和《AI漫剧创作一本通》书籍作者，专注 AI视频及其Agent自动化",
+      "evidence": "最近在做 AI 短剧，发现有一些痛点还没有很好地克服。 比如说同一个场景下多角色不同的姿态、相同场景下的正反打需要比较精细、团队同一个项目协作、快速、高质量地生成 AI 短剧。 我最近也去深度使用了很多 AI 工具，实战之后发现一个叫做 AniShort 的平台还不错。 这个平台的 slogan 就是为 AI 短剧协作而生，结合我之前的一个场景，用这个平台重新快速做了一遍漫改西游来测试他的综合能力。 为了便于更好的视频浏览体验，请移步飞书文档：https://xiyangshiai.feishu.cn/docx/KHmddGn4VoJ6iYxxxmPcQLDxnd2 #AI绘图# #AI视频# #AI工具# #AI智能体#",
+      "excerpt": "最近在做 AI 短剧，发现有一些痛点还没有很好地克服。 比如说同一个场景下多角色不同的姿态、相同场景下的正反打需要比较精细、团队同一个项目协作、快速、高质量地生成 AI 短剧。 我最近也去深度使用了很多 AI 工具，实战之后发现一个叫做 AniShort 的平台还不错。 这个平台的 slogan 就是为 AI 短剧协作而生，结合我之前的一个场景，用这个平台重新快速做了一遍漫改西游来测试他的综合能力。 为了便于更好的视频浏览体验，请移步飞书文档：https://xiyangshiai.feishu.cn/docx/…",
+      "links": [
+        {
+          "href": "https://xiyangshiai.feishu.cn/docx/KHmddGn4VoJ6iYxxxmPcQLDxnd2",
+          "text": "https://xiyangshiai.feishu.cn/docx/KHmddGn4VoJ6iYxxxmPcQLDxnd2"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "9d874e378ebe72",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "栋哥",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-17 17:42",
+      "title": "🔥 月入2万+，我研究了5个腾讯ima知识号真实案例，写出了这份可复制的变现攻略",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "未识别行业",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "交付标准化与复购"
+      ],
+      "resultSignal": "月入2万+",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 72,
+      "valueScore": 98,
+      "summary": "🔥 月入2万+，我研究了5个腾讯ima知识号真实案例，写出了这份可复制的变现攻略 🔥 月入2万+，我研究了5个腾讯ima知识号真实案例，写出了这份可复制的变现攻略",
+      "evidence": "🔥 月入2万+，我研究了5个腾讯ima知识号真实案例，写出了这份可复制的变现攻略",
+      "excerpt": "🔥 月入2万+，我研究了5个腾讯ima知识号真实案例，写出了这份可复制的变现攻略",
+      "links": [
+        {
+          "href": "https://ccnx8k9v2rxx.feishu.cn/docx/COmZdNr1koPMtcxwuqociQ9wnye?from=from_copylink",
+          "text": "https://ccnx8k9v2rxx.feishu.cn/docx/COmZdNr1koPMtcxwuqociQ9wnye?from=from_copylink"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "aeff55e60e6724",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "fish",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-06-17 17:32",
+      "title": "私塾线下课复盘——AI搞钱真正拉开差距的，不只是工具和执行力",
+      "url": "https://aipoju.com/index",
+      "scene": "内容生产与IP运营",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "工具产品化"
+      ],
+      "opportunityScore": 38,
+      "valueScore": 64,
+      "summary": "私塾线下课复盘——AI搞钱真正拉开差距的，不只是工具和执行力 这次私塾线下课上完，我再回头看自己这两年，反而有点不一样的感受",
+      "evidence": "这次私塾线下课上完，我再回头看自己这两年，反而有点不一样的感受。 AI 搞钱真正拉开差距的，好像不只是会不会用工具，也不只是够不够拼，而是你能不能判断一个机会是不是属于你，能不能把一个单点机会拆成系统，能不能用很小的成本先验证，再慢慢把它变成一个可以持续跑的盘子。 所以这篇不是课程笔记，也不是单纯讲方法论，更多是我借着这次私塾线下课，把自己从国企到裸辞all in AI ，再到通过数据分析拿到7位数结果一路的经历，重新复盘了一遍。 因内容较多，请移步：https://my.feishu.cn/wiki/PL0Zw5EkgiGWO0kMjflcZOtLnke?from=from_copylink",
+      "excerpt": "这次私塾线下课上完，我再回头看自己这两年，反而有点不一样的感受。 AI 搞钱真正拉开差距的，好像不只是会不会用工具，也不只是够不够拼，而是你能不能判断一个机会是不是属于你，能不能把一个单点机会拆成系统，能不能用很小的成本先验证，再慢慢把它变成一个可以持续跑的盘子。 所以这篇不是课程笔记，也不是单纯讲方法论，更多是我借着这次私塾线下课，把自己从国企到裸辞all in AI ，再到通过数据分析拿到7位数结果一路的经历，重新复盘了一遍。 因内容较多，请移步：https://my.feishu.cn/wiki/PL0Zw…",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/PL0Zw5EkgiGWO0kMjflcZOtLnke?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/PL0Zw5EkgiGWO0kMjflcZOtLnke?from=from_copylink"
+        }
+      ],
+      "metrics": "",
+      "matchedKeywords": [],
+      "duplicateCount": 1
+    },
+    {
+      "id": "fa3d7a5b166f19",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "小厨",
+      "role": "",
+      "relativeTime": "06-16",
+      "publishedAt": "",
+      "title": "靠这套AI编程打法SOP，1个月从「只会提需求」到能交付能变现，附录7个完整的提示词",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "Codex",
+        "Claude Code",
+        "Claude",
+        "Gemini",
+        "Cursor",
+        "飞书",
+        "RPA"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "月入十万」",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 90,
+      "valueScore": 100,
+      "summary": "靠这套AI编程打法SOP，1个月从「只会提需求」到能交付能变现，附录7个完整的提示词 这篇是纯干货实操贴，没有废话",
+      "evidence": "这篇是纯干货实操贴，没有废话。我把自己真金白银烧出来的一套「双脑工作流 + 7 个提示词」全部摊开，圈友照着抄就能上手。建议先收藏，因为你大概率一遍看不完，但这套东西能帮你少走至少三个月弯路。 《飞书完整文档，点击》 一、先泼盆冷水：抖音上教你的 Vibe Coding，九成是坑 这两年「Vibe Coding（对着 AI 说话就能写代码）」被吹上天。抖音上一堆视频，对着屏幕念叨两句，一个 App 就出来了，配文「不会编程也能月入十万」。 我信过。然后我做出来的第一个「软件」，是个跑三步就崩、改一个 bug 冒三个新 bug、数据对不上、上线即翻车的玩具。 后来我才想明白一个最朴素的道理：工具再强，模型再牛（哪怕 GPT-5.5、Gemini 3.1 Pro），它也只是工具。就跟 Photoshop 一样，给…",
+      "excerpt": "这篇是纯干货实操贴，没有废话。我把自己真金白银烧出来的一套「双脑工作流 + 7 个提示词」全部摊开，圈友照着抄就能上手。建议先收藏，因为你大概率一遍看不完，但这套东西能帮你少走至少三个月弯路。 《飞书完整文档，点击》 一、先泼盆冷水：抖音上教你的 Vibe Coding，九成是坑 这两年「Vibe Coding（对着 AI 说话就能写代码）」被吹上天。抖音上一堆视频，对着屏幕念叨两句，一个 App 就出来了，配文「不会编程也能月入十万」。 我信过。然后我做出来的第一个「软件」，是个跑三步就崩、改一个 bug 冒三…",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/M0wgwTJzMiPtZMkEeIocgw2Gn6W?from=from_copylink",
+          "text": "《飞书完整文档，点击》"
+        }
+      ],
+      "metrics": "38 83 11 84",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "71c050f6ace65a",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "诗意听涛闯天涯",
+      "role": "",
+      "relativeTime": "06-16",
+      "publishedAt": "",
+      "title": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "营收也是比较稳定的",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 84,
+      "valueScore": 100,
+      "summary": "全自动化月上百站，单月净赚3700刀：游戏攻略站底层玩法+新手全套SOP 生财的圈友们大家好，我是诗意听涛，目前我主要围绕出海游戏站来做业务",
+      "evidence": "生财的圈友们大家好，我是诗意听涛，目前我主要围绕出海游戏站来做业务。 1.具体介绍下我的情况： 98年，当前旅居无固定base（最近3个月 - 广东惠州） 22-25年：在北京互联网大厂，先后在美团、贝壳的软件研发部门 26年初：裸辞创业。从0到1，4个月时间跑通出海游戏站全流程 + 多并发全自动化系统（无人值守、自行修复、自行进化），月上百站，追上大厂税后收入。 目前：靠全自动化批量上站系统，稳定上流量站3-4个站，理论不限（新词数量等限制因素） 2.我目前做游戏站的成绩： 月收入：3700+刀 日收入高峰：200+刀 月上站数量：近100个。 此外，我还构建了 1套无需操心的自动化系统： 1）业务上：涵盖从找词、注册域名、调研信息、上站、自动更新、加广告、发外链。 2）功能上：覆盖多会话管理、多浏览器操控…",
+      "excerpt": "生财的圈友们大家好，我是诗意听涛，目前我主要围绕出海游戏站来做业务。 1.具体介绍下我的情况： 98年，当前旅居无固定base（最近3个月 - 广东惠州） 22-25年：在北京互联网大厂，先后在美团、贝壳的软件研发部门 26年初：裸辞创业。从0到1，4个月时间跑通出海游戏站全流程 + 多并发全自动化系统（无人值守、自行修复、自行进化），月上百站，追上大厂税后收入。 目前：靠全自动化批量上站系统，稳定上流量站3-4个站，理论不限（新词数量等限制因素） 2.我目前做游戏站的成绩： 月收入：3700+刀 日收入高峰：2…",
+      "links": [
+        {
+          "href": "https://icnqpu3z244v.feishu.cn/wiki/FyMewVEP3i3JR6kO2sccaIMDn9b",
+          "text": "https://icnqpu3z244v.feishu.cn/wiki/FyMewVEP3i3JR6kO2sccaIMDn9b"
+        }
+      ],
+      "metrics": "52 128 14 98",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "8da2d6c8b32867",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "请叫我娃哥",
+      "role": "",
+      "relativeTime": "06-16",
+      "publishedAt": "",
+      "title": "我用 Codex + Obsidian，把 10 年教培增长经验做成了一个可调用的 AI 第二大脑",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "留学教育",
+      "tools": [
+        "Codex",
+        "Claude",
+        "ChatGPT",
+        "Obsidian",
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "线索”",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 82,
+      "valueScore": 100,
+      "summary": "我用 Codex + Obsidian，把 10 年教培增长经验做成了一个可调用的 AI 第二大脑 见字如面，我是娃哥，一个爱喝酒的教培流量操盘手",
+      "evidence": "见字如面，我是娃哥，一个爱喝酒的教培流量操盘手。 这篇内容，我想认真写一篇复盘。它不是普通的 AI 工具推荐，也不是那种“10 个提示词帮你一键生成爆款”的文章，而是想分享我最近是怎么用 Codex + Obsidian，把自己过去做教培内容、流量、矩阵、私域、投放、数据复盘和产品交付的经验，慢慢搭成一个“娃哥专属教培内容知识库”的。 这套东西现在还远远不是终局，但它已经开始解决我过去长期遇到的一个问题：我做过很多项目，写过很多文章，改过很多内容，踩过很多坑，也沉淀过很多判断，但这些东西过去大部分是散的。一部分在公众号文章里，一部分在飞书文档里，一部分在微信聊天里，一部分在数据表里，一部分在脑子里。每次写内容、做复盘、做方案、做交付，我都要重新找资料、重新回忆、重新组织。 更关键的是，我一直有一个很明显的感受…",
+      "excerpt": "见字如面，我是娃哥，一个爱喝酒的教培流量操盘手。 这篇内容，我想认真写一篇复盘。它不是普通的 AI 工具推荐，也不是那种“10 个提示词帮你一键生成爆款”的文章，而是想分享我最近是怎么用 Codex + Obsidian，把自己过去做教培内容、流量、矩阵、私域、投放、数据复盘和产品交付的经验，慢慢搭成一个“娃哥专属教培内容知识库”的。 这套东西现在还远远不是终局，但它已经开始解决我过去长期遇到的一个问题：我做过很多项目，写过很多文章，改过很多内容，踩过很多坑，也沉淀过很多判断，但这些东西过去大部分是散的。一部分在…",
+      "links": [],
+      "metrics": "12 65 11 58",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "d80e7811148269",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "额额额",
+      "role": "",
+      "relativeTime": "06-16",
+      "publishedAt": "",
+      "title": "用 NotebookLM 做原创课件：从0到月入6w，我踩过的坑和跑通的路径",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "留学教育",
+      "tools": [
+        "Gemini",
+        "NotebookLM",
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "月入6w",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 80,
+      "valueScore": 100,
+      "summary": "用 NotebookLM 做原创课件：从0到月入6w，我踩过的坑和跑通的路径 哈喽大家好～我是额额额，上过 1 年班，深耕自由职业 10 年的普通创业者，目前专注深耕教育虚拟资料赛道",
+      "evidence": "哈喽大家好～我是额额额，上过 1 年班，深耕自由职业 10 年的普通创业者，目前专注深耕教育虚拟资料赛道。 这篇复盘主要讲我如何从高风险资料搬运，转向用 NotebookLM 和 AI 做原创小学语文课件，并通过小红书完成需求验证、内容引流、工具提效和轻协作交付。 目前我做的项目是用 NotebookLM 做 PPT 课件，之前卖过盗版资源，所以很早就知道老师端这个需求量巨大。现在项目大概 5w/月，私域用户沉淀 1 万左右。本文不讲空泛理论，只讲我自己踩过的坑、跑通的路径，以及普通人可以参考的实操拆解。 本篇文章用于解决下面 6 个问题。 一、为什么要从资料搬运转向 AI 原创课件？ 二、怎么用小红书低成本验证赛道需求？ 三、怎么用 Gemini + NotebookLM 做出可售卖课件？ 四、批量起量时最…",
+      "excerpt": "哈喽大家好～我是额额额，上过 1 年班，深耕自由职业 10 年的普通创业者，目前专注深耕教育虚拟资料赛道。 这篇复盘主要讲我如何从高风险资料搬运，转向用 NotebookLM 和 AI 做原创小学语文课件，并通过小红书完成需求验证、内容引流、工具提效和轻协作交付。 目前我做的项目是用 NotebookLM 做 PPT 课件，之前卖过盗版资源，所以很早就知道老师端这个需求量巨大。现在项目大概 5w/月，私域用户沉淀 1 万左右。本文不讲空泛理论，只讲我自己踩过的坑、跑通的路径，以及普通人可以参考的实操拆解。 本篇文…",
+      "links": [
+        {
+          "href": "https://higjmmrwjkh.feishu.cn/wiki/BZXowanioimo3qkzQbKcSK7Injg?from=from_copylink",
+          "text": "https://higjmmrwjkh.feishu.cn/wiki/BZXowanioimo3qkzQbKcSK7Injg?from=from_copylink"
+        }
+      ],
+      "metrics": "49 283 35 180",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "c705de64428038",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "Gary曹淦丨AI内容出海🚢",
+      "role": "航海家",
+      "relativeTime": "06-17",
+      "publishedAt": "",
+      "title": "YouTube月入万刀、视频号百万GMV，通过AI视频拿到结果的圈友都做对了什么",
+      "url": "https://scys.com/",
+      "scene": "内容生产与IP运营",
+      "industry": "内容与自媒体",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "月入万刀、视频号百万GMV",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 72,
+      "valueScore": 100,
+      "summary": "YouTube月入万刀、视频号百万GMV，通过AI视频拿到结果的圈友都做对了什么 大家好，我是Gary曹淦，和波妮一起担任生财YouTube AI 视频深海圈总教练，嗯，现在我们的深海圈已经正式更名叫AI视频深海圈了",
+      "evidence": "大家好，我是Gary曹淦，和波妮一起担任生财YouTube AI 视频深海圈总教练，嗯，现在我们的深海圈已经正式更名叫AI视频深海圈了。 5月，我们带了一小批深海圈过去做YouTube的高手，从0开始测试视频号的AI短剧自然流带货，21天内测期间跑出了100万GMV，其中在我办公室做的两个朋友，大臣教练和我的女朋友，6月截止到今天已经超过50万GMV了，如果是最近做AI短剧带货的，应该会对我们这个蓝V号有些印象。 这篇帖子的分享，基于上一次在航海家分享的基础上做了一些调整，主要是三部分 1.我们最近跑通的AI视频内测项目，以及我们为何选择这个项目，可以从选项目的角度给大家提供一些参考。 2.近两年来，通过AI视频拿到结果的圈友，都做对了什么，可以从做项目的角度给大家提供一些参考。 3.我眼里AI视频的趋势和机…",
+      "excerpt": "大家好，我是Gary曹淦，和波妮一起担任生财YouTube AI 视频深海圈总教练，嗯，现在我们的深海圈已经正式更名叫AI视频深海圈了。 5月，我们带了一小批深海圈过去做YouTube的高手，从0开始测试视频号的AI短剧自然流带货，21天内测期间跑出了100万GMV，其中在我办公室做的两个朋友，大臣教练和我的女朋友，6月截止到今天已经超过50万GMV了，如果是最近做AI短剧带货的，应该会对我们这个蓝V号有些印象。 这篇帖子的分享，基于上一次在航海家分享的基础上做了一些调整，主要是三部分 1.我们最近跑通的AI视频…",
+      "links": [
+        {
+          "href": "https://ncnmu5q1eqm9.feishu.cn/wiki/R3LXwoQ1NiOLZokVfeJcoeQHn1l",
+          "text": "https://ncnmu5q1eqm9.feishu.cn/wiki/R3LXwoQ1NiOLZokVfeJcoeQHn1l"
+        }
+      ],
+      "metrics": "22 94 3 41",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "bbe5596205d0e1",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "钱鑫鑫",
+      "role": "",
+      "relativeTime": "06-17",
+      "publishedAt": "",
+      "title": "做宠物用品无人超市，每周工作3小时，年营收做到近40万的复盘与心得",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "电商零售",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索"
+      ],
+      "resultSignal": "营收做到近40万的复盘与心得 各位圈友大家好呀～我是鑫鑫",
+      "reusableMethod": [
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 62,
+      "valueScore": 100,
+      "summary": "做宠物用品无人超市，每周工作3小时，年营收做到近40万的复盘与心得 各位圈友大家好呀～我是鑫鑫，在苏州创业第7年，目前正在向AI 赛道转型",
+      "evidence": "各位圈友大家好呀～我是鑫鑫，在苏州创业第7年，目前正在向AI 赛道转型。今天讲的是我做本职工作之外的一个副业项目——一家开在苏州专做线上单的宠物用品无人超市。没店员、没收银，我老婆一周补货 1-2 次，平时靠自然流量运转，就当个挂着不用管的现金流。这店从 2022 年开到现在 4 年多，经营一年多后改成无人模式。改之前每天得有人看店，净利率只有 15% 左右；改成无人之后，销售额没怎么变，净利率却干到了接近 50%，人力还彻底解放了。整个过程我们是真金白银趟出来的，今天把它完整复盘一遍。希望对想开无人店铺的有帮助。本篇只讲实操和真实经验。从怎么入场、怎么选址、无人化怎么改造，到这门生意的账到底怎么算，全是干货。本篇文章用于解决下面 6 个问题：一、为什么宠物用品无人超市这个生意现在能跑通？二、怎么选址？为什么…",
+      "excerpt": "各位圈友大家好呀～我是鑫鑫，在苏州创业第7年，目前正在向AI 赛道转型。今天讲的是我做本职工作之外的一个副业项目——一家开在苏州专做线上单的宠物用品无人超市。没店员、没收银，我老婆一周补货 1-2 次，平时靠自然流量运转，就当个挂着不用管的现金流。这店从 2022 年开到现在 4 年多，经营一年多后改成无人模式。改之前每天得有人看店，净利率只有 15% 左右；改成无人之后，销售额没怎么变，净利率却干到了接近 50%，人力还彻底解放了。整个过程我们是真金白银趟出来的，今天把它完整复盘一遍。希望对想开无人店铺的有帮助…",
+      "links": [
+        {
+          "href": "https://ocnsg70itv51.feishu.cn/wiki/F1Xpwl846iq8xik3VrFcDiyvndg?from=from_copylink",
+          "text": "https://ocnsg70itv51.feishu.cn/wiki/F1Xpwl846iq8xi..."
+        },
+        {
+          "href": "https://ocnsg70itv51.feishu.cn/wiki/F1Xpwl846iq8xi",
+          "text": "https://ocnsg70itv51.feishu.cn/wiki/F1Xpwl846iq8xi"
+        }
+      ],
+      "metrics": "119 293 40 124",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "4813debba78072",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "安然",
+      "role": "",
+      "relativeTime": "06-16",
+      "publishedAt": "",
+      "title": "3年跑通10+项目，6年大厂烧掉2个亿写成13万字书：我是如何选项目、换项目不内耗的？",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [],
+      "resultSignal": "GMV7亿+",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 62,
+      "valueScore": 100,
+      "summary": "3年跑通10+项目，6年大厂烧掉2个亿写成13万字书：我是如何选项目、换项目不内耗的",
+      "evidence": "大家好，我是安然，6 年大厂投流优化师，消耗金额2个亿+，带动GMV7亿+，2023-2026年自己下场实操过做过 10 多个项目，主要是做电商、直播、婚礼督导、目前主营盘是投流以及婚礼督导之前因为在Ai 航海里超额完成了作业，作为优秀船员分享过航海的感受，有简单提到我加入生财前，就做过 10 多个项目，所以今天就给大家分享下我的项目经验本篇主要讲我做过这么多项目的选择和经验，不展开教程，而是重点讲踩过的坑和项目选择思路本篇文章主要目录如下：一、项目理由/结果/总结/反思1.拼多多店铺（百货类 饰品类）2.直播切片（食品、服装、百货、图书类）3.穿戴甲（直播类）：4.短剧（分发）：5.婚礼督导（杭州周边城市）6.商务（美妆、母婴类）7.小红书代投（护肤品类）8.投流书（6 年投放经验沉淀）二、现在这些项目还有…",
+      "excerpt": "大家好，我是安然，6 年大厂投流优化师，消耗金额2个亿+，带动GMV7亿+，2023-2026年自己下场实操过做过 10 多个项目，主要是做电商、直播、婚礼督导、目前主营盘是投流以及婚礼督导之前因为在Ai 航海里超额完成了作业，作为优秀船员分享过航海的感受，有简单提到我加入生财前，就做过 10 多个项目，所以今天就给大家分享下我的项目经验本篇主要讲我做过这么多项目的选择和经验，不展开教程，而是重点讲踩过的坑和项目选择思路本篇文章主要目录如下：一、项目理由/结果/总结/反思1.拼多多店铺（百货类 饰品类）2.直播切…",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/FeY4wc8AXiyGglk8VFRc3rIQnuh?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/FeY4wc8AXiyGglk8VFRc3rIQ..."
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/FeY4wc8AXiyGglk8VFRc3rIQ",
+          "text": "https://my.feishu.cn/wiki/FeY4wc8AXiyGglk8VFRc3rIQ"
+        }
+      ],
+      "metrics": "4 53 8 9",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "cc2eb8b05209a2",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "小平子",
+      "role": "",
+      "relativeTime": "06-18",
+      "publishedAt": "",
+      "title": "我用两条抖音视频，搭出了一个会自我生长的个人知识库入口",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "本地生活",
+      "tools": [
+        "Codex",
+        "Claude",
+        "ChatGPT",
+        "Obsidian",
+        "飞书"
+      ],
+      "monetization": "资料产品 / 工具包",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 60,
+      "valueScore": 100,
+      "summary": "我用两条抖音视频，搭出了一个会自我生长的个人知识库入口 我是一个生财新人，418纳新进来立即就参加了AI大航海，从一个完全小白开始参与航海，最近一直在摸索学习，今天分享一篇我这两天真实折腾出来的长文",
+      "evidence": "我是一个生财新人，418纳新进来立即就参加了AI大航海，从一个完全小白开始参与航海，最近一直在摸索学习，今天分享一篇我这两天真实折腾出来的长文。起点很简单：我刷到一条抖音，发现可以让 AI 提取视频文字；第二天又刷到一条关于 Obsidian 自生长知识库的视频。于是我干脆把这两件事串起来，实测了一遍：怎么把日常冲浪信息，从“看过就忘”变成可以进入个人知识库、被 AI 继续复用的素材。里面记录了完整过程、踩坑、修正和最终闭环，适合也在搭个人知识库、AI 工作流、内容系统的朋友参考。以下为正文：我用两条抖音视频，搭出了一个会自我生长的个人知识库入口从抖音转文字 Skill，到 Founder OS 每日冲浪信息复用闭环的完整实战这篇文档适合以下几类人：1.每天会刷到大量信息，但信息经常停留在“收藏夹”的人。2.…",
+      "excerpt": "我是一个生财新人，418纳新进来立即就参加了AI大航海，从一个完全小白开始参与航海，最近一直在摸索学习，今天分享一篇我这两天真实折腾出来的长文。起点很简单：我刷到一条抖音，发现可以让 AI 提取视频文字；第二天又刷到一条关于 Obsidian 自生长知识库的视频。于是我干脆把这两件事串起来，实测了一遍：怎么把日常冲浪信息，从“看过就忘”变成可以进入个人知识库、被 AI 继续复用的素材。里面记录了完整过程、踩坑、修正和最终闭环，适合也在搭个人知识库、AI 工作流、内容系统的朋友参考。以下为正文：我用两条抖音视频，搭…",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/WN6RwKXakiqSubkCIsncGLfNnMc?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/WN6RwKXakiqSubkCIsncGLfN..."
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/WN6RwKXakiqSubkCIsncGLfN",
+          "text": "https://my.feishu.cn/wiki/WN6RwKXakiqSubkCIsncGLfN"
+        }
+      ],
+      "metrics": "17 79 9 37",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "da828d143f4389",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "郭晓文",
+      "role": "航海家",
+      "relativeTime": "06-17",
+      "publishedAt": "",
+      "title": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "Claude Code",
+        "Claude",
+        "飞书"
+      ],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "粉丝量要求",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 44,
+      "valueScore": 100,
+      "summary": "【保姆级教程&经历分享】1 天跑通，最适合新手上手的 AI 项目 ------大家好，我叫郭晓文，江湖人称最懂新手的男人，7 年生财老圈友，16 篇精华帖作者",
+      "evidence": "------大家好，我叫郭晓文，江湖人称最懂新手的男人，7 年生财老圈友，16 篇精华帖作者。写这篇文章，是我发现一个非常大的矛盾点。我对学习的理念，一直都是「干中学」。正如，在岸上看，是学不会游泳的一样，没有在具体的业务上实操，是学不会搞钱，学不会 AI 的。 但我发现：- 大多数新手，手上就是没有项目……- 市面上能看到的大多数项目，门槛又都不低，而且，很多和 AI 无关于是，很多人就陷入了窘境：- 不做项目，学不会搞钱，学不会 AI，徒增焦虑- 想做项目，又不知道该做什么项目，从何入手于是，我就萌生了「找个低门槛的、AI 浓度高的搞钱项目，给新手练手，让新手在做项目的过程中，学习 AI，学习搞钱」的想法。 刚好，上周五就有这么一个项目出现在我眼前。- 上周五中午，我在小红书上刷到一个符合这个标准的账号-…",
+      "excerpt": "------大家好，我叫郭晓文，江湖人称最懂新手的男人，7 年生财老圈友，16 篇精华帖作者。写这篇文章，是我发现一个非常大的矛盾点。我对学习的理念，一直都是「干中学」。正如，在岸上看，是学不会游泳的一样，没有在具体的业务上实操，是学不会搞钱，学不会 AI 的。 但我发现：- 大多数新手，手上就是没有项目……- 市面上能看到的大多数项目，门槛又都不低，而且，很多和 AI 无关于是，很多人就陷入了窘境：- 不做项目，学不会搞钱，学不会 AI，徒增焦虑- 想做项目，又不知道该做什么项目，从何入手于是，我就萌生了「找个…",
+      "links": [
+        {
+          "href": "https://yuchangwenhua.feishu.cn/wiki/R3ZJwAtTciXEO0k80YYccQvknhe?from=from_copylink",
+          "text": "https://yuchangwenhua.feishu.cn/wiki/R3ZJwAtTciXEO..."
+        },
+        {
+          "href": "https://yuchangwenhua.feishu.cn/wiki/R3ZJwAtTciXEO",
+          "text": "https://yuchangwenhua.feishu.cn/wiki/R3ZJwAtTciXEO"
+        }
+      ],
+      "metrics": "347 760 77 424",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "f653441dbd6266",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "七天",
+      "role": "",
+      "relativeTime": "06-17",
+      "publishedAt": "",
+      "title": "访谈生财传术师kosan：AI时代一定要做IP，做IP你是品牌，不做你就是白牌！",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "前端获客 + 后端交付拆分",
+        "工具产品化"
+      ],
+      "opportunityScore": 38,
+      "valueScore": 100,
+      "summary": "访谈生财传术师kosan：AI时代一定要做IP，做IP你是品牌，不做你就是白牌",
+      "evidence": "大家好，我是生财的内容负责人七天。上次的一只仙采访发出去之后反馈真好，点赞飙升到600+。也看到了很多圈友的真问题，比如如何1-10，如何做IP。今天这篇内容，是我和 @Kosan-大柯 老师 的一次深度对谈。在 kosan 的分享里，我最受触动的一点是：很多人做 IP，一开始就把注意力放在内容、人设和流量上，但如果产品本身没有打透，商业模式没有想清楚，流量来了也未必能变成结果。反过来，如果你已经知道自己要服务谁、解决什么问题、提供什么产品，那 IP、内容和 AI，才会真正成为放大器，而不是幻觉。这篇采访重点讲了这几部分：1、为什么很多 IP 最后赚不到钱，问题不在流量，而在商业模式和产品本身。2、如果从 0 开始做 IP，应该先想清楚哪些问题，以及什么时候适合先流量后产品，什么时候适合先产品后流量。3、他如…",
+      "excerpt": "大家好，我是生财的内容负责人七天。上次的一只仙采访发出去之后反馈真好，点赞飙升到600+。也看到了很多圈友的真问题，比如如何1-10，如何做IP。今天这篇内容，是我和 @Kosan-大柯 老师 的一次深度对谈。在 kosan 的分享里，我最受触动的一点是：很多人做 IP，一开始就把注意力放在内容、人设和流量上，但如果产品本身没有打透，商业模式没有想清楚，流量来了也未必能变成结果。反过来，如果你已经知道自己要服务谁、解决什么问题、提供什么产品，那 IP、内容和 AI，才会真正成为放大器，而不是幻觉。这篇采访重点讲了…",
+      "links": [
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/wiki/CzZTwloyri8qBSkqOGQcaAvTnCe?from=from_copylink",
+          "text": "https://shengcaiyoushu01.feishu.cn/wiki/CzZTwloyri..."
+        },
+        {
+          "href": "https://shengcaiyoushu01.feishu.cn/wiki/CzZTwloyri...这篇对谈最打动我的地方",
+          "text": "https://shengcaiyoushu01.feishu.cn/wiki/CzZTwloyri...这篇对谈最打动我的地方"
+        }
+      ],
+      "metrics": "43 149 15 72",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "f1a7c6cb71f405",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "鱼丸|亦仁助理",
+      "role": "",
+      "relativeTime": "06-18",
+      "publishedAt": "",
+      "title": "6 月会员日：多看生财，少走弯路。一起复盘，照亮他人。",
+      "url": "https://scys.com/",
+      "scene": "内容生产与IP运营",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "知识沉淀与效率",
+        "工具配置与AI基建门槛",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "工具产品化"
+      ],
+      "opportunityScore": 48,
+      "valueScore": 96,
+      "summary": "这段时间，佛得角0:0逼平西班牙的比赛，让不少人印象很深",
+      "evidence": "​你们最近都在看世界杯吗？这段时间，佛得角0:0逼平西班牙的比赛，让不少人印象很深。​​一支第一次站上世界杯舞台的球队，面对身价和经验都远超自己的强队，硬是守住了 90 分钟。很多人看到的是赛场上的冷门，但真正支撑这一刻的，往往不是某一次临场发挥，而是长期训练、反复复盘、一次次修正后的结果。​​顶尖运动员很少只靠“多练”。 每一场比赛后，他们都会回看录像、拆解失误、复盘战术；即便在比赛中，也会利用暂停和中场时间快速调整。 ​​放到我们做项目、搞钱、参与航海、学习 AI、尝试 AI 变现的路上，其实也是一样。 很多时候，真正让人少走弯路的，不只是一个“别人已经成功了”的结果，而是有人愿意把中间那些不那么光鲜的过程也讲出来： ​​项目过程中踩过什么坑？ 哪个判断后来证明是错的？哪些钱其实可以不花？ 哪些动作一开始…",
+      "excerpt": "​你们最近都在看世界杯吗？这段时间，佛得角0:0逼平西班牙的比赛，让不少人印象很深。​​一支第一次站上世界杯舞台的球队，面对身价和经验都远超自己的强队，硬是守住了 90 分钟。很多人看到的是赛场上的冷门，但真正支撑这一刻的，往往不是某一次临场发挥，而是长期训练、反复复盘、一次次修正后的结果。​​顶尖运动员很少只靠“多练”。 每一场比赛后，他们都会回看录像、拆解失误、复盘战术；即便在比赛中，也会利用暂停和中场时间快速调整。 ​​放到我们做项目、搞钱、参与航海、学习 AI、尝试 AI 变现的路上，其实也是一样。 很多…",
+      "links": [],
+      "metrics": "0 101 11 6",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "b40f4aa0b8b2e8",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "余念",
+      "role": "",
+      "relativeTime": "06-15",
+      "publishedAt": "",
+      "title": "大四学生做公众号一年靠变现 6 万+，深耕大学生赛道的我如何通过流量主、商单和私域变现，新人可参考",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "Grok",
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 62,
+      "valueScore": 95,
+      "summary": "大四学生做公众号一年靠变现 6 万+，深耕大学生赛道的我如何通过流量主、商单和私域变现，新人可参考 各位生财圈友大家好，我是余念，今年418刚加入生财的新人",
+      "evidence": "各位生财圈友大家好，我是余念，今年418刚加入生财的新人。 目前大四在读，主要做的项目就是公众号流量主+私域变现，2025年一年通过公众号变现6万块，目前公众号已写出19篇10w爆款，前期出爆款的赛道主要是在大学生成长赛道这一块，后续我会详细说明为什么选这块，要怎么做。 公众号流量主单日变现400+: 2025年3个月公众号接广告收益 单号流量主收益 带学员+分销部分收益 部分10w爆款文章 2026年加入生财后看到了其他圈友分享的贴图号内容，然后开始做贴图号，一个月时间写了2篇10w+贴图爆款，其中有一篇仅用12小时就跑了25万阅读量，连续两天日入200+ 公众号是非常适合新手小白做的第一个项目，上手实操难度低且容易跑通闭环真心建议大家试着做起来！ 感谢@嘻嘻姐对我做公众号以及个人IP的指导 感谢@小武 老…",
+      "excerpt": "各位生财圈友大家好，我是余念，今年418刚加入生财的新人。 目前大四在读，主要做的项目就是公众号流量主+私域变现，2025年一年通过公众号变现6万块，目前公众号已写出19篇10w爆款，前期出爆款的赛道主要是在大学生成长赛道这一块，后续我会详细说明为什么选这块，要怎么做。 公众号流量主单日变现400+: 2025年3个月公众号接广告收益 单号流量主收益 带学员+分销部分收益 部分10w爆款文章 2026年加入生财后看到了其他圈友分享的贴图号内容，然后开始做贴图号，一个月时间写了2篇10w+贴图爆款，其中有一篇仅用1…",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/NLuOwKJLHiBGrok945McHQVMnXg?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/NLuOwKJLHiBGrok945McHQVMnXg?from=from_copylink"
+        }
+      ],
+      "metrics": "37 204 24 57",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "fabe9bafae1f73",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "十六-广州",
+      "role": "",
+      "relativeTime": "06-18",
+      "publishedAt": "",
+      "title": "靠生财520找了老公，又靠生财CP做成贴图号：2个月9000+实战复盘",
+      "url": "https://scys.com/",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "流量获客 / 线索转化",
+      "painPoints": [
+        "获客成本与精准线索",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径"
+      ],
+      "opportunityScore": 38,
+      "valueScore": 87,
+      "summary": "靠生财520找了老公，又靠生财CP做成贴图号：2个月9000+实战复盘 你好，我是十六",
+      "evidence": "你好，我是十六。一个因为生财认识老公，又靠生财CP故事起号的人。目前结果（以下为生财CP故事号的结果）：1.2个月流量主总收益：9000+2.单月最高：5000+3.单日最高：400+4.出过百万阅读贴图5.多篇长文阅读破万这篇文章主要解决5个问题：1.0基础新手公众号到底可以写什么？2.没文笔、没网感，怎么做贴图内容？3.怎么从自己身上找到能爆的内容？4.贴图和长文怎么配合提高收益？5.新手做公众号，有哪些坑千万别踩？全文内容请看：https://ccnemahmrxxq.feishu.cn/wiki/Eqk6wdjwJiV4gD...",
+      "excerpt": "你好，我是十六。一个因为生财认识老公，又靠生财CP故事起号的人。目前结果（以下为生财CP故事号的结果）：1.2个月流量主总收益：9000+2.单月最高：5000+3.单日最高：400+4.出过百万阅读贴图5.多篇长文阅读破万这篇文章主要解决5个问题：1.0基础新手公众号到底可以写什么？2.没文笔、没网感，怎么做贴图内容？3.怎么从自己身上找到能爆的内容？4.贴图和长文怎么配合提高收益？5.新手做公众号，有哪些坑千万别踩？全文内容请看：https://ccnemahmrxxq.feishu.cn/wiki/Eqk6…",
+      "links": [
+        {
+          "href": "https://ccnemahmrxxq.feishu.cn/wiki/Eqk6wdjwJiV4gDkSpWDc425lnBg?from=from_copylink",
+          "text": "https://ccnemahmrxxq.feishu.cn/wiki/Eqk6wdjwJiV4gD..."
+        },
+        {
+          "href": "https://ccnemahmrxxq.feishu.cn/wiki/Eqk6wdjwJiV4gD",
+          "text": "https://ccnemahmrxxq.feishu.cn/wiki/Eqk6wdjwJiV4gD"
+        }
+      ],
+      "metrics": "23 211 67 68",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "194978eda83d5b",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "七天",
+      "role": "",
+      "relativeTime": "06-18",
+      "publishedAt": "",
+      "title": "传术师见面日干货满满，一人公司销转和企业AI服务0到1聊透了",
+      "url": "https://scys.com/",
+      "scene": "内容生产与IP运营",
+      "industry": "企业服务",
+      "tools": [],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径"
+      ],
+      "opportunityScore": 36,
+      "valueScore": 45,
+      "summary": "传术师见面日干货满满，一人公司销转和企业AI服务0到1聊透了 又一次传术师见面日，关起门来的信息量和密度是真大",
+      "evidence": "又一次传术师见面日，关起门来的信息量和密度是真大。@天堂地狱 分享的一人公司的销转和@乐阳 分享的企业AI服务如何0到1，真的聊透了。看大家的收获就知道有多干游戏化机制的设计让很多i 人圈友玩起来了，每个组比拼星星数。最后获奖的是沉浸式小组交流的6人组和00年博士。有一个传术师说：第一次感受到在这个场域被看见的力量。当我们的内容写给彼此的AI看，那线下见面就是我们信任的来源。期待下个月再见👋据说参加的传术师都会回到当地组局交流分享让我们一起蹲个组局",
+      "excerpt": "又一次传术师见面日，关起门来的信息量和密度是真大。@天堂地狱 分享的一人公司的销转和@乐阳 分享的企业AI服务如何0到1，真的聊透了。看大家的收获就知道有多干游戏化机制的设计让很多i 人圈友玩起来了，每个组比拼星星数。最后获奖的是沉浸式小组交流的6人组和00年博士。有一个传术师说：第一次感受到在这个场域被看见的力量。当我们的内容写给彼此的AI看，那线下见面就是我们信任的来源。期待下个月再见👋据说参加的传术师都会回到当地组局交流分享让我们一起蹲个组局",
+      "links": [],
+      "metrics": "1 45 5 5",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    },
+    {
+      "id": "602ed4789fd873",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "订单 / 营收 / 变现 / 月入 / 降本 / 提效 / 求助 / 需求",
+        "group": "daily-feed",
+        "keywords": [
+          "订单",
+          "营收",
+          "变现",
+          "月入",
+          "降本",
+          "提效",
+          "求助",
+          "需求"
+        ],
+        "groups": [
+          "daily-feed",
+          "opportunity"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "亦仁",
+      "role": "星主",
+      "relativeTime": "06-18",
+      "publishedAt": "",
+      "title": "我的思维变化：从万事问AI、用AI到造Agent解决问题",
+      "url": "https://scys.com/",
+      "scene": "AI应用案例",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 30,
+      "valueScore": 35,
+      "summary": "我的思维变化：从万事问AI、用AI到造Agent解决问题 最近思维方式上有一个变化：从之前的万事问 AI，到万事用 AI，到现在万事造 Agent",
+      "evidence": "最近思维方式上有一个变化：从之前的万事问 AI，到万事用 AI，到现在万事造 Agent。用创造 Agent 的方式，来解决工作和生活中遇到的几乎所有问题，力争一次性根本性的解决问题。我先再感受一段时间，给大家分享分享。",
+      "excerpt": "最近思维方式上有一个变化：从之前的万事问 AI，到万事用 AI，到现在万事造 Agent。用创造 Agent 的方式，来解决工作和生活中遇到的几乎所有问题，力争一次性根本性的解决问题。我先再感受一段时间，给大家分享分享。",
+      "links": [],
+      "metrics": "6 200 23 11",
+      "matchedKeywords": [
+        "订单",
+        "营收",
+        "变现",
+        "月入",
+        "降本",
+        "提效",
+        "求助",
+        "需求"
+      ],
+      "duplicateCount": 9
+    }
+  ]
+}

@@ -137,7 +137,7 @@ Anthropic通过Bloomberg指控，与阿里巴巴相关的运营方利用近25，
 - importance_type: important_technical_trend
 - importance_score: 5
 - importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
-- supporting_signals: 
+- supporting_signals:
 - novelty: 3
 - evidence_strength: 2
 - case_richness: 4

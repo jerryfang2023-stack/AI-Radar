@@ -96,4 +96,3 @@
 - pool_file: 01-SiteV2/content/02-pool/2026-06-25-pool-candidates.md
 - monitor_log_file: agent-workflow/reports/2026-06-25-guanlan-daily-monitor-log.md
 - config_file: 01-SiteV2/content/11-databases/monitor-quality-gate-v2.json
-

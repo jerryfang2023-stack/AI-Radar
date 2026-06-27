@@ -239,7 +239,7 @@ NSW builders face delay on indemnity insurance rules
 - business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 定价 / 计费变化, 融资 / 投资
 - affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
 - numbers: 2028, 33%, 0.762, 2026, 24, 2025, 4
-- quotes: . Prasanna Arikala, CTO and Head of Products at Kore.ai, commented, 
+- quotes: . Prasanna Arikala, CTO and Head of Products at Kore.ai, commented,
 
 ## evidence_seed
 

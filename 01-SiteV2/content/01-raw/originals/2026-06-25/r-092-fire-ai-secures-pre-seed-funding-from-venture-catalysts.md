@@ -99,7 +99,7 @@ copyright_note: local research archive only
 ## key_excerpts
 
 1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
-   # Fire AI Secures Pre-Seed Funding from Venture Catalysts. Jul 16, 2025 | By Yan li. Fire AI, a startup that helps businesses with automation and data analysis through conversation-based tools, has raised money in a pre-seed funding round. The round was led by Venture Catalysts and included support from key investors like Gaurav Khatri (Co-founder and CEO of Noise) and Amit Kumar Singh (former MD of Central Warehousing Corporation). Founded by Vipul Prakash, a former product and growth leader at Zomato, Delhivery, 
+   # Fire AI Secures Pre-Seed Funding from Venture Catalysts. Jul 16, 2025 | By Yan li. Fire AI, a startup that helps businesses with automation and data analysis through conversation-based tools, has raised money in a pre-seed funding round. The round was led by Venture Catalysts and included support from key investors like Gaurav Khatri (Co-founder and CEO of Noise) and Amit Kumar Singh (former MD of Central Warehousing Corporation). Founded by Vipul Prakash, a former product and growth leader at Zomato, Delhivery,
 
 2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=medium
    # Fire AI Secures Pre-Seed Funding from Venture Catalysts.

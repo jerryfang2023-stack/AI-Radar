@@ -576,7 +576,7 @@ Share
 - business_actions: 发布 / 推出, 部署 / 上线, 定价 / 计费变化
 - affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
 - numbers: 2026, 5, 03, 7, 01, 1, 2, 3
-- quotes: Services / Industry / ). * [Pricing](https://www.spaceo.ai/blog/agentic-ai-frameworks#  / ). LangGraph: Graph-Based Workflow Orchestration](https://www.spaceo.ai/blog/agentic-ai-frameworks#1-langgraph-graphbased-workflow-orchestration  / 2. CrewAI: Rapid Prototyping with Role-Based Agents](https://www.spaceo.ai/blog/agentic-ai-frameworks#3-crewai-rapid-prototyping-with-rolebased-agents 
+- quotes: Services / Industry / ). * [Pricing](https://www.spaceo.ai/blog/agentic-ai-frameworks#  / ). LangGraph: Graph-Based Workflow Orchestration](https://www.spaceo.ai/blog/agentic-ai-frameworks#1-langgraph-graphbased-workflow-orchestration  / 2. CrewAI: Rapid Prototyping with Role-Based Agents](https://www.spaceo.ai/blog/agentic-ai-frameworks#3-crewai-rapid-prototyping-with-rolebased-agents
 
 ## evidence_seed
 
