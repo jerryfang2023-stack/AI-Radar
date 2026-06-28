@@ -1,4 +1,4 @@
-﻿---
+---
 id: SIG-20260626-A08
 type: signal_card
 signal_type: product_service
