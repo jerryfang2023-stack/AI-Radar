@@ -1,6 +1,6 @@
 # Follow Builders Data Gate
 
-- generated_at: 2026-06-28T01:32:36.809Z
+- generated_at: 2026-06-28T05:45:57.671Z
 - date: 2026-06-28
 - status: passed
 - data_file: 01-SiteV2/site/data/follow-builders-daily.json
