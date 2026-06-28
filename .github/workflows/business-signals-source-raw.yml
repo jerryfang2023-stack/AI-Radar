@@ -23,6 +23,21 @@ on:
         required: false
         default: true
         type: boolean
+      search_limit:
+        description: "Keyword source search result budget. Default matches production source-artifact collection."
+        required: false
+        default: "200"
+        type: string
+      search_path_query_limit:
+        description: "Keyword search query count per path. Default matches production source-artifact collection."
+        required: false
+        default: "5"
+        type: string
+      gdelt_query_limit:
+        description: "GDELT source query count. Default matches production source-artifact collection."
+        required: false
+        default: "12"
+        type: string
 
 permissions:
   contents: read
@@ -88,6 +103,9 @@ jobs:
           else
             sources=("$requested")
           fi
+          search_limit="${{ github.event.inputs.search_limit || '200' }}"
+          search_path_query_limit="${{ github.event.inputs.search_path_query_limit || '5' }}"
+          gdelt_query_limit="${{ github.event.inputs.gdelt_query_limit || '12' }}"
 
           failed=0
           pids=()
@@ -99,9 +117,9 @@ jobs:
               node agent-workflow/tools/run-guanlan-daily-monitor.mjs \
               --date="${RUN_DATE}" \
               --source-only="$source" \
-              --search-limit=120 \
-              --search-path-query-limit=3 \
-              --gdelt-query-limit=8 \
+              --search-limit="$search_limit" \
+              --search-path-query-limit="$search_path_query_limit" \
+              --gdelt-query-limit="$gdelt_query_limit" \
               --hn-limit=0 \
                 --fetch-timeout-ms=20000
             } >"$log_file" 2>&1 &
