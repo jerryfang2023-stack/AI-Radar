@@ -1,42 +1,21 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-27T08:05:20.178Z",
-  "date": "2026-06-27",
-  "action": "Hermes feedback loop automation",
-  "action_status": "current",
+  "generated_at": "2026-06-28T03:43:15.942Z",
+  "date": "2026-06-28",
+  "action": "Repair Business Signals Raw source-artifact fallback",
+  "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "codex",
+  "trigger": "manual",
   "status": "success",
-  "summary": "Added structured Business Signals diagnosis to daily supervision and early handoff so healthy data, translation-title, Top10 contract, publication, and local-sync states are separated before any rerun.",
-  "contexts": [
-    "agent-workflow/tools/write-daily-supervision-report.mjs",
-    "agent-workflow/tools/run-hermes-three-lane-early-handoff.mjs",
-    "agent-workflow/skills/guanlan-business-signals-monitor/SKILL.md"
-  ],
-  "changed_files": [
-    "agent-workflow/tools/write-daily-supervision-report.mjs",
-    "agent-workflow/tools/run-hermes-three-lane-early-handoff.mjs"
-  ],
-  "outputs": [
-    "agent-workflow/reports/2026-06-27-daily-supervision-report.json",
-    "agent-workflow/reports/2026-06-27-hermes-three-lane-early-handoff.json"
-  ],
-  "checks": [
-    "node --check write-daily-supervision-report",
-    "node --check run-hermes-three-lane-early-handoff",
-    "npm run supervise:daily -- --date=2026-06-27 --github=false --scheduled-task=false",
-    "npm run hermes:early-handoff -- --date=2026-06-27 --dry-run=true --handoff-stage=09:45"
-  ],
+  "summary": "Allowed source-artifact monitor runs to supplement live search when aggregate Raw remains below 150 or coverage gaps remain; validation passed 2026-06-28 monitor QC with raw_count=150.",
+  "contexts": [],
+  "changed_files": [],
+  "outputs": [],
+  "checks": [],
   "issues": [],
   "risks": [],
-  "lessons": [
-    "Business Signals supervision must use publicTop10Count rather than frontstageSelection selectedCount as the public Top10 contract.",
-    "Hermes inbox category should come from structured Business diagnosis before regex fallback."
-  ],
-  "reusable_rules": [
-    "If active-date Cards exist but public Top10 is blocked by title translations or frontstage build",
-    "Hermes must hand off targeted Codex repair instead of dispatching another full Business chain."
-  ],
+  "lessons": [],
+  "reusable_rules": [],
   "retired_flags": [],
   "notes": []
 }

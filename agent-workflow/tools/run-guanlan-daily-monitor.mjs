@@ -4888,7 +4888,8 @@ async function main() {
     || gdeltQueryLimit > 0
     || normalizedItems.length < rawMinTarget
     || coverageGaps.length;
-  if (!useSourceArtifacts && shouldRunExternalSearch) {
+  const sourceArtifactsNeedSupplement = useSourceArtifacts && (normalizedItems.length < rawMinTarget || coverageGaps.length);
+  if ((!useSourceArtifacts && shouldRunExternalSearch) || sourceArtifactsNeedSupplement) {
     searchActivated = true;
     [keywordSearch, gdelt, rss] = await Promise.all([
       collectKeywordSearch(),
