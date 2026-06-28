@@ -1,0 +1,243 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-003
+title: "Runlayer Raises $30M Series A to Help Enterprises Go All In On AI"
+original_url: "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html"
+canonical_url: "https://prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_startups"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-28T04:05:27.901Z
+language: mixed
+full_text_hash: 6fd7da0cbf7f6306
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-28/r-003-runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-28/r-003-runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6503,"paragraph_count":18,"sentence_count":44,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 6503
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6fd7da0cbf7f6306","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 6e88caf119c4aef2
+content_hash: 6fd7da0cbf7f6306
+semantic_hash: e34d368228d6fb06
+duplicate_of: ""
+first_seen_at: "2026-06-28T04:05:27.901Z"
+last_seen_at: 2026-06-28T04:05:27.901Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Anthropic","Google","Meta","Nvidia","Salesforce","Cursor"],"products":["agents","Cursor","agent","MCP"],"people":[],"industries":["企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟","融资 / 投资"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["$30M","24","2026","$30 million","$42 million","500","5","20"],"quotes":["Every employee will delegate their work to swarms of agents,"," said Jake Storm, General Partner at Felicis.\n"," said Jon Chu, the Partner at Khosla Ventures that led both their seed and A round investments into Runlayer.\n"," said Vinod Khosla. ","Once it became clear Runlayer could become the agentic interaction fabric of the future, Vinod and I wanted to buy every available dollar of the round,"]}
+evidence_seed: {"company_actions":["NEW YORK, June 24, 2026 /PRNewswire/ -- Runlayer, the platform helping companies become AI-native, today announced a $30 million Series A led by Felicis, with participation from Khosla Ventures. This brings Runlayer's total capital raised to $42 million. ... Runlayer gives ... employee a golden path... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original","Felicis and Khosla Ventures double down to help Runlayer bring AI enablement and governance to the entire enterprise workforce NEW YORK , June 24, 2026 /PRNewswire/ -- Runlayer , the platform helping companies become AI-native, today announced a $30 million Series A led by Felicis, with participation from Khosla Ventures.","This brings Runlayer's total capital raised to $42 million."],"case_details":["The platform's customers include Fortune 500s and high-growth companies such as Instacart, Gusto, Decagon, Opendoor, dbt Labs, AngelList, Lemonade, and more."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"funding","text":"NEW YORK, June 24, 2026 /PRNewswire/ -- Runlayer, the platform helping companies become AI-native, today announced a $30 million Series A led by Felicis, with participation from Khosla Ventures. This brings Runlayer's total capital raised to $42 million. ... Runlayer gives ... employee a golden path... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Felicis and Khosla Ventures double down to help Runlayer bring AI enablement and governance to the entire enterprise workforce NEW YORK , June 24, 2026 /PRNewswire/ -- Runlayer , the platform helping companies become AI-native, today announced a $30 million Series A led by Felicis, with participation from Khosla Ventures.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"This brings Runlayer's total capital raised to $42 million.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Runlayer gives every employee a golden path to delegating real work to agents, with AI enablement and control built into one platform.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The platform's customers include Fortune 500s and high-growth companies such as Instacart, Gusto, Decagon, Opendoor, dbt Labs, AngelList, Lemonade, and more.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Runlayer has attracted engineers and operators from NVIDIA, Anthropic, Cursor, Databricks, Snowflake, Uber, Meta, Google, Block, Palo Alto Networks, Glean, Vercel, Applied Intuition, and Zapier.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: capital-market-signal
+keyword_group: capital-market-signal
+copyright_note: local research archive only
+---
+
+# Runlayer Raises $30M Series A to Help Enterprises Go All In On AI
+
+## clean_text
+
+Felicis and Khosla Ventures double down to help Runlayer bring AI enablement and governance to the entire enterprise workforce
+NEW YORK , June 24, 2026 /PRNewswire/ -- Runlayer , the platform helping companies become AI-native, today announced a $30 million Series A led by Felicis, with participation from Khosla Ventures. This brings Runlayer's total capital raised to $42 million.
+Runlayer gives every employee a golden path to delegating real work to agents, with AI enablement and control built into one platform. The platform's customers include Fortune 500s and high-growth companies such as Instacart, Gusto, Decagon, Opendoor, dbt Labs, AngelList, Lemonade, and more. Runlayer has attracted engineers and operators from NVIDIA, Anthropic, Cursor, Databricks, Snowflake, Uber, Meta, Google, Block, Palo Alto Networks, Glean, Vercel, Applied Intuition, and Zapier.
+In the future, people will go from asking AI questions, to delegating tasks, to directing agents, to supervising self-directed agents on whole missions. The most effective way for enterprises to be truly AI-native is for every employee's tens-to-hundreds of agents to be governed by an interoperability layer—with security, observability, and cost control built in.
+Today's AI tools still force enterprises into an impossible tradeoff between adoption and control. Lock AI down and employees will use whatever helps them move faster anyway. Open the gates without control and security teams lose the visibility they need to move confidently. The companies that succeed are the ones that make using AI both safe and cost-effective for every employee.
+Runlayer gives companies a golden path: a sanctioned way for employees to use and direct AI agents across their everyday work. When the right way is also the easy way, it becomes the default.
+With Runlayer:
+Teams can use any AI client, agent, MCP, skill, or plugin, or create agents on demand by describing the work they want done. Runlayer gives them a sanctioned golden path with the right tools, permissions, and company context already connected, so agents can work across systems like CRM, Atlassian, Notion, meeting notes, and the data warehouse.
+AI transformation teams get a single control plane and interoperability layer across the enterprise AI stack. Runlayer supports the 5–20 AI clients the average enterprise uses, including IDEs, chat clients, vertical AI apps, independent agents, and platforms like Salesforce Agentforce. Teams get one managed home for all agentic work in the enterprise, with identity, permissions, policy enforcement, audit logs, and real-time visibility tied to every action.
+Security and IT teams use the same control plane to secure AI activity and uncover shadow AI. Runlayer combines security, observability, and cost control in one layer, with control over agent, token , and model consumption across the platform. Static and dynamic security models give full-session observability into every call, catching prompt injection, tool poisoning, output manipulation, exfiltration, and intent drift. Runlayer Watch identifies shadow MCPs, skills, plugins, clients, and unmanaged agents, routing employees toward approved tooling instead of relying on blanket bans.
+Runlayer is led by Andrew Berman, a three-time founder who was most recently Director of AI at Zapier, working closely in partnership with OpenAI and Anthropic.
+"Every employee will delegate their work to swarms of agents," said Andrew Berman, co-founder and CEO of Runlayer. "Not as a novelty, and not as a side tool, but as a core part of how work gets done. AI-maximalist companies already understand the future is not a handful of power users experimenting with agents, but entire workforces operating alongside them. The challenge is that most companies still do not have a secure, scalable way to make that possible. That is the problem Runlayer exists to solve."
+"Runlayer is solving one of the most important enterprise problems of this moment: how to adopt AI at scale without losing control. This is the right team, in the right market, at the right time, which is why Felicis pre-empted this round. In fact, you'd be hard pressed to find a team that more deeply understands the entire ecosystem. When we introduced Runlayer to AI teams and CISOs in our network, the response was immediate and overwhelming; this is exactly the infrastructure enterprises have been waiting for. We're proud to have led the series A and to double down on Runlayer as the golden path for every workforce going AI-native," said Jake Storm, General Partner at Felicis.
+"Runlayer is one of those rare companies where the consequences of success are so large that almost nothing else matters. The team has found a powerful wedge by giving enterprises the solution they need to become AI-enabled. Their execution has been exceptional and adoption is accelerating because they are solving a problem no one else really delivers end-to-end, making them the first solution that makes it easy to become AI native versus trying to stitch together multiple point solutions," said Jon Chu, the Partner at Khosla Ventures that led both their seed and A round investments into Runlayer.
+"What makes Runlayer especially exciting is that this is not just a point solution for today's AI adoption," said Vinod Khosla. "As agents become ubiquitous, every employee will own tens or even hundreds of agents, and enterprises will need a new security fabric that governs how those agents access systems, handle data, and share information. Runlayer has the potential to become that foundational layer for the AI-enabled enterprise that every company must inevitably become to stay relevant."
+"Once it became clear Runlayer could become the agentic interaction fabric of the future, Vinod and I wanted to buy every available dollar of the round," Chu added.
+The funding will go toward expanding Runlayer's engineering and go-to-market teams. If you want to help build the infrastructure that will fundamentally change how every person thinks, builds, creates, and operates at work, visit runlayer.com/careers .
+About Runlayer
+Runlayer is the way to become an AI-native company. It gives every employee a golden path to delegating real work to agents, with AI enablement and control built into one platform. Customers include Instacart, Gusto, Decagon, Opendoor, dbt Labs, AngelList, and Lemonade. Learn more at runlayer.com .
+SOURCE Runlayer
+21 %
+more press release views with
+Request a Demo
+&times;
+Modal title
+
+## full_text
+
+Felicis and Khosla Ventures double down to help Runlayer bring AI enablement and governance to the entire enterprise workforce
+NEW YORK , June 24, 2026 /PRNewswire/ -- Runlayer , the platform helping companies become AI-native, today announced a $30 million Series A led by Felicis, with participation from Khosla Ventures. This brings Runlayer's total capital raised to $42 million.
+Runlayer gives every employee a golden path to delegating real work to agents, with AI enablement and control built into one platform. The platform's customers include Fortune 500s and high-growth companies such as Instacart, Gusto, Decagon, Opendoor, dbt Labs, AngelList, Lemonade, and more. Runlayer has attracted engineers and operators from NVIDIA, Anthropic, Cursor, Databricks, Snowflake, Uber, Meta, Google, Block, Palo Alto Networks, Glean, Vercel, Applied Intuition, and Zapier.
+In the future, people will go from asking AI questions, to delegating tasks, to directing agents, to supervising self-directed agents on whole missions. The most effective way for enterprises to be truly AI-native is for every employee's tens-to-hundreds of agents to be governed by an interoperability layer—with security, observability, and cost control built in.
+Today's AI tools still force enterprises into an impossible tradeoff between adoption and control. Lock AI down and employees will use whatever helps them move faster anyway. Open the gates without control and security teams lose the visibility they need to move confidently. The companies that succeed are the ones that make using AI both safe and cost-effective for every employee.
+Runlayer gives companies a golden path: a sanctioned way for employees to use and direct AI agents across their everyday work. When the right way is also the easy way, it becomes the default.
+With Runlayer:
+Teams can use any AI client, agent, MCP, skill, or plugin, or create agents on demand by describing the work they want done. Runlayer gives them a sanctioned golden path with the right tools, permissions, and company context already connected, so agents can work across systems like CRM, Atlassian, Notion, meeting notes, and the data warehouse.
+AI transformation teams get a single control plane and interoperability layer across the enterprise AI stack. Runlayer supports the 5–20 AI clients the average enterprise uses, including IDEs, chat clients, vertical AI apps, independent agents, and platforms like Salesforce Agentforce. Teams get one managed home for all agentic work in the enterprise, with identity, permissions, policy enforcement, audit logs, and real-time visibility tied to every action.
+Security and IT teams use the same control plane to secure AI activity and uncover shadow AI. Runlayer combines security, observability, and cost control in one layer, with control over agent, token , and model consumption across the platform. Static and dynamic security models give full-session observability into every call, catching prompt injection, tool poisoning, output manipulation, exfiltration, and intent drift. Runlayer Watch identifies shadow MCPs, skills, plugins, clients, and unmanaged agents, routing employees toward approved tooling instead of relying on blanket bans.
+Runlayer is led by Andrew Berman, a three-time founder who was most recently Director of AI at Zapier, working closely in partnership with OpenAI and Anthropic.
+"Every employee will delegate their work to swarms of agents," said Andrew Berman, co-founder and CEO of Runlayer. "Not as a novelty, and not as a side tool, but as a core part of how work gets done. AI-maximalist companies already understand the future is not a handful of power users experimenting with agents, but entire workforces operating alongside them. The challenge is that most companies still do not have a secure, scalable way to make that possible. That is the problem Runlayer exists to solve."
+"Runlayer is solving one of the most important enterprise problems of this moment: how to adopt AI at scale without losing control. This is the right team, in the right market, at the right time, which is why Felicis pre-empted this round. In fact, you'd be hard pressed to find a team that more deeply understands the entire ecosystem. When we introduced Runlayer to AI teams and CISOs in our network, the response was immediate and overwhelming; this is exactly the infrastructure enterprises have been waiting for. We're proud to have led the series A and to double down on Runlayer as the golden path for every workforce going AI-native," said Jake Storm, General Partner at Felicis.
+"Runlayer is one of those rare companies where the consequences of success are so large that almost nothing else matters. The team has found a powerful wedge by giving enterprises the solution they need to become AI-enabled. Their execution has been exceptional and adoption is accelerating because they are solving a problem no one else really delivers end-to-end, making them the first solution that makes it easy to become AI native versus trying to stitch together multiple point solutions," said Jon Chu, the Partner at Khosla Ventures that led both their seed and A round investments into Runlayer.
+"What makes Runlayer especially exciting is that this is not just a point solution for today's AI adoption," said Vinod Khosla. "As agents become ubiquitous, every employee will own tens or even hundreds of agents, and enterprises will need a new security fabric that governs how those agents access systems, handle data, and share information. Runlayer has the potential to become that foundational layer for the AI-enabled enterprise that every company must inevitably become to stay relevant."
+"Once it became clear Runlayer could become the agentic interaction fabric of the future, Vinod and I wanted to buy every available dollar of the round," Chu added.
+The funding will go toward expanding Runlayer's engineering and go-to-market teams. If you want to help build the infrastructure that will fundamentally change how every person thinks, builds, creates, and operates at work, visit runlayer.com/careers .
+About Runlayer
+Runlayer is the way to become an AI-native company. It gives every employee a golden path to delegating real work to agents, with AI enablement and control built into one platform. Customers include Instacart, Gusto, Decagon, Opendoor, dbt Labs, AngelList, and Lemonade. Learn more at runlayer.com .
+SOURCE Runlayer
+21 %
+more press release views with
+Request a Demo
+&times;
+Modal title
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6503,"paragraph_count":18,"sentence_count":44,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   NEW YORK, June 24, 2026 /PRNewswire/ -- Runlayer, the platform helping companies become AI-native, today announced a $30 million Series A led by Felicis, with participation from Khosla Ventures. This brings Runlayer's total capital raised to $42 million. ... Runlayer gives ... employee a golden path... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original
+
+2. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   Felicis and Khosla Ventures double down to help Runlayer bring AI enablement and governance to the entire enterprise workforce NEW YORK , June 24, 2026 /PRNewswire/ -- Runlayer , the platform helping companies become AI-native, today announced a $30 million Series A led by Felicis, with participation from Khosla Ventures.
+
+3. **funding**｜supports=daily_observation, heatmap, trend｜importance=high｜confidence=high
+   This brings Runlayer's total capital raised to $42 million.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Runlayer gives every employee a golden path to delegating real work to agents, with AI enablement and control built into one platform.
+
+5. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   The platform's customers include Fortune 500s and high-growth companies such as Instacart, Gusto, Decagon, Opendoor, dbt Labs, AngelList, Lemonade, and more.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Runlayer has attracted engineers and operators from NVIDIA, Anthropic, Cursor, Databricks, Snowflake, Uber, Meta, Google, Block, Palo Alto Networks, Glean, Vercel, Applied Intuition, and Zapier.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Anthropic, Google, Meta, Nvidia, Salesforce, Cursor
+- products: agents, Cursor, agent, MCP
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟, 融资 / 投资
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: $30M, 24, 2026, $30 million, $42 million, 500, 5, 20
+- quotes: Every employee will delegate their work to swarms of agents, /  said Jake Storm, General Partner at Felicis.
+ /  said Jon Chu, the Partner at Khosla Ventures that led both their seed and A round investments into Runlayer.
+ /  said Vinod Khosla.  / Once it became clear Runlayer could become the agentic interaction fabric of the future, Vinod and I wanted to buy every available dollar of the round,
+
+## evidence_seed
+
+- company_actions: NEW YORK, June 24, 2026 /PRNewswire/ -- Runlayer, the platform helping companies become AI-native, today announced a $30 million Series A led by Felicis, with participation from Khosla Ventures. This brings Runlayer's total capital raised to $42 million. ... Runlayer gives ... employee a golden path... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original / Felicis and Khosla Ventures double down to help Runlayer bring AI enablement and governance to the entire enterprise workforce NEW YORK , June 24, 2026 /PRNewswire/ -- Runlayer , the platform helping companies become AI-native, today announced a $30 million Series A led by Felicis, with participation from Khosla Ventures. / This brings Runlayer's total capital raised to $42 million.
+- case_details: The platform's customers include Fortune 500s and high-growth companies such as Instacart, Gusto, Decagon, Opendoor, dbt Labs, AngelList, Lemonade, and more.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+NEW YORK, June 24, 2026 /PRNewswire/ -- Runlayer, the platform helping companies become AI-native, today announced a $30 million Series A led by Felicis, with participation from Khosla Ventures. This brings Runlayer's total capital raised to $42 million. ... Runlayer gives ... employee a golden path... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

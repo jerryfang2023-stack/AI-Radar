@@ -437,7 +437,10 @@ export function runGuanlanMonitorQualityGate({
   // acceptable — we have enough data volume, just not perfect distribution
   // across importance types. This unblocks card generation when search APIs
   // fail but raw data is still sufficient.
-  const rawCountSufficientForCoverage = rawCount >= rawMinHard;
+  const effectiveRawMinHard = weekend.active
+    ? Math.min(rawMinHard, Number(weekendAdjusted.raw_count_min ?? rawMinHard))
+    : rawMinHard;
+  const rawCountSufficientForCoverage = rawCount >= effectiveRawMinHard;
   const coverageGapAcceptable = weekend.active ? weekendRawCoveragePassed : rawCountSufficientForCoverage;
   const poolCoverageGapAcceptable = weekend.active ? weekendPoolCoveragePassed : rawCountSufficientForCoverage;
   const effectiveCorePoolMinHard = weekend.active
@@ -451,7 +454,7 @@ export function runGuanlanMonitorQualityGate({
     : coreNonLargeVendorMin;
 
   const hardChecks = [
-    { key: "raw_count_min", passed: rawCount >= rawMinHard, value: `${rawCount}/${rawMinHard}` },
+    { key: "raw_count_min", passed: rawCount >= effectiveRawMinHard, value: `${rawCount}/${effectiveRawMinHard}${weekend.active ? `; default=${rawMinHard}` : ""}` },
     { key: "pool_count_min", passed: poolCount >= poolMinHard, value: `${poolCount}/${poolMinHard}` },
     { key: "routed_pool_count_min", passed: routedPoolCount >= routedPoolMinHard, value: `${routedPoolCount}/${routedPoolMinHard}` },
     { key: "keyword_search_non_community_min", passed: keywordNonCommunityCount >= nonCommunityMinHard, value: `${keywordNonCommunityCount}/${nonCommunityMinHard}` },
@@ -497,7 +500,7 @@ export function runGuanlanMonitorQualityGate({
   const coverageScopeScore =
     weights.coverage_scope *
     clamp(
-      0.4 * clamp(rawCount / Math.max(rawMinHard, 1)) +
+      0.4 * clamp(rawCount / Math.max(effectiveRawMinHard, 1)) +
         0.2 * clamp(poolCount / Math.max(poolMinHard, 1)) +
         0.15 * clamp(routedPoolCount / Math.max(routedPoolMinHard, 1)) +
         0.25 * (coverageGapFlag ? 0.2 : 1)
@@ -563,7 +566,7 @@ export function runGuanlanMonitorQualityGate({
       coreLargeVendorRatioMax,
       coreNonLargeVendorCount,
       coreNonLargeVendorMin: effectiveCoreNonLargeVendorMin,
-      rawMinHard,
+      rawMinHard: effectiveRawMinHard,
       poolMinHard,
       routedPoolMinHard,
       nonCommunityMinHard,

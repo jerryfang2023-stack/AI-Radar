@@ -1,0 +1,297 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-060
+title: "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks"
+original_url: "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/"
+canonical_url: "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks"
+source_name: "GitHub Blog AI"
+source_type: developer
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-28T04:05:28.243Z
+language: mixed
+full_text_hash: 4edb1ea49f29a132
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-28/r-060-evaluating-performance-and-efficiency-of-the-github-copilot-agentic-ha.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-28/r-060-evaluating-performance-and-efficiency-of-the-github-copilot-agentic-ha.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":9116,"paragraph_count":41,"sentence_count":62,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 9116
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4edb1ea49f29a132","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 2e0b2f76a5b7e197
+content_hash: 4edb1ea49f29a132
+semantic_hash: 4dad7862316ccb9c
+duplicate_of: ""
+first_seen_at: "2026-06-28T04:05:28.243Z"
+last_seen_at: 2026-06-28T04:05:28.243Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["GitHub Blog AI","OpenAI","Anthropic","Microsoft","GitHub"],"products":["Copilot","MCP","Claude","agents","agent","Agent","Codex","Gemini","mcp"],"people":[],"industries":["医疗","开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理"],"business_actions":[],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["20 m","25","2026","7 m","4.6","4.7","5.4","5.5"],"quotes":[]}
+evidence_seed: {"company_actions":["Shibani Basava & Carlos Castro June 25, 2026 7 minutes Share: While the model provides the raw intelligence, the harness shapes how effectively that intelligence is applied.","Improve the harness, and every surface benefits."],"case_details":["Explore how the GitHub Copilot agentic harness delivers strong results across multiple benchmarks and leading token efficiency, while maintaining flexibility to choose among more than 20 models. The post Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks appeared first on The GitHub Blog. ]]>","The GitHub Copilot agentic harness is a single shared component of the GitHub Copilot SDK , which powers the GitHub Copilot CLI , GitHub Copilot app , and Copilot code review , along with a wide variety of experiences across GitHub and Microsoft.","The GitHub Copilot agentic harness powers GitHub Copilot experiences."],"workflow_changes":["The tools, context, and workflow are orchestrated by the harness."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"Explore how the GitHub Copilot agentic harness delivers strong results across multiple benchmarks and leading token efficiency, while maintaining flexibility to choose among more than 20 models. The post Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks appeared first on The GitHub Blog. ]]>","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Shibani Basava & Carlos Castro June 25, 2026 7 minutes Share: While the model provides the raw intelligence, the harness shapes how effectively that intelligence is applied.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"The GitHub Copilot agentic harness is a single shared component of the GitHub Copilot SDK , which powers the GitHub Copilot CLI , GitHub Copilot app , and Copilot code review , along with a wide variety of experiences across GitHub and Microsoft.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Improve the harness, and every surface benefits.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"case_detail","text":"The GitHub Copilot agentic harness powers GitHub Copilot experiences.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The tools, context, and workflow are orchestrated by the harness.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks
+
+## clean_text
+
+Shibani Basava & Carlos Castro
+June 25, 2026
+7 minutes
+Share:
+While the model provides the raw intelligence, the harness shapes how effectively that intelligence is applied. The GitHub Copilot agentic harness is a single shared component of the GitHub Copilot SDK , which powers the GitHub Copilot CLI , GitHub Copilot app , and Copilot code review , along with a wide variety of experiences across GitHub and Microsoft. Improve the harness, and every surface benefits.
+The GitHub Copilot agentic harness powers GitHub Copilot experiences.
+The tools, context, and workflow are orchestrated by the harness. A harness should be fast, token-efficient, and predictable for developers. That&rsquo;s what we designed GitHub Copilot&rsquo;s agentic harness to do.
+In this post, we&rsquo;ll present data showing the efficiency and performance of the GitHub Copilot agentic harness across a wide range of agentic software engineering tasks.
+How we iterate with benchmarks
+We continuously evaluate the capability and efficiency of the GitHub Copilot agentic harness through a combination of public and internally developed benchmarks. Our public benchmarks include industry standards, while several internal benchmarks are derived from large codebases inside GitHub and Microsoft. We complement this with real-world metrics and online experiments to ensure we understand the harness&rsquo;s performance in controlled environments and its practical impact on agentic problem solving and task completion.
+We control as many variables as possible to evaluate the performance of GitHub Copilot&rsquo;s harness compared to the model provider&rsquo;s harness: use the same model , the same benchmark task , normalized on context window, reasoning efforts, tool selection, and MCP servers.
+Below we report our latest results for a subset of the benchmarks we track, across four leading models: Claude Sonnet 4.6 , Claude Opus 4.7 , GPT‑5.4 , and GPT‑5.5 :
+Benchmark Domain Purpose
+SWE-bench Verified 500 human-validated bug-fix tasks from open-source Python repositories Established industry-standard benchmark for coding agents
+SWE-bench Pro More difficult, multi-step engineering tasks requiring deeper reasoning and broader code changes Better reflects complex, real-world software engineering work
+SkillsBench How effectively an agent uses skills to solve tasks Evaluates extensibility and skill use and triggering capabilities
+TerminalBench Agent performance on terminal-based tasks Measures effectiveness in command-line workflows used by developers
+Win-Hill Internal benchmark for tasks running inside Windows containers Validates that performance generalizes across operating systems and environments
+Throughout, we compare GitHub Copilot CLI against the model-vendor harnesses that ship those models natively: Claude Code for Sonnet 4.6 and Opus 4.7, and Codex CLI for GPT‑5.4 and GPT‑5.5.
+Token efficiency
+Holding the model and task fixed, across multiple benchmark results, the GitHub Copilot harness achieves task completion rates on par with other model-vendor harnesses, while showing lower token consumption across most configurations.
+Token efficiency: GitHub Copilot CLI vs. other model-vendor harnesses
+Task resolution
+Token efficiency only matters if the work actually gets done.
+Task resolution rates for the GitHub Copilot agentic harness across these benchmarks are on-par with model-vendor harnesses when used with a fixed model and benchmark task. This ensures that the full potential of the underlying model is available, along with multi-model flexibility, token efficiency, and memory and context capabilities.
+Task resolution: GitHub Copilot CLI vs. the model-vendor harnesses
+These results reflect effective parity, since the differences in either direction are within the variance due to the stochastic nature of the models, making the cross-harness performance on-par.
+TerminalBench: Token efficiency, task completion, and variance
+To continuously improve the GitHub Copilot agentic harness on task completion and token efficiency, we regularly perform thorough analyses across benchmarks. Below is an example of variance analysis on TerminalBench 2.0, which not only highlights GitHub Copilot&rsquo;s strength on task completion and token efficiency, but also shows the run-to-run variance intrinsic to this kind of benchmark.
+Resolution rate vs. cost per task. Up and to the left is better: solve more, spend less.
+Every marker is one agent-and-model configuration on TerminalBench 2.0, with resolution rate on the vertical axis and dollar cost per task on the horizontal axis. The shaded ellipse around each point shows the &plusmn;1&sigma; run-to-run spread, displaying how much each configuration varies between runs.
+Three things stand out:
+GitHub Copilot&rsquo;s agentic harness is on par with or ahead of other agents on task completion and cost per task across the configurations we evaluated . Purple (Copilot) markers and their same-model competitors sit within overlapping ellipses on both axes for nearly every model&mdash;the differences are inside run-to-run variance. Copilot is never below a competitor on completion or to the right on cost.
+Run-to-run variability . We ran each agent-model combination at least five times. The ellipse marks the 1&sigma; spread of those runs; a tighter ellipse in the chart means more reproducible results, while a wider one shows results swinging further from run to run on both cost and task completion.
+The benefit of GitHub Copilot&rsquo;s model choice: The chart shows a real trade-off: GPT models (left) deliver the best value: strong resolution at the lowest cost. Claude Opus (upper right) reaches the highest resolution at a premium. GitHub Copilot puts both on the table, so you can pick efficiency or peak quality per task.
+One harness, many models
+The GitHub Copilot agentic harness supports 20+ frontier models across the GPT, Claude, Gemini, and MAI families, plus bring your own key for open‑source and local models. You can choose the right model for the capability and cost profile of each task, or let Auto model selection choose for you, balancing task intent and model health to optimize token efficiency.
+A multi‑model architecture also unlocks harness‑level capabilities a model-vendor harness simply can&rsquo;t offer. Rubber Duck , for example, uses cross‑model‑family critique, where one model reviews another&rsquo;s work to improve outcomes beyond what any single model produces alone.
+Conclusion
+Benchmarks are just one signal among several. We are constantly working to improve quality across benchmarks, real-world usage metrics, and online experiments, while pushing to efficiently make the most out of every token.
+GitHub Copilot delivers task‑resolution on par with leading model-vendor harnesses while using fewer tokens across several configurations, without locking you into a single model through its multi‑model architecture. For developers, this means you can get comparable task completion with lower token cost, while still choosing the model that best fits your task.
+Try it yourself
+Try GitHub Copilot with the model of your choice, compare approaches on the tasks you run every day, and see how different models and agent strategies perform in your environment.
+Learn more about:
+GitHub Copilot CLI
+GitHub Copilot app
+GitHub Copilot SDK
+The same agentic harness powers these experience. We&rsquo;re continuing to improve its quality, efficiency, and flexibility.
+Methodology
+To make the comparison as controlled and reproducible as possible, we run each agent with equivalent settings across models, tasks, and environments.
+All runs have a two-hour timeout. All agents run non-interactively single-turn, with web-tools disabled, and all tools allowed.
+TerminalBench2 analysis : Default settings enabled for agents with reasoning effort set to medium (e.g. tool search is enabled for Claude Code and Copilot CLI uses github-mcp-server). Codex and Claude Code use direct Anthropic and OpenAI endpoints. To ensure complete and reliable results, any missing data or infrastructure-related failures were re-run until all 89 TerminalBench2 tasks produced results. Model-generated errors were retained and not excluded from the analysis. Each model was evaluated across five independent runs, and Copilot was tested in two separate evaluation batches to enable comparison with Claude Code and Codex.
+All benchmarks : All agent model pairs normalized to same context window size, same prompt token limits, reasoning effort (medium) and settings&mdash;no tool search, no MCP servers. Keeping the harness&rsquo;s default built-in tools. Infrastructure-related anomalies and network-access effects are excluded across all agents for a benchmark to ensure fair comparisons. To reduce the impact of run-to-run variability on smaller benchmarks (<100 instances), five independent runs were conducted, and the best scored run is reported. All metrics are presented as pass@1. These normalizations mean results differ from public benchmark submissions, which typically use higher reasoning effort and other tuned settings.
+
+## full_text
+
+Shibani Basava & Carlos Castro
+June 25, 2026
+7 minutes
+Share:
+While the model provides the raw intelligence, the harness shapes how effectively that intelligence is applied. The GitHub Copilot agentic harness is a single shared component of the GitHub Copilot SDK , which powers the GitHub Copilot CLI , GitHub Copilot app , and Copilot code review , along with a wide variety of experiences across GitHub and Microsoft. Improve the harness, and every surface benefits.
+The GitHub Copilot agentic harness powers GitHub Copilot experiences.
+The tools, context, and workflow are orchestrated by the harness. A harness should be fast, token-efficient, and predictable for developers. That&rsquo;s what we designed GitHub Copilot&rsquo;s agentic harness to do.
+In this post, we&rsquo;ll present data showing the efficiency and performance of the GitHub Copilot agentic harness across a wide range of agentic software engineering tasks.
+How we iterate with benchmarks
+We continuously evaluate the capability and efficiency of the GitHub Copilot agentic harness through a combination of public and internally developed benchmarks. Our public benchmarks include industry standards, while several internal benchmarks are derived from large codebases inside GitHub and Microsoft. We complement this with real-world metrics and online experiments to ensure we understand the harness&rsquo;s performance in controlled environments and its practical impact on agentic problem solving and task completion.
+We control as many variables as possible to evaluate the performance of GitHub Copilot&rsquo;s harness compared to the model provider&rsquo;s harness: use the same model , the same benchmark task , normalized on context window, reasoning efforts, tool selection, and MCP servers.
+Below we report our latest results for a subset of the benchmarks we track, across four leading models: Claude Sonnet 4.6 , Claude Opus 4.7 , GPT‑5.4 , and GPT‑5.5 :
+Benchmark Domain Purpose
+SWE-bench Verified 500 human-validated bug-fix tasks from open-source Python repositories Established industry-standard benchmark for coding agents
+SWE-bench Pro More difficult, multi-step engineering tasks requiring deeper reasoning and broader code changes Better reflects complex, real-world software engineering work
+SkillsBench How effectively an agent uses skills to solve tasks Evaluates extensibility and skill use and triggering capabilities
+TerminalBench Agent performance on terminal-based tasks Measures effectiveness in command-line workflows used by developers
+Win-Hill Internal benchmark for tasks running inside Windows containers Validates that performance generalizes across operating systems and environments
+Throughout, we compare GitHub Copilot CLI against the model-vendor harnesses that ship those models natively: Claude Code for Sonnet 4.6 and Opus 4.7, and Codex CLI for GPT‑5.4 and GPT‑5.5.
+Token efficiency
+Holding the model and task fixed, across multiple benchmark results, the GitHub Copilot harness achieves task completion rates on par with other model-vendor harnesses, while showing lower token consumption across most configurations.
+Token efficiency: GitHub Copilot CLI vs. other model-vendor harnesses
+Task resolution
+Token efficiency only matters if the work actually gets done.
+Task resolution rates for the GitHub Copilot agentic harness across these benchmarks are on-par with model-vendor harnesses when used with a fixed model and benchmark task. This ensures that the full potential of the underlying model is available, along with multi-model flexibility, token efficiency, and memory and context capabilities.
+Task resolution: GitHub Copilot CLI vs. the model-vendor harnesses
+These results reflect effective parity, since the differences in either direction are within the variance due to the stochastic nature of the models, making the cross-harness performance on-par.
+TerminalBench: Token efficiency, task completion, and variance
+To continuously improve the GitHub Copilot agentic harness on task completion and token efficiency, we regularly perform thorough analyses across benchmarks. Below is an example of variance analysis on TerminalBench 2.0, which not only highlights GitHub Copilot&rsquo;s strength on task completion and token efficiency, but also shows the run-to-run variance intrinsic to this kind of benchmark.
+Resolution rate vs. cost per task. Up and to the left is better: solve more, spend less.
+Every marker is one agent-and-model configuration on TerminalBench 2.0, with resolution rate on the vertical axis and dollar cost per task on the horizontal axis. The shaded ellipse around each point shows the &plusmn;1&sigma; run-to-run spread, displaying how much each configuration varies between runs.
+Three things stand out:
+GitHub Copilot&rsquo;s agentic harness is on par with or ahead of other agents on task completion and cost per task across the configurations we evaluated . Purple (Copilot) markers and their same-model competitors sit within overlapping ellipses on both axes for nearly every model&mdash;the differences are inside run-to-run variance. Copilot is never below a competitor on completion or to the right on cost.
+Run-to-run variability . We ran each agent-model combination at least five times. The ellipse marks the 1&sigma; spread of those runs; a tighter ellipse in the chart means more reproducible results, while a wider one shows results swinging further from run to run on both cost and task completion.
+The benefit of GitHub Copilot&rsquo;s model choice: The chart shows a real trade-off: GPT models (left) deliver the best value: strong resolution at the lowest cost. Claude Opus (upper right) reaches the highest resolution at a premium. GitHub Copilot puts both on the table, so you can pick efficiency or peak quality per task.
+One harness, many models
+The GitHub Copilot agentic harness supports 20+ frontier models across the GPT, Claude, Gemini, and MAI families, plus bring your own key for open‑source and local models. You can choose the right model for the capability and cost profile of each task, or let Auto model selection choose for you, balancing task intent and model health to optimize token efficiency.
+A multi‑model architecture also unlocks harness‑level capabilities a model-vendor harness simply can&rsquo;t offer. Rubber Duck , for example, uses cross‑model‑family critique, where one model reviews another&rsquo;s work to improve outcomes beyond what any single model produces alone.
+Conclusion
+Benchmarks are just one signal among several. We are constantly working to improve quality across benchmarks, real-world usage metrics, and online experiments, while pushing to efficiently make the most out of every token.
+GitHub Copilot delivers task‑resolution on par with leading model-vendor harnesses while using fewer tokens across several configurations, without locking you into a single model through its multi‑model architecture. For developers, this means you can get comparable task completion with lower token cost, while still choosing the model that best fits your task.
+Try it yourself
+Try GitHub Copilot with the model of your choice, compare approaches on the tasks you run every day, and see how different models and agent strategies perform in your environment.
+Learn more about:
+GitHub Copilot CLI
+GitHub Copilot app
+GitHub Copilot SDK
+The same agentic harness powers these experience. We&rsquo;re continuing to improve its quality, efficiency, and flexibility.
+Methodology
+To make the comparison as controlled and reproducible as possible, we run each agent with equivalent settings across models, tasks, and environments.
+All runs have a two-hour timeout. All agents run non-interactively single-turn, with web-tools disabled, and all tools allowed.
+TerminalBench2 analysis : Default settings enabled for agents with reasoning effort set to medium (e.g. tool search is enabled for Claude Code and Copilot CLI uses github-mcp-server). Codex and Claude Code use direct Anthropic and OpenAI endpoints. To ensure complete and reliable results, any missing data or infrastructure-related failures were re-run until all 89 TerminalBench2 tasks produced results. Model-generated errors were retained and not excluded from the analysis. Each model was evaluated across five independent runs, and Copilot was tested in two separate evaluation batches to enable comparison with Claude Code and Codex.
+All benchmarks : All agent model pairs normalized to same context window size, same prompt token limits, reasoning effort (medium) and settings&mdash;no tool search, no MCP servers. Keeping the harness&rsquo;s default built-in tools. Infrastructure-related anomalies and network-access effects are excluded across all agents for a benchmark to ensure fair comparisons. To reduce the impact of run-to-run variability on smaller benchmarks (<100 instances), five independent runs were conducted, and the best scored run is reported. All metrics are presented as pass@1. These normalizations mean results differ from public benchmark submissions, which typically use higher reasoning effort and other tuned settings.
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":9116,"paragraph_count":41,"sentence_count":62,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Explore how the GitHub Copilot agentic harness delivers strong results across multiple benchmarks and leading token efficiency, while maintaining flexibility to choose among more than 20 models. The post Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks appeared first on The GitHub Blog. ]]>
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Shibani Basava & Carlos Castro June 25, 2026 7 minutes Share: While the model provides the raw intelligence, the harness shapes how effectively that intelligence is applied.
+
+3. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   The GitHub Copilot agentic harness is a single shared component of the GitHub Copilot SDK , which powers the GitHub Copilot CLI , GitHub Copilot app , and Copilot code review , along with a wide variety of experiences across GitHub and Microsoft.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Improve the harness, and every surface benefits.
+
+5. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   The GitHub Copilot agentic harness powers GitHub Copilot experiences.
+
+6. **workflow_change**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   The tools, context, and workflow are orchestrated by the harness.
+
+## business_elements
+
+- companies: GitHub Blog AI, OpenAI, Anthropic, Microsoft, GitHub
+- products: Copilot, MCP, Claude, agents, agent, Agent, Codex, Gemini, mcp
+- people: 暂无公开信息
+- industries: 医疗, 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 20 m, 25, 2026, 7 m, 4.6, 4.7, 5.4, 5.5
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Shibani Basava & Carlos Castro June 25, 2026 7 minutes Share: While the model provides the raw intelligence, the harness shapes how effectively that intelligence is applied. / Improve the harness, and every surface benefits.
+- case_details: Explore how the GitHub Copilot agentic harness delivers strong results across multiple benchmarks and leading token efficiency, while maintaining flexibility to choose among more than 20 models. The post Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks appeared first on The GitHub Blog. ]]> / The GitHub Copilot agentic harness is a single shared component of the GitHub Copilot SDK , which powers the GitHub Copilot CLI , GitHub Copilot app , and Copilot code review , along with a wide variety of experiences across GitHub and Microsoft. / The GitHub Copilot agentic harness powers GitHub Copilot experiences.
+- workflow_changes: The tools, context, and workflow are orchestrated by the harness.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Explore how the GitHub Copilot agentic harness delivers strong results across multiple benchmarks and leading token efficiency, while maintaining flexibility to choose among more than 20 models. The post Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks appeared first on The GitHub Blog. ]]>
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

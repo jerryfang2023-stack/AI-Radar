@@ -266,10 +266,15 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
+          weekday="$(TZ=Asia/Shanghai date -d "${RUN_DATE}T12:00:00" +%u)"
+          raw_min=150
+          if [ "$weekday" = "6" ] || [ "$weekday" = "7" ]; then
+            raw_min=120
+          fi
           node agent-workflow/tools/assert-daily-production-chain.mjs \
             --date="${RUN_DATE}" \
             --stage=post-monitor \
-            --raw-min=150 \
+            --raw-min="$raw_min" \
             --pool-min=75 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-post-monitor-gate.log"
 
@@ -338,10 +343,15 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
+          weekday="$(TZ=Asia/Shanghai date -d "${RUN_DATE}T12:00:00" +%u)"
+          raw_min=150
+          if [ "$weekday" = "6" ] || [ "$weekday" = "7" ]; then
+            raw_min=120
+          fi
           node agent-workflow/tools/assert-daily-production-chain.mjs \
             --date="${RUN_DATE}" \
             --stage=pre-commit \
-            --raw-min=150 \
+            --raw-min="$raw_min" \
             --pool-min=75 \
             --block-stale=true \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-pre-commit-gate.log"

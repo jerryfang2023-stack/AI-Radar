@@ -1,0 +1,28 @@
+{
+  "date": "2026-06-28",
+  "generated_at": "2026-06-28T12:05:28+08:00",
+  "workflow_mode": "business_signals_pr",
+  "outcomes": {
+    "monitor": "failure",
+    "monitor_readiness": "failure",
+    "raw_pool_gate": "failure",
+    "asset_generation": "skipped",
+    "pool_to_card_dedupe_gate": "skipped",
+    "business_frontstage_data": "skipped",
+    "business_frontstage_gate": "skipped",
+    "operations_data_sync": "skipped",
+    "pre_commit_gate": "skipped"
+  },
+  "assets": {
+    "raw_candidates": "present",
+    "source_raw_artifacts": "present",
+    "raw_originals": "present",
+    "pool_candidates": "present",
+    "business_signals": "missing",
+    "signal_card_files": 0,
+    "site_content_data": "present",
+    "v3_data_observation_desk": "present",
+    "intelligence_graph_index": "present",
+    "operations_dashboard_data": "present"
+  }
+}

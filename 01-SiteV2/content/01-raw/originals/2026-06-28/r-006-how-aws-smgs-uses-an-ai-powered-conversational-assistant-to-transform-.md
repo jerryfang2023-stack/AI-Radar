@@ -1,0 +1,391 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-006
+title: "How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore | Artificial Intelligence"
+original_url: "https://aws.amazon.com/blogs/machine-learning/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-transform-business-management-with-amazon-bedrock-agentcore/"
+canonical_url: "https://aws.amazon.com/blogs/machine-learning/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-transform-business-management-with-amazon-bedrock-agentcore"
+source_name: "keyword search / Anysearch"
+source_type: marketplace
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_customer_case"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-28T04:05:27.917Z
+language: mixed
+full_text_hash: c931ae550d12bf50
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-28/r-006-how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-transform-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-28/r-006-how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-transform-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":18843,"paragraph_count":85,"sentence_count":120,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 18843
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c931ae550d12bf50","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 8de6f7f288898be6
+content_hash: bd8852214fa7f0af
+semantic_hash: e8fd3f58f2e92188
+duplicate_of: ""
+first_seen_at: "2026-06-28T04:05:27.917Z"
+last_seen_at: 2026-06-28T04:05:27.917Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch","Anthropic","Amazon","AWS"],"products":["agents","Claude","agent","Agent","Agents"],"people":[],"industries":["金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["合同审阅 / 法律研究","权限 / 安全治理","部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["3","4","5","000"],"quotes":["What is my team’s revenue this quarter?","Compare my top 5 accounts’ growth rates across all product lines"]}
+evidence_seed: {"company_actions":["Skip to Main Content Artificial Intelligence How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore AWS leaders manage complex data across multiple hierarchies while making time-sensitive decisions that impact global operations.","Traditional business intelligence relies on static dashboards and manual reports, which creates delays and limits organizational agility.","NarrateAI, our intelligent conversational solution, addresses this through conversational agentic AI powered by our data lake and Amazon Bedrock AgentCore ."],"case_details":["# How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore ... NarrateAI, our intelligent conversational solution, addresses this through conversational agentic AI powered by our data lake and Amazon Bedrock AgentCore. Accessible through... / query=enterprise AI transformation workflow change customer case / intent=find_customer_case / path=official_original"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"# How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore ... NarrateAI, our intelligent conversational solution, addresses this through conversational agentic AI powered by our data lake and Amazon Bedrock AgentCore. Accessible through... / query=enterprise AI transformation workflow change customer case / intent=find_customer_case / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to Main Content Artificial Intelligence How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore AWS leaders manage complex data across multiple hierarchies while making time-sensitive decisions that impact global operations.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Traditional business intelligence relies on static dashboards and manual reports, which creates delays and limits organizational agility.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"NarrateAI, our intelligent conversational solution, addresses this through conversational agentic AI powered by our data lake and Amazon Bedrock AgentCore .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Accessible through the Amazon Quick conversational interface, NarrateAI delivers on-demand, context-rich business intelligence to leaders across AWS, from the Chief Executive Officer (CEO) to the field.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"By answering natural language questions about business performance, NarrateAI provides immediate, accurate, and actionable insights that remove barriers between leaders and their data.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore | Artificial Intelligence
+
+## clean_text
+
+Skip to Main Content
+Artificial Intelligence
+How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore
+AWS leaders manage complex data across multiple hierarchies while making time-sensitive decisions that impact global operations. Traditional business intelligence relies on static dashboards and manual reports, which creates delays and limits organizational agility.
+NarrateAI, our intelligent conversational solution, addresses this through conversational agentic AI powered by our data lake and Amazon Bedrock AgentCore . Accessible through the Amazon Quick conversational interface, NarrateAI delivers on-demand, context-rich business intelligence to leaders across AWS, from the Chief Executive Officer (CEO) to the field. By answering natural language questions about business performance, NarrateAI provides immediate, accurate, and actionable insights that remove barriers between leaders and their data.
+In this post, we share how we built NarrateAI using Amazon Bedrock AgentCore to deliver business intelligence at scale for the AWS SMGS (Sales, Marketing and Global Services) organization. You will learn about:
+The two-layer architecture that separates batch processing from real-time interaction.
+The specialized AI agents that power intelligent routing and validation.
+Key engineering patterns for production deployment.
+How to build similar solutions with AWS services.
+Business intelligence at scale: Key obstacles
+AWS faced challenges that limited the effectiveness of traditional business intelligence approaches:
+Time-intensive preparation : AWS leaders traditionally lost hours gathering data manually before business reviews. The preparation process involved navigating multiple dashboards, reconciling data across disparate sources, and manually synthesizing insights, leaving little time for strategic reasoning and decision-making.
+Data fragmentation : Business insights were scattered across multiple systems and dashboards, requiring leaders to piece together a coherent narrative from fragmented data sources. This fragmentation created inconsistencies in metrics and made it difficult to maintain a unified view of business performance across hierarchies and datasets.
+Limited accessibility : Complex dashboards required specialized knowledge to navigate effectively, creating dependencies on intermediary reporting teams. Leaders could not access insights on-demand and instead had to wait for curated reports, which delayed critical business decisions and limited organizational agility.
+Solution overview
+NarrateAI addresses the challenge of making complex business data conversational through a two-layer architecture: batch narrative generation and real-time interaction. This separation supports comprehensive data processing upfront while delivering instant, contextually accurate responses through natural conversation.
+Amazon Bedrock AgentCore removed the need to build custom orchestration infrastructure, providing serverless architecture, built-in authentication, memory management, and integration with foundation models. This accelerated our deployment from months to weeks while maintaining production-quality observability and security through native Amazon CloudWatch integration and automated session management.
+Automated narrative generation layer (batch processing)
+NarrateAI batch-generates comprehensive persona-based narratives for each user through a three-stage pipeline:
+Data extraction — Configuration-driven Structured Query Language (SQL) templates (parameterized queries that adapt to each user’s role and permissions) extract structured data from Amazon Redshift . These templates support multi-level breakdowns and time series analysis while enforcing user-specific access controls.
+Data transformation — AWS Lambda transforms the extracted data into structured JavaScript Object Notation (JSON) using section-type logic (objects, arrays, breakdowns, and containers) with field mappings and hierarchical organization.
+Narrative rendering — Jinja templates (a widely used Python templating engine) render human-readable narratives from the structured data. A hierarchical, business domain-aware chunking strategy handles large datasets efficiently. The system stores each user’s narrative as a text file in Amazon Simple Storage Service (Amazon S3) , supporting row-level security through full data isolation.
+Conversational AI interface layer (real-time)
+Leaders interact with their narratives through natural language conversation powered by Amazon Bedrock AgentCore. When a question arrives, AgentCore orchestrates specialized AI agents to retrieve the relevant persona-based narrative from Amazon S3 and use it as the knowledge source. The agents reason over its contents to generate contextually grounded responses with Anthropic’s Claude Sonnet 4. AgentCore’s native multi-agent coordination framework lets the system handle simple queries instantly. For complex questions, it automatically breaks them into parallel sub-tasks for comprehensive answers.
+Key capabilities
+This architectural foundation supports three core capabilities that change how leaders interact with business data.
+Natural language business queries with pre-generated knowledge
+Leaders ask complex business questions in plain English and receive immediate responses from structured knowledge stored in Amazon S3. The system understands business terminology and navigates multi-dimensional analysis across regions, products, customer segments, and time periods with contextual understanding.
+Inherent row-level security through user-specific narratives
+NarrateAI applies row-level security during narrative generation, making sure each user’s knowledge engine contains only authorized data. User permissions are applied during data processing, and each user’s narrative file in Amazon S3 is fully isolated, helping prevent cross-user data leakage across the organization.
+Role-tailored experience through persona-based filtering
+NarrateAI adapts responses based on user roles and organizational levels. A CEO receives high-level strategic insights across the organization, while a regional manager receives detailed operational metrics for their specific region.
+These capabilities are supported by a modular architecture that combines specialized AI agents with AWS services for scalable, intelligent business intelligence delivery.
+Architecture components
+Our architecture combines multiple AWS services and specialized AI agents to deliver intelligent, context-aware business insights through a modular, scalable design. The following diagram illustrates the end-to-end architecture.
+Users interact with NarrateAI through two entry points, Amazon Quick (a conversational interface) and a Web UI, both connecting to Amazon Bedrock AgentCore Runtime for request processing. The architecture has two main flows: a real-time query path (left side) and a batch data processing path (right side).
+NarrateAI agent (Strands agent): Query processing flow
+At the center of the architecture sits the NarrateAI Agent, built on Amazon Bedrock AgentCore for multi-agent orchestration. A Supervisor Agent coordinates the end-to-end query workflow through six specialized tools:
+Question classification — When a question arrives, this tool analyzes the user’s intent and determines query complexity. Simple queries (for example, “What is my team’s revenue this quarter?”) take a fast path for immediate resolution. Complex, multi-part questions (for example, “Compare my top 5 accounts’ growth rates across all product lines”) are automatically broken into parallel sub-tasks.
+Persona knowledge identifier — Identifies the user’s role, organizational level, and data permissions to determine which narrative file to retrieve from Amazon S3.
+Knowledge extractor — Uses a table-of-contents (TOC) based retrieval approach to pull only the relevant sections from the user’s narrative, rather than scanning the entire file. This keeps retrieval fast even as narratives grow.
+Relevancy evaluator — Assesses the extracted content against the user’s question to determine which sections are most pertinent, filtering out tangential information.
+Answer generator — Synthesizes a coherent, natural language response from the relevant data, powered by Anthropic’s Claude Sonnet 4 through Amazon Bedrock.
+Online evaluator — Validates every response before delivery by cross-referencing generated numbers against source data, checking logical coherence, and confirming that claims are grounded in the user’s narrative.
+Response times vary based on query complexity and the underlying data sources.
+Knowledge engine: Data processing flow
+The right side of the architecture diagram shows how business data is prepared for the conversational layer:
+Data ingestion — Raw business data flows from Amazon Redshift and other enterprise data sources into the Knowledge Engine Service.
+Data transformation — AWS Lambda functions process and transform the data with configuration-driven templates, applying user-specific permissions and organizational hierarchies.
+Knowledge artifact storage — The processed data is stored as structured, persona-specific narrative files in Amazon S3, with full data isolation between users for row-level security.
+Data refresh — A Data Refresh Scheduler automates periodic updates, so narratives reflect the latest business data.
+This separation between batch data processing and real-time query handling lets NarrateAI deliver instant responses while keeping the underlying data current and accurate.
+Infrastructure and AI foundation
+NarrateAI is built on a tightly integrated set of AWS services designed for reliability, accuracy, and scale.
+Data storage and processing — The system processes and stores business data as structured knowledge artifacts in Amazon S3. AWS Lambda handles serverless data transformation, while Amazon Redshift serves as the underlying data warehouse. A custom retrieval system uses a table-of-contents (TOC) approach to locate relevant document sections quickly, without scanning entire files. This keeps responses fast even as the knowledge engine grows.
+Foundation models — Amazon Bedrock provides access to leading foundation models, including Anthropic’s Claude Sonnet 4, which powers NarrateAI’s natural language understanding, complex business reasoning, and response generation. The service’s model flexibility lets us test and upgrade to newer model versions without architectural changes, improving query understanding and reducing response times as more capable models emerge.
+Safety and guardrails — Amazon Bedrock Guardrails enforce safety through three custom-configured filters tailored to NarrateAI’s use case:
+Content filtering — Blocks inappropriate or harmful language.
+PII redaction — Helps prevent accidental exposure of sensitive personally identifiable information (PII).
+Tone guardrails — Makes sure every response maintains a professional voice appropriate for AWS leadership.
+Agent deployment infrastructure — We use Amazon Bedrock AgentCore as our foundational orchestration layer. AgentCore provides comprehensive agentic capabilities, including advanced observability, authentication provider integration, and serverless memory management.
+Observability — AgentCore Observability delivers detailed insights into end-to-end agent session execution, supporting full operational visibility through integration with Amazon CloudWatch for monitoring and alerting. The traceability capabilities through OpenTelemetry built into AgentCore have improved our debugging efficiency. Troubleshooting time dropped from tens of minutes or hours down to single-digit minutes.
+Memory management — We migrated our conversation history (short-term memory) from a custom Amazon DynamoDB-based solution to AgentCore’s native memory capabilities. This migration:
+Removed the need to maintain custom session management code.
+Simplified our architecture by consolidating memory management within AgentCore’s serverless infrastructure.
+Enabled faster feature development with built-in session handling.
+Engineering for production
+With the foundational infrastructure in place, deploying NarrateAI at scale required solving four critical engineering challenges that every production AI system must address.
+The first challenge was accuracy and trust. AI models can generate answers that sound correct but contain errors, which is a serious risk for business decision-making. To address this, every response is validated before delivery, checking that numbers are accurate, metrics are consistent, and the answer is logically sound. The architecture limits large language model (LLM) involvement in numeric calculations to reduce hallucination risk, and automated checks flag inappropriate language before responses reach users.
+The second challenge was context awareness across organizational hierarchies. Different leaders need to see different data. A regional manager should see only their region’s numbers, while an executive needs a company-wide view. The system automatically identifies who is asking and what data they are permitted to see. It then scopes every response to their role and reporting structure without requiring manual filters.
+Response latency at scale presented the third challenge. Early versions experienced significant response delays on complex questions, leading to user frustration and lower adoption. The system now routes questions based on complexity. Straightforward queries are answered quickly and complex multi-part questions are handled through parallel processing. Response times vary based on the use case, the nature of the query, and underlying data sources. Pre-analyzing document structure during data ingestion further reduces information retrieval latency per query.
+Finally, scope and topic coverage required careful attention. Business intelligence spans multiple domains (sales, finance, marketing, and so on), each with its own terminology and logic. The team collaborated with domain experts to encode institutional knowledge through a standardized template approach, reducing what once took months of custom development to a matter of weeks.
+The key lesson from this work is that production readiness requires balancing AI flexibility with rule-based accuracy, enforcing data access at the source, and optimizing for the most common use cases while reliably handling complex ones.
+Results and impact
+Since deployment, NarrateAI has delivered measurable improvements in business intelligence accessibility and decision-making speed:
+More than 4,000 active users across AWS leadership, from CEO to regional managers.
+Hours reduced to minutes in business review preparation time.
+Comprehensive data accuracy validation through deterministic calculations and Online Evaluator Tool checks.
+Leaders report increased confidence in data-driven decisions and improved ability to explore business performance through natural conversation rather than dashboard navigation. With Amazon Bedrock AgentCore , we shifted our engineering operations from manual business intelligence processes to an AI-powered self-service hub. This approach improved efficiency, reduced review preparation time from hours to minutes, and strengthened security and compliance controls through built-in guardrails and row-level access enforcement.
+Future vision: From reactive to proactive
+NarrateAI will evolve from a conversational assistant into an autonomous agent that proactively delivers insights, surfaces anomalies, and suggests actions before leaders ask. It will be triggered by business calendars, real-time data changes, and organizational context. Powered by enhanced Amazon Bedrock AgentCore orchestration, event-driven architecture, and advanced multi-agent systems (Knowledge, Forecast, and Policy Agents), the system will deliver predictive analytics with safe, explainable autonomous actions governed by a full policy and audit layer. This evolution positions NarrateAI as an intelligent business partner that anticipates needs and drives proactive decision-making across the organization.
+Conclusion
+In this post, we showed how we built NarrateAI on Amazon Bedrock AgentCore to deliver conversational business intelligence at scale across AWS SMGS. We covered the two-layer architecture that separates batch narrative generation from real-time interaction, the specialized agents that route and validate every response, and the engineering patterns that make the solution production-ready.
+You can use the same AWS services that power our solution to build your own conversational business intelligence solutions. Amazon Bedrock AgentCore offers modular services for building, deploying, and operating AI agents at scale, with native support for multi-agent orchestration, memory management, and observability. Amazon Redshift serves as a robust data warehouse for analytical workloads.
+The architecture patterns demonstrated are applicable across industries. These include customized knowledge retrieval that combines retrieval accuracy with generative flexibility, hierarchical document processing that supports intelligent navigation of complex knowledge bases, role-based access control that supports secure data access in multi-tenant environments, and parallel agent processing that delivers responsive performance at scale.
+Ready to transform your operations? To get started, explore the Amazon Bedrock AgentCore detail page , review the AgentCore documentation , and try the notebook-based tutorials for additional use cases. Let us know your thoughts in the comments section.
+Acknowledgements
+We extend our sincere gratitude to our executive sponsors and mentors whose vision and guidance made this initiative possible: Aizaz Manzar , Director of AWS Global Sales; Sujit Narapareddy, Director of AWS Insights; Damien Forthomme , Senior Applied Scientist; and Akhand Singh , Head of Data Engineering.
+We also thank the d
+
+## full_text
+
+Skip to Main Content
+Artificial Intelligence
+How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore
+AWS leaders manage complex data across multiple hierarchies while making time-sensitive decisions that impact global operations. Traditional business intelligence relies on static dashboards and manual reports, which creates delays and limits organizational agility.
+NarrateAI, our intelligent conversational solution, addresses this through conversational agentic AI powered by our data lake and Amazon Bedrock AgentCore . Accessible through the Amazon Quick conversational interface, NarrateAI delivers on-demand, context-rich business intelligence to leaders across AWS, from the Chief Executive Officer (CEO) to the field. By answering natural language questions about business performance, NarrateAI provides immediate, accurate, and actionable insights that remove barriers between leaders and their data.
+In this post, we share how we built NarrateAI using Amazon Bedrock AgentCore to deliver business intelligence at scale for the AWS SMGS (Sales, Marketing and Global Services) organization. You will learn about:
+The two-layer architecture that separates batch processing from real-time interaction.
+The specialized AI agents that power intelligent routing and validation.
+Key engineering patterns for production deployment.
+How to build similar solutions with AWS services.
+Business intelligence at scale: Key obstacles
+AWS faced challenges that limited the effectiveness of traditional business intelligence approaches:
+Time-intensive preparation : AWS leaders traditionally lost hours gathering data manually before business reviews. The preparation process involved navigating multiple dashboards, reconciling data across disparate sources, and manually synthesizing insights, leaving little time for strategic reasoning and decision-making.
+Data fragmentation : Business insights were scattered across multiple systems and dashboards, requiring leaders to piece together a coherent narrative from fragmented data sources. This fragmentation created inconsistencies in metrics and made it difficult to maintain a unified view of business performance across hierarchies and datasets.
+Limited accessibility : Complex dashboards required specialized knowledge to navigate effectively, creating dependencies on intermediary reporting teams. Leaders could not access insights on-demand and instead had to wait for curated reports, which delayed critical business decisions and limited organizational agility.
+Solution overview
+NarrateAI addresses the challenge of making complex business data conversational through a two-layer architecture: batch narrative generation and real-time interaction. This separation supports comprehensive data processing upfront while delivering instant, contextually accurate responses through natural conversation.
+Amazon Bedrock AgentCore removed the need to build custom orchestration infrastructure, providing serverless architecture, built-in authentication, memory management, and integration with foundation models. This accelerated our deployment from months to weeks while maintaining production-quality observability and security through native Amazon CloudWatch integration and automated session management.
+Automated narrative generation layer (batch processing)
+NarrateAI batch-generates comprehensive persona-based narratives for each user through a three-stage pipeline:
+Data extraction — Configuration-driven Structured Query Language (SQL) templates (parameterized queries that adapt to each user’s role and permissions) extract structured data from Amazon Redshift . These templates support multi-level breakdowns and time series analysis while enforcing user-specific access controls.
+Data transformation — AWS Lambda transforms the extracted data into structured JavaScript Object Notation (JSON) using section-type logic (objects, arrays, breakdowns, and containers) with field mappings and hierarchical organization.
+Narrative rendering — Jinja templates (a widely used Python templating engine) render human-readable narratives from the structured data. A hierarchical, business domain-aware chunking strategy handles large datasets efficiently. The system stores each user’s narrative as a text file in Amazon Simple Storage Service (Amazon S3) , supporting row-level security through full data isolation.
+Conversational AI interface layer (real-time)
+Leaders interact with their narratives through natural language conversation powered by Amazon Bedrock AgentCore. When a question arrives, AgentCore orchestrates specialized AI agents to retrieve the relevant persona-based narrative from Amazon S3 and use it as the knowledge source. The agents reason over its contents to generate contextually grounded responses with Anthropic’s Claude Sonnet 4. AgentCore’s native multi-agent coordination framework lets the system handle simple queries instantly. For complex questions, it automatically breaks them into parallel sub-tasks for comprehensive answers.
+Key capabilities
+This architectural foundation supports three core capabilities that change how leaders interact with business data.
+Natural language business queries with pre-generated knowledge
+Leaders ask complex business questions in plain English and receive immediate responses from structured knowledge stored in Amazon S3. The system understands business terminology and navigates multi-dimensional analysis across regions, products, customer segments, and time periods with contextual understanding.
+Inherent row-level security through user-specific narratives
+NarrateAI applies row-level security during narrative generation, making sure each user’s knowledge engine contains only authorized data. User permissions are applied during data processing, and each user’s narrative file in Amazon S3 is fully isolated, helping prevent cross-user data leakage across the organization.
+Role-tailored experience through persona-based filtering
+NarrateAI adapts responses based on user roles and organizational levels. A CEO receives high-level strategic insights across the organization, while a regional manager receives detailed operational metrics for their specific region.
+These capabilities are supported by a modular architecture that combines specialized AI agents with AWS services for scalable, intelligent business intelligence delivery.
+Architecture components
+Our architecture combines multiple AWS services and specialized AI agents to deliver intelligent, context-aware business insights through a modular, scalable design. The following diagram illustrates the end-to-end architecture.
+Users interact with NarrateAI through two entry points, Amazon Quick (a conversational interface) and a Web UI, both connecting to Amazon Bedrock AgentCore Runtime for request processing. The architecture has two main flows: a real-time query path (left side) and a batch data processing path (right side).
+NarrateAI agent (Strands agent): Query processing flow
+At the center of the architecture sits the NarrateAI Agent, built on Amazon Bedrock AgentCore for multi-agent orchestration. A Supervisor Agent coordinates the end-to-end query workflow through six specialized tools:
+Question classification — When a question arrives, this tool analyzes the user’s intent and determines query complexity. Simple queries (for example, “What is my team’s revenue this quarter?”) take a fast path for immediate resolution. Complex, multi-part questions (for example, “Compare my top 5 accounts’ growth rates across all product lines”) are automatically broken into parallel sub-tasks.
+Persona knowledge identifier — Identifies the user’s role, organizational level, and data permissions to determine which narrative file to retrieve from Amazon S3.
+Knowledge extractor — Uses a table-of-contents (TOC) based retrieval approach to pull only the relevant sections from the user’s narrative, rather than scanning the entire file. This keeps retrieval fast even as narratives grow.
+Relevancy evaluator — Assesses the extracted content against the user’s question to determine which sections are most pertinent, filtering out tangential information.
+Answer generator — Synthesizes a coherent, natural language response from the relevant data, powered by Anthropic’s Claude Sonnet 4 through Amazon Bedrock.
+Online evaluator — Validates every response before delivery by cross-referencing generated numbers against source data, checking logical coherence, and confirming that claims are grounded in the user’s narrative.
+Response times vary based on query complexity and the underlying data sources.
+Knowledge engine: Data processing flow
+The right side of the architecture diagram shows how business data is prepared for the conversational layer:
+Data ingestion — Raw business data flows from Amazon Redshift and other enterprise data sources into the Knowledge Engine Service.
+Data transformation — AWS Lambda functions process and transform the data with configuration-driven templates, applying user-specific permissions and organizational hierarchies.
+Knowledge artifact storage — The processed data is stored as structured, persona-specific narrative files in Amazon S3, with full data isolation between users for row-level security.
+Data refresh — A Data Refresh Scheduler automates periodic updates, so narratives reflect the latest business data.
+This separation between batch data processing and real-time query handling lets NarrateAI deliver instant responses while keeping the underlying data current and accurate.
+Infrastructure and AI foundation
+NarrateAI is built on a tightly integrated set of AWS services designed for reliability, accuracy, and scale.
+Data storage and processing — The system processes and stores business data as structured knowledge artifacts in Amazon S3. AWS Lambda handles serverless data transformation, while Amazon Redshift serves as the underlying data warehouse. A custom retrieval system uses a table-of-contents (TOC) approach to locate relevant document sections quickly, without scanning entire files. This keeps responses fast even as the knowledge engine grows.
+Foundation models — Amazon Bedrock provides access to leading foundation models, including Anthropic’s Claude Sonnet 4, which powers NarrateAI’s natural language understanding, complex business reasoning, and response generation. The service’s model flexibility lets us test and upgrade to newer model versions without architectural changes, improving query understanding and reducing response times as more capable models emerge.
+Safety and guardrails — Amazon Bedrock Guardrails enforce safety through three custom-configured filters tailored to NarrateAI’s use case:
+Content filtering — Blocks inappropriate or harmful language.
+PII redaction — Helps prevent accidental exposure of sensitive personally identifiable information (PII).
+Tone guardrails — Makes sure every response maintains a professional voice appropriate for AWS leadership.
+Agent deployment infrastructure — We use Amazon Bedrock AgentCore as our foundational orchestration layer. AgentCore provides comprehensive agentic capabilities, including advanced observability, authentication provider integration, and serverless memory management.
+Observability — AgentCore Observability delivers detailed insights into end-to-end agent session execution, supporting full operational visibility through integration with Amazon CloudWatch for monitoring and alerting. The traceability capabilities through OpenTelemetry built into AgentCore have improved our debugging efficiency. Troubleshooting time dropped from tens of minutes or hours down to single-digit minutes.
+Memory management — We migrated our conversation history (short-term memory) from a custom Amazon DynamoDB-based solution to AgentCore’s native memory capabilities. This migration:
+Removed the need to maintain custom session management code.
+Simplified our architecture by consolidating memory management within AgentCore’s serverless infrastructure.
+Enabled faster feature development with built-in session handling.
+Engineering for production
+With the foundational infrastructure in place, deploying NarrateAI at scale required solving four critical engineering challenges that every production AI system must address.
+The first challenge was accuracy and trust. AI models can generate answers that sound correct but contain errors, which is a serious risk for business decision-making. To address this, every response is validated before delivery, checking that numbers are accurate, metrics are consistent, and the answer is logically sound. The architecture limits large language model (LLM) involvement in numeric calculations to reduce hallucination risk, and automated checks flag inappropriate language before responses reach users.
+The second challenge was context awareness across organizational hierarchies. Different leaders need to see different data. A regional manager should see only their region’s numbers, while an executive needs a company-wide view. The system automatically identifies who is asking and what data they are permitted to see. It then scopes every response to their role and reporting structure without requiring manual filters.
+Response latency at scale presented the third challenge. Early versions experienced significant response delays on complex questions, leading to user frustration and lower adoption. The system now routes questions based on complexity. Straightforward queries are answered quickly and complex multi-part questions are handled through parallel processing. Response times vary based on the use case, the nature of the query, and underlying data sources. Pre-analyzing document structure during data ingestion further reduces information retrieval latency per query.
+Finally, scope and topic coverage required careful attention. Business intelligence spans multiple domains (sales, finance, marketing, and so on), each with its own terminology and logic. The team collaborated with domain experts to encode institutional knowledge through a standardized template approach, reducing what once took months of custom development to a matter of weeks.
+The key lesson from this work is that production readiness requires balancing AI flexibility with rule-based accuracy, enforcing data access at the source, and optimizing for the most common use cases while reliably handling complex ones.
+Results and impact
+Since deployment, NarrateAI has delivered measurable improvements in business intelligence accessibility and decision-making speed:
+More than 4,000 active users across AWS leadership, from CEO to regional managers.
+Hours reduced to minutes in business review preparation time.
+Comprehensive data accuracy validation through deterministic calculations and Online Evaluator Tool checks.
+Leaders report increased confidence in data-driven decisions and improved ability to explore business performance through natural conversation rather than dashboard navigation. With Amazon Bedrock AgentCore , we shifted our engineering operations from manual business intelligence processes to an AI-powered self-service hub. This approach improved efficiency, reduced review preparation time from hours to minutes, and strengthened security and compliance controls through built-in guardrails and row-level access enforcement.
+Future vision: From reactive to proactive
+NarrateAI will evolve from a conversational assistant into an autonomous agent that proactively delivers insights, surfaces anomalies, and suggests actions before leaders ask. It will be triggered by business calendars, real-time data changes, and organizational context. Powered by enhanced Amazon Bedrock AgentCore orchestration, event-driven architecture, and advanced multi-agent systems (Knowledge, Forecast, and Policy Agents), the system will deliver predictive analytics with safe, explainable autonomous actions governed by a full policy and audit layer. This evolution positions NarrateAI as an intelligent business partner that anticipates needs and drives proactive decision-making across the organization.
+Conclusion
+In this post, we showed how we built NarrateAI on Amazon Bedrock AgentCore to deliver conversational business intelligence at scale across AWS SMGS. We covered the two-layer architecture that separates batch narrative generation from real-time interaction, the specialized agents that route and validate every response, and the engineering patterns that make the solution production-ready.
+You can use the same AWS services that power our solution to build your own conversational business intelligence solutions. Amazon Bedrock AgentCore offers modular services for building, deploying, and operating AI agents at scale, with native support for multi-agent orchestration, memory management, and observability. Amazon Redshift serves as a robust data warehouse for analytical workloads.
+The architecture patterns demonstrated are applicable across industries. These include customized knowledge retrieval that combines retrieval accuracy with generative flexibility, hierarchical document processing that supports intelligent navigation of complex knowledge bases, role-based access control that supports secure data access in multi-tenant environments, and parallel agent processing that delivers responsive performance at scale.
+Ready to transform your operations? To get started, explore the Amazon Bedrock AgentCore detail page , review the AgentCore documentation , and try the notebook-based tutorials for additional use cases. Let us know your thoughts in the comments section.
+Acknowledgements
+We extend our sincere gratitude to our executive sponsors and mentors whose vision and guidance made this initiative possible: Aizaz Manzar , Director of AWS Global Sales; Sujit Narapareddy, Director of AWS Insights; Damien Forthomme , Senior Applied Scientist; and Akhand Singh , Head of Data Engineering.
+We also thank the dedicated team members whose technical expertise and contributions were instrumental in bringing this product to life: Aswin Palliyali Venugopalan , Software Dev Manager; Sai Meka , Machine Learning Engineer; Mihir Gadgil , Senior Data Engineer; Shalabh Mittal , Data Engineer; Akshay Kasar , Machine Learning Engineer; Jayson Carter , Senior Machine Learning Engineer; Srijan Tiwari , Senior Applied Scientist; Bill Tran , Data Engineer; Inigo Dalmau , Data Engineer; Tyler Durand , Senior Technical Product Manager; Kaylin Tay , Business Insights Analyst; Anusha Sakhamuri , Data Engineer.
+About the authors
+Resources
+Getting Started
+What's New
+Blog Topics
+Amazon Bedrock
+Amazon Comprehend
+Amazon Kendra
+Amazon Lex
+Amazon Polly
+Amazon Q
+Amazon Rekognition
+Amazon SageMaker
+Amazon Textract
+Follow
+Twitter
+Facebook
+LinkedIn
+Twitch
+Email Updates
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":18843,"paragraph_count":85,"sentence_count":120,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   # How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore ... NarrateAI, our intelligent conversational solution, addresses this through conversational agentic AI powered by our data lake and Amazon Bedrock AgentCore. Accessible through... / query=enterprise AI transformation workflow change customer case / intent=find_customer_case / path=official_original
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Skip to Main Content Artificial Intelligence How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore AWS leaders manage complex data across multiple hierarchies while making time-sensitive decisions that impact global operations.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Traditional business intelligence relies on static dashboards and manual reports, which creates delays and limits organizational agility.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   NarrateAI, our intelligent conversational solution, addresses this through conversational agentic AI powered by our data lake and Amazon Bedrock AgentCore .
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Accessible through the Amazon Quick conversational interface, NarrateAI delivers on-demand, context-rich business intelligence to leaders across AWS, from the Chief Executive Officer (CEO) to the field.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   By answering natural language questions about business performance, NarrateAI provides immediate, accurate, and actionable insights that remove barriers between leaders and their data.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Anthropic, Amazon, AWS
+- products: agents, Claude, agent, Agent, Agents
+- people: 暂无公开信息
+- industries: 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 3, 4, 5, 000
+- quotes: What is my team’s revenue this quarter? / Compare my top 5 accounts’ growth rates across all product lines
+
+## evidence_seed
+
+- company_actions: Skip to Main Content Artificial Intelligence How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore AWS leaders manage complex data across multiple hierarchies while making time-sensitive decisions that impact global operations. / Traditional business intelligence relies on static dashboards and manual reports, which creates delays and limits organizational agility. / NarrateAI, our intelligent conversational solution, addresses this through conversational agentic AI powered by our data lake and Amazon Bedrock AgentCore .
+- case_details: # How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore ... NarrateAI, our intelligent conversational solution, addresses this through conversational agentic AI powered by our data lake and Amazon Bedrock AgentCore. Accessible through... / query=enterprise AI transformation workflow change customer case / intent=find_customer_case / path=official_original
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+# How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore ... NarrateAI, our intelligent conversational solution, addresses this through conversational agentic AI powered by our data lake and Amazon Bedrock AgentCore. Accessible through... / query=enterprise AI transformation workflow change customer case / intent=find_customer_case / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

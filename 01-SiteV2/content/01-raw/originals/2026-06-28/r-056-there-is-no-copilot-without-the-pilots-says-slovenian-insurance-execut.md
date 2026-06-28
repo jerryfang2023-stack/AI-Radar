@@ -1,0 +1,239 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-056
+title: "There is no Copilot without the pilots, says Slovenian insurance executive"
+original_url: "https://news.microsoft.com/source/emea/features/zavarovalnica-triglav-copilot-adoption-insurance/"
+canonical_url: "https://news.microsoft.com/source/emea/features/zavarovalnica-triglav-copilot-adoption-insurance"
+source_name: "Microsoft AI and Azure AI official blogs"
+source_type: product
+source_level: S
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-28T04:05:28.226Z
+language: mixed
+full_text_hash: 9adf1a40a0560264
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-28/r-056-there-is-no-copilot-without-the-pilots-says-slovenian-insurance-execut.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-28/r-056-there-is-no-copilot-without-the-pilots-says-slovenian-insurance-execut.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":5067,"paragraph_count":21,"sentence_count":34,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 5067
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9adf1a40a0560264","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 6127cffe771bfad8
+content_hash: 9adf1a40a0560264
+semantic_hash: 54ffbacad7eac6e0
+duplicate_of: ""
+first_seen_at: "2026-06-28T04:05:28.226Z"
+last_seen_at: 2026-06-28T04:05:28.226Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["Microsoft AI and Azure AI official blogs","Microsoft"],"products":["Copilot","agents","agent"],"people":[],"industries":["法律 / 法务","金融 / 保险","企业服务"],"roles":["法务 / 律师"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全","法务","销售 / 客服"],"numbers":["125","5","000","365","40","10 m"],"quotes":["heavily since the beginning","digital mentors","We had citizen development, trying to teach the people advanced usage of the tools like Power BI , RPA , Power Apps ,","digital mentors","It’s not centralized by IT only,"]}
+evidence_seed: {"company_actions":["Triglav operates in seven markets in the Adriatic region of Europe as well as in the wider international environment through partnerships with insurance brokerage, agency and reinsurance companies.","At first the company’s over 5,000 employees were wary."],"case_details":["The post There is no Copilot without the pilots, says Slovenian insurance executive appeared first on Source. ]]>","For a 125-plus-year-old company in a highly regulated industry, Zavarovalnica Triglav , the Triglav Group’s parent company , has been an early and enthusiastic adopter of AI, through Copilot."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"The post There is no Copilot without the pilots, says Slovenian insurance executive appeared first on Source. ]]>","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"For a 125-plus-year-old company in a highly regulated industry, Zavarovalnica Triglav , the Triglav Group’s parent company , has been an early and enthusiastic adopter of AI, through Copilot.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"quote","text":"The diversified insurance and financial group, based in Ljubljana, Slovenia, has been using Copilot “heavily since the beginning” of the AI tool, says Klemen Ramoveš, chief digital officer, at Triglav.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Triglav operates in seven markets in the Adriatic region of Europe as well as in the wider international environment through partnerships with insurance brokerage, agency and reinsurance companies.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"At first the company’s over 5,000 employees were wary.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"quote","text":"However, Triglav won them over to Microsoft 365 Copilot thanks to a team of “digital mentors” and by using the resulting productivity gains to reduce boring, repetitive work in favor of higher-value tasks that require a human touch — while keeping the same teams.","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"}]
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# There is no Copilot without the pilots, says Slovenian insurance executive
+
+## clean_text
+
+For a 125-plus-year-old company in a highly regulated industry, Zavarovalnica Triglav , the Triglav Group’s parent company , has been an early and enthusiastic adopter of AI, through Copilot.
+The diversified insurance and financial group, based in Ljubljana, Slovenia, has been using Copilot “heavily since the beginning” of the AI tool, says Klemen Ramoveš, chief digital officer, at Triglav.
+Triglav operates in seven markets in the Adriatic region of Europe as well as in the wider international environment through partnerships with insurance brokerage, agency and reinsurance companies. At first the company’s over 5,000 employees were wary. However, Triglav won them over to Microsoft 365 Copilot thanks to a team of “digital mentors” and by using the resulting productivity gains to reduce boring, repetitive work in favor of higher-value tasks that require a human touch — while keeping the same teams.
+The digital transformation brought together the company’s fragmented businesses while also empowering them to act as strategic partners.
+“We had citizen development, trying to teach the people advanced usage of the tools like Power BI , RPA , Power Apps ,” Ramoveš says. Triglav has 40 “digital mentors” who focus on Copilot and Copilot agents. “If you compare it with the size of the company, it’s quite huge. They have first access to the information and knowledge from our IT support regarding how to use Copilot on different levels of maturities,” he says.
+Digital mentors as key to Copilot adoption
+Armed with these new skills, the digital mentors then look at their original domains of work, whether internal back-office operations, processes for customer experience, new digital revenue products or others, for ways Copilot or Copilot agents can bring improvements.
+“It’s not centralized by IT only,” Ramoveš says. “We take a different approach. AI should be used by everyone, not just by the chief digital officer saying you should use it, right? We really believe that these digital mentors are the key, because you enable not just one thing, but you enable the army of the people behind with the proper knowledge.”
+That said, using Copilot and creating agents isn’t a free-for-all at Triglav, which is highly regulated. “We have proper governance, and yes, the employee can make and run their agent for themselves or their team, or they can deploy it to the whole enterprise,” Ramoveš says.
+Triglav does not use Copilot with external partners, instead focusing on internal use cases and process support. One of the first internal chatbot initiatives was built around HR topics, especially onboarding.
+The team prepared answers to a wide range of employee questions, helping new colleagues understand key processes, internal rules and everyday practicalities more quickly. “In insurance, there are many policies and procedures people need to follow,” Ramoveš says. “That makes onboarding a very relevant use case — not only to answer basic questions faster, but also to help employees navigate a highly regulated environment with more confidence.”
+Copilot as a multipurpose tool
+However, internal processes are a fertile field for Copilot and its agents to make improvements, Ramoveš says, listing examples.
+Copilot speeds up preparation of drafts for the legal team when a customer makes a complaint, cutting the time from a few hours to five to 10 minutes in most cases, according to Triglav’s internal surveys and benchmarks. It summarizes batches of claims documents and provides action points. Triglav’s digital mentors have found ways to use Copilot throughout the company.
+“I will use the transcript and the task in Copilot right after Teams calls, and I believe that a lot more things get done because we didn’t have a culture of the minutes before,” Ramoveš says. But now, he notes, when people say in a Teams meeting that they will do something, they follow through.
+Rather than developing a single Copilot agent that revolutionizes the company, Triglav’s intensive deployment of Copilot is more akin to a rising tide that lifts all the boats that make up its business. It’s as much a cultural transformation as a digital one, which sets Triglav up for success as AI continues to evolve, Ramoveš says.
+“We still believe that people are the key,” he says. “It’s ‘Copilot’— it’s not a pilot, so we need to have a lot of pilots on board.”
+Read more
+Catherine Bolgar writes about AI and innovation at Microsoft, from advances in quantum computing to how AI is helping ordinary people. Previously, Catherine wrote about technology and business for a number of publications, and she was an editor at the Wall Street Journal in New York and Brussels. She taught high school math in Kenya, where she learned Swahili. She currently lives in France. You can contact Catherine on  LinkedIn .
+From beards to bytes: How AI is empowering small business owners in Kenya
+The digital medicine for pharmacies: How AI is powering Kenya’s chemists
+Building Qiddiya City: How Copilot helps Abdulrahman AlAli navigate a project of unprecedented scale
+Tags:
+AI
+
+## full_text
+
+For a 125-plus-year-old company in a highly regulated industry, Zavarovalnica Triglav , the Triglav Group’s parent company , has been an early and enthusiastic adopter of AI, through Copilot.
+The diversified insurance and financial group, based in Ljubljana, Slovenia, has been using Copilot “heavily since the beginning” of the AI tool, says Klemen Ramoveš, chief digital officer, at Triglav.
+Triglav operates in seven markets in the Adriatic region of Europe as well as in the wider international environment through partnerships with insurance brokerage, agency and reinsurance companies. At first the company’s over 5,000 employees were wary. However, Triglav won them over to Microsoft 365 Copilot thanks to a team of “digital mentors” and by using the resulting productivity gains to reduce boring, repetitive work in favor of higher-value tasks that require a human touch — while keeping the same teams.
+The digital transformation brought together the company’s fragmented businesses while also empowering them to act as strategic partners.
+“We had citizen development, trying to teach the people advanced usage of the tools like Power BI , RPA , Power Apps ,” Ramoveš says. Triglav has 40 “digital mentors” who focus on Copilot and Copilot agents. “If you compare it with the size of the company, it’s quite huge. They have first access to the information and knowledge from our IT support regarding how to use Copilot on different levels of maturities,” he says.
+Digital mentors as key to Copilot adoption
+Armed with these new skills, the digital mentors then look at their original domains of work, whether internal back-office operations, processes for customer experience, new digital revenue products or others, for ways Copilot or Copilot agents can bring improvements.
+“It’s not centralized by IT only,” Ramoveš says. “We take a different approach. AI should be used by everyone, not just by the chief digital officer saying you should use it, right? We really believe that these digital mentors are the key, because you enable not just one thing, but you enable the army of the people behind with the proper knowledge.”
+That said, using Copilot and creating agents isn’t a free-for-all at Triglav, which is highly regulated. “We have proper governance, and yes, the employee can make and run their agent for themselves or their team, or they can deploy it to the whole enterprise,” Ramoveš says.
+Triglav does not use Copilot with external partners, instead focusing on internal use cases and process support. One of the first internal chatbot initiatives was built around HR topics, especially onboarding.
+The team prepared answers to a wide range of employee questions, helping new colleagues understand key processes, internal rules and everyday practicalities more quickly. “In insurance, there are many policies and procedures people need to follow,” Ramoveš says. “That makes onboarding a very relevant use case — not only to answer basic questions faster, but also to help employees navigate a highly regulated environment with more confidence.”
+Copilot as a multipurpose tool
+However, internal processes are a fertile field for Copilot and its agents to make improvements, Ramoveš says, listing examples.
+Copilot speeds up preparation of drafts for the legal team when a customer makes a complaint, cutting the time from a few hours to five to 10 minutes in most cases, according to Triglav’s internal surveys and benchmarks. It summarizes batches of claims documents and provides action points. Triglav’s digital mentors have found ways to use Copilot throughout the company.
+“I will use the transcript and the task in Copilot right after Teams calls, and I believe that a lot more things get done because we didn’t have a culture of the minutes before,” Ramoveš says. But now, he notes, when people say in a Teams meeting that they will do something, they follow through.
+Rather than developing a single Copilot agent that revolutionizes the company, Triglav’s intensive deployment of Copilot is more akin to a rising tide that lifts all the boats that make up its business. It’s as much a cultural transformation as a digital one, which sets Triglav up for success as AI continues to evolve, Ramoveš says.
+“We still believe that people are the key,” he says. “It’s ‘Copilot’— it’s not a pilot, so we need to have a lot of pilots on board.”
+Read more
+Catherine Bolgar writes about AI and innovation at Microsoft, from advances in quantum computing to how AI is helping ordinary people. Previously, Catherine wrote about technology and business for a number of publications, and she was an editor at the Wall Street Journal in New York and Brussels. She taught high school math in Kenya, where she learned Swahili. She currently lives in France. You can contact Catherine on  LinkedIn .
+From beards to bytes: How AI is empowering small business owners in Kenya
+The digital medicine for pharmacies: How AI is powering Kenya’s chemists
+Building Qiddiya City: How Copilot helps Abdulrahman AlAli navigate a project of unprecedented scale
+Tags:
+AI
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":5067,"paragraph_count":21,"sentence_count":34,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   The post There is no Copilot without the pilots, says Slovenian insurance executive appeared first on Source. ]]>
+
+2. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   For a 125-plus-year-old company in a highly regulated industry, Zavarovalnica Triglav , the Triglav Group’s parent company , has been an early and enthusiastic adopter of AI, through Copilot.
+
+3. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=high
+   The diversified insurance and financial group, based in Ljubljana, Slovenia, has been using Copilot “heavily since the beginning” of the AI tool, says Klemen Ramoveš, chief digital officer, at Triglav.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Triglav operates in seven markets in the Adriatic region of Europe as well as in the wider international environment through partnerships with insurance brokerage, agency and reinsurance companies.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   At first the company’s over 5,000 employees were wary.
+
+6. **quote**｜supports=daily_observation, heatmap, viewpoint｜importance=medium｜confidence=high
+   However, Triglav won them over to Microsoft 365 Copilot thanks to a team of “digital mentors” and by using the resulting productivity gains to reduce boring, repetitive work in favor of higher-value tasks that require a human touch — while keeping the same teams.
+
+## business_elements
+
+- companies: Microsoft AI and Azure AI official blogs, Microsoft
+- products: Copilot, agents, agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 企业服务
+- roles: 法务 / 律师
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全, 法务, 销售 / 客服
+- numbers: 125, 5, 000, 365, 40, 10 m
+- quotes: heavily since the beginning / digital mentors / We had citizen development, trying to teach the people advanced usage of the tools like Power BI , RPA , Power Apps , / digital mentors / It’s not centralized by IT only,
+
+## evidence_seed
+
+- company_actions: Triglav operates in seven markets in the Adriatic region of Europe as well as in the wider international environment through partnerships with insurance brokerage, agency and reinsurance companies. / At first the company’s over 5,000 employees were wary.
+- case_details: The post There is no Copilot without the pilots, says Slovenian insurance executive appeared first on Source. ]]> / For a 125-plus-year-old company in a highly regulated industry, Zavarovalnica Triglav , the Triglav Group’s parent company , has been an early and enthusiastic adopter of AI, through Copilot.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+The post There is no Copilot without the pilots, says Slovenian insurance executive appeared first on Source. ]]>
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
