@@ -1,0 +1,563 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-044
+title: "Patterns for Building LLM-based Systems &amp; Products"
+original_url: "https://eugeneyan.com//writing/llm-patterns/"
+canonical_url: "https://eugeneyan.com/writing/llm-patterns"
+source_name: "Eugene Yan's Blog"
+source_type: builder
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-28T04:05:28.125Z
+language: mixed
+full_text_hash: 708862b6d5541631
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-28/r-044-patterns-for-building-llm-based-systems-amp-products.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-28/r-044-patterns-for-building-llm-based-systems-amp-products.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":60000,"paragraph_count":261,"sentence_count":494,"boilerplate_hits":0,"symbol_ratio":0.0048,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 60000
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"708862b6d5541631","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: ade36d533d256814
+content_hash: 83f41be24eca6e94
+semantic_hash: 6416d30435b8f270
+duplicate_of: ""
+first_seen_at: "2026-06-28T04:05:28.125Z"
+last_seen_at: 2026-06-28T04:05:28.125Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":false,"change":false,"trend":false,"daily_observation":false,"heatmap":false,"briefing":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":2}
+business_elements: {"companies":["Eugene Yan's Blog"],"products":["GPT-4","ChatGPT","Claude"],"people":[],"industries":["法律 / 法务","开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["计费 / 预算管理"],"business_actions":[],"affected_departments":["IT / 安全","法务","财务 / 预算"],"numbers":["57","200","4","20","1","2","000","5"],"quotes":["hard alignment","soft alignment"," do not work with/report or trust MMLU scores ","suggest games for a 3-year-old and a 7-year-old to play"]}
+evidence_seed: {"company_actions":["Evals, RAG, fine-tuning, caching, guardrails, defensive UX, and collecting user feedback.","Discussions on HackerNews , Twitter , and LinkedIn “There is a large class of problems that are easy to imagine and build demos for, but extremely hard to make products out of.","For example, self-driving: It’s easy to demo a car self-driving around a block, but making it into a product takes a decade."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Evals, RAG, fine-tuning, caching, guardrails, defensive UX, and collecting user feedback.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Discussions on HackerNews , Twitter , and LinkedIn “There is a large class of problems that are easy to imagine and build demos for, but extremely hard to make products out of.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"For example, self-driving: It’s easy to demo a car self-driving around a block, but making it into a product takes a decade.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"” - Karpathy This write-up is about practical patterns for integrating large language models (LLMs) into systems & products.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"We’ll build on academic research, industry resources, and practitioner know-how, and distill them into key ideas and practices.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"There are seven key patterns.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Patterns for Building LLM-based Systems &amp; Products
+
+## clean_text
+
+Discussions on HackerNews , Twitter , and LinkedIn
+“There is a large class of problems that are easy to imagine and build demos for, but extremely hard to make products out of. For example, self-driving: It’s easy to demo a car self-driving around a block, but making it into a product takes a decade.” - Karpathy
+This write-up is about practical patterns for integrating large language models (LLMs) into systems & products. We’ll build on academic research, industry resources, and practitioner know-how, and distill them into key ideas and practices.
+There are seven key patterns. They’re also organized along the spectrum of improving performance vs. reducing cost/risk, and closer to the data vs. closer to the user.
+Evals : To measure performance
+RAG : To add recent, external knowledge
+Fine-tuning : To get better at specific tasks
+Caching : To reduce latency & cost
+Guardrails : To ensure output quality
+Defensive UX : To anticipate & manage errors gracefully
+Collect user feedback : To build our data flywheel
+(Also see this addendum on how to match these LLM patterns to potential problems .)
+LLM patterns: From data to user, from defensive to offensive ( see connections between patterns )
+Evals: To measure performance
+Evaluations are a set of measurements used to assess a model’s performance on a task. They include benchmark data and metrics. From a HackerNews comment :
+How important evals are to the team is a major differentiator between folks rushing out hot garbage and those seriously building products in the space.
+Why evals?
+Evals enable us to measure how well our system or product is doing and detect any regressions. (A system or product can be made up of multiple components such as LLMs, prompt templates, retrieved context, and parameters like temperature.) A representative set of evals takes us a step towards measuring system changes at scale. Without evals, we would be flying blind, or would have to visually inspect LLM outputs with each change.
+More about evals
+There are many benchmarks in the field of language modeling . Some notable ones are:
+MMLU : A set of 57 tasks that span elementary math, US history, computer science, law, and more. To perform well, models must possess extensive world knowledge and problem-solving ability.
+EleutherAI Eval : Unified framework to test models via zero/few-shot settings on 200 tasks. Incorporates a large number of evals including BigBench, MMLU, etc.
+HELM : Instead of specific tasks and metrics, HELM offers a comprehensive assessment of LLMs by evaluating them across domains. Metrics include accuracy, calibration, robustness, fairness, bias, toxicity, etc. Tasks include Q&A, information retrieval, summarization, text classification, etc.
+AlpacaEval : Automated evaluation framework which measures how often a strong LLM (e.g., GPT-4) prefers the output of one model over a reference model. Metrics include win rate, bias, latency, price, variance, etc. Validated to have high agreement with 20k human annotations.
+We can group metrics into two categories: context-dependent or context-free.
+Context-dependent : These take context into account. They’re often proposed for a specific task; repurposing them for other tasks will require some adjustment.
+Context-free : These aren’t tied to the context when evaluating generated output; they only compare the output with the provided gold references. As they’re task agnostic, they’re easier to apply to a wide variety of tasks.
+To get a better sense of these metrics (and their potential shortfalls), we’ll explore a few of the commonly used metrics such as BLEU, ROUGE, BERTScore, and MoverScore.
+BLEU (Bilingual Evaluation Understudy) is a precision-based metric: It counts the number of n-grams in the generated output that also show up in the reference, and then divides it by the total number of words in the output. It’s predominantly used in machine translation and remains a popular metric due to its cost-effectiveness.
+First, precision for various values of \(n\) is computed:
+\[\text{precision}_n = \frac{\sum_{p \in \text{output}} \sum_{\text{n-gram} \in p} \text{Count}_{\text{clip}} (\text{n-gram})}{\sum_{p \in \text{output}} \sum_{\text{n-gram} \in p} \text{Count}(\text{n-gram})}\]
+\(Count_{clip}(\text{n-gram})\) is clipped by the maximum number of times an n-gram appears in any corresponding reference sentence.
+\[\text{Count}_{\text{clip}}(n\text{-gram}) = \min \left(\text{matched } n\text{-gram count}, \max_{r \in R} \left(n\text{-gram count in } r\right)\right)\]
+Once we’ve computed precision at various \(n\), a final BLEU-N score is computed as the geometric mean of all the \(precision_n\) scores.
+However, since precision relies solely on n-grams and doesn’t consider the length of the generated output, an output containing just one unigram of a common word (like a stop word) would achieve perfect precision. This can be misleading and encourage outputs that contain fewer words to increase BLEU scores. To counter this, a brevity penalty is added to penalize excessively short sentences.
+\[BP =
+\begin{cases}
+1 & \text{if } |p| > |r| \\
+e^{1-\frac{|r|}{|p|}} & \text{otherwise}
+\end{cases}\]
+Thus, the final formula is:
+\[\text{BLEU-N} = BP \cdot \exp\left(\sum_{n=1}^{N} W_n \log(\text{precision}_n)\right)\]
+ROUGE (Recall-Oriented Understudy for Gisting Evaluation) : In contrast to BLEU, ROUGE is recall-oriented. It counts the number of words in the reference that also occur in the output. It’s typically used to assess automatic summarization tasks.
+There are several ROUGE variants. ROUGE-N is most similar to BLEU in that it also counts the number of matching n-grams between the output and the reference.
+\[\text{ROUGE-N} = \frac{\sum_{s_r \in \text{references}} \sum_{n\text{-gram} \in s_r} \text{Count}_{\text{match}} (n\text{-gram})}{\sum_{s_r \in \text{references}} \sum_{n\text{-gram} \in s_r} \text{Count} (n\text{-gram})}\]
+Other variants include:
+ROUGE-L: This measures the longest common subsequence (LCS) between the output and the reference. It considers sentence-level structure similarity and zeros in on the longest series of co-occurring in-sequence n-grams.
+ROUGE-S: This measures the skip-bigram between the output and reference. Skip-bigrams are pairs of words that maintain their sentence order regardless of the words that might be sandwiched between them.
+BERTScore is an embedding-based metric that uses cosine similarity to compare each token or n-gram in the generated output with the reference sentence. There are three components to BERTScore:
+Recall: Average cosine similarity between each token in the reference and its closest match in the generated output.
+Precision: Average cosine similarity between each token in the generated output and its nearest match in the reference.
+F1: Harmonic mean of recall and precision
+\[Recall_{\text{BERT}} = \frac{1}{|r|} \sum_{i \in r} \max_{j \in p} \vec{i}^T \vec{j}, \quad Precision_{\text{BERT}} = \frac{1}{|p|} \sum_{j \in p} \max_{i \in r} \vec{i}^T \vec{j}\]
+\[\text{BERTscore} = F_{\text{BERT}} = \frac{2 \cdot P_{\text{BERT}} \cdot R_{\text{BERT}}}{P_{\text{BERT}} + R_{\text{BERT}}}\]
+BERTScore is useful because it can account for synonyms and paraphrasing. Simpler metrics like BLEU and ROUGE can’t do this due to their reliance on exact matches. BERTScore has been shown to have better correlation for tasks such as image captioning and machine translation.
+MoverScore also uses contextualized embeddings to compute the distance between tokens in the generated output and reference. But unlike BERTScore, which is based on one-to-one matching (or “hard alignment”) of tokens, MoverScore allows for many-to-one matching (or “soft alignment”).
+BERTScore (left) vs. MoverScore (right; source )
+MoverScore enables the mapping of semantically related words in one sequence to their counterparts in another sequence. It does this by solving a constrained optimization problem that finds the minimum effort to transform one text into another. The idea is to measure the distance that words would have to move to convert one sequence to another.
+However, there are several pitfalls to using these conventional benchmarks and metrics.
+First, there’s poor correlation between these metrics and human judgments. BLEU, ROUGE, and others have had negative correlation with how humans evaluate fluency . They also showed moderate to less correlation with human adequacy scores. In particular, BLEU and ROUGE have low correlation with tasks that require creativity and diversity .
+Second, these metrics often have poor adaptability to a wider variety of tasks . Adopting a metric proposed for one task to another is not always prudent. For example, exact match metrics such as BLEU and ROUGE are a poor fit for tasks like abstractive summarization or dialogue. Since they’re based on n-gram overlap between output and reference, they don’t make sense for a dialogue task where a wide variety of responses are possible. An output can have zero n-gram overlap with the reference but yet be a good response.
+Third, these metrics have poor reproducibility . Even for the same metric, high variance is reported across different studies , possibly due to variations in human judgment collection or metric parameter settings. Another study of ROUGE scores across 2,000 studies found that scores were hard to reproduce, difficult to compare, and often incorrect because evals were often conducted with untested, incorrect ROUGE implementations.
+Dimensions of model evaluations with ROUGE ( source )
+And even with recent benchmarks such as MMLU, the same model can get significantly different scores based on the eval implementation . Huggingface compared the original MMLU implementation with the HELM and EleutherAI implementations and found that the same example could have different prompts across various providers.
+Different prompts for the same question across MMLU implementations ( source )
+Furthermore, the evaluation approach differed across all three benchmarks:
+Original MMLU: Compares predicted probabilities on the answers only (A, B, C, D)
+HELM: Uses the next token probabilities from the model and picks the token with the highest probability, even if it’s not one of the options.
+EleutherAI: Computes probability of the full answer sequence (i.e., a letter followed by the answer text) for each answer. Then, pick answer with highest probability.
+Different eval for the same question across MMLU implementations ( source )
+As a result, even for the same eval, both absolute scores and model ranking can fluctuate widely depending on eval implementation. This means that model metrics aren’t truly comparable—even for the same eval—unless the eval’s implementation is identical down to minute details like prompts and tokenization. Similarly, the author of QLoRA found MMLU overly sensitive and concluded: “ do not work with/report or trust MMLU scores ”.
+Beyond conventional evals such as those mentioned above, an emerging trend is to use a strong LLM as a reference-free metric to evaluate generations from other LLMs. This means we may not need human judgments or gold references for evaluation.
+G-Eval is a framework that applies LLMs with Chain-of-Though (CoT) and a form-filling paradigm to evaluate LLM outputs . First, they provide a task introduction and evaluation criteria to an LLM and ask it to generate a CoT of evaluation steps. Then, to evaluate coherence in news summarization, they concatenate the prompt, CoT, news article, and summary and ask the LLM to output a score between 1 to 5. Finally, they use the probabilities of the output tokens from the LLM to normalize the score and take their weighted summation as the final result.
+Overview of G-Eval ( source )
+They found that GPT-4 as an evaluator had a high Spearman correlation with human judgments (0.514), outperforming all previous methods. It also outperformed traditional metrics on aspects such as coherence, consistency, fluency, and relevance. On topical chat, it did better than traditional metrics such as ROUGE-L, BLEU-4, and BERTScore across several criteria such as naturalness, coherence, engagingness, and groundedness.
+The Vicuna paper adopted a similar approach. They start by defining eight categories (writing, roleplay, extraction, reasoning, math, coding, STEM, and humanities/social science) before developing 10 questions for each category. Next, they generated answers from five chatbots: LLaMA, Alpaca, ChatGPT, Bard, and Vicuna. Finally, they asked GPT-4 to rate the quality of the answers based on helpfulness, relevance, accuracy, and detail.
+Overall, they found that GPT-4 not only provided consistent scores but could also give detailed explanations for those scores. Under the single answer grading paradigm, GPT-4 had higher agreement with humans (85%) than the humans had amongst themselves (81%). This suggests that GPT-4’s judgment aligns closely with the human evaluators.
+QLoRA also used an LLM to evaluate another LLM’s output. They asked GPT-4 to rate the performance of various models against gpt-3.5-turbo on the Vicuna benchmark. Given the responses from gpt-3.5-turbo and another model, GPT-4 was prompted to score both out of 10 and explain its ratings. They also measured performance via direct comparisons between models, simplifying the task to a three-class rating scheme that included ties.
+To validate the automated evaluation, they collected human judgments on the Vicuna benchmark. Using Mechanical Turk, they enlisted two annotators for comparisons to gpt-3.5-turbo, and three annotators for pairwise comparisons. They found that human and GPT-4 ranking of models were largely in agreement, with a Spearman rank correlation of 0.55 at the model level. This provides an additional data point suggesting that LLM-based automated evals could be a cost-effective and reasonable alternative to human evals.
+How to apply evals?
+Building solid evals should be the starting point for any LLM-based system or product (as well as conventional machine learning systems).
+Unfortunately, classical metrics such as BLEU and ROUGE don’t make sense for more complex tasks such as abstractive summarization or dialogue. Furthermore, we’ve seen that benchmarks like MMLU (and metrics like ROUGE) are sensitive to how they’re implemented and measured. And to be candid, unless your LLM system is studying for a school exam, using MMLU as an eval doesn’t quite make sense .
+Thus, instead of using off-the-shelf benchmarks, we can start by collecting a set of task-specific evals (i.e., prompt, context, expected outputs as references). These evals will then guide prompt engineering, model selection, fine-tuning, and so on. And as we update our systems, we can run these evals to quickly measure improvements or regressions. Think of it as Eval Driven Development (EDD).
+In addition to the evaluation dataset, we also need useful metrics . They help us distill performance changes into a single number that’s comparable across eval runs. And if we can simplify the problem, we can choose metrics that are easier to compute and interpret.
+The simplest task is probably classification: If we’re using an LLM for classification-like tasks (e.g., toxicity detection, document categorization) or extractive QA without dialogue, we can rely on standard classification metrics such as recall, precision, PRAUC, etc. If our task has no correct answer but we have references (e.g., machine translation, extractive summarization), we can rely on reference metrics based on matching (BLEU, ROUGE) or semantic similarity (BERTScore, MoverScore).
+However, these metrics may not work for more open-ended tasks such as abstractive summarization, dialogue, and others. But collecting human judgments can be slow and expensive. Thus, we may opt to lean on automated evaluations via a strong LLM .
+Relative to human judgments which are typically noisy (due to differing biases among annotators), LLM judgments tend to be less noisy (as the bias is more systematic) but more biased. Nonetheless, since we’re aware of these biases, we can mitigate them accordingly:
+Position bias: LLMs tend to favor the response in the first position. To mitigate this, we can evaluate the same pair of responses twice while swapping their order. If the same response is preferred in both orders, we mark it as a win; else, it’s a tie.
+Verbosity bias: LLMs tend to favor longer, wordier responses over more concise ones, even if the latter is clearer and of higher quality. A possible solution is to ensure that comparison responses are similar in length.
+Self-enhancement bias: LLMs have a slight bias towards their own answers. GPT-4 favors itself with a 10% higher win rate while Claude-v1 favors itself with a 25% higher win rate. To counter this, don’t use the same LLM for evaluation tasks.
+Another tip: Rather than asking an LLM for a direct evaluation (via giving a score), try giving it a reference and asking for a comparison. This helps with reducing noise.
+Finally, sometimes the best eval is human eval aka vibe check. (Not to be confused with the poorly named code evaluation benchmark HumanEval .) As mentioned in the Latent Space podcast with MosaicML (34th minute):
+The vibe-based eval cannot be underrated. … One of our evals was just having a bunch of prompts and watching the answers as the models trained and see if they change. Honestly, I don’t really believe that any of these eval metrics capture what we care about. One of our prompts was “suggest games for a 3-year-old and a 7-year-old to play” and that was a lot more valuable to see how the answer changed during the course of training. — Jonathan Frankle
+Also see this deep dive into evals for abstractive summarization. It covers reference, context, and preference-based metrics, and also discusses hallucination detection.
+Retrieval-Augmented Generation: To add knowledge
+Retrieval-Augmented Generation (RAG) fetches relevant data from outside the foundation model and enhances the input with
+
+## full_text
+
+Discussions on HackerNews , Twitter , and LinkedIn
+“There is a large class of problems that are easy to imagine and build demos for, but extremely hard to make products out of. For example, self-driving: It’s easy to demo a car self-driving around a block, but making it into a product takes a decade.” - Karpathy
+This write-up is about practical patterns for integrating large language models (LLMs) into systems & products. We’ll build on academic research, industry resources, and practitioner know-how, and distill them into key ideas and practices.
+There are seven key patterns. They’re also organized along the spectrum of improving performance vs. reducing cost/risk, and closer to the data vs. closer to the user.
+Evals : To measure performance
+RAG : To add recent, external knowledge
+Fine-tuning : To get better at specific tasks
+Caching : To reduce latency & cost
+Guardrails : To ensure output quality
+Defensive UX : To anticipate & manage errors gracefully
+Collect user feedback : To build our data flywheel
+(Also see this addendum on how to match these LLM patterns to potential problems .)
+LLM patterns: From data to user, from defensive to offensive ( see connections between patterns )
+Evals: To measure performance
+Evaluations are a set of measurements used to assess a model’s performance on a task. They include benchmark data and metrics. From a HackerNews comment :
+How important evals are to the team is a major differentiator between folks rushing out hot garbage and those seriously building products in the space.
+Why evals?
+Evals enable us to measure how well our system or product is doing and detect any regressions. (A system or product can be made up of multiple components such as LLMs, prompt templates, retrieved context, and parameters like temperature.) A representative set of evals takes us a step towards measuring system changes at scale. Without evals, we would be flying blind, or would have to visually inspect LLM outputs with each change.
+More about evals
+There are many benchmarks in the field of language modeling . Some notable ones are:
+MMLU : A set of 57 tasks that span elementary math, US history, computer science, law, and more. To perform well, models must possess extensive world knowledge and problem-solving ability.
+EleutherAI Eval : Unified framework to test models via zero/few-shot settings on 200 tasks. Incorporates a large number of evals including BigBench, MMLU, etc.
+HELM : Instead of specific tasks and metrics, HELM offers a comprehensive assessment of LLMs by evaluating them across domains. Metrics include accuracy, calibration, robustness, fairness, bias, toxicity, etc. Tasks include Q&A, information retrieval, summarization, text classification, etc.
+AlpacaEval : Automated evaluation framework which measures how often a strong LLM (e.g., GPT-4) prefers the output of one model over a reference model. Metrics include win rate, bias, latency, price, variance, etc. Validated to have high agreement with 20k human annotations.
+We can group metrics into two categories: context-dependent or context-free.
+Context-dependent : These take context into account. They’re often proposed for a specific task; repurposing them for other tasks will require some adjustment.
+Context-free : These aren’t tied to the context when evaluating generated output; they only compare the output with the provided gold references. As they’re task agnostic, they’re easier to apply to a wide variety of tasks.
+To get a better sense of these metrics (and their potential shortfalls), we’ll explore a few of the commonly used metrics such as BLEU, ROUGE, BERTScore, and MoverScore.
+BLEU (Bilingual Evaluation Understudy) is a precision-based metric: It counts the number of n-grams in the generated output that also show up in the reference, and then divides it by the total number of words in the output. It’s predominantly used in machine translation and remains a popular metric due to its cost-effectiveness.
+First, precision for various values of \(n\) is computed:
+\[\text{precision}_n = \frac{\sum_{p \in \text{output}} \sum_{\text{n-gram} \in p} \text{Count}_{\text{clip}} (\text{n-gram})}{\sum_{p \in \text{output}} \sum_{\text{n-gram} \in p} \text{Count}(\text{n-gram})}\]
+\(Count_{clip}(\text{n-gram})\) is clipped by the maximum number of times an n-gram appears in any corresponding reference sentence.
+\[\text{Count}_{\text{clip}}(n\text{-gram}) = \min \left(\text{matched } n\text{-gram count}, \max_{r \in R} \left(n\text{-gram count in } r\right)\right)\]
+Once we’ve computed precision at various \(n\), a final BLEU-N score is computed as the geometric mean of all the \(precision_n\) scores.
+However, since precision relies solely on n-grams and doesn’t consider the length of the generated output, an output containing just one unigram of a common word (like a stop word) would achieve perfect precision. This can be misleading and encourage outputs that contain fewer words to increase BLEU scores. To counter this, a brevity penalty is added to penalize excessively short sentences.
+\[BP =
+\begin{cases}
+1 & \text{if } |p| > |r| \\
+e^{1-\frac{|r|}{|p|}} & \text{otherwise}
+\end{cases}\]
+Thus, the final formula is:
+\[\text{BLEU-N} = BP \cdot \exp\left(\sum_{n=1}^{N} W_n \log(\text{precision}_n)\right)\]
+ROUGE (Recall-Oriented Understudy for Gisting Evaluation) : In contrast to BLEU, ROUGE is recall-oriented. It counts the number of words in the reference that also occur in the output. It’s typically used to assess automatic summarization tasks.
+There are several ROUGE variants. ROUGE-N is most similar to BLEU in that it also counts the number of matching n-grams between the output and the reference.
+\[\text{ROUGE-N} = \frac{\sum_{s_r \in \text{references}} \sum_{n\text{-gram} \in s_r} \text{Count}_{\text{match}} (n\text{-gram})}{\sum_{s_r \in \text{references}} \sum_{n\text{-gram} \in s_r} \text{Count} (n\text{-gram})}\]
+Other variants include:
+ROUGE-L: This measures the longest common subsequence (LCS) between the output and the reference. It considers sentence-level structure similarity and zeros in on the longest series of co-occurring in-sequence n-grams.
+ROUGE-S: This measures the skip-bigram between the output and reference. Skip-bigrams are pairs of words that maintain their sentence order regardless of the words that might be sandwiched between them.
+BERTScore is an embedding-based metric that uses cosine similarity to compare each token or n-gram in the generated output with the reference sentence. There are three components to BERTScore:
+Recall: Average cosine similarity between each token in the reference and its closest match in the generated output.
+Precision: Average cosine similarity between each token in the generated output and its nearest match in the reference.
+F1: Harmonic mean of recall and precision
+\[Recall_{\text{BERT}} = \frac{1}{|r|} \sum_{i \in r} \max_{j \in p} \vec{i}^T \vec{j}, \quad Precision_{\text{BERT}} = \frac{1}{|p|} \sum_{j \in p} \max_{i \in r} \vec{i}^T \vec{j}\]
+\[\text{BERTscore} = F_{\text{BERT}} = \frac{2 \cdot P_{\text{BERT}} \cdot R_{\text{BERT}}}{P_{\text{BERT}} + R_{\text{BERT}}}\]
+BERTScore is useful because it can account for synonyms and paraphrasing. Simpler metrics like BLEU and ROUGE can’t do this due to their reliance on exact matches. BERTScore has been shown to have better correlation for tasks such as image captioning and machine translation.
+MoverScore also uses contextualized embeddings to compute the distance between tokens in the generated output and reference. But unlike BERTScore, which is based on one-to-one matching (or “hard alignment”) of tokens, MoverScore allows for many-to-one matching (or “soft alignment”).
+BERTScore (left) vs. MoverScore (right; source )
+MoverScore enables the mapping of semantically related words in one sequence to their counterparts in another sequence. It does this by solving a constrained optimization problem that finds the minimum effort to transform one text into another. The idea is to measure the distance that words would have to move to convert one sequence to another.
+However, there are several pitfalls to using these conventional benchmarks and metrics.
+First, there’s poor correlation between these metrics and human judgments. BLEU, ROUGE, and others have had negative correlation with how humans evaluate fluency . They also showed moderate to less correlation with human adequacy scores. In particular, BLEU and ROUGE have low correlation with tasks that require creativity and diversity .
+Second, these metrics often have poor adaptability to a wider variety of tasks . Adopting a metric proposed for one task to another is not always prudent. For example, exact match metrics such as BLEU and ROUGE are a poor fit for tasks like abstractive summarization or dialogue. Since they’re based on n-gram overlap between output and reference, they don’t make sense for a dialogue task where a wide variety of responses are possible. An output can have zero n-gram overlap with the reference but yet be a good response.
+Third, these metrics have poor reproducibility . Even for the same metric, high variance is reported across different studies , possibly due to variations in human judgment collection or metric parameter settings. Another study of ROUGE scores across 2,000 studies found that scores were hard to reproduce, difficult to compare, and often incorrect because evals were often conducted with untested, incorrect ROUGE implementations.
+Dimensions of model evaluations with ROUGE ( source )
+And even with recent benchmarks such as MMLU, the same model can get significantly different scores based on the eval implementation . Huggingface compared the original MMLU implementation with the HELM and EleutherAI implementations and found that the same example could have different prompts across various providers.
+Different prompts for the same question across MMLU implementations ( source )
+Furthermore, the evaluation approach differed across all three benchmarks:
+Original MMLU: Compares predicted probabilities on the answers only (A, B, C, D)
+HELM: Uses the next token probabilities from the model and picks the token with the highest probability, even if it’s not one of the options.
+EleutherAI: Computes probability of the full answer sequence (i.e., a letter followed by the answer text) for each answer. Then, pick answer with highest probability.
+Different eval for the same question across MMLU implementations ( source )
+As a result, even for the same eval, both absolute scores and model ranking can fluctuate widely depending on eval implementation. This means that model metrics aren’t truly comparable—even for the same eval—unless the eval’s implementation is identical down to minute details like prompts and tokenization. Similarly, the author of QLoRA found MMLU overly sensitive and concluded: “ do not work with/report or trust MMLU scores ”.
+Beyond conventional evals such as those mentioned above, an emerging trend is to use a strong LLM as a reference-free metric to evaluate generations from other LLMs. This means we may not need human judgments or gold references for evaluation.
+G-Eval is a framework that applies LLMs with Chain-of-Though (CoT) and a form-filling paradigm to evaluate LLM outputs . First, they provide a task introduction and evaluation criteria to an LLM and ask it to generate a CoT of evaluation steps. Then, to evaluate coherence in news summarization, they concatenate the prompt, CoT, news article, and summary and ask the LLM to output a score between 1 to 5. Finally, they use the probabilities of the output tokens from the LLM to normalize the score and take their weighted summation as the final result.
+Overview of G-Eval ( source )
+They found that GPT-4 as an evaluator had a high Spearman correlation with human judgments (0.514), outperforming all previous methods. It also outperformed traditional metrics on aspects such as coherence, consistency, fluency, and relevance. On topical chat, it did better than traditional metrics such as ROUGE-L, BLEU-4, and BERTScore across several criteria such as naturalness, coherence, engagingness, and groundedness.
+The Vicuna paper adopted a similar approach. They start by defining eight categories (writing, roleplay, extraction, reasoning, math, coding, STEM, and humanities/social science) before developing 10 questions for each category. Next, they generated answers from five chatbots: LLaMA, Alpaca, ChatGPT, Bard, and Vicuna. Finally, they asked GPT-4 to rate the quality of the answers based on helpfulness, relevance, accuracy, and detail.
+Overall, they found that GPT-4 not only provided consistent scores but could also give detailed explanations for those scores. Under the single answer grading paradigm, GPT-4 had higher agreement with humans (85%) than the humans had amongst themselves (81%). This suggests that GPT-4’s judgment aligns closely with the human evaluators.
+QLoRA also used an LLM to evaluate another LLM’s output. They asked GPT-4 to rate the performance of various models against gpt-3.5-turbo on the Vicuna benchmark. Given the responses from gpt-3.5-turbo and another model, GPT-4 was prompted to score both out of 10 and explain its ratings. They also measured performance via direct comparisons between models, simplifying the task to a three-class rating scheme that included ties.
+To validate the automated evaluation, they collected human judgments on the Vicuna benchmark. Using Mechanical Turk, they enlisted two annotators for comparisons to gpt-3.5-turbo, and three annotators for pairwise comparisons. They found that human and GPT-4 ranking of models were largely in agreement, with a Spearman rank correlation of 0.55 at the model level. This provides an additional data point suggesting that LLM-based automated evals could be a cost-effective and reasonable alternative to human evals.
+How to apply evals?
+Building solid evals should be the starting point for any LLM-based system or product (as well as conventional machine learning systems).
+Unfortunately, classical metrics such as BLEU and ROUGE don’t make sense for more complex tasks such as abstractive summarization or dialogue. Furthermore, we’ve seen that benchmarks like MMLU (and metrics like ROUGE) are sensitive to how they’re implemented and measured. And to be candid, unless your LLM system is studying for a school exam, using MMLU as an eval doesn’t quite make sense .
+Thus, instead of using off-the-shelf benchmarks, we can start by collecting a set of task-specific evals (i.e., prompt, context, expected outputs as references). These evals will then guide prompt engineering, model selection, fine-tuning, and so on. And as we update our systems, we can run these evals to quickly measure improvements or regressions. Think of it as Eval Driven Development (EDD).
+In addition to the evaluation dataset, we also need useful metrics . They help us distill performance changes into a single number that’s comparable across eval runs. And if we can simplify the problem, we can choose metrics that are easier to compute and interpret.
+The simplest task is probably classification: If we’re using an LLM for classification-like tasks (e.g., toxicity detection, document categorization) or extractive QA without dialogue, we can rely on standard classification metrics such as recall, precision, PRAUC, etc. If our task has no correct answer but we have references (e.g., machine translation, extractive summarization), we can rely on reference metrics based on matching (BLEU, ROUGE) or semantic similarity (BERTScore, MoverScore).
+However, these metrics may not work for more open-ended tasks such as abstractive summarization, dialogue, and others. But collecting human judgments can be slow and expensive. Thus, we may opt to lean on automated evaluations via a strong LLM .
+Relative to human judgments which are typically noisy (due to differing biases among annotators), LLM judgments tend to be less noisy (as the bias is more systematic) but more biased. Nonetheless, since we’re aware of these biases, we can mitigate them accordingly:
+Position bias: LLMs tend to favor the response in the first position. To mitigate this, we can evaluate the same pair of responses twice while swapping their order. If the same response is preferred in both orders, we mark it as a win; else, it’s a tie.
+Verbosity bias: LLMs tend to favor longer, wordier responses over more concise ones, even if the latter is clearer and of higher quality. A possible solution is to ensure that comparison responses are similar in length.
+Self-enhancement bias: LLMs have a slight bias towards their own answers. GPT-4 favors itself with a 10% higher win rate while Claude-v1 favors itself with a 25% higher win rate. To counter this, don’t use the same LLM for evaluation tasks.
+Another tip: Rather than asking an LLM for a direct evaluation (via giving a score), try giving it a reference and asking for a comparison. This helps with reducing noise.
+Finally, sometimes the best eval is human eval aka vibe check. (Not to be confused with the poorly named code evaluation benchmark HumanEval .) As mentioned in the Latent Space podcast with MosaicML (34th minute):
+The vibe-based eval cannot be underrated. … One of our evals was just having a bunch of prompts and watching the answers as the models trained and see if they change. Honestly, I don’t really believe that any of these eval metrics capture what we care about. One of our prompts was “suggest games for a 3-year-old and a 7-year-old to play” and that was a lot more valuable to see how the answer changed during the course of training. — Jonathan Frankle
+Also see this deep dive into evals for abstractive summarization. It covers reference, context, and preference-based metrics, and also discusses hallucination detection.
+Retrieval-Augmented Generation: To add knowledge
+Retrieval-Augmented Generation (RAG) fetches relevant data from outside the foundation model and enhances the input with this data, providing richer context to improve output.
+Why RAG?
+RAG helps reduce hallucination by grounding the model on the retrieved context, thus increasing factuality. In addition, it’s cheaper to keep retrieval indices up-to-date than to continuously pre-train an LLM. This cost efficiency makes it easier to provide LLMs with access to recent data via RAG. Finally, if we need to update or remove data such as biased or toxic documents, it’s more straightforward to update the retrieval index (compared to fine-tuning or prompting an LLM not to generate toxic outputs).
+In short, RAG applies mature and simpler ideas from the field of information retrieval to support LLM generation. In a recent Sequoia survey , 88% of respondents believe that retrieval will be a key component of their stack.
+More about RAG
+Before diving into RAG, it helps to have a basic understanding of text embeddings. (Feel free to skip this section if you’re familiar with the subject.)
+A text embedding is a compressed, abstract representation of text data where text of arbitrary length can be represented as a fixed-size vector of numbers. It’s usually learned from a corpus of text such as Wikipedia. Think of them as a universal encoding for text, where similar items are close to each other while dissimilar items are farther apart .
+A good embedding is one that does well on a downstream task, such as retrieving similar items. Huggingface’s Massive Text Embedding Benchmark (MTEB) scores various models on diverse tasks such as classification, clustering, retrieval, summarization, etc.
+Quick note: While we mainly discuss text embeddings here, embeddings can take many modalities. For example, CLIP is multimodal and embeds images and text in the same space, allowing us to find images most similar to an input text. We can also embed products based on user behavior (e.g., clicks, purchases) or graph relationships .
+RAG has its roots in open-domain Q&A. An early Meta paper showed that retrieving relevant documents via TF-IDF and providing them as context to a language model (BERT) improved performance on an open-domain QA task. They converted each task into a cloze statement and queried the language model for the missing token.
+Following that, Dense Passage Retrieval (DPR) showed that using dense embeddings (instead of a sparse vector space such as TF-IDF) for document retrieval can outperform strong baselines like Lucene BM25 (65.2% vs. 42.9% for top-5 accuracy.) They also showed that higher retrieval precision translates to higher end-to-end QA accuracy, highlighting the importance of upstream retrieval.
+To learn the DPR embedding, they fine-tuned two independent BERT-based encoders on existing question-answer pairs. The passage encoder (\(E_p\)) embeds text passages into vectors while the query encoder (\(E_q\)) embeds questions into vectors. The query embedding is then used to retrieve \(k\) passages that are most similar to the question.
+They trained the encoders so that the dot-product similarity makes a good ranking function, and optimized the loss function as the negative log-likelihood of the positive passage. The DPR embeddings are optimized for maximum inner product between the question and relevant passage vectors. The goal is to learn a vector space such that pairs of questions and their relevant passages are close together.
+For inference, they embed all passages (via \(E_p\)) and index them in FAISS offline. Then, given a question at query time, they compute the question embedding (via \(E_q\)), retrieve the top \(k\) passages via approximate nearest neighbors, and provide it to the language model (BERT) that outputs the answer to the question.
+Retrieval Augmented Generation (RAG) , from which this pattern gets its name, highlighted the downsides of pre-trained LLMs. These include not being able to expand or revise memory, not providing insights into generated output, and hallucinations.
+To address these downsides, they introduced RAG (aka semi-parametric models). Dense vector retrieval serves as the non-parametric component while a pre-trained LLM acts as the parametric component. They reused the DPR encoders to initialize the retriever and build the document index. For the LLM, they used BART, a 400M parameter seq2seq model.
+Overview of Retrieval Augmented Generation ( source )
+During inference, they concatenate the input with the retrieved document. Then, the LLM generates \(\text{token}_i\) based on the original input, the retrieved document, and the previous \(i-1\) tokens. For generation, they proposed two approaches that vary in how the retrieved passages are used to generate output.
+In the first approach, RAG-Sequence, the model uses the same document to generate the complete sequence. Thus, for \(k\) retrieved documents, the generator produces an output for each document. Then, the probability of each output sequence is marginalized (sum the probability of each output sequence in \(k\) and weigh it by the probability of each document being retrieved). Finally, the output sequence with the highest probability is selected.
+On the other hand, RAG-Token can generate each token based on a different document. Given \(k\) retrieved documents, the generator produces a distribution for the next output token for each document before marginalizing (aggregating all the individual token distributions.). The process is then repeated for the next token. This means that, for each token generation, it can retrieve a different set of \(k\) relevant documents based on the original input and previously generated tokens. Thus, documents can have different retrieval probabilities and contribute differently to the next generated token.
+Fusion-in-Decoder (FiD) also uses retrieval with generative models for open-domain QA. It supports two methods for retrieval, BM25 (Lucene with default parameters) and DPR. FiD is named for how it performs fusion on the retrieved documents in the decoder only.
+Overview of Fusion-in-Decoder ( source )
+For each retrieved passage, the title and passage are concatenated with the question. These pairs are processed independently in the encoder. They also add special tokens such as question: , title: , and context: before their corresponding sections. The decoder attends over the concatenation of these retrieved passages.
+Because it processes passages independently in the encoder, it can scale to a large number of passages as it only needs to do self-attention over one context at a time. Thus, compute grows linearly (instead of quadratically) with the number of retrieved passages, making it more scalable than alternatives such as RAG-Token. Then, during decoding, the decoder processes the encoded passages jointly, allowing it to better aggregate context across multiple retrieved passages.
+Retrieval-Enhanced Transformer (RETRO) adopts a similar pattern where it combines a frozen BERT retriever, a differentiable encoder, and chunked cross-attention to generate output. What’s different is that RETRO does retrieval throughout the entire pre-training stage, and not just during inference. Furthermore, they fetch relevant documents based on chunks of the input. This allows for finer-grained, repeated retrieval during generation instead of only retrieving once per query.
+For each input chunk (\(C_u\)), the \(k\) retrieved chunks \(RET(C_u)\) are fed into an encoder. The output is the encoded neighbors \(E^{j}_{u}\) where \(E^{j}_{u} = \text{Encoder}(\text{RET}(C_{u})^{j}, H_{u}) \in \mathbb{R}^{r \times d_{0}}\). Here, each chunk encoding is conditioned on \(H_u\) (the intermediate activations) and the activations of chunk \(C_u\) through cross-attention layers. In short, the encoding of the retrieved chunks depends on the attended activation of the input chunk. \(E^{j}_{u}\) is then used to condition the generation of the next chunk.
+Overview of RETRO ( source )
+During retrieval, RETRO splits the input sequence into chunks of 64 tokens. Then, it finds text similar to the previous chunk to provide context to the current chunk. The retrieval index consists of two contiguous chunks of tokens, \(N\) and \(F\). The former is the neighbor chunk (64 tokens) which is used to compute the key while the latter is the continuation chunk (64 tokens) in the original document.
+Retrieval is based on approximate \(k\)-nearest neighbors via \(L_2\) distance (euclidean) on BERT embeddings. (Interesting departure from the usual cosine or dot product similarity.) The retrieval index, built on SCaNN, can query a 2T token database in 10ms.
+They also demonstrated how to RETRO-fit existing baseline models. By freezing the pre-trained weights and only training the chunked cross-attention and neighbor encoder parameters (< 10% of weights for a 7B model), they can enhance transformers with retrieval while only requiring 6M training sequences (3% of pre-training sequences). RETRO-fitted models were able to surpass the performance of baseline models and achieve performance close to that of RETRO trained from scratch.
+Performance from RETRO-fitting a pre-trained model ( source )
+Internet-augmented LMs proposes using a humble “off-the-shelf” search engine to augment LLMs. First, they retrieve a set of relevant documents via Google Search. Since these retrieved documents tend to be long (average length 2,056 words), they chunk them into paragraphs of six sentences each. Finally, they embed the question and paragraphs via TF-IDF and applied cosine similarity to rank the most relevant paragraphs for each query.
+Overview of internet-augmented LLMs ( source )
+The retrieved paragraphs are used to condition the LLM via few-shot prompting. They adopt the conventional \(k\)-shot prompting (\(k=15\)) from closed-book QA (only providing question-answer pairs) and extend it with an evidence paragraph, such that each context is an evidence, question, and answer triplet.
+For the generator, they used Gopher, a 280B parameter model trained on 300B tokens. For each question, they generated four candidate answers based on each of the 50 retrieved paragraphs. Finally, they select the best answer by estimating the answer probability via several methods including direct inference, RAG, noisy channel inference, and Product-of-Experts (PoE). PoE consistently performed the best.
+RAG has also been applied to non-QA tasks such as code generation . While CodeT5+ can be used as a standalone generator, when combined with RAG, it significantly outperforms similar models in code generation.
+To assess the impact of RAG on code generation, they evaluate the model in three settings:
+Retrieval-based: Fetch the top-1 code sample as the prediction
+Generative-only: Output code based on the decoder only
+Retrieval-augmented: Append top-1 code sample to encoder input before code generation via the decoder.
+Overview of RAG for CodeT5+ ( source )
+As a qualitative example, they showed that retrieved code provides crucial context (e.g., use urllib3 for an HTTP request) and guides the generative process towards more correct predictions. In contrast, the generative-only approach returns incorrect output that only captures the concepts of “download” and “compress”.
+What if we don’t have relevance judgments for query-passage pairs? Without them, we would not be able to train the bi-encoders that embed the queries and documents in the same embedding space where relevance is represented by the inner product. Hypothetical document embeddings (HyDE) suggests a solution.
+Overview of HyDE ( source )
+Given a query, HyDE first prompts an LLM, such as InstructGPT, to generate a hypothetical document. Then, an unsupervised encoder, such as Contriver, encodes the document into an embedding vector. Finally, the inner product is computed between the hypothetical document and the corpus, and the most similar real documents are retrieved.
+The expectation is that the encoder’s dense bottleneck serves as a lossy compressor and the extraneous, non-factual details are excluded via the embedding. This reframes the relevance modeling problem from a representation learning task to a generation task.
+How to apply RAG
+From experience with Obsidian-Copilot , I’ve found that hybrid retrieval (traditional search index + embedding-based search) works better than either alone. There, I complemented classical retrieval (BM25 via OpenSearch) with semantic search ( e5-small-v2 ).
+Why not embedding-based search only? While it’s great in many instances, there are situations where it falls short, such as:
+Searching for a person or object’s name (e.g., Eugene, Kaptir 2.0)
+Searching for an acronym or phrase (e.g., RAG, RLHF)
+Searching for an ID (e.g., gpt-3.5-turbo , titan-xlarge-v1.01 )
+But keyword search has its limitations too. It only models simple word frequencies and doesn’t capture semantic or correlation information. Thus, it doesn’t deal well with synonyms or hypernyms (i.e., words that represent a generalization). This is where combining it with semantic search is complementary.
+In addition, with a conventional search index, we can use metadata to refine results. For example, we can use date filters to prioritize newer documents or narrow our search to a specific time period. And if the search is related to e-commerce, filters on average rating or categories are helpful. Finally, having metadata is handy for downstream ranking, such as prioritizing documents that are cited more, or boosting products by their sales volume.
+With regard to embeddings , the seemingly popular approach is to use text-embedding-ada-002 . Its benefits include ease of use via an API and not having to maintain our own embedding infra or self-host embedding models. Nonetheless, personal experience and anecdotes from others suggest there are better alternatives for retrieval.
+The OG embedding approaches include Word2vec and fastText . FastText is an open-source, lightweight library that enables users to leverage pre-trained embeddings or train new embedding models. It comes with pre-trained embeddings for 157 languages and is extremely fast, even without a GPU. It’s my go-to for early-stage proof of concepts.
+Another good baseline is sentence-transformers . It makes it simple to compute embeddings for sentences, paragraphs, and even images. It’s based on workhorse transformers such as BERT and RoBERTa and is available in more than 100 languages.
+More recently, instructor models have shown SOTA performance. During training, these models prepend the task description to the text. Then, when embedding new text, we simply have to describe the task to get task-specific embeddings. (Not that different from instruction tuning for embedding models IMHO.)
+An example is the E5 family of models. For open QA and information retrieval, we simply prepend documents in the index with passage: , and prepend queries with query: . If the task is symmetric (e.g., semantic similarity, paraphrase retrieval) or if we want to use embeddings as features (e.g., classification, clustering), we just use the query: prefix.
+The Instructor model takes it a step further, allowing users to customize the prepended prompt: “Represent the domain task_type for the task_objective :” For example, “Represent the Wikipedia document for retrieval:”. (The domain and task objective are optional). This brings the concept of prompt tuning into the field of text embedding.
+Finally, as of Aug 1st, the top embedding model on the MTEB Leaderboard is the GTE family of models by Alibaba DAMO Academy. The top performing model’s size is half of the next best model e5-large-v2 (0.67GB vs 1.34GB). In 2nd position is gte-base with a model size of only 0.22GB and embedding dimension of 768. (H/T Nirant .)
+To retrieve documents with low latency at scale, we use approximate nearest neighbors (ANN). It optimizes for retrieval speed and returns the approximate (instead of exact) top \(k\) most similar neighbors, trading off a little accuracy loss for a large speed up.
+ANN embedding indices are data structures that let us do ANN searches efficiently. At a high level, they build partitions over the embedding space so we can quickly zoom in on the specific space where the query vector is. Some popular techniques include:
+Locality Sensitive Hashing (LSH): The core idea is to create hash functions so that similar items are likely to end up in the same hash bucket. By only needing to check the relevant buckets, we can perform ANN queries efficiently.
+Facebook AI Similarity Search (FAISS): It uses a combination of quantization and indexing for efficient retrieval, supports both CPU and GPU, and can handle billions of vectors due to its efficient use of memory.
+Hierarchical Navigable Small Worlds (HNSW): Inspired by “six degrees of separation”, it builds a hierarchical graph structure that embodies the small world phenomenon. Here, most nodes can be reached from any other node via a minimum number of hops. This structure allows HNSW to initiate queries from broader, coarser approximations and progressively narrow the search at lower levels.
+Scalable Nearest Neighbors (ScaNN): It has a two-step process. First, coarse quantization reduces the search space. Then, fine-grained search is done within the reduced set. Best recall/latency trade-off I’ve seen.
+When evaluating an ANN index, some factors to consider include:
+Recall: How does it fare against exact nearest neighbors?
+Latency/throughput: How many queries can it handle per second?
+Memory footprint: How much RAM is required to serve an index?
+Ease of adding new items: Can new items be added without having to reindex all documents (LSH) or does the index need to be rebuilt (ScaNN)?
+No single framework is better than all others in every aspect. Thus, start by defining your functional and non-functional requirements before benchmarking. Personally, I’ve found ScaNN to be outstanding in the recall-latency trade-off (see benchmark graph here ).
+Fine-tuning: To get better at specific tasks
+Fine-tuning is the process of taking a pre-trained model (that has already been trained with a vast amount of data) and further refining it on a specific task. The intent is to harness the knowledge that the model has already acquired during its pre-training and apply it to a specific task, usually involving a smaller, task-specific, dataset.
+The term “fine-tuning” is used loosely and can refer to several concepts such as:
+Continued pre-training : With domain-specific data, apply the same pre-training regime (next token prediction, masked language modeling) on the base model.
+Instruction fine-tuning : The pre-trained (base) model is fine-tuned on examples of instruction-output pairs to follow instructions, answer questions, be waifu, etc.
+Single-task fine-tuning : The pre-trained model is honed for a narrow and specific task such as toxicity detection or summarization, similar to BERT and T5.
+Reinforcement learning with human feedback (RLHF) : This combines instruction fine-tuning with reinforcement learning. It requires collecting human preferences (e.g., pairwise comparisons) which are then used to train a reward model. The reward model is then used to further fine-tune the instructed LLM via RL techniques such as proximal policy optimization (PPO).
+We’ll mainly focus on single-task and instruction fine-tuning here.
+Why fine-tuning?
+Fine-tuning an open LLM is becoming an increasingly viable alternative to using a 3rd-party, cloud-based LLM for several reasons.
+Performance & control: Fine-tuning can improve the performance of an off-the-shelf base model, and may even surpass a 3rd-party LLM. It also provides greater control over LLM behavior, resulting in a more robust system or product. Overall, fine-tuning enables us to build products that are differentiated from simply using 3rd-party or open LLMs.
+Modularization: Single-task fine-tuning lets us to use an army of smaller models that each specialize on their own tasks. Via this setup, a system can be modularized into individual models for tasks like content moderation, extraction, summarization, etc. Also, given that each model only has to focus on a narrow set of tasks, we can get around the alignment tax, where fine-tuning a model on one task reduces performance on other tasks.
+Reduced dependencies: By fine-tuning and hosting our own models, we can reduce legal concerns about proprietary data (e.g., PII, internal documents and code) being exposed to external APIs. It also gets around constraints that come with 3rd-party LLMs such as rate-limiting, high costs, or overly restrictive safety filters. By fine-tuning and hosting our own LLMs, we can ensure data doesn’t leave our network, and can scale throughput as needed.
+More about fine-tuning
+Why do we need to fine-tune a base model? At the risk of oversimplifying, base models are primarily optimized to predict the next word based on the corpus they’re trained on. Hence, they aren’t naturally adept at following instructions or answering questions. When posed a question, they tend to respond with more questions. Thus, we perform instruction fine-tuning so they learn to respond appropriately.
+However, fine-tuning isn’t without its challenges. First, we need a significant volume of demonstration data . For instance, in the InstructGPT paper , they used 13k instruction-output samples for supervised fine-tuning, 33k output comparisons for reward modeling, and 31k prompts without human labels as input for RLHF.
+Furthermore, fine-tuning comes with an alignment tax—the process can lead to lower performance on certain critical tasks . (There’s no free lunch after all.) The same InstructGPT paper found that RLHF led to performance regressions (relative to the GPT-3 base model) on public NLP tasks like SQuAD, HellaSwag, and WMT 2015 French to English. (A workaround is to have several smaller, specialized models that excel at narrow tasks.)
+Fine-tuning is similar to the concept of transfer learning. As defined in Wikipedia: “Transfer learning is a technique in machine learning in which knowledge learned from a task is re-used to boost performance on a related task.” Several years ago, transfer learning made it easy for me to apply ResNet models trained on ImageNet to classify fashion products and build image search .
+ULMFit is one of the earlier papers to apply transfer learning to text. They established the protocol of self-supervised pre-training (on unlabeled data) followed by fine-tuning (on labeled data). They used AWS-LSTM, an LSTM variant with dropout at various gates.
+Overview of ULMFit ( source )
+During pre-training (next word prediction), the model is trained on wikitext-103 which contains 28.6 Wikipedia articles and 103M words. Then, during target task fine-tuning, the LM is fine-tuned with data from the domain of the specific task. Finally, during classifier fine-tuning, the model is augmented with two additional linear blocks and fine-tuned on the target classification tasks which includes sentiment analysis, question classification, and topic classification.
+Since then, the pre-training followed by fine-tuning paradigm has driven much progress in language modeling. Bidirectional Encoder Representations from Transformers (BERT; encoder only) was pre-trained on masked language modeling and next sentence prediction on English Wikipedia and BooksCorpus. It was then fine-tuned on task-specific inputs and labels for single-sentence classification, sentence pair classification, single-sentence tagging, and question & answering.
+Overview of BERT ( source )
+Generative Pre-trained Transformers (GPT; decoder only) was first pre-trained on BooksCorpus via next token prediction. This was followed by single-task fine-tuning for tasks such as text classification, textual entailment, similarity, and Q&A. Interestingly, they found that including language modeling as an auxiliary objective helped the model generalize and converge faster during training.
+Overview of GPT ( source )
+Text-to-text Transfer Transformer (T5; encoder-decoder) was pre-trained on the Colossal Clean Crawled Corpus (C4), a cleaned version of the Common Crawl from April 2019. It employed the same denoising objective as BERT, namely masked language modeling. It was then fine-tuned on tasks such as text classification, abstractive summarization, Q&A, and machine translation.
+Overview of T5 ( source )
+But unlike ULMFIt, BERT, and GPT which used different classifier heads for downstream tasks, T5 represented downstream tasks as text-to-text only. For example, a translation task would have input text starting with Translation English to German: , while a summarization task might start with Summarize: or TL;DR: . The prefix essentially became a hyperparameter (first instance of prompt engineering?) This design choice allowed them to use a single fine-tuned model across a variety of downstream tasks.
+InstructGPT expanded this idea of single-task fine-tuning to instruction fine-tuning. The base model was GPT-3, pre-trained on internet data including Common Crawl, WebText, Books, and Wikipedia. It then applied supervised fine-tuning on demonstrations of desired behavior (instruction and output). Next, it trained a reward model on the dataset of comparisons. Finally, it optimized the instructed model against the reward model via PPO, with this last stage focusing more on alignment than specific task performance.
+Overview of fine-tuning steps in InstructGPT ( source )
+Next, let’s move from fine-tuned models to fine-tuning techniques.
+Soft prompt tuning prepends a trainable tensor to the model’s input embeddings, essentially creating a soft prompt. Unlike discrete text prompts, soft prompts can be learned via backpropagation, meaning they can be fine-tuned to incorporate signals from any number of labeled examples.
+Next, there’s prefix tuning . Instead of adding a soft prompt to the model input, it prepends trainable parameters to the hidden states of all transformer blocks. During fine-tuning, the LM’s original parameters are kept frozen while the prefix parameters are updated.
+Overview of prefix-tuning ( source )
+The paper showed that this achieved performance comparable to full fine-tuning despite requiring updates on just 0.1% of parameters. Moreover, in settings with limited data and involved extrapolation to new topics, it outperformed full fine-tuning. One hypothesis is that training fewer parameters helped reduce overfitting on smaller target datasets.
+There’s also the adapter technique. This method adds fully connected network layers twice to each transformer block, after the attention layer and after the feed-forward network layer. On GLUE, it’s able to achieve within 0.4% of the performance of full fine-tuning by just adding 3.6% parameters per task.
+Overview of adapters ( source )
+Low-Rank Adaptation (LoRA) is a technique where adapters are designed to be the product of two low-rank matrices. It was inspired by Aghajanyan et al. which showed that, when adapting to a specific task, pre-trained language models have a low intrinsic dimension and can still learn efficiently despite a random projection into a smaller subspace. Thus, LoRA hypothesized that weight updates during adaption also have low intrinsic rank.
+Overview of LoRA ( source )
+Similar to prefix tuning, they found that LoRA outperformed several baselines including full fine-tuning. Again, the hypothesis is that LoRA, thanks to its reduced rank, provides implicit regularization. In contrast, full fine-tuning, which updates all weights, could be prone to overfitting.
+QLoRA builds on the idea of LoRA. But instead of using the full 16-bit model during fine-tuning, it applies a 4-bit quantized model. It introduced several innovations such as 4-bit NormalFloat (to quantize models), double quantization (for additional memory savings), and paged optimizers (that prevent OOM errors by transferring data to CPU RAM when the GPU runs out of memory).
+Overview of QLoRA ( source )
+As a result, QLoRA reduces the average memory requirements for fine-tuning a 65B model from > 780GB memory to a more manageable 48B without degrading runtime or predictive performance compared to a 16-bit fully fine-tuned baseline.
+(Fun fact: During a meetup with Tim Dettmers, an author of QLoRA, he quipped that double quantization was “a bit of a silly idea but works perfectly.” Hey, if it works, it works.)
+How to apply fine-tuning?
+The first step is to collect demonstration data/labels . These could be for straightforward tasks such as document classification, entity extraction, or summarization, or they could be more complex such as Q&A or dialogue. Some ways to collect this data include:
+Via experts or crowd-sourced human annotators : While this is expensive and slow, it usually leads to higher-quality data with good guidelines .
+Via user feedback : This can be as simple as asking users to select attributes that describe a product, rating LLM responses with thumbs up or down (e.g., ChatGPT), or logging which images users choose to download (e.g., Midjourney).
+Query larger open models with permissive licenses : With prompt engineering, we might be able to elicit reasonable demonstration data from a larger model (Falcon 40B Instruct) that can be used to fine-tune a smaller model.
+Reuse open-source data : If your task can be framed as a natural language inference (NLI) task, we could fine-tune a model to perform NLI using MNLI data . Then, we can continue fine-tuning the model on internal data to classify inputs as entailment, neutral, or contradiction.
+Note: Some LLM terms prevent users from using their output to develop other models.
+OpenAI Terms of Use (Section 2c, iii): You may not use output from the Services to develop models that compete with OpenAI.
+LLaMA 2 Community License Agreement (Section 1b-v): You will not use the Llama Materials or any output or results of the Llama Materials to improve any other large language model (excluding Llama 2 or derivative works thereof).
+The next step is to define evaluation metrics . We’ve discussed this in a previous section .
+Then, select a pre-trained model. There are several open LLMs with permissive licenses to choose from. Excluding Llama 2 (since it isn’t fully commercial use), Falcon-40B is known to be the best-performing model. Nonetheless, I’ve found it unwieldy to fine-tune and serve in production given how heavy it is.
+Instead, I’m inclined to use smaller models like the Falcon-7B. And if we can simplify and frame the task more narrowly, BERT (340M params), RoBERTA (355M params), and BART (406M params) are solid picks for classification and natural language inference tasks. Beyond that, Flan-T5 (770M and 3B variants) is a reliable baseline for translation, abstractive summarization, headline generation, etc.
+We may also need to update the model architecture , such as when the pre-trained model’s architecture doesn’t align with the task. For example, we might need to update the classification heads on BERT or T5 to match our task. Tip: If the task is a simple binary classification task, NLI models can work out of the box. Entailment is mapped to positive, contradiction is mapped to negative, while the neural label can indicate uncertainty.
+Then, pick a fine-tuning approach. LoRA and QLoRA are good places to start. But if your fine-tuning is more intensive, such as continued pre-training on new domain knowledge, you may find full fine-tuning necessary.
+Finally, basic hyperparameter tuning. Generally, most papers focus on learning rate, batch size, and number of epochs (see LoRA, QLoRA). And if we’re using LoRA, we might want to tune the rank parameter (though the QLoRA paper found that different rank and alpha led to similar results). Other hyperparameters include input sequence length, loss type (contrastive loss vs. token match), and data ratios (like the mix of pre-training or demonstration data, or the ratio of positive to negative examples, among others).
+Caching: To reduce latency and cost
+Caching is a technique to store data that has been previously retrieved or computed. This way, future requests for the same data can be served faster. In the space of serving LLM generations, the popularized approach is to cache the LLM response keyed on the embedding of the input request. Then, for each new request, if a semantically similar request is received, we can serve the cached response.
+For some practitioners, this sounds like “ a disaster waiting to happen. ” I’m inclined to agree. Thus, I think the key to adopting this pattern is figuring out how to cache safely, instead of solely depending on semantic similarity.
+Why caching?
+Caching can significantly reduce latency for responses that have been served before. In addition, by eliminating the need to compute a response for the same input again and again, we can reduce the number of LLM requests and thus save cost. Also, there are certain use cases that do not support latency on the order of seconds. Thus, pre-computing and caching may be the only way to serve those use cases.
+More about caching
+A cache is a high-speed storage layer that stores a subset of data that’s accessed more frequently. This lets us serve these requests faster via the cache instead of the data’s primary storage (e.g., search index, relational database). Overall, caching enables efficient reuse of previously fetched or computed data. (More about caching and best practices .)
+An example of caching for LLMs is GPTCache .
+Overview of GPTCache ( source )
+When a new request is received:
+Embedding generator: This embeds the request via various models such as OpenAI’s text-embedding-ada-002 , FastText, Sentence Transformers, and more.
+Similarity evaluator: This computes the similarity of the request via the vector store and then provides a distance metric. The vector store can either be local (FAISS, Hnswlib) or cloud-based. It can also compute similarity via a model.
+Cache storage: If the request is similar, the cached response is fetched and served.
+LLM: If the request isn’t similar enough, it gets passed to the LLM which then generates the result. Finally, the response is served and cached for future use.
+Redis also shared a similar example , mentioning that some teams go as far as precomputing all the queries they anticipate receiving. Then, they set a similarity threshold on which queries are similar enough to warrant a cached response.
+How to apply caching?
+We should start with having a good understanding of user request patterns . This allows us to design the cache thoughtfully so it can be applied reliably.
+First, let’s consider a non-LLM example. Imagine we’re caching product prices for an e-commerce site. During checkout, is it safe to display the (possibly outdated) cached price? Probably not, since the price the customer sees during checkout should be the same as the final amount they’re charged. Caching isn’t appropriate here as we need to ensure consistency for the customer.
+Now, bringing it back to LLM responses. Imagine we get a request for a summary of “Mission Impossible 2” that’s semantically similar enough to “Mission Impossible 3”. If we’re looking up cache based on semantic similarity, we could serve the wrong response.
+We also need to consider if caching is effective for the usage pattern. One way to quantify this is via the cache hit rate (percentage of requests served directly from the cache). If the usage pattern is uniformly random, the cache would need frequent updates. Thus, the effort to keep the cache up-to-date could negate any benefit a cache has to offer. On the other hand, if the usage follows a power law where a small proportion of unique requests account for the majority of traffic (e.g., search queries, product views), then caching could be an effective strategy.
+Beyond semantic similarity, we could also explore caching based on:
+Item IDs: This applies when we pre-compute summaries of product reviews or generate a summary for an entire movie trilogy.
+Pairs of Item IDs: Such as when we generate comparisons between two movies. While this appears to be \(O(N^2)\), in practice, a small number of combinations drive the bulk of traffic, such as comparison between popular movies in a series or genre.
+Constrained input: Such as variables like movie genre, director, or lead actor. For example, if a user is looking for movies by a specific director, we could execute a structured query and run it through an LLM to frame the response more eloquently. Another example is generating code based on drop-down options —if the code has been verified to work, we can cache it for reliable reuse.
+Also, caching doesn’t only have to occur on-the-fly. As Redis shared, we can pre-compute LLM generations offline or asynchronously before serving them. By serving from a cache, we shift the latency from generation (typically seconds) to cache lookup (milliseconds). Pre-computing in batch can also help reduce cost relative to serving in real-time.
+While the approaches listed here may not be as flexible as semantically caching on natural language inputs, I think it provides a good balance between efficiency and reliability.
+Guardrails: To ensure output quality
+In the context of LLMs, guardrails validate the output of LLMs, ensuring that the output doesn’t just sound good but is also syntactically correct, factual, and free from harmful content. It also includes guarding against adversarial input.
+Why guardrails?
+First, they help ensure that model outputs are reliable and consistent enough to use in production. For example, we may require output to be in a specific JSON schema so that it’s machine-readable, or we need code generated to be executable. Guardrails can help with such syntactic validation.
+Second, they provide an additional layer of safety and maintain quality control over an LLM’s output. For example, to verify if the content generated is appropriate for serving, we may want to check that the output isn’t harmful, verify it for factual accuracy, or ensure coherence with the context provided.
+More about guardrails
+One approach is to control the model’s responses via prompts. For example, Anthropic shared about prompts designed to guide the model toward generating responses that are helpful, harmless, and honest (HHH). They found that Python fine-tuning with the HHH prompt led to better performance compared to fine-tuning with RLHF.
+Example of HHH prompt ( source )
+A more common approach is to validate the output. An example is the Guardrails package . It allows users to add structural, type, and quality requirements on LLM outputs via Pydantic-style validation. And if the check fails, it can trigger corrective action such as filtering on the offending output or regenerating another response.
+Most of the validation logic is in validators.py . It’s interesting to see how they’re implemented. Broadly speaking, its validators fall into the following categories:
+Single output value validation: This includes ensuring that the output (i) is one of the predefined choices, (ii) has a length within a certain range, (iii) if numeric, falls within an expected range, and (iv) is a complete sentence.
+Syntactic checks: This includes ensuring that generated URLs are valid and reachable, and that Python and SQL code is bug-free.
+Semantic checks: This verifies that the output is aligned with the reference document, or that the extractive summary closely matches the source document. These checks can be done via cosine similarity or fuzzy matching techniques.
+Safety checks: This ensures that the generated output is free of inappropriate language or that the quality of translated text is high.
+Nvidia’s NeMo-Guardrails follows a similar principle but is designed to guide LLM-based conversational systems. Rather than focusing on syntactic guardrails, it emphasizes semantic ones. This includes ensuring that the assistant steers clear of politically charged topics, provides factually correct information, and can detect jailbreaking attempts.
+Thus, NeMo’s approach is somewhat different: Instead of using more deterministic checks like verifying if a value exists in a list or inspecting code for syntax errors, NeMo leans heavily on using another LLM to validate outputs (inspired by SelfCheckGPT ).
+In their example for fact-checking and preventing hallucination, they ask the LLM itself to check whether the most recent output is consistent with the given context. To fact-check, the LLM is queried if the response is true based on the documents retrieved from the knowledge base. To prevent hallucinations, since there isn’t a knowledge base available, they get the LLM to generate multiple alternative completions which serve as the context. The underlying assumption is that if the LLM produces multiple completions that disagree with one another, the original completion is likely a hallucination.
+The moderation example follows a similar approach: The response is screened for harmful and unethical content via an LLM. Given the nuance of ethics and harmful content, heuristics and conventional machine learning techniques fall short. Thus, an LLM is required for a deeper understanding of the intent and structure of dialogue.
+Apart from using guardrails to verify the output of LLMs, we can also directly steer the output to adhere to a specific grammar. An example of this is Microsoft’s Guidance . Unlike Guardrails which imposes JSON schema via a prompt , Guidance enforces the schema by injecting tokens that make up the structure.
+We can think of Guidance as a domain-specific language for LLM interactions and output. It draws inspiration from Handlebars , a popular templating language used in web applications that empowers users to perform variable interpolation and logical control.
+However, Guidance sets itself apart from regular templating languages by executing linearly. This means it maintains the order of tokens generated. Thus, by inserting tokens that are part of the structure—instead of relying on the LLM to generate them correctly—Guidance ca
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":60000,"paragraph_count":261,"sentence_count":494,"boilerplate_hits":0,"symbol_ratio":0.0048,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Evals, RAG, fine-tuning, caching, guardrails, defensive UX, and collecting user feedback.
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   Discussions on HackerNews , Twitter , and LinkedIn “There is a large class of problems that are easy to imagine and build demos for, but extremely hard to make products out of.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   For example, self-driving: It’s easy to demo a car self-driving around a block, but making it into a product takes a decade.
+
+4. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
+   ” - Karpathy This write-up is about practical patterns for integrating large language models (LLMs) into systems & products.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   We’ll build on academic research, industry resources, and practitioner know-how, and distill them into key ideas and practices.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   There are seven key patterns.
+
+## business_elements
+
+- companies: Eugene Yan's Blog
+- products: GPT-4, ChatGPT, Claude
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 计费 / 预算管理
+- business_actions: 暂无公开信息
+- affected_departments: IT / 安全, 法务, 财务 / 预算
+- numbers: 57, 200, 4, 20, 1, 2, 000, 5
+- quotes: hard alignment / soft alignment /  do not work with/report or trust MMLU scores  / suggest games for a 3-year-old and a 7-year-old to play
+
+## evidence_seed
+
+- company_actions: Evals, RAG, fine-tuning, caching, guardrails, defensive UX, and collecting user feedback. / Discussions on HackerNews , Twitter , and LinkedIn “There is a large class of problems that are easy to imagine and build demos for, but extremely hard to make products out of. / For example, self-driving: It’s easy to demo a car self-driving around a block, but making it into a product takes a decade.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: false
+- change: false
+- trend: false
+- daily_observation: false
+- heatmap: false
+- briefing: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Evals, RAG, fine-tuning, caching, guardrails, defensive UX, and collecting user feedback.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

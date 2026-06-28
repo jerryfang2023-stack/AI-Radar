@@ -1148,6 +1148,7 @@ function domainLabelFromUrl(value = "") {
       ["amazon", "Amazon"],
       ["aws", "AWS"],
       ["arxiv", "arXiv"],
+      ["digitalapplied", "Digital Applied"],
     ]);
     return known.get(primary) || primary.replace(/(^|-)([a-z])/gu, (_, prefix, char) => `${prefix}${char.toUpperCase()}`);
   } catch {
@@ -1264,6 +1265,24 @@ function fundingAngleFromScenario(scenario) {
   return scenario.replace(/流程$/u, "");
 }
 
+function cleanSourceTitleForPublicTitle(title = "") {
+  return publicCardCopy(String(title || "")
+    .replace(/&amp;/gu, "&")
+    .replace(/&#8217;|&rsquo;/gu, "'")
+    .replace(/&quot;/gu, "\"")
+    .replace(/\s+/gu, " ")
+    .trim())
+    .slice(0, 96);
+}
+
+function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount }) {
+  const owner = publicCardCopy(company || "AI");
+  const sourceTitle = cleanSourceTitleForPublicTitle(sourceEventTitle);
+  const money = amount ? `${amount} ` : "";
+  if (type === "funding") return `${owner} 融资事件：${money}${sourceTitle}`;
+  return `${owner} 来源标题：${sourceTitle}`;
+}
+
 function cleanSourceEventTitle(title = "") {
   const text = String(title || "")
     .replace(/^["'`]+|["'`]+$/gu, "")
@@ -1329,8 +1348,8 @@ function autoSignalSpec(poolRef, section, index) {
   const originalTitle = poolTitle(section);
   const sourceTitle = originalTitle || "";
   const sourceEventTitle = cleanSourceEventTitle(sourceTitle);
-  const title = sourceEventTitle;
-  if (!title) return null;
+  if (!sourceEventTitle) return null;
+  const title = publicTitleForAutoSignal({ type, company, sourceEventTitle, amount });
   const sourcePoints = sourcePointsFromSection(section);
   const sourceExcerpt = sourceExcerptFromSection(section, sourcePoints);
   const fallbackEventLine = type === "funding"
@@ -1524,7 +1543,11 @@ function autoSignalsFromPool(sections, explicitSpecs) {
 
 function yamlList(items) {
   if (!items?.length) return "[]";
-  return `[${items.map((item) => `"${item}"`).join(", ")}]`;
+  return `[${items.map(yamlString).join(", ")}]`;
+}
+
+function yamlString(input = "") {
+  return JSON.stringify(String(input || "").replace(/\s+/gu, " ").trim());
 }
 
 function uniq(items) {

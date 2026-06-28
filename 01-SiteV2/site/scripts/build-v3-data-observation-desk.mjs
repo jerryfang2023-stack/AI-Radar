@@ -94,7 +94,13 @@ function syncSourceTitleTranslationsFromCards(rawCards = [], activeDate = "") {
       .map((entry) => titleTranslationKey(entry?.sourceTitle || ""))
       .filter(Boolean)
   );
+  const existingByKey = new Map(
+    translations
+      .map((entry) => [titleTranslationKey(entry?.sourceTitle || ""), entry])
+      .filter(([key]) => key)
+  );
   let added = 0;
+  let updated = 0;
   for (const card of rawCards) {
     if (!card || card.date !== activeDate) continue;
     const zhTitle = String(card.title || "").trim();
@@ -102,17 +108,26 @@ function syncSourceTitleTranslationsFromCards(rawCards = [], activeDate = "") {
     for (const sourceTitle of [card.sourceTitle, card.originalTitle].map(cleanEnglishTitleForDisplay).filter(Boolean)) {
       if (!titleNeedsChineseTranslation(sourceTitle)) continue;
       const key = titleTranslationKey(sourceTitle);
-      if (!key || seen.has(key)) continue;
+      if (!key) continue;
+      if (seen.has(key)) {
+        const entry = existingByKey.get(key);
+        if (entry && titleLooksLikeAutoSignalFallback(entry.zhTitle || entry.translation || "") && entry.zhTitle !== zhTitle) {
+          entry.zhTitle = zhTitle;
+          sourceTitleTranslations.set(key, zhTitle);
+          updated += 1;
+        }
+        continue;
+      }
       translations.push({ sourceTitle, zhTitle });
       seen.add(key);
       sourceTitleTranslations.set(key, zhTitle);
       added += 1;
     }
   }
-  if (!added) return;
+  if (!added && !updated) return;
   fs.mkdirSync(path.dirname(sourceTitleTranslationsFile), { recursive: true });
   fs.writeFileSync(sourceTitleTranslationsFile, `${JSON.stringify(json, null, 2)}\n`, "utf8");
-  console.log(`Updated ${rel(sourceTitleTranslationsFile)} with ${added} active-date source title translation(s).`);
+  console.log(`Updated ${rel(sourceTitleTranslationsFile)} with ${added} added and ${updated} refreshed active-date source title translation(s).`);
 }
 
 function canonicalUrl(url = "") {
@@ -683,6 +698,7 @@ function subjectFromUrl(url = "") {
     if (host === "googlecloudpresscorner.com") return "The Home Depot";
     if (host === "e2b.dev") return "E2B";
     if (host === "a16z.com") return "Andreessen Horowitz";
+    if (host === "digitalapplied.com") return "Digital Applied";
     if (host === "bvp.com") return "Bessemer Venture Partners";
     if (host === "techcrunch.com" && pathname.includes("alphabets-record")) return "Alphabet / Google";
     if (host === "stripe.com" && pathname.includes("cognition")) return "Cognition";
@@ -1150,6 +1166,10 @@ function titleLooksLikeGeneratedTemplate(title = "") {
   return /\u8bb0\u5f55\u4f01\u4e1a\u5e94\u7528\u573a\u666f|\u516c\u5f00\u6750\u6599\u663e\u793a|\u5546\u4e1a\u4fe1\u53f7/iu.test(String(title || ""));
 }
 
+function titleLooksLikeAutoSignalFallback(title = "") {
+  return /发布 AI 能力|案例显示 AI 进入|融资事件：\s*\$?\d.*发布 AI 能力|来源标题：\s*$/iu.test(String(title || ""));
+}
+
 function isBadPublicDisplayTitle(title = "") {
   return /案例：\s*AI\s*进入|信号：\s*AI\s*进入|用途见原文|原文所述|原文 AI 事件|原文事件标题|的原文业务场景|linkedin\s+(?:的原文|融资)|github\s+的原文|devblogs\s+应用|angelinvestorsnetwork\s+融资/iu.test(String(title || ""));
 }
@@ -1225,7 +1245,8 @@ function normalizeFactDerivedTitle(value = "") {
 
 function normalizeFrontstageDisplay(card = {}, options = {}) {
   const strictPublic = options.strictPublic !== false;
-  const internalTitle = publicTitleCandidate(card.originalTitle || card.sourceTitle || card.rawTitle, card.sourceUrl);
+  const explicitTitle = publicTitleCandidate(card.displayTitle || card.title, card.sourceUrl);
+  const internalTitle = explicitTitle || publicTitleCandidate(card.originalTitle || card.sourceTitle || card.rawTitle, card.sourceUrl);
   const originalTitle = card.originalTitle || (internalTitle !== card.title ? card.title : "");
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
   const cleanFact = cleanSourceFactOverride(card.sourceUrl);
@@ -1240,7 +1261,7 @@ function normalizeFrontstageDisplay(card = {}, options = {}) {
       && !publicFactLooksLikeTemplateFallback(value)
   )) || "";
   const cleanedTranslatedFact = cleanPublicSourceFact(translatedFact);
-  const preferredDisplayTitle = publicDisplayTitle(sourceTitle, strictPublic ? "" : internalTitle, card.sourceUrl, { allowGeneratedFallback: !strictPublic });
+  const preferredDisplayTitle = publicDisplayTitle(sourceTitle, strictPublic ? "" : internalTitle, card.sourceUrl, { allowGeneratedFallback: !strictPublic }) || explicitTitle;
   const displayTitle = publicDisplayTitleIsReady(preferredDisplayTitle)
     ? preferredDisplayTitle
     : "";
@@ -2785,8 +2806,9 @@ function cardFromFile(file, category) {
   const importanceScore = Number(nestedScalar(fm, "primary_raw", "importance_score") || scalar(fm, "importance_score") || 0) || 0;
   const explicitSourceTitle = scalar(fm, "source_title");
   const explicitDisplayTitle = nestedScalar(fm, "frontend", "displayTitle") || scalar(fm, "title") || "";
-  const rawDisplayTitle = frontstageTitle(explicitSourceTitle || rawTitle || path.basename(file, ".md"), rawTitle);
-  const title = publicTitleCandidate(explicitSourceTitle || rawTitle || rawDisplayTitle, sourceUrl);
+  const explicitPublicTitle = publicTitleCandidate(explicitDisplayTitle, sourceUrl);
+  const rawDisplayTitle = frontstageTitle(explicitPublicTitle || explicitSourceTitle || rawTitle || path.basename(file, ".md"), rawTitle);
+  const title = explicitPublicTitle || publicTitleCandidate(explicitSourceTitle || rawTitle || rawDisplayTitle, sourceUrl);
   const titleFact = sourceTitleDerivedFact(rawDisplayTitle || title, sourceUrl);
   let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl, [titleFact]);
   if (!originalHighlights.length) originalHighlights = markdownHighlights;
