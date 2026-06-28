@@ -184,7 +184,7 @@ jobs:
           sources=(aihot keyword gdelt rss)
           pids=()
           logs=()
-          source_timeout="${SOURCE_COLLECTION_TIMEOUT:-8m}"
+          source_timeout="${SOURCE_COLLECTION_TIMEOUT:-12m}"
 
           for source in "${sources[@]}"; do
             log_file="agent-workflow/reports/source-runs/${RUN_DATE}/${source}-source-run.log"
@@ -243,7 +243,8 @@ jobs:
             --snapshot-timeout-ms=16000 \
             --use-source-artifacts=true \
             --source-artifact-dir="agent-workflow/reports/source-runs/${RUN_DATE}" \
-            --monitor-timeout-ms=840000 \
+            --source-refresh-timeout-ms=900000 \
+            --monitor-timeout-ms=900000 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-monitor-run.log"
 
       - name: Check monitor readiness
