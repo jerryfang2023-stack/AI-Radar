@@ -38,6 +38,11 @@ on:
         required: false
         default: "12"
         type: string
+      disable_tavily:
+        description: "Disable Tavily fallback provider. Use false for keyword-only recovery when Anysearch quota is exhausted."
+        required: false
+        default: "true"
+        type: string
 
 permissions:
   contents: read
@@ -55,7 +60,7 @@ jobs:
       TZ: Asia/Shanghai
       ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
       TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
-      TAVILY_DISABLED: "true"
+      TAVILY_DISABLED: ${{ github.event.inputs.disable_tavily || 'true' }}
       EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
 
     steps:
