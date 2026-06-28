@@ -2,15 +2,15 @@
 id: SIG-20260628-A03
 type: signal_card
 signal_type: case
-title: "Tigera 来源标题：Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform"
+title: "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform"
 date: 2026-06-28
 status: published
 source_title: "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-050"]
 pool_refs: ["P-047"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Tigera 来源标题：Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform 来源材料显示，Tigera 的客户部署或应用案..."
+  source_excerpt: "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform 来源材料显示，Tigera 的客户部署或应用案例涉及企业智能体协作流程。"
   missing_fields: ["specific_task", "adoption_evidence"]
 
 signal_owner: "Tigera"
 
 frontend:
-  displayTitle: "Tigera 来源标题：Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform"
+  displayTitle: "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform"
   sourceLinks:
     - "https://www.tigera.io/blog/five-principles-of-an-accountable-ai-agent-network-how-to-evaluate-any-governance-platform/"
 ---
 
-# Tigera 来源标题：Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform
+# Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform
 
 ## 新闻事实
 

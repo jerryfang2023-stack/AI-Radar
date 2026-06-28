@@ -1279,8 +1279,8 @@ function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount }) {
   const owner = publicCardCopy(company || "AI");
   const sourceTitle = cleanSourceTitleForPublicTitle(sourceEventTitle);
   const money = amount ? `${amount} ` : "";
-  if (type === "funding") return `${owner} 融资事件：${money}${sourceTitle}`;
-  return `${owner} 来源标题：${sourceTitle}`;
+  if (type === "funding") return `${owner} ${money}${sourceTitle}`.trim();
+  return sourceTitle;
 }
 
 function cleanSourceEventTitle(title = "") {

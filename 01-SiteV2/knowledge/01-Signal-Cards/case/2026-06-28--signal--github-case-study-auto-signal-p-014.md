@@ -2,15 +2,15 @@
 id: SIG-20260628-A02
 type: signal_card
 signal_type: case
-title: "GitHub case study 来源标题：GitHub case study: Enhancing customer support with AI"
+title: "GitHub case study: Enhancing customer support with AI"
 date: 2026-06-28
 status: published
 source_title: "GitHub case study: Enhancing customer support with AI"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-014"]
 pool_refs: ["P-014"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: ["case_study"]
   source_evidence_type: ["technical_blog", "first_party_case"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "GitHub case study 来源标题：GitHub case study: Enhancing customer support with AI GitHub case study: Enhancing customer support with AI 来源材料显示，GitHub case study 的AI 商业动作涉及销售和收入团队流程；原文同时出现 60%、7 m 等数字。"
+  source_excerpt: "GitHub case study: Enhancing customer support with AI GitHub case study: Enhancing customer support with AI 来源材料显示，GitHub case study 的AI 商业动作涉及销售和收入团队流程；原文同时出现 60%、7 m 等数字。"
   missing_fields: ["delivery_model"]
 
 signal_owner: "GitHub case study"
 
 frontend:
-  displayTitle: "GitHub case study 来源标题：GitHub case study: Enhancing customer support with AI"
+  displayTitle: "GitHub case study: Enhancing customer support with AI"
   sourceLinks:
     - "https://github.com/resources/whitepapers/enhancing-customer-support-with-ai"
 ---
 
-# GitHub case study 来源标题：GitHub case study: Enhancing customer support with AI
+# GitHub case study: Enhancing customer support with AI
 
 ## 新闻事实
 

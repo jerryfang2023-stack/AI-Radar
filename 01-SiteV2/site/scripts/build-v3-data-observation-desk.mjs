@@ -1167,7 +1167,7 @@ function titleLooksLikeGeneratedTemplate(title = "") {
 }
 
 function titleLooksLikeAutoSignalFallback(title = "") {
-  return /发布 AI 能力|案例显示 AI 进入|融资事件：\s*\$?\d.*发布 AI 能力|来源标题：\s*$/iu.test(String(title || ""));
+  return /发布 AI 能力|案例显示 AI 进入|融资事件：\s*\$?\d.*发布 AI 能力|来源标题/iu.test(String(title || ""));
 }
 
 function isBadPublicDisplayTitle(title = "") {

@@ -2,15 +2,15 @@
 id: SIG-20260628-A08
 type: signal_card
 signal_type: case
-title: "How AWS SMGS 来源标题：How AWS SMGS uses an AI-powered conversational assistant to transform business management with A"
+title: "How AWS SMGS uses an AI-powered conversational assistant to transform business management with A"
 date: 2026-06-28
 status: published
 source_title: "How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore | Artificial Intelligence"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-006"]
 pool_refs: ["P-006"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "How AWS SMGS 来源标题：How AWS SMGS uses an AI-powered conversational assistant to transform business management with A How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Be..."
+  source_excerpt: "How AWS SMGS uses an AI-powered conversational assistant to transform business management with A How AWS SMGS uses an AI-powered conversational assistant to transform business management with Amazon Bedrock AgentCore | ..."
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "How AWS SMGS"
 
 frontend:
-  displayTitle: "How AWS SMGS 来源标题：How AWS SMGS uses an AI-powered conversational assistant to transform business management with A"
+  displayTitle: "How AWS SMGS uses an AI-powered conversational assistant to transform business management with A"
   sourceLinks:
     - "https://aws.amazon.com/blogs/machine-learning/how-aws-smgs-uses-an-ai-powered-conversational-assistant-to-transform-business-management-with-amazon-bedrock-agentcore/"
 ---
 
-# How AWS SMGS 来源标题：How AWS SMGS uses an AI-powered conversational assistant to transform business management with A
+# How AWS SMGS uses an AI-powered conversational assistant to transform business management with A
 
 ## 新闻事实
 

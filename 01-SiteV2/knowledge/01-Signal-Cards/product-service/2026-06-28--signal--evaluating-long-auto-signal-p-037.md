@@ -2,15 +2,15 @@
 id: SIG-20260628-A05
 type: signal_card
 signal_type: product_service
-title: "Evaluating Long 来源标题：Evaluating Long-Context Question & Answer Systems"
+title: "Evaluating Long-Context Question & Answer Systems"
 date: 2026-06-28
 status: published
 source_title: "Evaluating Long-Context Question &amp; Answer Systems"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-038"]
 pool_refs: ["P-037"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Evaluating Long 来源标题：Evaluating Long-Context Question & Answer Systems Evaluating Long-Context Question &amp; Answer Systems 来源材料显示，Evaluating Long 的AI 商业动作涉及模型部署和算力调用。"
+  source_excerpt: "Evaluating Long-Context Question & Answer Systems Evaluating Long-Context Question &amp; Answer Systems 来源材料显示，Evaluating Long 的AI 商业动作涉及模型部署和算力调用。"
   missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Evaluating Long"
 
 frontend:
-  displayTitle: "Evaluating Long 来源标题：Evaluating Long-Context Question & Answer Systems"
+  displayTitle: "Evaluating Long-Context Question & Answer Systems"
   sourceLinks:
     - "https://eugeneyan.com//writing/qa-evals/"
 ---
 
-# Evaluating Long 来源标题：Evaluating Long-Context Question & Answer Systems
+# Evaluating Long-Context Question & Answer Systems
 
 ## 新闻事实
 

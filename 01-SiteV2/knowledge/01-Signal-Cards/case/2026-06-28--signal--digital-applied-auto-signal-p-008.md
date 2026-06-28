@@ -2,15 +2,15 @@
 id: SIG-20260628-A10
 type: signal_card
 signal_type: case
-title: "Digital Applied 来源标题：Marketing AI Agent Deployment Playbook for Agencies"
+title: "Marketing AI Agent Deployment Playbook for Agencies"
 date: 2026-06-28
 status: published
 source_title: "Marketing AI Agent Deployment Playbook for Agencies"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-008"]
 pool_refs: ["P-008"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: ["customer_metric", "procurement_contract", "pricing_page"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Digital Applied 来源标题：Marketing AI Agent Deployment Playbook for Agencies Marketing AI Agent Deployment Playbook for Agencies 来源材料显示，Digital Applied 的AI 商业动作涉及采购下单流程。"
+  source_excerpt: "Marketing AI Agent Deployment Playbook for Agencies Marketing AI Agent Deployment Playbook for Agencies 来源材料显示，Digital Applied 的AI 商业动作涉及采购下单流程。"
   missing_fields: ["specific_task", "product_form"]
 
 signal_owner: "Digital Applied"
 
 frontend:
-  displayTitle: "Digital Applied 来源标题：Marketing AI Agent Deployment Playbook for Agencies"
+  displayTitle: "Marketing AI Agent Deployment Playbook for Agencies"
   sourceLinks:
     - "https://www.digitalapplied.com/blog/marketing-ai-agent-deployment-playbook-agency-guide"
 ---
 
-# Digital Applied 来源标题：Marketing AI Agent Deployment Playbook for Agencies
+# Marketing AI Agent Deployment Playbook for Agencies
 
 ## 新闻事实
 

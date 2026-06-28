@@ -2,15 +2,15 @@
 id: SIG-20260628-A06
 type: signal_card
 signal_type: product_service
-title: "Getting more from each token 来源标题：Getting more from each token: How Copilot improves context handling and model routing"
+title: "Getting more from each token: How Copilot improves context handling and model routing"
 date: 2026-06-28
 status: published
 source_title: "Getting more from each token: How Copilot improves context handling and model routing"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-042"]
 pool_refs: ["P-039"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Getting more from each token 来源标题：Getting more from each token: How Copilot improves context handling and model routing Getting more from each token: How Copilot improves context handling and model routing 来源材料显示，Gettin..."
+  source_excerpt: "Getting more from each token: How Copilot improves context handling and model routing Getting more from each token: How Copilot improves context handling and model routing 来源材料显示，Getting more from each token 的AI 商业动作涉及模..."
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "Getting more from each token"
 
 frontend:
-  displayTitle: "Getting more from each token 来源标题：Getting more from each token: How Copilot improves context handling and model routing"
+  displayTitle: "Getting more from each token: How Copilot improves context handling and model routing"
   sourceLinks:
     - "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/"
 ---
 
-# Getting more from each token 来源标题：Getting more from each token: How Copilot improves context handling and model routing
+# Getting more from each token: How Copilot improves context handling and model routing
 
 ## 新闻事实
 

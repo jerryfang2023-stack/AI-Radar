@@ -2,15 +2,15 @@
 id: SIG-20260628-A12
 type: signal_card
 signal_type: product_service
-title: "What’s New in Calico v3.32 来源标题：What’s New in Calico v3.32"
+title: "What’s New in Calico v3.32"
 date: 2026-06-28
 status: published
 source_title: "What’s New in Calico v3.32"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-053"]
 pool_refs: ["P-050"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "What’s New in Calico v3.32 来源标题：What’s New in Calico v3.32 What’s New in Calico v3.32 来源材料显示，What’s New in Calico v3.32 的产品或平台动作涉及地产开发和建筑设计流程。"
+  source_excerpt: "What’s New in Calico v3.32 What’s New in Calico v3.32 来源材料显示，What’s New in Calico v3.32 的产品或平台动作涉及地产开发和建筑设计流程。"
   missing_fields: ["specific_task", "product_form", "adoption_evidence"]
 
 signal_owner: "What’s New in Calico v3.32"
 
 frontend:
-  displayTitle: "What’s New in Calico v3.32 来源标题：What’s New in Calico v3.32"
+  displayTitle: "What’s New in Calico v3.32"
   sourceLinks:
     - "https://www.tigera.io/blog/whats-new-in-calico-v3-32/"
 ---
 
-# What’s New in Calico v3.32 来源标题：What’s New in Calico v3.32
+# What’s New in Calico v3.32
 
 ## 新闻事实
 

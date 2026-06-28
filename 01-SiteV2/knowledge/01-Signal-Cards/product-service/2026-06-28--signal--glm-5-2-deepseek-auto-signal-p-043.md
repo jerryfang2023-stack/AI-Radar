@@ -2,15 +2,15 @@
 id: SIG-20260628-A11
 type: signal_card
 signal_type: product_service
-title: "GLM-5.2 🤖, DeepSeek 来源标题：GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱"
+title: "GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱"
 date: 2026-06-28
 status: published
 source_title: "GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-046"]
 pool_refs: ["P-043"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: ["procurement_contract"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "GLM-5.2 🤖, DeepSeek 来源标题：GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱 GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱 来源材料显示，GLM-5.2 🤖, DeepSeek 的融资或资金流向涉及企业智能体协作流程；原文同时出现 $7 等数字。"
+  source_excerpt: "GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱 GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱 来源材料显示，GLM-5.2 🤖, DeepSeek 的融资或资金流向涉及企业智能体协作流程；原文同时出现 $7 等数字。"
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "GLM-5.2 🤖, DeepSeek"
 
 frontend:
-  displayTitle: "GLM-5.2 🤖, DeepSeek 来源标题：GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱"
+  displayTitle: "GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱"
   sourceLinks:
     - "https://tldr.tech/ai/2026-06-17"
 ---
 
-# GLM-5.2 🤖, DeepSeek 来源标题：GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱
+# GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱
 
 ## 新闻事实
 

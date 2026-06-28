@@ -2,15 +2,15 @@
 id: SIG-20260628-A01
 type: signal_card
 signal_type: case
-title: "Lakeflow 来源标题：Lakeflow: A new era of agentic data engineering"
+title: "Lakeflow: A new era of agentic data engineering"
 date: 2026-06-28
 status: published
 source_title: "Lakeflow: A new era of agentic data engineering | Databricks Blog"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-012"]
 pool_refs: ["P-012"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Lakeflow 来源标题：Lakeflow: A new era of agentic data engineering Lakeflow: A new era of agentic data engineering | Databricks Blog 来源材料显示，Lakeflow 的AI 商业动作涉及地产开发和建筑设计流程。"
+  source_excerpt: "Lakeflow: A new era of agentic data engineering Lakeflow: A new era of agentic data engineering | Databricks Blog 来源材料显示，Lakeflow 的AI 商业动作涉及地产开发和建筑设计流程。"
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "Lakeflow"
 
 frontend:
-  displayTitle: "Lakeflow 来源标题：Lakeflow: A new era of agentic data engineering"
+  displayTitle: "Lakeflow: A new era of agentic data engineering"
   sourceLinks:
     - "https://www.databricks.com/blog/lakeflow-new-era-agentic-data-engineering"
 ---
 
-# Lakeflow 来源标题：Lakeflow: A new era of agentic data engineering
+# Lakeflow: A new era of agentic data engineering
 
 ## 新闻事实
 

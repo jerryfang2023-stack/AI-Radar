@@ -2,15 +2,15 @@
 id: SIG-20260628-A14
 type: signal_card
 signal_type: product_service
-title: "Feedbacks upon feedbacks 来源标题：Feedbacks upon feedbacks: Rock weathering and the climate"
+title: "Feedbacks upon feedbacks: Rock weathering and the climate"
 date: 2026-06-28
 status: published
 source_title: "Feedbacks upon feedbacks: Rock weathering and the climate"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-066"]
 pool_refs: ["P-062"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Feedbacks upon feedbacks 来源标题：Feedbacks upon feedbacks: Rock weathering and the climate Feedbacks upon feedbacks: Rock weathering and the climate 来源材料显示，Feedbacks upon feedbacks 的产品或平台动作涉及企业智能体协作流程。"
+  source_excerpt: "Feedbacks upon feedbacks: Rock weathering and the climate Feedbacks upon feedbacks: Rock weathering and the climate 来源材料显示，Feedbacks upon feedbacks 的产品或平台动作涉及企业智能体协作流程。"
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Feedbacks upon feedbacks"
 
 frontend:
-  displayTitle: "Feedbacks upon feedbacks 来源标题：Feedbacks upon feedbacks: Rock weathering and the climate"
+  displayTitle: "Feedbacks upon feedbacks: Rock weathering and the climate"
   sourceLinks:
     - "https://arstechnica.com/science/2026/06/feedbacks-upon-feedbacks-rock-weathering-and-the-climate/"
 ---
 
-# Feedbacks upon feedbacks 来源标题：Feedbacks upon feedbacks: Rock weathering and the climate
+# Feedbacks upon feedbacks: Rock weathering and the climate
 
 ## 新闻事实
 

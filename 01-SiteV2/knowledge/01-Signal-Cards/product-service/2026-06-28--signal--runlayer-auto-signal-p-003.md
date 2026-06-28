@@ -2,15 +2,15 @@
 id: SIG-20260628-A19
 type: signal_card
 signal_type: product_service
-title: "Runlayer 来源标题：Runlayer Raises $30M Series A to Help Enterprises Go All In On AI"
+title: "Runlayer Raises $30M Series A to Help Enterprises Go All In On AI"
 date: 2026-06-28
 status: published
 source_title: "Runlayer Raises $30M Series A to Help Enterprises Go All In On AI"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-003"]
 pool_refs: ["P-003"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: ["named_customer"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Runlayer 来源标题：Runlayer Raises $30M Series A to Help Enterprises Go All In On AI Runlayer Raises $30M Series A to Help Enterprises Go All In On AI NEW YORK 获得 $30 m Series A 融资。"
+  source_excerpt: "Runlayer Raises $30M Series A to Help Enterprises Go All In On AI Runlayer Raises $30M Series A to Help Enterprises Go All In On AI NEW YORK 获得 $30 m Series A 融资。"
   missing_fields: ["product_form"]
 
 signal_owner: "Runlayer"
 
 frontend:
-  displayTitle: "Runlayer 来源标题：Runlayer Raises $30M Series A to Help Enterprises Go All In On AI"
+  displayTitle: "Runlayer Raises $30M Series A to Help Enterprises Go All In On AI"
   sourceLinks:
     - "https://www.prnewswire.com/news-releases/runlayer-raises-30m-series-a-to-help-enterprises-go-all-in-on-ai-302809271.html"
 ---
 
-# Runlayer 来源标题：Runlayer Raises $30M Series A to Help Enterprises Go All In On AI
+# Runlayer Raises $30M Series A to Help Enterprises Go All In On AI
 
 ## 新闻事实
 

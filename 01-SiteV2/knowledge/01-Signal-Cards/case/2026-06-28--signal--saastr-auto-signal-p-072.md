@@ -2,15 +2,15 @@
 id: SIG-20260628-A09
 type: signal_card
 signal_type: case
-title: "Saastr 来源标题：PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call. Conversions Jumped 50%."
+title: "PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call. Conversions Jumped 50%."
 date: 2026-06-28
 status: published
 source_title: "PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call. Conversions Jumped 50%. | SaaStrAI"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-079"]
 pool_refs: ["P-072"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: ["usage_growth"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Saastr 来源标题：PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call."
+  source_excerpt: "PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Saastr"
 
 frontend:
-  displayTitle: "Saastr 来源标题：PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call. Conversions Jumped 50%."
+  displayTitle: "PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call. Conversions Jumped 50%."
   sourceLinks:
     - "https://www.saastr.com/paypal-put-agentforce-on-8000-leads-a-month-no-human-was-going-to-call-conversions-jumped-50/"
 ---
 
-# Saastr 来源标题：PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call. Conversions Jumped 50%.
+# PayPal Put Agentforce on 8,000 Leads a Month No Human Was Going to Call. Conversions Jumped 50%.
 
 ## 新闻事实
 

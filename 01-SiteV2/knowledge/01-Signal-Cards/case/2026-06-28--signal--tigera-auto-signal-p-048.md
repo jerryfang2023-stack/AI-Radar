@@ -2,15 +2,15 @@
 id: SIG-20260628-A07
 type: signal_card
 signal_type: case
-title: "Tigera 来源标题：What's new in Calico: Spring 2026 Release"
+title: "What's new in Calico: Spring 2026 Release"
 date: 2026-06-28
 status: published
 source_title: "What&#8217;s new in Calico: Spring 2026 Release"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-051"]
 pool_refs: ["P-048"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Tigera 来源标题：What's new in Calico: Spring 2026 Release What&#8217;s new in Calico: Spring 2026 Release 来源材料显示，Tigera 的产品或平台动作涉及企业智能体协作流程。"
+  source_excerpt: "What's new in Calico: Spring 2026 Release What&#8217;s new in Calico: Spring 2026 Release 来源材料显示，Tigera 的产品或平台动作涉及企业智能体协作流程。"
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Tigera"
 
 frontend:
-  displayTitle: "Tigera 来源标题：What's new in Calico: Spring 2026 Release"
+  displayTitle: "What's new in Calico: Spring 2026 Release"
   sourceLinks:
     - "https://www.tigera.io/blog/whats-new-in-calico-spring-2026-release/"
 ---
 
-# Tigera 来源标题：What's new in Calico: Spring 2026 Release
+# What's new in Calico: Spring 2026 Release
 
 ## 新闻事实
 

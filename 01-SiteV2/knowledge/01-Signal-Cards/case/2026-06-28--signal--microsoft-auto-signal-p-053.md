@@ -2,15 +2,15 @@
 id: SIG-20260628-A18
 type: signal_card
 signal_type: case
-title: "Microsoft 来源标题：There is no Copilot without the pilots, says Slovenian insurance executive"
+title: "There is no Copilot without the pilots, says Slovenian insurance executive"
 date: 2026-06-28
 status: published
 source_title: "There is no Copilot without the pilots, says Slovenian insurance executive"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-056"]
 pool_refs: ["P-053"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: ["customer_metric", "deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Microsoft 来源标题：There is no Copilot without the pilots, says Slovenian insurance executive There is no Copilot without the pilots, says Slovenian insurance executive 来源材料显示，Microsoft 的AI 商业动作涉及企业智能体协作流程。"
+  source_excerpt: "There is no Copilot without the pilots, says Slovenian insurance executive There is no Copilot without the pilots, says Slovenian insurance executive 来源材料显示，Microsoft 的AI 商业动作涉及企业智能体协作流程。"
   missing_fields: ["delivery_model"]
 
 signal_owner: "Microsoft"
 
 frontend:
-  displayTitle: "Microsoft 来源标题：There is no Copilot without the pilots, says Slovenian insurance executive"
+  displayTitle: "There is no Copilot without the pilots, says Slovenian insurance executive"
   sourceLinks:
     - "https://news.microsoft.com/source/emea/features/zavarovalnica-triglav-copilot-adoption-insurance/"
 ---
 
-# Microsoft 来源标题：There is no Copilot without the pilots, says Slovenian insurance executive
+# There is no Copilot without the pilots, says Slovenian insurance executive
 
 ## 新闻事实
 

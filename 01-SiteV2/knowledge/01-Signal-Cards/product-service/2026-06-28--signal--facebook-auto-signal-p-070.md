@@ -2,15 +2,15 @@
 id: SIG-20260628-A16
 type: signal_card
 signal_type: product_service
-title: "Facebook 来源标题：GEN and Startup Genome have officially launched the 2026 Global ..."
+title: "GEN and Startup Genome have officially launched the 2026 Global ..."
 date: 2026-06-28
 status: published
 source_title: "GEN and Startup Genome have officially launched the 2026 Global ..."
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-075"]
 pool_refs: ["P-070"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: ["pilot_or_poc", "third_party_report"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Facebook 来源标题：GEN and Startup Genome have officially launched the 2026 Global ..."
+  source_excerpt: "GEN and Startup Genome have officially launched the 2026 Global ..."
   missing_fields: ["product_form"]
 
 signal_owner: "Facebook"
 
 frontend:
-  displayTitle: "Facebook 来源标题：GEN and Startup Genome have officially launched the 2026 Global ..."
+  displayTitle: "GEN and Startup Genome have officially launched the 2026 Global ..."
   sourceLinks:
     - "https://www.facebook.com/unleashingideas/posts/gen-and-startup-genome-have-officially-launched-the-2026-global-startup-ecosyste/1511341590450703/"
 ---
 
-# Facebook 来源标题：GEN and Startup Genome have officially launched the 2026 Global ...
+# GEN and Startup Genome have officially launched the 2026 Global ...
 
 ## 新闻事实
 

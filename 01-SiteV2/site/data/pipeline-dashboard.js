@@ -1,6 +1,6 @@
 window.WaveSightPipelineDashboard = {
   "meta": {
-    "generatedAt": "2026-06-28T06:40:53.431Z",
+    "generatedAt": "2026-06-28T06:54:36.968Z",
     "dateRange": {
       "start": "2025-10-13",
       "end": "2026-06-28"
@@ -757,7 +757,7 @@ window.WaveSightPipelineDashboard = {
   },
   "latestRelation": null,
   "engineQuality": {
-    "updatedAt": "2026-06-28T06:40:53.719Z",
+    "updatedAt": "2026-06-28T06:54:37.183Z",
     "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
     "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
     "rows": [

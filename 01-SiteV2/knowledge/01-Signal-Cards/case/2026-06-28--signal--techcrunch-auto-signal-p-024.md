@@ -2,15 +2,15 @@
 id: SIG-20260628-A17
 type: signal_card
 signal_type: case
-title: "Techcrunch 来源标题：Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidi"
+title: "Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidi"
 date: 2026-06-28
 status: published
 source_title: "Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia)"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-025"]
 pool_refs: ["P-024"]
@@ -51,18 +51,18 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Techcrunch 来源标题：Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidi Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia) 来源材料显示，..."
+  source_excerpt: "Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidi Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia) 来源材料显示，Techcrunch 的AI 商..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Techcrunch"
 
 frontend:
-  displayTitle: "Techcrunch 来源标题：Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidi"
+  displayTitle: "Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidi"
   sourceLinks:
     - "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/"
 ---
 
-# Techcrunch 来源标题：Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidi
+# Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidi
 
 ## 新闻事实
 

@@ -2,15 +2,15 @@
 id: SIG-20260628-A21
 type: signal_card
 signal_type: case
-title: "GitHub 来源标题：What are git worktrees, and why should I use them?"
+title: "What are git worktrees, and why should I use them?"
 date: 2026-06-28
 status: published
 source_title: "What are git worktrees, and why should I use them?"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-06-28T06:38:49.249Z
-updated_at: 2026-06-28T06:38:49.249Z
+created_at: 2026-06-28T06:52:18.178Z
+updated_at: 2026-06-28T06:52:18.178Z
 
 raw_refs: ["R-063"]
 pool_refs: ["P-059"]
@@ -57,16 +57,16 @@ opportunity_signals:
 signal_owner: "GitHub"
 
 frontend:
-  displayTitle: "GitHub 来源标题：What are git worktrees, and why should I use them?"
+  displayTitle: "What are git worktrees, and why should I use them?"
   sourceLinks:
     - "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/"
 ---
 
-# GitHub 来源标题：What are git worktrees, and why should I use them?
+# What are git worktrees, and why should I use them?
 
 ## 新闻事实
 
-GitHub 来源标题：What are git worktrees, and why should I use them?
+What are git worktrees, and why should I use them?
 
 ## 原文要点
 
@@ -78,7 +78,7 @@ GitHub 的案例信号可用于观察 AI 是否已经进入 企业智能体协�
 
 ## 可见原文片段
 
-GitHub 来源标题：What are git worktrees, and why should I use them?
+What are git worktrees, and why should I use them?
 
 ## 证据边界
 
