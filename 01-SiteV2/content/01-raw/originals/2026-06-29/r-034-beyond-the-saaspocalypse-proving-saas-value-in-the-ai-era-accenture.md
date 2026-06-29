@@ -1,0 +1,313 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-034
+title: "Beyond the SaaSpocalypse: Proving SaaS Value in the AI Era | Accenture"
+original_url: "https://www.accenture.com/ca-en/blogs/software-platforms/ai-rewriting-saas-value-equation"
+canonical_url: "https://accenture.com/ca-en/blogs/software-platforms/ai-rewriting-saas-value-equation"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: pricing_change
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "industry_landing"
+search_path_label: "行业落地路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-29T05:24:28.705Z
+language: mixed
+full_text_hash: dbaafdf0ab998607
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-034-beyond-the-saaspocalypse-proving-saas-value-in-the-ai-era-accenture.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-034-beyond-the-saaspocalypse-proving-saas-value-in-the-ai-era-accenture.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":8115,"paragraph_count":54,"sentence_count":75,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 8115
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dbaafdf0ab998607","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 7653302e9c93cec8
+content_hash: dbaafdf0ab998607
+semantic_hash: 60977f49d277d85c
+duplicate_of: ""
+first_seen_at: "2026-06-29T05:24:28.705Z"
+last_seen_at: 2026-06-29T05:24:28.705Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["agents","Agent"],"people":[],"industries":["企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"workflows":["计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","财务 / 预算","销售 / 客服"],"numbers":["5","6","2026","40%","5%","15%","51%","48%"],"quotes":["AI features","customer zero"]}
+evidence_seed: {"company_actions":["As value shifts from access to execution, monetization must follow. Charging for seats and logins gives way to charging for how work gets done—through consumption, value, or outcome‑based pricing models that reflect the real impact AI delivers. When agents do the work, pricing must align to executio... / query=usage-based pricing AI enterprise adoption / intent=find_original_source / path=industry_landing","BLOG Beyond the SaaSpocalypse: Proving SaaS value in the AI era Moving from seats and access to execution as SaaS leaders drive ROI in the agentic AI era.","5-MINUTE READ April 6, 2026 For much of the last two decades, SaaS value was easy to explain."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"As value shifts from access to execution, monetization must follow. Charging for seats and logins gives way to charging for how work gets done—through consumption, value, or outcome‑based pricing models that reflect the real impact AI delivers. When agents do the work, pricing must align to executio... / query=usage-based pricing AI enterprise adoption / intent=find_original_source / path=industry_landing","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"BLOG Beyond the SaaSpocalypse: Proving SaaS value in the AI era Moving from seats and access to execution as SaaS leaders drive ROI in the agentic AI era.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"5-MINUTE READ April 6, 2026 For much of the last two decades, SaaS value was easy to explain.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Interfaces scaled.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI has changed that equation.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Across conversations with SaaS executives, boards, and investors, one concern keeps surfacing: if AI agents increasingly do the work, what anchors platform value?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Beyond the SaaSpocalypse: Proving SaaS Value in the AI Era | Accenture
+
+## clean_text
+
+BLOG
+Beyond the SaaSpocalypse: Proving SaaS value in the AI era
+Moving from seats and access to execution as SaaS leaders drive ROI in the agentic AI era.
+5-MINUTE READ
+April 6, 2026
+For much of the last two decades, SaaS value was easy to explain.
+Users logged in. Seats expanded. Interfaces scaled.
+AI has changed that equation.
+Across conversations with SaaS executives, boards, and investors, one concern keeps surfacing: if AI agents increasingly do the work, what anchors platform value? The fear is not that AI will underperform, but that it will perform outside the platform.
+This is the moment SaaS leaders must confront directly. This shift is a massive business model change more fundamental than the move from on-premise to the cloud. It requires a total reinvention of how we build, sell, create and capture value.
+From software as a user interface to software as a system of orchestration
+AI doesn’t just introduce new features. It rewires how work gets done. This shift is already showing up in enterprise software roadmaps. Gartner projects that 40% of enterprise applications will include task‑specific AI agents by the end of 2026 , up from less than 5% the prior year. This signals a rapid move from software designed for users to platforms built for autonomous execution.
+When agents can act, decide and execute across systems, value migrates away from isolated interfaces and toward platforms that:
+Coordinate deep functional and end‑to‑end workflows
+Govern decisions at scale
+Deliver measurable outcomes
+In this model, optimizing the UI is no longer enough. Platforms that remain interface‑centric risk becoming pass‑through surfaces. Useful, but replaceable. The platforms that endure will be those that become systems of execution, acting as workflow‑specific orchestration layers where they have deep context, control, and domain advantage.
+As value shifts from access to execution, monetization must follow. Charging for seats and logins gives way to charging for how work gets done—through consumption, value, or outcome‑based pricing models that reflect the real impact AI delivers. When agents do the work, pricing must align to execution and outcomes, not just access.
+Why “AI features” are not the answer
+Many SaaS companies are responding by adding copilots, assistants, or embedded chat experiences. These are necessary, but they are insufficient for long-term defensibility. On their own, they rarely unlock the level of ROI enterprises expect from AI investments.
+The issue isn’t intelligence, it’s workflow design. Value comes from re‑imagining workflows so agents can reason and make decisions, with guardrails, rather than just automating a few manual steps. This is what enables semi‑autonomous execution at scale.
+This gap shows up clearly in enterprise adoption data. Only 15% of IT application leaders say they are currently considering, piloting, or deploying fully autonomous AI agents. This highlights how few organizations have moved beyond experimentation into production execution.
+For most enterprises, building custom AI‑native solutions from scratch is far more expensive than expected, driven by integration complexity, ongoing maintenance, and scarce talent. Meanwhile, incremental AI features rarely deliver meaningful ROI.
+Off‑the‑shelf SaaS still wins, if platforms can own context and deliver execution and outcomes.
+Trust and governance remain major blockers to scale. While 51% of organizations report being effective at deploying AI, fewer say they are effective at mitigating AI risk (48%) or governing AI (45%) . This underscores why execution without built‑in controls breaks down.
+The real winners won't just provide tools. They will provide the orchestration moat: the unique combination of industry-specific data, proprietary knowledge graphs, workflows and cross-tool coordination that a generic LLM cannot replicate.
+Ten actions SaaS leaders must take to prove leadership in the AI era
+We are already seeing this shift take hold across the SaaS landscape. Leading platforms are moving beyond AI add‑ons and embedding agentic execution directly into their core products. They coordinate work across systems, governing autonomous behavior, and proving outcomes at scale. While the archetypes vary, success consistently shows up where platforms own execution, trust, and economics rather than relying on surface‑level automation.
+Reinvent products: from assistants to autonomous agents
+AI cannot remain an interface feature. Leading platforms are rebuilding product roadmaps around agentic workflows where AI owns outcomes end‑to‑end, escalating to humans only for judgment or exception handling.
+Own the orchestration moat
+AI agents do not operate inside a single application. Coordination across CRM, ERP, data platforms and third‑party tools becomes the advantage. Platforms that own orchestration embed themselves directly into how enterprises operate.
+Make trust and observability first class capabilities
+AI rarely fails at scale because it doesn’t work; it fails because it isn’t trusted. Leaders are embedding governance, auditability, cost visibility and deterministic controls directly into the product.
+Institutionalize Forward Deployed Engineering (FDE)
+AI adoption is last‑mile heavy. Forward Deployed Engineers working directly with strategic customers help turn pilots into production systems, and production deployments into proof.
+Anchor publicly to AI partnerships and ecosystems
+AI scale comes from ecosystems, not standalone products. SaaS leaders are aligning visibly with model providers, hyperscalers, data platforms and delivery partners to accelerate deployment and signal credibility.
+Unify the customer engine
+Sales, marketing, customer support, and services can no longer operate as separate motions. Leaders are collapsing these into a single, AI coordinated customer engine focused on adoption and outcomes, not just bookings.
+Adopt consumption and outcome-based pricing
+Seat‑based pricing breaks when agents do the work. Leading companies are shifting toward hybrid models that align monetization with value delivered, not logins or headcount.
+Be your own “customer zero”
+You cannot credibly sell AI transformation you haven’t executed yourself. Leaders are deploying agentic solutions internally to generate production scale proof before asking customers to follow.
+Rewire talent: 50% hire, 50% upskill
+Hiring alone will fail as skill demand exceeds supply. Winning organizations embed AI into daily workflows and upskill their workforce, tying adoption directly to roles, incentives, and measurable outcomes.
+Don’t just talk about AI value, prove it
+Traditional SaaS metrics don’t capture AI’s impact. Leaders are introducing AI native signals (Agent usage, outcomes, and cost to serve) that stand up to investor and buyer scrutiny.
+What markets will reward next
+The market is moving past AI narratives and toward AI evidence. The implications extend beyond technology choices. IDC predicts that by 2027, half of enterprises will use AI agents to redefine how humans and machines collaborate, signaling a fundamental shift in enterprise operating models over the next two years . Enterprises are unlikely to abandon SaaS in favor of bespoke AI stacks wholesale. The total cost and operational burden are too high. But they will abandon platforms that fail to evolve toward agentic execution, trusted autonomy, and measurable outcomes.
+What matters now is whether SaaS platforms can demonstrate production scale adoption, measurable outcomes, and repeatable economics. That requires more than innovation. It requires industrialization.
+The companies that win will be those that turn agentic workflows, orchestration, trust, pricing, and metrics into core operating capabilities, and then prove their impact consistently across customers, earnings, and the enterprise.
+Related insights
+Product Reinvention
+Aligning Business Functions for Revenue Growth
+Data Center Trends 2026: Shifting Up a Gear
+Software & Platforms Consulting Services
+WRITTEN BY
+Prem Ananthakrishnan
+Managing Director – Global Software Lead
+LinkedIn
+
+## full_text
+
+BLOG
+Beyond the SaaSpocalypse: Proving SaaS value in the AI era
+Moving from seats and access to execution as SaaS leaders drive ROI in the agentic AI era.
+5-MINUTE READ
+April 6, 2026
+For much of the last two decades, SaaS value was easy to explain.
+Users logged in. Seats expanded. Interfaces scaled.
+AI has changed that equation.
+Across conversations with SaaS executives, boards, and investors, one concern keeps surfacing: if AI agents increasingly do the work, what anchors platform value? The fear is not that AI will underperform, but that it will perform outside the platform.
+This is the moment SaaS leaders must confront directly. This shift is a massive business model change more fundamental than the move from on-premise to the cloud. It requires a total reinvention of how we build, sell, create and capture value.
+From software as a user interface to software as a system of orchestration
+AI doesn’t just introduce new features. It rewires how work gets done. This shift is already showing up in enterprise software roadmaps. Gartner projects that 40% of enterprise applications will include task‑specific AI agents by the end of 2026 , up from less than 5% the prior year. This signals a rapid move from software designed for users to platforms built for autonomous execution.
+When agents can act, decide and execute across systems, value migrates away from isolated interfaces and toward platforms that:
+Coordinate deep functional and end‑to‑end workflows
+Govern decisions at scale
+Deliver measurable outcomes
+In this model, optimizing the UI is no longer enough. Platforms that remain interface‑centric risk becoming pass‑through surfaces. Useful, but replaceable. The platforms that endure will be those that become systems of execution, acting as workflow‑specific orchestration layers where they have deep context, control, and domain advantage.
+As value shifts from access to execution, monetization must follow. Charging for seats and logins gives way to charging for how work gets done—through consumption, value, or outcome‑based pricing models that reflect the real impact AI delivers. When agents do the work, pricing must align to execution and outcomes, not just access.
+Why “AI features” are not the answer
+Many SaaS companies are responding by adding copilots, assistants, or embedded chat experiences. These are necessary, but they are insufficient for long-term defensibility. On their own, they rarely unlock the level of ROI enterprises expect from AI investments.
+The issue isn’t intelligence, it’s workflow design. Value comes from re‑imagining workflows so agents can reason and make decisions, with guardrails, rather than just automating a few manual steps. This is what enables semi‑autonomous execution at scale.
+This gap shows up clearly in enterprise adoption data. Only 15% of IT application leaders say they are currently considering, piloting, or deploying fully autonomous AI agents. This highlights how few organizations have moved beyond experimentation into production execution.
+For most enterprises, building custom AI‑native solutions from scratch is far more expensive than expected, driven by integration complexity, ongoing maintenance, and scarce talent. Meanwhile, incremental AI features rarely deliver meaningful ROI.
+Off‑the‑shelf SaaS still wins, if platforms can own context and deliver execution and outcomes.
+Trust and governance remain major blockers to scale. While 51% of organizations report being effective at deploying AI, fewer say they are effective at mitigating AI risk (48%) or governing AI (45%) . This underscores why execution without built‑in controls breaks down.
+The real winners won't just provide tools. They will provide the orchestration moat: the unique combination of industry-specific data, proprietary knowledge graphs, workflows and cross-tool coordination that a generic LLM cannot replicate.
+Ten actions SaaS leaders must take to prove leadership in the AI era
+We are already seeing this shift take hold across the SaaS landscape. Leading platforms are moving beyond AI add‑ons and embedding agentic execution directly into their core products. They coordinate work across systems, governing autonomous behavior, and proving outcomes at scale. While the archetypes vary, success consistently shows up where platforms own execution, trust, and economics rather than relying on surface‑level automation.
+Reinvent products: from assistants to autonomous agents
+AI cannot remain an interface feature. Leading platforms are rebuilding product roadmaps around agentic workflows where AI owns outcomes end‑to‑end, escalating to humans only for judgment or exception handling.
+Own the orchestration moat
+AI agents do not operate inside a single application. Coordination across CRM, ERP, data platforms and third‑party tools becomes the advantage. Platforms that own orchestration embed themselves directly into how enterprises operate.
+Make trust and observability first class capabilities
+AI rarely fails at scale because it doesn’t work; it fails because it isn’t trusted. Leaders are embedding governance, auditability, cost visibility and deterministic controls directly into the product.
+Institutionalize Forward Deployed Engineering (FDE)
+AI adoption is last‑mile heavy. Forward Deployed Engineers working directly with strategic customers help turn pilots into production systems, and production deployments into proof.
+Anchor publicly to AI partnerships and ecosystems
+AI scale comes from ecosystems, not standalone products. SaaS leaders are aligning visibly with model providers, hyperscalers, data platforms and delivery partners to accelerate deployment and signal credibility.
+Unify the customer engine
+Sales, marketing, customer support, and services can no longer operate as separate motions. Leaders are collapsing these into a single, AI coordinated customer engine focused on adoption and outcomes, not just bookings.
+Adopt consumption and outcome-based pricing
+Seat‑based pricing breaks when agents do the work. Leading companies are shifting toward hybrid models that align monetization with value delivered, not logins or headcount.
+Be your own “customer zero”
+You cannot credibly sell AI transformation you haven’t executed yourself. Leaders are deploying agentic solutions internally to generate production scale proof before asking customers to follow.
+Rewire talent: 50% hire, 50% upskill
+Hiring alone will fail as skill demand exceeds supply. Winning organizations embed AI into daily workflows and upskill their workforce, tying adoption directly to roles, incentives, and measurable outcomes.
+Don’t just talk about AI value, prove it
+Traditional SaaS metrics don’t capture AI’s impact. Leaders are introducing AI native signals (Agent usage, outcomes, and cost to serve) that stand up to investor and buyer scrutiny.
+What markets will reward next
+The market is moving past AI narratives and toward AI evidence. The implications extend beyond technology choices. IDC predicts that by 2027, half of enterprises will use AI agents to redefine how humans and machines collaborate, signaling a fundamental shift in enterprise operating models over the next two years . Enterprises are unlikely to abandon SaaS in favor of bespoke AI stacks wholesale. The total cost and operational burden are too high. But they will abandon platforms that fail to evolve toward agentic execution, trusted autonomy, and measurable outcomes.
+What matters now is whether SaaS platforms can demonstrate production scale adoption, measurable outcomes, and repeatable economics. That requires more than innovation. It requires industrialization.
+The companies that win will be those that turn agentic workflows, orchestration, trust, pricing, and metrics into core operating capabilities, and then prove their impact consistently across customers, earnings, and the enterprise.
+Related insights
+Product Reinvention
+Aligning Business Functions for Revenue Growth
+Data Center Trends 2026: Shifting Up a Gear
+Software & Platforms Consulting Services
+WRITTEN BY
+Prem Ananthakrishnan
+Managing Director – Global Software Lead
+LinkedIn
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":8115,"paragraph_count":54,"sentence_count":75,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   As value shifts from access to execution, monetization must follow. Charging for seats and logins gives way to charging for how work gets done—through consumption, value, or outcome‑based pricing models that reflect the real impact AI delivers. When agents do the work, pricing must align to executio... / query=usage-based pricing AI enterprise adoption / intent=find_original_source / path=industry_landing
+
+2. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   BLOG Beyond the SaaSpocalypse: Proving SaaS value in the AI era Moving from seats and access to execution as SaaS leaders drive ROI in the agentic AI era.
+
+3. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   5-MINUTE READ April 6, 2026 For much of the last two decades, SaaS value was easy to explain.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Interfaces scaled.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   AI has changed that equation.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Across conversations with SaaS executives, boards, and investors, one concern keeps surfacing: if AI agents increasingly do the work, what anchors platform value?
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: agents, Agent
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 财务 / 预算, 销售 / 客服
+- numbers: 5, 6, 2026, 40%, 5%, 15%, 51%, 48%
+- quotes: AI features / customer zero
+
+## evidence_seed
+
+- company_actions: As value shifts from access to execution, monetization must follow. Charging for seats and logins gives way to charging for how work gets done—through consumption, value, or outcome‑based pricing models that reflect the real impact AI delivers. When agents do the work, pricing must align to executio... / query=usage-based pricing AI enterprise adoption / intent=find_original_source / path=industry_landing / BLOG Beyond the SaaSpocalypse: Proving SaaS value in the AI era Moving from seats and access to execution as SaaS leaders drive ROI in the agentic AI era. / 5-MINUTE READ April 6, 2026 For much of the last two decades, SaaS value was easy to explain.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+As value shifts from access to execution, monetization must follow. Charging for seats and logins gives way to charging for how work gets done—through consumption, value, or outcome‑based pricing models that reflect the real impact AI delivers. When agents do the work, pricing must align to executio... / query=usage-based pricing AI enterprise adoption / intent=find_original_source / path=industry_landing
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

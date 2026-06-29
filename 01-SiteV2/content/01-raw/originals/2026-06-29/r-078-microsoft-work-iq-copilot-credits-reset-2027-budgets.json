@@ -1,0 +1,289 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-078",
+  "title": "Microsoft Work IQ: Copilot Credits Reset 2027 Budgets",
+  "original_url": "https://beam.ai/agentic-insights/microsoft-work-iq-copilot-credits-enterprise-cfo-2027-budgets",
+  "canonical_url": "https://beam.ai/agentic-insights/microsoft-work-iq-copilot-credits-enterprise-cfo-2027-budgets",
+  "source_name": "keyword search / Tavily",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "pricing_change",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_workflow_change",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-29T05:24:29.004Z",
+  "language": "mixed",
+  "full_text": "Microsoft Work IQ: Copilot Credits Reset 2027 Budgets\nJun 17, 2026\nmin read\nMicrosoft Work IQ and the End of Invisible Agent Costs: What 1.4 Billion Copilot Credits Will Reveal in 2027 Budgets\nby\nFredrik Falk\nCategory\nAI Agents\nShare the article\nFor two years, every enterprise CFO who signed a Microsoft 365 Copilot contract has been buying agent capacity they could not measure. Flat per-user pricing made it feel safe. It also made it impossible to answer the only question that matters in a 2027 budget meeting: what does one agent task actually cost, and which workflows are worth running at scale?\nThat contradiction ends this week. Microsoft Work IQ APIs reached general availability on June 16, and with them came a billing model that will force every enterprise running M365 to look at agent economics one task at a time. The protocol story has been covered everywhere. The billing story has not. It is the more consequential one.\nWhat Work IQ actually changes\nMicrosoft Work IQ exposes Microsoft 365 workplace intelligence to AI agents through three protocols (A2A for agent-to-agent handoffs, a redesigned remote MCP server, and a REST API) across four domains (Chat, Context, Tools, Workspaces). All three protocols went GA on the same day, less than four weeks after the Build 2026 preview. That speed is unusual for Microsoft, and it signals M365 is being positioned as the default organizational context layer for enterprise agents going forward.\nThe unlock for builders is real. Any agent on any platform can now read, write, and act inside an M365 tenant under the same Entra permissions and DLP policies users already have. Third-party agent platforms get the same access path as Copilot Studio and Foundry. The technical barriers to grounding agents in actual workplace data dropped meaningfully overnight.\nThe billing change is what most coverage will skip past. Work IQ APIs are billed through Copilot Credits, Microsoft's new consumption-based currency that also covers Copilot Studio and other Microsoft AI services. There is no separate Work IQ subscription, no SKU, no per-user license to add. Prebuilt M365 Copilot agents stay covered by the existing per-user license, so end users running standard Copilot scenarios see no change. But the moment an enterprise builds a custom agent in Copilot Studio, in Foundry, or on a third-party platform that grounds in M365 data, that agent meters against Copilot Credits per call.\nAdmins have to explicitly enable consumptive billing before deployment, and the new Microsoft Admin Center adds spend policies, usage limits, and monitoring as first-class controls. Microsoft is treating Copilot Credits as a FinOps surface, not a billing footnote.\nWhy per-task visibility was the missing piece\nUntil Work IQ GA, M365 Copilot's flat per-user license bundled unlimited agent calls into a single line item on the invoice. Procurement could benchmark seat counts against headcount. Finance could compare year-over-year spend. Neither could answer the harder question: what does one agent task cost when a user asks Copilot to summarize a 90-page contract versus when a user asks it to triage their inbox?\nThe answer mattered because the cost difference between those two tasks is enormous, and the business value difference is even bigger. A contract summary might save a lawyer an hour of review at a fully loaded rate of $300. An inbox triage might save a knowledge worker three minutes. If both tasks cost the same number of dollars in compute, one is wildly underpriced and the other is wildly overpriced, but the flat license treats them as identical. The result was a marketplace where some workflows were quietly subsidized and others quietly subsidized them, with no way for finance to see the actual flow of value.\nAcross 1.4 billion M365 seats globally , this is the largest forced shift to consumption billing the enterprise software market has ever seen. Within 90 days of GA, finance teams running any volume of custom Copilot Studio agents or third-party agent platforms grounded in M365 data will have their first real per-task cost data across all four Work IQ domains.\nWhat the 2027 budget conversation looks like\nThe internal conversation about agent spend changes shape immediately. Instead of negotiating seat counts and feature tiers, CFOs will be asked to approve credit pools per workflow, set spend ceilings per business unit, and justify which agent tasks earn their cost.\nA finance team that ran one hundred thousand \"summarize every meeting transcript\" runs in 2026 under a flat license will see a number next to that workflow in 2027. Some of those workflows will turn out to be worth their credit consumption. Some will not. The workflows that survive the review are the ones where the value per task is calculable and the value clears the cost. The workflows that do not survive are the ones that existed because they were free, and were marginally useful, and would never have been built if anyone had been looking at the per-task math.\nThis is the reckoning every enterprise software category eventually has. Cloud compute went through it when AWS made per-second billing real. Database storage went through it when Snowflake separated compute from storage. AI agents are going through it now, and Work IQ is the forcing function for the M365 portion of the stack.\nFor enterprise AI agent platforms , the implication is that the next vendor evaluation will look fundamentally different than the last one. CFOs will not be asking which platform has the prettiest dashboard. They will be asking which platform can prove, per workflow, what each agent task cost and what value it produced.\nThe platforms that survive the per-task review\nThe platforms that win the post-credit-visibility era are the ones that can attribute cost to a specific step in a specific workflow run by a specific user against a specific system of record. Generic chatbots cannot. Audit-grade orchestration platforms can.\nThis is where step-level audit infrastructure stops being a compliance feature and starts being a CFO feature. A platform that already records every agent action with the input that triggered it, the policy that approved it, the system of record it touched, the human checkpoint it cleared, and the output it produced now has the data structure CFOs will demand. The same audit trail that satisfied a regulator last quarter satisfies a finance review next quarter. The data has been collected the whole time. The visibility surface just changed.\nBeam was built for this. Agents running on Beam's platform carry per-step audit lineage as a default, not an add-on, because the regulated verticals Beam targets (finance, insurance, RPO, BPO) required it from day one. The cost attribution is a natural extension of the same data model: if you already know which step ran, you can attach what it cost. Per workflow, per step, per system, per user.\nThe harder problem Work IQ does not solve is the multi-system one. M365 is one input. Most production agent workflows touch the ERP that holds the purchase order, the CRM that holds the customer record, the claims system that holds the underwriting decision, the custom database that holds the policy details. An agent that closes financial books on time runs against M365 and the general ledger and the bank feed and the reconciliation rules engine. Work IQ gives you cost data for the M365 portion. The rest of the workflow needs the same attribution.\nThis is the orchestration layer above any single vendor's billing system. A platform that orchestrates an agent across M365 and the ERP and the CRM should be able to surface a single cost view for the full workflow, not a Microsoft-only slice. Beam's multi-system orchestration is built around that view, because enterprise workflows do not respect vendor boundaries and neither do the finance teams who pay for them.\nThe procurement playbook for the rest of 2026\nThree concrete moves for any enterprise team planning the 2027 agent budget.\nPilot Work IQ APIs against one high-volume workflow, with cost instrumentation from day one. Pick a workflow that runs frequently enough to generate real per-task data within thirty days. Instrument credit consumption per step. Build a unit-economics model before scaling, not after. The free trial windows that vendors will offer during the Copilot Credits rollout are the only honest A/B test enterprises will get, and the data captured during those windows becomes the basis for every subsequent negotiation.\nDemand step-level attribution from any orchestration vendor sitting on top of M365 data. If a vendor cannot show you cost per task per workflow, attributed to specific Work IQ calls and specific other-system calls, that vendor will not survive the 2027 procurement review. The vendors that can demonstrate the attribution today have been quietly building toward this moment. The ones that cannot are about to discover that \"we run on top of Microsoft\" was a positioning statement, not an architecture.\nReframe the agent platform conversation from features to economics . The next round of board conversations about AI agent investment will use per-workflow cost data as the unit of analysis. Workflow owners should be able to defend each agent in production with a cost-per-task number and a value-per-task number. The platforms that surface those two numbers automatically will be the ones that get expanded. The ones that surface neither will be the ones that get cut.\nThe bigger pattern\nWork IQ is the first major enterprise AI surface to ship consumption billing as the default, but it will not be the last. GitHub already shifted its AI features to token-based pricing. The hyperscalers' agent platforms are moving the same direction. Within twelve months, the question every finance team will ask of every AI agent platform vendor will be the same: prove the unit economics, per workflow, in production, with audit-grade lineage.\nEnterprises that have built their AI agent strategy around per-user license math are about to discover that the seat-count conversation is over. The new conversation is about credit pools, workflow ROI, and the step-level attribution that ties them together. Microsoft just made that the default for 1.4 billion seats. The orchestration platforms that survive 2027 are the ones that already had the answer.\nFrom now, the question for enterprise teams running production AI agents is not whether to use Work IQ. It is whether their agent platform can prove what each workflow costs across every system it touches. The platforms that can will get the next budget. The ones that cannot are about to have a very different conversation with finance.\nSee AI agents in action\nStart Today\nStart building AI agents to automate processes\nJoin our platform and start building AI agents for various types of automations.\nRequest access\nStart Today\nStart building AI agents to automate processes\nJoin our platform and start building AI agents for various types of automations.\nRequest access\nLatest articles\nWhat Is MCP? Model Context Protocol for AI Agents Explained\nAgent2Agent vs MCP: The 2 Protocols Your 2026 AI Agent Stack Actually Runs On\nWhy AI Agents Fail in Production: 3 Root Causes That Aren't the Model\nWhat Is MCP? Model Context Protocol for AI Agents Explained\nAgent2Agent vs MCP: The 2 Protocols Your 2026 AI Agent Stack Actually Runs On\nWhy AI Agents Fail in Production: 3 Root Causes That Aren't the Model\nGoogle Just Put 200+ Models, Including Claude, Inside One Agent Platform. Single-Model Lock-In Is Over.",
+  "clean_text": "Microsoft Work IQ: Copilot Credits Reset 2027 Budgets\nJun 17, 2026\nmin read\nMicrosoft Work IQ and the End of Invisible Agent Costs: What 1.4 Billion Copilot Credits Will Reveal in 2027 Budgets\nby\nFredrik Falk\nCategory\nAI Agents\nShare the article\nFor two years, every enterprise CFO who signed a Microsoft 365 Copilot contract has been buying agent capacity they could not measure. Flat per-user pricing made it feel safe. It also made it impossible to answer the only question that matters in a 2027 budget meeting: what does one agent task actually cost, and which workflows are worth running at scale?\nThat contradiction ends this week. Microsoft Work IQ APIs reached general availability on June 16, and with them came a billing model that will force every enterprise running M365 to look at agent economics one task at a time. The protocol story has been covered everywhere. The billing story has not. It is the more consequential one.\nWhat Work IQ actually changes\nMicrosoft Work IQ exposes Microsoft 365 workplace intelligence to AI agents through three protocols (A2A for agent-to-agent handoffs, a redesigned remote MCP server, and a REST API) across four domains (Chat, Context, Tools, Workspaces). All three protocols went GA on the same day, less than four weeks after the Build 2026 preview. That speed is unusual for Microsoft, and it signals M365 is being positioned as the default organizational context layer for enterprise agents going forward.\nThe unlock for builders is real. Any agent on any platform can now read, write, and act inside an M365 tenant under the same Entra permissions and DLP policies users already have. Third-party agent platforms get the same access path as Copilot Studio and Foundry. The technical barriers to grounding agents in actual workplace data dropped meaningfully overnight.\nThe billing change is what most coverage will skip past. Work IQ APIs are billed through Copilot Credits, Microsoft's new consumption-based currency that also covers Copilot Studio and other Microsoft AI services. There is no separate Work IQ subscription, no SKU, no per-user license to add. Prebuilt M365 Copilot agents stay covered by the existing per-user license, so end users running standard Copilot scenarios see no change. But the moment an enterprise builds a custom agent in Copilot Studio, in Foundry, or on a third-party platform that grounds in M365 data, that agent meters against Copilot Credits per call.\nAdmins have to explicitly enable consumptive billing before deployment, and the new Microsoft Admin Center adds spend policies, usage limits, and monitoring as first-class controls. Microsoft is treating Copilot Credits as a FinOps surface, not a billing footnote.\nWhy per-task visibility was the missing piece\nUntil Work IQ GA, M365 Copilot's flat per-user license bundled unlimited agent calls into a single line item on the invoice. Procurement could benchmark seat counts against headcount. Finance could compare year-over-year spend. Neither could answer the harder question: what does one agent task cost when a user asks Copilot to summarize a 90-page contract versus when a user asks it to triage their inbox?\nThe answer mattered because the cost difference between those two tasks is enormous, and the business value difference is even bigger. A contract summary might save a lawyer an hour of review at a fully loaded rate of $300. An inbox triage might save a knowledge worker three minutes. If both tasks cost the same number of dollars in compute, one is wildly underpriced and the other is wildly overpriced, but the flat license treats them as identical. The result was a marketplace where some workflows were quietly subsidized and others quietly subsidized them, with no way for finance to see the actual flow of value.\nAcross 1.4 billion M365 seats globally , this is the largest forced shift to consumption billing the enterprise software market has ever seen. Within 90 days of GA, finance teams running any volume of custom Copilot Studio agents or third-party agent platforms grounded in M365 data will have their first real per-task cost data across all four Work IQ domains.\nWhat the 2027 budget conversation looks like\nThe internal conversation about agent spend changes shape immediately. Instead of negotiating seat counts and feature tiers, CFOs will be asked to approve credit pools per workflow, set spend ceilings per business unit, and justify which agent tasks earn their cost.\nA finance team that ran one hundred thousand \"summarize every meeting transcript\" runs in 2026 under a flat license will see a number next to that workflow in 2027. Some of those workflows will turn out to be worth their credit consumption. Some will not. The workflows that survive the review are the ones where the value per task is calculable and the value clears the cost. The workflows that do not survive are the ones that existed because they were free, and were marginally useful, and would never have been built if anyone had been looking at the per-task math.\nThis is the reckoning every enterprise software category eventually has. Cloud compute went through it when AWS made per-second billing real. Database storage went through it when Snowflake separated compute from storage. AI agents are going through it now, and Work IQ is the forcing function for the M365 portion of the stack.\nFor enterprise AI agent platforms , the implication is that the next vendor evaluation will look fundamentally different than the last one. CFOs will not be asking which platform has the prettiest dashboard. They will be asking which platform can prove, per workflow, what each agent task cost and what value it produced.\nThe platforms that survive the per-task review\nThe platforms that win the post-credit-visibility era are the ones that can attribute cost to a specific step in a specific workflow run by a specific user against a specific system of record. Generic chatbots cannot. Audit-grade orchestration platforms can.\nThis is where step-level audit infrastructure stops being a compliance feature and starts being a CFO feature. A platform that already records every agent action with the input that triggered it, the policy that approved it, the system of record it touched, the human checkpoint it cleared, and the output it produced now has the data structure CFOs will demand. The same audit trail that satisfied a regulator last quarter satisfies a finance review next quarter. The data has been collected the whole time. The visibility surface just changed.\nBeam was built for this. Agents running on Beam's platform carry per-step audit lineage as a default, not an add-on, because the regulated verticals Beam targets (finance, insurance, RPO, BPO) required it from day one. The cost attribution is a natural extension of the same data model: if you already know which step ran, you can attach what it cost. Per workflow, per step, per system, per user.\nThe harder problem Work IQ does not solve is the multi-system one. M365 is one input. Most production agent workflows touch the ERP that holds the purchase order, the CRM that holds the customer record, the claims system that holds the underwriting decision, the custom database that holds the policy details. An agent that closes financial books on time runs against M365 and the general ledger and the bank feed and the reconciliation rules engine. Work IQ gives you cost data for the M365 portion. The rest of the workflow needs the same attribution.\nThis is the orchestration layer above any single vendor's billing system. A platform that orchestrates an agent across M365 and the ERP and the CRM should be able to surface a single cost view for the full workflow, not a Microsoft-only slice. Beam's multi-system orchestration is built around that view, because enterprise workflows do not respect vendor boundaries and neither do the finance teams who pay for them.\nThe procurement playbook for the rest of 2026\nThree concrete moves for any enterprise team planning the 2027 agent budget.\nPilot Work IQ APIs against one high-volume workflow, with cost instrumentation from day one. Pick a workflow that runs frequently enough to generate real per-task data within thirty days. Instrument credit consumption per step. Build a unit-economics model before scaling, not after. The free trial windows that vendors will offer during the Copilot Credits rollout are the only honest A/B test enterprises will get, and the data captured during those windows becomes the basis for every subsequent negotiation.\nDemand step-level attribution from any orchestration vendor sitting on top of M365 data. If a vendor cannot show you cost per task per workflow, attributed to specific Work IQ calls and specific other-system calls, that vendor will not survive the 2027 procurement review. The vendors that can demonstrate the attribution today have been quietly building toward this moment. The ones that cannot are about to discover that \"we run on top of Microsoft\" was a positioning statement, not an architecture.\nReframe the agent platform conversation from features to economics . The next round of board conversations about AI agent investment will use per-workflow cost data as the unit of analysis. Workflow owners should be able to defend each agent in production with a cost-per-task number and a value-per-task number. The platforms that surface those two numbers automatically will be the ones that get expanded. The ones that surface neither will be the ones that get cut.\nThe bigger pattern\nWork IQ is the first major enterprise AI surface to ship consumption billing as the default, but it will not be the last. GitHub already shifted its AI features to token-based pricing. The hyperscalers' agent platforms are moving the same direction. Within twelve months, the question every finance team will ask of every AI agent platform vendor will be the same: prove the unit economics, per workflow, in production, with audit-grade lineage.\nEnterprises that have built their AI agent strategy around per-user license math are about to discover that the seat-count conversation is over. The new conversation is about credit pools, workflow ROI, and the step-level attribution that ties them together. Microsoft just made that the default for 1.4 billion seats. The orchestration platforms that survive 2027 are the ones that already had the answer.\nFrom now, the question for enterprise teams running production AI agents is not whether to use Work IQ. It is whether their agent platform can prove what each workflow costs across every system it touches. The platforms that can will get the next budget. The ones that cannot are about to have a very different conversation with finance.\nSee AI agents in action\nStart Today\nStart building AI agents to automate processes\nJoin our platform and start building AI agents for various types of automations.\nRequest access\nStart Today\nStart building AI agents to automate processes\nJoin our platform and start building AI agents for various types of automations.\nRequest access\nLatest articles\nWhat Is MCP? Model Context Protocol for AI Agents Explained\nAgent2Agent vs MCP: The 2 Protocols Your 2026 AI Agent Stack Actually Runs On\nWhy AI Agents Fail in Production: 3 Root Causes That Aren't the Model\nWhat Is MCP? Model Context Protocol for AI Agents Explained\nAgent2Agent vs MCP: The 2 Protocols Your 2026 AI Agent Stack Actually Runs On\nWhy AI Agents Fail in Production: 3 Root Causes That Aren't the Model\nGoogle Just Put 200+ Models, Including Claude, Inside One Agent Platform. Single-Model Lock-In Is Over.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-078-microsoft-work-iq-copilot-credits-reset-2027-budgets.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-078-microsoft-work-iq-copilot-credits-reset-2027-budgets.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "high",
+  "extraction_method": "body-visible-text",
+  "readability_score": 85,
+  "extractor_diagnostics": {
+    "readability_score": 85,
+    "text_length": 11587,
+    "paragraph_count": 44,
+    "sentence_count": 101,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 11587,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "26f019c7e5b9b02b",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "ed988898d909b856",
+  "content_hash": "26f019c7e5b9b02b",
+  "full_text_hash": "26f019c7e5b9b02b",
+  "semantic_hash": "7d51a97f73db8732",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-29T05:24:29.004Z",
+  "last_seen_at": "2026-06-29T05:24:29.004Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "# Microsoft Work IQ and the End of Invisible Agent Costs: What 1.4 Billion Copilot Credits Will Reveal in 2027 Budgets. It also made it impossible to answer the only question that matters in a 2027 budget meeting: what does one agent task actually cost, and which workflows are worth running at scale? Microsoft Work IQ APIs reached general availability on June 16, and with them came a billing model that will force every enterprise running M365 to look at agent economics one task at a time. But the moment an enterpri",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Microsoft Work IQ: Copilot Credits Reset 2027 Budgets Jun 17, 2026 min read Microsoft Work IQ and the End of Invisible Agent Costs: What 1.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "4 Billion Copilot Credits Will Reveal in 2027 Budgets by Fredrik Falk Category AI Agents Share the article For two years, every enterprise CFO who signed a Microsoft 365 Copilot contract has been buying agent capacity they could not measure.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Flat per-user pricing made it feel safe.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "It also made it impossible to answer the only question that matters in a 2027 budget meeting: what does one agent task actually cost, and which workflows are worth running at scale?",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "That contradiction ends this week.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Tavily",
+      "Google",
+      "Microsoft",
+      "GitHub",
+      "AWS"
+    ],
+    "products": [
+      "Copilot",
+      "Agent",
+      "agent",
+      "agents",
+      "Agents",
+      "MCP",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "金融 / 保险",
+      "企业服务"
+    ],
+    "roles": [
+      "法务 / 律师",
+      "采购负责人"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "采购 / 招投标",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算",
+      "采购"
+    ],
+    "numbers": [
+      "2027 B",
+      "1.4 Billion",
+      "2027 b",
+      "16",
+      "365",
+      "90",
+      "0.240",
+      "2026"
+    ],
+    "quotes": [
+      "summarize every meeting transcript",
+      "we run on top of Microsoft"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Flat per-user pricing made it feel safe.",
+      "That contradiction ends this week."
+    ],
+    "case_details": [
+      "Microsoft Work IQ: Copilot Credits Reset 2027 Budgets Jun 17, 2026 min read Microsoft Work IQ and the End of Invisible Agent Costs: What 1."
+    ],
+    "workflow_changes": [
+      "It also made it impossible to answer the only question that matters in a 2027 budget meeting: what does one agent task actually cost, and which workflows are worth running at scale?"
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "法务 / 律师",
+      "采购负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Microsoft Work IQ: Copilot Credits Reset 2027 Budgets\n\n- raw_id: R-078\n- original_url: https://beam.ai/agentic-insights/microsoft-work-iq-copilot-credits-enterprise-cfo-2027-budgets\n- source_name: keyword search / Tavily\n- collected_at: 2026-06-29T05:24:29.004Z\n\n## clean_text\n\nMicrosoft Work IQ: Copilot Credits Reset 2027 Budgets\nJun 17, 2026\nmin read\nMicrosoft Work IQ and the End of Invisible Agent Costs: What 1.4 Billion Copilot Credits Will Reveal in 2027 Budgets\nby\nFredrik Falk\nCategory\nAI Agents\nShare the article\nFor two years, every enterprise CFO who signed a Microsoft 365 Copilot contract has been buying agent capacity they could not measure. Flat per-user pricing made it feel safe. It also made it impossible to answer the only question that matters in a 2027 budget meeting: what does one agent task actually cost, and which workflows are worth running at scale?\nThat contradiction ends this week. Microsoft Work IQ APIs reached general availability on June 16, and with them came a billing model that will force every enterprise running M365 to look at agent economics one task at a time. The protocol story has been covered everywhere. The billing story has not. It is the more consequential one.\nWhat Work IQ actually changes\nMicrosoft Work IQ exposes Microsoft 365 workplace intelligence to AI agents through three protocols (A2A for agent-to-agent handoffs, a redesigned remote MCP server, and a REST API) across four domains (Chat, Context, Tools, Workspaces). All three protocols went GA on the same day, less than four weeks after the Build 2026 preview. That speed is unusual for Microsoft, and it signals M365 is being positioned as the default organizational context layer for enterprise agents going forward.\nThe unlock for builders is real. Any agent on any platform can now read, write, and act inside an M365 tenant under the same Entra permissions and DLP policies users already have. Third-party agent platforms get the same access path as Copilot Studio and Foundry. The technical barriers to grounding agents in actual workplace data dropped meaningfully overnight.\nThe billing change is what most coverage will skip past. Work IQ APIs are billed through Copilot Credits, Microsoft's new consumption-based currency that also covers Copilot Studio and other Microsoft AI services. There is no separate Work IQ subscription, no SKU, no per-user license to add. Prebuilt M365 Copilot agents stay covered by the existing per-user license, so end users running standard Copilot scenarios see no change. But the moment an enterprise builds a custom agent in Copilot Studio, in Foundry, or on a third-party platform that grounds in M365 data, that agent meters against Copilot Credits per call.\nAdmins have to explicitly enable consumptive billing before deployment, and the new Microsoft Admin Center adds spend policies, usage limits, and monitoring as first-class controls. Microsoft is treating Copilot Credits as a FinOps surface, not a billing footnote.\nWhy per-task visibility was the missing piece\nUntil Work IQ GA, M365 Copilot's flat per-user license bundled unlimited agent calls into a single line item on the invoice. Procurement could benchmark seat counts against headcount. Finance could compare year-over-year spend. Neither could answer the harder question: what does one agent task cost when a user asks Copilot to summarize a 90-page contract versus when a user asks it to triage their inbox?\nThe answer mattered because the cost difference between those two tasks is enormous, and the business value difference is even bigger. A contract summary might save a lawyer an hour of review at a fully loaded rate of $300. An inbox triage might save a knowledge worker three minutes. If both tasks cost the same number of dollars in compute, one is wildly underpriced and the other is wildly overpriced, but the flat license treats them as identical. The result was a marketplace where some workflows were quietly subsidized and others quietly subsidized them, with no way for finance to see the actual flow of value.\nAcross 1.4 billion M365 seats globally , this is the largest forced shift to consumption billing the enterprise software market has ever seen. Within 90 days of GA, finance teams running any volume of custom Copilot Studio agents or third-party agent platforms grounded in M365 data will have their first real per-task cost data across all four Work IQ domains.\nWhat the 2027 budget conversation looks like\nThe internal conversation about agent spend changes shape immediately. Instead of negotiating seat counts and feature tiers, CFOs will be asked to approve credit pools per workflow, set spend ceilings per business unit, and justify which agent tasks earn their cost.\nA finance team that ran one hundred thousand \"summarize every meeting transcript\" runs in 2026 under a flat license will see a number next to that workflow in 2027. Some of those workflows will turn out to be worth their credit consumption. Some will not. The workflows that survive the review are the ones where the value per task is calculable and the value clears the cost. The workflows that do not survive are the ones that existed because they were free, and were marginally useful, and would never have been built if anyone had been looking at the per-task math.\nThis is the reckoning every enterprise software category eventually has. Cloud compute went through it when AWS made per-second billing real. Database storage went through it when Snowflake separated compute from storage. AI agents are going through it now, and Work IQ is the forcing function for the M365 portion of the stack.\nFor enterprise AI agent platforms , the implication is that the next vendor evaluation will look fundamentally different than the last one. CFOs will not be asking which platform has the prettiest dashboard. They will be asking which platform can prove, per workflow, what each agent task cost and what value it produced.\nThe platforms that survive the per-task review\nThe platforms that win the post-credit-visibility era are the ones that can attribute cost to a specific step in a specific workflow run by a specific user against a specific system of record. Generic chatbots cannot. Audit-grade orchestration platforms can.\nThis is where step-level audit infrastructure stops being a compliance feature and starts being a CFO feature. A platform that already records every agent action with the input that triggered it, the policy that approved it, the system of record it touched, the human checkpoint it cleared, and the output it produced now has the data structure CFOs will demand. The same audit trail that satisfied a regulator last quarter satisfies a finance review next quarter. The data has been collected the whole time. The visibility surface just changed.\nBeam was built for this. Agents running on Beam's platform carry per-step audit lineage as a default, not an add-on, because the regulated verticals Beam targets (finance, insurance, RPO, BPO) required it from day one. The cost attribution is a natural extension of the same data model: if you already know which step ran, you can attach what it cost. Per workflow, per step, per system, per user.\nThe harder problem Work IQ does not solve is the multi-system one. M365 is one input. Most production agent workflows touch the ERP that holds the purchase order, the CRM that holds the customer record, the claims system that holds the underwriting decision, the custom database that holds the policy details. An agent that closes financial books on time runs against M365 and the general ledger and the bank feed and the reconciliation rules engine. Work IQ gives you cost data for the M365 portion. The rest of the workflow needs the same attribution.\nThis is the orchestration layer above any single vendor's billing system. A platform that orchestrates an agent across M365 and the ERP and the CRM should be able to surface a single cost view for the full workflow, not a Microsoft-only slice. Beam's multi-system orchestration is built around that view, because enterprise workflows do not respect vendor boundaries and neither do the finance teams who pay for them.\nThe procurement playbook for the rest of 2026\nThree concrete moves for any enterprise team planning the 2027 agent budget.\nPilot Work IQ APIs against one high-volume workflow, with cost instrumentation from day one. Pick a workflow that runs frequently enough to generate real per-task data within thirty days. Instrument credit consumption per step. Build a unit-economics model before scaling, not after. The free trial windows that vendors will offer during the Copilot Credits rollout are the only honest A/B test enterprises will get, and the data captured during those windows becomes the basis for every subsequent negotiation.\nDemand step-level attribution from any orchestration vendor sitting on top of M365 data. If a vendor cannot show you cost per task per workflow, attributed to specific Work IQ calls and specific other-system calls, that vendor will not survive the 2027 procurement review. The vendors that can demonstrate the attribution today have been quietly building toward this moment. The ones that cannot are about to discover that \"we run on top of Microsoft\" was a positioning statement, not an architecture.\nReframe the agent platform conversation from features to economics . The next round of board conversations about AI agent investment will use per-workflow cost data as the unit of analysis. Workflow owners should be able to defend each agent in production with a cost-per-task number and a value-per-task number. The platforms that surface those two numbers automatically will be the ones that get expanded. The ones that surface neither will be the ones that get cut.\nThe bigger pattern\nWork IQ is the first major enterprise AI surface to ship consumption billing as the default, but it will not be the last. GitHub already shifted its AI features to token-based pricing. The hyperscalers' agent platforms are moving the same direction. Within twelve months, the question every finance team will ask of every AI agent platform vendor will be the same: prove the unit economics, per workflow, in production, with audit-grade lineage.\nEnterprises that have built their AI agent strategy around per-user license math are about to discover that the seat-count conversation is over. The new conversation is about credit pools, workflow ROI, and the step-level attribution that ties them together. Microsoft just made that the default for 1.4 billion seats. The orchestration platforms that survive 2027 are the ones that already had the answer.\nFrom now, the question for enterprise teams running production AI agents is not whether to use Work IQ. It is whether their agent platform can prove what each workflow costs across every system it touches. The platforms that can will get the next budget. The ones that cannot are about to have a very different conversation with finance.\nSee AI agents in action\nStart Today\nStart building AI agents to automate processes\nJoin our platform and start building AI agents for various types of automations.\nRequest access\nStart Today\nStart building AI agents to automate processes\nJoin our platform and start building AI agents for various types of automations.\nRequest access\nLatest articles\nWhat Is MCP? Model Context Protocol for AI Agents Explained\nAgent2Agent vs MCP: The 2 Protocols Your 2026 AI Agent Stack Actually Runs On\nWhy AI Agents Fail in Production: 3 Root Causes That Aren't the Model\nWhat Is MCP? Model Context Protocol for AI Agents Explained\nAgent2Agent vs MCP: The 2 Protocols Your 2026 AI Agent Stack Actually Runs On\nWhy AI Agents Fail in Production: 3 Root Causes That Aren't the Model\nGoogle Just Put 200+ Models, Including Claude, Inside One Agent Platform. Single-Model Lock-In Is Over.\n\n## full_text\n\nMicrosoft Work IQ: Copilot Credits Reset 2027 Budgets\nJun 17, 2026\nmin read\nMicrosoft Work IQ and the End of Invisible Agent Costs: What 1.4 Billion Copilot Credits Will Reveal in 2027 Budgets\nby\nFredrik Falk\nCategory\nAI Agents\nShare the article\nFor two years, every enterprise CFO who signed a Microsoft 365 Copilot contract has been buying agent capacity they could not measure. Flat per-user pricing made it feel safe. It also made it impossible to answer the only question that matters in a 2027 budget meeting: what does one agent task actually cost, and which workflows are worth running at scale?\nThat contradiction ends this week. Microsoft Work IQ APIs reached general availability on June 16, and with them came a billing model that will force every enterprise running M365 to look at agent economics one task at a time. The protocol story has been covered everywhere. The billing story has not. It is the more consequential one.\nWhat Work IQ actually changes\nMicrosoft Work IQ exposes Microsoft 365 workplace intelligence to AI agents through three protocols (A2A for agent-to-agent handoffs, a redesigned remote MCP server, and a REST API) across four domains (Chat, Context, Tools, Workspaces). All three protocols went GA on the same day, less than four weeks after the Build 2026 preview. That speed is unusual for Microsoft, and it signals M365 is being positioned as the default organizational context layer for enterprise agents going forward.\nThe unlock for builders is real. Any agent on any platform can now read, write, and act inside an M365 tenant under the same Entra permissions and DLP policies users already have. Third-party agent platforms get the same access path as Copilot Studio and Foundry. The technical barriers to grounding agents in actual workplace data dropped meaningfully overnight.\nThe billing change is what most coverage will skip past. Work IQ APIs are billed through Copilot Credits, Microsoft's new consumption-based currency that also covers Copilot Studio and other Microsoft AI services. There is no separate Work IQ subscription, no SKU, no per-user license to add. Prebuilt M365 Copilot agents stay covered by the existing per-user license, so end users running standard Copilot scenarios see no change. But the moment an enterprise builds a custom agent in Copilot Studio, in Foundry, or on a third-party platform that grounds in M365 data, that agent meters against Copilot Credits per call.\nAdmins have to explicitly enable consumptive billing before deployment, and the new Microsoft Admin Center adds spend policies, usage limits, and monitoring as first-class controls. Microsoft is treating Copilot Credits as a FinOps surface, not a billing footnote.\nWhy per-task visibility was the missing piece\nUntil Work IQ GA, M365 Copilot's flat per-user license bundled unlimited agent calls into a single line item on the invoice. Procurement could benchmark seat counts against headcount. Finance could compare year-over-year spend. Neither could answer the harder question: what does one agent task cost when a user asks Copilot to summarize a 90-page contract versus when a user asks it to triage their inbox?\nThe answer mattered because the cost difference between those two tasks is enormous, and the business value difference is even bigger. A contract summary might save a lawyer an hour of review at a fully loaded rate of $300. An inbox triage might save a knowledge worker three minutes. If both tasks cost the same number of dollars in compute, one is wildly underpriced and the other is wildly overpriced, but the flat license treats them as identical. The result was a marketplace where some workflows were quietly subsidized and others quietly subsidized them, with no way for finance to see the actual flow of value.\nAcross 1.4 billion M365 seats globally , this is the largest forced shift to consumption billing the enterprise software market has ever seen. Within 90 days of GA, finance teams running any volume of custom Copilot Studio agents or third-party agent platforms grounded in M365 data will have their first real per-task cost data across all four Work IQ domains.\nWhat the 2027 budget conversation looks like\nThe internal conversation about agent spend changes shape immediately. Instead of negotiating seat counts and feature tiers, CFOs will be asked to approve credit pools per workflow, set spend ceilings per business unit, and justify which agent tasks earn their cost.\nA finance team that ran one hundred thousand \"summarize every meeting transcript\" runs in 2026 under a flat license will see a number next to that workflow in 2027. Some of those workflows will turn out to be worth their credit consumption. Some will not. The workflows that survive the review are the ones where the value per task is calculable and the value clears the cost. The workflows that do not survive are the ones that existed because they were free, and were marginally useful, and would never have been built if anyone had been looking at the per-task math.\nThis is the reckoning every enterprise software category eventually has. Cloud compute went through it when AWS made per-second billing real. Database storage went through it when Snowflake separated compute from storage. AI agents are going through it now, and Work IQ is the forcing function for the M365 portion of the stack.\nFor enterprise AI agent platforms , the implication is that the next vendor evaluation will look fundamentally different than the last one. CFOs will not be asking which platform has the prettiest dashboard. They will be asking which platform can prove, per workflow, what each agent task cost and what value it produced.\nThe platforms that survive the per-task review\nThe platforms that win the post-credit-visibility era are the ones that can attribute cost to a specific step in a specific workflow run by a specific user against a specific system of record. Generic chatbots cannot. Audit-grade orchestration platforms can.\nThis is where step-level audit infrastructure stops being a compliance feature and starts being a CFO feature. A platform that already records every agent action with the input that triggered it, the policy that approved it, the system of record it touched, the human checkpoint it cleared, and the output it produced now has the data structure CFOs will demand. The same audit trail that satisfied a regulator last quarter satisfies a finance review next quarter. The data has been collected the whole time. The visibility surface just changed.\nBeam was built for this. Agents running on Beam's platform carry per-step audit lineage as a default, not an add-on, because the regulated verticals Beam targets (finance, insurance, RPO, BPO) required it from day one. The cost attribution is a natural extension of the same data model: if you already know which step ran, you can attach what it cost. Per workflow, per step, per system, per user.\nThe harder problem Work IQ does not solve is the multi-system one. M365 is one input. Most production agent workflows touch the ERP that holds the purchase order, the CRM that holds the customer record, the claims system that holds the underwriting decision, the custom database that holds the policy details. An agent that closes financial books on time runs against M365 and the general ledger and the bank feed and the reconciliation rules engine. Work IQ gives you cost data for the M365 portion. The rest of the workflow needs the same attribution.\nThis is the orchestration layer above any single vendor's billing system. A platform that orchestrates an agent across M365 and the ERP and the CRM should be able to surface a single cost view for the full workflow, not a Microsoft-only slice. Beam's multi-system orchestration is built around that view, because enterprise workflows do not respect vendor boundaries and neither do the finance teams who pay for them.\nThe procurement playbook for the rest of 2026\nThree concrete moves for any enterprise team planning the 2027 agent budget.\nPilot Work IQ APIs against one high-volume workflow, with cost instrumentation from day one. Pick a workflow that runs frequently enough to generate real per-task data within thirty days. Instrument credit consumption per step. Build a unit-economics model before scaling, not after. The free trial windows that vendors will offer during the Copilot Credits rollout are the only honest A/B test enterprises will get, and the data captured during those windows becomes the basis for every subsequent negotiation.\nDemand step-level attribution from any orchestration vendor sitting on top of M365 data. If a vendor cannot show you cost per task per workflow, attributed to specific Work IQ calls and specific other-system calls, that vendor will not survive the 2027 procurement review. The vendors that can demonstrate the attribution today have been quietly building toward this moment. The ones that cannot are about to discover that \"we run on top of Microsoft\" was a positioning statement, not an architecture.\nReframe the agent platform conversation from features to economics . The next round of board conversations about AI agent investment will use per-workflow cost data as the unit of analysis. Workflow owners should be able to defend each agent in production with a cost-per-task number and a value-per-task number. The platforms that surface those two numbers automatically will be the ones that get expanded. The ones that surface neither will be the ones that get cut.\nThe bigger pattern\nWork IQ is the first major enterprise AI surface to ship consumption billing as the default, but it will not be the last. GitHub already shifted its AI features to token-based pricing. The hyperscalers' agent platforms are moving the same direction. Within twelve months, the question every finance team will ask of every AI agent platform vendor will be the same: prove the unit economics, per workflow, in production, with audit-grade lineage.\nEnterprises that have built their AI agent strategy around per-user license math are about to discover that the seat-count conversation is over. The new conversation is about credit pools, workflow ROI, and the step-level attribution that ties them together. Microsoft just made that the default for 1.4 billion seats. The orchestration platforms that survive 2027 are the ones that already had the answer.\nFrom now, the question for enterprise teams running production AI agents is not whether to use Work IQ. It is whether their agent platform can prove what each workflow costs across every system it touches. The platforms that can will get the next budget. The ones that cannot are about to have a very different conversation with finance.\nSee AI agents in action\nStart Today\nStart building AI agents to automate processes\nJoin our platform and start building AI agents for various types of automations.\nRequest access\nStart Today\nStart building AI agents to automate processes\nJoin our platform and start building AI agents for various types of automations.\nRequest access\nLatest articles\nWhat Is MCP? Model Context Protocol for AI Agents Explained\nAgent2Agent vs MCP: The 2 Protocols Your 2026 AI Agent Stack Actually Runs On\nWhy AI Agents Fail in Production: 3 Root Causes That Aren't the Model\nWhat Is MCP? Model Context Protocol for AI Agents Explained\nAgent2Agent vs MCP: The 2 Protocols Your 2026 AI Agent Stack Actually Runs On\nWhy AI Agents Fail in Production: 3 Root Causes That Aren't the Model\nGoogle Just Put 200+ Models, Including Claude, Inside One Agent Platform. Single-Model Lock-In Is Over.\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 85\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / daily_observation, heatmap, case, trend / high] # Microsoft Work IQ and the End of Invisible Agent Costs: What 1.4 Billion Copilot Credits Will Reveal in 2027 Budgets. It also made it impossible to answer the only question that matters in a 2027 budget meeting: what does one agent task actually cost, and which workflows are worth running at scale? Microsoft Work IQ APIs reached general availability on June 16, and with them came a billing model that will force every enterprise running M365 to look at agent economics one task at a time. But the moment an enterpri\n2. [case_detail / daily_observation, heatmap, case / high] Microsoft Work IQ: Copilot Credits Reset 2027 Budgets Jun 17, 2026 min read Microsoft Work IQ and the End of Invisible Agent Costs: What 1.\n3. [number / daily_observation, heatmap, case, trend / high] 4 Billion Copilot Credits Will Reveal in 2027 Budgets by Fredrik Falk Category AI Agents Share the article For two years, every enterprise CFO who signed a Microsoft 365 Copilot contract has been buying agent capacity they could not measure.\n4. [company_action / daily_observation, heatmap, change, case, trend / high] Flat per-user pricing made it feel safe.\n5. [workflow_change / daily_observation, heatmap, change, case, trend / high] It also made it impossible to answer the only question that matters in a 2027 budget meeting: what does one agent task actually cost, and which workflows are worth running at scale?\n6. [company_action / daily_observation, heatmap, change, case, trend / high] That contradiction ends this week.\n"
+}

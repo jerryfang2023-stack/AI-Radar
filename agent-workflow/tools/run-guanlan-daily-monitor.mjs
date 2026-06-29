@@ -3982,26 +3982,38 @@ const targetedRefillQueriesByImportance = {
     `AI platform case study production rollout customer ${date.slice(0, 4)}`,
     `enterprise AI agent customer adopts production rollout case study ${date.slice(0, 4)}`,
     `AI agent pilot customer production rollout case study ${date.slice(0, 4)}`,
+    `AI automation customer story finance insurance workflow ${date.slice(0, 4)}`,
+    `vertical AI customer deployment healthcare legal logistics ${date.slice(0, 4)}`,
   ],
   important_funding: [
     `AI agent startup raises seed Series A funding ${date.slice(0, 4)}`,
     `vertical AI startup funding enterprise agents announced ${date.slice(0, 4)}`,
     `AI workflow automation startup raises venture funding ${date.slice(0, 4)}`,
+    `AI agent startup raises funding enterprise customers ${date.slice(0, 4)}`,
+    `vertical AI startup raises seed healthcare legal logistics ${date.slice(0, 4)}`,
+    `AI infrastructure startup funding agent platform customers ${date.slice(0, 4)}`,
   ],
   important_product_or_service: [
     `AI agent product launch enterprise workflow platform announced ${date.slice(0, 4)}`,
     `AI coding agent API SDK release enterprise product update ${date.slice(0, 4)}`,
     `AI platform launches agent workflow automation service ${date.slice(0, 4)}`,
+    `AI agent platform general availability enterprise workflow ${date.slice(0, 4)}`,
+    `AI infrastructure startup launches agent platform API ${date.slice(0, 4)}`,
   ],
   important_vertical_solution: [
     `vertical AI solution customer deployment healthcare finance manufacturing ${date.slice(0, 4)}`,
     `AI agent vertical SaaS customer workflow deployment case ${date.slice(0, 4)}`,
     `enterprise AI deployment industry workflow customer story ${date.slice(0, 4)}`,
+    `AI workflow automation customer deployment insurance logistics retail ${date.slice(0, 4)}`,
+    `AI implementation case study manufacturing healthcare finance ${date.slice(0, 4)}`,
   ],
   important_technical_trend: [
     `model release inference cost reduction enterprise adoption ${date.slice(0, 4)}`,
     `AI infrastructure launch inference optimization enterprise deployment ${date.slice(0, 4)}`,
     `agentic AI platform architecture enterprise adoption release ${date.slice(0, 4)}`,
+    `open source AI agent framework release enterprise adoption ${date.slice(0, 4)}`,
+    `AI evals platform release enterprise agents ${date.slice(0, 4)}`,
+    `AI inference platform launch enterprise deployment ${date.slice(0, 4)}`,
   ],
 };
 
@@ -4044,19 +4056,36 @@ function coreSupplyGaps(items) {
 }
 
 function refillRequestsForPoolState(poolGaps, supplyGaps) {
-  if (poolGaps.length) return poolGaps;
-  if (!supplyGaps.gaps.length) return [];
+  const requests = [];
+  for (const gap of poolGaps) {
+    if (gap?.importanceType) requests.push(gap);
+  }
+  if (!supplyGaps.gaps.length) return requests;
   const needed = Math.max(
     routedPoolMinTarget - supplyGaps.routedCount,
     corePoolMinTarget - supplyGaps.coreCount,
     coreNonLargeVendorMinTarget - supplyGaps.nonLargeCoreCount,
     1
   );
-  return targetedCoreRefillImportanceOrder.map((importanceType) => ({
+  requests.push(...targetedCoreRefillImportanceOrder.map((importanceType) => ({
     importanceType,
     count: 0,
-    min: Math.min(needed, 3),
-  }));
+    min: Math.min(Math.max(needed, 5), 6),
+  })));
+
+  const merged = new Map();
+  for (const request of requests) {
+    const importanceType = request.importanceType || "";
+    if (!importanceType) continue;
+    const existing = merged.get(importanceType);
+    if (!existing) {
+      merged.set(importanceType, { ...request });
+      continue;
+    }
+    existing.count = Math.min(Number(existing.count || 0), Number(request.count || 0));
+    existing.min = Math.max(Number(existing.min || 0), Number(request.min || 0));
+  }
+  return [...merged.values()];
 }
 
 async function collectTargetedImportanceRefill(poolGaps, existingItems = []) {

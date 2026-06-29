@@ -1077,6 +1077,17 @@ function signalClusterKey(spec, section) {
   return `event:${company}:${normalizedSignalText(`${spec.type} ${title}`).slice(0, 120)}`;
 }
 
+function signalFactFingerprintKeys(spec, section) {
+  const owner = normalizedSignalText(spec.company || companyFromSection(section));
+  const title = normalizedSignalText(spec.title || poolTitle(section));
+  const eventLine = normalizedSignalText(spec.eventLine || "");
+  const publishedAt = normalizedSignalText(value(section, "published_at"));
+  return [
+    owner && title ? `${owner} ${title}` : "",
+    owner && eventLine && title ? `${owner} ${eventLine} ${publishedAt} ${title}` : "",
+  ].filter(Boolean);
+}
+
 function slugify(value) {
   return String(value || "")
     .toLowerCase()
@@ -1275,10 +1286,119 @@ function cleanSourceTitleForPublicTitle(title = "") {
     .slice(0, 96);
 }
 
+function chineseAmountLabel(raw = "") {
+  const amountText = String(raw || "").trim();
+  const match = amountText.match(/\$ ?(\d+(?:\.\d+)?)\s?(M|B|million|billion)?/iu);
+  if (!match) return amountText;
+  const value = Number(match[1]);
+  const unit = String(match[2] || "").toLowerCase();
+  if (!Number.isFinite(value)) return amountText;
+  if (unit === "b" || unit === "billion") return `${value} 亿美元`;
+  if (unit === "m" || unit === "million" || !unit) return `${Math.round(value * 100)} 万美元`;
+  return amountText;
+}
+
+function cleanAutoTitleSubject(raw = "") {
+  return String(raw || "")
+    .replace(/\s*\|\s*[^|]{2,80}$/u, "")
+    .replace(/\s+-\s*(Salesforce|Digital Applied|Bessemer Venture Partners|Onyx AI|ChatMaxima|Future Works|Releasebot|Cobbai Blog|Artificial Intelligence)$/iu, "")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function translateKnownSourceTitle(title = "") {
+  const clean = cleanAutoTitleSubject(title);
+  const rules = [
+    [/^Former Coatue Partner Raises \$65M Seed for AI Agent Startup/iu, "Former Coatue Partner 为 AI Agent 初创公司完成 6500 万美元种子轮融资"],
+    [/^AI Agent Healthcare Tools \(May 2026\)$/iu, "2026 年 5 月 AI Agent 医疗工具"],
+    [/^8 Ways AI Agents Are Evolving in 2026/iu, "Salesforce：2026 年 AI Agent 演进的 8 种方式"],
+    [/^AI Agent Productivity Statistics 2026: 100\+ ROI Data/iu, "Digital Applied：2026 年 AI Agent 生产力统计与 ROI 数据"],
+    [/^How Building AI Agents Has Changed in 2026/iu, "Pulumi：2026 年 AI Agent 构建方式的变化"],
+    [/^AI Consulting Landscape 2026/i, "2026 年 AI 咨询格局与本地化部署"],
+    [/^OpenAI Release Notes - June 2026 Latest Updates/iu, "OpenAI 2026 年 6 月发布说明与最新更新"],
+    [/^AI for Insurance Companies: 2026 Costs, Rules and Roadmap/iu, "2026 年保险公司 AI 成本、规则与路线图"],
+    [/^Suno launches Spark incubator program/iu, "Suno 推出 Spark 孵化器计划，面向独立艺术家"],
+    [/^AI Infrastructure Best Practices 2026/iu, "2026 年企业 AI 基础设施最佳实践"],
+    [/^The companies most likely to automate your job are now funding a \$1 billion program/iu, "自动化岗位相关公司资助 10 亿美元再培训计划"],
+    [/^The AI pricing and monetization playbook/iu, "Bessemer：AI 定价与商业化手册"],
+    [/^AI Workflow Automation Trends in 2026/iu, "2026 年 AI 工作流自动化趋势"],
+    [/^Applied AI Intelligence/iu, "Future Works：应用型 AI 智能"],
+    [/^Best Enterprise RAG Platforms for 2026/iu, "2026 年企业 RAG 平台买方指南"],
+    [/^AI Workflow Automation for Insurance Industry Guide 2026/iu, "2026 年保险行业 AI 工作流自动化指南"],
+    [/^Business Case Story: From Pilot to Enterprise Rollout for AI Support/iu, "Cobbai：AI 支持从试点走向企业级推出的商业案例"],
+    [/^55\+ AI Customer Support Statistics and Trends for 2026/iu, "ChatMaxima：2026 年 AI 客户支持统计与趋势"],
+    [/^Smartsheet Claude Platform \(API\) case study/iu, "Smartsheet Claude Platform API 案例研究"],
+    [/^The State of AI in the Enterprise - 2026 AI report/iu, "Deloitte：2026 年企业 AI 状态报告"],
+    [/^Deploy Small Language Models on GPU Cloud/iu, "在 GPU Cloud 上部署小语言模型的企业指南"],
+    [/^GitHub Release Notes - June 2026 Latest Updates/iu, "GitHub 2026 年 6 月发布说明与最新更新"],
+    [/^22 AI workflow automation examples you have to try in 2026/iu, "2026 年 22 个 AI 工作流自动化示例"],
+    [/^Microsoft Build 2026 Book of News/iu, "Microsoft Build 2026 新闻集 AI 回顾"],
+    [/^Microsoft Work IQ: Copilot Credits Reset 2027 Budgets/iu, "Microsoft Work IQ：Copilot Credits 重置 2027 年预算"],
+    [/^Movate and MelodyArc Announce Applied AI Partnership/iu, "Movate 与 MelodyArc 宣布应用 AI 合作"],
+    [/^Production-grade AI agents for financial compliance/iu, "Stripe 金融合规生产级 AI Agent 经验"],
+    [/^Best AI Development Services for Startups and Enterprises/iu, "面向初创公司和企业的 AI 开发服务"],
+  ];
+  return rules.find(([pattern]) => pattern.test(clean))?.[1] || "";
+}
+
+function translateSourceTitleFromPattern({ type, company, sourceEventTitle, amount }) {
+  const clean = cleanAutoTitleSubject(cleanSourceTitleForPublicTitle(sourceEventTitle));
+  const known = translateKnownSourceTitle(clean);
+  if (known) return known;
+
+  const fundingMatch = clean.match(/^(.{2,70}?)\s+(?:Raises|Raised|Lands|Secures|Closes)\s+(\$ ?\d+(?:\.\d+)?\s?(?:M|B|million|billion)?)\s*(Seed|Pre-Seed|Series\s+[A-Z])?\s*(?:for|to)\s+(.{4,90})$/iu);
+  if (fundingMatch) {
+    const subject = cleanAutoTitleSubject(fundingMatch[1]) || company;
+    const money = chineseAmountLabel(fundingMatch[2]);
+    const round = fundingMatch[3] ? `${fundingMatch[3].replace(/pre-seed/iu, "Pre-Seed").replace(/seed/iu, "种子轮").replace(/series\s+([A-Z])/iu, "$1 轮")} ` : "";
+    const purpose = fundingMatch[4]
+      .replace(/\bAI Agent Startup\b/iu, "AI Agent 初创公司")
+      .replace(/\bEnterprise AI\b/iu, "企业 AI")
+      .replace(/\bAI\b/gu, "AI");
+    return `${subject} 为 ${purpose} 完成 ${money}${round}融资`.replace(/\s+/gu, " ").trim();
+  }
+
+  if (/\bRelease Notes\b/iu.test(clean)) {
+    const owner = company && company !== "AI" ? company : clean.split(/\s+/u)[0];
+    return `${owner} 发布说明与最新更新`;
+  }
+  if (/\blaunches?|introduces?|releases?|announces?\b/iu.test(clean)) {
+    const subject = company && company !== "AI" ? company : cleanAutoTitleSubject(clean.split(/\b(?:launches?|introduces?|releases?|announces?)\b/iu)[0]);
+    return `${subject} 发布或推出原文所述 AI 产品能力`;
+  }
+  if (/\bcase study\b/iu.test(clean)) return `${company} 相关 AI 案例研究`;
+  if (/\bguide|playbook|roadmap|best practices|examples|statistics|trends|report\b/iu.test(clean)) {
+    const topic = clean
+      .replace(/\bAI\b/gu, "AI")
+      .replace(/\bAgent\b/gu, "Agent")
+      .replace(/\bWorkflow Automation\b/iu, "工作流自动化")
+      .replace(/\bInfrastructure\b/iu, "基础设施")
+      .replace(/\bEnterprise\b/iu, "企业")
+      .replace(/\bInsurance\b/iu, "保险")
+      .replace(/\bHealthcare\b/iu, "医疗")
+      .replace(/\bProductivity\b/iu, "生产力")
+      .replace(/\bStatistics\b/iu, "统计")
+      .replace(/\bTrends\b/iu, "趋势")
+      .replace(/\bReport\b/iu, "报告")
+      .replace(/\bGuide\b/iu, "指南")
+      .replace(/\bPlaybook\b/iu, "手册")
+      .replace(/\bRoadmap\b/iu, "路线图")
+      .replace(/\bBest Practices\b/iu, "最佳实践");
+    return topic;
+  }
+  if (type === "funding") {
+    const money = chineseAmountLabel(amount);
+    return `${company} 完成${money ? `${money} ` : ""}融资`;
+  }
+  return "";
+}
+
 function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount }) {
   const owner = publicCardCopy(company || "AI");
   const sourceTitle = cleanSourceTitleForPublicTitle(sourceEventTitle);
   const money = amount ? `${amount} ` : "";
+  const translatedTitle = translateSourceTitleFromPattern({ type, company: owner, sourceEventTitle: sourceTitle, amount });
+  if (translatedTitle && hasCjk(translatedTitle)) return translatedTitle;
   if (type === "funding") return `${owner} ${money}${sourceTitle}`.trim();
   return sourceTitle;
 }
@@ -1964,6 +2084,7 @@ function main() {
   const frontSignalSourceLevels = { S: 0, A: 0, B: 0 };
   const signalIndexSpecs = [];
   const acceptedClusterKeys = new Set();
+  const acceptedFactKeys = new Set();
 
   cleanSignalCardsForDate();
   const existingSignalIndex = existingSignalCardIndex();
@@ -1986,7 +2107,15 @@ function main() {
       clusterRows.push({ poolRef: spec.poolRef, clusterKey, decision: "skipped", reason: "duplicate_event_cluster" });
       continue;
     }
+    const factKeys = signalFactFingerprintKeys(spec, section);
+    const duplicateFactKey = factKeys.find((key) => acceptedFactKeys.has(key));
+    if (duplicateFactKey) {
+      skipped.push(`${spec.poolRef}: duplicate fact fingerprint ${duplicateFactKey}`);
+      clusterRows.push({ poolRef: spec.poolRef, clusterKey: duplicateFactKey, decision: "skipped", reason: "duplicate_fact_fingerprint" });
+      continue;
+    }
     acceptedClusterKeys.add(clusterKey);
+    for (const factKey of factKeys) acceptedFactKeys.add(factKey);
     clusterRows.push({ poolRef: spec.poolRef, clusterKey, decision: "accepted", reason: "" });
     const existing = findExistingSignalCard(existingSignalIndex, spec, section);
     if (existing) {

@@ -1,0 +1,364 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-016
+title: "Applied AI Intelligence - Future Works"
+original_url: "https://future.works/applied-ai-intelligence/"
+canonical_url: "https://future.works/applied-ai-intelligence"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "fde_implementation"
+search_path_label: "Enterprise AI / FDE implementation path"
+author: ""
+published_at: ""
+collected_at: 2026-06-29T05:24:28.606Z
+language: mixed
+full_text_hash: 25099df052a31e5d
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-016-applied-ai-intelligence-future-works.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-016-applied-ai-intelligence-future-works.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":6134,"paragraph_count":67,"sentence_count":84,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 6134
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"25099df052a31e5d","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: ed6a47f43b96d5a4
+content_hash: 25099df052a31e5d
+semantic_hash: abe2f91ee02d532c
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-06-29T05:24:28.606Z"
+last_seen_at: 2026-06-29T05:24:28.606Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch"],"products":["agent","agents"],"people":[],"industries":["金融 / 保险","制造 / 工业","企业服务"],"roles":["CIO / IT 负责人","采购负责人","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","采购","销售 / 客服"],"numbers":["0","2\nM","2","9\nB","2 b","10","12","100"],"quotes":[]}
+evidence_seed: {"company_actions":["Production rollouts stall.","We rebuild the operating model around named senior experts orchestrating AI agents on our proprietary harnesses, in twelve-week outcome-staked cycles.","From scattered experiments to operating capability."],"case_details":["Take a pilot that stalled in handoff and finish the production rollout in two cycles. Often the fastest path to a verified outcome for a buyer who is already ... / query=AI agent production deployment customer workflow / intent=find_original_source / path=fde_implementation","Enterprise AI Operationalization Move AI out of pilots, into the parts of the business that change the P&L .","Pilots succeed easily."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"Take a pilot that stalled in handoff and finish the production rollout in two cycles. Often the fastest path to a verified outcome for a buyer who is already ... / query=AI agent production deployment customer workflow / intent=find_original_source / path=fde_implementation","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Enterprise AI Operationalization Move AI out of pilots, into the parts of the business that change the P&L .","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Pilots succeed easily.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Production rollouts stall.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We rebuild the operating model around named senior experts orchestrating AI agents on our proprietary harnesses, in twelve-week outcome-staked cycles.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"From scattered experiments to operating capability.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+theme: enterprise-ai-implementation-signal
+keyword_group: enterprise-ai-implementation-signal
+copyright_note: local research archive only
+---
+
+# Applied AI Intelligence - Future Works
+
+## clean_text
+
+Enterprise AI Operationalization
+Move AI out of pilots, into the parts of the business that change the P&L .
+Pilots succeed easily. Production rollouts stall. We rebuild the operating model around named senior experts orchestrating AI agents on our proprietary harnesses, in twelve-week outcome-staked cycles. From scattered experiments to operating capability.
+Join Waitlist See all five problem domains →
+No obligation. We pick up.
+The pattern
+Pilot succeeds. Production never lands.
+You have models that work. A vendor demo went well. A pilot shipped. Then the rollout calendar starts slipping. The team that built the pilot got reassigned. The integrators want a new discovery phase. The model accuracy stops mattering because no workflow consumes its output. The operating model around the AI was never built to scale.
+Operationalization is the missing piece. It is not more pilots, and it is not a larger SI engagement. It is rebuilding the small number of workflows where AI directly moves the P&L, with senior operators owning judgment and AI agents owning the volume. Each cycle ships a verified outcome and seeds the next one.
+How we do it
+Twelve weeks. Production-grade.
+Verified value.
+One cycle is enough to ship a verified outcome. Multi-cycle programs compound: each cycle expands the production surface of AI inside your business while the baseline tracks the P&L impact.
+Week 0 to 2
+Mobilize against your P&L
+We name the pod in the SOW, ingest your context onto our harness, and lock an Approved Value Baseline with your ROI-approving stakeholders. The exec closest to the program's P&L signs off in writing.
+Week 2 to 9
+Build and deploy on production
+Senior operators design and validate; AI agents do the volume work (data, mapping, drafting, instrumentation, QA). Everything ships against the Week 2 baseline, into the production workflows, not a staging fiction.
+Week 10 to 12
+Verify value, then compound
+Your stakeholders sign off on Value Created. The agents, harness, and operating model stay with you. Cycle 2 activates against a Modular Rate Card with no second procurement cycle.
+In operation
+From scattered pilots to one operating fabric.
+Pilots into production
+AI in the decision loop
+Workflows in production
+Where we engage
+Five shapes inside this domain.
+Most programs combine two or three of the shapes below into a single twelve-week cycle. We size the cycle to the value baseline, not to the number of shapes.
+AI Center-of-Excellence redesign
+Stand up or rewire the internal CoE so it ships agentic capability into the business instead of running a pilot factory. Governance, model catalog, evaluation pipelines, agent harness.
+Agentic execution on existing workflows
+Deploy AI agents into specific workflows (order-to-cash, demand sensing, exception management, contract intelligence) that close the loop on outcomes the operator already owns.
+Decision-assist deployments
+Production-grade decision-assist agents alongside named operators. The agents surface options, evidence, and trade-offs; the operator decides. Audit trail, accuracy budget, escalation rules.
+Model governance and observability
+Production observability for foundation-model traffic, with cost, latency, accuracy, and drift instrumented per workflow. CFO and security teams see the same dashboard.
+Pilot-to-production rescue
+Take a pilot that stalled in handoff and finish the production rollout in two cycles. Often the fastest path to a verified outcome for a buyer who is already invested.
+Proof
+Verified at Fortune 100 scale.
+Trusted by teams at...
+How we unlocked a 3x+ return challenge in 12 weeks for Philips on an AI program that had stalled at the pilot stage.
+Working capital and freight outcomes shipped inside Cycle 1, signed off by Philips Finance against an Approved Value Baseline locked in Week 2. The agents and operating model stayed with Philips. Cycle 2 expanded the production surface.
+Read the Philips story →
+Commitments
+Four contractual commitments,
+live in every cycle.
+The full set of seven sits on the Services page. These four show up the most often in AI Operationalization engagements.
+01 ROI or We Pay
+A portion of every cycle's fee is staked on validated outcomes against the Approved Value Baseline.
+02 Transparent Resource Plan
+Named senior experts on the SOW. Substitutions need client sign-off. No labor pyramid.
+03 Free Until Value Pilot
+Thirty-day proof-of-value pilot. Client pays only at production-grade outcome.
+04 Vendor-Agnostic Architecture
+Open standards, multi-cloud, model-agnostic harness. Tooling follows the design, not a sales quota.
+See all seven counter-moves →
+Related domains
+Programs usually span more than one.
+Clients hire us on one problem domain and discover they have the other four. The mechanism is the same across all five: twelve-week cycles, named senior experts, AI agents on production workflows.
+Supply Chain and Fulfillment Transformation
+Allocation logic, freight discipline, demand sensing, SKU rationalization, fulfillment digital twins.
+See the domain →
+Agentic Execution of Enterprise Workflows
+Order-to-cash, procure-to-pay, S&OP, contracts and quote-to-cash, decision-assist agents.
+See the domain →
+Operational Resilience and Working Capital
+Margin and freight protection, inventory and SLOB reduction, working capital release, exception management.
+See the domain →
+Customer Experience and Service Operations
+Agentic resolution, exception management, and service operations that lift CSAT while compressing cost-to-serve.
+See the domain →
+Direct line
+Cycle 1 in your operation.
+Twenty-five minute call. Cycle 1 sketch tied to a real workflow in your business. Baseline mechanics, named operators, agent harness. No slides, no obligation.
+Join Waitlist No obligation. We pick up.
+Frequently asked
+Questions a buyer actually asks.
+What does Enterprise AI Operationalization actually look like? +
+Why do most enterprise AI pilots stall before production? +
+How do you measure "AI ROI" in a way our finance team will sign off on? +
+Do you build with foundation models, or with our own model stack? +
+How is this different from hiring an AI consultancy? +
+
+## full_text
+
+Enterprise AI Operationalization
+Move AI out of pilots, into the parts of the business that change the P&L .
+Pilots succeed easily. Production rollouts stall. We rebuild the operating model around named senior experts orchestrating AI agents on our proprietary harnesses, in twelve-week outcome-staked cycles. From scattered experiments to operating capability.
+Join Waitlist See all five problem domains →
+No obligation. We pick up.
+The pattern
+Pilot succeeds. Production never lands.
+You have models that work. A vendor demo went well. A pilot shipped. Then the rollout calendar starts slipping. The team that built the pilot got reassigned. The integrators want a new discovery phase. The model accuracy stops mattering because no workflow consumes its output. The operating model around the AI was never built to scale.
+Operationalization is the missing piece. It is not more pilots, and it is not a larger SI engagement. It is rebuilding the small number of workflows where AI directly moves the P&L, with senior operators owning judgment and AI agents owning the volume. Each cycle ships a verified outcome and seeds the next one.
+How we do it
+Twelve weeks. Production-grade.
+Verified value.
+One cycle is enough to ship a verified outcome. Multi-cycle programs compound: each cycle expands the production surface of AI inside your business while the baseline tracks the P&L impact.
+Week 0 to 2
+Mobilize against your P&L
+We name the pod in the SOW, ingest your context onto our harness, and lock an Approved Value Baseline with your ROI-approving stakeholders. The exec closest to the program's P&L signs off in writing.
+Week 2 to 9
+Build and deploy on production
+Senior operators design and validate; AI agents do the volume work (data, mapping, drafting, instrumentation, QA). Everything ships against the Week 2 baseline, into the production workflows, not a staging fiction.
+Week 10 to 12
+Verify value, then compound
+Your stakeholders sign off on Value Created. The agents, harness, and operating model stay with you. Cycle 2 activates against a Modular Rate Card with no second procurement cycle.
+In operation
+From scattered pilots to one operating fabric.
+Pilots into production
+AI in the decision loop
+Workflows in production
+Where we engage
+Five shapes inside this domain.
+Most programs combine two or three of the shapes below into a single twelve-week cycle. We size the cycle to the value baseline, not to the number of shapes.
+AI Center-of-Excellence redesign
+Stand up or rewire the internal CoE so it ships agentic capability into the business instead of running a pilot factory. Governance, model catalog, evaluation pipelines, agent harness.
+Agentic execution on existing workflows
+Deploy AI agents into specific workflows (order-to-cash, demand sensing, exception management, contract intelligence) that close the loop on outcomes the operator already owns.
+Decision-assist deployments
+Production-grade decision-assist agents alongside named operators. The agents surface options, evidence, and trade-offs; the operator decides. Audit trail, accuracy budget, escalation rules.
+Model governance and observability
+Production observability for foundation-model traffic, with cost, latency, accuracy, and drift instrumented per workflow. CFO and security teams see the same dashboard.
+Pilot-to-production rescue
+Take a pilot that stalled in handoff and finish the production rollout in two cycles. Often the fastest path to a verified outcome for a buyer who is already invested.
+Proof
+Verified at Fortune 100 scale.
+Trusted by teams at...
+How we unlocked a 3x+ return challenge in 12 weeks for Philips on an AI program that had stalled at the pilot stage.
+Working capital and freight outcomes shipped inside Cycle 1, signed off by Philips Finance against an Approved Value Baseline locked in Week 2. The agents and operating model stayed with Philips. Cycle 2 expanded the production surface.
+Read the Philips story →
+Commitments
+Four contractual commitments,
+live in every cycle.
+The full set of seven sits on the Services page. These four show up the most often in AI Operationalization engagements.
+01 ROI or We Pay
+A portion of every cycle's fee is staked on validated outcomes against the Approved Value Baseline.
+02 Transparent Resource Plan
+Named senior experts on the SOW. Substitutions need client sign-off. No labor pyramid.
+03 Free Until Value Pilot
+Thirty-day proof-of-value pilot. Client pays only at production-grade outcome.
+04 Vendor-Agnostic Architecture
+Open standards, multi-cloud, model-agnostic harness. Tooling follows the design, not a sales quota.
+See all seven counter-moves →
+Related domains
+Programs usually span more than one.
+Clients hire us on one problem domain and discover they have the other four. The mechanism is the same across all five: twelve-week cycles, named senior experts, AI agents on production workflows.
+Supply Chain and Fulfillment Transformation
+Allocation logic, freight discipline, demand sensing, SKU rationalization, fulfillment digital twins.
+See the domain →
+Agentic Execution of Enterprise Workflows
+Order-to-cash, procure-to-pay, S&OP, contracts and quote-to-cash, decision-assist agents.
+See the domain →
+Operational Resilience and Working Capital
+Margin and freight protection, inventory and SLOB reduction, working capital release, exception management.
+See the domain →
+Customer Experience and Service Operations
+Agentic resolution, exception management, and service operations that lift CSAT while compressing cost-to-serve.
+See the domain →
+Direct line
+Cycle 1 in your operation.
+Twenty-five minute call. Cycle 1 sketch tied to a real workflow in your business. Baseline mechanics, named operators, agent harness. No slides, no obligation.
+Join Waitlist No obligation. We pick up.
+Frequently asked
+Questions a buyer actually asks.
+What does Enterprise AI Operationalization actually look like? +
+Why do most enterprise AI pilots stall before production? +
+How do you measure "AI ROI" in a way our finance team will sign off on? +
+Do you build with foundation models, or with our own model stack? +
+How is this different from hiring an AI consultancy? +
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":6134,"paragraph_count":67,"sentence_count":84,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Take a pilot that stalled in handoff and finish the production rollout in two cycles. Often the fastest path to a verified outcome for a buyer who is already ... / query=AI agent production deployment customer workflow / intent=find_original_source / path=fde_implementation
+
+2. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Enterprise AI Operationalization Move AI out of pilots, into the parts of the business that change the P&L .
+
+3. **case_detail**｜supports=daily_observation, heatmap, case｜importance=high｜confidence=high
+   Pilots succeed easily.
+
+4. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   Production rollouts stall.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   We rebuild the operating model around named senior experts orchestrating AI agents on our proprietary harnesses, in twelve-week outcome-staked cycles.
+
+6. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=high｜confidence=high
+   From scattered experiments to operating capability.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: agent, agents
+- people: 暂无公开信息
+- industries: 金融 / 保险, 制造 / 工业, 企业服务
+- roles: CIO / IT 负责人, 采购负责人, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 采购, 销售 / 客服
+- numbers: 0, 2
+M, 2, 9
+B, 2 b, 10, 12, 100
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Production rollouts stall. / We rebuild the operating model around named senior experts orchestrating AI agents on our proprietary harnesses, in twelve-week outcome-staked cycles. / From scattered experiments to operating capability.
+- case_details: Take a pilot that stalled in handoff and finish the production rollout in two cycles. Often the fastest path to a verified outcome for a buyer who is already ... / query=AI agent production deployment customer workflow / intent=find_original_source / path=fde_implementation / Enterprise AI Operationalization Move AI out of pilots, into the parts of the business that change the P&L . / Pilots succeed easily.
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 采购负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Take a pilot that stalled in handoff and finish the production rollout in two cycles. Often the fastest path to a verified outcome for a buyer who is already ... / query=AI agent production deployment customer workflow / intent=find_original_source / path=fde_implementation
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

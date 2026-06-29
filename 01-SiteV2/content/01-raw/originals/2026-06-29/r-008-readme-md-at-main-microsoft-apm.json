@@ -1,0 +1,285 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-008",
+  "title": "README.md at main · microsoft/apm",
+  "original_url": "https://github.com/microsoft/apm/blob/main/README.md",
+  "canonical_url": "https://github.com/microsoft/apm/blob/main/README.md",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-29T05:24:28.561Z",
+  "language": "mixed",
+  "full_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nmicrosoft\napm\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n257\nStar\n3k\nFiles Expand file tree\nmain\n/ README.md\nCopy path\nBlame\nMore file actions\nBlame\nMore file actions\nLatest commit\nHistory\nHistory\nHistory\n180 lines (123 loc) · 9.14 KB\nmain\n/ README.md\nCopy path\nTop\nFile metadata and controls\nPreview\nCode\nBlame\n180 lines (123 loc) · 9.14 KB\nRaw\nCopy raw file\nDownload raw file\nOutline Edit and raw actions\nAPM – Agent Package Manager\nAn open-source, community-driven dependency manager for AI agents.\nThink package.json , requirements.txt , or Cargo.toml — but for AI agent configuration.\nGitHub Copilot · Claude Code · Cursor · OpenCode · Codex · Gemini · Windsurf · Kiro\nDocumentation · Quick Start · CLI Reference · Roadmap\nPortable by manifest. Secure by default. Governed by policy.\nOne file describes every agent's context; one command reproduces it everywhere; one policy controls what an org will allow.\nWhy APM\nAI coding agents need context to be useful — standards, prompts, skills, plugins — but today every developer sets this up manually. Nothing is portable nor reproducible. There's no manifest for it.\nAPM fixes this. Declare your project's agentic dependencies once in apm.yml , and every developer who clones your repo gets a fully configured agent setup in seconds — with transitive dependency resolution, just like npm or pip. It's also the first tool that lets you author plugins with a real dependency manager and export standard plugin.json packages.\n# apm.yml — ships with your project\nname : your-project\nversion : 1.0.0\ndependencies :\napm :\n# Skills from any repository\n- anthropics/skills/skills/frontend-design\n# Plugins\n- github/awesome-copilot/plugins/context-engineering\n# Specific agent primitives from any repository\n- github/awesome-copilot/agents/api-architect.agent.md\n# A full APM package with instructions, skills, prompts, hooks...\n- microsoft/apm-sample-package#v1.0.0\nmcp :\n# MCP servers -- installed into every detected client\n- name : io.github.github/github-mcp-server\ntransport : http # MCP transport name, not URL scheme -- connects over HTTPS\ngit clone < org/repo > && cd < repo >\napm install # every agent is configured\nComing from npx skills add ? Drop-in:\napm install vercel-labs/agent-skills # whole bundle, like npx skills add\napm install vercel-labs/agent-skills --skill deploy-to-vercel # one skill, persisted to apm.yml\nSame install gesture. You also get a manifest, lockfile, and reproducibility .\nZero-config Copilot:\napm compile -t copilot # writes .github/copilot-instructions.md\nOne command, no configuration -- VS Code and GitHub Copilot read the file automatically. APM dogfoods this target on its own repository.\nThe three promises\n1. Portable by manifest\nOne apm.yml describes every primitive your agents need — instructions, skills, prompts, agents, hooks, plugins, MCP servers — and apm install reproduces the exact same setup across every client on every machine. apm.lock.yaml pins the resolved tree the way package-lock.json does for npm.\nOne manifest for everything — declared once, deployed across Copilot, Claude, Cursor, OpenCode, Codex, Gemini, Windsurf, Kiro\nInstall from anywhere — GitHub, GitLab, Bitbucket, Azure DevOps, GitHub Enterprise, Gitea, Gogs, any git host\nTransitive dependencies — packages can depend on packages; APM resolves the full tree\nAuthor plugins — build Copilot, Claude, and Cursor plugins with dependency management, then export standard plugin.json\nMarketplaces — install plugins from curated registries in one command, deployed across all targets and locked\nPack & distribute — apm pack bundles your configuration as a zipped package or a standalone plugin\nCI/CD ready — GitHub Action for automated workflows\n2. Secure by default\nAgent context is executable in effect — a prompt is a program for an LLM. APM treats it that way. Every install scans for hidden Unicode that can hijack agent behavior; the lockfile pins integrity hashes; transitive MCP servers are gated by trust prompts.\nContent security — apm install blocks compromised packages before agents read them; apm audit runs the same checks on demand\nLockfile integrity — apm.lock records resolved sources and content hashes for full provenance\nSBOM export — apm lock export --format cyclonedx|spdx emits a standard inventory of what reached disk, straight from the lockfile — provenance for procurement, not a compliance attestation\nDrift detection — apm audit rebuilds your agent context in scratch and diffs it against your working tree to catch hand-edits before they ship\nMCP trust boundaries — transitive MCP servers require explicit consent\n3. Governed by policy\napm-policy.yml lets a security team say \"these are the only sources, scopes, and primitives this org will allow\" and have every apm install enforce it — with tighten-only inheritance from enterprise to org to repo, a published bypass contract, and audit-mode CI gates.\napm-policy.yml governs what gets installed; your agent harness governs what runs. The two planes do not overlap.\nGovernance Guide — the canonical enterprise reference: enforcement points, bypass contract, air-gapped story, failure semantics, rollout playbook\nPolicy reference — every check, every field, every default\nAdoption playbook — staged rollout from warn to block across hundreds of repos\nGitHub rulesets integration — wire apm audit --ci into branch protection\nGet Started\nLinux / macOS\ncurl -sSL https://aka.ms/apm-unix | sh\nWindows\nirm https: // aka.ms / apm - windows | iex\nNative release binaries are published for macOS, Linux, and Windows x86_64. apm self-update reuses the matching platform installer.\nOther install methods\nLinux / macOS\n# Homebrew\nbrew install microsoft/apm/apm\n# pip\npip install apm-cli\nWindows\n# Scoop\nscoop bucket add apm https: // github.com / microsoft / scoop - apm\nscoop install apm\n# pip\npip install apm - cli\nThen start adding packages:\napm install microsoft/apm-sample-package#v1.0.0\nOr install from a marketplace:\napm marketplace add github/awesome-copilot\napm install azure-cloud-development@awesome-copilot\nOr add an MCP server (wired into Copilot, Claude, Cursor, Codex, OpenCode, Gemini, Windsurf, and Kiro):\napm install --mcp io.github.github/github-mcp-server --transport http # connects over HTTPS\nSee the Getting Started guide for the full walkthrough.\nWorks with agentrc\nagentrc analyzes your codebase and generates tailored agent instructions — architecture, conventions, build commands — from real code, not templates.\nUse agentrc to author high-quality instructions, then package them with APM to share across your org. The .instructions.md format is shared by both tools — no conversion needed when moving instructions into APM packages.\nCommunity\nCreated by @danielmeppiel . Maintained by @danielmeppiel and @sergio-sisternes-epam .\nRoadmap & Discussions\nContributing\nAI Native Development guide — a practical learning path for AI-native development\nBuilt on open standards: AGENTS.md · Agent Skills · MCP\nTrademarks\nThis project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow Microsoft's Trademark & Brand Guidelines . Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those third-party's policies.",
+  "clean_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nmicrosoft\napm\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n257\nStar\n3k\nFiles Expand file tree\nmain\n/ README.md\nCopy path\nBlame\nMore file actions\nBlame\nMore file actions\nLatest commit\nHistory\nHistory\nHistory\n180 lines (123 loc) · 9.14 KB\nmain\n/ README.md\nCopy path\nTop\nFile metadata and controls\nPreview\nCode\nBlame\n180 lines (123 loc) · 9.14 KB\nRaw\nCopy raw file\nDownload raw file\nOutline Edit and raw actions\nAPM – Agent Package Manager\nAn open-source, community-driven dependency manager for AI agents.\nThink package.json , requirements.txt , or Cargo.toml — but for AI agent configuration.\nGitHub Copilot · Claude Code · Cursor · OpenCode · Codex · Gemini · Windsurf · Kiro\nDocumentation · Quick Start · CLI Reference · Roadmap\nPortable by manifest. Secure by default. Governed by policy.\nOne file describes every agent's context; one command reproduces it everywhere; one policy controls what an org will allow.\nWhy APM\nAI coding agents need context to be useful — standards, prompts, skills, plugins — but today every developer sets this up manually. Nothing is portable nor reproducible. There's no manifest for it.\nAPM fixes this. Declare your project's agentic dependencies once in apm.yml , and every developer who clones your repo gets a fully configured agent setup in seconds — with transitive dependency resolution, just like npm or pip. It's also the first tool that lets you author plugins with a real dependency manager and export standard plugin.json packages.\n# apm.yml — ships with your project\nname : your-project\nversion : 1.0.0\ndependencies :\napm :\n# Skills from any repository\n- anthropics/skills/skills/frontend-design\n# Plugins\n- github/awesome-copilot/plugins/context-engineering\n# Specific agent primitives from any repository\n- github/awesome-copilot/agents/api-architect.agent.md\n# A full APM package with instructions, skills, prompts, hooks...\n- microsoft/apm-sample-package#v1.0.0\nmcp :\n# MCP servers -- installed into every detected client\n- name : io.github.github/github-mcp-server\ntransport : http # MCP transport name, not URL scheme -- connects over HTTPS\ngit clone < org/repo > && cd < repo >\napm install # every agent is configured\nComing from npx skills add ? Drop-in:\napm install vercel-labs/agent-skills # whole bundle, like npx skills add\napm install vercel-labs/agent-skills --skill deploy-to-vercel # one skill, persisted to apm.yml\nSame install gesture. You also get a manifest, lockfile, and reproducibility .\nZero-config Copilot:\napm compile -t copilot # writes .github/copilot-instructions.md\nOne command, no configuration -- VS Code and GitHub Copilot read the file automatically. APM dogfoods this target on its own repository.\nThe three promises\n1. Portable by manifest\nOne apm.yml describes every primitive your agents need — instructions, skills, prompts, agents, hooks, plugins, MCP servers — and apm install reproduces the exact same setup across every client on every machine. apm.lock.yaml pins the resolved tree the way package-lock.json does for npm.\nOne manifest for everything — declared once, deployed across Copilot, Claude, Cursor, OpenCode, Codex, Gemini, Windsurf, Kiro\nInstall from anywhere — GitHub, GitLab, Bitbucket, Azure DevOps, GitHub Enterprise, Gitea, Gogs, any git host\nTransitive dependencies — packages can depend on packages; APM resolves the full tree\nAuthor plugins — build Copilot, Claude, and Cursor plugins with dependency management, then export standard plugin.json\nMarketplaces — install plugins from curated registries in one command, deployed across all targets and locked\nPack & distribute — apm pack bundles your configuration as a zipped package or a standalone plugin\nCI/CD ready — GitHub Action for automated workflows\n2. Secure by default\nAgent context is executable in effect — a prompt is a program for an LLM. APM treats it that way. Every install scans for hidden Unicode that can hijack agent behavior; the lockfile pins integrity hashes; transitive MCP servers are gated by trust prompts.\nContent security — apm install blocks compromised packages before agents read them; apm audit runs the same checks on demand\nLockfile integrity — apm.lock records resolved sources and content hashes for full provenance\nSBOM export — apm lock export --format cyclonedx|spdx emits a standard inventory of what reached disk, straight from the lockfile — provenance for procurement, not a compliance attestation\nDrift detection — apm audit rebuilds your agent context in scratch and diffs it against your working tree to catch hand-edits before they ship\nMCP trust boundaries — transitive MCP servers require explicit consent\n3. Governed by policy\napm-policy.yml lets a security team say \"these are the only sources, scopes, and primitives this org will allow\" and have every apm install enforce it — with tighten-only inheritance from enterprise to org to repo, a published bypass contract, and audit-mode CI gates.\napm-policy.yml governs what gets installed; your agent harness governs what runs. The two planes do not overlap.\nGovernance Guide — the canonical enterprise reference: enforcement points, bypass contract, air-gapped story, failure semantics, rollout playbook\nPolicy reference — every check, every field, every default\nAdoption playbook — staged rollout from warn to block across hundreds of repos\nGitHub rulesets integration — wire apm audit --ci into branch protection\nGet Started\nLinux / macOS\ncurl -sSL https://aka.ms/apm-unix | sh\nWindows\nirm https: // aka.ms / apm - windows | iex\nNative release binaries are published for macOS, Linux, and Windows x86_64. apm self-update reuses the matching platform installer.\nOther install methods\nLinux / macOS\n# Homebrew\nbrew install microsoft/apm/apm\n# pip\npip install apm-cli\nWindows\n# Scoop\nscoop bucket add apm https: // github.com / microsoft / scoop - apm\nscoop install apm\n# pip\npip install apm - cli\nThen start adding packages:\napm install microsoft/apm-sample-package#v1.0.0\nOr install from a marketplace:\napm marketplace add github/awesome-copilot\napm install azure-cloud-development@awesome-copilot\nOr add an MCP server (wired into Copilot, Claude, Cursor, Codex, OpenCode, Gemini, Windsurf, and Kiro):\napm install --mcp io.github.github/github-mcp-server --transport http # connects over HTTPS\nSee the Getting Started guide for the full walkthrough.\nWorks with agentrc\nagentrc analyzes your codebase and generates tailored agent instructions — architecture, conventions, build commands — from real code, not templates.\nUse agentrc to author high-quality instructions, then package them with APM to share across your org. The .instructions.md format is shared by both tools — no conversion needed when moving instructions into APM packages.\nCommunity\nCreated by @danielmeppiel . Maintained by @danielmeppiel and @sergio-sisternes-epam .\nRoadmap & Discussions\nContributing\nAI Native Development guide — a practical learning path for AI-native development\nBuilt on open standards: AGENTS.md · Agent Skills · MCP\nTrademarks\nThis project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow Microsoft's Trademark & Brand Guidelines . Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those third-party's policies.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-008-readme-md-at-main-microsoft-apm.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-008-readme-md-at-main-microsoft-apm.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 7503,
+    "paragraph_count": 81,
+    "sentence_count": 44,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0011,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 7503,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "b89cd01f902c48b5",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "a27099c4a0d50422",
+  "content_hash": "b89cd01f902c48b5",
+  "full_text_hash": "b89cd01f902c48b5",
+  "semantic_hash": "232f21b1e6c4ceb5",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-29T05:24:28.561Z",
+  "last_seen_at": "2026-06-29T05:24:28.561Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "Agent Package Manager | 3K ... | Python ... **An open-source, community-driven dependency manager for AI agents.** ... Think `package.json`, `requirements.txt`, or `Cargo.toml` — but for AI agent configuration. ... GitHub Copilot · Claude Code · Cursor · OpenCode · Codex · Gemini · Windsurf · Kiro .... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "microsoft apm Public Notifications You must be signed in to change notification settings Fork 257 Star 3k Files Expand file tree main / README.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md Copy path Blame More file actions Blame More file actions Latest commit History History History 180 lines (123 loc) · 9.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "14 KB main / README.",
+      "supports": [
+        "daily_observation",
+        "heatmap",
+        "change",
+        "case",
+        "trend"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Microsoft",
+      "GitHub",
+      "Cursor"
+    ],
+    "products": [
+      "Agent",
+      "agents",
+      "agent",
+      "Copilot",
+      "Claude",
+      "Cursor",
+      "Codex",
+      "Gemini",
+      "copilot",
+      "mcp"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队",
+      "采购负责人"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "权限 / 安全治理",
+      "采购 / 招投标",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "采购"
+    ],
+    "numbers": [
+      "3",
+      "257",
+      "180",
+      "123",
+      "9.14",
+      "1.0",
+      "0",
+      "0\nm"
+    ],
+    "quotes": [
+      "these are the only sources, scopes, and primitives this org will allow"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "There was an error while loading.",
+      "Please reload this page .",
+      "microsoft apm Public Notifications You must be signed in to change notification settings Fork 257 Star 3k Files Expand file tree main / README."
+    ],
+    "case_details": [
+      "Agent Package Manager | 3K ... | Python ... **An open-source, community-driven dependency manager for AI agents.** ... Think `package.json`, `requirements.txt`, or `Cargo.toml` — but for AI agent configuration. ... GitHub Copilot · Claude Code · Cursor · OpenCode · Codex · Gemini · Windsurf · Kiro .... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队",
+      "采购负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "change": true,
+    "trend": true,
+    "daily_observation": true,
+    "heatmap": true,
+    "briefing": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# README.md at main · microsoft/apm\n\n- raw_id: R-008\n- original_url: https://github.com/microsoft/apm/blob/main/README.md\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-29T05:24:28.561Z\n\n## clean_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nmicrosoft\napm\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n257\nStar\n3k\nFiles Expand file tree\nmain\n/ README.md\nCopy path\nBlame\nMore file actions\nBlame\nMore file actions\nLatest commit\nHistory\nHistory\nHistory\n180 lines (123 loc) · 9.14 KB\nmain\n/ README.md\nCopy path\nTop\nFile metadata and controls\nPreview\nCode\nBlame\n180 lines (123 loc) · 9.14 KB\nRaw\nCopy raw file\nDownload raw file\nOutline Edit and raw actions\nAPM – Agent Package Manager\nAn open-source, community-driven dependency manager for AI agents.\nThink package.json , requirements.txt , or Cargo.toml — but for AI agent configuration.\nGitHub Copilot · Claude Code · Cursor · OpenCode · Codex · Gemini · Windsurf · Kiro\nDocumentation · Quick Start · CLI Reference · Roadmap\nPortable by manifest. Secure by default. Governed by policy.\nOne file describes every agent's context; one command reproduces it everywhere; one policy controls what an org will allow.\nWhy APM\nAI coding agents need context to be useful — standards, prompts, skills, plugins — but today every developer sets this up manually. Nothing is portable nor reproducible. There's no manifest for it.\nAPM fixes this. Declare your project's agentic dependencies once in apm.yml , and every developer who clones your repo gets a fully configured agent setup in seconds — with transitive dependency resolution, just like npm or pip. It's also the first tool that lets you author plugins with a real dependency manager and export standard plugin.json packages.\n# apm.yml — ships with your project\nname : your-project\nversion : 1.0.0\ndependencies :\napm :\n# Skills from any repository\n- anthropics/skills/skills/frontend-design\n# Plugins\n- github/awesome-copilot/plugins/context-engineering\n# Specific agent primitives from any repository\n- github/awesome-copilot/agents/api-architect.agent.md\n# A full APM package with instructions, skills, prompts, hooks...\n- microsoft/apm-sample-package#v1.0.0\nmcp :\n# MCP servers -- installed into every detected client\n- name : io.github.github/github-mcp-server\ntransport : http # MCP transport name, not URL scheme -- connects over HTTPS\ngit clone < org/repo > && cd < repo >\napm install # every agent is configured\nComing from npx skills add ? Drop-in:\napm install vercel-labs/agent-skills # whole bundle, like npx skills add\napm install vercel-labs/agent-skills --skill deploy-to-vercel # one skill, persisted to apm.yml\nSame install gesture. You also get a manifest, lockfile, and reproducibility .\nZero-config Copilot:\napm compile -t copilot # writes .github/copilot-instructions.md\nOne command, no configuration -- VS Code and GitHub Copilot read the file automatically. APM dogfoods this target on its own repository.\nThe three promises\n1. Portable by manifest\nOne apm.yml describes every primitive your agents need — instructions, skills, prompts, agents, hooks, plugins, MCP servers — and apm install reproduces the exact same setup across every client on every machine. apm.lock.yaml pins the resolved tree the way package-lock.json does for npm.\nOne manifest for everything — declared once, deployed across Copilot, Claude, Cursor, OpenCode, Codex, Gemini, Windsurf, Kiro\nInstall from anywhere — GitHub, GitLab, Bitbucket, Azure DevOps, GitHub Enterprise, Gitea, Gogs, any git host\nTransitive dependencies — packages can depend on packages; APM resolves the full tree\nAuthor plugins — build Copilot, Claude, and Cursor plugins with dependency management, then export standard plugin.json\nMarketplaces — install plugins from curated registries in one command, deployed across all targets and locked\nPack & distribute — apm pack bundles your configuration as a zipped package or a standalone plugin\nCI/CD ready — GitHub Action for automated workflows\n2. Secure by default\nAgent context is executable in effect — a prompt is a program for an LLM. APM treats it that way. Every install scans for hidden Unicode that can hijack agent behavior; the lockfile pins integrity hashes; transitive MCP servers are gated by trust prompts.\nContent security — apm install blocks compromised packages before agents read them; apm audit runs the same checks on demand\nLockfile integrity — apm.lock records resolved sources and content hashes for full provenance\nSBOM export — apm lock export --format cyclonedx|spdx emits a standard inventory of what reached disk, straight from the lockfile — provenance for procurement, not a compliance attestation\nDrift detection — apm audit rebuilds your agent context in scratch and diffs it against your working tree to catch hand-edits before they ship\nMCP trust boundaries — transitive MCP servers require explicit consent\n3. Governed by policy\napm-policy.yml lets a security team say \"these are the only sources, scopes, and primitives this org will allow\" and have every apm install enforce it — with tighten-only inheritance from enterprise to org to repo, a published bypass contract, and audit-mode CI gates.\napm-policy.yml governs what gets installed; your agent harness governs what runs. The two planes do not overlap.\nGovernance Guide — the canonical enterprise reference: enforcement points, bypass contract, air-gapped story, failure semantics, rollout playbook\nPolicy reference — every check, every field, every default\nAdoption playbook — staged rollout from warn to block across hundreds of repos\nGitHub rulesets integration — wire apm audit --ci into branch protection\nGet Started\nLinux / macOS\ncurl -sSL https://aka.ms/apm-unix | sh\nWindows\nirm https: // aka.ms / apm - windows | iex\nNative release binaries are published for macOS, Linux, and Windows x86_64. apm self-update reuses the matching platform installer.\nOther install methods\nLinux / macOS\n# Homebrew\nbrew install microsoft/apm/apm\n# pip\npip install apm-cli\nWindows\n# Scoop\nscoop bucket add apm https: // github.com / microsoft / scoop - apm\nscoop install apm\n# pip\npip install apm - cli\nThen start adding packages:\napm install microsoft/apm-sample-package#v1.0.0\nOr install from a marketplace:\napm marketplace add github/awesome-copilot\napm install azure-cloud-development@awesome-copilot\nOr add an MCP server (wired into Copilot, Claude, Cursor, Codex, OpenCode, Gemini, Windsurf, and Kiro):\napm install --mcp io.github.github/github-mcp-server --transport http # connects over HTTPS\nSee the Getting Started guide for the full walkthrough.\nWorks with agentrc\nagentrc analyzes your codebase and generates tailored agent instructions — architecture, conventions, build commands — from real code, not templates.\nUse agentrc to author high-quality instructions, then package them with APM to share across your org. The .instructions.md format is shared by both tools — no conversion needed when moving instructions into APM packages.\nCommunity\nCreated by @danielmeppiel . Maintained by @danielmeppiel and @sergio-sisternes-epam .\nRoadmap & Discussions\nContributing\nAI Native Development guide — a practical learning path for AI-native development\nBuilt on open standards: AGENTS.md · Agent Skills · MCP\nTrademarks\nThis project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow Microsoft's Trademark & Brand Guidelines . Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those third-party's policies.\n\n## full_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nmicrosoft\napm\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n257\nStar\n3k\nFiles Expand file tree\nmain\n/ README.md\nCopy path\nBlame\nMore file actions\nBlame\nMore file actions\nLatest commit\nHistory\nHistory\nHistory\n180 lines (123 loc) · 9.14 KB\nmain\n/ README.md\nCopy path\nTop\nFile metadata and controls\nPreview\nCode\nBlame\n180 lines (123 loc) · 9.14 KB\nRaw\nCopy raw file\nDownload raw file\nOutline Edit and raw actions\nAPM – Agent Package Manager\nAn open-source, community-driven dependency manager for AI agents.\nThink package.json , requirements.txt , or Cargo.toml — but for AI agent configuration.\nGitHub Copilot · Claude Code · Cursor · OpenCode · Codex · Gemini · Windsurf · Kiro\nDocumentation · Quick Start · CLI Reference · Roadmap\nPortable by manifest. Secure by default. Governed by policy.\nOne file describes every agent's context; one command reproduces it everywhere; one policy controls what an org will allow.\nWhy APM\nAI coding agents need context to be useful — standards, prompts, skills, plugins — but today every developer sets this up manually. Nothing is portable nor reproducible. There's no manifest for it.\nAPM fixes this. Declare your project's agentic dependencies once in apm.yml , and every developer who clones your repo gets a fully configured agent setup in seconds — with transitive dependency resolution, just like npm or pip. It's also the first tool that lets you author plugins with a real dependency manager and export standard plugin.json packages.\n# apm.yml — ships with your project\nname : your-project\nversion : 1.0.0\ndependencies :\napm :\n# Skills from any repository\n- anthropics/skills/skills/frontend-design\n# Plugins\n- github/awesome-copilot/plugins/context-engineering\n# Specific agent primitives from any repository\n- github/awesome-copilot/agents/api-architect.agent.md\n# A full APM package with instructions, skills, prompts, hooks...\n- microsoft/apm-sample-package#v1.0.0\nmcp :\n# MCP servers -- installed into every detected client\n- name : io.github.github/github-mcp-server\ntransport : http # MCP transport name, not URL scheme -- connects over HTTPS\ngit clone < org/repo > && cd < repo >\napm install # every agent is configured\nComing from npx skills add ? Drop-in:\napm install vercel-labs/agent-skills # whole bundle, like npx skills add\napm install vercel-labs/agent-skills --skill deploy-to-vercel # one skill, persisted to apm.yml\nSame install gesture. You also get a manifest, lockfile, and reproducibility .\nZero-config Copilot:\napm compile -t copilot # writes .github/copilot-instructions.md\nOne command, no configuration -- VS Code and GitHub Copilot read the file automatically. APM dogfoods this target on its own repository.\nThe three promises\n1. Portable by manifest\nOne apm.yml describes every primitive your agents need — instructions, skills, prompts, agents, hooks, plugins, MCP servers — and apm install reproduces the exact same setup across every client on every machine. apm.lock.yaml pins the resolved tree the way package-lock.json does for npm.\nOne manifest for everything — declared once, deployed across Copilot, Claude, Cursor, OpenCode, Codex, Gemini, Windsurf, Kiro\nInstall from anywhere — GitHub, GitLab, Bitbucket, Azure DevOps, GitHub Enterprise, Gitea, Gogs, any git host\nTransitive dependencies — packages can depend on packages; APM resolves the full tree\nAuthor plugins — build Copilot, Claude, and Cursor plugins with dependency management, then export standard plugin.json\nMarketplaces — install plugins from curated registries in one command, deployed across all targets and locked\nPack & distribute — apm pack bundles your configuration as a zipped package or a standalone plugin\nCI/CD ready — GitHub Action for automated workflows\n2. Secure by default\nAgent context is executable in effect — a prompt is a program for an LLM. APM treats it that way. Every install scans for hidden Unicode that can hijack agent behavior; the lockfile pins integrity hashes; transitive MCP servers are gated by trust prompts.\nContent security — apm install blocks compromised packages before agents read them; apm audit runs the same checks on demand\nLockfile integrity — apm.lock records resolved sources and content hashes for full provenance\nSBOM export — apm lock export --format cyclonedx|spdx emits a standard inventory of what reached disk, straight from the lockfile — provenance for procurement, not a compliance attestation\nDrift detection — apm audit rebuilds your agent context in scratch and diffs it against your working tree to catch hand-edits before they ship\nMCP trust boundaries — transitive MCP servers require explicit consent\n3. Governed by policy\napm-policy.yml lets a security team say \"these are the only sources, scopes, and primitives this org will allow\" and have every apm install enforce it — with tighten-only inheritance from enterprise to org to repo, a published bypass contract, and audit-mode CI gates.\napm-policy.yml governs what gets installed; your agent harness governs what runs. The two planes do not overlap.\nGovernance Guide — the canonical enterprise reference: enforcement points, bypass contract, air-gapped story, failure semantics, rollout playbook\nPolicy reference — every check, every field, every default\nAdoption playbook — staged rollout from warn to block across hundreds of repos\nGitHub rulesets integration — wire apm audit --ci into branch protection\nGet Started\nLinux / macOS\ncurl -sSL https://aka.ms/apm-unix | sh\nWindows\nirm https: // aka.ms / apm - windows | iex\nNative release binaries are published for macOS, Linux, and Windows x86_64. apm self-update reuses the matching platform installer.\nOther install methods\nLinux / macOS\n# Homebrew\nbrew install microsoft/apm/apm\n# pip\npip install apm-cli\nWindows\n# Scoop\nscoop bucket add apm https: // github.com / microsoft / scoop - apm\nscoop install apm\n# pip\npip install apm - cli\nThen start adding packages:\napm install microsoft/apm-sample-package#v1.0.0\nOr install from a marketplace:\napm marketplace add github/awesome-copilot\napm install azure-cloud-development@awesome-copilot\nOr add an MCP server (wired into Copilot, Claude, Cursor, Codex, OpenCode, Gemini, Windsurf, and Kiro):\napm install --mcp io.github.github/github-mcp-server --transport http # connects over HTTPS\nSee the Getting Started guide for the full walkthrough.\nWorks with agentrc\nagentrc analyzes your codebase and generates tailored agent instructions — architecture, conventions, build commands — from real code, not templates.\nUse agentrc to author high-quality instructions, then package them with APM to share across your org. The .instructions.md format is shared by both tools — no conversion needed when moving instructions into APM packages.\nCommunity\nCreated by @danielmeppiel . Maintained by @danielmeppiel and @sergio-sisternes-epam .\nRoadmap & Discussions\nContributing\nAI Native Development guide — a practical learning path for AI-native development\nBuilt on open standards: AGENTS.md · Agent Skills · MCP\nTrademarks\nThis project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft trademarks or logos is subject to and must follow Microsoft's Trademark & Brand Guidelines . Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship. Any use of third-party trademarks or logos are subject to those third-party's policies.\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / daily_observation, heatmap, case / high] Agent Package Manager | 3K ... | Python ... **An open-source, community-driven dependency manager for AI agents.** ... Think `package.json`, `requirements.txt`, or `Cargo.toml` — but for AI agent configuration. ... GitHub Copilot · Claude Code · Cursor · OpenCode · Codex · Gemini · Windsurf · Kiro .... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem\n2. [company_action / daily_observation, heatmap, change, case, trend / high] There was an error while loading.\n3. [company_action / daily_observation, heatmap, change, case, trend / high] Please reload this page .\n4. [company_action / daily_observation, heatmap, change, case, trend / high] microsoft apm Public Notifications You must be signed in to change notification settings Fork 257 Star 3k Files Expand file tree main / README.\n5. [company_action / daily_observation, heatmap, change, case, trend / high] md Copy path Blame More file actions Blame More file actions Latest commit History History History 180 lines (123 loc) · 9.\n6. [company_action / daily_observation, heatmap, change, case, trend / high] 14 KB main / README.\n"
+}
