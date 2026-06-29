@@ -1,0 +1,623 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-092
+title: "Dreamer: the Personal Agent OS — David Singleton"
+original_url: "https://www.latent.space/p/dreamer"
+canonical_url: "https://latent.space/p/dreamer"
+source_name: "Latent Space"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-29T05:41:18.334Z
+language: mixed
+full_text_hash: 7f183a9e340a2ad2
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-092-dreamer-the-personal-agent-os-david-singleton.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-092-dreamer-the-personal-agent-os-david-singleton.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":60000,"paragraph_count":312,"sentence_count":795,"boilerplate_hits":2,"symbol_ratio":0.0115,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 60000
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7f183a9e340a2ad2","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: f68a8b48fe52c620
+content_hash: 8ea0060293afd2e3
+semantic_hash: 4a96209f54404b73
+duplicate_of: ""
+first_seen_at: "2026-06-29T05:41:18.334Z"
+last_seen_at: 2026-06-29T05:41:18.334Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"trend_candidate_context":true,"signal_card_candidate":true,"relationship_graph_input":true,"business_change":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["Latent Space","Google","Meta","Apple"],"products":["Agent","agents","agent","Agents"],"people":[],"industries":["开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["计费 / 预算管理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["23","2024","1","0","00","03","35","20"],"quotes":["Sidekick","agent that builds agents","full stack"]}
+evidence_seed: {"company_actions":["Mar 23 update for Latent Spacenauts: this episode was recorded before the Dreamer team announced they were joining Meta Superintelligence Labs, and it turned out to be the last interview they did before the news became public. Consider this a snapshot from just before the transition!In 2024, David Singleton left Stripe and joined forces with Hugo Barra for a buzzy stealth startup named /dev/agents. This month they emerged out as Dreamer, a consumer-first platform to discover, build, and use AI a","Dreamer: the Personal Agent OS — David Singleton /dev/agents is out of stealth as Dreamer, and the vision is staggeringly ambitious.","Mar 20, 2026 23 Share Transcript Mar 23 update for Latent Spacenauts: this episode was recorded before the Dreamer team announced they were joining Meta Superintelligence Labs , and it turned out to be the last interview they did before the news became public."],"case_details":[],"workflow_changes":["Latent Space: The AI Engineer Podcast Dreamer: the Personal Agent OS — David Singleton 23 1× 0:00 Current time: 0:00 / Total time: -1:03:35 -1:03:35 Audio playback is not supported on your browser."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"Mar 23 update for Latent Spacenauts: this episode was recorded before the Dreamer team announced they were joining Meta Superintelligence Labs, and it turned out to be the last interview they did before the news became public. Consider this a snapshot from just before the transition!In 2024, David Singleton left Stripe and joined forces with Hugo Barra for a buzzy stealth startup named /dev/agents. This month they emerged out as Dreamer, a consumer-first platform to discover, build, and use AI a","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast Dreamer: the Personal Agent OS — David Singleton 23 1× 0:00 Current time: 0:00 / Total time: -1:03:35 -1:03:35 Audio playback is not supported on your browser.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Dreamer: the Personal Agent OS — David Singleton /dev/agents is out of stealth as Dreamer, and the vision is staggeringly ambitious.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Mar 20, 2026 23 Share Transcript Mar 23 update for Latent Spacenauts: this episode was recorded before the Dreamer team announced they were joining Meta Superintelligence Labs , and it turned out to be the last interview they did before the news became public.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Consider this a snapshot from just before the transition!","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"In 2024, David Singleton left Stripe and joined forces with Hugo Barra for a buzzy stealth startup named /dev/agents .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# Dreamer: the Personal Agent OS — David Singleton
+
+## clean_text
+
+Latent Space: The AI Engineer Podcast
+Dreamer: the Personal Agent OS — David Singleton
+23
+1×
+0:00
+Current time: 0:00 / Total time: -1:03:35
+-1:03:35
+Audio playback is not supported on your browser. Please upgrade.
+Dreamer: the Personal Agent OS — David Singleton
+/dev/agents is out of stealth as Dreamer, and the vision is staggeringly ambitious.
+Mar 20, 2026
+23
+Share
+Transcript
+Mar 23 update for Latent Spacenauts: this episode was recorded before the Dreamer team announced they were joining Meta Superintelligence Labs , and it turned out to be the last interview they did before the news became public. Consider this a snapshot from just before the transition!
+In 2024, David Singleton left Stripe and joined forces with Hugo Barra for a buzzy stealth startup named /dev/agents . This month they emerged out as Dreamer , a consumer-first platform to discover, build, and use AI agents and agentic apps, centered on a personal “Sidekick” that helps users customize experiences via natural language.
+Sidekick is nothing less than an “agent that builds agents”, with all the complexity that that entails:
+You’ve seen many many website builder, app builder, and even agent builder startups by now, but our favorite detail is the sheer amount of work that has gone into the “full stack” nature of the platform, including shipping their own SDK, logging, database, prompt management, serverless functions, and so on. Most platforms restrict the tech stack you can use just to get off the ground — Dreamer does it “right” by letting you push whatever arbitrary code you want to their VMs.
+Paying the Builders
+Of course former leaders of Stripe and Android would not stop at just building the tools, but also building the ecosystem. Dreamer is deeply aware of the 4 sided network effect it has going on and is ready to fund all of it.
+It’s time to Dream!
+Full Video Episode
+on youtube .
+Transcript
+[00:00:00] Meet Dreamer Purple
+[00:00:00] swyx: Okay, we’re here in the studio with David Singleton. Welcome.
+[00:00:08] David Singleton: Hey, Wix. It’s great to be here.
+[00:00:09] swyx: It’s great to have you. Uh, we have very sympa that your company color is the same as Lean Spaces color.
+[00:00:15] David Singleton: That’s right. Dreamer Purple.
+[00:00:17] swyx: It used to be Devrel agents, which I thought was very cool. It’s like you call back to Devrel Payments.
+[00:00:22] David Singleton: Yeah.
+[00:00:22] swyx: And you were obviously CTO Stripe. And talk to me about just the origin or thinking process behind Dreamer. Yeah. And maybe, maybe start with like, what, what is Dreamer?
+[00:00:31] David Singleton: Yeah.
+[00:00:31] What Is Dreamer
+[00:00:31] David Singleton: So Dreamer is a new product, uh, which everyone can come and play with today. Um, it’s a place where everyone, literally, everyone can discover, build, and enjoy and use AI agents and agenda apps.
+[00:00:45] And we really did design it for consumers, for folks who are not necessarily. Uh, have any kind of technical background. It’s really aimed at everyone. I think often of my sister, she’s very smart. She’s not in the slightest bit technical. She has lots of problems in her life that [00:01:00] she would like to be able to have great software and intelligent software to solve.
+[00:01:04] But you know, even with the rise of tools like Cloud Code and so forth, she’s got no way to get started. And Dreamer is a place where she can come in, grab some intelligent apps that other people in the community have built, start using them right away, and solve real problems in her life.
+[00:01:19] Sidekick And Waitlist
+[00:01:19] David Singleton: And at the core, we have a personal agent called the Sidekick.
+[00:01:24] Um, you can give your sidekick a name, you can give it its own personality, and it really helps you across your entire day, your life. It helps you use all of the agents on the platform, and it also helps you build anything you want. And we’ve been working in this for a little while. We recently launched in beta.
+[00:01:41] So anyone can go to dreamer.com, join the wait list. Um, and we have many, many, many people in the community now who are building really fun, really powerful, really useful. Agents and the agentic apps for themselves.
+[00:01:54] swyx: I think we’re gonna go right into a demo. Yeah. I just wanna make an observation that, uh, you, you, [00:02:00] you put discover first before build.
+[00:02:02] Mm-hmm. But actually, at least for the engineers in the audience. ‘cause we are primarily engineers and you’re primarily targeting consumers, right?
+[00:02:08] David Singleton: Yeah.
+[00:02:08] swyx: For engineers. Like, there’s a huge full stack of stuff, which we’re gonna dive into. Let’s write. It’s so impressive. I’m like, holy shit, this, this is what I’ve always wanted.
+[00:02:16] Cool. Uh, so, so I think that’s really good and I’ve, in some ways, I think given your background given, uh, Hugo’s, is it Hugo? Hugo.
+[00:02:24] David Singleton: Hugo. Hugo Bar. Yeah.
+[00:02:25] swyx: Hugo, it’s not surprising that you can basically kind of build an app store Yeah. For agents.
+[00:02:30] David Singleton: Yeah. So Hugo was my co-founder. Yeah. Um, Hugo and I met with our other co-founder Nicholas Checkoff in the very early days of Android at Google, where we were building Google’s first mobile apps.
+[00:02:41] Uh, we then contributed to very core pieces of Android itself. And you’re right, we were really excited about building two things. One, solving a bunch of problems. That this breakthrough technology here I’m talking about mobile needed to have solved in order to make it work for real people at scale. And then secondly, building this ecosystem, um, [00:03:00] of third party developers using the Play Store, um, and able to deliver way more value on the platform than we could have delivered on our own.
+[00:03:08] And we think about Dreamer in exactly the same way. So I was working at Stripe, as you mentioned, and we had the opportunity to put some of the very first AI agent systems in the world into production. And from the moment we did the first of those, I was just struck with a strong sense of conviction that this is breakthrough technology that’s gonna change how all of us work with computers and phones and so forth, all of the, the technology in our lives, but.
+[00:03:34] There’s a lot of problems to be solved, for real people to be able to make this approachable. Um, and it really is kind of a direct analog for what we were solving back in the early days of mobile apps at Google and, and Android. So it’s, it’s been fun to bring that to life.
+[00:03:47] swyx: Yeah. Uh, let’s look at it.
+[00:03:48] David Singleton: Yeah, let’s take a look.
+[00:03:49] Dashboard And Daily Briefing
+[00:03:49] David Singleton: So, uh, dreamer.com, this is our homepage. This is where you can come and, uh, watch some videos about what is here and sign up for the wait list. Once
+[00:03:57] swyx: you, I, I just wanna say for those listening, ‘cause we have a lot, you [00:04:00] know, switch to YouTube, look at the animations. So much care.
+[00:04:03] David Singleton: We, we really care about, uh, this product being fun.
+[00:04:07] Uh, and, and interesting to use. Obviously a lot of people are using it to do real important stuff. You can do real work, uh, here, uh, but also you can build fun things too. Once you get off of our wait list, you’ll come into the product. The first thing that happens is you’ll have a conversation with your side cake, which is this little friendly, uh, character here.
+[00:04:27] And psychic will seek to get to know you and understand you. What do you care about? And will help you discover and build your first AI agents or agentic apps. After that, you’re, you’re gonna have a dashboard. This is my dashboard. Everyone’s is different. Um, you can see I have a few things here. I have a feed.
+[00:04:42] So a lot of our agents do things in the background when you’re not looking and the feed is how they let you know what they’ve been up to. I have, uh, some widgets, uh, from apps that I have built. Uh, this one is called Calendar Hero. Uh, this is something that I installed from the gallery. Uh, so built by someone in our community.
+[00:04:59] It’s a [00:05:00] really powerful calendar app because for each of my meetings, if it’s with someone I don’t already know, well it’ll actually go off and research it, um, and give me both a history of my interactions with those people and also a bunch of, you know, public useful information to, to get started. One of the things I love about this particular app is that every day it generates a podcast, um, a daily business_change.
+[00:05:24] And one of the things that we’ve done with the platform is we’ve made it possible for all the things that agents do to show up in places that you care about. So if you look over here, this is the screen in my phone, and if I go ahead and open my Apple Podcasts, you can see right here. Your Daily business_change podcast is ready.
+[00:05:39] This was produced by an agent running in my Dreamer account, and it was very easy by scanning a QR code to connect it to my Apple podcast. That’s what I listened to in the car now every morning. Yeah. On my way to work.
+[00:05:50] swyx: It, it
+[00:05:50] David Singleton: preps me for, for my day.
+[00:05:52] swyx: So one additional bit of context. I asked you immediately after seeing this was like, what, what about, I wanna talk back to my agent and you said you actually started with voice and then you went to [00:06:00] podcasts.
+[00:06:00] ‘cause it’s nice to have it pre downloaded
+[00:06:02] David Singleton: that, right? That’s right. Um, yeah, we, you, you can talk to your sidekick. So, you know, on mobile we have, uh, a dreamer app and you can talk to the sidekick right here. Um, but we’ve actually found that making things, uh, show up in the other apps that you already use in your life is incredibly powerful.
+[00:06:19] So let’s take a look at what’s kind of under the hood here.
+[00:06:21] Gallery Tools And Payouts
+[00:06:21] David Singleton: So I already mentioned that we have a gallery, so this is where you’ll find a lot of agents from our community. Uh, there’s. Many at this point, hundreds. And they are solving all kinds of, uh, use cases. I’d say the the top use cases are on personal productivity, but also a lot of information management that can range from personal information like docs and so forth, managing your emails.
+[00:06:42] It also ranges out to public information that you might be interested in, but you need something to help manage the, the kind of fire hose of stuff that’s coming at you. For instance, I have, um, an agent which looks at all the AI news, um, all the time. There’s a lot of it and it finds the stuff that I would actually be [00:07:00] interested in, um, and I find it incredibly useful.
+[00:07:03] So these are agents that you can install that other people have built. Anything that you install on Dreamer, you can actually just say, I wanna start making some changes, and we’ll look at that in a second. But in natural language, with the sidekicks help, you can change any of these experiences to work just the way you want them.
+[00:07:18] But the base layer of the system are tools. So you know, as well as anyone swyx, that any AI system is only as good as the quality of data that it can pull in and the quality of action it can take. So before we launched our beta, we worked very hard to make sure that we seeded our tools with a bunch of very high quality and powerful integrations.
+[00:07:39] So, you know, for instance, this is real Google search, this is actual Gmail. Um, and you can do very useful things with those. But also this is a platform for everyone. And as we got started talking to people in our alpha community, a whole bunch of sports use cases popped out and we realized if you want to build something cool for sports with ai, you need really high quality live data.
+[00:07:58] So look at these [00:08:00] Formula one M-L-B-N-F-L, uh, these are tools, uh, that we’ve built. We’ve done a, these are not data scraped off the web. This is a, a direct data feed integration. And because it’s live and ‘cause it’s high quality, you can build really powerful stuff. But tools is not something that we are just going to kind of control ourselves.
+[00:08:19] The platform is open for tool Builders to contribute tools that anyone on Dreamer can use. So, um, this is actually the place in the platform where I think software engineers, um, well number one, would love for you to come and play with it. Uh, but software engineers are really gonna build, um, a lot of powerful stuff into the system.
+[00:08:38] And we are actually sharing something for the first time on this podcast, which there is, uh, tool builders on Dreamer get paid. So if you publish a tool to the platform and a lot of agents use it, you’ll actually get paid, uh, in proportion to their usage. And we’d love for folks to come and give this a try.
+[00:08:54] We’ve got good docs that help you get started and you can build things that, you know, scratch your own itch. For instance, someone built this [00:09:00] Ski Bum tool, which provides live snow conditions for a bunch of, uh, ski resorts. I’d love to show you how I’ve used that in a second. And also we have some tools, partners where the tools themselves are paper use.
+[00:09:12] So for instance, parallel web systems is a premium tool. Uh, you can do really cool stuff with it. Um, it’s a a, an agentic web research tool. And that one, because it’s expensive to operate, is paid on a, on a per usage basis. But if you’re coming in to build agents on the platform, even the premium tools, you get a free trial.
+[00:09:29] So you get a chance to actually try them out, make sure that the use case is good for you before you decide to, to to sign up. So that’s tools. So we have the gallery, we have tools, and then the sidekick helps us put all of this together to build agents. We do that in the agents studio. You can also do this on your phone, but if I open up Agent Studio here on Desktop psychic’s, just gonna start a conversation about what you want to build together.
+[00:09:51] I’d love to show you one that I made recently.
+[00:09:53] swyx: Let’s do
+[00:09:53] David Singleton: it.
+[00:09:53] Building A Conference App
+[00:09:53] David Singleton: Um, let’s look at something that hopefully is kind of near and dear to your heart. So one of the things I love about Dreamer and this kind of moment in technology is that if you think about it. There are all these things in your life where, have you ever gone to a conference?
+[00:10:09] I know you have. Right? And, uh, big conferences have apps. Um, and these apps are usually built by agencies and they’re, they’re usually actually quite expensive to build. I’ve been involved in running some of these myself. And how many conferences have you been to where the app was good? Zero. Honestly.
+[00:10:23] swyx: Exactly. Zero,
+[00:10:24] David Singleton: maybe one. I, I’ve, I’ve been to one conference. That was pretty good. Wait, wait session sessions. Um, but, but the point is, they’re rarely great pieces of software. Right. And they’re also expensive to build, but they’re, they’re interesting ‘cause they’re episodic, they last for this one thing. Um, and then they’re, they’re not relevant anymore.
+[00:10:43] Um,
+[00:10:43] swyx: and so it’s the worst feeling to invest in them because, you know, it’s like, it’s got a limited. Date?
+[00:10:48] David Singleton: Absolutely. So I decided to build, uh, a conference app for your AI engineer conference. Amazing. Uh, on Dreamer. One of the things that Swix has done, uh, which I [00:11:00] thought was very forward-looking, is actually put a whole bunch of data about the conference on the webpage in an LLM readable way.
+[00:11:06] There’s an LLMs txt file, there’s a feed of all of the sessions in js, ON. So I used the data from your conference last year and built this intelligent app, uh, just by talking to our sidekick, uh, in Dreamer. So just to give you a quick tour, this is my Dream Conference app. What I always wanna do for conferences is I wanna be able to search for speakers.
+[00:11:28] I’m usually there because, uh, there, uh, is a speaker I care about. So, you know, SWIX, you’re the speaker I care about. I can actually see here who you’re on stage with. So here’s, here’s Greg Brockman. You’ve read even ai, uh, and this is his session. And look Greg and Swix for the speaker. So let’s add that to my schedule.
+[00:11:45] Great. And then maybe there’s a couple others I might see here. Like on day two, I remember there were some keynotes. So, uh, building the open agenda web, that sounds fun. So I add that to my schedule.
+[00:11:55] swyx: She’s now CEO of Xbox.
+[00:11:56] David Singleton: Awesome.
+[00:11:57] swyx: Which is interesting. So cool. So,
+[00:11:59] David Singleton: so I’ve [00:12:00] gone through and picked out a couple of sessions that I cared about.
+[00:12:03] That’s as far as I usually get with any conference app. But of course you’ve got the whole of the rest of the conference to figure out what to do. So here is where the native intelligence of, of these things you build on Dreamer can come in. So I’m gonna click guide me. So Dreamers sidekick actually parsed out the whole schedule and figured out what some of the themes are and I can choose what I’m interested in here.
+[00:12:23] I’m definitely interested in agents. Uh, I’m definitely interested in code generation and also reasoning in rl. So now I’m gonna say build my schedule. So what this is doing is. It’s going across every time slot for the conference. And it’s choosing among the things I could go to, which one it thinks is best for me based on my interests.
+[00:12:41] It also uses its own memory of me that’s part of Dreamer, uh, to understand what I might like best. And you know, there’s an LLM prompt running for each one of these time slots
+
+## full_text
+
+Latent Space: The AI Engineer Podcast
+Dreamer: the Personal Agent OS — David Singleton
+23
+1×
+0:00
+Current time: 0:00 / Total time: -1:03:35
+-1:03:35
+Audio playback is not supported on your browser. Please upgrade.
+Dreamer: the Personal Agent OS — David Singleton
+/dev/agents is out of stealth as Dreamer, and the vision is staggeringly ambitious.
+Mar 20, 2026
+23
+Share
+Transcript
+Mar 23 update for Latent Spacenauts: this episode was recorded before the Dreamer team announced they were joining Meta Superintelligence Labs , and it turned out to be the last interview they did before the news became public. Consider this a snapshot from just before the transition!
+In 2024, David Singleton left Stripe and joined forces with Hugo Barra for a buzzy stealth startup named /dev/agents . This month they emerged out as Dreamer , a consumer-first platform to discover, build, and use AI agents and agentic apps, centered on a personal “Sidekick” that helps users customize experiences via natural language.
+Sidekick is nothing less than an “agent that builds agents”, with all the complexity that that entails:
+You’ve seen many many website builder, app builder, and even agent builder startups by now, but our favorite detail is the sheer amount of work that has gone into the “full stack” nature of the platform, including shipping their own SDK, logging, database, prompt management, serverless functions, and so on. Most platforms restrict the tech stack you can use just to get off the ground — Dreamer does it “right” by letting you push whatever arbitrary code you want to their VMs.
+Paying the Builders
+Of course former leaders of Stripe and Android would not stop at just building the tools, but also building the ecosystem. Dreamer is deeply aware of the 4 sided network effect it has going on and is ready to fund all of it.
+It’s time to Dream!
+Full Video Episode
+on youtube .
+Transcript
+[00:00:00] Meet Dreamer Purple
+[00:00:00] swyx: Okay, we’re here in the studio with David Singleton. Welcome.
+[00:00:08] David Singleton: Hey, Wix. It’s great to be here.
+[00:00:09] swyx: It’s great to have you. Uh, we have very sympa that your company color is the same as Lean Spaces color.
+[00:00:15] David Singleton: That’s right. Dreamer Purple.
+[00:00:17] swyx: It used to be Devrel agents, which I thought was very cool. It’s like you call back to Devrel Payments.
+[00:00:22] David Singleton: Yeah.
+[00:00:22] swyx: And you were obviously CTO Stripe. And talk to me about just the origin or thinking process behind Dreamer. Yeah. And maybe, maybe start with like, what, what is Dreamer?
+[00:00:31] David Singleton: Yeah.
+[00:00:31] What Is Dreamer
+[00:00:31] David Singleton: So Dreamer is a new product, uh, which everyone can come and play with today. Um, it’s a place where everyone, literally, everyone can discover, build, and enjoy and use AI agents and agenda apps.
+[00:00:45] And we really did design it for consumers, for folks who are not necessarily. Uh, have any kind of technical background. It’s really aimed at everyone. I think often of my sister, she’s very smart. She’s not in the slightest bit technical. She has lots of problems in her life that [00:01:00] she would like to be able to have great software and intelligent software to solve.
+[00:01:04] But you know, even with the rise of tools like Cloud Code and so forth, she’s got no way to get started. And Dreamer is a place where she can come in, grab some intelligent apps that other people in the community have built, start using them right away, and solve real problems in her life.
+[00:01:19] Sidekick And Waitlist
+[00:01:19] David Singleton: And at the core, we have a personal agent called the Sidekick.
+[00:01:24] Um, you can give your sidekick a name, you can give it its own personality, and it really helps you across your entire day, your life. It helps you use all of the agents on the platform, and it also helps you build anything you want. And we’ve been working in this for a little while. We recently launched in beta.
+[00:01:41] So anyone can go to dreamer.com, join the wait list. Um, and we have many, many, many people in the community now who are building really fun, really powerful, really useful. Agents and the agentic apps for themselves.
+[00:01:54] swyx: I think we’re gonna go right into a demo. Yeah. I just wanna make an observation that, uh, you, you, [00:02:00] you put discover first before build.
+[00:02:02] Mm-hmm. But actually, at least for the engineers in the audience. ‘cause we are primarily engineers and you’re primarily targeting consumers, right?
+[00:02:08] David Singleton: Yeah.
+[00:02:08] swyx: For engineers. Like, there’s a huge full stack of stuff, which we’re gonna dive into. Let’s write. It’s so impressive. I’m like, holy shit, this, this is what I’ve always wanted.
+[00:02:16] Cool. Uh, so, so I think that’s really good and I’ve, in some ways, I think given your background given, uh, Hugo’s, is it Hugo? Hugo.
+[00:02:24] David Singleton: Hugo. Hugo Bar. Yeah.
+[00:02:25] swyx: Hugo, it’s not surprising that you can basically kind of build an app store Yeah. For agents.
+[00:02:30] David Singleton: Yeah. So Hugo was my co-founder. Yeah. Um, Hugo and I met with our other co-founder Nicholas Checkoff in the very early days of Android at Google, where we were building Google’s first mobile apps.
+[00:02:41] Uh, we then contributed to very core pieces of Android itself. And you’re right, we were really excited about building two things. One, solving a bunch of problems. That this breakthrough technology here I’m talking about mobile needed to have solved in order to make it work for real people at scale. And then secondly, building this ecosystem, um, [00:03:00] of third party developers using the Play Store, um, and able to deliver way more value on the platform than we could have delivered on our own.
+[00:03:08] And we think about Dreamer in exactly the same way. So I was working at Stripe, as you mentioned, and we had the opportunity to put some of the very first AI agent systems in the world into production. And from the moment we did the first of those, I was just struck with a strong sense of conviction that this is breakthrough technology that’s gonna change how all of us work with computers and phones and so forth, all of the, the technology in our lives, but.
+[00:03:34] There’s a lot of problems to be solved, for real people to be able to make this approachable. Um, and it really is kind of a direct analog for what we were solving back in the early days of mobile apps at Google and, and Android. So it’s, it’s been fun to bring that to life.
+[00:03:47] swyx: Yeah. Uh, let’s look at it.
+[00:03:48] David Singleton: Yeah, let’s take a look.
+[00:03:49] Dashboard And Daily Briefing
+[00:03:49] David Singleton: So, uh, dreamer.com, this is our homepage. This is where you can come and, uh, watch some videos about what is here and sign up for the wait list. Once
+[00:03:57] swyx: you, I, I just wanna say for those listening, ‘cause we have a lot, you [00:04:00] know, switch to YouTube, look at the animations. So much care.
+[00:04:03] David Singleton: We, we really care about, uh, this product being fun.
+[00:04:07] Uh, and, and interesting to use. Obviously a lot of people are using it to do real important stuff. You can do real work, uh, here, uh, but also you can build fun things too. Once you get off of our wait list, you’ll come into the product. The first thing that happens is you’ll have a conversation with your side cake, which is this little friendly, uh, character here.
+[00:04:27] And psychic will seek to get to know you and understand you. What do you care about? And will help you discover and build your first AI agents or agentic apps. After that, you’re, you’re gonna have a dashboard. This is my dashboard. Everyone’s is different. Um, you can see I have a few things here. I have a feed.
+[00:04:42] So a lot of our agents do things in the background when you’re not looking and the feed is how they let you know what they’ve been up to. I have, uh, some widgets, uh, from apps that I have built. Uh, this one is called Calendar Hero. Uh, this is something that I installed from the gallery. Uh, so built by someone in our community.
+[00:04:59] It’s a [00:05:00] really powerful calendar app because for each of my meetings, if it’s with someone I don’t already know, well it’ll actually go off and research it, um, and give me both a history of my interactions with those people and also a bunch of, you know, public useful information to, to get started. One of the things I love about this particular app is that every day it generates a podcast, um, a daily business_change.
+[00:05:24] And one of the things that we’ve done with the platform is we’ve made it possible for all the things that agents do to show up in places that you care about. So if you look over here, this is the screen in my phone, and if I go ahead and open my Apple Podcasts, you can see right here. Your Daily business_change podcast is ready.
+[00:05:39] This was produced by an agent running in my Dreamer account, and it was very easy by scanning a QR code to connect it to my Apple podcast. That’s what I listened to in the car now every morning. Yeah. On my way to work.
+[00:05:50] swyx: It, it
+[00:05:50] David Singleton: preps me for, for my day.
+[00:05:52] swyx: So one additional bit of context. I asked you immediately after seeing this was like, what, what about, I wanna talk back to my agent and you said you actually started with voice and then you went to [00:06:00] podcasts.
+[00:06:00] ‘cause it’s nice to have it pre downloaded
+[00:06:02] David Singleton: that, right? That’s right. Um, yeah, we, you, you can talk to your sidekick. So, you know, on mobile we have, uh, a dreamer app and you can talk to the sidekick right here. Um, but we’ve actually found that making things, uh, show up in the other apps that you already use in your life is incredibly powerful.
+[00:06:19] So let’s take a look at what’s kind of under the hood here.
+[00:06:21] Gallery Tools And Payouts
+[00:06:21] David Singleton: So I already mentioned that we have a gallery, so this is where you’ll find a lot of agents from our community. Uh, there’s. Many at this point, hundreds. And they are solving all kinds of, uh, use cases. I’d say the the top use cases are on personal productivity, but also a lot of information management that can range from personal information like docs and so forth, managing your emails.
+[00:06:42] It also ranges out to public information that you might be interested in, but you need something to help manage the, the kind of fire hose of stuff that’s coming at you. For instance, I have, um, an agent which looks at all the AI news, um, all the time. There’s a lot of it and it finds the stuff that I would actually be [00:07:00] interested in, um, and I find it incredibly useful.
+[00:07:03] So these are agents that you can install that other people have built. Anything that you install on Dreamer, you can actually just say, I wanna start making some changes, and we’ll look at that in a second. But in natural language, with the sidekicks help, you can change any of these experiences to work just the way you want them.
+[00:07:18] But the base layer of the system are tools. So you know, as well as anyone swyx, that any AI system is only as good as the quality of data that it can pull in and the quality of action it can take. So before we launched our beta, we worked very hard to make sure that we seeded our tools with a bunch of very high quality and powerful integrations.
+[00:07:39] So, you know, for instance, this is real Google search, this is actual Gmail. Um, and you can do very useful things with those. But also this is a platform for everyone. And as we got started talking to people in our alpha community, a whole bunch of sports use cases popped out and we realized if you want to build something cool for sports with ai, you need really high quality live data.
+[00:07:58] So look at these [00:08:00] Formula one M-L-B-N-F-L, uh, these are tools, uh, that we’ve built. We’ve done a, these are not data scraped off the web. This is a, a direct data feed integration. And because it’s live and ‘cause it’s high quality, you can build really powerful stuff. But tools is not something that we are just going to kind of control ourselves.
+[00:08:19] The platform is open for tool Builders to contribute tools that anyone on Dreamer can use. So, um, this is actually the place in the platform where I think software engineers, um, well number one, would love for you to come and play with it. Uh, but software engineers are really gonna build, um, a lot of powerful stuff into the system.
+[00:08:38] And we are actually sharing something for the first time on this podcast, which there is, uh, tool builders on Dreamer get paid. So if you publish a tool to the platform and a lot of agents use it, you’ll actually get paid, uh, in proportion to their usage. And we’d love for folks to come and give this a try.
+[00:08:54] We’ve got good docs that help you get started and you can build things that, you know, scratch your own itch. For instance, someone built this [00:09:00] Ski Bum tool, which provides live snow conditions for a bunch of, uh, ski resorts. I’d love to show you how I’ve used that in a second. And also we have some tools, partners where the tools themselves are paper use.
+[00:09:12] So for instance, parallel web systems is a premium tool. Uh, you can do really cool stuff with it. Um, it’s a a, an agentic web research tool. And that one, because it’s expensive to operate, is paid on a, on a per usage basis. But if you’re coming in to build agents on the platform, even the premium tools, you get a free trial.
+[00:09:29] So you get a chance to actually try them out, make sure that the use case is good for you before you decide to, to to sign up. So that’s tools. So we have the gallery, we have tools, and then the sidekick helps us put all of this together to build agents. We do that in the agents studio. You can also do this on your phone, but if I open up Agent Studio here on Desktop psychic’s, just gonna start a conversation about what you want to build together.
+[00:09:51] I’d love to show you one that I made recently.
+[00:09:53] swyx: Let’s do
+[00:09:53] David Singleton: it.
+[00:09:53] Building A Conference App
+[00:09:53] David Singleton: Um, let’s look at something that hopefully is kind of near and dear to your heart. So one of the things I love about Dreamer and this kind of moment in technology is that if you think about it. There are all these things in your life where, have you ever gone to a conference?
+[00:10:09] I know you have. Right? And, uh, big conferences have apps. Um, and these apps are usually built by agencies and they’re, they’re usually actually quite expensive to build. I’ve been involved in running some of these myself. And how many conferences have you been to where the app was good? Zero. Honestly.
+[00:10:23] swyx: Exactly. Zero,
+[00:10:24] David Singleton: maybe one. I, I’ve, I’ve been to one conference. That was pretty good. Wait, wait session sessions. Um, but, but the point is, they’re rarely great pieces of software. Right. And they’re also expensive to build, but they’re, they’re interesting ‘cause they’re episodic, they last for this one thing. Um, and then they’re, they’re not relevant anymore.
+[00:10:43] Um,
+[00:10:43] swyx: and so it’s the worst feeling to invest in them because, you know, it’s like, it’s got a limited. Date?
+[00:10:48] David Singleton: Absolutely. So I decided to build, uh, a conference app for your AI engineer conference. Amazing. Uh, on Dreamer. One of the things that Swix has done, uh, which I [00:11:00] thought was very forward-looking, is actually put a whole bunch of data about the conference on the webpage in an LLM readable way.
+[00:11:06] There’s an LLMs txt file, there’s a feed of all of the sessions in js, ON. So I used the data from your conference last year and built this intelligent app, uh, just by talking to our sidekick, uh, in Dreamer. So just to give you a quick tour, this is my Dream Conference app. What I always wanna do for conferences is I wanna be able to search for speakers.
+[00:11:28] I’m usually there because, uh, there, uh, is a speaker I care about. So, you know, SWIX, you’re the speaker I care about. I can actually see here who you’re on stage with. So here’s, here’s Greg Brockman. You’ve read even ai, uh, and this is his session. And look Greg and Swix for the speaker. So let’s add that to my schedule.
+[00:11:45] Great. And then maybe there’s a couple others I might see here. Like on day two, I remember there were some keynotes. So, uh, building the open agenda web, that sounds fun. So I add that to my schedule.
+[00:11:55] swyx: She’s now CEO of Xbox.
+[00:11:56] David Singleton: Awesome.
+[00:11:57] swyx: Which is interesting. So cool. So,
+[00:11:59] David Singleton: so I’ve [00:12:00] gone through and picked out a couple of sessions that I cared about.
+[00:12:03] That’s as far as I usually get with any conference app. But of course you’ve got the whole of the rest of the conference to figure out what to do. So here is where the native intelligence of, of these things you build on Dreamer can come in. So I’m gonna click guide me. So Dreamers sidekick actually parsed out the whole schedule and figured out what some of the themes are and I can choose what I’m interested in here.
+[00:12:23] I’m definitely interested in agents. Uh, I’m definitely interested in code generation and also reasoning in rl. So now I’m gonna say build my schedule. So what this is doing is. It’s going across every time slot for the conference. And it’s choosing among the things I could go to, which one it thinks is best for me based on my interests.
+[00:12:41] It also uses its own memory of me that’s part of Dreamer, uh, to understand what I might like best. And you know, there’s an LLM prompt running for each one of these time slots. So this is, it’s not super fast, but it’ll be done in about 30 or 40 seconds. And I’m gonna have a special custom schedule for the conference.
+[00:12:57] This, like I said, is my [00:13:00] dream conference app is exactly what I’ve always wanted and I was able to build this yesterday morning. Um, I did it between some meetings. I think I spent a total of 25 minutes of wall clock time on it. I did it over the course of a couple of hours. And, uh, here is my schedule for the conference.
+[00:13:15] I can see it in a calendar view. This is what I should do on Tuesday, this is what I should do on Wednesday. Oof, no conflicts, but, you know, I may not go to every single thing. And there you have it built in, you know, dreamer. So let’s take a look at what the building experience actually looks like. So this is the, the actual account that I made it on.
+[00:13:32] Oh, of course I should say anything you build on Dreamer also works on your phone. So, uh, here is my AI engineer conference app right here on my phone. Got all the same functionality, and of course this is the best place to jump into my schedule.
+[00:13:46] swyx: Yeah.
+[00:13:46] David Singleton: Um,
+[00:13:46] swyx: so you could generate a podcast about it just completely multimodal, absolute thing, right?
+[00:13:51] To me, I mean, this is why I outsource, I mean, well, I, I posted the L-M-T-X-T, the JSON because you cannot run an engineer conference in 2025 [00:14:00] and not let engineers. Do whatever they want.
+[00:14:02] David Singleton: Yeah.
+[00:14:03] swyx: And since all conference apps suck, I’m just gonna put up a ba minimum viable app and just let people do whatever they want.
+[00:14:09] David Singleton: Totally. And the cool thing about this on Bremer is I published this to the gallery and you can use it so you’ve got one that’s built to my taste of conference apps. I think it’s pretty cool. But you might want something different. Yeah. In which case you just start telling the sidekick how to change it.
+[00:14:23] So let’s just very quickly look
+[00:14:24] swyx: at our, what sports grid is also, you can fork it, right? That I can publish. That’s right. I can publish your one and go, this is the base starter. It’s, it’s got good defaults, but go customize, whatever.
+[00:14:32] David Singleton: That’s right. That’s right.
+[00:14:33] swyx: Yeah.
+[00:14:33] Agent Studio Under The Hood
+[00:14:33] David Singleton: So let’s take a look at how I actually built this.
+[00:14:34] This is real. So I’m gonna say make changes. This experience we’re looking at now is our, uh, agent development studio. Um, like I said, you can do this on your phone as well. And in fact, this one I started out on desktop. Let’s look at my actual prompts. I said, let’s make an agent called AI Engineer Schedule Planner should be a custom schedule planner for the AI engineer conference.
+[00:14:53] I’m not gonna read this all up. You get, you get the point and it told it where to get the data from. So that was the first prompt. And actually after I gave it that [00:15:00] prompt, I actually had a simple version of this app working, um, after the sidekick took one turn. So the Sidekick is a, like a professional software engineer, and we’ve worked very hard to make this work and build functional apps for folks that might not have any engineering experience whatsoever.
+[00:15:14] So, you know, done here we have build logs that are technical, but you can hide those away. And sidekick, as it is building, will actually translate everything that is coming out of, uh, of the, the harness into English that you can actually read. And by the way, this English is in the personality of your sidekick, which is fun.
+[00:15:32] Um. And the way that we build agents and agent apps, it’s a little different to what you might have seen in some other platforms for a couple of reasons. One, just the build process. The very first thing that Sidekick does, it understands all the agents you’ve got set up. It understands all the tools and it will come up with a plan for how to realize your goal, how to make sure it actually has the data and the capabilities to complete it.
+[00:15:54] It will occasionally refuse. If it can’t do what you’re asking, it will tell you I can’t do that. It needs another tool. And that’s a good [00:16:00] jumping off point for any of the tool builders out there to build a new tool. So it’ll fi first figure out how, then it will build it, and then it will actually test it.
+[00:16:07] So it will actually make sure that the thing that it has generated is realizing your goal. And you probably know as well as anybody that anytime you can get any. Modern state-of-the-art coding model into a loop where it can make changes and perceive its own output and then fix bugs. Magic happens. So these builds, the first build will often take 10 to 15 minutes on Dreamer, which is a little bit longer than you might’ve seen on some other platforms.
+[00:16:31] But the first thing that it creates will work most of the time. And then of course, as you start making smaller changes, you can like ask it to tweak the UI in any way that you like. Those are much faster. And just to give you a sense, uh, for this one, here’s something I asked. Put a logo, I gave it a logo file in static files.
+[00:16:48] Use that as the title. So for folks that actually really want to dig, uh, into a bit more detail, we’ve provided a powerful IDE here. So I can actually see here’s the code that was generated and some pieces of the [00:17:00] code are more accessible than others, like the prompts. So this is the prompt that’s used by a powerful LLM in order to do that schedule picking.
+[00:17:08] And I can actually read it here directly. I can edit it without having to ask the sidekick if I want to do that.
+[00:17:12] swyx: So this is very nice.
+[00:17:13] David Singleton: This is for the more, the more, uh, sophisticated users.
+[00:17:16] swyx: Yeah. This is other people’s entire startup is prop management.
+[00:17:21] David Singleton: This is true. The other thing that is different about Dreamer is once you’ve built something here, it’s ready to go.
+[00:17:28] We host it. So you don’t have to worry about getting a database from a database provider signing up, getting API keys. You don’t have to worry about your LLM provider tokens. All of that is hosted on the platform. And you can use it yourself. You can share it to the gallery for other people to, to riff on it.
+[00:17:46] You can also share it with your friends and coworkers to use your instance of the agent or agentic app. And we’re seeing that happen a lot in our community. We’ve seen a whole bunch of folks who built little applications for their personal life [00:18:00] and shared them with their significant other. We’ve seen people who are building little productivity apps for their team at work and sharing it, uh, among them.
+[00:18:07] And we actually do this a lot inside of the company. So at this point we, we pretty much run the company on Dreamer agents for all kinds of important things. Uh, maybe a good example of that is, um, our wait list. People are signing up every time someone signs up for our wait list. A dreamer agent will actually research, uh, that person.
+[00:18:25] And we’re looking for folks who are builders, not super technical to build agents and come in, uh, and give us a lot of feedback and we’re prioritized bringing those people off of the wait list First,
+[00:18:35] swyx: just a quick question on that one is there’s, it may not come up again. Do you find enrichment APIs to be useful like the ZoomInfo?
+[00:18:42] Uh, clear bit
+[00:18:43] David Singleton: enrichment is a very, uh, common use case. Um, on dreamer. Any application on Dreamer can kick off a sub-agent to do a particular task. Um, so this actually is a powerful agentic harness that runs inside of its own [00:19:00] vm. Uh, we call them sidekick tasks ‘cause they actually run in the context of the sidekick.
+[00:19:04] I’ll talk more about Sidekick in a second and. Enrichment is a very common use case. And the cool thing about a sidekick task is that it has access to all the tools on the platform, but also public data as well. And so very frequently enrichment on our platform happens using public data that it can be found in the web.
+[00:19:24] There are some tools for getting people data, uh, from, uh, from various bespoke systems. And so that works pretty well. But actually, you’d be surprised. I mean, we would love if someone out there would like to build a ZoomInfo tool, we don’t have one today. We’d love to see that on the platform, and I’m sure it’ll be very powerful.
+[00:19:39] But we’re also seeing that this powerful agent harness can pull a lot of data in on that note of tools that make experiences better, we’re constantly adding more tools because people in the community are building them and publishing them. We review the tools carefully and then they go live for everybody.
+[00:19:54] Yesterday we added granola. And that was pretty cool. So I was talking to actually, uh, Sarah on my team was [00:20:00] talking to, uh, someone building on the platform this morning and they actually, they have an agentic app that they built, which is a kind of magic to-do list. So they put stuff on their to-do list and for each thing it kicks off one of these, uh, sidekick tasks to figure out how to move the ball forward thing.
+[00:20:14] Sometimes it’ll complete it
+[00:20:15] swyx: entirely. Yeah.
+[00:20:16] David Singleton: Often by calling another agent on the platform and sometimes it just kind of researches it and helps ‘em take the first step.
+[00:20:21] swyx: Yeah. Do you know, this is Sam Altman’s number one, ask for an AI app. It’s the self-completing to-do list.
+[00:20:26] David Singleton: Yeah. The self-completing to-do list is something that a lot of people have built on Dreamer and are getting a lot of use out of.
+[00:20:32] Yeah. And, and finding it actually genuinely I shouldn’t, I should, I should try that. Mm-hmm. Please do. And you’ll even find some in the gallery that you can remix. So he was saying this morning that he’s, he built this self completing to-do list, uh, on Dreamer already. But he connected the granola tool yesterday and now something really magical happens, which is when he says in meetings that he’s gonna do a thing, it magically shows up on his to-do list and then it can magically get completed.
+[00:20:56] And then, as I mentioned, all the agents, all the [00:21:00] apps on Dreamer can actually work together. So our coding agent, as it builds them, does something very special where it exposes the internals of each of the experiences to the system. And then Sidekick can manipulate those to get stuff done. So he has built another agent, which he uses for recruiting.
+[00:21:18] It kind of keeps track of candidates and also it’s got a kinda mini CRM function, so he’s able to introduce candidates to each other. He told us this morning that something he’d committed to do in a meeting that was recorded on granola yesterday showed up in his magic to-do list and his magic to-do list.
+[00:21:34] It was like introduce a person for recruiting, used his recruiting agent to get it done.
+[00:21:39] swyx: Ah,
+[00:21:39] David Singleton: um, and this is, this is the dream. This is why we started the company. It really is the case that you can build and use these very powerful, bespoke experiences that can automate your life by working together. And I’d love to talk a little bit about how they work together.
+[00:21:55] Ecosystem Trust And Monetization
+[00:21:55] David Singleton: So obviously it’s really cool to have [00:22:00] software that will work on your behalf, but it’s only useful if you can trust it, right? So privacy and security is very important to us making these things accessible and. While also being trustworthy is hard. So the model that we have, which is working very well, is that the sidekick is at the core of everything here.
+[00:22:22] So it is both your companion, your helper, but it’s also the traffic cup in the system. So when, when one agent wants to work with another agent and dreamer, it doesn’t do it directly, it does it via the sidekick, well ask the sidekick to do the thing. And the sidekick understands both everything, all the expectations that have been set with me as a user about what agents can do, which tools I’ve given them permission to use.
+[00:22:45] And it will make sure that whatever is is going on is actually aligned with my own interests. And you know, that’s part of the background that I bring to this problem domain. I’ve. Worked for years, uh, keeping very important information, safe and secure. And [00:23:00] so as we started to think about this problem, we realized that we actually had to build something that’s a bit like an operating system.
+[00:23:06] You know, the sidekicks, like the kernel, the agents and apps are like users. Yeah. Different rings. Exactly. Because if you try to pick off just one piece of this, you can’t actually make it work for people at scale. Uh, because you could build little vibe coded apps, but they’re gonna grab all your data willy-nilly.
+[00:23:23] They won’t be able to work together. You actually have to invest in the fundamental core in order to make it work well for people. And that’s what we’ve been doing and it’s, uh, it’s been a lot of fun. One other thing I wanted to mention is, um, I’ve obviously talked about two things, tools and agentic apps.
+[00:23:42] We really designed Dreamer to be an ecosystem and a platform, and one of my favorite quotes about platforms, I think it’s from Bill Gates, is that you can only be a platform. If you create more value for the folks participating and using the platform than, than the platform itself creates. [00:24:00] And that’s our goal here.
+[00:24:01] So we at every step have been thinking about how do we make sure that other people are deriving even more value from Dreamer than we are? So in that vein, I already mentioned tool builders get paid and people can build agents that solve their needs and share them with others, and we are already thinking about ways that they can actually monetize those as well.
+[00:24:24] Against that backdrop, one of the things that we are launching today is our Builders in Residence program. So there are tons of people building really cool stuff and contributing it to the gallery already, but we’ve been really inspired by programs we’ve seen at other companies where artists might be in residence, people that are very creative.
+[00:24:43] And might have ideas outside of what the, the folks at the company or in the ecosystem already have. And so we are looking for creative people who have fun ideas and, you know, want to really figure out how to apply their creativity at the cutting edge [00:25:00] of technology today to come and work with us. So, uh, if you go to dreamer.com/latent space, you’ll find, ooh, well, we love Latent space.
+[00:25:09] Uh, you’ll find a link both to, uh, our tool Builder information and our builder in residence program. And for builders and residents, we’ll let you in off the wait list quickly, build an agent, and then for a small number of, of the most creative folks, we’re going to pay you to build agents. Uh, you can work directly with our team.
+[00:25:29] You know, this is like building Legos. So, you know, we’ve got some of the basic blocks together already, but if you need a Ron steering wheel and we don’t have one already, like we’ll build it for you. Yeah. Um, we really want to be inspired by, by these, uh, these builders in residence.
+[00:25:43] swyx: This Legos thing is pretty common as an analogy.
+[00:25:46] And there’s a, there’s a thing I call the master builder. Uh, we, the actual Lego company has master builders that they employ Yeah. To inspire people and post on socials.
+[00:25:56] David Singleton: That is exactly what inspired us as well. Honestly, we talked about the Lego Master [00:26:00] Builder program, so that’s our builder in residence program.
+[00:26:02] swyx: Yeah.
+[00:26:03] David Singleton: Um, and then, uh, finally back on, on tools. Like I said, anyone can come in and build tools today. If you follow the latent space link dreamer.com/latent space, again, we’ll get you off. Directly off the wait list. So you can build right away, you can monetize by publishing onto the platform. That’s for everyone, the very best tool that gets added to the platform by mid-April.
+[00:26:23] Uh, we have a $10,000 prize that we want to give out really, because we just want to seed the creativity of everyone out there. So we’re excited to do that.
+[00:26:31] swyx: Yeah. And you know, uh, this is completely a flywheel, right? Like the more tools, the more builders, the more the third thing agents, you know, it just feeds into each other.
+[00:26:39] David Singleton: That’s right.
+[00:26:39] swyx: Yeah. Just on the payments thing, because we probably won’t touch on that again, but I have to ask the former CTO Stripe on payments as presumably you’re using Stripe Connect.
+[00:26:48] David Singleton: Yeah.
+[00:26:48] swyx: Um. Any pain points that you’re, people are very interested in agent commerce and micropayment and all these things.
+[00:26:55] Presumably stable coins get into a conversation at some point, but maybe not now.
+[00:26:58] David Singleton: Yeah, we are [00:27:00] really, really excited about e agent commerce. The first step we are taking is help people in the world who have never been able to build these kind of experiences and software before to build stuff that meets their passions, share it with the world and get paid.
+[00:27:14] So that’s all commerce that happens on our platform, and so we don’t need anything new to facilitate that. Stripe Connect has existed for quite a while and is the perfect solution for this kind of stuff, so, um, we we’re excited about that. First and foremost, however. A lot of the things that people are already doing on Dreamer, we just talked about a self-completing to-do list.
+[00:27:34] A lot of the ways that you want to complete to-dos is by actually closing the loop in the real world, and that’s going to involve the exchange of value. So we have some folks that are building tools already that actually do have money move in order to, to complete that, that loop. So far, we just want to be open and agnostic to all the protocols out there.
+[00:27:54] I honestly think this moment in time is a little bit like the early web. So I personally started coding as a kid [00:28:00] and I think I got access to the internet in about 19 95, 19 96. And back then, uh, the web existed, you know, HTTP was a protocol, but there were also other protocols I was using all the time, like Gopher and UUCP and uh, various others.
+[00:28:15] So the point is like the web, HTTP and HTML. Was just one among many protocols. And of course it became the winner and it’s awesome. Yeah. Um, but the others were also kind of interesting and viable at the time as well. And I think the world of agentic commerce is like this right now. Also,
+[00:28:30] swyx: acp.
+[00:28:31] David Singleton: Acp, exactly.
+[00:28:32] All the, all the cps, you know, on Dreamer. We hope that folks will build tools that kinda make use of all of these things, but I’m sure that at a certain point. One or two will emerge as the winners, and then we’ll be able to build like really deep support in,
+[00:28:44] swyx: yeah. This is like maybe a complete tangent, but I do think about how a lot of these companies in AI companies in particular have to switch from c based to usage based because of course, but then, then they end up, end up having to sort of [00:29:00] obscure the margins a little bit and then they inventing end up inventing their equivalent of rob robots.
+[00:29:04] David Singleton: Mm-hmm.
+[00:29:04] swyx: Uh, where they’re like, well, okay, well every company should have their own currency. And it’s, it’s like very short lead to a token.
+[00:29:11] David Singleton: Yeah.
+[00:29:11] swyx: Or, and I’m like, okay, well where does this end? I can’t really play out the next step as to like, is this chaos? Is this,
+[00:29:18] David Singleton: yeah.
+[00:29:18] swyx: Okay.
+[00:29:18] David Singleton: Well, I think it is kind of like the wild west.
+[00:29:21] I don’t mean that in a completely, it’s all completely disorganized way, but there’s just so many things that could happen from here. The Overton window is very wide, right? Not far how this might land. And I’m just very excited to be building a platform that can take advantage of all of those opportunities and we’re just gonna be there.
+[00:29:36] Uh, working for our users to make sure that things that emerge work,
+[00:29:39] swyx: you’re gonna own the consumers, you’re gonna be up the OS for the app store for everything.
+[00:29:43] David Singleton: So one of the ways to think about this is, um, dreamer actually uses all of the state-of-the-art models as a user. You don’t have to think about should I be using, you know, Opus four six, or should I be using the five four model from [00:30:00] OpenAI?
+[00:30:00] We are continually doing evals and so forth to make sure that the best things are there for you. You can just build on the platform and know that as the world ships around, you’re gonna get the right stuff for you. Um, and I think that’s something that is needed to actually have folks take advantage of this technology at scale.
+[00:30:19] I’d love to show you another example of something I built.
+[00:30:21] swyx: Let’s do it.
+[00:30:22] David Singleton: This is another example of software that just lasts for a certain moment in time. So recently I went on a ski trip with a bunch of friends,
+[00:30:31] ski
+[00:30:31] David Singleton: Bum. Uh, so it uses ski bum. Yes. I went on a ski trip to Big Sky. I’d never been there before.
+[00:30:38] And I made this little intelligent app for us. And you can see it says it’s loading big sky conditions. So it’s actually calling the Ski Bum tool that I just showed you, which is, uh, published in our, uh, in our gallery. So what is this? This is a little app that was just for our weekend trip. It shows the current status of all the lifts of Big Sky.
+[00:30:54] Using that tool from the ecosystem, it shows the forecast for the upcoming weekend. It shows our [00:31:00] accommodation. This is just like where my group was staying. This is just for us and also a bunch of dining information that one of our friends, uh, put together who, who’s an expert on Big Sky. So I was able to take this app, share the link with my friends.
+[00:31:12] They weren’t on Dreamer yet, just send it to them on iMessage and they get a version they can use on their phone. And of course, here’s the real kicker. So I’ve been on ski trips before and other weekend adventures with my friends. Yeah, people pay for different things and at the end of the weekend it’s always a pain to figure out who needs to pay, who to settle up.
+[00:31:29] So we use this during the weekend. We added all of our expenses in here. Uh, too close are it’s drill data. It’s only too closely. And then at the end of the trip, we press split. And we’re, we settled up and we’re done. So there’s another dreamer. This was all through dreamer. So the, the actual payment? No, no.
+[00:31:47] We, it happened because, because we paid for stuff in the real world, it was like, okay, this person needs to pay that person 20 bucks. Right? Right. This person already paid in that. Right. So it just helped us all settle up. We didn’t move the money on Dreamer. You could do that. And in fact, if you’re a tool builder [00:32:00] thinking about this and getting excited, like come build a tool to do that stuff.
+[00:32:02] We really think of our tool builders as design partners.
+[00:32:05] swyx: Yeah. I got, I got the tool. Uh, what, like, I hate, I use Bank of America. I hate bank, I hate the app. Mm-hmm. I hate the web. All banking websites just horrible.
+[00:32:13] David Singleton: Yeah.
+[00:32:13] swyx: So just build me, like build a thing on top of Plaid.
+[00:32:15] David Singleton: Yeah. Right. And then just So
+[00:32:17] swyx: five code by banking app,
+[00:32:18] David Singleton: there’s already a tool for that.
+[00:32:20] Oh. So, um, attain Finance is a tool, a builder in our community built. Okay. Um, and it uses a secure system like Plaid. To access your, uh, financial data and you can build powerful personal finance agents on Dreamer today using this tool. And like I said, we review tools carefully. So when bringing Attain Finance onto the platform, we did actually quite a detailed security review with that company to make sure that if folks build stuff with it, it’s, it’s gonna work well.
+[00:32:49] So yeah, check that out. I think, uh, I’m, I’m pretty certain it connects to Bank of America. So you’ll be able to build the, the app that you wanted already?
+[00:32:55] swyx: Yeah. There’s a couple of points I wanted to sort of dive in on, maybe highlight to folks, [00:33:00] because I, obviously, I spent more time with Dreamers. So we’re making a point where you choose on behalf of your users because they’re meant to be consumers.
+[00:33:07] So maybe less technical,
+[00:33:08] David Singleton: right?
+[00:33:08] swyx: But obviously people can, how users can override. If you read that’s, but it’s not just lms, it is also the, the transcription. It, it’s like all, like there’s, there’s a first party curated set of here’s the house opinion. That’s right. On what?
+[00:33:21] David Singleton: That’s
+[00:33:21] swyx: right. The thing is, that’s right.
+[00:33:22] Is what’s the list? Is there like,
+[00:33:24] David Singleton: yeah, so actually if you look in the tool gallery, the first party kind of curated set are all the ones that have these grayscale icons. So we have a built in tool for image understanding, for image generation, for RSS, exploration, text to speech and so forth.
+[00:33:38] swyx: Recipes.
+[00:33:39] David Singleton: Uh, we actually do have a built in recipes tool.
+[00:33:41] It turns out that a lot of people in our alpha wanted to do stuff for cooking. Yeah. Um, and you know, you can scrape the web to get good recipes, but we were able to quite quickly find a good repository of recipes. It works great here. Yeah.
+[00:33:55] Stable Tool Interfaces
+[00:33:55] David Singleton: So the point behind these though is that we’ll keep the interfaces stable, so they’ll always work.
+[00:34:00] But you know, the best translation model and, you know, there are people using this translation tool to translate Chinese podcasts into English. It’s, it’s pretty powerful. It can deal with very long text, but the best translation tool today might be different from the best translation tool sometime next year.
+[00:34:15] And we’re just gonna make sure that that translation tool is always pretty close to state of the art. So you can build something and you know it’s gonna continue to work well. Of course, some of our tools are branded. You may actually have a preferred way of buying groceries, like maybe you prefer Instacart and that’s great.
+[00:34:29] You can use the Instacart tool specifically.
+[00:34:31] swyx: Yeah.
+[00:34:32] Partnerships And Ecosystem
+[00:34:32] swyx: Your partnerships, uh, I mean, I don’t know if you ever hit of partnerships, but this is gonna be a bonanza for anyone on to do deals.
+[00:34:38] David Singleton: We have an amazing person who, uh, works on all of our partnerships. Um, and it’s part of what you have to do to build a platform like this that’s gonna work for people.
+[00:34:46] Like, we’ve gone and done that. Schlep has a lot of work, one talks lots of different companies, um, in order to make sure that you’ve got good tools at the core.
+[00:34:54] swyx: Yeah.
+[00:34:54] David Singleton: And then of course, because we’re open to tool builders contributing to the platform, this is only gonna get better and better and [00:35:00] better.
+[00:35:00] swyx: Yeah.
+[00:35:01] Agent Lab Routing Layer
+[00:35:01] swyx: One observation I have this, this is gonna master a thesis I’ve been pursuing, which is, uh, what I’ve been calling an agent lab
+[00:35:05] David Singleton: mm-hmm.
+[00:35:06] swyx: Where you sort of different than a model lab in, in, in the sense that you never train your own models, but you are the router evaluation layer, ex subject domain expert for choosing between, uh, models.
+[00:35:18] David Singleton: Yeah.
+[00:35:18] swyx: And you’re explicitly doing these things. And so like in my sort of construction, every agent lab does some version of this where like, here’s the image understanding endpoint and we will route for you and don’t worry about it. Yeah. Sally, I think it’s kind of cool.
+[00:35:32] David Singleton: I, I think it makes total sense. Um, and again, to make this work for folks that don’t follow the AI news every day, it’s an actually, it’s a, it’s a really important thing to do.
+[00:35:42] Yeah. And it, it’s been, it’s been a real pleasure. I mean, I’m a, I’m personally a total geek for this stuff. I love it. And being able to go and dive into all those details in order to make it work well for other people. It’s a true pleasure. I cannot imagine working at anything else right now. It’s just so much fun.
+[00:35:56] swyx: The tricky part is multimodality when some of these things do [00:36:00] merge.
+[00:36:00] David Singleton: Mm-hmm.
+[00:36:01] swyx: And you are, you’re sort of, this is your imposing structure on things that fundamentally don’t want to be structured. And so sometimes that might work against you, but for 99% of these cases, this is fine.
+[00:36:10] David Singleton: Yeah. I mean, I think it’s gonna be very interesting to see how the, the, the world matures because a lot of the power of dreamer is the ability to kick off these subagents, so these powerful agent harnesses, which can actually change how they work based on the data.
+[00:36:25] I actually think that we will be able to. Kind of keep up with and stay at the forefront of the changing landscape of how tools and systems work together. And that’s, that’s new. You know, software didn’t used to work like this and now it does. Um, so even, even just figuring out how to design the right pri to make that possible has itself be a lot of fun.
+[00:36:44] Builders Can Publish Tools
+[00:36:44] swyx: This is, is a sort of maybe two part question that why can’t streamer make its own tools? And then why don’t you let you builders maybe stand up their own routing group? I call this a routing group, right? Like where it’s like collect Yeah. Things.
+[00:36:58] David Singleton: So two things, to [00:37:00] some extent, dreamer does make its own tools in that agents appear to the system as tools.
+[00:37:05] So they can be, they can be used to accomplish things. So you can build an agent that is essentially a tool. Yeah. Um, and it it,
+[00:37:12] swyx: which is to me very useful for reuse.
+[00:37:14] David Singleton: Right.
+[00:37:14] swyx: Right. Exactly. ‘cause I, I like, this is the way I like it. Now my next five apps, I don’t want to do this whole series of back and forth again.
+[00:37:20] David Singleton: Right.
+[00:37:21] swyx: Yeah.
+[00:37:21] David Singleton: Um. Then at the tool layer of the system, it’s open to anyone. So it’s actually quite powerful and flexible. So if you wanted to add a tool, which was, uh, imagine that you were training your own foundation model, Swyx. That might be fun. And imagine you wanted people to be able to play with, I don’t know, maybe you make like, you know, nano chat or whatever and you want to Yeah.
+[00:37:42] Let people play with your own nano chat and see how I change themselves.
+[00:37:44] swyx: Now.
+[00:37:45] David Singleton: You could, you could publish a tool that is Nano Chat and it nano image generation behind a tool, and it could be your own writer if you wanted to. I see. And honestly, if that’s the kind of thing that gets you excited as a builder, please come and do it.
+[00:37:57] Like we, we really are [00:38:00] believers in this idea that we aren’t going to figure out every single detail ourselves. We’re gonna make sure it’s a safe and fun place to build this stuff, but we’re really open to these ideas coming from other people. Um, and so I’d like nothing more than you come in and build a tool that does some of that cool stuff that you, that you have in mind.
+[00:38:15] swyx: Yeah. Awesome.
+[00:38:16] David Singleton: And just as a reminder, if you’d like to do that, the way to find the links is dreamer.com/latent space. Um, and for a limited time on that page, um, anyone who’s listening to this podcast will also get directly off of our wait list. Uh, it’s quite long right now. We are working hard to bring Zika.
+[00:38:32] Wait, so skip the wait list.
+[00:38:33] swyx: You know, I think, I think that’s fantastic. I, I think it’s, it is really sort of probuild way to do it. I wanted to jump back to the, the bar. Yeah. You know, you know, I get excited about this.
+[00:38:41] David Singleton: Yes. Okay. Let’s set it back in there.
+[00:38:43] swyx: Like, let’s, you know, this is the engineer podcast that’s get
+[00:38:46] David Singleton: Yeah.
+[00:38:46] swyx: As technical as you can.
+[00:38:47] David Singleton: Yeah.
+[00:38:47] swyx: On everything you’ve built, like have a show off.
+[00:38:50] David Singleton: Yeah. Okay.
+[00:38:51] Under The Hood Debugging
+[00:38:51] David Singleton: So let’s go wild in the aisles in the Asian studio. So as you can see, over on the left here is a conversation with the sidekick where you ask it what to do and it will explain in English that anyone can understand what’s going on.
+[00:39:03] But, um, if you want to pull back the covers and look under the hood, um, if you’re, uh, an engineer like me, then we have this, uh, this kind of debug drawer at the bottom. So you can see the full build logs here, but you can actually also dig in and see the files and prompts that have been generated. Uh, you can upload files from your computer in static files.
+[00:39:24] Um,
+[00:39:24] swyx: very important,
+[00:39:25] David Singleton: uh, indeed. You can actually read the prompts that have been generated for you. We intentionally put an example in here just that you can see what the format looks like. And then, you know, we already looked at this one that was generated for this particular, um, app, but if you actually want to bring the code out of Dreamer and work on your own local machine, you can.
+[00:39:45] So at the core of everything here is an SDK with a powerful command line interface and we built that first. It’s actually possible to build agents on Dreamer without talking to the sidekick. You can write code with your fingers on a keyboard if you want to. I know that’s very [00:40:00] antiquated, not, but actually this can be a lot of fun.
+[00:40:02] So if you wanna pull it out onto your laptop, you can use our, our CLI and, uh, you can edit it in cursor or in cloud code. You know, you don’t have to use our sidekick. And the CLI actually has full access to the rest of the platform with you as the user. So, you know, obviously it is, uh, secure and privacy sensitive, and this is a way that, um, some of our most technical builders do build stuff on the platform.
+[00:40:24] The really cool thing is the side cake. When it’s in coding mode, it uses exactly the same CLI. So the way it. Build stuff on Dreamer is using the same tools that you might as an engineer. Um, and that’s actually a very powerful abstraction because it turns out that the right way to give a lot of context to agents to use CLIs is to write great documentation.
+[00:40:46] Make sure that all of the things that you could do are actually possible. And guess what? That makes it a delightful developer experience for real heroes as well.
+[00:40:53] swyx: Yeah. So that’s pretty cool. We’ve been telling developers to do this and they ignore this until now they have to for content.
+[00:40:58] David Singleton: I, I’ve been saying this for a [00:41:00] long time.
+[00:41:00] Uh, we actually Stripe docs.
+[00:41:02] swyx: I mean, come on. Absolutely. Come on.
+[00:41:03] David Singleton: Absolutely. But actually, I was chatting with folks at Stripe last week and saying, Hey, you gotta make the Stripe CLI actually tell agents what they can do on Stripe because that way they’re gonna use more stuff on Stripe. I think this is a real trend for the entire industry.
+[00:41:16] swyx: Yeah.
+[00:41:16] David Singleton: So we, we’ve been doing that.
+[00:41:17] swyx: To me, this, this download and, uh, GI push mm-hmm. Everything is complete confidence in that you’re not hacking it. Right. Because there’s other, let’s call them AI builder platforms that impose their stack on you and if you, if you, and so therefore they don’t allow you to do this because they cannot.
+[00:41:34] Right. ‘cause they, they impose some degrees of freedom, uh, restrictions so that they can get it to work. Yours is a fully general like VM running the full code. Correct. Do whatever you want. Correct. Any language you want. Correct. Yeah.
+[00:41:46] David Singleton: Correct. Well, in terms of language, if you use the SDK, you could build stuff in other languages.
+[00:41:51] We’ve actually found that TypeScript is the best language for building these experiences. Yes. Because it’s strongly tight. So you find out at compile time if you’ve made mistakes [00:42:00] and there’s nothing better than getting in. A coding agent in a loop where it can see its mistakes and ask them. So TypeScript is the language that everything gets built in by default here.
+[00:42:08] swyx: Did And did you see that TypeScript overtook Python? I did. I did. Yeah.
+[00:42:12] David Singleton: And for what it’s worth, when we started the company, we started writing stuff in Python, and I love Python. Um, if I do, uh, a vendor code, I always write it in Python. It’s my favorite language as a developer with my fingers on the keyboard.
+[00:42:23] Um, but TypeScript is an amazing language for AI because there’s tons of training data in the models, um, and it’s strongly tight. And actually at the company we built most of the stack in TypeScript, and we have this amazing property, which is, we have type safety all the way from the database to the front end.
+[00:42:40] And there’s nothing better for working with coding agents than being able to have them check their correctness, compile time. So the same ideas behind building the company’s code base, we’ve put into the agent SDK here as well.
+[00:42:51] swyx: Yeah. Do you know if you’d use one of those tools, like Prisma or whatever, or is it Tool Lab for you?
+[00:42:55] David Singleton: We, we actually have crafted most of our own tools. Um. For [00:43:00] instance, we had LLM Driven Code Review, uh, before the thing that got published from philanthropic this week. You know, we, we’ve been doing this stuff, uh, on our own bat
+[00:43:07] swyx: email, we’ll pay $25 per review.
+[00:43:09] David Singleton: We, we pay a lot less than that. However, I hear that those reviews are excellent and possibly worth $25.
+[00:43:14] swyx: Yeah. You know, it’s an option. Right. It’s good, good to have it.
+[00:43:17] David Singleton: Just to give you a tour of some other stuff here. So, um, I can also see all the versions. Yeah. Um, this is not gi, this is not gi, this is built into dreamer. I can see all the versions that have been pushed before. Why is it
+[00:43:27] swyx: not gi?
+[00:43:28] David Singleton: It’s not gi because we can make it work more efficiently than Git.
+[00:43:32] And we actually, we do some work behind the scenes to kind of understand what’s in each of these versions. Yeah. Um,
+[00:43:37] swyx: so one of the things I’m pursuing, and I have a lot of thesis, right? Mm-hmm. One of the thesis is like, does GI go away? Does GitHub go away? And like, what, what is the active reinvent
+[00:43:46] David Singleton: you for, for what it’s worth to some extent.
+[00:43:48] And anything you build, there’s a lot of path dependency. If we started over, we might make this gi There’s, uh, you know, within the company we use, uh. For our, you know, platform source code. And we like it and it [00:44:00] works well with coding agents as well. The very first versions of this, we wanted to be able to make it possible for the sidekick to manipulate it easily.
+[00:44:06] Um, and this, this was an expedient way to do it.
+[00:44:08] swyx: Yeah.
+[00:44:08] Workflows Logs And Databases
+[00:44:08] David Singleton: Um, you can also see all the activity that has happened in the workflows that you build. A lot of agents, you’ll build on Dreamer, do things in the background, so they run on triggers. These are stimuli from the outside to kick them off, and this is a nice way to see all of the things that might have kicked off your agent.
+[00:44:24] You know, you can have an agent that kicks off on a webhook, so you can plug it into external systems. You can have an agent that runs when you receive certain emails that match filters, including LLM filters. And so here you can see, oh, when did it run? What did it do? You know, if I open up one of these guide me prompts or guide me, uh, events.
+[00:44:41] Oh my can see God. Well, I told you it was calling an LLM for every one of those time slots. Here’s all of the LLM calls, here’s the actual prompts.
+[00:44:49] swyx: And you don’t mind exposing all of this, right?
+[00:44:51] David Singleton: No. We want builders to see what’s going on under the hood. It’s haiku to,
+[00:44:53] swyx: okay. Yeah. So,
+[00:44:54] David Singleton: okay. Right now that one was haiku.
+[00:44:56] Like I said, we work with all the models and sidekick will actually pick the best one [00:45:00] for the job. And you saw that was pretty high quality and pretty fast. So Haiku four five is the one that it picked for that job. Exactly. Uh, we also have logs, as I mentioned, t
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 91
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":60000,"paragraph_count":312,"sentence_count":795,"boilerplate_hits":2,"symbol_ratio":0.0115,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   Mar 23 update for Latent Spacenauts: this episode was recorded before the Dreamer team announced they were joining Meta Superintelligence Labs, and it turned out to be the last interview they did before the news became public. Consider this a snapshot from just before the transition!In 2024, David Singleton left Stripe and joined forces with Hugo Barra for a buzzy stealth startup named /dev/agents. This month they emerged out as Dreamer, a consumer-first platform to discover, build, and use AI a
+
+2. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Latent Space: The AI Engineer Podcast Dreamer: the Personal Agent OS — David Singleton 23 1× 0:00 Current time: 0:00 / Total time: -1:03:35 -1:03:35 Audio playback is not supported on your browser.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Dreamer: the Personal Agent OS — David Singleton /dev/agents is out of stealth as Dreamer, and the vision is staggeringly ambitious.
+
+4. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   Mar 20, 2026 23 Share Transcript Mar 23 update for Latent Spacenauts: this episode was recorded before the Dreamer team announced they were joining Meta Superintelligence Labs , and it turned out to be the last interview they did before the news became public.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Consider this a snapshot from just before the transition!
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   In 2024, David Singleton left Stripe and joined forces with Hugo Barra for a buzzy stealth startup named /dev/agents .
+
+## business_elements
+
+- companies: Latent Space, Google, Meta, Apple
+- products: Agent, agents, agent, Agents
+- people: 暂无公开信息
+- industries: 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 计费 / 预算管理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 23, 2024, 1, 0, 00, 03, 35, 20
+- quotes: Sidekick / agent that builds agents / full stack
+
+## evidence_seed
+
+- company_actions: Mar 23 update for Latent Spacenauts: this episode was recorded before the Dreamer team announced they were joining Meta Superintelligence Labs, and it turned out to be the last interview they did before the news became public. Consider this a snapshot from just before the transition!In 2024, David Singleton left Stripe and joined forces with Hugo Barra for a buzzy stealth startup named /dev/agents. This month they emerged out as Dreamer, a consumer-first platform to discover, build, and use AI a / Dreamer: the Personal Agent OS — David Singleton /dev/agents is out of stealth as Dreamer, and the vision is staggeringly ambitious. / Mar 20, 2026 23 Share Transcript Mar 23 update for Latent Spacenauts: this episode was recorded before the Dreamer team announced they were joining Meta Superintelligence Labs , and it turned out to be the last interview they did before the news became public.
+- case_details: 暂无公开信息
+- workflow_changes: Latent Space: The AI Engineer Podcast Dreamer: the Personal Agent OS — David Singleton 23 1× 0:00 Current time: 0:00 / Total time: -1:03:35 -1:03:35 Audio playback is not supported on your browser.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- signal_card_candidate: true
+- relationship_graph_input: true
+- business_change: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Mar 23 update for Latent Spacenauts: this episode was recorded before the Dreamer team announced they were joining Meta Superintelligence Labs, and it turned out to be the last interview they did before the news became public. Consider this a snapshot from just before the transition!In 2024, David Singleton left Stripe and joined forces with Hugo Barra for a buzzy stealth startup named /dev/agents. This month they emerged out as Dreamer, a consumer-first platform to discover, build, and use AI a
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 social_discovery 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

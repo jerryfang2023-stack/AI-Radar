@@ -1,0 +1,379 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-087
+title: "🔬 The Self-Driving Lab — Joseph Krause, Radical AI"
+original_url: "https://www.latent.space/p/radical-ai"
+canonical_url: "https://latent.space/p/radical-ai"
+source_name: "Latent Space"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-29T05:41:18.283Z
+language: mixed
+full_text_hash: d7b8251f5ada1081
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-087-the-self-driving-lab-joseph-krause-radical-ai.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-087-the-self-driving-lab-joseph-krause-radical-ai.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-article
+extraction_quality: high
+extraction_method: "article"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":10717,"paragraph_count":68,"sentence_count":62,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+has_full_text: true
+content_length: 10717
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d7b8251f5ada1081","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 7c835c9aff6f5cda
+content_hash: d7b8251f5ada1081
+semantic_hash: 5516de3ad480df41
+duplicate_of: ""
+first_seen_at: "2026-06-29T05:41:18.283Z"
+last_seen_at: 2026-06-29T05:41:18.283Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"trend_candidate_context":true,"signal_card_candidate":true,"relationship_graph_input":true,"business_change":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":2,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["Latent Space","OpenAI","Anthropic","Microsoft","GitHub","Meta","Apple"],"products":["Agents","Gemini"],"people":[],"industries":["制造 / 工业","开发者工具"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟"],"affected_departments":["IT / 安全","销售 / 客服"],"numbers":["21","1","0","00","16","49","17","2026"],"quotes":["one-shot","We count it as a discovery when you pick up your phone and there’s a new material sitting inside of it.","AI scientist","In materials, the ground truth is the material itself. You have to be able to test it and characterize it.","It’s moved into elemental families or alloy families no one has ever published on before."]}
+evidence_seed: {"company_actions":["🔬 The Self-Driving Lab — Joseph Krause, Radical AI Radical AI's Joseph Krause on why the moat in materials is the lab, not the model Brandon Anderson Jun 17, 2026 21 Share Transcript On the Science pod, we’ve been covering a lot of the ground on how AI is revolutionizing STEM, but one of our favorite off the record topics since our launch is which field is harder to accelerate: math , bio , or physics ?","Today we’re back in Materials Science land with Radical — Unlike biological molecules that can be represented (and predicted!","If you recall the LK99 drama of 2023 , while the basic ingredients were known, part of the confusion came from the lack of disclosure around manufacturing, and therefore defeated reproducibility."],"case_details":[],"workflow_changes":["On the Science pod, we’ve been covering a lot of the ground on how AI is revolutionizing STEM, but one of our favorite off the record topics since our launch is which field is harder to accelerate: math, bio, or physics? Today we’re back in Materials Science land with Radical — Unlike biological molecules that can be represented (and predicted!) by token strings, the success of materials involve many more macro complex variables like supply chains, microstructures, and manufacturing processes. I","Latent Space: The AI Engineer Podcast 🔬 The Self-Driving Lab — Joseph Krause, Radical AI 21 1× 0:00 Current time: 0:00 / Total time: -1:16:49 -1:16:49 Audio playback is not supported on your browser.",") by token strings, the success of materials involve many more macro complex variables like supply chains, microstructures, and manufacturing processes ."],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"On the Science pod, we’ve been covering a lot of the ground on how AI is revolutionizing STEM, but one of our favorite off the record topics since our launch is which field is harder to accelerate: math, bio, or physics? Today we’re back in Materials Science land with Radical — Unlike biological molecules that can be represented (and predicted!) by token strings, the success of materials involve many more macro complex variables like supply chains, microstructures, and manufacturing processes. I","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Latent Space: The AI Engineer Podcast 🔬 The Self-Driving Lab — Joseph Krause, Radical AI 21 1× 0:00 Current time: 0:00 / Total time: -1:16:49 -1:16:49 Audio playback is not supported on your browser.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"🔬 The Self-Driving Lab — Joseph Krause, Radical AI Radical AI's Joseph Krause on why the moat in materials is the lab, not the model Brandon Anderson Jun 17, 2026 21 Share Transcript On the Science pod, we’ve been covering a lot of the ground on how AI is revolutionizing STEM, but one of our favorite off the record topics since our launch is which field is harder to accelerate: math , bio , or physics ?","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Today we’re back in Materials Science land with Radical — Unlike biological molecules that can be represented (and predicted!","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":") by token strings, the success of materials involve many more macro complex variables like supply chains, microstructures, and manufacturing processes .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"If you recall the LK99 drama of 2023 , while the basic ingredients were known, part of the confusion came from the lack of disclosure around manufacturing, and therefore defeated reproducibility.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# 🔬 The Self-Driving Lab — Joseph Krause, Radical AI
+
+## clean_text
+
+Latent Space: The AI Engineer Podcast
+🔬 The Self-Driving Lab — Joseph Krause, Radical AI
+21
+1×
+0:00
+Current time: 0:00 / Total time: -1:16:49
+-1:16:49
+Audio playback is not supported on your browser. Please upgrade.
+🔬 The Self-Driving Lab — Joseph Krause, Radical AI
+Radical AI's Joseph Krause on why the moat in materials is the lab, not the model
+Brandon Anderson
+Jun 17, 2026
+21
+Share
+Transcript
+On the Science pod, we’ve been covering a lot of the ground on how AI is revolutionizing STEM, but one of our favorite off the record topics since our launch is which field is harder to accelerate: math , bio , or physics ? Today we’re back in Materials Science land with Radical — Unlike biological molecules that can be represented (and predicted!) by token strings, the success of materials involve many more macro complex variables like supply chains, microstructures, and manufacturing processes . If you recall the LK99 drama of 2023 , while the basic ingredients were known, part of the confusion came from the lack of disclosure around manufacturing, and therefore defeated reproducibility. There is probably no "one-shot" model capable of designing a material that works perfectly at scale.
+How Radical is accelerating materials discovery >10x the pace of DARPA/GE MACH
+Joseph Krause is a materials scientist through and through. And after spending his career watching industries stall out waiting for better materials, he founded Radical AI to do something about it.
+We recently sat down with Joseph to talk about Radical AI , materials discovery, self-driving labs, and the future of AI science. Joseph did not sugar coat anything: accelerating the materials discovery pipeline is a hard problem. But it’s one that he strongly believes we need to invest in, for the future of consumer products, aerospace, computing, and defense, and get them into every day use:
+“We count it as a discovery when you pick up your phone and there’s a new material sitting inside of it.”
+How does Joseph plan on accelerating the rate of discovery? To understand this, it’s important to understand why this is such a hard problem in the first place. The first thing to keep in mind is that the material that is manufactured is far more than a chemical formula going into it. The process of mixing, annealing, growing, or generating the final material can result in wildly different outcomes. 1 The entire materials discovery process, both from early discovery to large scale manufacturing, needs to be understood and characterized.
+The Self-Driving Lab
+This philosophy has grown into a key insight at Radical AI: The construction of the self-driving lab. This lab is one that is not just automated, but in fact uses an “AI scientist” that combines scientific knowledge, computational techniques, and human intuition to generate and test hypotheses in an automated lab. Creating an AI scientist was key to making Radical’s self-driving labs work, since Joseph argues that no single AI model can one-shot materials.
+“In materials, the ground truth is the material itself. You have to be able to test it and characterize it.”
+Joseph talked at length about the self-driving labs at Radical. Joseph argues that experimental data is the true “moat” in this industry. An SDL functions as a closed-loop system where an AI scientist generates hypotheses, and automated robotics synthesize and characterize materials, running research campaigns in parallel rather than serially .
+The successes here were both on the automation side and on the science side. Radical has managed to scale their alloy discovery pipeline up to producing and characterizing 1200 alloys in six months — this nearly 10x speedup over the DARPA/GE MACH program that aimed to create 500 new alloys in a year. Joseph claims they can scale this up even more and estimates they can produce a hundred new alloys tested and characterized in a day. A truly new paradigm in high-throughput alloy experimentation.
+On the science side, their AI scientist proposed and tested 300 new materials, ten of which were found to have novel state-of-the-art properties that are already being further developed for commercial applications. The robustness of this first materials campaign reinforces Joseph’s claim that the moat is the lab and data.
+“It’s moved into elemental families or alloy families no one has ever published on before.”
+Interestingly, Radical’s AI scientist has made some novel discoveries, expanding into elements that just were not explored prior. This is fascinating from a scientific perspective, but it’s also important for helping reduce supply chain bottlenecks for vital industries!
+Joseph spent a lot of time in D.C. before founding Radical, and he’s clear-eyed about the competitive threat. China’s centralized model lets it stand up manufacturing hubs and immediately scale new materials from lab to production. We can’t replicate that, and Joseph is very clear we shouldn’t try. But we do need an answer. For Joseph, that means transforming the scientific workforce, investing in self-driving lab infrastructure at the national lab level, and leaning hard into public-private partnerships.
+“Now imagine every scientist in the United States doing 10 times the research output. That’s fundamental. That just changes the trajectory of discovery.”
+Before we close, we’d like to give a shout out to Joseph and Radical for publishing and open sourcing much of their internal tooling pipeline. This includes:
+TorchSim ( preprint , blog ): an open-source PyTorch-based MD simulation framework, which has been spun off into its own non-profit.
+MATRIX/MATRIX-PT ( preprint , blog ): An open-source dataset for benchmarking autonomous self-driving labs (MATRIX), along with with an open source model based upon this dataset (MATRIX-PT). We could talk about this extensively, but a fun data point is that improving reasoning in the area of materials also improved reasoning for biological systems! This is a truly unexpected result.
+Big shout-out to the Radical team for sharing their work!
+Materials discovery has been stuck on a 20–30 year timeline for generations. Joseph thinks that’s about to change, and Radical AI is putting that thesis to the test in the lab, one sample at a time.
+We had a great time talking with Joseph. We hope you give it a listen!
+Timestamps
+0:00 Introduction to the challenges of AI in material science
+0:52 Welcome and introduction to Joseph Krause and Radical AI
+1:38 Why Radical AI is different: The focus on experimental data and Self-Driving Labs (SDLs)
+6:19 The process: Candidate generation, synthesis, and characterization
+11:05 The application of exotic alloys in extreme environments (aerospace and defense)
+13:20 Barriers to entry: The slow process of qualification and manufacturing
+16:06 Supply chain constraints in material science
+19:24 Human-in-the-loop: Training the AI using scientific intuition
+20:35 The engineering challenges of automating a laboratory
+23:17 Defining the “Self-Driving Lab”: Research campaigns vs. just automation
+24:39 Mechanical challenges: Handling high-temperature samples
+27:41 Future scaling plans and the “Vertical Integration” strategy
+30:08 Validation timelines for high-tech industries (semiconductors, aerospace)
+31:47 The active learning loop and handling “negative results”
+35:32 AI exploring elemental families beyond human bias
+39:13 Throughput targets and the difference between AI and human exploration
+43:52 Why the dataset size is less critical than the quality of experimental feedback
+46:20 Addressing the lack of an “AlphaFold” for materials
+53:49 War stories from the lab: Building the infrastructure
+58:12 The shift in industry sentiment toward SDLs and tool interfaces
+1:01:14 Geopolitical considerations and the race in material science innovation
+1:06:12 Calls to action for ML and AI engineers: Rethinking the scientific stack
+1:09:53 The Matrix model and using VLM for scientific knowledge extraction
+1:13:10 Why Radical AI is open-sourcing their work
+1 This is somewhat at odds with what the biology and chemistry worlds deal with, where the molecule, protein, sequence, etc… uniquely defines a molecule. Distribution/synthesis is still wildly difficult, but you can at least have a well defined quantity to construct. For materials, the same chemical composition can result in dozens of different “microstructures” depending on the process to create the material.
+Discussion about this episode
+Comments Restacks
+Latent Space: The AI Engineer Podcast
+The podcast by and for AI Engineers! In 2025, over 10 million readers and listeners came to Latent Space to hear about news, papers and interviews in Software 3.0.
+We cover Foundation Models changing every domain in Code Generation, Multimodality, AI Agents, GPU Infra and more, directly from the founders, builders, and thinkers involved in pushing the cutting edge. Striving to give you both the definitive take on the Current Thing down to the first introduction to the tech you'll be using in the next 3 months! We break news and exclusive interviews from OpenAI, Anthropic, Gemini, Meta (Soumith Chintala), Sierra (Bret Taylor), tiny (George Hotz), Databricks/MosaicML (Jon Frankle), Modular (Chris Lattner), Answer.ai (Jeremy Howard), et al.
+Full show notes always on https://latent.space
+The podcast by and for AI Engineers! In 2025, over 10 million readers and listeners came to Latent Space to hear about news, papers and interviews in Software 3.0.
+We cover Foundation Models changing every domain in Code Generation, Multimodality, AI Agents, GPU Infra and more, directly from the founders, builders, and thinkers involved in pushing the cutting edge. Striving to give you both the definitive take on the Current Thing down to the first introduction to the tech you'll be using in the next 3 months! We break news and exclusive interviews from OpenAI, Anthropic, Gemini, Meta (Soumith Chintala), Sierra (Bret Taylor), tiny (George Hotz), Databricks/MosaicML (Jon Frankle), Modular (Chris Lattner), Answer.ai (Jeremy Howard), et al.
+Full show notes always on https://latent.space
+Listen on
+Substack App
+Apple Podcasts
+Spotify
+RSS Feed
+Appears in episode
+Brandon Anderson
+Recent Episodes
+Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks
+Jun 24
+Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan
+Jun 22
+The Professor of Outputmaxxing — Anjney Midha, AMP
+Jun 18
+Reality: The Final Eval — Lukas Petersson and Axel Backlund of Andon Labs
+Jun 4
+🔬Scaling Past Informal AI - Carina Hong, Axiom Math
+Jun 3 • RJ Honicky
+⚡️Satya Nadella: No Priors x Latent Space Crossover Special at Microsoft Build
+Jun 3
+GitHub's plan for Agents — Kyle Daigle, GitHub
+Jun 2
+
+## full_text
+
+Latent Space: The AI Engineer Podcast
+🔬 The Self-Driving Lab — Joseph Krause, Radical AI
+21
+1×
+0:00
+Current time: 0:00 / Total time: -1:16:49
+-1:16:49
+Audio playback is not supported on your browser. Please upgrade.
+🔬 The Self-Driving Lab — Joseph Krause, Radical AI
+Radical AI's Joseph Krause on why the moat in materials is the lab, not the model
+Brandon Anderson
+Jun 17, 2026
+21
+Share
+Transcript
+On the Science pod, we’ve been covering a lot of the ground on how AI is revolutionizing STEM, but one of our favorite off the record topics since our launch is which field is harder to accelerate: math , bio , or physics ? Today we’re back in Materials Science land with Radical — Unlike biological molecules that can be represented (and predicted!) by token strings, the success of materials involve many more macro complex variables like supply chains, microstructures, and manufacturing processes . If you recall the LK99 drama of 2023 , while the basic ingredients were known, part of the confusion came from the lack of disclosure around manufacturing, and therefore defeated reproducibility. There is probably no "one-shot" model capable of designing a material that works perfectly at scale.
+How Radical is accelerating materials discovery >10x the pace of DARPA/GE MACH
+Joseph Krause is a materials scientist through and through. And after spending his career watching industries stall out waiting for better materials, he founded Radical AI to do something about it.
+We recently sat down with Joseph to talk about Radical AI , materials discovery, self-driving labs, and the future of AI science. Joseph did not sugar coat anything: accelerating the materials discovery pipeline is a hard problem. But it’s one that he strongly believes we need to invest in, for the future of consumer products, aerospace, computing, and defense, and get them into every day use:
+“We count it as a discovery when you pick up your phone and there’s a new material sitting inside of it.”
+How does Joseph plan on accelerating the rate of discovery? To understand this, it’s important to understand why this is such a hard problem in the first place. The first thing to keep in mind is that the material that is manufactured is far more than a chemical formula going into it. The process of mixing, annealing, growing, or generating the final material can result in wildly different outcomes. 1 The entire materials discovery process, both from early discovery to large scale manufacturing, needs to be understood and characterized.
+The Self-Driving Lab
+This philosophy has grown into a key insight at Radical AI: The construction of the self-driving lab. This lab is one that is not just automated, but in fact uses an “AI scientist” that combines scientific knowledge, computational techniques, and human intuition to generate and test hypotheses in an automated lab. Creating an AI scientist was key to making Radical’s self-driving labs work, since Joseph argues that no single AI model can one-shot materials.
+“In materials, the ground truth is the material itself. You have to be able to test it and characterize it.”
+Joseph talked at length about the self-driving labs at Radical. Joseph argues that experimental data is the true “moat” in this industry. An SDL functions as a closed-loop system where an AI scientist generates hypotheses, and automated robotics synthesize and characterize materials, running research campaigns in parallel rather than serially .
+The successes here were both on the automation side and on the science side. Radical has managed to scale their alloy discovery pipeline up to producing and characterizing 1200 alloys in six months — this nearly 10x speedup over the DARPA/GE MACH program that aimed to create 500 new alloys in a year. Joseph claims they can scale this up even more and estimates they can produce a hundred new alloys tested and characterized in a day. A truly new paradigm in high-throughput alloy experimentation.
+On the science side, their AI scientist proposed and tested 300 new materials, ten of which were found to have novel state-of-the-art properties that are already being further developed for commercial applications. The robustness of this first materials campaign reinforces Joseph’s claim that the moat is the lab and data.
+“It’s moved into elemental families or alloy families no one has ever published on before.”
+Interestingly, Radical’s AI scientist has made some novel discoveries, expanding into elements that just were not explored prior. This is fascinating from a scientific perspective, but it’s also important for helping reduce supply chain bottlenecks for vital industries!
+Joseph spent a lot of time in D.C. before founding Radical, and he’s clear-eyed about the competitive threat. China’s centralized model lets it stand up manufacturing hubs and immediately scale new materials from lab to production. We can’t replicate that, and Joseph is very clear we shouldn’t try. But we do need an answer. For Joseph, that means transforming the scientific workforce, investing in self-driving lab infrastructure at the national lab level, and leaning hard into public-private partnerships.
+“Now imagine every scientist in the United States doing 10 times the research output. That’s fundamental. That just changes the trajectory of discovery.”
+Before we close, we’d like to give a shout out to Joseph and Radical for publishing and open sourcing much of their internal tooling pipeline. This includes:
+TorchSim ( preprint , blog ): an open-source PyTorch-based MD simulation framework, which has been spun off into its own non-profit.
+MATRIX/MATRIX-PT ( preprint , blog ): An open-source dataset for benchmarking autonomous self-driving labs (MATRIX), along with with an open source model based upon this dataset (MATRIX-PT). We could talk about this extensively, but a fun data point is that improving reasoning in the area of materials also improved reasoning for biological systems! This is a truly unexpected result.
+Big shout-out to the Radical team for sharing their work!
+Materials discovery has been stuck on a 20–30 year timeline for generations. Joseph thinks that’s about to change, and Radical AI is putting that thesis to the test in the lab, one sample at a time.
+We had a great time talking with Joseph. We hope you give it a listen!
+Timestamps
+0:00 Introduction to the challenges of AI in material science
+0:52 Welcome and introduction to Joseph Krause and Radical AI
+1:38 Why Radical AI is different: The focus on experimental data and Self-Driving Labs (SDLs)
+6:19 The process: Candidate generation, synthesis, and characterization
+11:05 The application of exotic alloys in extreme environments (aerospace and defense)
+13:20 Barriers to entry: The slow process of qualification and manufacturing
+16:06 Supply chain constraints in material science
+19:24 Human-in-the-loop: Training the AI using scientific intuition
+20:35 The engineering challenges of automating a laboratory
+23:17 Defining the “Self-Driving Lab”: Research campaigns vs. just automation
+24:39 Mechanical challenges: Handling high-temperature samples
+27:41 Future scaling plans and the “Vertical Integration” strategy
+30:08 Validation timelines for high-tech industries (semiconductors, aerospace)
+31:47 The active learning loop and handling “negative results”
+35:32 AI exploring elemental families beyond human bias
+39:13 Throughput targets and the difference between AI and human exploration
+43:52 Why the dataset size is less critical than the quality of experimental feedback
+46:20 Addressing the lack of an “AlphaFold” for materials
+53:49 War stories from the lab: Building the infrastructure
+58:12 The shift in industry sentiment toward SDLs and tool interfaces
+1:01:14 Geopolitical considerations and the race in material science innovation
+1:06:12 Calls to action for ML and AI engineers: Rethinking the scientific stack
+1:09:53 The Matrix model and using VLM for scientific knowledge extraction
+1:13:10 Why Radical AI is open-sourcing their work
+1 This is somewhat at odds with what the biology and chemistry worlds deal with, where the molecule, protein, sequence, etc… uniquely defines a molecule. Distribution/synthesis is still wildly difficult, but you can at least have a well defined quantity to construct. For materials, the same chemical composition can result in dozens of different “microstructures” depending on the process to create the material.
+Discussion about this episode
+Comments Restacks
+Latent Space: The AI Engineer Podcast
+The podcast by and for AI Engineers! In 2025, over 10 million readers and listeners came to Latent Space to hear about news, papers and interviews in Software 3.0.
+We cover Foundation Models changing every domain in Code Generation, Multimodality, AI Agents, GPU Infra and more, directly from the founders, builders, and thinkers involved in pushing the cutting edge. Striving to give you both the definitive take on the Current Thing down to the first introduction to the tech you'll be using in the next 3 months! We break news and exclusive interviews from OpenAI, Anthropic, Gemini, Meta (Soumith Chintala), Sierra (Bret Taylor), tiny (George Hotz), Databricks/MosaicML (Jon Frankle), Modular (Chris Lattner), Answer.ai (Jeremy Howard), et al.
+Full show notes always on https://latent.space
+The podcast by and for AI Engineers! In 2025, over 10 million readers and listeners came to Latent Space to hear about news, papers and interviews in Software 3.0.
+We cover Foundation Models changing every domain in Code Generation, Multimodality, AI Agents, GPU Infra and more, directly from the founders, builders, and thinkers involved in pushing the cutting edge. Striving to give you both the definitive take on the Current Thing down to the first introduction to the tech you'll be using in the next 3 months! We break news and exclusive interviews from OpenAI, Anthropic, Gemini, Meta (Soumith Chintala), Sierra (Bret Taylor), tiny (George Hotz), Databricks/MosaicML (Jon Frankle), Modular (Chris Lattner), Answer.ai (Jeremy Howard), et al.
+Full show notes always on https://latent.space
+Listen on
+Substack App
+Apple Podcasts
+Spotify
+RSS Feed
+Appears in episode
+Brandon Anderson
+Recent Episodes
+Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks
+Jun 24
+Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan
+Jun 22
+The Professor of Outputmaxxing — Anjney Midha, AMP
+Jun 18
+Reality: The Final Eval — Lukas Petersson and Axel Backlund of Andon Labs
+Jun 4
+🔬Scaling Past Informal AI - Carina Hong, Axiom Math
+Jun 3 • RJ Honicky
+⚡️Satya Nadella: No Priors x Latent Space Crossover Special at Microsoft Build
+Jun 3
+GitHub's plan for Agents — Kyle Daigle, GitHub
+Jun 2
+
+## extraction_diagnostics
+
+- extraction_method: article
+- readability_score: 97
+- fetch_status: fetched-readable-text-article
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":10717,"paragraph_count":68,"sentence_count":62,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"article"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   On the Science pod, we’ve been covering a lot of the ground on how AI is revolutionizing STEM, but one of our favorite off the record topics since our launch is which field is harder to accelerate: math, bio, or physics? Today we’re back in Materials Science land with Radical — Unlike biological molecules that can be represented (and predicted!) by token strings, the success of materials involve many more macro complex variables like supply chains, microstructures, and manufacturing processes. I
+
+2. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Latent Space: The AI Engineer Podcast 🔬 The Self-Driving Lab — Joseph Krause, Radical AI 21 1× 0:00 Current time: 0:00 / Total time: -1:16:49 -1:16:49 Audio playback is not supported on your browser.
+
+3. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=medium｜confidence=high
+   🔬 The Self-Driving Lab — Joseph Krause, Radical AI Radical AI's Joseph Krause on why the moat in materials is the lab, not the model Brandon Anderson Jun 17, 2026 21 Share Transcript On the Science pod, we’ve been covering a lot of the ground on how AI is revolutionizing STEM, but one of our favorite off the record topics since our launch is which field is harder to accelerate: math , bio , or physics ?
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Today we’re back in Materials Science land with Radical — Unlike biological molecules that can be represented (and predicted!
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   ) by token strings, the success of materials involve many more macro complex variables like supply chains, microstructures, and manufacturing processes .
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   If you recall the LK99 drama of 2023 , while the basic ingredients were known, part of the confusion came from the lack of disclosure around manufacturing, and therefore defeated reproducibility.
+
+## business_elements
+
+- companies: Latent Space, OpenAI, Anthropic, Microsoft, GitHub, Meta, Apple
+- products: Agents, Gemini
+- people: 暂无公开信息
+- industries: 制造 / 工业, 开发者工具
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟
+- affected_departments: IT / 安全, 销售 / 客服
+- numbers: 21, 1, 0, 00, 16, 49, 17, 2026
+- quotes: one-shot / We count it as a discovery when you pick up your phone and there’s a new material sitting inside of it. / AI scientist / In materials, the ground truth is the material itself. You have to be able to test it and characterize it. / It’s moved into elemental families or alloy families no one has ever published on before.
+
+## evidence_seed
+
+- company_actions: 🔬 The Self-Driving Lab — Joseph Krause, Radical AI Radical AI's Joseph Krause on why the moat in materials is the lab, not the model Brandon Anderson Jun 17, 2026 21 Share Transcript On the Science pod, we’ve been covering a lot of the ground on how AI is revolutionizing STEM, but one of our favorite off the record topics since our launch is which field is harder to accelerate: math , bio , or physics ? / Today we’re back in Materials Science land with Radical — Unlike biological molecules that can be represented (and predicted! / If you recall the LK99 drama of 2023 , while the basic ingredients were known, part of the confusion came from the lack of disclosure around manufacturing, and therefore defeated reproducibility.
+- case_details: 暂无公开信息
+- workflow_changes: On the Science pod, we’ve been covering a lot of the ground on how AI is revolutionizing STEM, but one of our favorite off the record topics since our launch is which field is harder to accelerate: math, bio, or physics? Today we’re back in Materials Science land with Radical — Unlike biological molecules that can be represented (and predicted!) by token strings, the success of materials involve many more macro complex variables like supply chains, microstructures, and manufacturing processes. I / Latent Space: The AI Engineer Podcast 🔬 The Self-Driving Lab — Joseph Krause, Radical AI 21 1× 0:00 Current time: 0:00 / Total time: -1:16:49 -1:16:49 Audio playback is not supported on your browser. / ) by token strings, the success of materials involve many more macro complex variables like supply chains, microstructures, and manufacturing processes .
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- signal_card_candidate: true
+- relationship_graph_input: true
+- business_change: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+On the Science pod, we’ve been covering a lot of the ground on how AI is revolutionizing STEM, but one of our favorite off the record topics since our launch is which field is harder to accelerate: math, bio, or physics? Today we’re back in Materials Science land with Radical — Unlike biological molecules that can be represented (and predicted!) by token strings, the success of materials involve many more macro complex variables like supply chains, microstructures, and manufacturing processes. I
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 social_discovery 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

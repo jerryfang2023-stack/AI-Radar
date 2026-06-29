@@ -1,0 +1,275 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-017",
+  "title": "Introducing Modelplane: the control plane for AI inference · Modelplane Blog",
+  "original_url": "https://modelplane.ai/blog/open-control-plane-for-inference",
+  "canonical_url": "https://modelplane.ai/blog/open-control-plane-for-inference",
+  "source_name": "keyword search / Exa",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "a_media_gdelt",
+  "search_path_label": "A 级媒体 / GDELT 路径",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-06-23T05:03:12.000Z",
+  "collected_at": "2026-06-29T05:41:17.806Z",
+  "language": "mixed",
+  "full_text": "← All posts\nToday we're open sourcing Modelplane, a control plane for AI inference. You\ninstall it in your own environment, and it operates your GPU clusters as one\ninference fleet: provisioning clusters, placing models across them, autoscaling\nreplicas, caching weights, and routing requests through a single OpenAI-compatible\ngateway.\nIt's built on Crossplane , and it runs any model on any\nserving engine on any infrastructure, from a single GPU to disaggregated,\nmulti-node serving.\nThe shift toward open inference #\nOpen-weight models changed who runs AI. They can be post-trained, including with\nreinforcement learning, to compete with frontier models, and they put cost,\ngovernance, and data sovereignty back under your own control. So inference is\nmoving outward, from the labs and hyperscalers that served everyone through an API\nto a much larger population of organizations running it on their own hardware:\nneoclouds turning it into a business, regulated and sovereign enterprises keeping\nit inside their own walls, and AI-native companies bringing their inference bills\nunder control.\nThe open source community moved fast to meet this, with projects emerging at every layer: serving\nengines like vLLM, SGLang, and TensorRT-LLM; schedulers, gateways, and routers;\nand multi-node serving and weight distribution. And Kubernetes is emerging as the convergence\npoint underneath all of it. The cloud-native community is making it a first-class platform\nfor AI workloads, the major inference projects are standardizing on it, and neoclouds\nlike Baseten and CoreWeave run their operations on it.\nInference is a fleet problem #\nAlmost all of those open source projects, though, focus on serving inference\nwithin a single cluster, and inference almost never stays in one. Capacity is\nscattered across hardware types, providers, and regions, sovereignty and compliance\npin workloads to particular places, and large clusters concentrate failure. So\ninference quickly grows into a fleet, and the hard problems move above the cluster: placing\nmodels across the available capacity, failing over across clouds and regions,\nrouting by cost and sovereignty, provisioning capacity, and caching and moving\nweights, all managed as one inference platform.\nThe labs, the hyperscalers, and the managed providers have all built a system to\ndo this, and they've all built it privately. The open one didn't exist.\nIntroducing Modelplane #\nModelplane reconciles model deployments across a fleet of clusters spanning cloud, neocloud, and on-premise.\nThis is why we built Modelplane. We've been watching Crossplane adopters build\ninference platforms across clusters and operate it at large scale,\ncomposing the clusters, the GPUs, the serving stacks, and the routing into their\nown control planes. We wanted to standardize those patterns, make\nthem far easier to get started with, and contribute the result back to the\ncommunity as open infrastructure.\nModelplane sits above your inference clusters and operates them as one inference\nplatform, reconciling the whole fleet toward the state you declare. It does for the\nfleet what Kubernetes does for the cluster: platform teams and developers describe\nwhat they want as Kubernetes resources, and Modelplane composes the clusters,\nplaces the models, and exposes the endpoints to match.\nModelplane API #\nThe Modelplane API splits along the two teams that actually do this work, and fills\nin everything between them.\nPlatform teams define the inference platform. They describe the unified entry\npoint (an InferenceGateway ), the hardware shapes they offer (an\nInferenceClass ), and the clusters that make up the fleet (an\nInferenceCluster ), and Modelplane provisions and reconciles them:\nplatform.yaml apiVersion : modelplane.ai/v1alpha1\nkind : InferenceClass # a hardware shape\nmetadata :\nname : gke-l4-1x\nspec :\nprovisioning :\nprovider : GKE\ngke :\nmachineType : g2-standard-8\naccelerator : { type : nvidia-l4 , count : 1 }\ndevices :\n- name : gpu\nclaim : DRA\ndriver : gpu.nvidia.com\ncount : 1\ncapacity :\nmemory : { value : \"23034Mi\" } # the L4's usable VRAM\n---\napiVersion : modelplane.ai/v1alpha1\nkind : InferenceCluster # a cluster in the fleet, provisioned or BYO\nmetadata :\nname : starter\nlabels :\nmodelplane.ai/region : us-central\nspec :\ncluster :\nsource : GKE\ngke : { project : my-gcp-project , region : us-central1 }\nnodePools :\n- name : gpu-l4\nclassName : gke-l4-1x\nminNodeCount : 1\nmaxNodeCount : 2\n---\napiVersion : modelplane.ai/v1alpha1\nkind : InferenceGateway # the unified, OpenAI-compatible entry point\nmetadata :\nname : default\nspec :\nbackend : Traefik\ntraefik :\nversion : \"40.2.0\"\nML and development teams deploy models. They declare a ModelDeployment (the\nmodel, its engine, serving topology, and a replica count) and a ModelService to expose it as one\nstable, OpenAI-compatible endpoint:\nmodel.yaml apiVersion : modelplane.ai/v1alpha1\nkind : ModelDeployment # the model to serve\nmetadata :\nname : qwen-demo\nnamespace : ml-team\nspec :\nreplicas : 1\nengines :\n- name : qwen\nmembers :\n- role : Standalone\nnodeSelector :\ndevices :\n- name : gpu\ncount : 1\nselectors : # any GPU with >= 20Gi VRAM\n- cel : device.capacity[\"gpu.nvidia.com\"].memory.compareTo(quantity(\"20Gi\")) >= 0\ntemplate :\nspec :\ncontainers :\n- name : engine\nimage : vllm/vllm-openai:v0.7.3\nargs : [ \"--model=Qwen/Qwen2.5-0.5B-Instruct\" ]\n---\napiVersion : modelplane.ai/v1alpha1\nkind : ModelService # one OpenAI-compatible endpoint\nmetadata :\nname : qwen\nnamespace : ml-team\nspec :\nendpoints :\n- selector :\nmatchLabels :\nmodelplane.ai/deployment : qwen-demo\nThat's the whole interface. Developers never name a cluster: they describe the\nhardware a replica needs and Modelplane's scheduler places it on a cluster and\npool that fits, then hands off to that cluster's own scheduler and DRA to bind the\nGPUs. Engine flags pass through verbatim, so any container-based engine and any\ntopology works without a change to Modelplane.\nModelplane capabilities #\nOnce those resources exist, five things run continuously across the fleet:\nProvisioning. Create clusters and GPU node pools on hyperscalers, neoclouds or\nbring your own on any Kubernetes, and install the serving stack on each.\nScheduling. A two-level scheduler places each replica on a cluster and pool\nwhose hardware matches using DRA and cel expressions, accounting capacity at\nthe node level so it never overcommits.\nAutoscaling. Scale replicas through the standard Kubernetes scale\nsubresource, so kubectl scale and a KEDA ScaledObject work out of the box.\nRouting. One OpenAI-compatible ModelService over many replicas, with\nweighted traffic for canary and A/B rollouts and optional fallback to an\nexternal provider.\nCaching. Stage model weights on cluster storage once, so serving pods read\nthem locally instead of re-downloading on every start.\nModelplane stays neutral across models, engines, accelerators, clouds, and serving stacks,\nand composes them rather than replacing them.\nWe're building in the open #\nModelplane is early, and we're releasing it at v0.1 so we can build it in the open,\nwith the community. It's Apache 2, and we plan to donate it to a neutral\nopen source foundation later this year, because a control plane that sits above the\necosystem should belong to the ecosystem.\nIf you're running inference yourself, planning to, or hosting accelerators\n(any vendor, any cloud, on-prem), we'd love for you to join us. Modelplane is live at\ngithub.com/modelplaneai/modelplane , with a getting-started\nguide at docs.modelplane.ai/getting-started that takes you from nothing to a\nlive endpoint in about 45 minutes. Come find us in our Slack ,\nopen issues, contribute, and help us shape it.\nKubernetes became the standard control plane for compute. With Modelplane, we’re extending\nthat same approach to AI inference across fleets of cloud, neocloud and datacenters.\nIntelligence is becoming the most important thing we build, and it shouldn’t be something\nyou can only rent. Everyone should be able to own theirs.\nHelp us build that future.\nShare X LinkedIn Copy link\nView source\nBassam Tabbara Founder & CEO, Upbound\nBassam is the founder and CEO of Upbound and the creator of Crossplane and Rook, two CNCF Graduated projects. He's spent the last two decades working on cloud and infrastructure, and is now bringing that work to AI inference with Modelplane.\nMore posts →",
+  "clean_text": "← All posts\nToday we're open sourcing Modelplane, a control plane for AI inference. You\ninstall it in your own environment, and it operates your GPU clusters as one\ninference fleet: provisioning clusters, placing models across them, autoscaling\nreplicas, caching weights, and routing requests through a single OpenAI-compatible\ngateway.\nIt's built on Crossplane , and it runs any model on any\nserving engine on any infrastructure, from a single GPU to disaggregated,\nmulti-node serving.\nThe shift toward open inference #\nOpen-weight models changed who runs AI. They can be post-trained, including with\nreinforcement learning, to compete with frontier models, and they put cost,\ngovernance, and data sovereignty back under your own control. So inference is\nmoving outward, from the labs and hyperscalers that served everyone through an API\nto a much larger population of organizations running it on their own hardware:\nneoclouds turning it into a business, regulated and sovereign enterprises keeping\nit inside their own walls, and AI-native companies bringing their inference bills\nunder control.\nThe open source community moved fast to meet this, with projects emerging at every layer: serving\nengines like vLLM, SGLang, and TensorRT-LLM; schedulers, gateways, and routers;\nand multi-node serving and weight distribution. And Kubernetes is emerging as the convergence\npoint underneath all of it. The cloud-native community is making it a first-class platform\nfor AI workloads, the major inference projects are standardizing on it, and neoclouds\nlike Baseten and CoreWeave run their operations on it.\nInference is a fleet problem #\nAlmost all of those open source projects, though, focus on serving inference\nwithin a single cluster, and inference almost never stays in one. Capacity is\nscattered across hardware types, providers, and regions, sovereignty and compliance\npin workloads to particular places, and large clusters concentrate failure. So\ninference quickly grows into a fleet, and the hard problems move above the cluster: placing\nmodels across the available capacity, failing over across clouds and regions,\nrouting by cost and sovereignty, provisioning capacity, and caching and moving\nweights, all managed as one inference platform.\nThe labs, the hyperscalers, and the managed providers have all built a system to\ndo this, and they've all built it privately. The open one didn't exist.\nIntroducing Modelplane #\nModelplane reconciles model deployments across a fleet of clusters spanning cloud, neocloud, and on-premise.\nThis is why we built Modelplane. We've been watching Crossplane adopters build\ninference platforms across clusters and operate it at large scale,\ncomposing the clusters, the GPUs, the serving stacks, and the routing into their\nown control planes. We wanted to standardize those patterns, make\nthem far easier to get started with, and contribute the result back to the\ncommunity as open infrastructure.\nModelplane sits above your inference clusters and operates them as one inference\nplatform, reconciling the whole fleet toward the state you declare. It does for the\nfleet what Kubernetes does for the cluster: platform teams and developers describe\nwhat they want as Kubernetes resources, and Modelplane composes the clusters,\nplaces the models, and exposes the endpoints to match.\nModelplane API #\nThe Modelplane API splits along the two teams that actually do this work, and fills\nin everything between them.\nPlatform teams define the inference platform. They describe the unified entry\npoint (an InferenceGateway ), the hardware shapes they offer (an\nInferenceClass ), and the clusters that make up the fleet (an\nInferenceCluster ), and Modelplane provisions and reconciles them:\nplatform.yaml apiVersion : modelplane.ai/v1alpha1\nkind : InferenceClass # a hardware shape\nmetadata :\nname : gke-l4-1x\nspec :\nprovisioning :\nprovider : GKE\ngke :\nmachineType : g2-standard-8\naccelerator : { type : nvidia-l4 , count : 1 }\ndevices :\n- name : gpu\nclaim : DRA\ndriver : gpu.nvidia.com\ncount : 1\ncapacity :\nmemory : { value : \"23034Mi\" } # the L4's usable VRAM\n---\napiVersion : modelplane.ai/v1alpha1\nkind : InferenceCluster # a cluster in the fleet, provisioned or BYO\nmetadata :\nname : starter\nlabels :\nmodelplane.ai/region : us-central\nspec :\ncluster :\nsource : GKE\ngke : { project : my-gcp-project , region : us-central1 }\nnodePools :\n- name : gpu-l4\nclassName : gke-l4-1x\nminNodeCount : 1\nmaxNodeCount : 2\n---\napiVersion : modelplane.ai/v1alpha1\nkind : InferenceGateway # the unified, OpenAI-compatible entry point\nmetadata :\nname : default\nspec :\nbackend : Traefik\ntraefik :\nversion : \"40.2.0\"\nML and development teams deploy models. They declare a ModelDeployment (the\nmodel, its engine, serving topology, and a replica count) and a ModelService to expose it as one\nstable, OpenAI-compatible endpoint:\nmodel.yaml apiVersion : modelplane.ai/v1alpha1\nkind : ModelDeployment # the model to serve\nmetadata :\nname : qwen-demo\nnamespace : ml-team\nspec :\nreplicas : 1\nengines :\n- name : qwen\nmembers :\n- role : Standalone\nnodeSelector :\ndevices :\n- name : gpu\ncount : 1\nselectors : # any GPU with >= 20Gi VRAM\n- cel : device.capacity[\"gpu.nvidia.com\"].memory.compareTo(quantity(\"20Gi\")) >= 0\ntemplate :\nspec :\ncontainers :\n- name : engine\nimage : vllm/vllm-openai:v0.7.3\nargs : [ \"--model=Qwen/Qwen2.5-0.5B-Instruct\" ]\n---\napiVersion : modelplane.ai/v1alpha1\nkind : ModelService # one OpenAI-compatible endpoint\nmetadata :\nname : qwen\nnamespace : ml-team\nspec :\nendpoints :\n- selector :\nmatchLabels :\nmodelplane.ai/deployment : qwen-demo\nThat's the whole interface. Developers never name a cluster: they describe the\nhardware a replica needs and Modelplane's scheduler places it on a cluster and\npool that fits, then hands off to that cluster's own scheduler and DRA to bind the\nGPUs. Engine flags pass through verbatim, so any container-based engine and any\ntopology works without a change to Modelplane.\nModelplane capabilities #\nOnce those resources exist, five things run continuously across the fleet:\nProvisioning. Create clusters and GPU node pools on hyperscalers, neoclouds or\nbring your own on any Kubernetes, and install the serving stack on each.\nScheduling. A two-level scheduler places each replica on a cluster and pool\nwhose hardware matches using DRA and cel expressions, accounting capacity at\nthe node level so it never overcommits.\nAutoscaling. Scale replicas through the standard Kubernetes scale\nsubresource, so kubectl scale and a KEDA ScaledObject work out of the box.\nRouting. One OpenAI-compatible ModelService over many replicas, with\nweighted traffic for canary and A/B rollouts and optional fallback to an\nexternal provider.\nCaching. Stage model weights on cluster storage once, so serving pods read\nthem locally instead of re-downloading on every start.\nModelplane stays neutral across models, engines, accelerators, clouds, and serving stacks,\nand composes them rather than replacing them.\nWe're building in the open #\nModelplane is early, and we're releasing it at v0.1 so we can build it in the open,\nwith the community. It's Apache 2, and we plan to donate it to a neutral\nopen source foundation later this year, because a control plane that sits above the\necosystem should belong to the ecosystem.\nIf you're running inference yourself, planning to, or hosting accelerators\n(any vendor, any cloud, on-prem), we'd love for you to join us. Modelplane is live at\ngithub.com/modelplaneai/modelplane , with a getting-started\nguide at docs.modelplane.ai/getting-started that takes you from nothing to a\nlive endpoint in about 45 minutes. Come find us in our Slack ,\nopen issues, contribute, and help us shape it.\nKubernetes became the standard control plane for compute. With Modelplane, we’re extending\nthat same approach to AI inference across fleets of cloud, neocloud and datacenters.\nIntelligence is becoming the most important thing we build, and it shouldn’t be something\nyou can only rent. Everyone should be able to own theirs.\nHelp us build that future.\nShare X LinkedIn Copy link\nView source\nBassam Tabbara Founder & CEO, Upbound\nBassam is the founder and CEO of Upbound and the creator of Crossplane and Rook, two CNCF Graduated projects. He's spent the last two decades working on cloud and infrastructure, and is now bringing that work to AI inference with Modelplane.\nMore posts →",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-017-introducing-modelplane-the-control-plane-for-ai-inference-modelplane-b.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-017-introducing-modelplane-the-control-plane-for-ai-inference-modelplane-b.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 8351,
+    "paragraph_count": 114,
+    "sentence_count": 49,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0018,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 8351,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "3050da9acd33c80c",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "5871e0aa3083ac48",
+  "content_hash": "3050da9acd33c80c",
+  "full_text_hash": "3050da9acd33c80c",
+  "semantic_hash": "208c3794a41f26aa",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-23T05:03:12.000Z",
+  "last_seen_at": "2026-06-29T05:41:17.806Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "Today we're open sourcing Modelplane, a control plane for AI inference. You install it in your own environment, and it operates your GPU clusters as one inference fleet: provisioning clusters, placing models across them, autoscaling replicas, caching weights, and routing requests through a single OpenAI-compatible gateway. ... Open-weight models changed who runs AI. They can be post-trained, including with reinforcement learning, to compete with frontier models, and they put cost, governance, and data sovereignty b",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "← All posts Today we're open sourcing Modelplane, a control plane for AI inference.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "You install it in your own environment, and it operates your GPU clusters as one inference fleet: provisioning clusters, placing models across them, autoscaling replicas, caching weights, and routing requests through a single OpenAI-compatible gateway.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "It's built on Crossplane , and it runs any model on any serving engine on any infrastructure, from a single GPU to disaggregated, multi-node serving.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The shift toward open inference # Open-weight models changed who runs AI.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "They can be post-trained, including with reinforcement learning, to compete with frontier models, and they put cost, governance, and data sovereignty back under your own control.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Exa",
+      "OpenAI",
+      "GitHub",
+      "Nvidia"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算"
+    ],
+    "numbers": [
+      "2026",
+      "1",
+      "4",
+      "1x",
+      "2",
+      "8",
+      "23034M",
+      "1\nm"
+    ],
+    "quotes": [
+      "gpu.nvidia.com",
+      ")) >= 0\ntemplate :\nspec :\ncontainers :\n- name : engine\nimage : vllm/vllm-openai:v0.7.3\nargs : [ "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Today we're open sourcing Modelplane, a control plane for AI inference. You install it in your own environment, and it operates your GPU clusters as one inference fleet: provisioning clusters, placing models across them, autoscaling replicas, caching weights, and routing requests through a single OpenAI-compatible gateway. ... Open-weight models changed who runs AI. They can be post-trained, including with reinforcement learning, to compete with frontier models, and they put cost, governance, and data sovereignty b",
+      "← All posts Today we're open sourcing Modelplane, a control plane for AI inference.",
+      "You install it in your own environment, and it operates your GPU clusters as one inference fleet: provisioning clusters, placing models across them, autoscaling replicas, caching weights, and routing requests through a single OpenAI-compatible gateway."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "relationship_graph_input": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Introducing Modelplane: the control plane for AI inference · Modelplane Blog\n\n- raw_id: R-017\n- original_url: https://modelplane.ai/blog/open-control-plane-for-inference\n- source_name: keyword search / Exa\n- collected_at: 2026-06-29T05:41:17.806Z\n\n## clean_text\n\n← All posts\nToday we're open sourcing Modelplane, a control plane for AI inference. You\ninstall it in your own environment, and it operates your GPU clusters as one\ninference fleet: provisioning clusters, placing models across them, autoscaling\nreplicas, caching weights, and routing requests through a single OpenAI-compatible\ngateway.\nIt's built on Crossplane , and it runs any model on any\nserving engine on any infrastructure, from a single GPU to disaggregated,\nmulti-node serving.\nThe shift toward open inference #\nOpen-weight models changed who runs AI. They can be post-trained, including with\nreinforcement learning, to compete with frontier models, and they put cost,\ngovernance, and data sovereignty back under your own control. So inference is\nmoving outward, from the labs and hyperscalers that served everyone through an API\nto a much larger population of organizations running it on their own hardware:\nneoclouds turning it into a business, regulated and sovereign enterprises keeping\nit inside their own walls, and AI-native companies bringing their inference bills\nunder control.\nThe open source community moved fast to meet this, with projects emerging at every layer: serving\nengines like vLLM, SGLang, and TensorRT-LLM; schedulers, gateways, and routers;\nand multi-node serving and weight distribution. And Kubernetes is emerging as the convergence\npoint underneath all of it. The cloud-native community is making it a first-class platform\nfor AI workloads, the major inference projects are standardizing on it, and neoclouds\nlike Baseten and CoreWeave run their operations on it.\nInference is a fleet problem #\nAlmost all of those open source projects, though, focus on serving inference\nwithin a single cluster, and inference almost never stays in one. Capacity is\nscattered across hardware types, providers, and regions, sovereignty and compliance\npin workloads to particular places, and large clusters concentrate failure. So\ninference quickly grows into a fleet, and the hard problems move above the cluster: placing\nmodels across the available capacity, failing over across clouds and regions,\nrouting by cost and sovereignty, provisioning capacity, and caching and moving\nweights, all managed as one inference platform.\nThe labs, the hyperscalers, and the managed providers have all built a system to\ndo this, and they've all built it privately. The open one didn't exist.\nIntroducing Modelplane #\nModelplane reconciles model deployments across a fleet of clusters spanning cloud, neocloud, and on-premise.\nThis is why we built Modelplane. We've been watching Crossplane adopters build\ninference platforms across clusters and operate it at large scale,\ncomposing the clusters, the GPUs, the serving stacks, and the routing into their\nown control planes. We wanted to standardize those patterns, make\nthem far easier to get started with, and contribute the result back to the\ncommunity as open infrastructure.\nModelplane sits above your inference clusters and operates them as one inference\nplatform, reconciling the whole fleet toward the state you declare. It does for the\nfleet what Kubernetes does for the cluster: platform teams and developers describe\nwhat they want as Kubernetes resources, and Modelplane composes the clusters,\nplaces the models, and exposes the endpoints to match.\nModelplane API #\nThe Modelplane API splits along the two teams that actually do this work, and fills\nin everything between them.\nPlatform teams define the inference platform. They describe the unified entry\npoint (an InferenceGateway ), the hardware shapes they offer (an\nInferenceClass ), and the clusters that make up the fleet (an\nInferenceCluster ), and Modelplane provisions and reconciles them:\nplatform.yaml apiVersion : modelplane.ai/v1alpha1\nkind : InferenceClass # a hardware shape\nmetadata :\nname : gke-l4-1x\nspec :\nprovisioning :\nprovider : GKE\ngke :\nmachineType : g2-standard-8\naccelerator : { type : nvidia-l4 , count : 1 }\ndevices :\n- name : gpu\nclaim : DRA\ndriver : gpu.nvidia.com\ncount : 1\ncapacity :\nmemory : { value : \"23034Mi\" } # the L4's usable VRAM\n---\napiVersion : modelplane.ai/v1alpha1\nkind : InferenceCluster # a cluster in the fleet, provisioned or BYO\nmetadata :\nname : starter\nlabels :\nmodelplane.ai/region : us-central\nspec :\ncluster :\nsource : GKE\ngke : { project : my-gcp-project , region : us-central1 }\nnodePools :\n- name : gpu-l4\nclassName : gke-l4-1x\nminNodeCount : 1\nmaxNodeCount : 2\n---\napiVersion : modelplane.ai/v1alpha1\nkind : InferenceGateway # the unified, OpenAI-compatible entry point\nmetadata :\nname : default\nspec :\nbackend : Traefik\ntraefik :\nversion : \"40.2.0\"\nML and development teams deploy models. They declare a ModelDeployment (the\nmodel, its engine, serving topology, and a replica count) and a ModelService to expose it as one\nstable, OpenAI-compatible endpoint:\nmodel.yaml apiVersion : modelplane.ai/v1alpha1\nkind : ModelDeployment # the model to serve\nmetadata :\nname : qwen-demo\nnamespace : ml-team\nspec :\nreplicas : 1\nengines :\n- name : qwen\nmembers :\n- role : Standalone\nnodeSelector :\ndevices :\n- name : gpu\ncount : 1\nselectors : # any GPU with >= 20Gi VRAM\n- cel : device.capacity[\"gpu.nvidia.com\"].memory.compareTo(quantity(\"20Gi\")) >= 0\ntemplate :\nspec :\ncontainers :\n- name : engine\nimage : vllm/vllm-openai:v0.7.3\nargs : [ \"--model=Qwen/Qwen2.5-0.5B-Instruct\" ]\n---\napiVersion : modelplane.ai/v1alpha1\nkind : ModelService # one OpenAI-compatible endpoint\nmetadata :\nname : qwen\nnamespace : ml-team\nspec :\nendpoints :\n- selector :\nmatchLabels :\nmodelplane.ai/deployment : qwen-demo\nThat's the whole interface. Developers never name a cluster: they describe the\nhardware a replica needs and Modelplane's scheduler places it on a cluster and\npool that fits, then hands off to that cluster's own scheduler and DRA to bind the\nGPUs. Engine flags pass through verbatim, so any container-based engine and any\ntopology works without a business_change to Modelplane.\nModelplane capabilities #\nOnce those resources exist, five things run continuously across the fleet:\nProvisioning. Create clusters and GPU node pools on hyperscalers, neoclouds or\nbring your own on any Kubernetes, and install the serving stack on each.\nScheduling. A two-level scheduler places each replica on a cluster and pool\nwhose hardware matches using DRA and cel expressions, accounting capacity at\nthe node level so it never overcommits.\nAutoscaling. Scale replicas through the standard Kubernetes scale\nsubresource, so kubectl scale and a KEDA ScaledObject work out of the box.\nRouting. One OpenAI-compatible ModelService over many replicas, with\nweighted traffic for canary and A/B rollouts and optional fallback to an\nexternal provider.\nCaching. Stage model weights on cluster storage once, so serving pods read\nthem locally instead of re-downloading on every start.\nModelplane stays neutral across models, engines, accelerators, clouds, and serving stacks,\nand composes them rather than replacing them.\nWe're building in the open #\nModelplane is early, and we're releasing it at v0.1 so we can build it in the open,\nwith the community. It's Apache 2, and we plan to donate it to a neutral\nopen source foundation later this year, because a control plane that sits above the\necosystem should belong to the ecosystem.\nIf you're running inference yourself, planning to, or hosting accelerators\n(any vendor, any cloud, on-prem), we'd love for you to join us. Modelplane is live at\ngithub.com/modelplaneai/modelplane , with a getting-started\nguide at docs.modelplane.ai/getting-started that takes you from nothing to a\nlive endpoint in about 45 minutes. Come find us in our Slack ,\nopen issues, contribute, and help us shape it.\nKubernetes became the standard control plane for compute. With Modelplane, we’re extending\nthat same approach to AI inference across fleets of cloud, neocloud and datacenters.\nIntelligence is becoming the most important thing we build, and it shouldn’t be something\nyou can only rent. Everyone should be able to own theirs.\nHelp us build that future.\nShare X LinkedIn Copy link\nView source\nBassam Tabbara Founder & CEO, Upbound\nBassam is the founder and CEO of Upbound and the creator of Crossplane and Rook, two CNCF Graduated projects. He's spent the last two decades working on cloud and infrastructure, and is now bringing that work to AI inference with Modelplane.\nMore posts →\n\n## full_text\n\n← All posts\nToday we're open sourcing Modelplane, a control plane for AI inference. You\ninstall it in your own environment, and it operates your GPU clusters as one\ninference fleet: provisioning clusters, placing models across them, autoscaling\nreplicas, caching weights, and routing requests through a single OpenAI-compatible\ngateway.\nIt's built on Crossplane , and it runs any model on any\nserving engine on any infrastructure, from a single GPU to disaggregated,\nmulti-node serving.\nThe shift toward open inference #\nOpen-weight models changed who runs AI. They can be post-trained, including with\nreinforcement learning, to compete with frontier models, and they put cost,\ngovernance, and data sovereignty back under your own control. So inference is\nmoving outward, from the labs and hyperscalers that served everyone through an API\nto a much larger population of organizations running it on their own hardware:\nneoclouds turning it into a business, regulated and sovereign enterprises keeping\nit inside their own walls, and AI-native companies bringing their inference bills\nunder control.\nThe open source community moved fast to meet this, with projects emerging at every layer: serving\nengines like vLLM, SGLang, and TensorRT-LLM; schedulers, gateways, and routers;\nand multi-node serving and weight distribution. And Kubernetes is emerging as the convergence\npoint underneath all of it. The cloud-native community is making it a first-class platform\nfor AI workloads, the major inference projects are standardizing on it, and neoclouds\nlike Baseten and CoreWeave run their operations on it.\nInference is a fleet problem #\nAlmost all of those open source projects, though, focus on serving inference\nwithin a single cluster, and inference almost never stays in one. Capacity is\nscattered across hardware types, providers, and regions, sovereignty and compliance\npin workloads to particular places, and large clusters concentrate failure. So\ninference quickly grows into a fleet, and the hard problems move above the cluster: placing\nmodels across the available capacity, failing over across clouds and regions,\nrouting by cost and sovereignty, provisioning capacity, and caching and moving\nweights, all managed as one inference platform.\nThe labs, the hyperscalers, and the managed providers have all built a system to\ndo this, and they've all built it privately. The open one didn't exist.\nIntroducing Modelplane #\nModelplane reconciles model deployments across a fleet of clusters spanning cloud, neocloud, and on-premise.\nThis is why we built Modelplane. We've been watching Crossplane adopters build\ninference platforms across clusters and operate it at large scale,\ncomposing the clusters, the GPUs, the serving stacks, and the routing into their\nown control planes. We wanted to standardize those patterns, make\nthem far easier to get started with, and contribute the result back to the\ncommunity as open infrastructure.\nModelplane sits above your inference clusters and operates them as one inference\nplatform, reconciling the whole fleet toward the state you declare. It does for the\nfleet what Kubernetes does for the cluster: platform teams and developers describe\nwhat they want as Kubernetes resources, and Modelplane composes the clusters,\nplaces the models, and exposes the endpoints to match.\nModelplane API #\nThe Modelplane API splits along the two teams that actually do this work, and fills\nin everything between them.\nPlatform teams define the inference platform. They describe the unified entry\npoint (an InferenceGateway ), the hardware shapes they offer (an\nInferenceClass ), and the clusters that make up the fleet (an\nInferenceCluster ), and Modelplane provisions and reconciles them:\nplatform.yaml apiVersion : modelplane.ai/v1alpha1\nkind : InferenceClass # a hardware shape\nmetadata :\nname : gke-l4-1x\nspec :\nprovisioning :\nprovider : GKE\ngke :\nmachineType : g2-standard-8\naccelerator : { type : nvidia-l4 , count : 1 }\ndevices :\n- name : gpu\nclaim : DRA\ndriver : gpu.nvidia.com\ncount : 1\ncapacity :\nmemory : { value : \"23034Mi\" } # the L4's usable VRAM\n---\napiVersion : modelplane.ai/v1alpha1\nkind : InferenceCluster # a cluster in the fleet, provisioned or BYO\nmetadata :\nname : starter\nlabels :\nmodelplane.ai/region : us-central\nspec :\ncluster :\nsource : GKE\ngke : { project : my-gcp-project , region : us-central1 }\nnodePools :\n- name : gpu-l4\nclassName : gke-l4-1x\nminNodeCount : 1\nmaxNodeCount : 2\n---\napiVersion : modelplane.ai/v1alpha1\nkind : InferenceGateway # the unified, OpenAI-compatible entry point\nmetadata :\nname : default\nspec :\nbackend : Traefik\ntraefik :\nversion : \"40.2.0\"\nML and development teams deploy models. They declare a ModelDeployment (the\nmodel, its engine, serving topology, and a replica count) and a ModelService to expose it as one\nstable, OpenAI-compatible endpoint:\nmodel.yaml apiVersion : modelplane.ai/v1alpha1\nkind : ModelDeployment # the model to serve\nmetadata :\nname : qwen-demo\nnamespace : ml-team\nspec :\nreplicas : 1\nengines :\n- name : qwen\nmembers :\n- role : Standalone\nnodeSelector :\ndevices :\n- name : gpu\ncount : 1\nselectors : # any GPU with >= 20Gi VRAM\n- cel : device.capacity[\"gpu.nvidia.com\"].memory.compareTo(quantity(\"20Gi\")) >= 0\ntemplate :\nspec :\ncontainers :\n- name : engine\nimage : vllm/vllm-openai:v0.7.3\nargs : [ \"--model=Qwen/Qwen2.5-0.5B-Instruct\" ]\n---\napiVersion : modelplane.ai/v1alpha1\nkind : ModelService # one OpenAI-compatible endpoint\nmetadata :\nname : qwen\nnamespace : ml-team\nspec :\nendpoints :\n- selector :\nmatchLabels :\nmodelplane.ai/deployment : qwen-demo\nThat's the whole interface. Developers never name a cluster: they describe the\nhardware a replica needs and Modelplane's scheduler places it on a cluster and\npool that fits, then hands off to that cluster's own scheduler and DRA to bind the\nGPUs. Engine flags pass through verbatim, so any container-based engine and any\ntopology works without a business_change to Modelplane.\nModelplane capabilities #\nOnce those resources exist, five things run continuously across the fleet:\nProvisioning. Create clusters and GPU node pools on hyperscalers, neoclouds or\nbring your own on any Kubernetes, and install the serving stack on each.\nScheduling. A two-level scheduler places each replica on a cluster and pool\nwhose hardware matches using DRA and cel expressions, accounting capacity at\nthe node level so it never overcommits.\nAutoscaling. Scale replicas through the standard Kubernetes scale\nsubresource, so kubectl scale and a KEDA ScaledObject work out of the box.\nRouting. One OpenAI-compatible ModelService over many replicas, with\nweighted traffic for canary and A/B rollouts and optional fallback to an\nexternal provider.\nCaching. Stage model weights on cluster storage once, so serving pods read\nthem locally instead of re-downloading on every start.\nModelplane stays neutral across models, engines, accelerators, clouds, and serving stacks,\nand composes them rather than replacing them.\nWe're building in the open #\nModelplane is early, and we're releasing it at v0.1 so we can build it in the open,\nwith the community. It's Apache 2, and we plan to donate it to a neutral\nopen source foundation later this year, because a control plane that sits above the\necosystem should belong to the ecosystem.\nIf you're running inference yourself, planning to, or hosting accelerators\n(any vendor, any cloud, on-prem), we'd love for you to join us. Modelplane is live at\ngithub.com/modelplaneai/modelplane , with a getting-started\nguide at docs.modelplane.ai/getting-started that takes you from nothing to a\nlive endpoint in about 45 minutes. Come find us in our Slack ,\nopen issues, contribute, and help us shape it.\nKubernetes became the standard control plane for compute. With Modelplane, we’re extending\nthat same approach to AI inference across fleets of cloud, neocloud and datacenters.\nIntelligence is becoming the most important thing we build, and it shouldn’t be something\nyou can only rent. Everyone should be able to own theirs.\nHelp us build that future.\nShare X LinkedIn Copy link\nView source\nBassam Tabbara Founder & CEO, Upbound\nBassam is the founder and CEO of Upbound and the creator of Crossplane and Rook, two CNCF Graduated projects. He's spent the last two decades working on cloud and infrastructure, and is now bringing that work to AI inference with Modelplane.\nMore posts →\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Today we're open sourcing Modelplane, a control plane for AI inference. You install it in your own environment, and it operates your GPU clusters as one inference fleet: provisioning clusters, placing models across them, autoscaling replicas, caching weights, and routing requests through a single OpenAI-compatible gateway. ... Open-weight models changed who runs AI. They can be post-trained, including with reinforcement learning, to compete with frontier models, and they put cost, governance, and data sovereignty b\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] ← All posts Today we're open sourcing Modelplane, a control plane for AI inference.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] You install it in your own environment, and it operates your GPU clusters as one inference fleet: provisioning clusters, placing models across them, autoscaling replicas, caching weights, and routing requests through a single OpenAI-compatible gateway.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] It's built on Crossplane , and it runs any model on any serving engine on any infrastructure, from a single GPU to disaggregated, multi-node serving.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The shift toward open inference # Open-weight models changed who runs AI.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] They can be post-trained, including with reinforcement learning, to compete with frontier models, and they put cost, governance, and data sovereignty back under your own control.\n"
+}

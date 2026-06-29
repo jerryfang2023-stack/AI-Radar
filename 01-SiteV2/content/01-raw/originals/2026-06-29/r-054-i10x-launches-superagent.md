@@ -1,0 +1,256 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-054
+title: "i10X launches Superagent"
+original_url: "https://www.globenewswire.com/news-release/2026/06/22/3315618/0/en/i10X-launches-Superagent.html"
+canonical_url: "https://globenewswire.com/news-release/2026/06/22/3315618/0/en/i10X-launches-Superagent.html"
+source_name: "keyword search / Exa"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: "2026-06-22T00:00:00.000Z"
+collected_at: 2026-06-29T05:41:18.081Z
+language: mixed
+full_text_hash: 984ccc846621a764
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-054-i10x-launches-superagent.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-054-i10x-launches-superagent.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 90
+extractor_diagnostics: {"readability_score":90,"text_length":3431,"paragraph_count":19,"sentence_count":29,"boilerplate_hits":0,"symbol_ratio":0.0009,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 3431
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"984ccc846621a764","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 0989911004f8e41d
+content_hash: 984ccc846621a764
+semantic_hash: cc206f235e30a8e6
+duplicate_of: ""
+first_seen_at: "2026-06-22T00:00:00.000Z"
+last_seen_at: 2026-06-29T05:41:18.081Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"trend_candidate_context":true,"signal_card_candidate":true,"relationship_graph_input":true,"business_change":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Exa"],"products":["Agent","agents","Agents","agent"],"people":[],"industries":["法律 / 法务","开发者工具"],"roles":[],"workflows":["计费 / 预算管理"],"business_actions":["发布 / 推出","定价 / 计费变化"],"affected_departments":["IT / 安全","法务","财务 / 预算"],"numbers":["10X","22","2026","16","25","10x","100","75%"],"quotes":["Send these 12 emails?","Send these 12 emails?"]}
+evidence_seed: {"company_actions":["Unlike autonomous agents that act on their own and report back afterward, Superagent works like a Chief of Staff: you give it a business goal, it writes the plan, and it runs the work across 100+ already - connected tools - then stops before anything truly consequential happens."],"case_details":[],"workflow_changes":["ai , the workspace platform where more than 150,000 people automate real business processes with AI, today launched Superagent."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"i10X launches Superagent ... # i10X launches Superagent ... ## AI Agent That Works Like a Chief of Staff - and Checks In Before Anything That Matters ... June 22, 2026 16:25 ET | Source: i10x.ai Follow i10x.ai ... 100+ pre-connected tools, explicit sign-off before every irreversible step, and flat, predictable pricing -on average around 75% cheaper than the frontier-model route. ... Singapore, SINGAPORE, June 22, 2026 (GLOBE NEWSWIRE) -- i10X.ai, the workspace platform where more than 150,000 people automate real b","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Accessibility: Skip TopNav i10X launches Superagent AI Agent That Works Like a Chief of Staff - and Checks In Before Anything That Matters June 22, 2026 16:25 ET | Source: i10x.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"ai 100+ pre-connected tools, explicit sign-off before every irreversible step, and flat, predictable pricing -on average around 75% cheaper than the frontier-model route.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"number","text":"Singapore, SINGAPORE, June 22, 2026 (GLOBE NEWSWIRE) -- i10X.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"ai , the workspace platform where more than 150,000 people automate real business processes with AI, today launched Superagent.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Unlike autonomous agents that act on their own and report back afterward, Superagent works like a Chief of Staff: you give it a business goal, it writes the plan, and it runs the work across 100+ already - connected tools - then stops before anything truly consequential happens.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# i10X launches Superagent
+
+## clean_text
+
+Accessibility: Skip TopNav
+i10X launches Superagent
+AI Agent That Works Like a Chief of Staff - and Checks In Before Anything That Matters
+June 22, 2026 16:25 ET
+| Source:
+i10x.ai
+i10x.ai
+100+ pre-connected tools, explicit sign-off before every irreversible step, and flat, predictable pricing -on average around 75% cheaper than the frontier-model route.
+Singapore, SINGAPORE, June 22, 2026 (GLOBE NEWSWIRE) -- i10X.ai , the workspace platform where more than 150,000 people automate real business processes with AI, today launched Superagent. Unlike autonomous agents that act on their own and report back afterward, Superagent works like a Chief of Staff: you give it a business goal, it writes the plan, and it runs the work across 100+ already - connected tools - then stops before anything truly consequential happens. Before an email goes out, a deck goes live, or money moves, Superagent checks in. Nothing leaves your account until you say yes.
+"An agent that does everything for you sounds great - until it sends the wrong email to your biggest client. We took a different approach. For us, the check-in isn't a brake, it's a feature." said Patrick Linden, CEO at i10X.
+Three things i10X focused on with Superagent
+The tools are already connected. Over 100 tools spanning research, enrichment, SEO, design, data, and code are ready the moment you log in. No bring-your-own API keys, no separate provider subscriptions, no wiring up -one subscription, the whole stack.
+It asks before it acts. Every action is graded by reversibility. Reversible steps run through; irreversible ones wait for your explicit OK. Agents that act irreversibly on a user's behalf are exactly what make people nervous in 2026, and Superagent puts control back at the center.
+Flat, predictable pricing. As the industry shifts heavy agent usage onto metered, full-rate token billing, i10X went the other way: one price, no surprises, roughly 75% cheaper than the frontier-model route.
+A real-world example: from a company name to a ready-to-send outreach kit
+A typical prospecting run shows how Superagent works end to end. The input is a single company name. Superagent finds the actual decision-maker, enriches their contact details, builds a tailored pitch deck, drafts the outreach emails, and adds a calendar invite to the sequence. Then it stops and asks: "Send these 12 emails?" Only after a yes does anything leave the account.
+The same principle applies to other jobs. A messy folder of screenshots, CSVs, and half-written notes becomes a finished pitch deck; an SEO pipeline runs in the background. Same engine, very different work - prospecting today, a board deck tomorrow, an SEO pipeline next week.
+Availability
+Superagent is available now inside i10X .
+About i10X
+i10X (i10x.ai) is the workspace platform where more than 150,000 people automate real business processes with AI. Operated by i10X Global Pte Ltd and headquartered in Singapore, the company combines AI research with production-ready tools for everyday work.
+Press Inquiries
+Christopher Ort
+chris [at] i10x.ai
+https://www.i10x.ai
+GlobeNewswire
+Recommended Reading
+June 02, 2026 11:00 ET
+Source: i10x.ai
+i10x.ai Unveils Bias in AI-Driven Job Application Evaluations
+Singapore, Singapore, June 02, 2026 (GLOBE NEWSWIRE) -- AI screens job applications unfairly, depending on which model wrote the resume. A new study by i10X Research reveals a critical flaw in...
+Read More
+
+## full_text
+
+Accessibility: Skip TopNav
+i10X launches Superagent
+AI Agent That Works Like a Chief of Staff - and Checks In Before Anything That Matters
+June 22, 2026 16:25 ET
+| Source:
+i10x.ai
+i10x.ai
+100+ pre-connected tools, explicit sign-off before every irreversible step, and flat, predictable pricing -on average around 75% cheaper than the frontier-model route.
+Singapore, SINGAPORE, June 22, 2026 (GLOBE NEWSWIRE) -- i10X.ai , the workspace platform where more than 150,000 people automate real business processes with AI, today launched Superagent. Unlike autonomous agents that act on their own and report back afterward, Superagent works like a Chief of Staff: you give it a business goal, it writes the plan, and it runs the work across 100+ already - connected tools - then stops before anything truly consequential happens. Before an email goes out, a deck goes live, or money moves, Superagent checks in. Nothing leaves your account until you say yes.
+"An agent that does everything for you sounds great - until it sends the wrong email to your biggest client. We took a different approach. For us, the check-in isn't a brake, it's a feature." said Patrick Linden, CEO at i10X.
+Three things i10X focused on with Superagent
+The tools are already connected. Over 100 tools spanning research, enrichment, SEO, design, data, and code are ready the moment you log in. No bring-your-own API keys, no separate provider subscriptions, no wiring up -one subscription, the whole stack.
+It asks before it acts. Every action is graded by reversibility. Reversible steps run through; irreversible ones wait for your explicit OK. Agents that act irreversibly on a user's behalf are exactly what make people nervous in 2026, and Superagent puts control back at the center.
+Flat, predictable pricing. As the industry shifts heavy agent usage onto metered, full-rate token billing, i10X went the other way: one price, no surprises, roughly 75% cheaper than the frontier-model route.
+A real-world example: from a company name to a ready-to-send outreach kit
+A typical prospecting run shows how Superagent works end to end. The input is a single company name. Superagent finds the actual decision-maker, enriches their contact details, builds a tailored pitch deck, drafts the outreach emails, and adds a calendar invite to the sequence. Then it stops and asks: "Send these 12 emails?" Only after a yes does anything leave the account.
+The same principle applies to other jobs. A messy folder of screenshots, CSVs, and half-written notes becomes a finished pitch deck; an SEO pipeline runs in the background. Same engine, very different work - prospecting today, a board deck tomorrow, an SEO pipeline next week.
+Availability
+Superagent is available now inside i10X .
+About i10X
+i10X (i10x.ai) is the workspace platform where more than 150,000 people automate real business processes with AI. Operated by i10X Global Pte Ltd and headquartered in Singapore, the company combines AI research with production-ready tools for everyday work.
+Press Inquiries
+Christopher Ort
+chris [at] i10x.ai
+https://www.i10x.ai
+GlobeNewswire
+Recommended Reading
+June 02, 2026 11:00 ET
+Source: i10x.ai
+i10x.ai Unveils Bias in AI-Driven Job Application Evaluations
+Singapore, Singapore, June 02, 2026 (GLOBE NEWSWIRE) -- AI screens job applications unfairly, depending on which model wrote the resume. A new study by i10X Research reveals a critical flaw in...
+Read More
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 90
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":90,"text_length":3431,"paragraph_count":19,"sentence_count":29,"boilerplate_hits":0,"symbol_ratio":0.0009,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   i10X launches Superagent ... # i10X launches Superagent ... ## AI Agent That Works Like a Chief of Staff - and Checks In Before Anything That Matters ... June 22, 2026 16:25 ET | Source: i10x.ai Follow i10x.ai ... 100+ pre-connected tools, explicit sign-off before every irreversible step, and flat, predictable pricing -on average around 75% cheaper than the frontier-model route. ... Singapore, SINGAPORE, June 22, 2026 (GLOBE NEWSWIRE) -- i10X.ai, the workspace platform where more than 150,000 people automate real b
+
+2. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Accessibility: Skip TopNav i10X launches Superagent AI Agent That Works Like a Chief of Staff - and Checks In Before Anything That Matters June 22, 2026 16:25 ET | Source: i10x.
+
+3. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   ai 100+ pre-connected tools, explicit sign-off before every irreversible step, and flat, predictable pricing -on average around 75% cheaper than the frontier-model route.
+
+4. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=high
+   Singapore, SINGAPORE, June 22, 2026 (GLOBE NEWSWIRE) -- i10X.
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   ai , the workspace platform where more than 150,000 people automate real business processes with AI, today launched Superagent.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Unlike autonomous agents that act on their own and report back afterward, Superagent works like a Chief of Staff: you give it a business goal, it writes the plan, and it runs the work across 100+ already - connected tools - then stops before anything truly consequential happens.
+
+## business_elements
+
+- companies: keyword search, Exa
+- products: Agent, agents, Agents, agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 开发者工具
+- roles: 暂无公开信息
+- workflows: 计费 / 预算管理
+- business_actions: 发布 / 推出, 定价 / 计费变化
+- affected_departments: IT / 安全, 法务, 财务 / 预算
+- numbers: 10X, 22, 2026, 16, 25, 10x, 100, 75%
+- quotes: Send these 12 emails? / Send these 12 emails?
+
+## evidence_seed
+
+- company_actions: Unlike autonomous agents that act on their own and report back afterward, Superagent works like a Chief of Staff: you give it a business goal, it writes the plan, and it runs the work across 100+ already - connected tools - then stops before anything truly consequential happens.
+- case_details: 暂无公开信息
+- workflow_changes: ai , the workspace platform where more than 150,000 people automate real business processes with AI, today launched Superagent.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- signal_card_candidate: true
+- relationship_graph_input: true
+- business_change: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+i10X launches Superagent ... # i10X launches Superagent ... ## AI Agent That Works Like a Chief of Staff - and Checks In Before Anything That Matters ... June 22, 2026 16:25 ET | Source: i10x.ai Follow i10x.ai ... 100+ pre-connected tools, explicit sign-off before every irreversible step, and flat, predictable pricing -on average around 75% cheaper than the frontier-model route. ... Singapore, SINGAPORE, June 22, 2026 (GLOBE NEWSWIRE) -- i10X.ai, the workspace platform where more than 150,000 people automate real business processes with AI, today launched Superagent. Unlike autonomous agents that act on their own and report back afterward, Superagent works like a Chief of Staff: you give it a business goal, it writes the plan, and it runs the work across 100+ already - connected tools - then stops before anything truly consequential happens. Before an email goes out, a deck goes live, or money moves, Superagent checks in. Nothing leaves your account until you say yes. ... email to your biggest client. We took a different ... . For us, the check-in ... 't a brake, it's a feature." said Patrick Linden, CEO at i10X. ... things i10X focused on with Superagent ... - The tools are already connected. Over 100 tools spanning research, enrichment, SEO, design, data, and code are ready the moment you log in. No bring-your-own API keys, no separate provider subscriptions, no wiring up -one subscription, the whole stack. ... - It asks before it acts. Every action is graded by reversibility. Reversible steps run through; irreversible ones wait for your explicit OK. Agents that act irreversibly on a user's behalf are exactly what make people nervous in 2026, and Superagent puts control back at the center. ... - Flat, predictable pricing. As the industry shifts heavy agent usage onto metered, full-rate token billing, i10X went the other way: one price, no surprises, roughly 75% cheaper than the frontier-model route. ... A typical prospecting run shows how Superagent works end to end. The input is a single company name. Superagent finds the actual decision-maker, enriches their contact details, builds a tailored pitch deck, drafts the outreach emails, and adds a calendar invite to the sequence. Then it stops and asks: "Send these 12 emails?" Only after a yes does anything leave the account. ... Superagent is available now inside i10X. ... i10X (i10x.ai) is the workspace platform where more than 150,000 people automate real business processes with AI. Operated by i10X Global Pte Ltd and headquartered in Singapore, the company combines AI research with production-ready tools for everyday work. / query=AI platform launches agent workflow automation service 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 social_discovery 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

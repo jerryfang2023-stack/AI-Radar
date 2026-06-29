@@ -1,0 +1,258 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-076",
+  "title": "An LLM-as-Judge Won&apos;t Save The Product—Fixing Your Process Will",
+  "original_url": "https://eugeneyan.com//writing/eval-process/",
+  "canonical_url": "https://eugeneyan.com/writing/eval-process",
+  "source_name": "Eugene Yan's Blog",
+  "source_type": "builder",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "supporting_article",
+  "evidence_object_usable": false,
+  "event_evidence": false,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-29T05:41:18.212Z",
+  "language": "mixed",
+  "full_text": "Product evals are misunderstood. Some folks think that adding another tool, metric, or LLM-as-judge will solve the problems and save the product. But this sidesteps the core problem and avoids the real work. Evals aren’t static artifacts or quick fixes; they’re practices that apply the scientific method, eval-driven development, and AI output monitoring.\nBuilding product evals is simply the scientific method in disguise. That’s the secret sauce. It’s a cycle of inquiry, experimentation, and analysis.\nIt starts with observation aka Look at The Data™. This means examining our inputs, AI outputs, and how users interact with our systems. By looking at the data, we learn where the system works well, and perhaps more crucially, where it fails. Identifying these failure modes is the starting point for meaningful improvement.\nThen, we annotate some data, prioritizing problematic outputs. This means labeling samples of successes and failures to build a balanced and representative dataset. Ideally, we should have a 50:50 split of passes and fails that spans the distribution of inputs. This dataset forms the foundation for targeted evals that track performance on the issues we’ve identified.\nNext, we hypothesize why specific failures occur. Perhaps our RAG’s retrieval isn’t returning the relevant context, or maybe the model struggles to follow the complex—and sometimes conflicting—instructions. By looking at data such as retrieved documents, reasoning traces, and erroneous outputs, we can prioritize failures to fix and hypotheses to test.\nThen, we design and run experiments to test our hypotheses. Experiments could involve rewriting prompts, updating retrieval components, or switching to a different model. A good experiment defines the outcomes that confirm or invalidate the hypotheses. Ideally, it should also include a baseline or control condition against which to compare.\nMeasuring outcomes and analyzing errors is often the most challenging step. Unlike casual vibe checks, this requires quantifying whether an experiment’s updates actually improved outcomes: Did accuracy increase? Were fewer defects generated? Does the new version do better in pairwise comparisons? We can’t improve outcomes if we can’t measure it.\nIf an experiment succeeds, we apply the update; if it fails, we dig into the error analysis, refine our hypotheses, and try again. Through this iterative loop, product evals becomes the data flywheel that improves our product, reduces defects, and earns user trust.\nApplying the scientific method to building AI products.\nEval-driven development (EDD) helps us build better AI products. It’s similar to test-driven development where we write tests before implementing software that passes those tests. EDD follows the same philosophy: Before developing an AI feature, we define success criteria, via product evals, to ensure alignment and measurability from day one. Here’s a secret: Machine learning teams have practiced this for decades, where we build models and systems against validation and test sets . The ideas are similar though they have different names.\nIn EDD, evals guide our development. We start by evaluating a baseline, perhaps a simple prompt, to get an initial benchmark. From then on, every prompt tweak, every system update, every iteration, is evaluated. Did simplifying the prompt improve faithfulness? Did updating retrieval increase the recall of relevant documents? Or did the update worsen performance?\nBecause EDD provides immediate, objective feedback, we can see what’s improving and what’s not. This cycle—write evals, make changes, run evals, integrate improvements—ensures measurable progress. Instead of relying on vague, intuition-based perceptions, we build a feedback loop grounded in software engineering practices.\nFirst, write some evals; then, build systems that pass those evals.\nHuman oversight is still needed even with automated evaluators (aka LLM-as-judge). While automated evals help scale monitoring, they can’t compensate for neglect. If we’re not actively reviewing AI outputs and customer feedback, automated evaluators won’t save our product.\nTo evaluate and monitor AI products, we typically sample outputs and annotate them for quality and defects. With enough high-quality annotations, we can calibrate automated evaluators to align with human judgment. This could mean measuring recall or precision on binary labels, or correlation when deciding between outputs via pairwise comparisons. Once properly aligned, these evaluators help scale the continuous monitoring of AI systems.\nBut having automated evaluators doesn’t remove the need for human oversight. We still need to periodically sample and annotate data, and analyze user feedback. Ideally, we should design products that capture implicit feedback through user interactions. Nonetheless, explicit feedback, while less frequent and occasionally biased, can also be valuable. (Read more .)\nAlso, while automated evaluators scale well, they aren’t perfect. But neither are human annotators. Nonetheless, by collecting more and higher-quality annotations, we can better align these evaluators. Organizational discipline is crucial to maintain this feedback loop of sampling data, annotating outputs, and improving automated evaluators.\nAutomated evaluators amplify our existing annotation and feedback processes.\n• • •\nWhile building with AI can feel like magic, building AI products still takes elbow grease. If teams don’t apply the scientific method, practice eval-driven development, and monitor the system’s output, buying or building yet another evaluation tool won’t save the product.\nBy the way, if you want to learn more about evals, my friends Hamel and Shreya are hosting their final cohort of “AI Evals for Engineers and PMs” in July. Here’s a 35% discount code .\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Apr 2025). An LLM-as-Judge Won't Save The Product—Fixing Your Process Will. eugeneyan.com.\nhttps://eugeneyan.com/writing/eval-process/.\nor\n@article{yan2025eval-process,\ntitle = {An LLM-as-Judge Won't Save The Product—Fixing Your Process Will},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2025},\nmonth = {Apr},\nurl = {https://eugeneyan.com/writing/eval-process/}",
+  "clean_text": "Product evals are misunderstood. Some folks think that adding another tool, metric, or LLM-as-judge will solve the problems and save the product. But this sidesteps the core problem and avoids the real work. Evals aren’t static artifacts or quick fixes; they’re practices that apply the scientific method, eval-driven development, and AI output monitoring.\nBuilding product evals is simply the scientific method in disguise. That’s the secret sauce. It’s a cycle of inquiry, experimentation, and analysis.\nIt starts with observation aka Look at The Data™. This means examining our inputs, AI outputs, and how users interact with our systems. By looking at the data, we learn where the system works well, and perhaps more crucially, where it fails. Identifying these failure modes is the starting point for meaningful improvement.\nThen, we annotate some data, prioritizing problematic outputs. This means labeling samples of successes and failures to build a balanced and representative dataset. Ideally, we should have a 50:50 split of passes and fails that spans the distribution of inputs. This dataset forms the foundation for targeted evals that track performance on the issues we’ve identified.\nNext, we hypothesize why specific failures occur. Perhaps our RAG’s retrieval isn’t returning the relevant context, or maybe the model struggles to follow the complex—and sometimes conflicting—instructions. By looking at data such as retrieved documents, reasoning traces, and erroneous outputs, we can prioritize failures to fix and hypotheses to test.\nThen, we design and run experiments to test our hypotheses. Experiments could involve rewriting prompts, updating retrieval components, or switching to a different model. A good experiment defines the outcomes that confirm or invalidate the hypotheses. Ideally, it should also include a baseline or control condition against which to compare.\nMeasuring outcomes and analyzing errors is often the most challenging step. Unlike casual vibe checks, this requires quantifying whether an experiment’s updates actually improved outcomes: Did accuracy increase? Were fewer defects generated? Does the new version do better in pairwise comparisons? We can’t improve outcomes if we can’t measure it.\nIf an experiment succeeds, we apply the update; if it fails, we dig into the error analysis, refine our hypotheses, and try again. Through this iterative loop, product evals becomes the data flywheel that improves our product, reduces defects, and earns user trust.\nApplying the scientific method to building AI products.\nEval-driven development (EDD) helps us build better AI products. It’s similar to test-driven development where we write tests before implementing software that passes those tests. EDD follows the same philosophy: Before developing an AI feature, we define success criteria, via product evals, to ensure alignment and measurability from day one. Here’s a secret: Machine learning teams have practiced this for decades, where we build models and systems against validation and test sets . The ideas are similar though they have different names.\nIn EDD, evals guide our development. We start by evaluating a baseline, perhaps a simple prompt, to get an initial benchmark. From then on, every prompt tweak, every system update, every iteration, is evaluated. Did simplifying the prompt improve faithfulness? Did updating retrieval increase the recall of relevant documents? Or did the update worsen performance?\nBecause EDD provides immediate, objective feedback, we can see what’s improving and what’s not. This cycle—write evals, make changes, run evals, integrate improvements—ensures measurable progress. Instead of relying on vague, intuition-based perceptions, we build a feedback loop grounded in software engineering practices.\nFirst, write some evals; then, build systems that pass those evals.\nHuman oversight is still needed even with automated evaluators (aka LLM-as-judge). While automated evals help scale monitoring, they can’t compensate for neglect. If we’re not actively reviewing AI outputs and customer feedback, automated evaluators won’t save our product.\nTo evaluate and monitor AI products, we typically sample outputs and annotate them for quality and defects. With enough high-quality annotations, we can calibrate automated evaluators to align with human judgment. This could mean measuring recall or precision on binary labels, or correlation when deciding between outputs via pairwise comparisons. Once properly aligned, these evaluators help scale the continuous monitoring of AI systems.\nBut having automated evaluators doesn’t remove the need for human oversight. We still need to periodically sample and annotate data, and analyze user feedback. Ideally, we should design products that capture implicit feedback through user interactions. Nonetheless, explicit feedback, while less frequent and occasionally biased, can also be valuable. (Read more .)\nAlso, while automated evaluators scale well, they aren’t perfect. But neither are human annotators. Nonetheless, by collecting more and higher-quality annotations, we can better align these evaluators. Organizational discipline is crucial to maintain this feedback loop of sampling data, annotating outputs, and improving automated evaluators.\nAutomated evaluators amplify our existing annotation and feedback processes.\n• • •\nWhile building with AI can feel like magic, building AI products still takes elbow grease. If teams don’t apply the scientific method, practice eval-driven development, and monitor the system’s output, buying or building yet another evaluation tool won’t save the product.\nBy the way, if you want to learn more about evals, my friends Hamel and Shreya are hosting their final cohort of “AI Evals for Engineers and PMs” in July. Here’s a 35% discount code .\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Apr 2025). An LLM-as-Judge Won't Save The Product—Fixing Your Process Will. eugeneyan.com.\nhttps://eugeneyan.com/writing/eval-process/.\nor\n@article{yan2025eval-process,\ntitle = {An LLM-as-Judge Won't Save The Product—Fixing Your Process Will},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2025},\nmonth = {Apr},\nurl = {https://eugeneyan.com/writing/eval-process/}",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-076-an-llm-as-judge-won-apos-t-save-the-product-fixing-your-process-will.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-076-an-llm-as-judge-won-apos-t-save-the-product-fixing-your-process-will.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 6276,
+    "paragraph_count": 28,
+    "sentence_count": 70,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.003,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 6276,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "61a9b6eabeb84ce6",
+    "missing": []
+  },
+  "raw_qc_decision": "allow_with_degradation",
+  "raw_qc_downstream_use": "index_watchlist_or_feedback_only",
+  "degradation_reasons": [
+    "insufficient_usable_evidence_object"
+  ],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "supporting_evidence",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "5574a5dcc8860701",
+  "content_hash": "61a9b6eabeb84ce6",
+  "full_text_hash": "61a9b6eabeb84ce6",
+  "semantic_hash": "a717982739355e31",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-29T05:41:18.212Z",
+  "last_seen_at": "2026-06-29T05:41:18.212Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "Applying the scientific method, building via eval-driven development, and monitoring AI output.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Product evals are misunderstood.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Some folks think that adding another tool, metric, or LLM-as-judge will solve the problems and save the product.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "But this sidesteps the core problem and avoids the real work.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Evals aren’t static artifacts or quick fixes; they’re practices that apply the scientific method, eval-driven development, and AI output monitoring.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Building product evals is simply the scientific method in disguise.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Eugene Yan's Blog"
+    ],
+    "products": [],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "50",
+      "35%",
+      "2025"
+    ],
+    "quotes": [
+      "AI Evals for Engineers and PMs"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Applying the scientific method, building via eval-driven development, and monitoring AI output.",
+      "Product evals are misunderstood.",
+      "Some folks think that adding another tool, metric, or LLM-as-judge will solve the problems and save the product."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "adoption_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 3,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": false,
+    "business_change": false,
+    "trend_candidate_context": false,
+    "signal_card_candidate": false,
+    "relationship_graph_input": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": false
+  },
+  "pool_routes": [
+    "index_only"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "blocked",
+  "evidence_block_reason": "not_event_case_or_trend_evidence",
+  "missing_information": [
+    "证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象",
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势",
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# An LLM-as-Judge Won&apos;t Save The Product—Fixing Your Process Will\n\n- raw_id: R-076\n- original_url: https://eugeneyan.com//writing/eval-process/\n- source_name: Eugene Yan's Blog\n- collected_at: 2026-06-29T05:41:18.212Z\n\n## clean_text\n\nProduct evals are misunderstood. Some folks think that adding another tool, metric, or LLM-as-judge will solve the problems and save the product. But this sidesteps the core problem and avoids the real work. Evals aren’t static artifacts or quick fixes; they’re practices that apply the scientific method, eval-driven development, and AI output monitoring.\nBuilding product evals is simply the scientific method in disguise. That’s the secret sauce. It’s a cycle of inquiry, experimentation, and analysis.\nIt starts with observation aka Look at The Data™. This means examining our inputs, AI outputs, and how users interact with our systems. By looking at the data, we learn where the system works well, and perhaps more crucially, where it fails. Identifying these failure modes is the starting point for meaningful improvement.\nThen, we annotate some data, prioritizing problematic outputs. This means labeling samples of successes and failures to build a balanced and representative dataset. Ideally, we should have a 50:50 split of passes and fails that spans the distribution of inputs. This dataset forms the foundation for targeted evals that track performance on the issues we’ve identified.\nNext, we hypothesize why specific failures occur. Perhaps our RAG’s retrieval isn’t returning the relevant context, or maybe the model struggles to follow the complex—and sometimes conflicting—instructions. By looking at data such as retrieved documents, reasoning traces, and erroneous outputs, we can prioritize failures to fix and hypotheses to test.\nThen, we design and run experiments to test our hypotheses. Experiments could involve rewriting prompts, updating retrieval components, or switching to a different model. A good experiment defines the outcomes that confirm or invalidate the hypotheses. Ideally, it should also include a baseline or control condition against which to compare.\nMeasuring outcomes and analyzing errors is often the most challenging step. Unlike casual vibe checks, this requires quantifying whether an experiment’s updates actually improved outcomes: Did accuracy increase? Were fewer defects generated? Does the new version do better in pairwise comparisons? We can’t improve outcomes if we can’t measure it.\nIf an experiment succeeds, we apply the update; if it fails, we dig into the error analysis, refine our hypotheses, and try again. Through this iterative loop, product evals becomes the data flywheel that improves our product, reduces defects, and earns user trust.\nApplying the scientific method to building AI products.\nEval-driven development (EDD) helps us build better AI products. It’s similar to test-driven development where we write tests before implementing software that passes those tests. EDD follows the same philosophy: Before developing an AI feature, we define success criteria, via product evals, to ensure alignment and measurability from day one. Here’s a secret: Machine learning teams have practiced this for decades, where we build models and systems against validation and test sets . The ideas are similar though they have different names.\nIn EDD, evals guide our development. We start by evaluating a baseline, perhaps a simple prompt, to get an initial benchmark. From then on, every prompt tweak, every system update, every iteration, is evaluated. Did simplifying the prompt improve faithfulness? Did updating retrieval increase the recall of relevant documents? Or did the update worsen performance?\nBecause EDD provides immediate, objective feedback, we can see what’s improving and what’s not. This cycle—write evals, make changes, run evals, integrate improvements—ensures measurable progress. Instead of relying on vague, intuition-based perceptions, we build a feedback loop grounded in software engineering practices.\nFirst, write some evals; then, build systems that pass those evals.\nHuman oversight is still needed even with automated evaluators (aka LLM-as-judge). While automated evals help scale monitoring, they can’t compensate for neglect. If we’re not actively reviewing AI outputs and customer feedback, automated evaluators won’t save our product.\nTo evaluate and monitor AI products, we typically sample outputs and annotate them for quality and defects. With enough high-quality annotations, we can calibrate automated evaluators to align with human judgment. This could mean measuring recall or precision on binary labels, or correlation when deciding between outputs via pairwise comparisons. Once properly aligned, these evaluators help scale the continuous monitoring of AI systems.\nBut having automated evaluators doesn’t remove the need for human oversight. We still need to periodically sample and annotate data, and analyze user feedback. Ideally, we should design products that capture implicit feedback through user interactions. Nonetheless, explicit feedback, while less frequent and occasionally biased, can also be valuable. (Read more .)\nAlso, while automated evaluators scale well, they aren’t perfect. But neither are human annotators. Nonetheless, by collecting more and higher-quality annotations, we can better align these evaluators. Organizational discipline is crucial to maintain this feedback loop of sampling data, annotating outputs, and improving automated evaluators.\nAutomated evaluators amplify our existing annotation and feedback processes.\n• • •\nWhile building with AI can feel like magic, building AI products still takes elbow grease. If teams don’t apply the scientific method, practice eval-driven development, and monitor the system’s output, buying or building yet another evaluation tool won’t save the product.\nBy the way, if you want to learn more about evals, my friends Hamel and Shreya are hosting their final cohort of “AI Evals for Engineers and PMs” in July. Here’s a 35% discount code .\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Apr 2025). An LLM-as-Judge Won't Save The Product—Fixing Your Process Will. eugeneyan.com.\nhttps://eugeneyan.com/writing/eval-process/.\nor\n@article{yan2025eval-process,\ntitle = {An LLM-as-Judge Won't Save The Product—Fixing Your Process Will},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2025},\nmonth = {Apr},\nurl = {https://eugeneyan.com/writing/eval-process/}\n\n## full_text\n\nProduct evals are misunderstood. Some folks think that adding another tool, metric, or LLM-as-judge will solve the problems and save the product. But this sidesteps the core problem and avoids the real work. Evals aren’t static artifacts or quick fixes; they’re practices that apply the scientific method, eval-driven development, and AI output monitoring.\nBuilding product evals is simply the scientific method in disguise. That’s the secret sauce. It’s a cycle of inquiry, experimentation, and analysis.\nIt starts with observation aka Look at The Data™. This means examining our inputs, AI outputs, and how users interact with our systems. By looking at the data, we learn where the system works well, and perhaps more crucially, where it fails. Identifying these failure modes is the starting point for meaningful improvement.\nThen, we annotate some data, prioritizing problematic outputs. This means labeling samples of successes and failures to build a balanced and representative dataset. Ideally, we should have a 50:50 split of passes and fails that spans the distribution of inputs. This dataset forms the foundation for targeted evals that track performance on the issues we’ve identified.\nNext, we hypothesize why specific failures occur. Perhaps our RAG’s retrieval isn’t returning the relevant context, or maybe the model struggles to follow the complex—and sometimes conflicting—instructions. By looking at data such as retrieved documents, reasoning traces, and erroneous outputs, we can prioritize failures to fix and hypotheses to test.\nThen, we design and run experiments to test our hypotheses. Experiments could involve rewriting prompts, updating retrieval components, or switching to a different model. A good experiment defines the outcomes that confirm or invalidate the hypotheses. Ideally, it should also include a baseline or control condition against which to compare.\nMeasuring outcomes and analyzing errors is often the most challenging step. Unlike casual vibe checks, this requires quantifying whether an experiment’s updates actually improved outcomes: Did accuracy increase? Were fewer defects generated? Does the new version do better in pairwise comparisons? We can’t improve outcomes if we can’t measure it.\nIf an experiment succeeds, we apply the update; if it fails, we dig into the error analysis, refine our hypotheses, and try again. Through this iterative loop, product evals becomes the data flywheel that improves our product, reduces defects, and earns user trust.\nApplying the scientific method to building AI products.\nEval-driven development (EDD) helps us build better AI products. It’s similar to test-driven development where we write tests before implementing software that passes those tests. EDD follows the same philosophy: Before developing an AI feature, we define success criteria, via product evals, to ensure alignment and measurability from day one. Here’s a secret: Machine learning teams have practiced this for decades, where we build models and systems against validation and test sets . The ideas are similar though they have different names.\nIn EDD, evals guide our development. We start by evaluating a baseline, perhaps a simple prompt, to get an initial benchmark. From then on, every prompt tweak, every system update, every iteration, is evaluated. Did simplifying the prompt improve faithfulness? Did updating retrieval increase the recall of relevant documents? Or did the update worsen performance?\nBecause EDD provides immediate, objective feedback, we can see what’s improving and what’s not. This cycle—write evals, make changes, run evals, integrate improvements—ensures measurable progress. Instead of relying on vague, intuition-based perceptions, we build a feedback loop grounded in software engineering practices.\nFirst, write some evals; then, build systems that pass those evals.\nHuman oversight is still needed even with automated evaluators (aka LLM-as-judge). While automated evals help scale monitoring, they can’t compensate for neglect. If we’re not actively reviewing AI outputs and customer feedback, automated evaluators won’t save our product.\nTo evaluate and monitor AI products, we typically sample outputs and annotate them for quality and defects. With enough high-quality annotations, we can calibrate automated evaluators to align with human judgment. This could mean measuring recall or precision on binary labels, or correlation when deciding between outputs via pairwise comparisons. Once properly aligned, these evaluators help scale the continuous monitoring of AI systems.\nBut having automated evaluators doesn’t remove the need for human oversight. We still need to periodically sample and annotate data, and analyze user feedback. Ideally, we should design products that capture implicit feedback through user interactions. Nonetheless, explicit feedback, while less frequent and occasionally biased, can also be valuable. (Read more .)\nAlso, while automated evaluators scale well, they aren’t perfect. But neither are human annotators. Nonetheless, by collecting more and higher-quality annotations, we can better align these evaluators. Organizational discipline is crucial to maintain this feedback loop of sampling data, annotating outputs, and improving automated evaluators.\nAutomated evaluators amplify our existing annotation and feedback processes.\n• • •\nWhile building with AI can feel like magic, building AI products still takes elbow grease. If teams don’t apply the scientific method, practice eval-driven development, and monitor the system’s output, buying or building yet another evaluation tool won’t save the product.\nBy the way, if you want to learn more about evals, my friends Hamel and Shreya are hosting their final cohort of “AI Evals for Engineers and PMs” in July. Here’s a 35% discount code .\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Apr 2025). An LLM-as-Judge Won't Save The Product—Fixing Your Process Will. eugeneyan.com.\nhttps://eugeneyan.com/writing/eval-process/.\nor\n@article{yan2025eval-process,\ntitle = {An LLM-as-Judge Won't Save The Product—Fixing Your Process Will},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2025},\nmonth = {Apr},\nurl = {https://eugeneyan.com/writing/eval-process/}\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Applying the scientific method, building via eval-driven development, and monitoring AI output.\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Product evals are misunderstood.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Some folks think that adding another tool, metric, or LLM-as-judge will solve the problems and save the product.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] But this sidesteps the core problem and avoids the real work.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Evals aren’t static artifacts or quick fixes; they’re practices that apply the scientific method, eval-driven development, and AI output monitoring.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Building product evals is simply the scientific method in disguise.\n"
+}

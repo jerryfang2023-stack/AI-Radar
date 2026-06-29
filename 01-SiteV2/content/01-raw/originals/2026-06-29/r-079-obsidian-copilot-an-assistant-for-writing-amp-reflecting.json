@@ -1,0 +1,267 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-079",
+  "title": "Obsidian-Copilot: An Assistant for Writing &amp; Reflecting",
+  "original_url": "https://eugeneyan.com//writing/obsidian-copilot/",
+  "canonical_url": "https://eugeneyan.com/writing/obsidian-copilot",
+  "source_name": "Eugene Yan's Blog",
+  "source_type": "builder",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-29T05:41:18.228Z",
+  "language": "mixed",
+  "full_text": "Obsidian-Copilot: An Assistant for Writing & Reflecting\neugeneyan\nStart Here\nWriting\nSpeaking\nPrototyping\nAbout\nObsidian-Copilot: An Assistant for Writing & Reflecting\nllm\nengineering\n🛠\n· 6 min read\nWhat would a copilot for writing and thinking look like? To try answering this question, I built a prototype: Obsidian-Copilot. Given a section header, it helps draft a few paragraphs via retrieval-augmented generation . Also, if you write a daily journal, it can help you reflect on the past week and plan for the week ahead.\nObsidian Copilot: Helping to write drafts and reflect on the week\nHere’s a short 2-minute demo. The code is available at obsidian-copilot .\nHow does it work?\nWe start by parsing documents into chunks. A sensible default is to chunk documents by token length , typically 1,500 to 3,000 tokens per chunk. However, I found that this didn’t work very well . A better approach might be to chunk by paragraphs (e.g., split on \\n\\n ).\nGiven that my notes are mostly in bullet form, I chunk by top-level bullets : Each chunk is made up of a single top-level bullet and its sub-bullets. There are usually 5 to 10 sub-bullets per top-level bullet making each chunk similar in length to a paragraph.\nchunks = defaultdict ()\ncurrent_chunk = []\nchunk_idx = 0\ncurrent_header = None\nfor line in lines :\nif '##' in line : # Chunk header = Section header\ncurrent_header = line\nif line . startswith ( '- ' ): # Top-level bullet\nif current_chunk : # If chunks accumulated, add it to chunks\nif len ( current_chunk ) >= min_chunk_lines :\nchunks [ chunk_idx ] = current_chunk\nchunk_idx += 1\ncurrent_chunk = [] # Reset current chunk\nif current_header :\ncurrent_chunk . append ( current_header )\ncurrent_chunk . append ( line )\nNext, we build an OpenSearch index and a semantic index on these chunks. In a previous experiment, I found that embedding-based retrieval alone might be insufficient and thus added classical search (i.e., BM25 via OpenSearch) in this prototype.\nFor OpenSearch, we start by configuring filters and fields. We include filters such as stripping HTML , removing possessives (i.e., the trailing ‘s in words), removing stopwords, and basic stemming. These filters are applied on both documents (during indexing) and queries. We also specify the fields we want to index and their respective types. Types matter because filters are applied on text fields (e.g., title, chunk) but not on keyword fields (e.g., path, document type). We don’t apply preprocessing on file paths to keep them as they are.\n'mappings' : {\n'properties' : {\n'title' : { 'type' : 'text' , 'analyzer' : 'english_custom' },\n'type' : { 'type' : 'keyword' },\n'path' : { 'type' : 'keyword' },\n'chunk_header' : { 'type' : 'text' , 'analyzer' : 'english_custom' },\n'chunk' : { 'type' : 'text' , 'analyzer' : 'english_custom' },\nWhen querying, we apply boosts to make some fields count more towards the relevance score. In this prototype, I arbitrarily boosted titles by 5x and chunk headers (i.e., top-level bullets) by 2x. Retrieval can be improved by tweaking these boosts as well as other features .\nFor semantic search, we start by picking an embedding model. I referred to the Massive Text Embedding Benchmark Leaderboard , sorted it on descending order of retrieval score, and picked a model that had a good balance of embedding dimension and score.\nThis led me to e5-small-v2 . Currently, it’s ranked a respectable 7th, right below text-embedding-ada-002. What’s impressive is its embedding size of 384 which is far smaller than what most models have (768 - 1,536). And while it supports a maximum sequence length of only 512, this is sufficient given my shorter chunks. (More details in the paper Text Embeddings by Weakly-Supervised Contrastive Pre-training .) After embedding these documents, we store them in a numpy array.\nDuring query time, we tokenize and embed the query, do a dot product with the document embedding array, and take the top n results (in this case, 10).\ndef query_semantic ( query , tokenizer , model , doc_embeddings_array , n_results = 10 ):\nquery_tokenized = tokenizer ( f 'query: { query } ' , max_length = 512 , padding = False , truncation = True , return_tensors = 'pt' )\noutputs = model ( ** query_tokenized )\nquery_embedding = average_pool ( outputs . last_hidden_state , query_tokenized [ 'attention_mask' ])\nquery_embedding = F . normalize ( query_embedding , p = 2 , dim = 1 ). detach (). numpy ()\ncos_sims = np . dot ( doc_embeddings_array , query_embedding . T )\ncos_sims = cos_sims . flatten ()\ntop_indices = np . argsort ( cos_sims )[ - n_results :][:: - 1 ]\nreturn top_indices\nIf you’re thinking of using the e5 models, remember to add the necessary prefixes during preprocessing. For documents, you’ll have to prefix them with “ passage:‎ ” and for queries, you’ll have to prefix them with “ query:‎ ”\nThe retrieval service is a FastAPI app. Given an input query, it performs both BM25 and semantic search , deduplicates the results, and returns the documents’ text and associated title. The latter is used to link source documents when generating the draft.\nTo start the OpenSearch node and semantic search + FastAPI server, we use a simple-docker compose file . They each run in their own containers, bridged by a common network. For convenience, we also define common commands in a Makefile .\nFinally, we integrate with Obsidian via a TypeScript plugin. The obsidian-plugin-sample made it easy to get started and I added functions to display retrieved documents in a new tab, query APIs, and stream the output. (I’m new to TypeScript so feedback appreciated!)\nWhat else can we apply this to?\nWhile this prototype uses local notes and journal entries, it’s not a stretch to imagine the copilot retrieving from other documents (online). For example, team documents such as product requirements and technical design docs, internal wikis, and even code. I’d guess that’s what Microsoft, Atlassian, and Notion are working on right now.\nIt also extends beyond personal productivity. Within my field of recommendations and search, researchers and practitioners are excited about layering LLM-based generation on top of existing systems and products to improve the customer experience. (I expect we’ll see some of this in production by the end of the year.)\nIdeas for improvement\nOne idea is to try LLMs with larger context sizes that allow us to feed in entire documents instead of chunks. (This may help with retrieval recall but puts more onus on the LLM to identify the relevant context for generation.) Currently, I’m using gpt-3.5-turbo which is a good balance of speed and cost. Nonetheless, I’m excited to try claude-1.3-100k and provide entire documents as context.\nAnother idea is to augment retrieval with web or internal search when necessary. For example, when documents and notes go stale (e.g., based on last updated timestamp), we can look up the web or internal documents for more recent information.\n• • •\nHere’s the GitHub repo if you’re keen to try. Start by cloning the repo and updating the path to your obsidian-vault and huggingface hub cache. The latter saves us from downloading the tokenizer and model each time you start the containers.\ngit clone https://github.com/eugeneyan/obsidian-copilot.git\n# Open Makefile and update the following paths\nexport OBSIDIAN_PATH = /Users/eugene/obsidian-vault/\nexport TRANSFORMER_CACHE = /Users/eugene/.cache/huggingface/hub\nThen, build the image and indices before starting the retrieval app.\n# Build the docker image\nmake build\n# Start the opensearch container and wait for it to start.\n# You should see something like this: [c6587bf83572] Node 'c6587bf83572' initialized\nmake opensearch\n# In ANOTHER terminal, build your artifacts (this can take a while)\nmake build-artifacts\n# Start the app. You should see this: Uvicorn running on http://0.0.0.0:8000\nmake run\nFinally, install the copilot plugin, enable it in community plugin settings, and update the API key. You’ll have to restart your Obsidian app if you had it open before installation.\nmake install-plugin\nIf you tried it, I would love to hear how it went, especially where it didn’t work well and how it can be improved. Or if you’ve been working with retrieval-augmented generation, I’d love to hear about your experience so far!\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Jun 2023). Obsidian-Copilot: An Assistant for Writing & Reflecting. eugeneyan.com.\nhttps://eugeneyan.com/writing/obsidian-copilot/.\nor\n@article{yan2023copilot,\ntitle = {Obsidian-Copilot: An Assistant for Writing & Reflecting},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2023},\nmonth = {Jun},\nurl = {https://eugeneyan.com/writing/obsidian-copilot/}\nShare on:\nBrowse related tags: [\nllm\nengineering\n🛠\nor Search\n&laquo; Some Intuition on Attention and the Transformer\nPatterns for Building LLM-based Systems & Products &raquo;\nJoin 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.",
+  "clean_text": "Obsidian-Copilot: An Assistant for Writing & Reflecting\neugeneyan\nStart Here\nWriting\nSpeaking\nPrototyping\nAbout\nObsidian-Copilot: An Assistant for Writing & Reflecting\nllm\nengineering\n🛠\n· 6 min read\nWhat would a copilot for writing and thinking look like? To try answering this question, I built a prototype: Obsidian-Copilot. Given a section header, it helps draft a few paragraphs via retrieval-augmented generation . Also, if you write a daily journal, it can help you reflect on the past week and plan for the week ahead.\nObsidian Copilot: Helping to write drafts and reflect on the week\nHere’s a short 2-minute demo. The code is available at obsidian-copilot .\nHow does it work?\nWe start by parsing documents into chunks. A sensible default is to chunk documents by token length , typically 1,500 to 3,000 tokens per chunk. However, I found that this didn’t work very well . A better approach might be to chunk by paragraphs (e.g., split on \\n\\n ).\nGiven that my notes are mostly in bullet form, I chunk by top-level bullets : Each chunk is made up of a single top-level bullet and its sub-bullets. There are usually 5 to 10 sub-bullets per top-level bullet making each chunk similar in length to a paragraph.\nchunks = defaultdict ()\ncurrent_chunk = []\nchunk_idx = 0\ncurrent_header = None\nfor line in lines :\nif '##' in line : # Chunk header = Section header\ncurrent_header = line\nif line . startswith ( '- ' ): # Top-level bullet\nif current_chunk : # If chunks accumulated, add it to chunks\nif len ( current_chunk ) >= min_chunk_lines :\nchunks [ chunk_idx ] = current_chunk\nchunk_idx += 1\ncurrent_chunk = [] # Reset current chunk\nif current_header :\ncurrent_chunk . append ( current_header )\ncurrent_chunk . append ( line )\nNext, we build an OpenSearch index and a semantic index on these chunks. In a previous experiment, I found that embedding-based retrieval alone might be insufficient and thus added classical search (i.e., BM25 via OpenSearch) in this prototype.\nFor OpenSearch, we start by configuring filters and fields. We include filters such as stripping HTML , removing possessives (i.e., the trailing ‘s in words), removing stopwords, and basic stemming. These filters are applied on both documents (during indexing) and queries. We also specify the fields we want to index and their respective types. Types matter because filters are applied on text fields (e.g., title, chunk) but not on keyword fields (e.g., path, document type). We don’t apply preprocessing on file paths to keep them as they are.\n'mappings' : {\n'properties' : {\n'title' : { 'type' : 'text' , 'analyzer' : 'english_custom' },\n'type' : { 'type' : 'keyword' },\n'path' : { 'type' : 'keyword' },\n'chunk_header' : { 'type' : 'text' , 'analyzer' : 'english_custom' },\n'chunk' : { 'type' : 'text' , 'analyzer' : 'english_custom' },\nWhen querying, we apply boosts to make some fields count more towards the relevance score. In this prototype, I arbitrarily boosted titles by 5x and chunk headers (i.e., top-level bullets) by 2x. Retrieval can be improved by tweaking these boosts as well as other features .\nFor semantic search, we start by picking an embedding model. I referred to the Massive Text Embedding Benchmark Leaderboard , sorted it on descending order of retrieval score, and picked a model that had a good balance of embedding dimension and score.\nThis led me to e5-small-v2 . Currently, it’s ranked a respectable 7th, right below text-embedding-ada-002. What’s impressive is its embedding size of 384 which is far smaller than what most models have (768 - 1,536). And while it supports a maximum sequence length of only 512, this is sufficient given my shorter chunks. (More details in the paper Text Embeddings by Weakly-Supervised Contrastive Pre-training .) After embedding these documents, we store them in a numpy array.\nDuring query time, we tokenize and embed the query, do a dot product with the document embedding array, and take the top n results (in this case, 10).\ndef query_semantic ( query , tokenizer , model , doc_embeddings_array , n_results = 10 ):\nquery_tokenized = tokenizer ( f 'query: { query } ' , max_length = 512 , padding = False , truncation = True , return_tensors = 'pt' )\noutputs = model ( ** query_tokenized )\nquery_embedding = average_pool ( outputs . last_hidden_state , query_tokenized [ 'attention_mask' ])\nquery_embedding = F . normalize ( query_embedding , p = 2 , dim = 1 ). detach (). numpy ()\ncos_sims = np . dot ( doc_embeddings_array , query_embedding . T )\ncos_sims = cos_sims . flatten ()\ntop_indices = np . argsort ( cos_sims )[ - n_results :][:: - 1 ]\nreturn top_indices\nIf you’re thinking of using the e5 models, remember to add the necessary prefixes during preprocessing. For documents, you’ll have to prefix them with “ passage:‎ ” and for queries, you’ll have to prefix them with “ query:‎ ”\nThe retrieval service is a FastAPI app. Given an input query, it performs both BM25 and semantic search , deduplicates the results, and returns the documents’ text and associated title. The latter is used to link source documents when generating the draft.\nTo start the OpenSearch node and semantic search + FastAPI server, we use a simple-docker compose file . They each run in their own containers, bridged by a common network. For convenience, we also define common commands in a Makefile .\nFinally, we integrate with Obsidian via a TypeScript plugin. The obsidian-plugin-sample made it easy to get started and I added functions to display retrieved documents in a new tab, query APIs, and stream the output. (I’m new to TypeScript so feedback appreciated!)\nWhat else can we apply this to?\nWhile this prototype uses local notes and journal entries, it’s not a stretch to imagine the copilot retrieving from other documents (online). For example, team documents such as product requirements and technical design docs, internal wikis, and even code. I’d guess that’s what Microsoft, Atlassian, and Notion are working on right now.\nIt also extends beyond personal productivity. Within my field of recommendations and search, researchers and practitioners are excited about layering LLM-based generation on top of existing systems and products to improve the customer experience. (I expect we’ll see some of this in production by the end of the year.)\nIdeas for improvement\nOne idea is to try LLMs with larger context sizes that allow us to feed in entire documents instead of chunks. (This may help with retrieval recall but puts more onus on the LLM to identify the relevant context for generation.) Currently, I’m using gpt-3.5-turbo which is a good balance of speed and cost. Nonetheless, I’m excited to try claude-1.3-100k and provide entire documents as context.\nAnother idea is to augment retrieval with web or internal search when necessary. For example, when documents and notes go stale (e.g., based on last updated timestamp), we can look up the web or internal documents for more recent information.\n• • •\nHere’s the GitHub repo if you’re keen to try. Start by cloning the repo and updating the path to your obsidian-vault and huggingface hub cache. The latter saves us from downloading the tokenizer and model each time you start the containers.\ngit clone https://github.com/eugeneyan/obsidian-copilot.git\n# Open Makefile and update the following paths\nexport OBSIDIAN_PATH = /Users/eugene/obsidian-vault/\nexport TRANSFORMER_CACHE = /Users/eugene/.cache/huggingface/hub\nThen, build the image and indices before starting the retrieval app.\n# Build the docker image\nmake build\n# Start the opensearch container and wait for it to start.\n# You should see something like this: [c6587bf83572] Node 'c6587bf83572' initialized\nmake opensearch\n# In ANOTHER terminal, build your artifacts (this can take a while)\nmake build-artifacts\n# Start the app. You should see this: Uvicorn running on http://0.0.0.0:8000\nmake run\nFinally, install the copilot plugin, enable it in community plugin settings, and update the API key. You’ll have to restart your Obsidian app if you had it open before installation.\nmake install-plugin\nIf you tried it, I would love to hear how it went, especially where it didn’t work well and how it can be improved. Or if you’ve been working with retrieval-augmented generation, I’d love to hear about your experience so far!\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Jun 2023). Obsidian-Copilot: An Assistant for Writing & Reflecting. eugeneyan.com.\nhttps://eugeneyan.com/writing/obsidian-copilot/.\nor\n@article{yan2023copilot,\ntitle = {Obsidian-Copilot: An Assistant for Writing & Reflecting},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2023},\nmonth = {Jun},\nurl = {https://eugeneyan.com/writing/obsidian-copilot/}\nShare on:\nBrowse related tags: [\nllm\nengineering\n🛠\nor Search\n&laquo; Some Intuition on Attention and the Transformer\nPatterns for Building LLM-based Systems & Products &raquo;\nJoin 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-079-obsidian-copilot-an-assistant-for-writing-amp-reflecting.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-079-obsidian-copilot-an-assistant-for-writing-amp-reflecting.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "high",
+  "extraction_method": "body-visible-text",
+  "readability_score": 85,
+  "extractor_diagnostics": {
+    "readability_score": 85,
+    "text_length": 8988,
+    "paragraph_count": 73,
+    "sentence_count": 79,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0137,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 8988,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "a3ed6f2a3642e61a",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "76e0586775fc73b5",
+  "content_hash": "a3ed6f2a3642e61a",
+  "full_text_hash": "a3ed6f2a3642e61a",
+  "semantic_hash": "64eb4818560ad6c8",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-29T05:41:18.228Z",
+  "last_seen_at": "2026-06-29T05:41:18.228Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "company_action",
+      "text": "Writing drafts via retrieval-augmented generation. Also reflecting on the week&apos;s journal entries.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Obsidian-Copilot: An Assistant for Writing & Reflecting eugeneyan Start Here Writing Speaking Prototyping About Obsidian-Copilot: An Assistant for Writing & Reflecting llm engineering 🛠 · 6 min read What would a copilot for writing and thinking look like?",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "To try answering this question, I built a prototype: Obsidian-Copilot.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Given a section header, it helps draft a few paragraphs via retrieval-augmented generation .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Also, if you write a daily journal, it can help you reflect on the past week and plan for the week ahead.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Obsidian Copilot: Helping to write drafts and reflect on the week Here’s a short 2-minute demo.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Eugene Yan's Blog",
+      "Microsoft",
+      "GitHub"
+    ],
+    "products": [
+      "Copilot",
+      "copilot",
+      "claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "6 m",
+      "2",
+      "1",
+      "500",
+      "3",
+      "000",
+      "5",
+      "10"
+    ],
+    "quotes": [
+      " passage:‎ ",
+      " query:‎ "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Writing drafts via retrieval-augmented generation. Also reflecting on the week&apos;s journal entries.",
+      "Given a section header, it helps draft a few paragraphs via retrieval-augmented generation .",
+      "Also, if you write a daily journal, it can help you reflect on the past week and plan for the week ahead."
+    ],
+    "case_details": [
+      "Obsidian-Copilot: An Assistant for Writing & Reflecting eugeneyan Start Here Writing Speaking Prototyping About Obsidian-Copilot: An Assistant for Writing & Reflecting llm engineering 🛠 · 6 min read What would a copilot for writing and thinking look like?",
+      "To try answering this question, I built a prototype: Obsidian-Copilot.",
+      "Obsidian Copilot: Helping to write drafts and reflect on the week Here’s a short 2-minute demo."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "relationship_graph_input": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": false,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Obsidian-Copilot: An Assistant for Writing &amp; Reflecting\n\n- raw_id: R-079\n- original_url: https://eugeneyan.com//writing/obsidian-copilot/\n- source_name: Eugene Yan's Blog\n- collected_at: 2026-06-29T05:41:18.228Z\n\n## clean_text\n\nObsidian-Copilot: An Assistant for Writing & Reflecting\neugeneyan\nStart Here\nWriting\nSpeaking\nPrototyping\nAbout\nObsidian-Copilot: An Assistant for Writing & Reflecting\nllm\nengineering\n🛠\n· 6 min read\nWhat would a copilot for writing and thinking look like? To try answering this question, I built a prototype: Obsidian-Copilot. Given a section header, it helps draft a few paragraphs via retrieval-augmented generation . Also, if you write a daily journal, it can help you reflect on the past week and plan for the week ahead.\nObsidian Copilot: Helping to write drafts and reflect on the week\nHere’s a short 2-minute demo. The code is available at obsidian-copilot .\nHow does it work?\nWe start by parsing documents into chunks. A sensible default is to chunk documents by token length , typically 1,500 to 3,000 tokens per chunk. However, I found that this didn’t work very well . A better approach might be to chunk by paragraphs (e.g., split on \\n\\n ).\nGiven that my notes are mostly in bullet form, I chunk by top-level bullets : Each chunk is made up of a single top-level bullet and its sub-bullets. There are usually 5 to 10 sub-bullets per top-level bullet making each chunk similar in length to a paragraph.\nchunks = defaultdict ()\ncurrent_chunk = []\nchunk_idx = 0\ncurrent_header = None\nfor line in lines :\nif '##' in line : # Chunk header = Section header\ncurrent_header = line\nif line . startswith ( '- ' ): # Top-level bullet\nif current_chunk : # If chunks accumulated, add it to chunks\nif len ( current_chunk ) >= min_chunk_lines :\nchunks [ chunk_idx ] = current_chunk\nchunk_idx += 1\ncurrent_chunk = [] # Reset current chunk\nif current_header :\ncurrent_chunk . append ( current_header )\ncurrent_chunk . append ( line )\nNext, we build an OpenSearch index and a semantic index on these chunks. In a previous experiment, I found that embedding-based retrieval alone might be insufficient and thus added classical search (i.e., BM25 via OpenSearch) in this prototype.\nFor OpenSearch, we start by configuring filters and fields. We include filters such as stripping HTML , removing possessives (i.e., the trailing ‘s in words), removing stopwords, and basic stemming. These filters are applied on both documents (during indexing) and queries. We also specify the fields we want to index and their respective types. Types matter because filters are applied on text fields (e.g., title, chunk) but not on keyword fields (e.g., path, document type). We don’t apply preprocessing on file paths to keep them as they are.\n'mappings' : {\n'properties' : {\n'title' : { 'type' : 'text' , 'analyzer' : 'english_custom' },\n'type' : { 'type' : 'keyword' },\n'path' : { 'type' : 'keyword' },\n'chunk_header' : { 'type' : 'text' , 'analyzer' : 'english_custom' },\n'chunk' : { 'type' : 'text' , 'analyzer' : 'english_custom' },\nWhen querying, we apply boosts to make some fields count more towards the relevance score. In this prototype, I arbitrarily boosted titles by 5x and chunk headers (i.e., top-level bullets) by 2x. Retrieval can be improved by tweaking these boosts as well as other features .\nFor semantic search, we start by picking an embedding model. I referred to the Massive Text Embedding Benchmark Leaderboard , sorted it on descending order of retrieval score, and picked a model that had a good balance of embedding dimension and score.\nThis led me to e5-small-v2 . Currently, it’s ranked a respectable 7th, right below text-embedding-ada-002. What’s impressive is its embedding size of 384 which is far smaller than what most models have (768 - 1,536). And while it supports a maximum sequence length of only 512, this is sufficient given my shorter chunks. (More details in the paper Text Embeddings by Weakly-Supervised Contrastive Pre-training .) After embedding these documents, we store them in a numpy array.\nDuring query time, we tokenize and embed the query, do a dot product with the document embedding array, and take the top n results (in this case, 10).\ndef query_semantic ( query , tokenizer , model , doc_embeddings_array , n_results = 10 ):\nquery_tokenized = tokenizer ( f 'query: { query } ' , max_length = 512 , padding = False , truncation = True , return_tensors = 'pt' )\noutputs = model ( ** query_tokenized )\nquery_embedding = average_pool ( outputs . last_hidden_state , query_tokenized [ 'attention_mask' ])\nquery_embedding = F . normalize ( query_embedding , p = 2 , dim = 1 ). detach (). numpy ()\ncos_sims = np . dot ( doc_embeddings_array , query_embedding . T )\ncos_sims = cos_sims . flatten ()\ntop_indices = np . argsort ( cos_sims )[ - n_results :][:: - 1 ]\nreturn top_indices\nIf you’re thinking of using the e5 models, remember to add the necessary prefixes during preprocessing. For documents, you’ll have to prefix them with “ passage:‎ ” and for queries, you’ll have to prefix them with “ query:‎ ”\nThe retrieval service is a FastAPI app. Given an input query, it performs both BM25 and semantic search , deduplicates the results, and returns the documents’ text and associated title. The latter is used to link source documents when generating the draft.\nTo start the OpenSearch node and semantic search + FastAPI server, we use a simple-docker compose file . They each run in their own containers, bridged by a common network. For convenience, we also define common commands in a Makefile .\nFinally, we integrate with Obsidian via a TypeScript plugin. The obsidian-plugin-sample made it easy to get started and I added functions to display retrieved documents in a new tab, query APIs, and stream the output. (I’m new to TypeScript so feedback appreciated!)\nWhat else can we apply this to?\nWhile this prototype uses local notes and journal entries, it’s not a stretch to imagine the copilot retrieving from other documents (online). For example, team documents such as product requirements and technical design docs, internal wikis, and even code. I’d guess that’s what Microsoft, Atlassian, and Notion are working on right now.\nIt also extends beyond personal productivity. Within my field of recommendations and search, researchers and practitioners are excited about layering LLM-based generation on top of existing systems and products to improve the customer experience. (I expect we’ll see some of this in production by the end of the year.)\nIdeas for improvement\nOne idea is to try LLMs with larger context sizes that allow us to feed in entire documents instead of chunks. (This may help with retrieval recall but puts more onus on the LLM to identify the relevant context for generation.) Currently, I’m using gpt-3.5-turbo which is a good balance of speed and cost. Nonetheless, I’m excited to try claude-1.3-100k and provide entire documents as context.\nAnother idea is to augment retrieval with web or internal search when necessary. For example, when documents and notes go stale (e.g., based on last updated timestamp), we can look up the web or internal documents for more recent information.\n• • •\nHere’s the GitHub repo if you’re keen to try. Start by cloning the repo and updating the path to your obsidian-vault and huggingface hub cache. The latter saves us from downloading the tokenizer and model each time you start the containers.\ngit clone https://github.com/eugeneyan/obsidian-copilot.git\n# Open Makefile and update the following paths\nexport OBSIDIAN_PATH = /Users/eugene/obsidian-vault/\nexport TRANSFORMER_CACHE = /Users/eugene/.cache/huggingface/hub\nThen, build the image and indices before starting the retrieval app.\n# Build the docker image\nmake build\n# Start the opensearch container and wait for it to start.\n# You should see something like this: [c6587bf83572] Node 'c6587bf83572' initialized\nmake opensearch\n# In ANOTHER terminal, build your artifacts (this can take a while)\nmake build-artifacts\n# Start the app. You should see this: Uvicorn running on http://0.0.0.0:8000\nmake run\nFinally, install the copilot plugin, enable it in community plugin settings, and update the API key. You’ll have to restart your Obsidian app if you had it open before installation.\nmake install-plugin\nIf you tried it, I would love to hear how it went, especially where it didn’t work well and how it can be improved. Or if you’ve been working with retrieval-augmented generation, I’d love to hear about your experience so far!\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Jun 2023). Obsidian-Copilot: An Assistant for Writing & Reflecting. eugeneyan.com.\nhttps://eugeneyan.com/writing/obsidian-copilot/.\nor\n@article{yan2023copilot,\ntitle = {Obsidian-Copilot: An Assistant for Writing & Reflecting},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2023},\nmonth = {Jun},\nurl = {https://eugeneyan.com/writing/obsidian-copilot/}\nShare on:\nBrowse related tags: [\nllm\nengineering\n🛠\nor Search\n&laquo; Some Intuition on Attention and the Transformer\nPatterns for Building LLM-based Systems & Products &raquo;\nJoin 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.\n\n## full_text\n\nObsidian-Copilot: An Assistant for Writing & Reflecting\neugeneyan\nStart Here\nWriting\nSpeaking\nPrototyping\nAbout\nObsidian-Copilot: An Assistant for Writing & Reflecting\nllm\nengineering\n🛠\n· 6 min read\nWhat would a copilot for writing and thinking look like? To try answering this question, I built a prototype: Obsidian-Copilot. Given a section header, it helps draft a few paragraphs via retrieval-augmented generation . Also, if you write a daily journal, it can help you reflect on the past week and plan for the week ahead.\nObsidian Copilot: Helping to write drafts and reflect on the week\nHere’s a short 2-minute demo. The code is available at obsidian-copilot .\nHow does it work?\nWe start by parsing documents into chunks. A sensible default is to chunk documents by token length , typically 1,500 to 3,000 tokens per chunk. However, I found that this didn’t work very well . A better approach might be to chunk by paragraphs (e.g., split on \\n\\n ).\nGiven that my notes are mostly in bullet form, I chunk by top-level bullets : Each chunk is made up of a single top-level bullet and its sub-bullets. There are usually 5 to 10 sub-bullets per top-level bullet making each chunk similar in length to a paragraph.\nchunks = defaultdict ()\ncurrent_chunk = []\nchunk_idx = 0\ncurrent_header = None\nfor line in lines :\nif '##' in line : # Chunk header = Section header\ncurrent_header = line\nif line . startswith ( '- ' ): # Top-level bullet\nif current_chunk : # If chunks accumulated, add it to chunks\nif len ( current_chunk ) >= min_chunk_lines :\nchunks [ chunk_idx ] = current_chunk\nchunk_idx += 1\ncurrent_chunk = [] # Reset current chunk\nif current_header :\ncurrent_chunk . append ( current_header )\ncurrent_chunk . append ( line )\nNext, we build an OpenSearch index and a semantic index on these chunks. In a previous experiment, I found that embedding-based retrieval alone might be insufficient and thus added classical search (i.e., BM25 via OpenSearch) in this prototype.\nFor OpenSearch, we start by configuring filters and fields. We include filters such as stripping HTML , removing possessives (i.e., the trailing ‘s in words), removing stopwords, and basic stemming. These filters are applied on both documents (during indexing) and queries. We also specify the fields we want to index and their respective types. Types matter because filters are applied on text fields (e.g., title, chunk) but not on keyword fields (e.g., path, document type). We don’t apply preprocessing on file paths to keep them as they are.\n'mappings' : {\n'properties' : {\n'title' : { 'type' : 'text' , 'analyzer' : 'english_custom' },\n'type' : { 'type' : 'keyword' },\n'path' : { 'type' : 'keyword' },\n'chunk_header' : { 'type' : 'text' , 'analyzer' : 'english_custom' },\n'chunk' : { 'type' : 'text' , 'analyzer' : 'english_custom' },\nWhen querying, we apply boosts to make some fields count more towards the relevance score. In this prototype, I arbitrarily boosted titles by 5x and chunk headers (i.e., top-level bullets) by 2x. Retrieval can be improved by tweaking these boosts as well as other features .\nFor semantic search, we start by picking an embedding model. I referred to the Massive Text Embedding Benchmark Leaderboard , sorted it on descending order of retrieval score, and picked a model that had a good balance of embedding dimension and score.\nThis led me to e5-small-v2 . Currently, it’s ranked a respectable 7th, right below text-embedding-ada-002. What’s impressive is its embedding size of 384 which is far smaller than what most models have (768 - 1,536). And while it supports a maximum sequence length of only 512, this is sufficient given my shorter chunks. (More details in the paper Text Embeddings by Weakly-Supervised Contrastive Pre-training .) After embedding these documents, we store them in a numpy array.\nDuring query time, we tokenize and embed the query, do a dot product with the document embedding array, and take the top n results (in this case, 10).\ndef query_semantic ( query , tokenizer , model , doc_embeddings_array , n_results = 10 ):\nquery_tokenized = tokenizer ( f 'query: { query } ' , max_length = 512 , padding = False , truncation = True , return_tensors = 'pt' )\noutputs = model ( ** query_tokenized )\nquery_embedding = average_pool ( outputs . last_hidden_state , query_tokenized [ 'attention_mask' ])\nquery_embedding = F . normalize ( query_embedding , p = 2 , dim = 1 ). detach (). numpy ()\ncos_sims = np . dot ( doc_embeddings_array , query_embedding . T )\ncos_sims = cos_sims . flatten ()\ntop_indices = np . argsort ( cos_sims )[ - n_results :][:: - 1 ]\nreturn top_indices\nIf you’re thinking of using the e5 models, remember to add the necessary prefixes during preprocessing. For documents, you’ll have to prefix them with “ passage:‎ ” and for queries, you’ll have to prefix them with “ query:‎ ”\nThe retrieval service is a FastAPI app. Given an input query, it performs both BM25 and semantic search , deduplicates the results, and returns the documents’ text and associated title. The latter is used to link source documents when generating the draft.\nTo start the OpenSearch node and semantic search + FastAPI server, we use a simple-docker compose file . They each run in their own containers, bridged by a common network. For convenience, we also define common commands in a Makefile .\nFinally, we integrate with Obsidian via a TypeScript plugin. The obsidian-plugin-sample made it easy to get started and I added functions to display retrieved documents in a new tab, query APIs, and stream the output. (I’m new to TypeScript so feedback appreciated!)\nWhat else can we apply this to?\nWhile this prototype uses local notes and journal entries, it’s not a stretch to imagine the copilot retrieving from other documents (online). For example, team documents such as product requirements and technical design docs, internal wikis, and even code. I’d guess that’s what Microsoft, Atlassian, and Notion are working on right now.\nIt also extends beyond personal productivity. Within my field of recommendations and search, researchers and practitioners are excited about layering LLM-based generation on top of existing systems and products to improve the customer experience. (I expect we’ll see some of this in production by the end of the year.)\nIdeas for improvement\nOne idea is to try LLMs with larger context sizes that allow us to feed in entire documents instead of chunks. (This may help with retrieval recall but puts more onus on the LLM to identify the relevant context for generation.) Currently, I’m using gpt-3.5-turbo which is a good balance of speed and cost. Nonetheless, I’m excited to try claude-1.3-100k and provide entire documents as context.\nAnother idea is to augment retrieval with web or internal search when necessary. For example, when documents and notes go stale (e.g., based on last updated timestamp), we can look up the web or internal documents for more recent information.\n• • •\nHere’s the GitHub repo if you’re keen to try. Start by cloning the repo and updating the path to your obsidian-vault and huggingface hub cache. The latter saves us from downloading the tokenizer and model each time you start the containers.\ngit clone https://github.com/eugeneyan/obsidian-copilot.git\n# Open Makefile and update the following paths\nexport OBSIDIAN_PATH = /Users/eugene/obsidian-vault/\nexport TRANSFORMER_CACHE = /Users/eugene/.cache/huggingface/hub\nThen, build the image and indices before starting the retrieval app.\n# Build the docker image\nmake build\n# Start the opensearch container and wait for it to start.\n# You should see something like this: [c6587bf83572] Node 'c6587bf83572' initialized\nmake opensearch\n# In ANOTHER terminal, build your artifacts (this can take a while)\nmake build-artifacts\n# Start the app. You should see this: Uvicorn running on http://0.0.0.0:8000\nmake run\nFinally, install the copilot plugin, enable it in community plugin settings, and update the API key. You’ll have to restart your Obsidian app if you had it open before installation.\nmake install-plugin\nIf you tried it, I would love to hear how it went, especially where it didn’t work well and how it can be improved. Or if you’ve been working with retrieval-augmented generation, I’d love to hear about your experience so far!\nIf you found this useful, please cite this write-up as:\nYan, Ziyou. (Jun 2023). Obsidian-Copilot: An Assistant for Writing & Reflecting. eugeneyan.com.\nhttps://eugeneyan.com/writing/obsidian-copilot/.\nor\n@article{yan2023copilot,\ntitle = {Obsidian-Copilot: An Assistant for Writing & Reflecting},\nauthor = {Yan, Ziyou},\njournal = {eugeneyan.com},\nyear = {2023},\nmonth = {Jun},\nurl = {https://eugeneyan.com/writing/obsidian-copilot/}\nShare on:\nBrowse related tags: [\nllm\nengineering\n🛠\nor Search\n&laquo; Some Intuition on Attention and the Transformer\nPatterns for Building LLM-based Systems & Products &raquo;\nJoin 11,800+ readers getting updates on machine learning, RecSys, LLMs, and engineering.\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 85\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: high\n\n## key_excerpts\n\n1. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Writing drafts via retrieval-augmented generation. Also reflecting on the week&apos;s journal entries.\n2. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Obsidian-Copilot: An Assistant for Writing & Reflecting eugeneyan Start Here Writing Speaking Prototyping About Obsidian-Copilot: An Assistant for Writing & Reflecting llm engineering 🛠 · 6 min read What would a copilot for writing and thinking look like?\n3. [case_detail / signal_card_candidate, relationship_graph_input, case / high] To try answering this question, I built a prototype: Obsidian-Copilot.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Given a section header, it helps draft a few paragraphs via retrieval-augmented generation .\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Also, if you write a daily journal, it can help you reflect on the past week and plan for the week ahead.\n6. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Obsidian Copilot: Helping to write drafts and reflect on the week Here’s a short 2-minute demo.\n"
+}

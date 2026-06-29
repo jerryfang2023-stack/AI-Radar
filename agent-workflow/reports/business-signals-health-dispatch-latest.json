@@ -1,0 +1,78 @@
+{
+  "ok": true,
+  "date": "2026-06-29",
+  "generated_at": "2026-06-29T05:33:07.348Z",
+  "dry_run": false,
+  "action": "dispatched",
+  "reason": "no healthy same-date assets and no active/successful run; dispatched primary Business Signals workflow",
+  "workflow": "daily-persistent-assets-pr.yml",
+  "pass_score": "85",
+  "assets": {
+    "ready": false,
+    "file": "01-SiteV2/site/data/v3-data-observation-desk.json",
+    "activeDate": "2026-06-28",
+    "top10": 10,
+    "badTitleCount": 0,
+    "generatedAt": "2026-06-29T05:32:26.977Z"
+  },
+  "active_run": null,
+  "successful_run": null,
+  "same_date_runs": [
+    {
+      "conclusion": "failure",
+      "createdAt": "2026-06-29T05:19:59Z",
+      "databaseId": 28350404178,
+      "displayTitle": "WaveSight Business Signals PR",
+      "event": "schedule",
+      "headBranch": "main",
+      "status": "completed",
+      "updatedAt": "2026-06-29T05:27:43Z",
+      "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28350404178"
+    },
+    {
+      "conclusion": "failure",
+      "createdAt": "2026-06-29T03:28:54Z",
+      "databaseId": 28346723034,
+      "displayTitle": "WaveSight Business Signals PR",
+      "event": "workflow_dispatch",
+      "headBranch": "main",
+      "status": "completed",
+      "updatedAt": "2026-06-29T04:00:29Z",
+      "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28346723034"
+    },
+    {
+      "conclusion": "failure",
+      "createdAt": "2026-06-29T02:56:40Z",
+      "databaseId": 28345691817,
+      "displayTitle": "WaveSight Business Signals PR",
+      "event": "workflow_dispatch",
+      "headBranch": "main",
+      "status": "completed",
+      "updatedAt": "2026-06-29T03:28:28Z",
+      "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28345691817"
+    },
+    {
+      "conclusion": "failure",
+      "createdAt": "2026-06-29T02:19:30Z",
+      "databaseId": 28344573278,
+      "displayTitle": "WaveSight Business Signals PR",
+      "event": "workflow_dispatch",
+      "headBranch": "main",
+      "status": "completed",
+      "updatedAt": "2026-06-29T02:49:45Z",
+      "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28344573278"
+    },
+    {
+      "conclusion": "failure",
+      "createdAt": "2026-06-29T01:49:11Z",
+      "databaseId": 28343626204,
+      "displayTitle": "WaveSight Business Signals PR",
+      "event": "workflow_dispatch",
+      "headBranch": "main",
+      "status": "completed",
+      "updatedAt": "2026-06-29T02:19:06Z",
+      "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28343626204"
+    }
+  ],
+  "dispatch_output": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28350869551"
+}

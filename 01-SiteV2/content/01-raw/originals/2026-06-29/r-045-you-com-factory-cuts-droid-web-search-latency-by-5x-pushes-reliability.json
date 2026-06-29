@@ -1,0 +1,280 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-045",
+  "title": "You.com | Factory Cuts Droid Web Search Latency by 5x & Pushes Reliability Past 99.9%",
+  "original_url": "https://you.com/resources/factory-cuts-droid-web-search-latency-by-5x-and-pushes-reliability-past-99-9-with-ydc",
+  "canonical_url": "https://you.com/resources/factory-cuts-droid-web-search-latency-by-5x-and-pushes-reliability-past-99-9-with-ydc",
+  "source_name": "keyword search / Exa",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "2026-06-23T00:00:00.000Z",
+  "collected_at": "2026-06-29T05:41:18.006Z",
+  "language": "mixed",
+  "full_text": "How Factory updated their Droid agent with the You.com Web Search API to ground it in faster, more reliable, and more cost-efficient context.\nAT A GLANCE\nCustomer\nIndustry\nProduct\nSolution\nFactory\nAI Coding Agents\nDroid — agentic SDLC platform\nYou.com Search API\nFactory helps enterprises build their software factory, an end-to-end system where agents turn signals into shipped software. Factory's Droid coding agents implement features, validate code, monitor production, and triage incidents across the TUI, web/Desktop app, Slack, and Linear. Current web search is critical infrastructure for Factory, grounding every workflow in up-to-date documentation instead of stale training data.\nAfter hitting reliability and latency ceilings with their previous provider, Factory benchmarked You.com against a competing offering and migrated to the You.com Search API. Reliability jumped to above three 9s. P50 latency dropped from over five seconds to sub-one second. Sessions are cheaper because Droid converges on the right answer faster when it starts with the right context.\n5x+\nFaster search latency\nP50: >5s → sub-1s\n99.9%+\nWeb search reliability\nCritical for proper grounding\nLower\nSession costs\nFewer iteration loops\nThe Customer\nFactory helps enterprises ship software through a continuous feedback loop. Its coding agents span the full software development lifecycle, implementing features, validating code, monitoring production, and triaging incidents. Engineers sit at the center as the governance layer, setting direction, enforcing standards, and owning the outcomes the software factory produces.\nBecause of this, the Droid underlying model and tooling stack have to be both fast and dependable. Web search in particular plays a quiet but critical role: it grounds Droid in current, accurate documentation whenever the model's training data falls short.\nThe Challenge\nFactory's previous web search provider was creating two persistent problems for the Droid harness. Reliability occasionally dropped below three 9s, meaning a nontrivial slice of agent sessions experienced failed search calls. P50 latency was above five seconds, adding noticeable drag to every grounded action. For an agent that may call web search several times in a single session, those two issues compound— slowing convergence to a correct answer and forcing Droid into more iteration loops on integrations and unfamiliar APIs.\nThe decision to move to a better Search API came down to operational performance: Factory needed a search API that could meet agent-grade reliability and latency SLAs at scale.\nThe Solution\nFactory benchmarked You.com for reliability, latency, and quality and, based on its superior performance, chose to migrate Droid's web search tool to the You.com Search API. Inside Droid, the API is used wherever the agent needs to ground its work in fresh information — most often:\nPulling up-to-date SDK and API documentation when implementing or extending an integration.\nFetching code snippets and architectural overviews when navigating an unfamiliar system or library.\nLooking up configuration steps for MCP servers and other developer tooling that Droid is asked to enable.\nThe Results\nAfter the migration, Factory measured marked improvements on the two metrics that drove the switch:\nReliability: Web search success rate moved from below three 9s with the previous provider to three 9s or higher with You.com, with some windows reaching four 9s.\nLatency: P50 web search latency dropped from over five seconds to sub-one second—a 5x+ improvement on the median call.\nSession efficiency: With You.com, sessions are cheaper. With better upfront grounding, Droid avoids redundant iteration loops and converges on correct answers sooner. Factory is seeing lower costs for sessions, and Droid is reaching a correct answer much sooner because it has access to the right context.\n\"The reliability and latency improvements when using You.com were the decisive factors. We cut P50 web search latency from over five seconds to sub-one second and pushed our success rate to three 9s or higher. Anecdotally, sessions cost less because Droid gets to a correct answer faster when it has the right context up front.\"\nJonathan Lucuix-Andre\nTechnical Staff, Factory\nBuild Agents Grounded in a Better Context\nAs the leader in agentic software development, Factory is obsessively focused on the speed and reliability of every part of the software development lifecycle. You.com's Web Search API will remain a key driver as Factory helps enterprises build their own software factories.\nIf your agents depend on the open web for grounding, retrieval, or research, the You.com Web Search API delivers the reliability and latency profile that agent-grade workloads demand — backed by the same search infrastructure that powers customer deployments at Factory and across leading AI teams.\nTry the You.com APIs for Free\nTry the You.com APIs for Free\nFeatured resources.\nPaying 10x More After Google’s num=100 Change? Migrate to You.com in Under 10 Minutes\nPaying 10x More After Google’s num=100 Change? Migrate to You.com in Under 10 Minutes\nSeptember 18, 2025\nBlog\nSeptember 2025 API Roundup: Introducing Express & Contents APIs\nSeptember 2025 API Roundup: Introducing Express & Contents APIs\nSeptember 16, 2025\nBlog\nYou.com vs. Microsoft Copilot: How They Compare for Enterprise Teams\nYou.com vs. Microsoft Copilot: How They Compare for Enterprise Teams\nSeptember 10, 2025\nBlog\nAll resources.\nBrowse our complete collection of tools, guides, and expert insights — helping your team turn AI into ROI.\nThe AI Token Cost Problem Is a Design Flaw\nAI Search Infrastructure\nThe AI Token Cost Problem Is a Design Flaw\nAnmol Jawandha\nForward Deployed Engineer Lead\nJune 24, 2026\nBlog\nblog\n5 Products You Can Build Today With the You.com Web Search APIs\nAI Agents & Custom Indexes\n5 Products You Can Build Today With the You.com Web Search APIs\nMegna Anand\nAI Engineer, Enterprise Solutions\nJune 17, 2026\nBlog\nblog\nYou.com + One: Automated Spend Scoring for Every Account in Your Salesforce Territory\nPartnerships\nYou.com + One: Automated Spend Scoring for Every Account in Your Salesforce Territory\nBrooke Grief\nHead of Content & Web\nJune 15, 2026\nBlog\nblog\nYou.com Web Intelligence Is Now Available in MindStudio’s Remy Apps\nPartnerships\nYou.com Web Intelligence Is Now Available in MindStudio’s Remy Apps\nMadison Lee\nSenior Partnerships Lead\nJune 4, 2026\nBlog\nblog\nContext Window: Meaning and Optimization Tips\nAI 101\nContext Window: Meaning and Optimization Tips\nYou.com Team\nMay 26, 2026\nBlog\nblog\nHow APIs Became the Connective Tissue of LLMs\nAPI Management & Evolution\nHow APIs Became the Connective Tissue of LLMs\nBrooke Grief\nHead of Content & Web\nMay 20, 2026\nBlog\nblog\nSimple Abstractions, Dense Payloads: Tool Design for Agentic Search\nAI Search Infrastructure\nSimple Abstractions, Dense Payloads: Tool Design for Agentic Search\nVincent Seng\nSenior AI Engineer\nMay 18, 2026\nBlog\nblog\nIntroducing the You.com Finance Research API: Agentic Research, No Infra Required\nProduct Updates\nIntroducing the You.com Finance Research API: Agentic Research, No Infra Required\nRahul Mohan\nSenior AI Engineer\nMay 14, 2026\nBlog\nblog\nLoad More\n1 / 20",
+  "clean_text": "How Factory updated their Droid agent with the You.com Web Search API to ground it in faster, more reliable, and more cost-efficient context.\nAT A GLANCE\nCustomer\nIndustry\nProduct\nSolution\nFactory\nAI Coding Agents\nDroid — agentic SDLC platform\nYou.com Search API\nFactory helps enterprises build their software factory, an end-to-end system where agents turn signals into shipped software. Factory's Droid coding agents implement features, validate code, monitor production, and triage incidents across the TUI, web/Desktop app, Slack, and Linear. Current web search is critical infrastructure for Factory, grounding every workflow in up-to-date documentation instead of stale training data.\nAfter hitting reliability and latency ceilings with their previous provider, Factory benchmarked You.com against a competing offering and migrated to the You.com Search API. Reliability jumped to above three 9s. P50 latency dropped from over five seconds to sub-one second. Sessions are cheaper because Droid converges on the right answer faster when it starts with the right context.\n5x+\nFaster search latency\nP50: >5s → sub-1s\n99.9%+\nWeb search reliability\nCritical for proper grounding\nLower\nSession costs\nFewer iteration loops\nThe Customer\nFactory helps enterprises ship software through a continuous feedback loop. Its coding agents span the full software development lifecycle, implementing features, validating code, monitoring production, and triaging incidents. Engineers sit at the center as the governance layer, setting direction, enforcing standards, and owning the outcomes the software factory produces.\nBecause of this, the Droid underlying model and tooling stack have to be both fast and dependable. Web search in particular plays a quiet but critical role: it grounds Droid in current, accurate documentation whenever the model's training data falls short.\nThe Challenge\nFactory's previous web search provider was creating two persistent problems for the Droid harness. Reliability occasionally dropped below three 9s, meaning a nontrivial slice of agent sessions experienced failed search calls. P50 latency was above five seconds, adding noticeable drag to every grounded action. For an agent that may call web search several times in a single session, those two issues compound— slowing convergence to a correct answer and forcing Droid into more iteration loops on integrations and unfamiliar APIs.\nThe decision to move to a better Search API came down to operational performance: Factory needed a search API that could meet agent-grade reliability and latency SLAs at scale.\nThe Solution\nFactory benchmarked You.com for reliability, latency, and quality and, based on its superior performance, chose to migrate Droid's web search tool to the You.com Search API. Inside Droid, the API is used wherever the agent needs to ground its work in fresh information — most often:\nPulling up-to-date SDK and API documentation when implementing or extending an integration.\nFetching code snippets and architectural overviews when navigating an unfamiliar system or library.\nLooking up configuration steps for MCP servers and other developer tooling that Droid is asked to enable.\nThe Results\nAfter the migration, Factory measured marked improvements on the two metrics that drove the switch:\nReliability: Web search success rate moved from below three 9s with the previous provider to three 9s or higher with You.com, with some windows reaching four 9s.\nLatency: P50 web search latency dropped from over five seconds to sub-one second—a 5x+ improvement on the median call.\nSession efficiency: With You.com, sessions are cheaper. With better upfront grounding, Droid avoids redundant iteration loops and converges on correct answers sooner. Factory is seeing lower costs for sessions, and Droid is reaching a correct answer much sooner because it has access to the right context.\n\"The reliability and latency improvements when using You.com were the decisive factors. We cut P50 web search latency from over five seconds to sub-one second and pushed our success rate to three 9s or higher. Anecdotally, sessions cost less because Droid gets to a correct answer faster when it has the right context up front.\"\nJonathan Lucuix-Andre\nTechnical Staff, Factory\nBuild Agents Grounded in a Better Context\nAs the leader in agentic software development, Factory is obsessively focused on the speed and reliability of every part of the software development lifecycle. You.com's Web Search API will remain a key driver as Factory helps enterprises build their own software factories.\nIf your agents depend on the open web for grounding, retrieval, or research, the You.com Web Search API delivers the reliability and latency profile that agent-grade workloads demand — backed by the same search infrastructure that powers customer deployments at Factory and across leading AI teams.\nTry the You.com APIs for Free\nTry the You.com APIs for Free\nFeatured resources.\nPaying 10x More After Google’s num=100 Change? Migrate to You.com in Under 10 Minutes\nPaying 10x More After Google’s num=100 Change? Migrate to You.com in Under 10 Minutes\nSeptember 18, 2025\nBlog\nSeptember 2025 API Roundup: Introducing Express & Contents APIs\nSeptember 2025 API Roundup: Introducing Express & Contents APIs\nSeptember 16, 2025\nBlog\nYou.com vs. Microsoft Copilot: How They Compare for Enterprise Teams\nYou.com vs. Microsoft Copilot: How They Compare for Enterprise Teams\nSeptember 10, 2025\nBlog\nAll resources.\nBrowse our complete collection of tools, guides, and expert insights — helping your team turn AI into ROI.\nThe AI Token Cost Problem Is a Design Flaw\nAI Search Infrastructure\nThe AI Token Cost Problem Is a Design Flaw\nAnmol Jawandha\nForward Deployed Engineer Lead\nJune 24, 2026\nBlog\nblog\n5 Products You Can Build Today With the You.com Web Search APIs\nAI Agents & Custom Indexes\n5 Products You Can Build Today With the You.com Web Search APIs\nMegna Anand\nAI Engineer, Enterprise Solutions\nJune 17, 2026\nBlog\nblog\nYou.com + One: Automated Spend Scoring for Every Account in Your Salesforce Territory\nPartnerships\nYou.com + One: Automated Spend Scoring for Every Account in Your Salesforce Territory\nBrooke Grief\nHead of Content & Web\nJune 15, 2026\nBlog\nblog\nYou.com Web Intelligence Is Now Available in MindStudio’s Remy Apps\nPartnerships\nYou.com Web Intelligence Is Now Available in MindStudio’s Remy Apps\nMadison Lee\nSenior Partnerships Lead\nJune 4, 2026\nBlog\nblog\nContext Window: Meaning and Optimization Tips\nAI 101\nContext Window: Meaning and Optimization Tips\nYou.com Team\nMay 26, 2026\nBlog\nblog\nHow APIs Became the Connective Tissue of LLMs\nAPI Management & Evolution\nHow APIs Became the Connective Tissue of LLMs\nBrooke Grief\nHead of Content & Web\nMay 20, 2026\nBlog\nblog\nSimple Abstractions, Dense Payloads: Tool Design for Agentic Search\nAI Search Infrastructure\nSimple Abstractions, Dense Payloads: Tool Design for Agentic Search\nVincent Seng\nSenior AI Engineer\nMay 18, 2026\nBlog\nblog\nIntroducing the You.com Finance Research API: Agentic Research, No Infra Required\nProduct Updates\nIntroducing the You.com Finance Research API: Agentic Research, No Infra Required\nRahul Mohan\nSenior AI Engineer\nMay 14, 2026\nBlog\nblog\nLoad More\n1 / 20",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-045-you-com-factory-cuts-droid-web-search-latency-by-5x-pushes-reliability.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-045-you-com-factory-cuts-droid-web-search-latency-by-5x-pushes-reliability.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 7224,
+    "paragraph_count": 60,
+    "sentence_count": 39,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0004,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 7224,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "89f5c8f602a071b2",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "70ad24166dc72d1f",
+  "content_hash": "89f5c8f602a071b2",
+  "full_text_hash": "89f5c8f602a071b2",
+  "semantic_hash": "8a03d0a83eae5248",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-23T00:00:00.000Z",
+  "last_seen_at": "2026-06-29T05:41:18.006Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "number",
+      "text": "# Factory Cuts Droid Web Search Latency by 5x and Pushes Reliability Past 99.9% with You.com ... How Factory updated their Droid agent with the You.com Web Search API to ground it in faster, more reliable, and more cost-efficient context. ... Factory helps enterprises build their software factory, an end-to-end system where agents turn signals into shipped software. Factory's Droid coding agents implement features, validate code, monitor production, and triage incidents across the TUI, web/Desktop app, Slack, and L",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "How Factory updated their Droid agent with the You.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "com Web Search API to ground it in faster, more reliable, and more cost-efficient context.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "AT A GLANCE Customer Industry Product Solution Factory AI Coding Agents Droid — agentic SDLC platform You.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "com Search API Factory helps enterprises build their software factory, an end-to-end system where agents turn signals into shipped software.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "Factory's Droid coding agents implement features, validate code, monitor production, and triage incidents across the TUI, web/Desktop app, Slack, and Linear.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Exa",
+      "Google",
+      "Microsoft",
+      "Salesforce"
+    ],
+    "products": [
+      "agent",
+      "agents",
+      "Agents",
+      "MCP",
+      "Copilot"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "金融 / 保险",
+      "制造 / 工业",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "合作 / 联盟",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "5x",
+      "99.9%",
+      "9",
+      "50",
+      "2026",
+      "5",
+      "1",
+      "10x"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "How Factory updated their Droid agent with the You.",
+      "com Web Search API to ground it in faster, more reliable, and more cost-efficient context.",
+      "com Search API Factory helps enterprises build their software factory, an end-to-end system where agents turn signals into shipped software."
+    ],
+    "case_details": [
+      "AT A GLANCE Customer Industry Product Solution Factory AI Coding Agents Droid — agentic SDLC platform You."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "risks_or_constraints": [
+      "Factory's Droid coding agents implement features, validate code, monitor production, and triage incidents across the TUI, web/Desktop app, Slack, and Linear."
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "relationship_graph_input": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool",
+    "emerging_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# You.com | Factory Cuts Droid Web Search Latency by 5x & Pushes Reliability Past 99.9%\n\n- raw_id: R-045\n- original_url: https://you.com/resources/factory-cuts-droid-web-search-latency-by-5x-and-pushes-reliability-past-99-9-with-ydc\n- source_name: keyword search / Exa\n- collected_at: 2026-06-29T05:41:18.006Z\n\n## clean_text\n\nHow Factory updated their Droid agent with the You.com Web Search API to ground it in faster, more reliable, and more cost-efficient context.\nAT A GLANCE\nCustomer\nIndustry\nProduct\nSolution\nFactory\nAI Coding Agents\nDroid — agentic SDLC platform\nYou.com Search API\nFactory helps enterprises build their software factory, an end-to-end system where agents turn signals into shipped software. Factory's Droid coding agents implement features, validate code, monitor production, and triage incidents across the TUI, web/Desktop app, Slack, and Linear. Current web search is critical infrastructure for Factory, grounding every workflow in up-to-date documentation instead of stale training data.\nAfter hitting reliability and latency ceilings with their previous provider, Factory benchmarked You.com against a competing offering and migrated to the You.com Search API. Reliability jumped to above three 9s. P50 latency dropped from over five seconds to sub-one second. Sessions are cheaper because Droid converges on the right answer faster when it starts with the right context.\n5x+\nFaster search latency\nP50: >5s → sub-1s\n99.9%+\nWeb search reliability\nCritical for proper grounding\nLower\nSession costs\nFewer iteration loops\nThe Customer\nFactory helps enterprises ship software through a continuous feedback loop. Its coding agents span the full software development lifecycle, implementing features, validating code, monitoring production, and triaging incidents. Engineers sit at the center as the governance layer, setting direction, enforcing standards, and owning the outcomes the software factory produces.\nBecause of this, the Droid underlying model and tooling stack have to be both fast and dependable. Web search in particular plays a quiet but critical role: it grounds Droid in current, accurate documentation whenever the model's training data falls short.\nThe Challenge\nFactory's previous web search provider was creating two persistent problems for the Droid harness. Reliability occasionally dropped below three 9s, meaning a nontrivial slice of agent sessions experienced failed search calls. P50 latency was above five seconds, adding noticeable drag to every grounded action. For an agent that may call web search several times in a single session, those two issues compound— slowing convergence to a correct answer and forcing Droid into more iteration loops on integrations and unfamiliar APIs.\nThe decision to move to a better Search API came down to operational performance: Factory needed a search API that could meet agent-grade reliability and latency SLAs at scale.\nThe Solution\nFactory benchmarked You.com for reliability, latency, and quality and, based on its superior performance, chose to migrate Droid's web search tool to the You.com Search API. Inside Droid, the API is used wherever the agent needs to ground its work in fresh information — most often:\nPulling up-to-date SDK and API documentation when implementing or extending an integration.\nFetching code snippets and architectural overviews when navigating an unfamiliar system or library.\nLooking up configuration steps for MCP servers and other developer tooling that Droid is asked to enable.\nThe Results\nAfter the migration, Factory measured marked improvements on the two metrics that drove the switch:\nReliability: Web search success rate moved from below three 9s with the previous provider to three 9s or higher with You.com, with some windows reaching four 9s.\nLatency: P50 web search latency dropped from over five seconds to sub-one second—a 5x+ improvement on the median call.\nSession efficiency: With You.com, sessions are cheaper. With better upfront grounding, Droid avoids redundant iteration loops and converges on correct answers sooner. Factory is seeing lower costs for sessions, and Droid is reaching a correct answer much sooner because it has access to the right context.\n\"The reliability and latency improvements when using You.com were the decisive factors. We cut P50 web search latency from over five seconds to sub-one second and pushed our success rate to three 9s or higher. Anecdotally, sessions cost less because Droid gets to a correct answer faster when it has the right context up front.\"\nJonathan Lucuix-Andre\nTechnical Staff, Factory\nBuild Agents Grounded in a Better Context\nAs the leader in agentic software development, Factory is obsessively focused on the speed and reliability of every part of the software development lifecycle. You.com's Web Search API will remain a key driver as Factory helps enterprises build their own software factories.\nIf your agents depend on the open web for grounding, retrieval, or research, the You.com Web Search API delivers the reliability and latency profile that agent-grade workloads demand — backed by the same search infrastructure that powers customer deployments at Factory and across leading AI teams.\nTry the You.com APIs for Free\nTry the You.com APIs for Free\nFeatured resources.\nPaying 10x More After Google’s num=100 Change? Migrate to You.com in Under 10 Minutes\nPaying 10x More After Google’s num=100 Change? Migrate to You.com in Under 10 Minutes\nSeptember 18, 2025\nBlog\nSeptember 2025 API Roundup: Introducing Express & Contents APIs\nSeptember 2025 API Roundup: Introducing Express & Contents APIs\nSeptember 16, 2025\nBlog\nYou.com vs. Microsoft Copilot: How They Compare for Enterprise Teams\nYou.com vs. Microsoft Copilot: How They Compare for Enterprise Teams\nSeptember 10, 2025\nBlog\nAll resources.\nBrowse our complete collection of tools, guides, and expert insights — helping your team turn AI into ROI.\nThe AI Token Cost Problem Is a Design Flaw\nAI Search Infrastructure\nThe AI Token Cost Problem Is a Design Flaw\nAnmol Jawandha\nForward Deployed Engineer Lead\nJune 24, 2026\nBlog\nblog\n5 Products You Can Build Today With the You.com Web Search APIs\nAI Agents & Custom Indexes\n5 Products You Can Build Today With the You.com Web Search APIs\nMegna Anand\nAI Engineer, Enterprise Solutions\nJune 17, 2026\nBlog\nblog\nYou.com + One: Automated Spend Scoring for Every Account in Your Salesforce Territory\nPartnerships\nYou.com + One: Automated Spend Scoring for Every Account in Your Salesforce Territory\nBrooke Grief\nHead of Content & Web\nJune 15, 2026\nBlog\nblog\nYou.com Web Intelligence Is Now Available in MindStudio’s Remy Apps\nPartnerships\nYou.com Web Intelligence Is Now Available in MindStudio’s Remy Apps\nMadison Lee\nSenior Partnerships Lead\nJune 4, 2026\nBlog\nblog\nContext Window: Meaning and Optimization Tips\nAI 101\nContext Window: Meaning and Optimization Tips\nYou.com Team\nMay 26, 2026\nBlog\nblog\nHow APIs Became the Connective Tissue of LLMs\nAPI Management & Evolution\nHow APIs Became the Connective Tissue of LLMs\nBrooke Grief\nHead of Content & Web\nMay 20, 2026\nBlog\nblog\nSimple Abstractions, Dense Payloads: Tool Design for Agentic Search\nAI Search Infrastructure\nSimple Abstractions, Dense Payloads: Tool Design for Agentic Search\nVincent Seng\nSenior AI Engineer\nMay 18, 2026\nBlog\nblog\nIntroducing the You.com Finance Research API: Agentic Research, No Infra Required\nProduct Updates\nIntroducing the You.com Finance Research API: Agentic Research, No Infra Required\nRahul Mohan\nSenior AI Engineer\nMay 14, 2026\nBlog\nblog\nLoad More\n1 / 20\n\n## full_text\n\nHow Factory updated their Droid agent with the You.com Web Search API to ground it in faster, more reliable, and more cost-efficient context.\nAT A GLANCE\nCustomer\nIndustry\nProduct\nSolution\nFactory\nAI Coding Agents\nDroid — agentic SDLC platform\nYou.com Search API\nFactory helps enterprises build their software factory, an end-to-end system where agents turn signals into shipped software. Factory's Droid coding agents implement features, validate code, monitor production, and triage incidents across the TUI, web/Desktop app, Slack, and Linear. Current web search is critical infrastructure for Factory, grounding every workflow in up-to-date documentation instead of stale training data.\nAfter hitting reliability and latency ceilings with their previous provider, Factory benchmarked You.com against a competing offering and migrated to the You.com Search API. Reliability jumped to above three 9s. P50 latency dropped from over five seconds to sub-one second. Sessions are cheaper because Droid converges on the right answer faster when it starts with the right context.\n5x+\nFaster search latency\nP50: >5s → sub-1s\n99.9%+\nWeb search reliability\nCritical for proper grounding\nLower\nSession costs\nFewer iteration loops\nThe Customer\nFactory helps enterprises ship software through a continuous feedback loop. Its coding agents span the full software development lifecycle, implementing features, validating code, monitoring production, and triaging incidents. Engineers sit at the center as the governance layer, setting direction, enforcing standards, and owning the outcomes the software factory produces.\nBecause of this, the Droid underlying model and tooling stack have to be both fast and dependable. Web search in particular plays a quiet but critical role: it grounds Droid in current, accurate documentation whenever the model's training data falls short.\nThe Challenge\nFactory's previous web search provider was creating two persistent problems for the Droid harness. Reliability occasionally dropped below three 9s, meaning a nontrivial slice of agent sessions experienced failed search calls. P50 latency was above five seconds, adding noticeable drag to every grounded action. For an agent that may call web search several times in a single session, those two issues compound— slowing convergence to a correct answer and forcing Droid into more iteration loops on integrations and unfamiliar APIs.\nThe decision to move to a better Search API came down to operational performance: Factory needed a search API that could meet agent-grade reliability and latency SLAs at scale.\nThe Solution\nFactory benchmarked You.com for reliability, latency, and quality and, based on its superior performance, chose to migrate Droid's web search tool to the You.com Search API. Inside Droid, the API is used wherever the agent needs to ground its work in fresh information — most often:\nPulling up-to-date SDK and API documentation when implementing or extending an integration.\nFetching code snippets and architectural overviews when navigating an unfamiliar system or library.\nLooking up configuration steps for MCP servers and other developer tooling that Droid is asked to enable.\nThe Results\nAfter the migration, Factory measured marked improvements on the two metrics that drove the switch:\nReliability: Web search success rate moved from below three 9s with the previous provider to three 9s or higher with You.com, with some windows reaching four 9s.\nLatency: P50 web search latency dropped from over five seconds to sub-one second—a 5x+ improvement on the median call.\nSession efficiency: With You.com, sessions are cheaper. With better upfront grounding, Droid avoids redundant iteration loops and converges on correct answers sooner. Factory is seeing lower costs for sessions, and Droid is reaching a correct answer much sooner because it has access to the right context.\n\"The reliability and latency improvements when using You.com were the decisive factors. We cut P50 web search latency from over five seconds to sub-one second and pushed our success rate to three 9s or higher. Anecdotally, sessions cost less because Droid gets to a correct answer faster when it has the right context up front.\"\nJonathan Lucuix-Andre\nTechnical Staff, Factory\nBuild Agents Grounded in a Better Context\nAs the leader in agentic software development, Factory is obsessively focused on the speed and reliability of every part of the software development lifecycle. You.com's Web Search API will remain a key driver as Factory helps enterprises build their own software factories.\nIf your agents depend on the open web for grounding, retrieval, or research, the You.com Web Search API delivers the reliability and latency profile that agent-grade workloads demand — backed by the same search infrastructure that powers customer deployments at Factory and across leading AI teams.\nTry the You.com APIs for Free\nTry the You.com APIs for Free\nFeatured resources.\nPaying 10x More After Google’s num=100 Change? Migrate to You.com in Under 10 Minutes\nPaying 10x More After Google’s num=100 Change? Migrate to You.com in Under 10 Minutes\nSeptember 18, 2025\nBlog\nSeptember 2025 API Roundup: Introducing Express & Contents APIs\nSeptember 2025 API Roundup: Introducing Express & Contents APIs\nSeptember 16, 2025\nBlog\nYou.com vs. Microsoft Copilot: How They Compare for Enterprise Teams\nYou.com vs. Microsoft Copilot: How They Compare for Enterprise Teams\nSeptember 10, 2025\nBlog\nAll resources.\nBrowse our complete collection of tools, guides, and expert insights — helping your team turn AI into ROI.\nThe AI Token Cost Problem Is a Design Flaw\nAI Search Infrastructure\nThe AI Token Cost Problem Is a Design Flaw\nAnmol Jawandha\nForward Deployed Engineer Lead\nJune 24, 2026\nBlog\nblog\n5 Products You Can Build Today With the You.com Web Search APIs\nAI Agents & Custom Indexes\n5 Products You Can Build Today With the You.com Web Search APIs\nMegna Anand\nAI Engineer, Enterprise Solutions\nJune 17, 2026\nBlog\nblog\nYou.com + One: Automated Spend Scoring for Every Account in Your Salesforce Territory\nPartnerships\nYou.com + One: Automated Spend Scoring for Every Account in Your Salesforce Territory\nBrooke Grief\nHead of Content & Web\nJune 15, 2026\nBlog\nblog\nYou.com Web Intelligence Is Now Available in MindStudio’s Remy Apps\nPartnerships\nYou.com Web Intelligence Is Now Available in MindStudio’s Remy Apps\nMadison Lee\nSenior Partnerships Lead\nJune 4, 2026\nBlog\nblog\nContext Window: Meaning and Optimization Tips\nAI 101\nContext Window: Meaning and Optimization Tips\nYou.com Team\nMay 26, 2026\nBlog\nblog\nHow APIs Became the Connective Tissue of LLMs\nAPI Management & Evolution\nHow APIs Became the Connective Tissue of LLMs\nBrooke Grief\nHead of Content & Web\nMay 20, 2026\nBlog\nblog\nSimple Abstractions, Dense Payloads: Tool Design for Agentic Search\nAI Search Infrastructure\nSimple Abstractions, Dense Payloads: Tool Design for Agentic Search\nVincent Seng\nSenior AI Engineer\nMay 18, 2026\nBlog\nblog\nIntroducing the You.com Finance Research API: Agentic Research, No Infra Required\nProduct Updates\nIntroducing the You.com Finance Research API: Agentic Research, No Infra Required\nRahul Mohan\nSenior AI Engineer\nMay 14, 2026\nBlog\nblog\nLoad More\n1 / 20\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 97\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] # Factory Cuts Droid Web Search Latency by 5x and Pushes Reliability Past 99.9% with You.com ... How Factory updated their Droid agent with the You.com Web Search API to ground it in faster, more reliable, and more cost-efficient context. ... Factory helps enterprises build their software factory, an end-to-end system where agents turn signals into shipped software. Factory's Droid coding agents implement features, validate code, monitor production, and triage incidents across the TUI, web/Desktop app, Slack, and L\n2. [product_update / signal_card_candidate, relationship_graph_input, business_change / medium] How Factory updated their Droid agent with the You.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] com Web Search API to ground it in faster, more reliable, and more cost-efficient context.\n4. [case_detail / signal_card_candidate, relationship_graph_input, case / high] AT A GLANCE Customer Industry Product Solution Factory AI Coding Agents Droid — agentic SDLC platform You.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] com Search API Factory helps enterprises build their software factory, an end-to-end system where agents turn signals into shipped software.\n6. [supporting_context / signal_card_candidate, relationship_graph_input / medium] Factory's Droid coding agents implement features, validate code, monitor production, and triage incidents across the TUI, web/Desktop app, Slack, and Linear.\n"
+}

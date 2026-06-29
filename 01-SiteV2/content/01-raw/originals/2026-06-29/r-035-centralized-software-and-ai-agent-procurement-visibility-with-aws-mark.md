@@ -1,0 +1,288 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-035
+title: "Centralized software and AI agent procurement visibility with AWS Marketplace Single Pane of Glass dashboard | AWS Marketplace"
+original_url: "https://aws.amazon.com/blogs/awsmarketplace/centralized-software-and-ai-agent-procurement-visibility-with-aws-marketplace-single-pane-of-glass-dashboard/"
+canonical_url: "https://aws.amazon.com/blogs/awsmarketplace/centralized-software-and-ai-agent-procurement-visibility-with-aws-marketplace-single-pane-of-glass-dashboard"
+source_name: "keyword search / Exa"
+source_type: marketplace
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "procurement_marketplace"
+search_path_label: "采购 / 招投标 / Marketplace 路径"
+author: ""
+published_at: "2025-10-29T17:10:00.000Z"
+collected_at: 2026-06-29T05:41:17.922Z
+language: mixed
+full_text_hash: 238efb13fd825e45
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-035-centralized-software-and-ai-agent-procurement-visibility-with-aws-mark.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-035-centralized-software-and-ai-agent-procurement-visibility-with-aws-mark.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":8898,"paragraph_count":37,"sentence_count":52,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 8898
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"238efb13fd825e45","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 601ef2a38adddf14
+content_hash: 238efb13fd825e45
+semantic_hash: 30f0509cd99266ea
+duplicate_of: ""
+first_seen_at: "2025-10-29T17:10:00.000Z"
+last_seen_at: 2026-06-29T05:41:17.922Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"trend_candidate_context":true,"signal_card_candidate":true,"relationship_graph_input":true,"business_change":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["emerging_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Exa","Microsoft","Amazon","AWS"],"products":["agent","agents"],"people":[],"industries":["法律 / 法务","企业服务"],"roles":["CIO / IT 负责人","法务 / 律师","采购负责人"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","法务","财务 / 预算","采购"],"numbers":["1","2025","2024","2","3","4","5","6"],"quotes":[" Simplify AWS Marketplace Activity Visualization with a Single Pane of Glass ","Deployed on AWS"," Deployed on AWS ","Deployed on AWS","Deployed on AWS"]}
+evidence_seed: {"company_actions":["For a demo of the dashboard, visit AWS Marketplace Agreements .","In this post, we go over the enhancements to the SPG dashboard."],"case_details":[],"workflow_changes":["AWS Marketplace has updated the AWS Single Pane of Glass (SPG) dashboard to provide buyers the ability to obtain centralized insights about their procurement of software and data products including AI agent solutions in AWS Marketplace. SPG is a part of the Cloud Intelligence Dashboards that can be deployed with minimal configuration and helps stakeholders from procurement, FinOps, and cloud operations. For a demo of the dashboard, visit AWS Marketplace Agreements. ... In this post, we go over the enhancements to t","Skip to Main Content AWS Marketplace Centralized software and AI agent procurement visibility with AWS Marketplace Single Pane of Glass dashboard AWS Marketplace has updated the AWS Single Pane of Glass (SPG) dashboard to provide buyers the ability to obtain centralized insights about their procurement of software and data products including AI agent solutions in AWS Marketplace.","SPG is a part of the Cloud Intelligence Dashboards that can be deployed with minimal configuration and helps stakeholders from procurement, FinOps, and cloud operations."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师","采购负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"AWS Marketplace has updated the AWS Single Pane of Glass (SPG) dashboard to provide buyers the ability to obtain centralized insights about their procurement of software and data products including AI agent solutions in AWS Marketplace. SPG is a part of the Cloud Intelligence Dashboards that can be deployed with minimal configuration and helps stakeholders from procurement, FinOps, and cloud operations. For a demo of the dashboard, visit AWS Marketplace Agreements. ... In this post, we go over the enhancements to t","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Skip to Main Content AWS Marketplace Centralized software and AI agent procurement visibility with AWS Marketplace Single Pane of Glass dashboard AWS Marketplace has updated the AWS Single Pane of Glass (SPG) dashboard to provide buyers the ability to obtain centralized insights about their procurement of software and data products including AI agent solutions in AWS Marketplace.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"SPG is a part of the Cloud Intelligence Dashboards that can be deployed with minimal configuration and helps stakeholders from procurement, FinOps, and cloud operations.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"For a demo of the dashboard, visit AWS Marketplace Agreements .","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"In this post, we go over the enhancements to the SPG dashboard.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"The enhancements enable buyers to centralize their procurement governance from tracking spend information to obtaining the necessary insights from their AWS Marketplace agreements.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# Centralized software and AI agent procurement visibility with AWS Marketplace Single Pane of Glass dashboard | AWS Marketplace
+
+## clean_text
+
+Skip to Main Content
+AWS Marketplace
+Centralized software and AI agent procurement visibility with AWS Marketplace Single Pane of Glass dashboard
+AWS Marketplace has updated the AWS Single Pane of Glass (SPG) dashboard to provide buyers the ability to obtain centralized insights about their procurement of software and data products including AI agent solutions in AWS Marketplace. SPG is a part of the Cloud Intelligence Dashboards that can be deployed with minimal configuration and helps stakeholders from procurement, FinOps, and cloud operations. For a demo of the dashboard, visit AWS Marketplace Agreements .
+In this post, we go over the enhancements to the SPG dashboard. The enhancements enable buyers to centralize their procurement governance from tracking spend information to obtaining the necessary insights from their AWS Marketplace agreements. The enhancements include insights from AWS Marketplace agreements such as Deployed on AWS status for subscribed products, contracting currency, and charge schedules.
+Amazon Quick Sight Deployment
+You need to deploy Amazon Quick Sight based SPG dashboard to gain access to this visualization capability. The Cloud Intelligence Dashboards framework provides step-by-step instructions to establish the necessary data transformation pipeline for the SPG dashboard. AWS best practices recommend deploying dashboards in a dedicated Data Collection Account (a linked account) that is linked to, but separate from, your management account . This solution aggregate data from multiple management (payer) accounts or multiple linked accounts. The dashboard is available to Marketplace buyers and AWS Solution Provider Program (SPP) partners who manage customer management or payer account(s) .
+Solution overview
+The SPG dashboard adds a new Agreements tab that provides procurement insights from your AWS Marketplace agreements. This tab complements the insights obtained from AWS Cost and Usage Reports and AWS License Manager , visualized through the Spend Summary , Spend Deep Dive , and Granted and Entitled Licenses tabs. Tabs are activated when the optional module is deployed using the pre-populated AWS CloudFormation template. For guidance on other SPG dashboard tabs, refer to our previous posts: “ Simplify AWS Marketplace Activity Visualization with a Single Pane of Glass ” and “ Visualizing Third-Party Software License Procurement with AWS Marketplace Dashboard “.
+Solution Overview: Centralized visibility into agreements, spend, and licenses
+The SPG dashboard covers all AWS Marketplace procurement, from self-service and private offers to AI agents and related tools. SPG provides a unified view into your AWS Marketplace procurement, whether you have one or multiple accounts. The previous SPG dashboard tracked billable spending, usage metrics, and license deployment across Marketplace subscriptions. The updated dashboard tracks third-party product Deployed on AWS status, providing contract details including total costs, contract currency, billing schedules, associated agreements, and contract timelines.
+Software as a service (SaaS) policy: “Deployed on AWS” badges
+AWS Marketplace expanded its SaaS policy , effective May 1, 2025, to include all SaaS products in AWS Marketplace, regardless of where the product is deployed. This change directly responds to feedback from AWS buyers and sellers seeking a more comprehensive procurement experience. Buyers can now access a broader selection of products available in AWS Marketplace to including those deployed on AWS, other cloud infrastructures, or on premises. SaaS products fully hosted on AWS infrastructure receive a “ Deployed on AWS ” badge and qualify for additional customer benefits. The updated SPG dashboard provides insights to buyers on the “Deployed on AWS” badge status for all AWS Marketplace subscriptions to help organizations maximize their cloud investments while choosing the right solutions.
+Solution Overview: Managing currency exchange for private offers
+Historically, private offers in AWS Marketplace were available in US dollars (USD). As of October 2024, AWS Marketplace sellers can create private offers with contract pricing in four other currencies including EUR, GBP, JPY, and AUD. One of the enhancements is SPG providing insights into the contracting currency, so buyers can better manage their currency exchange risks associated with AWS Marketplace subscriptions.
+Walkthrough of Agreements tab
+The Agreements tab has four visual displays and two tables. You can use the filter at the top of the tab to filter the data shown in the various visual display. You can download the data in each of the display and tables as .csv files that can be analyzed using tools like Microsoft Excel. You can also print the entire tab as a single PDF file and share that with other users.
+The following screenshot shows a donut chart with the number of active AWS Marketplace agreements.
+Figure 1: Donut chart showing the total number of active AWS Marketplace agreements, split between AWS Marketplace product listings that have a “Deployed on AWS” badge, and those that don’t
+The following screenshot pie charts shows the total value of active AWS Marketplace agreements, split between AWS Marketplace product listings that have a “Deployed on AWS” badge and those that don’t, for each of the eligible transaction currencies (USD, EUR, GBP, JPY, and AUD).
+Figure 2: Pie charts showing the total value of active AWS Marketplace agreements
+The following screenshot is a table of agreements associated with active and expired subscriptions through AWS Marketplace. The dashboard provides insights on the agreement ID, original offer ID, product ID and name, “Deployed on AWS” status, contract start and end dates, total committed contract value, contracting currency, and associated agreement links. You can scroll the table view horizontally and vertically. There are multiple use cases for the insights obtained from this table.
+You can trace the products that lack a “Deployed on AWS” badge and explore if there are alternative products in AWS Marketplace that have the “Deployed on AWS” badge.
+You identify contracts that are close to expiration and expedite the process to consolidate or renew contracts.
+For products procured through channel partners, you can identify the authorized publisher.
+You can identify agreements that have been signed but the contracted service is due to start on a future start date .
+Figure 3: Table of agreements associated with active and expired subscriptions
+The following screenshot is a table that shows the details of committed charge amounts (future committed billing) for AWS Marketplace private offers with commitment charges. This is applicable when AWS Marketplace sellers use installment plans (also known as flexible payment schedules ) to extend private offers with a custom payment schedule. Customers can use this insight to track and manage upcoming payments, including planning for customer benefits associated with products with “Deployed on AWS” badges.
+Figure 4: An expansion on the insights from AWS Marketplace agreements
+Figure 5: This table provides access to the type of legal agreement associated with each subscription such as Custom EULA or Standard EULA. This insight can be used by buyers to explore the future use of standardized contracts in AWS Marketplace
+Figure 6: This Sankey diagram that shows a footprint of active agreements accepted across various AWS accounts in the customer’s AWS Organizations account
+Wrap-up: Enhanced visibility with ease of use
+The SPG dashboard provides an option for buyers to visualize their AWS Marketplace procurement activity through a business intelligence dashboard. This user-friendly dashboard delivers insights without requiring technical knowledge of underlying AWS services. SPG is accessible outside the AWS console, which you can access using a mobile or web browser, for a unified view across multiple AWS payer IDs . An administrator can share read-only SPG views with users using your organization’s single sign-on ( invite users to access Amazon Quick Suite ), without requiring AWS Identity and Access Management (IAM) permissions necessary for AWS console access.
+Conclusion
+In this post, we demonstrated how to obtain insight into your AWS Marketplace agreements, spend, and licenses across one or more AWS accounts. The SPG dashboard offers insights for improved governance and control of your third-party software, including AI agents. For more information about using the SPG dashboard, visit the demo dashboard or contact your AWS account team for a meeting with your AWS Marketplace customer advisor.
+About Authors
+Resources
+Product search in AWS Marketplace
+Use cases in AWS Marketplace
+Customer success stories
+Educational resource hub
+What's new
+Documentation
+Sell in AWS Marketplace
+Follow
+Twitter
+LinkedIn
+Email Updates
+
+## full_text
+
+Skip to Main Content
+AWS Marketplace
+Centralized software and AI agent procurement visibility with AWS Marketplace Single Pane of Glass dashboard
+AWS Marketplace has updated the AWS Single Pane of Glass (SPG) dashboard to provide buyers the ability to obtain centralized insights about their procurement of software and data products including AI agent solutions in AWS Marketplace. SPG is a part of the Cloud Intelligence Dashboards that can be deployed with minimal configuration and helps stakeholders from procurement, FinOps, and cloud operations. For a demo of the dashboard, visit AWS Marketplace Agreements .
+In this post, we go over the enhancements to the SPG dashboard. The enhancements enable buyers to centralize their procurement governance from tracking spend information to obtaining the necessary insights from their AWS Marketplace agreements. The enhancements include insights from AWS Marketplace agreements such as Deployed on AWS status for subscribed products, contracting currency, and charge schedules.
+Amazon Quick Sight Deployment
+You need to deploy Amazon Quick Sight based SPG dashboard to gain access to this visualization capability. The Cloud Intelligence Dashboards framework provides step-by-step instructions to establish the necessary data transformation pipeline for the SPG dashboard. AWS best practices recommend deploying dashboards in a dedicated Data Collection Account (a linked account) that is linked to, but separate from, your management account . This solution aggregate data from multiple management (payer) accounts or multiple linked accounts. The dashboard is available to Marketplace buyers and AWS Solution Provider Program (SPP) partners who manage customer management or payer account(s) .
+Solution overview
+The SPG dashboard adds a new Agreements tab that provides procurement insights from your AWS Marketplace agreements. This tab complements the insights obtained from AWS Cost and Usage Reports and AWS License Manager , visualized through the Spend Summary , Spend Deep Dive , and Granted and Entitled Licenses tabs. Tabs are activated when the optional module is deployed using the pre-populated AWS CloudFormation template. For guidance on other SPG dashboard tabs, refer to our previous posts: “ Simplify AWS Marketplace Activity Visualization with a Single Pane of Glass ” and “ Visualizing Third-Party Software License Procurement with AWS Marketplace Dashboard “.
+Solution Overview: Centralized visibility into agreements, spend, and licenses
+The SPG dashboard covers all AWS Marketplace procurement, from self-service and private offers to AI agents and related tools. SPG provides a unified view into your AWS Marketplace procurement, whether you have one or multiple accounts. The previous SPG dashboard tracked billable spending, usage metrics, and license deployment across Marketplace subscriptions. The updated dashboard tracks third-party product Deployed on AWS status, providing contract details including total costs, contract currency, billing schedules, associated agreements, and contract timelines.
+Software as a service (SaaS) policy: “Deployed on AWS” badges
+AWS Marketplace expanded its SaaS policy , effective May 1, 2025, to include all SaaS products in AWS Marketplace, regardless of where the product is deployed. This change directly responds to feedback from AWS buyers and sellers seeking a more comprehensive procurement experience. Buyers can now access a broader selection of products available in AWS Marketplace to including those deployed on AWS, other cloud infrastructures, or on premises. SaaS products fully hosted on AWS infrastructure receive a “ Deployed on AWS ” badge and qualify for additional customer benefits. The updated SPG dashboard provides insights to buyers on the “Deployed on AWS” badge status for all AWS Marketplace subscriptions to help organizations maximize their cloud investments while choosing the right solutions.
+Solution Overview: Managing currency exchange for private offers
+Historically, private offers in AWS Marketplace were available in US dollars (USD). As of October 2024, AWS Marketplace sellers can create private offers with contract pricing in four other currencies including EUR, GBP, JPY, and AUD. One of the enhancements is SPG providing insights into the contracting currency, so buyers can better manage their currency exchange risks associated with AWS Marketplace subscriptions.
+Walkthrough of Agreements tab
+The Agreements tab has four visual displays and two tables. You can use the filter at the top of the tab to filter the data shown in the various visual display. You can download the data in each of the display and tables as .csv files that can be analyzed using tools like Microsoft Excel. You can also print the entire tab as a single PDF file and share that with other users.
+The following screenshot shows a donut chart with the number of active AWS Marketplace agreements.
+Figure 1: Donut chart showing the total number of active AWS Marketplace agreements, split between AWS Marketplace product listings that have a “Deployed on AWS” badge, and those that don’t
+The following screenshot pie charts shows the total value of active AWS Marketplace agreements, split between AWS Marketplace product listings that have a “Deployed on AWS” badge and those that don’t, for each of the eligible transaction currencies (USD, EUR, GBP, JPY, and AUD).
+Figure 2: Pie charts showing the total value of active AWS Marketplace agreements
+The following screenshot is a table of agreements associated with active and expired subscriptions through AWS Marketplace. The dashboard provides insights on the agreement ID, original offer ID, product ID and name, “Deployed on AWS” status, contract start and end dates, total committed contract value, contracting currency, and associated agreement links. You can scroll the table view horizontally and vertically. There are multiple use cases for the insights obtained from this table.
+You can trace the products that lack a “Deployed on AWS” badge and explore if there are alternative products in AWS Marketplace that have the “Deployed on AWS” badge.
+You identify contracts that are close to expiration and expedite the process to consolidate or renew contracts.
+For products procured through channel partners, you can identify the authorized publisher.
+You can identify agreements that have been signed but the contracted service is due to start on a future start date .
+Figure 3: Table of agreements associated with active and expired subscriptions
+The following screenshot is a table that shows the details of committed charge amounts (future committed billing) for AWS Marketplace private offers with commitment charges. This is applicable when AWS Marketplace sellers use installment plans (also known as flexible payment schedules ) to extend private offers with a custom payment schedule. Customers can use this insight to track and manage upcoming payments, including planning for customer benefits associated with products with “Deployed on AWS” badges.
+Figure 4: An expansion on the insights from AWS Marketplace agreements
+Figure 5: This table provides access to the type of legal agreement associated with each subscription such as Custom EULA or Standard EULA. This insight can be used by buyers to explore the future use of standardized contracts in AWS Marketplace
+Figure 6: This Sankey diagram that shows a footprint of active agreements accepted across various AWS accounts in the customer’s AWS Organizations account
+Wrap-up: Enhanced visibility with ease of use
+The SPG dashboard provides an option for buyers to visualize their AWS Marketplace procurement activity through a business intelligence dashboard. This user-friendly dashboard delivers insights without requiring technical knowledge of underlying AWS services. SPG is accessible outside the AWS console, which you can access using a mobile or web browser, for a unified view across multiple AWS payer IDs . An administrator can share read-only SPG views with users using your organization’s single sign-on ( invite users to access Amazon Quick Suite ), without requiring AWS Identity and Access Management (IAM) permissions necessary for AWS console access.
+Conclusion
+In this post, we demonstrated how to obtain insight into your AWS Marketplace agreements, spend, and licenses across one or more AWS accounts. The SPG dashboard offers insights for improved governance and control of your third-party software, including AI agents. For more information about using the SPG dashboard, visit the demo dashboard or contact your AWS account team for a meeting with your AWS Marketplace customer advisor.
+About Authors
+Resources
+Product search in AWS Marketplace
+Use cases in AWS Marketplace
+Customer success stories
+Educational resource hub
+What's new
+Documentation
+Sell in AWS Marketplace
+Follow
+Twitter
+LinkedIn
+Email Updates
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 94
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":8898,"paragraph_count":37,"sentence_count":52,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   AWS Marketplace has updated the AWS Single Pane of Glass (SPG) dashboard to provide buyers the ability to obtain centralized insights about their procurement of software and data products including AI agent solutions in AWS Marketplace. SPG is a part of the Cloud Intelligence Dashboards that can be deployed with minimal configuration and helps stakeholders from procurement, FinOps, and cloud operations. For a demo of the dashboard, visit AWS Marketplace Agreements. ... In this post, we go over the enhancements to t
+
+2. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Skip to Main Content AWS Marketplace Centralized software and AI agent procurement visibility with AWS Marketplace Single Pane of Glass dashboard AWS Marketplace has updated the AWS Single Pane of Glass (SPG) dashboard to provide buyers the ability to obtain centralized insights about their procurement of software and data products including AI agent solutions in AWS Marketplace.
+
+3. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   SPG is a part of the Cloud Intelligence Dashboards that can be deployed with minimal configuration and helps stakeholders from procurement, FinOps, and cloud operations.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   For a demo of the dashboard, visit AWS Marketplace Agreements .
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   In this post, we go over the enhancements to the SPG dashboard.
+
+6. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The enhancements enable buyers to centralize their procurement governance from tracking spend information to obtaining the necessary insights from their AWS Marketplace agreements.
+
+## business_elements
+
+- companies: keyword search, Exa, Microsoft, Amazon, AWS
+- products: agent, agents
+- people: 暂无公开信息
+- industries: 法律 / 法务, 企业服务
+- roles: CIO / IT 负责人, 法务 / 律师, 采购负责人
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 采购
+- numbers: 1, 2025, 2024, 2, 3, 4, 5, 6
+- quotes:  Simplify AWS Marketplace Activity Visualization with a Single Pane of Glass  / Deployed on AWS /  Deployed on AWS  / Deployed on AWS / Deployed on AWS
+
+## evidence_seed
+
+- company_actions: For a demo of the dashboard, visit AWS Marketplace Agreements . / In this post, we go over the enhancements to the SPG dashboard.
+- case_details: 暂无公开信息
+- workflow_changes: AWS Marketplace has updated the AWS Single Pane of Glass (SPG) dashboard to provide buyers the ability to obtain centralized insights about their procurement of software and data products including AI agent solutions in AWS Marketplace. SPG is a part of the Cloud Intelligence Dashboards that can be deployed with minimal configuration and helps stakeholders from procurement, FinOps, and cloud operations. For a demo of the dashboard, visit AWS Marketplace Agreements. ... In this post, we go over the enhancements to t / Skip to Main Content AWS Marketplace Centralized software and AI agent procurement visibility with AWS Marketplace Single Pane of Glass dashboard AWS Marketplace has updated the AWS Single Pane of Glass (SPG) dashboard to provide buyers the ability to obtain centralized insights about their procurement of software and data products including AI agent solutions in AWS Marketplace. / SPG is a part of the Cloud Intelligence Dashboards that can be deployed with minimal configuration and helps stakeholders from procurement, FinOps, and cloud operations.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 法务 / 律师, 采购负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- signal_card_candidate: true
+- relationship_graph_input: true
+- business_change: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+AWS Marketplace has updated the AWS Single Pane of Glass (SPG) dashboard to provide buyers the ability to obtain centralized insights about their procurement of software and data products including AI agent solutions in AWS Marketplace. SPG is a part of the Cloud Intelligence Dashboards that can be deployed with minimal configuration and helps stakeholders from procurement, FinOps, and cloud operations. For a demo of the dashboard, visit AWS Marketplace Agreements. ... In this post, we go over the enhancements to the SPG dashboard. The enhancements enable buyers to centralize their procurement governance from tracking spend information to obtaining the necessary insights from their AWS Marketplace agreements. The enhancements include insights from AWS Marketplace agreements such as Deployed on AWS status for subscribed products, contracting currency, and charge schedules. ... The SPG dashboard covers all AWS Marketplace procurement, from self-service and private offers to AI agents and related tools. SPG provides a unified view into your AWS Marketplace procurement, whether you have one or multiple accounts. The previous SPG dashboard tracked billable spending, usage metrics, and license deployment across Marketplace subscriptions. The updated dashboard tracks third-party product Deployed on AWS status, providing contract details including total costs, contract currency, billing schedules, associated agreements, and contract timelines. ... The updated SPG dashboard ... The SPG dashboard provides ... business intelligence dashboard. This user-friendly dashboard delivers insights without requiring technical knowledge of underlying AWS services. SPG ... accessible outside the AWS console, which you can access using a mobile or web browser, ... An administrator can share read ... only SPG views with users ... s single sign ... on (invite users ... access Amazon Quick Suite), without requiring AWS Identity and Access Management (IAM) permissions necessary for AWS console access. ... In this post, we demonstrated how to obtain insight into your AWS Marketplace agreements, spend, and licenses across one or more AWS accounts. The SPG dashboard offers insights for improved governance and control of your third-party software, including AI agents. For more information about using the SPG dashboard, visit the demo dashboard or contact your AWS account team for a meeting with your AWS Marketplace customer advisor. / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 social_discovery 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,366 @@
+{
+  "date": "2026-06-29",
+  "generated_at": "2026-06-29T11:48:52.838Z",
+  "signal_card_assets": [
+    {
+      "id": "SIG-20260629-A01",
+      "pool_ref": "P-002",
+      "title": "Convey 获得 a16z 领投的 3800 万美元 A 轮融资",
+      "type": "funding",
+      "company": "Convey"
+    },
+    {
+      "id": "SIG-20260629-A02",
+      "pool_ref": "P-008",
+      "title": "Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资",
+      "type": "funding",
+      "company": "Trase"
+    },
+    {
+      "id": "SIG-20260629-A03",
+      "pool_ref": "P-010",
+      "title": "Sail Research 获得 8000 万美元融资，建设 AI Agent 高效基础设施",
+      "type": "funding",
+      "company": "Sail Research"
+    },
+    {
+      "id": "SIG-20260629-A04",
+      "pool_ref": "P-011",
+      "title": "Infosys 与 Sentara 合作推动医疗服务中的企业 AI 应用",
+      "type": "case",
+      "company": "Infosys / Sentara"
+    },
+    {
+      "id": "SIG-20260629-A05",
+      "pool_ref": "P-051",
+      "title": "Databricks 发布 Genie One：面向每个团队的智能协作 Agent",
+      "type": "case",
+      "company": "Databricks"
+    },
+    {
+      "id": "SIG-20260629-A06",
+      "pool_ref": "P-055",
+      "title": "Talkdesk 降低客户面对型 AI 部署的不确定性",
+      "type": "case",
+      "company": "Talkdesk"
+    },
+    {
+      "id": "SIG-20260629-A07",
+      "pool_ref": "P-053",
+      "title": "Vercel 发布 AI SDK 7",
+      "type": "product_service",
+      "company": "AI SDK 7 is now available"
+    },
+    {
+      "id": "SIG-20260629-A08",
+      "pool_ref": "P-044",
+      "title": "Scaled Cognition 获得 Khosla 领投的 1 亿美元融资",
+      "type": "funding",
+      "company": "Scaled Cognition"
+    },
+    {
+      "id": "SIG-20260629-A09",
+      "pool_ref": "P-059",
+      "title": "Upbound 发布 Modelplane 开源控制平面",
+      "type": "case",
+      "company": "Upbound"
+    },
+    {
+      "id": "SIG-20260629-A10",
+      "pool_ref": "P-047",
+      "title": "JustAI 获得 1700 万美元 A 轮融资，扩展 AI 营销自动化",
+      "type": "funding",
+      "company": "JustAI"
+    }
+  ],
+  "core_pool_not_promoted": [
+    {
+      "pool_ref": "P-014",
+      "title": "Introducing Agent Steward: The First AI Agent That Owns Customer…",
+      "source_url": "https://delight.ai/blog/product/introducing-agent-steward",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-015",
+      "title": "Microsoft MAI Models: 10x Cost Cut, Full Enterprise Control | THE D[AI]LY BRIEF",
+      "source_url": "https://www.beri.net/article/microsoft-mai-models-10x-cost-cut-enterprise-control",
+      "issues": [
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-017",
+      "title": "Introducing Modelplane: the control plane for AI inference · Modelplane Blog",
+      "source_url": "https://modelplane.ai/blog/open-control-plane-for-inference",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-018",
+      "title": "Designing distributed AI inference: Core concepts and scaling dimensions | Red Hat Developer",
+      "source_url": "https://developers.redhat.com/articles/2026/06/22/designing-distributed-ai-inference-core-concepts-and-scaling-dimensions",
+      "issues": [
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-022",
+      "title": "Salesforce Signs Definitive Agreement to Acquire Fin - Salesforce",
+      "source_url": "https://www.salesforce.com/news/press-releases/2026/06/15/salesforce-signs-definitive-agreement-to-acquire-fin/",
+      "issues": [
+        "source_auditability:discovery_source_not_resolved",
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "source_auditability:discovery_source_not_resolved, source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-023",
+      "title": "China’s Z.ai claims it can match Mythos on cybersecurity",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity",
+      "issues": [
+        "source_auditability:source_title_translation_missing_or_contaminated",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "source_auditability:source_title_translation_missing_or_contaminated, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-024",
+      "title": "Asian AI startups launch Mythos-like models as Anthropic&#8217;s export ban drags on",
+      "source_url": "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
+      "issues": [
+        "source_auditability:source_title_translation_missing_or_contaminated",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "source_auditability:source_title_translation_missing_or_contaminated, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-025",
+      "title": "The companies most likely to automate your job are now funding a $1 billion program to retrain you",
+      "source_url": "https://the-decoder.com/the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-billion-program-to-retrain-you/",
+      "issues": [
+        "fact_type_constraints:workforce_retraining_program_not_formal_signal_card",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:workforce_retraining_program_not_formal_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Keep workforce retraining or public funding programs as context; promote only single-company financing, product/service launch, or customer deployment evidence.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-036",
+      "title": "Production-grade AI agents for financial compliance: Lessons from Stripe | Artificial Intelligence",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/production-grade-ai-agents-for-financial-compliance-lessons-from-stripe/",
+      "issues": [
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-037",
+      "title": "Evidence Spine: From Request to Rollout Judgment - Secure AI Agent Architecture",
+      "source_url": "https://agent-axiom.github.io/agent-arch/en/book/part-v/evidence-spine/",
+      "issues": [
+        "source_auditability:source_title_translation_missing_or_contaminated",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "source_auditability:source_title_translation_missing_or_contaminated, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-038",
+      "title": "Transforming Manufacturing at Pfizer: The Hard Part Was Not the Technology",
+      "source_url": "https://sloanreview.mit.edu/projects/transforming-manufacturing-at-pfizer-the-hard-part-was-not-the-technology/",
+      "issues": [
+        "auto_signal_spec_null"
+      ],
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-042",
+      "title": "Gemini Enterprise Agent Platform (formerly Vertex AI) | Google Cloud",
+      "source_url": "https://cloud.google.com/products/gemini-enterprise-agent-platform",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-043",
+      "title": "Runlayer Raises $30M Series A as Enterprise AI Governance Becomes Core Infrastructure | DevCuration",
+      "source_url": "https://devcuration.com/articles/runlayer-raises-30m-series-a-as-enterprise-ai-governance-becomes-core-infrastructure",
+      "issues": [
+        "source_auditability:source_title_translation_missing_or_contaminated",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "source_auditability:source_title_translation_missing_or_contaminated, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-045",
+      "title": "You.com | Factory Cuts Droid Web Search Latency by 5x & Pushes Reliability Past 99.9%",
+      "source_url": "https://you.com/resources/factory-cuts-droid-web-search-latency-by-5x-and-pushes-reliability-past-99-9-with-ydc",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-050",
+      "title": "Copilot Cowork is now generally available | Microsoft 365 Blog",
+      "source_url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/",
+      "issues": [
+        "valid_page_type:technical_article_without_business_event",
+        "fact_type_constraints:workforce_retraining_program_not_formal_signal_card",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "valid_page_type:technical_article_without_business_event, fact_type_constraints:workforce_retraining_program_not_formal_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-054",
+      "title": "i10X launches Superagent",
+      "source_url": "https://www.globenewswire.com/news-release/2026/06/22/3315618/0/en/i10X-launches-Superagent.html",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-074",
+      "title": "Language Modeling Reading List (to Start Your Paper Club)",
+      "source_url": "https://eugeneyan.com//writing/llm-reading-list/",
+      "issues": [
+        "business_signal_scope:unsupported_importance_type:important_technical_trend",
+        "business_signal_scope:technical_trend_is_context_not_signal_card",
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-075",
+      "title": "Obsidian-Copilot: An Assistant for Writing &amp; Reflecting",
+      "source_url": "https://eugeneyan.com//writing/obsidian-copilot/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-078",
+      "title": "Data Discovery Platforms and Their Open Source Solutions",
+      "source_url": "https://eugeneyan.com//writing/data-discovery-platforms/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-079",
+      "title": "Bye bye Fable",
+      "source_url": "https://www.bensbites.com/p/bye-bye-fable",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "source_auditability:source_title_translation_missing_or_contaminated",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Use the newsletter only as discovery context; recapture the original dated event source before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-081",
+      "title": "SpaceX Colossus deal 🚀, GPT-5.5 Cyber launch 🛡️, Codex as workspace 🤖",
+      "source_url": "https://tldr.tech/ai/2026-06-23",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Use the newsletter only as discovery context; recapture the original dated event source before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-086",
+      "title": "ion design: AI that creates & tests 100s of landing pages for your product | Y Combinator",
+      "source_url": "https://www.ycombinator.com/companies/ion-design",
+      "issues": [
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-088",
+      "title": "v0.7 — Pilot launch · elNudge Docs",
+      "source_url": "https://elnudge.com/docs/v0-7.html",
+      "issues": [
+        "valid_page_type:generic_report_or_list_not_fact_signal",
+        "valid_page_type:repository_catalog_or_directory_page",
+        "valid_page_type:index_or_directory_url",
+        "source_auditability:source_title_translation_missing_or_contaminated",
+        "valid_page_type:docs_or_catalog_or_investing_thesis"
+      ],
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_or_directory_url, source_auditability:source_title_translation_missing_or_contaminated, valid_page_type:docs_or_catalog_or_investing_thesis",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    }
+  ],
+  "skipped": [],
+  "merged": []
+}
