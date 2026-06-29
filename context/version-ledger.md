@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-06-23
+last_updated: 2026-06-29
 use_when:
   - task startup
   - page change
@@ -18,14 +18,14 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.8.3-intelligence-map-opportunity-radar |
-| Version name | Intelligence Map Opportunity Radar |
+| Current version | V3.3.8.4-business-signal-source-first-hardening |
+| Version name | Business Signal Source-First Hardening |
 | Version layer | Minor |
-| Release date | 2026-06-23 |
-| Last modified at | 2026-06-24T18:50:00+08:00 |
+| Release date | 2026-06-29 |
+| Last modified at | 2026-06-29T00:00:00+08:00 |
 | Product version | V3.3 |
-| Main website version | SITE-V3.3.8.3 |
-| Business Signals column version | BSIG-V1.1.2-source-title-translation-lock |
+| Main website version | SITE-V3.3.8.4 |
+| Business Signals column version | BSIG-V1.1.3-source-first-pipeline-hardening |
 | Enterprise AI lens version | EAI-V1.1.0-fde-lens-pool |
 | Intelligence Map column version | IMAP-V1.2.0-opportunity-radar |
 | Business Signals data contract | V3.3.6.3-business-source-artifact-aggregation |
@@ -40,7 +40,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - WaveSight AI is now a unified intelligence frontstage, not a V2 four-column content site.
 - V3.3 public frontstage has four entries: Business Signals, Intelligence Map, First-Line Viewpoints, and Community Intelligence.
 - Business Signals uses the Raw / Pool / Card / Relationship Graph / Trend Candidate chain.
-- Business Signals is versioned as `BSIG-V1.1.2-source-title-translation-lock` in this release. Its public page keeps Top10 as the primary desk, preserves the `EAI-V1.1.0-fde-lens-pool` secondary lens, blocks generic FDE role/service pages, generic funding commentary, funding roundups, broad lists, stale sources, and search-query artifacts from Core Pool / Card promotion, and locks public titles to original source titles or registered Chinese translations of English source titles.
+- Business Signals is versioned as `BSIG-V1.1.3-source-first-pipeline-hardening` in this release. Its public page keeps Top10 as the primary desk, preserves the `EAI-V1.1.0-fde-lens-pool` secondary lens, blocks generic FDE role/service pages, generic funding commentary, funding roundups, broad lists, stale sources, and search-query artifacts from Core Pool / Card promotion, locks public titles to original source titles or registered Chinese translations of English source titles, generates all qualified Cards before selecting the frontstage Top10, and blocks legacy content-output routes from current production rules.
 - Enterprise AI / FDE is a frontstage interpretation and monitoring lens backed by an independent FDE Lens Pool. It is not a fourth Card type, and it must not expose backend-only fields.
 - Business Signals now defaults to independent source artifact collection before unified Raw / Pool normalization: `aihot`, `keyword`, `gdelt`, and `rss` each preserve source-discovered items, while the unified monitor decides final eligibility and release gates.
 - First-Line Viewpoints uses the follow-builders / builders data chain as an independent page, split into a morning RSS route and an afternoon local follow-builders skill route.
@@ -82,7 +82,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 |---|---|---|---|---|
 | Operations Backend / 运营大后台 | `OPS-V1.0.1` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Operations console shell, navigation, module entry contracts, and backend-facing version ledger | HTML meta `wavesight-ops-console-version`, visible sidebar version, version ledger |
 | Topic Center / 选题中心 module | `V2.2.2-source-title` | Automated in the Business Signals daily PR chain at 08:57 Asia/Shanghai; regenerated after the Business frontstage gate passes and deployed through GitHub Pages after auto-merge | `business-signals + first-line-viewpoints + community-intelligence` | `topic-center.json/js`, `topic-center-hermes.json/md`, and local `04-AIP/01-选题库/<date>-每日选题.md` when local sync can run |
-| Business Signals / 商业信号 column | `BSIG-V1.1.2-source-title-translation-lock` | Published through the main GitHub Pages frontstage; keeps Top10 as the primary desk and adds the 企业AI化 secondary lens | V3.3.6.3 Card data contract plus Enterprise AI lens rendering plus Core Pool source hygiene gates | `v3-data-observation.html`, `v3-data-observation-desk.json` meta, version ledger |
+| Business Signals / 商业信号 column | `BSIG-V1.1.3-source-first-pipeline-hardening` | Published through the main GitHub Pages frontstage; keeps Top10 as the primary desk and adds the 企业AI化 secondary lens | V3.3.6.3 Card data contract plus Enterprise AI lens rendering plus Core Pool source hygiene gates plus source-first pipeline hygiene gate | `v3-data-observation.html`, `v3-data-observation-desk.json` meta, version ledger |
 | Intelligence Map / 情报地图 column | `IMAP-V1.2.0-opportunity-radar` | Published through the main GitHub Pages frontstage. The relationship graph remains tag/edge based; the Entry Point Map and Product Pain Map are standalone opportunity radar panels backed by `opportunity_signals` and the weekly radar updater skill. Future weekly report issues must still be sourced from `01-SiteV2/content/08-report/` before page generation. | Business Signals relationship graph + source-backed opportunity_signals + Weekly Business Change Radar content | `intelligence-map.html`, `weekly-ai-business-change-radar.html`, `weekly-ai-business-change-radar-2026-06-15.html`, `assets/weekly-report.css`, `assets/v3-data-observation-desk.css`, `agent-workflow/skills/guanlan-opportunity-radar-updater/`, `01-SiteV2/content/08-report/*.md` |
 
 ## Current Sources Of Truth
@@ -160,8 +160,9 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| SITE-V3.3.8.3 / BSIG-V1.1.2-source-title-translation-lock / EAI-V1.1.0-fde-lens-pool | 2026-06-24T18:50:00+08:00 | Locks Business Signals public titles to original source titles. English source titles may display only through `source-title-translations.json`; generated, URL-derived, keyword-derived, and company-name fallback titles are removed from the public title path and blocked by the source-first frontstage gate. | current Business Signals baseline; site upgraded |
-| SITE-V3.3.8.3 / IMAP-V1.2.0-opportunity-radar | 2026-06-23T19:35:00+08:00 | Rebuilds the Intelligence Map opportunity area around two source-backed startup radar panels: Entry Point Map and Product Pain Map. Relationship graph stays on graph tags; heat and opportunity panels use `opportunity_signals`; the new `guanlan-opportunity-radar-updater` skill defines weekly update cadence and evidence boundaries. | current |
+| SITE-V3.3.8.4 / BSIG-V1.1.3-source-first-pipeline-hardening / EAI-V1.1.0-fde-lens-pool | 2026-06-29T00:00:00+08:00 | Hardens the Business Signals source-first pipeline: generates all qualified Cards before selecting Top10, requires public titles to come from original source titles or registered translations, blocks generated title fallbacks, removes legacy content-output routes from current rule surfaces, adds a current-rule hygiene gate, repairs text contamination handling, and rebuilds 2026-06-29 Raw / Pool / Card / frontstage assets. | current |
+| SITE-V3.3.8.3 / BSIG-V1.1.2-source-title-translation-lock / EAI-V1.1.0-fde-lens-pool | 2026-06-24T18:50:00+08:00 | Locks Business Signals public titles to original source titles. English source titles may display only through `source-title-translations.json`; generated, URL-derived, keyword-derived, and company-name fallback titles are removed from the public title path and blocked by the source-first frontstage gate. | upgraded |
+| SITE-V3.3.8.3 / IMAP-V1.2.0-opportunity-radar | 2026-06-23T19:35:00+08:00 | Rebuilds the Intelligence Map opportunity area around two source-backed startup radar panels: Entry Point Map and Product Pain Map. Relationship graph stays on graph tags; heat and opportunity panels use `opportunity_signals`; the new `guanlan-opportunity-radar-updater` skill defines weekly update cadence and evidence boundaries. | current Intelligence Map baseline; site upgraded |
 | IMAP-V1.1.1-weekly-report-archive-list | 2026-06-23T15:25:00+08:00 | Updates the Intelligence Map weekly report subcolumn from a single current report card to a three-entry weekly archive list, adds stable selector routing and a 2026-06-15 archive detail page, and marks missing archive weeks as pending instead of linking to nonexistent reports. | upgraded |
 | SITE-V3.3.8.2 / BSIG-V1.1.1-core-source-hygiene / EAI-V1.1.0-fde-lens-pool | 2026-06-22T14:35:00+08:00 | Tightens Business Signals Core Pool source hygiene: source labels are traceability-only; generic FDE role/service pages, job posts, role explainers, broad lists, funding roundups, generic funding commentary, stale sources, and search-query artifacts cannot satisfy Core Pool / Card quantity gaps. | upgraded |
 | SITE-V3.3.8.1 / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.1.0-fde-lens-pool | 2026-06-19T16:10:00+08:00 | Splits Enterprise AI / FDE into an independent Lens Pool fed by Raw / Pool evidence while preserving Business Signals Top10 and Card rules. Adds `enterprise-ai-fde.json`, source-backed FDE detail checks, and Obsidian `content/09-fde` sync from the new pool. | upgraded |

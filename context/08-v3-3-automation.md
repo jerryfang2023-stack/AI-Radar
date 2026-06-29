@@ -10,9 +10,9 @@ use_when:
 priority: current
 ---
 
-# SITE-V3.3.8.3 Automation Loop
+# SITE-V3.3.8.4 Automation Loop
 
-SITE-V3.3.8.3 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists same-date Builder viewpoints into Obsidian person / date timeline files, Business Signals runs on the V3.3.6.3 source-artifact aggregation contract with public title / candidate dedupe gates, Core Pool source-hygiene gates, and the Enterprise AI / FDE Lens Pool, Community Intelligence uses local logged-in collection before GitHub publication, Intelligence Map publishes the weekly report entry / detail route and source-backed opportunity radar panels, and Hermes supervises all three active daily lanes with staged handoff at 09:30 / 09:45 / 09:55.
+SITE-V3.3.8.4 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists same-date Builder viewpoints into Obsidian person / date timeline files, Business Signals runs on the V3.3.6.3 source-artifact aggregation contract with public title / candidate dedupe gates, Core Pool source-hygiene gates, and the Enterprise AI / FDE Lens Pool, Community Intelligence uses local logged-in collection before GitHub publication, Intelligence Map publishes the weekly report entry / detail route and source-backed opportunity radar panels, and Hermes supervises all three active daily lanes with staged handoff at 09:30 / 09:45 / 09:55.
 
 ## Business Signals GitHub Chain
 
