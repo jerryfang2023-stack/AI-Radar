@@ -161,15 +161,9 @@ function isCriticalFile(file = "") {
 function detectRetiredFlags(values) {
   const haystack = values.join("\n").toLowerCase();
   const terms = [
-    "daily observation",
-    "business brief",
-    "trend report",
-    "publiccopy",
-    "cardcopy",
-    "guanlan copy-style",
-    "opinion lane",
-    "v2 four-column",
-    "old v2 frontstage",
+    "legacy-output-lane",
+    "legacy-publication-gate",
+    "legacy-frontstage",
   ];
   return terms.filter((term) => haystack.includes(term));
 }

@@ -10,7 +10,7 @@ priority: current
 
 This is the only active rule source for V3 business-signal production.
 
-Historical V2 site rules, daily-observation writing rules, business-brief rules, trend-report writing rules, public-copy gates, cardcopy gates, and broad "Guanlan judgment" rules are not active execution sources for V3.
+Historical site rules, legacy content-output routes, legacy publication templates, legacy copy gates, and broad "Guanlan judgment" rules are not active execution sources for V3.
 
 V3 now has one core goal: preserve and display high-value AI business evidence as Cards, then use those Cards as knowledge-base material for relationship graph and trend-candidate analysis.
 
@@ -25,7 +25,7 @@ V3 produces and preserves:
 - relationship graph inputs;
 - trend candidates.
 
-V3 does not require daily observation, trend report, or business brief output.
+V3 does not require legacy content-output routes.
 
 ## 2. Raw Rules
 
@@ -84,12 +84,14 @@ Pool is the screened evidence pool.
 
 Pool type is not Card type. A Pool item can be useful evidence without becoming a product, funding, or case Card.
 
+`important_technical_trend` is context evidence for trend candidates or product/service source repair. It is not a formal Signal Card importance type unless the same original source also proves a dated product/service launch, financing event, customer deployment, procurement event, partnership, or production rollout.
+
 Pool does not write frontstage copy and does not replace source text with generated interpretation.
 
 Pool quantity and balance:
 
 - automation gate: keep at least 75 Pool items, with at least 60 routed Pool items and at least 30 usable `core_pool` items;
-- required lanes must cover funding, product/service, customer/case, vertical deployment, technical trend, and viewpoint/article context when available;
+- required business-signal lanes must cover funding, product/service, customer/case, and vertical deployment; technical trend remains Pool / trend-candidate context and must not fill formal Signal Card quantity;
 - each required importance lane should keep at least 5 Pool candidates before downstream release;
 - large-company items may enter Pool as evidence, but `core_pool` must not be dominated by large-company news;
 - default hard boundary: large-company `core_pool` items should be no more than 10 items and no more than 35% of usable `core_pool`;
@@ -131,7 +133,7 @@ Signal Card entry gate is expressed as six required gates. Do not re-expand thes
 
 3. `business_signal_scope`
    - Must map to a current business-signal path that can become `product_service`, `funding`, or `case`.
-   - Cannot be deleted because V3 Business Signals no longer publishes generic opinion, policy, ethics, article-summary, or retired daily-observation outputs as formal Cards.
+   - Cannot be deleted because V3 Business Signals no longer publishes generic opinion, policy, ethics, article-summary, or retired content outputs as formal Cards.
 
 4. `valid_page_type`
    - Must be a dated concrete event page, not a homepage, directory, docs index, catalog, package/model listing, marketplace listing, search result, generic report, or broad list unless that page itself contains a concrete dated event.
@@ -236,7 +238,7 @@ Opinion content is not part of the current V3 business-signal relationship graph
 
 ## 7. Trend Candidate Rules
 
-Trend candidate is not trend report.
+Trend candidate is an internal candidate object, not a long-form publication route.
 
 Do not create a trend candidate from:
 

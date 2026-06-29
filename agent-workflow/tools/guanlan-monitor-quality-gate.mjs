@@ -88,6 +88,27 @@ function parseFailedSources(text = "") {
     .filter(Boolean);
 }
 
+function isDiagnosticSourceNote(value = "") {
+  return /pre-gate filtered|targeted pool\/core refill cycle \d+ added|(?:noise_term|missing_ai_anchor_in_result|job_or_salary_page):?[^=]*=\d+|core_non_large=\d+\/\d+/iu.test(String(value || ""));
+}
+
+function isProviderFallbackNote(value = "") {
+  return /fallback for query|free quota limit|quota|rate limit|429|401|403|gateway|timeout|temporarily unavailable|provider/iu.test(String(value || ""));
+}
+
+function splitSourceFailureRecovery(items = [], fallbackRecovered = false) {
+  const recovered = [];
+  const unrecovered = [];
+  for (const item of items) {
+    if (isDiagnosticSourceNote(item) || (fallbackRecovered && isProviderFallbackNote(item))) {
+      recovered.push(item);
+    } else {
+      unrecovered.push(item);
+    }
+  }
+  return { recovered, unrecovered };
+}
+
 function weekdayNameForDate(value = "") {
   const match = String(value).match(/^(\d{4})-(\d{2})-(\d{2})$/u);
   if (!match) return "";
@@ -182,7 +203,30 @@ function hasTextContamination(text = "") {
   const length = value.length || 1;
   const replacementCount = (value.match(/\uFFFD/gu) || []).length;
   const controlCount = (value.match(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/gu) || []).length;
-  return /%PDF|endobj|xref|JFIF|Exif|Photoshop 3\.0|stream\s+x|浼佷笟|鍟嗕笟|鎯呮|寰呯|鍙戝竷|铻嶈祫|瀹屾垚|鍏紑|杩借釜/iu.test(value)
+  const mojibakeMarkers = [
+    "\u947e\u5cf0\u7df1",
+    "\u93c9\u30e6\u7c2e",
+    "\u93c4\u5267\u305a",
+    "\u6d7c\u4f77\u7b1f",
+    "\u935f\u55d5\u7b1f",
+    "\u93af\u546e",
+    "\u5bf0\u546f",
+    "\u9359\u621d\u7af7",
+    "\u94fb\u5d88\u796b",
+    "\u7039\u5c7e\u579a",
+    "\u934f\ue100\u7d11",
+    "\u6769\u501f\u91dc",
+    "\u9358\u71b8\u6783",
+    "\u9422\u3129\u20ac",
+    "\u6d93\u6c2c\u59df",
+    "\u6d5c\u0443\u6427",
+    "\u59af\u2033\u7037",
+    "\u93ba\u3125\u56ad",
+    "\u5bee\u20ac\u9359",
+    "\u93c5\u9e3f\u5158",
+  ];
+  return /%PDF|endobj|xref|JFIF|Exif|Photoshop 3\.0|stream\s+x/iu.test(value)
+    || mojibakeMarkers.some((marker) => value.includes(marker))
     || controlCount >= 3
     || replacementCount >= 8
     || replacementCount / length > 0.003;
@@ -276,6 +320,7 @@ function buildDownstreamRecommendation(metrics, hardFailed) {
     reasons.push("large-company items dominate core_pool");
   }
   if (metrics.coreNonLargeVendorCount < metrics.coreNonLargeVendorMin) reasons.push("non-large-company core_pool insufficient");
+  if (metrics.unrecoveredFailedSourcesCount > metrics.unrecoveredFailedSourcesMax) reasons.push("unrecovered failed source paths");
 
   if (!hardFailed.length) {
     return {
@@ -302,6 +347,7 @@ function buildDownstreamRecommendation(metrics, hardFailed) {
     "core_pool items degraded by Raw QC",
     "large-company items dominate core_pool",
     "non-large-company core_pool insufficient",
+    "unrecovered failed source paths",
   ]);
   const severe = reasons.some((item) => severeReasons.has(item));
   if (severe) {
@@ -412,6 +458,7 @@ export function runGuanlanMonitorQualityGate({
   const coreLargeVendorMax = Number(hard.core_large_vendor_max ?? 5);
   const coreLargeVendorRatioMax = Number(hard.core_large_vendor_ratio_max ?? 0.35);
   const coreNonLargeVendorMin = Number(hard.core_non_large_vendor_min ?? 0);
+  const unrecoveredFailedSourcesMax = Number(hard.unrecovered_failed_sources_max ?? 0);
   const importanceCoverageMustNone = hard.importance_coverage_gaps_must_be_none ?? hard[legacyRawCoverageGateKey] ?? true;
   const poolImportanceCoverageMustNone = hard.pool_importance_coverage_gaps_must_be_none ?? hard[legacyPoolCoverageGateKey] ?? true;
   const nonCommunityPathMin = Number(keywordReq.non_community_paths_min || 2);
@@ -433,16 +480,11 @@ export function runGuanlanMonitorQualityGate({
     rawCoverageGapEntries.length > 0 &&
     weekendPoolGapMin > 0 &&
     rawCoverageGapEntries.every((entry) => entry.actual >= weekendPoolGapMin);
-  // When raw count meets the configured hard minimum, coverage gaps are
-  // acceptable — we have enough data volume, just not perfect distribution
-  // across importance types. This unblocks card generation when search APIs
-  // fail but raw data is still sufficient.
   const effectiveRawMinHard = weekend.active
     ? Math.min(rawMinHard, Number(weekendAdjusted.raw_count_min ?? rawMinHard))
     : rawMinHard;
-  const rawCountSufficientForCoverage = rawCount >= effectiveRawMinHard;
-  const coverageGapAcceptable = weekend.active ? weekendRawCoveragePassed : rawCountSufficientForCoverage;
-  const poolCoverageGapAcceptable = weekend.active ? weekendPoolCoveragePassed : rawCountSufficientForCoverage;
+  const coverageGapAcceptable = weekend.active ? weekendRawCoveragePassed : false;
+  const poolCoverageGapAcceptable = weekend.active ? weekendPoolCoveragePassed : false;
   const effectiveCorePoolMinHard = weekend.active
     ? Math.min(corePoolMinHard, Number(weekendAdjusted.core_pool_min ?? corePoolMinHard))
     : corePoolMinHard;
@@ -452,6 +494,19 @@ export function runGuanlanMonitorQualityGate({
   const effectiveCoreNonLargeVendorMin = weekend.active
     ? Math.min(coreNonLargeVendorMin, Number(weekendAdjusted.core_non_large_vendor_min ?? coreNonLargeVendorMin))
     : coreNonLargeVendorMin;
+  const sourceFallbackRecovered =
+    rawCount >= effectiveRawMinHard &&
+    poolCount >= poolMinHard &&
+    routedPoolCount >= routedPoolMinHard &&
+    keywordNonCommunityCount >= nonCommunityMinHard &&
+    corePoolCount >= effectiveCorePoolMinHard &&
+    usableCoreEvidenceCount >= effectiveUsableCoreEvidenceMinHard &&
+    coreNonLargeVendorCount >= effectiveCoreNonLargeVendorMin &&
+    !coverageGapFlag &&
+    !poolCoverageGapFlag;
+  const sourceFailureRecovery = splitSourceFailureRecovery(failedSources, sourceFallbackRecovered);
+  const recoveredFailedSources = sourceFailureRecovery.recovered;
+  const unrecoveredFailedSources = sourceFailureRecovery.unrecovered;
 
   const hardChecks = [
     { key: "raw_count_min", passed: rawCount >= effectiveRawMinHard, value: `${rawCount}/${effectiveRawMinHard}${weekend.active ? `; default=${rawMinHard}` : ""}` },
@@ -471,6 +526,7 @@ export function runGuanlanMonitorQualityGate({
     { key: "core_large_vendor_max", passed: coreLargeVendorCount <= coreLargeVendorMax, value: `${coreLargeVendorCount}/${coreLargeVendorMax}` },
     { key: "core_large_vendor_ratio_max", passed: coreLargeVendorRatio <= coreLargeVendorRatioMax, value: `${coreLargeVendorRatio.toFixed(2)}/${coreLargeVendorRatioMax}` },
     { key: "core_non_large_vendor_min", passed: coreNonLargeVendorCount >= effectiveCoreNonLargeVendorMin, value: `${coreNonLargeVendorCount}/${effectiveCoreNonLargeVendorMin}${weekend.active ? `; default=${coreNonLargeVendorMin}` : ""}` },
+    { key: "unrecovered_failed_sources_max", passed: unrecoveredFailedSources.length <= unrecoveredFailedSourcesMax, value: `${unrecoveredFailedSources.length}/${unrecoveredFailedSourcesMax}; total=${failedSources.length}; recovered=${recoveredFailedSources.length}` },
     {
       key: "importance_coverage_gaps_must_be_none",
       passed: importanceCoverageMustNone ? !coverageGapFlag || coverageGapAcceptable : true,
@@ -489,7 +545,7 @@ export function runGuanlanMonitorQualityGate({
     clamp(
       0.45 * clamp(usableCoreEvidenceCount / Math.max(usableCoreEvidenceMinHard, 1)) +
         0.35 * clamp(keywordNonCommunityCount / Math.max(nonCommunityMinHard, 1)) +
-        0.2 * clamp(failedSources.length ? 0.2 : 1)
+        0.2 * clamp(unrecoveredFailedSources.length ? 0.2 : (failedSources.length ? 0.8 : 1))
     );
   const contentQualityScore =
     weights.content_quality *
@@ -574,6 +630,10 @@ export function runGuanlanMonitorQualityGate({
       offTopicMaxHard,
       corePoolMinHard: effectiveCorePoolMinHard,
       usableCoreEvidenceMinHard: effectiveUsableCoreEvidenceMinHard,
+      failedSourcesCount: failedSources.length,
+      recoveredFailedSourcesCount: recoveredFailedSources.length,
+      unrecoveredFailedSourcesCount: unrecoveredFailedSources.length,
+      unrecoveredFailedSourcesMax,
     },
     hardFailed
   );
@@ -581,7 +641,8 @@ export function runGuanlanMonitorQualityGate({
   const keyRisks = [
     hardFailed.length ? `hard_gates_failed=${hardFailed.map((item) => item.key).join(", ")}` : "",
     routedPoolCount < routedPoolMinHard ? `routed_pool_insufficient=${routedPoolCount}/${routedPoolMinHard}` : "",
-    failedSources.length ? `failed_sources=${failedSources.length}` : "",
+    unrecoveredFailedSources.length ? `unrecovered_failed_sources=${unrecoveredFailedSources.length}` : "",
+    failedSources.length && !unrecoveredFailedSources.length ? `recovered_source_failures=${recoveredFailedSources.length}` : "",
     themeConcentrationFlag ? `theme_concentration_warning=${logBullets.theme_concentration_warning}` : "",
     importanceCoverageValue !== "none" ? `importance_coverage_gaps=${importanceCoverageValue}` : "",
     poolImportanceCoverageValue !== "none" ? `pool_importance_coverage_gaps=${poolImportanceCoverageValue}` : "",
@@ -638,8 +699,10 @@ export function runGuanlanMonitorQualityGate({
   if (coreNonLargeVendorCount < effectiveCoreNonLargeVendorMin) {
     skillFeedback.push("Expand Raw and Pool around emerging companies, customer deployments, vertical workflow cases, funding, procurement, pricing and regulatory evidence until non-large-company core_pool has enough depth.");
   }
-  if (failedSources.length) {
-    skillFeedback.push("Repair failed sources or document fallback paths before downstream use.");
+  if (unrecoveredFailedSources.length) {
+    skillFeedback.push("Repair unrecovered failed sources before downstream use.");
+  } else if (failedSources.length) {
+    skillFeedback.push("Source-provider failures were recovered by fallback coverage; keep them in Hermes supply-risk review without blocking release.");
   }
   fs.mkdirSync(reportsDir, { recursive: true });
   const reportPath = path.join(reportsDir, `${targetDate}-guanlan-monitor-quality-gate.md`);
@@ -689,6 +752,8 @@ export function runGuanlanMonitorQualityGate({
     `- core_large_vendor_ratio: ${coreLargeVendorRatio.toFixed(3)}`,
     `- importance_coverage_gaps: ${importanceCoverageValue}`,
     `- pool_importance_coverage_gaps: ${poolImportanceCoverageValue}`,
+    `- recovered_failed_sources_count: ${recoveredFailedSources.length}`,
+    `- unrecovered_failed_sources_count: ${unrecoveredFailedSources.length}`,
     `- failed_sources: ${failedSources.length ? failedSources.join("; ") : "none"}`,
     `- evidence_gaps: ${logBullets.evidence_gaps || "unknown"}`,
     `- fallback_used: ${logBullets.fallback_used || "unknown"}`,
@@ -773,6 +838,9 @@ export function runGuanlanMonitorQualityGate({
       core_non_large_vendor_count: coreNonLargeVendorCount,
       core_large_vendor_ratio: coreLargeVendorRatio,
       failed_sources_count: failedSources.length,
+      recovered_failed_sources_count: recoveredFailedSources.length,
+      unrecovered_failed_sources_count: unrecoveredFailedSources.length,
+      unrecovered_failed_sources_max: unrecoveredFailedSourcesMax,
       importance_coverage_gaps: importanceCoverageValue,
       pool_importance_coverage_gaps: poolImportanceCoverageValue,
     },

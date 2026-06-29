@@ -288,7 +288,7 @@ jobs:
           node agent-workflow/tools/generate-asset-cards-from-pool.mjs \
             --date="${RUN_DATE}" \
             --require-final-qc=false \
-            --signal-target=10 \
+            --frontstage-top10-target=10 \
             --trend-candidates=false \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-assets.log"
 

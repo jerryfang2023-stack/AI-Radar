@@ -100,11 +100,11 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 
 ## Must Not Return
 
-- V2 four-column pages, old homepage, old trend page, old business-brief page.
-- Daily observation, trend report, or business brief as required outputs.
+- V2 four-column pages, old homepage, and old content-output pages.
+- Legacy content-output routes as required outputs.
 - First-Line Viewpoints / follow-builders mixed into Business Signals, Relationship Graph, or Trend Candidates.
 - Relationship Graph reverting to large prose cards instead of visual nodes and edges.
-- Trend module reverting to trend-report prose; current trend candidates only explain what the pattern is, where it appears, and evidence boundaries.
+- Trend module reverting to long-form publication prose; current trend candidates only explain what the pattern is, where it appears, and evidence boundaries.
 - Business Signals and First-Line Viewpoints using different topbar structures or heights.
 - Community Intelligence showing duplicate keyword-hit posts, backend diagnostic fields, placeholder tags such as `待确认`, or visible internal scores.
 - GitHub daily chain only producing temporary artifacts without persisting Raw / Pool / Card / site data.

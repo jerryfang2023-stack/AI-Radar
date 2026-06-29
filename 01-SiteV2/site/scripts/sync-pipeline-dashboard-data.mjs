@@ -233,7 +233,15 @@ function isConvertible(record) {
   const status = record.rawStatus.toLowerCase();
   const positiveRoute = routes.some((route) => ["core_pool", "emerging_pool", "user_feedback_pool"].includes(route));
   const deadEnd = routes.length > 0 && routes.every((route) => ["index_only", "discard", "watchlist"].includes(route));
-  const usableDirection = usable.some((item) => ["case", "change", "trend", "daily_observation", "briefing", "heatmap"].includes(item));
+  const usableDirection = usable.some((item) => [
+    "case",
+    "business_change",
+    "change",
+    "trend_candidate_context",
+    "trend",
+    "signal_card_candidate",
+    "relationship_graph_input",
+  ].includes(item));
   return ["pooled", "candidate", "indexed"].includes(status)
     && !routes.includes("discard")
     && !deadEnd
@@ -393,7 +401,6 @@ async function collectPipelineData() {
       addAssetFieldCount(day, type, "assetStatus", frontmatter.status);
       addAssetFieldCount(day, type, "assetLevels", frontmatter.asset_level);
       addAssetFieldCount(day, type, "assetEvidenceGates", frontmatter.evidence_gate);
-      addAssetFieldCount(day, type, "assetCopyGates", frontmatter.cardcopy_gate || frontmatter.frontend_copy_gate);
     }
   }
 

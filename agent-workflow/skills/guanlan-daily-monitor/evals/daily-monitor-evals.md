@@ -33,7 +33,7 @@ Run these pass/fail checks when running, repairing, or updating the current Wave
    - Fail when monitor startup failures are handled only by repeated late schedule windows without a dated Hermes report or skill eval / example prevention artifact.
 
 10. `monitor_parameter_alignment`
-    - Pass when Business Signals PR, production-chain dry run, Hermes recovery dispatch, and manual skill examples share the same production monitor baseline: diagnostic reference `85`, `search-limit=200`, `search-path-query-limit=5`, `gdelt-query-limit=12`, `hn-limit=8`, `fetch-timeout-ms=20000`, `snapshot-timeout-ms=16000`, and `monitor-timeout-ms=840000`.
+    - Pass when Business Signals PR, production-chain dry run, Hermes recovery dispatch, and manual skill examples share the same production monitor baseline: diagnostic reference `85`, `search-limit=200`, `search-path-query-limit=5`, `gdelt-query-limit=12`, `hn-limit=8`, `fetch-timeout-ms=20000`, `snapshot-timeout-ms=16000`, and `monitor-timeout-ms=900000`.
     - Pass when HN remains feedback-only and is not expanded as the primary fix for routed Pool / Core Pool shortages.
     - Fail when dry-run or skill examples keep lightweight historical parameters such as `search-limit=30`, `search-path-query-limit=1`, `gdelt-query-limit=4`, `hn-limit=20`, or diagnostic `pass-score=80`.
 

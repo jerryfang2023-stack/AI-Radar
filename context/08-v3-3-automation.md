@@ -34,7 +34,7 @@ Current monitor parameter baseline:
 - `--hn-limit=8`;
 - `--fetch-timeout-ms=20000`;
 - `--snapshot-timeout-ms=16000`;
-- `--monitor-timeout-ms=840000`.
+- `--monitor-timeout-ms=900000`.
 
 The production PR workflow, dry-run workflow, Hermes early handoff dispatch, recovery watchdog dispatch, and skill examples must stay aligned to this baseline. HN remains feedback-only discovery and should not be expanded to fix routed Pool or Core Pool shortages; those failures require better original-source capture and Pool routing.
 
@@ -44,7 +44,7 @@ Execution order:
 2. Skip only the business-signal chain when the day's Raw / Pool / signal assets already exist on `main`.
 3. Run Daily Monitor with QC.
 4. Persist Raw / Pool assets.
-5. Generate 10 business-signal Cards.
+5. Generate Signal Card assets from all qualified Core Pool items, then let the frontstage selector publish the active-date Top10.
 6. Run Pool-to-Card dedupe and gates.
 7. Build business-signal frontstage data first: `01-SiteV2/site/data/v3-data-observation-desk.json`, and the Hermes Agent intelligence entry: `01-SiteV2/site/data/intelligence-graph-index.json`.
 8. Run the unified Business frontstage gate: `agent-workflow/tools/assert-business-signals-frontstage.mjs --date=<date>`. This wraps source-first and frontstage regression, classifies failures as Top10 supply, translation, large-company cap, title/source, source-first, or regression, and must run before dashboard / topic-center work.
@@ -516,6 +516,6 @@ Do not use self-improvement to broaden lane ownership. A Business Signals fix mu
 ## Not Done
 
 - Do not mix follow-builders / builders viewpoints into business signals, relationship graph, or trend candidates.
-- Do not restore daily observation, trend report, or business brief as required outputs.
+- Do not restore legacy content-output routes as required outputs.
 - Do not deploy directly from the automation branch.
 - Do not force local Obsidian sync when local uncommitted changes exist.

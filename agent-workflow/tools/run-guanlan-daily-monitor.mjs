@@ -100,6 +100,7 @@ const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
 const ensure = (dir) => fs.mkdirSync(dir, { recursive: true });
 const writeFile = (file, text) => {
   ensure(path.dirname(file));
+  assertGeneratedIndexTextClean(file, text);
   fs.writeFileSync(file, text, "utf8");
 };
 const resetGeneratedDir = (dir, allowedParent) => {
@@ -574,10 +575,10 @@ function themeConcentrationWarning(items) {
 const defaultRequiredImportanceTypes = [
   "important_case",
   "important_funding",
-  "important_technical_trend",
   "important_product_or_service",
   "important_vertical_solution",
 ];
+const formalCardCoreImportanceTypes = new Set(defaultRequiredImportanceTypes);
 
 function requiredImportanceTypes() {
   const configured = keywordMonitoring.policy?.required_importance_types;
@@ -680,7 +681,7 @@ function slugify(text = "") {
 }
 
 function looksMojibake(text = "") {
-  return /[ÃÂ�æäåèéï¼]/u.test(text);
+  return /[ÃÂ\ufffdæäåèéï¼]/u.test(text);
 }
 
 function cleanText(primary = "", fallback = "") {
@@ -733,7 +734,7 @@ function validDateParts(year, month, day) {
 
 function acquisitionSourceLevelFor(item = {}) {
   const channel = String(item.acquisition_channel || "").toLowerCase();
-  if (/aihot|paused-opinion-source|search|rss|aggregator/u.test(channel)) return "M";
+  if (/aihot|search|rss|aggregator/u.test(channel)) return "M";
   return "";
 }
 
@@ -741,10 +742,9 @@ function isMixedDiscoveryChannel(item = {}) {
   return acquisitionSourceLevelFor(item) === "M";
 }
 
-function isFollowoperatorsSocialSource(item = {}) {
+function isSocialDiscoverySource(item = {}) {
   const source = `${item.source || ""} ${item.url || ""}`.toLowerCase();
-  return item.acquisition_channel === "paused-opinion-source"
-    && /x\.com|twitter\.com|linkedin\.com|paused-opinion-source|operators|founder|ceo|cto|creator|operator|community|social/iu.test(source);
+  return /x\.com|twitter\.com|linkedin\.com|operators|founder|ceo|cto|creator|operator|community|social/iu.test(source);
 }
 
 function isAIHotDailySelected(item = {}) {
@@ -798,7 +798,7 @@ function classify(item) {
   const researchStatus = researchStatusFor(item);
   const registryRule = registryRuleFor(item);
 
-  if (isFollowoperatorsSocialSource(item)) {
+  if (isSocialDiscoverySource(item)) {
     return { level: "C", type: "operators", acquisition_source_level: "M", research_status: researchStatus };
   }
 
@@ -1221,13 +1221,36 @@ function isNonTextContentType(contentType = "") {
   );
 }
 
+const MOJIBAKE_MARKER_NEEDLES = [
+  "\u947e\u5cf0\u7df1",
+  "\u93c9\u30e6\u7c2e",
+  "\u93c4\u5267\u305a",
+  "\u6d7c\u4f77\u7b1f",
+  "\u935f\u55d5\u7b1f",
+  "\u93af\u546e",
+  "\u5bf0\u546f",
+  "\u9359\u621d\u7af7",
+  "\u94fb\u5d88\u796b",
+  "\u7039\u5c7e\u579a",
+  "\u934f\ue100\u7d11",
+  "\u6769\u501f\u91dc",
+  "\u9358\u71b8\u6783",
+  "\u9422\u3129\u20ac",
+  "\u6d93\u6c2c\u59df",
+  "\u6d5c\u0443\u6427",
+  "\u59af\u2033\u7037",
+  "\u93ba\u3125\u56ad",
+  "\u5bee\u20ac\u9359",
+  "\u93c5\u9e3f\u5158",
+];
+
 function textHygieneDiagnostics(text = "") {
   const raw = String(text || "");
   const length = raw.length || 1;
   const replacementCount = (raw.match(/\uFFFD/gu) || []).length;
   const controlCount = (raw.match(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/gu) || []).length;
   const binaryMarkerCount = (raw.match(/%PDF|endobj|xref|JFIF|Exif|Photoshop 3\.0|stream\s+x[\u0000-\uFFFF]{0,4}\uFFFD/giu) || []).length;
-  const mojibakeCount = (raw.match(/浼佷笟|鍟嗕笟|鎯呮|寰呯|鍙戝竷|铻嶈祫|瀹屾垚|鍏紑|杩借釜|鍘熸枃|鐢ㄩ€?/gu) || []).length;
+  const mojibakeCount = MOJIBAKE_MARKER_NEEDLES.filter((marker) => raw.includes(marker)).length;
   return {
     replacement_count: replacementCount,
     replacement_ratio: Number((replacementCount / length).toFixed(4)),
@@ -1238,6 +1261,14 @@ function textHygieneDiagnostics(text = "") {
     binary_contaminated: binaryMarkerCount > 0 || controlCount >= 3 || replacementCount >= 8 || replacementCount / length > 0.003,
     mojibake_contaminated: mojibakeCount > 0,
   };
+}
+
+function assertGeneratedIndexTextClean(file = "", text = "") {
+  if (!/(?:raw|pool)-candidates\.md$/iu.test(String(file || ""))) return;
+  const diagnostics = textHygieneDiagnostics(text);
+  if (diagnostics.mojibake_contaminated || diagnostics.binary_contaminated) {
+    throw new Error(`Refusing to write contaminated generated index ${rel(file)}: mojibake=${diagnostics.mojibake_marker_count}, replacement=${diagnostics.replacement_count}, binary=${diagnostics.binary_marker_count}`);
+  }
 }
 
 function readableDiagnostics(text = "", method = "") {
@@ -1665,7 +1696,7 @@ function hasEvidenceHash(snapshot = {}) {
 function sourceVolatility(item = {}) {
   const host = urlHost(item.url || "");
   const text = `${item.source || ""} ${item.source_type || ""} ${host} ${item.acquisition_channel || ""}`.toLowerCase();
-  if (/linkedin\.com|x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social|paused-opinion-source/u.test(text)) return "high";
+  if (/linkedin\.com|x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social/u.test(text)) return "high";
   if (/aihot|newsletter|substack|medium|producthunt|github/u.test(text)) return "medium";
   return "low";
 }
@@ -1676,14 +1707,14 @@ function isCommunitySource(item = {}) {
   const acquisitionChannel = String(item.acquisition_channel || "").toLowerCase();
   const sourceRole = String(item.source_role || item.sourceRole || "").toLowerCase();
   const directSourceText = `${sourceType} ${host} ${acquisitionChannel}`.toLowerCase();
-  if (/linkedin\.com|x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|community|social|paused-opinion-source/u.test(directSourceText)) {
+  if (/linkedin\.com|x\.com|twitter\.com|reddit\.com|news\.ycombinator\.com|hn\.algolia|community|social/u.test(directSourceText)) {
     return true;
   }
   if (/resolved_original_source|primary_source/u.test(sourceRole) && host) {
     return false;
   }
   const discoveryText = String(item.source || "").toLowerCase();
-  return /hacker news|community|social|paused-opinion-source/u.test(discoveryText);
+  return /hacker news|community|social/u.test(discoveryText);
 }
 
 function communityNameFor(item = {}) {
@@ -1768,11 +1799,11 @@ function excerptType(text = "") {
 }
 
 function supportsForExcerpt(type) {
-  const supports = new Set(["daily_observation", "heatmap"]);
-  if (["company_action", "product_update", "workflow_change"].includes(type)) supports.add("change");
+  const supports = new Set(["signal_card_candidate", "relationship_graph_input"]);
+  if (["company_action", "product_update", "workflow_change"].includes(type)) supports.add("business_change");
   if (["case_detail", "company_action", "workflow_change", "number"].includes(type)) supports.add("case");
   if (["opinion", "quote"].includes(type)) supports.add("viewpoint");
-  if (["company_action", "workflow_change", "funding", "number"].includes(type)) supports.add("trend");
+  if (["company_action", "workflow_change", "funding", "number"].includes(type)) supports.add("trend_candidate_context");
   return [...supports];
 }
 
@@ -1948,11 +1979,10 @@ function usableFor(item, quality, scores, excerpts) {
   return {
     viewpoint: coreEvidence && (types.has("opinion") || types.has("quote")),
     case: gate.evidenceObjectUsable && coreEvidence && (types.has("case_detail") || scores.case_richness >= 3),
-    change: gate.evidenceObjectUsable && coreEvidence && ["company_action", "product_update", "workflow_change"].some((type) => types.has(type)),
-    trend: gate.evidenceObjectUsable && coreEvidence && scores.trend_relevance >= 4,
-    daily_observation: gate.evidenceObjectUsable && coreEvidence && scores.guanlan_relevance >= 3,
-    heatmap: gate.evidenceObjectUsable && scores.guanlan_relevance >= 3,
-    briefing: gate.evidenceObjectUsable && coreEvidence && scores.importance_score >= 4 && scores.importance_type !== "supporting_signal",
+    business_change: gate.evidenceObjectUsable && coreEvidence && ["company_action", "product_update", "workflow_change"].some((type) => types.has(type)),
+    relationship_graph_input: gate.evidenceObjectUsable && coreEvidence && scores.guanlan_relevance >= 3,
+    trend_candidate_context: gate.evidenceObjectUsable && coreEvidence && scores.trend_relevance >= 4,
+    signal_card_candidate: gate.evidenceObjectUsable && coreEvidence && scores.importance_score >= 4 && formalCardCoreImportanceTypes.has(scores.importance_type),
     emerging_pool: gate.evidenceObjectUsable && scores.emerging_signal_score >= 4,
     user_feedback_pool: gate.evidenceObjectUsable && community && coreEvidence,
     watchlist: gate.evidenceObjectUsable && (scores.emerging_signal_score >= 3 || scores.guanlan_relevance >= 3),
@@ -2003,7 +2033,7 @@ function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecisi
   if (!gate.evidenceObjectUsable) {
     return [isAIHotDailySelected(item) || quality !== "failed" ? "index_only" : "discard"];
   }
-  if (coreEvidence && scores.importance_score >= 4 && !["none", "supporting_signal"].includes(scores.importance_type)) routes.add("core_pool");
+  if (coreEvidence && scores.importance_score >= 4 && formalCardCoreImportanceTypes.has(scores.importance_type)) routes.add("core_pool");
   if (usable.emerging_pool) routes.add("emerging_pool");
   if (usable.user_feedback_pool) routes.add("user_feedback_pool");
   if (usable.watchlist && !routes.has("core_pool")) routes.add("watchlist");
@@ -3998,11 +4028,6 @@ const targetedRefillQueriesByImportance = {
     `AI agent vertical SaaS customer workflow deployment case ${date.slice(0, 4)}`,
     `enterprise AI deployment industry workflow customer story ${date.slice(0, 4)}`,
   ],
-  important_technical_trend: [
-    `model release inference cost reduction enterprise adoption ${date.slice(0, 4)}`,
-    `AI infrastructure launch inference optimization enterprise deployment ${date.slice(0, 4)}`,
-    `agentic AI platform architecture enterprise adoption release ${date.slice(0, 4)}`,
-  ],
 };
 
 const targetedRefillPathByImportance = {
@@ -4010,7 +4035,6 @@ const targetedRefillPathByImportance = {
   important_funding: "capital_startup",
   important_product_or_service: "official_original",
   important_vertical_solution: "industry_landing",
-  important_technical_trend: "a_media_gdelt",
 };
 
 const targetedCoreRefillImportanceOrder = [
@@ -4018,7 +4042,6 @@ const targetedCoreRefillImportanceOrder = [
   "important_funding",
   "important_vertical_solution",
   "important_product_or_service",
-  "important_technical_trend",
 ];
 
 function keywordPathById(id) {
@@ -4382,7 +4405,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
     `raw_dedupe_buffer: ${rawDedupeBuffer}`,
     `aihot_count: ${items.filter((item) => item.acquisition_channel === "aihot").length}`,
     `keyword_search_count: ${items.filter((item) => item.acquisition_channel === "keyword-search").length}`,
-    `follow_operators_count: ${items.filter((item) => item.acquisition_channel === "paused-opinion-source").length}`,
+    `social_discovery_count: ${items.filter(isSocialDiscoverySource).length}`,
     `keyword_monitoring_config: ${rel(keywordMonitoringPath)}`,
     `source_registry_config: ${rel(sourceRegistryPath)}`,
     `pool_target: ${poolMinTarget}`,
@@ -4395,7 +4418,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
     "",
     `# ${date} Raw Candidates`,
     "",
-    "说明：本文件由 `agent-workflow/tools/run-guanlan-daily-monitor.mjs` 生成。默认采用三段式策略：AI HOT daily 精选与最近 24 小时全量作为 Raw 主入口，paused-opinion-source 全量进入前沿观点入口，关键词规则补齐海外大厂、垂直赛道、融资、客户采用和行业落地缺口；HN / 社区只作为反馈补充。AI HOT、paused-opinion-source、搜索聚合和社区材料都只是 discovery 入口，进入重要卡片、今日观察或商业内参前必须回到原始 URL，保存全文或当时可见文本，并重新判定页面类型与事件证据。",
+    "说明：本文件由 `agent-workflow/tools/run-guanlan-daily-monitor.mjs` 生成。默认采用 Raw-first 策略：AI HOT、RSS、关键词搜索和 GDELT 作为发现入口，关键词规则补齐海外大厂、垂直赛道、融资、客户采用和行业落地缺口；HN / 社区只作为反馈补充。所有 discovery 入口进入 Business Signals 前必须回到原始 URL，保存全文或当时可见文本，并重新判定页面类型与事件证据。",
     "",
   ];
 
@@ -4612,7 +4635,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
       "",
       "## 采集备注",
       "",
-      `该条目由 ${item.acquisition_channel} 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。`,
+      `该条目由 ${item.acquisition_channel} 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。`,
       "",
     ].join("\n");
     writeFile(originalPath, original);
@@ -4644,7 +4667,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
     "",
     `# ${date} Pool Candidates`,
     "",
-    "说明：本文件是 Raw 后的候选索引，供 guanlan-daily-assets-chain 与 writers 回看 Raw 全文后继续加工。Pool 不替代 Raw，也不直接等于商业信号、前沿观点、变化候选、趋势候选或今日观察结论。",
+    "说明：本文件是 Raw 后的候选索引，供 Business Signals 资产链回看 Raw 全文后继续加工。Pool 不替代 Raw，也不直接等于商业信号 Card、关系图输入或趋势候选结论。",
     "",
   ];
   poolItems.forEach((item, index) => {
@@ -4850,7 +4873,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
     "",
     "## Three-Lane Monitor Policy",
     "",
-    "Default strategy: AI HOT daily selected and full 24h are the primary Raw discovery entrances; keyword rules fill overseas big-company events, vertical product news, startup/funding news, customer adoption and industry landing. paused-opinion-source / operators viewpoints are paused and must not enter business signals. HN / community is feedback only. Important cards must then resolve original text, page type and usable evidence object before publication.",
+    "Default strategy: AI HOT, RSS, keyword search and GDELT are discovery entrances; keyword rules fill overseas big-company events, vertical product news, startup/funding news, customer adoption and industry landing. Builder and operator viewpoints are isolated from Business Signals. HN / community is feedback only. Business Signal Cards must resolve original text, page type and usable evidence object before publication.",
     "",
   ].join("\n");
   writeFile(path.join(reportsDir, `${date}-guanlan-daily-monitor-log.md`), log);

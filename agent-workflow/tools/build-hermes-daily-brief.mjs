@@ -264,7 +264,6 @@ function main() {
     monitor_readiness: outcome("monitor-readiness"),
     raw_pool_gate: outcome("raw-pool-gate"),
     asset_generation: outcome("asset-generation"),
-    cardcopy_gate: outcome("cardcopy"),
     pool_to_card_dedupe_gate: outcome("pool-to-card-dedupe"),
     builders_data: outcome("builders-data"),
     builders_gate: outcome("builders-gate"),

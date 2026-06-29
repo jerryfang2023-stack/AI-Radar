@@ -59,14 +59,7 @@ Community Intelligence uses the logged-in scys.com / aipoju.com collection route
 
 ## Paused / Retired
 
-These are not current V3.3 required outputs or execution truth:
-
-- daily observation;
-- business brief / business internal reference;
-- trend report;
-- old homepage, old business-signal page, old trend page, old opinion sidebar;
-- Guanlan frontstage copy-style gate;
-- publiccopy / cardcopy publication blockers.
+Legacy content-output routes, old page modules, and legacy copy gates are not current V3.3 required outputs or execution truth.
 
 Old V2 pages are retired. If old rules conflict with V3.3, remove or rebuild them instead of preserving compatibility.
 

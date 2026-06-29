@@ -59,7 +59,7 @@ function loadSourceTitleTranslations() {
     for (const entry of entries) {
       const sourceTitle = String(entry?.sourceTitle || "").trim();
       const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
-      if (!sourceTitle || !zhTitle) continue;
+      if (!sourceTitle || !zhTitle || publicTextLooksGarbled(zhTitle)) continue;
       map.set(titleTranslationKey(sourceTitle), zhTitle);
     }
     return map;
@@ -198,6 +198,36 @@ function publicContentNeedsTranslation(value = "") {
   return false;
 }
 
+function publicTextLooksGarbled(value = "") {
+  const text = String(value || "");
+  const controlCount = text.match(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/gu)?.length || 0;
+  const replacementCount = text.match(/[\uFFFD\u951F]/gu)?.length || 0;
+  const mojibakeMarkers = [
+    "\u947e\u5cf0\u7df1",
+    "\u93c9\u30e6\u7c2e",
+    "\u93c4\u5267\u305a",
+    "\u6d7c\u4f77\u7b1f",
+    "\u935f\u55d5\u7b1f",
+    "\u93af\u546e",
+    "\u5bf0\u546f",
+    "\u9359\u621d\u7af7",
+    "\u94fb\u5d88\u796b",
+    "\u7039\u5c7e\u579a",
+    "\u934f\ue100\u7d11",
+    "\u6769\u501f\u91dc",
+    "\u9358\u71b8\u6783",
+    "\u9422\u3129\u20ac",
+    "\u6d93\u6c2c\u59df",
+    "\u6d5c\u0443\u6427",
+    "\u59af\u2033\u7037",
+    "\u93ba\u3125\u56ad",
+    "\u5bee\u20ac\u9359",
+    "\u93c5\u9e3f\u5158",
+  ];
+  const mojibakeCount = mojibakeMarkers.filter((marker) => text.includes(marker)).length;
+  return controlCount > 0 || replacementCount >= 2 || mojibakeCount > 0;
+}
+
 function subjectIsMissing(value = "") {
   return String(value || "").trim() === "未标注主体";
 }
@@ -256,6 +286,7 @@ function publicFactLooksLikeTemplateFallback(value = "") {
   if (!text) return true;
   if (/^[A-Z][A-Za-z0-9&.' -]+ customer story$/iu.test(text)) return true;
   if (/^(?:Ltd\.?|Inc\.?|LLC|Corp\.?|Company)\s*(?:\u83b7\u5f97|\u83b7|\u5b8c\u6210)\s*\$?\s*\d/iu.test(text)) return true;
+  if (/来源材料显示，.+涉及.+流程|原文同时出现.+等数字/u.test(text)) return true;
   if (/原文称|的公开案例显示|公开案例显示.*AI\s*正在进入|AI 正在进入客户、采购、商品内容或内部工作流/iu.test(text)) return true;
   return /\u539f\u6587\u6240\u8ff0(?:\u80fd\u529b|\u573a\u666f)/u.test(text)
     || /\u539f\u6587\s*AI\s*\u4e8b\u4ef6/u.test(text)
@@ -271,6 +302,7 @@ function publicFactLooksLikeTemplateFallback(value = "") {
 function top10FactIsWeak(card = {}) {
   const fact = String(card.translatedFact || card.fact || "").trim();
   if (!fact) return true;
+  if (publicTextLooksGarbled(fact)) return true;
   if (publicFactLooksLikeTemplateFallback(fact)) return true;
   if (/^原始来源链接：?https?:\/\//iu.test(fact)) return true;
   if (/公开材料提供了一条可追踪的 AI 商业信号|需继续核对客户、产品和业务结果/u.test(fact)) return true;
@@ -317,7 +349,7 @@ function translatedSourceTitle(value = "") {
 
 function titleBackedByOriginalSource(card = {}) {
   const title = cleanOriginalTitle(card.title || card.displayTitle);
-  if (!title || titleLooksLikeGeneratedTemplate(title)) return false;
+  if (!title || titleLooksLikeGeneratedTemplate(title) || publicTextLooksGarbled(title)) return false;
   return [card.sourceTitle, card.originalTitle]
     .map(cleanOriginalTitle)
     .filter((value) => value && !titleLooksLikeGeneratedTemplate(value))
@@ -505,6 +537,9 @@ for (const card of cards) {
       if (publicContentNeedsTranslation(value)) {
         issues.push(`card ${card.id || "(missing id)"} has untranslated public ${field}: ${String(value).slice(0, 120)}`);
       }
+      if (publicTextLooksGarbled(value)) {
+        issues.push(`card ${card.id || "(missing id)"} has garbled public ${field}: ${String(value).slice(0, 120)}`);
+      }
     }
   }
   const sourceScope = [card.title, card.sourceUrl, card.visibleFragment, card.translatedFact, card.summary].join("\n");
@@ -561,6 +596,9 @@ for (const candidate of payload.corePoolCandidates || []) {
     ]) {
       if (publicContentNeedsTranslation(value)) {
         issues.push(`core pool candidate ${candidate.id || "(missing id)"} has untranslated public ${field}: ${String(value).slice(0, 120)}`);
+      }
+      if (publicTextLooksGarbled(value)) {
+        issues.push(`core pool candidate ${candidate.id || "(missing id)"} has garbled public ${field}: ${String(value).slice(0, 120)}`);
       }
     }
   }

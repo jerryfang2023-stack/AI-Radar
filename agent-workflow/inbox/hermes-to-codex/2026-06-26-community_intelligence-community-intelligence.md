@@ -1,3 +1,11 @@
+status: resolved
+updated_at: 2026-06-29T13:22:04+08:00
+resolved_at: 2026-06-29T13:22:04+08:00
+resolver: codex
+fix_commit: pending
+validation: npm run assert:community-intelligence -- --date=2026-06-29
+prevention_added: not-needed
+
 ﻿status: open
 priority: normal
 lane: community_intelligence
@@ -33,3 +41,9 @@ source: hermes-auto
 ## User Escalation Needed
 
 - no, unless Codex needs GitHub permission, login state, or business judgment.
+
+## Resolution - 2026-06-29T13:22:04+08:00
+
+- fix_commit: pending
+- validation: npm run assert:community-intelligence -- --date=2026-06-29
+- prevention_added: not-needed

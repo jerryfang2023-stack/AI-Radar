@@ -25,29 +25,34 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 6. `candidate_only_reason`
    - Pass when every `candidate_only` Core Pool item has a human-readable not-promoted reason, repair suggestion, and priority.
 
-7. `source_first_details`
+7. `formal_card_event_boundary`
+   - Pass when formal Signal Cards come only from concrete funding, product/service, customer deployment, procurement, partnership, vertical rollout, or production implementation events.
+   - Pass when `important_technical_trend`, builder/opinion posts, newsletters, workforce retraining / public-funding programs, technical guides, architecture articles, docs pages, generic lists, and items marked with missing concrete customer/event evidence stay out of formal Signal Cards unless the same original source proves a dated formal event.
+   - Fail when a context-only technical trend or article is promoted to `core_pool` or Card quantity just to fill Top10.
+
+8. `source_first_details`
    - Pass when Card detail fields come from original source text, Raw evidence, or Pool excerpts, not from tags, `why_selected`, `business_elements`, old summaries, or frontstage fallback fields.
 
-8. `no_detail_duplication`
+9. `no_detail_duplication`
    - Pass when `news fact`, `original points`, `value`, and `visible source excerpt` do not simply repeat the same sentence.
 
-9. `no_title_subject_leak`
+10. `no_title_subject_leak`
    - Pass when `subject` is a company, organization, product, customer, or institution, not a truncated title or headline phrase.
 
-10. `translated_frontstage_titles`
-    - Pass when frontstage titles are complete and Chinese-facing unless the original product/company name must remain English.
+11. `translated_frontstage_titles`
+   - Pass when frontstage titles are complete and Chinese-facing unless the original product/company name must remain English.
 
-11. `internal_language_block`
-    - Pass when frontstage and Hermes JSON do not expose internal production phrases such as `index_only`, `not_fact_signal`, `auto_signal_spec_null`, `fallback`, `backend field`, or stale V2 module names.
+12. `internal_language_block`
+   - Pass when frontstage and Hermes JSON do not expose internal production phrases such as `index_only`, `not_fact_signal`, `auto_signal_spec_null`, `fallback`, `backend field`, or stale V2 module names.
 
-12. `builders_isolated`
-    - Pass when follow-builders viewpoints are not used as business-signal facts, relationship graph evidence, or trend-candidate evidence.
+13. `builders_isolated`
+   - Pass when follow-builders viewpoints are not used as business-signal facts, relationship graph evidence, or trend-candidate evidence.
 
-13. `trend_candidate_boundary`
-    - Pass when no trend candidate is created from a single article, single opinion, index page, or isolated funding event.
+14. `trend_candidate_boundary`
+   - Pass when no trend candidate is created from a single article, single opinion, index page, or isolated funding event.
 
-14. `hermes_contract`
-    - Pass when `site/data/intelligence-graph-index.json` is valid JSON and states that Top10 is presentation-only while all Core Pool candidates are available for analysis.
+15. `hermes_contract`
+   - Pass when `site/data/intelligence-graph-index.json` is valid JSON and states that Top10 is presentation-only while all Core Pool candidates are available for analysis.
 
 ## Repair Loop
 

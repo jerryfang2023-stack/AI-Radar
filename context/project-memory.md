@@ -27,8 +27,8 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 ## Non-Negotiable Rules
 
 - Deploy through GitHub Pages only. Netlify is retired and must not be used as a fallback.
-- Do not restore daily observation, business brief, or long-form trend report as required outputs.
-- Do not restore publiccopy, cardcopy, or Guanlan copy-style gates as publication blockers.
+- Do not restore legacy content-output routes as required outputs.
+- Do not restore legacy copy gates as publication blockers.
 - Builders / First-Line Viewpoints must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 - Community posts are demand signals unless recaptured through source-backed business evidence.
 - If an old rule conflicts with current V3.3 context, rebuild or delete the old route instead of preserving compatibility.

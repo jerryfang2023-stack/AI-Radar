@@ -41,7 +41,7 @@ Produces:
 - monitor logs;
 - QC handoff.
 
-Does not produce articles, briefs, trend reports, frontstage copy, or recommendations.
+Does not produce legacy content outputs, frontstage copy, or recommendations.
 
 ### B. Raw / Pool / Card
 
@@ -64,7 +64,7 @@ Current business-signal Card types:
 - `funding`;
 - `case`.
 
-Default daily target: 10 signal cards.
+Default frontstage target: exactly 10 signal cards. Asset generation should cover all qualified Core Pool items before the frontstage Top10 selector runs.
 
 ### C. First-Line Viewpoints
 
@@ -96,7 +96,7 @@ Reads accepted business-signal Cards and relationship-graph input.
 
 Produces trend candidates only when multiple same-direction signals exist.
 
-Trend candidate is not a trend report.
+Trend candidate is an internal candidate object, not a long-form publication route.
 
 ### F. Site / Dashboard / Obsidian Sync
 
@@ -111,14 +111,7 @@ Runs:
 
 ## Paused / Not Active For V3.3
 
-These are not required outputs for the current bottom layer:
-
-- daily observation;
-- trend report;
-- business brief / business internal reference;
-- publiccopy gate;
-- cardcopy gate;
-- Guanlan-style content judgment.
+Legacy content-output routes, legacy publication templates, and legacy copy gates are not required outputs for the current bottom layer.
 
 If any workflow or script still requires these as blockers for V3.3 business-signal production, treat it as historical contamination and update it.
 

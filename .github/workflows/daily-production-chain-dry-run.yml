@@ -83,7 +83,7 @@ jobs:
             echo "1. Run Daily Monitor with QC."
             echo "2. Confirm final active Raw / Pool post-dedupe counts and historical duplicate count."
             echo "3. Mark same-date downstream assets stale if Raw / Pool changed."
-            echo "4. Regenerate 10 business-signal Card assets in the runner workspace only."
+            echo "4. Regenerate qualified business-signal Card assets in the runner workspace only; frontstage publishes Top10."
             echo "5. Run Pool-to-Card duplicate gate."
             echo "6. Run trend candidate / no-decision shell."
             echo "7. Build Business Signals frontstage data and run the unified Business frontstage gate before operations data."
@@ -122,7 +122,7 @@ jobs:
             --hn-limit=8 \
             --fetch-timeout-ms=20000 \
             --snapshot-timeout-ms=16000 \
-            --monitor-timeout-ms=840000 \
+            --monitor-timeout-ms=900000 \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-monitor-run.log"
 
       - name: Check monitor readiness
@@ -161,7 +161,7 @@ jobs:
           node agent-workflow/tools/generate-asset-cards-from-pool.mjs \
             --date="${RUN_DATE}" \
             --require-final-qc=false \
-            --signal-target=10 \
+            --frontstage-top10-target=10 \
             --trend-candidates=false \
             2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-production-assets.log"
 

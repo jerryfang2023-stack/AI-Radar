@@ -59,7 +59,7 @@ function loadSourceTitleTranslations() {
     for (const entry of entries) {
       const sourceTitle = String(entry?.sourceTitle || "").trim();
       const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
-      if (!sourceTitle || !zhTitle) continue;
+      if (!sourceTitle || !zhTitle || publicTextLooksGarbled(sourceTitle) || publicTextLooksGarbled(zhTitle)) continue;
       const keys = [
         sourceTitle,
         cleanEnglishTitleForDisplay(sourceTitle),
@@ -443,6 +443,10 @@ function normalizedEventText(card = {}) {
 }
 
 function eventFingerprint(card = {}) {
+  const url = canonicalUrl(card.sourceUrl);
+  if (url) return `${card.date}|url|${url}`;
+  const titleKey = normalizedComparableText(card.sourceTitle || card.originalTitle || card.title).slice(0, 120);
+  if (titleKey) return `${card.date}|title|${titleKey}`;
   const text = normalizedEventText(card).toLowerCase();
   if (/prometheus/iu.test(text) && /(?:jeff\s+bezos|bezos|贝索斯)/iu.test(text) && /(?:\$?\s*12\s*b|120\s*亿|12\s*billion)/iu.test(text)) {
     return `${card.date}|prometheus|bezos|12b`;
@@ -464,10 +468,13 @@ function publicSignalKnownEventFingerprint(card = {}) {
 function isDuplicateFrontstageEvent(card = {}, selectedCards = []) {
   const fingerprint = publicSignalKnownEventFingerprint(card) || eventFingerprint(card);
   const eventText = normalizedEventText(card);
+  const subject = normalizedComparableText(card.subject || card.title || card.sourceTitle).slice(0, 72);
   return selectedCards.some((selected) => {
     const selectedFingerprint = publicSignalKnownEventFingerprint(selected) || eventFingerprint(selected);
     if (fingerprint && fingerprint === selectedFingerprint) return true;
-    return textSimilarity(eventText, normalizedEventText(selected)) >= 0.66;
+    const selectedSubject = normalizedComparableText(selected.subject || selected.title || selected.sourceTitle).slice(0, 72);
+    if (subject && selectedSubject && subject !== selectedSubject) return false;
+    return textSimilarity(eventText, normalizedEventText(selected)) >= 0.82;
   });
 }
 
@@ -1026,6 +1033,7 @@ function publicFactLooksLikeTemplateFallback(value = "") {
   if (!text) return true;
   if (/^[A-Z][A-Za-z0-9&.' -]+ customer story$/iu.test(text)) return true;
   if (/^(?:Ltd\.?|Inc\.?|LLC|Corp\.?|Company)\s*(?:\u83b7\u5f97|\u83b7|\u5b8c\u6210)\s*\$?\s*\d/iu.test(text)) return true;
+  if (/来源材料显示，.+涉及.+流程|原文同时出现.+等数字/u.test(text)) return true;
   if (/原文称|的公开案例显示|公开案例显示.*AI\s*正在进入|AI 正在进入客户、采购、商品内容或内部工作流/iu.test(text)) return true;
   return /\u539f\u6587\u6240\u8ff0(?:\u80fd\u529b|\u573a\u666f)/u.test(text)
     || /\u539f\u6587\s*AI\s*\u4e8b\u4ef6/u.test(text)
@@ -1053,7 +1061,30 @@ function publicTextLooksGarbled(value = "") {
   const text = String(value || "");
   const controlCount = text.match(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/gu)?.length || 0;
   const replacementCount = text.match(/[\uFFFD\u951F]/gu)?.length || 0;
-  return controlCount > 0 || replacementCount >= 2;
+  const mojibakeMarkers = [
+    "\u947e\u5cf0\u7df1",
+    "\u93c9\u30e6\u7c2e",
+    "\u93c4\u5267\u305a",
+    "\u6d7c\u4f77\u7b1f",
+    "\u935f\u55d5\u7b1f",
+    "\u93af\u546e",
+    "\u5bf0\u546f",
+    "\u9359\u621d\u7af7",
+    "\u94fb\u5d88\u796b",
+    "\u7039\u5c7e\u579a",
+    "\u934f\ue100\u7d11",
+    "\u6769\u501f\u91dc",
+    "\u9358\u71b8\u6783",
+    "\u9422\u3129\u20ac",
+    "\u6d93\u6c2c\u59df",
+    "\u6d5c\u0443\u6427",
+    "\u59af\u2033\u7037",
+    "\u93ba\u3125\u56ad",
+    "\u5bee\u20ac\u9359",
+    "\u93c5\u9e3f\u5158",
+  ];
+  const mojibakeCount = mojibakeMarkers.filter((marker) => text.includes(marker)).length;
+  return controlCount > 0 || replacementCount >= 2 || mojibakeCount > 0;
 }
 
 function publicDisplayTitleIsReady(title = "") {
@@ -1071,11 +1102,7 @@ function publicCandidateIsDisplayReady(card = {}) {
   const expectedTitle = publicTitleCandidate(sourceFrontstageTitle(card), card.sourceUrl);
   if (expectedTitle) {
     if (card.title !== expectedTitle || card.displayTitle !== expectedTitle) return false;
-  } else if (
-    card.title !== card.displayTitle
-    || !publicDisplayTitleIsReady(card.title)
-    || !publicDisplayTitleIsReady(card.displayTitle)
-  ) {
+  } else {
     return false;
   }
   if (publicFactLooksLikeTemplateFallback(card.translatedFact || card.summary || card.visibleFragment)) return false;
@@ -1245,9 +1272,8 @@ function normalizeFactDerivedTitle(value = "") {
 
 function normalizeFrontstageDisplay(card = {}, options = {}) {
   const strictPublic = options.strictPublic !== false;
-  const explicitTitle = publicTitleCandidate(card.displayTitle || card.title, card.sourceUrl);
-  const internalTitle = explicitTitle || publicTitleCandidate(card.originalTitle || card.sourceTitle || card.rawTitle, card.sourceUrl);
-  const originalTitle = card.originalTitle || (internalTitle !== card.title ? card.title : "");
+  const internalTitle = publicTitleCandidate(card.originalTitle || card.sourceTitle || card.rawTitle, card.sourceUrl);
+  const originalTitle = card.originalTitle || card.sourceTitle || card.rawTitle || "";
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
   const cleanFact = cleanSourceFactOverride(card.sourceUrl);
   const replacementFact = sourceTitleDerivedFact(sourceTitle || originalTitle || internalTitle, card.sourceUrl);
@@ -1261,7 +1287,7 @@ function normalizeFrontstageDisplay(card = {}, options = {}) {
       && !publicFactLooksLikeTemplateFallback(value)
   )) || "";
   const cleanedTranslatedFact = cleanPublicSourceFact(translatedFact);
-  const preferredDisplayTitle = publicDisplayTitle(sourceTitle, strictPublic ? "" : internalTitle, card.sourceUrl, { allowGeneratedFallback: !strictPublic }) || explicitTitle;
+  const preferredDisplayTitle = publicDisplayTitle(sourceTitle, "", card.sourceUrl, { allowGeneratedFallback: false });
   const displayTitle = publicDisplayTitleIsReady(preferredDisplayTitle)
     ? preferredDisplayTitle
     : "";
@@ -1619,7 +1645,7 @@ function mergeEvidence(primary, fallback) {
 function publicVisibleFragment(value = "") {
   const text = String(value || "").trim();
   if (!text) return "";
-  if (/Builders Viewpoints|今日观察中的|Raw\s*\/\s*Pool|候选、人物时间线/u.test(text)) return "";
+  if (/Builders Viewpoints|Raw\s*\/\s*Pool|候选、人物时间线/u.test(text)) return "";
   if (!hasCjk(text)) return "";
   return text;
 }
@@ -2768,6 +2794,7 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
 
 function cardFromFile(file, category) {
   const text = read(file);
+  if (publicTextLooksGarbled(text)) return null;
   const fm = frontmatter(text);
   if (!fm) return null;
 
@@ -2786,15 +2813,27 @@ function cardFromFile(file, category) {
   const poolRefs = arrayValue(fm, "pool_refs");
   const raw = mergeEvidence(readRawEvidence(rawJson, rawArchive, primarySourceUrl), readPoolEvidence(scalar(fm, "date"), poolRefs[0], primarySourceUrl));
   const [newsFactSection = "", originalPointsSection = "", valueSection = "", visibleFragmentSection = ""] = orderedSectionBodies(text);
-  const markdownFact = short(sectionLines(newsFactSection).join(" "), 320);
+  const rawMarkdownFact = short(sectionLines(newsFactSection).join(" "), 320);
+  const markdownFact = rawMarkdownFact
+    && !publicContentNeedsTranslation(rawMarkdownFact)
+    && !publicTextLooksGarbled(rawMarkdownFact)
+    && !publicFactLooksLikeTemplateFallback(rawMarkdownFact)
+    ? rawMarkdownFact
+    : "";
   const markdownHighlights = uniqueNonRepeatingLines(
     sectionLines(originalPointsSection)
-      .filter((line) => !/鍘熸枃鏈彁渚涙洿澶氬彲鎷嗗垎浜嬪疄鐐?/u.test(line)),
+      .filter((line) => !publicContentNeedsTranslation(line) && !publicTextLooksGarbled(line) && !publicFactLooksLikeTemplateFallback(line)),
     [],
     8
   );
   const markdownValue = short(sectionLines(valueSection).join(" "), 260);
-  const markdownVisibleFragment = short(sectionLines(visibleFragmentSection).join(" "), 320);
+  const rawMarkdownVisibleFragment = short(sectionLines(visibleFragmentSection).join(" "), 320);
+  const markdownVisibleFragment = rawMarkdownVisibleFragment
+    && !publicContentNeedsTranslation(rawMarkdownVisibleFragment)
+    && !publicTextLooksGarbled(rawMarkdownVisibleFragment)
+    && !publicFactLooksLikeTemplateFallback(rawMarkdownVisibleFragment)
+    ? rawMarkdownVisibleFragment
+    : "";
   const rawTitle = sourceTitleFromFullText(raw.fullText, raw.rawTitle || rawTitleFromArchive || "");
   const sourceUrl = primarySourceUrl || raw.sourceUrl;
   const explicitSourceName = scalar(fm, "source_name") || raw.sourceName || "";
@@ -2805,11 +2844,11 @@ function cardFromFile(file, category) {
   const sourceLevel = String(nestedScalar(fm, "primary_raw", "source_level") || scalar(fm, "source_level") || "").toUpperCase();
   const importanceScore = Number(nestedScalar(fm, "primary_raw", "importance_score") || scalar(fm, "importance_score") || 0) || 0;
   const explicitSourceTitle = scalar(fm, "source_title");
-  const explicitDisplayTitle = nestedScalar(fm, "frontend", "displayTitle") || scalar(fm, "title") || "";
-  const explicitPublicTitle = publicTitleCandidate(explicitDisplayTitle, sourceUrl);
-  const rawDisplayTitle = frontstageTitle(explicitPublicTitle || explicitSourceTitle || rawTitle || path.basename(file, ".md"), rawTitle);
-  const title = explicitPublicTitle || publicTitleCandidate(explicitSourceTitle || rawTitle || rawDisplayTitle, sourceUrl);
-  const titleFact = sourceTitleDerivedFact(rawDisplayTitle || title, sourceUrl);
+  const sourceTitleForPublic = explicitSourceTitle || rawTitle || rawTitleFromArchive || "";
+  const rawDisplayTitle = sourceTitleForPublic;
+  const title = publicTitleCandidate(sourceTitleForPublic, sourceUrl);
+  if (!title) return null;
+  const titleFact = sourceTitleDerivedFact(sourceTitleForPublic, sourceUrl);
   let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl, [titleFact]);
   if (!originalHighlights.length) originalHighlights = markdownHighlights;
   if (!originalHighlights.length) originalHighlights = fallbackSourcePoints(rawDisplayTitle, sourceUrl, rawRef);
@@ -2821,10 +2860,10 @@ function cardFromFile(file, category) {
     && !isInternalEvidenceDump(item)
     && !textRepeatsAny(item, [title], 0.9)
   )) || "";
-  const translatedFact = evidenceFact
-    || (markdownFact && !publicFactLooksLikeTemplateFallback(markdownFact) ? markdownFact : "")
+  const translatedFact = markdownFact
+    || evidenceFact
     || (!isGenericSourceFallback(sourceEvidenceExcerpt) && !isSourceLinkOnlyFact(sourceEvidenceExcerpt) && !isInternalEvidenceDump(sourceEvidenceExcerpt) ? sourceEvidenceExcerpt : "")
-    || (markdownVisibleFragment && !publicFactLooksLikeTemplateFallback(markdownVisibleFragment) ? markdownVisibleFragment : "")
+    || markdownVisibleFragment
     || titleFact;
   const sourceFact = translatedFact || originalHighlights.find((item) => !/^关键数字|原始来源|本地 Raw\/Pool/u.test(item)) || "";
   originalHighlights = uniqueNonRepeatingLines(
@@ -3967,7 +4006,6 @@ const rawCards = [
   ...signalRoots.flatMap((rootItem) => walkMarkdown(rootItem.dir).map((file) => cardFromFile(file, rootItem.category))),
 ].filter(Boolean).sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
 const activeDate = rawCards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";
-syncSourceTitleTranslationsFromCards(rawCards, activeDate);
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPublicBusinessSignalEligible))
   .map((card) => normalizeFrontstageDisplay(card, { strictPublic: card.date === activeDate }))
   .filter(hasSourceFacingEvidence)

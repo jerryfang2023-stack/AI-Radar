@@ -63,7 +63,7 @@ const header = [
   `# ${date} Raw Candidates`,
   "",
   "说明：本文件由 `agent-workflow/tools/manual-backfill-raw-from-json.mjs` 生成，用于在 source-router fetch 失败时手工回填候选清单。",
-  "注意：本清单的每条仅作为线索；进入 Pool、商业信号、变化短专题、趋势报告或今日观察前必须回看原始 URL 并重新判定 S/A/B/C/D。",
+  "注意：本清单的每条仅作为线索；进入 Pool、商业信号、变化候选、趋势候选或当前前台链路前必须回看原始 URL 并重新判定 S/A/B/C/D。",
   "",
 ].join("\n");
 

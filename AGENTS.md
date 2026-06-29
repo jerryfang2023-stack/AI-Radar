@@ -83,15 +83,9 @@ First-line viewpoints are a separate builders column. They are useful for readin
 
 Business Signals, Intelligence Map, First-Line Viewpoints, and Community Intelligence must share the same topbar structure and height.
 
-## Stopped Outputs
+## Retired Routes
 
-The following are not current V3.3 required outputs and must not be used as execution sources:
-
-- daily observation;
-- business brief;
-- trend report;
-- publiccopy / cardcopy gates;
-- Guanlan copy-style gate.
+Legacy content-output routes, legacy publication templates, and legacy copy gates are not current V3.3 required outputs and must not be used as execution sources.
 
 Follow-builders / builders viewpoints are active only as the independent First-Line Viewpoints column. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 
@@ -147,7 +141,7 @@ Read:
 Rules:
 
 - Relationship graph uses Card nodes and source-backed edges.
-- Trend candidate is not trend report.
+- Trend candidate is an internal candidate object, not a long-form publication route.
 - A single article, opinion, or funding event cannot form a trend.
 - Builders viewpoints must not be used as evidence.
 

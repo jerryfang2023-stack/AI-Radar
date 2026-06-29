@@ -63,8 +63,8 @@ This file is the reading router. Do not use old closeout files as current truth.
 
 ## Paused Or Retired
 
-- Daily observation writing, business brief, and trend report are not V3.3 required outputs.
-- `guanlan-copy-style`, `guanlan-copy-style-qc`, `publiccopy`, and `cardcopy` are not publication blockers.
+- Legacy content-output routes are not V3.3 required outputs.
+- Legacy copy gates are not publication blockers.
 - Follow-builders / builders viewpoints are active only as the independent first-line viewpoints column. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 
 If task context is insufficient, say what is missing before widening the reading scope.

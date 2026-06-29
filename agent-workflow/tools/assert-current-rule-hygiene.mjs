@@ -1,0 +1,148 @@
+import fs from "node:fs";
+import path from "node:path";
+
+const root = process.cwd();
+const args = new Map(process.argv.slice(2).map((arg) => {
+  const [key, ...rest] = arg.replace(/^--/u, "").split("=");
+  return [key, rest.join("=") || "true"];
+}));
+const date = args.get("date") || new Date().toISOString().slice(0, 10);
+
+const retiredTerms = [
+  "daily_observation",
+  "business_brief",
+  "trend_report",
+  "publiccopy",
+  "cardcopy",
+  "frontend_copy_gate",
+  "cardcopy_gate",
+  "paused-opinion-source",
+  "今日观察",
+  "每日观察",
+  "商业内参",
+  "趋势报告",
+];
+
+const retiredDataTerms = [
+  ...retiredTerms,
+  "heatmap",
+  "briefing",
+];
+
+const mojibakeMarkers = [
+  "\u947e\u5cf0\u7df1",
+  "\u93c9\u30e6\u7c2e",
+  "\u93c4\u5267\u305a",
+  "\u6d7c\u4f77\u7b1f",
+  "\u935f\u55d5\u7b1f",
+  "\u93af\u546e",
+  "\u5bf0\u546f",
+  "\u9359\u621d\u7af7",
+  "\u94fb\u5d88\u796b",
+  "\u7039\u5c7e\u579a",
+  "\u934f\ue100\u7d11",
+  "\u6769\u501f\u91dc",
+  "\u9358\u71b8\u6783",
+  "\u9422\u3129\u20ac",
+  "\u6d93\u6c2c\u59df",
+  "\u6d5c\u0443\u6427",
+  "\u59af\u2033\u7037",
+  "\u93ba\u3125\u56ad",
+  "\u5bee\u20ac\u9359",
+  "\u93c5\u9e3f\u5158",
+  "\ufffd",
+];
+
+const retiredAllowlist = new Set([
+  "agent-workflow/tools/assert-current-rule-hygiene.mjs",
+  "agent-workflow/tools/frontstage-regression-gate.mjs",
+]);
+
+const activeRoots = [
+  "AGENTS.md",
+  "context",
+  "01-SiteV2/README.md",
+  "01-SiteV2/content/README.md",
+  "01-SiteV2/knowledge/README.md",
+  "01-SiteV2/knowledge/10-Templates",
+  ".github/workflows",
+  "agent-workflow/tools",
+  "01-SiteV2/site/scripts",
+  "01-SiteV2/content/11-databases/source-title-translations.json",
+  "01-SiteV2/site/data/v3-data-observation-desk.json",
+  "01-SiteV2/site/data/intelligence-graph-index.json",
+];
+
+const currentCardRoots = [
+  "01-SiteV2/knowledge/01-Signal-Cards/funding",
+  "01-SiteV2/knowledge/01-Signal-Cards/case",
+  "01-SiteV2/knowledge/01-Signal-Cards/product-service",
+];
+
+const exts = new Set([".md", ".mjs", ".js", ".json", ".yml", ".yaml", ".toml", ".ps1"]);
+
+function rel(file) {
+  return path.relative(root, file).replace(/\\/gu, "/");
+}
+
+function filesUnder(target) {
+  const full = path.join(root, target);
+  if (!fs.existsSync(full)) return [];
+  const stat = fs.statSync(full);
+  if (stat.isFile()) return [full];
+  const out = [];
+  for (const entry of fs.readdirSync(full, { withFileTypes: true })) {
+    if (entry.name === "node_modules" || entry.name === ".git") continue;
+    const child = path.join(full, entry.name);
+    if (entry.isDirectory()) out.push(...filesUnder(rel(child)));
+    else if (exts.has(path.extname(entry.name))) out.push(child);
+  }
+  return out;
+}
+
+function currentCardFiles() {
+  return currentCardRoots.flatMap((dir) => filesUnder(dir))
+    .filter((file) => path.basename(file).startsWith(`${date}--signal--`));
+}
+
+function currentRawPoolFiles() {
+  return [
+    `01-SiteV2/content/01-raw/${date}-raw-candidates.md`,
+    `01-SiteV2/content/02-pool/${date}-pool-candidates.md`,
+    `01-SiteV2/content/01-raw/originals/${date}`,
+  ].flatMap(filesUnder);
+}
+
+function scanFile(file, terms, kind) {
+  const text = fs.readFileSync(file, "utf8");
+  const hits = [];
+  const lines = text.split(/\r?\n/u);
+  for (const term of terms) {
+    lines.forEach((line, index) => {
+      if (line.includes(term)) hits.push({ kind, file: rel(file), line: index + 1, term });
+    });
+  }
+  return hits;
+}
+
+function main() {
+  const activeFiles = [...new Set([...activeRoots.flatMap(filesUnder), ...currentCardFiles()])];
+  const dataFiles = [...new Set(currentRawPoolFiles())];
+  const retiredHits = activeFiles
+    .filter((file) => !retiredAllowlist.has(rel(file)))
+    .flatMap((file) => scanFile(file, retiredTerms, "retired_term"));
+  const retiredDataHits = dataFiles.flatMap((file) => scanFile(file, retiredDataTerms, "retired_data_term"));
+  const mojibakeHits = [...activeFiles, ...dataFiles].flatMap((file) => scanFile(file, mojibakeMarkers, "text_contamination"));
+  const issues = [...retiredHits, ...retiredDataHits, ...mojibakeHits];
+  const result = {
+    ok: issues.length === 0,
+    date,
+    scanned_file_count: activeFiles.length + dataFiles.length,
+    issue_count: issues.length,
+    issues,
+  };
+  console.log(JSON.stringify(result, null, 2));
+  if (!result.ok) process.exit(1);
+}
+
+main();

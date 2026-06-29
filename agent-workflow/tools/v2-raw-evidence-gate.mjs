@@ -15,7 +15,7 @@ const allowedQuality = new Set(["high", "medium", "low", "failed"]);
 const allowedVolatility = new Set(["low", "medium", "high"]);
 const allowedCaptureScope = new Set(["article_text", "visible_text", "thread_text", "post_and_top_comments", "summary_only", "aihot_visible_text", "none"]);
 const allowedEvidenceLevel = new Set(["core_evidence_candidate", "supporting_evidence", "community_signal", "user_feedback_signal", "discovery_only", "weak_signal"]);
-const allowedSourceRole = new Set(["primary_source", "discovery_source"]);
+const allowedSourceRole = new Set(["primary_source", "discovery_source", "resolved_original_source"]);
 const allowedResearchStatus = new Set(["preprint", "formal_report", "peer_reviewed", "not_research", "unknown"]);
 const allowedPoolRoutes = new Set(["core_pool", "emerging_pool", "user_feedback_pool", "watchlist", "index_only", "discard"]);
 const allowedExcerptTypes = new Set([
@@ -28,9 +28,27 @@ const allowedExcerptTypes = new Set([
   "funding",
   "risk",
   "opinion",
+  "supporting_context",
 ]);
-const allowedSupports = new Set(["viewpoint", "case", "change", "trend", "daily_observation", "heatmap"]);
-const usableKeys = new Set(["viewpoint", "case", "change", "trend", "daily_observation", "heatmap", "briefing", "emerging_pool", "user_feedback_pool", "watchlist"]);
+const allowedSupports = new Set([
+  "viewpoint",
+  "case",
+  "business_change",
+  "relationship_graph_input",
+  "trend_candidate_context",
+  "signal_card_candidate",
+]);
+const usableKeys = new Set([
+  "viewpoint",
+  "case",
+  "business_change",
+  "relationship_graph_input",
+  "trend_candidate_context",
+  "signal_card_candidate",
+  "emerging_pool",
+  "user_feedback_pool",
+  "watchlist",
+]);
 
 const requiredTopLevel = [
   "schema_version",
@@ -112,7 +130,7 @@ const evidenceSeedKeys = [
 ];
 
 const scoreKeys = [
-  "commercial_value",
+  "importance_score",
   "novelty",
   "evidence_strength",
   "case_richness",
