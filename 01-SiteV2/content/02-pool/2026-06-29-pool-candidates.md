@@ -1,0 +1,5151 @@
+---
+date: 2026-06-29
+stage: pool
+status: guanlan-daily-monitor-pool
+pool_count: 95
+aihot_daily_pool_count: 7
+pool_target: 75
+routed_pool_target: 60
+core_pool_target: 30
+core_non_large_vendor_target: 20
+historical_dedupe_enabled: true
+historical_raw_records_checked: 5772
+historical_duplicates_removed_before_fetch: 2
+historical_duplicates_removed_after_fetch: 0
+generated_at: 2026-06-29T05:24:29.707Z
+keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
+---
+
+# 2026-06-29 Pool Candidates
+
+说明：本文件是 Raw 后的候选索引，供 guanlan-daily-assets-chain 与 writers 回看 Raw 全文后继续加工。Pool 不替代 Raw，也不直接等于商业信号、前沿观点、变化候选、趋势候选或今日观察结论。
+
+## P-001｜aws-samples/sample-agentic-process-transformation - GitHub
+
+- raw_ref: R-001
+- raw_original_id: https://github.com/aws-samples/sample-agentic-process-transformation
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-001-aws-samples-sample-agentic-process-transformation-github.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-001-aws-samples-sample-agentic-process-transformation-github.json`
+- source: keyword search / Anysearch｜https://github.com/aws-samples/sample-agentic-process-transformation
+- source_url: https://github.com/aws-samples/sample-agentic-process-transformation
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: developer_ecosystem
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 91
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: d33c7145cc774b07
+- raw_full_text_hash: d33c7145cc774b07
+- raw_semantic_hash: 3efc543603d2b4cb
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d33c7145cc774b07","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 外围探索信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"# Agentic Process Transformation ... Patterns, accelerators, and hands-on workshops for building reimagined business processes with multi-agent workflows using: ... A reusable pattern library for building individual agents and orchestrating them together. Each pattern is a self-contained Jupyter not... / query=enterprise AI transformation workflow change customer case / intent=find_customer_case / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"There was an error while loading.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Please reload this page .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"aws-samples sample-agentic-process-transformation Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 59 Commits 59 Commits 00-agent-orchestration-patterns 00-agent-orchestration-patterns 01-insurance-claims-processing 01-insurance-claims-processing .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"gitignore CODE_OF_CONDUCT.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"md CODE_OF_CONDUCT.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["There was an error while loading.","Please reload this page .","gitignore CODE_OF_CONDUCT."],"case_details":["# Agentic Process Transformation ... Patterns, accelerators, and hands-on workshops for building reimagined business processes with multi-agent workflows using: ... A reusable pattern library for building individual agents and orchestrating them together. Each pattern is a self-contained Jupyter not... / query=enterprise AI transformation workflow change customer case / intent=find_customer_case / path=developer_ecosystem"],"workflow_changes":["aws-samples sample-agentic-process-transformation Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 59 Commits 59 Commits 00-agent-orchestration-patterns 00-agent-orchestration-patterns 01-insurance-claims-processing 01-insurance-claims-processing ."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-002｜Production-grade AI agents for financial compliance: Lessons from Stripe | Artificial Intelligence
+
+- raw_ref: R-002
+- raw_original_id: https://aws.amazon.com/blogs/machine-learning/production-grade-ai-agents-for-financial-compliance-lessons-from-stripe/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-002-production-grade-ai-agents-for-financial-compliance-lessons-from-strip.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-002-production-grade-ai-agents-for-financial-compliance-lessons-from-strip.json`
+- source: keyword search / Anysearch｜https://aws.amazon.com/blogs/machine-learning/production-grade-ai-agents-for-financial-compliance-lessons-from-stripe/
+- source_url: https://aws.amazon.com/blogs/machine-learning/production-grade-ai-agents-for-financial-compliance-lessons-from-stripe/
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: industry_landing
+- source_type: marketplace
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: f97f2768209fc0ec
+- raw_full_text_hash: a532f599671811d0
+- raw_semantic_hash: 053af86fdaeb6b51
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a532f599671811d0","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"Stripe processes $1.4 trillion in annual payment volume across 50 countries, requiring compliance teams to review thousands of transactions daily. This post explores how Stripe built a production-grade AI agent system on AWS using Amazon Bedrock that reduced review handling time by 26 percent while ... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=industry_landing","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Skip to Main Content Artificial Intelligence Production-grade AI agents for financial compliance: Lessons from Stripe This post is co-written by Christopher Phillippi and Chrissie Cui from Stripe.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"number","text":"Stripe processes $1.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"4 trillion in annual payment volume across 50 countries, requiring compliance teams to review thousands of transactions daily.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This post explores how Stripe built a production-grade AI agent system on AWS using Amazon Bedrock that reduced review handling time by 26 percent while maintaining human oversight.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The post covers the technical architecture, infrastructure decisions, and lessons learned from deploying agentic AI that achieved over 96 percent helpfulness ratings, with human experts firmly in control of final decisions.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["This post explores how Stripe built a production-grade AI agent system on AWS using Amazon Bedrock that reduced review handling time by 26 percent while maintaining human oversight.","The post covers the technical architecture, infrastructure decisions, and lessons learned from deploying agentic AI that achieved over 96 percent helpfulness ratings, with human experts firmly in control of final decisions."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":["Skip to Main Content Artificial Intelligence Production-grade AI agents for financial compliance: Lessons from Stripe This post is co-written by Christopher Phillippi and Chrissie Cui from Stripe.","4 trillion in annual payment volume across 50 countries, requiring compliance teams to review thousands of transactions daily."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-003｜Best AI Development Services for Startups and Enterprises
+
+- raw_ref: R-003
+- raw_original_id: https://www.cm-alliance.com/cybersecurity-blog/best-ai-development-services-for-startups-and-enterprises
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-003-best-ai-development-services-for-startups-and-enterprises.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-003-best-ai-development-services-for-startups-and-enterprises.json`
+- source: keyword search / Anysearch｜https://www.cm-alliance.com/cybersecurity-blog/best-ai-development-services-for-startups-and-enterprises
+- source_url: https://www.cm-alliance.com/cybersecurity-blog/best-ai-development-services-for-startups-and-enterprises
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 2ca673203acefd0f
+- raw_full_text_hash: d175577f34a7d281
+- raw_semantic_hash: 777ac27c62c74b78
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d175577f34a7d281","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Need AI development that fits your scale? Compare top services for startups needing speed and enterprises requiring stability. / query=AI implementation startup design partner pilot customer / intent=find_startups / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Best AI Development Services for Startups and Enterprises Date: 7 March 2026 Artificial intelligence is now a baseline requirement for companies that want to grow.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"opinion","text":"That said, how you implement it really comes down to the size of your operation.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"A small startup trying to validate its product has needs that look nothing like those of a multinational fixing logistics bottlenecks.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We analyzed the top AI firms to give you a clearer picture of how AI applies to different company sizes, the services you can tap into, and who the market leaders are right now.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"How AI Supports Startups vs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Best AI Development Services for Startups and Enterprises Date: 7 March 2026 Artificial intelligence is now a baseline requirement for companies that want to grow.","A small startup trying to validate its product has needs that look nothing like those of a multinational fixing logistics bottlenecks.","We analyzed the top AI firms to give you a clearer picture of how AI applies to different company sizes, the services you can tap into, and who the market leaders are right now."],"case_details":["Need AI development that fits your scale? Compare top services for startups needing speed and enterprises requiring stability. / query=AI implementation startup design partner pilot customer / intent=find_startups / path=official_original"],"workflow_changes":["How AI Supports Startups vs."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-004｜AI Transformation Partner Selection: 2026 RFP Guide | SUPALABS Blog
+
+- raw_ref: R-004
+- raw_original_id: https://supalabs.co/en/blog/ai-transformation-partner-selection-rfp-2026/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-004-ai-transformation-partner-selection-2026-rfp-guide-supalabs-blog.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-004-ai-transformation-partner-selection-2026-rfp-guide-supalabs-blog.json`
+- source: keyword search / Anysearch｜https://supalabs.co/en/blog/ai-transformation-partner-selection-rfp-2026/
+- source_url: https://supalabs.co/en/blog/ai-transformation-partner-selection-rfp-2026/
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: procurement_marketplace
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: a6371035b010d9c6
+- raw_full_text_hash: 1615727f83d81e96
+- raw_semantic_hash: 8dff4fbe18409ce3
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1615727f83d81e96","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"If you're in the CFO office, Group Strategy, or Procurement at a 500–5,000 employee enterprise drafting an RFP for an AI transformation partner this quarter, you've already noticed the category problem: every firm pitching you sounds identical on the cover page, and the differentiation only surfaces... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=procurement_marketplace","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"0 % 0 / 0 min reading Last updated: June 2026 &middot; Written by: SUPALABS Team &middot; Reading time: 14 min If you're in the CFO office, Group Strategy, or Procurement at a 500&ndash;5,000 employee enterprise drafting an RFP for an AI transformation partner this quarter, you've already noticed the category problem: every firm pitching you sounds identical on the cover page, and the differentiation only surfaces in week six &mdash; usually after you've signed.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The category is also new enough that most procurement playbooks were written for IT outsourcing or strategy consulting, not for the hybrid animal an AI program actually is.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This guide is the meta-RFP: it explains how to write a good RFP for AI transformation partner selection , which evaluation criteria actually predict performance, which contract clauses are non-negotiable, and how to read the four categories of partner currently competing for the work &mdash; honestly, including where each one is strong and where each one drifts.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It is also &mdash; transparently &mdash; a guide whose criteria SUPALABS happens to pass.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We've made the framework as honest as we can, including the cases where a tier-1 strategy firm is genuinely the right answer and we are not.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["This guide is the meta-RFP: it explains how to write a good RFP for AI transformation partner selection , which evaluation criteria actually predict performance, which contract clauses are non-negotiable, and how to read the four categories of partner currently competing for the work &mdash; honestly, including where each one is strong and where each one drifts.","It is also &mdash; transparently &mdash; a guide whose criteria SUPALABS happens to pass.","We've made the framework as honest as we can, including the cases where a tier-1 strategy firm is genuinely the right answer and we are not."],"case_details":["If you're in the CFO office, Group Strategy, or Procurement at a 500–5,000 employee enterprise drafting an RFP for an AI transformation partner this quarter, you've already noticed the category problem: every firm pitching you sounds identical on the cover page, and the differentiation only surfaces... / query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=procurement_marketplace"],"workflow_changes":["The category is also new enough that most procurement playbooks were written for IT outsourcing or strategy consulting, not for the hybrid animal an AI program actually is."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-005｜GitHub Release Notes - June 2026 Latest Updates - Releasebot
+
+- raw_ref: R-005
+- raw_original_id: https://releasebot.io/updates/github
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-005-github-release-notes-june-2026-latest-updates-releasebot.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-005-github-release-notes-june-2026-latest-updates-releasebot.json`
+- source: keyword search / Anysearch｜https://releasebot.io/updates/github
+- source_url: https://releasebot.io/updates/github
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 3e2e1558ce69eea8
+- raw_full_text_hash: de517ba482d19e4b
+- raw_semantic_hash: 4d46aaebbfa8a008
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"de517ba482d19e4b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"GitHub adds total pull request merges by AI adoption phase in Copilot usage metrics API reports for organizations and enterprises, giving admins a clearer view ... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"product_update","text":"GitHub Release Notes Follow Follow GitHub to add their release notes to your feed!","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"product_update","text":"571 release notes curated from 29 sources by the Releasebot Team.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Last updated: Jun 27, 2026 Get this feed: RSS Email CLI MCP API Slack n8n GitHub Products Copilot CLI 170 release notes Jun 26, 2026 Date parsed from source: Jun 26, 2026 First seen by Releasebot: Jun 27, 2026 GitHub Track total merges by adoption phase in enterprise and organization reports GitHub adds total pull request merges by AI adoption phase in Copilot usage metrics API reports for organizations and enterprises, giving admins a clearer view of each phase’s share and absolute throughput alongside existing av","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Building on the AI adoption phase cohorts added to the Copilot usage metrics API, organization and enterprise reports now report the total number of pull requests merged by each adoption phase.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"What’s new The totals_by_ai_adoption_phase breakdown previously reported per-user averages only.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["GitHub Release Notes Follow Follow GitHub to add their release notes to your feed!","571 release notes curated from 29 sources by the Releasebot Team.","What’s new The totals_by_ai_adoption_phase breakdown previously reported per-user averages only."],"case_details":["GitHub adds total pull request merges by AI adoption phase in Copilot usage metrics API reports for organizations and enterprises, giving admins a clearer view ... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=official_original","Last updated: Jun 27, 2026 Get this feed: RSS Email CLI MCP API Slack n8n GitHub Products Copilot CLI 170 release notes Jun 26, 2026 Date parsed from source: Jun 26, 2026 First seen by Releasebot: Jun 27, 2026 GitHub Track total merges by adoption phase in enterprise and organization reports GitHub adds total pull request merges by AI adoption phase in Copilot usage metrics API reports for organizations and enterprises, giving admins a clearer view of each phase’s share and absolute throughput alongside existing av","Building on the AI adoption phase cohorts added to the Copilot usage metrics API, organization and enterprise reports now report the total number of pull requests merged by each adoption phase."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-006｜Forward Deployed Engineer Sr | Lockheed Martin
+
+- raw_ref: R-006
+- raw_original_id: https://www.lockheedmartinjobs.com/job/fort-worth/forward-deployed-engineer-sr/694/96302246704
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-006-forward-deployed-engineer-sr-lockheed-martin.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-006-forward-deployed-engineer-sr-lockheed-martin.json`
+- source: keyword search / Anysearch｜https://www.lockheedmartinjobs.com/job/fort-worth/forward-deployed-engineer-sr/694/96302246704
+- source_url: https://www.lockheedmartinjobs.com/job/fort-worth/forward-deployed-engineer-sr/694/96302246704
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: procurement_marketplace
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 88
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 702d90a4499067e4
+- raw_full_text_hash: 702d90a4499067e4
+- raw_semantic_hash: 6911f1aa36fb55b7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"702d90a4499067e4","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: Enterprise AI / FDE implementation signal
+- keyword_group: enterprise-ai-implementation-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"06BR Date posted: Jun. 11, 2026 Description:The Senior Forward‑Deployed Engineer (FDE) works as a hands‑on technical specialist for Lockheed Martin’s AI Factory platform – the internal AI/ML‑Ops foundation that backs our users’ MLOps, GenAI, and agentic workflows. In this role you will partner with ... / query=forward deployed engineer AI customer deployment / intent=find_customer_case / path=procurement_marketplace","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Forward Deployed Engineer Sr Fort Worth, Texas & Additional Locations Fort Worth, Texas; Littleton, Colorado; Orlando, Florida; Palmdale, California; Washington, DC Apply Now Save Job JOIN OUR TALENT COMMUNITY Job Responsibilities About Us Success Profile Meet Our Employees Benefits Share Job Responsibilities Job ID: 731806BR Date posted: Jun.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"11, 2026 Description: The Senior Forward‑Deployed Engineer (FDE) works as a hands‑on technical specialist for Lockheed Martin’s AI Factory platform – the internal AI/ML‑Ops foundation that backs our users’ MLOps, GenAI, and agentic workflows.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"In this role you will partner with senior staff and end users to translate solution concepts into working deployments, implement and tune Kubernetes‑based pipelines, and platform‑level improvement opportunities.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"- Own assigned customer deployment workstreams end to end, from technical discovery and solution shaping through implementation, rollout, and handoff to sustained use.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"- Translate customer and user requirements into deployable AI Factory solutions spanning MLOps pipelines, GenAI backends, data-processing workflows, and agentic applications.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Forward Deployed Engineer Sr Fort Worth, Texas & Additional Locations Fort Worth, Texas; Littleton, Colorado; Orlando, Florida; Palmdale, California; Washington, DC Apply Now Save Job JOIN OUR TALENT COMMUNITY Job Responsibilities About Us Success Profile Meet Our Employees Benefits Share Job Responsibilities Job ID: 731806BR Date posted: Jun."],"case_details":["06BR Date posted: Jun. 11, 2026 Description:The Senior Forward‑Deployed Engineer (FDE) works as a hands‑on technical specialist for Lockheed Martin’s AI Factory platform – the internal AI/ML‑Ops foundation that backs our users’ MLOps, GenAI, and agentic workflows. In this role you will partner with ... / query=forward deployed engineer AI customer deployment / intent=find_customer_case / path=procurement_marketplace","In this role you will partner with senior staff and end users to translate solution concepts into working deployments, implement and tune Kubernetes‑based pipelines, and platform‑level improvement opportunities.","- Own assigned customer deployment workstreams end to end, from technical discovery and solution shaping through implementation, rollout, and handoff to sustained use."],"workflow_changes":["11, 2026 Description: The Senior Forward‑Deployed Engineer (FDE) works as a hands‑on technical specialist for Lockheed Martin’s AI Factory platform – the internal AI/ML‑Ops foundation that backs our users’ MLOps, GenAI, and agentic workflows."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-007｜Runlayer Raises $30M Series A as Enterprise AI Governance Becomes Core Infrastructure | DevCuration
+
+- raw_ref: R-007
+- raw_original_id: https://devcuration.com/articles/runlayer-raises-30m-series-a-as-enterprise-ai-governance-becomes-core-infrastructure
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-007-runlayer-raises-30m-series-a-as-enterprise-ai-governance-becomes-core-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-007-runlayer-raises-30m-series-a-as-enterprise-ai-governance-becomes-core-.json`
+- source: keyword search / Anysearch｜https://devcuration.com/articles/runlayer-raises-30m-series-a-as-enterprise-ai-governance-becomes-core-infrastructure
+- source_url: https://devcuration.com/articles/runlayer-raises-30m-series-a-as-enterprise-ai-governance-becomes-core-infrastructure
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: dd72c8efc31d8322
+- raw_full_text_hash: dd72c8efc31d8322
+- raw_semantic_hash: 3b2dbdb0bb99037a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dd72c8efc31d8322","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"Runlayer has raised $30M in Series A funding led by Felicis, with participation from Khosla Ventures, bringing the New York-based company's total funding to $42M. Founded in August 2025, Runlayer develops an enterprise AI governance platform that helps organizations securely deploy, monitor, and man... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=capital_startup","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Back to articles Runlayer has raised $30M in Series A funding led by Felicis, with participation from Khosla Ventures, bringing the New York-based company's total funding to $42M.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Founded in August 2025, Runlayer develops an enterprise AI governance platform that helps organizations securely deploy, monitor, and manage AI agents at scale.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The funding underscores growing investor conviction that AI governance is becoming foundational infrastructure as enterprises move from AI experimentation to production deployment.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Runlayer was founded by Andrew Berman (Co-Founder & CEO), Tal Peretz (Co-Founder), and Vitor Balocco (Co-Founder & Chief Architect), whose experience building AI systems at Zapier shaped the company's focus on governance, security, and observability.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Rather than simply enabling AI adoption, Runlayer is addressing the operational reality that organizations now need visibility, policy enforcement, and security across increasingly autonomous AI agents.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Runlayer has raised $30M in Series A funding led by Felicis, with participation from Khosla Ventures, bringing the New York-based company's total funding to $42M. Founded in August 2025, Runlayer develops an enterprise AI governance platform that helps organizations securely deploy, monitor, and man... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=capital_startup","Back to articles Runlayer has raised $30M in Series A funding led by Felicis, with participation from Khosla Ventures, bringing the New York-based company's total funding to $42M.","Founded in August 2025, Runlayer develops an enterprise AI governance platform that helps organizations securely deploy, monitor, and manage AI agents at scale."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":["Runlayer was founded by Andrew Berman (Co-Founder & CEO), Tal Peretz (Co-Founder), and Vitor Balocco (Co-Founder & Chief Architect), whose experience building AI systems at Zapier shaped the company's focus on governance, security, and observability.","Rather than simply enabling AI adoption, Runlayer is addressing the operational reality that organizations now need visibility, policy enforcement, and security across increasingly autonomous AI agents."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-008｜README.md at main · microsoft/apm
+
+- raw_ref: R-008
+- raw_original_id: https://github.com/microsoft/apm/blob/main/README.md
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-008-readme-md-at-main-microsoft-apm.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-008-readme-md-at-main-microsoft-apm.json`
+- source: keyword search / Anysearch｜https://github.com/microsoft/apm/blob/main/README.md
+- source_url: https://github.com/microsoft/apm/blob/main/README.md
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: developer_ecosystem
+- source_type: developer
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: b89cd01f902c48b5
+- raw_full_text_hash: b89cd01f902c48b5
+- raw_semantic_hash: 232f21b1e6c4ceb5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b89cd01f902c48b5","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Agent Package Manager | 3K ... | Python ... **An open-source, community-driven dependency manager for AI agents.** ... Think `package.json`, `requirements.txt`, or `Cargo.toml` — but for AI agent configuration. ... GitHub Copilot · Claude Code · Cursor · OpenCode · Codex · Gemini · Windsurf · Kiro .... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"There was an error while loading.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Please reload this page .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"microsoft apm Public Notifications You must be signed in to change notification settings Fork 257 Star 3k Files Expand file tree main / README.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"md Copy path Blame More file actions Blame More file actions Latest commit History History History 180 lines (123 loc) · 9.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"14 KB main / README.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["There was an error while loading.","Please reload this page .","microsoft apm Public Notifications You must be signed in to change notification settings Fork 257 Star 3k Files Expand file tree main / README."],"case_details":["Agent Package Manager | 3K ... | Python ... **An open-source, community-driven dependency manager for AI agents.** ... Think `package.json`, `requirements.txt`, or `Cargo.toml` — but for AI agent configuration. ... GitHub Copilot · Claude Code · Cursor · OpenCode · Codex · Gemini · Windsurf · Kiro .... / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","采购负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-009｜Faraz6180/ForwardDeployAI
+
+- raw_ref: R-009
+- raw_original_id: https://github.com/Faraz6180/ForwardDeployAI
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-009-faraz6180-forwarddeployai.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-009-faraz6180-forwarddeployai.json`
+- source: keyword search / Anysearch｜https://github.com/Faraz6180/ForwardDeployAI
+- source_url: https://github.com/Faraz6180/ForwardDeployAI
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: developer_ecosystem
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 74
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 5c18cf85e04f81e3
+- raw_full_text_hash: 5c18cf85e04f81e3
+- raw_semantic_hash: d5680564f946e168
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5c18cf85e04f81e3","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: 成熟信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"AI-powered Forward Deployment Engineering assistant — classifies client requirements, generates solution architectures, runs fit-gap analyses, and produces PDF deployment reports. Built with Hugging Face BART models and Gradio. ... - bart - deployment-engineering - enterprise-ai - fit-gap - forward-... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Faraz6180 ForwardDeployAI Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 3 Commits 3 Commits README.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"md View all files Repository files navigation 🏗️ ForwardDeployAI AI-powered Forward Deployment Engineering assistant — from client brief to production-ready architecture in minutes.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"What It Does Try Here https://huggingface.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"co/spaces/Faraz618/ForwardDeployAI Demo ForwardDeployAI simulates the complete workflow of a Forward Deployment Engineer — the technical leader who bridges client business problems and scalable solution architecture.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Tab What it does 📋 Requirement Analyzer Classifies free-text requirements into 10 technical categories using zero-shot classification 🏗️ Solution Architect Recommends architecture patterns, component stacks, and phased delivery plans 🔍 Fit-Gap Analyzer Evaluates 8 core components against available capabilities, flags gaps 📄 Deployment Report Compiles everything into a downloadable branded PDF Models Used Model Task facebook/bart-large-mnli Zero-shot requirement classification facebook/bart-large-cnn Requirement","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Faraz6180 ForwardDeployAI Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 3 Commits 3 Commits README.","What It Does Try Here https://huggingface."],"case_details":["AI-powered Forward Deployment Engineering assistant — classifies client requirements, generates solution architectures, runs fit-gap analyses, and produces PDF deployment reports. Built with Hugging Face BART models and Gradio. ... - bart - deployment-engineering - enterprise-ai - fit-gap - forward-... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=developer_ecosystem","md View all files Repository files navigation 🏗️ ForwardDeployAI AI-powered Forward Deployment Engineering assistant — from client brief to production-ready architecture in minutes.","co/spaces/Faraz618/ForwardDeployAI Demo ForwardDeployAI simulates the complete workflow of a Forward Deployment Engineer — the technical leader who bridges client business problems and scalable solution architecture."],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-010｜Telnyx deploys engineers to build your Voice AI Agents
+
+- raw_ref: R-010
+- raw_original_id: https://telnyx.com/products/forward-deployed-engineering
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-010-telnyx-deploys-engineers-to-build-your-voice-ai-agents.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-010-telnyx-deploys-engineers-to-build-your-voice-ai-agents.json`
+- source: keyword search / Anysearch｜https://telnyx.com/products/forward-deployed-engineering
+- source_url: https://telnyx.com/products/forward-deployed-engineering
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: community
+- source_level: C
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 85
+- has_full_text: true
+- source_volatility: high
+- community_name: keyword search / Anysearch
+- capture_scope: visible_text
+- evidence_level: community_signal
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, user_feedback_pool
+- raw_content_hash: ac9394fa6e2ec170
+- raw_full_text_hash: ac9394fa6e2ec170
+- raw_semantic_hash: b5935e18e4e3369d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ac9394fa6e2ec170","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: Enterprise AI / FDE implementation signal
+- keyword_group: enterprise-ai-implementation-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"# Telnyx deploys engineers to build your Voice AI Agents ... ... Voice AI agents ... Our expert Forward Deployment Engineers work side-by-side with your team to build, integrate, and deploy your custom Voice AI agents. Skip the technical complexity—we handle everything! ... Forward Deployed Engineer... / query=forward deployed engineer AI customer deployment / intent=find_customer_case / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"We build your Voice AI agents Our expert Forward Deployment Engineers work side-by-side with your team to build, integrate, and deploy your custom Voice AI agents.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip the technical complexity—we handle everything!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Contact an expert Rapid prototyping Build working Voice AI demos in days using your real data and workflows.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Our engineers create live prototypes that prove immediate value to stakeholders.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Full integration We handle complex API connections, write custom code, and build seamless integrations so your Voice AI agents work perfectly with existing systems.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Skip the technical complexity—we handle everything!","Our engineers create live prototypes that prove immediate value to stakeholders.","Full integration We handle complex API connections, write custom code, and build seamless integrations so your Voice AI agents work perfectly with existing systems."],"case_details":["# Telnyx deploys engineers to build your Voice AI Agents ... ... Voice AI agents ... Our expert Forward Deployment Engineers work side-by-side with your team to build, integrate, and deploy your custom Voice AI agents. Skip the technical complexity—we handle everything! ... Forward Deployed Engineer... / query=forward deployed engineer AI customer deployment / intent=find_customer_case / path=official_original","We build your Voice AI agents Our expert Forward Deployment Engineers work side-by-side with your team to build, integrate, and deploy your custom Voice AI agents."],"workflow_changes":["Contact an expert Rapid prototyping Build working Voice AI demos in days using your real data and workflows."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-011｜Hire Forward-Deployed Engineers - Devlyn AI
+
+- raw_ref: R-011
+- raw_original_id: https://devlyn.ai/hire-forward-deployed-engineer
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-011-hire-forward-deployed-engineers-devlyn-ai.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-011-hire-forward-deployed-engineers-devlyn-ai.json`
+- source: keyword search / Anysearch｜https://devlyn.ai/hire-forward-deployed-engineer
+- source_url: https://devlyn.ai/hire-forward-deployed-engineer
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 03168794a41bd2b2
+- raw_full_text_hash: 1492ba1b82b0adf6
+- raw_semantic_hash: 126d958fccfff44c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1492ba1b82b0adf6","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: Enterprise AI / FDE implementation signal
+- keyword_group: enterprise-ai-implementation-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Hire Forward-Deployed Engineers who turn field feedback into shipped product work, customer workflows, integrations, and measurable delivery outcomes. / query=forward deployed engineer AI customer deployment / intent=find_customer_case / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Field Engineering for Enterprise AI Rollouts Hire Forward-Deployed Engineers Who Ship AI in the Field Hire Forward-Deployed Engineers who embed near customer reality, translate messy workflows into production software, and turn AI pilots into secure, adopted, measurable deployments.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Get the engineering depth of a builder with the discovery, integration, and stakeholder judgment of a field operator.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"number","text":"Hire Forward-Deployed Engineer See Our Process Rate Preview Senior Forward-Deployed Engineer Python TypeScript LangGraph Enterprise APIs All Levels $7,500/mo Junior from $3,500/mo · Mid from $5,200/mo · Senior from $7,500/mo 7-Day Risk-Free Trial Zero commitment start Onboard in 48 Hours Pre-vetted, ready to ship AI-Native Development Faster iteration, cleaner code Trusted by CTOs, Engineering Leaders & Operators Worldwide Trusted by CTOs, Engineering Leaders & Operators Worldwide Trusted by CTOs, Engineering Leade","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"9/5 Client Satisfaction Why Companies Struggle to Hire Forward-Deployed Engineers Forward-deployed engineering sits between product, customer success, architecture, implementation, and production software delivery.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Generic full-stack hiring misses the hardest part: shipping inside customer constraints while feeding the truth back into the product roadmap.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Get the engineering depth of a builder with the discovery, integration, and stakeholder judgment of a field operator."],"case_details":["Hire Forward-Deployed Engineers who turn field feedback into shipped product work, customer workflows, integrations, and measurable delivery outcomes. / query=forward deployed engineer AI customer deployment / intent=find_customer_case / path=official_original","Field Engineering for Enterprise AI Rollouts Hire Forward-Deployed Engineers Who Ship AI in the Field Hire Forward-Deployed Engineers who embed near customer reality, translate messy workflows into production software, and turn AI pilots into secure, adopted, measurable deployments.","9/5 Client Satisfaction Why Companies Struggle to Hire Forward-Deployed Engineers Forward-deployed engineering sits between product, customer success, architecture, implementation, and production software delivery."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-012｜Amazon Tested 40 Voice AI Startups. This One Took 100%. - AI Biz Insider
+
+- raw_ref: R-012
+- raw_original_id: https://aibizinsider.com/2026/05/23/vapi-amazon-ring-voice-ai-500m-2026-05-23/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-012-amazon-tested-40-voice-ai-startups-this-one-took-100-ai-biz-insider.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-012-amazon-tested-40-voice-ai-startups-this-one-took-100-ai-biz-insider.json`
+- source: keyword search / Anysearch｜https://aibizinsider.com/2026/05/23/vapi-amazon-ring-voice-ai-500m-2026-05-23/
+- source_url: https://aibizinsider.com/2026/05/23/vapi-amazon-ring-voice-ai-500m-2026-05-23/
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 003cbd240ceedcc5
+- raw_full_text_hash: 003cbd240ceedcc5
+- raw_semantic_hash: c336bfc20f149637
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"003cbd240ceedcc5","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"- Amazon Ring evaluated 40+ AI voice vendors during the 2024 holiday surge, then routed 100% of inbound calls to Vapi within two weeks. - Vapi closed a $50M Series B led by Peak XV at roughly a $500M post-money valuation, with M12, Kleiner Perkins, and Bessemer joining. - The platform has handled 1B... / query=voice AI agent funding customer adoption / intent=find_startups / path=industry_landing","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"콘텐츠로 바로가기 Amazon Tested 40 Voice AI Startups.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"This One Took 100%.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"작성자 hyun seok Kim 카테고리: AI Business (EN) KEY TAKEAWAYS Amazon Ring evaluated 40+ AI voice vendors during the 2024 holiday surge, then routed 100% of inbound calls to Vapi within two weeks.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Vapi closed a $50M Series B led by Peak XV at roughly a $500M post-money valuation, with M12, Kleiner Perkins, and Bessemer joining.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"The platform has handled 1B+ calls and grew enterprise ARR 10x year over year — the bottom-up developer wedge worked.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["- Amazon Ring evaluated 40+ AI voice vendors during the 2024 holiday surge, then routed 100% of inbound calls to Vapi within two weeks. - Vapi closed a $50M Series B led by Peak XV at roughly a $500M post-money valuation, with M12, Kleiner Perkins, and Bessemer joining. - The platform has handled 1B... / query=voice AI agent funding customer adoption / intent=find_startups / path=industry_landing","콘텐츠로 바로가기 Amazon Tested 40 Voice AI Startups.","Vapi closed a $50M Series B led by Peak XV at roughly a $500M post-money valuation, with M12, Kleiner Perkins, and Bessemer joining."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-013｜Datakult0r/Forward-Deployed-AI-at-Institutional-Scale - GitHub
+
+- raw_ref: R-013
+- raw_original_id: https://github.com/Datakult0r/Forward-Deployed-AI-at-Institutional-Scale
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-013-datakult0r-forward-deployed-ai-at-institutional-scale-github.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-013-datakult0r-forward-deployed-ai-at-institutional-scale-github.json`
+- source: keyword search / Anysearch｜https://github.com/Datakult0r/Forward-Deployed-AI-at-Institutional-Scale
+- source_url: https://github.com/Datakult0r/Forward-Deployed-AI-at-Institutional-Scale
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: developer_ecosystem
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 91
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 0044310e48368bbe
+- raw_full_text_hash: 0044310e48368bbe
+- raw_semantic_hash: d3796ac4fc6b641a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0044310e48368bbe","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: Enterprise AI / FDE implementation signal
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"# Datakult0r/Forward-Deployed-AI-at-Institutional-Scale ... Production-grade AI architecture and deployment for critical institutions, specializing in agentic workflows, RAG, and institutional-scale MLOps. ... # Forward-Deployed AI at Institutional Scale ... This repository documents the work and me... / query=forward deployed engineer AI customer deployment / intent=find_customer_case / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Datakult0r Forward-Deployed-AI-at-Institutional-Scale Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 3 Commits 3 Commits LICENSE LICENSE Production_AI_Institutional_Scale.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"pdf Production_AI_Institutional_Scale.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"md View all files Repository files navigation Forward-Deployed AI at Institutional Scale Overview This repository documents the work and methodology of Philippe Küng , a Forward-Deployed AI Architect dedicated to upgrading the world's most critical institutions — sovereign governments, energy grids, and healthcare systems.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The core mission is to translate complex operational challenges into production-grade AI , owning the outcome from initial specification to global deployment.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"🧬 The Forward-Deployed DNA The approach combines five key pillars: Technical Foundation: Production engineering honed at Crayon AG and MIT.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Datakult0r Forward-Deployed-AI-at-Institutional-Scale Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 3 Commits 3 Commits LICENSE LICENSE Production_AI_Institutional_Scale.","pdf Production_AI_Institutional_Scale.","md View all files Repository files navigation Forward-Deployed AI at Institutional Scale Overview This repository documents the work and methodology of Philippe Küng , a Forward-Deployed AI Architect dedicated to upgrading the world's most critical institutions — sovereign governments, energy grids, and healthcare systems."],"case_details":["# Datakult0r/Forward-Deployed-AI-at-Institutional-Scale ... Production-grade AI architecture and deployment for critical institutions, specializing in agentic workflows, RAG, and institutional-scale MLOps. ... # Forward-Deployed AI at Institutional Scale ... This repository documents the work and me... / query=forward deployed engineer AI customer deployment / intent=find_customer_case / path=developer_ecosystem","The core mission is to translate complex operational challenges into production-grade AI , owning the outcome from initial specification to global deployment."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-014｜Production ready architectures for AI apps and agents on Marketplace | Microsoft Community Hub
+
+- raw_ref: R-014
+- raw_original_id: https://techcommunity.microsoft.com/blog/marketplace-blog/production-ready-architectures-for-ai-apps-and-agents-on-marketplace/4506377
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-014-production-ready-architectures-for-ai-apps-and-agents-on-marketplace-m.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-014-production-ready-architectures-for-ai-apps-and-agents-on-marketplace-m.json`
+- source: keyword search / Anysearch｜https://techcommunity.microsoft.com/blog/marketplace-blog/production-ready-architectures-for-ai-apps-and-agents-on-marketplace/4506377
+- source_url: https://techcommunity.microsoft.com/blog/marketplace-blog/production-ready-architectures-for-ai-apps-and-agents-on-marketplace/4506377
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: procurement_marketplace
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: high
+- community_name: keyword search / Anysearch
+- capture_scope: article_text
+- evidence_level: community_signal
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, user_feedback_pool, watchlist
+- raw_content_hash: b71e06048ef01a2e
+- raw_full_text_hash: b71e06048ef01a2e
+- raw_semantic_hash: 39892606e287d407
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b71e06048ef01a2e","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, emerging_pool, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"## Production‑ready architecture is what separates an AI idea from an AI product customers can safely trust and run at scale. In Microsoft Marketplace, those architectural choices determine not just how your solution works—but whether it can be trusted, operated, and supported in real enterprise env... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=procurement_marketplace","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Blog Post Marketplace blog 10 MIN READ Production ready architectures for AI apps and agents on Marketplace Julio_Colon Microsoft Mar 30, 2026 Production‑ready AI architecture is what separates an AI idea from an AI product customers can safely trust and run at scale.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"In Microsoft Marketplace, those architectural choices determine not just how your solution works—but whether it can be trusted, operated, and supported in real enterprise environments.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"Why “production‑ready” architecture matters for Marketplace AI apps and agents A working AI prototype is not the same as a production‑ready AI app in Microsoft Marketplace.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Marketplace solutions are expected to operate reliably in real customer environments, alongside mission‑critical workloads and under enterprise constraints.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As a result, AI apps published through Marketplace must meet a higher bar than “it works in a demo.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["As a result, AI apps published through Marketplace must meet a higher bar than “it works in a demo."],"case_details":["## Production‑ready architecture is what separates an AI idea from an AI product customers can safely trust and run at scale. In Microsoft Marketplace, those architectural choices determine not just how your solution works—but whether it can be trusted, operated, and supported in real enterprise env... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=procurement_marketplace","Blog Post Marketplace blog 10 MIN READ Production ready architectures for AI apps and agents on Marketplace Julio_Colon Microsoft Mar 30, 2026 Production‑ready AI architecture is what separates an AI idea from an AI product customers can safely trust and run at scale.","Marketplace solutions are expected to operate reliably in real customer environments, alongside mission‑critical workloads and under enterprise constraints."],"workflow_changes":["In Microsoft Marketplace, those architectural choices determine not just how your solution works—but whether it can be trusted, operated, and supported in real enterprise environments."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-015｜Forward Deployed Engineering | Deloitte US
+
+- raw_ref: R-015
+- raw_original_id: https://www.deloitte.com/us/en/services/consulting/services/forward-deployed-engineering.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-015-forward-deployed-engineering-deloitte-us.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-015-forward-deployed-engineering-deloitte-us.json`
+- source: keyword search / Anysearch｜https://www.deloitte.com/us/en/services/consulting/services/forward-deployed-engineering.html
+- source_url: https://www.deloitte.com/us/en/services/consulting/services/forward-deployed-engineering.html
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: fde_implementation
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 79
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 45109a427cedc87c
+- raw_full_text_hash: 45109a427cedc87c
+- raw_semantic_hash: f8b50d28b54c5d0c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"45109a427cedc87c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: Enterprise AI / FDE implementation signal
+- keyword_group: enterprise-ai-implementation-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Forward Deployed Engineering | Deloitte US ... ## Turn AI promise into enterprise value with FDE ... As enterprises today race to adopt AI, few are realizing its true value. Moving AI pilots into production and measurable outcomes is hard, often due to stalled pilots, low adoption and limited AI tal... / query=enterprise AI pilot customer design partner / intent=find_customer_case / path=fde_implementation","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Forward Deployed Engineering | Deloitte US Link opens in a new tab opens in new window Skip to main content Welcome to Deloitte If we have selected the wrong experience for you, please change it above.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Forward deployed engineering Powering AI transformation at the speed of business Unlock AI’s potential with a dedicated team of technical and business-focused talent.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Our forward deployed engineering (FDE) teams work with you at every stage to fast-track AI adoption—using AI-enabled platforms to help you improve decision-making and deliver value faster.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Talk to our team Forward deployed engineering Powering AI transformation at the speed of business Unlock AI’s potential with a dedicated team of technical and business-focused talent.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Forward Deployed Engineering | Deloitte US Link opens in a new tab opens in new window Skip to main content Welcome to Deloitte If we have selected the wrong experience for you, please change it above.","Forward deployed engineering Powering AI transformation at the speed of business Unlock AI’s potential with a dedicated team of technical and business-focused talent.","Our forward deployed engineering (FDE) teams work with you at every stage to fast-track AI adoption—using AI-enabled platforms to help you improve decision-making and deliver value faster."],"case_details":["Forward Deployed Engineering | Deloitte US ... ## Turn AI promise into enterprise value with FDE ... As enterprises today race to adopt AI, few are realizing its true value. Moving AI pilots into production and measurable outcomes is hard, often due to stalled pilots, low adoption and limited AI tal... / query=enterprise AI pilot customer design partner / intent=find_customer_case / path=fde_implementation"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-016｜Applied AI Intelligence - Future Works
+
+- raw_ref: R-016
+- raw_original_id: https://future.works/applied-ai-intelligence/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-016-applied-ai-intelligence-future-works.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-016-applied-ai-intelligence-future-works.json`
+- source: keyword search / Anysearch｜https://future.works/applied-ai-intelligence/
+- source_url: https://future.works/applied-ai-intelligence/
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: fde_implementation
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 25099df052a31e5d
+- raw_full_text_hash: 25099df052a31e5d
+- raw_semantic_hash: abe2f91ee02d532c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"25099df052a31e5d","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: Enterprise AI / FDE implementation signal
+- keyword_group: enterprise-ai-implementation-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Take a pilot that stalled in handoff and finish the production rollout in two cycles. Often the fastest path to a verified outcome for a buyer who is already ... / query=AI agent production deployment customer workflow / intent=find_original_source / path=fde_implementation","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Enterprise AI Operationalization Move AI out of pilots, into the parts of the business that change the P&L .","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Pilots succeed easily.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Production rollouts stall.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We rebuild the operating model around named senior experts orchestrating AI agents on our proprietary harnesses, in twelve-week outcome-staked cycles.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"From scattered experiments to operating capability.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Production rollouts stall.","We rebuild the operating model around named senior experts orchestrating AI agents on our proprietary harnesses, in twelve-week outcome-staked cycles.","From scattered experiments to operating capability."],"case_details":["Take a pilot that stalled in handoff and finish the production rollout in two cycles. Often the fastest path to a verified outcome for a buyer who is already ... / query=AI agent production deployment customer workflow / intent=find_original_source / path=fde_implementation","Enterprise AI Operationalization Move AI out of pilots, into the parts of the business that change the P&L .","Pilots succeed easily."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-017｜Forward Deployed Engineer vs Applied AI Engineer (2026)
+
+- raw_ref: R-017
+- raw_original_id: https://fde.academy/blog/forward-deployed-engineer-vs-applied-ai-engineer
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-017-forward-deployed-engineer-vs-applied-ai-engineer-2026.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-017-forward-deployed-engineer-vs-applied-ai-engineer-2026.json`
+- source: keyword search / Anysearch｜https://fde.academy/blog/forward-deployed-engineer-vs-applied-ai-engineer
+- source_url: https://fde.academy/blog/forward-deployed-engineer-vs-applied-ai-engineer
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 53762d3544d2b2b4
+- raw_full_text_hash: 822b085a08f1b480
+- raw_semantic_hash: 074245cc98ac445c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"822b085a08f1b480","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"A Forward Deployed Engineer and an Applied AI Engineer share the same core mission — take a powerful AI capability and make it work inside a ... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Table of Contents Example H2 Example H3 Example H4 Example H5 Example H6 Summarize this article using AI ChatGPT Grok Claude Perplexity Google AI Anthropic calls its Forward Deployed Engineers \"Applied AI Engineers.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"\" OpenAI keeps the FDE title.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Adobe lists \"Forward Deployed AI Engineer.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"\" Databricks uses \"AI Engineer, FDE.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"\" The titles look different.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Table of Contents Example H2 Example H3 Example H4 Example H5 Example H6 Summarize this article using AI ChatGPT Grok Claude Perplexity Google AI Anthropic calls its Forward Deployed Engineers \"Applied AI Engineers.","\" OpenAI keeps the FDE title.","Adobe lists \"Forward Deployed AI Engineer."],"case_details":["A Forward Deployed Engineer and an Applied AI Engineer share the same core mission — take a powerful AI capability and make it work inside a ... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=official_original"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-018｜ServiceNow Accenture FDE Beats 95% AI Pilot Failure | THE D[AI]LY BRIEF
+
+- raw_ref: R-018
+- raw_original_id: https://www.beri.net/article/servicenow-accenture-fde-95-percent-pilot-failure-2026
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-018-servicenow-accenture-fde-beats-95-ai-pilot-failure-the-d-ai-ly-brief.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-018-servicenow-accenture-fde-beats-95-ai-pilot-failure-the-d-ai-ly-brief.json`
+- source: keyword search / Anysearch｜https://www.beri.net/article/servicenow-accenture-fde-95-percent-pilot-failure-2026
+- source_url: https://www.beri.net/article/servicenow-accenture-fde-95-percent-pilot-failure-2026
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: fde_implementation
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 54177f9cf1c30535
+- raw_full_text_hash: ba7f86e831920aa7
+- raw_semantic_hash: 8f05af4fa3d10ab0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ba7f86e831920aa7","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: Enterprise AI / FDE implementation signal
+- keyword_group: enterprise-ai-implementation-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"On May 6, 2026, at Knowledge 2026 in Las Vegas, ServiceNow and Accenture launched a Forward Deployed Engineering (FDE) program designed to do the one thing most enterprise AI initiatives still cannot: cross the pilot-to-production chasm. The program embeds ServiceNow's AI-native engineers alongside ... / query=AI workflow rollout procurement pilot / intent=find_customer_case / path=fde_implementation","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"On May 6, 2026, at Knowledge 2026 in Las Vegas, ServiceNow and Accenture launched a Forward Deployed Engineering (FDE) program designed to do the one thing most enterprise AI initiatives still cannot: cross the pilot-to-production chasm.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The program embeds ServiceNow's AI-native engineers alongside Accenture's industry specialists directly inside mutual customers' operations, building agentic workflows on the ServiceNow AI Platform until they run in production.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Customers get access to 300+ pre-built AI agent skills and ServiceNow's AI Control Tower for governance — wrapped in a delivery model that explicitly walks away from the slide-deck-and-billable-hours playbook that has defined IT consulting for two decades.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The bet is precise: enterprises do not have a model problem; they have a deployment problem.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"MIT's 2025 research found 95% of GenAI pilots never scale to production.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":[],"case_details":["On May 6, 2026, at Knowledge 2026 in Las Vegas, ServiceNow and Accenture launched a Forward Deployed Engineering (FDE) program designed to do the one thing most enterprise AI initiatives still cannot: cross the pilot-to-production chasm. The program embeds ServiceNow's AI-native engineers alongside ... / query=AI workflow rollout procurement pilot / intent=find_customer_case / path=fde_implementation","On May 6, 2026, at Knowledge 2026 in Las Vegas, ServiceNow and Accenture launched a Forward Deployed Engineering (FDE) program designed to do the one thing most enterprise AI initiatives still cannot: cross the pilot-to-production chasm.","The program embeds ServiceNow's AI-native engineers alongside Accenture's industry specialists directly inside mutual customers' operations, building agentic workflows on the ServiceNow AI Platform until they run in production."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-019｜AWS Marketplace: Solution Architect on Demand for AI Readiness
+
+- raw_ref: R-019
+- raw_original_id: https://aws.amazon.com/marketplace/pp/prodview-s3dvjsjigjskw
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-019-aws-marketplace-solution-architect-on-demand-for-ai-readiness.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-019-aws-marketplace-solution-architect-on-demand-for-ai-readiness.json`
+- source: keyword search / Anysearch｜https://aws.amazon.com/marketplace/pp/prodview-s3dvjsjigjskw
+- source_url: https://aws.amazon.com/marketplace/pp/prodview-s3dvjsjigjskw
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: procurement_marketplace
+- source_type: marketplace
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: f6671db37f249d2e
+- raw_full_text_hash: f6671db37f249d2e
+- raw_semantic_hash: 5f08dc00c8228bf4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f6671db37f249d2e","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"It is a strategic consulting and architectural service designed to help organizations assess and prepare their cloud and data environments for successful and ... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=procurement_marketplace","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Solution Architect on Demand for AI Readiness Info Sold by: ATLASTICITY Atlasticity's Solution Architect on Demand for AI Readiness focuses on enabling organizations to strategically align their AWS cloud infrastructure and enterprise architecture for AI adoption.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The solution architects assess current environments, identify gaps, and design scalable, secure, and cost-effective AI-ready solutions.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"This includes modernizing data pipelines, integrating machine learning services, and ensuring governance and compliance—laying the groundwork for organizations to harness the full potential of artificial intelligence.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"First hour of consultation is complimentary; hourly rates apply after.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Request private offer Overview Pricing Legal Resources Support Overview Try agent mode Create proposal Ask question As organizations race to integrate artificial intelligence (AI) into their business models, the demand for scalable, secure, and AI-optimized infrastructure has never been higher.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Solution Architect on Demand for AI Readiness Info Sold by: ATLASTICITY Atlasticity's Solution Architect on Demand for AI Readiness focuses on enabling organizations to strategically align their AWS cloud infrastructure and enterprise architecture for AI adoption.","The solution architects assess current environments, identify gaps, and design scalable, secure, and cost-effective AI-ready solutions.","First hour of consultation is complimentary; hourly rates apply after."],"case_details":["It is a strategic consulting and architectural service designed to help organizations assess and prepare their cloud and data environments for successful and ... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=procurement_marketplace"],"workflow_changes":["Request private offer Overview Pricing Legal Resources Support Overview Try agent mode Create proposal Ask question As organizations race to integrate artificial intelligence (AI) into their business models, the demand for scalable, secure, and AI-optimized infrastructure has never been higher."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":["This includes modernizing data pipelines, integrating machine learning services, and ensuring governance and compliance—laying the groundwork for organizations to harness the full potential of artificial intelligence."]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-020｜How to Implement Agentic AI Workflows in Your Enterprise Operations
+
+- raw_ref: R-020
+- raw_original_id: https://itecs.ai/insights/agentic-ai-workflows-enterprise-operations
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-020-how-to-implement-agentic-ai-workflows-in-your-enterprise-operations.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-020-how-to-implement-agentic-ai-workflows-in-your-enterprise-operations.json`
+- source: keyword search / Anysearch｜https://itecs.ai/insights/agentic-ai-workflows-enterprise-operations
+- source_url: https://itecs.ai/insights/agentic-ai-workflows-enterprise-operations
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: fde_implementation
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 807f1677d60e3e26
+- raw_full_text_hash: 807f1677d60e3e26
+- raw_semantic_hash: 1d4938e8e3c65410
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"807f1677d60e3e26","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: Enterprise AI / FDE implementation signal
+- keyword_group: enterprise-ai-implementation-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"How to take agentic AI workflows from pilot to production in finance, procurement ... Stage 4: Production rollout and continuous tuning. Launch ... / query=AI workflow rollout procurement pilot / intent=find_customer_case / path=fde_implementation","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Custom AI Agents May 21, 2026 10 min read How to Implement Agentic AI Workflows in Your Enterprise Operations How to take agentic AI workflows from pilot to production in finance, procurement, and HR — a four-stage blueprint with governance, security, and ROI math for Dallas enterprises.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"A production-grade enterprise agentic AI workflow always has three layers — a planner model, a governed tool layer reaching into finance, procurement, and HR systems, and a governance layer with audit logging and human review.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Treating any layer as optional is what causes pilots to fail.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Agentic AI workflows are autonomous, multi-step systems that finish business work — invoicing exceptions, candidate screens, supplier risk reviews — without a human clicking through every step.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Dallas enterprises are moving them from pilot to production this year because they handle the long-tail decisions chatbots cannot answer and the policy-bound exceptions that legacy automation rejects.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":[],"case_details":["How to take agentic AI workflows from pilot to production in finance, procurement ... Stage 4: Production rollout and continuous tuning. Launch ... / query=AI workflow rollout procurement pilot / intent=find_customer_case / path=fde_implementation","Treating any layer as optional is what causes pilots to fail.","Dallas enterprises are moving them from pilot to production this year because they handle the long-tail decisions chatbots cannot answer and the policy-bound exceptions that legacy automation rejects."],"workflow_changes":["A production-grade enterprise agentic AI workflow always has three layers — a planner model, a governed tool layer reaching into finance, procurement, and HR systems, and a governance layer with audit logging and human review."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":["Custom AI Agents May 21, 2026 10 min read How to Implement Agentic AI Workflows in Your Enterprise Operations How to take agentic AI workflows from pilot to production in finance, procurement, and HR — a four-stage blueprint with governance, security, and ROI math for Dallas enterprises.","Agentic AI workflows are autonomous, multi-step systems that finish business work — invoicing exceptions, candidate screens, supplier risk reviews — without a human clicking through every step."]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-021｜OpenAI's deployment chief on Codex growth, falling AI prices, and the ROI question
+
+- raw_ref: R-021
+- raw_original_id: https://the-decoder.com/openais-deployment-chief-on-codex-growth-falling-ai-prices-and-the-roi-question/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-021-openai-s-deployment-chief-on-codex-growth-falling-ai-prices-and-the-ro.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-021-openai-s-deployment-chief-on-codex-growth-falling-ai-prices-and-the-ro.json`
+- source: keyword search / Anysearch｜https://the-decoder.com/openais-deployment-chief-on-codex-growth-falling-ai-prices-and-the-roi-question/
+- source_url: https://the-decoder.com/openais-deployment-chief-on-codex-growth-falling-ai-prices-and-the-roi-question/
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 88
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 46501eaf9ff853a6
+- raw_full_text_hash: 46501eaf9ff853a6
+- raw_semantic_hash: 1b6d833aa4d1e5ec
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"46501eaf9ff853a6","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"- Through its subsidiary DeployCo, OpenAI is building a team of engineers that embeds AI models directly into the IT systems and business processes of corporate clients. This hands-on work also serves as a feedback loop to spot weaknesses in the models and improve OpenAI's research. ... Two years ag... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Ad Skip to content OpenAI's deployment chief on Codex growth, falling AI prices, and the ROI question Maximilian Schreiner View the LinkedIn Profile of Maximilian Schreiner Jun 24, 2026 GPT-Image-2 prompted by THE DECODER Key Points Through its subsidiary DeployCo, OpenAI is building a team of engineers that embeds AI models directly into the IT systems and business processes of corporate clients.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This hands-on work also serves as a feedback loop to spot weaknesses in the models and improve OpenAI's research.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Despite strict European rules like the AI Act, OpenAI CTO Arnaud Fournier says regulation barely slows adoption.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The coding tool Codex has more than four million weekly users worldwide, with Germany playing a leading role after growing 720 percent since January 2026.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"While Fournier stresses that the price of AI intelligence has dropped sharply, newer models like GPT-5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["This hands-on work also serves as a feedback loop to spot weaknesses in the models and improve OpenAI's research.","The coding tool Codex has more than four million weekly users worldwide, with Germany playing a leading role after growing 720 percent since January 2026.","While Fournier stresses that the price of AI intelligence has dropped sharply, newer models like GPT-5."],"case_details":["- Through its subsidiary DeployCo, OpenAI is building a team of engineers that embeds AI models directly into the IT systems and business processes of corporate clients. This hands-on work also serves as a feedback loop to spot weaknesses in the models and improve OpenAI's research. ... Two years ag... / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=official_original","Ad Skip to content OpenAI's deployment chief on Codex growth, falling AI prices, and the ROI question Maximilian Schreiner View the LinkedIn Profile of Maximilian Schreiner Jun 24, 2026 GPT-Image-2 prompted by THE DECODER Key Points Through its subsidiary DeployCo, OpenAI is building a team of engineers that embeds AI models directly into the IT systems and business processes of corporate clients."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":["Despite strict European rules like the AI Act, OpenAI CTO Arnaud Fournier says regulation barely slows adoption."]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-022｜The Average AI Agent Implementation Timeline - Moveworks
+
+- raw_ref: R-022
+- raw_original_id: https://www.moveworks.com/us/en/resources/blog/ai-agent-implementation-timeline-for-enterprise
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-022-the-average-ai-agent-implementation-timeline-moveworks.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-022-the-average-ai-agent-implementation-timeline-moveworks.json`
+- source: keyword search / Anysearch｜https://www.moveworks.com/us/en/resources/blog/ai-agent-implementation-timeline-for-enterprise
+- source_url: https://www.moveworks.com/us/en/resources/blog/ai-agent-implementation-timeline-for-enterprise
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 54fefee42cc42408
+- raw_full_text_hash: f0339f2cb2f893c3
+- raw_semantic_hash: c52db6ac0c553864
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f0339f2cb2f893c3","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"- AI agent rollouts typically follow a five-phase roadmap — from discovery and scoping to deployment and optimization. - The biggest slowdowns aren’t technical — they’re misalignment, security gaps, and unclear ownership. ... - Choosing the right solution (build vs. buy) greatly affects timeline and... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=official_original","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Skip to main content Home Resources Blogs The Average AI Agent Implementation Timeline Blog / August 06, 2025 How Long It Really Takes to Implement an AI Agent (And What to Expect) Ashmita Shrivastava, Content Marketing Manager Table of contents AI agent rollouts typically follow a five-phase roadmap — from discovery and scoping to deployment and optimization.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"The biggest slowdowns aren’t technical — they’re misalignment, security gaps, and unclear ownership.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Choosing the right solution (build vs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"buy) greatly affects timeline and scalability.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"A platform-based approach with prebuilt templates can cut deployment from months to weeks.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Choosing the right solution (build vs.","buy) greatly affects timeline and scalability."],"case_details":["Skip to main content Home Resources Blogs The Average AI Agent Implementation Timeline Blog / August 06, 2025 How Long It Really Takes to Implement an AI Agent (And What to Expect) Ashmita Shrivastava, Content Marketing Manager Table of contents AI agent rollouts typically follow a five-phase roadmap — from discovery and scoping to deployment and optimization.","A platform-based approach with prebuilt templates can cut deployment from months to weeks."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人"],"risks_or_constraints":["- AI agent rollouts typically follow a five-phase roadmap — from discovery and scoping to deployment and optimization. - The biggest slowdowns aren’t technical — they’re misalignment, security gaps, and unclear ownership. ... - Choosing the right solution (build vs. buy) greatly affects timeline and... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=official_original","The biggest slowdowns aren’t technical — they’re misalignment, security gaps, and unclear ownership."]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-023｜Forward Deployed Engineer, GenAI | Careers - Scale AI
+
+- raw_ref: R-023
+- raw_original_id: https://scale.com/careers/4593571005
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-023-forward-deployed-engineer-genai-careers-scale-ai.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-023-forward-deployed-engineer-genai-careers-scale-ai.json`
+- source: keyword search / Anysearch｜https://scale.com/careers/4593571005
+- source_url: https://scale.com/careers/4593571005
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: developer_ecosystem
+- source_type: organization-capability
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 1da6fb8980e73cb0
+- raw_full_text_hash: 1da6fb8980e73cb0
+- raw_semantic_hash: be056e4d395522b8
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1da6fb8980e73cb0","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Forward Deployed Engineer, GenAI · Experience with large-scale data processing and distributed systems. · Familiarity with machine learning and AI concepts. / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"About Scale AI At Scale AI, our mission is to accelerate the development of AI applications.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"For 8 years, Scale has been the leading AI data foundry, helping fuel the most exciting advancements in AI, including generative AI, defense applications, and autonomous vehicles.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"With our recent Series F round, we’re accelerating the abundance of frontier data to pave the road to Artificial General Intelligence (AGI) and building upon our prior model evaluation work with enterprise customers and governments to deepen our capabilities and offerings for public and private evaluations.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"About Data Engine Our Generative AI Data Engine powers the world’s most advanced LLMs and generative models through world-class RLHF (Reinforcement Learning with Human Feedback), human data generation, model evaluation, safety, and alignment.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The data we produce is some of the most critical work for how humanity will interact with AI.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["About Scale AI At Scale AI, our mission is to accelerate the development of AI applications.","For 8 years, Scale has been the leading AI data foundry, helping fuel the most exciting advancements in AI, including generative AI, defense applications, and autonomous vehicles.","With our recent Series F round, we’re accelerating the abundance of frontier data to pave the road to Artificial General Intelligence (AGI) and building upon our prior model evaluation work with enterprise customers and governments to deepen our capabilities and offerings for public and private evaluations."],"case_details":["Forward Deployed Engineer, GenAI · Experience with large-scale data processing and distributed systems. · Familiarity with machine learning and AI concepts. / query=forward deployed engineer applied AI customer deployment / intent=find_customer_case / path=developer_ecosystem"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-024｜AWS Marketplace: AI For Process
+
+- raw_ref: R-024
+- raw_original_id: https://aws.amazon.com/marketplace/pp/prodview-fve5ooypzvpgi
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-024-aws-marketplace-ai-for-process.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-024-aws-marketplace-ai-for-process.json`
+- source: keyword search / Anysearch｜https://aws.amazon.com/marketplace/pp/prodview-fve5ooypzvpgi
+- source_url: https://aws.amazon.com/marketplace/pp/prodview-fve5ooypzvpgi
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: procurement_marketplace
+- source_type: marketplace
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 2f461f17b71fbe4c
+- raw_full_text_hash: a326d9f894c38c52
+- raw_semantic_hash: e30f71b2e8c5d4ce
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a326d9f894c38c52","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"AI for Process is an AI Agent platform designed to automate knowledge-intensive business processes. By combining deep domain AI agents with robust ... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=procurement_marketplace","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"AI For Process Info Sold by: Kore.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"ai Deployed on AWS AI for Process is an AI Agent platform designed to automate knowledge-intensive business processes.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"By combining deep domain AI agents with robust integration, it streamlines operations, reduces human dependency, and boosts compliance and efficiency.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"It features Multi-Agent Process Automation for handling complex decisions using structured and unstructured data, and Process-Specific AI Orchestration for customizable workflows aligned with business goals.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Its Human-in-the-Loop Framework enables human intervention at key decision points.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Its Human-in-the-Loop Framework enables human intervention at key decision points."],"case_details":["AI for Process is an AI Agent platform designed to automate knowledge-intensive business processes. By combining deep domain AI agents with robust ... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=procurement_marketplace"],"workflow_changes":["AI For Process Info Sold by: Kore.","ai Deployed on AWS AI for Process is an AI Agent platform designed to automate knowledge-intensive business processes.","It features Multi-Agent Process Automation for handling complex decisions using structured and unstructured data, and Process-Specific AI Orchestration for customizable workflows aligned with business goals."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":["By combining deep domain AI agents with robust integration, it streamlines operations, reduces human dependency, and boosts compliance and efficiency."]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-025｜Belgian AI startup Tekst raises €11.5 million to tackle the bottleneck holding back enterprise AI - Tech.eu
+
+- raw_ref: R-025
+- raw_original_id: https://tech.eu/2026/05/07/belgian-ai-startup-tekst-raises-11-5-million-to-tackle-the-bottleneck-holding-back-enterprise-ai/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-025-belgian-ai-startup-tekst-raises-11-5-million-to-tackle-the-bottleneck-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-025-belgian-ai-startup-tekst-raises-11-5-million-to-tackle-the-bottleneck-.json`
+- source: keyword search / Anysearch｜https://tech.eu/2026/05/07/belgian-ai-startup-tekst-raises-11-5-million-to-tackle-the-bottleneck-holding-back-enterprise-ai/
+- source_url: https://tech.eu/2026/05/07/belgian-ai-startup-tekst-raises-11-5-million-to-tackle-the-bottleneck-holding-back-enterprise-ai/
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: c342a985501b6e9f
+- raw_full_text_hash: c342a985501b6e9f
+- raw_semantic_hash: 80ae44b7ee4d611e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c342a985501b6e9f","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"# Belgian AI startup Tekst raises €11.5 million to tackle the bottleneck holding back enterprise AI ... Ghent-based Tekst has closed an €11.5 million Series A led by US venture firm Elephant. ... Tekst was founded in Ghent in 2022 by Wouter Janssen (CEO) and Tiebe Parmentier (CTO) and is taking aim ... / query=AI infrastructure startup Series A customers / intent=find_startups / path=industry_landing","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Artificial Intelligence Belgian AI startup Tekst raises €11.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"5 million to tackle the bottleneck holding back enterprise AI Tekst reconstructs processes automatically from the digital trail employees leave behind every day.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Cate Lawrence 07 May 2026 Share Facebook Twitter Linkedin Share Send email Copy link Ghent-based Tekst has closed an €11.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"5 million Series A led by US venture firm Elephant.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Tekst was founded in Ghent in 2022 by Wouter Janssen (CEO) and Tiebe Parmentier (CTO) and is taking aim at one of the biggest headaches in enterprise AI.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["# Belgian AI startup Tekst raises €11.5 million to tackle the bottleneck holding back enterprise AI ... Ghent-based Tekst has closed an €11.5 million Series A led by US venture firm Elephant. ... Tekst was founded in Ghent in 2022 by Wouter Janssen (CEO) and Tiebe Parmentier (CTO) and is taking aim ... / query=AI infrastructure startup Series A customers / intent=find_startups / path=industry_landing","Artificial Intelligence Belgian AI startup Tekst raises €11.","Cate Lawrence 07 May 2026 Share Facebook Twitter Linkedin Share Send email Copy link Ghent-based Tekst has closed an €11."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-026｜Case studies
+
+- raw_ref: R-026
+- raw_original_id: https://www.procure.ai/case-studies/enbw
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-026-case-studies.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-026-case-studies.json`
+- source: keyword search / Anysearch｜https://www.procure.ai/case-studies/enbw
+- source_url: https://www.procure.ai/case-studies/enbw
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: procurement_marketplace
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 82
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 23ea243e063edb02
+- raw_full_text_hash: 23ea243e063edb02
+- raw_semantic_hash: 4a567341c6e9135e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"23ea243e063edb02","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"# How EnBW saved 5,600 hours and achieved 5.3 % cost savings with Procure Ai’s AI-native Procurement Automation Platform ... : 26,000 ... - 5.3% average cost savings - 5,600 hours (1-2) FTEs saved annually - AI-driven automation integrated with Ivalua & SAP S/4HANA - Procurement evolved from tactica... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=procurement_marketplace","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Case studies Platform Solutions Customers Company Resources EN Access Demo Contact us Case studies How EnBW saved 5,600 hours and achieved 5.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"3 % cost savings with Procure Ai’s AI-native Procurement Automation Platform Trustful collaboration and Procure Ai’s AI-native Procurement Automation Platform enhance operational procurement processes at EnBW Customer: EnBW Energie Baden-Württemberg AG Industry: Energy & Utilities Location: Karlsruhe, Germany Revenue: €32 billion Employees: 26,000 Impact snapshot 5.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"3% average cost savings 5,600 hours (1-2) FTEs saved annually AI-driven automation integrated with Ivalua & SAP S/4HANA Procurement evolved from tactical to strategic The challenge: Transform procurement into an intelligence hub EnBW, one of Germany’s largest energy companies with €32 billion in annual revenue and over 26,000 employees, was under growing pressure to modernize its procurement processes to make the function more agile, transparent, and intelligent.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Like many utilities, EnBW was navigating the energy transition—phasing out coal and scaling up renewable energy and sustainable infrastructure.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"At the same time, competition for suppliers and infrastructure resources was intensifying—driven by the pace of government spending and the race to net zero.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Like many utilities, EnBW was navigating the energy transition—phasing out coal and scaling up renewable energy and sustainable infrastructure.","At the same time, competition for suppliers and infrastructure resources was intensifying—driven by the pace of government spending and the race to net zero."],"case_details":["Case studies Platform Solutions Customers Company Resources EN Access Demo Contact us Case studies How EnBW saved 5,600 hours and achieved 5."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师","采购负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-027｜AI Implementation Roadmap: Week-by-Week Timeline (2026)
+
+- raw_ref: R-027
+- raw_original_id: https://helium42.com/blog/ai-implementation-roadmap
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-027-ai-implementation-roadmap-week-by-week-timeline-2026.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-027-ai-implementation-roadmap-week-by-week-timeline-2026.json`
+- source: keyword search / Anysearch｜https://helium42.com/blog/ai-implementation-roadmap
+- source_url: https://helium42.com/blog/ai-implementation-roadmap
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 88
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 575cba41e8a25e37
+- raw_full_text_hash: 95647bf48c212667
+- raw_semantic_hash: 51e1b3f47bb01375
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"95647bf48c212667","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"An AI implementation roadmap is a structured, time-bound plan that takes an organisation from initial strategy alignment through to measurable production deployment. Helium42 delivers this in 6–8 weeks, not the 6–18 months that traditional consultancies quote, because we combine education-led change... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Published by Peter Vogel Peter has guided over 500 organisations through AI transformation, with particular expertise in marketing and sales team enablement.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"His workshops have trained 2,000+ professionals in practical AI application, .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"AI Strategy AI Implementation Apr 1, 2026 5:30:00 AM AI Implementation Roadmap: The Week-by-Week Timeline for SMEs (2026) An AI implementation roadmap is a structured, time-bound plan that takes an organisation from initial strategy alignment through to measurable production deployment.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Helium42 delivers this in 6–8 weeks, not the 6–18 months that traditional consultancies quote, because we combine education-led change management with proven technical delivery in a single accelerated programme.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This roadmap sets out the week-by-week timeline and what each phase delivers.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["His workshops have trained 2,000+ professionals in practical AI application, .","Helium42 delivers this in 6–8 weeks, not the 6–18 months that traditional consultancies quote, because we combine education-led change management with proven technical delivery in a single accelerated programme.","This roadmap sets out the week-by-week timeline and what each phase delivers."],"case_details":["An AI implementation roadmap is a structured, time-bound plan that takes an organisation from initial strategy alignment through to measurable production deployment. Helium42 delivers this in 6–8 weeks, not the 6–18 months that traditional consultancies quote, because we combine education-led change... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=official_original","AI Strategy AI Implementation Apr 1, 2026 5:30:00 AM AI Implementation Roadmap: The Week-by-Week Timeline for SMEs (2026) An AI implementation roadmap is a structured, time-bound plan that takes an organisation from initial strategy alignment through to measurable production deployment."],"workflow_changes":["Published by Peter Vogel Peter has guided over 500 organisations through AI transformation, with particular expertise in marketing and sales team enablement."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-028｜The UiPath Platform™ for Business Orchestration and Automation | UiPath
+
+- raw_ref: R-028
+- raw_original_id: https://www.uipath.com/
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-028-the-uipath-platformtm-for-business-orchestration-and-automation-uipath.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-028-the-uipath-platformtm-for-business-orchestration-and-automation-uipath.json`
+- source: keyword search / Anysearch｜https://www.uipath.com/
+- source_url: https://www.uipath.com/
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: false
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 82
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: indexed
+- pool_routes: index_only
+- raw_content_hash: 798c27c7365f9ddf
+- raw_full_text_hash: 798c27c7365f9ddf
+- raw_semantic_hash: ff62e4b958fe3e21
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"798c27c7365f9ddf","missing":[]}
+- degradation_reasons: index_only_or_directory_page
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"# Accelerate your journey from AI investment to enterprise impact. ... See first-hand how to move from AI pilot to production, and start realizing the promise of the agentic enterprise. ... ## High-impact solutions, powered by agentic automation ... ## Discover how WEX saved $2.7M by streamlining op... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=capital_startup","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The UiPath Platform™ for Business Orchestration and Automation | UiPath FUSION is coming.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"days hours minutes Register now Accelerate your journey from AI investment to enterprise impact.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"See first-hand how to move from AI pilot to production, and start realizing the promise of the agentic enterprise.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Register now See the agenda Not sure where to start?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Find out how to agentify any enterprise: Financial Services Healthcare Manufacturing Public Sector Latest from UiPath Press Release UiPath has been named a Leader in The Forrester Wave™: Document Mining And Analytics Platforms Press release UiPath achieves AIUC-1 certification, setting new standard for AI agent security and reliability Event Catch up on the new portfolio of industry solutions unveiled at the UiPath Agentic AI Summit Press Release UiPath acquires WorkFusion, strengthening agentic solutions for finan","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The UiPath Platform™ for Business Orchestration and Automation | UiPath FUSION is coming.","days hours minutes Register now Accelerate your journey from AI investment to enterprise impact.","Register now See the agenda Not sure where to start?"],"case_details":["See first-hand how to move from AI pilot to production, and start realizing the promise of the agentic enterprise."],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["Find out how to agentify any enterprise: Financial Services Healthcare Manufacturing Public Sector Latest from UiPath Press Release UiPath has been named a Leader in The Forrester Wave™: Document Mining And Analytics Platforms Press release UiPath achieves AIUC-1 certification, setting new standard for AI agent security and reliability Event Catch up on the new portfolio of industry solutions unveiled at the UiPath Agentic AI Summit Press Release UiPath acquires WorkFusion, strengthening agentic solutions for finan"]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-029｜Movate and MelodyArc Announce Applied AI Partnership to ...
+
+- raw_ref: R-029
+- raw_original_id: https://www.prnewswire.com/in/news-releases/movate-and-melodyarc-announce-applied-ai-partnership-to-transform-cx-operations-with-ai-powered-workflow-orchestration-302808902.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-029-movate-and-melodyarc-announce-applied-ai-partnership-to.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-029-movate-and-melodyarc-announce-applied-ai-partnership-to.json`
+- source: keyword search / Anysearch｜https://www.prnewswire.com/in/news-releases/movate-and-melodyarc-announce-applied-ai-partnership-to-transform-cx-operations-with-ai-powered-workflow-orchestration-302808902.html
+- source_url: https://www.prnewswire.com/in/news-releases/movate-and-melodyarc-announce-applied-ai-partnership-to-transform-cx-operations-with-ai-powered-workflow-orchestration-302808902.html
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 7d22b94caa3b75bb
+- raw_full_text_hash: 7d22b94caa3b75bb
+- raw_semantic_hash: fbd0ff8649e2c7a5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7d22b94caa3b75bb","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"BENGALURU, India and PLANO, Texas, June 24, 2026 /PRNewswire/ -- Movate, a global Applied AI services company, today announced a strategic partnership with MelodyArc, the pioneering AI-powered workflow orchestration company built by operators, for operators. This collaboration unites Movate's deep e... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=official_original","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"BENGALURU, India and PLANO, Texas , June 24, 2026 /PRNewswire/ -- Movate , a global Applied AI services company, today announced a strategic partnership with MelodyArc , the pioneering AI-powered workflow orchestration company built by operators, for operators.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"This collaboration unites Movate's deep expertise in global CX delivery and AI-integrated services with MelodyArc's intelligent orchestration platform, enabling enterprises to automate complex, end-to-end customer experience workflows while maintaining the human-in-the-loop oversight and governance that modern operations demand.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"The partnership strengthens Movate's Applied AI platform, Mova iO, by incorporating MelodyArc's AI orchestration capabilities directly into agent workflows and customer service operations.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Movate brings almost 30 years of operational excellence delivering CX services across industries and geographies, and as an Applied AI partner, supports clients with an AI-first delivery framework and global network that drives efficiency, reduces costs and scales CX operations without compromising on quality or compliance.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"MelodyArc's platform natively orchestrates complex CX workflows end-to-end using AI operators that can execute, reason and collaborate across systems.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":[],"case_details":["BENGALURU, India and PLANO, Texas, June 24, 2026 /PRNewswire/ -- Movate, a global Applied AI services company, today announced a strategic partnership with MelodyArc, the pioneering AI-powered workflow orchestration company built by operators, for operators. This collaboration unites Movate's deep e... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=official_original","This collaboration unites Movate's deep expertise in global CX delivery and AI-integrated services with MelodyArc's intelligent orchestration platform, enabling enterprises to automate complex, end-to-end customer experience workflows while maintaining the human-in-the-loop oversight and governance that modern operations demand.","The partnership strengthens Movate's Applied AI platform, Mova iO, by incorporating MelodyArc's AI orchestration capabilities directly into agent workflows and customer service operations."],"workflow_changes":["BENGALURU, India and PLANO, Texas , June 24, 2026 /PRNewswire/ -- Movate , a global Applied AI services company, today announced a strategic partnership with MelodyArc , the pioneering AI-powered workflow orchestration company built by operators, for operators.","MelodyArc's platform natively orchestrates complex CX workflows end-to-end using AI operators that can execute, reason and collaborate across systems."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":["Movate brings almost 30 years of operational excellence delivering CX services across industries and geographies, and as an Applied AI partner, supports clients with an AI-first delivery framework and global network that drives efficiency, reduces costs and scales CX operations without compromising on quality or compliance."]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-030｜issdandavis/Kiro_Version_ai-workflow-architect
+
+- raw_ref: R-030
+- raw_original_id: https://github.com/issdandavis/Kiro_Version_ai-workflow-architect
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-030-issdandavis-kiro-version-ai-workflow-architect.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-030-issdandavis-kiro-version-ai-workflow-architect.json`
+- source: keyword search / Anysearch｜https://github.com/issdandavis/Kiro_Version_ai-workflow-architect
+- source_url: https://github.com/issdandavis/Kiro_Version_ai-workflow-architect
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: developer_ecosystem
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 88
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 8aa7d37f03ce226d
+- raw_full_text_hash: 8aa7d37f03ce226d
+- raw_semantic_hash: 8995bbcc02718af7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8aa7d37f03ce226d","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"Full-stack AI orchestration platform with autonomous AI control, self-improvement developer mode, and multi-provider support ... A powerful, universally adaptable full-stack AI orchestration platform that coordinates multiple AI providers, manages integrations, and builds automated workflows. Featur... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This repository was archived by the owner on Apr 7, 2026.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It is now read-only.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"issdandavis Kiro_Version_ai-workflow-architect Public archive Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 230 Commits 230 Commits .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"vscode attached_assets attached_assets client client data data docs docs script script scripts/ ai-agents scripts/ ai-agents server server shared shared src src tests tests .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"npmrc AI_COLLABORATOR_NOTES.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["This repository was archived by the owner on Apr 7, 2026.","It is now read-only.","vscode attached_assets attached_assets client client data data docs docs script script scripts/ ai-agents scripts/ ai-agents server server shared shared src src tests tests ."],"case_details":["Full-stack AI orchestration platform with autonomous AI control, self-improvement developer mode, and multi-provider support ... A powerful, universally adaptable full-stack AI orchestration platform that coordinates multiple AI providers, manages integrations, and builds automated workflows. Featur... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem"],"workflow_changes":["issdandavis Kiro_Version_ai-workflow-architect Public archive Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 230 Commits 230 Commits ."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-031｜Smartsheet Claude Platform (API) case study | Claude by Anthropic
+
+- raw_ref: R-031
+- raw_original_id: https://claude.com/customers/smartsheet
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-031-smartsheet-claude-platform-api-case-study-claude-by-anthropic.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-031-smartsheet-claude-platform-api-case-study-claude-by-anthropic.json`
+- source: keyword search / Anysearch｜https://claude.com/customers/smartsheet
+- source_url: https://claude.com/customers/smartsheet
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 89
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 3a8578d28c080684
+- raw_full_text_hash: 3a8578d28c080684
+- raw_semantic_hash: bbd4148c38f55e96
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3a8578d28c080684","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"Claude Platform (API) case ... | Claude by Anthropic ... # Smartsheet builds conversational AI into work management with Claude ... Smartsheet is a work management platform used by more than 120,000 organizations, including over 85% of the Fortune 500 work in Smartsheet. In early 2026, the company d... / query=AI transformation workflow automation ROI customer case / intent=find_customer_case / path=official_original","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Selecting Claude for conversational quality Smartsheet evaluates models individually for each use case.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"For the customer-facing surfaces, Claude won.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The team tested multiple providers and found Claude's output quality strongest for the conversational, action-oriented work their product required.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Claude Sonnet now powers both new AI features within Smartsheet and the Smartsheet MCP Connector.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"“When we made the decision to deploy AI company-wide, the question wasn’t just which model performed best.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Selecting Claude for conversational quality Smartsheet evaluates models individually for each use case.","The team tested multiple providers and found Claude's output quality strongest for the conversational, action-oriented work their product required.","Claude Sonnet now powers both new AI features within Smartsheet and the Smartsheet MCP Connector."],"case_details":["For the customer-facing surfaces, Claude won."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-032｜hu8627/GridsPilot
+
+- raw_ref: R-032
+- raw_original_id: https://github.com/hu8627/GridsPilot
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-032-hu8627-gridspilot.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-032-hu8627-gridspilot.json`
+- source: keyword search / Anysearch｜https://github.com/hu8627/GridsPilot
+- source_url: https://github.com/hu8627/GridsPilot
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: developer_ecosystem
+- source_type: developer
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 88
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: b00f771f71d06587
+- raw_full_text_hash: b00f771f71d06587
+- raw_semantic_hash: 29e7076f60896723
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b00f771f71d06587","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"An AI-Native Business OS. Bridging Autonomous Agents and Enterprise Workflows with a highly visual, Human-in-the-Loop (HITL) orchestration framework. ... The core idea is simple: **Draw the Agent's execution logic as a visible blueprint (DAG) or execute according to a confirmed logic, and place a \"b... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"hu8627 GridsPilot Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 28 Commits 28 Commits .","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"vscode backend backend docs docs frontend frontend .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"gitignore LICENSE LICENSE README.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"sh docker-compose.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"yml docker-compose.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["vscode backend backend docs docs frontend frontend .","gitignore LICENSE LICENSE README.","sh docker-compose."],"case_details":["An AI-Native Business OS. Bridging Autonomous Agents and Enterprise Workflows with a highly visual, Human-in-the-Loop (HITL) orchestration framework. ... The core idea is simple: **Draw the Agent's execution logic as a visible blueprint (DAG) or execute according to a confirmed logic, and place a \"b... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem","hu8627 GridsPilot Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 28 Commits 28 Commits ."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-033｜The AI pricing and monetization playbook - Bessemer Venture Partners
+
+- raw_ref: R-033
+- raw_original_id: https://www.bvp.com/atlas/the-ai-pricing-and-monetization-playbook
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-033-the-ai-pricing-and-monetization-playbook-bessemer-venture-partners.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-033-the-ai-pricing-and-monetization-playbook-bessemer-venture-partners.json`
+- source: keyword search / Anysearch｜https://www.bvp.com/atlas/the-ai-pricing-and-monetization-playbook
+- source_url: https://www.bvp.com/atlas/the-ai-pricing-and-monetization-playbook
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: pricing_change
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 8b22f345f67c0b9e
+- raw_full_text_hash: ff6b5c5fe687fdff
+- raw_semantic_hash: 9d09d9bf777b03d1
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ff6b5c5fe687fdff","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"That's why your pricing strategy must be bespoke: tailored to your industry, your customer's workflows, the concrete outcomes your product delivers, and the cost structure required to ensure profitable growth. Put simply, you must align the value your product creates with the value you capture throu... / query=usage-based pricing AI enterprise adoption / intent=find_original_source / path=industry_landing","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Jump around AI pricing playbook Key insights How should I price my AI product?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Three business models shaping pricing today Seven guiding principles to follow Founder best practices to hone your strategy Next steps before setting up your pricing exercise AI product leaders will monetize outcomes Download the quick read Contributors Atlas Editors Share Subscribe Download the quick read 2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"26 AI & ML The AI pricing and monetization playbook An early primer on how founders and AI product leaders capture value in a world where every token has a cost, and every customer expects exponential outcomes.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Every new AI product typically aims to achieve three goals: reach new audiences, deepen engagement through new capabilities, and expand the total addressable market.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But at the foundation of AI pricing lies a hard truth that changes everything: unlike traditional software, delivering AI isn't free.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Jump around AI pricing playbook Key insights How should I price my AI product?","Three business models shaping pricing today Seven guiding principles to follow Founder best practices to hone your strategy Next steps before setting up your pricing exercise AI product leaders will monetize outcomes Download the quick read Contributors Atlas Editors Share Subscribe Download the quick read 2.","Every new AI product typically aims to achieve three goals: reach new audiences, deepen engagement through new capabilities, and expand the total addressable market."],"case_details":["That's why your pricing strategy must be bespoke: tailored to your industry, your customer's workflows, the concrete outcomes your product delivers, and the cost structure required to ensure profitable growth. Put simply, you must align the value your product creates with the value you capture throu... / query=usage-based pricing AI enterprise adoption / intent=find_original_source / path=industry_landing","26 AI & ML The AI pricing and monetization playbook An early primer on how founders and AI product leaders capture value in a world where every token has a cost, and every customer expects exponential outcomes."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-034｜Beyond the SaaSpocalypse: Proving SaaS Value in the AI Era | Accenture
+
+- raw_ref: R-034
+- raw_original_id: https://www.accenture.com/ca-en/blogs/software-platforms/ai-rewriting-saas-value-equation
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-034-beyond-the-saaspocalypse-proving-saas-value-in-the-ai-era-accenture.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-034-beyond-the-saaspocalypse-proving-saas-value-in-the-ai-era-accenture.json`
+- source: keyword search / Anysearch｜https://www.accenture.com/ca-en/blogs/software-platforms/ai-rewriting-saas-value-equation
+- source_url: https://www.accenture.com/ca-en/blogs/software-platforms/ai-rewriting-saas-value-equation
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: pricing_change
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: dbaafdf0ab998607
+- raw_full_text_hash: dbaafdf0ab998607
+- raw_semantic_hash: 60977f49d277d85c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dbaafdf0ab998607","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"As value shifts from access to execution, monetization must follow. Charging for seats and logins gives way to charging for how work gets done—through consumption, value, or outcome‑based pricing models that reflect the real impact AI delivers. When agents do the work, pricing must align to executio... / query=usage-based pricing AI enterprise adoption / intent=find_original_source / path=industry_landing","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"BLOG Beyond the SaaSpocalypse: Proving SaaS value in the AI era Moving from seats and access to execution as SaaS leaders drive ROI in the agentic AI era.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"5-MINUTE READ April 6, 2026 For much of the last two decades, SaaS value was easy to explain.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Interfaces scaled.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI has changed that equation.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Across conversations with SaaS executives, boards, and investors, one concern keeps surfacing: if AI agents increasingly do the work, what anchors platform value?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["As value shifts from access to execution, monetization must follow. Charging for seats and logins gives way to charging for how work gets done—through consumption, value, or outcome‑based pricing models that reflect the real impact AI delivers. When agents do the work, pricing must align to executio... / query=usage-based pricing AI enterprise adoption / intent=find_original_source / path=industry_landing","BLOG Beyond the SaaSpocalypse: Proving SaaS value in the AI era Moving from seats and access to execution as SaaS leaders drive ROI in the agentic AI era.","5-MINUTE READ April 6, 2026 For much of the last two decades, SaaS value was easy to explain."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-035｜Deploy Small Language Models on GPU Cloud: Enterprise SLM Guide for 75% Lower Inference Costs (2026) | Spheron Blog
+
+- raw_ref: R-035
+- raw_original_id: https://www.spheron.network/blog/deploy-small-language-models-gpu-cloud
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-035-deploy-small-language-models-on-gpu-cloud-enterprise-slm-guide-for-75-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-035-deploy-small-language-models-on-gpu-cloud-enterprise-slm-guide-for-75-.json`
+- source: keyword search / Tavily｜https://www.spheron.network/blog/deploy-small-language-models-gpu-cloud
+- source_url: https://www.spheron.network/blog/deploy-small-language-models-gpu-cloud
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 97f11fcc523ea43c
+- raw_full_text_hash: 46341afdeab0d50d
+- raw_semantic_hash: b5c9b79629e66e2e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"46341afdeab0d50d","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"# Deploy Small Language Models on GPU Cloud: Enterprise SLM Guide for 75% Lower Inference Costs (2026). 80% of production AI use cases run on models under 13B parameters. ## Why 2026 Is the Year of Small Language Models. The SLM market is on track to exceed $20.7B by 2030. It is coming from enterprises that over-provisioned on large models, saw the bills, and started asking whether a 7B model could do the same job. First, inference cost: a hosted API call at $5/1M tokens is painful at scale, and teams with real pro","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"80% of production AI use cases run on models under 13B parameters.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"H100 clusters are the wrong tool for them.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Why 2026 Is the Year of Small Language Models The SLM market is on track to exceed $20.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"That growth is not coming from researchers chasing leaderboard rankings.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It is coming from enterprises that over-provisioned on large models, saw the bills, and started asking whether a 7B model could do the same job.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["H100 clusters are the wrong tool for them.","That growth is not coming from researchers chasing leaderboard rankings.","It is coming from enterprises that over-provisioned on large models, saw the bills, and started asking whether a 7B model could do the same job."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-036｜AI Infrastructure Best Practices 2026: Scalable, Secure Enterprise Guide
+
+- raw_ref: R-036
+- raw_original_id: https://intellectualclouds.com/blog/ai-infrastructure-best-practices
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-036-ai-infrastructure-best-practices-2026-scalable-secure-enterprise-guide.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-036-ai-infrastructure-best-practices-2026-scalable-secure-enterprise-guide.json`
+- source: keyword search / Tavily｜https://intellectualclouds.com/blog/ai-infrastructure-best-practices
+- source_url: https://intellectualclouds.com/blog/ai-infrastructure-best-practices
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: fc5a0932010be05b
+- raw_full_text_hash: fc5a0932010be05b
+- raw_semantic_hash: 942ea38a84a4aa8a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fc5a0932010be05b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"HomeBlogAI Infrastructure Best Practices 2026: Scalable, Secure Enterprise Guide. AI Infrastructure Best Practices 2026: Scalable, Secure Enterprise Guide. Learn AI infrastructure best practices for 2026, including GPU planning, MLOps, security, observability, cost optimization, data pipelines, scalability and disaster recovery. **AI infrastructure best practices** include designing scalable compute, secure data pipelines, GPU/accelerator planning, MLOps automation, continuous model monitoring, strict cost controls","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Home Blog AI Infrastructure Best Practices 2026: Scalable, Secure Enterprise Guide AI Engineering AI Infrastructure Best Practices 2026: Scalable, Secure Enterprise Guide Asim Ansari June 24, 2026 20 min read Learn AI infrastructure best practices for 2026, including GPU planning, MLOps, security, observability, cost optimization, data pipelines, scalability and disaster recovery.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"On this page Quick Answer AI infrastructure best practices include designing scalable compute, secure data pipelines, GPU/accelerator planning, MLOps automation, continuous model monitoring, strict cost controls, disaster recovery, enterprise governance, and full-stack observability.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"A robust AI infrastructure must support experimentation, model training, deployment, real-time inference, automated retraining, compliance, and continuous performance evaluation without operational bottlenecks.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"product_update","text":"By Asim Ansari | Last Updated: June 24, 2026 | 22 min read What You Will Learn The core components of a scalable enterprise AI architecture.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"How to plan for GPU constraints and optimize AI energy consumption .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["On this page Quick Answer AI infrastructure best practices include designing scalable compute, secure data pipelines, GPU/accelerator planning, MLOps automation, continuous model monitoring, strict cost controls, disaster recovery, enterprise governance, and full-stack observability.","By Asim Ansari | Last Updated: June 24, 2026 | 22 min read What You Will Learn The core components of a scalable enterprise AI architecture.","How to plan for GPU constraints and optimize AI energy consumption ."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["HomeBlogAI Infrastructure Best Practices 2026: Scalable, Secure Enterprise Guide. AI Infrastructure Best Practices 2026: Scalable, Secure Enterprise Guide. Learn AI infrastructure best practices for 2026, including GPU planning, MLOps, security, observability, cost optimization, data pipelines, scalability and disaster recovery. **AI infrastructure best practices** include designing scalable compute, secure data pipelines, GPU/accelerator planning, MLOps automation, continuous model monitoring, strict cost controls","Home Blog AI Infrastructure Best Practices 2026: Scalable, Secure Enterprise Guide AI Engineering AI Infrastructure Best Practices 2026: Scalable, Secure Enterprise Guide Asim Ansari June 24, 2026 20 min read Learn AI infrastructure best practices for 2026, including GPU planning, MLOps, security, observability, cost optimization, data pipelines, scalability and disaster recovery.","A robust AI infrastructure must support experimentation, model training, deployment, real-time inference, automated retraining, compliance, and continuous performance evaluation without operational bottlenecks."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-037｜What Is an Enterprise Agentic AI Platform? 2026 Adoption
+
+- raw_ref: R-037
+- raw_original_id: https://fulcrumdigital.com/blogs/what-is-an-enterprise-agentic-ai-platform-and-why-are-companies-adopting-it-in-2026
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-037-what-is-an-enterprise-agentic-ai-platform-2026-adoption.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-037-what-is-an-enterprise-agentic-ai-platform-2026-adoption.json`
+- source: keyword search / Tavily｜https://fulcrumdigital.com/blogs/what-is-an-enterprise-agentic-ai-platform-and-why-are-companies-adopting-it-in-2026
+- source_url: https://fulcrumdigital.com/blogs/what-is-an-enterprise-agentic-ai-platform-and-why-are-companies-adopting-it-in-2026
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: cb1f4f7fd17f7ad1
+- raw_full_text_hash: cb1f4f7fd17f7ad1
+- raw_semantic_hash: e556637a4c7f2f7d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"cb1f4f7fd17f7ad1","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"# What Is an Enterprise Agentic AI Platform, and Why Are Companies Adopting It in 2026? > * An enterprise agentic AI platform is a system that coordinates decisions and actions across workflows, rather than delivering isolated insights or automations. > * As AI adoption scales, execution and coordination have become the primary constraints inside large organizations. > * Agentic platforms address this gap by enabling AI systems to act with intent, context, and continuity across enterprise processes. > * Enterprise-","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"What Is an Enterprise Agentic AI Platform, and Why Are Companies Adopting It in 2026?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"January 14, 2026 What this article covers: An enterprise agentic AI platform is a system that coordinates decisions and actions across workflows, rather than delivering isolated insights or automations.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As AI adoption scales, execution and coordination have become the primary constraints inside large organizations.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Agentic platforms address this gap by enabling AI systems to act with intent, context, and continuity across enterprise processes.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Enterprise-grade capabilities such as governance, observability, and integration are what make agentic AI viable inside real operations.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["What Is an Enterprise Agentic AI Platform, and Why Are Companies Adopting It in 2026?","As AI adoption scales, execution and coordination have become the primary constraints inside large organizations.","Enterprise-grade capabilities such as governance, observability, and integration are what make agentic AI viable inside real operations."],"case_details":[],"workflow_changes":["# What Is an Enterprise Agentic AI Platform, and Why Are Companies Adopting It in 2026? > * An enterprise agentic AI platform is a system that coordinates decisions and actions across workflows, rather than delivering isolated insights or automations. > * As AI adoption scales, execution and coordination have become the primary constraints inside large organizations. > * Agentic platforms address this gap by enabling AI systems to act with intent, context, and continuity across enterprise processes. > * Enterprise-","January 14, 2026 What this article covers: An enterprise agentic AI platform is a system that coordinates decisions and actions across workflows, rather than delivering isolated insights or automations.","Agentic platforms address this gap by enabling AI systems to act with intent, context, and continuity across enterprise processes."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-038｜Agentic AI Enterprise Adoption 2026: 72% Production Proven
+
+- raw_ref: R-038
+- raw_original_id: https://agenticaiinstitute.org/agentic-ai-enterprise-adoption-2026-governance-gap
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-038-agentic-ai-enterprise-adoption-2026-72-production-proven.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-038-agentic-ai-enterprise-adoption-2026-72-production-proven.json`
+- source: keyword search / Tavily｜https://agenticaiinstitute.org/agentic-ai-enterprise-adoption-2026-governance-gap
+- source_url: https://agenticaiinstitute.org/agentic-ai-enterprise-adoption-2026-governance-gap
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 8d0ca09c65bb27c4
+- raw_full_text_hash: 8d0ca09c65bb27c4
+- raw_semantic_hash: 7fd2cfc6b0410edb
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8d0ca09c65bb27c4","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"###### Agent OS or Exit: The AI Startup Market’s Survival Stack Is Decided. ###### Enterprise Agentic AI Service Providers Reach 70% Autonomy in SDLC — But Full Services-as-Software Remains Out of Reach. ###### Trent AI’s Multi-Agent Security Platform Raises $13M — Closes the Gap Before Your Next Agentic Deployment. ###### Gartner Projects 40% of Enterprise Applications Will Deploy Task-Specific AI Agents by Year-End 2026 — Up From Under 5% in 2025. Here Is What Replaces It — and What Enterprise Leaders Must Do Now","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Agentic AI Enterprise Adoption 2026: 72% Production Proven LIVE — INTELLIGENCE DESK Tools NVIDIA Agent Toolkit Locks 17 Enterprise Platforms Into a Shared Deployment Stack Market Agentic AI SOC Startup TENEX AI Closes $250M Series B — Southeast VC Signals the Next Enterprise Deployment Wave Case Studies The Hottest Agentic AI Examples and Use Cases in 2026 Leadership & Strategy Agentic AI Enterprise Adoption 2026: Why 72% Are in Production Without Governance Deployment Enterprise AI Teams Undercount AI Systems by 3","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Here Is What Replaces It — and What Enterprise Leaders Must Do Now Reports & Whitepapers NIST Launches AI Agent Standards Initiative — Enterprise Governance Benchmarks Are Coming Faster Than You Think Deployment AI Index 2026: Enterprise Agent Deployment Stalls in Single Digits Despite 88% AI Adoption Deployment Enterprise Agent Orchestration Frameworks 2026: Why Scaffolding Beats Models Market Trent AI’s Multi-Agent Security Platform Raises $13M — Closes the Gap Before Your Next Agentic Deployment Startup Tracker ","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Get Instant Access While agentic AI enterprise adoption 2026 has reached 72% production, a massive 60% governance gap remains.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Here is the framework leaders must build now.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["###### Agent OS or Exit: The AI Startup Market’s Survival Stack Is Decided. ###### Enterprise Agentic AI Service Providers Reach 70% Autonomy in SDLC — But Full Services-as-Software Remains Out of Reach. ###### Trent AI’s Multi-Agent Security Platform Raises $13M — Closes the Gap Before Your Next Agentic Deployment. ###### Gartner Projects 40% of Enterprise Applications Will Deploy Task-Specific AI Agents by Year-End 2026 — Up From Under 5% in 2025. Here Is What Replaces It — and What Enterprise Leaders Must Do Now","Agentic AI Enterprise Adoption 2026: 72% Production Proven LIVE — INTELLIGENCE DESK Tools NVIDIA Agent Toolkit Locks 17 Enterprise Platforms Into a Shared Deployment Stack Market Agentic AI SOC Startup TENEX AI Closes $250M Series B — Southeast VC Signals the Next Enterprise Deployment Wave Case Studies The Hottest Agentic AI Examples and Use Cases in 2026 Leadership & Strategy Agentic AI Enterprise Adoption 2026: Why 72% Are in Production Without Governance Deployment Enterprise AI Teams Undercount AI Systems by 3","Here Is What Replaces It — and What Enterprise Leaders Must Do Now Reports & Whitepapers NIST Launches AI Agent Standards Initiative — Enterprise Governance Benchmarks Are Coming Faster Than You Think Deployment AI Index 2026: Enterprise Agent Deployment Stalls in Single Digits Despite 88% AI Adoption Deployment Enterprise Agent Orchestration Frameworks 2026: Why Scaffolding Beats Models Market Trent AI’s Multi-Agent Security Platform Raises $13M — Closes the Gap Before Your Next Agentic Deployment Startup Tracker "],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-039｜Top 10 Enterprise Agentic AI Platforms in 2026 | LuMay AI Leads
+
+- raw_ref: R-039
+- raw_original_id: https://www.lumay.ai/blogs/top-10-enterprise-agentic-ai-platforms
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-039-top-10-enterprise-agentic-ai-platforms-in-2026-lumay-ai-leads.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-039-top-10-enterprise-agentic-ai-platforms-in-2026-lumay-ai-leads.json`
+- source: keyword search / Tavily｜https://www.lumay.ai/blogs/top-10-enterprise-agentic-ai-platforms
+- source_url: https://www.lumay.ai/blogs/top-10-enterprise-agentic-ai-platforms
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 397679ac7528fb4d
+- raw_full_text_hash: c2dd71202e02d4f4
+- raw_semantic_hash: 4a21cbc9c004d095
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c2dd71202e02d4f4","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"Home>Blogs>top-10-enterprise-agentic-ai-platforms. # Top 10 Enterprise Agentic AI Platforms In 2026. Best 10 Enterprise Agentic AI Platforms. Enterprise Agentic AI Platforms are transforming how large organizations automate decisions, workflows, compliance, and intelligence. In 2026, platforms like LuMay AI, UiPath, IBM watsonx, Microsoft Copilot Studio, and Salesforce Einstein lead by combining autonomy, orchestration, security, and compliance at scale. This guide ranks the Top 10 Enterprise Agentic AI Platforms i","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Best 10 Enterprise Agentic AI Platforms Summarize with AI Enterprise Agentic AI Platforms are transforming how large organizations automate decisions, workflows, compliance, and intelligence.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"In 2026, platforms like LuMay AI, UiPath, IBM watsonx, Microsoft Copilot Studio, and Salesforce Einstein lead by combining autonomy, orchestration, security, and compliance at scale.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Quick Summary This guide ranks the Top 10 Enterprise Agentic AI Platforms in 2026, explains how agentic systems differ from traditional AI, compares features, security, and compliance, and shows why LuMay AI stands out as a unified enterprise-ready agentic ecosystem.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Direct Answer LuMay AI is one of the best Enterprise Agentic AI Platforms in 2026 due to its end-to-end agent orchestration, built-in compliance modules, enterprise integrations, multilingual intelligence, and business-ready autonomous agents across operations, analytics, legal, and customer engagement.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"What Are Enterprise Agentic AI Platforms?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["What Are Enterprise Agentic AI Platforms?"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":["Home>Blogs>top-10-enterprise-agentic-ai-platforms. # Top 10 Enterprise Agentic AI Platforms In 2026. Best 10 Enterprise Agentic AI Platforms. Enterprise Agentic AI Platforms are transforming how large organizations automate decisions, workflows, compliance, and intelligence. In 2026, platforms like LuMay AI, UiPath, IBM watsonx, Microsoft Copilot Studio, and Salesforce Einstein lead by combining autonomy, orchestration, security, and compliance at scale. This guide ranks the Top 10 Enterprise Agentic AI Platforms i","Best 10 Enterprise Agentic AI Platforms Summarize with AI Enterprise Agentic AI Platforms are transforming how large organizations automate decisions, workflows, compliance, and intelligence.","In 2026, platforms like LuMay AI, UiPath, IBM watsonx, Microsoft Copilot Studio, and Salesforce Einstein lead by combining autonomy, orchestration, security, and compliance at scale."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-040｜Agentic AI Statistics 2026: 150+ Data Points Collection
+
+- raw_ref: R-040
+- raw_original_id: https://www.digitalapplied.com/blog/agentic-ai-statistics-2026-definitive-collection-150-data-points
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-040-agentic-ai-statistics-2026-150-data-points-collection.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-040-agentic-ai-statistics-2026-150-data-points-collection.json`
+- source: keyword search / Tavily｜https://www.digitalapplied.com/blog/agentic-ai-statistics-2026-definitive-collection-150-data-points
+- source_url: https://www.digitalapplied.com/blog/agentic-ai-statistics-2026-definitive-collection-150-data-points
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 58fd6a232bef3f44
+- raw_full_text_hash: 78184110e49c0ede
+- raw_semantic_hash: 4969c596cc576f5b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"78184110e49c0ede","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"The definitive collection of 150+ agentic AI statistics for 2026 covering market size, adoption rates, ROI metrics, security data, and enterprise benchmarks. 1. [01 Market Size and Growth Projections](https://www.digitalapplied.com/blog/agentic-ai-statistics-2026-definitive-collection-150-data-points#market-size-growth-projections). 2. [02 Enterprise Adoption Statistics](https://www.digitalapplied.com/blog/agentic-ai-statistics-2026-definitive-collection-150-data-points#enterprise-adoption-statistics). 3. [03 ROI a","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"number","text":"$236B Market Size by 2034 88% Agents Fail Production 171% Average Deployed ROI 97M MCP Downloads Key Takeaways The agentic AI market is growing 31x in a decade : From $7.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"6 billion today to $236 billion by 2034, the agentic AI market represents a compound annual growth rate exceeding 40%.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"No enterprise technology sector has grown this fast since the early cloud migration wave — and unlike cloud, agentic AI affects every function simultaneously.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"The 79% adoption vs.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"11% production gap is the defining challenge of 2026 : Almost four in five enterprises have adopted AI agents in some form, yet only one in nine runs them in production.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["No enterprise technology sector has grown this fast since the early cloud migration wave — and unlike cloud, agentic AI affects every function simultaneously."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":["The definitive collection of 150+ agentic AI statistics for 2026 covering market size, adoption rates, ROI metrics, security data, and enterprise benchmarks. 1. [01 Market Size and Growth Projections](https://www.digitalapplied.com/blog/agentic-ai-statistics-2026-definitive-collection-150-data-points#market-size-growth-projections). 2. [02 Enterprise Adoption Statistics](https://www.digitalapplied.com/blog/agentic-ai-statistics-2026-definitive-collection-150-data-points#enterprise-adoption-statistics). 3. [03 ROI a"]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-041｜Top AI Inference Platforms for Business in 2026
+
+- raw_ref: R-041
+- raw_original_id: https://titancorpvn.com/insight/technology-insights/best-ai-inference-platforms-for-business-complete-2026-guide
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-041-top-ai-inference-platforms-for-business-in-2026.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-041-top-ai-inference-platforms-for-business-in-2026.json`
+- source: keyword search / Tavily｜https://titancorpvn.com/insight/technology-insights/best-ai-inference-platforms-for-business-complete-2026-guide
+- source_url: https://titancorpvn.com/insight/technology-insights/best-ai-inference-platforms-for-business-complete-2026-guide
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: eedba4ba8890137d
+- raw_full_text_hash: 1333d950b4c7b752
+- raw_semantic_hash: 56695ddf0b5a97be
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1333d950b4c7b752","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"# Top AI Inference Platforms for Business: 2026 Comparison Guide. The model may perform well in testing, but real-world deployment brings a different set of challenges: response speed, infrastructure cost, scalability, reliability, security and governance. But for teams moving AI into production, the inference platform can strongly influence the cost, speed, reliability and governance needed to scale. In this 2026 comparison guide, **Titan Technology** reviews the top AI inference platforms for business across prac","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Top AI Inference Platforms for Business in 2026 Top AI Inference Platforms for Business: 2026 Comparison Guide Titan Technology March 08, 2026 Many AI initiatives look promising in pilot environments but struggle when they move into production.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"The model may perform well in testing, but real-world deployment brings a different set of challenges: response speed, infrastructure cost, scalability, reliability, security and governance.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"The risk becomes clear when AI moves beyond experimentation.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"number","text":"Gartner reports that by the end of 2025 , at least 50% of generative AI projects had been abandoned after proof of concept due to poor data quality, inadequate risk controls, escalating costs or unclear business value.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This does not mean infrastructure is the only problem.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["This does not mean infrastructure is the only problem."],"case_details":["Top AI Inference Platforms for Business in 2026 Top AI Inference Platforms for Business: 2026 Comparison Guide Titan Technology March 08, 2026 Many AI initiatives look promising in pilot environments but struggle when they move into production."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":["# Top AI Inference Platforms for Business: 2026 Comparison Guide. The model may perform well in testing, but real-world deployment brings a different set of challenges: response speed, infrastructure cost, scalability, reliability, security and governance. But for teams moving AI into production, the inference platform can strongly influence the cost, speed, reliability and governance needed to scale. In this 2026 comparison guide, **Titan Technology** reviews the top AI inference platforms for business across prac","The model may perform well in testing, but real-world deployment brings a different set of challenges: response speed, infrastructure cost, scalability, reliability, security and governance.","The risk becomes clear when AI moves beyond experimentation."]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-042｜AI Shifts from LLMs to Inference
+
+- raw_ref: R-042
+- raw_original_id: https://www.nutanix.com/theforecastbynutanix/technology/ai-shifts-from-llms-to-inference
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-042-ai-shifts-from-llms-to-inference.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-042-ai-shifts-from-llms-to-inference.json`
+- source: keyword search / Tavily｜https://www.nutanix.com/theforecastbynutanix/technology/ai-shifts-from-llms-to-inference
+- source_url: https://www.nutanix.com/theforecastbynutanix/technology/ai-shifts-from-llms-to-inference
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: a_media_gdelt
+- source_type: community
+- source_level: C
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 85
+- has_full_text: true
+- source_volatility: high
+- community_name: keyword search / Tavily
+- capture_scope: visible_text
+- evidence_level: user_feedback_signal
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: user_feedback_pool, watchlist
+- raw_content_hash: 827c50ba66beaa6e
+- raw_full_text_hash: 827c50ba66beaa6e
+- raw_semantic_hash: fc195a2bbe6a059a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"827c50ba66beaa6e","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, user_feedback_pool, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"# The Shift From Building Smarter AI Models to Running Them. Inference, the process of actually using AI, is becoming the operational core of enterprise strategy. That process, known as AI inference, is how trained models become useful products, and it has quietly become the thing that major tech players are chasing. In this Tech Barometer podcast, analyst Steve McDowell and cloud native technology expert Dan Ciruli discuss top topics from the 2026 Enterprise Cloud Index, a survey of IT professionals, which reveale","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"AI Shifts from LLMs to Inference Technology The Shift From Building Smarter AI Models to Running Them Inference, the process of actually using AI, is becoming the operational core of enterprise strategy.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Industry experts explain why this is changing everything.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Article: Technology Key Play: Enterprise AI Nutanix-Newsroom: Article By David Rand April 1, 2026 Attention and resources are moving beyond building large language models (LLMs) to actually putting that intelligence to work in the real world.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"That process, known as AI inference, is how trained models become useful products, and it has quietly become the thing that major tech players are chasing.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"Morgan Stanley calls inference a \" new and potentially much larger phase \" than anything the AI industry has seen before, one that could dramatically alter the competitive landscape.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Industry experts explain why this is changing everything.","Article: Technology Key Play: Enterprise AI Nutanix-Newsroom: Article By David Rand April 1, 2026 Attention and resources are moving beyond building large language models (LLMs) to actually putting that intelligence to work in the real world."],"case_details":[],"workflow_changes":["# The Shift From Building Smarter AI Models to Running Them. Inference, the process of actually using AI, is becoming the operational core of enterprise strategy. That process, known as AI inference, is how trained models become useful products, and it has quietly become the thing that major tech players are chasing. In this Tech Barometer podcast, analyst Steve McDowell and cloud native technology expert Dan Ciruli discuss top topics from the 2026 Enterprise Cloud Index, a survey of IT professionals, which reveale","AI Shifts from LLMs to Inference Technology The Shift From Building Smarter AI Models to Running Them Inference, the process of actually using AI, is becoming the operational core of enterprise strategy.","That process, known as AI inference, is how trained models become useful products, and it has quietly become the thing that major tech players are chasing."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-043｜Best Enterprise RAG Platforms for 2026: A Buyer's Guide - Onyx AI
+
+- raw_ref: R-043
+- raw_original_id: https://onyx.app/insights/enterprise-rag-platforms-2026
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-043-best-enterprise-rag-platforms-for-2026-a-buyer-s-guide-onyx-ai.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-043-best-enterprise-rag-platforms-for-2026-a-buyer-s-guide-onyx-ai.json`
+- source: keyword search / Tavily｜https://onyx.app/insights/enterprise-rag-platforms-2026
+- source_url: https://onyx.app/insights/enterprise-rag-platforms-2026
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 87
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: ccc61c8d53cfad27
+- raw_full_text_hash: ccc61c8d53cfad27
+- raw_semantic_hash: 80267323002a7cce
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ccc61c8d53cfad27","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"The market has split into three layers: turnkey RAG platforms (Onyx, Glean, Cohere North, Vectara), cloud RAG services tied to a hyperscaler (AWS Bedrock Knowledge Bases, Azure AI Search, Google Gemini Enterprise), and RAG infrastructure or frameworks you assemble yourself (Pinecone, LlamaIndex, LangChain, Elastic). | **Turnkey RAG platform** | End-to-end product: connectors, indexing, retrieval, generation, UI, governance | Onyx, Glean, Cohere North, Vectara, GoSearch | Enterprises delivering AI search and chat to","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"TL;DR: The enterprise RAG market reached $1.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"94B in 2025 and is projected to hit $9.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"86B by 2030 at a 38.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"4% CAGR (MarketsandMarkets, Nov 2025).","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The market has split into three layers: turnkey RAG platforms (Onyx, Glean, Cohere North, Vectara), cloud RAG services tied to a hyperscaler (AWS Bedrock Knowledge Bases, Azure AI Search, Google Gemini Enterprise), and RAG infrastructure or frameworks you assemble yourself (Pinecone, LlamaIndex, LangChain, Elastic).","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The market has split into three layers: turnkey RAG platforms (Onyx, Glean, Cohere North, Vectara), cloud RAG services tied to a hyperscaler (AWS Bedrock Knowledge Bases, Azure AI Search, Google Gemini Enterprise), and RAG infrastructure or frameworks you assemble yourself (Pinecone, LlamaIndex, LangChain, Elastic). | **Turnkey RAG platform** | End-to-end product: connectors, indexing, retrieval, generation, UI, governance | Onyx, Glean, Cohere North, Vectara, GoSearch | Enterprises delivering AI search and chat to","86B by 2030 at a 38.","The market has split into three layers: turnkey RAG platforms (Onyx, Glean, Cohere North, Vectara), cloud RAG services tied to a hyperscaler (AWS Bedrock Knowledge Bases, Azure AI Search, Google Gemini Enterprise), and RAG infrastructure or frameworks you assemble yourself (Pinecone, LlamaIndex, LangChain, Elastic)."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-044｜How to Evaluate AI Inference Platforms for Enterprise Workloads in ...
+
+- raw_ref: R-044
+- raw_original_id: https://www.gmicloud.ai/ko/blog/enterprise-ai-inference-platform-2026
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-044-how-to-evaluate-ai-inference-platforms-for-enterprise-workloads-in.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-044-how-to-evaluate-ai-inference-platforms-for-enterprise-workloads-in.json`
+- source: keyword search / Tavily｜https://www.gmicloud.ai/ko/blog/enterprise-ai-inference-platform-2026
+- source_url: https://www.gmicloud.ai/ko/blog/enterprise-ai-inference-platform-2026
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: a_media_gdelt
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 72c5f6eab984614d
+- raw_full_text_hash: 72c5f6eab984614d
+- raw_semantic_hash: 3e00170cda85b2da
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"72c5f6eab984614d","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"How to Evaluate AI Inference Platforms for Enterprise Workloads in 2026 · Enterprise AI Demands More Than Speed · Four Evaluation Dimensions · SLA Commitments and / score=0.584 / query=AI inference platform launch enterprise deployment 2026 / intent=find_original_source / path=a_media_gdelt","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"More Blog Posts other How to Evaluate AI Inference Platforms for Enterprise Workloads in 2026 April 20, 2026 Enterprise AI Demands More Than Speed You're building a critical inference pipeline for your business.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Speed matters, but so do uptime guarantees, compliance requirements, and how you'll pay for compute at scale.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Strong platforms address all four.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"This article walks you through a framework that enterprise procurement teams use right now to evaluate and compare AI inference platforms at the procurement level.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Four Evaluation Dimensions Enterprise AI inference decisions hinge on four interconnected dimensions.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["More Blog Posts other How to Evaluate AI Inference Platforms for Enterprise Workloads in 2026 April 20, 2026 Enterprise AI Demands More Than Speed You're building a critical inference pipeline for your business.","Strong platforms address all four.","Four Evaluation Dimensions Enterprise AI inference decisions hinge on four interconnected dimensions."],"case_details":["How to Evaluate AI Inference Platforms for Enterprise Workloads in 2026 · Enterprise AI Demands More Than Speed · Four Evaluation Dimensions · SLA Commitments and / score=0.584 / query=AI inference platform launch enterprise deployment 2026 / intent=find_original_source / path=a_media_gdelt"],"workflow_changes":["This article walks you through a framework that enterprise procurement teams use right now to evaluate and compare AI inference platforms at the procurement level."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":["Speed matters, but so do uptime guarantees, compliance requirements, and how you'll pay for compute at scale."]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-045｜Microsoft Build 2026: AI Agents and In-House Models Reshape Enterprise Marketing – Marketing Agent Blog
+
+- raw_ref: R-045
+- raw_original_id: https://marketingagent.blog/2026/06/05/microsoft-build-2026-ai-agents-and-in-house-models-reshape-enterprise-marketing
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-045-microsoft-build-2026-ai-agents-and-in-house-models-reshape-enterprise-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-045-microsoft-build-2026-ai-agents-and-in-house-models-reshape-enterprise-.json`
+- source: keyword search / Tavily｜https://marketingagent.blog/2026/06/05/microsoft-build-2026-ai-agents-and-in-house-models-reshape-enterprise-marketing
+- source_url: https://marketingagent.blog/2026/06/05/microsoft-build-2026-ai-agents-and-in-house-models-reshape-enterprise-marketing
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: e112d13eb656e551
+- raw_full_text_hash: 0047c18db4825201
+- raw_semantic_hash: 62cafeb8f1a84b77
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0047c18db4825201","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"product_update","text":"## Microsoft Build 2026: AI Agents and In-House Models Reshape Enterprise... # Microsoft Build 2026: AI Agents and In-House Models Reshape Enterprise Marketing. ## Microsoft's Build 2026 conference made one thing unmistakably clear: the company is done being primarily a distribution channel for someone else's AI. Seven proprietary models, a production-ready agentic platform, and deep Microsoft 365 integrations announced on June 3, 2026 position Microsoft as a full-stack AI competitor — not just a reseller. Seven pr","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Microsoft Build 2026: AI Agents and In-House Models Reshape Enterprise.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Agency Home Hot Trending Popular Docs by marketingagent.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"io 3 weeks ago 3 weeks ago 27 views Microsoft’s Build 2026 conference made one thing unmistakably clear: the company is done being primarily a distribution channel for someone else’s AI.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Seven proprietary models, a production-ready agentic platform, and deep Microsoft 365 integrations announced on June 3, 2026 position Microsoft as a full-stack AI competitor — not just a reseller.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"For enterprise marketing teams, the consequences land immediately: new models to evaluate, ambient business context in agents, and governance infrastructure that finally makes AI deployable inside regulated companies.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["## Microsoft Build 2026: AI Agents and In-House Models Reshape Enterprise... # Microsoft Build 2026: AI Agents and In-House Models Reshape Enterprise Marketing. ## Microsoft's Build 2026 conference made one thing unmistakably clear: the company is done being primarily a distribution channel for someone else's AI. Seven proprietary models, a production-ready agentic platform, and deep Microsoft 365 integrations announced on June 3, 2026 position Microsoft as a full-stack AI competitor — not just a reseller. Seven pr","Microsoft Build 2026: AI Agents and In-House Models Reshape Enterprise.","Agency Home Hot Trending Popular Docs by marketingagent."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-046｜Enterprise AI in 2026: A practical guide for Microsoft customers
+
+- raw_ref: R-046
+- raw_original_id: https://www.randgroup.com/insights/services/ai-machine-learning/enterprise-ai-in-2026-a-practical-guide-for-microsoft-customers
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-046-enterprise-ai-in-2026-a-practical-guide-for-microsoft-customers.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-046-enterprise-ai-in-2026-a-practical-guide-for-microsoft-customers.json`
+- source: keyword search / Tavily｜https://www.randgroup.com/insights/services/ai-machine-learning/enterprise-ai-in-2026-a-practical-guide-for-microsoft-customers
+- source_url: https://www.randgroup.com/insights/services/ai-machine-learning/enterprise-ai-in-2026-a-practical-guide-for-microsoft-customers
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: c4eaf59e0d3082a2
+- raw_full_text_hash: da6df9c7b00ea075
+- raw_semantic_hash: 99afb58d192705c5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"da6df9c7b00ea075","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"[Skip to content](https://www.randgroup.com/insights/services/ai-machine-learning/enterprise-ai-in-2026-a-practical-guide-for-microsoft-customers#primary). ![Image 4: Enterprise AI in 2026: A practical guide for Microsoft customers](https://www.randgroup.com/wp-content/uploads/2026/01/ins_enterprise-ai-in-2026_v1.avif). [Artificial intelligence](https://www.randgroup.com/microsoft/software-engineering/microsoft-ai-machine-learning/)adoption accelerated rapidly in 2025, but speed alone has not translated into sustai","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Skip to content Enterprise AI in 2026: A practical guide for Microsoft customers By Adam MacIntosh on January 30, 2026 Updated on April 29, 2026 Artificial intelligence adoption accelerated rapidly in 2025, but speed alone has not translated into sustained business value for every organization.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"product_update","text":"As we move into 2026, many enterprises are discovering that early experimentation with AI tools is giving way to more complex operational, governance, and integration challenges.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Microsoft has framed this shift clearly with the concept of the frontier firm: organizations that embed AI deeply across their operations to scale faster, improve decision-making, and reinvent how work gets done.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"These firms are not simply deploying individual AI tools.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"They are rethinking workflows, data architecture, governance, and organizational roles to support AI as a core capability.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["As we move into 2026, many enterprises are discovering that early experimentation with AI tools is giving way to more complex operational, governance, and integration challenges.","Microsoft has framed this shift clearly with the concept of the frontier firm: organizations that embed AI deeply across their operations to scale faster, improve decision-making, and reinvent how work gets done.","These firms are not simply deploying individual AI tools."],"case_details":["[Skip to content](https://www.randgroup.com/insights/services/ai-machine-learning/enterprise-ai-in-2026-a-practical-guide-for-microsoft-customers#primary). ![Image 4: Enterprise AI in 2026: A practical guide for Microsoft customers](https://www.randgroup.com/wp-content/uploads/2026/01/ins_enterprise-ai-in-2026_v1.avif). [Artificial intelligence](https://www.randgroup.com/microsoft/software-engineering/microsoft-ai-machine-learning/)adoption accelerated rapidly in 2025, but speed alone has not translated into sustai","Skip to content Enterprise AI in 2026: A practical guide for Microsoft customers By Adam MacIntosh on January 30, 2026 Updated on April 29, 2026 Artificial intelligence adoption accelerated rapidly in 2025, but speed alone has not translated into sustained business value for every organization."],"workflow_changes":["They are rethinking workflows, data architecture, governance, and organizational roles to support AI as a core capability."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-047｜AI Replacing Customer Service: 2026 Case Studies
+
+- raw_ref: R-047
+- raw_original_id: https://www.aibmag.com/ai-business-case-studies-and-real-world-enterprise-use-cases/ai-replacing-customer-service-2026-case-studies
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-047-ai-replacing-customer-service-2026-case-studies.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-047-ai-replacing-customer-service-2026-case-studies.json`
+- source: keyword search / Tavily｜https://www.aibmag.com/ai-business-case-studies-and-real-world-enterprise-use-cases/ai-replacing-customer-service-2026-case-studies
+- source_url: https://www.aibmag.com/ai-business-case-studies-and-real-world-enterprise-use-cases/ai-replacing-customer-service-2026-case-studies
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: b18ac87952ddbdb3
+- raw_full_text_hash: 86745dd46dd1289a
+- raw_semantic_hash: 79a57b846ddfc294
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"86745dd46dd1289a","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"# How AI is Replacing Customer Service: Real 2026 Case Studies. From banking giants to fast-fashion unicorns, AI agents are handling millions of customer interactions daily with results that are reshaping our future of work and customer interactions.*. In 2026, AI has pivoted fundamentals of companies managing their customer support and it happened faster than most industry analysts predicted. That era is functionally over with help of combination of large language models, improved intent recognition and years of t","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"AI Business Case Studies and Real World Enterprise Use Cases How AI is Replacing Customer Service: Real 2026 Case Studies By Ryan Mitchell · May 6, 2026 · 14 min read The $15 billion revolution is no longer theoretical.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"From banking giants to fast-fashion unicorns, AI agents are handling millions of customer interactions daily with results that are reshaping our future of work and customer interactions.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"In 2026, AI has pivoted fundamentals of companies managing their customer support and it happened faster than most industry analysts predicted.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"AI agents are not experimental pilots sitting on the periphery of operations but acting as business frontline workers.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"They answer the phone, resolve disputes, process refunds and closing service tickets without customer service representatives interacting with customers.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":[],"case_details":["# How AI is Replacing Customer Service: Real 2026 Case Studies. From banking giants to fast-fashion unicorns, AI agents are handling millions of customer interactions daily with results that are reshaping our future of work and customer interactions.*. In 2026, AI has pivoted fundamentals of companies managing their customer support and it happened faster than most industry analysts predicted. That era is functionally over with help of combination of large language models, improved intent recognition and years of t","From banking giants to fast-fashion unicorns, AI agents are handling millions of customer interactions daily with results that are reshaping our future of work and customer interactions.","In 2026, AI has pivoted fundamentals of companies managing their customer support and it happened faster than most industry analysts predicted."],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-048｜Microsoft Build 2026 Book of News — AI Recap | A Guide to Cloud & AI
+
+- raw_ref: R-048
+- raw_original_id: https://www.aguidetocloud.com/blog/microsoft-build-2026-recap
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-048-microsoft-build-2026-book-of-news-ai-recap-a-guide-to-cloud-ai.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-048-microsoft-build-2026-book-of-news-ai-recap-a-guide-to-cloud-ai.json`
+- source: keyword search / Tavily｜https://www.aguidetocloud.com/blog/microsoft-build-2026-recap
+- source_url: https://www.aguidetocloud.com/blog/microsoft-build-2026-recap
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 5e1587d91472ec28
+- raw_full_text_hash: b93144b37dd44a04
+- raw_semantic_hash: 57f37ffd9d0d50df
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b93144b37dd44a04","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"A Guide to Cloud & AI. # Microsoft Build 2026 Book of News — AI Recap. ↗ my single source for everything from Build worth coming back to. Microsoft Build Live 2026 — the official Build 2026 hero graphic showing a stylised PowerShell terminal with build_live.log streaming 'status: LIVE' in green, framed by Build 2026's signature colour blocks. *Source: Microsoft Build Live — the official Build 2026 hero. Microsoft replaced this year’s Book of News with Build Live, a real-time blog.*. **Plus the headline product reve","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"What's New 3 June 2026 by Susanth Sutheesh 43 min read Microsoft Build 2026 Book of News — AI Recap ↗ my single source for everything from Build worth coming back to On this page Source: Microsoft Build Live — the official Build 2026 hero.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Microsoft replaced this year&rsquo;s Book of News with Build Live, a real-time blog.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"100+ announcements.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Four that actually matter, one new product reveal, and a heap of supporting moves.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Here&rsquo;s how to think about it without reading the other 199 blog posts about it.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["A Guide to Cloud & AI. # Microsoft Build 2026 Book of News — AI Recap. ↗ my single source for everything from Build worth coming back to. Microsoft Build Live 2026 — the official Build 2026 hero graphic showing a stylised PowerShell terminal with build_live.log streaming 'status: LIVE' in green, framed by Build 2026's signature colour blocks. *Source: Microsoft Build Live — the official Build 2026 hero. Microsoft replaced this year’s Book of News with Build Live, a real-time blog.*. **Plus the headline product reve","What's New 3 June 2026 by Susanth Sutheesh 43 min read Microsoft Build 2026 Book of News — AI Recap ↗ my single source for everything from Build worth coming back to On this page Source: Microsoft Build Live — the official Build 2026 hero.","Microsoft replaced this year&rsquo;s Book of News with Build Live, a real-time blog."],"case_details":[],"workflow_changes":["Four that actually matter, one new product reveal, and a heap of supporting moves."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-049｜55+ AI Customer Support Statistics and Trends for 2026 - ChatMaxima
+
+- raw_ref: R-049
+- raw_original_id: https://chatmaxima.com/blog/ai-customer-support-statistics-2026
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-049-55-ai-customer-support-statistics-and-trends-for-2026-chatmaxima.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-049-55-ai-customer-support-statistics-and-trends-for-2026-chatmaxima.json`
+- source: keyword search / Tavily｜https://chatmaxima.com/blog/ai-customer-support-statistics-2026
+- source_url: https://chatmaxima.com/blog/ai-customer-support-statistics-2026
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 6c219c6f5d0aeb1c
+- raw_full_text_hash: 6c219c6f5d0aeb1c
+- raw_semantic_hash: 6c757619d574f323
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"6c219c6f5d0aeb1c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"# 55+ AI Customer Support Statistics and Trends for 2026. What started as simple chatbots handling basic inquiries has evolved into autonomous AI agents resolving complex issues, predicting customer needs, and driving measurable business outcomes. The numbers tell a compelling story: the AI customer service market is projected to reach **$15.12 billion in 2026**, 80% of routine interactions will be fully handled by AI, and companies implementing AI support are seeing **3.5x to 8x returns** on their investment. Whet","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Skip to content AI-powered customer support has crossed the tipping point.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"What started as simple chatbots handling basic inquiries has evolved into autonomous AI agents resolving complex issues, predicting customer needs, and driving measurable business outcomes.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"The numbers tell a compelling story: the AI customer service market is projected to reach $15.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"12 billion in 2026 , 80% of routine interactions will be fully handled by AI, and companies implementing AI support are seeing 3.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"5x to 8x returns on their investment.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":[],"case_details":["Skip to content AI-powered customer support has crossed the tipping point.","What started as simple chatbots handling basic inquiries has evolved into autonomous AI agents resolving complex issues, predicting customer needs, and driving measurable business outcomes."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-050｜AI Agent Productivity Statistics 2026: 100+ ROI Data - Digital Applied
+
+- raw_ref: R-050
+- raw_original_id: https://www.digitalapplied.com/blog/ai-agent-productivity-statistics-2026-roi-data-points
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-050-ai-agent-productivity-statistics-2026-100-roi-data-digital-applied.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-050-ai-agent-productivity-statistics-2026-100-roi-data-digital-applied.json`
+- source: keyword search / Tavily｜https://www.digitalapplied.com/blog/ai-agent-productivity-statistics-2026-roi-data-points
+- source_url: https://www.digitalapplied.com/blog/ai-agent-productivity-statistics-2026-roi-data-points
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: cec0e8d354597295
+- raw_full_text_hash: 82f2144dc542193a
+- raw_semantic_hash: 90cb99c6b349ca67
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"82f2144dc542193a","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"# AI Agent Productivity Statistics 2026: 100+ ROI Data. AI agent productivity statistics for 2026: 100+ data points on hours saved, cost-per-task, time-to-value, and payback period by department and use case. After two years of vendor demos, customer pilots, and self-reported survey data, 2026 is the first year with enough telemetry-grade evidence from production deployments to publish defensible benchmarks. This reference compiles more than 150 individual data points covering hours saved, cost-per-task, time-to-va","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"4 Median Hours Saved / Week 9-66x Cost-Per-Task Reduction 6.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"7 Avg Payback (Months) 41% Hit Year-One ROI Key Takeaways Median 6.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"4 Hours Saved Weekly : Knowledge workers using production AI agents recover a median 6.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"4 hours per week per seat across deployments with telemetry, per McKinsey Global AI Survey 2026 and Slack Workforce Index Q1 2026, with senior practitioners saving 10-12 hours and customer service reps 8-9 hours.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"Cost-Per-Task Drops 9-65x : Customer service AI agents resolve a contained ticket for $0.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["4 Hours Saved Weekly : Knowledge workers using production AI agents recover a median 6."],"case_details":["# AI Agent Productivity Statistics 2026: 100+ ROI Data. AI agent productivity statistics for 2026: 100+ data points on hours saved, cost-per-task, time-to-value, and payback period by department and use case. After two years of vendor demos, customer pilots, and self-reported survey data, 2026 is the first year with enough telemetry-grade evidence from production deployments to publish defensible benchmarks. This reference compiles more than 150 individual data points covering hours saved, cost-per-task, time-to-va","4 hours per week per seat across deployments with telemetry, per McKinsey Global AI Survey 2026 and Slack Workforce Index Q1 2026, with senior practitioners saving 10-12 hours and customer service reps 8-9 hours."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-051｜8 Ways AI Agents Are Evolving in 2026 - Salesforce
+
+- raw_ref: R-051
+- raw_original_id: https://www.salesforce.com/blog/ai-agent-trends-2026
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-051-8-ways-ai-agents-are-evolving-in-2026-salesforce.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-051-8-ways-ai-agents-are-evolving-in-2026-salesforce.json`
+- source: keyword search / Tavily｜https://www.salesforce.com/blog/ai-agent-trends-2026
+- source_url: https://www.salesforce.com/blog/ai-agent-trends-2026
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: official
+- source_level: S
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: f34b62c314216243
+- raw_full_text_hash: f34b62c314216243
+- raw_semantic_hash: fe10d701e20f941a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f34b62c314216243","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"Eight trends reshaping enterprise AI in 2026 — from deterministic guardrails and context engineering to headless CRM access and the new job titles running it all. *Five months into 2026, enterprise AI agents already look fundamentally different than they did in 2025.*. From the rise of context engineering to new layers of deterministic control, many of enterprise AI’s biggest recent breakthroughs revolved around a common theme: getting agents to run more reliably in production. An AI agent’s behavior is often less ","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Share article Five months into 2026, enterprise AI agents already look fundamentally different than they did in 2025.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"A year in agentic AI moves like a decade in most other fields.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We’re barely a quarter into 2026 and it’s hard to overstate just how much new innovation we’ve already seen this year.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"From the rise of context engineering to new layers of deterministic control, many of enterprise AI’s biggest recent breakthroughs revolved around a common theme: getting agents to run more reliably in production.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Below, we’ve aggregated eight of the most important trends shaping enterprise AI .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Eight trends reshaping enterprise AI in 2026 — from deterministic guardrails and context engineering to headless CRM access and the new job titles running it all. *Five months into 2026, enterprise AI agents already look fundamentally different than they did in 2025.*. From the rise of context engineering to new layers of deterministic control, many of enterprise AI’s biggest recent breakthroughs revolved around a common theme: getting agents to run more reliably in production. An AI agent’s behavior is often less ","Share article Five months into 2026, enterprise AI agents already look fundamentally different than they did in 2025.","A year in agentic AI moves like a decade in most other fields."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-052｜AI Workflow Automation for Insurance Industry Guide 2026
+
+- raw_ref: R-052
+- raw_original_id: https://www.bizdata360.com/ai-workflow-automation-insurance
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-052-ai-workflow-automation-for-insurance-industry-guide-2026.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-052-ai-workflow-automation-for-insurance-industry-guide-2026.json`
+- source: keyword search / Tavily｜https://www.bizdata360.com/ai-workflow-automation-insurance
+- source_url: https://www.bizdata360.com/ai-workflow-automation-insurance
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- extraction_method: json-ld
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 0035a8b94bfe3afe
+- raw_full_text_hash: 3e4025ec700d7d24
+- raw_semantic_hash: aab434684b4cff0b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"3e4025ec700d7d24","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"[Skip to the content](https://www.bizdata360.com/ai-workflow-automation-insurance#site-content). * [Platform](https://www.bizdata360.com/ai-workflow-automation-insurance#). * [Solution](https://www.bizdata360.com/ai-workflow-automation-insurance#). * * * [![Image 11: By Industry](https://www.bizdata360.com/wp-content/uploads/2025/10/head-menu-icons_industry.webp)By Industry](https://www.bizdata360.com/ai-workflow-automation-insurance#). * * [![Image 12: By Use Case](https://www.bizdata360.com/wp-content/uploads/202","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"AI Workflow Automation for Insurance Industry Guide 2026 Explore AI workflow automation for insurance in 2025: learn how U.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"insurers use intelligent workflows with eZintegrations™ to cut costs, speed operations & win business.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Why AI Workflow Automation for Insurance Matters in 2026?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Every second lost to manual processing costs an insurer for both time and reputational risk.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The need for smarter automation is more urgent than ever.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The need for smarter automation is more urgent than ever."],"case_details":[],"workflow_changes":["[Skip to the content](https://www.bizdata360.com/ai-workflow-automation-insurance#site-content). * [Platform](https://www.bizdata360.com/ai-workflow-automation-insurance#). * [Solution](https://www.bizdata360.com/ai-workflow-automation-insurance#). * * * [![Image 11: By Industry](https://www.bizdata360.com/wp-content/uploads/2025/10/head-menu-icons_industry.webp)By Industry](https://www.bizdata360.com/ai-workflow-automation-insurance#). * * [![Image 12: By Use Case](https://www.bizdata360.com/wp-content/uploads/202","AI Workflow Automation for Insurance Industry Guide 2026 Explore AI workflow automation for insurance in 2025: learn how U.","insurers use intelligent workflows with eZintegrations™ to cut costs, speed operations & win business."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":["Every second lost to manual processing costs an insurer for both time and reputational risk."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-053｜How AI Automated Insurance Claims With 99% Accuracy | Customer Story
+
+- raw_ref: R-054
+- raw_original_id: https://www.multimodal.dev/customer-stories/insurance-claims-ai-automation
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-054-how-ai-automated-insurance-claims-with-99-accuracy-customer-story.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-054-how-ai-automated-insurance-claims-with-99-accuracy-customer-story.json`
+- source: keyword search / Tavily｜https://www.multimodal.dev/customer-stories/insurance-claims-ai-automation
+- source_url: https://www.multimodal.dev/customer-stories/insurance-claims-ai-automation
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: e6ce3a18685872c2
+- raw_full_text_hash: e6ce3a18685872c2
+- raw_semantic_hash: e9f9601614f1564b
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e6ce3a18685872c2","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"Automate end-to-end insurance workflows security for 4x faster turnaround. The AI platform purpose-built for financial services. Trained on your schema to extract data and organize documents. Makes business decisions from your data to minimize risk and maximize ROI. # How AI Automated Insurance Claims With 99% Accuracy. ### Solution #2: End-To-End Claims Analysis and Decision Platform. ## Manual Underwriting and Claims Processes Slowed Decisions and Increased Costs. Manual broker-underwriter communication slowed th","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Announcement: We were selected for Plug and Play's Batch 19 Fintech Program Read More The Credit Union Board's Briefing on AI in Lending Platform Resources Company Book a Demo Book a Demo Customer Stories How AI Automated Insurance Claims With 99% Accuracy Client Zurich Industry Insurance Partners Foundation model Product Types AgentFlow stack , Applications Broker communication automation, claims evidence analysis, decision consistency, audit-ready reporting 99% accuracy in multi-format claims evidence analysis 90","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Problem #1: Broker-Underwriter Interaction Manual broker-underwriter communication slowed the insurer’s underwriting process.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Each policy or coverage query required multiple emails and follow-ups, causing delays and inconsistent decisions.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The lack of automation increased costs, created bottlenecks, and frustrated brokers waiting for slow, repetitive responses.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Problem #2: Split Liability Analysis in Motor Insurance Claims On the claims side, split liability cases presented another challenge.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Each policy or coverage query required multiple emails and follow-ups, causing delays and inconsistent decisions.","The lack of automation increased costs, created bottlenecks, and frustrated brokers waiting for slow, repetitive responses.","Problem #2: Split Liability Analysis in Motor Insurance Claims On the claims side, split liability cases presented another challenge."],"case_details":[],"workflow_changes":["Problem #1: Broker-Underwriter Interaction Manual broker-underwriter communication slowed the insurer’s underwriting process."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-054｜Best AI Agent Platforms for Insurance in 2026
+
+- raw_ref: R-055
+- raw_original_id: https://getzowie.com/blog/10-best-customer-ai-agent-platform-for-insurance-in-2026-ai-agents-and-chatbots
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-055-best-ai-agent-platforms-for-insurance-in-2026.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-055-best-ai-agent-platforms-for-insurance-in-2026.json`
+- source: keyword search / Tavily｜https://getzowie.com/blog/10-best-customer-ai-agent-platform-for-insurance-in-2026-ai-agents-and-chatbots
+- source_url: https://getzowie.com/blog/10-best-customer-ai-agent-platform-for-insurance-in-2026-ai-agents-and-chatbots
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: ea98460dacef0cdc
+- raw_full_text_hash: 9cac72513ada26b8
+- raw_semantic_hash: 663094f1eabbd5a0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9cac72513ada26b8","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"# Top 10 Best Customer AI Agent Platforms for Insurance in 2026 (AI Agents and Chatbots). Top 10 Best Customer AI Agent Platforms for Insurance Enterprises in 2026 (AI Agents and Chatbots). # **Best 10 Customer AI Agent Platforms for Insurance Enterprises in 2026 (Best AI Agents and Chatbots)**. This article shows top 10 customer AI Agents Platforms that specialize specifically in complex Insurance and Fintech market. This guide ranks the leading AI agent platforms for insurance enterprise customer service by autom","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"Top 10 Best Customer AI Agent Platforms for Insurance in 2026 (AI Agents and Chatbots) April 13, 2026 15 min read The Zowie Team Best 10 Customer AI Agent Platforms for Insurance Enterprises in 2026 (Best AI Agents and Chatbots) The AI in insurance market hit $2.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"85 billion in 2024 , heading for $11.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"92 billion by 2029 at a 33.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"1% CAGR ( Research and Markets ).","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Full AI adoption among insurers jumped from 8% to 34% year-over-year, with 82% of executives naming AI transformation their top priority ( Roots Automation ).","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":[],"case_details":["# Top 10 Best Customer AI Agent Platforms for Insurance in 2026 (AI Agents and Chatbots). Top 10 Best Customer AI Agent Platforms for Insurance Enterprises in 2026 (AI Agents and Chatbots). # **Best 10 Customer AI Agent Platforms for Insurance Enterprises in 2026 (Best AI Agents and Chatbots)**. This article shows top 10 customer AI Agents Platforms that specialize specifically in complex Insurance and Fintech market. This guide ranks the leading AI agent platforms for insurance enterprise customer service by autom"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-055｜Q1 2026 Insurance Artificial Intelligence Trends - ScienceSoft
+
+- raw_ref: R-056
+- raw_original_id: https://www.scnsoft.com/insurance/insurance-ai-trends
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-056-q1-2026-insurance-artificial-intelligence-trends-sciencesoft.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-056-q1-2026-insurance-artificial-intelligence-trends-sciencesoft.json`
+- source: keyword search / Tavily｜https://www.scnsoft.com/insurance/insurance-ai-trends
+- source_url: https://www.scnsoft.com/insurance/insurance-ai-trends
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 4524354d94dc4f0f
+- raw_full_text_hash: 4524354d94dc4f0f
+- raw_semantic_hash: a7412aa7e692efb7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4524354d94dc4f0f","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"# Q1 2026 Insurance AI Trends: Agentic AI Becomes Customer-Facing, Distribution Through ChatGPT Sends Broker Stocks Down. Drawing on ScienceSoft’s Q1 2026 Insurance AI Market Watch and 14 years of experience in insurance IT, we outline where AI is delivering the biggest value now, what insurers and vendors should prepare for next, and how distribution models and regulations will shape the 2026 AI journeys.*. * **Agentic AI is gaining strong momentum.** Companies are increasingly moving it from pilots to production,","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Q1 2026 Insurance AI Trends: Agentic AI Becomes Customer-Facing, Distribution Through ChatGPT Sends Broker Stocks Down Vital Soupel Senior Insurance IT & AI Consultant, ScienceSoft Vadim Belski Head of AI, Principal Architect, ScienceSoft Stacy Dubovik Financial Technology and Blockchain Researcher, ScienceSoft Related topics: Insurance IT Finance IT Artificial Intelligence 5 min read Last updated: Mar 31, 2026 Insurance companies are moving toward scalable AI deployment, with agentic AI leading operational transfo","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Drawing on ScienceSoft’s Q1 2026 Insurance AI Market Watch and 14 years of experience in insurance IT, we outline where AI is delivering the biggest value now, what insurers and vendors should prepare for next, and how distribution models and regulations will shape the 2026 AI journeys.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"At a glance: Agentic AI is gaining strong momentum.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Companies are increasingly moving it from pilots to production, targeting customer service as the primary area for large-scale agentic transformation.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Vendors are expanding beyond carrier use cases.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["At a glance: Agentic AI is gaining strong momentum.","Vendors are expanding beyond carrier use cases."],"case_details":["Q1 2026 Insurance AI Trends: Agentic AI Becomes Customer-Facing, Distribution Through ChatGPT Sends Broker Stocks Down Vital Soupel Senior Insurance IT & AI Consultant, ScienceSoft Vadim Belski Head of AI, Principal Architect, ScienceSoft Stacy Dubovik Financial Technology and Blockchain Researcher, ScienceSoft Related topics: Insurance IT Finance IT Artificial Intelligence 5 min read Last updated: Mar 31, 2026 Insurance companies are moving toward scalable AI deployment, with agentic AI leading operational transfo","Companies are increasingly moving it from pilots to production, targeting customer service as the primary area for large-scale agentic transformation."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","销售 / 客服"],"risks_or_constraints":["# Q1 2026 Insurance AI Trends: Agentic AI Becomes Customer-Facing, Distribution Through ChatGPT Sends Broker Stocks Down. Drawing on ScienceSoft’s Q1 2026 Insurance AI Market Watch and 14 years of experience in insurance IT, we outline where AI is delivering the biggest value now, what insurers and vendors should prepare for next, and how distribution models and regulations will shape the 2026 AI journeys.*. * **Agentic AI is gaining strong momentum.** Companies are increasingly moving it from pilots to production,","Drawing on ScienceSoft’s Q1 2026 Insurance AI Market Watch and 14 years of experience in insurance IT, we outline where AI is delivering the biggest value now, what insurers and vendors should prepare for next, and how distribution models and regulations will shape the 2026 AI journeys."]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-056｜AI for Insurance Companies: 2026 Costs, Rules and Roadmap
+
+- raw_ref: R-057
+- raw_original_id: https://www.tommasomariaricci.com/blog/ai-for-insurance-companies
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-057-ai-for-insurance-companies-2026-costs-rules-and-roadmap.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-057-ai-for-insurance-companies-2026-costs-rules-and-roadmap.json`
+- source: keyword search / Tavily｜https://www.tommasomariaricci.com/blog/ai-for-insurance-companies
+- source_url: https://www.tommasomariaricci.com/blog/ai-for-insurance-companies
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 727d7eb323c9ec1d
+- raw_full_text_hash: 49a133d715d1424c
+- raw_semantic_hash: bfa34c6dda310f0d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"49a133d715d1424c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"[Earnix](https://earnix.com/blog/how-to-utilize-ai-in-insurance-underwriting/) puts roughly 80% of insurers experimenting with or planning generative AI within two years, and claims, underwriting, pricing and quoting already account for 58% of disclosed use cases. ## Why Most Carriers Are Behind on AI for Insurance Companies. Reports from Deloitte and BCG suggest that a carrier starting today on AI for insurance companies can recover three to five points of combined ratio within thirty-six months. **Small carrier (","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"AI for Insurance Companies: 2026 Costs, Rules and Roadmap 2026-06-17 · Tommaso Maria Ricci The State of AI for Insurance Companies in 2026 McKinsey estimates that generative AI could unlock between 50 and 70 billion USD in additional insurance industry revenue, concentrated in marketing, customer operations and software engineering.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Yet Deloitte's research finds that while 90% of insurance leaders recognize the need to reinvent how work gets done for AI, only about 25% have taken meaningful action.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The gap between executive committee slides and operational reality is enormous.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This article exists to close it.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"When a serial founder who does consulting sits across from a board at a US, UK, or European insurer in 2026, the question is no longer whether to adopt AI for insurance companies.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The gap between executive committee slides and operational reality is enormous.","This article exists to close it.","When a serial founder who does consulting sits across from a board at a US, UK, or European insurer in 2026, the question is no longer whether to adopt AI for insurance companies."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-057｜AI Customer Service in MENA: 2026 State of Play | Eshal Blog
+
+- raw_ref: R-058
+- raw_original_id: https://eshal.ai/blog/ai-customer-service-mena
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-058-ai-customer-service-in-mena-2026-state-of-play-eshal-blog.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-058-ai-customer-service-in-mena-2026-state-of-play-eshal-blog.json`
+- source: keyword search / Tavily｜https://eshal.ai/blog/ai-customer-service-mena
+- source_url: https://eshal.ai/blog/ai-customer-service-mena
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 77aa923b5acaa8fa
+- raw_full_text_hash: 77aa923b5acaa8fa
+- raw_semantic_hash: fcabb83c02bc4834
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"77aa923b5acaa8fa","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"# AI Customer Service in MENA: The 2026 State of Play. ## The MENA AI adoption landscape in 2026. Two years ago, \"AI customer service\" in MENA meant one of three things: a Western platform awkwardly retrofitted with Arabic language packs, an expensive enterprise deployment requiring a 6-month IT project, or a basic rule-based chatbot that handled three FAQs before failing. of MENA businesses with 50+ person CS teams have deployed AI in at least one channel (2026). **E-commerce and retail** lead with 80–90% AI resol","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Skip to main content Platform Integrations Solutions Sales & Pre-Sales HR & Operations Finance & Operations Shipping & Logistics Government & B2G Education Internal Operations View all solutions → Industries Retail & E-commerce Banking & Finance Healthcare Government & B2G Shipping & Logistics Real Estate Hospitality Education Telecom View all industries → Resources Blog Case Studies ROI Calculator Compare Eshal AI & CX Glossary Company About Security Talk to Us Book a Demo Book a Demo AI Customer Service in MENA: ","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Here's an honest look at what's working, what's failing, and where the opportunity is.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"The MENA AI adoption landscape in 2026 Two years ago, \"AI customer service\" in MENA meant one of three things: a Western platform awkwardly retrofitted with Arabic language packs, an expensive enterprise deployment requiring a 6-month IT project, or a basic rule-based chatbot that handled three FAQs before failing.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The picture in 2026 is substantially different.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Adoption has accelerated across UAE, Saudi Arabia, and Egypt - driven by rapidly improving Arabic NLP, widespread WhatsApp Business API access, and economic pressure to reduce support headcount growth without sacrificing quality.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Here's an honest look at what's working, what's failing, and where the opportunity is.","The picture in 2026 is substantially different."],"case_details":[],"workflow_changes":["Adoption has accelerated across UAE, Saudi Arabia, and Egypt - driven by rapidly improving Arabic NLP, widespread WhatsApp Business API access, and economic pressure to reduce support headcount growth without sacrificing quality."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师","销售 / 客服"],"risks_or_constraints":["Skip to main content Platform Integrations Solutions Sales & Pre-Sales HR & Operations Finance & Operations Shipping & Logistics Government & B2G Education Internal Operations View all solutions → Industries Retail & E-commerce Banking & Finance Healthcare Government & B2G Shipping & Logistics Real Estate Hospitality Education Telecom View all industries → Resources Blog Case Studies ROI Calculator Compare Eshal AI & CX Glossary Company About Security Talk to Us Book a Demo Book a Demo AI Customer Service in MENA: "]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-058｜In Tempo: December Changelog | Metronome blog
+
+- raw_ref: R-059
+- raw_original_id: https://webflow-internal.metronome.com/blog/in-tempo-december-changelog
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-059-in-tempo-december-changelog-metronome-blog.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-059-in-tempo-december-changelog-metronome-blog.json`
+- source: keyword search / Tavily｜https://webflow-internal.metronome.com/blog/in-tempo-december-changelog
+- source_url: https://webflow-internal.metronome.com/blog/in-tempo-december-changelog
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 1cf2e449d68b7016
+- raw_full_text_hash: 1cf2e449d68b7016
+- raw_semantic_hash: cfcd7399ef108463
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1cf2e449d68b7016","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"case_detail","text":"**✨** Metronome has signed a definitive agreement to join Stripe. ### In Tempo: December Changelog. Get updates into your inbox. #### See Stripe invoice status in the Metronome UI and API. We now sync invoice status changes from Stripe into Metronome. You can see the status in the Metronome UI or as part of the response when you fetch invoices from our API. This highly requested feature helps us continue to serve as the billing source-of-truth for our customers. * The ability to ping our API to see what the invoice","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In Tempo: December Changelog Jan 30, 2023 0 Min Read Maggie Lin Product Marketing Share https://metronome.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"com/blog/in-tempo-december-changelog Contents Heading 2 Heading 3 Get updates into your inbox Share https://metronome.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com/blog/in-tempo-december-changelog Welcome to the first In Tempo of 2023!","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Last week, we had the entire team together in San Francisco - it’s amazing to see how much we’ve grown since our last offsite and to reflect on what we’ve accomplished and what’s ahead.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"We’re energized to continue building a product that makes billing less painful and grateful to work with a team that has a ton of fun together (ask us our thoughts on The Princess Bride, decadent cakes, and mullets).","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["In Tempo: December Changelog Jan 30, 2023 0 Min Read Maggie Lin Product Marketing Share https://metronome.","com/blog/in-tempo-december-changelog Contents Heading 2 Heading 3 Get updates into your inbox Share https://metronome.","com/blog/in-tempo-december-changelog Welcome to the first In Tempo of 2023!"],"case_details":["**✨** Metronome has signed a definitive agreement to join Stripe. ### In Tempo: December Changelog. Get updates into your inbox. #### See Stripe invoice status in the Metronome UI and API. We now sync invoice status changes from Stripe into Metronome. You can see the status in the Metronome UI or as part of the response when you fetch invoices from our API. This highly requested feature helps us continue to serve as the billing source-of-truth for our customers. * The ability to ping our API to see what the invoice"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-059｜Enterprise AI Series B Funding Concentration Q1 2026
+
+- raw_ref: R-060
+- raw_original_id: https://angelinvestorsnetwork.com/market-analysis/enterprise-ai-series-b-funding-concentration-q1-2026
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-060-enterprise-ai-series-b-funding-concentration-q1-2026.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-060-enterprise-ai-series-b-funding-concentration-q1-2026.json`
+- source: keyword search / Tavily｜https://angelinvestorsnetwork.com/market-analysis/enterprise-ai-series-b-funding-concentration-q1-2026
+- source_url: https://angelinvestorsnetwork.com/market-analysis/enterprise-ai-series-b-funding-concentration-q1-2026
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 8b4314a057a49499
+- raw_full_text_hash: 45072c207d06d49f
+- raw_semantic_hash: 2dedaff5e232a9e2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"45072c207d06d49f","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"# Enterprise AI Series B Funding Concentration Q1 2026. Enterprise AI Series B funding in Q1 2026 concentrated in vertical platforms with embedded deployment teams. Wonderful's $150M Series B signals institutional capital shift away from horizontal AI agents toward infrastructure-as-platform models. Editorial illustration for Enterprise AI Series B Funding Concentration Q1 2026 - Market Analysis insights. Wonderful's $150M Series B (announced March 12, 2026) signals capital concentration in vertical enterprise AI i","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Enterprise AI Series B Funding Concentration Q1 2026 Wonderful's $150M Series B (announced March 12, 2026) signals capital concentration in vertical enterprise AI infrastructure over horizontal platforms.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Rock Health reports nearly 60% of Q1 2026 digital health capital concentrated in just 12 mega-deals — startups with embedded deployment teams and regulatory integration capabilities are capturing institutional capital while horizontal AI agent platforms struggle to scale.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Angel Investors Network provides marketing and education services, not investment advice.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Consult qualified legal, tax, and financial advisors before making investment decisions.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Why Wonderful Raised $150M When Most AI Platforms Can't Close Series A The difference between a $150M Series B and a stalled fundraise isn't the technology.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["# Enterprise AI Series B Funding Concentration Q1 2026. Enterprise AI Series B funding in Q1 2026 concentrated in vertical platforms with embedded deployment teams. Wonderful's $150M Series B signals institutional capital shift away from horizontal AI agents toward infrastructure-as-platform models. Editorial illustration for Enterprise AI Series B Funding Concentration Q1 2026 - Market Analysis insights. Wonderful's $150M Series B (announced March 12, 2026) signals capital concentration in vertical enterprise AI i","Enterprise AI Series B Funding Concentration Q1 2026 Wonderful's $150M Series B (announced March 12, 2026) signals capital concentration in vertical enterprise AI infrastructure over horizontal platforms.","Angel Investors Network provides marketing and education services, not investment advice."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-060｜AI Agent Startup Ideas 2026: 27 Ranked, 15 Worth Building
+
+- raw_ref: R-061
+- raw_original_id: https://preuve.ai/blog/ai-agent-startup-ideas-2026
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-061-ai-agent-startup-ideas-2026-27-ranked-15-worth-building.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-061-ai-agent-startup-ideas-2026-27-ranked-15-worth-building.json`
+- source: keyword search / Tavily｜https://preuve.ai/blog/ai-agent-startup-ideas-2026
+- source_url: https://preuve.ai/blog/ai-agent-startup-ideas-2026
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: f31caade6de9ecd7
+- raw_full_text_hash: 246a5701b47d3c9f
+- raw_semantic_hash: efada3679738c1df
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"246a5701b47d3c9f","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"1. [Professional-Services Back-Office Agents](https://preuve.ai/blog/ai-agent-startup-ideas-2026#heading-0). 3. [Field, Trades and Home-Services Agents](https://preuve.ai/blog/ai-agent-startup-ideas-2026#heading-2). 4. [Finance and Revenue-Ops Agents](https://preuve.ai/blog/ai-agent-startup-ideas-2026#heading-3). 8. [How to Validate an AI Agent Idea Before You Build](https://preuve.ai/blog/ai-agent-startup-ideas-2026#heading-7). ![Image 7: Professional-services office desk with AI agent workflow overlays for contra","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The best 2026 AI agent ideas are vertical back-office agents, Not horizontal ones: contract review for law firms, billing for medical and dental practices, claims triage for insurance adjusters, freight exceptions for 3PLs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Avoid the red oceans: SDR agents, coding assistants, support chatbots, RAG-only agents, no-code builders.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The graveyard is real: 3,800+ AI agent startups shut down in 2025, almost all horizontal.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Winning pattern: A vertical agent for a buyer who already pays a person to do the work.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"5B in 2025, headed to $52.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The best 2026 AI agent ideas are vertical back-office agents, Not horizontal ones: contract review for law firms, billing for medical and dental practices, claims triage for insurance adjusters, freight exceptions for 3PLs.","The graveyard is real: 3,800+ AI agent startups shut down in 2025, almost all horizontal.","Winning pattern: A vertical agent for a buyer who already pays a person to do the work."],"case_details":[],"workflow_changes":["1. [Professional-Services Back-Office Agents](https://preuve.ai/blog/ai-agent-startup-ideas-2026#heading-0). 3. [Field, Trades and Home-Services Agents](https://preuve.ai/blog/ai-agent-startup-ideas-2026#heading-2). 4. [Finance and Revenue-Ops Agents](https://preuve.ai/blog/ai-agent-startup-ideas-2026#heading-3). 8. [How to Validate an AI Agent Idea Before You Build](https://preuve.ai/blog/ai-agent-startup-ideas-2026#heading-7). ![Image 7: Professional-services office desk with AI agent workflow overlays for contra","Avoid the red oceans: SDR agents, coding assistants, support chatbots, RAG-only agents, no-code builders."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-061｜AI Startups You Should Know - Medium
+
+- raw_ref: R-062
+- raw_original_id: https://medium.com/jonathans-musings/ai-startups-you-should-know-48d69d1ddf61
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-062-ai-startups-you-should-know-medium.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-062-ai-startups-you-should-know-medium.json`
+- source: keyword search / Tavily｜https://medium.com/jonathans-musings/ai-startups-you-should-know-48d69d1ddf61
+- source_url: https://medium.com/jonathans-musings/ai-startups-you-should-know-48d69d1ddf61
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: industry
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: high
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: bb9b36b832c9a4f6
+- raw_full_text_hash: bb9b36b832c9a4f6
+- raw_semantic_hash: 7592e329bc6afc2a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"bb9b36b832c9a4f6","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"[![Image 11: Jonathan’s Musings](https://miro.medium.com/v2/resize:fill:20:20/1*Qu1bZFUH-QmKgrxqTDgtIw.jpeg)](https://medium.com/jonathans-musings?source=post_page---author_recirc--48d69d1ddf61----0---------------------b515be54_7fcd_491e_a43b_4c79ac6201bc--------------). Here’s how it happened and what I’ve…](https://medium.com/jonathans-musings/codex-vs-claude-code-why-i-decided-to-switch-to-codex-97f905c0ad4e?source=post_page---author_recirc--48d69d1ddf61----0---------------------b515be54_7fcd_491e_a43b_4c79ac620","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"[Image 11: Jonathan’s Musings](https://miro.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com/v2/resize:fill:20:20/1*Qu1bZFUH-QmKgrxqTDgtIw.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"jpeg)](https://medium.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com/jonathans-musings?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"source=post_page---author_recirc--48d69d1ddf61----0---------------------b515be54_7fcd_491e_a43b_4c79ac6201bc--------------).","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["[![Image 11: Jonathan’s Musings](https://miro.medium.com/v2/resize:fill:20:20/1*Qu1bZFUH-QmKgrxqTDgtIw.jpeg)](https://medium.com/jonathans-musings?source=post_page---author_recirc--48d69d1ddf61----0---------------------b515be54_7fcd_491e_a43b_4c79ac6201bc--------------). Here’s how it happened and what I’ve…](https://medium.com/jonathans-musings/codex-vs-claude-code-why-i-decided-to-switch-to-codex-97f905c0ad4e?source=post_page---author_recirc--48d69d1ddf61----0---------------------b515be54_7fcd_491e_a43b_4c79ac620","[Image 11: Jonathan’s Musings](https://miro.","com/v2/resize:fill:20:20/1*Qu1bZFUH-QmKgrxqTDgtIw."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-062｜Top 10 Seed Investors for AI Startups (2026) - AI Funding Tracker
+
+- raw_ref: R-063
+- raw_original_id: https://aifundingtracker.com/top-seed-investors-ai
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-063-top-10-seed-investors-for-ai-startups-2026-ai-funding-tracker.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-063-top-10-seed-investors-for-ai-startups-2026-ai-funding-tracker.json`
+- source: keyword search / Tavily｜https://aifundingtracker.com/top-seed-investors-ai
+- source_url: https://aifundingtracker.com/top-seed-investors-ai
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: bbbae0cba3918ba7
+- raw_full_text_hash: bbbae0cba3918ba7
+- raw_semantic_hash: 300ba2f41224597c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"bbbae0cba3918ba7","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"# Top 10 Seed Investors for AI Startups (2026). [Skip to content](https://aifundingtracker.com/top-seed-investors-ai#content). # Top Seed Investors for AI Startups in 2026. The AI seed funding landscape in 2026 is more competitive than ever. With [AI startups capturing 46% of all venture capital globally](https://aifundingtracker.com/q3-2025-global-ai-funding/), seed investors are racing to identify the next breakthrough companies before they hit mainstream adoption. According to recent data, over 5,000 seed invest","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Skip to content The AI seed funding landscape in 2026 is more competitive than ever.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"With AI startups capturing 46% of all venture capital globally , seed investors are racing to identify the next breakthrough companies before they hit mainstream adoption.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"According to recent data, over 5,000 seed investors are actively funding AI startups.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"But not all seed investors are created equal.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Some consistently spot category-defining companies early, while others chase trends.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["# Top 10 Seed Investors for AI Startups (2026). [Skip to content](https://aifundingtracker.com/top-seed-investors-ai#content). # Top Seed Investors for AI Startups in 2026. The AI seed funding landscape in 2026 is more competitive than ever. With [AI startups capturing 46% of all venture capital globally](https://aifundingtracker.com/q3-2025-global-ai-funding/), seed investors are racing to identify the next breakthrough companies before they hit mainstream adoption. According to recent data, over 5,000 seed invest","Skip to content The AI seed funding landscape in 2026 is more competitive than ever.","With AI startups capturing 46% of all venture capital globally , seed investors are racing to identify the next breakthrough companies before they hit mainstream adoption."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-063｜The Week's 10 Biggest Funding Rounds - Crunchbase News
+
+- raw_ref: R-064
+- raw_original_id: https://news.crunchbase.com/venture/biggest-funding-rounds-ai-openai-semiconductors-matx
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-064-the-week-s-10-biggest-funding-rounds-crunchbase-news.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-064-the-week-s-10-biggest-funding-rounds-crunchbase-news.json`
+- source: keyword search / Tavily｜https://news.crunchbase.com/venture/biggest-funding-rounds-ai-openai-semiconductors-matx
+- source_url: https://news.crunchbase.com/venture/biggest-funding-rounds-ai-openai-semiconductors-matx
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: industry
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 4856c7c4df08ef46
+- raw_full_text_hash: 4856c7c4df08ef46
+- raw_semantic_hash: e101f3a1f7e5cb9f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4856c7c4df08ef46","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"Artificial intelligence • Communications tech • Health, Wellness & Biotech • Robotics • Semiconductors and 5G • Startups • Venture. # The Week’s 10 Biggest Funding Rounds: OpenAI Takes The Spotlight With Record-Setting $110B Round. *Want to keep track of the largest startup funding deals in 2026 with our curated list of $100 million-plus venture deals to U.S.-based companies? *This is a weekly feature that runs down the week’s top 10 announced funding rounds in the U.S. Check out last week’s biggest funding deal ro","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports Q1 2023 Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia 2022 2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia Joanna Glasner jglasner Shares Email Facebook Twitter LinkedIn Want to keep track of the largest startup funding deals in 2026 with our curated list of $100 million-plus venture deals to U.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Check out The Crunchbase Megadeals Board .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"This is a weekly feature that runs down the week’s top 10 announced funding rounds in the U.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Check out last week’s biggest funding deal roundup here .","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"It was going to be a fairly business as usual top 10 list this week until OpenAI decided to disrupt our Friday with news that it raised $110 billion in new funding.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Artificial intelligence • Communications tech • Health, Wellness & Biotech • Robotics • Semiconductors and 5G • Startups • Venture. # The Week’s 10 Biggest Funding Rounds: OpenAI Takes The Spotlight With Record-Setting $110B Round. *Want to keep track of the largest startup funding deals in 2026 with our curated list of $100 million-plus venture deals to U.S.-based companies? *This is a weekly feature that runs down the week’s top 10 announced funding rounds in the U.S. Check out last week’s biggest funding deal ro","Unicorn Board Tech Layoffs Tracker Billion-Dollar Exits Largest Funding Deals Tracker Web3 Tracker Venture funding reports Q1 2023 Q1 2023 Global Q1 2023 North America Q1 2023 Europe Q1 2023 Latin America Q1 2023 Asia 2022 2022 Global 2022 North America 2022 Europe 2022 Latin America 2022 Asia Joanna Glasner jglasner Shares Email Facebook Twitter LinkedIn Want to keep track of the largest startup funding deals in 2026 with our curated list of $100 million-plus venture deals to U.","Check out The Crunchbase Megadeals Board ."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-064｜Best AI Agents by Vertical: The Ultimate Enterprise Guide - Rasa
+
+- raw_ref: R-065
+- raw_original_id: https://rasa.com/guides/best-ai-agents-by-vertical-the-ultimate-enterprise-guide
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-065-best-ai-agents-by-vertical-the-ultimate-enterprise-guide-rasa.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-065-best-ai-agents-by-vertical-the-ultimate-enterprise-guide-rasa.json`
+- source: keyword search / Tavily｜https://rasa.com/guides/best-ai-agents-by-vertical-the-ultimate-enterprise-guide
+- source_url: https://rasa.com/guides/best-ai-agents-by-vertical-the-ultimate-enterprise-guide
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 86d01a83ec77fa11
+- raw_full_text_hash: ad967ddb22b0eedb
+- raw_semantic_hash: 943622191cd3f45a
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ad967ddb22b0eedb","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"# Best AI Agents by Vertical: The Ultimate Enterprise Guide. Enterprise AI agents work best when they're built for the industry they serve. A conversational agent that handles retail returns can't operate inside banking regulations, and a hospitality booking agent crumbles when asked to navigate healthcare compliance. They're optimized for fast setup and basic, surface-level automation, which breaks down when agents need to handle regulated data or support complex, vertical-specific workflows. Whether you're buildi","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Use Cases Industries Developers Resources Pricing Get a demo Best AI Agents by Vertical: The Ultimate Enterprise Guide Enterprise AI agents work best when they're built for the industry they serve.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Posted Mar 05, 2026 Best AI Agents by Vertical: The Ultimate Enterprise Guide Enterprise AI agents work best when they're built for the industry they serve.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Posted Mar 05, 2026 What works in one industry often fails in another because the operational risks and regulatory demands differ dramatically.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"A conversational agent that handles retail returns can't operate inside banking regulations, and a hospitality booking agent crumbles when asked to navigate healthcare compliance.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"But many platforms continue to market AI agents as interchangeable, all-purpose solutions for any business.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Use Cases Industries Developers Resources Pricing Get a demo Best AI Agents by Vertical: The Ultimate Enterprise Guide Enterprise AI agents work best when they're built for the industry they serve.","Posted Mar 05, 2026 Best AI Agents by Vertical: The Ultimate Enterprise Guide Enterprise AI agents work best when they're built for the industry they serve.","But many platforms continue to market AI agents as interchangeable, all-purpose solutions for any business."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":["# Best AI Agents by Vertical: The Ultimate Enterprise Guide. Enterprise AI agents work best when they're built for the industry they serve. A conversational agent that handles retail returns can't operate inside banking regulations, and a hospitality booking agent crumbles when asked to navigate healthcare compliance. They're optimized for fast setup and basic, surface-level automation, which breaks down when agents need to handle regulated data or support complex, vertical-specific workflows. Whether you're buildi","Posted Mar 05, 2026 What works in one industry often fails in another because the operational risks and regulatory demands differ dramatically.","A conversational agent that handles retail returns can't operate inside banking regulations, and a hospitality booking agent crumbles when asked to navigate healthcare compliance."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-065｜The State of AI in the Enterprise - 2026 AI report | Deloitte Global
+
+- raw_ref: R-066
+- raw_original_id: https://www.deloitte.com/cz-sk/en/issues/generative-ai/state-of-ai-in-enterprise.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-066-the-state-of-ai-in-the-enterprise-2026-ai-report-deloitte-global.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-066-the-state-of-ai-in-the-enterprise-2026-ai-report-deloitte-global.json`
+- source: keyword search / Tavily｜https://www.deloitte.com/cz-sk/en/issues/generative-ai/state-of-ai-in-enterprise.html
+- source_url: https://www.deloitte.com/cz-sk/en/issues/generative-ai/state-of-ai-in-enterprise.html
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 74505f24bdd8b058
+- raw_full_text_hash: 74505f24bdd8b058
+- raw_semantic_hash: 9c61c82287dd31a0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"74505f24bdd8b058","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"# The State of AI in the Enterprise. ## Deloitte's 2026 AI report tracking adoption and impact. Organisations today stand at the untapped edge of AI's potential. Our 2026 AI report reveals that success hinges on the ability to move boldly from ambition to activation. # Enterprise AI Adoption by Industry. Trends and insights about AI in the enterprise vary from sector to sector, company to company. Get a tailored snapshot of your industry to understand where AI is making the biggest impact. ### What’s top of mind wh","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The State of AI in the Enterprise - 2026 AI report | Deloitte Global Link opens in a new tab opens in new window Skip to main content Welcome to Deloitte If we have selected the wrong experience for you, please change it above.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Contact us Submit RFP čeština slovenčina english The State of AI in the Enterprise Deloitte's 2026 AI report tracking adoption and impact Download the report The untapped edge Organisations today stand at the untapped edge of AI's potential.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Our 2026 AI report reveals that success hinges on the ability to move boldly from ambition to activation.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Enterprise AI Adoption by Industry Trends and insights about AI in the enterprise vary from sector to sector, company to company.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Get a tailored snapshot of your industry to understand where AI is making the biggest impact.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["# The State of AI in the Enterprise. ## Deloitte's 2026 AI report tracking adoption and impact. Organisations today stand at the untapped edge of AI's potential. Our 2026 AI report reveals that success hinges on the ability to move boldly from ambition to activation. # Enterprise AI Adoption by Industry. Trends and insights about AI in the enterprise vary from sector to sector, company to company. Get a tailored snapshot of your industry to understand where AI is making the biggest impact. ### What’s top of mind wh","The State of AI in the Enterprise - 2026 AI report | Deloitte Global Link opens in a new tab opens in new window Skip to main content Welcome to Deloitte If we have selected the wrong experience for you, please change it above.","Contact us Submit RFP čeština slovenčina english The State of AI in the Enterprise Deloitte's 2026 AI report tracking adoption and impact Download the report The untapped edge Organisations today stand at the untapped edge of AI's potential."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-066｜The State of AI in the Enterprise - 2026 AI report | Deloitte CE
+
+- raw_ref: R-067
+- raw_original_id: https://www.deloitte.com/ce/en/issues/generative-ai/state-of-ai-in-enterprise.html
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-067-the-state-of-ai-in-the-enterprise-2026-ai-report-deloitte-ce.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-067-the-state-of-ai-in-the-enterprise-2026-ai-report-deloitte-ce.json`
+- source: keyword search / Tavily｜https://www.deloitte.com/ce/en/issues/generative-ai/state-of-ai-in-enterprise.html
+- source_url: https://www.deloitte.com/ce/en/issues/generative-ai/state-of-ai-in-enterprise.html
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 54ee5e746c96f0e2
+- raw_full_text_hash: 54ee5e746c96f0e2
+- raw_semantic_hash: 4ed87662281164e0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"54ee5e746c96f0e2","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"### AI. #### AI for business. ### Deloitte’s commitment to society. # The State of AI in the Enterprise. ## Deloitte's 2026 AI report tracking adoption and impact. Organisations today stand at the untapped edge of AI's potential. Our 2026 AI report reveals that success hinges on the ability to move boldly from ambition to activation. Get a tailored snapshot of your industry to understand where AI is making the biggest impact. ### What’s top of mind when it comes to AI in the enterprise? As they turn the corner to s","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The State of AI in the Enterprise - 2026 AI report | Deloitte CE Link opens in a new tab opens in new window Skip to main content Welcome to Deloitte If we have selected the wrong experience for you, please change it above.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Contact us Submit RFP The State of AI in the Enterprise Deloitte's 2026 AI report tracking adoption and impact Download the report The untapped edge Organisations today stand at the untapped edge of AI's potential.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Our 2026 AI report reveals that success hinges on the ability to move boldly from ambition to activation.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Enterprise AI Adoption by Industry Trends and insights about AI in the enterprise vary from sector to sector, company to company.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Get a tailored snapshot of your industry to understand where AI is making the biggest impact.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["### AI. #### AI for business. ### Deloitte’s commitment to society. # The State of AI in the Enterprise. ## Deloitte's 2026 AI report tracking adoption and impact. Organisations today stand at the untapped edge of AI's potential. Our 2026 AI report reveals that success hinges on the ability to move boldly from ambition to activation. Get a tailored snapshot of your industry to understand where AI is making the biggest impact. ### What’s top of mind when it comes to AI in the enterprise? As they turn the corner to s","The State of AI in the Enterprise - 2026 AI report | Deloitte CE Link opens in a new tab opens in new window Skip to main content Welcome to Deloitte If we have selected the wrong experience for you, please change it above.","Contact us Submit RFP The State of AI in the Enterprise Deloitte's 2026 AI report tracking adoption and impact Download the report The untapped edge Organisations today stand at the untapped edge of AI's potential."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-067｜Enterprise AI Use Cases in 2026: The Strategic Blueprint from Pilot to Global Production | linesNcircles
+
+- raw_ref: R-068
+- raw_original_id: https://linesncircles.com/Blog/Enterprise/Enterprise_AI_Use_Cases_2026
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-068-enterprise-ai-use-cases-in-2026-the-strategic-blueprint-from-pilot-to-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-068-enterprise-ai-use-cases-in-2026-the-strategic-blueprint-from-pilot-to-.json`
+- source: keyword search / Tavily｜https://linesncircles.com/Blog/Enterprise/Enterprise_AI_Use_Cases_2026
+- source_url: https://linesncircles.com/Blog/Enterprise/Enterprise_AI_Use_Cases_2026
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 0456d07d5394af62
+- raw_full_text_hash: 0456d07d5394af62
+- raw_semantic_hash: dd3178c39f18c0ba
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"0456d07d5394af62","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"# Enterprise AI Use Cases in 2026: The Strategic Blueprint from Pilot to Global Production. In 2026, the corporate focus has shifted from high-level generative AI curiosity to deep integration within legacy systems. As detailed in**The 2026 State of Enterprise AI: A Complete Synthesis**, the dominance of ecosystems like Google Cloud, AWS, and IBM Watsonx has allowed organizations to ground models in real-world operational data. This guide serves as a technical and strategic compendium for leadership teams moving to","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Blog Pricing Solutions Enterprise Educators Students Download TheBar In 2026, the corporate focus has shifted from high-level generative AI curiosity to deep integration within legacy systems.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"As detailed in The 2026 State of Enterprise AI: A Complete Synthesis , the dominance of ecosystems like Google Cloud, AWS, and IBM Watsonx has allowed organizations to ground models in real-world operational data.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"This guide serves as a technical and strategic compendium for leadership teams moving toward an autonomous workforce.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"From building automated risk scores in finance to optimizing patient flow in healthcare, we break down the high-frequency intent areas for the coming year.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Vertical Intelligence: Sector-Based Success Stories Industry-specific implementation has moved beyond generic document summarization into deep, functional agents.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Blog Pricing Solutions Enterprise Educators Students Download TheBar In 2026, the corporate focus has shifted from high-level generative AI curiosity to deep integration within legacy systems.","As detailed in The 2026 State of Enterprise AI: A Complete Synthesis , the dominance of ecosystems like Google Cloud, AWS, and IBM Watsonx has allowed organizations to ground models in real-world operational data.","This guide serves as a technical and strategic compendium for leadership teams moving toward an autonomous workforce."],"case_details":["# Enterprise AI Use Cases in 2026: The Strategic Blueprint from Pilot to Global Production. In 2026, the corporate focus has shifted from high-level generative AI curiosity to deep integration within legacy systems. As detailed in**The 2026 State of Enterprise AI: A Complete Synthesis**, the dominance of ecosystems like Google Cloud, AWS, and IBM Watsonx has allowed organizations to ground models in real-world operational data. This guide serves as a technical and strategic compendium for leadership teams moving to"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["From building automated risk scores in finance to optimizing patient flow in healthcare, we break down the high-frequency intent areas for the coming year."]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-068｜Enterprise AI Roadmap: The Complete 2026 Guide
+
+- raw_ref: R-069
+- raw_original_id: https://rtslabs.com/enterprise-ai-roadmap
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-069-enterprise-ai-roadmap-the-complete-2026-guide.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-069-enterprise-ai-roadmap-the-complete-2026-guide.json`
+- source: keyword search / Tavily｜https://rtslabs.com/enterprise-ai-roadmap
+- source_url: https://rtslabs.com/enterprise-ai-roadmap
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: high
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 02e6e2d9d0090b4a
+- raw_full_text_hash: 02e6e2d9d0090b4a
+- raw_semantic_hash: 5ea72466563cdd98
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"02e6e2d9d0090b4a","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"1. [Organizations have moved beyond the ‘pilot phase’ in 2024-25](https://rtslabs.com/enterprise-ai-roadmap#elementor-toc__heading-anchor-2). 1. [Business Objectives & Use-Case Prioritization](https://rtslabs.com/enterprise-ai-roadmap#elementor-toc__heading-anchor-8). 2. [Data Readiness & Infrastructure Assessment](https://rtslabs.com/enterprise-ai-roadmap#elementor-toc__heading-anchor-9). 4. [People, Skills & Operating Model](https://rtslabs.com/enterprise-ai-roadmap#elementor-toc__heading-anchor-11). 5. [Governan","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"[Organizations have moved beyond the ‘pilot phase’ in 2024-25](https://rtslabs.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com/enterprise-ai-roadmap#elementor-toc__heading-anchor-2).","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"[Business Objectives & Use-Case Prioritization](https://rtslabs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com/enterprise-ai-roadmap#elementor-toc__heading-anchor-8).","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"[Data Readiness & Infrastructure Assessment](https://rtslabs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["com/enterprise-ai-roadmap#elementor-toc__heading-anchor-2).","[Business Objectives & Use-Case Prioritization](https://rtslabs.","com/enterprise-ai-roadmap#elementor-toc__heading-anchor-8)."],"case_details":["1. [Organizations have moved beyond the ‘pilot phase’ in 2024-25](https://rtslabs.com/enterprise-ai-roadmap#elementor-toc__heading-anchor-2). 1. [Business Objectives & Use-Case Prioritization](https://rtslabs.com/enterprise-ai-roadmap#elementor-toc__heading-anchor-8). 2. [Data Readiness & Infrastructure Assessment](https://rtslabs.com/enterprise-ai-roadmap#elementor-toc__heading-anchor-9). 4. [People, Skills & Operating Model](https://rtslabs.com/enterprise-ai-roadmap#elementor-toc__heading-anchor-11). 5. [Governan","[Organizations have moved beyond the ‘pilot phase’ in 2024-25](https://rtslabs."],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-069｜AI Consulting Landscape 2026 — Deploy On-Premises
+
+- raw_ref: R-070
+- raw_original_id: https://vdf.ai/blog/ai-consulting-landscape-2026-vdf-ai-on-premises
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-070-ai-consulting-landscape-2026-deploy-on-premises.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-070-ai-consulting-landscape-2026-deploy-on-premises.json`
+- source: keyword search / Tavily｜https://vdf.ai/blog/ai-consulting-landscape-2026-vdf-ai-on-premises
+- source_url: https://vdf.ai/blog/ai-consulting-landscape-2026-vdf-ai-on-premises
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: fac61aba8481ecd1
+- raw_full_text_hash: fac61aba8481ecd1
+- raw_semantic_hash: 69285d1f80825b1d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fac61aba8481ecd1","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"AI chip and computer hardware representing the 2026 AI consulting landscape and on-premises implementation. # AI Consulting Landscape 2026 — Deploy On-Premises. Explore the 2026 AI consulting landscape and why consulting firms, systems integrators, and AI implementation partners should use VDF AI to deliver governed on-premises AI for enterprise customers. The AI consulting landscape in 2026 looks very different from the early generative AI boom. * Can it connect to our private data without leaking it? * Can it sup","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Photo by BoliviaInteligente on Unsplash The AI consulting landscape in 2026 looks very different from the early generative AI boom.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In 2023 and 2024, many consulting projects focused on workshops, proof-of-concepts, prompt training, chatbot demos, and broad AI strategy.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"By 2026, enterprise customers are asking harder questions: Can this AI system run inside our own environment?","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Can it connect to our private data without leaking it?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Can it support AI agents, not only chat interfaces?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Photo by BoliviaInteligente on Unsplash The AI consulting landscape in 2026 looks very different from the early generative AI boom.","In 2023 and 2024, many consulting projects focused on workshops, proof-of-concepts, prompt training, chatbot demos, and broad AI strategy.","Can it connect to our private data without leaking it?"],"case_details":["AI chip and computer hardware representing the 2026 AI consulting landscape and on-premises implementation. # AI Consulting Landscape 2026 — Deploy On-Premises. Explore the 2026 AI consulting landscape and why consulting firms, systems integrators, and AI implementation partners should use VDF AI to deliver governed on-premises AI for enterprise customers. The AI consulting landscape in 2026 looks very different from the early generative AI boom. * Can it connect to our private data without leaking it? * Can it sup","By 2026, enterprise customers are asking harder questions: Can this AI system run inside our own environment?"],"workflow_changes":["Can it support AI agents, not only chat interfaces?"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-070｜AI Workflow Automation Trends in 2026: 10 Trends Shaping the Future of Work
+
+- raw_ref: R-071
+- raw_original_id: https://www.cflowapps.com/ai-workflow-automation-trends
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-071-ai-workflow-automation-trends-in-2026-10-trends-shaping-the-future-of-.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-071-ai-workflow-automation-trends-in-2026-10-trends-shaping-the-future-of-.json`
+- source: keyword search / Tavily｜https://www.cflowapps.com/ai-workflow-automation-trends
+- source_url: https://www.cflowapps.com/ai-workflow-automation-trends
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 1adfbc1bf2fcd32d
+- raw_full_text_hash: 663ebcb3e0b82fd6
+- raw_semantic_hash: 83302f5c0032d8fa
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"663ebcb3e0b82fd6","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"* In 2026, major trends such as agentic AI, hyperautomation, no-code AI platforms, intelligent process automation, and AI-powered process mining will reshape how enterprises manage approvals, operations, and cross-system processes. * Finance, HR, procurement, IT, healthcare, logistics, and operations teams will benefit the most because these functions depend heavily on repeatable workflows, approvals, compliance, and high-volume process data. * As AI becomes more involved in business decisions, governance, security","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"TL;DR: Key Takeaways AI workflow automation is moving businesses beyond basic rule-based task automation toward intelligent, autonomous, and predictive workflow execution.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"In 2026, major trends such as agentic AI, hyperautomation, no-code AI platforms, intelligent process automation, and AI-powered process mining will reshape how enterprises manage approvals, operations, and cross-system processes.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Finance, HR, procurement, IT, healthcare, logistics, and operations teams will benefit the most because these functions depend heavily on repeatable workflows, approvals, compliance, and high-volume process data.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"As AI becomes more involved in business decisions, governance, security, compliance, audit trails, and human oversight will become essential for safe and reliable automation.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The best way to adopt AI workflow automation is to start with high-volume, rule-heavy, and measurable workflows, prove ROI, and then scale automation across departments and connected business systems.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":[],"case_details":[],"workflow_changes":["TL;DR: Key Takeaways AI workflow automation is moving businesses beyond basic rule-based task automation toward intelligent, autonomous, and predictive workflow execution.","In 2026, major trends such as agentic AI, hyperautomation, no-code AI platforms, intelligent process automation, and AI-powered process mining will reshape how enterprises manage approvals, operations, and cross-system processes.","The best way to adopt AI workflow automation is to start with high-volume, rule-heavy, and measurable workflows, prove ROI, and then scale automation across departments and connected business systems."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":["* In 2026, major trends such as agentic AI, hyperautomation, no-code AI platforms, intelligent process automation, and AI-powered process mining will reshape how enterprises manage approvals, operations, and cross-system processes. * Finance, HR, procurement, IT, healthcare, logistics, and operations teams will benefit the most because these functions depend heavily on repeatable workflows, approvals, compliance, and high-volume process data. * As AI becomes more involved in business decisions, governance, security","Finance, HR, procurement, IT, healthcare, logistics, and operations teams will benefit the most because these functions depend heavily on repeatable workflows, approvals, compliance, and high-volume process data.","As AI becomes more involved in business decisions, governance, security, compliance, audit trails, and human oversight will become essential for safe and reliable automation."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-071｜AI Analytics Use Cases in Healthcare Finance: 2026 Guide
+
+- raw_ref: R-072
+- raw_original_id: https://lets-viz.com/blogs/ai-analytics-use-cases-in-healthcare-finance-2026-guide
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-072-ai-analytics-use-cases-in-healthcare-finance-2026-guide.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-072-ai-analytics-use-cases-in-healthcare-finance-2026-guide.json`
+- source: keyword search / Tavily｜https://lets-viz.com/blogs/ai-analytics-use-cases-in-healthcare-finance-2026-guide
+- source_url: https://lets-viz.com/blogs/ai-analytics-use-cases-in-healthcare-finance-2026-guide
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 747d62808b767d1c
+- raw_full_text_hash: 747d62808b767d1c
+- raw_semantic_hash: 422e0ba4e8d9ac09
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"747d62808b767d1c","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"# AI Analytics Use Cases in Healthcare Finance: 2026 Guide. AI analytics use cases in healthcare finance span six core domains - revenue cycle automation, claims denial prediction, supply chain cost optimization, payer mix analysis, value-based care performance tracking, and fraud detection. For hospital CFOs and finance directors, each domain maps to a concrete, board-defensible outcome: reduced days-in-accounts-receivable, lower denial write-off rates, or improved contractual compliance. Lets Viz builds custom AI","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI analytics use cases in healthcare finance span six core domains - revenue cycle automation, claims denial prediction, supply chain cost optimization, payer mix analysis, value-based care performance tracking, and fraud detection.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"For hospital CFOs and finance directors, each domain maps to a concrete, board-defensible outcome: reduced days-in-accounts-receivable, lower denial write-off rates, or improved contractual compliance.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The ROI case is operational, not speculative.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Key Takeaways AI addresses six distinct financial challenges facing hospital finance teams: RCM automation, denial prediction, supply analytics, payer mix optimization, value-based care, and fraud detection.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Revenue cycle automation and claims denial prediction deliver the fastest, most auditable financial returns.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["AI analytics use cases in healthcare finance span six core domains - revenue cycle automation, claims denial prediction, supply chain cost optimization, payer mix analysis, value-based care performance tracking, and fraud detection.","The ROI case is operational, not speculative.","Key Takeaways AI addresses six distinct financial challenges facing hospital finance teams: RCM automation, denial prediction, supply analytics, payer mix optimization, value-based care, and fraud detection."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":["# AI Analytics Use Cases in Healthcare Finance: 2026 Guide. AI analytics use cases in healthcare finance span six core domains - revenue cycle automation, claims denial prediction, supply chain cost optimization, payer mix analysis, value-based care performance tracking, and fraud detection. For hospital CFOs and finance directors, each domain maps to a concrete, board-defensible outcome: reduced days-in-accounts-receivable, lower denial write-off rates, or improved contractual compliance. Lets Viz builds custom AI","For hospital CFOs and finance directors, each domain maps to a concrete, board-defensible outcome: reduced days-in-accounts-receivable, lower denial write-off rates, or improved contractual compliance."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-072｜AI Use Cases & Applications Across Major industries - LeewayHertz
+
+- raw_ref: R-073
+- raw_original_id: https://www.leewayhertz.com/ai-use-cases-and-applications
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-073-ai-use-cases-applications-across-major-industries-leewayhertz.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-073-ai-use-cases-applications-across-major-industries-leewayhertz.json`
+- source: keyword search / Tavily｜https://www.leewayhertz.com/ai-use-cases-and-applications
+- source_url: https://www.leewayhertz.com/ai-use-cases-and-applications
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 79
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: a52d6a3ba08603a1
+- raw_full_text_hash: d48ba7aa7609bf83
+- raw_semantic_hash: 4724621845b1c9a5
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d48ba7aa7609bf83","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"case_detail","text":"* * * [![Image 10](blob:http://localhost/06f51278f3809d33afdd9f20141fe02e)](https://www.leewayhertz.com/ai-customer-service-agent/). * * * [![Image 18](blob:http://localhost/06f51278f3809d33afdd9f20141fe02e)](https://www.leewayhertz.com/generative-ai-development-company/?utm_source=menu). * * [![Image 20](blob:http://localhost/06f51278f3809d33afdd9f20141fe02e)](https://www.leewayhertz.com/generative-ai-integration-service/?utm_source=menu). * * [![Image 22: Generative AI Consulting Company menu](blob:http://localho","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI Use Cases & Applications Across Major industries Explore our AI agents Twitter Facebook Linkedin Listen to the article What is Chainlink VRF What is Chainlink VRF What is Chainlink VRF <iframe src='https://www.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"action=embed_zoomsounds&type=player&margs=eyJzb3VyY2UiOiJodHRwczpcL1wvZDNsa2MzbjV0aDAxeDcuY2xvdWRmcm9udC5uZXRcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMTlcLzA4XC8yNTAwMTU0MlwvQUktVXNlLUNhc2VzLUFwcGxpY2F0aW9ucy1BY3Jvc3MtTWFqb3ItaW5kdXN0cmllcy5tcDMiLCJ0eXBlIjoiZGV0ZWN0IiwiYXJ0aXN0bmFtZSI6IiIsImR6c2FwX21ldGFfc291cmNlX2F0dGFjaG1lbnRfaWQiOiI2MjU2NCIsInBsYXlfaW5fZm9vdGVyX3BsYXllciI6ImRlZmF1bHQiLCJlbmFibGVfZG93bmxvYWRfYnV0dG9uIjoib2ZmIiwiZG93bmxvYWRfY3VzdG9tX2xpbmtfZW5hYmxlIjoib2ZmIiwib3Blbl9pbl91bHRpYm94Ijoib2ZmIn0%3D' style='ove","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"3s ease-out;' width='100%' height='180' scrolling='no' frameborder='0'></iframe> As contemporary business environments become highly globalized with larger workforces and resources, they face multifaceted challenges ranging from operational inefficiencies to complex decision-making processes.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Constantly adapting to new technologies, market demands, and competitive pressures is essential for these businesses.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Navigating through these pain points is a constant pursuit for enhanced performance and sustained growth.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["AI Use Cases & Applications Across Major industries Explore our AI agents Twitter Facebook Linkedin Listen to the article What is Chainlink VRF What is Chainlink VRF What is Chainlink VRF <iframe src='https://www.","Constantly adapting to new technologies, market demands, and competitive pressures is essential for these businesses.","Navigating through these pain points is a constant pursuit for enhanced performance and sustained growth."],"case_details":["* * * [![Image 10](blob:http://localhost/06f51278f3809d33afdd9f20141fe02e)](https://www.leewayhertz.com/ai-customer-service-agent/). * * * [![Image 18](blob:http://localhost/06f51278f3809d33afdd9f20141fe02e)](https://www.leewayhertz.com/generative-ai-development-company/?utm_source=menu). * * [![Image 20](blob:http://localhost/06f51278f3809d33afdd9f20141fe02e)](https://www.leewayhertz.com/generative-ai-integration-service/?utm_source=menu). * * [![Image 22: Generative AI Consulting Company menu](blob:http://localho"],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-073｜AI Use Cases and Key Statistics and Trends for 2026 - Itransition
+
+- raw_ref: R-074
+- raw_original_id: https://www.itransition.com/ai/use-cases
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-074-ai-use-cases-and-key-statistics-and-trends-for-2026-itransition.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-074-ai-use-cases-and-key-statistics-and-trends-for-2026-itransition.json`
+- source: keyword search / Tavily｜https://www.itransition.com/ai/use-cases
+- source_url: https://www.itransition.com/ai/use-cases
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: industry_landing
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 54c4edfa08c187bf
+- raw_full_text_hash: 1f92b308f0c6ffc4
+- raw_semantic_hash: 19441b71ab9b468e
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1f92b308f0c6ffc4","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"![Image 16: hero background image](https://www.itransition.com/_astro/_ai-use-cases-header.CeZQfULC_81VQn.webp). * [Artificial intelligence](https://www.itransition.com/ai). Therefore, we can expect growing investment in [AI services](https://www.itransition.com/ai) to incorporate this technology across a wider spectrum of use cases, as predicted by Gartner. * [Business functions](https://www.itransition.com/ai/use-cases#functions). * [Industries](https://www.itransition.com/ai/use-cases#industries). * [Benefits](h","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"AI use cases: an in-depth trend overview for 2026 December 23, 2025 Home Artificial intelligence Artificial intelligence use cases AI use cases span diverse functions and industries, supporting a wide range of business scenarios.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"In practice, most AI applications focus on automating time-consuming business processes, providing customers with personalized experiences, and analyzing large datasets for better decision-making.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"According to McKinsey, the use of AI across organizations has been on the rise for years, growing from 50% in 2022 to 88% in 2025.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Capgemini reported a similar trend for GenAI specifically, with the deployment rate growing from 20% in 2024 to 36% in 2025.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Organizations are also becoming more mature in their use of AI.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["![Image 16: hero background image](https://www.itransition.com/_astro/_ai-use-cases-header.CeZQfULC_81VQn.webp). * [Artificial intelligence](https://www.itransition.com/ai). Therefore, we can expect growing investment in [AI services](https://www.itransition.com/ai) to incorporate this technology across a wider spectrum of use cases, as predicted by Gartner. * [Business functions](https://www.itransition.com/ai/use-cases#functions). * [Industries](https://www.itransition.com/ai/use-cases#industries). * [Benefits](h","Organizations are also becoming more mature in their use of AI."],"case_details":["In practice, most AI applications focus on automating time-consuming business processes, providing customers with personalized experiences, and analyzing large datasets for better decision-making."],"workflow_changes":["AI use cases: an in-depth trend overview for 2026 December 23, 2025 Home Artificial intelligence Artificial intelligence use cases AI use cases span diverse functions and industries, supporting a wide range of business scenarios."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-074｜Meta enters enterprise AI race with new business agent | Reuters
+
+- raw_ref: R-075
+- raw_original_id: https://www.reuters.com/business/meta-launches-enterprise-focused-ai-business-agent-automate-daily-operations-2026-06-03
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-075-meta-enters-enterprise-ai-race-with-new-business-agent-reuters.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-075-meta-enters-enterprise-ai-race-with-new-business-agent-reuters.json`
+- source: keyword search / Tavily｜https://www.reuters.com/business/meta-launches-enterprise-focused-ai-business-agent-automate-daily-operations-2026-06-03
+- source_url: https://www.reuters.com/business/meta-launches-enterprise-focused-ai-business-agent-automate-daily-operations-2026-06-03
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: timeout-fallback-visible-text
+- extraction_quality: high
+- extraction_method: fetch_failed_summary_fallback
+- readability_score: 0
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: core_evidence_candidate
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: f72bb8c6229e7584
+- raw_full_text_hash: f72bb8c6229e7584
+- raw_semantic_hash: 0bcf2bd923a89752
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"f72bb8c6229e7584","missing":["missing_snapshot"]}
+- degradation_reasons: missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"product_update","text":"[Skip to main content](https://www.reuters.com/business/meta-launches-enterprise-focused-ai-business-agent-automate-daily-operations-2026-06-03/#main-content). * [World](https://www.reuters.com/world/). ## [Browse World](https://www.reuters.com/world/). * [Business](https://www.reuters.com/business/). ## [Browse Business](https://www.reuters.com/business/). * [Davos](https://www.reuters.com/business/davos/). * [Energy](https://www.reuters.com/business/energy/). * [Environment](https://www.reuters.com/business/envir","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"[Skip to main content](https://www.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"com/business/meta-launches-enterprise-focused-ai-business-agent-automate-daily-operations-2026-06-03/#main-content).","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"* [World](https://www.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"## [Browse World](https://www.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"* [Business](https://www.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["[Skip to main content](https://www.reuters.com/business/meta-launches-enterprise-focused-ai-business-agent-automate-daily-operations-2026-06-03/#main-content). * [World](https://www.reuters.com/world/). ## [Browse World](https://www.reuters.com/world/). * [Business](https://www.reuters.com/business/). ## [Browse Business](https://www.reuters.com/business/). * [Davos](https://www.reuters.com/business/davos/). * [Energy](https://www.reuters.com/business/energy/). * [Environment](https://www.reuters.com/business/envir","[Skip to main content](https://www.","com/business/meta-launches-enterprise-focused-ai-business-agent-automate-daily-operations-2026-06-03/#main-content)."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-075｜Gemini API Docs MCP turns docs into agent plumbing | AI News Silo
+
+- raw_ref: R-076
+- raw_original_id: https://ainewssilo.com/articles/gemini-api-docs-mcp-agent-context-layer
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-076-gemini-api-docs-mcp-turns-docs-into-agent-plumbing-ai-news-silo.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-076-gemini-api-docs-mcp-turns-docs-into-agent-plumbing-ai-news-silo.json`
+- source: keyword search / Tavily｜https://ainewssilo.com/articles/gemini-api-docs-mcp-agent-context-layer
+- source_url: https://ainewssilo.com/articles/gemini-api-docs-mcp-agent-context-layer
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: emerging_pool, watchlist
+- raw_content_hash: 8b2aa3e026464344
+- raw_full_text_hash: 8b2aa3e026464344
+- raw_semantic_hash: 910050030e9b5529
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8b2aa3e026464344","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"company_action","text":"Google's Gemini API Docs MCP and Gemini Agent Skills turn documentation into a first-party context layer for Claude Code, Cursor, and Gemini CLI. Figure / 01**The product pitch is simple: Google's docs stop being a tab you forgot to read and start acting like a live input channel inside the agent loop.***Illustration: AI News Silo*. If Google can make **Gemini API Docs MCP** the trusted way agents get current Gemini knowledge, then it owns more of the reasoning environment even when the user is sitting in Claude Co","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Gemini API Docs MCP turns docs into agent plumbing Google's Gemini API Docs MCP and Gemini Agent Skills turn documentation into a first-party context layer for coding agents, with Google tightening workflow control.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Filed Apr 6, 2026 / Updated Apr 11, 2026 / 7 min read Filed April 6, 2026 Updated April 11, 2026 7 min read ainewssilo.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"com Google is not just publishing docs here.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"It is turning docs into a managed input channel for coding agents.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Google's new Gemini API Docs MCP pitch looks small if you read it like a normal docs update.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Google's Gemini API Docs MCP and Gemini Agent Skills turn documentation into a first-party context layer for Claude Code, Cursor, and Gemini CLI. Figure / 01**The product pitch is simple: Google's docs stop being a tab you forgot to read and start acting like a live input channel inside the agent loop.***Illustration: AI News Silo*. If Google can make **Gemini API Docs MCP** the trusted way agents get current Gemini knowledge, then it owns more of the reasoning environment even when the user is sitting in Claude Co","Filed Apr 6, 2026 / Updated Apr 11, 2026 / 7 min read Filed April 6, 2026 Updated April 11, 2026 7 min read ainewssilo.","com Google is not just publishing docs here."],"case_details":[],"workflow_changes":["Gemini API Docs MCP turns docs into agent plumbing Google's Gemini API Docs MCP and Gemini Agent Skills turn documentation into a first-party context layer for coding agents, with Google tightening workflow control."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-076｜AI Agents Market Map 2026: Every Category Mapped - MightyBot
+
+- raw_ref: R-077
+- raw_original_id: https://mightybot.ai/blog/ai-automation-agents-market-maps-gone-wild
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-077-ai-agents-market-map-2026-every-category-mapped-mightybot.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-077-ai-agents-market-map-2026-every-category-mapped-mightybot.json`
+- source: keyword search / Tavily｜https://mightybot.ai/blog/ai-automation-agents-market-maps-gone-wild
+- source_url: https://mightybot.ai/blog/ai-automation-agents-market-maps-gone-wild
+- acquisition_channel: keyword-search
+- search_intent: find_workflow_change
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 5880800f029f3822
+- raw_full_text_hash: 5981416ab93fd29b
+- raw_semantic_hash: dfd745b0dcd43264
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5981416ab93fd29b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"quote","text":"# AI Agents Market Map 2026: Every Category Mapped. A 2026 AI agents market map for enterprise buyers: coding agents, workflow agents, vertical agents, agent infrastructure, agent washing, and how to evaluate production-ready platforms. **Summary:** The 2026 AI agents market map is crowded because “AI agent” now describes several different markets: coding agents, workflow automation platforms, vertical agents, browser agents, customer-service agents, RPA copilots, and agent infrastructure. The important distinction","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"← Blog ai-agents automation AI Agents Market Map 2026: Every Category Mapped A 2026 AI agents market map for enterprise buyers: coding agents, workflow agents, vertical agents, agent infrastructure, agent washing, and how to evaluate production-ready platforms.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"MightyBot · Updated June 13, 2026 Summary: The 2026 AI agents market map is crowded because “AI agent” now describes several different markets: coding agents, workflow automation platforms, vertical agents, browser agents, customer-service agents, RPA copilots, and agent infrastructure.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"The important distinction for enterprise buyers is not whether a vendor calls itself agentic.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"It is whether the system can execute real workflows, connect to business systems, enforce policy, operate safely, and prove every decision with evidence.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Updated June 2026 AI Agent Market Map 2026 The AI agent market is not one category.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["The important distinction for enterprise buyers is not whether a vendor calls itself agentic.","Updated June 2026 AI Agent Market Map 2026 The AI agent market is not one category."],"case_details":[],"workflow_changes":["← Blog ai-agents automation AI Agents Market Map 2026: Every Category Mapped A 2026 AI agents market map for enterprise buyers: coding agents, workflow agents, vertical agents, agent infrastructure, agent washing, and how to evaluate production-ready platforms.","It is whether the system can execute real workflows, connect to business systems, enforce policy, operate safely, and prove every decision with evidence."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-077｜Microsoft Work IQ: Copilot Credits Reset 2027 Budgets
+
+- raw_ref: R-078
+- raw_original_id: https://beam.ai/agentic-insights/microsoft-work-iq-copilot-credits-enterprise-cfo-2027-budgets
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-078-microsoft-work-iq-copilot-credits-reset-2027-budgets.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-078-microsoft-work-iq-copilot-credits-reset-2027-budgets.json`
+- source: keyword search / Tavily｜https://beam.ai/agentic-insights/microsoft-work-iq-copilot-credits-enterprise-cfo-2027-budgets
+- source_url: https://beam.ai/agentic-insights/microsoft-work-iq-copilot-credits-enterprise-cfo-2027-budgets
+- acquisition_channel: keyword-search
+- search_intent: find_workflow_change
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: pricing_change
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-body-visible-text
+- extraction_quality: high
+- extraction_method: body-visible-text
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 26f019c7e5b9b02b
+- raw_full_text_hash: 26f019c7e5b9b02b
+- raw_semantic_hash: 7d51a97f73db8732
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"26f019c7e5b9b02b","missing":[]}
+- degradation_reasons: none
+- importance_type: important_vertical_solution
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 8.4
+- raw_capture_priority: 21.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"number","text":"# Microsoft Work IQ and the End of Invisible Agent Costs: What 1.4 Billion Copilot Credits Will Reveal in 2027 Budgets. It also made it impossible to answer the only question that matters in a 2027 budget meeting: what does one agent task actually cost, and which workflows are worth running at scale? Microsoft Work IQ APIs reached general availability on June 16, and with them came a billing model that will force every enterprise running M365 to look at agent economics one task at a time. But the moment an enterpri","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Microsoft Work IQ: Copilot Credits Reset 2027 Budgets Jun 17, 2026 min read Microsoft Work IQ and the End of Invisible Agent Costs: What 1.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"number","text":"4 Billion Copilot Credits Will Reveal in 2027 Budgets by Fredrik Falk Category AI Agents Share the article For two years, every enterprise CFO who signed a Microsoft 365 Copilot contract has been buying agent capacity they could not measure.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Flat per-user pricing made it feel safe.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"It also made it impossible to answer the only question that matters in a 2027 budget meeting: what does one agent task actually cost, and which workflows are worth running at scale?","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"That contradiction ends this week.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Flat per-user pricing made it feel safe.","That contradiction ends this week."],"case_details":["Microsoft Work IQ: Copilot Credits Reset 2027 Budgets Jun 17, 2026 min read Microsoft Work IQ and the End of Invisible Agent Costs: What 1."],"workflow_changes":["It also made it impossible to answer the only question that matters in a 2027 budget meeting: what does one agent task actually cost, and which workflows are worth running at scale?"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师","采购负责人"],"risks_or_constraints":[]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-078｜China’s Z.ai claims it can match Mythos on cybersecurity
+
+- raw_ref: R-079
+- raw_original_id: https://www.theverge.com/?p=958804
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-079-china-s-z-ai-claims-it-can-match-mythos-on-cybersecurity.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-079-china-s-z-ai-claims-it-can-match-mythos-on-cybersecurity.json`
+- source: The Verge AI｜https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity
+- source_url: https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 89
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 5b4bc337ee936ec9
+- raw_full_text_hash: 5b4bc337ee936ec9
+- raw_semantic_hash: 4f3bed33549c4c18
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5b4bc337ee936ec9","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"supporting_context","text":"China's Zhipu AI (Z.ai) released its open-weight GLM-5.2, and some researchers have claimed that it matches Mythos in certain bug-finding and cybersecurity scenarios. While GLM lags behind models from Anthropic and OpenAI in other, more general tasks, it seems that China has dramatically reduced the gap in the capabilities between its models and those of [&#8230;]","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"AI News Policy China’s Z.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"ai claims it can match Mythos on cybersecurity GLM-5.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"2 can’t match Anthropic or OpenAI on general tasks, but the gap has closed on finding bugs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"by Terrence O'Brien Jun 28, 2026, 9:42 PM UTC Image: Cath Virginia / The Verge, Getty Images Terrence O'Brien is the Verge’s weekend editor.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["AI News Policy China’s Z.","2 can’t match Anthropic or OpenAI on general tasks, but the gap has closed on finding bugs.","by Terrence O'Brien Jun 28, 2026, 9:42 PM UTC Image: Cath Virginia / The Verge, Getty Images Terrence O'Brien is the Verge’s weekend editor."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":["China's Zhipu AI (Z.ai) released its open-weight GLM-5.2, and some researchers have claimed that it matches Mythos in certain bug-finding and cybersecurity scenarios. While GLM lags behind models from Anthropic and OpenAI in other, more general tasks, it seems that China has dramatically reduced the gap in the capabilities between its models and those of [&#8230;]","ai claims it can match Mythos on cybersecurity GLM-5."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-079｜Asian AI startups launch Mythos-like models as Anthropic&#8217;s export ban drags on
+
+- raw_ref: R-080
+- raw_original_id: https://techcrunch.com/?p=3136677
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-080-asian-ai-startups-launch-mythos-like-models-as-anthropic-8217-s-export.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-080-asian-ai-startups-launch-mythos-like-models-as-anthropic-8217-s-export.json`
+- source: TechCrunch AI｜https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/
+- source_url: https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: news
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 7092b66a1e6d61ca
+- raw_full_text_hash: 7092b66a1e6d61ca
+- raw_semantic_hash: e478ff37141ba9b7
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7092b66a1e6d61ca","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"product_update","text":"New models are launching in Asia that promise Mythos-like capabilities without fear of an export ban. U.S. AI labs may never recover this enormous market.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"–:–:–:– The first StrictlyVC of 2026 hits SF on April 30.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Tickets are going fast.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Founder Summit ticket savings of up to $190 end June 26.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Join 1,000+ founders and VCs for all-day bootcamp.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Close Image Credits: Samuel Boivin/NurPhoto / Getty Images AI Asian AI startups launch Mythos-like models as Anthropic’s export ban drags on Kate Park 5:00 AM PDT · June 27, 2026 On Wednesday, Chinese cybersecurity firm 360 reportedly unveiled Tulongfeng, an AI tool it says can go head-to-head with Anthropic’s Mythos.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["New models are launching in Asia that promise Mythos-like capabilities without fear of an export ban. U.S. AI labs may never recover this enormous market.","–:–:–:– The first StrictlyVC of 2026 hits SF on April 30.","Tickets are going fast."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":["Close Image Credits: Samuel Boivin/NurPhoto / Getty Images AI Asian AI startups launch Mythos-like models as Anthropic’s export ban drags on Kate Park 5:00 AM PDT · June 27, 2026 On Wednesday, Chinese cybersecurity firm 360 reportedly unveiled Tulongfeng, an AI tool it says can go head-to-head with Anthropic’s Mythos."]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-080｜The companies most likely to automate your job are now funding a $1 billion program to retrain you
+
+- raw_ref: R-081
+- raw_original_id: https://the-decoder.com/?p=37063
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-081-the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-bil.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-081-the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-bil.json`
+- source: The Decoder AI News｜https://the-decoder.com/the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-billion-program-to-retrain-you/
+- source_url: https://the-decoder.com/the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-billion-program-to-retrain-you/
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 85
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: d518b324ba256ead
+- raw_full_text_hash: d518b324ba256ead
+- raw_semantic_hash: c6ba0d8664d0d6df
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d518b324ba256ead","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context, adoption_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 7
+- raw_capture_priority: 20
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"funding","text":"Former US Commerce Secretary Gina Raimondo has launched \"Raise Us,\" a bipartisan nonprofit to prepare American workers for AI-driven job shifts. Amazon, Anthropic, Microsoft, and the OpenAI Foundation are jointly funding the initiative. That the very companies driving the disruption are bankrolling the response will likely raise questions about independence. The article The companies most likely to automate your job are now funding a $1 billion program to retrain you appeared first on T","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Ad Skip to content The companies most likely to automate your job are now funding a $1 billion program to retrain you Tomislav Bezmalinović Jun 27, 2026 Nano Banana Pro prompted by THE DECODER Key Points Former US Commerce Secretary Gina Raimondo has founded a nonpartisan organization called \"Raise Us\" to prepare American workers for an AI-driven economy.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The goal: raise one billion dollars for retraining and continuing education programs.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Half that amount has already been secured.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Big tech is backing the effort.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"Amazon, Anthropic, Microsoft, and OpenAI are all supporters, which raises obvious questions about independence since these companies stand to gain the most from widespread AI adoption.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Former US Commerce Secretary Gina Raimondo has launched \"Raise Us,\" a bipartisan nonprofit to prepare American workers for AI-driven job shifts. Amazon, Anthropic, Microsoft, and the OpenAI Foundation are jointly funding the initiative. That the very companies driving the disruption are bankrolling the response will likely raise questions about independence. The article The companies most likely to automate your job are now funding a $1 billion program to retrain you appeared first on T","Ad Skip to content The companies most likely to automate your job are now funding a $1 billion program to retrain you Tomislav Bezmalinović Jun 27, 2026 Nano Banana Pro prompted by THE DECODER Key Points Former US Commerce Secretary Gina Raimondo has founded a nonpartisan organization called \"Raise Us\" to prepare American workers for an AI-driven economy.","The goal: raise one billion dollars for retraining and continuing education programs."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-081｜Business Case Story: From Pilot to Enterprise Rollout for AI Support - Cobbai Blog
+
+- raw_ref: R-105
+- raw_original_id: https://cobbai.com/blog/ai-support-business-case
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-105-business-case-story-from-pilot-to-enterprise-rollout-for-ai-support-co.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-105-business-case-story-from-pilot-to-enterprise-rollout-for-ai-support-co.json`
+- source: keyword search / Tavily｜https://cobbai.com/blog/ai-support-business-case
+- source_url: https://cobbai.com/blog/ai-support-business-case
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 80
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: d2f6f30335d105a8
+- raw_full_text_hash: d2f6f30335d105a8
+- raw_semantic_hash: 713a56e8b02b74d9
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d2f6f30335d105a8","missing":[]}
+- degradation_reasons: none
+- importance_type: important_case
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 6.4
+- raw_capture_priority: 19.4
+- usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"quote","text":"# Business Case Story: From Pilot to Enterprise Rollout for AI Support. Building a strong AI support business case matters because “AI for support” is no longer a vague innovation project—it’s an operational decision with real cost, risk, and customer impact. This article follows a practical journey from an initial pilot to an enterprise rollout, with a focus on objectives, early ROI signals, stakeholder buy-in, and scaling with governance. ## Introduction to Building an AI Support Business Case. ### Understanding ","supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"NOW LIVE Cobbai is a fully functionnal Heldpesk.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Switch from Zendesk, Salesforce, Intercom.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"case_detail","text":"Product Solutions Resources Pricing View demo Talk to sales en Product Solutions Resources Pricing View demo Talk to sales en Cobbai Blog Customer support AI & automation Customer engagement Research & trends Frequently asked questions Why is building a business case important before deploying AI in customer support?","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Building a business case ensures organizations clearly understand the benefits, costs, and risks of AI deployment.","supports":["daily_observation","heatmap"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"It aligns AI initiatives with business goals, helps quantify potential ROI, and secures stakeholder buy-in.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["NOW LIVE Cobbai is a fully functionnal Heldpesk.","It aligns AI initiatives with business goals, helps quantify potential ROI, and secures stakeholder buy-in."],"case_details":["Product Solutions Resources Pricing View demo Talk to sales en Product Solutions Resources Pricing View demo Talk to sales en Cobbai Blog Customer support AI & automation Customer engagement Research & trends Frequently asked questions Why is building a business case important before deploying AI in customer support?"],"workflow_changes":["Switch from Zendesk, Salesforce, Intercom."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["销售 / 客服"],"risks_or_constraints":["Building a business case ensures organizations clearly understand the benefits, costs, and risks of AI deployment."]}
+- missing_information: none
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-082｜22 AI workflow automation examples you have to try in 2026
+
+- raw_ref: R-107
+- raw_original_id: https://www.gumloop.com/blog/ai-workflow-automation-examples
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-107-22-ai-workflow-automation-examples-you-have-to-try-in-2026.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-107-22-ai-workflow-automation-examples-you-have-to-try-in-2026.json`
+- source: keyword search / Tavily｜https://www.gumloop.com/blog/ai-workflow-automation-examples
+- source_url: https://www.gumloop.com/blog/ai-workflow-automation-examples
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: case_or_customer
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 94
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 358ff5c09fd2df8d
+- raw_full_text_hash: 61d1bad3e927abfc
+- raw_semantic_hash: 834591b843be1592
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"61d1bad3e927abfc","missing":[]}
+- degradation_reasons: none
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 6.4
+- raw_capture_priority: 19.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"# 22 AI workflow automation examples you have to try in 2026. All because I've learned how to use AI to automate most of my workflows. And in this article, I want to show you some AI workflow automation examples that I (and others) personally use. By the end of this article, you'll have a ton of ideas on how to automate your own workflows with AI. But before I show you some examples of AI workflows, I want to go over how to think about using AI in your existing workflows. And if there's one thing I can tell anyone ","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"Everyone's talking about AI agents and automating workflows right now.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"If you asked me a year ago about workflow automation, I would have simply told you it's nothing new.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"And that it's just connecting tools together.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"But today, in 2026, AI has completely changed the way I work.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"I'm a solo founder running a marketing agency, media company, and somehow still finding time to experiment with side projects.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["And that it's just connecting tools together.","But today, in 2026, AI has completely changed the way I work.","I'm a solo founder running a marketing agency, media company, and somehow still finding time to experiment with side projects."],"case_details":[],"workflow_changes":["# 22 AI workflow automation examples you have to try in 2026. All because I've learned how to use AI to automate most of my workflows. And in this article, I want to show you some AI workflow automation examples that I (and others) personally use. By the end of this article, you'll have a ton of ideas on how to automate your own workflows with AI. But before I show you some examples of AI workflows, I want to go over how to think about using AI in your existing workflows. And if there's one thing I can tell anyone ","Everyone's talking about AI agents and automating workflows right now.","If you asked me a year ago about workflow automation, I would have simply told you it's nothing new."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-083｜Former Coatue Partner Raises $65M Seed for AI Agent Startup | The Tech Buzz
+
+- raw_ref: R-109
+- raw_original_id: https://techbuzz.ai/articles/former-coatue-partner-raises-65m-seed-for-ai-agent-startup
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-109-former-coatue-partner-raises-65m-seed-for-ai-agent-startup-the-tech-bu.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-109-former-coatue-partner-raises-65m-seed-for-ai-agent-startup-the-tech-bu.json`
+- source: keyword search / Tavily｜https://techbuzz.ai/articles/former-coatue-partner-raises-65m-seed-for-ai-agent-startup
+- source_url: https://techbuzz.ai/articles/former-coatue-partner-raises-65m-seed-for-ai-agent-startup
+- acquisition_channel: keyword-search
+- search_intent: find_startups
+- search_path: capital_startup
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-article
+- extraction_quality: high
+- extraction_method: article
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: e509c87230350ed2
+- raw_full_text_hash: e509c87230350ed2
+- raw_semantic_hash: c7accc73636d40a4
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e509c87230350ed2","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 6.4
+- raw_capture_priority: 19.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"funding","text":"Former Coatue Partner Raises $65M Seed for AI Agent Startup | The Tech Buzz. Former Coatue Partner Raises $65M Seed for AI Agent Startup. Ex-Coatue investor lands massive seed round for enterprise AI agent venture. A former partner at venture capital firm Coatue Management just closed one of the largest seed rounds of 2026 - a $65 million bet on enterprise AI agents that's turning heads across Silicon Valley. The unusually large seed funding signals growing investor confidence in AI automation tools that can handle","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"A former partner at venture capital firm Coatue Management just closed one of the largest seed rounds of 2026 - a $65 million bet on enterprise AI agents that's turning heads across Silicon Valley.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The unusually large seed funding signals growing investor confidence in AI automation tools that can handle complex business workflows, and reflects how founder pedigree from top-tier firms can command premium valuations right out of the gate.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"The venture capital world just witnessed another mega-seed round that would've been considered Series B money just two years ago.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"A former partner at Coatue Management , one of the most prominent tech-focused investment firms, has raised $65 million in seed funding for a new enterprise AI agent startup, according to a TechCrunch report .","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The company is building AI agents designed to automate complex enterprise workflows - think AI systems that can handle procurement, vendor management, or financial operations without human intervention.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
+- evidence_seed: {"company_actions":["Former Coatue Partner Raises $65M Seed for AI Agent Startup | The Tech Buzz. Former Coatue Partner Raises $65M Seed for AI Agent Startup. Ex-Coatue investor lands massive seed round for enterprise AI agent venture. A former partner at venture capital firm Coatue Management just closed one of the largest seed rounds of 2026 - a $65 million bet on enterprise AI agents that's turning heads across Silicon Valley. The unusually large seed funding signals growing investor confidence in AI automation tools that can handle","A former partner at venture capital firm Coatue Management just closed one of the largest seed rounds of 2026 - a $65 million bet on enterprise AI agents that's turning heads across Silicon Valley.","The unusually large seed funding signals growing investor confidence in AI automation tools that can handle complex business workflows, and reflects how founder pedigree from top-tier firms can command premium valuations right out of the gate."],"case_details":[],"workflow_changes":["The company is building AI agents designed to automate complex enterprise workflows - think AI systems that can handle procurement, vendor management, or financial operations without human intervention."],"before_after_clues":["可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","采购负责人"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-084｜OpenAI Release Notes - June 2026 Latest Updates - Releasebot
+
+- raw_ref: R-118
+- raw_original_id: https://releasebot.io/updates/openai
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-118-openai-release-notes-june-2026-latest-updates-releasebot.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-118-openai-release-notes-june-2026-latest-updates-releasebot.json`
+- source: keyword search / Tavily｜https://releasebot.io/updates/openai
+- source_url: https://releasebot.io/updates/openai
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: changelog_or_release
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 97
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 4dddbf3d3feadf9c
+- raw_full_text_hash: 35c23e1ed19749a3
+- raw_semantic_hash: b62213e6bf16643f
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"35c23e1ed19749a3","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 6.4
+- raw_capture_priority: 19.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"number","text":"![Image 3: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F11391654-chatgpt-business-release-notes). ![Image 5: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F10128477-chatgpt-enterprise-edu-release-notes). ChatGPT Enterprise/EDU adds an updated model picker on web, iOS, and Android, making it easier to choose speed and reasoning effort with clearer access controls and r","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"OpenAI Release Notes Follow Follow OpenAI to add their release notes to your feed!","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"800 release notes curated from 186 sources by the Releasebot Team.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Last updated: Jun 27, 2026 Get this feed: RSS Email CLI MCP API Slack n8n OpenAI Products ChatGPT 185 release notes ChatGPT Atlas 37 release notes ChatGPT Business 68 release notes ChatGPT Enterprise/EDU 138 release notes Chatgpt MacOS App 8 release notes ChatGPT Windows App 4 release notes Codex 191 release notes OpenAI Models 47 release notes Jun 27, 2026 Date parsed from source: Jun 27, 2026 First seen by Releasebot: Jun 27, 2026 Codex by OpenAI 0.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"3 Codex ships a maintenance-only patch with no user-facing changes since 0.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Chores Maintenance-only patch release with no user-facing changes since 0.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["OpenAI Release Notes Follow Follow OpenAI to add their release notes to your feed!","800 release notes curated from 186 sources by the Releasebot Team.","Last updated: Jun 27, 2026 Get this feed: RSS Email CLI MCP API Slack n8n OpenAI Products ChatGPT 185 release notes ChatGPT Atlas 37 release notes ChatGPT Business 68 release notes ChatGPT Enterprise/EDU 138 release notes Chatgpt MacOS App 8 release notes ChatGPT Windows App 4 release notes Codex 191 release notes OpenAI Models 47 release notes Jun 27, 2026 Date parsed from source: Jun 27, 2026 First seen by Releasebot: Jun 27, 2026 Codex by OpenAI 0."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-085｜AI Agent Healthcare Tools (May 2026)
+
+- raw_ref: R-123
+- raw_original_id: https://www.getprosper.ai/blog/ai-agent-healthcare-tools
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-123-ai-agent-healthcare-tools-may-2026.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-123-ai-agent-healthcare-tools-may-2026.json`
+- source: keyword search / Tavily｜https://www.getprosper.ai/blog/ai-agent-healthcare-tools
+- source_url: https://www.getprosper.ai/blog/ai-agent-healthcare-tools
+- acquisition_channel: keyword-search
+- search_intent: find_workflow_change
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 88
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: 706d850a966f7eaf
+- raw_full_text_hash: ccb822372207cd2e
+- raw_semantic_hash: 59aed7ecdd4dc9e2
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ccb822372207cd2e","missing":[]}
+- degradation_reasons: none
+- importance_type: important_funding
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 6.4
+- raw_capture_priority: 19.4
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"## AI Agent Healthcare Tools (May 2026). Healthcare AI agents automate phone-heavy workflows like scheduling, benefits verification, prior authorization, and claims follow-up. The best tool depends on which workflow you need to finish, not which model sounds most impressive. Prosper AI leads for organizations where the phone is still the bottleneck across both patient access and RCM. ## Why Healthcare AI Agents Are Taking Off Right Now. Healthcare runs on phone calls, and the math is brutal. This is why AI agents i","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"TL;DR Healthcare AI agents automate phone-heavy workflows like scheduling, benefits verification, prior authorization, and claims follow-up.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The best tool depends on which workflow you need to finish, not which model sounds most impressive.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Prosper AI leads for organizations where the phone is still the bottleneck across both patient access and RCM.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"This guide compares 10 vendors by workflow fit, pricing, HIPAA readiness, and real user evidence.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Why Healthcare AI Agents Are Taking Off Right Now Healthcare runs on phone calls, and the math is brutal.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Prosper AI leads for organizations where the phone is still the bottleneck across both patient access and RCM.","Why Healthcare AI Agents Are Taking Off Right Now Healthcare runs on phone calls, and the math is brutal."],"case_details":[],"workflow_changes":["## AI Agent Healthcare Tools (May 2026). Healthcare AI agents automate phone-heavy workflows like scheduling, benefits verification, prior authorization, and claims follow-up. The best tool depends on which workflow you need to finish, not which model sounds most impressive. Prosper AI leads for organizations where the phone is still the bottleneck across both patient access and RCM. ## Why Healthcare AI Agents Are Taking Off Right Now. Healthcare runs on phone calls, and the math is brutal. This is why AI agents i","TL;DR Healthcare AI agents automate phone-heavy workflows like scheduling, benefits verification, prior authorization, and claims follow-up.","The best tool depends on which workflow you need to finish, not which model sounds most impressive."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","销售 / 客服"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-086｜Suno launches Spark incubator program to feed independent artists to its AI machine
+
+- raw_ref: R-126
+- raw_original_id: https://www.theverge.com/?p=958801
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-126-suno-launches-spark-incubator-program-to-feed-independent-artists-to-i.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-126-suno-launches-spark-incubator-program-to-feed-independent-artists-to-i.json`
+- source: The Verge AI｜https://www.theverge.com/ai-artificial-intelligence/958801/suno-launches-spark-incubator-program-to-feed-independent-artists-to-its-ai-machine
+- source_url: https://www.theverge.com/ai-artificial-intelligence/958801/suno-launches-spark-incubator-program-to-feed-independent-artists-to-its-ai-machine
+- acquisition_channel: rss-feed
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: media
+- source_level: A
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: regulatory_or_procurement
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-main
+- extraction_quality: high
+- extraction_method: main
+- readability_score: 92
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool, emerging_pool
+- raw_content_hash: 32ce927e2362c570
+- raw_full_text_hash: 32ce927e2362c570
+- raw_semantic_hash: 65d491433fe1bfa0
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"32ce927e2362c570","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: commercial_or_risk_context
+- theme: uncategorized
+- keyword_group: uncategorized
+- score: 5.6
+- raw_capture_priority: 18.6
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
+- key_excerpts: [{"type":"workflow_change","text":"Suno has ambitions to be more than just a toy to churn out AI slop, it also wants to be a streaming destination and to break new artists. Spark is their new incubator program for independent artists that provides grants, mentorship, and marketing support. To apply, artists need to be an unsigned singer, songwriter, or [&#8230;]","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"AI Entertainment News Suno launches Spark incubator program to feed independent artists to its AI machine Just don’t say anything mean about them, or they’ll give you the boot.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Just don’t say anything mean about them, or they’ll give you the boot.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"by Terrence O'Brien Jun 28, 2026, 8:27 PM UTC Cath Virginia / The Verge Terrence O'Brien is the Verge’s weekend editor.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"He’s covered the tech industry for over 18 years and knows a thing or two about synths.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Suno has ambitions to be more than just a toy to churn out AI slop, it also wants to be a streaming destination and to break new artists.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["AI Entertainment News Suno launches Spark incubator program to feed independent artists to its AI machine Just don’t say anything mean about them, or they’ll give you the boot.","Just don’t say anything mean about them, or they’ll give you the boot.","by Terrence O'Brien Jun 28, 2026, 8:27 PM UTC Cath Virginia / The Verge Terrence O'Brien is the Verge’s weekend editor."],"case_details":[],"workflow_changes":["Suno has ambitions to be more than just a toy to churn out AI slop, it also wants to be a streaming destination and to break new artists. Spark is their new incubator program for independent artists that provides grants, mentorship, and marketing support. To apply, artists need to be an unsigned singer, songwriter, or [&#8230;]"],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例；没有变化前后流程线索
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-087｜How Building AI Agents Has Changed in 2026 | Pulumi Blog
+
+- raw_ref: R-133
+- raw_original_id: https://www.pulumi.com/blog/how-building-ai-agents-has-changed
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-133-how-building-ai-agents-has-changed-in-2026-pulumi-blog.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-133-how-building-ai-agents-has-changed-in-2026-pulumi-blog.json`
+- source: keyword search / Tavily｜https://www.pulumi.com/blog/how-building-ai-agents-has-changed
+- source_url: https://www.pulumi.com/blog/how-building-ai-agents-has-changed
+- acquisition_channel: keyword-search
+- search_intent: find_original_source
+- search_path: official_original
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow
+- raw_qc_downstream_use: eligible_after_qc
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: fetched-readable-text-content-container
+- extraction_quality: high
+- extraction_method: content-container
+- readability_score: 91
+- has_full_text: true
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- evidence_level: core_evidence_candidate
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: core_pool
+- raw_content_hash: a8783f4450575664
+- raw_full_text_hash: a8783f4450575664
+- raw_semantic_hash: 1cb99afbf8725d2d
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a8783f4450575664","missing":[]}
+- degradation_reasons: none
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context
+- theme: targeted-pool-gap-refill
+- keyword_group: targeted-pool-gap-refill
+- score: 4.999999999999999
+- raw_capture_priority: 18
+- usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
+- key_excerpts: [{"type":"company_action","text":"Twelve months ago, building an AI agent meant picking a framework, defining your tools, standing up a RAG pipeline, and writing a stack of glue code to wire it all together. That was the default playbook. The post-mortem on six months of work usually went the same way: half the time went into infrastructure that had nothing to do with the agent’s actual job. That isn’t where the work is anymore. The SDKs ship with the tools, the skills system replaced the upfront tool registry, and longer context windows pushed vec","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to main content Copy logo SVG Download mark Get other variants Read brand guide How Building AI Agents Has Changed in 2026 Engin Diri Posted on May 14th, 2026 Twelve months ago, building an AI agent meant picking a framework, defining your tools, standing up a RAG pipeline, and writing a stack of glue code to wire it all together.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"That was the default playbook.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The post-mortem on six months of work usually went the same way: half the time went into infrastructure that had nothing to do with the agent&rsquo;s actual job.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"That isn&rsquo;t where the work is anymore.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Most of the middle layer is gone.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"}]
+- evidence_seed: {"company_actions":["Twelve months ago, building an AI agent meant picking a framework, defining your tools, standing up a RAG pipeline, and writing a stack of glue code to wire it all together. That was the default playbook. The post-mortem on six months of work usually went the same way: half the time went into infrastructure that had nothing to do with the agent’s actual job. That isn’t where the work is anymore. The SDKs ship with the tools, the skills system replaced the upfront tool registry, and longer context windows pushed vec","Skip to main content Copy logo SVG Download mark Get other variants Read brand guide How Building AI Agents Has Changed in 2026 Engin Diri Posted on May 14th, 2026 Twelve months ago, building an AI agent meant picking a framework, defining your tools, standing up a RAG pipeline, and writing a stack of glue code to wire it all together.","That was the default playbook."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有具体客户或真实企业案例
+- 入池理由：全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-088｜Open-Source Workflow AI for Local Execution - LinkedIn
+
+- raw_ref: R-166
+- raw_original_id: https://www.linkedin.com/posts/torontowebdesign_kai-oscarnice-9b-hugging-face-activity-7446376760709115904-BM7N
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-166-open-source-workflow-ai-for-local-execution-linkedin.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-166-open-source-workflow-ai-for-local-execution-linkedin.json`
+- source: keyword search / Anysearch｜https://www.linkedin.com/posts/torontowebdesign_kai-oscarnice-9b-hugging-face-activity-7446376760709115904-BM7N
+- source_url: https://www.linkedin.com/posts/torontowebdesign_kai-oscarnice-9b-hugging-face-activity-7446376760709115904-BM7N
+- acquisition_channel: keyword-search
+- search_intent: find_customer_case
+- search_path: developer_ecosystem
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: event
+- evidence_object_usable: true
+- event_evidence: true
+- index_only_evidence: false
+- raw_qc_decision: allow_with_degradation
+- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: http-451-fallback-text
+- extraction_quality: low
+- extraction_method: empty
+- readability_score: 0
+- has_full_text: true
+- source_volatility: high
+- community_name: keyword search / Anysearch
+- capture_scope: article_text
+- evidence_level: community_signal
+- source_role: discovery_source
+- origin_fetch_status: not_applicable
+- raw_status: pooled
+- pool_routes: watchlist
+- raw_content_hash: 67c4d85b223fb63a
+- raw_full_text_hash: 67c4d85b223fb63a
+- raw_semantic_hash: 5d3640c06284f40c
+- evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"67c4d85b223fb63a","missing":[]}
+- degradation_reasons: insufficient_usable_evidence_object
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: enterprise_ai_transformation_lens, adoption_context
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 6.999999999999999
+- raw_capture_priority: 11
+- usable_for: heatmap, watchlist
+- key_excerpts: [{"type":"case_detail","text":"If you are looking for an open-source agentic workflow AI that can run requests off your OWN computer. AI Solutions Architect | Aligning People ... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"If you are looking for an open-source agentic workflow AI that can run requests off your OWN computer.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"AI Solutions Architect | Aligning People .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"case_detail","text":"/ query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["AI Solutions Architect | Aligning People ."],"case_details":["If you are looking for an open-source agentic workflow AI that can run requests off your OWN computer. AI Solutions Architect | Aligning People ... / query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem","/ query=Applied AI architect enterprise customer workflow / intent=find_customer_case / path=developer_ecosystem"],"workflow_changes":["If you are looking for an open-source agentic workflow AI that can run requests off your OWN computer."],"before_after_clues":[],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+- missing_information: 没有变化前后流程线索；没有成本、收入、采用率或市场规模数字
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-089｜Artifacts 22：Zyphra、Cohere 和 Poolside 正在扩展生态系统广度
+
+- raw_ref: R-204
+- raw_original_id: daily-7
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-204-artifacts-22-zyphra-cohere-和-poolside-正在扩展生态系统广度.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-204-artifacts-22-zyphra-cohere-和-poolside-正在扩展生态系统广度.json`
+- source: Nathan Lambert：Interconnects（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: b856b424dc9f906d
+- raw_full_text_hash: b856b424dc9f906d
+- raw_semantic_hash: e32fc4ddf1e25466
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b856b424dc9f906d","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 5
+- supporting_signals: adoption_context
+- theme: 早期信号
+- keyword_group: early-direction-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"case_detail","text":"开源模型生态正变得更多元，参与者从少数中国公司扩展到全球各类组织。纯模型制造商包括 DeepSeek、智谱、MiniMax、Poolside、Arcee、Zyphra 及主权 AI 玩家 Cohere、Sovereign、Mistral、Trillion Labs；科技巨头如阿里 Qwen、Google Gemma 和 NVIDIA 各有不同动机；产品公司如 JetBrains、Zed、Krea、Photoroom 则训练高度专业的小模型。NVIDIA 发布 Nemotron-3-Ultra-550B-A55B-BF16，采用 LatentMoE 架构并改用 OpenMDW 许可证。Cohere 以 Apache 2.0 开源其旗舰…","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"开源模型生态正变得更多元，参与者从少数中国公司扩展到全球各类组织。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"纯模型制造商包括 DeepSeek、智谱、MiniMax、Poolside、Arcee、Zyphra 及主权 AI 玩家 Cohere、Sovereign、Mistral、Trillion Labs；科技巨头如阿里 Qwen、Google Gemma 和 NVIDIA 各有不同动机；产品公司如 JetBrains、Zed、Krea、Photoroom 则训练高度专业的小模型。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"NVIDIA 发布 Nemotron-3-Ultra-550B-A55B-BF16，采用 LatentMoE 架构并改用 OpenMDW 许可证。","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Cohere 以 Apache 2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["开源模型生态正变得更多元，参与者从少数中国公司扩展到全球各类组织。","纯模型制造商包括 DeepSeek、智谱、MiniMax、Poolside、Arcee、Zyphra 及主权 AI 玩家 Cohere、Sovereign、Mistral、Trillion Labs；科技巨头如阿里 Qwen、Google Gemma 和 NVIDIA 各有不同动机；产品公司如 JetBrains、Zed、Krea、Photoroom 则训练高度专业的小模型。","Cohere 以 Apache 2."],"case_details":["开源模型生态正变得更多元，参与者从少数中国公司扩展到全球各类组织。纯模型制造商包括 DeepSeek、智谱、MiniMax、Poolside、Arcee、Zyphra 及主权 AI 玩家 Cohere、Sovereign、Mistral、Trillion Labs；科技巨头如阿里 Qwen、Google Gemma 和 NVIDIA 各有不同动机；产品公司如 JetBrains、Zed、Krea、Photoroom 则训练高度专业的小模型。NVIDIA 发布 Nemotron-3-Ultra-550B-A55B-BF16，采用 LatentMoE 架构并改用 OpenMDW 许可证。Cohere 以 Apache 2.0 开源其旗舰…","NVIDIA 发布 Nemotron-3-Ultra-550B-A55B-BF16，采用 LatentMoE 架构并改用 OpenMDW 许可证。"],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-090｜Wayfinder Router：在本地和托管的大语言模型之间进行确定性查询路由
+
+- raw_ref: R-205
+- raw_original_id: daily-3
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-205-wayfinder-router-在本地和托管的大语言模型之间进行确定性查询路由.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-205-wayfinder-router-在本地和托管的大语言模型之间进行确定性查询路由.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 67d14698baeaec5e
+- raw_full_text_hash: 67d14698baeaec5e
+- raw_semantic_hash: 166fc2f36d5dc4d6
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"67d14698baeaec5e","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 5
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 10.1
+- raw_capture_priority: 1.0999999999999996
+- usable_for: index_only
+- key_excerpts: [{"type":"opinion","text":"Wayfinder Router 通过分析提示词的结构（长度、标题、列表、代码）和措辞（证明、数学、硬约束），在微秒级完成路由决策，完全离线且无需调用其他模型。默认仅使用结构特征，词汇线索因盲测未泛化而默认为关闭。对比依赖模型调用的路由器（如 RouteLLM、NotDiamond），它避免了延迟、成本和随机性。用户可在自有数据上校准评分阈值。支持任何 OpenAI 兼容 API（含 Ollama、Anthropic、Groq、vLLM 等），可自托管。提供终端和网页演示（--dry-run 无需密钥），以及基准测试和 FAQ。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Wayfinder Router 通过分析提示词的结构（长度、标题、列表、代码）和措辞（证明、数学、硬约束），在微秒级完成路由决策，完全离线且无需调用其他模型。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"默认仅使用结构特征，词汇线索因盲测未泛化而默认为关闭。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"对比依赖模型调用的路由器（如 RouteLLM、NotDiamond），它避免了延迟、成本和随机性。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"支持任何 OpenAI 兼容 API（含 Ollama、Anthropic、Groq、vLLM 等），可自托管。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"提供终端和网页演示（--dry-run 无需密钥），以及基准测试和 FAQ。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Wayfinder Router 通过分析提示词的结构（长度、标题、列表、代码）和措辞（证明、数学、硬约束），在微秒级完成路由决策，完全离线且无需调用其他模型。","对比依赖模型调用的路由器（如 RouteLLM、NotDiamond），它避免了延迟、成本和随机性。","支持任何 OpenAI 兼容 API（含 Ollama、Anthropic、Groq、vLLM 等），可自托管。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有成本、收入、采用率或市场规模数字；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。
+
+## P-091｜Grok 4.5 私测于 SpaceX 和 Tesla，性能接近 Opus
+
+- raw_ref: R-219
+- raw_original_id: daily-1
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-219-grok-4-5-私测于-spacex-和-tesla-性能接近-opus.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-219-grok-4-5-私测于-spacex-和-tesla-性能接近-opus.json`
+- source: X：Elon Musk (@elonmusk, xAI)｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: a13ee7297a902ce6
+- raw_full_text_hash: a13ee7297a902ce6
+- raw_semantic_hash: be586cfb01a299c4
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a13ee7297a902ce6","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"product_update","text":"Grok 4.5，基于我们的1.5T V9基础模型，并在补充训练中加入Cursor数据，现已在SpaceX和Tesla进入私测。初步评估显示其性能接近，或许超越Opus。 强化学习仍在持续显著改进模型，Grok Build工具链也在日益完善。 所有参与者的出色工作！ 今年，@SpaceX 将每月发布完全从头训练的新模型。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"5T V9基础模型，并在补充训练中加入Cursor数据，现已在SpaceX和Tesla进入私测。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"初步评估显示其性能接近，或许超越Opus。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"强化学习仍在持续显著改进模型，Grok Build工具链也在日益完善。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"今年，@SpaceX 将每月发布完全从头训练的新模型。","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Grok 4.5，基于我们的1.5T V9基础模型，并在补充训练中加入Cursor数据，现已在SpaceX和Tesla进入私测。初步评估显示其性能接近，或许超越Opus。 强化学习仍在持续显著改进模型，Grok Build工具链也在日益完善。 所有参与者的出色工作！ 今年，@SpaceX 将每月发布完全从头训练的新模型。","5T V9基础模型，并在补充训练中加入Cursor数据，现已在SpaceX和Tesla进入私测。","初步评估显示其性能接近，或许超越Opus。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-092｜仅有三个AI模型在500天创业测试中盈利超过起始资本
+
+- raw_ref: R-220
+- raw_original_id: daily-5
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-220-仅有三个ai模型在500天创业测试中盈利超过起始资本.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-220-仅有三个ai模型在500天创业测试中盈利超过起始资本.json`
+- source: The Decoder：AI News（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: c2f0179adb2ed259
+- raw_full_text_hash: c2f0179adb2ed259
+- raw_semantic_hash: c301748089fdf4d0
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c2f0179adb2ed259","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: commercial_or_risk_context
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"普林斯顿大学推出CEO-Bench基准测试，让AI智能体在模拟环境中运营订阅软件公司NovaMind 500天，起始资金100万美元。14个测试模型中，仅Claude Fable 5（最佳轮次盈利4715万美元）、Claude Opus 4.8（2780万美元）和GPT-5.5（2130万美元）在最佳运行中超过起始资本。一个不调用语言模型的简单规则启发式方法通过固定定价、配额和针对性开发达到1576万美元，超越除上述三款外的所有模型。多数模型无法保持连贯策略，在模拟结束前破产。该测试旨在衡量AI的长期战略决策能力。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"普林斯顿大学推出CEO-Bench基准测试，让AI智能体在模拟环境中运营订阅软件公司NovaMind 500天，起始资金100万美元。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"14个测试模型中，仅Claude Fable 5（最佳轮次盈利4715万美元）、Claude Opus 4.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"5（2130万美元）在最佳运行中超过起始资本。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"一个不调用语言模型的简单规则启发式方法通过固定定价、配额和针对性开发达到1576万美元，超越除上述三款外的所有模型。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"多数模型无法保持连贯策略，在模拟结束前破产。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["多数模型无法保持连贯策略，在模拟结束前破产。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-093｜新浪开源VibeThinker-3B：推理可压缩，事实知识不能
+
+- raw_ref: R-221
+- raw_original_id: daily-2
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-221-新浪开源vibethinker-3b-推理可压缩-事实知识不能.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-221-新浪开源vibethinker-3b-推理可压缩-事实知识不能.json`
+- source: The Decoder：AI News（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: 1b30c2fba777f961
+- raw_full_text_hash: 1b30c2fba777f961
+- raw_semantic_hash: 3715a10e08c07884
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1b30c2fba777f961","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_product_or_service
+- importance_score: 4
+- supporting_signals: none
+- theme: 开发者生态信号
+- keyword_group: developer-ecosystem-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"新浪发布仅3B参数的VibeThinker-3B，在AIME26等数学编程基准上持平DeepSeek V3.2等大200–333倍的模型，LiveCodeBench超越所有20B以下模型，LeetCode竞赛解决123/128题超过GPT-5.2、Kimi K2.5等。但知识密集型GPQA-Diamond大幅落后。模型基于阿里Qwen2.5-Coder-3B，经SFT、强化学习、自蒸馏等多阶段后训练。研究提出“参数压缩-覆盖假说”：逻辑推理依赖少数可压缩模式，而广泛世界知识仍需大参数。模型已开源。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"新浪发布仅3B参数的VibeThinker-3B，在AIME26等数学编程基准上持平DeepSeek V3.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"number","text":"2等大200–333倍的模型，LiveCodeBench超越所有20B以下模型，LeetCode竞赛解决123/128题超过GPT-5.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"但知识密集型GPQA-Diamond大幅落后。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"5-Coder-3B，经SFT、强化学习、自蒸馏等多阶段后训练。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"quote","text":"研究提出“参数压缩-覆盖假说”：逻辑推理依赖少数可压缩模式，而广泛世界知识仍需大参数。","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["新浪发布仅3B参数的VibeThinker-3B，在AIME26等数学编程基准上持平DeepSeek V3.","但知识密集型GPQA-Diamond大幅落后。","5-Coder-3B，经SFT、强化学习、自蒸馏等多阶段后训练。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-094｜四大顶级AI对决《文明VI》：Claude核平法国仍输，暴露感知与执行短板
+
+- raw_ref: R-222
+- raw_original_id: daily-6
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-222-四大顶级ai对决-文明vi-claude核平法国仍输-暴露感知与执行短板.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-222-四大顶级ai对决-文明vi-claude核平法国仍输-暴露感知与执行短板.json`
+- source: IT之家（RSS）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: ac63cfe355779e7b
+- raw_full_text_hash: ac63cfe355779e7b
+- raw_semantic_hash: 40443cc0e3095c7a
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ac63cfe355779e7b","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: important_technical_trend
+- importance_score: 4
+- supporting_signals: none
+- theme: 技术迭代信号
+- keyword_group: technical-iteration-signal
+- score: 8.7
+- raw_capture_priority: -0.3000000000000007
+- usable_for: index_only
+- key_excerpts: [{"type":"number","text":"英国前首相府数据科学家Liam Wilkinson搭建76个MCP工具，将Claude Opus 4.6、GPT-5.4、Gemini 3.1 Pro等四个模型放入《文明VI》进行23场对局。Claude扮演葡萄牙时，因法国文化胜利逼近，花50回合研发核弹核平图卢兹，但法国最终以外交胜利获胜。Wilkinson发现：AI主动检查全局状态仅占1-2%（感知盲区），计划后10回合内执行率仅48-66%（知行差距）。结论是智商非瓶颈，感知与执行才是关键。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"英国前首相府数据科学家Liam Wilkinson搭建76个MCP工具，将Claude Opus 4.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"1 Pro等四个模型放入《文明VI》进行23场对局。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Claude扮演葡萄牙时，因法国文化胜利逼近，花50回合研发核弹核平图卢兹，但法国最终以外交胜利获胜。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"Wilkinson发现：AI主动检查全局状态仅占1-2%（感知盲区），计划后10回合内执行率仅48-66%（知行差距）。","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"结论是智商非瓶颈，感知与执行才是关键。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
+- evidence_seed: {"company_actions":["英国前首相府数据科学家Liam Wilkinson搭建76个MCP工具，将Claude Opus 4.","1 Pro等四个模型放入《文明VI》进行23场对局。","Claude扮演葡萄牙时，因法国文化胜利逼近，花50回合研发核弹核平图卢兹，但法国最终以外交胜利获胜。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：仍需打开原始 URL，确认是否存在客户、产品、融资、技术路线或数据来源。
+
+## P-095｜阿德拉菲尼尔：仅在AI agent工作时阻止Mac睡眠的菜单栏工具
+
+- raw_ref: R-230
+- raw_original_id: daily-4
+- raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-29/r-230-阿德拉菲尼尔-仅在ai-agent工作时阻止mac睡眠的菜单栏工具.md`
+- raw_json: `01-SiteV2/content/01-raw/originals/2026-06-29/r-230-阿德拉菲尼尔-仅在ai-agent工作时阻止mac睡眠的菜单栏工具.json`
+- source: Hacker News 热门（buzzing.cc 中文翻译）｜no-url
+- source_url: no-url
+- acquisition_channel: aihot
+- search_intent: not_applicable
+- search_path: not_applicable
+- source_type: web
+- source_level: B
+- source_level_role: traceability_only_not_value_score_or_core_gate
+- evidence_object_type: official_index_or_directory
+- evidence_object_usable: false
+- event_evidence: false
+- index_only_evidence: true
+- raw_qc_decision: block
+- raw_qc_downstream_use: not_allowed
+- acquisition_source_level: M
+- research_status: not_research
+- local_snapshot_status: no-url-summary-only
+- extraction_quality: failed
+- extraction_method: no_url_summary_fallback
+- readability_score: 0
+- has_full_text: false
+- source_volatility: high
+- community_name: Hacker News 热门（buzzing.cc 中文翻译）
+- capture_scope: summary_only
+- evidence_level: discovery_only
+- source_role: discovery_source
+- origin_fetch_status: summary_only
+- raw_status: ignored
+- pool_routes: index_only
+- raw_content_hash: e8994a4b87410913
+- raw_full_text_hash: e8994a4b87410913
+- raw_semantic_hash: 80768fc095a748a8
+- evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e8994a4b87410913","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
+- degradation_reasons: index_only_or_directory_page；missing_full_text；missing_snapshot
+- importance_type: none
+- importance_score: 1
+- supporting_signals: none
+- theme: 成熟信号
+- keyword_group: mature-commercial-signal
+- score: 4.5
+- raw_capture_priority: -4.5
+- usable_for: index_only
+- key_excerpts: [{"type":"company_action","text":"Adrafinil 是一款 macOS 菜单栏应用，仅在 Claude Code、Codex、Cursor、Gemini CLI、Aider、Hermes、OpenCode、Cline、Pi 等 9 种 AI coding agent 持有活跃会话时阻止系统睡眠（包括合盖睡眠）。无 agent 工作时，合盖后 Mac 正常睡眠。它通过各 agent 的钩子系统调用 CLI，往返延迟低于 50ms，支持引用计数断言、热切出（温度阈值强制释放）、空闲释放及进程嗅探。需要 macOS Tahoe 26.4，Xcode 26+ 构建，以签名公证的磁盘映像提供。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Adrafinil 是一款 macOS 菜单栏应用，仅在 Claude Code、Codex、Cursor、Gemini CLI、Aider、Hermes、OpenCode、Cline、Pi 等 9 种 AI coding agent 持有活跃会话时阻止系统睡眠（包括合盖睡眠）。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"无 agent 工作时，合盖后 Mac 正常睡眠。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"它通过各 agent 的钩子系统调用 CLI，往返延迟低于 50ms，支持引用计数断言、热切出（温度阈值强制释放）、空闲释放及进程嗅探。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"需要 macOS Tahoe 26.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"4，Xcode 26+ 构建，以签名公证的磁盘映像提供。","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
+- evidence_seed: {"company_actions":["Adrafinil 是一款 macOS 菜单栏应用，仅在 Claude Code、Codex、Cursor、Gemini CLI、Aider、Hermes、OpenCode、Cline、Pi 等 9 种 AI coding agent 持有活跃会话时阻止系统睡眠（包括合盖睡眠）。无 agent 工作时，合盖后 Mac 正常睡眠。它通过各 agent 的钩子系统调用 CLI，往返延迟低于 50ms，支持引用计数断言、热切出（温度阈值强制释放）、空闲释放及进程嗅探。需要 macOS Tahoe 26.4，Xcode 26+ 构建，以签名公证的磁盘映像提供。","Adrafinil 是一款 macOS 菜单栏应用，仅在 Claude Code、Codex、Cursor、Gemini CLI、Aider、Hermes、OpenCode、Cline、Pi 等 9 种 AI coding agent 持有活跃会话时阻止系统睡眠（包括合盖睡眠）。","无 agent 工作时，合盖后 Mac 正常睡眠。"],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- missing_information: 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象；没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势；疑似官网首页、产品目录或导航页，只能索引留存；没有具体客户或真实企业案例；没有变化前后流程线索；没有可用全文快照
+- 入池理由：具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。
+- 淘汰风险：当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。

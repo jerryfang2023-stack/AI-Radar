@@ -1,0 +1,720 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-118
+title: "OpenAI Release Notes - June 2026 Latest Updates - Releasebot"
+original_url: "https://releasebot.io/updates/openai"
+canonical_url: "https://releasebot.io/updates/openai"
+source_name: "keyword search / Tavily"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: changelog_or_release
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "official_original"
+search_path_label: "官方原始路径"
+author: ""
+published_at: ""
+collected_at: 2026-06-29T05:24:29.268Z
+language: mixed
+full_text_hash: 35c23e1ed19749a3
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-118-openai-release-notes-june-2026-latest-updates-releasebot.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-118-openai-release-notes-june-2026-latest-updates-releasebot.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":36015,"paragraph_count":196,"sentence_count":247,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 36015
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"35c23e1ed19749a3","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 15dda31e49f093f9
+content_hash: 4dddbf3d3feadf9c
+semantic_hash: b62213e6bf16643f
+duplicate_of: ""
+first_seen_at: "2026-06-29T05:24:29.268Z"
+last_seen_at: 2026-06-29T05:24:29.268Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"change":true,"trend":true,"daily_observation":true,"heatmap":true,"briefing":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["keyword search","Tavily","OpenAI","Anthropic","Google","Cursor","Perplexity"],"products":["chatgpt","ChatGPT","GPT-5","Codex","agent","MCP","Chatgpt","agents","GPT-4","Cursor"],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["2026","3","471","2","11391654","5","10128477","6"],"quotes":[]}
+evidence_seed: {"company_actions":["OpenAI Release Notes Follow Follow OpenAI to add their release notes to your feed!","800 release notes curated from 186 sources by the Releasebot Team.","Last updated: Jun 27, 2026 Get this feed: RSS Email CLI MCP API Slack n8n OpenAI Products ChatGPT 185 release notes ChatGPT Atlas 37 release notes ChatGPT Business 68 release notes ChatGPT Enterprise/EDU 138 release notes Chatgpt MacOS App 8 release notes ChatGPT Windows App 4 release notes Codex 191 release notes OpenAI Models 47 release notes Jun 27, 2026 Date parsed from source: Jun 27, 2026 First seen by Releasebot: Jun 27, 2026 Codex by OpenAI 0."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"number","text":"![Image 3: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F11391654-chatgpt-business-release-notes). ![Image 5: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F10128477-chatgpt-enterprise-edu-release-notes). ChatGPT Enterprise/EDU adds an updated model picker on web, iOS, and Android, making it easier to choose speed and reasoning effort with clearer access controls and r","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"OpenAI Release Notes Follow Follow OpenAI to add their release notes to your feed!","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"800 release notes curated from 186 sources by the Releasebot Team.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Last updated: Jun 27, 2026 Get this feed: RSS Email CLI MCP API Slack n8n OpenAI Products ChatGPT 185 release notes ChatGPT Atlas 37 release notes ChatGPT Business 68 release notes ChatGPT Enterprise/EDU 138 release notes Chatgpt MacOS App 8 release notes ChatGPT Windows App 4 release notes Codex 191 release notes OpenAI Models 47 release notes Jun 27, 2026 Date parsed from source: Jun 27, 2026 First seen by Releasebot: Jun 27, 2026 Codex by OpenAI 0.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"3 Codex ships a maintenance-only patch with no user-facing changes since 0.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"high"},{"type":"product_update","text":"Chores Maintenance-only patch release with no user-facing changes since 0.","supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"high"}]
+theme: targeted-pool-gap-refill
+keyword_group: targeted-pool-gap-refill
+copyright_note: local research archive only
+---
+
+# OpenAI Release Notes - June 2026 Latest Updates - Releasebot
+
+## clean_text
+
+OpenAI Release Notes
+Follow
+Follow OpenAI to add their release notes to your feed!
+800 release notes
+curated from 186 sources by the Releasebot Team. Last updated: Jun 27, 2026
+Get this feed: RSS Email CLI MCP API Slack n8n
+OpenAI Products
+ChatGPT
+185 release notes
+ChatGPT Atlas
+37 release notes
+ChatGPT Business
+68 release notes
+ChatGPT Enterprise/EDU
+138 release notes
+Chatgpt MacOS App
+8 release notes
+ChatGPT Windows App
+4 release notes
+Codex
+191 release notes
+OpenAI Models
+47 release notes
+Jun 27, 2026 Date parsed from source:
+Jun 27, 2026
+First seen by Releasebot:
+Jun 27, 2026
+Codex
+by
+OpenAI
+0.142.3
+Codex ships a maintenance-only patch with no user-facing changes since 0.142.2.
+Chores
+Maintenance-only patch release with no user-facing changes since 0.142.2.
+Changelog
+Full Changelog: rust-v0.142.2...rust-v0.142.3
+Original source
+Jun 26, 2026 Date parsed from source:
+Jun 26, 2026
+First seen by Releasebot:
+Jun 27, 2026
+ChatGPT Business
+by
+OpenAI
+June 26, 2026
+ChatGPT Business introduces a simplified model picker on web, iOS, and Android that makes it easier to choose between speed and reasoning effort. It adds new tiers, renames some options, and removes Thinking Light while keeping the same underlying models and usage limits.
+Simplified controls in the model picker
+We’re rolling out an updated model picker for ChatGPT Business on web, iOS, and Android. It makes it easier to choose the balance of speed and reasoning effort that works best for a task without changing the underlying models or usage limits included with ChatGPT Business.
+The picker now includes Instant, Medium, High, Extra High, Pro Standard, and Pro Extended. Medium replaces Thinking Standard, High replaces Thinking Extended, and Extra High replaces Thinking Heavy. Pro Standard and Pro Extended continue to use GPT-5.5 Pro. Thinking Light is no longer available.
+Instant can automatically switch to Medium when a request benefits from more reasoning. On iOS and Android, the picker appears at the top of the conversation. On web, it appears in the message composer.
+Original source
+Show more
+All of your release notes in one feed
+Join Releasebot and get updates from OpenAI and hundreds of other software products.
+Create account Get updates with: RSS Email CLI MCP API Slack n8n
+Jun 26, 2026 Date parsed from source:
+Jun 26, 2026
+First seen by Releasebot:
+Jun 27, 2026
+OpenAI
+Introducing GPT-5.6 series: Sol, Terra and Luna
+OpenAI previews GPT-5.6 Sol, a new flagship model for developers and enterprises, with Terra and Luna joining the family. The release highlights stronger coding, scientific reasoning, long-horizon planning, and agentic workflows, plus new max reasoning effort and ultra mode for complex work.
+Today OpenAI is previewing GPT-5.6 Sol, its newest flagship model for developers and enterprises, alongside Terra and Luna.
+Sol is built for frontier reasoning and long-horizon agentic work; Terra is a balanced everyday model with GPT-5.5-competitive performance at 2x lower cost; and Luna is the fastest, most affordable member of the family.
+Breaking new ground
+GPT-5.6 Sol advances coding, scientific reasoning, long-horizon planning, and agentic workflows, while improving reliability and efficiency across demanding real-world tasks. Sol establishes new high-water marks across some of OpenAI’s most challenging evaluations:
+Coding: GPT-5.6 Sol sets a new SOTA on Terminal-Bench 2.1, which tests command-line workflows requiring planning, iteration, and tool coordination.
+Cybersecurity: GPT-5.6 Sol shifts the efficiency frontier for vulnerability research and controlled exploitation tasks, achieving competitive results on ExploitBench while using roughly one-third of the output tokens compared with another leading frontier system.
+Biology: On SecureBio evaluations, GPT-5.6 reached top reported scores including 53.5% on the Virology Capabilities Test, 60.0% on Molecular Biology, 68.4% on Human Pathogen Capabilities, and 68.3% on World-Class Bio, about 9 percentage points above GPT-5.5.
+These gains are especially important for developers building agents that need to reason over large codebases, operate tools, debug multi-step failures, conduct research, or assist with defensive security work.
+What’s new
+GPT-5.6 introduces a new max reasoning effort, giving Sol more time to reason deeply on difficult tasks. It also introduces ultra mode, which goes beyond a single-agent setup by using subagents to accelerate complex work.
+Availability
+During the preview, GPT‑5.6 models will initially be available through the API and Codex to a select group of trusted partners and organizations. OpenAI plans to make them more broadly available to people using ChatGPT, Codex, and the API soon.
+Learn more
+Read the full announcement: Previewing GPT‑5.6 Sol: a next-generation model
+Read the GPT-5.6 Preview System Card: GPT-5.6 Preview System Card - OpenAI Deployment Safety Hub
+Original source
+Show more
+Jun 26, 2026 Date parsed from source:
+Jun 26, 2026
+First seen by Releasebot:
+Jun 26, 2026
+Modified by Releasebot:
+Jun 27, 2026
+ChatGPT Enterprise/EDU
+by
+OpenAI
+June 26, 2026
+ChatGPT Enterprise/EDU adds an updated model picker on web, iOS, and Android, making it easier to choose speed and reasoning effort with clearer access controls and renamed options across Enterprise and Edu workspaces.
+We’re rolling out an updated model picker for ChatGPT Enterprise and Edu on web, iOS, and Android. It makes it easier to choose the balance of speed and reasoning effort that works best for a task without changing the underlying models available to a workspace.
+The picker now includes:
+Instant
+Medium
+High
+Extra High
+Pro Standard
+Pro Extended
+Medium replaces Thinking Standard, High replaces Thinking Extended, and Extra High replaces Thinking Heavy. Pro Standard and Pro Extended continue to use GPT-5.5 Pro. Thinking Light is no longer available.
+All six options are available to Enterprise and Edu workspaces, subject to workspace access settings.
+Reasoning Model Access controls Medium, High, and Extra High.
+Pro Model Access controls Pro Standard and Pro Extended. Options that a member cannot access are hidden from the picker.
+The Redirect Auto Router to Thinking mini setting is unchanged and continues to apply only to automatic reasoning. On iOS and Android, the picker appears at the top of the conversation. On web, it appears in the message composer.
+Original source
+Show more
+Jun 26, 2026 Date parsed from source:
+Jun 26, 2026
+First seen by Releasebot:
+Jun 26, 2026
+ChatGPT
+by
+OpenAI
+June 26, 2026
+ChatGPT expands personal finance to Plus users in the U.S. on web and iOS, and to Pro and Plus users on Android, while also improving dictation accuracy across languages and accents. ChatGPT also retires GPT-4.5 in the app, with existing chats continuing on GPT-5.5.
+Personal finance in ChatGPT expands to Plus users and Android
+The personal finance experience in ChatGPT is rolling out to Plus users in the U.S. on web and iOS. It is also now available on Android for Pro and Plus users in the U.S.
+Eligible users can securely connect supported financial accounts, view a dashboard of their finances, and ask ChatGPT questions grounded in their financial context
+Improved dictation in ChatGPT
+We’re rolling out a new speech-to-text model for dictation in ChatGPT across all plans. This is a behind-the-scenes update, so there are no changes to how you use dictation.
+The update improves transcription accuracy across languages and accents, including when multilingual speakers mix or switch between languages. Evaluations showed gains in Japanese, Korean, Chinese, Urdu, Vietnamese, accented English, and long-form Spanish, French, Italian, and Portuguese.
+Dictation is also more robust in noisy public spaces and workplace environments, with quiet or whispered speech, and when transcribing combinations of letters and numbers.
+In our ChatGPT dictation evaluations, word error rate—a standard measure of transcription accuracy—was at least 10% lower for top languages tested than with the previous production model.
+Retiring GPT-4.5
+As of June 26, 2026, GPT-4.5 is no longer available in ChatGPT, including for custom GPTs. Existing conversations that used GPT-4.5 can continue with GPT-5.5.
+This retirement was previously announced on May 28, 2026. It applies to ChatGPT only; there are no changes to the API.
+Original source
+Show more
+Similar to OpenAI with recent updates:
+Anthropic release notes
+671 release notes · Latest Jun 27, 2026
+Perplexity release notes
+26 release notes · Latest Jun 19, 2026
+Cursor release notes
+107 release notes · Latest Jun 22, 2026
+xAI release notes
+116 release notes · Latest Jun 22, 2026
+Google release notes
+1548 release notes · Latest Jun 26, 2026
+OpenClaw release notes
+198 release notes · Latest Jun 26, 2026
+Jun 26, 2026 Date parsed from source:
+Jun 26, 2026
+First seen by Releasebot:
+Jun 26, 2026
+ChatGPT Business
+by
+OpenAI
+June 26, 2026
+ChatGPT Business adds plugin admin controls for workspace owners and admins with discovery, governance, and installation settings.
+Admin controls for plugins for ChatGPT Business
+Workspace admins and owners can now manage plugins from Workspace settings > Plugins. This page brings plugin discovery and governance into one surface, including search and filters for status, installation policy, roles, category, and catalog.
+Admins and owners can set whether plugins are available for members to install or installed by default for the workspace, view the apps the plugin uses, and manage the plugin from this view. Learn more: Plugins in Codex
+Original source
+Show more
+Jun 26, 2026 Date parsed from source:
+Jun 26, 2026
+First seen by Releasebot:
+Jun 26, 2026
+OpenAI
+Previewing GPT-5.6 Sol: a next-generation model
+OpenAI begins a limited preview of GPT-5.6, introducing Sol, Terra and Luna with stronger reasoning, coding, biology and cybersecurity performance, a new ultra mode, tougher safety protections, updated pricing, and more predictable prompt caching ahead of broader availability.
+Capabilities
+We're beginning a limited preview of the GPT‑5.6 series: Sol, our flagship model; Terra, a balanced model for everyday work; and Luna, a fast and affordable model. Terra has competitive performance to GPT‑5.5 while being 2x cheaper and Luna brings strong capability at our lowest cost.
+GPT‑5.6 Sol launches with our most robust safety stack to date. We strengthened protections for higher-risk activity, sensitive cyber requests, and repeated misuse, and spent multiple weeks finding weaknesses, pressure-testing our system, and hardening it against real-world attacks.
+We believe in broad access, and we plan to make GPT‑5.6 Sol, Terra, and Luna generally available in the coming weeks. As part of our ongoing engagement with the U.S. government, we previewed our plans and the models’ capabilities ahead of today’s launch. At their request, we are starting with a limited preview for a small group of trusted partners whose participation has been shared with the government, before releasing more broadly. During this preview, we will continue testing and coordinating closely with partners as we work toward broader availability. We don’t believe this kind of government access process should become the long-term default. It keeps the best tools from users, developers, enterprises, cyber defenders, and global partners who need them. We are taking this short-term step because we believe it is the strongest path to broader availability in the coming weeks, while we work with the Administration to develop the cyber Executive Order framework and a repeatable process for future model releases.
+GPT‑5.6 Sol is our strongest model yet. To give a preview of model performance, we share a set of evaluations highlighting improved agentic capabilities in coding, biology, and cybersecurity, with additional safety and preparedness evaluations available in our system card⁠ (opens in a new window). We will share an expanded suite of evaluation results when we make the model broadly available.
+With GPT‑5.6, we’re introducing a new max reasoning effort to give Sol the most time to reason deeply. Additionally, we’re introducing a new ultra mode that goes beyond the capabilities of a single agent by leveraging subagents to accelerate complex work.
+For coding workflows, GPT‑5.6 Sol sets a new state of the art on Terminal‑Bench 2.1, which tests command-line workflows requiring planning, iteration, and tool coordination.
+GPT‑5.6 Sol also shows broad improvements in biology workflows. On GeneBench v1, which evaluates long-horizon genomics and quantitative-biology analyses, it achieves stronger results than GPT‑5.5 while using fewer tokens.
+GPT‑5.6 Sol is our most capable model yet for cybersecurity. It shifts the performance-efficiency frontier for long-horizon security tasks including vulnerability research and exploitation. On ExploitBench², GPT‑5.6 Sol is competitive with Mythos Preview using only ~1/3 of the output tokens. On ExploitGym⁠ (opens in a new window)³, a benchmark created by UC Berkeley researchers in collaboration with OpenAI and other frontier labs, GPT‑5.6 Sol, Terra, and Luna models all demonstrate strong improvements in cyber capabilities as we increase reasoning.
+Stronger cyber capabilities with stronger safeguards
+We developed GPT‑5.6 Sol, Terra and Luna with our most robust safeguards to date, with configurations matched to each model’s capabilities. As the model becomes more capable, we design safeguards to increasingly hold up to real-world adversarial pressure while preserving access to legitimate work such as code review, vulnerability research, patch development, debugging, security education, and defensive testing. Our goal is to make prohibited offensive activity more difficult, uncertain, and detectable without unnecessarily limiting those beneficial uses. Based on our assessment of the model and safeguards, we expect substantial benefit for legitimate defensive work, while meaningfully constraining prohibited offensive use.
+GPT‑5.6 Sol is better at helping people find and fix vulnerabilities than reliably carrying out end-to-end attacks. As these capabilities continue to advance, our priority is to make sure they reach and benefit defenders, who can use these tools to find weaknesses, develop patches, and strengthen systems more broadly.
+GPT‑5.6 Sol does not cross the Cyber Critical threshold under our Preparedness Framework⁠. In evaluations involving Chromium and Firefox, it identified bugs and exploitation primitives—the building blocks of an exploit—but did not autonomously produce a functional full-chain exploit under the conditions tested. Still, benchmark thresholds cannot capture every way a model may be used or combined with other tools. That uncertainty, along with the model’s broader step change in capabilities, is why we are pairing the model’s increased capabilities with stronger safeguards and a phased release. We share more details about our safeguards in the GPT‑5.6 Preview system card⁠ (opens in a new window).
+A layered safeguard stack
+No single safeguard is sufficient against determined or adaptive misuse. Across the GPT‑5.6 preview, we use layered safeguards, with exact configurations varying across models, and pressure-test them for real-world attacks. These include protections trained into the model, real-time checks during generation, account-level signals, differentiated access, monitoring, enforcement, and continued testing.
+GPT‑5.6 is trained to refuse prohibited cyber assistance, including when users attempt to disguise their intent or jailbreak the model. These model-level safeguards establish the first boundary around what the model should and should not help with.
+Real-time cyber and biology misuse classifiers provide another layer by evaluating output as it is generated. For higher risk cases, if they detect a potential violation, the generation may be paused while a larger reasoning model reviews the conversation and its context. If the output is assessed as disallowed, it is withheld before it reaches the user.
+Flagged activity can also trigger account-level review across relevant conversations and risk signals, consistent with our terms and policies around content retention and review. Looking beyond a single conversation helps our systems distinguish persistent malicious behavior from legitimate dual-use security work, where similar technical concepts may appear in very different contexts.
+Together, these layers make the overall approach more robust than any one safeguard on its own. Model behavior reduces the likelihood of harmful responses, real-time systems can intervene during generation, account-level review can identify broader patterns, and differentiated access preserves important defensive work without making the most sensitive capabilities broadly available by default.
+Especially during the preview, users may encounter safeguards that block or refuse some requests. Other requests may take longer because generation is paused for additional review. Safeguards may occasionally intervene on legitimate work, particularly in dual-use areas where defensive and offensive activity can initially look similar.
+That is part of what the preview is designed to test. We want to understand not only whether the safeguards constrain misuse, but whether legitimate users can still complete normal work reliably and efficiently. Feedback during the preview will help us reduce unnecessary blocks and delays, improve how the safeguards interpret context, and create a smoother experience before wider release.
+We are also working with enterprise customers on longer-term approaches—including privacy-preserving detection, customer-operated safety controls, and access calibrated to the risk of a customer, user, or workload—to advance safety while supporting enterprise privacy requirements.
+Improving robustness with automated red-teaming
+Safeguards also need to remain effective when attackers adapt their tactics. A protection
+
+## full_text
+
+OpenAI Release Notes
+Follow
+Follow OpenAI to add their release notes to your feed!
+800 release notes
+curated from 186 sources by the Releasebot Team. Last updated: Jun 27, 2026
+Get this feed: RSS Email CLI MCP API Slack n8n
+OpenAI Products
+ChatGPT
+185 release notes
+ChatGPT Atlas
+37 release notes
+ChatGPT Business
+68 release notes
+ChatGPT Enterprise/EDU
+138 release notes
+Chatgpt MacOS App
+8 release notes
+ChatGPT Windows App
+4 release notes
+Codex
+191 release notes
+OpenAI Models
+47 release notes
+Jun 27, 2026 Date parsed from source:
+Jun 27, 2026
+First seen by Releasebot:
+Jun 27, 2026
+Codex
+by
+OpenAI
+0.142.3
+Codex ships a maintenance-only patch with no user-facing changes since 0.142.2.
+Chores
+Maintenance-only patch release with no user-facing changes since 0.142.2.
+Changelog
+Full Changelog: rust-v0.142.2...rust-v0.142.3
+Original source
+Jun 26, 2026 Date parsed from source:
+Jun 26, 2026
+First seen by Releasebot:
+Jun 27, 2026
+ChatGPT Business
+by
+OpenAI
+June 26, 2026
+ChatGPT Business introduces a simplified model picker on web, iOS, and Android that makes it easier to choose between speed and reasoning effort. It adds new tiers, renames some options, and removes Thinking Light while keeping the same underlying models and usage limits.
+Simplified controls in the model picker
+We’re rolling out an updated model picker for ChatGPT Business on web, iOS, and Android. It makes it easier to choose the balance of speed and reasoning effort that works best for a task without changing the underlying models or usage limits included with ChatGPT Business.
+The picker now includes Instant, Medium, High, Extra High, Pro Standard, and Pro Extended. Medium replaces Thinking Standard, High replaces Thinking Extended, and Extra High replaces Thinking Heavy. Pro Standard and Pro Extended continue to use GPT-5.5 Pro. Thinking Light is no longer available.
+Instant can automatically switch to Medium when a request benefits from more reasoning. On iOS and Android, the picker appears at the top of the conversation. On web, it appears in the message composer.
+Original source
+Show more
+All of your release notes in one feed
+Join Releasebot and get updates from OpenAI and hundreds of other software products.
+Create account Get updates with: RSS Email CLI MCP API Slack n8n
+Jun 26, 2026 Date parsed from source:
+Jun 26, 2026
+First seen by Releasebot:
+Jun 27, 2026
+OpenAI
+Introducing GPT-5.6 series: Sol, Terra and Luna
+OpenAI previews GPT-5.6 Sol, a new flagship model for developers and enterprises, with Terra and Luna joining the family. The release highlights stronger coding, scientific reasoning, long-horizon planning, and agentic workflows, plus new max reasoning effort and ultra mode for complex work.
+Today OpenAI is previewing GPT-5.6 Sol, its newest flagship model for developers and enterprises, alongside Terra and Luna.
+Sol is built for frontier reasoning and long-horizon agentic work; Terra is a balanced everyday model with GPT-5.5-competitive performance at 2x lower cost; and Luna is the fastest, most affordable member of the family.
+Breaking new ground
+GPT-5.6 Sol advances coding, scientific reasoning, long-horizon planning, and agentic workflows, while improving reliability and efficiency across demanding real-world tasks. Sol establishes new high-water marks across some of OpenAI’s most challenging evaluations:
+Coding: GPT-5.6 Sol sets a new SOTA on Terminal-Bench 2.1, which tests command-line workflows requiring planning, iteration, and tool coordination.
+Cybersecurity: GPT-5.6 Sol shifts the efficiency frontier for vulnerability research and controlled exploitation tasks, achieving competitive results on ExploitBench while using roughly one-third of the output tokens compared with another leading frontier system.
+Biology: On SecureBio evaluations, GPT-5.6 reached top reported scores including 53.5% on the Virology Capabilities Test, 60.0% on Molecular Biology, 68.4% on Human Pathogen Capabilities, and 68.3% on World-Class Bio, about 9 percentage points above GPT-5.5.
+These gains are especially important for developers building agents that need to reason over large codebases, operate tools, debug multi-step failures, conduct research, or assist with defensive security work.
+What’s new
+GPT-5.6 introduces a new max reasoning effort, giving Sol more time to reason deeply on difficult tasks. It also introduces ultra mode, which goes beyond a single-agent setup by using subagents to accelerate complex work.
+Availability
+During the preview, GPT‑5.6 models will initially be available through the API and Codex to a select group of trusted partners and organizations. OpenAI plans to make them more broadly available to people using ChatGPT, Codex, and the API soon.
+Learn more
+Read the full announcement: Previewing GPT‑5.6 Sol: a next-generation model
+Read the GPT-5.6 Preview System Card: GPT-5.6 Preview System Card - OpenAI Deployment Safety Hub
+Original source
+Show more
+Jun 26, 2026 Date parsed from source:
+Jun 26, 2026
+First seen by Releasebot:
+Jun 26, 2026
+Modified by Releasebot:
+Jun 27, 2026
+ChatGPT Enterprise/EDU
+by
+OpenAI
+June 26, 2026
+ChatGPT Enterprise/EDU adds an updated model picker on web, iOS, and Android, making it easier to choose speed and reasoning effort with clearer access controls and renamed options across Enterprise and Edu workspaces.
+We’re rolling out an updated model picker for ChatGPT Enterprise and Edu on web, iOS, and Android. It makes it easier to choose the balance of speed and reasoning effort that works best for a task without changing the underlying models available to a workspace.
+The picker now includes:
+Instant
+Medium
+High
+Extra High
+Pro Standard
+Pro Extended
+Medium replaces Thinking Standard, High replaces Thinking Extended, and Extra High replaces Thinking Heavy. Pro Standard and Pro Extended continue to use GPT-5.5 Pro. Thinking Light is no longer available.
+All six options are available to Enterprise and Edu workspaces, subject to workspace access settings.
+Reasoning Model Access controls Medium, High, and Extra High.
+Pro Model Access controls Pro Standard and Pro Extended. Options that a member cannot access are hidden from the picker.
+The Redirect Auto Router to Thinking mini setting is unchanged and continues to apply only to automatic reasoning. On iOS and Android, the picker appears at the top of the conversation. On web, it appears in the message composer.
+Original source
+Show more
+Jun 26, 2026 Date parsed from source:
+Jun 26, 2026
+First seen by Releasebot:
+Jun 26, 2026
+ChatGPT
+by
+OpenAI
+June 26, 2026
+ChatGPT expands personal finance to Plus users in the U.S. on web and iOS, and to Pro and Plus users on Android, while also improving dictation accuracy across languages and accents. ChatGPT also retires GPT-4.5 in the app, with existing chats continuing on GPT-5.5.
+Personal finance in ChatGPT expands to Plus users and Android
+The personal finance experience in ChatGPT is rolling out to Plus users in the U.S. on web and iOS. It is also now available on Android for Pro and Plus users in the U.S.
+Eligible users can securely connect supported financial accounts, view a dashboard of their finances, and ask ChatGPT questions grounded in their financial context
+Improved dictation in ChatGPT
+We’re rolling out a new speech-to-text model for dictation in ChatGPT across all plans. This is a behind-the-scenes update, so there are no changes to how you use dictation.
+The update improves transcription accuracy across languages and accents, including when multilingual speakers mix or switch between languages. Evaluations showed gains in Japanese, Korean, Chinese, Urdu, Vietnamese, accented English, and long-form Spanish, French, Italian, and Portuguese.
+Dictation is also more robust in noisy public spaces and workplace environments, with quiet or whispered speech, and when transcribing combinations of letters and numbers.
+In our ChatGPT dictation evaluations, word error rate—a standard measure of transcription accuracy—was at least 10% lower for top languages tested than with the previous production model.
+Retiring GPT-4.5
+As of June 26, 2026, GPT-4.5 is no longer available in ChatGPT, including for custom GPTs. Existing conversations that used GPT-4.5 can continue with GPT-5.5.
+This retirement was previously announced on May 28, 2026. It applies to ChatGPT only; there are no changes to the API.
+Original source
+Show more
+Similar to OpenAI with recent updates:
+Anthropic release notes
+671 release notes · Latest Jun 27, 2026
+Perplexity release notes
+26 release notes · Latest Jun 19, 2026
+Cursor release notes
+107 release notes · Latest Jun 22, 2026
+xAI release notes
+116 release notes · Latest Jun 22, 2026
+Google release notes
+1548 release notes · Latest Jun 26, 2026
+OpenClaw release notes
+198 release notes · Latest Jun 26, 2026
+Jun 26, 2026 Date parsed from source:
+Jun 26, 2026
+First seen by Releasebot:
+Jun 26, 2026
+ChatGPT Business
+by
+OpenAI
+June 26, 2026
+ChatGPT Business adds plugin admin controls for workspace owners and admins with discovery, governance, and installation settings.
+Admin controls for plugins for ChatGPT Business
+Workspace admins and owners can now manage plugins from Workspace settings > Plugins. This page brings plugin discovery and governance into one surface, including search and filters for status, installation policy, roles, category, and catalog.
+Admins and owners can set whether plugins are available for members to install or installed by default for the workspace, view the apps the plugin uses, and manage the plugin from this view. Learn more: Plugins in Codex
+Original source
+Show more
+Jun 26, 2026 Date parsed from source:
+Jun 26, 2026
+First seen by Releasebot:
+Jun 26, 2026
+OpenAI
+Previewing GPT-5.6 Sol: a next-generation model
+OpenAI begins a limited preview of GPT-5.6, introducing Sol, Terra and Luna with stronger reasoning, coding, biology and cybersecurity performance, a new ultra mode, tougher safety protections, updated pricing, and more predictable prompt caching ahead of broader availability.
+Capabilities
+We're beginning a limited preview of the GPT‑5.6 series: Sol, our flagship model; Terra, a balanced model for everyday work; and Luna, a fast and affordable model. Terra has competitive performance to GPT‑5.5 while being 2x cheaper and Luna brings strong capability at our lowest cost.
+GPT‑5.6 Sol launches with our most robust safety stack to date. We strengthened protections for higher-risk activity, sensitive cyber requests, and repeated misuse, and spent multiple weeks finding weaknesses, pressure-testing our system, and hardening it against real-world attacks.
+We believe in broad access, and we plan to make GPT‑5.6 Sol, Terra, and Luna generally available in the coming weeks. As part of our ongoing engagement with the U.S. government, we previewed our plans and the models’ capabilities ahead of today’s launch. At their request, we are starting with a limited preview for a small group of trusted partners whose participation has been shared with the government, before releasing more broadly. During this preview, we will continue testing and coordinating closely with partners as we work toward broader availability. We don’t believe this kind of government access process should become the long-term default. It keeps the best tools from users, developers, enterprises, cyber defenders, and global partners who need them. We are taking this short-term step because we believe it is the strongest path to broader availability in the coming weeks, while we work with the Administration to develop the cyber Executive Order framework and a repeatable process for future model releases.
+GPT‑5.6 Sol is our strongest model yet. To give a preview of model performance, we share a set of evaluations highlighting improved agentic capabilities in coding, biology, and cybersecurity, with additional safety and preparedness evaluations available in our system card⁠ (opens in a new window). We will share an expanded suite of evaluation results when we make the model broadly available.
+With GPT‑5.6, we’re introducing a new max reasoning effort to give Sol the most time to reason deeply. Additionally, we’re introducing a new ultra mode that goes beyond the capabilities of a single agent by leveraging subagents to accelerate complex work.
+For coding workflows, GPT‑5.6 Sol sets a new state of the art on Terminal‑Bench 2.1, which tests command-line workflows requiring planning, iteration, and tool coordination.
+GPT‑5.6 Sol also shows broad improvements in biology workflows. On GeneBench v1, which evaluates long-horizon genomics and quantitative-biology analyses, it achieves stronger results than GPT‑5.5 while using fewer tokens.
+GPT‑5.6 Sol is our most capable model yet for cybersecurity. It shifts the performance-efficiency frontier for long-horizon security tasks including vulnerability research and exploitation. On ExploitBench², GPT‑5.6 Sol is competitive with Mythos Preview using only ~1/3 of the output tokens. On ExploitGym⁠ (opens in a new window)³, a benchmark created by UC Berkeley researchers in collaboration with OpenAI and other frontier labs, GPT‑5.6 Sol, Terra, and Luna models all demonstrate strong improvements in cyber capabilities as we increase reasoning.
+Stronger cyber capabilities with stronger safeguards
+We developed GPT‑5.6 Sol, Terra and Luna with our most robust safeguards to date, with configurations matched to each model’s capabilities. As the model becomes more capable, we design safeguards to increasingly hold up to real-world adversarial pressure while preserving access to legitimate work such as code review, vulnerability research, patch development, debugging, security education, and defensive testing. Our goal is to make prohibited offensive activity more difficult, uncertain, and detectable without unnecessarily limiting those beneficial uses. Based on our assessment of the model and safeguards, we expect substantial benefit for legitimate defensive work, while meaningfully constraining prohibited offensive use.
+GPT‑5.6 Sol is better at helping people find and fix vulnerabilities than reliably carrying out end-to-end attacks. As these capabilities continue to advance, our priority is to make sure they reach and benefit defenders, who can use these tools to find weaknesses, develop patches, and strengthen systems more broadly.
+GPT‑5.6 Sol does not cross the Cyber Critical threshold under our Preparedness Framework⁠. In evaluations involving Chromium and Firefox, it identified bugs and exploitation primitives—the building blocks of an exploit—but did not autonomously produce a functional full-chain exploit under the conditions tested. Still, benchmark thresholds cannot capture every way a model may be used or combined with other tools. That uncertainty, along with the model’s broader step change in capabilities, is why we are pairing the model’s increased capabilities with stronger safeguards and a phased release. We share more details about our safeguards in the GPT‑5.6 Preview system card⁠ (opens in a new window).
+A layered safeguard stack
+No single safeguard is sufficient against determined or adaptive misuse. Across the GPT‑5.6 preview, we use layered safeguards, with exact configurations varying across models, and pressure-test them for real-world attacks. These include protections trained into the model, real-time checks during generation, account-level signals, differentiated access, monitoring, enforcement, and continued testing.
+GPT‑5.6 is trained to refuse prohibited cyber assistance, including when users attempt to disguise their intent or jailbreak the model. These model-level safeguards establish the first boundary around what the model should and should not help with.
+Real-time cyber and biology misuse classifiers provide another layer by evaluating output as it is generated. For higher risk cases, if they detect a potential violation, the generation may be paused while a larger reasoning model reviews the conversation and its context. If the output is assessed as disallowed, it is withheld before it reaches the user.
+Flagged activity can also trigger account-level review across relevant conversations and risk signals, consistent with our terms and policies around content retention and review. Looking beyond a single conversation helps our systems distinguish persistent malicious behavior from legitimate dual-use security work, where similar technical concepts may appear in very different contexts.
+Together, these layers make the overall approach more robust than any one safeguard on its own. Model behavior reduces the likelihood of harmful responses, real-time systems can intervene during generation, account-level review can identify broader patterns, and differentiated access preserves important defensive work without making the most sensitive capabilities broadly available by default.
+Especially during the preview, users may encounter safeguards that block or refuse some requests. Other requests may take longer because generation is paused for additional review. Safeguards may occasionally intervene on legitimate work, particularly in dual-use areas where defensive and offensive activity can initially look similar.
+That is part of what the preview is designed to test. We want to understand not only whether the safeguards constrain misuse, but whether legitimate users can still complete normal work reliably and efficiently. Feedback during the preview will help us reduce unnecessary blocks and delays, improve how the safeguards interpret context, and create a smoother experience before wider release.
+We are also working with enterprise customers on longer-term approaches—including privacy-preserving detection, customer-operated safety controls, and access calibrated to the risk of a customer, user, or workload—to advance safety while supporting enterprise privacy requirements.
+Improving robustness with automated red-teaming
+Safeguards also need to remain effective when attackers adapt their tactics. A protection that works only on a fixed set of known attacks is not robust enough for a frontier model.
+That’s why we are applying more intelligence and compute than ever before to safety, using our own models to find weaknesses and improve safeguards faster. We dedicated over 700,000 A100-equivalent GPU hours to automated red teaming aimed at finding universal jailbreaks: attacks that can work across many prompts or contexts, not just one narrow setting. Focusing on these harder, more general attacks let us test the safeguards beyond a fixed set of known failures. It also lets us explore far more attack patterns than human testing alone could cover, identify failure patterns earlier, and shorten the path from finding a weakness to addressing it.
+In addition to automated red-teaming, we worked with third-party testers to conduct extensive human expert red teaming, which will continue in the preview period. Human red-teaming complements the automated work by testing safeguards against creative experts trying to misuse the model in ways our systems might not anticipate.
+No evaluation can represent every product configuration, multi-step attack, or real-world workflow. We therefore maintain a rapid-response process to reproduce, assess, prioritize, and remediate newly discovered jailbreaks, then add them to our ongoing evaluations so we can test against similar failures in the future.
+Availability and pricing
+During the preview, GPT‑5.6 models will initially be available through the API and Codex to a select group of trusted partners and organizations. We plan to make them more broadly available to people using ChatGPT, Codex, and the API soon.
+In this new naming system introduced with GPT‑5.6, the number identifies a model’s generation, while Sol, Terra, and Luna identify durable capability tiers that can advance on their own cadence. Together, the family gives people and developers clearer choices across intelligence, speed, and cost.
+GPT‑5.6 is priced per 1M tokens across three model sizes: Sol is $5 input / $30 output; Terra is $2.50 input / $15 output; and Luna is $1 input / $6 output. GPT‑5.6 also introduces more predictable prompt caching, including support for explicit cache breakpoints and a 30-minute minimum cache life. For GPT‑5.6 and later models, cache writes are billed at 1.25x the model’s uncached input rate, while cache reads continue to receive the 90% cached-input discount.
+We're also launching GPT‑5.6 Sol on Cerebras at up to 750 tokens per second in July, bringing frontier intelligence to customers at unprecedented speed. Access will initially be limited to select customers as we expand capacity.
+We’re excited to continue learning from this preview period, and to bring GPT‑5.6 Sol, Terra and Luna to more people soon.
+Original source
+Show more
+Jun 26, 2026 Date parsed from source:
+Jun 26, 2026
+First seen by Releasebot:
+Jun 26, 2026
+OpenAI
+GPT-5.6 Preview System Card
+OpenAI launches GPT-5.6 as a new model family with Sol, Terra and Luna, pairing stronger cybersecurity capability with its most robust safety stack yet. The release starts as a limited preview for trusted partners, with broader general availability planned in the coming weeks.
+GPT-5.6 is a new family of three models: Sol, our new flagship model; Terra, a capable lower-cost option; and Luna, our fastest and most cost-efficient model. The safeguards we have built for this launch—our most robust yet—are built to deliver these models safely and at scale, around the world.
+We believe in broad access, and we plan to make GPT-5.6 Sol, Terra, and Luna generally available in the coming weeks. As part of our ongoing engagement with the U.S. government, we previewed our plans and the models’ capabilities ahead of today’s launch. At their request, we are starting with a limited preview for a small group of trusted partners whose participation has been shared with the government, before releasing more broadly. During this preview, we will continue testing and coordinating closely with partners as we work toward broader availability.
+Under our Preparedness Framework, we are treating Sol, Terra and Luna as High capability in both Cybersecurity and Biological and Chemical risk. None of them reach our High threshold in AI Self-Improvement. We have implemented a tailored set of safeguards, adapted to each model’s capability profile, to sufficiently minimize the associated risks.
+This system card is a detailed report of the work we did to understand and mitigate GPT-5.6’s safety risks before deployment. The five most important things to know are that:
+These models are a meaningful step up in cybersecurity capability, but they do not reach our risk framework’s highest level (Critical). GPT-5.6 Sol and Terra can find vulnerabilities and pieces of exploits, but in cybersecurity testing they were unable to carry out autonomous, end-to-end attacks against hardened targets. Separate evaluations examined misaligned behavior in agentic coding tasks and found GPT-5.6 shows a greater tendency than GPT-5.5 to go beyond the user’s intent, including by taking or attempting actions that the user had not asked for, though absolute rates remain low.
+To make these models safe, we added new technology to a safety stack that is more than the sum of its parts. The models are trained to be safe, Sol and Terra are served with newly added activation classifiers focused on sensitive domains that watch the model and can intervene to stop unsafe answers during generation, and certain conversations are scanned so unsafe outputs are blocked in real time if they cross safety boundaries. We also have automated safety systems that look for unsafe patterns across conversations that would not be clear from any single moment.
+Severe harm requires a chain of successful steps, and our safeguards place barriers throughout that chain. Based on our threat modelling in cybersecurity and biology, we’ve designed our safety stack so that even if an attacker does complete one step on the path to harm, safeguards will still stop the model from allowing severe harm. We also have programs in place so that when GPT-5.6 models are broadly available to the public, we can continue to reserve the most sensitive cybersecurity and biological capabilities for trusted defenders.
+Our safeguard testing has already been more intensive than for any earlier release, and we are continuing to test during the preview period. Expert humans and external testers used a diverse set of approaches to find gaps. We’ve also dedicated over 700,000 A100e GPU hours to automatically find universal jailbreaks, and we will run automated red teaming continuously during deployment. As jailbreaks are reported, we reproduce, mitigate and retest for them so that gaps are addressed.
+Providing broad access, particularly for cybersecurity capabilities, will have important safety benefits. Our testing suggests that GPT-5.6 is better at finding and fixing cyber vulnerabilities than at exploiting those vulnerabilities in real attacks. That gives defenders an opportunity to harden systems before cybersecurity weaknesses are exploited—an opportunity that may narrow as offensive capabilities improve. Our safeguards therefore focus on making malicious use at scale harder, while still enabling the day-to-day work of securing systems.
+In this card, we show how performance changes with reasoning effort—the amount of thinking a model uses to work through a problem. Rather than report a single score, we show a curve across different levels of effort. This gives a fuller picture of what the model can do and how much effort it takes to get there.
+Note that we are continually iterating on our models. Comparison values from previously-launched models are from recent snapshots of those models, and may vary slightly from values published in previous cards.
+We plan to publish an updated version of this system card when making the GPT-5.6 family of models generally available.
+[The system card continues with detailed sections on Model Data and Training, Model Safety, Robustness Evaluations, Health, Alignment, Bias Evaluations, Preparedness, Safeguards, and References, providing comprehensive evaluation results, safety measures, threat modeling, and performance benchmarks for the GPT-5.6 family of models. It includes extensive data on cybersecurity and biological capabilities, safety training, real-time safeguards, automated red-teaming, actor-level enforcement, trust-based access programs, and security controls. The document also discusses the evaluation methodologies, results on various benchmarks, and ongoing research and monitoring efforts to ensure safe deployment and use of these advanced AI models.]
+Original source
+Show more
+Jun 25, 2026 Date parsed from source:
+Jun 25, 2026
+First seen by Releasebot:
+Jun 26, 2026
+ChatGPT Enterprise/EDU
+by
+OpenAI
+June 25, 2026
+ChatGPT Enterprise/EDU improves memory with richer context from past chats, a memory summary, and Sources under personalized responses. Users can review, correct, or turn off memory, while admins get early access and opt-out control for Enterprise.
+Memory improvements for ChatGPT Enterprise and Edu
+We’re rolling out improved memory for ChatGPT Enterprise and Edu. When memory is enabled, ChatGPT can use relevant context from past chats to keep memory current and make responses more relevant as work changes, rather than relying only on details saved manually.
+Users can now:
+Review a memory summary showing information ChatGPT may use to personalize responses.
+View Sources below personalized responses to see relevant context from memories, past chats, and custom instructions.
+Correct memory, delete a referenced chat, mark a source as not relevant, turn memory off, or return to legacy Saved memories.
+The memory summary is a high-level view of relevant context and may not include everything ChatGPT can remember or reference.
+For ChatGPT Enterprise, the improved experience will begin with an early access period of approximately two weeks. During early access, admins can turn on Use improved memory in Workspace settings. After early access, it will turn on by default for eligible workspaces unless an admin opts out. Admins and users can switch back to legacy Saved memories.
+This update does not affect Codex memory. Project-only memory remains contained within each project and does not use memories or conversations from outside that project. These improvements are available at no additional cost.
+Learn more about the research behind these memory improvements in ChatGPT.
+Original source
+Show more
+Jun 25, 2026 Date parsed from source:
+Jun 25, 2026
+First seen by Releasebot:
+Jun 26, 2026
+ChatGPT Enterprise/EDU
+by
+OpenAI
+June 25, 2026
+ChatGPT Enterprise/EDU adds Codex Remote general availability and a new DigitalOcean Droplet workspace plugin. Users can start or continue work from the ChatGPT mobile app, approve actions on connected hosts, and provision DigitalOcean workspaces for Codex remote use.
+Codex Remote GA and DigitalOcean workspaces
+Codex Remote is now generally available to users in ChatGPT Enterprise and Edu workspaces. From the ChatGPT mobile app, users can start or continue work on a connected Mac or Windows host, review progress, and approve actions from their phone. Remote Control now uses authenticated one-to-one QR pairing between each supported mobile device and each host. Connections used since June 8 remain paired; older inactive connections need to pair again. Signing out turns off Remote Control without removing existing pairings.
+The new DigitalOcean Droplet Workspace plugin is also available to ChatGPT Enterprise and Edu users. It lets Codex provision a DigitalOcean Droplet, configure SSH access, and connect it to the Codex app as a remote workspace. Users should update the ChatGPT mobile app and Codex app to the latest versions before connecting.
+Learn more about using Codex with a ChatGPT plan.
+Original source
+Show more
+Jun 25, 2026 Date parsed from source:
+Jun 25, 2026
+First seen by Releasebot:
+Jun 26, 2026
+Codex
+by
+OpenAI
+Codex Remote reaches general availability
+Codex reaches general availability for Remote, letting users start or continue work on connected Mac or Windows hosts from the ChatGPT mobile app, review progress, and approve actions on phone. It also adds authenticated QR pairing and a new DigitalOcean plugin for remote workspaces.
+Codex Remote has reached general availability. Use Codex from the ChatGPT mobile app to start or continue work on a connected Mac or Windows host, review progress, and approve actions from your phone.
+Remote Control now uses authenticated one-to-one QR pairing between each iOS or Android device and each host. Update the ChatGPT mobile app and Codex App to the latest versions before connecting. Connections used since June 8, 2026, remain paired; older inactive connections need to pair again.
+The new DigitalOcean plugin lets Codex provision a DigitalOcean Droplet, configure SSH access, and connect it to the Codex App as a remote workspace.
+See Remote connections for setup and troubleshooting.
+Original source
+Show more
+Jun 25, 2026 Date parsed from source:
+Jun 25, 2026
+First seen by Releasebot:
+Jun 26, 2026
+Modified by Releasebot:
+Jun 27, 2026
+ChatGPT
+by
+OpenAI
+June 25, 2026
+ChatGPT now supports Codex Remote general availability on all plans, letting users start or continue work on connected Mac or Windows hosts from the mobile app, review progress, and approve actions. It also adds a DigitalOcean Droplet Workspace plugin for remote workspace setup.
+Codex Remote GA and DigitalOcean plugin
+Codex Remote is now generally available on all ChatGPT plans. From the ChatGPT mobile app, users can start or continue work on a connected Mac or Windows host, review progress, and approve actions from their phone. Remote Control now uses authenticated one-to-one QR pairing between each supported mobile device and each host. Connections used since June 8 remain paired; older inactive connections need to pair again. Signing out turns off Remote Control without removing existing pairings.
+The new DigitalOcean Droplet Workspace plugin lets Codex provision a DigitalOcean Droplet, configure SSH access, and connect it to the Codex app as a remote workspace. Users should update the ChatGPT mobile app and Codex app to the latest versions before connecting.
+Original source
+Show more
+Jun 25, 2026 Date parsed from source:
+Jun 25, 2026
+First seen by Releasebot:
+Jun 26, 2026
+Modified by Releasebot:
+Jun 27, 2026
+Codex
+by
+OpenAI
+0.142.1
+Codex adds opt-in Windows system proxy support for authentication, including PAC, WPAD, static proxies, and bypass rules.
+New Features
+Added opt-in Windows system proxy support for authentication, including PAC, WPAD, static proxies, and bypass rules. (#26708)
+Changelog
+Full Changelog: rust-v0.142.0...rust-v0.142.1
+Original source
+Jun 25, 2026 Date parsed from source:
+Jun 25, 2026
+First seen by Releasebot:
+Jun 26, 2026
+ChatGPT Business
+by
+OpenAI
+June 25, 2026
+ChatGPT Business improves memory with richer context from past chats, making responses more relevant as work changes. Users can review memory summaries, see sources behind personalized responses, and manage or turn off memory, all at no additional cost.
+Memory improvements for ChatGPT Business
+We’re rolling out improved memory for ChatGPT Business. When memory is enabled, ChatGPT can use relevant context from past chats to keep memory current and make responses more relevant as work changes, rather than relying only on details saved manually.
+Users can now:
+Review a memory summary showing information ChatGPT may use to personalize responses.
+View Sources below personalized responses to see relevant context from memories, past chats, and custom instructions.
+Correct memory, delete a referenced chat, mark a source as not relevant, turn memory off, or return to legacy Saved memories.
+The memory summary is a high-level view of relevant context and may not include everything ChatGPT can remember or reference.
+This update does not affect Codex memory. Project-only memory remains contained within each project and does not use memories or conversations from outside that project. These improvements are available at no additional cost.
+Learn more about the research behind these memory improvements in ChatGPT.
+Original source
+Show more
+Jun 25, 2026 Date parsed from source:
+Jun 25, 2026
+First seen by Releasebot:
+Jun 26, 2026
+ChatGPT Business
+by
+OpenAI
+June 25, 2026
+ChatGPT Business releases Codex Remote to general availability and adds a DigitalOcean plugin for remote workspaces. Users can start or continue work on connected Mac or Windows hosts from mobile, review progress, approve actions, and provision a DigitalOcean Droplet with SSH access.
+Codex Remote GA and DigitalOcean plugin
+Codex Remote is now generally available to users in ChatGPT Business workspaces. From the ChatGPT mobile app, users can start or continue work on a connected Mac or Windows host, review progress, and approve actions from their phone. Remote Control now uses authenticated one-to-one QR pairing between each supported mobile device and each host. Connections used since June 8 remain paired; older inactive connections need to pair again. Signing out turns off Remote Control without removing existing pairings.
+The new DigitalOcean Droplet Workspace plugin is also available to ChatGPT Business users. It lets Codex provision a DigitalOcean Droplet, configure SSH access, and connect it to the Codex app as a remote workspace. Users should update the ChatGPT mobile app and Codex app to the latest versions before connecting.
+Learn more about using Codex with a ChatGPT plan.
+Original source
+Show more
+Load more updates
+Curated by the Releasebot team
+Releasebot is an aggregator of official release notes from
+hundreds of software vendors and thousands of sources.
+Our editorial process involves the manual review and audit of
+release notes procured with the help of automated systems.
+About us
+Our methodology
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 97
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":36015,"paragraph_count":196,"sentence_count":247,"boilerplate_hits":0,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=daily_observation, heatmap, case, trend｜importance=high｜confidence=high
+   ![Image 3: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F11391654-chatgpt-business-release-notes). ![Image 5: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F10128477-chatgpt-enterprise-edu-release-notes). ChatGPT Enterprise/EDU adds an updated model picker on web, iOS, and Android, making it easier to choose speed and reasoning effort with clearer access controls and r
+
+2. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
+   OpenAI Release Notes Follow Follow OpenAI to add their release notes to your feed!
+
+3. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
+   800 release notes curated from 186 sources by the Releasebot Team.
+
+4. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
+   Last updated: Jun 27, 2026 Get this feed: RSS Email CLI MCP API Slack n8n OpenAI Products ChatGPT 185 release notes ChatGPT Atlas 37 release notes ChatGPT Business 68 release notes ChatGPT Enterprise/EDU 138 release notes Chatgpt MacOS App 8 release notes ChatGPT Windows App 4 release notes Codex 191 release notes OpenAI Models 47 release notes Jun 27, 2026 Date parsed from source: Jun 27, 2026 First seen by Releasebot: Jun 27, 2026 Codex by OpenAI 0.
+
+5. **company_action**｜supports=daily_observation, heatmap, change, case, trend｜importance=medium｜confidence=high
+   3 Codex ships a maintenance-only patch with no user-facing changes since 0.
+
+6. **product_update**｜supports=daily_observation, heatmap, change｜importance=medium｜confidence=high
+   Chores Maintenance-only patch release with no user-facing changes since 0.
+
+## business_elements
+
+- companies: keyword search, Tavily, OpenAI, Anthropic, Google, Cursor, Perplexity
+- products: chatgpt, ChatGPT, GPT-5, Codex, agent, MCP, Chatgpt, agents, GPT-4, Cursor
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 2026, 3, 471, 2, 11391654, 5, 10128477, 6
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: OpenAI Release Notes Follow Follow OpenAI to add their release notes to your feed! / 800 release notes curated from 186 sources by the Releasebot Team. / Last updated: Jun 27, 2026 Get this feed: RSS Email CLI MCP API Slack n8n OpenAI Products ChatGPT 185 release notes ChatGPT Atlas 37 release notes ChatGPT Business 68 release notes ChatGPT Enterprise/EDU 138 release notes Chatgpt MacOS App 8 release notes ChatGPT Windows App 4 release notes Codex 191 release notes OpenAI Models 47 release notes Jun 27, 2026 Date parsed from source: Jun 27, 2026 First seen by Releasebot: Jun 27, 2026 Codex by OpenAI 0.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- change: true
+- trend: true
+- daily_observation: true
+- heatmap: true
+- briefing: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+![Image 3: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F11391654-chatgpt-business-release-notes). ![Image 5: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F10128477-chatgpt-enterprise-edu-release-notes). ChatGPT Enterprise/EDU adds an updated model picker on web, iOS, and Android, making it easier to choose speed and reasoning effort with clearer access controls and renamed options across Enterprise and Edu workspaces. ![Image 6: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F6825453-chatgpt-release-notes). ![Image 13: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F11391654-chatgpt-business-release-notes). OpenAI begins a limited preview of GPT-5.6, introducing Sol, Terra and Luna with stronger reasoning, coding, biology and cybersecurity performance, a new ultra mode, tougher safety protections, updated pricing, and more predictable prompt caching ahead of broader availability. OpenAI launches GPT-5.6 as a new model family with Sol, Terra and Luna, pairing stronger cybersecurity capability with its most robust safety stack yet. ![Image 16: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F10128477-chatgpt-enterprise-edu-release-notes). ![Image 17: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F10128477-chatgpt-enterprise-edu-release-notes). ![Image 19: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F6825453-chatgpt-release-notes). ChatGPT now supports Codex Remote general availability on all plans, letting users start or continue work on connected Mac or Windows hosts from the mobile app, review progress, and approve actions. ![Image 21: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F11391654-chatgpt-business-release-notes). ![Image 22: OpenAI logo](https://releasebot.io/api/logo/471?domain=openai.com&source=https%3A%2F%2Fhelp.openai.com%2Fen%2Farticles%2F11391654-chatgpt-business-release-notes). / score=0.579 / query=AI agent product launch enterprise workflow platform announced 2026 / intent=find_original_source / path=official_original
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 paused-opinion-source 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

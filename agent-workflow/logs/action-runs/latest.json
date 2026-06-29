@@ -1,17 +1,25 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-28T03:43:15.942Z",
-  "date": "2026-06-28",
-  "action": "Repair Business Signals Raw source-artifact fallback",
+  "generated_at": "2026-06-29T05:34:37.929Z",
+  "date": "2026-06-29",
+  "action": "Hermes Business Signals auto repair",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "manual",
+  "trigger": "wavesight-hermes-auto-repair-merge-deploy",
   "status": "success",
-  "summary": "Allowed source-artifact monitor runs to supplement live search when aggregate Raw remains below 150 or coverage gaps remain; validation passed 2026-06-28 monitor QC with raw_count=150.",
+  "summary": "Repaired Business Signals monitor refill, same-day card dedupe, and source-title translation generation; frontstage gate passed.",
   "contexts": [],
-  "changed_files": [],
+  "changed_files": [
+    "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
+    "agent-workflow/tools/generate-asset-cards-from-pool.mjs",
+    "01-SiteV2/content/11-databases/source-title-translations.json"
+  ],
   "outputs": [],
-  "checks": [],
+  "checks": [
+    "node agent-workflow/tools/assert-business-signals-frontstage.mjs --date=2026-06-29",
+    "node agent-workflow/tools/assert-daily-production-chain.mjs --date=2026-06-29 --stage=pre-commit --raw-min=150 --pool-min=75 --block-stale=true",
+    "node agent-workflow/tools/assert-pool-to-card-dedupe.mjs --date=2026-06-29"
+  ],
   "issues": [],
   "risks": [],
   "lessons": [],
