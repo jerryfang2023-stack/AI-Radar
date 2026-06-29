@@ -8,8 +8,8 @@ status: draft
 asset_level: candidate
 evidence_gate: needs_backfill
 fact_draft_gate: pending
-frontend_copy_gate: pending
-cardcopy_gate: pending
+source_title_gate: pending
+frontstage_regression_gate: pending
 
 raw_refs: []
 pool_refs: []
@@ -53,6 +53,8 @@ formal_tags:
 ## 信号底稿
 
 写清谁做了什么、发生在哪里、来源是什么、缺什么。
+
+标题必须来自原始来源标题的中文翻译。不能使用模板化生成标题、搜索词、公司名拼接或旧后台字段兜底。
 
 ## 为什么值得看
 

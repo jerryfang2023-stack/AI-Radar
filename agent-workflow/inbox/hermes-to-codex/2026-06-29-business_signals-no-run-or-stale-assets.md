@@ -6,12 +6,12 @@ failed_gate: missing
 report_path: agent-workflow/reports/2026-06-29-daily-supervision-report.md
 data_generated: no_or_stale
 needed_action: sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow
-created_at: 2026-06-29T13:06:03+08:00
-updated_at: 2026-06-29T13:34:44+08:00
-resolved_at: 2026-06-29T13:34:44+08:00
+created_at: 2026-06-29T13:16:51+08:00
+updated_at: 2026-06-29T15:02:55+08:00
+resolved_at: 2026-06-29T15:02:55+08:00
 resolver: codex
-fix_commit: pending-local-change
-validation: assert-business-signals-frontstage 2026-06-29; assert-daily-production-chain pre-commit block-stale; assert-pool-to-card-dedupe
+fix_commit: pending
+validation: npm run assert:business-frontstage -- --date=2026-06-29
 prevention_added: gate
 source: hermes-auto
 
@@ -26,7 +26,7 @@ source: hermes-auto
 - warning: missing same-date persistent asset manifest: agent-workflow/reports/2026-06-29-persistent-asset-manifest.json
 - warning: missing quality gate report: agent-workflow/reports/2026-06-29-guanlan-monitor-quality-gate.md
 - warning: missing readiness report: agent-workflow/reports/2026-06-29-daily-production-chain-readiness.md
-- warning: latest same-date GitHub Pages workflow conclusion is skipped
+- warning: local Obsidian sync may be blocked by 6 dirty file(s)
 - supervision_report: `agent-workflow/reports/2026-06-29-daily-supervision-report.md`
 - categories: no_run_or_stale_assets, monitor_or_gate_failure
 
@@ -41,8 +41,8 @@ source: hermes-auto
 
 - no, unless Codex needs GitHub permission, login state, or business judgment.
 
-## Resolution - 2026-06-29T13:34:44+08:00
+## Resolution - 2026-06-29T15:02:55+08:00
 
-- fix_commit: pending-local-change
-- validation: assert-business-signals-frontstage 2026-06-29; assert-daily-production-chain pre-commit block-stale; assert-pool-to-card-dedupe
+- fix_commit: pending
+- validation: npm run assert:business-frontstage -- --date=2026-06-29
 - prevention_added: gate

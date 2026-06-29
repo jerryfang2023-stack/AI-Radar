@@ -1,0 +1,278 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-030",
+  "title": "Deployment Options - Lens Documentation",
+  "original_url": "https://docs.k8slens.dev/lens-agents/platform-admin/deployment/",
+  "canonical_url": "https://docs.k8slens.dev/lens-agents/platform-admin/deployment",
+  "source_name": "keyword search / Exa",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "procurement_marketplace",
+  "search_path_label": "采购 / 招投标 / Marketplace 路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-29T05:41:17.885Z",
+  "language": "mixed",
+  "full_text": "View cluster details\nUse Command Palette\nLens CLI\nPremium Features\nIntegrations\nHow to\nUsing Lens Desktop\nConfig\nNetwork\nStorage\nNamespaces view\nEvents view\nHelm\nAccess Control\nLens K8S IDE shortcuts\nKubernetes clusters\nLens Teamwork\nMCP Server\nLens Security Center\nTroubleshooting\nLens Prism\nUsing Lens Prism\nLens Prism troubleshooting\nPrompt examples\nEnable OpenAI API billing\nLens Agents\nAgents\nExternal\nManaged\nConnections\nAdministration\nPolicy & control\nUsage & cost\nOperations\nCapabilities across deployment models\nProduct telemetry defaults\nChoosing a Deployment Model\nData residency\nSelf-Hosted Deployment Guide\nRelated\nOrg-Wide AI Governance Rollout\nSecurity\nAdministration\nLens Business ID\nSecurity\nInformation for resellers\nSecurity and Compliance\nRelease notes\nFAQ\nAsk community\nContribute to Lens\nRelease notes\nSupport\nCapabilities across deployment models\nProduct telemetry defaults\nChoosing a Deployment Model\nData residency\nSelf-Hosted Deployment Guide\nRelated\nDeployment Options #\nLens Agents supports three deployment models. All provide the same platform capabilities, governance, and audit trail. The difference is who manages the infrastructure and where data resides.\nSaaS (Lens-hosted) #\nLens manages the infrastructure. You sign up, connect your systems, and start running agents.\nAspect\nDetail\nInfrastructure\nManaged by Lens\nData residency\nLens-hosted regions\nUpdates\nAutomatic, continuous delivery\nCertifications\nOperated under Mirantis's SOC 2 Type 1 (Lens K8S IDE) and ISO 27001 control framework; Lens Agents-specific attestation scope shared under NDA during evaluation\nBest for\nTeams that want to start fast without infrastructure overhead\nWhat's included: platform hosting, database, sandbox execution, LLM proxy, audit storage, monitoring, backups, and upgrades.\nWhat you provide: your infrastructure connections (Kubernetes clusters, AWS accounts, GitHub), your policies, your agents.\nSelf-hosted #\nYou deploy Lens Agents on your own infrastructure. Full control over compute, storage, networking, and data residency.\nAspect\nDetail\nInfrastructure\nManaged by you\nData residency\nYour cloud, your region, your premises\nUpdates\nYou control the upgrade schedule\nCertifications\nYou inherit the platform's security architecture; certification is your responsibility\nBest for\nRegulated industries, air-gapped environments, strict data residency requirements\nSelf-hosted deployments run the same platform code as SaaS. No features are removed or degraded.\nCloud marketplace #\nDeploy Lens Agents through AWS Marketplace or Azure Marketplace. Billing flows through your existing cloud agreement.\nAspect\nDetail\nInfrastructure\nYour cloud account, marketplace-managed deployment\nData residency\nYour cloud account and region\nUpdates\nMarketplace release channel\nBilling\nThrough your AWS or Azure agreement (EDP/MACC drawdown eligible)\nBest for\nEnterprises with committed cloud spend or procurement requirements\nAvailable marketplaces #\nAWS Marketplace -- deploy in your AWS account, use existing EDP commitments\nAzure Marketplace -- deploy in your Azure tenant, use existing MACC commitments\nCapabilities across deployment models #\nAll three options provide identical platform capabilities:\nCapability\nSaaS\nSelf-hosted\nMarketplace\nSandbox isolation\nYes\nYes\nYes\nPolicy engine\nYes\nYes\nYes\nCredential injection\nYes\nYes\nYes\nAudit trail (7 surfaces)\nYes\nYes\nYes\nSpending controls\nYes\nYes\nYes\nKubernetes connectivity\nYes\nYes\nYes\nAWS connectivity\nYes\nYes\nYes\nGitHub connectivity\nYes\nYes\nYes\nMCP server registry\nYes\nYes\nYes\nDesktop AI tool support\nYes\nYes\nYes\nExternal agent support\nYes\nYes\nYes\nManaged agents\nYes\nYes\nYes\nSSO / OIDC\nYes\nYes\nYes\nSlack integration\nYes\nYes\nYes\nProduct telemetry defaults #\nDeployment model\nTelemetry\nDetail\nSaaS\nEnabled\nSent to Lens-managed collector\nSelf-hosted\nDisabled\nOperator can enable and point at any OTLP/HTTP endpoint\nMarketplace\nDisabled\nOperator can enable and point at any OTLP/HTTP endpoint\nWhen disabled, the telemetry subsystem is a full no-op — no buffering, no network calls. See Product Telemetry for the event catalogue, configuration, and opt-out details.\nChoosing a Deployment Model #\nConsideration\nSaaS\nSelf-hosted\nMarketplace\nTime to first agent\nMinutes\nDays (infrastructure setup)\nHours\nInfrastructure management\nNone\nFull responsibility\nMinimal\nData residency control\nLimited to hosted regions\nComplete\nYour cloud region\nRegulatory requirements\nInherits Mirantis SOC 2 / ISO 27001 control framework\nRequired for air-gapped or specific compliance\nCloud-native compliance\nProcurement\nDirect\nDirect\nThrough cloud agreement\nCost model\nSubscription\nLicense + your infrastructure\nMarketplace billing\nData residency #\nYour deployment choice determines where data lives:\nSaaS: data resides in Lens-hosted infrastructure. No data is sent to Lens beyond what the platform requires to operate.\nSelf-hosted: all data stays on your infrastructure. Nothing leaves your environment.\nMarketplace: data resides in your cloud account in the region you select.\nFor all deployment models, agent connections to enterprise systems (Kubernetes, AWS, GitHub) go directly from the sandbox to your systems. The platform does not relay or store the data flowing through those connections beyond audit metadata.\nSee Data Sovereignty for details.\nSelf-Hosted Deployment Guide #\nSelf-hosted deployment documentation — including architecture requirements, infrastructure sizing, configuration, and operational procedures — is provided during Enterprise onboarding. The platform consists of:\nWeb application — dashboard and API server\nAgent runtime — managed agent execution and heartbeat scheduling\nDatabase — PostgreSQL for platform state, agent data, and audit trail\nSandbox infrastructure — container runtime for agent isolation\nContact your account team for the deployment guide, Helm charts, and infrastructure requirements for your scale.\nRelated #\nData sovereignty -- data residency and GDPR\nCompliance -- certifications and security practices\nSecurity whitepaper -- full security architecture\nSSO -- identity provider configuration\nBack to top",
+  "clean_text": "View cluster details\nUse Command Palette\nLens CLI\nPremium Features\nIntegrations\nHow to\nUsing Lens Desktop\nConfig\nNetwork\nStorage\nNamespaces view\nEvents view\nHelm\nAccess Control\nLens K8S IDE shortcuts\nKubernetes clusters\nLens Teamwork\nMCP Server\nLens Security Center\nTroubleshooting\nLens Prism\nUsing Lens Prism\nLens Prism troubleshooting\nPrompt examples\nEnable OpenAI API billing\nLens Agents\nAgents\nExternal\nManaged\nConnections\nAdministration\nPolicy & control\nUsage & cost\nOperations\nCapabilities across deployment models\nProduct telemetry defaults\nChoosing a Deployment Model\nData residency\nSelf-Hosted Deployment Guide\nRelated\nOrg-Wide AI Governance Rollout\nSecurity\nAdministration\nLens Business ID\nSecurity\nInformation for resellers\nSecurity and Compliance\nRelease notes\nFAQ\nAsk community\nContribute to Lens\nRelease notes\nSupport\nCapabilities across deployment models\nProduct telemetry defaults\nChoosing a Deployment Model\nData residency\nSelf-Hosted Deployment Guide\nRelated\nDeployment Options #\nLens Agents supports three deployment models. All provide the same platform capabilities, governance, and audit trail. The difference is who manages the infrastructure and where data resides.\nSaaS (Lens-hosted) #\nLens manages the infrastructure. You sign up, connect your systems, and start running agents.\nAspect\nDetail\nInfrastructure\nManaged by Lens\nData residency\nLens-hosted regions\nUpdates\nAutomatic, continuous delivery\nCertifications\nOperated under Mirantis's SOC 2 Type 1 (Lens K8S IDE) and ISO 27001 control framework; Lens Agents-specific attestation scope shared under NDA during evaluation\nBest for\nTeams that want to start fast without infrastructure overhead\nWhat's included: platform hosting, database, sandbox execution, LLM proxy, audit storage, monitoring, backups, and upgrades.\nWhat you provide: your infrastructure connections (Kubernetes clusters, AWS accounts, GitHub), your policies, your agents.\nSelf-hosted #\nYou deploy Lens Agents on your own infrastructure. Full control over compute, storage, networking, and data residency.\nAspect\nDetail\nInfrastructure\nManaged by you\nData residency\nYour cloud, your region, your premises\nUpdates\nYou control the upgrade schedule\nCertifications\nYou inherit the platform's security architecture; certification is your responsibility\nBest for\nRegulated industries, air-gapped environments, strict data residency requirements\nSelf-hosted deployments run the same platform code as SaaS. No features are removed or degraded.\nCloud marketplace #\nDeploy Lens Agents through AWS Marketplace or Azure Marketplace. Billing flows through your existing cloud agreement.\nAspect\nDetail\nInfrastructure\nYour cloud account, marketplace-managed deployment\nData residency\nYour cloud account and region\nUpdates\nMarketplace release channel\nBilling\nThrough your AWS or Azure agreement (EDP/MACC drawdown eligible)\nBest for\nEnterprises with committed cloud spend or procurement requirements\nAvailable marketplaces #\nAWS Marketplace -- deploy in your AWS account, use existing EDP commitments\nAzure Marketplace -- deploy in your Azure tenant, use existing MACC commitments\nCapabilities across deployment models #\nAll three options provide identical platform capabilities:\nCapability\nSaaS\nSelf-hosted\nMarketplace\nSandbox isolation\nYes\nYes\nYes\nPolicy engine\nYes\nYes\nYes\nCredential injection\nYes\nYes\nYes\nAudit trail (7 surfaces)\nYes\nYes\nYes\nSpending controls\nYes\nYes\nYes\nKubernetes connectivity\nYes\nYes\nYes\nAWS connectivity\nYes\nYes\nYes\nGitHub connectivity\nYes\nYes\nYes\nMCP server registry\nYes\nYes\nYes\nDesktop AI tool support\nYes\nYes\nYes\nExternal agent support\nYes\nYes\nYes\nManaged agents\nYes\nYes\nYes\nSSO / OIDC\nYes\nYes\nYes\nSlack integration\nYes\nYes\nYes\nProduct telemetry defaults #\nDeployment model\nTelemetry\nDetail\nSaaS\nEnabled\nSent to Lens-managed collector\nSelf-hosted\nDisabled\nOperator can enable and point at any OTLP/HTTP endpoint\nMarketplace\nDisabled\nOperator can enable and point at any OTLP/HTTP endpoint\nWhen disabled, the telemetry subsystem is a full no-op — no buffering, no network calls. See Product Telemetry for the event catalogue, configuration, and opt-out details.\nChoosing a Deployment Model #\nConsideration\nSaaS\nSelf-hosted\nMarketplace\nTime to first agent\nMinutes\nDays (infrastructure setup)\nHours\nInfrastructure management\nNone\nFull responsibility\nMinimal\nData residency control\nLimited to hosted regions\nComplete\nYour cloud region\nRegulatory requirements\nInherits Mirantis SOC 2 / ISO 27001 control framework\nRequired for air-gapped or specific compliance\nCloud-native compliance\nProcurement\nDirect\nDirect\nThrough cloud agreement\nCost model\nSubscription\nLicense + your infrastructure\nMarketplace billing\nData residency #\nYour deployment choice determines where data lives:\nSaaS: data resides in Lens-hosted infrastructure. No data is sent to Lens beyond what the platform requires to operate.\nSelf-hosted: all data stays on your infrastructure. Nothing leaves your environment.\nMarketplace: data resides in your cloud account in the region you select.\nFor all deployment models, agent connections to enterprise systems (Kubernetes, AWS, GitHub) go directly from the sandbox to your systems. The platform does not relay or store the data flowing through those connections beyond audit metadata.\nSee Data Sovereignty for details.\nSelf-Hosted Deployment Guide #\nSelf-hosted deployment documentation — including architecture requirements, infrastructure sizing, configuration, and operational procedures — is provided during Enterprise onboarding. The platform consists of:\nWeb application — dashboard and API server\nAgent runtime — managed agent execution and heartbeat scheduling\nDatabase — PostgreSQL for platform state, agent data, and audit trail\nSandbox infrastructure — container runtime for agent isolation\nContact your account team for the deployment guide, Helm charts, and infrastructure requirements for your scale.\nRelated #\nData sovereignty -- data residency and GDPR\nCompliance -- certifications and security practices\nSecurity whitepaper -- full security architecture\nSSO -- identity provider configuration\nBack to top",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-030-deployment-options-lens-documentation.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-030-deployment-options-lens-documentation.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 94,
+  "extractor_diagnostics": {
+    "readability_score": 94,
+    "text_length": 6087,
+    "paragraph_count": 80,
+    "sentence_count": 25,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 6087,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "01920b4336b1ad5b",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "9deb994da92b4448",
+  "content_hash": "01920b4336b1ad5b",
+  "full_text_hash": "01920b4336b1ad5b",
+  "semantic_hash": "0f63e7a5f2d465e6",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-29T05:41:17.885Z",
+  "last_seen_at": "2026-06-29T05:41:17.885Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "## Cloud marketplace# ... Deploy Lens Agents through AWS Marketplace or Azure Marketplace. Billing flows through your existing cloud agreement. ... | Aspect | Detail | | --- | --- | | Infrastructure | Your cloud account, marketplace-managed deployment | | Data residency | Your cloud account and region | | Updates | Marketplace release channel | | Billing | Through your AWS or Azure agreement (EDP/MACC drawdown eligible) | | Best for | Enterprises with committed cloud spend or procurement requirements | ... ### Avai",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "supporting_context",
+      "text": "View cluster details Use Command Palette Lens CLI Premium Features Integrations How to Using Lens Desktop Config Network Storage Namespaces view Events view Helm Access Control Lens K8S IDE shortcuts Kubernetes clusters Lens Teamwork MCP Server Lens Security Center Troubleshooting Lens Prism Using Lens Prism Lens Prism troubleshooting Prompt examples Enable OpenAI API billing Lens Agents Agents External Managed Connections Administration Policy & control Usage & cost Operations Capabilities across deployment models",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "All provide the same platform capabilities, governance, and audit trail.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The difference is who manages the infrastructure and where data resides.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "SaaS (Lens-hosted) # Lens manages the infrastructure.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "You sign up, connect your systems, and start running agents.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Exa",
+      "OpenAI",
+      "GitHub",
+      "AWS"
+    ],
+    "products": [
+      "Agents",
+      "MCP",
+      "agent",
+      "agents",
+      "Agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "采购负责人"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "采购 / 招投标",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "采购",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "7",
+      "2",
+      "27001",
+      "8",
+      "1"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "All provide the same platform capabilities, governance, and audit trail.",
+      "The difference is who manages the infrastructure and where data resides.",
+      "SaaS (Lens-hosted) # Lens manages the infrastructure."
+    ],
+    "case_details": [
+      "## Cloud marketplace# ... Deploy Lens Agents through AWS Marketplace or Azure Marketplace. Billing flows through your existing cloud agreement. ... | Aspect | Detail | | --- | --- | | Infrastructure | Your cloud account, marketplace-managed deployment | | Data residency | Your cloud account and region | | Updates | Marketplace release channel | | Billing | Through your AWS or Azure agreement (EDP/MACC drawdown eligible) | | Best for | Enterprises with committed cloud spend or procurement requirements | ... ### Avai"
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "采购负责人"
+    ],
+    "risks_or_constraints": [
+      "View cluster details Use Command Palette Lens CLI Premium Features Integrations How to Using Lens Desktop Config Network Storage Namespaces view Events view Helm Access Control Lens K8S IDE shortcuts Kubernetes clusters Lens Teamwork MCP Server Lens Security Center Troubleshooting Lens Prism Using Lens Prism Lens Prism troubleshooting Prompt examples Enable OpenAI API billing Lens Agents Agents External Managed Connections Administration Policy & control Usage & cost Operations Capabilities across deployment models"
+    ]
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "relationship_graph_input": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Deployment Options - Lens Documentation\n\n- raw_id: R-030\n- original_url: https://docs.k8slens.dev/lens-agents/platform-admin/deployment/\n- source_name: keyword search / Exa\n- collected_at: 2026-06-29T05:41:17.885Z\n\n## clean_text\n\nView cluster details\nUse Command Palette\nLens CLI\nPremium Features\nIntegrations\nHow to\nUsing Lens Desktop\nConfig\nNetwork\nStorage\nNamespaces view\nEvents view\nHelm\nAccess Control\nLens K8S IDE shortcuts\nKubernetes clusters\nLens Teamwork\nMCP Server\nLens Security Center\nTroubleshooting\nLens Prism\nUsing Lens Prism\nLens Prism troubleshooting\nPrompt examples\nEnable OpenAI API billing\nLens Agents\nAgents\nExternal\nManaged\nConnections\nAdministration\nPolicy & control\nUsage & cost\nOperations\nCapabilities across deployment models\nProduct telemetry defaults\nChoosing a Deployment Model\nData residency\nSelf-Hosted Deployment Guide\nRelated\nOrg-Wide AI Governance Rollout\nSecurity\nAdministration\nLens Business ID\nSecurity\nInformation for resellers\nSecurity and Compliance\nRelease notes\nFAQ\nAsk community\nContribute to Lens\nRelease notes\nSupport\nCapabilities across deployment models\nProduct telemetry defaults\nChoosing a Deployment Model\nData residency\nSelf-Hosted Deployment Guide\nRelated\nDeployment Options #\nLens Agents supports three deployment models. All provide the same platform capabilities, governance, and audit trail. The difference is who manages the infrastructure and where data resides.\nSaaS (Lens-hosted) #\nLens manages the infrastructure. You sign up, connect your systems, and start running agents.\nAspect\nDetail\nInfrastructure\nManaged by Lens\nData residency\nLens-hosted regions\nUpdates\nAutomatic, continuous delivery\nCertifications\nOperated under Mirantis's SOC 2 Type 1 (Lens K8S IDE) and ISO 27001 control framework; Lens Agents-specific attestation scope shared under NDA during evaluation\nBest for\nTeams that want to start fast without infrastructure overhead\nWhat's included: platform hosting, database, sandbox execution, LLM proxy, audit storage, monitoring, backups, and upgrades.\nWhat you provide: your infrastructure connections (Kubernetes clusters, AWS accounts, GitHub), your policies, your agents.\nSelf-hosted #\nYou deploy Lens Agents on your own infrastructure. Full control over compute, storage, networking, and data residency.\nAspect\nDetail\nInfrastructure\nManaged by you\nData residency\nYour cloud, your region, your premises\nUpdates\nYou control the upgrade schedule\nCertifications\nYou inherit the platform's security architecture; certification is your responsibility\nBest for\nRegulated industries, air-gapped environments, strict data residency requirements\nSelf-hosted deployments run the same platform code as SaaS. No features are removed or degraded.\nCloud marketplace #\nDeploy Lens Agents through AWS Marketplace or Azure Marketplace. Billing flows through your existing cloud agreement.\nAspect\nDetail\nInfrastructure\nYour cloud account, marketplace-managed deployment\nData residency\nYour cloud account and region\nUpdates\nMarketplace release channel\nBilling\nThrough your AWS or Azure agreement (EDP/MACC drawdown eligible)\nBest for\nEnterprises with committed cloud spend or procurement requirements\nAvailable marketplaces #\nAWS Marketplace -- deploy in your AWS account, use existing EDP commitments\nAzure Marketplace -- deploy in your Azure tenant, use existing MACC commitments\nCapabilities across deployment models #\nAll three options provide identical platform capabilities:\nCapability\nSaaS\nSelf-hosted\nMarketplace\nSandbox isolation\nYes\nYes\nYes\nPolicy engine\nYes\nYes\nYes\nCredential injection\nYes\nYes\nYes\nAudit trail (7 surfaces)\nYes\nYes\nYes\nSpending controls\nYes\nYes\nYes\nKubernetes connectivity\nYes\nYes\nYes\nAWS connectivity\nYes\nYes\nYes\nGitHub connectivity\nYes\nYes\nYes\nMCP server registry\nYes\nYes\nYes\nDesktop AI tool support\nYes\nYes\nYes\nExternal agent support\nYes\nYes\nYes\nManaged agents\nYes\nYes\nYes\nSSO / OIDC\nYes\nYes\nYes\nSlack integration\nYes\nYes\nYes\nProduct telemetry defaults #\nDeployment model\nTelemetry\nDetail\nSaaS\nEnabled\nSent to Lens-managed collector\nSelf-hosted\nDisabled\nOperator can enable and point at any OTLP/HTTP endpoint\nMarketplace\nDisabled\nOperator can enable and point at any OTLP/HTTP endpoint\nWhen disabled, the telemetry subsystem is a full no-op — no buffering, no network calls. See Product Telemetry for the event catalogue, configuration, and opt-out details.\nChoosing a Deployment Model #\nConsideration\nSaaS\nSelf-hosted\nMarketplace\nTime to first agent\nMinutes\nDays (infrastructure setup)\nHours\nInfrastructure management\nNone\nFull responsibility\nMinimal\nData residency control\nLimited to hosted regions\nComplete\nYour cloud region\nRegulatory requirements\nInherits Mirantis SOC 2 / ISO 27001 control framework\nRequired for air-gapped or specific compliance\nCloud-native compliance\nProcurement\nDirect\nDirect\nThrough cloud agreement\nCost model\nSubscription\nLicense + your infrastructure\nMarketplace billing\nData residency #\nYour deployment choice determines where data lives:\nSaaS: data resides in Lens-hosted infrastructure. No data is sent to Lens beyond what the platform requires to operate.\nSelf-hosted: all data stays on your infrastructure. Nothing leaves your environment.\nMarketplace: data resides in your cloud account in the region you select.\nFor all deployment models, agent connections to enterprise systems (Kubernetes, AWS, GitHub) go directly from the sandbox to your systems. The platform does not relay or store the data flowing through those connections beyond audit metadata.\nSee Data Sovereignty for details.\nSelf-Hosted Deployment Guide #\nSelf-hosted deployment documentation — including architecture requirements, infrastructure sizing, configuration, and operational procedures — is provided during Enterprise onboarding. The platform consists of:\nWeb application — dashboard and API server\nAgent runtime — managed agent execution and heartbeat scheduling\nDatabase — PostgreSQL for platform state, agent data, and audit trail\nSandbox infrastructure — container runtime for agent isolation\nContact your account team for the deployment guide, Helm charts, and infrastructure requirements for your scale.\nRelated #\nData sovereignty -- data residency and GDPR\nCompliance -- certifications and security practices\nSecurity whitepaper -- full security architecture\nSSO -- identity provider configuration\nBack to top\n\n## full_text\n\nView cluster details\nUse Command Palette\nLens CLI\nPremium Features\nIntegrations\nHow to\nUsing Lens Desktop\nConfig\nNetwork\nStorage\nNamespaces view\nEvents view\nHelm\nAccess Control\nLens K8S IDE shortcuts\nKubernetes clusters\nLens Teamwork\nMCP Server\nLens Security Center\nTroubleshooting\nLens Prism\nUsing Lens Prism\nLens Prism troubleshooting\nPrompt examples\nEnable OpenAI API billing\nLens Agents\nAgents\nExternal\nManaged\nConnections\nAdministration\nPolicy & control\nUsage & cost\nOperations\nCapabilities across deployment models\nProduct telemetry defaults\nChoosing a Deployment Model\nData residency\nSelf-Hosted Deployment Guide\nRelated\nOrg-Wide AI Governance Rollout\nSecurity\nAdministration\nLens Business ID\nSecurity\nInformation for resellers\nSecurity and Compliance\nRelease notes\nFAQ\nAsk community\nContribute to Lens\nRelease notes\nSupport\nCapabilities across deployment models\nProduct telemetry defaults\nChoosing a Deployment Model\nData residency\nSelf-Hosted Deployment Guide\nRelated\nDeployment Options #\nLens Agents supports three deployment models. All provide the same platform capabilities, governance, and audit trail. The difference is who manages the infrastructure and where data resides.\nSaaS (Lens-hosted) #\nLens manages the infrastructure. You sign up, connect your systems, and start running agents.\nAspect\nDetail\nInfrastructure\nManaged by Lens\nData residency\nLens-hosted regions\nUpdates\nAutomatic, continuous delivery\nCertifications\nOperated under Mirantis's SOC 2 Type 1 (Lens K8S IDE) and ISO 27001 control framework; Lens Agents-specific attestation scope shared under NDA during evaluation\nBest for\nTeams that want to start fast without infrastructure overhead\nWhat's included: platform hosting, database, sandbox execution, LLM proxy, audit storage, monitoring, backups, and upgrades.\nWhat you provide: your infrastructure connections (Kubernetes clusters, AWS accounts, GitHub), your policies, your agents.\nSelf-hosted #\nYou deploy Lens Agents on your own infrastructure. Full control over compute, storage, networking, and data residency.\nAspect\nDetail\nInfrastructure\nManaged by you\nData residency\nYour cloud, your region, your premises\nUpdates\nYou control the upgrade schedule\nCertifications\nYou inherit the platform's security architecture; certification is your responsibility\nBest for\nRegulated industries, air-gapped environments, strict data residency requirements\nSelf-hosted deployments run the same platform code as SaaS. No features are removed or degraded.\nCloud marketplace #\nDeploy Lens Agents through AWS Marketplace or Azure Marketplace. Billing flows through your existing cloud agreement.\nAspect\nDetail\nInfrastructure\nYour cloud account, marketplace-managed deployment\nData residency\nYour cloud account and region\nUpdates\nMarketplace release channel\nBilling\nThrough your AWS or Azure agreement (EDP/MACC drawdown eligible)\nBest for\nEnterprises with committed cloud spend or procurement requirements\nAvailable marketplaces #\nAWS Marketplace -- deploy in your AWS account, use existing EDP commitments\nAzure Marketplace -- deploy in your Azure tenant, use existing MACC commitments\nCapabilities across deployment models #\nAll three options provide identical platform capabilities:\nCapability\nSaaS\nSelf-hosted\nMarketplace\nSandbox isolation\nYes\nYes\nYes\nPolicy engine\nYes\nYes\nYes\nCredential injection\nYes\nYes\nYes\nAudit trail (7 surfaces)\nYes\nYes\nYes\nSpending controls\nYes\nYes\nYes\nKubernetes connectivity\nYes\nYes\nYes\nAWS connectivity\nYes\nYes\nYes\nGitHub connectivity\nYes\nYes\nYes\nMCP server registry\nYes\nYes\nYes\nDesktop AI tool support\nYes\nYes\nYes\nExternal agent support\nYes\nYes\nYes\nManaged agents\nYes\nYes\nYes\nSSO / OIDC\nYes\nYes\nYes\nSlack integration\nYes\nYes\nYes\nProduct telemetry defaults #\nDeployment model\nTelemetry\nDetail\nSaaS\nEnabled\nSent to Lens-managed collector\nSelf-hosted\nDisabled\nOperator can enable and point at any OTLP/HTTP endpoint\nMarketplace\nDisabled\nOperator can enable and point at any OTLP/HTTP endpoint\nWhen disabled, the telemetry subsystem is a full no-op — no buffering, no network calls. See Product Telemetry for the event catalogue, configuration, and opt-out details.\nChoosing a Deployment Model #\nConsideration\nSaaS\nSelf-hosted\nMarketplace\nTime to first agent\nMinutes\nDays (infrastructure setup)\nHours\nInfrastructure management\nNone\nFull responsibility\nMinimal\nData residency control\nLimited to hosted regions\nComplete\nYour cloud region\nRegulatory requirements\nInherits Mirantis SOC 2 / ISO 27001 control framework\nRequired for air-gapped or specific compliance\nCloud-native compliance\nProcurement\nDirect\nDirect\nThrough cloud agreement\nCost model\nSubscription\nLicense + your infrastructure\nMarketplace billing\nData residency #\nYour deployment choice determines where data lives:\nSaaS: data resides in Lens-hosted infrastructure. No data is sent to Lens beyond what the platform requires to operate.\nSelf-hosted: all data stays on your infrastructure. Nothing leaves your environment.\nMarketplace: data resides in your cloud account in the region you select.\nFor all deployment models, agent connections to enterprise systems (Kubernetes, AWS, GitHub) go directly from the sandbox to your systems. The platform does not relay or store the data flowing through those connections beyond audit metadata.\nSee Data Sovereignty for details.\nSelf-Hosted Deployment Guide #\nSelf-hosted deployment documentation — including architecture requirements, infrastructure sizing, configuration, and operational procedures — is provided during Enterprise onboarding. The platform consists of:\nWeb application — dashboard and API server\nAgent runtime — managed agent execution and heartbeat scheduling\nDatabase — PostgreSQL for platform state, agent data, and audit trail\nSandbox infrastructure — container runtime for agent isolation\nContact your account team for the deployment guide, Helm charts, and infrastructure requirements for your scale.\nRelated #\nData sovereignty -- data residency and GDPR\nCompliance -- certifications and security practices\nSecurity whitepaper -- full security architecture\nSSO -- identity provider configuration\nBack to top\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 94\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] ## Cloud marketplace# ... Deploy Lens Agents through AWS Marketplace or Azure Marketplace. Billing flows through your existing cloud agreement. ... | Aspect | Detail | | --- | --- | | Infrastructure | Your cloud account, marketplace-managed deployment | | Data residency | Your cloud account and region | | Updates | Marketplace release channel | | Billing | Through your AWS or Azure agreement (EDP/MACC drawdown eligible) | | Best for | Enterprises with committed cloud spend or procurement requirements | ... ### Avai\n2. [supporting_context / signal_card_candidate, relationship_graph_input / medium] View cluster details Use Command Palette Lens CLI Premium Features Integrations How to Using Lens Desktop Config Network Storage Namespaces view Events view Helm Access Control Lens K8S IDE shortcuts Kubernetes clusters Lens Teamwork MCP Server Lens Security Center Troubleshooting Lens Prism Using Lens Prism Lens Prism troubleshooting Prompt examples Enable OpenAI API billing Lens Agents Agents External Managed Connections Administration Policy & control Usage & cost Operations Capabilities across deployment models\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] All provide the same platform capabilities, governance, and audit trail.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] The difference is who manages the infrastructure and where data resides.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] SaaS (Lens-hosted) # Lens manages the infrastructure.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] You sign up, connect your systems, and start running agents.\n"
+}

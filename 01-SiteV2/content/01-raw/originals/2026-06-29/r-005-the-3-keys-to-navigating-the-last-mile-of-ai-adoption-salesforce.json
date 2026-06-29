@@ -1,0 +1,282 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-005",
+  "title": "The 3 Keys to Navigating the ‘Last Mile’ of AI Adoption - Salesforce",
+  "original_url": "https://www.salesforce.com/news/stories/mature-agentic-enterprise-deployment/",
+  "canonical_url": "https://salesforce.com/news/stories/mature-agentic-enterprise-deployment",
+  "source_name": "keyword search / Exa",
+  "source_type": "official",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "pilot",
+  "enterprise_ai_transformation_reason": "fde_or_applied_ai_org_signal",
+  "author": "",
+  "published_at": "2026-01-22T18:00:00.000Z",
+  "collected_at": "2026-06-29T05:41:17.733Z",
+  "language": "mixed",
+  "full_text": "0%\nParticipants:\nAdam Evans: EVP & GM, Salesforce AI Platform\nMadhav Thattai: COO, Salesforce AI\nMark Wakelin: EVP, Forward Deployed Engineering\nThe conversation around generative AI is no longer about whether the technology can work but how, and how quickly, enterprises can scale it securely and effectively to see true value — how they can span the proverbial last mile. But the road from pilot to production has significant challenges. Too often, the narrative is that AI is easy and seamless, which sets up customers for missed expectations.\nThis conversation with three Salesforce executives helps surface the fuller, more authentic picture.\nQ: You’re building the roadmap, helping deploy the agents, and working through the realities of the transformation into being an Agentic Enterprise . Madhav, you’ve distilled this journey into three distinct stages: Stage 1, Stage 2, and Stage 3. Could you introduce that framework for us?\nMadhav Thattai: This framework is a direct result of our learnings over the past 12 months. We recognized that adoption happens in structured stages. Stage 1: Trust is all about getting the foundation right, ensuring executive buy-in and security. Stage 2: Design is where you actually build the agent, focusing on context and control. Stage 3: Scale is where you move from a successful pilot to full-enterprise implementation. We use this to help our customers navigate the journey, and we use it to inform our product roadmap based on what they are learning.\nStage 1: Trust and Alignment\nQ: Stage 1 is about establishing trust. Mark, your team of forward deployed engineers puts you on the front lines. What does trust entail at the beginning of a deployment, and what do companies need to do to get the process started correctly?\nMark Wakelin: You need an executive sponsor who is going to put themselves on the line to be accountable for the outcome of the program. They must have clarity on the business use case and the specific CEO-level KPIs tied to ROI that they are tracking.\nThe other critical element, before you even look at technology, is legal and security compliance. Is the legal team okay with AI being used? Is the industry regulator okay with it? Are there any ethical or humane use issues we should be considering? If you can’t answer those questions, you can’t get to production.\nAdam Evans: Trust isn’t just about safety; it’s about permissions. A public-facing agent needs different capabilities before and after a user authenticates. It must dynamically unlock skills without ever exposing data to the wrong person. There should be no possibility for it to go off the rails, no matter how nicely you ask it. So people need to build agents in a defensive way, just like all apps. And that’s a learning process to get to those best practices.\nThattai: We’re going from a world where everybody has thrown a bunch of stuff at the wall and maybe has a bunch of agents that might not even create that much value. They’ve let 1,000 flowers bloom. Without that business KPI, you’re doing AI for the sake of AI. And that will not lead to value.\nWhat we’re finding is that to build an agent that actually does something at scale that creates real ROI is pretty challenging. The true business value for enterprises doesn’t reside in the AI model alone — it’s in the “last mile.” That is the software layer that translates raw technology into trusted, autonomous execution. To traverse this last mile, agents must be able to reason through complexity and operate on trusted business data, which is exactly where we are focusing.\nStage 2: Design and Context\nQ: Once those foundational elements are locked down in Stage 1, we move to Stage 2: Design, where the focus should be on context, control, and the UX. Mark, your team sees customers wrestling with their data infrastructure at this stage. What are some common pitfalls companies encounter?\nWakelin: The biggest issue is almost always data. We see that the data the customer needs to hydrate an agent and make it useful is either not available or not in the right form to be ingested. For example, an automotive customer wanted an agent to answer questions about vehicle specs. But that data was locked in complex tables, not prose. Our old ingestion engine couldn’t read it, leading to hallucinations.\nWe’re solving this with Data 360 and our acquisition of Informatica, which allows us to unify and harmonize metadata across the enterprise. It provides a live context window so agents don’t guess or hallucinate — they act on a single source of truth.\nThattai: Probably our biggest learning this year is that agents will end up in a kind of “prompt doom loop” if all you’re doing is trying to give them natural language instructions. It works for simple things. Got an agent answering questions on a website? Great. But as you move into more complex business processes, you need more than natural-language instructions. These core workflows benefit from combining LLM flexibility with deterministic execution. The LLM provides the engine, but to reach the destination safely, you need the maps and traffic rules — that’s the deterministic layer. That’s what has driven our hybrid reasoning engine with Agent Script .\nWakelin: For example, companies don’t want their refund policy to be something that gets creatively interpreted by an agent. If you return the item within 60 days, you get your money back, and if you don’t, you don’t.\nIn Deloitte’s case , they wanted to capture and create new customer prospects but at the same time be able to augment those customer records with all kinds of industry data and observations.\nThat called for a deterministic approach while elaborating that data object with learnings from the “joys” that a large language model can bring to the table. We were blending these two technologies for control, accuracy, and business value.\nEvans: Then there’s the UX. For an agent to work, it has to be integrated into the flow of work. In our case, Slackbot is becoming the front door to the Agentic Enterprise. It already knows your context, your teams, and your files. Instead of just being a place to chat, Slackbot acts as a personal work agent that you can access in the flow of work without the “ toggle tax .”\nThattai: UX for the experience tends to be an afterthought. All the time goes into the construction of the agent, but you really want to be design-led. You want to understand what experience you’re trying to build for your employees, for your customers, and then have that drive what kind of tasks the agent is going to do. What things are going to be valuable? How is that going to materialize in the experience? When does the agent escalate and hand off to a human ? That’s really important.\nStage 3: Scale and Orchestration\nQ: We’ve established the foundation of trust and the design principles. Now we move to Stage 3: Scale , the ultimate goal. Adam, you mentioned that customers want multi-agent orchestration but often don’t have enough successful singular agents yet. What is the technical and operational reality of achieving scale?\nEvans: The technical reality of agent-to-agent (A2A) is that the performance is not there yet. The way everyone is doing A2A now is they’re “chatty,” and as soon as you have two or three agents talking, the performance for a live user situation — like a voice interaction — is going to be unacceptable. You need subsecond responses. The solution isn’t to connect up a thousand agents and hope for the best; it’s to focus on context engineering and separating the functionality to be testable. We are investing in roadmap features that allow multiple agents to share memory and execute in a shared memory execution space that’s faster for high-performance situations.\nCustomers that have successfully moved past pilots are focused on killer use cases that are driving ROI, rather than having a thousand agents that don’t create value.\nThattai: At this third stage, as customers mature and they’ve built an agent and are starting to get value from it, they start to ask different questions. “Okay, I built this agent that is executing a process, but I want to do that for 10,000 employees.” Or “I’ve got an agent that’s creating value for a customer who’s engaging on my website; now I want to do that for 10,000 customers proactively.”\nWe are seeing the shift happen now. We have approximately $540 million in agentic AI ARR and 18,500 deals in under a year. Customers like Grupo Falabella are seeing Agentforce now resolve 60% of inquiries without human help. Just three weeks after launching their pilot agent in Colombia, they were already seeing support levels on WhatsApp of 70% — a sign that more customers were getting their questions answered without needing to call.\nQ: How do you start to build out these experiences?\nThattai: Customers think about orchestration. How do they manage all of these complex connections and relationships across these agents? Most customers are realizing that there’s an interesting organization that is emerging that is part line of business, part IT, part technology that all kind of come together to build these agents.\nThere’s also an emerging class of agent managers. Eventually their jobs will be to manage these agents. It might be management of humans and agents together, but those people need tools. Are the agents performing? How do they become better? How do I know that the agent is delivering value? I need to monitor these things at scale, and I need to understand how they need to work.\nWakelin: The challenges might be the pace and scale at which this is happening. But the conversations our forward deployed engineers have had with customers have generated more than 100 product recommendations that are really shaping and driving the roadmap.\nIf you think the value is just in the model, you’ve missed the point. The hyperscalers provide the car, and the LLMs provide the engine. But Salesforce provides the last mile — the traffic signs, the maps, and the security systems that allow the car to actually drive itself safely to the destination.\nNext year, what will really start to take hold is the blending of human and digital labor into a single workforce.\nGo deeper:\nHear from Salesforce’s Head of Engineering on why 95% of AI pilots fail and what the other 5% do differently\nMeet Slackbot, your new agentic work OS BFF\nIn 2025, AI grew up — and learned to play by the rules\nShare article\n5 min read\n4 min read\nBuild and customize autonomous AI agents to support your employees and customers 24/7.\nDiscover Agentforce\nShare article\n5 min read\n4 min read\nBuild and customize autonomous AI agents to support your employees and customers 24/7.\nDiscover Agentforce\nExplore related content by topic\nAgentic Enterprise\nAgents\nAI\nDigital Transformation\n5 min read\n5 min read\n5 min read\n3 min read\nGet the latest Salesforce News\nSubscribe\nClose",
+  "clean_text": "0%\nParticipants:\nAdam Evans: EVP & GM, Salesforce AI Platform\nMadhav Thattai: COO, Salesforce AI\nMark Wakelin: EVP, Forward Deployed Engineering\nThe conversation around generative AI is no longer about whether the technology can work but how, and how quickly, enterprises can scale it securely and effectively to see true value — how they can span the proverbial last mile. But the road from pilot to production has significant challenges. Too often, the narrative is that AI is easy and seamless, which sets up customers for missed expectations.\nThis conversation with three Salesforce executives helps surface the fuller, more authentic picture.\nQ: You’re building the roadmap, helping deploy the agents, and working through the realities of the transformation into being an Agentic Enterprise . Madhav, you’ve distilled this journey into three distinct stages: Stage 1, Stage 2, and Stage 3. Could you introduce that framework for us?\nMadhav Thattai: This framework is a direct result of our learnings over the past 12 months. We recognized that adoption happens in structured stages. Stage 1: Trust is all about getting the foundation right, ensuring executive buy-in and security. Stage 2: Design is where you actually build the agent, focusing on context and control. Stage 3: Scale is where you move from a successful pilot to full-enterprise implementation. We use this to help our customers navigate the journey, and we use it to inform our product roadmap based on what they are learning.\nStage 1: Trust and Alignment\nQ: Stage 1 is about establishing trust. Mark, your team of forward deployed engineers puts you on the front lines. What does trust entail at the beginning of a deployment, and what do companies need to do to get the process started correctly?\nMark Wakelin: You need an executive sponsor who is going to put themselves on the line to be accountable for the outcome of the program. They must have clarity on the business use case and the specific CEO-level KPIs tied to ROI that they are tracking.\nThe other critical element, before you even look at technology, is legal and security compliance. Is the legal team okay with AI being used? Is the industry regulator okay with it? Are there any ethical or humane use issues we should be considering? If you can’t answer those questions, you can’t get to production.\nAdam Evans: Trust isn’t just about safety; it’s about permissions. A public-facing agent needs different capabilities before and after a user authenticates. It must dynamically unlock skills without ever exposing data to the wrong person. There should be no possibility for it to go off the rails, no matter how nicely you ask it. So people need to build agents in a defensive way, just like all apps. And that’s a learning process to get to those best practices.\nThattai: We’re going from a world where everybody has thrown a bunch of stuff at the wall and maybe has a bunch of agents that might not even create that much value. They’ve let 1,000 flowers bloom. Without that business KPI, you’re doing AI for the sake of AI. And that will not lead to value.\nWhat we’re finding is that to build an agent that actually does something at scale that creates real ROI is pretty challenging. The true business value for enterprises doesn’t reside in the AI model alone — it’s in the “last mile.” That is the software layer that translates raw technology into trusted, autonomous execution. To traverse this last mile, agents must be able to reason through complexity and operate on trusted business data, which is exactly where we are focusing.\nStage 2: Design and Context\nQ: Once those foundational elements are locked down in Stage 1, we move to Stage 2: Design, where the focus should be on context, control, and the UX. Mark, your team sees customers wrestling with their data infrastructure at this stage. What are some common pitfalls companies encounter?\nWakelin: The biggest issue is almost always data. We see that the data the customer needs to hydrate an agent and make it useful is either not available or not in the right form to be ingested. For example, an automotive customer wanted an agent to answer questions about vehicle specs. But that data was locked in complex tables, not prose. Our old ingestion engine couldn’t read it, leading to hallucinations.\nWe’re solving this with Data 360 and our acquisition of Informatica, which allows us to unify and harmonize metadata across the enterprise. It provides a live context window so agents don’t guess or hallucinate — they act on a single source of truth.\nThattai: Probably our biggest learning this year is that agents will end up in a kind of “prompt doom loop” if all you’re doing is trying to give them natural language instructions. It works for simple things. Got an agent answering questions on a website? Great. But as you move into more complex business processes, you need more than natural-language instructions. These core workflows benefit from combining LLM flexibility with deterministic execution. The LLM provides the engine, but to reach the destination safely, you need the maps and traffic rules — that’s the deterministic layer. That’s what has driven our hybrid reasoning engine with Agent Script .\nWakelin: For example, companies don’t want their refund policy to be something that gets creatively interpreted by an agent. If you return the item within 60 days, you get your money back, and if you don’t, you don’t.\nIn Deloitte’s case , they wanted to capture and create new customer prospects but at the same time be able to augment those customer records with all kinds of industry data and observations.\nThat called for a deterministic approach while elaborating that data object with learnings from the “joys” that a large language model can bring to the table. We were blending these two technologies for control, accuracy, and business value.\nEvans: Then there’s the UX. For an agent to work, it has to be integrated into the flow of work. In our case, Slackbot is becoming the front door to the Agentic Enterprise. It already knows your context, your teams, and your files. Instead of just being a place to chat, Slackbot acts as a personal work agent that you can access in the flow of work without the “ toggle tax .”\nThattai: UX for the experience tends to be an afterthought. All the time goes into the construction of the agent, but you really want to be design-led. You want to understand what experience you’re trying to build for your employees, for your customers, and then have that drive what kind of tasks the agent is going to do. What things are going to be valuable? How is that going to materialize in the experience? When does the agent escalate and hand off to a human ? That’s really important.\nStage 3: Scale and Orchestration\nQ: We’ve established the foundation of trust and the design principles. Now we move to Stage 3: Scale , the ultimate goal. Adam, you mentioned that customers want multi-agent orchestration but often don’t have enough successful singular agents yet. What is the technical and operational reality of achieving scale?\nEvans: The technical reality of agent-to-agent (A2A) is that the performance is not there yet. The way everyone is doing A2A now is they’re “chatty,” and as soon as you have two or three agents talking, the performance for a live user situation — like a voice interaction — is going to be unacceptable. You need subsecond responses. The solution isn’t to connect up a thousand agents and hope for the best; it’s to focus on context engineering and separating the functionality to be testable. We are investing in roadmap features that allow multiple agents to share memory and execute in a shared memory execution space that’s faster for high-performance situations.\nCustomers that have successfully moved past pilots are focused on killer use cases that are driving ROI, rather than having a thousand agents that don’t create value.\nThattai: At this third stage, as customers mature and they’ve built an agent and are starting to get value from it, they start to ask different questions. “Okay, I built this agent that is executing a process, but I want to do that for 10,000 employees.” Or “I’ve got an agent that’s creating value for a customer who’s engaging on my website; now I want to do that for 10,000 customers proactively.”\nWe are seeing the shift happen now. We have approximately $540 million in agentic AI ARR and 18,500 deals in under a year. Customers like Grupo Falabella are seeing Agentforce now resolve 60% of inquiries without human help. Just three weeks after launching their pilot agent in Colombia, they were already seeing support levels on WhatsApp of 70% — a sign that more customers were getting their questions answered without needing to call.\nQ: How do you start to build out these experiences?\nThattai: Customers think about orchestration. How do they manage all of these complex connections and relationships across these agents? Most customers are realizing that there’s an interesting organization that is emerging that is part line of business, part IT, part technology that all kind of come together to build these agents.\nThere’s also an emerging class of agent managers. Eventually their jobs will be to manage these agents. It might be management of humans and agents together, but those people need tools. Are the agents performing? How do they become better? How do I know that the agent is delivering value? I need to monitor these things at scale, and I need to understand how they need to work.\nWakelin: The challenges might be the pace and scale at which this is happening. But the conversations our forward deployed engineers have had with customers have generated more than 100 product recommendations that are really shaping and driving the roadmap.\nIf you think the value is just in the model, you’ve missed the point. The hyperscalers provide the car, and the LLMs provide the engine. But Salesforce provides the last mile — the traffic signs, the maps, and the security systems that allow the car to actually drive itself safely to the destination.\nNext year, what will really start to take hold is the blending of human and digital labor into a single workforce.\nGo deeper:\nHear from Salesforce’s Head of Engineering on why 95% of AI pilots fail and what the other 5% do differently\nMeet Slackbot, your new agentic work OS BFF\nIn 2025, AI grew up — and learned to play by the rules\nShare article\n5 min read\n4 min read\nBuild and customize autonomous AI agents to support your employees and customers 24/7.\nDiscover Agentforce\nShare article\n5 min read\n4 min read\nBuild and customize autonomous AI agents to support your employees and customers 24/7.\nDiscover Agentforce\nExplore related content by topic\nAgentic Enterprise\nAgents\nAI\nDigital Transformation\n5 min read\n5 min read\n5 min read\n3 min read\nGet the latest Salesforce News\nSubscribe\nClose",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-005-the-3-keys-to-navigating-the-last-mile-of-ai-adoption-salesforce.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-29/r-005-the-3-keys-to-navigating-the-last-mile-of-ai-adoption-salesforce.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 94,
+  "extractor_diagnostics": {
+    "readability_score": 94,
+    "text_length": 10893,
+    "paragraph_count": 44,
+    "sentence_count": 104,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 10893,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "4ee47fab13dba8a2",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "merged_provider_duplicates",
+  "url_hash": "b46e03ac3127a70b",
+  "content_hash": "4ee47fab13dba8a2",
+  "full_text_hash": "4ee47fab13dba8a2",
+  "semantic_hash": "dbab7b90ca042f87",
+  "duplicate_of": "merged 2 duplicate provider hit(s) before Raw selection",
+  "first_seen_at": "2026-01-22T18:00:00.000Z",
+  "last_seen_at": "2026-06-29T05:41:17.733Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "The conversation around generative AI is no longer about whether the technology can work but how, and how quickly, enterprises can scale it securely and effectively to see true value — how they can span the proverbial last mile. But the road from pilot to production has significant challenges. Too often, the narrative is that AI is easy and seamless, which sets up customers for missed expectations. ... Madhav Thattai: This framework is a direct result of our learnings over the past 12 months. We recognized that ado",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "0% Participants: Adam Evans: EVP & GM, Salesforce AI Platform Madhav Thattai: COO, Salesforce AI Mark Wakelin: EVP, Forward Deployed Engineering The conversation around generative AI is no longer about whether the technology can work but how, and how quickly, enterprises can scale it securely and effectively to see true value — how they can span the proverbial last mile.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "But the road from pilot to production has significant challenges.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Too often, the narrative is that AI is easy and seamless, which sets up customers for missed expectations.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "This conversation with three Salesforce executives helps surface the fuller, more authentic picture.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Q: You’re building the roadmap, helping deploy the agents, and working through the realities of the transformation into being an Agentic Enterprise .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Exa",
+      "Salesforce",
+      "Deloitte"
+    ],
+    "products": [
+      "agent",
+      "agents",
+      "Agent",
+      "Agents"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队",
+      "法务 / 律师",
+      "销售 / 客服"
+    ],
+    "workflows": [
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "3",
+      "12 m",
+      "1",
+      "2",
+      "$540 million",
+      "18",
+      "500",
+      "60%"
+    ],
+    "quotes": [
+      "last mile.",
+      "prompt doom loop",
+      " toggle tax .",
+      "Okay, I built this agent that is executing a process, but I want to do that for 10,000 employees.",
+      "I’ve got an agent that’s creating value for a customer who’s engaging on my website; now I want to do that for 10,000 customers proactively."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Q: You’re building the roadmap, helping deploy the agents, and working through the realities of the transformation into being an Agentic Enterprise ."
+    ],
+    "case_details": [
+      "The conversation around generative AI is no longer about whether the technology can work but how, and how quickly, enterprises can scale it securely and effectively to see true value — how they can span the proverbial last mile. But the road from pilot to production has significant challenges. Too often, the narrative is that AI is easy and seamless, which sets up customers for missed expectations. ... Madhav Thattai: This framework is a direct result of our learnings over the past 12 months. We recognized that ado",
+      "But the road from pilot to production has significant challenges.",
+      "Too often, the narrative is that AI is easy and seamless, which sets up customers for missed expectations."
+    ],
+    "workflow_changes": [
+      "This conversation with three Salesforce executives helps surface the fuller, more authentic picture."
+    ],
+    "before_after_clues": [
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队",
+      "法务 / 律师",
+      "销售 / 客服"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "market_shaping_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "relationship_graph_input": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# The 3 Keys to Navigating the ‘Last Mile’ of AI Adoption - Salesforce\n\n- raw_id: R-005\n- original_url: https://www.salesforce.com/news/stories/mature-agentic-enterprise-deployment/\n- source_name: keyword search / Exa\n- collected_at: 2026-06-29T05:41:17.733Z\n\n## clean_text\n\n0%\nParticipants:\nAdam Evans: EVP & GM, Salesforce AI Platform\nMadhav Thattai: COO, Salesforce AI\nMark Wakelin: EVP, Forward Deployed Engineering\nThe conversation around generative AI is no longer about whether the technology can work but how, and how quickly, enterprises can scale it securely and effectively to see true value — how they can span the proverbial last mile. But the road from pilot to production has significant challenges. Too often, the narrative is that AI is easy and seamless, which sets up customers for missed expectations.\nThis conversation with three Salesforce executives helps surface the fuller, more authentic picture.\nQ: You’re building the roadmap, helping deploy the agents, and working through the realities of the transformation into being an Agentic Enterprise . Madhav, you’ve distilled this journey into three distinct stages: Stage 1, Stage 2, and Stage 3. Could you introduce that framework for us?\nMadhav Thattai: This framework is a direct result of our learnings over the past 12 months. We recognized that adoption happens in structured stages. Stage 1: Trust is all about getting the foundation right, ensuring executive buy-in and security. Stage 2: Design is where you actually build the agent, focusing on context and control. Stage 3: Scale is where you move from a successful pilot to full-enterprise implementation. We use this to help our customers navigate the journey, and we use it to inform our product roadmap based on what they are learning.\nStage 1: Trust and Alignment\nQ: Stage 1 is about establishing trust. Mark, your team of forward deployed engineers puts you on the front lines. What does trust entail at the beginning of a deployment, and what do companies need to do to get the process started correctly?\nMark Wakelin: You need an executive sponsor who is going to put themselves on the line to be accountable for the outcome of the program. They must have clarity on the business use case and the specific CEO-level KPIs tied to ROI that they are tracking.\nThe other critical element, before you even look at technology, is legal and security compliance. Is the legal team okay with AI being used? Is the industry regulator okay with it? Are there any ethical or humane use issues we should be considering? If you can’t answer those questions, you can’t get to production.\nAdam Evans: Trust isn’t just about safety; it’s about permissions. A public-facing agent needs different capabilities before and after a user authenticates. It must dynamically unlock skills without ever exposing data to the wrong person. There should be no possibility for it to go off the rails, no matter how nicely you ask it. So people need to build agents in a defensive way, just like all apps. And that’s a learning process to get to those best practices.\nThattai: We’re going from a world where everybody has thrown a bunch of stuff at the wall and maybe has a bunch of agents that might not even create that much value. They’ve let 1,000 flowers bloom. Without that business KPI, you’re doing AI for the sake of AI. And that will not lead to value.\nWhat we’re finding is that to build an agent that actually does something at scale that creates real ROI is pretty challenging. The true business value for enterprises doesn’t reside in the AI model alone — it’s in the “last mile.” That is the software layer that translates raw technology into trusted, autonomous execution. To traverse this last mile, agents must be able to reason through complexity and operate on trusted business data, which is exactly where we are focusing.\nStage 2: Design and Context\nQ: Once those foundational elements are locked down in Stage 1, we move to Stage 2: Design, where the focus should be on context, control, and the UX. Mark, your team sees customers wrestling with their data infrastructure at this stage. What are some common pitfalls companies encounter?\nWakelin: The biggest issue is almost always data. We see that the data the customer needs to hydrate an agent and make it useful is either not available or not in the right form to be ingested. For example, an automotive customer wanted an agent to answer questions about vehicle specs. But that data was locked in complex tables, not prose. Our old ingestion engine couldn’t read it, leading to hallucinations.\nWe’re solving this with Data 360 and our acquisition of Informatica, which allows us to unify and harmonize metadata across the enterprise. It provides a live context window so agents don’t guess or hallucinate — they act on a single source of truth.\nThattai: Probably our biggest learning this year is that agents will end up in a kind of “prompt doom loop” if all you’re doing is trying to give them natural language instructions. It works for simple things. Got an agent answering questions on a website? Great. But as you move into more complex business processes, you need more than natural-language instructions. These core workflows benefit from combining LLM flexibility with deterministic execution. The LLM provides the engine, but to reach the destination safely, you need the maps and traffic rules — that’s the deterministic layer. That’s what has driven our hybrid reasoning engine with Agent Script .\nWakelin: For example, companies don’t want their refund policy to be something that gets creatively interpreted by an agent. If you return the item within 60 days, you get your money back, and if you don’t, you don’t.\nIn Deloitte’s case , they wanted to capture and create new customer prospects but at the same time be able to augment those customer records with all kinds of industry data and observations.\nThat called for a deterministic approach while elaborating that data object with learnings from the “joys” that a large language model can bring to the table. We were blending these two technologies for control, accuracy, and business value.\nEvans: Then there’s the UX. For an agent to work, it has to be integrated into the flow of work. In our case, Slackbot is becoming the front door to the Agentic Enterprise. It already knows your context, your teams, and your files. Instead of just being a place to chat, Slackbot acts as a personal work agent that you can access in the flow of work without the “ toggle tax .”\nThattai: UX for the experience tends to be an afterthought. All the time goes into the construction of the agent, but you really want to be design-led. You want to understand what experience you’re trying to build for your employees, for your customers, and then have that drive what kind of tasks the agent is going to do. What things are going to be valuable? How is that going to materialize in the experience? When does the agent escalate and hand off to a human ? That’s really important.\nStage 3: Scale and Orchestration\nQ: We’ve established the foundation of trust and the design principles. Now we move to Stage 3: Scale , the ultimate goal. Adam, you mentioned that customers want multi-agent orchestration but often don’t have enough successful singular agents yet. What is the technical and operational reality of achieving scale?\nEvans: The technical reality of agent-to-agent (A2A) is that the performance is not there yet. The way everyone is doing A2A now is they’re “chatty,” and as soon as you have two or three agents talking, the performance for a live user situation — like a voice interaction — is going to be unacceptable. You need subsecond responses. The solution isn’t to connect up a thousand agents and hope for the best; it’s to focus on context engineering and separating the functionality to be testable. We are investing in roadmap features that allow multiple agents to share memory and execute in a shared memory execution space that’s faster for high-performance situations.\nCustomers that have successfully moved past pilots are focused on killer use cases that are driving ROI, rather than having a thousand agents that don’t create value.\nThattai: At this third stage, as customers mature and they’ve built an agent and are starting to get value from it, they start to ask different questions. “Okay, I built this agent that is executing a process, but I want to do that for 10,000 employees.” Or “I’ve got an agent that’s creating value for a customer who’s engaging on my website; now I want to do that for 10,000 customers proactively.”\nWe are seeing the shift happen now. We have approximately $540 million in agentic AI ARR and 18,500 deals in under a year. Customers like Grupo Falabella are seeing Agentforce now resolve 60% of inquiries without human help. Just three weeks after launching their pilot agent in Colombia, they were already seeing support levels on WhatsApp of 70% — a sign that more customers were getting their questions answered without needing to call.\nQ: How do you start to build out these experiences?\nThattai: Customers think about orchestration. How do they manage all of these complex connections and relationships across these agents? Most customers are realizing that there’s an interesting organization that is emerging that is part line of business, part IT, part technology that all kind of come together to build these agents.\nThere’s also an emerging class of agent managers. Eventually their jobs will be to manage these agents. It might be management of humans and agents together, but those people need tools. Are the agents performing? How do they become better? How do I know that the agent is delivering value? I need to monitor these things at scale, and I need to understand how they need to work.\nWakelin: The challenges might be the pace and scale at which this is happening. But the conversations our forward deployed engineers have had with customers have generated more than 100 product recommendations that are really shaping and driving the roadmap.\nIf you think the value is just in the model, you’ve missed the point. The hyperscalers provide the car, and the LLMs provide the engine. But Salesforce provides the last mile — the traffic signs, the maps, and the security systems that allow the car to actually drive itself safely to the destination.\nNext year, what will really start to take hold is the blending of human and digital labor into a single workforce.\nGo deeper:\nHear from Salesforce’s Head of Engineering on why 95% of AI pilots fail and what the other 5% do differently\nMeet Slackbot, your new agentic work OS BFF\nIn 2025, AI grew up — and learned to play by the rules\nShare article\n5 min read\n4 min read\nBuild and customize autonomous AI agents to support your employees and customers 24/7.\nDiscover Agentforce\nShare article\n5 min read\n4 min read\nBuild and customize autonomous AI agents to support your employees and customers 24/7.\nDiscover Agentforce\nExplore related content by topic\nAgentic Enterprise\nAgents\nAI\nDigital Transformation\n5 min read\n5 min read\n5 min read\n3 min read\nGet the latest Salesforce News\nSubscribe\nClose\n\n## full_text\n\n0%\nParticipants:\nAdam Evans: EVP & GM, Salesforce AI Platform\nMadhav Thattai: COO, Salesforce AI\nMark Wakelin: EVP, Forward Deployed Engineering\nThe conversation around generative AI is no longer about whether the technology can work but how, and how quickly, enterprises can scale it securely and effectively to see true value — how they can span the proverbial last mile. But the road from pilot to production has significant challenges. Too often, the narrative is that AI is easy and seamless, which sets up customers for missed expectations.\nThis conversation with three Salesforce executives helps surface the fuller, more authentic picture.\nQ: You’re building the roadmap, helping deploy the agents, and working through the realities of the transformation into being an Agentic Enterprise . Madhav, you’ve distilled this journey into three distinct stages: Stage 1, Stage 2, and Stage 3. Could you introduce that framework for us?\nMadhav Thattai: This framework is a direct result of our learnings over the past 12 months. We recognized that adoption happens in structured stages. Stage 1: Trust is all about getting the foundation right, ensuring executive buy-in and security. Stage 2: Design is where you actually build the agent, focusing on context and control. Stage 3: Scale is where you move from a successful pilot to full-enterprise implementation. We use this to help our customers navigate the journey, and we use it to inform our product roadmap based on what they are learning.\nStage 1: Trust and Alignment\nQ: Stage 1 is about establishing trust. Mark, your team of forward deployed engineers puts you on the front lines. What does trust entail at the beginning of a deployment, and what do companies need to do to get the process started correctly?\nMark Wakelin: You need an executive sponsor who is going to put themselves on the line to be accountable for the outcome of the program. They must have clarity on the business use case and the specific CEO-level KPIs tied to ROI that they are tracking.\nThe other critical element, before you even look at technology, is legal and security compliance. Is the legal team okay with AI being used? Is the industry regulator okay with it? Are there any ethical or humane use issues we should be considering? If you can’t answer those questions, you can’t get to production.\nAdam Evans: Trust isn’t just about safety; it’s about permissions. A public-facing agent needs different capabilities before and after a user authenticates. It must dynamically unlock skills without ever exposing data to the wrong person. There should be no possibility for it to go off the rails, no matter how nicely you ask it. So people need to build agents in a defensive way, just like all apps. And that’s a learning process to get to those best practices.\nThattai: We’re going from a world where everybody has thrown a bunch of stuff at the wall and maybe has a bunch of agents that might not even create that much value. They’ve let 1,000 flowers bloom. Without that business KPI, you’re doing AI for the sake of AI. And that will not lead to value.\nWhat we’re finding is that to build an agent that actually does something at scale that creates real ROI is pretty challenging. The true business value for enterprises doesn’t reside in the AI model alone — it’s in the “last mile.” That is the software layer that translates raw technology into trusted, autonomous execution. To traverse this last mile, agents must be able to reason through complexity and operate on trusted business data, which is exactly where we are focusing.\nStage 2: Design and Context\nQ: Once those foundational elements are locked down in Stage 1, we move to Stage 2: Design, where the focus should be on context, control, and the UX. Mark, your team sees customers wrestling with their data infrastructure at this stage. What are some common pitfalls companies encounter?\nWakelin: The biggest issue is almost always data. We see that the data the customer needs to hydrate an agent and make it useful is either not available or not in the right form to be ingested. For example, an automotive customer wanted an agent to answer questions about vehicle specs. But that data was locked in complex tables, not prose. Our old ingestion engine couldn’t read it, leading to hallucinations.\nWe’re solving this with Data 360 and our acquisition of Informatica, which allows us to unify and harmonize metadata across the enterprise. It provides a live context window so agents don’t guess or hallucinate — they act on a single source of truth.\nThattai: Probably our biggest learning this year is that agents will end up in a kind of “prompt doom loop” if all you’re doing is trying to give them natural language instructions. It works for simple things. Got an agent answering questions on a website? Great. But as you move into more complex business processes, you need more than natural-language instructions. These core workflows benefit from combining LLM flexibility with deterministic execution. The LLM provides the engine, but to reach the destination safely, you need the maps and traffic rules — that’s the deterministic layer. That’s what has driven our hybrid reasoning engine with Agent Script .\nWakelin: For example, companies don’t want their refund policy to be something that gets creatively interpreted by an agent. If you return the item within 60 days, you get your money back, and if you don’t, you don’t.\nIn Deloitte’s case , they wanted to capture and create new customer prospects but at the same time be able to augment those customer records with all kinds of industry data and observations.\nThat called for a deterministic approach while elaborating that data object with learnings from the “joys” that a large language model can bring to the table. We were blending these two technologies for control, accuracy, and business value.\nEvans: Then there’s the UX. For an agent to work, it has to be integrated into the flow of work. In our case, Slackbot is becoming the front door to the Agentic Enterprise. It already knows your context, your teams, and your files. Instead of just being a place to chat, Slackbot acts as a personal work agent that you can access in the flow of work without the “ toggle tax .”\nThattai: UX for the experience tends to be an afterthought. All the time goes into the construction of the agent, but you really want to be design-led. You want to understand what experience you’re trying to build for your employees, for your customers, and then have that drive what kind of tasks the agent is going to do. What things are going to be valuable? How is that going to materialize in the experience? When does the agent escalate and hand off to a human ? That’s really important.\nStage 3: Scale and Orchestration\nQ: We’ve established the foundation of trust and the design principles. Now we move to Stage 3: Scale , the ultimate goal. Adam, you mentioned that customers want multi-agent orchestration but often don’t have enough successful singular agents yet. What is the technical and operational reality of achieving scale?\nEvans: The technical reality of agent-to-agent (A2A) is that the performance is not there yet. The way everyone is doing A2A now is they’re “chatty,” and as soon as you have two or three agents talking, the performance for a live user situation — like a voice interaction — is going to be unacceptable. You need subsecond responses. The solution isn’t to connect up a thousand agents and hope for the best; it’s to focus on context engineering and separating the functionality to be testable. We are investing in roadmap features that allow multiple agents to share memory and execute in a shared memory execution space that’s faster for high-performance situations.\nCustomers that have successfully moved past pilots are focused on killer use cases that are driving ROI, rather than having a thousand agents that don’t create value.\nThattai: At this third stage, as customers mature and they’ve built an agent and are starting to get value from it, they start to ask different questions. “Okay, I built this agent that is executing a process, but I want to do that for 10,000 employees.” Or “I’ve got an agent that’s creating value for a customer who’s engaging on my website; now I want to do that for 10,000 customers proactively.”\nWe are seeing the shift happen now. We have approximately $540 million in agentic AI ARR and 18,500 deals in under a year. Customers like Grupo Falabella are seeing Agentforce now resolve 60% of inquiries without human help. Just three weeks after launching their pilot agent in Colombia, they were already seeing support levels on WhatsApp of 70% — a sign that more customers were getting their questions answered without needing to call.\nQ: How do you start to build out these experiences?\nThattai: Customers think about orchestration. How do they manage all of these complex connections and relationships across these agents? Most customers are realizing that there’s an interesting organization that is emerging that is part line of business, part IT, part technology that all kind of come together to build these agents.\nThere’s also an emerging class of agent managers. Eventually their jobs will be to manage these agents. It might be management of humans and agents together, but those people need tools. Are the agents performing? How do they become better? How do I know that the agent is delivering value? I need to monitor these things at scale, and I need to understand how they need to work.\nWakelin: The challenges might be the pace and scale at which this is happening. But the conversations our forward deployed engineers have had with customers have generated more than 100 product recommendations that are really shaping and driving the roadmap.\nIf you think the value is just in the model, you’ve missed the point. The hyperscalers provide the car, and the LLMs provide the engine. But Salesforce provides the last mile — the traffic signs, the maps, and the security systems that allow the car to actually drive itself safely to the destination.\nNext year, what will really start to take hold is the blending of human and digital labor into a single workforce.\nGo deeper:\nHear from Salesforce’s Head of Engineering on why 95% of AI pilots fail and what the other 5% do differently\nMeet Slackbot, your new agentic work OS BFF\nIn 2025, AI grew up — and learned to play by the rules\nShare article\n5 min read\n4 min read\nBuild and customize autonomous AI agents to support your employees and customers 24/7.\nDiscover Agentforce\nShare article\n5 min read\n4 min read\nBuild and customize autonomous AI agents to support your employees and customers 24/7.\nDiscover Agentforce\nExplore related content by topic\nAgentic Enterprise\nAgents\nAI\nDigital Transformation\n5 min read\n5 min read\n5 min read\n3 min read\nGet the latest Salesforce News\nSubscribe\nClose\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 94\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] The conversation around generative AI is no longer about whether the technology can work but how, and how quickly, enterprises can scale it securely and effectively to see true value — how they can span the proverbial last mile. But the road from pilot to production has significant challenges. Too often, the narrative is that AI is easy and seamless, which sets up customers for missed expectations. ... Madhav Thattai: This framework is a direct result of our learnings over the past 12 months. We recognized that ado\n2. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] 0% Participants: Adam Evans: EVP & GM, Salesforce AI Platform Madhav Thattai: COO, Salesforce AI Mark Wakelin: EVP, Forward Deployed Engineering The conversation around generative AI is no longer about whether the technology can work but how, and how quickly, enterprises can scale it securely and effectively to see true value — how they can span the proverbial last mile.\n3. [case_detail / signal_card_candidate, relationship_graph_input, case / high] But the road from pilot to production has significant challenges.\n4. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Too often, the narrative is that AI is easy and seamless, which sets up customers for missed expectations.\n5. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] This conversation with three Salesforce executives helps surface the fuller, more authentic picture.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Q: You’re building the roadmap, helping deploy the agents, and working through the realities of the transformation into being an Agentic Enterprise .\n"
+}

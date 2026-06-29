@@ -28,9 +28,7 @@ It produces:
 
 It does not produce:
 
-- daily observation;
-- business brief;
-- trend report;
+- legacy content outputs;
 - frontstage copy;
 - recommendations or Guanlan-style judgments.
 
@@ -70,6 +68,8 @@ Pool is screened evidence.
 - clear importance reason.
 
 Pool type is not Card type.
+
+`important_technical_trend` is monitored as context for source repair, relationship analysis, and trend-candidate work. It must not be used to fill formal Signal Card quantity unless the same source also proves a dated product/service launch, funding event, customer deployment, procurement, partnership, or production rollout.
 
 Signal Card promotion from Core Pool must use the six entry gates in `context/07-v3-intelligence-generation-rules.md`:
 

@@ -1,107 +1,53 @@
 # 2026-06-29 Pool-to-Card Handoff
 
-- generated_at: 2026-06-29T05:32:58.437Z
-- written_count: 29
+- generated_at: 2026-06-29T11:48:52.838Z
+- written_count: 11
 - merged_count: 0
-- skipped_count: 1
-- signal_asset_count: 28
-- core_pool_not_promoted_count: 7
-- frontstage_target_count: 10
+- skipped_count: 0
+- signal_asset_count: 10
+- core_pool_not_promoted_count: 23
+- frontstage_top10_target_count: 10
+- asset_generation_limit: all_qualified_core_pool
 - signal_asset_mode: all qualified Core Pool items
 
 ## Signal Card Assets
 
-- SIG-20260629-A01｜P-083｜Former Coatue Partner 为 AI Agent 初创公司完成 6500 万美元种子轮融资
-- SIG-20260629-A02｜P-003｜面向初创公司和企业的 AI 开发服务
-- SIG-20260629-A03｜P-016｜Future Works：应用型 AI 智能
-- SIG-20260629-A04｜P-029｜Movate 与 MelodyArc 宣布应用 AI 合作
-- SIG-20260629-A05｜P-085｜2026 年 5 月 AI Agent 医疗工具
-- SIG-20260629-A06｜P-086｜Suno 推出 Spark 孵化器计划，面向独立艺术家
-- SIG-20260629-A07｜P-087｜Pulumi：2026 年 AI Agent 构建方式的变化
-- SIG-20260629-A08｜P-033｜Bessemer：AI 定价与商业化手册
-- SIG-20260629-A09｜P-035｜在 GPU Cloud 上部署小语言模型的企业指南
-- SIG-20260629-A10｜P-036｜2026 年企业 AI 基础设施最佳实践
-- SIG-20260629-A11｜P-049｜ChatMaxima：2026 年 AI 客户支持统计与趋势
-- SIG-20260629-A12｜P-052｜2026 年保险行业 AI 工作流自动化指南
-- SIG-20260629-A13｜P-056｜2026 年保险公司 AI 成本、规则与路线图
-- SIG-20260629-A14｜P-065｜Deloitte：2026 年企业 AI 状态报告
-- SIG-20260629-A16｜P-069｜2026 年 AI 咨询格局与本地化部署
-- SIG-20260629-A17｜P-070｜2026 年 AI 工作流自动化趋势
-- SIG-20260629-A18｜P-002｜Stripe 金融合规生产级 AI Agent 经验
-- SIG-20260629-A19｜P-031｜Smartsheet Claude Platform API 案例研究
-- SIG-20260629-A20｜P-043｜2026 年企业 RAG 平台买方指南
-- SIG-20260629-A21｜P-051｜Salesforce：2026 年 AI Agent 演进的 8 种方式
-- SIG-20260629-A22｜P-077｜Microsoft Work IQ：Copilot Credits 重置 2027 年预算
-- SIG-20260629-A23｜P-005｜GitHub 2026 年 6 月发布说明与最新更新
-- SIG-20260629-A24｜P-050｜Digital Applied：2026 年 AI Agent 生产力统计与 ROI 数据
-- SIG-20260629-A25｜P-082｜2026 年 22 个 AI 工作流自动化示例
-- SIG-20260629-A26｜P-048｜Microsoft Build 2026 新闻集 AI 回顾
-- SIG-20260629-A27｜P-081｜Cobbai：AI 支持从试点走向企业级推出的商业案例
-- SIG-20260629-A28｜P-080｜自动化岗位相关公司资助 10 亿美元再培训计划
-- SIG-20260629-A29｜P-084｜OpenAI 2026 年 6 月发布说明与最新更新
+- SIG-20260629-A01｜P-002｜Convey 获得 a16z 领投的 3800 万美元 A 轮融资
+- SIG-20260629-A02｜P-008｜Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资
+- SIG-20260629-A03｜P-010｜Sail Research 获得 8000 万美元融资，建设 AI Agent 高效基础设施
+- SIG-20260629-A04｜P-011｜Infosys 与 Sentara 合作推动医疗服务中的企业 AI 应用
+- SIG-20260629-A05｜P-051｜Databricks 发布 Genie One：面向每个团队的智能协作 Agent
+- SIG-20260629-A06｜P-055｜Talkdesk 降低客户面对型 AI 部署的不确定性
+- SIG-20260629-A07｜P-053｜Vercel 发布 AI SDK 7
+- SIG-20260629-A08｜P-044｜Scaled Cognition 获得 Khosla 领投的 1 亿美元融资
+- SIG-20260629-A09｜P-059｜Upbound 发布 Modelplane 开源控制平面
+- SIG-20260629-A10｜P-047｜JustAI 获得 1700 万美元 A 轮融资，扩展 AI 营销自动化
 
 ## Cluster / Dedupe Rows
 
-- P-083｜hash:e509c87230350ed2｜accepted
-- P-003｜hash:d175577f34a7d281｜accepted
-- P-016｜hash:25099df052a31e5d｜accepted
-- P-029｜hash:7d22b94caa3b75bb｜accepted
-- P-085｜hash:ccb822372207cd2e｜accepted
-- P-086｜hash:32ce927e2362c570｜accepted
-- P-087｜hash:a8783f4450575664｜accepted
-- P-033｜hash:ff6b5c5fe687fdff｜accepted
-- P-035｜hash:46341afdeab0d50d｜accepted
-- P-036｜hash:fc5a0932010be05b｜accepted
-- P-049｜hash:6c219c6f5d0aeb1c｜accepted
-- P-052｜hash:3e4025ec700d7d24｜accepted
-- P-056｜hash:49a133d715d1424c｜accepted
-- P-065｜hash:74505f24bdd8b058｜accepted
-- P-066｜deloitte deloitte 2026 年企业 ai 状态报告｜skipped｜duplicate_fact_fingerprint
-- P-069｜hash:fac61aba8481ecd1｜accepted
-- P-070｜hash:663ebcb3e0b82fd6｜accepted
-- P-002｜hash:a532f599671811d0｜accepted
-- P-031｜hash:3a8578d28c080684｜accepted
-- P-043｜hash:ccc61c8d53cfad27｜accepted
-- P-051｜hash:f34b62c314216243｜accepted
-- P-077｜hash:26f019c7e5b9b02b｜accepted
-- P-005｜hash:de517ba482d19e4b｜accepted
-- P-050｜hash:82f2144dc542193a｜accepted
-- P-082｜hash:61d1bad3e927abfc｜accepted
-- P-048｜hash:b93144b37dd44a04｜accepted
-- P-081｜hash:d2f6f30335d105a8｜accepted
-- P-080｜hash:d518b324ba256ead｜accepted
-- P-084｜hash:35c23e1ed19749a3｜accepted
+- P-002｜hash:aa1608898745e0a2｜accepted
+- P-008｜hash:3ca48ddc85e02167｜accepted
+- P-010｜hash:314c02d8610d1604｜accepted
+- P-011｜hash:03eb4395fc1bc54e｜accepted
+- P-051｜hash:ca71f6dc7daf9194｜accepted
+- P-055｜hash:b95048d37b7b59d6｜accepted
+- P-053｜hash:f8c9b1754c80a2f5｜accepted
+- P-044｜hash:b4a25bfc769ddf20｜accepted
+- P-059｜hash:1e904f9c0fdcb437｜accepted
+- P-047｜hash:3fd085545f2f2af5｜accepted
 
 ## Written
 
-- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-29--signal--former-coatue-partner-auto-signal-p-083.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--that-auto-signal-p-003.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--applied-ai-intelligence-auto-signal-p-016.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--movate-auto-signal-p-029.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-29--signal--ai-agent-healthcare-tools-may-2026-auto-signal-p-085.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-29--signal--suno-auto-signal-p-086.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-29--signal--how-building-ai-agents-has-changed-in-2026-auto-signal-p-087.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--ai-pricing-and-monetization-playbook-auto-signal-p-033.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--deploy-small-language-models-on-gpu-cloud-auto-signal-p-035.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--ai-infrastructure-best-practices-2026-auto-signal-p-036.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--chatmaxima-auto-signal-p-049.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--bizdata360-auto-signal-p-052.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--ai-for-insurance-companies-auto-signal-p-056.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--deloitte-auto-signal-p-065.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--ai-consulting-landscape-2026-deploy-on-auto-signal-p-069.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--ai-workflow-automation-trends-in-2026-auto-signal-p-070.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--production-auto-signal-p-002.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--claude-auto-signal-p-031.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--best-enterprise-rag-platforms-for-2026-auto-signal-p-043.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--8-ways-ai-agents-are-evolving-in-2026-auto-signal-p-051.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--microsoft-work-iq-auto-signal-p-077.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--github-release-notes-auto-signal-p-005.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--ai-agent-productivity-statistics-2026-auto-signal-p-050.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--gumloop-auto-signal-p-082.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--live-auto-signal-p-048.md
-- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--business-case-story-auto-signal-p-081.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-29--signal--the-decoder-auto-signal-p-080.md
-- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-29--signal--openai-release-notes-auto-signal-p-084.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-29--signal--convey-auto-signal-p-002.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-29--signal--trase-auto-signal-p-008.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-29--signal--sail-research-auto-signal-p-010.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--infosys-sentara-auto-signal-p-011.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--databricks-auto-signal-p-051.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--talkdesk-auto-signal-p-055.md
+- 01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-06-29--signal--ai-sdk-7-is-now-available-auto-signal-p-053.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-29--signal--scaled-cognition-auto-signal-p-044.md
+- 01-SiteV2/knowledge/01-Signal-Cards/case/2026-06-29--signal--upbound-auto-signal-p-059.md
+- 01-SiteV2/knowledge/01-Signal-Cards/funding/2026-06-29--signal--justai-auto-signal-p-047.md
 - 01-SiteV2/content/04-business-signals/signals/2026-06-29-signals.md
 
 ## Merged
@@ -110,14 +56,30 @@
 
 ## Skipped
 
-- P-066: duplicate fact fingerprint deloitte deloitte 2026 年企业 ai 状态报告
+- none
 
 ## Core Pool Not Promoted
 
-- P-007: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=Runlayer Raises $30M Series A as Enterprise AI Governance Becomes Core Infrastructure | DevCuration
-- P-010: fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact; repair=Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.; priority=low; title=Telnyx deploys engineers to build your Voice AI Agents
-- P-021: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=OpenAI's deployment chief on Codex growth, falling AI prices, and the ROI question
-- P-053: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=How AI Automated Insurance Claims With 99% Accuracy | Customer Story
-- P-057: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=AI Customer Service in MENA: 2026 State of Play | Eshal Blog
-- P-078: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=China’s Z.ai claims it can match Mythos on cybersecurity
-- P-079: fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=low; title=Asian AI startups launch Mythos-like models as Anthropic&#8217;s export ban drags on
+- P-014: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Introducing Agent Steward: The First AI Agent That Owns Customer…
+- P-015: source_auditability:source_title_translation_missing_or_contaminated; repair=Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.; priority=medium; title=Microsoft MAI Models: 10x Cost Cut, Full Enterprise Control | THE D[AI]LY BRIEF
+- P-017: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=Introducing Modelplane: the control plane for AI inference · Modelplane Blog
+- P-018: valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Designing distributed AI inference: Core concepts and scaling dimensions | Red Hat Developer
+- P-022: source_auditability:discovery_source_not_resolved, source_auditability:source_title_translation_missing_or_contaminated; repair=Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.; priority=medium; title=Salesforce Signs Definitive Agreement to Acquire Fin - Salesforce
+- P-023: source_auditability:source_title_translation_missing_or_contaminated, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.; priority=low; title=China’s Z.ai claims it can match Mythos on cybersecurity
+- P-024: source_auditability:source_title_translation_missing_or_contaminated, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.; priority=low; title=Asian AI startups launch Mythos-like models as Anthropic&#8217;s export ban drags on
+- P-025: fact_type_constraints:workforce_retraining_program_not_formal_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Keep workforce retraining or public funding programs as context; promote only single-company financing, product/service launch, or customer deployment evidence.; priority=low; title=The companies most likely to automate your job are now funding a $1 billion program to retrain you
+- P-036: valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Production-grade AI agents for financial compliance: Lessons from Stripe | Artificial Intelligence
+- P-037: source_auditability:source_title_translation_missing_or_contaminated, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.; priority=low; title=Evidence Spine: From Request to Rollout Judgment - Secure AI Agent Architecture
+- P-038: auto_signal_spec_null; repair=Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.; priority=review; title=Transforming Manufacturing at Pfizer: The Hard Part Was Not the Technology
+- P-042: business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated; repair=Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.; priority=medium; title=Gemini Enterprise Agent Platform (formerly Vertex AI) | Google Cloud
+- P-043: source_auditability:source_title_translation_missing_or_contaminated, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.; priority=low; title=Runlayer Raises $30M Series A as Enterprise AI Governance Becomes Core Infrastructure | DevCuration
+- P-045: business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=You.com | Factory Cuts Droid Web Search Latency by 5x & Pushes Reliability Past 99.9%
+- P-050: valid_page_type:technical_article_without_business_event, fact_type_constraints:workforce_retraining_program_not_formal_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Copilot Cowork is now generally available | Microsoft 365 Blog
+- P-054: business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=review; title=i10X launches Superagent
+- P-074: business_signal_scope:unsupported_importance_type:important_technical_trend, business_signal_scope:technical_trend_is_context_not_signal_card, fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Language Modeling Reading List (to Start Your Paper Club)
+- P-075: fact_type_constraints:builder_or_opinion_source_not_business_fact, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.; priority=low; title=Obsidian-Copilot: An Assistant for Writing &amp; Reflecting
+- P-078: fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=Data Discovery Platforms and Their Open Source Solutions
+- P-079: fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated, fact_type_constraints:non_commercial_policy_or_ethics_signal; repair=Use the newsletter only as discovery context; recapture the original dated event source before promoting.; priority=low; title=Bye bye Fable
+- P-081: fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event; repair=Use the newsletter only as discovery context; recapture the original dated event source before promoting.; priority=low; title=SpaceX Colossus deal 🚀, GPT-5.5 Cyber launch 🛡️, Codex as workspace 🤖
+- P-086: source_auditability:source_title_translation_missing_or_contaminated; repair=Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.; priority=medium; title=ion design: AI that creates & tests 100s of landing pages for your product | Y Combinator
+- P-088: valid_page_type:generic_report_or_list_not_fact_signal, valid_page_type:repository_catalog_or_directory_page, valid_page_type:index_or_directory_url, source_auditability:source_title_translation_missing_or_contaminated, valid_page_type:docs_or_catalog_or_investing_thesis; repair=Resolve to a dated single company, product, funding, or customer event before promoting.; priority=low; title=v0.7 — Pilot launch · elNudge Docs

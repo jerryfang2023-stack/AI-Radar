@@ -2,6 +2,11 @@
 
 Keep this file short. Add only durable lane-level lessons from repeated production failures.
 
+## 2026-06-29 Formal Card Boundary
+
+- Business Signals has four formal Card lanes: funding, product/service, case, and vertical solution. `important_technical_trend` remains useful context for source repair, graph analysis, and trend-candidate work, but it must not enter Core Pool / Signal Card quantity unless the same source also proves a dated formal business event.
+- Repeated Top10 failures should not be fixed by weakening Card gates. If formal supply is short, refill the missing formal lane from original source pages; do not promote technical explainers, builder opinions, newsletters, workforce retraining / public-funding programs, docs, generic lists, or template facts as cards.
+
 ## 2026-06-27 Weekly Failure Review: Targeted Repair Before Full Rerun
 
 - The 2026-06-21 through 2026-06-27 Business incidents were not one repeated root cause. Separate `no_run_or_stale_assets`, source-artifact retry freshness, `translation_title`, `publication`, local Obsidian sync, and `supervision_observability` before choosing any repair.

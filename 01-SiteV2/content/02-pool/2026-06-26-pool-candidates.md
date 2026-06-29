@@ -1,4 +1,4 @@
-﻿---
+---
 date: 2026-06-26
 stage: pool
 status: guanlan-daily-monitor-pool
@@ -20,6 +20,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 
 璇存槑锛氭湰鏂囦欢鏄?Raw 鍚庣殑鍊欓€夌储寮曪紝渚?guanlan-daily-assets-chain 涓?writers 鍥炵湅 Raw 鍏ㄦ枃鍚庣户缁姞宸ャ€侾ool 涓嶆浛浠?Raw锛屼篃涓嶇洿鎺ョ瓑浜庡晢涓氫俊鍙枫€佸墠娌胯鐐广€佸彉鍖栧€欓€夈€佽秼鍔垮€欓€夋垨浠婃棩瑙傚療缁撹銆?
 ## P-001锝淧atronus AI 鑾?5000 涓囩編鍏?B 杞瀺璧勶紝鏋勫缓"鏁板瓧涓栫晫"鍘嬪姏娴嬭瘯 AI 鏅鸿兘浣?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-001
 - raw_original_id: cmqtys0hd001cslayvtoudxk5
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-001-patronus-ai-鑾?5000-涓囩編鍏?b-杞瀺璧?鏋勫缓-鏁板瓧涓栫晫-鍘嬪姏娴嬭瘯-ai-鏅鸿兘浣?md`
@@ -36,15 +37,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-content-container
-- extraction_quality: high
+- extraction_quality: failed
 - extraction_method: content-container
-- readability_score: 97
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -52,12 +53,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: pooled
-- pool_routes: core_pool
+- pool_routes: watchlist
 - raw_content_hash: 5a215f2089e06864
 - raw_full_text_hash: 5a215f2089e06864
 - raw_semantic_hash: bc5b4e4032212c6d
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5a215f2089e06864","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_funding
 - importance_score: 5
 - supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
@@ -66,11 +67,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 22.1
 - usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
-- key_excerpts: [{"type":"funding","text":"Patronus AI 瀹ｅ竷瀹屾垚 5000 涓囩編鍏?B 杞瀺璧勶紝鐢?Greenfield Partners 棰嗘姇锛孨otable Capital銆丩ightspeed銆丏atadog 鍜?Samsung 鍙傛姇锛岀疮璁¤瀺璧勮揪 7000 涓囩編鍏冦€傝鍏徃鐢卞墠 Meta AI 鐮旂┒鍛樹簬 2023 骞村垱绔嬶紝鍒╃敤\"鏁板瓧涓栫晫妯″瀷\"鍒涘缓缃戠珯鍜屽唴閮ㄧ郴缁熺殑妯℃嫙鍓湰锛岄€氳繃寮哄寲瀛︿範瀵?AI 鏅鸿兘浣撹繘琛屽帇鍔涙祴璇曪紝杩唬濂栧姳鎴愬姛骞舵儵缃氶敊璇€傜洰鍓嶆湇鍔¤鐩栬蒋浠跺伐绋嬪拰閲戣瀺棰嗗煙锛屽嚑涔庢墍鏈夊墠娌?AI 瀹為獙瀹ゅ拰鍒濆垱鍏徃鍧囦负瀹㈡埛锛岃繃鍘讳竴骞存敹鍏ュ闀?15 鍊嶃€?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"鈥?鈥?鈥?鈥?The first StrictlyVC of 2026 hits SF on April 30.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Tickets are going fast.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Founder Summit ticket savings of up to $190 end June 26.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Join 1,000+ founders and VCs for all-day bootcamp.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Close Image Credits: Patronus AI Venture Patronus AI lands $50M to build 鈥榙igital worlds鈥?that stress-test AI agents Marina Temkin 1:19 PM PDT 路 June 25, 2026 AI agents are becoming more sophisticated.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["Patronus AI 瀹ｅ竷瀹屾垚 5000 涓囩編鍏?B 杞瀺璧勶紝鐢?Greenfield Partners 棰嗘姇锛孨otable Capital銆丩ightspeed銆丏atadog 鍜?Samsung 鍙傛姇锛岀疮璁¤瀺璧勮揪 7000 涓囩編鍏冦€傝鍏徃鐢卞墠 Meta AI 鐮旂┒鍛樹簬 2023 骞村垱绔嬶紝鍒╃敤\"鏁板瓧涓栫晫妯″瀷\"鍒涘缓缃戠珯鍜屽唴閮ㄧ郴缁熺殑妯℃嫙鍓湰锛岄€氳繃寮哄寲瀛︿範瀵?AI 鏅鸿兘浣撹繘琛屽帇鍔涙祴璇曪紝杩唬濂栧姳鎴愬姛骞舵儵缃氶敊璇€傜洰鍓嶆湇鍔¤鐩栬蒋浠跺伐绋嬪拰閲戣瀺棰嗗煙锛屽嚑涔庢墍鏈夊墠娌?AI 瀹為獙瀹ゅ拰鍒濆垱鍏徃鍧囦负瀹㈡埛锛岃繃鍘讳竴骞存敹鍏ュ闀?15 鍊嶃€?,"鈥?鈥?鈥?鈥?The first StrictlyVC of 2026 hits SF on April 30.","Tickets are going fast."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 璐熻矗浜?,"寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储
 - 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-002锝淩unway鍙戝竷Agent 2.0
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-002
 - raw_original_id: cmqtun7jv06zvsl0ejc2rnrpp
@@ -88,15 +90,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-main
-- extraction_quality: high
+- extraction_quality: failed
 - extraction_method: main
-- readability_score: 89
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -104,12 +106,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: pooled
-- pool_routes: core_pool
+- pool_routes: watchlist
 - raw_content_hash: 7b2e498e79a7fa6a
 - raw_full_text_hash: 7b2e498e79a7fa6a
 - raw_semantic_hash: 3154e10469bebfa2
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7b2e498e79a7fa6a","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: commercial_or_risk_context, adoption_context
@@ -118,8 +120,8 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 22.1
 - usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
-- key_excerpts: [{"type":"product_update","text":"Runway鍙戝竷Agent 2.0锛屽府鍔╄惀閿€浜哄憳鍒涘缓銆佹祴璇曞拰浼樺寲骞垮憡銆佽棰戝強钀ラ攢娲诲姩銆傚搧鐗岃惀閿€浜哄憳鍙湪瀵硅瘽涓紑鍙戞椿鍔ㄦ蹇点€佺敓鎴愬彉浣撳苟鑷姩鏈湴鍖栵紱缁╂晥钀ラ攢浜哄憳鍙笂浼犲垱鎰忓苟瀵煎叆Meta銆乊ouTube銆乀ikTok鎴朑oogle骞垮憡鏁版嵁锛岀敱Agent鍒嗘瀽鍚庣敓鎴愪笅涓€杞緟娴嬪箍鍛娿€傜ぞ浜ゅ獟浣撹惀閿€浜哄憳鍙竴娆℃€х敓鎴愪竴鍛ㄥ唴瀹癸紝鑷姩瑁佸垏涓?锛?6銆?6锛?銆?锛?绛夋牸寮忥紱浜у搧钀ラ攢浜哄憳鍙€熷姪Agent纭畾瀹氫綅瑙掑害骞舵瀯寤烘椿鍔ㄨ祫浜с€侫gent 2.0闈㈠悜鎵€鏈夌敤鎴峰紑鏀俱€?,"supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Introducing Agent 2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"0 June 25, 2026 by Runway Agent 2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"0 helps marketers make more of what works 鈥?ads, videos and full campaigns that drive revenue.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Every marketer knows what it takes to drive revenue: analyze what's working, make more of it, cut what's not.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"In practice, making that happen across every campaign, social post and paid ad is more than one person or even a lean team can keep up with.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["Runway鍙戝竷Agent 2.0锛屽府鍔╄惀閿€浜哄憳鍒涘缓銆佹祴璇曞拰浼樺寲骞垮憡銆佽棰戝強钀ラ攢娲诲姩銆傚搧鐗岃惀閿€浜哄憳鍙湪瀵硅瘽涓紑鍙戞椿鍔ㄦ蹇点€佺敓鎴愬彉浣撳苟鑷姩鏈湴鍖栵紱缁╂晥钀ラ攢浜哄憳鍙笂浼犲垱鎰忓苟瀵煎叆Meta銆乊ouTube銆乀ikTok鎴朑oogle骞垮憡鏁版嵁锛岀敱Agent鍒嗘瀽鍚庣敓鎴愪笅涓€杞緟娴嬪箍鍛娿€傜ぞ浜ゅ獟浣撹惀閿€浜哄憳鍙竴娆℃€х敓鎴愪竴鍛ㄥ唴瀹癸紝鑷姩瑁佸垏涓?锛?6銆?6锛?銆?锛?绛夋牸寮忥紱浜у搧钀ラ攢浜哄憳鍙€熷姪Agent纭畾瀹氫綅瑙掑害骞舵瀯寤烘椿鍔ㄨ祫浜с€侫gent 2.0闈㈠悜鎵€鏈夌敤鎴峰紑鏀俱€?,"Introducing Agent 2.","0 June 25, 2026 by Runway Agent 2."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储
 - 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-003锝淕oogle Finance 鎺ㄥ嚭棣栨鐙珛 Android 搴旂敤锛宨OS 鐗堣鍒掍粖骞存櫄浜涙椂鍊欎笂绾?
@@ -173,6 +175,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_seed: {"company_actions":["Google Finance 鎺ㄥ嚭棣栨鐙珛绉诲姩搴旂敤锛岀洰鍓嶄粎闄?Android 骞冲彴锛屽叏鐞?Play Store 鍙敤銆傚簲鐢ㄥ唴缃敓鎴愬紡 AI锛岃偂浠峰浘琛ㄦ梺鐢?AI 鐢熸垚\"鍏抽敭鏃跺埢\"瑙ｉ噴鏁板瓧鍙樺姩锛屽簳閮╘"Ask\"鎸夐挳鍙鐢ㄦ埛涓庨噾铻嶈皟浼樼殑鑱婂ぉ鏈哄櫒浜哄璇濇煡璇㈣偂绁ㄣ€傚悓姝ユ洿鏂扮殑 Finance 缃戠珯涔熺寮€ beta锛孉I 鎴愪负鏍稿績浣撻獙锛屾敮鎸佷笂浼?CSV 鎴?PDF 寤虹珛鎶曡祫缁勫悎骞惰幏鍙?AI 娲炲療涓庡缓璁紝AI 鐮旂┒宸ュ叿杩樺彲鍙戦€佸畾鏈熺畝鎶ワ紙濡傛瘡鏃ョ洏鍓嶅姞瀵嗚揣甯佸姩鍚戯級锛屽畬鎴愬悗閫氳繃绉诲姩搴旂敤閫氱煡鐢ㄦ埛銆?,"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Google Finance is not a new product鈥攊t has been around for 20 years, long enough that it initially relied on Flash to display charts and graphs.","The website has gotten a few major updates over the years, but it has never had a mobile app until now."],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鍚堝悓瀹￠槄 / 娉曞緥鐮旂┒ 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":[],"risks_or_constraints":[]}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?- 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-004锝淕eneral Intuition 23浜跨編鍏冧及鍊煎畬鎴?.2浜跨編鍏冭瀺璧?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-004
 - raw_original_id: cmqtr9rzr0642sl0eexkojxpd
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-004-general-intuition-23浜跨編鍏冧及鍊煎畬鎴?-2浜跨編鍏冭瀺璧?md`
@@ -189,15 +192,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: false
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow_with_degradation
-- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-content-container
-- extraction_quality: high
+- extraction_quality: failed
 - extraction_method: content-container
-- readability_score: 94
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -205,12 +208,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: indexed
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 01b9cc29b285066d
 - raw_full_text_hash: 01b9cc29b285066d
 - raw_semantic_hash: f4fdaf67bae35ebd
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"01b9cc29b285066d","missing":[]}
-- degradation_reasons: index_only_or_directory_page
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: commercial_or_risk_context, adoption_context
@@ -219,10 +222,11 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 22.1
 - usable_for: index_only
-- key_excerpts: [{"type":"funding","text":"General Intuition 鍛ㄥ洓浠?3浜跨編鍏冧及鍊煎畬鎴?.2浜跨編鍏冭瀺璧勶紝绱铻嶈祫4.54浜跨編鍏冦€傚叾AI鏅鸿兘浣撻€氳繃鍒嗘瀽鏁颁嚎灏忔椂娓告垙瑙嗛涓殑鍔ㄤ綔鏍囩锛堢帺瀹舵寜閿褰曪級璁粌锛屾帉鎻℃椂绌烘帹鐞嗚兘鍔涳紝鑳戒粠娓告垙娉涘寲鍒颁豢鐪熷拰鐜板疄涓栫晫銆備粎鐢?鍒嗛挓鐪熷疄鏈哄櫒浜烘暟鎹井璋冨嵆鍙帶鍒跺洓瓒虫満鍣ㄤ汉鑷富瀵艰埅銆傚叕鍙歌鍒掑瀛ｆ湯寮€鏀続PI銆傛湰杞敱Khosla Ventures棰嗘姇锛孏eneral Catalyst銆丣eff Bezos銆丒ric Schmidt銆丯ico Rosberg鍙奊oogle DeepMind銆丮IT鐮旂┒浜哄憳鍙傛姇銆?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"鈥?鈥?鈥?鈥?The first StrictlyVC of 2026 hits SF on April 30.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Tickets are going fast.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Founder Summit ticket savings of up to $190 end June 26.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Join 1,000+ founders and VCs for all-day bootcamp.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Close Image Credits: General Intuition AI General Intuition鈥檚 $2.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["General Intuition 鍛ㄥ洓浠?3浜跨編鍏冧及鍊煎畬鎴?.2浜跨編鍏冭瀺璧勶紝绱铻嶈祫4.54浜跨編鍏冦€傚叾AI鏅鸿兘浣撻€氳繃鍒嗘瀽鏁颁嚎灏忔椂娓告垙瑙嗛涓殑鍔ㄤ綔鏍囩锛堢帺瀹舵寜閿褰曪級璁粌锛屾帉鎻℃椂绌烘帹鐞嗚兘鍔涳紝鑳戒粠娓告垙娉涘寲鍒颁豢鐪熷拰鐜板疄涓栫晫銆備粎鐢?鍒嗛挓鐪熷疄鏈哄櫒浜烘暟鎹井璋冨嵆鍙帶鍒跺洓瓒虫満鍣ㄤ汉鑷富瀵艰埅銆傚叕鍙歌鍒掑瀛ｆ湯寮€鏀続PI銆傛湰杞敱Khosla Ventures棰嗘姇锛孏eneral Catalyst銆丣eff Bezos銆丒ric Schmidt銆丯ico Rosberg鍙奊oogle DeepMind銆丮IT鐮旂┒浜哄憳鍙傛姇銆?,"鈥?鈥?鈥?鈥?The first StrictlyVC of 2026 hits SF on April 30.","Tickets are going fast."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 璐熻矗浜?],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?- 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-005锝淕eneral Intuition 瀹屾垚 3.2 浜跨編鍏冭瀺璧勶紝鐢ㄦ父鎴忔暟鎹缁冮€氱敤 AI 鏅鸿兘浣?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-005
 - raw_original_id: cmqtq76j105ubsl0e8j4fy8se
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-005-general-intuition-瀹屾垚-3-2-浜跨編鍏冭瀺璧?鐢ㄦ父鎴忔暟鎹缁冮€氱敤-ai-鏅鸿兘浣?md`
@@ -239,15 +243,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-content-container
-- extraction_quality: high
+- extraction_quality: failed
 - extraction_method: content-container
-- readability_score: 94
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -255,12 +259,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: pooled
-- pool_routes: core_pool
+- pool_routes: watchlist
 - raw_content_hash: 01b9cc29b285066d
 - raw_full_text_hash: 01b9cc29b285066d
 - raw_semantic_hash: fcb5069c586afb6a
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"01b9cc29b285066d","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: commercial_or_risk_context, adoption_context
@@ -269,11 +273,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 22.1
 - usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
-- key_excerpts: [{"type":"funding","text":"General Intuition 浠?23 浜跨編鍏冧及鍊煎畬鎴?3.2 浜跨編鍏冭瀺璧勶紝绱鎶湶铻嶈祫 4.54 浜跨編鍏冦€傚叕鍙镐粠鏃椾笅娓告垙鍓緫骞冲彴 Medal 鑾峰彇鏁颁嚎灏忔椂鍚簿纭寜閿姩浣滄爣绛剧殑娓告垙鎿嶄綔鏁版嵁锛岃缁冨崟涓€妯″瀷鍚屾椂椹鹃┉ Fortnite 绛夎櫄鎷熺幆澧冨拰鍥涜冻鏈哄櫒浜恒€傛紨绀轰腑锛孉I 鏅鸿兘浣撳湪娓告垙涓繛缁繍琛?100 灏忔椂锛屾満鍣ㄤ汉浠呴潬 8 鍒嗛挓鐪熷疄琛楅亾鏁版嵁寰皟鍗冲彲鑷富鎺㈢储鍔炲叕瀹ゃ€傛湰杞敱 Khosla Ventures 棰嗘姇锛孏eneral Catalyst銆丣eff Bezos銆丒ric Schmidt 绛夊弬鎶曘€傝祫閲戝皢鐢ㄤ簬閫氳繃 CoreWeave 鎵╁ぇ璁＄畻瑙勬ā銆侀璁粌涓嬩竴浠ｆā鍨嬶紝璁″垝澶忔湯鍓嶅紑鏀?API銆?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"鈥?鈥?鈥?鈥?The first StrictlyVC of 2026 hits SF on April 30.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Tickets are going fast.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Founder Summit ticket savings of up to $190 end June 26.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Join 1,000+ founders and VCs for all-day bootcamp.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Close Image Credits: General Intuition AI General Intuition鈥檚 $2.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["General Intuition 浠?23 浜跨編鍏冧及鍊煎畬鎴?3.2 浜跨編鍏冭瀺璧勶紝绱鎶湶铻嶈祫 4.54 浜跨編鍏冦€傚叕鍙镐粠鏃椾笅娓告垙鍓緫骞冲彴 Medal 鑾峰彇鏁颁嚎灏忔椂鍚簿纭寜閿姩浣滄爣绛剧殑娓告垙鎿嶄綔鏁版嵁锛岃缁冨崟涓€妯″瀷鍚屾椂椹鹃┉ Fortnite 绛夎櫄鎷熺幆澧冨拰鍥涜冻鏈哄櫒浜恒€傛紨绀轰腑锛孉I 鏅鸿兘浣撳湪娓告垙涓繛缁繍琛?100 灏忔椂锛屾満鍣ㄤ汉浠呴潬 8 鍒嗛挓鐪熷疄琛楅亾鏁版嵁寰皟鍗冲彲鑷富鎺㈢储鍔炲叕瀹ゃ€傛湰杞敱 Khosla Ventures 棰嗘姇锛孏eneral Catalyst銆丣eff Bezos銆丒ric Schmidt 绛夊弬鎶曘€傝祫閲戝皢鐢ㄤ簬閫氳繃 CoreWeave 鎵╁ぇ璁＄畻瑙勬ā銆侀璁粌涓嬩竴浠ｆā鍨嬶紝璁″垝澶忔湯鍓嶅紑鏀?API銆?,"鈥?鈥?鈥?鈥?The first StrictlyVC of 2026 hits SF on April 30.","Tickets are going fast."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 璐熻矗浜?],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储
 - 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-006锝滅櫧瀹洜瀹夊叏鎷呭咖瑕佹眰OpenAI寤剁紦鍙戝竷鏂版ā鍨?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-006
 - raw_original_id: cmqu57k0d01dnsl802ud03ekl
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-006-鐧藉鍥犲畨鍏ㄦ媴蹇ц姹俹penai寤剁紦鍙戝竷鏂版ā鍨?md`
@@ -290,15 +295,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-content-container
-- extraction_quality: high
+- extraction_quality: failed
 - extraction_method: content-container
-- readability_score: 97
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -306,12 +311,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: pooled
-- pool_routes: core_pool
+- pool_routes: watchlist
 - raw_content_hash: fb79a911f3f9cfd0
 - raw_full_text_hash: fb79a911f3f9cfd0
 - raw_semantic_hash: 873eed5257e9af3e
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fb79a911f3f9cfd0","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, adoption_context
@@ -319,8 +324,8 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 22.1
 - usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
-- key_excerpts: [{"type":"supporting_context","text":"OpenAI鏂版ā鍨婫PT 5.6灏嗕笉浼氶潰鍚戝叕浼楀彂甯冿紝浠呴檺灏戞暟鍚堜綔浼欎即棰勮锛屽師鍥犳槸鐗规湕鏅斂搴滆姹傞€愬鎴峰鎵硅闂潈闄愩€侰EO Sam Altman鍦ㄦ湰鍛ㄥ唴閮ㄤ細璁笂閫忛湶锛岃嫢棰勮鏁堟灉鑹ソ锛岄璁℃暟鍛ㄥ悗鎵嶄細杩涜鏇村箍娉涚殑鍙戝竷銆傜壒鏈楁櫘鏀垮簻姝ゅ墠閲囧彇\"涓嶅共棰刓"绔嬪満锛屼絾杩戞湡宸叉帹鍔ㄨ仈閭﹀鏂版ā鍨嬭繘琛屽鏌ワ紝骞剁缃茶鏀夸护瑕佹眰閮ㄥ垎AI鍏徃鍦ㄥ彂甯冨墠鑷効鎻愪氦妯″瀷渚涙斂搴滄祴璇曘€備笌姝ゅ悓鏃讹紝Anthropic姝ゅ墠宸蹭富鍔ㄥ皢鍏跺墠娌跨綉缁滃畨鍏ㄦā鍨婥laude Mythos閫氳繃Project Glasswing璁″垝浠呭悜鏈夐檺鍚堜綔浼欎即寮€鏀撅紝璇ユā鍨嬭璁や负鑳藉浠ヨ繙瓒呬汉绫诲垎鏋愬笀鐨勯€熷害璇嗗埆鍜屽埄鐢ㄨ蒋浠舵紡娲炪€?,"supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"鈥?鈥?鈥?鈥?The first StrictlyVC of 2026 hits SF on April 30.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Tickets are going fast.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Founder Summit ticket savings of up to $190 end June 26.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Join 1,000+ founders and VCs for all-day bootcamp.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Close Image Credits: Benjamin Fanjoy / Getty Images AI The White House is asking OpenAI to slow roll the release of its new model over safety concerns Lucas Ropek 4:34 PM PDT 路 June 25, 2026 OpenAI鈥檚 release of its newest model, GPT 5.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["鈥?鈥?鈥?鈥?The first StrictlyVC of 2026 hits SF on April 30.","Tickets are going fast.","Join 1,000+ founders and VCs for all-day bootcamp."],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鍚堝悓瀹￠槄 / 娉曞緥鐮旂┒ 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["CIO / IT 璐熻矗浜?],"risks_or_constraints":["OpenAI鏂版ā鍨婫PT 5.6灏嗕笉浼氶潰鍚戝叕浼楀彂甯冿紝浠呴檺灏戞暟鍚堜綔浼欎即棰勮锛屽師鍥犳槸鐗规湕鏅斂搴滆姹傞€愬鎴峰鎵硅闂潈闄愩€侰EO Sam Altman鍦ㄦ湰鍛ㄥ唴閮ㄤ細璁笂閫忛湶锛岃嫢棰勮鏁堟灉鑹ソ锛岄璁℃暟鍛ㄥ悗鎵嶄細杩涜鏇村箍娉涚殑鍙戝竷銆傜壒鏈楁櫘鏀垮簻姝ゅ墠閲囧彇\"涓嶅共棰刓"绔嬪満锛屼絾杩戞湡宸叉帹鍔ㄨ仈閭﹀鏂版ā鍨嬭繘琛屽鏌ワ紝骞剁缃茶鏀夸护瑕佹眰閮ㄥ垎AI鍏徃鍦ㄥ彂甯冨墠鑷効鎻愪氦妯″瀷渚涙斂搴滄祴璇曘€備笌姝ゅ悓鏃讹紝Anthropic姝ゅ墠宸蹭富鍔ㄥ皢鍏跺墠娌跨綉缁滃畨鍏ㄦā鍨婥laude Mythos閫氳繃Project Glasswing璁″垝浠呭悜鏈夐檺鍚堜綔浼欎即寮€鏀撅紝璇ユā鍨嬭璁や负鑳藉浠ヨ繙瓒呬汉绫诲垎鏋愬笀鐨勯€熷害璇嗗埆鍜屽埄鐢ㄨ蒋浠舵紡娲炪€?]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?- 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-007锝淕oogle Finance 鍏ㄦ柊 Android 搴旂敤涓庢姇璧勭粍鍚堝姛鑳戒笂绾?
 - raw_ref: R-007
@@ -374,6 +379,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-008锝淚T鏃╂姤0626锛欰nthropic鐧婚《鐙鍏芥锛屾枃蹇冧竴瑷€瀹樼綉鍏抽棴锛岃嫻鏋滄定浠?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-008
 - raw_original_id: cmqu5yiia01lcsl80doa7ns6h
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-008-it鏃╂姤0626-anthropic鐧婚《鐙鍏芥-鏂囧績涓€瑷€瀹樼綉鍏抽棴-鑻规灉娑ㄤ环.md`
@@ -390,15 +396,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-content-container
-- extraction_quality: high
+- extraction_quality: failed
 - extraction_method: content-container
-- readability_score: 80
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -406,12 +412,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: pooled
-- pool_routes: core_pool
+- pool_routes: watchlist
 - raw_content_hash: e2f3846d1854ec58
 - raw_full_text_hash: e2f3846d1854ec58
 - raw_semantic_hash: 74af9175cf774df1
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e2f3846d1854ec58","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: automotive_vertical_context, commercial_or_risk_context, market_shaping_risk_context, adoption_context
@@ -419,8 +425,8 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 22.1
 - usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
-- key_excerpts: [{"type":"number","text":"Anthropic浠?.6涓囦嚎浠峰€肩櫥椤惰儭娑︺€?026鍏ㄧ悆鐙鍏芥銆嬶紝OpenAI绱ч殢鍏跺悗銆侫nthropic鑷翠俊缇庡弬璁櫌锛屾寚璐ｉ樋閲屽疄鏂絓"鏈€澶ц妯¤捀棣忔敾鍑籠"銆傛湀涔嬫殫闈㈣〃绀篕imi鐩爣涓庢捣澶栦笁瀹舵ā鍨嬬珵浜夛紝B绔崰姣旀寔缁彁鍗囥€傛枃蹇冧竴瑷€瀹樼綉鎻愰棶鍏ュ彛6鏈?5鏃ュ叧闂紝7鏈?6鏃ユ湇鍔¤縼绉昏嚦鐧惧害鏂囧績缃戠珯銆傝嫻鏋滃洜AI鏁版嵁涓績鍐呭瓨鐭己鎻愰珮Mac銆乮Pad浠锋牸銆傚皧鐣孲800 Grand Design鍏歌棌澶ц138.8涓囧厓璧峰彂甯冦€傚椹板湪鍗庤鍛樿敁寤惰嚦鐮斿彂鍜屽埗閫狅紝鏈変汉鑾種+9琛ュ伩銆傞樋閲屽反宸磋捣璇夌編鍥介槻閮ㄨ姹傜Щ鍑篭"涓浗鍐涗簨浼佷笟鍚嶅崟\"銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"opinion","text":"鈥淚T鏃╂姤鈥濇椂闂达紝澶у濂斤紝鐜板湪鏄?2026 骞?6 鏈?26 鏃ユ槦鏈熶簲锛屼粖澶╃殑閲嶈绉戞妧璧勮鏈夛細 1銆佽嫻鏋滄彁楂?Mac銆乮Pad 绛変骇鍝佷环鏍硷紝浠ュ簲瀵瑰唴瀛樼煭缂?鑻规灉鍏徃绉帮紝浜哄伐鏅鸿兘鏁版嵁涓績鐨勫揩閫熸墿寮犲鑷村唴瀛橀渶姹傛縺澧炪€?,"supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"鎻愰珮 Mac銆?iPad 绛夌郴鍒椾骇鍝佷环鏍间互搴斿鍐呭瓨鐭己銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"funding","text":"8 涓囧厓璧凤紝灏婄晫 S800 Grand Design 鍏歌棌澶ц姝ｅ紡鍙戝竷 鍦?6 鏈?25 鏃ユ櫄鐨勫彂甯冧細涓婏紝鍗庝负甯稿姟钁ｄ簨銆佷骇鍝佹姇璧勮瘎瀹″鍛樹細涓讳换銆佺粓绔?BG 钁ｄ簨闀夸綑鎵夸笢鍙戝竷浜嗗叏鏂扮殑灏婄晫 S800 Grand Design 鍏歌棌澶ц杞﹀瀷锛屽畼鏂规寚瀵间环 138 涓囧厓璧枫€?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"high"},{"type":"opinion","text":">> 鏌ョ湅璇︽儏 3銆佹洕濂旈┌鍦ㄥ崕瑁佸憳宸茶敁寤惰嚦鐮斿彂鍜屽埗閫狅紝鏈変汉鎷垮埌 N+9 琛ュ伩 涓€浣嶈繎鏈熶粠濂旈┌涓浗鐮斿彂浣撶郴绂昏亴鐨勪汉澹〃绀猴紝鍏舵湰浜哄睘浜庡悎鍚屽埌鏈熸湭鑾风画绾︺€?,"supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"opinion","text":"鍙︿竴浣嶈繎鏈熶粠濂旈┌鐮斿彂浣撶郴琚鎺夌殑浜哄＋琛ㄧず锛屽叾鑾峰緱鐨勮ˉ鍋夸负 N+9銆?,"supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["鎻愰珮 Mac銆?iPad 绛夌郴鍒椾骇鍝佷环鏍间互搴斿鍐呭瓨鐭己銆?,"8 涓囧厓璧凤紝灏婄晫 S800 Grand Design 鍏歌棌澶ц姝ｅ紡鍙戝竷 鍦?6 鏈?25 鏃ユ櫄鐨勫彂甯冧細涓婏紝鍗庝负甯稿姟钁ｄ簨銆佷骇鍝佹姇璧勮瘎瀹″鍛樹細涓讳换銆佺粓绔?BG 钁ｄ簨闀夸綑鎵夸笢鍙戝竷浜嗗叏鏂扮殑灏婄晫 S800 Grand Design 鍏歌棌澶ц杞﹀瀷锛屽畼鏂规寚瀵间环 138 涓囧厓璧枫€?],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鍚堝悓瀹￠槄 / 娉曞緥鐮旂┒ 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 璁¤垂 / 棰勭畻绠＄悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["CIO / IT 璐熻矗浜?,"閿€鍞?/ 瀹㈡湇"],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?- 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-009锝淢eta 闅愮鎰熺煡鍩虹璁炬柦鐨勮祫浜у垎绫伙細娣峰悎妯″紡灏?LLM 钂搁涓虹‘瀹氭€ц鍒?
 - raw_ref: R-009
@@ -472,6 +478,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_seed: {"company_actions":["Before such a control can operate effectively, it must know exactly what it is looking at.","This can be complex, as demonstrated by a field simply named 鈥?age 鈥? In one context, it might describe a person and require strict protections, while in another, it could be a cache time-to-live (TTL) numerical value in an infrastructure pipeline.","Figure 1: One column name, two governance outcomes."],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鍚堝悓瀹￠槄 / 娉曞緥鐮旂┒ 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 璁¤垂 / 棰勭畻绠＄悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":["Meta 鍦?Privacy-Aware Infrastructure 锛圥AI锛?鐨勮祫浜у垎绫讳腑閲囩敤娣峰悎妯″紡锛氬厛鏋勫缓鍚唬鐮併€佽缂樸€佽涔夋爣娉ㄧ殑涓婁笅鏂囪瘉鎹紝鍐嶈皟鐢?LLM 澶勭悊姝т箟銆佸喎鍚姩鍜屾柊棰栬祫浜э紱浜哄伐瀹℃牳鏍囩涓庢ā鍨嬫帹鑽愪弗鏍奸殧绂汇€侺LM 涓嶇洿鎺ュ仛鐢熶骇鍐崇瓥锛屽叾绋冲畾琛屼负琚捀棣忎负鐗堟湰鍖栫‘瀹氭€ц鍒欑敤浜庣敓浜ф墽琛岋紝LLM 瑙掕壊闅忚鍒欑Н绱€愭缂╁皬銆傛牳蹇冨師鍒欙細涓婁笅鏂囨瘮鎻愮ず璇嶆洿閲嶈銆佽В鑰﹁瘎浼颁笌浼樺寲銆佸皢绋冲畾琛屼负瑙勫垯鍖栥€?,"By Rituraj Kirti , Vasileios Lakafosis Privacy controls 鈥?systems that enforce retention, access, allowed-purpose, downstream-sharing, or anonymization policies 鈥?require a reliable understanding of data to function."]}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?- 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-010锝滃紑鏀炬潈閲嶆ā鍨嬬殑闅句互蹇嶅彈鐨勫粔浠锋劅
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-010
 - raw_original_id: cmqtr1dpf062zsl0eh9vzjtrl
@@ -489,27 +496,27 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-content-container
-- extraction_quality: high
+- extraction_quality: failed
 - extraction_method: content-container
-- readability_score: 82
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: high
 - community_name: Hacker News 鐑棬锛坆uzzing.cc 涓枃缈昏瘧锛?- capture_scope: article_text
 - evidence_level: user_feedback_signal
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: pooled
-- pool_routes: core_pool, emerging_pool, user_feedback_pool
+- pool_routes: watchlist
 - raw_content_hash: b46abe65baadf9e5
 - raw_full_text_hash: b46abe65baadf9e5
 - raw_semantic_hash: 5112f139b112f86b
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b46abe65baadf9e5","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: commercial_or_risk_context
@@ -517,10 +524,11 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 22.1
 - usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, user_feedback_pool, watchlist
-- key_excerpts: [{"type":"number","text":"DeepSeek V4 瀹氫环鏋佷綆锛屼粎鍩轰簬 token 璐圭敤灏辨瘮 Anthropic 鍜?OpenAI 鐨勫墠娌挎ā鍨嬩究瀹滆繎 50 鍊嶏紝鏈鍏ユ€濊€冪被妯″瀷棰濆 token 娑堣€椼€傛枃绔犳寚鍑哄鏂归櫡鍏ラ珮鎴愭湰鍥板锛岄毦浠ラ檷浠?20-50 鍊嶇珵浜夈€傚紑鏀炬潈閲嶆ā鍨嬩綆鎴愭湰婧愪簬纭欢鍘嬪姏娴嬭瘯杩樻槸浜忔湰寮曟祦锛屽皻瀛樹簤璁€傛媴蹇х編鍥藉彲鑳藉€焅"涓浗鎭愭儳\"鎺ㄥ姩闄愬埗寮€鏀炬潈閲嶆ā鍨嬨€侴oogle 浜?2026 骞?4 鏈堝彂甯?Gemma 4锛孧eta Llama 鏃犳柊鐗堟湰锛孫penAI 鏈€鍚庡紑鏀炬潈閲嶅仠鐣欏湪 2025 骞?GTP锛孉nthropic 浠庢湭鍙戝竷銆傜湡姝ｅ紑婧愶紙鍚缁冩暟鎹閬擄級妯″瀷姝ｆ祦琛岋紝浣嗘暟鎹埅姝?2024 骞?12 鏈堛€傜編鍥?NSF 涓?Nvidia 鍚堜綔鏀寔 Allen AI 寮€鍙戝畬鍏ㄥ紑婧?AI銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Skip to content Today I was setting up Hermes to see how it does with web research.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"I chose DeepSeek V4 because I know it is cheap, but seeing it鈥檚 pricing next to Anthropic and OpenAI 鈥榝rontier鈥?models is crazy.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Nearly a 50x price increase based on tokens alone, let alone how much pondering any of their models might fall into (using more tokens for the same task).","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"What worries me about this is that Anthropic and OpenAI seem to have backed themselves into a corner of high costs.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Can they reasonably decrease their prices by 20-50x to compete with DeepSeek or Xiaomi鈥檚 Mimo?","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["Skip to content Today I was setting up Hermes to see how it does with web research.","I chose DeepSeek V4 because I know it is cheap, but seeing it鈥檚 pricing next to Anthropic and OpenAI 鈥榝rontier鈥?models is crazy.","What worries me about this is that Anthropic and OpenAI seem to have backed themselves into a corner of high costs."],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 璁¤垂 / 棰勭畻绠＄悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?- 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氬綋鍓嶄富瑕佹潵鑷ぞ鍖?鑱氬悎/绾跨储鏉ユ簮锛屼笉鑳界洿鎺ヤ綔涓轰簨瀹炰富璇佹嵁銆?
 ## P-011锝淎nthropic 绉伴樋閲屽反宸村繀椤讳负鏈€澶ц妯?Claude 鍏嬮殕鏀诲嚮鍙楃綒
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-011
 - raw_original_id: cmqtu2atq06wksl0el0fgh3lt
@@ -538,15 +546,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-content-container
-- extraction_quality: high
+- extraction_quality: failed
 - extraction_method: content-container
-- readability_score: 88
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -554,12 +562,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: pooled
-- pool_routes: core_pool
+- pool_routes: watchlist
 - raw_content_hash: dcaa52f0513d773f
 - raw_full_text_hash: dcaa52f0513d773f
 - raw_semantic_hash: ce7bfee87c3bc195
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dcaa52f0513d773f","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: commercial_or_risk_context
@@ -567,10 +575,11 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 22.1
 - usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
-- key_excerpts: [{"type":"number","text":"Anthropic 鍦ㄨ嚧缇庡浗鍙傝鍛樼殑淇′腑鎶湶锛岄樋閲屽反宸撮檮灞炶繍钀ュ晢浜?4 鏈?22 鏃ヨ嚦 6 鏈?5 鏃ユ湡闂达紝閫氳繃杩?2.5 涓囦釜娆鸿瘓璐︽埛涓?Claude 杩涜瓒呰繃 2880 涓囨浜や簰锛岃瘯鍥炬彁鍙栧叾鏅鸿兘浣撴帹鐞嗐€佽蒋浠跺伐绋嬬瓑鏍稿績鑳藉姏銆侫nthropic 绉拌繖鏄縿浠婃渶澶ц妯＄殑闈炴硶钂搁鏀诲嚮锛屼笖鍙戠敓鍦ㄧ壒鏈楁櫘鏀垮簻璀﹀憡鍏嬮殕琛屼负\"涓嶅彲鎺ュ彈\"涔嬪悗銆侫nthropic 鍛煎悂鍥戒細鏇存柊鍙嶅瀯鏂硶銆佸姞寮鸿姱鐗囧嚭鍙ｇ鍒跺苟鎯╃綒涓浗瀹為獙瀹ょ殑姝ょ被琛屼负銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Anthropic has accused the Chinese firm Alibaba of launching the largest attack yet attempting to clone Claude, as China races to match the capabilities of Anthropic鈥檚 leading model following Mythos鈥?release and subsequent restriction from foreign markets .","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Ars obtained a June 10 letter sent to Senators Tim Scott (R-SC) and Elizabeth Warren (D-Mass.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":") one day ahead of a Senate committee hearing on 鈥淎I and the American Dream.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"鈥?In the letter, Anthropic shared 鈥渘ew, confidential evidence of the largest campaign to illicitly extract Claude鈥檚 capabilities we have ever measured.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"鈥?The attacks occurred between April 22 and June 5, when 鈥渙perators af铿乴iated with Alibaba and Alibaba Qwen, Alibaba鈥檚 AI lab鈥?allegedly generated 鈥渕ore than 28.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav Anthropic has accused the Chinese firm Alibaba of launching the largest attack yet attempting to clone Claude, as China races to match the capabilities of Anthropic鈥檚 leading model following Mythos鈥?release and subsequent restriction from foreign markets .","Ars obtained a June 10 letter sent to Senators Tim Scott (R-SC) and Elizabeth Warren (D-Mass.",") one day ahead of a Senate committee hearing on 鈥淎I and the American Dream."],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鍚堝悓瀹￠槄 / 娉曞緥鐮旂┒ 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 璁¤垂 / 棰勭畻绠＄悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["CIO / IT 璐熻矗浜?,"寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?- 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-012锝淎nthropic鐨凜laude姝ｈ耽寰椾粯璐笰I娑堣垂鑰咃紝鎸戞垬ChatGPT涓诲鍦颁綅
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-012
 - raw_original_id: cmqtteye006nusl0e4xu5snjl
@@ -588,15 +597,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: false
 - event_evidence: false
 - index_only_evidence: false
-- raw_qc_decision: allow_with_degradation
-- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-content-container
-- extraction_quality: high
+- extraction_quality: failed
 - extraction_method: content-container
-- readability_score: 97
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -604,12 +613,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: indexed
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: e4948861b38b2a5a
 - raw_full_text_hash: e4948861b38b2a5a
 - raw_semantic_hash: d7f978c2e19ee57c
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e4948861b38b2a5a","missing":[]}
-- degradation_reasons: insufficient_usable_evidence_object
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
@@ -617,11 +626,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 22.1
 - usable_for: index_only
-- key_excerpts: [{"type":"number","text":"淇＄敤鍗′氦鏄撳垎鏋愬叕鍙窱ndagari鏁版嵁鏄剧ず锛屼粯璐笰I娑堣垂鑰呮瓒婃潵瓒婂杞悜Anthropic鐨凜laude銆傝嚜2026骞?鏈堜互鏉ワ紝Claude鐨勪粯璐圭敤鎴锋暟鍜屾敹鍏ュ湪璇ョ兢浣撲腑澧為暱绾?5%銆傚湪绾挎暀鑲插钩鍙癉ataCamp涔熷嵃璇佹瓒嬪娍锛歕"Claude\"宸叉垚涓哄叾缃戠珯鎼滅储閲忔渶楂樿瘝锛岃秴杩嘰"AI\"锛涜嚜涓诲涔犳秷璐硅€呬腑瀵笴laude璇剧▼鐨勯渶姹傛槸ChatGPT鐨?鍊嶏紝杩囧幓30澶╂縺澧?8鍊嶃€備絾ChatGPT鍦ㄧ敤鎴疯妯″拰鏀跺叆涓婁粛鍏ㄩ潰棰嗗厛銆傛澶栵紝Anthropic鍥犵編鍥芥斂搴滅浠ゆ挙鍥炰簡鍏舵渶寮虹綉缁滃畨鍏ㄦā鍨婱ythos 5鍜孎able 5銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"鈥?鈥?鈥?鈥?The first StrictlyVC of 2026 hits SF on April 30.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Tickets are going fast.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"number","text":"Founder Summit ticket savings of up to $190 end June 26.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Join 1,000+ founders and VCs for all-day bootcamp.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Close Image Credits: Benjamin Girette/Bloomberg / Getty Images AI Anthropic鈥檚 Claude is winning over paid consumers, a market owned by ChatGPT Julie Bort 10:38 AM PDT 路 June 25, 2026 Consumers who pay for AI have been increasingly choosing Anthropic鈥檚 Claude, trend data from credit card transaction analysis company Indagari shows.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["鈥?鈥?鈥?鈥?The first StrictlyVC of 2026 hits SF on April 30.","Tickets are going fast.","Join 1,000+ founders and VCs for all-day bootcamp."],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-013锝滃鏁颁富娴丄I鑱婂ぉ鏈哄櫒浜烘斂娌荤珛鍦哄亸宸︼紝"鍙嶈閱?妯″瀷涔熶笉渚嬪
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-013
 - raw_original_id: cmqtp5syl05k5sl0ec5cvuedt
@@ -639,15 +649,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: false
 - event_evidence: false
 - index_only_evidence: false
-- raw_qc_decision: allow_with_degradation
-- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-content-container
-- extraction_quality: high
+- extraction_quality: failed
 - extraction_method: content-container
-- readability_score: 88
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -655,12 +665,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: indexed
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: e4f994378785ef5c
 - raw_full_text_hash: e4f994378785ef5c
 - raw_semantic_hash: d816e2cc22dfd71a
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e4f994378785ef5c","missing":[]}
-- degradation_reasons: insufficient_usable_evidence_object
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: market_shaping_risk_context
@@ -668,8 +678,8 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 22.1
 - usable_for: viewpoint
-- key_excerpts: [{"type":"number","text":"鍗庣洓椤块偖鎶ヨ皟鏌ユ樉绀猴紝澶氭暟涓绘祦AI鑱婂ぉ鏈哄櫒浜哄湪鏀挎不闂涓婃槑鏄惧亸宸︺€侽penAI GPT-5.5鍦?0%鍥炵瓟涓粎鍛堢幇宸︽淳璁烘嵁锛汥eepSeek V4 Pro涓?0%锛汚nthropic Claude Opus 4.8鏈?3%绾乏銆?7%缁欏嚭鍙屾柟瑙傜偣銆倄AI鐨凣rok 4.3宸﹀€惧洖绛斾粛澶氫簬鍙冲€俱€傚彸缈煎钩鍙癎ab鐨凙rya宸﹀€惧洖绛旀槸鍙冲€剧殑12鍊嶃€侴oogle Gemini 3.1 Pro鏄緥澶栵紝93%鍥炵瓟鍚屾椂鍛堢幇鍙屾柟绔嬪満銆傜壒鏈楁櫘鎺ㄥ姩鐨刓"鍙嶈閱抃"AI鏈兘鏀瑰彉杩欎竴鏍煎眬銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"high"},{"type":"quote","text":"Ad Skip to content Most major AI chatbots still lean left on political questions, even \"anti-woke\" models are no exception Matthias Bastian View the LinkedIn Profile of Matthias Bastian Jun 25, 2026 Nano Banana Pro prompted by THE DECODER Key Points A Washington Post investigation reveals that most major AI chatbots still lean left on political issues, even when they are explicitly marketed as conservative alternatives.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"5 and Deepseek V4 Pro delivered exclusively left-leaning arguments in 80 and 70 percent of cases, respectively, highlighting a consistent pattern across leading models.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Even chatbots positioned as conservative, such as xAI's Grok and Gab's Arya, skewed left more often than not.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Google's Gemini 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"1 Pro stood out as the notable exception, presenting both political perspectives in 93 percent of cases.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["5 and Deepseek V4 Pro delivered exclusively left-leaning arguments in 80 and 70 percent of cases, respectively, highlighting a consistent pattern across leading models.","Even chatbots positioned as conservative, such as xAI's Grok and Gab's Arya, skewed left more often than not.","Google's Gemini 3."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-014锝淲orkflow Automation Startups funded by Y Combinator (YC) 2026
@@ -1802,6 +1812,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - missing_information: none
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-036锝渆nterprise-ai 路 GitHub Topics
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-036
 - raw_original_id: https://github.com/topics/enterprise-ai?l=go
@@ -1819,15 +1830,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-main
-- extraction_quality: high
+- extraction_quality: failed
 - extraction_method: main
-- readability_score: 97
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -1835,12 +1846,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: not_applicable
 - raw_status: pooled
-- pool_routes: emerging_pool, watchlist
+- pool_routes: watchlist
 - raw_content_hash: 80f238d049f87ac7
 - raw_full_text_hash: 80f238d049f87ac7
 - raw_semantic_hash: 793cac003d7fc1e6
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"80f238d049f87ac7","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: enterprise_ai_transformation_lens, commercial_or_risk_context, market_shaping_risk_context, adoption_context
@@ -1848,8 +1859,8 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.4
 - raw_capture_priority: 21.4
 - usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
-- key_excerpts: [{"type":"case_detail","text":"OpenEAAP (Open Enterprise AI Agent Platform) is an enterprise-grade AI Agent platform that addresses key challenges in enterprise AI adoption / score=0.775 / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"enterprise-ai Star Here are 11 public repositories matching this topic.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"supporting_context","text":"Language: Go Filter by language All 806 Python 342 TypeScript 51 HTML 44 JavaScript 36 Shell 18 Jupyter Notebook 15 Java 12 Go 11 Mermaid C# Sort: Most stars Sort options Most stars Fewest stars Most forks Fewest forks Recently updated Least recently updated getaxonflow / axonflow Star 69 AxonFlow: Runtime control layer for production AI mcp workflow-engine execution-engine multi-agent-systems responsible-ai ai-observability ai-governance llm-security enterprise-ai ai-workflow agentic-ai ai-orchestration agent-runt","supports":["daily_observation","heatmap"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Compile to a portable, hardened agent.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Deploy it anywhere containers run: Kubernetes, on-prem, air-gapped, embedded in CI, or as an A2A endpoint.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"high"},{"type":"product_update","text":"mcp openai ai-agents claude a2a secure-ai local-ai enterprise-ai ai-agents-cli ai-workforce a2a-protocol local-ai-agents llm-runtime portable-agents agent-cli openclaw Updated Jun 25, 2026 Go anbeime / api-token Star 12 api-token涓浆绔欙紝FreeSwitch Desktop 鍙互鍚屾椂鏀寔: 鍐呯疆鐨勮交閲?FreeLLMAPI 浠ｇ悊锛堝厤璐规彁渚涘晢锛?鍙€夌殑 TOPGO 浼佷笟鍚庣锛堜粯璐硅处鎴?璁¤垂绠＄悊锛?鐢ㄦ埛閰嶇疆鏃朵簩閫変竴锛屾垨娣峰悎浣跨敤銆?,"supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"high"}]
-- evidence_seed: {"company_actions":["enterprise-ai Star Here are 11 public repositories matching this topic.","Compile to a portable, hardened agent.","Deploy it anywhere containers run: Kubernetes, on-prem, air-gapped, embedded in CI, or as an A2A endpoint."],"case_details":["OpenEAAP (Open Enterprise AI Agent Platform) is an enterprise-grade AI Agent platform that addresses key challenges in enterprise AI adoption / score=0.775 / query=open-source AI agent GitHub enterprise adoption / intent=find_customer_case / path=developer_ecosystem"],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 璁¤垂 / 棰勭畻绠＄悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":["Language: Go Filter by language All 806 Python 342 TypeScript 51 HTML 44 JavaScript 36 Shell 18 Jupyter Notebook 15 Java 12 Go 11 Mermaid C# Sort: Most stars Sort options Most stars Fewest stars Most forks Fewest forks Recently updated Least recently updated getaxonflow / axonflow Star 69 AxonFlow: Runtime control layer for production AI mcp workflow-engine execution-engine multi-agent-systems responsible-ai ai-observability ai-governance llm-security enterprise-ai ai-workflow agentic-ai ai-orchestration agent-runt"]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: none
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-037锝淎ugust 鈥?5 enterprise roundup 路 GitHub
@@ -2673,6 +2684,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_seed: {"company_actions":["AI Systems Engineering AI Automation ROI: Building the Business Case Santosh S.","June 13, 2026 Updated: June 23, 2026 34 min read Quick Answer AI Automation ROI: Building the Business Case AI automation ROI measures the value created by AI systems after implementation costs , using metrics such as TCO, payback period, NPV, and productivity gains to evaluate business impact.","Combining baseline metrics with scenario analysis and ongoing performance tracking helps organizations build a reliable, CFO-ready ROI model for long-term AI investments."],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鍚堝悓瀹￠槄 / 娉曞緥鐮旂┒ 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 璁¤垂 / 棰勭畻绠＄悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["CIO / IT 璐熻矗浜?,"寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":["# AI Automation ROI: Building the Business Case. **AI automation ROI measures the value created by AI systems after implementation costs**, using metrics such as TCO, payback period, NPV, and productivity gains to evaluate business impact. A strong business case considers **cost savings, faster workflows, improved quality, reduced risk, and scalable operations** while accounting for infrastructure, integration, maintenance, and governance costs. **Combining baseline metrics with scenario analysis and ongoing perfor","A strong business case considers cost savings, faster workflows, improved quality, reduced risk, and scalable operations while accounting for infrastructure, integration, maintenance, and governance costs.","AI automation ROI measures the net business value created by AI workflows after implementation costs, using TCO, payback period, NPV, scenario analysis, and risk-adjusted assumptions to evaluate financial impact and scalability."]}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?- 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-053锝淎I Global Summit | WMF 2026 - We Make Future
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-053
 - raw_original_id: https://en.wemakefuture.it/next/events/ai-global-summit
@@ -2691,14 +2703,14 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: formal_report
 - local_snapshot_status: http-400-fallback-text
-- extraction_quality: medium
+- extraction_quality: failed
 - extraction_method: body-visible-text
-- readability_score: 5
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: low
 - community_name: not_applicable
 - capture_scope: article_text
@@ -2706,12 +2718,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: not_applicable
 - raw_status: indexed
-- pool_routes: discard
+- pool_routes: watchlist
 - raw_content_hash: ee0dcce693da681f
 - raw_full_text_hash: ee0dcce693da681f
 - raw_semantic_hash: 188dbd232f97b3f6
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ee0dcce693da681f","missing":[]}
-- degradation_reasons: index_only_or_directory_page
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_case
 - importance_score: 5
 - supporting_signals: enterprise_ai_transformation_lens
@@ -2720,8 +2732,8 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.4
 - raw_capture_priority: 19.9
 - usable_for: index_only
-- key_excerpts: [{"type":"company_action","text":"![Image 4: Corey Ching](https://en.wemakefuture.it/cdn/?url=storage.ibrida.io/public/eventManager/people/user/761d72c6-042c-4053-b4fd-e6016c34e09b.jpeg&h=340&w=340&t=fit&q=80&output=jpg&il). ![Image 727: Play](https://en.wemakefuture.it/cdn/?url=storage.ibrida.io/public/16_ibrida/logo-youtube-2.png&h=37&w=53&t=fit&output=png). ![Image 729: Play](https://en.wemakefuture.it/cdn/?url=storage.ibrida.io/public/16_ibrida/logo-youtube-2.png&h=37&w=53&t=fit&output=png). ![Image 731: Play](https://en.wemakefuture.it/cdn/?ur","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"[Image 4: Corey Ching](https://en.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"io/public/eventManager/people/user/761d72c6-042c-4053-b4fd-e6016c34e09b.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"jpeg&h=340&w=340&t=fit&q=80&output=jpg&il).","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"[Image 727: Play](https://en.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"io/public/16_ibrida/logo-youtube-2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["![Image 4: Corey Ching](https://en.wemakefuture.it/cdn/?url=storage.ibrida.io/public/eventManager/people/user/761d72c6-042c-4053-b4fd-e6016c34e09b.jpeg&h=340&w=340&t=fit&q=80&output=jpg&il). ![Image 727: Play](https://en.wemakefuture.it/cdn/?url=storage.ibrida.io/public/16_ibrida/logo-youtube-2.png&h=37&w=53&t=fit&output=png). ![Image 729: Play](https://en.wemakefuture.it/cdn/?url=storage.ibrida.io/public/16_ibrida/logo-youtube-2.png&h=37&w=53&t=fit&output=png). ![Image 731: Play](https://en.wemakefuture.it/cdn/?ur","[Image 4: Corey Ching](https://en.","io/public/eventManager/people/user/761d72c6-042c-4053-b4fd-e6016c34e09b."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?- 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-054锝?026: The year AI SaaS companies act like AI Services companies. I keep seeing the same pattern: AI vendors send technical consultants on-site to run discovery and build custom solutions for each鈥?| Alex Furmansky | 18 comments
 
@@ -2877,6 +2889,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_seed: {"company_actions":["Title: Open Source Coding Agent Kilo Raises $8M in Seed Funding ### Best 30 Adtech Companies and Startups in 2026. Discover the top 30 adtech companies and startups in 2026. ### Discover 40 Top EdTech Companies & Startups in 2025. Explore our curated list of 40 cutting-edge companies and startups poised to transform the education landscape. Discover the top PropTech companies of 2025鈥擹illow, Side, Qualia, and more鈥攖ransforming real estate with digital closings, 3D tours, and AI tools. ### Explore the 50 Best CleanT","Aerospace Financial AI Fintech B2B Funding news Blockchain HealthTech CleanTech HRTech Consumer Tech Mobility Crypto Robotics Cybersecurity SaaS Events RegTech Startup Kalipso Secures $3.","2M Led by Varsity June 25, 2026 Airwallex Raises $320M Series H, Hits $11B Valuation June 25, 2026 HoneyBook Study Finds Photographers' Biggest Challenge Is Managing Client Bookings June 24, 2026 Peregrine Technologies Secures $250M at $6."],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鍚堝悓瀹￠槄 / 娉曞緥鐮旂┒ 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 璁¤垂 / 棰勭畻绠＄悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["CIO / IT 璐熻矗浜?,"寮€鍙戣€?/ 宸ョ▼鍥㈤槦","娉曞姟 / 寰嬪笀"],"risks_or_constraints":[]}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?- 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-057锝滄秷鎭О缇庡浗鏀垮簻瑕佹眰OpenAI瀹℃牳鍚庡垎鎵瑰彂甯僄PT-5.6
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-073
 - raw_original_id: cmqua8v0p02mxsl80xm49yo7y
@@ -2894,15 +2907,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-body-visible-text
-- extraction_quality: medium
+- extraction_quality: failed
 - extraction_method: body-visible-text
-- readability_score: 46
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -2915,7 +2928,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - raw_full_text_hash: d6fd7d94645b7b04
 - raw_semantic_hash: 6e9de1bcc22b3592
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d6fd7d94645b7b04","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: commercial_or_risk_context, adoption_context
@@ -2923,11 +2936,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 18.6
 - usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
-- key_excerpts: [{"type":"number","text":"缇庡浗鏀垮簻鍑轰簬瀹夊叏鑰冭檻锛岃姹侽penAI鍒嗘壒鍙戝竷GPT-5.6銆侽penAI灏嗕互鏈夐檺棰勮褰㈠紡鍙戝竷锛屼粎鍏佽灏戞暟浼佷笟瀹㈡埛璁块棶涓旈渶鏀垮簻閫愭鎵瑰噯銆傝妯″瀷绯诲垪娑电洊mini銆佹爣鍑嗙増涓嶱ro鐗堬紝涓婁笅鏂囩獥鍙ｆ墿鑷?50涓噒okens锛屼紭鍖栭暱鍛ㄦ湡缂栫爜涓嶤odex鍝嶅簲閫熷害锛屾櫤鑳戒綋缂栫爜鑳藉姏浼樹簬Anthropic Mythos绯诲垪銆侽penAI璁″垝浠ュ綋鍓嶇害Anthropic涓€鍗婄殑token浠锋牸杩涗竴姝ラ檷浠枫€?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"娑堟伅绉扮編鍥芥斂搴滆姹?OpenAI 瀹℃牳鍚庡垎鎵瑰彂甯?GPT-5.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"6 - IT涔嬪 棣栭〉 IT鍦?鏈€浼氫拱 璁剧疆 鏃ュ闂?闅忕郴缁?娴呰壊 娣辫壊 涓婚鑹?榛戣壊 鎶曠 璁㈤槄 RSS璁㈤槄 鏀惰棌IT涔嬪 杞獟搴旂敤 App瀹㈡埛绔?瑕佺煡App 杞獟榄旀柟 涓氱晫 鎵嬫満 鐢佃剳 娴嬭瘎 瑙嗛 AI 鑻规灉 iPhone 楦胯挋 杞欢 鏅鸿溅 鏁扮爜 瀛﹂櫌 娓告垙 鐩存挱 5G 寰蒋 Win10 Win11 涓撻 鎼滅储 棣栭〉 > 鏅鸿兘鏃朵唬 > 浜哄伐鏅鸿兘 娑堟伅绉扮編鍥芥斂搴滆姹?OpenAI 瀹℃牳鍚庡垎鎵瑰彂甯?GPT-5.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"6 2026/6/26 9:29:58 鏉ユ簮锛?IT涔嬪 浣滆€咃細 姹芳 璐ｇ紪锛?姹芳 璇勮锛?鎰熻阿IT涔嬪缃戝弸 涔岃潎鍝ョ殑宸︽墜 銆?鍗庡崡鍚村溅绁?鐨勭嚎绱㈡姇閫掞紒","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"IT涔嬪 6 鏈?26 鏃ユ秷鎭紝鎹?The Information 浠婃棩鎶ラ亾锛岀編鍥芥斂搴滄媴蹇冩綔鍦ㄧ殑瀹夊叏闂锛?宸茶姹?OpenAI 鍒嗘壒鍙戝竷鍏朵笅涓€鐗堟湰鐨?GPT-5.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"鎶ラ亾绉帮紝OpenAI CEO 钀ㄥ 路 濂ュ皵鐗规浖锛圫am Altman锛夊綋鍦版椂闂村懆涓夊湪鍏徃闂瓟涓憡璇夊憳宸ワ紝 灏嗕互鏈夐檺棰勮褰㈠紡鍙戝竷 GPT-5.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["娑堟伅绉扮編鍥芥斂搴滆姹?OpenAI 瀹℃牳鍚庡垎鎵瑰彂甯?GPT-5.","6 2026/6/26 9:29:58 鏉ユ簮锛?IT涔嬪 浣滆€咃細 姹芳 璐ｇ紪锛?姹芳 璇勮锛?鎰熻阿IT涔嬪缃戝弸 涔岃潎鍝ョ殑宸︽墜 銆?鍗庡崡鍚村溅绁?鐨勭嚎绱㈡姇閫掞紒","鎶ラ亾绉帮紝OpenAI CEO 钀ㄥ 路 濂ュ皵鐗规浖锛圫am Altman锛夊綋鍦版椂闂村懆涓夊湪鍏徃闂瓟涓憡璇夊憳宸ワ紝 灏嗕互鏈夐檺棰勮褰㈠紡鍙戝竷 GPT-5."],"case_details":["6 - IT涔嬪 棣栭〉 IT鍦?鏈€浼氫拱 璁剧疆 鏃ュ闂?闅忕郴缁?娴呰壊 娣辫壊 涓婚鑹?榛戣壊 鎶曠 璁㈤槄 RSS璁㈤槄 鏀惰棌IT涔嬪 杞獟搴旂敤 App瀹㈡埛绔?瑕佺煡App 杞獟榄旀柟 涓氱晫 鎵嬫満 鐢佃剳 娴嬭瘎 瑙嗛 AI 鑻规灉 iPhone 楦胯挋 杞欢 鏅鸿溅 鏁扮爜 瀛﹂櫌 娓告垙 鐩存挱 5G 寰蒋 Win10 Win11 涓撻 鎼滅储 棣栭〉 > 鏅鸿兘鏃朵唬 > 浜哄伐鏅鸿兘 娑堟伅绉扮編鍥芥斂搴滆姹?OpenAI 瀹℃牳鍚庡垎鎵瑰彂甯?GPT-5."],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":["IT涔嬪 6 鏈?26 鏃ユ秷鎭紝鎹?The Information 浠婃棩鎶ラ亾锛岀編鍥芥斂搴滄媴蹇冩綔鍦ㄧ殑瀹夊叏闂锛?宸茶姹?OpenAI 鍒嗘壒鍙戝竷鍏朵笅涓€鐗堟湰鐨?GPT-5."]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: none
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-058锝滆嫻鏋?Xcode 26.6 姝ｅ紡鐗堝彂甯冿紝鏂板璋锋瓕 Gemini 缂栫▼鍔╂墜鏀寔
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-074
 - raw_original_id: cmquce1hi035rsl8069wupgka
@@ -2945,15 +2959,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-body-visible-text
-- extraction_quality: medium
+- extraction_quality: failed
 - extraction_method: body-visible-text
-- readability_score: 36
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -2966,7 +2980,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - raw_full_text_hash: 9647659ddecf0547
 - raw_semantic_hash: d9bb8686a2560242
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9647659ddecf0547","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: adoption_context
@@ -2974,11 +2988,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 18.6
 - usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
-- key_excerpts: [{"type":"product_update","text":"鑻规灉浠婃棩鍙戝竷 Xcode 26.6 IDE锛屾柊澧?Google Gemini 缂栫▼鍔╂墜鏀寔銆傝鐗堟湰鍖呭惈 Swift 6.3.3 鍙?iOS 26.5銆乮PadOS 26.5銆乼vOS 26.5銆亀atchOS 26.5銆乿isionOS 26.5銆乵acOS 26.5 鐨?SDK銆傜紪绋嬪姪鎵嬬幇宸插彲閫?Anthropic Claude Agents 鍜?OpenAI Codex 浣滀负 AI 鎻愪緵鍟嗐€傛澶栨洿鏂拌繕鏂板 ACP 鍏煎鑳藉姏锛屽苟淇澶氶」 Bug銆俋code 26.6 宸蹭笂鏋?App Store锛屽紑鍙戣€呭彲鍏嶈垂涓嬭浇銆?,"supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"6 姝ｅ紡鐗堝彂甯冿紝鏂板璋锋瓕 Gemini 缂栫▼鍔╂墜鏀寔 - IT涔嬪 棣栭〉 IT鍦?鏈€浼氫拱 璁剧疆 鏃ュ闂?闅忕郴缁?娴呰壊 娣辫壊 涓婚鑹?榛戣壊 鎶曠 璁㈤槄 RSS璁㈤槄 鏀惰棌IT涔嬪 杞獟搴旂敤 App瀹㈡埛绔?瑕佺煡App 杞獟榄旀柟 涓氱晫 鎵嬫満 鐢佃剳 娴嬭瘎 瑙嗛 AI 鑻规灉 iPhone 楦胯挋 杞欢 鏅鸿溅 鏁扮爜 瀛﹂櫌 娓告垙 鐩存挱 5G 寰蒋 Win10 Win11 涓撻 鎼滅储 棣栭〉 > Mac涔嬪 > Mac鏂伴椈 鑻规灉 Xcode 26.","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"6 姝ｅ紡鐗堝彂甯冿紝鏂板璋锋瓕 Gemini 缂栫▼鍔╂墜鏀寔 2026/6/26 10:25:18 鏉ユ簮锛?IT涔嬪 浣滆€咃細 娼炴簮锛堝疄涔狅級 璐ｇ紪锛?娼炴簮 璇勮锛?IT涔嬪 6 鏈?26 鏃ユ秷鎭紝鑻规灉鐜板凡鍙戝竷 Xcode 26.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"6 IDE锛屾柊澧炶胺姝?Gemini 缂栫▼鍔╂墜鏀寔銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"IT涔嬪闄勮嫻鏋滃畼鏂规洿鏂板叕鍛婂涓嬶細 Xcode 26.","supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"3锛屼互鍙婇€傜敤浜庝互涓嬬郴缁熺殑 SDK锛?iOS 26.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["鑻规灉浠婃棩鍙戝竷 Xcode 26.6 IDE锛屾柊澧?Google Gemini 缂栫▼鍔╂墜鏀寔銆傝鐗堟湰鍖呭惈 Swift 6.3.3 鍙?iOS 26.5銆乮PadOS 26.5銆乼vOS 26.5銆亀atchOS 26.5銆乿isionOS 26.5銆乵acOS 26.5 鐨?SDK銆傜紪绋嬪姪鎵嬬幇宸插彲閫?Anthropic Claude Agents 鍜?OpenAI Codex 浣滀负 AI 鎻愪緵鍟嗐€傛澶栨洿鏂拌繕鏂板 ACP 鍏煎鑳藉姏锛屽苟淇澶氶」 Bug銆俋code 26.6 宸蹭笂鏋?App Store锛屽紑鍙戣€呭彲鍏嶈垂涓嬭浇銆?,"6 姝ｅ紡鐗堝彂甯冿紝鏂板璋锋瓕 Gemini 缂栫▼鍔╂墜鏀寔 2026/6/26 10:25:18 鏉ユ簮锛?IT涔嬪 浣滆€咃細 娼炴簮锛堝疄涔狅級 璐ｇ紪锛?娼炴簮 璇勮锛?IT涔嬪 6 鏈?26 鏃ユ秷鎭紝鑻规灉鐜板凡鍙戝竷 Xcode 26.","6 IDE锛屾柊澧炶胺姝?Gemini 缂栫▼鍔╂墜鏀寔銆?],"case_details":["6 姝ｅ紡鐗堝彂甯冿紝鏂板璋锋瓕 Gemini 缂栫▼鍔╂墜鏀寔 - IT涔嬪 棣栭〉 IT鍦?鏈€浼氫拱 璁剧疆 鏃ュ闂?闅忕郴缁?娴呰壊 娣辫壊 涓婚鑹?榛戣壊 鎶曠 璁㈤槄 RSS璁㈤槄 鏀惰棌IT涔嬪 杞獟搴旂敤 App瀹㈡埛绔?瑕佺煡App 杞獟榄旀柟 涓氱晫 鎵嬫満 鐢佃剳 娴嬭瘎 瑙嗛 AI 鑻规灉 iPhone 楦胯挋 杞欢 鏅鸿溅 鏁扮爜 瀛﹂櫌 娓告垙 鐩存挱 5G 寰蒋 Win10 Win11 涓撻 鎼滅储 棣栭〉 > Mac涔嬪 > Mac鏂伴椈 鑻规灉 Xcode 26."],"workflow_changes":[],"before_after_clues":[],"affected_roles":["寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-059锝淟inux 鍩洪噾浼氳仈鍚堝鏂规帹鍑?Akrites 椤圭洰锛屾姷寰?AI 椹卞姩寮€婧愯蒋浠舵紡娲炴敾鍑?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-075
 - raw_original_id: cmqua8v0p02n2sl80n6f4lk3n
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-075-linux-鍩洪噾浼氳仈鍚堝鏂规帹鍑?akrites-椤圭洰-鎶靛尽-ai-椹卞姩寮€婧愯蒋浠舵紡娲炴敾鍑?md`
@@ -2995,15 +3010,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-body-visible-text
-- extraction_quality: medium
+- extraction_quality: failed
 - extraction_method: body-visible-text
-- readability_score: 39
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -3011,12 +3026,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: pooled
-- pool_routes: core_pool, emerging_pool
+- pool_routes: watchlist
 - raw_content_hash: 17e80a737cfbf605
 - raw_full_text_hash: 17e80a737cfbf605
 - raw_semantic_hash: 68d9b462b64b04d0
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"17e80a737cfbf605","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: adoption_context
@@ -3024,8 +3039,8 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 18.6
 - usable_for: case, change, trend, daily_observation, heatmap, briefing, emerging_pool, watchlist
-- key_excerpts: [{"type":"funding","text":"Linux 鍩洪噾浼氳仈鍚堜簹椹€娿€丄nthropic銆丱penAI銆佽嫳浼熻揪銆佺孩甯界瓑鎺ㄥ嚭 Akrites 椤圭洰锛屾棬鍦ㄤ繚鎶ゅ紑婧愯蒋浠讹紝闃茶寖鍩轰簬 AI 涓庡ぇ璇█妯″瀷鐨勬紡娲炴敾鍑汇€傞」鐩噰鐢ㄧ粺涓€ CVD 鎶湶娴佺▼锛屼繚瀵嗕紭鍏堬紝婕忔礊鐢卞師缁存姢鍥㈤槦鎸夎嚜韬妭濂忎慨澶嶏紱鏃犳椿璺冪淮鎶よ€呯殑椤圭洰鐢辨渶鍚庣淮鎶よ€呮帴鎵嬪苟灏藉揩鍒嗗彂銆傚悎浣滀紮浼磋繕鍖呮嫭鎬濈銆佽姳鏃楅泦鍥€佽胺姝屻€両BM銆佹懇鏍瑰ぇ閫氥€佸井杞€丟itHub銆丷ust 鍩洪噾浼氥€佹矁杈句赴绛夈€?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"Linux 鍩洪噾浼氳仈鍚?Anthropic銆丱penAI 绛夋帹鍑衡€淎krites鈥濋」鐩紝鎶靛尽鍩轰簬 AI 鐨勫紑婧愯蒋浠舵紡娲炴敾鍑?- IT涔嬪 棣栭〉 IT鍦?鏈€浼氫拱 璁剧疆 鏃ュ闂?闅忕郴缁?娴呰壊 娣辫壊 涓婚鑹?榛戣壊 鎶曠 璁㈤槄 RSS璁㈤槄 鏀惰棌IT涔嬪 杞獟搴旂敤 App瀹㈡埛绔?瑕佺煡App 杞獟榄旀柟 涓氱晫 鎵嬫満 鐢佃剳 娴嬭瘎 瑙嗛 AI 鑻规灉 iPhone 楦胯挋 杞欢 鏅鸿溅 鏁扮爜 瀛﹂櫌 娓告垙 鐩存挱 5G 寰蒋 Win10 Win11 涓撻 鎼滅储 棣栭〉 > 杞欢涔嬪 > Linux Linux 鍩洪噾浼氳仈鍚?Anthropic銆丱penAI 绛夋帹鍑衡€淎krites鈥濋」鐩紝鎶靛尽鍩轰簬 AI 鐨勫紑婧愯蒋浠舵紡娲炴敾鍑?2026/6/26 9:10:12 鏉ユ簮锛?IT涔嬪 浣滆€咃細 娼炴簮锛堝疄涔狅級 璐ｇ紪锛?娼炴簮 璇勮锛?IT涔嬪 6 鏈?26 鏃ユ秷鎭紝鎹鎶€濯掍綋 Phoronix 鏄ㄥぉ鎶ラ亾锛孡inux 鍩洪噾浼氱幇宸蹭笌浜氶┈閫娿€丄nthropic銆丱penAI銆佽嫳浼熻揪鍜岀孩甯界瓑澶氬浼佷笟杈炬垚鍚堜綔锛屽叡鍚屾帹鍑?Akrites 椤圭洰銆?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT涔嬪浠庡師鎶ラ亾鑾锋倝锛?Akrites 鏃ㄥ湪淇濇姢寮€婧愯蒋浠?锛?闃茶寖鍩轰簬 AI 涓庡ぇ璇█妯″瀷鐨勬紡娲炴敾鍑?锛岀‘淇濇紡娲炶兘澶熷湪琚?AI 鍙戠幇鍓嶅揩閫熶慨澶嶃€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"鍚屾椂锛孉krites 灏嗕娇鐢ㄧ粺涓€鐨?CVD 鎶湶娴佺▼锛屼互淇濆瘑涓轰紭鍏堢殑鍘熷垯涓庤涓氭爣鍑嗗伐鍏峰紑灞曞伐浣溿€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"瀹樻柟瑙ｉ噴绉帮紝婕忔礊鏈€缁堝皢鐢卞師鏈夌淮鎶ゅ洟闃熶慨澶嶏紝骞舵寜鐓т粬浠嚜宸辩殑鑺傚鍙戝竷銆?,"supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"濡傛灉鏌愪釜椤圭洰宸茬粡娌℃湁娲昏穬缁存姢鑰?锛?閭ｄ箞鏈€鍚庣殑缁存姢鑰呭皢鎺ユ墜缁存姢宸ヤ綔 锛屽苟灏藉揩鍒嗗彂缁欑敤鎴枫€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["Linux 鍩洪噾浼氳仈鍚堜簹椹€娿€丄nthropic銆丱penAI銆佽嫳浼熻揪銆佺孩甯界瓑鎺ㄥ嚭 Akrites 椤圭洰锛屾棬鍦ㄤ繚鎶ゅ紑婧愯蒋浠讹紝闃茶寖鍩轰簬 AI 涓庡ぇ璇█妯″瀷鐨勬紡娲炴敾鍑汇€傞」鐩噰鐢ㄧ粺涓€ CVD 鎶湶娴佺▼锛屼繚瀵嗕紭鍏堬紝婕忔礊鐢卞師缁存姢鍥㈤槦鎸夎嚜韬妭濂忎慨澶嶏紱鏃犳椿璺冪淮鎶よ€呯殑椤圭洰鐢辨渶鍚庣淮鎶よ€呮帴鎵嬪苟灏藉揩鍒嗗彂銆傚悎浣滀紮浼磋繕鍖呮嫭鎬濈銆佽姳鏃楅泦鍥€佽胺姝屻€両BM銆佹懇鏍瑰ぇ閫氥€佸井杞€丟itHub銆丷ust 鍩洪噾浼氥€佹矁杈句赴绛夈€?,"Linux 鍩洪噾浼氳仈鍚?Anthropic銆丱penAI 绛夋帹鍑衡€淎krites鈥濋」鐩紝鎶靛尽鍩轰簬 AI 鐨勫紑婧愯蒋浠舵紡娲炴敾鍑?- IT涔嬪 棣栭〉 IT鍦?鏈€浼氫拱 璁剧疆 鏃ュ闂?闅忕郴缁?娴呰壊 娣辫壊 涓婚鑹?榛戣壊 鎶曠 璁㈤槄 RSS璁㈤槄 鏀惰棌IT涔嬪 杞獟搴旂敤 App瀹㈡埛绔?瑕佺煡App 杞獟榄旀柟 涓氱晫 鎵嬫満 鐢佃剳 娴嬭瘎 瑙嗛 AI 鑻规灉 iPhone 楦胯挋 杞欢 鏅鸿溅 鏁扮爜 瀛﹂櫌 娓告垙 鐩存挱 5G 寰蒋 Win10 Win11 涓撻 鎼滅储 棣栭〉 > 杞欢涔嬪 > Linux Linux 鍩洪噾浼氳仈鍚?Anthropic銆丱penAI 绛夋帹鍑衡€淎krites鈥濋」鐩紝鎶靛尽鍩轰簬 AI 鐨勫紑婧愯蒋浠舵紡娲炴敾鍑?2026/6/26 9:10:12 鏉ユ簮锛?IT涔嬪 浣滆€咃細 娼炴簮锛堝疄涔狅級 璐ｇ紪锛?娼炴簮 璇勮锛?IT涔嬪 6 鏈?26 鏃ユ秷鎭紝鎹鎶€濯掍綋 Phoronix 鏄ㄥぉ鎶ラ亾锛孡inux 鍩洪噾浼氱幇宸蹭笌浜氶┈閫娿€丄nthropic銆丱penAI銆佽嫳浼熻揪鍜岀孩甯界瓑澶氬浼佷笟杈炬垚鍚堜綔锛屽叡鍚屾帹鍑?Akrites 椤圭洰銆?,"IT涔嬪浠庡師鎶ラ亾鑾锋倝锛?Akrites 鏃ㄥ湪淇濇姢寮€婧愯蒋浠?锛?闃茶寖鍩轰簬 AI 涓庡ぇ璇█妯″瀷鐨勬紡娲炴敾鍑?锛岀‘淇濇紡娲炶兘澶熷湪琚?AI 鍙戠幇鍓嶅揩閫熶慨澶嶃€?],"case_details":[],"workflow_changes":["鍚屾椂锛孉krites 灏嗕娇鐢ㄧ粺涓€鐨?CVD 鎶湶娴佺▼锛屼互淇濆瘑涓轰紭鍏堢殑鍘熷垯涓庤涓氭爣鍑嗗伐鍏峰紑灞曞伐浣溿€?],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储
 - 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-060锝滃崐瀵间綋琛屼笟閲嶅ぇ绐佺牬锛両BM鎺ㄥ嚭鍏ㄧ悆棣栦釜浜?绾崇背鑺墖鎶€鏈?
@@ -3080,6 +3095,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - missing_information: none
 - 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-061锝滆胺姝屾牳蹇傾I鐮旂┒浜哄憳鎸佺画娴佸け鑷矨nthropic鍜孫penAI
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-077
 - raw_original_id: cmqtc9nw602b0sl0ee73907n2
@@ -3097,15 +3113,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: false
 - event_evidence: false
 - index_only_evidence: false
-- raw_qc_decision: allow_with_degradation
-- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-json-ld
-- extraction_quality: medium
+- extraction_quality: failed
 - extraction_method: json-ld
-- readability_score: 57
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -3113,12 +3129,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: indexed
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 8a345ac786eff7d9
 - raw_full_text_hash: 8a345ac786eff7d9
 - raw_semantic_hash: 666f3ce83d00d2b3
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8a345ac786eff7d9","missing":[]}
-- degradation_reasons: insufficient_usable_evidence_object
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_technical_trend
 - importance_score: 5
 - supporting_signals: none
@@ -3127,10 +3143,11 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 18.6
 - usable_for: index_only
-- key_excerpts: [{"type":"funding","text":"鎹瓸loomberg鎶ラ亾锛孏emini妯″瀷鍏抽敭浜虹墿Jonas Adler锛圓I缂栫▼鏂瑰悜锛夊拰Alexander Pritzel锛堣缁冩柟鍚戯級璁″垝鍔犲叆Anthropic銆傛鍓嶈璐濆皵濂栧緱涓籎ohn Jumper宸茶浆鎶旳nthropic锛孏emini璐熻矗浜篘oam Shazeer鍒欏幓浜哋penAI銆傜鑱屽紩鍙戞姇璧勮€呮媴蹇э紝鎷栫疮Alphabet鑲′环銆傚師鍥犱箣涓€鏄疉nthropic涓嶰penAI鍧囦复杩慖PO锛岃兘鎻愪緵涓板帤鑲℃潈婵€鍔便€係ignalFire鍒嗘瀽鏄剧ず锛孌eepMind宸ョ▼甯堟祦鍚慉nthropic鐨勯鐜囨槸鍙嶆柟鍚戠殑11鍊嶃€侴oogle DeepMind CEO Demis Hassabis鍦ㄦ垱绾虫椿鍔ㄤ笂鍥炲簲绉帮紝Google鎷ユ湁涓氬唴鏈€娣卞帤鐨凙I鐮旂┒鍥㈤槦銆?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Google keeps losing top AI researchers to rivals Google keeps losing top AI researchers to rivals Google appears to be hemorrhaging key AI researchers to competitors.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Google appears to be hemorrhaging key AI researchers to competitors.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"AI, Menschen, Wirtschaft AI, Menschen, Wirtschaft Maximilian Schreiner is Managing Editor at THE DECODER and has covered artificial intelligence for close to a decade, from new models and tools to their impact on businesses, media, and society.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"He brings that expertise to heise KI PRO, where he makes AI accessible for professionals in the DACH region - clear, critical, and practical.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"With a background in philosophy, one question keeps driving him: whether machines can truly think, or are just getting better at faking it.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["鎹瓸loomberg鎶ラ亾锛孏emini妯″瀷鍏抽敭浜虹墿Jonas Adler锛圓I缂栫▼鏂瑰悜锛夊拰Alexander Pritzel锛堣缁冩柟鍚戯級璁″垝鍔犲叆Anthropic銆傛鍓嶈璐濆皵濂栧緱涓籎ohn Jumper宸茶浆鎶旳nthropic锛孏emini璐熻矗浜篘oam Shazeer鍒欏幓浜哋penAI銆傜鑱屽紩鍙戞姇璧勮€呮媴蹇э紝鎷栫疮Alphabet鑲′环銆傚師鍥犱箣涓€鏄疉nthropic涓嶰penAI鍧囦复杩慖PO锛岃兘鎻愪緵涓板帤鑲℃潈婵€鍔便€係ignalFire鍒嗘瀽鏄剧ず锛孌eepMind宸ョ▼甯堟祦鍚慉nthropic鐨勯鐜囨槸鍙嶆柟鍚戠殑11鍊嶃€侴oogle DeepMind CEO Demis Hassabis鍦ㄦ垱绾虫椿鍔ㄤ笂鍥炲簲绉帮紝Google鎷ユ湁涓氬唴鏈€娣卞帤鐨凙I鐮旂┒鍥㈤槦銆?,"Google keeps losing top AI researchers to rivals Google keeps losing top AI researchers to rivals Google appears to be hemorrhaging key AI researchers to competitors.","Google appears to be hemorrhaging key AI researchers to competitors."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?- 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-062锝淥penAI 鑰冭檻灏?IPO 鎺ㄨ繜鑷虫槑骞达紝鍧氭寔涓囦嚎缇庡厓浼板€煎簳绾?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-078
 - raw_original_id: cmqu5yiia01ldsl80t8wre8gw
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-078-openai-鑰冭檻灏?ipo-鎺ㄨ繜鑷虫槑骞?鍧氭寔涓囦嚎缇庡厓浼板€煎簳绾?md`
@@ -3147,15 +3164,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-body-visible-text
-- extraction_quality: medium
+- extraction_quality: failed
 - extraction_method: body-visible-text
-- readability_score: 48
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -3168,7 +3185,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - raw_full_text_hash: dc1169631e4d2e69
 - raw_semantic_hash: 27ec8cd113c7c83f
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"dc1169631e4d2e69","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: commercial_or_risk_context, adoption_context
@@ -3176,10 +3193,11 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 18.6
 - usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
-- key_excerpts: [{"type":"funding","text":"OpenAI 姝ｈ€冭檻灏?IPO 鎺ㄨ繜鑷虫槑骞达紝鍐呴儴鎻愬嚭涓ょ鏂规锛氱瓑鍒?2027 骞翠互 1 涓囦嚎缇庡厓浼板€间笂甯傦紝鎴栭檷浣庝及鍊间互鏇村揩涓婂競銆侰EO 钀ㄥ路濂ュ皵鐗规浖璁や负浣庝簬涓囦嚎缇庡厓浼板€糪"涓嶅彲鎺ュ彈\"銆傛澶栵紝缇庡浗鍥藉缃戠粶鎬荤洃鍔炲叕瀹や笌鐧藉绉戝涓庢妧鏈斂绛栧姙鍏鍥犲畨鍏ㄦ媴蹇э紝瑕佹眰 OpenAI 鍒嗛樁娈靛彂甯冩柊涓€浠?AI 妯″瀷銆?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"鏇?OpenAI 鑰冭檻灏?IPO 鎺ㄨ繜鑷虫槑骞?- IT涔嬪 棣栭〉 IT鍦?鏈€浼氫拱 璁剧疆 鏃ュ闂?闅忕郴缁?娴呰壊 娣辫壊 涓婚鑹?榛戣壊 鎶曠 璁㈤槄 RSS璁㈤槄 鏀惰棌IT涔嬪 杞獟搴旂敤 App瀹㈡埛绔?瑕佺煡App 杞獟榄旀柟 涓氱晫 鎵嬫満 鐢佃剳 娴嬭瘎 瑙嗛 AI 鑻规灉 iPhone 楦胯挋 杞欢 鏅鸿溅 鏁扮爜 瀛﹂櫌 娓告垙 鐩存挱 5G 寰蒋 Win10 Win11 涓撻 鎼滅储 棣栭〉 > 鏅鸿兘鏃朵唬 > 浜哄伐鏅鸿兘 鍧氭寔涓囦嚎缇庡厓浼板€煎簳绾匡紵","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鏇?OpenAI 鑰冭檻灏?IPO 鎺ㄨ繜鑷虫槑骞?2026/6/26 7:29:58 鏉ユ簮锛?IT涔嬪 浣滆€咃細 娼炴簮锛堝疄涔狅級 璐ｇ紪锛?娼炴簮 璇勮锛?鎰熻阿IT涔嬪缃戝弸 鍗庡崡鍚村溅绁?鐨勭嚎绱㈡姇閫掞紒","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT涔嬪 6 鏈?26 鏃ユ秷鎭紝鎹€婄航绾︽椂鎶ャ€嬫槰鏃ユ彺寮曚笁浣嶅唴閮ㄤ汉澹秷鎭紝OpenAI 姝ｈ€冭檻灏?IPO锛堥娆″叕寮€鍕熻偂锛夋帹杩熻嚦鏄庡勾杩涜銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"姝ゅ墠鏇炬湁浼犻椈绉帮紝OpenAI 宸插悜缇庡浗鐩戠鏈烘瀯绉樺瘑閫掍氦 IPO 鐢宠锛岀洰鏍囦及鍊兼渶楂樺彲杈?1 涓囦嚎缇庡厓锛圛T涔嬪娉細鐜版眹鐜囩害鍚?6.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"浣嗘牴鎹唴閮ㄧ煡鎯呬汉澹墍杩帮紝鐩墠 OpenAI 鍚戦【闂叕鍙告彁鍑轰簡涓ょ鏂规锛?绛夊埌 2027 骞达紝浠?1 涓囦嚎缇庡厓浼板€间笂甯傦紱 闄嶄綆鐩爣浼板€硷紝浠ュ疄鐜版洿蹇笂甯傘€?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["OpenAI 姝ｈ€冭檻灏?IPO 鎺ㄨ繜鑷虫槑骞达紝鍐呴儴鎻愬嚭涓ょ鏂规锛氱瓑鍒?2027 骞翠互 1 涓囦嚎缇庡厓浼板€间笂甯傦紝鎴栭檷浣庝及鍊间互鏇村揩涓婂競銆侰EO 钀ㄥ路濂ュ皵鐗规浖璁や负浣庝簬涓囦嚎缇庡厓浼板€糪"涓嶅彲鎺ュ彈\"銆傛澶栵紝缇庡浗鍥藉缃戠粶鎬荤洃鍔炲叕瀹や笌鐧藉绉戝涓庢妧鏈斂绛栧姙鍏鍥犲畨鍏ㄦ媴蹇э紝瑕佹眰 OpenAI 鍒嗛樁娈靛彂甯冩柊涓€浠?AI 妯″瀷銆?,"鏇?OpenAI 鑰冭檻灏?IPO 鎺ㄨ繜鑷虫槑骞?- IT涔嬪 棣栭〉 IT鍦?鏈€浼氫拱 璁剧疆 鏃ュ闂?闅忕郴缁?娴呰壊 娣辫壊 涓婚鑹?榛戣壊 鎶曠 璁㈤槄 RSS璁㈤槄 鏀惰棌IT涔嬪 杞獟搴旂敤 App瀹㈡埛绔?瑕佺煡App 杞獟榄旀柟 涓氱晫 鎵嬫満 鐢佃剳 娴嬭瘎 瑙嗛 AI 鑻规灉 iPhone 楦胯挋 杞欢 鏅鸿溅 鏁扮爜 瀛﹂櫌 娓告垙 鐩存挱 5G 寰蒋 Win10 Win11 涓撻 鎼滅储 棣栭〉 > 鏅鸿兘鏃朵唬 > 浜哄伐鏅鸿兘 鍧氭寔涓囦嚎缇庡厓浼板€煎簳绾匡紵","鏇?OpenAI 鑰冭檻灏?IPO 鎺ㄨ繜鑷虫槑骞?2026/6/26 7:29:58 鏉ユ簮锛?IT涔嬪 浣滆€咃細 娼炴簮锛堝疄涔狅級 璐ｇ紪锛?娼炴簮 璇勮锛?鎰熻阿IT涔嬪缃戝弸 鍗庡崡鍚村溅绁?鐨勭嚎绱㈡姇閫掞紒"],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["CIO / IT 璐熻矗浜?],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?- 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-063锝淐laude Code v2.1.193 鍙戝竷
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-079
 - raw_original_id: cmqu24x8v00lssl8065rajmsy
@@ -3197,15 +3215,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-main
-- extraction_quality: medium
+- extraction_quality: failed
 - extraction_method: main
-- readability_score: 79
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -3213,12 +3231,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: pooled
-- pool_routes: core_pool
+- pool_routes: watchlist
 - raw_content_hash: b9452ccd43d1bf0a
 - raw_full_text_hash: b9452ccd43d1bf0a
 - raw_semantic_hash: b862fd5da31ca4de
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b9452ccd43d1bf0a","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: commercial_or_risk_context, adoption_context
@@ -3226,10 +3244,11 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 18.6
 - usable_for: case, change, trend, daily_observation, heatmap, briefing, watchlist
-- key_excerpts: [{"type":"company_action","text":"Claude Code v2.1.193 鏂板 `autoMode.classifyAllShell` 璁剧疆锛屽皢鍏ㄩ儴 Bash/PowerShell 鍛戒护缁忚嚜鍔ㄦā寮忓垎绫诲櫒澶勭悊銆傝嚜鍔ㄦā寮忔嫆缁濆師鍥犵幇鍔犲叆杞綍銆佹嫆缁濇彁绀哄強 `/permissions` 椤甸潰銆傛柊澧?`claude_code.assistant_response` OpenTelemetry 鏃ュ織浜嬩欢锛堥粯璁や笉璁板綍锛岄渶璁剧疆 `OTEL_LOG_ASSISTANT_RESPONSES=1`锛夈€侭ash 妯″紡鏀寔瀹炴椂鏂囦欢璺緞鑷姩琛ュ叏锛汳CP 鏈嶅姟鍣ㄩ渶璁よ瘉鏃舵樉绀哄惎鍔ㄦ彁绀恒€傛柊澧炵┖闂插悗鍙?shell 鍛戒护鑷姩鍐呭瓨鍘嬪姏鍥炴敹锛堝彲绂佺敤锛夈€備慨澶?`/model` UI 鐘舵€佹粸鍚庛€佸悗鍙颁换鍔¤鍙栨秷銆佸瓙 agent 闅愯棌鍚岀骇绛夐棶棰橈紝骞舵敼杩涗簡鍚庡彴 agent 鍚姩鎸囦护銆丮CP 璁よ瘉閲嶈繛銆佹彃浠惰嚜鍔ㄩ噸鍛藉悕绛夎涓恒€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"There was an error while loading.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Please reload this page .","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"anthropics claude-code Public Notifications You must be signed in to change notification settings Fork 21.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"193 Latest Latest Compare Choose a tag to compare Sorry, something went wrong.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Filter Loading Sorry, something went wrong.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["Claude Code v2.1.193 鏂板 `autoMode.classifyAllShell` 璁剧疆锛屽皢鍏ㄩ儴 Bash/PowerShell 鍛戒护缁忚嚜鍔ㄦā寮忓垎绫诲櫒澶勭悊銆傝嚜鍔ㄦā寮忔嫆缁濆師鍥犵幇鍔犲叆杞綍銆佹嫆缁濇彁绀哄強 `/permissions` 椤甸潰銆傛柊澧?`claude_code.assistant_response` OpenTelemetry 鏃ュ織浜嬩欢锛堥粯璁や笉璁板綍锛岄渶璁剧疆 `OTEL_LOG_ASSISTANT_RESPONSES=1`锛夈€侭ash 妯″紡鏀寔瀹炴椂鏂囦欢璺緞鑷姩琛ュ叏锛汳CP 鏈嶅姟鍣ㄩ渶璁よ瘉鏃舵樉绀哄惎鍔ㄦ彁绀恒€傛柊澧炵┖闂插悗鍙?shell 鍛戒护鑷姩鍐呭瓨鍘嬪姏鍥炴敹锛堝彲绂佺敤锛夈€備慨澶?`/model` UI 鐘舵€佹粸鍚庛€佸悗鍙颁换鍔¤鍙栨秷銆佸瓙 agent 闅愯棌鍚岀骇绛夐棶棰橈紝骞舵敼杩涗簡鍚庡彴 agent 鍚姩鎸囦护銆丮CP 璁よ瘉閲嶈繛銆佹彃浠惰嚜鍔ㄩ噸鍛藉悕绛夎涓恒€?,"There was an error while loading.","Please reload this page ."],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 閮ㄧ讲 / 闆嗘垚浜や粯 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["CIO / IT 璐熻矗浜?],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?- 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-064锝淕oogle灏嗙數鑴戞帶鍒跺姛鑳界洿鎺ラ泦鎴愬埌Gemini 3.5 Flash涓?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-080
 - raw_original_id: cmqta4hi401r8sl0e8arphq38
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-080-google灏嗙數鑴戞帶鍒跺姛鑳界洿鎺ラ泦鎴愬埌gemini-3-5-flash涓?md`
@@ -3246,15 +3265,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: true
 - event_evidence: true
 - index_only_evidence: false
-- raw_qc_decision: allow
-- raw_qc_downstream_use: eligible_after_qc
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-json-ld
-- extraction_quality: medium
+- extraction_quality: failed
 - extraction_method: json-ld
-- readability_score: 57
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -3262,12 +3281,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: pooled
-- pool_routes: core_pool
+- pool_routes: watchlist
 - raw_content_hash: 1acffd5a211fe2ef
 - raw_full_text_hash: 1acffd5a211fe2ef
 - raw_semantic_hash: 73458de117cb3690
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1acffd5a211fe2ef","missing":[]}
-- degradation_reasons: none
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: commercial_or_risk_context, adoption_context
@@ -3275,10 +3294,11 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 18.6
 - usable_for: viewpoint, case, change, trend, daily_observation, heatmap, briefing, watchlist
-- key_excerpts: [{"type":"quote","text":"Google灏哱"Computer Use\"鍔熻兘鐩存帴闆嗘垚鍒癎emini 3.5 Flash锛屾ā鍨嬪彲鑷富鐪嬨€佺悊瑙ｅ苟鎿嶄綔鐢佃剳銆佹祻瑙堝櫒鍜岀Щ鍔ㄨ澶囷紝姝ゅ墠璇ュ姛鑳戒粎浣滀负鐙珛Gemini 2.5妯″瀷鎻愪緵銆傜粨鍚堝嚱鏁拌皟鐢ㄣ€丼earch鍜孧aps绛夊伐鍏凤紝寮€鍙戣€呭彲鏋勫缓璺ㄥ钩鍙版櫤鑳戒綋锛岀敤浜庤蒋浠舵祴璇曟垨鍔炲叕鑷姩鍖栥€傚湪OSWorld鍩哄噯娴嬭瘯涓紝Gemini 3.5 Flash寰楀垎78.4锛岄珮浜嶨emini 3 Flash锛?5.1锛夊拰GPT-5.4 mini锛?2.1锛夛紝鐣ヤ綆浜嶨PT-5.5锛?8.7锛夛紝Anthropic鐨凮pus 4.8浠?3.4棰嗗厛銆傚畨鍏ㄦ柟闈㈤噰鐢ㄥ鎶楄缁冨拰涓ら」鍙€変紒涓氶槻鎶わ細鏁忔劅鎿嶄綔闇€鐢ㄦ埛纭銆佽嚜鍔ㄩ樆姝㈤棿鎺ユ彁绀烘敞鍏ャ€傝鍔熻兘閫氳繃Gemini API鍜孏emini Enterprise Agent Platform鎻愪緵锛岄檮甯rowserbase婕旂ず鍜孏itHub鍙傝€冨疄鐜般€?,"supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Google bakes computer control directly into Gemini 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"5 Flash, letting the model see and operate your screen Google bakes computer control directly into Gemini 3.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"quote","text":"5 Flash, letting the model see and operate your screen Google has integrated \"Computer Use\" directly into Gemini 3.","supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"5 Flash, letting the model operate computers, browsers, and mobile devices on its own.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"On the OSWorld benchmark, it scores 78.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["Google bakes computer control directly into Gemini 3.","5 Flash, letting the model see and operate your screen Google bakes computer control directly into Gemini 3.","5 Flash, letting the model operate computers, browsers, and mobile devices on its own."],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 閮ㄧ讲 / 闆嗘垚浜や粯 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?- 鍏ユ睜鐞嗙敱锛氬叏鏂囪川閲忋€佹潵婧愮瓑绾у拰鍟嗕笟鍙樺寲鍚屾椂杈炬爣锛屽彲浣滀负鍚庣画璧勪骇鍔犲伐鐨勬牳蹇冨€欓€夈€?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-065锝滄牳蹇冪爺绌跺憳鎺ヨ繛绂昏亴鍚庯紝娑堟伅绉拌胺姝岄噸缁?AI 缂栫▼灏忕粍璇曞浘杩借刀 Anthropic
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-081
 - raw_original_id: cmqtoslit05idsl0e3y0n5kbw
@@ -3296,15 +3316,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: false
 - event_evidence: false
 - index_only_evidence: false
-- raw_qc_decision: allow_with_degradation
-- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: fetched-readable-text-body-visible-text
-- extraction_quality: medium
+- extraction_quality: failed
 - extraction_method: body-visible-text
-- readability_score: 47
-- has_full_text: true
+- readability_score: 0
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: article_text
@@ -3312,12 +3332,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: resolved_original_source
 - origin_fetch_status: success
 - raw_status: indexed
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: eab3ef183d1394da
 - raw_full_text_hash: eab3ef183d1394da
 - raw_semantic_hash: f65e78902b93e764
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"eab3ef183d1394da","missing":[]}
-- degradation_reasons: insufficient_usable_evidence_object
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: adoption_context
@@ -3325,8 +3345,8 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 9.1
 - raw_capture_priority: 18.6
 - usable_for: viewpoint
-- key_excerpts: [{"type":"product_update","text":"鐭ユ儏浜哄＋閫忛湶锛岃胺姝屾瀵瑰叾涓绘敾AI缂栫▼宸ュ叿鐨勪笓椤规敾鍧氬皬缁勮繘琛岄噸缁勶紝璋冩暣妯″瀷璁粌鎬濊矾锛屾棦瑕佹彁鍗囦唬鐮佽兘鍔涳紝涔熻寮哄寲鐢熸垚婕旂ず鏂囩绛夊叾浠栧満鏅兘鍔涖€傞噸缁勫彂鐢熷湪涔旂撼鏂烽樋寰峰嫆鍜屼簹鍘嗗北澶锋櫘閲岀瓥灏旇鍒掔鑱屽苟杞姇Anthropic涔嬪悗锛屼袱浜哄潎涓篏emini妯″瀷鍏抽敭璐＄尞鑰呫€傝繎鏈熻胺姝屾祦澶变汉鎵嶈繕鍖呮嫭璇鸿礉灏斿寰椾富绾︾堪路瑭圭弨锛堝悓鏍疯烦妲紸nthropic锛変互鍙奊emini鑱斿腑璐熻矗浜鸿濮喡锋矙娉藉皵锛堝皢鍔犵洘OpenAI锛夈€傚彟鎹秷鎭紝璋锋瓕涓嬩竴浠ｅ墠娌挎ā鍨婫emini 3.5 Pro鍙戝竷鏃堕棿宸叉帹杩熻嚦7鏈堛€?,"supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"鏍稿績鐮旂┒鍛樻帴杩炵鑱屽悗锛屾秷鎭О璋锋瓕閲嶇粍 AI 缂栫▼灏忕粍璇曞浘杩借刀 Anthropic - IT涔嬪 棣栭〉 IT鍦?鏈€浼氫拱 璁剧疆 鏃ュ闂?闅忕郴缁?娴呰壊 娣辫壊 涓婚鑹?榛戣壊 鎶曠 璁㈤槄 RSS璁㈤槄 鏀惰棌IT涔嬪 杞獟搴旂敤 App瀹㈡埛绔?瑕佺煡App 杞獟榄旀柟 涓氱晫 鎵嬫満 鐢佃剳 娴嬭瘎 瑙嗛 AI 鑻规灉 iPhone 楦胯挋 杞欢 鏅鸿溅 鏁扮爜 瀛﹂櫌 娓告垙 鐩存挱 5G 寰蒋 Win10 Win11 涓撻 鎼滅储 棣栭〉 > IT璧勮 > 涓氱晫 鏍稿績鐮旂┒鍛樻帴杩炵鑱屽悗锛屾秷鎭О璋锋瓕閲嶇粍 AI 缂栫▼灏忕粍璇曞浘杩借刀 Anthropic 2026/6/25 23:50:43 鏉ユ簮锛?IT涔嬪 浣滆€咃細 娌佹钵锛堝疄涔狅級 璐ｇ紪锛?娌佹钵 璇勮锛?鎰熻阿IT涔嬪缃戝弸 HH_KK 鐨勭嚎绱㈡姇閫掞紒","supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT涔嬪 6 鏈?25 鏃ユ秷鎭紝鎹?The information 浠婃棩娑堟伅锛岀煡鎯呬汉澹€忛湶锛岃胺姝屾瀵瑰叾涓嶄箙鍓嶆垚绔嬨€?涓绘敾 AI 缂栫▼宸ュ叿鐨勪笓椤规敾鍧氬皬缁勮繘琛岄噸缁?锛岃瘯鍥剧缉灏忎笌 Anthropic 涔嬮棿鐨勬妧鏈樊璺濄€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"鐭ユ儏浜哄＋琛ㄧず锛岃繖鏀垚绔嬩粎鏁版湀鐨勬敾鍧氬皬缁勫皢璋冩暣璋锋瓕 AI 妯″瀷鐨勮缁冩€濊矾锛?鏃㈣鎻愬崌妯″瀷浠ｇ爜鑳藉姏锛屼篃瑕佸己鍖栧叾鐢熸垚婕旂ず鏂囩绛夊叾浠栧満鏅殑鑳藉姏 銆?,"supports":["daily_observation","heatmap","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鏈璋冩暣闄ゆ墿澶ф敾鍧氬皬缁勭殑涓氬姟鑼冨洿澶栵紝杩樺皢杩欐敮鏈€鍒濈殑涓存椂鍥㈤槦鏋舵瀯浜堜互姝ｅ紡鍥哄寲銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鎹倝锛屾娆￠噸缁勫氨鍙戠敓鍦ㄤ箶绾虫柉 路 闃垮痉鍕掞紙Jonas Adler锛夊拰浜氬巻灞卞ぇ 路 鏅噷绛栧皵锛圓lexander Pritzel锛?璁″垝绂昏亴 涔嬪悗銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["鐭ユ儏浜哄＋閫忛湶锛岃胺姝屾瀵瑰叾涓绘敾AI缂栫▼宸ュ叿鐨勪笓椤规敾鍧氬皬缁勮繘琛岄噸缁勶紝璋冩暣妯″瀷璁粌鎬濊矾锛屾棦瑕佹彁鍗囦唬鐮佽兘鍔涳紝涔熻寮哄寲鐢熸垚婕旂ず鏂囩绛夊叾浠栧満鏅兘鍔涖€傞噸缁勫彂鐢熷湪涔旂撼鏂烽樋寰峰嫆鍜屼簹鍘嗗北澶锋櫘閲岀瓥灏旇鍒掔鑱屽苟杞姇Anthropic涔嬪悗锛屼袱浜哄潎涓篏emini妯″瀷鍏抽敭璐＄尞鑰呫€傝繎鏈熻胺姝屾祦澶变汉鎵嶈繕鍖呮嫭璇鸿礉灏斿寰椾富绾︾堪路瑭圭弨锛堝悓鏍疯烦妲紸nthropic锛変互鍙奊emini鑱斿腑璐熻矗浜鸿濮喡锋矙娉藉皵锛堝皢鍔犵洘OpenAI锛夈€傚彟鎹秷鎭紝璋锋瓕涓嬩竴浠ｅ墠娌挎ā鍨婫emini 3.5 Pro鍙戝竷鏃堕棿宸叉帹杩熻嚦7鏈堛€?,"IT涔嬪 6 鏈?25 鏃ユ秷鎭紝鎹?The information 浠婃棩娑堟伅锛岀煡鎯呬汉澹€忛湶锛岃胺姝屾瀵瑰叾涓嶄箙鍓嶆垚绔嬨€?涓绘敾 AI 缂栫▼宸ュ叿鐨勪笓椤规敾鍧氬皬缁勮繘琛岄噸缁?锛岃瘯鍥剧缉灏忎笌 Anthropic 涔嬮棿鐨勬妧鏈樊璺濄€?,"鏈璋冩暣闄ゆ墿澶ф敾鍧氬皬缁勭殑涓氬姟鑼冨洿澶栵紝杩樺皢杩欐敮鏈€鍒濈殑涓存椂鍥㈤槦鏋舵瀯浜堜互姝ｅ紡鍥哄寲銆?],"case_details":["鏍稿績鐮旂┒鍛樻帴杩炵鑱屽悗锛屾秷鎭О璋锋瓕閲嶇粍 AI 缂栫▼灏忕粍璇曞浘杩借刀 Anthropic - IT涔嬪 棣栭〉 IT鍦?鏈€浼氫拱 璁剧疆 鏃ュ闂?闅忕郴缁?娴呰壊 娣辫壊 涓婚鑹?榛戣壊 鎶曠 璁㈤槄 RSS璁㈤槄 鏀惰棌IT涔嬪 杞獟搴旂敤 App瀹㈡埛绔?瑕佺煡App 杞獟榄旀柟 涓氱晫 鎵嬫満 鐢佃剳 娴嬭瘎 瑙嗛 AI 鑻规灉 iPhone 楦胯挋 杞欢 鏅鸿溅 鏁扮爜 瀛﹂櫌 娓告垙 鐩存挱 5G 寰蒋 Win10 Win11 涓撻 鎼滅储 棣栭〉 > IT璧勮 > 涓氱晫 鏍稿績鐮旂┒鍛樻帴杩炵鑱屽悗锛屾秷鎭О璋锋瓕閲嶇粍 AI 缂栫▼灏忕粍璇曞浘杩借刀 Anthropic 2026/6/25 23:50:43 鏉ユ簮锛?IT涔嬪 浣滆€咃細 娌佹钵锛堝疄涔狅級 璐ｇ紪锛?娌佹钵 璇勮锛?鎰熻阿IT涔嬪缃戝弸 HH_KK 鐨勭嚎绱㈡姇閫掞紒"],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 璁¤垂 / 棰勭畻绠＄悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-066锝淕rok AI 娌︿负鑹叉儏骞冲彴锛氳秴鍗婃暟娴侀噺鐢ㄤ簬鎴愪汉鍐呭
@@ -3536,6 +3556,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - missing_information: 娌℃湁妫€娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚嬶紱娌℃湁鍙樺寲鍓嶅悗娴佺▼绾跨储
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-070锝淎 Comprehensive List of The Best AI Agents - GitHub Gist
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-091
 - raw_original_id: https://gist.github.com/devinschumacher/6b50d08249bf97f147657a33869eef07
@@ -3553,15 +3574,15 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_object_usable: false
 - event_evidence: false
 - index_only_evidence: true
-- raw_qc_decision: allow_with_degradation
-- raw_qc_downstream_use: index_watchlist_or_feedback_only
+- raw_qc_decision: block
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: timeout-fallback-visible-text
-- extraction_quality: medium
+- extraction_quality: failed
 - extraction_method: fetch_failed_summary_fallback
 - readability_score: 0
-- has_full_text: true
+- has_full_text: false
 - source_volatility: medium
 - community_name: not_applicable
 - capture_scope: summary_only
@@ -3569,12 +3590,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: not_applicable
 - raw_status: indexed
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: fa5b827323bb6c3e
 - raw_full_text_hash: fa5b827323bb6c3e
 - raw_semantic_hash: 9ee9a037d5b954c3
 - evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"fa5b827323bb6c3e","missing":["missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: adoption_context
@@ -3582,8 +3603,8 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.4
 - raw_capture_priority: 17.9
 - usable_for: index_only
-- key_excerpts: [{"type":"company_action","text":"| title | AI Agents - A Comprehensive Database of The Best AI Agents |. | tags | | | | | | --- | --- | --- | | ai agents | ai | artificial intelligence | |. | ai agents | ai | artificial intelligence |. # AI Agents: A Comprehensive Database of The Best AI Agents. Artificial Intelligence (AI) agents are autonomous programs designed to perform tasks, make decisions, and interact with environments with minimal human intervention. Below is a curated list of notable AI agents and frameworks, highlighting their features ","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"| title | AI Agents - A Comprehensive Database of The Best AI Agents |.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"| tags | | | | | | --- | --- | --- | | ai agents | ai | artificial intelligence | |.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"| ai agents | ai | artificial intelligence |.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"# AI Agents: A Comprehensive Database of The Best AI Agents.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Artificial Intelligence (AI) agents are autonomous programs designed to perform tasks, make decisions, and interact with environments with minimal human intervention.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["| title | AI Agents - A Comprehensive Database of The Best AI Agents |. | tags | | | | | | --- | --- | --- | | ai agents | ai | artificial intelligence | |. | ai agents | ai | artificial intelligence |. # AI Agents: A Comprehensive Database of The Best AI Agents. Artificial Intelligence (AI) agents are autonomous programs designed to perform tasks, make decisions, and interact with environments with minimal human intervention. Below is a curated list of notable AI agents and frameworks, highlighting their features ","| title | AI Agents - A Comprehensive Database of The Best AI Agents |.","| tags | | | | | | --- | --- | --- | | ai agents | ai | artificial intelligence | |."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱?- 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-071锝淚AAR-Shanghai/Awesome-AI-Memory - GitHub
 
@@ -3637,6 +3658,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - evidence_seed: {"company_actions":["There was an error while loading.","Please reload this page .","IAAR-Shanghai Awesome-AI-Memory Public Notifications You must be signed in to change notification settings Fork 93 Star 1k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 255 Commits 255 Commits assets assets scripts scripts CLAUDE."],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 閮ㄧ讲 / 闆嗘垚浜や粯 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":["寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":["* [Code](https://github.com/IAAR-Shanghai/Awesome-AI-Memory). * [Issues 0](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/issues). * [Actions](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/actions). * [Projects](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/projects). * [Security and quality 0](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/security). * [Insights](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/pulse). * [Code](https://github.com/IAAR-Shanghai/Awesome-AI-Memory). * [Issues](htt"]}
 - missing_information: 娌℃湁鍏蜂綋瀹㈡埛鎴栫湡瀹炰紒涓氭渚?- 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-072锝淩unway鍙戝竷Agent 2.0
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-124
 - raw_original_id: daily-5
@@ -3655,7 +3677,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -3670,12 +3692,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 41220223ce29e547
 - raw_full_text_hash: 41220223ce29e547
 - raw_semantic_hash: 3b85c43d57fab142
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"41220223ce29e547","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: none
@@ -3684,11 +3706,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 10.1
 - raw_capture_priority: 1.0999999999999996
 - usable_for: index_only
-- key_excerpts: [{"type":"product_update","text":"Runway鍙戝竷Agent 2.0锛屽府鍔╄惀閿€浜哄憳鍒涘缓銆佹祴璇曞拰浼樺寲骞垮憡銆佽棰戝強钀ラ攢娲诲姩銆傚搧鐗岃惀閿€浜哄憳鍙湪瀵硅瘽涓紑鍙戞椿鍔ㄦ蹇点€佺敓鎴愬彉浣撳苟鑷姩鏈湴鍖栵紱缁╂晥钀ラ攢浜哄憳鍙笂浼犲垱鎰忓苟瀵煎叆Meta銆乊ouTube銆乀ikTok鎴朑oogle骞垮憡鏁版嵁锛岀敱Agent鍒嗘瀽鍚庣敓鎴愪笅涓€杞緟娴嬪箍鍛娿€傜ぞ浜ゅ獟浣撹惀閿€浜哄憳鍙竴娆℃€х敓鎴愪竴鍛ㄥ唴瀹癸紝鑷姩瑁佸垏涓?:16銆?6:9銆?:1绛夋牸寮忥紱浜у搧钀ラ攢浜哄憳鍙€熷姪Agent纭畾瀹氫綅瑙掑害骞舵瀯寤烘椿鍔ㄨ祫浜с€侫gent 2.0闈㈠悜鎵€鏈夌敤鎴峰紑鏀俱€?,"supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"0锛屽府鍔╄惀閿€浜哄憳鍒涘缓銆佹祴璇曞拰浼樺寲骞垮憡銆佽棰戝強钀ラ攢娲诲姩銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鍝佺墝钀ラ攢浜哄憳鍙湪瀵硅瘽涓紑鍙戞椿鍔ㄦ蹇点€佺敓鎴愬彉浣撳苟鑷姩鏈湴鍖栵紱缁╂晥钀ラ攢浜哄憳鍙笂浼犲垱鎰忓苟瀵煎叆Meta銆乊ouTube銆乀ikTok鎴朑oogle骞垮憡鏁版嵁锛岀敱Agent鍒嗘瀽鍚庣敓鎴愪笅涓€杞緟娴嬪箍鍛娿€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"绀句氦濯掍綋钀ラ攢浜哄憳鍙竴娆℃€х敓鎴愪竴鍛ㄥ唴瀹癸紝鑷姩瑁佸垏涓?:16銆?6:9銆?:1绛夋牸寮忥紱浜у搧钀ラ攢浜哄憳鍙€熷姪Agent纭畾瀹氫綅瑙掑害骞舵瀯寤烘椿鍔ㄨ祫浜с€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["Runway鍙戝竷Agent 2.0锛屽府鍔╄惀閿€浜哄憳鍒涘缓銆佹祴璇曞拰浼樺寲骞垮憡銆佽棰戝強钀ラ攢娲诲姩銆傚搧鐗岃惀閿€浜哄憳鍙湪瀵硅瘽涓紑鍙戞椿鍔ㄦ蹇点€佺敓鎴愬彉浣撳苟鑷姩鏈湴鍖栵紱缁╂晥钀ラ攢浜哄憳鍙笂浼犲垱鎰忓苟瀵煎叆Meta銆乊ouTube銆乀ikTok鎴朑oogle骞垮憡鏁版嵁锛岀敱Agent鍒嗘瀽鍚庣敓鎴愪笅涓€杞緟娴嬪箍鍛娿€傜ぞ浜ゅ獟浣撹惀閿€浜哄憳鍙竴娆℃€х敓鎴愪竴鍛ㄥ唴瀹癸紝鑷姩瑁佸垏涓?:16銆?6:9銆?:1绛夋牸寮忥紱浜у搧钀ラ攢浜哄憳鍙€熷姪Agent纭畾瀹氫綅瑙掑害骞舵瀯寤烘椿鍔ㄨ祫浜с€侫gent 2.0闈㈠悜鎵€鏈夌敤鎴峰紑鏀俱€?,"0锛屽府鍔╄惀閿€浜哄憳鍒涘缓銆佹祴璇曞拰浼樺寲骞垮憡銆佽棰戝強钀ラ攢娲诲姩銆?,"鍝佺墝钀ラ攢浜哄憳鍙湪瀵硅瘽涓紑鍙戞椿鍔ㄦ蹇点€佺敓鎴愬彉浣撳苟鑷姩鏈湴鍖栵紱缁╂晥钀ラ攢浜哄憳鍙笂浼犲垱鎰忓苟瀵煎叆Meta銆乊ouTube銆乀ikTok鎴朑oogle骞垮憡鏁版嵁锛岀敱Agent鍒嗘瀽鍚庣敓鎴愪笅涓€杞緟娴嬪箍鍛娿€?],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-073锝淕oogle Finance 鍏ㄦ柊 Android 搴旂敤涓庢姇璧勭粍鍚堝姛鑳戒笂绾?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-125
 - raw_original_id: daily-8
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-125-google-finance-鍏ㄦ柊-android-搴旂敤涓庢姇璧勭粍鍚堝姛鑳戒笂绾?md`
@@ -3706,7 +3729,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -3721,12 +3744,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 92dbc115c772ba51
 - raw_full_text_hash: 92dbc115c772ba51
 - raw_semantic_hash: f6ba106254f364c9
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"92dbc115c772ba51","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: none
@@ -3735,11 +3758,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 10.1
 - raw_capture_priority: 1.0999999999999996
 - usable_for: index_only
-- key_excerpts: [{"type":"funding","text":"鏈懆锛孏oogle Finance 鎺ㄥ嚭姝ｅ紡鐗?Android 搴旂敤锛屽悓姝ヤ笂绾垮叏鐞冩姇璧勭粍鍚堣窡韪姛鑳姐€傜敤鎴峰彲閫氳繃鎴浘銆丆SV/PDF 涓婁紶鎴栨枃瀛楁弿杩板垱寤虹粍鍚堬紝骞跺埄鐢?AI 鐮旂┒宸ュ叿鎻愰棶璧勪骇閰嶇疆銆佸浐瀹氭敹鐩婂奖鍝嶇瓑闂銆傛柊澧炲競鍦烘儏鎶ョ畝鎶ュ姛鑳斤細鐢ㄦ埛璁惧畾浠诲姟锛堝姣忔棩鐩樺墠绠€鎶ワ級锛屽悗鍙拌嚜鍔ㄧ敓鎴愬苟鎺ㄩ€佽嚦 Google 搴旂敤锛圓ndroid/iOS锛夊強缃戦〉绔€侫ndroid 搴旂敤鍖呭惈 watchlist銆佸疄鏃舵暟鎹€侀噾铻嶆柊闂?feed銆丄I 鐮旂┒宸ュ叿鍙?AI 椹卞姩鐨勨€滃叧閿椂鍒烩€濊В閲婅偂浠锋尝鍔ㄣ€傛湭鏉ユ暟鏈堝皢鎶婃洿澶?web 鍔熻兘锛堝璐㈡姤鐢佃瘽銆佹姇璧勭粍鍚堜笌浠诲姟锛夎縼绉昏嚦绉诲姩绔紝浠婂勾鏅氫簺鎺ㄥ嚭 iOS 搴旂敤銆?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"鏈懆锛孏oogle Finance 鎺ㄥ嚭姝ｅ紡鐗?Android 搴旂敤锛屽悓姝ヤ笂绾垮叏鐞冩姇璧勭粍鍚堣窡韪姛鑳姐€?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鐢ㄦ埛鍙€氳繃鎴浘銆丆SV/PDF 涓婁紶鎴栨枃瀛楁弿杩板垱寤虹粍鍚堬紝骞跺埄鐢?AI 鐮旂┒宸ュ叿鎻愰棶璧勪骇閰嶇疆銆佸浐瀹氭敹鐩婂奖鍝嶇瓑闂銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鏂板甯傚満鎯呮姤绠€鎶ュ姛鑳斤細鐢ㄦ埛璁惧畾浠诲姟锛堝姣忔棩鐩樺墠绠€鎶ワ級锛屽悗鍙拌嚜鍔ㄧ敓鎴愬苟鎺ㄩ€佽嚦 Google 搴旂敤锛圓ndroid/iOS锛夊強缃戦〉绔€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Android 搴旂敤鍖呭惈 watchlist銆佸疄鏃舵暟鎹€侀噾铻嶆柊闂?feed銆丄I 鐮旂┒宸ュ叿鍙?AI 椹卞姩鐨勨€滃叧閿椂鍒烩€濊В閲婅偂浠锋尝鍔ㄣ€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"鏈潵鏁版湀灏嗘妸鏇村 web 鍔熻兘锛堝璐㈡姤鐢佃瘽銆佹姇璧勭粍鍚堜笌浠诲姟锛夎縼绉昏嚦绉诲姩绔紝浠婂勾鏅氫簺鎺ㄥ嚭 iOS 搴旂敤銆?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["鏈懆锛孏oogle Finance 鎺ㄥ嚭姝ｅ紡鐗?Android 搴旂敤锛屽悓姝ヤ笂绾垮叏鐞冩姇璧勭粍鍚堣窡韪姛鑳姐€傜敤鎴峰彲閫氳繃鎴浘銆丆SV/PDF 涓婁紶鎴栨枃瀛楁弿杩板垱寤虹粍鍚堬紝骞跺埄鐢?AI 鐮旂┒宸ュ叿鎻愰棶璧勪骇閰嶇疆銆佸浐瀹氭敹鐩婂奖鍝嶇瓑闂銆傛柊澧炲競鍦烘儏鎶ョ畝鎶ュ姛鑳斤細鐢ㄦ埛璁惧畾浠诲姟锛堝姣忔棩鐩樺墠绠€鎶ワ級锛屽悗鍙拌嚜鍔ㄧ敓鎴愬苟鎺ㄩ€佽嚦 Google 搴旂敤锛圓ndroid/iOS锛夊強缃戦〉绔€侫ndroid 搴旂敤鍖呭惈 watchlist銆佸疄鏃舵暟鎹€侀噾铻嶆柊闂?feed銆丄I 鐮旂┒宸ュ叿鍙?AI 椹卞姩鐨勨€滃叧閿椂鍒烩€濊В閲婅偂浠锋尝鍔ㄣ€傛湭鏉ユ暟鏈堝皢鎶婃洿澶?web 鍔熻兘锛堝璐㈡姤鐢佃瘽銆佹姇璧勭粍鍚堜笌浠诲姟锛夎縼绉昏嚦绉诲姩绔紝浠婂勾鏅氫簺鎺ㄥ嚭 iOS 搴旂敤銆?,"鏈懆锛孏oogle Finance 鎺ㄥ嚭姝ｅ紡鐗?Android 搴旂敤锛屽悓姝ヤ笂绾垮叏鐞冩姇璧勭粍鍚堣窡韪姛鑳姐€?,"鐢ㄦ埛鍙€氳繃鎴浘銆丆SV/PDF 涓婁紶鎴栨枃瀛楁弿杩板垱寤虹粍鍚堬紝骞跺埄鐢?AI 鐮旂┒宸ュ叿鎻愰棶璧勪骇閰嶇疆銆佸浐瀹氭敹鐩婂奖鍝嶇瓑闂銆?],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-074锝滅編鍥芥斂搴滆姹侽penAI鏆傜紦GPT-5.6骞挎硾鍙戝竷
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-126
 - raw_original_id: daily-10
@@ -3758,7 +3782,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -3773,12 +3797,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: df178ec97e6f1d1c
 - raw_full_text_hash: df178ec97e6f1d1c
 - raw_semantic_hash: 9f68fa1dff16b0ec
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"df178ec97e6f1d1c","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: commercial_or_risk_context, adoption_context
@@ -3786,10 +3810,11 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 10.1
 - raw_capture_priority: 1.0999999999999996
 - usable_for: index_only
-- key_excerpts: [{"type":"supporting_context","text":"The Information 鎶ラ亾锛岀編鍥芥斂搴滃洜瀹夊叏椤捐檻瑕佹眰 OpenAI 鏆傜紦 GPT-5.6 鐨勫箍娉涘彂甯冿紝鏀逛负鎺ㄥ嚭鍙楁帶棰勮鐗堛€侽penAI 璁″垝鍏堝悜灏忛儴鍒嗗悎浣滀紮浼存彁渚涙棭鏈熻闂紝骞剁敱鏀垮簻閫愬鎴峰鎵瑰噯鍏ャ€傝繖涓€闈炲父瑙勫仛娉曚富瑕佹媴蹇фā鍨嬪湪鑷姩鍖栭珮鎶€鑳界綉缁滃伐浣滀笂鐨勮兘鍔涳細鏃㈣兘甯槻寰¤€呮洿蹇彂鐜版紡娲烇紝涔熷彲鑳借鏀诲嚮鑰呯敤浜庡姞閫熸祴璇曟紡娲炲埄鐢ㄣ€傛湰鍛ㄥ洓锛孋EO Sam Altman 宸插悜鍛樺伐纭璇ュ鎵规祦绋嬨€?,"supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"The Information 鎶ラ亾锛岀編鍥芥斂搴滃洜瀹夊叏椤捐檻瑕佹眰 OpenAI 鏆傜紦 GPT-5.","supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"6 鐨勫箍娉涘彂甯冿紝鏀逛负鎺ㄥ嚭鍙楁帶棰勮鐗堛€?,"supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"OpenAI 璁″垝鍏堝悜灏忛儴鍒嗗悎浣滀紮浼存彁渚涙棭鏈熻闂紝骞剁敱鏀垮簻閫愬鎴峰鎵瑰噯鍏ャ€?,"supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"杩欎竴闈炲父瑙勫仛娉曚富瑕佹媴蹇фā鍨嬪湪鑷姩鍖栭珮鎶€鑳界綉缁滃伐浣滀笂鐨勮兘鍔涳細鏃㈣兘甯槻寰¤€呮洿蹇彂鐜版紡娲烇紝涔熷彲鑳借鏀诲嚮鑰呯敤浜庡姞閫熸祴璇曟紡娲炲埄鐢ㄣ€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"workflow_change","text":"鏈懆鍥涳紝CEO Sam Altman 宸插悜鍛樺伐纭璇ュ鎵规祦绋嬨€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["6 鐨勫箍娉涘彂甯冿紝鏀逛负鎺ㄥ嚭鍙楁帶棰勮鐗堛€?,"杩欎竴闈炲父瑙勫仛娉曚富瑕佹媴蹇фā鍨嬪湪鑷姩鍖栭珮鎶€鑳界綉缁滃伐浣滀笂鐨勮兘鍔涳細鏃㈣兘甯槻寰¤€呮洿蹇彂鐜版紡娲烇紝涔熷彲鑳借鏀诲嚮鑰呯敤浜庡姞閫熸祴璇曟紡娲炲埄鐢ㄣ€?],"case_details":["OpenAI 璁″垝鍏堝悜灏忛儴鍒嗗悎浣滀紮浼存彁渚涙棭鏈熻闂紝骞剁敱鏀垮簻閫愬鎴峰鎵瑰噯鍏ャ€?],"workflow_changes":["鏈懆鍥涳紝CEO Sam Altman 宸插悜鍛樺伐纭璇ュ鎵规祦绋嬨€?],"before_after_clues":["鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":[],"risks_or_constraints":["The Information 鎶ラ亾锛岀編鍥芥斂搴滃洜瀹夊叏椤捐檻瑕佹眰 OpenAI 鏆傜紦 GPT-5.6 鐨勫箍娉涘彂甯冿紝鏀逛负鎺ㄥ嚭鍙楁帶棰勮鐗堛€侽penAI 璁″垝鍏堝悜灏忛儴鍒嗗悎浣滀紮浼存彁渚涙棭鏈熻闂紝骞剁敱鏀垮簻閫愬鎴峰鎵瑰噯鍏ャ€傝繖涓€闈炲父瑙勫仛娉曚富瑕佹媴蹇фā鍨嬪湪鑷姩鍖栭珮鎶€鑳界綉缁滃伐浣滀笂鐨勮兘鍔涳細鏃㈣兘甯槻寰¤€呮洿蹇彂鐜版紡娲烇紝涔熷彲鑳借鏀诲嚮鑰呯敤浜庡姞閫熸祴璇曟紡娲炲埄鐢ㄣ€傛湰鍛ㄥ洓锛孋EO Sam Altman 宸插悜鍛樺伐纭璇ュ鎵规祦绋嬨€?,"The Information 鎶ラ亾锛岀編鍥芥斂搴滃洜瀹夊叏椤捐檻瑕佹眰 OpenAI 鏆傜紦 GPT-5."]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?- 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-075锝淐odex 鍦?ChatGPT 绉诲姩 App 姝ｅ紡鍙敤
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-127
 - raw_original_id: daily-4
@@ -3808,7 +3833,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -3823,12 +3848,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: c3deb75beba2f141
 - raw_full_text_hash: c3deb75beba2f141
 - raw_semantic_hash: 4ba43ff4bff67000
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c3deb75beba2f141","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: commercial_or_risk_context
@@ -3836,11 +3861,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 10.1
 - raw_capture_priority: 1.0999999999999996
 - usable_for: index_only
-- key_excerpts: [{"type":"supporting_context","text":"OpenAI 瀹ｅ竷 Codex 鍦?ChatGPT 绉诲姩搴旂敤涓寮忓紑鏀撅紙GA锛夛紝骞舵柊澧炰竴瀵逛竴璁惧閰嶅瀹炵幇鏇村畨鍏ㄧ殑鎵嬫満涓庣數鑴戣繛鎺ャ€傜Щ鍔ㄧ鏂板閫氱煡銆佺洰鏍囥€佷晶杈硅亰澶┿€佹枃浠堕瑙堝強鍐呰仈瀹￠槄璇勮鍔熻兘銆傛鍓嶉瑙堢増宸叉槑纭紝鐢ㄦ埛鍙€氳繃 ChatGPT 绉诲姩 App 鍚姩鏂板伐浣溿€佸鏌ヨ緭鍑恒€佸紩瀵兼墽琛屽拰鎵瑰噯涓嬩竴姝ワ紝鑰?Codex 瀹為檯缁х画鍦ㄧ瑪璁版湰銆丮ac mini 鎴栧紑鍙戞満涓婂悗鍙拌繍琛屻€?,"supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"supporting_context","text":"OpenAI 瀹ｅ竷 Codex 鍦?ChatGPT 绉诲姩搴旂敤涓寮忓紑鏀撅紙GA锛夛紝骞舵柊澧炰竴瀵逛竴璁惧閰嶅瀹炵幇鏇村畨鍏ㄧ殑鎵嬫満涓庣數鑴戣繛鎺ャ€?,"supports":["daily_observation","heatmap"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"绉诲姩绔柊澧為€氱煡銆佺洰鏍囥€佷晶杈硅亰澶┿€佹枃浠堕瑙堝強鍐呰仈瀹￠槄璇勮鍔熻兘銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"姝ゅ墠棰勮鐗堝凡鏄庣‘锛岀敤鎴峰彲閫氳繃 ChatGPT 绉诲姩 App 鍚姩鏂板伐浣溿€佸鏌ヨ緭鍑恒€佸紩瀵兼墽琛屽拰鎵瑰噯涓嬩竴姝ワ紝鑰?Codex 瀹為檯缁х画鍦ㄧ瑪璁版湰銆丮ac mini 鎴栧紑鍙戞満涓婂悗鍙拌繍琛屻€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["绉诲姩绔柊澧為€氱煡銆佺洰鏍囥€佷晶杈硅亰澶┿€佹枃浠堕瑙堝強鍐呰仈瀹￠槄璇勮鍔熻兘銆?,"姝ゅ墠棰勮鐗堝凡鏄庣‘锛岀敤鎴峰彲閫氳繃 ChatGPT 绉诲姩 App 鍚姩鏂板伐浣溿€佸鏌ヨ緭鍑恒€佸紩瀵兼墽琛屽拰鎵瑰噯涓嬩竴姝ワ紝鑰?Codex 瀹為檯缁х画鍦ㄧ瑪璁版湰銆丮ac mini 鎴栧紑鍙戞満涓婂悗鍙拌繍琛屻€?],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鍚堝悓瀹￠槄 / 娉曞緥鐮旂┒ 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":[],"risks_or_constraints":["OpenAI 瀹ｅ竷 Codex 鍦?ChatGPT 绉诲姩搴旂敤涓寮忓紑鏀撅紙GA锛夛紝骞舵柊澧炰竴瀵逛竴璁惧閰嶅瀹炵幇鏇村畨鍏ㄧ殑鎵嬫満涓庣數鑴戣繛鎺ャ€傜Щ鍔ㄧ鏂板閫氱煡銆佺洰鏍囥€佷晶杈硅亰澶┿€佹枃浠堕瑙堝強鍐呰仈瀹￠槄璇勮鍔熻兘銆傛鍓嶉瑙堢増宸叉槑纭紝鐢ㄦ埛鍙€氳繃 ChatGPT 绉诲姩 App 鍚姩鏂板伐浣溿€佸鏌ヨ緭鍑恒€佸紩瀵兼墽琛屽拰鎵瑰噯涓嬩竴姝ワ紝鑰?Codex 瀹為檯缁х画鍦ㄧ瑪璁版湰銆丮ac mini 鎴栧紑鍙戞満涓婂悗鍙拌繍琛屻€?,"OpenAI 瀹ｅ竷 Codex 鍦?ChatGPT 绉诲姩搴旂敤涓寮忓紑鏀撅紙GA锛夛紝骞舵柊澧炰竴瀵逛竴璁惧閰嶅瀹炵幇鏇村畨鍏ㄧ殑鎵嬫満涓庣數鑴戣繛鎺ャ€?]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夋垚鏈€佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-076锝淕eneral Intuition 瀹屾垚 3.2 浜跨編鍏冭瀺璧勶紝鐢ㄦ父鎴忔暟鎹缁冮€氱敤 AI 鏅鸿兘浣?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-128
 - raw_original_id: daily-13
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-128-general-intuition-瀹屾垚-3-2-浜跨編鍏冭瀺璧?鐢ㄦ父鎴忔暟鎹缁冮€氱敤-ai-鏅鸿兘浣?md`
@@ -3858,7 +3884,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -3873,12 +3899,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: b58b561e520eb87a
 - raw_full_text_hash: b58b561e520eb87a
 - raw_semantic_hash: 608141202b48f3f4
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b58b561e520eb87a","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_funding
 - importance_score: 5
 - supporting_signals: none
@@ -3887,11 +3913,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 10.1
 - raw_capture_priority: 1.0999999999999996
 - usable_for: index_only
-- key_excerpts: [{"type":"funding","text":"General Intuition 浠?23 浜跨編鍏冧及鍊煎畬鎴?3.2 浜跨編鍏冭瀺璧勶紝绱鎶湶铻嶈祫 4.54 浜跨編鍏冦€傚叕鍙镐粠鏃椾笅娓告垙鍓緫骞冲彴 Medal 鑾峰彇鏁颁嚎灏忔椂鍚簿纭寜閿姩浣滄爣绛剧殑娓告垙鎿嶄綔鏁版嵁锛岃缁冨崟涓€妯″瀷鍚屾椂椹鹃┉ Fortnite 绛夎櫄鎷熺幆澧冨拰鍥涜冻鏈哄櫒浜恒€傛紨绀轰腑锛孉I 鏅鸿兘浣撳湪娓告垙涓繛缁繍琛?100 灏忔椂锛屾満鍣ㄤ汉浠呴潬 8 鍒嗛挓鐪熷疄琛楅亾鏁版嵁寰皟鍗冲彲鑷富鎺㈢储鍔炲叕瀹ゃ€傛湰杞敱 Khosla Ventures 棰嗘姇锛孏eneral Catalyst銆丣eff Bezos銆丒ric Schmidt 绛夊弬鎶曘€傝祫閲戝皢鐢ㄤ簬閫氳繃 CoreWeave 鎵╁ぇ璁＄畻瑙勬ā銆侀璁粌涓嬩竴浠ｆā鍨嬶紝璁″垝澶忔湯鍓嶅紑鏀?API銆?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"General Intuition 浠?23 浜跨編鍏冧及鍊煎畬鎴?3.","supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鍏徃浠庢棗涓嬫父鎴忓壀杈戝钩鍙?Medal 鑾峰彇鏁颁嚎灏忔椂鍚簿纭寜閿姩浣滄爣绛剧殑娓告垙鎿嶄綔鏁版嵁锛岃缁冨崟涓€妯″瀷鍚屾椂椹鹃┉ Fortnite 绛夎櫄鎷熺幆澧冨拰鍥涜冻鏈哄櫒浜恒€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"婕旂ず涓紝AI 鏅鸿兘浣撳湪娓告垙涓繛缁繍琛?100 灏忔椂锛屾満鍣ㄤ汉浠呴潬 8 鍒嗛挓鐪熷疄琛楅亾鏁版嵁寰皟鍗冲彲鑷富鎺㈢储鍔炲叕瀹ゃ€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鏈疆鐢?Khosla Ventures 棰嗘姇锛孏eneral Catalyst銆丣eff Bezos銆丒ric Schmidt 绛夊弬鎶曘€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"璧勯噾灏嗙敤浜庨€氳繃 CoreWeave 鎵╁ぇ璁＄畻瑙勬ā銆侀璁粌涓嬩竴浠ｆā鍨嬶紝璁″垝澶忔湯鍓嶅紑鏀?API銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["General Intuition 浠?23 浜跨編鍏冧及鍊煎畬鎴?3.2 浜跨編鍏冭瀺璧勶紝绱鎶湶铻嶈祫 4.54 浜跨編鍏冦€傚叕鍙镐粠鏃椾笅娓告垙鍓緫骞冲彴 Medal 鑾峰彇鏁颁嚎灏忔椂鍚簿纭寜閿姩浣滄爣绛剧殑娓告垙鎿嶄綔鏁版嵁锛岃缁冨崟涓€妯″瀷鍚屾椂椹鹃┉ Fortnite 绛夎櫄鎷熺幆澧冨拰鍥涜冻鏈哄櫒浜恒€傛紨绀轰腑锛孉I 鏅鸿兘浣撳湪娓告垙涓繛缁繍琛?100 灏忔椂锛屾満鍣ㄤ汉浠呴潬 8 鍒嗛挓鐪熷疄琛楅亾鏁版嵁寰皟鍗冲彲鑷富鎺㈢储鍔炲叕瀹ゃ€傛湰杞敱 Khosla Ventures 棰嗘姇锛孏eneral Catalyst銆丣eff Bezos銆丒ric Schmidt 绛夊弬鎶曘€傝祫閲戝皢鐢ㄤ簬閫氳繃 CoreWeave 鎵╁ぇ璁＄畻瑙勬ā銆侀璁粌涓嬩竴浠ｆā鍨嬶紝璁″垝澶忔湯鍓嶅紑鏀?API銆?,"General Intuition 浠?23 浜跨編鍏冧及鍊煎畬鎴?3.","鍏徃浠庢棗涓嬫父鎴忓壀杈戝钩鍙?Medal 鑾峰彇鏁颁嚎灏忔椂鍚簿纭寜閿姩浣滄爣绛剧殑娓告垙鎿嶄綔鏁版嵁锛岃缁冨崟涓€妯″瀷鍚屾椂椹鹃┉ Fortnite 绛夎櫄鎷熺幆澧冨拰鍥涜冻鏈哄櫒浜恒€?],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-077锝滃鏁颁富娴丄I鑱婂ぉ鏈哄櫒浜烘斂娌荤珛鍦哄亸宸︼紝鈥滃弽瑙夐啋鈥濇ā鍨嬩篃涓嶄緥澶?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-129
 - raw_original_id: daily-20
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-129-澶氭暟涓绘祦ai鑱婂ぉ鏈哄櫒浜烘斂娌荤珛鍦哄亸宸?鍙嶈閱?妯″瀷涔熶笉渚嬪.md`
@@ -3909,7 +3936,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -3924,12 +3951,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 315b2f4dd5993179
 - raw_full_text_hash: 315b2f4dd5993179
 - raw_semantic_hash: cc9de042e900020f
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"315b2f4dd5993179","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 5
 - supporting_signals: none
@@ -3937,11 +3964,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 10.1
 - raw_capture_priority: 1.0999999999999996
 - usable_for: index_only
-- key_excerpts: [{"type":"number","text":"鍗庣洓椤块偖鎶ヨ皟鏌ユ樉绀猴紝澶氭暟涓绘祦AI鑱婂ぉ鏈哄櫒浜哄湪鏀挎不闂涓婃槑鏄惧亸宸︺€侽penAI GPT-5.5鍦?0%鍥炵瓟涓粎鍛堢幇宸︽淳璁烘嵁锛汥eepSeek V4 Pro涓?0%锛汚nthropic Claude Opus 4.8鏈?3%绾乏銆?7%缁欏嚭鍙屾柟瑙傜偣銆倄AI鐨凣rok 4.3宸﹀€惧洖绛斾粛澶氫簬鍙冲€俱€傚彸缈煎钩鍙癎ab鐨凙rya宸﹀€惧洖绛旀槸鍙冲€剧殑12鍊嶃€侴oogle Gemini 3.1 Pro鏄緥澶栵紝93%鍥炵瓟鍚屾椂鍛堢幇鍙屾柟绔嬪満銆傜壒鏈楁櫘鎺ㄥ姩鐨勨€滃弽瑙夐啋鈥滱I鏈兘鏀瑰彉杩欎竴鏍煎眬銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鍗庣洓椤块偖鎶ヨ皟鏌ユ樉绀猴紝澶氭暟涓绘祦AI鑱婂ぉ鏈哄櫒浜哄湪鏀挎不闂涓婃槑鏄惧亸宸︺€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"5鍦?0%鍥炵瓟涓粎鍛堢幇宸︽淳璁烘嵁锛汥eepSeek V4 Pro涓?0%锛汚nthropic Claude Opus 4.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"8鏈?3%绾乏銆?7%缁欏嚭鍙屾柟瑙傜偣銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"鍙崇考骞冲彴Gab鐨凙rya宸﹀€惧洖绛旀槸鍙冲€剧殑12鍊嶃€?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"1 Pro鏄緥澶栵紝93%鍥炵瓟鍚屾椂鍛堢幇鍙屾柟绔嬪満銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["鍗庣洓椤块偖鎶ヨ皟鏌ユ樉绀猴紝澶氭暟涓绘祦AI鑱婂ぉ鏈哄櫒浜哄湪鏀挎不闂涓婃槑鏄惧亸宸︺€?],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-078锝淥penAI鍐呴儴鎶ュ憡锛氭櫤鑳戒綋Codex濡備綍鏀瑰彉宸ヤ綔
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-130
 - raw_original_id: daily-17
@@ -3960,7 +3988,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: true
 - index_only_evidence: false
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -3975,12 +4003,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: a2eecab95bde619e
 - raw_full_text_hash: a2eecab95bde619e
 - raw_semantic_hash: 281f2d800151fcd2
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"a2eecab95bde619e","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_vertical_solution
 - importance_score: 5
 - supporting_signals: adoption_context
@@ -3988,11 +4016,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 10.1
 - raw_capture_priority: 1.0999999999999996
 - usable_for: index_only
-- key_excerpts: [{"type":"number","text":"OpenAI 鍦?025骞?鏈堣嚦2026骞?鏈堥棿瑙傚療鍒帮紝鏅鸿兘浣撲骇鍝?Codex 鍙栦唬 ChatGPT 鎴愪负涓昏宸ヤ綔宸ュ叿锛屽悇閮ㄩ棬杈撳嚭 token 涓?Codex 鍗犳瘮浠庝笉瓒?0%鍗囪嚦99.8%銆?0.6%涓綋鐢ㄦ埛鏇惧彂璧烽璁＄瓑鏁堜汉绫诲伐浣滄椂闂磋秴30鍒嗛挓鐨勮姹傦紝70.2%瓒?灏忔椂锛?5.6%瓒?灏忔椂锛?9鐧惧垎浣嶇敤鎴锋瘡鏃ョ敓鎴愯秴60灏忔椂 agent turns銆傞潪寮€鍙戣€呯敤鎴峰闀胯繀鐚涳細涓綋鐢ㄦ埛澧為暱137鍊嶏紝缁勭粐鐢ㄦ埛澧為暱189鍊嶃€侺egal銆丗inance銆丷ecruiting 閮ㄩ棬鍦?026骞?鏈堝墠鍚庤法杩?Codex 浣跨敤杩囧崐鎷愮偣锛屽钩鍧囨瘡浣嶅緥甯堟垨鎷涜仒浜哄憳瓒?5%杈撳嚭 token 鏉ヨ嚜 Codex銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"OpenAI 鍦?025骞?鏈堣嚦2026骞?鏈堥棿瑙傚療鍒帮紝鏅鸿兘浣撲骇鍝?Codex 鍙栦唬 ChatGPT 鎴愪负涓昏宸ヤ綔宸ュ叿锛屽悇閮ㄩ棬杈撳嚭 token 涓?Codex 鍗犳瘮浠庝笉瓒?0%鍗囪嚦99.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"6%涓綋鐢ㄦ埛鏇惧彂璧烽璁＄瓑鏁堜汉绫诲伐浣滄椂闂磋秴30鍒嗛挓鐨勮姹傦紝70.","supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"6%瓒?灏忔椂锛?9鐧惧垎浣嶇敤鎴锋瘡鏃ョ敓鎴愯秴60灏忔椂 agent turns銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"闈炲紑鍙戣€呯敤鎴峰闀胯繀鐚涳細涓綋鐢ㄦ埛澧為暱137鍊嶏紝缁勭粐鐢ㄦ埛澧為暱189鍊嶃€?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"Legal銆丗inance銆丷ecruiting 閮ㄩ棬鍦?026骞?鏈堝墠鍚庤法杩?Codex 浣跨敤杩囧崐鎷愮偣锛屽钩鍧囨瘡浣嶅緥甯堟垨鎷涜仒浜哄憳瓒?5%杈撳嚭 token 鏉ヨ嚜 Codex銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":[],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["寮€鍙戣€?/ 宸ョ▼鍥㈤槦","娉曞姟 / 寰嬪笀"],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-079锝滅敤绾挎€у脊鎬х紦瀛樹紭鍖栦簯缁忔祹
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-131
 - raw_original_id: daily-18
@@ -4011,7 +4040,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4026,12 +4055,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: e203923663fb4fc2
 - raw_full_text_hash: e203923663fb4fc2
 - raw_semantic_hash: 51a51d35278bc487
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"e203923663fb4fc2","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_technical_trend
 - importance_score: 5
 - supporting_signals: none
@@ -4039,10 +4068,11 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 10.1
 - raw_capture_priority: 1.0999999999999996
 - usable_for: index_only
-- key_excerpts: [{"type":"number","text":"Google Research 涓?Google Cloud 鎻愬嚭绾挎€у脊鎬х紦瀛橈紝灏嗙紦瀛樼鐞嗚浆涓虹嚎鎬ф垚鏈紭鍖栭棶棰橈紝鍔ㄦ€佽皟鏁村ぇ灏忎互鏈€灏忓寲鎬绘嫢鏈夋垚鏈€備负姣忔潯鏁版嵁寮曞叆鈥滄粦闆璧佲€濆喅绛栨鏋讹紝鍦ㄧ鐢ㄥ唴瀛橈紙鎸佺画浠樿垂锛変笌璐拱缂哄け锛堢紦瀛樻湭鍛戒腑鎯╃綒锛夐棿閫夋嫨锛屽苟鐢ㄨ交閲忕骇鏈哄櫒瀛︿範瀹炴椂浼樺寲鍐呭瓨鍗犵敤涓庣己澶辩巼鏉冭　銆傛棤鏈嶅姟鍣ㄤ簯鍦烘櫙涓嬶紙姣?GiB 鍐呭瓨姣忓ぉ $3锛夛紝璇ユ妧鏈彲鍦ㄤ笉鐗虹壊鎬ц兘鐨勫悓鏃舵樉钁楅檷鏈€傝鏂囧彂琛ㄤ簬 CIDR銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Google Research 涓?Google Cloud 鎻愬嚭绾挎€у脊鎬х紦瀛橈紝灏嗙紦瀛樼鐞嗚浆涓虹嚎鎬ф垚鏈紭鍖栭棶棰橈紝鍔ㄦ€佽皟鏁村ぇ灏忎互鏈€灏忓寲鎬绘嫢鏈夋垚鏈€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"涓烘瘡鏉℃暟鎹紩鍏モ€滄粦闆璧佲€濆喅绛栨鏋讹紝鍦ㄧ鐢ㄥ唴瀛橈紙鎸佺画浠樿垂锛変笌璐拱缂哄け锛堢紦瀛樻湭鍛戒腑鎯╃綒锛夐棿閫夋嫨锛屽苟鐢ㄨ交閲忕骇鏈哄櫒瀛︿範瀹炴椂浼樺寲鍐呭瓨鍗犵敤涓庣己澶辩巼鏉冭　銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"鏃犳湇鍔″櫒浜戝満鏅笅锛堟瘡 GiB 鍐呭瓨姣忓ぉ $3锛夛紝璇ユ妧鏈彲鍦ㄤ笉鐗虹壊鎬ц兘鐨勫悓鏃舵樉钁楅檷鏈€?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["Google Research 涓?Google Cloud 鎻愬嚭绾挎€у脊鎬х紦瀛橈紝灏嗙紦瀛樼鐞嗚浆涓虹嚎鎬ф垚鏈紭鍖栭棶棰橈紝鍔ㄦ€佽皟鏁村ぇ灏忎互鏈€灏忓寲鎬绘嫢鏈夋垚鏈€?,"涓烘瘡鏉℃暟鎹紩鍏モ€滄粦闆璧佲€濆喅绛栨鏋讹紝鍦ㄧ鐢ㄥ唴瀛橈紙鎸佺画浠樿垂锛変笌璐拱缂哄け锛堢紦瀛樻湭鍛戒腑鎯╃綒锛夐棿閫夋嫨锛屽苟鐢ㄨ交閲忕骇鏈哄櫒瀛︿範瀹炴椂浼樺寲鍐呭瓨鍗犵敤涓庣己澶辩巼鏉冭　銆?],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 璁¤垂 / 棰勭畻绠＄悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?- 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-080锝淢idjourney 棰勮 V8.2 骞跺姞閫熻崏绋挎ā寮?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-173
 - raw_original_id: daily-3
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-173-midjourney-棰勮-v8-2-骞跺姞閫熻崏绋挎ā寮?md`
@@ -4060,7 +4090,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4075,12 +4105,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 2f2ed9510d99005c
 - raw_full_text_hash: 2f2ed9510d99005c
 - raw_semantic_hash: 67f105731974110a
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2f2ed9510d99005c","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 4
 - supporting_signals: none
@@ -4089,10 +4119,11 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.7
 - raw_capture_priority: -0.3000000000000007
 - usable_for: index_only
-- key_excerpts: [{"type":"number","text":"Midjourney 甯︽潵涓ら」鏇存柊銆備竴鏄姞鍏?`--preview` 鍙傛暟鍙彁鍓嶄綋楠?V8.2 鐨勭編瀛︿笌涓€у寲鏁堟灉锛涗簩鏄鍓嶅湪 V8.1 鎺ㄥ嚭鐨勫ぇ鎵归噺鑽夌妯″紡锛堢敓鎴?24 寮犱綆鍒嗚鲸鐜囧浘锛屼环鏍间粎涓烘爣鍑?4 寮犵殑涓€鍗婏紝鐐瑰嚮 \"Vary\" 鍙崌绾т负鍏ㄥ垎杈ㄧ巼锛夌幇鍦ㄦ敮鎸佹惌閰?`--sref random` 浣跨敤锛屾帰绱㈤鏍肩┖闂寸殑閫熷害姣斾箣鍓嶅揩 24 鍊嶃€?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"Midjourney 甯︽潵涓ら」鏇存柊銆?,"supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"涓€鏄姞鍏?`--preview` 鍙傛暟鍙彁鍓嶄綋楠?V8.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"2 鐨勭編瀛︿笌涓€у寲鏁堟灉锛涗簩鏄鍓嶅湪 V8.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"1 鎺ㄥ嚭鐨勫ぇ鎵归噺鑽夌妯″紡锛堢敓鎴?24 寮犱綆鍒嗚鲸鐜囧浘锛屼环鏍间粎涓烘爣鍑?4 寮犵殑涓€鍗婏紝鐐瑰嚮 \"Vary\" 鍙崌绾т负鍏ㄥ垎杈ㄧ巼锛夌幇鍦ㄦ敮鎸佹惌閰?`--sref random` 浣跨敤锛屾帰绱㈤鏍肩┖闂寸殑閫熷害姣斾箣鍓嶅揩 24 鍊嶃€?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["Midjourney 甯︽潵涓ら」鏇存柊銆?,"涓€鏄姞鍏?`--preview` 鍙傛暟鍙彁鍓嶄綋楠?V8.","2 鐨勭編瀛︿笌涓€у寲鏁堟灉锛涗簩鏄鍓嶅湪 V8."],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鍚堝悓瀹￠槄 / 娉曞緥鐮旂┒ 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?- 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-081锝淪uno 鎺ㄥ嚭 Spark锛氭敮鎸佷笅涓€浠ｇ嫭绔嬭壓鏈
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-174
 - raw_original_id: daily-14
@@ -4111,7 +4142,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: true
 - index_only_evidence: false
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4126,12 +4157,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 1b860566fa06d9fe
 - raw_full_text_hash: 1b860566fa06d9fe
 - raw_semantic_hash: fb28be3b0ece0d10
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1b860566fa06d9fe","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 4
 - supporting_signals: none
@@ -4140,11 +4171,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.7
 - raw_capture_priority: -0.3000000000000007
 - usable_for: index_only
-- key_excerpts: [{"type":"company_action","text":"Suno 瀹ｅ竷鍚姩 **Spark** 瀛靛寲鍣ㄩ」鐩紝闈㈠悜骞存弧18宀佺殑鏈绾︾嫭绔嬫瓕鎵嬨€佽瘝鏇蹭綔鑰呭拰鍒朵綔浜恒€傚叆閫夎€呭皢鑾峰緱鍒涗綔璧勫姪鍜岄澶栬惀閿€缁忚垂锛屽彈閭€涓庣煡鍚嶈壓鏈鍏卞悓鍙備笌鍐欐瓕钀ワ紝骞舵湁鏈轰細涓?Suno 姝ｅ湪鏋勫缓鐨勬柊鍔熻兘鎻愪緵鍙嶉銆傝壓鏈淇濈暀鍏朵綔鍝佺殑鍒涙剰鎺у埗鏉冨拰鍟嗕笟鏉冨埄銆傚嵆鏃ヨ捣寮€鏀剧敵璇枫€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Suno 瀹ｅ竷鍚姩 **Spark** 瀛靛寲鍣ㄩ」鐩紝闈㈠悜骞存弧18宀佺殑鏈绾︾嫭绔嬫瓕鎵嬨€佽瘝鏇蹭綔鑰呭拰鍒朵綔浜恒€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鍏ラ€夎€呭皢鑾峰緱鍒涗綔璧勫姪鍜岄澶栬惀閿€缁忚垂锛屽彈閭€涓庣煡鍚嶈壓鏈鍏卞悓鍙備笌鍐欐瓕钀ワ紝骞舵湁鏈轰細涓?Suno 姝ｅ湪鏋勫缓鐨勬柊鍔熻兘鎻愪緵鍙嶉銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鑹烘湳瀹朵繚鐣欏叾浣滃搧鐨勫垱鎰忔帶鍒舵潈鍜屽晢涓氭潈鍒┿€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["Suno 瀹ｅ竷鍚姩 **Spark** 瀛靛寲鍣ㄩ」鐩紝闈㈠悜骞存弧18宀佺殑鏈绾︾嫭绔嬫瓕鎵嬨€佽瘝鏇蹭綔鑰呭拰鍒朵綔浜恒€傚叆閫夎€呭皢鑾峰緱鍒涗綔璧勫姪鍜岄澶栬惀閿€缁忚垂锛屽彈閭€涓庣煡鍚嶈壓鏈鍏卞悓鍙備笌鍐欐瓕钀ワ紝骞舵湁鏈轰細涓?Suno 姝ｅ湪鏋勫缓鐨勬柊鍔熻兘鎻愪緵鍙嶉銆傝壓鏈淇濈暀鍏朵綔鍝佺殑鍒涙剰鎺у埗鏉冨拰鍟嗕笟鏉冨埄銆傚嵆鏃ヨ捣寮€鏀剧敵璇枫€?,"Suno 瀹ｅ竷鍚姩 **Spark** 瀛靛寲鍣ㄩ」鐩紝闈㈠悜骞存弧18宀佺殑鏈绾︾嫭绔嬫瓕鎵嬨€佽瘝鏇蹭綔鑰呭拰鍒朵綔浜恒€?,"鍏ラ€夎€呭皢鑾峰緱鍒涗綔璧勫姪鍜岄澶栬惀閿€缁忚垂锛屽彈閭€涓庣煡鍚嶈壓鏈鍏卞悓鍙備笌鍐欐瓕钀ワ紝骞舵湁鏈轰細涓?Suno 姝ｅ湪鏋勫缓鐨勬柊鍔熻兘鎻愪緵鍙嶉銆?],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-082锝淍exponentialview 鍙戝竷銆奡tate of the AI Economy銆嬫姤鍛婏細AI缁忔祹骞村寲鏀跺叆瓒?750浜跨編鍏?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-175
 - raw_original_id: daily-19
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-175-exponentialview-鍙戝竷-state-of-the-ai-economy-鎶ュ憡-ai缁忔祹骞村寲鏀跺叆瓒?750浜跨編鍏?md`
@@ -4162,7 +4194,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: true
 - index_only_evidence: false
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4177,12 +4209,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 92d88a862868945b
 - raw_full_text_hash: 92d88a862868945b
 - raw_semantic_hash: ca4c3c3711eeb1de
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"92d88a862868945b","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_case
 - importance_score: 4
 - supporting_signals: commercial_or_risk_context
@@ -4191,10 +4223,11 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.7
 - raw_capture_priority: -0.3000000000000007
 - usable_for: index_only
-- key_excerpts: [{"type":"number","text":"鎶ュ憡鍩轰簬鍘婚噸鍚庣殑娑堣垂绔疉I鏀嚭缁熻锛岃繃鍘?2涓湀瀹為檯AI钀ユ敹杈?100浜跨編鍏冿紝骞村寲杩愯鐜囪秴1750浜跨編鍏冿紝澧為暱閫熷害绾︿负绉诲姩/浜掕仈缃戞櫘鍙婃氮娼殑3鍊嶃€傝惀鏀跺舰鎴愰€熷害鎬ュ墽鍔犲揩锛?023骞存柊澧?0浜跨編鍏冩敹鍏ラ渶180澶╋紝鐜扮缉鐭嚦涓嶈冻2澶┿€備紒涓欰I宸茶劚绂昏瘯鐐归樁娈碉紝浣嗗叏闈㈡帹骞夸粛澶勬棭鏈熴€?1%鐨勬爣鏅?00鍏徃鍦ㄨ储鎶ョ數璇濅細鎻愬強AI锛屼粎20%閲忓寲褰卞搷銆俆oken闄嶄环姣?0%鍒烘縺12-18%鐢ㄩ噺澧為暱锛岄渶姹備环鏍煎脊鎬у己銆傝秴澶ц妯′簯鍘傚晢AI鏀跺叆鐩墠澶ц嚧瑕嗙洊鍩虹璁炬柦鎶樻棫锛孏PU缁忔祹鏁堢泭渚濊禆6骞磋绠楀鍛藉亣璁俱€傜數鍔涗緵搴斿拰鏁版嵁涓績鎴愭湰浠嶆槸鏈潵鎵╁睍涓昏鐡堕銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"鎶ュ憡鍩轰簬鍘婚噸鍚庣殑娑堣垂绔疉I鏀嚭缁熻锛岃繃鍘?2涓湀瀹為檯AI钀ユ敹杈?100浜跨編鍏冿紝骞村寲杩愯鐜囪秴1750浜跨編鍏冿紝澧為暱閫熷害绾︿负绉诲姩/浜掕仈缃戞櫘鍙婃氮娼殑3鍊嶃€?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"钀ユ敹褰㈡垚閫熷害鎬ュ墽鍔犲揩锛?023骞存柊澧?0浜跨編鍏冩敹鍏ラ渶180澶╋紝鐜扮缉鐭嚦涓嶈冻2澶┿€?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"浼佷笟AI宸茶劚绂昏瘯鐐归樁娈碉紝浣嗗叏闈㈡帹骞夸粛澶勬棭鏈熴€?,"supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"number","text":"31%鐨勬爣鏅?00鍏徃鍦ㄨ储鎶ョ數璇濅細鎻愬強AI锛屼粎20%閲忓寲褰卞搷銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"Token闄嶄环姣?0%鍒烘縺12-18%鐢ㄩ噺澧為暱锛岄渶姹備环鏍煎脊鎬у己銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":[],"case_details":["浼佷笟AI宸茶劚绂昏瘯鐐归樁娈碉紝浣嗗叏闈㈡帹骞夸粛澶勬棭鏈熴€?],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 璁¤垂 / 棰勭畻绠＄悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?- 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-083锝淥rnith-1.0 寮€婧愭ā鍨嬪鏃忓彂甯冿紝涓撴敞 Agentic Coding 鍏ㄥ弬鏁拌妯?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-176
 - raw_original_id: daily-1
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-176-ornith-1-0-寮€婧愭ā鍨嬪鏃忓彂甯?涓撴敞-agentic-coding-鍏ㄥ弬鏁拌妯?md`
@@ -4212,7 +4245,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4227,12 +4260,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 8f21d70d369762f9
 - raw_full_text_hash: 8f21d70d369762f9
 - raw_semantic_hash: b9b93b1c11f04768
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"8f21d70d369762f9","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 4
 - supporting_signals: enterprise_ai_transformation_lens, adoption_context
@@ -4240,11 +4273,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.7
 - raw_capture_priority: -0.3000000000000007
 - usable_for: index_only
-- key_excerpts: [{"type":"case_detail","text":"Ornith-1.0 寮€婧愭ā鍨嬪鏃忓彂甯冿紝涓撴敞鏅鸿兘浣撶紪绋嬶紙Agentic Coding锛夛紝瑕嗙洊 9B Dense銆?1B Dense銆?5B MoE 鍙?397B MoE 鍏ㄥ弬鏁拌妯°€傚湪 Agent Coding 鍩哄噯涓婅揪寮€婧愰《灏栵細SWE-Bench Verified 82.4銆丼WE-Bench Pro 62.2銆乀erminal-Bench 2.1 77.5銆丯L2Repo 48.2銆丼WE Atlas 41.2 QnA銆丆lawEval 77.1銆傚熀浜?gemma4 鍜?qwen3.5 鍚庤缁冿紝閲囩敤寮哄寲瀛︿範鑱斿悎浼樺寲浠诲姟鑴氭墜鏋讹紙scaffold锛変笌鏈€缁堣В鍐虫柟妗堬紝璁╂ā鍨嬭嚜涓绘敼杩涙墽琛屾鏋躲€傚叏绯诲垪 MIT 寮€婧愶紝鎻愪緵 GGUF 鐗堟湰锛屾敮鈥?,"supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"0 寮€婧愭ā鍨嬪鏃忓彂甯冿紝涓撴敞鏅鸿兘浣撶紪绋嬶紙Agentic Coding锛夛紝瑕嗙洊 9B Dense銆?1B Dense銆?5B MoE 鍙?397B MoE 鍏ㄥ弬鏁拌妯°€?,"supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鍦?Agent Coding 鍩哄噯涓婅揪寮€婧愰《灏栵細SWE-Bench Verified 82.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"4銆丼WE-Bench Pro 62.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"2銆乀erminal-Bench 2.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"2 QnA銆丆lawEval 77.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["0 寮€婧愭ā鍨嬪鏃忓彂甯冿紝涓撴敞鏅鸿兘浣撶紪绋嬶紙Agentic Coding锛夛紝瑕嗙洊 9B Dense銆?1B Dense銆?5B MoE 鍙?397B MoE 鍏ㄥ弬鏁拌妯°€?,"鍦?Agent Coding 鍩哄噯涓婅揪寮€婧愰《灏栵細SWE-Bench Verified 82.","4銆丼WE-Bench Pro 62."],"case_details":["Ornith-1.0 寮€婧愭ā鍨嬪鏃忓彂甯冿紝涓撴敞鏅鸿兘浣撶紪绋嬶紙Agentic Coding锛夛紝瑕嗙洊 9B Dense銆?1B Dense銆?5B MoE 鍙?397B MoE 鍏ㄥ弬鏁拌妯°€傚湪 Agent Coding 鍩哄噯涓婅揪寮€婧愰《灏栵細SWE-Bench Verified 82.4銆丼WE-Bench Pro 62.2銆乀erminal-Bench 2.1 77.5銆丯L2Repo 48.2銆丼WE Atlas 41.2 QnA銆丆lawEval 77.1銆傚熀浜?gemma4 鍜?qwen3.5 鍚庤缁冿紝閲囩敤寮哄寲瀛︿範鑱斿悎浼樺寲浠诲姟鑴氭墜鏋讹紙scaffold锛変笌鏈€缁堣В鍐虫柟妗堬紝璁╂ā鍨嬭嚜涓绘敼杩涙墽琛屾鏋躲€傚叏绯诲垪 MIT 寮€婧愶紝鎻愪緵 GGUF 鐗堟湰锛屾敮鈥?],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-084锝滆法妯″瀷涓庝换鍔＄殑 GitHub Copilot agentic harness 鎬ц兘涓庢晥鐜囪瘎浼?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-177
 - raw_original_id: daily-23
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-177-璺ㄦā鍨嬩笌浠诲姟鐨?github-copilot-agentic-harness-鎬ц兘涓庢晥鐜囪瘎浼?md`
@@ -4262,7 +4296,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: true
 - index_only_evidence: false
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4277,12 +4311,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: d6943c3601062e5e
 - raw_full_text_hash: d6943c3601062e5e
 - raw_semantic_hash: 5d2bfe67ca2e96fc
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d6943c3601062e5e","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_case
 - importance_score: 4
 - supporting_signals: none
@@ -4290,11 +4324,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.7
 - raw_capture_priority: -0.3000000000000007
 - usable_for: index_only
-- key_excerpts: [{"type":"case_detail","text":"GitHub Copilot agentic harness 鍦ㄥ涓熀鍑嗘祴璇曚腑琛ㄧ幇寮哄姴锛屽悓鏃跺叿澶囬鍏堢殑 token 鏁堢巼锛屽苟鏀寔鍦?20 澶氫釜妯″瀷闂寸伒娲婚€夋嫨銆?,"supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":[],"case_details":["GitHub Copilot agentic harness 鍦ㄥ涓熀鍑嗘祴璇曚腑琛ㄧ幇寮哄姴锛屽悓鏃跺叿澶囬鍏堢殑 token 鏁堢巼锛屽苟鏀寔鍦?20 澶氫釜妯″瀷闂寸伒娲婚€夋嫨銆?],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-085锝淥penRouter MCP 鏈嶅姟鍣ㄥ彂甯?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-178
 - raw_original_id: daily-2
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-178-openrouter-mcp-鏈嶅姟鍣ㄥ彂甯?md`
@@ -4312,7 +4347,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: true
 - index_only_evidence: false
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4327,12 +4362,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 9095c7bd05d40d5c
 - raw_full_text_hash: 9095c7bd05d40d5c
 - raw_semantic_hash: 2bb41bd0a7e8cd5b
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"9095c7bd05d40d5c","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 4
 - supporting_signals: commercial_or_risk_context, adoption_context
@@ -4340,11 +4375,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.7
 - raw_capture_priority: -0.3000000000000007
 - usable_for: index_only
-- key_excerpts: [{"type":"case_detail","text":"OpenRouter 鎺ㄥ嚭 MCP 鏈嶅姟鍣紝涓虹紪绋嬫櫤鑳戒綋鎻愪緵瀹炴椂妯″瀷鏁版嵁銆佸熀鍑嗘帓鍚嶃€佸畾浠峰拰鏂囨。鏌ヨ銆傚紑鍙戣€呴€氳繃涓€閿畨瑁咃紙鏀寔 Claude Code銆丆odex CLI銆丆ursor 绛夊鎴风锛夛紝鍗冲彲鍦ㄧ紪杈戝櫒鍐呭畬鎴愭ā鍨嬬瓫閫夈€佷环鏍煎姣斿拰娴嬭瘯鎺ㄧ悊锛屾棤闇€鍒囨崲鏍囩椤点€傛湇鍔″櫒鏁村悎 Artificial Analysis銆丏esign Arena 鍙?OpenRouter 鑷韩鎺掑悕鏁版嵁锛屼緥濡傛帹鑽?GLM-5.2 浣滀负鎬т环姣旀渶浣崇殑缂栫爜妯″瀷銆傚伐鍏烽泦鍖呮嫭 models-list銆乵odel-get銆乵odel-endpoints銆乥enchmarks 绛夛紝鏀寔閫氳繃 chat-send 鍙戦€佹祴璇曟彁绀猴紝姣旇緝涓嶅悓妯″瀷锛堝 Claude Opus 4.8銆丟鈥?,"supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"OpenRouter 鎺ㄥ嚭 MCP 鏈嶅姟鍣紝涓虹紪绋嬫櫤鑳戒綋鎻愪緵瀹炴椂妯″瀷鏁版嵁銆佸熀鍑嗘帓鍚嶃€佸畾浠峰拰鏂囨。鏌ヨ銆?,"supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"寮€鍙戣€呴€氳繃涓€閿畨瑁咃紙鏀寔 Claude Code銆丆odex CLI銆丆ursor 绛夊鎴风锛夛紝鍗冲彲鍦ㄧ紪杈戝櫒鍐呭畬鎴愭ā鍨嬬瓫閫夈€佷环鏍煎姣斿拰娴嬭瘯鎺ㄧ悊锛屾棤闇€鍒囨崲鏍囩椤点€?,"supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鏈嶅姟鍣ㄦ暣鍚?Artificial Analysis銆丏esign Arena 鍙?OpenRouter 鑷韩鎺掑悕鏁版嵁锛屼緥濡傛帹鑽?GLM-5.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"宸ュ叿闆嗗寘鎷?models-list銆乵odel-get銆乵odel-endpoints銆乥enchmarks 绛夛紝鏀寔閫氳繃 chat-send 鍙戦€佹祴璇曟彁绀猴紝姣旇緝涓嶅悓妯″瀷锛堝 Claude Opus 4.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["OpenRouter 鎺ㄥ嚭 MCP 鏈嶅姟鍣紝涓虹紪绋嬫櫤鑳戒綋鎻愪緵瀹炴椂妯″瀷鏁版嵁銆佸熀鍑嗘帓鍚嶃€佸畾浠峰拰鏂囨。鏌ヨ銆?,"鏈嶅姟鍣ㄦ暣鍚?Artificial Analysis銆丏esign Arena 鍙?OpenRouter 鑷韩鎺掑悕鏁版嵁锛屼緥濡傛帹鑽?GLM-5.","宸ュ叿闆嗗寘鎷?models-list銆乵odel-get銆乵odel-endpoints銆乥enchmarks 绛夛紝鏀寔閫氳繃 chat-send 鍙戦€佹祴璇曟彁绀猴紝姣旇緝涓嶅悓妯″瀷锛堝 Claude Opus 4."],"case_details":["OpenRouter 鎺ㄥ嚭 MCP 鏈嶅姟鍣紝涓虹紪绋嬫櫤鑳戒綋鎻愪緵瀹炴椂妯″瀷鏁版嵁銆佸熀鍑嗘帓鍚嶃€佸畾浠峰拰鏂囨。鏌ヨ銆傚紑鍙戣€呴€氳繃涓€閿畨瑁咃紙鏀寔 Claude Code銆丆odex CLI銆丆ursor 绛夊鎴风锛夛紝鍗冲彲鍦ㄧ紪杈戝櫒鍐呭畬鎴愭ā鍨嬬瓫閫夈€佷环鏍煎姣斿拰娴嬭瘯鎺ㄧ悊锛屾棤闇€鍒囨崲鏍囩椤点€傛湇鍔″櫒鏁村悎 Artificial Analysis銆丏esign Arena 鍙?OpenRouter 鑷韩鎺掑悕鏁版嵁锛屼緥濡傛帹鑽?GLM-5.2 浣滀负鎬т环姣旀渶浣崇殑缂栫爜妯″瀷銆傚伐鍏烽泦鍖呮嫭 models-list銆乵odel-get銆乵odel-endpoints銆乥enchmarks 绛夛紝鏀寔閫氳繃 chat-send 鍙戦€佹祴璇曟彁绀猴紝姣旇緝涓嶅悓妯″瀷锛堝 Claude Opus 4.8銆丟鈥?,"寮€鍙戣€呴€氳繃涓€閿畨瑁咃紙鏀寔 Claude Code銆丆odex CLI銆丆ursor 绛夊鎴风锛夛紝鍗冲彲鍦ㄧ紪杈戝櫒鍐呭畬鎴愭ā鍨嬬瓫閫夈€佷环鏍煎姣斿拰娴嬭瘯鎺ㄧ悊锛屾棤闇€鍒囨崲鏍囩椤点€?],"workflow_changes":[],"before_after_clues":[],"affected_roles":["寮€鍙戣€?/ 宸ョ▼鍥㈤槦"],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-086锝淐laude Code v2.1.193 鍙戝竷
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-179
 - raw_original_id: daily-7
@@ -4363,7 +4399,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4378,12 +4414,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 4ce51b4e2c949682
 - raw_full_text_hash: 4ce51b4e2c949682
 - raw_semantic_hash: 3f8b3c8f0087b91b
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"4ce51b4e2c949682","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 4
 - supporting_signals: none
@@ -4391,10 +4427,11 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.7
 - raw_capture_priority: -0.3000000000000007
 - usable_for: index_only
-- key_excerpts: [{"type":"company_action","text":"Claude Code v2.1.193 鏂板 `autoMode.classifyAllShell` 璁剧疆锛屽皢鍏ㄩ儴 Bash/PowerShell 鍛戒护缁忚嚜鍔ㄦā寮忓垎绫诲櫒澶勭悊銆傝嚜鍔ㄦā寮忔嫆缁濆師鍥犵幇鍔犲叆杞綍銆佹嫆缁濇彁绀哄強 `/permissions` 椤甸潰銆傛柊澧?`claude_code.assistant_response` OpenTelemetry 鏃ュ織浜嬩欢锛堥粯璁や笉璁板綍锛岄渶璁剧疆 `OTEL_LOG_ASSISTANT_RESPONSES=1`锛夈€侭ash 妯″紡鏀寔瀹炴椂鏂囦欢璺緞鑷姩琛ュ叏锛汳CP 鏈嶅姟鍣ㄩ渶璁よ瘉鏃舵樉绀哄惎鍔ㄦ彁绀恒€傛柊澧炵┖闂插悗鍙?shell 鍛戒护鑷姩鍐呭瓨鍘嬪姏鍥炴敹锛堝彲绂佺敤锛夈€備慨澶?`/model` UI 鐘舵€佹粸鍚庛€佸悗鍙颁换鍔¤鍙栨秷銆佲€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"classifyAllShell` 璁剧疆锛屽皢鍏ㄩ儴 Bash/PowerShell 鍛戒护缁忚嚜鍔ㄦā寮忓垎绫诲櫒澶勭悊銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鑷姩妯″紡鎷掔粷鍘熷洜鐜板姞鍏ヨ浆褰曘€佹嫆缁濇彁绀哄強 `/permissions` 椤甸潰銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"assistant_response` OpenTelemetry 鏃ュ織浜嬩欢锛堥粯璁や笉璁板綍锛岄渶璁剧疆 `OTEL_LOG_ASSISTANT_RESPONSES=1`锛夈€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Bash 妯″紡鏀寔瀹炴椂鏂囦欢璺緞鑷姩琛ュ叏锛汳CP 鏈嶅姟鍣ㄩ渶璁よ瘉鏃舵樉绀哄惎鍔ㄦ彁绀恒€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"鏂板绌洪棽鍚庡彴 shell 鍛戒护鑷姩鍐呭瓨鍘嬪姏鍥炴敹锛堝彲绂佺敤锛夈€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["Claude Code v2.1.193 鏂板 `autoMode.classifyAllShell` 璁剧疆锛屽皢鍏ㄩ儴 Bash/PowerShell 鍛戒护缁忚嚜鍔ㄦā寮忓垎绫诲櫒澶勭悊銆傝嚜鍔ㄦā寮忔嫆缁濆師鍥犵幇鍔犲叆杞綍銆佹嫆缁濇彁绀哄強 `/permissions` 椤甸潰銆傛柊澧?`claude_code.assistant_response` OpenTelemetry 鏃ュ織浜嬩欢锛堥粯璁や笉璁板綍锛岄渶璁剧疆 `OTEL_LOG_ASSISTANT_RESPONSES=1`锛夈€侭ash 妯″紡鏀寔瀹炴椂鏂囦欢璺緞鑷姩琛ュ叏锛汳CP 鏈嶅姟鍣ㄩ渶璁よ瘉鏃舵樉绀哄惎鍔ㄦ彁绀恒€傛柊澧炵┖闂插悗鍙?shell 鍛戒护鑷姩鍐呭瓨鍘嬪姏鍥炴敹锛堝彲绂佺敤锛夈€備慨澶?`/model` UI 鐘舵€佹粸鍚庛€佸悗鍙颁换鍔¤鍙栨秷銆佲€?,"classifyAllShell` 璁剧疆锛屽皢鍏ㄩ儴 Bash/PowerShell 鍛戒护缁忚嚜鍔ㄦā寮忓垎绫诲櫒澶勭悊銆?,"鑷姩妯″紡鎷掔粷鍘熷洜鐜板姞鍏ヨ浆褰曘€佹嫆缁濇彁绀哄強 `/permissions` 椤甸潰銆?],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 鏉冮檺 / 瀹夊叏娌荤悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?- 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-087锝淥LMo Hybrid vs Transformer锛氭贩鍚堟ā鍨嬪湪瀹炰箟璇嶄笂浼樺娍鏄庢樉锛屼絾閲嶅鐭涓婂嚑鏃犱紭鍔?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-180
 - raw_original_id: daily-21
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-180-olmo-hybrid-vs-transformer-娣峰悎妯″瀷鍦ㄥ疄涔夎瘝涓婁紭鍔挎槑鏄?浣嗛噸澶嶇煭璇笂鍑犳棤浼樺娍.md`
@@ -4412,7 +4449,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4427,12 +4464,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 54a5df3fa2755756
 - raw_full_text_hash: 54a5df3fa2755756
 - raw_semantic_hash: df6d75430305706a
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"54a5df3fa2755756","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_technical_trend
 - importance_score: 4
 - supporting_signals: none
@@ -4440,11 +4477,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.7
 - raw_capture_priority: -0.3000000000000007
 - usable_for: index_only
-- key_excerpts: [{"type":"company_action","text":"閫氳繃瀵规瘮7B鍙傛暟鐨凮LMo 3锛圱ransformer锛変笌OLMo Hybrid锛堟贩鍚堟灦鏋勶級锛屽疄楠屽彂鐜版贩鍚堟ā鍨嬪湪澶у鏁皌oken涓婇娴嬫崯澶辨洿浣庯細瀵瑰悕璇嶃€佸姩璇嶃€佸舰瀹硅瘝绛夊疄涔夎瘝浼樺娍鏄庢樉锛坙oss gap绾?.04锛夛紝鍔熻兘璇嶄笂gap绾?.02锛屼笖鍦ㄩ渶涓婁笅鏂囨帹鐞嗙殑浠ｈ瘝鎸囦唬涓婃洿濂姐€備絾鍦ㄩ噸澶嶅嚭鐜扮殑n-gram鍜岄棴鍚堟嫭鍙凤紙濡俙}`锛変笂锛屾贩鍚堟ā鍨嬬殑浼樺娍鍑犱箮娑堝け锛孴ransformer鍑€熸敞鎰忓姏鏈哄埗鏇存搮闀夸粠杈撳叆涓洿鎺ユ绱㈢簿纭俊鎭€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"閫氳繃瀵规瘮7B鍙傛暟鐨凮LMo 3锛圱ransformer锛変笌OLMo Hybrid锛堟贩鍚堟灦鏋勶級锛屽疄楠屽彂鐜版贩鍚堟ā鍨嬪湪澶у鏁皌oken涓婇娴嬫崯澶辨洿浣庯細瀵瑰悕璇嶃€佸姩璇嶃€佸舰瀹硅瘝绛夊疄涔夎瘝浼樺娍鏄庢樉锛坙oss gap绾?.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"02锛屼笖鍦ㄩ渶涓婁笅鏂囨帹鐞嗙殑浠ｈ瘝鎸囦唬涓婃洿濂姐€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"浣嗗湪閲嶅鍑虹幇鐨刵-gram鍜岄棴鍚堟嫭鍙凤紙濡俙}`锛変笂锛屾贩鍚堟ā鍨嬬殑浼樺娍鍑犱箮娑堝け锛孴ransformer鍑€熸敞鎰忓姏鏈哄埗鏇存搮闀夸粠杈撳叆涓洿鎺ユ绱㈢簿纭俊鎭€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["閫氳繃瀵规瘮7B鍙傛暟鐨凮LMo 3锛圱ransformer锛変笌OLMo Hybrid锛堟贩鍚堟灦鏋勶級锛屽疄楠屽彂鐜版贩鍚堟ā鍨嬪湪澶у鏁皌oken涓婇娴嬫崯澶辨洿浣庯細瀵瑰悕璇嶃€佸姩璇嶃€佸舰瀹硅瘝绛夊疄涔夎瘝浼樺娍鏄庢樉锛坙oss gap绾?.04锛夛紝鍔熻兘璇嶄笂gap绾?.02锛屼笖鍦ㄩ渶涓婁笅鏂囨帹鐞嗙殑浠ｈ瘝鎸囦唬涓婃洿濂姐€備絾鍦ㄩ噸澶嶅嚭鐜扮殑n-gram鍜岄棴鍚堟嫭鍙凤紙濡俙}`锛変笂锛屾贩鍚堟ā鍨嬬殑浼樺娍鍑犱箮娑堝け锛孴ransformer鍑€熸敞鎰忓姏鏈哄埗鏇存搮闀夸粠杈撳叆涓洿鎺ユ绱㈢簿纭俊鎭€?,"閫氳繃瀵规瘮7B鍙傛暟鐨凮LMo 3锛圱ransformer锛変笌OLMo Hybrid锛堟贩鍚堟灦鏋勶級锛屽疄楠屽彂鐜版贩鍚堟ā鍨嬪湪澶у鏁皌oken涓婇娴嬫崯澶辨洿浣庯細瀵瑰悕璇嶃€佸姩璇嶃€佸舰瀹硅瘝绛夊疄涔夎瘝浼樺娍鏄庢樉锛坙oss gap绾?.","02锛屼笖鍦ㄩ渶涓婁笅鏂囨帹鐞嗙殑浠ｈ瘝鎸囦唬涓婃洿濂姐€?],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-088锝淪ail Research 鏋勫缓闆嗙兢鎰熺煡缂栨帓锛屽姞閫熷紓姝ユ帹鐞?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-181
 - raw_original_id: daily-24
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-181-sail-research-鏋勫缓闆嗙兢鎰熺煡缂栨帓-鍔犻€熷紓姝ユ帹鐞?md`
@@ -4462,7 +4500,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4477,12 +4515,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 38fe299ae4aa2649
 - raw_full_text_hash: 38fe299ae4aa2649
 - raw_semantic_hash: 9da123cdcdd4d7cb
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"38fe299ae4aa2649","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_technical_trend
 - importance_score: 4
 - supporting_signals: none
@@ -4490,11 +4528,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.7
 - raw_capture_priority: -0.3000000000000007
 - usable_for: index_only
-- key_excerpts: [{"type":"company_action","text":"鎺ㄧ悊甯傚満鏄蒋浠朵腑鏈€澶х殑甯傚満銆侫I宸ヤ綔璐熻浇姝ｄ粠鍚屾鑱婂ぉ杞悜寮傛銆佸杞櫤鑳戒綋锛岃繍琛屾椂闀垮彲杈炬暟灏忔椂銆係ail Research 涓烘鏋勫缓浜嗛泦缇ゆ劅鐭ワ紙fleet鈥慳ware锛夌紪鎺掔郴缁燂紝浠ユ渶澶у寲姣忕編鍏冩帹鐞嗘敮鍑虹殑鍚炲悙閲忋€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"AI宸ヤ綔璐熻浇姝ｄ粠鍚屾鑱婂ぉ杞悜寮傛銆佸杞櫤鑳戒綋锛岃繍琛屾椂闀垮彲杈炬暟灏忔椂銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Sail Research 涓烘鏋勫缓浜嗛泦缇ゆ劅鐭ワ紙fleet鈥慳ware锛夌紪鎺掔郴缁燂紝浠ユ渶澶у寲姣忕編鍏冩帹鐞嗘敮鍑虹殑鍚炲悙閲忋€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["鎺ㄧ悊甯傚満鏄蒋浠朵腑鏈€澶х殑甯傚満銆侫I宸ヤ綔璐熻浇姝ｄ粠鍚屾鑱婂ぉ杞悜寮傛銆佸杞櫤鑳戒綋锛岃繍琛屾椂闀垮彲杈炬暟灏忔椂銆係ail Research 涓烘鏋勫缓浜嗛泦缇ゆ劅鐭ワ紙fleet鈥慳ware锛夌紪鎺掔郴缁燂紝浠ユ渶澶у寲姣忕編鍏冩帹鐞嗘敮鍑虹殑鍚炲悙閲忋€?,"AI宸ヤ綔璐熻浇姝ｄ粠鍚屾鑱婂ぉ杞悜寮傛銆佸杞櫤鑳戒綋锛岃繍琛屾椂闀垮彲杈炬暟灏忔椂銆?,"Sail Research 涓烘鏋勫缓浜嗛泦缇ゆ劅鐭ワ紙fleet鈥慳ware锛夌紪鎺掔郴缁燂紝浠ユ渶澶у寲姣忕編鍏冩帹鐞嗘敮鍑虹殑鍚炲悙閲忋€?],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-089锝淕enerative AI Fizzle鈩細鐢熸垚寮廇I娉℃搏姝ｅ湪缂撴參娑堥€€
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-182
 - raw_original_id: daily-25
@@ -4513,7 +4552,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4528,12 +4567,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 38caa408246a7fd0
 - raw_full_text_hash: 38caa408246a7fd0
 - raw_semantic_hash: e98d264dc6034bd9
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"38caa408246a7fd0","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: important_product_or_service
 - importance_score: 4
 - supporting_signals: none
@@ -4541,11 +4580,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 8.7
 - raw_capture_priority: -0.3000000000000007
 - usable_for: index_only
-- key_excerpts: [{"type":"funding","text":"Gary Marcus 鏄ㄦ棩鎻愬嚭鏂版湳璇?Generative AI Fizzle鈩紝璁や负鐢熸垚寮廇I琛屼笟浼板€艰繃楂橈紝鎶曡祫鑰呭 hype 涓庡埄娑︾殑钀藉樊澶卞幓鐑儏銆侺LM 宸插晢鍝佸寲锛屼环鏍兼垬婵€鐑堬紝鎻愪緵鍟嗙泩鍒╄壈闅俱€傛槰鏃ヤ竴娆炬柊鐨勪腑鍥藉紑婧愭ā鍨嬪彂甯冿紝鍙兘杩涗竴姝ュ啿鍑荤編鍥?LLM 鍏徃銆傚鏁?AI 鑲＄エ鏈湀鏄捐憲涓嬭穼锛屾场娌彲鑳戒笉浼氱獊鐒剁牬瑁傦紝鑰屾槸缂撴參娑堥€€銆?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"funding","text":"Gary Marcus 鏄ㄦ棩鎻愬嚭鏂版湳璇?Generative AI Fizzle鈩紝璁や负鐢熸垚寮廇I琛屼笟浼板€艰繃楂橈紝鎶曡祫鑰呭 hype 涓庡埄娑︾殑钀藉樊澶卞幓鐑儏銆?,"supports":["daily_observation","heatmap","trend"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"LLM 宸插晢鍝佸寲锛屼环鏍兼垬婵€鐑堬紝鎻愪緵鍟嗙泩鍒╄壈闅俱€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"},{"type":"product_update","text":"鏄ㄦ棩涓€娆炬柊鐨勪腑鍥藉紑婧愭ā鍨嬪彂甯冿紝鍙兘杩涗竴姝ュ啿鍑荤編鍥?LLM 鍏徃銆?,"supports":["daily_observation","heatmap","change"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"澶氭暟 AI 鑲＄エ鏈湀鏄捐憲涓嬭穼锛屾场娌彲鑳戒笉浼氱獊鐒剁牬瑁傦紝鑰屾槸缂撴參娑堥€€銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"high","confidence":"medium"}]
-- evidence_seed: {"company_actions":["Gary Marcus 鏄ㄦ棩鎻愬嚭鏂版湳璇?Generative AI Fizzle鈩紝璁や负鐢熸垚寮廇I琛屼笟浼板€艰繃楂橈紝鎶曡祫鑰呭 hype 涓庡埄娑︾殑钀藉樊澶卞幓鐑儏銆侺LM 宸插晢鍝佸寲锛屼环鏍兼垬婵€鐑堬紝鎻愪緵鍟嗙泩鍒╄壈闅俱€傛槰鏃ヤ竴娆炬柊鐨勪腑鍥藉紑婧愭ā鍨嬪彂甯冿紝鍙兘杩涗竴姝ュ啿鍑荤編鍥?LLM 鍏徃銆傚鏁?AI 鑲＄エ鏈湀鏄捐憲涓嬭穼锛屾场娌彲鑳戒笉浼氱獊鐒剁牬瑁傦紝鑰屾槸缂撴參娑堥€€銆?,"Gary Marcus 鏄ㄦ棩鎻愬嚭鏂版湳璇?Generative AI Fizzle鈩紝璁や负鐢熸垚寮廇I琛屼笟浼板€艰繃楂橈紝鎶曡祫鑰呭 hype 涓庡埄娑︾殑钀藉樊澶卞幓鐑儏銆?,"LLM 宸插晢鍝佸寲锛屼环鏍兼垬婵€鐑堬紝鎻愪緵鍟嗙泩鍒╄壈闅俱€?],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-090锝淢idjourney V8.1 鑽夌妯″紡鏂板闅忔満椋庢牸鍔熻兘
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-183
 - raw_original_id: daily-6
@@ -4564,7 +4604,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4579,12 +4619,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: ce072276a0ee2d1c
 - raw_full_text_hash: ce072276a0ee2d1c
 - raw_semantic_hash: 8d3ec33d7f107f8e
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"ce072276a0ee2d1c","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: none
 - importance_score: 1
 - supporting_signals: none
@@ -4593,11 +4633,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 4.5
 - raw_capture_priority: -4.5
 - usable_for: index_only
-- key_excerpts: [{"type":"company_action","text":"Midjourney V8.1 鐨勮崏绋挎ā寮忥紙draft mode锛夋坊鍔犱簡闅忔満椋庢牸鍔熻兘銆傜敤鎴峰湪鎻愮ず璇嶄腑鍔犲叆 `--sref random` 鍗冲彲涓€閿敓鎴?24 寮犱笉鍚岄鏍肩殑鍥剧墖銆傚紑鍚崏绋挎ā寮忓彲閫氳繃鐐瑰嚮鎻愮ず鏍忕殑 鈿?鍥炬爣鎴栨坊鍔?`--draft` 鍙傛暟銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"1 鐨勮崏绋挎ā寮忥紙draft mode锛夋坊鍔犱簡闅忔満椋庢牸鍔熻兘銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"鐢ㄦ埛鍦ㄦ彁绀鸿瘝涓姞鍏?`--sref random` 鍗冲彲涓€閿敓鎴?24 寮犱笉鍚岄鏍肩殑鍥剧墖銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"寮€鍚崏绋挎ā寮忓彲閫氳繃鐐瑰嚮鎻愮ず鏍忕殑 鈿?鍥炬爣鎴栨坊鍔?`--draft` 鍙傛暟銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
-- evidence_seed: {"company_actions":["Midjourney V8.1 鐨勮崏绋挎ā寮忥紙draft mode锛夋坊鍔犱簡闅忔満椋庢牸鍔熻兘銆傜敤鎴峰湪鎻愮ず璇嶄腑鍔犲叆 `--sref random` 鍗冲彲涓€閿敓鎴?24 寮犱笉鍚岄鏍肩殑鍥剧墖銆傚紑鍚崏绋挎ā寮忓彲閫氳繃鐐瑰嚮鎻愮ず鏍忕殑 鈿?鍥炬爣鎴栨坊鍔?`--draft` 鍙傛暟銆?,"1 鐨勮崏绋挎ā寮忥紙draft mode锛夋坊鍔犱簡闅忔満椋庢牸鍔熻兘銆?,"鐢ㄦ埛鍦ㄦ彁绀鸿瘝涓姞鍏?`--sref random` 鍗冲彲涓€閿敓鎴?24 寮犱笉鍚岄鏍肩殑鍥剧墖銆?],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-091锝滆但搴撳叞灏煎鍙ゅ嵎棣栨琚畬鏁磋櫄鎷熻В璇?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-184
 - raw_original_id: daily-15
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-184-璧簱鍏板凹濮嗗彜鍗烽娆¤瀹屾暣铏氭嫙瑙ｈ.md`
@@ -4615,7 +4656,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4629,12 +4670,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 7499bca4cb11daad
 - raw_full_text_hash: 7499bca4cb11daad
 - raw_semantic_hash: 218258fd9a3fbb92
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"7499bca4cb11daad","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: none
 - importance_score: 1
 - supporting_signals: none
@@ -4643,11 +4684,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 4.5
 - raw_capture_priority: -4.5
 - usable_for: index_only
-- key_excerpts: [{"type":"company_action","text":"鐮旂┒浜哄憳鍒╃敤楂樺垎杈ㄧ巼X灏勭嚎鏄惧井鏂眰鎵弿鍜屾満鍣ㄥ涔狅紝鍦ㄦ湭鐗╃悊灞曞紑鐨勬儏鍐典笅瀹屾暣铏氭嫙灞曞紑骞惰鍙栦簡璧簱鍏板凹濮嗗彜鍗稰Herc.1667锛圫croll4锛夈€傝繖鏄鍗疯浠庡ご鍒板熬杩炵画璇诲彇鐨勭焊鑾庤崏鍗凤紝鍐呭涓烘柉澶氳憶鍝插璁鸿憲锛屾彁鍙婂厠閲岃タ鏅柉鐨勪緞瀛怉ristocreon銆傜浜屽嵎PHerc.Paris4閫氳繃鏇撮珮鍒嗚鲸鐜囨垚鍍忎娇澧ㄦ按鍦ㄤ笁缁存暟鎹腑鐩存帴鍙锛岀嫭绔嬬‘璁や簡2023骞村ぇ濂栬禌鐨勮В璇汇€傜涓夊嵎PHerc.139纭畾鏍囬鍜屼綔鑰呬负鑿叉礇寰风﹩銆婅璇哥銆嬬鍏嵎銆傛墍鏈夋暟鎹笌浠ｇ爜宸插叕寮€銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"鐮旂┒浜哄憳鍒╃敤楂樺垎杈ㄧ巼X灏勭嚎鏄惧井鏂眰鎵弿鍜屾満鍣ㄥ涔狅紝鍦ㄦ湭鐗╃悊灞曞紑鐨勬儏鍐典笅瀹屾暣铏氭嫙灞曞紑骞惰鍙栦簡璧簱鍏板凹濮嗗彜鍗稰Herc.","supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"杩欐槸棣栧嵎琚粠澶村埌灏捐繛缁鍙栫殑绾歌帋鑽夊嵎锛屽唴瀹逛负鏂钁涘摬瀛﹁钁楋紝鎻愬強鍏嬮噷瑗挎櫘鏂殑渚勫瓙Aristocreon銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Paris4閫氳繃鏇撮珮鍒嗚鲸鐜囨垚鍍忎娇澧ㄦ按鍦ㄤ笁缁存暟鎹腑鐩存帴鍙锛岀嫭绔嬬‘璁や簡2023骞村ぇ濂栬禌鐨勮В璇汇€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"139纭畾鏍囬鍜屼綔鑰呬负鑿叉礇寰风﹩銆婅璇哥銆嬬鍏嵎銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
-- evidence_seed: {"company_actions":["鐮旂┒浜哄憳鍒╃敤楂樺垎杈ㄧ巼X灏勭嚎鏄惧井鏂眰鎵弿鍜屾満鍣ㄥ涔狅紝鍦ㄦ湭鐗╃悊灞曞紑鐨勬儏鍐典笅瀹屾暣铏氭嫙灞曞紑骞惰鍙栦簡璧簱鍏板凹濮嗗彜鍗稰Herc.1667锛圫croll4锛夈€傝繖鏄鍗疯浠庡ご鍒板熬杩炵画璇诲彇鐨勭焊鑾庤崏鍗凤紝鍐呭涓烘柉澶氳憶鍝插璁鸿憲锛屾彁鍙婂厠閲岃タ鏅柉鐨勪緞瀛怉ristocreon銆傜浜屽嵎PHerc.Paris4閫氳繃鏇撮珮鍒嗚鲸鐜囨垚鍍忎娇澧ㄦ按鍦ㄤ笁缁存暟鎹腑鐩存帴鍙锛岀嫭绔嬬‘璁や簡2023骞村ぇ濂栬禌鐨勮В璇汇€傜涓夊嵎PHerc.139纭畾鏍囬鍜屼綔鑰呬负鑿叉礇寰风﹩銆婅璇哥銆嬬鍏嵎銆傛墍鏈夋暟鎹笌浠ｇ爜宸插叕寮€銆?,"鐮旂┒浜哄憳鍒╃敤楂樺垎杈ㄧ巼X灏勭嚎鏄惧井鏂眰鎵弿鍜屾満鍣ㄥ涔狅紝鍦ㄦ湭鐗╃悊灞曞紑鐨勬儏鍐典笅瀹屾暣铏氭嫙灞曞紑骞惰鍙栦簡璧簱鍏板凹濮嗗彜鍗稰Herc.","杩欐槸棣栧嵎琚粠澶村埌灏捐繛缁鍙栫殑绾歌帋鑽夊嵎锛屽唴瀹逛负鏂钁涘摬瀛﹁钁楋紝鎻愬強鍏嬮噷瑗挎櫘鏂殑渚勫瓙Aristocreon銆?],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氬綋鍓嶄富瑕佹潵鑷ぞ鍖?鑱氬悎/绾跨储鏉ユ簮锛屼笉鑳界洿鎺ヤ綔涓轰簨瀹炰富璇佹嵁銆?
 ## P-092锝淎nthropic绉伴樋閲屽反宸撮潪娉曡幏鍙栦簡Claude AI妯″瀷鐨勫姛鑳?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-185
 - raw_original_id: daily-11
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-185-anthropic绉伴樋閲屽反宸撮潪娉曡幏鍙栦簡claude-ai妯″瀷鐨勫姛鑳?md`
@@ -4665,7 +4707,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4679,12 +4721,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: be50fffa3ca887dd
 - raw_full_text_hash: be50fffa3ca887dd
 - raw_semantic_hash: 5a1baba336ae1c31
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"be50fffa3ca887dd","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: none
 - importance_score: 1
 - supporting_signals: none
@@ -4692,11 +4734,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 4.5
 - raw_capture_priority: -4.5
 - usable_for: index_only
-- key_excerpts: [{"type":"opinion","text":"Anthropic鎸囨帶闃块噷宸村反鏈粡鎺堟潈鎻愬彇浜嗗叾Claude AI妯″瀷鐨勮兘鍔涖€傝鎸囨帶鍩轰簬Anthropic鐨勮皟鏌ワ紝璁や负闃块噷宸村反閫氳繃閫嗗悜宸ョ▼鎴栧叾浠栨墜娈靛鍒朵簡Claude鐨勬牳蹇冩妧鏈€傜洰鍓嶉樋閲屽反宸村皻鏈叕寮€鍥炲簲銆?,"supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"Anthropic鎸囨帶闃块噷宸村反鏈粡鎺堟潈鎻愬彇浜嗗叾Claude AI妯″瀷鐨勮兘鍔涖€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"opinion","text":"璇ユ寚鎺у熀浜嶢nthropic鐨勮皟鏌ワ紝璁や负闃块噷宸村反閫氳繃閫嗗悜宸ョ▼鎴栧叾浠栨墜娈靛鍒朵簡Claude鐨勬牳蹇冩妧鏈€?,"supports":["daily_observation","heatmap","viewpoint"],"importance":"medium","confidence":"medium"}]
-- evidence_seed: {"company_actions":["Anthropic鎸囨帶闃块噷宸村反鏈粡鎺堟潈鎻愬彇浜嗗叾Claude AI妯″瀷鐨勮兘鍔涖€?],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氬綋鍓嶄富瑕佹潵鑷ぞ鍖?鑱氬悎/绾跨储鏉ユ簮锛屼笉鑳界洿鎺ヤ綔涓轰簨瀹炰富璇佹嵁銆?
 ## P-093锝滅泩閫忚瘉鍒革紙Interactive Brokers锛変笌 Grok 闆嗘垚锛氱粍鍚堝垎鏋愩€佹儏鏅缓妯′笌瀹炴椂浜ゆ槗鎸囦护鐢熸垚
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-186
 - raw_original_id: daily-9
@@ -4715,7 +4758,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4730,12 +4773,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 04a2d687071a1344
 - raw_full_text_hash: 04a2d687071a1344
 - raw_semantic_hash: 2c875150f2832c8e
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"04a2d687071a1344","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: supporting_signal
 - importance_score: 2
 - supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
@@ -4744,11 +4787,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 4.4
 - raw_capture_priority: -4.6
 - usable_for: index_only
-- key_excerpts: [{"type":"supporting_context","text":"鐩堥€忚瘉鍒革紙Interactive Brokers锛夎繎鏃ヤ笌 Grok 闆嗘垚锛岀敤鎴峰彲鍦ㄥ嚑鍒嗛挓鍐呭厤璐瑰叧鑱旂幇鏈夎处鎴凤紝鏃犻渶娉ㄥ唽鏂拌处鎴枫€傞€氳繃鑷劧璇█涓?Grok 瀵硅瘽锛屽彲瀹屾垚缁勫悎鏀剁泭鍒嗘瀽锛堝鑲℃伅涓庡埄鎭娴嬶級銆佽涓?鍦板尯/缁忔祹浜嬩欢鐨勯闄╂暈鍙ｆ儏鏅缓妯°€佸競鍦鸿秼鍔跨爺绌讹紝骞剁洿鎺ョ敓鎴愬鍐茶鍗曠瓑瀹炴椂浜ゆ槗鎸囦护锛屽疄鐜颁粠鏁版嵁娲炲療鍒版墽琛屽喅绛栫殑涓€浣撳寲銆?,"supports":["daily_observation","heatmap"],"importance":"medium","confidence":"medium"},{"type":"product_update","text":"鐩堥€忚瘉鍒革紙Interactive Brokers锛夎繎鏃ヤ笌 Grok 闆嗘垚锛岀敤鎴峰彲鍦ㄥ嚑鍒嗛挓鍐呭厤璐瑰叧鑱旂幇鏈夎处鎴凤紝鏃犻渶娉ㄥ唽鏂拌处鎴枫€?,"supports":["daily_observation","heatmap","change"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"閫氳繃鑷劧璇█涓?Grok 瀵硅瘽锛屽彲瀹屾垚缁勫悎鏀剁泭鍒嗘瀽锛堝鑲℃伅涓庡埄鎭娴嬶級銆佽涓?鍦板尯/缁忔祹浜嬩欢鐨勯闄╂暈鍙ｆ儏鏅缓妯°€佸競鍦鸿秼鍔跨爺绌讹紝骞剁洿鎺ョ敓鎴愬鍐茶鍗曠瓑瀹炴椂浜ゆ槗鎸囦护锛屽疄鐜颁粠鏁版嵁娲炲療鍒版墽琛屽喅绛栫殑涓€浣撳寲銆?,"supports":["daily_observation","heatmap"],"importance":"medium","confidence":"medium"}]
-- evidence_seed: {"company_actions":["鐩堥€忚瘉鍒革紙Interactive Brokers锛夎繎鏃ヤ笌 Grok 闆嗘垚锛岀敤鎴峰彲鍦ㄥ嚑鍒嗛挓鍐呭厤璐瑰叧鑱旂幇鏈夎处鎴凤紝鏃犻渶娉ㄥ唽鏂拌处鎴枫€?],"case_details":[],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 閮ㄧ讲 / 闆嗘垚浜や粯 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":[],"risks_or_constraints":["鐩堥€忚瘉鍒革紙Interactive Brokers锛夎繎鏃ヤ笌 Grok 闆嗘垚锛岀敤鎴峰彲鍦ㄥ嚑鍒嗛挓鍐呭厤璐瑰叧鑱旂幇鏈夎处鎴凤紝鏃犻渶娉ㄥ唽鏂拌处鎴枫€傞€氳繃鑷劧璇█涓?Grok 瀵硅瘽锛屽彲瀹屾垚缁勫悎鏀剁泭鍒嗘瀽锛堝鑲℃伅涓庡埄鎭娴嬶級銆佽涓?鍦板尯/缁忔祹浜嬩欢鐨勯闄╂暈鍙ｆ儏鏅缓妯°€佸競鍦鸿秼鍔跨爺绌讹紝骞剁洿鎺ョ敓鎴愬鍐茶鍗曠瓑瀹炴椂浜ゆ槗鎸囦护锛屽疄鐜颁粠鏁版嵁娲炲療鍒版墽琛屽喅绛栫殑涓€浣撳寲銆?,"閫氳繃鑷劧璇█涓?Grok 瀵硅瘽锛屽彲瀹屾垚缁勫悎鏀剁泭鍒嗘瀽锛堝鑲℃伅涓庡埄鎭娴嬶級銆佽涓?鍦板尯/缁忔祹浜嬩欢鐨勯闄╂暈鍙ｆ儏鏅缓妯°€佸競鍦鸿秼鍔跨爺绌讹紝骞剁洿鎺ョ敓鎴愬鍐茶鍗曠瓑瀹炴椂浜ゆ槗鎸囦护锛屽疄鐜颁粠鏁版嵁娲炲療鍒版墽琛屽喅绛栫殑涓€浣撳寲銆?]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夋垚鏈€佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-094锝淢eta鍛樺伐璀﹀憡AI鍐呭瀹℃牳閮ㄧ讲杩囧揩
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 
 - raw_ref: R-187
 - raw_original_id: daily-12
@@ -4767,7 +4811,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: true
 - index_only_evidence: false
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4782,12 +4826,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 1f87f77c3efbb792
 - raw_full_text_hash: 1f87f77c3efbb792
 - raw_semantic_hash: bc391fbed3af91f3
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1f87f77c3efbb792","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: supporting_signal
 - importance_score: 2
 - supporting_signals: adoption_context
@@ -4795,10 +4839,11 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 4.4
 - raw_capture_priority: -4.6
 - usable_for: index_only
-- key_excerpts: [{"type":"number","text":"Meta鍦?025骞村凡鐢ㄥぇ璇█妯″瀷鏇挎崲绾︿竴鍗婁汉宸ュ鏍歌姹傦紝璁″垝骞村簳鍓嶅皢閮ㄥ垎鍐呭绫诲瀷鐨凙I瀹℃牳姣斾緥鎻愬崌鑷?0%浠ヤ笂锛屾瘡骞磋妭鐪佹暟鍗佷嚎缇庡厓銆侻eta鍚﹁鎴愭湰鍔ㄦ満锛岀О鑷?鏈堟祴璇曟樉绀哄叾妯″瀷閿欒鐜囨瘮浜虹被浣?3%锛屼笖澶氭崟鎹?0%杩濊銆備絾鍛樺伐鎸囧嚭妯″瀷浠嶄細绉婚櫎鎴栭檺娴佹棤瀹冲唴瀹癸紝缂轰箯瓒冲鐩戠潱锛屽揩閫熼儴缃插凡瀵艰嚧澶栧寘瑁佸憳銆傛澶栵紝Meta宸蹭粠浣跨敤Google Gemini杞悜鑷鏂板熀纭€妯″瀷Muse Spark锛岃妯″瀷鍩轰簬浜哄伐瀹℃牳鍛樼殑鍘嗗彶鍐崇瓥璁粌銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"Meta鍦?025骞村凡鐢ㄥぇ璇█妯″瀷鏇挎崲绾︿竴鍗婁汉宸ュ鏍歌姹傦紝璁″垝骞村簳鍓嶅皢閮ㄥ垎鍐呭绫诲瀷鐨凙I瀹℃牳姣斾緥鎻愬崌鑷?0%浠ヤ笂锛屾瘡骞磋妭鐪佹暟鍗佷嚎缇庡厓銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"number","text":"Meta鍚﹁鎴愭湰鍔ㄦ満锛岀О鑷?鏈堟祴璇曟樉绀哄叾妯″瀷閿欒鐜囨瘮浜虹被浣?3%锛屼笖澶氭崟鎹?0%杩濊銆?,"supports":["daily_observation","heatmap","case","trend"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"浣嗗憳宸ユ寚鍑烘ā鍨嬩粛浼氱Щ闄ゆ垨闄愭祦鏃犲鍐呭锛岀己涔忚冻澶熺洃鐫ｏ紝蹇€熼儴缃插凡瀵艰嚧澶栧寘瑁佸憳銆?,"supports":["daily_observation","heatmap","case"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"姝ゅ锛孧eta宸蹭粠浣跨敤Google Gemini杞悜鑷鏂板熀纭€妯″瀷Muse Spark锛岃妯″瀷鍩轰簬浜哄伐瀹℃牳鍛樼殑鍘嗗彶鍐崇瓥璁粌銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
-- evidence_seed: {"company_actions":["姝ゅ锛孧eta宸蹭粠浣跨敤Google Gemini杞悜鑷鏂板熀纭€妯″瀷Muse Spark锛岃妯″瀷鍩轰簬浜哄伐瀹℃牳鍛樼殑鍘嗗彶鍐崇瓥璁粌銆?],"case_details":["浣嗗憳宸ユ寚鍑烘ā鍨嬩粛浼氱Щ闄ゆ垨闄愭祦鏃犲鍐呭锛岀己涔忚冻澶熺洃鐫ｏ紝蹇€熼儴缃插凡瀵艰嚧澶栧寘瑁佸憳銆?],"workflow_changes":[],"before_after_clues":["鍙兘娑夊強 璁¤垂 / 棰勭畻绠＄悊 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?,"鍙兘娑夊強 閮ㄧ讲 / 闆嗘垚浜や粯 鐨勫墠鍚庡彉鍖栵紝闇€瑕佷簩鎼滆ˉ瓒冲彉鍖栧墠娴佺▼銆?],"affected_roles":[],"risks_or_constraints":[]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涚枒浼煎畼缃戦椤点€佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊彲鐢ㄥ叏鏂囧揩鐓?- 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?
 ## P-095锝淢eta 闅愮鎰熺煡鍩虹璁炬柦鐨勮祫浜у垎绫伙細娣峰悎妯″紡灏?LLM 钂搁涓虹‘瀹氭€ц鍒?
+text_contamination_repair: historical_text_contamination_repaired_at_2026-06-29T11:29:07.243Z
 - raw_ref: R-188
 - raw_original_id: daily-22
 - raw_archive: `01-SiteV2/content/01-raw/originals/2026-06-26/r-188-meta-闅愮鎰熺煡鍩虹璁炬柦鐨勮祫浜у垎绫?娣峰悎妯″紡灏?llm-钂搁涓虹‘瀹氭€ц鍒?md`
@@ -4816,7 +4861,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - event_evidence: false
 - index_only_evidence: true
 - raw_qc_decision: block
-- raw_qc_downstream_use: not_allowed
+- raw_qc_downstream_use: blocked_historical_text_contamination
 - acquisition_source_level: M
 - research_status: not_research
 - local_snapshot_status: no-url-summary-only
@@ -4831,12 +4876,12 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - source_role: discovery_source
 - origin_fetch_status: summary_only
 - raw_status: ignored
-- pool_routes: index_only
+- pool_routes: watchlist
 - raw_content_hash: 1bd7245b81ae8cbb
 - raw_full_text_hash: 1bd7245b81ae8cbb
 - raw_semantic_hash: 8fa7dba198b27047
 - evidence_completeness: {"original_url_status":"missing","full_text_status":"missing_or_summary_only","snapshot_status":"missing_or_fetch_failed","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"1bd7245b81ae8cbb","missing":["missing_original_url","missing_full_text","missing_snapshot"]}
-- degradation_reasons: index_only_or_directory_page锛沵issing_full_text锛沵issing_snapshot
+- degradation_reasons: [historical_text_contamination_repaired]
 - importance_type: supporting_signal
 - importance_score: 2
 - supporting_signals: commercial_or_risk_context, market_shaping_risk_context, adoption_context
@@ -4844,7 +4889,7 @@ keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.
 - score: 4.4
 - raw_capture_priority: -4.6
 - usable_for: index_only
-- key_excerpts: [{"type":"supporting_context","text":"Meta 鍦?Privacy-Aware Infrastructure (PAI) 鐨勮祫浜у垎绫讳腑閲囩敤娣峰悎妯″紡锛氬厛鏋勫缓鍚唬鐮併€佽缂樸€佽涔夋爣娉ㄧ殑涓婁笅鏂囪瘉鎹紝鍐嶈皟鐢?LLM 澶勭悊姝т箟銆佸喎鍚姩鍜屾柊棰栬祫浜э紱浜哄伐瀹℃牳鏍囩涓庢ā鍨嬫帹鑽愪弗鏍奸殧绂汇€侺LM 涓嶇洿鎺ュ仛鐢熶骇鍐崇瓥锛屽叾绋冲畾琛屼负琚捀棣忎负鐗堟湰鍖栫‘瀹氭€ц鍒欑敤浜庣敓浜ф墽琛岋紝LLM 瑙掕壊闅忚鍒欑Н绱€愭缂╁皬銆傛牳蹇冨師鍒欙細涓婁笅鏂囨瘮鎻愮ず璇嶆洿閲嶈銆佽В鑰﹁瘎浼颁笌浼樺寲銆佸皢绋冲畾琛屼负瑙勫垯鍖栥€?,"supports":["daily_observation","heatmap"],"importance":"medium","confidence":"medium"},{"type":"supporting_context","text":"Meta 鍦?Privacy-Aware Infrastructure (PAI) 鐨勮祫浜у垎绫讳腑閲囩敤娣峰悎妯″紡锛氬厛鏋勫缓鍚唬鐮併€佽缂樸€佽涔夋爣娉ㄧ殑涓婁笅鏂囪瘉鎹紝鍐嶈皟鐢?LLM 澶勭悊姝т箟銆佸喎鍚姩鍜屾柊棰栬祫浜э紱浜哄伐瀹℃牳鏍囩涓庢ā鍨嬫帹鑽愪弗鏍奸殧绂汇€?,"supports":["daily_observation","heatmap"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"LLM 涓嶇洿鎺ュ仛鐢熶骇鍐崇瓥锛屽叾绋冲畾琛屼负琚捀棣忎负鐗堟湰鍖栫‘瀹氭€ц鍒欑敤浜庣敓浜ф墽琛岋紝LLM 瑙掕壊闅忚鍒欑Н绱€愭缂╁皬銆?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"},{"type":"company_action","text":"鏍稿績鍘熷垯锛氫笂涓嬫枃姣旀彁绀鸿瘝鏇撮噸瑕併€佽В鑰﹁瘎浼颁笌浼樺寲銆佸皢绋冲畾琛屼负瑙勫垯鍖栥€?,"supports":["daily_observation","heatmap","change","case","trend"],"importance":"medium","confidence":"medium"}]
-- evidence_seed: {"company_actions":["LLM 涓嶇洿鎺ュ仛鐢熶骇鍐崇瓥锛屽叾绋冲畾琛屼负琚捀棣忎负鐗堟湰鍖栫‘瀹氭€ц鍒欑敤浜庣敓浜ф墽琛岋紝LLM 瑙掕壊闅忚鍒欑Н绱€愭缂╁皬銆?,"鏍稿績鍘熷垯锛氫笂涓嬫枃姣旀彁绀鸿瘝鏇撮噸瑕併€佽В鑰﹁瘎浼颁笌浼樺寲銆佸皢绋冲畾琛屼负瑙勫垯鍖栥€?],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":[],"risks_or_constraints":["Meta 鍦?Privacy-Aware Infrastructure (PAI) 鐨勮祫浜у垎绫讳腑閲囩敤娣峰悎妯″紡锛氬厛鏋勫缓鍚唬鐮併€佽缂樸€佽涔夋爣娉ㄧ殑涓婁笅鏂囪瘉鎹紝鍐嶈皟鐢?LLM 澶勭悊姝т箟銆佸喎鍚姩鍜屾柊棰栬祫浜э紱浜哄伐瀹℃牳鏍囩涓庢ā鍨嬫帹鑽愪弗鏍奸殧绂汇€侺LM 涓嶇洿鎺ュ仛鐢熶骇鍐崇瓥锛屽叾绋冲畾琛屼负琚捀棣忎负鐗堟湰鍖栫‘瀹氭€ц鍒欑敤浜庣敓浜ф墽琛岋紝LLM 瑙掕壊闅忚鍒欑Н绱€愭缂╁皬銆傛牳蹇冨師鍒欙細涓婁笅鏂囨瘮鎻愮ず璇嶆洿閲嶈銆佽В鑰﹁瘎浼颁笌浼樺寲銆佸皢绋冲畾琛屼负瑙勫垯鍖栥€?,"Meta 鍦?Privacy-Aware Infrastructure (PAI) 鐨勮祫浜у垎绫讳腑閲囩敤娣峰悎妯″紡锛氬厛鏋勫缓鍚唬鐮併€佽缂樸€佽涔夋爣娉ㄧ殑涓婁笅鏂囪瘉鎹紝鍐嶈皟鐢?LLM 澶勭悊姝т箟銆佸喎鍚姩鍜屾柊棰栬祫浜э紱浜哄伐瀹℃牳鏍囩涓庢ā鍨嬫帹鑽愪弗鏍奸殧绂汇€?]}
+- key_excerpts: []
+- evidence_seed: {}
 - missing_information: 璇佹嵁瀵硅薄涓嶅彲鐢細鐤戜技绱㈠紩椤点€佺洰褰曢〉銆佽杽鏂囨湰鎴栭潪鍙敤璇佹嵁瀵硅薄锛涙病鏈夋娴嬪埌鏄庣‘鍔ㄤ綔璇嶏紱鍙綔涓鸿瘖鏂俊鎭紝涓嶈兘鍗曠嫭闃绘柇閲嶈瑙傜偣銆佹枃绔犳垨鎶€鏈秼鍔匡紱鐤戜技瀹樼綉棣栭〉銆佷骇鍝佺洰褰曟垨瀵艰埅椤碉紝鍙兘绱㈠紩鐣欏瓨锛涙病鏈夊叿浣撳鎴锋垨鐪熷疄浼佷笟妗堜緥锛涙病鏈夊彉鍖栧墠鍚庢祦绋嬬嚎绱紱娌℃湁鎴愭湰銆佹敹鍏ャ€侀噰鐢ㄧ巼鎴栧競鍦鸿妯℃暟瀛楋紱娌℃湁鍙敤鍏ㄦ枃蹇収
 - 鍏ユ睜鐞嗙敱锛氬叿澶囨棭鏈熷彉鍖栥€佺敤鎴峰弽棣堟垨瑙傚療浠峰€硷紝浣嗚繘鍏ュ墠鍙板垽鏂墠浠嶉渶琛ヨ冻鍘熸枃銆侀〉闈㈢被鍨嬪拰浜嬩欢璇佹嵁銆?- 娣樻卑椋庨櫓锛氫粛闇€鎵撳紑鍘熷 URL锛岀‘璁ゆ槸鍚﹀瓨鍦ㄥ鎴枫€佷骇鍝併€佽瀺璧勩€佹妧鏈矾绾挎垨鏁版嵁鏉ユ簮銆?

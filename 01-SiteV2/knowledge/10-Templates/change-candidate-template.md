@@ -7,8 +7,8 @@ status: draft
 asset_level: candidate
 evidence_gate: threshold_pending
 fact_draft_gate: pending
-frontend_copy_gate: not_applicable
-cardcopy_gate: pending
+source_evidence_gate: pending
+candidate_regression_gate: pending
 
 supporting_signal_refs: []
 supporting_case_refs: []

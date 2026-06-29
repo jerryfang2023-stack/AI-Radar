@@ -12,7 +12,7 @@ const lakeDir = path.join(root, "data-lake");
 const tablesDir = path.join(lakeDir, "tables");
 const dbPath = path.join(lakeDir, "wavesight.duckdb");
 
-const mojibakePattern = /(?:锛|鈥|鎴|鏄|涓|瀹|绾|鐨|鍙|闇|€|�)/gu;
+const mojibakePattern = /(?:锛|鈥|鎴|鏄|涓|瀹|绾|鐨|鍙|闇|€|\ufffd)/gu;
 
 function rel(file) {
   return path.relative(root, file).replace(/\\/g, "/");

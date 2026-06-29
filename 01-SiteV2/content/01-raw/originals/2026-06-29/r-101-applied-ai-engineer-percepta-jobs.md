@@ -1,0 +1,195 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-101
+title: "Applied AI Engineer @ Percepta - Jobs"
+original_url: "https://jobs.ashbyhq.com/percepta/bbfe8035-2364-419b-bb36-500aaa542fb2"
+canonical_url: "https://jobs.ashbyhq.com/percepta/bbfe8035-2364-419b-bb36-500aaa542fb2"
+source_name: "keyword search / Exa"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-06-29T05:41:18.388Z
+language: mixed
+full_text_hash: 592f5f75f6781111
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-101-applied-ai-engineer-percepta-jobs.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-101-applied-ai-engineer-percepta-jobs.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 71
+extractor_diagnostics: {"readability_score":71,"text_length":14043,"paragraph_count":2,"sentence_count":46,"boilerplate_hits":0,"symbol_ratio":0.0594,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+has_full_text: true
+content_length: 14043
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"592f5f75f6781111","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: d5f72a7d7cd245a6
+content_hash: 592f5f75f6781111
+semantic_hash: ab0f270c1ef60ea9
+duplicate_of: ""
+first_seen_at: "2026-06-29T05:41:18.388Z"
+last_seen_at: 2026-06-29T05:41:18.388Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"trend_candidate_context":true,"signal_card_candidate":true,"relationship_graph_input":true,"business_change":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":4,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Exa","Anthropic","AWS"],"products":["agents","Agents"],"people":[],"industries":["医疗","制造 / 工业","开发者工具"],"roles":["开发者 / 工程团队"],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["2","1.5","9","5"],"quotes":["min-height:1.5em","min-height:1.5em","min-height:1.5em","min-height:1.5em","min-height:1.5em"]}
+evidence_seed: {"company_actions":["Applied AI Engineer @ Percepta Applied AI Engineer @ Percepta","<h2><strong>Who we are</strong></h2><p style=\"min-height:1.","5em\">Percepta’s mission is to <strong>transform critical institutions with applied AI."],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"company_action","text":"Applied AI Engineer @ Percepta Applied AI Engineer @ Percepta","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"<h2><strong>Who we are</strong></h2><p style=\"min-height:1.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"5em\"></p><p style=\"min-height:1.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"5em\">Percepta’s mission is to <strong>transform critical institutions with applied AI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"</strong> We care that industries that power the world (e.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"healthcare, manufacturing, energy) benefit from frontier technology.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# Applied AI Engineer @ Percepta - Jobs
+
+## clean_text
+
+<h2><strong>Who we are</strong></h2><p style="min-height:1.5em"></p><p style="min-height:1.5em">Percepta’s mission is to <strong>transform critical institutions with applied AI.</strong> We care that industries that power the world (e.g. healthcare, manufacturing, energy) benefit from frontier technology. </p><p style="min-height:1.5em">To make that happen, we embed with industry-leading customers to drive AI transformation. We bring together:</p><ul style="min-height:1.5em"><li><p style="min-height:1.5em">Forward-deployed expertise in engineering, product, and research</p></li><li><p style="min-height:1.5em">Mosaic, our in-house toolkit for rapidly deploying agentic workflows</p></li><li><p style="min-height:1.5em">Strategic partnerships with Anthropic, McKinsey, AWS, companies within the General Catalyst portfolio, and more</p></li></ul><p style="min-height:1.5em">Our team is a quickly growing group of Applied AI Engineers, Embedded Product Managers and Researchers motivated by diffusing the promise of AI into improvements we can feel in our day to day lives. </p><p style="min-height:1.5em">Percepta is a direct partnership with General Catalyst, a global transformation and investment company.</p><p style="min-height:1.5em"></p><h2><strong>About the role</strong></h2><p style="min-height:1.5em"></p><p style="min-height:1.5em">We’re hiring <strong>Applied AI Engineers</strong> who will work directly with customer executives, operators, and technical teams to define and deliver high-impact AI systems. We don't build prototypes or laboratory projects- you’ll design, build, and ship production-grade AI agents and workflows that drive millions in business value for customers.</p><p style="min-height:1.5em"></p><p style="min-height:1.5em">Our Applied AI Engineers:</p><ul style="min-height:1.5em"><li><p style="min-height:1.5em"><strong>Shape the AI vision</strong>: Collaborate with customer stakeholders to define their long-term AI strategy and transformation roadmap.</p></li><li><p style="min-height:1.5em"><strong>Identify high-leverage use cases</strong>: Work backwards from the long-term vision to surface and prioritize specific AI applications that connect our ambition to measurable business value.</p></li><li><p style="min-height:1.5em"><strong>Ship real products</strong>: Rapidly build and deploy AI solutions that work in the wild, with real users and real data. </p></li><li><p style="min-height:1.5em"><strong>Advance our core product</strong>: Encode the lessons from our customer engagements in our Mosaic product, consistently contributing new features, patterns, and abstractions.</p></li></ul><p style="min-height:1.5em"></p><h2><strong>What we’re looking for</strong></h2><p style="min-height:1.5em"></p><ul style="min-height:1.5em"><li><p style="min-height:1.5em"><strong>AI-nativeness</strong><a target="_blank" rel="noopener noreferrer nofollow" href="https://challenge.percepta.ai"><strong>:</strong></a> You're excited about the potential for AI to transform businesses and want to play a hands-on role in bringing frontier technology into critical institutions.</p></li><li><p style="min-height:1.5em"><strong>Being generative and collaborative:</strong> You love constantly jamming on new “what if” ideas with teammates and partners.</p></li><li><p style="min-height:1.5em"><strong>Extreme ownership</strong>: You’re willing to jump in and love being the one on the hook. You aren’t going to wait to be pointed at a task—you’re going to identify what you think we should do next, and then do it.</p></li><li><p style="min-height:1.5em"><strong>Execution excellence and speed</strong>: You can build stuff in messy environments and know how to get code written and shipped quickly. You can hold the balance of speed and quality and know when to push the pace vs. when to slow down.</p></li><li><p style="min-height:1.5em"><strong>Customer-obsession and respect</strong>: You’re motivated by understanding customer pain points and iterating directly with end users to deliver wins quickly.</p></li></ul><p style="min-height:1.5em"></p><h2><strong>Bonus if you have</strong></h2><p style="min-height:1.5em"></p><ul style="min-height:1.5em"><li><p style="min-height:1.5em">Hands-on experience with <strong>LLM tooling</strong> (LangGraph, Mastra, Agents SDK, etc).</p></li><li><p style="min-height:1.5em">Built and deployed <strong>production LLM-powered systems</strong> (tool use, RAG pipelines, multi-step agents, human-in-the-loop, etc).</p></li><li><p style="min-height:1.5em">Strong technical foundations in Python/TypeScript, cloud deployment (AWS/GCP/Azure) and DevOps tooling.</p></li><li><p style="min-height:1.5em">Prior startup or <strong>founding engineer</strong> experience, balancing craft, ownership, and speed.</p></li></ul><p style="min-height:1.5em"></p><p style="min-height:1.5em">We’re working against an incredibly ambitious mission. It won’t be easy, but it will likely be the most fulfilling work of your career. If this excites you, let's chat, even if you don't meet all of the qualifications above.</p><p style="min-height:1.5em"></p><h2><strong>Our Values</strong></h2><p style="min-height:1.5em"><strong>Dream bigger:</strong> We have the unique privilege of taking on the most ambitious problems and we should chase them with optimism, responsibility, and genuine belief that we can make it happen. We have to embrace the hard things when no one else will.<br /><br /><strong>Heart in the game:</strong> What we're doing matters and we have to give a shit. Internally, that means fixing badness when you find it. Externally, it means honoring the trust our customers place in us with their most important problems. This isn’t a 9-5, nor is it a job we’re ever going to monitor your hours. We promise to put work in front of you that matters and in return, we ask you to promise to care.<br /><br /><strong>Win for the customer:</strong> Everyone is an engineer and the job of an engineer is to deliver outcomes, not outputs. Everything we do—the products we build, the partnerships we launch, the strategy we set—exists to make our customers successful. Delivery is the strategy.<br /><br /><strong>Make the call:</strong> Organizations are only as strong as the pace at which they make decisions. Everyone at Percepta should feel empowered to commit and shape the ambiguity in front of them. But "make the call" cuts both ways: make the decision <em>and</em> make the phone call. High-agency decision-making only works with high-bandwidth communication and we commit to never operate in silos.<br /><br /><strong>Intensity with kindness:</strong> We believe in excellence in execution, candor in feedback, ruthlessness in prioritization, and survivalist urgency. We also believe you don't need to be an asshole to deliver on any of this. The trust built through shared kindness and vulnerability is what makes the intensity sustainable.</p><p style="min-height:1.5em"></p><p style="min-height:1.5em"></p><p style="min-height:1.5em"></p>
+<h2><strong>Who we are</strong></h2><p style="min-height:1.5em"></p><p style="min-height:1.5em">Percepta’s mission is to <strong>transform critical institutions with applied AI.</strong> We care that industries that power the world (e.g. healthcare, manufacturing, energy) benefit from frontier technology. </p><p style="min-height:1.5em">To make that happen, we embed with industry-leading customers to drive AI transformation. We bring together:</p><ul style="min-height:1.5em"><li><p style="min-height:1.5em">Forward-deployed expertise in engineering, product, and research</p></li><li><p style="min-height:1.5em">Mosaic, our in-house toolkit for rapidly deploying agentic workflows</p></li><li><p style="min-height:1.5em">Strategic partnerships with Anthropic, McKinsey, AWS, companies within the General Catalyst portfolio, and more</p></li></ul><p style="min-height:1.5em">Our team is a quickly growing group of Applied AI Engineers, Embedded Product Managers and Researchers motivated by diffusing the promise of AI into improvements we can feel in our day to day lives. </p><p style="min-height:1.5em">Percepta is a direct partnership with General Catalyst, a global transformation and investment company.</p><p style="min-height:1.5em"></p><h2><strong>About the role</strong></h2><p style="min-height:1.5em"></p><p style="min-height:1.5em">We’re hiring <strong>Applied AI Engineers</strong> who will work directly with customer executives, operators, and technical teams to define and deliver high-impact AI systems. We don't build prototypes or laboratory projects- you’ll design, build, and ship production-grade AI agents and workflows that drive millions in business value for customers.</p><p style="min-height:1.5em"></p><p style="min-height:1.5em">Our Applied AI Engineers:</p><ul style="min-height:1.5em"><li><p style="min-height:1.5em"><strong>Shape the AI vision</strong>: Collaborate with customer stakeholders to define their long-term AI strategy and transformation roadmap.</p></li><li><p style="min-height:1.5em"><strong>Identify high-leverage use cases</strong>: Work backwards from the long-term vision to surface and prioritize specific AI applications that connect our ambition to measurable business value.</p></li><li><p style="min-height:1.5em"><strong>Ship real products</strong>: Rapidly build and deploy AI solutions that work in the wild, with real users and real data. </p></li><li><p style="min-height:1.5em"><strong>Advance our core product</strong>: Encode the lessons from our customer engagements in our Mosaic product, consistently contributing new features, patterns, and abstractions.</p></li></ul><p style="min-height:1.5em"></p><h2><strong>What we’re looking for</strong></h2><p style="min-height:1.5em"></p><ul style="min-height:1.5em"><li><p style="min-height:1.5em"><strong>AI-nativeness</strong><a target="_blank" rel="noopener noreferrer nofollow" href="https://challenge.percepta.ai"><strong>:</strong></a> You're excited about the potential for AI to transform businesses and want to play a hands-on role in bringing frontier technology into critical institutions.</p></li><li><p style="min-height:1.5em"><strong>Being generative and collaborative:</strong> You love constantly jamming on new “what if” ideas with teammates and partners.</p></li><li><p style="min-height:1.5em"><strong>Extreme ownership</strong>: You’re willing to jump in and love being the one on the hook. You aren’t going to wait to be pointed at a task—you’re going to identify what you think we should do next, and then do it.</p></li><li><p style="min-height:1.5em"><strong>Execution excellence and speed</strong>: You can build stuff in messy environments and know how to get code written and shipped quickly. You can hold the balance of speed and quality and know when to push the pace vs. when to slow down.</p></li><li><p style="min-height:1.5em"><strong>Customer-obsession and respect</strong>: You’re motivated by understanding customer pain points and iterating directly with end users to deliver wins quickly.</p></li></ul><p style="min-height:1.5em"></p><h2><strong>Bonus if you have</strong></h2><p style="min-height:1.5em"></p><ul style="min-height:1.5em"><li><p style="min-height:1.5em">Hands-on experience with <strong>LLM tooling</strong> (LangGraph, Mastra, Agents SDK, etc).</p></li><li><p style="min-height:1.5em">Built and deployed <strong>production LLM-powered systems</strong> (tool use, RAG pipelines, multi-step agents, human-in-the-loop, etc).</p></li><li><p style="min-height:1.5em">Strong technical foundations in Python/TypeScript, cloud deployment (AWS/GCP/Azure) and DevOps tooling.</p></li><li><p style="min-height:1.5em">Prior startup or <strong>founding engineer</strong> experience, balancing craft, ownership, and speed.</p></li></ul><p style="min-height:1.5em"></p><p style="min-height:1.5em">We’re working against an incredibly ambitious mission. It won’t be easy, but it will likely be the most fulfilling work of your career. If this excites you, let's chat, even if you don't meet all of the qualifications above.</p><p style="min-height:1.5em"></p><h2><strong>Our Values</strong></h2><p style="min-height:1.5em"><strong>Dream bigger:</strong> We have the unique privilege of taking on the most ambitious problems and we should chase them with optimism, responsibility, and genuine belief that we can make it happen. We have to embrace the hard things when no one else will.<br /><br /><strong>Heart in the game:</strong> What we're doing matters and we have to give a shit. Internally, that means fixing badness when you find it. Externally, it means honoring the trust our customers place in us with their most important problems. This isn’t a 9-5, nor is it a job we’re ever going to monitor your hours. We promise to put work in front of you that matters and in return, we ask you to promise to care.<br /><br /><strong>Win for the customer:</strong> Everyone is an engineer and the job of an engineer is to deliver outcomes, not outputs. Everything we do—the products we build, the partnerships we launch, the strategy we set—exists to make our customers successful. Delivery is the strategy.<br /><br /><strong>Make the call:</strong> Organizations are only as strong as the pace at which they make decisions. Everyone at Percepta should feel empowered to commit and shape the ambiguity in front of them. But "make the call" cuts both ways: make the decision <em>and</em> make the phone call. High-agency decision-making only works with high-bandwidth communication and we commit to never operate in silos.<br /><br /><strong>Intensity with kindness:</strong> We believe in excellence in execution, candor in feedback, ruthlessness in prioritization, and survivalist urgency. We also believe you don't need to be an asshole to deliver on any of this. The trust built through shared kindness and vulnerability is what makes the intensity sustainable.</p><p style="min-height:1.5em"></p><p style="min-height:1.5em"></p><p style="min-height:1.5em"></p>
+
+## full_text
+
+<h2><strong>Who we are</strong></h2><p style="min-height:1.5em"></p><p style="min-height:1.5em">Percepta’s mission is to <strong>transform critical institutions with applied AI.</strong> We care that industries that power the world (e.g. healthcare, manufacturing, energy) benefit from frontier technology. </p><p style="min-height:1.5em">To make that happen, we embed with industry-leading customers to drive AI transformation. We bring together:</p><ul style="min-height:1.5em"><li><p style="min-height:1.5em">Forward-deployed expertise in engineering, product, and research</p></li><li><p style="min-height:1.5em">Mosaic, our in-house toolkit for rapidly deploying agentic workflows</p></li><li><p style="min-height:1.5em">Strategic partnerships with Anthropic, McKinsey, AWS, companies within the General Catalyst portfolio, and more</p></li></ul><p style="min-height:1.5em">Our team is a quickly growing group of Applied AI Engineers, Embedded Product Managers and Researchers motivated by diffusing the promise of AI into improvements we can feel in our day to day lives. </p><p style="min-height:1.5em">Percepta is a direct partnership with General Catalyst, a global transformation and investment company.</p><p style="min-height:1.5em"></p><h2><strong>About the role</strong></h2><p style="min-height:1.5em"></p><p style="min-height:1.5em">We’re hiring <strong>Applied AI Engineers</strong> who will work directly with customer executives, operators, and technical teams to define and deliver high-impact AI systems. We don't build prototypes or laboratory projects- you’ll design, build, and ship production-grade AI agents and workflows that drive millions in business value for customers.</p><p style="min-height:1.5em"></p><p style="min-height:1.5em">Our Applied AI Engineers:</p><ul style="min-height:1.5em"><li><p style="min-height:1.5em"><strong>Shape the AI vision</strong>: Collaborate with customer stakeholders to define their long-term AI strategy and transformation roadmap.</p></li><li><p style="min-height:1.5em"><strong>Identify high-leverage use cases</strong>: Work backwards from the long-term vision to surface and prioritize specific AI applications that connect our ambition to measurable business value.</p></li><li><p style="min-height:1.5em"><strong>Ship real products</strong>: Rapidly build and deploy AI solutions that work in the wild, with real users and real data. </p></li><li><p style="min-height:1.5em"><strong>Advance our core product</strong>: Encode the lessons from our customer engagements in our Mosaic product, consistently contributing new features, patterns, and abstractions.</p></li></ul><p style="min-height:1.5em"></p><h2><strong>What we’re looking for</strong></h2><p style="min-height:1.5em"></p><ul style="min-height:1.5em"><li><p style="min-height:1.5em"><strong>AI-nativeness</strong><a target="_blank" rel="noopener noreferrer nofollow" href="https://challenge.percepta.ai"><strong>:</strong></a> You're excited about the potential for AI to transform businesses and want to play a hands-on role in bringing frontier technology into critical institutions.</p></li><li><p style="min-height:1.5em"><strong>Being generative and collaborative:</strong> You love constantly jamming on new “what if” ideas with teammates and partners.</p></li><li><p style="min-height:1.5em"><strong>Extreme ownership</strong>: You’re willing to jump in and love being the one on the hook. You aren’t going to wait to be pointed at a task—you’re going to identify what you think we should do next, and then do it.</p></li><li><p style="min-height:1.5em"><strong>Execution excellence and speed</strong>: You can build stuff in messy environments and know how to get code written and shipped quickly. You can hold the balance of speed and quality and know when to push the pace vs. when to slow down.</p></li><li><p style="min-height:1.5em"><strong>Customer-obsession and respect</strong>: You’re motivated by understanding customer pain points and iterating directly with end users to deliver wins quickly.</p></li></ul><p style="min-height:1.5em"></p><h2><strong>Bonus if you have</strong></h2><p style="min-height:1.5em"></p><ul style="min-height:1.5em"><li><p style="min-height:1.5em">Hands-on experience with <strong>LLM tooling</strong> (LangGraph, Mastra, Agents SDK, etc).</p></li><li><p style="min-height:1.5em">Built and deployed <strong>production LLM-powered systems</strong> (tool use, RAG pipelines, multi-step agents, human-in-the-loop, etc).</p></li><li><p style="min-height:1.5em">Strong technical foundations in Python/TypeScript, cloud deployment (AWS/GCP/Azure) and DevOps tooling.</p></li><li><p style="min-height:1.5em">Prior startup or <strong>founding engineer</strong> experience, balancing craft, ownership, and speed.</p></li></ul><p style="min-height:1.5em"></p><p style="min-height:1.5em">We’re working against an incredibly ambitious mission. It won’t be easy, but it will likely be the most fulfilling work of your career. If this excites you, let's chat, even if you don't meet all of the qualifications above.</p><p style="min-height:1.5em"></p><h2><strong>Our Values</strong></h2><p style="min-height:1.5em"><strong>Dream bigger:</strong> We have the unique privilege of taking on the most ambitious problems and we should chase them with optimism, responsibility, and genuine belief that we can make it happen. We have to embrace the hard things when no one else will.<br /><br /><strong>Heart in the game:</strong> What we're doing matters and we have to give a shit. Internally, that means fixing badness when you find it. Externally, it means honoring the trust our customers place in us with their most important problems. This isn’t a 9-5, nor is it a job we’re ever going to monitor your hours. We promise to put work in front of you that matters and in return, we ask you to promise to care.<br /><br /><strong>Win for the customer:</strong> Everyone is an engineer and the job of an engineer is to deliver outcomes, not outputs. Everything we do—the products we build, the partnerships we launch, the strategy we set—exists to make our customers successful. Delivery is the strategy.<br /><br /><strong>Make the call:</strong> Organizations are only as strong as the pace at which they make decisions. Everyone at Percepta should feel empowered to commit and shape the ambiguity in front of them. But "make the call" cuts both ways: make the decision <em>and</em> make the phone call. High-agency decision-making only works with high-bandwidth communication and we commit to never operate in silos.<br /><br /><strong>Intensity with kindness:</strong> We believe in excellence in execution, candor in feedback, ruthlessness in prioritization, and survivalist urgency. We also believe you don't need to be an asshole to deliver on any of this. The trust built through shared kindness and vulnerability is what makes the intensity sustainable.</p><p style="min-height:1.5em"></p><p style="min-height:1.5em"></p><p style="min-height:1.5em"></p>
+<h2><strong>Who we are</strong></h2><p style="min-height:1.5em"></p><p style="min-height:1.5em">Percepta’s mission is to <strong>transform critical institutions with applied AI.</strong> We care that industries that power the world (e.g. healthcare, manufacturing, energy) benefit from frontier technology. </p><p style="min-height:1.5em">To make that happen, we embed with industry-leading customers to drive AI transformation. We bring together:</p><ul style="min-height:1.5em"><li><p style="min-height:1.5em">Forward-deployed expertise in engineering, product, and research</p></li><li><p style="min-height:1.5em">Mosaic, our in-house toolkit for rapidly deploying agentic workflows</p></li><li><p style="min-height:1.5em">Strategic partnerships with Anthropic, McKinsey, AWS, companies within the General Catalyst portfolio, and more</p></li></ul><p style="min-height:1.5em">Our team is a quickly growing group of Applied AI Engineers, Embedded Product Managers and Researchers motivated by diffusing the promise of AI into improvements we can feel in our day to day lives. </p><p style="min-height:1.5em">Percepta is a direct partnership with General Catalyst, a global transformation and investment company.</p><p style="min-height:1.5em"></p><h2><strong>About the role</strong></h2><p style="min-height:1.5em"></p><p style="min-height:1.5em">We’re hiring <strong>Applied AI Engineers</strong> who will work directly with customer executives, operators, and technical teams to define and deliver high-impact AI systems. We don't build prototypes or laboratory projects- you’ll design, build, and ship production-grade AI agents and workflows that drive millions in business value for customers.</p><p style="min-height:1.5em"></p><p style="min-height:1.5em">Our Applied AI Engineers:</p><ul style="min-height:1.5em"><li><p style="min-height:1.5em"><strong>Shape the AI vision</strong>: Collaborate with customer stakeholders to define their long-term AI strategy and transformation roadmap.</p></li><li><p style="min-height:1.5em"><strong>Identify high-leverage use cases</strong>: Work backwards from the long-term vision to surface and prioritize specific AI applications that connect our ambition to measurable business value.</p></li><li><p style="min-height:1.5em"><strong>Ship real products</strong>: Rapidly build and deploy AI solutions that work in the wild, with real users and real data. </p></li><li><p style="min-height:1.5em"><strong>Advance our core product</strong>: Encode the lessons from our customer engagements in our Mosaic product, consistently contributing new features, patterns, and abstractions.</p></li></ul><p style="min-height:1.5em"></p><h2><strong>What we’re looking for</strong></h2><p style="min-height:1.5em"></p><ul style="min-height:1.5em"><li><p style="min-height:1.5em"><strong>AI-nativeness</strong><a target="_blank" rel="noopener noreferrer nofollow" href="https://challenge.percepta.ai"><strong>:</strong></a> You're excited about the potential for AI to transform businesses and want to play a hands-on role in bringing frontier technology into critical institutions.</p></li><li><p style="min-height:1.5em"><strong>Being generative and collaborative:</strong> You love constantly jamming on new “what if” ideas with teammates and partners.</p></li><li><p style="min-height:1.5em"><strong>Extreme ownership</strong>: You’re willing to jump in and love being the one on the hook. You aren’t going to wait to be pointed at a task—you’re going to identify what you think we should do next, and then do it.</p></li><li><p style="min-height:1.5em"><strong>Execution excellence and speed</strong>: You can build stuff in messy environments and know how to get code written and shipped quickly. You can hold the balance of speed and quality and know when to push the pace vs. when to slow down.</p></li><li><p style="min-height:1.5em"><strong>Customer-obsession and respect</strong>: You’re motivated by understanding customer pain points and iterating directly with end users to deliver wins quickly.</p></li></ul><p style="min-height:1.5em"></p><h2><strong>Bonus if you have</strong></h2><p style="min-height:1.5em"></p><ul style="min-height:1.5em"><li><p style="min-height:1.5em">Hands-on experience with <strong>LLM tooling</strong> (LangGraph, Mastra, Agents SDK, etc).</p></li><li><p style="min-height:1.5em">Built and deployed <strong>production LLM-powered systems</strong> (tool use, RAG pipelines, multi-step agents, human-in-the-loop, etc).</p></li><li><p style="min-height:1.5em">Strong technical foundations in Python/TypeScript, cloud deployment (AWS/GCP/Azure) and DevOps tooling.</p></li><li><p style="min-height:1.5em">Prior startup or <strong>founding engineer</strong> experience, balancing craft, ownership, and speed.</p></li></ul><p style="min-height:1.5em"></p><p style="min-height:1.5em">We’re working against an incredibly ambitious mission. It won’t be easy, but it will likely be the most fulfilling work of your career. If this excites you, let's chat, even if you don't meet all of the qualifications above.</p><p style="min-height:1.5em"></p><h2><strong>Our Values</strong></h2><p style="min-height:1.5em"><strong>Dream bigger:</strong> We have the unique privilege of taking on the most ambitious problems and we should chase them with optimism, responsibility, and genuine belief that we can make it happen. We have to embrace the hard things when no one else will.<br /><br /><strong>Heart in the game:</strong> What we're doing matters and we have to give a shit. Internally, that means fixing badness when you find it. Externally, it means honoring the trust our customers place in us with their most important problems. This isn’t a 9-5, nor is it a job we’re ever going to monitor your hours. We promise to put work in front of you that matters and in return, we ask you to promise to care.<br /><br /><strong>Win for the customer:</strong> Everyone is an engineer and the job of an engineer is to deliver outcomes, not outputs. Everything we do—the products we build, the partnerships we launch, the strategy we set—exists to make our customers successful. Delivery is the strategy.<br /><br /><strong>Make the call:</strong> Organizations are only as strong as the pace at which they make decisions. Everyone at Percepta should feel empowered to commit and shape the ambiguity in front of them. But "make the call" cuts both ways: make the decision <em>and</em> make the phone call. High-agency decision-making only works with high-bandwidth communication and we commit to never operate in silos.<br /><br /><strong>Intensity with kindness:</strong> We believe in excellence in execution, candor in feedback, ruthlessness in prioritization, and survivalist urgency. We also believe you don't need to be an asshole to deliver on any of this. The trust built through shared kindness and vulnerability is what makes the intensity sustainable.</p><p style="min-height:1.5em"></p><p style="min-height:1.5em"></p><p style="min-height:1.5em"></p>
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 71
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":71,"text_length":14043,"paragraph_count":2,"sentence_count":46,"boilerplate_hits":0,"symbol_ratio":0.0594,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Applied AI Engineer @ Percepta Applied AI Engineer @ Percepta
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   <h2><strong>Who we are</strong></h2><p style="min-height:1.
+
+3. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   5em"></p><p style="min-height:1.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   5em">Percepta’s mission is to <strong>transform critical institutions with applied AI.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   </strong> We care that industries that power the world (e.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   healthcare, manufacturing, energy) benefit from frontier technology.
+
+## business_elements
+
+- companies: keyword search, Exa, Anthropic, AWS
+- products: agents, Agents
+- people: 暂无公开信息
+- industries: 医疗, 制造 / 工业, 开发者工具
+- roles: 开发者 / 工程团队
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 2, 1.5, 9, 5
+- quotes: min-height:1.5em / min-height:1.5em / min-height:1.5em / min-height:1.5em / min-height:1.5em
+
+## evidence_seed
+
+- company_actions: Applied AI Engineer @ Percepta Applied AI Engineer @ Percepta / <h2><strong>Who we are</strong></h2><p style="min-height:1. / 5em">Percepta’s mission is to <strong>transform critical institutions with applied AI.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- signal_card_candidate: true
+- relationship_graph_input: true
+- business_change: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Applied AI Engineer @ Percepta Applied AI Engineer @ Percepta
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 social_discovery 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

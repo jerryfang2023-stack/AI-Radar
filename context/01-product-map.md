@@ -89,10 +89,4 @@ A Card can enter the frontstage only when it has:
 
 ## Retired Outputs
 
-The following are not current V3.3 production goals:
-
-- daily observation;
-- trend report;
-- business brief / internal reference;
-- old four-column V2 website pages;
-- opinion sidebar mixed into business signals.
+Legacy content-output routes, old four-column V2 website pages, and old opinion sidebar logic are not current V3.3 production goals.

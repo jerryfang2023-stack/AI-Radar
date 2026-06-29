@@ -2,7 +2,7 @@
   "schema_version": "v3.3.1-keyword-monitoring-1.0",
   "updated_at": "2026-06-17-enterprise-ai-transformation",
   "owner": "Intelligence Engine Agent",
-  "purpose": "Executable keyword and importance-type monitoring config for WaveSight AI V3.3.1 Raw / Pool / business-signal generation. It prioritizes original evidence, source diversity, vertical cases, startup funding, customer adoption, industry landing, and the 企业AI化 monitoring lens for FDE-style implementation signals. Opinion-source viewpoints remain paused and excluded from business-signal generation.",
+  "purpose": "Executable keyword and importance-type monitoring config for WaveSight AI V3.3 Raw / Pool / business-signal generation. It prioritizes original evidence, source diversity, vertical cases, startup funding, customer adoption, industry landing, and the 企业AI化 monitoring lens for FDE-style implementation signals. Viewpoint sources remain isolated from business-signal fact generation.",
   "policy": {
     "raw_max_theme_share": 0.35,
     "pool_max_theme_share": 0.4,
@@ -14,9 +14,11 @@
     "required_importance_types": [
       "important_case",
       "important_funding",
-      "important_technical_trend",
       "important_product_or_service",
       "important_vertical_solution"
+    ],
+    "context_importance_types": [
+      "important_technical_trend"
     ],
     "raw_min_per_required_importance_type": 3,
     "pool_min_per_required_importance_type": 5,
@@ -39,12 +41,14 @@
     "keyword_search_non_community_required": true,
     "keyword_search_community_only_policy": "HN/Reddit/X/community discussion is feedback only. It must not dominate keyword-search results. Prioritize overseas big-company events, vertical product news, startup/funding news, customer adoption, industry landing, developer ecosystem, procurement, regulation and counter-evidence.",
     "anti_big_company_bias_rule": "Business signals must not be filled only with big-company product news. Every daily monitor run must actively search vertical cases, customer adoption, non-big-tech product deployments, and small / mid-size company financing. If those lanes are thin, record a coverage gap instead of padding with big-company releases.",
-    "frontstage_selected_change_target_mix": {
+    "frontstage_selected_formal_card_target_mix": {
       "important_case": "2+",
       "important_funding": "2+",
       "important_vertical_solution": "2+",
-      "important_product_or_service": "0-4, and not more than 45% of frontstage business signals unless other lanes have no eligible original evidence",
-      "important_technical_trend": "0-2"
+      "important_product_or_service": "0-4, and not more than 45% of frontstage business signals unless other lanes have no eligible original evidence"
+    },
+    "context_signal_target_mix": {
+      "important_technical_trend": "0-2 context items only; not a formal Card quota"
     },
     "warning_threshold_share": 0.4,
     "lane_based_raw_monitoring": true,
@@ -106,7 +110,7 @@
       "important card candidates lack original text or event/change evidence",
       "AI HOT origin fetch fails or only produces discovery_only / weak_signal text"
     ],
-    "important_card_backfill_rule": "V3.3 Signal Card assets and frontstage facts must resolve original Raw evidence. B sources with original text do not require mandatory S/A backfill. C/M discovery can trigger watchlist, heatmap or user-feedback pools but cannot stand alone as company-fact evidence.",
+    "important_card_backfill_rule": "V3.3 Signal Card assets and frontstage facts must resolve original Raw evidence. B sources with original text do not require mandatory S/A backfill. C/M discovery can trigger watchlist, trend-candidate context or user-feedback pools but cannot stand alone as company-fact evidence.",
     "broad_terms": [
       "Agent",
       "智能体",
@@ -1336,7 +1340,8 @@
         "web",
         "news"
       ],
-      "evidence_role": "discovery_only_until_original_evidence_passes_raw_qc"
+      "evidence_role": "discovery_only_until_original_evidence_passes_raw_qc",
+      "quota_policy": "Try Anysearch when ANYSEARCH_API_KEY is present. If daily free quota is exhausted, disable only for the current run, record the fallback note, and continue with Tavily / Exa / generic fallback. Retry on the next run; do not remove the provider permanently."
     },
     "tavily": {
       "enabled_when_env_present": "TAVILY_API_KEY",

@@ -39,7 +39,8 @@
     "core_raw_qc_degraded_max": 0,
     "core_large_vendor_max": 10,
     "core_large_vendor_ratio_max": 0.35,
-    "core_non_large_vendor_min": 20
+    "core_non_large_vendor_min": 20,
+    "unrecovered_failed_sources_max": 0
   },
   "weekend_release_policy": {
     "enabled": true,
@@ -79,7 +80,7 @@
     ]
   },
   "pool_route_definitions": {
-    "core_pool": "Full evidence candidate only: original URL, readable full text, extraction_method, readability_score>=24, high/medium extraction quality, non-index evidence object, content hash, full text hash, key excerpts, raw_qc_decision=allow, importance_score>=4, and one of the six required importance types.",
+    "core_pool": "Full evidence candidate only: original URL, readable full text, extraction_method, readability_score>=24, high/medium extraction quality, non-index evidence object, content hash, full text hash, key excerpts, raw_qc_decision=allow, importance_score>=4, and one of the four formal business-signal importance types.",
     "emerging_pool": "Trackable early signal with usable evidence but incomplete core proof; may include allow_with_degradation only for follow-up and low-strength observation.",
     "user_feedback_pool": "Community, issue, forum, HN, Reddit or X feedback; proves discussion or friction only, not company facts.",
     "watchlist": "Named subject or direction worth tracking but missing full evidence, snapshot, hash, excerpt, original confirmation or second-source work.",
@@ -90,7 +91,7 @@
     "1": "No core WaveSight importance signal; archive only.",
     "2": "Supporting commercial, risk or adoption context only; cannot enter core_pool.",
     "3": "Plausible signal or viewpoint but lacks concrete event strength, actor specificity, source authority, or downstream relevance.",
-    "4": "Concrete important change in one of the six required importance types with named actor, action, time or usable original evidence.",
+    "4": "Concrete important change in one of the four formal business-signal importance types with named actor, action, time or usable original evidence.",
     "5": "Major platform, frontier lab, large customer, known investor, industry-shaping technical shift, or high-impact market judgment with strong evidence."
   },
   "degradation_route_caps": {
@@ -123,7 +124,7 @@
     "pool_count is used as the only Pool health metric while routed_pool_count or AI HOT index-only split is missing",
     "keyword monitoring path is missing, too thin, or dominated by HN / Reddit / X / community feedback",
     "AI HOT daily or follow-builders selected material is treated as final fact evidence without original-page capture",
-    "any of the five required business-signal importance types is missing from Raw or Pool: important_case, important_funding, important_technical_trend, important_product_or_service, important_vertical_solution",
+    "any of the four required business-signal importance types is missing from Raw or Pool: important_case, important_funding, important_product_or_service, important_vertical_solution; important_technical_trend is context-only and must not fill formal Card quantity",
     "generic search or Bing fallback result enters core_pool without original evidence chain and Raw QC allow",
     "dictionary, translation, pronunciation, HTML tag reference, tutorial, directory, SEO or search-result page enters Raw as downstream-worthy evidence",
     "Core Pool lane quota is force-filled with a weak or non-qualified item instead of reporting an empty lane gap",
@@ -144,11 +145,11 @@
     "required_importance_types": [
       "important_case",
       "important_funding",
-      "important_technical_trend",
       "important_product_or_service",
       "important_vertical_solution"
     ],
     "optional_context_importance_types": [
+      "important_technical_trend",
       "important_viewpoint_or_article"
     ],
     "outside_core_exploration_min_raw": 5,
@@ -199,7 +200,7 @@
       "hn_limit_max": 8
   },
   "layered_search_requirements": {
-    "six_importance_lanes_required_for_raw": true,
+    "four_formal_importance_lanes_required_for_raw": true,
     "core_pool_force_fill_for_empty_lane": false,
     "core_pool_max_per_importance_type": 8,
     "pool_selection_buffer": 20,
@@ -217,6 +218,9 @@
     "raw_min_per_required_importance_type": 3,
     "raw_target_per_required_importance_type": 5,
     "pool_min_per_required_importance_type": 5,
+    "context_importance_types": [
+      "important_technical_trend"
+    ],
     "low_raw_lane_backfill_required": true
   }
 }

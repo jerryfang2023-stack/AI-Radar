@@ -37,9 +37,9 @@ priority: current
 
 ## 文案任务
 
-当前暂停使用观澜前台文案规范与文案门禁。
+当前暂停使用旧前台文案规范与旧文案门禁。
 
-- 不调用 `guanlan-copy-style`、`guanlan-copy-style-qc`、`publiccopy` 或 `cardcopy` 作为发布阻塞门禁。
+- 不调用旧文案 Skill 或旧文案字段作为发布阻塞门禁。
 - 商业信号标题优先使用可追溯原文标题。
 - 前台出现英文标题、摘要或详情内容时，必须翻译为中文后展示。
 - 文案验收以事实准确、来源可追溯、无内部生产语言、无机械改写为准。
@@ -51,7 +51,7 @@ priority: current
 - `guanlan-monitor-quality-gate` 是脚本预闸门，不是最终放行。
 - `guanlan-daily-monitor-qc` 是 Raw / Pool 下游放行闸门。
 - QC 输出 `allow`、`allow_with_degradation` 或 `block`。
-- `block` 时不得运行资产链、今日观察、商业信号、趋势报告或商业内参。
+- `block` 时不得运行资产链、商业信号前台构建、关系图、趋势候选或站点同步。
 
 ## 常用验证
 

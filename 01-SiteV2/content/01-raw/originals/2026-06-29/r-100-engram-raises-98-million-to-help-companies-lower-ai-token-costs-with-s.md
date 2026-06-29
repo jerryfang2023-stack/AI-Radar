@@ -1,0 +1,342 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-100
+title: "Engram raises $98 million to help companies lower AI token costs with smarter memory models - Tech Startups"
+original_url: "https://techstartups.com/2026/06/23/engram-raises-98-million-to-help-companies-lower-ai-token-costs-with-smarter-memory-models/"
+canonical_url: "https://techstartups.com/2026/06/23/engram-raises-98-million-to-help-companies-lower-ai-token-costs-with-smarter-memory-models"
+source_name: "keyword search / Exa"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: ""
+acquisition_channel: gdelt
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-23T13:16:04.000Z"
+collected_at: 2026-06-29T05:41:18.384Z
+language: mixed
+full_text_hash: b830e024197fa7f9
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-100-engram-raises-98-million-to-help-companies-lower-ai-token-costs-with-s.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-06-29/r-100-engram-raises-98-million-to-help-companies-lower-ai-token-costs-with-s.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":6024,"paragraph_count":28,"sentence_count":37,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 6024
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b830e024197fa7f9","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: primary_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 991082b2c38d4b53
+content_hash: b830e024197fa7f9
+semantic_hash: beb39ac78dbec64d
+duplicate_of: ""
+first_seen_at: "2026-06-23T13:16:04.000Z"
+last_seen_at: 2026-06-29T05:41:18.384Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"trend_candidate_context":true,"signal_card_candidate":true,"relationship_graph_input":true,"business_change":true,"emerging_pool":true,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool","emerging_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Exa","OpenAI","Anthropic","Microsoft"],"products":[],"people":[],"industries":["法律 / 法务","金融 / 保险","开发者工具","企业服务"],"roles":["开发者 / 工程团队","法务 / 律师"],"workflows":["计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","法务","财务 / 预算"],"numbers":["$98 million","29","2026","23","985","8","100","13"],"quotes":["learned memory","You’ve got this explosion of data, explosion of cost,","Engram comes in and basically maps out your organization and offers orders of magnitude cheaper output.","genius stranger model.","We’re trying to go beyond this existing notetaking and build this layer of intuition that humans have, and current models don’t,"]}
+evidence_seed: {"company_actions":["# Engram raises $98 million to help companies lower AI token costs with smarter memory models ... AI is getting smarter, but for companies paying to run it, it’s getting a lot more expensive. As businesses look for ways to control rising token costs and curb unchecked AI use by developers, AI startu","Home Executive Interviews Startups Advertise About Trust & Safety Editorial Policy June 29, 2026 Home Executive Interviews Startups Advertise About Trust & Safety Editorial Policy Topics Search Startups Top Startups Startup List Submit Your Startup Tools Free Startup Valuation Calculator Home » Artificial Intelligence Featured Startup Funding Startup Spotlight Startups Tech Startup News Tech Startups Technology News Engram raises $98 million to help companies lower AI token costs with smarter memory models Daniel L","The 8-month-old company, which builds memory models for enterprise AI systems, announced Tuesday that it has raised $98 million from investors including General Catalyst, Kleiner Perkins, Sequoia, and OpenAI co-founder Andrej Karpathy."],"case_details":[],"workflow_changes":["Its pitch is that by helping AI systems remember company-specific workflows, internal knowledge, and recurring tasks more efficiently, businesses can get smarter responses without burning through as many tokens."],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["开发者 / 工程团队","法务 / 律师"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"# Engram raises $98 million to help companies lower AI token costs with smarter memory models ... AI is getting smarter, but for companies paying to run it, it’s getting a lot more expensive. As businesses look for ways to control rising token costs and curb unchecked AI use by developers, AI startu","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"Home Executive Interviews Startups Advertise About Trust & Safety Editorial Policy June 29, 2026 Home Executive Interviews Startups Advertise About Trust & Safety Editorial Policy Topics Search Startups Top Startups Startup List Submit Your Startup Tools Free Startup Valuation Calculator Home » Artificial Intelligence Featured Startup Funding Startup Spotlight Startups Tech Startup News Tech Startups Technology News Engram raises $98 million to help companies lower AI token costs with smarter memory models Daniel L","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"opinion","text":"As businesses look for ways to control rising token costs and curb unchecked AI use by developers, AI startup Engram says it has found an opening.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"},{"type":"funding","text":"The 8-month-old company, which builds memory models for enterprise AI systems, announced Tuesday that it has raised $98 million from investors including General Catalyst, Kleiner Perkins, Sequoia, and OpenAI co-founder Andrej Karpathy.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Engram is betting that one of the biggest problems in enterprise AI isn’t model quality alone, but the cost of giving those models enough context to be useful.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"workflow_change","text":"Its pitch is that by helping AI systems remember company-specific workflows, internal knowledge, and recurring tasks more efficiently, businesses can get smarter responses without burning through as many tokens.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Engram raises $98 million to help companies lower AI token costs with smarter memory models - Tech Startups
+
+## clean_text
+
+Home
+Executive Interviews
+Startups
+Advertise
+About
+Trust & Safety
+Editorial Policy
+June 29, 2026
+Home
+Executive Interviews
+Startups
+Advertise
+About
+Trust & Safety
+Editorial Policy
+Topics
+Search Startups
+Top Startups
+Startup List
+Submit Your Startup
+Tools
+Free Startup Valuation Calculator
+Home » Artificial Intelligence Featured Startup Funding Startup Spotlight Startups Tech Startup News Tech Startups Technology News
+Engram raises $98 million to help companies lower AI token costs with smarter memory models
+Daniel Levi
+Posted On June 23, 2026
+985 Views
+Shares
+Share On Facebook
+Tweet It
+AI is getting smarter, but for companies paying to run it, it’s getting a lot more expensive. As businesses look for ways to control rising token costs and curb unchecked AI use by developers, AI startup Engram says it has found an opening.
+The 8-month-old company, which builds memory models for enterprise AI systems, announced Tuesday that it has raised $98 million from investors including General Catalyst, Kleiner Perkins, Sequoia, and OpenAI co-founder Andrej Karpathy.
+Engram is betting that one of the biggest problems in enterprise AI isn’t model quality alone, but the cost of giving those models enough context to be useful. Its pitch is that by helping AI systems remember company-specific workflows, internal knowledge, and recurring tasks more efficiently, businesses can get smarter responses without burning through as many tokens.
+Engram is going after a problem that is starting to hit large companies where it hurts most: the cost of running AI at scale. Newer models may be more capable than those that came before, but they are hardly cheap. The more context they ingest, the more tokens they burn, and the higher the bill climbs. For businesses trying to roll out AI tools across engineering, legal, and internal knowledge work, that math is becoming harder to ignore.
+Engram Wants to Give Enterprise AI a Better Memory at a Lower Cost
+Engram’s answer is a “learned memory” layer for AI systems . The idea is to give models a better way to remember how a company works, what its teams care about, and how recurring tasks are handled, without forcing them to repeatedly process huge amounts of context from scratch. The startup says that it lets its models anticipate questions, retrieve the right organizational knowledge, and deliver answers using far fewer tokens than general-purpose frontier models.
+The company claims its systems can match or outperform top lab models on some enterprise tasks while using up to 100 times fewer tokens. That is a striking promise in a market where token efficiency is starting to matter almost as much as raw model performance.
+“You’ve got this explosion of data, explosion of cost,” Leigh Marie Braswell, a partner at Kleiner Perkins, said in an interview . “Engram comes in and basically maps out your organization and offers orders of magnitude cheaper output.”
+That pitch has already attracted a surprisingly heavyweight customer list for a startup that is less than a year old. Engram says its clients include Microsoft, Notion, and legal AI startup Harvey. The company has 13 employees and plans to use the new funding for compute and hiring.
+The name Engram comes from neuroscience, where it refers to a trace of memory in the brain. That is not branding by accident. Dan Biderman, the company’s co-founder and CEO, has spent years thinking about memory, first on a deeply personal level and later as an academic obsession.
+Biderman said his fascination started in childhood, when his grandmother began losing her memory. He would try to prompt her to remember small details about him and his siblings, an experience that stayed with him and later shaped his academic path. He went on to pursue a PhD in computational neuroscience at Columbia and later joined Stanford’s AI lab.
+At Stanford, Biderman said he began to see a gap between how powerful AI models appear and how limited they can be once they are deployed in real organizational settings. He calls it the “genius stranger model.” A model may be smart in the abstract, but it still behaves like an outsider if it lacks durable context about the people, processes, and patterns inside a company. Stuffing more context into the prompt can help, but that tends to raise costs and create its own performance tradeoffs.
+Biderman is not arguing that Engram has built a better frontier model than OpenAI or Anthropic. His claim is narrower and more practical. Engram’s models, he said, are built to specialize. That means trading some general-purpose breadth for the ability to learn how a particular organization operates and respond more efficiently inside that environment.
+“We’re trying to go beyond this existing notetaking and build this layer of intuition that humans have, and current models don’t,” Biderman said.
+That idea lands at a moment when companies are becoming more disciplined about how AI is used internally. Over the past year, developers have embraced coding assistants and AI tools with the kind of enthusiasm that tends to show up long before finance teams see the invoice. What comes next is likely a more sober phase of enterprise AI adoption, one where buyers still want the productivity gains but are no longer willing to tolerate open-ended spending.
+If Engram can deliver on its promise, it may have found a timely opening in the market: helping companies retain the benefits of AI without inheriting the full cost structure of frontier-model usage.
+Shares
+Share On Facebook
+Tweet It
+Trending Now
+Top Tech News Today, June 1, 2026
+Nickie Louise
+June 1, 2026
+Top Tech News Today, June 3, 2026
+Nickie Louise
+June 3, 2026
+- Advertisement -
+Read Next
+Top Tech News Today, June 23, 2026
+Apps
+Gaming
+Startups
+Startup Funding
+Tech News
+Cryptocurrency
+Cybersecurity
+Emerging Technologies
+Latest Tech News
+More...
+- Advertisement -
+You are reading
+Engram raises $98 million to help companies lower AI token costs with smarter memory models
+Share
+No Comment
+© Copyright TechStartups.com 2024
+
+## full_text
+
+Home
+Executive Interviews
+Startups
+Advertise
+About
+Trust & Safety
+Editorial Policy
+June 29, 2026
+Home
+Executive Interviews
+Startups
+Advertise
+About
+Trust & Safety
+Editorial Policy
+Topics
+Search Startups
+Top Startups
+Startup List
+Submit Your Startup
+Tools
+Free Startup Valuation Calculator
+Home » Artificial Intelligence Featured Startup Funding Startup Spotlight Startups Tech Startup News Tech Startups Technology News
+Engram raises $98 million to help companies lower AI token costs with smarter memory models
+Daniel Levi
+Posted On June 23, 2026
+985 Views
+Shares
+Share On Facebook
+Tweet It
+AI is getting smarter, but for companies paying to run it, it’s getting a lot more expensive. As businesses look for ways to control rising token costs and curb unchecked AI use by developers, AI startup Engram says it has found an opening.
+The 8-month-old company, which builds memory models for enterprise AI systems, announced Tuesday that it has raised $98 million from investors including General Catalyst, Kleiner Perkins, Sequoia, and OpenAI co-founder Andrej Karpathy.
+Engram is betting that one of the biggest problems in enterprise AI isn’t model quality alone, but the cost of giving those models enough context to be useful. Its pitch is that by helping AI systems remember company-specific workflows, internal knowledge, and recurring tasks more efficiently, businesses can get smarter responses without burning through as many tokens.
+Engram is going after a problem that is starting to hit large companies where it hurts most: the cost of running AI at scale. Newer models may be more capable than those that came before, but they are hardly cheap. The more context they ingest, the more tokens they burn, and the higher the bill climbs. For businesses trying to roll out AI tools across engineering, legal, and internal knowledge work, that math is becoming harder to ignore.
+Engram Wants to Give Enterprise AI a Better Memory at a Lower Cost
+Engram’s answer is a “learned memory” layer for AI systems . The idea is to give models a better way to remember how a company works, what its teams care about, and how recurring tasks are handled, without forcing them to repeatedly process huge amounts of context from scratch. The startup says that it lets its models anticipate questions, retrieve the right organizational knowledge, and deliver answers using far fewer tokens than general-purpose frontier models.
+The company claims its systems can match or outperform top lab models on some enterprise tasks while using up to 100 times fewer tokens. That is a striking promise in a market where token efficiency is starting to matter almost as much as raw model performance.
+“You’ve got this explosion of data, explosion of cost,” Leigh Marie Braswell, a partner at Kleiner Perkins, said in an interview . “Engram comes in and basically maps out your organization and offers orders of magnitude cheaper output.”
+That pitch has already attracted a surprisingly heavyweight customer list for a startup that is less than a year old. Engram says its clients include Microsoft, Notion, and legal AI startup Harvey. The company has 13 employees and plans to use the new funding for compute and hiring.
+The name Engram comes from neuroscience, where it refers to a trace of memory in the brain. That is not branding by accident. Dan Biderman, the company’s co-founder and CEO, has spent years thinking about memory, first on a deeply personal level and later as an academic obsession.
+Biderman said his fascination started in childhood, when his grandmother began losing her memory. He would try to prompt her to remember small details about him and his siblings, an experience that stayed with him and later shaped his academic path. He went on to pursue a PhD in computational neuroscience at Columbia and later joined Stanford’s AI lab.
+At Stanford, Biderman said he began to see a gap between how powerful AI models appear and how limited they can be once they are deployed in real organizational settings. He calls it the “genius stranger model.” A model may be smart in the abstract, but it still behaves like an outsider if it lacks durable context about the people, processes, and patterns inside a company. Stuffing more context into the prompt can help, but that tends to raise costs and create its own performance tradeoffs.
+Biderman is not arguing that Engram has built a better frontier model than OpenAI or Anthropic. His claim is narrower and more practical. Engram’s models, he said, are built to specialize. That means trading some general-purpose breadth for the ability to learn how a particular organization operates and respond more efficiently inside that environment.
+“We’re trying to go beyond this existing notetaking and build this layer of intuition that humans have, and current models don’t,” Biderman said.
+That idea lands at a moment when companies are becoming more disciplined about how AI is used internally. Over the past year, developers have embraced coding assistants and AI tools with the kind of enthusiasm that tends to show up long before finance teams see the invoice. What comes next is likely a more sober phase of enterprise AI adoption, one where buyers still want the productivity gains but are no longer willing to tolerate open-ended spending.
+If Engram can deliver on its promise, it may have found a timely opening in the market: helping companies retain the benefits of AI without inheriting the full cost structure of frontier-model usage.
+Shares
+Share On Facebook
+Tweet It
+Trending Now
+Top Tech News Today, June 1, 2026
+Nickie Louise
+June 1, 2026
+Top Tech News Today, June 3, 2026
+Nickie Louise
+June 3, 2026
+- Advertisement -
+Read Next
+Top Tech News Today, June 23, 2026
+Apps
+Gaming
+Startups
+Startup Funding
+Tech News
+Cryptocurrency
+Cybersecurity
+Emerging Technologies
+Latest Tech News
+More...
+- Advertisement -
+You are reading
+Engram raises $98 million to help companies lower AI token costs with smarter memory models
+Share
+No Comment
+© Copyright TechStartups.com 2024
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":6024,"paragraph_count":28,"sentence_count":37,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   # Engram raises $98 million to help companies lower AI token costs with smarter memory models ... AI is getting smarter, but for companies paying to run it, it’s getting a lot more expensive. As businesses look for ways to control rising token costs and curb unchecked AI use by developers, AI startu
+
+2. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   Home Executive Interviews Startups Advertise About Trust & Safety Editorial Policy June 29, 2026 Home Executive Interviews Startups Advertise About Trust & Safety Editorial Policy Topics Search Startups Top Startups Startup List Submit Your Startup Tools Free Startup Valuation Calculator Home » Artificial Intelligence Featured Startup Funding Startup Spotlight Startups Tech Startup News Tech Startups Technology News Engram raises $98 million to help companies lower AI token costs with smarter memory models Daniel L
+
+3. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   As businesses look for ways to control rising token costs and curb unchecked AI use by developers, AI startup Engram says it has found an opening.
+
+4. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   The 8-month-old company, which builds memory models for enterprise AI systems, announced Tuesday that it has raised $98 million from investors including General Catalyst, Kleiner Perkins, Sequoia, and OpenAI co-founder Andrej Karpathy.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Engram is betting that one of the biggest problems in enterprise AI isn’t model quality alone, but the cost of giving those models enough context to be useful.
+
+6. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Its pitch is that by helping AI systems remember company-specific workflows, internal knowledge, and recurring tasks more efficiently, businesses can get smarter responses without burning through as many tokens.
+
+## business_elements
+
+- companies: keyword search, Exa, OpenAI, Anthropic, Microsoft
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 开发者工具, 企业服务
+- roles: 开发者 / 工程团队, 法务 / 律师
+- workflows: 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 法务, 财务 / 预算
+- numbers: $98 million, 29, 2026, 23, 985, 8, 100, 13
+- quotes: learned memory / You’ve got this explosion of data, explosion of cost, / Engram comes in and basically maps out your organization and offers orders of magnitude cheaper output. / genius stranger model. / We’re trying to go beyond this existing notetaking and build this layer of intuition that humans have, and current models don’t,
+
+## evidence_seed
+
+- company_actions: # Engram raises $98 million to help companies lower AI token costs with smarter memory models ... AI is getting smarter, but for companies paying to run it, it’s getting a lot more expensive. As businesses look for ways to control rising token costs and curb unchecked AI use by developers, AI startu / Home Executive Interviews Startups Advertise About Trust & Safety Editorial Policy June 29, 2026 Home Executive Interviews Startups Advertise About Trust & Safety Editorial Policy Topics Search Startups Top Startups Startup List Submit Your Startup Tools Free Startup Valuation Calculator Home » Artificial Intelligence Featured Startup Funding Startup Spotlight Startups Tech Startup News Tech Startups Technology News Engram raises $98 million to help companies lower AI token costs with smarter memory models Daniel L / The 8-month-old company, which builds memory models for enterprise AI systems, announced Tuesday that it has raised $98 million from investors including General Catalyst, Kleiner Perkins, Sequoia, and OpenAI co-founder Andrej Karpathy.
+- case_details: 暂无公开信息
+- workflow_changes: Its pitch is that by helping AI systems remember company-specific workflows, internal knowledge, and recurring tasks more efficiently, businesses can get smarter responses without burning through as many tokens.
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 开发者 / 工程团队, 法务 / 律师
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- change: true
+- trend: true
+- signal_card_candidate: true
+- relationship_graph_input: true
+- business_change: true
+- emerging_pool: true
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+- emerging_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: primary_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+# Engram raises $98 million to help companies lower AI token costs with smarter memory models ... AI is getting smarter, but for companies paying to run it, it’s getting a lot more expensive. As businesses look for ways to control rising token costs and curb unchecked AI use by developers, AI startu
+
+## 采集备注
+
+该条目由 gdelt 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT daily 和 social_discovery 的权重来自精选入口，不来自来源等级。HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

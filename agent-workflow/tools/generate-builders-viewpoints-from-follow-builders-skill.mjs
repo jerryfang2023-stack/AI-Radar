@@ -32,10 +32,10 @@ function normalizeDay(dateValue = "") {
 
 function repairEncodingArtifacts(text = "") {
   return String(text || "")
-    .replace(/([A-Za-z])��([A-Za-z])/gu, "$1’$2")
-    .replace(/��([^�\n]{1,80})��/gu, "“$1”")
-    .replace(/��(?=[A-Z@])/gu, " · ")
-    .replace(/�+/gu, "");
+    .replace(/([A-Za-z])\ufffd\ufffd([A-Za-z])/gu, "$1’$2")
+    .replace(/\ufffd\ufffd([^\ufffd\n]{1,80})\ufffd\ufffd/gu, "“$1”")
+    .replace(/\ufffd\ufffd(?=[A-Z@])/gu, " · ")
+    .replace(/\ufffd+/gu, "");
 }
 
 function cleanText(text = "") {
@@ -126,7 +126,7 @@ async function main() {
     `# ${date} Builders Viewpoints (All)`,
     "",
     "说明：本文件直接调用本地 follow-builders skill，收录当日全量 Builder 观点/实践线索（discovery 级），用于前沿观点库“先全量沉淀，再筛选进入网站”。",
-    "注意：社媒/X 观点为观点线索，不作为事实主证据；进入商业信号、变化短专题、趋势报告或今日观察的事实结论仍需补足 S/A/B 原始来源。",
+    "注意：社媒/X 观点为观点线索，不作为事实主证据；进入商业信号、变化候选、趋势候选或当前前台链路的事实结论仍需补足 S/A/B 原始来源。",
     "",
   ];
 

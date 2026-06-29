@@ -1,18 +1,18 @@
-﻿---
+---
 status: current
 scope: v3-3-current-action-index
 last_updated: 2026-06-23
 use_when:
   - choose current action
   - recover missing actions
-  - dispatch SITE-V3.3.8.3 production work
+  - dispatch SITE-V3.3.8.4 production work
   - distinguish current actions from historical tasks
 priority: current
 ---
 
-# SITE-V3.3.8.3 Current Action Index
+# SITE-V3.3.8.4 Current Action Index
 
-This file is the current action registry for WaveSight AI SITE-V3.3.8.3.
+This file is the current action registry for WaveSight AI SITE-V3.3.8.4.
 
 Use it before historical dispatch boards, feature lists, closeouts, or V2 action records. Historical files can explain why a rule exists, but they must not add actions back into the current production system.
 
@@ -22,19 +22,19 @@ Every action, old or new, must be treated as one of these classes:
 
 | Status | Meaning | Codex Behavior |
 |---|---|---|
-| `current` | Active SITE-V3.3.8.3 production action. | May be used as a default execution route. |
+| `current` | Active SITE-V3.3.8.4 production action. | May be used as a default execution route. |
 | `manual/archive` | Historical or diagnostic action with reference value. | May be read or manually consulted, but must not run by default. |
 | `retired` | Explicitly stopped action or output. | Must not be restored, required, or used as a blocker. |
 
-Do not mark an old action as `current` just because it existed before. Only a SITE-V3.3.8.3-compatible route that serves the current asset system can be `current`.
+Do not mark an old action as `current` just because it existed before. Only a SITE-V3.3.8.4-compatible route that serves the current asset system can be `current`.
 
 ## Current Actions
 
-Only these actions are `current` for SITE-V3.3.8.3:
+Only these actions are `current` for SITE-V3.3.8.4:
 
 | Action | Status | Current Role |
 |---|---|---|
-| Daily business-signal production | `current` | Produce the day's 10 most important business-signal Cards. |
+| Daily business-signal production | `current` | Produce qualified business-signal Card assets and publish the day's 10 most important frontstage signals. |
 | Enterprise AI / FDE lens | `current` | Independent FDE lens skill surfaces consulting-relevant implementation signals, requires demand / service / result details, syncs `content/09-fde`, and does not create a fourth Card type. |
 | Column monitor skills | `current` | Run and improve independent Business Signals, First-Line Viewpoints, and Community Intelligence monitoring skills. |
 | Hermes feedback loop automation | `current` | Convert daily supervision failures into Codex repair items and close them only after validation and prevention are recorded. |
@@ -44,7 +44,7 @@ Only these actions are `current` for SITE-V3.3.8.3:
 | Relationship graph build | `current` | Build Card-derived nodes, edges, and evidence links. |
 | Opportunity radar weekly update | `current` | Refresh the Intelligence Map Entry Point Map and Product Pain Map once per week from source-backed opportunity_signals. |
 | Intelligence Map weekly report | `current` | Publish the weekly report entry and detail page from the weekly business-change radar report. |
-| Trend candidate judgment | `current` | Judge repeated same-direction signals, not trend reports. |
+| Trend candidate judgment | `current` | Judge repeated same-direction signals as internal candidates, not long-form publication output. |
 | First-line viewpoints RSS update | `current` | Update builders viewpoints from the morning RSS / podcast route independently from business signals. |
 | First-line viewpoints skill publish | `current` | Update builders viewpoints from the afternoon local follow-builders skill route independently from business signals. |
 | First-Line Viewpoints Obsidian timeline sync | `current` | Persist Builder viewpoints into person / date Obsidian timelines. |
@@ -77,7 +77,7 @@ Manual/archive material can explain why a current rule exists. It cannot overrid
 
 Purpose:
 
-- Produce the day's 10 most important business-signal Cards for the Business Signals frontstage.
+- Produce qualified business-signal Card assets, then publish the day's 10 most important business signals for the Business Signals frontstage.
 
 Primary route:
 
@@ -104,12 +104,12 @@ Outputs:
 
 - Raw candidates.
 - Pool candidates.
-- 10 business-signal Cards.
+- qualified Signal Card assets plus the active-date frontstage Top10.
 - production-chain reports.
 
 Boundaries:
 
-- Do not produce daily observation, business brief, trend report, or opinion lane output.
+- Do not produce legacy content-output routes or opinion-lane output from the Business Signals chain.
 - Do not allow big-company product news to dominate the whole day.
 
 ### 2. Raw / Pool / Card Asset Chain
@@ -276,7 +276,7 @@ Outputs:
 
 Boundaries:
 
-- Trend candidate is not trend report.
+- Trend candidate is an internal candidate object, not a long-form publication route.
 - A single article, viewpoint, funding event, or tag count cannot form a trend.
 - Builders viewpoints are not evidence for trend candidates.
 
@@ -376,7 +376,7 @@ Boundaries:
 - First-Line Viewpoints keeps the same topbar height and structure.
 - First-Line Viewpoints data must be produced and gated by its independent workflow, not by the Business Signals PR.
 - First-Line Viewpoints Obsidian timelines must be produced from the same gated `follow-builders-daily.json`, not from retired `05-frontier-opinions`.
-- Do not restore V2 homepage modules, daily observation, business brief, or trend-report prose.
+- Do not restore V2 homepage modules or legacy content-output prose.
 
 ### 10. Dashboard Sync
 
@@ -494,17 +494,13 @@ Boundaries:
 
 ## Retired Actions
 
-The following actions are `retired` for current V3.3:
+The following action groups are `retired` for current V3.3:
 
-| Action | Status | Reason |
+| Action Group | Status | Reason |
 |---|---|---|
-| daily observation writing | `retired` | Current V3.3 does not require article-style daily observation output. |
-| business brief / internal reference | `retired` | The current product is an asset system, not a brief-production lane. |
-| trend report writing | `retired` | Current trend output is trend candidate only. |
+| legacy content-output routes | `retired` | Current V3.3 is an asset system, not an old content-production lane. |
 | V2 four-column website page production | `retired` | V2 homepage and four-column public site routes are retired. |
-| publiccopy gate | `retired` | Not a current publication blocker. |
-| cardcopy gate | `retired` | Not a current publication blocker. |
-| Guanlan copy-style gate | `retired` | Not a current publication blocker. |
+| legacy copy gates | `retired` | Not current publication blockers. |
 | opinion lane as business-signal evidence | `retired` | First-line viewpoints are independent and cannot feed signal, graph, or trend evidence. |
 | builders / follow-builders mixed into Cards | `retired` | Builders content must remain outside business-signal Cards. |
 | builders / follow-builders mixed into relationship graph | `retired` | Graph evidence must come from accepted business-signal Cards. |

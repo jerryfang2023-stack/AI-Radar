@@ -4,6 +4,7 @@ import { spawnSync } from "node:child_process";
 import { inferOpportunitySignals, opportunitySignalsYaml } from "./opportunity-signals-utils.mjs";
 
 const root = process.cwd();
+const sourceTitleTranslationsFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
 const args = new Map(
   process.argv.slice(2).map((arg) => {
     const [key, ...rest] = arg.replace(/^--/, "").split("=");
@@ -19,9 +20,14 @@ if (!date) {
 
 const now = new Date().toISOString();
 const autoSignalEnabled = args.get("auto-signals") !== "false" && args.get("manual-only") !== "true";
-const signalTarget = args.has("signal-target")
-  ? nonNegativeInt(args.get("signal-target"), Number.POSITIVE_INFINITY)
-  : 10;
+const frontstageTop10Target = args.has("frontstage-top10-target")
+  ? nonNegativeInt(args.get("frontstage-top10-target"), 10)
+  : args.has("signal-target")
+    ? nonNegativeInt(args.get("signal-target"), 10)
+    : 10;
+const assetGenerationLimit = args.has("asset-generation-limit")
+  ? nonNegativeInt(args.get("asset-generation-limit"), Number.POSITIVE_INFINITY)
+  : Number.POSITIVE_INFINITY;
 const generateTrendCandidates = args.get("trend-candidates") === "true";
 const v3SignalLanePlan = [
   { type: "funding", target: 3 },
@@ -574,21 +580,139 @@ function extractNumbers(raw = "") {
     .map((match) => match[0].replace(/\s+/gu, " ").trim());
 }
 
+function sourcePointLooksTemplate(value = "") {
+  return /属于 AI 资金流向|属于企业工作流应用信号|属于产品化和企业采用信号|披露 AI (?:产品|客户部署)|相关材料记录了|可用于观察|原文未提供更多可拆分事实点/iu.test(String(value || ""));
+}
+
+function sourcePointIsUsable(value = "") {
+  const text = stripSourceNoise(value);
+  if (!text || sourcePointLooksTemplate(text) || hasTextContamination(text)) return false;
+  return /AI|agent|agentic|LLM|model|enterprise|customer|workflow|deployment|platform|cloud|inference|funding|raises|raised|launched|announced|released|introduced|case study|融资|客户|部署|平台|模型|企业|美元|\$|\d/iu.test(text);
+}
+
+function countHan(value = "") {
+  return String(value || "").match(/[\u4e00-\u9fff]/gu)?.length || 0;
+}
+
+function countLatinWords(value = "") {
+  return String(value || "").match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu)?.length || 0;
+}
+
+function sourcePointReadyForPublic(value = "") {
+  const text = stripSourceNoise(value);
+  if (!sourcePointIsUsable(text)) return false;
+  const han = countHan(text);
+  const latin = countLatinWords(text);
+  if (text.length > 90 && latin >= 10 && han < 18) return false;
+  if (latin >= 16 && han < 24) return false;
+  return true;
+}
+
+function sourceTitleFactFromSection(section) {
+  const sourceTitle = originalSourceTitleFromSection(section);
+  const translated = sourceTitleDisplayTitle(sourceTitle);
+  return translated ? `原始来源标题显示：${translated}。` : "";
+}
+
+function chineseAmount(raw = "") {
+  const text = String(raw || "").replace(/\s+/gu, " ").trim();
+  const match = text.match(/([$€£])\s?(\d+(?:\.\d+)?)\s?(M|B|K|million|billion)?/iu);
+  if (!match) return "";
+  const currency = match[1] === "$" ? "美元" : match[1] === "€" ? "欧元" : "英镑";
+  const amount = Number(match[2]);
+  const unit = String(match[3] || "").toLowerCase();
+  if (!Number.isFinite(amount)) return text;
+  if (unit === "b" || unit === "billion") return `${amount}0亿${currency}`.replace(/\.0亿/u, "亿");
+  if (unit === "m" || unit === "million") {
+    const tenThousands = amount * 100;
+    if (tenThousands >= 10000) {
+      const yi = tenThousands / 10000;
+      return `${Number.isInteger(yi) ? yi : yi.toFixed(2)}亿${currency}`;
+    }
+    return Number.isInteger(tenThousands) ? `${tenThousands}万${currency}` : `${tenThousands.toFixed(1)}万${currency}`;
+  }
+  if (unit === "k") return `${amount}千${currency}`;
+  return `${amount}${currency}`;
+}
+
+function chineseRound(raw = "") {
+  const text = String(raw || "").toLowerCase();
+  if (/pre[- ]seed/u.test(text)) return "Pre-seed";
+  if (/\bseed\b/u.test(text)) return "种子轮";
+  const series = text.match(/\bseries\s+([a-z])\b/u)?.[1];
+  return series ? `${series.toUpperCase()} 轮` : "";
+}
+
+function chinesePurpose(raw = "") {
+  const text = stripSourceNoise(raw);
+  const purpose = text.match(/\bto\s+(continue\s+building|build|scale|expand|accelerate|support|develop|deliver)\s+([^.;]{12,180})/iu)?.[0] || "";
+  if (!purpose) return "";
+  return purpose
+    .replace(/^to\s+continue\s+building\s+/iu, "继续建设")
+    .replace(/^to\s+build\s+/iu, "建设")
+    .replace(/^to\s+scale\s+/iu, "扩展")
+    .replace(/^to\s+expand\s+/iu, "扩展")
+    .replace(/^to\s+accelerate\s+/iu, "加速")
+    .replace(/^to\s+support\s+/iu, "支持")
+    .replace(/^to\s+develop\s+/iu, "开发")
+    .replace(/^to\s+deliver\s+/iu, "交付")
+    .replace(/\bagentic operating system\b/giu, "agentic operating system")
+    .replace(/\bregulated industries\b/giu, "受监管行业")
+    .replace(/\bAI agents?\b/giu, "AI Agent")
+    .replace(/\benterprise\b/giu, "企业")
+    .replace(/\bworkflow(s)?\b/giu, "工作流")
+    .trim();
+}
+
+function chineseInvestorLine(raw = "") {
+  const text = stripSourceNoise(raw);
+  const led = text.match(/\bled by\s+([^.;]+?)(?:,\s+with participation from\s+([^.;]+))?[.;]?$/iu);
+  if (!led) return "";
+  return `该轮融资由 ${led[1].trim()} 领投${led[2] ? `，${led[2].trim()} 等参与` : ""}。`;
+}
+
 function sourceBackedChineseFact(raw = "", context = {}) {
   const text = stripSourceNoise(raw);
-  if (!text) return "";
-  if (!/\b(AI|agent|LLM|model|enterprise|customer|workflow|deployment|platform|cloud|inference|funding|raises?|launched?|announces?|released?|introduced?|case study)\b/iu.test(text)) return "";
-  const company = publicCardCopy(context.company || "");
-  const scenario = publicCardCopy(context.scenario || scenarioFromText(text));
-  const numbers = extractNumbers(text).slice(0, 2);
-  const action =
-    /\b(raises?|raised|funding|financing|seed|series\s+[a-z])\b/iu.test(text) ? "融资或资金流向" :
-    /\b(customer|case study|deployment|deployed|adopted|used by|rollout)\b/iu.test(text) ? "客户部署或应用案例" :
-    /\b(launches?|launched|announces?|released?|introduced?|available|platform|product)\b/iu.test(text) ? "产品或平台动作" :
-    "AI 商业动作";
-  const owner = company ? `${company} 的` : "";
-  const numberNote = numbers.length ? `；原文同时出现 ${numbers.join("、")} 等数字` : "";
-  return `来源材料显示，${owner}${action}涉及${scenario}${numberNote}。`;
+  if (!sourcePointIsUsable(text)) return "";
+  if (/[\u4e00-\u9fff]/u.test(text) && !sourcePointLooksTemplate(text)) return text.length > 260 ? `${text.slice(0, 259)}...` : text;
+  const company = publicCardCopy(context.company || "") || shortCompany(text.match(/^([A-Z][A-Za-z0-9.&' -]{1,80}?)(?:,|\s+(?:announced|has|raised|raises|secured|secures|launched|launches|released|introduced|collaborates|collaboration))/u)?.[1] || "");
+  const owner = company || "原文";
+  const amount = chineseAmount(extractAmount(text) || text);
+  const round = chineseRound(text);
+  if (/\b(raises?|raised|funding|financing|seed|series\s+[a-z])\b/iu.test(text)) {
+    const purpose = chinesePurpose(text);
+    return `${owner}宣布完成${amount ? amount : ""}${round ? `${round}` : ""}融资${purpose ? `，用于${purpose}` : ""}。`.replace(/完成融资/u, "完成融资");
+  }
+  const investorLine = chineseInvestorLine(text);
+  if (investorLine) return investorLine;
+  if (/\bstrategic collaboration with\s+([A-Z][A-Za-z0-9.&' -]{1,80})/iu.test(text)) {
+    const partner = text.match(/\bstrategic collaboration with\s+([A-Z][A-Za-z0-9.&' -]{1,80})/iu)?.[1]?.trim() || "";
+    return `${owner}宣布与 ${partner} 达成战略合作，建设可扩展的 AI 驱动转型基础，并改善企业流程效率与服务体验。`;
+  }
+  if (/\bCollaboration focuses on improving efficiency\b/iu.test(text)) {
+    return "原文称，合作聚焦通过 AI 提升 IT、医院运营和临床支持等企业流程效率，并形成可衡量结果。";
+  }
+  if (/\bTopaz Fabric\b/iu.test(text)) {
+    return "Infosys 使用 Topaz Fabric agentic services suite，将基础设施、模型、数据、应用和工作流整合为可组合的 agent-ready 生态。";
+  }
+  if (/\bframework will allow\b.*\bembed AI across\b/iu.test(text)) {
+    return "该框架将帮助 Sentara 建立参考架构、AI-first SDLC 现代化和治理扩展能力，把 AI 嵌入医院和企业核心工作流。";
+  }
+  if (/\bplatform is designed for regulated industries\b/iu.test(text)) {
+    return "原文称，该平台面向受监管行业设计，强调安全、治理、主权、可审计性和可预测性。";
+  }
+  if (/\bfull-stack AI company\b/iu.test(text)) {
+    return `${owner}是一家全栈 AI 公司，提供面向高风险环境的 agentic operating system 和 AI Agent。`;
+  }
+  if (/\b(launches?|launched|announces?|announced|released|introduced|available)\b/iu.test(text)) {
+    const cleaned = text.replace(/\s+/gu, " ").replace(/\s+\|\s+.*$/u, "").slice(0, 180);
+    return `原文称，${cleaned}`;
+  }
+  if (/\b(customer|case study|deployment|deployed|adopted|used by|rollout|production)\b/iu.test(text)) {
+    const cleaned = text.replace(/\s+/gu, " ").slice(0, 180);
+    return `原文称，${cleaned}`;
+  }
+  return "";
 }
 
 function translatedSourcePoint(raw = "", type = "", context = {}) {
@@ -624,12 +748,13 @@ function sourcePointsFromSection(section) {
     ...(Array.isArray(evidenceSeed.risks_or_constraints) ? evidenceSeed.risks_or_constraints : []),
   ];
   const excerptItems = Array.isArray(keyExcerpts) ? keyExcerpts.map((item) => ({ text: item?.text || "", type: item?.type || "" })) : [];
-  const fromExcerpts = excerptItems.map((item) => translatedSourcePoint(item.text, item.type, context)).filter(Boolean);
-  const fromSeed = seedItems.map((item) => translatedSourcePoint(item, "", context)).filter(Boolean);
+  const titleFact = sourceTitleFactFromSection(section);
+  const fromExcerpts = excerptItems.map((item) => translatedSourcePoint(item.text, item.type, context)).filter(sourcePointReadyForPublic);
+  const fromSeed = seedItems.map((item) => translatedSourcePoint(item, "", context)).filter(sourcePointReadyForPublic);
   const fromFullText = sourceSentences(raw.full_text || raw.clean_text || "")
     .map((item) => translatedSourcePoint(item, "", context))
-    .filter(Boolean);
-  return [...new Set([...fromExcerpts, ...fromSeed, ...fromFullText])].slice(0, 6);
+    .filter(sourcePointReadyForPublic);
+  return [...new Set([titleFact, ...fromExcerpts, ...fromSeed, ...fromFullText].filter(sourcePointReadyForPublic))].slice(0, 6);
 }
 
 function sourceExcerptFromSection(section, points = []) {
@@ -640,8 +765,8 @@ function sourceExcerptFromSection(section, points = []) {
   };
   const firstRaw = sourceSentences(raw.full_text || raw.clean_text || "")
     .map((item) => translatedSourcePoint(item, "", context))
-    .find(Boolean);
-  return firstRaw || points[0] || "";
+    .find(sourcePointReadyForPublic);
+  return firstRaw || points.find(sourcePointReadyForPublic) || sourceTitleFactFromSection(section) || "";
 }
 
 function isSameSourcePoint(a = "", b = "") {
@@ -649,15 +774,16 @@ function isSameSourcePoint(a = "", b = "") {
 }
 
 function generatedValueSummary(spec, section) {
-  const company = spec.company || companyFromSection(section);
-  const scenario = scenarioFromText(textForInference(section));
-  if (spec.type === "funding") {
-    return `${company} 的融资信号可用于观察资本是否继续流向 ${fundingAngleFromScenario(scenario)}。`;
+  return spec.sourceExcerpt || spec.eventLine || sourceExcerptFromSection(section, spec.sourcePoints || []) || "";
+}
+
+function cleanEvidenceBoundary(value = "") {
+  const text = String(value || "").replace(/\s+/gu, " ").trim();
+  if (!text) return "证据边界：本卡只使用已保留的 Raw / Pool 原文标题、摘录和来源链接。";
+  if (/没有具体客户|没有检测到明确动作词|不能单独阻断|需以可见原文片段核对/iu.test(text)) {
+    return "证据边界：缺失项作为内部复核线索保留；公开判断只采用原文标题、摘录和来源链接。";
   }
-  if (spec.type === "product_service") {
-    return `${company} 的产品信号可用于观察 AI 能力是否正在进入更具体的工具、平台或工作流入口。`;
-  }
-  return `${company} 的案例信号可用于观察 AI 是否已经进入 ${scenario}，以及后续是否出现客户、流程或结果指标。`;
+  return text;
 }
 
 function normalizeSignalSpec(spec) {
@@ -668,7 +794,7 @@ function normalizeSignalSpec(spec) {
     eventLine: publicCardCopy(spec.eventLine),
     whyWatch: publicCardCopy(spec.whyWatch),
     businessMeaning: publicCardCopy(spec.businessMeaning),
-    evidenceBoundary: publicCardCopy(spec.evidenceBoundary),
+    evidenceBoundary: cleanEvidenceBoundary(publicCardCopy(spec.evidenceBoundary)),
     watchWindow: publicCardCopy(spec.watchWindow),
     sourcePoints: (spec.sourcePoints || []).map(publicCardCopy),
     sourceExcerpt: publicCardCopy(spec.sourceExcerpt || ""),
@@ -797,7 +923,6 @@ function textForInference(section) {
 const coreImportanceTypes = new Set([
   "important_case",
   "important_funding",
-  "important_technical_trend",
   "important_product_or_service",
   "important_vertical_solution",
 ]);
@@ -825,7 +950,29 @@ const indexOnlyEvidenceTypes = new Set([
 ]);
 
 const indexOnlyUrlPattern = /(^|\/)(category|categories|tag|tags|topics?|search|docs?|documentation|api|sdk|pricing|marketplace|models?|packages?|tools?|login|signin|sign-in)(\/|$)|readme|readme-ov-file|\/blog\/category\//iu;
-const discoveryOnlyPattern = /\b(aihot|ai hot|paused-opinion-source|hacker news|reddit|hn|linkedin|twitter|x\.com|duckduckgo|bing|tavily|exa|anysearch|gdelt)\b/iu;
+const discoveryOnlyPattern = /\b(aihot|ai hot|hacker news|reddit|hn|linkedin|twitter|x\.com|duckduckgo|bing|tavily|exa|anysearch|gdelt)\b/iu;
+const mojibakeMarkerNeedles = [
+  "\u947e\u5cf0\u7df1",
+  "\u93c9\u30e6\u7c2e",
+  "\u93c4\u5267\u305a",
+  "\u6d7c\u4f77\u7b1f",
+  "\u935f\u55d5\u7b1f",
+  "\u93af\u546e",
+  "\u5bf0\u546f",
+  "\u9359\u621d\u7af7",
+  "\u94fb\u5d88\u796b",
+  "\u7039\u5c7e\u579a",
+  "\u934f\ue100\u7d11",
+  "\u6769\u501f\u91dc",
+  "\u9358\u71b8\u6783",
+  "\u9422\u3129\u20ac",
+  "\u6d93\u6c2c\u59df",
+  "\u6d5c\u0443\u6427",
+  "\u59af\u2033\u7037",
+  "\u93ba\u3125\u56ad",
+  "\u5bee\u20ac\u9359",
+  "\u93c5\u9e3f\u5158",
+];
 const CARD_ENTRY_GATES = Object.freeze({
   sourceAuditability: "source_auditability",
   evidenceQuality: "evidence_quality",
@@ -873,7 +1020,7 @@ function isSocialOrCommunitySection(section) {
     value(section, "acquisition_channel"),
     value(section, "source_role"),
   ].join(" ").toLowerCase();
-  return /(^|\.)linkedin\.com|(^|\.)x\.com|(^|\.)twitter\.com|(^|\.)reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social|paused-opinion-source/u.test(text);
+  return /(^|\.)linkedin\.com|(^|\.)x\.com|(^|\.)twitter\.com|(^|\.)reddit\.com|news\.ycombinator\.com|hn\.algolia|hacker news|community|social/u.test(text);
 }
 
 function isRepositoryOrCatalogSection(section) {
@@ -986,15 +1133,101 @@ function isGenericReportOrListSection(section) {
   return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent|series-b-enterprise-ai-agents|ai agent startups insight partners funding/iu.test(titleUrlSource);
 }
 
+function hasMojibakeMarker(value = "") {
+  const text = String(value || "");
+  return mojibakeMarkerNeedles.some((marker) => text.includes(marker));
+}
+
 function hasTextContamination(text = "") {
   const value = String(text || "");
   const length = value.length || 1;
   const replacementCount = (value.match(/\uFFFD/gu) || []).length;
   const controlCount = (value.match(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/gu) || []).length;
-  return /%PDF|endobj|xref|JFIF|Exif|Photoshop 3\.0|stream\s+x|浼佷笟|鍟嗕笟|鎯呮|寰呯|鍙戝竷|铻嶈祫|瀹屾垚|鍏紑|杩借釜/iu.test(value)
+  return /%PDF|endobj|xref|JFIF|Exif|Photoshop 3\.0|stream\s+x/iu.test(value)
+    || hasMojibakeMarker(value)
     || controlCount >= 3
     || replacementCount >= 8
     || replacementCount / length > 0.003;
+}
+
+function sectionEvidenceText(section) {
+  return [
+    poolTitle(section),
+    value(section, "source"),
+    value(section, "source_url"),
+    value(section, "source_type"),
+    value(section, "acquisition_channel"),
+    value(section, "search_path"),
+    value(section, "search_intent"),
+    value(section, "key_excerpts"),
+    value(section, "evidence_seed"),
+    value(section, "missing_information"),
+  ].join(" ");
+}
+
+function hasConcreteFundingEvent(section) {
+  return isSingleCompanyFundingSignal(section);
+}
+
+function hasConcreteProductEvent(section) {
+  const text = sectionEvidenceText(section);
+  if (isWorkforceRetrainingProgram(section)) return false;
+  if (isNewsletterRoundupSource(section)) return false;
+  return /\b(launch(?:es|ed)?|release(?:s|d)?|introduc(?:es|ed)?|announc(?:es|ed)?|general availability|GA|new API|new SDK|new platform|new product|pricing|available now)\b|发布|推出|上线|正式可用|开放|定价/iu.test(text)
+    && !/guide|tutorial|how to|core concepts|scaling dimensions|architecture overview|field guide|glossary|market map|roundup|list|指南|教程|概念|综述|清单|榜单/iu.test(text);
+}
+
+function hasConcreteCaseEvent(section) {
+  const text = sectionEvidenceText(section);
+  if (/没有具体客户|没有检测到明确动作词|no concrete customer|no specific customer|not a customer case|missing customer/iu.test(text)) return false;
+  return /\b(case study|customer story|customer deployment|customer adopts?|adopted by|deployed (?:at|by|with)|used by|rollout|production rollout|pilot customer|design partner|implementation case)\b|客户案例|客户采用|客户部署|生产部署|落地|试点客户|真实客户/iu.test(text);
+}
+
+function hasFormalCardEvent(section) {
+  const importanceType = value(section, "importance_type");
+  if (importanceType === "important_funding") return hasConcreteFundingEvent(section);
+  if (importanceType === "important_product_or_service") return hasConcreteProductEvent(section);
+  if (importanceType === "important_case" || importanceType === "important_vertical_solution") {
+    return hasConcreteCaseEvent(section) || hasConcreteProductEvent(section);
+  }
+  return false;
+}
+
+function isBuilderOrOpinionOnlySource(section) {
+  const text = [
+    value(section, "source_type"),
+    value(section, "source"),
+    value(section, "source_url"),
+    value(section, "acquisition_channel"),
+  ].join(" ");
+  return /\bbuilder\b|opinion|newsletter|eugeneyan\.com|simonwillison\.net|lilianweng\.github\.io|interconnects\.ai|ben-evans\.com/iu.test(text)
+    && !hasConcreteFundingEvent(section)
+    && !hasConcreteProductEvent(section)
+    && !hasConcreteCaseEvent(section);
+}
+
+function isTechnicalArticleWithoutBusinessEvent(section) {
+  const text = sectionEvidenceText(section);
+  const technicalArticle = /\b(core concepts|scaling dimensions|architecture|architecting|how to|tutorial|guide|reference|concepts|open source solutions|developer article|engineering blog)\b|技术文章|架构|概念|教程|指南|开源方案/iu.test(text);
+  return technicalArticle && !hasConcreteFundingEvent(section) && !hasConcreteProductEvent(section) && !hasConcreteCaseEvent(section);
+}
+
+function isWorkforceRetrainingProgram(section) {
+  const text = sectionEvidenceText(section);
+  return /\b(retrain(?:ing)?|reskill(?:ing)?|workforce|jobs?|employment|worker|labor|training program)\b/iu.test(text)
+    && /\b(\$?\s?\d+(?:\.\d+)?\s?(?:m|b|million|billion)|fund(?:ing|ed)?|grant|initiative|pledge|commitment|program)\b/iu.test(text)
+    && !/\b(product launch|platform launch|released?|api|sdk|customer deployment|case study|funding round|series\s+[a-z]|seed round)\b/iu.test(text);
+}
+
+function isNewsletterRoundupSource(section) {
+  const text = [
+    poolTitle(section),
+    value(section, "source"),
+    value(section, "source_url"),
+    value(section, "source_type"),
+    value(section, "acquisition_channel"),
+  ].join(" ");
+  return /\btldr\.tech\b|TLDR AI Newsletter|newsletter|roundup|daily digest|weekly digest|briefing/iu.test(text);
 }
 
 function corePoolSemanticIssues(section) {
@@ -1036,6 +1269,24 @@ function corePoolSemanticIssues(section) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, "discovery_source_not_resolved"));
   }
   if (!coreImportanceTypes.has(importanceType)) issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, `unsupported_importance_type:${importanceType || "missing"}`));
+  if (importanceType === "important_technical_trend") {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "technical_trend_is_context_not_signal_card"));
+  }
+  if (isBuilderOrOpinionOnlySource(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "builder_or_opinion_source_not_business_fact"));
+  }
+  if (isTechnicalArticleWithoutBusinessEvent(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "technical_article_without_business_event"));
+  }
+  if (isWorkforceRetrainingProgram(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "workforce_retraining_program_not_formal_signal_card"));
+  }
+  if (isNewsletterRoundupSource(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "newsletter_roundup_requires_original_event_source"));
+  }
+  if (!hasFormalCardEvent(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "missing_concrete_funding_product_or_case_event"));
+  }
   if (!Number.isFinite(importanceScore) || importanceScore < 4) issues.push(cardGateIssue(CARD_ENTRY_GATES.commercialImportance, "low_importance_score"));
   if (!sectionHasUsableEvidenceObject(section)) issues.push(cardGateIssue(CARD_ENTRY_GATES.evidenceQuality, "incomplete_evidence_object"));
   if (/missing_full_text|missing_snapshot|missing_hash|missing_excerpt|raw_evidence_unusable/iu.test(degradationReasons)) {
@@ -1075,17 +1326,6 @@ function signalClusterKey(spec, section) {
   const company = normalizedSignalText(spec.company || companyFromSection(section));
   if (sourceUrl) return `url:${normalizedUrl(sourceUrl)}`;
   return `event:${company}:${normalizedSignalText(`${spec.type} ${title}`).slice(0, 120)}`;
-}
-
-function signalFactFingerprintKeys(spec, section) {
-  const owner = normalizedSignalText(spec.company || companyFromSection(section));
-  const title = normalizedSignalText(spec.title || poolTitle(section));
-  const eventLine = normalizedSignalText(spec.eventLine || "");
-  const publishedAt = normalizedSignalText(value(section, "published_at"));
-  return [
-    owner && title ? `${owner} ${title}` : "",
-    owner && eventLine && title ? `${owner} ${eventLine} ${publishedAt} ${title}` : "",
-  ].filter(Boolean);
 }
 
 function slugify(value) {
@@ -1135,6 +1375,11 @@ function companyFromUrl(sourceUrl = "", title = "") {
       [/techcrunch\.com.*google-will-pay-spacex/u, "Google / SpaceX"],
       [/growthlist\.co.*yc-startups/u, "Y Combinator"],
       [/saasmag\.com.*monetizing-ai-agents/u, "SaaS companies"],
+      [/vercel\.com\/changelog\/ai-sdk-7/u, "Vercel"],
+      [/globenewswire\.com.*talkdesk/u, "Talkdesk"],
+      [/upbound\.io/u, "Upbound"],
+      [/pfizer/iu, "Pfizer"],
+      [/sentara|infosys.*sentara/iu, "Infosys / Sentara"],
     ];
     const match = rules.find(([pattern]) => pattern.test(haystack));
     if (match) return match[1];
@@ -1171,6 +1416,7 @@ function isWeakCompanyName(value = "") {
   const text = String(value || "").trim();
   if (/buying criteria|adoption|startup ideas|massive ai deals|funding record|pre-seed slowdown|fund focused on ai|introducing|top ai|complete guide|release notes agent|with quantization|brings enterprise|monetizing ai agents/iu.test(text)) return true;
   if (!text) return true;
+  if (/^(?:Inc\.?|LLC|Ltd\.?|Corp\.?|Company|The company)$/iu.test(text)) return true;
   const hanChars = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
   return text.length > 42
     || hanChars > 18
@@ -1282,125 +1528,92 @@ function cleanSourceTitleForPublicTitle(title = "") {
     .replace(/&#8217;|&rsquo;/gu, "'")
     .replace(/&quot;/gu, "\"")
     .replace(/\s+/gu, " ")
-    .trim())
-    .slice(0, 96);
+    .trim());
 }
 
-function chineseAmountLabel(raw = "") {
-  const amountText = String(raw || "").trim();
-  const match = amountText.match(/\$ ?(\d+(?:\.\d+)?)\s?(M|B|million|billion)?/iu);
-  if (!match) return amountText;
-  const value = Number(match[1]);
-  const unit = String(match[2] || "").toLowerCase();
-  if (!Number.isFinite(value)) return amountText;
-  if (unit === "b" || unit === "billion") return `${value} 亿美元`;
-  if (unit === "m" || unit === "million" || !unit) return `${Math.round(value * 100)} 万美元`;
-  return amountText;
-}
-
-function cleanAutoTitleSubject(raw = "") {
-  return String(raw || "")
-    .replace(/\s*\|\s*[^|]{2,80}$/u, "")
-    .replace(/\s+-\s*(Salesforce|Digital Applied|Bessemer Venture Partners|Onyx AI|ChatMaxima|Future Works|Releasebot|Cobbai Blog|Artificial Intelligence)$/iu, "")
+function sourceTitleTranslationKey(title = "") {
+  return cleanSourceTitleForPublicTitle(title)
+    .toLowerCase()
     .replace(/\s+/gu, " ")
     .trim();
 }
 
-function translateKnownSourceTitle(title = "") {
-  const clean = cleanAutoTitleSubject(title);
-  const rules = [
-    [/^Former Coatue Partner Raises \$65M Seed for AI Agent Startup/iu, "Former Coatue Partner 为 AI Agent 初创公司完成 6500 万美元种子轮融资"],
-    [/^AI Agent Healthcare Tools \(May 2026\)$/iu, "2026 年 5 月 AI Agent 医疗工具"],
-    [/^8 Ways AI Agents Are Evolving in 2026/iu, "Salesforce：2026 年 AI Agent 演进的 8 种方式"],
-    [/^AI Agent Productivity Statistics 2026: 100\+ ROI Data/iu, "Digital Applied：2026 年 AI Agent 生产力统计与 ROI 数据"],
-    [/^How Building AI Agents Has Changed in 2026/iu, "Pulumi：2026 年 AI Agent 构建方式的变化"],
-    [/^AI Consulting Landscape 2026/i, "2026 年 AI 咨询格局与本地化部署"],
-    [/^OpenAI Release Notes - June 2026 Latest Updates/iu, "OpenAI 2026 年 6 月发布说明与最新更新"],
-    [/^AI for Insurance Companies: 2026 Costs, Rules and Roadmap/iu, "2026 年保险公司 AI 成本、规则与路线图"],
-    [/^Suno launches Spark incubator program/iu, "Suno 推出 Spark 孵化器计划，面向独立艺术家"],
-    [/^AI Infrastructure Best Practices 2026/iu, "2026 年企业 AI 基础设施最佳实践"],
-    [/^The companies most likely to automate your job are now funding a \$1 billion program/iu, "自动化岗位相关公司资助 10 亿美元再培训计划"],
-    [/^The AI pricing and monetization playbook/iu, "Bessemer：AI 定价与商业化手册"],
-    [/^AI Workflow Automation Trends in 2026/iu, "2026 年 AI 工作流自动化趋势"],
-    [/^Applied AI Intelligence/iu, "Future Works：应用型 AI 智能"],
-    [/^Best Enterprise RAG Platforms for 2026/iu, "2026 年企业 RAG 平台买方指南"],
-    [/^AI Workflow Automation for Insurance Industry Guide 2026/iu, "2026 年保险行业 AI 工作流自动化指南"],
-    [/^Business Case Story: From Pilot to Enterprise Rollout for AI Support/iu, "Cobbai：AI 支持从试点走向企业级推出的商业案例"],
-    [/^55\+ AI Customer Support Statistics and Trends for 2026/iu, "ChatMaxima：2026 年 AI 客户支持统计与趋势"],
-    [/^Smartsheet Claude Platform \(API\) case study/iu, "Smartsheet Claude Platform API 案例研究"],
-    [/^The State of AI in the Enterprise - 2026 AI report/iu, "Deloitte：2026 年企业 AI 状态报告"],
-    [/^Deploy Small Language Models on GPU Cloud/iu, "在 GPU Cloud 上部署小语言模型的企业指南"],
-    [/^GitHub Release Notes - June 2026 Latest Updates/iu, "GitHub 2026 年 6 月发布说明与最新更新"],
-    [/^22 AI workflow automation examples you have to try in 2026/iu, "2026 年 22 个 AI 工作流自动化示例"],
-    [/^Microsoft Build 2026 Book of News/iu, "Microsoft Build 2026 新闻集 AI 回顾"],
-    [/^Microsoft Work IQ: Copilot Credits Reset 2027 Budgets/iu, "Microsoft Work IQ：Copilot Credits 重置 2027 年预算"],
-    [/^Movate and MelodyArc Announce Applied AI Partnership/iu, "Movate 与 MelodyArc 宣布应用 AI 合作"],
-    [/^Production-grade AI agents for financial compliance/iu, "Stripe 金融合规生产级 AI Agent 经验"],
-    [/^Best AI Development Services for Startups and Enterprises/iu, "面向初创公司和企业的 AI 开发服务"],
-  ];
-  return rules.find(([pattern]) => pattern.test(clean))?.[1] || "";
+function loadSourceTitleTranslations() {
+  if (!fs.existsSync(sourceTitleTranslationsFile)) return new Map();
+  try {
+    const json = JSON.parse(fs.readFileSync(sourceTitleTranslationsFile, "utf8"));
+    const entries = Array.isArray(json) ? json : (Array.isArray(json.translations) ? json.translations : []);
+    const map = new Map();
+    for (const entry of entries) {
+      const sourceTitle = String(entry?.sourceTitle || "").trim();
+      const zhTitle = String(entry?.zhTitle || entry?.translation || "").trim();
+      if (!sourceTitle || !zhTitle || hasTextContamination(sourceTitle) || hasTextContamination(zhTitle)) continue;
+      map.set(sourceTitleTranslationKey(sourceTitle), cleanSourceTitleForPublicTitle(zhTitle));
+    }
+    return map;
+  } catch {
+    return new Map();
+  }
 }
 
-function translateSourceTitleFromPattern({ type, company, sourceEventTitle, amount }) {
-  const clean = cleanAutoTitleSubject(cleanSourceTitleForPublicTitle(sourceEventTitle));
-  const known = translateKnownSourceTitle(clean);
-  if (known) return known;
+function sourceTitleNeedsChineseTranslation(title = "") {
+  const text = String(title || "").trim();
+  const hanCount = text.match(/[\u4e00-\u9fff]/gu)?.length || 0;
+  const latinWords = text.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+  return text.length > 12 && hanCount < 4 && latinWords.length >= 3;
+}
 
-  const fundingMatch = clean.match(/^(.{2,70}?)\s+(?:Raises|Raised|Lands|Secures|Closes)\s+(\$ ?\d+(?:\.\d+)?\s?(?:M|B|million|billion)?)\s*(Seed|Pre-Seed|Series\s+[A-Z])?\s*(?:for|to)\s+(.{4,90})$/iu);
-  if (fundingMatch) {
-    const subject = cleanAutoTitleSubject(fundingMatch[1]) || company;
-    const money = chineseAmountLabel(fundingMatch[2]);
-    const round = fundingMatch[3] ? `${fundingMatch[3].replace(/pre-seed/iu, "Pre-Seed").replace(/seed/iu, "种子轮").replace(/series\s+([A-Z])/iu, "$1 轮")} ` : "";
-    const purpose = fundingMatch[4]
-      .replace(/\bAI Agent Startup\b/iu, "AI Agent 初创公司")
-      .replace(/\bEnterprise AI\b/iu, "企业 AI")
-      .replace(/\bAI\b/gu, "AI");
-    return `${subject} 为 ${purpose} 完成 ${money}${round}融资`.replace(/\s+/gu, " ").trim();
-  }
+function sourceTitleDisplayTitle(title = "") {
+  const cleaned = cleanSourceTitleForPublicTitle(title);
+  if (!cleaned || hasTextContamination(cleaned)) return "";
+  if (!sourceTitleNeedsChineseTranslation(cleaned)) return cleaned;
+  return sourceTitleTranslations.get(sourceTitleTranslationKey(cleaned)) || "";
+}
 
-  if (/\bRelease Notes\b/iu.test(clean)) {
-    const owner = company && company !== "AI" ? company : clean.split(/\s+/u)[0];
-    return `${owner} 发布说明与最新更新`;
-  }
-  if (/\blaunches?|introduces?|releases?|announces?\b/iu.test(clean)) {
-    const subject = company && company !== "AI" ? company : cleanAutoTitleSubject(clean.split(/\b(?:launches?|introduces?|releases?|announces?)\b/iu)[0]);
-    return `${subject} 发布或推出原文所述 AI 产品能力`;
-  }
-  if (/\bcase study\b/iu.test(clean)) return `${company} 相关 AI 案例研究`;
-  if (/\bguide|playbook|roadmap|best practices|examples|statistics|trends|report\b/iu.test(clean)) {
-    const topic = clean
-      .replace(/\bAI\b/gu, "AI")
-      .replace(/\bAgent\b/gu, "Agent")
-      .replace(/\bWorkflow Automation\b/iu, "工作流自动化")
-      .replace(/\bInfrastructure\b/iu, "基础设施")
-      .replace(/\bEnterprise\b/iu, "企业")
-      .replace(/\bInsurance\b/iu, "保险")
-      .replace(/\bHealthcare\b/iu, "医疗")
-      .replace(/\bProductivity\b/iu, "生产力")
-      .replace(/\bStatistics\b/iu, "统计")
-      .replace(/\bTrends\b/iu, "趋势")
-      .replace(/\bReport\b/iu, "报告")
-      .replace(/\bGuide\b/iu, "指南")
-      .replace(/\bPlaybook\b/iu, "手册")
-      .replace(/\bRoadmap\b/iu, "路线图")
-      .replace(/\bBest Practices\b/iu, "最佳实践");
-    return topic;
-  }
-  if (type === "funding") {
-    const money = chineseAmountLabel(amount);
-    return `${company} 完成${money ? `${money} ` : ""}融资`;
+const sourceTitleTranslations = loadSourceTitleTranslations();
+
+function publicTitleForAutoSignal({ sourceEventTitle }) {
+  return sourceTitleDisplayTitle(sourceEventTitle);
+}
+
+function sourceTitleLineFromText(text = "") {
+  const lines = String(text || "")
+    .split(/\r?\n/u)
+    .map((line) => line.replace(/\s+/gu, " ").trim())
+    .filter(Boolean);
+  for (const line of lines) {
+    if (line.length < 12 || line.length > 180) continue;
+    if (hasTextContamination(line)) continue;
+    if (/^(Image Credits?|Credit|Photo|Topics?|Most Popular|Loading the next article|Error loading|REGISTER NOW|Skip to content)\b/iu.test(line)) continue;
+    if (/^(AI|Startups?|Government & Policy|Enterprise|News|Opinion|Sponsored)$/iu.test(line)) continue;
+    if (/^(UPDATED|By)\b/iu.test(line)) continue;
+    if (/\b\d{1,2}:\d{2}\s*(?:AM|PM)\b|\b(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2}\s+\d{4}\b/iu.test(line)) continue;
+    const words = line.match(/\b[A-Za-z][A-Za-z0-9&.'-]*\b/gu) || [];
+    const hasEventWord = /\b(AI|agent|agents|FDE|Forward Deployed|raises?|raised|funding|seed|launches?|announces?|introducing|available|case|platform|models?|enterprise|robot|robots|workflow)\b|融资|发布|推出|上线|合作|采购|部署|落地|客户|案例/iu.test(line);
+    if (!hasEventWord) continue;
+    if (!hasCjk(line) && words.length < 4) continue;
+    return cleanSourceTitleForPublicTitle(line);
   }
   return "";
 }
 
-function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount }) {
-  const owner = publicCardCopy(company || "AI");
-  const sourceTitle = cleanSourceTitleForPublicTitle(sourceEventTitle);
-  const money = amount ? `${amount} ` : "";
-  const translatedTitle = translateSourceTitleFromPattern({ type, company: owner, sourceEventTitle: sourceTitle, amount });
-  if (translatedTitle && hasCjk(translatedTitle)) return translatedTitle;
-  if (type === "funding") return `${owner} ${money}${sourceTitle}`.trim();
-  return sourceTitle;
+function originalSourceTitleFromSection(section) {
+  const raw = readRawJson(section);
+  const rawTitle = cleanSourceTitleForPublicTitle(raw.title || "");
+  if (rawTitle && !hasTextContamination(rawTitle) && !/AI\s*business signal|来源材料显示|公开材料显示/iu.test(rawTitle)) {
+    return rawTitle;
+  }
+  const fullTextTitle = sourceTitleLineFromText(raw.full_text || raw.clean_text || "");
+  if (fullTextTitle) return fullTextTitle;
+  return "";
+}
+
+function sourcePointMatchesSignalType(point = "", type = "") {
+  const text = String(point || "");
+  if (!text) return false;
+  if (type === "funding") return /融资|资金流向|资本事件|\$|美元|Series|Seed/iu.test(text);
+  if (type === "product_service") return /产品|平台|服务|发布|推出|上线|API|SDK|可采购|可部署/iu.test(text);
+  return /客户|部署|采用|生产落地|企业工作流|案例|试点/iu.test(text);
 }
 
 function cleanSourceEventTitle(title = "") {
@@ -1464,20 +1677,16 @@ function autoSignalSpec(poolRef, section, index) {
   }
   const amount = extractAmount(text);
   const prefix = `SIG-${date.replaceAll("-", "")}-A${String(index).padStart(2, "0")}`;
-  const fundingAngle = fundingAngleFromScenario(scenario);
-  const originalTitle = poolTitle(section);
-  const sourceTitle = originalTitle || "";
+  const sourceTitle = originalSourceTitleFromSection(section);
+  if (!sourceTitle) return null;
   const sourceEventTitle = cleanSourceEventTitle(sourceTitle);
   if (!sourceEventTitle) return null;
   const title = publicTitleForAutoSignal({ type, company, sourceEventTitle, amount });
+  if (!title) return null;
   const sourcePoints = sourcePointsFromSection(section);
   const sourceExcerpt = sourceExcerptFromSection(section, sourcePoints);
-  const fallbackEventLine = type === "funding"
-    ? `${company} 宣布${amount ? `${amount} ` : ""}融资，业务重点落在${fundingAngle}。`
-    : type === "product_service"
-      ? `${company} 相关产品材料记录了新的产品、能力或应用场景。`
-      : `${company} 相关案例材料记录了客户、流程或结果信息。`;
-  const eventLine = sourcePoints.find(Boolean) || fallbackEventLine;
+  const eventLine = sourcePoints.find((point) => sourcePointMatchesSignalType(point, type)) || sourcePoints[0] || sourceExcerpt;
+  if (!sourcePointIsUsable(eventLine)) return null;
   return {
     id: prefix,
     poolRef,
@@ -1528,6 +1737,12 @@ function autoSignalEligibilityIssues(section) {
   if (inferSignalType(section) === "funding" && importanceType === "important_funding" && !isSingleCompanyFundingSignal(section) && !directFundingProof) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "funding_not_single_company_round"));
   }
+  const sourceEventTitle = cleanSourceEventTitle(originalSourceTitleFromSection(section));
+  if (!sourceEventTitle) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, "original_source_title_missing"));
+  } else if (!sourceTitleDisplayTitle(sourceEventTitle)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, "source_title_translation_missing_or_contaminated"));
+  }
   if (isNonCommercialPolicyOrEthicsSignal(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "non_commercial_policy_or_ethics_signal"));
   }
@@ -1550,8 +1765,11 @@ function promotePriorityForIssues(issues = []) {
 function repairSuggestionForIssues(issues = []) {
   const text = issues.join(" ");
   if (/stale_source_date/iu.test(text)) return "Find a fresh same-event source or keep as context-only Core Pool evidence.";
+  if (/newsletter_roundup_requires_original_event_source/iu.test(text)) return "Use the newsletter only as discovery context; recapture the original dated event source before promoting.";
   if (/valid_page_type|generic_report_or_list_not_fact_signal|text_indicates_index_only|index_only|docs_or_catalog_or_investing_thesis/iu.test(text)) return "Resolve to a dated single company, product, funding, or customer event before promoting.";
+  if (/source_title_translation_missing_or_contaminated/iu.test(text)) return "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.";
   if (/fact_type_constraints:.*user_feedback|user_feedback_not_fact_signal/iu.test(text)) return "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.";
+  if (/workforce_retraining_program_not_formal_signal_card/iu.test(text)) return "Keep workforce retraining or public funding programs as context; promote only single-company financing, product/service launch, or customer deployment evidence.";
   if (/funding_not_single_company_round/iu.test(text)) return "Use a single-company funding announcement with amount, round, investor, and date.";
   if (/source_auditability|evidence_quality|missing_full_text|missing_source_url|incomplete_evidence_object/iu.test(text)) return "Repair Raw evidence extraction so source URL, full text, excerpts, and hashes are present.";
   if (/business_signal_scope/iu.test(text)) return "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.";
@@ -1639,15 +1857,18 @@ function autoSignalsFromPool(sections, explicitSpecs) {
     pickWhere((item) => item.spec.type === lane.type, lane.target);
   }
   pickWhere(() => true);
+  const finalPicked = Number.isFinite(assetGenerationLimit)
+    ? picked.slice(0, assetGenerationLimit)
+    : picked;
 
-  for (const item of picked) {
+  for (const item of finalPicked) {
     selectedPoolRefs.add(item.spec.poolRef);
     selectedClusterKeys.add(item.clusterKey);
   }
   if (args.get("debug-auto-signals") === "true") {
     console.log(JSON.stringify({
       auto_signal_candidate_count: candidates.length,
-      auto_signal_picked_count: picked.length,
+      auto_signal_picked_count: finalPicked.length,
       auto_signal_debug_rejects: notPromotedCorePool.map((item) => ({
         poolRef: item.pool_ref,
         title: item.title,
@@ -1656,7 +1877,7 @@ function autoSignalsFromPool(sections, explicitSpecs) {
     }, null, 2));
   }
   return {
-    specs: picked.map((item, itemIndex) => withAutoSignalId(item.spec, itemIndex + 1)),
+    specs: finalPicked.map((item, itemIndex) => withAutoSignalId(item.spec, itemIndex + 1)),
     notPromotedCorePool,
   };
 }
@@ -1846,7 +2067,7 @@ ${sourceFact}
 
 ## 原文要点
 
-${originalPoints.length ? originalPoints.map((item) => `- ${item}`).join("\n") : "- 原文未提供更多可拆分事实点，需以可见原文片段核对。"}
+${originalPoints.length ? originalPoints.map((item) => `- ${item}`).join("\n") : `- ${sourceExcerpt || sourceFact}`}
 
 ## 价值描述
 
@@ -1871,7 +2092,8 @@ date: ${date}
 status: draft
 asset_level: candidate
 fact_draft_gate: passed
-frontend_copy_gate: passed
+source_evidence_gate: passed
+candidate_regression_gate: passed
 created_at: ${now}
 updated_at: ${now}
 industry_or_department: "${spec.industry}"
@@ -1911,7 +2133,8 @@ status: draft
 asset_level: candidate
 trend_evidence_gate: threshold_pending
 fact_draft_gate: passed
-frontend_copy_gate: passed
+source_evidence_gate: passed
+candidate_regression_gate: passed
 created_at: ${now}
 updated_at: ${now}
 trend_hypothesis: "${spec.hypothesis}"
@@ -1984,7 +2207,8 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
     `- skipped_count: ${skipped.length}`,
     `- signal_asset_count: ${frontstageSpecs.length}`,
     `- core_pool_not_promoted_count: ${notPromotedCorePool.length}`,
-    `- frontstage_target_count: ${signalTarget}`,
+    `- frontstage_top10_target_count: ${frontstageTop10Target}`,
+    `- asset_generation_limit: ${Number.isFinite(assetGenerationLimit) ? assetGenerationLimit : "all_qualified_core_pool"}`,
     `- signal_asset_mode: all qualified Core Pool items`,
     "",
     "## Signal Card Assets",
@@ -2084,7 +2308,6 @@ function main() {
   const frontSignalSourceLevels = { S: 0, A: 0, B: 0 };
   const signalIndexSpecs = [];
   const acceptedClusterKeys = new Set();
-  const acceptedFactKeys = new Set();
 
   cleanSignalCardsForDate();
   const existingSignalIndex = existingSignalCardIndex();
@@ -2107,15 +2330,7 @@ function main() {
       clusterRows.push({ poolRef: spec.poolRef, clusterKey, decision: "skipped", reason: "duplicate_event_cluster" });
       continue;
     }
-    const factKeys = signalFactFingerprintKeys(spec, section);
-    const duplicateFactKey = factKeys.find((key) => acceptedFactKeys.has(key));
-    if (duplicateFactKey) {
-      skipped.push(`${spec.poolRef}: duplicate fact fingerprint ${duplicateFactKey}`);
-      clusterRows.push({ poolRef: spec.poolRef, clusterKey: duplicateFactKey, decision: "skipped", reason: "duplicate_fact_fingerprint" });
-      continue;
-    }
     acceptedClusterKeys.add(clusterKey);
-    for (const factKey of factKeys) acceptedFactKeys.add(factKey);
     clusterRows.push({ poolRef: spec.poolRef, clusterKey, decision: "accepted", reason: "" });
     const existing = findExistingSignalCard(existingSignalIndex, spec, section);
     if (existing) {

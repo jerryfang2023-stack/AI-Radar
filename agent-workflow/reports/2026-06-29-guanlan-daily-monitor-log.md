@@ -1,7 +1,7 @@
 # 2026-06-29 Guanlan Daily Monitor Log
 
-- generated_at: 2026-06-29T05:24:29.714Z
-- raw_count: 230
+- generated_at: 2026-06-29T05:41:18.510Z
+- raw_count: 152
 - aihot_mode: source-artifacts
 - aihot_since: 
 - aihot_discovered_count: 0
@@ -14,119 +14,113 @@
 - external_search_activated: false
 - historical_dedupe_enabled: true
 - historical_raw_records_checked: 5772
-- historical_duplicates_removed_before_fetch: 2
+- historical_duplicates_removed_before_fetch: 29
 - historical_duplicates_removed_after_fetch: 0
 - raw_dedupe_buffer: 40
 - aihot_count: 7
-- keyword_search_count: 202
-- keyword_search_non_community_count: 202
-- keyword_search_path_distribution: official_original=61; a_media_gdelt=39; industry_landing=31; capital_startup=27; developer_ecosystem=24; procurement_marketplace=11; fde_implementation=9
-- keyword_search_intent_distribution: find_customer_case=83; find_original_source=70; find_startups=29; find_market_trend=11; find_workflow_change=9
-- source_distribution: keyword-search=202; gdelt=14; aihot=7; rss-feed=7
+- keyword_search_count: 65
+- keyword_search_non_community_count: 65
+- keyword_search_path_distribution: developer_ecosystem=13; official_original=13; a_media_gdelt=12; industry_landing=9; capital_startup=8; procurement_marketplace=6; fde_implementation=4
+- keyword_search_intent_distribution: find_original_source=40; find_customer_case=14; find_startups=11
+- source_distribution: rss-feed=66; keyword-search=65; gdelt=14; aihot=7
 - enterprise_ai_transformation_column: 企业AI化
-- enterprise_ai_transformation_candidate_count: 169
-- enterprise_ai_transformation_stage_distribution: platform_enablement=61; production_rollout=42; ai_transformation=26; pilot=25; org_build=10; procurement=5
+- enterprise_ai_transformation_candidate_count: 97
+- enterprise_ai_transformation_stage_distribution: platform_enablement=67; pilot=15; ai_transformation=6; production_rollout=5; org_build=4
 - enterprise_ai_transformation_boundary: Enterprise AI transformation is a monitoring lens, not a fourth Business Signal Card type; FDE / Applied AI role pages are organization-capability signals and require separate source-backed product, funding, customer deployment, procurement, or production rollout evidence before formal Card use.
-- raw_count_by_channel: keyword-search=202; gdelt=14; aihot=7; rss-feed=7
+- raw_count_by_channel: rss-feed=66; keyword-search=65; gdelt=14; aihot=7
 - keyword_monitoring_config: 01-SiteV2/content/11-databases/keyword-monitoring-v2.json
-- keyword_group_distribution: targeted-pool-gap-refill=112; mature-commercial-signal=54; developer-ecosystem-signal=17; enterprise-ai-implementation-signal=14; technical-iteration-signal=10; uncategorized=7; early-direction-signal=6; capital-market-signal=5; outside-core-exploration=5
-- theme_distribution: targeted-pool-gap-refill=112; mature-commercial-signal=60; enterprise-ai-implementation-signal=16; technical-iteration-signal=10; developer-ecosystem-signal=7; early-direction-signal=7; uncategorized=7; outside-core-exploration=6; capital-market-signal=5
-- theme_concentration_warning: warning: targeted-pool-gap-refill concentration 48.7% exceeds 40%; downstream Pool / cards / business signals must diversify or declare theme_day=true.
-- source_level_distribution: B=193; A=23; S=11; C=3
-- evidence_object_type_distribution: case_or_customer=137; event=48; changelog_or_release=7; official_index_or_directory=7; regulatory_or_procurement=7; supporting_article=7; community_feedback=5; pricing_change=5; research_or_report=3; event_on_official_page=2; repo_readme_or_index=1; search_result_or_tool_directory=1
-- pool_route_distribution: watchlist=120; emerging_pool=52; core_pool=47; discard=45; index_only=18; user_feedback_pool=4
-- pool_index_route_distribution: watchlist=51; core_pool=36; emerging_pool=25; index_only=8; user_feedback_pool=3
+- keyword_group_distribution: uncategorized=58; targeted-pool-gap-refill=30; mature-commercial-signal=21; technical-iteration-signal=17; early-direction-signal=11; developer-ecosystem-signal=7; capital-market-signal=4; enterprise-ai-implementation-signal=4
+- theme_distribution: uncategorized=58; targeted-pool-gap-refill=30; mature-commercial-signal=21; technical-iteration-signal=17; early-direction-signal=11; developer-ecosystem-signal=7; capital-market-signal=4; enterprise-ai-implementation-signal=4
+- theme_concentration_warning: none
+- source_level_distribution: B=130; S=14; A=7; C=1
+- evidence_object_type_distribution: case_or_customer=68; official_index_or_directory=33; event=30; research_or_report=7; changelog_or_release=4; event_on_official_page=3; supporting_article=3; regulatory_or_procurement=2; pricing_change=1; search_result_or_tool_directory=1
+- pool_route_distribution: watchlist=56; emerging_pool=46; discard=39; core_pool=37; index_only=20
+- pool_index_route_distribution: watchlist=45; emerging_pool=43; core_pool=33; index_only=17
 - pool_index_count: 95
 - pool_target: 75
 - pool_selection_buffer: 20
-- routed_pool_count: 87
+- routed_pool_count: 78
 - routed_pool_target: 60
 - core_pool_target: 30
 - core_non_large_vendor_target: 20
-- non_core_pool_count: 51
-- index_only_pool_count: 8
+- non_core_pool_count: 45
+- index_only_pool_count: 17
 - aihot_index_only_count: 7
 - aihot_core_count: 0
 - importance_coverage_gaps: none
-- pool_importance_coverage_gaps: important_technical_trend=4/5
+- pool_importance_coverage_gaps: none
 - daily_selected_change_card_theme_gate: default max 2 per theme; max 3 only when theme_day=true and daily log explains why.
 - pool_theme_gate: diversify Pool; default max 4 candidate items per theme unless theme_day=true.
 - pool_count: 95
 - change_cluster_candidates: not_generated_by_monitor
 - heat_candidates: none
-- failed_sources: source-artifact keyword: keyword-search pre-gate filtered 43 result(s): missing_ai_anchor_in_result=13; noise_term:career=12; job_or_salary_page=10; noise_term:hiring=6; noise_term:definition=2; targeted-refill pre-gate filtered 24 result(s): directory_or_search_page=6; noise_term:hiring=6; missing_ai_anchor_in_result=3; noise_term:career=3; noise_term:affiliate=1; noise_term:avatar=1; noise_term:definition=1; noise_term:meme=1; noise_term:salary=1; noise_term:translation=1; targeted pool/core refill cycle 1 added 112 item(s) for important_technical_trend=4/5; core_pool=16/30; core_non_large=11/20; targeted pool/core refill cycle 2 added 0 item(s) for important_technical_trend=4/5
+- failed_sources: source-artifact keyword: keyword-search pre-gate filtered 27 result(s): noise_term:hiring=10; noise_term:career=8; missing_ai_anchor_in_result=5; job_or_salary_page=1; noise_term:affiliate=1; noise_term:avatar=1; noise_term:jobs at=1; source-artifact keyword: Anysearch fallback for query "enterprise AI transformation production rollout customer deployment (official OR blog OR changelog OR docs OR API OR SDK OR pricing OR customer story OR partnership OR launch)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "AI implementation startup design partner pilot customer (official OR blog OR changelog OR docs OR API OR SDK OR pricing OR customer story OR partnership OR launch)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "agent governance evals production rollout enterprise AI (official OR blog OR changelog OR docs OR API OR SDK OR pricing OR customer story OR partnership OR launch)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "open-source AI agent GitHub enterprise adoption (official OR blog OR changelog OR docs OR API OR SDK OR pricing OR customer story OR partnership OR launch)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "AI implementation startup funding enterprise workflow (official OR blog OR changelog OR docs OR API OR SDK OR pricing OR customer story OR partnership OR launch)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "enterprise AI transformation production rollout customer deployment (site:github.com OR site:npmjs.com OR site:pypi.org OR site:huggingface.co OR site:marketplace.visualstudio.com OR site:chromewebstore.google.com)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "AI implementation startup design partner pilot customer (site:github.com OR site:npmjs.com OR site:pypi.org OR site:huggingface.co OR site:marketplace.visualstudio.com OR site:chromewebstore.google.com)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "agent governance evals production rollout enterprise AI (site:github.com OR site:npmjs.com OR site:pypi.org OR site:huggingface.co OR site:marketplace.visualstudio.com OR site:chromewebstore.google.com)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "open-source AI agent GitHub enterprise adoption (site:github.com OR site:npmjs.com OR site:pypi.org OR site:huggingface.co OR site:marketplace.visualstudio.com OR site:chromewebstore.google.com)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "AI implementation startup funding enterprise workflow (site:github.com OR site:npmjs.com OR site:pypi.org OR site:huggingface.co OR site:marketplace.visualstudio.com OR site:chromewebstore.google.com)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "enterprise AI transformation production rollout customer deployment (startup OR funding OR seed OR pre-seed OR YC OR venture OR Crunchbase OR Dealroom OR PitchBook OR Tracxn)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "AI implementation startup design partner pilot customer (startup OR funding OR seed OR pre-seed OR YC OR venture OR Crunchbase OR Dealroom OR PitchBook OR Tracxn)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "agent governance evals production rollout enterprise AI (startup OR funding OR seed OR pre-seed OR YC OR venture OR Crunchbase OR Dealroom OR PitchBook OR Tracxn)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "open-source AI agent GitHub enterprise adoption (startup OR funding OR seed OR pre-seed OR YC OR venture OR Crunchbase OR Dealroom OR PitchBook OR Tracxn)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "AI implementation startup funding enterprise workflow (startup OR funding OR seed OR pre-seed OR YC OR venture OR Crunchbase OR Dealroom OR PitchBook OR Tracxn)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "enterprise AI transformation production rollout customer deployment (industry use case OR customer case OR vertical SaaS OR consulting report OR workflow OR adoption)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "forward deployed engineer applied AI customer deployment (industry use case OR customer case OR vertical SaaS OR consulting report OR workflow OR adoption)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "Applied AI architect enterprise customer workflow (industry use case OR customer case OR vertical SaaS OR consulting report OR workflow OR adoption)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "AI transformation workflow automation ROI customer case (industry use case OR customer case OR vertical SaaS OR consulting report OR workflow OR adoption)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "AI Agent funding enterprise customers (industry use case OR customer case OR vertical SaaS OR consulting report OR workflow OR adoption)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "forward deployed engineer AI customer deployment (FDE OR "forward deployed" OR "applied AI" OR "customer engineering" OR "technical scoping" OR "production rollout" OR "pilot customer" OR "customer story" OR "case study")": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "FDE AI implementation production rollout (FDE OR "forward deployed" OR "applied AI" OR "customer engineering" OR "technical scoping" OR "production rollout" OR "pilot customer" OR "customer story" OR "case study")": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "applied AI deployment customer workflow (FDE OR "forward deployed" OR "applied AI" OR "customer engineering" OR "technical scoping" OR "production rollout" OR "pilot customer" OR "customer story" OR "case study")": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "applied AI engineer enterprise customer case (FDE OR "forward deployed" OR "applied AI" OR "customer engineering" OR "technical scoping" OR "production rollout" OR "pilot customer" OR "customer story" OR "case study")": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "customer engineering AI production deployment (FDE OR "forward deployed" OR "applied AI" OR "customer engineering" OR "technical scoping" OR "production rollout" OR "pilot customer" OR "customer story" OR "case study")": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "enterprise AI transformation production rollout customer deployment (procurement OR tender OR marketplace OR app store OR AWS Marketplace OR Azure Marketplace OR job description)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "AI implementation startup design partner pilot customer (procurement OR tender OR marketplace OR app store OR AWS Marketplace OR Azure Marketplace OR job description)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "agent governance evals production rollout enterprise AI (procurement OR tender OR marketplace OR app store OR AWS Marketplace OR Azure Marketplace OR job description)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "open-source AI agent GitHub enterprise adoption (procurement OR tender OR marketplace OR app store OR AWS Marketplace OR Azure Marketplace OR job description)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "AI implementation startup funding enterprise workflow (procurement OR tender OR marketplace OR app store OR AWS Marketplace OR Azure Marketplace OR job description)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "enterprise AI transformation production rollout customer deployment (site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "AI implementation startup design partner pilot customer (site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "agent governance evals production rollout enterprise AI (site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "open-source AI agent GitHub enterprise adoption (site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; source-artifact keyword: Anysearch fallback for query "AI implementation startup funding enterprise workflow (site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)": Anysearch You have reached today's free quota limit. Please try again tomorrow.; targeted-refill pre-gate filtered 5 result(s): noise_term:hiring=5; targeted pool/core refill cycle 1 added 30 item(s) for core_pool=23/30; core_non_large=17/20
 - fallback_used: Default monitor uses AI HOT daily feed first, AI HOT all-mode remainder second, then keyword rules. External multi-path keyword search and GDELT activate when the default lanes do not meet the Raw minimum, an importance type is thin, or important candidates lack original text / usable evidence object. HN is feedback only and must not dominate. GDELT failures fall back to A-tier media search.
 - evidence_gaps: keyword-search must not stop at community feedback. If official, developer ecosystem, startup/funding, industry landing, procurement/marketplace or A-media paths fail, the item can only remain Watchlist/User Feedback until non-community evidence is found.
-- raw_count_by_source_type: web=170; media=12; developer=11; news=11; industry=7; marketplace=4; official=4; product=4; community=3; builder=2; funding=1; organization-capability=1
-- front_signal_sab_source_count: S=1; A=2; B=25; total=28
+- raw_count_by_source_type: web=105; builder=15; product=10; media=4; newsletter=4; official=4; marketplace=3; news=2; community=1; developer=1; funding=1; industry=1; research=1
+- front_signal_sab_source_count: S=0; A=0; B=10; total=10
 - source_registry_config: 01-SiteV2/content/11-databases/source-registry-v2.json
-- raw_snapshot_status_distribution: fetched-readable-text-main=76; timeout-fallback-visible-text=41; fetched-readable-text-content-container=40; http-451-fallback-text=20; blocked-http-403=17; fetched-readable-text-body-visible-text=12; fetched-readable-text-article=9; no-url-summary-only=7; fetched-readable-text-json-ld=4; summary-only-low-readable-body=2; fetch-failed-fallback-visible-text=1; http-530-fallback-text=1
+- raw_snapshot_status_distribution: fetched-readable-text-main=38; no-url-summary-only=37; fetched-readable-text-content-container=30; fetched-readable-text-article=22; fetched-readable-text-body-visible-text=9; blocked-http-403=8; fetched-readable-text-json-ld=4; summary-only-low-readable-body=3; http-526-fallback-text=1
 - core_original_evidence_count: pending; to be filled after important-card evidence review.
 - raw_snapshot_policy: Raw originals save clean text snapshots when fetchable; high-volatility sources keep available local text and must be rechecked before downstream use.
 
 ## Source Level Distribution
 
-- B: 193
-- S: 11
-- C: 3
-- A: 23
+- B: 130
+- A: 7
+- S: 14
+- C: 1
 
 ## Evidence Object Type Distribution
 
-- case_or_customer: 137
-- changelog_or_release: 7
-- regulatory_or_procurement: 7
-- event: 48
-- pricing_change: 5
-- event_on_official_page: 2
-- repo_readme_or_index: 1
-- research_or_report: 3
-- community_feedback: 5
-- supporting_article: 7
-- official_index_or_directory: 7
+- case_or_customer: 68
+- event: 30
+- regulatory_or_procurement: 2
+- changelog_or_release: 4
+- pricing_change: 1
+- research_or_report: 7
+- supporting_article: 3
+- official_index_or_directory: 33
 - search_result_or_tool_directory: 1
+- event_on_official_page: 3
 
 ## Theme Distribution
 
-- 外围探索信号 (outside-core-exploration): 6
-- 成熟信号 (mature-commercial-signal): 60
-- 早期信号 (early-direction-signal): 7
+- 成熟信号 (mature-commercial-signal): 21
+- 资本市场信号 (capital-market-signal): 4
+- Enterprise AI / FDE implementation signal (enterprise-ai-implementation-signal): 4
+- 技术迭代信号 (technical-iteration-signal): 17
+- targeted-pool-gap-refill (targeted-pool-gap-refill): 30
 - 开发者生态信号 (developer-ecosystem-signal): 7
-- Enterprise AI / FDE implementation signal (enterprise-ai-implementation-signal): 16
-- 技术迭代信号 (technical-iteration-signal): 10
-- targeted-pool-gap-refill (targeted-pool-gap-refill): 112
-- uncategorized (uncategorized): 7
-- 资本市场信号 (capital-market-signal): 5
+- uncategorized (uncategorized): 58
+- 早期信号 (early-direction-signal): 11
 
 ## Keyword Group Distribution
 
-- developer-ecosystem-signal: 17
-- mature-commercial-signal: 54
-- early-direction-signal: 6
-- enterprise-ai-implementation-signal: 14
-- technical-iteration-signal: 10
-- targeted-pool-gap-refill: 112
-- uncategorized: 7
-- capital-market-signal: 5
-- outside-core-exploration: 5
+- mature-commercial-signal: 21
+- capital-market-signal: 4
+- enterprise-ai-implementation-signal: 4
+- technical-iteration-signal: 17
+- targeted-pool-gap-refill: 30
+- developer-ecosystem-signal: 7
+- uncategorized: 58
+- early-direction-signal: 11
 
 ## Keyword Search Path Distribution
 
-- developer_ecosystem: 24
-- industry_landing: 31
-- official_original: 61
-- procurement_marketplace: 11
-- capital_startup: 27
-- fde_implementation: 9
-- a_media_gdelt: 39
+- developer_ecosystem: 13
+- fde_implementation: 4
+- procurement_marketplace: 6
+- industry_landing: 9
+- capital_startup: 8
+- official_original: 13
+- a_media_gdelt: 12
 
 ## Keyword Search Intent Distribution
 
-- find_customer_case: 83
-- find_original_source: 70
-- find_startups: 29
-- find_workflow_change: 9
-- find_market_trend: 11
+- find_original_source: 40
+- find_startups: 11
+- find_customer_case: 14
 
 ## Three-Lane Monitor Policy
 
