@@ -49,25 +49,38 @@
           <label class="weekly-radar-filter">
             <span>时间窗口</span>
             <select aria-label="选择周报时间窗口" data-weekly-report-selector onchange="if (this.value) window.location.assign(this.value);">
-              <option value="weekly-ai-business-change-radar.html" selected>2026.06.15 - 06.21</option>
+              <option value="weekly-ai-business-change-radar.html" selected>2026.06.22 - 06.28</option>
+              <option value="weekly-ai-business-change-radar-2026-06-22.html">2026.06.15 - 06.21</option>
               <option value="weekly-ai-business-change-radar-2026-06-15.html">2026.06.09 - 06.15</option>
-              <option value="" disabled>2026.06.02 - 06.08（待补档）</option>
             </select>
           </label>
         </div>
         <div class="weekly-radar-list" aria-label="每周周报列表">
           <article class="weekly-radar-card">
             <div>
+              <span class="weekly-radar-date">2026-06-22 / 2026-06-28</span>
+              <h3>企业 AI 进入组织级工作流，Agent 从能力演示转向流程接管</h3>
+              <p>企业 AI 正从“能不能让 Agent 完成任务”的能力演示，转向“能不能把 Agent 放进真实组织工作流、权限边界、上下文系统、销售客服闭环和工程交付链路”的流程接管问题。</p>
+              <div class="weekly-radar-tags" aria-label="周报数据口径">
+                <span>Signals 97 张</span>
+                <span>Opinions 38 条</span>
+                <span>Community 54 条</span>
+              </div>
+            </div>
+            <a class="weekly-radar-link" href="weekly-ai-business-change-radar.html" data-weekly-report-action>阅读本周周报</a>
+          </article>
+          <article class="weekly-radar-card">
+            <div>
               <span class="weekly-radar-date">2026-06-15 / 2026-06-21</span>
               <h3>企业 Agent 从工具采用进入部署服务化</h3>
-              <p>企业 Agent 已经从买工具和试 demo 推进到部署、治理、成本、上下文和交付服务的系统问题。本期重点追踪 FDE 式落地服务、模型路由与治理、AI Coding 工作台和社区 AI 企业服务四条主线，用来判断哪些机会值得进入验证。</p>
+              <p>企业 Agent 已经从买工具和试 demo 推进到部署、治理、成本、上下文和交付服务的系统问题。本期重点追踪 FDE 式落地服务、模型路由与治理、AI Coding 工作台和社区 AI 企业服务四条主线。</p>
               <div class="weekly-radar-tags" aria-label="周报数据口径">
                 <span>Signals 129 张</span>
                 <span>Opinions 51 条</span>
                 <span>Community 41 条</span>
               </div>
             </div>
-            <a class="weekly-radar-link" href="weekly-ai-business-change-radar.html" data-weekly-report-action>阅读本周周报</a>
+            <a class="weekly-radar-link" href="weekly-ai-business-change-radar-2026-06-22.html">阅读归档周报</a>
           </article>
           <article class="weekly-radar-card">
             <div>
@@ -81,18 +94,6 @@
               </div>
             </div>
             <a class="weekly-radar-link" href="weekly-ai-business-change-radar-2026-06-15.html">阅读归档周报</a>
-          </article>
-          <article class="weekly-radar-card weekly-radar-card-pending" aria-label="待补档周报">
-            <div>
-              <span class="weekly-radar-date">2026-06-02 / 2026-06-08</span>
-              <h3>周报归档待补档</h3>
-              <p>这一周的正式周报尚未发布。页面先保留归档位置，待补齐正式周报后开放阅读入口。</p>
-              <div class="weekly-radar-tags" aria-label="周报状态">
-                <span>待补档</span>
-                <span>Archive slot</span>
-              </div>
-            </div>
-            <span class="weekly-radar-link weekly-radar-link-disabled" aria-disabled="true">待补档</span>
           </article>
         </div>
       </div>
