@@ -9,6 +9,12 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 - If a same-date community automation PR has merged, or same-date data / gate are healthy and the publish workflow is red, classify the problem as publish workflow / PR handling only. Do not rerun browser collection unless data is stale, missing, or gate-failed.
 - After a local repair produces same-date data and gate, rerun daily supervision before leaving Hermes inbox items open; stale supervision reports can otherwise keep obsolete red lights alive.
 
+## 2026-06-30 Publication Waiting
+
+- Same-date Community Intelligence data, daily snapshot, Obsidian archive, selected keywords, links, and gate passing mean collection is healthy. If publication is still an open PR or queued / in-progress workflow, report Waiting rather than Problem.
+- Waiting-only publication state must not create a Hermes repair inbox or ask Codex to rerun the logged-in browser collector.
+- PR #176 confirmed the expected closure path: validate local data, publish only community-owned files, merge PR, then wait for GitHub Pages.
+
 ## 2026-06-12
 
 - Community Intelligence collection depends on local logged-in browser state. GitHub Actions can publish validated same-date files, but it cannot replace the local collector when login state or Chrome profile access is missing.

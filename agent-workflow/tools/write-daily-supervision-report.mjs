@@ -73,9 +73,8 @@ function readText(file, fallback = "") {
 function parseFields(text = "") {
   const fields = {};
   for (const line of text.split(/\r?\n/u)) {
-    const match = line.match(/^([a-zA-Z0-9_-]+):\s*(.*)$/u);
+    const match = line.match(/^(?:-\s*)?([a-zA-Z0-9_-]+):\s*(.*)$/u);
     if (!match) {
-      if (line.trim().startsWith("#")) break;
       continue;
     }
     fields[match[1]] = match[2].trim();
@@ -136,16 +135,20 @@ function sourceTitleTranslationDiagnostics(cardFiles = []) {
   };
 }
 
-function laneStatus(problems, warnings) {
+function laneStatus(problems, warnings, waiting = []) {
   if (problems.some((item) => item.severity === "manual_required")) return "manual_required";
-  if (problems.length && problems.every((item) => item.severity === "waiting")) return "waiting";
   if (problems.length) return "failed";
+  if (waiting.length) return "waiting";
   if (warnings.length) return "warning";
   return "passed";
 }
 
 function addProblem(list, message, severity = "failed") {
   list.push({ message, severity });
+}
+
+function addWaiting(list, message) {
+  list.push({ message, severity: "waiting" });
 }
 
 function slug(value = "") {
@@ -689,30 +692,85 @@ function buildFollowBuildersSkillLane() {
   const reportFile = path.join(reportsDir, `${date}-follow-builders-skill-local-publish.md`);
   const outputText = readText(outputFile);
   const reportText = readText(reportFile);
+  const reportFields = parseFields(reportText);
   const itemCount = (outputText.match(/^## BP-\d{8}-\d{2}\b/mgu) || []).length;
-  const reportCount = Number((reportText.match(/^- builder_items_count:\s*(\d+)/mu) || [])[1] || 0);
+  const outputFrontmatterCount = Number((outputText.match(/^builder_items_count:\s*(\d+)/mu) || [])[1] || 0);
+  const reportCount = Number(reportFields.builder_items_count || 0);
+  const publishStatus = reportFields.publish_status || "";
+  let publishError = reportFields.publish_error || "";
+  try {
+    publishError = publishError ? JSON.parse(publishError) : "";
+  } catch {
+    publishError = String(publishError || "").replace(/^["']|["']$/gu, "");
+  }
+  const obsidianSync = {
+    added: Number(reportFields.obsidian_sync_added ?? Number.NaN),
+    groups: Number(reportFields.obsidian_sync_groups ?? Number.NaN),
+    files: Number(reportFields.obsidian_sync_files ?? Number.NaN),
+  };
+  const obsidianSyncRecorded = Object.values(obsidianSync).every(Number.isFinite);
 
   evidence.outputFile = exists(outputFile) ? rel(outputFile) : "missing";
   evidence.reportFile = exists(reportFile) ? rel(reportFile) : "missing";
   evidence.itemCount = itemCount;
+  evidence.outputFrontmatterCount = outputFrontmatterCount;
   evidence.reportCount = reportCount;
+  evidence.publishStatus = publishStatus || (exists(reportFile) ? "not_recorded" : "missing");
+  evidence.publishError = publishError;
+  evidence.obsidianSync = obsidianSyncRecorded ? obsidianSync : "missing";
 
   if (windowPassed) {
     if (!exists(outputFile)) addProblem(problems, `missing follow-builders skill output file: ${rel(outputFile)}`);
     if (itemCount <= 0) addProblem(problems, `follow-builders skill output item count ${itemCount} below 1`);
-    if (exists(reportFile) && reportCount > 0 && reportCount !== itemCount) {
+    if (exists(reportFile) && reportCount <= 0) {
+      addProblem(problems, `follow-builders skill report count ${reportCount} below 1`);
+    }
+    if (exists(outputFile) && outputFrontmatterCount > 0 && outputFrontmatterCount !== itemCount) {
+      addProblem(problems, `follow-builders skill output frontmatter count ${outputFrontmatterCount} does not match heading count ${itemCount}`);
+    }
+    if (exists(reportFile) && reportCount > 0 && itemCount > 0 && reportCount !== itemCount) {
       addProblem(problems, `follow-builders skill report count ${reportCount} does not match output count ${itemCount}`);
+    }
+    if (exists(reportFile) && !obsidianSyncRecorded) {
+      addProblem(problems, "follow-builders skill report is missing Obsidian sync counts");
+    }
+    if (exists(reportFile) && publishStatus === "failed") {
+      const category = /prepare-digest|generate-builders|terminated|skill script|feed/iu.test(publishError)
+        ? "afternoon_skill_runner"
+        : "afternoon_publication_failure";
+      addProblem(problems, `follow-builders skill publish failed: ${publishError || rel(reportFile)}`);
+      evidence.diagnosis = {
+        category,
+        reason: publishError || "publish report recorded publish_status: failed",
+        neededAction: category === "afternoon_skill_runner"
+          ? "repair the local follow-builders skill runner or feed preparation before rerunning afternoon publish"
+          : "repair branch / PR / merge / Pages publication closure before rerunning afternoon publish",
+      };
     }
   }
   if (!exists(reportFile) && windowPassed) {
     addProblem(problems, "no same-date follow-builders skill publish report after 16:30 watchdog", "manual_required");
     actions.push("run `powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/run-follow-builders-skill.ps1` locally");
+    evidence.diagnosis = {
+      category: "afternoon_skill_runner",
+      reason: "same-date local publish report is missing after the afternoon watchdog window",
+      neededAction: "run the local follow-builders skill publisher and inspect the generated publish report",
+    };
   }
   if (windowPassed && !exists(reportFile)) {
     warnings.push("follow-builders skill publish report is missing before Hermes record time");
   }
 
   if (problems.length) {
+    if (!evidence.diagnosis) {
+      evidence.diagnosis = {
+        category: problems.some((item) => /publish failed|publish_status|PR|merge|branch|Pages/iu.test(item.message))
+          ? "afternoon_publication_failure"
+          : "afternoon_count_mismatch",
+        reason: problems[0]?.message || "follow-builders skill lane failed",
+        neededAction: "inspect the afternoon publish report, output count, and Obsidian sync counts",
+      };
+    }
     actions.push("send Codex a follow_builders_skill repair request with publish report path");
   }
 
@@ -730,6 +788,7 @@ function buildFollowBuildersSkillLane() {
 
 function buildCommunityLane() {
   const problems = [];
+  const waiting = [];
   const warnings = [];
   const evidence = {};
   const actions = [];
@@ -803,10 +862,10 @@ function buildCommunityLane() {
     } else if (!gh.latest_run && mergedPr) {
       warnings.push(`same-date Community Intelligence automation PR already merged: ${mergedPr.url}`);
     } else if (!gh.latest_run && openPr) {
-      addProblem(problems, `Community Intelligence publication PR is open: ${openPr.url}`, "waiting");
+      addWaiting(waiting, `Community Intelligence publication PR is open: ${openPr.url}`);
       actions.push("wait for Community Intelligence PR merge before declaring publication missing");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
-      addProblem(problems, `Community Intelligence publish workflow is ${gh.latest_run.status}`, "waiting");
+      addWaiting(waiting, `Community Intelligence publish workflow is ${gh.latest_run.status}`);
       actions.push("wait for Community Intelligence publish workflow completion");
     } else if (gh.latest_run?.conclusion && gh.latest_run.conclusion !== "success") {
       if (mergedPr) {
@@ -833,9 +892,10 @@ function buildCommunityLane() {
     id: "community_intelligence",
     label: "Community Intelligence",
     schedule: "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30",
-    status: laneStatus(problems, warnings),
+    status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,
+    waiting,
     warnings,
     actions: [...new Set(actions)],
   };
@@ -894,7 +954,7 @@ function aggregateStatus(lanes) {
 }
 
 function repairRequest(lane) {
-  if (!lane.problems.length && !lane.actions.length) return "none";
+  if (!lane.problems.length) return "none";
   return [
     `lane: ${lane.id}`,
     `failed_gate: ${repairGate(lane)}`,
@@ -926,7 +986,6 @@ function writeHermesInbox(payload, mdPath) {
   const created = [];
 
   for (const lane of payload.lanes) {
-    if (lane.status === "waiting") continue;
     if (!lane.problems.length) continue;
     const categories = incidentCategories(lane);
     const primaryCategory = categories[0] || "repair";
@@ -985,7 +1044,7 @@ function writeReports(payload) {
   const latestMdPath = path.join(reportsDir, "daily-supervision-report-latest.md");
 
   const tableRows = payload.lanes.map((lane) => (
-    `| ${lane.label} | ${lane.schedule} | ${lane.status} | ${lane.problems.length} | ${lane.warnings.length} |`
+    `| ${lane.label} | ${lane.schedule} | ${lane.status} | ${lane.problems.length} | ${lane.waiting?.length || 0} | ${lane.warnings.length} |`
   ));
   const laneBlocks = payload.lanes.map((lane) => [
     `## ${lane.label}`,
@@ -996,6 +1055,10 @@ function writeReports(payload) {
     "### Problems",
     "",
     markdownList(lane.problems),
+    "",
+    "### Waiting",
+    "",
+    markdownList(lane.waiting || []),
     "",
     "### Warnings",
     "",
@@ -1020,8 +1083,8 @@ function writeReports(payload) {
     `- github_mode: ${githubMode}`,
     `- scheduled_task_mode: ${taskMode}`,
     "",
-    "| Lane | Timeline | Status | Problems | Warnings |",
-    "|---|---|---|---:|---:|",
+    "| Lane | Timeline | Status | Problems | Waiting | Warnings |",
+    "|---|---|---|---:|---:|---:|",
     ...tableRows,
     "",
     ...laneBlocks,

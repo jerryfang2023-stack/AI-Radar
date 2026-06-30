@@ -1,7 +1,7 @@
 ---
 status: current
 scope: version-ledger
-last_updated: 2026-06-29
+last_updated: 2026-06-30
 use_when:
   - task startup
   - page change
@@ -18,14 +18,14 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.8.4-business-signal-source-first-hardening |
-| Version name | Business Signal Source-First Hardening |
-| Version layer | Minor |
-| Release date | 2026-06-29 |
-| Last modified at | 2026-06-29T00:00:00+08:00 |
+| Current version | V3.3.8.6-cross-lane-release-gate-hardening |
+| Version name | Cross-Lane Release Gate Hardening |
+| Version layer | Patch |
+| Release date | 2026-06-30 |
+| Last modified at | 2026-06-30T15:10:50+08:00 |
 | Product version | V3.3 |
-| Main website version | SITE-V3.3.8.4 |
-| Business Signals column version | BSIG-V1.1.3-source-first-pipeline-hardening |
+| Main website version | SITE-V3.3.8.6 |
+| Business Signals column version | BSIG-V1.1.4-pool-core-release-gate |
 | Enterprise AI lens version | EAI-V1.1.0-fde-lens-pool |
 | Intelligence Map column version | IMAP-V1.2.0-opportunity-radar |
 | Business Signals data contract | V3.3.6.3-business-source-artifact-aggregation |
@@ -40,7 +40,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - WaveSight AI is now a unified intelligence frontstage, not a V2 four-column content site.
 - V3.3 public frontstage has four entries: Business Signals, Intelligence Map, First-Line Viewpoints, and Community Intelligence.
 - Business Signals uses the Raw / Pool / Card / Relationship Graph / Trend Candidate chain.
-- Business Signals is versioned as `BSIG-V1.1.3-source-first-pipeline-hardening` in this release. Its public page keeps Top10 as the primary desk, preserves the `EAI-V1.1.0-fde-lens-pool` secondary lens, blocks generic FDE role/service pages, generic funding commentary, funding roundups, broad lists, stale sources, and search-query artifacts from Core Pool / Card promotion, locks public titles to original source titles or registered Chinese translations of English source titles, generates all qualified Cards before selecting the frontstage Top10, and blocks legacy content-output routes from current production rules.
+- Business Signals is versioned as `BSIG-V1.1.4-pool-core-release-gate` in this release. Its public page keeps Top10 as the primary desk, preserves the `EAI-V1.1.0-fde-lens-pool` secondary lens, blocks generic FDE role/service pages, generic funding commentary, funding roundups, broad lists, stale sources, and search-query artifacts from Core Pool / Card promotion, locks public titles to original source titles or registered Chinese translations of English source titles, generates all qualified Cards before selecting the frontstage Top10, treats GDELT / keyword search / RSS / AI HOT as peer source-artifact channels, and treats provider-caused Raw shortfall as diagnostic when Pool, routed Pool, usable Core Pool, non-large Core Pool, and Top10 supply are sufficient.
 - Enterprise AI / FDE is a frontstage interpretation and monitoring lens backed by an independent FDE Lens Pool. It is not a fourth Card type, and it must not expose backend-only fields.
 - Business Signals now defaults to independent source artifact collection before unified Raw / Pool normalization: `aihot`, `keyword`, `gdelt`, and `rss` each preserve source-discovered items, while the unified monitor decides final eligibility and release gates.
 - First-Line Viewpoints uses the follow-builders / builders data chain as an independent page, split into a morning RSS route and an afternoon local follow-builders skill route.
@@ -55,6 +55,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Intelligence Map and Dashboard follow the Business Signals data chain.
 - Intelligence Map is versioned independently as `IMAP-V1.2.0-opportunity-radar`. Its relationship graph keeps graph tags, while the standalone Entry Point Map and Product Pain Map use source-backed `opportunity_signals`. Its weekly report subcolumn still reads future weekly report content from `01-SiteV2/content/08-report/`, shows the current issue plus archive entries, and keeps unpublished archive slots visibly marked instead of linking to missing reports.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
+- SITE-V3.3.8.6 keeps SITE-V3.3.8.5 Community Intelligence and First-Line Viewpoints supervision semantics, then adds the Business Signals release-gate hardening needed after the 2026-06-30 provider-quota incident: Raw shortfall remains visible, but does not block downstream Card / Top10 / publication work after Pool/Core supply is healthy.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
@@ -82,7 +83,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 |---|---|---|---|---|
 | Operations Backend / 运营大后台 | `OPS-V1.0.1` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Operations console shell, navigation, module entry contracts, and backend-facing version ledger | HTML meta `wavesight-ops-console-version`, visible sidebar version, version ledger |
 | Topic Center / 选题中心 module | `V2.2.2-source-title` | Automated in the Business Signals daily PR chain at 08:57 Asia/Shanghai; regenerated after the Business frontstage gate passes and deployed through GitHub Pages after auto-merge | `business-signals + first-line-viewpoints + community-intelligence` | `topic-center.json/js`, `topic-center-hermes.json/md`, and local `04-AIP/01-选题库/<date>-每日选题.md` when local sync can run |
-| Business Signals / 商业信号 column | `BSIG-V1.1.3-source-first-pipeline-hardening` | Published through the main GitHub Pages frontstage; keeps Top10 as the primary desk and adds the 企业AI化 secondary lens | V3.3.6.3 Card data contract plus Enterprise AI lens rendering plus Core Pool source hygiene gates plus source-first pipeline hygiene gate | `v3-data-observation.html`, `v3-data-observation-desk.json` meta, version ledger |
+| Business Signals / 商业信号 column | `BSIG-V1.1.4-pool-core-release-gate` | Published through the main GitHub Pages frontstage; keeps Top10 as the primary desk and adds the 企业AI化 secondary lens | V3.3.6.3 Card data contract plus Enterprise AI lens rendering plus Core Pool source hygiene gates, source-first pipeline hygiene gate, peer source-artifact selection, and Pool/Core release override for provider-caused Raw shortfall | `v3-data-observation.html`, `v3-data-observation-desk.json` meta, version ledger |
 | Intelligence Map / 情报地图 column | `IMAP-V1.2.0-opportunity-radar` | Published through the main GitHub Pages frontstage. The relationship graph remains tag/edge based; the Entry Point Map and Product Pain Map are standalone opportunity radar panels backed by `opportunity_signals` and the weekly radar updater skill. Future weekly report issues must still be sourced from `01-SiteV2/content/08-report/` before page generation. | Business Signals relationship graph + source-backed opportunity_signals + Weekly Business Change Radar content | `intelligence-map.html`, `weekly-ai-business-change-radar.html`, `weekly-ai-business-change-radar-2026-06-15.html`, `assets/weekly-report.css`, `assets/v3-data-observation-desk.css`, `agent-workflow/skills/guanlan-opportunity-radar-updater/`, `01-SiteV2/content/08-report/*.md` |
 
 ## Current Sources Of Truth
@@ -131,6 +132,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `SITE-V3.3.8.6-freeze-cross-lane-release-gate-20260630` | Business Signals / First-Line Viewpoints / Community Intelligence / Hermes supervision | 2026-06-30 | 2026-06-30T15:10:50+08:00 | SITE-V3.3.8.6 / BSIG-V1.1.4-pool-core-release-gate | Provider-caused Raw shortfall blocking Business Signals after Pool/Core/Top10 supply is healthy; GDELT / keyword / RSS / AI HOT treated as fixed-priority Raw channels; healthy same-date Business artifacts being discarded for a blind rerun; Community waiting-only publish states creating repair inboxes; First-Line Obsidian sync being judged only by `### <run-date>` headings | Business monitor quality gate + post-monitor/pre-commit production chain + pool-to-card dedupe + Business frontstage gate + Community gate + First-Line gate + skill evals |
+| `SITE-V3.3.8.5-freeze-lane-supervision-idempotency-20260630` | First-Line Viewpoints / Community Intelligence / Hermes supervision | 2026-06-30 | 2026-06-30T15:05:00+08:00 | SITE-V3.3.8.5 | Community waiting-only publish states creating repair inboxes; First-Line Obsidian sync being judged only by `### <run-date>` headings; afternoon follow-builders reports with `publish_status: failed` being treated as complete; same-date reruns opening duplicate First-Line PRs after dry-run sync is idempotent | Community gate + First-Line gate + Obsidian dry-run `added: 0` + supervision sample parsing + skill evals |
 | `SITE-V3.3.8.3-freeze-intelligence-map-opportunity-radar-20260623` | Intelligence Map / Opportunity Radar / Skill Ops | 2026-06-23 | 2026-06-23T19:35:00+08:00 | SITE-V3.3.8.3 / IMAP-V1.2.0-opportunity-radar | Signal Candidates, 时间聚集, or Tag 聚合 modules returning; Entry Point Map or Product Pain Map being driven by old `formal_tags` or generic AI-generated labels; relationship graph being converted to `opportunity_signals`; weekly opportunity radar updates running without the `guanlan-opportunity-radar-updater` skill rules | `node --check 01-SiteV2/site/assets/v3-data-observation-desk.js` + `node agent-workflow/tools/frontstage-regression-gate.mjs` + `npm run validate:guanlan-skills` + GitHub Pages deploy |
 | `V3.3.8.2-freeze-business-core-source-hygiene-20260622` | Business Signals / Core Pool / Card generation | 2026-06-22 | 2026-06-22T14:35:00+08:00 | SITE-V3.3.8.2 / BSIG-V1.1.1-core-source-hygiene / EAI-V1.1.0-fde-lens-pool | `source_level` or `acquisition_source_level` used as ranking/gating/downgrade criteria; generic FDE role/service pages, job posts, role explainers, funding roundups, generic funding commentary, broad lists, stale sources, or search-query artifacts promoted into Core Pool or Cards; fixing daily quantity gaps by relaxing Core Pool quality gates | monitor quality loop + daily production chain post-monitor/pre-commit + pool-to-card dedupe + business frontstage gate + source-first/frontstage regression |
 | `V3.3.8-freeze-enterprise-ai-transformation-20260617` | Business Signals / 企业AI化 | 2026-06-17 | 2026-06-17T16:00:05+08:00 | SITE-V3.3.8-enterprise-ai-transformation / BSIG-V1.1.0-enterprise-ai-transformation / EAI-V1.0.0-enterprise-ai-transformation | 企业AI化 reverting to the old FDE Lens name; multi-column case cards; visible "落地判断" / "老板追问" diagnostic fields; backend-only fields exposed in the public table; treating Enterprise AI as a fourth Card type | business frontstage gate + syntax quality gate + visual smoke + GitHub Pages deploy |
@@ -160,7 +163,9 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| SITE-V3.3.8.4 / BSIG-V1.1.3-source-first-pipeline-hardening / EAI-V1.1.0-fde-lens-pool | 2026-06-29T00:00:00+08:00 | Hardens the Business Signals source-first pipeline: generates all qualified Cards before selecting Top10, requires public titles to come from original source titles or registered translations, blocks generated title fallbacks, removes legacy content-output routes from current rule surfaces, adds a current-rule hygiene gate, repairs text contamination handling, and rebuilds 2026-06-29 Raw / Pool / Card / frontstage assets. | current |
+| SITE-V3.3.8.6 / BSIG-V1.1.4-pool-core-release-gate | 2026-06-30T15:10:50+08:00 | Hardens Business Signals release behavior after the 2026-06-30 provider-quota incident: Raw shortfall from provider quota/outage stays visible but releases when Pool, routed Pool, usable Core Pool, non-large Core Pool, and Top10 supply are sufficient; GDELT / keyword / RSS / AI HOT are peer Raw artifact channels; same-date healthy artifacts should feed downstream Cards / PR / Pages instead of another blind Raw rerun. Also keeps the SITE-V3.3.8.5 Community / First-Line supervision hardening. | current |
+| SITE-V3.3.8.5-lane-supervision-idempotency-hardening | 2026-06-30T15:05:00+08:00 | Hardens Community Intelligence and First-Line Viewpoints automation governance: Community publication waiting is separated from repair Problems, First-Line morning PR idempotency uses same-date data plus Obsidian sync dry-run `added: 0`, afternoon follow-builders supervision parses `publish_status` / `publish_error` / `obsidian_sync_*`, duplicate same-date PRs are skipped, and both lane-owner skills record the new rules. | upgraded |
+| SITE-V3.3.8.4 / BSIG-V1.1.3-source-first-pipeline-hardening / EAI-V1.1.0-fde-lens-pool | 2026-06-29T00:00:00+08:00 | Hardens the Business Signals source-first pipeline: generates all qualified Cards before selecting Top10, requires public titles to come from original source titles or registered translations, blocks generated title fallbacks, removes legacy content-output routes from current rule surfaces, adds a current-rule hygiene gate, repairs text contamination handling, and rebuilds 2026-06-29 Raw / Pool / Card / frontstage assets. | upgraded |
 | SITE-V3.3.8.3 / BSIG-V1.1.2-source-title-translation-lock / EAI-V1.1.0-fde-lens-pool | 2026-06-24T18:50:00+08:00 | Locks Business Signals public titles to original source titles. English source titles may display only through `source-title-translations.json`; generated, URL-derived, keyword-derived, and company-name fallback titles are removed from the public title path and blocked by the source-first frontstage gate. | upgraded |
 | SITE-V3.3.8.3 / IMAP-V1.2.0-opportunity-radar | 2026-06-23T19:35:00+08:00 | Rebuilds the Intelligence Map opportunity area around two source-backed startup radar panels: Entry Point Map and Product Pain Map. Relationship graph stays on graph tags; heat and opportunity panels use `opportunity_signals`; the new `guanlan-opportunity-radar-updater` skill defines weekly update cadence and evidence boundaries. | current Intelligence Map baseline; site upgraded |
 | IMAP-V1.1.1-weekly-report-archive-list | 2026-06-23T15:25:00+08:00 | Updates the Intelligence Map weekly report subcolumn from a single current report card to a three-entry weekly archive list, adds stable selector routing and a 2026-06-15 archive detail page, and marks missing archive weeks as pending instead of linking to nonexistent reports. | upgraded |

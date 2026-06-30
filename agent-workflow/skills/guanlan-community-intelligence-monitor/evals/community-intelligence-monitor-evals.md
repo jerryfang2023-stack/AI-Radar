@@ -51,6 +51,11 @@ Run these pass/fail checks when supervising, repairing, or updating the Communit
    - Pass when a red publish workflow after healthy local data is routed to publish workflow / PR repair only.
    - Fail when GitHub publish failure causes browser recollection, or when stale daily supervision reports remain open after a later same-date gate passes.
 
+14. `publication_waiting_not_failure`
+   - Pass when an open same-date Community Intelligence PR or queued/in-progress publish workflow is reported under Waiting, not Problems, after same-date data and gate are healthy.
+   - Pass when waiting-only Community Intelligence publication state does not create a Hermes repair inbox item.
+   - Fail when "publication PR is open" is counted as a problem or asks Codex to repair local collection.
+
 ## Repair Loop
 
 When a check fails, repair the local collection, archive, gate, or publisher path. Do not treat local collection success as complete publication until the community PR reaches `main` and Pages deploys when required.

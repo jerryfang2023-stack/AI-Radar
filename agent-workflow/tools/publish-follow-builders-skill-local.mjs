@@ -113,6 +113,41 @@ function countGeneratedItems(file) {
   return matches ? matches.length : 0;
 }
 
+function readText(file) {
+  try {
+    return fs.readFileSync(file, "utf8");
+  } catch {
+    return "";
+  }
+}
+
+function parseFields(text = "") {
+  const fields = {};
+  for (const line of text.split(/\r?\n/u)) {
+    const match = line.match(/^(?:-\s*)?([a-zA-Z0-9_-]+):\s*(.*)$/u);
+    if (match) fields[match[1]] = match[2].trim();
+  }
+  return fields;
+}
+
+function sameDatePublishAlreadyHealthy() {
+  if (!fs.existsSync(reportFile) || !fs.existsSync(outputFile)) return false;
+  const fields = parseFields(readText(reportFile));
+  const reportCount = Number(fields.builder_items_count || 0);
+  const outputCount = countGeneratedItems(outputFile);
+  const obsidianSyncRecorded = [
+    fields.obsidian_sync_added,
+    fields.obsidian_sync_groups,
+    fields.obsidian_sync_files,
+  ].every((value) => value !== undefined && Number.isFinite(Number(value)));
+
+  return fields.publish_status !== "failed"
+    && reportCount > 0
+    && outputCount > 0
+    && reportCount === outputCount
+    && obsidianSyncRecorded;
+}
+
 function writeReport(lines) {
   fs.mkdirSync(reportsDir, { recursive: true });
   fs.writeFileSync(reportFile, `${lines.join("\n")}\n`, "utf8");
@@ -224,6 +259,19 @@ function waitForMerge(prNumber) {
 function main() {
   if (!date) throw new Error("Unable to resolve production date.");
   ensureSkillStore();
+
+  if (sameDatePublishAlreadyHealthy()) {
+    console.log(JSON.stringify({
+      ok: true,
+      changed: false,
+      skipped: true,
+      reason: "same-date follow-builders skill publish report, output, and Obsidian sync counts are already healthy",
+      branch,
+      report: rel(reportFile),
+      output: rel(outputFile),
+    }, null, 2));
+    return;
+  }
 
   const originalBranch = run("git", ["branch", "--show-current"]) || "main";
 

@@ -71,6 +71,7 @@ jobs:
           data_file="01-SiteV2/site/data/follow-builders-daily.json"
           data_date=""
           obsidian_count="0"
+          obsidian_pending="unknown"
 
           if [ -f "$data_file" ]; then
             data_date="$(node -e "const fs=require('fs');const data=JSON.parse(fs.readFileSync(process.argv[1],'utf8'));const value=data.meta?.date||data.meta?.generatedAt||data.meta?.generatedDate||data.generatedDate||data.generatedAt||'';const date=value ? new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(value)) : ''; process.stdout.write(date);" "$data_file")"
@@ -80,19 +81,29 @@ jobs:
             obsidian_count="$( { grep -R "^### ${RUN_DATE}\b" 01-SiteV2/knowledge/02-Opinion-Timelines/people --include='*.md' 2>/dev/null || true; } | wc -l | tr -d ' ')"
           fi
 
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$data_date" = "$RUN_DATE" ] && [ "$obsidian_count" != "0" ]; then
+          if [ "$data_date" = "$RUN_DATE" ]; then
+            if sync_json="$(node agent-workflow/tools/sync-follow-builders-to-opinion-timelines.mjs --from="${RUN_DATE}" --to="${RUN_DATE}" --dry-run=true 2>/tmp/first-line-sync-check.err)"; then
+              obsidian_pending="$(node -e "const data=JSON.parse(process.argv[1]||'{}'); process.stdout.write(String(data.added ?? 'unknown'));" "$sync_json")"
+            else
+              cat /tmp/first-line-sync-check.err >&2 || true
+            fi
+          fi
+
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$data_date" = "$RUN_DATE" ] && [ "$obsidian_pending" = "0" ]; then
             skip=true
-            reason="same-date first-line viewpoints data and Obsidian timeline entries already exist on main"
+            reason="same-date first-line viewpoints data exists and Obsidian sync dry-run is idempotent on main"
           fi
 
           echo "skip=$skip" >> "$GITHUB_OUTPUT"
           echo "reason=$reason" >> "$GITHUB_OUTPUT"
           echo "data_date=$data_date" >> "$GITHUB_OUTPUT"
           echo "obsidian_count=$obsidian_count" >> "$GITHUB_OUTPUT"
+          echo "obsidian_pending=$obsidian_pending" >> "$GITHUB_OUTPUT"
           echo "skip_first_line_viewpoints=$skip"
           echo "first_line_skip_reason=$reason"
           echo "existing_first_line_data_date=$data_date"
           echo "existing_first_line_obsidian_count=$obsidian_count"
+          echo "existing_first_line_obsidian_pending=$obsidian_pending"
 
       - name: Syntax checks
         shell: bash
