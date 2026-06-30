@@ -32,6 +32,7 @@
     "hermes:business-early-handoff": "node agent-workflow/tools/run-hermes-business-signals-early-handoff.mjs",
     "hermes:early-handoff": "node agent-workflow/tools/run-hermes-three-lane-early-handoff.mjs",
     "sync:pipeline-dashboard": "node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs",
+    "build:ops-console": "node agent-workflow/tools/build-ops-console-data.mjs",
     "export:aip-topic-md": "node agent-workflow/tools/export-topic-center-to-aip-md.mjs",
     "build:skill-registry": "node agent-workflow/tools/build-skill-registry.mjs",
     "check:skill-ops": "node agent-workflow/tools/check-skill-ops.mjs",

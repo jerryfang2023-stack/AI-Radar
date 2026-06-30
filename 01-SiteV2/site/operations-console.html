@@ -3,32 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V1.1.0">
+  <meta name="wavesight-ops-console-version" content="OPS-V1.2.0">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
       --paper: #fffdf8;
       --paper-soft: #f7f4ef;
       --ink: #071827;
-      --muted: rgba(7, 24, 39, .62);
-      --faint: rgba(7, 24, 39, .42);
+      --muted: rgba(7, 24, 39, .66);
+      --faint: rgba(7, 24, 39, .46);
       --blue: #0d355c;
       --gold: #c8a766;
       --orange: #e48322;
       --red: #9a4832;
       --green: #17734c;
-      --line: rgba(7, 24, 39, .1);
-      --gold-line: rgba(200, 167, 102, .32);
-      --card: rgba(255, 255, 255, .84);
-      --card-ivory: rgba(255, 253, 248, .78);
-      --card-warm: rgba(247, 244, 239, .62);
-      --card-ink-soft: rgba(7, 24, 39, .052);
-      --card-gold-soft: rgba(200, 167, 102, .13);
-      --surface: rgba(255, 253, 248, .74);
-      --surface-soft: rgba(247, 244, 239, .46);
-      --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+      --line: rgba(7, 24, 39, .11);
+      --gold-line: rgba(200, 167, 102, .34);
+      --card: rgba(255, 255, 255, .82);
+      --surface: rgba(255, 253, 248, .76);
       --sans: Inter, "Noto Sans SC", "Microsoft YaHei", sans-serif;
       --serif: Georgia, "Noto Serif SC", "Songti SC", serif;
+      --mono: "IBM Plex Mono", Consolas, monospace;
       font-family: var(--sans);
     }
     * { box-sizing: border-box; }
@@ -36,14 +31,19 @@
       margin: 0;
       color: var(--ink);
       background:
-        linear-gradient(rgba(200, 167, 102, .028) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(200, 167, 102, .024) 1px, transparent 1px),
-        radial-gradient(circle at 85% 0%, rgba(200, 167, 102, .1), transparent 32%),
+        linear-gradient(rgba(200, 167, 102, .03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200, 167, 102, .025) 1px, transparent 1px),
+        radial-gradient(circle at 88% 2%, rgba(200, 167, 102, .12), transparent 32%),
         var(--paper);
       background-size: 36px 36px, 36px 36px, auto;
     }
     button, input, select { font: inherit; }
     button { cursor: pointer; }
+    h1, h2, h3, p { margin: 0; }
+    h1 { margin-top: 7px; font-family: var(--serif); font-size: 40px; line-height: 52px; font-weight: 600; }
+    h2 { font-family: var(--serif); font-size: 24px; line-height: 34px; font-weight: 600; }
+    h3 { font-size: 16px; line-height: 24px; font-weight: 700; }
+    p { color: var(--muted); font-size: 14px; line-height: 24px; }
     .shell { display: grid; grid-template-columns: 164px minmax(0, 1fr); min-height: 100vh; }
     .rail {
       position: sticky;
@@ -53,51 +53,48 @@
       flex-direction: column;
       padding: 16px 8px;
       border-right: 1px solid var(--line);
-      background: rgba(247, 244, 239, .9);
+      background: rgba(247, 244, 239, .92);
       backdrop-filter: blur(16px);
     }
     .brand { padding: 8px 10px 16px; color: var(--blue); }
     .brand strong { display: block; font-family: var(--serif); font-size: 18px; line-height: 1; letter-spacing: .02em; }
-    .brand span { display: block; margin-top: 5px; font-size: 8px; font-weight: 600; letter-spacing: .26em; }
-    .brand small { display: block; margin-top: 8px; color: var(--faint); font-family: var(--mono); font-size: 10px; line-height: 1; letter-spacing: 0; }
+    .brand span { display: block; margin-top: 5px; font-size: 8px; font-weight: 700; letter-spacing: .26em; }
+    .brand small { display: block; margin-top: 8px; color: var(--faint); font-family: var(--mono); font-size: 10px; line-height: 1; }
     .nav { display: grid; gap: 4px; }
     .nav button {
-      position: relative;
-      min-height: 34px;
+      min-height: 36px;
       border: 0;
       border-radius: 8px;
       background: transparent;
-      color: rgba(7, 24, 39, .72);
+      color: rgba(7, 24, 39, .74);
       padding: 0 10px;
       font-size: 13px;
-      line-height: 20px;
-      font-weight: 600;
+      font-weight: 700;
       display: flex;
       align-items: center;
       gap: 8px;
       transition: background .18s ease, color .18s ease, transform .18s ease;
     }
-    .nav-icon { width: 18px; height: 18px; flex: 0 0 18px; color: currentColor; }
-    .nav-icon svg { display: block; width: 100%; height: 100%; }
-    .nav-icon svg * { vector-effect: non-scaling-stroke; }
-    .nav-text { white-space: nowrap; }
     .nav button:hover { background: rgba(200, 167, 102, .12); color: var(--blue); }
     .nav button:active { transform: translateY(1px); }
     .nav button[aria-current="true"] {
-      background: linear-gradient(135deg, var(--orange), var(--gold));
       color: var(--paper);
+      background: linear-gradient(135deg, var(--orange), var(--gold));
       box-shadow: inset 3px 0 0 rgba(255, 253, 248, .38);
     }
+    .nav-icon { width: 18px; height: 18px; flex: 0 0 18px; color: currentColor; }
+    .nav-icon svg { display: block; width: 100%; height: 100%; }
+    .nav-text { white-space: nowrap; }
     .rail-actions { margin-top: auto; padding-top: 12px; }
     .rail-toggle {
       width: 100%;
       min-height: 34px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: rgba(255, 253, 248, .64);
+      background: rgba(255, 253, 248, .68);
       color: var(--blue);
       font-size: 12px;
-      font-weight: 600;
+      font-weight: 700;
     }
     .shell.is-rail-collapsed { grid-template-columns: 62px minmax(0, 1fr); }
     .shell.is-rail-collapsed .rail { padding: 16px 7px; }
@@ -114,16 +111,22 @@
       border-radius: 50%;
       transform: skewX(-14deg);
     }
-    .shell.is-rail-collapsed .brand span { display: none; }
-    .shell.is-rail-collapsed .brand small { display: none; }
-    .shell.is-rail-collapsed .nav button { justify-content: center; padding: 0; }
+    .shell.is-rail-collapsed .brand span,
+    .shell.is-rail-collapsed .brand small,
     .shell.is-rail-collapsed .nav-text { display: none; }
-    .shell.is-rail-collapsed .nav-icon { width: 19px; height: 19px; }
+    .shell.is-rail-collapsed .nav button { justify-content: center; padding: 0; }
     .shell.is-rail-collapsed .rail-toggle { font-size: 0; }
     .shell.is-rail-collapsed .rail-toggle::before { content: "展开"; font-size: 12px; }
     .stage { min-width: 0; max-width: 1480px; padding: 28px 38px 58px; }
     .panel { display: none; }
     .panel.is-active { display: block; }
+    .page-surface {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+      padding: 22px;
+      box-shadow: 0 16px 44px rgba(7, 24, 39, .035);
+    }
     .page-head {
       display: flex;
       justify-content: space-between;
@@ -133,80 +136,30 @@
       border-bottom: 1px solid var(--gold-line);
       margin-bottom: 18px;
     }
+    .page-head p { max-width: 560px; text-align: right; }
     .kicker, .label {
       color: var(--gold);
       font-size: 12px;
       line-height: 18px;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: .12em;
       text-transform: uppercase;
     }
-    h1, h2, h3, p { margin: 0; }
-    h1 { margin-top: 7px; font-family: var(--serif); font-size: 40px; line-height: 52px; font-weight: 600; }
-    h2 { font-family: var(--serif); font-size: 24px; line-height: 34px; font-weight: 600; }
-    h3 { font-size: 16px; line-height: 24px; font-weight: 600; }
-    p { color: var(--muted); font-size: 14px; line-height: 24px; font-weight: 400; }
-    .page-head p { max-width: 560px; text-align: right; }
-    .jump-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 32px;
-      padding: 0 13px;
-      border: 1px solid var(--gold-line);
-      border-radius: 999px;
-      background: rgba(255, 253, 248, .72);
-      color: var(--blue);
-      font-size: 12px;
-      line-height: 18px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: border-color .18s ease, background .18s ease, transform .18s ease;
-    }
-    .jump-link:hover {
-      border-color: rgba(200, 167, 102, .58);
-      background: rgba(200, 167, 102, .14);
-    }
-    .jump-link:active { transform: translateY(1px); }
-    .dashboard-jump {
-      display: flex;
-      width: fit-content;
-      margin: -4px 0 13px auto;
-    }
-    .page-surface {
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: var(--surface);
-      padding: 22px;
-      box-shadow: 0 16px 44px rgba(7, 24, 39, .035);
-    }
-    .surface-section + .surface-section { margin-top: 22px; }
+    .module-head { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin: 22px 0 10px; }
+    .module-head:first-child { margin-top: 0; }
+    .module-head p { max-width: 560px; text-align: right; }
     .grid { display: grid; gap: 12px; }
     .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .span-2 { grid-column: span 2; }
-    .span-3 { grid-column: span 3; }
-    .span-4 { grid-column: 1 / -1; }
+    .span-all { grid-column: 1 / -1; }
     .card {
       border: 1px solid var(--line);
       border-radius: 10px;
-      background: var(--card);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .78), rgba(255, 253, 248, .66));
       padding: 16px;
-      box-shadow: 0 10px 26px rgba(7, 24, 39, .026);
-      transition: border-color .18s ease, transform .18s ease, background .18s ease;
-    }
-    .card:hover { border-color: rgba(13, 53, 92, .16); }
-    .page-surface .card {
-      background:
-        linear-gradient(180deg, rgba(255, 255, 255, .78), rgba(255, 253, 248, .64));
-      border-color: rgba(7, 24, 39, .095);
       box-shadow: none;
     }
-    .module-head { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin: 20px 0 10px; }
-    .page-surface > .module-head:first-child,
-    .surface-section > .module-head:first-child { margin-top: 0; }
-    .module-head p { max-width: 520px; text-align: right; }
     .metric strong {
       display: block;
       margin-top: 11px;
@@ -216,52 +169,22 @@
       line-height: 1;
       font-variant-numeric: tabular-nums;
     }
-    .metric em { display: block; margin-top: 8px; color: var(--muted); font-style: normal; font-size: 13px; }
-    .overview-command {
-      display: grid;
-      grid-template-columns: minmax(0, 1.55fr) minmax(280px, .75fr);
-      gap: 12px;
-      align-items: stretch;
-    }
-    .status-strip { display: grid; grid-template-columns: 1.35fr .82fr .82fr; gap: 12px; }
+    .metric em { display: block; margin-top: 8px; color: var(--muted); font-style: normal; font-size: 13px; line-height: 20px; }
     .hero-card {
-      min-height: 132px;
+      min-height: 134px;
+      border-color: rgba(200, 167, 102, .46);
       background:
-        linear-gradient(135deg, rgba(200, 167, 102, .19), rgba(255, 253, 248, .78)),
-        linear-gradient(90deg, rgba(200,167,102,.12) 1px, transparent 1px);
+        linear-gradient(135deg, rgba(200, 167, 102, .2), rgba(255, 253, 248, .8)),
+        linear-gradient(90deg, rgba(200, 167, 102, .13) 1px, transparent 1px);
       background-size: auto, 28px 28px;
-      color: var(--ink);
-      border-color: rgba(200, 167, 102, .42);
     }
-    .page-surface .hero-card,
-    .page-surface .asset-main,
-    .page-surface .publish-card.feature {
-      background:
-        linear-gradient(135deg, rgba(200, 167, 102, .2), rgba(255, 253, 248, .78)),
-        linear-gradient(90deg, rgba(200,167,102,.13) 1px, transparent 1px);
-      background-size: auto, 28px 28px;
-      color: var(--ink);
-      border-color: rgba(200, 167, 102, .42);
-    }
-    .hero-card .label, .hero-card p { color: rgba(7, 24, 39, .6); }
     .hero-card strong { color: var(--ink); font-size: 36px; }
-    .status-strip .metric:not(.hero-card):nth-child(2) { background: linear-gradient(180deg, rgba(200, 167, 102, .15), rgba(255, 253, 248, .68)); }
-    .status-strip .metric:not(.hero-card):nth-child(3) { background: linear-gradient(180deg, rgba(7, 24, 39, .045), rgba(255, 253, 248, .68)); }
-    .action-card {
-      display: grid;
-      align-content: start;
-      gap: 10px;
-      min-height: 132px;
-      background: linear-gradient(180deg, rgba(255, 253, 248, .88), rgba(247, 244, 239, .58));
-    }
+    .status-strip { display: grid; grid-template-columns: 1.35fr .82fr .82fr; gap: 12px; }
+    .overview-command { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(280px, .75fr); gap: 12px; align-items: stretch; }
+    .action-card { display: grid; align-content: start; gap: 10px; min-height: 134px; }
     .action-card h3 { font-family: var(--serif); font-size: 22px; line-height: 30px; }
     .action-list { display: grid; gap: 8px; }
     .action-list button {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
       min-height: 34px;
       border: 1px solid var(--line);
       border-radius: 9px;
@@ -269,208 +192,84 @@
       color: var(--ink);
       padding: 0 10px;
       font-size: 13px;
-      line-height: 20px;
-      font-weight: 600;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
       text-align: left;
     }
-    .action-list button:hover { border-color: var(--gold-line); color: var(--blue); }
-    .action-list span { color: var(--muted); font-weight: 400; }
-    .overview-risk-head { margin-top: 18px; }
-    .overview-work-grid { margin-top: 12px; }
-    .overview-work-grid .card:nth-child(1) { background: linear-gradient(180deg, rgba(7, 24, 39, .045), rgba(255, 253, 248, .68)); }
-    .overview-work-grid .card:nth-child(2) { background: linear-gradient(180deg, rgba(200, 167, 102, .11), rgba(255, 253, 248, .68)); }
-    .overview-work-grid .card:nth-child(3) { background: linear-gradient(180deg, rgba(23, 115, 76, .06), rgba(255, 253, 248, .68)); }
-    .risk-card { display: grid; gap: 8px; min-height: 142px; }
-    .risk-card.risk-warn { background: linear-gradient(180deg, rgba(200, 167, 102, .11), rgba(255, 253, 248, .7)); }
-    .risk-card.risk-info { background: linear-gradient(180deg, rgba(7, 24, 39, .045), rgba(255, 253, 248, .68)); }
-    .risk-top { display: flex; justify-content: space-between; align-items: center; }
-    .badge { display: inline-flex; align-items: center; min-height: 24px; padding: 0 9px; border-radius: 999px; background: rgba(200, 167, 102, .14); color: #876a2e; font-size: 12px; font-weight: 600; letter-spacing: .08em; }
-    .risk-value { color: var(--blue); font-family: var(--mono); font-size: 32px; line-height: 1; font-weight: 600; }
-    .risk-card b { font-size: 16px; }
-    .suggestion { margin-top: 2px; padding-top: 9px; border-top: 1px solid var(--line); color: rgba(7, 24, 39, .72); font-size: 12px; line-height: 1.6; }
-    .rows { display: grid; gap: 10px; }
-    .row { display: grid; grid-template-columns: 128px minmax(0, 1fr) 58px; gap: 12px; align-items: center; color: var(--muted); font-size: 13px; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0 9px;
+      border-radius: 999px;
+      background: rgba(200, 167, 102, .14);
+      color: #876a2e;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .06em;
+    }
+    .badge.is-green { background: rgba(23, 115, 76, .1); color: var(--green); }
+    .badge.is-red { background: rgba(154, 72, 50, .1); color: var(--red); }
+    .badge.is-blue { background: rgba(13, 53, 92, .1); color: var(--blue); }
+    .rows { display: grid; gap: 10px; margin-top: 10px; }
+    .row { display: grid; grid-template-columns: 138px minmax(0, 1fr) auto; gap: 12px; align-items: center; color: var(--muted); font-size: 13px; }
     .bar { height: 5px; border-radius: 999px; background: rgba(7, 24, 39, .08); overflow: hidden; }
     .bar i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, rgba(7, 24, 39, .78), var(--gold)); }
-    .data-status-list { display: grid; gap: 10px; margin-top: 12px; }
-    .data-status-item {
-      display: grid;
-      grid-template-columns: 150px minmax(0, 1fr);
-      gap: 16px;
-      align-items: center;
-      padding: 10px 0;
-      border-top: 1px solid var(--line);
-    }
-    .data-status-item:first-child { border-top: 0; }
-    .data-status-item span { color: var(--muted); font-size: 13px; }
-    .data-status-item b {
-      justify-self: end;
-      max-width: 100%;
-      color: rgba(7, 24, 39, .72);
-      font-family: var(--mono);
-      font-size: 13px;
-      line-height: 1.45;
-      text-align: right;
-      overflow-wrap: anywhere;
-    }
+    .list { display: grid; gap: 10px; }
+    .issue-card { display: grid; grid-template-columns: minmax(0, 1fr) 150px; gap: 12px; align-items: start; }
+    .issue-card h3 { margin-bottom: 5px; }
+    .issue-meta { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
+    .issue-meta span { padding: 5px 8px; border-radius: 999px; background: rgba(7, 24, 39, .06); color: var(--blue); font-size: 12px; font-weight: 700; }
+    .issue-side { display: grid; gap: 8px; justify-items: end; color: var(--muted); font-size: 12px; text-align: right; }
     .timeline { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 11px; }
-    .day-card { padding: 14px; }
-    .day-card.is-latest { border-color: rgba(200, 167, 102, .58); background: linear-gradient(180deg, rgba(200, 167, 102, .12), rgba(255, 253, 248, .68)); }
-    .day-date { display: flex; justify-content: space-between; gap: 10px; color: var(--gold); font-family: var(--mono); font-size: 13px; line-height: 20px; font-weight: 600; }
+    .day-card.is-latest { border-color: rgba(200, 167, 102, .58); background: linear-gradient(180deg, rgba(200, 167, 102, .13), rgba(255, 253, 248, .68)); }
+    .day-date { display: flex; justify-content: space-between; gap: 10px; color: var(--gold); font-family: var(--mono); font-size: 13px; line-height: 20px; font-weight: 700; }
     .day-numbers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 14px 0; }
-    .day-numbers span { padding: 10px; border-radius: 9px; background: var(--surface-soft); color: var(--muted); font-size: 12px; line-height: 18px; font-weight: 600; letter-spacing: .12em; }
+    .day-numbers span { padding: 10px; border-radius: 9px; background: rgba(247, 244, 239, .72); color: var(--muted); font-size: 12px; line-height: 18px; font-weight: 700; letter-spacing: .08em; }
     .day-numbers b { display: block; margin-top: 5px; color: var(--ink); font-family: var(--mono); font-size: 24px; letter-spacing: 0; }
-    .source-row {
-      display: grid;
-      grid-template-columns: 170px repeat(5, minmax(0, 1fr)) 72px;
-      gap: 10px;
-      align-items: center;
-      padding: 11px 0;
-      border-top: 1px solid var(--line);
-    }
+    .source-row { display: grid; grid-template-columns: 170px repeat(5, minmax(0, 1fr)) 72px; gap: 10px; align-items: center; padding: 11px 0; border-top: 1px solid var(--line); }
     .source-row:first-child { border-top: 0; }
     .source-name strong { display: block; font-size: 15px; }
     .source-name em { color: var(--muted); font-style: normal; font-size: 12px; }
     .mini-kpi span { display: block; color: var(--faint); font-size: 12px; line-height: 18px; }
     .mini-kpi b { font-family: var(--mono); font-size: 15px; }
-    .score-pill { justify-self: end; min-width: 54px; text-align: center; padding: 7px 9px; border-radius: 999px; background: rgba(200, 167, 102, .16); color: var(--ink); font-family: var(--mono); font-weight: 600; }
+    .score-pill { justify-self: end; min-width: 54px; text-align: center; padding: 7px 9px; border-radius: 999px; background: rgba(200, 167, 102, .16); color: var(--ink); font-family: var(--mono); font-weight: 700; }
     .asset-matrix { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 12px; }
-    .asset-main { background: rgba(200, 167, 102, .16); color: var(--ink); }
-    .asset-main .label, .asset-main p { color: rgba(7, 24, 39, .6); }
+    .asset-main { border-color: rgba(200, 167, 102, .46); background: linear-gradient(135deg, rgba(200, 167, 102, .2), rgba(255, 253, 248, .78)); }
     .asset-main strong, .asset-card strong { display: block; margin: 12px 0 8px; font-family: var(--mono); font-size: 36px; line-height: 1; }
-    .asset-card:not(.asset-main) { background: linear-gradient(180deg, rgba(247, 244, 239, .7), rgba(255, 253, 248, .64)); }
     .tag-cloud { display: flex; gap: 8px; flex-wrap: wrap; }
     .tag-cloud span { padding: 6px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); font-size: 12px; }
-    input, select {
-      min-height: 38px;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      background: rgba(255, 253, 248, .82);
-      color: var(--ink);
-      padding: 0 12px;
-      outline: none;
-    }
-    .topic-tabs {
-      display: grid;
-      grid-template-columns: repeat(9, minmax(76px, 1fr));
-      gap: 8px;
-      margin-bottom: 12px;
-      overflow-x: auto;
-    }
-    .topic-tabs button {
-      min-height: 44px;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      background: linear-gradient(180deg, rgba(255, 253, 248, .86), rgba(247, 244, 239, .52));
-      color: var(--ink);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 0 10px;
-      font-weight: 600;
-      white-space: nowrap;
-    }
-    .topic-tabs button[aria-current="true"] { background: linear-gradient(135deg, rgba(200, 167, 102, .25), rgba(255, 253, 248, .76)); color: var(--ink); border-color: rgba(200, 167, 102, .62); }
-    .topic-tools { display: grid; grid-template-columns: 150px minmax(360px, 1fr) 180px 160px; gap: 10px; margin-bottom: 12px; }
-    .topic-list { display: grid; gap: 10px; }
-    .topic-item { border: 1px solid var(--line); border-radius: 10px; background: linear-gradient(180deg, rgba(255,255,255,.82), rgba(255,253,248,.68)); overflow: hidden; }
-    .topic-summary {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 62px minmax(0, 1fr) auto;
-      gap: 18px;
-      align-items: center;
-      padding: 13px 16px;
-      color: var(--ink);
-    }
-    .grade { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 14px; background: rgba(13, 53, 92, .08); color: var(--blue); font-family: var(--mono); font-weight: 600; }
-    .topic-title-toggle { border: 0; background: transparent; padding: 0; text-align: left; color: var(--ink); }
-    .topic-title-toggle strong { display: block; font-size: 17px; line-height: 1.45; }
-    .topic-title-toggle span { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
-    .topic-title-toggle:hover strong { color: var(--blue); text-decoration: underline; text-decoration-color: rgba(200,167,102,.7); text-underline-offset: 4px; }
-    .topic-meta { display: flex; gap: 7px; flex-wrap: wrap; justify-content: flex-end; }
-    .topic-meta span { padding: 6px 9px; border-radius: 999px; background: rgba(7, 24, 39, .06); color: var(--blue); font-size: 12px; font-weight: 600; }
-    .topic-detail { display: none; grid-template-columns: 315px minmax(0, 1fr); gap: 16px; padding: 16px; border-top: 1px solid var(--line); }
-    .topic-item.is-open .topic-detail { display: grid; }
-    .score-box { padding: 14px; border-radius: 12px; background: rgba(247, 244, 239, .62); }
-    .angle-list { display: grid; gap: 12px; }
-    .angle { padding: 14px; border: 1px solid var(--line); border-radius: 12px; background: rgba(255, 253, 248, .75); }
-    .angle h3 { font-size: 17px; }
-    .angle p { margin-top: 7px; }
-    .factory-grid { display: grid; grid-template-columns: 340px minmax(0, 1fr) 320px; gap: 12px; }
-    .factory-source-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 12px 0; }
-    .factory-source-tabs button {
-      min-height: 46px;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      background: linear-gradient(180deg, rgba(255, 253, 248, .86), rgba(247, 244, 239, .5));
-      color: var(--ink);
-      text-align: left;
-      padding: 9px 10px;
-      font-weight: 600;
-    }
-    .factory-source-tabs button[aria-current="true"] { background: linear-gradient(135deg, var(--orange), var(--gold)); color: var(--paper); border-color: rgba(200, 167, 102, .72); }
-    .factory-source-tabs strong { display: block; font-size: 12px; line-height: 1.25; }
-    .factory-source-tabs span { display: block; margin-top: 4px; color: var(--muted); font-family: var(--mono); font-size: 12px; line-height: 18px; }
-    .factory-source-tabs button[aria-current="true"] span { color: rgba(255, 253, 248, .72); }
-    .factory-topic-list { display: grid; gap: 9px; max-height: 530px; overflow: auto; padding-right: 4px; }
-    .factory-topic {
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      background: rgba(255, 253, 248, .72);
-      padding: 11px;
-      text-align: left;
-    }
-    .factory-topic[aria-current="true"] { border-color: rgba(200, 167, 102, .55); background: linear-gradient(180deg, rgba(200, 167, 102, .16), rgba(255, 253, 248, .72)); }
-    .output-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-    .output-tabs button { min-height: 82px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); text-align: left; padding: 12px; }
-    .output-tabs button[aria-current="true"] { border-color: rgba(200,167,102,.7); background: rgba(200,167,102,.13); }
-    .output-tabs span { color: var(--gold); font-size: 12px; line-height: 18px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
-    .output-tabs strong { display: block; margin-top: 6px; font-size: 20px; }
-    .selected { margin-top: 14px; padding: 16px; border: 1px solid var(--line); border-radius: 12px; background: linear-gradient(180deg, rgba(247,244,239,.72), rgba(255,253,248,.66)); }
-    .actions { display: flex; gap: 9px; flex-wrap: wrap; margin-top: 15px; }
-    .actions button { min-height: 40px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); color: var(--ink); padding: 0 14px; font-weight: 600; }
-    .actions button.primary { background: var(--ink); color: var(--paper); }
-    .actions button:disabled { opacity: .56; cursor: wait; }
-    .status { margin-top: 13px; padding: 13px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); }
-    .status[data-state="running"] { border-color: rgba(200,167,102,.54); background: rgba(200,167,102,.09); }
-    .status[data-state="done"] { border-color: rgba(23,115,76,.28); background: rgba(23,115,76,.06); }
-    .status[data-state="error"] { border-color: rgba(154,72,50,.34); background: rgba(154,72,50,.07); }
-    code { display: block; margin-top: 12px; padding: 12px; border-radius: 10px; background: var(--paper-soft); color: var(--blue); font-size: 12px; line-height: 1.55; white-space: pre-wrap; word-break: break-word; }
-    .publish-board { display: grid; grid-template-columns: 1.15fr 1fr 1fr; gap: 12px; }
-    .publish-card { display: grid; gap: 10px; min-height: 172px; }
-    .publish-card.feature { grid-row: span 2; background: rgba(200, 167, 102, .16); color: var(--ink); }
-    .publish-card.feature .label, .publish-card.feature p { color: rgba(7, 24, 39, .6); }
-    .publish-card strong { font-size: 15px; }
-    .publish-card.feature strong { color: var(--ink); font-size: 34px; font-family: var(--mono); line-height: 1; }
-    .publish-steps { display: grid; gap: 8px; margin-top: 6px; }
-    .publish-steps span { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
-    .publish-steps b { color: var(--ink); font-family: var(--mono); }
-    .publish-card .actions { margin-top: auto; }
-    .muted-list { display: grid; gap: 8px; margin-top: 10px; color: var(--muted); font-size: 13px; }
-    .skill-frame {
-      width: 100%;
-      min-height: 760px;
-      border: 0;
-      border-radius: 0;
-      background: transparent;
-      overflow: hidden;
+    .data-status-list { display: grid; gap: 10px; margin-top: 12px; }
+    .data-status-item { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 16px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); }
+    .data-status-item:first-child { border-top: 0; }
+    .data-status-item span { color: var(--muted); font-size: 13px; }
+    .data-status-item b { justify-self: end; color: rgba(7, 24, 39, .72); font-family: var(--mono); font-size: 13px; text-align: right; overflow-wrap: anywhere; }
+    .skill-frame { width: 100%; min-height: 640px; border: 0; background: transparent; }
+    .empty { padding: 16px; border: 1px dashed var(--gold-line); border-radius: 10px; color: var(--muted); }
+    @media (max-width: 1100px) {
+      .stage { padding: 22px 18px 46px; }
+      .overview-command, .grid-2, .grid-3, .grid-4, .asset-matrix, .timeline { grid-template-columns: 1fr; }
+      .status-strip { grid-template-columns: 1fr; }
+      .page-head, .module-head { display: grid; }
+      .page-head p, .module-head p { text-align: left; }
+      .source-row, .issue-card { grid-template-columns: 1fr; }
+      .issue-side { justify-items: start; text-align: left; }
     }
   </style>
 </head>
 <body class="page-operations-console">
   <main class="shell" data-ops-console>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V1.1.0</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V1.2.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
-        <button type="button" data-tab="tasks"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h10"/><path d="M18 16l2 2 3-4"/></svg></span><span class="nav-text">每日任务</span></button>
-        <button type="button" data-tab="repairs"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5 5L4 17v3h3l5.7-5.7a4 4 0 0 0 5-5"/><path d="M16 4l4 4"/></svg></span><span class="nav-text">问题修复</span></button>
+        <button type="button" data-tab="issues"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 2.8 17a2 2 0 0 0 1.7 3h15a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg></span><span class="nav-text">问题中心</span></button>
+        <button type="button" data-tab="tasks"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h10"/><path d="M18 16l2 2 3-4"/></svg></span><span class="nav-text">任务链路</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
-        <button type="button" data-tab="versions"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h5"/><path d="M16 17h4"/></svg></span><span class="nav-text">栏目版本</span></button>
-        <button type="button" data-tab="sync"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 11a8 8 0 0 0-14.7-4"/><path d="M4 6v5h5"/><path d="M4 13a8 8 0 0 0 14.7 4"/><path d="M20 18v-5h-5"/></svg></span><span class="nav-text">上线同步</span></button>
-        <button type="button" data-tab="skills"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M10 8l5 4-5 4"/></svg></span><span class="nav-text">Skill 治理</span></button>
+        <button type="button" data-tab="governance"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h5"/><path d="M16 17h4"/></svg></span><span class="nav-text">版本治理</span></button>
         <button type="button" data-tab="settings"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M19.1 4.9l-2.8 2.8M7.7 16.3l-2.8 2.8"/></svg></span><span class="nav-text">系统设置</span></button>
       </nav>
       <div class="rail-actions"><button type="button" class="rail-toggle" data-rail-toggle>收起</button></div>
@@ -479,149 +278,122 @@
     <section class="stage">
       <section class="panel is-active" data-panel="overview">
         <div class="page-surface">
-        <header class="page-head">
-          <div><span class="kicker">DATA OBSERVATION OPS</span><h1>总览</h1></div>
-          <p>统一查看数据观察台的每日生产、质量问题、修复队列、版本状态和上线同步。</p>
-        </header>
-        <div class="overview-command">
-          <div class="status-strip" data-overview-status></div>
-          <article class="card action-card" data-overview-actions></article>
+          <header class="page-head">
+            <div><span class="kicker">DATA OBSERVATION OPS</span><h1>总览</h1></div>
+            <p>每天先看是否有问题，再看卡在哪里、谁负责、下一步怎么处理，以及是否已经形成闭环。</p>
+          </header>
+          <div class="overview-command">
+            <div class="status-strip" data-overview-status></div>
+            <article class="card action-card" data-overview-actions></article>
+          </div>
+          <div class="module-head"><div><span class="kicker">TODAY</span><h2>今日治理状态</h2></div><p>把生产状态、未解决问题和已关闭问题放在同一个判断面里。</p></div>
+          <div class="grid grid-3" data-overview-risks></div>
+          <div class="grid grid-3" style="margin-top:12px">
+            <article class="card"><span class="label">Production Chain</span><h2>生产漏斗</h2><div class="rows" data-overview-funnel></div></article>
+            <article class="card"><span class="label">Issue Queue</span><h2>待处理队列</h2><div class="rows" data-work-queue></div></article>
+            <article class="card"><span class="label">Release</span><h2>上线同步</h2><div class="rows" data-overview-routing></div></article>
+          </div>
         </div>
-        <div class="module-head overview-risk-head"><div><span class="kicker">TODAY</span><h2>今日运营状态</h2></div><p>先看系统是否健康，再看哪里需要人工处理。</p></div>
-        <div class="grid grid-3" data-overview-risks></div>
-        <div class="grid grid-3 overview-work-grid">
-          <article class="card"><span class="label">Production Chain</span><h2>Raw 到 Card</h2><div class="rows" data-overview-funnel></div></article>
-          <article class="card"><span class="label">Work Queue</span><h2>待处理队列</h2><div class="rows" data-work-queue></div></article>
-          <article class="card"><span class="label">Release</span><h2>上线同步</h2><div class="rows" data-overview-routing></div></article>
-        </div>
+      </section>
+
+      <section class="panel" data-panel="issues">
+        <div class="page-surface">
+          <header class="page-head">
+            <div><span class="kicker">ISSUE CENTER</span><h1>问题中心</h1></div>
+            <p>按日发现问题，按周/月复盘重复问题。后台的目标不是展示，而是让问题能被关闭。</p>
+          </header>
+          <div class="grid grid-4" data-issue-summary></div>
+          <section>
+            <div class="module-head"><div><span class="kicker">DAILY</span><h2>今日问题</h2></div><p>来自每日监督报告和 Hermes 问题单。</p></div>
+            <div class="list" data-issue-list></div>
+          </section>
+          <section>
+            <div class="module-head"><div><span class="kicker">REVIEW</span><h2>周/月复盘</h2></div><p>重复出现的类别要进入规则、门禁或自动化修复。</p></div>
+            <div class="grid grid-2">
+              <article class="card"><span class="label">7 Days</span><h2>本周问题</h2><div class="rows" data-weekly-issues></div></article>
+              <article class="card"><span class="label">30 Days</span><h2>本月问题</h2><div class="rows" data-monthly-issues></div></article>
+            </div>
+          </section>
+          <section>
+            <div class="module-head"><div><span class="kicker">CLOSED LOOP</span><h2>已解决记录</h2></div><p>保留验证方式、预防动作和修复记录，避免同类问题反复出现。</p></div>
+            <div class="list" data-resolved-issues></div>
+          </section>
         </div>
       </section>
 
       <section class="panel" data-panel="tasks">
         <div class="page-surface">
-        <header class="page-head">
-          <div><span class="kicker">DAILY EXECUTION</span><h1>每日任务</h1></div>
-          <p>查看每条自动化链路是否执行、是否失败，以及当天是否需要人工接管。</p>
-        </header>
-          <section class="surface-section">
-            <div class="module-head"><div><span class="kicker">DAILY FUNNEL</span><h2>每日生产时间轴</h2></div><p>最新生产日高亮，其余日期弱化展示。</p></div>
+          <header class="page-head">
+            <div><span class="kicker">TASK CHAIN</span><h1>任务链路</h1></div>
+            <p>看每条自动化链路是否执行、是否失败、是否等待，以及人工接管点在哪里。</p>
+          </header>
+          <section>
+            <div class="module-head"><div><span class="kicker">DAILY FUNNEL</span><h2>每日生产时间轴</h2></div><p>最新生产日高亮，其他日期作为趋势参考。</p></div>
             <div class="timeline" data-daily-timeline></div>
           </section>
-          <section class="surface-section">
-            <div class="module-head"><div><span class="kicker">TASK LANES</span><h2>今日任务链路</h2></div><p>按数据观察台生产顺序查看核心任务。</p></div>
-            <div class="grid grid-3">
-              <article class="card"><span class="label">08:57</span><h2>商业信号</h2><p>Raw、Pool、Card、Top10、数据观察台更新。</p></article>
-              <article class="card"><span class="label">09:17 / 16:10</span><h2>一线观点</h2><p>RSS 页面数据、Obsidian 时间线、下午 skill 发布记录。</p></article>
-              <article class="card"><span class="label">08:30 / 10:45</span><h2>社群情报</h2><p>本地采集、数据门禁、GitHub 发布和页面同步。</p></article>
-            </div>
+          <section>
+            <div class="module-head"><div><span class="kicker">LANES</span><h2>今日任务链路</h2></div><p>按数据观察台生产顺序查看状态和下一步动作。</p></div>
+            <div class="grid grid-3" data-task-lanes></div>
           </section>
-        </div>
-      </section>
-
-      <section class="panel" data-panel="repairs">
-        <div class="page-surface">
-        <header class="page-head">
-          <div><span class="kicker">REPAIR QUEUE</span><h1>问题修复</h1></div>
-          <p>集中查看 Hermes / Codex 发现的问题、修复状态和待处理事项。</p>
-        </header>
-        <div class="grid grid-3">
-          <article class="card"><span class="label">Hermes Inbox</span><h2>待处理问题</h2><p>读取 `agent-workflow/inbox/hermes-to-codex/`，确认哪些问题需要 Codex 修复。</p></article>
-          <article class="card"><span class="label">Root Cause</span><h2>失败原因</h2><p>按栏目、失败门禁、报告路径、影响范围归类，不用翻日志找线索。</p></article>
-          <article class="card"><span class="label">Closeout</span><h2>修复闭环</h2><p>修复后记录验证命令、预防方式和对应提交，避免同类问题反复出现。</p></article>
-        </div>
-        <section class="surface-section">
-          <div class="module-head"><div><span class="kicker">REPAIR ORDER</span><h2>处理顺序</h2></div><p>先处理影响上线的问题，再处理质量和治理问题。</p></div>
-          <div class="grid grid-2">
-            <article class="card"><span class="label">01</span><h2>阻塞上线</h2><p>生产任务失败、Pages 未部署、同日数据缺失、Top10 未生成。</p></article>
-            <article class="card"><span class="label">02</span><h2>质量异常</h2><p>重复内容、来源缺失、标题异常、过期数据、证据边界不清。</p></article>
-            <article class="card"><span class="label">03</span><h2>自动化偏移</h2><p>定时任务未触发、PR 未合并、Obsidian 未同步、等待状态误判。</p></article>
-            <article class="card"><span class="label">04</span><h2>治理补强</h2><p>把重复问题沉淀到 gate、eval、memory 或版本冻结点。</p></article>
-          </div>
-        </section>
+          <section>
+            <div class="module-head"><div><span class="kicker">SYNC</span><h2>上线同步</h2></div><p>GitHub Pages、PR、本地同步和监督报告合在这里看。</p></div>
+            <div class="grid grid-3" data-sync-status></div>
+          </section>
         </div>
       </section>
 
       <section class="panel" data-panel="quality">
         <div class="page-surface">
-        <header class="page-head">
-          <div><span class="kicker">DATA QUALITY</span><h1>数据质量</h1></div>
-          <p>生产漏斗、来源质量、资产结构与重复内容，统一在后台内部看。</p>
-        </header>
-          <a class="jump-link dashboard-jump" href="v3-data-observation.html">数据观察台</a>
-          <section class="surface-section">
-            <div class="module-head"><div><span class="kicker">SOURCE QUALITY</span><h2>来源质量雷达</h2></div><p>对比样本量、新鲜度、重复率、官方源占比和 Raw→Card 转化。</p></div>
+          <header class="page-head">
+            <div><span class="kicker">DATA QUALITY</span><h1>数据质量</h1></div>
+            <p>看生产漏斗、来源质量、资产结构和异常比例，决定要补源、改门禁还是修脚本。</p>
+          </header>
+          <section>
+            <div class="module-head"><div><span class="kicker">SOURCE QUALITY</span><h2>来源质量雷达</h2></div><p>对比样本量、新鲜度、重复率、官方源占比和 Raw 到 Card 转化。</p></div>
             <article class="card"><div data-source-quality></div></article>
           </section>
-          <section class="surface-section">
+          <section>
             <div class="module-head"><div><span class="kicker">ASSET MATRIX</span><h2>资产结构</h2></div><p>重点看观点、案例、融资和产品服务之间是否失衡。</p></div>
             <div class="asset-matrix" data-asset-matrix></div>
           </section>
         </div>
       </section>
 
-      <section class="panel" data-panel="versions">
+      <section class="panel" data-panel="governance">
         <div class="page-surface">
-        <header class="page-head">
-          <div><span class="kicker">COLUMN VERSIONING</span><h1>栏目版本</h1></div>
-          <p>统一管理网站总版本、各栏目版本、冻结点和最近上线状态。</p>
-        </header>
-        <div class="grid grid-4">
-          <article class="card"><span class="label">SITE</span><h2>SITE-V3.3.8.6</h2><p>数据观察台当前主站版本。</p></article>
-          <article class="card"><span class="label">OPS</span><h2>OPS-V1.1.0</h2><p>运营后台改为数据观察台运营管理平台。</p></article>
-          <article class="card"><span class="label">BSIG</span><h2>BSIG-V1.1.4</h2><p>商业信号生产与发布门禁。</p></article>
-          <article class="card"><span class="label">IMAP</span><h2>IMAP-V1.2.0</h2><p>情报地图与机会雷达。</p></article>
-          <article class="card"><span class="label">FLV</span><h2>FLV-V1.0.2</h2><p>一线观点与 Obsidian 时间线。</p></article>
-          <article class="card"><span class="label">CINT</span><h2>CINT-V1.0.2</h2><p>社群情报采集与发布等待门禁。</p></article>
-          <article class="card"><span class="label">EAI</span><h2>EAI-V1.1.0</h2><p>企业 AI / FDE 镜头。</p></article>
-          <article class="card"><span class="label">SKILL</span><h2>v1.3.2</h2><p>Skill Store 治理版本。</p></article>
-        </div>
-        </div>
-      </section>
-
-      <section class="panel" data-panel="sync">
-        <div class="page-surface">
-        <header class="page-head">
-          <div><span class="kicker">RELEASE SYNC</span><h1>上线同步</h1></div>
-          <p>查看 GitHub Actions、PR、Pages 部署、本地 Obsidian 同步是否完成。</p>
-        </header>
-        <div class="grid grid-3">
-          <article class="card"><span class="label">GitHub Actions</span><h2>工作流状态</h2><p>检查 Business Signals、First-Line、Community、Pages 是否成功。</p></article>
-          <article class="card"><span class="label">Pull Request</span><h2>合并状态</h2><p>确认自动化分支是否已开 PR、是否已合并到 main。</p></article>
-          <article class="card"><span class="label">GitHub Pages</span><h2>线上状态</h2><p>确认线上数据文件、页面版本和本地版本是否一致。</p></article>
-          <article class="card"><span class="label">Obsidian</span><h2>本地同步</h2><p>检查本地同步脚本是否快进成功，是否有脏工作区阻塞。</p></article>
-          <article class="card"><span class="label">Reports</span><h2>监督报告</h2><p>读取 daily supervision、Hermes handoff、morning recovery 报告。</p></article>
-          <article class="card"><span class="label">Fallback</span><h2>人工接管</h2><p>当自动化失败时，显示最小修复命令和负责栏目。</p></article>
-        </div>
-        </div>
-      </section>
-
-      <section class="panel" data-panel="skills">
-        <div class="page-surface">
-        <header class="page-head">
-          <div><span class="kicker">SKILL GOVERNANCE</span><h1>Skill 治理</h1></div>
-          <p>只管理数据观察台生产、监控、修复相关 skill；内容写作 skill 后续移入独立内容项目。</p>
-        </header>
-        <iframe class="skill-frame" src="local-skill-store.html?embed=1&v=20260613-skill-store-v132" title="Skill Store"></iframe>
+          <header class="page-head">
+            <div><span class="kicker">VERSION GOVERNANCE</span><h1>版本治理</h1></div>
+            <p>统一管理后台总版本、网站栏目版本、冻结点和治理原则。</p>
+          </header>
+          <div class="grid grid-4" data-version-cards></div>
+          <section>
+            <div class="module-head"><div><span class="kicker">PRINCIPLES</span><h2>治理原则</h2></div><p>每个重复问题都应该沉淀为规则、门禁、评估或版本冻结点。</p></div>
+            <div class="grid grid-2" data-governance-principles></div>
+          </section>
+          <section>
+            <div class="module-head"><div><span class="kicker">SKILL OPS</span><h2>Skill 治理</h2></div><p>只保留与数据观察台生产、监督、修复有关的治理视图。</p></div>
+            <iframe class="skill-frame" src="local-skill-store.html?embed=1&v=20260630-ops-v120" title="Skill Store"></iframe>
+          </section>
         </div>
       </section>
 
       <section class="panel" data-panel="settings">
         <div class="page-surface">
-        <header class="page-head">
-          <div><span class="kicker">SYSTEM SETTINGS</span><h1>系统设置</h1></div>
-          <p>管理数据源、本地任务、授权状态和自动化时间表。</p>
-        </header>
-        <div class="grid grid-2">
-          <article class="card"><span class="label">Automation</span><h2>本地任务</h2><p>检查本地同步、社群采集、一线观点同步等 Windows / Codex 任务。</p></article>
-          <article class="card"><span class="label">Data</span><h2>数据状态</h2><div class="rows" data-data-status></div></article>
-        </div>
+          <header class="page-head">
+            <div><span class="kicker">SYSTEM SETTINGS</span><h1>系统设置</h1></div>
+            <p>查看后台数据源、生成时间、自动化入口和本地任务状态。</p>
+          </header>
+          <div class="grid grid-2">
+            <article class="card"><span class="label">Automation</span><h2>本地任务</h2><p>每日监督、生产漏斗同步和后台数据生成会共同驱动这个后台。</p></article>
+            <article class="card"><span class="label">Data</span><h2>数据状态</h2><div class="rows" data-data-status></div></article>
+          </div>
         </div>
       </section>
     </section>
   </main>
 
-  <script src="data/site-content.js"></script>
   <script src="data/pipeline-dashboard.js"></script>
-  <script src="assets/operations-console.js?v=20260630-ops-v110"></script>
+  <script src="data/ops-console.js"></script>
+  <script src="assets/operations-console.js?v=20260630-ops-v120"></script>
 </body>
 </html>
