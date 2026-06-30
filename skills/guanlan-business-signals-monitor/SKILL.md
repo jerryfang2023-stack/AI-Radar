@@ -35,7 +35,9 @@ Read only what is needed:
    - if no healthy same-date result is visible by 09:45 / 09:55 and no run is active, use Hermes three-lane early handoff before manual workflow dispatch;
    - if a downstream task starts while the workflow is still `in_progress`, wait for the run to finish before reporting missing data.
 
-5. For local repair, use the existing scripts in this order:
+5. Before any full-chain rerun, record activeDate, Top10 count, Card count, Raw / Pool / routed / Core / non-large Core counts, source-artifact freshness by source/channel, missing source-title translations, PR / Pages state, and local dirty / fast-forward state. If Raw is below floor because of provider quota or temporary outage but Pool, routed Pool, Core Pool, non-large Core Pool, and Top10/Card supply are sufficient, keep Raw shortfall visible as diagnostic and continue with Card / frontstage / PR work from the existing artifacts instead of rerunning Raw.
+
+6. For local repair, use the existing scripts in this order:
 
 ```powershell
 node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=<YYYY-MM-DD>
@@ -59,7 +61,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 ## Pass Criteria
 
-- Raw active count is at least 150.
+- Raw active count is at least 150, or Raw shortfall is explicitly released as diagnostic because Pool/Core/Top10 supply is already sufficient.
 - Pool count is at least 75.
 - Usable Core Pool count is at least 30.
 - Non-large-company Core Pool depth is at least 20 when supply exists.
@@ -72,6 +74,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 - Auto-merge skip is a publication state, not a data-generation failure. If the automation branch and PR contain passing data, keep the PR route and merge policy; do not push directly to `main`.
 - If only `raw_count_min` fails while quality score is high and other hard gates pass, treat it as a recovery candidate. Download Raw / Pool artifacts, regenerate Cards locally, rebuild site data, then rerun source-first and regression gates.
+- If same-date artifacts already show enough Pool, routed Pool, Core Pool, non-large Core Pool, and Top10/Card supply, do not start another Raw run just because a provider quota or temporary outage kept Raw below 150.
 - Do not copy artifact `site-content.json` when it was generated before Card creation. Rebuild site data from current Cards instead.
 - Watchlist material does not directly create Cards. A high-score watchlist item with aggregate industry data can only trigger source repair or Pool rerouting before Card generation.
 - If Top10 is short, repair Raw / Pool / Core Pool coverage. Do not use supply-fill, duplicate large-company items, or weakened caps as the fix.

@@ -65,6 +65,8 @@ Raw does not make content judgments, give recommendations, or write market concl
 Raw quantity is for evidence coverage, not frontstage balance:
 
 - automation target / gate: keep at least 150 active Raw candidates in the daily production chain;
+- if search-provider quota or temporary outage prevents the Raw floor from being filled, Raw shortfall is diagnostic rather than blocking once Pool, routed Pool, usable `core_pool`, non-large `core_pool`, and downstream Top 10 gates are sufficient;
+- source artifact Raw selection treats GDELT, keyword search, RSS, and AI HOT as peer discovery channels. Selection must draw from the available peer channels in a balanced rotation instead of treating one channel as a fixed priority source;
 - Raw may contain large-company material, but monitor logs must expose over-concentration by vendor/theme;
 - Raw must not be padded with repeated large-company product announcements when funding, customer, vertical, regulation, pricing, procurement, or emerging-company evidence is available.
 

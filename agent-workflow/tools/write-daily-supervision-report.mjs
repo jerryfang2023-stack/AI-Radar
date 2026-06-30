@@ -73,9 +73,8 @@ function readText(file, fallback = "") {
 function parseFields(text = "") {
   const fields = {};
   for (const line of text.split(/\r?\n/u)) {
-    const match = line.match(/^([a-zA-Z0-9_-]+):\s*(.*)$/u);
+    const match = line.match(/^(?:-\s*)?([a-zA-Z0-9_-]+):\s*(.*)$/u);
     if (!match) {
-      if (line.trim().startsWith("#")) break;
       continue;
     }
     fields[match[1]] = match[2].trim();
@@ -136,16 +135,20 @@ function sourceTitleTranslationDiagnostics(cardFiles = []) {
   };
 }
 
-function laneStatus(problems, warnings) {
+function laneStatus(problems, warnings, waiting = []) {
   if (problems.some((item) => item.severity === "manual_required")) return "manual_required";
-  if (problems.length && problems.every((item) => item.severity === "waiting")) return "waiting";
   if (problems.length) return "failed";
+  if (waiting.length) return "waiting";
   if (warnings.length) return "warning";
   return "passed";
 }
 
 function addProblem(list, message, severity = "failed") {
   list.push({ message, severity });
+}
+
+function addWaiting(list, message) {
+  list.push({ message, severity: "waiting" });
 }
 
 function slug(value = "") {
@@ -426,6 +429,7 @@ function buildBusinessSignalsLane() {
   const gh = githubWorkflowState("daily-persistent-assets-pr.yml", `automation/business-signals-${date}`);
   const pages = githubWorkflowState("github-pages.yml");
   const mergedPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.mergedAt) : null;
+  const businessWorkflowActive = gh.latest_run?.status === "queued" || gh.latest_run?.status === "in_progress";
   const pagesActive = pages.latest_run?.status === "queued" || pages.latest_run?.status === "in_progress";
   const publicationClosureWindowPassed = hasWindowPassed(date, "10:50");
 
@@ -495,20 +499,23 @@ function buildBusinessSignalsLane() {
   };
 
   if (windowPassed) {
-    if (!exists(dataFile)) addProblem(problems, `missing business-signal data file: ${rel(dataFile)}`);
-    if (activeDate !== date) addProblem(problems, `business-signal activeDate is ${activeDate || "missing"}, expected ${date}`);
-    if (!exists(graphFile)) addProblem(problems, `missing intelligence map data: ${rel(graphFile)}`);
-    if (sameDateTop10.length !== 10) {
-      addProblem(problems, `public Top10 count is ${sameDateTop10.length}, expected 10`);
-    }
+    const waitingForBusinessRun = businessWorkflowActive;
+    const recordDataProblem = (message) => {
+      if (waitingForBusinessRun) warnings.push(`${message}; Business Signals workflow is ${gh.latest_run.status}`);
+      else addProblem(problems, message);
+    };
+    if (!exists(dataFile)) recordDataProblem(`missing business-signal data file: ${rel(dataFile)}`);
+    if (activeDate !== date) recordDataProblem(`business-signal activeDate is ${activeDate || "missing"}, expected ${date}`);
+    if (!exists(graphFile)) recordDataProblem(`missing intelligence map data: ${rel(graphFile)}`);
+    if (sameDateTop10.length !== 10) recordDataProblem(`public Top10 count is ${sameDateTop10.length}, expected 10`);
     if (selection?.supplyConstrained) {
       if (selectedCount !== 10 || evidence.qualityGateStatus !== "passed") {
-        addProblem(problems, "frontstage selection is supply constrained");
+        recordDataProblem("frontstage selection is supply constrained");
       } else {
         warnings.push("frontstage selection reported supply constrained after a valid Top10 and passed gates; treat as supply warning, not data failure");
       }
     }
-    if (cardFiles < 10) addProblem(problems, `signal card files ${cardFiles} below 10`);
+    if (cardFiles < 10) recordDataProblem(`signal card files ${cardFiles} below 10`);
     if (!exists(manifestFile)) warnings.push(`missing same-date persistent asset manifest: ${rel(manifestFile)}`);
     if (evidence.qualityGateStatus === "failed") addProblem(problems, `quality gate failed: ${rel(qualityGateFile)}`);
     if (evidence.qualityGateStatus === "missing") warnings.push(`missing quality gate report: ${rel(qualityGateFile)}`);
@@ -554,7 +561,11 @@ function buildBusinessSignalsLane() {
   }
 
   if (!businessDataHealthy) {
-    if (!exists(dataFile) || activeDate !== date) {
+    if (businessWorkflowActive || pagesActive) {
+      evidence.diagnosis.category = "supervision_observability";
+      evidence.diagnosis.reason = "workflow or Pages is still queued/in_progress";
+      evidence.diagnosis.neededAction = "wait for active workflow completion and rerun supervision";
+    } else if (!exists(dataFile) || activeDate !== date) {
       evidence.diagnosis.category = "no_run_or_stale_assets";
       evidence.diagnosis.reason = `activeDate is ${activeDate || "missing"}, expected ${date}`;
       evidence.diagnosis.neededAction = "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow";
@@ -574,10 +585,6 @@ function buildBusinessSignalsLane() {
       evidence.diagnosis.category = "source_first_frontstage_gate";
       evidence.diagnosis.reason = `quality gate failed: ${rel(qualityGateFile)}`;
       evidence.diagnosis.neededAction = "repair the failed source-first/frontstage gate and rerun that gate";
-    } else if (problems.some((item) => /workflow is queued|workflow is in_progress|Pages workflow is/iu.test(item.message))) {
-      evidence.diagnosis.category = "publication";
-      evidence.diagnosis.reason = "workflow or Pages is still queued/in_progress";
-      evidence.diagnosis.neededAction = "wait for publication workflow completion and rerun supervision";
     } else if (evidence.publicationClosure.localSync.available && !evidence.publicationClosure.localSync.clean) {
       evidence.diagnosis.category = "local_sync";
       evidence.diagnosis.reason = `local workspace has ${evidence.publicationClosure.localSync.dirtyFiles} dirty file(s)`;
@@ -592,7 +599,7 @@ function buildBusinessSignalsLane() {
     evidence.diagnosis.neededAction = "repair publication/local sync closure only; do not rerun Raw/Pool/Card generation";
   }
 
-  if (problems.length) {
+  if (problems.length && !problems.every((item) => item.severity === "waiting")) {
     actions.push("send Codex a business_signals repair request with failed gate and report path");
   }
 
@@ -689,30 +696,85 @@ function buildFollowBuildersSkillLane() {
   const reportFile = path.join(reportsDir, `${date}-follow-builders-skill-local-publish.md`);
   const outputText = readText(outputFile);
   const reportText = readText(reportFile);
+  const reportFields = parseFields(reportText);
   const itemCount = (outputText.match(/^## BP-\d{8}-\d{2}\b/mgu) || []).length;
-  const reportCount = Number((reportText.match(/^- builder_items_count:\s*(\d+)/mu) || [])[1] || 0);
+  const outputFrontmatterCount = Number((outputText.match(/^builder_items_count:\s*(\d+)/mu) || [])[1] || 0);
+  const reportCount = Number(reportFields.builder_items_count || 0);
+  const publishStatus = reportFields.publish_status || "";
+  let publishError = reportFields.publish_error || "";
+  try {
+    publishError = publishError ? JSON.parse(publishError) : "";
+  } catch {
+    publishError = String(publishError || "").replace(/^["']|["']$/gu, "");
+  }
+  const obsidianSync = {
+    added: Number(reportFields.obsidian_sync_added ?? Number.NaN),
+    groups: Number(reportFields.obsidian_sync_groups ?? Number.NaN),
+    files: Number(reportFields.obsidian_sync_files ?? Number.NaN),
+  };
+  const obsidianSyncRecorded = Object.values(obsidianSync).every(Number.isFinite);
 
   evidence.outputFile = exists(outputFile) ? rel(outputFile) : "missing";
   evidence.reportFile = exists(reportFile) ? rel(reportFile) : "missing";
   evidence.itemCount = itemCount;
+  evidence.outputFrontmatterCount = outputFrontmatterCount;
   evidence.reportCount = reportCount;
+  evidence.publishStatus = publishStatus || (exists(reportFile) ? "not_recorded" : "missing");
+  evidence.publishError = publishError;
+  evidence.obsidianSync = obsidianSyncRecorded ? obsidianSync : "missing";
 
   if (windowPassed) {
     if (!exists(outputFile)) addProblem(problems, `missing follow-builders skill output file: ${rel(outputFile)}`);
     if (itemCount <= 0) addProblem(problems, `follow-builders skill output item count ${itemCount} below 1`);
-    if (exists(reportFile) && reportCount > 0 && reportCount !== itemCount) {
+    if (exists(reportFile) && reportCount <= 0) {
+      addProblem(problems, `follow-builders skill report count ${reportCount} below 1`);
+    }
+    if (exists(outputFile) && outputFrontmatterCount > 0 && outputFrontmatterCount !== itemCount) {
+      addProblem(problems, `follow-builders skill output frontmatter count ${outputFrontmatterCount} does not match heading count ${itemCount}`);
+    }
+    if (exists(reportFile) && reportCount > 0 && itemCount > 0 && reportCount !== itemCount) {
       addProblem(problems, `follow-builders skill report count ${reportCount} does not match output count ${itemCount}`);
+    }
+    if (exists(reportFile) && !obsidianSyncRecorded) {
+      addProblem(problems, "follow-builders skill report is missing Obsidian sync counts");
+    }
+    if (exists(reportFile) && publishStatus === "failed") {
+      const category = /prepare-digest|generate-builders|terminated|skill script|feed/iu.test(publishError)
+        ? "afternoon_skill_runner"
+        : "afternoon_publication_failure";
+      addProblem(problems, `follow-builders skill publish failed: ${publishError || rel(reportFile)}`);
+      evidence.diagnosis = {
+        category,
+        reason: publishError || "publish report recorded publish_status: failed",
+        neededAction: category === "afternoon_skill_runner"
+          ? "repair the local follow-builders skill runner or feed preparation before rerunning afternoon publish"
+          : "repair branch / PR / merge / Pages publication closure before rerunning afternoon publish",
+      };
     }
   }
   if (!exists(reportFile) && windowPassed) {
     addProblem(problems, "no same-date follow-builders skill publish report after 16:30 watchdog", "manual_required");
     actions.push("run `powershell -NoProfile -ExecutionPolicy Bypass -File agent-workflow/tools/run-follow-builders-skill.ps1` locally");
+    evidence.diagnosis = {
+      category: "afternoon_skill_runner",
+      reason: "same-date local publish report is missing after the afternoon watchdog window",
+      neededAction: "run the local follow-builders skill publisher and inspect the generated publish report",
+    };
   }
   if (windowPassed && !exists(reportFile)) {
     warnings.push("follow-builders skill publish report is missing before Hermes record time");
   }
 
   if (problems.length) {
+    if (!evidence.diagnosis) {
+      evidence.diagnosis = {
+        category: problems.some((item) => /publish failed|publish_status|PR|merge|branch|Pages/iu.test(item.message))
+          ? "afternoon_publication_failure"
+          : "afternoon_count_mismatch",
+        reason: problems[0]?.message || "follow-builders skill lane failed",
+        neededAction: "inspect the afternoon publish report, output count, and Obsidian sync counts",
+      };
+    }
     actions.push("send Codex a follow_builders_skill repair request with publish report path");
   }
 
@@ -730,6 +792,7 @@ function buildFollowBuildersSkillLane() {
 
 function buildCommunityLane() {
   const problems = [];
+  const waiting = [];
   const warnings = [];
   const evidence = {};
   const actions = [];
@@ -803,10 +866,10 @@ function buildCommunityLane() {
     } else if (!gh.latest_run && mergedPr) {
       warnings.push(`same-date Community Intelligence automation PR already merged: ${mergedPr.url}`);
     } else if (!gh.latest_run && openPr) {
-      addProblem(problems, `Community Intelligence publication PR is open: ${openPr.url}`, "waiting");
+      addWaiting(waiting, `Community Intelligence publication PR is open: ${openPr.url}`);
       actions.push("wait for Community Intelligence PR merge before declaring publication missing");
     } else if (gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued") {
-      addProblem(problems, `Community Intelligence publish workflow is ${gh.latest_run.status}`, "waiting");
+      addWaiting(waiting, `Community Intelligence publish workflow is ${gh.latest_run.status}`);
       actions.push("wait for Community Intelligence publish workflow completion");
     } else if (gh.latest_run?.conclusion && gh.latest_run.conclusion !== "success") {
       if (mergedPr) {
@@ -833,9 +896,10 @@ function buildCommunityLane() {
     id: "community_intelligence",
     label: "Community Intelligence",
     schedule: "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30",
-    status: laneStatus(problems, warnings),
+    status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,
+    waiting,
     warnings,
     actions: [...new Set(actions)],
   };
@@ -894,7 +958,7 @@ function aggregateStatus(lanes) {
 }
 
 function repairRequest(lane) {
-  if (!lane.problems.length && !lane.actions.length) return "none";
+  if (!lane.problems.length) return "none";
   return [
     `lane: ${lane.id}`,
     `failed_gate: ${repairGate(lane)}`,
@@ -926,7 +990,6 @@ function writeHermesInbox(payload, mdPath) {
   const created = [];
 
   for (const lane of payload.lanes) {
-    if (lane.status === "waiting") continue;
     if (!lane.problems.length) continue;
     const categories = incidentCategories(lane);
     const primaryCategory = categories[0] || "repair";
@@ -985,7 +1048,7 @@ function writeReports(payload) {
   const latestMdPath = path.join(reportsDir, "daily-supervision-report-latest.md");
 
   const tableRows = payload.lanes.map((lane) => (
-    `| ${lane.label} | ${lane.schedule} | ${lane.status} | ${lane.problems.length} | ${lane.warnings.length} |`
+    `| ${lane.label} | ${lane.schedule} | ${lane.status} | ${lane.problems.length} | ${lane.waiting?.length || 0} | ${lane.warnings.length} |`
   ));
   const laneBlocks = payload.lanes.map((lane) => [
     `## ${lane.label}`,
@@ -996,6 +1059,10 @@ function writeReports(payload) {
     "### Problems",
     "",
     markdownList(lane.problems),
+    "",
+    "### Waiting",
+    "",
+    markdownList(lane.waiting || []),
     "",
     "### Warnings",
     "",
@@ -1020,8 +1087,8 @@ function writeReports(payload) {
     `- github_mode: ${githubMode}`,
     `- scheduled_task_mode: ${taskMode}`,
     "",
-    "| Lane | Timeline | Status | Problems | Warnings |",
-    "|---|---|---|---:|---:|",
+    "| Lane | Timeline | Status | Problems | Waiting | Warnings |",
+    "|---|---|---|---:|---:|---:|",
     ...tableRows,
     "",
     ...laneBlocks,

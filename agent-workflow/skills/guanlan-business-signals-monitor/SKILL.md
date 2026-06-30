@@ -11,7 +11,7 @@ metadata:
     upstream: "external source capture, daily persistent assets workflow, Hermes inbox"
     downstream: "Signal Cards, public Top10, graph inputs, trend candidates, PR publication"
     gates: "monitor QC, post-monitor Raw / Pool gate, six-gate Card entry, Card generation, source-first, frontstage Top10"
-    recent_learning: "Repeated Top10-missing incidents must be split into stale assets, source-artifact retry, translation-title, publication/local-sync, and supervision-observability categories before any full rerun."
+    recent_learning: "Repeated Top10-missing incidents must be split into stale assets, source-artifact retry, translation-title, publication/local-sync, and supervision-observability categories before any full rerun. Provider-caused Raw shortfall is diagnostic when Pool/Core/Top10 supply is already sufficient."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -79,7 +79,7 @@ When repairing repeated morning failures, also read `examples/good-failure-route
    - `translation_title`: English/mixed/placeholder title or title-like subject;
    - `large_company_cap`: Top10 cap failure;
    - `publication`: PR, merge, or Pages failure after valid assets.
-6. Before any full-chain rerun, record the pre-rerun checklist: activeDate, Top10 count, Card count, Raw / Pool / routed / Core / non-large Core counts, source-artifact freshness by source/channel, missing source-title translations, PR / Pages state, and local dirty / fast-forward state.
+6. Before any full-chain rerun, record the pre-rerun checklist: activeDate, Top10 count, Card count, Raw / Pool / routed / Core / non-large Core counts, source-artifact freshness by source/channel, missing source-title translations, PR / Pages state, and local dirty / fast-forward state. If the checklist shows same-date Pool, routed Pool, Core Pool, non-large Core Pool, and Top10/Card supply are sufficient, do not rerun Raw just because the Raw floor is short; use the existing artifacts and repair the downstream blocker.
 7. Repair the smallest script, rule, gate, or skill path needed for the failing category.
 8. Rerun the exact failed gate or the smallest relevant validation.
 9. Add or tighten an eval before adding long prose when the failure is recurring.
@@ -100,14 +100,15 @@ Use this order:
    - non-large Core Pool count;
    - funding / case / product coverage;
    - predicted Top10 eligibility after the large-company cap.
-4. If supply is thin, repair the missing source lane first. Do not continue into dashboard, topic-center, or publication work.
-5. Generate Signal Cards from all eligible Core Pool items.
-6. Apply Top10 preselection with strict large-company caps before public JSON build.
-7. Build Business frontstage JSON.
-8. Run the unified Business frontstage gate immediately.
-9. Only after that gate passes, build operations dashboard, topic center, manifest, PR, merge, and Pages.
-10. At 09:45 / 09:55, Hermes should dispatch or hand off one categorized repair path rather than triggering overlapping full-chain reruns.
-11. At 10:50, supervision should check the publication closure: merged PR, GitHub Pages success, same-date Business data, Top10 count, and whether local sync is blocked.
+4. If Raw is below floor because of provider quota or temporary outage, but Pool, routed Pool, Core Pool, non-large Core Pool, and predicted Top10 eligibility are sufficient, keep the Raw shortfall visible as a diagnostic and continue with Card / frontstage / PR work from the same artifact set.
+5. If Pool, routed Pool, Core Pool, non-large Core Pool, or Top10 eligibility is thin, repair the missing source lane first. Do not continue into dashboard, topic-center, or publication work.
+6. Generate Signal Cards from all eligible Core Pool items.
+7. Apply Top10 preselection with strict large-company caps before public JSON build.
+8. Build Business frontstage JSON.
+9. Run the unified Business frontstage gate immediately.
+10. Only after that gate passes, build operations dashboard, topic center, manifest, PR, merge, and Pages.
+11. At 09:45 / 09:55, Hermes should dispatch or hand off one categorized repair path rather than triggering overlapping full-chain reruns.
+12. At 10:50, supervision should check the publication closure: merged PR, GitHub Pages success, same-date Business data, Top10 count, and whether local sync is blocked.
 
 ## Weekend Policy
 
@@ -129,7 +130,7 @@ Weekend monitor quantity floors may be lighter because source volume is lower, b
 - Do not lower Raw / Pool / Core Pool / Top10 quality gates to make a day look complete.
 - Do not relax the large-company cap to solve weekend low supply; repair non-large Core Pool supply instead.
 - If routed Pool, Core Pool, or non-large Core Pool is short, repair with targeted recent-event refill: launches, funding, customer deployments, production rollouts, procurement, pricing, regulatory, or vertical workflow cases.
-- If Raw is reported short, identify the deficient source/channel or downstream eligibility bucket before rerunning. Do not call a translation-title, stale local checkout, publication, or local-sync issue a Raw shortage.
+- If Raw is reported short, identify the deficient source/channel or downstream eligibility bucket before rerunning. Do not call a translation-title, stale local checkout, publication, or local-sync issue a Raw shortage. If Pool/Core/Top10 supply is already enough, proceed downstream from the existing artifacts instead of starting another full Raw run.
 - Do not satisfy quantity gaps by promoting marketplace listings, directories, repo roots, package/model pages, generic guides, broad lists, funding roundups, generic funding commentary, interviews, old evergreen technical posts, or search snippets into Core Pool.
 - Do not satisfy quantity gaps with generic FDE / applied-AI implementation pages. Job posts, role explainers, consulting/service landing pages, and "what is FDE" articles stay non-core unless the same original source has a concrete dated customer deployment, launch, financing, procurement, partnership, or production rollout.
 - Treat `source_level` / `acquisition_source_level` as traceability-only labels. They must not be value scores, core gates, ranking inputs, or automatic downgrade reasons.

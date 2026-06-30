@@ -5,7 +5,7 @@ Use these as pass/fail checks after production, repair, or rule changes.
 ## Required
 
 - PASS if the lane uses `.github/workflows/daily-persistent-assets-pr.yml`; FAIL if it relies on the First-Line Viewpoints or Community Intelligence workflow.
-- PASS if Raw count >= 150 and Pool count >= 75; FAIL if missing monitor logs are ignored.
+- PASS if Raw count >= 150 and Pool count >= 75; PASS if Raw is below 150 only when the gate records `raw_count_release_override=pool_core_supply` and Pool / routed Pool / Core Pool / non-large Core / Top10 supply are sufficient; FAIL if missing monitor logs are ignored or Raw-only shortage blocks downstream release after supply is healthy.
 - PASS if Core Pool target is >= 30 and non-large-company Core Pool target is >= 20 when supply exists; FAIL if Top10 is padded with repeated large-company news.
 - PASS if `frontstageSelection` for the active date selects exactly 10 cards and `supplyConstrained=false`; FAIL if selected count is below 10 without a repair plan.
 - PASS if the public Business Signals JSON also exposes an active-date `top10` array with exactly 10 cards; FAIL if `frontstageSelection` has 10 cards but `top10` is missing, empty, stale, or not exactly 10.
@@ -19,6 +19,9 @@ Use these as pass/fail checks after production, repair, or rule changes.
 - PASS if high-score watchlist aggregate data is used only to repair or reroute source-backed Pool entries; FAIL if watchlist entries directly generate Cards.
 - PASS if English frontstage titles or title-like subjects are rebuilt and gated; FAIL if untranslated titles or `subject=title` reach the frontstage.
 - PASS if root/homepage URLs are kept as index-only or watchlist evidence; FAIL if a news-site homepage or generic directory URL generates a Signal Card or reaches frontstage.
+- PASS if RSS HTTP 415 / 429 / 5xx, Anysearch quota exhaustion, or search-provider temporary unavailable notes are treated as recovered after Pool, routed Pool, Core Pool, non-large Core, and importance coverage gates are already satisfied; FAIL if provider fallback hides a true Pool/Core shortage or blocks Card / Top10 generation after downstream supply gates pass.
+- PASS if `raw_count_min` shortfall remains visible as `raw_count_release_override=pool_core_supply` when Pool/Core supply is sufficient; FAIL if Raw-only shortage blocks release after Top10 is enough.
+- PASS if source-artifact Raw selection rotates across GDELT, keyword search, RSS, and AI HOT as peer channels; FAIL if a fixed priority channel can starve another available source artifact channel.
 
 ## Self-Improvement
 

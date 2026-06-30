@@ -1,7 +1,7 @@
 ---
 status: current
 scope: v3-3-automation
-last_updated: 2026-06-17
+last_updated: 2026-06-30
 use_when:
   - github automation
   - daily monitoring
@@ -10,9 +10,9 @@ use_when:
 priority: current
 ---
 
-# SITE-V3.3.8.4 Automation Loop
+# SITE-V3.3.8.6 Automation Loop
 
-SITE-V3.3.8.4 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists same-date Builder viewpoints into Obsidian person / date timeline files, Business Signals runs on the V3.3.6.3 source-artifact aggregation contract with public title / candidate dedupe gates, Core Pool source-hygiene gates, and the Enterprise AI / FDE Lens Pool, Community Intelligence uses local logged-in collection before GitHub publication, Intelligence Map publishes the weekly report entry / detail route and source-backed opportunity radar panels, and Hermes supervises all three active daily lanes with staged handoff at 09:30 / 09:45 / 09:55.
+SITE-V3.3.8.6 automation is column-independent for production and site-unified for publication. It is not enough to create temporary artifacts. First-Line Viewpoints persists gated Builder viewpoints into Obsidian person / original-date timeline files and verifies sync dry-run idempotency, Business Signals runs on the V3.3.6.3 source-artifact aggregation contract with public title / candidate dedupe gates, Core Pool source-hygiene gates, peer source-artifact selection, Pool/Core release override for provider-caused Raw shortfall, and the Enterprise AI / FDE Lens Pool, Community Intelligence uses local logged-in collection before GitHub publication and separates Waiting publication states from repair Problems, Intelligence Map publishes the weekly report entry / detail route and source-backed opportunity radar panels, and Hermes supervises all three active daily lanes with staged handoff at 09:30 / 09:45 / 09:55.
 
 ## Business Signals GitHub Chain
 
@@ -376,6 +376,8 @@ The gate checks:
 The first-line workflow may stage `follow-builders-daily.json` only after this gate passes.
 
 After the gate passes, the workflow must stage `01-SiteV2/knowledge/02-Opinion-Timelines/` only if `sync-follow-builders-to-opinion-timelines.mjs` succeeds. A second run for the same date should add `0` entries; otherwise treat it as a duplicate / idempotency failure.
+
+Do not treat a zero count of `### <run-date>` headings as missing sync by itself. Opinion timeline files are keyed by each remark's original source date, so a same-day production run can legitimately write only earlier original-date files. The skip / health check must use same-date `follow-builders-daily.json` plus `sync-follow-builders-to-opinion-timelines.mjs --from=<date> --to=<date> --dry-run=true` reporting `added: 0`.
 
 ## First-Line Viewpoints Obsidian Automation Plan
 
