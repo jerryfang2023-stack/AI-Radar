@@ -277,7 +277,7 @@
     dataStatus.classList.add("data-status-list");
     const sources = list(ops.meta?.sources);
     dataStatus.innerHTML = [
-      ["ops-console", ops.meta?.version || "OPS-V1.2.1-skill-store-rail"],
+      ["ops-console", ops.meta?.version || "OPS-V1.2.2-skill-store-title-dedupe"],
       ["generated", ops.meta?.generatedAt || "-"],
       ["date", ops.meta?.date || "-"],
       ["pipeline", quality.pipelineMeta?.generatedAt || pipeline.meta?.generatedAt || "-"],

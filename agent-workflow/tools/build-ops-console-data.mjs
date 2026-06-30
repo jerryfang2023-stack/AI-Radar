@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const VERSION = "OPS-V1.2.1-skill-store-rail";
+const VERSION = "OPS-V1.2.2-skill-store-title-dedupe";
 
 const rel = (...parts) => path.join(...parts).replaceAll("\\", "/");
 const abs = (...parts) => path.join(root, ...parts);
