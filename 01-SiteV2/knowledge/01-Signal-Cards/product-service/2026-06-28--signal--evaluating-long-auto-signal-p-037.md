@@ -47,11 +47,11 @@ opportunity_signals:
   business_action: ["customer_deployment", "research_benchmark"]
   product_form: ["evaluation_platform"]
   delivery_model: []
-  pain_or_constraint: ["evaluation_gap"]
+  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Evaluating Long-Context Question & Answer Systems Evaluating Long-Context Question &amp; Answer Systems 来源材料显示，Evaluating Long 的AI 商业动作涉及模型部署和算力调用。"
+  source_excerpt: "# Evaluating Long-Context Question & Answer Systems ## 新闻事实 来源材料显示，Evaluating Long 的AI 商业动作涉及模型部署和算力调用。"
   missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Evaluating Long"

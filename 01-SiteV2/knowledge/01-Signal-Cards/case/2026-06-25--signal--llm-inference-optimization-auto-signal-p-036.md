@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["customer_metric", "deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "LLM Inference Optimization: A Practical Guide for AI Engineers LLM Inference Optimization: A Practical Guide for AI Engineers 来源材料显示，LLM Inference Optimization 的AI 商业动作涉及模型部署和算力调用。"
+  source_excerpt: "If you're deploying LLMs in production in 2026, inference is almost certainly your biggest line item."
   missing_fields: ["specific_task", "product_form", "delivery_model"]
 
 signal_owner: "LLM Inference Optimization"

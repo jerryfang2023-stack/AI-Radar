@@ -44,15 +44,15 @@ opportunity_signals:
   buyer_or_user: ["sales_team", "enterprise_ai_owner"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["customer_deployment", "pricing_change", "research_benchmark"]
-  product_form: ["api"]
-  delivery_model: ["api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
-  adoption_evidence: ["deployment_scale"]
+  business_action: ["customer_deployment"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "在 GPU Cloud 上部署小语言模型的企业指南 Deploy Small Language Models on GPU Cloud: Enterprise SLM Guide for 75% Lower Inference Costs (2026) | Spheron Blog 来源材料显示，Deploy Small Language Models on GPU Cloud 的AI 商业动作涉及销售和收入团队流程；原文同时出现 7..."
-  missing_fields: []
+  source_excerpt: "在 GPU Cloud 上部署小语言模型的企业指南 Deploy Small Language Models on GPU Cloud: Enterprise SLM Guide for 75% Lower Inference Costs (2026) | Spheron Blog # 在 GPU Cloud 上部署小语言模型的企业指南 ## 新闻事实 来源材料显示，Deploy Small Language Models on GP..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Deploy Small Language Models on GPU Cloud"
 

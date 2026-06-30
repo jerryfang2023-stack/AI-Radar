@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["customer_support_team", "enterprise_ai_owner"]
-  team_or_function: ["customer_support"]
-  specific_task: ["customer_ticket_triage"]
+  buyer_or_user: ["sales_team", "customer_support_team", "enterprise_ai_owner"]
+  team_or_function: ["sales", "customer_support"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage"]
   business_action: ["funding_round", "customer_deployment", "partnership_integration", "acquisition"]
   product_form: []
   delivery_model: []
@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "AI Voice Agent Startup Telli Secures $3.6M in Pre-Seed Funding - Startup Ecosystem Canada AI Voice Agent Startup Telli Secures $3.6M in Pre-Seed Funding - Startup Ecosystem Canada 来源材料显示，Telli 的融资或资金流向涉及企业智能体协作流程；原文同时出现..."
+  source_excerpt: "AI Voice Agent Startup Telli Secures $3.6M in Pre-Seed Funding - Startup Ecosystem Canada AI Voice Agent Startup Telli Secures $3.6M in Pre-Seed Funding - Startup Ecosystem Canada AI Voice Agent Startup Telli Secures $3..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Telli"

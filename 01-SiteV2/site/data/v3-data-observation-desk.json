@@ -1,11 +1,11 @@
 {
   "meta": {
     "version": "V3.3.6.3-business-source-artifact-aggregation",
-    "siteVersion": "SITE-V3.3.8.6",
+    "siteVersion": "SITE-V3.3.8.7",
     "businessSignalsColumnVersion": "BSIG-V1.1.4-pool-core-release-gate",
     "enterpriseAiLensVersion": "EAI-V1.1.0-fde-lens-pool",
-    "intelligenceMapColumnVersion": "IMAP-V1.2.0-opportunity-radar",
-    "generatedAt": "2026-06-30T07:18:56.795Z",
+    "intelligenceMapColumnVersion": "IMAP-V1.3.0-report-center-monthly",
+    "generatedAt": "2026-06-30T10:00:56.540Z",
     "activeDate": "2026-06-30",
     "top10Count": 10,
     "source": "Signal Cards",
@@ -218,7 +218,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Agents SDK 增加后台子智能体和统一回合入口 Agents SDK adds background sub-agents and a unified turn entry point · Changelog 原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。",
+        "sourceExcerpt": "Agents SDK 增加后台子智能体和统一回合入口 Agents SDK adds background sub-agents and a unified turn entry point · Changelog New updates and improvements at Cloudflare.",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -233,8 +233,8 @@
               "label": "Engineering or developer team"
             },
             {
-              "id": "enterprise_ai_owner",
-              "label": "Enterprise AI / transformation owner"
+              "id": "operations_team",
+              "label": "Operations, logistics, supply-chain, or back-office team"
             }
           ],
           "team_or_function": [
@@ -245,6 +245,10 @@
             {
               "id": "engineering",
               "label": "Engineering / software development"
+            },
+            {
+              "id": "operations",
+              "label": "Operations / supply chain / back office"
             }
           ],
           "specific_task": [
@@ -255,6 +259,10 @@
             {
               "id": "internal_tool_building",
               "label": "Building internal tools, apps, or automations"
+            },
+            {
+              "id": "logistics_coordination",
+              "label": "Shipment, logistics, dispatch, inventory, or supply-chain coordination"
             }
           ],
           "business_action": [
@@ -300,28 +308,32 @@
         "buyer_or_user": [
           "sales_team",
           "engineering_team",
-          "enterprise_ai_owner"
+          "operations_team"
         ],
         "buyerOrUser": [
           "sales_team",
           "engineering_team",
-          "enterprise_ai_owner"
+          "operations_team"
         ],
         "team_or_function": [
           "sales",
-          "engineering"
+          "engineering",
+          "operations"
         ],
         "teamOrFunction": [
           "sales",
-          "engineering"
+          "engineering",
+          "operations"
         ],
         "specific_task": [
           "sales_lead_research",
-          "internal_tool_building"
+          "internal_tool_building",
+          "logistics_coordination"
         ],
         "specificTask": [
           "sales_lead_research",
-          "internal_tool_building"
+          "internal_tool_building",
+          "logistics_coordination"
         ],
         "business_action": [
           "customer_deployment"
@@ -447,7 +459,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "原文称，Financial deployment is both modest and growing.",
+        "sourceExcerpt": "/ query=enterprise AI deployment industry workflow customer story 2026 / intent=find_customer_case / path=industry_landing Foundation Executive Summary Utilities stand at an inflection point.",
         "missingFields": [
           "product_form",
           "delivery_model"
@@ -475,6 +487,10 @@
             {
               "id": "healthcare_operations",
               "label": "Healthcare operations"
+            },
+            {
+              "id": "it_security",
+              "label": "IT / security / platform governance"
             }
           ],
           "specific_task": [
@@ -487,6 +503,10 @@
             {
               "id": "customer_deployment",
               "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "governance_requirement",
+              "label": "Governance, regulation, security, or compliance requirement"
             }
           ],
           "product_form": [],
@@ -526,11 +546,13 @@
         ],
         "team_or_function": [
           "finance",
-          "healthcare_operations"
+          "healthcare_operations",
+          "it_security"
         ],
         "teamOrFunction": [
           "finance",
-          "healthcare_operations"
+          "healthcare_operations",
+          "it_security"
         ],
         "specific_task": [
           "medical_documentation"
@@ -539,10 +561,12 @@
           "medical_documentation"
         ],
         "business_action": [
-          "customer_deployment"
+          "customer_deployment",
+          "governance_requirement"
         ],
         "businessAction": [
-          "customer_deployment"
+          "customer_deployment",
+          "governance_requirement"
         ],
         "product_form": [],
         "productForm": [],
@@ -688,7 +712,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "CData 发布 Connect AI 开发者版、Python SDK 和 CLI CData Launches Connect AI Developer Edition, Python SDK, and CLI 原始来源标题显示：CData 发布 Connect AI 开发者版、Python SDK 和 CLI。",
+        "sourceExcerpt": "CData 发布 Connect AI 开发者版、Python SDK 和 CLI CData Launches Connect AI Developer Edition, Python SDK, and CLI June 24, 2026 CData Software launched three products for developers building AI applications on enterprise data:...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -956,7 +980,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Zendesk 在 Relate 2026 发布自主服务劳动力 Zendesk Unveils Autonomous Service Workforce at Relate 2026 原始来源标题显示：Zendesk 在 Relate 2026 发布自主服务劳动力。",
+        "sourceExcerpt": "Zendesk 在 Relate 2026 发布自主服务劳动力 Zendesk Unveils Autonomous Service Workforce at Relate 2026 Zendesk replaces deflection bots with specialized AI agents at Relate 2026.",
         "missingFields": [
           "adoption_evidence",
           "delivery_model"
@@ -1177,9 +1201,8 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Dapta 评选 2026 年最佳 AI 智能体构建平台 Best AI Agent Builder Platforms in 2026 (Ranked Honestly) - Dapta 原始来源标题显示：Dapta 评选 2026 年最佳 AI 智能体构建平台。",
+        "sourceExcerpt": "Dapta 评选 2026 年最佳 AI 智能体构建平台 Best AI Agent Builder Platforms in 2026 (Ranked Honestly) - Dapta The 6 best AI agent builder platforms in 2026, ranked and honestly compared.",
         "missingFields": [
-          "adoption_evidence",
           "delivery_model"
         ],
         "labels": {
@@ -1224,7 +1247,12 @@
               "label": "Integration into existing workflow or systems"
             }
           ],
-          "adoption_evidence": [],
+          "adoption_evidence": [
+            {
+              "id": "customer_metric",
+              "label": "Customer outcome metric, usage number, or quantified result"
+            }
+          ],
           "source_evidence_type": []
         },
         "buyer_or_user": [
@@ -1267,8 +1295,12 @@
         "painOrConstraint": [
           "workflow_integration"
         ],
-        "adoption_evidence": [],
-        "adoptionEvidence": [],
+        "adoption_evidence": [
+          "customer_metric"
+        ],
+        "adoptionEvidence": [
+          "customer_metric"
+        ],
         "source_evidence_type": [],
         "sourceEvidenceType": []
       },
@@ -1379,7 +1411,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "GitHub 2026 年 6 月最新发布说明 GitHub Release Notes - June 2026 Latest Updates - Releasebot 原始来源标题显示：GitHub 2026 年 6 月最新发布说明。",
+        "sourceExcerpt": "GitHub 2026 年 6 月最新发布说明 GitHub Release Notes - June 2026 Latest Updates - Releasebot GitHub adds total pull request merges by AI adoption phase in Copilot usage metrics API reports for organizations and enterprises, giv...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -1407,10 +1439,6 @@
             }
           ],
           "business_action": [
-            {
-              "id": "funding_round",
-              "label": "Funding, financing, or investment round"
-            },
             {
               "id": "product_launch",
               "label": "Product, feature, model, API, or platform launch"
@@ -1451,12 +1479,7 @@
             }
           ],
           "adoption_evidence": [],
-          "source_evidence_type": [
-            {
-              "id": "funding_news",
-              "label": "Funding news or investor announcement"
-            }
-          ]
+          "source_evidence_type": []
         },
         "buyer_or_user": [
           "engineering_team",
@@ -1479,12 +1502,10 @@
           "code_review"
         ],
         "business_action": [
-          "funding_round",
           "product_launch",
           "open_source_release"
         ],
         "businessAction": [
-          "funding_round",
           "product_launch",
           "open_source_release"
         ],
@@ -1514,12 +1535,8 @@
         ],
         "adoption_evidence": [],
         "adoptionEvidence": [],
-        "source_evidence_type": [
-          "funding_news"
-        ],
-        "sourceEvidenceType": [
-          "funding_news"
-        ]
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
       },
       "summary": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。",
       "translatedFact": "原始来源标题显示：GitHub 2026 年 6 月最新发布说明。",
@@ -1607,7 +1624,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "[{\"type\":\"case_detail\",\"text\":\"Arcade's AI-native customer base in 2026 covers four product categories.",
+        "sourceExcerpt": "- Arcade Software Arcade's AI-native customer base in 2026 covers four product categories.",
         "missingFields": [
           "specific_task",
           "product_form",
@@ -1642,12 +1659,24 @@
             {
               "id": "latency_sensitive",
               "label": "Latency, reliability, or production performance constraint"
+            },
+            {
+              "id": "context_management",
+              "label": "Context, memory, or state management"
             }
           ],
           "adoption_evidence": [
             {
               "id": "case_study",
               "label": "Case study, customer story, or deployment write-up"
+            },
+            {
+              "id": "usage_growth",
+              "label": "Usage growth, ARR, revenue, or customer-count growth"
+            },
+            {
+              "id": "third_party_report",
+              "label": "Third-party report, industry report, or analyst evidence"
             }
           ],
           "source_evidence_type": [
@@ -1680,18 +1709,24 @@
         "pain_or_constraint": [
           "workflow_integration",
           "hallucination_risk",
-          "latency_sensitive"
+          "latency_sensitive",
+          "context_management"
         ],
         "painOrConstraint": [
           "workflow_integration",
           "hallucination_risk",
-          "latency_sensitive"
+          "latency_sensitive",
+          "context_management"
         ],
         "adoption_evidence": [
-          "case_study"
+          "case_study",
+          "usage_growth",
+          "third_party_report"
         ],
         "adoptionEvidence": [
-          "case_study"
+          "case_study",
+          "usage_growth",
+          "third_party_report"
         ],
         "source_evidence_type": [
           "first_party_case"
@@ -1786,7 +1821,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Kore.ai 客户故事：跨行业 AI 成功案例 Kore.ai Customer Stories – AI Success Across Industries 原始来源标题显示：Kore.ai 客户故事：跨行业 AI 成功案例。",
+        "sourceExcerpt": "Kore.ai 客户故事：跨行业 AI 成功案例 Kore.ai Customer Stories – AI Success Across Industries AMD partnered with Kore.ai to transform HR support delivery at scale—quickly, efficiently, and without sacrificing the human touch.",
         "missingFields": [],
         "labels": {
           "buyer_or_user": [
@@ -1845,6 +1880,10 @@
             {
               "id": "rag_knowledge_base",
               "label": "RAG, enterprise search, memory, or knowledge-base layer"
+            },
+            {
+              "id": "vertical_saas",
+              "label": "Vertical SaaS application for a named industry or function"
             }
           ],
           "delivery_model": [
@@ -1922,11 +1961,13 @@
         ],
         "product_form": [
           "agent_workbench",
-          "rag_knowledge_base"
+          "rag_knowledge_base",
+          "vertical_saas"
         ],
         "productForm": [
           "agent_workbench",
-          "rag_knowledge_base"
+          "rag_knowledge_base",
+          "vertical_saas"
         ],
         "delivery_model": [
           "project_based_service"
@@ -2069,7 +2110,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心 How Sanofi Built an Enterprise Process Mining Center of Excellence with AI and Snowflake 原始来源标题显示：Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心。",
+        "sourceExcerpt": "Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心 How Sanofi Built an Enterprise Process Mining Center of Excellence with AI and Snowflake Sanofi built an enterprise-wide process mining Center of Excellence using QPR Software’s QP...",
         "missingFields": [
           "delivery_model"
         ],
@@ -2596,7 +2637,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Databricks 发布 Genie One：面向每个团队的智能协作 Agent Databricks Launches Genie One: All-New Agentic Coworker for Every Team - Databricks 原始来源标题显示：Databricks 发布 Genie One：面向每个团队的智能协作 Agent。",
+        "sourceExcerpt": "Databricks 发布 Genie One：面向每个团队的智能协作 Agent Databricks Launches Genie One: All-New Agentic Coworker for Every Team - Databricks Databricks Launches Genie One: All-New Agentic Cowork ...",
         "missingFields": [
           "adoption_evidence",
           "delivery_model"
@@ -2912,7 +2953,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Infosys / Sentara宣布与 Sentara 达成战略合作，建设可扩展的 AI 驱动转型基础，并改善企业流程效率与服务体验。",
+        "sourceExcerpt": "Infosys 与 Sentara 合作推动医疗服务中的企业 AI 应用 Infosys Collaborates with Sentara to Unlock AI Value and Scale Enterprise AI Adoption in Healthcare Services BENGALURU, India and NORFOLK, Va., June 24, 2026 /PRNewswire/ -- Infosys(...",
         "missingFields": [
           "product_form"
         ],
@@ -3152,7 +3193,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Talkdesk 降低客户面对型 AI 部署的不确定性 Talkdesk ends the guesswork in deploying customer-facing AI 原始来源标题显示：Talkdesk 降低客户面对型 AI 部署的不确定性。",
+        "sourceExcerpt": "Talkdesk 降低客户面对型 AI 部署的不确定性 Talkdesk ends the guesswork in deploying customer-facing AI ## Talkdesk Agent Builder enables teams to create ...",
         "missingFields": [
           "product_form",
           "delivery_model"
@@ -3315,7 +3356,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Upbound 发布 Modelplane 开源控制平面 Upbound Launches Modelplane: The Open Source Control Plane 原始来源标题显示：Upbound 发布 Modelplane 开源控制平面。",
+        "sourceExcerpt": "Upbound 发布 Modelplane 开源控制平面 Upbound Launches Modelplane: The Open Source Control Plane SAN FRANCISCO, June 23, 2026 (GLOBE NEWSWIRE) -- Upbound, the company behind Crossplane, today released Modelplane, an open source ...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -3365,6 +3406,10 @@
             }
           ],
           "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            },
             {
               "id": "model_routing_complexity",
               "label": "Model routing, vendor selection, or multi-model operations"
@@ -3419,9 +3464,11 @@
           "open_source_commercial"
         ],
         "pain_or_constraint": [
+          "workflow_integration",
           "model_routing_complexity"
         ],
         "painOrConstraint": [
+          "workflow_integration",
           "model_routing_complexity"
         ],
         "adoption_evidence": [],
@@ -3524,7 +3571,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Convey 获得 a16z 领投的 3800 万美元 A 轮融资 Convey Raises $38 Million Series A Led by Andreessen Horowitz to Automate Enterprise Operations with AI Teammates 原始来源标题显示：Convey 获得 a16z 领投的 3800 万美元 A 轮融资。",
+        "sourceExcerpt": "Convey 获得 a16z 领投的 3800 万美元 A 轮融资 Convey Raises $38 Million Series A Led by Andreessen Horowitz to Automate Enterprise Operations with AI Teammates Convey Raises $38 Million Series A Led by Andreessen Horowitz to Automa...",
         "missingFields": [
           "product_form",
           "adoption_evidence",
@@ -3737,7 +3784,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "JustAI 获得 1700 万美元 A 轮融资，扩展 AI 营销自动化 JustAI Raises $17 Million in Series A to Scale AI-Powered Marketing Automation Globally - Indian Startup Times 原始来源标题显示：JustAI 获得 1700 万美元 A 轮融资，扩展 AI 营销自动化。",
+        "sourceExcerpt": "JustAI 获得 1700 万美元 A 轮融资，扩展 AI 营销自动化 JustAI Raises $17 Million in Series A to Scale AI-Powered Marketing Automation Globally - Indian Startup Times # JustAI Raises $17 Million in Series A to Scale AI-Powered Marketing A...",
         "missingFields": [
           "product_form",
           "adoption_evidence",
@@ -3750,14 +3797,22 @@
               "label": "Sales or revenue team"
             },
             {
-              "id": "it_security_team",
-              "label": "IT, security, governance, or platform team"
+              "id": "engineering_team",
+              "label": "Engineering or developer team"
+            },
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
             }
           ],
           "team_or_function": [
             {
               "id": "sales",
               "label": "Sales / revenue operations"
+            },
+            {
+              "id": "engineering",
+              "label": "Engineering / software development"
             },
             {
               "id": "it_security",
@@ -3768,6 +3823,10 @@
             {
               "id": "sales_lead_research",
               "label": "Lead research, account research, or pipeline enrichment"
+            },
+            {
+              "id": "internal_tool_building",
+              "label": "Building internal tools, apps, or automations"
             }
           ],
           "business_action": [
@@ -3798,25 +3857,31 @@
         },
         "buyer_or_user": [
           "sales_team",
-          "it_security_team"
+          "engineering_team",
+          "enterprise_ai_owner"
         ],
         "buyerOrUser": [
           "sales_team",
-          "it_security_team"
+          "engineering_team",
+          "enterprise_ai_owner"
         ],
         "team_or_function": [
           "sales",
+          "engineering",
           "it_security"
         ],
         "teamOrFunction": [
           "sales",
+          "engineering",
           "it_security"
         ],
         "specific_task": [
-          "sales_lead_research"
+          "sales_lead_research",
+          "internal_tool_building"
         ],
         "specificTask": [
-          "sales_lead_research"
+          "sales_lead_research",
+          "internal_tool_building"
         ],
         "business_action": [
           "funding_round",
@@ -3957,7 +4022,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Sail Research 获得 8000 万美元融资，建设 AI Agent 高效基础设施 Sail Research Raises $80 Million to Build Max-Efficiency Infrastructure for AI Agents 原始来源标题显示：Sail Research 获得 8000 万美元融资，建设 AI Agent 高效基础设施。",
+        "sourceExcerpt": "Sail Research 获得 8000 万美元融资，建设 AI Agent 高效基础设施 Sail Research Raises $80 Million to Build Max-Efficiency Infrastructure for AI Agents Sail Research Raises $80 Million to Build Max-Efficiency Infrastructure for AI Agents ...",
         "missingFields": [
           "product_form",
           "adoption_evidence",
@@ -3978,8 +4043,8 @@
           ],
           "specific_task": [
             {
-              "id": "sales_lead_research",
-              "label": "Lead research, account research, or pipeline enrichment"
+              "id": "sales_briefing",
+              "label": "Sales briefing, call prep, or revenue-team coordination"
             }
           ],
           "business_action": [
@@ -4020,10 +4085,10 @@
           "sales"
         ],
         "specific_task": [
-          "sales_lead_research"
+          "sales_briefing"
         ],
         "specificTask": [
-          "sales_lead_research"
+          "sales_briefing"
         ],
         "business_action": [
           "funding_round",
@@ -4143,7 +4208,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Scaled Cognition 获得 Khosla 领投的 1 亿美元融资 Scaled Cognition raises $100M led by Khosla 原始来源标题显示：Scaled Cognition 获得 Khosla 领投的 1 亿美元融资。",
+        "sourceExcerpt": "Scaled Cognition 获得 Khosla 领投的 1 亿美元融资 Scaled Cognition raises $100M led by Khosla ition raises $100 ...",
         "missingFields": [
           "product_form",
           "adoption_evidence",
@@ -4389,7 +4454,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资 Trase Raises $107 Million Seed Round Led By ARCH Venture Partners 原始来源标题显示：Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资。",
+        "sourceExcerpt": "Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资 Trase Raises $107 Million Seed Round Led By ARCH Venture Partners # Trase Raises $107 Million Seed Round Led By ARCH Venture Partners ...",
         "missingFields": [
           "product_form",
           "adoption_evidence"
@@ -4637,7 +4702,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Vercel 发布 AI SDK 7 AI SDK 7 is now available - Vercel 原始来源标题显示：Vercel 发布 AI SDK 7。",
+        "sourceExcerpt": "Vercel 发布 AI SDK 7 AI SDK 7 is now available - Vercel # AI SDK 7 is now available ...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -4859,7 +4924,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Marketing AI Agent Deployment Playbook for Agencies Marketing AI Agent Deployment Playbook for Agencies 来源材料显示，Digital Applied 的AI 商业动作涉及采购下单流程。",
+        "sourceExcerpt": "Marketing AI Agent Deployment Playbook for Agencies Marketing AI Agent Deployment Playbook for Agencies Complete playbook for marketing agencies deploying AI agents across client reporting, campaign management, and cont...",
         "missingFields": [
           "specific_task",
           "product_form"
@@ -5103,7 +5168,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "GitHub 相关案例材料记录了客户、流程或结果信息。",
+        "sourceExcerpt": "## 价值描述 GitHub 的案例信号可用于观察 AI 是否已经进入 企业智能体协作流程，以及后续是否出现客户、流程或结果指标。",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -5336,7 +5401,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform 来源材料显示，Tigera 的客户部署或应用案例涉及企业智能体协作流程。",
+        "sourceExcerpt": "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform The first post in this series argue...",
         "missingFields": [
           "specific_task",
           "adoption_evidence"
@@ -5360,10 +5425,6 @@
           ],
           "specific_task": [],
           "business_action": [
-            {
-              "id": "funding_round",
-              "label": "Funding, financing, or investment round"
-            },
             {
               "id": "customer_deployment",
               "label": "Customer deployment, rollout, pilot, case study, or adoption"
@@ -5396,12 +5457,7 @@
             }
           ],
           "adoption_evidence": [],
-          "source_evidence_type": [
-            {
-              "id": "funding_news",
-              "label": "Funding news or investor announcement"
-            }
-          ]
+          "source_evidence_type": []
         },
         "buyer_or_user": [
           "enterprise_ai_owner",
@@ -5420,12 +5476,10 @@
         "specific_task": [],
         "specificTask": [],
         "business_action": [
-          "funding_round",
           "customer_deployment",
           "governance_requirement"
         ],
         "businessAction": [
-          "funding_round",
           "customer_deployment",
           "governance_requirement"
         ],
@@ -5451,12 +5505,8 @@
         ],
         "adoption_evidence": [],
         "adoptionEvidence": [],
-        "source_evidence_type": [
-          "funding_news"
-        ],
-        "sourceEvidenceType": [
-          "funding_news"
-        ]
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
       },
       "summary": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。",
       "translatedFact": "tigera 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
@@ -5550,7 +5600,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Evaluating Long-Context Question & Answer Systems Evaluating Long-Context Question &amp; Answer Systems 来源材料显示，Evaluating Long 的AI 商业动作涉及模型部署和算力调用。",
+        "sourceExcerpt": "# Evaluating Long-Context Question & Answer Systems ## 新闻事实 来源材料显示，Evaluating Long 的AI 商业动作涉及模型部署和算力调用。",
         "missingFields": [
           "specific_task",
           "adoption_evidence",
@@ -5583,6 +5633,10 @@
           ],
           "delivery_model": [],
           "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            },
             {
               "id": "evaluation_gap",
               "label": "Evaluation, QA, testing, or measurement gap"
@@ -5618,9 +5672,11 @@
         "delivery_model": [],
         "deliveryModel": [],
         "pain_or_constraint": [
+          "workflow_integration",
           "evaluation_gap"
         ],
         "painOrConstraint": [
+          "workflow_integration",
           "evaluation_gap"
         ],
         "adoption_evidence": [],
@@ -5721,7 +5777,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Getting more from each token: How Copilot improves context handling and model routing Getting more from each token: How Copilot improves context handling and model routing 来源材料显示，Getting more from each token 的AI 商业动作涉及模...",
+        "sourceExcerpt": "Getting more from each token: How Copilot improves context handling and model routing Getting more from each token: How Copilot improves context handling and model routing How GitHub Copilot is making more of each sessi...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -5962,7 +6018,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Runlayer Raises $30M Series A to Help Enterprises Go All In On AI Runlayer Raises $30M Series A to Help Enterprises Go All In On AI NEW YORK 获得 $30 m Series A 融资。",
+        "sourceExcerpt": "This brings Runlayer's total capital raised to $42 million.",
         "missingFields": [
           "product_form"
         ],
@@ -6188,7 +6244,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "OpenAI reveals its first AI processor: Jalapeño OpenAI reveals its first AI processor: Jalapeño 来源材料显示，OpenAI reveals its first AI processor 的AI 商业动作涉及模型部署和算力调用。",
+        "sourceExcerpt": "# OpenAI reveals its first AI processor: Jalapeño ## 新闻事实 来源材料显示，OpenAI reveals its first AI processor 的AI 商业动作涉及模型部署和算力调用。",
         "missingFields": [
           "product_form",
           "delivery_model"
@@ -6394,7 +6450,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "OpenAI unveils GPT-5.6 amid US AI regulatory drama OpenAI unveils GPT-5.6 amid US AI regulatory drama 来源材料显示，Terra 的产品或平台动作涉及模型部署和算力调用；原文同时出现 5.6 m 等数字。",
+        "sourceExcerpt": "# OpenAI unveils GPT-5.6 amid US AI regulatory drama ## 新闻事实 来源材料显示，Terra 的产品或平台动作涉及模型部署和算力调用；原文同时出现 5.6 m 等数字。",
         "missingFields": [
           "specific_task",
           "product_form",
@@ -6629,7 +6685,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "来源材料显示，Notion 使用 Cursor SDK 嵌入编码智能体 的产品或平台动作涉及地产开发和建筑设计流程。",
+        "sourceExcerpt": "Notion stood up this integration in just a few weeks using the Cursor SDK , letting them embed coding agents into their product without having to build and maintain the entire agent themselves.",
         "missingFields": [],
         "labels": {
           "buyer_or_user": [
@@ -6913,7 +6969,6 @@
           "buyer_or_user",
           "specific_task",
           "product_form",
-          "adoption_evidence",
           "delivery_model"
         ],
         "labels": {
@@ -6933,7 +6988,12 @@
           "product_form": [],
           "delivery_model": [],
           "pain_or_constraint": [],
-          "adoption_evidence": [],
+          "adoption_evidence": [
+            {
+              "id": "customer_metric",
+              "label": "Customer outcome metric, usage number, or quantified result"
+            }
+          ],
           "source_evidence_type": [
             {
               "id": "first_party_announcement",
@@ -6965,8 +7025,12 @@
         "deliveryModel": [],
         "pain_or_constraint": [],
         "painOrConstraint": [],
-        "adoption_evidence": [],
-        "adoptionEvidence": [],
+        "adoption_evidence": [
+          "customer_metric"
+        ],
+        "adoptionEvidence": [
+          "customer_metric"
+        ],
         "source_evidence_type": [
           "first_party_announcement",
           "business_media"
@@ -7095,7 +7159,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "来源材料显示，True 的AI 商业动作涉及模型部署和算力调用。",
+        "sourceExcerpt": "## 原文要点 - 来源材料显示，True 的AI 商业动作涉及模型部署和算力调用。",
         "missingFields": [
           "specific_task",
           "product_form",
@@ -7301,7 +7365,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Agentbase Agentbase | Serverless Agent Platform for Developers 来源材料显示，Agentbase 的产品或平台动作涉及地产开发和建筑设计流程。",
+        "sourceExcerpt": "Agentbase Agentbase | Serverless Agent Platform for Developers Join our agent building community Discord →.",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -9265,17 +9329,13 @@
         "evidenceBasis": "raw_source_text",
         "sourceExcerpt": "爆料称索尼 PS6 将搭载 AI 帧生成等技术，目标 4K 120 帧游戏体验 爆料称索尼 PS6 将搭载 AI 帧生成等技术，目标 4K 120 帧游戏体验 爆料称，索尼 PS6 将融合视频帧插补（VFI）、PlayStation 超分辨率技术（PSSR）及 AI 光线追踪，以实现 4K 120 帧游戏。帧生成技术大概率基于 AMD FSR 改良。主机还将内置本地离线 AI 模型，预计占用 4GB 至 8GB 内存以降低延迟。索尼力...",
         "missingFields": [
+          "buyer_or_user",
           "specific_task",
           "product_form",
           "delivery_model"
         ],
         "labels": {
-          "buyer_or_user": [
-            {
-              "id": "enterprise_ai_owner",
-              "label": "Enterprise AI / transformation owner"
-            }
-          ],
+          "buyer_or_user": [],
           "team_or_function": [],
           "specific_task": [],
           "business_action": [
@@ -9304,12 +9364,8 @@
           ],
           "source_evidence_type": []
         },
-        "buyer_or_user": [
-          "enterprise_ai_owner"
-        ],
-        "buyerOrUser": [
-          "enterprise_ai_owner"
-        ],
+        "buyer_or_user": [],
+        "buyerOrUser": [],
         "team_or_function": [],
         "teamOrFunction": [],
         "specific_task": [],
@@ -10266,7 +10322,12 @@
           ],
           "product_form": [],
           "delivery_model": [],
-          "pain_or_constraint": [],
+          "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
           "adoption_evidence": [
             {
               "id": "partnership_announcement",
@@ -10330,8 +10391,12 @@
         "productForm": [],
         "delivery_model": [],
         "deliveryModel": [],
-        "pain_or_constraint": [],
-        "painOrConstraint": [],
+        "pain_or_constraint": [
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "workflow_integration"
+        ],
         "adoption_evidence": [
           "partnership_announcement"
         ],
@@ -10710,12 +10775,15 @@
         "evidenceBasis": "raw_source_text",
         "sourceExcerpt": "",
         "missingFields": [
-          "specific_task",
           "adoption_evidence",
           "delivery_model"
         ],
         "labels": {
           "buyer_or_user": [
+            {
+              "id": "insurance_team",
+              "label": "Insurance claims, underwriting, or operations team"
+            },
             {
               "id": "enterprise_ai_owner",
               "label": "Enterprise AI / transformation owner"
@@ -10727,11 +10795,20 @@
           ],
           "team_or_function": [
             {
+              "id": "insurance_operations",
+              "label": "Insurance operations"
+            },
+            {
               "id": "it_security",
               "label": "IT / security / platform governance"
             }
           ],
-          "specific_task": [],
+          "specific_task": [
+            {
+              "id": "insurance_claim_review",
+              "label": "Insurance claim review, adjudication, or underwriting"
+            }
+          ],
           "business_action": [
             {
               "id": "customer_deployment",
@@ -10763,21 +10840,29 @@
           "source_evidence_type": []
         },
         "buyer_or_user": [
+          "insurance_team",
           "enterprise_ai_owner",
           "it_security_team"
         ],
         "buyerOrUser": [
+          "insurance_team",
           "enterprise_ai_owner",
           "it_security_team"
         ],
         "team_or_function": [
+          "insurance_operations",
           "it_security"
         ],
         "teamOrFunction": [
+          "insurance_operations",
           "it_security"
         ],
-        "specific_task": [],
-        "specificTask": [],
+        "specific_task": [
+          "insurance_claim_review"
+        ],
+        "specificTask": [
+          "insurance_claim_review"
+        ],
         "business_action": [
           "customer_deployment",
           "governance_requirement"
@@ -10967,6 +11052,10 @@
           ],
           "business_action": [
             {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
               "id": "product_launch",
               "label": "Product, feature, model, API, or platform launch"
             },
@@ -11020,11 +11109,13 @@
           "internal_tool_building"
         ],
         "business_action": [
+          "customer_deployment",
           "product_launch",
           "open_source_release",
           "research_benchmark"
         ],
         "businessAction": [
+          "customer_deployment",
           "product_launch",
           "open_source_release",
           "research_benchmark"
@@ -11427,7 +11518,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "JustAI 获得$17M 融资，用于企业 Agent 协作平台 JustAI Raises $17M Series A to Build an Agentic Marketing Platform 来源材料显示，JustAI 的融资或资金流向涉及企业智能体协作流程；原文同时出现 $17M 等数字。",
+        "sourceExcerpt": "JustAI 获得$17M 融资，用于企业 Agent 协作平台 JustAI Raises $17M Series A to Build an Agentic Marketing Platform JustAI Raises $17M Series A to Build an Agentic Marketing Platform Accessibility Statement Skip Navigation ...",
         "missingFields": [
           "product_form",
           "delivery_model"
@@ -53948,7 +54039,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心 How Sanofi Built an Enterprise Process Mining Center of Excellence with AI and Snowflake 原始来源标题显示：Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心。",
+        "sourceExcerpt": "Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心 How Sanofi Built an Enterprise Process Mining Center of Excellence with AI and Snowflake Sanofi built an enterprise-wide process mining Center of Excellence using QPR Software’s QP...",
         "missingFields": [
           "delivery_model"
         ],
@@ -54228,7 +54319,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Agents SDK 增加后台子智能体和统一回合入口 Agents SDK adds background sub-agents and a unified turn entry point · Changelog 原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。",
+        "sourceExcerpt": "Agents SDK 增加后台子智能体和统一回合入口 Agents SDK adds background sub-agents and a unified turn entry point · Changelog New updates and improvements at Cloudflare.",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -54243,8 +54334,8 @@
               "label": "Engineering or developer team"
             },
             {
-              "id": "enterprise_ai_owner",
-              "label": "Enterprise AI / transformation owner"
+              "id": "operations_team",
+              "label": "Operations, logistics, supply-chain, or back-office team"
             }
           ],
           "team_or_function": [
@@ -54255,6 +54346,10 @@
             {
               "id": "engineering",
               "label": "Engineering / software development"
+            },
+            {
+              "id": "operations",
+              "label": "Operations / supply chain / back office"
             }
           ],
           "specific_task": [
@@ -54265,6 +54360,10 @@
             {
               "id": "internal_tool_building",
               "label": "Building internal tools, apps, or automations"
+            },
+            {
+              "id": "logistics_coordination",
+              "label": "Shipment, logistics, dispatch, inventory, or supply-chain coordination"
             }
           ],
           "business_action": [
@@ -54310,28 +54409,32 @@
         "buyer_or_user": [
           "sales_team",
           "engineering_team",
-          "enterprise_ai_owner"
+          "operations_team"
         ],
         "buyerOrUser": [
           "sales_team",
           "engineering_team",
-          "enterprise_ai_owner"
+          "operations_team"
         ],
         "team_or_function": [
           "sales",
-          "engineering"
+          "engineering",
+          "operations"
         ],
         "teamOrFunction": [
           "sales",
-          "engineering"
+          "engineering",
+          "operations"
         ],
         "specific_task": [
           "sales_lead_research",
-          "internal_tool_building"
+          "internal_tool_building",
+          "logistics_coordination"
         ],
         "specificTask": [
           "sales_lead_research",
-          "internal_tool_building"
+          "internal_tool_building",
+          "logistics_coordination"
         ],
         "business_action": [
           "customer_deployment"
@@ -54472,9 +54575,8 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Dapta 评选 2026 年最佳 AI 智能体构建平台 Best AI Agent Builder Platforms in 2026 (Ranked Honestly) - Dapta 原始来源标题显示：Dapta 评选 2026 年最佳 AI 智能体构建平台。",
+        "sourceExcerpt": "Dapta 评选 2026 年最佳 AI 智能体构建平台 Best AI Agent Builder Platforms in 2026 (Ranked Honestly) - Dapta The 6 best AI agent builder platforms in 2026, ranked and honestly compared.",
         "missingFields": [
-          "adoption_evidence",
           "delivery_model"
         ],
         "labels": {
@@ -54519,7 +54621,12 @@
               "label": "Integration into existing workflow or systems"
             }
           ],
-          "adoption_evidence": [],
+          "adoption_evidence": [
+            {
+              "id": "customer_metric",
+              "label": "Customer outcome metric, usage number, or quantified result"
+            }
+          ],
           "source_evidence_type": []
         },
         "buyer_or_user": [
@@ -54562,8 +54669,12 @@
         "painOrConstraint": [
           "workflow_integration"
         ],
-        "adoption_evidence": [],
-        "adoptionEvidence": [],
+        "adoption_evidence": [
+          "customer_metric"
+        ],
+        "adoptionEvidence": [
+          "customer_metric"
+        ],
         "source_evidence_type": [],
         "sourceEvidenceType": []
       },
@@ -54689,7 +54800,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "CData 发布 Connect AI 开发者版、Python SDK 和 CLI CData Launches Connect AI Developer Edition, Python SDK, and CLI 原始来源标题显示：CData 发布 Connect AI 开发者版、Python SDK 和 CLI。",
+        "sourceExcerpt": "CData 发布 Connect AI 开发者版、Python SDK 和 CLI CData Launches Connect AI Developer Edition, Python SDK, and CLI June 24, 2026 CData Software launched three products for developers building AI applications on enterprise data:...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -54959,7 +55070,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Zendesk 在 Relate 2026 发布自主服务劳动力 Zendesk Unveils Autonomous Service Workforce at Relate 2026 原始来源标题显示：Zendesk 在 Relate 2026 发布自主服务劳动力。",
+        "sourceExcerpt": "Zendesk 在 Relate 2026 发布自主服务劳动力 Zendesk Unveils Autonomous Service Workforce at Relate 2026 Zendesk replaces deflection bots with specialized AI agents at Relate 2026.",
         "missingFields": [
           "adoption_evidence",
           "delivery_model"
@@ -55189,7 +55300,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "GitHub 2026 年 6 月最新发布说明 GitHub Release Notes - June 2026 Latest Updates - Releasebot 原始来源标题显示：GitHub 2026 年 6 月最新发布说明。",
+        "sourceExcerpt": "GitHub 2026 年 6 月最新发布说明 GitHub Release Notes - June 2026 Latest Updates - Releasebot GitHub adds total pull request merges by AI adoption phase in Copilot usage metrics API reports for organizations and enterprises, giv...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -55217,10 +55328,6 @@
             }
           ],
           "business_action": [
-            {
-              "id": "funding_round",
-              "label": "Funding, financing, or investment round"
-            },
             {
               "id": "product_launch",
               "label": "Product, feature, model, API, or platform launch"
@@ -55261,12 +55368,7 @@
             }
           ],
           "adoption_evidence": [],
-          "source_evidence_type": [
-            {
-              "id": "funding_news",
-              "label": "Funding news or investor announcement"
-            }
-          ]
+          "source_evidence_type": []
         },
         "buyer_or_user": [
           "engineering_team",
@@ -55289,12 +55391,10 @@
           "code_review"
         ],
         "business_action": [
-          "funding_round",
           "product_launch",
           "open_source_release"
         ],
         "businessAction": [
-          "funding_round",
           "product_launch",
           "open_source_release"
         ],
@@ -55324,12 +55424,8 @@
         ],
         "adoption_evidence": [],
         "adoptionEvidence": [],
-        "source_evidence_type": [
-          "funding_news"
-        ],
-        "sourceEvidenceType": [
-          "funding_news"
-        ]
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
       },
       "summary": "值得关注：能观察真实客户、业务流程或采购场景。",
       "translatedFact": "原始来源标题显示：GitHub 2026 年 6 月最新发布说明。",
@@ -55419,7 +55515,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "[{\"type\":\"case_detail\",\"text\":\"Arcade's AI-native customer base in 2026 covers four product categories.",
+        "sourceExcerpt": "- Arcade Software Arcade's AI-native customer base in 2026 covers four product categories.",
         "missingFields": [
           "specific_task",
           "product_form",
@@ -55454,12 +55550,24 @@
             {
               "id": "latency_sensitive",
               "label": "Latency, reliability, or production performance constraint"
+            },
+            {
+              "id": "context_management",
+              "label": "Context, memory, or state management"
             }
           ],
           "adoption_evidence": [
             {
               "id": "case_study",
               "label": "Case study, customer story, or deployment write-up"
+            },
+            {
+              "id": "usage_growth",
+              "label": "Usage growth, ARR, revenue, or customer-count growth"
+            },
+            {
+              "id": "third_party_report",
+              "label": "Third-party report, industry report, or analyst evidence"
             }
           ],
           "source_evidence_type": [
@@ -55492,18 +55600,24 @@
         "pain_or_constraint": [
           "workflow_integration",
           "hallucination_risk",
-          "latency_sensitive"
+          "latency_sensitive",
+          "context_management"
         ],
         "painOrConstraint": [
           "workflow_integration",
           "hallucination_risk",
-          "latency_sensitive"
+          "latency_sensitive",
+          "context_management"
         ],
         "adoption_evidence": [
-          "case_study"
+          "case_study",
+          "usage_growth",
+          "third_party_report"
         ],
         "adoptionEvidence": [
-          "case_study"
+          "case_study",
+          "usage_growth",
+          "third_party_report"
         ],
         "source_evidence_type": [
           "first_party_case"
@@ -55600,7 +55714,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Kore.ai 客户故事：跨行业 AI 成功案例 Kore.ai Customer Stories – AI Success Across Industries 原始来源标题显示：Kore.ai 客户故事：跨行业 AI 成功案例。",
+        "sourceExcerpt": "Kore.ai 客户故事：跨行业 AI 成功案例 Kore.ai Customer Stories – AI Success Across Industries AMD partnered with Kore.ai to transform HR support delivery at scale—quickly, efficiently, and without sacrificing the human touch.",
         "missingFields": [],
         "labels": {
           "buyer_or_user": [
@@ -55659,6 +55773,10 @@
             {
               "id": "rag_knowledge_base",
               "label": "RAG, enterprise search, memory, or knowledge-base layer"
+            },
+            {
+              "id": "vertical_saas",
+              "label": "Vertical SaaS application for a named industry or function"
             }
           ],
           "delivery_model": [
@@ -55736,11 +55854,13 @@
         ],
         "product_form": [
           "agent_workbench",
-          "rag_knowledge_base"
+          "rag_knowledge_base",
+          "vertical_saas"
         ],
         "productForm": [
           "agent_workbench",
-          "rag_knowledge_base"
+          "rag_knowledge_base",
+          "vertical_saas"
         ],
         "delivery_model": [
           "project_based_service"
@@ -55859,7 +55979,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "原文称，Financial deployment is both modest and growing.",
+        "sourceExcerpt": "/ query=enterprise AI deployment industry workflow customer story 2026 / intent=find_customer_case / path=industry_landing Foundation Executive Summary Utilities stand at an inflection point.",
         "missingFields": [
           "product_form",
           "delivery_model"
@@ -55887,6 +56007,10 @@
             {
               "id": "healthcare_operations",
               "label": "Healthcare operations"
+            },
+            {
+              "id": "it_security",
+              "label": "IT / security / platform governance"
             }
           ],
           "specific_task": [
@@ -55899,6 +56023,10 @@
             {
               "id": "customer_deployment",
               "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "governance_requirement",
+              "label": "Governance, regulation, security, or compliance requirement"
             }
           ],
           "product_form": [],
@@ -55938,11 +56066,13 @@
         ],
         "team_or_function": [
           "finance",
-          "healthcare_operations"
+          "healthcare_operations",
+          "it_security"
         ],
         "teamOrFunction": [
           "finance",
-          "healthcare_operations"
+          "healthcare_operations",
+          "it_security"
         ],
         "specific_task": [
           "medical_documentation"
@@ -55951,10 +56081,12 @@
           "medical_documentation"
         ],
         "business_action": [
-          "customer_deployment"
+          "customer_deployment",
+          "governance_requirement"
         ],
         "businessAction": [
-          "customer_deployment"
+          "customer_deployment",
+          "governance_requirement"
         ],
         "product_form": [],
         "productForm": [],
@@ -56354,7 +56486,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心 How Sanofi Built an Enterprise Process Mining Center of Excellence with AI and Snowflake 原始来源标题显示：Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心。",
+        "sourceExcerpt": "Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心 How Sanofi Built an Enterprise Process Mining Center of Excellence with AI and Snowflake Sanofi built an enterprise-wide process mining Center of Excellence using QPR Software’s QP...",
         "missingFields": [
           "delivery_model"
         ],
@@ -56634,7 +56766,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Agents SDK 增加后台子智能体和统一回合入口 Agents SDK adds background sub-agents and a unified turn entry point · Changelog 原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。",
+        "sourceExcerpt": "Agents SDK 增加后台子智能体和统一回合入口 Agents SDK adds background sub-agents and a unified turn entry point · Changelog New updates and improvements at Cloudflare.",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -56649,8 +56781,8 @@
               "label": "Engineering or developer team"
             },
             {
-              "id": "enterprise_ai_owner",
-              "label": "Enterprise AI / transformation owner"
+              "id": "operations_team",
+              "label": "Operations, logistics, supply-chain, or back-office team"
             }
           ],
           "team_or_function": [
@@ -56661,6 +56793,10 @@
             {
               "id": "engineering",
               "label": "Engineering / software development"
+            },
+            {
+              "id": "operations",
+              "label": "Operations / supply chain / back office"
             }
           ],
           "specific_task": [
@@ -56671,6 +56807,10 @@
             {
               "id": "internal_tool_building",
               "label": "Building internal tools, apps, or automations"
+            },
+            {
+              "id": "logistics_coordination",
+              "label": "Shipment, logistics, dispatch, inventory, or supply-chain coordination"
             }
           ],
           "business_action": [
@@ -56716,28 +56856,32 @@
         "buyer_or_user": [
           "sales_team",
           "engineering_team",
-          "enterprise_ai_owner"
+          "operations_team"
         ],
         "buyerOrUser": [
           "sales_team",
           "engineering_team",
-          "enterprise_ai_owner"
+          "operations_team"
         ],
         "team_or_function": [
           "sales",
-          "engineering"
+          "engineering",
+          "operations"
         ],
         "teamOrFunction": [
           "sales",
-          "engineering"
+          "engineering",
+          "operations"
         ],
         "specific_task": [
           "sales_lead_research",
-          "internal_tool_building"
+          "internal_tool_building",
+          "logistics_coordination"
         ],
         "specificTask": [
           "sales_lead_research",
-          "internal_tool_building"
+          "internal_tool_building",
+          "logistics_coordination"
         ],
         "business_action": [
           "customer_deployment"
@@ -56878,9 +57022,8 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Dapta 评选 2026 年最佳 AI 智能体构建平台 Best AI Agent Builder Platforms in 2026 (Ranked Honestly) - Dapta 原始来源标题显示：Dapta 评选 2026 年最佳 AI 智能体构建平台。",
+        "sourceExcerpt": "Dapta 评选 2026 年最佳 AI 智能体构建平台 Best AI Agent Builder Platforms in 2026 (Ranked Honestly) - Dapta The 6 best AI agent builder platforms in 2026, ranked and honestly compared.",
         "missingFields": [
-          "adoption_evidence",
           "delivery_model"
         ],
         "labels": {
@@ -56925,7 +57068,12 @@
               "label": "Integration into existing workflow or systems"
             }
           ],
-          "adoption_evidence": [],
+          "adoption_evidence": [
+            {
+              "id": "customer_metric",
+              "label": "Customer outcome metric, usage number, or quantified result"
+            }
+          ],
           "source_evidence_type": []
         },
         "buyer_or_user": [
@@ -56968,8 +57116,12 @@
         "painOrConstraint": [
           "workflow_integration"
         ],
-        "adoption_evidence": [],
-        "adoptionEvidence": [],
+        "adoption_evidence": [
+          "customer_metric"
+        ],
+        "adoptionEvidence": [
+          "customer_metric"
+        ],
         "source_evidence_type": [],
         "sourceEvidenceType": []
       },
@@ -57095,7 +57247,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "CData 发布 Connect AI 开发者版、Python SDK 和 CLI CData Launches Connect AI Developer Edition, Python SDK, and CLI 原始来源标题显示：CData 发布 Connect AI 开发者版、Python SDK 和 CLI。",
+        "sourceExcerpt": "CData 发布 Connect AI 开发者版、Python SDK 和 CLI CData Launches Connect AI Developer Edition, Python SDK, and CLI June 24, 2026 CData Software launched three products for developers building AI applications on enterprise data:...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -57365,7 +57517,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Zendesk 在 Relate 2026 发布自主服务劳动力 Zendesk Unveils Autonomous Service Workforce at Relate 2026 原始来源标题显示：Zendesk 在 Relate 2026 发布自主服务劳动力。",
+        "sourceExcerpt": "Zendesk 在 Relate 2026 发布自主服务劳动力 Zendesk Unveils Autonomous Service Workforce at Relate 2026 Zendesk replaces deflection bots with specialized AI agents at Relate 2026.",
         "missingFields": [
           "adoption_evidence",
           "delivery_model"
@@ -57595,7 +57747,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "GitHub 2026 年 6 月最新发布说明 GitHub Release Notes - June 2026 Latest Updates - Releasebot 原始来源标题显示：GitHub 2026 年 6 月最新发布说明。",
+        "sourceExcerpt": "GitHub 2026 年 6 月最新发布说明 GitHub Release Notes - June 2026 Latest Updates - Releasebot GitHub adds total pull request merges by AI adoption phase in Copilot usage metrics API reports for organizations and enterprises, giv...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -57623,10 +57775,6 @@
             }
           ],
           "business_action": [
-            {
-              "id": "funding_round",
-              "label": "Funding, financing, or investment round"
-            },
             {
               "id": "product_launch",
               "label": "Product, feature, model, API, or platform launch"
@@ -57667,12 +57815,7 @@
             }
           ],
           "adoption_evidence": [],
-          "source_evidence_type": [
-            {
-              "id": "funding_news",
-              "label": "Funding news or investor announcement"
-            }
-          ]
+          "source_evidence_type": []
         },
         "buyer_or_user": [
           "engineering_team",
@@ -57695,12 +57838,10 @@
           "code_review"
         ],
         "business_action": [
-          "funding_round",
           "product_launch",
           "open_source_release"
         ],
         "businessAction": [
-          "funding_round",
           "product_launch",
           "open_source_release"
         ],
@@ -57730,12 +57871,8 @@
         ],
         "adoption_evidence": [],
         "adoptionEvidence": [],
-        "source_evidence_type": [
-          "funding_news"
-        ],
-        "sourceEvidenceType": [
-          "funding_news"
-        ]
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
       },
       "summary": "值得关注：能观察真实客户、业务流程或采购场景。",
       "translatedFact": "原始来源标题显示：GitHub 2026 年 6 月最新发布说明。",
@@ -57825,7 +57962,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "[{\"type\":\"case_detail\",\"text\":\"Arcade's AI-native customer base in 2026 covers four product categories.",
+        "sourceExcerpt": "- Arcade Software Arcade's AI-native customer base in 2026 covers four product categories.",
         "missingFields": [
           "specific_task",
           "product_form",
@@ -57860,12 +57997,24 @@
             {
               "id": "latency_sensitive",
               "label": "Latency, reliability, or production performance constraint"
+            },
+            {
+              "id": "context_management",
+              "label": "Context, memory, or state management"
             }
           ],
           "adoption_evidence": [
             {
               "id": "case_study",
               "label": "Case study, customer story, or deployment write-up"
+            },
+            {
+              "id": "usage_growth",
+              "label": "Usage growth, ARR, revenue, or customer-count growth"
+            },
+            {
+              "id": "third_party_report",
+              "label": "Third-party report, industry report, or analyst evidence"
             }
           ],
           "source_evidence_type": [
@@ -57898,18 +58047,24 @@
         "pain_or_constraint": [
           "workflow_integration",
           "hallucination_risk",
-          "latency_sensitive"
+          "latency_sensitive",
+          "context_management"
         ],
         "painOrConstraint": [
           "workflow_integration",
           "hallucination_risk",
-          "latency_sensitive"
+          "latency_sensitive",
+          "context_management"
         ],
         "adoption_evidence": [
-          "case_study"
+          "case_study",
+          "usage_growth",
+          "third_party_report"
         ],
         "adoptionEvidence": [
-          "case_study"
+          "case_study",
+          "usage_growth",
+          "third_party_report"
         ],
         "source_evidence_type": [
           "first_party_case"
@@ -58006,7 +58161,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Kore.ai 客户故事：跨行业 AI 成功案例 Kore.ai Customer Stories – AI Success Across Industries 原始来源标题显示：Kore.ai 客户故事：跨行业 AI 成功案例。",
+        "sourceExcerpt": "Kore.ai 客户故事：跨行业 AI 成功案例 Kore.ai Customer Stories – AI Success Across Industries AMD partnered with Kore.ai to transform HR support delivery at scale—quickly, efficiently, and without sacrificing the human touch.",
         "missingFields": [],
         "labels": {
           "buyer_or_user": [
@@ -58065,6 +58220,10 @@
             {
               "id": "rag_knowledge_base",
               "label": "RAG, enterprise search, memory, or knowledge-base layer"
+            },
+            {
+              "id": "vertical_saas",
+              "label": "Vertical SaaS application for a named industry or function"
             }
           ],
           "delivery_model": [
@@ -58142,11 +58301,13 @@
         ],
         "product_form": [
           "agent_workbench",
-          "rag_knowledge_base"
+          "rag_knowledge_base",
+          "vertical_saas"
         ],
         "productForm": [
           "agent_workbench",
-          "rag_knowledge_base"
+          "rag_knowledge_base",
+          "vertical_saas"
         ],
         "delivery_model": [
           "project_based_service"
@@ -58265,7 +58426,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "原文称，Financial deployment is both modest and growing.",
+        "sourceExcerpt": "/ query=enterprise AI deployment industry workflow customer story 2026 / intent=find_customer_case / path=industry_landing Foundation Executive Summary Utilities stand at an inflection point.",
         "missingFields": [
           "product_form",
           "delivery_model"
@@ -58293,6 +58454,10 @@
             {
               "id": "healthcare_operations",
               "label": "Healthcare operations"
+            },
+            {
+              "id": "it_security",
+              "label": "IT / security / platform governance"
             }
           ],
           "specific_task": [
@@ -58305,6 +58470,10 @@
             {
               "id": "customer_deployment",
               "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "governance_requirement",
+              "label": "Governance, regulation, security, or compliance requirement"
             }
           ],
           "product_form": [],
@@ -58344,11 +58513,13 @@
         ],
         "team_or_function": [
           "finance",
-          "healthcare_operations"
+          "healthcare_operations",
+          "it_security"
         ],
         "teamOrFunction": [
           "finance",
-          "healthcare_operations"
+          "healthcare_operations",
+          "it_security"
         ],
         "specific_task": [
           "medical_documentation"
@@ -58357,10 +58528,12 @@
           "medical_documentation"
         ],
         "business_action": [
-          "customer_deployment"
+          "customer_deployment",
+          "governance_requirement"
         ],
         "businessAction": [
-          "customer_deployment"
+          "customer_deployment",
+          "governance_requirement"
         ],
         "product_form": [],
         "productForm": [],
@@ -58508,7 +58681,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资 Trase Raises $107 Million Seed Round Led By ARCH Venture Partners 原始来源标题显示：Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资。",
+        "sourceExcerpt": "Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资 Trase Raises $107 Million Seed Round Led By ARCH Venture Partners # Trase Raises $107 Million Seed Round Led By ARCH Venture Partners ...",
         "missingFields": [
           "product_form",
           "adoption_evidence"
@@ -58819,7 +58992,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Infosys / Sentara宣布与 Sentara 达成战略合作，建设可扩展的 AI 驱动转型基础，并改善企业流程效率与服务体验。",
+        "sourceExcerpt": "Infosys 与 Sentara 合作推动医疗服务中的企业 AI 应用 Infosys Collaborates with Sentara to Unlock AI Value and Scale Enterprise AI Adoption in Healthcare Services BENGALURU, India and NORFOLK, Va., June 24, 2026 /PRNewswire/ -- Infosys(...",
         "missingFields": [
           "product_form"
         ],
@@ -59081,7 +59254,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Sail Research 获得 8000 万美元融资，建设 AI Agent 高效基础设施 Sail Research Raises $80 Million to Build Max-Efficiency Infrastructure for AI Agents 原始来源标题显示：Sail Research 获得 8000 万美元融资，建设 AI Agent 高效基础设施。",
+        "sourceExcerpt": "Sail Research 获得 8000 万美元融资，建设 AI Agent 高效基础设施 Sail Research Raises $80 Million to Build Max-Efficiency Infrastructure for AI Agents Sail Research Raises $80 Million to Build Max-Efficiency Infrastructure for AI Agents ...",
         "missingFields": [
           "product_form",
           "adoption_evidence",
@@ -59102,8 +59275,8 @@
           ],
           "specific_task": [
             {
-              "id": "sales_lead_research",
-              "label": "Lead research, account research, or pipeline enrichment"
+              "id": "sales_briefing",
+              "label": "Sales briefing, call prep, or revenue-team coordination"
             }
           ],
           "business_action": [
@@ -59144,10 +59317,10 @@
           "sales"
         ],
         "specific_task": [
-          "sales_lead_research"
+          "sales_briefing"
         ],
         "specificTask": [
-          "sales_lead_research"
+          "sales_briefing"
         ],
         "business_action": [
           "funding_round",
@@ -59269,7 +59442,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Scaled Cognition 获得 Khosla 领投的 1 亿美元融资 Scaled Cognition raises $100M led by Khosla 原始来源标题显示：Scaled Cognition 获得 Khosla 领投的 1 亿美元融资。",
+        "sourceExcerpt": "Scaled Cognition 获得 Khosla 领投的 1 亿美元融资 Scaled Cognition raises $100M led by Khosla ition raises $100 ...",
         "missingFields": [
           "product_form",
           "adoption_evidence",
@@ -59491,7 +59664,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "JustAI 获得 1700 万美元 A 轮融资，扩展 AI 营销自动化 JustAI Raises $17 Million in Series A to Scale AI-Powered Marketing Automation Globally - Indian Startup Times 原始来源标题显示：JustAI 获得 1700 万美元 A 轮融资，扩展 AI 营销自动化。",
+        "sourceExcerpt": "JustAI 获得 1700 万美元 A 轮融资，扩展 AI 营销自动化 JustAI Raises $17 Million in Series A to Scale AI-Powered Marketing Automation Globally - Indian Startup Times # JustAI Raises $17 Million in Series A to Scale AI-Powered Marketing A...",
         "missingFields": [
           "product_form",
           "adoption_evidence",
@@ -59504,14 +59677,22 @@
               "label": "Sales or revenue team"
             },
             {
-              "id": "it_security_team",
-              "label": "IT, security, governance, or platform team"
+              "id": "engineering_team",
+              "label": "Engineering or developer team"
+            },
+            {
+              "id": "enterprise_ai_owner",
+              "label": "Enterprise AI / transformation owner"
             }
           ],
           "team_or_function": [
             {
               "id": "sales",
               "label": "Sales / revenue operations"
+            },
+            {
+              "id": "engineering",
+              "label": "Engineering / software development"
             },
             {
               "id": "it_security",
@@ -59522,6 +59703,10 @@
             {
               "id": "sales_lead_research",
               "label": "Lead research, account research, or pipeline enrichment"
+            },
+            {
+              "id": "internal_tool_building",
+              "label": "Building internal tools, apps, or automations"
             }
           ],
           "business_action": [
@@ -59552,25 +59737,31 @@
         },
         "buyer_or_user": [
           "sales_team",
-          "it_security_team"
+          "engineering_team",
+          "enterprise_ai_owner"
         ],
         "buyerOrUser": [
           "sales_team",
-          "it_security_team"
+          "engineering_team",
+          "enterprise_ai_owner"
         ],
         "team_or_function": [
           "sales",
+          "engineering",
           "it_security"
         ],
         "teamOrFunction": [
           "sales",
+          "engineering",
           "it_security"
         ],
         "specific_task": [
-          "sales_lead_research"
+          "sales_lead_research",
+          "internal_tool_building"
         ],
         "specificTask": [
-          "sales_lead_research"
+          "sales_lead_research",
+          "internal_tool_building"
         ],
         "business_action": [
           "funding_round",
@@ -59713,7 +59904,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Databricks 发布 Genie One：面向每个团队的智能协作 Agent Databricks Launches Genie One: All-New Agentic Coworker for Every Team - Databricks 原始来源标题显示：Databricks 发布 Genie One：面向每个团队的智能协作 Agent。",
+        "sourceExcerpt": "Databricks 发布 Genie One：面向每个团队的智能协作 Agent Databricks Launches Genie One: All-New Agentic Coworker for Every Team - Databricks Databricks Launches Genie One: All-New Agentic Cowork ...",
         "missingFields": [
           "adoption_evidence",
           "delivery_model"
@@ -59945,7 +60136,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Convey 获得 a16z 领投的 3800 万美元 A 轮融资 Convey Raises $38 Million Series A Led by Andreessen Horowitz to Automate Enterprise Operations with AI Teammates 原始来源标题显示：Convey 获得 a16z 领投的 3800 万美元 A 轮融资。",
+        "sourceExcerpt": "Convey 获得 a16z 领投的 3800 万美元 A 轮融资 Convey Raises $38 Million Series A Led by Andreessen Horowitz to Automate Enterprise Operations with AI Teammates Convey Raises $38 Million Series A Led by Andreessen Horowitz to Automa...",
         "missingFields": [
           "product_form",
           "adoption_evidence",
@@ -60159,7 +60350,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Talkdesk 降低客户面对型 AI 部署的不确定性 Talkdesk ends the guesswork in deploying customer-facing AI 原始来源标题显示：Talkdesk 降低客户面对型 AI 部署的不确定性。",
+        "sourceExcerpt": "Talkdesk 降低客户面对型 AI 部署的不确定性 Talkdesk ends the guesswork in deploying customer-facing AI ## Talkdesk Agent Builder enables teams to create ...",
         "missingFields": [
           "product_form",
           "delivery_model"
@@ -60324,7 +60515,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Upbound 发布 Modelplane 开源控制平面 Upbound Launches Modelplane: The Open Source Control Plane 原始来源标题显示：Upbound 发布 Modelplane 开源控制平面。",
+        "sourceExcerpt": "Upbound 发布 Modelplane 开源控制平面 Upbound Launches Modelplane: The Open Source Control Plane SAN FRANCISCO, June 23, 2026 (GLOBE NEWSWIRE) -- Upbound, the company behind Crossplane, today released Modelplane, an open source ...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -60374,6 +60565,10 @@
             }
           ],
           "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            },
             {
               "id": "model_routing_complexity",
               "label": "Model routing, vendor selection, or multi-model operations"
@@ -60428,9 +60623,11 @@
           "open_source_commercial"
         ],
         "pain_or_constraint": [
+          "workflow_integration",
           "model_routing_complexity"
         ],
         "painOrConstraint": [
+          "workflow_integration",
           "model_routing_complexity"
         ],
         "adoption_evidence": [],
@@ -60560,7 +60757,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Vercel 发布 AI SDK 7 AI SDK 7 is now available - Vercel 原始来源标题显示：Vercel 发布 AI SDK 7。",
+        "sourceExcerpt": "Vercel 发布 AI SDK 7 AI SDK 7 is now available - Vercel # AI SDK 7 is now available ...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -60784,7 +60981,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Marketing AI Agent Deployment Playbook for Agencies Marketing AI Agent Deployment Playbook for Agencies 来源材料显示，Digital Applied 的AI 商业动作涉及采购下单流程。",
+        "sourceExcerpt": "Marketing AI Agent Deployment Playbook for Agencies Marketing AI Agent Deployment Playbook for Agencies Complete playbook for marketing agencies deploying AI agents across client reporting, campaign management, and cont...",
         "missingFields": [
           "specific_task",
           "product_form"
@@ -61024,7 +61221,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform 来源材料显示，Tigera 的客户部署或应用案例涉及企业智能体协作流程。",
+        "sourceExcerpt": "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform The first post in this series argue...",
         "missingFields": [
           "specific_task",
           "adoption_evidence"
@@ -61048,10 +61245,6 @@
           ],
           "specific_task": [],
           "business_action": [
-            {
-              "id": "funding_round",
-              "label": "Funding, financing, or investment round"
-            },
             {
               "id": "customer_deployment",
               "label": "Customer deployment, rollout, pilot, case study, or adoption"
@@ -61084,12 +61277,7 @@
             }
           ],
           "adoption_evidence": [],
-          "source_evidence_type": [
-            {
-              "id": "funding_news",
-              "label": "Funding news or investor announcement"
-            }
-          ]
+          "source_evidence_type": []
         },
         "buyer_or_user": [
           "enterprise_ai_owner",
@@ -61108,12 +61296,10 @@
         "specific_task": [],
         "specificTask": [],
         "business_action": [
-          "funding_round",
           "customer_deployment",
           "governance_requirement"
         ],
         "businessAction": [
-          "funding_round",
           "customer_deployment",
           "governance_requirement"
         ],
@@ -61139,12 +61325,8 @@
         ],
         "adoption_evidence": [],
         "adoptionEvidence": [],
-        "source_evidence_type": [
-          "funding_news"
-        ],
-        "sourceEvidenceType": [
-          "funding_news"
-        ]
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
       },
       "summary": "值得关注：影响 AI 落地的治理、合规或安全边界；能观察真实客户、业务流程或采购场景；指向平台能力、交付成本或生态合作变化。",
       "translatedFact": "tigera 的材料指向 AI 基础设施能力，重点在推理、模型部署或算力调用成本。",
@@ -61240,7 +61422,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Evaluating Long-Context Question & Answer Systems Evaluating Long-Context Question &amp; Answer Systems 来源材料显示，Evaluating Long 的AI 商业动作涉及模型部署和算力调用。",
+        "sourceExcerpt": "# Evaluating Long-Context Question & Answer Systems ## 新闻事实 来源材料显示，Evaluating Long 的AI 商业动作涉及模型部署和算力调用。",
         "missingFields": [
           "specific_task",
           "adoption_evidence",
@@ -61273,6 +61455,10 @@
           ],
           "delivery_model": [],
           "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            },
             {
               "id": "evaluation_gap",
               "label": "Evaluation, QA, testing, or measurement gap"
@@ -61308,9 +61494,11 @@
         "delivery_model": [],
         "deliveryModel": [],
         "pain_or_constraint": [
+          "workflow_integration",
           "evaluation_gap"
         ],
         "painOrConstraint": [
+          "workflow_integration",
           "evaluation_gap"
         ],
         "adoption_evidence": [],
@@ -61434,7 +61622,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Runlayer Raises $30M Series A to Help Enterprises Go All In On AI Runlayer Raises $30M Series A to Help Enterprises Go All In On AI NEW YORK 获得 $30 m Series A 融资。",
+        "sourceExcerpt": "This brings Runlayer's total capital raised to $42 million.",
         "missingFields": [
           "product_form"
         ],
@@ -61662,7 +61850,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Getting more from each token: How Copilot improves context handling and model routing Getting more from each token: How Copilot improves context handling and model routing 来源材料显示，Getting more from each token 的AI 商业动作涉及模...",
+        "sourceExcerpt": "Getting more from each token: How Copilot improves context handling and model routing Getting more from each token: How Copilot improves context handling and model routing How GitHub Copilot is making more of each sessi...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -61884,7 +62072,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "OpenAI reveals its first AI processor: Jalapeño OpenAI reveals its first AI processor: Jalapeño 来源材料显示，OpenAI reveals its first AI processor 的AI 商业动作涉及模型部署和算力调用。",
+        "sourceExcerpt": "# OpenAI reveals its first AI processor: Jalapeño ## 新闻事实 来源材料显示，OpenAI reveals its first AI processor 的AI 商业动作涉及模型部署和算力调用。",
         "missingFields": [
           "product_form",
           "delivery_model"
@@ -62197,7 +62385,12 @@
           ],
           "product_form": [],
           "delivery_model": [],
-          "pain_or_constraint": [],
+          "pain_or_constraint": [
+            {
+              "id": "workflow_integration",
+              "label": "Integration into existing workflow or systems"
+            }
+          ],
           "adoption_evidence": [
             {
               "id": "partnership_announcement",
@@ -62261,8 +62454,12 @@
         "productForm": [],
         "delivery_model": [],
         "deliveryModel": [],
-        "pain_or_constraint": [],
-        "painOrConstraint": [],
+        "pain_or_constraint": [
+          "workflow_integration"
+        ],
+        "painOrConstraint": [
+          "workflow_integration"
+        ],
         "adoption_evidence": [
           "partnership_announcement"
         ],
@@ -62652,7 +62849,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "来源材料显示，Notion 使用 Cursor SDK 嵌入编码智能体 的产品或平台动作涉及地产开发和建筑设计流程。",
+        "sourceExcerpt": "Notion stood up this integration in just a few weeks using the Cursor SDK , letting them embed coding agents into their product without having to build and maintain the entire agent themselves.",
         "missingFields": [],
         "labels": {
           "buyer_or_user": [
@@ -62938,7 +63135,6 @@
           "buyer_or_user",
           "specific_task",
           "product_form",
-          "adoption_evidence",
           "delivery_model"
         ],
         "labels": {
@@ -62958,7 +63154,12 @@
           "product_form": [],
           "delivery_model": [],
           "pain_or_constraint": [],
-          "adoption_evidence": [],
+          "adoption_evidence": [
+            {
+              "id": "customer_metric",
+              "label": "Customer outcome metric, usage number, or quantified result"
+            }
+          ],
           "source_evidence_type": [
             {
               "id": "first_party_announcement",
@@ -62990,8 +63191,12 @@
         "deliveryModel": [],
         "pain_or_constraint": [],
         "painOrConstraint": [],
-        "adoption_evidence": [],
-        "adoptionEvidence": [],
+        "adoption_evidence": [
+          "customer_metric"
+        ],
+        "adoptionEvidence": [
+          "customer_metric"
+        ],
         "source_evidence_type": [
           "first_party_announcement",
           "business_media"
@@ -63805,7 +64010,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "来源材料显示，True 的AI 商业动作涉及模型部署和算力调用。",
+        "sourceExcerpt": "## 原文要点 - 来源材料显示，True 的AI 商业动作涉及模型部署和算力调用。",
         "missingFields": [
           "specific_task",
           "product_form",
@@ -64530,7 +64735,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "JustAI 获得$17M 融资，用于企业 Agent 协作平台 JustAI Raises $17M Series A to Build an Agentic Marketing Platform 来源材料显示，JustAI 的融资或资金流向涉及企业智能体协作流程；原文同时出现 $17M 等数字。",
+        "sourceExcerpt": "JustAI 获得$17M 融资，用于企业 Agent 协作平台 JustAI Raises $17M Series A to Build an Agentic Marketing Platform JustAI Raises $17M Series A to Build an Agentic Marketing Platform Accessibility Statement Skip Navigation ...",
         "missingFields": [
           "product_form",
           "delivery_model"
@@ -64968,12 +65173,15 @@
         "evidenceBasis": "raw_source_text",
         "sourceExcerpt": "",
         "missingFields": [
-          "specific_task",
           "adoption_evidence",
           "delivery_model"
         ],
         "labels": {
           "buyer_or_user": [
+            {
+              "id": "insurance_team",
+              "label": "Insurance claims, underwriting, or operations team"
+            },
             {
               "id": "enterprise_ai_owner",
               "label": "Enterprise AI / transformation owner"
@@ -64985,11 +65193,20 @@
           ],
           "team_or_function": [
             {
+              "id": "insurance_operations",
+              "label": "Insurance operations"
+            },
+            {
               "id": "it_security",
               "label": "IT / security / platform governance"
             }
           ],
-          "specific_task": [],
+          "specific_task": [
+            {
+              "id": "insurance_claim_review",
+              "label": "Insurance claim review, adjudication, or underwriting"
+            }
+          ],
           "business_action": [
             {
               "id": "customer_deployment",
@@ -65021,21 +65238,29 @@
           "source_evidence_type": []
         },
         "buyer_or_user": [
+          "insurance_team",
           "enterprise_ai_owner",
           "it_security_team"
         ],
         "buyerOrUser": [
+          "insurance_team",
           "enterprise_ai_owner",
           "it_security_team"
         ],
         "team_or_function": [
+          "insurance_operations",
           "it_security"
         ],
         "teamOrFunction": [
+          "insurance_operations",
           "it_security"
         ],
-        "specific_task": [],
-        "specificTask": [],
+        "specific_task": [
+          "insurance_claim_review"
+        ],
+        "specificTask": [
+          "insurance_claim_review"
+        ],
         "business_action": [
           "customer_deployment",
           "governance_requirement"
@@ -65664,6 +65889,10 @@
           ],
           "business_action": [
             {
+              "id": "customer_deployment",
+              "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
               "id": "product_launch",
               "label": "Product, feature, model, API, or platform launch"
             },
@@ -65717,11 +65946,13 @@
           "internal_tool_building"
         ],
         "business_action": [
+          "customer_deployment",
           "product_launch",
           "open_source_release",
           "research_benchmark"
         ],
         "businessAction": [
+          "customer_deployment",
           "product_launch",
           "open_source_release",
           "research_benchmark"
@@ -97001,7 +97232,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心 How Sanofi Built an Enterprise Process Mining Center of Excellence with AI and Snowflake 原始来源标题显示：Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心。",
+        "sourceExcerpt": "Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心 How Sanofi Built an Enterprise Process Mining Center of Excellence with AI and Snowflake Sanofi built an enterprise-wide process mining Center of Excellence using QPR Software’s QP...",
         "missingFields": [
           "delivery_model"
         ],
@@ -97264,9 +97495,8 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Dapta 评选 2026 年最佳 AI 智能体构建平台 Best AI Agent Builder Platforms in 2026 (Ranked Honestly) - Dapta 原始来源标题显示：Dapta 评选 2026 年最佳 AI 智能体构建平台。",
+        "sourceExcerpt": "Dapta 评选 2026 年最佳 AI 智能体构建平台 Best AI Agent Builder Platforms in 2026 (Ranked Honestly) - Dapta The 6 best AI agent builder platforms in 2026, ranked and honestly compared.",
         "missingFields": [
-          "adoption_evidence",
           "delivery_model"
         ],
         "labels": {
@@ -97311,7 +97541,12 @@
               "label": "Integration into existing workflow or systems"
             }
           ],
-          "adoption_evidence": [],
+          "adoption_evidence": [
+            {
+              "id": "customer_metric",
+              "label": "Customer outcome metric, usage number, or quantified result"
+            }
+          ],
           "source_evidence_type": []
         },
         "buyer_or_user": [
@@ -97354,8 +97589,12 @@
         "painOrConstraint": [
           "workflow_integration"
         ],
-        "adoption_evidence": [],
-        "adoptionEvidence": [],
+        "adoption_evidence": [
+          "customer_metric"
+        ],
+        "adoptionEvidence": [
+          "customer_metric"
+        ],
         "source_evidence_type": [],
         "sourceEvidenceType": []
       },
@@ -97482,7 +97721,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Agents SDK 增加后台子智能体和统一回合入口 Agents SDK adds background sub-agents and a unified turn entry point · Changelog 原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。",
+        "sourceExcerpt": "Agents SDK 增加后台子智能体和统一回合入口 Agents SDK adds background sub-agents and a unified turn entry point · Changelog New updates and improvements at Cloudflare.",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -97497,8 +97736,8 @@
               "label": "Engineering or developer team"
             },
             {
-              "id": "enterprise_ai_owner",
-              "label": "Enterprise AI / transformation owner"
+              "id": "operations_team",
+              "label": "Operations, logistics, supply-chain, or back-office team"
             }
           ],
           "team_or_function": [
@@ -97509,6 +97748,10 @@
             {
               "id": "engineering",
               "label": "Engineering / software development"
+            },
+            {
+              "id": "operations",
+              "label": "Operations / supply chain / back office"
             }
           ],
           "specific_task": [
@@ -97519,6 +97762,10 @@
             {
               "id": "internal_tool_building",
               "label": "Building internal tools, apps, or automations"
+            },
+            {
+              "id": "logistics_coordination",
+              "label": "Shipment, logistics, dispatch, inventory, or supply-chain coordination"
             }
           ],
           "business_action": [
@@ -97564,28 +97811,32 @@
         "buyer_or_user": [
           "sales_team",
           "engineering_team",
-          "enterprise_ai_owner"
+          "operations_team"
         ],
         "buyerOrUser": [
           "sales_team",
           "engineering_team",
-          "enterprise_ai_owner"
+          "operations_team"
         ],
         "team_or_function": [
           "sales",
-          "engineering"
+          "engineering",
+          "operations"
         ],
         "teamOrFunction": [
           "sales",
-          "engineering"
+          "engineering",
+          "operations"
         ],
         "specific_task": [
           "sales_lead_research",
-          "internal_tool_building"
+          "internal_tool_building",
+          "logistics_coordination"
         ],
         "specificTask": [
           "sales_lead_research",
-          "internal_tool_building"
+          "internal_tool_building",
+          "logistics_coordination"
         ],
         "business_action": [
           "customer_deployment"
@@ -97748,7 +97999,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "CData 发布 Connect AI 开发者版、Python SDK 和 CLI CData Launches Connect AI Developer Edition, Python SDK, and CLI 原始来源标题显示：CData 发布 Connect AI 开发者版、Python SDK 和 CLI。",
+        "sourceExcerpt": "CData 发布 Connect AI 开发者版、Python SDK 和 CLI CData Launches Connect AI Developer Edition, Python SDK, and CLI June 24, 2026 CData Software launched three products for developers building AI applications on enterprise data:...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -98040,7 +98291,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "GitHub 2026 年 6 月最新发布说明 GitHub Release Notes - June 2026 Latest Updates - Releasebot 原始来源标题显示：GitHub 2026 年 6 月最新发布说明。",
+        "sourceExcerpt": "GitHub 2026 年 6 月最新发布说明 GitHub Release Notes - June 2026 Latest Updates - Releasebot GitHub adds total pull request merges by AI adoption phase in Copilot usage metrics API reports for organizations and enterprises, giv...",
         "missingFields": [
           "adoption_evidence"
         ],
@@ -98068,10 +98319,6 @@
             }
           ],
           "business_action": [
-            {
-              "id": "funding_round",
-              "label": "Funding, financing, or investment round"
-            },
             {
               "id": "product_launch",
               "label": "Product, feature, model, API, or platform launch"
@@ -98112,12 +98359,7 @@
             }
           ],
           "adoption_evidence": [],
-          "source_evidence_type": [
-            {
-              "id": "funding_news",
-              "label": "Funding news or investor announcement"
-            }
-          ]
+          "source_evidence_type": []
         },
         "buyer_or_user": [
           "engineering_team",
@@ -98140,12 +98382,10 @@
           "code_review"
         ],
         "business_action": [
-          "funding_round",
           "product_launch",
           "open_source_release"
         ],
         "businessAction": [
-          "funding_round",
           "product_launch",
           "open_source_release"
         ],
@@ -98175,12 +98415,8 @@
         ],
         "adoption_evidence": [],
         "adoptionEvidence": [],
-        "source_evidence_type": [
-          "funding_news"
-        ],
-        "sourceEvidenceType": [
-          "funding_news"
-        ]
+        "source_evidence_type": [],
+        "sourceEvidenceType": []
       },
       "summary": "这条案例信号可用于观察 AI 能力是否进入真实客户流程，以及效果指标是否足以支撑采购。",
       "translatedFact": "原始来源标题显示：GitHub 2026 年 6 月最新发布说明。",
@@ -98272,7 +98508,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "[{\"type\":\"case_detail\",\"text\":\"Arcade's AI-native customer base in 2026 covers four product categories.",
+        "sourceExcerpt": "- Arcade Software Arcade's AI-native customer base in 2026 covers four product categories.",
         "missingFields": [
           "specific_task",
           "product_form",
@@ -98307,12 +98543,24 @@
             {
               "id": "latency_sensitive",
               "label": "Latency, reliability, or production performance constraint"
+            },
+            {
+              "id": "context_management",
+              "label": "Context, memory, or state management"
             }
           ],
           "adoption_evidence": [
             {
               "id": "case_study",
               "label": "Case study, customer story, or deployment write-up"
+            },
+            {
+              "id": "usage_growth",
+              "label": "Usage growth, ARR, revenue, or customer-count growth"
+            },
+            {
+              "id": "third_party_report",
+              "label": "Third-party report, industry report, or analyst evidence"
             }
           ],
           "source_evidence_type": [
@@ -98345,18 +98593,24 @@
         "pain_or_constraint": [
           "workflow_integration",
           "hallucination_risk",
-          "latency_sensitive"
+          "latency_sensitive",
+          "context_management"
         ],
         "painOrConstraint": [
           "workflow_integration",
           "hallucination_risk",
-          "latency_sensitive"
+          "latency_sensitive",
+          "context_management"
         ],
         "adoption_evidence": [
-          "case_study"
+          "case_study",
+          "usage_growth",
+          "third_party_report"
         ],
         "adoptionEvidence": [
-          "case_study"
+          "case_study",
+          "usage_growth",
+          "third_party_report"
         ],
         "source_evidence_type": [
           "first_party_case"
@@ -98455,7 +98709,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Zendesk 在 Relate 2026 发布自主服务劳动力 Zendesk Unveils Autonomous Service Workforce at Relate 2026 原始来源标题显示：Zendesk 在 Relate 2026 发布自主服务劳动力。",
+        "sourceExcerpt": "Zendesk 在 Relate 2026 发布自主服务劳动力 Zendesk Unveils Autonomous Service Workforce at Relate 2026 Zendesk replaces deflection bots with specialized AI agents at Relate 2026.",
         "missingFields": [
           "adoption_evidence",
           "delivery_model"
@@ -98667,7 +98921,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "Kore.ai 客户故事：跨行业 AI 成功案例 Kore.ai Customer Stories – AI Success Across Industries 原始来源标题显示：Kore.ai 客户故事：跨行业 AI 成功案例。",
+        "sourceExcerpt": "Kore.ai 客户故事：跨行业 AI 成功案例 Kore.ai Customer Stories – AI Success Across Industries AMD partnered with Kore.ai to transform HR support delivery at scale—quickly, efficiently, and without sacrificing the human touch.",
         "missingFields": [],
         "labels": {
           "buyer_or_user": [
@@ -98726,6 +98980,10 @@
             {
               "id": "rag_knowledge_base",
               "label": "RAG, enterprise search, memory, or knowledge-base layer"
+            },
+            {
+              "id": "vertical_saas",
+              "label": "Vertical SaaS application for a named industry or function"
             }
           ],
           "delivery_model": [
@@ -98803,11 +99061,13 @@
         ],
         "product_form": [
           "agent_workbench",
-          "rag_knowledge_base"
+          "rag_knowledge_base",
+          "vertical_saas"
         ],
         "productForm": [
           "agent_workbench",
-          "rag_knowledge_base"
+          "rag_knowledge_base",
+          "vertical_saas"
         ],
         "delivery_model": [
           "project_based_service"
@@ -98928,7 +99188,7 @@
       "opportunitySignals": {
         "schemaVersion": "opportunity-signals-v1",
         "evidenceBasis": "raw_source_text",
-        "sourceExcerpt": "原文称，Financial deployment is both modest and growing.",
+        "sourceExcerpt": "/ query=enterprise AI deployment industry workflow customer story 2026 / intent=find_customer_case / path=industry_landing Foundation Executive Summary Utilities stand at an inflection point.",
         "missingFields": [
           "product_form",
           "delivery_model"
@@ -98956,6 +99216,10 @@
             {
               "id": "healthcare_operations",
               "label": "Healthcare operations"
+            },
+            {
+              "id": "it_security",
+              "label": "IT / security / platform governance"
             }
           ],
           "specific_task": [
@@ -98968,6 +99232,10 @@
             {
               "id": "customer_deployment",
               "label": "Customer deployment, rollout, pilot, case study, or adoption"
+            },
+            {
+              "id": "governance_requirement",
+              "label": "Governance, regulation, security, or compliance requirement"
             }
           ],
           "product_form": [],
@@ -99007,11 +99275,13 @@
         ],
         "team_or_function": [
           "finance",
-          "healthcare_operations"
+          "healthcare_operations",
+          "it_security"
         ],
         "teamOrFunction": [
           "finance",
-          "healthcare_operations"
+          "healthcare_operations",
+          "it_security"
         ],
         "specific_task": [
           "medical_documentation"
@@ -99020,10 +99290,12 @@
           "medical_documentation"
         ],
         "business_action": [
-          "customer_deployment"
+          "customer_deployment",
+          "governance_requirement"
         ],
         "businessAction": [
-          "customer_deployment"
+          "customer_deployment",
+          "governance_requirement"
         ],
         "product_form": [],
         "productForm": [],

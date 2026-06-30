@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment"]
   product_form: []
-  delivery_model: ["project_based_service", "consulting_diagnostic"]
-  pain_or_constraint: ["workflow_integration"]
+  delivery_model: ["consulting_diagnostic"]
+  pain_or_constraint: []
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "2026 年 AI 咨询格局与本地化部署 AI Consulting Landscape 2026 — Deploy On-Premises 来源材料显示，AI Consulting Landscape 2026 — Deploy On 的AI 商业动作涉及销售和收入团队流程。"
+  source_excerpt: "2026 年 AI 咨询格局与本地化部署 AI Consulting Landscape 2026 — Deploy On-Premises # 2026 年 AI 咨询格局与本地化部署 ## 新闻事实 来源材料显示，AI Consulting Landscape 2026 — Deploy On 的AI 商业动作涉及销售和收入团队流程。"
   missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "AI Consulting Landscape 2026 — Deploy On"

@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["finance_team", "enterprise_ai_owner"]
-  team_or_function: ["finance"]
+  buyer_or_user: []
+  team_or_function: []
   specific_task: []
-  business_action: ["product_launch", "procurement_signal", "pricing_change"]
+  business_action: ["procurement_signal"]
   product_form: ["copilot"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
-  adoption_evidence: ["deployment_scale", "procurement_contract"]
-  source_evidence_type: ["business_media"]
+  pain_or_constraint: []
+  adoption_evidence: ["procurement_contract"]
+  source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Microsoft Work IQ：Copilot Credits 重置 2027 年预算 Microsoft Work IQ: Copilot Credits Reset 2027 Budgets 来源材料显示，Microsoft Work IQ 的AI 商业动作涉及采购下单流程；原文同时出现 1.4 B、2027 B 等数字。"
-  missing_fields: ["specific_task", "delivery_model"]
+  source_excerpt: "Microsoft Work IQ：Copilot Credits 重置 2027 年预算 Microsoft Work IQ: Copilot Credits Reset 2027 Budgets # Microsoft Work IQ：Copilot Credits 重置 2027 年预算 ## 新闻事实 来源材料显示，Microsoft Work IQ 的AI 商业动作涉及采购下单流程；原文同时出现 1.4 B、2027 B 等..."
+  missing_fields: ["buyer_or_user", "specific_task", "delivery_model"]
 
 signal_owner: "Microsoft Work IQ"
 

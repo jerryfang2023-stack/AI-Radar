@@ -48,11 +48,11 @@ opportunity_signals:
   product_form: []
   delivery_model: []
   pain_or_constraint: []
-  adoption_evidence: ["customer_metric"]
+  adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "ChatMaxima：2026 年 AI 客户支持统计与趋势 55+ AI Customer Support Statistics and Trends for 2026 - ChatMaxima 来源材料显示，Chatmaxima 的客户部署或应用案例涉及销售和收入团队流程；原文同时出现 $15.12 b、80% 等数字。"
-  missing_fields: ["product_form", "delivery_model"]
+  source_excerpt: "ChatMaxima：2026 年 AI 客户支持统计与趋势 55+ AI Customer Support Statistics and Trends for 2026 - ChatMaxima # ChatMaxima：2026 年 AI 客户支持统计与趋势 ## 新闻事实 来源材料显示，Chatmaxima 的客户部署或应用案例涉及销售和收入团队流程；原文同时出现 $15.12 b、80% 等数字。"
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Chatmaxima"
 

@@ -45,14 +45,14 @@ opportunity_signals:
   team_or_function: []
   specific_task: []
   business_action: ["customer_deployment", "product_launch"]
-  product_form: ["api"]
-  delivery_model: ["api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: []
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "OpenAI 2026 年 6 月发布说明与最新更新 OpenAI Release Notes - June 2026 Latest Updates - Releasebot 来源材料显示，OpenAI Release Notes 的产品或平台动作涉及模型部署和算力调用。"
-  missing_fields: ["specific_task", "adoption_evidence"]
+  source_excerpt: "OpenAI 2026 年 6 月发布说明与最新更新 OpenAI Release Notes - June 2026 Latest Updates - Releasebot # OpenAI 2026 年 6 月发布说明与最新更新 ## 新闻事实 来源材料显示，OpenAI Release Notes 的产品或平台动作涉及模型部署和算力调用。"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "OpenAI Release Notes"
 

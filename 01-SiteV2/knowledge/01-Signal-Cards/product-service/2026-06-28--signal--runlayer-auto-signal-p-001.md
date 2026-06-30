@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Runlayer raises $30M Series A to go all in on AI Runlayer raises $30M Series A to go all in on AI Runlayer 获得 $30M Series A 融资。"
+  source_excerpt: "We've raised a $30M Series A from Felicis and Khosla Ventures, bringing total funding to $42M, to build the golden path for AI: one platform that lets every team build agents without losing security and control."
   missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "Runlayer"

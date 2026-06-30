@@ -13,6 +13,8 @@ const args = new Map(
 
 const writeMode = args.get("write") === "true";
 const limit = args.has("limit") ? Number.parseInt(args.get("limit"), 10) : Number.POSITIVE_INFINITY;
+const fromDate = args.get("from") || "";
+const toDate = args.get("to") || "";
 const categories = ["case", "funding", "product-service"];
 
 function read(file) {
@@ -29,9 +31,21 @@ function signalCardFiles() {
     if (!fs.existsSync(dir)) return [];
     return fs.readdirSync(dir)
       .filter((name) => name.endsWith(".md") && name !== "README.md")
+      .filter((name) => withinDateWindow(dateFromFilename(name)))
       .sort()
       .map((name) => ({ category, file: path.join(dir, name) }));
   });
+}
+
+function dateFromFilename(name = "") {
+  return name.match(/^(\d{4}-\d{2}-\d{2})--/u)?.[1] || "";
+}
+
+function withinDateWindow(date = "") {
+  if (!date) return true;
+  if (fromDate && date < fromDate) return false;
+  if (toDate && date > toDate) return false;
+  return true;
 }
 
 function frontmatterMatch(text = "") {
@@ -200,7 +214,14 @@ function main() {
       }
     }
   }
-  console.log(JSON.stringify({ mode: writeMode ? "write" : "dry-run", scanned, changed, skipped, samples }, null, 2));
+  console.log(JSON.stringify({
+    mode: writeMode ? "write" : "dry-run",
+    window: { from: fromDate || "all", to: toDate || "all" },
+    scanned,
+    changed,
+    skipped,
+    samples,
+  }, null, 2));
 }
 
 main();

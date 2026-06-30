@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "2026 年保险行业 AI 工作流自动化指南 AI Workflow Automation for Insurance Industry Guide 2026 来源材料显示，Bizdata360 的产品或平台动作涉及销售和收入团队流程。"
+  source_excerpt: "2026 年保险行业 AI 工作流自动化指南 AI Workflow Automation for Insurance Industry Guide 2026 # 2026 年保险行业 AI 工作流自动化指南 ## 新闻事实 来源材料显示，Bizdata360 的产品或平台动作涉及销售和收入团队流程。"
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "Bizdata360"

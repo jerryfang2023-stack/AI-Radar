@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Investing in Probook Investing in Probook 来源材料显示，Investing in Probook 的融资或资金流向涉及地产开发和建筑设计流程。"
+  source_excerpt: "/ query=vertical AI startup funding enterprise agents announced 2026 / intent=find_startups / path=capital_startup Investing in Probook a16z leads Probook's Series A Alex Rampell , David Haber , Olivia Moore , and Seema..."
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "Investing in Probook"

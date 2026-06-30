@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: []
-  team_or_function: []
+  buyer_or_user: ["it_security_team"]
+  team_or_function: ["it_security"]
   specific_task: []
-  business_action: ["partnership_integration", "pricing_change"]
+  business_action: ["partnership_integration", "pricing_change", "governance_requirement"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["api_cost_spike"]
-  adoption_evidence: ["partnership_announcement"]
-  source_evidence_type: []
+  pain_or_constraint: ["api_cost_spike", "security_compliance"]
+  adoption_evidence: ["partnership_announcement", "enterprise_plan"]
+  source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "On-Premise vs Cloud: Generative AI Total Cost of ..."
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
 
 signal_owner: "On"
 

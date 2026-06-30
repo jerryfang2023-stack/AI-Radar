@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Making AI the Central Nervous System of a Manufacturer NetSuite ERP Making AI the Central Nervous System of a Manufacturer NetSuite ERP 来源材料显示，Versich 的AI 商业动作涉及地产开发和建筑设计流程。"
+  source_excerpt: "/ query=vertical AI solution customer deployment healthcare finance manufacturing 2026 / intent=find_customer_case / path=industry_landing REVIEWS What Clients Say About Us 5."
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "Versich"

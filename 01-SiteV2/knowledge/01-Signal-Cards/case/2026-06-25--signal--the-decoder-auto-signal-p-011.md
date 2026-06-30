@@ -48,11 +48,11 @@ opportunity_signals:
   product_form: []
   delivery_model: []
   pain_or_constraint: []
-  adoption_evidence: []
+  adoption_evidence: ["customer_metric"]
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "OpenAI与Broadcom发布首款定制芯片\"Jalapeño\"，专为LLM推理设计 OpenAI与Broadcom发布首款定制芯片\"Jalapeño\"，专为LLM推理设计 OpenAI与Broadcom联合发布首款定制芯片\"Jalapeño\"，专为大语言模型推理而设计，从零打造而非修改通用芯片。OpenAI称其性能功耗比\"显著优于\"当前最先进硬件，但为自报数据，尚未独立验证。芯片开发耗时9个月，OpenAI自身模型辅助加速设计。工..."
-  missing_fields: ["buyer_or_user", "specific_task", "product_form", "adoption_evidence", "delivery_model"]
+  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
 
 signal_owner: "The-Decoder"
 

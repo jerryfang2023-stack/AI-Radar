@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "legal_team", "enterprise_ai_owner"]
-  team_or_function: ["engineering", "legal_compliance", "it_security"]
-  specific_task: ["internal_tool_building", "contract_review"]
-  business_action: ["funding_round", "research_benchmark", "governance_requirement"]
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["funding_round"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["permission_boundary", "security_compliance"]
-  adoption_evidence: ["procurement_contract"]
+  pain_or_constraint: []
+  adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱 GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱 来源材料显示，GLM-5.2 🤖, DeepSeek 的融资或资金流向涉及企业智能体协作流程；原文同时出现 $7 等数字。"
-  missing_fields: ["product_form", "delivery_model"]
+  source_excerpt: "# GLM-5.2 🤖, DeepSeek raises $7.4B 💰, Android MCP 📱 ## 新闻事实 来源材料显示，GLM-5.2 🤖, DeepSeek 的融资或资金流向涉及企业智能体协作流程；原文同时出现 $7 等数字。"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "GLM-5.2 🤖, DeepSeek"
 

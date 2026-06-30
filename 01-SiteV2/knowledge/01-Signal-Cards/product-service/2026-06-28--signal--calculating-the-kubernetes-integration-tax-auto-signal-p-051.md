@@ -44,14 +44,14 @@ opportunity_signals:
   buyer_or_user: ["sales_team", "customer_support_team"]
   team_or_function: ["sales", "customer_support"]
   specific_task: ["sales_lead_research", "customer_ticket_triage"]
-  business_action: ["customer_deployment", "partnership_integration"]
+  business_action: ["customer_deployment", "partnership_integration", "failure_postmortem"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Calculating The Kubernetes Integration Tax: What Your DIY Networking Stack Actually Costs Calculating The Kubernetes Integration Tax: What Your DIY Networking Stack Actually Costs 来源材料显示，Calculating The Kubernetes Integ..."
+  source_excerpt: "Calculating The Kubernetes Integration Tax: What Your DIY Networking Stack Actually Costs Calculating The Kubernetes Integration Tax: What Your DIY Networking Stack Actually Costs It was 11:47pm on a Thursday night, and..."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Calculating The Kubernetes Integration Tax"

@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["pilot_or_poc"]
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "- Facebook 来源材料显示，Facebook 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 95%、99% 等数字。"
+  source_excerpt: "- Facebook AI ambitions are substantial, but few have scaled beyond pilots."
   missing_fields: ["product_form"]
 
 signal_owner: "Facebook"

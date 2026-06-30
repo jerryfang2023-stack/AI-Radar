@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
+  buyer_or_user: ["engineering_team"]
   team_or_function: ["engineering"]
-  specific_task: ["code_review"]
+  specific_task: ["internal_tool_building"]
   business_action: ["product_launch", "open_source_release"]
-  product_form: ["copilot", "api", "developer_tool"]
-  delivery_model: ["api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  product_form: ["developer_tool"]
+  delivery_model: []
+  pain_or_constraint: []
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "GitHub 2026 年 6 月发布说明与最新更新 GitHub Release Notes - June 2026 Latest Updates - Releasebot 来源材料显示，GitHub Release Notes 的AI 商业动作涉及地产开发和建筑设计流程。"
-  missing_fields: ["adoption_evidence"]
+  source_excerpt: "GitHub 2026 年 6 月发布说明与最新更新 GitHub Release Notes - June 2026 Latest Updates - Releasebot # GitHub 2026 年 6 月发布说明与最新更新 ## 新闻事实 来源材料显示，GitHub Release Notes 的AI 商业动作涉及地产开发和建筑设计流程。"
+  missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "GitHub Release Notes"
 

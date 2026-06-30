@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Agentbase Agentbase | Serverless Agent Platform for Developers 来源材料显示，Agentbase 的产品或平台动作涉及地产开发和建筑设计流程。"
+  source_excerpt: "Agentbase Agentbase | Serverless Agent Platform for Developers Join our agent building community Discord →."
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "Agentbase"

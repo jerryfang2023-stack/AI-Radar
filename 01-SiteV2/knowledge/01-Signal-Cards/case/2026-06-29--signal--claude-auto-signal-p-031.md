@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment", "research_benchmark"]
-  product_form: ["api", "workflow_automation"]
+  product_form: ["api"]
   delivery_model: ["api_usage_based"]
-  pain_or_constraint: ["workflow_integration"]
+  pain_or_constraint: []
   adoption_evidence: ["case_study", "customer_metric"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Smartsheet Claude Platform API 案例研究 Smartsheet Claude Platform (API) case study | Claude by Anthropic 来源材料显示，Claude 的客户部署或应用案例涉及销售和收入团队流程；原文同时出现 85%、Fortune 500 等数字。"
+  source_excerpt: "Smartsheet Claude Platform API 案例研究 Smartsheet Claude Platform (API) case study | Claude by Anthropic # Smartsheet Claude Platform API 案例研究 ## 新闻事实 来源材料显示，Claude 的客户部署或应用案例涉及销售和收入团队流程；原文同时出现 85%、Fortune 500 等数字。"
   missing_fields: []
 
 signal_owner: "Claude"

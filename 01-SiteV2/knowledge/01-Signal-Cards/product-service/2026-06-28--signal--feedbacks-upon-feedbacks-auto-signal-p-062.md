@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Feedbacks upon feedbacks: Rock weathering and the climate Feedbacks upon feedbacks: Rock weathering and the climate 来源材料显示，Feedbacks upon feedbacks 的产品或平台动作涉及企业智能体协作流程。"
+  source_excerpt: "# Feedbacks upon feedbacks: Rock weathering and the climate ## 新闻事实 来源材料显示，Feedbacks upon feedbacks 的产品或平台动作涉及企业智能体协作流程。"
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Feedbacks upon feedbacks"

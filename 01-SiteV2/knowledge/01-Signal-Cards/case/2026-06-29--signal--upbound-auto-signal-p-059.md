@@ -47,11 +47,11 @@ opportunity_signals:
   business_action: ["customer_deployment", "product_launch", "open_source_release"]
   product_form: ["workflow_automation"]
   delivery_model: ["open_source_commercial"]
-  pain_or_constraint: ["model_routing_complexity"]
+  pain_or_constraint: ["workflow_integration", "model_routing_complexity"]
   adoption_evidence: []
   source_evidence_type: ["first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Upbound 发布 Modelplane 开源控制平面 Upbound Launches Modelplane: The Open Source Control Plane 原始来源标题显示：Upbound 发布 Modelplane 开源控制平面。"
+  source_excerpt: "Upbound 发布 Modelplane 开源控制平面 Upbound Launches Modelplane: The Open Source Control Plane SAN FRANCISCO, June 23, 2026 (GLOBE NEWSWIRE) -- Upbound, the company behind Crossplane, today released Modelplane, an open source ..."
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "Upbound"

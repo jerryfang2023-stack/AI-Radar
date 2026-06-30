@@ -1657,6 +1657,37 @@ button {
   margin-bottom: 18px;
 }
 
+.report-subcolumn {
+  margin-top: 18px;
+}
+
+.report-subcolumn + .report-subcolumn {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.report-subcolumn-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.report-subcolumn-head h3 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: var(--gl-weight-title, 600);
+  line-height: 34px;
+}
+
+.report-card-monthly {
+  border-top: 3px solid rgba(200, 167, 102, .72);
+}
+
 .weekly-radar-filter {
   display: inline-flex;
   align-items: center;
@@ -2415,6 +2446,7 @@ button {
   }
 
   .section-head,
+  .report-subcolumn-head,
   .row-main {
     display: grid;
     align-items: start;

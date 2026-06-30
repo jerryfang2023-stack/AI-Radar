@@ -44,7 +44,7 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["product_launch", "open_source_release", "research_benchmark"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release", "research_benchmark"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration", "context_management"]

@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["partnership_announcement", "enterprise_plan"]
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "OpenAI reveals its first AI processor: Jalapeño OpenAI reveals its first AI processor: Jalapeño 来源材料显示，OpenAI reveals its first AI processor 的AI 商业动作涉及模型部署和算力调用。"
+  source_excerpt: "# OpenAI reveals its first AI processor: Jalapeño ## 新闻事实 来源材料显示，OpenAI reveals its first AI processor 的AI 商业动作涉及模型部署和算力调用。"
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "OpenAI reveals its first AI processor"

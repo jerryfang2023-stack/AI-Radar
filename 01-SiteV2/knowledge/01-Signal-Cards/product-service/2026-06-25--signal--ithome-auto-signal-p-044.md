@@ -41,7 +41,7 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["enterprise_ai_owner"]
+  buyer_or_user: []
   team_or_function: []
   specific_task: []
   business_action: ["product_launch", "pricing_change"]
@@ -52,7 +52,7 @@ opportunity_signals:
   source_evidence_type: []
   evidence_basis: "raw_source_text"
   source_excerpt: "爆料称索尼 PS6 将搭载 AI 帧生成等技术，目标 4K 120 帧游戏体验 爆料称索尼 PS6 将搭载 AI 帧生成等技术，目标 4K 120 帧游戏体验 爆料称，索尼 PS6 将融合视频帧插补（VFI）、PlayStation 超分辨率技术（PSSR）及 AI 光线追踪，以实现 4K 120 帧游戏。帧生成技术大概率基于 AMD FSR 改良。主机还将内置本地离线 AI 模型，预计占用 4GB 至 8GB 内存以降低延迟。索尼力..."
-  missing_fields: ["specific_task", "product_form", "delivery_model"]
+  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
 
 signal_owner: "Ithome"
 

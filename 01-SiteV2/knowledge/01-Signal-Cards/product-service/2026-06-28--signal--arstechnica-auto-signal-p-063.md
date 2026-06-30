@@ -47,11 +47,11 @@ opportunity_signals:
   business_action: []
   product_form: []
   delivery_model: []
-  pain_or_constraint: []
+  pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "SpaceX plans to launch Starlink mobile service in the US SpaceX plans to launch Starlink mobile service in the US 来源材料显示，Arstechnica 的AI 商业动作涉及企业智能体协作流程；原文同时出现 $322 b 等数字。"
+  source_excerpt: "SpaceX plans to launch Starlink mobile service in the US SpaceX plans to launch Starlink mobile service in the US Move would test whether group can turn ambition into a mass-market phone business."
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Arstechnica"

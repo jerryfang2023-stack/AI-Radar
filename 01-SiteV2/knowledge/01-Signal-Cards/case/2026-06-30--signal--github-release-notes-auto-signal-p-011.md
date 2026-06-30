@@ -44,14 +44,14 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["code_review"]
-  business_action: ["funding_round", "product_launch", "open_source_release"]
+  business_action: ["product_launch", "open_source_release"]
   product_form: ["copilot", "api", "developer_tool"]
   delivery_model: ["open_source_commercial", "api_usage_based"]
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news"]
+  source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "GitHub 2026 年 6 月最新发布说明 GitHub Release Notes - June 2026 Latest Updates - Releasebot 原始来源标题显示：GitHub 2026 年 6 月最新发布说明。"
+  source_excerpt: "GitHub 2026 年 6 月最新发布说明 GitHub Release Notes - June 2026 Latest Updates - Releasebot GitHub adds total pull request merges by AI adoption phase in Copilot usage metrics API reports for organizations and enterprises, giv..."
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "GitHub Release Notes"

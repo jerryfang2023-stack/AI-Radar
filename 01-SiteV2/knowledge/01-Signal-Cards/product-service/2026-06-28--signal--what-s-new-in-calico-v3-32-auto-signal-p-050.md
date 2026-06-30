@@ -47,11 +47,11 @@ opportunity_signals:
   business_action: ["open_source_release"]
   product_form: []
   delivery_model: ["open_source_commercial"]
-  pain_or_constraint: []
+  pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "What’s New in Calico v3.32 What’s New in Calico v3.32 来源材料显示，What’s New in Calico v3.32 的产品或平台动作涉及地产开发和建筑设计流程。"
+  source_excerpt: "# What’s New in Calico v3.32 ## 新闻事实 来源材料显示，What’s New in Calico v3.32 的产品或平台动作涉及地产开发和建筑设计流程。"
   missing_fields: ["specific_task", "product_form", "adoption_evidence"]
 
 signal_owner: "What’s New in Calico v3.32"

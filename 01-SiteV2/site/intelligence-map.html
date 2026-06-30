@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-version" content="SITE-V3.3.8.6">
-  <meta name="wavesight-column-version" content="IMAP-V1.2.0-opportunity-radar">
+  <meta name="wavesight-version" content="SITE-V3.3.8.7">
+  <meta name="wavesight-column-version" content="IMAP-V1.3.0-report-center-monthly">
   <meta name="weekly-report-source" content="01-SiteV2/content/08-report/">
   <title>情报地图｜观澜 AI</title>
   <link rel="stylesheet" href="assets/wavesight-nav.css">
-  <link rel="stylesheet" href="assets/v3-data-observation-desk.css?v=20260623-opportunity-stacked">
+  <link rel="stylesheet" href="assets/v3-data-observation-desk.css?v=20260630-report-center-monthly">
 </head>
 <body class="v3-data-observation-page">
   <header class="wavesight-topbar" aria-label="观澜 AI 导航">
@@ -43,8 +43,8 @@
       <div class="weekly-radar-entry" aria-labelledby="weekly-radar-title">
         <div class="section-head">
           <div>
-            <p class="desk-kicker">Weekly Report</p>
-            <h2 id="weekly-radar-title">每周周报</h2>
+            <p class="desk-kicker">Reports</p>
+            <h2 id="weekly-radar-title">报告中心</h2>
           </div>
           <label class="weekly-radar-filter">
             <span>时间窗口</span>
@@ -55,7 +55,38 @@
             </select>
           </label>
         </div>
-        <div class="weekly-radar-list" aria-label="每周周报列表">
+        <div class="report-subcolumn" aria-labelledby="monthly-report-title">
+          <div class="report-subcolumn-head">
+            <div>
+              <p class="desk-kicker">Monthly</p>
+              <h3 id="monthly-report-title">月报</h3>
+            </div>
+          </div>
+          <div class="weekly-radar-list" aria-label="月报列表">
+            <article class="weekly-radar-card report-card-monthly">
+              <div>
+                <span class="weekly-radar-date">2026-06-01 / 2026-06-30</span>
+                <h3>AI 商业结构与机会月报：部署交付层浮现</h3>
+                <p>企业 AI 从工具采用进入流程接管，价值链中浮现部署交付层。月报完整呈现产业结构变化、趋势裁决表、机会地图、关键矛盾和 7 月验证清单。</p>
+                <div class="weekly-radar-tags" aria-label="月报内容模块">
+                  <span>产业结构变化图</span>
+                  <span>趋势裁决表</span>
+                  <span>机会地图</span>
+                  <span>7 月验证清单</span>
+                </div>
+              </div>
+              <a class="weekly-radar-link" href="monthly-business-structure-2026-06.html">阅读月报</a>
+            </article>
+          </div>
+        </div>
+        <div class="report-subcolumn" aria-labelledby="weekly-report-title">
+          <div class="report-subcolumn-head">
+            <div>
+              <p class="desk-kicker">Weekly</p>
+              <h3 id="weekly-report-title">周报</h3>
+            </div>
+          </div>
+          <div class="weekly-radar-list" aria-label="周报列表">
           <article class="weekly-radar-card">
             <div>
               <span class="weekly-radar-date">2026-06-22 / 2026-06-28</span>
@@ -95,6 +126,7 @@
             </div>
             <a class="weekly-radar-link" href="weekly-ai-business-change-radar-2026-06-15.html">阅读归档周报</a>
           </article>
+        </div>
         </div>
       </div>
     </section>

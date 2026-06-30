@@ -44,14 +44,14 @@ opportunity_signals:
   buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
   team_or_function: ["sales", "engineering"]
   specific_task: ["sales_lead_research", "internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: ["workflow_automation"]
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
-  adoption_evidence: ["deployment_scale", "third_party_report"]
+  adoption_evidence: ["deployment_scale", "partnership_announcement", "third_party_report"]
   source_evidence_type: ["industry_report", "first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Kore.ai launches AI platform for enterprise workflow automation Kore.ai launches AI platform for enterprise workflow automation 来源材料显示，Process 的产品或平台动作涉及销售和收入团队流程。"
+  source_excerpt: "Kore.ai launches AI platform for enterprise workflow automation Kore.ai launches AI platform for enterprise workflow automation Title: Kore.ai launches AI platform for enterprise workflow automation # Kore.ai launches A..."
   missing_fields: ["delivery_model"]
 
 signal_owner: "Process"

@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "获得$38M 融资，用于企业 Agent 协作平台 Convey closes on $38M round to help companies automate repetitive work with AI teammates - SiliconANGLE 来源材料显示，Convey Inc."
+  source_excerpt: "获得$38M 融资，用于企业 Agent 协作平台 Convey closes on $38M round to help companies automate repetitive work with AI teammates - SiliconANGLE Convey closes on $38M round to help companies automate repetitive work with AI teammates ..."
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Convey Inc."

@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "AI Agent Builder 2026: Build Your First AI Agent AI Agent Builder 2026: Build Your First AI Agent | Better Launch 来源材料显示，AI Agent Builder 2026 的AI 商业动作涉及销售和收入团队流程。"
+  source_excerpt: "AI Agent Builder 2026: Build Your First AI Agent AI Agent Builder 2026: Build Your First AI Agent | Better Launch # AI Agent Builder 2026: How to Build Your First AI Agent (Platforms, Frameworks, Real Use Cases)."
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "AI Agent Builder 2026"

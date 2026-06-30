@@ -47,11 +47,11 @@ opportunity_signals:
   business_action: ["funding_round", "customer_deployment"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration"]
+  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI 来源材料显示，Latent 的融资或资金流向涉..."
+  source_excerpt: "The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI The First Mechanistic Interpretability Frontier Lab — Myra Deng &amp; Mark Bissell of Goodfire AI From Palantir and Two S..."
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Latent"

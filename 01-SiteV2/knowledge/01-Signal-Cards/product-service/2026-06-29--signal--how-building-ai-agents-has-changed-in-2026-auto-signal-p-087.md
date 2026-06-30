@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "engineering"]
-  specific_task: ["sales_lead_research", "internal_tool_building", "knowledge_base_qa"]
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
   business_action: []
-  product_form: ["rag_knowledge_base"]
-  delivery_model: ["template_pack"]
-  pain_or_constraint: []
+  product_form: []
+  delivery_model: []
+  pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Pulumi：2026 年 AI Agent 构建方式的变化 How Building AI Agents Has Changed in 2026 | Pulumi Blog 来源材料显示，How Building AI Agents Has Changed in 2026 的AI 商业动作涉及地产开发和建筑设计流程。"
-  missing_fields: ["adoption_evidence"]
+  source_excerpt: "Pulumi：2026 年 AI Agent 构建方式的变化 How Building AI Agents Has Changed in 2026 | Pulumi Blog # Pulumi：2026 年 AI Agent 构建方式的变化 ## 新闻事实 来源材料显示，How Building AI Agents Has Changed in 2026 的AI 商业动作涉及地产开发和建筑设计流程。"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "How Building AI Agents Has Changed in 2026"
 

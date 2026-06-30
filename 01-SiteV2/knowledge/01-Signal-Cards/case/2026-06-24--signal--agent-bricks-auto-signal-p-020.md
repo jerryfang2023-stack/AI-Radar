@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
-  team_or_function: ["it_security"]
-  specific_task: []
+  buyer_or_user: ["insurance_team", "enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["insurance_operations", "it_security"]
+  specific_task: ["insurance_claim_review"]
   business_action: ["customer_deployment", "governance_requirement"]
   product_form: ["agent_workbench"]
   delivery_model: []
@@ -51,8 +51,8 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Agent Bricks 记录企业应用场景：地产开发和建筑设计流程 Agent Bricks: The governed enterprise agent platform | Databricks Blog 来源材料显示，Agent Bricks 的产品或平台动作涉及地产开发和建筑设计流程。"
-  missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]
+  source_excerpt: "Agent Bricks 记录企业应用场景：地产开发和建筑设计流程 Agent Bricks: The governed enterprise agent platform | Databricks Blog Agent Bricks: The governed enterprise agent platform | Databricks Blog ..."
+  missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "Agent Bricks"
 

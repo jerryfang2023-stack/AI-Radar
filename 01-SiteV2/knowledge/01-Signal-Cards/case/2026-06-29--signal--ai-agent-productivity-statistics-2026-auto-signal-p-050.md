@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "customer_support_team"]
-  team_or_function: ["sales", "customer_support"]
-  specific_task: ["sales_lead_research", "customer_ticket_triage"]
-  business_action: ["customer_deployment", "pricing_change"]
+  buyer_or_user: ["sales_team"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["api_cost_spike", "latency_sensitive"]
-  adoption_evidence: ["customer_metric", "third_party_report"]
-  source_evidence_type: ["industry_report", "business_media"]
+  pain_or_constraint: []
+  adoption_evidence: []
+  source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Digital Applied：2026 年 AI Agent 生产力统计与 ROI 数据 AI Agent Productivity Statistics 2026: 100+ ROI Data - Digital Applied 来源材料显示，AI Agent Productivity Statistics 2026 的客户部署或应用案例涉及销售和收入团队流程。"
-  missing_fields: ["product_form", "delivery_model"]
+  source_excerpt: "Digital Applied：2026 年 AI Agent 生产力统计与 ROI 数据 AI Agent Productivity Statistics 2026: 100+ ROI Data - Digital Applied # Digital Applied：2026 年 AI Agent 生产力统计与 ROI 数据 ## 新闻事实 来源材料显示，AI Agent Productivity Statistics 2026 的..."
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "AI Agent Productivity Statistics 2026"
 

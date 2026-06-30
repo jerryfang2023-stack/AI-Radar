@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["customer_metric", "procurement_contract", "pricing_page"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Marketing AI Agent Deployment Playbook for Agencies Marketing AI Agent Deployment Playbook for Agencies 来源材料显示，Digital Applied 的AI 商业动作涉及采购下单流程。"
+  source_excerpt: "Marketing AI Agent Deployment Playbook for Agencies Marketing AI Agent Deployment Playbook for Agencies Complete playbook for marketing agencies deploying AI agents across client reporting, campaign management, and cont..."
   missing_fields: ["specific_task", "product_form"]
 
 signal_owner: "Digital Applied"

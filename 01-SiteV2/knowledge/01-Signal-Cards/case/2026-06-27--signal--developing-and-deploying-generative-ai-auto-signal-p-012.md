@@ -44,14 +44,14 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["funding_round", "customer_deployment"]
+  business_action: ["customer_deployment"]
   product_form: []
   delivery_model: ["consulting_diagnostic"]
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "business_media"]
+  source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Developing and Deploying Generative AI - Altman Solon Developing and Deploying Generative AI - Altman Solon 来源材料显示，Developing and Deploying Generative AI 的客户部署或应用案例涉及企业智能体协作流程。"
+  source_excerpt: "Developing and Deploying Generative AI - Altman Solon Developing and Deploying Generative AI - Altman Solon This article, the second in our series, explores what enterprise development and deployment of generative AI wi..."
   missing_fields: ["specific_task", "product_form", "adoption_evidence"]
 
 signal_owner: "Developing and Deploying Generative AI"

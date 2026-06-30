@@ -12,10 +12,10 @@ const args = new Map(
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const expectedDate = args.get("date") || "";
 const expectedVersion = "V3.3.6.3-business-source-artifact-aggregation";
-const expectedSiteVersion = "SITE-V3.3.8.6";
+const expectedSiteVersion = "SITE-V3.3.8.7";
 const expectedBusinessSignalsColumnVersion = "BSIG-V1.1.4-pool-core-release-gate";
 const expectedEnterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
-const expectedIntelligenceMapColumnVersion = "IMAP-V1.2.0-opportunity-radar";
+const expectedIntelligenceMapColumnVersion = "IMAP-V1.3.0-report-center-monthly";
 const rolloverAcceptedVersions = new Map([
   ["V3.3.6-business-title-hermes-handoff", new Set(["2026-06-16"])],
 ]);

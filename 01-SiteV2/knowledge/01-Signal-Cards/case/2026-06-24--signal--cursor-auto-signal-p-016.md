@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Cursor 记录企业应用场景：销售和收入团队流程 Coinbase reduces time from idea to production by 90% with Cursor · Cursor 来源材料显示，Cursor 的AI 商业动作涉及销售和收入团队流程；原文同时出现 20 days、2 days 等数字。"
+  source_excerpt: "Cursor 记录企业应用场景：销售和收入团队流程 Coinbase reduces time from idea to production by 90% with Cursor · Cursor Today, over 2,400 developers at Coinbase use Cursor as part of their regular workflow."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Cursor"

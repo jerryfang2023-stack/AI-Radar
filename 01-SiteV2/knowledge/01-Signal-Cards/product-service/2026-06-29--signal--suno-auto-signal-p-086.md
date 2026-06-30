@@ -49,9 +49,9 @@ opportunity_signals:
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: ["procurement_contract"]
-  source_evidence_type: ["first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Suno 推出 Spark 孵化器计划，面向独立艺术家 Suno launches Spark incubator program to feed independent artists to its AI machine 来源材料显示，Suno 的AI 商业动作涉及采购下单流程。"
+  source_excerpt: "Suno 推出 Spark 孵化器计划，面向独立艺术家 Suno launches Spark incubator program to feed independent artists to its AI machine # Suno 推出 Spark 孵化器计划，面向独立艺术家 ## 新闻事实 来源材料显示，Suno 的AI 商业动作涉及采购下单流程。"
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Suno"

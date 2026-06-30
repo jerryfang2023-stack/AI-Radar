@@ -48,11 +48,11 @@ opportunity_signals:
   product_form: ["workflow_automation"]
   delivery_model: []
   pain_or_constraint: ["model_routing_complexity"]
-  adoption_evidence: []
+  adoption_evidence: ["third_party_report"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Orthogonal Raises $4.3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet Orthogonal Raises $4.3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet 来..."
-  missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]
+  source_excerpt: "Orthogonal Raises $4.3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet Orthogonal Raises $4.3M Seed for AI Agent Service Discovery, Orchestration, and Payments Across the Internet O..."
+  missing_fields: ["specific_task", "delivery_model"]
 
 signal_owner: "Orthogonal"
 

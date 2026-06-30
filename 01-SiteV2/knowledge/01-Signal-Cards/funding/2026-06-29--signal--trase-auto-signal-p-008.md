@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资 Trase Raises $107 Million Seed Round Led By ARCH Venture Partners 原始来源标题显示：Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资。"
+  source_excerpt: "Trase 获得 ARCH Venture Partners 领投的 1.07 亿美元种子轮融资 Trase Raises $107 Million Seed Round Led By ARCH Venture Partners # Trase Raises $107 Million Seed Round Led By ARCH Venture Partners ..."
   missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "Trase"

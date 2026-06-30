@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "engineering"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
+  buyer_or_user: ["sales_team", "engineering_team", "operations_team"]
+  team_or_function: ["sales", "engineering", "operations"]
+  specific_task: ["sales_lead_research", "internal_tool_building", "logistics_coordination"]
   business_action: ["customer_deployment"]
   product_form: ["api", "developer_tool"]
   delivery_model: ["api_usage_based"]
@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Agents SDK 增加后台子智能体和统一回合入口 Agents SDK adds background sub-agents and a unified turn entry point · Changelog 原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。"
+  source_excerpt: "Agents SDK 增加后台子智能体和统一回合入口 Agents SDK adds background sub-agents and a unified turn entry point · Changelog New updates and improvements at Cloudflare."
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "Agents SDK adds background sub"

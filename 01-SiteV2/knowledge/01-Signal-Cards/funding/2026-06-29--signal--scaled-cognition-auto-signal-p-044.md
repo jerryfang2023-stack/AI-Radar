@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Scaled Cognition 获得 Khosla 领投的 1 亿美元融资 Scaled Cognition raises $100M led by Khosla 原始来源标题显示：Scaled Cognition 获得 Khosla 领投的 1 亿美元融资。"
+  source_excerpt: "Scaled Cognition 获得 Khosla 领投的 1 亿美元融资 Scaled Cognition raises $100M led by Khosla ition raises $100 ..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Scaled Cognition"

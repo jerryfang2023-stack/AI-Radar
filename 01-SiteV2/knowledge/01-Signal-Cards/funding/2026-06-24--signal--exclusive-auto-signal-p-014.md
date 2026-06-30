@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Exclusive 获得$40 m 融资，用于销售线索和收入团队协作 Exclusive: This founder went from pressure washing to Wharton—and just raised $40 million for AI | Fortune 来源材料显示，Exclusive 的AI 商业动作涉及销售和收入团队流程；原文同时出现 $400 b 等数字。"
+  source_excerpt: "Exclusive 获得$40 m 融资，用于销售线索和收入团队协作 Exclusive: This founder went from pressure washing to Wharton—and just raised $40 million for AI | Fortune The 24 year-old spent six summers pressure washing houses in upstate New York..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Exclusive"

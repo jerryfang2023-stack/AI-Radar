@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Lakeflow: A new era of agentic data engineering Lakeflow: A new era of agentic data engineering | Databricks Blog 来源材料显示，Lakeflow 的AI 商业动作涉及地产开发和建筑设计流程。"
+  source_excerpt: "Lakeflow: A new era of agentic data engineering Lakeflow: A new era of agentic data engineering | Databricks Blog why we set out to ..."
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "Lakeflow"

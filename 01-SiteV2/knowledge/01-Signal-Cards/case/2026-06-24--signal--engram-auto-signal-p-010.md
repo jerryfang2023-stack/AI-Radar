@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Engram 记录企业应用场景：地产开发和建筑设计流程 Engram Launches with $98M to Build AI That Actually Knows Your Organization 来源材料显示，Engram 的产品或平台动作涉及地产开发和建筑设计流程。"
+  source_excerpt: "Engram 记录企业应用场景：地产开发和建筑设计流程 Engram Launches with $98M to Build AI That Actually Knows Your Organization ram Launches with $ ..."
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "Engram"

@@ -48,11 +48,11 @@ opportunity_signals:
   product_form: ["workflow_automation", "evaluation_platform"]
   delivery_model: []
   pain_or_constraint: ["api_cost_spike", "model_routing_complexity"]
-  adoption_evidence: []
+  adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Agentic AI Architecture: 2026 Production Patterns + Stack Agentic AI Architecture: 2026 Production Patterns + Stack | Internative 来源材料显示，Agentic AI Architecture 的客户部署或应用案例涉及地产开发和建筑设计流程。"
-  missing_fields: ["adoption_evidence", "delivery_model"]
+  source_excerpt: "Agentic AI Architecture: 2026 Production Patterns + Stack Agentic AI Architecture: 2026 Production Patterns + Stack | Internative The architecture of an LLM-powered system in 2024 was straightforward: prompt in, respons..."
+  missing_fields: ["delivery_model"]
 
 signal_owner: "Agentic AI Architecture"
 

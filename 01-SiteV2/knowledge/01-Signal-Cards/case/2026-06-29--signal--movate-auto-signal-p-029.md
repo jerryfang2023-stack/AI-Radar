@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["customer_support_team", "enterprise_ai_owner", "it_security_team"]
-  team_or_function: ["customer_support", "it_security"]
-  specific_task: ["customer_ticket_triage"]
-  business_action: ["customer_deployment", "partnership_integration", "governance_requirement"]
-  product_form: ["workflow_automation"]
+  buyer_or_user: []
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "partnership_integration"]
+  product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "model_routing_complexity"]
+  pain_or_constraint: []
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "来源材料显示，Movate 的AI 商业动作涉及地产开发和建筑设计流程。"
-  missing_fields: ["delivery_model"]
+  source_excerpt: "# Movate 与 MelodyArc 宣布应用 AI 合作 ## 新闻事实 来源材料显示，Movate 的AI 商业动作涉及地产开发和建筑设计流程。"
+  missing_fields: ["buyer_or_user", "specific_task", "product_form", "delivery_model"]
 
 signal_owner: "Movate"
 

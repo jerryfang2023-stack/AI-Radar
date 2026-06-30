@@ -45,13 +45,13 @@ opportunity_signals:
   team_or_function: ["sales", "customer_support", "engineering"]
   specific_task: ["sales_lead_research", "customer_ticket_triage", "internal_tool_building"]
   business_action: ["customer_deployment"]
-  product_form: ["agent_workbench", "rag_knowledge_base"]
+  product_form: ["agent_workbench", "rag_knowledge_base", "vertical_saas"]
   delivery_model: ["project_based_service"]
   pain_or_constraint: ["workflow_integration", "evaluation_gap"]
   adoption_evidence: ["case_study", "deployment_scale", "partnership_announcement"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Kore.ai 客户故事：跨行业 AI 成功案例 Kore.ai Customer Stories – AI Success Across Industries 原始来源标题显示：Kore.ai 客户故事：跨行业 AI 成功案例。"
+  source_excerpt: "Kore.ai 客户故事：跨行业 AI 成功案例 Kore.ai Customer Stories – AI Success Across Industries AMD partnered with Kore.ai to transform HR support delivery at scale—quickly, efficiently, and without sacrificing the human touch."
   missing_fields: []
 
 signal_owner: "Kore"

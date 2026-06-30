@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Convey 获得 a16z 领投的 3800 万美元 A 轮融资 Convey Raises $38 Million Series A Led by Andreessen Horowitz to Automate Enterprise Operations with AI Teammates 原始来源标题显示：Convey 获得 a16z 领投的 3800 万美元 A 轮融资。"
+  source_excerpt: "Convey 获得 a16z 领投的 3800 万美元 A 轮融资 Convey Raises $38 Million Series A Led by Andreessen Horowitz to Automate Enterprise Operations with AI Teammates Convey Raises $38 Million Series A Led by Andreessen Horowitz to Automa..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Convey"

@@ -49,9 +49,9 @@ opportunity_signals:
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["business_media"]
+  source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "2026 年 22 个 AI 工作流自动化示例 22 AI workflow automation examples you have to try in 2026 来源材料显示，Gumloop 的AI 商业动作涉及销售和收入团队流程。"
+  source_excerpt: "2026 年 22 个 AI 工作流自动化示例 22 AI workflow automation examples you have to try in 2026 # 2026 年 22 个 AI 工作流自动化示例 ## 新闻事实 来源材料显示，Gumloop 的AI 商业动作涉及销售和收入团队流程。"
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "Gumloop"

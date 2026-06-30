@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "来源材料显示，True 的AI 商业动作涉及模型部署和算力调用。"
+  source_excerpt: "## 原文要点 - 来源材料显示，True 的AI 商业动作涉及模型部署和算力调用。"
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "True"

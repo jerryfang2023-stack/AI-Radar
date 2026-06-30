@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in SITE-V3.3.8.6 Cross-Lane Release Gate Hardening.
+WaveSight AI is now in SITE-V3.3.8.7 Report Center Monthly Release.
 
 ## Current Positioning
 
@@ -20,15 +20,15 @@ WaveSight AI is now in SITE-V3.3.8.6 Cross-Lane Release Gate Hardening.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
-- SITE-V3.3.8.6 keeps the unified frontstage, preserves the SITE-V3.3.8.5 Community Intelligence / First-Line Viewpoints supervision hardening, and adds the Business Signals Pool/Core release gate: Raw shortfall from provider quota or temporary outage is diagnostic when Pool, routed Pool, usable Core Pool, non-large Core Pool, and Top10 supply are sufficient.
-- Current column versions: Business Signals `BSIG-V1.1.4-pool-core-release-gate`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Intelligence Map `IMAP-V1.2.0-opportunity-radar`.
+- SITE-V3.3.8.7 keeps the unified frontstage and SITE-V3.3.8.6 release-gate hardening, then upgrades Intelligence Map into a Reports Center with Weekly and Monthly report subcolumns plus full monthly report detail pages.
+- Current column versions: Business Signals `BSIG-V1.1.4-pool-core-release-gate`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Intelligence Map `IMAP-V1.3.0-report-center-monthly`.
 
 ## Current Entries
 
 | Entry | File | Role |
 |---|---|---|
 | Business Signals | `01-SiteV2/site/v3-data-observation.html` | Main V3.3 frontstage for daily Cards, relationship graph, trend candidates, and the 企业AI化 secondary lens |
-| Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph, source-backed opportunity radar, intelligence map entry, and weekly report subcolumn |
+| Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph, source-backed opportunity radar, intelligence map entry, and Reports Center with Weekly / Monthly report subcolumns |
 | First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoint page merged into V3.3 |
 | Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community-sourced cases, AI tool tactics, commercial opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Operations backend and production-chain dashboard |
@@ -83,7 +83,7 @@ Old V2 pages are retired. If old rules conflict with V3.3, remove or rebuild the
 3. Run Community Intelligence through its local logged-in collection lane and independent GitHub publish PR lane.
 4. Keep Intelligence Map and Dashboard aligned with the Business Signals data chain.
    - Intelligence Map opportunity radar updates weekly from source-backed `opportunity_signals`, not old `formal_tags`.
-   - Weekly report content must be sourced from `01-SiteV2/content/08-report/` for future generated issues.
+   - Weekly report content must be sourced from `01-SiteV2/content/08-report/`; monthly report content must be sourced from `01-SiteV2/content/08-report/monthly/`.
 5. Persist each producing lane through its own commit / PR boundary.
 6. Publish the site only after merged changes reach `main` and GitHub Pages runs.
 7. Sync merged assets to local Obsidian when the local machine is online.

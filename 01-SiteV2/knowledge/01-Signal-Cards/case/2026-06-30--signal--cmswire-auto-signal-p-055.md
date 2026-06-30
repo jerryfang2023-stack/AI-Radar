@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Zendesk 在 Relate 2026 发布自主服务劳动力 Zendesk Unveils Autonomous Service Workforce at Relate 2026 原始来源标题显示：Zendesk 在 Relate 2026 发布自主服务劳动力。"
+  source_excerpt: "Zendesk 在 Relate 2026 发布自主服务劳动力 Zendesk Unveils Autonomous Service Workforce at Relate 2026 Zendesk replaces deflection bots with specialized AI agents at Relate 2026."
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "Cmswire"

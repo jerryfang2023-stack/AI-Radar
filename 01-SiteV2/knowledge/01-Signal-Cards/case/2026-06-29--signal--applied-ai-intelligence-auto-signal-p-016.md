@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["customer_deployment"]
+  business_action: []
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration"]
-  adoption_evidence: ["pilot_or_poc"]
+  pain_or_constraint: []
+  adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Future Works：应用型 AI 智能 Applied AI Intelligence - Future Works 来源材料显示，Applied AI Intelligence 的AI 商业动作涉及销售和收入团队流程。"
-  missing_fields: ["product_form", "delivery_model"]
+  source_excerpt: "Future Works：应用型 AI 智能 Applied AI Intelligence - Future Works # Future Works：应用型 AI 智能 ## 新闻事实 来源材料显示，Applied AI Intelligence 的AI 商业动作涉及销售和收入团队流程。"
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Applied AI Intelligence"
 

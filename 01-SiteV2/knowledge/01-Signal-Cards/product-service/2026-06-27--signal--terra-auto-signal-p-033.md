@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["customer_metric"]
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "OpenAI unveils GPT-5.6 amid US AI regulatory drama OpenAI unveils GPT-5.6 amid US AI regulatory drama 来源材料显示，Terra 的产品或平台动作涉及模型部署和算力调用；原文同时出现 5.6 m 等数字。"
+  source_excerpt: "# OpenAI unveils GPT-5.6 amid US AI regulatory drama ## 新闻事实 来源材料显示，Terra 的产品或平台动作涉及模型部署和算力调用；原文同时出现 5.6 m 等数字。"
   missing_fields: ["specific_task", "product_form", "delivery_model"]
 
 signal_owner: "Terra"

@@ -47,11 +47,11 @@ opportunity_signals:
   business_action: ["funding_round", "partnership_integration"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration"]
+  pain_or_constraint: []
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Former Coatue Partner 为 AI Agent 初创公司完成 6500 万美元种子轮融资 Former Coatue Partner Raises $65M Seed for AI Agent Startup | The Tech Buzz 来源材料显示，Former Coatue Partner 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 $65M、$65M 等数字。"
+  source_excerpt: "Former Coatue Partner 为 AI Agent 初创公司完成 6500 万美元种子轮融资 Former Coatue Partner Raises $65M Seed for AI Agent Startup | The Tech Buzz # Former Coatue Partner 为 AI Agent 初创公司完成 6500 万美元种子轮融资 ## 新闻事实 来源材料显示，Former Coatue Part..."
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Former Coatue Partner"

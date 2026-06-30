@@ -42,16 +42,16 @@ formal_tags:
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["finance_team", "healthcare_provider", "enterprise_ai_owner"]
-  team_or_function: ["finance", "healthcare_operations"]
+  team_or_function: ["finance", "healthcare_operations", "it_security"]
   specific_task: ["medical_documentation"]
-  business_action: ["customer_deployment"]
+  business_action: ["customer_deployment", "governance_requirement"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["case_study", "enterprise_plan"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "原文称，Financial deployment is both modest and growing."
+  source_excerpt: "/ query=enterprise AI deployment industry workflow customer story 2026 / intent=find_customer_case / path=industry_landing Foundation Executive Summary Utilities stand at an inflection point."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "AI Transition for Utilities"

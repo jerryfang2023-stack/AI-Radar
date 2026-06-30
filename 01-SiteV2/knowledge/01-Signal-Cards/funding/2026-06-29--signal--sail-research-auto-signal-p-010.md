@@ -43,7 +43,7 @@ opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["sales_team"]
   team_or_function: ["sales"]
-  specific_task: ["sales_lead_research"]
+  specific_task: ["sales_briefing"]
   business_action: ["funding_round", "customer_deployment", "research_benchmark"]
   product_form: []
   delivery_model: []
@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Sail Research 获得 8000 万美元融资，建设 AI Agent 高效基础设施 Sail Research Raises $80 Million to Build Max-Efficiency Infrastructure for AI Agents 原始来源标题显示：Sail Research 获得 8000 万美元融资，建设 AI Agent 高效基础设施。"
+  source_excerpt: "Sail Research 获得 8000 万美元融资，建设 AI Agent 高效基础设施 Sail Research Raises $80 Million to Build Max-Efficiency Infrastructure for AI Agents Sail Research Raises $80 Million to Build Max-Efficiency Infrastructure for AI Agents ..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Sail Research"

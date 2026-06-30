@@ -45,14 +45,14 @@ opportunity_signals:
   team_or_function: []
   specific_task: []
   business_action: ["procurement_signal"]
-  product_form: ["workflow_automation"]
-  delivery_model: []
+  product_form: ["workflow_automation", "managed_service"]
+  delivery_model: ["managed_service"]
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["customer_metric", "procurement_contract"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "How Petrobras 记录企业应用场景：采购下单流程 How Petrobras Uses AI for How Petrobras Uses Generative AI to Uncover $120M in Tax Savings | Applied 来源材料显示，How Petrobras 的AI 商业动作涉及采购下单流程；原文同时出现 $120 m 等数字。"
-  missing_fields: ["specific_task", "delivery_model"]
+  source_excerpt: "How Petrobras 记录企业应用场景：采购下单流程 How Petrobras Uses AI for How Petrobras Uses Generative AI to Uncover $120M in Tax Savings | Applied Petrobras applied generative AI and intelligent automation to its tax department, feedin..."
+  missing_fields: ["specific_task"]
 
 signal_owner: "How Petrobras"
 

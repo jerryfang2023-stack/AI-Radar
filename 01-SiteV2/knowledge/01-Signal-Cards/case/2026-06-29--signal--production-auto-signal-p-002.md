@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["finance_team", "enterprise_ai_owner", "it_security_team"]
-  team_or_function: ["finance", "it_security"]
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
+  team_or_function: ["it_security"]
   specific_task: []
   business_action: ["customer_deployment", "governance_requirement"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "security_compliance"]
-  adoption_evidence: ["customer_metric", "enterprise_plan"]
+  pain_or_constraint: ["security_compliance"]
+  adoption_evidence: ["enterprise_plan"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Stripe 金融合规生产级 AI Agent 经验 Production-grade AI agents for financial compliance: Lessons from Stripe | Artificial Intelligence 来源材料显示，Production 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 $1.4 等数字。"
+  source_excerpt: "Stripe 金融合规生产级 AI Agent 经验 Production-grade AI agents for financial compliance: Lessons from Stripe | Artificial Intelligence # Stripe 金融合规生产级 AI Agent 经验 ## 新闻事实 来源材料显示，Production 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 $1.4 等数字。"
   missing_fields: ["specific_task", "product_form", "delivery_model"]
 
 signal_owner: "Production"

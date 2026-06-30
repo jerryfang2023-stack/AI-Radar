@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["customer_metric", "partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Infosys / Sentara宣布与 Sentara 达成战略合作，建设可扩展的 AI 驱动转型基础，并改善企业流程效率与服务体验。"
+  source_excerpt: "Infosys 与 Sentara 合作推动医疗服务中的企业 AI 应用 Infosys Collaborates with Sentara to Unlock AI Value and Scale Enterprise AI Adoption in Healthcare Services BENGALURU, India and NORFOLK, Va., June 24, 2026 /PRNewswire/ -- Infosys(..."
   missing_fields: ["product_form"]
 
 signal_owner: "Infosys / Sentara"

@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["case_study"]
   source_evidence_type: ["technical_blog", "first_party_case"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "GitHub case study: Enhancing customer support with AI GitHub case study: Enhancing customer support with AI 来源材料显示，GitHub case study 的AI 商业动作涉及销售和收入团队流程；原文同时出现 60%、7 m 等数字。"
+  source_excerpt: "GitHub case study: Enhancing customer support with AI GitHub case study: Enhancing customer support with AI Since the general availability of our AI assistant in GitHub's support portal in February 2024, 60% of the case..."
   missing_fields: ["delivery_model"]
 
 signal_owner: "GitHub case study"

@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["customer_metric", "deployment_scale", "procurement_contract"]
   source_evidence_type: ["regulatory_or_procurement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心 How Sanofi Built an Enterprise Process Mining Center of Excellence with AI and Snowflake 原始来源标题显示：Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心。"
+  source_excerpt: "Sanofi 如何用 AI 和 Snowflake 建立企业流程挖掘卓越中心 How Sanofi Built an Enterprise Process Mining Center of Excellence with AI and Snowflake Sanofi built an enterprise-wide process mining Center of Excellence using QPR Software’s QP..."
   missing_fields: ["delivery_model"]
 
 signal_owner: "Qpr"

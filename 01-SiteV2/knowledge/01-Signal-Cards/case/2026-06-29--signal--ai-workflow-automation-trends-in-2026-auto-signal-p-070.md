@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "customer_support_team", "engineering_team"]
-  team_or_function: ["sales", "customer_support", "engineering"]
-  specific_task: ["sales_lead_research", "customer_ticket_triage", "internal_tool_building"]
-  business_action: ["procurement_signal", "governance_requirement"]
+  buyer_or_user: ["sales_team", "customer_support_team", "operations_team"]
+  team_or_function: ["sales", "customer_support", "operations"]
+  specific_task: ["sales_lead_research", "customer_ticket_triage", "logistics_coordination"]
+  business_action: []
   product_form: ["workflow_automation"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "security_compliance"]
-  adoption_evidence: ["procurement_contract"]
-  source_evidence_type: ["regulatory_or_procurement"]
+  pain_or_constraint: ["workflow_integration"]
+  adoption_evidence: []
+  source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "2026 年 AI 工作流自动化趋势 AI Workflow Automation Trends in 2026: 10 Trends Shaping the Future of Work 来源材料显示，AI Workflow Automation Trends in 2026 的AI 商业动作涉及物流订单和邮件处理流程。"
-  missing_fields: ["delivery_model"]
+  source_excerpt: "2026 年 AI 工作流自动化趋势 AI Workflow Automation Trends in 2026: 10 Trends Shaping the Future of Work # 2026 年 AI 工作流自动化趋势 ## 新闻事实 来源材料显示，AI Workflow Automation Trends in 2026 的AI 商业动作涉及物流订单和邮件处理流程。"
+  missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "AI Workflow Automation Trends in 2026"
 

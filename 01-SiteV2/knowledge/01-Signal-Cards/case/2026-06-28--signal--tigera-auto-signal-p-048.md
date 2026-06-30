@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "What's new in Calico: Spring 2026 Release What&#8217;s new in Calico: Spring 2026 Release 来源材料显示，Tigera 的产品或平台动作涉及企业智能体协作流程。"
+  source_excerpt: "It’s gone from running a couple of containerized microservices to orchestrating fleets of production workloads spanning everything from AI agents to full scale VMs..."
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Tigera"

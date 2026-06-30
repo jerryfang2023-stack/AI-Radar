@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale", "third_party_report"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "AI Inference Explained: How Models Generate Outputs at Scale AI Inference Explained: How Models Generate Outputs at Scale 来源材料显示，AI Inference Explained 的AI 商业动作涉及地产开发和建筑设计流程。"
+  source_excerpt: "How can enterprises reduce inference cost?"
   missing_fields: ["specific_task", "product_form", "delivery_model"]
 
 signal_owner: "AI Inference Explained"

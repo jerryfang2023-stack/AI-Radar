@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "From pledge to practice: Building a more inclusive open source ecosystem From pledge to practice: Building a more inclusive open source ecosystem 来源材料显示，From pledge to practice 的AI 商业动作涉及地产开发和建筑设计流程。"
+  source_excerpt: "# From pledge to practice: Building a more inclusive open source ecosystem ## 新闻事实 来源材料显示，From pledge to practice 的AI 商业动作涉及地产开发和建筑设计流程。"
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "From pledge to practice"

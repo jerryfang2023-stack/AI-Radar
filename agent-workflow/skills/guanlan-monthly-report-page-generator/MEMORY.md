@@ -1,0 +1,9 @@
+# Monthly Report Page Generator Memory
+
+## 2026-06-30
+
+- User preference: monthly detail pages must present the full report content, not a short overview. Use multiple forms such as trend charts, radar/bar charts, matrices, designed tables, longform blocks, and cards.
+- User preference: nonessential fields such as data boundary, source scope, method notes, and evidence boundary should be compressed into a final appendix unless they are necessary for first-screen judgment.
+- User preference: monthly report body needs comfortable reading design: clear hierarchy, title ornaments, symbols, side numbering, paragraph rhythm, and visual distinction between primary judgment and supporting detail.
+- User preference: all tables need editorial styling with better color, font weight, row bands, first-column emphasis, and mobile readability. Raw dense table grids are not acceptable.
+- User preference: report center should contain weekly and monthly as separate subcolumns; avoid redundant `报告中心` buttons when the section already represents reports.

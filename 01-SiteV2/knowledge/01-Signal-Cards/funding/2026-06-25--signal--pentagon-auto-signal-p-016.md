@@ -49,7 +49,7 @@ opportunity_signals:
   delivery_model: []
   pain_or_constraint: ["workflow_integration", "api_cost_spike", "latency_sensitive"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "business_media"]
+  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "It just raised $30 million Exclusive: Vinod Khosla wanted every dollar of Runlayer's round."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]

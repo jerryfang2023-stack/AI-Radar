@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Netris raises $15M Series A from a16z to help AI neoclouds go live faster Netris raises $15M Series A from a16z to help AI neoclouds go live faster 来源材料显示，Netris 的产品或平台动作涉及销售和收入团队流程。"
+  source_excerpt: "Close Image Credits: YASUYOSHI CHIBA/AFP / Getty Images AI Netris raises $15M Series A from a16z to help AI neoclouds go live faster Ram Iyer 7:55 AM PDT · June 25, 2026 The AI boom has encouraged everyone and their unc..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Netris"

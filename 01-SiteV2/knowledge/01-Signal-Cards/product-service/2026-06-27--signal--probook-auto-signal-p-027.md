@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Probook Raises $40M from Andreessen Horowitz and Sequoia to Probook Raises $40M from Andreessen Horowitz and Sequoia to 来源材料显示，Probook 的融资或资金流向涉及企业智能体协作流程；原文同时出现 $40M、$40M 等数字。"
+  source_excerpt: "/ query=vertical AI startup funding enterprise agents announced 2026 / intent=find_startups / path=capital_startup Accessibility: Skip TopNav Probook Raises $40M from Andreessen Horowitz and Sequoia to Scale the AI Oper..."
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "Probook"

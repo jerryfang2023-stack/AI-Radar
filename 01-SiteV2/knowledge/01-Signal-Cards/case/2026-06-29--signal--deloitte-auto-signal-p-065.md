@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "procurement_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "procurement"]
-  specific_task: ["sales_lead_research", "rfp_response"]
-  business_action: ["customer_deployment", "procurement_signal"]
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
+  business_action: ["customer_deployment"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration", "context_management"]
-  adoption_evidence: ["procurement_contract", "third_party_report"]
-  source_evidence_type: ["industry_report", "regulatory_or_procurement"]
+  adoption_evidence: ["third_party_report"]
+  source_evidence_type: ["industry_report"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Deloitte：2026 年企业 AI 状态报告 The State of AI in the Enterprise - 2026 AI report | Deloitte Global 来源材料显示，Deloitte 的AI 商业动作涉及销售和收入团队流程。"
+  source_excerpt: "Deloitte：2026 年企业 AI 状态报告 The State of AI in the Enterprise - 2026 AI report | Deloitte Global # Deloitte：2026 年企业 AI 状态报告 ## 新闻事实 来源材料显示，Deloitte 的AI 商业动作涉及销售和收入团队流程。"
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Deloitte"

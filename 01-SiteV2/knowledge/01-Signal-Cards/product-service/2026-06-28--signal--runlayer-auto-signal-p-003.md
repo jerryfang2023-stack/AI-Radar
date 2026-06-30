@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["named_customer"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Runlayer Raises $30M Series A to Help Enterprises Go All In On AI Runlayer Raises $30M Series A to Help Enterprises Go All In On AI NEW YORK 获得 $30 m Series A 融资。"
+  source_excerpt: "This brings Runlayer's total capital raised to $42 million."
   missing_fields: ["product_form"]
 
 signal_owner: "Runlayer"

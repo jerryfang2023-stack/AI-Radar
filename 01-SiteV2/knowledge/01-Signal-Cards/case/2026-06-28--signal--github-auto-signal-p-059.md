@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "GitHub 相关案例材料记录了客户、流程或结果信息。"
+  source_excerpt: "## 价值描述 GitHub 的案例信号可用于观察 AI 是否已经进入 企业智能体协作流程，以及后续是否出现客户、流程或结果指标。"
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "GitHub"

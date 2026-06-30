@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "engineering"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
+  specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["business_media"]
+  source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Salesforce：2026 年 AI Agent 演进的 8 种方式 8 Ways AI Agents Are Evolving in 2026 - Salesforce 来源材料显示，8 Ways AI Agents Are Evolving in 2026 的AI 商业动作涉及销售和收入团队流程。"
+  source_excerpt: "Salesforce：2026 年 AI Agent 演进的 8 种方式 8 Ways AI Agents Are Evolving in 2026 - Salesforce # Salesforce：2026 年 AI Agent 演进的 8 种方式 ## 新闻事实 来源材料显示，8 Ways AI Agents Are Evolving in 2026 的AI 商业动作涉及销售和收入团队流程。"
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "8 Ways AI Agents Are Evolving in 2026"

@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Techcrunch 记录企业应用场景：地产开发和建筑设计流程 Why enterprise AI will be a major focus at VivaTech 2026 来源材料显示，Techcrunch 的AI 商业动作涉及地产开发和建筑设计流程。"
+  source_excerpt: "Techcrunch 记录企业应用场景：地产开发和建筑设计流程 Why enterprise AI will be a major focus at VivaTech 2026 live in Paris and ..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Techcrunch"

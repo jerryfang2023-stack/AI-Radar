@@ -44,7 +44,7 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
   team_or_function: ["it_security"]
   specific_task: []
-  business_action: ["customer_deployment", "product_launch", "governance_requirement"]
+  business_action: ["customer_deployment", "product_launch", "research_benchmark", "governance_requirement"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration", "latency_sensitive", "evaluation_gap"]

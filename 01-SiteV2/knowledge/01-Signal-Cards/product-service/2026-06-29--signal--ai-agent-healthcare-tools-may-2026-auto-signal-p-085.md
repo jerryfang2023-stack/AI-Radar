@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "healthcare_provider", "insurance_team"]
-  team_or_function: ["sales", "healthcare_operations", "insurance_operations"]
-  specific_task: ["sales_lead_research", "medical_documentation", "insurance_claim_review"]
+  buyer_or_user: ["sales_team", "healthcare_provider", "enterprise_ai_owner"]
+  team_or_function: ["sales", "healthcare_operations"]
+  specific_task: ["sales_lead_research", "medical_documentation"]
   business_action: []
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "permission_boundary"]
+  pain_or_constraint: []
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "2026 年 5 月 AI Agent 医疗工具 AI Agent Healthcare Tools (May 2026) 来源材料显示，AI Agent Healthcare Tools (May 2026) 的AI 商业动作涉及销售和收入团队流程。"
+  source_excerpt: "2026 年 5 月 AI Agent 医疗工具 AI Agent Healthcare Tools (May 2026) # 2026 年 5 月 AI Agent 医疗工具 ## 新闻事实 来源材料显示，AI Agent Healthcare Tools (May 2026) 的AI 商业动作涉及销售和收入团队流程。"
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "AI Agent Healthcare Tools (May 2026)"

@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Getting more from each token: How Copilot improves context handling and model routing Getting more from each token: How Copilot improves context handling and model routing 来源材料显示，Getting more from each token 的AI 商业动作涉及模..."
+  source_excerpt: "Getting more from each token: How Copilot improves context handling and model routing Getting more from each token: How Copilot improves context handling and model routing How GitHub Copilot is making more of each sessi..."
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "Getting more from each token"

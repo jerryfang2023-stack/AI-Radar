@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune 来源材料显示，Seltz 的融..."
+  source_excerpt: "Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round Exclusive: Seltz, a startup trying to reinvent web search for AI agents, raises $12.5 seed round | Fortune Exclusive: Selt..."
   missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "Seltz"

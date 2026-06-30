@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Databricks 发布 Genie One：面向每个团队的智能协作 Agent Databricks Launches Genie One: All-New Agentic Coworker for Every Team - Databricks 原始来源标题显示：Databricks 发布 Genie One：面向每个团队的智能协作 Agent。"
+  source_excerpt: "Databricks 发布 Genie One：面向每个团队的智能协作 Agent Databricks Launches Genie One: All-New Agentic Coworker for Every Team - Databricks Databricks Launches Genie One: All-New Agentic Cowork ..."
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "Databricks"

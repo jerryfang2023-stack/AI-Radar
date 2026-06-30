@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "GitHub’s COO Explains Why AI Hasn’t Replaced Developers GitHub’s COO Explains Why AI Hasn’t Replaced Developers 来源材料显示，Spotify 的产品或平台动作涉及企业智能体协作流程；原文同时出现 1 b、14 b 等数字。"
+  source_excerpt: "This year, Kyle Daigle expects that number to exceed 14 billion, a two-component explosion caused by more humans—and their agents—issuing pull requests."
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "Spotify"

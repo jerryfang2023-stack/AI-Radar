@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner", "it_security_team"]
-  team_or_function: ["sales", "it_security"]
+  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  team_or_function: ["sales"]
   specific_task: ["sales_lead_research", "knowledge_base_qa"]
-  business_action: ["customer_deployment", "governance_requirement"]
+  business_action: ["customer_deployment"]
   product_form: ["rag_knowledge_base"]
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "2026 年企业 RAG 平台买方指南 Best Enterprise RAG Platforms for 2026: A Buyer's Guide - Onyx AI 来源材料显示，Best Enterprise RAG Platforms for 2026 的产品或平台动作涉及销售和收入团队流程。"
+  source_excerpt: "2026 年企业 RAG 平台买方指南 Best Enterprise RAG Platforms for 2026: A Buyer's Guide - Onyx AI # 2026 年企业 RAG 平台买方指南 ## 新闻事实 来源材料显示，Best Enterprise RAG Platforms for 2026 的产品或平台动作涉及销售和收入团队流程。"
   missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "Best Enterprise RAG Platforms for 2026"

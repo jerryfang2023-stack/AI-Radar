@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["funding_round", "partnership_integration"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: []
+  pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"

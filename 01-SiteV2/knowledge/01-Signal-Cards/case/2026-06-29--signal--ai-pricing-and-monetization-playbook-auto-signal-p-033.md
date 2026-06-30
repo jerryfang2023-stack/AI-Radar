@@ -41,17 +41,17 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment", "pricing_change"]
   product_form: []
-  delivery_model: ["api_usage_based", "template_pack"]
-  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  delivery_model: ["template_pack"]
+  pain_or_constraint: ["api_cost_spike"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Bessemer：AI 定价与商业化手册 The AI pricing and monetization playbook - Bessemer Venture Partners 来源材料显示，AI pricing and monetization playbook 的客户部署或应用案例涉及销售和收入团队流程。"
+  source_excerpt: "Bessemer：AI 定价与商业化手册 The AI pricing and monetization playbook - Bessemer Venture Partners # Bessemer：AI 定价与商业化手册 ## 新闻事实 来源材料显示，AI pricing and monetization playbook 的客户部署或应用案例涉及销售和收入团队流程。"
   missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "AI pricing and monetization playbook"

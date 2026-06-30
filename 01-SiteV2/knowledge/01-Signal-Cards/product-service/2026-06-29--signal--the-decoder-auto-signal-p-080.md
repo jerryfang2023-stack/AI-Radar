@@ -44,14 +44,14 @@ opportunity_signals:
   buyer_or_user: ["sales_team", "enterprise_ai_owner"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["funding_round", "product_launch"]
+  business_action: ["funding_round"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["latency_sensitive"]
+  pain_or_constraint: []
   adoption_evidence: []
   source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "自动化岗位相关公司资助 10 亿美元再培训计划 The companies most likely to automate your job are now funding a $1 billion program to retrain you 来源材料显示，The-Decoder 的融资或资金流向涉及企业智能体协作流程；原文同时出现 $1 b 等数字。"
+  source_excerpt: "自动化岗位相关公司资助 10 亿美元再培训计划 The companies most likely to automate your job are now funding a $1 billion program to retrain you # 自动化岗位相关公司资助 10 亿美元再培训计划 ## 新闻事实 来源材料显示，The-Decoder 的融资或资金流向涉及企业智能体协作流程；原文同时出现 $1 b 等数字。"
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "The-Decoder"

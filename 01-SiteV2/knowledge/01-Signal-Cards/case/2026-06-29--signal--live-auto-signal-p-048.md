@@ -44,14 +44,14 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["customer_deployment", "product_launch"]
+  business_action: ["customer_deployment"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["latency_sensitive"]
+  pain_or_constraint: []
   adoption_evidence: []
-  source_evidence_type: ["first_party_announcement", "business_media"]
+  source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Microsoft Build 2026 新闻集 AI 回顾 Microsoft Build 2026 Book of News — AI Recap | A Guide to Cloud & AI 来源材料显示，Live 的产品或平台动作涉及模型部署和算力调用；原文同时出现 2026 B 等数字。"
+  source_excerpt: "Microsoft Build 2026 新闻集 AI 回顾 Microsoft Build 2026 Book of News — AI Recap | A Guide to Cloud & AI # Microsoft Build 2026 新闻集 AI 回顾 ## 新闻事实 来源材料显示，Live 的产品或平台动作涉及模型部署和算力调用；原文同时出现 2026 B 等数字。"
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Live"

@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "The Corporate AI Learning Curve Is Flatlining - Paid Program The Corporate AI Learning Curve Is Flatlining - Paid Program 来源材料显示，Corporate AI Learning Curve Is Flatlining 的客户部署或应用案例涉及销售和收入团队流程。"
+  source_excerpt: "And nowhere is that promise more compelling than in customer service."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Corporate AI Learning Curve Is Flatlining"

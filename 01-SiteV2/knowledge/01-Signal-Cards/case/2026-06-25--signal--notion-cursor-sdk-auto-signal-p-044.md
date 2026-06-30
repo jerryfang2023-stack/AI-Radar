@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale", "partnership_announcement"]
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "来源材料显示，Notion 使用 Cursor SDK 嵌入编码智能体 的产品或平台动作涉及地产开发和建筑设计流程。"
+  source_excerpt: "Notion stood up this integration in just a few weeks using the Cursor SDK , letting them embed coding agents into their product without having to build and maintain the entire agent themselves."
   missing_fields: []
 
 signal_owner: "Notion 使用 Cursor SDK 嵌入编码智能体"

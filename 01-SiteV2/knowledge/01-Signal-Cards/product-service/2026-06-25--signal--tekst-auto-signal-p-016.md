@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Why we raised $13.5M to define Process Intelligence for the Agentic Era Why we raised $13.5M to define Process Intelligence for the Agentic Era Today we're announcing that Tekst 获得 $13.5 m Series A 融资。"
+  source_excerpt: "Why we raised $13.5M to define Process Intelligence for the Agentic Era Why we raised $13.5M to define Process Intelligence for the Agentic Era Today we're announcing that Tekst has raised $13.5 million in a Series A ro..."
   missing_fields: ["product_form", "adoption_evidence"]
 
 signal_owner: "Tekst"

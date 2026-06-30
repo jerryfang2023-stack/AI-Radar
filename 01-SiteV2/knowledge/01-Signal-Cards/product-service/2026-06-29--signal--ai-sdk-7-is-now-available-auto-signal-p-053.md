@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Vercel 发布 AI SDK 7 AI SDK 7 is now available - Vercel 原始来源标题显示：Vercel 发布 AI SDK 7。"
+  source_excerpt: "Vercel 发布 AI SDK 7 AI SDK 7 is now available - Vercel # AI SDK 7 is now available ..."
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "AI SDK 7 is now available"

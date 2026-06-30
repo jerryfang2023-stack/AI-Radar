@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "AI SDK 7 is now available - Vercel AI SDK 7 is now available - Vercel 来源材料显示，AI SDK 7 is now available 的产品或平台动作涉及地产开发和建筑设计流程；原文同时出现 16 m 等数字。"
+  source_excerpt: "AI SDK, with over 16 million weekly downloads, is the TypeScript SDK for building AI applications, features, frameworks, and agents across any model provider."
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "AI SDK 7 is now available"

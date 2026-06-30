@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "insurance_team", "operations_team"]
-  team_or_function: ["engineering", "insurance_operations", "operations"]
-  specific_task: ["internal_tool_building", "insurance_claim_review", "logistics_coordination"]
-  business_action: ["customer_deployment", "pricing_change", "research_benchmark"]
+  buyer_or_user: ["insurance_team", "operations_team", "enterprise_ai_owner"]
+  team_or_function: ["insurance_operations", "operations"]
+  specific_task: ["insurance_claim_review", "logistics_coordination"]
+  business_action: ["customer_deployment", "pricing_change"]
   product_form: ["vertical_saas"]
   delivery_model: []
-  pain_or_constraint: ["api_cost_spike", "context_management"]
-  adoption_evidence: ["third_party_report"]
+  pain_or_constraint: ["api_cost_spike"]
+  adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "2026 年保险公司 AI 成本、规则与路线图 AI for Insurance Companies: 2026 Costs, Rules and Roadmap 来源材料显示，AI for Insurance Companies 的AI 商业动作涉及物流订单和邮件处理流程；原文同时出现 80%、58% 等数字。"
-  missing_fields: ["delivery_model"]
+  source_excerpt: "2026 年保险公司 AI 成本、规则与路线图 AI for Insurance Companies: 2026 Costs, Rules and Roadmap # 2026 年保险公司 AI 成本、规则与路线图 ## 新闻事实 来源材料显示，AI for Insurance Companies 的AI 商业动作涉及物流订单和邮件处理流程；原文同时出现 80%、58% 等数字。"
+  missing_fields: ["adoption_evidence", "delivery_model"]
 
 signal_owner: "AI for Insurance Companies"
 

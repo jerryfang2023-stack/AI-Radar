@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "JustAI 获得$17M 融资，用于企业 Agent 协作平台 JustAI Raises $17M Series A to Build an Agentic Marketing Platform 来源材料显示，JustAI 的融资或资金流向涉及企业智能体协作流程；原文同时出现 $17M 等数字。"
+  source_excerpt: "JustAI 获得$17M 融资，用于企业 Agent 协作平台 JustAI Raises $17M Series A to Build an Agentic Marketing Platform JustAI Raises $17M Series A to Build an Agentic Marketing Platform Accessibility Statement Skip Navigation ..."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "JustAI"

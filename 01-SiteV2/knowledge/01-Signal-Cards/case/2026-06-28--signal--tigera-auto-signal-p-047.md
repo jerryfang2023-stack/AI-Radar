@@ -44,14 +44,14 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
   team_or_function: ["it_security"]
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "governance_requirement"]
+  business_action: ["customer_deployment", "governance_requirement"]
   product_form: ["api"]
   delivery_model: ["api_usage_based"]
   pain_or_constraint: ["permission_boundary", "security_compliance"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news"]
+  source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform 来源材料显示，Tigera 的客户部署或应用案例涉及企业智能体协作流程。"
+  source_excerpt: "Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform Five Principles of an Accountable AI Agent Network: How to Evaluate Any Governance Platform The first post in this series argue..."
   missing_fields: ["specific_task", "adoption_evidence"]
 
 signal_owner: "Tigera"

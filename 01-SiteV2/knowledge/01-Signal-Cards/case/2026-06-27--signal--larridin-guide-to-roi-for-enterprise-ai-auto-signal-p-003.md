@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "来源材料显示，Larridin Guide to ROI for Enterprise AI 的AI 商业动作涉及企业智能体协作流程。"
+  source_excerpt: "/ query=enterprise AI transformation production rollout customer deployment / intent=find_original_source / path=capital_startup The board wants a number."
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Larridin Guide to ROI for Enterprise AI"

@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: ["technical_blog", "first_party_announcement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "CData 发布 Connect AI 开发者版、Python SDK 和 CLI CData Launches Connect AI Developer Edition, Python SDK, and CLI 原始来源标题显示：CData 发布 Connect AI 开发者版、Python SDK 和 CLI。"
+  source_excerpt: "CData 发布 Connect AI 开发者版、Python SDK 和 CLI CData Launches Connect AI Developer Edition, Python SDK, and CLI June 24, 2026 CData Software launched three products for developers building AI applications on enterprise data:..."
   missing_fields: ["adoption_evidence"]
 
 signal_owner: "CData"

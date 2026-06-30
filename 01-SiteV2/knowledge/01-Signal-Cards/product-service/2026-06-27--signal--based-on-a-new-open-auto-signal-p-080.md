@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "来源材料显示，Based on a new open 的AI 商业动作涉及地产开发和建筑设计流程；原文同时出现 500 companies 等数字。"
+  source_excerpt: "/ query=model release inference cost reduction enterprise adoption 2026 / intent=find_original_source / path=a_media_gdelt Never miss a post from boardroom Sign up for Instagram to stay in the loop."
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "Based on a new open"

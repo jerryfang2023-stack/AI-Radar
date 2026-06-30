@@ -48,11 +48,11 @@ opportunity_signals:
   product_form: ["copilot"]
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
-  adoption_evidence: []
+  adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Dapta 评选 2026 年最佳 AI 智能体构建平台 Best AI Agent Builder Platforms in 2026 (Ranked Honestly) - Dapta 原始来源标题显示：Dapta 评选 2026 年最佳 AI 智能体构建平台。"
-  missing_fields: ["adoption_evidence", "delivery_model"]
+  source_excerpt: "Dapta 评选 2026 年最佳 AI 智能体构建平台 Best AI Agent Builder Platforms in 2026 (Ranked Honestly) - Dapta The 6 best AI agent builder platforms in 2026, ranked and honestly compared."
+  missing_fields: ["delivery_model"]
 
 signal_owner: "Dapta"
 

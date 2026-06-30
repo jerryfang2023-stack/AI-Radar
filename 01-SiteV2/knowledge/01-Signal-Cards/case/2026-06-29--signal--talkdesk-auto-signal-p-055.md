@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Talkdesk 降低客户面对型 AI 部署的不确定性 Talkdesk ends the guesswork in deploying customer-facing AI 原始来源标题显示：Talkdesk 降低客户面对型 AI 部署的不确定性。"
+  source_excerpt: "Talkdesk 降低客户面对型 AI 部署的不确定性 Talkdesk ends the guesswork in deploying customer-facing AI ## Talkdesk Agent Builder enables teams to create ..."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Talkdesk"

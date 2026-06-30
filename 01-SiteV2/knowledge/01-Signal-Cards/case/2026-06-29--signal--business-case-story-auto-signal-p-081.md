@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "customer_support_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "customer_support", "it_security"]
-  specific_task: ["sales_lead_research", "customer_ticket_triage"]
-  business_action: ["customer_deployment", "product_launch", "pricing_change", "research_benchmark"]
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment", "product_launch"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["pilot_or_poc"]
-  source_evidence_type: ["business_media"]
+  source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Cobbai：AI 支持从试点走向企业级推出的商业案例 Business Case Story: From Pilot to Enterprise Rollout for AI Support - Cobbai Blog 来源材料显示，Business Case Story 的客户部署或应用案例涉及地产开发和建筑设计流程。"
-  missing_fields: ["product_form", "delivery_model"]
+  source_excerpt: "Cobbai：AI 支持从试点走向企业级推出的商业案例 Business Case Story: From Pilot to Enterprise Rollout for AI Support - Cobbai Blog # Cobbai：AI 支持从试点走向企业级推出的商业案例 ## 新闻事实 来源材料显示，Business Case Story 的客户部署或应用案例涉及地产开发和建筑设计流程。"
+  missing_fields: ["specific_task", "product_form", "delivery_model"]
 
 signal_owner: "Business Case Story"
 

@@ -41,18 +41,18 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
-  team_or_function: ["engineering", "it_security"]
-  specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment", "pricing_change", "governance_requirement"]
-  product_form: ["evaluation_platform"]
+  buyer_or_user: ["enterprise_ai_owner"]
+  team_or_function: []
+  specific_task: []
+  business_action: ["customer_deployment"]
+  product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "security_compliance"]
+  pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "2026 年企业 AI 基础设施最佳实践 AI Infrastructure Best Practices 2026: Scalable, Secure Enterprise Guide 来源材料显示，AI Infrastructure Best Practices 2026 的AI 商业动作涉及地产开发和建筑设计流程。"
-  missing_fields: ["adoption_evidence", "delivery_model"]
+  source_excerpt: "2026 年企业 AI 基础设施最佳实践 AI Infrastructure Best Practices 2026: Scalable, Secure Enterprise Guide # 2026 年企业 AI 基础设施最佳实践 ## 新闻事实 来源材料显示，AI Infrastructure Best Practices 2026 的AI 商业动作涉及地产开发和建筑设计流程。"
+  missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "AI Infrastructure Best Practices 2026"
 

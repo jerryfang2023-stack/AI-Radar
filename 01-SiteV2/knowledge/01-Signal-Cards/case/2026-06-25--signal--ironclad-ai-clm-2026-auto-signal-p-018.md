@@ -44,14 +44,14 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "pricing_change"]
+  business_action: ["funding_round", "customer_deployment", "procurement_signal", "pricing_change"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration", "api_cost_spike", "model_routing_complexity"]
-  adoption_evidence: ["customer_metric"]
-  source_evidence_type: ["funding_news"]
+  adoption_evidence: ["customer_metric", "procurement_contract"]
+  source_evidence_type: ["funding_news", "regulatory_or_procurement"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Ironclad AI CLM 2026: Enterprise Contract Lifecycle Goes Agentic Ironclad AI CLM 2026: Enterprise Contract Lifecycle Goes Agentic | CallSphere Blog 来源材料显示，Ironclad AI CLM 2026 的融资或资金流向涉及地产开发和建筑设计流程；原文同时出现 30 days 等数字。"
+  source_excerpt: "Ironclad AI CLM 2026: Enterprise Contract Lifecycle Goes Agentic Ironclad AI CLM 2026: Enterprise Contract Lifecycle Goes Agentic | CallSphere Blog CallSphere - AI voice and chat agents for businessCallSphere."
   missing_fields: ["specific_task", "product_form", "delivery_model"]
 
 signal_owner: "Ironclad AI CLM 2026"

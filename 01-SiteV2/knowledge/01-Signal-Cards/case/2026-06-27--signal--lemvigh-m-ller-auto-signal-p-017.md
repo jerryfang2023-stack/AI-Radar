@@ -44,14 +44,14 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["customer_deployment", "procurement_signal"]
+  business_action: ["customer_deployment", "procurement_signal", "pricing_change"]
   product_form: ["workflow_automation"]
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["procurement_contract"]
   source_evidence_type: ["regulatory_or_procurement", "business_media"]
   evidence_basis: "raw_source_text"
-  source_excerpt: "Lemvigh‑Müller: AI Automates Order Confirmations Lemvigh‑Müller: AI Automates Order Confirmations | SAP News 来源材料显示，Lemvigh‑Müller 的客户部署或应用案例涉及企业智能体协作流程。"
+  source_excerpt: "Lemvigh‑Müller: AI Automates Order Confirmations Lemvigh‑Müller: AI Automates Order Confirmations | SAP News The Danish wholesaler Lemvigh‑Müller has deployed [artificial intelligence](https://news.sap.com/topics/artifi..."
   missing_fields: ["specific_task", "delivery_model"]
 
 signal_owner: "Lemvigh‑Müller"

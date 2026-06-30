@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["customer_metric", "deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "There is no Copilot without the pilots, says Slovenian insurance executive There is no Copilot without the pilots, says Slovenian insurance executive 来源材料显示，Microsoft 的AI 商业动作涉及企业智能体协作流程。"
+  source_excerpt: "There is no Copilot without the pilots, says Slovenian insurance executive There is no Copilot without the pilots, says Slovenian insurance executive The post There is no Copilot without the pilots, says Slovenian insur..."
   missing_fields: ["delivery_model"]
 
 signal_owner: "Microsoft"

@@ -51,7 +51,7 @@ opportunity_signals:
   adoption_evidence: ["pilot_or_poc"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "Scaling AI Agents Across Your Organization - MindStudio Scaling AI Agents Across Your Organization - MindStudio 来源材料显示，Scaling AI Agents Across Your Organization 的AI 商业动作涉及销售和收入团队流程。"
+  source_excerpt: "Scaling AI Agents Across Your Organization - MindStudio Scaling AI Agents Across Your Organization - MindStudio How to scale AI agents from pilot to enterprise-wide adoption."
   missing_fields: ["product_form", "delivery_model"]
 
 signal_owner: "Scaling AI Agents Across Your Organization"

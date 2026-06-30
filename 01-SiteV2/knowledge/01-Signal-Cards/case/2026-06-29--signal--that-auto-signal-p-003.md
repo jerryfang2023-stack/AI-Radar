@@ -44,15 +44,15 @@ opportunity_signals:
   buyer_or_user: ["operations_team", "enterprise_ai_owner"]
   team_or_function: ["operations"]
   specific_task: ["logistics_coordination"]
-  business_action: ["customer_deployment", "partnership_integration"]
+  business_action: ["customer_deployment"]
   product_form: []
-  delivery_model: ["project_based_service"]
+  delivery_model: []
   pain_or_constraint: ["workflow_integration"]
-  adoption_evidence: ["pilot_or_poc"]
+  adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"
-  source_excerpt: "面向初创公司和企业的 AI 开发服务 Best AI Development Services for Startups and Enterprises 来源材料显示，That 的AI 商业动作涉及物流订单和邮件处理流程。"
-  missing_fields: ["product_form"]
+  source_excerpt: "面向初创公司和企业的 AI 开发服务 Best AI Development Services for Startups and Enterprises # 面向初创公司和企业的 AI 开发服务 ## 新闻事实 来源材料显示，That 的AI 商业动作涉及物流订单和邮件处理流程。"
+  missing_fields: ["product_form", "adoption_evidence", "delivery_model"]
 
 signal_owner: "That"
 
