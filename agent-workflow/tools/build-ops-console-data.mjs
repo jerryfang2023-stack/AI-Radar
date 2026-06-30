@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const VERSION = "OPS-V1.2.0-governance-loop";
+const VERSION = "OPS-V1.2.1-skill-store-rail";
 
 const rel = (...parts) => path.join(...parts).replaceAll("\\", "/");
 const abs = (...parts) => path.join(root, ...parts);
@@ -282,6 +282,7 @@ const data = {
     { id: "tasks", label: "任务链路" },
     { id: "quality", label: "数据质量" },
     { id: "governance", label: "版本治理" },
+    { id: "skills", label: "Skill Store" },
     { id: "settings", label: "系统设置" },
   ],
   daily: {

@@ -11,7 +11,7 @@
     panel: location.hash ? location.hash.slice(1) : "overview",
     railCollapsed: localStorage.getItem("wavesight-rail-collapsed") === "1",
   };
-  const validPanels = new Set(["overview", "issues", "tasks", "quality", "governance", "settings"]);
+  const validPanels = new Set(["overview", "issues", "tasks", "quality", "governance", "skills", "settings"]);
 
   const $ = (selector, node = document) => node.querySelector(selector);
   const $$ = (selector, node = document) => Array.from(node.querySelectorAll(selector));
@@ -51,7 +51,7 @@
         return 0;
       }
     })();
-    frame.style.height = `${Math.max(640, measured + 24)}px`;
+    frame.style.height = `${Math.max(720, measured + 24)}px`;
   }
 
   function row(label, value, percent) {
@@ -134,7 +134,7 @@
           body: recurring ? `重复类别：${recurring.category}` : "本月没有明显重复类别。",
           action: recurring ? "沉淀为门禁、评估或自动化修复。" : "保持周/月复盘。",
         },
-      ].map((item) => `<article class="card"><div style="display:flex;justify-content:space-between;gap:12px;align-items:center">${statusBadge(item.status)}<span class="label">PRIMARY</span></div><div style="margin-top:14px;color:var(--blue);font-family:var(--mono);font-size:32px;font-weight:700">${html(item.value)}</div><h3 style="margin-top:6px">${html(item.title)}</h3><p>${html(item.body)}</p><div class="issue-meta"><span>${html(item.action)}</span></div></article>`).join("");
+      ].map((item) => `<article class="card"><div style="display:flex;justify-content:space-between;gap:10px;align-items:center">${statusBadge(item.status)}<span class="label">PRIMARY</span></div><div style="margin-top:10px;color:var(--blue);font-family:var(--mono);font-size:24px;font-weight:700">${html(item.value)}</div><h3 style="margin-top:5px">${html(item.title)}</h3><p>${html(item.body)}</p><div class="issue-meta"><span>${html(item.action)}</span></div></article>`).join("");
     }
     const funnel = $("[data-overview-funnel]");
     if (funnel) {
@@ -277,7 +277,7 @@
     dataStatus.classList.add("data-status-list");
     const sources = list(ops.meta?.sources);
     dataStatus.innerHTML = [
-      ["ops-console", ops.meta?.version || "OPS-V1.2.0-governance-loop"],
+      ["ops-console", ops.meta?.version || "OPS-V1.2.1-skill-store-rail"],
       ["generated", ops.meta?.generatedAt || "-"],
       ["date", ops.meta?.date || "-"],
       ["pipeline", quality.pipelineMeta?.generatedAt || pipeline.meta?.generatedAt || "-"],
