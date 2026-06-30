@@ -1,10 +1,12 @@
 {
-  "generatedAt": "2026-06-29T06:06:33.806Z",
+  "generatedAt": "2026-06-30T01:34:58.668Z",
   "stats": {
     "blogsBuilt": 6,
     "totalItems": 27,
     "sourceCount": 8,
-    "errors": []
+    "errors": [
+      "tigera-blog: HTTP 415"
+    ]
   },
   "blogs": [
     {
@@ -12,6 +14,36 @@
       "handle": "simonwillison.net",
       "bio": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "tweets": [
+        {
+          "id": "https://simonwillison.net/2026/Jun/29/html-table-extractor/#atom-everything",
+          "text": "HTML table extractor",
+          "summary": "<p><strong>Tool:</strong> <a href=\"https://tools.simonwillison.net/html-table-extractor\">HTML table extractor</a></p>\n        <p>Yet another in my growing collection of paste-conversion tools. This one accepts pasted rich text from browsers (with embedded HTML tables) and converts every detected tab",
+          "createdAt": "2026-06-29T23:38:21+00:00",
+          "url": "https://simonwillison.net/2026/Jun/29/html-table-extractor/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything",
+          "text": "Count the number of Safari tabs",
+          "summary": "<p>Tiniest TIL, using AppleScript to count the number of open browser tabs in Safari:</p>\n<pre><code>osascript -e 'tell application \"Safari\" to count tabs of every window'\n</code></pre>\n<p><img alt=\"I ran it in a terminal window and got back 370.\" src=\"https://static.simonwillison.net/static/2026/ta",
+          "createdAt": "2026-06-29T18:36:18+00:00",
+          "url": "https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
+          "id": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
+          "text": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding",
+          "summary": "<p><strong><a href=\"https://deep-reinforce.com/ornith_1_0.html\">Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding</a></strong></p>\nThis is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce.</p>\n<blockquote>\n<p>[...] with variants including 9B Dense, ",
+          "createdAt": "2026-06-29T16:17:59+00:00",
+          "url": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
         {
           "id": "https://simonwillison.net/2026/Jun/28/jon-udell/#atom-everything",
           "text": "Quoting Jon Udell",
@@ -141,26 +173,6 @@
           "likes": 0,
           "retweets": 0,
           "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
-          "text": "Prompt Injection as Role Confusion",
-          "summary": "<p><strong><a href=\"https://role-confusion.github.io\">Prompt Injection as Role Confusion</a></strong></p>\nFirst, I absolutely love this:</p>\n<blockquote>\n<p>This is a blog-style writeup of the paper.</p>\n</blockquote>\n<p>I wish <em>every paper</em> would come with one of these. Academic writing is p",
-          "createdAt": "2026-06-22T23:59:53+00:00",
-          "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything",
-          "text": "Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code",
-          "summary": "<p>This morning <a href=\"https://news.ycombinator.com/item?id=48630171\">on Hacker News</a> I saw <a href=\"https://hustvl.github.io/Moebius/\">Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance</a>, describing a small but effective inpainting model - a model where you can ",
-          "createdAt": "2026-06-22T23:43:51+00:00",
-          "url": "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
         }
       ]
     },
@@ -192,16 +204,6 @@
           "summary": "An assessment of the open ecosystem and the motivations behind releasing models",
           "createdAt": "Sun, 28 Jun 2026 17:03:07 GMT",
           "url": "https://www.interconnects.ai/p/artifacts-22-zyphra-cohere-and-poolside",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
-          "text": "GLM-5.2 is the step change for open agents",
-          "summary": "A capability threshold I've been carefully monitoring.",
-          "createdAt": "Mon, 22 Jun 2026 14:52:45 GMT",
-          "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open",
           "likes": 0,
           "retweets": 0,
           "replies": 0
@@ -241,6 +243,16 @@
       "bio": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "tweets": [
         {
+          "id": "https://tldr.tech/ai/2026-06-29",
+          "text": "GPT-5.6 preview ☀️, Grok 4.5 beta 🤖, Google limits Meta 🛑",
+          "summary": "",
+          "createdAt": "Mon, 29 Jun 2026 00:00:00 GMT",
+          "url": "https://tldr.tech/ai/2026-06-29",
+          "likes": 0,
+          "retweets": 0,
+          "replies": 0
+        },
+        {
           "id": "https://tldr.tech/ai/2026-06-26",
           "text": "US vs. OpenAI 🏛️, state of AI economy 🤖, scaling laws 📈",
           "summary": "",
@@ -266,16 +278,6 @@
           "summary": "",
           "createdAt": "Wed, 24 Jun 2026 00:00:00 GMT",
           "url": "https://tldr.tech/ai/2026-06-24",
-          "likes": 0,
-          "retweets": 0,
-          "replies": 0
-        },
-        {
-          "id": "https://tldr.tech/ai/2026-06-23",
-          "text": "SpaceX Colossus deal 🚀, GPT-5.5 Cyber launch 🛡️, Codex as workspace 🤖",
-          "summary": "",
-          "createdAt": "Tue, 23 Jun 2026 00:00:00 GMT",
-          "url": "https://tldr.tech/ai/2026-06-23",
           "likes": 0,
           "retweets": 0,
           "replies": 0
