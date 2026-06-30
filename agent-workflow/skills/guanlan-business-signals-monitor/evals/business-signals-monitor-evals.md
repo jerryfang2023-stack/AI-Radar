@@ -132,6 +132,12 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when `pending-local-change` is used only before commit / PR publication and is updated after merge if the item is marked resolved.
     - Fail when a resolved item keeps `fix_commit=pending`, mixes contradictory resolution records, or omits the gate/eval/memory/context prevention artifact for a recurring failure.
 
+27. `provider_fallback_does_not_mask_supply`
+    - Pass when RSS HTTP 415 / 429 / 5xx, Anysearch quota exhaustion, or other search-provider temporary unavailable notes are classified as recovered after Pool, routed Pool, Core Pool, non-large Core, and importance coverage gates are already satisfied.
+    - Pass when `raw_count_min` shortfall remains visible as `raw_count_release_override=pool_core_supply` instead of blocking the lane by itself.
+    - Pass when source-artifact Raw selection rotates across GDELT, keyword search, RSS, and AI HOT as peer channels instead of consuming one fixed priority channel first.
+    - Fail when a transient provider note or Raw-only shortage blocks Card / Top10 generation after Pool/Core supply and the frontstage Top10 contract are sufficient, or when provider recovery hides a true Pool/Core shortage.
+
 ## Repair Loop
 
 When a check fails, repair the earliest responsible stage and rerun the exact failed gate. If the same category repeats in weekly health, add or tighten an eval and then add a short MEMORY entry if the lesson is durable.
