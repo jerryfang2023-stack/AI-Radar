@@ -79,6 +79,13 @@ body.monthly-report-page {
   line-height: 56px;
 }
 
+.monthly-hero h1 {
+  max-width: none;
+  font-size: 34px;
+  line-height: 46px;
+  white-space: nowrap;
+}
+
 .reports-hero p:last-child,
 .monthly-hero-deck {
   max-width: 980px;
@@ -289,7 +296,7 @@ body.monthly-report-page {
 
 .monthly-hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  grid-template-columns: minmax(0, 1fr);
   gap: 26px;
   align-items: end;
 }
@@ -1057,6 +1064,7 @@ body.monthly-report-page {
   .monthly-hero h1 {
     font-size: 30px;
     line-height: 42px;
+    white-space: normal;
   }
 
   .monthly-statement {

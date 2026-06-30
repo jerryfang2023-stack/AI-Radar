@@ -7,3 +7,4 @@
 - User preference: monthly report body needs comfortable reading design: clear hierarchy, title ornaments, symbols, side numbering, paragraph rhythm, and visual distinction between primary judgment and supporting detail.
 - User preference: all tables need editorial styling with better color, font weight, row bands, first-column emphasis, and mobile readability. Raw dense table grids are not acceptable.
 - User preference: report center should contain weekly and monthly as separate subcolumns; avoid redundant `报告中心` buttons when the section already represents reports.
+- User preference: monthly detail hero should not contain small explanatory deck copy or report-type helper subtitles when the title and core statement already carry the context. Desktop titles should use enough width and tuned typography to stay on one line when practical; mobile can wrap naturally.

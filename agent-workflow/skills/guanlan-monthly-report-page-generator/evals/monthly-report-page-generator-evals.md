@@ -13,6 +13,7 @@
 3. Visual reading experience
    - Pass when longform sections have visible hierarchy, section labels, heading ornaments, and readable paragraph rhythm.
    - Pass when charts, matrices, cards, and lists are used where they clarify the report.
+   - Pass when the monthly hero is clean: no unnecessary helper subtitle, no explanatory deck copy, and the desktop title uses enough width to stay on one line when practical.
 
 4. Table readability
    - Pass when all monthly tables have designed styling, emphasized first column, restrained row bands, and readable cell spacing.
@@ -34,7 +35,7 @@
 1. Fail if the monthly detail page is a Markdown dump or summary-only page.
 2. Fail if tables use raw unstyled grid presentation.
 3. Fail if method/data-boundary blocks dominate the first viewport without user request.
-4. Fail if visible backend fields, version cards, route/debug fields, or unnecessary helper copy appear in the frontstage.
+4. Fail if visible backend fields, version cards, route/debug fields, unnecessary helper copy, or user-deleted hero helper subtitles appear in the frontstage.
 5. Fail if user-deleted elements return without explicit instruction.
 6. Fail if report-center actions duplicate each other or fight with the time-window selector.
 7. Fail if the page has horizontal overflow at 390px mobile width.

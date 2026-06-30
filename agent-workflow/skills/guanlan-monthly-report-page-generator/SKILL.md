@@ -11,7 +11,7 @@ metadata:
     upstream: "monthly report Markdown, Reports center, Intelligence Map page, Guanlan VI rules"
     downstream: "monthly report detail page, Reports center monthly entry, page styles, version metadata"
     gates: "content-source discipline, full-report rendering, Guanlan VI fit, table readability, responsive visual smoke, frontstage regression, skill self-iteration"
-    recent_learning: "Monthly detail pages must show the full report with rich visual reading structure; nonessential data-boundary fields should be compressed into the appendix, and all tables need editorial styling rather than raw grid rendering."
+    recent_learning: "Monthly detail pages must show the full report with rich visual reading structure; nonessential data-boundary fields should be compressed into the appendix, hero helper copy should be removed when the title and core statement already explain the page, and all tables need editorial styling rather than raw grid rendering."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -63,6 +63,8 @@ For detailed rules, load:
    - Render the complete report with multiple formats: longform blocks, trend chains, charts, radar/bar visuals, opportunity matrices, designed tables, lists, and appendix.
    - Keep nonessential data-boundary and method notes compressed in the appendix.
    - Make page typography comfortable: visible hierarchy, heading ornaments, numbered longform blocks, readable paragraphs, and no cramped tables.
+   - Keep the hero clean: do not add report-type helper subtitles, explanatory deck copy, or meta notes when the title and core statement already carry the page context.
+   - On desktop, give the monthly title enough width and tune typography so the accepted title can stay on one line when practical; allow natural wrapping on mobile.
 
 5. Treat tables as editorial modules.
    - Style every table for reading: clear header weight, emphasized first column, light row bands, restrained borders, status color where useful, and mobile card conversion.
@@ -83,7 +85,7 @@ For detailed rules, load:
 - The monthly page is a complete report-reading surface, not a summary card or Markdown dump.
 - Do not expose backend-only fields unless they help reader judgment; compress method/data boundary notes into an appendix.
 - Do not use raw table grids without editorial styling.
-- Do not re-add user-deleted fields, helper copy, return buttons, hero stat cards, or unnecessary navigation unless explicitly requested.
+- Do not re-add user-deleted fields, helper copy, report-type subtitles, return buttons, hero stat cards, or unnecessary navigation unless explicitly requested.
 - Do not place report-center navigation above the core intelligence-map function unless the user chooses a report-first redesign.
 
 ## Output

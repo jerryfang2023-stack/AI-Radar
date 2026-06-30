@@ -15,7 +15,9 @@ It should feel like a complete business intelligence report, not a report teaser
 ## Recommended Page Shape
 
 1. Hero
-   - Show report type, month, title, and one core judgment.
+   - Show the accepted title and one core judgment.
+   - Do not add report-type helper subtitles or explanatory deck copy when the title and core statement already explain the page.
+   - Prefer a clean, wide title line on desktop; allow natural wrapping on mobile.
    - Avoid hero stat cards unless the data is essential to the reader's first decision.
    - Keep counts and data-boundary information out of the hero unless explicitly requested.
 
