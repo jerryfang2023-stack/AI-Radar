@@ -26,4 +26,4 @@ handoff:
   next_gate: guanlan-monitor-quality-gate
 ```
 
-Why it passes: the run captures original evidence, meets V3.3.6 quantity floors, keeps HN as feedback-only discovery, leaves Pool selection buffer for routed/core evidence, and hands off to the quality gates without staging downstream Cards.
+Why it passes: the run captures original evidence, meets current quantity floors, keeps HN as feedback-only discovery, leaves Pool selection buffer for routed/core evidence, and hands off to the quality gates without staging downstream Cards.

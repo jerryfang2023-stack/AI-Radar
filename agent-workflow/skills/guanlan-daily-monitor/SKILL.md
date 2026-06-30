@@ -11,7 +11,7 @@ metadata:
     upstream: "external monitoring sources"
     downstream: "Raw / Pool outputs and daily reports"
     gates: "source capture, pool thresholds, quality gating"
-    recent_learning: "Keep workflow, dry-run, and manual monitor parameters aligned with V3.3.6 thresholds; Core Pool failures usually need better source routing, not more HN."
+    recent_learning: "Keep workflow, dry-run, and manual monitor parameters aligned with current Raw / Pool / Core thresholds; Core Pool failures usually need better source routing, not more HN."
     mirrored_in_skill_store: true
     memory_required: false
 ---

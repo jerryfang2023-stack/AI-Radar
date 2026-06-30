@@ -1,9 +1,9 @@
 ---
 name: guanlan-first-line-viewpoints-monitor
-description: Use when supervising, running, repairing, or improving the WaveSight AI V3.3.6 First-Line Viewpoints lane. Covers builders / follow-builders data refresh, Chinese translation gate, original URL and tag checks, fallback safety, Obsidian person/date timeline sync, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals, Signal Cards, relationship graph evidence, trend candidates, or Community Intelligence.
+description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.3.8.6 First-Line Viewpoints lane. Covers builders / follow-builders data refresh, Chinese translation gate, original URL and tag checks, fallback safety, Obsidian person/date timeline sync, idempotent morning/afternoon publication checks, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals, Signal Cards, relationship graph evidence, trend candidates, or Community Intelligence.
 metadata:
   guanlan:
-    version: "1.0.1"
+    version: "1.0.2"
     lane: "First-Line Viewpoints"
     status: "current lane owner"
     order: 20
@@ -123,7 +123,7 @@ If the report shows healthy feed/archive counts but a publish failure, repair th
 - Builder viewpoints are independent public viewpoints.
 - Do not write Business Signal Cards, relationship graph evidence, trend candidates, or Community Intelligence data.
 - Do not use `01-SiteV2/content/05-frontier-opinions/*` as current evidence.
-- Do not treat old `YYYY-MM.md` month files as V3.3.6 sync success.
+- Do not treat old `YYYY-MM.md` month files as current sync success.
 - Do not allow untranslated English as primary Chinese frontstage text.
 - Do not treat a report file's existence as publish success when its item count is zero or mismatched.
 - Do not let the afternoon skill lane block the morning public page when the RSS page-data gate and Obsidian sync are healthy.

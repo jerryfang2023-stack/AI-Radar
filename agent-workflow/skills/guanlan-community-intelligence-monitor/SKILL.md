@@ -1,9 +1,9 @@
 ---
 name: guanlan-community-intelligence-monitor
-description: Use when supervising, running, repairing, or improving the WaveSight AI V3.3.6 Community Intelligence lane. Covers local logged-in collection, archive generation, community data gate, local publish handoff, GitHub publish PR, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals facts, Signal Cards, relationship graph evidence, trend candidates, or First-Line Viewpoints.
+description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.3.8.6 Community Intelligence lane. Covers local logged-in collection, archive generation, community data gate, local publish handoff, Waiting-vs-Problem publication checks, GitHub publish PR, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals facts, Signal Cards, relationship graph evidence, trend candidates, or First-Line Viewpoints.
 metadata:
   guanlan:
-    version: "1.0.1"
+    version: "1.0.2"
     lane: "Community Intelligence"
     status: "current lane owner"
     order: 30

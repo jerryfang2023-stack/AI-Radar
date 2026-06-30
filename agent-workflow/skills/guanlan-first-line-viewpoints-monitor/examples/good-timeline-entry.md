@@ -28,7 +28,7 @@ why_it_matters: "What this viewpoint helps operators understand; not a Business 
 
 Pass criteria:
 
-- Same-date person/date file exists under the V3.3.6 timeline structure.
+- Same-date person/date file exists under the current timeline structure.
 - Original URL, author, and timestamp are present.
 - Primary frontstage text is translated or rewritten for Chinese readers.
 - The entry is clearly a viewpoint, not evidence for Signal Cards or trend candidates.

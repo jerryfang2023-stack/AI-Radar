@@ -21,6 +21,7 @@ WaveSight AI is now in SITE-V3.3.8.6 Cross-Lane Release Gate Hardening.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
 - SITE-V3.3.8.6 keeps the unified frontstage, preserves the SITE-V3.3.8.5 Community Intelligence / First-Line Viewpoints supervision hardening, and adds the Business Signals Pool/Core release gate: Raw shortfall from provider quota or temporary outage is diagnostic when Pool, routed Pool, usable Core Pool, non-large Core Pool, and Top10 supply are sufficient.
+- Current column versions: Business Signals `BSIG-V1.1.4-pool-core-release-gate`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Intelligence Map `IMAP-V1.2.0-opportunity-radar`.
 
 ## Current Entries
 

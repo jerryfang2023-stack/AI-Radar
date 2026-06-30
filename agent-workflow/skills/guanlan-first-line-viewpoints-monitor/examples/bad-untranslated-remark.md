@@ -19,4 +19,4 @@ Why it fails:
 - The supposed Chinese summary is copied English.
 - `translation_status` is still pending.
 - `why_it_matters` is empty, so the frontstage entry has no editorial value.
-- This cannot be counted as V3.3.6 sync success.
+- This cannot be counted as current sync success.
