@@ -1,8 +1,8 @@
 {
   "ok": false,
-  "status": "failed",
+  "status": "manual_required",
   "date": "2026-06-29",
-  "generated_at": "2026-06-29T08:40:24.798Z",
+  "generated_at": "2026-06-29T05:36:22.453Z",
   "timezone": "Asia/Shanghai",
   "lanes": [
     {
@@ -29,16 +29,16 @@
       "id": "community_intelligence",
       "label": "Community Intelligence",
       "schedule": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30",
-      "status": "warning",
+      "status": "manual_required",
       "evidence": {
-        "generatedAt": "2026-06-29T05:22:40.644Z",
-        "generatedDate": "2026-06-29",
+        "generatedAt": "2026-06-28T00:34:33.437Z",
+        "generatedDate": "2026-06-28",
         "items": 61,
-        "links": 71,
+        "links": 75,
         "selectedKeywords": 8,
         "collectorErrors": 0,
-        "gateStatus": "passed",
-        "gateReport": "agent-workflow/reports/2026-06-29-community-intelligence-gate.md",
+        "gateStatus": "missing",
+        "gateReport": "missing",
         "scheduledTask": {
           "available": true,
           "task": {
@@ -53,15 +53,15 @@
           "available": true,
           "latest_run": {
             "conclusion": "success",
-            "createdAt": "2026-06-29T07:15:38Z",
-            "databaseId": 28355175260,
+            "createdAt": "2026-06-29T05:19:00Z",
+            "databaseId": 28350373117,
             "event": "schedule",
             "headBranch": "main",
             "status": "completed",
-            "updatedAt": "2026-06-29T07:16:06Z",
-            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28355175260"
+            "updatedAt": "2026-06-29T05:19:25Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28350373117"
           },
-          "same_date_run_count": 2,
+          "same_date_run_count": 1,
           "prs": [
             {
               "isDraft": false,
@@ -80,44 +80,64 @@
           "communityPrUrl": "https://github.com/jerryfang2023-stack/AI-Radar/pull/173"
         }
       },
-      "problems": [],
-      "warnings": [
-        "community scheduled task last result is 1, but same-date data and gate are healthy"
+      "problems": [
+        {
+          "message": "community data date is 2026-06-28, expected 2026-06-29",
+          "severity": "failed"
+        },
+        {
+          "message": "community scheduled task last result is 1",
+          "severity": "manual_required"
+        }
       ],
-      "actions": []
+      "warnings": [
+        "missing community gate report: agent-workflow/reports/2026-06-29-community-intelligence-gate.md"
+      ],
+      "actions": [
+        "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
+        "send Codex a community_intelligence repair request with log and gate report path"
+      ]
     },
     {
       "id": "business_signals",
       "label": "Business Signals / Intelligence Map / Dashboard",
       "schedule": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55",
-      "status": "warning",
+      "status": "waiting",
       "evidence": {
         "activeDate": "2026-06-29",
-        "generatedAt": "2026-06-29T08:39:45.865Z",
+        "generatedAt": "2026-06-29T05:33:27.785Z",
         "publicTop10Count": 10,
         "frontstageSelected": 10,
         "supplyConstrained": false,
-        "coreCandidateCount": 25,
-        "qualifiedCount": 17,
-        "signalCardFiles": 26,
+        "coreCandidateCount": 28,
+        "qualifiedCount": 22,
+        "signalCardFiles": 28,
         "titleTranslations": {
           "translationDb": "01-SiteV2/content/11-databases/source-title-translations.json",
-          "missingCount": 0,
-          "missingSourceTitles": []
+          "missingCount": 7,
+          "missingSourceTitles": [
+            "Smartsheet Claude Platform (API) case study | Claude by Anthropic",
+            "The State of AI in the Enterprise - 2026 AI report | Deloitte Global",
+            "Deploy Small Language Models on GPU Cloud: Enterprise SLM Guide for 75% Lower Inference Costs (2026) | Spheron Blog",
+            "Microsoft Build 2026 Book of News — AI Recap | A Guide to Cloud & AI",
+            "Production-grade AI agents for financial compliance: Lessons from Stripe | Artificial Intelligence",
+            "Former Coatue Partner Raises $65M Seed for AI Agent Startup | The Tech Buzz",
+            "How Building AI Agents Has Changed in 2026 | Pulumi Blog"
+          ]
         },
-        "manifest": "missing",
+        "manifest": "agent-workflow/reports/2026-06-29-persistent-asset-manifest.json",
         "qualityGateStatus": "passed",
         "readinessReport": "agent-workflow/reports/2026-06-29-daily-production-chain-readiness.md",
         "github": {
           "available": true,
           "latest_run": {
-            "conclusion": "failure",
+            "conclusion": "",
             "createdAt": "2026-06-29T05:33:32Z",
             "databaseId": 28350869551,
             "event": "workflow_dispatch",
             "headBranch": "main",
-            "status": "completed",
-            "updatedAt": "2026-06-29T05:41:35Z",
+            "status": "in_progress",
+            "updatedAt": "2026-06-29T05:33:37Z",
             "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28350869551"
           },
           "same_date_run_count": 6,
@@ -132,14 +152,14 @@
           "businessPrUrl": "",
           "pagesSuccess": true,
           "pagesActive": false,
-          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28355200093",
+          "pagesRunUrl": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28350914330",
           "localSync": {
             "available": true,
             "clean": false,
-            "dirtyFiles": 52,
+            "dirtyFiles": 62,
             "ignoredReportFiles": 4,
-            "head": "2a4ce2a125808e7671c479efa0d73ed8d8d29876",
-            "originMain": "ad56de54a7493955316e226e9b02a459973cee6e",
+            "head": "03b085a93335424095875b6b8a80382f5aeee565",
+            "originMain": "2ad4d10b356badee1727891138ec0a94bed71c1f",
             "fastForwarded": false,
             "warning": ""
           }
@@ -150,7 +170,7 @@
           "activeDateMatches": true,
           "publicTop10Count": 10,
           "frontstageSelected": 10,
-          "signalCardFiles": 26,
+          "signalCardFiles": 28,
           "qualityGateStatus": "passed",
           "healthy": true
         },
@@ -162,28 +182,42 @@
             "activeDate": "2026-06-29",
             "publicTop10Count": 10,
             "frontstageSelected": 10,
-            "signalCardFiles": 26,
+            "signalCardFiles": 28,
             "rawCount": null,
             "poolCount": null,
             "routedPoolCount": null,
-            "corePoolCount": 25,
+            "corePoolCount": 28,
             "nonLargeCorePoolCount": null,
             "sourceArtifactFreshness": "not_checked_by_daily_supervision",
-            "missingSourceTitleTranslations": [],
+            "missingSourceTitleTranslations": [
+              "Smartsheet Claude Platform (API) case study | Claude by Anthropic",
+              "The State of AI in the Enterprise - 2026 AI report | Deloitte Global",
+              "Deploy Small Language Models on GPU Cloud: Enterprise SLM Guide for 75% Lower Inference Costs (2026) | Spheron Blog",
+              "Microsoft Build 2026 Book of News — AI Recap | A Guide to Cloud & AI",
+              "Production-grade AI agents for financial compliance: Lessons from Stripe | Artificial Intelligence",
+              "Former Coatue Partner Raises $65M Seed for AI Agent Startup | The Tech Buzz",
+              "How Building AI Agents Has Changed in 2026 | Pulumi Blog"
+            ],
             "businessPrMerged": false,
             "pagesState": "success",
-            "localDirtyFiles": 52,
+            "localDirtyFiles": 62,
             "localFastForwarded": false
           }
         }
       },
-      "problems": [],
-      "warnings": [
-        "missing same-date persistent asset manifest: agent-workflow/reports/2026-06-29-persistent-asset-manifest.json",
-        "local Obsidian sync may be blocked by 52 dirty file(s)",
-        "latest Business Signals workflow conclusion is failure, but same-date data and gates are healthy; repair branch / PR / publication only"
+      "problems": [
+        {
+          "message": "Business Signals workflow is in_progress; downstream tasks should wait",
+          "severity": "waiting"
+        }
       ],
-      "actions": []
+      "warnings": [
+        "local Obsidian sync may be blocked by 62 dirty file(s)"
+      ],
+      "actions": [
+        "wait for Business Signals workflow completion before declaring data missing",
+        "send Codex a business_signals repair request with failed gate and report path"
+      ]
     },
     {
       "id": "first_line_viewpoints",
@@ -191,7 +225,7 @@
       "schedule": "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Hermes RSS handoff 09:30",
       "status": "passed",
       "evidence": {
-        "generatedAt": "2026-06-29T05:06:46.556Z",
+        "generatedAt": "2026-06-29T01:31:25.520Z",
         "generatedDate": "2026-06-29",
         "feedGeneratedAt": "2026-06-28T07:38:46.771Z",
         "remarks": 40,
@@ -202,24 +236,16 @@
           "available": true,
           "latest_run": {
             "conclusion": "success",
-            "createdAt": "2026-06-29T06:06:10Z",
-            "databaseId": 28352087396,
-            "event": "schedule",
+            "createdAt": "2026-06-29T01:31:00Z",
+            "databaseId": 28343077380,
+            "event": "workflow_dispatch",
             "headBranch": "main",
             "status": "completed",
-            "updatedAt": "2026-06-29T06:07:17Z",
-            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28352087396"
+            "updatedAt": "2026-06-29T01:32:07Z",
+            "url": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28343077380"
           },
-          "same_date_run_count": 2,
+          "same_date_run_count": 1,
           "prs": [
-            {
-              "isDraft": false,
-              "mergedAt": "2026-06-29T06:07:14Z",
-              "number": 175,
-              "state": "MERGED",
-              "updatedAt": "2026-06-29T06:07:16Z",
-              "url": "https://github.com/jerryfang2023-stack/AI-Radar/pull/175"
-            },
             {
               "isDraft": false,
               "mergedAt": "2026-06-29T01:32:02Z",
@@ -241,27 +267,16 @@
       "id": "follow_builders_skill",
       "label": "First-Line Viewpoints Skill",
       "schedule": "16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45",
-      "status": "failed",
+      "status": "passed",
       "evidence": {
         "outputFile": "missing",
-        "reportFile": "agent-workflow/reports/2026-06-29-follow-builders-skill-local-publish.md",
+        "reportFile": "missing",
         "itemCount": 0,
         "reportCount": 0
       },
-      "problems": [
-        {
-          "message": "missing follow-builders skill output file: 01-SiteV2/content/07-points/2026-06-29-builders-viewpoints.md",
-          "severity": "failed"
-        },
-        {
-          "message": "follow-builders skill output item count 0 below 1",
-          "severity": "failed"
-        }
-      ],
+      "problems": [],
       "warnings": [],
-      "actions": [
-        "send Codex a follow_builders_skill repair request with publish report path"
-      ]
+      "actions": []
     }
   ]
 }

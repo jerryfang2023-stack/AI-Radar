@@ -1,12 +1,12 @@
 # Community Intelligence Data Gate - 2026-06-29
 
 - status: passed
-- generated_at: 2026-06-29T05:22:43.036Z
+- generated_at: 2026-06-29T05:13:17.936Z
 - data_file: 01-SiteV2/site/data/community-intelligence.json
 - items: 61
-- links: 71
+- links: 70
 - selected_keywords: 8
-- data_generated_at: 2026-06-29T05:22:40.644Z
+- data_generated_at: 2026-06-29T05:13:14.155Z
 
 ## Checks
 
@@ -14,7 +14,7 @@
 - passed: meta.generatedAt is present
 - passed: generatedAt matches Asia/Shanghai date - actual=2026-06-29
 - passed: items meet minimum - 61/12
-- passed: deduped links meet minimum - 71/3
+- passed: deduped links meet minimum - 70/3
 - passed: selected keyword rotation is recorded - 8
 - passed: collector recorded no blocking errors
 - passed: daily Obsidian archive exists - 01-SiteV2/content/07-community-intelligence/daily/2026-06-29 Community Intelligence.md
