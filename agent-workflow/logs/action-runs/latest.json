@@ -1,25 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-29T05:34:37.929Z",
-  "date": "2026-06-29",
-  "action": "Hermes Business Signals auto repair",
+  "generated_at": "2026-06-30T03:31:08.914Z",
+  "date": "2026-06-30",
+  "action": "Hermes Business Signals repair",
   "action_status": "unregistered",
   "record_level": "required",
-  "trigger": "wavesight-hermes-auto-repair-merge-deploy",
+  "trigger": "manual",
   "status": "success",
-  "summary": "Repaired Business Signals monitor refill, same-day card dedupe, and source-title translation generation; frontstage gate passed.",
+  "summary": "Forwarded raw prefetch tuning through the monitor QC wrapper and raised Business Signals workflow raw buffer to prevent Raw 150 gate failures after source-artifact snapshot attrition.",
   "contexts": [],
-  "changed_files": [
-    "agent-workflow/tools/run-guanlan-daily-monitor.mjs",
-    "agent-workflow/tools/generate-asset-cards-from-pool.mjs",
-    "01-SiteV2/content/11-databases/source-title-translations.json"
-  ],
+  "changed_files": [],
   "outputs": [],
-  "checks": [
-    "node agent-workflow/tools/assert-business-signals-frontstage.mjs --date=2026-06-29",
-    "node agent-workflow/tools/assert-daily-production-chain.mjs --date=2026-06-29 --stage=pre-commit --raw-min=150 --pool-min=75 --block-stale=true",
-    "node agent-workflow/tools/assert-pool-to-card-dedupe.mjs --date=2026-06-29"
-  ],
+  "checks": [],
   "issues": [],
   "risks": [],
   "lessons": [],
