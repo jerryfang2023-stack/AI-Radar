@@ -89,11 +89,11 @@ function parseFailedSources(text = "") {
 }
 
 function isDiagnosticSourceNote(value = "") {
-  return /pre-gate filtered|targeted pool\/core refill cycle \d+ added|(?:noise_term|missing_ai_anchor_in_result|job_or_salary_page):?[^=]*=\d+|core_non_large=\d+\/\d+/iu.test(String(value || ""));
+  return /pre-gate filtered|targeted pool\/core refill cycle \d+ added|(?:noise_term|missing_ai_anchor_in_result|job_or_salary_page):?[^=]*=\d+|(?:routed_pool|core_pool|core_non_large)=\d+\/\d+/iu.test(String(value || ""));
 }
 
 function isProviderFallbackNote(value = "") {
-  return /fallback for query|free quota limit|quota|rate limit|429|401|403|gateway|timeout|temporarily unavailable|provider/iu.test(String(value || ""));
+  return /fallback for query|free quota limit|quota|rate limit|429|401|403|415|5\d\d|gateway|timeout|temporarily unavailable|provider/iu.test(String(value || ""));
 }
 
 function splitSourceFailureRecovery(items = [], fallbackRecovered = false) {
@@ -494,22 +494,33 @@ export function runGuanlanMonitorQualityGate({
   const effectiveCoreNonLargeVendorMin = weekend.active
     ? Math.min(coreNonLargeVendorMin, Number(weekendAdjusted.core_non_large_vendor_min ?? coreNonLargeVendorMin))
     : coreNonLargeVendorMin;
-  const sourceFallbackRecovered =
-    rawCount >= effectiveRawMinHard &&
+  const poolCoreSupplyRelease =
     poolCount >= poolMinHard &&
     routedPoolCount >= routedPoolMinHard &&
     keywordNonCommunityCount >= nonCommunityMinHard &&
+    aiRelevantRatio >= aiRelevantMinHard &&
+    offTopicCount <= offTopicMaxHard &&
     corePoolCount >= effectiveCorePoolMinHard &&
     usableCoreEvidenceCount >= effectiveUsableCoreEvidenceMinHard &&
+    homepageDirectoryCoreCount <= homepageDirectoryCoreMax &&
+    coreMissingFullTextCount <= coreMissingFullTextMax &&
+    coreLowReadabilityCount <= coreLowReadabilityMax &&
+    coreTextContaminationCount === 0 &&
+    coreRawQcBlockCount <= coreRawQcBlockMax &&
+    coreRawQcDegradedCount <= coreRawQcDegradedMax &&
+    coreLargeVendorCount <= coreLargeVendorMax &&
+    coreLargeVendorRatio <= coreLargeVendorRatioMax &&
     coreNonLargeVendorCount >= effectiveCoreNonLargeVendorMin &&
-    !coverageGapFlag &&
-    !poolCoverageGapFlag;
+    (!importanceCoverageMustNone || !coverageGapFlag || coverageGapAcceptable) &&
+    (!poolImportanceCoverageMustNone || !poolCoverageGapFlag || poolCoverageGapAcceptable);
+  const rawCountReleaseByPoolCore = rawCount < effectiveRawMinHard && poolCoreSupplyRelease;
+  const sourceFallbackRecovered = poolCoreSupplyRelease;
   const sourceFailureRecovery = splitSourceFailureRecovery(failedSources, sourceFallbackRecovered);
   const recoveredFailedSources = sourceFailureRecovery.recovered;
   const unrecoveredFailedSources = sourceFailureRecovery.unrecovered;
 
   const hardChecks = [
-    { key: "raw_count_min", passed: rawCount >= effectiveRawMinHard, value: `${rawCount}/${effectiveRawMinHard}${weekend.active ? `; default=${rawMinHard}` : ""}` },
+    { key: "raw_count_min", passed: rawCount >= effectiveRawMinHard || rawCountReleaseByPoolCore, value: `${rawCount}/${effectiveRawMinHard}${weekend.active ? `; default=${rawMinHard}` : ""}${rawCountReleaseByPoolCore ? "; released_by_pool_core_supply=true" : ""}` },
     { key: "pool_count_min", passed: poolCount >= poolMinHard, value: `${poolCount}/${poolMinHard}` },
     { key: "routed_pool_count_min", passed: routedPoolCount >= routedPoolMinHard, value: `${routedPoolCount}/${routedPoolMinHard}` },
     { key: "keyword_search_non_community_min", passed: keywordNonCommunityCount >= nonCommunityMinHard, value: `${keywordNonCommunityCount}/${nonCommunityMinHard}` },
@@ -721,6 +732,8 @@ export function runGuanlanMonitorQualityGate({
     `- diagnostic_score_reference: ${scoreThreshold}`,
     `- score_mode: ${scoreMode}`,
     `- raw_count: ${rawCount}`,
+    `- raw_count_release_override: ${rawCountReleaseByPoolCore ? "pool_core_supply" : "false"}`,
+    `- pool_core_supply_release: ${poolCoreSupplyRelease ? "true" : "false"}`,
     `- pool_count: ${poolCount}`,
     `- pool_index_count: ${poolItems.length}`,
     `- routed_pool_count: ${routedPoolCount}`,
@@ -818,6 +831,8 @@ export function runGuanlanMonitorQualityGate({
     },
     metrics: {
       raw_count: rawCount,
+      raw_count_release_override: rawCountReleaseByPoolCore ? "pool_core_supply" : "false",
+      pool_core_supply_release: poolCoreSupplyRelease,
       pool_count: poolCount,
       source_level_distribution: sourceLevelDist,
       source_level_total: sourceTotal,

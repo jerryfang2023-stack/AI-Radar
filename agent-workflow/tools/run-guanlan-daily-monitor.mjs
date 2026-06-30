@@ -3719,13 +3719,34 @@ async function collectRSSFeeds() {
       continue;
     }
     try {
-      const response = await fetch(url, {
+      let response = await fetch(url, {
         headers: {
           "User-Agent": "Mozilla/5.0 (compatible; WaveSightRSS/1.0; +https://github.com/jerryfang2023-stack/AI-Radar)",
           "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
         },
         signal: AbortSignal.timeout(fetchTimeoutMs),
       });
+      if (!response.ok && ([403, 415, 429].includes(response.status) || response.status >= 500)) {
+        const firstStatus = response.status;
+        try {
+          const fallbackResponse = await fetch(url, {
+            headers: {
+              "User-Agent": "Mozilla/5.0 (compatible; WaveSightRSS/1.0; +https://github.com/jerryfang2023-stack/AI-Radar)",
+              "Accept": "*/*",
+            },
+            signal: AbortSignal.timeout(fetchTimeoutMs),
+          });
+          if (fallbackResponse.ok) {
+            providerFallbackNotes.push(`RSS fallback recovered ${source.source_id} after HTTP ${firstStatus}`);
+            response = fallbackResponse;
+          } else {
+            response = fallbackResponse;
+          }
+        } catch (fallbackError) {
+          failures.push(`RSS ${source.source_id}: HTTP ${firstStatus}; fallback failed: ${fallbackError.message}`);
+          continue;
+        }
+      }
       if (!response.ok) {
         failures.push(`RSS ${source.source_id}: HTTP ${response.status}`);
         continue;
@@ -4125,6 +4146,28 @@ async function collectTargetedImportanceRefill(poolGaps, existingItems = []) {
 
 async function refillPoolImportanceGaps(items, failures) {
   let current = items;
+  const normalizeRefillItems = async (refillItems) => {
+    const beforePreFetchRemoved = historicalDedupePreFetchRemoved;
+    const beforePostFetchRemoved = historicalDedupePostFetchRemoved;
+    const normalizedRefill = normalize(refillItems);
+    historicalDedupePreFetchRemoved = beforePreFetchRemoved;
+    const enrichedRefill = dryRun
+      ? normalizedRefill
+      : prioritizeAfterFetch(filterHistoricalDuplicatesAfterFetch(await enrichSnapshots(normalizedRefill)));
+    historicalDedupePostFetchRemoved = beforePostFetchRemoved;
+    return enrichedRefill;
+  };
+  const appendUnique = (baseItems, nextItems) => {
+    const seen = new Set(baseItems.map(poolKeyFor));
+    const added = [];
+    for (const item of nextItems) {
+      const key = poolKeyFor(item);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      added.push(item);
+    }
+    return { added, current: prioritizeAfterFetch([...baseItems, ...added]) };
+  };
   for (let cycle = 1; cycle <= 3; cycle += 1) {
     const poolGaps = importanceCoverageGaps(selectMonitorPoolItems(current), "pool");
     const supplyGaps = coreSupplyGaps(current);
@@ -4140,20 +4183,32 @@ async function refillPoolImportanceGaps(items, failures) {
       failures.push(`targeted pool/core refill cycle ${cycle} returned 0 usable result(s) for ${gapText}`);
       break;
     }
-    const normalizedRefill = normalize(refill.items);
-    const enrichedRefill = dryRun
-      ? normalizedRefill
-      : prioritizeAfterFetch(filterHistoricalDuplicatesAfterFetch(await enrichSnapshots(normalizedRefill)));
-    const seen = new Set(current.map(poolKeyFor));
-    const added = [];
-    for (const item of enrichedRefill) {
-      const key = poolKeyFor(item);
-      if (seen.has(key)) continue;
-      seen.add(key);
-      added.push(item);
-    }
-    current = prioritizeAfterFetch([...current, ...added]);
+    const enrichedRefill = await normalizeRefillItems(refill.items);
+    const result = appendUnique(current, enrichedRefill);
+    const added = result.added;
+    current = result.current;
     failures.push(`targeted pool/core refill cycle ${cycle} added ${added.length} item(s) for ${gapText}`);
+    if (!added.length) break;
+  }
+  for (let cycle = 1; current.length < rawMinTarget && cycle <= 2; cycle += 1) {
+    const needed = rawMinTarget - current.length;
+    const perLane = Math.max(1, Math.ceil(needed / targetedCoreRefillImportanceOrder.length));
+    const refillRequests = targetedCoreRefillImportanceOrder.map((importanceType) => ({
+      importanceType,
+      count: 0,
+      min: perLane,
+    }));
+    const refill = await collectTargetedImportanceRefill(refillRequests, current);
+    failures.push(...refill.failures);
+    if (!refill.items.length) {
+      failures.push(`targeted raw-volume refill cycle ${cycle} returned 0 usable result(s) for raw_count=${current.length}/${rawMinTarget}`);
+      break;
+    }
+    const enrichedRefill = await normalizeRefillItems(refill.items);
+    const result = appendUnique(current, enrichedRefill);
+    const added = result.added;
+    current = result.current;
+    failures.push(`targeted raw-volume refill cycle ${cycle} added ${added.length} item(s) for raw_count=${current.length}/${rawMinTarget}`);
     if (!added.length) break;
   }
   return current;
@@ -4194,39 +4249,44 @@ function normalize(items) {
     ? baseTarget
     : Math.min(Math.max(baseTarget + rawDedupeBuffer, baseTarget), rawMaxTarget, normalized.length);
 
-  // Keep curated AIHOT daily items first so they are never starved by other channels.
-  for (const item of normalized) {
-    if (picked.length >= target) break;
-    if (!isAIHotDailySelected(item)) continue;
+  const pushUnique = (item) => {
     const key = item.url || `${item.title}-${item.source}`;
-    if (pickedKeys.has(key)) continue;
+    if (pickedKeys.has(key)) return false;
     picked.push(item);
     pickedKeys.add(key);
+    return true;
+  };
+
+  const peerChannels = ["gdelt", "keyword-search", "rss-feed", "aihot"];
+  const peerBuckets = new Map(peerChannels.map((channel) => [
+    channel,
+    normalized.filter((entry) => entry.acquisition_channel === channel),
+  ]));
+  let peerProgress = true;
+  while (picked.length < target && peerProgress) {
+    peerProgress = false;
+    for (const channel of peerChannels) {
+      if (picked.length >= target) break;
+      const bucket = peerBuckets.get(channel) || [];
+      while (bucket.length) {
+        const item = bucket.shift();
+        if (pushUnique(item)) {
+          peerProgress = true;
+          break;
+        }
+      }
+    }
   }
 
-  const take = (channel, count = target) => {
-    for (const item of normalized.filter((entry) => entry.acquisition_channel === channel)) {
-      if (picked.length >= target || count <= 0) break;
-      const key = item.url || `${item.title}-${item.source}`;
-      if (pickedKeys.has(key)) continue;
-      picked.push(item);
-      pickedKeys.add(key);
-      count -= 1;
-    }
-  };
-  take("gdelt");
-  take("keyword-search");
-  take("rss-feed");
-  take("hn", Math.min(hnTarget, 8));
-  take("aihot");
-  take("rss-feed");
+  let hnPicked = 0;
+  for (const item of normalized.filter((entry) => entry.acquisition_channel === "hn")) {
+    if (picked.length >= target || hnPicked >= Math.min(hnTarget, 8)) break;
+    if (pushUnique(item)) hnPicked += 1;
+  }
 
   for (const item of normalized) {
     if (picked.length >= target) break;
-    const key = item.url || `${item.title}-${item.source}`;
-    if (pickedKeys.has(key)) continue;
-    picked.push(item);
-    pickedKeys.add(key);
+    pushUnique(item);
   }
 
   return diversifyByTheme(picked.sort((a, b) => b.score - a.score));

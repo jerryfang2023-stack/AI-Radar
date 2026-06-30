@@ -1,0 +1,287 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-012",
+  "title": "aws-samples/sample-agentic-process-transformation - GitHub",
+  "original_url": "https://github.com/aws-samples/sample-agentic-process-transformation",
+  "canonical_url": "https://github.com/aws-samples/sample-agentic-process-transformation",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_customer_case",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "ai_transformation",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-30T02:26:24.518Z",
+  "language": "mixed",
+  "full_text": "Uh oh!\nThere was an error while loading. Please reload this page .\naws-samples\nsample-agentic-process-transformation\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n59 Commits\n59 Commits\n00-agent-orchestration-patterns\n00-agent-orchestration-patterns\n01-insurance-claims-processing\n01-insurance-claims-processing\n.gitignore\n.gitignore\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ncfn-workshop-setup.yaml\ncfn-workshop-setup.yaml\ncleanup.sh\ncleanup.sh\nView all files\nRepository files navigation\nAgentic Process Transformation\nPatterns, accelerators, and hands-on workshops for building reimagined business processes with multi-agent workflows using:\nStrands Agents\nAmazon Bedrock\nAmazon Bedrock AgentCore\nModel Context Protocol (MCP)\nGet started here\nWhat's Inside\nThis repo has two main sections:\nAgent Orchestration Patterns\nA reusable pattern library for building individual agents and orchestrating them together. Each pattern is a self-contained Jupyter notebook that runs in Amazon SageMaker AI Studio.\nAgent Patterns — how to build individual agents:\nPattern\nDescription\nRAG Agent\nRetrieves external knowledge to ground responses in real data\nTool Agent (Function Calling)\nAgent calls internal functions — decides which, constructs arguments, executes\nTool Agent (MCP)\nAgent delegates to an MCP server with its own runtime\nMultimodal Agent\nProcesses PDFs, images, and mixed-format documents\nMemory-Augmented Agent\nShort-term and long-term memory across sessions\nSupervisor Agent\nDecomposes tasks, delegates to specialists, synthesizes results\nWorkflow Patterns — how to orchestrate multiple agents:\nPattern\nDescription\nRouting\nClassifies incoming work and dispatches to the right specialist\nParallelization\nFan out independent tasks to multiple agents, then aggregate\nHuman-in-the-Loop\nAgent pauses at decision points for human approval\nReflect and Refine\nGenerator + reviewer loop with feedback until quality passes\nInsurance Claims Processing Workshop\nA complete end-to-end example: a life insurance death benefit claims pipeline built with four specialized agents. You start with a simple reasoning agent and progressively add tools, MCP integration, multi-agent orchestration, persistent memory, and human-in-the-loop escalation.\nAgents:\nAgent\nModel\nRole\nAuthenticator\nAmazon Nova 2 Lite\nValidates beneficiary identity and coverage via MCP\nExtractor\nAmazon Nova 2 Lite\nExtracts structured JSON from 7 document types\nPolicy Verification\nAnthropic Claude Sonnet 4.6\nCross-document consistency checks against policy terms\nCommunicator\nAmazon Nova 2 Lite\nDrafts claim decision notifications\nNotebook sequence:\nNotebook\nWhat You Build\n00_end_to_end_demo/\nInteractive Streamlit app showing the full pipeline — run this first\n01_a_simple_agent/\nA simple Authenticator Agent with Amazon Nova 2 Lite reasoning\n02_tool_augmented_agents/\nStub tools → MCP integration, document extraction with JSON schema\n03_multi_agent_orchestration/\nIntake Orchestrator with GraphBuilder, end-to-end pipeline\n04_agent_core_integration/\nAmazon Bedrock AgentCore Runtime (session isolation) and Memory (cross-phase context)\n05_human_in_the_loop_integration/\nAWS Step Functions callback pattern for human adjudication\nProject Structure\n├── 00-agent-orchestration-patterns/\n│ ├── agent-patterns/ # 6 individual agent patterns\n│ ├── agent-workflow-patterns/ # 4 multi-agent orchestration patterns\n│ └── common/ # Shared MCP servers and sample data\n├── 01-insurance-claims-processing/\n│ ├── agents/ # 4 agent modules (factory pattern)\n│ ├── mcp_servers/socotra_mock/ # Mock policy administration system\n│ ├── notebooks/ # Progressive workshop notebooks (00–05)\n│ └── sample_data/ # 7 sample claim PDFs\nKey Technologies\nStrands Agents — Agent framework with tool orchestration and graph-based workflows\nAmazon Bedrock — Managed LLM inference (Amazon Nova 2 Lite, Anthropic Claude Sonnet 4)\nAmazon Bedrock AgentCore — Agent runtime with session isolation and persistent memory\nModel Context Protocol (MCP) — Standardized tool integration over stdio JSON-RPC\nAWS Step Functions — Human-in-the-loop callback orchestration\nTarget Audience\nSolutions Architects designing agentic workflows for business process transformation\nSoftware Developers and ML Engineers building agent-based systems\nTechnical Leads evaluating agentic patterns for process automation\n⚡ Getting Started — Deploy the Workshop Infrastructure\nPrerequisites\nAn AWS account with Amazon Bedrock model access enabled for:\nAmazon Nova 2 Lite ( us.amazon.nova-2-lite-v1:0 )\nAmazon Nova Multimodal Embeddings ( amazon.nova-2-multimodal-embeddings-v1:0 )\nAnthropic Claude Sonnet 4.6 ( us.anthropic.claude-sonnet-4-6 )\nAWS CLI installed and configured with credentials\nPython 3.10+\nStep 1 — Deploy the CloudFormation stack\nThis creates the Amazon S3 bucket, Amazon DynamoDB tables, IAM roles, and an Amazon SageMaker execution role with all required permissions.\naws cloudformation deploy \\\n--template-file cfn-workshop-setup.yaml \\\n--stack-name agentic-workshop \\\n--capabilities CAPABILITY_NAMED_IAM \\\n--region us-east-1\nStep 2 — Get the S3 bucket name from the stack outputs\naws cloudformation describe-stacks \\\n--stack-name agentic-workshop \\\n--region us-east-1 \\\n--query \" Stacks[0].Outputs[?OutputKey=='S3BucketName'].OutputValue \" \\\n--output text\nStep 3 — Upload sample claim documents to S3\naws s3 cp 01-insurance-claims-processing/sample_data/ \\\ns3:// < YOUR_BUCKET_NAME > /claims-processing/claimant-data/ \\\n--recursive\nReplace <YOUR_BUCKET_NAME> with the output from Step 2.\nStep 4 — Set the bucket name as an environment variable\nexport WORKSHOP_S3_BUCKET= < YOUR_BUCKET_NAME >\nStep 5 — Install Python dependencies and start Jupyter\npython3 -m venv venv\nsource venv/bin/activate\n# For the orchestration patterns\npip install -r 00-agent-orchestration-patterns/requirements.txt\n# For the insurance claims workshop\npip install -r 01-insurance-claims-processing/requirements.txt\njupyter lab\nCleanup\nTo delete all workshop resources when you're done:\nbash cleanup.sh\nThis script empties the S3 bucket (including versioned objects), stops running Step Functions executions, deletes AgentCore memories, cleans up IAM roles, deletes the CloudFormation stack, and removes the retained S3 bucket.\nNote: If you prefer manual cleanup, delete the stack with aws cloudformation delete-stack --stack-name agentic-workshop --region us-east-1 , then manually delete the S3 bucket: aws s3 rb s3://<YOUR_BUCKET_NAME> --force\nImportant Notices\nSynthetic data only. All sample documents (PDFs, JSON mock data) in this repository are entirely fictional and generated for educational purposes. No real personally identifiable information (PII), protected health information (PHI), or financial data is included.\nNot for production use. This workshop demonstrates agentic patterns for learning purposes. The automated claim adjudication shown here requires human-in-the-loop review for any production deployment involving financial decisions.\nLicense\nThis library is licensed under the MIT-0 License. See the LICENSE file.\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nLicense\nMIT-0 license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJupyter Notebook\n82.4%\nPython\n16.3%\nShell\n1.3%\nGenerated from amazon-archives/__template_MIT-0",
+  "clean_text": "Uh oh!\nThere was an error while loading. Please reload this page .\naws-samples\nsample-agentic-process-transformation\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n59 Commits\n59 Commits\n00-agent-orchestration-patterns\n00-agent-orchestration-patterns\n01-insurance-claims-processing\n01-insurance-claims-processing\n.gitignore\n.gitignore\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ncfn-workshop-setup.yaml\ncfn-workshop-setup.yaml\ncleanup.sh\ncleanup.sh\nView all files\nRepository files navigation\nAgentic Process Transformation\nPatterns, accelerators, and hands-on workshops for building reimagined business processes with multi-agent workflows using:\nStrands Agents\nAmazon Bedrock\nAmazon Bedrock AgentCore\nModel Context Protocol (MCP)\nGet started here\nWhat's Inside\nThis repo has two main sections:\nAgent Orchestration Patterns\nA reusable pattern library for building individual agents and orchestrating them together. Each pattern is a self-contained Jupyter notebook that runs in Amazon SageMaker AI Studio.\nAgent Patterns — how to build individual agents:\nPattern\nDescription\nRAG Agent\nRetrieves external knowledge to ground responses in real data\nTool Agent (Function Calling)\nAgent calls internal functions — decides which, constructs arguments, executes\nTool Agent (MCP)\nAgent delegates to an MCP server with its own runtime\nMultimodal Agent\nProcesses PDFs, images, and mixed-format documents\nMemory-Augmented Agent\nShort-term and long-term memory across sessions\nSupervisor Agent\nDecomposes tasks, delegates to specialists, synthesizes results\nWorkflow Patterns — how to orchestrate multiple agents:\nPattern\nDescription\nRouting\nClassifies incoming work and dispatches to the right specialist\nParallelization\nFan out independent tasks to multiple agents, then aggregate\nHuman-in-the-Loop\nAgent pauses at decision points for human approval\nReflect and Refine\nGenerator + reviewer loop with feedback until quality passes\nInsurance Claims Processing Workshop\nA complete end-to-end example: a life insurance death benefit claims pipeline built with four specialized agents. You start with a simple reasoning agent and progressively add tools, MCP integration, multi-agent orchestration, persistent memory, and human-in-the-loop escalation.\nAgents:\nAgent\nModel\nRole\nAuthenticator\nAmazon Nova 2 Lite\nValidates beneficiary identity and coverage via MCP\nExtractor\nAmazon Nova 2 Lite\nExtracts structured JSON from 7 document types\nPolicy Verification\nAnthropic Claude Sonnet 4.6\nCross-document consistency checks against policy terms\nCommunicator\nAmazon Nova 2 Lite\nDrafts claim decision notifications\nNotebook sequence:\nNotebook\nWhat You Build\n00_end_to_end_demo/\nInteractive Streamlit app showing the full pipeline — run this first\n01_a_simple_agent/\nA simple Authenticator Agent with Amazon Nova 2 Lite reasoning\n02_tool_augmented_agents/\nStub tools → MCP integration, document extraction with JSON schema\n03_multi_agent_orchestration/\nIntake Orchestrator with GraphBuilder, end-to-end pipeline\n04_agent_core_integration/\nAmazon Bedrock AgentCore Runtime (session isolation) and Memory (cross-phase context)\n05_human_in_the_loop_integration/\nAWS Step Functions callback pattern for human adjudication\nProject Structure\n├── 00-agent-orchestration-patterns/\n│ ├── agent-patterns/ # 6 individual agent patterns\n│ ├── agent-workflow-patterns/ # 4 multi-agent orchestration patterns\n│ └── common/ # Shared MCP servers and sample data\n├── 01-insurance-claims-processing/\n│ ├── agents/ # 4 agent modules (factory pattern)\n│ ├── mcp_servers/socotra_mock/ # Mock policy administration system\n│ ├── notebooks/ # Progressive workshop notebooks (00–05)\n│ └── sample_data/ # 7 sample claim PDFs\nKey Technologies\nStrands Agents — Agent framework with tool orchestration and graph-based workflows\nAmazon Bedrock — Managed LLM inference (Amazon Nova 2 Lite, Anthropic Claude Sonnet 4)\nAmazon Bedrock AgentCore — Agent runtime with session isolation and persistent memory\nModel Context Protocol (MCP) — Standardized tool integration over stdio JSON-RPC\nAWS Step Functions — Human-in-the-loop callback orchestration\nTarget Audience\nSolutions Architects designing agentic workflows for business process transformation\nSoftware Developers and ML Engineers building agent-based systems\nTechnical Leads evaluating agentic patterns for process automation\n⚡ Getting Started — Deploy the Workshop Infrastructure\nPrerequisites\nAn AWS account with Amazon Bedrock model access enabled for:\nAmazon Nova 2 Lite ( us.amazon.nova-2-lite-v1:0 )\nAmazon Nova Multimodal Embeddings ( amazon.nova-2-multimodal-embeddings-v1:0 )\nAnthropic Claude Sonnet 4.6 ( us.anthropic.claude-sonnet-4-6 )\nAWS CLI installed and configured with credentials\nPython 3.10+\nStep 1 — Deploy the CloudFormation stack\nThis creates the Amazon S3 bucket, Amazon DynamoDB tables, IAM roles, and an Amazon SageMaker execution role with all required permissions.\naws cloudformation deploy \\\n--template-file cfn-workshop-setup.yaml \\\n--stack-name agentic-workshop \\\n--capabilities CAPABILITY_NAMED_IAM \\\n--region us-east-1\nStep 2 — Get the S3 bucket name from the stack outputs\naws cloudformation describe-stacks \\\n--stack-name agentic-workshop \\\n--region us-east-1 \\\n--query \" Stacks[0].Outputs[?OutputKey=='S3BucketName'].OutputValue \" \\\n--output text\nStep 3 — Upload sample claim documents to S3\naws s3 cp 01-insurance-claims-processing/sample_data/ \\\ns3:// < YOUR_BUCKET_NAME > /claims-processing/claimant-data/ \\\n--recursive\nReplace <YOUR_BUCKET_NAME> with the output from Step 2.\nStep 4 — Set the bucket name as an environment variable\nexport WORKSHOP_S3_BUCKET= < YOUR_BUCKET_NAME >\nStep 5 — Install Python dependencies and start Jupyter\npython3 -m venv venv\nsource venv/bin/activate\n# For the orchestration patterns\npip install -r 00-agent-orchestration-patterns/requirements.txt\n# For the insurance claims workshop\npip install -r 01-insurance-claims-processing/requirements.txt\njupyter lab\nCleanup\nTo delete all workshop resources when you're done:\nbash cleanup.sh\nThis script empties the S3 bucket (including versioned objects), stops running Step Functions executions, deletes AgentCore memories, cleans up IAM roles, deletes the CloudFormation stack, and removes the retained S3 bucket.\nNote: If you prefer manual cleanup, delete the stack with aws cloudformation delete-stack --stack-name agentic-workshop --region us-east-1 , then manually delete the S3 bucket: aws s3 rb s3://<YOUR_BUCKET_NAME> --force\nImportant Notices\nSynthetic data only. All sample documents (PDFs, JSON mock data) in this repository are entirely fictional and generated for educational purposes. No real personally identifiable information (PII), protected health information (PHI), or financial data is included.\nNot for production use. This workshop demonstrates agentic patterns for learning purposes. The automated claim adjudication shown here requires human-in-the-loop review for any production deployment involving financial decisions.\nLicense\nThis library is licensed under the MIT-0 License. See the LICENSE file.\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nLicense\nMIT-0 license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJupyter Notebook\n82.4%\nPython\n16.3%\nShell\n1.3%\nGenerated from amazon-archives/__template_MIT-0",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-30/r-012-aws-samples-sample-agentic-process-transformation-github.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-30/r-012-aws-samples-sample-agentic-process-transformation-github.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 7976,
+    "paragraph_count": 110,
+    "sentence_count": 31,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0074,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 7976,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "d33c7145cc774b07",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "7a9f43ec4274afc3",
+  "content_hash": "d33c7145cc774b07",
+  "full_text_hash": "d33c7145cc774b07",
+  "semantic_hash": "3efc543603d2b4cb",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-30T02:26:24.518Z",
+  "last_seen_at": "2026-06-30T02:26:24.518Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "# Agentic Process Transformation ... Patterns, accelerators, and hands-on workshops for building reimagined business processes with multi-agent workflows using: ... A reusable pattern library for building individual agents and orchestrating them together. Each pattern is a self-contained Jupyter not... / query=enterprise AI transformation workflow change customer case / intent=find_customer_case / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "aws-samples sample-agentic-process-transformation Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 59 Commits 59 Commits 00-agent-orchestration-patterns 00-agent-orchestration-patterns 01-insurance-claims-processing 01-insurance-claims-processing .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "gitignore CODE_OF_CONDUCT.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "md CODE_OF_CONDUCT.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "Anthropic",
+      "GitHub",
+      "Amazon",
+      "AWS"
+    ],
+    "products": [
+      "agent",
+      "agents",
+      "Agents",
+      "MCP",
+      "Agent",
+      "Claude",
+      "claude"
+    ],
+    "people": [],
+    "industries": [
+      "金融 / 保险",
+      "医疗",
+      "制造 / 工业",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "59",
+      "00",
+      "01",
+      "2",
+      "7",
+      "4.6",
+      "02",
+      "03"
+    ],
+    "quotes": [
+      " Stacks[0].Outputs[?OutputKey=='S3BucketName'].OutputValue "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "There was an error while loading.",
+      "Please reload this page .",
+      "gitignore CODE_OF_CONDUCT."
+    ],
+    "case_details": [
+      "# Agentic Process Transformation ... Patterns, accelerators, and hands-on workshops for building reimagined business processes with multi-agent workflows using: ... A reusable pattern library for building individual agents and orchestrating them together. Each pattern is a self-contained Jupyter not... / query=enterprise AI transformation workflow change customer case / intent=find_customer_case / path=developer_ecosystem"
+    ],
+    "workflow_changes": [
+      "aws-samples sample-agentic-process-transformation Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 59 Commits 59 Commits 00-agent-orchestration-patterns 00-agent-orchestration-patterns 01-insurance-claims-processing 01-insurance-claims-processing ."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 5
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# aws-samples/sample-agentic-process-transformation - GitHub\n\n- raw_id: R-012\n- original_url: https://github.com/aws-samples/sample-agentic-process-transformation\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-30T02:26:24.518Z\n\n## clean_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\naws-samples\nsample-agentic-process-transformation\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n59 Commits\n59 Commits\n00-agent-orchestration-patterns\n00-agent-orchestration-patterns\n01-insurance-claims-processing\n01-insurance-claims-processing\n.gitignore\n.gitignore\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ncfn-workshop-setup.yaml\ncfn-workshop-setup.yaml\ncleanup.sh\ncleanup.sh\nView all files\nRepository files navigation\nAgentic Process Transformation\nPatterns, accelerators, and hands-on workshops for building reimagined business processes with multi-agent workflows using:\nStrands Agents\nAmazon Bedrock\nAmazon Bedrock AgentCore\nModel Context Protocol (MCP)\nGet started here\nWhat's Inside\nThis repo has two main sections:\nAgent Orchestration Patterns\nA reusable pattern library for building individual agents and orchestrating them together. Each pattern is a self-contained Jupyter notebook that runs in Amazon SageMaker AI Studio.\nAgent Patterns — how to build individual agents:\nPattern\nDescription\nRAG Agent\nRetrieves external knowledge to ground responses in real data\nTool Agent (Function Calling)\nAgent calls internal functions — decides which, constructs arguments, executes\nTool Agent (MCP)\nAgent delegates to an MCP server with its own runtime\nMultimodal Agent\nProcesses PDFs, images, and mixed-format documents\nMemory-Augmented Agent\nShort-term and long-term memory across sessions\nSupervisor Agent\nDecomposes tasks, delegates to specialists, synthesizes results\nWorkflow Patterns — how to orchestrate multiple agents:\nPattern\nDescription\nRouting\nClassifies incoming work and dispatches to the right specialist\nParallelization\nFan out independent tasks to multiple agents, then aggregate\nHuman-in-the-Loop\nAgent pauses at decision points for human approval\nReflect and Refine\nGenerator + reviewer loop with feedback until quality passes\nInsurance Claims Processing Workshop\nA complete end-to-end example: a life insurance death benefit claims pipeline built with four specialized agents. You start with a simple reasoning agent and progressively add tools, MCP integration, multi-agent orchestration, persistent memory, and human-in-the-loop escalation.\nAgents:\nAgent\nModel\nRole\nAuthenticator\nAmazon Nova 2 Lite\nValidates beneficiary identity and coverage via MCP\nExtractor\nAmazon Nova 2 Lite\nExtracts structured JSON from 7 document types\nPolicy Verification\nAnthropic Claude Sonnet 4.6\nCross-document consistency checks against policy terms\nCommunicator\nAmazon Nova 2 Lite\nDrafts claim decision notifications\nNotebook sequence:\nNotebook\nWhat You Build\n00_end_to_end_demo/\nInteractive Streamlit app showing the full pipeline — run this first\n01_a_simple_agent/\nA simple Authenticator Agent with Amazon Nova 2 Lite reasoning\n02_tool_augmented_agents/\nStub tools → MCP integration, document extraction with JSON schema\n03_multi_agent_orchestration/\nIntake Orchestrator with GraphBuilder, end-to-end pipeline\n04_agent_core_integration/\nAmazon Bedrock AgentCore Runtime (session isolation) and Memory (cross-phase context)\n05_human_in_the_loop_integration/\nAWS Step Functions callback pattern for human adjudication\nProject Structure\n├── 00-agent-orchestration-patterns/\n│ ├── agent-patterns/ # 6 individual agent patterns\n│ ├── agent-workflow-patterns/ # 4 multi-agent orchestration patterns\n│ └── common/ # Shared MCP servers and sample data\n├── 01-insurance-claims-processing/\n│ ├── agents/ # 4 agent modules (factory pattern)\n│ ├── mcp_servers/socotra_mock/ # Mock policy administration system\n│ ├── notebooks/ # Progressive workshop notebooks (00–05)\n│ └── sample_data/ # 7 sample claim PDFs\nKey Technologies\nStrands Agents — Agent framework with tool orchestration and graph-based workflows\nAmazon Bedrock — Managed LLM inference (Amazon Nova 2 Lite, Anthropic Claude Sonnet 4)\nAmazon Bedrock AgentCore — Agent runtime with session isolation and persistent memory\nModel Context Protocol (MCP) — Standardized tool integration over stdio JSON-RPC\nAWS Step Functions — Human-in-the-loop callback orchestration\nTarget Audience\nSolutions Architects designing agentic workflows for business process transformation\nSoftware Developers and ML Engineers building agent-based systems\nTechnical Leads evaluating agentic patterns for process automation\n⚡ Getting Started — Deploy the Workshop Infrastructure\nPrerequisites\nAn AWS account with Amazon Bedrock model access enabled for:\nAmazon Nova 2 Lite ( us.amazon.nova-2-lite-v1:0 )\nAmazon Nova Multimodal Embeddings ( amazon.nova-2-multimodal-embeddings-v1:0 )\nAnthropic Claude Sonnet 4.6 ( us.anthropic.claude-sonnet-4-6 )\nAWS CLI installed and configured with credentials\nPython 3.10+\nStep 1 — Deploy the CloudFormation stack\nThis creates the Amazon S3 bucket, Amazon DynamoDB tables, IAM roles, and an Amazon SageMaker execution role with all required permissions.\naws cloudformation deploy \\\n--template-file cfn-workshop-setup.yaml \\\n--stack-name agentic-workshop \\\n--capabilities CAPABILITY_NAMED_IAM \\\n--region us-east-1\nStep 2 — Get the S3 bucket name from the stack outputs\naws cloudformation describe-stacks \\\n--stack-name agentic-workshop \\\n--region us-east-1 \\\n--query \" Stacks[0].Outputs[?OutputKey=='S3BucketName'].OutputValue \" \\\n--output text\nStep 3 — Upload sample claim documents to S3\naws s3 cp 01-insurance-claims-processing/sample_data/ \\\ns3:// < YOUR_BUCKET_NAME > /claims-processing/claimant-data/ \\\n--recursive\nReplace <YOUR_BUCKET_NAME> with the output from Step 2.\nStep 4 — Set the bucket name as an environment variable\nexport WORKSHOP_S3_BUCKET= < YOUR_BUCKET_NAME >\nStep 5 — Install Python dependencies and start Jupyter\npython3 -m venv venv\nsource venv/bin/activate\n# For the orchestration patterns\npip install -r 00-agent-orchestration-patterns/requirements.txt\n# For the insurance claims workshop\npip install -r 01-insurance-claims-processing/requirements.txt\njupyter lab\nCleanup\nTo delete all workshop resources when you're done:\nbash cleanup.sh\nThis script empties the S3 bucket (including versioned objects), stops running Step Functions executions, deletes AgentCore memories, cleans up IAM roles, deletes the CloudFormation stack, and removes the retained S3 bucket.\nNote: If you prefer manual cleanup, delete the stack with aws cloudformation delete-stack --stack-name agentic-workshop --region us-east-1 , then manually delete the S3 bucket: aws s3 rb s3://<YOUR_BUCKET_NAME> --force\nImportant Notices\nSynthetic data only. All sample documents (PDFs, JSON mock data) in this repository are entirely fictional and generated for educational purposes. No real personally identifiable information (PII), protected health information (PHI), or financial data is included.\nNot for production use. This workshop demonstrates agentic patterns for learning purposes. The automated claim adjudication shown here requires human-in-the-loop review for any production deployment involving financial decisions.\nLicense\nThis library is licensed under the MIT-0 License. See the LICENSE file.\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nLicense\nMIT-0 license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJupyter Notebook\n82.4%\nPython\n16.3%\nShell\n1.3%\nGenerated from amazon-archives/__template_MIT-0\n\n## full_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\naws-samples\nsample-agentic-process-transformation\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\nStar\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n59 Commits\n59 Commits\n00-agent-orchestration-patterns\n00-agent-orchestration-patterns\n01-insurance-claims-processing\n01-insurance-claims-processing\n.gitignore\n.gitignore\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\ncfn-workshop-setup.yaml\ncfn-workshop-setup.yaml\ncleanup.sh\ncleanup.sh\nView all files\nRepository files navigation\nAgentic Process Transformation\nPatterns, accelerators, and hands-on workshops for building reimagined business processes with multi-agent workflows using:\nStrands Agents\nAmazon Bedrock\nAmazon Bedrock AgentCore\nModel Context Protocol (MCP)\nGet started here\nWhat's Inside\nThis repo has two main sections:\nAgent Orchestration Patterns\nA reusable pattern library for building individual agents and orchestrating them together. Each pattern is a self-contained Jupyter notebook that runs in Amazon SageMaker AI Studio.\nAgent Patterns — how to build individual agents:\nPattern\nDescription\nRAG Agent\nRetrieves external knowledge to ground responses in real data\nTool Agent (Function Calling)\nAgent calls internal functions — decides which, constructs arguments, executes\nTool Agent (MCP)\nAgent delegates to an MCP server with its own runtime\nMultimodal Agent\nProcesses PDFs, images, and mixed-format documents\nMemory-Augmented Agent\nShort-term and long-term memory across sessions\nSupervisor Agent\nDecomposes tasks, delegates to specialists, synthesizes results\nWorkflow Patterns — how to orchestrate multiple agents:\nPattern\nDescription\nRouting\nClassifies incoming work and dispatches to the right specialist\nParallelization\nFan out independent tasks to multiple agents, then aggregate\nHuman-in-the-Loop\nAgent pauses at decision points for human approval\nReflect and Refine\nGenerator + reviewer loop with feedback until quality passes\nInsurance Claims Processing Workshop\nA complete end-to-end example: a life insurance death benefit claims pipeline built with four specialized agents. You start with a simple reasoning agent and progressively add tools, MCP integration, multi-agent orchestration, persistent memory, and human-in-the-loop escalation.\nAgents:\nAgent\nModel\nRole\nAuthenticator\nAmazon Nova 2 Lite\nValidates beneficiary identity and coverage via MCP\nExtractor\nAmazon Nova 2 Lite\nExtracts structured JSON from 7 document types\nPolicy Verification\nAnthropic Claude Sonnet 4.6\nCross-document consistency checks against policy terms\nCommunicator\nAmazon Nova 2 Lite\nDrafts claim decision notifications\nNotebook sequence:\nNotebook\nWhat You Build\n00_end_to_end_demo/\nInteractive Streamlit app showing the full pipeline — run this first\n01_a_simple_agent/\nA simple Authenticator Agent with Amazon Nova 2 Lite reasoning\n02_tool_augmented_agents/\nStub tools → MCP integration, document extraction with JSON schema\n03_multi_agent_orchestration/\nIntake Orchestrator with GraphBuilder, end-to-end pipeline\n04_agent_core_integration/\nAmazon Bedrock AgentCore Runtime (session isolation) and Memory (cross-phase context)\n05_human_in_the_loop_integration/\nAWS Step Functions callback pattern for human adjudication\nProject Structure\n├── 00-agent-orchestration-patterns/\n│ ├── agent-patterns/ # 6 individual agent patterns\n│ ├── agent-workflow-patterns/ # 4 multi-agent orchestration patterns\n│ └── common/ # Shared MCP servers and sample data\n├── 01-insurance-claims-processing/\n│ ├── agents/ # 4 agent modules (factory pattern)\n│ ├── mcp_servers/socotra_mock/ # Mock policy administration system\n│ ├── notebooks/ # Progressive workshop notebooks (00–05)\n│ └── sample_data/ # 7 sample claim PDFs\nKey Technologies\nStrands Agents — Agent framework with tool orchestration and graph-based workflows\nAmazon Bedrock — Managed LLM inference (Amazon Nova 2 Lite, Anthropic Claude Sonnet 4)\nAmazon Bedrock AgentCore — Agent runtime with session isolation and persistent memory\nModel Context Protocol (MCP) — Standardized tool integration over stdio JSON-RPC\nAWS Step Functions — Human-in-the-loop callback orchestration\nTarget Audience\nSolutions Architects designing agentic workflows for business process transformation\nSoftware Developers and ML Engineers building agent-based systems\nTechnical Leads evaluating agentic patterns for process automation\n⚡ Getting Started — Deploy the Workshop Infrastructure\nPrerequisites\nAn AWS account with Amazon Bedrock model access enabled for:\nAmazon Nova 2 Lite ( us.amazon.nova-2-lite-v1:0 )\nAmazon Nova Multimodal Embeddings ( amazon.nova-2-multimodal-embeddings-v1:0 )\nAnthropic Claude Sonnet 4.6 ( us.anthropic.claude-sonnet-4-6 )\nAWS CLI installed and configured with credentials\nPython 3.10+\nStep 1 — Deploy the CloudFormation stack\nThis creates the Amazon S3 bucket, Amazon DynamoDB tables, IAM roles, and an Amazon SageMaker execution role with all required permissions.\naws cloudformation deploy \\\n--template-file cfn-workshop-setup.yaml \\\n--stack-name agentic-workshop \\\n--capabilities CAPABILITY_NAMED_IAM \\\n--region us-east-1\nStep 2 — Get the S3 bucket name from the stack outputs\naws cloudformation describe-stacks \\\n--stack-name agentic-workshop \\\n--region us-east-1 \\\n--query \" Stacks[0].Outputs[?OutputKey=='S3BucketName'].OutputValue \" \\\n--output text\nStep 3 — Upload sample claim documents to S3\naws s3 cp 01-insurance-claims-processing/sample_data/ \\\ns3:// < YOUR_BUCKET_NAME > /claims-processing/claimant-data/ \\\n--recursive\nReplace <YOUR_BUCKET_NAME> with the output from Step 2.\nStep 4 — Set the bucket name as an environment variable\nexport WORKSHOP_S3_BUCKET= < YOUR_BUCKET_NAME >\nStep 5 — Install Python dependencies and start Jupyter\npython3 -m venv venv\nsource venv/bin/activate\n# For the orchestration patterns\npip install -r 00-agent-orchestration-patterns/requirements.txt\n# For the insurance claims workshop\npip install -r 01-insurance-claims-processing/requirements.txt\njupyter lab\nCleanup\nTo delete all workshop resources when you're done:\nbash cleanup.sh\nThis script empties the S3 bucket (including versioned objects), stops running Step Functions executions, deletes AgentCore memories, cleans up IAM roles, deletes the CloudFormation stack, and removes the retained S3 bucket.\nNote: If you prefer manual cleanup, delete the stack with aws cloudformation delete-stack --stack-name agentic-workshop --region us-east-1 , then manually delete the S3 bucket: aws s3 rb s3://<YOUR_BUCKET_NAME> --force\nImportant Notices\nSynthetic data only. All sample documents (PDFs, JSON mock data) in this repository are entirely fictional and generated for educational purposes. No real personally identifiable information (PII), protected health information (PHI), or financial data is included.\nNot for production use. This workshop demonstrates agentic patterns for learning purposes. The automated claim adjudication shown here requires human-in-the-loop review for any production deployment involving financial decisions.\nLicense\nThis library is licensed under the MIT-0 License. See the LICENSE file.\nAbout\nNo description, website, or topics provided.\nResources\nReadme\nLicense\nMIT-0 license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\nstar\nWatchers\nwatching\nForks\nforks\nReport repository\nReleases\nNo releases published\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nJupyter Notebook\n82.4%\nPython\n16.3%\nShell\n1.3%\nGenerated from amazon-archives/__template_MIT-0\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] # Agentic Process Transformation ... Patterns, accelerators, and hands-on workshops for building reimagined business processes with multi-agent workflows using: ... A reusable pattern library for building individual agents and orchestrating them together. Each pattern is a self-contained Jupyter not... / query=enterprise AI transformation workflow change customer case / intent=find_customer_case / path=developer_ecosystem\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] There was an error while loading.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Please reload this page .\n4. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] aws-samples sample-agentic-process-transformation Public Notifications You must be signed in to change notification settings Fork Star main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 59 Commits 59 Commits 00-agent-orchestration-patterns 00-agent-orchestration-patterns 01-insurance-claims-processing 01-insurance-claims-processing .\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] gitignore CODE_OF_CONDUCT.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] md CODE_OF_CONDUCT.\n"
+}

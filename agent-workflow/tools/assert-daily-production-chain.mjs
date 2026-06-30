@@ -160,6 +160,13 @@ const monitorQualityGateOverride = Boolean(
 const monitorQualityGateOverrideReason = monitorQualityGateOverride
   ? `cards-only review artifact mode allows monitor coverage gap(s): ${monitorQualityGateHardFailures.join(", ")}`
   : "";
+const rawCountReleaseOverride = parseLineValue(gateText, "raw_count_release_override");
+const rawShortfallReleasedByMonitorGate = Boolean(
+  rawCount < rawMin &&
+  gateStatus === "passed" &&
+  rawCountReleaseOverride &&
+  rawCountReleaseOverride !== "false"
+);
 const finalQcDecision = (
   parseLineValue(finalQcText, "Downstream decision") ||
   parseLineValue(finalQcText, "downstream_decision") ||
@@ -200,7 +207,7 @@ if (!exists(files.raw)) problems.push(`missing Raw file: ${rel(files.raw)}`);
 if (!exists(files.pool)) problems.push(`missing Pool file: ${rel(files.pool)}`);
 if (!exists(files.monitorLog)) problems.push(`missing monitor log: ${rel(files.monitorLog)}`);
 if (!exists(files.qualityGate)) problems.push(`missing quality gate report: ${rel(files.qualityGate)}`);
-if (rawCount < rawMin) problems.push(`active Raw count ${rawCount} below ${rawMin}`);
+if (rawCount < rawMin && !rawShortfallReleasedByMonitorGate) problems.push(`active Raw count ${rawCount} below ${rawMin}`);
 if (poolCount < poolMin) problems.push(`Pool count ${poolCount} below ${poolMin}`);
 if (!historicalDedupeEnabled) problems.push("historical Raw dedupe is not enabled");
 if (historicalChecked <= 0) problems.push("historical Raw dedupe checked zero records");
@@ -240,6 +247,7 @@ const report = [
   `- stage: ${stage}`,
   `- status: ${problems.length ? "blocked" : "passed"}`,
   `- final_active_raw_count: ${rawCount}`,
+  `- raw_count_release_override: ${rawShortfallReleasedByMonitorGate ? rawCountReleaseOverride : "false"}`,
   `- final_active_pool_count: ${poolCount}`,
   `- logged_raw_count: ${rawCountFromLog ?? "missing"}`,
   `- logged_pool_count: ${poolCountFromLog ?? "missing"}`,

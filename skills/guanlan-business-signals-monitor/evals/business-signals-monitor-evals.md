@@ -19,6 +19,9 @@ Use these as pass/fail checks after production, repair, or rule changes.
 - PASS if high-score watchlist aggregate data is used only to repair or reroute source-backed Pool entries; FAIL if watchlist entries directly generate Cards.
 - PASS if English frontstage titles or title-like subjects are rebuilt and gated; FAIL if untranslated titles or `subject=title` reach the frontstage.
 - PASS if root/homepage URLs are kept as index-only or watchlist evidence; FAIL if a news-site homepage or generic directory URL generates a Signal Card or reaches frontstage.
+- PASS if RSS HTTP 415 / 429 / 5xx, Anysearch quota exhaustion, or search-provider temporary unavailable notes are treated as recovered after Pool, routed Pool, Core Pool, non-large Core, and importance coverage gates are already satisfied; FAIL if provider fallback hides a true Pool/Core shortage or blocks Card / Top10 generation after downstream supply gates pass.
+- PASS if `raw_count_min` shortfall remains visible as `raw_count_release_override=pool_core_supply` when Pool/Core supply is sufficient; FAIL if Raw-only shortage blocks release after Top10 is enough.
+- PASS if source-artifact Raw selection rotates across GDELT, keyword search, RSS, and AI HOT as peer channels; FAIL if a fixed priority channel can starve another available source artifact channel.
 
 ## Self-Improvement
 
