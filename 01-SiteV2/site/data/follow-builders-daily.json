@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-06-29T16:32:21.230Z",
+    "generatedAt": "2026-06-30T01:35:00.185Z",
     "feedGeneratedAt": "2026-06-29T08:08:26.128Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
-    "sourceRoute": "prepare-digest",
+    "sourceRoute": "remote-x+remote-podcasts",
     "sourceErrors": [],
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
     "builders": 17,
-    "remarks": 40,
-    "podcasts": 3,
+    "remarks": 39,
+    "podcasts": 1,
     "blogsBuilt": 6,
-    "trackedSources": 33,
+    "trackedSources": 0,
     "rawBuilders": 12,
     "rawTweets": 23
   },
@@ -23,12 +23,6 @@
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
       "count": 9
-    },
-    {
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "count": 4
     },
     {
       "name": "Dataiku Blog",
@@ -52,6 +46,12 @@
       "name": "Thibault Sottiaux",
       "handle": "thsottiaux",
       "role": "Codex & ChatGPT OpenAI",
+      "count": 3
+    },
+    {
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "count": 3
     },
     {
@@ -274,45 +274,6 @@
       "createdAt": "Tue, 23 Jun 2026 13:02:42 GMT",
       "date": "2026-06-23",
       "url": "https://www.bensbites.com/p/record-a-skill",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://tldr.tech/ai/2026-06-23",
-      "source": "blog",
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
-      "text": "SpaceX Colossus deal 🚀, GPT-5.5 Cyber launch 🛡️, Codex as workspace 🤖",
-      "content": "",
-      "contentTranslation": "",
-      "contentTranslationStatus": "unavailable",
-      "translation": "SpaceX Colossus交易🚀， GPT-5.5网络发射🛡️， Codex作为工作空间 🤖",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "Tue, 23 Jun 2026 00:00:00 GMT",
-      "date": "2026-06-23",
-      "url": "https://tldr.tech/ai/2026-06-23",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -547,6 +508,84 @@
       "createdAt": "Fri, 26 Jun 2026 00:00:00 GMT",
       "date": "2026-06-26",
       "url": "https://tldr.tech/ai/2026-06-26",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/29/html-table-extractor/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "HTML table extractor",
+      "content": "Tool: HTML table extractor Yet another in my growing collection of paste-conversion tools. This one accepts pasted rich text from browsers (with embedded HTML tables) and converts every detected tab",
+      "contentTranslation": "工具： HTML表格提取器是我不断增长的粘贴转换工具集合中的另一个。此选项接受从浏览器粘贴的富文本（带有嵌入式HTML表格） ，并转换每个检测到的选项卡",
+      "contentTranslationStatus": "translated",
+      "translation": "表提取程序",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-06-29T23:38:21+00:00",
+      "date": "2026-06-30",
+      "url": "https://simonwillison.net/2026/Jun/29/html-table-extractor/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Count the number of Safari tabs",
+      "content": "Tiniest TIL, using AppleScript to count the number of open browser tabs in Safari: osascript -e 'tell application \"Safari\" to count tabs of every window' <img alt=\"I ran it in a terminal window and got back 370.\" src=\"https://static.simonwillison.net/static/2026/ta",
+      "contentTranslation": "最小的TIL ，使用AppleScript计算Safari中打开的浏览器选项卡的数量： osascript -e '告诉应用程序“Safari”计算每个窗口的选项卡' < img alt = \"我在终端窗口中运行它，然后返回370。\" src = \"",
+      "contentTranslationStatus": "translated",
+      "translation": "统计Safari标签页的数量",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-06-29T18:36:18+00:00",
+      "date": "2026-06-30",
+      "url": "https://simonwillison.net/2026/Jun/29/safari-tab-count/#atom-everything",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -1543,110 +1582,16 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Prompt Injection as Role Confusion",
-      "content": "Prompt Injection as Role Confusion First, I absolutely love this: This is a blog-style writeup of the paper. I wish every paper would come with one of these. Academic writing is p",
-      "contentTranslation": "提示注入作为角色混淆首先，我绝对喜欢这个：这是一篇博客风格的论文。我希望每篇论文都附带其中一篇。学术写作是p",
-      "contentTranslationStatus": "translated",
-      "translation": "作为角色混淆提示注射",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "产品与创业",
-      "formalTags": [
-        {
-          "id": "opinion-product-strategy",
-          "name": "产品策略观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "name": "企业工作流",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
-      "createdAt": "2026-06-22T23:59:53+00:00",
-      "date": "2026-06-23",
-      "url": "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
-    },
-    {
-      "id": "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything",
-      "source": "blog",
-      "name": "Simon Willison's Blog",
-      "handle": "simonwillison.net",
-      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "text": "Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code",
-      "content": "This morning on Hacker News I saw Moebius: 0.2B Lightweight Image Inpainting Framework with 10B-Level Performance , describing a small but effective inpainting model - a model where you can",
-      "contentTranslation": "今天早上在Hacker News上，我看到了Moebius ： 0.2B轻量级图像修复框架，具有10B级性能，描述了一个小而有效的修复模型-一个您可以",
-      "contentTranslationStatus": "translated",
-      "translation": "使用Claude Code将Moebius 0.2B图像修复模型移植到浏览器中运行",
-      "translationStatus": "translated",
-      "translationMethod": "mymemory",
-      "topic": "AI 编程",
-      "formalTags": [
-        {
-          "id": "opinion-ai-coding",
-          "name": "AI Coding 观点",
-          "group": "opinion"
-        },
-        {
-          "id": "track-ai-coding",
-          "name": "AI Coding",
-          "group": "track"
-        },
-        {
-          "id": "source-blog",
-          "name": "技术博客",
-          "group": "source"
-        }
-      ],
-      "observation": "这条言论适合观察 AI 编程工具、设计到代码流程和软件生产方式的变化；需要结合产品发布或文档再做事实判断。",
-      "createdAt": "2026-06-22T23:43:51+00:00",
-      "date": "2026-06-23",
-      "url": "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything",
-      "likes": 0,
-      "retweets": 0,
-      "replies": 0
     }
   ],
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
-      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
-      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…"
-    },
-    {
-      "source": "podcast",
-      "name": "Unsupervised Learning",
-      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
-      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
-      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…"
-    },
-    {
-      "source": "podcast",
-      "name": "Unsupervised Learning (Redpoint)",
-      "title": "Ep 88: Unpacking DeepMind&apos;s Quest for SuperIntelligence with Demis Hassabis&apos; Biographer",
-      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-88-unpacking-deepminds-quest-for-superintelligence-with-demis-hassabis-biographer-ojelyqia",
-      "publishedAt": "Mon, 1 Jun 2026 12:46:52 +0000",
-      "excerpt": "Sebastian Mallaby spent three years and 30+ hours interviewing Demis Hassabis in the back of a British pub to write The Infinity Machine, and the conversation uses that reporting to surface the most underexplored figure in AI. Demis founded the original AI lab in 2010, won a Nobel Prize, runs models that consistently top the leaderboards, and yet remains so unrecognized that Sebastian's own publisher worried no one would buy a book with his face on the cover. The throughline is a paradox: Demis tried to prevent the AI race we're now all living through, and now finds himself one of its central protagonists. He used to believe a single lab could carry the safety burden to AGI; he now sees safety as a collective action problem only governments can solve. He hedged DeepMind's research bets across every promising direction, and as a result missed the two most consumer-defining moments…"
+      "name": "The MAD Podcast with Matt Turck",
+      "title": "The GPU Myth: State of AI Compute 2026 | Stephen Balaban",
+      "url": "https://www.youtube.com/watch?v=0NttU4CbyVs",
+      "publishedAt": "2026-06-18T11:30:00.000Z",
+      "excerpt": ""
     }
   ]
 }
