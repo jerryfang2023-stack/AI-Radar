@@ -89,7 +89,7 @@ function parseFailedSources(text = "") {
 }
 
 function isDiagnosticSourceNote(value = "") {
-  return /pre-gate filtered|targeted pool\/core refill cycle \d+ added|(?:noise_term|missing_ai_anchor_in_result|job_or_salary_page):?[^=]*=\d+|core_non_large=\d+\/\d+/iu.test(String(value || ""));
+  return /pre-gate filtered|targeted pool\/core refill cycle \d+ added|(?:noise_term|missing_ai_anchor_in_result|job_or_salary_page):?[^=]*=\d+|(?:routed_pool|core_pool|core_non_large)=\d+\/\d+/iu.test(String(value || ""));
 }
 
 function isProviderFallbackNote(value = "") {

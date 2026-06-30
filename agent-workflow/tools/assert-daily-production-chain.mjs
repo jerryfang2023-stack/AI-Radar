@@ -162,7 +162,6 @@ const monitorQualityGateOverrideReason = monitorQualityGateOverride
   : "";
 const rawCountReleaseOverride = parseLineValue(gateText, "raw_count_release_override");
 const rawShortfallReleasedByMonitorGate = Boolean(
-  stage === "post-monitor" &&
   rawCount < rawMin &&
   gateStatus === "passed" &&
   rawCountReleaseOverride &&
