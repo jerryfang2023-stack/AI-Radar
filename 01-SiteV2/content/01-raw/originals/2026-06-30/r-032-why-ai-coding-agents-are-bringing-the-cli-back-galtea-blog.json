@@ -1,0 +1,274 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-032",
+  "title": "Why AI coding agents are bringing the CLI back | Galtea Blog",
+  "original_url": "https://galtea.ai/blog/why-ai-coding-agents-are-bringing-the-cli-back",
+  "canonical_url": "https://galtea.ai/blog/why-ai-coding-agents-are-bringing-the-cli-back",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "official_original",
+  "search_path_label": "官方原始路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "platform_enablement",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-06-30T02:26:24.652Z",
+  "language": "mixed",
+  "full_text": "TL;DR — The first thing that touches your API in 2026 is often a coding agent like Claude Code, Cursor, or GitHub Copilot, not a human reading a quickstart. Agents reach for shell binaries before they reach for SDKs, because curl and a CLI binary are the cheapest path from a natural-language task to a working integration. Tools that ship a CLI plus a published Agent Skill (or MCP server) get adopted faster than tools that ship only a dashboard and an SDK. If your product is not reachable from a shell, an agent will invent the integration for you, and the lost adoption is mostly invisible.\nA year ago, \"developer experience\" meant a clean dashboard, a well-documented SDK, and docs that matched reality. In 2026 it means something else. The first thing that often touches your API is not a human reading a quickstart. It is a coding agent, Claude Code or Cursor or Windsurf or GitHub Copilot, deciding in real time whether your product is reachable from a shell.\nIf the agent cannot reach your product cleanly, it improvises. It writes a brittle requests.post(...) against an endpoint it half-remembers, gets a 400, and moves on. Nobody files a ticket. The lost adoption shows up later, in a different funnel, attributed to nothing in particular.\nThe terminal has become a primary integration surface because agents use it well. Stripe, GitHub, Vercel, Supabase, and AWS all ship CLIs that humans use and agents can drive. Anthropic's Agent Skills format and the Model Context Protocol ecosystem are formalising the same idea from the other side: if you want an agent to use your product correctly, give it a binary it can call and a playbook it can trust.\nThe dashboard is for humans. The SDK is for code that humans write. The CLI plus a skill is for the agent that increasingly writes code on the human's behalf.\nIf your product is not reachable from a shell, an agent will invent the integration for you.\nThis piece is about why that shift is happening now, what shape a CLI has to be in to survive contact with an agent, and what we shipped at Galtea to meet developers in the terminal where they already work.\nThe shape of the gap\nThree things happened in parallel over the last 18 months, and together they changed the integration story for every AI-product company.\n‍ Coding agents stopped being autocomplete and started being operators. Cursor's agent mode, Anthropic's Claude Code, Windsurf's Cascade, and GitHub Copilot's agent mode all moved past snippet suggestions. By mid-2025 they were reading files, running shell commands, calling APIs, and iterating against results. The 2025 Stack Overflow Developer Survey shows AI tooling has become mainstream among professional developers. The interesting shift is not the headline adoption number, it is the move from autocomplete to agentic , tool-using workflows in the same surveys. ‍\nThe agent's hands are bash and HTTP, not your SDK. When an agent needs to do something it does not natively know, it tries the cheapest path. Most of the time that path is a shell command, because shell output is the universal interchange format inside the model's training distribution. Reaching for a language SDK means installing it, importing it, learning its surface, and writing a script the agent then has to execute. A curl call or a CLI binary skips all of that. Watch any agent transcript long enough: when the task is \"tell me X about service Y,\" the agent reaches first for gh , stripe , aws , kubectl , or psql . Python comes later, when the task gets structural. ‍\nThe contract between agent and tool is now explicit. Anthropic published the Agent Skills format in October 2025, and MCP servers have been multiplying on the same timeline. Both formats answer the same question: how does the model know how to drive this thing? A skill is a SKILL.md plus reference docs the agent loads on demand to learn which command to call, which gotchas to avoid, and which workflow to follow. An MCP server exposes a typed tool interface the agent can call directly, no shell required. The two approaches do not compete in a winner-takes-all way; they sit at different points on the same curve from \"agent reads the docs at runtime and guesses\" to \"agent calls a typed function.\"\nThe gap, then, is simple. Most SaaS products in the AI space, including Galtea until earlier this year, ship a dashboard and an SDK. The dashboard is for humans clicking through views. The SDK is for humans writing scripts. Neither is what the agent wants first. The agent wants a command it can call without thinking and a playbook that tells it which command to call. Tools that ship that contract get adopted faster. Tools that do not get hallucinated around, and the hallucinations look like adoption losses that no dashboard ever surfaces.\nWhy the CLI, not (only) the SDK\nThe instinct inside every AI-product company is to keep doubling down on the SDK. That instinct is not wrong. SDKs are how the ecosystem matured over the last decade. Stripe, Twilio, OpenAI, Anthropic, every infra vendor. They are still the right primitive for the workloads they cover: long-lived applications doing structured work inside a typed language, with concurrency and error handling that a shell pipe cannot express.\nWhat changed is the workload above the SDK. Quick lookups. One-off scripted operations. Multi-step orchestration the developer wants delegated, not authored. Three years ago a human would have opened the dashboard and clicked through five views. That work stayed in the dashboard because writing a Python script for it was disproportionate to the task. Now the agent writes the Python script in the time it takes the human to phrase the question, and in that regime, missing CLI coverage does not mean one missed shell pipe. It means one more failed agent loop.\nThere are three things a CLI has to get right to be the correct shape for the agent era.\n1. Cover the entire API surface, not a curated subset\nHand-curated CLIs (one verb per \"important\" endpoint) age badly, because the API ships faster than the CLI does. The agent asks for the missing endpoint, gets nothing, improvises, gets it wrong. The fix is auto-generation from an OpenAPI spec, the pattern used by the GitHub CLI , Stripe CLI , and Restish . Every endpoint becomes a command without anyone writing manual wiring code, and when the API ships a new resource on a Tuesday, the CLI ships it the same Tuesday.\n2. Feel like the SDK, not like the spec\nA raw OpenAPI-derived CLI exposes operation IDs like postProductsV1Create . Readable to the spec, illegible to the agent. Mature CLIs collapse those into <noun> <verb> ( gh pr list, stripe products list, aws s3 cp ) because that is the shape the agent has already seen ten thousand times in its training data. An agent that has used gh will try galtea products list before reading the docs. It should be right on the first try.\n3. Ship a playbook, not just commands\nThis is the part that feels new in 2026, and it is where most of the launches in this space are still finding their footing. A binary alone is not enough. The agent can get the syntax right and the workflow wrong: pick the wrong evaluation creation path, retry with a per-row filter when it should have used a batch filter, miss the async polling step entirely and report success on a job that has not finished.\nA published Agent Skill closes that gap. It is the institutional knowledge of the team that built the API, written for the model that will use it. Anthropic's Agent Skills format is one answer. MCP servers are another. There will be more. What is settled is that some version of this layer is now table stakes: the agent will not figure it out alone, and asking it to is how you ship a tool that gets adopted slowly or not at all.\nWhen the SDK is still the right primitive",
+  "clean_text": "TL;DR — The first thing that touches your API in 2026 is often a coding agent like Claude Code, Cursor, or GitHub Copilot, not a human reading a quickstart. Agents reach for shell binaries before they reach for SDKs, because curl and a CLI binary are the cheapest path from a natural-language task to a working integration. Tools that ship a CLI plus a published Agent Skill (or MCP server) get adopted faster than tools that ship only a dashboard and an SDK. If your product is not reachable from a shell, an agent will invent the integration for you, and the lost adoption is mostly invisible.\nA year ago, \"developer experience\" meant a clean dashboard, a well-documented SDK, and docs that matched reality. In 2026 it means something else. The first thing that often touches your API is not a human reading a quickstart. It is a coding agent, Claude Code or Cursor or Windsurf or GitHub Copilot, deciding in real time whether your product is reachable from a shell.\nIf the agent cannot reach your product cleanly, it improvises. It writes a brittle requests.post(...) against an endpoint it half-remembers, gets a 400, and moves on. Nobody files a ticket. The lost adoption shows up later, in a different funnel, attributed to nothing in particular.\nThe terminal has become a primary integration surface because agents use it well. Stripe, GitHub, Vercel, Supabase, and AWS all ship CLIs that humans use and agents can drive. Anthropic's Agent Skills format and the Model Context Protocol ecosystem are formalising the same idea from the other side: if you want an agent to use your product correctly, give it a binary it can call and a playbook it can trust.\nThe dashboard is for humans. The SDK is for code that humans write. The CLI plus a skill is for the agent that increasingly writes code on the human's behalf.\nIf your product is not reachable from a shell, an agent will invent the integration for you.\nThis piece is about why that shift is happening now, what shape a CLI has to be in to survive contact with an agent, and what we shipped at Galtea to meet developers in the terminal where they already work.\nThe shape of the gap\nThree things happened in parallel over the last 18 months, and together they changed the integration story for every AI-product company.\n‍ Coding agents stopped being autocomplete and started being operators. Cursor's agent mode, Anthropic's Claude Code, Windsurf's Cascade, and GitHub Copilot's agent mode all moved past snippet suggestions. By mid-2025 they were reading files, running shell commands, calling APIs, and iterating against results. The 2025 Stack Overflow Developer Survey shows AI tooling has become mainstream among professional developers. The interesting shift is not the headline adoption number, it is the move from autocomplete to agentic , tool-using workflows in the same surveys. ‍\nThe agent's hands are bash and HTTP, not your SDK. When an agent needs to do something it does not natively know, it tries the cheapest path. Most of the time that path is a shell command, because shell output is the universal interchange format inside the model's training distribution. Reaching for a language SDK means installing it, importing it, learning its surface, and writing a script the agent then has to execute. A curl call or a CLI binary skips all of that. Watch any agent transcript long enough: when the task is \"tell me X about service Y,\" the agent reaches first for gh , stripe , aws , kubectl , or psql . Python comes later, when the task gets structural. ‍\nThe contract between agent and tool is now explicit. Anthropic published the Agent Skills format in October 2025, and MCP servers have been multiplying on the same timeline. Both formats answer the same question: how does the model know how to drive this thing? A skill is a SKILL.md plus reference docs the agent loads on demand to learn which command to call, which gotchas to avoid, and which workflow to follow. An MCP server exposes a typed tool interface the agent can call directly, no shell required. The two approaches do not compete in a winner-takes-all way; they sit at different points on the same curve from \"agent reads the docs at runtime and guesses\" to \"agent calls a typed function.\"\nThe gap, then, is simple. Most SaaS products in the AI space, including Galtea until earlier this year, ship a dashboard and an SDK. The dashboard is for humans clicking through views. The SDK is for humans writing scripts. Neither is what the agent wants first. The agent wants a command it can call without thinking and a playbook that tells it which command to call. Tools that ship that contract get adopted faster. Tools that do not get hallucinated around, and the hallucinations look like adoption losses that no dashboard ever surfaces.\nWhy the CLI, not (only) the SDK\nThe instinct inside every AI-product company is to keep doubling down on the SDK. That instinct is not wrong. SDKs are how the ecosystem matured over the last decade. Stripe, Twilio, OpenAI, Anthropic, every infra vendor. They are still the right primitive for the workloads they cover: long-lived applications doing structured work inside a typed language, with concurrency and error handling that a shell pipe cannot express.\nWhat changed is the workload above the SDK. Quick lookups. One-off scripted operations. Multi-step orchestration the developer wants delegated, not authored. Three years ago a human would have opened the dashboard and clicked through five views. That work stayed in the dashboard because writing a Python script for it was disproportionate to the task. Now the agent writes the Python script in the time it takes the human to phrase the question, and in that regime, missing CLI coverage does not mean one missed shell pipe. It means one more failed agent loop.\nThere are three things a CLI has to get right to be the correct shape for the agent era.\n1. Cover the entire API surface, not a curated subset\nHand-curated CLIs (one verb per \"important\" endpoint) age badly, because the API ships faster than the CLI does. The agent asks for the missing endpoint, gets nothing, improvises, gets it wrong. The fix is auto-generation from an OpenAPI spec, the pattern used by the GitHub CLI , Stripe CLI , and Restish . Every endpoint becomes a command without anyone writing manual wiring code, and when the API ships a new resource on a Tuesday, the CLI ships it the same Tuesday.\n2. Feel like the SDK, not like the spec\nA raw OpenAPI-derived CLI exposes operation IDs like postProductsV1Create . Readable to the spec, illegible to the agent. Mature CLIs collapse those into <noun> <verb> ( gh pr list, stripe products list, aws s3 cp ) because that is the shape the agent has already seen ten thousand times in its training data. An agent that has used gh will try galtea products list before reading the docs. It should be right on the first try.\n3. Ship a playbook, not just commands\nThis is the part that feels new in 2026, and it is where most of the launches in this space are still finding their footing. A binary alone is not enough. The agent can get the syntax right and the workflow wrong: pick the wrong evaluation creation path, retry with a per-row filter when it should have used a batch filter, miss the async polling step entirely and report success on a job that has not finished.\nA published Agent Skill closes that gap. It is the institutional knowledge of the team that built the API, written for the model that will use it. Anthropic's Agent Skills format is one answer. MCP servers are another. There will be more. What is settled is that some version of this layer is now table stakes: the agent will not figure it out alone, and asking it to is how you ship a tool that gets adopted slowly or not at all.\nWhen the SDK is still the right primitive",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-30/r-032-why-ai-coding-agents-are-bringing-the-cli-back-galtea-blog.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-30/r-032-why-ai-coding-agents-are-bringing-the-cli-back-galtea-blog.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "high",
+  "extraction_method": "content-container",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 7805,
+    "paragraph_count": 25,
+    "sentence_count": 81,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0005,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 7805,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "00cb734850d5d38c",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "1a8efb11c86094fa",
+  "content_hash": "00cb734850d5d38c",
+  "full_text_hash": "00cb734850d5d38c",
+  "semantic_hash": "602b41d91fa66515",
+  "duplicate_of": "",
+  "first_seen_at": "2026-06-30T02:26:24.652Z",
+  "last_seen_at": "2026-06-30T02:26:24.652Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "product_update",
+      "text": "AI coding agents are bringing the CLI back APIs and SDKs made the GUI optional for power users. Coding agents are making the CLI strategic ... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "TL;DR — The first thing that touches your API in 2026 is often a coding agent like Claude Code, Cursor, or GitHub Copilot, not a human reading a quickstart.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "Agents reach for shell binaries before they reach for SDKs, because curl and a CLI binary are the cheapest path from a natural-language task to a working integration.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Tools that ship a CLI plus a published Agent Skill (or MCP server) get adopted faster than tools that ship only a dashboard and an SDK.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "If your product is not reachable from a shell, an agent will invent the integration for you, and the lost adoption is mostly invisible.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "quote",
+      "text": "A year ago, \"developer experience\" meant a clean dashboard, a well-documented SDK, and docs that matched reality.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Anthropic",
+      "GitHub",
+      "AWS",
+      "Cursor"
+    ],
+    "products": [
+      "agents",
+      "agent",
+      "Claude",
+      "Cursor",
+      "Copilot",
+      "Agents",
+      "Agent",
+      "MCP"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "2026",
+      "400",
+      "18 m",
+      "2025",
+      "1",
+      "2",
+      "3"
+    ],
+    "quotes": [
+      "developer experience",
+      "tell me X about service Y,",
+      "agent reads the docs at runtime and guesses",
+      "agent calls a typed function.",
+      "important"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "AI coding agents are bringing the CLI back APIs and SDKs made the GUI optional for power users. Coding agents are making the CLI strategic ... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original",
+      "Agents reach for shell binaries before they reach for SDKs, because curl and a CLI binary are the cheapest path from a natural-language task to a working integration.",
+      "Tools that ship a CLI plus a published Agent Skill (or MCP server) get adopted faster than tools that ship only a dashboard and an SDK."
+    ],
+    "case_details": [
+      "TL;DR — The first thing that touches your API in 2026 is often a coding agent like Claude Code, Cursor, or GitHub Copilot, not a human reading a quickstart."
+    ],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_case",
+    "importance_score": 5,
+    "importance_reason": "real customer or adoption case; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Why AI coding agents are bringing the CLI back | Galtea Blog\n\n- raw_id: R-032\n- original_url: https://galtea.ai/blog/why-ai-coding-agents-are-bringing-the-cli-back\n- source_name: keyword search / Anysearch\n- collected_at: 2026-06-30T02:26:24.652Z\n\n## clean_text\n\nTL;DR — The first thing that touches your API in 2026 is often a coding agent like Claude Code, Cursor, or GitHub Copilot, not a human reading a quickstart. Agents reach for shell binaries before they reach for SDKs, because curl and a CLI binary are the cheapest path from a natural-language task to a working integration. Tools that ship a CLI plus a published Agent Skill (or MCP server) get adopted faster than tools that ship only a dashboard and an SDK. If your product is not reachable from a shell, an agent will invent the integration for you, and the lost adoption is mostly invisible.\nA year ago, \"developer experience\" meant a clean dashboard, a well-documented SDK, and docs that matched reality. In 2026 it means something else. The first thing that often touches your API is not a human reading a quickstart. It is a coding agent, Claude Code or Cursor or Windsurf or GitHub Copilot, deciding in real time whether your product is reachable from a shell.\nIf the agent cannot reach your product cleanly, it improvises. It writes a brittle requests.post(...) against an endpoint it half-remembers, gets a 400, and moves on. Nobody files a ticket. The lost adoption shows up later, in a different funnel, attributed to nothing in particular.\nThe terminal has become a primary integration surface because agents use it well. Stripe, GitHub, Vercel, Supabase, and AWS all ship CLIs that humans use and agents can drive. Anthropic's Agent Skills format and the Model Context Protocol ecosystem are formalising the same idea from the other side: if you want an agent to use your product correctly, give it a binary it can call and a playbook it can trust.\nThe dashboard is for humans. The SDK is for code that humans write. The CLI plus a skill is for the agent that increasingly writes code on the human's behalf.\nIf your product is not reachable from a shell, an agent will invent the integration for you.\nThis piece is about why that shift is happening now, what shape a CLI has to be in to survive contact with an agent, and what we shipped at Galtea to meet developers in the terminal where they already work.\nThe shape of the gap\nThree things happened in parallel over the last 18 months, and together they changed the integration story for every AI-product company.\n‍ Coding agents stopped being autocomplete and started being operators. Cursor's agent mode, Anthropic's Claude Code, Windsurf's Cascade, and GitHub Copilot's agent mode all moved past snippet suggestions. By mid-2025 they were reading files, running shell commands, calling APIs, and iterating against results. The 2025 Stack Overflow Developer Survey shows AI tooling has become mainstream among professional developers. The interesting shift is not the headline adoption number, it is the move from autocomplete to agentic , tool-using workflows in the same surveys. ‍\nThe agent's hands are bash and HTTP, not your SDK. When an agent needs to do something it does not natively know, it tries the cheapest path. Most of the time that path is a shell command, because shell output is the universal interchange format inside the model's training distribution. Reaching for a language SDK means installing it, importing it, learning its surface, and writing a script the agent then has to execute. A curl call or a CLI binary skips all of that. Watch any agent transcript long enough: when the task is \"tell me X about service Y,\" the agent reaches first for gh , stripe , aws , kubectl , or psql . Python comes later, when the task gets structural. ‍\nThe contract between agent and tool is now explicit. Anthropic published the Agent Skills format in October 2025, and MCP servers have been multiplying on the same timeline. Both formats answer the same question: how does the model know how to drive this thing? A skill is a SKILL.md plus reference docs the agent loads on demand to learn which command to call, which gotchas to avoid, and which workflow to follow. An MCP server exposes a typed tool interface the agent can call directly, no shell required. The two approaches do not compete in a winner-takes-all way; they sit at different points on the same curve from \"agent reads the docs at runtime and guesses\" to \"agent calls a typed function.\"\nThe gap, then, is simple. Most SaaS products in the AI space, including Galtea until earlier this year, ship a dashboard and an SDK. The dashboard is for humans clicking through views. The SDK is for humans writing scripts. Neither is what the agent wants first. The agent wants a command it can call without thinking and a playbook that tells it which command to call. Tools that ship that contract get adopted faster. Tools that do not get hallucinated around, and the hallucinations look like adoption losses that no dashboard ever surfaces.\nWhy the CLI, not (only) the SDK\nThe instinct inside every AI-product company is to keep doubling down on the SDK. That instinct is not wrong. SDKs are how the ecosystem matured over the last decade. Stripe, Twilio, OpenAI, Anthropic, every infra vendor. They are still the right primitive for the workloads they cover: long-lived applications doing structured work inside a typed language, with concurrency and error handling that a shell pipe cannot express.\nWhat changed is the workload above the SDK. Quick lookups. One-off scripted operations. Multi-step orchestration the developer wants delegated, not authored. Three years ago a human would have opened the dashboard and clicked through five views. That work stayed in the dashboard because writing a Python script for it was disproportionate to the task. Now the agent writes the Python script in the time it takes the human to phrase the question, and in that regime, missing CLI coverage does not mean one missed shell pipe. It means one more failed agent loop.\nThere are three things a CLI has to get right to be the correct shape for the agent era.\n1. Cover the entire API surface, not a curated subset\nHand-curated CLIs (one verb per \"important\" endpoint) age badly, because the API ships faster than the CLI does. The agent asks for the missing endpoint, gets nothing, improvises, gets it wrong. The fix is auto-generation from an OpenAPI spec, the pattern used by the GitHub CLI , Stripe CLI , and Restish . Every endpoint becomes a command without anyone writing manual wiring code, and when the API ships a new resource on a Tuesday, the CLI ships it the same Tuesday.\n2. Feel like the SDK, not like the spec\nA raw OpenAPI-derived CLI exposes operation IDs like postProductsV1Create . Readable to the spec, illegible to the agent. Mature CLIs collapse those into <noun> <verb> ( gh pr list, stripe products list, aws s3 cp ) because that is the shape the agent has already seen ten thousand times in its training data. An agent that has used gh will try galtea products list before reading the docs. It should be right on the first try.\n3. Ship a playbook, not just commands\nThis is the part that feels new in 2026, and it is where most of the launches in this space are still finding their footing. A binary alone is not enough. The agent can get the syntax right and the workflow wrong: pick the wrong evaluation creation path, retry with a per-row filter when it should have used a batch filter, miss the async polling step entirely and report success on a job that has not finished.\nA published Agent Skill closes that gap. It is the institutional knowledge of the team that built the API, written for the model that will use it. Anthropic's Agent Skills format is one answer. MCP servers are another. There will be more. What is settled is that some version of this layer is now table stakes: the agent will not figure it out alone, and asking it to is how you ship a tool that gets adopted slowly or not at all.\nWhen the SDK is still the right primitive\n\n## full_text\n\nTL;DR — The first thing that touches your API in 2026 is often a coding agent like Claude Code, Cursor, or GitHub Copilot, not a human reading a quickstart. Agents reach for shell binaries before they reach for SDKs, because curl and a CLI binary are the cheapest path from a natural-language task to a working integration. Tools that ship a CLI plus a published Agent Skill (or MCP server) get adopted faster than tools that ship only a dashboard and an SDK. If your product is not reachable from a shell, an agent will invent the integration for you, and the lost adoption is mostly invisible.\nA year ago, \"developer experience\" meant a clean dashboard, a well-documented SDK, and docs that matched reality. In 2026 it means something else. The first thing that often touches your API is not a human reading a quickstart. It is a coding agent, Claude Code or Cursor or Windsurf or GitHub Copilot, deciding in real time whether your product is reachable from a shell.\nIf the agent cannot reach your product cleanly, it improvises. It writes a brittle requests.post(...) against an endpoint it half-remembers, gets a 400, and moves on. Nobody files a ticket. The lost adoption shows up later, in a different funnel, attributed to nothing in particular.\nThe terminal has become a primary integration surface because agents use it well. Stripe, GitHub, Vercel, Supabase, and AWS all ship CLIs that humans use and agents can drive. Anthropic's Agent Skills format and the Model Context Protocol ecosystem are formalising the same idea from the other side: if you want an agent to use your product correctly, give it a binary it can call and a playbook it can trust.\nThe dashboard is for humans. The SDK is for code that humans write. The CLI plus a skill is for the agent that increasingly writes code on the human's behalf.\nIf your product is not reachable from a shell, an agent will invent the integration for you.\nThis piece is about why that shift is happening now, what shape a CLI has to be in to survive contact with an agent, and what we shipped at Galtea to meet developers in the terminal where they already work.\nThe shape of the gap\nThree things happened in parallel over the last 18 months, and together they changed the integration story for every AI-product company.\n‍ Coding agents stopped being autocomplete and started being operators. Cursor's agent mode, Anthropic's Claude Code, Windsurf's Cascade, and GitHub Copilot's agent mode all moved past snippet suggestions. By mid-2025 they were reading files, running shell commands, calling APIs, and iterating against results. The 2025 Stack Overflow Developer Survey shows AI tooling has become mainstream among professional developers. The interesting shift is not the headline adoption number, it is the move from autocomplete to agentic , tool-using workflows in the same surveys. ‍\nThe agent's hands are bash and HTTP, not your SDK. When an agent needs to do something it does not natively know, it tries the cheapest path. Most of the time that path is a shell command, because shell output is the universal interchange format inside the model's training distribution. Reaching for a language SDK means installing it, importing it, learning its surface, and writing a script the agent then has to execute. A curl call or a CLI binary skips all of that. Watch any agent transcript long enough: when the task is \"tell me X about service Y,\" the agent reaches first for gh , stripe , aws , kubectl , or psql . Python comes later, when the task gets structural. ‍\nThe contract between agent and tool is now explicit. Anthropic published the Agent Skills format in October 2025, and MCP servers have been multiplying on the same timeline. Both formats answer the same question: how does the model know how to drive this thing? A skill is a SKILL.md plus reference docs the agent loads on demand to learn which command to call, which gotchas to avoid, and which workflow to follow. An MCP server exposes a typed tool interface the agent can call directly, no shell required. The two approaches do not compete in a winner-takes-all way; they sit at different points on the same curve from \"agent reads the docs at runtime and guesses\" to \"agent calls a typed function.\"\nThe gap, then, is simple. Most SaaS products in the AI space, including Galtea until earlier this year, ship a dashboard and an SDK. The dashboard is for humans clicking through views. The SDK is for humans writing scripts. Neither is what the agent wants first. The agent wants a command it can call without thinking and a playbook that tells it which command to call. Tools that ship that contract get adopted faster. Tools that do not get hallucinated around, and the hallucinations look like adoption losses that no dashboard ever surfaces.\nWhy the CLI, not (only) the SDK\nThe instinct inside every AI-product company is to keep doubling down on the SDK. That instinct is not wrong. SDKs are how the ecosystem matured over the last decade. Stripe, Twilio, OpenAI, Anthropic, every infra vendor. They are still the right primitive for the workloads they cover: long-lived applications doing structured work inside a typed language, with concurrency and error handling that a shell pipe cannot express.\nWhat changed is the workload above the SDK. Quick lookups. One-off scripted operations. Multi-step orchestration the developer wants delegated, not authored. Three years ago a human would have opened the dashboard and clicked through five views. That work stayed in the dashboard because writing a Python script for it was disproportionate to the task. Now the agent writes the Python script in the time it takes the human to phrase the question, and in that regime, missing CLI coverage does not mean one missed shell pipe. It means one more failed agent loop.\nThere are three things a CLI has to get right to be the correct shape for the agent era.\n1. Cover the entire API surface, not a curated subset\nHand-curated CLIs (one verb per \"important\" endpoint) age badly, because the API ships faster than the CLI does. The agent asks for the missing endpoint, gets nothing, improvises, gets it wrong. The fix is auto-generation from an OpenAPI spec, the pattern used by the GitHub CLI , Stripe CLI , and Restish . Every endpoint becomes a command without anyone writing manual wiring code, and when the API ships a new resource on a Tuesday, the CLI ships it the same Tuesday.\n2. Feel like the SDK, not like the spec\nA raw OpenAPI-derived CLI exposes operation IDs like postProductsV1Create . Readable to the spec, illegible to the agent. Mature CLIs collapse those into <noun> <verb> ( gh pr list, stripe products list, aws s3 cp ) because that is the shape the agent has already seen ten thousand times in its training data. An agent that has used gh will try galtea products list before reading the docs. It should be right on the first try.\n3. Ship a playbook, not just commands\nThis is the part that feels new in 2026, and it is where most of the launches in this space are still finding their footing. A binary alone is not enough. The agent can get the syntax right and the workflow wrong: pick the wrong evaluation creation path, retry with a per-row filter when it should have used a batch filter, miss the async polling step entirely and report success on a job that has not finished.\nA published Agent Skill closes that gap. It is the institutional knowledge of the team that built the API, written for the model that will use it. Anthropic's Agent Skills format is one answer. MCP servers are another. There will be more. What is settled is that some version of this layer is now table stakes: the agent will not figure it out alone, and asking it to is how you ship a tool that gets adopted slowly or not at all.\nWhen the SDK is still the right primitive\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 97\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: high\n\n## key_excerpts\n\n1. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] AI coding agents are bringing the CLI back APIs and SDKs made the GUI optional for power users. Coding agents are making the CLI strategic ... / query=AI coding agent API SDK release enterprise product update 2026 / intent=find_original_source / path=official_original\n2. [case_detail / signal_card_candidate, relationship_graph_input, case / high] TL;DR — The first thing that touches your API in 2026 is often a coding agent like Claude Code, Cursor, or GitHub Copilot, not a human reading a quickstart.\n3. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] Agents reach for shell binaries before they reach for SDKs, because curl and a CLI binary are the cheapest path from a natural-language task to a working integration.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Tools that ship a CLI plus a published Agent Skill (or MCP server) get adopted faster than tools that ship only a dashboard and an SDK.\n5. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] If your product is not reachable from a shell, an agent will invent the integration for you, and the lost adoption is mostly invisible.\n6. [quote / signal_card_candidate, relationship_graph_input, viewpoint / high] A year ago, \"developer experience\" meant a clean dashboard, a well-documented SDK, and docs that matched reality.\n"
+}

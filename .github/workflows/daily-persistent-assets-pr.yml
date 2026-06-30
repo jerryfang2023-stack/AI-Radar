@@ -198,6 +198,8 @@ jobs:
                 --search-path-query-limit=5 \
                 --gdelt-query-limit=12 \
                 --hn-limit=8 \
+                --raw-dedupe-buffer=140 \
+                --raw-max=360 \
                 --fetch-timeout-ms=20000
             } >"$log_file" 2>&1 &
             pids+=("$!")
@@ -239,6 +241,8 @@ jobs:
             --search-path-query-limit=5 \
             --gdelt-query-limit=12 \
             --hn-limit=8 \
+            --raw-dedupe-buffer=140 \
+            --raw-max=360 \
             --fetch-timeout-ms=20000 \
             --snapshot-timeout-ms=16000 \
             --use-source-artifacts=true \

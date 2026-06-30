@@ -1,0 +1,255 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-058",
+  "title": "Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding",
+  "original_url": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
+  "canonical_url": "https://simonwillison.net/2026/Jun/29/ornith",
+  "source_name": "Simon Willison's Blog",
+  "source_type": "builder",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "event",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-06-29T16:17:59.000Z",
+  "collected_at": "2026-06-30T02:26:24.846Z",
+  "language": "mixed",
+  "full_text": "29th June 2026 - Link Blog\nOrnith-1.0: Self-Scaffolding LLMs for Agentic Coding . This is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce.\n[...] with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE. Built on top of pretrained Gemma 4 and Qwen 3.5, it achieves state-of-the-art performance among open-source models of comparable size on coding benchmarks.\nAs far as I can tell the licenses of those underlying models is compatible with being used in this way - Gemma 4 is Apache 2.0 licensed (and not bound by the janky additional Gemma Terms of Use that afflicted the previous Gemma models) and Qwen 3.5 is Apache 2.0 licensed as well.\nI've been running the model using LM Studio and the ornith-1.0-35b-Q4_K_M.gguf (20GB) GGUF, hooked up to Pi . Initial impressions are very good - it seems to be able to run the agent harness over many tool calls in a proficient way.\nHere's a terminal session where I asked it to \"find the code that decodes the actor cookie\" and then \"find the code that opens the insert dialog when thebutton is clicked\" against a Datasette checkout, which it handled with ease.\nI also had it draw this pelican , which came out at 103 tokens/second:\nIt's a little bit mangled but the pelican is clearly a pelican.\nI couldn't find much information about DeepReinforce themselves. The earliest paper I could find from the was CUDA-L1: Improving CUDA Optimization via Contrastive Reinforcement Learning from June 2025.",
+  "clean_text": "29th June 2026 - Link Blog\nOrnith-1.0: Self-Scaffolding LLMs for Agentic Coding . This is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce.\n[...] with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE. Built on top of pretrained Gemma 4 and Qwen 3.5, it achieves state-of-the-art performance among open-source models of comparable size on coding benchmarks.\nAs far as I can tell the licenses of those underlying models is compatible with being used in this way - Gemma 4 is Apache 2.0 licensed (and not bound by the janky additional Gemma Terms of Use that afflicted the previous Gemma models) and Qwen 3.5 is Apache 2.0 licensed as well.\nI've been running the model using LM Studio and the ornith-1.0-35b-Q4_K_M.gguf (20GB) GGUF, hooked up to Pi . Initial impressions are very good - it seems to be able to run the agent harness over many tool calls in a proficient way.\nHere's a terminal session where I asked it to \"find the code that decodes the actor cookie\" and then \"find the code that opens the insert dialog when thebutton is clicked\" against a Datasette checkout, which it handled with ease.\nI also had it draw this pelican , which came out at 103 tokens/second:\nIt's a little bit mangled but the pelican is clearly a pelican.\nI couldn't find much information about DeepReinforce themselves. The earliest paper I could find from the was CUDA-L1: Improving CUDA Optimization via Contrastive Reinforcement Learning from June 2025.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-30/r-058-ornith-1-0-self-scaffolding-llms-for-agentic-coding.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-06-30/r-058-ornith-1-0-self-scaffolding-llms-for-agentic-coding.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "medium",
+  "extraction_method": "content-container",
+  "readability_score": 61,
+  "extractor_diagnostics": {
+    "readability_score": 61,
+    "text_length": 1498,
+    "paragraph_count": 9,
+    "sentence_count": 11,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0.0027,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 1498,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "93c6acfe2a1aa2a9",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "merged_provider_duplicates",
+  "url_hash": "83b7af0b547d691d",
+  "content_hash": "93c6acfe2a1aa2a9",
+  "full_text_hash": "93c6acfe2a1aa2a9",
+  "semantic_hash": "f1773c0604b64169",
+  "duplicate_of": "merged 1 duplicate provider hit(s) before Raw selection",
+  "first_seen_at": "2026-06-29T16:17:59.000Z",
+  "last_seen_at": "2026-06-30T02:26:24.846Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "&lt;p&gt;&lt;strong&gt;&lt;a href=\"https://deep-reinforce.com/ornith_1_0.html\"&gt;Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; This is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;[...] with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE. Built on top of pretrained Gemma 4 and Qwen 3.5, it achieves state-of-the-art performance among open-source mode",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "29th June 2026 - Link Blog Ornith-1.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "0: Self-Scaffolding LLMs for Agentic Coding .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "product_update",
+      "text": "This is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "] with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Built on top of pretrained Gemma 4 and Qwen 3.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Simon Willison's Blog"
+    ],
+    "products": [
+      "agent"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人"
+    ],
+    "workflows": [],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全"
+    ],
+    "numbers": [
+      "1.0",
+      "1",
+      "0",
+      "9B",
+      "31B",
+      "35B",
+      "397B",
+      "4"
+    ],
+    "quotes": [
+      "https://deep-reinforce.com/ornith_1_0.html",
+      "find the code that decodes the actor cookie",
+      "find the code that opens the insert dialog when thebutton is clicked"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "29th June 2026 - Link Blog Ornith-1.",
+      "0: Self-Scaffolding LLMs for Agentic Coding .",
+      "This is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [],
+    "affected_roles": [
+      "CIO / IT 负责人"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_technical_trend",
+    "importance_score": 5,
+    "importance_reason": "technical trend or capability shift; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 4,
+    "trend_relevance": 5,
+    "guanlan_relevance": 4,
+    "emerging_signal_score": 2
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": false,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例",
+    "没有变化前后流程线索"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding\n\n- raw_id: R-058\n- original_url: https://simonwillison.net/2026/Jun/29/ornith/#atom-everything\n- source_name: Simon Willison's Blog\n- collected_at: 2026-06-30T02:26:24.846Z\n\n## clean_text\n\n29th June 2026 - Link Blog\nOrnith-1.0: Self-Scaffolding LLMs for Agentic Coding . This is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce.\n[...] with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE. Built on top of pretrained Gemma 4 and Qwen 3.5, it achieves state-of-the-art performance among open-source models of comparable size on coding benchmarks.\nAs far as I can tell the licenses of those underlying models is compatible with being used in this way - Gemma 4 is Apache 2.0 licensed (and not bound by the janky additional Gemma Terms of Use that afflicted the previous Gemma models) and Qwen 3.5 is Apache 2.0 licensed as well.\nI've been running the model using LM Studio and the ornith-1.0-35b-Q4_K_M.gguf (20GB) GGUF, hooked up to Pi . Initial impressions are very good - it seems to be able to run the agent harness over many tool calls in a proficient way.\nHere's a terminal session where I asked it to \"find the code that decodes the actor cookie\" and then \"find the code that opens the insert dialog when thebutton is clicked\" against a Datasette checkout, which it handled with ease.\nI also had it draw this pelican , which came out at 103 tokens/second:\nIt's a little bit mangled but the pelican is clearly a pelican.\nI couldn't find much information about DeepReinforce themselves. The earliest paper I could find from the was CUDA-L1: Improving CUDA Optimization via Contrastive Reinforcement Learning from June 2025.\n\n## full_text\n\n29th June 2026 - Link Blog\nOrnith-1.0: Self-Scaffolding LLMs for Agentic Coding . This is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce.\n[...] with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE. Built on top of pretrained Gemma 4 and Qwen 3.5, it achieves state-of-the-art performance among open-source models of comparable size on coding benchmarks.\nAs far as I can tell the licenses of those underlying models is compatible with being used in this way - Gemma 4 is Apache 2.0 licensed (and not bound by the janky additional Gemma Terms of Use that afflicted the previous Gemma models) and Qwen 3.5 is Apache 2.0 licensed as well.\nI've been running the model using LM Studio and the ornith-1.0-35b-Q4_K_M.gguf (20GB) GGUF, hooked up to Pi . Initial impressions are very good - it seems to be able to run the agent harness over many tool calls in a proficient way.\nHere's a terminal session where I asked it to \"find the code that decodes the actor cookie\" and then \"find the code that opens the insert dialog when thebutton is clicked\" against a Datasette checkout, which it handled with ease.\nI also had it draw this pelican , which came out at 103 tokens/second:\nIt's a little bit mangled but the pelican is clearly a pelican.\nI couldn't find much information about DeepReinforce themselves. The earliest paper I could find from the was CUDA-L1: Improving CUDA Optimization via Contrastive Reinforcement Learning from June 2025.\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 61\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: medium\n\n## key_excerpts\n\n1. [quote / signal_card_candidate, relationship_graph_input, viewpoint / high] &lt;p&gt;&lt;strong&gt;&lt;a href=\"https://deep-reinforce.com/ornith_1_0.html\"&gt;Ornith-1.0: Self-Scaffolding LLMs for Agentic Coding&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; This is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;[...] with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE. Built on top of pretrained Gemma 4 and Qwen 3.5, it achieves state-of-the-art performance among open-source mode\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 29th June 2026 - Link Blog Ornith-1.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 0: Self-Scaffolding LLMs for Agentic Coding .\n4. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] This is an interesting new open weights (MIT licensed) model, the first model release from DeepReinforce.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] ] with variants including 9B Dense, 31B Dense, 35B MoE, and 397B MoE.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Built on top of pretrained Gemma 4 and Qwen 3.\n"
+}

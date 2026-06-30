@@ -1,0 +1,16 @@
+# 2026-06-30 First-Line Viewpoints Manifest
+
+- generated_at: 2026-06-30T13:18:36+08:00
+- workflow_mode: first_line_viewpoints_pr
+- trigger: schedule
+- skip: false
+- skip_reason: not_applicable
+- existing_data_date: 2026-06-30
+- builder_blogs: success
+- builder_podcasts: success
+- builders_data: success
+- builders_gate: success
+- obsidian_sync: success
+- data_file: present
+
+This lane updates only First-Line Viewpoints and its Obsidian viewpoint timelines. It must not write business-signal Cards, relationship graph data, trend candidates, or community intelligence data.

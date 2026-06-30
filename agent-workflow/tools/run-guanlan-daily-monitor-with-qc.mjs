@@ -58,6 +58,8 @@ function buildMonitorArgsForCycle(cycle) {
   const searchPathBase = toNumber(args.get("search-path-query-limit"), 5);
   const gdeltBase = toNumber(args.get("gdelt-query-limit"), 8);
   const hnBase = toNumber(args.get("hn-limit"), 8);
+  const rawDedupeBufferBase = toNumber(args.get("raw-dedupe-buffer"), toNumber(retryTuning.raw_dedupe_buffer_base, 40));
+  const rawMaxBase = toNumber(args.get("raw-max"), toNumber(retryTuning.raw_max_base, 220));
   const fetchTimeout = toNumber(args.get("fetch-timeout-ms"), 20000);
   const snapshotTimeout = toNumber(args.get("snapshot-timeout-ms"), 16000);
   const useSourceArtifacts = args.get("use-source-artifacts") === "true" || args.has("source-artifact-dir");
@@ -66,16 +68,22 @@ function buildMonitorArgsForCycle(cycle) {
   const searchPathStep = toNumber(retryTuning.search_path_query_limit_step, 1);
   const gdeltStep = toNumber(retryTuning.gdelt_query_limit_step, 1);
   const hnStep = toNumber(retryTuning.hn_limit_step, 0);
+  const rawDedupeBufferStep = toNumber(retryTuning.raw_dedupe_buffer_step, 0);
+  const rawMaxStep = toNumber(retryTuning.raw_max_step, 0);
   const searchLimitMax = toNumber(retryTuning.search_limit_max, 220);
   const searchPathMax = toNumber(retryTuning.search_path_query_limit_max, 5);
   const gdeltMax = toNumber(retryTuning.gdelt_query_limit_max, 15);
   const hnMax = toNumber(retryTuning.hn_limit_max, 8);
+  const rawDedupeBufferMax = toNumber(retryTuning.raw_dedupe_buffer_max, rawDedupeBufferBase);
+  const rawMaxMax = toNumber(retryTuning.raw_max_max, rawMaxBase);
 
   const round = Math.max(0, cycle - 1);
   const searchLimit = Math.min(searchLimitMax, searchLimitBase + round * searchLimitStep);
   const searchPathLimit = Math.min(searchPathMax, searchPathBase + round * searchPathStep);
   const gdeltLimit = Math.min(gdeltMax, gdeltBase + round * gdeltStep);
   const hnLimit = Math.min(hnMax, hnBase + round * hnStep);
+  const rawDedupeBuffer = Math.min(rawDedupeBufferMax, rawDedupeBufferBase + round * rawDedupeBufferStep);
+  const rawMax = Math.min(rawMaxMax, rawMaxBase + round * rawMaxStep);
 
   const monitorArgs = [
     `--date=${date}`,
@@ -83,9 +91,14 @@ function buildMonitorArgsForCycle(cycle) {
     `--search-path-query-limit=${searchPathLimit}`,
     `--gdelt-query-limit=${gdeltLimit}`,
     `--hn-limit=${hnLimit}`,
+    `--raw-dedupe-buffer=${rawDedupeBuffer}`,
+    `--raw-max=${rawMax}`,
     `--fetch-timeout-ms=${fetchTimeout}`,
     `--snapshot-timeout-ms=${snapshotTimeout}`,
   ];
+  for (const passthrough of ["raw-min", "raw-target"]) {
+    if (args.has(passthrough)) monitorArgs.push(`--${passthrough}=${args.get(passthrough)}`);
+  }
   if (useSourceArtifacts) monitorArgs.push("--use-source-artifacts=true");
   if (sourceArtifactDir) monitorArgs.push(`--source-artifact-dir=${sourceArtifactDir}`);
   return monitorArgs;

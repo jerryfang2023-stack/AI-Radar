@@ -1,4 +1,4 @@
-﻿# Daily Monitor Evals
+# Daily Monitor Evals
 
 Run these pass/fail checks when running, repairing, or updating the current WaveSight AI daily monitor source-capture layer.
 
