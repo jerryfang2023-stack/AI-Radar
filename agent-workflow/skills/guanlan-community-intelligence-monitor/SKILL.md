@@ -3,7 +3,7 @@ name: guanlan-community-intelligence-monitor
 description: Use when supervising, running, repairing, or improving the WaveSight AI V3.3.6 Community Intelligence lane. Covers local logged-in collection, archive generation, community data gate, local publish handoff, GitHub publish PR, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals facts, Signal Cards, relationship graph evidence, trend candidates, or First-Line Viewpoints.
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.0.1"
     lane: "Community Intelligence"
     status: "current lane owner"
     order: 30
@@ -11,7 +11,7 @@ metadata:
     upstream: "local Windows collection, community publish workflow, Hermes inbox"
     downstream: "community frontstage data, archive snapshots, community PR publication"
     gates: "local collection availability, community data assertion, archive presence, publication completeness"
-    recent_learning: "GitHub can publish validated community files but cannot replace logged-in local collection."
+    recent_learning: "Healthy same-date community data with an open PR or queued publish workflow is Waiting, not a collection failure or repair inbox."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -59,8 +59,9 @@ For regression prevention, read `evals/community-intelligence-monitor-evals.md`.
 5. Confirm archive outputs and daily snapshots exist.
 6. Publish only validated community-owned files through the community automation PR route.
 7. Treat local collection success without PR / merge / Pages publication as incomplete publication.
-8. Add or tighten evals before adding long prose when a failure recurs.
-9. Close Hermes inbox items only after validation and prevention are recorded.
+8. When same-date data, archive, and gate are healthy, report open PRs or queued / in-progress publish workflows under Waiting, not Problems.
+9. Add or tighten evals before adding long prose when a failure recurs.
+10. Close Hermes inbox items only after validation and prevention are recorded.
 
 ## Failure Router
 
@@ -73,6 +74,7 @@ Classify Community Intelligence failures by the earliest broken stage. Do not re
 | Local gate failed | Same-date data exists but `assert-community-intelligence-data.mjs` fails | Fix data shape, item/link floors, collector errors, or archive outputs, then rerun the gate. |
 | Publish workflow failed before gate | GitHub publish run fails while same-date local files are absent or stale on `main` | Stop GitHub retries; run local collection / archive first. |
 | Publish workflow shell / PR failure | Local data is healthy, but publish workflow fails in shell, branch, PR, auto-merge, or permissions | Repair workflow / PR handling only; do not rerun browser collection unless local data changed. |
+| Publication waiting | Same-date local data, archive, and gate are healthy, and a same-date PR is open or publish workflow is queued / in progress | Report Waiting and recheck; do not create a Hermes repair inbox or rerun collection. |
 | Published but not deployed | PR merged but Pages is not updated yet | Wait for Pages or inspect GitHub Pages workflow; local collection is already complete. |
 
 ## 2026-06-08 To 2026-06-14 Review Lessons
@@ -95,6 +97,13 @@ The preferred before-10:00 path is:
 5. 09:45 / 09:55 only re-check queued / in-progress / failed publish states. Do not retry the browser collector in GitHub.
 6. 10:50 confirms PR merge and Pages. If Pages is still running, report waiting rather than local failure.
 
+## 2026-06-30 Publication Waiting Rule
+
+- Same-date local data, daily snapshot, Obsidian archive, selected keywords, links, and `assert:community-intelligence` passing are enough to mark collection healthy.
+- An open same-date Community Intelligence PR or queued / in-progress publish workflow after healthy local data is a Waiting state, not a Problem.
+- Waiting-only publication state must not create Hermes repair inbox items.
+- If a later same-date PR merges and Pages succeeds, resolve stale Hermes red states without recollecting.
+
 ## Lane Boundaries
 
 - Community posts are leads, not verified Business Signals.
@@ -112,6 +121,7 @@ When finishing, report:
 - community gate result;
 - archive / daily snapshot status;
 - publication PR / merge / Pages status;
+- Waiting vs Problems split when publication is still open or queued;
 - files changed;
 - prevention artifact added or not needed;
 - Hermes inbox item status.

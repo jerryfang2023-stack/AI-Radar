@@ -8,6 +8,13 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 - A missing same-date GitHub fallback run is not a failure when local 08:30 data / gate already passed. Report it only as observability or local automation evidence, not as a reason to dispatch another RSS workflow.
 - After local repair writes the same-date gate, rerun daily supervision or resolve the stale Hermes inbox. Do not let a pre-repair missing-gate report override the newer passed gate.
 
+## 2026-06-30 Original-Date Sync And Publish Reports
+
+- First-Line Obsidian timelines are keyed by each source item's original date, not the production run date. A same-day run can have zero `### <run-date>` headings and still be healthy if `sync-follow-builders-to-opinion-timelines --from=<run-date> --to=<run-date> --dry-run=true` reports `added: 0`.
+- The morning GitHub fallback must skip when same-date `follow-builders-daily.json` exists and sync dry-run is idempotent; counting only same-day headings creates duplicate PRs.
+- Afternoon skill reports must expose `publish_status`, `publish_error`, and `obsidian_sync_*` counts. `publish_status: failed` is a real lane failure even if feed/archive output exists.
+- If a same-date afternoon publish report, output count, and Obsidian sync counts are already healthy, the local publisher should skip instead of opening another PR.
+
 ## 2026-06-12
 
 - V3.3.6+ First-Line Viewpoints success requires both fresh frontstage JSON and Obsidian person/date timeline persistence. Old month files such as `YYYY-MM.md` are legacy evidence, not current sync proof.

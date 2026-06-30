@@ -1,7 +1,7 @@
 ---
 status: current
 scope: hermes-daily-supervision
-last_updated: 2026-06-23
+last_updated: 2026-06-30
 use_when:
   - hermes daily supervision
   - monitor dispatch
@@ -15,11 +15,11 @@ Hermes is the daily supervisor for WaveSight AI. It should observe, classify, an
 
 ## Current Version Context
 
-- Current site version: `SITE-V3.3.8.4`.
+- Current site version: `SITE-V3.3.8.6`.
 - Current Hermes supervision contract: `V3.3.6.2-hermes-staged-handoff`.
 - Current Business Signals data contract: `V3.3.6.3-business-source-artifact-aggregation`.
 - Version ledger: `context/version-ledger.md`.
-- SITE-V3.3.8.4 keeps First-Line Viewpoints person / date Obsidian persistence, Business Signals title / candidate dedupe gates, source-artifact aggregation, Core Pool source-hygiene gates, the Enterprise AI / FDE Lens Pool, Community Intelligence local-first collection, the weekly report Intelligence Map route, the source-backed Intelligence Map opportunity radar, and Hermes staged early handoff: 09:30 Community / First-Line, 09:45 Business, 09:55 final review only.
+- SITE-V3.3.8.6 keeps First-Line Viewpoints person / original-date Obsidian persistence with dry-run idempotency, Business Signals title / candidate dedupe gates, source-artifact aggregation, Core Pool source-hygiene gates, peer Raw artifact channels, Pool/Core release override for provider-caused Raw shortfall, the Enterprise AI / FDE Lens Pool, Community Intelligence local-first collection with Waiting-vs-Problem publication separation, the weekly report Intelligence Map route, the source-backed Intelligence Map opportunity radar, and Hermes staged early handoff: 09:30 Community / First-Line, 09:45 Business, 09:55 final review only.
 - Hermes must treat old month timeline files such as `YYYY-MM.md` as legacy / cleanup candidates, not as proof that current sync is healthy.
 - Do not judge Codex work by commit author name. In this repository Codex commits may use the configured Git identity.
 
@@ -116,7 +116,7 @@ agent-workflow/inbox/hermes-to-codex/
 | 10:45 | Community Publish Fallback | Let the second Community Intelligence publish window run if first publication did not reach `main`. GitHub Pages follows after merge to `main`. |
 | 10:50 | Site publication | Check lane PR / merge / Pages status when GitHub state is available and after the Community 10:45 fallback window has had a chance to start. For Business Signals also check same-date data, Top10 count, and local sync status. |
 | 10:55 | Hermes Morning Recovery | Run `npm run hermes:morning-recovery -- --date=<YYYY-MM-DD>` or the GitHub workflow `.github/workflows/hermes-morning-recovery.yml`. If any lane is `failed` or `manual_required`, dispatch bounded recovery, then write the action/result report and Codex handoff artifacts. Do not run a second routine morning recovery pass. |
-| 16:30 | Hermes Afternoon Record | Check the follow-builders skill publish report, `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, and the report's Obsidian sync counts. If the report, output, or Obsidian sync result is missing, write a Codex handoff for the afternoon skill lane. |
+| 16:30 | Hermes Afternoon Record | Check the follow-builders skill publish report, `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, the report's `publish_status` / `publish_error`, and `obsidian_sync_*` counts. If the report, output, publish closure, or Obsidian sync result is missing or failed, write a Codex handoff for `afternoon_skill_runner` or `afternoon_publication_failure`. |
 
 If any lane is still `queued` or `in_progress`, wait for it to finish before reporting that lane's data missing.
 

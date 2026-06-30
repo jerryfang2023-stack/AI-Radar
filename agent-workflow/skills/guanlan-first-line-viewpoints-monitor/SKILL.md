@@ -3,7 +3,7 @@ name: guanlan-first-line-viewpoints-monitor
 description: Use when supervising, running, repairing, or improving the WaveSight AI V3.3.6 First-Line Viewpoints lane. Covers builders / follow-builders data refresh, Chinese translation gate, original URL and tag checks, fallback safety, Obsidian person/date timeline sync, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for Business Signals, Signal Cards, relationship graph evidence, trend candidates, or Community Intelligence.
 metadata:
   guanlan:
-    version: "1.0.0"
+    version: "1.0.1"
     lane: "First-Line Viewpoints"
     status: "current lane owner"
     order: 20
@@ -11,7 +11,7 @@ metadata:
     upstream: "follow-builders source data, builders workflow, Hermes inbox"
     downstream: "follow-builders-daily.json, frontstage page data, Obsidian opinion timelines, PR publication"
     gates: "builders data assertion, translation gate, URL/tag checks, sync idempotency"
-    recent_learning: "Afternoon builders skill success requires feed/archive generation plus branch push, PR merge, and Pages publication; stale remote branch refs must be pruned before same-day reruns."
+    recent_learning: "Obsidian timelines are keyed by source original date, so same-day health must use sync dry-run added=0; afternoon reports must expose publish_status, publish_error, and Obsidian sync counts."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -58,7 +58,7 @@ When repairing repeated morning or afternoon monitoring failures, also read `exa
 2. Check daily supervision and Hermes inbox for the First-Line Viewpoints lane.
 3. Build or inspect `01-SiteV2/site/data/follow-builders-daily.json`.
 4. Run or inspect `assert-follow-builders-data.mjs`.
-5. Sync same-date data into `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<YYYY-MM-DD>.md`.
+5. Sync gated run data into `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<original-date>.md`, then confirm a same-date dry run reports `added: 0`.
 6. Verify sync idempotency with a second run or dry run that adds `0` entries.
 7. Publish the afternoon follow-builders skill output through its branch / PR route and verify the local publish report.
 8. Stage / publish only first-line owned files through the automation PR route.
@@ -73,7 +73,7 @@ Classify a failure before rerunning anything:
 - `local_rss_cron_missed`: the 08:30 local Codex RSS collection/build/sync did not run or left stale page data.
 - `github_rss_publication`: GitHub RSS build/gate/sync passed but commit, PR, merge, or Pages failed.
 - `data_gate_failure`: `assert-follow-builders-data.mjs` failed on freshness, count, translation, URL/id, dedupe, or formal tags.
-- `obsidian_sync_failure`: same-date person/date timeline files are missing or sync is not idempotent.
+- `obsidian_sync_failure`: original-date person/date timeline files are missing or sync is not idempotent.
 - `prewindow_false_alarm`: Hermes checked before 09:30 for RSS or before 16:30 for the afternoon skill lane.
 - `afternoon_skill_runner`: the local `follow-builders` skill publisher failed or did not write its output/report after 16:30.
 - `afternoon_count_mismatch`: the output file count and publish report count disagree, or either is zero.
@@ -92,10 +92,11 @@ Use this path for the public First-Line Viewpoints page:
    - same-date `follow-builders-daily.json`;
    - remarks count greater than `0` and builders count at least `6`;
    - `assert-follow-builders-data.mjs --date=<date>` passes;
-   - same-date person/date Obsidian timeline files exist;
+   - gated records are present in person/date Obsidian timeline files keyed by original source date;
    - a second sync or dry run adds `0` entries;
    - frontstage data does not contain the generic tag `Builder viewpoint`.
-5. If the 08:30 local run misses but GitHub fallback produces healthy same-date data, classify the local miss as an automation reliability issue, not a data-quality failure.
+5. Do not treat zero `### <run-date>` headings as missing sync by itself. A run can be healthy when all source items have earlier original dates and dry-run sync reports `added: 0`.
+6. If the 08:30 local run misses but GitHub fallback produces healthy same-date data, classify the local miss as an automation reliability issue, not a data-quality failure.
 
 ## Afternoon Skill Path
 
@@ -111,6 +112,7 @@ Success after 16:30 requires:
 - the report count matches the output count.
 - the report includes Obsidian sync counts.
 - the report does not contain `publish_status: failed` or a `Publish Failure` section;
+- Hermes can parse `publish_status`, `publish_error`, and `obsidian_sync_*` counts from the report;
 - the automation branch was pushed, the PR was merged to `main`, and GitHub Pages completed when the local task runs with `-Merge`.
 
 If the report exists but records `0` while the output contains items, or if the report lacks Obsidian sync counts, repair or regenerate the report before closing Hermes.

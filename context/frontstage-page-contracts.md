@@ -1,7 +1,7 @@
 ---
 status: current
 scope: frontstage-page-contracts
-last_updated: 2026-06-23
+last_updated: 2026-06-30
 use_when:
   - page change
   - navigation change
@@ -31,8 +31,8 @@ Business Signals must keep the daily Top10 as the default primary view. It may p
 
 | Scope | Version | Meaning |
 |---|---|---|
-| Main website | `SITE-V3.3.8.4` | Current GitHub Pages frontstage release. |
-| Business Signals column | `BSIG-V1.1.3-source-first-pipeline-hardening` | Keeps Top10 as the primary business-signal desk, keeps the 企业AI化 secondary lens, applies Core Pool source hygiene gates, and locks public titles to source titles or registered Chinese translations of English source titles. |
+| Main website | `SITE-V3.3.8.6` | Current release baseline; frontstage visuals remain SITE-V3.3.8.4-compatible while cross-lane publication, supervision, and release gates are hardened. |
+| Business Signals column | `BSIG-V1.1.4-pool-core-release-gate` | Keeps Top10 as the primary business-signal desk, keeps the 企业AI化 secondary lens, applies Core Pool source hygiene gates, locks public titles to source titles or registered Chinese translations, and treats provider-caused Raw shortfall as diagnostic when Pool/Core/Top10 supply is sufficient. |
 | Enterprise AI / FDE lens | `EAI-V1.1.0-fde-lens-pool` | Boss-facing implementation lens backed by the independent FDE Lens Pool; not a fourth Card type. |
 | Intelligence Map column | `IMAP-V1.2.0-opportunity-radar` | Keeps relationship graph on graph tags and renders the source-backed Entry Point Map and Product Pain Map from `opportunity_signals`, governed by the weekly opportunity radar skill. |
 

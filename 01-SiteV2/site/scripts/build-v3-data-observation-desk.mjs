@@ -10,8 +10,8 @@ const outputFile = path.join(siteDataDir, "v3-data-observation-desk.json");
 const intelligenceGraphIndexFile = path.join(siteDataDir, "intelligence-graph-index.json");
 const enterpriseAiFdeFile = path.join(siteDataDir, "enterprise-ai-fde.json");
 const sourceTitleTranslationsFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
-const siteVersion = "SITE-V3.3.8.4";
-const businessSignalsColumnVersion = "BSIG-V1.1.3-source-first-pipeline-hardening";
+const siteVersion = "SITE-V3.3.8.6";
+const businessSignalsColumnVersion = "BSIG-V1.1.4-pool-core-release-gate";
 const enterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
 const intelligenceMapColumnVersion = "IMAP-V1.2.0-opportunity-radar";
 

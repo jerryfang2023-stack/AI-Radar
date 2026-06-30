@@ -20,10 +20,12 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
    - Pass when every remark has at least one `opinion`, one `track`, and one `source` formal tag.
 
 6. `obsidian_person_date_sync`
-   - Pass when same-date viewpoint entries are written under `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<YYYY-MM-DD>.md`.
+   - Pass when the run's gated viewpoints are written under `01-SiteV2/knowledge/02-Opinion-Timelines/people/<person>/<original-date>.md`.
+   - Pass when a same-day run has no same-day heading because all source items have earlier original dates, as long as the sync dry-run is idempotent.
 
 7. `obsidian_sync_idempotent`
    - Pass when a second same-date sync or dry run reports `added: 0`.
+   - Fail when a workflow reruns only because it counted zero `### <run-date>` headings, without checking sync dry-run idempotency.
 
 8. `lane_isolation`
    - Pass when the First-Line Viewpoints PR stages no Business Signals, relationship graph, trend candidate, or Community Intelligence data.
@@ -60,6 +62,7 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Pass when same-day reruns prune stale remote branch refs before `git push --force-with-lease`, so a previous merged PR deleting `automation/follow-builders-skill-<date>` does not cause a false feed failure.
     - Fail when a `stale info` / `force-with-lease` rejection after a deleted remote automation branch is classified as feed failure.
     - Fail when the publish report says the feed/archive output is healthy but also contains `publish_status: failed`, and Hermes or Codex still reports the afternoon lane as fully complete.
+    - Fail when Hermes ignores `publish_status: failed`, `publish_error`, or missing `obsidian_sync_*` counts in `agent-workflow/reports/<date>-follow-builders-skill-local-publish.md`.
 
 16. `local_data_precedence_in_supervision`
     - Pass when daily supervision treats same-date `follow-builders-daily.json`, remarks / builders floors, and a passed follow-builders data gate as sufficient public-lane health.
