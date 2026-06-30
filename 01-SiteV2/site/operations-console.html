@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V1.0.1">
+  <meta name="wavesight-ops-console-version" content="OPS-V1.1.0">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -462,14 +462,15 @@
 <body class="page-operations-console">
   <main class="shell" data-ops-console>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V1.0.1</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V1.1.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
-        <button type="button" data-tab="dashboard"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">运营仪表盘</span></button>
-        <button type="button" data-tab="skills"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M10 8l5 4-5 4"/></svg></span><span class="nav-text">Skill Store</span></button>
-        <button type="button" data-tab="topics"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4l8 8-8 8-8-8z"/><circle cx="12" cy="12" r="2"/></svg></span><span class="nav-text">选题中心</span></button>
-        <button type="button" data-tab="factory"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 20V7h14v13"/><path d="M8 7V4h8v3"/><path d="M8 12h8"/><path d="M8 16h8"/></svg></span><span class="nav-text">内容工厂</span></button>
-        <button type="button" data-tab="publishing"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="6" width="16" height="12" rx="3"/><path d="M8 10h8"/><path d="M8 14h5"/></svg></span><span class="nav-text">发布队列</span></button>
+        <button type="button" data-tab="tasks"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h10"/><path d="M18 16l2 2 3-4"/></svg></span><span class="nav-text">每日任务</span></button>
+        <button type="button" data-tab="repairs"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5 5L4 17v3h3l5.7-5.7a4 4 0 0 0 5-5"/><path d="M16 4l4 4"/></svg></span><span class="nav-text">问题修复</span></button>
+        <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
+        <button type="button" data-tab="versions"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h5"/><path d="M16 17h4"/></svg></span><span class="nav-text">栏目版本</span></button>
+        <button type="button" data-tab="sync"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 11a8 8 0 0 0-14.7-4"/><path d="M4 6v5h5"/><path d="M4 13a8 8 0 0 0 14.7 4"/><path d="M20 18v-5h-5"/></svg></span><span class="nav-text">上线同步</span></button>
+        <button type="button" data-tab="skills"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="14" height="14" rx="3"/><path d="M10 8l5 4-5 4"/></svg></span><span class="nav-text">Skill 治理</span></button>
         <button type="button" data-tab="settings"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M19.1 4.9l-2.8 2.8M7.7 16.3l-2.8 2.8"/></svg></span><span class="nav-text">系统设置</span></button>
       </nav>
       <div class="rail-actions"><button type="button" class="rail-toggle" data-rail-toggle>收起</button></div>
@@ -479,34 +480,74 @@
       <section class="panel is-active" data-panel="overview">
         <div class="page-surface">
         <header class="page-head">
-          <div><span class="kicker">OPERATIONS CENTER DASHBOARD</span><h1>运营后台首页</h1></div>
-          <p>统一查看生产链路、来源质量、选题推进、内容工厂与发布状态。</p>
+          <div><span class="kicker">DATA OBSERVATION OPS</span><h1>总览</h1></div>
+          <p>统一查看数据观察台的每日生产、质量问题、修复队列、版本状态和上线同步。</p>
         </header>
         <div class="overview-command">
           <div class="status-strip" data-overview-status></div>
           <article class="card action-card" data-overview-actions></article>
         </div>
-        <div class="module-head overview-risk-head"><div><span class="kicker">TODAY</span><h2>今日运营状态</h2></div><p>先看系统是否健康，再看哪里需要人工推进。</p></div>
+        <div class="module-head overview-risk-head"><div><span class="kicker">TODAY</span><h2>今日运营状态</h2></div><p>先看系统是否健康，再看哪里需要人工处理。</p></div>
         <div class="grid grid-3" data-overview-risks></div>
         <div class="grid grid-3 overview-work-grid">
           <article class="card"><span class="label">Production Chain</span><h2>Raw 到 Card</h2><div class="rows" data-overview-funnel></div></article>
           <article class="card"><span class="label">Work Queue</span><h2>待处理队列</h2><div class="rows" data-work-queue></div></article>
-          <article class="card"><span class="label">Routing</span><h2>今日去向</h2><div class="rows" data-overview-routing></div></article>
+          <article class="card"><span class="label">Release</span><h2>上线同步</h2><div class="rows" data-overview-routing></div></article>
         </div>
         </div>
       </section>
 
-      <section class="panel" data-panel="dashboard">
+      <section class="panel" data-panel="tasks">
         <div class="page-surface">
         <header class="page-head">
-          <div><span class="kicker">OPERATIONS QUALITY</span><h1>运营仪表盘</h1></div>
-          <p>生产漏斗、来源质量、资产结构与每日链路，统一在后台内部看。</p>
+          <div><span class="kicker">DAILY EXECUTION</span><h1>每日任务</h1></div>
+          <p>查看每条自动化链路是否执行、是否失败，以及当天是否需要人工接管。</p>
         </header>
-          <a class="jump-link dashboard-jump" href="v3-data-observation.html">数据观察台</a>
           <section class="surface-section">
             <div class="module-head"><div><span class="kicker">DAILY FUNNEL</span><h2>每日生产时间轴</h2></div><p>最新生产日高亮，其余日期弱化展示。</p></div>
             <div class="timeline" data-daily-timeline></div>
           </section>
+          <section class="surface-section">
+            <div class="module-head"><div><span class="kicker">TASK LANES</span><h2>今日任务链路</h2></div><p>按数据观察台生产顺序查看核心任务。</p></div>
+            <div class="grid grid-3">
+              <article class="card"><span class="label">08:57</span><h2>商业信号</h2><p>Raw、Pool、Card、Top10、数据观察台更新。</p></article>
+              <article class="card"><span class="label">09:17 / 16:10</span><h2>一线观点</h2><p>RSS 页面数据、Obsidian 时间线、下午 skill 发布记录。</p></article>
+              <article class="card"><span class="label">08:30 / 10:45</span><h2>社群情报</h2><p>本地采集、数据门禁、GitHub 发布和页面同步。</p></article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="panel" data-panel="repairs">
+        <div class="page-surface">
+        <header class="page-head">
+          <div><span class="kicker">REPAIR QUEUE</span><h1>问题修复</h1></div>
+          <p>集中查看 Hermes / Codex 发现的问题、修复状态和待处理事项。</p>
+        </header>
+        <div class="grid grid-3">
+          <article class="card"><span class="label">Hermes Inbox</span><h2>待处理问题</h2><p>读取 `agent-workflow/inbox/hermes-to-codex/`，确认哪些问题需要 Codex 修复。</p></article>
+          <article class="card"><span class="label">Root Cause</span><h2>失败原因</h2><p>按栏目、失败门禁、报告路径、影响范围归类，不用翻日志找线索。</p></article>
+          <article class="card"><span class="label">Closeout</span><h2>修复闭环</h2><p>修复后记录验证命令、预防方式和对应提交，避免同类问题反复出现。</p></article>
+        </div>
+        <section class="surface-section">
+          <div class="module-head"><div><span class="kicker">REPAIR ORDER</span><h2>处理顺序</h2></div><p>先处理影响上线的问题，再处理质量和治理问题。</p></div>
+          <div class="grid grid-2">
+            <article class="card"><span class="label">01</span><h2>阻塞上线</h2><p>生产任务失败、Pages 未部署、同日数据缺失、Top10 未生成。</p></article>
+            <article class="card"><span class="label">02</span><h2>质量异常</h2><p>重复内容、来源缺失、标题异常、过期数据、证据边界不清。</p></article>
+            <article class="card"><span class="label">03</span><h2>自动化偏移</h2><p>定时任务未触发、PR 未合并、Obsidian 未同步、等待状态误判。</p></article>
+            <article class="card"><span class="label">04</span><h2>治理补强</h2><p>把重复问题沉淀到 gate、eval、memory 或版本冻结点。</p></article>
+          </div>
+        </section>
+        </div>
+      </section>
+
+      <section class="panel" data-panel="quality">
+        <div class="page-surface">
+        <header class="page-head">
+          <div><span class="kicker">DATA QUALITY</span><h1>数据质量</h1></div>
+          <p>生产漏斗、来源质量、资产结构与重复内容，统一在后台内部看。</p>
+        </header>
+          <a class="jump-link dashboard-jump" href="v3-data-observation.html">数据观察台</a>
           <section class="surface-section">
             <div class="module-head"><div><span class="kicker">SOURCE QUALITY</span><h2>来源质量雷达</h2></div><p>对比样本量、新鲜度、重复率、官方源占比和 Raw→Card 转化。</p></div>
             <article class="card"><div data-source-quality></div></article>
@@ -518,51 +559,49 @@
         </div>
       </section>
 
+      <section class="panel" data-panel="versions">
+        <div class="page-surface">
+        <header class="page-head">
+          <div><span class="kicker">COLUMN VERSIONING</span><h1>栏目版本</h1></div>
+          <p>统一管理网站总版本、各栏目版本、冻结点和最近上线状态。</p>
+        </header>
+        <div class="grid grid-4">
+          <article class="card"><span class="label">SITE</span><h2>SITE-V3.3.8.6</h2><p>数据观察台当前主站版本。</p></article>
+          <article class="card"><span class="label">OPS</span><h2>OPS-V1.1.0</h2><p>运营后台改为数据观察台运营管理平台。</p></article>
+          <article class="card"><span class="label">BSIG</span><h2>BSIG-V1.1.4</h2><p>商业信号生产与发布门禁。</p></article>
+          <article class="card"><span class="label">IMAP</span><h2>IMAP-V1.2.0</h2><p>情报地图与机会雷达。</p></article>
+          <article class="card"><span class="label">FLV</span><h2>FLV-V1.0.2</h2><p>一线观点与 Obsidian 时间线。</p></article>
+          <article class="card"><span class="label">CINT</span><h2>CINT-V1.0.2</h2><p>社群情报采集与发布等待门禁。</p></article>
+          <article class="card"><span class="label">EAI</span><h2>EAI-V1.1.0</h2><p>企业 AI / FDE 镜头。</p></article>
+          <article class="card"><span class="label">SKILL</span><h2>v1.3.2</h2><p>Skill Store 治理版本。</p></article>
+        </div>
+        </div>
+      </section>
+
+      <section class="panel" data-panel="sync">
+        <div class="page-surface">
+        <header class="page-head">
+          <div><span class="kicker">RELEASE SYNC</span><h1>上线同步</h1></div>
+          <p>查看 GitHub Actions、PR、Pages 部署、本地 Obsidian 同步是否完成。</p>
+        </header>
+        <div class="grid grid-3">
+          <article class="card"><span class="label">GitHub Actions</span><h2>工作流状态</h2><p>检查 Business Signals、First-Line、Community、Pages 是否成功。</p></article>
+          <article class="card"><span class="label">Pull Request</span><h2>合并状态</h2><p>确认自动化分支是否已开 PR、是否已合并到 main。</p></article>
+          <article class="card"><span class="label">GitHub Pages</span><h2>线上状态</h2><p>确认线上数据文件、页面版本和本地版本是否一致。</p></article>
+          <article class="card"><span class="label">Obsidian</span><h2>本地同步</h2><p>检查本地同步脚本是否快进成功，是否有脏工作区阻塞。</p></article>
+          <article class="card"><span class="label">Reports</span><h2>监督报告</h2><p>读取 daily supervision、Hermes handoff、morning recovery 报告。</p></article>
+          <article class="card"><span class="label">Fallback</span><h2>人工接管</h2><p>当自动化失败时，显示最小修复命令和负责栏目。</p></article>
+        </div>
+        </div>
+      </section>
+
       <section class="panel" data-panel="skills">
+        <div class="page-surface">
+        <header class="page-head">
+          <div><span class="kicker">SKILL GOVERNANCE</span><h1>Skill 治理</h1></div>
+          <p>只管理数据观察台生产、监控、修复相关 skill；内容写作 skill 后续移入独立内容项目。</p>
+        </header>
         <iframe class="skill-frame" src="local-skill-store.html?embed=1&v=20260613-skill-store-v132" title="Skill Store"></iframe>
-      </section>
-
-      <section class="panel" data-panel="topics">
-        <div class="page-surface">
-        <header class="page-head">
-          <div><span class="kicker">BOSS TOPIC ENGINE V2.2.2</span><h1>选题中心</h1></div>
-          <p>把 AI 热点翻译成老板决策信号。</p>
-        </header>
-        <div class="topic-tabs" data-topic-tabs></div>
-        <div class="topic-tools">
-          <select data-topic-date></select>
-          <input type="search" data-topic-search placeholder="搜索标题、问题、判断">
-          <select data-topic-type></select>
-          <select data-topic-sort>
-            <option value="score">按评分</option>
-            <option value="source">按来源</option>
-          </select>
-        </div>
-        <div class="topic-list" data-topic-list></div>
-        </div>
-      </section>
-
-      <section class="panel" data-panel="factory">
-        <div class="page-surface">
-        <header class="page-head">
-          <div><span class="kicker">CONTENT FACTORY</span><h1>内容工厂</h1></div>
-          <p>基于选题中心内容，生成播客、文章或 PPT，并进入发布准备。</p>
-        </header>
-        <div class="factory-grid">
-          <aside class="card"><span class="label">01 Topic</span><h2>选择选题</h2><div class="factory-source-tabs" data-factory-source-tabs></div><div class="factory-topic-list" data-factory-topic-list></div></aside>
-          <section class="card"><span class="label">02 Output</span><h2>选择产物</h2><div class="output-tabs"><button type="button" data-output="podcast" aria-current="true"><span>Podcast</span><strong>播客</strong></button><button type="button" data-output="article"><span>Article</span><strong>文章</strong></button><button type="button" data-output="ppt"><span>Slides</span><strong>PPT</strong></button></div><article class="selected" data-selected-topic><span class="label">Selected Topic</span><h3>等待选择选题</h3><p>左侧选择后，这里会同步核心问题、证据摘要和可写角度。</p></article></section>
-          <aside class="card"><span class="label">03 Generate</span><h2>后台生成</h2><div class="actions"><button type="button" data-auth>检查授权</button><button class="primary" type="button" data-generate>开始生成</button></div><div class="status" data-status><strong>等待操作</strong><p>未登录时提示授权；已登录则直接生成。</p></div><code data-log>NotebookLM CLI ready.</code></aside>
-        </div>
-        </div>
-      </section>
-
-      <section class="panel" data-panel="publishing">
-        <div class="page-surface">
-        <header class="page-head">
-          <div><span class="kicker">PUBLICATION QUEUE</span><h1>发布队列</h1></div>
-          <p>清晰的发布入口：选择平台、确认账号授权、查看状态和结果。</p>
-        </header>
-        <div class="publish-board" data-publish-cards></div>
         </div>
       </section>
 
@@ -570,10 +609,10 @@
         <div class="page-surface">
         <header class="page-head">
           <div><span class="kicker">SYSTEM SETTINGS</span><h1>系统设置</h1></div>
-          <p>本地服务、NotebookLM 授权与当前数据版本。</p>
+          <p>管理数据源、本地任务、授权状态和自动化时间表。</p>
         </header>
         <div class="grid grid-2">
-          <article class="card"><span class="label">NotebookLM</span><h2>授权状态</h2><div class="actions"><button type="button" data-auth-settings>检查授权</button></div><div class="status" data-settings-status><strong>等待检查</strong><p>点击后确认本地 token 是否可用。</p></div></article>
+          <article class="card"><span class="label">Automation</span><h2>本地任务</h2><p>检查本地同步、社群采集、一线观点同步等 Windows / Codex 任务。</p></article>
           <article class="card"><span class="label">Data</span><h2>数据状态</h2><div class="rows" data-data-status></div></article>
         </div>
         </div>
@@ -583,7 +622,6 @@
 
   <script src="data/site-content.js"></script>
   <script src="data/pipeline-dashboard.js"></script>
-  <script src="data/topic-center.js"></script>
-  <script src="assets/operations-console.js?v=20260613-skill-store-v121"></script>
+  <script src="assets/operations-console.js?v=20260630-ops-v110"></script>
 </body>
 </html>

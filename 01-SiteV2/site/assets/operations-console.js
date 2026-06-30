@@ -16,6 +16,7 @@
     output: "podcast",
     railCollapsed: localStorage.getItem("wavesight-rail-collapsed") === "1",
   };
+  const validPanels = new Set(["overview", "tasks", "repairs", "quality", "versions", "sync", "skills", "settings"]);
 
   const $ = (selector, node = document) => node.querySelector(selector);
   const $$ = (selector, node = document) => Array.from(node.querySelectorAll(selector));
@@ -25,7 +26,7 @@
   const pct = (value) => Number.isFinite(Number(value)) ? `${Math.round(Number(value))}%` : "-";
 
   function setPanel(id) {
-    state.panel = id || "overview";
+    state.panel = validPanels.has(id) ? id : "overview";
     $$("[data-tab]").forEach((button) => button.setAttribute("aria-current", String(button.dataset.tab === state.panel)));
     $$("[data-panel]").forEach((panel) => panel.classList.toggle("is-active", panel.dataset.panel === state.panel));
     history.replaceState(null, "", `#${state.panel}`);
@@ -355,8 +356,8 @@
     if (cards) {
       cards.innerHTML = [
         metric("运行摘要", `${latest.raw || 0} / ${latest.pool || 0} / ${latest.cards || 0}`, `最新生产日 ${latest.label || latest.date || "-"}`, "hero-card"),
-        metric("选题池", topics.length, topicCenterData.meta?.ruleLabel || "老板决策型选题机制"),
-        metric("发布准备", "待推进", "内容工厂 → 发布队列"),
+        metric("任务链路", "3 条", "商业信号 / 一线观点 / 社群情报"),
+        metric("上线状态", pipeline.meta?.generatedAt ? "待核对" : "待检查", "Actions / PR / Pages / Obsidian"),
       ].join("");
     }
     const opinion = latest.cards ? Math.round((latest.assets?.opinion || 0) / latest.cards * 100) : 0;
@@ -365,9 +366,9 @@
     const actions = $("[data-overview-actions]");
     if (actions) {
       actions.innerHTML = `<span class="label">Next Actions</span><h3>今日处理顺序</h3><div class="action-list">
-        <button type="button" data-tab="dashboard">看生产质量 <span>风险 / 来源 / 资产</span></button>
-        <button type="button" data-tab="topics">定今日选题 <span>${topics.length} 条候选</span></button>
-        <button type="button" data-tab="factory">进入内容工厂 <span>播客 / 文章 / PPT</span></button>
+        <button type="button" data-tab="tasks">看每日任务 <span>执行 / 失败 / 接管</span></button>
+        <button type="button" data-tab="repairs">处理问题修复 <span>Hermes / Codex</span></button>
+        <button type="button" data-tab="sync">核对上线同步 <span>Actions / Pages / Obsidian</span></button>
       </div>`;
     }
     const risks = $("[data-overview-risks]");
@@ -399,10 +400,10 @@
     const routing = $("[data-overview-routing]");
     if (routing) {
       routing.innerHTML = [
-        row("运营仪表盘", official < 25 ? "补来源" : "巡检", Math.max(22, official)),
-        row("选题中心", `${topics.length} 候选`, Math.min(100, topics.length * 10)),
-        row("内容工厂", "待生产", 42),
-        row("发布队列", "待确认", 34),
+        row("数据质量", official < 25 ? "补来源" : "巡检", Math.max(22, official)),
+        row("栏目版本", "核对", 70),
+        row("上线同步", "待确认", 54),
+        row("本地同步", "待检查", 38),
       ].join("");
     }
   }
@@ -560,7 +561,7 @@
       dataStatus.innerHTML = [
         ["site-content", content.meta?.generatedAt || "-"],
         ["pipeline", pipeline.meta?.generatedAt || "-"],
-        ["topic-center", `${topics.length} · ${topicCenterData.meta?.generatedAt || "-"}`],
+        ["ops-console", "OPS-V1.1.0-data-observation-ops"],
       ].map(([label, value]) => `<div class="data-status-item"><span>${html(label)}</span><b>${html(value)}</b></div>`).join("");
     }
   }
@@ -613,9 +614,6 @@
   function renderAll() {
     renderOverview();
     renderDashboard();
-    renderTopics();
-    renderFactory();
-    renderPublishing();
     renderSettings();
     setRailCollapsed(state.railCollapsed);
     setPanel(state.panel);
