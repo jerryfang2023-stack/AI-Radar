@@ -11,24 +11,24 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in SITE-V3.3.8.7 Report Center Monthly Release.
+WaveSight AI is now in SITE-V3.4.0 Report Center Opportunity System Release.
 
 ## Current Positioning
 
 - WaveSight AI is an Agent-driven AI business-intelligence system.
-- The current public frontstage has four active columns: business signals, intelligence map, first-line viewpoints, and community intelligence.
+- The current public frontstage has four active columns: business signals, report center, first-line viewpoints, and community intelligence.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
-- SITE-V3.3.8.7 keeps the unified frontstage and SITE-V3.3.8.6 release-gate hardening, then upgrades Intelligence Map into a Reports Center with Weekly and Monthly report subcolumns plus full monthly report detail pages.
-- Current column versions: Business Signals `BSIG-V1.1.5-corepool-top10-release`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Intelligence Map `IMAP-V1.3.0-report-center-monthly`.
+- SITE-V3.4.0 keeps the unified frontstage and upgrades the former Intelligence Map into a Reports Center / Opportunity System: monthly and weekly reports lead the page, Entry Point Map and Product Pain Map are separate full-width opportunity maps with click-to-open evidence, and relation paths become a supporting exploration section.
+- Current column versions: Business Signals `BSIG-V1.1.5-corepool-top10-release`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Reports Center `IMAP-V2.0.0-report-center-opportunity-system`.
 
 ## Current Entries
 
 | Entry | File | Role |
 |---|---|---|
 | Business Signals | `01-SiteV2/site/v3-data-observation.html` | Main V3.3 frontstage for daily Cards, relationship graph, trend candidates, and the 企业AI化 secondary lens |
-| Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph, source-backed opportunity radar, intelligence map entry, and Reports Center with Weekly / Monthly report subcolumns |
+| Reports Center | `01-SiteV2/site/intelligence-map.html` | Monthly / weekly report entry, source-backed Entry Point Map and Product Pain Map, and relation paths |
 | First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoint page merged into V3.3 |
 | Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community-sourced cases, AI tool tactics, commercial opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Operations backend and production-chain dashboard |
@@ -81,8 +81,8 @@ Old V2 pages are retired. If old rules conflict with V3.3, remove or rebuild the
 1. Run Business Signals through its own Raw / Pool / Card / Top10 lane.
 2. Run First-Line Viewpoints through its own builders data lane.
 3. Run Community Intelligence through its local logged-in collection lane and independent GitHub publish PR lane.
-4. Keep Intelligence Map and Dashboard aligned with the Business Signals data chain.
-   - Intelligence Map opportunity radar updates weekly from source-backed `opportunity_signals`, not old `formal_tags`.
+4. Keep Reports Center and Dashboard aligned with the Business Signals data chain.
+   - Reports Center opportunity maps update weekly from source-backed `opportunity_signals`, not old `formal_tags`.
    - Weekly report content must be sourced from `01-SiteV2/content/08-report/`; monthly report content must be sourced from `01-SiteV2/content/08-report/monthly/`.
 5. Persist each producing lane through its own commit / PR boundary.
 6. Publish the site only after merged changes reach `main` and GitHub Pages runs.

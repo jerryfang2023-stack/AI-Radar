@@ -42,14 +42,14 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: SITE-V3.3.8.6.
+- Current stage: SITE-V3.4.0.
 - Current frontstage: `01-SiteV2/site/v3-data-observation.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/weekly-ai-business-change-radar.html`, `01-SiteV2/site/follow-builders.html`, and `01-SiteV2/site/community-intelligence.html`.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
 - Current Business Signals column version: BSIG-V1.1.5-corepool-top10-release.
 - Current First-Line Viewpoints column version: FLV-V1.0.2-supervision-idempotency.
 - Current Community Intelligence column version: CINT-V1.0.2-publication-waiting-gate.
 - Current Enterprise AI / FDE lens version: EAI-V1.1.0-fde-lens-pool.
-- Current Intelligence Map column version: IMAP-V1.2.0-opportunity-radar.
+- Current Reports Center / Intelligence Map column version: IMAP-V2.0.0-report-center-opportunity-system.
 - Current Business Signals data contract: V3.3.6.3 business source artifact aggregation.
 - Current core rule source: `context/07-v3-intelligence-generation-rules.md`.
 - V2 website pages and old four-column output rules are retired.
@@ -77,13 +77,13 @@ First-line viewpoints are a separate builders column. They are useful for readin
 | Entry | File | Role |
 |---|---|---|
 | Business Signals / 商业信号 | `01-SiteV2/site/v3-data-observation.html` | daily Cards, relationship graph, trend candidates |
-| Intelligence Map / 情报地图 | `01-SiteV2/site/intelligence-map.html` | relationship graph and intelligence map |
+| Reports Center / 报告中心 | `01-SiteV2/site/intelligence-map.html` | monthly / weekly reports, source-backed opportunity maps, and relation paths |
 | Weekly AI Business Change Radar / 周报 | `01-SiteV2/site/weekly-ai-business-change-radar.html` | weekly report detail page, entered from Intelligence Map |
 | First-Line Viewpoints / 一线观点 | `01-SiteV2/site/follow-builders.html` | independent builders viewpoints |
 | Community Intelligence / 社群情报 | `01-SiteV2/site/community-intelligence.html` | community-sourced cases, tool tactics, opportunities, and document links |
 | Dashboard / 仪表盘 | `01-SiteV2/site/operations-console.html` | operations backend |
 
-Business Signals, Intelligence Map, First-Line Viewpoints, and Community Intelligence must share the same topbar structure and height.
+Business Signals, Reports Center, First-Line Viewpoints, and Community Intelligence must share the same topbar structure and height.
 
 ## Retired Routes
 

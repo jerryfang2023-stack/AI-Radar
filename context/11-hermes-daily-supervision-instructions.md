@@ -1,7 +1,7 @@
 ---
 status: current
 scope: hermes-daily-supervision
-last_updated: 2026-06-30
+last_updated: 2026-07-01
 use_when:
   - hermes daily supervision
   - monitor dispatch
@@ -15,11 +15,11 @@ Hermes is the daily supervisor for WaveSight AI. It should observe, classify, an
 
 ## Current Version Context
 
-- Current site version: `SITE-V3.3.8.6`.
+- Current site version: `SITE-V3.4.0`.
 - Current Hermes supervision contract: `V3.3.6.2-hermes-staged-handoff`.
 - Current Business Signals data contract: `V3.3.6.3-business-source-artifact-aggregation`.
 - Version ledger: `context/version-ledger.md`.
-- SITE-V3.3.8.6 keeps First-Line Viewpoints person / original-date Obsidian persistence with dry-run idempotency, Business Signals title / candidate dedupe gates, source-artifact aggregation, Core Pool source-hygiene gates, peer Raw artifact channels, Pool/Core release override for provider-caused Raw shortfall, the Enterprise AI / FDE Lens Pool, Community Intelligence local-first collection with Waiting-vs-Problem publication separation, the weekly report Intelligence Map route, the source-backed Intelligence Map opportunity radar, and Hermes staged early handoff: 09:30 Community / First-Line, 09:45 Business, 09:55 final review only.
+- SITE-V3.4.0 keeps First-Line Viewpoints person / original-date Obsidian persistence with dry-run idempotency, Business Signals title / candidate dedupe gates, source-artifact aggregation, Core Pool source-hygiene gates, peer Raw artifact channels, Pool/Core release override for provider-caused Raw shortfall, the Enterprise AI / FDE Lens Pool, Community Intelligence local-first collection with Waiting-vs-Problem publication separation, the Reports Center route, source-backed opportunity maps, relation paths, and Hermes staged early handoff: 09:30 Community / First-Line, 09:45 Business, 09:55 final review only.
 - Hermes must treat old month timeline files such as `YYYY-MM.md` as legacy / cleanup candidates, not as proof that current sync is healthy.
 - Do not judge Codex work by commit author name. In this repository Codex commits may use the configured Git identity.
 

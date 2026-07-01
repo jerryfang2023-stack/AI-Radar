@@ -1,4 +1,4 @@
-# Opportunity Radar Updater Evals
+﻿# Opportunity Radar Updater Evals
 
 1. `source_near_fields`
    - Pass when map cells are derived from `opportunity_signals` fields backed by source excerpts or Card facts.
@@ -23,3 +23,10 @@
 6. `frontstage_integrity`
    - Pass when the Intelligence Map keeps only the two opportunity panels and the relationship graph, without restoring Signal Candidates, 时间聚集, or Tag 聚合.
    - Fail when removed modules return.
+7. `standalone_map_presentation`
+   - Pass when Entry Point Map and Product Pain Map render as separate full-width sections with Chinese and English subcolumn names.
+   - Fail when the maps are squeezed behind toggle buttons or merged into a single "切入点地图 / 痛点地图" heading.
+
+8. `evidence_modal_presentation`
+   - Pass when clicking a hot map cell opens related Card evidence in a modal or equivalent detail layer.
+   - Fail when a persistent right-side "Cell Evidence" instruction panel returns or when map evidence is shown as internal diagnostic text.

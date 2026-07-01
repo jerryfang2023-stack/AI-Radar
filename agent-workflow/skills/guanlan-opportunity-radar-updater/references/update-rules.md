@@ -1,4 +1,4 @@
-# Opportunity Radar Update Rules
+﻿# Opportunity Radar Update Rules
 
 ## Purpose
 
@@ -107,6 +107,18 @@ If the source evidence does not support a cell, keep it empty.
 
 An empty cell means "no reliable public evidence yet." It is better than filling the map with broad AI language.
 
+
+## Frontstage Presentation Rules
+
+The Reports Center page should present the opportunity maps as decision surfaces, not as a compact dashboard widget.
+
+- The top-level section title should be `机会地图` / `Opportunity Map`.
+- Entry Point Map and Product Pain Map must be separate sections with their own Chinese and English subcolumn names.
+- Do not hide the two maps behind toggle buttons once both can be read on the same page.
+- Map cells should open related Card evidence in a modal or equivalent detail layer.
+- Do not keep a persistent right-side "Cell Evidence" instruction panel on the page.
+- Relation paths may appear after the maps as supporting exploration, but they should not occupy the first screen or replace map evidence.
+- Keep the visual palette report-like and low saturation: warm paper background, dark blue actions, gold accents, and restrained status colors.
 ## Boundaries
 
 - Relationship graph uses old graph tags and Card edges.

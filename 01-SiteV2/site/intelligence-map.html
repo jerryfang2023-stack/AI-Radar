@@ -3,161 +3,501 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-version" content="SITE-V3.3.8.7">
-  <meta name="wavesight-column-version" content="IMAP-V1.3.0-report-center-monthly">
+  <meta name="wavesight-version" content="SITE-V3.4.0">
+  <meta name="wavesight-column-version" content="IMAP-V2.0.0-report-center-opportunity-system">
   <meta name="weekly-report-source" content="01-SiteV2/content/08-report/">
-  <title>情报地图｜观澜 AI</title>
+  <meta name="monthly-report-source" content="01-SiteV2/content/08-report/monthly/">
+  <title>报告中心｜观澜 AI</title>
   <link rel="stylesheet" href="assets/wavesight-nav.css">
-  <link rel="stylesheet" href="assets/v3-data-observation-desk.css?v=20260630-report-center-monthly">
+  <style>
+    @import url("assets/brand/brand-tokens.css");
+    :root {
+      --paper: var(--gl-bg-page, #fffdf8);
+      --ink: var(--gl-ink, #071827);
+      --blue: var(--gl-blue, #0d355c);
+      --gold: #b99551;
+      --green: #416f58;
+      --red: #9a625c;
+      --ochre: #9b7a3f;
+      --muted: rgba(7, 24, 39, .62);
+      --faint: rgba(7, 24, 39, .4);
+      --line: rgba(86, 69, 45, .16);
+      --soft-line: rgba(86, 69, 45, .09);
+      --surface: rgba(255, 253, 248, .74);
+      --sans: var(--gl-font-sans-cn, "Noto Sans SC", "Microsoft YaHei", sans-serif);
+      --serif: var(--gl-font-serif-cn, "Noto Serif SC", "Songti SC", serif);
+      --mono: var(--gl-font-mono, "IBM Plex Mono", Consolas, monospace);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(180deg, rgba(247, 244, 239, .88), rgba(255, 253, 248, 0) 500px),
+        linear-gradient(90deg, rgba(200, 167, 102, .06), transparent 34%, rgba(13, 53, 92, .035)),
+        var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    a { color: inherit; }
+    button { font: inherit; cursor: pointer; }
+    .shell { width: min(1320px, calc(100% - 48px)); margin: 0 auto; padding: 24px 0 48px; }
+    .kicker {
+      margin: 0 0 8px;
+      color: var(--gold);
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      line-height: 18px;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 { margin: 0; font-family: var(--serif); font-weight: 600; letter-spacing: 0; }
+    .page-title-head h1 {
+      max-width: 760px;
+      color: var(--ink);
+      font-size: var(--gl-type-page-title-size, 44px);
+      line-height: var(--gl-type-page-title-line, 58px);
+    }
+    h2 { font-size: 30px; line-height: 1.34; }
+    h3 { font-size: 21px; line-height: 1.38; }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+      min-height: auto;
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--soft-line);
+    }
+    .hero-copy { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+    .page-title-head { margin: 0; }
+    .desk-kicker {
+      margin: 0 0 6px;
+      color: var(--gold);
+      font-family: var(--gl-font-en, var(--mono));
+      font-size: var(--gl-type-label-size, 12px);
+      font-weight: var(--gl-weight-label, 600);
+      line-height: var(--gl-type-label-line, 18px);
+      letter-spacing: var(--gl-letter-label, .08em);
+      text-transform: uppercase;
+    }
+    .metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+    .metric, .report-card, .weekly-card, .panel, .cell-modal, .network-card {
+      border: 1px solid var(--line);
+      background: var(--surface);
+    }
+    .metric { min-height: 82px; padding: 14px 15px; }
+    .metric span, .fine { color: var(--faint); font-family: var(--mono); font-size: 12px; line-height: 1.55; }
+    .metric strong { display: block; margin-top: 5px; font-family: var(--mono); font-size: 18px; line-height: 1.25; }
+    .report-stack { display: grid; gap: 10px; }
+    .report-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: center; min-height: 106px; padding: 14px 20px; border-left: 4px solid var(--gold); }
+    .report-card h2 { white-space: nowrap; }
+    .report-card p { margin: 5px 0 0; color: var(--muted); line-height: 1.62; }
+    .link-button { display: inline-flex; align-items: center; justify-content: center; min-height: 38px; padding: 0 14px; background: var(--blue); color: var(--paper); font-size: 13px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .weekly-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+    .monthly-group > .kicker,
+    .weekly-group > .kicker { margin-bottom: 6px; }
+    .weekly-card { min-height: 112px; padding: 12px 14px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; text-decoration: none; }
+    .weekly-card b { display: block; margin-top: 5px; font-family: var(--serif); font-size: 16px; line-height: 1.38; }
+    .weekly-card-action { display: inline-flex; align-items: center; align-self: flex-end; min-height: 28px; padding: 0 10px; background: var(--blue); color: var(--paper); font-size: 12px; font-weight: 700; line-height: 28px; }
+    .section { padding: 32px 0; border-bottom: 1px solid var(--soft-line); }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 18px; }
+    .section-head p { max-width: 620px; margin: 0; color: var(--muted); line-height: 1.75; }
+    .toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 10px; }
+    .legend { display: inline-flex; flex-wrap: wrap; gap: 7px; color: var(--muted); font-family: var(--mono); font-size: 11px; font-weight: 700; }
+    .legend span, .pill { display: inline-flex; align-items: center; min-height: 24px; padding: 0 8px; border: 1px solid var(--line); background: rgba(255, 253, 248, .76); line-height: 1.35; white-space: normal; }
+    .status-warming { border-color: rgba(185,149,81,.48) !important; background: rgba(185,149,81,.13) !important; color: var(--ochre) !important; }
+    .status-stable { border-color: rgba(65,111,88,.34) !important; background: rgba(65,111,88,.09) !important; color: var(--green) !important; }
+    .status-noise { border-color: rgba(154,98,92,.32) !important; background: rgba(154,98,92,.09) !important; color: var(--red) !important; }
+    .status-watch { border-style: dashed !important; color: var(--muted) !important; }
+    .map-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: stretch; }
+    .panel { padding: 16px; min-width: 0; background: rgba(255, 253, 248, .58); }
+    .map-block { display: grid; gap: 12px; }
+    .map-block + .map-block { margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--soft-line); }
+    .map-block-head { display: flex; align-items: end; justify-content: space-between; gap: 18px; }
+    .map-block-head h3 { font-size: 22px; line-height: 1.35; }
+    .matrix-scroll { overflow-x: auto; }
+    .matrix { display: grid; min-width: 820px; border: 1px solid var(--line); background: rgba(255, 253, 248, .62); }
+    .matrix.entry { grid-template-columns: 118px repeat(6, minmax(112px, 1fr)); }
+    .matrix.pain { grid-template-columns: 118px repeat(7, minmax(106px, 1fr)); }
+    .matrix > div, .cell { min-height: 70px; padding: 10px; border-right: 1px solid var(--soft-line); border-bottom: 1px solid var(--soft-line); }
+    .matrix.entry > :nth-child(7n), .matrix.pain > :nth-child(8n) { border-right: 0; }
+    .axis { color: var(--faint); font-size: 12px; font-weight: 700; line-height: 1.4; background: rgba(247, 244, 239, .74); }
+    .cell { display: grid; align-content: space-between; gap: 8px; width: 100%; border-top: 0; border-left: 0; background: rgba(255, 253, 248, .58); color: var(--ink); text-align: left; }
+    .cell.has-data { cursor: pointer; background: color-mix(in srgb, var(--cell-color, rgba(185,149,81,.16)) calc(12% + var(--heat, 0) * 22%), rgba(255,253,248,.78)); }
+    .cell.is-active { outline: 2px solid var(--blue); outline-offset: -2px; }
+    .cell strong { display: block; font-family: var(--mono); font-size: 18px; line-height: 1; }
+    .cell em { display: block; color: var(--muted); font-style: normal; font-size: 12px; line-height: 1.45; }
+    .cell small { display: inline-flex; width: max-content; max-width: 100%; min-height: 20px; padding: 0 6px; border: 1px solid currentColor; font-size: 11px; font-weight: 700; line-height: 18px; }
+    .network-card p { margin: 10px 0 0; color: var(--muted); line-height: 1.75; }
+    .cell-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 40;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: rgba(7, 24, 39, .38);
+    }
+    .cell-modal-backdrop[hidden] { display: none; }
+    .cell-modal {
+      width: min(760px, 100%);
+      max-height: min(78vh, 720px);
+      padding: 20px;
+      overflow: auto;
+      background: linear-gradient(180deg, rgba(255, 253, 248, .98), rgba(247, 244, 239, .96));
+      border-left: 4px solid var(--gold);
+    }
+    .cell-modal p { margin: 10px 0 0; color: var(--muted); line-height: 1.75; }
+    .cell-modal-head { display: flex; align-items: start; justify-content: space-between; gap: 18px; }
+    .modal-close {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 32px;
+      min-height: 32px;
+      border: 1px solid var(--line);
+      background: rgba(247, 244, 239, .82);
+      color: var(--blue);
+      font-size: 18px;
+      line-height: 1;
+    }
+    .item-list { display: grid; gap: 9px; margin-top: 14px; }
+    .evidence { padding: 10px; border: 1px solid var(--soft-line); background: rgba(255, 253, 248, .78); }
+    .evidence b { display: block; font-size: 14px; line-height: 1.5; }
+    .evidence span { display: block; margin-top: 4px; color: var(--faint); font-family: var(--mono); font-size: 11px; line-height: 1.45; }
+    .top-cells { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
+    .top-cell { min-height: 132px; padding: 13px; border: 1px solid var(--line); background: rgba(255, 253, 248, .64); }
+    .top-cell b { display: block; font-family: var(--serif); font-size: 17px; line-height: 1.4; }
+    .top-cell span { display: block; margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 1.55; }
+    .network-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: start; }
+    .network-list { display: grid; gap: 12px; min-width: 0; }
+    .network-card {
+      position: relative;
+      padding: 17px 18px 15px 21px;
+      min-width: 0;
+      overflow: hidden;
+      border-color: rgba(7, 24, 39, .13);
+      background:
+        linear-gradient(90deg, rgba(185, 149, 81, .1), rgba(255, 253, 248, .9) 34%, rgba(247, 244, 239, .62)),
+        var(--surface);
+    }
+    .network-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 3px;
+      background: var(--gold);
+    }
+    .network-card h3 { color: var(--blue); }
+    .network-card .kicker { color: rgba(7, 24, 39, .5); }
+    .network-card .legend span {
+      border-color: rgba(7, 24, 39, .11);
+      background: rgba(247, 244, 239, .72);
+      color: rgba(7, 24, 39, .64);
+    }
+    .network-card details { margin-top: 12px; }
+    .network-card summary {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 11px;
+      cursor: pointer;
+      background: var(--blue);
+      color: var(--paper);
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 30px;
+      list-style: none;
+    }
+    .network-card summary::-webkit-details-marker { display: none; }
+    @media (max-width: 1120px) {
+      .hero, .map-layout, .network-layout { grid-template-columns: 1fr; min-height: auto; }
+      .weekly-strip, .top-cells { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 760px) {
+      .shell { width: min(100% - 28px, 1320px); padding-top: 22px; }
+      h1 { font-size: 34px; }
+      h2 { font-size: 25px; }
+      .metrics, .weekly-strip, .top-cells, .report-card { grid-template-columns: 1fr; }
+      .report-card h2 { white-space: normal; }
+      .link-button { justify-self: start; }
+      .matrix.entry, .matrix.pain { min-width: 760px; }
+    }
+  </style>
 </head>
-<body class="v3-data-observation-page">
+<body>
   <header class="wavesight-topbar" aria-label="观澜 AI 导航">
     <a class="wavesight-brand" href="v3-data-observation.html" aria-label="观澜 AI 首页">
       <img class="wavesight-logo" src="assets/brand/logo-wavesight-reference-horizontal.svg" alt="观澜 AI Wavesight AI">
     </a>
     <nav class="wavesight-nav" aria-label="主导航">
       <a href="v3-data-observation.html">商业信号<span>Business Signals</span></a>
-      <a href="intelligence-map.html" aria-current="page">情报地图<span>Intelligence Map</span></a>
+      <a href="intelligence-map.html" aria-current="page">报告中心<span>Reports Center</span></a>
       <a href="follow-builders.html">一线观点<span>Builders</span></a>
       <a href="community-intelligence.html">社群情报<span>Community Intel</span></a>
     </nav>
   </header>
 
-  <main class="desk-shell">
-    <section class="desk-section desk-trends" aria-labelledby="relationship-title">
-      <div class="section-head page-title-head">
-        <div>
-          <p class="desk-kicker">Intelligence Map</p>
-          <h1 id="relationship-title">情报地图 <span class="workbench-summary" data-day-summary>读取中</span></h1>
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <div class="page-title-head">
+          <p class="desk-kicker">Reports Center</p>
+          <h1 id="page-title">报告中心</h1>
         </div>
-        <div class="workbench-actions">
-          <div class="date-controls" data-date-controls aria-label="日期筛选">
-            <select data-date-year aria-label="选择年份"></select>
-            <select data-date-month aria-label="选择月份"></select>
-            <select data-date-day aria-label="选择日期"></select>
+      </div>
+
+      <div class="report-stack" aria-label="周报和月报">
+        <div class="monthly-group" aria-label="月报入口">
+          <p class="kicker">Monthly Report</p>
+          <article class="report-card">
+            <div>
+              <p class="kicker">2026.06.01 - 06.30</p>
+              <h2>部署交付层浮现，企业 AI 从工具采用进入流程接管</h2>
+              <p>部署交付层浮现，企业 AI 从工具采用进入流程接管。月报承接完整结构判断、趋势裁决、机会地图和下月验证清单。</p>
+            </div>
+            <a class="link-button" href="monthly-business-structure-2026-06.html">打开月报</a>
+          </article>
+        </div>
+        <div class="weekly-group" aria-label="周报入口">
+          <p class="kicker">Weekly Report</p>
+          <div class="weekly-strip">
+            <a class="weekly-card" href="weekly-ai-business-change-radar.html"><span><span class="fine">2026.06.22 - 06.28</span><b>企业 AI 进入组织级工作流</b></span><span class="weekly-card-action">打开周报</span></a>
+            <a class="weekly-card" href="weekly-ai-business-change-radar-2026-06-22.html"><span><span class="fine">2026.06.15 - 06.21</span><b>企业 Agent 从工具采用进入部署服务化</b></span><span class="weekly-card-action">打开周报</span></a>
+            <a class="weekly-card" href="weekly-ai-business-change-radar-2026-06-15.html"><span><span class="fine">2026.06.09 - 06.15</span><b>AI 从工具试用转向业务流程重构</b></span><span class="weekly-card-action">打开周报</span></a>
           </div>
         </div>
       </div>
-      <div class="relationship-overview" data-relationship-overview></div>
-      <div data-opportunity-panels></div>
-      <div class="weekly-radar-entry" aria-labelledby="weekly-radar-title">
-        <div class="section-head">
-          <div>
-            <p class="desk-kicker">Reports</p>
-            <h2 id="weekly-radar-title">报告中心</h2>
-          </div>
-          <label class="weekly-radar-filter">
-            <span>时间窗口</span>
-            <select aria-label="选择周报时间窗口" data-weekly-report-selector onchange="if (this.value) window.location.assign(this.value);">
-              <option value="weekly-ai-business-change-radar.html" selected>2026.06.22 - 06.28</option>
-              <option value="weekly-ai-business-change-radar-2026-06-22.html">2026.06.15 - 06.21</option>
-              <option value="weekly-ai-business-change-radar-2026-06-15.html">2026.06.09 - 06.15</option>
-            </select>
-          </label>
+    </section>
+
+    <section class="section" aria-labelledby="maps-title">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Opportunity Map</p>
+          <h2 id="maps-title">机会地图</h2>
         </div>
-        <div class="report-subcolumn" aria-labelledby="monthly-report-title">
-          <div class="report-subcolumn-head">
-            <div>
-              <p class="desk-kicker">Monthly</p>
-              <h3 id="monthly-report-title">月报</h3>
-            </div>
+        <div class="toolbar">
+          <div class="legend" aria-label="变化状态">
+            <span class="status-warming">升温</span><span class="status-stable">稳定</span><span class="status-noise">噪音</span><span class="status-watch">待验证</span>
           </div>
-          <div class="weekly-radar-list" aria-label="月报列表">
-            <article class="weekly-radar-card report-card-monthly">
+        </div>
+      </div>
+      <div class="map-layout">
+        <div class="panel">
+          <article class="map-block" aria-labelledby="entry-map-title">
+            <div class="map-block-head">
               <div>
-                <span class="weekly-radar-date">2026-06-01 / 2026-06-30</span>
-                <h3>AI 商业结构与机会月报：部署交付层浮现</h3>
-                <p>企业 AI 从工具采用进入流程接管，价值链中浮现部署交付层。月报完整呈现产业结构变化、趋势裁决表、机会地图、关键矛盾和 7 月验证清单。</p>
-                <div class="weekly-radar-tags" aria-label="月报内容模块">
-                  <span>产业结构变化图</span>
-                  <span>趋势裁决表</span>
-                  <span>机会地图</span>
-                  <span>7 月验证清单</span>
-                </div>
-              </div>
-              <a class="weekly-radar-link" href="monthly-business-structure-2026-06.html">阅读月报</a>
-            </article>
-          </div>
-        </div>
-        <div class="report-subcolumn" aria-labelledby="weekly-report-title">
-          <div class="report-subcolumn-head">
-            <div>
-              <p class="desk-kicker">Weekly</p>
-              <h3 id="weekly-report-title">周报</h3>
-            </div>
-          </div>
-          <div class="weekly-radar-list" aria-label="周报列表">
-          <article class="weekly-radar-card">
-            <div>
-              <span class="weekly-radar-date">2026-06-22 / 2026-06-28</span>
-              <h3>企业 AI 进入组织级工作流，Agent 从能力演示转向流程接管</h3>
-              <p>企业 AI 正从“能不能让 Agent 完成任务”的能力演示，转向“能不能把 Agent 放进真实组织工作流、权限边界、上下文系统、销售客服闭环和工程交付链路”的流程接管问题。</p>
-              <div class="weekly-radar-tags" aria-label="周报数据口径">
-                <span>Signals 97 张</span>
-                <span>Opinions 38 条</span>
-                <span>Community 54 条</span>
+                <p class="kicker">Entry Point Map</p>
+                <h3 id="entry-map-title">切入点地图</h3>
               </div>
             </div>
-            <a class="weekly-radar-link" href="weekly-ai-business-change-radar.html" data-weekly-report-action>阅读本周周报</a>
+            <div class="matrix-scroll">
+              <div class="matrix entry" data-map-panel="entry" aria-label="切入点地图"></div>
+            </div>
           </article>
-          <article class="weekly-radar-card">
-            <div>
-              <span class="weekly-radar-date">2026-06-15 / 2026-06-21</span>
-              <h3>企业 Agent 从工具采用进入部署服务化</h3>
-              <p>企业 Agent 已经从买工具和试 demo 推进到部署、治理、成本、上下文和交付服务的系统问题。本期重点追踪 FDE 式落地服务、模型路由与治理、AI Coding 工作台和社区 AI 企业服务四条主线。</p>
-              <div class="weekly-radar-tags" aria-label="周报数据口径">
-                <span>Signals 129 张</span>
-                <span>Opinions 51 条</span>
-                <span>Community 41 条</span>
+          <article class="map-block" aria-labelledby="pain-map-title">
+            <div class="map-block-head">
+              <div>
+                <p class="kicker">Product Pain Map</p>
+                <h3 id="pain-map-title">痛点地图</h3>
               </div>
             </div>
-            <a class="weekly-radar-link" href="weekly-ai-business-change-radar-2026-06-22.html">阅读归档周报</a>
-          </article>
-          <article class="weekly-radar-card">
-            <div>
-              <span class="weekly-radar-date">2026-06-09 / 2026-06-15</span>
-              <h3>AI 从工具试用转向业务流程重构</h3>
-              <p>AI 的商业焦点从单点工具试用移向流程重构，企业工作流、AI Coding、基础设施和治理信号同时升温。机会从做一个通用工具，转向把 AI 接进真实交付、获客、知识沉淀和治理体系。</p>
-              <div class="weekly-radar-tags" aria-label="周报数据口径">
-                <span>Signals 101 张</span>
-                <span>Opinions 44 条</span>
-                <span>Community 约 44 条</span>
-              </div>
+            <div class="matrix-scroll">
+              <div class="matrix pain" data-map-panel="pain" aria-label="痛点地图"></div>
             </div>
-            <a class="weekly-radar-link" href="weekly-ai-business-change-radar-2026-06-15.html">阅读归档周报</a>
           </article>
+          <div class="top-cells" data-top-cells></div>
         </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="network-title">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Relation Paths</p>
+          <h2 id="network-title">关联路径</h2>
         </div>
+      </div>
+      <div class="network-layout">
+        <div class="network-list" data-network-list></div>
       </div>
     </section>
   </main>
 
-  <dialog class="detail-dialog" data-detail-dialog>
-    <div class="detail-panel">
-      <button class="detail-close" type="button" data-detail-close aria-label="关闭详情">×</button>
-      <div data-detail-content></div>
+  <div class="cell-modal-backdrop" data-cell-modal hidden>
+    <div class="cell-modal" role="dialog" aria-modal="true" aria-labelledby="cell-modal-title">
+      <div class="cell-modal-head">
+        <div data-cell-inspector></div>
+        <button class="modal-close" type="button" data-modal-close aria-label="关闭">×</button>
+      </div>
     </div>
-  </dialog>
+  </div>
 
-  <script src="assets/v3-data-observation-desk.js?v=20260623-opportunity-stacked" defer></script>
   <script>
-    (() => {
-      const selector = document.querySelector("[data-weekly-report-selector]");
-      const action = document.querySelector("[data-weekly-report-action]");
-      const syncAction = () => {
-        if (selector?.value && action) action.href = selector.value;
-      };
-      const openSelectedReport = () => {
-        syncAction();
-        if (selector?.value && window.location.pathname.split("/").pop() !== selector.value) {
-          window.location.assign(selector.value);
-        }
-      };
-      selector?.addEventListener("input", syncAction);
-      selector?.addEventListener("change", openSelectedReport);
-      window.addEventListener("pageshow", syncAction);
-      syncAction();
-    })();
+    const state = { activeMap: "entry", entryCells: [], painCells: [] };
+    const zh = {
+      enterprise_ai_owner:"企业 AI 负责人", it_security_team:"IT / 安全团队", sales_team:"销售团队", customer_support_team:"客服团队", engineering_team:"研发团队", legal_team:"法务团队", finance_team:"财务团队", procurement_team:"采购团队", healthcare_provider:"医疗机构", insurance_team:"保险团队", operations_team:"运营团队", content_team:"内容团队", smb_owner:"中小企业主",
+      sales:"销售团队", customer_support:"客服团队", engineering:"研发团队", legal_compliance:"法务 / 合规", finance:"财务团队", procurement:"采购团队", operations:"运营团队", marketing_content:"营销内容", it_security:"IT / 安全治理", healthcare_operations:"医疗运营", insurance_operations:"保险运营",
+      customer_ticket_triage:"工单分流", sales_lead_research:"账户研究", sales_briefing:"销售简报", contract_review:"合同审查", rfp_response:"RFP 响应", knowledge_base_qa:"知识库问答", code_review:"代码审查", internal_tool_building:"内部工具构建", model_deployment:"模型部署", cost_monitoring:"成本监控", permission_audit:"权限审计", medical_documentation:"医疗文书", insurance_claim_review:"保险理赔", procurement_supplier_screening:"供应商筛选", content_workflow:"内容工作流", data_analysis_query:"数据分析", call_transcription:"通话转写", logistics_coordination:"物流协调",
+      workflow_integration:"工作流集成", api_cost_spike:"成本压力", permission_boundary:"权限边界", audit_log_required:"审计记录", data_silo:"数据孤岛", hallucination_risk:"幻觉风险", human_review_required:"人工复核", latency_sensitive:"延迟 / 稳定性", model_routing_complexity:"模型路由复杂", security_compliance:"安全合规", deployment_failure:"部署失败", context_management:"上下文管理", evaluation_gap:"评测缺口",
+      agent_workbench:"Agent 工作台", copilot:"Copilot", api:"API / SDK", model_gateway:"模型网关", rag_knowledge_base:"RAG 知识库", vertical_saas:"垂直 SaaS", developer_tool:"开发工具", workflow_automation:"流程自动化", fde_service:"FDE 服务", managed_service:"托管服务", evaluation_platform:"评测平台", browser_or_desktop_tool:"桌面 / 浏览器工具", api_usage_based:"API 用量计费", project_based_service:"项目制服务", fde_delivery:"FDE 交付",
+    };
+    const entryRows = [
+      { label:"企业 AI 负责人", fields:["buyer_or_user","team_or_function"], values:["enterprise_ai_owner","it_security","it_security_team"] },
+      { label:"研发团队", fields:["buyer_or_user","team_or_function"], values:["engineering_team","engineering"] },
+      { label:"销售团队", fields:["buyer_or_user","team_or_function"], values:["sales_team","sales"] },
+      { label:"客服团队", fields:["buyer_or_user","team_or_function"], values:["customer_support_team","customer_support"] },
+      { label:"运营团队", fields:["buyer_or_user","team_or_function"], values:["operations_team","operations"] },
+      { label:"法务 / 采购", fields:["buyer_or_user","team_or_function"], values:["legal_team","legal_compliance","procurement_team","procurement"] },
+    ];
+    const entryCols = [
+      { label:"内部工具", values:["internal_tool_building"] },
+      { label:"账户研究", values:["sales_lead_research","sales_briefing"] },
+      { label:"工作流自动化", values:["model_deployment","logistics_coordination","data_analysis_query"] },
+      { label:"知识库问答", values:["knowledge_base_qa"] },
+      { label:"审查 / 复核", values:["contract_review","code_review","permission_audit","human_review_required"] },
+      { label:"文档 / 转写", values:["medical_documentation","call_transcription","content_workflow","rfp_response"] },
+    ];
+    const painRows = [
+      { label:"工作流集成", values:["workflow_integration","model_routing_complexity"] },
+      { label:"评测缺口", values:["evaluation_gap","hallucination_risk"] },
+      { label:"数据孤岛", values:["data_silo","context_management"] },
+      { label:"权限治理", values:["permission_boundary","audit_log_required"] },
+      { label:"安全合规", values:["security_compliance"] },
+      { label:"成本 / 稳定性", values:["api_cost_spike","latency_sensitive","deployment_failure"] },
+    ];
+    const painCols = [
+      { label:"API / SDK", values:["api","api_usage_based"] },
+      { label:"开发工具", values:["developer_tool","browser_or_desktop_tool"] },
+      { label:"Agent 工作台", values:["agent_workbench"] },
+      { label:"Copilot", values:["copilot"] },
+      { label:"流程自动化", values:["workflow_automation","vertical_saas"] },
+      { label:"FDE / 托管", values:["fde_service","fde_delivery","managed_service","project_based_service"] },
+      { label:"评测平台", values:["evaluation_platform","model_gateway"] },
+    ];
+    const relationSpecs = [
+      { title:"企业 AI 负责人 → 工作流治理 → Agent 部署服务", buyerValues:["enterprise_ai_owner","it_security_team","it_security"], taskValues:["permission_audit","model_deployment","knowledge_base_qa","internal_tool_building"], painValues:["workflow_integration","permission_boundary","audit_log_required","security_compliance","deployment_failure"], productValues:["agent_workbench","workflow_automation","fde_service","fde_delivery","managed_service"], judgment:"企业买方不只在试工具，而是在寻找能把 Agent 接进权限、上下文和流程治理的交付层。" },
+      { title:"研发团队 → 内部工具链 → AI Coding / SDK / DevOps", buyerValues:["engineering_team","engineering"], taskValues:["internal_tool_building","code_review","model_deployment"], painValues:["workflow_integration","evaluation_gap","context_management"], productValues:["developer_tool","api","api_usage_based","model_gateway","evaluation_platform"], judgment:"研发仍是最热切入买方，证据集中在开发工具、SDK、模型部署和评测链路。" },
+      { title:"销售团队 → 账户研究 → 自动化工作流", buyerValues:["sales_team","sales"], taskValues:["sales_lead_research","sales_briefing"], painValues:["workflow_integration","data_silo","context_management"], productValues:["workflow_automation","copilot","rag_knowledge_base","vertical_saas"], judgment:"销售侧的账户研究和销售准备正在升温，但客户结果证据仍需继续补强。" },
+      { title:"客服团队 → 工单分流 → Copilot / Agent 工作台", buyerValues:["customer_support_team","customer_support"], taskValues:["customer_ticket_triage","call_transcription","knowledge_base_qa"], painValues:["workflow_integration","human_review_required","hallucination_risk"], productValues:["copilot","agent_workbench","rag_knowledge_base","workflow_automation"], judgment:"客服场景具备明确流程和复盘入口，但当前证据在产品发布与部署结果之间仍不均衡。" },
+    ];
+    const strongActions = new Set(["customer_deployment","procurement_signal","pricing_change","funding_round","partnership_integration","acquisition"]);
+    const launchActions = new Set(["product_launch","open_source_release","research_benchmark"]);
+    const $ = (s, r=document) => r.querySelector(s);
+    const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+    const uniq = (items) => Array.from(new Set(items.filter(Boolean)));
+    const daysBetween = (later, earlier) => Math.floor((new Date(`${later}T00:00:00`) - new Date(`${earlier}T00:00:00`)) / 86400000);
+    function vals(card, field) {
+      const raw = card.opportunitySignals?.labels?.[field] || card.opportunitySignals?.[field] || card.opportunitySignals?.[field.replace(/_([a-z])/g, (_, c) => c.toUpperCase())] || [];
+      return Array.isArray(raw) ? raw.map((x) => x.id || x).filter(Boolean) : [];
+    }
+    function hasAny(card, fields, values) { const wanted = new Set(values); return fields.some((f) => vals(card, f).some((v) => wanted.has(v))); }
+    function hasVal(card, field, values) { return hasAny(card, [field], values); }
+    function windowCards(cards, activeDate, days, offset=0) {
+      return cards.filter((card) => { const diff = daysBetween(activeDate, card.date); return diff >= offset && diff < days + offset; });
+    }
+    function evidenceStats(cards) {
+      const strong = cards.filter((card) => vals(card, "business_action").some((v) => strongActions.has(v))).length;
+      const launch = cards.filter((card) => vals(card, "business_action").some((v) => launchActions.has(v))).length;
+      const subjects = uniq(cards.map((c) => c.subject || c.sourceName || c.title)).slice(0, 4);
+      return { strong, launch, subjects };
+    }
+    function statusFor(current, previous) {
+      if (!current.length) return "";
+      const s = evidenceStats(current);
+      if (s.launch / current.length >= .55 && s.strong / current.length < .28) return "noise";
+      if (current.length >= 3 && (previous.length === 0 || current.length >= previous.length * .55)) return "warming";
+      if (s.strong > 0) return "stable";
+      return "watch";
+    }
+    function statusText(s) { return ({ warming:"升温", stable:"稳定", noise:"噪音", watch:"待验证" })[s] || ""; }
+    function statusClass(s) { return ({ warming:"status-warming", stable:"status-stable", noise:"status-noise", watch:"status-watch" })[s] || ""; }
+    function statusColor(s) { return ({ warming:"rgba(185,149,81,.52)", stable:"rgba(65,111,88,.42)", noise:"rgba(154,98,92,.36)", watch:"rgba(86,69,45,.2)" })[s] || "rgba(86,69,45,.14)"; }
+    function buildCells(cards, activeDate, rows, cols, type) {
+      const cur = windowCards(cards, activeDate, 7), prev = windowCards(cards, activeDate, 23, 7);
+      const cells = rows.flatMap((row) => cols.map((col) => {
+        const match = (card) => type === "entry"
+          ? hasAny(card, row.fields, row.values) && hasVal(card, "specific_task", col.values)
+          : hasVal(card, "pain_or_constraint", row.values) && (hasVal(card, "product_form", col.values) || hasVal(card, "delivery_model", col.values));
+        const current = cur.filter(match), previous = prev.filter(match), status = statusFor(current, previous);
+        return { type, row: row.label, col: col.label, count: current.length, baseline: previous.length, status, cards: current, stats: evidenceStats(current) };
+      }));
+      const max = Math.max(...cells.map((c) => c.count), 1);
+      return cells.map((c) => ({ ...c, heat: c.count ? Math.max(.18, c.count / max) : 0 }));
+    }
+    function renderMatrix(root, rows, cols, cells, type) {
+      root.innerHTML = [`<div class="axis">${type === "entry" ? "买方 / 任务" : "痛点 / 产品形态"}</div>`, ...cols.map((c) => `<div class="axis">${c.label}</div>`), ...rows.flatMap((row) => [`<div class="axis">${row.label}</div>`, ...cols.map((col) => {
+        const cell = cells.find((x) => x.row === row.label && x.col === col.label), st = cell?.status || "";
+        return `<button type="button" class="cell ${cell?.count ? "has-data" : ""} ${statusClass(st)}" data-cell-type="${type}" data-cell-key="${row.label}||${col.label}" style="--heat:${cell?.heat || 0};--cell-color:${statusColor(st)}" ${cell?.count ? "" : "disabled"}><span><strong>${cell?.count || ""}</strong><em>${cell?.count ? `${cell.baseline} 条 30 日基线` : "无可靠证据"}</em></span>${st ? `<small>${statusText(st)}</small>` : ""}</button>`;
+      })])].join("");
+    }
+    function renderInspector(cell) {
+      const root = $("[data-cell-inspector]");
+      if (!cell?.count) { return; }
+      const boundary = cell.stats.strong ? `强证据 ${cell.stats.strong} 条，包含部署、融资、采购、合作或定价信号。` : cell.stats.launch ? "证据偏供给侧，主要来自产品发布、开源或技术材料，需要继续补客户结果。" : "有重复信号，但客户部署、采购或结果数据仍不足。";
+      root.innerHTML = `<p class="kicker">${cell.type === "entry" ? "Entry Point Cell" : "Product Pain Cell"}</p><h3 id="cell-modal-title">${cell.row} × ${cell.col}</h3><p>${cell.count} 条 7 日 Cards，30 日基线 ${cell.baseline} 条；状态为 <b>${statusText(cell.status)}</b>。${boundary}</p><div class="legend" style="margin-top:12px"><span class="${statusClass(cell.status)}">${statusText(cell.status)}</span><span>代表主体：${cell.stats.subjects.join(" / ") || "未提取"}</span></div><div class="item-list">${cell.cards.slice(0,5).map((card) => `<article class="evidence"><b>${card.title}</b><span>${card.id} · ${card.categoryLabel || card.category || "Card"} · ${card.date} · ${card.sourceName || ""}</span></article>`).join("")}</div>`;
+      $("[data-cell-modal]").hidden = false;
+      $("[data-modal-close]").focus();
+    }
+    function renderTop(cells) {
+      $("[data-top-cells]").innerHTML = cells.filter((c) => c.count).sort((a,b) => b.count - a.count).slice(0,4).map((cell) => `<article class="top-cell"><p class="kicker">${statusText(cell.status)}</p><b>${cell.row} × ${cell.col}</b><span>${cell.count} 条 7 日 Cards，代表主体：${cell.stats.subjects.slice(0,3).join(" / ") || "未提取"}</span></article>`).join("");
+    }
+    function relationMatches(card, spec) {
+      const buyer = hasAny(card, ["buyer_or_user","team_or_function"], spec.buyerValues), task = hasVal(card, "specific_task", spec.taskValues), pain = hasVal(card, "pain_or_constraint", spec.painValues), product = hasAny(card, ["product_form","delivery_model"], spec.productValues);
+      return (buyer && (task || pain || product)) || (task && product) || (pain && product);
+    }
+    function buildRelations(cards, activeDate) {
+      const all = windowCards(cards, activeDate, 30);
+      return relationSpecs.map((spec) => {
+        const matched = all.filter((card) => relationMatches(card, spec)), stats = evidenceStats(matched);
+        const products = uniq(matched.flatMap((c) => [...vals(c,"product_form"), ...vals(c,"delivery_model")]).map((x) => zh[x] || x)).slice(0,4);
+        const buyers = uniq(matched.flatMap((c) => [...vals(c,"buyer_or_user"), ...vals(c,"team_or_function")]).map((x) => zh[x] || x)).slice(0,4);
+        return { ...spec, cards: matched, stats, products, buyers, boundary: stats.strong ? `强证据 ${stats.strong} 条；仍需区分部署结果和产品发布热度。` : "证据更多来自发布、技术材料或案例页，客户结果仍偏弱。" };
+      }).filter((x) => x.cards.length).sort((a,b) => b.cards.length - a.cards.length).slice(0,4);
+    }
+    function renderNetwork(directions) {
+      const root = $("[data-network-list]");
+      root.innerHTML = directions.map((d, i) => `<article class="network-card" data-network-card="${i}"><p class="kicker">Direction ${String(i+1).padStart(2,"0")} · ${d.cards.length} Cards</p><h3>${d.title}</h3><p>${d.judgment}</p><div class="legend"><span>代表主体：${d.stats.subjects.slice(0,3).join(" / ") || "未提取"}</span><span>产品形态：${d.products.join(" / ") || "未提取"}</span><span class="${d.stats.strong ? "status-stable" : "status-watch"}">${d.boundary}</span></div><details><summary>关联事件</summary><div class="item-list">${d.cards.slice(0,4).map((card) => `<article class="evidence"><b>${card.title}</b><span>${card.id} · ${card.categoryLabel || card.category || "Card"} · ${card.date} · ${card.sourceName || ""}</span></article>`).join("")}</div></details></article>`).join("");
+    }
+    function bind() {
+      document.addEventListener("click", (event) => {
+        const btn = event.target.closest("[data-cell-key]");
+        if (!btn) return;
+        const cells = btn.dataset.cellType === "entry" ? state.entryCells : state.painCells;
+        const [row, col] = btn.dataset.cellKey.split("||");
+        const cell = cells.find((x) => x.row === row && x.col === col);
+        $$("[data-cell-key]").forEach((x) => x.classList.toggle("is-active", x === btn));
+        renderInspector(cell);
+      });
+      $("[data-modal-close]").addEventListener("click", closeModal);
+      $("[data-cell-modal]").addEventListener("click", (event) => {
+        if (event.target === event.currentTarget) closeModal();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !$("[data-cell-modal]").hidden) closeModal();
+      });
+    }
+    function closeModal() {
+      $("[data-cell-modal]").hidden = true;
+      $$("[data-cell-key]").forEach((x) => x.classList.remove("is-active"));
+    }
+    async function init() {
+      const payload = await fetch("data/v3-data-observation-desk.json", { cache: "no-store" }).then((r) => r.json());
+      const cards = (payload.cards || []).filter((c) => c.category !== "opinion");
+      const activeDate = payload.meta?.activeDate || cards.map((c) => c.date).sort().at(-1);
+      state.entryCells = buildCells(cards, activeDate, entryRows, entryCols, "entry");
+      state.painCells = buildCells(cards, activeDate, painRows, painCols, "pain");
+      renderMatrix($("[data-map-panel='entry']"), entryRows, entryCols, state.entryCells, "entry");
+      renderMatrix($("[data-map-panel='pain']"), painRows, painCols, state.painCells, "pain");
+      renderTop([...state.entryCells, ...state.painCells]);
+      renderNetwork(buildRelations(cards, activeDate));
+      bind();
+    }
+    init().catch((error) => { console.error(error); document.body.insertAdjacentHTML("beforeend", `<div style="position:fixed;left:16px;right:16px;bottom:16px;padding:16px;background:#fff;border:1px solid #a85a54">真实数据读取失败：${error.message}</div>`); });
   </script>
 </body>
 </html>

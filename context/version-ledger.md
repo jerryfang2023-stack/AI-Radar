@@ -18,30 +18,30 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.3.8.7-report-center-monthly |
-| Version name | Report Center Monthly Release |
-| Version layer | Patch |
-| Release date | 2026-06-30 |
-| Last modified at | 2026-07-01T11:35:00+08:00 |
-| Product version | V3.3 |
-| Main website version | SITE-V3.3.8.7 |
+| Current version | V3.4.0-report-center-opportunity-system |
+| Version name | Report Center Opportunity System Release |
+| Version layer | Major |
+| Release date | 2026-07-01 |
+| Last modified at | 2026-07-01T13:10:03+08:00 |
+| Product version | V3.4 |
+| Main website version | SITE-V3.4.0 |
 | Business Signals column version | BSIG-V1.1.5-corepool-top10-release |
 | First-Line Viewpoints column version | FLV-V1.0.2-supervision-idempotency |
 | Community Intelligence column version | CINT-V1.0.2-publication-waiting-gate |
 | Enterprise AI lens version | EAI-V1.1.0-fde-lens-pool |
-| Intelligence Map column version | IMAP-V1.3.0-report-center-monthly |
+| Reports Center column version | IMAP-V2.0.0-report-center-opportunity-system |
 | Business Signals data contract | V3.3.6.3-business-source-artifact-aggregation |
 | Weekly Report content source | `01-SiteV2/content/08-report/` |
 | Monthly Report content source | `01-SiteV2/content/08-report/monthly/` |
 | Operations backend version | OPS-V1.2.2-skill-store-title-dedupe |
 | Skill Store version | v1.3.2 Cleanup management cache and common-action fix |
 | Git tag | not tagged |
-| Current entries | Business Signals / Intelligence Map / First-Line Viewpoints / Community Intelligence; Dashboard retained as backend |
+| Current entries | Business Signals / Reports Center / First-Line Viewpoints / Community Intelligence; Dashboard retained as backend |
 
 ## Current Product Baseline
 
 - WaveSight AI is now a unified intelligence frontstage, not a V2 four-column content site.
-- V3.3 public frontstage has four entries: Business Signals, Intelligence Map, First-Line Viewpoints, and Community Intelligence.
+- V3.4 public frontstage has four entries: Business Signals, Reports Center, First-Line Viewpoints, and Community Intelligence.
 - Business Signals uses the Raw / Pool / Card / Relationship Graph / Trend Candidate chain.
 - Business Signals is versioned as `BSIG-V1.1.5-corepool-top10-release` in this release. Its public page keeps Top10 as the primary desk, preserves the `EAI-V1.1.0-fde-lens-pool` secondary lens, blocks generic FDE role/service pages, generic funding commentary, funding roundups, broad lists, stale sources, and search-query artifacts from formal Card promotion, keeps the six formal Signal Card entry gates unchanged, allows qualified source-backed Core Pool display candidates to fill Top10 when formal Card promotion is thin but Pool / Core Pool / non-large Core Pool supply is healthy, treats GDELT / keyword search / RSS / AI HOT as peer source-artifact channels, and treats provider-caused Raw shortfall as diagnostic when Pool, routed Pool, usable Core Pool, non-large Core Pool, and Top10 supply are sufficient.
 - First-Line Viewpoints is versioned as `FLV-V1.0.2-supervision-idempotency` in this release. It keeps the morning RSS page-data lane and afternoon local `follow-builders` publish lane independent, requires Obsidian person/date timeline sync idempotency, and separates healthy local data from publication-state warnings.
@@ -57,10 +57,10 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Business Signals blocks social/community posts, repo/catalog pages, marketplace/package/model pages, generic funding lists, funding roundups, generic funding commentary, generic FDE role/service pages, job posts, role explainers, consulting/service landing pages, old evergreen technical posts, and search-query artifacts from formal Card promotion unless the same original source contains a concrete dated product/service, funding, customer deployment, procurement, partnership, or production rollout event.
 - Hermes early handoff supervises the three lanes with lane-specific takeover windows: Community Intelligence publish at 09:30 after the 08:30 Windows collector, 08:45 publish check, and 09:00 Codex local fallback / repair window; First-Line Viewpoints RSS at 09:30 after the 08:30 local `builder-observation-daily-sync` collection/build/sync attempt and single 09:17 GitHub fallback; and Business Signals at 09:45 / 09:55. Hermes also records the afternoon follow-builders skill publish at 16:30.
 - Hermes early handoff is staged: 09:30 may dispatch Community publish and First-Line RSS while Business waits; 09:45 may dispatch Business while Community / First-Line only recheck; 09:55 is final review only and cannot start a new routine dispatch.
-- Intelligence Map and Dashboard follow the Business Signals data chain.
-- Intelligence Map is versioned independently as `IMAP-V1.3.0-report-center-monthly`. Its relationship graph keeps graph tags, while the standalone Entry Point Map and Product Pain Map use source-backed `opportunity_signals`. The former weekly report area is now a Reports Center with Weekly and Monthly report subcolumns; weekly content remains sourced from `01-SiteV2/content/08-report/`, monthly content is sourced from `01-SiteV2/content/08-report/monthly/`, and report detail pages must preserve complete report content instead of summary-only cards.
+- Reports Center and Dashboard follow the Business Signals data chain.
+- Reports Center is versioned independently as `IMAP-V2.0.0-report-center-opportunity-system`. It leads with Monthly / Weekly reports, renders Entry Point Map and Product Pain Map as separate full-width opportunity maps from source-backed `opportunity_signals`, opens cell evidence in a modal, and keeps relation paths as a supporting exploration section after the maps.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
-- SITE-V3.3.8.7 keeps SITE-V3.3.8.6 release-gate hardening, then adds the Reports Center / Monthly Report release and refreshes the source-backed opportunity radar content for the current month.
+- SITE-V3.4.0 keeps the V3.3 release-gate hardening, then upgrades the Reports Center into a report-first opportunity system with independent opportunity maps, evidence modals, and relation paths.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
@@ -72,7 +72,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 | Page | File | Current Role |
 |---|---|---|
 | Business Signals | `01-SiteV2/site/v3-data-observation.html` | V3.3 main public page for daily Cards, relationship graph, trend candidates, and the 企业AI化 secondary lens |
-| Intelligence Map | `01-SiteV2/site/intelligence-map.html` | Relationship graph, intelligence map entry, source-backed opportunity radar, and Reports Center with Weekly / Monthly report subcolumns |
+| Reports Center | `01-SiteV2/site/intelligence-map.html` | Monthly / weekly report entry, source-backed Entry Point Map and Product Pain Map, click-to-open evidence modals, and relation paths |
 | First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Builder Observation V1.0 merged into V3.3; shows builders public remarks, Chinese translations, people, and long-form interviews |
 | Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community Intelligence V1.0; logged-in community cases, AI tool tactics, business opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Data Observation operations governance backend |
@@ -89,7 +89,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | Operations Backend / 运营大后台 | `OPS-V1.2.2-skill-store-title-dedupe` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Data Observation governance loop navigation, issue center, task chain, data quality, version governance, independent Skill Store, settings, and backend-facing generated ops data | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, version ledger |
 | Topic Center / 选题中心 module | `V2.2.2-source-title` | Automated in the Business Signals daily PR chain at 08:57 Asia/Shanghai; regenerated after the Business frontstage gate passes and deployed through GitHub Pages after auto-merge | `business-signals + first-line-viewpoints + community-intelligence` | `topic-center.json/js`, `topic-center-hermes.json/md`, and local `04-AIP/01-选题库/<date>-每日选题.md` when local sync can run |
 | Business Signals / 商业信号 column | `BSIG-V1.1.5-corepool-top10-release` | Published through the main GitHub Pages frontstage; keeps Top10 as the primary desk and adds the 企业AI化 secondary lens | V3.3.6.3 Card data contract plus Enterprise AI lens rendering plus Core Pool source hygiene gates, source-first pipeline hygiene gate, peer source-artifact selection, Pool/Core release override for provider-caused Raw shortfall, and Core Pool display-candidate Top10 fill when formal Card promotion is thin | `v3-data-observation.html`, `v3-data-observation-desk.json` meta, version ledger |
-| Intelligence Map / 情报地图 column | `IMAP-V1.3.0-report-center-monthly` | Published through the main GitHub Pages frontstage. The relationship graph remains tag/edge based; the Entry Point Map and Product Pain Map are standalone opportunity radar panels backed by `opportunity_signals`; the report area is now Reports Center, with Weekly and Monthly report subcolumns and full monthly report detail pages. | Business Signals relationship graph + source-backed opportunity_signals + Weekly Business Change Radar content + Monthly Business Structure Report content | `intelligence-map.html`, `reports.html`, `monthly-business-structure-2026-06.html`, `weekly-ai-business-change-radar.html`, `weekly-ai-business-change-radar-2026-06-15.html`, `assets/reports.css`, `assets/weekly-report.css`, `assets/v3-data-observation-desk.css`, `agent-workflow/skills/guanlan-opportunity-radar-updater/`, `agent-workflow/skills/guanlan-monthly-report-page-generator/`, `01-SiteV2/content/08-report/*.md`, `01-SiteV2/content/08-report/monthly/*.md` |
+| Reports Center / 报告中心 column | `IMAP-V2.0.0-report-center-opportunity-system` | Published through the main GitHub Pages frontstage. Reports lead the page; Entry Point Map and Product Pain Map render as separate full-width source-backed maps; cell evidence opens in a modal; relation paths remain a supporting section. | Business Signals source-backed opportunity_signals + Weekly Business Change Radar content + Monthly Business Structure Report content + Card-derived relation paths | `intelligence-map.html`, `reports.html`, `monthly-business-structure-2026-06.html`, `weekly-ai-business-change-radar.html`, `weekly-ai-business-change-radar-2026-06-15.html`, `agent-workflow/skills/guanlan-opportunity-radar-updater/`, `01-SiteV2/content/08-report/*.md`, `01-SiteV2/content/08-report/monthly/*.md` |
 
 ## Current Sources Of Truth
 
@@ -137,6 +137,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Freeze Point | Pages | Date | Updated at | Version | Must Not Return | Gates |
 |---|---|---|---|---|---|---|
+| `SITE-V3.4.0-freeze-report-center-opportunity-system-20260701` | Reports Center / Opportunity Map / Relation Paths / Skill Ops | 2026-07-01 | 2026-07-01T13:10:03+08:00 | SITE-V3.4.0 / IMAP-V2.0.0-report-center-opportunity-system | Public nav reverting to 情报地图 / Intelligence Map; report entry detached from the Reports Center first screen; Entry Point Map and Product Pain Map squeezed behind toggle buttons; persistent right-side Cell Evidence panel returning; map evidence shown as backend diagnostics instead of click-to-open modal; relation paths occupying first screen or reverting to a large decorative network graph; opportunity maps driven by stale `formal_tags`; V2 Signal Candidates / 时间聚集 / Tag 聚合 modules returning | report-center visual smoke + opportunity map modal smoke + nav/version scan + skill eval update + frontstage regression + GitHub Pages deploy |
 | `SITE-V3.3.8.7-freeze-report-center-monthly-20260630` | Intelligence Map / Reports Center / Monthly Report / Opportunity Radar / Skill Ops | 2026-06-30 | 2026-06-30T18:00:00+08:00 | SITE-V3.3.8.7 / IMAP-V1.3.0-report-center-monthly / REPORTS-V0.2.0-monthly-report-center | Monthly report detached from Reports Center; monthly detail pages reduced to summary cards; raw unstyled report tables; data/method boundaries dominating the hero; opportunity maps driven by stale `formal_tags`; monthly report page generation skill missing from Skill Store governance | frontstage regression + monthly page visual smoke + opportunity signal refresh + skill validation / sync + GitHub Pages deploy |
 | `ops-v1.2.2-freeze-skill-store-title-dedupe-20260630` | Dashboard / Operations Backend | 2026-06-30 | 2026-06-30T17:55:00+08:00 | OPS-V1.2.2-skill-store-title-dedupe | Duplicate Skill Store titles appearing from both the operations shell and the embedded Skill Store page; Skill Store being removed as an independent rail entry | operations-console syntax + ops-console data build + browser smoke + GitHub Pages deploy |
 | `ops-v1.2.1-freeze-skill-store-rail-20260630` | Dashboard / Operations Backend | 2026-06-30 | 2026-06-30T17:40:00+08:00 | OPS-V1.2.1-skill-store-rail | Skill Store being deleted, hidden, or merged into Version Governance; oversized dashboard typography returning to display-page scale; large empty metric blocks replacing compact operations controls | ops-console data build + operations-console syntax + frontstage regression + browser smoke + GitHub Pages deploy |
@@ -173,7 +174,8 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 | Version | Updated at | Summary | Current Status |
 |---|---|---|---|
-| SITE-V3.3.8.7 / IMAP-V1.3.0-report-center-monthly / REPORTS-V0.2.0-monthly-report-center | 2026-06-30T18:00:00+08:00 | Adds the Reports Center release to Intelligence Map: weekly and monthly reports become separate subcolumns, the June monthly business-structure report has a full detail page with richer report typography and visual tables, the report page generator skill is registered, and opportunity radar content is refreshed from source-backed current-month signal cards. | current |
+| SITE-V3.4.0 / IMAP-V2.0.0-report-center-opportunity-system | 2026-07-01T13:10:03+08:00 | Upgrades the former Intelligence Map into the Reports Center opportunity system: report-first hero, Monthly / Weekly entry cards, separate full-width Entry Point Map and Product Pain Map, click-to-open evidence modal, lower-saturation report-style palette, and relation paths as a supporting section. | current |
+| SITE-V3.3.8.7 / IMAP-V1.3.0-report-center-monthly / REPORTS-V0.2.0-monthly-report-center | 2026-06-30T18:00:00+08:00 | Adds the Reports Center release to Intelligence Map: weekly and monthly reports become separate subcolumns, the June monthly business-structure report has a full detail page with richer report typography and visual tables, the report page generator skill is registered, and opportunity radar content is refreshed from source-backed current-month signal cards. | upgraded |
 | OPS-V1.2.2-skill-store-title-dedupe | 2026-06-30T17:55:00+08:00 | Removes the duplicate outer Skill Store title from the operations shell while keeping Skill Store as an independent rail entry and embedded governance surface. | current operations backend |
 | OPS-V1.2.1-skill-store-rail | 2026-06-30T17:40:00+08:00 | Splits Skill Store back out as an independent operations rail entry, keeps Version Governance focused on version boundaries and freeze points, and tightens operations-console typography, cards, and metric blocks for denser governance use. | upgraded |
 | OPS-V1.2.0-governance-loop | 2026-06-30T17:20:00+08:00 | Merges the operations backend into six governance entries: 总览 / 问题中心 / 任务链路 / 数据质量 / 版本治理 / 系统设置. Adds generated `ops-console.json/js` so the page reads real daily supervision, Hermes issue inbox, production funnel, sync status, and version-ledger facts, turning the backend into a first-version discover / repair / review loop. | upgraded |

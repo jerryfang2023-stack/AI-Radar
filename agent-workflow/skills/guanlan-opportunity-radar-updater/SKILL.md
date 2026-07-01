@@ -1,17 +1,17 @@
 ---
 name: guanlan-opportunity-radar-updater
-description: "Use when updating, rebuilding, auditing, or explaining the Intelligence Map opportunity radar: the Entry Point Map / 切入点图 and Product Pain Map / 产品痛点图. Applies to weekly refreshes of opportunity_signals, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, and repairs when these maps become generic, label-driven, or disconnected from original articles. Do not use for the relationship graph, weekly report prose, trend candidates, or old formal_tags aggregation."
+description: "Use when updating, rebuilding, auditing, or explaining the Reports Center opportunity maps: Entry Point Map / 切入点地图 and Product Pain Map / 痛点地图. Applies to weekly refreshes of opportunity_signals, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, evidence modal behavior, and repairs when these maps become generic, label-driven, squeezed behind toggles, or disconnected from original articles. Do not use for weekly/monthly report prose, trend candidates, or old formal_tags aggregation."
 metadata:
   guanlan:
-    version: "1.0.0"
-    lane: "Intelligence Map"
+    version: "1.1.0"
+    lane: "Reports Center"
     status: "current sub-skill"
     order: 92
-    responsibility: "Update the source-backed opportunity radar maps for AI-native startup judgment: Entry Point Map and Product Pain Map."
+    responsibility: "Update the source-backed opportunity maps and their frontstage presentation for AI-native startup judgment: Entry Point Map and Product Pain Map."
     upstream: "Business Signal Cards, original source excerpts, opportunity_signals taxonomy"
-    downstream: "Intelligence Map opportunity panels, source-near opportunity field repairs, weekly opportunity radar notes"
-    gates: "weekly cadence, source-backed opportunity_signals, no old formal_tags aggregation, map-specific evidence thresholds, frontstage regression"
-    recent_learning: "The maps are useful only when cells come from concrete buyer, task, product-form, pain, and adoption evidence in original materials; generic AI-generated labels must be removed or left blank."
+    downstream: "Reports Center opportunity maps, source-near opportunity field repairs, evidence modal behavior, weekly opportunity radar notes"
+    gates: "weekly cadence, source-backed opportunity_signals, no old formal_tags aggregation, map-specific evidence thresholds, standalone map presentation, evidence modal smoke, frontstage regression"
+    recent_learning: "The maps are useful only when cells come from concrete buyer, task, product-form, pain, and adoption evidence in original materials; on the Reports Center page, the two maps must remain separate full-width decision surfaces with click-to-open evidence instead of a persistent right-side explanation panel."
     mirrored_in_skill_store: true
     memory_required: false
 ---
@@ -20,12 +20,12 @@ metadata:
 
 ## Scope
 
-Use this skill to update the Intelligence Map's two startup-oriented maps:
+Use this skill to update the Reports Center's two startup-oriented maps:
 
 - `切入点图`: buyer or user x specific task.
 - `产品痛点图`: pain or constraint x product form / delivery model.
 
-Do not update the relationship graph with this skill. The relationship graph continues to use the old relationship tags and Card graph inputs.
+Do not write weekly/monthly report prose with this skill. Relation paths may sit near the maps on the Reports Center page, but the map evidence still comes from `opportunity_signals`.
 
 ## Required Reads
 
@@ -68,7 +68,9 @@ Do not run a full map rewrite every day. Daily Cards may add `opportunity_signal
    - `产品痛点图`: pain rows x product-form or delivery-model columns.
 5. Compare 7-day cells against the 30-day baseline.
 6. Leave unsupported cells blank. A blank cell is better than a vague cell.
-7. Run syntax and frontstage regression checks after data or page generation.
+7. Keep the two maps as separate frontstage sections with their own Chinese / English subcolumn names.
+8. Put cell evidence behind click-to-open detail, not in a permanent right-side "Cell Evidence" panel.
+9. Run syntax and frontstage regression checks after data or page generation.
 
 ## Evidence Rules
 
@@ -127,6 +129,6 @@ Before finishing:
 
 1. Verify both maps still render in `01-SiteV2/site/intelligence-map.html`.
 2. Verify no `Signal Candidates`, `时间聚集`, or old `Tag 聚合` module returns.
-3. Verify relationship graph data was not converted to `opportunity_signals`.
-4. Run the most relevant syntax check for edited scripts.
-5. Run `node agent-workflow/tools/frontstage-regression-gate.mjs` after page/data changes.
+3. Verify the old map toggle buttons and persistent right-side evidence panel do not return.`r`n4. Verify relation path data was not converted into `opportunity_signals`.
+5. Run the most relevant syntax check for edited scripts.
+6. Run `node agent-workflow/tools/frontstage-regression-gate.mjs` after page/data changes.

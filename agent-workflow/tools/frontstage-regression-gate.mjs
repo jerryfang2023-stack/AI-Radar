@@ -12,10 +12,10 @@ const args = new Map(
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const expectedDate = args.get("date") || "";
 const expectedVersion = "V3.3.6.3-business-source-artifact-aggregation";
-const expectedSiteVersion = "SITE-V3.3.8.7";
+const expectedSiteVersion = "SITE-V3.4.0";
 const expectedBusinessSignalsColumnVersion = "BSIG-V1.1.5-corepool-top10-release";
 const expectedEnterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
-const expectedIntelligenceMapColumnVersion = "IMAP-V1.3.0-report-center-monthly";
+const expectedIntelligenceMapColumnVersion = "IMAP-V2.0.0-report-center-opportunity-system";
 const rolloverAcceptedVersions = new Map([
   ["V3.3.6-business-title-hermes-handoff", new Set(["2026-06-16"])],
 ]);
@@ -87,7 +87,7 @@ const requiredOperationalPages = [
 ].map((file) => path.join(root, file));
 
 const retiredPatterns = [
-  { pattern: /\bV2\.[01]\b/u, label: "retired_version_marker" },
+  { pattern: /\bSITE-V2\.[01]\b/u, label: "retired_version_marker" },
   { pattern: /home-v2|page-index|今日观察|趋势追踪|商业内参/u, label: "retired_v2_frontstage_copy" },
   { pattern: /今日判断/u, label: "retired_daily_judgment_copy" },
   { pattern: /dailySummaryCard/u, label: "retired_daily_summary_component" },
@@ -160,7 +160,7 @@ function collectUnifiedNavigationIssues() {
     "follow-builders.html",
     "community-intelligence.html",
     "商业信号",
-    "情报地图",
+    "报告中心",
     "一线观点",
     "社群情报",
   ];
