@@ -13,6 +13,11 @@ const signalRoots = [
   path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "funding"),
   path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "product-service"),
 ];
+const frontstageAggregateMutedTagIds = new Set(["track-ai-agent", "customer-enterprise"]);
+const frontstageDisplayTagLimit = 3;
+const firstLineAllowedGroups = new Set(["opinion", "track", "source"]);
+const communityPrivateFields = ["scene", "industry", "tools", "monetization"];
+const communityBusinessTagFields = ["formalTags", "formal_tags", "flatTags", "displayTags", "tags"];
 
 function read(file) {
   return fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
@@ -95,6 +100,10 @@ function nestedScalar(fm = "", section = "", key = "") {
   return unquote(text.match(new RegExp(`^\\s{2}${key}:\\s*(.*)$`, "mu"))?.[1] || "");
 }
 
+function camelOpportunityField(field = "") {
+  return field.replace(/_([a-z])/gu, (_, letter) => letter.toUpperCase());
+}
+
 function increment(map, key, count = 1) {
   if (!key) return;
   map.set(key, (map.get(key) || 0) + count);
@@ -105,6 +114,18 @@ function topEntries(map, limit = 30) {
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
     .slice(0, limit)
     .map(([key, count]) => ({ key, count }));
+}
+
+function isBackendOnlyTag(tag = "") {
+  return /^(source|region|stage)-/u.test(tag) || frontstageAggregateMutedTagIds.has(tag);
+}
+
+function isOpinionLikeTag(tag = "") {
+  return /opinion|builder|follow-builder|frontier-opinion|viewpoint/iu.test(String(tag || ""));
+}
+
+function isPublicAggregationViolation(tag = "") {
+  return isBackendOnlyTag(tag) || isOpinionLikeTag(tag);
 }
 
 function table(headers, rows) {
@@ -260,8 +281,39 @@ function currentSiteAudit() {
   if (!fs.existsSync(file)) return {};
   const data = JSON.parse(read(file));
   const flatCounts = new Map();
+  const displayTagViolations = [];
   for (const card of data.cards || []) {
     for (const tag of card.flatTags || []) increment(flatCounts, tag);
+    const displayTags = (card.displayTags || []).map((tag) => tag.id || tag.label || tag).filter(Boolean);
+    const invalidDisplayTags = displayTags.filter(isPublicAggregationViolation);
+    if (displayTags.length > frontstageDisplayTagLimit || invalidDisplayTags.length) {
+      displayTagViolations.push({
+        id: card.id,
+        title: card.title,
+        displayTags: displayTags.join(", "),
+        issue: [
+          displayTags.length > frontstageDisplayTagLimit ? `over_limit:${displayTags.length}` : "",
+          invalidDisplayTags.length ? `backend_or_private:${invalidDisplayTags.join(", ")}` : "",
+        ].filter(Boolean).join("; "),
+      });
+    }
+  }
+  const aggregationViolations = [
+    ...(data.tagAssociations || []).map((item) => ({ surface: "tagAssociations", tag: item.object, label: item.label })),
+    ...(data.trendLinks || []).map((item) => ({ surface: "trendLinks", tag: item.object, label: item.label })),
+  ].filter((item) => isPublicAggregationViolation(item.tag));
+  const opportunityOverLimitRows = [];
+  for (const card of data.cards || []) {
+    const fields = OPPORTUNITY_SIGNAL_FIELDS
+      .filter((field) => (card.opportunitySignals?.[field] || []).length > 3 || (card.opportunitySignals?.[camelOpportunityField(field)] || []).length > 3)
+      .map((field) => `${field}:${(card.opportunitySignals?.[field] || []).length}`);
+    if (fields.length) {
+      opportunityOverLimitRows.push({
+        id: card.id,
+        title: card.title,
+        fields: fields.join(", "),
+      });
+    }
   }
   return {
     file: rel(file),
@@ -269,7 +321,14 @@ function currentSiteAudit() {
     cards: data.cards?.length || 0,
     top10: data.top10?.length || 0,
     allowedTagCount: data.meta?.allowedTagCount || 0,
+    tagLayerPolicy: data.meta?.tagLayerPolicy || {},
     topFlatTags: topEntries(flatCounts, 30),
+    displayTagViolationsCount: displayTagViolations.length,
+    displayTagViolations: displayTagViolations.slice(0, 50),
+    aggregationViolationsCount: aggregationViolations.length,
+    aggregationViolations: aggregationViolations.slice(0, 50),
+    opportunityOverLimitRowsCount: opportunityOverLimitRows.length,
+    opportunityOverLimitRows: opportunityOverLimitRows.slice(0, 50),
     tagAssociations: (data.tagAssociations || []).map((item) => ({
       tag: item.object,
       label: item.label,
@@ -290,13 +349,42 @@ function followBuildersAudit() {
   if (!fs.existsSync(file)) return {};
   const data = JSON.parse(read(file));
   const counts = new Map();
+  const invalidRows = [];
+  const missingRequiredRows = [];
   for (const remark of data.remarks || []) {
-    for (const tag of remark.formalTags || []) increment(counts, tag.id || tag.name || "");
+    const groups = new Set();
+    const invalidTags = [];
+    for (const tag of remark.formalTags || []) {
+      increment(counts, tag.id || tag.name || "");
+      if (tag.group) groups.add(tag.group);
+      if (!firstLineAllowedGroups.has(tag.group)) invalidTags.push(`${tag.group}:${tag.id || tag.name || ""}`);
+    }
+    if (invalidTags.length) {
+      invalidRows.push({
+        id: remark.id,
+        source: remark.source,
+        topic: remark.topic,
+        invalidTags: invalidTags.join(", "),
+      });
+    }
+    const missing = [...firstLineAllowedGroups].filter((group) => !groups.has(group));
+    if (missing.length) {
+      missingRequiredRows.push({
+        id: remark.id,
+        source: remark.source,
+        topic: remark.topic,
+        missing: missing.join(", "),
+      });
+    }
   }
   return {
     file: rel(file),
     remarks: data.remarks?.length || 0,
     topFormalTags: topEntries(counts, 30),
+    invalidGroupRowsCount: invalidRows.length,
+    invalidGroupRows: invalidRows.slice(0, 50),
+    missingRequiredRowsCount: missingRequiredRows.length,
+    missingRequiredRows: missingRequiredRows.slice(0, 50),
   };
 }
 
@@ -306,16 +394,44 @@ function communityAudit() {
   const data = JSON.parse(read(file));
   const placeholders = new Map();
   const fields = ["scene", "industry", "monetization"];
+  const missingPrivateRows = [];
+  const businessTagLeakRows = [];
   for (const item of data.items || []) {
     for (const field of fields) {
       const value = item[field];
       if (/待确认|未识别|未分类|未知/u.test(String(value || ""))) increment(placeholders, `${field}:${value}`);
     }
   }
+  for (const item of data.items || []) {
+    const missing = communityPrivateFields.filter((field) => {
+      if (field === "tools") return !Object.hasOwn(item, field) || !Array.isArray(item[field]);
+      const value = item[field];
+      return Array.isArray(value) ? value.length === 0 : !String(value || "").trim();
+    });
+    if (missing.length) {
+      missingPrivateRows.push({
+        id: item.id,
+        title: item.title,
+        missing: missing.join(", "),
+      });
+    }
+    const leakedFields = communityBusinessTagFields.filter((field) => Object.hasOwn(item, field));
+    if (leakedFields.length) {
+      businessTagLeakRows.push({
+        id: item.id,
+        title: item.title,
+        fields: leakedFields.join(", "),
+      });
+    }
+  }
   return {
     file: rel(file),
     items: data.items?.length || 0,
     placeholderValues: topEntries(placeholders, 30),
+    missingPrivateRowsCount: missingPrivateRows.length,
+    missingPrivateRows: missingPrivateRows.slice(0, 50),
+    businessTagLeakRowsCount: businessTagLeakRows.length,
+    businessTagLeakRows: businessTagLeakRows.slice(0, 50),
   };
 }
 
@@ -347,6 +463,11 @@ Generated at: ${payload.generatedAt}
 - Signal Cards carrying stage tags: ${payload.signalCards.stageOnSignalCardsCount}
 - Track cleanup dry-run rows: ${payload.signalCards.trackTrimDryRunCount}
 - Opportunity rows with overly broad fields: ${payload.opportunitySignals.broadRowsCount}
+- Frontstage display tag violations: ${payload.currentSite.displayTagViolationsCount || 0}
+- Frontstage aggregation boundary violations: ${payload.currentSite.aggregationViolationsCount || 0}
+- Frontstage opportunity field over-limit rows: ${payload.currentSite.opportunityOverLimitRowsCount || 0}
+- First-Line private tag violations: ${(payload.followBuilders.invalidGroupRowsCount || 0) + (payload.followBuilders.missingRequiredRowsCount || 0)}
+- Community private tag boundary violations: ${(payload.community.missingPrivateRowsCount || 0) + (payload.community.businessTagLeakRowsCount || 0)}
 
 ## High Coverage Tags
 
@@ -383,6 +504,8 @@ ${table(["file", "id", "title", "fields"], payload.opportunitySignals.broadRows)
 - Cards: ${payload.currentSite.cards || 0}
 - Top10: ${payload.currentSite.top10 || 0}
 - Allowed tag count: ${payload.currentSite.allowedTagCount || 0}
+- Formal tags layer: ${payload.currentSite.tagLayerPolicy?.formalTags || "missing"}
+- Opportunity signals layer: ${payload.currentSite.tagLayerPolicy?.opportunitySignals || "missing"}
 
 ### Current Tag Associations
 
@@ -392,13 +515,41 @@ ${table(["tag", "label", "todayCount", "last30Count"], payload.currentSite.tagAs
 
 ${table(["window", "tag", "label", "cardCount"], payload.currentSite.trendLinks || [])}
 
+### Frontstage Display Tag Violations
+
+${table(["id", "title", "displayTags", "issue"], payload.currentSite.displayTagViolations || [])}
+
+### Frontstage Aggregation Boundary Violations
+
+${table(["surface", "tag", "label"], payload.currentSite.aggregationViolations || [])}
+
+### Frontstage Opportunity Field Over-Limit Rows
+
+${table(["id", "title", "fields"], payload.currentSite.opportunityOverLimitRows || [])}
+
 ## First-Line Viewpoints Tags
 
 ${table(["key", "count"], payload.followBuilders.topFormalTags || [])}
 
+### First-Line Invalid Tag Groups
+
+${table(["id", "source", "topic", "invalidTags"], payload.followBuilders.invalidGroupRows || [])}
+
+### First-Line Missing Required Groups
+
+${table(["id", "source", "topic", "missing"], payload.followBuilders.missingRequiredRows || [])}
+
 ## Community Placeholder Values
 
 ${table(["key", "count"], payload.community.placeholderValues || [])}
+
+### Community Missing Private Fields
+
+${table(["id", "title", "missing"], payload.community.missingPrivateRows || [])}
+
+### Community Business Tag Leaks
+
+${table(["id", "title", "fields"], payload.community.businessTagLeakRows || [])}
 
 ## Recommended Cleanup Policy
 
@@ -406,6 +557,8 @@ ${table(["key", "count"], payload.community.placeholderValues || [])}
 - Keep no more than 3 track tags per Signal Card; prefer the most specific vertical or workflow track.
 - Keep stage tags out of ordinary Signal Card frontstage display and aggregation.
 - Keep Reports Center opportunity maps on source-backed opportunity_signals, not formal_tags.
+- Keep First-Line Viewpoints on private opinion / track / source tags.
+- Keep Community Intelligence on private scene / industry / tools / monetization labels.
 - Review opportunity rows with more than 3 values in any field before using them for map cells.
 `;
 }

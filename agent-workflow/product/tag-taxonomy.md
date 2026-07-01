@@ -1,6 +1,6 @@
 # Tag Taxonomy｜标签体系
 
-更新时间：2026-06-07
+更新时间：2026-07-01
 owner：Intelligence Engine / Experience & Editorial
 状态：current
 
@@ -18,6 +18,22 @@ Tags 不是前台一级栏目，也不是随手标注。它们服务搜索、筛
 旧机会中心、旧观点栏目、变化候选、场景候选、趋势报告和商业内参只作为历史兼容来源，不再作为当前标签分组、前台栏目名或 V3.3 执行目标。
 
 ## 2. 标签分层
+
+V3.4 标签体系拆成三层，三层可以互相参照，但不能互相替代：
+
+| layer | 字段 / 位置 | 服务对象 | 前台规则 |
+|---|---|---|---|
+| 正式标签 | `formal_tags` | 检索、筛选、关系图谱辅助、趋势候选上下文 | 保留完整结构，但 Business Signals 前台只展示少量高判断价值标签 |
+| 机会信号 | `opportunity_signals` | Reports Center / Opportunity System / 机会地图 | 继续替代旧 `formal_tags` 聚合做机会地图；必须贴近来源，不做宽泛主题标签 |
+| 栏目私有标签 | 栏目数据字段 | First-Line Viewpoints 和 Community Intelligence 的栏目内筛选 | 不混进 Business Signals；不作为商业信号事实证据 |
+
+职责边界：
+
+- `formal_tags` 用于后端检索、筛选、关系图辅助和趋势候选上下文，不再作为 Reports Center 机会地图的主聚合字段。
+- `opportunity_signals` 是 V3.4 Reports Center / Opportunity System 的机会地图字段，字段值必须能回到原始来源或卡片来源摘录。
+- First-Line Viewpoints 的栏目私有标签只使用 `opinion` / `track` / `source`，用于观点页筛选和观点时间线。
+- Community Intelligence 的栏目私有标签使用 `scene` / `industry` / `tools` / `monetization`，用于社群需求和实操线索的栏目内聚合。
+- First-Line Viewpoints 和 Community Intelligence 只能用于解释、需求互证或候选观察；除非另行进入 Raw / Pool / Card 链路，否则不能进入 Business Signals 的 `formal_tags`、关系图证据或趋势候选证据。
 
 正式标签分为 9 类：
 
@@ -179,7 +195,7 @@ Tags 不是前台一级栏目，也不是随手标注。它们服务搜索、筛
 | `Voice-AI` | `AI 客服` |
 | `企业知识库` | `企业数据智能` |
 | 旧观点栏目 | `opinion-*` 主题标签 |
-| 旧机会中心 | 历史兼容来源，不进入 V3.3 active taxonomy |
+| 旧机会中心 | 历史兼容来源，不进入 V3.4 active taxonomy |
 
 `AI创业机会` 不再作为唯一标签使用，仅保留为历史兼容标签。新商业信号至少应包含 `track` 和 `evidence`；`function`、`scenario`、`customer`、`source` 按事实补充。
 
