@@ -128,7 +128,7 @@ jobs:
             echo "- exa_secret: $([ -n "$EXA_API_KEY" ] && echo configured || echo missing)"
             echo "- openai_or_deepseek_required: false"
             echo
-            echo "This V3.3 workflow commits Raw / Pool / business-signal Card assets, business-signal frontstage data, intelligence map data, topic-center data, and operations dashboard data to an automation branch, opens or updates a PR, and auto-merges the PR after all gates pass."
+            echo "This V3.3 workflow commits Raw / Pool / business-signal Card assets, business-signal frontstage data, intelligence map data, and operations dashboard data to an automation branch, opens or updates a PR, and auto-merges the PR after all gates pass."
             echo "Raw / Pool are persisted after monitor gates pass. Card assets are persisted after asset generation. Site data is persisted only after frontstage gates pass."
             echo "Business Signals monitor now defaults to source artifact aggregation: AI HOT, keyword, GDELT, and RSS are collected as independent source artifacts before the unified Raw / Pool chain runs."
             echo "First-line viewpoints are produced by .github/workflows/daily-first-line-viewpoints-pr.yml and are not part of this business-signal PR."
@@ -141,7 +141,7 @@ jobs:
             echo "4. Regenerate business-signal Card assets in the runner workspace."
             echo "5. Run Pool-to-Card duplicate gate."
             echo "6. Build Business Signals frontstage data and immediately run the unified Business frontstage gate."
-            echo "7. Build operations dashboard and topic-center data only after the Business frontstage gate passes."
+            echo "7. Build operations dashboard data only after the Business frontstage gate passes."
             echo "8. Confirm same-date downstream assets are no longer stale."
             echo "9. Write a persistent asset manifest."
             echo "10. Commit generated assets to an automation branch and open or update a PR."
@@ -168,7 +168,6 @@ jobs:
           node --check agent-workflow/tools/frontstage-regression-gate.mjs
           node --check agent-workflow/tools/build-hermes-daily-brief.mjs
           node --check agent-workflow/tools/assert-community-intelligence-data.mjs
-          node --check agent-workflow/tools/build-topic-center-data.mjs
           node --check agent-workflow/tools/send-feishu-webhook.mjs
           node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
           node --check 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
@@ -335,10 +334,8 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          {
-            node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
-            node agent-workflow/tools/build-topic-center-data.mjs --date="${RUN_DATE}"
-          } 2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-operations-data.log"
+          node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs \
+            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-operations-data.log"
 
       - name: Confirm site data freshness
         id: pre-commit-gate
@@ -417,7 +414,7 @@ jobs:
 
           Raw / Pool must be committed once monitor and post-monitor gates pass.
           Card assets must be committed once asset generation runs.
-          Business frontstage data is built and gated before operations dashboard / topic-center data is generated.
+          Business frontstage data is built and gated before operations dashboard data is generated.
           Site data must be committed only when dedupe, Business frontstage gate, operations data sync and pre-commit gates pass.
           First-line viewpoints data is produced by the independent first-line workflow.
           EOF
@@ -483,10 +480,6 @@ jobs:
             01-SiteV2/site/data/intelligence-graph-index.json
             01-SiteV2/site/data/pipeline-dashboard.json
             01-SiteV2/site/data/pipeline-dashboard.js
-            01-SiteV2/site/data/topic-center.json
-            01-SiteV2/site/data/topic-center.js
-            01-SiteV2/site/data/topic-center-hermes.json
-            01-SiteV2/site/data/topic-center-hermes.md
 
       - name: Commit business signals to automation branch
         id: commit
@@ -541,10 +534,6 @@ jobs:
             stage_if_exists "01-SiteV2/site/data/intelligence-graph-index.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.js"
-            stage_if_exists "01-SiteV2/site/data/topic-center.json"
-            stage_if_exists "01-SiteV2/site/data/topic-center.js"
-            stage_if_exists "01-SiteV2/site/data/topic-center-hermes.json"
-            stage_if_exists "01-SiteV2/site/data/topic-center-hermes.md"
           fi
 
           if git diff --cached --quiet; then
@@ -576,7 +565,7 @@ jobs:
           - Raw / Pool generated in GitHub Actions and persisted after monitor gates passed.
           - Signal Cards persisted when asset generation succeeded.
           - Business frontstage data included only when dedupe, frontstage source-first/regression, operations sync and pre-commit gates passed.
-          - Intelligence map and topic-center data generated from the business-signal Card chain.
+          - Intelligence map data generated from the business-signal Card chain.
           - Operations dashboard data included when the business-signal frontstage sync passes.
           - Persistent asset manifest for local Obsidian recovery.
           - Artifacts uploaded for review.

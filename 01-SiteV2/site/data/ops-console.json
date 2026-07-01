@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "OPS-V1.2.2-skill-store-title-dedupe",
-    "generatedAt": "2026-06-30T09:42:33.546Z",
+    "version": "OPS-V1.2.3-content-factory-cleanout",
+    "generatedAt": "2026-07-01T09:14:58.755Z",
     "date": "2026-06-29",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1616,12 +1616,13 @@
       }
     ],
     "latestProduction": {
-      "date": "2026-06-30",
-      "raw": 116,
+      "date": "2026-07-01",
+      "raw": 159,
       "pool": 95,
-      "cards": 10,
+      "cards": 5,
       "assets": {
-        "case": 10
+        "case": 2,
+        "product-service": 3
       }
     },
     "sync": [
@@ -1643,7 +1644,7 @@
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-06-30T06:54:26.059Z"
+        "detail": "2026-07-01T03:37:30.001Z"
       },
       {
         "label": "Daily Supervision",
@@ -1654,88 +1655,97 @@
   },
   "quality": {
     "pipelineMeta": {
-      "generatedAt": "2026-06-30T06:54:26.059Z",
+      "generatedAt": "2026-07-01T03:37:30.001Z",
       "dateRange": {
         "start": "2025-10-13",
-        "end": "2026-06-30"
+        "end": "2026-07-01"
       },
       "source": "01-SiteV2/content + 01-SiteV2/knowledge"
     },
     "latest": {
-      "date": "2026-06-30",
-      "label": "2026.06.30",
-      "shortLabel": "06.30",
-      "raw": 116,
+      "date": "2026-07-01",
+      "label": "2026.07.01",
+      "shortLabel": "07.01",
+      "raw": 159,
       "pool": 95,
       "assets": {
-        "case": 10
+        "case": 2,
+        "product-service": 3
       },
-      "cards": 10,
+      "cards": 5,
       "rawChannels": {
-        "aihot": 22,
-        "keyword_search": 68,
+        "aihot": 65,
+        "keyword_search": 82,
         "follow_builders": 0
       },
       "poolRoutes": {
-        "emerging_pool": 17,
-        "watchlist": 34,
-        "core_pool": 31,
-        "user_feedback_pool": 15,
-        "index_only": 25,
-        "discard": 5
+        "watchlist": 40,
+        "emerging_pool": 22,
+        "user_feedback_pool": 16,
+        "core_pool": 30,
+        "index_only": 20,
+        "discard": 1
       },
       "evidenceLevels": {
-        "core_evidence_candidate": 45,
-        "community_signal": 13,
-        "user_feedback_signal": 2,
-        "supporting_evidence": 3,
-        "weak_signal": 10,
-        "discovery_only": 22
+        "core_evidence_candidate": 59,
+        "user_feedback_signal": 5,
+        "supporting_evidence": 2,
+        "community_signal": 11,
+        "index_only_evidence": 1,
+        "discovery_only": 17
       },
       "sourceLevels": {
-        "B": 63,
-        "C": 15,
-        "A": 7,
-        "S": 10
+        "A": 17,
+        "S": 21,
+        "B": 45,
+        "C": 12
       },
       "sourceTypes": {
-        "web": 57,
-        "operators": 15,
-        "media": 5,
-        "developer": 5,
+        "news": 8,
+        "product": 6,
+        "web": 36,
+        "media": 9,
+        "official": 14,
+        "industry": 1,
+        "operators": 12,
         "organization-capability": 1,
-        "industry": 2,
-        "official": 3,
-        "marketplace": 1,
-        "news": 2,
-        "builder": 1,
-        "product": 3
+        "marketplace": 4,
+        "developer": 4
       },
       "assetStatus": {
         "case": {
-          "published": 10
+          "published": 2
+        },
+        "product-service": {
+          "published": 3
         }
       },
       "assetLevels": {
         "case": {
-          "frontstage": 10
+          "frontstage": 2
+        },
+        "product-service": {
+          "frontstage": 3
         }
       },
       "assetEvidenceGates": {
         "case": {
-          "core_evidence_passed": 10
+          "core_evidence_passed": 2
+        },
+        "product-service": {
+          "core_evidence_passed": 3
         }
       },
       "assetCopyGates": {}
     },
     "totals": {
-      "raw": 5854,
-      "pool": 2811,
+      "raw": 6013,
+      "pool": 2906,
       "assets": {
-        "case": 334,
+        "case": 336,
+        "product-service": 265,
+        "opinion": 888,
         "funding": 79,
-        "product-service": 262,
-        "opinion": 855,
         "trend": 6,
         "scene": 3,
         "change": 14
@@ -1743,15 +1753,92 @@
     },
     "days": [
       {
+        "date": "2026-07-01",
+        "label": "2026.07.01",
+        "shortLabel": "07.01",
+        "raw": 159,
+        "pool": 95,
+        "assets": {
+          "case": 2,
+          "product-service": 3
+        },
+        "cards": 5,
+        "rawChannels": {
+          "aihot": 65,
+          "keyword_search": 82,
+          "follow_builders": 0
+        },
+        "poolRoutes": {
+          "watchlist": 40,
+          "emerging_pool": 22,
+          "user_feedback_pool": 16,
+          "core_pool": 30,
+          "index_only": 20,
+          "discard": 1
+        },
+        "evidenceLevels": {
+          "core_evidence_candidate": 59,
+          "user_feedback_signal": 5,
+          "supporting_evidence": 2,
+          "community_signal": 11,
+          "index_only_evidence": 1,
+          "discovery_only": 17
+        },
+        "sourceLevels": {
+          "A": 17,
+          "S": 21,
+          "B": 45,
+          "C": 12
+        },
+        "sourceTypes": {
+          "news": 8,
+          "product": 6,
+          "web": 36,
+          "media": 9,
+          "official": 14,
+          "industry": 1,
+          "operators": 12,
+          "organization-capability": 1,
+          "marketplace": 4,
+          "developer": 4
+        },
+        "assetStatus": {
+          "case": {
+            "published": 2
+          },
+          "product-service": {
+            "published": 3
+          }
+        },
+        "assetLevels": {
+          "case": {
+            "frontstage": 2
+          },
+          "product-service": {
+            "frontstage": 3
+          }
+        },
+        "assetEvidenceGates": {
+          "case": {
+            "core_evidence_passed": 2
+          },
+          "product-service": {
+            "core_evidence_passed": 3
+          }
+        },
+        "assetCopyGates": {}
+      },
+      {
         "date": "2026-06-30",
         "label": "2026.06.30",
         "shortLabel": "06.30",
         "raw": 116,
         "pool": 95,
         "assets": {
-          "case": 10
+          "case": 10,
+          "opinion": 13
         },
-        "cards": 10,
+        "cards": 23,
         "rawChannels": {
           "aihot": 22,
           "keyword_search": 68,
@@ -1818,9 +1905,10 @@
         "assets": {
           "case": 26,
           "funding": 6,
-          "product-service": 6
+          "product-service": 6,
+          "opinion": 20
         },
-        "cards": 38,
+        "cards": 58,
         "rawChannels": {
           "aihot": 7,
           "keyword_search": 65,
@@ -2188,97 +2276,10 @@
           }
         },
         "assetCopyGates": {}
-      },
-      {
-        "date": "2026-06-24",
-        "label": "2026.06.24",
-        "shortLabel": "06.24",
-        "raw": 190,
-        "pool": 95,
-        "assets": {
-          "case": 9,
-          "funding": 3,
-          "product-service": 5,
-          "opinion": 35
-        },
-        "cards": 52,
-        "rawChannels": {
-          "aihot": 165,
-          "keyword_search": 21,
-          "follow_builders": 0
-        },
-        "poolRoutes": {
-          "core_pool": 31,
-          "user_feedback_pool": 4,
-          "emerging_pool": 11,
-          "watchlist": 27,
-          "index_only": 30,
-          "discard": 5
-        },
-        "evidenceLevels": {
-          "user_feedback_signal": 6,
-          "core_evidence_candidate": 37,
-          "supporting_evidence": 1,
-          "community_signal": 18,
-          "weak_signal": 2,
-          "discovery_only": 31
-        },
-        "sourceLevels": {
-          "S": 12,
-          "A": 7,
-          "B": 63,
-          "C": 13
-        },
-        "sourceTypes": {
-          "product": 2,
-          "media": 4,
-          "web": 56,
-          "developer": 5,
-          "news": 3,
-          "research": 1,
-          "marketplace": 1,
-          "official": 8,
-          "community": 13,
-          "domestic_vendor": 2
-        },
-        "assetStatus": {
-          "case": {
-            "published": 9
-          },
-          "funding": {
-            "published": 3
-          },
-          "product-service": {
-            "published": 5
-          }
-        },
-        "assetLevels": {
-          "case": {
-            "frontstage": 9
-          },
-          "funding": {
-            "frontstage": 3
-          },
-          "product-service": {
-            "frontstage": 5
-          }
-        },
-        "assetEvidenceGates": {
-          "case": {
-            "core_evidence_passed": 9
-          },
-          "funding": {
-            "core_evidence_passed": 3
-          },
-          "product-service": {
-            "core_evidence_passed": 5
-          }
-        },
-        "assetCopyGates": {}
       }
     ],
     "engineQuality": {
-      "updatedAt": "2026-06-30T06:54:26.119Z",
+      "updatedAt": "2026-07-01T03:37:30.064Z",
       "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
       "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
       "rows": [
@@ -2327,26 +2328,26 @@
         {
           "id": "gdelt",
           "label": "GDELT",
-          "total": 598,
+          "total": 613,
           "freshKnown": 49,
           "fresh": 1,
-          "duplicates": 88,
+          "duplicates": 89,
           "official": 6,
-          "convertible": 248,
+          "convertible": 255,
           "freshnessRate": 2,
           "duplicateRate": 15,
           "officialRate": 1,
-          "conversionRate": 41
+          "conversionRate": 42
         },
         {
           "id": "anysearch",
           "label": "AnySearch",
-          "total": 1367,
+          "total": 1451,
           "freshKnown": 0,
           "fresh": 0,
-          "duplicates": 136,
-          "official": 206,
-          "convertible": 755,
+          "duplicates": 138,
+          "official": 219,
+          "convertible": 800,
           "freshnessRate": null,
           "duplicateRate": 10,
           "officialRate": 15,
@@ -2369,12 +2370,12 @@
         {
           "id": "aihot",
           "label": "AI HOT",
-          "total": 3448,
-          "freshKnown": 2732,
-          "fresh": 2732,
+          "total": 3513,
+          "freshKnown": 2780,
+          "fresh": 2780,
           "duplicates": 6,
-          "official": 216,
-          "convertible": 1193,
+          "official": 227,
+          "convertible": 1221,
           "freshnessRate": 100,
           "duplicateRate": 0,
           "officialRate": 6,
@@ -2407,7 +2408,7 @@
       {
         "key": "OPS",
         "label": "Operations backend",
-        "value": "OPS-V1.2.2-skill-store-title-dedupe"
+        "value": "OPS-V1.2.3-content-factory-cleanout"
       },
       {
         "key": "BSIG",
@@ -2416,8 +2417,8 @@
       },
       {
         "key": "IMAP",
-        "label": "Reports Center",
-        "value": "IMAP-V2.0.0-report-center-opportunity-system"
+        "label": "Intelligence Map",
+        "value": ""
       },
       {
         "key": "FLV",

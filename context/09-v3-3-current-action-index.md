@@ -50,7 +50,7 @@ Only these actions are `current` for SITE-V3.4.0:
 | First-Line Viewpoints Obsidian timeline sync | `current` | Persist Builder viewpoints into person / date Obsidian timelines. |
 | Community intelligence independent update | `current` | Update logged-in community intelligence independently from business signals and builders viewpoints. |
 | Frontstage data build | `current` | Build each column's frontstage data through its owning production lane. |
-| Dashboard sync | `current` | Update operations console and topic-center data. |
+| Dashboard sync | `current` | Update operations console data. |
 | GitHub PR / Pages publish | `current` | Persist generated assets through PR and deploy through Pages. |
 | Local Obsidian sync | `current` | Sync merged remote assets back into the local workspace. |
 
@@ -387,14 +387,11 @@ Purpose:
 Runs:
 
 - `01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs`.
-- `agent-workflow/tools/build-topic-center-data.mjs`.
 
 Outputs:
 
 - `01-SiteV2/site/data/pipeline-dashboard.json`.
 - `01-SiteV2/site/data/pipeline-dashboard.js`.
-- `01-SiteV2/site/data/topic-center.json`.
-- `01-SiteV2/site/data/topic-center.js`.
 
 Boundaries:
 

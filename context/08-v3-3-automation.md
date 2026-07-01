@@ -47,16 +47,15 @@ Execution order:
 5. Generate Signal Card assets from all qualified Core Pool items, then let the frontstage selector publish the active-date Top10.
 6. Run Pool-to-Card dedupe and gates.
 7. Build business-signal frontstage data first: `01-SiteV2/site/data/v3-data-observation-desk.json`, and the Hermes Agent intelligence entry: `01-SiteV2/site/data/intelligence-graph-index.json`.
-8. Run the unified Business frontstage gate: `agent-workflow/tools/assert-business-signals-frontstage.mjs --date=<date>`. This wraps source-first and frontstage regression, classifies failures as Top10 supply, translation, large-company cap, title/source, source-first, or regression, and must run before dashboard / topic-center work.
+8. Run the unified Business frontstage gate: `agent-workflow/tools/assert-business-signals-frontstage.mjs --date=<date>`. This wraps source-first and frontstage regression, classifies failures as Top10 supply, translation, large-company cap, title/source, source-first, or regression, and must run before dashboard work.
 9. Build operations dashboard data: `pipeline-dashboard.json/js`.
-10. Build topic-center data.
-11. Run the pre-commit freshness gate.
-12. Write the persistent asset manifest.
-13. Push `automation/business-signals-<date>`.
-14. Create or update the PR.
-15. Auto-merge or enable auto-merge after gates pass.
-16. Deploy through GitHub Pages after `main` updates.
-17. Send Hermes / Feishu brief when webhook is configured.
+10. Run the pre-commit freshness gate.
+11. Write the persistent asset manifest.
+12. Push `automation/business-signals-<date>`.
+13. Create or update the PR.
+14. Auto-merge or enable auto-merge after gates pass.
+15. Deploy through GitHub Pages after `main` updates.
+16. Send Hermes / Feishu brief when webhook is configured.
 
 An existing `automation/business-signals-<date>` branch must not block a scheduled rerun. The workflow should update the same branch and PR instead of skipping, because a previous delayed or partial run may have left the branch stale.
 

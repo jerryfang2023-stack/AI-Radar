@@ -176,6 +176,5 @@ agent-workflow/reports/YYYY-MM-DD-weekly-ai-business-change-radar.md
 ## Handoff
 
 After weekly report, coordinate with:
-- Topic Center / AIP topic generation for article topics derived from opportunity cards and trend chains
 - `guanlan-trend-candidate-writer` only when a chain needs a lightweight trend-candidate decision
 - Codex / Hermes repair handoff when report generation exposes missing source data, weak counts, or cross-lane freshness gaps

@@ -60,156 +60,6 @@ function markdownItem(label, value) {
   return `- ${label}: ${text}`;
 }
 
-function text(value) {
-  return value == null ? "" : String(value).trim();
-}
-
-function list(value) {
-  if (Array.isArray(value)) return value;
-  if (value && typeof value === "object") return Object.values(value);
-  return value ? [value] : [];
-}
-
-function materialRole(kind) {
-  if (kind === "business_signal") return "fact_base";
-  if (kind === "first_line_viewpoint") return "viewpoint_lead";
-  if (kind === "community_intelligence") return "community_lead";
-  return "supporting_material";
-}
-
-function materialPath(kind, id, date) {
-  const suffix = id ? `#id=${id}` : "";
-  if (kind === "business_signal") return `01-SiteV2/site/data/v3-data-observation-desk.json${suffix}`;
-  if (kind === "first_line_viewpoint") return `01-SiteV2/site/data/follow-builders-daily.json${suffix}`;
-  if (kind === "community_intelligence") return `01-SiteV2/site/data/community-intelligence-daily/${date}.json${suffix}`;
-  return "";
-}
-
-function compactMaterial(item, index, date) {
-  const kind = item.kind || "";
-  return {
-    materialId: item.materialId || `material-${index + 1}`,
-    kind,
-    id: item.id || "",
-    role: item.role || materialRole(kind),
-    title: item.title || "",
-    source: item.source || "",
-    url: item.url || "",
-    note: item.note || "",
-    localDataPath: item.localDataPath || materialPath(kind, item.id || "", date),
-    verificationUse: item.verificationUse || (kind === "business_signal" ? "fact_base" : "lead_only_not_verified_fact"),
-  };
-}
-
-function topicMaterials(topic, date) {
-  if (list(topic.rawMaterials).length) {
-    return list(topic.rawMaterials).map((item, index) => compactMaterial(item, index, date));
-  }
-  const grouped = [
-    ...list(topic.sources?.businessSignals || topic.sourceInputs?.businessSignals),
-    ...list(topic.sources?.firstLineViewpoints || topic.sourceInputs?.viewpoints),
-    ...list(topic.sources?.communityIntelligence || topic.sourceInputs?.communityItems),
-  ];
-  return grouped.map((item, index) => compactMaterial(item, index, date));
-}
-
-function compactTopicFromTopicCenter(topic, index) {
-  const date = topic.date || "";
-  const rawMaterials = topicMaterials(topic, date);
-  return {
-    rank: topic.rank || index + 1,
-    id: topic.id || "",
-    score: Number(topic.score || 0),
-    grade: topic.grade || "",
-    sourceId: topic.sourceId || "",
-    sourceName: topic.sourceName || "",
-    priority: topic.priority || "",
-    title: topic.spreadTitle || topic.title || "",
-    core: topic.core || "",
-    bossPain: topic.bossPain || "",
-    moneyLine: topic.moneyLine || "",
-    oldFrame: topic.oldFrame || "",
-    newFrame: topic.newFrame || "",
-    actionHint: topic.actionHint || "",
-    evidenceBoundary: topic.evidenceBoundary || "",
-    rawMaterialSummary: topic.rawMaterialSummary || {
-      total: rawMaterials.length,
-      businessSignals: rawMaterials.filter((item) => item.kind === "business_signal").length,
-      firstLineViewpoints: rawMaterials.filter((item) => item.kind === "first_line_viewpoint").length,
-      communityIntelligence: rawMaterials.filter((item) => item.kind === "community_intelligence").length,
-    },
-    rawMaterials,
-    sources: topic.sources || {
-      businessSignals: rawMaterials.filter((item) => item.kind === "business_signal"),
-      firstLineViewpoints: rawMaterials.filter((item) => item.kind === "first_line_viewpoint"),
-      communityIntelligence: rawMaterials.filter((item) => item.kind === "community_intelligence"),
-    },
-  };
-}
-
-function loadTopicCenter() {
-  const hermesTable = readJson(path.join(root, "01-SiteV2", "site", "data", "topic-center-hermes.json"), null);
-  if (hermesTable?.topics?.length) {
-    return {
-      meta: hermesTable.meta || {},
-      topics: hermesTable.topics.map(compactTopicFromTopicCenter),
-    };
-  }
-
-  const topicCenter = readJson(path.join(root, "01-SiteV2", "site", "data", "topic-center.json"), null);
-  const topics = list(topicCenter?.topics).map(compactTopicFromTopicCenter);
-  return {
-    meta: {
-      version: topicCenter?.meta?.version || "",
-      date: topicCenter?.meta?.date || "",
-      generatedAt: topicCenter?.meta?.generatedAt || "",
-      source: "topic-center.json",
-      rule: "hermes_all_topic_table_fallback",
-      readMode: "all_topics",
-      topicCount: topics.length,
-      githubPath: "01-SiteV2/site/data/topic-center.json",
-      pagesJsonPath: "/data/topic-center.json",
-    },
-    topics,
-  };
-}
-
-function topicCenterLines(topicCenter) {
-  const topics = list(topicCenter.topics);
-  if (!topics.length) {
-    return [
-      "Boss Topic Center",
-      "- topic_center: missing or empty",
-    ];
-  }
-  const lines = [
-    `Boss Topic Center ${topicCenter.meta?.date || ""}: ${topics.length} topics`,
-    markdownItem("source", topicCenter.meta?.githubPath || "01-SiteV2/site/data/topic-center-hermes.json"),
-    markdownItem("read_mode", topicCenter.meta?.readMode || "all_topics"),
-  ];
-  for (const topic of topics) {
-    lines.push(
-      "",
-      `${topic.rank}. ${topic.title}`,
-      `   type: ${topic.sourceName || "-"} | score: ${topic.score || "-"} | priority: ${topic.priority || "-"}`,
-      `   boss_pain: ${topic.bossPain || "-"}`,
-      `   money_line: ${topic.moneyLine || "-"}`,
-      `   action: ${topic.actionHint || "-"}`,
-    );
-    const materials = list(topic.rawMaterials);
-    if (materials.length) {
-      lines.push(`   materials: ${materials.length}`);
-      for (const material of materials) {
-        const source = material.source ? ` | ${material.source}` : "";
-        const url = material.url ? ` | ${material.url}` : "";
-        const local = material.localDataPath ? ` | ${material.localDataPath}` : "";
-        lines.push(`   - [${material.role || material.kind || "material"}] ${material.title || "-"}${source}${url}${local}`);
-      }
-    }
-  }
-  return lines;
-}
-
 function outcome(name) {
   return argValue(name, "not_run");
 }
@@ -254,8 +104,6 @@ function main() {
   const poolFile = path.join(root, "01-SiteV2", "content", "02-pool", `${date}-pool-candidates.md`);
   const signalsFile = path.join(root, "01-SiteV2", "content", "04-business-signals", "signals", `${date}-signals.md`);
   const opinionCandidatesFile = path.join(root, "01-SiteV2", "content", "05-frontier-opinions", `${date}-opinion-candidates.md`);
-  const topicCenter = loadTopicCenter();
-
   const signalCards = countFiles(path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards"), new RegExp(`^${date}--signal--.*\\.md$`, "u"));
   const opinionTimelineDetails = countOpinionTimelineDetails(date);
 
@@ -303,8 +151,6 @@ function main() {
   const text = [
     summaryLines.join("\n"),
     "",
-    topicCenterLines(topicCenter).join("\n"),
-    "",
     "Gates and automation outcomes",
     gateLines.join("\n"),
   ].join("\n");
@@ -329,7 +175,6 @@ function main() {
       daily_title: dailyTitle,
       trend_title: trendTitle,
     },
-    topic_center: topicCenter,
     outcomes,
     feishu_text: text,
   };
