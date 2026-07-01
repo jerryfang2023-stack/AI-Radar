@@ -5,7 +5,7 @@
     "businessSignalsColumnVersion": "BSIG-V1.1.5-corepool-top10-release",
     "enterpriseAiLensVersion": "EAI-V1.1.0-fde-lens-pool",
     "intelligenceMapColumnVersion": "IMAP-V2.0.0-report-center-opportunity-system",
-    "generatedAt": "2026-07-01T09:34:49.803Z",
+    "generatedAt": "2026-07-01T09:38:32.986Z",
     "activeDate": "2026-07-01",
     "top10Count": 10,
     "source": "Signal Cards",
@@ -63,14 +63,14 @@
           "count": 2
         },
         {
-          "tag": "scenario-knowledge-base",
-          "label": "知识库问答",
-          "count": 1
-        },
-        {
           "tag": "track-ai-infra",
           "label": "AI 基础设施",
-          "count": 1
+          "count": 2
+        },
+        {
+          "tag": "track-enterprise-data",
+          "label": "企业数据智能",
+          "count": 2
         }
       ]
     },
@@ -133,9 +133,9 @@
           "count": 2
         },
         {
-          "tag": "evidence-acquisition",
-          "label": "收购并购",
-          "count": 1
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
+          "count": 2
         }
       ]
     }
@@ -161,8 +161,9 @@
       "publishedAt": "2026-06-30T17:32:06.724Z",
       "tags": {
         "track": [
-          "track-ai-governance",
-          "track-enterprise-workflow"
+          "track-enterprise-data",
+          "track-ai-infra",
+          "track-ai-governance"
         ],
         "function": [],
         "scenario": [
@@ -181,8 +182,9 @@
         ]
       },
       "flatTags": [
+        "track-enterprise-data",
+        "track-ai-infra",
         "track-ai-governance",
-        "track-enterprise-workflow",
         "scenario-agent-governance",
         "customer-enterprise",
         "evidence-customer-adoption",
@@ -190,16 +192,16 @@
       ],
       "displayTags": [
         {
+          "id": "track-enterprise-data",
+          "label": "企业数据智能"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
           "id": "track-ai-governance",
           "label": "AI 治理"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "scenario-agent-governance",
-          "label": "Agent 权限治理"
         }
       ],
       "opportunitySignals": {
@@ -364,7 +366,7 @@
       "stage": "",
       "evidence": "evidence-customer-adoption",
       "largeVendorKey": "anthropic",
-      "track": "track-ai-governance",
+      "track": "track-enterprise-data",
       "generatedTitle": "Claude Science 科研工作台正式上线",
       "displayTitle": "Claude Science 科研工作台正式上线",
       "largeVendor": true,
@@ -675,7 +677,7 @@
       "publishedAt": "2026-06-30T06:00:00.000Z",
       "tags": {
         "track": [
-          "track-ai-agent"
+          "track-enterprise-workflow"
         ],
         "function": [],
         "scenario": [],
@@ -691,12 +693,16 @@
         ]
       },
       "flatTags": [
-        "track-ai-agent",
+        "track-enterprise-workflow",
         "evidence-customer-metric",
         "evidence-product-launch",
         "source-first-party"
       ],
       "displayTags": [
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
         {
           "id": "evidence-customer-metric",
           "label": "客户指标"
@@ -836,7 +842,7 @@
       "stage": "",
       "evidence": "evidence-customer-metric",
       "largeVendorKey": "google",
-      "track": "track-ai-agent",
+      "track": "track-enterprise-workflow",
       "generatedTitle": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
       "displayTitle": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
       "largeVendor": true,
@@ -874,9 +880,9 @@
       "publishedAt": "2026-06-30T09:43:29.000Z",
       "tags": {
         "track": [
-          "track-ai-coding",
+          "track-ai-infra",
           "track-enterprise-data",
-          "track-ai-infra"
+          "track-ai-coding"
         ],
         "function": [
           "function-engineering"
@@ -899,9 +905,9 @@
         ]
       },
       "flatTags": [
-        "track-ai-coding",
-        "track-enterprise-data",
         "track-ai-infra",
+        "track-enterprise-data",
+        "track-ai-coding",
         "function-engineering",
         "scenario-knowledge-base",
         "customer-developer-team",
@@ -912,16 +918,16 @@
       ],
       "displayTags": [
         {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
         },
         {
           "id": "track-enterprise-data",
           "label": "企业数据智能"
         },
         {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
+          "id": "track-ai-coding",
+          "label": "AI Coding"
         }
       ],
       "opportunitySignals": {
@@ -1072,7 +1078,7 @@
       "stage": "",
       "evidence": "evidence-acquisition",
       "largeVendorKey": "",
-      "track": "track-ai-coding",
+      "track": "track-ai-infra",
       "generatedTitle": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
       "displayTitle": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
       "largeVendor": false,
@@ -46872,9 +46878,9 @@
       "publishedAt": "2026-06-30T09:43:29.000Z",
       "tags": {
         "track": [
-          "track-ai-coding",
+          "track-ai-infra",
           "track-enterprise-data",
-          "track-ai-infra"
+          "track-ai-coding"
         ],
         "function": [
           "function-engineering"
@@ -46897,9 +46903,9 @@
         ]
       },
       "flatTags": [
-        "track-ai-coding",
-        "track-enterprise-data",
         "track-ai-infra",
+        "track-enterprise-data",
+        "track-ai-coding",
         "function-engineering",
         "scenario-knowledge-base",
         "customer-developer-team",
@@ -46910,16 +46916,16 @@
       ],
       "displayTags": [
         {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
         },
         {
           "id": "track-enterprise-data",
           "label": "企业数据智能"
         },
         {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
+          "id": "track-ai-coding",
+          "label": "AI Coding"
         }
       ],
       "opportunitySignals": {
@@ -47070,7 +47076,7 @@
       "stage": "",
       "evidence": "evidence-acquisition",
       "largeVendorKey": "",
-      "track": "track-ai-coding",
+      "track": "track-ai-infra",
       "generatedTitle": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
       "displayTitle": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
       "largeVendor": false,
@@ -48073,9 +48079,9 @@
       "publishedAt": "2026-06-30T09:43:29.000Z",
       "tags": {
         "track": [
-          "track-ai-coding",
+          "track-ai-infra",
           "track-enterprise-data",
-          "track-ai-infra"
+          "track-ai-coding"
         ],
         "function": [
           "function-engineering"
@@ -48098,9 +48104,9 @@
         ]
       },
       "flatTags": [
-        "track-ai-coding",
-        "track-enterprise-data",
         "track-ai-infra",
+        "track-enterprise-data",
+        "track-ai-coding",
         "function-engineering",
         "scenario-knowledge-base",
         "customer-developer-team",
@@ -48111,16 +48117,16 @@
       ],
       "displayTags": [
         {
-          "id": "track-ai-coding",
-          "label": "AI Coding"
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
         },
         {
           "id": "track-enterprise-data",
           "label": "企业数据智能"
         },
         {
-          "id": "track-ai-infra",
-          "label": "AI 基础设施"
+          "id": "track-ai-coding",
+          "label": "AI Coding"
         }
       ],
       "opportunitySignals": {
@@ -48271,7 +48277,7 @@
       "stage": "",
       "evidence": "evidence-acquisition",
       "largeVendorKey": "",
-      "track": "track-ai-coding",
+      "track": "track-ai-infra",
       "generatedTitle": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
       "displayTitle": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
       "largeVendor": false,
@@ -83732,8 +83738,9 @@
       "publishedAt": "2026-06-30T17:32:06.724Z",
       "tags": {
         "track": [
-          "track-ai-governance",
-          "track-enterprise-workflow"
+          "track-enterprise-data",
+          "track-ai-infra",
+          "track-ai-governance"
         ],
         "function": [],
         "scenario": [
@@ -83752,8 +83759,9 @@
         ]
       },
       "flatTags": [
+        "track-enterprise-data",
+        "track-ai-infra",
         "track-ai-governance",
-        "track-enterprise-workflow",
         "scenario-agent-governance",
         "customer-enterprise",
         "evidence-customer-adoption",
@@ -83761,16 +83769,16 @@
       ],
       "displayTags": [
         {
+          "id": "track-enterprise-data",
+          "label": "企业数据智能"
+        },
+        {
+          "id": "track-ai-infra",
+          "label": "AI 基础设施"
+        },
+        {
           "id": "track-ai-governance",
           "label": "AI 治理"
-        },
-        {
-          "id": "track-enterprise-workflow",
-          "label": "企业工作流"
-        },
-        {
-          "id": "scenario-agent-governance",
-          "label": "Agent 权限治理"
         }
       ],
       "opportunitySignals": {
@@ -83935,7 +83943,7 @@
       "stage": "",
       "evidence": "evidence-customer-adoption",
       "largeVendorKey": "anthropic",
-      "track": "track-ai-governance",
+      "track": "track-enterprise-data",
       "generatedTitle": "Claude Science 科研工作台正式上线",
       "displayTitle": "Claude Science 科研工作台正式上线",
       "largeVendor": true,
@@ -83977,7 +83985,7 @@
       "publishedAt": "2026-06-30T06:00:00.000Z",
       "tags": {
         "track": [
-          "track-ai-agent"
+          "track-enterprise-workflow"
         ],
         "function": [],
         "scenario": [],
@@ -83993,12 +84001,16 @@
         ]
       },
       "flatTags": [
-        "track-ai-agent",
+        "track-enterprise-workflow",
         "evidence-customer-metric",
         "evidence-product-launch",
         "source-first-party"
       ],
       "displayTags": [
+        {
+          "id": "track-enterprise-workflow",
+          "label": "企业工作流"
+        },
         {
           "id": "evidence-customer-metric",
           "label": "客户指标"
@@ -84138,7 +84150,7 @@
       "stage": "",
       "evidence": "evidence-customer-metric",
       "largeVendorKey": "google",
-      "track": "track-ai-agent",
+      "track": "track-enterprise-workflow",
       "generatedTitle": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
       "displayTitle": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
       "largeVendor": true,
@@ -85584,51 +85596,12 @@
           "date": "2026-07-01"
         }
       ]
-    },
-    {
-      "id": "agent-workflow-enterprise",
-      "title": "Anthropic 记录 Agent 进入采购、数据连接和企业流程",
-      "direction": "企业工作流",
-      "relation": [
-        "AI Agent",
-        "企业工作流",
-        "大中型企业"
-      ],
-      "summary": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在macOS/Linux本地运行，或通过SSH/HPC远程使用。生成含代码和环境的可审计成果（3D蛋白质结构、基因组浏览器...",
-      "evidenceMeta": "素材：Anthropic",
-      "detailFocus": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在macOS/Linux本地运行，或通过SSH/HPC远程使用。生成含代码和环境的可审计成果（3D蛋白质结构、基因组浏览器...",
-      "todayCount": 1,
-      "last7Count": 5,
-      "last30Count": 37,
-      "subjects": [
-        {
-          "label": "Anthropic",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 1
-        }
-      ],
-      "supportingCards": [
-        {
-          "id": "SIG-20260701-A01",
-          "title": "Claude Science 科研工作台正式上线",
-          "subject": "Anthropic",
-          "categoryLabel": "案例",
-          "sourceName": "Anthropic：Newsroom（网页）",
-          "sourceUrl": "https://www.anthropic.com/news/claude-science-ai-workbench",
-          "date": "2026-07-01"
-        }
-      ]
     }
   ],
   "relationshipGraph": {
     "date": "2026-07-01",
-    "nodeCount": 15,
-    "edgeCount": 17,
+    "nodeCount": 14,
+    "edgeCount": 16,
     "nodes": [
       {
         "id": "category:产品",
@@ -85677,25 +85650,25 @@
         "sourceName": "TechCrunch：AI（RSS）"
       },
       {
-        "id": "signal:track-enterprise-workflow",
-        "label": "企业工作流",
-        "type": "signal",
-        "weight": 2,
-        "tag": "track-enterprise-workflow"
-      },
-      {
         "id": "signal:track-enterprise-data",
         "label": "企业数据智能",
         "type": "signal",
-        "weight": 2,
+        "weight": 3,
         "tag": "track-enterprise-data"
       },
       {
         "id": "signal:track-ai-infra",
         "label": "AI 基础设施",
         "type": "signal",
-        "weight": 2,
+        "weight": 3,
         "tag": "track-ai-infra"
+      },
+      {
+        "id": "signal:track-enterprise-workflow",
+        "label": "企业工作流",
+        "type": "signal",
+        "weight": 2,
+        "tag": "track-enterprise-workflow"
       },
       {
         "id": "signal:track-ai-governance",
@@ -85731,13 +85704,6 @@
         "type": "signal",
         "weight": 1,
         "tag": "evidence-customer-metric"
-      },
-      {
-        "id": "signal:scenario-agent-governance",
-        "label": "Agent 权限治理",
-        "type": "signal",
-        "weight": 1,
-        "tag": "scenario-agent-governance"
       }
     ],
     "edges": [
@@ -85745,6 +85711,34 @@
         "from": "category:案例",
         "to": "subject:Anthropic",
         "label": "案例",
+        "weight": 2,
+        "cardIds": [
+          "SIG-20260701-A01",
+          "SIG-20260701-A02"
+        ],
+        "titles": [
+          "Claude Science 科研工作台正式上线",
+          "Anthropic 推出 Claude Science 科学家 AI 工作台"
+        ]
+      },
+      {
+        "from": "subject:Anthropic",
+        "to": "signal:track-enterprise-data",
+        "label": "关联",
+        "weight": 2,
+        "cardIds": [
+          "SIG-20260701-A01",
+          "SIG-20260701-A02"
+        ],
+        "titles": [
+          "Claude Science 科研工作台正式上线",
+          "Anthropic 推出 Claude Science 科学家 AI 工作台"
+        ]
+      },
+      {
+        "from": "subject:Anthropic",
+        "to": "signal:track-ai-infra",
+        "label": "关联",
         "weight": 2,
         "cardIds": [
           "SIG-20260701-A01",
@@ -85806,51 +85800,15 @@
         ]
       },
       {
-        "from": "subject:Anthropic",
+        "from": "subject:Google-Blog",
         "to": "signal:track-enterprise-workflow",
         "label": "关联",
         "weight": 1,
         "cardIds": [
-          "SIG-20260701-A01"
+          "SIG-20260701-A03"
         ],
         "titles": [
-          "Claude Science 科研工作台正式上线"
-        ]
-      },
-      {
-        "from": "subject:Anthropic",
-        "to": "signal:scenario-agent-governance",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260701-A01"
-        ],
-        "titles": [
-          "Claude Science 科研工作台正式上线"
-        ]
-      },
-      {
-        "from": "subject:Anthropic",
-        "to": "signal:track-enterprise-data",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260701-A02"
-        ],
-        "titles": [
-          "Anthropic 推出 Claude Science 科学家 AI 工作台"
-        ]
-      },
-      {
-        "from": "subject:Anthropic",
-        "to": "signal:track-ai-infra",
-        "label": "关联",
-        "weight": 1,
-        "cardIds": [
-          "SIG-20260701-A02"
-        ],
-        "titles": [
-          "Anthropic 推出 Claude Science 科学家 AI 工作台"
+          "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势"
         ]
       },
       {
@@ -85879,7 +85837,7 @@
       },
       {
         "from": "subject:IT之家（RSS）",
-        "to": "signal:track-ai-coding",
+        "to": "signal:track-ai-infra",
         "label": "关联",
         "weight": 1,
         "cardIds": [
@@ -85903,7 +85861,7 @@
       },
       {
         "from": "subject:IT之家（RSS）",
-        "to": "signal:track-ai-infra",
+        "to": "signal:track-ai-coding",
         "label": "关联",
         "weight": 1,
         "cardIds": [
@@ -86011,45 +85969,6 @@
             "date": "2026-07-01"
           }
         ]
-      },
-      {
-        "id": "agent-workflow-enterprise",
-        "title": "Anthropic 记录 Agent 进入采购、数据连接和企业流程",
-        "direction": "企业工作流",
-        "relation": [
-          "AI Agent",
-          "企业工作流",
-          "大中型企业"
-        ],
-        "summary": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在macOS/Linux本地运行，或通过SSH/HPC远程使用。生成含代码和环境的可审计成果（3D蛋白质结构、基因组浏览器...",
-        "evidenceMeta": "素材：Anthropic",
-        "detailFocus": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在macOS/Linux本地运行，或通过SSH/HPC远程使用。生成含代码和环境的可审计成果（3D蛋白质结构、基因组浏览器...",
-        "todayCount": 1,
-        "last7Count": 5,
-        "last30Count": 37,
-        "subjects": [
-          {
-            "label": "Anthropic",
-            "count": 1
-          }
-        ],
-        "categories": [
-          {
-            "label": "案例",
-            "count": 1
-          }
-        ],
-        "supportingCards": [
-          {
-            "id": "SIG-20260701-A01",
-            "title": "Claude Science 科研工作台正式上线",
-            "subject": "Anthropic",
-            "categoryLabel": "案例",
-            "sourceName": "Anthropic：Newsroom（网页）",
-            "sourceUrl": "https://www.anthropic.com/news/claude-science-ai-workbench",
-            "date": "2026-07-01"
-          }
-        ]
       }
     ]
   },
@@ -86093,9 +86012,99 @@
           "count": 2
         },
         {
-          "tag": "evidence-acquisition",
-          "label": "收购并购",
+          "tag": "track-enterprise-workflow",
+          "label": "企业工作流",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "object": "track-ai-infra",
+      "label": "AI 基础设施",
+      "todayCount": 3,
+      "last7Count": 16,
+      "last30Count": 115,
+      "subjects": [
+        {
+          "label": "Anthropic",
+          "count": 2
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 2
+        },
+        {
+          "label": "产品",
           "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "track-enterprise-data",
+          "label": "企业数据智能",
+          "count": 3
+        },
+        {
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 2
+        },
+        {
+          "tag": "scenario-agent-governance",
+          "label": "Agent 权限治理",
+          "count": 2
+        },
+        {
+          "tag": "scenario-knowledge-base",
+          "label": "知识库问答",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "object": "track-enterprise-data",
+      "label": "企业数据智能",
+      "todayCount": 3,
+      "last7Count": 8,
+      "last30Count": 50,
+      "subjects": [
+        {
+          "label": "Anthropic",
+          "count": 2
+        }
+      ],
+      "categories": [
+        {
+          "label": "案例",
+          "count": 2
+        },
+        {
+          "label": "产品",
+          "count": 1
+        }
+      ],
+      "coTags": [
+        {
+          "tag": "track-ai-infra",
+          "label": "AI 基础设施",
+          "count": 3
+        },
+        {
+          "tag": "evidence-customer-adoption",
+          "label": "客户采用",
+          "count": 2
+        },
+        {
+          "tag": "scenario-agent-governance",
+          "label": "Agent 权限治理",
+          "count": 2
+        },
+        {
+          "tag": "scenario-knowledge-base",
+          "label": "知识库问答",
+          "count": 2
         }
       ]
     },
@@ -86170,14 +86179,14 @@
           "count": 2
         },
         {
-          "tag": "scenario-knowledge-base",
-          "label": "知识库问答",
-          "count": 1
-        },
-        {
           "tag": "track-ai-infra",
           "label": "AI 基础设施",
-          "count": 1
+          "count": 2
+        },
+        {
+          "tag": "track-enterprise-data",
+          "label": "企业数据智能",
+          "count": 2
         }
       ]
     },
@@ -86252,14 +86261,14 @@
           "count": 2
         },
         {
-          "tag": "scenario-knowledge-base",
-          "label": "知识库问答",
-          "count": 1
-        },
-        {
           "tag": "track-ai-infra",
           "label": "AI 基础设施",
-          "count": 1
+          "count": 2
+        },
+        {
+          "tag": "track-enterprise-data",
+          "label": "企业数据智能",
+          "count": 2
         }
       ]
     },
@@ -86304,88 +86313,6 @@
         {
           "tag": "evidence-acquisition",
           "label": "收购并购",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "object": "track-ai-coding",
-      "label": "AI Coding",
-      "todayCount": 2,
-      "last7Count": 13,
-      "last30Count": 92,
-      "subjects": [
-        {
-          "label": "OpenClaw",
-          "count": 1
-        }
-      ],
-      "categories": [
-        {
-          "label": "产品",
-          "count": 2
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "customer-developer-team",
-          "label": "开发团队",
-          "count": 2
-        },
-        {
-          "tag": "evidence-product-launch",
-          "label": "产品发布",
-          "count": 2
-        },
-        {
-          "tag": "function-engineering",
-          "label": "工程研发",
-          "count": 2
-        },
-        {
-          "tag": "evidence-acquisition",
-          "label": "收购并购",
-          "count": 1
-        }
-      ]
-    },
-    {
-      "object": "track-ai-governance",
-      "label": "AI 治理",
-      "todayCount": 2,
-      "last7Count": 5,
-      "last30Count": 42,
-      "subjects": [
-        {
-          "label": "Anthropic",
-          "count": 2
-        }
-      ],
-      "categories": [
-        {
-          "label": "案例",
-          "count": 2
-        }
-      ],
-      "coTags": [
-        {
-          "tag": "evidence-customer-adoption",
-          "label": "客户采用",
-          "count": 2
-        },
-        {
-          "tag": "scenario-agent-governance",
-          "label": "Agent 权限治理",
-          "count": 2
-        },
-        {
-          "tag": "scenario-knowledge-base",
-          "label": "知识库问答",
-          "count": 1
-        },
-        {
-          "tag": "track-ai-infra",
-          "label": "AI 基础设施",
           "count": 1
         }
       ]
@@ -86766,7 +86693,7 @@
       "window": "7 天",
       "object": "track-ai-infra",
       "label": "AI 基础设施",
-      "cardCount": 15,
+      "cardCount": 16,
       "lastSeen": "2026-07-01",
       "filter": "track-ai-infra"
     },
@@ -86804,11 +86731,11 @@
     },
     {
       "window": "7 天",
-      "object": "scenario-knowledge-base",
-      "label": "知识库问答",
-      "cardCount": 7,
+      "object": "track-enterprise-data",
+      "label": "企业数据智能",
+      "cardCount": 8,
       "lastSeen": "2026-07-01",
-      "filter": "scenario-knowledge-base"
+      "filter": "track-enterprise-data"
     },
     {
       "window": "30 天",
@@ -86822,7 +86749,7 @@
       "window": "30 天",
       "object": "track-ai-infra",
       "label": "AI 基础设施",
-      "cardCount": 114,
+      "cardCount": 115,
       "lastSeen": "2026-07-01",
       "filter": "track-ai-infra"
     },
@@ -86868,11 +86795,11 @@
     },
     {
       "window": "30 天",
-      "object": "scenario-knowledge-base",
-      "label": "知识库问答",
-      "cardCount": 49,
+      "object": "track-enterprise-data",
+      "label": "企业数据智能",
+      "cardCount": 50,
       "lastSeen": "2026-07-01",
-      "filter": "scenario-knowledge-base"
+      "filter": "track-enterprise-data"
     }
   ]
 }

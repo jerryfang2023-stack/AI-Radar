@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-coding", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-data", "track-ai-coding"]
   function: ["function-engineering"]
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-developer-team", "customer-enterprise"]

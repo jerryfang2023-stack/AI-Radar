@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-governance", "track-enterprise-workflow"]
+  track: ["track-enterprise-data", "track-ai-infra", "track-ai-governance"]
   function: []
   scenario: ["scenario-agent-governance"]
   customer: ["customer-enterprise"]

@@ -1,6 +1,6 @@
 # V3.4 Tag System Audit
 
-Generated at: 2026-07-01T09:35:39.171Z
+Generated at: 2026-07-01T09:38:45.152Z
 
 ## Result
 
@@ -24,7 +24,7 @@ Generated at: 2026-07-01T09:35:39.171Z
 | track-enterprise-workflow | 480 | 72% |
 | source-industry-data | 440 | 66% |
 | evidence-customer-adoption | 324 | 48% |
-| track-ai-infra | 301 | 45% |
+| track-ai-infra | 302 | 45% |
 | evidence-product-launch | 266 | 40% |
 | function-engineering | 219 | 33% |
 | customer-developer-team | 218 | 33% |
@@ -79,13 +79,13 @@ None.
 | tag | label | todayCount | last30Count |
 | --- | --- | --- | --- |
 | evidence-product-launch | 产品发布 | 3 | 121 |
+| track-ai-infra | AI 基础设施 | 3 | 115 |
+| track-enterprise-data | 企业数据智能 | 3 | 50 |
 | customer-developer-team | 开发团队 | 2 | 92 |
 | evidence-customer-adoption | 客户采用 | 2 | 73 |
 | function-engineering | 工程研发 | 2 | 92 |
 | scenario-agent-governance | Agent 权限治理 | 2 | 43 |
 | scenario-knowledge-base | 知识库问答 | 2 | 49 |
-| track-ai-coding | AI Coding | 2 | 92 |
-| track-ai-governance | AI 治理 | 2 | 42 |
 
 ### Current Trend Links
 
@@ -93,20 +93,20 @@ None.
 | --- | --- | --- | --- |
 | 7 天 | evidence-product-launch | 产品发布 | 22 |
 | 7 天 | track-enterprise-workflow | 企业工作流 | 17 |
-| 7 天 | track-ai-infra | AI 基础设施 | 15 |
+| 7 天 | track-ai-infra | AI 基础设施 | 16 |
 | 7 天 | customer-developer-team | 开发团队 | 13 |
 | 7 天 | function-engineering | 工程研发 | 13 |
 | 7 天 | track-ai-coding | AI Coding | 13 |
 | 7 天 | evidence-customer-adoption | 客户采用 | 10 |
-| 7 天 | scenario-knowledge-base | 知识库问答 | 7 |
+| 7 天 | track-enterprise-data | 企业数据智能 | 8 |
 | 30 天 | evidence-product-launch | 产品发布 | 121 |
-| 30 天 | track-ai-infra | AI 基础设施 | 114 |
+| 30 天 | track-ai-infra | AI 基础设施 | 115 |
 | 30 天 | track-enterprise-workflow | 企业工作流 | 104 |
 | 30 天 | customer-developer-team | 开发团队 | 92 |
 | 30 天 | function-engineering | 工程研发 | 92 |
 | 30 天 | track-ai-coding | AI Coding | 92 |
 | 30 天 | evidence-customer-adoption | 客户采用 | 73 |
-| 30 天 | scenario-knowledge-base | 知识库问答 | 49 |
+| 30 天 | track-enterprise-data | 企业数据智能 | 50 |
 
 ### Frontstage Display Tag Violations
 
