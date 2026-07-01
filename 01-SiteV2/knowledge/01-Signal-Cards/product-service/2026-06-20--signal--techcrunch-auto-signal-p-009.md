@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-ai-coding", "track-enterprise-data", "track-ai-infra"]
   function: ["function-engineering"]
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-developer-team"]
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment", "pricing_change"]
+  business_action: ["customer_deployment", "funding_round", "pricing_change"]
   product_form: []
   delivery_model: ["template_pack"]
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["deployment_scale"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Allbirds 转型 AI 后更名为 Smartbird，新 CEO 计划部署托管计算集群 Allbirds 转型 AI 后更名为 Smartbird，新 CEO 计划部署托管计算集群 鞋履品牌 Allbirds 4 月宣布转型 AI，以 4300 万美元出售鞋业务并从股市融资 1 亿美元，更名为 Smartbird。前 AWS 高管、工程博士 Nadia Carlsten 昨日起出任 CEO，年薪 70 万美元并获价值约 900 ..."
   missing_fields: ["product_form"]

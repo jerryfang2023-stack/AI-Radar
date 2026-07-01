@@ -29,7 +29,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -43,12 +43,12 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "product_launch", "research_benchmark"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: ["vertical_saas"]
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement"]
+  source_evidence_type: ["first_party_announcement", "funding_news"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Contrario launches AI agents paired with human recruiters Contrario launches: The case for pairing AI agents with human recruiters instead of replacing them ## Contrario launches: The case for pairing AI agents with hum..."
   missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]

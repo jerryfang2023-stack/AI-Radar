@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["funding_round", "partnership_integration", "pricing_change", "acquisition"]
+  business_action: ["funding_round", "partnership_integration", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  pain_or_constraint: ["api_cost_spike", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"

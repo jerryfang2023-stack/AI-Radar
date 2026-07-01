@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-enterprise-data", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-ai-coding", "track-enterprise-data"]
   function: ["function-engineering", "function-customer-service"]
   scenario: ["scenario-knowledge-base", "scenario-construction-real-estate", "scenario-customer-ticket"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -48,7 +48,7 @@ opportunity_signals:
   product_form: []
   delivery_model: []
   pain_or_constraint: ["api_cost_spike", "security_compliance"]
-  adoption_evidence: ["partnership_announcement", "enterprise_plan"]
+  adoption_evidence: ["enterprise_plan", "partnership_announcement"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "On-Premise vs Cloud: Generative AI Total Cost of ..."

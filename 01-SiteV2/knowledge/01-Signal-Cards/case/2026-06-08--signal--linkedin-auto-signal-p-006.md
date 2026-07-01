@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["finance_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "finance_team"]
   team_or_function: ["finance"]
   specific_task: []
   business_action: ["partnership_integration", "procurement_signal", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  pain_or_constraint: ["api_cost_spike", "workflow_integration"]
   adoption_evidence: ["procurement_contract", "third_party_report"]
   source_evidence_type: ["regulatory_or_procurement", "community_post"]
   evidence_basis: "raw_source_text"

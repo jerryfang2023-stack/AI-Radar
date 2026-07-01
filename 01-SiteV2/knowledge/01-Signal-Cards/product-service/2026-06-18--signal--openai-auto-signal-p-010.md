@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-ai-coding", "track-enterprise-data", "track-ai-infra"]
   function: ["function-engineering"]
   scenario: ["scenario-knowledge-base", "scenario-construction-real-estate"]
   customer: ["customer-developer-team"]
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["funding_round", "product_launch", "partnership_integration", "research_benchmark"]
+  business_action: ["funding_round", "product_launch", "partnership_integration"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["partnership_announcement"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "OpenAI 发布 AI 基础设施能力，切入地产和建筑设计工作流 XDOF获7000万美元融资，构建机器人训练数据基础设施 机器人训练数据初创公司XDOF结束隐身，获Thrive Capital、a16z等7000万美元投资。公司为AI实验室和机器人公司构建数据管道、采集工具和标注系统，填补物理交互训练数据缺口。XDOF联合UC Berkeley发布ABC数据集，含13万条机器人操作轨迹、300小时仿真数据及100小时评估数据，号称迄..."
   missing_fields: ["specific_task", "product_form", "delivery_model"]

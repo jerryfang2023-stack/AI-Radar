@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: ["scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -49,7 +49,7 @@ opportunity_signals:
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["third_party_report"]
-  source_evidence_type: ["industry_report", "business_media"]
+  source_evidence_type: ["business_media", "industry_report"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Weforum 记录企业应用场景：地产开发和建筑设计流程 Which AI systems are reshaping enterprise innovation?"
   missing_fields: ["specific_task", "product_form", "delivery_model"]

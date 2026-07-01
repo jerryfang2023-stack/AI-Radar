@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "healthcare_provider"]
-  team_or_function: ["sales", "engineering", "healthcare_operations"]
-  specific_task: ["sales_lead_research", "internal_tool_building", "medical_documentation"]
+  buyer_or_user: ["engineering_team", "healthcare_provider", "sales_team"]
+  team_or_function: ["engineering", "healthcare_operations", "sales"]
+  specific_task: ["internal_tool_building", "medical_documentation", "sales_lead_research"]
   business_action: ["customer_deployment"]
   product_form: []
   delivery_model: []

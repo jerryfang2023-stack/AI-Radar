@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-procurement-bidding"]
   scenario: ["scenario-bidding-response"]
   customer: ["customer-enterprise"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["product_launch", "procurement_signal"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  pain_or_constraint: ["evaluation_gap", "workflow_integration"]
   adoption_evidence: ["deployment_scale", "procurement_contract"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

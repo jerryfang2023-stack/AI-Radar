@@ -35,21 +35,21 @@ formal_tags:
   scenario: []
   customer: []
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["funding_round", "customer_deployment", "partnership_integration"]
+  business_action: ["customer_deployment", "funding_round", "partnership_integration"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  pain_or_constraint: ["latency_sensitive", "workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement"]
+  source_evidence_type: ["first_party_announcement", "funding_news"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Convey 获得 a16z 领投的 3800 万美元 A 轮融资 Convey Raises $38 Million Series A Led by Andreessen Horowitz to Automate Enterprise Operations with AI Teammates Convey Raises $38 Million Series A Led by Andreessen Horowitz to Automa..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 4
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["customer_deployment", "governance_requirement"]
   product_form: ["copilot"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  pain_or_constraint: ["security_compliance", "workflow_integration"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

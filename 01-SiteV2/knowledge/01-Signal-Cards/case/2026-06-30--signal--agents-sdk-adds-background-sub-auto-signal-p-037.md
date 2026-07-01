@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "operations_team"]
-  team_or_function: ["sales", "engineering", "operations"]
-  specific_task: ["sales_lead_research", "internal_tool_building", "logistics_coordination"]
+  buyer_or_user: ["engineering_team", "operations_team", "sales_team"]
+  team_or_function: ["engineering", "operations", "sales"]
+  specific_task: ["internal_tool_building", "logistics_coordination", "sales_lead_research"]
   business_action: ["customer_deployment"]
   product_form: ["api", "developer_tool"]
   delivery_model: ["api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "hallucination_risk"]
+  pain_or_constraint: ["hallucination_risk", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"

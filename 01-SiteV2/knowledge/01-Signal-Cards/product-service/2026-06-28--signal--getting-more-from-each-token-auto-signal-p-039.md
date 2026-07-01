@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: []
   scenario: []
   customer: []
@@ -45,9 +45,9 @@ opportunity_signals:
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
   business_action: ["customer_deployment", "open_source_release"]
-  product_form: ["copilot", "model_gateway", "developer_tool"]
+  product_form: ["copilot", "developer_tool", "model_gateway"]
   delivery_model: ["consulting_diagnostic"]
-  pain_or_constraint: ["model_routing_complexity", "context_management"]
+  pain_or_constraint: ["context_management", "model_routing_complexity"]
   adoption_evidence: []
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"

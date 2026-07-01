@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-data", "track-ai-infra", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-ai-coding", "track-enterprise-data"]
   function: ["function-engineering", "function-customer-service"]
   scenario: ["scenario-knowledge-base", "scenario-customer-ticket"]
   customer: ["customer-developer-team"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "engineering"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "sales_team"]
+  team_or_function: ["engineering", "sales"]
+  specific_task: ["internal_tool_building", "sales_lead_research"]
   business_action: ["product_launch", "open_source_release"]
   product_form: ["developer_tool"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  pain_or_constraint: ["latency_sensitive", "workflow_integration"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"

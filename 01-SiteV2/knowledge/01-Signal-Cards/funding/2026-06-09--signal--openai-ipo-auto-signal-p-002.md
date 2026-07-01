@@ -31,14 +31,14 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-funding"]
-  function: ["function-corporate"]
+  track: ["track-ai-agent"]
+  function: []
   scenario: []
-  customer: ["customer-investor"]
-  evidence: ["evidence-funding-round"]
+  customer: []
+  evidence: ["evidence-funding"]
   stage: []
   region: []
-  source: ["source-news-media"]
+  source: ["source-business-media"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
@@ -50,7 +50,7 @@ opportunity_signals:
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "OpenAI 秘密提交 IPO 申请，估值 8520 亿美元 OpenAI 秘密提交 IPO 申请 OpenAI周一在一篇博客中宣布已秘密提交首次公开募股申请，距其主要竞争对手Anthropic递交类似文件仅一周多时间，两家AI公司的上市竞赛随之升温。OpenAI在最新一轮融资中投后估值达8520亿美元。"
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]

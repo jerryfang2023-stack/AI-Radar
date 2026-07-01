@@ -37,12 +37,12 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-enterprise-workflow"]
   function: ["function-customer-service"]
   scenario: ["scenario-customer-ticket", "scenario-revenue-operations"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
   opinion: []
@@ -52,10 +52,10 @@ opportunity_signals:
   buyer_or_user: ["customer_support_team", "enterprise_ai_owner", "it_security_team"]
   team_or_function: ["customer_support", "it_security"]
   specific_task: ["customer_ticket_triage"]
-  business_action: ["funding_round", "customer_deployment", "governance_requirement", "failure_postmortem"]
+  business_action: ["customer_deployment", "funding_round", "governance_requirement"]
   product_form: []
   delivery_model: ["consulting_diagnostic"]
-  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  pain_or_constraint: ["security_compliance", "workflow_integration"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"

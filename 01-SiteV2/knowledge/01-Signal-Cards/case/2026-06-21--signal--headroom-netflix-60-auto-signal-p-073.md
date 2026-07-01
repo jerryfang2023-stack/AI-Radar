@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 4
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-data"]
+  track: ["track-ai-coding", "track-enterprise-data"]
   function: ["function-engineering"]
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-developer-team"]
@@ -45,7 +45,7 @@ opportunity_signals:
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building", "knowledge_base_qa"]
   business_action: ["pricing_change", "open_source_release", "failure_postmortem"]
-  product_form: ["model_gateway", "rag_knowledge_base", "developer_tool"]
+  product_form: ["developer_tool", "model_gateway", "rag_knowledge_base"]
   delivery_model: []
   pain_or_constraint: ["api_cost_spike"]
   adoption_evidence: ["customer_metric", "deployment_scale"]

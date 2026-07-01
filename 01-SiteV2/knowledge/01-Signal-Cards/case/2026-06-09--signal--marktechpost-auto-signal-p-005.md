@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data"]
+  track: ["track-enterprise-data", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-enterprise"]
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["product_launch", "research_benchmark", "failure_postmortem"]
   product_form: ["agent_workbench", "rag_knowledge_base"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "hallucination_risk"]
+  pain_or_constraint: ["hallucination_risk", "workflow_integration"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

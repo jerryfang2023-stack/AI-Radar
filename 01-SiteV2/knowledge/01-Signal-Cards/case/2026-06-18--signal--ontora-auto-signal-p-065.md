@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -41,12 +41,12 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment", "partnership_integration"]
   product_form: ["workflow_automation"]
-  delivery_model: ["project_based_service", "consulting_diagnostic"]
+  delivery_model: ["consulting_diagnostic", "project_based_service"]
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["pilot_or_poc"]
   source_evidence_type: []

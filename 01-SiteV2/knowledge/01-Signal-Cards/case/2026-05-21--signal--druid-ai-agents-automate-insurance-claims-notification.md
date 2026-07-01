@@ -50,7 +50,7 @@ frontend:
     - "https://www.druidai.com/case-studies/insurer-automates-claims-with-druid-ai-agents"
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data", "track-ai-governance"]
+  track: ["track-enterprise-data", "track-ai-governance", "track-enterprise-workflow"]
   function: ["function-finance", "function-sales", "function-operations", "function-legal-compliance"]
   scenario: ["scenario-knowledge-base", "scenario-sales-briefing", "scenario-agent-governance", "scenario-insurance-claims", "scenario-revenue-operations"]
   customer: ["customer-enterprise"]
@@ -62,13 +62,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "insurance_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "insurance_operations", "it_security"]
-  specific_task: ["sales_lead_research", "insurance_claim_review"]
+  buyer_or_user: ["enterprise_ai_owner", "insurance_team", "sales_team"]
+  team_or_function: ["insurance_operations", "it_security", "sales"]
+  specific_task: ["insurance_claim_review", "sales_lead_research"]
   business_action: ["customer_deployment", "governance_requirement"]
   product_form: ["model_gateway"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  pain_or_constraint: ["security_compliance", "workflow_integration"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

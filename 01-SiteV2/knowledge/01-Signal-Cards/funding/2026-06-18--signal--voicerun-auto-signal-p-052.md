@@ -30,12 +30,12 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-enterprise-workflow"]
   function: ["function-customer-service"]
   scenario: ["scenario-customer-ticket"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
@@ -49,7 +49,7 @@ opportunity_signals:
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement"]
+  source_evidence_type: ["first_party_announcement", "funding_news"]
   evidence_basis: "raw_source_text"
   source_excerpt: "VoiceRun 获得5 million 融资，押注企业 Agent 协作平台 VoiceRun Launches Full-Stack Voice AI Platform for Enterprises with ..."
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]

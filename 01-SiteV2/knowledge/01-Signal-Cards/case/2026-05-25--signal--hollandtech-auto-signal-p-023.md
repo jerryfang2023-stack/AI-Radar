@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-coding", "track-ai-infra", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: ["scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -43,10 +43,10 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "engineering", "it_security"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment", "partnership_integration", "pricing_change"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "sales_team"]
+  team_or_function: ["engineering", "it_security", "sales"]
+  specific_task: ["internal_tool_building", "sales_lead_research"]
+  business_action: ["customer_deployment", "funding_round", "partnership_integration"]
   product_form: ["copilot"]
   delivery_model: []
   pain_or_constraint: ["hallucination_risk", "security_compliance"]

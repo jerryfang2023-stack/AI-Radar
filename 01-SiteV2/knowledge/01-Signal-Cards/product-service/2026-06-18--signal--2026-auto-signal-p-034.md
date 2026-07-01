@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing"]
   customer: []
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["product_launch", "partnership_integration", "research_benchmark"]
   product_form: []
-  delivery_model: ["enterprise_subscription", "consulting_diagnostic"]
-  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  delivery_model: ["consulting_diagnostic", "enterprise_subscription"]
+  pain_or_constraint: ["evaluation_gap", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"

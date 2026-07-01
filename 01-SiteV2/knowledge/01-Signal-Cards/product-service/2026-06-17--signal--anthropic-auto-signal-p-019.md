@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -41,15 +41,15 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "finance_team", "enterprise_ai_owner"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "finance_team"]
   team_or_function: ["engineering", "finance"]
   specific_task: ["internal_tool_building"]
   business_action: ["product_launch", "pricing_change", "open_source_release"]
-  product_form: ["copilot", "api", "developer_tool"]
-  delivery_model: ["enterprise_subscription", "api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  product_form: ["api", "copilot", "developer_tool"]
+  delivery_model: ["api_usage_based", "enterprise_subscription"]
+  pain_or_constraint: ["api_cost_spike", "workflow_integration"]
   adoption_evidence: ["deployment_scale"]
-  source_evidence_type: ["technical_blog", "first_party_announcement"]
+  source_evidence_type: ["first_party_announcement", "technical_blog"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Anthropic 推出 Agent 工作流能力，切入企业 Agent 协作平台 Anthropic暂停Claude Agent SDK基于token的计费调整 Anthropic上月宣布自6月15日起将Claude Agent SDK（含第三方应用及`claude -p`命令）的使用与标准订阅分开按API费率计费，订阅用户仅获等值月信用额度。开发者分析指出Claude Opus订阅者每天2-3条消息后即比API划算，新方案使订阅价值..."
   missing_fields: []

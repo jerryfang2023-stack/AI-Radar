@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-procurement-bidding"]
   scenario: ["scenario-bidding-response"]
   customer: ["customer-enterprise"]
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment", "partnership_integration", "procurement_signal", "pricing_change"]
+  business_action: ["customer_deployment", "partnership_integration", "procurement_signal"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "security_compliance"]
+  pain_or_constraint: ["api_cost_spike", "security_compliance", "workflow_integration"]
   adoption_evidence: ["partnership_announcement", "procurement_contract"]
-  source_evidence_type: ["technical_blog", "regulatory_or_procurement"]
+  source_evidence_type: ["regulatory_or_procurement", "technical_blog"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Amazon 案例：AI 进入采购下单流程 Algorithms and packages in the AWS Marketplace - Amazon SageMaker AI # Algorithms and packages in the AWS Marketplace Amazon SageMaker AI integrates with AWS Marketplace, enabling developers to cha..."
   missing_fields: ["product_form", "delivery_model"]

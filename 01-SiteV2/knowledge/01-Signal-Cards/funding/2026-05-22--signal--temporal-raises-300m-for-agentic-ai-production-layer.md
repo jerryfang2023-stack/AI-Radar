@@ -49,12 +49,12 @@ frontend:
     - "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies"
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-infra", "track-ai-governance"]
+  track: ["track-ai-coding", "track-ai-governance", "track-ai-infra"]
   function: ["function-engineering", "function-legal-compliance"]
   scenario: ["scenario-agent-governance"]
   customer: ["customer-developer-team", "customer-enterprise"]
   evidence: ["evidence-funding", "evidence-partnership-integration"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
   opinion: []
@@ -64,12 +64,12 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
   team_or_function: ["it_security"]
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "partnership_integration", "governance_requirement"]
+  business_action: ["customer_deployment", "funding_round", "partnership_integration"]
   product_form: []
   delivery_model: ["consulting_diagnostic"]
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["partnership_announcement", "pilot_or_poc"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Temporal 融资 3 亿美元，补企业 Agent 的生产运行层 Temporal raises Series D funding | Temporal Temporal raises Series D funding | Temporal # Temporal Raises $300M Series D to Make Agentic AI Real for Companies SAN FRANCISCO — February ..."
   missing_fields: ["specific_task", "product_form"]

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -49,7 +49,7 @@ opportunity_signals:
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: ["customer_metric", "deployment_scale"]
-  source_evidence_type: ["funding_news", "first_party_announcement"]
+  source_evidence_type: ["first_party_announcement", "funding_news"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Businessinsider 案例：AI 进入企业智能体协作流程 Bill Joplin’s Air Conditioning and Heating Books Over 90% of Calls with ServiceTitan AI Voice Agent Ahead of Peak Season | Markets Insider LOS ANGELES, June 09, 2026 (GLOBE NEWSWIRE) --..."
   missing_fields: ["product_form", "delivery_model"]

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-infra", "track-ai-governance"]
+  track: ["track-ai-coding", "track-ai-governance", "track-ai-infra"]
   function: ["function-engineering", "function-procurement-bidding"]
   scenario: ["scenario-bidding-response", "scenario-agent-governance"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["funding_round", "product_launch", "procurement_signal", "governance_requirement"]
+  business_action: ["funding_round", "product_launch", "procurement_signal"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "security_compliance", "context_management"]
+  pain_or_constraint: ["context_management", "security_compliance", "workflow_integration"]
   adoption_evidence: ["procurement_contract", "third_party_report"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "The-Decoder 发布 AI 基础设施能力，切入采购下单自动化 亚马逊等六家公司据报引发政府对 Anthropic Fable 模型的打压 亚马逊 CEO Andy Jassy 与其他五家科技公司高管向特朗普政府报告 Anthropic Fable 模型存在安全漏洞，尽管亚马逊是 Anthropic 最大投资者之一。数小时内，白宫通过出口管制令强制该模型下线。此举可能是一项合法的安全政策决定，但也显示出对不便企业的武力展示。"
   missing_fields: ["specific_task", "product_form", "delivery_model"]

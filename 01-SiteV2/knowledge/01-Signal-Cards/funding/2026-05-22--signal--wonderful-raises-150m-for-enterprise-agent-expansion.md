@@ -49,25 +49,25 @@ frontend:
     - "https://www.prnewswire.com/news-releases/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets-302712238.html"
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-marketing"]
+  track: ["track-ai-marketing", "track-enterprise-workflow"]
   function: ["function-marketing", "function-procurement-bidding"]
   scenario: ["scenario-bidding-response", "scenario-logistics-supply-chain", "scenario-revenue-operations"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-funding", "evidence-partnership-integration", "evidence-pricing-cost"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
   opinion: []
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["healthcare_provider", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "healthcare_provider"]
   team_or_function: ["healthcare_operations"]
   specific_task: ["medical_documentation"]
-  business_action: ["funding_round", "customer_deployment", "procurement_signal", "pricing_change"]
+  business_action: ["customer_deployment", "funding_round", "procurement_signal"]
   product_form: ["agent_workbench"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "context_management"]
+  pain_or_constraint: ["api_cost_spike", "context_management", "workflow_integration"]
   adoption_evidence: ["procurement_contract"]
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"

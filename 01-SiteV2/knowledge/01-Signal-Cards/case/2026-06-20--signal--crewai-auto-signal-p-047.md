@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -44,7 +44,7 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment", "partnership_integration", "open_source_release"]
+  business_action: ["customer_deployment", "funding_round", "partnership_integration"]
   product_form: ["agent_workbench", "developer_tool"]
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing"]
   customer: ["customer-enterprise"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "insurance_team", "operations_team"]
-  team_or_function: ["sales", "insurance_operations", "operations"]
-  specific_task: ["sales_lead_research", "insurance_claim_review", "logistics_coordination"]
+  buyer_or_user: ["insurance_team", "operations_team", "sales_team"]
+  team_or_function: ["insurance_operations", "operations", "sales"]
+  specific_task: ["insurance_claim_review", "logistics_coordination", "sales_lead_research"]
   business_action: ["customer_deployment", "partnership_integration", "governance_requirement"]
   product_form: []
-  delivery_model: ["project_based_service", "consulting_diagnostic"]
-  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  delivery_model: ["consulting_diagnostic", "project_based_service"]
+  pain_or_constraint: ["security_compliance", "workflow_integration"]
   adoption_evidence: ["enterprise_plan", "pilot_or_poc"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

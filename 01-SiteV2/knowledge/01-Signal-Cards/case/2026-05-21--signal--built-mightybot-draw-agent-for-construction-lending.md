@@ -50,7 +50,7 @@ frontend:
     - "https://mightybot.ai/blog/shipping-ai-that-works-built-x-mightybot-draw-agent/"
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-finance", "function-operations"]
   scenario: ["scenario-construction-real-estate", "scenario-revenue-operations"]
   customer: ["customer-enterprise"]
@@ -68,7 +68,7 @@ opportunity_signals:
   business_action: ["customer_deployment", "product_launch", "pricing_change"]
   product_form: ["vertical_saas"]
   delivery_model: ["project_based_service"]
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "hallucination_risk"]
+  pain_or_constraint: ["api_cost_spike", "hallucination_risk", "workflow_integration"]
   adoption_evidence: ["case_study"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"

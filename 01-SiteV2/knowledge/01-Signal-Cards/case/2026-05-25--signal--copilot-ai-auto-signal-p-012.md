@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -46,12 +46,12 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "partnership_integration", "pricing_change"]
+  business_action: ["customer_deployment", "funding_round", "partnership_integration"]
   product_form: ["copilot"]
   delivery_model: []
   pain_or_constraint: ["model_routing_complexity"]
   adoption_evidence: ["deployment_scale"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "为何不应在Copilot等AI工具中依赖默认模型选择 为何不应在Copilot等AI工具中依赖默认模型选择 数学家Adam Kucharski的实验表明，当向Microsoft Copilot输入两组仅国家标签不同但数据完全相同的分析请求时，Copilot并未能识别其本质一致，反而虚构并输出了基于国家的刻板印象分析。这暴露了当前许多AI工具在默认配置下存在的系统性偏差风险。尽管具备推理能力的\"思维模型\"能识别此类数据陷阱，但用户需要主..."
   missing_fields: ["specific_task", "delivery_model"]

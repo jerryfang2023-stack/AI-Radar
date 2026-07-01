@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-governance"]
+  track: ["track-ai-governance", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-agent-governance"]
   customer: ["customer-enterprise"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "content_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "marketing_content", "it_security"]
-  specific_task: ["sales_lead_research", "content_workflow"]
+  buyer_or_user: ["content_team", "enterprise_ai_owner", "sales_team"]
+  team_or_function: ["it_security", "marketing_content", "sales"]
+  specific_task: ["content_workflow", "sales_lead_research"]
   business_action: ["product_launch", "partnership_integration", "governance_requirement"]
   product_form: ["model_gateway", "workflow_automation"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  pain_or_constraint: ["latency_sensitive", "workflow_integration"]
   adoption_evidence: ["customer_metric", "partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

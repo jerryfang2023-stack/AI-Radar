@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
   team_or_function: ["engineering", "it_security"]
   specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "partnership_integration", "governance_requirement"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "context_management"]
+  pain_or_constraint: ["context_management", "workflow_integration"]
   adoption_evidence: ["partnership_announcement", "third_party_report"]
-  source_evidence_type: ["industry_report", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "business_media", "industry_report"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Thoughtworks 记录企业应用场景：模型部署和算力调用 Thoughtworks Launches Agent/works™ to Govern and Run Enterprise AI Agents Across Any Cloud | Thoughtworks United States Thoughtworks Launches Agent/works™ to Govern and Run Enterprise AI ..."
   missing_fields: ["product_form", "delivery_model"]

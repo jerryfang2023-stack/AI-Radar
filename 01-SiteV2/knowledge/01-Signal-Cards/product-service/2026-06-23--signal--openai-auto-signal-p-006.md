@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-governance"]
+  track: ["track-ai-coding", "track-ai-governance", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: ["scenario-agent-governance"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["product_launch", "partnership_integration", "open_source_release", "governance_requirement"]
+  business_action: ["product_launch", "partnership_integration", "open_source_release"]
   product_form: []
-  delivery_model: ["open_source_commercial", "consulting_diagnostic"]
-  pain_or_constraint: ["security_compliance", "evaluation_gap"]
+  delivery_model: ["consulting_diagnostic", "open_source_commercial"]
+  pain_or_constraint: ["evaluation_gap", "security_compliance"]
   adoption_evidence: ["partnership_announcement", "third_party_report"]
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"

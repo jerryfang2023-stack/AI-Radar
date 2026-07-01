@@ -50,7 +50,7 @@ frontend:
     - "https://www.druidai.com/case-studies/ai-voice-agents-healthcare-group-transforms-patient-experience"
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-medical-ai", "track-ai-customer-service"]
+  track: ["track-medical-ai", "track-ai-customer-service", "track-enterprise-workflow"]
   function: ["function-customer-service", "function-operations"]
   scenario: ["scenario-clinical-imaging", "scenario-customer-ticket", "scenario-insurance-claims", "scenario-healthcare-operations"]
   customer: ["customer-enterprise", "customer-healthcare-provider"]

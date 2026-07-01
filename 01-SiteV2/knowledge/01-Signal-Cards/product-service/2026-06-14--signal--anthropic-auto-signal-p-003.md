@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra", "track-ai-governance"]
+  track: ["track-ai-governance", "track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-agent-governance"]
   customer: ["customer-enterprise"]
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
   team_or_function: ["it_security"]
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "product_launch", "governance_requirement"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "permission_boundary"]
+  pain_or_constraint: ["permission_boundary", "workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Anthropic 推出 Agent 工作流能力，切入模型部署和算力服务 Anthropic 暂停新模型访问，印度辩论 AI 未来 Anthropic 暂停了新模型的访问权限，印度科技领袖围绕这一事件展开辩论，探讨其是否是对该国 AI 雄心的警示。"
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]

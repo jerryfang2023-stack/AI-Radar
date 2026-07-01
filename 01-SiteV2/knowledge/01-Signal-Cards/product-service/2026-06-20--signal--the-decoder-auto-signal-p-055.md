@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding"]
+  track: ["track-ai-coding"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team"]
@@ -41,7 +41,7 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["product_launch", "partnership_integration", "research_benchmark"]

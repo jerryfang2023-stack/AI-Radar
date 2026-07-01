@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data"]
+  track: ["track-enterprise-data", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-enterprise"]
@@ -49,7 +49,7 @@ opportunity_signals:
   delivery_model: []
   pain_or_constraint: ["api_cost_spike"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Techcrunch 案例：AI 进入企业智能体协作流程 AI公司竞相上市，谁在搭便车？"
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]

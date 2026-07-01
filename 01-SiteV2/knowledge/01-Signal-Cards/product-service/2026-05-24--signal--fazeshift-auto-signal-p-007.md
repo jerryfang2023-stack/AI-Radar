@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing", "scenario-revenue-operations"]
   customer: ["customer-enterprise"]
@@ -43,10 +43,10 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "finance_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "finance", "it_security"]
+  buyer_or_user: ["enterprise_ai_owner", "finance_team", "sales_team"]
+  team_or_function: ["finance", "it_security", "sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []

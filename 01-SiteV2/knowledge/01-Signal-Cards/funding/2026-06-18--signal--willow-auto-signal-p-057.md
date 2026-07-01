@@ -35,21 +35,21 @@ formal_tags:
   scenario: ["scenario-sales-briefing"]
   customer: []
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "finance_team"]
-  team_or_function: ["sales", "engineering", "finance"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "governance_requirement"]
+  buyer_or_user: ["engineering_team", "finance_team", "sales_team"]
+  team_or_function: ["engineering", "finance", "sales"]
+  specific_task: ["internal_tool_building", "sales_lead_research"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: []
   delivery_model: ["consulting_diagnostic"]
-  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  pain_or_constraint: ["evaluation_gap", "workflow_integration"]
   adoption_evidence: ["deployment_scale"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Willow 获得$7M 融资，押注销售线索和收入团队协作 Willow Launches with $7M to Build the Future of Enterprise AI Agent Governance | Willow After a year running quietly inside Wix at the scale of thousands of employees, Willow emerges from s..."
   missing_fields: ["product_form"]

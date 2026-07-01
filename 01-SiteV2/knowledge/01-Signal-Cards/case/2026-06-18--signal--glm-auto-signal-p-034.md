@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["customer_deployment", "product_launch", "open_source_release", "research_benchmark"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["data_silo", "latency_sensitive", "evaluation_gap"]
+  pain_or_constraint: ["data_silo", "evaluation_gap", "latency_sensitive"]
   adoption_evidence: ["customer_metric", "enterprise_plan"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"

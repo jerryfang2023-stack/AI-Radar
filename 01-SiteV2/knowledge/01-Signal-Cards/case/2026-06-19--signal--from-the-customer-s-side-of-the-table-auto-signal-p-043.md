@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-enterprise-workflow"]
   function: ["function-customer-service"]
   scenario: ["scenario-customer-ticket"]
   customer: ["customer-enterprise"]
@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team"]
-  team_or_function: ["sales", "engineering"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
+  buyer_or_user: ["engineering_team", "sales_team"]
+  team_or_function: ["engineering", "sales"]
+  specific_task: ["internal_tool_building", "sales_lead_research"]
   business_action: ["customer_deployment", "research_benchmark", "hiring_fde"]
   product_form: ["fde_service"]
   delivery_model: ["fde_delivery", "template_pack"]

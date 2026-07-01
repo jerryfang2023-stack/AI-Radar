@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -41,15 +41,15 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "healthcare_provider", "enterprise_ai_owner"]
-  team_or_function: ["sales", "healthcare_operations"]
-  specific_task: ["sales_lead_research", "medical_documentation"]
+  buyer_or_user: ["enterprise_ai_owner", "healthcare_provider", "sales_team"]
+  team_or_function: ["healthcare_operations", "sales"]
+  specific_task: ["medical_documentation", "sales_lead_research"]
   business_action: ["funding_round"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement"]
+  source_evidence_type: ["first_party_announcement", "funding_news"]
   evidence_basis: "raw_source_text"
   source_excerpt: "# Feedbacks upon feedbacks: Rock weathering and the climate ## 新闻事实 来源材料显示，Feedbacks upon feedbacks 的产品或平台动作涉及企业智能体协作流程。"
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]

@@ -46,7 +46,7 @@ opportunity_signals:
   buyer_or_user: ["operations_team"]
   team_or_function: ["operations"]
   specific_task: ["logistics_coordination"]
-  business_action: ["customer_deployment", "partnership_integration", "procurement_signal", "pricing_change"]
+  business_action: ["customer_deployment", "partnership_integration", "procurement_signal"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["api_cost_spike"]

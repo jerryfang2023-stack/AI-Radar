@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-coding", "track-ai-infra", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: ["scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -43,13 +43,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["customer_support_team", "finance_team", "enterprise_ai_owner"]
+  buyer_or_user: ["customer_support_team", "enterprise_ai_owner", "finance_team"]
   team_or_function: ["customer_support", "finance"]
   specific_task: ["customer_ticket_triage"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  pain_or_constraint: ["security_compliance", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"

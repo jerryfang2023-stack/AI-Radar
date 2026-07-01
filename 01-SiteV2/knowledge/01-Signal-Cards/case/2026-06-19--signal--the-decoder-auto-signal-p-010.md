@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding"]
+  track: ["track-ai-coding"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team"]
@@ -41,10 +41,10 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["healthcare_provider", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "healthcare_provider"]
   team_or_function: ["healthcare_operations"]
   specific_task: ["medical_documentation"]
-  business_action: ["customer_deployment", "product_launch", "partnership_integration", "pricing_change"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["api_cost_spike", "human_review_required"]

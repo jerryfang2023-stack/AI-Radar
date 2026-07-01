@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -46,10 +46,10 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: ["api", "model_gateway"]
-  delivery_model: ["project_based_service", "api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "data_silo", "security_compliance", "context_management"]
+  delivery_model: ["api_usage_based", "project_based_service"]
+  pain_or_constraint: ["context_management", "data_silo", "security_compliance"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"

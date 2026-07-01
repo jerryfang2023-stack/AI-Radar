@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-governance"]
+  track: ["track-ai-coding", "track-ai-governance", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: ["scenario-construction-real-estate", "scenario-agent-governance"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["product_launch", "governance_requirement", "failure_postmortem"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "permission_boundary", "data_silo", "latency_sensitive"]
+  pain_or_constraint: ["data_silo", "latency_sensitive", "permission_boundary"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"

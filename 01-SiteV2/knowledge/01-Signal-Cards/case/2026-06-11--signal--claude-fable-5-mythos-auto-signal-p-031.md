@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-data", "track-ai-infra", "track-ai-governance"]
+  track: ["track-enterprise-data", "track-ai-governance", "track-ai-infra"]
   function: []
   scenario: ["scenario-knowledge-base", "scenario-agent-governance"]
   customer: []
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["customer_deployment", "product_launch", "pricing_change", "research_benchmark"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["api_cost_spike", "security_compliance", "evaluation_gap"]
+  pain_or_constraint: ["api_cost_spike", "evaluation_gap", "security_compliance"]
   adoption_evidence: ["customer_metric", "procurement_contract"]
-  source_evidence_type: ["research_paper", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "business_media", "research_paper"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Claude Fable 5：首个 Mythos 模型 案例：AI 进入模型部署和算力调用 Claude Fable 5：首个 Mythos 模型--强大、昂贵且经过严格过滤 Anthropic 发布 Claude Fable 5，这是新 Mythos 类别的首个模型。该模型在 SWE-bench Verified 上达到 95%，几乎在所有基准测试中领先，但成本是 Opus 4.8 的两倍，每百万 token 价格为 10 美元或 ..."
   missing_fields: ["specific_task", "product_form", "delivery_model"]

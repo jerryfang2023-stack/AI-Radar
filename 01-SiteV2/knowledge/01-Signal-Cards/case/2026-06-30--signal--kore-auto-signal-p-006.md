@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "customer_support_team", "engineering_team"]
-  team_or_function: ["sales", "customer_support", "engineering"]
-  specific_task: ["sales_lead_research", "customer_ticket_triage", "internal_tool_building"]
+  buyer_or_user: ["customer_support_team", "engineering_team", "sales_team"]
+  team_or_function: ["customer_support", "engineering", "sales"]
+  specific_task: ["customer_ticket_triage", "internal_tool_building", "sales_lead_research"]
   business_action: ["customer_deployment"]
   product_form: ["agent_workbench", "rag_knowledge_base", "vertical_saas"]
   delivery_model: ["project_based_service"]
-  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  pain_or_constraint: ["evaluation_gap", "workflow_integration"]
   adoption_evidence: ["case_study", "deployment_scale", "partnership_announcement"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"

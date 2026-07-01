@@ -49,7 +49,7 @@ frontend:
     - "https://www.salesforce.com/uk/news/press-releases/2026/05/20/nhs-shared-business-ai/"
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-procurement-bidding", "function-finance", "function-operations"]
   scenario: ["scenario-bidding-response", "scenario-logistics-supply-chain", "scenario-revenue-operations", "scenario-healthcare-operations"]
   customer: ["customer-enterprise"]
@@ -61,15 +61,15 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "finance_team", "procurement_team"]
-  team_or_function: ["sales", "finance", "procurement"]
-  specific_task: ["sales_lead_research", "procurement_supplier_screening"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  buyer_or_user: ["finance_team", "procurement_team", "sales_team"]
+  team_or_function: ["finance", "procurement", "sales"]
+  specific_task: ["procurement_supplier_screening", "sales_lead_research"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["customer_metric", "deployment_scale", "partnership_announcement"]
-  source_evidence_type: ["funding_news", "regulatory_or_procurement", "business_media"]
+  source_evidence_type: ["funding_news", "business_media", "regulatory_or_procurement"]
   evidence_basis: "raw_source_text"
   source_excerpt: "NHS SBS 与 Salesforce 部署 AI 平台，处理财务和采购服务 NHS Shared Business Services and Salesforce Deploy AI-powered Platform to Transform Corporate Services across the NHS - Salesforce is at the forefront of integrated AI for [...] L..."
   missing_fields: ["product_form", "delivery_model"]

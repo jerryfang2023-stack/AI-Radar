@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing", "scenario-revenue-operations"]
   customer: ["customer-enterprise"]
@@ -43,15 +43,15 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "customer_support_team", "engineering_team"]
-  team_or_function: ["sales", "customer_support", "engineering"]
-  specific_task: ["sales_lead_research", "customer_ticket_triage", "internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  buyer_or_user: ["customer_support_team", "engineering_team", "sales_team"]
+  team_or_function: ["customer_support", "engineering", "sales"]
+  specific_task: ["customer_ticket_triage", "internal_tool_building", "sales_lead_research"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: ["customer_metric"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Lace AI 获 1400 万美元融资，用 AI 提升家装服务呼叫转化 Ex-Meta engineer raises $14M for Lace AI, a revenue ..."
   missing_fields: ["product_form", "delivery_model"]

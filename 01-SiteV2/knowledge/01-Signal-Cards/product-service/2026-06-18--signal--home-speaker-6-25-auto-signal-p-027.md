@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-ai-infra", "track-enterprise-workflow"]
   function: ["function-procurement-bidding", "function-customer-service"]
   scenario: ["scenario-bidding-response", "scenario-customer-ticket"]
   customer: ["customer-enterprise"]

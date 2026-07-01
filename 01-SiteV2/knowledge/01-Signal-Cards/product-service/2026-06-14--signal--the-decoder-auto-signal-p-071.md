@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-coding", "track-ai-infra", "track-enterprise-workflow"]
   function: ["function-engineering", "function-procurement-bidding"]
   scenario: ["scenario-bidding-response"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -44,7 +44,7 @@ opportunity_signals:
   buyer_or_user: []
   team_or_function: []
   specific_task: []
-  business_action: ["customer_deployment", "product_launch", "procurement_signal", "failure_postmortem"]
+  business_action: ["customer_deployment", "product_launch", "procurement_signal"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]

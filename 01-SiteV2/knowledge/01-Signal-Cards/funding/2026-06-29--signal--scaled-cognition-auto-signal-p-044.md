@@ -35,16 +35,16 @@ formal_tags:
   scenario: []
   customer: []
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "insurance_team"]
-  team_or_function: ["sales", "insurance_operations"]
-  specific_task: ["sales_lead_research", "insurance_claim_review"]
-  business_action: ["funding_round", "customer_deployment"]
+  buyer_or_user: ["insurance_team", "sales_team"]
+  team_or_function: ["insurance_operations", "sales"]
+  specific_task: ["insurance_claim_review", "sales_lead_research"]
+  business_action: ["customer_deployment", "funding_round"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["hallucination_risk", "latency_sensitive"]

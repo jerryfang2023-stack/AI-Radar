@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-procurement-bidding"]
   scenario: ["scenario-bidding-response"]
   customer: ["customer-enterprise"]
@@ -41,15 +41,15 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "procurement_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "procurement", "it_security"]
-  specific_task: ["sales_lead_research", "rfp_response"]
+  buyer_or_user: ["enterprise_ai_owner", "procurement_team", "sales_team"]
+  team_or_function: ["it_security", "procurement", "sales"]
+  specific_task: ["rfp_response", "sales_lead_research"]
   business_action: ["procurement_signal", "governance_requirement"]
   product_form: ["workflow_automation"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "permission_boundary"]
+  pain_or_constraint: ["permission_boundary", "workflow_integration"]
   adoption_evidence: ["customer_metric", "procurement_contract"]
-  source_evidence_type: ["regulatory_or_procurement", "business_media"]
+  source_evidence_type: ["business_media", "regulatory_or_procurement"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Inside Bristol Myers’ AI-powered procurement overhaul | CFO Dive Inside Bristol Myers’ AI-powered procurement overhaul | CFO Dive # Inside Bristol Myers’ AI-powered procurement overhaul The pharmaceutical giant cut proc..."
   missing_fields: ["delivery_model"]

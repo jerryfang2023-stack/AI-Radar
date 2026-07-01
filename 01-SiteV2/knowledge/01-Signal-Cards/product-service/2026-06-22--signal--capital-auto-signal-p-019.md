@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -44,7 +44,7 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["customer_deployment", "product_launch", "partnership_integration", "acquisition"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: []
   delivery_model: ["project_based_service"]
   pain_or_constraint: ["workflow_integration"]

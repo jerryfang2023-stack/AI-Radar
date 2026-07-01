@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["customer_deployment"]
   product_form: []
   delivery_model: ["project_based_service"]
-  pain_or_constraint: ["workflow_integration", "context_management"]
+  pain_or_constraint: ["context_management", "workflow_integration"]
   adoption_evidence: ["case_study", "third_party_report"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: []
   scenario: []
   customer: []
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["customer_deployment", "research_benchmark"]
   product_form: ["evaluation_platform"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  pain_or_constraint: ["evaluation_gap", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"

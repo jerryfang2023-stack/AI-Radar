@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-data", "track-ai-infra", "track-ai-governance"]
+  track: ["track-enterprise-data", "track-ai-governance", "track-ai-infra"]
   function: []
   scenario: ["scenario-knowledge-base", "scenario-agent-governance"]
   customer: []
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "engineering", "it_security"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "research_benchmark", "governance_requirement"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "sales_team"]
+  team_or_function: ["engineering", "it_security", "sales"]
+  specific_task: ["internal_tool_building", "sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "governance_requirement"]
   product_form: ["agent_workbench", "copilot"]
   delivery_model: ["enterprise_subscription"]
-  pain_or_constraint: ["workflow_integration", "permission_boundary"]
+  pain_or_constraint: ["permission_boundary", "workflow_integration"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"

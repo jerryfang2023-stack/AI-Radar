@@ -30,12 +30,12 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: []
   scenario: []
   customer: []
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
@@ -44,7 +44,7 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["funding_round", "customer_deployment"]
+  business_action: ["customer_deployment", "funding_round"]
   product_form: ["vertical_saas"]
   delivery_model: []
   pain_or_constraint: []

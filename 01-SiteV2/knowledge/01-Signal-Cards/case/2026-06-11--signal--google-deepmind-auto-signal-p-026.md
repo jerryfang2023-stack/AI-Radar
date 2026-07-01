@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-ai-infra"]
+  track: ["track-ai-coding", "track-ai-infra"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team"]
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "data_silo", "latency_sensitive", "context_management"]
+  pain_or_constraint: ["context_management", "data_silo", "latency_sensitive"]
   adoption_evidence: ["customer_metric", "partnership_announcement"]
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"

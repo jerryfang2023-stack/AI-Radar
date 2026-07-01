@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -49,7 +49,7 @@ opportunity_signals:
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["procurement_contract"]
-  source_evidence_type: ["regulatory_or_procurement", "business_media"]
+  source_evidence_type: ["business_media", "regulatory_or_procurement"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Lemvigh‑Müller: AI Automates Order Confirmations Lemvigh‑Müller: AI Automates Order Confirmations | SAP News The Danish wholesaler Lemvigh‑Müller has deployed [artificial intelligence](https://news.sap.com/topics/artifi..."
   missing_fields: ["specific_task", "delivery_model"]

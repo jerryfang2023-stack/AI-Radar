@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: ["scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -45,7 +45,7 @@ opportunity_signals:
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
   business_action: ["customer_deployment", "pricing_change"]
-  product_form: ["workflow_automation", "evaluation_platform"]
+  product_form: ["evaluation_platform", "workflow_automation"]
   delivery_model: []
   pain_or_constraint: ["api_cost_spike", "model_routing_complexity"]
   adoption_evidence: ["deployment_scale"]

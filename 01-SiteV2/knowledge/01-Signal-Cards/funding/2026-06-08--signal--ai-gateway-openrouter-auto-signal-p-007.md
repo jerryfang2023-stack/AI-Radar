@@ -35,7 +35,7 @@ formal_tags:
   scenario: []
   customer: []
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "pricing_change"]
+  business_action: ["customer_deployment", "funding_round", "pricing_change"]
   product_form: ["api"]
   delivery_model: ["api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  pain_or_constraint: ["api_cost_spike", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"

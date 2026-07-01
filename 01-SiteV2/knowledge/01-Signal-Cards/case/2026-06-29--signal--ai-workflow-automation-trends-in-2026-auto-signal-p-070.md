@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-enterprise-data", "track-enterprise-workflow"]
   function: ["function-customer-service"]
   scenario: ["scenario-knowledge-base", "scenario-logistics-supply-chain", "scenario-customer-ticket"]
   customer: ["customer-enterprise"]
@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "customer_support_team", "operations_team"]
-  team_or_function: ["sales", "customer_support", "operations"]
-  specific_task: ["sales_lead_research", "customer_ticket_triage", "logistics_coordination"]
+  buyer_or_user: ["customer_support_team", "operations_team", "sales_team"]
+  team_or_function: ["customer_support", "operations", "sales"]
+  specific_task: ["customer_ticket_triage", "logistics_coordination", "sales_lead_research"]
   business_action: []
   product_form: ["workflow_automation"]
   delivery_model: []

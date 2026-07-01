@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding"]
+  track: ["track-ai-coding"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team"]
@@ -45,8 +45,8 @@ opportunity_signals:
   team_or_function: ["engineering"]
   specific_task: ["code_review"]
   business_action: ["product_launch", "open_source_release"]
-  product_form: ["copilot", "api", "developer_tool"]
-  delivery_model: ["open_source_commercial", "api_usage_based"]
+  product_form: ["api", "copilot", "developer_tool"]
+  delivery_model: ["api_usage_based", "open_source_commercial"]
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
   source_evidence_type: []

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-finance"]
   scenario: ["scenario-insurance-claims"]
   customer: ["customer-enterprise"]
@@ -41,10 +41,10 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["finance_team", "insurance_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "finance_team", "insurance_team"]
   team_or_function: ["finance", "insurance_operations", "it_security"]
   specific_task: ["insurance_claim_review"]
-  business_action: ["customer_deployment", "research_benchmark", "governance_requirement"]
+  business_action: ["customer_deployment", "governance_requirement", "research_benchmark"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]

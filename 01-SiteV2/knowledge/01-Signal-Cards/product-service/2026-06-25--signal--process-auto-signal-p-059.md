@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing"]
   customer: ["customer-enterprise"]
@@ -41,15 +41,15 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "engineering"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "sales_team"]
+  team_or_function: ["engineering", "sales"]
+  specific_task: ["internal_tool_building", "sales_lead_research"]
   business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: ["workflow_automation"]
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["deployment_scale", "partnership_announcement", "third_party_report"]
-  source_evidence_type: ["industry_report", "first_party_announcement"]
+  source_evidence_type: ["first_party_announcement", "industry_report"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Kore.ai launches AI platform for enterprise workflow automation Kore.ai launches AI platform for enterprise workflow automation Title: Kore.ai launches AI platform for enterprise workflow automation # Kore.ai launches A..."
   missing_fields: ["delivery_model"]

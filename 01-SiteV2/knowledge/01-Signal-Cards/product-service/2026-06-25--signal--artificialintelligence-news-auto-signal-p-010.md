@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing"]
   customer: ["customer-enterprise"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner", "it_security_team"]
-  team_or_function: ["sales", "it_security"]
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team", "sales_team"]
+  team_or_function: ["it_security", "sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["funding_round", "product_launch", "partnership_integration", "governance_requirement"]
+  business_action: ["funding_round", "product_launch", "partnership_integration"]
   product_form: ["workflow_automation"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  pain_or_constraint: ["latency_sensitive", "workflow_integration"]
   adoption_evidence: ["deployment_scale", "partnership_announcement"]
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"

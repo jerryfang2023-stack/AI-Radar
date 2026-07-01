@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-enterprise-data", "track-ai-infra"]
   function: []
   scenario: ["scenario-knowledge-base"]
   customer: []
@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
   team_or_function: ["it_security"]
   specific_task: []
-  business_action: ["customer_deployment", "pricing_change", "open_source_release", "governance_requirement"]
+  business_action: ["customer_deployment", "pricing_change", "open_source_release"]
   product_form: ["api", "model_gateway"]
   delivery_model: ["api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "latency_sensitive", "security_compliance"]
+  pain_or_constraint: ["api_cost_spike", "latency_sensitive", "security_compliance"]
   adoption_evidence: ["enterprise_plan"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

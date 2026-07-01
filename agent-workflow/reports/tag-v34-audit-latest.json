@@ -1,0 +1,1041 @@
+{
+  "generatedAt": "2026-07-01T09:26:17.843Z",
+  "taxonomy": {
+    "total": 74,
+    "groups": {
+      "customer": 6,
+      "evidence": 10,
+      "function": 8,
+      "opinion": 5,
+      "region": 5,
+      "scenario": 17,
+      "source": 6,
+      "stage": 6,
+      "track": 11
+    }
+  },
+  "signalCards": {
+    "total": 669,
+    "missing": {
+      "track": 0,
+      "evidence": 0,
+      "source": 0
+    },
+    "groupTotals": {
+      "track": 1240,
+      "function": 455,
+      "scenario": 579,
+      "customer": 743,
+      "evidence": 1043,
+      "stage": 0,
+      "region": 3,
+      "source": 669
+    },
+    "topTags": [
+      {
+        "key": "customer-enterprise",
+        "count": 513
+      },
+      {
+        "key": "track-enterprise-workflow",
+        "count": 480
+      },
+      {
+        "key": "source-industry-data",
+        "count": 440
+      },
+      {
+        "key": "evidence-customer-adoption",
+        "count": 324
+      },
+      {
+        "key": "track-ai-infra",
+        "count": 301
+      },
+      {
+        "key": "evidence-product-launch",
+        "count": 266
+      },
+      {
+        "key": "function-engineering",
+        "count": 219
+      },
+      {
+        "key": "customer-developer-team",
+        "count": 218
+      },
+      {
+        "key": "track-ai-coding",
+        "count": 217
+      },
+      {
+        "key": "evidence-partnership-integration",
+        "count": 156
+      },
+      {
+        "key": "source-business-media",
+        "count": 151
+      },
+      {
+        "key": "evidence-pricing-cost",
+        "count": 143
+      },
+      {
+        "key": "function-sales",
+        "count": 126
+      },
+      {
+        "key": "scenario-sales-briefing",
+        "count": 126
+      },
+      {
+        "key": "scenario-construction-real-estate",
+        "count": 111
+      },
+      {
+        "key": "scenario-knowledge-base",
+        "count": 87
+      },
+      {
+        "key": "track-enterprise-data",
+        "count": 87
+      },
+      {
+        "key": "evidence-funding",
+        "count": 79
+      },
+      {
+        "key": "source-first-party",
+        "count": 78
+      },
+      {
+        "key": "evidence-customer-metric",
+        "count": 63
+      },
+      {
+        "key": "scenario-agent-governance",
+        "count": 62
+      },
+      {
+        "key": "track-ai-governance",
+        "count": 61
+      },
+      {
+        "key": "scenario-revenue-operations",
+        "count": 51
+      },
+      {
+        "key": "function-customer-service",
+        "count": 45
+      },
+      {
+        "key": "scenario-customer-ticket",
+        "count": 45
+      },
+      {
+        "key": "track-ai-customer-service",
+        "count": 45
+      },
+      {
+        "key": "function-procurement-bidding",
+        "count": 36
+      },
+      {
+        "key": "scenario-bidding-response",
+        "count": 36
+      },
+      {
+        "key": "track-ai-agent",
+        "count": 36
+      },
+      {
+        "key": "scenario-logistics-supply-chain",
+        "count": 26
+      },
+      {
+        "key": "scenario-healthcare-operations",
+        "count": 14
+      },
+      {
+        "key": "evidence-acquisition",
+        "count": 12
+      },
+      {
+        "key": "customer-healthcare-provider",
+        "count": 11
+      },
+      {
+        "key": "track-medical-ai",
+        "count": 11
+      },
+      {
+        "key": "function-finance",
+        "count": 10
+      },
+      {
+        "key": "function-operations",
+        "count": 9
+      },
+      {
+        "key": "scenario-insurance-claims",
+        "count": 9
+      },
+      {
+        "key": "function-legal-compliance",
+        "count": 8
+      },
+      {
+        "key": "scenario-clinical-imaging",
+        "count": 6
+      },
+      {
+        "key": "function-marketing",
+        "count": 2
+      }
+    ],
+    "highCoverageTags": [
+      {
+        "key": "customer-enterprise",
+        "count": 513,
+        "coverage": 0.767
+      },
+      {
+        "key": "track-enterprise-workflow",
+        "count": 480,
+        "coverage": 0.717
+      },
+      {
+        "key": "source-industry-data",
+        "count": 440,
+        "coverage": 0.658
+      },
+      {
+        "key": "evidence-customer-adoption",
+        "count": 324,
+        "coverage": 0.484
+      },
+      {
+        "key": "track-ai-infra",
+        "count": 301,
+        "coverage": 0.45
+      },
+      {
+        "key": "evidence-product-launch",
+        "count": 266,
+        "coverage": 0.398
+      },
+      {
+        "key": "function-engineering",
+        "count": 219,
+        "coverage": 0.327
+      },
+      {
+        "key": "customer-developer-team",
+        "count": 218,
+        "coverage": 0.326
+      },
+      {
+        "key": "track-ai-coding",
+        "count": 217,
+        "coverage": 0.324
+      }
+    ],
+    "multiTrackCount": 0,
+    "multiTrackSamples": [],
+    "stageOnSignalCardsCount": 0,
+    "stageOnSignalCardsSamples": [],
+    "trackTrimDryRunCount": 0,
+    "trackTrimDryRun": []
+  },
+  "opportunitySignals": {
+    "fieldCounts": {
+      "buyer_or_user": [
+        {
+          "key": "enterprise_ai_owner",
+          "count": 562
+        },
+        {
+          "key": "sales_team",
+          "count": 235
+        },
+        {
+          "key": "engineering_team",
+          "count": 221
+        },
+        {
+          "key": "it_security_team",
+          "count": 89
+        },
+        {
+          "key": "customer_support_team",
+          "count": 51
+        },
+        {
+          "key": "healthcare_provider",
+          "count": 32
+        },
+        {
+          "key": "finance_team",
+          "count": 29
+        },
+        {
+          "key": "insurance_team",
+          "count": 22
+        },
+        {
+          "key": "operations_team",
+          "count": 20
+        },
+        {
+          "key": "procurement_team",
+          "count": 9
+        },
+        {
+          "key": "legal_team",
+          "count": 6
+        },
+        {
+          "key": "content_team",
+          "count": 1
+        },
+        {
+          "key": "smb_owner",
+          "count": 1
+        }
+      ],
+      "team_or_function": [
+        {
+          "key": "sales",
+          "count": 235
+        },
+        {
+          "key": "engineering",
+          "count": 221
+        },
+        {
+          "key": "it_security",
+          "count": 106
+        },
+        {
+          "key": "customer_support",
+          "count": 51
+        },
+        {
+          "key": "healthcare_operations",
+          "count": 32
+        },
+        {
+          "key": "finance",
+          "count": 29
+        },
+        {
+          "key": "insurance_operations",
+          "count": 22
+        },
+        {
+          "key": "operations",
+          "count": 20
+        },
+        {
+          "key": "procurement",
+          "count": 9
+        },
+        {
+          "key": "legal_compliance",
+          "count": 6
+        },
+        {
+          "key": "marketing_content",
+          "count": 1
+        }
+      ],
+      "specific_task": [
+        {
+          "key": "sales_lead_research",
+          "count": 230
+        },
+        {
+          "key": "internal_tool_building",
+          "count": 216
+        },
+        {
+          "key": "customer_ticket_triage",
+          "count": 51
+        },
+        {
+          "key": "medical_documentation",
+          "count": 33
+        },
+        {
+          "key": "insurance_claim_review",
+          "count": 23
+        },
+        {
+          "key": "logistics_coordination",
+          "count": 21
+        },
+        {
+          "key": "knowledge_base_qa",
+          "count": 19
+        },
+        {
+          "key": "rfp_response",
+          "count": 7
+        },
+        {
+          "key": "contract_review",
+          "count": 6
+        },
+        {
+          "key": "code_review",
+          "count": 5
+        },
+        {
+          "key": "sales_briefing",
+          "count": 5
+        },
+        {
+          "key": "procurement_supplier_screening",
+          "count": 2
+        },
+        {
+          "key": "content_workflow",
+          "count": 1
+        }
+      ],
+      "business_action": [
+        {
+          "key": "customer_deployment",
+          "count": 437
+        },
+        {
+          "key": "product_launch",
+          "count": 302
+        },
+        {
+          "key": "funding_round",
+          "count": 256
+        },
+        {
+          "key": "partnership_integration",
+          "count": 141
+        },
+        {
+          "key": "governance_requirement",
+          "count": 88
+        },
+        {
+          "key": "pricing_change",
+          "count": 81
+        },
+        {
+          "key": "open_source_release",
+          "count": 77
+        },
+        {
+          "key": "research_benchmark",
+          "count": 67
+        },
+        {
+          "key": "procurement_signal",
+          "count": 43
+        },
+        {
+          "key": "acquisition",
+          "count": 14
+        },
+        {
+          "key": "failure_postmortem",
+          "count": 9
+        },
+        {
+          "key": "hiring_fde",
+          "count": 9
+        }
+      ],
+      "product_form": [
+        {
+          "key": "developer_tool",
+          "count": 78
+        },
+        {
+          "key": "api",
+          "count": 53
+        },
+        {
+          "key": "copilot",
+          "count": 53
+        },
+        {
+          "key": "workflow_automation",
+          "count": 39
+        },
+        {
+          "key": "vertical_saas",
+          "count": 34
+        },
+        {
+          "key": "agent_workbench",
+          "count": 32
+        },
+        {
+          "key": "rag_knowledge_base",
+          "count": 21
+        },
+        {
+          "key": "model_gateway",
+          "count": 20
+        },
+        {
+          "key": "evaluation_platform",
+          "count": 19
+        },
+        {
+          "key": "fde_service",
+          "count": 9
+        },
+        {
+          "key": "browser_or_desktop_tool",
+          "count": 1
+        },
+        {
+          "key": "managed_service",
+          "count": 1
+        }
+      ],
+      "delivery_model": [
+        {
+          "key": "api_usage_based",
+          "count": 56
+        },
+        {
+          "key": "consulting_diagnostic",
+          "count": 34
+        },
+        {
+          "key": "project_based_service",
+          "count": 29
+        },
+        {
+          "key": "open_source_commercial",
+          "count": 22
+        },
+        {
+          "key": "template_pack",
+          "count": 14
+        },
+        {
+          "key": "enterprise_subscription",
+          "count": 12
+        },
+        {
+          "key": "fde_delivery",
+          "count": 9
+        },
+        {
+          "key": "self_serve_saas",
+          "count": 5
+        },
+        {
+          "key": "managed_service",
+          "count": 1
+        }
+      ],
+      "pain_or_constraint": [
+        {
+          "key": "workflow_integration",
+          "count": 398
+        },
+        {
+          "key": "api_cost_spike",
+          "count": 114
+        },
+        {
+          "key": "security_compliance",
+          "count": 82
+        },
+        {
+          "key": "evaluation_gap",
+          "count": 72
+        },
+        {
+          "key": "latency_sensitive",
+          "count": 61
+        },
+        {
+          "key": "context_management",
+          "count": 52
+        },
+        {
+          "key": "data_silo",
+          "count": 42
+        },
+        {
+          "key": "hallucination_risk",
+          "count": 40
+        },
+        {
+          "key": "permission_boundary",
+          "count": 28
+        },
+        {
+          "key": "model_routing_complexity",
+          "count": 24
+        },
+        {
+          "key": "audit_log_required",
+          "count": 2
+        },
+        {
+          "key": "human_review_required",
+          "count": 2
+        }
+      ],
+      "adoption_evidence": [
+        {
+          "key": "customer_metric",
+          "count": 108
+        },
+        {
+          "key": "deployment_scale",
+          "count": 96
+        },
+        {
+          "key": "partnership_announcement",
+          "count": 81
+        },
+        {
+          "key": "procurement_contract",
+          "count": 64
+        },
+        {
+          "key": "third_party_report",
+          "count": 58
+        },
+        {
+          "key": "pilot_or_poc",
+          "count": 28
+        },
+        {
+          "key": "enterprise_plan",
+          "count": 26
+        },
+        {
+          "key": "case_study",
+          "count": 19
+        },
+        {
+          "key": "pricing_page",
+          "count": 11
+        },
+        {
+          "key": "usage_growth",
+          "count": 5
+        },
+        {
+          "key": "named_customer",
+          "count": 3
+        }
+      ],
+      "source_evidence_type": [
+        {
+          "key": "funding_news",
+          "count": 256
+        },
+        {
+          "key": "business_media",
+          "count": 228
+        },
+        {
+          "key": "first_party_announcement",
+          "count": 179
+        },
+        {
+          "key": "technical_blog",
+          "count": 72
+        },
+        {
+          "key": "regulatory_or_procurement",
+          "count": 30
+        },
+        {
+          "key": "first_party_case",
+          "count": 19
+        },
+        {
+          "key": "research_paper",
+          "count": 19
+        },
+        {
+          "key": "industry_report",
+          "count": 12
+        },
+        {
+          "key": "community_post",
+          "count": 10
+        }
+      ]
+    },
+    "missingCounts": [
+      {
+        "key": "delivery_model",
+        "count": 513
+      },
+      {
+        "key": "product_form",
+        "count": 408
+      },
+      {
+        "key": "adoption_evidence",
+        "count": 322
+      },
+      {
+        "key": "specific_task",
+        "count": 215
+      },
+      {
+        "key": "buyer_or_user",
+        "count": 17
+      }
+    ],
+    "broadRowsCount": 0,
+    "broadRows": []
+  },
+  "currentSite": {
+    "file": "01-SiteV2/site/data/v3-data-observation-desk.json",
+    "activeDate": "2026-07-01",
+    "cards": 214,
+    "top10": 10,
+    "allowedTagCount": 69,
+    "topFlatTags": [
+      {
+        "key": "customer-enterprise",
+        "count": 128
+      },
+      {
+        "key": "evidence-product-launch",
+        "count": 121
+      },
+      {
+        "key": "track-ai-infra",
+        "count": 116
+      },
+      {
+        "key": "track-enterprise-workflow",
+        "count": 106
+      },
+      {
+        "key": "source-business-media",
+        "count": 96
+      },
+      {
+        "key": "source-industry-data",
+        "count": 94
+      },
+      {
+        "key": "customer-developer-team",
+        "count": 92
+      },
+      {
+        "key": "function-engineering",
+        "count": 92
+      },
+      {
+        "key": "track-ai-coding",
+        "count": 92
+      },
+      {
+        "key": "evidence-customer-adoption",
+        "count": 75
+      },
+      {
+        "key": "scenario-knowledge-base",
+        "count": 49
+      },
+      {
+        "key": "track-enterprise-data",
+        "count": 49
+      },
+      {
+        "key": "scenario-agent-governance",
+        "count": 43
+      },
+      {
+        "key": "track-ai-governance",
+        "count": 42
+      },
+      {
+        "key": "evidence-customer-metric",
+        "count": 35
+      },
+      {
+        "key": "evidence-partnership-integration",
+        "count": 35
+      },
+      {
+        "key": "evidence-pricing-cost",
+        "count": 25
+      },
+      {
+        "key": "source-first-party",
+        "count": 24
+      },
+      {
+        "key": "function-sales",
+        "count": 22
+      },
+      {
+        "key": "scenario-construction-real-estate",
+        "count": 22
+      },
+      {
+        "key": "scenario-sales-briefing",
+        "count": 22
+      },
+      {
+        "key": "evidence-funding",
+        "count": 18
+      },
+      {
+        "key": "function-customer-service",
+        "count": 11
+      },
+      {
+        "key": "function-procurement-bidding",
+        "count": 11
+      },
+      {
+        "key": "scenario-bidding-response",
+        "count": 11
+      },
+      {
+        "key": "scenario-customer-ticket",
+        "count": 11
+      },
+      {
+        "key": "track-ai-agent",
+        "count": 11
+      },
+      {
+        "key": "track-ai-customer-service",
+        "count": 11
+      },
+      {
+        "key": "evidence-acquisition",
+        "count": 9
+      },
+      {
+        "key": "customer-healthcare-provider",
+        "count": 4
+      }
+    ],
+    "tagAssociations": [
+      {
+        "tag": "evidence-product-launch",
+        "label": "产品发布",
+        "todayCount": 3,
+        "last30Count": 121
+      },
+      {
+        "tag": "customer-developer-team",
+        "label": "开发团队",
+        "todayCount": 2,
+        "last30Count": 92
+      },
+      {
+        "tag": "evidence-customer-adoption",
+        "label": "客户采用",
+        "todayCount": 2,
+        "last30Count": 73
+      },
+      {
+        "tag": "function-engineering",
+        "label": "工程研发",
+        "todayCount": 2,
+        "last30Count": 92
+      },
+      {
+        "tag": "scenario-agent-governance",
+        "label": "Agent 权限治理",
+        "todayCount": 2,
+        "last30Count": 43
+      },
+      {
+        "tag": "scenario-knowledge-base",
+        "label": "知识库问答",
+        "todayCount": 2,
+        "last30Count": 49
+      },
+      {
+        "tag": "track-ai-coding",
+        "label": "AI Coding",
+        "todayCount": 2,
+        "last30Count": 92
+      },
+      {
+        "tag": "track-ai-governance",
+        "label": "AI 治理",
+        "todayCount": 2,
+        "last30Count": 42
+      }
+    ],
+    "trendLinks": [
+      {
+        "window": "7 天",
+        "tag": "evidence-product-launch",
+        "label": "产品发布",
+        "cardCount": 22
+      },
+      {
+        "window": "7 天",
+        "tag": "track-enterprise-workflow",
+        "label": "企业工作流",
+        "cardCount": 17
+      },
+      {
+        "window": "7 天",
+        "tag": "track-ai-infra",
+        "label": "AI 基础设施",
+        "cardCount": 15
+      },
+      {
+        "window": "7 天",
+        "tag": "customer-developer-team",
+        "label": "开发团队",
+        "cardCount": 13
+      },
+      {
+        "window": "7 天",
+        "tag": "function-engineering",
+        "label": "工程研发",
+        "cardCount": 13
+      },
+      {
+        "window": "7 天",
+        "tag": "track-ai-coding",
+        "label": "AI Coding",
+        "cardCount": 13
+      },
+      {
+        "window": "7 天",
+        "tag": "evidence-customer-adoption",
+        "label": "客户采用",
+        "cardCount": 10
+      },
+      {
+        "window": "7 天",
+        "tag": "scenario-knowledge-base",
+        "label": "知识库问答",
+        "cardCount": 7
+      },
+      {
+        "window": "30 天",
+        "tag": "evidence-product-launch",
+        "label": "产品发布",
+        "cardCount": 121
+      },
+      {
+        "window": "30 天",
+        "tag": "track-ai-infra",
+        "label": "AI 基础设施",
+        "cardCount": 114
+      },
+      {
+        "window": "30 天",
+        "tag": "track-enterprise-workflow",
+        "label": "企业工作流",
+        "cardCount": 104
+      },
+      {
+        "window": "30 天",
+        "tag": "customer-developer-team",
+        "label": "开发团队",
+        "cardCount": 92
+      },
+      {
+        "window": "30 天",
+        "tag": "function-engineering",
+        "label": "工程研发",
+        "cardCount": 92
+      },
+      {
+        "window": "30 天",
+        "tag": "track-ai-coding",
+        "label": "AI Coding",
+        "cardCount": 92
+      },
+      {
+        "window": "30 天",
+        "tag": "evidence-customer-adoption",
+        "label": "客户采用",
+        "cardCount": 73
+      },
+      {
+        "window": "30 天",
+        "tag": "scenario-knowledge-base",
+        "label": "知识库问答",
+        "cardCount": 49
+      }
+    ]
+  },
+  "followBuilders": {
+    "file": "01-SiteV2/site/data/follow-builders-daily.json",
+    "remarks": 43,
+    "topFormalTags": [
+      {
+        "key": "opinion-product-strategy",
+        "count": 35
+      },
+      {
+        "key": "track-enterprise-workflow",
+        "count": 35
+      },
+      {
+        "key": "source-social",
+        "count": 25
+      },
+      {
+        "key": "source-blog",
+        "count": 18
+      },
+      {
+        "key": "opinion-agent-workflow",
+        "count": 4
+      },
+      {
+        "key": "track-ai-agent",
+        "count": 4
+      },
+      {
+        "key": "opinion-ai-coding",
+        "count": 2
+      },
+      {
+        "key": "opinion-model-infra",
+        "count": 2
+      },
+      {
+        "key": "track-ai-coding",
+        "count": 2
+      },
+      {
+        "key": "track-ai-infra",
+        "count": 2
+      }
+    ]
+  },
+  "community": {
+    "file": "01-SiteV2/site/data/community-intelligence.json",
+    "items": 61,
+    "placeholderValues": [
+      {
+        "key": "monetization:待确认",
+        "count": 11
+      },
+      {
+        "key": "industry:未识别行业",
+        "count": 6
+      }
+    ]
+  }
+}

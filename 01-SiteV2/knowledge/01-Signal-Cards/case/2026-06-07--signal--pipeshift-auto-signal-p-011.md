@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["customer_deployment", "pricing_change", "open_source_release"]
   product_form: ["workflow_automation"]
   delivery_model: ["open_source_commercial"]
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "latency_sensitive", "model_routing_complexity"]
+  pain_or_constraint: ["api_cost_spike", "latency_sensitive", "model_routing_complexity"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"

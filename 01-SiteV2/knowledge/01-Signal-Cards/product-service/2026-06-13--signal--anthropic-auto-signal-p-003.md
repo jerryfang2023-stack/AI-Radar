@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-governance"]
+  track: ["track-ai-governance", "track-enterprise-workflow"]
   function: ["function-procurement-bidding"]
   scenario: ["scenario-bidding-response", "scenario-agent-governance"]
   customer: ["customer-enterprise"]
@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["product_launch", "procurement_signal", "research_benchmark", "governance_requirement"]
+  business_action: ["product_launch", "procurement_signal", "governance_requirement"]
   product_form: []
   delivery_model: ["consulting_diagnostic"]
-  pain_or_constraint: ["workflow_integration", "security_compliance", "context_management"]
+  pain_or_constraint: ["context_management", "security_compliance", "workflow_integration"]
   adoption_evidence: ["procurement_contract", "third_party_report"]
   source_evidence_type: ["industry_report"]
   evidence_basis: "raw_source_text"

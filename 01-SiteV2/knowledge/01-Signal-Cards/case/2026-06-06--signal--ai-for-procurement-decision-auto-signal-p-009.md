@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-procurement-bidding"]
   scenario: ["scenario-bidding-response"]
   customer: ["customer-enterprise"]
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["procurement_signal", "pricing_change", "governance_requirement"]
   product_form: ["workflow_automation"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "security_compliance"]
+  pain_or_constraint: ["api_cost_spike", "security_compliance", "workflow_integration"]
   adoption_evidence: ["procurement_contract"]
   source_evidence_type: ["regulatory_or_procurement"]
   evidence_basis: "raw_source_text"

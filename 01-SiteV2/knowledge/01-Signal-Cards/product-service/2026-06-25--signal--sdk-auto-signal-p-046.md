@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -47,9 +47,9 @@ opportunity_signals:
   business_action: ["customer_deployment", "open_source_release", "research_benchmark"]
   product_form: ["api"]
   delivery_model: ["api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "data_silo"]
+  pain_or_constraint: ["data_silo", "workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["technical_blog", "business_media"]
+  source_evidence_type: ["business_media", "technical_blog"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Nous Research为Hermes Agent技能系统新增/learn命令，无需手写SKILL.md即可将工作流捕获为斜杠命令 Nous Research为Hermes Agent技能系统新增/learn命令，无需手写SKILL.md即可将工作流捕获为斜杠命令 Nous Research为开源自改进智能体Hermes Agent的技能系统新增/learn命令。指向文档页面、本地SDK目录、历史对话或粘贴笔记后，Agent自动收集..."
   missing_fields: ["adoption_evidence"]

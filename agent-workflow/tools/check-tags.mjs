@@ -29,7 +29,14 @@ const scriptNonTagLiterals = new Set([
   "opinion-index",
   "opinion-intake",
   "opinion-translation",
+  "source-artifact-dir",
+  "source-artifacts",
+  "source-backed-fill",
+  "source-elastic-agrees-to-buy-crv-backed-deductiveai",
+  "source-only",
   "source-router",
+  "source-runs",
+  "source-title-translations-v1",
 ]);
 
 const rel = (file) => path.relative(root, file).replace(/\\/g, "/");

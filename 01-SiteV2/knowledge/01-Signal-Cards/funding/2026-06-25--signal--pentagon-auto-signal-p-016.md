@@ -30,26 +30,26 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["funding_round", "customer_deployment", "pricing_change"]
+  business_action: ["customer_deployment", "funding_round", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "latency_sensitive"]
+  pain_or_constraint: ["api_cost_spike", "latency_sensitive", "workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "It just raised $30 million Exclusive: Vinod Khosla wanted every dollar of Runlayer's round."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]

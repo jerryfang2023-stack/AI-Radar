@@ -30,26 +30,26 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-ai-coding", "track-enterprise-data", "track-ai-infra"]
   function: ["function-engineering"]
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-developer-team"]
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-business-media"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "engineering", "it_security"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "sales_team"]
+  team_or_function: ["engineering", "it_security", "sales"]
+  specific_task: ["internal_tool_building", "sales_lead_research"]
+  business_action: ["customer_deployment", "funding_round"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: ["deployment_scale"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管 AI 芯片公司 Groq 完成 6.5 亿美元融资，英伟达 200 亿美元\"挖角\"后重组高管 6 月 23 日，AI 芯片公司 Groq 宣布完成 6.5 亿美元新融资。此前约 6 个月，英伟达签署非独占性技术许可协议并挖走其创始人兼 CEO Jonathan Ross、总裁 Sunny Madra 等核心员工，交易金额为 200 亿美元。G..."
   missing_fields: ["product_form", "delivery_model"]

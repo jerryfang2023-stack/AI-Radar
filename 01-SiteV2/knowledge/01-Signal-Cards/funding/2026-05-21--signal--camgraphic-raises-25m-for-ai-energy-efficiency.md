@@ -49,12 +49,12 @@ frontend:
     - "https://www.cam.ac.uk/research/news/university-spin-out-secures-funding-to-improve-ai-energy-efficiency-and-bandwidth"
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-enterprise-data", "track-ai-infra"]
   function: ["function-procurement-bidding"]
   scenario: ["scenario-knowledge-base", "scenario-bidding-response", "scenario-logistics-supply-chain", "scenario-revenue-operations"]
   customer: ["customer-heavy-industry"]
   evidence: ["evidence-funding", "evidence-partnership-integration", "evidence-pricing-cost", "evidence-customer-metric"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
   opinion: []
@@ -64,11 +64,11 @@ opportunity_signals:
   buyer_or_user: ["finance_team"]
   team_or_function: ["finance"]
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "partnership_integration", "procurement_signal"]
+  business_action: ["customer_deployment", "funding_round", "partnership_integration"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["api_cost_spike", "latency_sensitive"]
-  adoption_evidence: ["partnership_announcement", "procurement_contract", "enterprise_plan"]
+  adoption_evidence: ["enterprise_plan", "partnership_announcement", "procurement_contract"]
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "CamGraPhIC 获得 2500 万欧元融资，推进 AI 光互连 University spin-out secures funding to improve AI energy efficiency ..."

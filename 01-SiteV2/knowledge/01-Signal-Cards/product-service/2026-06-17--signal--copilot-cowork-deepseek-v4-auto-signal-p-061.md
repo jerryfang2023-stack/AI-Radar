@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-ai-infra"]
+  track: ["track-ai-coding", "track-ai-infra"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "finance_team", "enterprise_ai_owner"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "finance_team"]
   team_or_function: ["engineering", "finance"]
   specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "partnership_integration", "pricing_change"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: ["copilot", "developer_tool"]
   delivery_model: ["api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "model_routing_complexity"]
+  pain_or_constraint: ["api_cost_spike", "model_routing_complexity", "workflow_integration"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"

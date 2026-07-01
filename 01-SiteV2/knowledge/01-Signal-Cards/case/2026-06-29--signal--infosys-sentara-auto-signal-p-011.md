@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data", "track-ai-infra", "track-medical-ai", "track-ai-customer-service", "track-ai-governance"]
+  track: ["track-medical-ai", "track-ai-customer-service", "track-enterprise-data"]
   function: ["function-customer-service"]
   scenario: ["scenario-knowledge-base", "scenario-healthcare-operations", "scenario-customer-ticket", "scenario-agent-governance"]
   customer: ["customer-enterprise", "customer-healthcare-provider"]
@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "healthcare_provider", "enterprise_ai_owner"]
-  team_or_function: ["sales", "healthcare_operations", "it_security"]
-  specific_task: ["sales_lead_research", "medical_documentation"]
+  buyer_or_user: ["enterprise_ai_owner", "healthcare_provider", "sales_team"]
+  team_or_function: ["healthcare_operations", "it_security", "sales"]
+  specific_task: ["medical_documentation", "sales_lead_research"]
   business_action: ["customer_deployment", "partnership_integration", "governance_requirement"]
   product_form: []
   delivery_model: ["consulting_diagnostic"]

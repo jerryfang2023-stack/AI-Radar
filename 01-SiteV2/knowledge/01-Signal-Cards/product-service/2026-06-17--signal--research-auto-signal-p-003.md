@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data"]
+  track: ["track-enterprise-data", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-knowledge-base", "scenario-clinical-imaging"]
   customer: ["customer-enterprise"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["healthcare_provider", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "healthcare_provider"]
   team_or_function: ["healthcare_operations"]
   specific_task: ["medical_documentation"]
-  business_action: ["customer_deployment", "product_launch", "partnership_integration", "research_benchmark"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  pain_or_constraint: ["security_compliance", "workflow_integration"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: ["research_paper"]
   evidence_basis: "raw_source_text"

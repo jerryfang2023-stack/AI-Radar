@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-governance"]
+  track: ["track-ai-governance", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-agent-governance"]
   customer: ["customer-enterprise"]
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["governance_requirement", "failure_postmortem"]
   product_form: ["copilot"]
   delivery_model: []
-  pain_or_constraint: ["hallucination_risk", "security_compliance", "evaluation_gap"]
+  pain_or_constraint: ["evaluation_gap", "hallucination_risk", "security_compliance"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

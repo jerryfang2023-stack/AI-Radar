@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-coding", "track-ai-infra", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["customer_deployment", "product_launch"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  pain_or_constraint: ["evaluation_gap", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["first_party_announcement"]
   evidence_basis: "raw_source_text"

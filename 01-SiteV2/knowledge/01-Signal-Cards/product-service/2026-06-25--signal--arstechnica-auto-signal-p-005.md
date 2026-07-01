@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-enterprise-data", "track-ai-infra"]
   function: []
   scenario: ["scenario-knowledge-base"]
   customer: []
@@ -43,7 +43,7 @@ opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["engineering_team", "insurance_team"]
   team_or_function: ["engineering", "insurance_operations"]
-  specific_task: ["internal_tool_building", "insurance_claim_review"]
+  specific_task: ["insurance_claim_review", "internal_tool_building"]
   business_action: ["customer_deployment", "product_launch", "research_benchmark"]
   product_form: ["vertical_saas"]
   delivery_model: []

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: ["rag_knowledge_base"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "data_silo"]
+  pain_or_constraint: ["data_silo", "workflow_integration"]
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

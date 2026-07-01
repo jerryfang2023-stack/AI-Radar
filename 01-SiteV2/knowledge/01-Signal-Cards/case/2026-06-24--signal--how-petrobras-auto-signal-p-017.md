@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-procurement-bidding"]
   scenario: ["scenario-bidding-response"]
   customer: ["customer-enterprise"]
@@ -45,7 +45,7 @@ opportunity_signals:
   team_or_function: []
   specific_task: []
   business_action: ["procurement_signal"]
-  product_form: ["workflow_automation", "managed_service"]
+  product_form: ["managed_service", "workflow_automation"]
   delivery_model: ["managed_service"]
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["customer_metric", "procurement_contract"]

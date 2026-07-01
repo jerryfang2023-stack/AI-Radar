@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data"]
+  track: ["track-enterprise-data", "track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-knowledge-base", "scenario-sales-briefing"]
   customer: ["customer-enterprise"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "healthcare_provider", "enterprise_ai_owner"]
-  team_or_function: ["sales", "healthcare_operations", "it_security"]
-  specific_task: ["sales_lead_research", "medical_documentation"]
-  business_action: ["customer_deployment", "partnership_integration", "pricing_change", "governance_requirement"]
+  buyer_or_user: ["enterprise_ai_owner", "healthcare_provider", "sales_team"]
+  team_or_function: ["healthcare_operations", "it_security", "sales"]
+  specific_task: ["medical_documentation", "sales_lead_research"]
+  business_action: ["customer_deployment", "partnership_integration", "pricing_change"]
   product_form: ["api"]
-  delivery_model: ["self_serve_saas", "api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "hallucination_risk", "security_compliance"]
+  delivery_model: ["api_usage_based", "self_serve_saas"]
+  pain_or_constraint: ["api_cost_spike", "hallucination_risk", "security_compliance"]
   adoption_evidence: ["partnership_announcement", "pilot_or_poc"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

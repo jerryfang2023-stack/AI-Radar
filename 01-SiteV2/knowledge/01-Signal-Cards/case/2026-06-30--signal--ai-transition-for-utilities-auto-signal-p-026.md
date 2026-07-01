@@ -41,7 +41,7 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["finance_team", "healthcare_provider", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "finance_team", "healthcare_provider"]
   team_or_function: ["finance", "healthcare_operations", "it_security"]
   specific_task: ["medical_documentation"]
   business_action: ["customer_deployment", "governance_requirement"]

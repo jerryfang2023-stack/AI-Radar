@@ -35,7 +35,7 @@ formal_tags:
   scenario: ["scenario-construction-real-estate"]
   customer: []
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 

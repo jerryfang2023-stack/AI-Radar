@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: ["function-procurement-bidding"]
   scenario: ["scenario-bidding-response"]
   customer: ["customer-enterprise"]
@@ -49,7 +49,7 @@ opportunity_signals:
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["procurement_contract", "third_party_report"]
-  source_evidence_type: ["industry_report", "business_media"]
+  source_evidence_type: ["business_media", "industry_report"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Bloomberg 推出 Agent 工作流能力，切入采购下单自动化 美国禁止外国访问Anthropic最佳AI模型，标志政策逆转与对硅谷警告 美国采取非常规措施，禁止外国访问Anthropic PBC的最强AI模型，凸显特朗普政府开始愿意对关键行业施加控制。此举也提醒硅谷，他们正在处理一项尚未完全理解且影响不确定的技术。"
   missing_fields: ["specific_task", "product_form", "delivery_model"]

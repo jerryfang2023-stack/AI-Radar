@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-governance"]
+  track: ["track-ai-coding", "track-ai-governance", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: ["scenario-construction-real-estate", "scenario-agent-governance"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["engineering_team"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "research_benchmark", "governance_requirement"]
+  business_action: ["customer_deployment", "product_launch", "governance_requirement"]
   product_form: ["api", "evaluation_platform"]
   delivery_model: ["api_usage_based"]
-  pain_or_constraint: ["security_compliance", "context_management"]
+  pain_or_constraint: ["context_management", "security_compliance"]
   adoption_evidence: []
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"

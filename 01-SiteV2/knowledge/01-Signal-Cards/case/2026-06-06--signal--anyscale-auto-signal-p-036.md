@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-data", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-enterprise-data"]
   function: ["function-customer-service"]
   scenario: ["scenario-knowledge-base", "scenario-construction-real-estate", "scenario-customer-ticket"]
   customer: []
@@ -41,15 +41,15 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "customer_support_team", "engineering_team"]
-  team_or_function: ["sales", "customer_support", "engineering"]
-  specific_task: ["sales_lead_research", "customer_ticket_triage", "internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment", "pricing_change"]
+  buyer_or_user: ["customer_support_team", "engineering_team", "sales_team"]
+  team_or_function: ["customer_support", "engineering", "sales"]
+  specific_task: ["customer_ticket_triage", "internal_tool_building", "sales_lead_research"]
+  business_action: ["customer_deployment", "funding_round", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  pain_or_constraint: ["api_cost_spike", "workflow_integration"]
   adoption_evidence: ["case_study", "customer_metric"]
-  source_evidence_type: ["funding_news", "first_party_case"]
+  source_evidence_type: ["first_party_case", "funding_news"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Bedrock Robotics Builds Autonomous Construction Systems on Anyscale Bedrock Robotics Builds Autonomous Construction Systems on Anyscale Bedrock Robotics Builds Autonomous Construction Systems on Anyscale # Bedrock Robot..."
   missing_fields: ["product_form", "delivery_model"]

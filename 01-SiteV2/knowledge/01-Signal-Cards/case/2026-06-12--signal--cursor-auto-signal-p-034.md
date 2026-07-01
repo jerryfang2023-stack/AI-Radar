@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-ai-coding", "track-enterprise-data", "track-ai-infra"]
   function: ["function-engineering"]
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
   team_or_function: ["engineering", "it_security"]
   specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "research_benchmark", "governance_requirement"]
+  business_action: ["customer_deployment", "product_launch", "governance_requirement"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["permission_boundary", "data_silo", "latency_sensitive", "security_compliance"]
+  pain_or_constraint: ["data_silo", "latency_sensitive", "permission_boundary"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

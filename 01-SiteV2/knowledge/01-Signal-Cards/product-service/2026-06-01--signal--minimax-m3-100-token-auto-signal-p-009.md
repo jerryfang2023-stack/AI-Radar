@@ -49,7 +49,7 @@ opportunity_signals:
   business_action: ["customer_deployment", "product_launch", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "data_silo"]
+  pain_or_constraint: ["api_cost_spike", "data_silo", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: []
   evidence_basis: "raw_source_text"

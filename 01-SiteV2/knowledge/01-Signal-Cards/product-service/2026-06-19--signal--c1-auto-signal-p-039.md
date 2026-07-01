@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing"]
   customer: []
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "engineering"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "sales_team"]
+  team_or_function: ["engineering", "sales"]
+  specific_task: ["internal_tool_building", "sales_lead_research"]
   business_action: ["funding_round", "product_launch", "governance_requirement"]
   product_form: ["api"]
-  delivery_model: ["project_based_service", "api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "security_compliance", "context_management"]
+  delivery_model: ["api_usage_based", "project_based_service"]
+  pain_or_constraint: ["context_management", "security_compliance", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"
