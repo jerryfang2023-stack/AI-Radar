@@ -30,19 +30,19 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team", "customer-enterprise"]
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner", "it_security_team"]
-  team_or_function: ["sales", "it_security"]
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team", "sales_team"]
+  team_or_function: ["it_security", "sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["funding_round"]
   product_form: []

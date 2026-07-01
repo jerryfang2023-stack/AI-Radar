@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-coding", "track-ai-infra", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "open_source_release", "failure_postmortem"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release"]
   product_form: ["developer_tool"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "latency_sensitive", "model_routing_complexity"]
+  pain_or_constraint: ["latency_sensitive", "model_routing_complexity", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"

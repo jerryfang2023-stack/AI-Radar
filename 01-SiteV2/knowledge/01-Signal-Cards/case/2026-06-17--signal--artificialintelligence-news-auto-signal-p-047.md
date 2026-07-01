@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-customer-service"]
+  track: ["track-ai-customer-service"]
   function: ["function-customer-service"]
   scenario: ["scenario-customer-ticket"]
   customer: []
@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "customer_support_team", "engineering_team"]
-  team_or_function: ["sales", "customer_support", "engineering"]
-  specific_task: ["sales_lead_research", "customer_ticket_triage", "internal_tool_building"]
+  buyer_or_user: ["customer_support_team", "engineering_team", "sales_team"]
+  team_or_function: ["customer_support", "engineering", "sales"]
+  specific_task: ["customer_ticket_triage", "internal_tool_building", "sales_lead_research"]
   business_action: ["customer_deployment", "product_launch", "governance_requirement"]
   product_form: []
   delivery_model: ["template_pack"]

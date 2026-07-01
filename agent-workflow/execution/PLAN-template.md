@@ -1,4 +1,4 @@
-﻿# PLAN-<ID>｜<计划名称>
+# PLAN-<ID>｜<计划名称>
 
 状态：draft / pending_approval / approved / in_progress / passed / blocked
 牵头 Agent：

@@ -30,12 +30,12 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-data", "track-ai-infra", "track-ai-governance"]
+  track: ["track-enterprise-data", "track-ai-governance", "track-ai-infra"]
   function: []
   scenario: ["scenario-knowledge-base", "scenario-agent-governance"]
   customer: []
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-business-media"]
 
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
   team_or_function: ["it_security"]
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "pricing_change", "research_benchmark"]
+  business_action: ["customer_deployment", "funding_round", "pricing_change"]
   product_form: []
   delivery_model: ["consulting_diagnostic"]
   pain_or_constraint: ["api_cost_spike", "hallucination_risk"]
   adoption_evidence: ["customer_metric"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Techcrunch 获得$9M 融资，押注模型部署和算力服务 Probably 获 900 万美元种子轮，构建更可靠的 AI 错误检测系统 Probably 获得 Andreessen Horowitz 的 900 万美元种子轮融资，旨在构建严格错误检测系统，防止模型幻觉和事实错误，目标达到 99.99% 准确率。其首款产品是数据科学工具，能从复杂数据集快速生成答案，每个结果附带引用和审计追踪。工具通过确定性验证器系统（\"数据科学机..."
   missing_fields: ["specific_task", "product_form"]

@@ -30,18 +30,18 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-enterprise-workflow"]
   function: ["function-customer-service"]
   scenario: ["scenario-customer-ticket"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["finance_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "finance_team"]
   team_or_function: ["finance"]
   specific_task: []
   business_action: ["funding_round"]

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-infra", "track-ai-governance"]
+  track: ["track-ai-coding", "track-ai-governance", "track-ai-infra"]
   function: ["function-engineering"]
   scenario: ["scenario-agent-governance"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -44,11 +44,11 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "partnership_integration", "governance_requirement"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: ["api"]
   delivery_model: ["api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "security_compliance"]
-  adoption_evidence: ["customer_metric", "partnership_announcement", "enterprise_plan"]
+  pain_or_constraint: ["security_compliance", "workflow_integration"]
+  adoption_evidence: ["customer_metric", "enterprise_plan", "partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
   source_excerpt: "Ithome 推出 Agent 工作流能力，切入模型部署和算力服务 华为发布HarmonyOS开发套件26.0.0 Beta1 IT之家 6 月 12 日消息， HarmonyOS 开发套件 26.0.0 Beta1 版本在 HDC2026 正式面向开发者发布。"

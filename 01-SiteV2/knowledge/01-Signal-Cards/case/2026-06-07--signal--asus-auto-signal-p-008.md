@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["healthcare_provider", "operations_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "healthcare_provider", "operations_team"]
   team_or_function: ["healthcare_operations", "operations"]
-  specific_task: ["medical_documentation", "logistics_coordination"]
+  specific_task: ["logistics_coordination", "medical_documentation"]
   business_action: ["customer_deployment", "partnership_integration", "pricing_change"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  pain_or_constraint: ["api_cost_spike", "workflow_integration"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"

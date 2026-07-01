@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: ["scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -41,15 +41,15 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "procurement_team", "enterprise_ai_owner"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "procurement_team"]
   team_or_function: ["engineering", "procurement"]
   specific_task: ["internal_tool_building", "rfp_response"]
-  business_action: ["funding_round", "procurement_signal", "pricing_change", "acquisition"]
+  business_action: ["funding_round", "procurement_signal", "pricing_change"]
   product_form: []
   delivery_model: ["consulting_diagnostic"]
   pain_or_constraint: ["api_cost_spike"]
   adoption_evidence: ["procurement_contract"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Ad Skip to content Vibecoding is becoming a deal-breaker test for software acquisitions Maximilian Schreiner View the LinkedIn Profile of Maximilian Schreiner Jun 22, 2026 Nano Banana Pro prompted by THE DECODER Key Poi..."
   missing_fields: ["product_form"]

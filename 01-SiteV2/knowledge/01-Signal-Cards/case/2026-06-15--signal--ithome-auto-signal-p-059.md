@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "legal_team"]
-  team_or_function: ["sales", "legal_compliance"]
-  specific_task: ["sales_lead_research", "contract_review"]
+  buyer_or_user: ["legal_team", "sales_team"]
+  team_or_function: ["legal_compliance", "sales"]
+  specific_task: ["contract_review", "sales_lead_research"]
   business_action: ["customer_deployment", "partnership_integration", "research_benchmark"]
   product_form: []
   delivery_model: []

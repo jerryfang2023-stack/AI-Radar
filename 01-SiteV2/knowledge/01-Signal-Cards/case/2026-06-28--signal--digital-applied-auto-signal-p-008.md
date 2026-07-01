@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-procurement-bidding"]
   scenario: ["scenario-bidding-response"]
   customer: ["customer-enterprise"]
@@ -47,8 +47,8 @@ opportunity_signals:
   business_action: ["customer_deployment", "procurement_signal", "governance_requirement"]
   product_form: []
   delivery_model: ["template_pack"]
-  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
-  adoption_evidence: ["customer_metric", "procurement_contract", "pricing_page"]
+  pain_or_constraint: ["evaluation_gap", "workflow_integration"]
+  adoption_evidence: ["customer_metric", "pricing_page", "procurement_contract"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
   source_excerpt: "Marketing AI Agent Deployment Playbook for Agencies Marketing AI Agent Deployment Playbook for Agencies Complete playbook for marketing agencies deploying AI agents across client reporting, campaign management, and cont..."

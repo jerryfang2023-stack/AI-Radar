@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing"]
   customer: ["customer-enterprise"]
@@ -41,11 +41,11 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "finance_team", "healthcare_provider"]
-  team_or_function: ["sales", "finance", "healthcare_operations"]
-  specific_task: ["sales_lead_research", "medical_documentation", "insurance_claim_review"]
+  buyer_or_user: ["finance_team", "healthcare_provider", "sales_team"]
+  team_or_function: ["finance", "healthcare_operations", "sales"]
+  specific_task: ["insurance_claim_review", "medical_documentation", "sales_lead_research"]
   business_action: ["customer_deployment", "partnership_integration"]
-  product_form: ["agent_workbench", "vertical_saas", "evaluation_platform"]
+  product_form: ["agent_workbench", "evaluation_platform", "vertical_saas"]
   delivery_model: []
   pain_or_constraint: ["context_management"]
   adoption_evidence: ["partnership_announcement"]

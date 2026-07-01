@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-ai-coding", "track-enterprise-data", "track-ai-infra"]
   function: ["function-engineering"]
   scenario: ["scenario-knowledge-base", "scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -46,8 +46,8 @@ opportunity_signals:
   specific_task: ["internal_tool_building"]
   business_action: ["partnership_integration"]
   product_form: ["api"]
-  delivery_model: ["template_pack", "api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "evaluation_gap"]
+  delivery_model: ["api_usage_based", "template_pack"]
+  pain_or_constraint: ["evaluation_gap", "workflow_integration"]
   adoption_evidence: ["deployment_scale", "partnership_announcement"]
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"

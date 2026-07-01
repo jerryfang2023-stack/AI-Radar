@@ -43,13 +43,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "finance_team"]
-  team_or_function: ["sales", "engineering", "finance"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  buyer_or_user: ["engineering_team", "finance_team", "sales_team"]
+  team_or_function: ["engineering", "finance", "sales"]
+  specific_task: ["internal_tool_building", "sales_lead_research"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: []
   delivery_model: ["self_serve_saas"]
-  pain_or_constraint: ["workflow_integration", "permission_boundary", "security_compliance"]
+  pain_or_constraint: ["permission_boundary", "security_compliance", "workflow_integration"]
   adoption_evidence: ["customer_metric", "deployment_scale", "partnership_announcement"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"

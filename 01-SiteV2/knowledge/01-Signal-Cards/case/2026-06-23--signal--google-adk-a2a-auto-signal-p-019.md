@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "legal_team"]
-  team_or_function: ["sales", "engineering", "legal_compliance"]
-  specific_task: ["sales_lead_research", "internal_tool_building", "contract_review"]
-  business_action: ["customer_deployment", "product_launch", "pricing_change", "open_source_release"]
+  buyer_or_user: ["engineering_team", "legal_team", "sales_team"]
+  team_or_function: ["engineering", "legal_compliance", "sales"]
+  specific_task: ["contract_review", "internal_tool_building", "sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change"]
   product_form: ["agent_workbench", "developer_tool"]
   delivery_model: []
-  pain_or_constraint: ["api_cost_spike", "data_silo", "security_compliance", "evaluation_gap"]
+  pain_or_constraint: ["api_cost_spike", "data_silo", "evaluation_gap"]
   adoption_evidence: ["procurement_contract"]
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"

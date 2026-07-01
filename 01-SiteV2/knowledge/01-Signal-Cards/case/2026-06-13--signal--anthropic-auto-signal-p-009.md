@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-medical-ai"]
+  track: ["track-medical-ai", "track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering", "function-finance", "function-sales"]
   scenario: ["scenario-healthcare-operations", "scenario-sales-briefing"]
   customer: ["customer-developer-team", "customer-enterprise", "customer-healthcare-provider"]
@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "finance_team"]
-  team_or_function: ["sales", "engineering", "finance"]
-  specific_task: ["sales_lead_research", "internal_tool_building", "medical_documentation"]
+  buyer_or_user: ["engineering_team", "finance_team", "sales_team"]
+  team_or_function: ["engineering", "finance", "sales"]
+  specific_task: ["internal_tool_building", "medical_documentation", "sales_lead_research"]
   business_action: ["partnership_integration", "governance_requirement"]
   product_form: []
   delivery_model: ["consulting_diagnostic"]

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-enterprise-data", "track-ai-infra"]
   function: []
   scenario: ["scenario-knowledge-base"]
   customer: []
@@ -44,7 +44,7 @@ opportunity_signals:
   buyer_or_user: []
   team_or_function: []
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "product_launch"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []

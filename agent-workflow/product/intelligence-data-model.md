@@ -1,4 +1,4 @@
-﻿# Intelligence Data Model｜判断资产模型
+# Intelligence Data Model｜判断资产模型
 
 更新时间：2026-05-22
 owner：Intelligence Engine

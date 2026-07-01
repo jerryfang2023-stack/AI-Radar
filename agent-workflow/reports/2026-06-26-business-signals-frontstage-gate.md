@@ -1,4 +1,4 @@
-﻿# 2026-06-26 Business Signals Frontstage Gate
+# 2026-06-26 Business Signals Frontstage Gate
 
 - generated_at: 2026-06-26T03:36:23.421Z
 - status: passed

@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing"]
   customer: ["customer-enterprise"]
@@ -46,12 +46,12 @@ opportunity_signals:
   buyer_or_user: ["engineering_team"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "pricing_change"]
-  product_form: ["model_gateway", "evaluation_platform"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
+  product_form: ["evaluation_platform", "model_gateway"]
   delivery_model: []
-  pain_or_constraint: ["latency_sensitive", "security_compliance", "context_management"]
+  pain_or_constraint: ["context_management", "latency_sensitive", "security_compliance"]
   adoption_evidence: ["customer_metric"]
-  source_evidence_type: ["funding_news", "technical_blog", "first_party_announcement"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "technical_blog"]
   evidence_basis: "raw_source_text"
   source_excerpt: "NVIDIA JetPack 7.2 发布，简化边缘 Agent 部署 NVIDIA JetPack 7.2支持内存优化的边缘智能体部署 NVIDIA JetPack 7.2发布，支持一键部署开源NVIDIA NemoClaw堆栈，该堆栈为OpenClaw添加了隐私与安全控制。同时引入NVIDIA agent skills for Jetson，为Jetson设备提供智能体技能。该版本优化了内存效率，旨在加速AI代理从数字世界向物理环..."
   missing_fields: ["delivery_model"]

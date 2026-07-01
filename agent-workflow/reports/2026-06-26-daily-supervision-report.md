@@ -1,4 +1,4 @@
-﻿# WaveSight Daily Supervision - 2026-06-26
+# WaveSight Daily Supervision - 2026-06-26
 
 - generated_at: 2026-06-26T03:39:23.727Z
 - status: manual_required

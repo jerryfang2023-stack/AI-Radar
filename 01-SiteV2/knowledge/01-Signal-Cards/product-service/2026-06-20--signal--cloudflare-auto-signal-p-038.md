@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -45,9 +45,9 @@ opportunity_signals:
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
   business_action: ["customer_deployment", "product_launch"]
-  product_form: ["copilot", "api"]
+  product_form: ["api", "copilot"]
   delivery_model: ["api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  pain_or_constraint: ["latency_sensitive", "workflow_integration"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"

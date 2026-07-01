@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data"]
+  track: ["track-enterprise-data", "track-enterprise-workflow"]
   function: ["function-finance", "function-sales"]
   scenario: ["scenario-knowledge-base", "scenario-insurance-claims", "scenario-sales-briefing"]
   customer: ["customer-enterprise"]
@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "insurance_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "insurance_operations"]
-  specific_task: ["sales_lead_research", "insurance_claim_review"]
+  buyer_or_user: ["enterprise_ai_owner", "insurance_team", "sales_team"]
+  team_or_function: ["insurance_operations", "sales"]
+  specific_task: ["insurance_claim_review", "sales_lead_research"]
   business_action: ["customer_deployment"]
   product_form: ["vertical_saas", "workflow_automation"]
   delivery_model: []

@@ -35,7 +35,7 @@ formal_tags:
   scenario: ["scenario-construction-real-estate"]
   customer: []
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
   team_or_function: ["it_security"]
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "product_launch", "governance_requirement"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: ["agent_workbench"]
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement"]
+  source_evidence_type: ["first_party_announcement", "funding_news"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Willow 获得$7M 融资，押注地产和建筑设计工作流 Willow Raises $7M Seed to Ensure Enterprises Can Fully Oversee and Govern Autonomous Agents Willow Raises $7M Seed to Ensure Enterprises Can Fully Oversee and Govern Autonomous Agents Access..."
   missing_fields: ["specific_task", "adoption_evidence", "delivery_model"]

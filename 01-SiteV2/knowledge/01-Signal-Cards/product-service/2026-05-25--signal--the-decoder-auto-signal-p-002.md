@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-coding", "track-ai-infra", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -46,12 +46,12 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: ["developer_tool"]
   delivery_model: []
   pain_or_constraint: ["api_cost_spike", "hallucination_risk"]
   adoption_evidence: ["customer_metric"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "研究人员让Claude Code发现人类可能不会设计的AI缩放算法 研究人员让Claude Code发现人类可能不会设计的AI缩放算法 马里兰大学、谷歌、Meta等机构的研究人员利用AutoTTS框架，使Claude Code编码智能体自主发现了用于AI推理的控制算法。该算法将计算成本降低了约70%，同时保持了与标准自一致性方法相当的准确率。整个算法搜索过程耗时160分钟，成本仅为40美元。这项工作展示了AI智能体自主设计高效算法的可..."
   missing_fields: ["delivery_model"]

@@ -35,7 +35,7 @@ formal_tags:
   scenario: ["scenario-construction-real-estate"]
   customer: []
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
@@ -43,11 +43,11 @@ opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["engineering_team", "healthcare_provider", "insurance_team"]
   team_or_function: ["engineering", "healthcare_operations", "insurance_operations"]
-  specific_task: ["internal_tool_building", "medical_documentation", "insurance_claim_review"]
+  specific_task: ["insurance_claim_review", "internal_tool_building", "medical_documentation"]
   business_action: ["funding_round"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "hallucination_risk"]
+  pain_or_constraint: ["hallucination_risk", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"

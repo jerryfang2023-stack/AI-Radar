@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-coding", "track-ai-infra", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: ["scenario-construction-real-estate", "scenario-revenue-operations"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -46,12 +46,12 @@ opportunity_signals:
   buyer_or_user: ["customer_support_team", "enterprise_ai_owner"]
   team_or_function: ["customer_support"]
   specific_task: ["customer_ticket_triage"]
-  business_action: ["funding_round", "customer_deployment", "partnership_integration", "pricing_change"]
+  business_action: ["customer_deployment", "funding_round", "partnership_integration"]
   product_form: ["agent_workbench", "workflow_automation"]
   delivery_model: []
   pain_or_constraint: ["model_routing_complexity"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Wonderful 获 1 亿美元 A 轮，扩展客服 Agent 部署 Wonderful raised $100M Series A to put AI agents on the front lines ..."
   missing_fields: ["adoption_evidence", "delivery_model"]

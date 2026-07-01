@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: []
   scenario: []
   customer: []
@@ -41,14 +41,14 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment", "partnership_integration"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
-  adoption_evidence: ["partnership_announcement", "enterprise_plan"]
+  adoption_evidence: ["enterprise_plan", "partnership_announcement"]
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "# OpenAI reveals its first AI processor: Jalapeño ## 新闻事实 来源材料显示，OpenAI reveals its first AI processor 的AI 商业动作涉及模型部署和算力调用。"

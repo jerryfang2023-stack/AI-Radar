@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -49,7 +49,7 @@ opportunity_signals:
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["procurement_contract", "third_party_report"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员 推出 Agent 工作流能力，切入企业 Agent 协作平台 Anthropic 加入 Frontier 碳去除联盟，成首家 AI 初创成员 Anthropic 加入由 Stripe、Google、Shopify 等创立的碳去除集体 Frontier，并贡献 9.15 亿美元新资金，使 Frontier 总承诺额达 18 亿美元。Frontier 已签约近..."
   missing_fields: ["specific_task", "product_form", "delivery_model"]

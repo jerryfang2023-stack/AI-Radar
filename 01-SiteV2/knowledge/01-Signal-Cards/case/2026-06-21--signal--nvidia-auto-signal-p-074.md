@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: []
   scenario: []
   customer: []
@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "healthcare_provider", "enterprise_ai_owner"]
-  team_or_function: ["sales", "healthcare_operations"]
-  specific_task: ["sales_lead_research", "medical_documentation"]
+  buyer_or_user: ["enterprise_ai_owner", "healthcare_provider", "sales_team"]
+  team_or_function: ["healthcare_operations", "sales"]
+  specific_task: ["medical_documentation", "sales_lead_research"]
   business_action: ["customer_deployment", "research_benchmark"]
   product_form: []
   delivery_model: []

@@ -35,7 +35,7 @@ formal_tags:
   scenario: ["scenario-construction-real-estate"]
   customer: []
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["funding_round"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "context_management", "evaluation_gap"]
+  pain_or_constraint: ["context_management", "evaluation_gap", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"

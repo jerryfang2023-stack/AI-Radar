@@ -32,6 +32,8 @@
     "hermes:business-early-handoff": "node agent-workflow/tools/run-hermes-business-signals-early-handoff.mjs",
     "hermes:early-handoff": "node agent-workflow/tools/run-hermes-three-lane-early-handoff.mjs",
     "sync:pipeline-dashboard": "node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs",
+    "audit:tags": "node agent-workflow/tools/audit-tags-v34.mjs",
+    "cleanup:tags": "node agent-workflow/tools/cleanup-tags-v34.mjs",
     "build:ops-console": "node agent-workflow/tools/build-ops-console-data.mjs",
     "build:skill-registry": "node agent-workflow/tools/build-skill-registry.mjs",
     "check:skill-ops": "node agent-workflow/tools/check-skill-ops.mjs",

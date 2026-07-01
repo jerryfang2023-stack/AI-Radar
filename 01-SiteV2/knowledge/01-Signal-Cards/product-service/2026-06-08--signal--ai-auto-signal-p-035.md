@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["partnership_integration", "pricing_change", "open_source_release"]
   product_form: ["copilot", "developer_tool"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  pain_or_constraint: ["api_cost_spike", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"

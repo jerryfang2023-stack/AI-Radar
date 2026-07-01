@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["customer_deployment", "product_launch", "open_source_release"]
   product_form: ["workflow_automation"]
   delivery_model: ["open_source_commercial"]
-  pain_or_constraint: ["workflow_integration", "model_routing_complexity"]
+  pain_or_constraint: ["model_routing_complexity", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["first_party_announcement"]
   evidence_basis: "raw_source_text"

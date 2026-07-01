@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra", "track-ai-governance"]
+  track: ["track-ai-governance", "track-ai-infra"]
   function: []
   scenario: ["scenario-agent-governance"]
   customer: []
@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
   team_or_function: ["it_security"]
   specific_task: []
-  business_action: ["customer_deployment", "product_launch", "partnership_integration", "governance_requirement"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "permission_boundary", "security_compliance"]
+  pain_or_constraint: ["permission_boundary", "security_compliance", "workflow_integration"]
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

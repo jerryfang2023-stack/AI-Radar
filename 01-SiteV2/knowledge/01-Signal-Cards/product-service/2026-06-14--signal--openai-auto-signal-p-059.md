@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-enterprise-data", "track-ai-infra"]
   function: ["function-procurement-bidding"]
   scenario: ["scenario-knowledge-base", "scenario-bidding-response"]
   customer: []

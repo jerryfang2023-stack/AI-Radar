@@ -1,4 +1,4 @@
-﻿# Opportunity Radar Update Rules
+# Opportunity Radar Update Rules
 
 ## Purpose
 

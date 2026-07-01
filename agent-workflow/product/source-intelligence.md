@@ -1,4 +1,4 @@
-﻿# Source Intelligence Model
+# Source Intelligence Model
 
 更新时间：2026-05-20
 owner：`intelligence-engine`

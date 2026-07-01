@@ -30,21 +30,21 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-governance"]
+  track: ["track-ai-governance", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-agent-governance"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "it_security_team"]
-  team_or_function: ["sales", "it_security"]
+  buyer_or_user: ["it_security_team", "sales_team"]
+  team_or_function: ["it_security", "sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["funding_round", "customer_deployment", "governance_requirement"]
+  business_action: ["customer_deployment", "funding_round", "governance_requirement"]
   product_form: []
   delivery_model: ["consulting_diagnostic"]
   pain_or_constraint: ["security_compliance"]

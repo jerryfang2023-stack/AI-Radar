@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-ai-coding", "track-enterprise-data", "track-ai-infra"]
   function: ["function-engineering", "function-sales"]
   scenario: ["scenario-knowledge-base", "scenario-sales-briefing", "scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -43,10 +43,10 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["funding_round", "customer_deployment", "partnership_integration", "pricing_change"]
+  business_action: ["customer_deployment", "funding_round", "partnership_integration"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["api_cost_spike"]

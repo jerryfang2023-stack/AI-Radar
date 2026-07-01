@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["funding_round", "partnership_integration"]
   product_form: ["agent_workbench", "workflow_automation"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "model_routing_complexity"]
+  pain_or_constraint: ["model_routing_complexity", "workflow_integration"]
   adoption_evidence: ["partnership_announcement"]
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"

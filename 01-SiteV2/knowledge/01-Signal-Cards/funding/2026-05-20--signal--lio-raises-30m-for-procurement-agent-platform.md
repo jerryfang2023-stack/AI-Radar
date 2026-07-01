@@ -55,27 +55,27 @@ frontend:
     - "https://www.prnewswire.com/news-releases/lio-raises-30m-series-a-to-bring-agentic-ai-to-enterprise-procurement-302705236.html"
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-procurement-bidding", "function-operations"]
   scenario: ["scenario-bidding-response", "scenario-logistics-supply-chain"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-funding", "evidence-partnership-integration"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
   opinion: []
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["procurement_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "procurement_team"]
   team_or_function: ["procurement"]
   specific_task: ["procurement_supplier_screening"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["partnership_announcement", "procurement_contract"]
-  source_evidence_type: ["funding_news", "regulatory_or_procurement", "first_party_announcement"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "regulatory_or_procurement"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Lio 融资 3000 万美元，推进企业采购智能体平台 Lio Raises $30M Series A to Bring Agentic AI to Enterprise Procurement NEW YORK, March 5, 2026 /PRNewswire/ -- Lio (formerly known as askLio), the company building an agentic AI platform for ..."
   missing_fields: ["product_form", "delivery_model"]

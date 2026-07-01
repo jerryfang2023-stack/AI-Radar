@@ -49,12 +49,12 @@ frontend:
     - "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html"
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-governance"]
+  track: ["track-ai-coding", "track-ai-governance", "track-enterprise-workflow"]
   function: ["function-engineering", "function-legal-compliance"]
   scenario: ["scenario-agent-governance", "scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
   opinion: []
@@ -64,10 +64,10 @@ opportunity_signals:
   buyer_or_user: ["it_security_team"]
   team_or_function: ["it_security"]
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "governance_requirement"]
+  business_action: ["customer_deployment", "funding_round", "governance_requirement"]
   product_form: []
   delivery_model: ["template_pack"]
-  pain_or_constraint: ["workflow_integration", "permission_boundary"]
+  pain_or_constraint: ["permission_boundary", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["funding_news", "business_media"]
   evidence_basis: "raw_source_text"

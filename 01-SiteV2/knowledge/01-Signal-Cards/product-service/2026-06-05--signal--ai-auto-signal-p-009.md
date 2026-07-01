@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing", "scenario-revenue-operations"]
   customer: ["customer-enterprise"]
@@ -43,13 +43,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "engineering"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "sales_team"]
+  team_or_function: ["engineering", "sales"]
+  specific_task: ["internal_tool_building", "sales_lead_research"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: ["api", "developer_tool"]
-  delivery_model: ["self_serve_saas", "api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  delivery_model: ["api_usage_based", "self_serve_saas"]
+  pain_or_constraint: ["security_compliance", "workflow_integration"]
   adoption_evidence: ["partnership_announcement", "pilot_or_poc"]
   source_evidence_type: ["funding_news", "technical_blog"]
   evidence_basis: "raw_source_text"

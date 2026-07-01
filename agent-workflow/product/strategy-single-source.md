@@ -1,4 +1,4 @@
-﻿# Strategy Single Source｜观澜 AI 战略单一事实源
+# Strategy Single Source｜观澜 AI 战略单一事实源
 
 状态：current
 更新时间：2026-05-24

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-enterprise-data", "track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-enterprise"]
@@ -41,15 +41,15 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment", "product_launch", "research_benchmark"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "hallucination_risk", "latency_sensitive", "evaluation_gap"]
+  pain_or_constraint: ["evaluation_gap", "hallucination_risk", "latency_sensitive"]
   adoption_evidence: ["customer_metric"]
-  source_evidence_type: ["research_paper", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "business_media", "research_paper"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Gemini-SQL2 推出 Agent 工作流能力，切入模型部署和算力服务 Google Research 的 Gemini-SQL2 在 text-to-SQL 基准测试中以大幅优势领先 Google Research 推出 Gemini-SQL2，基于 Gemini 3.1 Pro，可将自然语言转换为可执行 SQL 查询。该模型在 BIRD 基准上达到 80.04% 准确率，大幅领先 OpenAI 和 Anthropic。Goo..."
   missing_fields: ["product_form", "delivery_model"]

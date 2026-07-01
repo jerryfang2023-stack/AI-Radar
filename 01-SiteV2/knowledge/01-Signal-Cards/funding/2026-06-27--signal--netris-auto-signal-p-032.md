@@ -30,26 +30,26 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-business-media"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "customer_support_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "customer_support"]
-  specific_task: ["sales_lead_research", "customer_ticket_triage"]
+  buyer_or_user: ["customer_support_team", "enterprise_ai_owner", "sales_team"]
+  team_or_function: ["customer_support", "sales"]
+  specific_task: ["customer_ticket_triage", "sales_lead_research"]
   business_action: ["funding_round"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Close Image Credits: YASUYOSHI CHIBA/AFP / Getty Images AI Netris raises $15M Series A from a16z to help AI neoclouds go live faster Ram Iyer 7:55 AM PDT · June 25, 2026 The AI boom has encouraged everyone and their unc..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]

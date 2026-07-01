@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-medical-ai"]
+  track: ["track-medical-ai", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-healthcare-operations"]
   customer: ["customer-enterprise", "customer-healthcare-provider"]
@@ -41,10 +41,10 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["healthcare_provider", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "healthcare_provider"]
   team_or_function: ["healthcare_operations"]
   specific_task: ["medical_documentation"]
-  business_action: ["funding_round", "customer_deployment"]
+  business_action: ["customer_deployment", "funding_round"]
   product_form: ["vertical_saas"]
   delivery_model: ["project_based_service"]
   pain_or_constraint: ["workflow_integration"]

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-medical-ai"]
+  track: ["track-medical-ai", "track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-healthcare-operations", "scenario-sales-briefing"]
   customer: ["customer-enterprise", "customer-healthcare-provider"]
@@ -41,15 +41,15 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "healthcare_provider", "enterprise_ai_owner"]
-  team_or_function: ["sales", "healthcare_operations"]
-  specific_task: ["sales_lead_research", "medical_documentation"]
+  buyer_or_user: ["enterprise_ai_owner", "healthcare_provider", "sales_team"]
+  team_or_function: ["healthcare_operations", "sales"]
+  specific_task: ["medical_documentation", "sales_lead_research"]
   business_action: ["funding_round", "acquisition"]
   product_form: []
   delivery_model: ["consulting_diagnostic"]
   pain_or_constraint: []
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "马来西亚AI智能体消息应用Respond.io获6250万美元融资，瞄准收购 马来西亚AI智能体消息应用Respond.io获6250万美元融资，瞄准收购 总部位于吉隆坡的客户对话管理平台Respond.io完成6250万美元B轮融资，Camber Partners领投，Endeavor Catalyst及现有投资者跟投。公司年经常性收入达3500万美元，同比增长169%，利润率为30%。平台通过AI智能体自动处理客户咨询、筛选线索并..."
   missing_fields: ["product_form", "adoption_evidence"]

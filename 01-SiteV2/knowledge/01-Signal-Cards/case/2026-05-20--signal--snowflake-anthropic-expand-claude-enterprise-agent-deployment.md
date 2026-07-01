@@ -49,7 +49,7 @@ frontend:
     - "https://www.anthropic.com/news/snowflake-anthropic-expanded-partnership"
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-ai-coding", "track-enterprise-data", "track-ai-infra"]
   function: ["function-engineering", "function-procurement-bidding", "function-sales"]
   scenario: ["scenario-knowledge-base", "scenario-bidding-response", "scenario-sales-briefing", "scenario-logistics-supply-chain", "scenario-construction-real-estate", "scenario-revenue-operations"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -61,13 +61,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "engineering"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "partnership_integration", "procurement_signal"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "sales_team"]
+  team_or_function: ["engineering", "sales"]
+  specific_task: ["internal_tool_building", "sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: ["copilot"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "security_compliance"]
+  pain_or_constraint: ["security_compliance", "workflow_integration"]
   adoption_evidence: ["customer_metric", "partnership_announcement", "procurement_contract"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"

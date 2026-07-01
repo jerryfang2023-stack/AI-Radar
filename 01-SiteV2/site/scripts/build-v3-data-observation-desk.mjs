@@ -37,6 +37,35 @@ const tagDictionary = loadTagDictionary();
 const allowedTagIds = new Set(tagDictionary.keys());
 const internalFrontstageTagIds = new Set(["stage-watch", "core-pool"]);
 const internalFrontstageTagLabels = new Set(["core pool"]);
+const frontstageAggregateMutedTagIds = new Set(["track-ai-agent", "customer-enterprise"]);
+const opportunitySignalFrontstageLimit = 3;
+const opportunitySignalValuePriority = {
+  business_action: [
+    "customer_deployment",
+    "funding_round",
+    "product_launch",
+    "partnership_integration",
+    "procurement_signal",
+    "pricing_change",
+    "acquisition",
+    "open_source_release",
+    "governance_requirement",
+    "research_benchmark",
+    "failure_postmortem",
+    "hiring_fde",
+  ],
+  source_evidence_type: [
+    "first_party_case",
+    "first_party_announcement",
+    "funding_news",
+    "business_media",
+    "regulatory_or_procurement",
+    "industry_report",
+    "technical_blog",
+    "research_paper",
+    "community_post",
+  ],
+};
 const sourceTitleTranslations = loadSourceTitleTranslations();
 
 function rel(file) {
@@ -321,6 +350,18 @@ function camelOpportunityField(field = "") {
   return field.replace(/_([a-z])/gu, (_, letter) => letter.toUpperCase());
 }
 
+function boundedOpportunityValues(field = "", values = []) {
+  const unique = [...new Set(values.filter(Boolean))];
+  const priority = opportunitySignalValuePriority[field] || [];
+  return unique
+    .sort((a, b) => {
+      const aIndex = priority.includes(a) ? priority.indexOf(a) : 999;
+      const bIndex = priority.includes(b) ? priority.indexOf(b) : 999;
+      return aIndex - bIndex || a.localeCompare(b);
+    })
+    .slice(0, opportunitySignalFrontstageLimit);
+}
+
 function opportunitySignals(fm) {
   const sourceExcerpt = nestedScalar(fm, "opportunity_signals", "source_excerpt");
   const result = {
@@ -331,7 +372,7 @@ function opportunitySignals(fm) {
     labels: {},
   };
   for (const field of OPPORTUNITY_SIGNAL_FIELDS) {
-    const values = nestedList(fm, "opportunity_signals", field);
+    const values = boundedOpportunityValues(field, nestedList(fm, "opportunity_signals", field));
     result[field] = values;
     result[camelOpportunityField(field)] = values;
     result.labels[field] = values.map((value) => ({ id: value, label: opportunitySignalLabel(root, field, value) }));
@@ -353,14 +394,28 @@ function frontstageTags(tags) {
 
 function isFrontstageDisplayTag(tag = "") {
   if (!tag || internalFrontstageTagIds.has(tag)) return false;
-  if (/^(source|region)-/u.test(tag)) return false;
+  if (/^(source|region|stage)-/u.test(tag)) return false;
   if (isGraphOpinionLikeTag(tag)) return false;
   return true;
 }
 
+function isHighSignalFrontstageTag(tag = "") {
+  return isFrontstageDisplayTag(tag) && !frontstageAggregateMutedTagIds.has(tag);
+}
+
+function frontstageDisplayTagIds(tags = {}) {
+  const groups = ["track", "scenario", "customer", "evidence", "function"];
+  const primary = groups
+    .flatMap((group) => tags[group] || [])
+    .filter(isHighSignalFrontstageTag);
+  const fallback = groups
+    .flatMap((group) => tags[group] || [])
+    .filter(isFrontstageDisplayTag);
+  return [...new Set(primary.length ? primary : fallback)].slice(0, 3);
+}
+
 function displayTags(tags) {
-  return sanitizeDisplayTags(allTags(tags)
-    .filter(isFrontstageDisplayTag)
+  return sanitizeDisplayTags(frontstageDisplayTagIds(tags)
     .map((id) => ({
       id,
       label: tagDictionary.get(id) || id,
@@ -3289,7 +3344,7 @@ function daysBetween(a, b) {
 function topTags(cards, limit = 4) {
   const counts = new Map();
   for (const card of cards) {
-    for (const tag of card.flatTags.filter(isFrontstageDisplayTag)) counts.set(tag, (counts.get(tag) || 0) + 1);
+    for (const tag of card.flatTags.filter(isHighSignalFrontstageTag)) counts.set(tag, (counts.get(tag) || 0) + 1);
   }
   return [...counts.entries()]
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
@@ -3336,6 +3391,7 @@ function windowCards(cards, activeDate, windowDays) {
 
 function isMeaningfulAssociationTag(tag = "") {
   if (/^(stage|region|source)-/u.test(tag)) return false;
+  if (frontstageAggregateMutedTagIds.has(tag)) return false;
   return true;
 }
 
@@ -3613,7 +3669,7 @@ function graphTagsForCard(card) {
   const groups = ["track", "function", "scenario", "customer", "evidence"];
   const tags = groups
     .flatMap((group) => card.tags?.[group] || [])
-    .filter((tag) => tag && isFrontstageDisplayTag(tag));
+    .filter((tag) => tag && isHighSignalFrontstageTag(tag));
   return [...new Set(tags)].slice(0, 3);
 }
 

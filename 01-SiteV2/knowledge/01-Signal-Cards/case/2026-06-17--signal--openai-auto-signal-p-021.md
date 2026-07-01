@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data", "track-ai-infra", "track-ai-governance"]
+  track: ["track-enterprise-data", "track-ai-governance", "track-ai-infra"]
   function: []
   scenario: ["scenario-knowledge-base", "scenario-agent-governance"]
   customer: ["customer-enterprise"]
@@ -44,7 +44,7 @@ opportunity_signals:
   buyer_or_user: ["it_security_team"]
   team_or_function: ["it_security"]
   specific_task: []
-  business_action: ["customer_deployment", "research_benchmark", "governance_requirement"]
+  business_action: ["customer_deployment", "governance_requirement", "research_benchmark"]
   product_form: []
   delivery_model: ["consulting_diagnostic"]
   pain_or_constraint: []

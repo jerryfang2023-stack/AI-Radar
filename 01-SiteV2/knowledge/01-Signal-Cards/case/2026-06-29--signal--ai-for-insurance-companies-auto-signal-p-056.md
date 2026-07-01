@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-finance"]
   scenario: ["scenario-insurance-claims", "scenario-logistics-supply-chain"]
   customer: ["customer-enterprise"]
@@ -41,7 +41,7 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["insurance_team", "operations_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "insurance_team", "operations_team"]
   team_or_function: ["insurance_operations", "operations"]
   specific_task: ["insurance_claim_review", "logistics_coordination"]
   business_action: ["customer_deployment", "pricing_change"]

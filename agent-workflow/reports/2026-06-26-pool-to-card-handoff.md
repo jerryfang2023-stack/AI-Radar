@@ -1,4 +1,4 @@
-﻿# 2026-06-26 Pool-to-Card Handoff
+# 2026-06-26 Pool-to-Card Handoff
 
 - generated_at: 2026-06-26T03:32:45.967Z
 - written_count: 22

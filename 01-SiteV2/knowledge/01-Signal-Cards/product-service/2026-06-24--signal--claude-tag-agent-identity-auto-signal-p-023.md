@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data", "track-ai-infra", "track-ai-governance"]
+  track: ["track-enterprise-data", "track-ai-governance", "track-ai-infra"]
   function: []
   scenario: ["scenario-knowledge-base", "scenario-agent-governance"]
   customer: ["customer-enterprise"]
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["product_launch", "governance_requirement"]
   product_form: ["copilot"]
   delivery_model: []
-  pain_or_constraint: ["permission_boundary", "context_management"]
+  pain_or_constraint: ["context_management", "permission_boundary"]
   adoption_evidence: ["deployment_scale"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-logistics-supply-chain"]
   customer: ["customer-enterprise"]
@@ -43,13 +43,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["operations_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "operations_team"]
   team_or_function: ["operations"]
   specific_task: ["logistics_coordination"]
-  business_action: ["funding_round", "customer_deployment", "partnership_integration", "pricing_change"]
+  business_action: ["customer_deployment", "funding_round", "partnership_integration"]
   product_form: ["evaluation_platform"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  pain_or_constraint: ["api_cost_spike", "workflow_integration"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: ["funding_news"]
   evidence_basis: "raw_source_text"

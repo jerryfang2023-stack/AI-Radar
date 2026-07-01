@@ -1,4 +1,4 @@
-﻿# Opportunity Radar Updater Evals
+# Opportunity Radar Updater Evals
 
 1. `source_near_fields`
    - Pass when map cells are derived from `opportunity_signals` fields backed by source excerpts or Card facts.

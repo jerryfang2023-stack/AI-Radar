@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: ["scenario-insurance-claims"]
   customer: ["customer-enterprise"]
@@ -41,7 +41,7 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["insurance_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "insurance_team"]
   team_or_function: ["insurance_operations"]
   specific_task: ["insurance_claim_review"]
   business_action: ["customer_deployment"]

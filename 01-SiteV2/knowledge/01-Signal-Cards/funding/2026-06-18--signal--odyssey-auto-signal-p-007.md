@@ -30,26 +30,26 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-ai-coding", "track-enterprise-data", "track-ai-infra"]
   function: ["function-engineering", "function-sales"]
   scenario: ["scenario-knowledge-base", "scenario-sales-briefing"]
   customer: ["customer-developer-team"]
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-business-media"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner", "it_security_team"]
-  team_or_function: ["sales", "it_security"]
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team", "sales_team"]
+  team_or_function: ["it_security", "sales"]
   specific_task: ["sales_briefing"]
   business_action: ["funding_round"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Odyssey 获得$310 m 融资，押注销售线索和收入团队协作 世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元 由自动驾驶领域连续创业者Oliver Cameron（CEO）和Jeff Hawke（CTO）联合创立的世界模型AI公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元。本轮由Natural Capital领投，Amazon、AMD Ventures、GV等跟投。Odyssey成立于20..."
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]

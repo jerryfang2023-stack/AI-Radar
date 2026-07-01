@@ -49,12 +49,12 @@ frontend:
     - "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/"
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra", "track-ai-governance"]
+  track: ["track-ai-governance", "track-ai-infra", "track-enterprise-workflow"]
   function: ["function-legal-compliance"]
   scenario: ["scenario-agent-governance"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-funding", "evidence-partnership-integration"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-business-media"]
   opinion: []
@@ -64,12 +64,12 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
   team_or_function: ["it_security"]
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: ["workflow_automation"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "permission_boundary", "data_silo", "model_routing_complexity"]
+  pain_or_constraint: ["data_silo", "model_routing_complexity", "permission_boundary"]
   adoption_evidence: ["partnership_announcement"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Trace 融资 300 万美元，瞄准企业智能体上下文管理 Trace raises $3M to solve the AI agent adoption problem in enterprise | TechCrunch Trace raises $3M to solve the AI agent adoption problem in enterprise | TechCrunch [...] # Trace raises $3..."
   missing_fields: ["specific_task", "delivery_model"]

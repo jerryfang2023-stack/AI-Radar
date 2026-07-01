@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering", "function-procurement-bidding"]
   scenario: ["scenario-bidding-response", "scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -41,10 +41,10 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["operations_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "operations_team"]
   team_or_function: ["operations"]
   specific_task: ["logistics_coordination"]
-  business_action: ["customer_deployment", "partnership_integration", "procurement_signal", "research_benchmark"]
+  business_action: ["customer_deployment", "partnership_integration", "procurement_signal"]
   product_form: ["vertical_saas"]
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]

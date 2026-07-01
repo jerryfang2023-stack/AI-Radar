@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-data", "track-ai-governance"]
+  track: ["track-enterprise-data", "track-ai-governance"]
   function: []
   scenario: ["scenario-knowledge-base", "scenario-agent-governance"]
   customer: []
@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["product_launch", "research_benchmark", "governance_requirement"]
+  business_action: ["product_launch", "governance_requirement", "research_benchmark"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "hallucination_risk", "security_compliance"]
+  pain_or_constraint: ["hallucination_risk", "security_compliance", "workflow_integration"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"

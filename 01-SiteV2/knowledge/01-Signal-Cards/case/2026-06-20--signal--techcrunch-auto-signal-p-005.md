@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra", "track-medical-ai"]
+  track: ["track-medical-ai", "track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-healthcare-operations"]
   customer: ["customer-enterprise", "customer-healthcare-provider"]
@@ -41,15 +41,15 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["healthcare_provider", "enterprise_ai_owner", "smb_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "healthcare_provider", "smb_owner"]
   team_or_function: ["healthcare_operations"]
   specific_task: ["medical_documentation"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: ["copilot"]
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: ["deployment_scale", "partnership_announcement", "procurement_contract"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "信实工业推出多款AI服务，涵盖通话、应用与家居 信实工业推出多款AI服务，涵盖通话、应用与家居 印度信实工业在年度股东大会上发布AI服务：Jio Call Agent可加入电话会议转录、总结并执行叫车、订餐等任务，通过\"Hey Jio\"激活，今年晚些时候面向超5亿用户上线；MyJio应用新增AI版，支持自然语言激活eSIM、选择漫游套餐；家庭显示设备TeleFrame利用AI智能体推送天气、日程提醒；还推出医疗、教育、农业和中小企业A..."
   missing_fields: ["delivery_model"]

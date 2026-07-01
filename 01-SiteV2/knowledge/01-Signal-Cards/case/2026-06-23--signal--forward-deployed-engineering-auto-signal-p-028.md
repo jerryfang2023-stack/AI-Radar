@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-enterprise-workflow"]
   function: ["function-customer-service"]
   scenario: ["scenario-customer-ticket"]
   customer: ["customer-enterprise"]
@@ -46,7 +46,7 @@ opportunity_signals:
   specific_task: ["internal_tool_building"]
   business_action: ["customer_deployment", "partnership_integration", "hiring_fde"]
   product_form: ["fde_service"]
-  delivery_model: ["project_based_service", "fde_delivery"]
+  delivery_model: ["fde_delivery", "project_based_service"]
   pain_or_constraint: []
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []

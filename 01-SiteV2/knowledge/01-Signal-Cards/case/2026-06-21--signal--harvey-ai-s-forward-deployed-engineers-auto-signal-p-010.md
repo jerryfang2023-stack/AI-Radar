@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: []
   scenario: []
   customer: []
@@ -41,11 +41,11 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "legal_team", "enterprise_ai_owner"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "legal_team"]
   team_or_function: ["engineering", "legal_compliance"]
-  specific_task: ["internal_tool_building", "contract_review"]
+  specific_task: ["contract_review", "internal_tool_building"]
   business_action: ["customer_deployment", "partnership_integration", "hiring_fde"]
-  product_form: ["vertical_saas", "fde_service"]
+  product_form: ["fde_service", "vertical_saas"]
   delivery_model: ["fde_delivery", "template_pack"]
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["enterprise_plan"]

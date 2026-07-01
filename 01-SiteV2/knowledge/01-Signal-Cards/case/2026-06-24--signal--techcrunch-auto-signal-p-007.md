@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["product_launch", "partnership_integration", "research_benchmark"]
   product_form: ["agent_workbench"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "permission_boundary", "data_silo", "latency_sensitive"]
+  pain_or_constraint: ["data_silo", "latency_sensitive", "permission_boundary"]
   adoption_evidence: ["deployment_scale", "partnership_announcement"]
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"

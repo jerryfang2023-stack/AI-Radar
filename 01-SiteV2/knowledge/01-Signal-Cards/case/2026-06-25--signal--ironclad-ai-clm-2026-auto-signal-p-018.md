@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: ["scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "procurement_signal", "pricing_change"]
+  business_action: ["customer_deployment", "funding_round", "procurement_signal"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "model_routing_complexity"]
+  pain_or_constraint: ["api_cost_spike", "model_routing_complexity", "workflow_integration"]
   adoption_evidence: ["customer_metric", "procurement_contract"]
   source_evidence_type: ["funding_news", "regulatory_or_procurement"]
   evidence_basis: "raw_source_text"

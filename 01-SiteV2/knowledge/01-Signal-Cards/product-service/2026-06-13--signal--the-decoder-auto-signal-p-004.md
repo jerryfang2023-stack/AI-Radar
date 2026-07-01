@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-ai-infra"]
+  track: ["track-ai-coding", "track-ai-infra"]
   function: ["function-engineering"]
   scenario: ["scenario-construction-real-estate"]
   customer: ["customer-developer-team"]
@@ -49,7 +49,7 @@ opportunity_signals:
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: ["partnership_announcement"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "The-Decoder 发布 AI 基础设施能力，切入地产和建筑设计工作流 Anthropic限制Mythos模型部分任务，自建应用与客户竞争引反弹 Anthropic正在限制其新模型Mythos在某些任务上的使用，同时构建与最大客户直接竞争的应用程序。这一做法引发客户、合作伙伴和投资者的反弹，批评其陷入类似微软的\"平台陷阱\"。"
   missing_fields: ["product_form", "delivery_model"]

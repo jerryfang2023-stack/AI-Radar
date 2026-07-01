@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-enterprise-data", "track-enterprise-workflow"]
   function: ["function-customer-service"]
   scenario: ["scenario-knowledge-base", "scenario-customer-ticket"]
   customer: ["customer-enterprise"]
@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "pricing_change", "open_source_release"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change"]
   product_form: ["evaluation_platform"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "evaluation_gap"]
+  pain_or_constraint: ["api_cost_spike", "evaluation_gap", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"

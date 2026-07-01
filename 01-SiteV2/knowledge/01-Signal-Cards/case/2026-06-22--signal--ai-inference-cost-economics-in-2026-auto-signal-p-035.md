@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data", "track-ai-infra", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-enterprise-data", "track-ai-infra"]
   function: ["function-customer-service"]
   scenario: ["scenario-knowledge-base", "scenario-customer-ticket"]
   customer: ["customer-enterprise"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "customer_support_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "customer_support"]
-  specific_task: ["sales_lead_research", "customer_ticket_triage"]
+  buyer_or_user: ["customer_support_team", "enterprise_ai_owner", "sales_team"]
+  team_or_function: ["customer_support", "sales"]
+  specific_task: ["customer_ticket_triage", "sales_lead_research"]
   business_action: ["customer_deployment", "pricing_change"]
   product_form: ["api"]
-  delivery_model: ["template_pack", "api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "api_cost_spike"]
+  delivery_model: ["api_usage_based", "template_pack"]
+  pain_or_constraint: ["api_cost_spike", "workflow_integration"]
   adoption_evidence: ["case_study", "pricing_page"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"

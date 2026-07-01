@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-enterprise-workflow"]
   function: ["function-customer-service"]
   scenario: ["scenario-logistics-supply-chain", "scenario-customer-ticket"]
   customer: ["customer-enterprise"]
@@ -41,13 +41,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "healthcare_provider", "operations_team"]
-  team_or_function: ["sales", "healthcare_operations", "operations"]
-  specific_task: ["sales_lead_research", "medical_documentation", "logistics_coordination"]
+  buyer_or_user: ["healthcare_provider", "operations_team", "sales_team"]
+  team_or_function: ["healthcare_operations", "operations", "sales"]
+  specific_task: ["logistics_coordination", "medical_documentation", "sales_lead_research"]
   business_action: ["customer_deployment", "governance_requirement"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "hallucination_risk", "security_compliance"]
+  pain_or_constraint: ["hallucination_risk", "security_compliance", "workflow_integration"]
   adoption_evidence: ["case_study", "customer_metric"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"

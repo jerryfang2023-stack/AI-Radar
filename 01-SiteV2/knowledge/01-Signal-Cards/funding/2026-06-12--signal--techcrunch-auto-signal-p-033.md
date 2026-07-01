@@ -35,21 +35,21 @@ formal_tags:
   scenario: ["scenario-sales-briefing"]
   customer: []
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-business-media"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "sales_team"]
   team_or_function: ["sales"]
   specific_task: ["sales_lead_research"]
-  business_action: ["funding_round", "customer_deployment"]
+  business_action: ["customer_deployment", "funding_round"]
   product_form: []
   delivery_model: []
   pain_or_constraint: []
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Techcrunch 获得$85M 融资，押注销售线索和收入团队协作 Theker 获 8500 万美元融资，打造可重新配置的工厂机器人 Theker 完成 8500 万美元融资。其工厂机器人采用可重新配置设计，不同于波士顿动力等固定形态人形机器人，不专精于任何特定任务。"
   missing_fields: ["product_form", "adoption_evidence", "delivery_model"]

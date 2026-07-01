@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-data"]
+  track: ["track-ai-coding", "track-enterprise-data"]
   function: ["function-engineering"]
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-developer-team"]
@@ -41,15 +41,15 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "engineering", "it_security"]
-  specific_task: ["sales_lead_research", "internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "open_source_release", "governance_requirement"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "sales_team"]
+  team_or_function: ["engineering", "it_security", "sales"]
+  specific_task: ["internal_tool_building", "sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release"]
   product_form: ["api", "developer_tool"]
-  delivery_model: ["open_source_commercial", "api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "permission_boundary", "data_silo"]
+  delivery_model: ["api_usage_based", "open_source_commercial"]
+  pain_or_constraint: ["data_silo", "permission_boundary", "workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["technical_blog", "first_party_announcement"]
+  source_evidence_type: ["first_party_announcement", "technical_blog"]
   evidence_basis: "raw_source_text"
   source_excerpt: "CData 发布 Connect AI 开发者版、Python SDK 和 CLI CData Launches Connect AI Developer Edition, Python SDK, and CLI June 24, 2026 CData Software launched three products for developers building AI applications on enterprise data:..."
   missing_fields: ["adoption_evidence"]

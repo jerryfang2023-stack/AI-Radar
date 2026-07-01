@@ -50,7 +50,7 @@ frontend:
     - "https://openai.com/index/choco/"
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: ["function-operations"]
   scenario: ["scenario-logistics-supply-chain"]
   customer: ["customer-enterprise"]

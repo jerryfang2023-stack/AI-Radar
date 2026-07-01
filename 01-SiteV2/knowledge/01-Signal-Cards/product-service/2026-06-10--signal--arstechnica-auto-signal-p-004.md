@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-customer-service", "track-ai-governance"]
+  track: ["track-ai-customer-service", "track-ai-governance"]
   function: ["function-customer-service"]
   scenario: ["scenario-customer-ticket", "scenario-agent-governance"]
   customer: []
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["product_launch", "governance_requirement"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "latency_sensitive", "security_compliance"]
+  pain_or_constraint: ["latency_sensitive", "security_compliance", "workflow_integration"]
   adoption_evidence: []
   source_evidence_type: ["first_party_announcement"]
   evidence_basis: "raw_source_text"

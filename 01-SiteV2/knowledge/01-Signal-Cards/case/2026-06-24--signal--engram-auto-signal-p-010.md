@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: ["scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: ["knowledge_base_qa"]
-  business_action: ["funding_round", "customer_deployment", "product_launch"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: ["rag_knowledge_base"]
   delivery_model: ["project_based_service"]
-  pain_or_constraint: ["workflow_integration", "context_management"]
+  pain_or_constraint: ["context_management", "workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement"]
+  source_evidence_type: ["first_party_announcement", "funding_news"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Engram 记录企业应用场景：地产开发和建筑设计流程 Engram Launches with $98M to Build AI That Actually Knows Your Organization ram Launches with $ ..."
   missing_fields: ["adoption_evidence"]

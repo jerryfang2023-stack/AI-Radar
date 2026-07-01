@@ -1,4 +1,4 @@
-﻿# 2026-06-26 Business Signals Asset Manifest
+# 2026-06-26 Business Signals Asset Manifest
 
 - generated_at: 2026-06-26T03:38:59.187Z
 - workflow_mode: codex_repair_local

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: ["scenario-construction-real-estate"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -41,7 +41,7 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["insurance_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "insurance_team"]
   team_or_function: ["insurance_operations"]
   specific_task: ["insurance_claim_review"]
   business_action: ["funding_round", "research_benchmark"]

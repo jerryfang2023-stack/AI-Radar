@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
@@ -44,10 +44,10 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner", "it_security_team"]
   team_or_function: ["it_security"]
   specific_task: []
-  business_action: ["customer_deployment", "partnership_integration", "governance_requirement", "failure_postmortem"]
+  business_action: ["customer_deployment", "partnership_integration", "governance_requirement"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "data_silo"]
+  pain_or_constraint: ["data_silo", "workflow_integration"]
   adoption_evidence: ["partnership_announcement", "pilot_or_poc", "third_party_report"]
   source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"

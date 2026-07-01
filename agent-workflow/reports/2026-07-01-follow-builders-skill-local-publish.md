@@ -12,3 +12,8 @@
 - obsidian_sync_groups: 21
 - obsidian_sync_files: 21
 - hermes_record: agent-workflow/reports/2026-07-01-follow-builders-skill-local-publish.md
+
+## Local Pull Skipped
+
+- local_pull_status: skipped_dirty_worktree
+- local_pull_reason: publish succeeded from isolated worktree; current workspace kept existing dirty files intact.

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-ai-infra"]
+  track: ["track-ai-coding", "track-ai-infra"]
   function: ["function-engineering"]
   scenario: []
   customer: ["customer-developer-team"]
@@ -44,7 +44,7 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "pricing_change", "open_source_release"]
+  business_action: ["customer_deployment", "product_launch", "pricing_change"]
   product_form: []
   delivery_model: ["api_usage_based"]
   pain_or_constraint: ["api_cost_spike", "evaluation_gap"]

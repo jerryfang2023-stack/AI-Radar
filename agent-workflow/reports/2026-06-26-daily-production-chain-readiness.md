@@ -1,4 +1,4 @@
-﻿# 2026-06-26 Daily Production Chain Readiness
+# 2026-06-26 Daily Production Chain Readiness
 
 - generated_at: 2026-06-26T03:36:40.055Z
 - stage: pre-commit

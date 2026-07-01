@@ -30,12 +30,12 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-enterprise-data", "track-ai-infra", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-business-media"]
 
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment"]
+  business_action: ["customer_deployment", "funding_round"]
   product_form: ["developer_tool"]
   delivery_model: []
   pain_or_constraint: ["hallucination_risk"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Niteshift 获得$7 m 融资，押注模型部署和算力服务 Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定 AI 编码智能体初创公司 Niteshift 完成 700 万美元种子轮融资，投资方包括多位知名天使投资人。公司由 Datadog 资深人士创立，核心主张是企业应拥有对模型的控制权，而非被大型 AI 模型厂商锁定。"
   missing_fields: ["adoption_evidence", "delivery_model"]

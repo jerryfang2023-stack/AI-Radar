@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-infra"]
+  track: ["track-ai-infra", "track-enterprise-workflow"]
   function: ["function-sales"]
   scenario: ["scenario-sales-briefing", "scenario-revenue-operations"]
   customer: ["customer-enterprise"]
@@ -43,15 +43,15 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "procurement_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "procurement"]
-  specific_task: ["sales_lead_research", "rfp_response"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "partnership_integration"]
+  buyer_or_user: ["enterprise_ai_owner", "procurement_team", "sales_team"]
+  team_or_function: ["procurement", "sales"]
+  specific_task: ["rfp_response", "sales_lead_research"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "latency_sensitive"]
+  pain_or_constraint: ["latency_sensitive", "workflow_integration"]
   adoption_evidence: ["procurement_contract"]
-  source_evidence_type: ["funding_news", "regulatory_or_procurement", "business_media"]
+  source_evidence_type: ["funding_news", "business_media", "regulatory_or_procurement"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Realm 发布 AI 能力，指向销售和收入团队流程 Realm Raises $4.5M to Bring the 'Cursor Moment' to Enterprise Sales Accessibility Statement Skip Navigation HELSINKI, April 22, 2026 /PRNewswire/ -- Realm has raised a $4.5 million Seed round ..."
   missing_fields: ["product_form", "delivery_model"]

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data"]
+  track: ["track-enterprise-data", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-enterprise"]
@@ -41,9 +41,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "engineering_team", "finance_team"]
-  team_or_function: ["sales", "engineering", "finance"]
-  specific_task: ["sales_lead_research", "internal_tool_building", "knowledge_base_qa"]
+  buyer_or_user: ["engineering_team", "finance_team", "sales_team"]
+  team_or_function: ["engineering", "finance", "sales"]
+  specific_task: ["internal_tool_building", "knowledge_base_qa", "sales_lead_research"]
   business_action: ["customer_deployment", "product_launch"]
   product_form: ["rag_knowledge_base"]
   delivery_model: []

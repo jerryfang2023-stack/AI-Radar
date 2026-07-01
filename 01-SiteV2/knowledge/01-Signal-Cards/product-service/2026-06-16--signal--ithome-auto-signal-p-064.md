@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 4
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-governance"]
+  track: ["track-ai-coding", "track-ai-governance", "track-enterprise-workflow"]
   function: ["function-engineering"]
   scenario: ["scenario-agent-governance"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -47,7 +47,7 @@ opportunity_signals:
   business_action: ["product_launch", "partnership_integration", "governance_requirement"]
   product_form: ["api", "rag_knowledge_base"]
   delivery_model: ["api_usage_based"]
-  pain_or_constraint: ["workflow_integration", "data_silo", "latency_sensitive", "security_compliance"]
+  pain_or_constraint: ["data_silo", "latency_sensitive", "security_compliance"]
   adoption_evidence: ["customer_metric"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"

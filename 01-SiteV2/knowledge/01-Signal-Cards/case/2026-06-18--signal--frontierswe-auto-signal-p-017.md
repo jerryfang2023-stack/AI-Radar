@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: []
   scenario: []
   customer: []
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner"]
   team_or_function: ["engineering"]
   specific_task: ["internal_tool_building"]
-  business_action: ["customer_deployment", "product_launch", "open_source_release", "research_benchmark"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release"]
   product_form: ["developer_tool"]
   delivery_model: []
   pain_or_constraint: ["data_silo", "evaluation_gap"]
   adoption_evidence: ["customer_metric"]
-  source_evidence_type: ["research_paper", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "business_media", "research_paper"]
   evidence_basis: "raw_source_text"
   source_excerpt: "智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆 智谱AI发布GLM-5.2，百万token上下文下的开源编码模型逼近闭源标杆 智谱AI发布GLM-5.2，在MIT许可下提供稳定百万token上下文。编码方面，FrontierSWE得分74.4%，仅落后Claude Opus 4.8一个百分点，领先GPT-5.5；PostTrainBench超越GPT-5.5和Opus 4.7，仅次于Opus 4.8；SW..."
   missing_fields: ["delivery_model"]

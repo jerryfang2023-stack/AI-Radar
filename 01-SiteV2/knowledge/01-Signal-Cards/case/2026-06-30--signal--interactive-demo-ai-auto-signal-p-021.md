@@ -47,8 +47,8 @@ opportunity_signals:
   business_action: ["customer_deployment"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "hallucination_risk", "latency_sensitive", "context_management"]
-  adoption_evidence: ["case_study", "usage_growth", "third_party_report"]
+  pain_or_constraint: ["context_management", "hallucination_risk", "latency_sensitive"]
+  adoption_evidence: ["case_study", "third_party_report", "usage_growth"]
   source_evidence_type: ["first_party_case"]
   evidence_basis: "raw_source_text"
   source_excerpt: "- Arcade Software Arcade's AI-native customer base in 2026 covers four product categories."

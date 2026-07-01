@@ -31,7 +31,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: ["function-engineering"]
   scenario: ["scenario-model-deployment", "scenario-logistics-supply-chain"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -43,13 +43,13 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "operations_team", "enterprise_ai_owner"]
-  team_or_function: ["sales", "operations"]
-  specific_task: ["sales_lead_research", "logistics_coordination"]
-  business_action: ["customer_deployment", "product_launch", "partnership_integration", "procurement_signal"]
+  buyer_or_user: ["enterprise_ai_owner", "operations_team", "sales_team"]
+  team_or_function: ["operations", "sales"]
+  specific_task: ["logistics_coordination", "sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["security_compliance", "evaluation_gap"]
+  pain_or_constraint: ["evaluation_gap", "security_compliance"]
   adoption_evidence: ["procurement_contract", "third_party_report"]
   source_evidence_type: ["technical_blog"]
   evidence_basis: "raw_source_text"

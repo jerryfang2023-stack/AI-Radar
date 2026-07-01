@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: []
   scenario: []
   customer: []
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "product_launch", "pricing_change"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: []
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "api_cost_spike", "security_compliance"]
+  pain_or_constraint: ["api_cost_spike", "security_compliance", "workflow_integration"]
   adoption_evidence: ["third_party_report"]
-  source_evidence_type: ["funding_news", "industry_report", "business_media"]
+  source_evidence_type: ["funding_news", "business_media", "industry_report"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Bloomberg 发布 AI 基础设施能力，切入模型部署和算力服务 前投资银行家为印度推出低成本视频AI 一家由前银行家创立的初创公司推出了印度首批本土视频AI平台之一，涉足此前由美国和中国公司主导的领域。"
   missing_fields: ["specific_task", "product_form", "delivery_model"]

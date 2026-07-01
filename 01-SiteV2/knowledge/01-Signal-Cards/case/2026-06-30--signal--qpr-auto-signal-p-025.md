@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-enterprise-data"]
+  track: ["track-enterprise-data", "track-enterprise-workflow"]
   function: []
   scenario: ["scenario-knowledge-base"]
   customer: ["customer-enterprise"]
@@ -43,7 +43,7 @@ opportunity_signals:
   schema_version: "opportunity-signals-v1"
   buyer_or_user: ["customer_support_team", "finance_team", "healthcare_provider"]
   team_or_function: ["customer_support", "finance", "healthcare_operations"]
-  specific_task: ["customer_ticket_triage", "medical_documentation", "logistics_coordination"]
+  specific_task: ["customer_ticket_triage", "logistics_coordination", "medical_documentation"]
   business_action: ["customer_deployment", "procurement_signal"]
   product_form: ["vertical_saas"]
   delivery_model: []

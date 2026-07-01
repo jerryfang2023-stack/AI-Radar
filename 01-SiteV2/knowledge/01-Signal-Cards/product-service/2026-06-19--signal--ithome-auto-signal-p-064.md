@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow"]
+  track: ["track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering", "function-sales"]
   scenario: ["scenario-sales-briefing"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -41,8 +41,8 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "enterprise_ai_owner", "it_security_team"]
-  team_or_function: ["sales", "it_security"]
+  buyer_or_user: ["enterprise_ai_owner", "it_security_team", "sales_team"]
+  team_or_function: ["it_security", "sales"]
   specific_task: ["sales_lead_research"]
   business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: ["copilot"]

@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-infra"]
+  track: ["track-ai-infra"]
   function: []
   scenario: []
   customer: []
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["funding_round", "customer_deployment", "product_launch"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: []
   delivery_model: []
   pain_or_constraint: ["workflow_integration"]
   adoption_evidence: []
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Amazon CEO reportedly 发布 AI 基础设施能力，切入模型部署和算力服务 Amazon CEO reportedly raised Anthropic model concerns before government crackdown # Amazon CEO reportedly 发布 AI 基础设施能力，切入模型部署和算力服务 ## 新闻事实 Amazon CEO reportedly 发布 AI 基础设施能..."
   missing_fields: ["specific_task", "product_form", "adoption_evidence", "delivery_model"]

@@ -30,12 +30,12 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-enterprise-workflow"]
   function: ["function-customer-service"]
   scenario: ["scenario-customer-ticket"]
   customer: ["customer-enterprise"]
   evidence: ["evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-industry-data"]
 
@@ -44,12 +44,12 @@ opportunity_signals:
   buyer_or_user: ["engineering_team", "enterprise_ai_owner", "it_security_team"]
   team_or_function: ["engineering", "it_security"]
   specific_task: ["internal_tool_building"]
-  business_action: ["funding_round", "customer_deployment", "product_launch", "governance_requirement"]
+  business_action: ["customer_deployment", "funding_round", "product_launch"]
   product_form: ["evaluation_platform"]
   delivery_model: []
-  pain_or_constraint: ["workflow_integration", "hallucination_risk", "security_compliance"]
+  pain_or_constraint: ["hallucination_risk", "security_compliance", "workflow_integration"]
   adoption_evidence: ["deployment_scale"]
-  source_evidence_type: ["funding_news", "first_party_announcement"]
+  source_evidence_type: ["first_party_announcement", "funding_news"]
   evidence_basis: "raw_source_text"
   source_excerpt: "VoiceRun 获得5 million 融资，押注企业 Agent 协作平台 VoiceRun Launches Full-Stack Voice AI Platform for Enterprises with ..."
   missing_fields: ["delivery_model"]

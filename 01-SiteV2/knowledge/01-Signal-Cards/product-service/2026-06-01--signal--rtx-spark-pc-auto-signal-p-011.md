@@ -43,9 +43,9 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["engineering_team", "insurance_team", "enterprise_ai_owner"]
+  buyer_or_user: ["engineering_team", "enterprise_ai_owner", "insurance_team"]
   team_or_function: ["engineering", "insurance_operations"]
-  specific_task: ["internal_tool_building", "insurance_claim_review"]
+  specific_task: ["insurance_claim_review", "internal_tool_building"]
   business_action: ["customer_deployment", "product_launch", "pricing_change"]
   product_form: ["developer_tool"]
   delivery_model: []

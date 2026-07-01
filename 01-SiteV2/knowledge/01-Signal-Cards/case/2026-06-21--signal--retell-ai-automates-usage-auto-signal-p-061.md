@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-ai-coding", "track-enterprise-workflow", "track-ai-customer-service"]
+  track: ["track-ai-customer-service", "track-ai-coding", "track-enterprise-workflow"]
   function: ["function-engineering", "function-customer-service"]
   scenario: ["scenario-construction-real-estate", "scenario-customer-ticket"]
   customer: ["customer-developer-team", "customer-enterprise"]
@@ -41,14 +41,14 @@ formal_tags:
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["sales_team", "customer_support_team", "finance_team"]
-  team_or_function: ["sales", "customer_support", "finance"]
-  specific_task: ["sales_lead_research", "customer_ticket_triage"]
-  business_action: ["customer_deployment", "product_launch", "partnership_integration", "pricing_change"]
+  buyer_or_user: ["customer_support_team", "finance_team", "sales_team"]
+  team_or_function: ["customer_support", "finance", "sales"]
+  specific_task: ["customer_ticket_triage", "sales_lead_research"]
+  business_action: ["customer_deployment", "product_launch", "partnership_integration"]
   product_form: ["agent_workbench"]
   delivery_model: ["api_usage_based", "project_based_service"]
   pain_or_constraint: ["api_cost_spike"]
-  adoption_evidence: ["deployment_scale", "pricing_page", "pilot_or_poc"]
+  adoption_evidence: ["deployment_scale", "pilot_or_poc", "pricing_page"]
   source_evidence_type: []
   evidence_basis: "raw_source_text"
   source_excerpt: "Retell AI Automates Usage-Based Pricing to Scale its AI Voice Agent ..."

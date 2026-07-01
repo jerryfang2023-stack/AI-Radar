@@ -30,7 +30,7 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-data", "track-ai-infra"]
+  track: ["track-enterprise-data", "track-ai-infra"]
   function: []
   scenario: ["scenario-knowledge-base"]
   customer: []
@@ -44,11 +44,11 @@ opportunity_signals:
   buyer_or_user: ["enterprise_ai_owner"]
   team_or_function: []
   specific_task: []
-  business_action: ["customer_deployment", "product_launch", "open_source_release", "research_benchmark"]
+  business_action: ["customer_deployment", "product_launch", "open_source_release"]
   product_form: []
   delivery_model: ["open_source_commercial"]
   pain_or_constraint: []
-  adoption_evidence: ["customer_metric", "procurement_contract", "pricing_page"]
+  adoption_evidence: ["customer_metric", "pricing_page", "procurement_contract"]
   source_evidence_type: ["first_party_announcement", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Reflection AI will pay $150 million a month beginning July 1, 2026 through 2029 for immediate access to Nvidia’s latest GB300 AI chips and supporting hardware across SpaceX’s Colossus 2 data center near Memphis, Tenness..."

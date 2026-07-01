@@ -30,18 +30,18 @@ primary_raw:
   importance_score: 5
 
 formal_tags:
-  track: ["track-ai-agent", "track-enterprise-workflow"]
+  track: ["track-enterprise-workflow"]
   function: []
   scenario: []
   customer: ["customer-enterprise"]
   evidence: ["evidence-customer-metric", "evidence-funding"]
-  stage: ["stage-rising"]
+  stage: []
   region: []
   source: ["source-business-media"]
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
-  buyer_or_user: ["legal_team", "enterprise_ai_owner"]
+  buyer_or_user: ["enterprise_ai_owner", "legal_team"]
   team_or_function: ["legal_compliance"]
   specific_task: ["contract_review"]
   business_action: ["funding_round"]
@@ -49,7 +49,7 @@ opportunity_signals:
   delivery_model: ["consulting_diagnostic"]
   pain_or_constraint: []
   adoption_evidence: ["customer_metric"]
-  source_evidence_type: ["funding_news", "first_party_announcement", "business_media"]
+  source_evidence_type: ["first_party_announcement", "funding_news", "business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "Sandstone 获 3000 万美元 A 轮融资，将 AI 引入内部法务团队 Sandstone 获 3000 万美元 A 轮融资，将 AI 引入内部法务团队 Sandstone 完成 3000 万美元 A 轮融资，由 Lightspeed Partners 领投，Sequoia 参投。资金将用于将 AI 技术引入企业内部法务团队，提升法律工作效率。"
   missing_fields: ["product_form"]

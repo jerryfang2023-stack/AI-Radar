@@ -1,4 +1,4 @@
-﻿# Quality Gates Report
+# Quality Gates Report
 
 鐢熸垚鏃堕棿锛?026/6/26 11:22:31
 
