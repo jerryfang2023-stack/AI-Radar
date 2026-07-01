@@ -1,6 +1,6 @@
 # V3.4 Tag System Audit
 
-Generated at: 2026-07-01T09:26:17.843Z
+Generated at: 2026-07-01T09:35:39.171Z
 
 ## Result
 
@@ -10,6 +10,11 @@ Generated at: 2026-07-01T09:26:17.843Z
 - Signal Cards carrying stage tags: 0
 - Track cleanup dry-run rows: 0
 - Opportunity rows with overly broad fields: 0
+- Frontstage display tag violations: 0
+- Frontstage aggregation boundary violations: 0
+- Frontstage opportunity field over-limit rows: 0
+- First-Line private tag violations: 0
+- Community private tag boundary violations: 0
 
 ## High Coverage Tags
 
@@ -66,6 +71,8 @@ None.
 - Cards: 214
 - Top10: 10
 - Allowed tag count: 69
+- Formal tags layer: Backend search, filtering, relationship graph assistance, and trend candidate context. Frontstage display is bounded and high-signal only.
+- Opportunity signals layer: Reports Center / Opportunity System source-near fields. These replace old formal_tags aggregation for opportunity maps.
 
 ### Current Tag Associations
 
@@ -101,6 +108,18 @@ None.
 | 30 天 | evidence-customer-adoption | 客户采用 | 73 |
 | 30 天 | scenario-knowledge-base | 知识库问答 | 49 |
 
+### Frontstage Display Tag Violations
+
+None.
+
+### Frontstage Aggregation Boundary Violations
+
+None.
+
+### Frontstage Opportunity Field Over-Limit Rows
+
+None.
+
 ## First-Line Viewpoints Tags
 
 | key | count |
@@ -116,6 +135,14 @@ None.
 | track-ai-coding | 2 |
 | track-ai-infra | 2 |
 
+### First-Line Invalid Tag Groups
+
+None.
+
+### First-Line Missing Required Groups
+
+None.
+
 ## Community Placeholder Values
 
 | key | count |
@@ -123,10 +150,20 @@ None.
 | monetization:待确认 | 11 |
 | industry:未识别行业 | 6 |
 
+### Community Missing Private Fields
+
+None.
+
+### Community Business Tag Leaks
+
+None.
+
 ## Recommended Cleanup Policy
 
 - Treat track-ai-agent as domain background when it appears with a more specific track.
 - Keep no more than 3 track tags per Signal Card; prefer the most specific vertical or workflow track.
 - Keep stage tags out of ordinary Signal Card frontstage display and aggregation.
 - Keep Reports Center opportunity maps on source-backed opportunity_signals, not formal_tags.
+- Keep First-Line Viewpoints on private opinion / track / source tags.
+- Keep Community Intelligence on private scene / industry / tools / monetization labels.
 - Review opportunity rows with more than 3 values in any field before using them for map cells.

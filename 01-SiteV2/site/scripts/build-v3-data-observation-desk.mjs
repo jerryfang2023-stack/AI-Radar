@@ -38,6 +38,7 @@ const allowedTagIds = new Set(tagDictionary.keys());
 const internalFrontstageTagIds = new Set(["stage-watch", "core-pool"]);
 const internalFrontstageTagLabels = new Set(["core pool"]);
 const frontstageAggregateMutedTagIds = new Set(["track-ai-agent", "customer-enterprise"]);
+const frontstageDisplayTagLimit = 3;
 const opportunitySignalFrontstageLimit = 3;
 const opportunitySignalValuePriority = {
   business_action: [
@@ -411,7 +412,7 @@ function frontstageDisplayTagIds(tags = {}) {
   const fallback = groups
     .flatMap((group) => tags[group] || [])
     .filter(isFrontstageDisplayTag);
-  return [...new Set(primary.length ? primary : fallback)].slice(0, 3);
+  return [...new Set(primary.length ? primary : fallback)].slice(0, frontstageDisplayTagLimit);
 }
 
 function displayTags(tags) {
@@ -3395,13 +3396,17 @@ function isMeaningfulAssociationTag(tag = "") {
   return true;
 }
 
+function isPublicAggregationTag(tag = "") {
+  return isMeaningfulAssociationTag(tag) && isHighSignalFrontstageTag(tag);
+}
+
 function buildTagAssociations(cards, activeDate) {
   const todayCards = cards.filter((card) => card.date === activeDate);
   const last7Cards = windowCards(cards, activeDate, 7);
   const last30Cards = windowCards(cards, activeDate, 30);
   const todayGroups = new Map();
   for (const card of todayCards) {
-    for (const tag of card.flatTags.filter(isMeaningfulAssociationTag)) {
+    for (const tag of card.flatTags.filter(isPublicAggregationTag)) {
       if (!todayGroups.has(tag)) todayGroups.set(tag, []);
       todayGroups.get(tag).push(card);
     }
@@ -3414,7 +3419,7 @@ function buildTagAssociations(cards, activeDate) {
     .map(([tag, items]) => {
       const coTags = new Map();
       for (const card of items) {
-        for (const otherTag of card.flatTags.filter(isMeaningfulAssociationTag)) {
+        for (const otherTag of card.flatTags.filter(isPublicAggregationTag)) {
           if (otherTag === tag) continue;
           coTags.set(otherTag, (coTags.get(otherTag) || 0) + 1);
         }
@@ -3735,7 +3740,7 @@ function buildTrendLinks(cards, activeDate, windowDays) {
   const inWindow = windowCards(cards, activeDate, windowDays);
   const groups = new Map();
   for (const card of inWindow) {
-    for (const tag of card.flatTags.filter(isMeaningfulAssociationTag).filter(isFrontstageDisplayTag)) {
+    for (const tag of card.flatTags.filter(isPublicAggregationTag)) {
       if (!groups.has(tag)) groups.set(tag, []);
       groups.get(tag).push(card);
     }
@@ -4268,6 +4273,15 @@ const payload = {
     top10Count: top10.length,
     source: "Signal Cards",
     tagPolicy: "formal_tags filtered by agent-workflow/product/tag-taxonomy.md",
+    tagLayerPolicy: {
+      formalTags: "Backend search, filtering, relationship graph assistance, and trend candidate context. Frontstage display is bounded and high-signal only.",
+      opportunitySignals: "Reports Center / Opportunity System source-near fields. These replace old formal_tags aggregation for opportunity maps.",
+      firstLineViewpoints: "Private column tags use opinion / track / source and must not become Business Signals evidence.",
+      communityIntelligence: "Private column labels use scene / industry / tools / monetization and must not enter Business Signals formal_tags.",
+      mutedAggregationTags: [...frontstageAggregateMutedTagIds],
+      frontstageDisplayTagLimit,
+      opportunitySignalFrontstageLimit,
+    },
     allowedTagCount: allowedTagIds.size,
   },
   categories: Object.entries(categoryLabels).map(([category, label]) => ({ category, label })),

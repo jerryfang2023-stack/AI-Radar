@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T09:26:17.843Z",
+  "generatedAt": "2026-07-01T09:35:39.171Z",
   "taxonomy": {
     "total": 74,
     "groups": {
@@ -707,6 +707,18 @@
     "cards": 214,
     "top10": 10,
     "allowedTagCount": 69,
+    "tagLayerPolicy": {
+      "formalTags": "Backend search, filtering, relationship graph assistance, and trend candidate context. Frontstage display is bounded and high-signal only.",
+      "opportunitySignals": "Reports Center / Opportunity System source-near fields. These replace old formal_tags aggregation for opportunity maps.",
+      "firstLineViewpoints": "Private column tags use opinion / track / source and must not become Business Signals evidence.",
+      "communityIntelligence": "Private column labels use scene / industry / tools / monetization and must not enter Business Signals formal_tags.",
+      "mutedAggregationTags": [
+        "track-ai-agent",
+        "customer-enterprise"
+      ],
+      "frontstageDisplayTagLimit": 3,
+      "opportunitySignalFrontstageLimit": 3
+    },
     "topFlatTags": [
       {
         "key": "customer-enterprise",
@@ -829,6 +841,12 @@
         "count": 4
       }
     ],
+    "displayTagViolationsCount": 0,
+    "displayTagViolations": [],
+    "aggregationViolationsCount": 0,
+    "aggregationViolations": [],
+    "opportunityOverLimitRowsCount": 0,
+    "opportunityOverLimitRows": [],
     "tagAssociations": [
       {
         "tag": "evidence-product-launch",
@@ -1022,7 +1040,11 @@
         "key": "track-ai-infra",
         "count": 2
       }
-    ]
+    ],
+    "invalidGroupRowsCount": 0,
+    "invalidGroupRows": [],
+    "missingRequiredRowsCount": 0,
+    "missingRequiredRows": []
   },
   "community": {
     "file": "01-SiteV2/site/data/community-intelligence.json",
@@ -1036,6 +1058,10 @@
         "key": "industry:未识别行业",
         "count": 6
       }
-    ]
+    ],
+    "missingPrivateRowsCount": 0,
+    "missingPrivateRows": [],
+    "businessTagLeakRowsCount": 0,
+    "businessTagLeakRows": []
   }
 }

@@ -5,11 +5,23 @@
     "businessSignalsColumnVersion": "BSIG-V1.1.5-corepool-top10-release",
     "enterpriseAiLensVersion": "EAI-V1.1.0-fde-lens-pool",
     "intelligenceMapColumnVersion": "IMAP-V2.0.0-report-center-opportunity-system",
-    "generatedAt": "2026-07-01T09:26:07.123Z",
+    "generatedAt": "2026-07-01T09:34:49.803Z",
     "activeDate": "2026-07-01",
     "top10Count": 10,
     "source": "Signal Cards",
     "tagPolicy": "formal_tags filtered by agent-workflow/product/tag-taxonomy.md",
+    "tagLayerPolicy": {
+      "formalTags": "Backend search, filtering, relationship graph assistance, and trend candidate context. Frontstage display is bounded and high-signal only.",
+      "opportunitySignals": "Reports Center / Opportunity System source-near fields. These replace old formal_tags aggregation for opportunity maps.",
+      "firstLineViewpoints": "Private column tags use opinion / track / source and must not become Business Signals evidence.",
+      "communityIntelligence": "Private column labels use scene / industry / tools / monetization and must not enter Business Signals formal_tags.",
+      "mutedAggregationTags": [
+        "track-ai-agent",
+        "customer-enterprise"
+      ],
+      "frontstageDisplayTagLimit": 3,
+      "opportunitySignalFrontstageLimit": 3
+    },
     "allowedTagCount": 69
   },
   "categories": [
