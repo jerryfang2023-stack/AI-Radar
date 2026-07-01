@@ -204,6 +204,7 @@
       || /相关变化涉及/u.test(text)
       || /可观察信息包括/u.test(text)
       || /流程结果、交付速度/u.test(text)
+      || /^原始来源标题(?:显示)?[：:]/u.test(text)
       || /^Bcg\b/u.test(text);
   }
 

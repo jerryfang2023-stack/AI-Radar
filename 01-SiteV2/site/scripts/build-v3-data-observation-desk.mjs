@@ -1033,6 +1033,7 @@ function publicFactLooksLikeTemplateFallback(value = "") {
   if (!text) return true;
   if (/^[A-Z][A-Za-z0-9&.' -]+ customer story$/iu.test(text)) return true;
   if (/^(?:Ltd\.?|Inc\.?|LLC|Corp\.?|Company)\s*(?:\u83b7\u5f97|\u83b7|\u5b8c\u6210)\s*\$?\s*\d/iu.test(text)) return true;
+  if (/^原始来源标题(?:显示)?[：:]/u.test(text)) return true;
   if (/来源材料显示，.+涉及.+流程|原文同时出现.+等数字/u.test(text)) return true;
   if (/原文称|的公开案例显示|公开案例显示.*AI\s*正在进入|AI 正在进入客户、采购、商品内容或内部工作流/iu.test(text)) return true;
   return /\u539f\u6587\u6240\u8ff0(?:\u80fd\u529b|\u573a\u666f)/u.test(text)
