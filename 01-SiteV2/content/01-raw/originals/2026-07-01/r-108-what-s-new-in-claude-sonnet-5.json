@@ -1,0 +1,267 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-108",
+  "title": "What's new in Claude Sonnet 5",
+  "original_url": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+  "canonical_url": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5",
+  "source_name": "Simon Willison's Blog",
+  "source_type": "builder",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-06-30T21:23:02.000Z",
+  "collected_at": "2026-07-01T02:33:05.595Z",
+  "language": "mixed",
+  "full_text": "30th June 2026 - Link Blog\nWhat's new in Claude Sonnet 5 ( via ) Claude Sonnet 5 came out this morning . I always head straight for the \"what's new\" developer docs because they tend to have more actionable information than the official announcement post.\nAnthropic say of Sonnet 5 that \"its performance is close to that of Opus 4.8, but at lower prices\". The system card helps explain how they were able to release the model without being blocked by the US government:\nSonnet 5 is significantly less capable at cyber tasks than Mythos 5: its safeguards are thus similar to those we apply to Opus 4.7 and Opus 4.8 (models that are more capable than Sonnet 5 but much less capable than Mythos 5).\nOf note from the \"what's new\" API changes:\nSampling parameters temperature , top_p , top_k are no longer supported.\nIt has a 1 million token context window and 128,000 maximum output tokens.\nIt features \"the same set of tools and platform features as Claude Sonnet 4.6\"\nAdaptive thinking is on by default, unless you specify \"thinking\": {type: \"disabled\"} .\nThe pricing is the same as Sonnet 4.6: $3/million input, $15/million input, with an introductory discount to $2/$10 until 31st August. But...\nThe model has a new tokenizer, where \"The same input text produces approximately 30% more tokens than on Claude Sonnet 4.6.\" - effectively a 30% price increase.\nI used my Claude Token Counter tool to try out the new tokenizer. Here are my results for several larger documents:\nDocument\nSonnet 4.6\nOpus 4.7\nSonnet 5\nUniversal Declaration of Human Rights (English)\n2,356\n3,347\n1.42x\n3,341\n1.42x\nUniversal Declaration of Human Rights (Spanish)\n3,572\n4,753\n1.33x\n4,747\n1.33x\nUniversal Declaration of Human Rights (Chinese, Mandarin Simplified)\n3,334\n3,366\n1.01x\n3,360\n1.01x\nsqlite_utils/db.py (4,279 lines of Python)\n44,014\n56,118\n1.28x\n56,113\n1.27x\nSo the new token is roughly 1.4x times more expensive for English, 1.33x for Spanish, 1.28x for Python code and effectively the same cost for Simplified Mandarin.\nHere's the pelican . It's nothing to write home about. Sonnet 5 thinks it looks like a goose.",
+  "clean_text": "30th June 2026 - Link Blog\nWhat's new in Claude Sonnet 5 ( via ) Claude Sonnet 5 came out this morning . I always head straight for the \"what's new\" developer docs because they tend to have more actionable information than the official announcement post.\nAnthropic say of Sonnet 5 that \"its performance is close to that of Opus 4.8, but at lower prices\". The system card helps explain how they were able to release the model without being blocked by the US government:\nSonnet 5 is significantly less capable at cyber tasks than Mythos 5: its safeguards are thus similar to those we apply to Opus 4.7 and Opus 4.8 (models that are more capable than Sonnet 5 but much less capable than Mythos 5).\nOf note from the \"what's new\" API changes:\nSampling parameters temperature , top_p , top_k are no longer supported.\nIt has a 1 million token context window and 128,000 maximum output tokens.\nIt features \"the same set of tools and platform features as Claude Sonnet 4.6\"\nAdaptive thinking is on by default, unless you specify \"thinking\": {type: \"disabled\"} .\nThe pricing is the same as Sonnet 4.6: $3/million input, $15/million input, with an introductory discount to $2/$10 until 31st August. But...\nThe model has a new tokenizer, where \"The same input text produces approximately 30% more tokens than on Claude Sonnet 4.6.\" - effectively a 30% price increase.\nI used my Claude Token Counter tool to try out the new tokenizer. Here are my results for several larger documents:\nDocument\nSonnet 4.6\nOpus 4.7\nSonnet 5\nUniversal Declaration of Human Rights (English)\n2,356\n3,347\n1.42x\n3,341\n1.42x\nUniversal Declaration of Human Rights (Spanish)\n3,572\n4,753\n1.33x\n4,747\n1.33x\nUniversal Declaration of Human Rights (Chinese, Mandarin Simplified)\n3,334\n3,366\n1.01x\n3,360\n1.01x\nsqlite_utils/db.py (4,279 lines of Python)\n44,014\n56,118\n1.28x\n56,113\n1.27x\nSo the new token is roughly 1.4x times more expensive for English, 1.33x for Spanish, 1.28x for Python code and effectively the same cost for Simplified Mandarin.\nHere's the pelican . It's nothing to write home about. Sonnet 5 thinks it looks like a goose.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-01/r-108-what-s-new-in-claude-sonnet-5.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-01/r-108-what-s-new-in-claude-sonnet-5.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-content-container",
+  "extraction_quality": "medium",
+  "extraction_method": "content-container",
+  "readability_score": 75,
+  "extractor_diagnostics": {
+    "readability_score": 75,
+    "text_length": 2097,
+    "paragraph_count": 18,
+    "sentence_count": 15,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0.0024,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "content-container"
+  },
+  "has_full_text": true,
+  "content_length": 2097,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "b7646efa3a7896be",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "merged_provider_duplicates",
+  "url_hash": "9a7410fe93ec11d4",
+  "content_hash": "b7646efa3a7896be",
+  "full_text_hash": "b7646efa3a7896be",
+  "semantic_hash": "3b01f1d2da5af66e",
+  "duplicate_of": "merged 1 duplicate provider hit(s) before Raw selection",
+  "first_seen_at": "2026-06-30T21:23:02.000Z",
+  "last_seen_at": "2026-07-01T02:33:05.595Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "&lt;p&gt;&lt;strong&gt;&lt;a href=\"https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5\"&gt;What&amp;#x27;s new in Claude Sonnet 5&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; Claude Sonnet 5 came out &lt;a href=\"https://www.anthropic.com/news/claude-sonnet-5\"&gt;this morning&lt;/a&gt;. I always head straight for the \"what's new\" developer docs because they tend to have more actionable information than the official announcement post.&lt;/p&gt; &lt;p&gt;Anthropic say of Sonnet 5 that",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "30th June 2026 - Link Blog What's new in Claude Sonnet 5 ( via ) Claude Sonnet 5 came out this morning .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "quote",
+      "text": "I always head straight for the \"what's new\" developer docs because they tend to have more actionable information than the official announcement post.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "Anthropic say of Sonnet 5 that \"its performance is close to that of Opus 4.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "company_action",
+      "text": "8, but at lower prices\".",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    },
+    {
+      "type": "product_update",
+      "text": "The system card helps explain how they were able to release the model without being blocked by the US government: Sonnet 5 is significantly less capable at cyber tasks than Mythos 5: its safeguards are thus similar to those we apply to Opus 4.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "high",
+      "confidence": "medium"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Simon Willison's Blog",
+      "Anthropic"
+    ],
+    "products": [
+      "Claude",
+      "claude"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "计费 / 预算管理"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "5",
+      "27",
+      "30",
+      "2026",
+      "4.8",
+      "4.7",
+      "5 b",
+      "1 million"
+    ],
+    "quotes": [
+      "https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5",
+      "https://www.anthropic.com/news/claude-sonnet-5",
+      "what's new",
+      "what's new",
+      "its performance is close to that of Opus 4.8, but at lower prices"
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "30th June 2026 - Link Blog What's new in Claude Sonnet 5 ( via ) Claude Sonnet 5 came out this morning .",
+      "Anthropic say of Sonnet 5 that \"its performance is close to that of Opus 4.",
+      "8, but at lower prices\"."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 5,
+    "importance_reason": "new product or service; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "commercial_or_risk_context"
+    ],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "candidate",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# What's new in Claude Sonnet 5\n\n- raw_id: R-108\n- original_url: https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything\n- source_name: Simon Willison's Blog\n- collected_at: 2026-07-01T02:33:05.595Z\n\n## clean_text\n\n30th June 2026 - Link Blog\nWhat's new in Claude Sonnet 5 ( via ) Claude Sonnet 5 came out this morning . I always head straight for the \"what's new\" developer docs because they tend to have more actionable information than the official announcement post.\nAnthropic say of Sonnet 5 that \"its performance is close to that of Opus 4.8, but at lower prices\". The system card helps explain how they were able to release the model without being blocked by the US government:\nSonnet 5 is significantly less capable at cyber tasks than Mythos 5: its safeguards are thus similar to those we apply to Opus 4.7 and Opus 4.8 (models that are more capable than Sonnet 5 but much less capable than Mythos 5).\nOf note from the \"what's new\" API changes:\nSampling parameters temperature , top_p , top_k are no longer supported.\nIt has a 1 million token context window and 128,000 maximum output tokens.\nIt features \"the same set of tools and platform features as Claude Sonnet 4.6\"\nAdaptive thinking is on by default, unless you specify \"thinking\": {type: \"disabled\"} .\nThe pricing is the same as Sonnet 4.6: $3/million input, $15/million input, with an introductory discount to $2/$10 until 31st August. But...\nThe model has a new tokenizer, where \"The same input text produces approximately 30% more tokens than on Claude Sonnet 4.6.\" - effectively a 30% price increase.\nI used my Claude Token Counter tool to try out the new tokenizer. Here are my results for several larger documents:\nDocument\nSonnet 4.6\nOpus 4.7\nSonnet 5\nUniversal Declaration of Human Rights (English)\n2,356\n3,347\n1.42x\n3,341\n1.42x\nUniversal Declaration of Human Rights (Spanish)\n3,572\n4,753\n1.33x\n4,747\n1.33x\nUniversal Declaration of Human Rights (Chinese, Mandarin Simplified)\n3,334\n3,366\n1.01x\n3,360\n1.01x\nsqlite_utils/db.py (4,279 lines of Python)\n44,014\n56,118\n1.28x\n56,113\n1.27x\nSo the new token is roughly 1.4x times more expensive for English, 1.33x for Spanish, 1.28x for Python code and effectively the same cost for Simplified Mandarin.\nHere's the pelican . It's nothing to write home about. Sonnet 5 thinks it looks like a goose.\n\n## full_text\n\n30th June 2026 - Link Blog\nWhat's new in Claude Sonnet 5 ( via ) Claude Sonnet 5 came out this morning . I always head straight for the \"what's new\" developer docs because they tend to have more actionable information than the official announcement post.\nAnthropic say of Sonnet 5 that \"its performance is close to that of Opus 4.8, but at lower prices\". The system card helps explain how they were able to release the model without being blocked by the US government:\nSonnet 5 is significantly less capable at cyber tasks than Mythos 5: its safeguards are thus similar to those we apply to Opus 4.7 and Opus 4.8 (models that are more capable than Sonnet 5 but much less capable than Mythos 5).\nOf note from the \"what's new\" API changes:\nSampling parameters temperature , top_p , top_k are no longer supported.\nIt has a 1 million token context window and 128,000 maximum output tokens.\nIt features \"the same set of tools and platform features as Claude Sonnet 4.6\"\nAdaptive thinking is on by default, unless you specify \"thinking\": {type: \"disabled\"} .\nThe pricing is the same as Sonnet 4.6: $3/million input, $15/million input, with an introductory discount to $2/$10 until 31st August. But...\nThe model has a new tokenizer, where \"The same input text produces approximately 30% more tokens than on Claude Sonnet 4.6.\" - effectively a 30% price increase.\nI used my Claude Token Counter tool to try out the new tokenizer. Here are my results for several larger documents:\nDocument\nSonnet 4.6\nOpus 4.7\nSonnet 5\nUniversal Declaration of Human Rights (English)\n2,356\n3,347\n1.42x\n3,341\n1.42x\nUniversal Declaration of Human Rights (Spanish)\n3,572\n4,753\n1.33x\n4,747\n1.33x\nUniversal Declaration of Human Rights (Chinese, Mandarin Simplified)\n3,334\n3,366\n1.01x\n3,360\n1.01x\nsqlite_utils/db.py (4,279 lines of Python)\n44,014\n56,118\n1.28x\n56,113\n1.27x\nSo the new token is roughly 1.4x times more expensive for English, 1.33x for Spanish, 1.28x for Python code and effectively the same cost for Simplified Mandarin.\nHere's the pelican . It's nothing to write home about. Sonnet 5 thinks it looks like a goose.\n\n## extraction_diagnostics\n\n- extraction_method: content-container\n- readability_score: 75\n- fetch_status: fetched-readable-text-content-container\n- extraction_quality: medium\n\n## key_excerpts\n\n1. [quote / signal_card_candidate, relationship_graph_input, viewpoint / high] &lt;p&gt;&lt;strong&gt;&lt;a href=\"https://platform.claude.com/docs/en/about-claude/models/whats-new-sonnet-5\"&gt;What&amp;#x27;s new in Claude Sonnet 5&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt; Claude Sonnet 5 came out &lt;a href=\"https://www.anthropic.com/news/claude-sonnet-5\"&gt;this morning&lt;/a&gt;. I always head straight for the \"what's new\" developer docs because they tend to have more actionable information than the official announcement post.&lt;/p&gt; &lt;p&gt;Anthropic say of Sonnet 5 that\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 30th June 2026 - Link Blog What's new in Claude Sonnet 5 ( via ) Claude Sonnet 5 came out this morning .\n3. [quote / signal_card_candidate, relationship_graph_input, viewpoint / high] I always head straight for the \"what's new\" developer docs because they tend to have more actionable information than the official announcement post.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Anthropic say of Sonnet 5 that \"its performance is close to that of Opus 4.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] 8, but at lower prices\".\n6. [product_update / signal_card_candidate, relationship_graph_input, business_change / high] The system card helps explain how they were able to release the model without being blocked by the US government: Sonnet 5 is significantly less capable at cyber tasks than Mythos 5: its safeguards are thus similar to those we apply to Opus 4.\n"
+}

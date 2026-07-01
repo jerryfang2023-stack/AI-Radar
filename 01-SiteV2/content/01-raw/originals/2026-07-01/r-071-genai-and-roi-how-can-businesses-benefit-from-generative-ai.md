@@ -1,0 +1,354 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-071
+title: "GenAI and ROI: How Can Businesses Benefit from Generative AI?"
+original_url: "https://www.digitechsystems.com/genai-and-roi-how-can-businesses-benefit-from-generative-ai/"
+canonical_url: "https://digitechsystems.com/genai-and-roi-how-can-businesses-benefit-from-generative-ai"
+source_name: "keyword search / Anysearch"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_market_trend"
+search_path: "a_media_gdelt"
+search_path_label: "A 级媒体 / GDELT 路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-01T02:33:05.467Z
+language: mixed
+full_text_hash: 2b8d268a196c7a00
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-01/r-071-genai-and-roi-how-can-businesses-benefit-from-generative-ai.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-01/r-071-genai-and-roi-how-can-businesses-benefit-from-generative-ai.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 94
+extractor_diagnostics: {"readability_score":94,"text_length":17839,"paragraph_count":73,"sentence_count":148,"boilerplate_hits":1,"symbol_ratio":0.0027,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 17839
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2b8d268a196c7a00","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 9885058afc786553
+content_hash: 2b8d268a196c7a00
+semantic_hash: 54558f9dd9364d45
+duplicate_of: ""
+first_seen_at: "2026-07-01T02:33:05.467Z"
+last_seen_at: 2026-07-01T02:33:05.467Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_case","importance_score":5,"importance_reason":"real customer or adoption case; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["keyword search","Anysearch"],"products":[],"people":[],"industries":["法律 / 法务","金融 / 保险","医疗"],"roles":["CIO / IT 负责人","法务 / 律师","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理"],"business_actions":["发布 / 推出","定价 / 计费变化"],"affected_departments":["IT / 安全","法务","财务 / 预算","销售 / 客服"],"numbers":["2025","8%","14%","78 million","1","61%","2","63%"],"quotes":["What’s the termination clause for the imaging vendor?","What does the Q3 update say about budget?","Summarize the compliance section.","using AI,"]}
+evidence_seed: {"company_actions":["Go Back How do you know whether Generative AI (GenAI) is delivering real, measurable Return on your Investment (ROI) for your business?","In this article, you’ll learn what GenAI is, why it matters, and some of the limitations of the technology.","You’ll also see nine practical, high‑value use cases where Sys."],"case_details":["How do you know whether Generative AI (GenAI) is delivering real, measurable Return on your Investment (ROI) for your business? / query=AI transformation workflow automation ROI customer case / intent=find_market_trend / path=a_media_gdelt"],"workflow_changes":[],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","法务 / 律师","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"case_detail","text":"How do you know whether Generative AI (GenAI) is delivering real, measurable Return on your Investment (ROI) for your business? / query=AI transformation workflow automation ROI customer case / intent=find_market_trend / path=a_media_gdelt","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Go Back How do you know whether Generative AI (GenAI) is delivering real, measurable Return on your Investment (ROI) for your business?","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"In this article, you’ll learn what GenAI is, why it matters, and some of the limitations of the technology.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"You’ll also see nine practical, high‑value use cases where Sys.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"tm ® Intelligence is already helping organizations improve efficiency, accuracy, and profitability with GenAI.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Finally, you’ll learn five actionable tips to help CIOs and business leaders measure AI project ROI with confidence.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# GenAI and ROI: How Can Businesses Benefit from Generative AI?
+
+## clean_text
+
+Go Back
+How do you know whether Generative AI (GenAI) is delivering real, measurable Return on your Investment (ROI) for your business?
+In this article, you’ll learn what GenAI is, why it matters, and some of the limitations of the technology. You’ll also see nine practical, high‑value use cases where Sys.tm ® Intelligence is already helping organizations improve efficiency, accuracy, and profitability with GenAI. Finally, you’ll learn five actionable tips to help CIOs and business leaders measure AI project ROI with confidence.
+What Is GenAI?
+Generative AI (GenAI) is technology that analyzes information and produces new content. Where does the information come from? Inside this type of AI, a Large Language Model (LLM) has been fed a huge amount of information, from which it understands language patterns. Based on those patterns, GenAI can draft content, summarize documents, extract insights, and support decision‑making across the business. GenAI doesn’t just speed up tasks. When used effectively, it can help organizations understand, interpret, and act on information—especially when the source information has been limited to only include a company’s own documents and data.
+How It Works
+GenAI uses a type of Artificial Intelligence (AI) known as machine learning, which typically includes neural networks and large language models, to recognize patterns in massive datasets. It then uses those patterns to generate fresh content that feels human‑made.
+Why It Matters
+GenAI has the potential to transform industries by automating creative and cognitive tasks, accelerating innovation, and enabling organizations to scale expertise across teams. For businesses, GenAI isn’t just another tool, it can be a catalyst for operational transformation—especially in an era when profitability is being squeezed by rising costs.
+The World Economic Forum’s 2025 Jobs Report indicated that changes due to this type of AI will eliminate 8% of today’s total job. They clarify, however, that it will also create new jobs equivalent to 14% of today’s total employment. That’s a net increase in jobs of around 78 million opportunities! [1]
+The Reality of GenAI : It’s Strengths Come with Limitations
+While GenAI offers tremendous potential, it’s still evolving as a technology. Many organizations experimenting with standalone AI tools quickly discover challenges such as:
+Hallucinations and inaccuracies appear in generated content when the LLMs express confidence but research reveals incorrect information presented as factual.
+Most Large Language Models (LLMs) used to generate content were initially trained by “reading” the internet. Unfortunately, because the internet is an open publishing platform (meaning anyone can say almost anything), bias becomes apparent in outputs based on this training data.
+Have you ever tried running side-by-side prompt inquiries in multiple AI tools? You may be surprised to see inconsistent (and sometimes contradictory) results depending on the prompt, model, or context of the user. Not all tools are suitable for all business applications.
+One of the first and most publicized GenAI concerns involved sensitive information being released into the general content sourced by the AI tools (the LLMs). In many cases this involved leaking legally protected personal information, intellectual property, forward-looking strategic statements, and even sensitive financial data to the public sphere. While the tools are working to allow paid subscribers the option of toggling off the option of sharing information with the LLM, many users are still unaware of the concern and the protections are not perfect, leaving organizations exposed to regulatory and legal backlash.
+The courts have yet to fully settle the question of copyright as it applies to GenAI content. LLMs contain copyrighted content that they then combine together to create new content. Traditional copyright law requires sourcing both verbatim words and phrases (quoted content) as well as ideas pulled from another’s work, yet GenAI tools rarely provide sources for the results they generate.
+Perhaps the biggest concern for business users has to do with the value returned to the business for their investment in AI technologies. McKinsey reported that as many as 61% of companies aren’t seeing value from their use of AI. [2] They point to two main reasons:
+Failure to embed AI tasks within the context of larger business needs and processes.
+Poorly or untrained users who can generate prompt results, but who don’t really know how to validate the usefulness or reliability of those results. In these instances, value can even be lost when a company relies on bad AI-generated content to make decisions. These skill gaps are the biggest barrier to value, according to 63% of employers. [3]
+These limitations are real, and informed buyers know it. That’s why businesses are increasingly looking for trusted, user-friendly, workflow‑ready platforms that reduce risk and deliver consistent, repeatable value.
+From Hype to Impact: 9 Practical Business Uses for Sys.tm ® Intelligence GenAI
+While GenAI is everywhere in the headlines, the real value comes from applying it to everyday business workflows. According to recent research, more than 92% of Fortune 500 companies have already adopted GenAI in some form, with 78% of Executive Leaders believing the benefits of Generative AI outweigh the risks. [4]
+GenAI is most likely to deliver ROI when it reduces manual work, improves decision‑making, or accelerates processes that previously required significant human effort. Consider how the following high-impact use cases may work for your organization.
+1. Legal & Compliance: Contract Analysis in Seconds
+GenAI can review, summarize, and extract key clauses from contracts instantly, reducing legal review time and improving compliance accuracy. Teams gain faster insights and fewer bottlenecks. For instance, a healthcare provider can streamline vendor agreement management using AI. Instead of searching through dense contracts, staff can ask questions like, “What’s the termination clause for the imaging vendor?” The AI scans legal documents and returns concise answers. It can also be asked to flag expiration clauses and track auto-renewals, helping teams minimize legal exposure. This ensures no key details are missed, strengthens compliance processes, and lets staff spend less time buried in documents. They’ll have more time for caring for patients.
+2. Document Summarization: Making Long Content Digestible
+Whether it’s a 40‑page policy, a technical manual, or a customer proposal, GenAI can summarize long documents into clear, actionable insights. Employees spend less time reading and more time executing. For example, a consulting firm uses GenAI to search their document archive. Employees can prompt the system with questions like, “What does the Q3 update say about budget?” or “Summarize the compliance section.” The AI can find relevant content, highlight key points, and return short summaries with page references. This saves hours of manual reading, improves accuracy, and enhances collaboration. Whether onboarding new hires or answering client questions, teams gain faster access to the information they need to deliver results.
+3. Sales Operations: Turning Monthly Reports into Strategic Reviews
+Sales teams can transform raw CRM data into polished summaries, performance insights, and recommended actions. Leaders get clearer visibility and faster decision‑making. At a consumer goods company, the sales operations team no longer spends days compiling data. They highlight a folder of monthly Excel reports and prompt their AI tool to generate a comprehensive annual summary. The system totals key metrics, identifies top-selling SKUs, flags underperforming regions, and charts monthly trends. Within minutes, leaders receive a polished report. The GenAI tool eliminates the need for manual data research and compilation and gives teams more time to focus on delivering revenue.
+4. Financial Operations and Accounting
+GenAI accelerates invoice processing, expense categorization, variance explanations, and audit preparation. Finance teams reduce manual data entry and improve accuracy across the board. This technology is especially helpful for building forecasts, analyzing historical cash patterns, and identifying drivers of inflows/outflows. Financial experts have seen a 3-5 hour savings per forecast cycle while adding accuracy.
+5. Operations & Supply Chain: Predictive Merchandising
+GenAI can analyze historical data, identify trends, and generate predictive insights for inventory planning, supplier risk, and demand forecasting, therefore helping organizations reduce waste and improve margins. For example, GenAI can suggest optimal pricing and promotional strategies based on demand forecasts, competitor trends, and inventory levels. Better data insights have increased revenue and profitability.
+6. HR and People Operations
+From drafting job descriptions to summarizing resumes and generating interview questions, GenAI streamlines hiring and onboarding. HR teams spend less time on administrative tasks and more time on people. GenAI can read resumes, look for key skills, identify experience gaps, and produce a concise summary for recruiters. For example, one organization used GenAI to review 150 resumes for a project manager role. Each resume was summarized into a single paragraph that highlighted certifications, years of experience, and relevant project history. The hiring manager and HR team followed up with candidates who better matched the company’s needs.
+7. Price Optimization
+GenAI can analyze market trends, historical sales, and competitive data to recommend pricing strategies that maximize revenue and profitability. This can be beneficial for new product pricing , price changes, promotions, and more. GenAI can provide insight into competitor price and benchmarks and predicted demand curves, enabling smart pricing strategies that offer a quicker path to profitability.
+8. Customer Relationship Management (CRM)
+GenAI can be used to enhance CRM data by identifying leads in the database that demonstrate qualities and behavior tied to high purchase likelihood and prioritizing them into a task list for sales follow-up. This increases sales efficiency by focusing effort on high-probability opportunities and improves pipeline quality by de-prioritizing contacts who are not yet ready for purchase.
+9. Automating Cybersecurity Threat Analysis
+Security teams can use GenAI to summarize threat reports, classify incidents, and generate recommended actions. This reduces response time and strengthens organizational resilience. For example, after a phishing incident, GenAI can be used to draft a summary including timeline, affected accounts, containment actions, and recommended next steps. By creating a clear, structured incident summary for SOC teams, leadership, and auditors, GenAI can save analysts hours of documentation time while strengthening audit readiness and helping the organization better serve customers.
+5 Tips to Help Businesses and CIOs Measure GenAI ROI
+Bloomberg Intelligence predicts that generative AI could become a $1.3 trillion market by 2032, so you know value is available for smart users. [5] Now that we have explored specific use cases, you may be wondering how businesses can measure the real value they get from implementing GenAI. Here are five practical steps to help you get the most from your use of GenAI:
+1. Tie AI implementations to Business Goals and Problems
+Technology for technology’s sake rarely proves effective. Rather than starting with a goal of “using AI,” start first by understanding your company’s most pressing problems or most important goals. Then consider where the application of AI may help solve the problem or advance progress toward your goals. AI technology is simply a tool you can strategically use to improve your business.
+2. Embed the Use of AI into Automated Processes
+One of the biggest challenges to positive AI results is that workers treat each instance of a task as a unique project, and they don’t retain or learn from previous prompt results. We recommend testing queries for common tasks (like document summarization, report building, and data analysis) across a variety of GenAI products. Once you’ve chosen the tool that offers the best results for your business, hone the prompt language to deliver consistent, reliable results each time the query is run against a different document or dataset. When you know which LLM to use, and how to prompt it to best meet your needs, you can embed these tasks into automated processes that will deliver reliable results time after time. Eliminating human inconsistencies and errors from AI-enabled tasks leads to better results.
+3. Help Your Workforce Close Skill Gaps
+Hiring new workers is typically significantly more expensive than helping your existing staff to upgrade their skills to include AI knowledge and expertise. As you replace various job tasks with automation, consider retraining those workers to add value in other areas of the business. Where there is an interest and aptitude in learning AI-specific skills, some may even become your AI experts for their teams.
+4. Choose and Measure Clear KPIs
+Though a buzzword, Key Performance Indicators (KPI) are strategically helpful for companies when used to clearly see where projects are returning financial value and where they are not. Think of them simply as the measurable results you will track regularly to see the overall impact of a technology project. For GenAI projects, choose one or two KPIs for each implementation and then measure against these indicators on a regular basis. Keep in mind, it may take a few months for return to show, so don’t give up on your AI projects too soon!
+5. Iterate and Retrain When Needed
+AI tools are evolving rapidly, so ongoing skill training is necessary for ongoing ROI. Create an environment where workers can get to know new technologies as they emerge and where they feel safe to recommend AI use to improve their jobs. In addition, AI companies iterate the LLMS that drive their products, so prompts and processes need to be evaluated on a regular basis. Incremental improvements lead to significant and ongoing financial return.
+Sys.tm ® Intelligence : Solving the Value Problem in GenAI
+Digitech Systems is uniquely positioned in the GenAI industry. We have almost thirty years of experience helping businesses securely manage and retain their documents and data, so AI sits naturally within our expertise. Sys.tm®, the world only composable information management platform, offers a uniquely easy-to-use GenAI experience, called Sys.tm® Intelligence. Unlike standalone GenAI tools, Sys.tm:
+Embeds GenAI directly into business workflows, so users can ensure AI is applied consistently and at the right moment to get the most from business information.
+Allows workers to dynamically choose the best GenAI tool by sampling prompt outputs side‑by‑side and selecting the LLM that delivers the most accurate, relevant result.
+Provides governance and control of your information and GenAI outputs by allowing users to select source documents and maintaining strict security protocols throughout the process.
+Sys.tm isn’t just another GenAI tool, it’s the only platform that combines intelligent information management, workflow automation, Robotic Process Automation (RPA), and multi‑engine GenAI capabilities into a single, smart information management system.
+Ready to See Real ROI from GenAI?
+According to Gartner, businesses adopting GenAI could achieve 15.7% cost savings and could boost productivity by as much as 25%. [6]
+GenAI can drive efficiency, accuracy, and strategic advantage for your business. But you’ll want to stay informed about progress against some of the limitations noted above, while also carefully implementing this tool to help with specific business scenarios. You should expect AI to continue to evolve, so implement alongside ongoing training initiatives for workers for best results.
+If you’re ready to experience the AI impact for yourself, now is the perfect time to get started. We offer a free trial of Sys.tm at https://www.sys.tm/welcome . It’s a low-risk way to see how GenAI might transform your business.
+[1] https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf
+[2] Singla, Alex, et. al. (2025, March). The State of AI: How Organizations Are Rewriting to Capture Value. McKinsey. Retrieved from: https://www.mckinsey.com/~/media/mckinsey/business functions/quantumblack/our insights/the state of ai/2025/the-state-of-ai-how-organizations-are-rewiring-to-capture-value_final.pdf?shouldindex=false
+[3] https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf
+[4] https://explodingtopics.com/blog/generative-ai-stats
+[5] https://www.bloomberg.com/company/press/generative-ai-to-become-a-1-3-trillion-market-by-2032-research-finds/
+[6] https://www.gartner.com/en/human-resources/topics/artificial-intelligence-in-hr?utm_medium=asset&utm_campaign=RM_GB_YOY_HRL_NPP_IA1_AIHRTOOLKITBYLINE&utm_term=special-report
+Category:
+All Businesses Artificial Intelligence ( AI ) Automation Digital Transformation Sys.tm
+Other posts
+Betting on Microservices and Composable Technologies
+Hey VARs! Is your tech offering still forcing customers to buy more than they need? This Imaging Channel article, written ...
+View Details
+The Anatomy of a Secure Document
+Every electronic document carries risk. See the five layers of security work together to protect your information from creation to ...
+View Details
+25 Executives Share Their Benefits of Automation
+How much time could your organization reclaim if automation handled the work that slows teams down? In this new Fast ...
+View Details
+
+## full_text
+
+Go Back
+How do you know whether Generative AI (GenAI) is delivering real, measurable Return on your Investment (ROI) for your business?
+In this article, you’ll learn what GenAI is, why it matters, and some of the limitations of the technology. You’ll also see nine practical, high‑value use cases where Sys.tm ® Intelligence is already helping organizations improve efficiency, accuracy, and profitability with GenAI. Finally, you’ll learn five actionable tips to help CIOs and business leaders measure AI project ROI with confidence.
+What Is GenAI?
+Generative AI (GenAI) is technology that analyzes information and produces new content. Where does the information come from? Inside this type of AI, a Large Language Model (LLM) has been fed a huge amount of information, from which it understands language patterns. Based on those patterns, GenAI can draft content, summarize documents, extract insights, and support decision‑making across the business. GenAI doesn’t just speed up tasks. When used effectively, it can help organizations understand, interpret, and act on information—especially when the source information has been limited to only include a company’s own documents and data.
+How It Works
+GenAI uses a type of Artificial Intelligence (AI) known as machine learning, which typically includes neural networks and large language models, to recognize patterns in massive datasets. It then uses those patterns to generate fresh content that feels human‑made.
+Why It Matters
+GenAI has the potential to transform industries by automating creative and cognitive tasks, accelerating innovation, and enabling organizations to scale expertise across teams. For businesses, GenAI isn’t just another tool, it can be a catalyst for operational transformation—especially in an era when profitability is being squeezed by rising costs.
+The World Economic Forum’s 2025 Jobs Report indicated that changes due to this type of AI will eliminate 8% of today’s total job. They clarify, however, that it will also create new jobs equivalent to 14% of today’s total employment. That’s a net increase in jobs of around 78 million opportunities! [1]
+The Reality of GenAI : It’s Strengths Come with Limitations
+While GenAI offers tremendous potential, it’s still evolving as a technology. Many organizations experimenting with standalone AI tools quickly discover challenges such as:
+Hallucinations and inaccuracies appear in generated content when the LLMs express confidence but research reveals incorrect information presented as factual.
+Most Large Language Models (LLMs) used to generate content were initially trained by “reading” the internet. Unfortunately, because the internet is an open publishing platform (meaning anyone can say almost anything), bias becomes apparent in outputs based on this training data.
+Have you ever tried running side-by-side prompt inquiries in multiple AI tools? You may be surprised to see inconsistent (and sometimes contradictory) results depending on the prompt, model, or context of the user. Not all tools are suitable for all business applications.
+One of the first and most publicized GenAI concerns involved sensitive information being released into the general content sourced by the AI tools (the LLMs). In many cases this involved leaking legally protected personal information, intellectual property, forward-looking strategic statements, and even sensitive financial data to the public sphere. While the tools are working to allow paid subscribers the option of toggling off the option of sharing information with the LLM, many users are still unaware of the concern and the protections are not perfect, leaving organizations exposed to regulatory and legal backlash.
+The courts have yet to fully settle the question of copyright as it applies to GenAI content. LLMs contain copyrighted content that they then combine together to create new content. Traditional copyright law requires sourcing both verbatim words and phrases (quoted content) as well as ideas pulled from another’s work, yet GenAI tools rarely provide sources for the results they generate.
+Perhaps the biggest concern for business users has to do with the value returned to the business for their investment in AI technologies. McKinsey reported that as many as 61% of companies aren’t seeing value from their use of AI. [2] They point to two main reasons:
+Failure to embed AI tasks within the context of larger business needs and processes.
+Poorly or untrained users who can generate prompt results, but who don’t really know how to validate the usefulness or reliability of those results. In these instances, value can even be lost when a company relies on bad AI-generated content to make decisions. These skill gaps are the biggest barrier to value, according to 63% of employers. [3]
+These limitations are real, and informed buyers know it. That’s why businesses are increasingly looking for trusted, user-friendly, workflow‑ready platforms that reduce risk and deliver consistent, repeatable value.
+From Hype to Impact: 9 Practical Business Uses for Sys.tm ® Intelligence GenAI
+While GenAI is everywhere in the headlines, the real value comes from applying it to everyday business workflows. According to recent research, more than 92% of Fortune 500 companies have already adopted GenAI in some form, with 78% of Executive Leaders believing the benefits of Generative AI outweigh the risks. [4]
+GenAI is most likely to deliver ROI when it reduces manual work, improves decision‑making, or accelerates processes that previously required significant human effort. Consider how the following high-impact use cases may work for your organization.
+1. Legal & Compliance: Contract Analysis in Seconds
+GenAI can review, summarize, and extract key clauses from contracts instantly, reducing legal review time and improving compliance accuracy. Teams gain faster insights and fewer bottlenecks. For instance, a healthcare provider can streamline vendor agreement management using AI. Instead of searching through dense contracts, staff can ask questions like, “What’s the termination clause for the imaging vendor?” The AI scans legal documents and returns concise answers. It can also be asked to flag expiration clauses and track auto-renewals, helping teams minimize legal exposure. This ensures no key details are missed, strengthens compliance processes, and lets staff spend less time buried in documents. They’ll have more time for caring for patients.
+2. Document Summarization: Making Long Content Digestible
+Whether it’s a 40‑page policy, a technical manual, or a customer proposal, GenAI can summarize long documents into clear, actionable insights. Employees spend less time reading and more time executing. For example, a consulting firm uses GenAI to search their document archive. Employees can prompt the system with questions like, “What does the Q3 update say about budget?” or “Summarize the compliance section.” The AI can find relevant content, highlight key points, and return short summaries with page references. This saves hours of manual reading, improves accuracy, and enhances collaboration. Whether onboarding new hires or answering client questions, teams gain faster access to the information they need to deliver results.
+3. Sales Operations: Turning Monthly Reports into Strategic Reviews
+Sales teams can transform raw CRM data into polished summaries, performance insights, and recommended actions. Leaders get clearer visibility and faster decision‑making. At a consumer goods company, the sales operations team no longer spends days compiling data. They highlight a folder of monthly Excel reports and prompt their AI tool to generate a comprehensive annual summary. The system totals key metrics, identifies top-selling SKUs, flags underperforming regions, and charts monthly trends. Within minutes, leaders receive a polished report. The GenAI tool eliminates the need for manual data research and compilation and gives teams more time to focus on delivering revenue.
+4. Financial Operations and Accounting
+GenAI accelerates invoice processing, expense categorization, variance explanations, and audit preparation. Finance teams reduce manual data entry and improve accuracy across the board. This technology is especially helpful for building forecasts, analyzing historical cash patterns, and identifying drivers of inflows/outflows. Financial experts have seen a 3-5 hour savings per forecast cycle while adding accuracy.
+5. Operations & Supply Chain: Predictive Merchandising
+GenAI can analyze historical data, identify trends, and generate predictive insights for inventory planning, supplier risk, and demand forecasting, therefore helping organizations reduce waste and improve margins. For example, GenAI can suggest optimal pricing and promotional strategies based on demand forecasts, competitor trends, and inventory levels. Better data insights have increased revenue and profitability.
+6. HR and People Operations
+From drafting job descriptions to summarizing resumes and generating interview questions, GenAI streamlines hiring and onboarding. HR teams spend less time on administrative tasks and more time on people. GenAI can read resumes, look for key skills, identify experience gaps, and produce a concise summary for recruiters. For example, one organization used GenAI to review 150 resumes for a project manager role. Each resume was summarized into a single paragraph that highlighted certifications, years of experience, and relevant project history. The hiring manager and HR team followed up with candidates who better matched the company’s needs.
+7. Price Optimization
+GenAI can analyze market trends, historical sales, and competitive data to recommend pricing strategies that maximize revenue and profitability. This can be beneficial for new product pricing , price changes, promotions, and more. GenAI can provide insight into competitor price and benchmarks and predicted demand curves, enabling smart pricing strategies that offer a quicker path to profitability.
+8. Customer Relationship Management (CRM)
+GenAI can be used to enhance CRM data by identifying leads in the database that demonstrate qualities and behavior tied to high purchase likelihood and prioritizing them into a task list for sales follow-up. This increases sales efficiency by focusing effort on high-probability opportunities and improves pipeline quality by de-prioritizing contacts who are not yet ready for purchase.
+9. Automating Cybersecurity Threat Analysis
+Security teams can use GenAI to summarize threat reports, classify incidents, and generate recommended actions. This reduces response time and strengthens organizational resilience. For example, after a phishing incident, GenAI can be used to draft a summary including timeline, affected accounts, containment actions, and recommended next steps. By creating a clear, structured incident summary for SOC teams, leadership, and auditors, GenAI can save analysts hours of documentation time while strengthening audit readiness and helping the organization better serve customers.
+5 Tips to Help Businesses and CIOs Measure GenAI ROI
+Bloomberg Intelligence predicts that generative AI could become a $1.3 trillion market by 2032, so you know value is available for smart users. [5] Now that we have explored specific use cases, you may be wondering how businesses can measure the real value they get from implementing GenAI. Here are five practical steps to help you get the most from your use of GenAI:
+1. Tie AI implementations to Business Goals and Problems
+Technology for technology’s sake rarely proves effective. Rather than starting with a goal of “using AI,” start first by understanding your company’s most pressing problems or most important goals. Then consider where the application of AI may help solve the problem or advance progress toward your goals. AI technology is simply a tool you can strategically use to improve your business.
+2. Embed the Use of AI into Automated Processes
+One of the biggest challenges to positive AI results is that workers treat each instance of a task as a unique project, and they don’t retain or learn from previous prompt results. We recommend testing queries for common tasks (like document summarization, report building, and data analysis) across a variety of GenAI products. Once you’ve chosen the tool that offers the best results for your business, hone the prompt language to deliver consistent, reliable results each time the query is run against a different document or dataset. When you know which LLM to use, and how to prompt it to best meet your needs, you can embed these tasks into automated processes that will deliver reliable results time after time. Eliminating human inconsistencies and errors from AI-enabled tasks leads to better results.
+3. Help Your Workforce Close Skill Gaps
+Hiring new workers is typically significantly more expensive than helping your existing staff to upgrade their skills to include AI knowledge and expertise. As you replace various job tasks with automation, consider retraining those workers to add value in other areas of the business. Where there is an interest and aptitude in learning AI-specific skills, some may even become your AI experts for their teams.
+4. Choose and Measure Clear KPIs
+Though a buzzword, Key Performance Indicators (KPI) are strategically helpful for companies when used to clearly see where projects are returning financial value and where they are not. Think of them simply as the measurable results you will track regularly to see the overall impact of a technology project. For GenAI projects, choose one or two KPIs for each implementation and then measure against these indicators on a regular basis. Keep in mind, it may take a few months for return to show, so don’t give up on your AI projects too soon!
+5. Iterate and Retrain When Needed
+AI tools are evolving rapidly, so ongoing skill training is necessary for ongoing ROI. Create an environment where workers can get to know new technologies as they emerge and where they feel safe to recommend AI use to improve their jobs. In addition, AI companies iterate the LLMS that drive their products, so prompts and processes need to be evaluated on a regular basis. Incremental improvements lead to significant and ongoing financial return.
+Sys.tm ® Intelligence : Solving the Value Problem in GenAI
+Digitech Systems is uniquely positioned in the GenAI industry. We have almost thirty years of experience helping businesses securely manage and retain their documents and data, so AI sits naturally within our expertise. Sys.tm®, the world only composable information management platform, offers a uniquely easy-to-use GenAI experience, called Sys.tm® Intelligence. Unlike standalone GenAI tools, Sys.tm:
+Embeds GenAI directly into business workflows, so users can ensure AI is applied consistently and at the right moment to get the most from business information.
+Allows workers to dynamically choose the best GenAI tool by sampling prompt outputs side‑by‑side and selecting the LLM that delivers the most accurate, relevant result.
+Provides governance and control of your information and GenAI outputs by allowing users to select source documents and maintaining strict security protocols throughout the process.
+Sys.tm isn’t just another GenAI tool, it’s the only platform that combines intelligent information management, workflow automation, Robotic Process Automation (RPA), and multi‑engine GenAI capabilities into a single, smart information management system.
+Ready to See Real ROI from GenAI?
+According to Gartner, businesses adopting GenAI could achieve 15.7% cost savings and could boost productivity by as much as 25%. [6]
+GenAI can drive efficiency, accuracy, and strategic advantage for your business. But you’ll want to stay informed about progress against some of the limitations noted above, while also carefully implementing this tool to help with specific business scenarios. You should expect AI to continue to evolve, so implement alongside ongoing training initiatives for workers for best results.
+If you’re ready to experience the AI impact for yourself, now is the perfect time to get started. We offer a free trial of Sys.tm at https://www.sys.tm/welcome . It’s a low-risk way to see how GenAI might transform your business.
+[1] https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf
+[2] Singla, Alex, et. al. (2025, March). The State of AI: How Organizations Are Rewriting to Capture Value. McKinsey. Retrieved from: https://www.mckinsey.com/~/media/mckinsey/business functions/quantumblack/our insights/the state of ai/2025/the-state-of-ai-how-organizations-are-rewiring-to-capture-value_final.pdf?shouldindex=false
+[3] https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf
+[4] https://explodingtopics.com/blog/generative-ai-stats
+[5] https://www.bloomberg.com/company/press/generative-ai-to-become-a-1-3-trillion-market-by-2032-research-finds/
+[6] https://www.gartner.com/en/human-resources/topics/artificial-intelligence-in-hr?utm_medium=asset&utm_campaign=RM_GB_YOY_HRL_NPP_IA1_AIHRTOOLKITBYLINE&utm_term=special-report
+Category:
+All Businesses Artificial Intelligence ( AI ) Automation Digital Transformation Sys.tm
+Other posts
+Betting on Microservices and Composable Technologies
+Hey VARs! Is your tech offering still forcing customers to buy more than they need? This Imaging Channel article, written ...
+View Details
+The Anatomy of a Secure Document
+Every electronic document carries risk. See the five layers of security work together to protect your information from creation to ...
+View Details
+25 Executives Share Their Benefits of Automation
+How much time could your organization reclaim if automation handled the work that slows teams down? In this new Fast ...
+View Details
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 94
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":94,"text_length":17839,"paragraph_count":73,"sentence_count":148,"boilerplate_hits":1,"symbol_ratio":0.0027,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=high
+   How do you know whether Generative AI (GenAI) is delivering real, measurable Return on your Investment (ROI) for your business? / query=AI transformation workflow automation ROI customer case / intent=find_market_trend / path=a_media_gdelt
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Go Back How do you know whether Generative AI (GenAI) is delivering real, measurable Return on your Investment (ROI) for your business?
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   In this article, you’ll learn what GenAI is, why it matters, and some of the limitations of the technology.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   You’ll also see nine practical, high‑value use cases where Sys.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   tm ® Intelligence is already helping organizations improve efficiency, accuracy, and profitability with GenAI.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Finally, you’ll learn five actionable tips to help CIOs and business leaders measure AI project ROI with confidence.
+
+## business_elements
+
+- companies: keyword search, Anysearch
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 医疗
+- roles: CIO / IT 负责人, 法务 / 律师, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理
+- business_actions: 发布 / 推出, 定价 / 计费变化
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 销售 / 客服
+- numbers: 2025, 8%, 14%, 78 million, 1, 61%, 2, 63%
+- quotes: What’s the termination clause for the imaging vendor? / What does the Q3 update say about budget? / Summarize the compliance section. / using AI,
+
+## evidence_seed
+
+- company_actions: Go Back How do you know whether Generative AI (GenAI) is delivering real, measurable Return on your Investment (ROI) for your business? / In this article, you’ll learn what GenAI is, why it matters, and some of the limitations of the technology. / You’ll also see nine practical, high‑value use cases where Sys.
+- case_details: How do you know whether Generative AI (GenAI) is delivering real, measurable Return on your Investment (ROI) for your business? / query=AI transformation workflow automation ROI customer case / intent=find_market_trend / path=a_media_gdelt
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 法务 / 律师, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_case
+- importance_score: 5
+- importance_reason: real customer or adoption case; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+How do you know whether Generative AI (GenAI) is delivering real, measurable Return on your Investment (ROI) for your business? / query=AI transformation workflow automation ROI customer case / intent=find_market_trend / path=a_media_gdelt
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

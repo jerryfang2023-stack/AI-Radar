@@ -1,0 +1,280 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-029",
+  "title": "When Forward-Deployed Engineering Works for Enterprise AI",
+  "original_url": "https://www.linkedin.com/pulse/when-forward-deployed-engineering-works-enterprise-ai-natarajan-nwhzc?utm_source=rss&utm_campaign=articles_sitemaps",
+  "canonical_url": "https://linkedin.com/pulse/when-forward-deployed-engineering-works-enterprise-ai-natarajan-nwhzc",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "operators",
+  "source_level": "C",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "fde_implementation",
+  "search_path_label": "Enterprise AI / FDE implementation path",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "production_rollout",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-01T02:33:05.170Z",
+  "language": "mixed",
+  "full_text": "For years, enterprises used familiar roles to bridge product and reality.\nSales engineers explained what was possible.\nSolution engineers designed implementations.\nCustomer engineers kept systems running.\nThat model worked because software was largely static. AI agents break that assumption. They are expected to reason about business-impacting decisions, span systems, operate on incomplete context, and surface judgment calls that were never formally encoded. This is where enterprise AI adoption slows down, because the decision layer has never been translated into software.\nForward-deployed engineering is a powerful model, but it only works under specific conditions.\nWhat Forward-Deployed Engineers Actually Unlock\nForward-deployed engineers embed inside the problem itself. Their role is not support or customization, and not to run the business on the enterprise’s behalf. It is to deeply understand how the organization actually operates: its data, workflows, constraints, and decision logic, and then shape systems to deliver outcomes.\nThe unlock: Turning Enterprise Judgement into reusable Platform Primitives.\nThe goal is simple but non-trivial: transfer operational judgment into systems that can learn and improve over time. When this works, value compounds even after the engineers step away.\nThe Concrete Work\nIn practice, FDEs focus on a narrow but critical set of activities:\nSurface decision-relevant context : identify and codify the entities, relationships, and state that actually drive outcomes, often forming the backbone of an enterprise context graph (Checkout\nJaya Gupta\n’s insightful article on this topic).\nGround the AI Agent in enterprise reality : shape behavior using constraints, tools, and feedback loops rather than generic fine-tuning.\nDefine decision-grade evaluations : measure quality in business terms, not just accuracy or latency.\nTurn learning into platform primitives : work with product teams to encode enterprise logic into SDKs, ontologies, and policy surfaces so it scales beyond one deployment.\nEnable joint execution : make it easy for SMEs, system owners, and business owners to participate in discovery, evaluation, and iteration alongside the FDEs.\nThe difference vs classic consulting is the deliverable: not a one-off implementation, but reusable primitives (context, evals, policy surfaces) that reduce effort per new deployment and increase product leverage over time. If the work cannot be turned into reusable primitives, you are doing services, and margins will eventually prove it.\nWhen FDEs Create Real Leverage\nForward deployment creates leverage when the problem is discovery, not rollout. Enterprise agents have no clean incumbent, no stable workflow, and no single owner. The unlock comes from encoding how decisions are made, including exceptions and risk tolerance, into systems that can operate reliably inside enterprise constraints\nRecommended by LinkedIn\nThe Agentic Revolution: When Software Finally Becomes…\nPaul Devalier\n1 month ago\nAI Engineering Framework: From Business Workflow to…\nKiran Donepudi\n2 weeks ago\nMy 10 Favorite Power Automate Features from 2024\nMarcel Broschk\n1 year ago\nThe FDE model works best when:\nDecisions span systems and teams, making context central.\nOutcomes tie directly to a business priority, forcing access and iteration.\nKnowledge extraction is the goal, not delivery velocity.\nEach deployment strengthens the product, so future customers need less bespoke work.\nWhen FDEs Are the Wrong Tool\nForward deployment is powerful but expensive in terms of focus, trust, and organizational energy. It is usually unnecessary when the problem is already well understood and bounded.\nIt is the wrong approach when:\nYou are shipping a narrow productivity feature inside a single product.\nRequirements are stable and repeatable.\nReal data or workflows are off-limits.\nFailure is penalized, and iteration is constrained.\nCustom work cannot be generalized into product leverage.\nIn these cases, forward deployment adds friction rather than value.\nThe Headwinds\nFor enterprises, the two hardest headwinds are process change and change management.\nProcess change : most enterprises will not freely share production data, operational playbooks, or decision logic. Much of the most important knowledge is undocumented and lives in the heads of experienced operators. Introducing agents forces organizations to revisit approvals, handoffs, exception handling, and escalation paths.\nChange management : agentic systems do not arrive “done.” They require iteration, feedback, and recalibration. Enterprises that expect a one-time rollout work against the learning loop that makes agents valuable. Treat this as controlled evolution, with clear ownership, guardrails, and room to adapt.\nFor startups and platforms, the headwinds are people and proof.\nPeople : true FDEs are rare. They require deep technical ability, systems thinking, domain curiosity, and the credibility to work across product, engineering, and business stakeholders. Finding people who can operate with both depth and breadth is hard, and working inside constrained environments is even harder.\nProof : early in an engagement, value is ambiguous and outcomes are uncertain. Setting the right targets, measuring progress meaningfully, and iterating toward a concrete business win is non-trivial. The teams that succeed are explicit about what “value” means, instrument learning early, and continuously refine both the product and the engagement model.\nWithout this model, enterprise AI faces an uphill task and often defaults to brittle orchestration or narrow automation. With it, enterprises can build systems that learn, adapt, and compound value over time.\nOpenAI\nAnthropic\nGoogle\nPalantir Technologies\nLike\nLike\nCelebrate\nSupport\nLove\nInsightful\nFunny\nComment\nCopy\nLinkedIn\nFacebook\nShare\n38\n2 Comments\nVikram Ahuja\n5mo\nReport this comment\nLoved this article Sriram 👍\nLike\nReply\n1 Reaction\n2 Reactions\nDharminder Singh\n5mo\nReport this comment\nExtremely insightful Sriram.\nCc: Simran Kaur Jhinger\nLike\nReply\n1 Reaction\n2 Reactions\nSee more comments\nTo view or add a comment, sign in\nMore articles by Sriram Natarajan\nReasoning Allocation in Enterprise AI\nMar 30, 2026\nReasoning Allocation in Enterprise AI\nEnterprise AI is starting to run into a problem that looks like cost on the surface, but is fundamentally about system…\n37\n6 Comments\nHow Enterprises Will Learn Like Models Do\nOct 18, 2025\nHow Enterprises Will Learn Like Models Do\nEvery foundational company now has an Agent SDK. OpenAI has AgentKit.\n46\n7 Comments\nCoding with AI: Evolving My Software Engineering Journey\nJan 8, 2024\nCoding with AI: Evolving My Software Engineering Journey\nMy day-to-day software engineering tasks have significantly transformed over the past year. Before LLMs and AI agents…\n29\n1 Comment\nExecuting the Executive Order: Need for Speed\nOct 31, 2023\nExecuting the Executive Order: Need for Speed\nHere's my take on some intriguing highlights from today's executive order: New Standards for AI Safety and Security:…\n16\n1 Comment\nStanding Out in a Competitive Job Market: Strategies for Engineers and New College Grads\nDec 22, 2022\nStanding Out in a Competitive Job Market: Strategies for Engineers and New College Grads\nAs a new college graduate or junior software engineer, you might feel overwhelmed by the competitive job market. With…\n11\n2 Comments\nNavigating Change: A Guide for Engineers\nDec 18, 2022\nNavigating Change: A Guide for Engineers\nEconomic challenges can be a source of stress and uncertainty for employees, particularly those who are individual…\n11\nIs management right for you?\nDec 12, 2022\nIs management right for you?\nI have been mentoring engineers across Google and CapitalG portfolio companies, and I am often asked, “Is management…\n42\n5 Comments\nH1B: An Eternal Limbo\nNov 6, 2022\nH1B: An Eternal Limbo\nI am a proud immigrant who owes all my professional success to this great country. I am one of the very few fortunate…\n31\n2 Comments\nShow more\nSee all articles\nOthers also viewed\nAgents vs Workflows: Why It Matters\nJose Carrasco\n1y\nThe Capability Threshold: Why the Cognitive Delivery Framework Is Possible Now\nJason Cruz Falzon, MBCS\n3mo\nAI-Assisted Modernization Framework: Risk-Controlled Enterprise Transformation\nDevox Software\n5mo\nDeclarative YAML Workflow System for AI Agents\nNedim Fakić\n5mo\nHow to Run a Product & Platform Engineering, Data, Analytics & AI Company at Scale in 2025 in the Age of the AI Agentic Era?\nManish Surapaneni\n1y\nYour AI implementation isn't failing. Your expectations are.\nLindsay Keyfauver\n2mo\nHarness Engineering: The Missing Layer Between Your AI and Your Business\nRon de Jong\n1mo\nHow Opus changes the partner value equation\nThomas Röhrl\n2mo\nHarness AI for Seamless Workflow Creation and Updates with ATOM AVA Co-pilot\nAnuta Networks\n2y\nThe Secret to Rapid Innovation: Building a Successful Fusion Development Team\nMichael Weinberger\n1y\nShow more\nShow less\nSimilar topics\nGuide to Enterprise AI Agent Adoption\n10 Posts\n1,948\nUnderstanding the Enterprise AI Agent Ecosystem\n10 Posts\n6,689\nHow to Use Context-Aware AI Agents with Enterprise Tools\n10 Posts\n5,114\nHow AI Foundation Models Transform Enterprise Software\n10 Posts\n3,222\nTools For Managing Enterprise AI Deployments\n10 Posts\n10,005\nBest Practices For Scaling AI In Large Companies\n10 Posts\n1,939\nWhy Context Engineering Matters for AI Agents\n10 Posts\n4,075\nRole of Software Engineering in Agentic Flows\n10 Posts\n4,171\nHow to Run Large AI Models Remotely\n7 Posts\n499\nHow to Apply Deep Reasoning Agents in AI Solutions\n10 Posts\n5,488\nShow more\nShow less\nExplore content categories\nCareer\nProductivity\nFinance\nSoft Skills & Emotional Intelligence\nProject Management\nEducation\nTechnology\nLeadership\nEcommerce\nUser Experience\nRecruitment & HR\nCustomer Experience\nReal Estate\nMarketing\nSales\nRetail & Merchandising\nScience\nSupply Chain Management\nFuture Of Work\nConsulting\nWriting\nEconomics\nArtificial Intelligence\nEmployee Experience\nWorkplace Trends\nFundraising\nNetworking\nCorporate Social Responsibility\nNegotiation\nCommunication\nEngineering\nHospitality & Tourism\nBusiness Strategy\nChange Management\nOrganizational Culture\nDesign\nInnovation\nEvent Planning\nTraining & Development\nShow more\nShow less",
+  "clean_text": "For years, enterprises used familiar roles to bridge product and reality.\nSales engineers explained what was possible.\nSolution engineers designed implementations.\nCustomer engineers kept systems running.\nThat model worked because software was largely static. AI agents break that assumption. They are expected to reason about business-impacting decisions, span systems, operate on incomplete context, and surface judgment calls that were never formally encoded. This is where enterprise AI adoption slows down, because the decision layer has never been translated into software.\nForward-deployed engineering is a powerful model, but it only works under specific conditions.\nWhat Forward-Deployed Engineers Actually Unlock\nForward-deployed engineers embed inside the problem itself. Their role is not support or customization, and not to run the business on the enterprise’s behalf. It is to deeply understand how the organization actually operates: its data, workflows, constraints, and decision logic, and then shape systems to deliver outcomes.\nThe unlock: Turning Enterprise Judgement into reusable Platform Primitives.\nThe goal is simple but non-trivial: transfer operational judgment into systems that can learn and improve over time. When this works, value compounds even after the engineers step away.\nThe Concrete Work\nIn practice, FDEs focus on a narrow but critical set of activities:\nSurface decision-relevant context : identify and codify the entities, relationships, and state that actually drive outcomes, often forming the backbone of an enterprise context graph (Checkout\nJaya Gupta\n’s insightful article on this topic).\nGround the AI Agent in enterprise reality : shape behavior using constraints, tools, and feedback loops rather than generic fine-tuning.\nDefine decision-grade evaluations : measure quality in business terms, not just accuracy or latency.\nTurn learning into platform primitives : work with product teams to encode enterprise logic into SDKs, ontologies, and policy surfaces so it scales beyond one deployment.\nEnable joint execution : make it easy for SMEs, system owners, and business owners to participate in discovery, evaluation, and iteration alongside the FDEs.\nThe difference vs classic consulting is the deliverable: not a one-off implementation, but reusable primitives (context, evals, policy surfaces) that reduce effort per new deployment and increase product leverage over time. If the work cannot be turned into reusable primitives, you are doing services, and margins will eventually prove it.\nWhen FDEs Create Real Leverage\nForward deployment creates leverage when the problem is discovery, not rollout. Enterprise agents have no clean incumbent, no stable workflow, and no single owner. The unlock comes from encoding how decisions are made, including exceptions and risk tolerance, into systems that can operate reliably inside enterprise constraints\nRecommended by LinkedIn\nThe Agentic Revolution: When Software Finally Becomes…\nPaul Devalier\n1 month ago\nAI Engineering Framework: From Business Workflow to…\nKiran Donepudi\n2 weeks ago\nMy 10 Favorite Power Automate Features from 2024\nMarcel Broschk\n1 year ago\nThe FDE model works best when:\nDecisions span systems and teams, making context central.\nOutcomes tie directly to a business priority, forcing access and iteration.\nKnowledge extraction is the goal, not delivery velocity.\nEach deployment strengthens the product, so future customers need less bespoke work.\nWhen FDEs Are the Wrong Tool\nForward deployment is powerful but expensive in terms of focus, trust, and organizational energy. It is usually unnecessary when the problem is already well understood and bounded.\nIt is the wrong approach when:\nYou are shipping a narrow productivity feature inside a single product.\nRequirements are stable and repeatable.\nReal data or workflows are off-limits.\nFailure is penalized, and iteration is constrained.\nCustom work cannot be generalized into product leverage.\nIn these cases, forward deployment adds friction rather than value.\nThe Headwinds\nFor enterprises, the two hardest headwinds are process change and change management.\nProcess change : most enterprises will not freely share production data, operational playbooks, or decision logic. Much of the most important knowledge is undocumented and lives in the heads of experienced operators. Introducing agents forces organizations to revisit approvals, handoffs, exception handling, and escalation paths.\nChange management : agentic systems do not arrive “done.” They require iteration, feedback, and recalibration. Enterprises that expect a one-time rollout work against the learning loop that makes agents valuable. Treat this as controlled evolution, with clear ownership, guardrails, and room to adapt.\nFor startups and platforms, the headwinds are people and proof.\nPeople : true FDEs are rare. They require deep technical ability, systems thinking, domain curiosity, and the credibility to work across product, engineering, and business stakeholders. Finding people who can operate with both depth and breadth is hard, and working inside constrained environments is even harder.\nProof : early in an engagement, value is ambiguous and outcomes are uncertain. Setting the right targets, measuring progress meaningfully, and iterating toward a concrete business win is non-trivial. The teams that succeed are explicit about what “value” means, instrument learning early, and continuously refine both the product and the engagement model.\nWithout this model, enterprise AI faces an uphill task and often defaults to brittle orchestration or narrow automation. With it, enterprises can build systems that learn, adapt, and compound value over time.\nOpenAI\nAnthropic\nGoogle\nPalantir Technologies\nLike\nLike\nCelebrate\nSupport\nLove\nInsightful\nFunny\nComment\nCopy\nLinkedIn\nFacebook\nShare\n38\n2 Comments\nVikram Ahuja\n5mo\nReport this comment\nLoved this article Sriram 👍\nLike\nReply\n1 Reaction\n2 Reactions\nDharminder Singh\n5mo\nReport this comment\nExtremely insightful Sriram.\nCc: Simran Kaur Jhinger\nLike\nReply\n1 Reaction\n2 Reactions\nSee more comments\nTo view or add a comment, sign in\nMore articles by Sriram Natarajan\nReasoning Allocation in Enterprise AI\nMar 30, 2026\nReasoning Allocation in Enterprise AI\nEnterprise AI is starting to run into a problem that looks like cost on the surface, but is fundamentally about system…\n37\n6 Comments\nHow Enterprises Will Learn Like Models Do\nOct 18, 2025\nHow Enterprises Will Learn Like Models Do\nEvery foundational company now has an Agent SDK. OpenAI has AgentKit.\n46\n7 Comments\nCoding with AI: Evolving My Software Engineering Journey\nJan 8, 2024\nCoding with AI: Evolving My Software Engineering Journey\nMy day-to-day software engineering tasks have significantly transformed over the past year. Before LLMs and AI agents…\n29\n1 Comment\nExecuting the Executive Order: Need for Speed\nOct 31, 2023\nExecuting the Executive Order: Need for Speed\nHere's my take on some intriguing highlights from today's executive order: New Standards for AI Safety and Security:…\n16\n1 Comment\nStanding Out in a Competitive Job Market: Strategies for Engineers and New College Grads\nDec 22, 2022\nStanding Out in a Competitive Job Market: Strategies for Engineers and New College Grads\nAs a new college graduate or junior software engineer, you might feel overwhelmed by the competitive job market. With…\n11\n2 Comments\nNavigating Change: A Guide for Engineers\nDec 18, 2022\nNavigating Change: A Guide for Engineers\nEconomic challenges can be a source of stress and uncertainty for employees, particularly those who are individual…\n11\nIs management right for you?\nDec 12, 2022\nIs management right for you?\nI have been mentoring engineers across Google and CapitalG portfolio companies, and I am often asked, “Is management…\n42\n5 Comments\nH1B: An Eternal Limbo\nNov 6, 2022\nH1B: An Eternal Limbo\nI am a proud immigrant who owes all my professional success to this great country. I am one of the very few fortunate…\n31\n2 Comments\nShow more\nSee all articles\nOthers also viewed\nAgents vs Workflows: Why It Matters\nJose Carrasco\n1y\nThe Capability Threshold: Why the Cognitive Delivery Framework Is Possible Now\nJason Cruz Falzon, MBCS\n3mo\nAI-Assisted Modernization Framework: Risk-Controlled Enterprise Transformation\nDevox Software\n5mo\nDeclarative YAML Workflow System for AI Agents\nNedim Fakić\n5mo\nHow to Run a Product & Platform Engineering, Data, Analytics & AI Company at Scale in 2025 in the Age of the AI Agentic Era?\nManish Surapaneni\n1y\nYour AI implementation isn't failing. Your expectations are.\nLindsay Keyfauver\n2mo\nHarness Engineering: The Missing Layer Between Your AI and Your Business\nRon de Jong\n1mo\nHow Opus changes the partner value equation\nThomas Röhrl\n2mo\nHarness AI for Seamless Workflow Creation and Updates with ATOM AVA Co-pilot\nAnuta Networks\n2y\nThe Secret to Rapid Innovation: Building a Successful Fusion Development Team\nMichael Weinberger\n1y\nShow more\nShow less\nSimilar topics\nGuide to Enterprise AI Agent Adoption\n10 Posts\n1,948\nUnderstanding the Enterprise AI Agent Ecosystem\n10 Posts\n6,689\nHow to Use Context-Aware AI Agents with Enterprise Tools\n10 Posts\n5,114\nHow AI Foundation Models Transform Enterprise Software\n10 Posts\n3,222\nTools For Managing Enterprise AI Deployments\n10 Posts\n10,005\nBest Practices For Scaling AI In Large Companies\n10 Posts\n1,939\nWhy Context Engineering Matters for AI Agents\n10 Posts\n4,075\nRole of Software Engineering in Agentic Flows\n10 Posts\n4,171\nHow to Run Large AI Models Remotely\n7 Posts\n499\nHow to Apply Deep Reasoning Agents in AI Solutions\n10 Posts\n5,488\nShow more\nShow less\nExplore content categories\nCareer\nProductivity\nFinance\nSoft Skills & Emotional Intelligence\nProject Management\nEducation\nTechnology\nLeadership\nEcommerce\nUser Experience\nRecruitment & HR\nCustomer Experience\nReal Estate\nMarketing\nSales\nRetail & Merchandising\nScience\nSupply Chain Management\nFuture Of Work\nConsulting\nWriting\nEconomics\nArtificial Intelligence\nEmployee Experience\nWorkplace Trends\nFundraising\nNetworking\nCorporate Social Responsibility\nNegotiation\nCommunication\nEngineering\nHospitality & Tourism\nBusiness Strategy\nChange Management\nOrganizational Culture\nDesign\nInnovation\nEvent Planning\nTraining & Development\nShow more\nShow less",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-01/r-029-when-forward-deployed-engineering-works-for-enterprise-ai.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-01/r-029-when-forward-deployed-engineering-works-for-enterprise-ai.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 94,
+  "extractor_diagnostics": {
+    "readability_score": 94,
+    "text_length": 10264,
+    "paragraph_count": 105,
+    "sentence_count": 63,
+    "boilerplate_hits": 1,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 10264,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "3699ac92142f9b95",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "high",
+  "community_name": "keyword search / Anysearch",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "community_signal",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "89769fb79b5b7d77",
+  "content_hash": "3699ac92142f9b95",
+  "full_text_hash": "3699ac92142f9b95",
+  "semantic_hash": "d42b8f5ffa94b1c2",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-01T02:33:05.170Z",
+  "last_seen_at": "2026-07-01T02:33:05.170Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "case_detail",
+      "text": "Forward-deployed engineers embed inside the problem itself. Their role is not support or customization, and not to run the business on the ... / query=enterprise AI production rollout case study / intent=find_original_source / path=fde_implementation",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "For years, enterprises used familiar roles to bridge product and reality.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "Sales engineers explained what was possible.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Solution engineers designed implementations.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "case_detail",
+      "text": "Customer engineers kept systems running.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "That model worked because software was largely static.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Anthropic",
+      "Google"
+    ],
+    "products": [
+      "agents",
+      "Agent",
+      "Agents"
+    ],
+    "people": [],
+    "industries": [
+      "金融 / 保险",
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "workflows": [
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "合作 / 联盟",
+      "部署 / 上线"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "1 m",
+      "2",
+      "10",
+      "2024\nM",
+      "1",
+      "38",
+      "5m",
+      "30"
+    ],
+    "quotes": []
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "For years, enterprises used familiar roles to bridge product and reality.",
+      "Solution engineers designed implementations.",
+      "That model worked because software was largely static."
+    ],
+    "case_details": [
+      "Forward-deployed engineers embed inside the problem itself. Their role is not support or customization, and not to run the business on the ... / query=enterprise AI production rollout case study / intent=find_original_source / path=fde_implementation",
+      "Customer engineers kept systems running."
+    ],
+    "workflow_changes": [
+      "Sales engineers explained what was possible."
+    ],
+    "before_after_clues": [
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "开发者 / 工程团队",
+      "销售 / 客服"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "market_shaping_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": true,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "user_feedback_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# When Forward-Deployed Engineering Works for Enterprise AI\n\n- raw_id: R-029\n- original_url: https://www.linkedin.com/pulse/when-forward-deployed-engineering-works-enterprise-ai-natarajan-nwhzc?utm_source=rss&utm_campaign=articles_sitemaps\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-01T02:33:05.170Z\n\n## clean_text\n\nFor years, enterprises used familiar roles to bridge product and reality.\nSales engineers explained what was possible.\nSolution engineers designed implementations.\nCustomer engineers kept systems running.\nThat model worked because software was largely static. AI agents break that assumption. They are expected to reason about business-impacting decisions, span systems, operate on incomplete context, and surface judgment calls that were never formally encoded. This is where enterprise AI adoption slows down, because the decision layer has never been translated into software.\nForward-deployed engineering is a powerful model, but it only works under specific conditions.\nWhat Forward-Deployed Engineers Actually Unlock\nForward-deployed engineers embed inside the problem itself. Their role is not support or customization, and not to run the business on the enterprise’s behalf. It is to deeply understand how the organization actually operates: its data, workflows, constraints, and decision logic, and then shape systems to deliver outcomes.\nThe unlock: Turning Enterprise Judgement into reusable Platform Primitives.\nThe goal is simple but non-trivial: transfer operational judgment into systems that can learn and improve over time. When this works, value compounds even after the engineers step away.\nThe Concrete Work\nIn practice, FDEs focus on a narrow but critical set of activities:\nSurface decision-relevant context : identify and codify the entities, relationships, and state that actually drive outcomes, often forming the backbone of an enterprise context graph (Checkout\nJaya Gupta\n’s insightful article on this topic).\nGround the AI Agent in enterprise reality : shape behavior using constraints, tools, and feedback loops rather than generic fine-tuning.\nDefine decision-grade evaluations : measure quality in business terms, not just accuracy or latency.\nTurn learning into platform primitives : work with product teams to encode enterprise logic into SDKs, ontologies, and policy surfaces so it scales beyond one deployment.\nEnable joint execution : make it easy for SMEs, system owners, and business owners to participate in discovery, evaluation, and iteration alongside the FDEs.\nThe difference vs classic consulting is the deliverable: not a one-off implementation, but reusable primitives (context, evals, policy surfaces) that reduce effort per new deployment and increase product leverage over time. If the work cannot be turned into reusable primitives, you are doing services, and margins will eventually prove it.\nWhen FDEs Create Real Leverage\nForward deployment creates leverage when the problem is discovery, not rollout. Enterprise agents have no clean incumbent, no stable workflow, and no single owner. The unlock comes from encoding how decisions are made, including exceptions and risk tolerance, into systems that can operate reliably inside enterprise constraints\nRecommended by LinkedIn\nThe Agentic Revolution: When Software Finally Becomes…\nPaul Devalier\n1 month ago\nAI Engineering Framework: From Business Workflow to…\nKiran Donepudi\n2 weeks ago\nMy 10 Favorite Power Automate Features from 2024\nMarcel Broschk\n1 year ago\nThe FDE model works best when:\nDecisions span systems and teams, making context central.\nOutcomes tie directly to a business priority, forcing access and iteration.\nKnowledge extraction is the goal, not delivery velocity.\nEach deployment strengthens the product, so future customers need less bespoke work.\nWhen FDEs Are the Wrong Tool\nForward deployment is powerful but expensive in terms of focus, trust, and organizational energy. It is usually unnecessary when the problem is already well understood and bounded.\nIt is the wrong approach when:\nYou are shipping a narrow productivity feature inside a single product.\nRequirements are stable and repeatable.\nReal data or workflows are off-limits.\nFailure is penalized, and iteration is constrained.\nCustom work cannot be generalized into product leverage.\nIn these cases, forward deployment adds friction rather than value.\nThe Headwinds\nFor enterprises, the two hardest headwinds are process change and change management.\nProcess change : most enterprises will not freely share production data, operational playbooks, or decision logic. Much of the most important knowledge is undocumented and lives in the heads of experienced operators. Introducing agents forces organizations to revisit approvals, handoffs, exception handling, and escalation paths.\nChange management : agentic systems do not arrive “done.” They require iteration, feedback, and recalibration. Enterprises that expect a one-time rollout work against the learning loop that makes agents valuable. Treat this as controlled evolution, with clear ownership, guardrails, and room to adapt.\nFor startups and platforms, the headwinds are people and proof.\nPeople : true FDEs are rare. They require deep technical ability, systems thinking, domain curiosity, and the credibility to work across product, engineering, and business stakeholders. Finding people who can operate with both depth and breadth is hard, and working inside constrained environments is even harder.\nProof : early in an engagement, value is ambiguous and outcomes are uncertain. Setting the right targets, measuring progress meaningfully, and iterating toward a concrete business win is non-trivial. The teams that succeed are explicit about what “value” means, instrument learning early, and continuously refine both the product and the engagement model.\nWithout this model, enterprise AI faces an uphill task and often defaults to brittle orchestration or narrow automation. With it, enterprises can build systems that learn, adapt, and compound value over time.\nOpenAI\nAnthropic\nGoogle\nPalantir Technologies\nLike\nLike\nCelebrate\nSupport\nLove\nInsightful\nFunny\nComment\nCopy\nLinkedIn\nFacebook\nShare\n38\n2 Comments\nVikram Ahuja\n5mo\nReport this comment\nLoved this article Sriram 👍\nLike\nReply\n1 Reaction\n2 Reactions\nDharminder Singh\n5mo\nReport this comment\nExtremely insightful Sriram.\nCc: Simran Kaur Jhinger\nLike\nReply\n1 Reaction\n2 Reactions\nSee more comments\nTo view or add a comment, sign in\nMore articles by Sriram Natarajan\nReasoning Allocation in Enterprise AI\nMar 30, 2026\nReasoning Allocation in Enterprise AI\nEnterprise AI is starting to run into a problem that looks like cost on the surface, but is fundamentally about system…\n37\n6 Comments\nHow Enterprises Will Learn Like Models Do\nOct 18, 2025\nHow Enterprises Will Learn Like Models Do\nEvery foundational company now has an Agent SDK. OpenAI has AgentKit.\n46\n7 Comments\nCoding with AI: Evolving My Software Engineering Journey\nJan 8, 2024\nCoding with AI: Evolving My Software Engineering Journey\nMy day-to-day software engineering tasks have significantly transformed over the past year. Before LLMs and AI agents…\n29\n1 Comment\nExecuting the Executive Order: Need for Speed\nOct 31, 2023\nExecuting the Executive Order: Need for Speed\nHere's my take on some intriguing highlights from today's executive order: New Standards for AI Safety and Security:…\n16\n1 Comment\nStanding Out in a Competitive Job Market: Strategies for Engineers and New College Grads\nDec 22, 2022\nStanding Out in a Competitive Job Market: Strategies for Engineers and New College Grads\nAs a new college graduate or junior software engineer, you might feel overwhelmed by the competitive job market. With…\n11\n2 Comments\nNavigating Change: A Guide for Engineers\nDec 18, 2022\nNavigating Change: A Guide for Engineers\nEconomic challenges can be a source of stress and uncertainty for employees, particularly those who are individual…\n11\nIs management right for you?\nDec 12, 2022\nIs management right for you?\nI have been mentoring engineers across Google and CapitalG portfolio companies, and I am often asked, “Is management…\n42\n5 Comments\nH1B: An Eternal Limbo\nNov 6, 2022\nH1B: An Eternal Limbo\nI am a proud immigrant who owes all my professional success to this great country. I am one of the very few fortunate…\n31\n2 Comments\nShow more\nSee all articles\nOthers also viewed\nAgents vs Workflows: Why It Matters\nJose Carrasco\n1y\nThe Capability Threshold: Why the Cognitive Delivery Framework Is Possible Now\nJason Cruz Falzon, MBCS\n3mo\nAI-Assisted Modernization Framework: Risk-Controlled Enterprise Transformation\nDevox Software\n5mo\nDeclarative YAML Workflow System for AI Agents\nNedim Fakić\n5mo\nHow to Run a Product & Platform Engineering, Data, Analytics & AI Company at Scale in 2025 in the Age of the AI Agentic Era?\nManish Surapaneni\n1y\nYour AI implementation isn't failing. Your expectations are.\nLindsay Keyfauver\n2mo\nHarness Engineering: The Missing Layer Between Your AI and Your Business\nRon de Jong\n1mo\nHow Opus changes the partner value equation\nThomas Röhrl\n2mo\nHarness AI for Seamless Workflow Creation and Updates with ATOM AVA Co-pilot\nAnuta Networks\n2y\nThe Secret to Rapid Innovation: Building a Successful Fusion Development Team\nMichael Weinberger\n1y\nShow more\nShow less\nSimilar topics\nGuide to Enterprise AI Agent Adoption\n10 Posts\n1,948\nUnderstanding the Enterprise AI Agent Ecosystem\n10 Posts\n6,689\nHow to Use Context-Aware AI Agents with Enterprise Tools\n10 Posts\n5,114\nHow AI Foundation Models Transform Enterprise Software\n10 Posts\n3,222\nTools For Managing Enterprise AI Deployments\n10 Posts\n10,005\nBest Practices For Scaling AI In Large Companies\n10 Posts\n1,939\nWhy Context Engineering Matters for AI Agents\n10 Posts\n4,075\nRole of Software Engineering in Agentic Flows\n10 Posts\n4,171\nHow to Run Large AI Models Remotely\n7 Posts\n499\nHow to Apply Deep Reasoning Agents in AI Solutions\n10 Posts\n5,488\nShow more\nShow less\nExplore content categories\nCareer\nProductivity\nFinance\nSoft Skills & Emotional Intelligence\nProject Management\nEducation\nTechnology\nLeadership\nEcommerce\nUser Experience\nRecruitment & HR\nCustomer Experience\nReal Estate\nMarketing\nSales\nRetail & Merchandising\nScience\nSupply Chain Management\nFuture Of Work\nConsulting\nWriting\nEconomics\nArtificial Intelligence\nEmployee Experience\nWorkplace Trends\nFundraising\nNetworking\nCorporate Social Responsibility\nNegotiation\nCommunication\nEngineering\nHospitality & Tourism\nBusiness Strategy\nChange Management\nOrganizational Culture\nDesign\nInnovation\nEvent Planning\nTraining & Development\nShow more\nShow less\n\n## full_text\n\nFor years, enterprises used familiar roles to bridge product and reality.\nSales engineers explained what was possible.\nSolution engineers designed implementations.\nCustomer engineers kept systems running.\nThat model worked because software was largely static. AI agents break that assumption. They are expected to reason about business-impacting decisions, span systems, operate on incomplete context, and surface judgment calls that were never formally encoded. This is where enterprise AI adoption slows down, because the decision layer has never been translated into software.\nForward-deployed engineering is a powerful model, but it only works under specific conditions.\nWhat Forward-Deployed Engineers Actually Unlock\nForward-deployed engineers embed inside the problem itself. Their role is not support or customization, and not to run the business on the enterprise’s behalf. It is to deeply understand how the organization actually operates: its data, workflows, constraints, and decision logic, and then shape systems to deliver outcomes.\nThe unlock: Turning Enterprise Judgement into reusable Platform Primitives.\nThe goal is simple but non-trivial: transfer operational judgment into systems that can learn and improve over time. When this works, value compounds even after the engineers step away.\nThe Concrete Work\nIn practice, FDEs focus on a narrow but critical set of activities:\nSurface decision-relevant context : identify and codify the entities, relationships, and state that actually drive outcomes, often forming the backbone of an enterprise context graph (Checkout\nJaya Gupta\n’s insightful article on this topic).\nGround the AI Agent in enterprise reality : shape behavior using constraints, tools, and feedback loops rather than generic fine-tuning.\nDefine decision-grade evaluations : measure quality in business terms, not just accuracy or latency.\nTurn learning into platform primitives : work with product teams to encode enterprise logic into SDKs, ontologies, and policy surfaces so it scales beyond one deployment.\nEnable joint execution : make it easy for SMEs, system owners, and business owners to participate in discovery, evaluation, and iteration alongside the FDEs.\nThe difference vs classic consulting is the deliverable: not a one-off implementation, but reusable primitives (context, evals, policy surfaces) that reduce effort per new deployment and increase product leverage over time. If the work cannot be turned into reusable primitives, you are doing services, and margins will eventually prove it.\nWhen FDEs Create Real Leverage\nForward deployment creates leverage when the problem is discovery, not rollout. Enterprise agents have no clean incumbent, no stable workflow, and no single owner. The unlock comes from encoding how decisions are made, including exceptions and risk tolerance, into systems that can operate reliably inside enterprise constraints\nRecommended by LinkedIn\nThe Agentic Revolution: When Software Finally Becomes…\nPaul Devalier\n1 month ago\nAI Engineering Framework: From Business Workflow to…\nKiran Donepudi\n2 weeks ago\nMy 10 Favorite Power Automate Features from 2024\nMarcel Broschk\n1 year ago\nThe FDE model works best when:\nDecisions span systems and teams, making context central.\nOutcomes tie directly to a business priority, forcing access and iteration.\nKnowledge extraction is the goal, not delivery velocity.\nEach deployment strengthens the product, so future customers need less bespoke work.\nWhen FDEs Are the Wrong Tool\nForward deployment is powerful but expensive in terms of focus, trust, and organizational energy. It is usually unnecessary when the problem is already well understood and bounded.\nIt is the wrong approach when:\nYou are shipping a narrow productivity feature inside a single product.\nRequirements are stable and repeatable.\nReal data or workflows are off-limits.\nFailure is penalized, and iteration is constrained.\nCustom work cannot be generalized into product leverage.\nIn these cases, forward deployment adds friction rather than value.\nThe Headwinds\nFor enterprises, the two hardest headwinds are process change and change management.\nProcess change : most enterprises will not freely share production data, operational playbooks, or decision logic. Much of the most important knowledge is undocumented and lives in the heads of experienced operators. Introducing agents forces organizations to revisit approvals, handoffs, exception handling, and escalation paths.\nChange management : agentic systems do not arrive “done.” They require iteration, feedback, and recalibration. Enterprises that expect a one-time rollout work against the learning loop that makes agents valuable. Treat this as controlled evolution, with clear ownership, guardrails, and room to adapt.\nFor startups and platforms, the headwinds are people and proof.\nPeople : true FDEs are rare. They require deep technical ability, systems thinking, domain curiosity, and the credibility to work across product, engineering, and business stakeholders. Finding people who can operate with both depth and breadth is hard, and working inside constrained environments is even harder.\nProof : early in an engagement, value is ambiguous and outcomes are uncertain. Setting the right targets, measuring progress meaningfully, and iterating toward a concrete business win is non-trivial. The teams that succeed are explicit about what “value” means, instrument learning early, and continuously refine both the product and the engagement model.\nWithout this model, enterprise AI faces an uphill task and often defaults to brittle orchestration or narrow automation. With it, enterprises can build systems that learn, adapt, and compound value over time.\nOpenAI\nAnthropic\nGoogle\nPalantir Technologies\nLike\nLike\nCelebrate\nSupport\nLove\nInsightful\nFunny\nComment\nCopy\nLinkedIn\nFacebook\nShare\n38\n2 Comments\nVikram Ahuja\n5mo\nReport this comment\nLoved this article Sriram 👍\nLike\nReply\n1 Reaction\n2 Reactions\nDharminder Singh\n5mo\nReport this comment\nExtremely insightful Sriram.\nCc: Simran Kaur Jhinger\nLike\nReply\n1 Reaction\n2 Reactions\nSee more comments\nTo view or add a comment, sign in\nMore articles by Sriram Natarajan\nReasoning Allocation in Enterprise AI\nMar 30, 2026\nReasoning Allocation in Enterprise AI\nEnterprise AI is starting to run into a problem that looks like cost on the surface, but is fundamentally about system…\n37\n6 Comments\nHow Enterprises Will Learn Like Models Do\nOct 18, 2025\nHow Enterprises Will Learn Like Models Do\nEvery foundational company now has an Agent SDK. OpenAI has AgentKit.\n46\n7 Comments\nCoding with AI: Evolving My Software Engineering Journey\nJan 8, 2024\nCoding with AI: Evolving My Software Engineering Journey\nMy day-to-day software engineering tasks have significantly transformed over the past year. Before LLMs and AI agents…\n29\n1 Comment\nExecuting the Executive Order: Need for Speed\nOct 31, 2023\nExecuting the Executive Order: Need for Speed\nHere's my take on some intriguing highlights from today's executive order: New Standards for AI Safety and Security:…\n16\n1 Comment\nStanding Out in a Competitive Job Market: Strategies for Engineers and New College Grads\nDec 22, 2022\nStanding Out in a Competitive Job Market: Strategies for Engineers and New College Grads\nAs a new college graduate or junior software engineer, you might feel overwhelmed by the competitive job market. With…\n11\n2 Comments\nNavigating Change: A Guide for Engineers\nDec 18, 2022\nNavigating Change: A Guide for Engineers\nEconomic challenges can be a source of stress and uncertainty for employees, particularly those who are individual…\n11\nIs management right for you?\nDec 12, 2022\nIs management right for you?\nI have been mentoring engineers across Google and CapitalG portfolio companies, and I am often asked, “Is management…\n42\n5 Comments\nH1B: An Eternal Limbo\nNov 6, 2022\nH1B: An Eternal Limbo\nI am a proud immigrant who owes all my professional success to this great country. I am one of the very few fortunate…\n31\n2 Comments\nShow more\nSee all articles\nOthers also viewed\nAgents vs Workflows: Why It Matters\nJose Carrasco\n1y\nThe Capability Threshold: Why the Cognitive Delivery Framework Is Possible Now\nJason Cruz Falzon, MBCS\n3mo\nAI-Assisted Modernization Framework: Risk-Controlled Enterprise Transformation\nDevox Software\n5mo\nDeclarative YAML Workflow System for AI Agents\nNedim Fakić\n5mo\nHow to Run a Product & Platform Engineering, Data, Analytics & AI Company at Scale in 2025 in the Age of the AI Agentic Era?\nManish Surapaneni\n1y\nYour AI implementation isn't failing. Your expectations are.\nLindsay Keyfauver\n2mo\nHarness Engineering: The Missing Layer Between Your AI and Your Business\nRon de Jong\n1mo\nHow Opus changes the partner value equation\nThomas Röhrl\n2mo\nHarness AI for Seamless Workflow Creation and Updates with ATOM AVA Co-pilot\nAnuta Networks\n2y\nThe Secret to Rapid Innovation: Building a Successful Fusion Development Team\nMichael Weinberger\n1y\nShow more\nShow less\nSimilar topics\nGuide to Enterprise AI Agent Adoption\n10 Posts\n1,948\nUnderstanding the Enterprise AI Agent Ecosystem\n10 Posts\n6,689\nHow to Use Context-Aware AI Agents with Enterprise Tools\n10 Posts\n5,114\nHow AI Foundation Models Transform Enterprise Software\n10 Posts\n3,222\nTools For Managing Enterprise AI Deployments\n10 Posts\n10,005\nBest Practices For Scaling AI In Large Companies\n10 Posts\n1,939\nWhy Context Engineering Matters for AI Agents\n10 Posts\n4,075\nRole of Software Engineering in Agentic Flows\n10 Posts\n4,171\nHow to Run Large AI Models Remotely\n7 Posts\n499\nHow to Apply Deep Reasoning Agents in AI Solutions\n10 Posts\n5,488\nShow more\nShow less\nExplore content categories\nCareer\nProductivity\nFinance\nSoft Skills & Emotional Intelligence\nProject Management\nEducation\nTechnology\nLeadership\nEcommerce\nUser Experience\nRecruitment & HR\nCustomer Experience\nReal Estate\nMarketing\nSales\nRetail & Merchandising\nScience\nSupply Chain Management\nFuture Of Work\nConsulting\nWriting\nEconomics\nArtificial Intelligence\nEmployee Experience\nWorkplace Trends\nFundraising\nNetworking\nCorporate Social Responsibility\nNegotiation\nCommunication\nEngineering\nHospitality & Tourism\nBusiness Strategy\nChange Management\nOrganizational Culture\nDesign\nInnovation\nEvent Planning\nTraining & Development\nShow more\nShow less\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 94\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Forward-deployed engineers embed inside the problem itself. Their role is not support or customization, and not to run the business on the ... / query=enterprise AI production rollout case study / intent=find_original_source / path=fde_implementation\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] For years, enterprises used familiar roles to bridge product and reality.\n3. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Sales engineers explained what was possible.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] Solution engineers designed implementations.\n5. [case_detail / signal_card_candidate, relationship_graph_input, case / high] Customer engineers kept systems running.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] That model worked because software was largely static.\n"
+}

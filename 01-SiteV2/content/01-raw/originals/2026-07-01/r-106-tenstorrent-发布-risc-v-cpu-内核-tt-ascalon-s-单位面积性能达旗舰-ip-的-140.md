@@ -1,0 +1,340 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-106
+title: "Tenstorrent 发布 RISC-V CPU 内核 TT-Ascalon S，单位面积性能达旗舰 IP 的 140%"
+original_url: "https://www.ithome.com/0/970/866.htm"
+canonical_url: "https://ithome.com/0/970/866.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-01T01:42:48.000Z"
+collected_at: 2026-07-01T02:33:05.591Z
+language: mixed
+full_text_hash: c730617a7cb6d727
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-01/r-106-tenstorrent-发布-risc-v-cpu-内核-tt-ascalon-s-单位面积性能达旗舰-ip-的-140.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-01/r-106-tenstorrent-发布-risc-v-cpu-内核-tt-ascalon-s-单位面积性能达旗舰-ip-的-140.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: medium
+extraction_method: "body-visible-text"
+readability_score: 42
+extractor_diagnostics: {"readability_score":42,"text_length":1562,"paragraph_count":15,"sentence_count":6,"boilerplate_hits":3,"symbol_ratio":0.0013,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 1562
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c730617a7cb6d727","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Tenstorrent 发布 RISC-V CPU 内核 TT-Ascalon S，单位面积性能达旗舰 IP 的 140%","discovery_summary":"Tenstorrent 发布 RISC-V CPU 内核 TT-Ascalon S，以旗舰核心 Ascalon X 一半面积实现其 70% 性能，单位面积性能达 1.4 倍。该内核为乱序超标量 4 宽解码，符合 RVA23 配置文件，IPC 每 GHz 在 SPECint2006 中得 15 分，单集群可扩展至 8 核。面向代理式 AI，优化智能体混合执行模式。在 Kimi K2.6 上达 900 Token/s/user（GPU 三倍），DeepSeek-R1-0528 671B 达 400+ Token/s/user，LTX 2.3 Fast 视频生成速度为 GPU 四倍。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/970/866.htm","discovered_at":"2026-07-01T02:17:38.664Z","rank_on_page":30,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 584aa569d6e29c3d
+content_hash: c730617a7cb6d727
+semantic_hash: dcb0c9212745f4b7
+duplicate_of: ""
+first_seen_at: "2026-07-01T01:42:48.000Z"
+last_seen_at: 2026-07-01T02:33:05.591Z
+update_detected: false
+raw_status: candidate
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":["企业服务"],"roles":[],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全"],"numbers":["140%","70%","1.4 倍","4","23","2006","15","8"],"quotes":[]}
+evidence_seed: {"company_actions":["该 IP 是一款乱序超标量 4 宽解码内核，符合 RVA23 配置文件，具备单个 256b 矢量单元，拥有 32KB 指令缓存和 64KB 数据缓存， IPC 方面每 GHz 在 SPECint2006 中可得到 15 分 。","单个 TT-Ascalon S 集群可扩展到 8 个内核，拥有可配置的共享 L2 缓存。"],"case_details":["Tenstorrent 表示 TT-Ascalon S 面向代理式 AI ，针对智能体运行时那种混合型、分支密集、工具关联的典型执行模式进行了优化，有助于实现更可预测的执行；同时也可满足高能效服务器、网络与存储 SoC、数据中心边缘部署等场景的需求。"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"number","text":"Tenstorrent 发布 RISC-V CPU 内核 TT-Ascalon S，以旗舰核心 Ascalon X 一半面积实现其 70% 性能，单位面积性能达 1.4 倍。该内核为乱序超标量 4 宽解码，符合 RVA23 配置文件，IPC 每 GHz 在 SPECint2006 中得 15 分，单集群可扩展至 8 核。面向代理式 AI，优化智能体混合执行模式。在 Kimi K2.6 上达 900 Token/s/user（GPU 三倍），DeepSeek-R1-0528 671B 达 400+ Token/s/user，LTX 2.3 Fast 视频生成速度为 GPU 四倍。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"Tenstorrent 发布 RISC-V CPU 设计 Ascalon S，单位面积性能达旗舰 IP 的 140% - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 电脑硬件 Tenstorrent 发布 RISC-V CPU 设计 Ascalon S，单位面积性能达旗舰 IP 的 140% 2026/7/1 9:42:48 来源： IT之家 作者： 溯波（实习） 责编： 溯波 评论： IT之家 7 月 1 日消息，由知名芯片设计师 Jim Keller 领导的 Fabless 企业 Tenstorrent 当地时间昨日在日本东京举行的 TT-Deploy JP 大会上发布了 RISC-V CPU 内核设计 TT-Ascalon S，这 一 IP 兼顾性能与面积优化 。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"作为 Ascalon RISC-V 处理器家族的最新成员， TT-Ascalon S 以旗舰核心 Ascalon X 一半的面积实现了后者 70% 的性能 ，带来了 1.","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"该 IP 是一款乱序超标量 4 宽解码内核，符合 RVA23 配置文件，具备单个 256b 矢量单元，拥有 32KB 指令缓存和 64KB 数据缓存， IPC 方面每 GHz 在 SPECint2006 中可得到 15 分 。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"单个 TT-Ascalon S 集群可扩展到 8 个内核，拥有可配置的共享 L2 缓存。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"Tenstorrent 表示 TT-Ascalon S 面向代理式 AI ，针对智能体运行时那种混合型、分支密集、工具关联的典型执行模式进行了优化，有助于实现更可预测的执行；同时也可满足高能效服务器、网络与存储 SoC、数据中心边缘部署等场景的需求。","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"}]
+theme: outside-core-exploration
+keyword_group: outside-core-exploration
+copyright_note: local research archive only
+---
+
+# Tenstorrent 发布 RISC-V CPU 内核 TT-Ascalon S，单位面积性能达旗舰 IP 的 140%
+
+## clean_text
+
+Tenstorrent 发布 RISC-V CPU 设计 Ascalon S，单位面积性能达旗舰 IP 的 140% - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 数码之家 > 电脑硬件
+Tenstorrent 发布 RISC-V CPU 设计 Ascalon S，单位面积性能达旗舰 IP 的 140%
+2026/7/1 9:42:48
+来源： IT之家
+作者： 溯波（实习）
+责编： 溯波
+评论：
+IT之家 7 月 1 日消息，由知名芯片设计师 Jim Keller 领导的 Fabless 企业 Tenstorrent 当地时间昨日在日本东京举行的 TT-Deploy JP 大会上发布了 RISC-V CPU 内核设计 TT-Ascalon S，这 一 IP 兼顾性能与面积优化 。
+作为 Ascalon RISC-V 处理器家族的最新成员， TT-Ascalon S 以旗舰核心 Ascalon X 一半的面积实现了后者 70% 的性能 ，带来了 1.4 倍的单位面积性能。
+该 IP 是一款乱序超标量 4 宽解码内核，符合 RVA23 配置文件，具备单个 256b 矢量单元，拥有 32KB 指令缓存和 64KB 数据缓存， IPC 方面每 GHz 在 SPECint2006 中可得到 15 分 。单个 TT-Ascalon S 集群可扩展到 8 个内核，拥有可配置的共享 L2 缓存。
+Tenstorrent 表示 TT-Ascalon S 面向代理式 AI ，针对智能体运行时那种混合型、分支密集、工具关联的典型执行模式进行了优化，有助于实现更可预测的执行；同时也可满足高能效服务器、网络与存储 SoC、数据中心边缘部署等场景的需求。
+Tenstorrent 在本次大会上还展示了其 Galaxy Blackhole“超级集群”的实力：其在 Kimi K2.6 上可实现 900 Token/s/user，是 GPU 的三倍；在 DeepSeek-R1-0528 671B 上达到 400+ Token/s/user；对于 LTX 2.3 Fast，能以 GPU 四倍的速度生成 6 秒 24fps 视频。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： Tenstorrent ， RISCV
+希奥端计算将基于赛昉 Dubhe-100 CPU IP 打造 RISC-V 服务器 CPU
+“硅仙人”吉姆 · 凯勒回复旗下公司 Tenstorrent 收购传闻：已与英特尔、高通 CEO 会面
+核心技术版图升级：进迭时空新一代高性能一致性互联总线 N200 研发完成
+消息称高通洽谈收购“硅仙人”Jim Keller 旗下 Tenstorrent 公司，旨在提升人工智能芯片研发实力
+NextSilicon 规划 64、128 核心企业级 RISC-V 处理器，预计 2028 年初上市
+RISC-V 吃上安卓 16，阿里达摩院玄铁 9 系列 RVA23 处理器官宣全球首发
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## full_text
+
+Tenstorrent 发布 RISC-V CPU 设计 Ascalon S，单位面积性能达旗舰 IP 的 140% - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > 数码之家 > 电脑硬件
+Tenstorrent 发布 RISC-V CPU 设计 Ascalon S，单位面积性能达旗舰 IP 的 140%
+2026/7/1 9:42:48
+来源： IT之家
+作者： 溯波（实习）
+责编： 溯波
+评论：
+IT之家 7 月 1 日消息，由知名芯片设计师 Jim Keller 领导的 Fabless 企业 Tenstorrent 当地时间昨日在日本东京举行的 TT-Deploy JP 大会上发布了 RISC-V CPU 内核设计 TT-Ascalon S，这 一 IP 兼顾性能与面积优化 。
+作为 Ascalon RISC-V 处理器家族的最新成员， TT-Ascalon S 以旗舰核心 Ascalon X 一半的面积实现了后者 70% 的性能 ，带来了 1.4 倍的单位面积性能。
+该 IP 是一款乱序超标量 4 宽解码内核，符合 RVA23 配置文件，具备单个 256b 矢量单元，拥有 32KB 指令缓存和 64KB 数据缓存， IPC 方面每 GHz 在 SPECint2006 中可得到 15 分 。单个 TT-Ascalon S 集群可扩展到 8 个内核，拥有可配置的共享 L2 缓存。
+Tenstorrent 表示 TT-Ascalon S 面向代理式 AI ，针对智能体运行时那种混合型、分支密集、工具关联的典型执行模式进行了优化，有助于实现更可预测的执行；同时也可满足高能效服务器、网络与存储 SoC、数据中心边缘部署等场景的需求。
+Tenstorrent 在本次大会上还展示了其 Galaxy Blackhole“超级集群”的实力：其在 Kimi K2.6 上可实现 900 Token/s/user，是 GPU 的三倍；在 DeepSeek-R1-0528 671B 上达到 400+ Token/s/user；对于 LTX 2.3 Fast，能以 GPU 四倍的速度生成 6 秒 24fps 视频。
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： Tenstorrent ， RISCV
+希奥端计算将基于赛昉 Dubhe-100 CPU IP 打造 RISC-V 服务器 CPU
+“硅仙人”吉姆 · 凯勒回复旗下公司 Tenstorrent 收购传闻：已与英特尔、高通 CEO 会面
+核心技术版图升级：进迭时空新一代高性能一致性互联总线 N200 研发完成
+消息称高通洽谈收购“硅仙人”Jim Keller 旗下 Tenstorrent 公司，旨在提升人工智能芯片研发实力
+NextSilicon 规划 64、128 核心企业级 RISC-V 处理器，预计 2028 年初上市
+RISC-V 吃上安卓 16，阿里达摩院玄铁 9 系列 RVA23 处理器官宣全球首发
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 42
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- diagnostics: {"readability_score":42,"text_length":1562,"paragraph_count":15,"sentence_count":6,"boilerplate_hits":3,"symbol_ratio":0.0013,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   Tenstorrent 发布 RISC-V CPU 内核 TT-Ascalon S，以旗舰核心 Ascalon X 一半面积实现其 70% 性能，单位面积性能达 1.4 倍。该内核为乱序超标量 4 宽解码，符合 RVA23 配置文件，IPC 每 GHz 在 SPECint2006 中得 15 分，单集群可扩展至 8 核。面向代理式 AI，优化智能体混合执行模式。在 Kimi K2.6 上达 900 Token/s/user（GPU 三倍），DeepSeek-R1-0528 671B 达 400+ Token/s/user，LTX 2.3 Fast 视频生成速度为 GPU 四倍。
+
+2. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   Tenstorrent 发布 RISC-V CPU 设计 Ascalon S，单位面积性能达旗舰 IP 的 140% - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > 数码之家 > 电脑硬件 Tenstorrent 发布 RISC-V CPU 设计 Ascalon S，单位面积性能达旗舰 IP 的 140% 2026/7/1 9:42:48 来源： IT之家 作者： 溯波（实习） 责编： 溯波 评论： IT之家 7 月 1 日消息，由知名芯片设计师 Jim Keller 领导的 Fabless 企业 Tenstorrent 当地时间昨日在日本东京举行的 TT-Deploy JP 大会上发布了 RISC-V CPU 内核设计 TT-Ascalon S，这 一 IP 兼顾性能与面积优化 。
+
+3. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   作为 Ascalon RISC-V 处理器家族的最新成员， TT-Ascalon S 以旗舰核心 Ascalon X 一半的面积实现了后者 70% 的性能 ，带来了 1.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   该 IP 是一款乱序超标量 4 宽解码内核，符合 RVA23 配置文件，具备单个 256b 矢量单元，拥有 32KB 指令缓存和 64KB 数据缓存， IPC 方面每 GHz 在 SPECint2006 中可得到 15 分 。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   单个 TT-Ascalon S 集群可扩展到 8 个内核，拥有可配置的共享 L2 缓存。
+
+6. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   Tenstorrent 表示 TT-Ascalon S 面向代理式 AI ，针对智能体运行时那种混合型、分支密集、工具关联的典型执行模式进行了优化，有助于实现更可预测的执行；同时也可满足高能效服务器、网络与存储 SoC、数据中心边缘部署等场景的需求。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: 暂无公开信息
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全
+- numbers: 140%, 70%, 1.4 倍, 4, 23, 2006, 15, 8
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: 该 IP 是一款乱序超标量 4 宽解码内核，符合 RVA23 配置文件，具备单个 256b 矢量单元，拥有 32KB 指令缓存和 64KB 数据缓存， IPC 方面每 GHz 在 SPECint2006 中可得到 15 分 。 / 单个 TT-Ascalon S 集群可扩展到 8 个内核，拥有可配置的共享 L2 缓存。
+- case_details: Tenstorrent 表示 TT-Ascalon S 面向代理式 AI ，针对智能体运行时那种混合型、分支密集、工具关联的典型执行模式进行了优化，有助于实现更可预测的执行；同时也可满足高能效服务器、网络与存储 SoC、数据中心边缘部署等场景的需求。
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Tenstorrent 发布 RISC-V CPU 内核 TT-Ascalon S，单位面积性能达旗舰 IP 的 140%","discovery_summary":"Tenstorrent 发布 RISC-V CPU 内核 TT-Ascalon S，以旗舰核心 Ascalon X 一半面积实现其 70% 性能，单位面积性能达 1.4 倍。该内核为乱序超标量 4 宽解码，符合 RVA23 配置文件，IPC 每 GHz 在 SPECint2006 中得 15 分，单集群可扩展至 8 核。面向代理式 AI，优化智能体混合执行模式。在 Kimi K2.6 上达 900 Token/s/user（GPU 三倍），DeepSeek-R1-0528 671B 达 400+ Token/s/user，LTX 2.3 Fast 视频生成速度为 GPU 四倍。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/970/866.htm","discovered_at":"2026-07-01T02:17:38.664Z","rank_on_page":30,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+Tenstorrent 发布 RISC-V CPU 内核 TT-Ascalon S，以旗舰核心 Ascalon X 一半面积实现其 70% 性能，单位面积性能达 1.4 倍。该内核为乱序超标量 4 宽解码，符合 RVA23 配置文件，IPC 每 GHz 在 SPECint2006 中得 15 分，单集群可扩展至 8 核。面向代理式 AI，优化智能体混合执行模式。在 Kimi K2.6 上达 900 Token/s/user（GPU 三倍），DeepSeek-R1-0528 671B 达 400+ Token/s/user，LTX 2.3 Fast 视频生成速度为 GPU 四倍。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

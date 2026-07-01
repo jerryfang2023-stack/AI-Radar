@@ -1,0 +1,732 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-058
+title: "AI Startups: Overcome Procurement Friction on AWS Marketplace"
+original_url: "https://www.linkedin.com/posts/simongillett_most-ai-startups-treat-distribution-as-an-activity-7470837402996146176-FhPs"
+canonical_url: "https://linkedin.com/posts/simongillett_most-ai-startups-treat-distribution-as-an-activity-7470837402996146176-FhPs"
+source_name: "keyword search / Anysearch"
+source_type: operators
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "procurement_marketplace"
+search_path_label: "采购 / 招投标 / Marketplace 路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-01T02:33:05.391Z
+language: mixed
+full_text_hash: d8413e232250aa78
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-01/r-058-ai-startups-overcome-procurement-friction-on-aws-marketplace.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-01/r-058-ai-startups-overcome-procurement-friction-on-aws-marketplace.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-main
+extraction_quality: high
+extraction_method: "main"
+readability_score: 72
+extractor_diagnostics: {"readability_score":72,"text_length":15657,"paragraph_count":131,"sentence_count":122,"boilerplate_hits":11,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+has_full_text: true
+content_length: 15657
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"d8413e232250aa78","missing":[]}
+source_volatility: high
+community_name: "keyword search / Anysearch"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 9aae16150f1f9201
+content_hash: d8413e232250aa78
+semantic_hash: 5c0bab070615cd76
+duplicate_of: ""
+first_seen_at: "2026-07-01T02:33:05.391Z"
+last_seen_at: 2026-07-01T02:33:05.391Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["emerging_pool","user_feedback_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch","OpenAI","Google","Microsoft","Amazon","AWS"],"products":["Gemini","agent","agents","Agent","Claude"],"people":[],"industries":["法律 / 法务","金融 / 保险","制造 / 工业","开发者工具","企业服务"],"roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","法务","财务 / 预算","采购","销售 / 客服"],"numbers":["2","100","000","23","8 million","2B","583","3"],"quotes":["Project Dawn","We're not going to be conservative.","AI is taking jobs","see how this AI thing plays out","AI is too expensive."]}
+evidence_seed: {"company_actions":["Simon Gillett 2w Report this post Most AI startups treat distribution as an afterthought.","Build first, figure out GTM later."],"case_details":[],"workflow_changes":["Google Cloud's Gemini Enterprise platform has native agent governance built in — hard spending caps, role-based model access, real-time ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace","AI Startups: Overcome Procurement Friction on AWS Marketplace This title was summarized by AI from the post below.","The mistake is underestimating how much procurement friction kills enterprise AI adoption."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队","法务 / 律师","采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"Google Cloud's Gemini Enterprise platform has native agent governance built in — hard spending caps, role-based model access, real-time ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"AI Startups: Overcome Procurement Friction on AWS Marketplace This title was summarized by AI from the post below.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Simon Gillett 2w Report this post Most AI startups treat distribution as an afterthought.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Build first, figure out GTM later.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"The mistake is underestimating how much procurement friction kills enterprise AI adoption.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"AWS Marketplace solves this quietly — buyers use committed spend, procurement teams stay happy, and you inherit trust from an ecosystem with millions of active accounts.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# AI Startups: Overcome Procurement Friction on AWS Marketplace
+
+## clean_text
+
+AI Startups: Overcome Procurement Friction on AWS Marketplace
+This title was summarized by AI from the post below.
+Simon Gillett
+2w
+Report this post
+Most AI startups treat distribution as an afterthought. Build first, figure out GTM later.
+The mistake is underestimating how much procurement friction kills enterprise AI adoption.
+AWS Marketplace solves this quietly — buyers use committed spend, procurement teams stay happy, and you inherit trust from an ecosystem with millions of active accounts.
+We listed Aitium there ourselves. Built from 100,000+ US orders across 23 Amazon Business regions, serving a market of 8 million B2B customers. The listing process taught us what documentation, pricing models, and technical reviews actually look like from the inside.
+Now as an APN member with AWS AI Software Competency, we help other ISVs do the same — from architecture review through to live listing.
+What's held your team back from listing on Marketplace?
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+More Relevant Posts
+Global AI Internet Freedom Fund
+583 followers
+2w
+Report this post
+Most AI startups treat distribution as an afterthought. Build first, figure out GTM later.
+The mistake is underestimating how much procurement friction kills enterprise AI adoption.
+AWS Marketplace solves this quietly — buyers use committed spend, procurement teams stay happy, and you inherit trust from an ecosystem with millions of active accounts.
+We listed Aitium there ourselves. Built from 100,000+ US orders across 23 Amazon Business regions, serving a market of 8 million B2B customers. The listing process taught us what documentation, pricing models, and technical reviews actually look like from the inside.
+Now as an APN member with AWS AI Software Competency, we help other ISVs do the same — from architecture review through to live listing.
+What's held your team back from listing on Marketplace?
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Simon Gillett
+3w
+Report this post
+Most AI startups treat distribution as an afterthought. Build first, figure out GTM later.
+The mistake is underestimating how much procurement friction kills enterprise AI deals.
+AWS Marketplace removes that friction. Buyers use committed spend. Legal is simplified. Billing is consolidated.
+In our experience listing Aitium — our B2B sales intelligence tool built from 100,000+ US orders across 23 Amazon Business regions — the Marketplace listing process is navigable but far from obvious. As an APN member with AWS AI Software Competency accreditation, we've helped other ISVs through the same path.
+What most teams miss is that Marketplace isn't just a storefront. It's a procurement shortcut into enterprises already spending on AWS.
+If you're building AI software and selling to enterprise, are you factoring distribution into your architecture decisions from day one?
+2 Comments
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Global AI Internet Freedom Fund
+583 followers
+3w
+Report this post
+Most AI startups treat distribution as an afterthought. Build first, figure out GTM later.
+The mistake is underestimating how much procurement friction kills enterprise AI deals.
+AWS Marketplace removes that friction. Buyers use committed spend. Legal is simplified. Billing is consolidated.
+In our experience listing Aitium — our B2B sales intelligence tool built from 100,000+ US orders across 23 Amazon Business regions — the Marketplace listing process is navigable but far from obvious. As an APN member with AWS AI Software Competency accreditation, we've helped other ISVs through the same path.
+What most teams miss is that Marketplace isn't just a storefront. It's a procurement shortcut into enterprises already spending on AWS.
+If you're building AI software and selling to enterprise, are you factoring distribution into your architecture decisions from day one?
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Kush Desai
+3w
+Report this post
+Andy Jassy is rebuilding the world's biggest e-commerce company around AI.
+Amazon's "Project Dawn" - the internal name for their 2026 restructuring - just cut another 16,000 corporate roles.
+That's on top of 14,000 in October.
+Total: ~30,000 corporate jobs gone.
+The numbers behind it:
+→ Amazon plans ~$200B in capex for 2026, primarily AI infrastructure
+→ OpenAI alone has committed over $100B in AWS spend
+→ AWS AI revenue run rate already hit $15B+ in Q1 2026 - 260x AWS's growth rate at the same stage
+→ Jassy is targeting AWS toward $600B in annual revenue (it's $128B today)
+→ Middle management is being flattened across every business unit
+Jassy on the spending: "We're not going to be conservative."
+This isn't just an "AI is taking jobs" story.
+This is the world's largest retailer publicly committing to running on agents.
+The companies still waiting to "see how this AI thing plays out" are about to watch competitors with half their headcount move twice as fast.
+Most non-tech companies still treat AI like a tool you add.
+The ones winning are treating it like the new operating model.
+That's most of what we do at Source Code Lab - design tailor-made agents and automations for non-tech businesses that want AI doing real work inside their operations, not sitting on a dashboard.
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Muhammad Arbab
+4d
+Report this post
+Amazon Connect is playing the long game.
+It is no longer just about the contact center. It is evolving into a platform for orchestrating customer experience across AI, channels, and enterprise workflows.
+Some of its recent announcements didn't immediately make sense to me. But the more I dig into them, the more I can see a coherent long-term strategy emerging.
+If AWS continues executing in this direction, Amazon Connect could become compelling not only for large enterprises, but also for startups building AI-native customer experience solutions.
+There is a lot more beneath the surface than first meets the eye. I will share a deeper analysis in one of my upcoming articles.
+51
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Shah, Mittal
+1w
+Edited
+Report this post
+Great experience attending AWS Summit NYC this week and connecting with AWS teams, partners, startups, and technology leaders.
+While there were many announcements, a few takeaways
+🔹 Amazon Bedrock AgentCore
+AWS continues to push the Agentic AI space forward with new capabilities including Web Search on AgentCore, Managed Knowledge Bases, and AgentCore Harness—making it easier to build, ground, and operationalize AI agents.
+🔹 Amazon Q
+The evolution of Amazon Q reinforces AWS's vision of bringing AI assistance directly into developer, operations, and business workflows.
+🔹 AWS DevOps Agent
+AI is increasingly becoming part of day-to-day IT operations, helping teams improve operational efficiency and accelerate issue resolution.
+🔹 AWS Continuum
+One of the more interesting concepts introduced was AWS Continuum, extending AI across the software engineering and security lifecycle with capabilities such as code review, threat modeling, penetration testing, and continuous modernization.
+🔹 Release Management
+AWS also showcased how AI can help validate releases, identify issues before production deployment, detect regressions earlier, and improve software delivery confidence.
+My biggest takeaway:
+The conversation is rapidly shifting from AI assistants to AI-powered systems that actively participate across the entire technology lifecycle—from knowledge retrieval and software development to testing, security, operations, and modernization.
+Excited to see how organizations leverage these capabilities to accelerate innovation while improving quality, security, and operational efficiency.
+#AWSSummit #AWS #AmazonQ #AmazonBedrock #AgenticAI #GenerativeAI #DevOps #CloudComputing #SoftwareEngineering #ArtificialIntelligence #DigitalTransformation #AITGlobalInc Anand Joshi Alok Chahar Kunal Mishra
+83
+3 Comments
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Rajeev Perera
+3w
+Report this post
+Last week I wrote about the four enterprise AI governance failures that made headlines in May.
+$500M in a month. Uber's budget gone by April. Microsoft pulling Claude Code licenses. Amazon shutting down its usage leaderboard.
+This week I want to be constructive.
+Because the lesson from all four incidents is not "AI is too expensive." It is "AI deployed without governance is too expensive."
+For retail and CPG leaders planning the next AI deployment, here is the framework that prevents the incidents above:
+Before you deploy:
+Build the outcome measurement model first. Define what business metric each agent or workflow is expected to move. Forecast accuracy. Waste reduction. Stockout rate. Logistics cost per delivery. If you cannot define the metric before deployment, you cannot govern the spend after.
+When you deploy:
+Turn on the controls. Google Cloud's Gemini Enterprise platform has native agent governance built in — hard spending caps, role-based model access, real-time telemetry, automated alerts. These tools exist. The $500M enterprise had them available. They simply were not configured. Configuration is not optional.
+After you deploy:
+Measure outcomes, not consumption. Token count is not a KPI. Leaderboards ranking AI usage destroyed both Uber's budget and Amazon's engineering incentives. The metric you choose determines the behavior you get. Reward what the business needs.
+Goldman Sachs projects token demand will grow 24 times by 2030. The governance infrastructure you build in 2026 is the foundation for every agentic deployment that follows.
+For grocery operators at 1.6% net margin, that foundation is not optional.
+Full governance brief and the three questions every CxO should answer before the next AI deployment — linked in the comments.
+#AIGovernance #AgenticAI #GoogleCloud #CFO #CEO #CTO #CIO #RetailTech #CPG #GeminiEnterprise #VertexAI #AIStrategy #DigitalTransformation #ROI #OperationalExcellence
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Jannat Bawa
+2w
+Report this post
+🚀 Why Amazon Bedrock is becoming my preferred starting point for Generative AI projects
+Over the last few months, I've been exploring different approaches for building AI-powered applications, from simple Proof of Concepts (POCs) to production-ready systems. One service that consistently stands out is Amazon Bedrock.
+For many organizations, the biggest challenge isn't choosing an LLM—it's getting from idea to value quickly while maintaining security, governance, and operational simplicity.
+Why Bedrock works well for POCs:
+✅ No infrastructure to manage
+✅ Access to multiple foundation models through a single API
+✅ Rapid experimentation without model hosting complexity
+✅ Easy integration with existing AWS services
+✅ Pay-as-you-go pricing that avoids large upfront investments
+A developer can go from an idea to a working prototype in hours instead of spending days setting up GPUs, model serving platforms, networking, and observability.
+Why it scales for production workloads:
+✅ Enterprise-grade security and IAM integration
+✅ Private networking options within AWS environments
+✅ Guardrails and responsible AI capabilities
+✅ Knowledge Bases and Agent capabilities for GenAI applications
+✅ Monitoring, governance, and operational controls expected by enterprises
+✅ Ability to switch or evaluate models without major application redesign
+What I find particularly valuable is that teams can start small with a POC and continue using the same platform as requirements evolve into production-grade systems. The journey from experimentation to enterprise deployment feels much smoother compared to managing self-hosted model infrastructure.
+For organizations already invested in AWS, Bedrock significantly lowers the barrier to adopting Generative AI while allowing teams to focus on business outcomes rather than infrastructure management.
+The future of AI development is not just about the models—it's about how quickly and safely teams can build, iterate, and operate AI-powered systems at scale.
+#AWS #AmazonBedrock #GenerativeAI #AI #CloudComputing #MachineLearning #DevOps #PlatformEngineering #CloudArchitecture
+11
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Chris Newbery
+1w
+Report this post
+Gartner predicts that by 2026, 60% of AI projects will be abandoned if they are not supported by AI-ready data.
+In supply chain specifically, Gartner reports that data readiness and data quality gaps are among the primary constraints preventing AI-powered supply chain orchestration from scaling successfully.
+It might be time to address that challenge head on and work on your data as a strategic priority? Let me know if you'd like to talk about the best way to do this.
+Gartner , SupplyChainWise , FactoryCargo , Amazon , Amazon Web Services (AWS)
+SupplyChainWise
+1,540 followers
+1w
+The best supply chains in the world are those that incorporate the need for intelligence, speed and adaptability. The challenge for companies is having an operating system to oversee this, and the data and technology positioned to make the most of the opportunity.
+Taking learnings from Amazon and Amazon Web Services (AWS) , SupplyChainWise ™ (SCW) have built a SupplyChain.OS™ and SupplyChainWiseFoundry™ to do just this.
+SupplyChainWiseFoundry™ brings together fragmented operational data, AI-driven planning and real-time decision support. Helping businesses improve inventory performance, reduce costs and accelerate ROI. A smarter foundation for more resilient and sustainable supply chains, fit for today's (and tomorrow's) supply chain challenges.
+#SupplyChain #AI #DigitalTransformation #Planning #Sustainability #SupplyChain .OS #SupplyChainWiseFoundry
+1 Comment
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+SupplyChainWise
+1,540 followers
+1w
+Report this post
+The best supply chains in the world are those that incorporate the need for intelligence, speed and adaptability. The challenge for companies is having an operating system to oversee this, and the data and technology positioned to make the most of the opportunity.
+Taking learnings from Amazon and Amazon Web Services (AWS) , SupplyChainWise ™ (SCW) have built a SupplyChain.OS™ and SupplyChainWiseFoundry™ to do just this.
+SupplyChainWiseFoundry™ brings together fragmented operational data, AI-driven planning and real-time decision support. Helping businesses improve inventory performance, reduce costs and accelerate ROI. A smarter foundation for more resilient and sustainable supply chains, fit for today's (and tomorrow's) supply chain challenges.
+#SupplyChain #AI #DigitalTransformation #Planning #Sustainability #SupplyChain .OS #SupplyChainWiseFoundry
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+2,714 followers
+506 Posts
+3 Articles
+View Profile
+Follow
+More from this author
+Executive Leaders Radio
+Simon Gillett
+8y
+new book now available on Kindle
+Simon Gillett
+10y
+My book out November 9th, 2015.
+Simon Gillett
+10y
+Explore related topics
+How trust drives product distribution in AI
+Key Problems for AI Startups to Address
+Reasons Companies Hesitate to Use AI Pricing
+How to Overcome Last Mile Challenges in AI Deployment
+Building Scalable AI Infrastructure
+Explore content categories
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+Technology
+Leadership
+Ecommerce
+User Experience
+Show more
+Show less
+
+## full_text
+
+AI Startups: Overcome Procurement Friction on AWS Marketplace
+This title was summarized by AI from the post below.
+Simon Gillett
+2w
+Report this post
+Most AI startups treat distribution as an afterthought. Build first, figure out GTM later.
+The mistake is underestimating how much procurement friction kills enterprise AI adoption.
+AWS Marketplace solves this quietly — buyers use committed spend, procurement teams stay happy, and you inherit trust from an ecosystem with millions of active accounts.
+We listed Aitium there ourselves. Built from 100,000+ US orders across 23 Amazon Business regions, serving a market of 8 million B2B customers. The listing process taught us what documentation, pricing models, and technical reviews actually look like from the inside.
+Now as an APN member with AWS AI Software Competency, we help other ISVs do the same — from architecture review through to live listing.
+What's held your team back from listing on Marketplace?
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+More Relevant Posts
+Global AI Internet Freedom Fund
+583 followers
+2w
+Report this post
+Most AI startups treat distribution as an afterthought. Build first, figure out GTM later.
+The mistake is underestimating how much procurement friction kills enterprise AI adoption.
+AWS Marketplace solves this quietly — buyers use committed spend, procurement teams stay happy, and you inherit trust from an ecosystem with millions of active accounts.
+We listed Aitium there ourselves. Built from 100,000+ US orders across 23 Amazon Business regions, serving a market of 8 million B2B customers. The listing process taught us what documentation, pricing models, and technical reviews actually look like from the inside.
+Now as an APN member with AWS AI Software Competency, we help other ISVs do the same — from architecture review through to live listing.
+What's held your team back from listing on Marketplace?
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Simon Gillett
+3w
+Report this post
+Most AI startups treat distribution as an afterthought. Build first, figure out GTM later.
+The mistake is underestimating how much procurement friction kills enterprise AI deals.
+AWS Marketplace removes that friction. Buyers use committed spend. Legal is simplified. Billing is consolidated.
+In our experience listing Aitium — our B2B sales intelligence tool built from 100,000+ US orders across 23 Amazon Business regions — the Marketplace listing process is navigable but far from obvious. As an APN member with AWS AI Software Competency accreditation, we've helped other ISVs through the same path.
+What most teams miss is that Marketplace isn't just a storefront. It's a procurement shortcut into enterprises already spending on AWS.
+If you're building AI software and selling to enterprise, are you factoring distribution into your architecture decisions from day one?
+2 Comments
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Global AI Internet Freedom Fund
+583 followers
+3w
+Report this post
+Most AI startups treat distribution as an afterthought. Build first, figure out GTM later.
+The mistake is underestimating how much procurement friction kills enterprise AI deals.
+AWS Marketplace removes that friction. Buyers use committed spend. Legal is simplified. Billing is consolidated.
+In our experience listing Aitium — our B2B sales intelligence tool built from 100,000+ US orders across 23 Amazon Business regions — the Marketplace listing process is navigable but far from obvious. As an APN member with AWS AI Software Competency accreditation, we've helped other ISVs through the same path.
+What most teams miss is that Marketplace isn't just a storefront. It's a procurement shortcut into enterprises already spending on AWS.
+If you're building AI software and selling to enterprise, are you factoring distribution into your architecture decisions from day one?
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Kush Desai
+3w
+Report this post
+Andy Jassy is rebuilding the world's biggest e-commerce company around AI.
+Amazon's "Project Dawn" - the internal name for their 2026 restructuring - just cut another 16,000 corporate roles.
+That's on top of 14,000 in October.
+Total: ~30,000 corporate jobs gone.
+The numbers behind it:
+→ Amazon plans ~$200B in capex for 2026, primarily AI infrastructure
+→ OpenAI alone has committed over $100B in AWS spend
+→ AWS AI revenue run rate already hit $15B+ in Q1 2026 - 260x AWS's growth rate at the same stage
+→ Jassy is targeting AWS toward $600B in annual revenue (it's $128B today)
+→ Middle management is being flattened across every business unit
+Jassy on the spending: "We're not going to be conservative."
+This isn't just an "AI is taking jobs" story.
+This is the world's largest retailer publicly committing to running on agents.
+The companies still waiting to "see how this AI thing plays out" are about to watch competitors with half their headcount move twice as fast.
+Most non-tech companies still treat AI like a tool you add.
+The ones winning are treating it like the new operating model.
+That's most of what we do at Source Code Lab - design tailor-made agents and automations for non-tech businesses that want AI doing real work inside their operations, not sitting on a dashboard.
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Muhammad Arbab
+4d
+Report this post
+Amazon Connect is playing the long game.
+It is no longer just about the contact center. It is evolving into a platform for orchestrating customer experience across AI, channels, and enterprise workflows.
+Some of its recent announcements didn't immediately make sense to me. But the more I dig into them, the more I can see a coherent long-term strategy emerging.
+If AWS continues executing in this direction, Amazon Connect could become compelling not only for large enterprises, but also for startups building AI-native customer experience solutions.
+There is a lot more beneath the surface than first meets the eye. I will share a deeper analysis in one of my upcoming articles.
+51
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Shah, Mittal
+1w
+Edited
+Report this post
+Great experience attending AWS Summit NYC this week and connecting with AWS teams, partners, startups, and technology leaders.
+While there were many announcements, a few takeaways
+🔹 Amazon Bedrock AgentCore
+AWS continues to push the Agentic AI space forward with new capabilities including Web Search on AgentCore, Managed Knowledge Bases, and AgentCore Harness—making it easier to build, ground, and operationalize AI agents.
+🔹 Amazon Q
+The evolution of Amazon Q reinforces AWS's vision of bringing AI assistance directly into developer, operations, and business workflows.
+🔹 AWS DevOps Agent
+AI is increasingly becoming part of day-to-day IT operations, helping teams improve operational efficiency and accelerate issue resolution.
+🔹 AWS Continuum
+One of the more interesting concepts introduced was AWS Continuum, extending AI across the software engineering and security lifecycle with capabilities such as code review, threat modeling, penetration testing, and continuous modernization.
+🔹 Release Management
+AWS also showcased how AI can help validate releases, identify issues before production deployment, detect regressions earlier, and improve software delivery confidence.
+My biggest takeaway:
+The conversation is rapidly shifting from AI assistants to AI-powered systems that actively participate across the entire technology lifecycle—from knowledge retrieval and software development to testing, security, operations, and modernization.
+Excited to see how organizations leverage these capabilities to accelerate innovation while improving quality, security, and operational efficiency.
+#AWSSummit #AWS #AmazonQ #AmazonBedrock #AgenticAI #GenerativeAI #DevOps #CloudComputing #SoftwareEngineering #ArtificialIntelligence #DigitalTransformation #AITGlobalInc Anand Joshi Alok Chahar Kunal Mishra
+83
+3 Comments
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Rajeev Perera
+3w
+Report this post
+Last week I wrote about the four enterprise AI governance failures that made headlines in May.
+$500M in a month. Uber's budget gone by April. Microsoft pulling Claude Code licenses. Amazon shutting down its usage leaderboard.
+This week I want to be constructive.
+Because the lesson from all four incidents is not "AI is too expensive." It is "AI deployed without governance is too expensive."
+For retail and CPG leaders planning the next AI deployment, here is the framework that prevents the incidents above:
+Before you deploy:
+Build the outcome measurement model first. Define what business metric each agent or workflow is expected to move. Forecast accuracy. Waste reduction. Stockout rate. Logistics cost per delivery. If you cannot define the metric before deployment, you cannot govern the spend after.
+When you deploy:
+Turn on the controls. Google Cloud's Gemini Enterprise platform has native agent governance built in — hard spending caps, role-based model access, real-time telemetry, automated alerts. These tools exist. The $500M enterprise had them available. They simply were not configured. Configuration is not optional.
+After you deploy:
+Measure outcomes, not consumption. Token count is not a KPI. Leaderboards ranking AI usage destroyed both Uber's budget and Amazon's engineering incentives. The metric you choose determines the behavior you get. Reward what the business needs.
+Goldman Sachs projects token demand will grow 24 times by 2030. The governance infrastructure you build in 2026 is the foundation for every agentic deployment that follows.
+For grocery operators at 1.6% net margin, that foundation is not optional.
+Full governance brief and the three questions every CxO should answer before the next AI deployment — linked in the comments.
+#AIGovernance #AgenticAI #GoogleCloud #CFO #CEO #CTO #CIO #RetailTech #CPG #GeminiEnterprise #VertexAI #AIStrategy #DigitalTransformation #ROI #OperationalExcellence
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Jannat Bawa
+2w
+Report this post
+🚀 Why Amazon Bedrock is becoming my preferred starting point for Generative AI projects
+Over the last few months, I've been exploring different approaches for building AI-powered applications, from simple Proof of Concepts (POCs) to production-ready systems. One service that consistently stands out is Amazon Bedrock.
+For many organizations, the biggest challenge isn't choosing an LLM—it's getting from idea to value quickly while maintaining security, governance, and operational simplicity.
+Why Bedrock works well for POCs:
+✅ No infrastructure to manage
+✅ Access to multiple foundation models through a single API
+✅ Rapid experimentation without model hosting complexity
+✅ Easy integration with existing AWS services
+✅ Pay-as-you-go pricing that avoids large upfront investments
+A developer can go from an idea to a working prototype in hours instead of spending days setting up GPUs, model serving platforms, networking, and observability.
+Why it scales for production workloads:
+✅ Enterprise-grade security and IAM integration
+✅ Private networking options within AWS environments
+✅ Guardrails and responsible AI capabilities
+✅ Knowledge Bases and Agent capabilities for GenAI applications
+✅ Monitoring, governance, and operational controls expected by enterprises
+✅ Ability to switch or evaluate models without major application redesign
+What I find particularly valuable is that teams can start small with a POC and continue using the same platform as requirements evolve into production-grade systems. The journey from experimentation to enterprise deployment feels much smoother compared to managing self-hosted model infrastructure.
+For organizations already invested in AWS, Bedrock significantly lowers the barrier to adopting Generative AI while allowing teams to focus on business outcomes rather than infrastructure management.
+The future of AI development is not just about the models—it's about how quickly and safely teams can build, iterate, and operate AI-powered systems at scale.
+#AWS #AmazonBedrock #GenerativeAI #AI #CloudComputing #MachineLearning #DevOps #PlatformEngineering #CloudArchitecture
+11
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+Chris Newbery
+1w
+Report this post
+Gartner predicts that by 2026, 60% of AI projects will be abandoned if they are not supported by AI-ready data.
+In supply chain specifically, Gartner reports that data readiness and data quality gaps are among the primary constraints preventing AI-powered supply chain orchestration from scaling successfully.
+It might be time to address that challenge head on and work on your data as a strategic priority? Let me know if you'd like to talk about the best way to do this.
+Gartner , SupplyChainWise , FactoryCargo , Amazon , Amazon Web Services (AWS)
+SupplyChainWise
+1,540 followers
+1w
+The best supply chains in the world are those that incorporate the need for intelligence, speed and adaptability. The challenge for companies is having an operating system to oversee this, and the data and technology positioned to make the most of the opportunity.
+Taking learnings from Amazon and Amazon Web Services (AWS) , SupplyChainWise ™ (SCW) have built a SupplyChain.OS™ and SupplyChainWiseFoundry™ to do just this.
+SupplyChainWiseFoundry™ brings together fragmented operational data, AI-driven planning and real-time decision support. Helping businesses improve inventory performance, reduce costs and accelerate ROI. A smarter foundation for more resilient and sustainable supply chains, fit for today's (and tomorrow's) supply chain challenges.
+#SupplyChain #AI #DigitalTransformation #Planning #Sustainability #SupplyChain .OS #SupplyChainWiseFoundry
+1 Comment
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+SupplyChainWise
+1,540 followers
+1w
+Report this post
+The best supply chains in the world are those that incorporate the need for intelligence, speed and adaptability. The challenge for companies is having an operating system to oversee this, and the data and technology positioned to make the most of the opportunity.
+Taking learnings from Amazon and Amazon Web Services (AWS) , SupplyChainWise ™ (SCW) have built a SupplyChain.OS™ and SupplyChainWiseFoundry™ to do just this.
+SupplyChainWiseFoundry™ brings together fragmented operational data, AI-driven planning and real-time decision support. Helping businesses improve inventory performance, reduce costs and accelerate ROI. A smarter foundation for more resilient and sustainable supply chains, fit for today's (and tomorrow's) supply chain challenges.
+#SupplyChain #AI #DigitalTransformation #Planning #Sustainability #SupplyChain .OS #SupplyChainWiseFoundry
+Like
+Comment
+Share
+Copy
+LinkedIn
+Facebook
+To view or add a comment, sign in
+2,714 followers
+506 Posts
+3 Articles
+View Profile
+Follow
+More from this author
+Executive Leaders Radio
+Simon Gillett
+8y
+new book now available on Kindle
+Simon Gillett
+10y
+My book out November 9th, 2015.
+Simon Gillett
+10y
+Explore related topics
+How trust drives product distribution in AI
+Key Problems for AI Startups to Address
+Reasons Companies Hesitate to Use AI Pricing
+How to Overcome Last Mile Challenges in AI Deployment
+Building Scalable AI Infrastructure
+Explore content categories
+Career
+Productivity
+Finance
+Soft Skills & Emotional Intelligence
+Project Management
+Education
+Technology
+Leadership
+Ecommerce
+User Experience
+Show more
+Show less
+
+## extraction_diagnostics
+
+- extraction_method: main
+- readability_score: 72
+- fetch_status: fetched-readable-text-main
+- extraction_quality: high
+- diagnostics: {"readability_score":72,"text_length":15657,"paragraph_count":131,"sentence_count":122,"boilerplate_hits":11,"symbol_ratio":0.0001,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"main"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Google Cloud's Gemini Enterprise platform has native agent governance built in — hard spending caps, role-based model access, real-time ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace
+
+2. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   AI Startups: Overcome Procurement Friction on AWS Marketplace This title was summarized by AI from the post below.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Simon Gillett 2w Report this post Most AI startups treat distribution as an afterthought.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Build first, figure out GTM later.
+
+5. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   The mistake is underestimating how much procurement friction kills enterprise AI adoption.
+
+6. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   AWS Marketplace solves this quietly — buyers use committed spend, procurement teams stay happy, and you inherit trust from an ecosystem with millions of active accounts.
+
+## business_elements
+
+- companies: keyword search, Anysearch, OpenAI, Google, Microsoft, Amazon, AWS
+- products: Gemini, agent, agents, Agent, Claude
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险, 制造 / 工业, 开发者工具, 企业服务
+- roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 采购负责人, 销售 / 客服
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 采购, 销售 / 客服
+- numbers: 2, 100, 000, 23, 8 million, 2B, 583, 3
+- quotes: Project Dawn / We're not going to be conservative. / AI is taking jobs / see how this AI thing plays out / AI is too expensive.
+
+## evidence_seed
+
+- company_actions: Simon Gillett 2w Report this post Most AI startups treat distribution as an afterthought. / Build first, figure out GTM later.
+- case_details: 暂无公开信息
+- workflow_changes: Google Cloud's Gemini Enterprise platform has native agent governance built in — hard spending caps, role-based model access, real-time ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace / AI Startups: Overcome Procurement Friction on AWS Marketplace This title was summarized by AI from the post below. / The mistake is underestimating how much procurement friction kills enterprise AI adoption.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队, 法务 / 律师, 采购负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- user_feedback_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: keyword search / Anysearch
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Google Cloud's Gemini Enterprise platform has native agent governance built in — hard spending caps, role-based model access, real-time ... / query=agent governance evals production rollout enterprise AI / intent=find_original_source / path=procurement_marketplace
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

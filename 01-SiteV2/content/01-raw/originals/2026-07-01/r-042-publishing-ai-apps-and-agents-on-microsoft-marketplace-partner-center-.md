@@ -1,0 +1,410 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-042
+title: "Publishing AI apps and agents on Microsoft Marketplace: Partner Center configuration and offer setup"
+original_url: "https://techcommunity.microsoft.com/blog/marketplace-blog/publishing-ai-apps-and-agents-on-microsoft-marketplace-partner-center-configurat/4521990"
+canonical_url: "https://techcommunity.microsoft.com/blog/marketplace-blog/publishing-ai-apps-and-agents-on-microsoft-marketplace-partner-center-configurat/4521990"
+source_name: "keyword search / Anysearch"
+source_type: operators
+source_level: C
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: regulatory_or_procurement
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: keyword-search
+research_status: not_research
+search_intent: "find_original_source"
+search_path: "procurement_marketplace"
+search_path_label: "采购 / 招投标 / Marketplace 路径"
+author: ""
+published_at: ""
+collected_at: 2026-07-01T02:33:05.255Z
+language: mixed
+full_text_hash: 77bb16907892c0f3
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-01/r-042-publishing-ai-apps-and-agents-on-microsoft-marketplace-partner-center-.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-01/r-042-publishing-ai-apps-and-agents-on-microsoft-marketplace-partner-center-.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-json-ld
+extraction_quality: high
+extraction_method: "json-ld"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":28373,"paragraph_count":128,"sentence_count":264,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+has_full_text: true
+content_length: 28373
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"77bb16907892c0f3","missing":[]}
+source_volatility: high
+community_name: "keyword search / Anysearch"
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: community_signal
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: ded9e8f66a1f5a6d
+content_hash: 07ecd764ce06f0ec
+semantic_hash: 2608f8cc053e7e28
+duplicate_of: ""
+first_seen_at: "2026-07-01T02:33:05.255Z"
+last_seen_at: 2026-07-01T02:33:05.255Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":true,"user_feedback_pool":true,"watchlist":true}
+pool_routes: ["emerging_pool","user_feedback_pool","watchlist"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["enterprise_ai_transformation_lens","commercial_or_risk_context","market_shaping_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":4}
+business_elements: {"companies":["keyword search","Anysearch","Microsoft"],"products":["agents","agent"],"people":[],"industries":["法律 / 法务","金融 / 保险"],"roles":["法务 / 律师","采购负责人"],"workflows":["合同审阅 / 法律研究","计费 / 预算管理","权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["合作 / 联盟","部署 / 上线","定价 / 计费变化"],"affected_departments":["IT / 安全","法务","财务 / 预算","采购","销售 / 客服"],"numbers":["365","100","$126"],"quotes":[]}
+evidence_seed: {"company_actions":["Publishing AI apps and agents on Microsoft Marketplace: Partner Center configuration and offer setup Partner Center configuration The previous post, Publishing readiness for AI apps and agents on Microsoft Marketplace, established publishing readiness at the solution and organizational level.","At that stage, identity boundaries, runtime behavior, data handling, and subscription lifecycle logic are defined and operating consistently.","You can always get curated step-by-step guidance through building, publishing, and selling apps for Marketplace through App Advisor."],"case_details":[],"workflow_changes":["## This post explains how to go from publishing readiness to a configured offer in Microsoft Marketplace. It walks through Partner Center setup, pricing and billing models, and offer‑type requirements that define how your solution is delivered and operated. ... This article focuses on how you expres... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=procurement_marketplace"],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["法务 / 律师","采购负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"workflow_change","text":"## This post explains how to go from publishing readiness to a configured offer in Microsoft Marketplace. It walks through Partner Center setup, pricing and billing models, and offer‑type requirements that define how your solution is delivered and operated. ... This article focuses on how you expres... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=procurement_marketplace","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Publishing AI apps and agents on Microsoft Marketplace: Partner Center configuration and offer setup Partner Center configuration The previous post, Publishing readiness for AI apps and agents on Microsoft Marketplace, established publishing readiness at the solution and organizational level.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"At that stage, identity boundaries, runtime behavior, data handling, and subscription lifecycle logic are defined and operating consistently.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"company_action","text":"You can always get curated step-by-step guidance through building, publishing, and selling apps for Marketplace through App Advisor.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"This post is part of a series on building and publishing well-architected AI apps and agents in Microsoft Marketplace.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"funding","text":"The series focuses on AI apps and agents that are architected, hosted, and operated on Azure, with guidance aligned to building and selling solutions through Microsoft Marketplace.","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"high"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# Publishing AI apps and agents on Microsoft Marketplace: Partner Center configuration and offer setup
+
+## clean_text
+
+Publishing AI apps and agents on Microsoft Marketplace: Partner Center configuration and offer setup
+Partner Center configuration
+The previous post, Publishing readiness for AI apps and agents on Microsoft Marketplace, established publishing readiness at the solution and organizational level. At that stage, identity boundaries, runtime behavior, data handling, and subscription lifecycle logic are defined and operating consistently.
+You can always get curated step-by-step guidance through building, publishing, and selling apps for Marketplace through App Advisor.
+This post is part of a series on building and publishing well-architected AI apps and agents in Microsoft Marketplace. The series focuses on AI apps and agents that are architected, hosted, and operated on Azure, with guidance aligned to building and selling solutions through Microsoft Marketplace.
+This article focuses on how you express that readiness in Partner Center. Partner Center connects your solution to Microsoft Marketplace commerce and to how customers evaluate, purchase, and operate it. It bridges solution behavior, Marketplace transactions, and customer expectations. The configuration you provide represents how your solution operates in practice, including identity models, plans, pricing, and lifecycle handling.
+The sections that follow walk through universal configuration first, then move into offer‑type‑specific publishing paths.
+Design choices in Partner Center
+Partner Center represents how your AI app or agent solution operates in Marketplace. The configuration you define reflects decisions already made in your architecture and operations. Runtime ownership, identity boundaries, and subscription lifecycle handling are expressed directly through how you structure your offer.
+Each configuration choice connects back to solution behavior. Observability defines what behavior exists and how it can be explained. CI/CD defines how that behavior changes over time. Partner Center captures both by requiring you to declare identity models, pricing plans, access patterns, and lifecycle transitions in a consistent way.
+Publishing friction often points to gaps in these underlying decisions. Unclear solution boundaries make it difficult to define ownership and responsibility. For example, a SaaS solution may configure a transactable offer without clearly defining where the service operates and how tenant access is provisioned. In Partner Center, this appears as incomplete or inconsistent identity configuration—such as a missing multitenant Entra ID setup or unclear landing page behavior for provisioning. During certification, this creates gaps between the declared subscription flow and how the solution grants access, leading to delays while identity ownership and provisioning responsibilities are clarified.
+Universal offer configuration
+Universal offer configuration defines the settings that apply to every transactable offer and establish the structure customers interact with during evaluation, purchase, and onboarding.
+Offer listing content describes the solution in clear, operational terms. The name, summary, description explain what your solution does, its value prop and why a customer would choose your solution.
+Visual assets and media represent how the solution operates. Logos, screenshots, and supporting material provide a view into real workflows and interfaces. Screenshots should reflect actual usage paths, configuration steps, and outputs customers will see during deployment and operation.
+Legal contracts and terms define the agreement between you and the customer. You select Microsoft’s Standard Contract or provide your own terms and conditions. These terms govern how the solution is used, supported, and maintained across its lifecycle.
+Plans and SKUs establish how the solution is packaged and sold. Each plan defines pricing, entitlements, and lifecycle behavior. Public and private plans determine how different customers access and purchase the solution.
+These elements form the foundation of your Marketplace offer. They translate how the solution operates into a structure customers can evaluate and adopt.
+Commerce models and pricing mechanics
+Commerce configuration connects how your solution is used to how it is billed in Marketplace. Pricing models, metering, and billing dimensions define how usage translates into revenue and how customers understand cost.
+Marketplace supports different pricing models depending on the offer type. Common approaches include flat‑rate pricing for fixed entitlements, per‑user pricing for seat‑based access, and usage‑based pricing where billing reflects actual consumption. The model you select defines how customers adopt the solution and how cost scales with usage.
+Metered billing dimensions extend this model into runtime behavior. You define measurable units such as API calls, documents processed based on token volume, content size, structure (e.g., tables, images, mixed formats), etc., or agent executions. Your solution reports usage through the Marketplace metering APIs. Accurate and timely reporting ensures that billing reflects actual usage and remains aligned with how the solution operates.
+Pricing also connects directly to execution limits and cost predictability. Throttling, retry policies, and step limits influence how consumption grows during runtime. These controls shape how customers experience cost and establish predictable usage patterns across different workloads.
+Preview audiences and end‑to‑end testing
+Preview audiences provide a controlled way to validate how your solution behaves in Marketplace before it is broadly available. A preview audience limits exposure to a defined set of users or tenants. This allows you to observe how the solution operates when accessed through Marketplace.
+Testing should cover the full subscription lifecycle. This may include purchase, initial provisioning, plan changes, renewals, and cancellation. Each stage introduces events that your solution must handle correctly, with consistent updates to access, entitlements, and usage.
+Validation focuses on how these events are processed. Subscription events must trigger the correct actions in your solution. Webhook handling needs to be reliable, efficient, and responsive to repeated or delayed delivery. Lifecycle transitions must align with how the solution enforces access and usage boundaries.
+Changes to plans, pricing, or configuration should support safe reversion without leaving subscriptions or entitlements in an inconsistent state. This requires exercising rollback paths.
+Offer‑type publishing deep dives
+Offer types define how your solution is delivered and operated in Marketplace. This section focuses on best practices for publishing considering the most commonly used offer types for Azure based AI apps and agents. For more in-depth selection guidance, see Choosing your Marketplace offer type.
+SaaS offers
+SaaS offers require you to operate the solution in your environment while Marketplace manages subscriptions and billing. Configuration centers on identity, provisioning, and lifecycle handling.
+Your customers must be Microsoft customers that either have M365 tenants or Azure tenants. You register a multitenant Microsoft Entra ID application to support customer authentication and onboarding. A landing page processes purchase tokens and provisions access. Fulfillment APIs and webhooks handle subscription events such as activation, plan changes, renewals, and cancellations.
+Plans, pricing, and metering define how usage is billed. Testing validates end‑to‑end behavior, including purchase, provisioning, entitlement updates, and deprovisioning.
+Container offers
+Container offers package your solution as a Kubernetes application that deploy into your customer’s environment. Marketplace provides software distribution mechanism and manages subscriptions and billing. Configuration includes container images stored in Azure Container Registry and deployment artifacts packaged through a CNAB bundle.
+Helm charts define application configuration, scaling behavior, and service dependencies. Kubernetes permissions and runtime policies determine how the solution operates within the cluster.
+Pricing models align with how the container is deployed, such as per‑node or per‑cluster pricing. Deployment validation ensures that the application installs correctly, dependencies are resolved, and the solution operates consistently in customer environments.
+Virtual Machine offers
+Virtual Machine offers deploy a preconfigured image directly into the customer’s tenant. Similar to containers, Marketplace provides software distribution mechanism and manages subscriptions and billing. The publisher’s configuration tasks should focus on image preparation, security, and startup reliability.
+The VM must be generalized, hardened, and tested to ensure consistent deployment. Required agents and services must initialize correctly. The Marketplace offer configuration defines the image, deployment parameters, and supported regions.
+Pricing typically aligns with the selected VM size, usage model, or reservation options. Validation ensures that the image deploys cleanly, initializes correctly, and performs consistently across supported regions and configurations.
+Azure Managed Application offers
+Managed Application offers deploy your solution into the customer’s Azure subscription with defined management boundaries. Configuration relies on ARM or Bicep templates that describe infrastructure, dependencies, and deployment parameters. Like VMs and containers, Marketplace provides the software distribution mechanism and manages subscriptions and billing. It also defines the level of control the publisher retains within the customer’s environment.
+Pricing reflects the management layer, while infrastructure usage is billed separately. Managed resource groups enforce access control and define operational ownership. Permissions must align with how the solution is managed after deployment.
+Preview deployments validate template execution, access boundaries, and post‑deployment behavior.
+Go‑live checks and submission review
+Submission and certification verify that your solution, organization, and offer configuration align. These steps confirm that Marketplace can transact, provision, and support the solution as defined.
+Account, finance, and role validation ensure that your publisher identity, tax profiles, payout configuration, and role assignments are complete and consistent. These elements enable transactions, define ownership, and support operational accountability.
+Universal readiness checks confirm that your offer configuration is complete. Listing content, plans, pricing, contracts, and lead routing must align with how the solution operates. These checks ensure that customers can evaluate and purchase the solution without missing or inconsistent information. Section 100 of the Microsoft Marketplace certification policies is a useful early reference because it applies to all offer types and outlines the core requirements evaluated during certification.
+Offer‑type‑specific checks validate the configuration required for each delivery model. SaaS offers must support subscription lifecycle events and API integration. Managed Applications must deploy reliably through templates. Container and Virtual Machine offers must meet packaging, security, and deployment standards.
+Action Center findings highlight issues discovered during validation and review. These findings require resolution before submission can proceed. Addressing them early ensures that configuration and behavior remain aligned.
+Submission review follows a defined process. Offers move through validation, certification, and approval stages, with feedback provided when issues are detected. When configuration, behavior, and ownership are clear, review progresses predictably and leads to successful publication in Marketplace.
+Marketplace publishing operations
+Publishing makes your solution active in Marketplace. From that point forward, customers can discover it, purchase it, and interact with it in real time. The configuration you defined becomes the experience customers rely on.
+As a publisher, the moment your offer goes live, several things may happen at once. Customers can initiate purchases, subscriptions begin generating lifecycle events, and your solution starts provisioning access and processing usage. Billing reflects actual consumption, and support requests begin to surface as customers interact with the solution in different environments.
+Published offers enter continuous evaluation. Updates introduce new behavior that flows through CI/CD pipelines and affects active customers. Billing reflects how execution scales in real usage. Support interactions reveal how the solution performs across tenants and workloads. Each of these signals connects directly back to the configuration and readiness established earlier.
+Marketplace scale amplifies both consistency and gaps. Clear identity boundaries, predictable runtime behavior, and accurate billing reinforce trust. Misalignment between configuration and execution becomes visible quickly as customers evaluate and adopt the solution.
+Publishing marks the start of operational responsibility. Your teams maintain alignment between solution behavior, Marketplace configuration, and customer experience as the solution evolves over time.
+What’s next in the journey
+With publishing complete, the focus shifts to operating your solution at scale in Marketplace. This includes supporting customers, managing updates, and maintaining alignment between behavior, billing, and expectations as usage grows. Future posts will cover operational excellence and promoting your AI app and agent.
+Key resources
+See curated, step-by-step guidance to help you build, publish, or sell your app or agent (no matter where you start) in App Advisor.
+Quick-Start Development Toolkit
+Microsoft AI Envisioning Day Events
+How to build and publish AI apps and agents for Microsoft Marketplace
+Get over $126K USD in benefits and technical consultations to help you replicate and publish your app with ISV Success
+Publishing AI apps and agents on Microsoft Marketplace: Partner Center configuration and offer setup
+Partner Center configuration
+The previous post, Publishing readiness for AI apps and agents on Microsoft Marketplace, established publishing readiness at the solution and organizational level. At that stage, identity boundaries, runtime behavior, data handling, and subscription lifecycle logic are defined and operating consistently.
+You can always get curated step-by-step guidance through building, publishing, and selling apps for Marketplace through App Advisor.
+This post is part of a series on building and publishing well-architected AI apps and agents in Microsoft Marketplace. The series focuses on AI apps and agents that are architected, hosted, and operated on Azure, with guidance aligned to building and selling solutions through Microsoft Marketplace.
+This article focuses on how you express that readiness in Partner Center. Partner Center connects your solution to Microsoft Marketplace commerce and to how customers evaluate, purchase, and operate it. It bridges solution behavior, Marketplace transactions, and customer expectations. The configuration you provide represents how your solution operates in practice, including identity models, plans, pricing, and lifecycle handling.
+The sections that follow walk through universal configuration first, then move into offer‑type‑specific publishing paths.
+Design choices in Partner Center
+Partner Center represents how your AI app or agent solution operates in Marketplace. The configuration you define reflects decisions already made in your architecture and operations. Runtime ownership, identity boundaries, and subscription lifecycle handling are expressed directly through how you structure your offer.
+Each configuration choice connects back to solution behavior. Observability defines what behavior exists and how it can be explained. CI/CD defines how that behavior changes over time. Partner Center captures both by requiring you to declare identity models, pricing plans, access patterns, and lifecycle transitions in a consistent way.
+Publishing friction often points to gaps in these underlying decisions. Unclear solution boundaries make it difficult to define ownership and responsibility. For example, a SaaS solution may configure a transactable offer without clearly defining where the service operates and how tenant access is provisioned. In Partner Center, this appears as incomplete or inconsistent identity configuration—such as a missing multitenant Entra ID setup or unclear landing page behavior for provisioning. During certification, this creates gaps between the declared subscription flow and how the solution grants access, leading to delays while identity ownership and provisioning responsibilities are clarified.
+Universal offer configuration
+Universal offer configuration defines the settings that apply to every transactable offer and establish the structure customers interact with during evaluation, purchase, and onboarding.
+Offer listing content describes the solution in clear, operational terms. The name, summary, description explain what your solution does, its value prop and why a customer would choose your solution.
+Visual assets and media represent how the solution operates. Logos, screenshots, and supporting material provide a view into real workflows and interfaces. Screenshots should reflect actual usage paths, configuration steps, and outputs customers will see during deployment and operation.
+Legal contracts and terms define the agreement between you and the customer. You select Microsoft’s Standard Contract or provide your own terms and conditions. These terms govern how the solution is used, supported, and maintained across its lifecycle.
+Plans and SKUs establish how the soluti
+
+## full_text
+
+Publishing AI apps and agents on Microsoft Marketplace: Partner Center configuration and offer setup
+Partner Center configuration
+The previous post, Publishing readiness for AI apps and agents on Microsoft Marketplace, established publishing readiness at the solution and organizational level. At that stage, identity boundaries, runtime behavior, data handling, and subscription lifecycle logic are defined and operating consistently.
+You can always get curated step-by-step guidance through building, publishing, and selling apps for Marketplace through App Advisor.
+This post is part of a series on building and publishing well-architected AI apps and agents in Microsoft Marketplace. The series focuses on AI apps and agents that are architected, hosted, and operated on Azure, with guidance aligned to building and selling solutions through Microsoft Marketplace.
+This article focuses on how you express that readiness in Partner Center. Partner Center connects your solution to Microsoft Marketplace commerce and to how customers evaluate, purchase, and operate it. It bridges solution behavior, Marketplace transactions, and customer expectations. The configuration you provide represents how your solution operates in practice, including identity models, plans, pricing, and lifecycle handling.
+The sections that follow walk through universal configuration first, then move into offer‑type‑specific publishing paths.
+Design choices in Partner Center
+Partner Center represents how your AI app or agent solution operates in Marketplace. The configuration you define reflects decisions already made in your architecture and operations. Runtime ownership, identity boundaries, and subscription lifecycle handling are expressed directly through how you structure your offer.
+Each configuration choice connects back to solution behavior. Observability defines what behavior exists and how it can be explained. CI/CD defines how that behavior changes over time. Partner Center captures both by requiring you to declare identity models, pricing plans, access patterns, and lifecycle transitions in a consistent way.
+Publishing friction often points to gaps in these underlying decisions. Unclear solution boundaries make it difficult to define ownership and responsibility. For example, a SaaS solution may configure a transactable offer without clearly defining where the service operates and how tenant access is provisioned. In Partner Center, this appears as incomplete or inconsistent identity configuration—such as a missing multitenant Entra ID setup or unclear landing page behavior for provisioning. During certification, this creates gaps between the declared subscription flow and how the solution grants access, leading to delays while identity ownership and provisioning responsibilities are clarified.
+Universal offer configuration
+Universal offer configuration defines the settings that apply to every transactable offer and establish the structure customers interact with during evaluation, purchase, and onboarding.
+Offer listing content describes the solution in clear, operational terms. The name, summary, description explain what your solution does, its value prop and why a customer would choose your solution.
+Visual assets and media represent how the solution operates. Logos, screenshots, and supporting material provide a view into real workflows and interfaces. Screenshots should reflect actual usage paths, configuration steps, and outputs customers will see during deployment and operation.
+Legal contracts and terms define the agreement between you and the customer. You select Microsoft’s Standard Contract or provide your own terms and conditions. These terms govern how the solution is used, supported, and maintained across its lifecycle.
+Plans and SKUs establish how the solution is packaged and sold. Each plan defines pricing, entitlements, and lifecycle behavior. Public and private plans determine how different customers access and purchase the solution.
+These elements form the foundation of your Marketplace offer. They translate how the solution operates into a structure customers can evaluate and adopt.
+Commerce models and pricing mechanics
+Commerce configuration connects how your solution is used to how it is billed in Marketplace. Pricing models, metering, and billing dimensions define how usage translates into revenue and how customers understand cost.
+Marketplace supports different pricing models depending on the offer type. Common approaches include flat‑rate pricing for fixed entitlements, per‑user pricing for seat‑based access, and usage‑based pricing where billing reflects actual consumption. The model you select defines how customers adopt the solution and how cost scales with usage.
+Metered billing dimensions extend this model into runtime behavior. You define measurable units such as API calls, documents processed based on token volume, content size, structure (e.g., tables, images, mixed formats), etc., or agent executions. Your solution reports usage through the Marketplace metering APIs. Accurate and timely reporting ensures that billing reflects actual usage and remains aligned with how the solution operates.
+Pricing also connects directly to execution limits and cost predictability. Throttling, retry policies, and step limits influence how consumption grows during runtime. These controls shape how customers experience cost and establish predictable usage patterns across different workloads.
+Preview audiences and end‑to‑end testing
+Preview audiences provide a controlled way to validate how your solution behaves in Marketplace before it is broadly available. A preview audience limits exposure to a defined set of users or tenants. This allows you to observe how the solution operates when accessed through Marketplace.
+Testing should cover the full subscription lifecycle. This may include purchase, initial provisioning, plan changes, renewals, and cancellation. Each stage introduces events that your solution must handle correctly, with consistent updates to access, entitlements, and usage.
+Validation focuses on how these events are processed. Subscription events must trigger the correct actions in your solution. Webhook handling needs to be reliable, efficient, and responsive to repeated or delayed delivery. Lifecycle transitions must align with how the solution enforces access and usage boundaries.
+Changes to plans, pricing, or configuration should support safe reversion without leaving subscriptions or entitlements in an inconsistent state. This requires exercising rollback paths.
+Offer‑type publishing deep dives
+Offer types define how your solution is delivered and operated in Marketplace. This section focuses on best practices for publishing considering the most commonly used offer types for Azure based AI apps and agents. For more in-depth selection guidance, see Choosing your Marketplace offer type.
+SaaS offers
+SaaS offers require you to operate the solution in your environment while Marketplace manages subscriptions and billing. Configuration centers on identity, provisioning, and lifecycle handling.
+Your customers must be Microsoft customers that either have M365 tenants or Azure tenants. You register a multitenant Microsoft Entra ID application to support customer authentication and onboarding. A landing page processes purchase tokens and provisions access. Fulfillment APIs and webhooks handle subscription events such as activation, plan changes, renewals, and cancellations.
+Plans, pricing, and metering define how usage is billed. Testing validates end‑to‑end behavior, including purchase, provisioning, entitlement updates, and deprovisioning.
+Container offers
+Container offers package your solution as a Kubernetes application that deploy into your customer’s environment. Marketplace provides software distribution mechanism and manages subscriptions and billing. Configuration includes container images stored in Azure Container Registry and deployment artifacts packaged through a CNAB bundle.
+Helm charts define application configuration, scaling behavior, and service dependencies. Kubernetes permissions and runtime policies determine how the solution operates within the cluster.
+Pricing models align with how the container is deployed, such as per‑node or per‑cluster pricing. Deployment validation ensures that the application installs correctly, dependencies are resolved, and the solution operates consistently in customer environments.
+Virtual Machine offers
+Virtual Machine offers deploy a preconfigured image directly into the customer’s tenant. Similar to containers, Marketplace provides software distribution mechanism and manages subscriptions and billing. The publisher’s configuration tasks should focus on image preparation, security, and startup reliability.
+The VM must be generalized, hardened, and tested to ensure consistent deployment. Required agents and services must initialize correctly. The Marketplace offer configuration defines the image, deployment parameters, and supported regions.
+Pricing typically aligns with the selected VM size, usage model, or reservation options. Validation ensures that the image deploys cleanly, initializes correctly, and performs consistently across supported regions and configurations.
+Azure Managed Application offers
+Managed Application offers deploy your solution into the customer’s Azure subscription with defined management boundaries. Configuration relies on ARM or Bicep templates that describe infrastructure, dependencies, and deployment parameters. Like VMs and containers, Marketplace provides the software distribution mechanism and manages subscriptions and billing. It also defines the level of control the publisher retains within the customer’s environment.
+Pricing reflects the management layer, while infrastructure usage is billed separately. Managed resource groups enforce access control and define operational ownership. Permissions must align with how the solution is managed after deployment.
+Preview deployments validate template execution, access boundaries, and post‑deployment behavior.
+Go‑live checks and submission review
+Submission and certification verify that your solution, organization, and offer configuration align. These steps confirm that Marketplace can transact, provision, and support the solution as defined.
+Account, finance, and role validation ensure that your publisher identity, tax profiles, payout configuration, and role assignments are complete and consistent. These elements enable transactions, define ownership, and support operational accountability.
+Universal readiness checks confirm that your offer configuration is complete. Listing content, plans, pricing, contracts, and lead routing must align with how the solution operates. These checks ensure that customers can evaluate and purchase the solution without missing or inconsistent information. Section 100 of the Microsoft Marketplace certification policies is a useful early reference because it applies to all offer types and outlines the core requirements evaluated during certification.
+Offer‑type‑specific checks validate the configuration required for each delivery model. SaaS offers must support subscription lifecycle events and API integration. Managed Applications must deploy reliably through templates. Container and Virtual Machine offers must meet packaging, security, and deployment standards.
+Action Center findings highlight issues discovered during validation and review. These findings require resolution before submission can proceed. Addressing them early ensures that configuration and behavior remain aligned.
+Submission review follows a defined process. Offers move through validation, certification, and approval stages, with feedback provided when issues are detected. When configuration, behavior, and ownership are clear, review progresses predictably and leads to successful publication in Marketplace.
+Marketplace publishing operations
+Publishing makes your solution active in Marketplace. From that point forward, customers can discover it, purchase it, and interact with it in real time. The configuration you defined becomes the experience customers rely on.
+As a publisher, the moment your offer goes live, several things may happen at once. Customers can initiate purchases, subscriptions begin generating lifecycle events, and your solution starts provisioning access and processing usage. Billing reflects actual consumption, and support requests begin to surface as customers interact with the solution in different environments.
+Published offers enter continuous evaluation. Updates introduce new behavior that flows through CI/CD pipelines and affects active customers. Billing reflects how execution scales in real usage. Support interactions reveal how the solution performs across tenants and workloads. Each of these signals connects directly back to the configuration and readiness established earlier.
+Marketplace scale amplifies both consistency and gaps. Clear identity boundaries, predictable runtime behavior, and accurate billing reinforce trust. Misalignment between configuration and execution becomes visible quickly as customers evaluate and adopt the solution.
+Publishing marks the start of operational responsibility. Your teams maintain alignment between solution behavior, Marketplace configuration, and customer experience as the solution evolves over time.
+What’s next in the journey
+With publishing complete, the focus shifts to operating your solution at scale in Marketplace. This includes supporting customers, managing updates, and maintaining alignment between behavior, billing, and expectations as usage grows. Future posts will cover operational excellence and promoting your AI app and agent.
+Key resources
+See curated, step-by-step guidance to help you build, publish, or sell your app or agent (no matter where you start) in App Advisor.
+Quick-Start Development Toolkit
+Microsoft AI Envisioning Day Events
+How to build and publish AI apps and agents for Microsoft Marketplace
+Get over $126K USD in benefits and technical consultations to help you replicate and publish your app with ISV Success
+Publishing AI apps and agents on Microsoft Marketplace: Partner Center configuration and offer setup
+Partner Center configuration
+The previous post, Publishing readiness for AI apps and agents on Microsoft Marketplace, established publishing readiness at the solution and organizational level. At that stage, identity boundaries, runtime behavior, data handling, and subscription lifecycle logic are defined and operating consistently.
+You can always get curated step-by-step guidance through building, publishing, and selling apps for Marketplace through App Advisor.
+This post is part of a series on building and publishing well-architected AI apps and agents in Microsoft Marketplace. The series focuses on AI apps and agents that are architected, hosted, and operated on Azure, with guidance aligned to building and selling solutions through Microsoft Marketplace.
+This article focuses on how you express that readiness in Partner Center. Partner Center connects your solution to Microsoft Marketplace commerce and to how customers evaluate, purchase, and operate it. It bridges solution behavior, Marketplace transactions, and customer expectations. The configuration you provide represents how your solution operates in practice, including identity models, plans, pricing, and lifecycle handling.
+The sections that follow walk through universal configuration first, then move into offer‑type‑specific publishing paths.
+Design choices in Partner Center
+Partner Center represents how your AI app or agent solution operates in Marketplace. The configuration you define reflects decisions already made in your architecture and operations. Runtime ownership, identity boundaries, and subscription lifecycle handling are expressed directly through how you structure your offer.
+Each configuration choice connects back to solution behavior. Observability defines what behavior exists and how it can be explained. CI/CD defines how that behavior changes over time. Partner Center captures both by requiring you to declare identity models, pricing plans, access patterns, and lifecycle transitions in a consistent way.
+Publishing friction often points to gaps in these underlying decisions. Unclear solution boundaries make it difficult to define ownership and responsibility. For example, a SaaS solution may configure a transactable offer without clearly defining where the service operates and how tenant access is provisioned. In Partner Center, this appears as incomplete or inconsistent identity configuration—such as a missing multitenant Entra ID setup or unclear landing page behavior for provisioning. During certification, this creates gaps between the declared subscription flow and how the solution grants access, leading to delays while identity ownership and provisioning responsibilities are clarified.
+Universal offer configuration
+Universal offer configuration defines the settings that apply to every transactable offer and establish the structure customers interact with during evaluation, purchase, and onboarding.
+Offer listing content describes the solution in clear, operational terms. The name, summary, description explain what your solution does, its value prop and why a customer would choose your solution.
+Visual assets and media represent how the solution operates. Logos, screenshots, and supporting material provide a view into real workflows and interfaces. Screenshots should reflect actual usage paths, configuration steps, and outputs customers will see during deployment and operation.
+Legal contracts and terms define the agreement between you and the customer. You select Microsoft’s Standard Contract or provide your own terms and conditions. These terms govern how the solution is used, supported, and maintained across its lifecycle.
+Plans and SKUs establish how the solution is packaged and sold. Each plan defines pricing, entitlements, and lifecycle behavior. Public and private plans determine how different customers access and purchase the solution.
+These elements form the foundation of your Marketplace offer. They translate how the solution operates into a structure customers can evaluate and adopt.
+Commerce models and pricing mechanics
+Commerce configuration connects how your solution is used to how it is billed in Marketplace. Pricing models, metering, and billing dimensions define how usage translates into revenue and how customers understand cost.
+Marketplace supports different pricing models depending on the offer type. Common approaches include flat‑rate pricing for fixed entitlements, per‑user pricing for seat‑based access, and usage‑based pricing where billing reflects actual consumption. The model you select defines how customers adopt the solution and how cost scales with usage.
+Metered billing dimensions extend this model into runtime behavior. You define measurable units such as API calls, documents processed based on token volume, content size, structure (e.g., tables, images, mixed formats), etc., or agent executions. Your solution reports usage through the Marketplace metering APIs. Accurate and timely reporting ensures that billing reflects actual usage and remains aligned with how the solution operates.
+Pricing also connects directly to execution limits and cost predictability. Throttling, retry policies, and step limits influence how consumption grows during runtime. These controls shape how customers experience cost and establish predictable usage patterns across different workloads.
+Preview audiences and end‑to‑end testing
+Preview audiences provide a controlled way to validate how your solution behaves in Marketplace before it is broadly available. A preview audience limits exposure to a defined set of users or tenants. This allows you to observe how the solution operates when accessed through Marketplace.
+Testing should cover the full subscription lifecycle. This may include purchase, initial provisioning, plan changes, renewals, and cancellation. Each stage introduces events that your solution must handle correctly, with consistent updates to access, entitlements, and usage.
+Validation focuses on how these events are processed. Subscription events must trigger the correct actions in your solution. Webhook handling needs to be reliable, efficient, and responsive to repeated or delayed delivery. Lifecycle transitions must align with how the solution enforces access and usage boundaries.
+Changes to plans, pricing, or configuration should support safe reversion without leaving subscriptions or entitlements in an inconsistent state. This requires exercising rollback paths.
+Offer‑type publishing deep dives
+Offer types define how your solution is delivered and operated in Marketplace. This section focuses on best practices for publishing considering the most commonly used offer types for Azure based AI apps and agents. For more in-depth selection guidance, see Choosing your Marketplace offer type.
+SaaS offers
+SaaS offers require you to operate the solution in your environment while Marketplace manages subscriptions and billing. Configuration centers on identity, provisioning, and lifecycle handling.
+Your customers must be Microsoft customers that either have M365 tenants or Azure tenants. You register a multitenant Microsoft Entra ID application to support customer authentication and onboarding. A landing page processes purchase tokens and provisions access. Fulfillment APIs and webhooks handle subscription events such as activation, plan changes, renewals, and cancellations.
+Plans, pricing, and metering define how usage is billed. Testing validates end‑to‑end behavior, including purchase, provisioning, entitlement updates, and deprovisioning.
+Container offers
+Container offers package your solution as a Kubernetes application that deploy into your customer’s environment. Marketplace provides software distribution mechanism and manages subscriptions and billing. Configuration includes container images stored in Azure Container Registry and deployment artifacts packaged through a CNAB bundle.
+Helm charts define application configuration, scaling behavior, and service dependencies. Kubernetes permissions and runtime policies determine how the solution operates within the cluster.
+Pricing models align with how the container is deployed, such as per‑node or per‑cluster pricing. Deployment validation ensures that the application installs correctly, dependencies are resolved, and the solution operates consistently in customer environments.
+Virtual Machine offers
+Virtual Machine offers deploy a preconfigured image directly into the customer’s tenant. Similar to containers, Marketplace provides software distribution mechanism and manages subscriptions and billing. The publisher’s configuration tasks should focus on image preparation, security, and startup reliability.
+The VM must be generalized, hardened, and tested to ensure consistent deployment. Required agents and services must initialize correctly. The Marketplace offer configuration defines the image, deployment parameters, and supported regions.
+Pricing typically aligns with the selected VM size, usage model, or reservation options. Validation ensures that the image deploys cleanly, initializes correctly, and performs consistently across supported regions and configurations.
+Azure Managed Application offers
+Managed Application offers deploy your solution into the customer’s Azure subscription with defined management boundaries. Configuration relies on ARM or Bicep templates that describe infrastructure, dependencies, and deployment parameters. Like VMs and containers, Marketplace provides the software distribution mechanism and manages subscriptions and billing. It also defines the level of control the publisher retains within the customer’s environment.
+Pricing reflects the management layer, while infrastructure usage is billed separately. Managed resource groups enforce access control and define operational ownership. Permissions must align with how the solution is managed after deployment.
+Preview deployments validate template execution, access boundaries, and post‑deployment behavior.
+Go‑live checks and submission review
+Submission and certification verify that your solution, organization, and offer configuration align. These steps confirm that Marketplace can transact, provision, and support the solution as defined.
+Account, finance, and role validation ensure that your publisher identity, tax profiles, payout configuration, and role assignments are complete and consistent. These elements enable transactions, define ownership, and support operational accountability.
+Universal readiness checks confirm that your offer configuration is complete. Listing content, plans, pricing, contracts, and lead routing must align with how the solution operates. These checks ensure that customers can evaluate and purchase the solution without missing or inconsistent information. Section 100 of the Microsoft Marketplace certification policies is a useful early reference because it applies to all offer types and outlines the core requirements evaluated during certification.
+Offer‑type‑specific checks validate the configuration required for each delivery model. SaaS offers must support subscription lifecycle events and API integration. Managed Applications must deploy reliably through templates. Container and Virtual Machine offers must meet packaging, security, and deployment standards.
+Action Center findings highlight issues discovered during validation and review. These findings require resolution before submission can proceed. Addressing them early ensures that configuration and behavior remain aligned.
+Submission review follows a defined process. Offers move through validation, certification, and approval stages, with feedback provided when issues are detected. When configuration, behavior, and ownership are clear, review progresses predictably and leads to successful publication in Marketplace.
+Marketplace publishing operations
+Publishing makes your solution active in Marketplace. From that point forward, customers can discover it, purchase it, and interact with it in real time. The configuration you defined becomes the experience customers rely on.
+As a publisher, the moment your offer goes live, several things may happen at once. Customers can initiate purchases, subscriptions begin generating lifecycle events, and your solution starts provisioning access and processing usage. Billing reflects actual consumption, and support requests begin to surface as customers interact with the solution in different environments.
+Published offers enter continuous evaluation. Updates introduce new behavior that flows through CI/CD pipelines and affects active customers. Billing reflects how execution scales in real usage. Support interactions reveal how the solution performs across tenants and workloads. Each of these signals connects directly back to the configuration and readiness established earlier.
+Marketplace scale amplifies both consistency and gaps. Clear identity boundaries, predictable runtime behavior, and accurate billing reinforce trust. Misalignment between configuration and execution becomes visible quickly as customers evaluate and adopt the solution.
+Publishing marks the start of operational responsibility. Your teams maintain alignment between solution behavior, Marketplace configuration, and customer experience as the solution evolves over time.
+What’s next in the journey
+With publishing complete, the focus shifts to operating your solution at scale in Marketplace. This includes supporting customers, managing updates, and maintaining alignment between behavior, billing, and expectations as usage grows. Future posts will cover operational excellence and promoting your AI app and agent.
+Key resources
+See curated, step-by-step guidance to help you build, publish, or sell your app or agent (no matter where you start) in App Advisor.
+Quick-Start Development Toolkit
+Microsoft AI Envisioning Day Events
+How to build and publish AI apps and agents for Microsoft Marketplace
+Get over $126K USD in benefits and technical consultations to help you replicate and publish your app with ISV Success
+
+## extraction_diagnostics
+
+- extraction_method: json-ld
+- readability_score: 97
+- fetch_status: fetched-readable-text-json-ld
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":28373,"paragraph_count":128,"sentence_count":264,"boilerplate_hits":0,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"json-ld"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   ## This post explains how to go from publishing readiness to a configured offer in Microsoft Marketplace. It walks through Partner Center setup, pricing and billing models, and offer‑type requirements that define how your solution is delivered and operated. ... This article focuses on how you expres... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=procurement_marketplace
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Publishing AI apps and agents on Microsoft Marketplace: Partner Center configuration and offer setup Partner Center configuration The previous post, Publishing readiness for AI apps and agents on Microsoft Marketplace, established publishing readiness at the solution and organizational level.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   At that stage, identity boundaries, runtime behavior, data handling, and subscription lifecycle logic are defined and operating consistently.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   You can always get curated step-by-step guidance through building, publishing, and selling apps for Marketplace through App Advisor.
+
+5. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   This post is part of a series on building and publishing well-architected AI apps and agents in Microsoft Marketplace.
+
+6. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=high
+   The series focuses on AI apps and agents that are architected, hosted, and operated on Azure, with guidance aligned to building and selling solutions through Microsoft Marketplace.
+
+## business_elements
+
+- companies: keyword search, Anysearch, Microsoft
+- products: agents, agent
+- people: 暂无公开信息
+- industries: 法律 / 法务, 金融 / 保险
+- roles: 法务 / 律师, 采购负责人
+- workflows: 合同审阅 / 法律研究, 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 合作 / 联盟, 部署 / 上线, 定价 / 计费变化
+- affected_departments: IT / 安全, 法务, 财务 / 预算, 采购, 销售 / 客服
+- numbers: 365, 100, $126
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Publishing AI apps and agents on Microsoft Marketplace: Partner Center configuration and offer setup Partner Center configuration The previous post, Publishing readiness for AI apps and agents on Microsoft Marketplace, established publishing readiness at the solution and organizational level. / At that stage, identity boundaries, runtime behavior, data handling, and subscription lifecycle logic are defined and operating consistently. / You can always get curated step-by-step guidance through building, publishing, and selling apps for Marketplace through App Advisor.
+- case_details: 暂无公开信息
+- workflow_changes: ## This post explains how to go from publishing readiness to a configured offer in Microsoft Marketplace. It walks through Partner Center setup, pricing and billing models, and offer‑type requirements that define how your solution is delivered and operated. ... This article focuses on how you expres... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=procurement_marketplace
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 法务 / 律师, 采购负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: enterprise_ai_transformation_lens,commercial_or_risk_context,market_shaping_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 4
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: true
+- user_feedback_pool: true
+- watchlist: true
+
+## pool_routes
+
+- emerging_pool
+- user_feedback_pool
+- watchlist
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: high
+- community_name: keyword search / Anysearch
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: community_signal
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+## This post explains how to go from publishing readiness to a configured offer in Microsoft Marketplace. It walks through Partner Center setup, pricing and billing models, and offer‑type requirements that define how your solution is delivered and operated. ... This article focuses on how you expres... / query=AI implementation technical scoping production rollout / intent=find_original_source / path=procurement_marketplace
+
+## 采集备注
+
+该条目由 keyword-search 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

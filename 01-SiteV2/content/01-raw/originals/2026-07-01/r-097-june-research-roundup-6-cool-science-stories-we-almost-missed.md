@@ -1,0 +1,403 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-097
+title: "June research roundup: 6 cool science stories we almost missed"
+original_url: "https://arstechnica.com/science/2026/06/june-research-roundup-6-cool-science-stories-we-almost-missed/"
+canonical_url: "https://arstechnica.com/science/2026/06/june-research-roundup-6-cool-science-stories-we-almost-missed"
+source_name: "Ars Technica AI"
+source_type: media
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: research_or_report
+evidence_object_usable: false
+event_evidence: false
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: rss-feed
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: ""
+collected_at: 2026-07-01T02:33:05.551Z
+language: mixed
+full_text_hash: b710fcfe36b2cf67
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-01/r-097-june-research-roundup-6-cool-science-stories-we-almost-missed.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-01/r-097-june-research-roundup-6-cool-science-stories-we-almost-missed.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 91
+extractor_diagnostics: {"readability_score":91,"text_length":14036,"paragraph_count":51,"sentence_count":114,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 14036
+fetch_error: ""
+raw_qc_decision: allow_with_degradation
+raw_qc_downstream_use: index_watchlist_or_feedback_only
+degradation_reasons: ["insufficient_usable_evidence_object"]
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"b710fcfe36b2cf67","missing":[]}
+source_volatility: low
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: supporting_evidence
+discovery_source: ""
+discovery_record: null
+source_role: resolved_original_source
+origin_fetch_status: ""
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 2dfa34946150f2c0
+content_hash: b710fcfe36b2cf67
+semantic_hash: cb7adf7d2615e665
+duplicate_of: ""
+first_seen_at: "2026-07-01T02:33:05.551Z"
+last_seen_at: 2026-07-01T02:33:05.551Z
+update_detected: false
+raw_status: indexed
+usable_for: {"viewpoint":true,"case":false,"business_change":false,"relationship_graph_input":false,"trend_candidate_context":false,"signal_card_candidate":false,"emerging_pool":false,"user_feedback_pool":false,"watchlist":false}
+pool_routes: ["index_only"]
+change_action_detected: false
+evidence_eligibility: blocked
+evidence_block_reason: "not_event_case_or_trend_evidence"
+guanlan_scores: {"importance_type":"important_technical_trend","importance_score":5,"importance_reason":"technical trend or capability shift; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":2,"evidence_strength":4,"case_richness":4,"trend_relevance":5,"guanlan_relevance":4,"emerging_signal_score":3}
+business_elements: {"companies":["Ars Technica AI"],"products":[],"people":[],"industries":["法律 / 法务","医疗","开发者工具"],"roles":["CIO / IT 负责人"],"workflows":[],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","法务"],"numbers":["6","2026","10.5432","07","25031","10.3390","11050128","660"],"quotes":["scissors feint,","drag crisis,","digital unwrapping","disgust."," virtually unrolled "]}
+evidence_seed: {"company_actions":["Also, the science of poop's distinctive shape, boron buckyballs, and the secret to a soccer feint.","Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav It’s a regrettable reality that there is never enough time to cover all the interesting scientific stories we come across.","So every month, we highlight a handful of the best stories that nearly slipped through the cracks."],"case_details":[],"workflow_changes":[],"before_after_clues":[],"affected_roles":["CIO / IT 负责人"],"risks_or_constraints":[]}
+missing_information: ["证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象","没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势","没有具体客户或真实企业案例","没有变化前后流程线索"]
+key_excerpts: [{"type":"company_action","text":"Also, the science of poop's distinctive shape, boron buckyballs, and the secret to a soccer feint.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav It’s a regrettable reality that there is never enough time to cover all the interesting scientific stories we come across.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"So every month, we highlight a handful of the best stories that nearly slipped through the cracks.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"June’s list includes insight into the science of soccer’s scissors feint; the physics of poo’s distinctive coiled shape; a boron buckyball; and the latest breakthrough in the ongoing Vesuvius challenge to decipher the Herculaneum scrolls.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"company_action","text":"The science of soccer’s scissors feint Credit: Screenshot/YouTube/Howcast Credit: Screenshot/YouTube/Howcast With the FIFA World Cup in full swing, even scientists’ thoughts are turning to soccer (or football for everyone else in the world).","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"medium","confidence":"high"},{"type":"quote","text":"For instance, one common and highly effective dribbling maneuver is the “scissors feint,” in which a player uses the outside of their feet to fake going one way and then cutting to the other.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"medium","confidence":"high"}]
+theme: uncategorized
+keyword_group: uncategorized
+copyright_note: local research archive only
+---
+
+# June research roundup: 6 cool science stories we almost missed
+
+## clean_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+It’s a regrettable reality that there is never enough time to cover all the interesting scientific stories we come across. So every month, we highlight a handful of the best stories that nearly slipped through the cracks. June’s list includes insight into the science of soccer’s scissors feint; the physics of poo’s distinctive coiled shape; a boron buckyball; and the latest breakthrough in the ongoing Vesuvius challenge to decipher the Herculaneum scrolls.
+The science of soccer’s scissors feint
+Credit:
+Screenshot/YouTube/Howcast
+Credit:
+Screenshot/YouTube/Howcast
+With the FIFA World Cup in full swing, even scientists’ thoughts are turning to soccer (or football for everyone else in the world). For instance, one common and highly effective dribbling maneuver is the “scissors feint,” in which a player uses the outside of their feet to fake going one way and then cutting to the other. Japanese scientists studied university and junior high school soccer players of varying skill levels to study dribbling dynamics, focusing on the scissors feint. The movements were captured with high-speed cameras.
+The researchers looked at several variables, including body speed, joint kinematics, distance between players, and changes in relative speed between attackers and defenders. They described their findings in a paper published in the Japan Journal of Physical Education, Health and Sport Sciences. Most notably, the team found that raw speed is not the only factor in skilled dribbling. The best players actively regulate their distance to the defender while maintaining a high body speed, for example. They can generate explosive, rapid acceleration by coordinating their knee flexions and extensions. And they have minimal foot lift and a pronounced trunk inclination when executing feints, so their actions are quicker and more deceptive.
+Per The Guardian , this year’s FIFA ball design , the Adidas Trionda, seems to be giving goalkeepers a bit of trouble when it comes to reading the ball’s speed and responding accordingly. FIFA shifted last year to the four-panel ball with intentionally deep seams to create optimal in-flight stability and a more predictable trajectory. It’s also designed to function better in wet or humid conditions. So why are goalkeepers struggling to stop the balls?
+A paper published last month in the journal Fluids might hold the answer. The authors fired the Trionda ball through a wind tunnel and analyzed the aerodynamics. (It’s a common experimental approach used to study baseball aerodynamics , too.) They found that the ball traveled faster once it hit a certain velocity regardless of where it was struck. They attribute this to the so-called “drag crisis,” i.e., the point where the air flow around the ball shifts from a smooth laminar flow to a turbulent flow. The resulting disruption in drag makes the ball move faster, so it doesn’t slow down as goalkeepers have been conditioned to expect. Hitting the ball on the seam reduces drag, and the effect is less likely to occur at higher altitudes.
+Japan Journal of Physical Education, Health and Sport Sciences, 2026. DOI: 10.5432/jjpehss.07-25031 ( About DOIs ).
+Fluids, 2026. DOI: 10.3390/fluids11050128 .
+Reading a complete Herculaneum scroll
+Credit:
+Vesuvius Challenge
+Credit:
+Vesuvius Challenge
+The Vesuvius Challenge is an ongoing project that employs “digital unwrapping” and crowdsourced machine learning to decipher the first letters from previously unreadable ancient scrolls found in an ancient Roman villa at Herculaneum. The 660-plus scrolls stayed buried under volcanic mud until they were excavated in the 1700s from a single room that archaeologists believe held the personal working library of an Epicurean philosopher named Philodemus. The badly singed, rolled-up scrolls were so fragile that it was long believed they would never be readable, as even touching them could cause them to crumble.
+In 2023, the Vesuvius Challenge made its first award for deciphering the first letters, and the following year , the project awarded the grand prize of $700,000 for producing the first readable text. Last year brought the successful generation of the first X-ray image of the inside of a scroll (PHerc. 172) housed in Oxford University’s Bodleian Libraries— a collaboration with the Vesuvius Challenge. The scroll’s ink has a unique chemical composition, possibly containing lead, which means it shows up more clearly in X-ray scans than other Herculaneum scrolls that have been scanned. That project focused primarily on detecting the presence of ink rather than deciphering the characters or text, although the team was able to identify the Greek word for “disgust.”
+The latest breakthrough: One of the scrolls, PHerc. 1667, has now been “ virtually unrolled ” and read in full, with the technical details and a full column-by-column transcription appearing in a preprint on the arXiv. The text is a philosophical treatise on ethics and human moral progress, and the final column revealed the name Aristocreon , a nephew and disciple of the Stoic philosopher Chrysippus . So the team believes the scroll likely dates to the 2nd century BCE. There are gaps in the text where the papyrus surface has been lost, but it’s still an impressive achievement. The team was also able to use higher resolution imaging to reveal ink on another scroll, PHerc. Paris 4, and to recover the title and author of a third scroll, PHerc. 139.
+arXiv, 2026. DOI: 10.48550/arXiv.2606.29085 .
+A boron buckyball
+Credit:
+Wang Lab / Brown University
+Credit:
+Wang Lab / Brown University
+Buckyballs, aka buckminsterfullerenes, are carbon molecules comprised of 60 carbon atoms arranged in such a way as to bear an uncanny resemblance to soccer balls—just very tiny nanoscale soccer balls. They were first discovered in 1985 by Rice University physicists, who shared the 1996 Nobel Prize in Chemistry for the achievement. Buckyballs helped launch the nanotechnology revolution. Now, scientists at Brown University have produced the first experimental evidence for a new kind of “buckyball” molecule made up of 80 boron atoms. They described their results in a paper published in the journal Chemical Science.
+Chemist Lai-Sheng Wang has been trying to make boron structures similar to those achieved by carbon, like the buckyball, for three decades. His team has made clusters of 36 boron atoms in a thin, atom-thick disk; two could be stitched together to create the boron equivalent of graphene. And in 2014, they found a 40-atom boron cluster arranged in a hollow cage shaped like a buckyball, although it did not have the trademark perfect spherical symmetry.
+Wang’s team made its boron buckyball by zapping a boron target with a high-powered laser, producing a plume of boron atoms that cooled and formed different kinds of nanoclusters. They then weighed each cluster to determine the number of atoms, and used photonelectron spectroscopy to determine the shapes of the clusters. They were surprised to find an 80-atom cluster that was both highly stable and highly symmetrical. The result isn’t entirely consistent with current theory, which predicts a boron buckyball shouldn’t be stable, but Wang et al. have done an exhaustive search of various configurations for 80 boron atoms and still think a buckyball is the most likely candidate.
+Chemical Science, 2026. DOI: 10.1039/D6SC02674E .
+These spiders build ballistic traps
+Credit:
+Ajay Narendra et al. 2026
+Credit:
+Ajay Narendra et al. 2026
+Researchers have discovered a new species of spider native to Australia with a novel hunting strategy. According to a paper published in Current Biology, these nocturnal spiders weave a main web, but also construct snare traps underneath to capture green tree ants and launch them upward to the main web at accelerations of up to 1,367 meters per second squared. There’s no official species name yet, but they belong to the genus Propostira , and the authors have dubbed them “ballista spiders.”
+Co-author Greg Anderson of QIMR Berghofer Medical Research Institute in Brisbane first witnessed a catapulted ant in 2022, but the motion was pretty much a blur, and he lacked adequate camera equipment to investigate at the time. In the following year, he and his co-authors spent 10 days studying the spiders, which typically hide under leaves during the day. The spiders build their conical traps around dusk by attaching silk tension lines to a leaf, a task that can take as long as four hours. Then the spiders release a special chemical that specifically attracts green ants.
+When an ant locks onto the trap with their mandibles, it gets stuck, and its struggles release the trap’s anchor point, launching the ant up to the main web. It took high-speed cameras set at 5,000 to 7,000 frames per second to capture that moment. Anderson et al. hypothesize that this is the spider’s strategy to avoid hunting on the ground, which carries a risk of counterattack from an ant colony.
+Current Biology, 2026. 10.1016/j.cub.2026.04.066 .
+The shape of poo
+Lukas Kernell
+Lukas Kernell
+Drawings of earthworm poo by Charles Darwin (1881)
+Public domain
+Drawings of earthworm poo by Charles Darwin (1881)
+Public domain
+Lugworm excrement
+Mehdi Habibi et al., 2026
+Lugworm excrement
+Mehdi Habibi et al., 2026
+Drawings of earthworm poo by Charles Darwin (1881)
+Public domain
+Lugworm excrement
+Mehdi Habibi et al., 2026
+The poop emoji is instantly recognizable because, well, we’ve all seen those telltale coils circling around a broad base and tapering to a point—just like swirling soft-serve ice cream. This happens because most creatures release their feces downward; the tapering occurs because the feces fall from decreasing heights. But lugworms produce coils of feces with uniform spirals that don’t taper into a point. Because they live in U-shaped burrows, they release their poo upward. Charles Darwin observed as much in 1881, noting that worms defecated “either upwards or downwards with respect to the slope” of their respective burrows.
+According to a paper published in the journal Nature Communications, both kinds of coiled feces owe their shape to physics—specifically a mathematical description of how ropes and similar materials coil called the elastic rope-coiling theory. It all comes down to the material’s stiffness and whether the feces moves with or against gravity’s downward pull. The lugworm produces “anti-gravitational” poop. The distinctive shapes of the poo emoji and lugworm poo are both a “direct consequence of the physics governing elastic coiling in gravitational fields,” the authors concluded. They’re planning to design a second poo emoji and officially propose it to the Unicode Consortium.
+Factors like muscular control and extrusion rate of the poo had little to no effect on the final shape. By contrast, the Australian bare-nosed wombat produces distinctive cubes of poop instead of tapered cylinders. A 2021 paper found that the secret lies in their intestines, which have varying stiff and soft regions that serve to shape the poo during the digestive process. Earlier preliminary findings by the same group won the 2019 Ig Nobel Physics Prize.
+Nature Communications, 2026. DOI: 10.1038/s41467-026-72566-7 .
+How did Botticelli’s model really die?
+Credit:
+Sandro Botticelli/Public domain
+Credit:
+Sandro Botticelli/Public domain
+One of 15th-century painter Sandro Botticelli’s most famous works is the Birth of Venus , depicting the naked goddess, newly birthed, standing in a giant scallop shell. The model for the painting (disputed by some historians) was allegedly Simonetta Vespucci (nee Cattaneo), a renowned beauty in Florentine high society whom Botticelli greatly admired. He painted her five times before her untimely death in her early 20s. Her open coffin was carried through the streets of Florence. The poet Poliziano dubbed her “the Unrivaled” ( La Sans Par ).
+It was long believed that Simonetta had succumbed to tuberculosis, but in 2019, Paolo Pozzilli of Queen Mary University of London and several co-authors argued that she may have suffered from a pituitary tumor (adenoma) that gradually increased in size due to prolactin and growth hormone secretions, citing her appearance in several portraits as evidence. This could have caused a sudden tumor-related fatal apoplexy.
+Pozzilli et al. have now expanded their analysis in a paper published in the journal Endocrinology, Diabetes & Metabolism. For instance, they examined letters between Simonetta’s father-in-law, Piero Vespucci, and Lorenzo de Medici, which described how Simonetta had collapsed during a ball a few days before her death. Her symptoms included headache, hallucinations, vomiting, and a high fever, all symptoms of a rapidly expanding pituitary tumor, per the authors. Pozzilli et al. also think the tumor would explain the irregular eye positioning in the Birth of Venus , suggesting the model had a squint or a misalignment of the eyes, which will be the subject of future research.
+Endocrinology, Diabetes & Metabolism, 2026. DOI: 10.1002/edm2.70261 .
+Jennifer Ouellette
+Senior Writer
+Jennifer Ouellette
+Senior Writer
+Jennifer is a senior writer at Ars Technica with a particular focus on where science meets culture, covering everything from physics and related interdisciplinary topics to her favorite films and TV series. Jennifer lives in Baltimore with her spouse, physicist Sean M. Carroll, and their two cats, Ariel and Caliban.
+11 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+1.
+Sony erases digital content from libraries; we're reminded we don’t own what we buy
+2.
+NASA's X-59 "frankenjet" tests supersonic flight without the sonic boom
+3.
+US renewable boom passes key milestone in April
+4.
+Trump's plan to redesign every .gov website leads to AI-designed horrors
+5.
+Florida bans local governments from pursuing net-zero emissions goals
+Customize
+
+## full_text
+
+Skip to content
+Text
+settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+Minimize to nav
+It’s a regrettable reality that there is never enough time to cover all the interesting scientific stories we come across. So every month, we highlight a handful of the best stories that nearly slipped through the cracks. June’s list includes insight into the science of soccer’s scissors feint; the physics of poo’s distinctive coiled shape; a boron buckyball; and the latest breakthrough in the ongoing Vesuvius challenge to decipher the Herculaneum scrolls.
+The science of soccer’s scissors feint
+Credit:
+Screenshot/YouTube/Howcast
+Credit:
+Screenshot/YouTube/Howcast
+With the FIFA World Cup in full swing, even scientists’ thoughts are turning to soccer (or football for everyone else in the world). For instance, one common and highly effective dribbling maneuver is the “scissors feint,” in which a player uses the outside of their feet to fake going one way and then cutting to the other. Japanese scientists studied university and junior high school soccer players of varying skill levels to study dribbling dynamics, focusing on the scissors feint. The movements were captured with high-speed cameras.
+The researchers looked at several variables, including body speed, joint kinematics, distance between players, and changes in relative speed between attackers and defenders. They described their findings in a paper published in the Japan Journal of Physical Education, Health and Sport Sciences. Most notably, the team found that raw speed is not the only factor in skilled dribbling. The best players actively regulate their distance to the defender while maintaining a high body speed, for example. They can generate explosive, rapid acceleration by coordinating their knee flexions and extensions. And they have minimal foot lift and a pronounced trunk inclination when executing feints, so their actions are quicker and more deceptive.
+Per The Guardian , this year’s FIFA ball design , the Adidas Trionda, seems to be giving goalkeepers a bit of trouble when it comes to reading the ball’s speed and responding accordingly. FIFA shifted last year to the four-panel ball with intentionally deep seams to create optimal in-flight stability and a more predictable trajectory. It’s also designed to function better in wet or humid conditions. So why are goalkeepers struggling to stop the balls?
+A paper published last month in the journal Fluids might hold the answer. The authors fired the Trionda ball through a wind tunnel and analyzed the aerodynamics. (It’s a common experimental approach used to study baseball aerodynamics , too.) They found that the ball traveled faster once it hit a certain velocity regardless of where it was struck. They attribute this to the so-called “drag crisis,” i.e., the point where the air flow around the ball shifts from a smooth laminar flow to a turbulent flow. The resulting disruption in drag makes the ball move faster, so it doesn’t slow down as goalkeepers have been conditioned to expect. Hitting the ball on the seam reduces drag, and the effect is less likely to occur at higher altitudes.
+Japan Journal of Physical Education, Health and Sport Sciences, 2026. DOI: 10.5432/jjpehss.07-25031 ( About DOIs ).
+Fluids, 2026. DOI: 10.3390/fluids11050128 .
+Reading a complete Herculaneum scroll
+Credit:
+Vesuvius Challenge
+Credit:
+Vesuvius Challenge
+The Vesuvius Challenge is an ongoing project that employs “digital unwrapping” and crowdsourced machine learning to decipher the first letters from previously unreadable ancient scrolls found in an ancient Roman villa at Herculaneum. The 660-plus scrolls stayed buried under volcanic mud until they were excavated in the 1700s from a single room that archaeologists believe held the personal working library of an Epicurean philosopher named Philodemus. The badly singed, rolled-up scrolls were so fragile that it was long believed they would never be readable, as even touching them could cause them to crumble.
+In 2023, the Vesuvius Challenge made its first award for deciphering the first letters, and the following year , the project awarded the grand prize of $700,000 for producing the first readable text. Last year brought the successful generation of the first X-ray image of the inside of a scroll (PHerc. 172) housed in Oxford University’s Bodleian Libraries— a collaboration with the Vesuvius Challenge. The scroll’s ink has a unique chemical composition, possibly containing lead, which means it shows up more clearly in X-ray scans than other Herculaneum scrolls that have been scanned. That project focused primarily on detecting the presence of ink rather than deciphering the characters or text, although the team was able to identify the Greek word for “disgust.”
+The latest breakthrough: One of the scrolls, PHerc. 1667, has now been “ virtually unrolled ” and read in full, with the technical details and a full column-by-column transcription appearing in a preprint on the arXiv. The text is a philosophical treatise on ethics and human moral progress, and the final column revealed the name Aristocreon , a nephew and disciple of the Stoic philosopher Chrysippus . So the team believes the scroll likely dates to the 2nd century BCE. There are gaps in the text where the papyrus surface has been lost, but it’s still an impressive achievement. The team was also able to use higher resolution imaging to reveal ink on another scroll, PHerc. Paris 4, and to recover the title and author of a third scroll, PHerc. 139.
+arXiv, 2026. DOI: 10.48550/arXiv.2606.29085 .
+A boron buckyball
+Credit:
+Wang Lab / Brown University
+Credit:
+Wang Lab / Brown University
+Buckyballs, aka buckminsterfullerenes, are carbon molecules comprised of 60 carbon atoms arranged in such a way as to bear an uncanny resemblance to soccer balls—just very tiny nanoscale soccer balls. They were first discovered in 1985 by Rice University physicists, who shared the 1996 Nobel Prize in Chemistry for the achievement. Buckyballs helped launch the nanotechnology revolution. Now, scientists at Brown University have produced the first experimental evidence for a new kind of “buckyball” molecule made up of 80 boron atoms. They described their results in a paper published in the journal Chemical Science.
+Chemist Lai-Sheng Wang has been trying to make boron structures similar to those achieved by carbon, like the buckyball, for three decades. His team has made clusters of 36 boron atoms in a thin, atom-thick disk; two could be stitched together to create the boron equivalent of graphene. And in 2014, they found a 40-atom boron cluster arranged in a hollow cage shaped like a buckyball, although it did not have the trademark perfect spherical symmetry.
+Wang’s team made its boron buckyball by zapping a boron target with a high-powered laser, producing a plume of boron atoms that cooled and formed different kinds of nanoclusters. They then weighed each cluster to determine the number of atoms, and used photonelectron spectroscopy to determine the shapes of the clusters. They were surprised to find an 80-atom cluster that was both highly stable and highly symmetrical. The result isn’t entirely consistent with current theory, which predicts a boron buckyball shouldn’t be stable, but Wang et al. have done an exhaustive search of various configurations for 80 boron atoms and still think a buckyball is the most likely candidate.
+Chemical Science, 2026. DOI: 10.1039/D6SC02674E .
+These spiders build ballistic traps
+Credit:
+Ajay Narendra et al. 2026
+Credit:
+Ajay Narendra et al. 2026
+Researchers have discovered a new species of spider native to Australia with a novel hunting strategy. According to a paper published in Current Biology, these nocturnal spiders weave a main web, but also construct snare traps underneath to capture green tree ants and launch them upward to the main web at accelerations of up to 1,367 meters per second squared. There’s no official species name yet, but they belong to the genus Propostira , and the authors have dubbed them “ballista spiders.”
+Co-author Greg Anderson of QIMR Berghofer Medical Research Institute in Brisbane first witnessed a catapulted ant in 2022, but the motion was pretty much a blur, and he lacked adequate camera equipment to investigate at the time. In the following year, he and his co-authors spent 10 days studying the spiders, which typically hide under leaves during the day. The spiders build their conical traps around dusk by attaching silk tension lines to a leaf, a task that can take as long as four hours. Then the spiders release a special chemical that specifically attracts green ants.
+When an ant locks onto the trap with their mandibles, it gets stuck, and its struggles release the trap’s anchor point, launching the ant up to the main web. It took high-speed cameras set at 5,000 to 7,000 frames per second to capture that moment. Anderson et al. hypothesize that this is the spider’s strategy to avoid hunting on the ground, which carries a risk of counterattack from an ant colony.
+Current Biology, 2026. 10.1016/j.cub.2026.04.066 .
+The shape of poo
+Lukas Kernell
+Lukas Kernell
+Drawings of earthworm poo by Charles Darwin (1881)
+Public domain
+Drawings of earthworm poo by Charles Darwin (1881)
+Public domain
+Lugworm excrement
+Mehdi Habibi et al., 2026
+Lugworm excrement
+Mehdi Habibi et al., 2026
+Drawings of earthworm poo by Charles Darwin (1881)
+Public domain
+Lugworm excrement
+Mehdi Habibi et al., 2026
+The poop emoji is instantly recognizable because, well, we’ve all seen those telltale coils circling around a broad base and tapering to a point—just like swirling soft-serve ice cream. This happens because most creatures release their feces downward; the tapering occurs because the feces fall from decreasing heights. But lugworms produce coils of feces with uniform spirals that don’t taper into a point. Because they live in U-shaped burrows, they release their poo upward. Charles Darwin observed as much in 1881, noting that worms defecated “either upwards or downwards with respect to the slope” of their respective burrows.
+According to a paper published in the journal Nature Communications, both kinds of coiled feces owe their shape to physics—specifically a mathematical description of how ropes and similar materials coil called the elastic rope-coiling theory. It all comes down to the material’s stiffness and whether the feces moves with or against gravity’s downward pull. The lugworm produces “anti-gravitational” poop. The distinctive shapes of the poo emoji and lugworm poo are both a “direct consequence of the physics governing elastic coiling in gravitational fields,” the authors concluded. They’re planning to design a second poo emoji and officially propose it to the Unicode Consortium.
+Factors like muscular control and extrusion rate of the poo had little to no effect on the final shape. By contrast, the Australian bare-nosed wombat produces distinctive cubes of poop instead of tapered cylinders. A 2021 paper found that the secret lies in their intestines, which have varying stiff and soft regions that serve to shape the poo during the digestive process. Earlier preliminary findings by the same group won the 2019 Ig Nobel Physics Prize.
+Nature Communications, 2026. DOI: 10.1038/s41467-026-72566-7 .
+How did Botticelli’s model really die?
+Credit:
+Sandro Botticelli/Public domain
+Credit:
+Sandro Botticelli/Public domain
+One of 15th-century painter Sandro Botticelli’s most famous works is the Birth of Venus , depicting the naked goddess, newly birthed, standing in a giant scallop shell. The model for the painting (disputed by some historians) was allegedly Simonetta Vespucci (nee Cattaneo), a renowned beauty in Florentine high society whom Botticelli greatly admired. He painted her five times before her untimely death in her early 20s. Her open coffin was carried through the streets of Florence. The poet Poliziano dubbed her “the Unrivaled” ( La Sans Par ).
+It was long believed that Simonetta had succumbed to tuberculosis, but in 2019, Paolo Pozzilli of Queen Mary University of London and several co-authors argued that she may have suffered from a pituitary tumor (adenoma) that gradually increased in size due to prolactin and growth hormone secretions, citing her appearance in several portraits as evidence. This could have caused a sudden tumor-related fatal apoplexy.
+Pozzilli et al. have now expanded their analysis in a paper published in the journal Endocrinology, Diabetes & Metabolism. For instance, they examined letters between Simonetta’s father-in-law, Piero Vespucci, and Lorenzo de Medici, which described how Simonetta had collapsed during a ball a few days before her death. Her symptoms included headache, hallucinations, vomiting, and a high fever, all symptoms of a rapidly expanding pituitary tumor, per the authors. Pozzilli et al. also think the tumor would explain the irregular eye positioning in the Birth of Venus , suggesting the model had a squint or a misalignment of the eyes, which will be the subject of future research.
+Endocrinology, Diabetes & Metabolism, 2026. DOI: 10.1002/edm2.70261 .
+Jennifer Ouellette
+Senior Writer
+Jennifer Ouellette
+Senior Writer
+Jennifer is a senior writer at Ars Technica with a particular focus on where science meets culture, covering everything from physics and related interdisciplinary topics to her favorite films and TV series. Jennifer lives in Baltimore with her spouse, physicist Sean M. Carroll, and their two cats, Ariel and Caliban.
+11 Comments
+Comments
+Forum view
+Loading comments...
+Prev story
+1.
+Sony erases digital content from libraries; we're reminded we don’t own what we buy
+2.
+NASA's X-59 "frankenjet" tests supersonic flight without the sonic boom
+3.
+US renewable boom passes key milestone in April
+4.
+Trump's plan to redesign every .gov website leads to AI-designed horrors
+5.
+Florida bans local governments from pursuing net-zero emissions goals
+Customize
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 91
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":91,"text_length":14036,"paragraph_count":51,"sentence_count":114,"boilerplate_hits":2,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Also, the science of poop's distinctive shape, boron buckyballs, and the secret to a soccer feint.
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav It’s a regrettable reality that there is never enough time to cover all the interesting scientific stories we come across.
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   So every month, we highlight a handful of the best stories that nearly slipped through the cracks.
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   June’s list includes insight into the science of soccer’s scissors feint; the physics of poo’s distinctive coiled shape; a boron buckyball; and the latest breakthrough in the ongoing Vesuvius challenge to decipher the Herculaneum scrolls.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=medium｜confidence=high
+   The science of soccer’s scissors feint Credit: Screenshot/YouTube/Howcast Credit: Screenshot/YouTube/Howcast With the FIFA World Cup in full swing, even scientists’ thoughts are turning to soccer (or football for everyone else in the world).
+
+6. **quote**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=medium｜confidence=high
+   For instance, one common and highly effective dribbling maneuver is the “scissors feint,” in which a player uses the outside of their feet to fake going one way and then cutting to the other.
+
+## business_elements
+
+- companies: Ars Technica AI
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 法律 / 法务, 医疗, 开发者工具
+- roles: CIO / IT 负责人
+- workflows: 暂无公开信息
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 法务
+- numbers: 6, 2026, 10.5432, 07, 25031, 10.3390, 11050128, 660
+- quotes: scissors feint, / drag crisis, / digital unwrapping / disgust. /  virtually unrolled 
+
+## evidence_seed
+
+- company_actions: Also, the science of poop's distinctive shape, boron buckyballs, and the secret to a soccer feint. / Skip to content Text settings Story text Size Small Standard Large Width Standard Wide Links Standard Orange * Subscribers only Learn more Minimize to nav It’s a regrettable reality that there is never enough time to cover all the interesting scientific stories we come across. / So every month, we highlight a handful of the best stories that nearly slipped through the cracks.
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 暂无公开信息
+- affected_roles: CIO / IT 负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_technical_trend
+- importance_score: 5
+- importance_reason: technical trend or capability shift; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 2
+- evidence_strength: 4
+- case_richness: 4
+- trend_relevance: 5
+- guanlan_relevance: 4
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: false
+- business_change: false
+- relationship_graph_input: false
+- trend_candidate_context: false
+- signal_card_candidate: false
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: false
+
+## pool_routes
+
+- index_only
+
+## missing_information
+
+- 证据对象不可用：疑似索引页、目录页、薄文本或非可用证据对象
+- 没有检测到明确动作词；可作为诊断信息，不能单独阻断重要观点、文章或技术趋势
+- 没有具体客户或真实企业案例
+- 没有变化前后流程线索
+
+## volatile_and_discovery_handling
+
+- source_volatility: low
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: supporting_evidence
+- discovery_source: none
+- source_role: resolved_original_source
+- origin_fetch_status: not_applicable
+- discovery_record: none
+
+## 原始摘要 / 采集文本
+
+Also, the science of poop's distinctive shape, boron buckyballs, and the secret to a soccer feint.
+
+## 采集备注
+
+该条目由 rss-feed 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
