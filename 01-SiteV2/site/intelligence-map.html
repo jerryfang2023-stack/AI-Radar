@@ -166,7 +166,8 @@
       line-height: 1;
     }
     .item-list { display: grid; gap: 9px; margin-top: 14px; }
-    .evidence { padding: 10px; border: 1px solid var(--soft-line); background: rgba(255, 253, 248, .78); }
+    .evidence { display: block; padding: 10px; border: 1px solid var(--soft-line); background: rgba(255, 253, 248, .78); text-decoration: none; }
+    a.evidence:hover { border-color: rgba(13, 53, 92, .32); background: rgba(255, 253, 248, .96); }
     .evidence b { display: block; font-size: 14px; font-weight: 600; line-height: 22px; }
     .evidence span { display: block; margin-top: 4px; color: var(--faint); font-family: var(--mono); font-size: 11px; line-height: 18px; }
     .top-cells { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
@@ -447,6 +448,16 @@
       $("[data-cell-modal]").hidden = false;
       $("[data-modal-close]").focus();
     }
+    function cardSourceUrl(card) {
+      return card.sourceUrl || card.url || card.source_url || card.originalUrl || card.original_url || card.sourceLinks?.[0] || "";
+    }
+    function renderEvidenceCard(card, linked = false) {
+      const meta = `${card.id} · ${card.categoryLabel || card.category || "Card"} · ${card.date} · ${card.sourceName || ""}`;
+      const body = `<b>${card.title}</b><span>${meta}</span>`;
+      const url = linked ? cardSourceUrl(card) : "";
+      if (!url) return `<article class="evidence">${body}</article>`;
+      return `<a class="evidence" href="${url}" target="_blank" rel="noopener noreferrer">${body}</a>`;
+    }
     function renderTop(cells) {
       $("[data-top-cells]").innerHTML = cells.filter((c) => c.count).sort((a,b) => b.count - a.count).slice(0,4).map((cell) => `<article class="top-cell"><p class="kicker">${statusText(cell.status)}</p><b>${cell.row} × ${cell.col}</b><span>${cell.count} 条 7 日 Cards，代表主体：${cell.stats.subjects.slice(0,3).join(" / ") || "未提取"}</span></article>`).join("");
     }
@@ -465,7 +476,7 @@
     }
     function renderNetwork(directions) {
       const root = $("[data-network-list]");
-      root.innerHTML = directions.map((d, i) => `<article class="network-card" data-network-card="${i}"><p class="kicker">Direction ${String(i+1).padStart(2,"0")} · ${d.cards.length} Cards</p><h3>${d.title}</h3><p>${d.judgment}</p><div class="legend"><span>代表主体：${d.stats.subjects.slice(0,3).join(" / ") || "未提取"}</span><span>产品形态：${d.products.join(" / ") || "未提取"}</span><span class="${d.stats.strong ? "status-stable" : "status-watch"}">${d.boundary}</span></div><details><summary>关联事件</summary><div class="item-list">${d.cards.slice(0,4).map((card) => `<article class="evidence"><b>${card.title}</b><span>${card.id} · ${card.categoryLabel || card.category || "Card"} · ${card.date} · ${card.sourceName || ""}</span></article>`).join("")}</div></details></article>`).join("");
+      root.innerHTML = directions.map((d, i) => `<article class="network-card" data-network-card="${i}"><p class="kicker">Direction ${String(i+1).padStart(2,"0")} · ${d.cards.length} Cards</p><h3>${d.title}</h3><p>${d.judgment}</p><div class="legend"><span>代表主体：${d.stats.subjects.slice(0,3).join(" / ") || "未提取"}</span><span>产品形态：${d.products.join(" / ") || "未提取"}</span><span class="${d.stats.strong ? "status-stable" : "status-watch"}">${d.boundary}</span></div><details><summary>关联事件</summary><div class="item-list">${d.cards.slice(0,4).map((card) => renderEvidenceCard(card, true)).join("")}</div></details></article>`).join("");
     }
     function bind() {
       document.addEventListener("click", (event) => {
