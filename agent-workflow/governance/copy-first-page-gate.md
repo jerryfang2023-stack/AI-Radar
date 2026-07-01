@@ -1,4 +1,4 @@
-﻿---
+---
 title: Copy First Page Gate
 date: 2026-05-11
 status: active

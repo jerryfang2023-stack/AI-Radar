@@ -1,4 +1,4 @@
-﻿---
+---
 title: Evidence And Routing Rules
 date: 2026-05-22
 status: active-v2.2

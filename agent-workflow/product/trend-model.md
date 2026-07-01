@@ -1,4 +1,4 @@
-﻿# 趋势模型与 Trend Report 规则
+# 趋势模型与 Trend Report 规则
 
 更新时间：2026-05-14
 状态：V2-only current / single source

@@ -1,4 +1,4 @@
-﻿# Progress｜当前进度
+# Progress｜当前进度
 
 更新时间：2026-06-13
 状态：current / V2.2 compact

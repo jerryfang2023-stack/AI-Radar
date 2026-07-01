@@ -1,4 +1,4 @@
-﻿# Quality Gates｜当前质量门
+# Quality Gates｜当前质量门
 
 状态：current
 更新时间：2026-05-21

@@ -1,4 +1,4 @@
-﻿# 观澜AI｜WaveSight AI V2-only 设计规范总纲
+# 观澜AI｜WaveSight AI V2-only 设计规范总纲
 
 更新时间：2026-05-21
 状态：V2-only current

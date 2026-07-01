@@ -1,4 +1,4 @@
-﻿# 2026-06-26 Guanlan Daily Monitor Log
+# 2026-06-26 Guanlan Daily Monitor Log
 
 - generated_at: 2026-06-26T03:32:32.504Z
 - raw_count: 188

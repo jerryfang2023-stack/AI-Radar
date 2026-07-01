@@ -1,4 +1,4 @@
-﻿# 2026-06-13 Follow-Builders Skill Local Publish
+# 2026-06-13 Follow-Builders Skill Local Publish
 
 - generated_at: 2026-06-13T11:10:48.021Z
 - generated_at_shanghai: 2026-06-13T19:10:48+08:00
