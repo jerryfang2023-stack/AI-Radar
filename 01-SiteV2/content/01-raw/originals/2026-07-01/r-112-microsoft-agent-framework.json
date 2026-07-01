@@ -1,0 +1,287 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-112",
+  "title": "microsoft/agent-framework",
+  "original_url": "https://github.com/microsoft/agent-framework?WT.mc_id=DT-MVP-5000570",
+  "canonical_url": "https://github.com/microsoft/agent-framework?WT.mc_id=DT-MVP-5000570",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "developer",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "case_or_customer",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_startups",
+  "search_path": "developer_ecosystem",
+  "search_path_label": "开发生态路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "ai_transformation",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-01T02:33:05.610Z",
+  "language": "mixed",
+  "full_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nmicrosoft\nagent-framework\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n2k\nStar\n11.8k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n2,444 Commits\n2,444 Commits\n.devcontainer\n.devcontainer\n.github\n.github\ndeclarative-agents\ndeclarative-agents\ndocs\ndocs\ndotnet\ndotnet\npython\npython\nschemas\nschemas\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCOMMUNITY.md\nCOMMUNITY.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSUPPORT.md\nSUPPORT.md\nTRANSPARENCY_FAQ.md\nTRANSPARENCY_FAQ.md\nwf-source-gen-plan.md\nwf-source-gen-plan.md\nView all files\nRepository files navigation\nWelcome to Microsoft Agent Framework!\nMicrosoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python .\nMicrosoft Agent Framework is built for teams taking agents from prototype to production. It provides a consistent foundation for building, orchestrating, and operating agent systems across Python and .NET, while keeping architecture choices open as requirements evolve, and supports a broad ecosystem including Microsoft Foundry, Azure OpenAI, OpenAI, and the GitHub Copilot SDK, with samples and hosting patterns for both local development and cloud deployment.\nWatch the full Agent Framework introduction (30 min)\nIs this the right framework for you?\nMAF is a strong fit if you:\nare building agents and workflows you expect to run in production,\nneed orchestration beyond a single prompt or stateless chat loop,\nwant graph-based patterns such as sequential, concurrent, handoff, and group collaboration,\ncare about durability, restartability, observability, governance, or human-in-the-loop control,\nneed provider flexibility so your architecture can evolve without major rewrites.\nKey Features\nExplore new MAF capabilities and real implementation patterns on the official blog .\nPython and C#/.NET Support : Full framework support for both Python and C#/.NET implementations with consistent APIs\nPython packages | .NET source\nMultiple Agent Provider Support : Support for various LLM providers with more being added continuously\nPython examples | .NET examples\nMiddleware : Flexible middleware system for request/response processing, exception handling, and custom pipelines\nPython middleware | .NET middleware\nOrchestration Patterns & Workflows : Build multi-agent systems with graph-based workflows supporting sequential, concurrent, handoff, and group collaboration patterns; includes checkpointing, streaming, human-in-the-loop, and time-travel\nPython workflows | .NET workflows\nFoundry Hosted Agents (new) : Deploy and host your agents to Foundry-hosted infrastructure with just 2 additional lines of code\nPython samples | .NET samples\nObservability : Built-in OpenTelemetry integration for distributed tracing, monitoring, and debugging\nPython observability | .NET telemetry\nDeclarative Agents : Define agents using YAML for faster setup and versioning\nDeclarative agent samples\nAgent Skills : Build domain-specific knowledge bases from multiple sources—files, inline code, class libraries—for agents to discover and use\nSkills design\nAF Labs : Experimental packages for cutting-edge features including benchmarking, reinforcement learning, and research initiatives\nLabs directory\nDevUI : Interactive developer UI for agent development, testing, and debugging workflows\nSee the DevUI in action\nTable of Contents\nGetting Started\nInstallation\nLearning Resources\nQuickstart\nBasic Agent - Python\nBasic Agent - .NET\nMore Examples & Samples\nCommunity & Feedback\nTroubleshooting\nContributor Resources\nGetting Started\nInstallation\nPython\npip install agent-framework\n# This will install all sub-packages, see `python/packages` for individual packages.\n# It may take a minute on first install on Windows.\n.NET\ndotnet add package Microsoft.Agents.AI\n# For Foundry integration (used in the .NET quickstart below):\ndotnet add package Microsoft.Agents.AI.Foundry\ndotnet add package Azure.AI.Projects\ndotnet add package Azure.Identity\nLearning Resources\nOverview - High level overview of the framework\nQuick Start - Get started with a simple agent\nTutorials - Step by step tutorials\nUser Guide - In-depth user guide for building agents and workflows\nMigration from Semantic Kernel - Guide to migrate from Semantic Kernel\nMigration from AutoGen - Guide to migrate from AutoGen\nQuickstart\nBasic Agent - Python\nCreate a simple Azure Responses Agent that writes a haiku about the Microsoft Agent Framework\n# pip install agent-framework\n# Use `az login` to authenticate with Azure CLI\nimport os\nimport asyncio\nfrom agent_framework import Agent\nfrom agent_framework . foundry import FoundryChatClient\nfrom azure . identity import AzureCliCredential\nasync def main ():\n# Initialize a chat agent with Microsoft Foundry\n# the endpoint, deployment name, and api version can be set via environment variables\n# or they can be passed in directly to the FoundryChatClient constructor\nagent = Agent (\nclient = FoundryChatClient (\ncredential = AzureCliCredential (),\n# project_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\n# model=os.environ[\"FOUNDRY_MODEL_DEPLOYMENT_NAME\"],\n),\nname = \"HaikuAgent\" ,\ninstructions = \"You are an upbeat assistant that writes beautifully.\" ,\nprint ( await agent . run ( \"Write a haiku about Microsoft Agent Framework.\" ))\nif __name__ == \"__main__\" :\nasyncio . run ( main ())\nBasic Agent - .NET\nCreate a simple Agent, using Microsoft Foundry that writes a haiku about the Microsoft Agent Framework\n// This sample shows how to create and run a basic agent with AIProjectClient.AsAIAgent(...).\nusing Azure . AI . Projects ;\nusing Azure . Identity ;\nusing Microsoft . Agents . AI ;\nstring endpoint = Environment . GetEnvironmentVariable ( \"AZURE_AI_PROJECT_ENDPOINT\" ) ?? throw new InvalidOperationException ( \"AZURE_AI_PROJECT_ENDPOINT is not set.\" ) ;\nstring deploymentName = Environment . GetEnvironmentVariable ( \"AZURE_AI_MODEL_DEPLOYMENT_NAME\" ) ?? \"gpt-5.4-mini\" ;\nAIAgent agent =\nnew AIProjectClient ( new Uri ( endpoint ) , new DefaultAzureCredential ( ) )\n. AsAIAgent ( model : deploymentName , instructions : \"You are an upbeat assistant that writes beautifully.\" , name : \"HaikuAgent\" ) ;\n// Once you have the agent, you can invoke it like any other AIAgent.\nConsole . WriteLine ( await agent . RunAsync ( \"Write a haiku about Microsoft Agent Framework.\" ) ) ;\nMore Examples & Samples\nPython\nGetting Started : progressive tutorial from hello-world to hosting\nAgent Concepts : deep-dive samples by topic (tools, middleware, providers, etc.)\nWorkflows : workflow creation and integration with agents\nHosting : A2A, Azure Functions, Durable Task hosting\nEnd-to-End : full applications, evaluation, and demos\n.NET\nGetting Started : progressive tutorial from hello agent to hosting\nAgent Concepts : basic agent creation and tool usage\nAgent Providers : samples showing different agent providers\nWorkflows : advanced multi-agent patterns and workflow orchestration\nHosting : A2A, Durable Agents, Durable Workflows\nEnd-to-End : full applications and demos\nCommunity & Feedback\nFound a bug? File a GitHub issue to help us improve.\nEnjoying MAF? to show your support and help others discover the project.\nHave questions? Join our Discord or visit weekly office hours .\nTroubleshooting\nAuthentication\nProblem\nCause\nFix\nAuthentication errors when using Azure credentials\nNot signed in to Azure CLI\nRun az login before starting your app\nAPI key errors\nWrong or missing API key\nVerify the key and ensure it's for the correct resource/provider\nTip: DefaultAzureCredential is convenient for development but in production, consider using a specific credential (e.g., ManagedIdentityCredential ) to avoid latency issues, unintended credential probing, and potential security risks from fallback mechanisms.\nEnvironment Variables\nFor environment variable configuration specific to each sample, refer to the README in the sample directory ( Python samples | .NET samples ).\nContributor Resources\nContributing Guide\nPython Development Guide\nDesign Documents\nArchitectural Decision Records\nImportant Notes\nImportant\nIf you use Microsoft Agent Framework to build applications that operate with any third-party servers, agents, code, or non-Azure Direct models (“Third-Party Systems”), you do so at your own risk. Third-Party Systems are Non-Microsoft Products under the Microsoft Product Terms and are governed by their own third-party license terms. You are responsible for any usage and associated costs.\nWe recommend reviewing all data being shared with and received from Third-Party Systems and being cognizant of third-party practices for handling, sharing, retention and location of data. It is your responsibility to manage whether your data will flow outside of your organization’s Azure compliance and geographic boundaries and any related implications, and that appropriate permissions, boundaries and approvals are provisioned.\nYou are responsible for carefully reviewing and testing applications you build using Microsoft Agent Framework in the context of your specific use cases, and making all appropriate decisions and customizations. This includes implementing your own responsible AI mitigations such as metaprompt, content filters, or other safety systems, and ensuring your applications meet appropriate quality, reliability, security, and trustworthiness standards. See also: Transparency FAQ\nAbout\nA framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.\naka.ms/agent-framework\nTopics\npython\nsdk\nai\ndotnet\norchestration\nmulti-agent\nworkflows\nagents\nagent-framework\nagentic-ai\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n11.8k\nstars\nWatchers\n105\nwatching\nForks\n2k\nforks\nReport repository\nReleases\n98\npython-1.10.0\nLatest\nJun 30, 2026\n+ 97 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n51.3%\nC#\n45.6%\nTypeScript\n2.6%\nHTML\n0.2%\nPowerShell\n0.1%\nCSS\n0.1%\nOther\n0.1%",
+  "clean_text": "Uh oh!\nThere was an error while loading. Please reload this page .\nmicrosoft\nagent-framework\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n2k\nStar\n11.8k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n2,444 Commits\n2,444 Commits\n.devcontainer\n.devcontainer\n.github\n.github\ndeclarative-agents\ndeclarative-agents\ndocs\ndocs\ndotnet\ndotnet\npython\npython\nschemas\nschemas\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCOMMUNITY.md\nCOMMUNITY.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSUPPORT.md\nSUPPORT.md\nTRANSPARENCY_FAQ.md\nTRANSPARENCY_FAQ.md\nwf-source-gen-plan.md\nwf-source-gen-plan.md\nView all files\nRepository files navigation\nWelcome to Microsoft Agent Framework!\nMicrosoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python .\nMicrosoft Agent Framework is built for teams taking agents from prototype to production. It provides a consistent foundation for building, orchestrating, and operating agent systems across Python and .NET, while keeping architecture choices open as requirements evolve, and supports a broad ecosystem including Microsoft Foundry, Azure OpenAI, OpenAI, and the GitHub Copilot SDK, with samples and hosting patterns for both local development and cloud deployment.\nWatch the full Agent Framework introduction (30 min)\nIs this the right framework for you?\nMAF is a strong fit if you:\nare building agents and workflows you expect to run in production,\nneed orchestration beyond a single prompt or stateless chat loop,\nwant graph-based patterns such as sequential, concurrent, handoff, and group collaboration,\ncare about durability, restartability, observability, governance, or human-in-the-loop control,\nneed provider flexibility so your architecture can evolve without major rewrites.\nKey Features\nExplore new MAF capabilities and real implementation patterns on the official blog .\nPython and C#/.NET Support : Full framework support for both Python and C#/.NET implementations with consistent APIs\nPython packages | .NET source\nMultiple Agent Provider Support : Support for various LLM providers with more being added continuously\nPython examples | .NET examples\nMiddleware : Flexible middleware system for request/response processing, exception handling, and custom pipelines\nPython middleware | .NET middleware\nOrchestration Patterns & Workflows : Build multi-agent systems with graph-based workflows supporting sequential, concurrent, handoff, and group collaboration patterns; includes checkpointing, streaming, human-in-the-loop, and time-travel\nPython workflows | .NET workflows\nFoundry Hosted Agents (new) : Deploy and host your agents to Foundry-hosted infrastructure with just 2 additional lines of code\nPython samples | .NET samples\nObservability : Built-in OpenTelemetry integration for distributed tracing, monitoring, and debugging\nPython observability | .NET telemetry\nDeclarative Agents : Define agents using YAML for faster setup and versioning\nDeclarative agent samples\nAgent Skills : Build domain-specific knowledge bases from multiple sources—files, inline code, class libraries—for agents to discover and use\nSkills design\nAF Labs : Experimental packages for cutting-edge features including benchmarking, reinforcement learning, and research initiatives\nLabs directory\nDevUI : Interactive developer UI for agent development, testing, and debugging workflows\nSee the DevUI in action\nTable of Contents\nGetting Started\nInstallation\nLearning Resources\nQuickstart\nBasic Agent - Python\nBasic Agent - .NET\nMore Examples & Samples\nCommunity & Feedback\nTroubleshooting\nContributor Resources\nGetting Started\nInstallation\nPython\npip install agent-framework\n# This will install all sub-packages, see `python/packages` for individual packages.\n# It may take a minute on first install on Windows.\n.NET\ndotnet add package Microsoft.Agents.AI\n# For Foundry integration (used in the .NET quickstart below):\ndotnet add package Microsoft.Agents.AI.Foundry\ndotnet add package Azure.AI.Projects\ndotnet add package Azure.Identity\nLearning Resources\nOverview - High level overview of the framework\nQuick Start - Get started with a simple agent\nTutorials - Step by step tutorials\nUser Guide - In-depth user guide for building agents and workflows\nMigration from Semantic Kernel - Guide to migrate from Semantic Kernel\nMigration from AutoGen - Guide to migrate from AutoGen\nQuickstart\nBasic Agent - Python\nCreate a simple Azure Responses Agent that writes a haiku about the Microsoft Agent Framework\n# pip install agent-framework\n# Use `az login` to authenticate with Azure CLI\nimport os\nimport asyncio\nfrom agent_framework import Agent\nfrom agent_framework . foundry import FoundryChatClient\nfrom azure . identity import AzureCliCredential\nasync def main ():\n# Initialize a chat agent with Microsoft Foundry\n# the endpoint, deployment name, and api version can be set via environment variables\n# or they can be passed in directly to the FoundryChatClient constructor\nagent = Agent (\nclient = FoundryChatClient (\ncredential = AzureCliCredential (),\n# project_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\n# model=os.environ[\"FOUNDRY_MODEL_DEPLOYMENT_NAME\"],\n),\nname = \"HaikuAgent\" ,\ninstructions = \"You are an upbeat assistant that writes beautifully.\" ,\nprint ( await agent . run ( \"Write a haiku about Microsoft Agent Framework.\" ))\nif __name__ == \"__main__\" :\nasyncio . run ( main ())\nBasic Agent - .NET\nCreate a simple Agent, using Microsoft Foundry that writes a haiku about the Microsoft Agent Framework\n// This sample shows how to create and run a basic agent with AIProjectClient.AsAIAgent(...).\nusing Azure . AI . Projects ;\nusing Azure . Identity ;\nusing Microsoft . Agents . AI ;\nstring endpoint = Environment . GetEnvironmentVariable ( \"AZURE_AI_PROJECT_ENDPOINT\" ) ?? throw new InvalidOperationException ( \"AZURE_AI_PROJECT_ENDPOINT is not set.\" ) ;\nstring deploymentName = Environment . GetEnvironmentVariable ( \"AZURE_AI_MODEL_DEPLOYMENT_NAME\" ) ?? \"gpt-5.4-mini\" ;\nAIAgent agent =\nnew AIProjectClient ( new Uri ( endpoint ) , new DefaultAzureCredential ( ) )\n. AsAIAgent ( model : deploymentName , instructions : \"You are an upbeat assistant that writes beautifully.\" , name : \"HaikuAgent\" ) ;\n// Once you have the agent, you can invoke it like any other AIAgent.\nConsole . WriteLine ( await agent . RunAsync ( \"Write a haiku about Microsoft Agent Framework.\" ) ) ;\nMore Examples & Samples\nPython\nGetting Started : progressive tutorial from hello-world to hosting\nAgent Concepts : deep-dive samples by topic (tools, middleware, providers, etc.)\nWorkflows : workflow creation and integration with agents\nHosting : A2A, Azure Functions, Durable Task hosting\nEnd-to-End : full applications, evaluation, and demos\n.NET\nGetting Started : progressive tutorial from hello agent to hosting\nAgent Concepts : basic agent creation and tool usage\nAgent Providers : samples showing different agent providers\nWorkflows : advanced multi-agent patterns and workflow orchestration\nHosting : A2A, Durable Agents, Durable Workflows\nEnd-to-End : full applications and demos\nCommunity & Feedback\nFound a bug? File a GitHub issue to help us improve.\nEnjoying MAF? to show your support and help others discover the project.\nHave questions? Join our Discord or visit weekly office hours .\nTroubleshooting\nAuthentication\nProblem\nCause\nFix\nAuthentication errors when using Azure credentials\nNot signed in to Azure CLI\nRun az login before starting your app\nAPI key errors\nWrong or missing API key\nVerify the key and ensure it's for the correct resource/provider\nTip: DefaultAzureCredential is convenient for development but in production, consider using a specific credential (e.g., ManagedIdentityCredential ) to avoid latency issues, unintended credential probing, and potential security risks from fallback mechanisms.\nEnvironment Variables\nFor environment variable configuration specific to each sample, refer to the README in the sample directory ( Python samples | .NET samples ).\nContributor Resources\nContributing Guide\nPython Development Guide\nDesign Documents\nArchitectural Decision Records\nImportant Notes\nImportant\nIf you use Microsoft Agent Framework to build applications that operate with any third-party servers, agents, code, or non-Azure Direct models (“Third-Party Systems”), you do so at your own risk. Third-Party Systems are Non-Microsoft Products under the Microsoft Product Terms and are governed by their own third-party license terms. You are responsible for any usage and associated costs.\nWe recommend reviewing all data being shared with and received from Third-Party Systems and being cognizant of third-party practices for handling, sharing, retention and location of data. It is your responsibility to manage whether your data will flow outside of your organization’s Azure compliance and geographic boundaries and any related implications, and that appropriate permissions, boundaries and approvals are provisioned.\nYou are responsible for carefully reviewing and testing applications you build using Microsoft Agent Framework in the context of your specific use cases, and making all appropriate decisions and customizations. This includes implementing your own responsible AI mitigations such as metaprompt, content filters, or other safety systems, and ensuring your applications meet appropriate quality, reliability, security, and trustworthiness standards. See also: Transparency FAQ\nAbout\nA framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.\naka.ms/agent-framework\nTopics\npython\nsdk\nai\ndotnet\norchestration\nmulti-agent\nworkflows\nagents\nagent-framework\nagentic-ai\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n11.8k\nstars\nWatchers\n105\nwatching\nForks\n2k\nforks\nReport repository\nReleases\n98\npython-1.10.0\nLatest\nJun 30, 2026\n+ 97 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n51.3%\nC#\n45.6%\nTypeScript\n2.6%\nHTML\n0.2%\nPowerShell\n0.1%\nCSS\n0.1%\nOther\n0.1%",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-01/r-112-microsoft-agent-framework.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-01/r-112-microsoft-agent-framework.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-main",
+  "extraction_quality": "high",
+  "extraction_method": "main",
+  "readability_score": 91,
+  "extractor_diagnostics": {
+    "readability_score": 91,
+    "text_length": 10579,
+    "paragraph_count": 121,
+    "sentence_count": 58,
+    "boilerplate_hits": 2,
+    "symbol_ratio": 0.0052,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "main"
+  },
+  "has_full_text": true,
+  "content_length": 10579,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "dc071123fe4ea7fe",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "medium",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "37e50040c1c19806",
+  "content_hash": "dc071123fe4ea7fe",
+  "full_text_hash": "dc071123fe4ea7fe",
+  "semantic_hash": "2c0f19315b6fe51b",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-01T02:33:05.610Z",
+  "last_seen_at": "2026-07-01T02:33:05.610Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "funding",
+      "text": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET. ... Microsoft Agent Framework (MAF) is an open, multi-language framework for building **production-grade AI agents and multi-agent workflows** in **.NET and Python**. ... Micro... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "There was an error while loading.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Please reload this page .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "microsoft agent-framework Public Notifications You must be signed in to change notification settings Fork 2k Star 11.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "8k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 2,444 Commits 2,444 Commits .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "github declarative-agents declarative-agents docs docs dotnet dotnet python python schemas schemas .",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Microsoft",
+      "GitHub"
+    ],
+    "products": [
+      "agent",
+      "agents",
+      "Agent",
+      "Copilot",
+      "Agents",
+      "gpt-5"
+    ],
+    "people": [],
+    "industries": [
+      "开发者工具",
+      "企业服务"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "权限 / 安全治理",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "发布 / 推出",
+      "部署 / 上线",
+      "融资 / 投资"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "财务 / 预算",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "2",
+      "11.8",
+      "444",
+      "30 m",
+      "5.4",
+      "105",
+      "98",
+      "1.10"
+    ],
+    "quotes": [
+      "FOUNDRY_PROJECT_ENDPOINT",
+      "FOUNDRY_MODEL_DEPLOYMENT_NAME",
+      "HaikuAgent",
+      "You are an upbeat assistant that writes beautifully.",
+      "Write a haiku about Microsoft Agent Framework."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET. ... Microsoft Agent Framework (MAF) is an open, multi-language framework for building **production-grade AI agents and multi-agent workflows** in **.NET and Python**. ... Micro... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem",
+      "There was an error while loading.",
+      "Please reload this page ."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# microsoft/agent-framework\n\n- raw_id: R-112\n- original_url: https://github.com/microsoft/agent-framework?WT.mc_id=DT-MVP-5000570\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-01T02:33:05.610Z\n\n## clean_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nmicrosoft\nagent-framework\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n2k\nStar\n11.8k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n2,444 Commits\n2,444 Commits\n.devcontainer\n.devcontainer\n.github\n.github\ndeclarative-agents\ndeclarative-agents\ndocs\ndocs\ndotnet\ndotnet\npython\npython\nschemas\nschemas\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCOMMUNITY.md\nCOMMUNITY.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSUPPORT.md\nSUPPORT.md\nTRANSPARENCY_FAQ.md\nTRANSPARENCY_FAQ.md\nwf-source-gen-plan.md\nwf-source-gen-plan.md\nView all files\nRepository files navigation\nWelcome to Microsoft Agent Framework!\nMicrosoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python .\nMicrosoft Agent Framework is built for teams taking agents from prototype to production. It provides a consistent foundation for building, orchestrating, and operating agent systems across Python and .NET, while keeping architecture choices open as requirements evolve, and supports a broad ecosystem including Microsoft Foundry, Azure OpenAI, OpenAI, and the GitHub Copilot SDK, with samples and hosting patterns for both local development and cloud deployment.\nWatch the full Agent Framework introduction (30 min)\nIs this the right framework for you?\nMAF is a strong fit if you:\nare building agents and workflows you expect to run in production,\nneed orchestration beyond a single prompt or stateless chat loop,\nwant graph-based patterns such as sequential, concurrent, handoff, and group collaboration,\ncare about durability, restartability, observability, governance, or human-in-the-loop control,\nneed provider flexibility so your architecture can evolve without major rewrites.\nKey Features\nExplore new MAF capabilities and real implementation patterns on the official blog .\nPython and C#/.NET Support : Full framework support for both Python and C#/.NET implementations with consistent APIs\nPython packages | .NET source\nMultiple Agent Provider Support : Support for various LLM providers with more being added continuously\nPython examples | .NET examples\nMiddleware : Flexible middleware system for request/response processing, exception handling, and custom pipelines\nPython middleware | .NET middleware\nOrchestration Patterns & Workflows : Build multi-agent systems with graph-based workflows supporting sequential, concurrent, handoff, and group collaboration patterns; includes checkpointing, streaming, human-in-the-loop, and time-travel\nPython workflows | .NET workflows\nFoundry Hosted Agents (new) : Deploy and host your agents to Foundry-hosted infrastructure with just 2 additional lines of code\nPython samples | .NET samples\nObservability : Built-in OpenTelemetry integration for distributed tracing, monitoring, and debugging\nPython observability | .NET telemetry\nDeclarative Agents : Define agents using YAML for faster setup and versioning\nDeclarative agent samples\nAgent Skills : Build domain-specific knowledge bases from multiple sources—files, inline code, class libraries—for agents to discover and use\nSkills design\nAF Labs : Experimental packages for cutting-edge features including benchmarking, reinforcement learning, and research initiatives\nLabs directory\nDevUI : Interactive developer UI for agent development, testing, and debugging workflows\nSee the DevUI in action\nTable of Contents\nGetting Started\nInstallation\nLearning Resources\nQuickstart\nBasic Agent - Python\nBasic Agent - .NET\nMore Examples & Samples\nCommunity & Feedback\nTroubleshooting\nContributor Resources\nGetting Started\nInstallation\nPython\npip install agent-framework\n# This will install all sub-packages, see `python/packages` for individual packages.\n# It may take a minute on first install on Windows.\n.NET\ndotnet add package Microsoft.Agents.AI\n# For Foundry integration (used in the .NET quickstart below):\ndotnet add package Microsoft.Agents.AI.Foundry\ndotnet add package Azure.AI.Projects\ndotnet add package Azure.Identity\nLearning Resources\nOverview - High level overview of the framework\nQuick Start - Get started with a simple agent\nTutorials - Step by step tutorials\nUser Guide - In-depth user guide for building agents and workflows\nMigration from Semantic Kernel - Guide to migrate from Semantic Kernel\nMigration from AutoGen - Guide to migrate from AutoGen\nQuickstart\nBasic Agent - Python\nCreate a simple Azure Responses Agent that writes a haiku about the Microsoft Agent Framework\n# pip install agent-framework\n# Use `az login` to authenticate with Azure CLI\nimport os\nimport asyncio\nfrom agent_framework import Agent\nfrom agent_framework . foundry import FoundryChatClient\nfrom azure . identity import AzureCliCredential\nasync def main ():\n# Initialize a chat agent with Microsoft Foundry\n# the endpoint, deployment name, and api version can be set via environment variables\n# or they can be passed in directly to the FoundryChatClient constructor\nagent = Agent (\nclient = FoundryChatClient (\ncredential = AzureCliCredential (),\n# project_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\n# model=os.environ[\"FOUNDRY_MODEL_DEPLOYMENT_NAME\"],\n),\nname = \"HaikuAgent\" ,\ninstructions = \"You are an upbeat assistant that writes beautifully.\" ,\nprint ( await agent . run ( \"Write a haiku about Microsoft Agent Framework.\" ))\nif __name__ == \"__main__\" :\nasyncio . run ( main ())\nBasic Agent - .NET\nCreate a simple Agent, using Microsoft Foundry that writes a haiku about the Microsoft Agent Framework\n// This sample shows how to create and run a basic agent with AIProjectClient.AsAIAgent(...).\nusing Azure . AI . Projects ;\nusing Azure . Identity ;\nusing Microsoft . Agents . AI ;\nstring endpoint = Environment . GetEnvironmentVariable ( \"AZURE_AI_PROJECT_ENDPOINT\" ) ?? throw new InvalidOperationException ( \"AZURE_AI_PROJECT_ENDPOINT is not set.\" ) ;\nstring deploymentName = Environment . GetEnvironmentVariable ( \"AZURE_AI_MODEL_DEPLOYMENT_NAME\" ) ?? \"gpt-5.4-mini\" ;\nAIAgent agent =\nnew AIProjectClient ( new Uri ( endpoint ) , new DefaultAzureCredential ( ) )\n. AsAIAgent ( model : deploymentName , instructions : \"You are an upbeat assistant that writes beautifully.\" , name : \"HaikuAgent\" ) ;\n// Once you have the agent, you can invoke it like any other AIAgent.\nConsole . WriteLine ( await agent . RunAsync ( \"Write a haiku about Microsoft Agent Framework.\" ) ) ;\nMore Examples & Samples\nPython\nGetting Started : progressive tutorial from hello-world to hosting\nAgent Concepts : deep-dive samples by topic (tools, middleware, providers, etc.)\nWorkflows : workflow creation and integration with agents\nHosting : A2A, Azure Functions, Durable Task hosting\nEnd-to-End : full applications, evaluation, and demos\n.NET\nGetting Started : progressive tutorial from hello agent to hosting\nAgent Concepts : basic agent creation and tool usage\nAgent Providers : samples showing different agent providers\nWorkflows : advanced multi-agent patterns and workflow orchestration\nHosting : A2A, Durable Agents, Durable Workflows\nEnd-to-End : full applications and demos\nCommunity & Feedback\nFound a bug? File a GitHub issue to help us improve.\nEnjoying MAF? to show your support and help others discover the project.\nHave questions? Join our Discord or visit weekly office hours .\nTroubleshooting\nAuthentication\nProblem\nCause\nFix\nAuthentication errors when using Azure credentials\nNot signed in to Azure CLI\nRun az login before starting your app\nAPI key errors\nWrong or missing API key\nVerify the key and ensure it's for the correct resource/provider\nTip: DefaultAzureCredential is convenient for development but in production, consider using a specific credential (e.g., ManagedIdentityCredential ) to avoid latency issues, unintended credential probing, and potential security risks from fallback mechanisms.\nEnvironment Variables\nFor environment variable configuration specific to each sample, refer to the README in the sample directory ( Python samples | .NET samples ).\nContributor Resources\nContributing Guide\nPython Development Guide\nDesign Documents\nArchitectural Decision Records\nImportant Notes\nImportant\nIf you use Microsoft Agent Framework to build applications that operate with any third-party servers, agents, code, or non-Azure Direct models (“Third-Party Systems”), you do so at your own risk. Third-Party Systems are Non-Microsoft Products under the Microsoft Product Terms and are governed by their own third-party license terms. You are responsible for any usage and associated costs.\nWe recommend reviewing all data being shared with and received from Third-Party Systems and being cognizant of third-party practices for handling, sharing, retention and location of data. It is your responsibility to manage whether your data will flow outside of your organization’s Azure compliance and geographic boundaries and any related implications, and that appropriate permissions, boundaries and approvals are provisioned.\nYou are responsible for carefully reviewing and testing applications you build using Microsoft Agent Framework in the context of your specific use cases, and making all appropriate decisions and customizations. This includes implementing your own responsible AI mitigations such as metaprompt, content filters, or other safety systems, and ensuring your applications meet appropriate quality, reliability, security, and trustworthiness standards. See also: Transparency FAQ\nAbout\nA framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.\naka.ms/agent-framework\nTopics\npython\nsdk\nai\ndotnet\norchestration\nmulti-agent\nworkflows\nagents\nagent-framework\nagentic-ai\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n11.8k\nstars\nWatchers\n105\nwatching\nForks\n2k\nforks\nReport repository\nReleases\n98\npython-1.10.0\nLatest\nJun 30, 2026\n+ 97 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n51.3%\nC#\n45.6%\nTypeScript\n2.6%\nHTML\n0.2%\nPowerShell\n0.1%\nCSS\n0.1%\nOther\n0.1%\n\n## full_text\n\nUh oh!\nThere was an error while loading. Please reload this page .\nmicrosoft\nagent-framework\nPublic\nNotifications\nYou must be signed in to change notification settings\nFork\n2k\nStar\n11.8k\nmain\nBranches Tags\nGo to file\nCode Open more actions menu\nFolders and files\nName Name Last commit message\nLast commit date\nLatest commit\nHistory\n2,444 Commits\n2,444 Commits\n.devcontainer\n.devcontainer\n.github\n.github\ndeclarative-agents\ndeclarative-agents\ndocs\ndocs\ndotnet\ndotnet\npython\npython\nschemas\nschemas\n.gitattributes\n.gitattributes\n.gitignore\n.gitignore\nCODE_OF_CONDUCT.md\nCODE_OF_CONDUCT.md\nCOMMUNITY.md\nCOMMUNITY.md\nCONTRIBUTING.md\nCONTRIBUTING.md\nLICENSE\nLICENSE\nREADME.md\nREADME.md\nSECURITY.md\nSECURITY.md\nSUPPORT.md\nSUPPORT.md\nTRANSPARENCY_FAQ.md\nTRANSPARENCY_FAQ.md\nwf-source-gen-plan.md\nwf-source-gen-plan.md\nView all files\nRepository files navigation\nWelcome to Microsoft Agent Framework!\nMicrosoft Agent Framework (MAF) is an open, multi-language framework for building production-grade AI agents and multi-agent workflows in .NET and Python .\nMicrosoft Agent Framework is built for teams taking agents from prototype to production. It provides a consistent foundation for building, orchestrating, and operating agent systems across Python and .NET, while keeping architecture choices open as requirements evolve, and supports a broad ecosystem including Microsoft Foundry, Azure OpenAI, OpenAI, and the GitHub Copilot SDK, with samples and hosting patterns for both local development and cloud deployment.\nWatch the full Agent Framework introduction (30 min)\nIs this the right framework for you?\nMAF is a strong fit if you:\nare building agents and workflows you expect to run in production,\nneed orchestration beyond a single prompt or stateless chat loop,\nwant graph-based patterns such as sequential, concurrent, handoff, and group collaboration,\ncare about durability, restartability, observability, governance, or human-in-the-loop control,\nneed provider flexibility so your architecture can evolve without major rewrites.\nKey Features\nExplore new MAF capabilities and real implementation patterns on the official blog .\nPython and C#/.NET Support : Full framework support for both Python and C#/.NET implementations with consistent APIs\nPython packages | .NET source\nMultiple Agent Provider Support : Support for various LLM providers with more being added continuously\nPython examples | .NET examples\nMiddleware : Flexible middleware system for request/response processing, exception handling, and custom pipelines\nPython middleware | .NET middleware\nOrchestration Patterns & Workflows : Build multi-agent systems with graph-based workflows supporting sequential, concurrent, handoff, and group collaboration patterns; includes checkpointing, streaming, human-in-the-loop, and time-travel\nPython workflows | .NET workflows\nFoundry Hosted Agents (new) : Deploy and host your agents to Foundry-hosted infrastructure with just 2 additional lines of code\nPython samples | .NET samples\nObservability : Built-in OpenTelemetry integration for distributed tracing, monitoring, and debugging\nPython observability | .NET telemetry\nDeclarative Agents : Define agents using YAML for faster setup and versioning\nDeclarative agent samples\nAgent Skills : Build domain-specific knowledge bases from multiple sources—files, inline code, class libraries—for agents to discover and use\nSkills design\nAF Labs : Experimental packages for cutting-edge features including benchmarking, reinforcement learning, and research initiatives\nLabs directory\nDevUI : Interactive developer UI for agent development, testing, and debugging workflows\nSee the DevUI in action\nTable of Contents\nGetting Started\nInstallation\nLearning Resources\nQuickstart\nBasic Agent - Python\nBasic Agent - .NET\nMore Examples & Samples\nCommunity & Feedback\nTroubleshooting\nContributor Resources\nGetting Started\nInstallation\nPython\npip install agent-framework\n# This will install all sub-packages, see `python/packages` for individual packages.\n# It may take a minute on first install on Windows.\n.NET\ndotnet add package Microsoft.Agents.AI\n# For Foundry integration (used in the .NET quickstart below):\ndotnet add package Microsoft.Agents.AI.Foundry\ndotnet add package Azure.AI.Projects\ndotnet add package Azure.Identity\nLearning Resources\nOverview - High level overview of the framework\nQuick Start - Get started with a simple agent\nTutorials - Step by step tutorials\nUser Guide - In-depth user guide for building agents and workflows\nMigration from Semantic Kernel - Guide to migrate from Semantic Kernel\nMigration from AutoGen - Guide to migrate from AutoGen\nQuickstart\nBasic Agent - Python\nCreate a simple Azure Responses Agent that writes a haiku about the Microsoft Agent Framework\n# pip install agent-framework\n# Use `az login` to authenticate with Azure CLI\nimport os\nimport asyncio\nfrom agent_framework import Agent\nfrom agent_framework . foundry import FoundryChatClient\nfrom azure . identity import AzureCliCredential\nasync def main ():\n# Initialize a chat agent with Microsoft Foundry\n# the endpoint, deployment name, and api version can be set via environment variables\n# or they can be passed in directly to the FoundryChatClient constructor\nagent = Agent (\nclient = FoundryChatClient (\ncredential = AzureCliCredential (),\n# project_endpoint=os.environ[\"FOUNDRY_PROJECT_ENDPOINT\"],\n# model=os.environ[\"FOUNDRY_MODEL_DEPLOYMENT_NAME\"],\n),\nname = \"HaikuAgent\" ,\ninstructions = \"You are an upbeat assistant that writes beautifully.\" ,\nprint ( await agent . run ( \"Write a haiku about Microsoft Agent Framework.\" ))\nif __name__ == \"__main__\" :\nasyncio . run ( main ())\nBasic Agent - .NET\nCreate a simple Agent, using Microsoft Foundry that writes a haiku about the Microsoft Agent Framework\n// This sample shows how to create and run a basic agent with AIProjectClient.AsAIAgent(...).\nusing Azure . AI . Projects ;\nusing Azure . Identity ;\nusing Microsoft . Agents . AI ;\nstring endpoint = Environment . GetEnvironmentVariable ( \"AZURE_AI_PROJECT_ENDPOINT\" ) ?? throw new InvalidOperationException ( \"AZURE_AI_PROJECT_ENDPOINT is not set.\" ) ;\nstring deploymentName = Environment . GetEnvironmentVariable ( \"AZURE_AI_MODEL_DEPLOYMENT_NAME\" ) ?? \"gpt-5.4-mini\" ;\nAIAgent agent =\nnew AIProjectClient ( new Uri ( endpoint ) , new DefaultAzureCredential ( ) )\n. AsAIAgent ( model : deploymentName , instructions : \"You are an upbeat assistant that writes beautifully.\" , name : \"HaikuAgent\" ) ;\n// Once you have the agent, you can invoke it like any other AIAgent.\nConsole . WriteLine ( await agent . RunAsync ( \"Write a haiku about Microsoft Agent Framework.\" ) ) ;\nMore Examples & Samples\nPython\nGetting Started : progressive tutorial from hello-world to hosting\nAgent Concepts : deep-dive samples by topic (tools, middleware, providers, etc.)\nWorkflows : workflow creation and integration with agents\nHosting : A2A, Azure Functions, Durable Task hosting\nEnd-to-End : full applications, evaluation, and demos\n.NET\nGetting Started : progressive tutorial from hello agent to hosting\nAgent Concepts : basic agent creation and tool usage\nAgent Providers : samples showing different agent providers\nWorkflows : advanced multi-agent patterns and workflow orchestration\nHosting : A2A, Durable Agents, Durable Workflows\nEnd-to-End : full applications and demos\nCommunity & Feedback\nFound a bug? File a GitHub issue to help us improve.\nEnjoying MAF? to show your support and help others discover the project.\nHave questions? Join our Discord or visit weekly office hours .\nTroubleshooting\nAuthentication\nProblem\nCause\nFix\nAuthentication errors when using Azure credentials\nNot signed in to Azure CLI\nRun az login before starting your app\nAPI key errors\nWrong or missing API key\nVerify the key and ensure it's for the correct resource/provider\nTip: DefaultAzureCredential is convenient for development but in production, consider using a specific credential (e.g., ManagedIdentityCredential ) to avoid latency issues, unintended credential probing, and potential security risks from fallback mechanisms.\nEnvironment Variables\nFor environment variable configuration specific to each sample, refer to the README in the sample directory ( Python samples | .NET samples ).\nContributor Resources\nContributing Guide\nPython Development Guide\nDesign Documents\nArchitectural Decision Records\nImportant Notes\nImportant\nIf you use Microsoft Agent Framework to build applications that operate with any third-party servers, agents, code, or non-Azure Direct models (“Third-Party Systems”), you do so at your own risk. Third-Party Systems are Non-Microsoft Products under the Microsoft Product Terms and are governed by their own third-party license terms. You are responsible for any usage and associated costs.\nWe recommend reviewing all data being shared with and received from Third-Party Systems and being cognizant of third-party practices for handling, sharing, retention and location of data. It is your responsibility to manage whether your data will flow outside of your organization’s Azure compliance and geographic boundaries and any related implications, and that appropriate permissions, boundaries and approvals are provisioned.\nYou are responsible for carefully reviewing and testing applications you build using Microsoft Agent Framework in the context of your specific use cases, and making all appropriate decisions and customizations. This includes implementing your own responsible AI mitigations such as metaprompt, content filters, or other safety systems, and ensuring your applications meet appropriate quality, reliability, security, and trustworthiness standards. See also: Transparency FAQ\nAbout\nA framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.\naka.ms/agent-framework\nTopics\npython\nsdk\nai\ndotnet\norchestration\nmulti-agent\nworkflows\nagents\nagent-framework\nagentic-ai\nResources\nReadme\nLicense\nMIT license\nCode of conduct\nCode of conduct\nContributing\nContributing\nSecurity policy\nSecurity policy\nUh oh!\nThere was an error while loading. Please reload this page .\nActivity\nCustom properties\nStars\n11.8k\nstars\nWatchers\n105\nwatching\nForks\n2k\nforks\nReport repository\nReleases\n98\npython-1.10.0\nLatest\nJun 30, 2026\n+ 97 releases\nPackages\nUh oh!\nThere was an error while loading. Please reload this page .\nUh oh!\nThere was an error while loading. Please reload this page .\nContributors\nUh oh!\nThere was an error while loading. Please reload this page .\nLanguages\nPython\n51.3%\nC#\n45.6%\nTypeScript\n2.6%\nHTML\n0.2%\nPowerShell\n0.1%\nCSS\n0.1%\nOther\n0.1%\n\n## extraction_diagnostics\n\n- extraction_method: main\n- readability_score: 91\n- fetch_status: fetched-readable-text-main\n- extraction_quality: high\n\n## key_excerpts\n\n1. [funding / signal_card_candidate, relationship_graph_input, trend_candidate_context / high] A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET. ... Microsoft Agent Framework (MAF) is an open, multi-language framework for building **production-grade AI agents and multi-agent workflows** in **.NET and Python**. ... Micro... / query=AI implementation startup funding enterprise workflow / intent=find_startups / path=developer_ecosystem\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] There was an error while loading.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Please reload this page .\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] microsoft agent-framework Public Notifications You must be signed in to change notification settings Fork 2k Star 11.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] 8k main Branches Tags Go to file Code Open more actions menu Folders and files Name Name Last commit message Last commit date Latest commit History 2,444 Commits 2,444 Commits .\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] github declarative-agents declarative-agents docs docs dotnet dotnet python python schemas schemas .\n"
+}

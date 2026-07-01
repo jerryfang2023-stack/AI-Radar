@@ -1,8 +1,8 @@
 window.WaveSightTopicCenter = {
   "meta": {
     "version": "V2.2.2-source-title",
-    "date": "2026-06-30",
-    "generatedAt": "2026-06-30T06:54:26.251Z",
+    "date": "2026-07-01",
+    "generatedAt": "2026-07-01T03:37:30.184Z",
     "source": "business-signals + first-line-viewpoints + community-intelligence",
     "rule": "boss_decision_topic_engine",
     "ruleLabel": "老板决策型选题机制",
@@ -16,8 +16,8 @@ window.WaveSightTopicCenter = {
       "styleFit": 5
     },
     "inputCounts": {
-      "businessSignals": 10,
-      "firstLineViewpoints": 3,
+      "businessSignals": 5,
+      "firstLineViewpoints": 2,
       "communityItems": 61
     },
     "sources": {
@@ -30,7 +30,7 @@ window.WaveSightTopicCenter = {
       "big_small_contrast": 1,
       "person_story": 1
     },
-    "leadTopicId": "money_leak-agents-sdk-增加后台子智能体和统一回合入口"
+    "leadTopicId": "money_leak-英国职场ai采用率翻倍-仅15-ai先锋-获得晋升加薪优势"
   },
   "sources": [
     {
@@ -83,6 +83,341 @@ window.WaveSightTopicCenter = {
     }
   ],
   "topics": [
+    {
+      "id": "money_leak-英国职场ai采用率翻倍-仅15-ai先锋-获得晋升加薪优势",
+      "sourceId": "money_leak",
+      "sourceName": "漏钱型",
+      "sourceDesc": "订单入口、转化漏斗、线索流失",
+      "type": "boss_decision_topic",
+      "title": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
+      "spreadTitle": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
+      "audience": "企业老板 / 创业者 / 业务负责人",
+      "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
+      "relevance": "原始来源标题显示：英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势。；社群里也出现了“用 Codex + Obsidian，把装修行业经…”这类一线反馈。",
+      "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
+      "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
+      "oldFrame": "AI 是一个提效工具。",
+      "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
+      "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
+      "evidence": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势；用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "sourceInputs": {
+        "businessSignals": [
+          {
+            "kind": "business_signal",
+            "id": "SIG-20260701-A03",
+            "title": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
+            "source": "Google Blog：AI（RSS）",
+            "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+            "note": "原始来源标题显示：英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势。"
+          }
+        ],
+        "viewpoints": [],
+        "communityItems": [
+          {
+            "kind": "community_intelligence",
+            "id": "e9b09a995dc9e3",
+            "title": "用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
+            "source": "生财有术",
+            "url": "https://scys.com/",
+            "note": "用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业 不知道有没有人和我一样：刚开始看生财项目帖时，总觉得别人做副业、做个体创业，好像很容易跑通"
+          }
+        ]
+      },
+      "source": "Google Blog：AI（RSS）",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+      "date": "2026-07-01",
+      "score": 97,
+      "grade": "S",
+      "priority": "公众号主稿",
+      "scoreBreakdown": {
+        "bossPain": 25,
+        "moneyRelation": 25,
+        "talkability": 19,
+        "spreadability": 14,
+        "actionability": 9,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "开头直接问漏钱",
+          "note": "不要先讲 英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+        },
+        {
+          "title": "中段拆入口链路",
+          "note": "看见、点击、咨询、记录、跟进、成交，每一步都能放 AI，但先看哪里漏。"
+        },
+        {
+          "title": "结尾落到老板动作",
+          "note": "让老板今天就拉一张入口表，而不是收藏一堆工具。"
+        }
+      ],
+      "writingStructure": [
+        "开头 3 句内给冲突或数字",
+        "中段按现象 -> 算账 -> 坑 -> 解法推进",
+        "结尾给一句新判断，不复述要点"
+      ],
+      "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
+      "originalTitle": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势"
+    },
+    {
+      "id": "counterintuitive-马斯克抽调-spacex-顶尖星舰和星链工程师-全力攻坚-grok-大模型",
+      "sourceId": "counterintuitive",
+      "sourceName": "反常识型",
+      "sourceDesc": "推翻流行说法，形成可传播判断",
+      "type": "boss_decision_topic",
+      "title": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
+      "spreadTitle": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
+      "audience": "企业老板 / 创业者 / 业务负责人",
+      "core": "反常识点在于：AI 越强，越不是所有人都被替代，而是会拆任务、会验收结果的人更值钱。",
+      "relevance": "原始来源标题显示：马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型。；社群里“小红书工作室3-4人小团队搭建指南：场地/招聘/培…”的讨论也在提醒老板，问题不再只是怎么做。",
+      "bossPain": "工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。",
+      "moneyLine": "工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。",
+      "oldFrame": "追最新 AI 工具。",
+      "newFrame": "先沉淀任务、语料、步骤和验收标准，再让 AI 接手。",
+      "actionHint": "今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。",
+      "evidence": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型；Claude Sonnet 5的新增功能；小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "sourceInputs": {
+        "businessSignals": [
+          {
+            "kind": "business_signal",
+            "id": "SIG-20260701-A05",
+            "title": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
+            "source": "IT之家（RSS）",
+            "url": "https://www.ithome.com/0/970/662.htm",
+            "note": "原始来源标题显示：马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型。"
+          }
+        ],
+        "viewpoints": [
+          {
+            "kind": "first_line_viewpoint",
+            "id": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+            "title": "Claude Sonnet 5的新增功能",
+            "source": "Simon Willison's Blog",
+            "url": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+            "note": "Claude Sonnet 5的新增功能"
+          }
+        ],
+        "communityItems": [
+          {
+            "kind": "community_intelligence",
+            "id": "e88282e8f07759",
+            "title": "小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
+            "source": "生财有术",
+            "url": "https://scys.com/",
+            "note": "小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享 大家好，我叫晓豪，常驻江西吉安，今年是我小红书创业第4年"
+          }
+        ]
+      },
+      "source": "IT之家（RSS）",
+      "url": "https://www.ithome.com/0/970/662.htm",
+      "date": "2026-07-01",
+      "score": 95,
+      "grade": "S",
+      "priority": "公众号主稿",
+      "scoreBreakdown": {
+        "bossPain": 24,
+        "moneyRelation": 23,
+        "talkability": 18,
+        "spreadability": 15,
+        "actionability": 10,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "先打脸工具崇拜",
+          "note": "开头写：买工具不是 AI 转型，能稳定交付结果才算。"
+        },
+        {
+          "title": "中段讲任务拆解",
+          "note": "把提示词、流程、知识库和验收标准放在同一张图里讲。"
+        },
+        {
+          "title": "结尾给金句",
+          "note": "AI 工具不是资产，能反复跑通的任务系统才是资产。"
+        }
+      ],
+      "writingStructure": [
+        "开头 3 句内给冲突或数字",
+        "中段按现象 -> 算账 -> 坑 -> 解法推进",
+        "结尾给一句新判断，不复述要点"
+      ],
+      "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
+      "originalTitle": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型"
+    },
+    {
+      "id": "person_story-运营100多个抖音图文号-我如何在半年做到36万-纯利润",
+      "sourceId": "person_story",
+      "sourceName": "人物故事型",
+      "sourceDesc": "具体人、具体场景、具体结果",
+      "type": "boss_decision_topic",
+      "title": "运营100多个抖音图文号，我如何在半年做到36万+纯利润",
+      "spreadTitle": "运营100多个抖音图文号，我如何在半年做到36万+纯利润",
+      "audience": "企业老板 / 创业者 / 业务负责人",
+      "core": "人物故事的价值不在鸡汤，而在把一个抽象趋势压缩成老板能看懂的场景、成本和选择。",
+      "relevance": "运营100多个抖音图文号，我如何在半年做到36万+纯利润 各位圈友好，我是L-川，在厦门这边创业，做短视频矩阵、抖音获客和AI工具实践；这类材料适合做传播入口，再回到老板的业务判断。",
+      "bossPain": "老板不是不关心 AI，而是不愿意看一篇没有人、没有场景、没有结果的技术说明。",
+      "moneyLine": "一个具体人、一件具体事、一个具体结果，比十个工具功能更容易带来咨询和信任。",
+      "oldFrame": "写 AI 就要讲技术和趋势。",
+      "newFrame": "写给老板的 AI 内容，要先有人、有场景、有结果。",
+      "actionHint": "从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。",
+      "evidence": "运营100多个抖音图文号，我如何在半年做到36万+纯利润；马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型；Claude Sonnet 5的新增功能",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "sourceInputs": {
+        "businessSignals": [
+          {
+            "kind": "business_signal",
+            "id": "SIG-20260701-A05",
+            "title": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
+            "source": "IT之家（RSS）",
+            "url": "https://www.ithome.com/0/970/662.htm",
+            "note": "原始来源标题显示：马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型。"
+          }
+        ],
+        "viewpoints": [
+          {
+            "kind": "first_line_viewpoint",
+            "id": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+            "title": "Claude Sonnet 5的新增功能",
+            "source": "Simon Willison's Blog",
+            "url": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+            "note": "Claude Sonnet 5的新增功能"
+          }
+        ],
+        "communityItems": [
+          {
+            "kind": "community_intelligence",
+            "id": "77d6668897ceab",
+            "title": "运营100多个抖音图文号，我如何在半年做到36万+纯利润",
+            "source": "生财有术",
+            "url": "https://scys.com/",
+            "note": "运营100多个抖音图文号，我如何在半年做到36万+纯利润 各位圈友好，我是L-川，在厦门这边创业，做短视频矩阵、抖音获客和AI工具实践"
+          }
+        ]
+      },
+      "source": "生财有术",
+      "url": "https://scys.com/",
+      "date": "2026-07-01",
+      "score": 92,
+      "grade": "S",
+      "priority": "公众号主稿",
+      "scoreBreakdown": {
+        "bossPain": 23,
+        "moneyRelation": 21,
+        "talkability": 20,
+        "spreadability": 14,
+        "actionability": 9,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "用人物场景开头",
+          "note": "不要先讲 AI 趋势，先讲 运营100多个抖音图文号，我如何在半年做到36万+… 这类具体处境。"
+        },
+        {
+          "title": "把故事转成商业判断",
+          "note": "重点不是感动，而是这个故事说明老板该改哪个流程、补哪个能力。"
+        },
+        {
+          "title": "结尾回到老板动作",
+          "note": "让老板知道明天可以拿哪个人、哪个岗位、哪个场景做试点。"
+        }
+      ],
+      "writingStructure": [
+        "开头 3 句内给冲突或数字",
+        "中段按现象 -> 算账 -> 坑 -> 解法推进",
+        "结尾给一句新判断，不复述要点"
+      ],
+      "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
+      "originalTitle": "运营100多个抖音图文号，我如何在半年做到36万+纯利润"
+    },
+    {
+      "id": "save_headcount-claude-science-科研工作台正式上线",
+      "sourceId": "save_headcount",
+      "sourceName": "省人型",
+      "sourceDesc": "少招人、少返工、少加班",
+      "type": "boss_decision_topic",
+      "title": "Claude Science 科研工作台正式上线",
+      "spreadTitle": "Claude Science 科研工作台正式上线",
+      "audience": "企业老板 / 创业者 / 业务负责人",
+      "core": "AI 进入企业的第一步，不是替代一个完整的人，而是接住岗位里反复发生、规则清楚、结果可验收的动作。",
+      "relevance": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在…；这类信号比“AI 很强”更接近老板的组织账。",
+      "bossPain": "人越招越多，流程没有变短，管理成本反而被重复动作拖住。",
+      "moneyLine": "少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。",
+      "oldFrame": "AI 上线就是裁员。",
+      "newFrame": "AI 上线的第一阶段，是把岗位动作拆小，让公司少招重复岗位。",
+      "actionHint": "选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。",
+      "evidence": "Claude Science 科研工作台正式上线；让您的Agent使用镜头刮刀视频录制其工作的视频演示；小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
+      "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
+      "sourceInputs": {
+        "businessSignals": [
+          {
+            "kind": "business_signal",
+            "id": "SIG-20260701-A01",
+            "title": "Claude Science 科研工作台正式上线",
+            "source": "Anthropic：Newsroom（网页）",
+            "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+            "note": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在macOS/Linux本地运行，或通过SSH/HPC远程使用。生成含代码和环境的可审计成果（3D蛋白质结构、基因组浏览器…"
+          }
+        ],
+        "viewpoints": [
+          {
+            "kind": "first_line_viewpoint",
+            "id": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything",
+            "title": "让您的Agent使用镜头刮刀视频录制其工作的视频演示",
+            "source": "Simon Willison's Blog",
+            "url": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything",
+            "note": "让您的Agent使用镜头刮刀视频录制其工作的视频演示"
+          }
+        ],
+        "communityItems": [
+          {
+            "kind": "community_intelligence",
+            "id": "e88282e8f07759",
+            "title": "小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
+            "source": "生财有术",
+            "url": "https://scys.com/",
+            "note": "小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享 大家好，我叫晓豪，常驻江西吉安，今年是我小红书创业第4年"
+          }
+        ]
+      },
+      "source": "Anthropic：Newsroom（网页）",
+      "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+      "date": "2026-07-01",
+      "score": 90,
+      "grade": "S",
+      "priority": "公众号主稿",
+      "scoreBreakdown": {
+        "bossPain": 23,
+        "moneyRelation": 23,
+        "talkability": 16,
+        "spreadability": 13,
+        "actionability": 10,
+        "styleFit": 5
+      },
+      "angles": [
+        {
+          "title": "用岗位动作替代岗位名称",
+          "note": "不要写 AI 替代某个人，写 AI 先替代接听、归档、质检、催办、汇总这类动作。"
+        },
+        {
+          "title": "把省人写成管理账",
+          "note": "老板关心的不是炫技，是少招人、少返工、少培训。"
+        },
+        {
+          "title": "给一个当天可做的小动作",
+          "note": "用 Claude Science 科研工作台正式上线 做例子，把大流程拆成一个可验收动作。"
+        }
+      ],
+      "writingStructure": [
+        "开头 3 句内给冲突或数字",
+        "中段按现象 -> 算账 -> 坑 -> 解法推进",
+        "结尾给一句新判断，不复述要点"
+      ],
+      "forbiddenFrame": "不要写成 AI 功能介绍、工具教程或泛泛趋势分析。",
+      "originalTitle": "Claude Science 科研工作台正式上线"
+    },
     {
       "id": "money_leak-agents-sdk-增加后台子智能体和统一回合入口",
       "sourceId": "money_leak",
@@ -8862,32 +9197,32 @@ window.WaveSightTopicCenter = {
   ],
   "grouped": {
     "lead": {
-      "id": "money_leak-agents-sdk-增加后台子智能体和统一回合入口",
+      "id": "money_leak-英国职场ai采用率翻倍-仅15-ai先锋-获得晋升加薪优势",
       "sourceId": "money_leak",
       "sourceName": "漏钱型",
       "sourceDesc": "订单入口、转化漏斗、线索流失",
       "type": "boss_decision_topic",
-      "title": "Agents SDK 增加后台子智能体和统一回合入口",
-      "spreadTitle": "Agents SDK 增加后台子智能体和统一回合入口",
+      "title": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
+      "spreadTitle": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
       "audience": "企业老板 / 创业者 / 业务负责人",
       "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
-      "relevance": "原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。；社群里也出现了“用 Codex + Obsidian，把装修行业经…”这类一线反馈。",
+      "relevance": "原始来源标题显示：英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势。；社群里也出现了“用 Codex + Obsidian，把装修行业经…”这类一线反馈。",
       "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
       "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
       "oldFrame": "AI 是一个提效工具。",
       "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
       "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
-      "evidence": "Agents SDK 增加后台子智能体和统一回合入口；用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
+      "evidence": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势；用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
       "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
       "sourceInputs": {
         "businessSignals": [
           {
             "kind": "business_signal",
-            "id": "SIG-20260630-A08",
-            "title": "Agents SDK 增加后台子智能体和统一回合入口",
-            "source": "developers.cloudflare.com",
-            "url": "https://developers.cloudflare.com/changelog/post/2026-06-26-agents-sdk-v0170/",
-            "note": "原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。"
+            "id": "SIG-20260701-A03",
+            "title": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
+            "source": "Google Blog：AI（RSS）",
+            "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+            "note": "原始来源标题显示：英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势。"
           }
         ],
         "viewpoints": [],
@@ -8902,9 +9237,9 @@ window.WaveSightTopicCenter = {
           }
         ]
       },
-      "source": "developers.cloudflare.com",
-      "url": "https://developers.cloudflare.com/changelog/post/2026-06-26-agents-sdk-v0170/",
-      "date": "2026-06-30",
+      "source": "Google Blog：AI（RSS）",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+      "date": "2026-07-01",
       "score": 97,
       "grade": "S",
       "priority": "公众号主稿",
@@ -8919,7 +9254,7 @@ window.WaveSightTopicCenter = {
       "angles": [
         {
           "title": "开头直接问漏钱",
-          "note": "不要先讲 Agents SDK 增加后台子智能体和统一回合入口 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+          "note": "不要先讲 英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
         },
         {
           "title": "中段拆入口链路",
@@ -8940,32 +9275,32 @@ window.WaveSightTopicCenter = {
     "byEngine": {
       "money_leak": [
         {
-          "id": "money_leak-agents-sdk-增加后台子智能体和统一回合入口",
+          "id": "money_leak-英国职场ai采用率翻倍-仅15-ai先锋-获得晋升加薪优势",
           "sourceId": "money_leak",
           "sourceName": "漏钱型",
           "sourceDesc": "订单入口、转化漏斗、线索流失",
           "type": "boss_decision_topic",
-          "title": "Agents SDK 增加后台子智能体和统一回合入口",
-          "spreadTitle": "Agents SDK 增加后台子智能体和统一回合入口",
+          "title": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
+          "spreadTitle": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "流量、搜索、来电、表单和私信，本质上都是订单入口。AI 先改变的不是工具栏，而是客户从看见你到联系你的路径。",
-          "relevance": "原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。；社群里也出现了“用 Codex + Obsidian，把装修行业经…”这类一线反馈。",
+          "relevance": "原始来源标题显示：英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势。；社群里也出现了“用 Codex + Obsidian，把装修行业经…”这类一线反馈。",
           "bossPain": "老板最容易忽略的不是没有用 AI，而是客户已经换了入口，公司还在用旧流程接单。",
           "moneyLine": "先算入口漏损，再算模型能力；能把曝光、咨询、跟进接住，AI 才和收入有关。",
           "oldFrame": "AI 是一个提效工具。",
           "newFrame": "AI 正在改写客户入口，入口漏掉就是收入漏掉。",
           "actionHint": "今天先盘点 3 个入口：搜索入口、内容入口、咨询入口，各看一次转化和跟进断点。",
-          "evidence": "Agents SDK 增加后台子智能体和统一回合入口；用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
+          "evidence": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势；用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260630-A08",
-                "title": "Agents SDK 增加后台子智能体和统一回合入口",
-                "source": "developers.cloudflare.com",
-                "url": "https://developers.cloudflare.com/changelog/post/2026-06-26-agents-sdk-v0170/",
-                "note": "原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。"
+                "id": "SIG-20260701-A03",
+                "title": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
+                "source": "Google Blog：AI（RSS）",
+                "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+                "note": "原始来源标题显示：英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势。"
               }
             ],
             "viewpoints": [],
@@ -8980,9 +9315,9 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "developers.cloudflare.com",
-          "url": "https://developers.cloudflare.com/changelog/post/2026-06-26-agents-sdk-v0170/",
-          "date": "2026-06-30",
+          "source": "Google Blog：AI（RSS）",
+          "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+          "date": "2026-07-01",
           "score": 97,
           "grade": "S",
           "priority": "公众号主稿",
@@ -8997,7 +9332,7 @@ window.WaveSightTopicCenter = {
           "angles": [
             {
               "title": "开头直接问漏钱",
-              "note": "不要先讲 Agents SDK 增加后台子智能体和统一回合入口 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
+              "note": "不要先讲 英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋… 多新，先问老板：这个入口今天带来多少咨询、漏掉多少跟进？"
             },
             {
               "title": "中段拆入口链路",
@@ -9018,42 +9353,42 @@ window.WaveSightTopicCenter = {
       ],
       "save_headcount": [
         {
-          "id": "save_headcount-arcade-software-交互式演示-ai-原生团队如何交付",
+          "id": "save_headcount-claude-science-科研工作台正式上线",
           "sourceId": "save_headcount",
           "sourceName": "省人型",
           "sourceDesc": "少招人、少返工、少加班",
           "type": "boss_decision_topic",
-          "title": "Arcade Software 交互式演示：AI 原生团队如何交付",
-          "spreadTitle": "Arcade Software 交互式演示：AI 原生团队如何交付",
+          "title": "Claude Science 科研工作台正式上线",
+          "spreadTitle": "Claude Science 科研工作台正式上线",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "AI 进入企业的第一步，不是替代一个完整的人，而是接住岗位里反复发生、规则清楚、结果可验收的动作。",
-          "relevance": "原始来源标题显示：Arcade Software 交互式演示：AI 原生团队如何交付。；这类信号比“AI 很强”更接近老板的组织账。",
+          "relevance": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在…；这类信号比“AI 很强”更接近老板的组织账。",
           "bossPain": "人越招越多，流程没有变短，管理成本反而被重复动作拖住。",
           "moneyLine": "少招一个重复岗位，或让一个岗位少返工 30%，老板才会觉得 AI 是投入，不是玩具。",
           "oldFrame": "AI 上线就是裁员。",
           "newFrame": "AI 上线的第一阶段，是把岗位动作拆小，让公司少招重复岗位。",
           "actionHint": "选一个岗位，列出每天重复最多的 5 个动作，先交给 AI 试跑其中 1 个。",
-          "evidence": "Arcade Software 交互式演示：AI 原生团队如何交付；Ornith-1.0 ：Agent编码的自构架式LLM；小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
+          "evidence": "Claude Science 科研工作台正式上线；让您的Agent使用镜头刮刀视频录制其工作的视频演示；小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260630-A07",
-                "title": "Arcade Software 交互式演示：AI 原生团队如何交付",
-                "source": "arcade.software",
-                "url": "https://www.arcade.software/post/interactive-demo-ai-native-teams-2026",
-                "note": "原始来源标题显示：Arcade Software 交互式演示：AI 原生团队如何交付。"
+                "id": "SIG-20260701-A01",
+                "title": "Claude Science 科研工作台正式上线",
+                "source": "Anthropic：Newsroom（网页）",
+                "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+                "note": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在macOS/Linux本地运行，或通过SSH/HPC远程使用。生成含代码和环境的可审计成果（3D蛋白质结构、基因组浏览器…"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
-                "title": "Ornith-1.0 ：Agent编码的自构架式LLM",
+                "id": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything",
+                "title": "让您的Agent使用镜头刮刀视频录制其工作的视频演示",
                 "source": "Simon Willison's Blog",
-                "url": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
-                "note": "Ornith-1.0 ：Agent编码的自构架式LLM"
+                "url": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything",
+                "note": "让您的Agent使用镜头刮刀视频录制其工作的视频演示"
               }
             ],
             "communityItems": [
@@ -9067,9 +9402,9 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "arcade.software",
-          "url": "https://www.arcade.software/post/interactive-demo-ai-native-teams-2026",
-          "date": "2026-06-30",
+          "source": "Anthropic：Newsroom（网页）",
+          "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+          "date": "2026-07-01",
           "score": 90,
           "grade": "S",
           "priority": "公众号主稿",
@@ -9092,7 +9427,7 @@ window.WaveSightTopicCenter = {
             },
             {
               "title": "给一个当天可做的小动作",
-              "note": "用 Arcade Software 交互式演示：AI … 做例子，把大流程拆成一个可验收动作。"
+              "note": "用 Claude Science 科研工作台正式上线 做例子，把大流程拆成一个可验收动作。"
             }
           ],
           "writingStructure": [
@@ -9120,27 +9455,27 @@ window.WaveSightTopicCenter = {
           "oldFrame": "AI 是员工自己研究的新工具。",
           "newFrame": "AI 是同行正在重做经营速度的生产系统。",
           "actionHint": "每周只问团队一个问题：同行哪一个动作已经被 AI 缩短了，我们要不要跟？",
-          "evidence": "用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业；Agents SDK 增加后台子智能体和统一回合入口；Ornith-1.0 ：Agent编码的自构架式LLM",
+          "evidence": "用 Codex + Obsidian，把装修行业经验做成标准化知识库产品，2个月服务18个企业；英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势；Claude Sonnet 5的新增功能",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260630-A08",
-                "title": "Agents SDK 增加后台子智能体和统一回合入口",
-                "source": "developers.cloudflare.com",
-                "url": "https://developers.cloudflare.com/changelog/post/2026-06-26-agents-sdk-v0170/",
-                "note": "原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。"
+                "id": "SIG-20260701-A03",
+                "title": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
+                "source": "Google Blog：AI（RSS）",
+                "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+                "note": "原始来源标题显示：英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
-                "title": "Ornith-1.0 ：Agent编码的自构架式LLM",
+                "id": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+                "title": "Claude Sonnet 5的新增功能",
                 "source": "Simon Willison's Blog",
-                "url": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
-                "note": "Ornith-1.0 ：Agent编码的自构架式LLM"
+                "url": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+                "note": "Claude Sonnet 5的新增功能"
               }
             ],
             "communityItems": [
@@ -9156,7 +9491,7 @@ window.WaveSightTopicCenter = {
           },
           "source": "生财有术",
           "url": "https://scys.com/",
-          "date": "2026-06-30",
+          "date": "2026-07-01",
           "score": 91,
           "grade": "S",
           "priority": "公众号主稿",
@@ -9192,42 +9527,42 @@ window.WaveSightTopicCenter = {
       ],
       "pitfall": [
         {
-          "id": "pitfall-thoughtworks-发布-agent-works-用于治理和运行企业-ai-智能体",
+          "id": "pitfall-claude-science-科研工作台正式上线",
           "sourceId": "pitfall",
           "sourceName": "避坑型",
           "sourceDesc": "工具乱买、权限失控、流程没拆",
           "type": "boss_decision_topic",
-          "title": "Thoughtworks 发布 Agent/works，用于治理和运行企业 AI 智能体",
-          "spreadTitle": "Thoughtworks 发布 Agent/works，用于治理和运行企业 AI 智能体",
+          "title": "Claude Science 科研工作台正式上线",
+          "spreadTitle": "Claude Science 科研工作台正式上线",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "AI 从生成内容走向执行动作后，企业问题从“会不会用”变成“谁审核、谁授权、谁负责”。",
-          "relevance": "原始来源标题显示：Thoughtworks 发布 Agent/works，用于治理和运行企业 AI 智能体。；这类信号适合写给老板看，因为它直接关系到业务风险。",
+          "relevance": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在…；这类信号适合写给老板看，因为它直接关系到业务风险。",
           "bossPain": "AI 一旦能读文件、写内容、调工具、改数据，错误就不只是内容不好，而可能变成业务事故。",
           "moneyLine": "权限没管住，省下的人力钱可能被一次合规、法务或数据事故吃掉。",
           "oldFrame": "AI 越自主越好。",
           "newFrame": "AI 越自主，越要先设计权限、复核和责任人。",
           "actionHint": "先把 AI 员工分成三级：只读、建议、可执行；每一级都写清谁复核。",
-          "evidence": "Thoughtworks 发布 Agent/works，用于治理和运行企业 AI 智能体；表提取程序；小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
+          "evidence": "Claude Science 科研工作台正式上线；Claude Sonnet 5的新增功能；小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260630-A04",
-                "title": "Thoughtworks 发布 Agent/works，用于治理和运行企业 AI 智能体",
-                "source": "prnewswire.com",
-                "url": "https://www.prnewswire.com/news-releases/thoughtworks-launches-agentworks-to-govern-and-run-enterprise-ai-agents-across-any-cloud-302801086.html",
-                "note": "原始来源标题显示：Thoughtworks 发布 Agent/works，用于治理和运行企业 AI 智能体。"
+                "id": "SIG-20260701-A01",
+                "title": "Claude Science 科研工作台正式上线",
+                "source": "Anthropic：Newsroom（网页）",
+                "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+                "note": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在macOS/Linux本地运行，或通过SSH/HPC远程使用。生成含代码和环境的可审计成果（3D蛋白质结构、基因组浏览器…"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "https://simonwillison.net/2026/Jun/29/html-table-extractor/#atom-everything",
-                "title": "表提取程序",
+                "id": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+                "title": "Claude Sonnet 5的新增功能",
                 "source": "Simon Willison's Blog",
-                "url": "https://simonwillison.net/2026/Jun/29/html-table-extractor/#atom-everything",
-                "note": "表提取程序"
+                "url": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+                "note": "Claude Sonnet 5的新增功能"
               }
             ],
             "communityItems": [
@@ -9241,9 +9576,9 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "prnewswire.com",
-          "url": "https://www.prnewswire.com/news-releases/thoughtworks-launches-agentworks-to-govern-and-run-enterprise-ai-agents-across-any-cloud-302801086.html",
-          "date": "2026-06-30",
+          "source": "Anthropic：Newsroom（网页）",
+          "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+          "date": "2026-07-01",
           "score": 88,
           "grade": "A",
           "priority": "公众号主稿",
@@ -9266,7 +9601,7 @@ window.WaveSightTopicCenter = {
             },
             {
               "title": "用当天案例推进",
-              "note": "用 Thoughtworks 发布 Agent/wor… 做钩子，落到企业内部的授权和复核表。"
+              "note": "用 Claude Science 科研工作台正式上线 做钩子，落到企业内部的授权和复核表。"
             }
           ],
           "writingStructure": [
@@ -9279,42 +9614,42 @@ window.WaveSightTopicCenter = {
       ],
       "counterintuitive": [
         {
-          "id": "counterintuitive-agents-sdk-增加后台子智能体和统一回合入口",
+          "id": "counterintuitive-马斯克抽调-spacex-顶尖星舰和星链工程师-全力攻坚-grok-大模型",
           "sourceId": "counterintuitive",
           "sourceName": "反常识型",
           "sourceDesc": "推翻流行说法，形成可传播判断",
           "type": "boss_decision_topic",
-          "title": "Agents SDK 增加后台子智能体和统一回合入口",
-          "spreadTitle": "Agents SDK 增加后台子智能体和统一回合入口",
+          "title": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
+          "spreadTitle": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "反常识点在于：AI 越强，越不是所有人都被替代，而是会拆任务、会验收结果的人更值钱。",
-          "relevance": "原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。；社群里“小红书工作室3-4人小团队搭建指南：场地/招聘/培…”的讨论也在提醒老板，问题不再只是怎么做。",
+          "relevance": "原始来源标题显示：马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型。；社群里“小红书工作室3-4人小团队搭建指南：场地/招聘/培…”的讨论也在提醒老板，问题不再只是怎么做。",
           "bossPain": "工具买了一堆，员工不会拆任务；老板看到结果差，最后误判 AI 不行。",
           "moneyLine": "工具是支出，任务拆解和验收标准是资产。支出会过期，资产能复用。",
           "oldFrame": "追最新 AI 工具。",
           "newFrame": "先沉淀任务、语料、步骤和验收标准，再让 AI 接手。",
           "actionHint": "今天先选一个业务动作，写清输入、步骤、验收标准，再接任何 AI 工具。",
-          "evidence": "Agents SDK 增加后台子智能体和统一回合入口；Ornith-1.0 ：Agent编码的自构架式LLM；小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
+          "evidence": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型；Claude Sonnet 5的新增功能；小红书工作室3-4人小团队搭建指南：场地/招聘/培训/SOP和薪资设计经验分享",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260630-A08",
-                "title": "Agents SDK 增加后台子智能体和统一回合入口",
-                "source": "developers.cloudflare.com",
-                "url": "https://developers.cloudflare.com/changelog/post/2026-06-26-agents-sdk-v0170/",
-                "note": "原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。"
+                "id": "SIG-20260701-A05",
+                "title": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
+                "source": "IT之家（RSS）",
+                "url": "https://www.ithome.com/0/970/662.htm",
+                "note": "原始来源标题显示：马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
-                "title": "Ornith-1.0 ：Agent编码的自构架式LLM",
+                "id": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+                "title": "Claude Sonnet 5的新增功能",
                 "source": "Simon Willison's Blog",
-                "url": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
-                "note": "Ornith-1.0 ：Agent编码的自构架式LLM"
+                "url": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+                "note": "Claude Sonnet 5的新增功能"
               }
             ],
             "communityItems": [
@@ -9328,9 +9663,9 @@ window.WaveSightTopicCenter = {
               }
             ]
           },
-          "source": "developers.cloudflare.com",
-          "url": "https://developers.cloudflare.com/changelog/post/2026-06-26-agents-sdk-v0170/",
-          "date": "2026-06-30",
+          "source": "IT之家（RSS）",
+          "url": "https://www.ithome.com/0/970/662.htm",
+          "date": "2026-07-01",
           "score": 95,
           "grade": "S",
           "priority": "公众号主稿",
@@ -9366,57 +9701,57 @@ window.WaveSightTopicCenter = {
       ],
       "small_role": [
         {
-          "id": "small_role-zendesk-在-relate-2026-发布自主服务劳动力",
+          "id": "small_role-英国职场ai采用率翻倍-仅15-ai先锋-获得晋升加薪优势",
           "sourceId": "small_role",
           "sourceName": "小岗位型",
           "sourceDesc": "客服、销售、财务、标书、运营",
           "type": "boss_decision_topic",
-          "title": "Zendesk 在 Relate 2026 发布自主服务劳动力",
-          "spreadTitle": "Zendesk 在 Relate 2026 发布自主服务劳动力",
+          "title": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
+          "spreadTitle": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "普通老板和服务商的机会，不在宏大平台，而在一个具体岗位、一个明确动作、一个可验收结果里。",
-          "relevance": "原始来源标题显示：Zendesk 在 Relate 2026 发布自主服务劳动力。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
+          "relevance": "原始来源标题显示：英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势。；这类材料说明岗位级 AI 比大而全平台更容易落地。",
           "bossPain": "老板最怕 AI 项目太大、太贵、太慢，最后没人用。",
           "moneyLine": "一个岗位先打穿，比一个平台讲 100 个功能更容易收钱，也更容易复购。",
           "oldFrame": "做一个什么都能干的 AI 平台。",
           "newFrame": "做一个只干一件事但能交付的小岗位 AI 员工。",
           "actionHint": "先从客服、销售跟进、内容分发、资料整理、流程复核里选一个岗位动作。",
-          "evidence": "Zendesk 在 Relate 2026 发布自主服务劳动力；Arcade Software 交互式演示：AI 原生团队如何交付；11期破局行动6月24日10:00正式开启报名 报名时间：6月24日10:00 - 7月3日，7月10日正式开营。",
+          "evidence": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势；Claude Science 科研工作台正式上线；烧了230亿 Token，我终于跑通了一套实体老板也能复制的 AI 变现 SOP",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260630-A05",
-                "title": "Zendesk 在 Relate 2026 发布自主服务劳动力",
-                "source": "cmswire.com",
-                "url": "https://www.cmswire.com/customer-experience/zendesk-unveils-autonomous-ai-workforce-at-relate-2026/",
-                "note": "原始来源标题显示：Zendesk 在 Relate 2026 发布自主服务劳动力。"
+                "id": "SIG-20260701-A03",
+                "title": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
+                "source": "Google Blog：AI（RSS）",
+                "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+                "note": "原始来源标题显示：英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势。"
               },
               {
                 "kind": "business_signal",
-                "id": "SIG-20260630-A07",
-                "title": "Arcade Software 交互式演示：AI 原生团队如何交付",
-                "source": "arcade.software",
-                "url": "https://www.arcade.software/post/interactive-demo-ai-native-teams-2026",
-                "note": "原始来源标题显示：Arcade Software 交互式演示：AI 原生团队如何交付。"
+                "id": "SIG-20260701-A01",
+                "title": "Claude Science 科研工作台正式上线",
+                "source": "Anthropic：Newsroom（网页）",
+                "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+                "note": "Anthropic 推出 AI 科研工作台 Claude Science，整合常用工具与计算资源，支持从文献分析到多步骤研究的全流程。提供超 60 项预配置技能与连接器，覆盖基因组学、单细胞、蛋白质组学、结构生物学、化学信息学等领域；可在macOS/Linux本地运行，或通过SSH/HPC远程使用。生成含代码和环境的可审计成果（3D蛋白质结构、基因组浏览器…"
               }
             ],
             "viewpoints": [],
             "communityItems": [
               {
                 "kind": "community_intelligence",
-                "id": "0bd24536d64be0",
-                "title": "11期破局行动6月24日10:00正式开启报名 报名时间：6月24日10:00 - 7月3日，7月10日正式开营。",
-                "source": "AI破局",
-                "url": "https://aipoju.com/index",
-                "note": "11期破局行动6月24日10:00正式开启报名 报名时间：6月24日10:00 - 7月3日，7月10日正式开营"
+                "id": "26bc3b646a8c15",
+                "title": "烧了230亿 Token，我终于跑通了一套实体老板也能复制的 AI 变现 SOP",
+                "source": "生财有术",
+                "url": "https://scys.com/articleDetail/xq_topic/55522584415221514",
+                "note": "烧了230亿 Token，我终于跑通了一套实体老板也能复制的 AI 变现 SOP 当我把这个 AI 小程序演示给美容院老板看时，他的第一反应是：“我靠，现在还能这样做"
               }
             ]
           },
-          "source": "cmswire.com",
-          "url": "https://www.cmswire.com/customer-experience/zendesk-unveils-autonomous-ai-workforce-at-relate-2026/",
-          "date": "2026-06-30",
+          "source": "Google Blog：AI（RSS）",
+          "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+          "date": "2026-07-01",
           "score": 97,
           "grade": "S",
           "priority": "公众号主稿",
@@ -9452,58 +9787,58 @@ window.WaveSightTopicCenter = {
       ],
       "big_small_contrast": [
         {
-          "id": "big_small_contrast-agents-sdk-增加后台子智能体和统一回合入口",
+          "id": "big_small_contrast-英国职场ai采用率翻倍-仅15-ai先锋-获得晋升加薪优势",
           "sourceId": "big_small_contrast",
           "sourceName": "大小对照型",
           "sourceDesc": "大融资对照小生意，大模型对照小岗位",
           "type": "boss_decision_topic",
-          "title": "Agents SDK 增加后台子智能体和统一回合入口",
-          "spreadTitle": "Agents SDK 增加后台子智能体和统一回合入口",
+          "title": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
+          "spreadTitle": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
           "audience": "企业老板 / 创业者 / 业务负责人",
           "core": "大新闻负责告诉你资本往哪里押，小机会负责告诉你老板明天愿意为什么付钱。",
-          "relevance": "原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。；同时社群里的“00正式开启报名 报名时间：6月24日10:00 …”说明一线需求还在配置、流程和交付。",
+          "relevance": "原始来源标题显示：英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势。；同时社群里的“烧了230亿 Token，我终于跑通了一套实体老板…”说明一线需求还在配置、流程和交付。",
           "bossPain": "老板看不懂大融资，但能理解谁帮他把一个具体业务动作跑起来。",
           "moneyLine": "大公司赚基础设施的钱，小服务商赚落地第一公里的钱。",
           "oldFrame": "AI 创业只能跟大模型和融资有关。",
           "newFrame": "普通人的 AI 机会在帮老板跨过配置、流程和交付门槛。",
           "actionHint": "把服务产品化：诊断一个流程、配置一套工具、交付一个可复用动作。",
-          "evidence": "Agents SDK 增加后台子智能体和统一回合入口；Ornith-1.0 ：Agent编码的自构架式LLM；11期破局行动6月24日10:00正式开启报名 报名时间：6月24日10:00 - 7月3日，7月10日正式开营。",
+          "evidence": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势；让您的Agent使用镜头刮刀视频录制其工作的视频演示；烧了230亿 Token，我终于跑通了一套实体老板也能复制的 AI 变现 SOP",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260630-A08",
-                "title": "Agents SDK 增加后台子智能体和统一回合入口",
-                "source": "developers.cloudflare.com",
-                "url": "https://developers.cloudflare.com/changelog/post/2026-06-26-agents-sdk-v0170/",
-                "note": "原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。"
+                "id": "SIG-20260701-A03",
+                "title": "英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势",
+                "source": "Google Blog：AI（RSS）",
+                "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+                "note": "原始来源标题显示：英国职场AI采用率翻倍，仅15%\"AI先锋\"获得晋升加薪优势。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
-                "title": "Ornith-1.0 ：Agent编码的自构架式LLM",
+                "id": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything",
+                "title": "让您的Agent使用镜头刮刀视频录制其工作的视频演示",
                 "source": "Simon Willison's Blog",
-                "url": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
-                "note": "Ornith-1.0 ：Agent编码的自构架式LLM"
+                "url": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything",
+                "note": "让您的Agent使用镜头刮刀视频录制其工作的视频演示"
               }
             ],
             "communityItems": [
               {
                 "kind": "community_intelligence",
-                "id": "0bd24536d64be0",
-                "title": "11期破局行动6月24日10:00正式开启报名 报名时间：6月24日10:00 - 7月3日，7月10日正式开营。",
-                "source": "AI破局",
-                "url": "https://aipoju.com/index",
-                "note": "11期破局行动6月24日10:00正式开启报名 报名时间：6月24日10:00 - 7月3日，7月10日正式开营"
+                "id": "26bc3b646a8c15",
+                "title": "烧了230亿 Token，我终于跑通了一套实体老板也能复制的 AI 变现 SOP",
+                "source": "生财有术",
+                "url": "https://scys.com/articleDetail/xq_topic/55522584415221514",
+                "note": "烧了230亿 Token，我终于跑通了一套实体老板也能复制的 AI 变现 SOP 当我把这个 AI 小程序演示给美容院老板看时，他的第一反应是：“我靠，现在还能这样做"
               }
             ]
           },
-          "source": "developers.cloudflare.com",
-          "url": "https://developers.cloudflare.com/changelog/post/2026-06-26-agents-sdk-v0170/",
-          "date": "2026-06-30",
+          "source": "Google Blog：AI（RSS）",
+          "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+          "date": "2026-07-01",
           "score": 93,
           "grade": "S",
           "priority": "公众号主稿",
@@ -9554,27 +9889,27 @@ window.WaveSightTopicCenter = {
           "oldFrame": "写 AI 就要讲技术和趋势。",
           "newFrame": "写给老板的 AI 内容，要先有人、有场景、有结果。",
           "actionHint": "从当天素材里挑一个具体人或具体业务场景，按“处境-动作-结果-老板判断”写。",
-          "evidence": "运营100多个抖音图文号，我如何在半年做到36万+纯利润；Agents SDK 增加后台子智能体和统一回合入口；Ornith-1.0 ：Agent编码的自构架式LLM",
+          "evidence": "运营100多个抖音图文号，我如何在半年做到36万+纯利润；马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型；Claude Sonnet 5的新增功能",
           "evidenceBoundary": "商业信号用于事实底座；一线观点和社群情报只作为传播线索与需求线索，写稿前不得把社群结果直接写成行业事实。",
           "sourceInputs": {
             "businessSignals": [
               {
                 "kind": "business_signal",
-                "id": "SIG-20260630-A08",
-                "title": "Agents SDK 增加后台子智能体和统一回合入口",
-                "source": "developers.cloudflare.com",
-                "url": "https://developers.cloudflare.com/changelog/post/2026-06-26-agents-sdk-v0170/",
-                "note": "原始来源标题显示：Agents SDK 增加后台子智能体和统一回合入口。"
+                "id": "SIG-20260701-A05",
+                "title": "马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型",
+                "source": "IT之家（RSS）",
+                "url": "https://www.ithome.com/0/970/662.htm",
+                "note": "原始来源标题显示：马斯克抽调 SpaceX 顶尖星舰和星链工程师，全力攻坚 Grok 大模型。"
               }
             ],
             "viewpoints": [
               {
                 "kind": "first_line_viewpoint",
-                "id": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
-                "title": "Ornith-1.0 ：Agent编码的自构架式LLM",
+                "id": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+                "title": "Claude Sonnet 5的新增功能",
                 "source": "Simon Willison's Blog",
-                "url": "https://simonwillison.net/2026/Jun/29/ornith/#atom-everything",
-                "note": "Ornith-1.0 ：Agent编码的自构架式LLM"
+                "url": "https://simonwillison.net/2026/Jun/30/claude-sonnet-5/#atom-everything",
+                "note": "Claude Sonnet 5的新增功能"
               }
             ],
             "communityItems": [
@@ -9590,7 +9925,7 @@ window.WaveSightTopicCenter = {
           },
           "source": "生财有术",
           "url": "https://scys.com/",
-          "date": "2026-06-30",
+          "date": "2026-07-01",
           "score": 92,
           "grade": "S",
           "priority": "公众号主稿",

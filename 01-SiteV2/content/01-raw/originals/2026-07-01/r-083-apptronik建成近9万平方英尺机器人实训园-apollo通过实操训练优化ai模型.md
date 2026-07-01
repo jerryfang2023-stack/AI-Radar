@@ -1,0 +1,224 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-083
+title: "Apptronik建成近9万平方英尺机器人实训园，Apollo通过实操训练优化AI模型"
+original_url: "https://www.ithome.com/0/970/782.htm"
+canonical_url: "https://ithome.com/0/970/782.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: case_or_customer
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-06-30T15:13:00.000Z"
+collected_at: 2026-07-01T02:33:05.518Z
+language: mixed
+full_text_hash: c943633bc2c0d1e2
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-01/r-083-apptronik建成近9万平方英尺机器人实训园-apollo通过实操训练优化ai模型.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-01/r-083-apptronik建成近9万平方英尺机器人实训园-apollo通过实操训练优化ai模型.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 69
+extractor_diagnostics: {"readability_score":69,"text_length":1848,"paragraph_count":17,"sentence_count":15,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1848
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"c943633bc2c0d1e2","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"Apptronik建成近9万平方英尺机器人实训园，Apollo通过实操训练优化AI模型","discovery_summary":"人形机器人公司Apptronik在奥斯汀建成近9万平方英尺（约8361平方米）的机器人实训园，其Apollo机器人通过远程操控反复进行装箱、分拣等实操训练，数据用于优化AI模型。公司累计融资约10亿美元，估值超55亿美元。投资方梅赛德斯-奔驰已在工厂部署Apollo，谷歌DeepMind借助Apollo改进机器人AI模型Gemini Robotics。2023年推出的初代Apollo已迭代至二代，身高约1.8米，可举25公斤，续航4小时。公司同步开发双足与轮式机型，目标让机器人进入工厂、服务行业与家庭。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/970/782.htm","discovered_at":"2026-07-01T02:17:38.719Z","rank_on_page":237,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 95d09ecd84ef10e2
+content_hash: c943633bc2c0d1e2
+semantic_hash: 485c808c5047b6e6
+duplicate_of: ""
+first_seen_at: "2026-06-30T15:13:00.000Z"
+last_seen_at: 2026-07-01T02:33:05.518Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":false,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_funding","importance_score":5,"importance_reason":"funding or investment event; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":["Gemini"],"people":[],"industries":["制造 / 工业","企业服务"],"roles":["采购负责人","销售 / 客服"],"workflows":["权限 / 安全治理","采购 / 招投标","部署 / 集成交付"],"business_actions":["发布 / 推出","合作 / 联盟","部署 / 上线","融资 / 投资"],"affected_departments":["IT / 安全","采购","销售 / 客服"],"numbers":["9万","8361","10亿","55亿","2023","1.8","25","4"],"quotes":["正如需要工厂来制造机器人，我们也需要一座数据工厂，产出研发所需的各类训练数据。这里就是机器人的学习乐园。","Optimus 学院","人形机器人就是我们这个时代的个人电脑。如果认同这个判断，那当下行业所处阶段，就相当于上世纪 80 年代初，还停留在文字处理、电子表格刚问世的萌芽期。","我们的愿景是在全球各地布局机器人实训园，未来甚至对公众开放，让所有人亲眼见证未来世界是如何一步步打造而成。"]}
+evidence_seed: {"company_actions":["人形机器人公司Apptronik在奥斯汀建成近9万平方英尺（约8361平方米）的机器人实训园，其Apollo机器人通过远程操控反复进行装箱、分拣等实操训练，数据用于优化AI模型。公司累计融资约10亿美元，估值超55亿美元。投资方梅赛德斯-奔驰已在工厂部署Apollo，谷歌DeepMind借助Apollo改进机器人AI模型Gemini Robotics。2023年推出的初代Apollo已迭代至二代，身高约1.8米，可举25公斤，续航4小时。公司同步开发双足与轮式机型，目标让机器人进入工厂、服务行业与家庭。","IT之家 6 月 30 日消息，机器人上岗前，都得先“上学”。","总部位于得克萨斯州的人形机器人初创企业 Apptronik，投资方包括谷歌与梅赛德斯-奔驰，该公司已在奥斯汀打造了一座“机器人实训园”。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。","可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["采购负责人","销售 / 客服"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"funding","text":"人形机器人公司Apptronik在奥斯汀建成近9万平方英尺（约8361平方米）的机器人实训园，其Apollo机器人通过远程操控反复进行装箱、分拣等实操训练，数据用于优化AI模型。公司累计融资约10亿美元，估值超55亿美元。投资方梅赛德斯-奔驰已在工厂部署Apollo，谷歌DeepMind借助Apollo改进机器人AI模型Gemini Robotics。2023年推出的初代Apollo已迭代至二代，身高约1.8米，可举25公斤，续航4小时。公司同步开发双足与轮式机型，目标让机器人进入工厂、服务行业与家庭。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"IT之家 6 月 30 日消息，机器人上岗前，都得先“上学”。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"funding","text":"总部位于得克萨斯州的人形机器人初创企业 Apptronik，投资方包括谷歌与梅赛德斯-奔驰，该公司已在奥斯汀打造了一座“机器人实训园”。","supports":["signal_card_candidate","relationship_graph_input","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"number","text":"这座仓库占地近 9 万平方英尺（IT之家注：约 8361 平方米），旗下 Apollo 人形机器人在此反复实操各类作业：把箱子装上传送带、将玩具分拣至收纳箱等。","supports":["signal_card_candidate","relationship_graph_input","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"这些机器人大部分时间由人员远程操控。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"实训园全年无休运转，操作人员站在机器人身旁，实时引导、监控它们完成各项实操任务。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+theme: early-direction-signal
+keyword_group: early-direction-signal
+copyright_note: local research archive only
+---
+
+# Apptronik建成近9万平方英尺机器人实训园，Apollo通过实操训练优化AI模型
+
+## clean_text
+
+IT之家 6 月 30 日消息，机器人上岗前，都得先“上学”。
+总部位于得克萨斯州的人形机器人初创企业 Apptronik，投资方包括谷歌与梅赛德斯-奔驰，该公司已在奥斯汀打造了一座“机器人实训园”。这座仓库占地近 9 万平方英尺（IT之家注：约 8361 平方米），旗下 Apollo 人形机器人在此反复实操各类作业：把箱子装上传送带、将玩具分拣至收纳箱等。
+这些机器人大部分时间由人员远程操控。实训园全年无休运转，操作人员站在机器人身旁，实时引导、监控它们完成各项实操任务。实训过程中产生的数据会用于优化充当机器人“大脑”的人工智能模型，最终目标是让人形机器人落地工厂、服务行业与普通家庭，具备实用价值。
+Apptronik 联合创始人兼首席执行官杰夫 · 卡德纳斯表示：“正如需要工厂来制造机器人，我们也需要一座数据工厂，产出研发所需的各类训练数据。这里就是机器人的学习乐园。”
+研发自主运行机器人面临的一大核心难题，是现实场景训练数据严重不足。人工智能聊天机器人依托互联网海量文字、图像数据完成训练，但人形机器人领域尚无规模相当的数据集。这座机器人实训园，正是 Apptronik 为补齐数据短板推出的解决方案。
+埃隆 · 马斯克也采用了相似研发思路。他曾提出为特斯拉 Optimus 人形机器人打造专属“Optimus 学院”，让机器人在院内测试各类作业任务，以此形成数据增长的正向循环。
+Apptronik 2016 年从得克萨斯大学人本机器人实验室分拆独立，初衷是将美国国防部高级研究计划局机器人挑战赛的研发成果商业化。这项军方赛事旨在研发可在灾害现场作业的机器人。公司早期主营对外供应机器人零部件，但卡德纳斯称，企业自始至终的核心目标，是打造通用型人形机器人。
+这家初创企业累计融资约 10 亿美元，企业估值超 55 亿美元（现汇率约合 374.24 亿元人民币）。投资方之一梅赛德斯-奔驰已在自家工厂投入 Apollo 机器人，完成零部件、装配工具归集等简易流水线作业。谷歌旗下人工智能研究部门 DeepMind 也借助 Apollo 机器人，迭代优化谷歌面向机器人领域的人工智能模型 Gemini Robotics。
+Apptronik 于 2023 年推出了初代 Apollo 机器人，目前二代 Apollo 正在迭代研发。卡德纳斯介绍，二代机型升级了电池、电机与传感器，主要用于数据采集和客户试点落地；整机身高约 1.8 米，双手可举起重 55 磅（约 25 公斤）物品，单次续航 4 小时。
+面向商用、计划正式对外销售的第三代 Apollo 机器人尚在开发阶段，卡德纳斯并未透露产品落地时间。
+卡德纳斯将人形机器人行业发展划分为三个阶段：第一阶段验证技术可行性，第二阶段证明客户愿意付费采购产品，第三阶段规模化运营并实现盈利。他认为，整个行业如今正迈入第二阶段。
+“人形机器人就是我们这个时代的个人电脑。如果认同这个判断，那当下行业所处阶段，就相当于上世纪 80 年代初，还停留在文字处理、电子表格刚问世的萌芽期。”卡德纳斯说道。
+人形机器人赛道正逐步走出实验室演示阶段，迈入早期商用落地测试。总部位于圣何塞的 Figure AI 最新估值达 390 亿美元，其人形机器人已开始投放物流仓储中心投入使用；总部坐落于帕洛阿尔托的 1X 公司，则计划今年下半年向普通家庭交付一万台以上人形机器人。
+俄勒冈州的 Agility Robotics 商业化进度领先同行。该企业筹备近期上市，旗下 Digit 人形机器人已入驻九家合作企业厂区，合作方包含亚马逊、丰田以及物流企业 GXO。
+多数人形机器人厂商仅研发双足行走机型，Apptronik 却同步开发了双足款、轮式款两种 Apollo 机型。卡德纳斯长期更看好双足人形机器人的发展潜力，未来它们理论上能够复刻人类全部肢体劳动，但轮式机器人会更早完成批量落地，原因是其安全系数更高。双足机器人躯干需要承载大容量重型电池，能耗更高，一旦倾倒还会产生安全隐患。
+Apptronik 已在全球多家合作客户厂区落地多处机器人实训园，卡德纳斯表示后续还会新建更多园区。他说：“我们的愿景是在全球各地布局机器人实训园，未来甚至对公众开放，让所有人亲眼见证未来世界是如何一步步打造而成。”
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 6 月 30 日消息，机器人上岗前，都得先“上学”。
+总部位于得克萨斯州的人形机器人初创企业 Apptronik，投资方包括谷歌与梅赛德斯-奔驰，该公司已在奥斯汀打造了一座“机器人实训园”。这座仓库占地近 9 万平方英尺（IT之家注：约 8361 平方米），旗下 Apollo 人形机器人在此反复实操各类作业：把箱子装上传送带、将玩具分拣至收纳箱等。
+这些机器人大部分时间由人员远程操控。实训园全年无休运转，操作人员站在机器人身旁，实时引导、监控它们完成各项实操任务。实训过程中产生的数据会用于优化充当机器人“大脑”的人工智能模型，最终目标是让人形机器人落地工厂、服务行业与普通家庭，具备实用价值。
+Apptronik 联合创始人兼首席执行官杰夫 · 卡德纳斯表示：“正如需要工厂来制造机器人，我们也需要一座数据工厂，产出研发所需的各类训练数据。这里就是机器人的学习乐园。”
+研发自主运行机器人面临的一大核心难题，是现实场景训练数据严重不足。人工智能聊天机器人依托互联网海量文字、图像数据完成训练，但人形机器人领域尚无规模相当的数据集。这座机器人实训园，正是 Apptronik 为补齐数据短板推出的解决方案。
+埃隆 · 马斯克也采用了相似研发思路。他曾提出为特斯拉 Optimus 人形机器人打造专属“Optimus 学院”，让机器人在院内测试各类作业任务，以此形成数据增长的正向循环。
+Apptronik 2016 年从得克萨斯大学人本机器人实验室分拆独立，初衷是将美国国防部高级研究计划局机器人挑战赛的研发成果商业化。这项军方赛事旨在研发可在灾害现场作业的机器人。公司早期主营对外供应机器人零部件，但卡德纳斯称，企业自始至终的核心目标，是打造通用型人形机器人。
+这家初创企业累计融资约 10 亿美元，企业估值超 55 亿美元（现汇率约合 374.24 亿元人民币）。投资方之一梅赛德斯-奔驰已在自家工厂投入 Apollo 机器人，完成零部件、装配工具归集等简易流水线作业。谷歌旗下人工智能研究部门 DeepMind 也借助 Apollo 机器人，迭代优化谷歌面向机器人领域的人工智能模型 Gemini Robotics。
+Apptronik 于 2023 年推出了初代 Apollo 机器人，目前二代 Apollo 正在迭代研发。卡德纳斯介绍，二代机型升级了电池、电机与传感器，主要用于数据采集和客户试点落地；整机身高约 1.8 米，双手可举起重 55 磅（约 25 公斤）物品，单次续航 4 小时。
+面向商用、计划正式对外销售的第三代 Apollo 机器人尚在开发阶段，卡德纳斯并未透露产品落地时间。
+卡德纳斯将人形机器人行业发展划分为三个阶段：第一阶段验证技术可行性，第二阶段证明客户愿意付费采购产品，第三阶段规模化运营并实现盈利。他认为，整个行业如今正迈入第二阶段。
+“人形机器人就是我们这个时代的个人电脑。如果认同这个判断，那当下行业所处阶段，就相当于上世纪 80 年代初，还停留在文字处理、电子表格刚问世的萌芽期。”卡德纳斯说道。
+人形机器人赛道正逐步走出实验室演示阶段，迈入早期商用落地测试。总部位于圣何塞的 Figure AI 最新估值达 390 亿美元，其人形机器人已开始投放物流仓储中心投入使用；总部坐落于帕洛阿尔托的 1X 公司，则计划今年下半年向普通家庭交付一万台以上人形机器人。
+俄勒冈州的 Agility Robotics 商业化进度领先同行。该企业筹备近期上市，旗下 Digit 人形机器人已入驻九家合作企业厂区，合作方包含亚马逊、丰田以及物流企业 GXO。
+多数人形机器人厂商仅研发双足行走机型，Apptronik 却同步开发了双足款、轮式款两种 Apollo 机型。卡德纳斯长期更看好双足人形机器人的发展潜力，未来它们理论上能够复刻人类全部肢体劳动，但轮式机器人会更早完成批量落地，原因是其安全系数更高。双足机器人躯干需要承载大容量重型电池，能耗更高，一旦倾倒还会产生安全隐患。
+Apptronik 已在全球多家合作客户厂区落地多处机器人实训园，卡德纳斯表示后续还会新建更多园区。他说：“我们的愿景是在全球各地布局机器人实训园，未来甚至对公众开放，让所有人亲眼见证未来世界是如何一步步打造而成。”
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 69
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":69,"text_length":1848,"paragraph_count":17,"sentence_count":15,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=medium
+   人形机器人公司Apptronik在奥斯汀建成近9万平方英尺（约8361平方米）的机器人实训园，其Apollo机器人通过远程操控反复进行装箱、分拣等实操训练，数据用于优化AI模型。公司累计融资约10亿美元，估值超55亿美元。投资方梅赛德斯-奔驰已在工厂部署Apollo，谷歌DeepMind借助Apollo改进机器人AI模型Gemini Robotics。2023年推出的初代Apollo已迭代至二代，身高约1.8米，可举25公斤，续航4小时。公司同步开发双足与轮式机型，目标让机器人进入工厂、服务行业与家庭。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   IT之家 6 月 30 日消息，机器人上岗前，都得先“上学”。
+
+3. **funding**｜supports=signal_card_candidate, relationship_graph_input, trend_candidate_context｜importance=high｜confidence=medium
+   总部位于得克萨斯州的人形机器人初创企业 Apptronik，投资方包括谷歌与梅赛德斯-奔驰，该公司已在奥斯汀打造了一座“机器人实训园”。
+
+4. **number**｜supports=signal_card_candidate, relationship_graph_input, case, trend_candidate_context｜importance=high｜confidence=medium
+   这座仓库占地近 9 万平方英尺（IT之家注：约 8361 平方米），旗下 Apollo 人形机器人在此反复实操各类作业：把箱子装上传送带、将玩具分拣至收纳箱等。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   这些机器人大部分时间由人员远程操控。
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   实训园全年无休运转，操作人员站在机器人身旁，实时引导、监控它们完成各项实操任务。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: Gemini
+- people: 暂无公开信息
+- industries: 制造 / 工业, 企业服务
+- roles: 采购负责人, 销售 / 客服
+- workflows: 权限 / 安全治理, 采购 / 招投标, 部署 / 集成交付
+- business_actions: 发布 / 推出, 合作 / 联盟, 部署 / 上线, 融资 / 投资
+- affected_departments: IT / 安全, 采购, 销售 / 客服
+- numbers: 9万, 8361, 10亿, 55亿, 2023, 1.8, 25, 4
+- quotes: 正如需要工厂来制造机器人，我们也需要一座数据工厂，产出研发所需的各类训练数据。这里就是机器人的学习乐园。 / Optimus 学院 / 人形机器人就是我们这个时代的个人电脑。如果认同这个判断，那当下行业所处阶段，就相当于上世纪 80 年代初，还停留在文字处理、电子表格刚问世的萌芽期。 / 我们的愿景是在全球各地布局机器人实训园，未来甚至对公众开放，让所有人亲眼见证未来世界是如何一步步打造而成。
+
+## evidence_seed
+
+- company_actions: 人形机器人公司Apptronik在奥斯汀建成近9万平方英尺（约8361平方米）的机器人实训园，其Apollo机器人通过远程操控反复进行装箱、分拣等实操训练，数据用于优化AI模型。公司累计融资约10亿美元，估值超55亿美元。投资方梅赛德斯-奔驰已在工厂部署Apollo，谷歌DeepMind借助Apollo改进机器人AI模型Gemini Robotics。2023年推出的初代Apollo已迭代至二代，身高约1.8米，可举25公斤，续航4小时。公司同步开发双足与轮式机型，目标让机器人进入工厂、服务行业与家庭。 / IT之家 6 月 30 日消息，机器人上岗前，都得先“上学”。 / 总部位于得克萨斯州的人形机器人初创企业 Apptronik，投资方包括谷歌与梅赛德斯-奔驰，该公司已在奥斯汀打造了一座“机器人实训园”。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。 / 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 采购负责人, 销售 / 客服
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_funding
+- importance_score: 5
+- importance_reason: funding or investment event; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: false
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"Apptronik建成近9万平方英尺机器人实训园，Apollo通过实操训练优化AI模型","discovery_summary":"人形机器人公司Apptronik在奥斯汀建成近9万平方英尺（约8361平方米）的机器人实训园，其Apollo机器人通过远程操控反复进行装箱、分拣等实操训练，数据用于优化AI模型。公司累计融资约10亿美元，估值超55亿美元。投资方梅赛德斯-奔驰已在工厂部署Apollo，谷歌DeepMind借助Apollo改进机器人AI模型Gemini Robotics。2023年推出的初代Apollo已迭代至二代，身高约1.8米，可举25公斤，续航4小时。公司同步开发双足与轮式机型，目标让机器人进入工厂、服务行业与家庭。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/970/782.htm","discovered_at":"2026-07-01T02:17:38.719Z","rank_on_page":237,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+人形机器人公司Apptronik在奥斯汀建成近9万平方英尺（约8361平方米）的机器人实训园，其Apollo机器人通过远程操控反复进行装箱、分拣等实操训练，数据用于优化AI模型。公司累计融资约10亿美元，估值超55亿美元。投资方梅赛德斯-奔驰已在工厂部署Apollo，谷歌DeepMind借助Apollo改进机器人AI模型Gemini Robotics。2023年推出的初代Apollo已迭代至二代，身高约1.8米，可举25公斤，续航4小时。公司同步开发双足与轮式机型，目标让机器人进入工厂、服务行业与家庭。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

@@ -1,0 +1,271 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-095",
+  "title": "Have your agent record video demos of its work with shot-scraper video",
+  "original_url": "https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything",
+  "canonical_url": "https://simonwillison.net/2026/Jun/30/shot-scraper-video",
+  "source_name": "Simon Willison's Blog",
+  "source_type": "builder",
+  "source_level": "S",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "changelog_or_release",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "rss-feed",
+  "research_status": "not_research",
+  "search_intent": "",
+  "search_path": "",
+  "search_path_label": "",
+  "enterprise_ai_transformation_lens": false,
+  "enterprise_ai_transformation_stage": "",
+  "enterprise_ai_transformation_reason": "",
+  "author": "",
+  "published_at": "2026-06-30T16:54:26.000Z",
+  "collected_at": "2026-07-01T02:33:05.539Z",
+  "language": "mixed",
+  "full_text": "Have your agent record video demos of its work with shot-scraper video\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Depot &mdash; AI agents write code in seconds. CI shouldn't make them wait minutes. Try Depot CI\nHave your agent record video demos of its work with shot-scraper video\n30th June 2026\nshot-scraper video is a new command introduced in today’s shot-scraper 1.10 release which accepts a storyboard.yml file defining a routine to run against a web application and uses Playwright to record a video of that routine. I’ve written before about the importance of having coding agents produce demos of their work; this is my latest attempt at enabling them to do that.\nHere’s an example video created using shot-scraper video , exercising a still in development feature adding the ability to create new tables in Datasette from pasted CSV, TSV or JSON data:\nThat video was created by running this command :\nshot-scraper video datasette-bulk-insert-storyboard.yml \\\n--auth datasette-demo-auth.json --mp4\n(That --auth JSON file contains a cookie , as described here in the documentation.)\nHere’s the datasette-bulk-insert-storyboard.yml file:\noutput : /tmp/datasette-bulk-insert-demo.webm\nserver :\n- uv\n- --directory\n- /Users/simon/Dropbox/dev/datasette\n- run\n- datasette\n- -p\n- 6419\n- --root\n- --secret\n- \" 1 \"\n- /tmp/demo.db\nurl : http://127.0.0.1:6419/demo/tasks\nviewport :\nwidth : 1280\nheight : 720\ncursor : true\nwait_for : ' button[data-table-action=\"insert-row\"] '\njavascript : |\n(() => {\nlet clipboardText = \"\";\nObject.defineProperty(navigator, \"clipboard\", {\nconfigurable: true,\nget: () => ({\nwriteText: async (text) => {\nclipboardText = String(text);\n},\nreadText: async () => clipboardText,\n}),\n});\n})();\nscenes :\n- name : Bulk insert existing table rows\ndo :\n- pause : 0.8\n- click : ' button[data-table-action=\"insert-row\"] '\n- wait_for : \" #row-edit-dialog[open] \"\n- pause : 0.5\n- click : \" .row-edit-bulk-insert \"\n- wait_for : \" .row-edit-bulk-textarea \"\n- pause : 0.5\n- click : \" .row-edit-copy-template \"\n- wait_for : \" text=Copied \"\n- pause : 0.8\n- fill :\ninto : \" .row-edit-bulk-textarea \"\ntext : |\ntitle,owner,status,priority,notes\nPrepare release video,Ana,doing,1,Recorded with shot-scraper\nCheck pasted CSV import,Ben,review,3,Previewed before inserting\nShare the branch demo,Chen,queued,2,Bulk insert creates three rows\n- pause : 0.8\n- click : \" .row-edit-save \"\n- wait_for : \" text=Previewing 3 rows. \"\n- pause : 1.2\n- click : \" .row-edit-save \"\n- wait_for : \" text=3 rows inserted. \"\n- pause : 1.0\n- click : \" .row-edit-cancel \"\n- wait_for : \" text=Prepare release video \"\n- pause : 1.0\n- name : Create a table from pasted CSV\nopen : http://127.0.0.1:6419/demo\nwait_for : ' details.actions-menu-links summary '\ndo :\n- pause : 0.8\n- click : ' details.actions-menu-links summary '\n- click : ' button[data-database-action=\"create-table\"] '\n- wait_for : \" #table-create-dialog[open] \"\n- pause : 0.5\n- fill :\ninto : \" .table-create-table-name \"\ntext : \" launch_metrics \"\n- click : \" .table-create-from-data \"\n- wait_for : \" .table-create-data-textarea \"\n- pause : 0.5\n- fill :\ninto : \" .table-create-data-textarea \"\ntext : |\nmetric_id,name,score,recorded_on\nm001,Activation rate,87.5,2026-06-29\nm002,Retention check,72.25,2026-06-30\nm003,CSV import health,95,2026-07-01\n- pause : 0.8\n- click : \" .table-create-save \"\n- wait_for : \" text=Previewing 3 rows. \"\n- pause : 1.2\n- click : \" .table-create-save \"\n- wait_for_url : \" **/demo/launch_metrics \"\n- wait_for : \" text=Activation rate \"\n- pause : 1.2\nThe video command documentation includes simpler examples, but for the purpose of this post I thought I’d go with something more comprehensive.\nThat demo YAML storyboard was constructed entirely by GPT-5.5 xhigh running in Codex Desktop, using the following prompt run inside my ~/dev/datasette checkout of this branch :\nReview the changes on this branch.\ncd to ~/dev/shot-scraper and run the command \"uv run shot-scraper video --help\"\nNow use that new video command to record a video demo of the new features from this branch, including running a \"uv run datasette -p 6419 --root --secret 1 /tmp/demo.db\" development server so you can record the video against a demo DB that you first create.\nNow that I’ve released the feature the prompt could say \" run uvx shot-scraper video --help \" instead and it should achieve the same result.\nI really like this pattern where the --help output for a command provides enough detail that a coding agent can use it—it works kind of like bundling a SKILL.md file directly inside the tool. I used the same pattern for showboat and rodney .\nHow I built this\nshot-scraper video started as an experimental prototype. shot-scraper is built on top of Playwright , and the key feature it needed was for Playwright to be able to record video of browser sessions with enough control to create the desired demo.\nI first tried this a few years ago and found that the Playwright-produced videos included additional chrome that was useful for debugging a test failure but unwanted for a product demo.\nThey fixed that a while ago, but there were still some minor blockers. In particular I was getting a few white frames at the start of the videos , since the recording mechanism kicked in before the first URL was loaded by the browser.\nPlaywright 1.59 added a new screencast mechanism providing much more finely grained control over video recording. This was very nearly what I needed, but the resulting videos were fixed at 800px wide.\nI found a landed PR fixing that but it wasn’t yet in a release. Then yesterday they shipped it in playwright-python 1.61.0 and I was finally unblocked to finish implementing the feature!\nThe code itself was all written by GPT-5.5 xhigh in Codex Desktop. I had it write the documentation as well which gave me a very useful frame for reviewing the design—much of the iteration on the feature came from reviewing that documentation, spotting things that were redundant, inconsistent or confusing, and requesting (or dictating) a better design.\nThe YAML format itself was mostly defined by the coding agent. I had it use Pydantic to both define and validate the format, partly to make the design easier to review.\nThis is a great example of the kind of feature that I almost certainly wouldn’t have taken on without coding agent support. I filed the original issue in February 2024, and had difficulty finding the necessary time to solve this in amongst all of my other projects.\nPosted 30th June 2026 at 4:54 pm &middot; Follow me on Mastodon , Bluesky , Twitter or subscribe to my newsletter\nMore recent articles\nPorting the Moebius 0.2B image inpainting model to run in the browser with Claude Code - 22nd June 2026\nsqlite-utils 4.0rc1 adds migrations and nested transactions - 21st June 2026\nThis is Have your agent record video demos of its work with shot-scraper video by Simon Willison, posted on 30th June 2026 .\nprojects\n541\npython\n1,262\nyaml\n26\nai\n2,095\ndatasette\n1,522\nplaywright\n14\nshot-scraper\n69\ngenerative-ai\n1,852\nllms\n1,820\npydantic\n17\ncoding-agents\n214\nagentic-engineering\n54\nPrevious: Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "clean_text": "Have your agent record video demos of its work with shot-scraper video\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Depot &mdash; AI agents write code in seconds. CI shouldn't make them wait minutes. Try Depot CI\nHave your agent record video demos of its work with shot-scraper video\n30th June 2026\nshot-scraper video is a new command introduced in today’s shot-scraper 1.10 release which accepts a storyboard.yml file defining a routine to run against a web application and uses Playwright to record a video of that routine. I’ve written before about the importance of having coding agents produce demos of their work; this is my latest attempt at enabling them to do that.\nHere’s an example video created using shot-scraper video , exercising a still in development feature adding the ability to create new tables in Datasette from pasted CSV, TSV or JSON data:\nThat video was created by running this command :\nshot-scraper video datasette-bulk-insert-storyboard.yml \\\n--auth datasette-demo-auth.json --mp4\n(That --auth JSON file contains a cookie , as described here in the documentation.)\nHere’s the datasette-bulk-insert-storyboard.yml file:\noutput : /tmp/datasette-bulk-insert-demo.webm\nserver :\n- uv\n- --directory\n- /Users/simon/Dropbox/dev/datasette\n- run\n- datasette\n- -p\n- 6419\n- --root\n- --secret\n- \" 1 \"\n- /tmp/demo.db\nurl : http://127.0.0.1:6419/demo/tasks\nviewport :\nwidth : 1280\nheight : 720\ncursor : true\nwait_for : ' button[data-table-action=\"insert-row\"] '\njavascript : |\n(() => {\nlet clipboardText = \"\";\nObject.defineProperty(navigator, \"clipboard\", {\nconfigurable: true,\nget: () => ({\nwriteText: async (text) => {\nclipboardText = String(text);\n},\nreadText: async () => clipboardText,\n}),\n});\n})();\nscenes :\n- name : Bulk insert existing table rows\ndo :\n- pause : 0.8\n- click : ' button[data-table-action=\"insert-row\"] '\n- wait_for : \" #row-edit-dialog[open] \"\n- pause : 0.5\n- click : \" .row-edit-bulk-insert \"\n- wait_for : \" .row-edit-bulk-textarea \"\n- pause : 0.5\n- click : \" .row-edit-copy-template \"\n- wait_for : \" text=Copied \"\n- pause : 0.8\n- fill :\ninto : \" .row-edit-bulk-textarea \"\ntext : |\ntitle,owner,status,priority,notes\nPrepare release video,Ana,doing,1,Recorded with shot-scraper\nCheck pasted CSV import,Ben,review,3,Previewed before inserting\nShare the branch demo,Chen,queued,2,Bulk insert creates three rows\n- pause : 0.8\n- click : \" .row-edit-save \"\n- wait_for : \" text=Previewing 3 rows. \"\n- pause : 1.2\n- click : \" .row-edit-save \"\n- wait_for : \" text=3 rows inserted. \"\n- pause : 1.0\n- click : \" .row-edit-cancel \"\n- wait_for : \" text=Prepare release video \"\n- pause : 1.0\n- name : Create a table from pasted CSV\nopen : http://127.0.0.1:6419/demo\nwait_for : ' details.actions-menu-links summary '\ndo :\n- pause : 0.8\n- click : ' details.actions-menu-links summary '\n- click : ' button[data-database-action=\"create-table\"] '\n- wait_for : \" #table-create-dialog[open] \"\n- pause : 0.5\n- fill :\ninto : \" .table-create-table-name \"\ntext : \" launch_metrics \"\n- click : \" .table-create-from-data \"\n- wait_for : \" .table-create-data-textarea \"\n- pause : 0.5\n- fill :\ninto : \" .table-create-data-textarea \"\ntext : |\nmetric_id,name,score,recorded_on\nm001,Activation rate,87.5,2026-06-29\nm002,Retention check,72.25,2026-06-30\nm003,CSV import health,95,2026-07-01\n- pause : 0.8\n- click : \" .table-create-save \"\n- wait_for : \" text=Previewing 3 rows. \"\n- pause : 1.2\n- click : \" .table-create-save \"\n- wait_for_url : \" **/demo/launch_metrics \"\n- wait_for : \" text=Activation rate \"\n- pause : 1.2\nThe video command documentation includes simpler examples, but for the purpose of this post I thought I’d go with something more comprehensive.\nThat demo YAML storyboard was constructed entirely by GPT-5.5 xhigh running in Codex Desktop, using the following prompt run inside my ~/dev/datasette checkout of this branch :\nReview the changes on this branch.\ncd to ~/dev/shot-scraper and run the command \"uv run shot-scraper video --help\"\nNow use that new video command to record a video demo of the new features from this branch, including running a \"uv run datasette -p 6419 --root --secret 1 /tmp/demo.db\" development server so you can record the video against a demo DB that you first create.\nNow that I’ve released the feature the prompt could say \" run uvx shot-scraper video --help \" instead and it should achieve the same result.\nI really like this pattern where the --help output for a command provides enough detail that a coding agent can use it—it works kind of like bundling a SKILL.md file directly inside the tool. I used the same pattern for showboat and rodney .\nHow I built this\nshot-scraper video started as an experimental prototype. shot-scraper is built on top of Playwright , and the key feature it needed was for Playwright to be able to record video of browser sessions with enough control to create the desired demo.\nI first tried this a few years ago and found that the Playwright-produced videos included additional chrome that was useful for debugging a test failure but unwanted for a product demo.\nThey fixed that a while ago, but there were still some minor blockers. In particular I was getting a few white frames at the start of the videos , since the recording mechanism kicked in before the first URL was loaded by the browser.\nPlaywright 1.59 added a new screencast mechanism providing much more finely grained control over video recording. This was very nearly what I needed, but the resulting videos were fixed at 800px wide.\nI found a landed PR fixing that but it wasn’t yet in a release. Then yesterday they shipped it in playwright-python 1.61.0 and I was finally unblocked to finish implementing the feature!\nThe code itself was all written by GPT-5.5 xhigh in Codex Desktop. I had it write the documentation as well which gave me a very useful frame for reviewing the design—much of the iteration on the feature came from reviewing that documentation, spotting things that were redundant, inconsistent or confusing, and requesting (or dictating) a better design.\nThe YAML format itself was mostly defined by the coding agent. I had it use Pydantic to both define and validate the format, partly to make the design easier to review.\nThis is a great example of the kind of feature that I almost certainly wouldn’t have taken on without coding agent support. I filed the original issue in February 2024, and had difficulty finding the necessary time to solve this in amongst all of my other projects.\nPosted 30th June 2026 at 4:54 pm &middot; Follow me on Mastodon , Bluesky , Twitter or subscribe to my newsletter\nMore recent articles\nPorting the Moebius 0.2B image inpainting model to run in the browser with Claude Code - 22nd June 2026\nsqlite-utils 4.0rc1 adds migrations and nested transactions - 21st June 2026\nThis is Have your agent record video demos of its work with shot-scraper video by Simon Willison, posted on 30th June 2026 .\nprojects\n541\npython\n1,262\nyaml\n26\nai\n2,095\ndatasette\n1,522\nplaywright\n14\nshot-scraper\n69\ngenerative-ai\n1,852\nllms\n1,820\npydantic\n17\ncoding-agents\n214\nagentic-engineering\n54\nPrevious: Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-01/r-095-have-your-agent-record-video-demos-of-its-work-with-shot-scraper-video.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-01/r-095-have-your-agent-record-video-demos-of-its-work-with-shot-scraper-video.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-body-visible-text",
+  "extraction_quality": "high",
+  "extraction_method": "body-visible-text",
+  "readability_score": 64,
+  "extractor_diagnostics": {
+    "readability_score": 64,
+    "text_length": 7494,
+    "paragraph_count": 81,
+    "sentence_count": 31,
+    "boilerplate_hits": 7,
+    "symbol_ratio": 0.008,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "body-visible-text"
+  },
+  "has_full_text": true,
+  "content_length": 7494,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "2348839ce177c91f",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "merged_provider_duplicates",
+  "url_hash": "02b27ece15a28751",
+  "content_hash": "2348839ce177c91f",
+  "full_text_hash": "2348839ce177c91f",
+  "semantic_hash": "07c9d1aa65b7488d",
+  "duplicate_of": "merged 1 duplicate provider hit(s) before Raw selection",
+  "first_seen_at": "2026-06-30T16:54:26.000Z",
+  "last_seen_at": "2026-07-01T02:33:05.539Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "quote",
+      "text": "&lt;p&gt;&lt;a href=\"https://shot-scraper.datasette.io/en/stable/video.html\"&gt;shot-scraper video&lt;/a&gt; is a new command introduced in today's &lt;a href=\"https://github.com/simonw/shot-scraper/releases/tag/1.10\"&gt;shot-scraper 1.10&lt;/a&gt; release which accepts a &lt;code&gt;storyboard.yml&lt;/code&gt; file defining a routine to run against a web application and uses Playwright to record a video of that routine. I've written before about the importance of &lt;a href=\"https://simonwillis",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "viewpoint"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Have your agent record video demos of its work with shot-scraper video Simon Willison’s Weblog Subscribe Sponsored by: Depot &mdash; AI agents write code in seconds.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "CI shouldn't make them wait minutes.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "Try Depot CI Have your agent record video demos of its work with shot-scraper video 30th June 2026 shot-scraper video is a new command introduced in today’s shot-scraper 1.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "product_update",
+      "text": "10 release which accepts a storyboard.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "yml file defining a routine to run against a web application and uses Playwright to record a video of that routine.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "medium",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "Simon Willison's Blog",
+      "GitHub",
+      "Cursor"
+    ],
+    "products": [
+      "agent",
+      "agents",
+      "cursor",
+      "GPT-5",
+      "Codex",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "医疗",
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究"
+    ],
+    "business_actions": [
+      "发布 / 推出"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "1.10",
+      "30",
+      "2026",
+      "4",
+      "6419",
+      "1",
+      "127.0",
+      "0.1"
+    ],
+    "quotes": [
+      "https://shot-scraper.datasette.io/en/stable/video.html",
+      "https://github.com/simonw/shot-scraper/releases/tag/1.10",
+      "\n- /tmp/demo.db\nurl : http://127.0.0.1:6419/demo/tasks\nviewport :\nwidth : 1280\nheight : 720\ncursor : true\nwait_for : ' button[data-table-action=",
+      "] '\njavascript : |\n(() => {\nlet clipboardText = ",
+      ";\nObject.defineProperty(navigator, "
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "Have your agent record video demos of its work with shot-scraper video Simon Willison’s Weblog Subscribe Sponsored by: Depot &mdash; AI agents write code in seconds.",
+      "CI shouldn't make them wait minutes.",
+      "Try Depot CI Have your agent record video demos of its work with shot-scraper video 30th June 2026 shot-scraper video is a new command introduced in today’s shot-scraper 1."
+    ],
+    "case_details": [],
+    "workflow_changes": [],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_product_or_service",
+    "importance_score": 4,
+    "importance_reason": "new product or service; rubric=4 concrete important change",
+    "supporting_signals": [],
+    "novelty": 2,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 3
+  },
+  "usable_for": {
+    "viewpoint": true,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": false,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "core_pool"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "indexed",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# Have your agent record video demos of its work with shot-scraper video\n\n- raw_id: R-095\n- original_url: https://simonwillison.net/2026/Jun/30/shot-scraper-video/#atom-everything\n- source_name: Simon Willison's Blog\n- collected_at: 2026-07-01T02:33:05.539Z\n\n## clean_text\n\nHave your agent record video demos of its work with shot-scraper video\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Depot &mdash; AI agents write code in seconds. CI shouldn't make them wait minutes. Try Depot CI\nHave your agent record video demos of its work with shot-scraper video\n30th June 2026\nshot-scraper video is a new command introduced in today’s shot-scraper 1.10 release which accepts a storyboard.yml file defining a routine to run against a web application and uses Playwright to record a video of that routine. I’ve written before about the importance of having coding agents produce demos of their work; this is my latest attempt at enabling them to do that.\nHere’s an example video created using shot-scraper video , exercising a still in development feature adding the ability to create new tables in Datasette from pasted CSV, TSV or JSON data:\nThat video was created by running this command :\nshot-scraper video datasette-bulk-insert-storyboard.yml \\\n--auth datasette-demo-auth.json --mp4\n(That --auth JSON file contains a cookie , as described here in the documentation.)\nHere’s the datasette-bulk-insert-storyboard.yml file:\noutput : /tmp/datasette-bulk-insert-demo.webm\nserver :\n- uv\n- --directory\n- /Users/simon/Dropbox/dev/datasette\n- run\n- datasette\n- -p\n- 6419\n- --root\n- --secret\n- \" 1 \"\n- /tmp/demo.db\nurl : http://127.0.0.1:6419/demo/tasks\nviewport :\nwidth : 1280\nheight : 720\ncursor : true\nwait_for : ' button[data-table-action=\"insert-row\"] '\njavascript : |\n(() => {\nlet clipboardText = \"\";\nObject.defineProperty(navigator, \"clipboard\", {\nconfigurable: true,\nget: () => ({\nwriteText: async (text) => {\nclipboardText = String(text);\n},\nreadText: async () => clipboardText,\n}),\n});\n})();\nscenes :\n- name : Bulk insert existing table rows\ndo :\n- pause : 0.8\n- click : ' button[data-table-action=\"insert-row\"] '\n- wait_for : \" #row-edit-dialog[open] \"\n- pause : 0.5\n- click : \" .row-edit-bulk-insert \"\n- wait_for : \" .row-edit-bulk-textarea \"\n- pause : 0.5\n- click : \" .row-edit-copy-template \"\n- wait_for : \" text=Copied \"\n- pause : 0.8\n- fill :\ninto : \" .row-edit-bulk-textarea \"\ntext : |\ntitle,owner,status,priority,notes\nPrepare release video,Ana,doing,1,Recorded with shot-scraper\nCheck pasted CSV import,Ben,review,3,Previewed before inserting\nShare the branch demo,Chen,queued,2,Bulk insert creates three rows\n- pause : 0.8\n- click : \" .row-edit-save \"\n- wait_for : \" text=Previewing 3 rows. \"\n- pause : 1.2\n- click : \" .row-edit-save \"\n- wait_for : \" text=3 rows inserted. \"\n- pause : 1.0\n- click : \" .row-edit-cancel \"\n- wait_for : \" text=Prepare release video \"\n- pause : 1.0\n- name : Create a table from pasted CSV\nopen : http://127.0.0.1:6419/demo\nwait_for : ' details.actions-menu-links summary '\ndo :\n- pause : 0.8\n- click : ' details.actions-menu-links summary '\n- click : ' button[data-database-action=\"create-table\"] '\n- wait_for : \" #table-create-dialog[open] \"\n- pause : 0.5\n- fill :\ninto : \" .table-create-table-name \"\ntext : \" launch_metrics \"\n- click : \" .table-create-from-data \"\n- wait_for : \" .table-create-data-textarea \"\n- pause : 0.5\n- fill :\ninto : \" .table-create-data-textarea \"\ntext : |\nmetric_id,name,score,recorded_on\nm001,Activation rate,87.5,2026-06-29\nm002,Retention check,72.25,2026-06-30\nm003,CSV import health,95,2026-07-01\n- pause : 0.8\n- click : \" .table-create-save \"\n- wait_for : \" text=Previewing 3 rows. \"\n- pause : 1.2\n- click : \" .table-create-save \"\n- wait_for_url : \" **/demo/launch_metrics \"\n- wait_for : \" text=Activation rate \"\n- pause : 1.2\nThe video command documentation includes simpler examples, but for the purpose of this post I thought I’d go with something more comprehensive.\nThat demo YAML storyboard was constructed entirely by GPT-5.5 xhigh running in Codex Desktop, using the following prompt run inside my ~/dev/datasette checkout of this branch :\nReview the changes on this branch.\ncd to ~/dev/shot-scraper and run the command \"uv run shot-scraper video --help\"\nNow use that new video command to record a video demo of the new features from this branch, including running a \"uv run datasette -p 6419 --root --secret 1 /tmp/demo.db\" development server so you can record the video against a demo DB that you first create.\nNow that I’ve released the feature the prompt could say \" run uvx shot-scraper video --help \" instead and it should achieve the same result.\nI really like this pattern where the --help output for a command provides enough detail that a coding agent can use it—it works kind of like bundling a SKILL.md file directly inside the tool. I used the same pattern for showboat and rodney .\nHow I built this\nshot-scraper video started as an experimental prototype. shot-scraper is built on top of Playwright , and the key feature it needed was for Playwright to be able to record video of browser sessions with enough control to create the desired demo.\nI first tried this a few years ago and found that the Playwright-produced videos included additional chrome that was useful for debugging a test failure but unwanted for a product demo.\nThey fixed that a while ago, but there were still some minor blockers. In particular I was getting a few white frames at the start of the videos , since the recording mechanism kicked in before the first URL was loaded by the browser.\nPlaywright 1.59 added a new screencast mechanism providing much more finely grained control over video recording. This was very nearly what I needed, but the resulting videos were fixed at 800px wide.\nI found a landed PR fixing that but it wasn’t yet in a release. Then yesterday they shipped it in playwright-python 1.61.0 and I was finally unblocked to finish implementing the feature!\nThe code itself was all written by GPT-5.5 xhigh in Codex Desktop. I had it write the documentation as well which gave me a very useful frame for reviewing the design—much of the iteration on the feature came from reviewing that documentation, spotting things that were redundant, inconsistent or confusing, and requesting (or dictating) a better design.\nThe YAML format itself was mostly defined by the coding agent. I had it use Pydantic to both define and validate the format, partly to make the design easier to review.\nThis is a great example of the kind of feature that I almost certainly wouldn’t have taken on without coding agent support. I filed the original issue in February 2024, and had difficulty finding the necessary time to solve this in amongst all of my other projects.\nPosted 30th June 2026 at 4:54 pm &middot; Follow me on Mastodon , Bluesky , Twitter or subscribe to my newsletter\nMore recent articles\nPorting the Moebius 0.2B image inpainting model to run in the browser with Claude Code - 22nd June 2026\nsqlite-utils 4.0rc1 adds migrations and nested transactions - 21st June 2026\nThis is Have your agent record video demos of its work with shot-scraper video by Simon Willison, posted on 30th June 2026 .\nprojects\n541\npython\n1,262\nyaml\n26\nai\n2,095\ndatasette\n1,522\nplaywright\n14\nshot-scraper\n69\ngenerative-ai\n1,852\nllms\n1,820\npydantic\n17\ncoding-agents\n214\nagentic-engineering\n54\nPrevious: Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## full_text\n\nHave your agent record video demos of its work with shot-scraper video\nSimon Willison’s Weblog\nSubscribe\nSponsored by: Depot &mdash; AI agents write code in seconds. CI shouldn't make them wait minutes. Try Depot CI\nHave your agent record video demos of its work with shot-scraper video\n30th June 2026\nshot-scraper video is a new command introduced in today’s shot-scraper 1.10 release which accepts a storyboard.yml file defining a routine to run against a web application and uses Playwright to record a video of that routine. I’ve written before about the importance of having coding agents produce demos of their work; this is my latest attempt at enabling them to do that.\nHere’s an example video created using shot-scraper video , exercising a still in development feature adding the ability to create new tables in Datasette from pasted CSV, TSV or JSON data:\nThat video was created by running this command :\nshot-scraper video datasette-bulk-insert-storyboard.yml \\\n--auth datasette-demo-auth.json --mp4\n(That --auth JSON file contains a cookie , as described here in the documentation.)\nHere’s the datasette-bulk-insert-storyboard.yml file:\noutput : /tmp/datasette-bulk-insert-demo.webm\nserver :\n- uv\n- --directory\n- /Users/simon/Dropbox/dev/datasette\n- run\n- datasette\n- -p\n- 6419\n- --root\n- --secret\n- \" 1 \"\n- /tmp/demo.db\nurl : http://127.0.0.1:6419/demo/tasks\nviewport :\nwidth : 1280\nheight : 720\ncursor : true\nwait_for : ' button[data-table-action=\"insert-row\"] '\njavascript : |\n(() => {\nlet clipboardText = \"\";\nObject.defineProperty(navigator, \"clipboard\", {\nconfigurable: true,\nget: () => ({\nwriteText: async (text) => {\nclipboardText = String(text);\n},\nreadText: async () => clipboardText,\n}),\n});\n})();\nscenes :\n- name : Bulk insert existing table rows\ndo :\n- pause : 0.8\n- click : ' button[data-table-action=\"insert-row\"] '\n- wait_for : \" #row-edit-dialog[open] \"\n- pause : 0.5\n- click : \" .row-edit-bulk-insert \"\n- wait_for : \" .row-edit-bulk-textarea \"\n- pause : 0.5\n- click : \" .row-edit-copy-template \"\n- wait_for : \" text=Copied \"\n- pause : 0.8\n- fill :\ninto : \" .row-edit-bulk-textarea \"\ntext : |\ntitle,owner,status,priority,notes\nPrepare release video,Ana,doing,1,Recorded with shot-scraper\nCheck pasted CSV import,Ben,review,3,Previewed before inserting\nShare the branch demo,Chen,queued,2,Bulk insert creates three rows\n- pause : 0.8\n- click : \" .row-edit-save \"\n- wait_for : \" text=Previewing 3 rows. \"\n- pause : 1.2\n- click : \" .row-edit-save \"\n- wait_for : \" text=3 rows inserted. \"\n- pause : 1.0\n- click : \" .row-edit-cancel \"\n- wait_for : \" text=Prepare release video \"\n- pause : 1.0\n- name : Create a table from pasted CSV\nopen : http://127.0.0.1:6419/demo\nwait_for : ' details.actions-menu-links summary '\ndo :\n- pause : 0.8\n- click : ' details.actions-menu-links summary '\n- click : ' button[data-database-action=\"create-table\"] '\n- wait_for : \" #table-create-dialog[open] \"\n- pause : 0.5\n- fill :\ninto : \" .table-create-table-name \"\ntext : \" launch_metrics \"\n- click : \" .table-create-from-data \"\n- wait_for : \" .table-create-data-textarea \"\n- pause : 0.5\n- fill :\ninto : \" .table-create-data-textarea \"\ntext : |\nmetric_id,name,score,recorded_on\nm001,Activation rate,87.5,2026-06-29\nm002,Retention check,72.25,2026-06-30\nm003,CSV import health,95,2026-07-01\n- pause : 0.8\n- click : \" .table-create-save \"\n- wait_for : \" text=Previewing 3 rows. \"\n- pause : 1.2\n- click : \" .table-create-save \"\n- wait_for_url : \" **/demo/launch_metrics \"\n- wait_for : \" text=Activation rate \"\n- pause : 1.2\nThe video command documentation includes simpler examples, but for the purpose of this post I thought I’d go with something more comprehensive.\nThat demo YAML storyboard was constructed entirely by GPT-5.5 xhigh running in Codex Desktop, using the following prompt run inside my ~/dev/datasette checkout of this branch :\nReview the changes on this branch.\ncd to ~/dev/shot-scraper and run the command \"uv run shot-scraper video --help\"\nNow use that new video command to record a video demo of the new features from this branch, including running a \"uv run datasette -p 6419 --root --secret 1 /tmp/demo.db\" development server so you can record the video against a demo DB that you first create.\nNow that I’ve released the feature the prompt could say \" run uvx shot-scraper video --help \" instead and it should achieve the same result.\nI really like this pattern where the --help output for a command provides enough detail that a coding agent can use it—it works kind of like bundling a SKILL.md file directly inside the tool. I used the same pattern for showboat and rodney .\nHow I built this\nshot-scraper video started as an experimental prototype. shot-scraper is built on top of Playwright , and the key feature it needed was for Playwright to be able to record video of browser sessions with enough control to create the desired demo.\nI first tried this a few years ago and found that the Playwright-produced videos included additional chrome that was useful for debugging a test failure but unwanted for a product demo.\nThey fixed that a while ago, but there were still some minor blockers. In particular I was getting a few white frames at the start of the videos , since the recording mechanism kicked in before the first URL was loaded by the browser.\nPlaywright 1.59 added a new screencast mechanism providing much more finely grained control over video recording. This was very nearly what I needed, but the resulting videos were fixed at 800px wide.\nI found a landed PR fixing that but it wasn’t yet in a release. Then yesterday they shipped it in playwright-python 1.61.0 and I was finally unblocked to finish implementing the feature!\nThe code itself was all written by GPT-5.5 xhigh in Codex Desktop. I had it write the documentation as well which gave me a very useful frame for reviewing the design—much of the iteration on the feature came from reviewing that documentation, spotting things that were redundant, inconsistent or confusing, and requesting (or dictating) a better design.\nThe YAML format itself was mostly defined by the coding agent. I had it use Pydantic to both define and validate the format, partly to make the design easier to review.\nThis is a great example of the kind of feature that I almost certainly wouldn’t have taken on without coding agent support. I filed the original issue in February 2024, and had difficulty finding the necessary time to solve this in amongst all of my other projects.\nPosted 30th June 2026 at 4:54 pm &middot; Follow me on Mastodon , Bluesky , Twitter or subscribe to my newsletter\nMore recent articles\nPorting the Moebius 0.2B image inpainting model to run in the browser with Claude Code - 22nd June 2026\nsqlite-utils 4.0rc1 adds migrations and nested transactions - 21st June 2026\nThis is Have your agent record video demos of its work with shot-scraper video by Simon Willison, posted on 30th June 2026 .\nprojects\n541\npython\n1,262\nyaml\n26\nai\n2,095\ndatasette\n1,522\nplaywright\n14\nshot-scraper\n69\ngenerative-ai\n1,852\nllms\n1,820\npydantic\n17\ncoding-agents\n214\nagentic-engineering\n54\nPrevious: Porting the Moebius 0.2B image inpainting model to run in the browser with Claude Code\nMonthly briefing\nSponsor me for $10/month and get a curated email digest of the month's most important LLM developments.\nPay me to send you less!\nSponsor & subscribe\nDisclosures\nColophon\n&copy;\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n\n## extraction_diagnostics\n\n- extraction_method: body-visible-text\n- readability_score: 64\n- fetch_status: fetched-readable-text-body-visible-text\n- extraction_quality: high\n\n## key_excerpts\n\n1. [quote / signal_card_candidate, relationship_graph_input, viewpoint / medium] &lt;p&gt;&lt;a href=\"https://shot-scraper.datasette.io/en/stable/video.html\"&gt;shot-scraper video&lt;/a&gt; is a new command introduced in today's &lt;a href=\"https://github.com/simonw/shot-scraper/releases/tag/1.10\"&gt;shot-scraper 1.10&lt;/a&gt; release which accepts a &lt;code&gt;storyboard.yml&lt;/code&gt; file defining a routine to run against a web application and uses Playwright to record a video of that routine. I've written before about the importance of &lt;a href=\"https://simonwillis\n2. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Have your agent record video demos of its work with shot-scraper video Simon Willison’s Weblog Subscribe Sponsored by: Depot &mdash; AI agents write code in seconds.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] CI shouldn't make them wait minutes.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] Try Depot CI Have your agent record video demos of its work with shot-scraper video 30th June 2026 shot-scraper video is a new command introduced in today’s shot-scraper 1.\n5. [product_update / signal_card_candidate, relationship_graph_input, business_change / medium] 10 release which accepts a storyboard.\n6. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / medium] yml file defining a routine to run against a web application and uses Playwright to record a video of that routine.\n"
+}

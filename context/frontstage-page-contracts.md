@@ -32,7 +32,7 @@ Business Signals must keep the daily Top10 as the default primary view. It may p
 | Scope | Version | Meaning |
 |---|---|---|
 | Main website | `SITE-V3.3.8.7` | Current release baseline; frontstage visuals remain SITE-V3.3.8.4-compatible while Intelligence Map now carries Reports Center, Weekly / Monthly subcolumns, and full monthly report detail pages. |
-| Business Signals column | `BSIG-V1.1.4-pool-core-release-gate` | Keeps Top10 as the primary business-signal desk, keeps the 企业AI化 secondary lens, applies Core Pool source hygiene gates, locks public titles to source titles or registered Chinese translations, and treats provider-caused Raw shortfall as diagnostic when Pool/Core/Top10 supply is sufficient. |
+| Business Signals column | `BSIG-V1.1.5-corepool-top10-release` | Keeps Top10 as the primary business-signal desk, keeps the 企业AI化 secondary lens, applies Core Pool source hygiene gates, locks public titles to source titles or registered Chinese translations, and treats provider-caused Raw shortfall as diagnostic when Pool/Core/Top10 supply is sufficient. |
 | First-Line Viewpoints column | `FLV-V1.0.2-supervision-idempotency` | Keeps morning RSS page-data production and afternoon follow-builders skill publication independent, with Obsidian person/date timeline sync idempotency and publication closure checks. |
 | Community Intelligence column | `CINT-V1.0.2-publication-waiting-gate` | Keeps local logged-in collection separate from GitHub publication and treats open PR / queued workflow states after healthy same-date data as Waiting, not Problems. |
 | Enterprise AI / FDE lens | `EAI-V1.1.0-fde-lens-pool` | Boss-facing implementation lens backed by the independent FDE Lens Pool; not a fourth Card type. |
