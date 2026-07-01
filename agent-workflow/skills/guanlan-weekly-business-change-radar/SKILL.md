@@ -9,7 +9,7 @@ metadata:
     order: 90
     responsibility: "从 S×O×C 三方数据生成周度 AI 商业变化判断报告：趋势链五步法、100分机会评分、反共识判断、行业影响热力图。"
     upstream: "Business Signal Cards, First-Line Viewpoints data, Community Intelligence data"
-    downstream: "weekly business change radar report, opportunity cards, trend chains, AIP选题库"
+    downstream: "weekly business change radar report, opportunity cards, trend chains"
     gates: "data completeness (exact counts), cross-verification (S×O×C), trend chain evidence threshold (≥2 Signals each), opportunity card scoring (100-point), quality gates (8 checks)"
     recent_learning: "报告质量差异在于：是否用精确数字而非估计、是否点名具体公司/产品/金额、是否对不同角色给不同建议。agent-workflow 版强在具体数据，需补趋势链五步法和机会卡打分。"
     mirrored_in_skill_store: true
@@ -204,6 +204,5 @@ agent-workflow/reports/YYYY-MM-DD-weekly-ai-business-change-radar.md
 ## Handoff
 
 After weekly report, coordinate with:
-- Topic Center / AIP topic generation for article topics derived from opportunity cards and trend chains
 - `guanlan-trend-candidate-writer` only when a chain needs a lightweight trend-candidate decision
 - Codex / Hermes repair handoff when report generation exposes missing source data, weak counts, or cross-lane freshness gaps

@@ -31,12 +31,11 @@ Hermes should do this every Asia/Shanghai production day:
 2. 08:45 check Community Intelligence local output, archive, and gate. If local collector output is missing, record that local Chrome / login repair is required; do not pretend GitHub can collect it.
 3. 09:30 / 09:45 / 09:55 run the staged three-lane early handoff: `npm run hermes:early-handoff -- --date=<YYYY-MM-DD>`. At 09:30, Community publish and First-Line Viewpoints RSS may be dispatched while Business Signals records waiting. At 09:45, Business Signals may be dispatched while Community and First-Line only recheck active / failed / manual states. At 09:55, do final review only: wait for active runs, record dispatch failures, or mark `manual_required`; do not start a new routine dispatch.
 4. Before 10:00 use Business Signals Top10 health as a target checkpoint: same-date active data, exactly 10 items, no placeholder/source-domain titles, and no public candidate duplicate flood. Do not lower gates to hit the checkpoint.
-5. 10:20 read and report the Topic Center / Hermes Daily Brief only after Business Signals data is healthy or the upstream workflow has finished. If Business Signals is still queued or `in_progress`, wait instead of reporting missing topic data.
-6. 10:50 check PR / merge / GitHub Pages publication for lanes that produced data. For Business Signals, explicitly check merged PR, Pages success, same-date Business data, Top10 count, and whether local sync is blocked. This check must account for the 10:45 Community Intelligence publish fallback window.
-7. 10:55 run bounded morning recovery only for lanes still `failed` or `manual_required`. Do not run a second routine morning recovery pass.
-8. 16:30 record the follow-builders skill publish: check the local publish report and builders viewpoints output for the afternoon skill lane.
-9. For every failure, write cause, attempted action, result, report path, and one good / bad example into the Hermes report or inbox. Ask Codex to repair with validation and prevention.
-10. Never lower gates, edit generated data directly, push to `main`, or loop blind reruns.
+5. 10:50 check PR / merge / GitHub Pages publication for lanes that produced data. For Business Signals, explicitly check merged PR, Pages success, same-date Business data, Top10 count, and whether local sync is blocked. This check must account for the 10:45 Community Intelligence publish fallback window.
+6. 10:55 run bounded morning recovery only for lanes still `failed` or `manual_required`. Do not run a second routine morning recovery pass.
+7. 16:30 record the follow-builders skill publish: check the local publish report and builders viewpoints output for the afternoon skill lane.
+8. For every failure, write cause, attempted action, result, report path, and one good / bad example into the Hermes report or inbox. Ask Codex to repair with validation and prevention.
+9. Never lower gates, edit generated data directly, push to `main`, or loop blind reruns.
 
 ## Daily Entry
 
@@ -61,35 +60,6 @@ Primary outputs:
 - `agent-workflow/reports/daily-supervision-report-latest.json`
 - `agent-workflow/reports/daily-supervision-report-latest.md`
 
-## Topic Center Input
-
-Hermes should read the complete boss-topic table from GitHub, not a Top 3 summary:
-
-```text
-01-SiteV2/site/data/topic-center-hermes.json
-01-SiteV2/site/data/topic-center-hermes.md
-```
-
-The JSON contract is `readMode: all_topics`. Hermes should consume every item in `topics[]`, preserving `rank`, `score`, `sourceName`, `title`, `bossPain`, `moneyLine`, `actionHint`, and `evidenceBoundary`.
-
-Each topic also carries source material for follow-up processing:
-
-```text
-topics[].rawMaterials[]
-```
-
-Hermes should preserve `materialId`, `kind`, `id`, `role`, `title`, `source`, `url`, `note`, `localDataPath`, and `verificationUse`.
-
-- `role: fact_base` / `verificationUse: fact_base`: can be used as the factual base.
-- `role: viewpoint_lead` or `community_lead`: only use as demand, scene, or spreadability leads unless separately verified.
-- `localDataPath` points Hermes back to the GitHub data file and item id that supplied the material.
-
-When the Hermes Daily Brief is generated, the same complete topic table is also embedded under:
-
-```text
-agent-workflow/reports/<date>-hermes-daily-brief.json -> topic_center.topics[]
-```
-
 When the report status is `failed` or `manual_required`, the same command must create or update one open Hermes inbox item per affected lane under:
 
 ```text
@@ -112,7 +82,6 @@ agent-workflow/inbox/hermes-to-codex/
 | 09:30 | Early Handoff | Community: after the 08:30 Windows task, 08:45 publish check, and 09:00 Codex fallback, dispatch GitHub publish only if local output is healthy but unpublished. First-Line: after 08:30 local RSS and 09:17 GitHub fallback, dispatch RSS workflow only if same-date data / Obsidian sync is unhealthy and no run is active. Business: record `waiting`; do not dispatch yet. |
 | 09:45 | Business / Publish Recheck | Business: formally judge the 08:57 primary and 09:27 health dispatch path; dispatch only if data is unhealthy and no same-date run is active. Community and First-Line: recheck only queued / in_progress / failed / manual states; do not start a new routine dispatch for those lanes. |
 | 09:55 | Final Early Handoff | Final review only. Wait for active runs, record dispatch failures, or mark `manual_required`; avoid duplicate inbox writes and do not start a new routine dispatch. |
-| 10:20 | Topic Center / Hermes Daily Brief | Read `topic-center-hermes.json` / `.md` and the Hermes daily brief topic table after Business Signals has finished. This is a report checkpoint, not a separate topic-generation cron. |
 | 10:45 | Community Publish Fallback | Let the second Community Intelligence publish window run if first publication did not reach `main`. GitHub Pages follows after merge to `main`. |
 | 10:50 | Site publication | Check lane PR / merge / Pages status when GitHub state is available and after the Community 10:45 fallback window has had a chance to start. For Business Signals also check same-date data, Top10 count, and local sync status. |
 | 10:55 | Hermes Morning Recovery | Run `npm run hermes:morning-recovery -- --date=<YYYY-MM-DD>` or the GitHub workflow `.github/workflows/hermes-morning-recovery.yml`. If any lane is `failed` or `manual_required`, dispatch bounded recovery, then write the action/result report and Codex handoff artifacts. Do not run a second routine morning recovery pass. |

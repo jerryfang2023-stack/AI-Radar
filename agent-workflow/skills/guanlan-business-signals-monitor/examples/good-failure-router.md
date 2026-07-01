@@ -42,6 +42,6 @@ Use this when Business Signals has not cleanly published by the morning handoff 
 - Treating GitHub lookup timeout as proof that data generation failed.
 - Treating missing source-title translations as a reason to recollect Raw / Pool.
 - Treating skipped Pages, red workflow, missing manifest, or dirty local Obsidian sync as Business data failure after Top10 and gates pass.
-- Waiting until dashboard, topic-center, or Pages work to discover Top10 shortage.
+- Waiting until dashboard or Pages work to discover Top10 shortage.
 - Relaxing large-company caps to solve weekend low supply.
 - Filling Business Signal Cards from builders viewpoints, community posts, social feedback, repo roots, package pages, marketplace pages, or generic lists.

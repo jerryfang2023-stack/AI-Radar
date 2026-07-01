@@ -113,7 +113,7 @@ Use this order:
    - predicted Top10 eligibility after the large-company cap.
 4. If Raw is below floor because of provider quota or temporary outage, but Pool, routed Pool, Core Pool, non-large Core Pool, and predicted Top10 eligibility are sufficient, keep the Raw shortfall visible as a diagnostic and continue with Card / frontstage / PR work from the same artifact set.
    - Treat GDELT, keyword search, RSS, and AI HOT as peer source-artifact channels. Do not block release because one peer channel is empty or quota-limited when the combined peer artifacts already produce healthy Pool / Core Pool / Top10 supply.
-5. If Pool, routed Pool, Core Pool, non-large Core Pool, or Top10 eligibility is thin, repair the missing source lane first. Do not continue into dashboard, topic-center, or publication work.
+5. If Pool, routed Pool, Core Pool, non-large Core Pool, or Top10 eligibility is thin, repair the missing source lane first. Do not continue into dashboard or publication work.
 6. Generate Signal Cards from all eligible Core Pool items.
 7. Apply Top10 preselection with strict large-company caps before public JSON build. If formal Signal Card count is thinner than 10 but qualified source-backed Core Pool display candidates are sufficient, fill Top10 from those Core Pool candidates and continue publication; keep the six formal Signal Card gates unchanged.
 8. Build Business frontstage JSON.

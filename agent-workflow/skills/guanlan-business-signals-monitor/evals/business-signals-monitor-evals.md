@@ -16,7 +16,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
 
 4. `source_first_gate`
    - Pass when frontstage facts, titles, details, and source excerpts are traceable to original source text or accepted Raw / Pool evidence.
-   - Pass when the production workflow uses the unified Business frontstage gate immediately after building Business Signals frontstage data and before dashboard / topic-center generation.
+   - Pass when the production workflow uses the unified Business frontstage gate immediately after building Business Signals frontstage data and before dashboard generation.
 
 5. `lane_isolation`
    - Pass when the Business Signals PR stages no First-Line Viewpoints or Community Intelligence data.
@@ -57,7 +57,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Fail when a weekend / low-supply fallback bypasses the selector cap, or when the source-first gate is relaxed to accept more than 3 total large-company cards or more than 1 card from the same large company.
 
 14. `morning_failure_fast_path`
-    - Pass when Business Signals builds and validates the Business frontstage JSON before operations dashboard / topic-center data, so Top10, translation, source-first, and large-company-cap failures stop early with a categorized report.
+    - Pass when Business Signals builds and validates the Business frontstage JSON before operations dashboard data, so Top10, translation, source-first, and large-company-cap failures stop early with a categorized report.
     - Fail when source-first and frontstage regression run as separate late-stage checks after unrelated operations data has already been generated.
 
 15. `failure_category_router`
@@ -71,7 +71,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Fail when weekend recovery relaxes the large-company cap, accepts social/community/builder material as direct Business Signal facts, or treats a lower monitor floor as permission to weaken frontstage quality.
 
 17. `supply_preflight_before_cards`
-    - Pass when Raw / Pool output is checked for active Raw count, Pool/routed Pool count, Core Pool count, non-large Core Pool count, lane coverage, and predicted Top10 eligibility before Card generation and dashboard/topic-center work.
+    - Pass when Raw / Pool output is checked for active Raw count, Pool/routed Pool count, Core Pool count, non-large Core Pool count, lane coverage, and predicted Top10 eligibility before Card generation and dashboard work.
     - Fail when Top10 shortage, Core Pool shortage, or large-company-cap pressure is discovered only after public frontstage data has already been built.
 
 18. `publication_closure_checkpoint`

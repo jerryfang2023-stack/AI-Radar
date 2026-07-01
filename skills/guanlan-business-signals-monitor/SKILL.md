@@ -46,7 +46,6 @@ node agent-workflow/tools/generate-asset-cards-from-pool.mjs --date=<YYYY-MM-DD>
 node agent-workflow/tools/assert-pool-to-card-dedupe.mjs --date=<YYYY-MM-DD>
 node 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
 node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs
-node agent-workflow/tools/build-topic-center-data.mjs --date=<YYYY-MM-DD>
 node agent-workflow/tools/assert-v3-source-first-frontstage.mjs
 node agent-workflow/tools/frontstage-regression-gate.mjs
 ```
@@ -56,7 +55,7 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
    - Signal Card assets;
    - `v3-data-observation-desk.json`;
    - `intelligence-graph-index.json`;
-   - dashboard / topic-center data;
+   - operations dashboard data;
    - related reports and manifests.
 
 ## Pass Criteria

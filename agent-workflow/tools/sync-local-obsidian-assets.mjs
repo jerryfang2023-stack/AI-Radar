@@ -24,7 +24,6 @@ const commands = [
   ["node", ["01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"]],
   ["node", ["01-SiteV2/site/scripts/build-follow-builders-page-data.mjs"]],
   ["node", ["01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs"]],
-  ["node", ["agent-workflow/tools/export-topic-center-to-aip-md.mjs"]],
 ];
 
 function rel(file) {
@@ -81,9 +80,6 @@ function main() {
     "- `01-SiteV2/site/data/intelligence-graph-index.json`",
     "- `01-SiteV2/site/data/follow-builders-daily.json`",
     "- `01-SiteV2/site/data/site-content.json`",
-    "- `01-SiteV2/site/data/topic-center.json`",
-    "- `01-SiteV2/site/data/topic-center.js`",
-    "- `../04-AIP/01-选题库/<date>-每日选题.md`",
     "",
   );
 
@@ -97,9 +93,6 @@ function main() {
       "01-SiteV2/site/data/intelligence-graph-index.json",
       "01-SiteV2/site/data/follow-builders-daily.json",
       "01-SiteV2/site/data/site-content.json",
-      "01-SiteV2/site/data/topic-center.json",
-      "01-SiteV2/site/data/topic-center.js",
-      "../04-AIP/01-选题库/<date>-每日选题.md",
     ],
   }, null, 2));
 }
