@@ -11,7 +11,7 @@ metadata:
     upstream: "external source capture, daily persistent assets workflow, Hermes inbox"
     downstream: "Signal Cards, public Top10, graph inputs, trend candidates, PR publication"
     gates: "monitor QC, post-monitor Raw / Pool gate, six-gate Card entry, Card generation, source-first, frontstage Top10"
-    recent_learning: "Repeated Top10-missing incidents must be split into stale assets, source-artifact retry, translation-title, publication/local-sync, and supervision-observability categories before any full rerun. Provider-caused Raw shortfall is diagnostic when Pool/Core/Top10 supply is already sufficient."
+    recent_learning: "Repeated Top10-missing incidents must be split into stale assets, source-artifact retry, translation-title, publication/local-sync, and supervision-observability categories before any full rerun. Provider-caused Raw shortfall is diagnostic when Pool/Core/Top10 supply is already sufficient. Blind full-chain reruns are forbidden when same-date artifacts can support a targeted repair and publication."
     mirrored_in_skill_store: true
     memory_required: true
 ---
@@ -85,6 +85,17 @@ When repairing repeated morning failures, also read `examples/good-failure-route
 9. Add or tighten an eval before adding long prose when the failure is recurring.
 10. Close the Hermes inbox item only after validation, final commit or PR, and prevention are recorded.
 
+## Hard Stop: No Blind Full-Chain Reruns
+
+This is a hard requirement, not a preference.
+
+- Do not rerun the whole Business Signals workflow as the default response to a failure.
+- Start from the failed gate, report, run step, or published-data mismatch, then repair that specific stage.
+- If same-date Raw, Pool, Card, Core Pool, or frontstage artifacts already exist, reuse those artifacts for downstream repair and publication unless the failed stage proves they are corrupt or insufficient.
+- If Pool / routed Pool / Core Pool / non-large Core Pool and Top10 or Card supply are already sufficient, do not restart source raw collection just because one provider, peer channel, or quota-dependent source is short.
+- After a targeted repair passes the smallest relevant validation, proceed to PR / merge / Pages publication from the repaired artifacts. Do not dispatch another full-chain run to "be safe".
+- If a full-chain rerun is still necessary, first write the checklist result and the specific missing or corrupt artifact that makes artifact reuse impossible.
+
 ## Morning Fast Path
 
 The lane targets a healthy Top10 before 10:00 Asia/Shanghai by failing early and avoiding blind full-chain reruns. Treat 10:00 as a target checkpoint, not as permission to lower gates.
@@ -132,6 +143,7 @@ Weekend monitor quantity floors may be lighter because source volume is lower, b
 - Do not relax the large-company cap to solve weekend low supply; repair non-large Core Pool supply instead.
 - If routed Pool, Core Pool, or non-large Core Pool is short, repair with targeted recent-event refill: launches, funding, customer deployments, production rollouts, procurement, pricing, regulatory, or vertical workflow cases.
 - If Raw is reported short, identify the deficient source/channel or downstream eligibility bucket before rerunning. Do not call a translation-title, stale local checkout, publication, or local-sync issue a Raw shortage. If Pool/Core/Top10 supply is already enough, proceed downstream from the existing artifacts instead of starting another full Raw run.
+- Do not convert a downstream gate failure, publication failure, stale local checkout, or version mismatch into a full Raw / Pool / Card rerun. Fix the failing downstream stage and publish after validation.
 - Do not satisfy quantity gaps by promoting marketplace listings, directories, repo roots, package/model pages, generic guides, broad lists, funding roundups, generic funding commentary, interviews, old evergreen technical posts, or search snippets into Core Pool.
 - Do not satisfy quantity gaps with generic FDE / applied-AI implementation pages. Job posts, role explainers, consulting/service landing pages, and "what is FDE" articles stay non-core unless the same original source has a concrete dated customer deployment, launch, financing, procurement, partnership, or production rollout.
 - Treat `source_level` / `acquisition_source_level` as traceability-only labels. They must not be value scores, core gates, ranking inputs, or automatic downgrade reasons.
