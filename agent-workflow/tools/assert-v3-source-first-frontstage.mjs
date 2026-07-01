@@ -147,9 +147,11 @@ try {
 
 const issues = walk(payload);
 const cards = Array.isArray(payload.cards) ? payload.cards : [];
+const corePoolCandidates = Array.isArray(payload.corePoolCandidates) ? payload.corePoolCandidates : [];
 const frontstageCards = Array.isArray(payload.frontstageCards) ? payload.frontstageCards : cards;
 const top10 = Array.isArray(payload.top10) ? payload.top10 : [];
 const cardIds = new Set(cards.map((card) => card.id).filter(Boolean));
+const publicAssetIds = new Set([...cards, ...corePoolCandidates].map((card) => card.id).filter(Boolean));
 const activeDate = payload.meta?.activeDate || "";
 if (expectedDate && activeDate !== expectedDate) {
   issues.push(`payload activeDate is ${activeDate || "(missing)"}, expected ${expectedDate}`);
@@ -411,7 +413,7 @@ function sourceUrlIsRootLike(value = "") {
 
 const frontstageByDate = new Map();
 for (const card of frontstageCards) {
-  if (!cardIds.has(card.id)) issues.push(`frontstage card ${card.id || "(missing id)"} is not present in full cards asset set`);
+  if (!publicAssetIds.has(card.id)) issues.push(`frontstage card ${card.id || "(missing id)"} is not present in full cards or core pool candidate asset set`);
   checkPublicCardContract(card, `frontstage card ${card.date || "(missing date)"}`);
   if (!card.date) continue;
   const list = frontstageByDate.get(card.date) || [];

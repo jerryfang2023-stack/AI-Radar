@@ -21,7 +21,7 @@ WaveSight AI is now in SITE-V3.3.8.7 Report Center Monthly Release.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
 - The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
 - SITE-V3.3.8.7 keeps the unified frontstage and SITE-V3.3.8.6 release-gate hardening, then upgrades Intelligence Map into a Reports Center with Weekly and Monthly report subcolumns plus full monthly report detail pages.
-- Current column versions: Business Signals `BSIG-V1.1.4-pool-core-release-gate`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Intelligence Map `IMAP-V1.3.0-report-center-monthly`.
+- Current column versions: Business Signals `BSIG-V1.1.5-corepool-top10-release`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Intelligence Map `IMAP-V1.3.0-report-center-monthly`.
 
 ## Current Entries
 

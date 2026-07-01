@@ -11,7 +11,7 @@ const intelligenceGraphIndexFile = path.join(siteDataDir, "intelligence-graph-in
 const enterpriseAiFdeFile = path.join(siteDataDir, "enterprise-ai-fde.json");
 const sourceTitleTranslationsFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
 const siteVersion = "SITE-V3.3.8.7";
-const businessSignalsColumnVersion = "BSIG-V1.1.4-pool-core-release-gate";
+const businessSignalsColumnVersion = "BSIG-V1.1.5-corepool-top10-release";
 const enterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
 const intelligenceMapColumnVersion = "IMAP-V1.3.0-report-center-monthly";
 
@@ -1121,6 +1121,15 @@ function publicCardFillIsDisplayReady(card = {}) {
   return true;
 }
 
+function corePoolCandidateFillIsDisplayReady(card = {}) {
+  const title = String(card.title || card.displayTitle || "").trim();
+  const fact = String(card.translatedFact || card.visibleFragment || card.summary || "").trim();
+  if (!title || !card.sourceUrl) return false;
+  if (publicTextLooksGarbled(title) || isBadPublicDisplayTitle(title) || titleLooksLikeGeneratedTemplate(title)) return false;
+  if (!fact || publicTextLooksGarbled(fact) || publicContentNeedsTranslation(fact)) return false;
+  return true;
+}
+
 function publicFdeCandidateIsDisplayReady(card = {}) {
   const title = String(card.title || card.displayTitle || "").trim();
   const fact = String(card.translatedFact || card.visibleFragment || card.summary || "").trim();
@@ -1312,11 +1321,11 @@ function normalizeFrontstageDisplay(card = {}, options = {}) {
 
 function top10CompatCard(card = {}) {
   const sourceTitle = sourceFrontstageTitle(card, card.originalTitle);
-  const displayTitle = publicDisplayTitle(sourceTitle, "", card.sourceUrl);
+  const displayTitle = publicDisplayTitle(sourceTitle, "", card.sourceUrl) || card.displayTitle || card.title;
   return {
     ...card,
     generatedTitle: displayTitle,
-    sourceTitle,
+    sourceTitle: sourceTitle || displayTitle,
     displayTitle,
     title: displayTitle,
   };
@@ -1521,6 +1530,16 @@ function frontstageCandidateSubject(sourceUrl = "", rawTitle = "", title = "", s
   if (urlSubject && !isWeakSubject(urlSubject)) return urlSubject;
   const titleSubject = normalizeSubject(subjectFromTitle(title) || subjectFromTitle(rawTitle));
   if (titleSubject && !isWeakSubject(titleSubject)) return titleSubject;
+  const displayTitle = cleanPoolDisplayTitle(title || rawTitle);
+  const actionSubject = displayTitle.match(/^([\u4e00-\u9fffA-Za-z0-9 .&/-]{2,36}?)(?:\s*)(将|发布|推出|完成|获得|获|融资|估值|现可|上线|登陆|提升|部署|采用|使用)/u)?.[1] || "";
+  const normalizedActionSubject = normalizeSubject(actionSubject);
+  if (normalizedActionSubject && !isWeakSubject(normalizedActionSubject)) return normalizedActionSubject;
+  const knownEntity = displayTitle.match(/\b(Moondream Photon|Moondream|Apptronik|Anthropic|Kimi|Cursor|Acti|OpenClaw|EquiLibre|LongCat)\b/iu)?.[1] || "";
+  const normalizedKnownEntity = normalizeSubject(knownEntity);
+  if (normalizedKnownEntity && !isWeakSubject(normalizedKnownEntity)) return normalizedKnownEntity;
+  const leadingEntity = displayTitle.match(/^([A-Z][A-Za-z0-9 .&/-]{1,30})(?=\s|将|通过|建成|发布|推出|估值|完成|获|$)/u)?.[1] || "";
+  const normalizedLeadingEntity = normalizeSubject(leadingEntity);
+  if (normalizedLeadingEntity && !isWeakSubject(normalizedLeadingEntity)) return normalizedLeadingEntity;
   const sourceSubject = normalizeSubject(sourceName);
   if (sourceSubject && !isWeakSubject(sourceSubject)) return sourceSubject;
   const domainSubject = normalizeSubject(domain(sourceUrl));
@@ -2214,7 +2233,7 @@ function buildDailyFrontstageSelection(
     const sourceBackedFill = coreCandidates
       .filter((card) => !rankedIds.has(card.id))
       .filter((card) => !card.frontstageGenericCandidate)
-      .filter(publicCardFillIsDisplayReady)
+      .filter((card) => (card.type === "core_pool_candidate" ? corePoolCandidateFillIsDisplayReady(card) : publicCardFillIsDisplayReady(card)))
       .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
     const rejected = [];
     const selectedForDate = [];
@@ -2339,6 +2358,22 @@ function poolRef(section = "") {
 function poolTitle(section = "") {
   const heading = section.match(/^##\s+P-\d+\s*[｜|:：~\-–—]*(.+)$/mu)?.[1] || "";
   return heading.trim();
+}
+
+function cleanPoolDisplayTitle(value = "") {
+  return String(value || "")
+    .replace(/^[\s|｜:：\-—–锝渱锛殈鈥撯€擼]+/u, "")
+    .replace(/\s+/gu, " ")
+    .trim();
+}
+
+function corePoolPublicTitle(rawTitle = "", sourceUrl = "") {
+  const sourceTitle = publicTitleCandidate(rawTitle, sourceUrl);
+  if (sourceTitle) return sourceTitle;
+  const cleaned = cleanPoolDisplayTitle(rawTitle);
+  if (!hasCjk(cleaned)) return "";
+  if (publicTextLooksGarbled(cleaned) || isBadPublicDisplayTitle(cleaned) || titleLooksLikeGeneratedTemplate(cleaned)) return "";
+  return short(cleaned, 120);
 }
 
 function poolCandidateCategory(section = "") {
@@ -2497,17 +2532,89 @@ function dedupeEnterpriseAiFdePoolItems(items = []) {
   return [...byKey.values()];
 }
 
+function supplementalCorePoolCandidateItems(existingItems = [], activeDate = "") {
+  const existingRefs = new Set(existingItems.map((item) => item.sourceRef).filter(Boolean));
+  return poolCandidateSectionsForDate(activeDate)
+    .filter((section) => splitCsv(poolValue(section, "pool_routes")).includes("core_pool"))
+    .map((section) => {
+      const ref = poolRef(section);
+      if (!ref || existingRefs.has(ref)) return null;
+      const sourceUrl = poolValue(section, "source_url");
+      const rawTitle = poolTitle(section);
+      const title = corePoolPublicTitle(rawTitle, sourceUrl);
+      if (!title || !sourceUrl) return null;
+      if (isRepositoryOrCatalogSourceUrl(sourceUrl)) return null;
+      if (isGenericFundingOrListSource({ title, originalTitle: title, sourceTitle: title, sourceUrl })) return null;
+      const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
+      if (!fact || publicTextLooksGarbled(fact) || publicContentNeedsTranslation(fact)) return null;
+      const importanceScore = Number(poolValue(section, "importance_score")) || 0;
+      const score = Number(poolValue(section, "score")) || 0;
+      const category = poolCandidateCategory(section);
+      const subject = frontstageCandidateSubject(sourceUrl, rawTitle, title, poolValue(section, "source"));
+      return {
+        id: `POOL-${activeDate}-${ref}`,
+        type: "core_pool_candidate",
+        category,
+        categoryLabel: categoryLabels[category] || category,
+        title,
+        originalTitle: title,
+        sourceTitle: title,
+        displayTitle: title,
+        generatedTitle: title,
+        date: activeDate,
+        subject,
+        source: domain(sourceUrl) || poolValue(section, "source"),
+        sourceName: domain(sourceUrl) || poolValue(section, "source"),
+        sourceUrl,
+        sourceLevel: poolValue(section, "source_level"),
+        importanceScore,
+        poolRoutes: frontstagePoolRoutes(splitCsv(poolValue(section, "pool_routes"))),
+        tags: {},
+        flatTags: [],
+        displayTags: sanitizeDisplayTags([{ id: category, label: categoryLabels[category] || category }]),
+        summary: fact,
+        translatedFact: fact,
+        originalHighlights: [fact],
+        visibleFragment: fact,
+        sourceLinks: [sourceUrl],
+        status: "pooled",
+        assetLevel: "core_pool",
+        promotionStatus: "candidate_only",
+        notPromotedReason: "Core Pool supply candidate for Top10 release gate",
+        notPromotedIssues: [],
+        repairSuggestion: "",
+        promotePriority: "review",
+        evidenceGate: poolValue(section, "evidence_level") || "core_evidence_candidate",
+        largeVendorKey: largeVendorKeyForCard({ title, sourceUrl }),
+        largeVendor: Boolean(largeVendorKeyForCard({ title, sourceUrl })),
+        frontstageRankScore: score * 100 + importanceScore * 10,
+        frontstageEditorialScore: score * 100 + importanceScore * 10,
+        frontstageEvidenceScore: Number(poolValue(section, "readability_score")) || 0,
+        frontstageSelectionReasons: ["进入当天 Core Pool", "用于补足 Top10 发布供给"],
+        frontstageValueDescription: fact,
+        frontstageQualityWarnings: [],
+        frontstageGenericCandidate: false,
+        fromCorePool: true,
+        sourceRef: ref,
+      };
+    })
+    .filter(Boolean)
+    .filter(corePoolCandidateFillIsDisplayReady)
+    .filter((card) => !isWeakSubject(card.subject));
+}
+
 function buildCorePoolCandidateItems(cards = [], activeDate = "") {
   const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
   const notPromotedByRef = corePoolNotPromotedMap(activeDate);
   const items = poolCandidateSectionsForDate(activeDate)
     .filter((section) => splitCsv(poolValue(section, "pool_routes")).includes("core_pool"))
-    .filter((section) => isPublicBusinessSignalEligible({
-      title: poolTitle(section),
-      originalTitle: poolTitle(section),
-      sourceUrl: poolValue(section, "source_url"),
-      sourceTitle: poolTitle(section),
-    }))
+    .filter((section) => {
+      const sourceUrl = poolValue(section, "source_url");
+      const title = poolTitle(section);
+      if (isRepositoryOrCatalogSourceUrl(sourceUrl)) return false;
+      if (isGenericFundingOrListSource({ title, originalTitle: title, sourceTitle: title, sourceUrl })) return false;
+      return true;
+    })
     .map((section) => {
       const ref = poolRef(section);
       const sourceUrl = poolValue(section, "source_url");
@@ -2525,7 +2632,8 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
       }
       const promotion = candidatePromotionCopy(notPromotedByRef.get(ref) || {});
       const rawTitle = poolTitle(section);
-      const title = publicTitleCandidate(rawTitle, sourceUrl);
+      const title = corePoolPublicTitle(rawTitle, sourceUrl);
+      if (!title) return null;
       const category = poolCandidateCategory(section);
       const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
       const importanceScore = Number(poolValue(section, "importance_score")) || 0;
@@ -2536,7 +2644,10 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
         category,
         categoryLabel: categoryLabels[category] || category,
         title,
-        originalTitle: rawTitle === title ? "" : rawTitle,
+        originalTitle: title,
+        sourceTitle: title,
+        displayTitle: title,
+        generatedTitle: title,
         date: activeDate,
         subject: frontstageCandidateSubject(sourceUrl, rawTitle, title, poolValue(section, "source")),
         source: domain(sourceUrl) || poolValue(section, "source"),
@@ -4013,17 +4124,22 @@ const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPubli
   .filter(publicCandidateIsDisplayReady)
   .map(annotateFrontstageCandidate)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
-const frontstageSelection = buildDailyFrontstageSelection(cards);
+const baseCorePoolCandidates = buildCorePoolCandidateItems(cards, activeDate);
+const corePoolCandidates = dedupeCorePoolCandidateItems([
+  ...baseCorePoolCandidates,
+  ...supplementalCorePoolCandidateItems(baseCorePoolCandidates, activeDate),
+])
+  .map((card) => (card.promotionStatus === "candidate_only" ? card : normalizeFrontstageDisplay(card, { strictPublic: false })))
+  .filter((card) => (card.type === "core_pool_candidate" ? corePoolCandidateFillIsDisplayReady(card) : publicCardFillIsDisplayReady(card)))
+  .filter((card) => !isWeakSubject(card.subject));
+const candidateOnlyCorePool = corePoolCandidates.filter((card) => card.promotionStatus === "candidate_only");
+const frontstageSelection = buildDailyFrontstageSelection([...cards, ...candidateOnlyCorePool]);
 const frontstageCards = frontstageSelection.cards;
 
 const top10 = frontstageCards
   .filter((card) => card.date === activeDate)
   .slice(0, 10)
   .map(top10CompatCard);
-const corePoolCandidates = buildCorePoolCandidateItems(cards, activeDate)
-  .map(normalizeFrontstageDisplay)
-  .filter(publicCandidateIsDisplayReady)
-  .filter((card) => !isWeakSubject(card.subject));
 const enterpriseAiLensCandidates = buildEnterpriseAiLensCandidateItems(cards, activeDate)
   .map(normalizeFrontstageDisplay)
   .map((card) => ({
