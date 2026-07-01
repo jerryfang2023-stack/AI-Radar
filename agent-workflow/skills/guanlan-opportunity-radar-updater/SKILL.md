@@ -1,6 +1,6 @@
 ---
 name: guanlan-opportunity-radar-updater
-description: "Use when updating, rebuilding, auditing, or explaining the Reports Center opportunity maps: Entry Point Map / 切入点地图 and Product Pain Map / 痛点地图. Applies to weekly refreshes of opportunity_signals, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, evidence modal behavior, and repairs when these maps become generic, label-driven, squeezed behind toggles, or disconnected from original articles. Do not use for weekly/monthly report prose, trend candidates, or old formal_tags aggregation."
+description: "Use when updating, rebuilding, auditing, or explaining the Reports Center opportunity maps: Entry Point Map and Product Pain Map. Applies to weekly refreshes of opportunity_signals, source-backed field extraction, heat-cell scoring, buyer-task and pain-product matrices, evidence modal behavior, and repairs when these maps become generic, label-driven, squeezed behind toggles, or disconnected from original articles. Do not use for weekly/monthly report prose, trend candidates, or old formal_tags aggregation."
 metadata:
   guanlan:
     version: "1.1.0"
@@ -22,8 +22,8 @@ metadata:
 
 Use this skill to update the Reports Center's two startup-oriented maps:
 
-- `切入点图`: buyer or user x specific task.
-- `产品痛点图`: pain or constraint x product form / delivery model.
+- `Entry Point Map`: buyer or user x specific task.
+- `Product Pain Map`: pain or constraint x product form / delivery model.
 
 Do not write weekly/monthly report prose with this skill. Relation paths may sit near the maps on the Reports Center page, but the map evidence still comes from `opportunity_signals`.
 
@@ -64,8 +64,8 @@ Do not run a full map rewrite every day. Daily Cards may add `opportunity_signal
    - adoption evidence;
    - source evidence type.
 4. Generate the two maps from those fields:
-   - `切入点图`: buyer/team rows x specific-task columns.
-   - `产品痛点图`: pain rows x product-form or delivery-model columns.
+   - `Entry Point Map`: buyer/team rows x specific-task columns.
+   - `Product Pain Map`: pain rows x product-form or delivery-model columns.
 5. Compare 7-day cells against the 30-day baseline.
 6. Leave unsupported cells blank. A blank cell is better than a vague cell.
 7. Keep the two maps as separate frontstage sections with their own Chinese / English subcolumn names.
@@ -128,7 +128,8 @@ When a cell is highlighted, include at least one Card id or source title in the 
 Before finishing:
 
 1. Verify both maps still render in `01-SiteV2/site/intelligence-map.html`.
-2. Verify no `Signal Candidates`, `时间聚集`, or old `Tag 聚合` module returns.
-3. Verify the old map toggle buttons and persistent right-side evidence panel do not return.`r`n4. Verify relation path data was not converted into `opportunity_signals`.
+2. Verify no `Signal Candidates`, old time-clustering, or old tag-aggregation module returns.
+3. Verify the old map toggle buttons and persistent right-side evidence panel do not return.
+4. Verify relation path data was not converted into `opportunity_signals`.
 5. Run the most relevant syntax check for edited scripts.
 6. Run `node agent-workflow/tools/frontstage-regression-gate.mjs` after page/data changes.

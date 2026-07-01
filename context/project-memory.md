@@ -17,7 +17,7 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 ## Stable Identity
 
 - WaveSight AI / Guanlan AI is an AI business intelligence asset system, not a general content site.
-- The public frontstage is organized around Business Signals, Intelligence Map, First-Line Viewpoints, and Community Intelligence.
+- The public frontstage is organized around Business Signals, Reports Center, First-Line Viewpoints, and Community Intelligence.
 - Dashboard / Operations Console is a backend-facing operations surface, not a public content column.
 - Business Signals is the source-backed asset chain for Raw / Pool / Card / relationship graph / trend-candidate work.
 - First-Line Viewpoints is an independent builders / operator viewpoints column.
@@ -31,13 +31,13 @@ This file records stable project memory for WaveSight AI / Guanlan AI. It is not
 - Do not restore legacy copy gates as publication blockers.
 - Builders / First-Line Viewpoints must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 - Community posts are demand signals unless recaptured through source-backed business evidence.
-- If an old rule conflicts with current V3.3 context, rebuild or delete the old route instead of preserving compatibility.
+- If an old rule conflicts with current SITE-V3.4.0 context, rebuild or delete the old route instead of preserving compatibility.
 
 ## Operating Model
 
 - Column-level production is independent; site-level publication is unified.
 - Business Signals, First-Line Viewpoints, and Community Intelligence each own their monitoring, gates, persistence, and PR boundary.
-- Intelligence Map and Dashboard follow the relevant upstream data chains.
+- Reports Center and Dashboard follow the relevant upstream data chains.
 - Hermes supervises, records, classifies, and hands off failures.
 - Codex repairs root causes, validates fixes, records prevention, and prepares git changes.
 - Hermes should not directly rewrite production rules, merge PRs, bypass gates, or judge Codex work by commit author name.

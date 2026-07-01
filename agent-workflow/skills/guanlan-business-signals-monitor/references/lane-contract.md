@@ -5,7 +5,7 @@ The Business Signals lane owns:
 - daily Raw / Pool evidence for business signals;
 - Signal Cards of type `product_service`, `funding`, and `case`;
 - public active-date Top10;
-- Intelligence Map inputs derived from accepted Cards;
+- Reports Center map inputs derived from accepted Cards;
 - trend-candidate inputs derived from multiple same-direction business signals;
 - Business Signals PR publication boundary.
 

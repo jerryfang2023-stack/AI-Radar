@@ -60,9 +60,9 @@ Community Intelligence uses the logged-in scys.com / aipoju.com collection route
 
 ## Paused / Retired
 
-Legacy content-output routes, old page modules, and legacy copy gates are not current V3.3 required outputs or execution truth.
+Legacy content-output routes, old page modules, and legacy copy gates are not current SITE-V3.4.0 required outputs or execution truth.
 
-Old V2 pages are retired. If old rules conflict with V3.3, remove or rebuild them instead of preserving compatibility.
+Old V2 pages are retired. If old rules conflict with SITE-V3.4.0, remove or rebuild them instead of preserving compatibility.
 
 ## Current Hard Rules
 

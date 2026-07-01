@@ -1,14 +1,14 @@
 ---
 name: guanlan-monthly-business-structure-report
-description: Produce WaveSight AI monthly business structure and opportunity reports. Use when writing, revising, or auditing a monthly report from Business Signals, weekly reports, Community Intelligence, First-Line Viewpoints, Intelligence Map, trend candidates, or opportunity maps. The report must diagnose industry-structure change,裁决趋势, build an opportunity map, and define next-month verification conditions. Do not use for daily Cards, weekly reports, frontstage page generation, or business-signal fact creation.
+description: Produce WaveSight AI monthly business structure and opportunity reports. Use when writing, revising, or auditing a monthly report from Business Signals, weekly reports, Community Intelligence, First-Line Viewpoints, Reports Center context, trend candidates, or opportunity maps. The report must diagnose industry-structure change, adjudicate trends, build an opportunity map, and define next-month verification conditions. Do not use for daily Cards, weekly reports, frontstage page generation, or business-signal fact creation.
 metadata:
   guanlan:
     version: "0.1.0"
     lane: "Business Signals"
     status: "current sub-skill"
     order: 95
-    responsibility: "Write monthly AI business structure and opportunity reports from Signals, weekly reports, Community Intelligence, First-Line Viewpoints, and Intelligence Map context."
-    upstream: "Business Signal Cards, weekly business change radar reports, Community Intelligence demand signals, First-Line Viewpoints expectation shifts, Intelligence Map context"
+    responsibility: "Write monthly AI business structure and opportunity reports from Signals, weekly reports, Community Intelligence, First-Line Viewpoints, and Reports Center context."
+    upstream: "Business Signal Cards, weekly business change radar reports, Community Intelligence demand signals, First-Line Viewpoints expectation shifts, Reports Center context"
     downstream: "monthly business structure report, trend adjudication table, opportunity map, next-month verification list"
     gates: "source-backed fact boundary, no weekly-roundup structure, multi-signal trend threshold, opportunity buyer/workflow/trigger completeness, next-month verification conditions"
     recent_learning: "A strong monthly report should merge the expressive structure of the DeepSeek draft with WaveSight evidence discipline: keep deployment-delivery-layer judgment, but remove or mark unverified external macro numbers."

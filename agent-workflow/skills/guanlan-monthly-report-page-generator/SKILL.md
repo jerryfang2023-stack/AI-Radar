@@ -4,12 +4,12 @@ description: Use when creating, updating, or repairing WaveSight AI monthly repo
 metadata:
   guanlan:
     version: "1.0.0"
-    lane: "Intelligence Map"
+    lane: "Reports Center"
     status: "current sub-skill"
     order: 96
     responsibility: "Generate and maintain monthly report frontstage pages from accepted monthly report Markdown."
-    upstream: "monthly report Markdown, Reports center, Intelligence Map page, Guanlan VI rules"
-    downstream: "monthly report detail page, Reports center monthly entry, page styles, version metadata"
+    upstream: "monthly report Markdown, Reports Center page, Guanlan VI rules"
+    downstream: "monthly report detail page, Reports Center monthly entry, page styles, version metadata"
     gates: "content-source discipline, full-report rendering, Guanlan VI fit, table readability, responsive visual smoke, frontstage regression, skill self-iteration"
     recent_learning: "Monthly detail pages must show the full report with rich visual reading structure; nonessential data-boundary fields should be compressed into the appendix, hero helper copy should be removed when the title and core statement already explain the page, and all tables need editorial styling rather than raw grid rendering."
     mirrored_in_skill_store: true

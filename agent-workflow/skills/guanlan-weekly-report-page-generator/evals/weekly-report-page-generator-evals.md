@@ -37,4 +37,4 @@
 6. Fail if the detail page has horizontal overflow at 390px mobile width.
 7. Fail if `返回周报列表`, `返回情报地图`, or `查看行动结论` is present without explicit user request.
 8. Fail if the detail hero has a long deck paragraph after the user has asked to remove it.
-9. Fail if Intelligence Map weekly report shows three boxed KPI count cards instead of compact tags.
+9. Fail if Reports Center weekly report shows three boxed KPI count cards instead of compact tags.

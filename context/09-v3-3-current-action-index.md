@@ -1,18 +1,18 @@
 ---
 status: current
 scope: v3-3-current-action-index
-last_updated: 2026-06-30
+last_updated: 2026-07-01
 use_when:
   - choose current action
   - recover missing actions
-  - dispatch SITE-V3.3.8.6 production work
+  - dispatch SITE-V3.4.0 production work
   - distinguish current actions from historical tasks
 priority: current
 ---
 
-# SITE-V3.3.8.6 Current Action Index
+# SITE-V3.4.0 Current Action Index
 
-This file is the current action registry for WaveSight AI SITE-V3.3.8.6.
+This file is the current action registry for WaveSight AI SITE-V3.4.0.
 
 Use it before historical dispatch boards, feature lists, closeouts, or V2 action records. Historical files can explain why a rule exists, but they must not add actions back into the current production system.
 
@@ -22,15 +22,15 @@ Every action, old or new, must be treated as one of these classes:
 
 | Status | Meaning | Codex Behavior |
 |---|---|---|
-| `current` | Active SITE-V3.3.8.6 production action. | May be used as a default execution route. |
+| `current` | Active SITE-V3.4.0 production action. | May be used as a default execution route. |
 | `manual/archive` | Historical or diagnostic action with reference value. | May be read or manually consulted, but must not run by default. |
 | `retired` | Explicitly stopped action or output. | Must not be restored, required, or used as a blocker. |
 
-Do not mark an old action as `current` just because it existed before. Only a SITE-V3.3.8.6-compatible route that serves the current asset system can be `current`.
+Do not mark an old action as `current` just because it existed before. Only a SITE-V3.4.0-compatible route that serves the current asset system can be `current`.
 
 ## Current Actions
 
-Only these actions are `current` for SITE-V3.3.8.6:
+Only these actions are `current` for SITE-V3.4.0:
 
 | Action | Status | Current Role |
 |---|---|---|
@@ -42,8 +42,8 @@ Only these actions are `current` for SITE-V3.3.8.6:
 | Source-first check | `current` | Ensure frontstage facts are original-source backed. |
 | Pool-to-Card dedupe | `current` | Prevent duplicate evidence from becoming duplicate Cards. |
 | Relationship graph build | `current` | Build Card-derived nodes, edges, and evidence links. |
-| Opportunity radar weekly update | `current` | Refresh the Intelligence Map Entry Point Map and Product Pain Map once per week from source-backed opportunity_signals. |
-| Intelligence Map weekly report | `current` | Publish the weekly report entry and detail page from the weekly business-change radar report. |
+| Reports Center opportunity maps | `current` | Refresh the Entry Point Map and Product Pain Map once per week from source-backed opportunity_signals and keep cell evidence in click-to-open modals. |
+| Reports Center reports | `current` | Publish monthly / weekly report entries and detail pages from accepted report Markdown. |
 | Trend candidate judgment | `current` | Judge repeated same-direction signals as internal candidates, not long-form publication output. |
 | First-line viewpoints RSS update | `current` | Update builders viewpoints from the morning RSS / podcast route independently from business signals. |
 | First-line viewpoints skill publish | `current` | Update builders viewpoints from the afternoon local follow-builders skill route independently from business signals. |
@@ -203,11 +203,11 @@ Boundaries:
 - Do not include builders viewpoints or opinion-only materials.
 - Do not replace the graph with long prose cards.
 
-### 5.1 Opportunity Radar Weekly Update
+### 5.1 Reports Center Opportunity Maps
 
 Purpose:
 
-- Refresh the Intelligence Map's two startup-oriented opportunity panels once per week:
+- Refresh the Reports Center's two startup-oriented opportunity maps once per week:
   - Entry Point Map / 切入点图: buyer or user x concrete task.
   - Product Pain Map / 产品痛点图: pain or constraint x product form / delivery model.
 
@@ -230,7 +230,7 @@ Cadence:
 Outputs:
 
 - refreshed `opportunity_signals` when source-near fields need repair.
-- updated Intelligence Map opportunity panels.
+- updated Reports Center opportunity map panels.
 - validation report from frontstage regression when page or data output changes.
 
 Boundaries:
@@ -239,20 +239,20 @@ Boundaries:
 - Do not use First-Line Viewpoints or Community Intelligence as direct map evidence unless separately promoted through Raw / Pool / Card.
 - Do not modify relationship graph tag logic from this route.
 
-### 6. Intelligence Map Weekly Report
+### 6. Reports Center Reports
 
 Purpose:
 
-- Publish the weekly AI business change radar as an Intelligence Map subcolumn and detail page.
+- Publish monthly / weekly AI business reports as Reports Center entries and detail pages.
 
 Primary route:
 
 - Weekly report source: `01-SiteV2/content/08-report/`.
-- Frontstage pages: `01-SiteV2/site/intelligence-map.html` and `01-SiteV2/site/weekly-ai-business-change-radar.html`.
+- Frontstage pages: `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/reports.html`, `01-SiteV2/site/monthly-business-structure-2026-06.html`, and weekly report detail pages.
 
 Boundaries:
 
-- Weekly report is a site publication layer, not the Business Signals Card source of truth.
+- Reports are site publication layers, not the Business Signals Card source of truth.
 - Opinions and Community Intelligence can support interpretation and demand cross-checks, but they must not become business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 
 ### 7. Trend Candidate Judgment
@@ -372,7 +372,7 @@ Outputs:
 Boundaries:
 
 - Business Signals keeps daily Top 10 as the primary view.
-- Intelligence Map follows the Business Signals Card chain and does not open a separate PR.
+- Reports Center maps follow the Business Signals Card chain. Report pages can update through report-center page work.
 - First-Line Viewpoints keeps the same topbar height and structure.
 - First-Line Viewpoints data must be produced and gated by its independent workflow, not by the Business Signals PR.
 - First-Line Viewpoints Obsidian timelines must be produced from the same gated `follow-builders-daily.json`, not from retired `05-frontier-opinions`.
@@ -494,19 +494,19 @@ Boundaries:
 
 ## Retired Actions
 
-The following action groups are `retired` for current V3.3:
+The following action groups are `retired` for current V3.4:
 
 | Action Group | Status | Reason |
 |---|---|---|
-| legacy content-output routes | `retired` | Current V3.3 is an asset system, not an old content-production lane. |
+| legacy content-output routes | `retired` | Current V3.4 is an asset system, not an old content-production lane. |
 | V2 four-column website page production | `retired` | V2 homepage and four-column public site routes are retired. |
 | legacy copy gates | `retired` | Not current publication blockers. |
 | opinion lane as business-signal evidence | `retired` | First-line viewpoints are independent and cannot feed signal, graph, or trend evidence. |
 | builders / follow-builders mixed into Cards | `retired` | Builders content must remain outside business-signal Cards. |
 | builders / follow-builders mixed into relationship graph | `retired` | Graph evidence must come from accepted business-signal Cards. |
 | builders / follow-builders mixed into trend candidates | `retired` | Trend candidates require multiple business-signal Cards, not viewpoints. |
-| old V2 frontstage modules as current pages | `retired` | Current pages are Business Signals, Intelligence Map, Weekly Report, First-Line Viewpoints, Community Intelligence, and Dashboard. |
-| temporary-only daily asset generation | `retired` | Current V3.3 automation must persist assets through PR / deploy / sync. |
+| old V2 frontstage modules as current pages | `retired` | Current pages are Business Signals, Reports Center, Monthly / Weekly Reports, First-Line Viewpoints, Community Intelligence, and Dashboard. |
+| temporary-only daily asset generation | `retired` | Current V3.4 automation must persist assets through PR / deploy / sync. |
 
 If a script or old task requires one of these as a blocker for current production, treat it as historical contamination and update the route.
 

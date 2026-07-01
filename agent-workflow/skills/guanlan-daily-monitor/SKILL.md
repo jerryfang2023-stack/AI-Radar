@@ -1,6 +1,6 @@
 ---
 name: guanlan-daily-monitor
-description: Use when running, repairing, or updating the WaveSight AI current V3.3 daily monitor source-capture layer for the Business Signals lane. It collects Raw candidates, captures original source evidence, routes Pool evidence, writes monitor logs, and hands off to monitor quality gates. It does not generate Cards, write frontstage copy, run First-Line Viewpoints, run Community Intelligence, or produce retired daily observation / brief / trend-report outputs.
+description: Use when running, repairing, or updating the WaveSight AI current SITE-V3.4.0 daily monitor source-capture layer for the Business Signals lane. It collects Raw candidates, captures original source evidence, routes Pool evidence, writes monitor logs, and hands off to monitor quality gates. It does not generate Cards, write frontstage copy, run First-Line Viewpoints, run Community Intelligence, or produce retired daily observation / brief / trend-report outputs.
 metadata:
   guanlan:
     version: "1.0.0"
