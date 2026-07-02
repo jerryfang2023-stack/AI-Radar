@@ -119,7 +119,7 @@ Use this order:
 7. Build one public Card set sorted by importance / impact. Do not split public data into Top10 and candidate-pool modes. Do not expose sorting reasons on the page.
 8. Build Business frontstage JSON.
 9. Run the unified Business frontstage gate immediately.
-10. Only after that gate passes, build operations dashboard, topic center, manifest, PR, merge, and Pages.
+10. Only after that gate passes, build operations dashboard, manifest, PR, merge, and Pages.
 11. After failed production runs, Daily Problem Watchdog should write one categorized inbox item for targeted repair. It must not dispatch another full-chain run.
 12. At 10:50, supervision should check the publication closure: merged PR, GitHub Pages success, same-date Business data, public Card count, and whether local sync is blocked.
 

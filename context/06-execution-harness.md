@@ -105,7 +105,6 @@ Runs:
 - business-signal site data build;
 - first-line viewpoint data build;
 - operations dashboard data sync;
-- topic center data build;
 - GitHub PR / merge path;
 - local Obsidian sync after merged changes are available on `origin/main`.
 
