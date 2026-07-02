@@ -458,12 +458,18 @@ function buildBusinessSignalsLane() {
     localSync: localGitSyncState(),
   };
   const selectedCount = selection?.selectedCount ?? sameDateCards.length;
+  const corePoolTop10FallbackHealthy =
+    selectedCount === 10 &&
+    selection?.supplyConstrained !== true &&
+    Number(evidence.coreCandidateCount) >= 10 &&
+    Number(evidence.qualifiedCount) >= 10 &&
+    evidence.qualityGateStatus === "passed";
   const businessDataHealthy =
     exists(dataFile) &&
     exists(graphFile) &&
     activeDate === date &&
     sameDateTop10.length === 10 &&
-    cardFiles >= 10 &&
+    (cardFiles >= 10 || corePoolTop10FallbackHealthy) &&
     evidence.qualityGateStatus === "passed";
   evidence.dataHealth = {
     dataFile: exists(dataFile) ? rel(dataFile) : "missing",
@@ -472,6 +478,7 @@ function buildBusinessSignalsLane() {
     publicTop10Count: sameDateTop10.length,
     frontstageSelected: selectedCount,
     signalCardFiles: cardFiles,
+    corePoolTop10FallbackHealthy,
     qualityGateStatus: evidence.qualityGateStatus,
     healthy: businessDataHealthy,
   };
@@ -515,7 +522,13 @@ function buildBusinessSignalsLane() {
         warnings.push("frontstage selection reported supply constrained after a valid Top10 and passed gates; treat as supply warning, not data failure");
       }
     }
-    if (cardFiles < 10) recordDataProblem(`signal card files ${cardFiles} below 10`);
+    if (cardFiles < 10) {
+      if (corePoolTop10FallbackHealthy) {
+        warnings.push(`signal card files ${cardFiles} below 10, but source-backed Core Pool Top10 fallback is healthy`);
+      } else {
+        recordDataProblem(`signal card files ${cardFiles} below 10`);
+      }
+    }
     if (!exists(manifestFile)) warnings.push(`missing same-date persistent asset manifest: ${rel(manifestFile)}`);
     if (evidence.qualityGateStatus === "failed") addProblem(problems, `quality gate failed: ${rel(qualityGateFile)}`);
     if (evidence.qualityGateStatus === "missing") warnings.push(`missing quality gate report: ${rel(qualityGateFile)}`);
@@ -577,7 +590,7 @@ function buildBusinessSignalsLane() {
       evidence.diagnosis.category = "top10_contract";
       evidence.diagnosis.reason = `public Top10 count is ${sameDateTop10.length}, expected 10`;
       evidence.diagnosis.neededAction = "repair Top10/frontstage build contract; do not recollect Raw unless supply counts prove a specific source/channel shortage";
-    } else if (cardFiles < 10) {
+    } else if (cardFiles < 10 && !corePoolTop10FallbackHealthy) {
       evidence.diagnosis.category = "core_supply_shortfall";
       evidence.diagnosis.reason = `signal Card files ${cardFiles} below 10`;
       evidence.diagnosis.neededAction = "diagnose Raw/Pool/Core/non-large Core counts and refill only the deficient source/channel";
