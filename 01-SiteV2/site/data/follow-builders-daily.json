@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generatedAt": "2026-07-02T01:32:15.454Z",
+    "generatedAt": "2026-07-01T16:33:40.192Z",
     "feedGeneratedAt": "2026-07-01T07:49:10.368Z",
     "platform": "other",
     "sourceSkill": "follow-builders",
-    "sourceRoute": "remote-x+remote-podcasts",
+    "sourceRoute": "prepare-digest",
     "sourceErrors": [],
     "sourcePolicy": "Only content from the follow-builders prepared JSON is included. Every remark keeps its original URL and must provide Chinese translation before frontstage display."
   },
   "stats": {
     "builders": 20,
-    "remarks": 46,
-    "podcasts": 1,
+    "remarks": 48,
+    "podcasts": 3,
     "blogsBuilt": 4,
-    "trackedSources": 0,
+    "trackedSources": 33,
     "rawBuilders": 17,
     "rawTweets": 38
   },
@@ -22,7 +22,7 @@
       "name": "Simon Willison's Blog",
       "handle": "simonwillison.net",
       "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Aaron Levie",
@@ -52,6 +52,12 @@
       "name": "Thariq",
       "handle": "trq212",
       "role": "Claude Code anthropicai.   prev YC W20, southpkcommons, medialab",
+      "count": 3
+    },
+    {
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "count": 3
     },
     {
@@ -88,12 +94,6 @@
       "name": "Peter Steinberger",
       "handle": "steipete",
       "role": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a lobster take over the world.",
-      "count": 2
-    },
-    {
-      "name": "TLDR AI Newsletter",
-      "handle": "tldr.tech",
-      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
       "count": 2
     },
     {
@@ -214,6 +214,45 @@
       "createdAt": "Thu, 25 Jun 2026 13:04:03 GMT",
       "date": "2026-06-25",
       "url": "https://www.bensbites.com/p/claude-code-in-slack",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
+    },
+    {
+      "id": "https://tldr.tech/ai/2026-06-25",
+      "source": "blog",
+      "name": "TLDR AI Newsletter",
+      "handle": "tldr.tech",
+      "role": "Daily AI news digest: funding, product, research, policy highlights in concise format.",
+      "text": "Jalapeño chip 🌶️, Anthropic accuses Alibaba ⚖️, Gemini computer use 🖥️",
+      "content": "",
+      "contentTranslation": "",
+      "contentTranslationStatus": "unavailable",
+      "translation": "Jalapeño芯片🌶️， Anthropic指责阿里巴巴⚖️， Gemini电脑使用 🖥️",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "Thu, 25 Jun 2026 00:00:00 GMT",
+      "date": "2026-06-25",
+      "url": "https://tldr.tech/ai/2026-06-25",
       "likes": 0,
       "retweets": 0,
       "replies": 0
@@ -1837,16 +1876,71 @@
       "likes": 0,
       "retweets": 0,
       "replies": 0
+    },
+    {
+      "id": "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything",
+      "source": "blog",
+      "name": "Simon Willison's Blog",
+      "handle": "simonwillison.net",
+      "role": "AI coding tools, LLM release notes, prompt engineering, datasette ecosystem, developer workflow observations.",
+      "text": "Quoting Tom MacWright",
+      "content": "In the last few months, I've started to see [job applications] that were clearly cowritten by an LLM, link to an LLM-generated portfolio site, which then links to LLM-generated GitHub projects, with purely LLM-generated",
+      "contentTranslation": "在过去的几个月里，我开始看到[求职申请]显然是由LLM共同编写的，链接到LLM生成的投资组合网站，然后链接到LLM生成的GitHub项目，纯粹是LLM生成的",
+      "contentTranslationStatus": "translated",
+      "translation": "引用Tom MacWright的话",
+      "translationStatus": "translated",
+      "translationMethod": "mymemory",
+      "topic": "产品与创业",
+      "formalTags": [
+        {
+          "id": "opinion-product-strategy",
+          "name": "产品策略观点",
+          "group": "opinion"
+        },
+        {
+          "id": "track-enterprise-workflow",
+          "name": "企业工作流",
+          "group": "track"
+        },
+        {
+          "id": "source-blog",
+          "name": "技术博客",
+          "group": "source"
+        }
+      ],
+      "observation": "这条言论适合观察 builder 对产品、创业、销售或市场节奏的判断；可作为选题线索，不直接等同于行业结论。",
+      "createdAt": "2026-06-24T18:13:51+00:00",
+      "date": "2026-06-25",
+      "url": "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything",
+      "likes": 0,
+      "retweets": 0,
+      "replies": 0
     }
   ],
   "podcasts": [
     {
       "source": "podcast",
-      "name": "Training Data",
-      "title": "Why Hardware-Software Co-Design Is AI's Real 100x: Dylan Patel of SemiAnalysis",
-      "url": "https://www.youtube.com/watch?v=f6D_aiy8qyU",
-      "publishedAt": "2026-06-30T09:00:00.000Z",
-      "excerpt": ""
+      "name": "Unsupervised Learning (Redpoint)",
+      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
+      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
+      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…"
+    },
+    {
+      "source": "podcast",
+      "name": "Unsupervised Learning",
+      "title": "Ep 89: AI Research Legend’s Honest Assessment of Where We Are",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ep-89-ai-research-legends-honest-assessment-of-where-we-are-3Qm7Jv8G",
+      "publishedAt": "Wed, 3 Jun 2026 12:50:11 +0000",
+      "excerpt": "This episode with Lukasz Kaiser, co-author of the seminal \"Attention Is All You Need\" transformer paper and former researcher at both Google Brain and OpenAI, is a wide-ranging conversation about the fundamental limits of current AI architectures and whether transformers will continue to dominate or eventually give way to something new. Lukasz brings a rare dual perspective: deep belief in how far the current paradigm has taken us (he's an enthusiastic daily Codex user who's seen 10x productivity gains in his own research), while maintaining genuine intellectual humility about whether transformers can truly generalize the way humans do. The episode weaves together questions about data efficiency, the non-verifiable RL frontier, the coding agent revolution, the open vs. closed source gap, and what the next architectural leap might look like: all filtered through the lens of someone who helped bu…"
+    },
+    {
+      "source": "podcast",
+      "name": "Unsupervised Learning (Redpoint)",
+      "title": "AI Vibe Check: Lab Wars, Why APIs Might Vanish & Future Predictions",
+      "url": "https://unsupervised-learning.simplecast.com/episodes/ai-vibe-check-lab-wars-why-apis-might-vanish-future-predictions-sr_Mp2pR",
+      "publishedAt": "Fri, 12 Jun 2026 12:51:00 +0000",
+      "excerpt": "Six months after their last roundup, Jacob sits down with Ari Morcos (Datology AI CEO, former Meta AI researcher) and Rob Toews (Radical Ventures partner, Forbes AI columnist) to take stock of an AI landscape that has shifted dramatically: coding agents crossing the long-time-horizon threshold has turned engineers into managers of agents, near-frontier open weight AI looks like it may be disappearing as Meta and the Chinese labs pull back, and Anthropic's restrictions on its newly released Fable model have its biggest supporters questioning whether safety framing is masking competitive positioning. The conversation runs through the full state of the lab wars, including Rob doubling down on his Sam Altman ouster prediction and the Bret Taylor succession theory, why Google's structural advantages remain intact despite falling behind on coding, what xAI's Cursor acquisition is really for, and Ari'…"
     }
   ]
 }
