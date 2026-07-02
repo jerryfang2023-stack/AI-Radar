@@ -88,11 +88,11 @@ Business Signals, Reports Center, First-Line Viewpoints, and Community Intellige
 
 ## Retired Routes
 
-Legacy content-output routes, legacy publication templates, and legacy copy gates are not current SITE-V3.4.0 required outputs and must not be used as execution sources.
+Legacy content-output routes, legacy publication templates, and legacy copy gates are not current SITE-V3.4.3 required outputs and must not be used as execution sources.
 
 Follow-builders / builders viewpoints are active only as the independent First-Line Viewpoints column. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 
-If an old rule conflicts with SITE-V3.4.0, delete or rebuild it instead of preserving compatibility.
+If an old rule conflicts with SITE-V3.4.3, delete or rebuild it instead of preserving compatibility.
 
 ## Current Context
 
@@ -102,14 +102,14 @@ If an old rule conflicts with SITE-V3.4.0, delete or rebuild it instead of prese
 | `context/00-current-state.md` | current project state |
 | `context/version-ledger.md` | version baseline and freeze points |
 | `context/frontstage-page-contracts.md` | frontstage page contracts |
-| `context/01-product-map.md` | SITE-V3.4.0 product structure and data flow |
+| `context/01-product-map.md` | SITE-V3.4.3 product structure and data flow |
 | `context/02-vi-style.md` | VI, typography, visual rules |
 | `context/04-qc-rules.md` | general quality gates |
 | `context/05-daily-monitoring.md` | V3 Raw / Pool monitoring context |
 | `context/06-execution-harness.md` | high-risk execution harness |
 | `context/07-v3-intelligence-generation-rules.md` | Raw / Pool / Card / relation / trend-candidate truth source |
-| `context/08-v3-3-automation.md` | SITE-V3.4.0 GitHub / site / Obsidian sync automation loop |
-| `context/09-v3-3-current-action-index.md` | SITE-V3.4.0 current action registry |
+| `context/08-v3-3-automation.md` | SITE-V3.4.3 GitHub / site / Obsidian sync automation loop |
+| `context/09-v3-3-current-action-index.md` | SITE-V3.4.3 current action registry |
 | `context/10-v3-3-experience-automation.md` | action logging and retrospective automation |
 | `context/11-hermes-daily-supervision-instructions.md` | Hermes daily supervision and Codex repair handoff |
 | `context/context-index.md` | context router |

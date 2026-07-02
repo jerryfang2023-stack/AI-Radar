@@ -1,9 +1,9 @@
 ---
 name: guanlan-enterprise-ai-fde-monitor
-description: Use when supervising, running, repairing, or improving the WaveSight AI Enterprise AI / FDE lane. Covers FDE source discovery, independent Lens Pool selection, demand/service/result analysis, frontstage detail rendering, Obsidian 09-fde sync, and FDE-specific quality gates. Do not use for formal Business Signal Top10 selection, First-Line Viewpoints, Community Intelligence, or retired daily-observation outputs.
+description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.3 / EAI-V1.2.0-raw-card-ingestion-boundary Enterprise AI / FDE lane. Covers FDE source discovery, independent Lens Pool selection, demand/service/result analysis, frontstage detail rendering, Obsidian 09-fde sync, and FDE-specific quality gates. Do not use for formal Business Signal Top10 selection, First-Line Viewpoints, Community Intelligence, or retired daily-observation outputs.
 metadata:
   guanlan:
-    version: "1.1.0"
+    version: "1.2.0"
     lane: "Enterprise AI / FDE"
     status: "current lane owner"
     order: 15

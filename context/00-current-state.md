@@ -1,7 +1,7 @@
 ---
 status: current
 scope: project-state
-last_updated: 2026-06-30
+last_updated: 2026-07-02
 use_when:
   - large task startup
   - dispatch planning
@@ -28,9 +28,9 @@ WaveSight AI is now in SITE-V3.4.3 Enterprise AI / FDE Ingestion Boundary Releas
 
 | Entry | File | Role |
 |---|---|---|
-| Business Signals | `01-SiteV2/site/v3-data-observation.html` | Main V3.3 frontstage for daily Cards, relationship graph, trend candidates, and the 企业AI化 secondary lens |
+| Business Signals | `01-SiteV2/site/v3-data-observation.html` | SITE-V3.4.3 main public page for unified daily Cards, relationship graph, trend candidates, and the Enterprise AI / FDE secondary lens |
 | Reports Center | `01-SiteV2/site/intelligence-map.html` | Monthly / weekly report entry, source-backed Entry Point Map and Product Pain Map, and relation paths |
-| First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoint page merged into V3.3 |
+| First-Line Viewpoints | `01-SiteV2/site/follow-builders.html` | Independent builders viewpoint page in the unified SITE-V3.4.3 frontstage |
 | Community Intelligence | `01-SiteV2/site/community-intelligence.html` | Community-sourced cases, AI tool tactics, commercial opportunities, and document links |
 | Dashboard | `01-SiteV2/site/operations-console.html` | Operations backend and production-chain dashboard |
 
@@ -48,7 +48,7 @@ External sources
 -> knowledge base
 -> relationship graph
 -> trend candidates
--> V3.3 frontstage + operations data
+-> SITE-V3.4.3 frontstage + operations data
 -> local DuckDB data-lake index
 -> GitHub PR / merge
 -> GitHub Pages
@@ -61,9 +61,9 @@ Community Intelligence uses the logged-in scys.com / aipoju.com collection route
 
 ## Paused / Retired
 
-Legacy content-output routes, old page modules, and legacy copy gates are not current SITE-V3.4.0 required outputs or execution truth.
+Legacy content-output routes, old page modules, and legacy copy gates are not current SITE-V3.4.3 required outputs or execution truth.
 
-Old V2 pages are retired. If old rules conflict with SITE-V3.4.0, remove or rebuild them instead of preserving compatibility.
+Old V2 pages are retired. If old rules conflict with SITE-V3.4.3, remove or rebuild them instead of preserving compatibility.
 
 ## Current Hard Rules
 
