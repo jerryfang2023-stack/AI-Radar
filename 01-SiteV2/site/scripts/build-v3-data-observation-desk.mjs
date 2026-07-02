@@ -1110,7 +1110,8 @@ function publicFactLooksLikeTemplateFallback(value = "") {
     || /\u5177\u4f53\s*AI\s*\u5546\u4e1a\u4e8b\u4ef6/u.test(text)
     || /\u516c\u5f00\u8d44\u6599\u663e\u793a\u8d44\u91d1\u7ee7\u7eed\u6d41\u5411\s*AI\s*\u4ea7\u54c1\u5316\u548c\u4f01\u4e1a\u91c7\u7528\u73af\u8282/u.test(text)
     || /\u8fd9\u6761\u878d\u8d44\u4fe1\u53f7\u53ef\u7528\u4e8e\u5224\u65ad\u8d44\u91d1\u6d41\u5411/u.test(text)
-    || (/\.\.\./u.test(text) && text.length < 80);
+    || /\u8be5\u6765\u6e90\u62ab\u9732\u7684\u662f.+\u76f8\u5173\u7684\s*AI\s*(?:\u57fa\u7840\u8bbe\u65bd|\u6a21\u578b\u90e8\u7f72|\u667a\u80fd\u4f53\u80fd\u529b|\u4e8b\u4ef6)/u.test(text)
+    || /\.\.\./u.test(text);
 }
 
 function publicFactLooksLikeNavigation(value = "") {
@@ -1176,21 +1177,6 @@ function publicSignalCardIsDisplayReady(card = {}) {
     .every((value) => !publicTextLooksGarbled(value) && !publicContentNeedsTranslation(value));
 }
 
-function publicCardFillIsDisplayReady(card = {}) {
-  const title = String(card.title || card.displayTitle || "").trim();
-  const fact = String(card.translatedFact || card.visibleFragment || "").trim();
-  const fallbackTitleReady = publicFundingFallbackTitleIsReady(card, title);
-  if (!fallbackTitleReady && !publicDisplayTitleIsReady(title)) return false;
-  if (card.displayTitle && !fallbackTitleReady && !publicDisplayTitleIsReady(card.displayTitle)) return false;
-  if (!card.sourceUrl) return false;
-  if (!fact || publicTextLooksGarbled(fact) || publicContentNeedsTranslation(fact)) return false;
-  return true;
-}
-
-function hasBlockingCoreSignalPromotionIssue(card = {}) {
-  return Array.isArray(card.notPromotedIssues) && card.notPromotedIssues.length > 0;
-}
-
 function isLowValueConsumerOrPlatformPolicySignal(card = {}) {
   const text = [
     card.title,
@@ -1210,18 +1196,6 @@ function isLowValueConsumerOrPlatformPolicySignal(card = {}) {
     && !/raises|raised|closed|closes|fund size|\$\s?\d|完成.*募资|基金规模/iu.test(text);
   const businessAiSignal = /enterprise|B2B|customer deployment|production rollout|procurement|workflow|case study|SaaS|API|SDK|developer platform|paid enterprise|企业|客户|部署|采购|工作流|生产环境|融资|收购|合作伙伴|营收|合同|招标/iu.test(text);
   return ((consumerEntertainment || minorPlatformPolicy) && !businessAiSignal) || roundupOrExplainer || marketCommentary || ventureFormation;
-}
-
-function coreSignalCardFillIsDisplayReady(card = {}) {
-  const title = String(card.title || card.displayTitle || "").trim();
-  const fact = String(card.translatedFact || card.visibleFragment || card.summary || "").trim();
-  if (hasBlockingCoreSignalPromotionIssue(card)) return false;
-  if (isLowValueConsumerOrPlatformPolicySignal(card)) return false;
-  if (!title || !card.sourceUrl) return false;
-  if (publicTextLooksGarbled(title) || isBadPublicDisplayTitle(title) || titleLooksLikeGeneratedTemplate(title)) return false;
-  if (!fact || publicTextLooksGarbled(fact) || publicContentNeedsTranslation(fact) || publicFactLooksLikeTemplateFallback(fact)) return false;
-  if (!hasSourceBackedFrontstageFact(card)) return false;
-  return true;
 }
 
 function publicFdeCandidateIsDisplayReady(card = {}) {
@@ -2315,9 +2289,7 @@ function isGenericFrontstageCandidate(card = {}) {
   return card.category !== "funding" && /^investing in\b/iu.test(String(card.title || ""));
 }
 
-function buildDailyFrontstageSelection(
-  cards = []
-) {
+function buildSignalCardFrontstageSelection(cards = []) {
   const byDate = new Map();
   for (const card of cards) {
     if (!card.date) continue;
@@ -2325,52 +2297,47 @@ function buildDailyFrontstageSelection(
     list.push(card);
     byDate.set(card.date, list);
   }
+
   const selected = [];
   const reports = [];
   for (const [date, items] of byDate.entries()) {
-    const annotated = items.map(annotateFrontstageCandidate);
-    const coreCandidates = annotated.filter((card) => card.fromCorePool);
-    const displayCards = coreCandidates
-      .filter((card) => !card.frontstageGenericCandidate && card.frontstageEvidenceScore >= 30)
-      .filter((card) => !hasBlockingCoreSignalPromotionIssue(card))
+    const sorted = items
+      .map(annotateFrontstageCandidate)
       .filter((card) => !isLowValueConsumerOrPlatformPolicySignal(card))
       .filter(hasSourceBackedFrontstageFact)
       .filter(publicSignalCardIsDisplayReady)
       .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
-    const rejected = [];
     const selectedForDate = [];
-    const largeCompanyCandidateCount = annotated.filter((card) => card.largeVendorKey).length;
-    const selectCard = (card) => {
-      const selectedCard = {
-        ...card,
-        summary: card.frontstageValueDescription,
-        type: "signal_card",
-        cardSource: card.type === "core_signal_card" ? "core_pool" : "signal_card",
-        promotionStatus: "frontstage_card",
-        frontstageSelectionTier: "core-signal-card",
-        frontstageSupplyFill: false,
-      };
-      selected.push(selectedCard);
-      selectedForDate.push(selectedCard);
-    };
-    for (const card of displayCards) {
+    const rejected = [];
+    for (const card of sorted) {
       if (isDuplicateFrontstageEvent(card, selectedForDate)) {
         rejected.push({ id: card.id, reason: "duplicate event already selected" });
         continue;
       }
-      selectCard(card);
+      const selectedCard = {
+        ...card,
+        summary: card.summary || card.frontstageValueDescription,
+        type: "signal_card",
+        cardSource: "signal_card",
+        promotionStatus: "frontstage_card",
+        frontstageSelectionTier: "signal-card",
+        frontstageSupplyFill: false,
+      };
+      selected.push(selectedCard);
+      selectedForDate.push(selectedCard);
     }
     reports.push({
       date,
       candidateCount: items.length,
-      coreCandidateCount: coreCandidates.length,
-      qualifiedCount: displayCards.length,
+      coreCandidateCount: 0,
+      qualifiedCount: sorted.length,
       selectedCount: selectedForDate.length,
       supplyConstrained: false,
-      largeCompanyCandidateCount,
+      largeCompanyCandidateCount: sorted.filter((card) => card.largeVendorKey).length,
       rejectedDuplicates: rejected.slice(0, 12),
     });
   }
+
   return {
     cards: selected.sort((a, b) => dateValue(b.date) - dateValue(a.date) || b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id)),
     reports: reports.sort((a, b) => dateValue(b.date) - dateValue(a.date)),
@@ -2409,15 +2376,6 @@ function cleanPoolDisplayTitle(value = "") {
     .trim();
 }
 
-function corePoolPublicTitle(rawTitle = "", sourceUrl = "") {
-  const sourceTitle = publicTitleCandidate(rawTitle, sourceUrl);
-  if (sourceTitle) return sourceTitle;
-  const cleaned = cleanPoolDisplayTitle(rawTitle);
-  if (!hasCjk(cleaned)) return "";
-  if (publicTextLooksGarbled(cleaned) || isBadPublicDisplayTitle(cleaned) || titleLooksLikeGeneratedTemplate(cleaned)) return "";
-  return short(cleaned, 120);
-}
-
 function poolCandidateCategory(section = "") {
   const text = [
     poolValue(section, "importance_type"),
@@ -2430,7 +2388,7 @@ function poolCandidateCategory(section = "") {
   return "case";
 }
 
-function corePoolCandidateFact(section = "", title = "", sourceUrl = "") {
+function poolCandidateFactFromEvidence(section = "", title = "", sourceUrl = "") {
   const keyExcerpts = parseJsonLine(section, "key_excerpts") || [];
   const excerptCandidates = Array.isArray(keyExcerpts)
     ? keyExcerpts.map((item) => translatedSourcePoint(item?.text || "", item?.type || ""))
@@ -2452,113 +2410,14 @@ function corePoolCandidateFact(section = "", title = "", sourceUrl = "") {
   )) || "", 320);
 }
 
-function frontstageManifestForDate(date = "") {
-  const file = path.join(root, "agent-workflow", "reports", `${date}-frontstage-manifest.json`);
-  if (!date || !fs.existsSync(file)) return {};
-  try {
-    return JSON.parse(read(file));
-  } catch {
-    return {};
-  }
-}
 
-function corePoolNotPromotedMap(date = "") {
-  const manifest = frontstageManifestForDate(date);
-  const rows = Array.isArray(manifest.core_pool_not_promoted) ? manifest.core_pool_not_promoted : [];
-  return new Map(rows.map((item) => [item.pool_ref, item]));
-}
-
-function publicPromotionIssue(issue = "") {
-  if (/source_auditability/iu.test(issue)) return "来源不可审计，需要补齐原文链接和来源事实";
-  if (/evidence_quality:stale_source_date/iu.test(issue)) return "来源时间过旧，适合保留为背景证据";
-  if (/evidence_quality/iu.test(issue)) return "原文证据质量不完整，需要补采全文、摘录或哈希";
-  if (/business_signal_scope/iu.test(issue)) return "不属于产品、融资或案例类商业信号";
-  if (/valid_page_type/iu.test(issue)) return "页面类型不适合直接成卡，需要回到具体事件页";
-  if (/commercial_importance/iu.test(issue)) return "商业重要性不足，暂留为后台 Pool 证据";
-  if (/fact_type_constraints:.*funding_not_single_company_round/iu.test(issue)) return "融资信息不是单一公司轮次事件";
-  if (/fact_type_constraints/iu.test(issue)) return "事实类型不满足正式商业信号卡约束";
-  if (/stale_source_date/iu.test(issue)) return "来源时间过旧，适合保留为背景证据";
-  if (/generic_report_or_list_not_fact_signal/iu.test(issue)) return "榜单或报告类材料，不是单一事实信号";
-  if (/text_indicates_index_only|index_only|index_or_directory_url/iu.test(issue)) return "目录或索引页，不适合直接成卡";
-  if (/user_feedback_not_fact_signal/iu.test(issue)) return "评论或反馈材料不足以支撑正式事实卡";
-  if (/funding_not_single_company_round/iu.test(issue)) return "融资信息不是单一公司轮次事件";
-  if (/missing_full_text|missing_source_url|incomplete_evidence_object/iu.test(issue)) return "原文证据不完整，需要补采";
-  if (/duplicate_event_cluster/iu.test(issue)) return "与已成卡事件重复，保留为辅助证据";
-  if (/auto_signal_spec_null/iu.test(issue)) return "未能生成稳定的正式卡片结构";
-  return "证据边界不足，暂不晋级正式 Card";
-}
-
-function publicRepairSuggestion(issues = []) {
-  const text = issues.join(" ");
-  if (/source_auditability/iu.test(text)) return "补齐可审计原文链接和来源事实，避免只依赖搜索入口或聚合页。";
-  if (/evidence_quality:stale_source_date/iu.test(text)) return "补充同一事件的近期来源；否则仅作为背景证据保留。";
-  if (/evidence_quality/iu.test(text)) return "修复 Raw 采集，补齐原文链接、全文、摘录、哈希和抽取方法。";
-  if (/business_signal_scope/iu.test(text)) return "只把产品/服务、融资、客户案例或垂直部署事件推进为 Signal Card。";
-  if (/valid_page_type/iu.test(text)) return "回到有日期、主体、动作的单一公司事件页后再晋级。";
-  if (/commercial_importance/iu.test(text)) return "保留为 Pool 证据；除非补到清晰商业动作、客户、融资或部署信号。";
-  if (/fact_type_constraints:.*funding_not_single_company_round/iu.test(text)) return "补齐单一公司的融资金额、轮次、投资方和日期。";
-  if (/fact_type_constraints/iu.test(text)) return "用原始报道、公司公告或一手材料替代评论、反馈或非商业政策材料。";
-  if (/stale_source_date/iu.test(text)) return "补充同一事件的近期来源；否则仅作为背景证据保留。";
-  if (/generic_report_or_list_not_fact_signal|text_indicates_index_only|index_only|index_or_directory_url/iu.test(text)) {
-    return "回到原始来源，找到有日期、主体、动作的单一公司事件后再晋级。";
-  }
-  if (/user_feedback_not_fact_signal/iu.test(text)) return "用原始报道、公司公告或一手材料替代评论/反馈证据。";
-  if (/funding_not_single_company_round/iu.test(text)) return "补齐单一公司的融资金额、轮次、投资方和日期。";
-  if (/missing_full_text|missing_source_url|incomplete_evidence_object/iu.test(text)) return "修复 Raw 采集，补齐原文链接、全文、摘录和哈希。";
-  if (/duplicate_event_cluster/iu.test(text)) return "作为已成卡事件的辅助证据保留，不重复生成 Card。";
-  return "复核证据边界，确认能形成产品、融资或案例事实后再晋级。";
-}
-
-function candidatePromotionCopy(promotion = {}) {
-  const rawIssues = Array.isArray(promotion.issues) ? promotion.issues : [];
-  const issueLabels = rawIssues.map(publicPromotionIssue);
-  const reason = issueLabels.length ? [...new Set(issueLabels)].join("；") : "暂未晋级正式 Card";
-  const repair = publicRepairSuggestion(rawIssues);
-  return {
-    reason,
-    issues: issueLabels,
-    repair,
-    priority: promotion.promote_priority || "review",
-  };
-}
-
-function coreSignalCardEventKey(item = {}) {
-  const text = [
-    item.title,
-    item.originalTitle,
-    item.summary,
-    item.sourceUrl,
-    item.subject,
-  ].filter(Boolean).join(" ").toLowerCase();
-  if (/minimax/iu.test(text) && /\bm3\b/iu.test(text)) return `${item.date}|core-signal|minimax|m3`;
-  if (/mistral/iu.test(text) && /(funding|financing|valuation|round|融资|估值|欧元|billion|30亿|200亿)/iu.test(text)) {
-    return `${item.date}|core-signal|mistral|funding`;
-  }
-  const amount = text.match(/(?:\$|€|eur|usd)?\s?\d+(?:\.\d+)?\s?(?:m|b|million|billion|亿|万)?/iu)?.[0] || "";
-  const subject = normalizedComparableText(item.subject || item.title || item.originalTitle).slice(0, 56);
-  const title = normalizedComparableText(item.originalTitle || item.title).slice(0, 92);
-  return `${item.date}|core-signal|${item.category}|${subject}|${amount || title}`;
-}
-
-function coreSignalCardQuality(item = {}) {
+function pooledCandidateQuality(item = {}) {
   let score = Number(item.frontstageRankScore) || 0;
   if (item.promotionStatus === "promoted_to_signal_card") score += 100000;
   if (item.sourceUrl && !isSocialOrCommunitySourceUrl(item.sourceUrl)) score += 1000;
   if (item.originalHighlights?.length) score += 100;
   if (item.translatedFact || item.summary) score += 40;
   return score;
-}
-
-function dedupeCoreSignalCardItems(items = []) {
-  const byKey = new Map();
-  for (const item of items) {
-    const key = coreSignalCardEventKey(item);
-    const current = byKey.get(key);
-    if (!current || coreSignalCardQuality(item) > coreSignalCardQuality(current)) {
-      byKey.set(key, item);
-    }
-  }
-  return [...byKey.values()];
 }
 
 function enterpriseAiFdePoolEventKey(item = {}) {
@@ -2574,177 +2433,11 @@ function dedupeEnterpriseAiFdePoolItems(items = []) {
   for (const item of items) {
     const key = enterpriseAiFdePoolEventKey(item);
     const current = byKey.get(key);
-    if (!current || coreSignalCardQuality(item) > coreSignalCardQuality(current)) {
+    if (!current || pooledCandidateQuality(item) > pooledCandidateQuality(current)) {
       byKey.set(key, item);
     }
   }
   return [...byKey.values()];
-}
-
-function supplementalCoreSignalCardItems(existingItems = [], activeDate = "") {
-  const existingRefs = new Set(existingItems.map((item) => item.sourceRef).filter(Boolean));
-  return poolCandidateSectionsForDate(activeDate)
-    .filter((section) => splitCsv(poolValue(section, "pool_routes")).includes("core_pool"))
-    .map((section) => {
-      const ref = poolRef(section);
-      if (!ref || existingRefs.has(ref)) return null;
-      const sourceUrl = poolValue(section, "source_url");
-      const rawTitle = poolTitle(section);
-      const title = corePoolPublicTitle(rawTitle, sourceUrl);
-      if (!title || !sourceUrl) return null;
-      if (isReleaseNoteOnlySourceUrl(sourceUrl)) return null;
-      if (isRepositoryOrCatalogSourceUrl(sourceUrl)) return null;
-      if (isGenericFundingOrListSource({ title, originalTitle: title, sourceTitle: title, sourceUrl })) return null;
-      const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
-      if (!fact || publicTextLooksGarbled(fact) || publicContentNeedsTranslation(fact)) return null;
-      const importanceScore = Number(poolValue(section, "importance_score")) || 0;
-      const score = Number(poolValue(section, "score")) || 0;
-      const category = poolCandidateCategory(section);
-      const subject = frontstageCandidateSubject(sourceUrl, rawTitle, title, poolValue(section, "source"));
-      return {
-        id: `POOL-${activeDate}-${ref}`,
-        type: "core_signal_card",
-        category,
-        categoryLabel: categoryLabels[category] || category,
-        title,
-        originalTitle: title,
-        sourceTitle: title,
-        displayTitle: title,
-        generatedTitle: title,
-        date: activeDate,
-        subject,
-        source: domain(sourceUrl) || poolValue(section, "source"),
-        sourceName: domain(sourceUrl) || poolValue(section, "source"),
-        sourceUrl,
-        sourceLevel: poolValue(section, "source_level"),
-        importanceScore,
-        poolRoutes: frontstagePoolRoutes(splitCsv(poolValue(section, "pool_routes"))),
-        tags: {},
-        flatTags: [],
-        displayTags: sanitizeDisplayTags([{ id: category, label: categoryLabels[category] || category }]),
-        summary: fact,
-        translatedFact: fact,
-        originalHighlights: [fact],
-        visibleFragment: fact,
-        sourceLinks: [sourceUrl],
-        status: "pooled",
-        assetLevel: "core_pool",
-        promotionStatus: "core_signal_card",
-        notPromotedReason: "Core Pool item converted to frontstage Card",
-        notPromotedIssues: [],
-        repairSuggestion: "",
-        promotePriority: "review",
-        evidenceGate: poolValue(section, "evidence_level") || "core_evidence_candidate",
-        largeVendorKey: largeVendorKeyForCard({ title, sourceUrl }),
-        largeVendor: Boolean(largeVendorKeyForCard({ title, sourceUrl })),
-        frontstageRankScore: score * 100 + importanceScore * 10,
-        frontstageEditorialScore: score * 100 + importanceScore * 10,
-        frontstageEvidenceScore: Number(poolValue(section, "readability_score")) || 0,
-        frontstageSelectionReasons: ["进入当天 Core Pool", "转为前台 Card"],
-        frontstageValueDescription: fact,
-        frontstageQualityWarnings: [],
-        frontstageGenericCandidate: false,
-        fromCorePool: true,
-        sourceRef: ref,
-      };
-    })
-    .filter(Boolean)
-    .filter(coreSignalCardFillIsDisplayReady)
-    .filter((card) => !isWeakSubject(card.subject));
-}
-
-function buildCoreSignalCardItems(cards = [], activeDate = "") {
-  const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
-  const notPromotedByRef = corePoolNotPromotedMap(activeDate);
-  const items = poolCandidateSectionsForDate(activeDate)
-    .filter((section) => splitCsv(poolValue(section, "pool_routes")).includes("core_pool"))
-    .filter((section) => {
-      const sourceUrl = poolValue(section, "source_url");
-      const title = poolTitle(section);
-      if (isReleaseNoteOnlySourceUrl(sourceUrl)) return false;
-      if (isRepositoryOrCatalogSourceUrl(sourceUrl)) return false;
-      if (isGenericFundingOrListSource({ title, originalTitle: title, sourceTitle: title, sourceUrl })) return false;
-      return true;
-    })
-    .map((section) => {
-      const ref = poolRef(section);
-      const sourceUrl = poolValue(section, "source_url");
-      const card = cardsByUrl.get(canonicalUrl(sourceUrl));
-      if (card) {
-        return {
-          ...card,
-          id: `POOL-${activeDate}-${ref}`,
-          linkedCardId: card.id,
-          type: "core_signal_card",
-          sourceRef: ref,
-          promotionStatus: "promoted_to_signal_card",
-          frontstageSelectionTier: card.frontstageSelectionTier || "core-pool",
-        };
-      }
-      const promotion = candidatePromotionCopy(notPromotedByRef.get(ref) || {});
-      const rawTitle = poolTitle(section);
-      const title = corePoolPublicTitle(rawTitle, sourceUrl);
-      if (!title) return null;
-      const category = poolCandidateCategory(section);
-      const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
-      const importanceScore = Number(poolValue(section, "importance_score")) || 0;
-      const score = Number(poolValue(section, "score")) || 0;
-      const item = {
-        id: `POOL-${activeDate}-${ref}`,
-        type: "core_signal_card",
-        category,
-        categoryLabel: categoryLabels[category] || category,
-        title,
-        originalTitle: title,
-        sourceTitle: title,
-        displayTitle: title,
-        generatedTitle: title,
-        date: activeDate,
-        subject: frontstageCandidateSubject(sourceUrl, rawTitle, title, poolValue(section, "source")),
-        source: domain(sourceUrl) || poolValue(section, "source"),
-        sourceName: domain(sourceUrl) || poolValue(section, "source"),
-        sourceUrl,
-        sourceLevel: poolValue(section, "source_level"),
-        importanceScore,
-        poolRoutes: frontstagePoolRoutes(splitCsv(poolValue(section, "pool_routes"))),
-        publishedAt: "",
-        tags: {},
-        flatTags: [],
-        displayTags: sanitizeDisplayTags([{ id: category, label: categoryLabels[category] || category }]),
-        summary: fact,
-        translatedFact: fact,
-        originalHighlights: [],
-        visibleFragment: fact,
-        sourceLinks: [sourceUrl].filter(Boolean),
-        status: "pooled",
-        assetLevel: "core_pool",
-        promotionStatus: "core_signal_card",
-        notPromotedReason: promotion.reason,
-        notPromotedIssues: promotion.issues,
-        repairSuggestion: promotion.repair,
-        promotePriority: promotion.priority,
-        evidenceGate: poolValue(section, "evidence_level") || "core_evidence_candidate",
-        stage: "",
-        evidence: "",
-        track: "",
-        largeVendorKey: largeVendorKeyForCard({ title: rawTitle, sourceUrl }),
-        largeVendor: Boolean(largeVendorKeyForCard({ title: rawTitle, sourceUrl })),
-        frontstageRankScore: score * 100 + importanceScore * 10,
-        frontstageEditorialScore: score * 100 + importanceScore * 10,
-        frontstageEvidenceScore: Number(poolValue(section, "readability_score")) || 0,
-        frontstageSelectionReasons: ["进入当天 Core Pool", "转为前台 Card"],
-        frontstageValueDescription: "该条目进入当天 Core Pool，用于前台 Card、关系图和趋势候选分析。",
-        frontstageQualityWarnings: [],
-        frontstageGenericCandidate: false,
-        fromCorePool: true,
-        sourceRef: ref,
-      };
-      if (!hasSourceBackedFrontstageFact(item)) return null;
-      return item;
-    })
-    .filter(Boolean);
-  return dedupeCoreSignalCardItems(items)
-    .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.sourceRef || a.id).localeCompare(String(b.sourceRef || b.id)));
 }
 
 function isEnterpriseAiLensPoolSection(section = "") {
@@ -2810,7 +2503,7 @@ function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
       const rawTitle = poolTitle(section);
       const title = publicTitleCandidate(rawTitle, sourceUrl);
       const category = poolCandidateCategory(section);
-      const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
+      const fact = poolCandidateFactFromEvidence(section, rawTitle, sourceUrl);
       const importanceScore = Number(poolValue(section, "importance_score")) || 0;
       const score = Number(poolValue(section, "score")) || 0;
       const poolRoutes = frontstagePoolRoutes(splitCsv(poolValue(section, "pool_routes")));
@@ -2878,7 +2571,7 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
       const rawTitle = poolTitle(section);
       const card = cardsByUrl.get(canonicalUrl(sourceUrl));
       const category = poolCandidateCategory(section);
-      const fact = corePoolCandidateFact(section, rawTitle, sourceUrl);
+      const fact = poolCandidateFactFromEvidence(section, rawTitle, sourceUrl);
       const importanceScore = Number(poolValue(section, "importance_score")) || 0;
       const score = Number(poolValue(section, "score")) || 0;
       const poolRoutes = frontstagePoolRoutes(splitCsv(poolValue(section, "pool_routes")));
@@ -4177,16 +3870,7 @@ const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPubli
   .filter(publicSignalCardIsDisplayReady)
   .map(annotateFrontstageCandidate)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
-const baseCoreSignalCards = buildCoreSignalCardItems(cards, activeDate);
-const coreSignalCards = dedupeCoreSignalCardItems([
-  ...baseCoreSignalCards,
-  ...supplementalCoreSignalCardItems(baseCoreSignalCards, activeDate),
-])
-  .map((card) => (card.promotionStatus === "core_signal_card" ? card : normalizeFrontstageDisplay(card, { strictPublic: false })))
-  .filter((card) => (card.type === "core_signal_card" ? coreSignalCardFillIsDisplayReady(card) : publicCardFillIsDisplayReady(card)))
-  .filter((card) => card.subject && !isWeakSubject(card.subject));
-const supplementalCoreSignalCards = coreSignalCards.filter((card) => card.promotionStatus === "core_signal_card");
-const frontstageSelection = buildDailyFrontstageSelection([...cards, ...supplementalCoreSignalCards]);
+const frontstageSelection = buildSignalCardFrontstageSelection(cards);
 const frontstageCards = frontstageSelection.cards;
 const allBusinessSignalCards = ensureUniqueCardIds(frontstageCards);
 const enterpriseAiLensCandidates = buildEnterpriseAiLensCandidateItems(cards, activeDate)

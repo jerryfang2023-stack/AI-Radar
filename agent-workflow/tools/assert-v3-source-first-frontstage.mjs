@@ -458,6 +458,9 @@ function sourceUrlIsRootLike(value = "") {
 const frontstageByDate = new Map();
 for (const card of frontstageCards) {
   if (!publicAssetIds.has(card.id)) issues.push(`frontstage card ${card.id || "(missing id)"} is not present in the public Card set`);
+  if (/^POOL-/u.test(String(card.id || "")) || card.cardSource !== "signal_card") {
+    issues.push(`frontstage card ${card.id || "(missing id)"} is not a formal Signal Card asset`);
+  }
   checkPublicCardContract(card, `frontstage card ${card.date || "(missing date)"}`);
   if (!card.date) continue;
   const list = frontstageByDate.get(card.date) || [];
