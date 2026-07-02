@@ -20,11 +20,6 @@ if (!date) {
 
 const now = new Date().toISOString();
 const autoSignalEnabled = args.get("auto-signals") !== "false" && args.get("manual-only") !== "true";
-const frontstageTop10Target = args.has("frontstage-top10-target")
-  ? nonNegativeInt(args.get("frontstage-top10-target"), 10)
-  : args.has("signal-target")
-    ? nonNegativeInt(args.get("signal-target"), 10)
-    : 10;
 const assetGenerationLimit = args.has("asset-generation-limit")
   ? nonNegativeInt(args.get("asset-generation-limit"), Number.POSITIVE_INFINITY)
   : Number.POSITIVE_INFINITY;
@@ -1895,13 +1890,6 @@ function uniq(items) {
   return [...new Set(items.filter(Boolean))];
 }
 
-function sourceTagFromLevel(sourceLevel) {
-  if (sourceLevel === "S") return "source-first-party";
-  if (sourceLevel === "A") return "source-business-media";
-  if (sourceLevel === "B") return "source-industry-data";
-  return "source-social";
-}
-
 function inferredTagsFromText(text = "") {
   const tags = {
     track: ["track-ai-agent"],
@@ -1953,10 +1941,9 @@ function formalTagsYaml(tags) {
   ].join("\n");
 }
 
-function formalTagsForSignal(spec, sourceLevel) {
+function formalTagsForSignal(spec) {
   const tags = inferredTagsFromText(`${spec.title} ${spec.eventLine} ${(spec.sourcePoints || []).join(" ")} ${spec.company}`);
   tags.evidence.push(spec.type === "funding" ? "evidence-funding" : spec.type === "case" ? "evidence-customer-adoption" : "evidence-product-launch");
-  tags.source.push(sourceTagFromLevel(sourceLevel));
   if (spec.type === "funding") tags.stage.push("stage-rising");
   return Object.fromEntries(Object.entries(tags).map(([group, values]) => [group, uniq(values)]));
 }
@@ -2047,7 +2034,7 @@ primary_raw:
   importance_type: ${importanceType}
   importance_score: ${importanceScore}
 
-${formalTagsYaml(formalTagsForSignal(spec, sourceLevel))}
+${formalTagsYaml(formalTagsForSignal(spec))}
 
 ${opportunitySignalsYaml(opportunitySignalsForSignal(spec, sourceLevel, section))}
 
@@ -2207,7 +2194,6 @@ function writePoolToCardHandoff({ written, merged, skipped, clusterRows, frontst
     `- skipped_count: ${skipped.length}`,
     `- signal_asset_count: ${frontstageSpecs.length}`,
     `- core_pool_not_promoted_count: ${notPromotedCorePool.length}`,
-    `- frontstage_top10_target_count: ${frontstageTop10Target}`,
     `- asset_generation_limit: ${Number.isFinite(assetGenerationLimit) ? assetGenerationLimit : "all_qualified_core_pool"}`,
     `- signal_asset_mode: all qualified Core Pool items`,
     "",

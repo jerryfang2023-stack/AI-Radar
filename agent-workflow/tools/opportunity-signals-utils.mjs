@@ -264,7 +264,7 @@ function addSourceEvidenceType({ add, sourceUrl = "", sourceLevel = "", text = "
   if (/gov|procurement|sam\.gov|ted\.europa/u.test(host) || /\b(tender|rfp|procurement|contract award)\b/u.test(text)) add("source_evidence_type", "regulatory_or_procurement");
   if (/x\.com|twitter|linkedin|reddit|news\.ycombinator/u.test(host)) add("source_evidence_type", "community_post");
   if (/\b(case study|customer story)\b/u.test(text)) add("source_evidence_type", "first_party_case");
-  if (/\b(press release|announces|launches|company blog|official)\b/u.test(text) || sourceLevel === "A") add("source_evidence_type", "first_party_announcement");
+  if (/\b(press release|announces|launches|company blog|official)\b/u.test(text)) add("source_evidence_type", "first_party_announcement");
   if (!signalsAlreadyBusinessMedia(text, host)) return;
   add("source_evidence_type", "business_media");
 }

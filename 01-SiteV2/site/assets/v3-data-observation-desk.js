@@ -2,7 +2,7 @@
   const state = {
     payload: null,
     activeCategory: "all",
-    displayMode: "top10",
+    displayMode: "cards",
     filters: {
       date: "",
       category: "all",
@@ -55,11 +55,7 @@
   }
 
   function frontstageCards() {
-    return state.payload?.frontstageCards || state.payload?.cards || [];
-  }
-
-  function corePoolCards() {
-    const cards = state.payload?.corePoolCandidates || state.payload?.corePoolCards || (state.payload?.cards || []).filter((card) => card.fromCorePool || (card.poolRoutes || []).includes("core_pool"));
+    const cards = state.payload?.frontstageCards || state.payload?.cards || [];
     return [...cards].sort((a, b) => {
       const dateDiff = String(b.date || "").localeCompare(String(a.date || ""));
       if (dateDiff) return dateDiff;
@@ -68,14 +64,13 @@
   }
 
   function displayCards() {
-    return state.displayMode === "core" ? corePoolCards() : frontstageCards();
+    return frontstageCards();
   }
 
   function displayModeLabel() {
-    if (state.displayMode !== "core") return "今日 Top10";
     const date = selectedDate();
-    const items = corePoolCards().filter((card) => card.date === date);
-    return `Core Pool ${items.length}`;
+    const items = frontstageCards().filter((card) => card.date === date);
+    return `今日 Card ${items.length}`;
   }
 
   function availableDates() {
@@ -241,7 +236,6 @@
   function findDetailCard(id = "") {
     return [
       ...(state.payload.cards || []),
-      ...(state.payload.corePoolCandidates || []),
       ...(state.payload.enterpriseAiFdePool || []),
       ...(state.payload.enterpriseAiLensCandidates || []),
     ].find((item) => item.id === id || item.linkedCardId === id);
@@ -331,7 +325,6 @@
     const seen = new Set();
     const candidates = [
       ...(state.payload.cards || []),
-      ...(state.payload.corePoolCandidates || []),
     ].filter((card) => card.date === date)
       .filter((card) => {
         const id = card.linkedCardId || card.id;
@@ -1362,21 +1355,8 @@
   function renderDisplayModeToggle() {
     const root = $("[data-display-mode-toggle]");
     if (!root) return;
-    const modes = [
-      { id: "top10", label: "今日 Top10" },
-      { id: "core", label: "Core Pool 候选池" },
-    ];
-    root.innerHTML = modes.map((mode) => `
-      <button type="button" class="${state.displayMode === mode.id ? "is-active" : ""}" data-display-mode="${safe(mode.id)}">
-        ${safe(mode.label)}
-      </button>
-    `).join("");
-    root.onclick = (event) => {
-      const button = event.target.closest("[data-display-mode]");
-      if (!button) return;
-      state.displayMode = button.dataset.displayMode || "top10";
-      renderAll();
-    };
+    root.innerHTML = "";
+    root.onclick = null;
   }
 
   function setupDateControls() {
@@ -1484,7 +1464,6 @@
     root.innerHTML = cards.length ? cards.map((card) => `
       <tr class="card-summary-row" data-card-row="${safe(card.id)}">
         <td>
-          ${state.displayMode === "core" ? `<span class="row-status ${card.linkedCardId || card.type === "signal_card" ? "is-card" : "is-candidate"}">${card.linkedCardId || card.type === "signal_card" ? "已成卡" : "候选"}</span>` : ""}
           <strong>${safe(cardDisplayTitle(card))}</strong>
         </td>
         <td>${safe(card.subject)}</td>

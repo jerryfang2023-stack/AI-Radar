@@ -101,8 +101,8 @@ The monitor must reflect the current V3 production rules:
 
 - Raw-first / Evidence-first.
 - AI HOT, follow-builders, HN, X, Reddit, RSS and search aggregators are discovery channels, not fact sources.
-- Source level `S/A/B/C/D` and acquisition source level `M` are traceability labels only.
-- `source_level` / `acquisition_source_level` must not be used as `core_pool` gates, Card gates, ranking boosts, ranking penalties, or automatic downgrade reasons.
+- Source/channel labels, if present in backend Raw / Pool data, are traceability diagnostics only.
+- `source_level` / `acquisition_source_level` must not be used as `core_pool` gates, Card gates, ranking boosts, ranking penalties, quality scores, or automatic downgrade reasons.
 - Raw target is at least 150 active candidates in the daily production chain.
 - Pool target is at least 75 items, at least 60 routed Pool items, and at least 30 usable `core_pool` items.
 - Core downstream evidence requires original URL, readable full text, `extraction_quality=high|medium`, Raw QC `allow`, non-index evidence object, evidence hashes/excerpts, and a concrete business change.

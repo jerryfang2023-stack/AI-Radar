@@ -15,11 +15,11 @@ Hermes is the daily supervisor for WaveSight AI. It should observe, classify, an
 
 ## Current Version Context
 
-- Current site version: `SITE-V3.4.0`.
+- Current site version: `SITE-V3.4.1`.
 - Current Hermes supervision contract: `V3.4.0-daily-problem-watchdog`.
 - Current Business Signals data contract: `V3.3.6.3-business-source-artifact-aggregation`.
 - Version ledger: `context/version-ledger.md`.
-- SITE-V3.4.0 keeps First-Line Viewpoints person / original-date Obsidian persistence with dry-run idempotency, Business Signals title / candidate dedupe gates, source-artifact aggregation, Core Pool source-hygiene gates, peer Raw artifact channels, Pool/Core release override for provider-caused Raw shortfall, the Enterprise AI / FDE Lens Pool, Community Intelligence local-first collection with Waiting-vs-Problem publication separation, the Reports Center route, source-backed opportunity maps, and relation paths. Hermes now observes and records problems only; it does not run early handoff, bounded recovery, or automatic full-chain reruns.
+- SITE-V3.4.1 keeps First-Line Viewpoints person / original-date Obsidian persistence with dry-run idempotency, Business Signals unified Core Signal Cards, source-artifact aggregation, peer Raw artifact channels, Pool/Core release override for provider-caused Raw shortfall, the Enterprise AI / FDE Lens Pool, Community Intelligence local-first collection with Waiting-vs-Problem publication separation, the Reports Center route, source-backed opportunity maps, and relation paths. Hermes now observes and records problems only; it does not run early handoff, bounded recovery, or automatic full-chain reruns.
 - Hermes must treat old month timeline files such as `YYYY-MM.md` as legacy / cleanup candidates, not as proof that current sync is healthy.
 - Do not judge Codex work by commit author name. In this repository Codex commits may use the configured Git identity.
 
@@ -30,8 +30,8 @@ Hermes should do this every Asia/Shanghai production day:
 1. 08:10 run the version state preflight when a version changed: package / ledger / AGENTS / current frontstage data meta / Skill Ops sync. This is read-only and must not block lane production by itself.
 2. 08:45 check Community Intelligence local output, archive, and gate. If local collector output is missing, record that local Chrome / login repair is required; do not pretend GitHub can collect it.
 3. Daily Problem Watchdog records failed production workflows into dated reports and Hermes inbox items. It must not dispatch recovery or start another full-chain run.
-4. Before 10:00 use Business Signals Top10 health as a target checkpoint: same-date active data, exactly 10 items, no placeholder/source-domain titles, and no public candidate duplicate flood. Do not lower gates to hit the checkpoint.
-5. 10:50 check PR / merge / GitHub Pages publication for lanes that produced data. For Business Signals, explicitly check merged PR, Pages success, same-date Business data, Top10 count, and whether local sync is blocked. This check must account for the 10:45 Community Intelligence publish fallback window.
+4. Before 10:00 use Business Signals public Card health as a target checkpoint: same-date active data, public Cards present, no placeholder/source-domain titles, and no public Top10/candidate split. Do not lower gates to hit the checkpoint.
+5. 10:50 check PR / merge / GitHub Pages publication for lanes that produced data. For Business Signals, explicitly check merged PR, Pages success, same-date Business data, public Card count, and whether local sync is blocked. This check must account for the 10:45 Community Intelligence publish fallback window.
 6. 16:30 record the follow-builders skill publish: check the local publish report and builders viewpoints output for the afternoon skill lane.
 7. For every failure, write cause, result, report path, and one good / bad example into the Hermes report or inbox. Ask Codex to repair with validation and prevention.
 8. Never lower gates, edit generated data directly, push to `main`, dispatch recovery, or loop blind reruns.
@@ -82,7 +82,7 @@ agent-workflow/inbox/hermes-to-codex/
 | 09:45 | Business / Publish Recheck | Judge the Business 08:57 primary and 09:27 health dispatch path. If output is unhealthy and no run is active, write a problem report / inbox item; do not dispatch recovery. |
 | 09:55 | Final Problem Check | Wait for active runs, record failures, or mark `manual_required`; avoid duplicate inbox writes and do not start a routine dispatch. |
 | 10:45 | Community Publish Fallback | Let the second Community Intelligence publish window run if first publication did not reach `main`. GitHub Pages follows after merge to `main`. |
-| 10:50 | Site publication | Check lane PR / merge / Pages status when GitHub state is available and after the Community 10:45 fallback window has had a chance to start. For Business Signals also check same-date data, Top10 count, and local sync status. |
+| 10:50 | Site publication | Check lane PR / merge / Pages status when GitHub state is available and after the Community 10:45 fallback window has had a chance to start. For Business Signals also check same-date data, public Card count, and local sync status. |
 | 16:30 | Hermes Afternoon Record | Check the follow-builders skill publish report, `01-SiteV2/content/07-points/<YYYY-MM-DD>-builders-viewpoints.md`, the report's `publish_status` / `publish_error`, and `obsidian_sync_*` counts. If the report, output, publish closure, or Obsidian sync result is missing or failed, write a Codex handoff for `afternoon_skill_runner` or `afternoon_publication_failure`. |
 
 If any lane is still `queued` or `in_progress`, wait for it to finish before reporting that lane's data missing.
@@ -119,7 +119,7 @@ Hard rules:
 - Do not dispatch Business Signals, First-Line Viewpoints, Community Intelligence, or any recovery workflow from Hermes.
 - If a lane workflow is queued / in progress, record Waiting instead of missing data.
 - If same-date artifacts are healthy, repair publication / PR / Pages only.
-- If Business Signals Pool / routed Pool / Core Pool / non-large Core / Top10 supply is sufficient, provider Raw failures are diagnostic and must not trigger a full Raw rerun.
+- If Business Signals Pool / routed Pool / Core Pool / non-large Core / Card supply is sufficient, provider Raw failures are diagnostic and must not trigger a full Raw rerun.
 - Codex should repair the earliest failing stage and add or tighten the relevant skill eval / context rule before closing the inbox item.
 
 ## Weekly And Monthly Review

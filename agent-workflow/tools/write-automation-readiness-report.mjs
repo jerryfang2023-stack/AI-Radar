@@ -17,7 +17,7 @@ const file = path.join(reportsDir, `${date}-github-automation-readiness-report.m
 const steps = [
   ["Run Raw / Pool monitor with QC", "agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs"],
   ["Confirm Raw / Pool counts and stale state", "agent-workflow/tools/assert-daily-production-chain.mjs"],
-  ["Generate qualified Signal Card assets and frontstage Top10", "agent-workflow/tools/generate-asset-cards-from-pool.mjs"],
+  ["Generate qualified Signal Card assets and frontstage Cards", "agent-workflow/tools/generate-asset-cards-from-pool.mjs"],
   ["Run Pool-to-Card duplicate gate", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"],
   ["Run trend candidate / no-decision shell", "agent-workflow/tools/run-trend-candidate-decision.mjs"],
   ["Build V3 data observation desk", "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"],
@@ -38,7 +38,7 @@ fs.writeFileSync(file, [
   `- generated_at: ${new Date().toISOString()}`,
   `- status: ${status}`,
   "- current_chain: V3 Raw / Pool / Signal Card / Relationship Graph / Trend Candidate",
-  "- active_outputs: Raw candidates, Pool evidence, Signal Card assets, public Top10, relationship graph inputs, trend candidates",
+  "- active_outputs: Raw candidates, Pool evidence, Signal Card assets, public Cards, relationship graph inputs, trend candidates",
   "- frontstage_goal: update V3 data observation desk and operations dashboard after PR merge",
   "",
   "## Step Readiness",

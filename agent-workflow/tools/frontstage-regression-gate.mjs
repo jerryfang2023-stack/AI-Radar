@@ -12,8 +12,8 @@ const args = new Map(
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const expectedDate = args.get("date") || "";
 const expectedVersion = "V3.3.6.3-business-source-artifact-aggregation";
-const expectedSiteVersion = "SITE-V3.4.0";
-const expectedBusinessSignalsColumnVersion = "BSIG-V1.1.5-corepool-top10-release";
+const expectedSiteVersion = "SITE-V3.4.1";
+const expectedBusinessSignalsColumnVersion = "BSIG-V1.2.0-core-signal-cards";
 const expectedEnterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
 const expectedIntelligenceMapColumnVersion = "IMAP-V2.0.0-report-center-opportunity-system";
 const rolloverAcceptedVersions = new Map([
@@ -235,17 +235,12 @@ function collectGeneratedDataIssues() {
     if (latestDate && activeDate !== latestDate) {
       issues.push(issue(dataFile, "v3_data_active_date_stale", `${activeDate || "missing"} != ${latestDate}`));
     }
-    const activeCards = (data?.cards || []).filter((item) => item.date === activeDate);
+    const activeCards = (data?.frontstageCards || data?.cards || []).filter((item) => item.date === activeDate);
     if (!activeCards.length) {
       issues.push(issue(dataFile, "v3_active_date_has_no_cards", activeDate || "missing"));
     }
-    const top10 = Array.isArray(data?.top10) ? data.top10 : [];
-    if (top10.length !== 10 || top10.some((item) => item.date !== activeDate)) {
-      issues.push(issue(dataFile, "v3_active_date_top10_invalid", `${top10.length} items for ${activeDate || "missing"}`));
-    }
     const detailItems = [
       ...(Array.isArray(data?.cards) ? data.cards : []),
-      ...(Array.isArray(data?.corePoolCandidates) ? data.corePoolCandidates : []),
       ...(Array.isArray(data?.enterpriseAiFdePool) ? data.enterpriseAiFdePool : []),
       ...(Array.isArray(data?.enterpriseAiLensCandidates) ? data.enterpriseAiLensCandidates : []),
     ];

@@ -147,11 +147,9 @@ try {
 
 const issues = walk(payload);
 const cards = Array.isArray(payload.cards) ? payload.cards : [];
-const corePoolCandidates = Array.isArray(payload.corePoolCandidates) ? payload.corePoolCandidates : [];
 const frontstageCards = Array.isArray(payload.frontstageCards) ? payload.frontstageCards : cards;
-const top10 = Array.isArray(payload.top10) ? payload.top10 : [];
 const cardIds = new Set(cards.map((card) => card.id).filter(Boolean));
-const publicAssetIds = new Set([...cards, ...corePoolCandidates].map((card) => card.id).filter(Boolean));
+const publicAssetIds = new Set(cards.map((card) => card.id).filter(Boolean));
 const activeDate = payload.meta?.activeDate || "";
 if (expectedDate && activeDate !== expectedDate) {
   issues.push(`payload activeDate is ${activeDate || "(missing)"}, expected ${expectedDate}`);
@@ -171,9 +169,6 @@ const largeVendorPatterns = [
   ["salesforce", /\bSalesforce\b/iu],
   ["alibaba", /\bAlibaba\b|\bQwen\b|\bTongyi\b|闃块噷宸村反|閫氫箟鍗冮棶/iu],
 ];
-
-const FRONTSTAGE_LARGE_COMPANY_TOTAL_LIMIT = 3;
-const FRONTSTAGE_LARGE_COMPANY_PER_COMPANY_LIMIT = 1;
 
 function subjectLooksLikeTitle(value = "") {
   const text = cleanFrontstageSubject(value);
@@ -262,7 +257,7 @@ function largeVendorKeyForCard(card = {}) {
   return match?.[0] || "";
 }
 
-function top10EventText(card = {}) {
+function publicCardEventText(card = {}) {
   return [
     card.title,
     card.displayTitle,
@@ -274,8 +269,8 @@ function top10EventText(card = {}) {
   ].filter(Boolean).join(" ");
 }
 
-function top10EventFingerprint(card = {}) {
-  const text = top10EventText(card).toLowerCase();
+function publicCardEventFingerprint(card = {}) {
+  const text = publicCardEventText(card).toLowerCase();
   if (/prometheus/iu.test(text) && /(?:jeff\s+bezos|bezos|贝索斯)/iu.test(text) && /(?:\$?\s*12\s*b|120\s*亿|12\s*billion)/iu.test(text)) {
     return `${card.date}|prometheus|bezos|12b`;
   }
@@ -301,7 +296,7 @@ function publicFactLooksLikeTemplateFallback(value = "") {
     || /\.\.\./u.test(text);
 }
 
-function top10FactIsWeak(card = {}) {
+function publicFrontstageFactIsWeak(card = {}) {
   const fact = String(card.translatedFact || card.fact || "").trim();
   if (!fact) return true;
   if (publicTextLooksGarbled(fact)) return true;
@@ -372,7 +367,7 @@ function publicCardFactIsWeak(card = {}) {
   if (/^鍘熵?https?:\/\//iu.test(fact)) return true;
   if (/^##\s*P-\d+/iu.test(fact) || /\braw_ref:|\braw_original_id:|\braw_archive:|\bpool_refs:/iu.test(fact)) return true;
   if (/公开材料提供了一条可追踪的 AI 商业信号|需继续核对客户、产品和业务结果/iu.test(fact)) return true;
-  return top10FactIsWeak(card);
+  return publicFrontstageFactIsWeak(card);
 }
 
 function checkPublicCardContract(card = {}, label = "public card") {
@@ -413,7 +408,7 @@ function sourceUrlIsRootLike(value = "") {
 
 const frontstageByDate = new Map();
 for (const card of frontstageCards) {
-  if (!publicAssetIds.has(card.id)) issues.push(`frontstage card ${card.id || "(missing id)"} is not present in full cards or core pool candidate asset set`);
+  if (!publicAssetIds.has(card.id)) issues.push(`frontstage card ${card.id || "(missing id)"} is not present in the public Card set`);
   checkPublicCardContract(card, `frontstage card ${card.date || "(missing date)"}`);
   if (!card.date) continue;
   const list = frontstageByDate.get(card.date) || [];
@@ -421,13 +416,9 @@ for (const card of frontstageCards) {
   frontstageByDate.set(card.date, list);
 }
 for (const [date, items] of frontstageByDate.entries()) {
-  if (date === payload.meta?.activeDate && items.length !== 10) {
-    issues.push(`frontstage ${date} has ${items.length} cards, expected exactly 10; expand Raw coverage and repair Pool/Core Pool supply instead of weakening frontstage quotas`);
-  } else if (items.length > 10) {
-    issues.push(`frontstage ${date} has ${items.length} cards, expected at most 10`);
+  if (date === payload.meta?.activeDate && items.length < 1) {
+    issues.push(`frontstage ${date} has no public Cards`);
   }
-  let largeVendorTotal = 0;
-  const largeVendorCounts = new Map();
   for (let index = 0; index < items.length; index += 1) {
     const currentScore = Number(items[index].frontstageRankScore) || 0;
     const nextScore = Number(items[index + 1]?.frontstageRankScore) || Number.NEGATIVE_INFINITY;
@@ -435,76 +426,15 @@ for (const [date, items] of frontstageByDate.entries()) {
     if (!Number.isFinite(Number(items[index].frontstageRankScore))) {
       issues.push(`frontstage ${date} card ${items[index].id || "(missing id)"} is missing frontstageRankScore`);
     }
-    if (!Array.isArray(items[index].frontstageSelectionReasons) || !items[index].frontstageSelectionReasons.length) {
-      issues.push(`frontstage ${date} card ${items[index].id || "(missing id)"} is missing selection reasons`);
-    }
     if (!Array.isArray(items[index].poolRoutes) || !items[index].poolRoutes.includes("core_pool")) {
       issues.push(`frontstage ${date} card ${items[index].id || "(missing id)"} is not produced from core_pool`);
-    }
-    if (items[index].frontstageSelectionTier === "supply-fill" && !items[index].frontstageSupplyFill) {
-      issues.push(`frontstage ${date} card ${items[index].id || "(missing id)"} has supply-fill tier without supply-fill flag`);
-    }
-    const vendorKey = items[index].largeVendorKey || largeVendorKeyForCard(items[index]);
-    if (!vendorKey) continue;
-    largeVendorTotal += 1;
-    largeVendorCounts.set(vendorKey, (largeVendorCounts.get(vendorKey) || 0) + 1);
-  }
-  if (date === activeDate) {
-    if (largeVendorTotal > FRONTSTAGE_LARGE_COMPANY_TOTAL_LIMIT) {
-      issues.push(`frontstage ${date} has ${largeVendorTotal} large-company cards; the Top10 selector must cap this before publication at ${FRONTSTAGE_LARGE_COMPANY_TOTAL_LIMIT}`);
-    }
-    for (const [vendorKey, count] of largeVendorCounts.entries()) {
-      if (count > FRONTSTAGE_LARGE_COMPANY_PER_COMPANY_LIMIT) {
-        issues.push(`frontstage ${date} has ${count} cards for large company ${vendorKey}; the Top10 selector must cap each large company before publication at ${FRONTSTAGE_LARGE_COMPANY_PER_COMPANY_LIMIT}`);
-      }
     }
   }
 }
 
 const activeFrontstageCards = frontstageCards.filter((card) => card.date === activeDate);
-const activeFrontstageIds = new Set(activeFrontstageCards.map((card) => card.id).filter(Boolean));
-if (!Array.isArray(payload.top10)) {
-  issues.push("payload.top10 is missing; Hermes and public compatibility require an explicit active-date Top10 array");
-} else {
-  if (top10.length !== 10) {
-    issues.push(`payload.top10 has ${top10.length} cards, expected exactly 10 for active date ${activeDate}`);
-  }
-  const seenTop10Events = new Map();
-  for (const item of top10) {
-    if (item.date !== activeDate) {
-      issues.push(`payload.top10 card ${item.id || "(missing id)"} has date ${item.date || "(missing date)"}, expected active date ${activeDate}`);
-    }
-    if (!activeFrontstageIds.has(item.id)) {
-      issues.push(`payload.top10 card ${item.id || "(missing id)"} is not present in active-date frontstageCards`);
-    }
-    if (!item.title) {
-      issues.push(`payload.top10 card ${item.id || "(missing id)"} is missing public title`);
-    }
-    if (Object.prototype.hasOwnProperty.call(item, "modelGeneratedTitle")) {
-      issues.push(`payload.top10 card ${item.id || "(missing id)"} exposes modelGeneratedTitle; public title must be source-derived`);
-    }
-    if (!item.sourceTitle && !item.originalTitle && !item.displayTitle) {
-      issues.push(`payload.top10 card ${item.id || "(missing id)"} is missing source/display title`);
-    }
-    if (item.modelGeneratedTitle && item.title === item.modelGeneratedTitle && publicTitleIsGeneric(item.modelGeneratedTitle)) {
-      issues.push(`payload.top10 card ${item.id || "(missing id)"} exposes model-generated title instead of source-derived title`);
-    }
-    if (item.displayTitle && item.title !== item.displayTitle) {
-      issues.push(`payload.top10 card ${item.id || "(missing id)"} public title does not match displayTitle`);
-    }
-    if (!titleBackedByOriginalSource(item)) {
-      issues.push(`payload.top10 card ${item.id || "(missing id)"} public title must match original source title or registered Chinese translation; got ${item.title || "(missing title)"}`);
-    }
-    if (top10FactIsWeak(item)) {
-      issues.push(`payload.top10 card ${item.id || "(missing id)"} has weak news fact; use source-derived facts instead of links or generic fallback`);
-    }
-    const eventKey = top10EventFingerprint(item);
-    const previous = seenTop10Events.get(eventKey);
-    if (eventKey && previous) {
-      issues.push(`payload.top10 cards ${previous} and ${item.id || "(missing id)"} describe the same event`);
-    }
-    if (eventKey) seenTop10Events.set(eventKey, item.id || "(missing id)");
-  }
+if (!activeFrontstageCards.length) {
+  issues.push(`payload has no active-date frontstage Cards for ${activeDate}`);
 }
 
 for (const card of cards) {
@@ -575,44 +505,12 @@ for (const card of cards) {
   }
 }
 
-for (const candidate of payload.corePoolCandidates || []) {
-  checkPublicCardContract(candidate, `core pool candidate ${candidate.date || "(missing date)"}`);
-  if (candidate.date === activeDate && (subjectHasSourceNoise(candidate.subject) || subjectHasBusinessDisplayNoise(candidate.subject) || subjectLooksLikeTitle(candidate.subject) || subjectMatchesTitle(candidate))) {
-    issues.push(`core pool candidate ${candidate.id || "(missing id)"} has title-like subject: ${candidate.subject}`);
-  }
-  if (candidate.date === activeDate && subjectIsMissing(candidate.subject)) {
-    issues.push(`core pool candidate ${candidate.id || "(missing id)"} has missing frontstage subject`);
-  }
-  if (candidate.date === activeDate && subjectIsGeneric(candidate.subject)) {
-    issues.push(`core pool candidate ${candidate.id || "(missing id)"} has generic frontstage subject: ${candidate.subject}`);
-  }
-  if (candidate.date === activeDate && !titleBackedByOriginalSource(candidate)) {
-    issues.push(`core pool candidate ${candidate.id || "(missing id)"} public title must match original source title or registered Chinese translation; got ${candidate.title || "(missing title)"}`);
-  }
-  if (candidate.date === activeDate) {
-    for (const [field, value] of [
-      ["summary", candidate.summary],
-      ["translatedFact", candidate.translatedFact],
-      ["visibleFragment", candidate.visibleFragment],
-      ...(candidate.originalHighlights || []).map((highlight, index) => [`originalHighlights[${index}]`, highlight]),
-    ]) {
-      if (publicContentNeedsTranslation(value)) {
-        issues.push(`core pool candidate ${candidate.id || "(missing id)"} has untranslated public ${field}: ${String(value).slice(0, 120)}`);
-      }
-      if (publicTextLooksGarbled(value)) {
-        issues.push(`core pool candidate ${candidate.id || "(missing id)"} has garbled public ${field}: ${String(value).slice(0, 120)}`);
-      }
-    }
-  }
-}
-
 const result = {
   ok: issues.length === 0,
   status: issues.length === 0 ? "passed" : "failed",
   checked_file: rel(jsonPath),
   card_count: cards.length,
   frontstage_card_count: frontstageCards.length,
-  top10_count: top10.length,
   issue_count: issues.length,
   issues,
 };

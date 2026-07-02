@@ -42,23 +42,24 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 ## Current Version
 
-- Current stage: SITE-V3.4.0.
+- Current stage: SITE-V3.4.1.
 - Current frontstage: `01-SiteV2/site/v3-data-observation.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/weekly-ai-business-change-radar.html`, `01-SiteV2/site/follow-builders.html`, and `01-SiteV2/site/community-intelligence.html`.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
-- Current Business Signals column version: BSIG-V1.1.5-corepool-top10-release.
+- Current Business Signals column version: BSIG-V1.2.0-core-signal-cards.
 - Current First-Line Viewpoints column version: FLV-V1.0.2-supervision-idempotency.
 - Current Community Intelligence column version: CINT-V1.0.2-publication-waiting-gate.
 - Current Enterprise AI / FDE lens version: EAI-V1.1.0-fde-lens-pool.
 - Current Reports Center / Intelligence Map column version: IMAP-V2.0.0-report-center-opportunity-system.
 - Current Business Signals data contract: V3.3.6.3 business source artifact aggregation.
+- Current tag taxonomy version: TAG-V1.1.0-v34-layered-taxonomy.
 - Current core rule source: `context/07-v3-intelligence-generation-rules.md`.
 - V2 website pages and old four-column output rules are retired.
 
 ## Current Product Goal
 
-SITE-V3.4.0 is an AI business intelligence asset system.
+SITE-V3.4.1 is an AI business intelligence asset system.
 
-Daily production should preserve and display the 10 most important AI business signals across:
+Daily production should preserve and display all qualified Core Pool AI business signals that can become Cards across:
 
 - product / service;
 - funding;

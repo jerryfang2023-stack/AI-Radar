@@ -1,24 +1,24 @@
 ---
 name: guanlan-business-signals-monitor
-description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.0 / BSIG-V1.1.5 Business Signals lane. Covers daily Raw / Pool / Signal Card / Top10 / Reports Center map inputs / trend-candidate inputs, source-first gates, Pool/Core release behavior, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for First-Line Viewpoints, Community Intelligence, direct deployment, or retired daily observation / brief / trend-report outputs.
+description: Use when supervising, running, repairing, or improving the WaveSight AI current SITE-V3.4.1 / BSIG-V1.2.0 Business Signals lane. Covers daily Raw / Pool / unified frontstage Signal Cards / Reports Center map inputs / trend-candidate inputs, source-first gates, Pool/Core release behavior, PR publication, Hermes repair closure, and lane-specific self-improvement. Do not use for First-Line Viewpoints, Community Intelligence, direct deployment, or retired daily observation / brief / trend-report outputs.
 metadata:
   guanlan:
     version: "1.0.2"
     lane: "Business Signals"
     status: "current lane owner"
     order: 10
-    responsibility: "Own Business Signals daily supervision and repair: Raw, Pool, Signal Cards, public Top10, Reports Center map inputs, and trend-candidate inputs."
+    responsibility: "Own Business Signals daily supervision and repair: Raw, Pool, unified frontstage Signal Cards, Reports Center map inputs, and trend-candidate inputs."
     upstream: "external source capture, daily persistent assets workflow, Hermes inbox"
-    downstream: "Signal Cards, public Top10, graph inputs, trend candidates, PR publication"
-    gates: "monitor QC, post-monitor Raw / Pool gate, six-gate Card entry, Card generation, source-first, frontstage Top10"
-    recent_learning: "Repeated Top10-missing incidents must be split into stale assets, source-artifact retry, translation-title, publication/local-sync, and supervision-observability categories before any full rerun. Provider-caused Raw shortfall is diagnostic when Pool/Core/Top10 supply is already sufficient. Blind full-chain reruns are forbidden when same-date artifacts can support a targeted repair and publication."
+    downstream: "Signal Cards, graph inputs, trend candidates, PR publication"
+    gates: "monitor QC, post-monitor Raw / Pool gate, six-gate Card entry, Card generation, source-first, frontstage Card contract"
+    recent_learning: "The public Business Signals page no longer has Top10 versus candidate-pool modes. Repeated frontstage Card incidents must be split into stale assets, source-artifact retry, translation-title, publication/local-sync, and supervision-observability categories before any full rerun. Provider-caused Raw shortfall is diagnostic when Pool/Core/Card supply is already sufficient. Blind full-chain reruns are forbidden when same-date artifacts can support a targeted repair and publication."
     mirrored_in_skill_store: true
     memory_required: true
 ---
 
 # Guanlan Business Signals Monitor
 
-This skill owns the Business Signals production lane. It coordinates source capture, evidence screening, Signal Cards, public Top10, relationship / intelligence map inputs, trend-candidate inputs, and lane repair.
+This skill owns the Business Signals production lane. It coordinates source capture, evidence screening, unified frontstage Signal Cards, relationship / intelligence map inputs, trend-candidate inputs, and lane repair.
 
 It is the lane owner. It may call narrower skills such as `guanlan-daily-monitor`, `guanlan-monitor-quality-gate`, `guanlan-daily-monitor-qc`, `guanlan-raw-pool-card`, and `guanlan-trend-candidate-writer`.
 
@@ -52,7 +52,7 @@ For detailed chain work, load the narrower skill:
 - `agent-workflow/skills/guanlan-raw-pool-card/SKILL.md`
 - `agent-workflow/skills/guanlan-trend-candidate-writer/SKILL.md`
 
-For regression prevention, read `evals/business-signals-monitor-evals.md`. When repairing Top10, frontstage selection, or title-derived public fields, also read `examples/good-top10-contract.md` and `examples/bad-top10-missing.md`. When repairing Card eligibility or Core Pool promotion, also read `examples/good-six-gate-card-entry.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
+For regression prevention, read `evals/business-signals-monitor-evals.md`. When repairing frontstage Card selection, title-derived public fields, or Card eligibility / Core Pool promotion, also read `examples/good-six-gate-card-entry.md`. Read `MEMORY.md` only when a failure resembles a previous incident or when updating this skill.
 When repairing repeated morning failures, also read `examples/good-failure-router.md` and the latest weekly failure review report.
 
 ## Workflow
@@ -65,7 +65,7 @@ When repairing repeated morning failures, also read `examples/good-failure-route
    - Pool routing;
    - monitor QC;
    - Card generation;
-   - Top10 selection;
+   - frontstage Card contract;
    - source-first gate;
    - frontstage regression;
    - PR / merge / Pages publication.
@@ -75,11 +75,10 @@ When repairing repeated morning failures, also read `examples/good-failure-route
    - `raw_volume_shortfall`: Raw count below minimum;
    - `pool_mix_shortfall`: importance lane coverage gap;
    - `core_supply_shortfall`: Core Pool or non-large Core Pool below minimum;
-   - `top10_contract`: public `top10` missing, stale, or not exactly 10;
+   - `frontstage_card_contract`: public active-date Cards missing, stale, or not sorted by importance;
    - `translation_title`: English/mixed/placeholder title or title-like subject;
-   - `large_company_cap`: Top10 cap failure;
    - `publication`: PR, merge, or Pages failure after valid assets.
-6. Before any full-chain rerun, record the pre-rerun checklist: activeDate, Top10 count, Card count, Raw / Pool / routed / Core / non-large Core counts, source-artifact freshness by source/channel, missing source-title translations, PR / Pages state, and local dirty / fast-forward state. If the checklist shows same-date Pool, routed Pool, Core Pool, non-large Core Pool, and Top10/Card supply are sufficient, do not rerun Raw just because the Raw floor is short; use the existing artifacts and repair the downstream blocker.
+6. Before any full-chain rerun, record the pre-rerun checklist: activeDate, public Card count, Raw / Pool / routed / Core / non-large Core counts, source-artifact freshness by source/channel, missing source-title translations, PR / Pages state, and local dirty / fast-forward state. If the checklist shows same-date Pool, routed Pool, Core Pool, non-large Core Pool, and Card supply are sufficient, do not rerun Raw just because the Raw floor is short; use the existing artifacts and repair the downstream blocker.
 7. Repair the smallest script, rule, gate, or skill path needed for the failing category.
 8. Rerun the exact failed gate or the smallest relevant validation.
 9. Add or tighten an eval before adding long prose when the failure is recurring.
@@ -92,14 +91,14 @@ This is a hard requirement, not a preference.
 - Do not rerun the whole Business Signals workflow as the default response to a failure.
 - Start from the failed gate, report, run step, or published-data mismatch, then repair that specific stage.
 - If same-date Raw, Pool, Card, Core Pool, or frontstage artifacts already exist, reuse those artifacts for downstream repair and publication unless the failed stage proves they are corrupt or insufficient.
-- If Pool / routed Pool / Core Pool / non-large Core Pool and Top10 or Card supply are already sufficient, do not restart source raw collection just because one provider, peer channel, or quota-dependent source is short.
-- If `pool_core_supply_release=true`, GDELT / keyword / RSS / AI HOT / Anysearch source-channel failures, `unrecovered_failed_sources_max`, keyword-only floors, AI-title ratio, off-topic raw-title counts, and Raw volume shortfall are diagnostic supply-risk notes, not release blockers, unless a real Pool / Core / coverage / Top10 gate is also failing.
+- If Pool / routed Pool / Core Pool / non-large Core Pool and Card supply are already sufficient, do not restart source raw collection just because one provider, peer channel, or quota-dependent source is short.
+- If `pool_core_supply_release=true`, GDELT / keyword / RSS / AI HOT / Anysearch source-channel failures, `unrecovered_failed_sources_max`, keyword-only floors, AI-title ratio, off-topic raw-title counts, and Raw volume shortfall are diagnostic supply-risk notes, not release blockers, unless a real Pool / Core / coverage / Card gate is also failing.
 - After a targeted repair passes the smallest relevant validation, proceed to PR / merge / Pages publication from the repaired artifacts. Do not dispatch another full-chain run to "be safe".
 - If a full-chain rerun is still necessary, first write the checklist result and the specific missing or corrupt artifact that makes artifact reuse impossible.
 
 ## Morning Fast Path
 
-The lane targets a healthy Top10 before 10:00 Asia/Shanghai by failing early and avoiding blind full-chain reruns. Treat 10:00 as a target checkpoint, not as permission to lower gates.
+The lane targets healthy same-date public Cards before 10:00 Asia/Shanghai by failing early and avoiding blind full-chain reruns. Treat 10:00 as a target checkpoint, not as permission to lower gates.
 
 Use this order:
 
@@ -111,26 +110,24 @@ Use this order:
    - Core Pool count;
    - non-large Core Pool count;
    - funding / case / product coverage;
-   - predicted Top10 eligibility after the large-company cap.
-4. If Raw is below floor because of provider quota or temporary outage, but Pool, routed Pool, Core Pool, non-large Core Pool, and predicted Top10 eligibility are sufficient, keep the Raw shortfall visible as a diagnostic and continue with Card / frontstage / PR work from the same artifact set.
-   - Treat GDELT, keyword search, RSS, and AI HOT as peer source-artifact channels. Do not block release because one peer channel is empty, quota-limited, noisy, or below a keyword-specific floor when the combined peer artifacts already produce healthy Pool / Core Pool / Top10 supply.
-5. If Pool, routed Pool, Core Pool, non-large Core Pool, or Top10 eligibility is thin, repair the missing source lane first. Do not continue into dashboard or publication work.
-6. Generate Signal Cards from all eligible Core Pool items.
-7. Apply Top10 preselection with strict large-company caps before public JSON build. If formal Signal Card count is thinner than 10 but qualified source-backed Core Pool display candidates are sufficient, fill Top10 from those Core Pool candidates and continue publication; keep the six formal Signal Card gates unchanged.
+   - public Card readiness.
+4. If Raw is below floor because of provider quota or temporary outage, but Pool, routed Pool, Core Pool, non-large Core Pool, and public Card readiness are sufficient, keep the Raw shortfall visible as a diagnostic and continue with Card / frontstage / PR work from the same artifact set.
+   - Treat GDELT, keyword search, RSS, and AI HOT as peer source-artifact channels. Do not block release because one peer channel is empty, quota-limited, noisy, or below a keyword-specific floor when the combined peer artifacts already produce healthy Pool / Core Pool / Card supply.
+5. If Pool, routed Pool, Core Pool, non-large Core Pool, or Card readiness is thin, repair the missing source lane first. Do not continue into dashboard or publication work.
+6. Generate frontstage Signal Cards from all eligible Core Pool items.
+7. Build one public Card set sorted by importance / impact. Do not split public data into Top10 and candidate-pool modes. Do not expose sorting reasons on the page.
 8. Build Business frontstage JSON.
 9. Run the unified Business frontstage gate immediately.
 10. Only after that gate passes, build operations dashboard, topic center, manifest, PR, merge, and Pages.
 11. After failed production runs, Daily Problem Watchdog should write one categorized inbox item for targeted repair. It must not dispatch another full-chain run.
-12. At 10:50, supervision should check the publication closure: merged PR, GitHub Pages success, same-date Business data, Top10 count, and whether local sync is blocked.
+12. At 10:50, supervision should check the publication closure: merged PR, GitHub Pages success, same-date Business data, public Card count, and whether local sync is blocked.
 
 ## Weekend Policy
 
 Weekend monitor quantity floors may be lighter because source volume is lower, but evidence quality and frontstage product promises do not weaken.
 
-- Keep Top10 at exactly 10.
-- Keep the frontstage large-company cap strict: at most 3 large-company cards total and at most 1 per large company.
-- If caps leave fewer than 10 eligible Cards and Core Pool display candidates, trigger non-large-company source refill before Top10 publication.
-- Weekend backfill can only promote non-large Core Pool evidence that passes the same six Card entry gates.
+- Keep the same source-first and six-gate Card entry rules.
+- Weekend public Cards should include every qualified Core Pool business signal that can become a Card.
 - Do not use community feedback, builders viewpoints, social posts, repo roots, package pages, marketplace listings, or generic lists as direct Business Signal Cards.
 - Do not treat a supervision warning or GitHub lookup timeout as a data failure unless active-date assets are actually stale or unhealthy.
 
@@ -138,12 +135,11 @@ Weekend monitor quantity floors may be lighter because source volume is lower, b
 
 - Do not write First-Line Viewpoints or Community Intelligence data.
 - Do not use builders viewpoints, opinion cards, or community posts as business-signal facts unless separately verified through Raw / Pool.
-- Do not repair Enterprise AI / FDE precision, detail, or Obsidian sync as a generic Top10 issue; route it to `guanlan-enterprise-ai-fde-monitor`.
+- Do not repair Enterprise AI / FDE precision, detail, or Obsidian sync as a generic frontstage Card issue; route it to `guanlan-enterprise-ai-fde-monitor`.
 - Do not restore daily observation, business brief, trend report, publiccopy, cardcopy, or copy-style blockers.
-- Do not lower Raw / Pool / Core Pool / Top10 quality gates to make a day look complete.
-- Do not relax the large-company cap to solve weekend low supply; repair non-large Core Pool supply instead.
+- Do not lower Raw / Pool / Core Pool / Card gates to make a day look complete.
 - If routed Pool, Core Pool, or non-large Core Pool is short, repair with targeted recent-event refill: launches, funding, customer deployments, production rollouts, procurement, pricing, regulatory, or vertical workflow cases.
-- If Raw is reported short, identify the deficient source/channel or downstream eligibility bucket before rerunning. Do not call a translation-title, stale local checkout, publication, or local-sync issue a Raw shortage. If Pool/Core/Top10 supply is already enough, proceed downstream from the existing artifacts instead of starting another full Raw run.
+- If Raw is reported short, identify the deficient source/channel or downstream eligibility bucket before rerunning. Do not call a translation-title, stale local checkout, publication, or local-sync issue a Raw shortage. If Pool/Core/Card supply is already enough, proceed downstream from the existing artifacts instead of starting another full Raw run.
 - Do not convert a downstream gate failure, publication failure, stale local checkout, or version mismatch into a full Raw / Pool / Card rerun. Fix the failing downstream stage and publish after validation.
 - Do not satisfy quantity gaps by promoting marketplace listings, directories, repo roots, package/model pages, generic guides, broad lists, funding roundups, generic funding commentary, interviews, old evergreen technical posts, or search snippets into Core Pool.
 - Do not satisfy quantity gaps with generic FDE / applied-AI implementation pages. Job posts, role explainers, consulting/service landing pages, and "what is FDE" articles stay non-core unless the same original source has a concrete dated customer deployment, launch, financing, procurement, partnership, or production rollout.

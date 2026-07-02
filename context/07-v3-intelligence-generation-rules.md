@@ -65,9 +65,9 @@ Raw does not make content judgments, give recommendations, or write market concl
 Raw quantity is for evidence coverage, not frontstage balance:
 
 - automation target / gate: keep at least 150 active Raw candidates in the daily production chain;
-- if search-provider quota or temporary outage prevents the Raw floor from being filled, Raw shortfall is diagnostic rather than blocking once Pool, routed Pool, usable `core_pool`, non-large `core_pool`, and downstream Top 10 gates are sufficient;
-- source artifact Raw selection treats GDELT, keyword search, RSS, and AI HOT as peer discovery channels. There is no fixed priority order among them; any peer channel can satisfy Raw supply as long as it produces source-backed Raw artifacts and the downstream Pool / Core Pool / Top10 gates are healthy;
-- keyword-only floors, AI-relevant title ratio, off-topic raw-title count, failed source-channel count, and Anysearch / provider quota notes are Raw-channel diagnostics under the same Pool / Core Pool / Top10 release rule; they must stay visible in reports but must not force a full rerun or block publication by themselves;
+- if search-provider quota or temporary outage prevents the Raw floor from being filled, Raw shortfall is diagnostic rather than blocking once Pool, routed Pool, usable `core_pool`, non-large `core_pool`, and downstream Card gates are sufficient;
+- source artifact Raw selection treats GDELT, keyword search, RSS, and AI HOT as peer discovery channels. There is no fixed priority order among them; any peer channel can satisfy Raw supply as long as it produces source-backed Raw artifacts and the downstream Pool / Core Pool / Card gates are healthy;
+- keyword-only floors, AI-relevant title ratio, off-topic raw-title count, failed source-channel count, and Anysearch / provider quota notes are Raw-channel diagnostics under the same Pool / Core Pool / Card release rule; they must stay visible in reports but must not force a full rerun or block publication by themselves;
 - Raw may contain large-company material, but monitor logs must expose over-concentration by vendor/theme;
 - Raw must not be padded with repeated large-company product announcements when funding, customer, vertical, regulation, pricing, procurement, or emerging-company evidence is available.
 
@@ -128,7 +128,7 @@ Signal Card entry gate is expressed as six required gates. Do not re-expand thes
 1. `source_auditability`
    - Must have an original source URL and a resolved original-source role rather than a discovery/search entrance.
    - `source_level` / `acquisition_source_level` (`S` / `A` / `B` / `C` / `M`) are traceability labels only; they must not be used as Card eligibility gates, core_pool gates, ranking boosts, ranking penalties, or automatic downgrade reasons.
-   - Cannot be deleted because downstream facts, Top 10, relationship graph, and trend candidates must be traceable to an auditable source.
+   - Cannot be deleted because downstream facts, frontstage Cards, relationship graph, and trend candidates must be traceable to an auditable source.
 
 2. `evidence_quality`
    - Must be usable `core_pool` evidence with Raw QC `allow`, readable body text, extraction method, acceptable readability, high/medium extraction quality, usable excerpts / evidence object, and non-blocking degradation reasons.
@@ -154,26 +154,14 @@ Signal Card entry gate is expressed as six required gates. Do not re-expand thes
 
 Daily business-signal target:
 
-- frontstage presentation publishes exactly 10 signal cards per date;
-- Signal Card assets should cover all qualified Core Pool items, including cards not displayed in the frontstage Top 10;
-- if formal Signal Card promotion is thinner than the public Top10 target but Pool, routed Pool, usable `core_pool`, non-large `core_pool`, and source-backed Core Pool display candidates are sufficient, Top10 may be filled from qualified Core Pool candidates. This is a release path, not a weakening of the six formal Signal Card entry gates;
-- include at most 1 signal per large company in the frontstage Card set per date;
-- include at most 3 large-company signals in total in the frontstage Card set per date;
-- frontstage presentation must still publish exactly 10 items per date; if the large-company caps leave fewer than 10 eligible items, expand Raw collection and repair Pool/Core Pool selection instead of weakening the caps or padding with repeated large-company news;
-- include vertical-industry cases;
-- include emerging-company financing;
-- do not let large-company product news crowd out funding and cases.
+- frontstage presentation publishes every active-date qualified Core Pool business signal that can become a Card;
+- the public page has one Card set, not a Top10 set plus a candidate pool;
+- former candidate-pool items that pass Card display requirements must be normalized into frontstage Cards instead of remaining in a separate public candidate section;
+- Card ordering is importance / impact descending. The page should not display sorting reasons as user-facing copy;
+- include vertical-industry cases and emerging-company financing when qualified evidence exists;
+- do not let large-company product news crowd out funding and cases in Pool/Core supply repair, but do not use a public Top10 or large-company-cap rule as a release gate.
 
-Recommended target mix:
-
-| Type | Minimum | Target |
-|---|---:|---:|
-| Funding | 2 | 3 |
-| Case / vertical deployment | 2 | 3 |
-| Product / service | 2 | 3 |
-| Best remaining qualified item | 0 | 1 |
-
-This mix is a monitoring and candidate-pool coverage target, not a frontstage ordering rule. Frontstage presentation must rank the day by importance and publish exactly the 10 most important business signals after applying the same-company and total large-company caps. Relationship graph and trend-candidate generation still use the full eligible Core Pool / Card asset set, including non-displayed Pool-backed Cards.
+Relationship graph and trend-candidate generation use the full eligible Card set.
 
 Card title rules:
 

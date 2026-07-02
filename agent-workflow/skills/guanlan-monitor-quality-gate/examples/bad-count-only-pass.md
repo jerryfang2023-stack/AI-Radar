@@ -12,4 +12,4 @@ ignored_risks:
 downstream_status: allowed
 ```
 
-Why it fails: counts alone cannot override weak source quality, discovery-only facts, or homepage/index evidence.
+Why it fails: counts alone cannot override weak original evidence, discovery-only facts, or homepage/index evidence.

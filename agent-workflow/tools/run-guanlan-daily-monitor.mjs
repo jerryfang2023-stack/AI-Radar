@@ -3892,7 +3892,6 @@ function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems
     raw_candidate_count: normalizedItems.length,
     failures,
     channel_distribution: countBy(normalizedItems, "acquisition_channel"),
-    source_level_distribution: countBy(normalizedItems, "source_level"),
     theme_distribution: countBy(normalizedItems, "theme"),
     keyword_group_distribution: countBy(normalizedItems, "keyword_group"),
     items: sourceRunArtifactItems(rawSourceItems, sourceId),
@@ -3913,10 +3912,6 @@ function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems
     "## Channel Distribution",
     "",
     distributionText(payload.channel_distribution),
-    "",
-    "## Source Level Distribution",
-    "",
-    distributionText(payload.source_level_distribution),
     "",
     "## Theme Distribution",
     "",
@@ -4508,7 +4503,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
       `- 搜索意图：${record.search_intent || "not_applicable"}`,
       `- 搜索路径：${record.search_path || "not_applicable"}`,
       `- 来源类型：${item.source_type}`,
-      `- 来源等级：${item.source_level}`,
+      `- 追溯标签：${item.source_level}`,
       `- evidence_object_type: ${record.evidence_object_type}`,
       `- evidence_object_usable: ${record.evidence_object_usable}`,
       `- event_evidence: ${record.event_evidence}`,
@@ -4734,7 +4729,7 @@ function makeRawFiles(items, failures, runMeta = {}) {
     const id = `P-${String(index + 1).padStart(3, "0")}`;
     const routes = item.raw_record?.pool_routes || [];
     const keepReason = routes.includes("core_pool")
-      ? "全文质量、来源等级和商业变化同时达标，可作为后续资产加工的核心候选。"
+      ? "全文、原始证据和商业变化同时达标，可作为后续资产加工的核心条目。"
       : "具备早期变化、用户反馈或观察价值，但进入前台判断前仍需补足原文、页面类型和事件证据。";
     const rejectRisk = isCommunitySource(item)
       ? "当前主要来自社区/聚合/线索来源，不能直接作为事实主证据。"
@@ -4876,7 +4871,6 @@ function makeRawFiles(items, failures, runMeta = {}) {
     `- keyword_group_distribution: ${distributionText(byKeywordGroup)}`,
     `- theme_distribution: ${distributionText(byTheme)}`,
     `- theme_concentration_warning: ${themeConcentrationWarning(items)}`,
-    `- source_level_distribution: ${distributionText(byLevel)}`,
     `- evidence_object_type_distribution: ${distributionText(byEvidenceObjectType)}`,
     `- pool_route_distribution: ${distributionText(byPoolRoute)}`,
     `- pool_index_route_distribution: ${distributionText(byPoolIndexRoute)}`,

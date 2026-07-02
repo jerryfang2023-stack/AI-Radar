@@ -46,11 +46,8 @@ function runGate(id, label, script, extraArgs = []) {
 
 function classify(text = "") {
   const categories = new Set();
-  if (/top\s*10|top10|v3_active_date_top10_invalid|expected exactly 10|has \d+ cards, expected exactly 10/iu.test(text)) {
-    categories.add("top10_supply");
-  }
-  if (/large-company|large company|largeVendor|same large-company cap/iu.test(text)) {
-    categories.add("large_company_cap");
+  if (/v3_active_date_has_no_cards|no public Cards|public Card count is 0|frontstage .* has no public Cards/iu.test(text)) {
+    categories.add("frontstage_card_contract");
   }
   if (/untranslated|translation|needs translation|has untranslated/iu.test(text)) {
     categories.add("translation");

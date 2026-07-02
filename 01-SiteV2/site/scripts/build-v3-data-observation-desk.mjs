@@ -10,8 +10,9 @@ const outputFile = path.join(siteDataDir, "v3-data-observation-desk.json");
 const intelligenceGraphIndexFile = path.join(siteDataDir, "intelligence-graph-index.json");
 const enterpriseAiFdeFile = path.join(siteDataDir, "enterprise-ai-fde.json");
 const sourceTitleTranslationsFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
-const siteVersion = "SITE-V3.4.0";
-const businessSignalsColumnVersion = "BSIG-V1.1.5-corepool-top10-release";
+const siteVersion = "SITE-V3.4.1";
+const businessSignalsColumnVersion = "BSIG-V1.2.0-core-signal-cards";
+const tagTaxonomyVersion = "TAG-V1.1.0-v34-layered-taxonomy";
 const enterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
 const intelligenceMapColumnVersion = "IMAP-V2.0.0-report-center-opportunity-system";
 
@@ -1162,7 +1163,7 @@ function publicDisplayTitleIsReady(title = "") {
   return true;
 }
 
-function publicCandidateIsDisplayReady(card = {}) {
+function publicSignalCardIsDisplayReady(card = {}) {
   if (!card.title || !card.displayTitle) return false;
   const expectedTitle = publicTitleCandidate(sourceFrontstageTitle(card), card.sourceUrl);
   if (expectedTitle) {
@@ -1186,7 +1187,7 @@ function publicCardFillIsDisplayReady(card = {}) {
   return true;
 }
 
-function corePoolCandidateFillIsDisplayReady(card = {}) {
+function coreSignalCardFillIsDisplayReady(card = {}) {
   const title = String(card.title || card.displayTitle || "").trim();
   const fact = String(card.translatedFact || card.visibleFragment || card.summary || "").trim();
   if (!title || !card.sourceUrl) return false;
@@ -1384,19 +1385,6 @@ function normalizeFrontstageDisplay(card = {}, options = {}) {
     }),
   };
 }
-
-function top10CompatCard(card = {}) {
-  const sourceTitle = sourceFrontstageTitle(card, card.originalTitle);
-  const displayTitle = publicDisplayTitle(sourceTitle, "", card.sourceUrl) || card.displayTitle || card.title;
-  return {
-    ...card,
-    generatedTitle: displayTitle,
-    sourceTitle: sourceTitle || displayTitle,
-    displayTitle,
-    title: displayTitle,
-  };
-}
-
 
 function chineseFactFromSource(title = "", sourceUrl = "") {
   const text = String(title || "");
@@ -2051,10 +2039,6 @@ const largeVendorPatterns = [
   ["alibaba", /\bAlibaba\b|\bQwen\b|\bTongyi\b|阿里巴巴|通义千问/iu],
 ];
 
-const FRONTSTAGE_TOP10_LIMIT = 10;
-const FRONTSTAGE_LARGE_COMPANY_TOTAL_LIMIT = 3;
-const FRONTSTAGE_LARGE_COMPANY_PER_COMPANY_LIMIT = 1;
-
 function largeVendorKeyFromText(value = "") {
   const text = String(value || "");
   const match = largeVendorPatterns.find(([, pattern]) => pattern.test(text));
@@ -2260,10 +2244,7 @@ function isGenericFrontstageCandidate(card = {}) {
 }
 
 function buildDailyFrontstageSelection(
-  cards = [],
-  limit = FRONTSTAGE_TOP10_LIMIT,
-  largeVendorTotalLimit = FRONTSTAGE_LARGE_COMPANY_TOTAL_LIMIT,
-  largeVendorPerCompanyLimit = FRONTSTAGE_LARGE_COMPANY_PER_COMPANY_LIMIT
+  cards = []
 ) {
   const byDate = new Map();
   for (const card of cards) {
@@ -2275,129 +2256,45 @@ function buildDailyFrontstageSelection(
   const selected = [];
   const reports = [];
   for (const [date, items] of byDate.entries()) {
-    let datePicked = 0;
-    let largeVendorTotal = 0;
-    const largeVendorCounts = new Map();
     const annotated = items.map(annotateFrontstageCandidate);
     const coreCandidates = annotated.filter((card) => card.fromCorePool);
-    const preferred = annotated
-      .filter((card) => card.fromCorePool)
+    const displayCards = coreCandidates
       .filter((card) => !card.frontstageGenericCandidate && card.frontstageEvidenceScore >= 30)
       .filter(hasSourceBackedFrontstageFact)
-      .filter(publicCandidateIsDisplayReady)
-      .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
-    const preferredIds = new Set(preferred.map((card) => card.id));
-    const fallback = coreCandidates
-      .filter((card) => !preferredIds.has(card.id))
-      .filter(hasSourceBackedFrontstageFact)
-      .filter(publicCandidateIsDisplayReady)
-      .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
-    const ranked = [...preferred, ...fallback];
-    const rankedIds = new Set(ranked.map((card) => card.id));
-    const nonLargeCoreFill = coreCandidates
-      .filter((card) => !rankedIds.has(card.id))
-      .filter((card) => !card.largeVendorKey)
-      .filter((card) => !card.frontstageGenericCandidate)
-      .filter((card) => card.sourceUrl && card.translatedFact && card.frontstageEvidenceScore >= 20)
-      .filter(publicCandidateIsDisplayReady)
-      .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
-    const sourceBackedFill = coreCandidates
-      .filter((card) => !rankedIds.has(card.id))
-      .filter((card) => !card.frontstageGenericCandidate)
-      .filter((card) => (card.type === "core_pool_candidate" ? corePoolCandidateFillIsDisplayReady(card) : publicCardFillIsDisplayReady(card)))
+      .filter(publicSignalCardIsDisplayReady)
       .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
     const rejected = [];
     const selectedForDate = [];
-    const selectedIds = new Set();
-    let nonLargeCoreFillCount = 0;
     const largeCompanyCandidateCount = annotated.filter((card) => card.largeVendorKey).length;
-    const canSelectUnderLargeCompanyCap = (card, stage) => {
-      if (!card.largeVendorKey) return true;
-      const vendorCount = largeVendorCounts.get(card.largeVendorKey) || 0;
-      if (largeVendorTotal >= largeVendorTotalLimit) {
-        rejected.push({ id: card.id, reason: "large-company total cap", stage });
-        return false;
-      }
-      if (vendorCount >= largeVendorPerCompanyLimit) {
-        rejected.push({ id: card.id, reason: `same large-company cap: ${card.largeVendorKey}`, stage });
-        return false;
-      }
-      return true;
-    };
-    const noteLargeCompanySelection = (card) => {
-      if (!card.largeVendorKey) return;
-      const vendorCount = largeVendorCounts.get(card.largeVendorKey) || 0;
-      largeVendorTotal += 1;
-      largeVendorCounts.set(card.largeVendorKey, vendorCount + 1);
-    };
-    const selectCard = (card, selectionTier) => {
-      noteLargeCompanySelection(card);
+    const selectCard = (card) => {
       const selectedCard = {
         ...card,
         summary: card.frontstageValueDescription,
-        frontstageSelectionTier: selectionTier,
-        frontstageSupplyFill: selectionTier !== "editorial",
+        type: "signal_card",
+        cardSource: card.type === "core_signal_card" ? "core_pool" : "signal_card",
+        promotionStatus: "frontstage_card",
+        frontstageSelectionTier: "core-signal-card",
+        frontstageSupplyFill: false,
       };
       selected.push(selectedCard);
       selectedForDate.push(selectedCard);
-      selectedIds.add(card.id);
-      datePicked += 1;
     };
-    for (const card of ranked) {
-      if (datePicked >= limit) break;
+    for (const card of displayCards) {
       if (isDuplicateFrontstageEvent(card, selectedForDate)) {
         rejected.push({ id: card.id, reason: "duplicate event already selected" });
         continue;
       }
-      if (!canSelectUnderLargeCompanyCap(card, "editorial-selection")) continue;
-      const selectionTier = preferredIds.has(card.id) ? "editorial" : "supply-fill";
-      selectCard(card, selectionTier);
-    }
-    for (const card of ranked) {
-      if (datePicked >= limit) break;
-      if (selectedIds.has(card.id)) continue;
-      if (isDuplicateFrontstageEvent(card, selectedForDate)) {
-        rejected.push({ id: card.id, reason: "duplicate event already selected in relaxed fill" });
-        continue;
-      }
-      if (!canSelectUnderLargeCompanyCap(card, "quota-safe-fill")) continue;
-      selectCard(card, "quota-safe-fill");
-    }
-    for (const card of nonLargeCoreFill) {
-      if (datePicked >= limit) break;
-      if (selectedIds.has(card.id)) continue;
-      if (isDuplicateFrontstageEvent(card, selectedForDate)) {
-        rejected.push({ id: card.id, reason: "duplicate event already selected in non-large core fill" });
-        continue;
-      }
-      selectCard(card, "non-large-core-fill");
-      nonLargeCoreFillCount += 1;
-    }
-    for (const card of sourceBackedFill) {
-      if (datePicked >= limit) break;
-      if (selectedIds.has(card.id)) continue;
-      if (isDuplicateFrontstageEvent(card, selectedForDate)) {
-        rejected.push({ id: card.id, reason: "duplicate event already selected in source-backed fill" });
-        continue;
-      }
-      if (!canSelectUnderLargeCompanyCap(card, "source-backed-fill")) continue;
-      selectCard(card, "source-backed-fill");
+      selectCard(card);
     }
     reports.push({
       date,
-      target: limit,
       candidateCount: items.length,
       coreCandidateCount: coreCandidates.length,
-      qualifiedCount: preferred.length,
-      selectedCount: datePicked,
-      supplyConstrained: preferred.length < limit,
-      largeCompanyTotalLimit: largeVendorTotalLimit,
-      largeCompanyPerCompanyLimit: largeVendorPerCompanyLimit,
+      qualifiedCount: displayCards.length,
+      selectedCount: selectedForDate.length,
+      supplyConstrained: false,
       largeCompanyCandidateCount,
-      largeCompanySelectedCount: largeVendorTotal,
-      largeCompanySelectedByVendor: Object.fromEntries([...largeVendorCounts.entries()].sort((a, b) => a[0].localeCompare(b[0]))),
-      nonLargeCoreFillCount,
-      rejectedByQuota: rejected.slice(0, 12),
+      rejectedDuplicates: rejected.slice(0, 12),
     });
   }
   return {
@@ -2498,12 +2395,12 @@ function corePoolNotPromotedMap(date = "") {
 }
 
 function publicPromotionIssue(issue = "") {
-  if (/source_auditability/iu.test(issue)) return "来源不可审计，需要补齐原文或来源等级";
+  if (/source_auditability/iu.test(issue)) return "来源不可审计，需要补齐原文链接和来源事实";
   if (/evidence_quality:stale_source_date/iu.test(issue)) return "来源时间过旧，适合保留为背景证据";
   if (/evidence_quality/iu.test(issue)) return "原文证据质量不完整，需要补采全文、摘录或哈希";
   if (/business_signal_scope/iu.test(issue)) return "不属于产品、融资或案例类商业信号";
   if (/valid_page_type/iu.test(issue)) return "页面类型不适合直接成卡，需要回到具体事件页";
-  if (/commercial_importance/iu.test(issue)) return "商业重要性不足，暂留为候选池证据";
+  if (/commercial_importance/iu.test(issue)) return "商业重要性不足，暂留为后台 Pool 证据";
   if (/fact_type_constraints:.*funding_not_single_company_round/iu.test(issue)) return "融资信息不是单一公司轮次事件";
   if (/fact_type_constraints/iu.test(issue)) return "事实类型不满足正式商业信号卡约束";
   if (/stale_source_date/iu.test(issue)) return "来源时间过旧，适合保留为背景证据";
@@ -2519,7 +2416,7 @@ function publicPromotionIssue(issue = "") {
 
 function publicRepairSuggestion(issues = []) {
   const text = issues.join(" ");
-  if (/source_auditability/iu.test(text)) return "补齐可审计原文链接、来源等级，避免只依赖搜索入口或聚合页。";
+  if (/source_auditability/iu.test(text)) return "补齐可审计原文链接和来源事实，避免只依赖搜索入口或聚合页。";
   if (/evidence_quality:stale_source_date/iu.test(text)) return "补充同一事件的近期来源；否则仅作为背景证据保留。";
   if (/evidence_quality/iu.test(text)) return "修复 Raw 采集，补齐原文链接、全文、摘录、哈希和抽取方法。";
   if (/business_signal_scope/iu.test(text)) return "只把产品/服务、融资、客户案例或垂直部署事件推进为 Signal Card。";
@@ -2551,7 +2448,7 @@ function candidatePromotionCopy(promotion = {}) {
   };
 }
 
-function corePoolCandidateEventKey(item = {}) {
+function coreSignalCardEventKey(item = {}) {
   const text = [
     item.title,
     item.originalTitle,
@@ -2559,17 +2456,17 @@ function corePoolCandidateEventKey(item = {}) {
     item.sourceUrl,
     item.subject,
   ].filter(Boolean).join(" ").toLowerCase();
-  if (/minimax/iu.test(text) && /\bm3\b/iu.test(text)) return `${item.date}|candidate|minimax|m3`;
+  if (/minimax/iu.test(text) && /\bm3\b/iu.test(text)) return `${item.date}|core-signal|minimax|m3`;
   if (/mistral/iu.test(text) && /(funding|financing|valuation|round|融资|估值|欧元|billion|30亿|200亿)/iu.test(text)) {
-    return `${item.date}|candidate|mistral|funding`;
+    return `${item.date}|core-signal|mistral|funding`;
   }
   const amount = text.match(/(?:\$|€|eur|usd)?\s?\d+(?:\.\d+)?\s?(?:m|b|million|billion|亿|万)?/iu)?.[0] || "";
   const subject = normalizedComparableText(item.subject || item.title || item.originalTitle).slice(0, 56);
   const title = normalizedComparableText(item.originalTitle || item.title).slice(0, 92);
-  return `${item.date}|candidate|${item.category}|${subject}|${amount || title}`;
+  return `${item.date}|core-signal|${item.category}|${subject}|${amount || title}`;
 }
 
-function corePoolCandidateQuality(item = {}) {
+function coreSignalCardQuality(item = {}) {
   let score = Number(item.frontstageRankScore) || 0;
   if (item.promotionStatus === "promoted_to_signal_card") score += 100000;
   if (item.sourceUrl && !isSocialOrCommunitySourceUrl(item.sourceUrl)) score += 1000;
@@ -2578,12 +2475,12 @@ function corePoolCandidateQuality(item = {}) {
   return score;
 }
 
-function dedupeCorePoolCandidateItems(items = []) {
+function dedupeCoreSignalCardItems(items = []) {
   const byKey = new Map();
   for (const item of items) {
-    const key = corePoolCandidateEventKey(item);
+    const key = coreSignalCardEventKey(item);
     const current = byKey.get(key);
-    if (!current || corePoolCandidateQuality(item) > corePoolCandidateQuality(current)) {
+    if (!current || coreSignalCardQuality(item) > coreSignalCardQuality(current)) {
       byKey.set(key, item);
     }
   }
@@ -2603,14 +2500,14 @@ function dedupeEnterpriseAiFdePoolItems(items = []) {
   for (const item of items) {
     const key = enterpriseAiFdePoolEventKey(item);
     const current = byKey.get(key);
-    if (!current || corePoolCandidateQuality(item) > corePoolCandidateQuality(current)) {
+    if (!current || coreSignalCardQuality(item) > coreSignalCardQuality(current)) {
       byKey.set(key, item);
     }
   }
   return [...byKey.values()];
 }
 
-function supplementalCorePoolCandidateItems(existingItems = [], activeDate = "") {
+function supplementalCoreSignalCardItems(existingItems = [], activeDate = "") {
   const existingRefs = new Set(existingItems.map((item) => item.sourceRef).filter(Boolean));
   return poolCandidateSectionsForDate(activeDate)
     .filter((section) => splitCsv(poolValue(section, "pool_routes")).includes("core_pool"))
@@ -2632,7 +2529,7 @@ function supplementalCorePoolCandidateItems(existingItems = [], activeDate = "")
       const subject = frontstageCandidateSubject(sourceUrl, rawTitle, title, poolValue(section, "source"));
       return {
         id: `POOL-${activeDate}-${ref}`,
-        type: "core_pool_candidate",
+        type: "core_signal_card",
         category,
         categoryLabel: categoryLabels[category] || category,
         title,
@@ -2658,8 +2555,8 @@ function supplementalCorePoolCandidateItems(existingItems = [], activeDate = "")
         sourceLinks: [sourceUrl],
         status: "pooled",
         assetLevel: "core_pool",
-        promotionStatus: "candidate_only",
-        notPromotedReason: "Core Pool supply candidate for Top10 release gate",
+        promotionStatus: "core_signal_card",
+        notPromotedReason: "Core Pool item converted to frontstage Card",
         notPromotedIssues: [],
         repairSuggestion: "",
         promotePriority: "review",
@@ -2669,7 +2566,7 @@ function supplementalCorePoolCandidateItems(existingItems = [], activeDate = "")
         frontstageRankScore: score * 100 + importanceScore * 10,
         frontstageEditorialScore: score * 100 + importanceScore * 10,
         frontstageEvidenceScore: Number(poolValue(section, "readability_score")) || 0,
-        frontstageSelectionReasons: ["进入当天 Core Pool", "用于补足 Top10 发布供给"],
+        frontstageSelectionReasons: ["进入当天 Core Pool", "转为前台 Card"],
         frontstageValueDescription: fact,
         frontstageQualityWarnings: [],
         frontstageGenericCandidate: false,
@@ -2678,11 +2575,11 @@ function supplementalCorePoolCandidateItems(existingItems = [], activeDate = "")
       };
     })
     .filter(Boolean)
-    .filter(corePoolCandidateFillIsDisplayReady)
+    .filter(coreSignalCardFillIsDisplayReady)
     .filter((card) => !isWeakSubject(card.subject));
 }
 
-function buildCorePoolCandidateItems(cards = [], activeDate = "") {
+function buildCoreSignalCardItems(cards = [], activeDate = "") {
   const cardsByUrl = new Map(cards.map((card) => [canonicalUrl(card.sourceUrl), card]).filter(([url]) => url));
   const notPromotedByRef = corePoolNotPromotedMap(activeDate);
   const items = poolCandidateSectionsForDate(activeDate)
@@ -2704,7 +2601,7 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
           ...card,
           id: `POOL-${activeDate}-${ref}`,
           linkedCardId: card.id,
-          type: "core_pool_candidate",
+          type: "core_signal_card",
           sourceRef: ref,
           promotionStatus: "promoted_to_signal_card",
           frontstageSelectionTier: card.frontstageSelectionTier || "core-pool",
@@ -2720,7 +2617,7 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
       const score = Number(poolValue(section, "score")) || 0;
       const item = {
         id: `POOL-${activeDate}-${ref}`,
-        type: "core_pool_candidate",
+        type: "core_signal_card",
         category,
         categoryLabel: categoryLabels[category] || category,
         title,
@@ -2747,7 +2644,7 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
         sourceLinks: [sourceUrl].filter(Boolean),
         status: "pooled",
         assetLevel: "core_pool",
-        promotionStatus: "candidate_only",
+        promotionStatus: "core_signal_card",
         notPromotedReason: promotion.reason,
         notPromotedIssues: promotion.issues,
         repairSuggestion: promotion.repair,
@@ -2761,8 +2658,8 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
         frontstageRankScore: score * 100 + importanceScore * 10,
         frontstageEditorialScore: score * 100 + importanceScore * 10,
         frontstageEvidenceScore: Number(poolValue(section, "readability_score")) || 0,
-        frontstageSelectionReasons: ["进入当天 Core Pool 候选池", "保留为完整证据池材料"],
-        frontstageValueDescription: "该条目进入当天 Core Pool，用于完整证据回看、关系图和趋势候选分析；不代表 Top10 编辑精选。",
+        frontstageSelectionReasons: ["进入当天 Core Pool", "转为前台 Card"],
+        frontstageValueDescription: "该条目进入当天 Core Pool，用于前台 Card、关系图和趋势候选分析。",
         frontstageQualityWarnings: [],
         frontstageGenericCandidate: false,
         fromCorePool: true,
@@ -2772,7 +2669,7 @@ function buildCorePoolCandidateItems(cards = [], activeDate = "") {
       return item;
     })
     .filter(Boolean);
-  return dedupeCorePoolCandidateItems(items)
+  return dedupeCoreSignalCardItems(items)
     .sort((a, b) => (Number(b.frontstageRankScore) || 0) - (Number(a.frontstageRankScore) || 0) || String(a.sourceRef || a.id).localeCompare(String(b.sourceRef || b.id)));
 }
 
@@ -2880,7 +2777,7 @@ function buildEnterpriseAiLensCandidateItems(cards = [], activeDate = "") {
         frontstageEditorialScore: score * 100 + importanceScore * 10 + 150,
         frontstageEvidenceScore: Number(poolValue(section, "readability_score")) || 0,
         frontstageSelectionReasons: ["企业AI化 / FDE 镜头候选", "保留为实施、部署和工作流证据"],
-        frontstageValueDescription: "该条目用于企业AI化 / FDE 镜头，不改变正式 Top10 Signal Card 类型。",
+        frontstageValueDescription: "该条目用于企业AI化 / FDE 镜头，不改变正式 Business Signal Card 类型。",
         frontstageQualityWarnings: [],
         frontstageGenericCandidate: false,
         fromCorePool: poolRoutes.includes("core_pool"),
@@ -2965,7 +2862,7 @@ function buildEnterpriseAiFdePoolItems(cards = [], activeDate = "") {
         frontstageEditorialScore: score * 100 + importanceScore * 10 + 260,
         frontstageEvidenceScore: Number(poolValue(section, "readability_score")) || base.frontstageEvidenceScore || 0,
         frontstageSelectionReasons: ["FDE lens pool", "source-backed implementation evidence"],
-        frontstageValueDescription: "FDE lens pool item preserved outside the formal Business Signals Top10/Card gate.",
+        frontstageValueDescription: "FDE lens pool item preserved for the Enterprise AI lens.",
         frontstageQualityWarnings: [],
         frontstageGenericCandidate: false,
         fromCorePool: poolRoutes.includes("core_pool"),
@@ -3998,9 +3895,9 @@ function enterpriseTransformationItem(card = {}) {
   };
 }
 
-function buildEnterpriseAiTransformation(cards = [], corePoolCandidates = [], activeDate = "", limit = 8) {
+function buildEnterpriseAiTransformation(cards = [], coreSignalCards = [], activeDate = "", limit = 8) {
   const seen = new Set();
-  return [...cards, ...corePoolCandidates]
+  return [...cards, ...coreSignalCards]
     .filter((card) => card.date === activeDate)
     .filter((card) => {
       const id = card.sourceUrl ? `url:${canonicalUrl(card.sourceUrl)}` : (card.linkedCardId || card.id);
@@ -4109,12 +4006,9 @@ function buildIntelligenceGraphIndex(payload = {}) {
   const allCards = payload.cards || [];
   const activeDate = payload.meta?.activeDate || "";
   const todayCards = allCards.filter((card) => card.date === activeDate);
-  const todayTop10 = Array.isArray(payload.top10) && payload.top10.length
-    ? payload.top10
-    : (payload.frontstageCards || []).filter((card) => card.date === activeDate);
-  const top10Ids = new Set(todayTop10.map((card) => card.id));
-  const corePoolCandidates = payload.corePoolCandidates || [];
-  const linkedCoreCount = corePoolCandidates.filter((card) => card.linkedCardId || card.type === "signal_card").length;
+  const todayFrontstageCards = (payload.frontstageCards || []).filter((card) => card.date === activeDate);
+  const frontstageCardIds = new Set(todayFrontstageCards.map((card) => card.id));
+  const coreSignalCards = allCards.filter((card) => card.date === activeDate && (card.fromCorePool || (card.poolRoutes || []).includes("core_pool")));
   const enterpriseAiTransformation = payload.enterpriseAiTransformation || [];
   const tagAssociations = payload.tagAssociations || [];
   const relationshipDirections = payload.relationshipDirections || [];
@@ -4138,7 +4032,7 @@ function buildIntelligenceGraphIndex(payload = {}) {
       intendedReader: "Hermes Agent data officer",
       scope: "AI business-signal intelligence graph analysis",
       useAllCorePool: true,
-      top10IsPresentationOnly: true,
+      publicCardSet: "all qualified Core Pool Signal Cards",
       excludedEvidence: ["follow-builders viewpoints", "opinion-only materials", "backend-only fields without source evidence"],
       recommendedOutputs: [
         "daily_high_value_relationships",
@@ -4152,10 +4046,8 @@ function buildIntelligenceGraphIndex(payload = {}) {
       activeDate,
       totalCards: allCards.length,
       todayCards: todayCards.length,
-      todayTop10: todayTop10.length,
-      corePoolCandidates: corePoolCandidates.filter((card) => card.date === activeDate).length,
-      linkedCorePoolCards: linkedCoreCount,
-      candidateOnlyCorePool: Math.max(corePoolCandidates.length - linkedCoreCount, 0),
+      todayFrontstageCards: todayFrontstageCards.length,
+      coreSignalCards: coreSignalCards.length,
       relationshipNodes: payload.relationshipGraph?.nodeCount || payload.relationshipGraph?.nodes?.length || 0,
       relationshipEdges: payload.relationshipGraph?.edgeCount || payload.relationshipGraph?.edges?.length || 0,
       relationshipClusters: relationshipDirections.length,
@@ -4165,16 +4057,16 @@ function buildIntelligenceGraphIndex(payload = {}) {
       trendCandidates: (payload.trendCandidates || []).length,
     },
     dailyLens: {
-      top10CardIds: [...top10Ids],
-      corePoolCardIds: corePoolCandidates.map((card) => card.linkedCardId || card.id),
+      frontstageCardIds: [...frontstageCardIds],
+      coreSignalCardIds: coreSignalCards.map((card) => card.linkedCardId || card.id),
       enterpriseAiTransformationCardIds: enterpriseAiTransformation.map((item) => item.cardId).filter(Boolean),
-      largeCompanyTop10: todayTop10
+      largeCompanyCards: todayFrontstageCards
         .filter((card) => card.largeVendor)
         .map((card) => ({ id: card.id, vendor: card.largeVendorKey, title: card.title })),
       categoryStats: payload.stats || [],
     },
     cards: allCards.map(graphIndexCard),
-    corePoolCandidates: corePoolCandidates.map(graphIndexCard),
+    coreSignalCards: coreSignalCards.map(graphIndexCard),
     graph: {
       date: payload.relationshipGraph?.date || activeDate,
       nodes: payload.relationshipGraph?.nodes || [],
@@ -4206,25 +4098,21 @@ const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPubli
   .map((card) => normalizeFrontstageDisplay(card, { strictPublic: card.date === activeDate }))
   .filter(hasSourceFacingEvidence)
   .filter((card) => card.title && card.date && card.sourceName)
-  .filter(publicCandidateIsDisplayReady)
+  .filter(publicSignalCardIsDisplayReady)
   .map(annotateFrontstageCandidate)
   .sort((a, b) => dateValue(b.date) - dateValue(a.date) || a.category.localeCompare(b.category));
-const baseCorePoolCandidates = buildCorePoolCandidateItems(cards, activeDate);
-const corePoolCandidates = dedupeCorePoolCandidateItems([
-  ...baseCorePoolCandidates,
-  ...supplementalCorePoolCandidateItems(baseCorePoolCandidates, activeDate),
+const baseCoreSignalCards = buildCoreSignalCardItems(cards, activeDate);
+const coreSignalCards = dedupeCoreSignalCardItems([
+  ...baseCoreSignalCards,
+  ...supplementalCoreSignalCardItems(baseCoreSignalCards, activeDate),
 ])
-  .map((card) => (card.promotionStatus === "candidate_only" ? card : normalizeFrontstageDisplay(card, { strictPublic: false })))
-  .filter((card) => (card.type === "core_pool_candidate" ? corePoolCandidateFillIsDisplayReady(card) : publicCardFillIsDisplayReady(card)))
+  .map((card) => (card.promotionStatus === "core_signal_card" ? card : normalizeFrontstageDisplay(card, { strictPublic: false })))
+  .filter((card) => (card.type === "core_signal_card" ? coreSignalCardFillIsDisplayReady(card) : publicCardFillIsDisplayReady(card)))
   .filter((card) => card.subject && !isWeakSubject(card.subject));
-const candidateOnlyCorePool = corePoolCandidates.filter((card) => card.promotionStatus === "candidate_only");
-const frontstageSelection = buildDailyFrontstageSelection([...cards, ...candidateOnlyCorePool]);
+const supplementalCoreSignalCards = coreSignalCards.filter((card) => card.promotionStatus === "core_signal_card");
+const frontstageSelection = buildDailyFrontstageSelection([...cards, ...supplementalCoreSignalCards]);
 const frontstageCards = frontstageSelection.cards;
-
-const top10 = frontstageCards
-  .filter((card) => card.date === activeDate)
-  .slice(0, 10)
-  .map(top10CompatCard);
+const allBusinessSignalCards = ensureUniqueCardIds(frontstageCards);
 const enterpriseAiLensCandidates = buildEnterpriseAiLensCandidateItems(cards, activeDate)
   .map(normalizeFrontstageDisplay)
   .map((card) => ({
@@ -4250,7 +4138,7 @@ const enterpriseAiLensCandidates = buildEnterpriseAiLensCandidateItems(cards, ac
       generatedTitle: literalTitle,
     };
   })
-  .filter(publicCandidateIsDisplayReady)
+  .filter(publicSignalCardIsDisplayReady)
   .filter(hasEnterpriseImplementationSignal)
   .filter((card) => !isWeakSubject(card.subject));
 const enterpriseAiFdePool = buildEnterpriseAiFdePoolItems(cards, activeDate)
@@ -4283,20 +4171,22 @@ const enterpriseAiFdePool = buildEnterpriseAiFdePoolItems(cards, activeDate)
   .filter((card) => !isWeakSubject(card.subject));
 const enterpriseAiTransformation = buildEnterpriseAiTransformation(enterpriseAiFdePool, [], activeDate);
 const publicEnterpriseAiFdePool = enterpriseAiFdePool.map(({ rawTitle, ...item }) => item);
-const trendAssets = buildTrendAssets(activeDate, cards);
+const trendAssets = buildTrendAssets(activeDate, allBusinessSignalCards);
 const payload = {
   meta: {
     version: "V3.3.6.3-business-source-artifact-aggregation",
     siteVersion,
     businessSignalsColumnVersion,
+    tagTaxonomyVersion,
     enterpriseAiLensVersion,
     intelligenceMapColumnVersion,
     generatedAt: new Date().toISOString(),
     activeDate,
-    top10Count: top10.length,
+    cardCount: allBusinessSignalCards.filter((card) => card.date === activeDate).length,
     source: "Signal Cards",
     tagPolicy: "formal_tags filtered by agent-workflow/product/tag-taxonomy.md",
     tagLayerPolicy: {
+      version: tagTaxonomyVersion,
       formalTags: "Backend search, filtering, relationship graph assistance, and trend candidate context. Frontstage display is bounded and high-signal only.",
       opportunitySignals: "Reports Center / Opportunity System source-near fields. These replace old formal_tags aggregation for opportunity maps.",
       firstLineViewpoints: "Private column tags use opinion / track / source and must not become Business Signals evidence.",
@@ -4308,24 +4198,22 @@ const payload = {
     allowedTagCount: allowedTagIds.size,
   },
   categories: Object.entries(categoryLabels).map(([category, label]) => ({ category, label })),
-  stats: buildStats(cards, activeDate),
-  cards,
-  top10,
+  stats: buildStats(allBusinessSignalCards, activeDate),
+  cards: allBusinessSignalCards,
   frontstageCards,
-  corePoolCandidates,
   enterpriseAiFdePool: publicEnterpriseAiFdePool,
   enterpriseAiLensCandidates,
   enterpriseAiTransformation,
   frontstageSelection: frontstageSelection.reports,
-  relationshipDirections: buildRelationshipDirections(cards, activeDate),
-  relationshipGraph: buildRelationshipGraph(cards, activeDate),
-  tagAssociations: buildTagAssociations(cards, activeDate),
+  relationshipDirections: buildRelationshipDirections(allBusinessSignalCards, activeDate),
+  relationshipGraph: buildRelationshipGraph(allBusinessSignalCards, activeDate),
+  tagAssociations: buildTagAssociations(allBusinessSignalCards, activeDate),
   trendCandidates: trendAssets.todayCandidates,
   recentTrendCandidates: trendAssets.recentCandidates,
   historicalTrends: trendAssets.historicalTrends,
   trendLinks: [
-    ...buildTrendLinks(cards, activeDate, 7),
-    ...buildTrendLinks(cards, activeDate, 30),
+    ...buildTrendLinks(allBusinessSignalCards, activeDate, 7),
+    ...buildTrendLinks(allBusinessSignalCards, activeDate, 30),
   ],
 };
 
@@ -4345,6 +4233,6 @@ fs.writeFileSync(enterpriseAiFdeFile, JSON.stringify({
   fdePool: publicEnterpriseAiFdePool,
   items: enterpriseAiTransformation,
 }, null, 2), "utf8");
-console.log(`Wrote ${rel(outputFile)} with ${cards.length} cards.`);
+console.log(`Wrote ${rel(outputFile)} with ${allBusinessSignalCards.length} cards.`);
 console.log(`Wrote ${rel(intelligenceGraphIndexFile)} for Hermes Agent.`);
 console.log(`Wrote ${rel(enterpriseAiFdeFile)} with ${enterpriseAiTransformation.length} FDE items.`);

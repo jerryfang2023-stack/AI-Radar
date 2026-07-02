@@ -1,8 +1,8 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V1.2.3-content-factory-cleanout",
-    "generatedAt": "2026-07-01T09:14:58.755Z",
-    "date": "2026-06-29",
+    "generatedAt": "2026-07-02T04:02:13.729Z",
+    "date": "2026-07-02",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
       "01-SiteV2/site/data/pipeline-dashboard.json",
@@ -41,51 +41,36 @@ window.WaveSightOpsConsole = {
     }
   ],
   "daily": {
-    "date": "2026-06-29",
+    "date": "2026-07-02",
     "status": "manual_required",
     "statusText": "需人工处理",
     "issueSummary": {
-      "total": 48,
-      "daily": 5,
-      "open": 9,
-      "resolved": 39,
-      "urgent": 2
+      "total": 52,
+      "daily": 6,
+      "open": 11,
+      "resolved": 41,
+      "urgent": 1
     },
     "issues": [
       {
-        "id": "supervision-2026-06-29-community_intelligence-problem-0",
-        "date": "2026-06-29",
-        "title": "community data date is 2026-06-28, expected 2026-06-29",
-        "status": "manual_required",
-        "state": "open",
-        "priority": "urgent",
-        "laneId": "community_intelligence",
-        "lane": "Community Intelligence",
-        "category": "failed",
-        "source": "daily-supervision",
-        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-        "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30"
-      },
-      {
-        "id": "supervision-2026-06-29-community_intelligence-problem-1",
-        "date": "2026-06-29",
-        "title": "community scheduled task last result is 1",
+        "id": "supervision-2026-07-02-skill_ops-problem-0",
+        "date": "2026-07-02",
+        "title": "skill-registry.md is stale; run npm run build:skill-registry",
         "status": "manual_required",
         "state": "open",
         "priority": "high",
-        "laneId": "community_intelligence",
-        "lane": "Community Intelligence",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
         "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-        "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-06-29-community_intelligence-warning-0",
-        "date": "2026-06-29",
-        "title": "missing community gate report: agent-workflow/reports/2026-06-29-community-intelligence-gate.md",
+        "id": "supervision-2026-07-02-community_intelligence-warning-0",
+        "date": "2026-07-02",
+        "title": "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/189",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -94,28 +79,13 @@ window.WaveSightOpsConsole = {
         "category": "warning",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-        "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30"
+        "neededAction": "",
+        "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox"
       },
       {
-        "id": "supervision-2026-06-29-business_signals-problem-0",
-        "date": "2026-06-29",
-        "title": "Business Signals workflow is in_progress; downstream tasks should wait",
-        "status": "waiting",
-        "state": "open",
-        "priority": "high",
-        "laneId": "business_signals",
-        "lane": "Business Signals / Intelligence Map / Dashboard",
-        "category": "waiting",
-        "source": "daily-supervision",
-        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
-        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55"
-      },
-      {
-        "id": "supervision-2026-06-29-business_signals-warning-0",
-        "date": "2026-06-29",
-        "title": "local Obsidian sync may be blocked by 62 dirty file(s)",
+        "id": "supervision-2026-07-02-business_signals-warning-0",
+        "date": "2026-07-02",
+        "title": "signal card files 8 below 10, but source-backed Core Pool Top10 fallback is healthy",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -124,48 +94,94 @@ window.WaveSightOpsConsole = {
         "category": "warning",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
-        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55"
+        "neededAction": "",
+        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+      },
+      {
+        "id": "supervision-2026-07-02-business_signals-warning-1",
+        "date": "2026-07-02",
+        "title": "latest same-date GitHub Pages workflow conclusion is skipped",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals / Intelligence Map / Dashboard",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "",
+        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+      },
+      {
+        "id": "supervision-2026-07-02-business_signals-warning-2",
+        "date": "2026-07-02",
+        "title": "local Obsidian sync may be blocked by 3 dirty file(s)",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals / Intelligence Map / Dashboard",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "",
+        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+      },
+      {
+        "id": "supervision-2026-07-02-business_signals-warning-3",
+        "date": "2026-07-02",
+        "title": "latest Business Signals workflow conclusion is cancelled, but same-date data and gates are healthy; repair branch / PR / publication only",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals / Intelligence Map / Dashboard",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "",
+        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
       }
     ]
   },
   "periods": {
     "weekly": {
       "windowDays": 7,
-      "total": 17,
-      "open": 7,
-      "resolved": 10,
+      "total": 20,
+      "open": 9,
+      "resolved": 11,
       "byLane": {
-        "community_intelligence": 6,
-        "business_signals": 8,
-        "skill_ops": 2,
+        "skill_ops": 4,
+        "community_intelligence": 4,
+        "business_signals": 11,
         "follow_builders_skill": 1
       },
       "byCategory": {
-        "failed": 1,
         "manual_required": 1,
-        "warning": 2,
-        "waiting": 1,
-        "business_signals_top10_missing": 3,
+        "warning": 5,
+        "business_signals_top10_missing": 2,
         "community_intelligence": 2,
         "monitor_or_gate_failure": 4,
-        "no_run_or_stale_assets": 3
+        "no_run_or_stale_assets": 3,
+        "core_supply_shortfall": 1,
+        "daily_problem_watchdog": 1,
+        "skill_ops": 1
       },
       "recurring": [
         {
-          "category": "monitor_or_gate_failure",
-          "count": 4
+          "category": "warning",
+          "count": 5
         },
         {
-          "category": "business_signals_top10_missing",
-          "count": 3
+          "category": "monitor_or_gate_failure",
+          "count": 4
         },
         {
           "category": "no_run_or_stale_assets",
           "count": 3
         },
         {
-          "category": "warning",
+          "category": "business_signals_top10_missing",
           "count": 2
         },
         {
@@ -174,6 +190,162 @@ window.WaveSightOpsConsole = {
         }
       ],
       "latest": [
+        {
+          "id": "2026-07-02-business_signals-daily-problem-watchdog",
+          "date": "2026-07-02",
+          "title": "Business Signals Daily Problem Watchdog (2026-07-02)",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "urgent",
+          "laneId": "business_signals",
+          "category": "daily_problem_watchdog",
+          "failedGate": "daily_problem_watchdog",
+          "reportPath": "agent-workflow/reports/2026-07-02-daily-recovery-watchdog.md",
+          "dataGenerated": "unknown",
+          "neededAction": "inspect failed production report and repair the smallest responsible stage; do not dispatch a full rerun from Hermes",
+          "createdAt": "2026-07-02T02:44:07.950Z",
+          "updatedAt": "2026-07-02T11:20:58+08:00",
+          "resolvedAt": "2026-07-02T11:20:58+08:00",
+          "resolver": "codex",
+          "fixCommit": "pending-local-change",
+          "validation": "npm run supervise:daily -- --date=2026-07-02",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-business_signals-daily-problem-watchdog.md"
+        },
+        {
+          "id": "2026-07-02-business_signals-core-supply-shortfall",
+          "date": "2026-07-02",
+          "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "urgent",
+          "laneId": "business_signals",
+          "category": "core_supply_shortfall",
+          "failedGate": "passed",
+          "reportPath": "agent-workflow/reports/2026-07-02-daily-supervision-report.md",
+          "dataGenerated": "yes",
+          "neededAction": "diagnose Raw/Pool/Core/non-large Core counts and refill only the deficient source/channel",
+          "createdAt": "2026-07-02T11:18:08+08:00",
+          "updatedAt": "2026-07-02T11:20:57+08:00",
+          "resolvedAt": "2026-07-02T11:20:57+08:00",
+          "resolver": "codex",
+          "fixCommit": "pending-local-change",
+          "validation": "npm run supervise:daily -- --date=2026-07-02",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-business_signals-core-supply-shortfall.md"
+        },
+        {
+          "id": "2026-07-02-skill_ops-skill-ops",
+          "date": "2026-07-02",
+          "title": "Hermes Repair Request: Skill Ops Governance",
+          "status": "open",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "skill_ops",
+          "category": "skill_ops",
+          "failedGate": "skill_ops daily supervision",
+          "reportPath": "agent-workflow/reports/2026-07-02-daily-supervision-report.md",
+          "dataGenerated": "not_applicable",
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
+          "createdAt": "2026-07-02T11:18:08+08:00",
+          "updatedAt": "2026-07-02T11:20:31+08:00",
+          "resolvedAt": "",
+          "resolver": "",
+          "fixCommit": "",
+          "validation": "",
+          "prevention": "",
+          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-skill_ops-skill-ops.md"
+        },
+        {
+          "id": "supervision-2026-07-02-skill_ops-problem-0",
+          "date": "2026-07-02",
+          "title": "skill-registry.md is stale; run npm run build:skill-registry",
+          "status": "manual_required",
+          "state": "open",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
+          "evidence": "daily supervision preflight"
+        },
+        {
+          "id": "supervision-2026-07-02-community_intelligence-warning-0",
+          "date": "2026-07-02",
+          "title": "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/189",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "community_intelligence",
+          "lane": "Community Intelligence",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "",
+          "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-02-business_signals-warning-0",
+          "date": "2026-07-02",
+          "title": "signal card files 8 below 10, but source-backed Core Pool Top10 fallback is healthy",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-02-business_signals-warning-1",
+          "date": "2026-07-02",
+          "title": "latest same-date GitHub Pages workflow conclusion is skipped",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-02-business_signals-warning-2",
+          "date": "2026-07-02",
+          "title": "local Obsidian sync may be blocked by 3 dirty file(s)",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-02-business_signals-warning-3",
+          "date": "2026-07-02",
+          "title": "latest Business Signals workflow conclusion is cancelled, but same-date data and gates are healthy; repair branch / PR / publication only",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
         {
           "id": "2026-06-30-business_signals-no-run-or-stale-assets",
           "date": "2026-06-30",
@@ -239,192 +411,27 @@ window.WaveSightOpsConsole = {
           "validation": "npm run assert:business-frontstage -- --date=2026-06-29",
           "prevention": "gate",
           "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-business_signals-no-run-or-stale-assets.md"
-        },
-        {
-          "id": "2026-06-29-community_intelligence-community-intelligence",
-          "date": "2026-06-29",
-          "title": "Hermes Repair Request: Community Intelligence",
-          "status": "open",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "category": "community_intelligence",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-06-29-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "rerun gate",
-          "createdAt": "2026-06-29T13:06:03+08:00",
-          "updatedAt": "2026-06-29T13:36:22+08:00",
-          "resolvedAt": "",
-          "resolver": "",
-          "fixCommit": "",
-          "validation": "",
-          "prevention": "",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-community_intelligence-community-intelligence.md"
-        },
-        {
-          "id": "2026-06-29-community_intelligence-monitor-or-gate-failure",
-          "date": "2026-06-29",
-          "title": "Hermes Repair Request: Community Intelligence",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "category": "monitor_or_gate_failure",
-          "failedGate": "agent-workflow/reports/2026-06-29-community-intelligence-gate.md",
-          "reportPath": "agent-workflow/reports/2026-06-29-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "rerun gate",
-          "createdAt": "2026-06-29T13:16:51+08:00",
-          "updatedAt": "2026-06-29T13:22:04+08:00",
-          "resolvedAt": "2026-06-29T13:22:04+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending",
-          "validation": "npm run assert:community-intelligence -- --date=2026-06-29",
-          "prevention": "not-needed",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-community_intelligence-monitor-or-gate-failure.md"
-        },
-        {
-          "id": "supervision-2026-06-29-community_intelligence-problem-0",
-          "date": "2026-06-29",
-          "title": "community data date is 2026-06-28, expected 2026-06-29",
-          "status": "manual_required",
-          "state": "open",
-          "priority": "urgent",
-          "laneId": "community_intelligence",
-          "lane": "Community Intelligence",
-          "category": "failed",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-          "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30"
-        },
-        {
-          "id": "supervision-2026-06-29-community_intelligence-problem-1",
-          "date": "2026-06-29",
-          "title": "community scheduled task last result is 1",
-          "status": "manual_required",
-          "state": "open",
-          "priority": "high",
-          "laneId": "community_intelligence",
-          "lane": "Community Intelligence",
-          "category": "manual_required",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-          "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30"
-        },
-        {
-          "id": "supervision-2026-06-29-community_intelligence-warning-0",
-          "date": "2026-06-29",
-          "title": "missing community gate report: agent-workflow/reports/2026-06-29-community-intelligence-gate.md",
-          "status": "warning",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "lane": "Community Intelligence",
-          "category": "warning",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-          "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30"
-        },
-        {
-          "id": "supervision-2026-06-29-business_signals-problem-0",
-          "date": "2026-06-29",
-          "title": "Business Signals workflow is in_progress; downstream tasks should wait",
-          "status": "waiting",
-          "state": "open",
-          "priority": "high",
-          "laneId": "business_signals",
-          "lane": "Business Signals / Intelligence Map / Dashboard",
-          "category": "waiting",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
-          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55"
-        },
-        {
-          "id": "supervision-2026-06-29-business_signals-warning-0",
-          "date": "2026-06-29",
-          "title": "local Obsidian sync may be blocked by 62 dirty file(s)",
-          "status": "warning",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "lane": "Business Signals / Intelligence Map / Dashboard",
-          "category": "warning",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
-          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55"
-        },
-        {
-          "id": "2026-06-28-business_signals-no-run-or-stale-assets",
-          "date": "2026-06-28",
-          "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "category": "no_run_or_stale_assets",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-06-28-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow",
-          "createdAt": "2026-06-28T11:18:49+08:00",
-          "updatedAt": "2026-06-28T11:43:28+08:00",
-          "resolvedAt": "2026-06-28T11:43:28+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending-local-change",
-          "validation": "node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=2026-06-28 --pass-score=85 --max-cycles=1 --search-limit=200 --search-path-query-limit=5 --gdelt-query-limit=12 --hn-limit=8 --fetch-timeout-ms=20000 --snapshot-timeout-ms=16000 --use-source-artifacts=true --source-artifact-dir=.tmp-gh-run-28309791224/wavesight-business-signals-pr-2026-06-28/agent-workflow/reports/source-runs/2026-06-28 --monitor-timeout-ms=840000",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-28-business_signals-no-run-or-stale-assets.md"
-        },
-        {
-          "id": "2026-06-27-skill_ops-monitor-or-gate-failure",
-          "date": "2026-06-27",
-          "title": "Hermes Repair Request: Skill Ops Governance",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "skill_ops",
-          "category": "monitor_or_gate_failure",
-          "failedGate": "skill_ops daily supervision",
-          "reportPath": "agent-workflow/reports/2026-06-27-daily-supervision-report.md",
-          "dataGenerated": "not_applicable",
-          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
-          "createdAt": "2026-06-27T14:24:06+08:00",
-          "updatedAt": "2026-06-27T14:50:46+08:00",
-          "resolvedAt": "2026-06-27T14:50:46+08:00",
-          "resolver": "codex",
-          "fixCommit": "69ddf292",
-          "validation": "npm run audit:skills",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-27-skill_ops-monitor-or-gate-failure.md"
         }
       ]
     },
     "monthly": {
       "windowDays": 30,
-      "total": 46,
-      "open": 7,
-      "resolved": 39,
+      "total": 50,
+      "open": 9,
+      "resolved": 41,
       "byLane": {
-        "community_intelligence": 11,
-        "business_signals": 19,
+        "skill_ops": 9,
+        "community_intelligence": 9,
+        "business_signals": 23,
         "first_line_viewpoints": 3,
         "follow_builders_skill": 3,
         "unknown": 1,
         "first_line_viewpoints_skill": 1,
-        "skill_ops": 7,
         "site_version": 1
       },
       "byCategory": {
-        "failed": 1,
         "manual_required": 1,
-        "warning": 2,
-        "waiting": 1,
+        "warning": 5,
         "frontstage Top10 selection": 1,
         "source_first_frontstage_gate + top10 missing": 1,
         "Top10 selection (frontstage data build)": 1,
@@ -437,7 +444,10 @@ window.WaveSightOpsConsole = {
         "site_v337_weekly_report_integration": 1,
         "community_intelligence": 3,
         "obsidian_sync": 3,
-        "no_run_or_stale_assets": 3
+        "no_run_or_stale_assets": 3,
+        "core_supply_shortfall": 1,
+        "daily_problem_watchdog": 1,
+        "skill_ops": 1
       },
       "recurring": [
         {
@@ -447,6 +457,10 @@ window.WaveSightOpsConsole = {
         {
           "category": "business_signals_top10_missing",
           "count": 8
+        },
+        {
+          "category": "warning",
+          "count": 5
         },
         {
           "category": "community_intelligence",
@@ -459,13 +473,165 @@ window.WaveSightOpsConsole = {
         {
           "category": "no_run_or_stale_assets",
           "count": 3
-        },
-        {
-          "category": "warning",
-          "count": 2
         }
       ],
       "latest": [
+        {
+          "id": "2026-07-02-business_signals-daily-problem-watchdog",
+          "date": "2026-07-02",
+          "title": "Business Signals Daily Problem Watchdog (2026-07-02)",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "urgent",
+          "laneId": "business_signals",
+          "category": "daily_problem_watchdog",
+          "failedGate": "daily_problem_watchdog",
+          "reportPath": "agent-workflow/reports/2026-07-02-daily-recovery-watchdog.md",
+          "dataGenerated": "unknown",
+          "neededAction": "inspect failed production report and repair the smallest responsible stage; do not dispatch a full rerun from Hermes",
+          "createdAt": "2026-07-02T02:44:07.950Z",
+          "updatedAt": "2026-07-02T11:20:58+08:00",
+          "resolvedAt": "2026-07-02T11:20:58+08:00",
+          "resolver": "codex",
+          "fixCommit": "pending-local-change",
+          "validation": "npm run supervise:daily -- --date=2026-07-02",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-business_signals-daily-problem-watchdog.md"
+        },
+        {
+          "id": "2026-07-02-business_signals-core-supply-shortfall",
+          "date": "2026-07-02",
+          "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
+          "status": "resolved",
+          "state": "resolved",
+          "priority": "urgent",
+          "laneId": "business_signals",
+          "category": "core_supply_shortfall",
+          "failedGate": "passed",
+          "reportPath": "agent-workflow/reports/2026-07-02-daily-supervision-report.md",
+          "dataGenerated": "yes",
+          "neededAction": "diagnose Raw/Pool/Core/non-large Core counts and refill only the deficient source/channel",
+          "createdAt": "2026-07-02T11:18:08+08:00",
+          "updatedAt": "2026-07-02T11:20:57+08:00",
+          "resolvedAt": "2026-07-02T11:20:57+08:00",
+          "resolver": "codex",
+          "fixCommit": "pending-local-change",
+          "validation": "npm run supervise:daily -- --date=2026-07-02",
+          "prevention": "gate",
+          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-business_signals-core-supply-shortfall.md"
+        },
+        {
+          "id": "2026-07-02-skill_ops-skill-ops",
+          "date": "2026-07-02",
+          "title": "Hermes Repair Request: Skill Ops Governance",
+          "status": "open",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "skill_ops",
+          "category": "skill_ops",
+          "failedGate": "skill_ops daily supervision",
+          "reportPath": "agent-workflow/reports/2026-07-02-daily-supervision-report.md",
+          "dataGenerated": "not_applicable",
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
+          "createdAt": "2026-07-02T11:18:08+08:00",
+          "updatedAt": "2026-07-02T11:20:31+08:00",
+          "resolvedAt": "",
+          "resolver": "",
+          "fixCommit": "",
+          "validation": "",
+          "prevention": "",
+          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-skill_ops-skill-ops.md"
+        },
+        {
+          "id": "supervision-2026-07-02-skill_ops-problem-0",
+          "date": "2026-07-02",
+          "title": "skill-registry.md is stale; run npm run build:skill-registry",
+          "status": "manual_required",
+          "state": "open",
+          "priority": "high",
+          "laneId": "skill_ops",
+          "lane": "Skill Ops Governance",
+          "category": "manual_required",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
+          "evidence": "daily supervision preflight"
+        },
+        {
+          "id": "supervision-2026-07-02-community_intelligence-warning-0",
+          "date": "2026-07-02",
+          "title": "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/189",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "community_intelligence",
+          "lane": "Community Intelligence",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "",
+          "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-02-business_signals-warning-0",
+          "date": "2026-07-02",
+          "title": "signal card files 8 below 10, but source-backed Core Pool Top10 fallback is healthy",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-02-business_signals-warning-1",
+          "date": "2026-07-02",
+          "title": "latest same-date GitHub Pages workflow conclusion is skipped",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-02-business_signals-warning-2",
+          "date": "2026-07-02",
+          "title": "local Obsidian sync may be blocked by 3 dirty file(s)",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
+        {
+          "id": "supervision-2026-07-02-business_signals-warning-3",
+          "date": "2026-07-02",
+          "title": "latest Business Signals workflow conclusion is cancelled, but same-date data and gates are healthy; repair branch / PR / publication only",
+          "status": "warning",
+          "state": "open",
+          "priority": "normal",
+          "laneId": "business_signals",
+          "lane": "Business Signals / Intelligence Map / Dashboard",
+          "category": "warning",
+          "source": "daily-supervision",
+          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+          "neededAction": "",
+          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+        },
         {
           "id": "2026-06-30-business_signals-no-run-or-stale-assets",
           "date": "2026-06-30",
@@ -531,169 +697,6 @@ window.WaveSightOpsConsole = {
           "validation": "npm run assert:business-frontstage -- --date=2026-06-29",
           "prevention": "gate",
           "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-business_signals-no-run-or-stale-assets.md"
-        },
-        {
-          "id": "2026-06-29-community_intelligence-community-intelligence",
-          "date": "2026-06-29",
-          "title": "Hermes Repair Request: Community Intelligence",
-          "status": "open",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "category": "community_intelligence",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-06-29-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "rerun gate",
-          "createdAt": "2026-06-29T13:06:03+08:00",
-          "updatedAt": "2026-06-29T13:36:22+08:00",
-          "resolvedAt": "",
-          "resolver": "",
-          "fixCommit": "",
-          "validation": "",
-          "prevention": "",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-community_intelligence-community-intelligence.md"
-        },
-        {
-          "id": "2026-06-29-community_intelligence-monitor-or-gate-failure",
-          "date": "2026-06-29",
-          "title": "Hermes Repair Request: Community Intelligence",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "category": "monitor_or_gate_failure",
-          "failedGate": "agent-workflow/reports/2026-06-29-community-intelligence-gate.md",
-          "reportPath": "agent-workflow/reports/2026-06-29-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "rerun gate",
-          "createdAt": "2026-06-29T13:16:51+08:00",
-          "updatedAt": "2026-06-29T13:22:04+08:00",
-          "resolvedAt": "2026-06-29T13:22:04+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending",
-          "validation": "npm run assert:community-intelligence -- --date=2026-06-29",
-          "prevention": "not-needed",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-29-community_intelligence-monitor-or-gate-failure.md"
-        },
-        {
-          "id": "supervision-2026-06-29-community_intelligence-problem-0",
-          "date": "2026-06-29",
-          "title": "community data date is 2026-06-28, expected 2026-06-29",
-          "status": "manual_required",
-          "state": "open",
-          "priority": "urgent",
-          "laneId": "community_intelligence",
-          "lane": "Community Intelligence",
-          "category": "failed",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-          "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30"
-        },
-        {
-          "id": "supervision-2026-06-29-community_intelligence-problem-1",
-          "date": "2026-06-29",
-          "title": "community scheduled task last result is 1",
-          "status": "manual_required",
-          "state": "open",
-          "priority": "high",
-          "laneId": "community_intelligence",
-          "lane": "Community Intelligence",
-          "category": "manual_required",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-          "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30"
-        },
-        {
-          "id": "supervision-2026-06-29-community_intelligence-warning-0",
-          "date": "2026-06-29",
-          "title": "missing community gate report: agent-workflow/reports/2026-06-29-community-intelligence-gate.md",
-          "status": "warning",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "community_intelligence",
-          "lane": "Community Intelligence",
-          "category": "warning",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-          "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30"
-        },
-        {
-          "id": "supervision-2026-06-29-business_signals-problem-0",
-          "date": "2026-06-29",
-          "title": "Business Signals workflow is in_progress; downstream tasks should wait",
-          "status": "waiting",
-          "state": "open",
-          "priority": "high",
-          "laneId": "business_signals",
-          "lane": "Business Signals / Intelligence Map / Dashboard",
-          "category": "waiting",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
-          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55"
-        },
-        {
-          "id": "supervision-2026-06-29-business_signals-warning-0",
-          "date": "2026-06-29",
-          "title": "local Obsidian sync may be blocked by 62 dirty file(s)",
-          "status": "warning",
-          "state": "open",
-          "priority": "normal",
-          "laneId": "business_signals",
-          "lane": "Business Signals / Intelligence Map / Dashboard",
-          "category": "warning",
-          "source": "daily-supervision",
-          "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-          "neededAction": "wait for Business Signals workflow completion before declaring data missing",
-          "evidence": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55"
-        },
-        {
-          "id": "2026-06-28-business_signals-no-run-or-stale-assets",
-          "date": "2026-06-28",
-          "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "business_signals",
-          "category": "no_run_or_stale_assets",
-          "failedGate": "missing",
-          "reportPath": "agent-workflow/reports/2026-06-28-daily-supervision-report.md",
-          "dataGenerated": "no_or_stale",
-          "neededAction": "sync/fetch current assets first; if still stale, dispatch the Business Signals production workflow",
-          "createdAt": "2026-06-28T11:18:49+08:00",
-          "updatedAt": "2026-06-28T11:43:28+08:00",
-          "resolvedAt": "2026-06-28T11:43:28+08:00",
-          "resolver": "codex",
-          "fixCommit": "pending-local-change",
-          "validation": "node agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs --date=2026-06-28 --pass-score=85 --max-cycles=1 --search-limit=200 --search-path-query-limit=5 --gdelt-query-limit=12 --hn-limit=8 --fetch-timeout-ms=20000 --snapshot-timeout-ms=16000 --use-source-artifacts=true --source-artifact-dir=.tmp-gh-run-28309791224/wavesight-business-signals-pr-2026-06-28/agent-workflow/reports/source-runs/2026-06-28 --monitor-timeout-ms=840000",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-28-business_signals-no-run-or-stale-assets.md"
-        },
-        {
-          "id": "2026-06-27-skill_ops-monitor-or-gate-failure",
-          "date": "2026-06-27",
-          "title": "Hermes Repair Request: Skill Ops Governance",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "normal",
-          "laneId": "skill_ops",
-          "category": "monitor_or_gate_failure",
-          "failedGate": "skill_ops daily supervision",
-          "reportPath": "agent-workflow/reports/2026-06-27-daily-supervision-report.md",
-          "dataGenerated": "not_applicable",
-          "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
-          "createdAt": "2026-06-27T14:24:06+08:00",
-          "updatedAt": "2026-06-27T14:50:46+08:00",
-          "resolvedAt": "2026-06-27T14:50:46+08:00",
-          "resolver": "codex",
-          "fixCommit": "69ddf292",
-          "validation": "npm run audit:skills",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-27-skill_ops-monitor-or-gate-failure.md"
         }
       ]
     }
@@ -701,39 +704,24 @@ window.WaveSightOpsConsole = {
   "inbox": {
     "open": [
       {
-        "id": "supervision-2026-06-29-community_intelligence-problem-0",
-        "date": "2026-06-29",
-        "title": "community data date is 2026-06-28, expected 2026-06-29",
-        "status": "manual_required",
-        "state": "open",
-        "priority": "urgent",
-        "laneId": "community_intelligence",
-        "lane": "Community Intelligence",
-        "category": "failed",
-        "source": "daily-supervision",
-        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-        "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30"
-      },
-      {
-        "id": "supervision-2026-06-29-community_intelligence-problem-1",
-        "date": "2026-06-29",
-        "title": "community scheduled task last result is 1",
+        "id": "supervision-2026-07-02-skill_ops-problem-0",
+        "date": "2026-07-02",
+        "title": "skill-registry.md is stale; run npm run build:skill-registry",
         "status": "manual_required",
         "state": "open",
         "priority": "high",
-        "laneId": "community_intelligence",
-        "lane": "Community Intelligence",
+        "laneId": "skill_ops",
+        "lane": "Skill Ops Governance",
         "category": "manual_required",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-        "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30"
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
+        "evidence": "daily supervision preflight"
       },
       {
-        "id": "supervision-2026-06-29-community_intelligence-warning-0",
-        "date": "2026-06-29",
-        "title": "missing community gate report: agent-workflow/reports/2026-06-29-community-intelligence-gate.md",
+        "id": "supervision-2026-07-02-community_intelligence-warning-0",
+        "date": "2026-07-02",
+        "title": "same-date Community Intelligence automation PR already merged: https://github.com/jerryfang2023-stack/AI-Radar/pull/189",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -742,28 +730,13 @@ window.WaveSightOpsConsole = {
         "category": "warning",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-        "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30"
+        "neededAction": "",
+        "evidence": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox"
       },
       {
-        "id": "supervision-2026-06-29-business_signals-problem-0",
-        "date": "2026-06-29",
-        "title": "Business Signals workflow is in_progress; downstream tasks should wait",
-        "status": "waiting",
-        "state": "open",
-        "priority": "high",
-        "laneId": "business_signals",
-        "lane": "Business Signals / Intelligence Map / Dashboard",
-        "category": "waiting",
-        "source": "daily-supervision",
-        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
-        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55"
-      },
-      {
-        "id": "supervision-2026-06-29-business_signals-warning-0",
-        "date": "2026-06-29",
-        "title": "local Obsidian sync may be blocked by 62 dirty file(s)",
+        "id": "supervision-2026-07-02-business_signals-warning-0",
+        "date": "2026-07-02",
+        "title": "signal card files 8 below 10, but source-backed Core Pool Top10 fallback is healthy",
         "status": "warning",
         "state": "open",
         "priority": "normal",
@@ -772,8 +745,75 @@ window.WaveSightOpsConsole = {
         "category": "warning",
         "source": "daily-supervision",
         "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
-        "neededAction": "wait for Business Signals workflow completion before declaring data missing",
-        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55"
+        "neededAction": "",
+        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+      },
+      {
+        "id": "supervision-2026-07-02-business_signals-warning-1",
+        "date": "2026-07-02",
+        "title": "latest same-date GitHub Pages workflow conclusion is skipped",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals / Intelligence Map / Dashboard",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "",
+        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+      },
+      {
+        "id": "supervision-2026-07-02-business_signals-warning-2",
+        "date": "2026-07-02",
+        "title": "local Obsidian sync may be blocked by 3 dirty file(s)",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals / Intelligence Map / Dashboard",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "",
+        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+      },
+      {
+        "id": "supervision-2026-07-02-business_signals-warning-3",
+        "date": "2026-07-02",
+        "title": "latest Business Signals workflow conclusion is cancelled, but same-date data and gates are healthy; repair branch / PR / publication only",
+        "status": "warning",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "business_signals",
+        "lane": "Business Signals / Intelligence Map / Dashboard",
+        "category": "warning",
+        "source": "daily-supervision",
+        "reportPath": "agent-workflow/reports/daily-supervision-report-latest.json",
+        "neededAction": "",
+        "evidence": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox"
+      },
+      {
+        "id": "2026-07-02-skill_ops-skill-ops",
+        "date": "2026-07-02",
+        "title": "Hermes Repair Request: Skill Ops Governance",
+        "status": "open",
+        "state": "open",
+        "priority": "normal",
+        "laneId": "skill_ops",
+        "category": "skill_ops",
+        "failedGate": "skill_ops daily supervision",
+        "reportPath": "agent-workflow/reports/2026-07-02-daily-supervision-report.md",
+        "dataGenerated": "not_applicable",
+        "neededAction": "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
+        "createdAt": "2026-07-02T11:18:08+08:00",
+        "updatedAt": "2026-07-02T11:20:31+08:00",
+        "resolvedAt": "",
+        "resolver": "",
+        "fixCommit": "",
+        "validation": "",
+        "prevention": "",
+        "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-skill_ops-skill-ops.md"
       },
       {
         "id": "2026-06-29-community_intelligence-community-intelligence",
@@ -865,6 +905,50 @@ window.WaveSightOpsConsole = {
       }
     ],
     "resolved": [
+      {
+        "id": "2026-07-02-business_signals-daily-problem-watchdog",
+        "date": "2026-07-02",
+        "title": "Business Signals Daily Problem Watchdog (2026-07-02)",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "urgent",
+        "laneId": "business_signals",
+        "category": "daily_problem_watchdog",
+        "failedGate": "daily_problem_watchdog",
+        "reportPath": "agent-workflow/reports/2026-07-02-daily-recovery-watchdog.md",
+        "dataGenerated": "unknown",
+        "neededAction": "inspect failed production report and repair the smallest responsible stage; do not dispatch a full rerun from Hermes",
+        "createdAt": "2026-07-02T02:44:07.950Z",
+        "updatedAt": "2026-07-02T11:20:58+08:00",
+        "resolvedAt": "2026-07-02T11:20:58+08:00",
+        "resolver": "codex",
+        "fixCommit": "pending-local-change",
+        "validation": "npm run supervise:daily -- --date=2026-07-02",
+        "prevention": "gate",
+        "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-business_signals-daily-problem-watchdog.md"
+      },
+      {
+        "id": "2026-07-02-business_signals-core-supply-shortfall",
+        "date": "2026-07-02",
+        "title": "Hermes Repair Request: Business Signals / Intelligence Map / Dashboard",
+        "status": "resolved",
+        "state": "resolved",
+        "priority": "urgent",
+        "laneId": "business_signals",
+        "category": "core_supply_shortfall",
+        "failedGate": "passed",
+        "reportPath": "agent-workflow/reports/2026-07-02-daily-supervision-report.md",
+        "dataGenerated": "yes",
+        "neededAction": "diagnose Raw/Pool/Core/non-large Core counts and refill only the deficient source/channel",
+        "createdAt": "2026-07-02T11:18:08+08:00",
+        "updatedAt": "2026-07-02T11:20:57+08:00",
+        "resolvedAt": "2026-07-02T11:20:57+08:00",
+        "resolver": "codex",
+        "fixCommit": "pending-local-change",
+        "validation": "npm run supervise:daily -- --date=2026-07-02",
+        "prevention": "gate",
+        "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-07-02-business_signals-core-supply-shortfall.md"
+      },
       {
         "id": "2026-06-30-business_signals-no-run-or-stale-assets",
         "date": "2026-06-30",
@@ -1480,50 +1564,6 @@ window.WaveSightOpsConsole = {
         "validation": "node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-06-13 passed; 2026-06-13 first-line manifest records builders_gate and obsidian_sync success",
         "prevention": "not-needed",
         "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-13-first_line_viewpoints-monitor-or-gate-failure.md"
-      },
-      {
-        "id": "2026-06-14-builders-local-pipeline",
-        "date": "2026-06-14",
-        "title": "Builders 本地管线修复 — 2026-06-14",
-        "status": "resolved",
-        "state": "resolved",
-        "priority": "normal",
-        "laneId": "unknown",
-        "category": "uncategorized",
-        "failedGate": "",
-        "reportPath": "",
-        "dataGenerated": "",
-        "neededAction": "",
-        "createdAt": "2026-06-14",
-        "updatedAt": "2026-06-14T16:42:32+08:00",
-        "resolvedAt": "2026-06-14T16:42:32+08:00",
-        "resolver": "codex",
-        "fixCommit": "0f9d69ab",
-        "validation": "node agent-workflow/tools/assert-follow-builders-data.mjs --date=2026-06-14 passed; 2026-06-14 follow-builders skill local publish report exists with 26 builder items",
-        "prevention": "not-needed",
-        "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-14-builders-local-pipeline.md"
-      },
-      {
-        "id": "2026-06-14-business-signals-weekend-gate-thresholds-and-broken-rss",
-        "date": "2026-06-14",
-        "title": "Hermes Repair Request: Weekend Gate Thresholds & Broken RSS Sources",
-        "status": "resolved",
-        "state": "resolved",
-        "priority": "urgent",
-        "laneId": "business_signals",
-        "category": "business_signals_weekend_gate_thresholds_and_broken_rss",
-        "failedGate": "multiple_hard_gates",
-        "reportPath": "agent-workflow/reports/2026-06-14-hermes-0945-business-signals.md",
-        "dataGenerated": "no_or_stale",
-        "neededAction": "adjust weekend hard gate thresholds + fix broken RSS sources",
-        "createdAt": "2026-06-14T10:35:00+08:00",
-        "updatedAt": "2026-06-14T16:38:21+08:00",
-        "resolvedAt": "2026-06-14T16:38:21+08:00",
-        "resolver": "codex",
-        "fixCommit": "b616dc4b",
-        "validation": "node agent-workflow/tools/assert-v3-source-first-frontstage.mjs; node agent-workflow/tools/frontstage-regression-gate.mjs; npm run audit:skills",
-        "prevention": "memory",
-        "sourceFile": "agent-workflow/inbox/hermes-to-codex/2026-06-14-business-signals-weekend-gate-thresholds-and-broken-rss.md"
       }
     ]
   },
@@ -1533,25 +1573,25 @@ window.WaveSightOpsConsole = {
         "id": "skill_ops",
         "label": "Skill Ops Governance",
         "schedule": "daily supervision preflight",
-        "status": "passed",
-        "statusText": "已通过",
-        "problemCount": 0,
+        "status": "manual_required",
+        "statusText": "需人工处理",
+        "problemCount": 1,
         "warningCount": 0,
-        "actions": [],
+        "actions": [
+          "repair the owning Guanlan skill metadata, evals, examples, registry, or .skill-store mirror",
+          "run `npm run audit:skills` after the repair"
+        ],
         "evidence": []
       },
       {
         "id": "community_intelligence",
         "label": "Community Intelligence",
-        "schedule": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Hermes publish handoff 09:30",
-        "status": "manual_required",
-        "statusText": "需人工处理",
-        "problemCount": 2,
+        "schedule": "08:30 local collection; 08:45 / 10:45 GitHub publish windows; Daily Problem Watchdog records failures to Hermes inbox",
+        "status": "warning",
+        "statusText": "warning",
+        "problemCount": 0,
         "warningCount": 1,
-        "actions": [
-          "rerun `agent-workflow/tools/run-community-intelligence.ps1` locally",
-          "send Codex a community_intelligence repair request with log and gate report path"
-        ],
+        "actions": [],
         "evidence": [
           {
             "label": "Items",
@@ -1562,22 +1602,19 @@ window.WaveSightOpsConsole = {
       {
         "id": "business_signals",
         "label": "Business Signals / Intelligence Map / Dashboard",
-        "schedule": "08:57 primary production; 09:27 conditional health dispatch; Hermes early handoff 09:45 / 09:55",
-        "status": "waiting",
-        "statusText": "等待中",
-        "problemCount": 1,
-        "warningCount": 1,
-        "actions": [
-          "wait for Business Signals workflow completion before declaring data missing",
-          "send Codex a business_signals repair request with failed gate and report path"
-        ],
+        "schedule": "08:57 primary production; 09:27 conditional health dispatch; Daily Problem Watchdog records failures to Hermes inbox",
+        "status": "warning",
+        "statusText": "warning",
+        "problemCount": 0,
+        "warningCount": 4,
+        "actions": [],
         "evidence": [
           {
             "label": "Pool",
-            "value": 28
+            "value": 15
           },
           {
-            "label": "Top10",
+            "label": "Cards",
             "value": 10
           }
         ]
@@ -1585,7 +1622,7 @@ window.WaveSightOpsConsole = {
       {
         "id": "first_line_viewpoints",
         "label": "First-Line Viewpoints",
-        "schedule": "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Hermes RSS handoff 09:30",
+        "schedule": "08:30 local Codex RSS collection + page build + Obsidian sync; 09:17 GitHub fallback; Daily Problem Watchdog records failures to Hermes inbox",
         "status": "passed",
         "statusText": "已通过",
         "problemCount": 0,
@@ -1594,7 +1631,7 @@ window.WaveSightOpsConsole = {
         "evidence": [
           {
             "label": "Items",
-            "value": 40
+            "value": 48
           }
         ]
       },
@@ -1616,20 +1653,20 @@ window.WaveSightOpsConsole = {
       }
     ],
     "latestProduction": {
-      "date": "2026-07-01",
-      "raw": 159,
+      "date": "2026-07-02",
+      "raw": 147,
       "pool": 95,
-      "cards": 5,
+      "cards": 8,
       "assets": {
-        "case": 2,
-        "product-service": 3
+        "case": 4,
+        "product-service": 4
       }
     },
     "sync": [
       {
         "label": "GitHub Pages",
-        "status": "passed",
-        "detail": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28350914330"
+        "status": "unknown",
+        "detail": "https://github.com/jerryfang2023-stack/AI-Radar/actions/runs/28562131797"
       },
       {
         "label": "Business Signals PR",
@@ -1639,112 +1676,111 @@ window.WaveSightOpsConsole = {
       {
         "label": "本地 Obsidian 同步",
         "status": "manual_required",
-        "detail": "62 个本地变更阻塞自动判断"
+        "detail": "3 个本地变更阻塞自动判断"
       },
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-07-01T03:37:30.001Z"
+        "detail": "2026-07-02T03:53:29.644Z"
       },
       {
         "label": "Daily Supervision",
         "status": "manual_required",
-        "detail": "2026-06-29T05:36:22.453Z"
+        "detail": "2026-07-02T03:20:31.647Z"
       }
     ]
   },
   "quality": {
     "pipelineMeta": {
-      "generatedAt": "2026-07-01T03:37:30.001Z",
+      "generatedAt": "2026-07-02T03:53:29.644Z",
       "dateRange": {
         "start": "2025-10-13",
-        "end": "2026-07-01"
+        "end": "2026-07-02"
       },
       "source": "01-SiteV2/content + 01-SiteV2/knowledge"
     },
     "latest": {
-      "date": "2026-07-01",
-      "label": "2026.07.01",
-      "shortLabel": "07.01",
-      "raw": 159,
+      "date": "2026-07-02",
+      "label": "2026.07.02",
+      "shortLabel": "07.02",
+      "raw": 147,
       "pool": 95,
       "assets": {
-        "case": 2,
-        "product-service": 3
+        "case": 4,
+        "product-service": 4
       },
-      "cards": 5,
+      "cards": 8,
       "rawChannels": {
-        "aihot": 65,
-        "keyword_search": 82,
+        "aihot": 61,
+        "keyword_search": 55,
         "follow_builders": 0
       },
       "poolRoutes": {
-        "watchlist": 40,
-        "emerging_pool": 22,
-        "user_feedback_pool": 16,
-        "core_pool": 30,
+        "core_pool": 33,
+        "emerging_pool": 23,
         "index_only": 20,
-        "discard": 1
+        "watchlist": 40,
+        "user_feedback_pool": 5
       },
       "evidenceLevels": {
-        "core_evidence_candidate": 59,
-        "user_feedback_signal": 5,
+        "core_evidence_candidate": 72,
         "supporting_evidence": 2,
-        "community_signal": 11,
-        "index_only_evidence": 1,
-        "discovery_only": 17
+        "community_signal": 3,
+        "user_feedback_signal": 3,
+        "discovery_only": 15
       },
       "sourceLevels": {
-        "A": 17,
-        "S": 21,
-        "B": 45,
-        "C": 12
+        "A": 19,
+        "S": 12,
+        "B": 60,
+        "C": 4
       },
       "sourceTypes": {
-        "news": 8,
-        "product": 6,
-        "web": 36,
+        "news": 9,
+        "product": 2,
+        "research": 1,
+        "developer": 6,
         "media": 9,
-        "official": 14,
+        "official": 8,
+        "web": 53,
+        "operators": 4,
+        "analysis": 1,
         "industry": 1,
-        "operators": 12,
-        "organization-capability": 1,
-        "marketplace": 4,
-        "developer": 4
+        "marketplace": 1
       },
       "assetStatus": {
         "case": {
-          "published": 2
+          "published": 4
         },
         "product-service": {
-          "published": 3
+          "published": 4
         }
       },
       "assetLevels": {
         "case": {
-          "frontstage": 2
+          "frontstage": 4
         },
         "product-service": {
-          "frontstage": 3
+          "frontstage": 4
         }
       },
       "assetEvidenceGates": {
         "case": {
-          "core_evidence_passed": 2
+          "core_evidence_passed": 4
         },
         "product-service": {
-          "core_evidence_passed": 3
+          "core_evidence_passed": 4
         }
       },
       "assetCopyGates": {}
     },
     "totals": {
-      "raw": 6013,
-      "pool": 2906,
+      "raw": 6160,
+      "pool": 3001,
       "assets": {
-        "case": 336,
-        "product-service": 265,
-        "opinion": 888,
+        "case": 340,
+        "product-service": 269,
+        "opinion": 927,
         "funding": 79,
         "trend": 6,
         "scene": 3,
@@ -1753,6 +1789,81 @@ window.WaveSightOpsConsole = {
     },
     "days": [
       {
+        "date": "2026-07-02",
+        "label": "2026.07.02",
+        "shortLabel": "07.02",
+        "raw": 147,
+        "pool": 95,
+        "assets": {
+          "case": 4,
+          "product-service": 4
+        },
+        "cards": 8,
+        "rawChannels": {
+          "aihot": 61,
+          "keyword_search": 55,
+          "follow_builders": 0
+        },
+        "poolRoutes": {
+          "core_pool": 33,
+          "emerging_pool": 23,
+          "index_only": 20,
+          "watchlist": 40,
+          "user_feedback_pool": 5
+        },
+        "evidenceLevels": {
+          "core_evidence_candidate": 72,
+          "supporting_evidence": 2,
+          "community_signal": 3,
+          "user_feedback_signal": 3,
+          "discovery_only": 15
+        },
+        "sourceLevels": {
+          "A": 19,
+          "S": 12,
+          "B": 60,
+          "C": 4
+        },
+        "sourceTypes": {
+          "news": 9,
+          "product": 2,
+          "research": 1,
+          "developer": 6,
+          "media": 9,
+          "official": 8,
+          "web": 53,
+          "operators": 4,
+          "analysis": 1,
+          "industry": 1,
+          "marketplace": 1
+        },
+        "assetStatus": {
+          "case": {
+            "published": 4
+          },
+          "product-service": {
+            "published": 4
+          }
+        },
+        "assetLevels": {
+          "case": {
+            "frontstage": 4
+          },
+          "product-service": {
+            "frontstage": 4
+          }
+        },
+        "assetEvidenceGates": {
+          "case": {
+            "core_evidence_passed": 4
+          },
+          "product-service": {
+            "core_evidence_passed": 4
+          }
+        },
+        "assetCopyGates": {}
+      },
+      {
         "date": "2026-07-01",
         "label": "2026.07.01",
         "shortLabel": "07.01",
@@ -1760,9 +1871,10 @@ window.WaveSightOpsConsole = {
         "pool": 95,
         "assets": {
           "case": 2,
-          "product-service": 3
+          "product-service": 3,
+          "opinion": 15
         },
-        "cards": 5,
+        "cards": 20,
         "rawChannels": {
           "aihot": 65,
           "keyword_search": 82,
@@ -1836,9 +1948,9 @@ window.WaveSightOpsConsole = {
         "pool": 95,
         "assets": {
           "case": 10,
-          "opinion": 13
+          "opinion": 37
         },
-        "cards": 23,
+        "cards": 47,
         "rawChannels": {
           "aihot": 22,
           "keyword_search": 68,
@@ -2192,94 +2304,10 @@ window.WaveSightOpsConsole = {
         "assetLevels": {},
         "assetEvidenceGates": {},
         "assetCopyGates": {}
-      },
-      {
-        "date": "2026-06-25",
-        "label": "2026.06.25",
-        "shortLabel": "06.25",
-        "raw": 244,
-        "pool": 95,
-        "assets": {
-          "case": 13,
-          "funding": 2,
-          "product-service": 33,
-          "opinion": 34
-        },
-        "cards": 82,
-        "rawChannels": {
-          "aihot": 158,
-          "keyword_search": 81,
-          "follow_builders": 0
-        },
-        "poolRoutes": {
-          "index_only": 22,
-          "core_pool": 40,
-          "emerging_pool": 28,
-          "user_feedback_pool": 6,
-          "watchlist": 32
-        },
-        "evidenceLevels": {
-          "supporting_evidence": 2,
-          "core_evidence_candidate": 67,
-          "user_feedback_signal": 5,
-          "community_signal": 1,
-          "discovery_only": 20
-        },
-        "sourceLevels": {
-          "A": 10,
-          "B": 78,
-          "C": 1,
-          "S": 6
-        },
-        "sourceTypes": {
-          "media": 6,
-          "web": 73,
-          "news": 4,
-          "research": 1,
-          "marketplace": 1,
-          "industry": 2,
-          "community": 1,
-          "official": 6,
-          "developer": 1
-        },
-        "assetStatus": {
-          "case": {
-            "published": 13
-          },
-          "funding": {
-            "published": 2
-          },
-          "product-service": {
-            "published": 33
-          }
-        },
-        "assetLevels": {
-          "case": {
-            "frontstage": 13
-          },
-          "funding": {
-            "frontstage": 2
-          },
-          "product-service": {
-            "frontstage": 33
-          }
-        },
-        "assetEvidenceGates": {
-          "case": {
-            "core_evidence_passed": 13
-          },
-          "funding": {
-            "core_evidence_passed": 2
-          },
-          "product-service": {
-            "core_evidence_passed": 33
-          }
-        },
-        "assetCopyGates": {}
       }
     ],
     "engineQuality": {
-      "updatedAt": "2026-07-01T03:37:30.064Z",
+      "updatedAt": "2026-07-02T03:53:29.728Z",
       "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
       "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
       "rows": [
@@ -2328,28 +2356,28 @@ window.WaveSightOpsConsole = {
         {
           "id": "gdelt",
           "label": "GDELT",
-          "total": 613,
+          "total": 626,
           "freshKnown": 49,
           "fresh": 1,
-          "duplicates": 89,
+          "duplicates": 92,
           "official": 6,
-          "convertible": 255,
+          "convertible": 258,
           "freshnessRate": 2,
           "duplicateRate": 15,
           "officialRate": 1,
-          "conversionRate": 42
+          "conversionRate": 41
         },
         {
           "id": "anysearch",
           "label": "AnySearch",
-          "total": 1451,
+          "total": 1510,
           "freshKnown": 0,
           "fresh": 0,
-          "duplicates": 138,
-          "official": 219,
-          "convertible": 800,
+          "duplicates": 141,
+          "official": 227,
+          "convertible": 824,
           "freshnessRate": null,
-          "duplicateRate": 10,
+          "duplicateRate": 9,
           "officialRate": 15,
           "conversionRate": 55
         },
@@ -2370,15 +2398,15 @@ window.WaveSightOpsConsole = {
         {
           "id": "aihot",
           "label": "AI HOT",
-          "total": 3513,
-          "freshKnown": 2780,
-          "fresh": 2780,
+          "total": 3574,
+          "freshKnown": 2826,
+          "fresh": 2826,
           "duplicates": 6,
-          "official": 227,
-          "convertible": 1221,
+          "official": 235,
+          "convertible": 1246,
           "freshnessRate": 100,
           "duplicateRate": 0,
-          "officialRate": 6,
+          "officialRate": 7,
           "conversionRate": 35
         },
         {
@@ -2403,7 +2431,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "SITE",
         "label": "Main website",
-        "value": "SITE-V3.4.0"
+        "value": "SITE-V3.4.1"
       },
       {
         "key": "OPS",
@@ -2413,7 +2441,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "BSIG",
         "label": "Business Signals",
-        "value": "BSIG-V1.1.5-corepool-top10-release"
+        "value": "BSIG-V1.2.0-core-signal-cards"
       },
       {
         "key": "IMAP",

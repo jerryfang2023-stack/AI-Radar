@@ -96,7 +96,7 @@ For each cell, score qualitatively before visual rendering:
 | unique source-backed Cards | 30 |
 | distinct actors / companies | 15 |
 | customer deployment, procurement, pricing, funding, or usage evidence | 25 |
-| source quality and excerpt strength | 15 |
+| original-evidence and excerpt strength | 15 |
 | 7-day rise versus 30-day baseline | 15 |
 
 Use this as judgment guidance, not as a public backend field unless the user asks for it.

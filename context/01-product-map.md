@@ -19,7 +19,7 @@ priority: current
 | First-Line Viewpoints | Builders public viewpoints, translated and organized independently | Active frontstage |
 | Relationship Graph | Visual graph built from accepted business-signal Cards | Active analysis layer |
 | Trend Candidates | Potential trend patterns based on multiple same-direction business signals | Active analysis layer |
-| Dashboard | Production-chain, source quality, topic center, and release status | Active backend |
+| Dashboard | Production-chain, source traceability, topic center, and release status | Active backend |
 
 ## Current Navigation
 

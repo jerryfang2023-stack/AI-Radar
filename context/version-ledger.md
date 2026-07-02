@@ -18,14 +18,15 @@ This file is the current version baseline. Closeout files prove what happened; t
 
 | Field | Value |
 |---|---|
-| Current version | V3.4.0-report-center-opportunity-system |
-| Version name | Report Center Opportunity System Release |
+| Current version | V3.4.1-core-signal-cards |
+| Version name | Core Signal Cards Release |
 | Version layer | Major |
 | Release date | 2026-07-01 |
-| Last modified at | 2026-07-02T11:10:00+08:00 |
+| Last modified at | 2026-07-02T13:30:00+08:00 |
 | Product version | V3.4 |
-| Main website version | SITE-V3.4.0 |
-| Business Signals column version | BSIG-V1.1.5-corepool-top10-release |
+| Main website version | SITE-V3.4.1 |
+| Business Signals column version | BSIG-V1.2.0-core-signal-cards |
+| Tag taxonomy version | TAG-V1.1.0-v34-layered-taxonomy |
 | First-Line Viewpoints column version | FLV-V1.0.2-supervision-idempotency |
 | Community Intelligence column version | CINT-V1.0.2-publication-waiting-gate |
 | Enterprise AI lens version | EAI-V1.1.0-fde-lens-pool |
@@ -43,7 +44,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - WaveSight AI is now a unified intelligence frontstage, not a V2 four-column content site.
 - V3.4 public frontstage has four entries: Business Signals, Reports Center, First-Line Viewpoints, and Community Intelligence.
 - Business Signals uses the Raw / Pool / Card / Relationship Graph / Trend Candidate chain.
-- Business Signals is versioned as `BSIG-V1.1.5-corepool-top10-release` in this release. Its public page keeps Top10 as the primary desk, preserves the `EAI-V1.1.0-fde-lens-pool` secondary lens, blocks generic FDE role/service pages, generic funding commentary, funding roundups, broad lists, stale sources, and search-query artifacts from formal Card promotion, keeps the six formal Signal Card entry gates unchanged, allows qualified source-backed Core Pool display candidates to fill Top10 when formal Card promotion is thin but Pool / Core Pool / non-large Core Pool supply is healthy, treats GDELT / keyword search / RSS / AI HOT as peer source-artifact channels, and treats provider-caused Raw shortfall as diagnostic when Pool, routed Pool, usable Core Pool, non-large Core Pool, and Top10 supply are sufficient.
+- Business Signals is versioned as `BSIG-V1.2.0-core-signal-cards` in this release and depends on `TAG-V1.1.0-v34-layered-taxonomy` for formal tag display filtering, aggregation suppression, and `opportunity_signals` boundary rules. Its public page presents all qualified Core Pool business signals as Cards in one importance-sorted view, preserves the `EAI-V1.1.0-fde-lens-pool` secondary lens, blocks generic FDE role/service pages, generic funding commentary, funding roundups, broad lists, stale sources, and search-query artifacts from formal Card promotion, keeps the six formal Signal Card entry gates unchanged, treats GDELT / keyword search / RSS / AI HOT as peer source-artifact channels, and treats provider-caused Raw shortfall as diagnostic when Pool, routed Pool, usable Core Pool, non-large Core Pool, and Card supply are sufficient.
 - First-Line Viewpoints is versioned as `FLV-V1.0.2-supervision-idempotency` in this release. It keeps the morning RSS page-data lane and afternoon local `follow-builders` publish lane independent, requires Obsidian person/date timeline sync idempotency, and separates healthy local data from publication-state warnings.
 - Community Intelligence is versioned as `CINT-V1.0.2-publication-waiting-gate` in this release. It keeps logged-in local collection as the only collection route, uses GitHub only to publish already-generated validated files, and treats open PR / queued workflow states after healthy same-date data as Waiting rather than repair Problems.
 - Enterprise AI / FDE is a frontstage interpretation and monitoring lens backed by an independent FDE Lens Pool. It is not a fourth Card type, and it must not expose backend-only fields.
@@ -60,7 +61,7 @@ This file is the current version baseline. Closeout files prove what happened; t
 - Reports Center and Dashboard follow the Business Signals data chain.
 - Reports Center is versioned independently as `IMAP-V2.0.0-report-center-opportunity-system`. It leads with Monthly / Weekly reports, renders Entry Point Map and Product Pain Map as separate full-width opportunity maps from source-backed `opportunity_signals`, opens cell evidence in a modal, and keeps relation paths as a supporting exploration section after the maps.
 - Site output remains unified on GitHub Pages, but each producing lane can independently pass gates, open a PR, merge to `main`, and trigger publication without waiting for other lanes.
-- SITE-V3.4.0 keeps the V3.3 release-gate hardening, then upgrades the Reports Center into a report-first opportunity system with independent opportunity maps, evidence modals, and relation paths.
+- SITE-V3.4.1 keeps the V3.4 Reports Center opportunity system and changes Business Signals from a Top10 desk to unified Core Signal Cards.
 - The three column monitor skills are current execution entries and must include self-improvement after recurring production failures.
 - Hermes daily supervision is now routed through the unified supervision report and the Hermes -> Codex inbox.
 - Project health automation now has daily, weekly, and monthly read-only report commands for supervision coverage, recurring issue review, Git hygiene, large-file review, runtime checks, and deployment-service residue.
@@ -87,7 +88,7 @@ Local V2 archive: `agent-workflow/backups/v2-static-pages-20260604.zip`. It is f
 | Scope | Version | Automation status | Source | Outputs |
 |---|---|---|---|---|
 | Operations Backend / 运营大后台 | `OPS-V1.2.3-content-factory-cleanout` | Unified backend shell version for `operations-console.html`; released through GitHub Pages after merge | Data Observation governance loop navigation, issue center, task chain, data quality, version governance, independent Skill Store, settings, and backend-facing generated ops data. Topic Center, Content Factory, Publishing Queue, and AIP topic export are retired from the operations backend. | HTML meta `wavesight-ops-console-version`, visible sidebar version, generated `ops-console` data, version ledger |
-| Business Signals / 商业信号 column | `BSIG-V1.1.5-corepool-top10-release` | Published through the main GitHub Pages frontstage; keeps Top10 as the primary desk and adds the 企业AI化 secondary lens | V3.3.6.3 Card data contract plus Enterprise AI lens rendering plus Core Pool source hygiene gates, source-first pipeline hygiene gate, peer source-artifact selection, Pool/Core release override for provider-caused Raw shortfall, and Core Pool display-candidate Top10 fill when formal Card promotion is thin | `v3-data-observation.html`, `v3-data-observation-desk.json` meta, version ledger |
+| Business Signals / 商业信号 column | `BSIG-V1.2.0-core-signal-cards` | Published through the main GitHub Pages frontstage; presents all qualified Core Pool business signals as Cards and keeps the 企业AI化 secondary lens | V3.3.6.3 Card data contract plus Enterprise AI lens rendering, source-first pipeline gate, peer source-artifact selection, and Pool/Core release override for provider-caused Raw shortfall | `v3-data-observation.html`, `v3-data-observation-desk.json` meta, version ledger |
 | Reports Center / 报告中心 column | `IMAP-V2.0.0-report-center-opportunity-system` | Published through the main GitHub Pages frontstage. Reports lead the page; Entry Point Map and Product Pain Map render as separate full-width source-backed maps; cell evidence opens in a modal; relation paths remain a supporting section. | Business Signals source-backed opportunity_signals + Weekly Business Change Radar content + Monthly Business Structure Report content + Card-derived relation paths | `intelligence-map.html`, `reports.html`, `monthly-business-structure-2026-06.html`, `weekly-ai-business-change-radar.html`, `weekly-ai-business-change-radar-2026-06-15.html`, `agent-workflow/skills/guanlan-opportunity-radar-updater/`, `01-SiteV2/content/08-report/*.md`, `01-SiteV2/content/08-report/monthly/*.md` |
 
 ## Current Sources Of Truth

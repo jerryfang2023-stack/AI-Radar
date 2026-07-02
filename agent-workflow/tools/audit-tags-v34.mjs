@@ -8,6 +8,7 @@ const root = process.cwd();
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const reportMd = path.join(reportsDir, "tag-v34-audit-latest.md");
 const reportJson = path.join(reportsDir, "tag-v34-audit-latest.json");
+const taxonomyFile = path.join(root, "agent-workflow", "product", "tag-taxonomy.md");
 const signalRoots = [
   path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "case"),
   path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards", "funding"),
@@ -187,7 +188,7 @@ function preferredTrack(tags = []) {
 function signalCardAudit(cards) {
   const counts = new Map();
   const groupCounts = new Map();
-  const missing = { track: 0, evidence: 0, source: 0 };
+  const missing = { track: 0, evidence: 0 };
   const multiTrack = [];
   const stageOnSignalCards = [];
   const trackTrimDryRun = [];
@@ -199,7 +200,6 @@ function signalCardAudit(cards) {
     }
     if (!card.tags.track.length) missing.track += 1;
     if (!card.tags.evidence.length) missing.evidence += 1;
-    if (!card.tags.source.length) missing.source += 1;
     if (card.tags.track.length >= 4) multiTrack.push(card);
     if (card.tags.stage.length) stageOnSignalCards.push(card);
     if (card.tags.track.length > 3 || (card.tags.track.includes("track-ai-agent") && card.tags.track.length > 1)) {
@@ -218,7 +218,7 @@ function signalCardAudit(cards) {
   }
 
   const highCoverageTags = topEntries(counts, 80)
-    .filter((row) => row.count / Math.max(cards.length, 1) >= 0.25)
+    .filter((row) => !row.key.startsWith("source-") && row.count / Math.max(cards.length, 1) >= 0.25)
     .map((row) => ({ ...row, coverage: Number((row.count / Math.max(cards.length, 1)).toFixed(3)) }));
 
   return {
@@ -319,7 +319,7 @@ function currentSiteAudit() {
     file: rel(file),
     activeDate: data.meta?.activeDate || "",
     cards: data.cards?.length || 0,
-    top10: data.top10?.length || 0,
+    frontstageCards: data.frontstageCards?.length || data.cards?.length || 0,
     allowedTagCount: data.meta?.allowedTagCount || 0,
     tagLayerPolicy: data.meta?.tagLayerPolicy || {},
     topFlatTags: topEntries(flatCounts, 30),
@@ -437,9 +437,11 @@ function communityAudit() {
 
 function taxonomyAudit() {
   const tags = readTagTaxonomy(root);
+  const version = read(taxonomyFile).match(/^version[:：]\s*(.+)$/mu)?.[1]?.trim() || "unversioned";
   const groups = new Map();
   for (const tag of tags) increment(groups, tag.group);
   return {
+    version,
     total: tags.length,
     groups: Object.fromEntries([...groups.entries()].sort((a, b) => a[0].localeCompare(b[0]))),
   };
@@ -458,6 +460,7 @@ Generated at: ${payload.generatedAt}
 ## Result
 
 - Taxonomy tags: ${payload.taxonomy.total}
+- Taxonomy version: ${payload.taxonomy.version}
 - Signal Cards audited: ${payload.signalCards.total}
 - Multi-track Signal Cards: ${payload.signalCards.multiTrackCount}
 - Signal Cards carrying stage tags: ${payload.signalCards.stageOnSignalCardsCount}
@@ -502,7 +505,7 @@ ${table(["file", "id", "title", "fields"], payload.opportunitySignals.broadRows)
 - File: ${payload.currentSite.file || "missing"}
 - Active date: ${payload.currentSite.activeDate || ""}
 - Cards: ${payload.currentSite.cards || 0}
-- Top10: ${payload.currentSite.top10 || 0}
+- Frontstage Cards: ${payload.currentSite.frontstageCards || 0}
 - Allowed tag count: ${payload.currentSite.allowedTagCount || 0}
 - Formal tags layer: ${payload.currentSite.tagLayerPolicy?.formalTags || "missing"}
 - Opportunity signals layer: ${payload.currentSite.tagLayerPolicy?.opportunitySignals || "missing"}

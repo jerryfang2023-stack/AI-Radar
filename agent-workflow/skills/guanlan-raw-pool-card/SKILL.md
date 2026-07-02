@@ -1,6 +1,6 @@
 ---
 name: guanlan-raw-pool-card
-description: Use when running, repairing, auditing, or changing WaveSight AI Raw to Pool to Core Pool to Signal Card to frontstage production. Covers daily Raw/Pool quantity targets, Core Pool qualification, Signal Card generation, Top10 selection, full Core Pool candidate display, large-company caps, and site/Obsidian handoff rules.
+description: Use when running, repairing, auditing, or changing WaveSight AI Raw to Pool to Core Pool to Signal Card to frontstage production. Covers daily Raw/Pool quantity targets, Core Pool qualification, Signal Card generation, unified frontstage Card display, and site/Obsidian handoff rules.
 metadata:
   guanlan:
     version: "1.0.0"
@@ -25,8 +25,8 @@ Use it for:
 - Raw / Pool / Core Pool quantity and balance checks.
 - Generating or repairing Signal Cards from Pool.
 - Deciding why a Core Pool candidate did or did not become a formal Signal Card.
-- Updating the Business Signals frontstage Top10 and Core Pool candidate view.
-- Auditing large-company limits and non-large-company coverage.
+- Updating the unified Business Signals frontstage Card view.
+- Auditing Core Pool coverage and non-large-company supply.
 
 Do not use it for first-line builders viewpoints, opinion cards, daily observation articles, trend reports, or business briefs.
 
@@ -86,17 +86,15 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 
 ## Current Frontstage Contract
 
-- Business Signals default view is the daily Top10.
-- Top10 must publish exactly 10 items and apply large-company caps.
-- Same large company: at most 1 item in Top10 per date.
-- Total large-company items: at most 3 in Top10 per date.
-- The secondary Core Pool view shows the full same-date Core Pool candidate set.
-- The secondary Core Pool view is not capped by large-company limits.
-- The secondary Core Pool view must mark formal Signal Cards separately from Core Pool candidates that have not become formal cards.
+- Business Signals has one public Card view for the active date.
+- Every qualified Core Pool business signal that can become a Card should appear in that public Card set.
+- The public page must not split items into Top10 versus candidate-pool modes.
+- Cards are sorted by importance / impact from high to low.
+- The page must not display sorting reasons, selection tiers, or candidate-only labels.
 
 ## Card Boundary
 
-Formal Signal Cards are persistent knowledge assets. They must be source-backed and pass semantic gates. A Core Pool candidate may be visible in the secondary frontstage view without becoming a formal Signal Card when it remains useful for context but fails the formal card gate.
+Formal Signal Cards are persistent knowledge assets. They must be source-backed and pass semantic gates. A Core Pool item that cannot pass Card display requirements may stay in backend Pool evidence, but it must not appear as a separate public candidate-pool item.
 
 Do not lower Card quality to satisfy a count. If many `core_pool` candidates fail the formal Card gate, repair Pool routing or collect better Raw evidence.
 
@@ -113,8 +111,7 @@ When finishing, report:
 
 - Raw / Pool / Core Pool counts;
 - Signal Card count;
-- Top10 count;
-- secondary Core Pool candidate count;
+- public Card count;
 - rejected Core Pool candidates and gate reasons;
 - gates run;
 - whether changes were committed and deployed.

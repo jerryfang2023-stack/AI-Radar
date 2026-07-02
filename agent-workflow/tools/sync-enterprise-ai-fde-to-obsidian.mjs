@@ -122,7 +122,6 @@ function signalCardIndex(date) {
 function detailMap(payload) {
   return new Map([
     ...(payload.cards || []),
-    ...(payload.corePoolCandidates || []),
     ...(payload.enterpriseAiFdePool || []),
     ...(payload.enterpriseAiLensCandidates || []),
   ].map((item) => [item.id, item]));

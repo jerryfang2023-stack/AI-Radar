@@ -101,7 +101,7 @@ Rank cells by:
 - evidence count in the 7-day window;
 - diversity of companies or actors;
 - presence of customer deployment, procurement, pricing, adoption, or funding action;
-- source quality;
+- original-evidence strength;
 - change versus the 30-day baseline.
 
 Do not rank by:

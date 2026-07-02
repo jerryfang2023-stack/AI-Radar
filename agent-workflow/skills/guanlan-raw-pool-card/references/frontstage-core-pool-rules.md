@@ -1,29 +1,23 @@
-# Frontstage Core Pool Rules
+# Frontstage Core Signal Card Rules
 
 Use these rules when changing `v3-data-observation.html`, `v3-data-observation-desk.js`, or `build-v3-data-observation-desk.mjs`.
 
-## Views
+## Public View
 
-- Default view: daily Top10.
-- Secondary view: same-date full Core Pool candidate set.
-- Top10 is an editorial selection from qualified Core Pool-backed Signal Cards.
-- Full Core Pool is an evidence/candidate review surface, not a replacement for Top10.
+- Default view: one active-date Card set.
+- No public Top10 mode.
+- No public Core Pool candidate-pool mode.
+- Every qualified Core Pool business signal that can become a Card should render as a public Card.
+- Cards are sorted by importance / impact from high to low.
+- Do not display sorting reasons, selection tiers, or candidate-only labels.
 
-## Large-Company Caps
+## Backend Evidence
 
-- Apply caps only to Top10:
-  - same large company: max 1 per date;
-  - all large-company items: max 3 per date.
-- Do not apply these caps to the full Core Pool secondary view.
-- Still monitor full Core Pool balance:
-  - large-company Core Pool should stay below 10 items and below 35% by default;
-  - non-large-company Core Pool should be at least 20 items by default.
+- Raw and Pool keep full evidence and diagnostics.
+- Core Pool items that cannot satisfy Card display requirements remain backend evidence.
+- Do not force stale sources, generic lists, index-only pages, user-feedback-only items, or weak evidence into public Cards just to increase count.
 
-## Card Boundary
+## Source-First Boundary
 
-- Formal Signal Cards must pass the Card generator semantic gate.
-- A Core Pool candidate can appear in the secondary view without a formal Signal Card.
-- Mark status clearly:
-  - `已成卡`: has a linked formal Signal Card;
-  - `候选`: still a Core Pool candidate only.
-- Do not force stale sources, generic lists, index-only pages, user-feedback-only items, or weak evidence into formal Signal Cards just to match Core Pool count.
+- Public Cards must keep auditable source URL, source-title-derived title, and source-backed fact text.
+- Source/channel labels are traceability only. They must not be ranking, quality, priority, or release-gate signals.

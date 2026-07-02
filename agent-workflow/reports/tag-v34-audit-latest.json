@@ -1,6 +1,7 @@
 {
-  "generatedAt": "2026-07-01T09:41:56.653Z",
+  "generatedAt": "2026-07-02T04:05:02.239Z",
   "taxonomy": {
+    "version": "TAG-V1.1.0-v34-layered-taxonomy",
     "total": 74,
     "groups": {
       "customer": 6,
@@ -15,70 +16,69 @@
     }
   },
   "signalCards": {
-    "total": 669,
+    "total": 677,
     "missing": {
       "track": 0,
-      "evidence": 0,
-      "source": 0
+      "evidence": 0
     },
     "groupTotals": {
-      "track": 1241,
-      "function": 455,
-      "scenario": 579,
-      "customer": 743,
-      "evidence": 1043,
+      "track": 1259,
+      "function": 459,
+      "scenario": 580,
+      "customer": 750,
+      "evidence": 1055,
       "stage": 0,
       "region": 3,
-      "source": 669
+      "source": 677
     },
     "topTags": [
       {
         "key": "customer-enterprise",
-        "count": 513
+        "count": 518
       },
       {
         "key": "track-enterprise-workflow",
-        "count": 480
+        "count": 485
       },
       {
         "key": "source-industry-data",
-        "count": 440
+        "count": 443
       },
       {
         "key": "evidence-customer-adoption",
-        "count": 324
+        "count": 328
       },
       {
         "key": "track-ai-infra",
-        "count": 302
+        "count": 304
       },
       {
         "key": "evidence-product-launch",
-        "count": 266
+        "count": 270
       },
       {
         "key": "function-engineering",
-        "count": 219
+        "count": 221
       },
       {
         "key": "customer-developer-team",
-        "count": 218
+        "count": 220
       },
       {
         "key": "track-ai-coding",
-        "count": 217
+        "count": 219
       },
       {
         "key": "evidence-partnership-integration",
-        "count": 156
+        "count": 158
       },
       {
         "key": "source-business-media",
-        "count": 151
+        "count": 153
       },
       {
         "key": "evidence-pricing-cost",
-        "count": 143
+        "count": 144
       },
       {
         "key": "function-sales",
@@ -101,16 +101,16 @@
         "count": 87
       },
       {
+        "key": "source-first-party",
+        "count": 81
+      },
+      {
         "key": "evidence-funding",
         "count": 79
       },
       {
-        "key": "source-first-party",
-        "count": 78
-      },
-      {
         "key": "evidence-customer-metric",
-        "count": 63
+        "count": 64
       },
       {
         "key": "scenario-agent-governance",
@@ -126,15 +126,19 @@
       },
       {
         "key": "function-customer-service",
-        "count": 45
+        "count": 46
       },
       {
         "key": "scenario-customer-ticket",
-        "count": 45
+        "count": 46
       },
       {
         "key": "track-ai-customer-service",
-        "count": 45
+        "count": 46
+      },
+      {
+        "key": "track-ai-agent",
+        "count": 43
       },
       {
         "key": "function-procurement-bidding",
@@ -143,10 +147,6 @@
       {
         "key": "scenario-bidding-response",
         "count": 36
-      },
-      {
-        "key": "track-ai-agent",
-        "count": 35
       },
       {
         "key": "scenario-logistics-supply-chain",
@@ -165,12 +165,12 @@
         "count": 11
       },
       {
-        "key": "track-medical-ai",
+        "key": "function-finance",
         "count": 11
       },
       {
-        "key": "function-finance",
-        "count": 10
+        "key": "track-medical-ai",
+        "count": 11
       },
       {
         "key": "function-operations",
@@ -196,71 +196,123 @@
     "highCoverageTags": [
       {
         "key": "customer-enterprise",
-        "count": 513,
-        "coverage": 0.767
+        "count": 518,
+        "coverage": 0.765
       },
       {
         "key": "track-enterprise-workflow",
-        "count": 480,
-        "coverage": 0.717
-      },
-      {
-        "key": "source-industry-data",
-        "count": 440,
-        "coverage": 0.658
+        "count": 485,
+        "coverage": 0.716
       },
       {
         "key": "evidence-customer-adoption",
-        "count": 324,
+        "count": 328,
         "coverage": 0.484
       },
       {
         "key": "track-ai-infra",
-        "count": 302,
-        "coverage": 0.451
+        "count": 304,
+        "coverage": 0.449
       },
       {
         "key": "evidence-product-launch",
-        "count": 266,
-        "coverage": 0.398
+        "count": 270,
+        "coverage": 0.399
       },
       {
         "key": "function-engineering",
-        "count": 219,
-        "coverage": 0.327
-      },
-      {
-        "key": "customer-developer-team",
-        "count": 218,
+        "count": 221,
         "coverage": 0.326
       },
       {
+        "key": "customer-developer-team",
+        "count": 220,
+        "coverage": 0.325
+      },
+      {
         "key": "track-ai-coding",
-        "count": 217,
-        "coverage": 0.324
+        "count": 219,
+        "coverage": 0.323
       }
     ],
     "multiTrackCount": 0,
     "multiTrackSamples": [],
     "stageOnSignalCardsCount": 0,
     "stageOnSignalCardsSamples": [],
-    "trackTrimDryRunCount": 0,
-    "trackTrimDryRun": []
+    "trackTrimDryRunCount": 8,
+    "trackTrimDryRun": [
+      {
+        "file": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--adk-2-0-auto-signal-p-007.md",
+        "id": "SIG-20260702-A03",
+        "title": "我们为何构建ADK 2.0",
+        "current": "track-ai-agent, track-ai-coding",
+        "suggested": "track-ai-coding"
+      },
+      {
+        "file": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--cloudflare-auto-signal-p-040.md",
+        "id": "SIG-20260702-A01",
+        "title": "Cloudflare 推出全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面",
+        "current": "track-ai-agent, track-enterprise-workflow",
+        "suggested": "track-enterprise-workflow"
+      },
+      {
+        "file": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--genkit-auto-signal-p-010.md",
+        "id": "SIG-20260702-A07",
+        "title": "用 Genkit 构建智能体全栈应用",
+        "current": "track-ai-agent, track-ai-coding, track-enterprise-workflow",
+        "suggested": "track-ai-coding, track-enterprise-workflow"
+      },
+      {
+        "file": "01-SiteV2/knowledge/01-Signal-Cards/case/2026-07-02--signal--google-2026-6-ai-auto-signal-p-003.md",
+        "id": "SIG-20260702-A02",
+        "title": "Google 2026年6月AI更新汇总",
+        "current": "track-ai-agent, track-ai-customer-service",
+        "suggested": "track-ai-customer-service"
+      },
+      {
+        "file": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-02--signal--cloudflare-auto-signal-p-041.md",
+        "id": "SIG-20260702-A04",
+        "title": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
+        "current": "track-ai-agent, track-enterprise-workflow",
+        "suggested": "track-enterprise-workflow"
+      },
+      {
+        "file": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-02--signal--gemini-spark-google-mac-auto-signal-p-008.md",
+        "id": "SIG-20260702-A06",
+        "title": "Gemini Spark，Google 智能体助手，现已登陆 Mac",
+        "current": "track-ai-agent, track-enterprise-workflow",
+        "suggested": "track-enterprise-workflow"
+      },
+      {
+        "file": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-02--signal--ithome-auto-signal-p-061.md",
+        "id": "SIG-20260702-A08",
+        "title": "瑞银：约六成企业收紧 AI 开支，DeepSeek 等开源大模型有望受益",
+        "current": "track-ai-agent, track-enterprise-workflow, track-ai-infra",
+        "suggested": "track-ai-infra, track-enterprise-workflow"
+      },
+      {
+        "file": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-02--signal--techcrunch-auto-signal-p-001.md",
+        "id": "SIG-20260702-A05",
+        "title": "Ashton Kutcher离开Sound Ventures，与Morgan Beller共同创办新VC基金",
+        "current": "track-ai-agent, track-ai-infra",
+        "suggested": "track-ai-infra"
+      }
+    ]
   },
   "opportunitySignals": {
     "fieldCounts": {
       "buyer_or_user": [
         {
           "key": "enterprise_ai_owner",
-          "count": 562
+          "count": 563
         },
         {
           "key": "sales_team",
-          "count": 235
+          "count": 240
         },
         {
           "key": "engineering_team",
-          "count": 221
+          "count": 224
         },
         {
           "key": "it_security_team",
@@ -276,7 +328,7 @@
         },
         {
           "key": "finance_team",
-          "count": 29
+          "count": 30
         },
         {
           "key": "insurance_team",
@@ -306,11 +358,11 @@
       "team_or_function": [
         {
           "key": "sales",
-          "count": 235
+          "count": 240
         },
         {
           "key": "engineering",
-          "count": 221
+          "count": 224
         },
         {
           "key": "it_security",
@@ -326,7 +378,7 @@
         },
         {
           "key": "finance",
-          "count": 29
+          "count": 30
         },
         {
           "key": "insurance_operations",
@@ -352,11 +404,11 @@
       "specific_task": [
         {
           "key": "sales_lead_research",
-          "count": 230
+          "count": 235
         },
         {
           "key": "internal_tool_building",
-          "count": 216
+          "count": 219
         },
         {
           "key": "customer_ticket_triage",
@@ -406,19 +458,19 @@
       "business_action": [
         {
           "key": "customer_deployment",
-          "count": 437
+          "count": 442
         },
         {
           "key": "product_launch",
-          "count": 302
+          "count": 309
         },
         {
           "key": "funding_round",
-          "count": 256
+          "count": 257
         },
         {
           "key": "partnership_integration",
-          "count": 141
+          "count": 145
         },
         {
           "key": "governance_requirement",
@@ -426,11 +478,11 @@
         },
         {
           "key": "pricing_change",
-          "count": 81
+          "count": 82
         },
         {
           "key": "open_source_release",
-          "count": 77
+          "count": 79
         },
         {
           "key": "research_benchmark",
@@ -460,11 +512,11 @@
         },
         {
           "key": "api",
-          "count": 53
+          "count": 54
         },
         {
           "key": "copilot",
-          "count": 53
+          "count": 54
         },
         {
           "key": "workflow_automation",
@@ -476,7 +528,7 @@
         },
         {
           "key": "agent_workbench",
-          "count": 32
+          "count": 33
         },
         {
           "key": "rag_knowledge_base",
@@ -496,7 +548,7 @@
         },
         {
           "key": "browser_or_desktop_tool",
-          "count": 1
+          "count": 2
         },
         {
           "key": "managed_service",
@@ -506,7 +558,7 @@
       "delivery_model": [
         {
           "key": "api_usage_based",
-          "count": 56
+          "count": 57
         },
         {
           "key": "consulting_diagnostic",
@@ -526,7 +578,7 @@
         },
         {
           "key": "enterprise_subscription",
-          "count": 12
+          "count": 13
         },
         {
           "key": "fde_delivery",
@@ -544,11 +596,11 @@
       "pain_or_constraint": [
         {
           "key": "workflow_integration",
-          "count": 398
+          "count": 401
         },
         {
           "key": "api_cost_spike",
-          "count": 114
+          "count": 115
         },
         {
           "key": "security_compliance",
@@ -556,11 +608,11 @@
         },
         {
           "key": "evaluation_gap",
-          "count": 72
+          "count": 73
         },
         {
           "key": "latency_sensitive",
-          "count": 61
+          "count": 63
         },
         {
           "key": "context_management",
@@ -594,15 +646,15 @@
       "adoption_evidence": [
         {
           "key": "customer_metric",
-          "count": 108
+          "count": 109
         },
         {
           "key": "deployment_scale",
-          "count": 96
+          "count": 98
         },
         {
           "key": "partnership_announcement",
-          "count": 81
+          "count": 83
         },
         {
           "key": "procurement_contract",
@@ -610,7 +662,7 @@
         },
         {
           "key": "third_party_report",
-          "count": 58
+          "count": 59
         },
         {
           "key": "pilot_or_poc",
@@ -640,19 +692,19 @@
       "source_evidence_type": [
         {
           "key": "funding_news",
-          "count": 256
+          "count": 257
         },
         {
           "key": "business_media",
-          "count": 228
+          "count": 231
         },
         {
           "key": "first_party_announcement",
-          "count": 179
+          "count": 181
         },
         {
           "key": "technical_blog",
-          "count": 72
+          "count": 77
         },
         {
           "key": "regulatory_or_procurement",
@@ -679,35 +731,43 @@
     "missingCounts": [
       {
         "key": "delivery_model",
-        "count": 513
+        "count": 519
       },
       {
         "key": "product_form",
-        "count": 408
+        "count": 414
       },
       {
         "key": "adoption_evidence",
-        "count": 322
+        "count": 326
       },
       {
         "key": "specific_task",
-        "count": 215
+        "count": 217
       },
       {
         "key": "buyer_or_user",
-        "count": 17
+        "count": 19
       }
     ],
-    "broadRowsCount": 0,
-    "broadRows": []
+    "broadRowsCount": 1,
+    "broadRows": [
+      {
+        "file": "01-SiteV2/knowledge/01-Signal-Cards/product-service/2026-07-02--signal--ithome-auto-signal-p-061.md",
+        "id": "SIG-20260702-A08",
+        "title": "瑞银：约六成企业收紧 AI 开支，DeepSeek 等开源大模型有望受益",
+        "fields": "business_action:4"
+      }
+    ]
   },
   "currentSite": {
     "file": "01-SiteV2/site/data/v3-data-observation-desk.json",
-    "activeDate": "2026-07-01",
-    "cards": 214,
-    "top10": 10,
+    "activeDate": "2026-07-02",
+    "cards": 220,
+    "frontstageCards": 220,
     "allowedTagCount": 69,
     "tagLayerPolicy": {
+      "version": "TAG-V1.1.0-v34-layered-taxonomy",
       "formalTags": "Backend search, filtering, relationship graph assistance, and trend candidate context. Frontstage display is bounded and high-signal only.",
       "opportunitySignals": "Reports Center / Opportunity System source-near fields. These replace old formal_tags aggregation for opportunity maps.",
       "firstLineViewpoints": "Private column tags use opinion / track / source and must not become Business Signals evidence.",
@@ -722,19 +782,19 @@
     "topFlatTags": [
       {
         "key": "customer-enterprise",
-        "count": 128
+        "count": 127
       },
       {
         "key": "evidence-product-launch",
-        "count": 121
+        "count": 119
       },
       {
         "key": "track-ai-infra",
-        "count": 117
+        "count": 116
       },
       {
         "key": "track-enterprise-workflow",
-        "count": 106
+        "count": 105
       },
       {
         "key": "source-business-media",
@@ -742,43 +802,43 @@
       },
       {
         "key": "source-industry-data",
-        "count": 94
+        "count": 92
       },
       {
         "key": "customer-developer-team",
-        "count": 92
+        "count": 91
       },
       {
         "key": "function-engineering",
-        "count": 92
+        "count": 91
       },
       {
         "key": "track-ai-coding",
-        "count": 92
+        "count": 91
       },
       {
         "key": "evidence-customer-adoption",
-        "count": 75
+        "count": 76
       },
       {
         "key": "track-enterprise-data",
-        "count": 50
+        "count": 48
       },
       {
         "key": "scenario-knowledge-base",
-        "count": 49
+        "count": 47
       },
       {
         "key": "scenario-agent-governance",
-        "count": 43
-      },
-      {
-        "key": "track-ai-governance",
         "count": 42
       },
       {
+        "key": "track-ai-governance",
+        "count": 41
+      },
+      {
         "key": "evidence-customer-metric",
-        "count": 35
+        "count": 36
       },
       {
         "key": "evidence-partnership-integration",
@@ -790,46 +850,46 @@
       },
       {
         "key": "source-first-party",
-        "count": 24
+        "count": 25
       },
       {
         "key": "function-sales",
-        "count": 22
+        "count": 20
       },
       {
         "key": "scenario-construction-real-estate",
-        "count": 22
+        "count": 20
       },
       {
         "key": "scenario-sales-briefing",
-        "count": 22
+        "count": 20
       },
       {
         "key": "evidence-funding",
         "count": 18
       },
       {
+        "key": "track-ai-agent",
+        "count": 18
+      },
+      {
         "key": "function-customer-service",
-        "count": 11
-      },
-      {
-        "key": "function-procurement-bidding",
-        "count": 11
-      },
-      {
-        "key": "scenario-bidding-response",
-        "count": 11
+        "count": 12
       },
       {
         "key": "scenario-customer-ticket",
-        "count": 11
+        "count": 12
       },
       {
         "key": "track-ai-customer-service",
-        "count": 11
+        "count": 12
       },
       {
-        "key": "track-ai-agent",
+        "key": "function-procurement-bidding",
+        "count": 10
+      },
+      {
+        "key": "scenario-bidding-response",
         "count": 10
       },
       {
@@ -849,183 +909,183 @@
     "opportunityOverLimitRows": [],
     "tagAssociations": [
       {
+        "tag": "track-enterprise-workflow",
+        "label": "企业工作流",
+        "todayCount": 5,
+        "last30Count": 103
+      },
+      {
+        "tag": "evidence-customer-adoption",
+        "label": "客户采用",
+        "todayCount": 4,
+        "last30Count": 74
+      },
+      {
         "tag": "evidence-product-launch",
         "label": "产品发布",
-        "todayCount": 3,
-        "last30Count": 121
-      },
-      {
-        "tag": "track-ai-infra",
-        "label": "AI 基础设施",
-        "todayCount": 3,
-        "last30Count": 115
-      },
-      {
-        "tag": "track-enterprise-data",
-        "label": "企业数据智能",
-        "todayCount": 3,
-        "last30Count": 50
+        "todayCount": 4,
+        "last30Count": 119
       },
       {
         "tag": "customer-developer-team",
         "label": "开发团队",
         "todayCount": 2,
-        "last30Count": 92
+        "last30Count": 91
       },
       {
-        "tag": "evidence-customer-adoption",
-        "label": "客户采用",
+        "tag": "evidence-partnership-integration",
+        "label": "合作集成",
         "todayCount": 2,
-        "last30Count": 73
+        "last30Count": 33
       },
       {
         "tag": "function-engineering",
         "label": "工程研发",
         "todayCount": 2,
-        "last30Count": 92
+        "last30Count": 91
       },
       {
-        "tag": "scenario-agent-governance",
-        "label": "Agent 权限治理",
+        "tag": "track-ai-coding",
+        "label": "AI Coding",
         "todayCount": 2,
-        "last30Count": 43
+        "last30Count": 91
       },
       {
-        "tag": "scenario-knowledge-base",
-        "label": "知识库问答",
+        "tag": "track-ai-infra",
+        "label": "AI 基础设施",
         "todayCount": 2,
-        "last30Count": 49
+        "last30Count": 114
       }
     ],
     "trendLinks": [
       {
         "window": "7 天",
-        "tag": "evidence-product-launch",
-        "label": "产品发布",
-        "cardCount": 22
-      },
-      {
-        "window": "7 天",
         "tag": "track-enterprise-workflow",
         "label": "企业工作流",
-        "cardCount": 17
-      },
-      {
-        "window": "7 天",
-        "tag": "track-ai-infra",
-        "label": "AI 基础设施",
-        "cardCount": 16
-      },
-      {
-        "window": "7 天",
-        "tag": "customer-developer-team",
-        "label": "开发团队",
-        "cardCount": 13
-      },
-      {
-        "window": "7 天",
-        "tag": "function-engineering",
-        "label": "工程研发",
-        "cardCount": 13
-      },
-      {
-        "window": "7 天",
-        "tag": "track-ai-coding",
-        "label": "AI Coding",
-        "cardCount": 13
-      },
-      {
-        "window": "7 天",
-        "tag": "evidence-customer-adoption",
-        "label": "客户采用",
         "cardCount": 10
       },
       {
         "window": "7 天",
-        "tag": "track-enterprise-data",
-        "label": "企业数据智能",
-        "cardCount": 8
+        "tag": "evidence-customer-adoption",
+        "label": "客户采用",
+        "cardCount": 9
+      },
+      {
+        "window": "7 天",
+        "tag": "evidence-product-launch",
+        "label": "产品发布",
+        "cardCount": 9
+      },
+      {
+        "window": "7 天",
+        "tag": "track-ai-infra",
+        "label": "AI 基础设施",
+        "cardCount": 7
+      },
+      {
+        "window": "7 天",
+        "tag": "customer-developer-team",
+        "label": "开发团队",
+        "cardCount": 4
+      },
+      {
+        "window": "7 天",
+        "tag": "function-engineering",
+        "label": "工程研发",
+        "cardCount": 4
+      },
+      {
+        "window": "7 天",
+        "tag": "scenario-agent-governance",
+        "label": "Agent 权限治理",
+        "cardCount": 4
+      },
+      {
+        "window": "7 天",
+        "tag": "track-ai-coding",
+        "label": "AI Coding",
+        "cardCount": 4
       },
       {
         "window": "30 天",
         "tag": "evidence-product-launch",
         "label": "产品发布",
-        "cardCount": 121
+        "cardCount": 119
       },
       {
         "window": "30 天",
         "tag": "track-ai-infra",
         "label": "AI 基础设施",
-        "cardCount": 115
+        "cardCount": 114
       },
       {
         "window": "30 天",
         "tag": "track-enterprise-workflow",
         "label": "企业工作流",
-        "cardCount": 104
+        "cardCount": 103
       },
       {
         "window": "30 天",
         "tag": "customer-developer-team",
         "label": "开发团队",
-        "cardCount": 92
+        "cardCount": 91
       },
       {
         "window": "30 天",
         "tag": "function-engineering",
         "label": "工程研发",
-        "cardCount": 92
+        "cardCount": 91
       },
       {
         "window": "30 天",
         "tag": "track-ai-coding",
         "label": "AI Coding",
-        "cardCount": 92
+        "cardCount": 91
       },
       {
         "window": "30 天",
         "tag": "evidence-customer-adoption",
         "label": "客户采用",
-        "cardCount": 73
+        "cardCount": 74
       },
       {
         "window": "30 天",
         "tag": "track-enterprise-data",
         "label": "企业数据智能",
-        "cardCount": 50
+        "cardCount": 48
       }
     ]
   },
   "followBuilders": {
     "file": "01-SiteV2/site/data/follow-builders-daily.json",
-    "remarks": 43,
+    "remarks": 48,
     "topFormalTags": [
       {
         "key": "opinion-product-strategy",
-        "count": 35
+        "count": 36
       },
       {
         "key": "track-enterprise-workflow",
-        "count": 35
+        "count": 36
       },
       {
         "key": "source-social",
-        "count": 25
+        "count": 32
       },
       {
         "key": "source-blog",
-        "count": 18
-      },
-      {
-        "key": "opinion-agent-workflow",
-        "count": 4
-      },
-      {
-        "key": "track-ai-agent",
-        "count": 4
+        "count": 16
       },
       {
         "key": "opinion-ai-coding",
+        "count": 8
+      },
+      {
+        "key": "track-ai-coding",
+        "count": 8
+      },
+      {
+        "key": "opinion-agent-workflow",
         "count": 2
       },
       {
@@ -1033,7 +1093,7 @@
         "count": 2
       },
       {
-        "key": "track-ai-coding",
+        "key": "track-ai-agent",
         "count": 2
       },
       {
@@ -1052,7 +1112,7 @@
     "placeholderValues": [
       {
         "key": "monetization:待确认",
-        "count": 11
+        "count": 12
       },
       {
         "key": "industry:未识别行业",

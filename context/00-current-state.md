@@ -11,7 +11,7 @@ priority: current
 
 # 00 Current State - WaveSight AI
 
-WaveSight AI is now in SITE-V3.4.0 Report Center Opportunity System Release.
+WaveSight AI is now in SITE-V3.4.1 Core Signal Cards Release.
 
 ## Current Positioning
 
@@ -19,9 +19,10 @@ WaveSight AI is now in SITE-V3.4.0 Report Center Opportunity System Release.
 - The current public frontstage has four active columns: business signals, report center, first-line viewpoints, and community intelligence.
 - The current backend entry is the operations dashboard.
 - The production core is not a content website. It turns daily external information into persistent intelligence assets.
-- The daily business-signal target is the 10 most important product / service, funding, and case signals, covering big companies, vertical industries, and emerging-company funding.
-- SITE-V3.4.0 keeps the unified frontstage and upgrades the former Intelligence Map into a Reports Center / Opportunity System: monthly and weekly reports lead the page, Entry Point Map and Product Pain Map are separate full-width opportunity maps with click-to-open evidence, and relation paths become a supporting exploration section.
-- Current column versions: Business Signals `BSIG-V1.1.5-corepool-top10-release`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Reports Center `IMAP-V2.0.0-report-center-opportunity-system`.
+- The daily business-signal frontstage presents all qualified Core Pool business signals that can become Cards, sorted by importance / impact from high to low. It no longer separates a Top10 desk from a candidate pool.
+- SITE-V3.4.1 keeps the unified frontstage and Reports Center opportunity system, and changes Business Signals from Top10 selection to unified Core Signal Cards.
+- Current column versions: Business Signals `BSIG-V1.2.0-core-signal-cards`, First-Line Viewpoints `FLV-V1.0.2-supervision-idempotency`, Community Intelligence `CINT-V1.0.2-publication-waiting-gate`, Reports Center `IMAP-V2.0.0-report-center-opportunity-system`.
+- Current tag taxonomy version: `TAG-V1.1.0-v34-layered-taxonomy`.
 
 ## Current Entries
 
@@ -78,7 +79,7 @@ Old V2 pages are retired. If old rules conflict with SITE-V3.4.0, remove or rebu
 
 ## Current Automation Goal
 
-1. Run Business Signals through its own Raw / Pool / Card / Top10 lane.
+1. Run Business Signals through its own Raw / Pool / Card lane.
 2. Run First-Line Viewpoints through its own builders data lane.
 3. Run Community Intelligence through its local logged-in collection lane and independent GitHub publish PR lane.
 4. Keep Reports Center and Dashboard aligned with the Business Signals data chain.

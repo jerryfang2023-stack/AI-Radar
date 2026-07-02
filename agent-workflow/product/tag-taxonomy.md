@@ -1,6 +1,7 @@
 # Tag Taxonomy｜标签体系
 
 更新时间：2026-07-01
+version：TAG-V1.1.0-v34-layered-taxonomy
 owner：Intelligence Engine / Experience & Editorial
 状态：current
 

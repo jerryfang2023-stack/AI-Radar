@@ -62,13 +62,14 @@ function businessAssets() {
   const file = path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json");
   const data = readJson(file, {});
   const activeDate = data?.meta?.activeDate || "";
-  const top10 = Array.isArray(data.top10) ? data.top10 : [];
-  const badTitleCount = top10.filter((item) => badBusinessTitle(item.title || item.displayTitle || "")).length;
+  const cards = Array.isArray(data.frontstageCards) ? data.frontstageCards : (Array.isArray(data.cards) ? data.cards : []);
+  const sameDateCards = cards.filter((item) => !item?.date || item.date === date);
+  const badTitleCount = sameDateCards.filter((item) => badBusinessTitle(item.title || item.displayTitle || "")).length;
   return {
-    ready: activeDate === date && top10.length === 10 && badTitleCount === 0,
+    ready: activeDate === date && sameDateCards.length > 0 && badTitleCount === 0,
     file: rel(file),
     activeDate,
-    top10: top10.length,
+    cards: sameDateCards.length,
     badTitleCount,
     generatedAt: data?.meta?.generatedAt || "",
   };

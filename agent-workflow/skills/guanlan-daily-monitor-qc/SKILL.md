@@ -1,6 +1,6 @@
 ---
 name: guanlan-daily-monitor-qc
-description: Audit WaveSight AI current V3 daily-monitor Raw / Pool quality before downstream business-signal production. Use for Raw evidence completeness, Pool routing, source quality, discovery-channel separation, large-company concentration, full-text integrity, monitor logs, and Markdown allow / allow_with_degradation / block decisions. Do not generate Cards, daily observations, trend reports, business briefs, or first-line builders viewpoints.
+description: Audit WaveSight AI current V3 daily-monitor Raw / Pool quality before downstream business-signal production. Use for Raw evidence completeness, Pool routing, source traceability, discovery-channel separation, large-company concentration, full-text integrity, monitor logs, and Markdown allow / allow_with_degradation / block decisions. Do not generate Cards, daily observations, trend reports, business briefs, or first-line builders viewpoints.
 metadata:
   guanlan:
     version: "1.0.0"
@@ -103,7 +103,7 @@ If any P0 item is triggered, mark the run `blocked` and stop downstream card/art
 6. AI HOT, follow-builders, HN, X, Reddit, newsletter, RSS or search aggregation text is used as fact主证据 without original-source capture.
 7. The day's leading themes have no source-backed original evidence coverage.
 8. Keyword monitoring path is missing, empty, or only contains unresolved discovery/aggregator results when the day has enough public material.
-9. `source_distribution`, `failed_sources`, `fallback_used`, `evidence_gaps`, `raw_count_by_source_type`, or `source_level_distribution` is missing from the monitor log.
+9. `failed_sources`, `fallback_used`, `evidence_gaps`, or `raw_count_by_source_type` is missing from the monitor log.
 10. The run reports success while downstream-worthy Raw is mostly Chinese official homepages, tool homepages, product indexes, SEO pages, or low-information summaries.
 
 ### P1 Repair Required
@@ -119,7 +119,7 @@ The run may continue only after repair or with explicit downgrade notes:
 - `clean_text` exists but `full_text` is missing without fallback status.
 - Business elements are generic and do not identify customer, workflow, budget, regulation, competition, pricing, or adoption.
 
-## Source Quality Rules
+## Source Traceability Rules
 
 Current rule: `source_level` / `acquisition_source_level` are traceability labels only. They must not be used as `core_pool` gates, Card gates, ranking boosts, ranking penalties, or automatic downgrade reasons. A candidate enters `core_pool` only through content and original-evidence checks: original URL, readable full text, hash/excerpt, non-index page type, Raw QC `allow`, concrete business evidence, and relevance.
 

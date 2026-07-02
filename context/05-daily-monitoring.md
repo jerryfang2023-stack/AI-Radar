@@ -101,7 +101,7 @@ Large-company items are allowed, but they cannot dominate the day.
 Current quantity gates:
 
 - daily production chain expects at least 150 active Raw candidates;
-- Raw shortfall caused by search-provider quota or temporary outage must not block release by itself when Pool, routed Pool, usable `core_pool`, non-large `core_pool`, and the downstream frontstage Top10 contract are sufficient; keep the shortfall visible as a diagnostic.
+- Raw shortfall caused by search-provider quota or temporary outage must not block release by itself when Pool, routed Pool, usable `core_pool`, non-large `core_pool`, and the downstream frontstage Card contract are sufficient; keep the shortfall visible as a diagnostic.
 - GDELT, keyword search, RSS, and AI HOT are peer source-artifact entrances for Raw. Raw selection should use balanced rotation across available peer channels, not a fixed priority order.
 - daily Pool gate expects at least 75 Pool items, at least 60 routed Pool items, and at least 30 usable `core_pool` items;
 - each required importance lane should keep at least 5 Pool candidates before downstream release;

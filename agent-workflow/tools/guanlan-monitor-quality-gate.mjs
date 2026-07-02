@@ -389,8 +389,6 @@ export function runGuanlanMonitorQualityGate({
 
   const rawCount = parseNumber(logBullets.raw_count, parseNumber(parseFrontMatterValue(rawText, "raw_count", "0"), 0));
   const poolCount = parseNumber(logBullets.pool_count, parseNumber(parseFrontMatterValue(poolText, "pool_count", "0"), 0));
-  const sourceLevelDist = parseDistribution(logBullets.source_level_distribution || "");
-  const sourceTotal = sumValues(sourceLevelDist);
 
   const rawTitles = parseRawTitles(rawText);
   const aiRelevantCount = rawTitles.filter((title) => isAIRelevant(title)).length;
@@ -750,7 +748,6 @@ export function runGuanlanMonitorQualityGate({
     `- aihot_core_count: ${aihotCoreCount}`,
     `- keyword_search_non_community_count: ${keywordNonCommunityCount}`,
     `- non_community_paths_hit: ${nonCommunityPaths.join(", ") || "none"}`,
-    `- source_level_distribution: ${Object.entries(sourceLevelDist).map(([key, value]) => `${key}=${value}`).join("; ") || "none"}`,
     `- ai_relevant_title_ratio: ${aiRelevantRatio.toFixed(3)}`,
     `- off_topic_title_count: ${offTopicCount}`,
     `- core_pool_count: ${corePoolCount}`,
@@ -842,8 +839,6 @@ export function runGuanlanMonitorQualityGate({
       raw_count_release_override: rawCountReleaseByPoolCore ? "pool_core_supply" : "false",
       pool_core_supply_release: poolCoreSupplyRelease,
       pool_count: poolCount,
-      source_level_distribution: sourceLevelDist,
-      source_level_total: sourceTotal,
       keyword_search_non_community_count: keywordNonCommunityCount,
       non_community_paths_hit: nonCommunityPaths,
       ai_relevant_title_ratio: aiRelevantRatio,

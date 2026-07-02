@@ -174,7 +174,7 @@ function laneToTask(lane) {
   const counts = [
     ["Raw", evidence.rawCount],
     ["Pool", evidence.coreCandidateCount || evidence.qualifiedCount],
-    ["Top10", evidence.publicTop10Count || evidence.frontstageSelected],
+    ["Cards", evidence.publicCardCount || evidence.frontstageSelected],
     ["Items", evidence.items || evidence.remarks || evidence.itemCount],
   ].filter(([, value]) => value != null);
   return {
