@@ -9,8 +9,8 @@ source_title: "Gemini Spark，Google 智能体助手，现已登陆 Mac"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-02T02:46:17.419Z
-updated_at: 2026-07-02T02:46:17.419Z
+created_at: 2026-07-02T05:53:33.280Z
+updated_at: 2026-07-02T05:53:33.280Z
 
 raw_refs: ["R-008"]
 pool_refs: ["P-008"]
@@ -37,7 +37,7 @@ formal_tags:
   evidence: ["evidence-partnership-integration", "evidence-product-launch"]
   stage: []
   region: []
-  source: ["source-business-media"]
+  source: []
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"
@@ -49,7 +49,7 @@ opportunity_signals:
   delivery_model: ["enterprise_subscription"]
   pain_or_constraint: ["workflow_integration", "latency_sensitive"]
   adoption_evidence: ["deployment_scale", "partnership_announcement"]
-  source_evidence_type: ["first_party_announcement", "business_media"]
+  source_evidence_type: ["business_media"]
   evidence_basis: "raw_source_text"
   source_excerpt: "[{\"type\":\"product_update\",\"text\":\"Google 的 AI 智能体助手 Gemini Spark 本周三正式登陆 Mac 版 Gemini 桌面应用。新增实时追踪话题功能，可追踪体育比分、股票、突发新闻等动态。已集成 Google Tasks、Google Keep 以及 Canva、Dropbox、Instacart、OpenTable、Zillow Rentals 等第三方应用。用户可用 Spark..."
   missing_fields: ["buyer_or_user", "specific_task"]

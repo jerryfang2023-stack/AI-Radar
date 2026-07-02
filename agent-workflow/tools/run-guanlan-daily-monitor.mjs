@@ -578,7 +578,13 @@ const defaultRequiredImportanceTypes = [
   "important_product_or_service",
   "important_vertical_solution",
 ];
-const formalCardCoreImportanceTypes = new Set(defaultRequiredImportanceTypes);
+const supplementalFormalCardImportanceTypes = [
+  "important_market_structure",
+];
+const formalCardCoreImportanceTypes = new Set([
+  ...defaultRequiredImportanceTypes,
+  ...supplementalFormalCardImportanceTypes,
+]);
 
 function requiredImportanceTypes() {
   const configured = keywordMonitoring.policy?.required_importance_types;
@@ -944,6 +950,15 @@ function importanceProfile(item = {}, bodyText = "") {
     const teaserOnly = /(预告|将于|即将|亮相|teaser|coming soon|showcase|海报)/iu.test(text) && !/(customer|客户|production|部署|正式可用|general availability|api|sdk|pricing|定价|规格|benchmark|评测)/iu.test(text);
     add("important_product_or_service", teaserOnly ? 3 : /openai|anthropic|google|microsoft|aws|nvidia|salesforce|servicenow|major|enterprise|developer platform|大厂|平台级|企业级/iu.test(text) ? 5 : 4, teaserOnly ? "product teaser without enough launch evidence" : "new product or service");
   }
+  const marketStructureEvent =
+    /\b(acquires?|acquired|acquisition|merger|buyout|strategic partnership|partners? with|collaborates? with|procurement|tender|rfp|contract|pricing|price increase|price cut|rate limit|billing change|regulatory approval|clearance|antitrust|lawsuit|settlement)\b|收购|并购|合并|战略合作|合作伙伴|采购|招标|投标|合同|签约|定价|价格|计费|监管批准|审批|反垄断|诉讼|和解/iu.test(text);
+  const marketStructureBusinessContext =
+    /\b(AI|agent|agentic|model|platform|cloud|enterprise|customer|workflow|developer|API|SDK|SaaS|inference|data center|GPU)\b|人工智能|模型|平台|企业|客户|工作流|开发者|算力|数据中心/iu.test(text);
+  const marketStructureNoise =
+    /\b(opinion|analysis|analyst|market map|roundup|guide|tutorial|what is|why we built)\b|观点|评论|研报|指南|教程|清单|榜单/iu.test(text);
+  if (marketStructureEvent && marketStructureBusinessContext && !marketStructureNoise) {
+    add("important_market_structure", /\b(acquisition|merger|contract|procurement|tender|regulatory approval|lawsuit|settlement)\b|收购|并购|合同|采购|招标|监管批准|诉讼|和解/iu.test(text) ? 5 : 4, "market-structure commercial event");
+  }
   const verticalIndustryPattern = /(healthcare|medical|legal|finance|banking|insurance|manufacturing|retail|education|logistics|supply chain|hr|public sector|public procurement|procurement|tender|construction|architecture|architectural|aec|engineering|energy|utility|utilities|power grid|modern grid|electric grid|物流|医疗|金融|银行|保险|法律|法务|制造|工业|零售|教育|供应链|人力资源|政务|建筑).{0,140}(solution|workflow|use case|vertical|industry|copilot|agent|automation|adoption|workspace|platform|interface|engine|virtual workforce|operational complexity|解决方案|工作流|场景|行业|智能体|助手|自动化|采用)/iu;
   const verticalSolutionPattern = /(solution|workflow|use case|vertical|industry|copilot|agent|automation|adoption|workspace|platform|interface|engine|virtual workforce|operational complexity|解决方案|工作流|场景|行业|智能体|助手|自动化|采用).{0,140}(healthcare|medical|legal|finance|banking|insurance|manufacturing|retail|education|logistics|supply chain|hr|public sector|public procurement|procurement|tender|construction|architecture|architectural|aec|engineering|energy|utility|utilities|power grid|modern grid|electric grid|物流|医疗|金融|银行|保险|法律|法务|制造|工业|零售|教育|供应链|人力资源|政务|建筑)/iu;
   if (verticalIndustryPattern.test(text) || verticalSolutionPattern.test(text)) {
@@ -968,6 +983,7 @@ function importanceProfile(item = {}, bodyText = "") {
     important_case: 4,
     important_product_or_service: 3,
     important_funding: concreteFundingEvent ? 6 : 2,
+    important_market_structure: 4,
     important_technical_trend: 2,
   };
   const best = candidates.sort((a, b) => (b.score - a.score) || ((typePriority[b.type] || 0) - (typePriority[a.type] || 0)))[0];
@@ -1975,7 +1991,7 @@ function guanlanScores(item, quality, elements, seed) {
     evidence_strength: clampScore(2 + qualityBonus + Math.min(1, evidenceRichness / 5)),
     case_richness: clampScore(1 + evidenceRichness / 3),
     trend_relevance: clampScore(guanlanBase + importance.importance_score / 3 + (importance.importance_type === "important_technical_trend" ? 1 : 0)),
-    guanlan_relevance: clampScore(guanlanBase + importance.importance_score / 3 + (["important_case", "important_funding", "important_product_or_service", "important_vertical_solution"].includes(importance.importance_type) ? 0.8 : 0)),
+    guanlan_relevance: clampScore(guanlanBase + importance.importance_score / 3 + (formalCardCoreImportanceTypes.has(importance.importance_type) ? 0.8 : 0)),
     emerging_signal_score: emergingSignalScore(item, quality, elements, seed),
   };
 }
@@ -2259,8 +2275,8 @@ function isLowValueConsumerOrPlatformPolicyItem(item = {}, snapshotText = "", ex
   const consumerEntertainment = /Just Dance|舞力全开|mobile game|手游|游戏快报|玩家|曲库|K-POP|音舞|体感音乐|育碧|腾讯游戏/iu.test(text);
   const minorPlatformPolicy = /肖像保护|仿冒带货|带货达人|达人账号|素材盗用|侵权账号|侵权内容|平台治理|内容安全|相似内容阻断|举报|处置侵权/iu.test(text);
   const roundupOrExplainer = /更新汇总|月度更新|latest AI news|monthly update|roundup|weekly digest|why we built|我们为何构建/iu.test(text);
-  const marketCommentary = /瑞银|UBS|分析师|研报|调研|开支|支出|spending|budget|cost concern|analyst/iu.test(text)
-    && !/announces|launches|released|customer deployment|funding round|raises|closed|正式发布|推出|上线|客户部署|融资轮|完成融资/iu.test(text);
+  const marketCommentary = /瑞银|UBS|分析师|研报|调研|spending|budget|cost concern|analyst/iu.test(text)
+    && /开支|支出|成本|预算|ROI|回报|受益|承压|spending|budget|cost|concern|benefit|pressure|analyst/iu.test(text);
   const ventureFormation = /离开.*VC基金|创办.*VC基金|launch new VC firm|start a separate VC fund|new VC fund/iu.test(text)
     && !/raises|raised|closed|closes|fund size|\$\s?\d|完成.*募资|基金规模/iu.test(text);
   const businessAiSignal = /enterprise|B2B|customer deployment|production rollout|procurement|workflow|case study|SaaS|API|SDK|developer platform|paid enterprise|企业|客户|部署|采购|工作流|生产环境|融资|收购|合作伙伴|营收|合同|招标/iu.test(text);
@@ -4366,13 +4382,6 @@ function selectMonitorPoolItems(items) {
   let coreLargeVendorCount = 0;
   let coreNonLargeVendorCount = 0;
 
-  const poolTarget = Math.min(
-    items.length,
-    Math.max(
-      poolMinTarget + poolSelectionBufferTarget,
-      routedPoolMinTarget + Math.max(poolSelectionBufferTarget, metas.filter((meta) => isAIHotDailySelected(meta.item)).length)
-    )
-  );
   const sorted = [...metas].sort((a, b) => b.sortScore - a.sortScore || a.key.localeCompare(b.key));
 
   function canAdd(meta, options = {}) {
@@ -4406,7 +4415,6 @@ function selectMonitorPoolItems(items) {
 
   function pick(options, targetCount) {
     for (const meta of sorted) {
-      if (selected.length >= poolTarget) break;
       if (targetCount !== undefined && targetCount <= 0) break;
       if (!canAdd(meta, options)) continue;
       add(meta);
@@ -4425,7 +4433,7 @@ function selectMonitorPoolItems(items) {
       let needed = minPool - selectedImportanceCount(importanceType);
       if (needed <= 0) continue;
       for (const meta of sorted) {
-        if (selected.length >= poolTarget || needed <= 0) break;
+        if (needed <= 0) break;
         if (meta.importanceType !== importanceType) continue;
         if (!canAdd(meta, { requireRouted: true, enforceCoreLargeVendorCap: true })) continue;
         add(meta);
@@ -4449,9 +4457,16 @@ function selectMonitorPoolItems(items) {
   pick({ requireCore: true, enforceCoreLargeVendorCap: true, enforceCoreLaneCap: true }, Math.max(0, corePoolMinTarget - coreSelectedCount()));
   pick({ requireCore: true, enforceCoreLargeVendorCap: true }, Math.max(0, corePoolMinTarget - coreSelectedCount()));
   pick({ requireRouted: true }, Math.max(0, routedPoolMinTarget - selected.filter((meta) => meta.isRouted).length));
-  pick({}, Math.max(0, poolTarget - selected.length));
+  for (const meta of sorted) {
+    if (selectedKeys.has(meta.key)) continue;
+    const routes = meta.routes || [];
+    if (routes.includes("discard")) continue;
+    if (!meta.isRouted && !routes.includes("index_only") && !isAIHotDailySelected(meta.item)) continue;
+    const demoteCore = meta.isCore && meta.isLargeVendor && coreLargeVendorCount >= coreLargeVendorMaxTarget;
+    add(meta, { demoteCore });
+  }
 
-  return selected.slice(0, poolTarget).map((meta) => meta.item);
+  return selected.map((meta) => meta.item);
 }
 
 function makeRawFiles(items, failures, runMeta = {}) {

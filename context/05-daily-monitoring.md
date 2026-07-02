@@ -104,10 +104,12 @@ Current quantity gates:
 - Raw shortfall caused by search-provider quota or temporary outage must not block release by itself when Pool, routed Pool, usable `core_pool`, non-large `core_pool`, and the downstream frontstage Card contract are sufficient; keep the shortfall visible as a diagnostic.
 - GDELT, keyword search, RSS, and AI HOT are peer source-artifact entrances for Raw. Raw selection should use balanced rotation across available peer channels, not a fixed priority order.
 - daily Pool gate expects at least 75 Pool items, at least 60 routed Pool items, and at least 30 usable `core_pool` items;
+- Pool generation must not cap the selected Pool at a fixed top-N / buffer count. After Raw collection, preserve all non-discard screened evidence in the Pool file so repairable high-value items remain visible for Core/Card processing and audit.
 - each required importance lane should keep at least 5 Pool candidates before downstream release;
 - frontstage Card presentation publishes all active-date qualified Core Pool items that pass the formal Card gate and public display requirements.
 - Signal Card assets should cover all qualified Core Pool items so relationship graph and trend-candidate modules can use the same eligible evidence set.
 - If `core_pool`, routed Pool, or non-large core supply is thin, targeted refill must search for recent concrete events: customer deployment, production rollout, product launch, funding, procurement, pricing, regulatory, or vertical workflow evidence. Do not repair supply by promoting marketplace listings, directories, generic guides, interviews, old technical posts, broad lists, funding roundups, or generic funding commentary into `core_pool`.
+- Concrete acquisitions / mergers, material partnerships, procurement / tenders / contracts, pricing or billing changes, regulatory approvals / antitrust actions, and material lawsuits / settlements are high-value Business Signals when they are source-backed AI commercial events. They must be normalized into existing `case` or `product_service` Cards rather than creating a fourth public Card type.
 - `source_level` and `acquisition_source_level` remain traceability-only labels during refill. They must not boost, penalize, gate, or auto-downgrade Raw / Pool / Core Pool eligibility.
 
 Large-company boundary:

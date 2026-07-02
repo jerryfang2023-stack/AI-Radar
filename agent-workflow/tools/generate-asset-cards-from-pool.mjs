@@ -676,7 +676,24 @@ function sourceBackedChineseFact(raw = "", context = {}) {
   const round = chineseRound(text);
   if (/\b(raises?|raised|funding|financing|seed|series\s+[a-z])\b/iu.test(text)) {
     const purpose = chinesePurpose(text);
-    return `${owner}宣布完成${amount ? amount : ""}${round ? `${round}` : ""}融资${purpose ? `，用于${purpose}` : ""}。`.replace(/完成融资/u, "完成融资");
+    const investorMatch = text.match(/\bfunding from\s+([^.;]+?)(?:,\s+(?:building|with|and)|\.)/iu);
+    const buildingMatch = text.match(/\bbuilding\s+([^.;]{20,180}?)(?:,\s+enabling|\.)/iu);
+    const investors = investorMatch?.[1]?.replace(/\s+/gu, " ").trim() || "";
+    const building = buildingMatch?.[1]
+      ?.replace(/\ba learned memory layer\b/giu, "学习型记忆层")
+      .replace(/\bAI models?\b/giu, "AI 模型")
+      .replace(/\bstudy an organization’s world in advance\b/giu, "提前学习组织知识")
+      .replace(/\s+that trains AI 模型 to 提前学习组织知识/giu, "，用于让 AI 模型提前学习组织知识")
+      .replace(/\s+/gu, " ")
+      .trim() || "";
+    const metric = /\bup to\s+100x fewer tokens\b/iu.test(text) ? "并称可将 token 使用量最多减少 100x" : "";
+    const details = [
+      purpose ? `用于${purpose}` : "",
+      investors ? `投资方包括 ${investors}` : "",
+      building ? `方向是建设${building}` : "",
+      metric,
+    ].filter(Boolean);
+    return `${owner}宣布完成${amount ? amount : ""}${round ? `${round}` : ""}融资${details.length ? `，${details.join("，")}` : ""}。`.replace(/完成融资/u, "完成融资");
   }
   const investorLine = chineseInvestorLine(text);
   if (investorLine) return investorLine;
@@ -761,7 +778,7 @@ function sourceExcerptFromSection(section, points = []) {
   const firstRaw = sourceSentences(raw.full_text || raw.clean_text || "")
     .map((item) => translatedSourcePoint(item, "", context))
     .find(sourcePointReadyForPublic);
-  return firstRaw || points.find(sourcePointReadyForPublic) || sourceTitleFactFromSection(section) || "";
+  return points.find(sourcePointReadyForPublic) || firstRaw || sourceTitleFactFromSection(section) || "";
 }
 
 function isSameSourcePoint(a = "", b = "") {
@@ -918,6 +935,7 @@ function textForInference(section) {
 const coreImportanceTypes = new Set([
   "important_case",
   "important_funding",
+  "important_market_structure",
   "important_product_or_service",
   "important_vertical_solution",
 ]);
@@ -1121,7 +1139,7 @@ function isGenericReportOrListSection(section) {
     value(section, "source"),
     value(section, "source_url"),
   ].join(" ");
-  if (/yc\.com\/companies\/industry|\/research\/enterprise-ai-agent|data-room\/ycombinator|\.pdf(?:$|[?#])|docs\.github\.com|dev\.to|aws marketplace:|docs\.aws\.com\/marketplace|pypi|\/packages?\//iu.test(urlSource)) {
+  if (/yc\.com\/companies\/industry|startuply\.vc\/startup\/|\/research\/enterprise-ai-agent|data-room\/ycombinator|\.pdf(?:$|[?#])|docs\.github\.com|dev\.to|aws marketplace:|docs\.aws\.com\/marketplace|pypi|\/packages?\//iu.test(urlSource)) {
     return true;
   }
   if (isRepositoryOrCatalogSection(section)) return true;
@@ -1178,12 +1196,23 @@ function hasConcreteCaseEvent(section) {
   return /\b(case study|customer story|customer deployment|customer adopts?|adopted by|deployed (?:at|by|with)|used by|rollout|production rollout|pilot customer|design partner|implementation case)\b|客户案例|客户采用|客户部署|生产部署|落地|试点客户|真实客户/iu.test(text);
 }
 
+function hasConcreteMarketStructureEvent(section) {
+  const text = sectionEvidenceText(section);
+  if (isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section)) return false;
+  if (isNewsletterRoundupSource(section) || isBuilderOrOpinionOnlySource(section)) return false;
+  const action = /\b(acquires?|acquired|acquisition|merger|buyout|strategic partnership|partners? with|collaborates? with|procurement|tender|rfp|contract|pricing|price increase|price cut|rate limit|billing change|regulatory approval|clearance|antitrust|lawsuit|settlement)\b|收购|并购|合并|战略合作|合作伙伴|采购|招标|投标|合同|签约|定价|价格|计费|监管批准|审批|反垄断|诉讼|和解/iu.test(text);
+  const businessAiContext = /\b(AI|agent|agentic|model|platform|cloud|enterprise|customer|workflow|developer|API|SDK|SaaS|inference|data center|GPU)\b|人工智能|模型|平台|企业|客户|工作流|开发者|算力|数据中心/iu.test(text);
+  const commentaryOnly = /\b(opinion|analysis|analyst|market map|roundup|guide|tutorial|what is|why we built)\b|观点|评论|研报|指南|教程|清单|榜单/iu.test(text);
+  return action && businessAiContext && !commentaryOnly;
+}
+
 function hasFormalCardEvent(section) {
   const importanceType = value(section, "importance_type");
   if (importanceType === "important_funding") return hasConcreteFundingEvent(section);
   if (importanceType === "important_product_or_service") return hasConcreteProductEvent(section);
+  if (importanceType === "important_market_structure") return hasConcreteMarketStructureEvent(section);
   if (importanceType === "important_case" || importanceType === "important_vertical_solution") {
-    return hasConcreteCaseEvent(section) || hasConcreteProductEvent(section);
+    return hasConcreteCaseEvent(section) || hasConcreteProductEvent(section) || hasConcreteMarketStructureEvent(section);
   }
   return false;
 }
@@ -1230,8 +1259,8 @@ function isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section) {
   const consumerEntertainment = /Just Dance|舞力全开|mobile game|手游|游戏快报|玩家|曲库|K-POP|音舞|体感音乐|育碧|腾讯游戏/iu.test(text);
   const minorPlatformPolicy = /肖像保护|仿冒带货|带货达人|达人账号|素材盗用|侵权账号|侵权内容|平台治理|内容安全|相似内容阻断|举报|处置侵权/iu.test(text);
   const roundupOrExplainer = /更新汇总|月度更新|latest AI news|monthly update|roundup|weekly digest|why we built|我们为何构建/iu.test(text);
-  const marketCommentary = /瑞银|UBS|分析师|研报|调研|开支|支出|spending|budget|cost concern|analyst/iu.test(text)
-    && !/announces|launches|released|customer deployment|funding round|raises|closed|正式发布|推出|上线|客户部署|融资轮|完成融资/iu.test(text);
+  const marketCommentary = /瑞银|UBS|分析师|研报|调研|spending|budget|cost concern|analyst/iu.test(text)
+    && /开支|支出|成本|预算|ROI|回报|受益|承压|spending|budget|cost|concern|benefit|pressure|analyst/iu.test(text);
   const ventureFormation = /离开.*VC基金|创办.*VC基金|launch new VC firm|start a separate VC fund|new VC fund/iu.test(text)
     && !/raises|raised|closed|closes|fund size|\$\s?\d|完成.*募资|基金规模/iu.test(text);
   const businessAiSignal = /enterprise|B2B|customer deployment|production rollout|procurement|workflow|case study|SaaS|API|SDK|developer platform|paid enterprise|企业|客户|部署|采购|工作流|生产环境|融资|收购|合作伙伴|营收|合同|招标/iu.test(text);
@@ -1475,20 +1504,32 @@ function extractAmount(text) {
   return text.match(/(?:[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|m|b|million|billion)|\d+(?:\.\d+)?\s?(?:million|billion))/u)?.[0] || "";
 }
 
+const fundingAmountPattern = /(?:[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|K|m|b|k|million|billion)?|\d+(?:\.\d+)?\s?(?:million|billion|万美元|亿美元|万人民币|亿人民币|万元|亿元)|\d+(?:\.\d+)?\s?(?:\u4e07\u7f8e\u5143|\u4ebf\u7f8e\u5143|\u4e07\u4eba\u6c11\u5e01|\u4ebf\u4eba\u6c11\u5e01|\u4e07\u5143|\u4ebf\u5143))/iu;
+const fundingRoundPattern = /\b(?:pre[- ]seed|seed|series\s+[a-z]|debt financing|bridge round)\b|(?:\u79cd\u5b50|\u5929\u4f7f|[A-Ha-h]\s?\u8f6e|\u6218\u7565)\s?(?:\u8f6e|\u878d\u8d44)?/iu;
+
 function isSingleCompanyFundingSignal(section) {
   const title = poolTitle(section);
   const text = textForInference(section);
   const sourceUrl = value(section, "source_url");
   const haystack = `${title} ${text} ${sourceUrl}`;
-  if (/(funding map|top ai pre-seed investors|pre-seed investors|top ai agent startups|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|funding tracker|ai agent startups insight partners funding|series-b-enterprise-ai-agents|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(haystack)) {
+  const sourceIdentity = `${title} ${value(section, "source")} ${sourceUrl}`;
+  if (/(funding map|top ai pre-seed investors|pre-seed investors|top ai agent startups|ranked by funding|growing share|startup funding|best pre-seed investors|venture capital observatory|vc attention|valuation bubble|agentmarketcap|aifundingtracker|funding tracker|ai agent startups insight partners funding|series-b-enterprise-ai-agents|crunchbase\.com\/venture\/seed-seriesa-startup-megadeals)/iu.test(sourceIdentity)) {
     return false;
   }
-  const hasDirectRoundAnnouncement =
-    /\bannounc(?:es|ed|ing|ement)?\b.{0,120}\$ ?\d+(?:\.\d+)?\s?(?:M|B|million|billion)\b.{0,80}\b(?:pre-seed|seed|series\s+[a-z])\b/iu.test(haystack)
-    || /\$ ?\d+(?:\.\d+)?\s?(?:M|B|million|billion)\b.{0,80}\b(?:pre-seed|seed|series\s+[a-z])\b.{0,120}\bled by\b/iu.test(haystack);
-  const hasFundingAction = /\b(raises|raised|lands|landed|secures|secured|closes|closed|announc(?:es|ed|ing)?|snags|bags|pulls in|gets|receives)\b.{0,120}\b(funding|financing|investment|round|seed|series|pre-seed)\b/iu.test(haystack);
-  const hasAmountOrRound = /[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|m|b|million|billion)?|\b\d+(?:\.\d+)?\s?(?:million|billion)\b|\b(pre-seed|seed|series\s+[a-z])\b/iu.test(haystack);
-  return hasDirectRoundAnnouncement || (hasFundingAction && hasAmountOrRound);
+  const unconfirmedFundingPattern = /(?:rumou?red|reportedly|in talks to|plans to|may raise|could raise|is seeking|will complete|消息称|据悉|拟|将完成|有望完成|寻求融资|计划融资).{0,100}\b(?:funding|financing|investment|round|seed|series|valuation)\b|(?:消息称|据悉|拟|将完成|有望完成|寻求融资|计划融资).{0,100}(?:融资|投资|估值|轮)/iu;
+  if (unconfirmedFundingPattern.test(haystack)) {
+    return false;
+  }
+  const amount = fundingAmountPattern.test(haystack);
+  const round = fundingRoundPattern.test(haystack);
+  const action = /\b(raises?|raised|lands?|landed|secures?|secured|closes?|closed|announc(?:es|ed|ing)?|snags?|bags?|pulls in|gets|receives|launches with|launched with|debuts with|emerged from stealth with|emerges from stealth with)\b|(?:\u5b8c\u6210|\u83b7\u5f97|\u83b7|\u5ba3\u5e03|\u62ff\u5230|\u878d\u8d44|\u4f30\u503c)/iu.test(haystack);
+  const fundingTerm = /\b(funding|financing|investment|round|seed|series|pre-seed|valuation|led by|participation from)\b|(?:\u878d\u8d44|\u6295\u8d44|\u4f30\u503c|\u9886\u6295|\u53c2\u6295|\u8f6e)/iu.test(haystack);
+  const directRoundAnnouncement =
+    /\bannounc(?:es|ed|ing|ement)?\b.{0,160}(?:[$€£]\s?\d|\d+(?:\.\d+)?\s?(?:million|billion)).{0,120}\b(?:pre[- ]seed|seed|series\s+[a-z])\b/iu.test(haystack)
+    || /\b(?:launches|launched|debuts|emerged from stealth|emerges from stealth)\s+with\b.{0,120}(?:[$€£]\s?\d|\d+(?:\.\d+)?\s?(?:million|billion)).{0,120}\b(?:funding|financing|seed|series|round)?\b/iu.test(haystack)
+    || /(?:\u5b8c\u6210|\u83b7\u5f97|\u83b7|\u5ba3\u5e03).{0,120}(?:\u878d\u8d44|\u6295\u8d44|\u4f30\u503c|\u8f6e)/iu.test(haystack);
+  const directRaiseAmount = /\b(?:raises?|raised|lands?|landed|secures?|secured|closes?|closed|snags?|bags?|pulls in|gets|receives)\b.{0,140}(?:[$€£]\s?\d|\d+(?:\.\d+)?\s?(?:million|billion))/iu.test(haystack);
+  return directRoundAnnouncement || directRaiseAmount || (action && fundingTerm && (amount || round));
 }
 
 function scenarioFromText(text) {
@@ -1508,6 +1549,10 @@ function inferSignalType(section) {
   const sourceUrl = value(section, "source_url");
   const importanceType = value(section, "importance_type");
   if (isSingleCompanyFundingSignal(section)) return "funding";
+  if (importanceType === "important_market_structure") {
+    if (/\b(pricing|price|billing|rate limit)\b|定价|价格|计费/iu.test(text)) return "product_service";
+    return "case";
+  }
   if (importanceType === "important_case" || importanceType === "important_vertical_solution") return "case";
   if (importanceType === "important_funding" && /\b(pivoted?|renamed|compute cluster|infrastructure|platform|deploy|deployment|service|product|business|AI biz)\b|转型|更名|托管计算|基础设施|部署|产品|业务/iu.test(`${text} ${sourceUrl}`)) return "product_service";
   if (importanceType === "important_funding") return "funding";
@@ -1583,8 +1628,14 @@ function sourceTitleDisplayTitle(title = "") {
 
 const sourceTitleTranslations = loadSourceTitleTranslations();
 
-function publicTitleForAutoSignal({ sourceEventTitle }) {
-  return sourceTitleDisplayTitle(sourceEventTitle);
+function publicTitleForAutoSignal({ type, company, sourceEventTitle, amount }) {
+  const translated = sourceTitleDisplayTitle(sourceEventTitle);
+  if (translated) return translated;
+  if (type === "funding" && company && amount && !hasTextContamination(company)) {
+    const round = chineseRound(sourceEventTitle);
+    return `${company} 获得 ${amount}${round ? ` ${round}` : ""} 融资`;
+  }
+  return "";
 }
 
 function sourceTitleLineFromText(text = "") {
@@ -1742,17 +1793,12 @@ function autoSignalEligibilityIssues(section) {
   const sourceUrl = value(section, "source_url");
   const importanceType = value(section, "importance_type");
   const text = `${poolTitle(section)} ${sourceUrl} ${value(section, "source_type")}`;
-  const directFundingProof =
-    importanceType === "important_funding"
-    && /Announcing\b.{0,140}\$ ?\d+(?:\.\d+)?\s?(?:M|B|million|billion)\b.{0,100}\b(?:pre-seed|seed|series\s+[a-z])\b.{0,120}\bled by\b/iu.test(textForInference(section));
-  if (inferSignalType(section) === "funding" && importanceType === "important_funding" && !isSingleCompanyFundingSignal(section) && !directFundingProof) {
+  if (inferSignalType(section) === "funding" && importanceType === "important_funding" && !isSingleCompanyFundingSignal(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "funding_not_single_company_round"));
   }
   const sourceEventTitle = cleanSourceEventTitle(originalSourceTitleFromSection(section));
   if (!sourceEventTitle) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, "original_source_title_missing"));
-  } else if (!sourceTitleDisplayTitle(sourceEventTitle)) {
-    issues.push(cardGateIssue(CARD_ENTRY_GATES.sourceAuditability, "source_title_translation_missing_or_contaminated"));
   }
   if (isNonCommercialPolicyOrEthicsSignal(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.factTypeConstraints, "non_commercial_policy_or_ethics_signal"));

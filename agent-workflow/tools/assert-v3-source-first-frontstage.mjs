@@ -324,6 +324,9 @@ function publicTitleIsGeneric(value = "") {
   if (/\b(?:AI business signal|Artificialintelligence-News|Ltd\.)\b/iu.test(text)) return true;
   if (titleLooksLikeGeneratedTemplate(text)) return true;
   if (/的公开案例显示|公开材料显示|原文称|AI 正在进入客户、采购、商品内容或内部工作流/iu.test(text)) return true;
+  if (/^[A-Za-z0-9\u4e00-\u9fff][A-Za-z0-9\u4e00-\u9fff .&'’()/-]{1,80}\s+(?:获得|完成|宣布|携|启动).*(?:[$€£]\s?\d+(?:\.\d+)?|\d+(?:\.\d+)?\s?(?:M|B|K|m|b|k|million|billion|万美元|亿美元|万元|亿元)).*(?:融资|轮|启动|AI)/iu.test(text)) {
+    return false;
+  }
   if (/^[A-Za-z0-9\u4e00-\u9fff][A-Za-z0-9\u4e00-\u9fff .&'’()-]{1,60}\s+(?:获得|获)\s*\$?\d[\d.,]*(?:\s?(?:M|B|million|billion|万|亿|万美元))?\s*融资/iu.test(text)) {
     return false;
   }
@@ -357,9 +360,36 @@ function translatedSourceTitle(value = "") {
   return cleanOriginalTitle(sourceTitleTranslations.get(titleTranslationKey(value)) || "");
 }
 
+function confirmedFundingSourceTitle(title = "") {
+  const text = cleanOriginalTitle(title);
+  if (!text) return false;
+  if (/(?:rumou?red|reportedly|in talks to|plans to|may raise|could raise|is seeking|will complete|消息称|据悉|拟|将完成|有望完成|寻求融资|计划融资)/iu.test(text)) return false;
+  if (/(?:top .*investors|ranked by funding|funding tracker|funding roundup|weekly funding|list of|融资汇总|融资清单|投资人榜单|融资榜单)/iu.test(text)) return false;
+  const amount = /(?:[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|K|m|b|k|million|billion)?|\d+(?:\.\d+)?\s?(?:million|billion|万美元|亿美元|万人民币|亿人民币|万元|亿元))/iu.test(text);
+  const fundingTerm = /\b(?:funding|financing|round|seed|series|valuation|investment|launches with|emerged from stealth with)\b|融资|估值|轮|投资/iu.test(text);
+  const fundingAction = /\b(?:raises?|raised|lands|secures|closes?|closed|announces?|announcing|launched with|launches with|emerged from stealth with)\b|完成|获得|宣布|融资/iu.test(text);
+  const directRaiseOrLaunch = /\b(?:raises?|raised|lands|secures|launches with|emerged from stealth with)\b|融资/iu.test(text);
+  return amount && ((fundingTerm && fundingAction) || directRaiseOrLaunch);
+}
+
+function fundingFallbackTitleBackedByOriginalSource(card = {}, title = "") {
+  const cleanTitle = cleanOriginalTitle(title);
+  if (card.category !== "funding" || !cleanTitle) return false;
+  if (publicTextLooksGarbled(cleanTitle) || titleLooksLikeGeneratedTemplate(cleanTitle)) return false;
+  if (/来源标题|原始来源|公开材料显示|商业信号/iu.test(cleanTitle)) return false;
+  if (/押注|资金流向|业务信号|基础设施能力|可用于观察|值得关注/u.test(cleanTitle)) return false;
+  if (!/(?:获得|完成|宣布|融资|携|启动)|\b(?:launches with|launched with|raises?|raised|lands|secures|closes?)\b/iu.test(cleanTitle)) return false;
+  if (!/(?:[$€£]\s?\d+(?:\.\d+)?|\d+(?:\.\d+)?\s?(?:M|B|K|m|b|k|million|billion|万美元|亿美元|万元|亿元))/iu.test(cleanTitle)) return false;
+  return [card.sourceTitle, card.originalTitle]
+    .map(cleanOriginalTitle)
+    .filter(Boolean)
+    .some(confirmedFundingSourceTitle);
+}
+
 function titleBackedByOriginalSource(card = {}) {
   const title = cleanOriginalTitle(card.title || card.displayTitle);
   if (!title || titleLooksLikeGeneratedTemplate(title) || publicTextLooksGarbled(title)) return false;
+  if (fundingFallbackTitleBackedByOriginalSource(card, title)) return true;
   return [card.sourceTitle, card.originalTitle]
     .map(cleanOriginalTitle)
     .filter((value) => value && !titleLooksLikeGeneratedTemplate(value))

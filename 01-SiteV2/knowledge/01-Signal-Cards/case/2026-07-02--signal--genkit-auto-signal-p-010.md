@@ -1,5 +1,5 @@
 ---
-id: SIG-20260702-A07
+id: SIG-20260702-A05
 type: signal_card
 signal_type: case
 title: "用 Genkit 构建智能体全栈应用"
@@ -9,8 +9,8 @@ source_title: "用 Genkit 构建智能体全栈应用"
 asset_level: frontstage
 evidence_gate: core_evidence_passed
 fact_draft_gate: passed
-created_at: 2026-07-02T02:46:17.419Z
-updated_at: 2026-07-02T02:46:17.419Z
+created_at: 2026-07-02T05:53:33.280Z
+updated_at: 2026-07-02T05:53:33.280Z
 
 raw_refs: ["R-010"]
 pool_refs: ["P-010"]
@@ -37,7 +37,7 @@ formal_tags:
   evidence: ["evidence-partnership-integration", "evidence-customer-adoption"]
   stage: []
   region: []
-  source: ["source-first-party"]
+  source: []
 
 opportunity_signals:
   schema_version: "opportunity-signals-v1"

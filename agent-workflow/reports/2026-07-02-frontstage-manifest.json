@@ -1,41 +1,41 @@
 {
   "date": "2026-07-02",
-  "generated_at": "2026-07-02T02:46:18.238Z",
+  "generated_at": "2026-07-02T05:53:33.711Z",
   "signal_card_assets": [
     {
       "id": "SIG-20260702-A01",
+      "pool_ref": "P-002",
+      "title": "Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元",
+      "type": "funding",
+      "company": "Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元"
+    },
+    {
+      "id": "SIG-20260702-A02",
+      "pool_ref": "P-035",
+      "title": "Seltz 获得 $12.5M 融资",
+      "type": "funding",
+      "company": "Seltz"
+    },
+    {
+      "id": "SIG-20260702-A03",
+      "pool_ref": "P-048",
+      "title": "Together 获得 $800M C 轮 融资",
+      "type": "funding",
+      "company": "Together"
+    },
+    {
+      "id": "SIG-20260702-A04",
       "pool_ref": "P-040",
       "title": "Cloudflare 推出全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面",
       "type": "case",
       "company": "Cloudflare"
     },
     {
-      "id": "SIG-20260702-A02",
-      "pool_ref": "P-003",
-      "title": "Google 2026年6月AI更新汇总",
-      "type": "case",
-      "company": "Google 2026年6月AI更新汇总"
-    },
-    {
-      "id": "SIG-20260702-A03",
-      "pool_ref": "P-007",
-      "title": "我们为何构建ADK 2.0",
-      "type": "case",
-      "company": "我们为何构建ADK 2.0"
-    },
-    {
-      "id": "SIG-20260702-A04",
-      "pool_ref": "P-041",
-      "title": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
-      "type": "product_service",
-      "company": "Cloudflare"
-    },
-    {
       "id": "SIG-20260702-A05",
-      "pool_ref": "P-001",
-      "title": "Ashton Kutcher离开Sound Ventures，与Morgan Beller共同创办新VC基金",
-      "type": "product_service",
-      "company": "Techcrunch"
+      "pool_ref": "P-010",
+      "title": "用 Genkit 构建智能体全栈应用",
+      "type": "case",
+      "company": "用 Genkit 构建智能体全栈应用"
     },
     {
       "id": "SIG-20260702-A06",
@@ -46,28 +46,32 @@
     },
     {
       "id": "SIG-20260702-A07",
-      "pool_ref": "P-010",
-      "title": "用 Genkit 构建智能体全栈应用",
-      "type": "case",
-      "company": "用 Genkit 构建智能体全栈应用"
-    },
-    {
-      "id": "SIG-20260702-A08",
-      "pool_ref": "P-061",
-      "title": "瑞银：约六成企业收紧 AI 开支，DeepSeek 等开源大模型有望受益",
-      "type": "product_service",
-      "company": "Ithome"
+      "pool_ref": "P-037",
+      "title": "Engram 携 9800 万美元启动，打造真正了解组织的 AI",
+      "type": "funding",
+      "company": "Engram"
     }
   ],
   "core_pool_not_promoted": [
     {
-      "pool_ref": "P-002",
-      "title": "Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元",
-      "source_url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off",
+      "pool_ref": "P-001",
+      "title": "Ashton Kutcher离开Sound Ventures，与Morgan Beller共同创办新VC基金",
+      "source_url": "https://techcrunch.com/2026/07/01/ashton-kutcher-leaving-sound-ventures-to-launch-new-vc-firm-with-morgan-beller",
       "issues": [
-        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
       ],
-      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-003",
+      "title": "Google 2026年6月AI更新汇总",
+      "source_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
       "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
       "promote_priority": "review"
     },
@@ -76,22 +80,34 @@
       "title": "Claude Code v2.1.198 发布",
       "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
       "issues": [
-        "source_auditability:source_title_translation_missing_or_contaminated"
+        "auto_signal_spec_null"
       ],
-      "not_promoted_reason": "source_auditability:source_title_translation_missing_or_contaminated",
-      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
-      "promote_priority": "medium"
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
     },
     {
       "pool_ref": "P-006",
       "title": "美国解除对Anthropic Claude Fable 5和Mythos 5的出口限制",
       "source_url": "https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release",
       "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
         "fact_type_constraints:non_commercial_policy_or_ethics_signal"
       ],
-      "not_promoted_reason": "fact_type_constraints:non_commercial_policy_or_ethics_signal",
-      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
       "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-007",
+      "title": "我们为何构建ADK 2.0",
+      "source_url": "https://developers.googleblog.com/why-we-built-adk-20",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
     },
     {
       "pool_ref": "P-012",
@@ -133,12 +149,11 @@
       "title": "Enterprise AI transformation: how leading organizations are ...",
       "source_url": "https://www.dataiku.com/blog/enterprise-ai-transformation",
       "issues": [
-        "business_signal_scope:missing_concrete_funding_product_or_case_event",
-        "source_auditability:source_title_translation_missing_or_contaminated"
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
-      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
-      "promote_priority": "medium"
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
     },
     {
       "pool_ref": "P-027",
@@ -148,10 +163,10 @@
         "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
         "fact_type_constraints:social_or_community_source_not_verified_fact",
         "fact_type_constraints:workforce_retraining_program_not_formal_signal_card",
-        "source_auditability:source_title_translation_missing_or_contaminated"
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
       ],
-      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact, fact_type_constraints:workforce_retraining_program_not_formal_signal_card, source_auditability:source_title_translation_missing_or_contaminated",
-      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact, fact_type_constraints:workforce_retraining_program_not_formal_signal_card, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.",
       "promote_priority": "low"
     },
     {
@@ -159,32 +174,20 @@
       "title": "OpenAI limits GPT-5.6 rollout after government request, says ...",
       "source_url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
       "issues": [
-        "source_auditability:source_title_translation_missing_or_contaminated",
         "fact_type_constraints:non_commercial_policy_or_ethics_signal"
       ],
-      "not_promoted_reason": "source_auditability:source_title_translation_missing_or_contaminated, fact_type_constraints:non_commercial_policy_or_ethics_signal",
-      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "not_promoted_reason": "fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
       "promote_priority": "low"
     },
     {
-      "pool_ref": "P-035",
-      "title": "Agentic infrastructure startup Seltz raises $12.5M to help AI agents search the web for answers - SiliconANGLE",
-      "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
+      "pool_ref": "P-041",
+      "title": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
+      "source_url": "https://blog.cloudflare.com/making-ai-search-smarter",
       "issues": [
-        "source_auditability:source_title_translation_missing_or_contaminated"
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
       ],
-      "not_promoted_reason": "source_auditability:source_title_translation_missing_or_contaminated",
-      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
-      "promote_priority": "medium"
-    },
-    {
-      "pool_ref": "P-037",
-      "title": "Engram Launches with $98M to Build AI That Actually Knows Your Organization",
-      "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
-      "issues": [
-        "business_signal_scope:missing_concrete_funding_product_or_case_event"
-      ],
-      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
       "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
       "promote_priority": "review"
     },
@@ -206,23 +209,11 @@
       "source_url": "https://blog.cloudflare.com/monetization-gateway",
       "issues": [
         "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
-        "fact_type_constraints:social_or_community_source_not_verified_fact"
+        "fact_type_constraints:social_or_community_source_not_verified_fact",
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
       ],
-      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact",
+      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact, business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
       "repair_suggestion": "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.",
-      "promote_priority": "low"
-    },
-    {
-      "pool_ref": "P-048",
-      "title": "Announcing our $800M Series C to accelerate the shift to open-source AI",
-      "source_url": "https://www.together.ai/blog/announcing-our-series-c",
-      "issues": [
-        "business_signal_scope:missing_concrete_funding_product_or_case_event",
-        "fact_type_constraints:funding_not_single_company_round",
-        "source_auditability:source_title_translation_missing_or_contaminated"
-      ],
-      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:funding_not_single_company_round, source_auditability:source_title_translation_missing_or_contaminated",
-      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
       "promote_priority": "low"
     },
     {
@@ -230,11 +221,11 @@
       "title": "Startuply.vc: Metorial",
       "source_url": "https://startuply.vc/startup/metorial-fo7n06",
       "issues": [
-        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+        "valid_page_type:generic_report_or_list_not_fact_signal"
       ],
-      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
-      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
-      "promote_priority": "review"
+      "not_promoted_reason": "valid_page_type:generic_report_or_list_not_fact_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
     },
     {
       "pool_ref": "P-058",
@@ -250,16 +241,26 @@
       "promote_priority": "low"
     },
     {
+      "pool_ref": "P-061",
+      "title": "瑞银：约六成企业收紧 AI 开支，DeepSeek 等开源大模型有望受益",
+      "source_url": "https://www.ithome.com/0/971/289.htm",
+      "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
       "pool_ref": "P-065",
       "title": "Podcasting platform Riverside enters the newsletter publishing game",
       "source_url": "https://techcrunch.com/2026/06/30/podcasting-platform-riverside-enters-the-newsletter-publishing-game/",
       "issues": [
         "fact_type_constraints:builder_or_opinion_source_not_business_fact",
         "valid_page_type:newsletter_roundup_requires_original_event_source",
-        "business_signal_scope:missing_concrete_funding_product_or_case_event",
-        "source_auditability:source_title_translation_missing_or_contaminated"
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event",
       "repair_suggestion": "Use the newsletter only as discovery context; recapture the original dated event source before promoting.",
       "promote_priority": "low"
     },
@@ -268,22 +269,22 @@
       "title": "Comment “Arc” to get the full list of YC P26 startups ... - Instagram",
       "source_url": "https://www.instagram.com/p/DZtIdYbEW11/",
       "issues": [
-        "business_signal_scope:missing_concrete_funding_product_or_case_event",
-        "source_auditability:source_title_translation_missing_or_contaminated"
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
-      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
-      "promote_priority": "medium"
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
     },
     {
       "pool_ref": "P-069",
       "title": "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA",
       "source_url": "https://www.ithome.com/0/971/439.htm",
       "issues": [
+        "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal",
         "valid_page_type:text_indicates_index_only",
         "fact_type_constraints:non_commercial_policy_or_ethics_signal"
       ],
-      "not_promoted_reason": "valid_page_type:text_indicates_index_only, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "not_promoted_reason": "business_signal_scope:low_value_consumer_or_platform_policy_not_business_signal, valid_page_type:text_indicates_index_only, fact_type_constraints:non_commercial_policy_or_ethics_signal",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     },
@@ -337,12 +338,11 @@
       "title": "Applied AI Architect - Braze | Built In",
       "source_url": "https://builtin.com/job/applied-ai-architect/10016409",
       "issues": [
-        "business_signal_scope:missing_concrete_funding_product_or_case_event",
-        "source_auditability:source_title_translation_missing_or_contaminated"
+        "auto_signal_spec_null"
       ],
-      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
-      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
-      "promote_priority": "medium"
+      "not_promoted_reason": "auto_signal_spec_null",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "review"
     },
     {
       "pool_ref": "P-078",
@@ -350,10 +350,9 @@
       "source_url": "https://partners.wsj.com/ntt-data/ai-to-impact/building-the-ai-native-enterprise/",
       "issues": [
         "valid_page_type:technical_article_without_business_event",
-        "business_signal_scope:missing_concrete_funding_product_or_case_event",
-        "source_auditability:source_title_translation_missing_or_contaminated"
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
       ],
-      "not_promoted_reason": "valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
+      "not_promoted_reason": "valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event",
       "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
       "promote_priority": "low"
     }

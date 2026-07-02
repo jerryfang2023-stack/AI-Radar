@@ -8,6 +8,7 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 
 1. `raw_pool_counts`
    - Pass when the active date has at least 150 active Raw candidates, at least 75 Pool items, at least 60 routed Pool items, and at least 30 usable `core_pool` items unless the run is explicitly marked blocked.
+   - Pass only when Pool generation preserves all non-discard screened Raw evidence instead of truncating to a fixed top-N / buffer cap.
 
 2. `frontstage_unified_cards`
    - Pass when the Business Signals default presentation publishes active-date public Cards from qualified Core Pool business signals.
@@ -28,6 +29,11 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 
 7. `formal_card_event_boundary`
    - Pass when formal Signal Cards come only from concrete funding, product/service, customer deployment, procurement, partnership, vertical rollout, or production implementation events.
+   - Pass when high-value AI commercial market-structure events, including acquisitions / mergers, material partnerships, procurement / contracts, pricing or billing changes, regulatory approvals / antitrust actions, and material lawsuits / settlements, can enter Core/Card through the existing `case` or `product_service` Card types without adding a fourth public type.
+   - Pass when funding recognition accepts confirmed English and Chinese single-company financing announcements, including `announcing our <amount> <round>`, `launches with <amount>`, `emerged from stealth with <amount>`, and `完成/获得/宣布 <amount> <round> 融资`, while rejecting rumors, future-tense funding claims, funding trackers, broad lists, and generic funding commentary.
+   - Pass when a funding Card without a registered source-title translation may use a factual company + amount / round title only if the original source title itself confirms the financing event; fail if the same fallback is used for rumors, broad lists, trackers, or commentary.
+   - Pass when funding Card facts preserve source-backed investor, use-of-proceeds, product direction, or deployment context when available; fail if a rich source is reduced to a bare "X raised Y" sentence.
+   - Pass when generic startup / funding list blockers inspect source identity fields only and do not reject a real single-company financing item because a source excerpt or captured query tail contains phrases such as `startup funding`.
    - Pass when `important_technical_trend`, builder/opinion posts, newsletters, workforce retraining / public-funding programs, technical guides, architecture articles, docs pages, generic lists, and items marked with missing concrete customer/event evidence stay out of formal Signal Cards unless the same original source proves a dated formal event.
    - Pass when consumer entertainment, mobile games, creator/influencer protection features, platform enforcement notices, minor policy/compliance updates, monthly update roundups, explainer/why-we-built technical articles, analyst commentary, and unclosed VC-fund formation items stay out of public Cards unless the same source proves enterprise deployment, procurement, paid product adoption, financing, acquisition, or a material market-structure change.
    - Fail when a context-only technical trend or article is promoted to `core_pool` or Card quantity just to inflate the public Card count.

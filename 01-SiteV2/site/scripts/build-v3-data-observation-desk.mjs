@@ -607,7 +607,6 @@ function isGenericFundingOrListSource(card = {}) {
     card.sourceTitle,
     card.originalTitle,
     card.sourceUrl,
-    card.translatedFact,
   ].filter(Boolean).join(" ");
   return /angelinvestorsnetwork\.com\/venture-capital\/series-b-enterprise-ai-agents|top ai agent startups|ai agent startups|funding map|ranked by funding|pre-seed investors|57 early stage ai startups|startup funding|venture capital observatory|funding tracker/iu.test(text);
 }
@@ -1165,7 +1164,7 @@ function publicDisplayTitleIsReady(title = "") {
 
 function publicSignalCardIsDisplayReady(card = {}) {
   if (!card.title || !card.displayTitle) return false;
-  const expectedTitle = publicTitleCandidate(sourceFrontstageTitle(card), card.sourceUrl);
+  const expectedTitle = publicTitleCandidateForCard(card);
   if (expectedTitle) {
     if (card.title !== expectedTitle || card.displayTitle !== expectedTitle) return false;
   } else {
@@ -1180,8 +1179,9 @@ function publicSignalCardIsDisplayReady(card = {}) {
 function publicCardFillIsDisplayReady(card = {}) {
   const title = String(card.title || card.displayTitle || "").trim();
   const fact = String(card.translatedFact || card.visibleFragment || "").trim();
-  if (!publicDisplayTitleIsReady(title)) return false;
-  if (card.displayTitle && !publicDisplayTitleIsReady(card.displayTitle)) return false;
+  const fallbackTitleReady = publicFundingFallbackTitleIsReady(card, title);
+  if (!fallbackTitleReady && !publicDisplayTitleIsReady(title)) return false;
+  if (card.displayTitle && !fallbackTitleReady && !publicDisplayTitleIsReady(card.displayTitle)) return false;
   if (!card.sourceUrl) return false;
   if (!fact || publicTextLooksGarbled(fact) || publicContentNeedsTranslation(fact)) return false;
   return true;
@@ -1344,6 +1344,49 @@ function publicTitleCandidate(title = "", _sourceUrl = "") {
   return sourceTitleDisplayFromOriginal(title);
 }
 
+function confirmedFundingSourceTitle(title = "") {
+  const text = String(title || "").trim();
+  if (!text) return false;
+  if (/(?:rumou?red|reportedly|in talks to|plans to|may raise|could raise|is seeking|will complete|消息称|据悉|拟|将完成|有望完成|寻求融资|计划融资)/iu.test(text)) return false;
+  if (/(?:top .*investors|ranked by funding|funding tracker|funding roundup|weekly funding|list of|融资汇总|融资清单|投资人榜单|融资榜单)/iu.test(text)) return false;
+  const amount = /(?:[$€£]\s?\d+(?:\.\d+)?\s?(?:M|B|K|m|b|k|million|billion)?|\d+(?:\.\d+)?\s?(?:million|billion|万美元|亿美元|万人民币|亿人民币|万元|亿元))/iu.test(text);
+  const fundingTerm = /\b(?:funding|financing|round|seed|series|valuation|investment|launches with|emerged from stealth with)\b|融资|估值|轮|投资/iu.test(text);
+  const fundingAction = /\b(?:raises?|raised|lands|secures|closes?|closed|announces?|announcing|launched with|launches with|emerged from stealth with)\b|完成|获得|宣布|融资/iu.test(text);
+  const directRaiseOrLaunch = /\b(?:raises?|raised|lands|secures|launches with|emerged from stealth with)\b|融资/iu.test(text);
+  return amount && ((fundingTerm && fundingAction) || directRaiseOrLaunch);
+}
+
+function publicFundingFallbackTitle(title = "", sourceTitle = "", category = "") {
+  const cleanTitle = String(title || "").replace(/\s+/gu, " ").trim();
+  if (!cleanTitle || category !== "funding") return "";
+  if (publicTextLooksGarbled(cleanTitle) || isBadPublicDisplayTitle(cleanTitle) || titleLooksLikeGeneratedTemplate(cleanTitle)) return "";
+  if (/来源标题|原始来源|公开材料显示|商业信号/iu.test(cleanTitle)) return "";
+  if (/押注|资金流向|业务信号|基础设施能力|可用于观察|值得关注/u.test(cleanTitle)) return "";
+  if (!/(?:获得|完成|宣布|融资|携|启动)|\b(?:launches with|launched with|raises?|raised|lands|secures|closes?)\b/iu.test(cleanTitle)) return "";
+  if (!/(?:[$€£]\s?\d+(?:\.\d+)?|\d+(?:\.\d+)?\s?(?:M|B|K|m|b|k|million|billion|万美元|亿美元|万元|亿元))/iu.test(cleanTitle)) return "";
+  if (!confirmedFundingSourceTitle(sourceTitle)) return "";
+  return cleanTitle;
+}
+
+function publicFundingFallbackTitleIsReady(card = {}, title = "") {
+  const sourceTitle = sourceFrontstageTitle(card)
+    || card.sourceTitle
+    || card.originalTitle
+    || card.rawTitle
+    || "";
+  return Boolean(publicFundingFallbackTitle(title, sourceTitle, card.category));
+}
+
+function publicTitleCandidateForCard(card = {}) {
+  const sourceCandidate = publicTitleCandidate(sourceFrontstageTitle(card), card.sourceUrl);
+  if (sourceCandidate) return sourceCandidate;
+  return publicFundingFallbackTitle(
+    card.title || card.displayTitle || card.generatedTitle,
+    card.sourceTitle || card.originalTitle || card.rawTitle,
+    card.category
+  );
+}
+
 function publicDisplayTitle(sourceTitle = "", generatedTitle = "", sourceUrl = "", options = {}) {
   const sourceCandidate = publicTitleCandidate(sourceTitle, sourceUrl);
   if (sourceCandidate) return sourceCandidate;
@@ -1391,8 +1434,9 @@ function normalizeFrontstageDisplay(card = {}, options = {}) {
       && !publicFactLooksLikeTemplateFallback(value)
   )) || "";
   const cleanedTranslatedFact = cleanPublicSourceFact(translatedFact);
-  const preferredDisplayTitle = publicDisplayTitle(sourceTitle, "", card.sourceUrl, { allowGeneratedFallback: false });
-  const displayTitle = publicDisplayTitleIsReady(preferredDisplayTitle)
+  const fallbackTitle = publicFundingFallbackTitle(card.title || card.displayTitle || "", sourceTitle || originalTitle, card.category);
+  const preferredDisplayTitle = publicDisplayTitle(sourceTitle, "", card.sourceUrl, { allowGeneratedFallback: false }) || fallbackTitle;
+  const displayTitle = publicDisplayTitleIsReady(preferredDisplayTitle) || publicFundingFallbackTitleIsReady({ ...card, sourceTitle, originalTitle, title: preferredDisplayTitle }, preferredDisplayTitle)
     ? preferredDisplayTitle
     : "";
   return {
@@ -2964,7 +3008,9 @@ function cardFromFile(file, category) {
   const explicitSourceTitle = scalar(fm, "source_title");
   const sourceTitleForPublic = explicitSourceTitle || rawTitle || rawTitleFromArchive || "";
   const rawDisplayTitle = sourceTitleForPublic;
-  const title = publicTitleCandidate(sourceTitleForPublic, sourceUrl);
+  const sourceTitleCandidate = publicTitleCandidate(sourceTitleForPublic, sourceUrl);
+  const generatedTitle = scalar(fm, "title") || nestedScalar(fm, "frontend", "displayTitle") || "";
+  const title = sourceTitleCandidate || publicFundingFallbackTitle(generatedTitle, sourceTitleForPublic, category);
   if (!title) return null;
   const titleFact = sourceTitleDerivedFact(sourceTitleForPublic, sourceUrl);
   let originalHighlights = buildOriginalHighlights(raw, rawDisplayTitle, sourceUrl, [titleFact]);

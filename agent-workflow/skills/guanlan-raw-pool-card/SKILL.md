@@ -62,6 +62,7 @@ For self-improvement and regression prevention, read these only when relevant:
    - `core_pool`;
    - non-large-company `core_pool`;
    - large-company `core_pool`.
+   Pool must not be capped to a fixed top-N after Raw collection; all non-discard screened evidence should remain in the Pool file for audit and downstream repair.
 4. Generate Signal Cards with the existing script. Use manual override only when the user explicitly releases a blocked run:
 
 ```powershell
@@ -95,6 +96,14 @@ node agent-workflow/tools/frontstage-regression-gate.mjs
 ## Card Boundary
 
 Formal Signal Cards are persistent knowledge assets. They must be source-backed and pass semantic gates. A Core Pool item that cannot pass Card display requirements may stay in backend Pool evidence, but it must not appear as a separate public candidate-pool item.
+
+Besides product launches, funding rounds, and customer deployments, concrete AI commercial market-structure events can become Cards when source-backed: acquisitions / mergers, material partnerships, procurement / contracts, pricing or billing changes, regulatory approvals / antitrust actions, and material lawsuits / settlements. They must be normalized into the existing `case` or `product_service` Card types, not a fourth public type.
+
+Funding recognition must cover English and Chinese financing expressions, including `raises`, `closes`, `announcing our <amount> <round>`, `launches with <amount>`, `emerged from stealth with <amount>`, and `完成/获得/宣布 <amount> <round> 融资`. Rumors, future-tense items such as `将完成`, funding trackers, broad lists, and generic funding commentary stay backend-only.
+
+Public titles should come from source-title translations by default. A funding Card may use a generated factual title only when the original source title itself confirms a single-company financing event with amount / round wording such as `raises <amount>`, `announcing our <amount> <round>`, `launches with <amount>`, or `emerged from stealth with <amount>`. Do not use this exception for rumors, future-tense financing claims, funding trackers, broad lists, or commentary.
+
+Funding Card facts should preserve amount / round plus investor, use of proceeds, product direction, or deployment context when present in the original source. Generic funding/list blockers should inspect source identity fields, not source-backed fact text or captured query tails.
 
 Do not lower Card quality to satisfy a count. If many `core_pool` candidates fail the formal Card gate, repair Pool routing or collect better Raw evidence.
 

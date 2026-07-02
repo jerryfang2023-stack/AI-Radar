@@ -94,6 +94,7 @@ Pool does not write frontstage copy and does not replace source text with genera
 Pool quantity and balance:
 
 - automation gate: keep at least 75 Pool items, with at least 60 routed Pool items and at least 30 usable `core_pool` items;
+- Pool selection must not use a fixed top-N / buffer cap after Raw has been collected. The Pool file should preserve all non-discard screened evidence, including backend `index_only` diagnostics, so high-value repairable items are not hidden by a selection ceiling.
 - required business-signal lanes must cover funding, product/service, customer/case, and vertical deployment; technical trend remains Pool / trend-candidate context and must not fill formal Signal Card quantity;
 - each required importance lane should keep at least 5 Pool candidates before downstream release;
 - large-company items may enter Pool as evidence, but `core_pool` must not be dominated by large-company news;
@@ -117,6 +118,8 @@ Current V3 business-signal `signal_card` types are only:
 - `funding`;
 - `case`.
 
+High-value market-structure events are valid Business Signals when they are concrete, dated, source-backed commercial events involving AI markets, vendors, enterprise customers, platforms, or infrastructure. They include acquisitions / mergers, material partnerships, procurement / tenders / contracts, pricing or billing changes, regulatory approvals / antitrust actions, and material lawsuits / settlements. They are backend importance evidence, not a fourth public Card type: normalize them into `case` or `product_service` Cards according to the event.
+
 Enterprise AI transformation / 企业AI化 is a monitoring and frontstage interpretation lens, not a fourth `signal_card` type. It can help identify consulting-relevant evidence about FDE-style implementation, workflow change, governance, procurement, pilots, production rollout, and customer engineering capacity.
 
 FDE / Applied AI / Technical Deployment role pages are organization-capability signals only. They must stay in Raw / Pool diagnostics or supporting context unless a separate original source proves a product / service action, financing event, customer deployment, procurement event, or production rollout that passes the six Signal Card gates below.
@@ -136,6 +139,7 @@ Signal Card entry gate is expressed as six required gates. Do not re-expand thes
 
 3. `business_signal_scope`
    - Must map to a current business-signal path that can become `product_service`, `funding`, or `case`.
+   - Besides product launches, funding rounds, and customer deployments, this includes concrete market-structure events that can be normalized into the existing three Card types: acquisition / merger, partnership, procurement / contract, pricing / billing, regulatory approval / antitrust, or material lawsuit / settlement.
    - Cannot be deleted because V3 Business Signals no longer publishes generic opinion, policy, ethics, article-summary, or retired content outputs as formal Cards.
 
 4. `valid_page_type`
@@ -148,7 +152,8 @@ Signal Card entry gate is expressed as six required gates. Do not re-expand thes
    - Cannot be deleted because Pool can keep context, but Signal Cards should preserve scarce frontstage attention for commercially meaningful evidence.
 
 6. `fact_type_constraints`
-   - Funding must be a single-company financing round or equivalent clearly dated financing event; community feedback, comments, pure viewpoints, non-commercial policy/ethics material, and user feedback cannot be direct Card evidence unless separately recaptured through Raw / Pool from a source-backed business event.
+   - Funding must be a single-company financing round or equivalent clearly dated financing event. The recognizer must cover English and Chinese funding expressions, including `raises`, `closes`, `announcing our <amount> <round>`, `launches with <amount>`, `emerged from stealth with <amount>`, `完成/获得/宣布 <amount> <round> 融资`, valuation-backed funding announcements, and investor-led round wording. Rumors, future-tense items such as `将完成`, generic funding lists, funding trackers, and market commentary remain backend-only.
+   - Community feedback, comments, pure viewpoints, non-commercial policy/ethics material, and user feedback cannot be direct Card evidence unless separately recaptured through Raw / Pool from a source-backed business event.
    - LinkedIn, X / Twitter, Reddit, Hacker News, and other social/community posts are discovery or feedback evidence by default. They cannot be direct Business Signal Card evidence even when they mention an amount, launch, repo, or customer.
    - Cannot be deleted because these are the boundaries that prevent duplicated posts, opinion material, and broad commentary from becoming business-signal facts.
 
@@ -167,17 +172,19 @@ Card title rules:
 
 - keep the event nature of the original title;
 - prefer original title or direct event title;
-- public `title`, `displayTitle`, and compatibility `generatedTitle` must be source-title translations only. If a source-title translation cannot be produced, the item is not ready for active-date frontstage display.
+- public `title`, `displayTitle`, and compatibility `generatedTitle` should come from source-title translations by default.
+- Narrow exception: a funding Card may use a generated factual funding title only when the original source title itself confirms a single-company financing event with amount / round wording such as `raises <amount>`, `announcing our <amount> <round>`, `launches with <amount>`, or `emerged from stealth with <amount>`. The fallback title must stay factual and name the company plus amount / round; rumors, future-tense financing claims, lists, trackers, and commentary cannot use this exception.
 - do not mechanically rewrite into abstract judgment;
 - do not use phrases like "materials show", "worth watching", "points to", or internal production wording.
 - do not use placeholder phrases such as "original AI event", "use case seen in original", "purpose see original", or source-domain subjects such as "linkedin financing" / "github original title";
-- do not fall back from source-title translation to model-generated title, old card title, source-domain subject, or fact-derived headline;
+- do not fall back from source-title translation to model-generated title, old card title, source-domain subject, or fact-derived headline, except for the confirmed funding-title exception above;
 - active-date public payloads must not expose `modelGeneratedTitle`;
 - if the title cannot name the actual company, product, funding round, customer, or release, the item is not ready for public Card display.
 
 Card detail rules:
 
 - `news fact`: what happened, with subject, action, amount/product/customer/workflow when available;
+- funding facts should preserve the confirmed amount / round plus investor, use of proceeds, product direction, or deployment context when present in the original source; do not reduce a rich funding source to a bare "X raised Y" sentence if the source contains more source-backed business substance.
 - `original points`: source-derived facts from full text, key excerpts, or evidence seed;
 - `brief value`: short commercial relevance derived from source facts;
 - `visible source excerpt`: one traceable source fragment.
@@ -195,6 +202,7 @@ Backend Pool-only rules:
 - Core Pool entries that fail the formal Card gate must remain backend evidence and must not appear in the public Card set.
 - Public Cards must be event-deduped, not only URL-deduped; multiple pages about the same event should keep the highest-quality source-backed item and treat the rest as supporting evidence.
 - Social/community, repo/catalog, generic list, consumer entertainment, and minor platform-policy sources may remain in backend Pool evidence when useful, but must not fill public Cards as repeated or low-value AI-adjacent items.
+- Generic startup / funding list blockers should inspect source identity fields such as source title, URL, and source name. They must not scan source-backed fact text or captured search-query tails, because phrases such as `startup funding` can appear in a real single-company financing excerpt and cause false rejection.
 
 ## 5. Knowledge Base Rules
 
