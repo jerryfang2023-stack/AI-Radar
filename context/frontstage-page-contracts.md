@@ -32,7 +32,7 @@ Business Signals must present one unified Card view for the active date. Every q
 | Scope | Version | Meaning |
 |---|---|---|
 | Main website | `SITE-V3.4.3` | Current release baseline; keeps Reports Center / Opportunity System, unified Business Signal Cards, and the upgraded Enterprise AI / FDE ingestion boundary. |
-| Business Signals column | `BSIG-V1.2.1-quality-boundary` | Presents all qualified Raw / Pool business signals that pass raw-to-card cardability as Cards in one importance-sorted view, keeps the 企业AI化 secondary lens, and treats Raw-channel/provider diagnostics as non-blocking when Pool/Card supply is sufficient. |
+| Business Signals column | `BSIG-V2` | Presents all qualified Raw / Pool business signals that pass raw-to-card cardability as Cards in one importance-sorted view, keeps the 企业AI化 secondary lens, and treats Raw-channel/provider diagnostics as non-blocking when Pool/Card supply is sufficient. |
 | First-Line Viewpoints column | `FLV-V1.0.2-supervision-idempotency` | Keeps morning RSS page-data production and afternoon follow-builders skill publication independent, with Obsidian person/date timeline sync idempotency and publication closure checks. |
 | Community Intelligence column | `CINT-V1.0.2-publication-waiting-gate` | Keeps local logged-in collection separate from GitHub publication and treats open PR / queued workflow states after healthy same-date data as Waiting, not Problems. |
 | Enterprise AI / FDE lens | `EAI-V1.2.0-raw-card-ingestion-boundary` | Boss-facing implementation lens backed by the independent FDE Lens Pool; title translation and fact extraction belong to Raw/Card/FDE asset generation, not generic frontstage blocking; not a fourth Card type. |

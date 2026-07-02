@@ -45,7 +45,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current stage: SITE-V3.4.3.
 - Current frontstage: `01-SiteV2/site/v3-data-observation.html`, `01-SiteV2/site/intelligence-map.html`, `01-SiteV2/site/weekly-ai-business-change-radar.html`, `01-SiteV2/site/follow-builders.html`, and `01-SiteV2/site/community-intelligence.html`.
 - Current dashboard: `01-SiteV2/site/operations-console.html`.
-- Current Business Signals column version: BSIG-V1.2.1-quality-boundary.
+- Current Business Signals column version: BSIG-V2.
 - Current First-Line Viewpoints column version: FLV-V1.0.2-supervision-idempotency.
 - Current Community Intelligence column version: CINT-V1.0.2-publication-waiting-gate.
 - Current Enterprise AI / FDE lens version: EAI-V1.2.0-raw-card-ingestion-boundary.
