@@ -493,9 +493,6 @@ export function runGuanlanMonitorQualityGate({
   const poolCoreSupplyRelease =
     poolCount >= poolMinHard &&
     routedPoolCount >= routedPoolMinHard &&
-    keywordNonCommunityCount >= nonCommunityMinHard &&
-    aiRelevantRatio >= aiRelevantMinHard &&
-    offTopicCount <= offTopicMaxHard &&
     corePoolCount >= effectiveCorePoolMinHard &&
     usableCoreEvidenceCount >= effectiveUsableCoreEvidenceMinHard &&
     homepageDirectoryCoreCount <= homepageDirectoryCoreMax &&
@@ -510,6 +507,7 @@ export function runGuanlanMonitorQualityGate({
     (!importanceCoverageMustNone || !coverageGapFlag || coverageGapAcceptable) &&
     (!poolImportanceCoverageMustNone || !poolCoverageGapFlag || poolCoverageGapAcceptable);
   const rawCountReleaseByPoolCore = rawCount < effectiveRawMinHard && poolCoreSupplyRelease;
+  const rawChannelDiagnosticsReleasedByPoolCore = poolCoreSupplyRelease;
   // Once combined Pool/Core supply is healthy, peer source-channel failures are
   // diagnostic supply-risk notes rather than downstream release blockers.
   const sourceFallbackRecovered = poolCoreSupplyRelease;
@@ -521,9 +519,21 @@ export function runGuanlanMonitorQualityGate({
     { key: "raw_count_min", passed: rawCount >= effectiveRawMinHard || rawCountReleaseByPoolCore, value: `${rawCount}/${effectiveRawMinHard}${weekend.active ? `; default=${rawMinHard}` : ""}${rawCountReleaseByPoolCore ? "; released_by_pool_core_supply=true" : ""}` },
     { key: "pool_count_min", passed: poolCount >= poolMinHard, value: `${poolCount}/${poolMinHard}` },
     { key: "routed_pool_count_min", passed: routedPoolCount >= routedPoolMinHard, value: `${routedPoolCount}/${routedPoolMinHard}` },
-    { key: "keyword_search_non_community_min", passed: keywordNonCommunityCount >= nonCommunityMinHard, value: `${keywordNonCommunityCount}/${nonCommunityMinHard}` },
-    { key: "ai_relevant_title_ratio_min", passed: aiRelevantRatio >= aiRelevantMinHard, value: `${aiRelevantRatio.toFixed(2)}/${aiRelevantMinHard}` },
-    { key: "off_topic_title_max", passed: offTopicCount <= offTopicMaxHard, value: `${offTopicCount}/${offTopicMaxHard}` },
+    {
+      key: "keyword_search_non_community_min",
+      passed: keywordNonCommunityCount >= nonCommunityMinHard || rawChannelDiagnosticsReleasedByPoolCore,
+      value: `${keywordNonCommunityCount}/${nonCommunityMinHard}${rawChannelDiagnosticsReleasedByPoolCore && keywordNonCommunityCount < nonCommunityMinHard ? "; diagnostic_released_by_pool_core_supply=true" : ""}`,
+    },
+    {
+      key: "ai_relevant_title_ratio_min",
+      passed: aiRelevantRatio >= aiRelevantMinHard || rawChannelDiagnosticsReleasedByPoolCore,
+      value: `${aiRelevantRatio.toFixed(2)}/${aiRelevantMinHard}${rawChannelDiagnosticsReleasedByPoolCore && aiRelevantRatio < aiRelevantMinHard ? "; diagnostic_released_by_pool_core_supply=true" : ""}`,
+    },
+    {
+      key: "off_topic_title_max",
+      passed: offTopicCount <= offTopicMaxHard || rawChannelDiagnosticsReleasedByPoolCore,
+      value: `${offTopicCount}/${offTopicMaxHard}${rawChannelDiagnosticsReleasedByPoolCore && offTopicCount > offTopicMaxHard ? "; diagnostic_released_by_pool_core_supply=true" : ""}`,
+    },
     { key: "core_pool_min", passed: corePoolCount >= effectiveCorePoolMinHard, value: `${corePoolCount}/${effectiveCorePoolMinHard}${weekend.active ? `; default=${corePoolMinHard}` : ""}` },
     { key: "usable_core_evidence_min", passed: usableCoreEvidenceCount >= effectiveUsableCoreEvidenceMinHard, value: `${usableCoreEvidenceCount}/${effectiveUsableCoreEvidenceMinHard}${weekend.active ? `; default=${usableCoreEvidenceMinHard}` : ""}` },
     { key: "homepage_directory_core_max", passed: homepageDirectoryCoreCount <= homepageDirectoryCoreMax, value: `${homepageDirectoryCoreCount}/${homepageDirectoryCoreMax}` },

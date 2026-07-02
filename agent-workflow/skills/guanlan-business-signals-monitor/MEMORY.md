@@ -2,6 +2,12 @@
 
 Keep this file short. Add only durable lane-level lessons from repeated production failures.
 
+## 2026-07-02 Retired Gates And Raw Diagnostics
+
+- V1/V2 daily observation, business brief, publiccopy, cardcopy, writer-style, V2 typography, V2 raw-evidence, and V2 source gates are retired. Do not use them as Business Signals release blockers or recovery routes.
+- When Pool, routed Pool, Core Pool, non-large Core Pool, and Top10/Card supply are healthy, Raw-only diagnostics such as Anysearch quota exhaustion, source-channel failures, keyword-only floors, AI-title ratio, off-topic raw-title count, and Raw floor shortfall must stay in reports but must not trigger a full monitor rerun or block publication.
+- Business Signals recovery should repair the exact failed stage and publish after the smallest relevant validation passes. Re-running the whole monitor chain is allowed only after the pre-rerun checklist proves same-date artifacts are missing, stale, corrupt, or truly insufficient.
+
 ## 2026-06-29 Formal Card Boundary
 
 - Business Signals has four formal Card lanes: funding, product/service, case, and vertical solution. `important_technical_trend` remains useful context for source repair, graph analysis, and trend-candidate work, but it must not enter Core Pool / Signal Card quantity unless the same source also proves a dated formal business event.

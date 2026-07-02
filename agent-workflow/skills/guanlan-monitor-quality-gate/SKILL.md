@@ -218,7 +218,7 @@ Run:
 ```powershell
 node --check agent-workflow/tools/guanlan-monitor-quality-gate.mjs
 node --check agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs
-node agent-workflow/tools/run-quality-gates.mjs syntax
+node agent-workflow/tools/run-quality-gates.mjs automation
 ```
 
 Validate this skill after edits:

@@ -186,9 +186,9 @@ const downstreamGroups = {
     path.join(reportsDir, `${date}-no-trend-candidate-decision.md`),
   ].filter(exists),
   site_data: [
-    path.join(root, "01-SiteV2", "site", "data", "site-content.json"),
-    path.join(root, "01-SiteV2", "site", "data", "site-content.js"),
     path.join(root, "01-SiteV2", "site", "data", "v3-data-observation-desk.json"),
+    path.join(root, "01-SiteV2", "site", "data", "intelligence-graph-index.json"),
+    path.join(root, "01-SiteV2", "site", "data", "pipeline-dashboard.json"),
   ].filter(exists),
 };
 

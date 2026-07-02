@@ -67,6 +67,7 @@ Raw quantity is for evidence coverage, not frontstage balance:
 - automation target / gate: keep at least 150 active Raw candidates in the daily production chain;
 - if search-provider quota or temporary outage prevents the Raw floor from being filled, Raw shortfall is diagnostic rather than blocking once Pool, routed Pool, usable `core_pool`, non-large `core_pool`, and downstream Top 10 gates are sufficient;
 - source artifact Raw selection treats GDELT, keyword search, RSS, and AI HOT as peer discovery channels. There is no fixed priority order among them; any peer channel can satisfy Raw supply as long as it produces source-backed Raw artifacts and the downstream Pool / Core Pool / Top10 gates are healthy;
+- keyword-only floors, AI-relevant title ratio, off-topic raw-title count, failed source-channel count, and Anysearch / provider quota notes are Raw-channel diagnostics under the same Pool / Core Pool / Top10 release rule; they must stay visible in reports but must not force a full rerun or block publication by themselves;
 - Raw may contain large-company material, but monitor logs must expose over-concentration by vendor/theme;
 - Raw must not be padded with repeated large-company product announcements when funding, customer, vertical, regulation, pricing, procurement, or emerging-company evidence is available.
 

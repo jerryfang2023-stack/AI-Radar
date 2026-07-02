@@ -1,31 +1,35 @@
-# Quality Gates｜当前质量门
+# Current Quality Gates
 
-状态：current
-更新时间：2026-05-21
+Status: current
+Updated: 2026-07-02
 
-## 通用原则
+This governance note lists active SITE-V3.4.0 checks only. Retired V1/V2 daily observation, business brief, publiccopy, cardcopy, writer-style, V2 typography, V2 raw evidence, and V2 source gates are not active release gates.
 
-任何任务完成前必须说明：
+## General Completion Rule
 
-- 改了哪些文件；
-- 跑了哪些检查；
-- 哪些检查未运行及原因；
-- 是否影响自动化、内容、网站或发布；
-- 是否需要用户确认。
-- 如属于每日监测、Raw / Pool / Card 或页面 / 文案 / Typography，必须说明是否执行 `context/06-execution-harness.md`。
+Before closing a task, report:
 
-## 常用检查
+- changed files;
+- checks run;
+- checks not run and why;
+- whether the change affects automation, data, website, or publication;
+- remaining risk or required user confirmation.
+
+For daily monitor, Raw / Pool / Card, page, copy, or typography work, state whether `context/06-execution-harness.md` was relevant.
+
+## Current Common Checks
 
 ```powershell
 node agent-workflow/tools/run-quality-gates.mjs syntax
-node agent-workflow/tools/run-quality-gates.mjs v2content --date=YYYY-MM-DD
-node agent-workflow/tools/run-quality-gates.mjs cardcopy --date=YYYY-MM-DD --require-gates=true
-node --check 01-SiteV2/site/assets/app.js
+node agent-workflow/tools/run-quality-gates.mjs automation
+node agent-workflow/tools/run-quality-gates.mjs business --date=YYYY-MM-DD
+node agent-workflow/tools/run-quality-gates.mjs regression --date=YYYY-MM-DD
+node --check 01-SiteV2/site/assets/v3-data-observation-desk.js
 ```
 
-## 每日监测检查
+## Daily Monitor Checks
 
-每日监测属于高风险流程，先按 `context/06-execution-harness.md` 的每日监测 Harness 判断固定读取、产物和 Stop 条件，再运行检查。
+Daily monitoring is a high-risk production flow. Read `context/06-execution-harness.md` when changing the execution path, then validate the narrowest relevant stage.
 
 ```powershell
 node --check agent-workflow/tools/run-guanlan-daily-monitor.mjs
@@ -35,18 +39,12 @@ node --check agent-workflow/tools/assert-guanlan-automation-readiness.mjs
 node agent-workflow/tools/assert-guanlan-automation-readiness.mjs --command=assets --date=YYYY-MM-DD
 ```
 
-## 页面任务检查
+## Business Signals Release Rule
 
-页面 / 文案 / Typography 属于高风险流程，先按 `context/06-execution-harness.md` 输出 Typography 表和 Copy-first 表，再进入实现检查。
+Raw channel diagnostics must not block release when Pool, routed Pool, Core Pool, non-large Core Pool, and Top10/Card supply are healthy. GDELT, keyword search, RSS, AI HOT, and quota-backed provider notes are peer source diagnostics, not priority lanes.
 
-页面任务必须有：
+Do not rerun the full monitor chain to satisfy a Raw-only diagnostic. Repair the failing stage and publish after the smallest relevant validation passes.
 
-- Typography 页面位置表；
-- Copy-first 文案表；
-- 桌面端核心截图或浏览器检查；
-- 核心交互检查；
-- 未覆盖移动端时说明原因。
+## Publication Checks
 
-## 发布检查
-
-发布路径只保留 GitHub Pages。Netlify 已退役，不得作为网站部署、预览或 fallback 服务恢复。
+Publication path is automation branch -> PR -> `main` -> GitHub Pages. Netlify and retired V2 homepage routes are not current deployment or fallback services.

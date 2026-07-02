@@ -79,7 +79,6 @@ function main() {
     "- `01-SiteV2/site/data/v3-data-observation-desk.json`",
     "- `01-SiteV2/site/data/intelligence-graph-index.json`",
     "- `01-SiteV2/site/data/follow-builders-daily.json`",
-    "- `01-SiteV2/site/data/site-content.json`",
     "",
   );
 
@@ -92,7 +91,6 @@ function main() {
       "01-SiteV2/site/data/v3-data-observation-desk.json",
       "01-SiteV2/site/data/intelligence-graph-index.json",
       "01-SiteV2/site/data/follow-builders-daily.json",
-      "01-SiteV2/site/data/site-content.json",
     ],
   }, null, 2));
 }

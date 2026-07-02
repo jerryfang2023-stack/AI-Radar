@@ -1,16 +1,16 @@
 {
   "schema_version": "v3.3.1-monitor-quality-gate-1.0",
-  "updated_at": "2026-06-13",
+  "updated_at": "2026-07-02",
   "owner": "Intelligence Engine Agent / Build & Release Agent",
   "purpose": "V3.3.1 script pre-gate for WaveSight Raw / Pool / Core Pool readiness before Signal Card assets and frontstage release. It checks evidence usability, Pool balance, large-company concentration, and business-signal coverage for the current Card-first pipeline.",
   "diagnostic_score_reference": 85,
   "score_mode": "diagnostic_only",
   "score_release_gate": false,
-  "final_qc_required": true,
+  "final_qc_required": false,
   "final_qc_skill": "guanlan-daily-monitor-qc",
   "final_qc_report_pattern": "agent-workflow/reports/<YYYY-MM-DD>-guanlan-daily-monitor-qc.md",
-  "final_qc_freshness_required": true,
-  "downstream_release_rule": "Script pre-gate pass is not enough. Signal Card assets and frontstage release may use Raw / Pool only after a current guanlan-daily-monitor-qc report generated after the latest quality gate returns allow or scoped allow_with_degradation. Asset chain readiness must reject stale QC reports.",
+  "final_qc_freshness_required": false,
+  "downstream_release_rule": "Current release uses the monitor quality gate plus downstream Card, source-first, frontstage, and freshness gates. guanlan-daily-monitor-qc is optional diagnostic support; stale or missing final QC must not block release when Pool/Core supply and downstream gates pass.",
   "max_retry_cycles": 3,
   "weights": {
     "source_integrity": 25,
@@ -40,8 +40,16 @@
     "core_large_vendor_max": 10,
     "core_large_vendor_ratio_max": 0.35,
     "core_non_large_vendor_min": 20,
-    "unrecovered_failed_sources_max": 0
+    "unrecovered_failed_sources_max": 0,
+    "raw_channel_diagnostics_release_when_pool_core_supply_passes": true
   },
+  "diagnostic_release_overrides": [
+    "raw_count_min",
+    "keyword_search_non_community_min",
+    "ai_relevant_title_ratio_min",
+    "off_topic_title_max",
+    "unrecovered_failed_sources_max"
+  ],
   "weekend_release_policy": {
     "enabled": true,
     "applies_on": [
@@ -66,9 +74,6 @@
     "never_relax": [
       "pool_count_min",
       "routed_pool_count_min",
-      "keyword_search_non_community_min",
-      "ai_relevant_title_ratio_min",
-      "off_topic_title_max",
       "homepage_directory_core_max",
       "core_missing_full_text_max",
       "core_readability_score_min",

@@ -57,16 +57,18 @@ priority: current
 
 ```powershell
 node agent-workflow/tools/run-quality-gates.mjs syntax
-node agent-workflow/tools/run-quality-gates.mjs v2content
+node agent-workflow/tools/run-quality-gates.mjs automation
+node agent-workflow/tools/run-quality-gates.mjs business --date=YYYY-MM-DD
 node agent-workflow/tools/frontstage-regression-gate.mjs
-node --check 01-SiteV2/site/assets/app.js
+node --check 01-SiteV2/site/assets/v3-data-observation-desk.js
 ```
 
 按任务需要再运行：
 
-- `style`
+- `rules`
 - `automation`
-- `v2content --date=YYYY-MM-DD`
+- `regression --date=YYYY-MM-DD`
+- `tags`
 
 ## 冲突处理
 

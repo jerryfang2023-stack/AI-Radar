@@ -166,7 +166,6 @@ jobs:
           node --check agent-workflow/tools/assert-business-signals-frontstage.mjs
           node --check agent-workflow/tools/assert-v3-source-first-frontstage.mjs
           node --check agent-workflow/tools/frontstage-regression-gate.mjs
-          node --check agent-workflow/tools/build-hermes-daily-brief.mjs
           node --check agent-workflow/tools/assert-community-intelligence-data.mjs
           node --check agent-workflow/tools/send-feishu-webhook.mjs
           node --check 01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs
@@ -405,7 +404,6 @@ jobs:
           | Pool candidates | $(state_for "$pool_file") |
           | Business signals | $(state_for "$signal_file") |
           | Signal card files | ${signal_card_count} |
-          | Site content data | $(state_for "01-SiteV2/site/data/site-content.json") |
           | V3 data observation desk data | $(state_for "01-SiteV2/site/data/v3-data-observation-desk.json") |
           | Intelligence graph index | $(state_for "01-SiteV2/site/data/intelligence-graph-index.json") |
           | Operations dashboard data | $(state_for "01-SiteV2/site/data/pipeline-dashboard.json") |
@@ -442,7 +440,6 @@ jobs:
               "pool_candidates": "$(state_for "$pool_file")",
               "business_signals": "$(state_for "$signal_file")",
               "signal_card_files": ${signal_card_count},
-              "site_content_data": "$(state_for "01-SiteV2/site/data/site-content.json")",
               "v3_data_observation_desk": "$(state_for "01-SiteV2/site/data/v3-data-observation-desk.json")",
               "intelligence_graph_index": "$(state_for "01-SiteV2/site/data/intelligence-graph-index.json")",
               "operations_dashboard_data": "$(state_for "01-SiteV2/site/data/pipeline-dashboard.json")"
@@ -474,8 +471,6 @@ jobs:
             01-SiteV2/content/02-pool/${{ steps.run-date.outputs.date }}-pool-candidates.md
             01-SiteV2/content/04-business-signals/signals/${{ steps.run-date.outputs.date }}-signals.md
             01-SiteV2/knowledge/01-Signal-Cards/**/${{ steps.run-date.outputs.date }}--signal--*.md
-            01-SiteV2/site/data/site-content.json
-            01-SiteV2/site/data/site-content.js
             01-SiteV2/site/data/v3-data-observation-desk.json
             01-SiteV2/site/data/intelligence-graph-index.json
             01-SiteV2/site/data/pipeline-dashboard.json
@@ -528,8 +523,6 @@ jobs:
           fi
 
           if [ "${{ steps.pre-commit-gate.outcome }}" = "success" ]; then
-            stage_if_exists "01-SiteV2/site/data/site-content.json"
-            stage_if_exists "01-SiteV2/site/data/site-content.js"
             stage_if_exists "01-SiteV2/site/data/v3-data-observation-desk.json"
             stage_if_exists "01-SiteV2/site/data/intelligence-graph-index.json"
             stage_if_exists "01-SiteV2/site/data/pipeline-dashboard.json"
@@ -683,50 +676,6 @@ jobs:
 
           echo "status=failed" >> "$GITHUB_OUTPUT"
           exit 1
-
-      - name: Build Hermes daily brief
-        id: hermes-brief
-        if: always()
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/build-hermes-daily-brief.mjs \
-            --date="${RUN_DATE}" \
-            --trigger="${{ github.event_name }}" \
-            --skip="${{ steps.existing-assets.outputs.skip }}" \
-            --skip-reason="${{ steps.existing-assets.outputs.reason }}" \
-            --monitor="${{ steps.monitor.outcome }}" \
-            --monitor-readiness="${{ steps.monitor-readiness.outcome }}" \
-            --raw-pool-gate="${{ steps.persistent-assets-post-monitor.outcome }}" \
-            --asset-generation="${{ steps.assets.outcome }}" \
-            --pool-to-card-dedupe="${{ steps.pool-to-card-dedupe.outcome }}" \
-            --builders-data="not_required" \
-            --builders-gate="not_required" \
-            --site-data="${{ steps.business-frontstage-data.outcome }}" \
-            --source-first-frontstage="${{ steps.business-frontstage-gate.outcome }}" \
-            --frontstage-regression="${{ steps.business-frontstage-gate.outcome }}" \
-            --pre-commit-gate="${{ steps.pre-commit-gate.outcome }}" \
-            --commit="${{ steps.commit.outcome }}" \
-            --pr="${{ steps.pr.outcome }}" \
-            --auto-merge="${{ steps.auto-merge.outcome }}" \
-            --pr-url="${{ steps.pr.outputs.pr_url }}" \
-            --manual-url="${{ steps.pr.outputs.manual_url }}" \
-            --run-url="https://github.com/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" \
-            --page-url="${{ vars.WAVESIGHT_SITE_URL || '' }}" \
-            --commit-sha="${GITHUB_SHA}" \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-hermes-brief.log"
-
-      - name: Send Hermes brief to Feishu Agent
-        id: feishu-notify
-        if: always() && steps.hermes-brief.outcome == 'success'
-        continue-on-error: true
-        shell: bash
-        run: |
-          set -o pipefail
-          node agent-workflow/tools/send-feishu-webhook.mjs \
-            --file="agent-workflow/reports/${RUN_DATE}-hermes-daily-brief.json" \
-            2>&1 | tee "agent-workflow/reports/${RUN_DATE}-github-persistent-assets-pr-feishu-notify.log"
 
       - name: Business signals PR result
         if: always()

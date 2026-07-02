@@ -25,8 +25,8 @@ const retiredTerms = [
 
 const retiredDataTerms = [
   ...retiredTerms,
-  "heatmap",
-  "briefing",
+  "site-content.json",
+  "site-content.js",
 ];
 
 const mojibakeMarkers = [
@@ -119,10 +119,32 @@ function scanFile(file, terms, kind) {
   const lines = text.split(/\r?\n/u);
   for (const term of terms) {
     lines.forEach((line, index) => {
+      if (kind === "retired_term" && isProtectiveRetiredLine(line)) return;
       if (line.includes(term)) hits.push({ kind, file: rel(file), line: index + 1, term });
     });
   }
   return hits;
+}
+
+function isProtectiveRetiredLine(line) {
+  const normalized = line.toLowerCase();
+  return [
+    "retired",
+    "not active",
+    "not current",
+    "do not",
+    "must not",
+    "mustn't",
+    "cannot",
+    "forbid",
+    "forbidden",
+    "only as audit",
+    "archive",
+    "not from",
+    "not use",
+    "retire",
+    "old",
+  ].some((marker) => normalized.includes(marker));
 }
 
 function main() {

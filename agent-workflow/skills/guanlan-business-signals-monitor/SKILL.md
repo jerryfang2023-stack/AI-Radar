@@ -93,7 +93,7 @@ This is a hard requirement, not a preference.
 - Start from the failed gate, report, run step, or published-data mismatch, then repair that specific stage.
 - If same-date Raw, Pool, Card, Core Pool, or frontstage artifacts already exist, reuse those artifacts for downstream repair and publication unless the failed stage proves they are corrupt or insufficient.
 - If Pool / routed Pool / Core Pool / non-large Core Pool and Top10 or Card supply are already sufficient, do not restart source raw collection just because one provider, peer channel, or quota-dependent source is short.
-- If `pool_core_supply_release=true`, GDELT / keyword / RSS / AI HOT / Anysearch source-channel failures and `unrecovered_failed_sources_max` are diagnostic supply-risk notes, not release blockers, unless a real Pool / Core / coverage / Top10 gate is also failing.
+- If `pool_core_supply_release=true`, GDELT / keyword / RSS / AI HOT / Anysearch source-channel failures, `unrecovered_failed_sources_max`, keyword-only floors, AI-title ratio, off-topic raw-title counts, and Raw volume shortfall are diagnostic supply-risk notes, not release blockers, unless a real Pool / Core / coverage / Top10 gate is also failing.
 - After a targeted repair passes the smallest relevant validation, proceed to PR / merge / Pages publication from the repaired artifacts. Do not dispatch another full-chain run to "be safe".
 - If a full-chain rerun is still necessary, first write the checklist result and the specific missing or corrupt artifact that makes artifact reuse impossible.
 
@@ -113,7 +113,7 @@ Use this order:
    - funding / case / product coverage;
    - predicted Top10 eligibility after the large-company cap.
 4. If Raw is below floor because of provider quota or temporary outage, but Pool, routed Pool, Core Pool, non-large Core Pool, and predicted Top10 eligibility are sufficient, keep the Raw shortfall visible as a diagnostic and continue with Card / frontstage / PR work from the same artifact set.
-   - Treat GDELT, keyword search, RSS, and AI HOT as peer source-artifact channels. Do not block release because one peer channel is empty or quota-limited when the combined peer artifacts already produce healthy Pool / Core Pool / Top10 supply.
+   - Treat GDELT, keyword search, RSS, and AI HOT as peer source-artifact channels. Do not block release because one peer channel is empty, quota-limited, noisy, or below a keyword-specific floor when the combined peer artifacts already produce healthy Pool / Core Pool / Top10 supply.
 5. If Pool, routed Pool, Core Pool, non-large Core Pool, or Top10 eligibility is thin, repair the missing source lane first. Do not continue into dashboard or publication work.
 6. Generate Signal Cards from all eligible Core Pool items.
 7. Apply Top10 preselection with strict large-company caps before public JSON build. If formal Signal Card count is thinner than 10 but qualified source-backed Core Pool display candidates are sufficient, fill Top10 from those Core Pool candidates and continue publication; keep the six formal Signal Card gates unchanged.

@@ -136,6 +136,7 @@ Run these pass/fail checks when supervising, repairing, or updating the Business
     - Pass when RSS HTTP 404 / 415 / 429 / 5xx, Anysearch quota exhaustion, or other search-provider temporary unavailable notes are classified as recovered after Pool, routed Pool, Core Pool, non-large Core, and importance coverage gates are already satisfied.
     - Pass when `raw_count_min` shortfall remains visible as `raw_count_release_override=pool_core_supply` instead of blocking the lane by itself.
     - Pass when `unrecovered_failed_sources_max` does not block release under `pool_core_supply_release=true`, while the failed source-channel notes remain visible in the gate report for supply-risk review.
+    - Pass when keyword-only floors, AI-relevant title ratio, and off-topic raw-title count are visible diagnostics but do not block release under `pool_core_supply_release=true`.
     - Pass when source-artifact Raw selection rotates across GDELT, keyword search, RSS, and AI HOT as peer channels instead of consuming one fixed priority channel first.
     - Fail when a transient provider note or Raw-only shortage blocks Card / Top10 generation after Pool/Core supply and the frontstage Top10 contract are sufficient, or when provider recovery hides a true Pool/Core shortage.
 

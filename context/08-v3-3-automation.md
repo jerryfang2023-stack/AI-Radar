@@ -55,7 +55,6 @@ Execution order:
 13. Create or update the PR.
 14. Auto-merge or enable auto-merge after gates pass.
 15. Deploy through GitHub Pages after `main` updates.
-16. Send Hermes / Feishu brief when webhook is configured.
 
 An existing `automation/business-signals-<date>` branch must not block a scheduled rerun. The workflow should update the same branch and PR instead of skipping, because a previous delayed or partial run may have left the branch stale.
 
@@ -79,7 +78,7 @@ Operational rules:
 3. If a lane workflow is `queued` or `in_progress`, supervision waits for it instead of declaring missing data.
 4. Auto-merge skip is not automatically a data-generation failure. It means publication may require PR / repository-permission handling.
 5. All lanes must still publish through automation branch, PR, merge to `main`, then GitHub Pages. Direct `main` push is not the current policy.
-6. If Business Signals is blocked only by `raw_count_min` while Pool / routed Pool / Core Pool / non-large Core / Top10 supply is sufficient, do not rerun Raw. Treat provider shortfall as diagnostic and repair the exact downstream blocker.
+6. If Business Signals is blocked only by `raw_count_min`, a source-channel/provider quota note, keyword-only floor, AI-title ratio, or off-topic raw-title diagnostic while Pool / routed Pool / Core Pool / non-large Core / Top10 supply is sufficient, do not rerun Raw. Treat it as diagnostic and repair the exact downstream blocker.
 7. Watchlist aggregate material can guide source repair or Pool rerouting only. It is not direct Card evidence until source-backed entries pass the current Pool / Core Pool rules.
 8. Community Intelligence cannot be collected inside GitHub Actions because it depends on the local Chrome profile and logged-in community sessions. GitHub may publish already-validated community files, but missing local collector output remains a local / Codex repair handoff.
 9. Daily Problem Watchdog writes `agent-workflow/reports/<date>-daily-recovery-watchdog.json`, `.md`, and `agent-workflow/inbox/hermes-to-codex/<date>-<lane>-daily-problem-watchdog.md` for actionable problems.
@@ -392,7 +391,6 @@ Daily Hermes operating instructions live in `context/11-hermes-daily-supervision
 Hermes is the daily supervisor, not the writer of every fix. It should read these stable machine outputs before asking Codex to modify code:
 
 - `agent-workflow/reports/<date>-daily-supervision-report.json`
-- `agent-workflow/reports/<date>-hermes-daily-brief.json`
 - `agent-workflow/reports/<date>-persistent-asset-manifest.json`
 - `agent-workflow/reports/<date>-follow-builders-data-gate.md`
 - `agent-workflow/reports/<date>-community-intelligence-gate.md`

@@ -1,7 +1,7 @@
+#!/usr/bin/env node
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
-import { pathToFileURL } from "node:url";
 
 const root = process.cwd();
 const rawArgs = process.argv.slice(2);
@@ -18,18 +18,11 @@ const flags = new Map(
 const reportsDir = path.join(root, "agent-workflow", "reports");
 const now = new Date();
 const date = flags.get("date") || now.toISOString().slice(0, 10);
-const stamp = now
-  .toISOString()
-  .replace(/[-:]/g, "")
-  .replace(/\..+/, "")
-  .replace("T", "-");
-
-const rel = (file) => path.relative(root, file).replace(/\\/g, "/");
-// On some Windows environments, spawning `process.execPath` (e.g. under `C:\Program Files\...`)
-// can fail with EPERM even though invoking `node` via PATH works. Prefer the PATH command on Windows.
+const stamp = now.toISOString().replace(/[-:]/g, "").replace(/\..+/, "").replace("T", "-");
 const node = process.platform === "win32" ? "node" : process.execPath;
+const rel = (file) => path.relative(root, file).replace(/\\/gu, "/");
 
-const knownModes = new Set(["syntax", "site", "automation", "style", "typography", "regression", "raw", "tags", "all"]);
+const knownModes = new Set(["syntax", "site", "automation", "business", "regression", "tags", "rules", "all"]);
 
 if (!knownModes.has(mode)) {
   console.error(`Unknown quality gate mode: ${mode}`);
@@ -37,298 +30,163 @@ if (!knownModes.has(mode)) {
   process.exit(1);
 }
 
+const syntaxCommands = [
+  [node, ["--check", "agent-workflow/tools/run-quality-gates.mjs"], "run-quality-gates syntax"],
+  [node, ["--check", "agent-workflow/tools/guanlan-monitor-quality-gate.mjs"], "monitor quality gate syntax"],
+  [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor.mjs"], "daily monitor syntax"],
+  [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs"], "daily monitor with qc syntax"],
+  [node, ["--check", "agent-workflow/tools/assert-guanlan-automation-readiness.mjs"], "automation readiness syntax"],
+  [node, ["--check", "agent-workflow/tools/assert-daily-production-chain.mjs"], "daily production chain syntax"],
+  [node, ["--check", "agent-workflow/tools/generate-asset-cards-from-pool.mjs"], "asset card generation syntax"],
+  [node, ["--check", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"], "pool-to-card dedupe syntax"],
+  [node, ["--check", "agent-workflow/tools/assert-business-signals-frontstage.mjs"], "business frontstage gate syntax"],
+  [node, ["--check", "agent-workflow/tools/assert-v3-source-first-frontstage.mjs"], "source-first frontstage syntax"],
+  [node, ["--check", "agent-workflow/tools/frontstage-regression-gate.mjs"], "frontstage regression syntax"],
+  [node, ["--check", "agent-workflow/tools/assert-current-rule-hygiene.mjs"], "current rule hygiene syntax"],
+  [node, ["--check", "agent-workflow/tools/check-tags.mjs"], "tag quality gate syntax"],
+  [node, ["--check", "agent-workflow/tools/assert-follow-builders-data.mjs"], "first-line data gate syntax"],
+  [node, ["--check", "agent-workflow/tools/assert-community-intelligence-data.mjs"], "community data gate syntax"],
+  [node, ["--check", "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"], "business frontstage builder syntax"],
+  [node, ["--check", "01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs"], "operations data sync syntax"],
+  [node, ["--check", "01-SiteV2/site/assets/v3-data-observation-desk.js"], "business frontstage JS syntax"],
+  [node, ["--check", "01-SiteV2/site/assets/follow-builders.js"], "first-line frontstage JS syntax"],
+  [node, ["--check", "01-SiteV2/site/assets/community-intelligence.js"], "community frontstage JS syntax"],
+];
+
 const commandSets = {
-  syntax: [
-    [node, ["--check", "01-SiteV2/site/assets/app.js"], "v2 frontend app syntax"],
-    [node, ["--check", "01-SiteV2/site/dev-server.mjs"], "v2 dev-server syntax"],
-    [node, ["--check", "agent-workflow/tools/run-quality-gates.mjs"], "run-quality-gates syntax"],
-    [node, ["--check", "agent-workflow/tools/v2-source-probe.mjs"], "v2-source-probe syntax"],
-    [node, ["--check", "agent-workflow/tools/v2-source-quality-gate.mjs"], "v2-source-quality-gate syntax"],
-    [node, ["--check", "agent-workflow/tools/guanlan-monitor-quality-gate.mjs"], "guanlan monitor quality gate syntax"],
-    [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor.mjs"], "guanlan daily monitor syntax"],
-    [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs"], "guanlan daily monitor with qc syntax"],
-    [node, ["--check", "agent-workflow/tools/writer-style-gate.mjs"], "writer-style-gate syntax"],
-    [node, ["--check", "agent-workflow/tools/v2-typography-gate.mjs"], "v2-typography-gate syntax"],
-    [node, ["--check", "agent-workflow/tools/frontstage-regression-gate.mjs"], "frontstage regression gate syntax"],
-    [node, ["--check", "agent-workflow/tools/v2-raw-evidence-gate.mjs"], "v2-raw-evidence-gate syntax"],
-    [node, ["--check", "agent-workflow/tools/check-tags.mjs"], "tag quality gate syntax"],
-    [node, ["--check", "agent-workflow/tools/assert-daily-production-chain.mjs"], "daily production chain gate syntax"],
-    [node, ["--check", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"], "pool-to-card dedupe gate syntax"],
-    [node, ["--check", "agent-workflow/tools/assert-follow-builders-data.mjs"], "follow-builders data gate syntax"],
-    [node, ["--check", "agent-workflow/tools/run-trend-candidate-decision.mjs"], "trend candidate decision syntax"],
-    [node, ["--check", "agent-workflow/tools/write-automation-readiness-report.mjs"], "automation readiness report syntax"],
-  ],
+  syntax: syntaxCommands,
   site: [
-    [node, ["--check", "01-SiteV2/site/assets/app.js"], "v2 frontend app syntax"],
-    [node, ["--check", "01-SiteV2/site/dev-server.mjs"], "v2 dev-server syntax"],
+    [node, ["--check", "01-SiteV2/site/assets/v3-data-observation-desk.js"], "business frontstage JS syntax"],
+    [node, ["--check", "01-SiteV2/site/assets/follow-builders.js"], "first-line frontstage JS syntax"],
+    [node, ["--check", "01-SiteV2/site/assets/community-intelligence.js"], "community frontstage JS syntax"],
+    [node, ["--check", "01-SiteV2/site/scripts/build-v3-data-observation-desk.mjs"], "business frontstage builder syntax"],
   ],
-  style: [
-    [node, ["--check", "agent-workflow/tools/writer-style-gate.mjs"], "writer-style-gate syntax"],
-    [node, ["agent-workflow/tools/writer-style-gate.mjs", `--date=${date}`], "run writer style gate"],
+  automation: [
+    [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor.mjs"], "daily monitor syntax"],
+    [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs"], "daily monitor with qc syntax"],
+    [node, ["--check", "agent-workflow/tools/guanlan-monitor-quality-gate.mjs"], "monitor quality gate syntax"],
+    [node, ["--check", "agent-workflow/tools/assert-guanlan-automation-readiness.mjs"], "automation readiness syntax"],
+    [node, ["--check", "agent-workflow/tools/assert-daily-production-chain.mjs"], "daily production chain syntax"],
+    [node, ["--check", "agent-workflow/tools/generate-asset-cards-from-pool.mjs"], "asset card generation syntax"],
+    [node, ["--check", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"], "pool-to-card dedupe syntax"],
+    [node, ["--check", "agent-workflow/tools/assert-business-signals-frontstage.mjs"], "business frontstage gate syntax"],
+    [node, ["--check", "agent-workflow/tools/frontstage-regression-gate.mjs"], "frontstage regression syntax"],
   ],
-  typography: [
-    [node, ["--check", "agent-workflow/tools/v2-typography-gate.mjs"], "v2-typography-gate syntax"],
-    [node, ["agent-workflow/tools/v2-typography-gate.mjs"], "run v2 typography gate"],
+  business: [
+    [node, ["agent-workflow/tools/assert-business-signals-frontstage.mjs", `--date=${date}`], "run Business Signals frontstage gate"],
+    [node, ["agent-workflow/tools/assert-daily-production-chain.mjs", `--date=${date}`, "--stage=pre-commit", "--raw-min=150", "--pool-min=75", "--block-stale=true"], "run daily production chain pre-commit gate"],
   ],
   regression: [
-    [node, ["--check", "agent-workflow/tools/frontstage-regression-gate.mjs"], "frontstage regression gate syntax"],
-    [node, ["agent-workflow/tools/frontstage-regression-gate.mjs"], "run frontstage regression gate"],
-  ],
-  raw: [
-    [node, ["--check", "agent-workflow/tools/v2-raw-evidence-gate.mjs"], "v2-raw-evidence-gate syntax"],
-    [node, ["agent-workflow/tools/v2-raw-evidence-gate.mjs", `--date=${date}`], "run v2 raw evidence gate"],
+    [node, ["agent-workflow/tools/frontstage-regression-gate.mjs", `--date=${date}`], "run frontstage regression gate"],
   ],
   tags: [
     [node, ["--check", "agent-workflow/tools/check-tags.mjs"], "tag quality gate syntax"],
     [node, ["agent-workflow/tools/check-tags.mjs"], "run tag quality gate"],
   ],
+  rules: [
+    [node, ["agent-workflow/tools/assert-current-rule-hygiene.mjs", `--date=${date}`], "run current rule hygiene gate"],
+  ],
 };
 
-const buildCommands = () => {
+function buildCommands() {
   if (mode === "all") {
     return [
       ...commandSets.syntax,
-      [node, ["agent-workflow/tools/writer-style-gate.mjs", `--date=${date}`], "run writer style gate"],
-      [node, ["agent-workflow/tools/v2-typography-gate.mjs"], "run v2 typography gate"],
-      [node, ["agent-workflow/tools/frontstage-regression-gate.mjs"], "run frontstage regression gate"],
-      [node, ["agent-workflow/tools/v2-raw-evidence-gate.mjs", `--date=${date}`], "run v2 raw evidence gate"],
-      [node, ["agent-workflow/tools/check-tags.mjs"], "run tag quality gate"],
+      ...commandSets.rules,
+      ...commandSets.regression,
+      ...commandSets.tags,
     ];
   }
-
-  if (mode === "automation") {
-    return [
-      [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor.mjs"], "guanlan daily monitor syntax"],
-      [node, ["--check", "agent-workflow/tools/guanlan-monitor-quality-gate.mjs"], "guanlan monitor quality gate syntax"],
-      [node, ["--check", "agent-workflow/tools/run-guanlan-daily-monitor-with-qc.mjs"], "guanlan daily monitor with qc syntax"],
-      [node, ["--check", "agent-workflow/tools/v2-source-quality-gate.mjs"], "v2-source-quality-gate syntax"],
-      [node, ["--check", "agent-workflow/tools/writer-style-gate.mjs"], "writer-style-gate syntax"],
-      [node, ["--check", "agent-workflow/tools/assert-daily-production-chain.mjs"], "daily production chain gate syntax"],
-      [node, ["--check", "agent-workflow/tools/assert-pool-to-card-dedupe.mjs"], "pool-to-card dedupe gate syntax"],
-      [node, ["--check", "agent-workflow/tools/assert-follow-builders-data.mjs"], "follow-builders data gate syntax"],
-      [node, ["--check", "agent-workflow/tools/run-trend-candidate-decision.mjs"], "trend candidate decision syntax"],
-      [node, ["--check", "agent-workflow/tools/write-automation-readiness-report.mjs"], "automation readiness report syntax"],
-    ];
-  }
-
   return commandSets[mode] || [];
-};
+}
 
-const runCommand = async ([cmd, args, label]) => {
+function runCommand([cmd, commandArgs, label]) {
   const startedAt = new Date();
-  const target = args.find((arg) => /\.(mjs|js|json)$/i.test(arg));
+  const target = commandArgs.find((arg) => /\.(mjs|js|json)$/iu.test(arg));
   if (target && !fs.existsSync(path.join(root, target))) {
-    const isSyntaxProbe = args.includes("--check") || /syntax/i.test(label);
     return {
       label,
-      command: [cmd, ...args].join(" "),
-      status: isSyntaxProbe ? 0 : 1,
-      stdout: isSyntaxProbe ? `skipped: ${target} not found in active tree` : "",
-      stderr: isSyntaxProbe ? "" : `missing active target: ${target}`,
+      command: [cmd, ...commandArgs].join(" "),
+      status: 1,
+      stdout: "",
+      stderr: `missing active target: ${target}`,
       startedAt,
       endedAt: new Date(),
     };
   }
 
-  // Some sandboxed Windows environments block child process creation (EPERM).
-  // Mark syntax probes as skipped-but-passed when child process creation is blocked.
-  if (process.platform === "win32" && cmd === "node") {
-    const isSyntaxProbe = args.includes("--check") || /syntax/i.test(label);
-    const isWriterStyleGateRun = args[0] === "agent-workflow/tools/writer-style-gate.mjs";
-    const isTypographyGateRun = args[0] === "agent-workflow/tools/v2-typography-gate.mjs";
-    const isRawEvidenceGateRun = args[0] === "agent-workflow/tools/v2-raw-evidence-gate.mjs";
-
-    if (isSyntaxProbe) {
-      return {
-        label,
-        command: [cmd, ...args].join(" "),
-        status: 0,
-        stdout: "skipped: child_process spawn blocked (EPERM) in this environment",
-        stderr: "",
-        startedAt,
-        endedAt: new Date(),
-      };
-    }
-
-    if (isTypographyGateRun) {
-      try {
-        const gateModuleUrl = pathToFileURL(path.join(root, "agent-workflow", "tools", "v2-typography-gate.mjs")).href;
-        const gateModule = await import(`${gateModuleUrl}?t=${Date.now()}`);
-        const result = gateModule.runV2TypographyGate?.();
-        const statusCode = result?.status === "passed" ? 0 : 1;
-        return {
-          label,
-          command: [cmd, ...args].join(" "),
-          status: statusCode,
-          stdout: result?.report || "",
-          stderr: statusCode === 0 ? "" : "v2 typography gate failed",
-          startedAt,
-          endedAt: new Date(),
-        };
-      } catch (error) {
-        return {
-          label,
-          command: [cmd, ...args].join(" "),
-          status: 1,
-          stdout: "",
-          stderr: `fallback import failed: ${error?.message || String(error)}`,
-          startedAt,
-          endedAt: new Date(),
-        };
-      }
-    }
-
-    if (isWriterStyleGateRun) {
-      try {
-        const styleModuleUrl = pathToFileURL(path.join(root, "agent-workflow", "tools", "writer-style-gate.mjs")).href;
-        const originalArgv = process.argv;
-        process.argv = [process.execPath, path.join(root, "agent-workflow", "tools", "writer-style-gate.mjs"), ...args.slice(1)];
-        let stdout = "";
-        const originalLog = console.log;
-        console.log = (...items) => {
-          stdout += `${items.join(" ")}\n`;
-        };
-        const originalExitCode = process.exitCode;
-        process.exitCode = 0;
-        await import(`${styleModuleUrl}?t=${Date.now()}`);
-        const statusCode = process.exitCode || 0;
-        process.argv = originalArgv;
-        console.log = originalLog;
-        process.exitCode = originalExitCode;
-        return {
-          label,
-          command: [cmd, ...args].join(" "),
-          status: statusCode,
-          stdout,
-          stderr: statusCode === 0 ? "" : "writer style gate failed",
-          startedAt,
-          endedAt: new Date(),
-        };
-      } catch (error) {
-        return {
-          label,
-          command: [cmd, ...args].join(" "),
-          status: 1,
-          stdout: "",
-          stderr: `fallback import failed: ${error?.message || String(error)}`,
-          startedAt,
-          endedAt: new Date(),
-        };
-      }
-    }
-
-    if (isRawEvidenceGateRun) {
-      try {
-        const dateFlag = args.find((arg) => arg.startsWith("--date="));
-        const gateDate = dateFlag ? dateFlag.slice("--date=".length) : date;
-        const gateModuleUrl = pathToFileURL(path.join(root, "agent-workflow", "tools", "v2-raw-evidence-gate.mjs")).href;
-        const gateModule = await import(`${gateModuleUrl}?t=${Date.now()}`);
-        const result = gateModule.runV2RawEvidenceGate?.({ date: gateDate });
-        const statusCode = result?.status === "failed" ? 1 : 0;
-        return {
-          label,
-          command: [cmd, ...args].join(" "),
-          status: statusCode,
-          stdout: result?.report || "",
-          stderr: statusCode === 0 ? "" : "v2 raw evidence gate failed",
-          startedAt,
-          endedAt: new Date(),
-        };
-      } catch (error) {
-        return {
-          label,
-          command: [cmd, ...args].join(" "),
-          status: 1,
-          stdout: "",
-          stderr: `fallback import failed: ${error?.message || String(error)}`,
-          startedAt,
-          endedAt: new Date(),
-        };
-      }
-    }
-  }
-
-  const result = spawnSync(cmd, args, {
+  const result = spawnSync(cmd, commandArgs, {
     cwd: root,
     encoding: "utf8",
-    shell: false,
+    windowsHide: true,
   });
+
   return {
     label,
-    command: [cmd, ...args].join(" "),
+    command: [cmd, ...commandArgs].join(" "),
     status: result.status ?? 1,
     stdout: result.stdout || "",
-    stderr: result.stderr || "",
+    stderr: result.stderr || result.error?.message || "",
     startedAt,
     endedAt: new Date(),
   };
-};
+}
 
-const tail = (text) => {
-  const lines = String(text || "")
+function tail(text = "") {
+  const lines = String(text)
     .trim()
-    .split("\n")
+    .split(/\r?\n/u)
     .map((line) => line.trim())
     .filter(Boolean);
   return lines.slice(-6).join(" / ") || "-";
-};
+}
 
-const writeReport = (runs) => {
+function writeReport(runs) {
   fs.mkdirSync(reportsDir, { recursive: true });
   const failed = runs.filter((run) => run.status !== 0);
   const status = failed.length ? "failed" : "passed";
-  const automationNote =
-    mode === "automation"
-      ? "\n- 自动化模式检查 SITE-V3.3.8.3 Business Signals / Intelligence Map / Weekly Report / First-Line Viewpoints / Community Intelligence / Dashboard 生产线相关脚本语法。"
-      : "";
-
   const commandLines = runs
-    .map(
-      (run, index) => `### ${index + 1}. ${run.label}
-
-- 命令：\`${run.command}\`
-- 状态：${run.status === 0 ? "passed" : "failed"} (${run.status})
-- stdout：${tail(run.stdout)}
-- stderr：${tail(run.stderr)}
-`
-    )
+    .map((run, index) => [
+      `### ${index + 1}. ${run.label}`,
+      "",
+      `- command: \`${run.command}\``,
+      `- status: ${run.status === 0 ? "passed" : "failed"} (${run.status})`,
+      `- stdout: ${tail(run.stdout)}`,
+      `- stderr: ${tail(run.stderr)}`,
+      "",
+    ].join("\n"))
     .join("\n");
 
-  const report = `# Quality Gates Report
-
-生成时间：${now.toLocaleString("zh-CN", { hour12: false })}
-
-## 结论
-
-- 模式：${mode}
-- 日期参数：${date}
-- 状态：${status}
-- 检查项：${runs.length}
-- 失败项：${failed.length}${automationNote}
-
-## 检查明细
-
-${commandLines || "无"}
-
-## 说明
-
-- 本脚本是 \`quality-gates.md\` 的统一入口。
-- SITE-V3.3.8.3 阶段默认检查 \`01-SiteV2/site/\` 与当前 \`agent-workflow/tools/\` 脚本。
-- \`all\` 会运行当前可用的内容、前台回归和 tag 质量门；需要指定日期时使用 \`--date=YYYY-MM-DD\`。
-- \`style\` 会检查三个 writer 的文章产物是否出现禁词、抽象名词和高频重复句式。
-- \`regression\` 会检查前台是否出现旧版本口径、已退休组件、旧模块文案、合成 fallback 内容、过期前台日期、过期缓存参数或趋势泛关联。
-- \`automation\` 检查 SITE-V3.3.8.3 Business Signals / Intelligence Map / Weekly Report / First-Line Viewpoints / Community Intelligence / Dashboard 生产线相关脚本语法。
-- 未覆盖的浏览器截图、多身份权限和人工内容判断，仍需 Build & Release 发布检查或 Product Commander 专项复核。
-`;
+  const report = [
+    "# Quality Gates Report",
+    "",
+    `- generated_at: ${now.toISOString()}`,
+    `- mode: ${mode}`,
+    `- date: ${date}`,
+    `- status: ${status}`,
+    `- check_count: ${runs.length}`,
+    `- failed_count: ${failed.length}`,
+    "",
+    "## Checks",
+    "",
+    commandLines || "- none",
+    "",
+    "## Current Scope",
+    "",
+    "- SITE-V3.4.0 only.",
+    "- Retired V1/V2 daily observation, business brief, publiccopy, cardcopy, writer-style, V2 typography, and V2 raw/source gates are not active quality gates.",
+    "- Use Business Signals source-first/frontstage gates plus Raw/Pool/Core readiness gates for the current production lane.",
+    "",
+  ].join("\n");
 
   const datedPath = path.join(reportsDir, `quality-gates-${mode}-${date}-${stamp}.md`);
   const latestPath = path.join(reportsDir, `quality-gates-${mode}-latest.md`);
   fs.writeFileSync(datedPath, report, "utf8");
   fs.writeFileSync(latestPath, report, "utf8");
-  return { status, failed, report, datedPath, latestPath };
-};
+  return { status, failed, report, datedPath };
+}
 
-const runs = await Promise.all(buildCommands().map(runCommand));
+const runs = buildCommands().map(runCommand);
 const { status, failed, report, datedPath } = writeReport(runs);
 
 console.log(report);

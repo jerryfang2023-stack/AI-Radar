@@ -185,10 +185,8 @@ function latestContentDate() {
   const roots = [
     path.join(root, "01-SiteV2", "content", "01-raw"),
     path.join(root, "01-SiteV2", "content", "02-pool"),
-    path.join(root, "01-SiteV2", "content", "03-daily-observation"),
     path.join(root, "01-SiteV2", "content", "04-business-signals", "signals"),
-    path.join(root, "01-SiteV2", "content", "05-frontier-opinions"),
-    path.join(root, "01-SiteV2", "content", "06-asset-candidates", "trend"),
+    path.join(root, "01-SiteV2", "knowledge", "01-Signal-Cards"),
   ];
   const dates = [];
   const walk = (dir) => {

@@ -19,11 +19,7 @@ on:
     types:
       - completed
   workflow_dispatch:
-    inputs:
-      public_brief_date:
-        description: "Optional date to regenerate public daily brief before deploy, for example 2026-05-24"
-        required: false
-        type: string
+    inputs: {}
 
 permissions:
   contents: read
@@ -46,20 +42,6 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
-
-      - name: Set up Node.js
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.public_brief_date != '' }}
-        uses: actions/setup-node@v6
-        with:
-          node-version: "22"
-
-      - name: Install dependencies
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.public_brief_date != '' }}
-        run: npm ci
-
-      - name: Generate public Daily Brief
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.public_brief_date != '' }}
-        run: npm run export:public-daily-brief -- --date=${{ inputs.public_brief_date }}
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6

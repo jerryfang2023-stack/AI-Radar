@@ -25,6 +25,10 @@ Run these pass/fail checks when editing or using the WaveSight AI monitor qualit
 7. `current_downstream_language`
    - Pass when blocked or pending status mentions Signal Cards, relationship graph inputs, trend candidates, and Business Signals frontstage data, not retired daily observations, trend reports, briefs, publiccopy, or cardcopy gates.
 
+8. `pool_core_release_diagnostics`
+   - Pass when Raw count, failed source-channel count, keyword-only floor, AI-relevant title ratio, and off-topic raw-title diagnostics remain visible but do not block release after Pool, routed Pool, Core Pool, non-large Core Pool, and downstream Top10/Card supply are sufficient.
+   - Fail when a provider quota note, one empty peer channel, or a Raw-title diagnostic causes a full monitor rerun while Pool/Core/Top10 supply is already healthy.
+
 ## Repair Loop
 
 When a check fails, repair the script, configuration, scorecard, or handoff wording. Do not patch reports by hand to make thresholds pass.
