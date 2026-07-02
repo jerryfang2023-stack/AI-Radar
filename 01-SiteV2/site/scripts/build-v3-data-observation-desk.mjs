@@ -10,8 +10,8 @@ const outputFile = path.join(siteDataDir, "v3-data-observation-desk.json");
 const intelligenceGraphIndexFile = path.join(siteDataDir, "intelligence-graph-index.json");
 const enterpriseAiFdeFile = path.join(siteDataDir, "enterprise-ai-fde.json");
 const sourceTitleTranslationsFile = path.join(root, "01-SiteV2", "content", "11-databases", "source-title-translations.json");
-const siteVersion = "SITE-V3.4.1";
-const businessSignalsColumnVersion = "BSIG-V1.2.0-core-signal-cards";
+const siteVersion = "SITE-V3.4.2";
+const businessSignalsColumnVersion = "BSIG-V1.2.1-quality-boundary";
 const tagTaxonomyVersion = "TAG-V1.1.0-v34-layered-taxonomy";
 const enterpriseAiLensVersion = "EAI-V1.1.0-fde-lens-pool";
 const intelligenceMapColumnVersion = "IMAP-V2.0.0-report-center-opportunity-system";
@@ -1187,9 +1187,36 @@ function publicCardFillIsDisplayReady(card = {}) {
   return true;
 }
 
+function hasBlockingCoreSignalPromotionIssue(card = {}) {
+  return Array.isArray(card.notPromotedIssues) && card.notPromotedIssues.length > 0;
+}
+
+function isLowValueConsumerOrPlatformPolicySignal(card = {}) {
+  const text = [
+    card.title,
+    card.displayTitle,
+    card.sourceTitle,
+    card.translatedFact,
+    card.visibleFragment,
+    card.summary,
+    card.sourceUrl,
+  ].filter(Boolean).join(" ");
+  const consumerEntertainment = /Just Dance|舞力全开|mobile game|手游|游戏快报|玩家|曲库|K-POP|音舞|体感音乐|育碧|腾讯游戏/iu.test(text);
+  const minorPlatformPolicy = /肖像保护|仿冒带货|带货达人|达人账号|素材盗用|侵权账号|侵权内容|平台治理|内容安全|相似内容阻断|举报|处置侵权/iu.test(text);
+  const roundupOrExplainer = /更新汇总|月度更新|latest AI news|monthly update|roundup|weekly digest|why we built|我们为何构建/iu.test(text);
+  const marketCommentary = /瑞银|UBS|分析师|研报|调研|开支|支出|spending|budget|cost concern|analyst/iu.test(text)
+    && !/announces|launches|released|customer deployment|funding round|raises|closed|正式发布|推出|上线|客户部署|融资轮|完成融资/iu.test(text);
+  const ventureFormation = /离开.*VC基金|创办.*VC基金|launch new VC firm|start a separate VC fund|new VC fund/iu.test(text)
+    && !/raises|raised|closed|closes|fund size|\$\s?\d|完成.*募资|基金规模/iu.test(text);
+  const businessAiSignal = /enterprise|B2B|customer deployment|production rollout|procurement|workflow|case study|SaaS|API|SDK|developer platform|paid enterprise|企业|客户|部署|采购|工作流|生产环境|融资|收购|合作伙伴|营收|合同|招标/iu.test(text);
+  return ((consumerEntertainment || minorPlatformPolicy) && !businessAiSignal) || roundupOrExplainer || marketCommentary || ventureFormation;
+}
+
 function coreSignalCardFillIsDisplayReady(card = {}) {
   const title = String(card.title || card.displayTitle || "").trim();
   const fact = String(card.translatedFact || card.visibleFragment || card.summary || "").trim();
+  if (hasBlockingCoreSignalPromotionIssue(card)) return false;
+  if (isLowValueConsumerOrPlatformPolicySignal(card)) return false;
   if (!title || !card.sourceUrl) return false;
   if (publicTextLooksGarbled(title) || isBadPublicDisplayTitle(title) || titleLooksLikeGeneratedTemplate(title)) return false;
   if (!fact || publicTextLooksGarbled(fact) || publicContentNeedsTranslation(fact) || publicFactLooksLikeTemplateFallback(fact)) return false;
@@ -1200,6 +1227,7 @@ function coreSignalCardFillIsDisplayReady(card = {}) {
 function publicFdeCandidateIsDisplayReady(card = {}) {
   const title = String(card.title || card.displayTitle || "").trim();
   const fact = String(card.translatedFact || card.visibleFragment || card.summary || "").trim();
+  if (isLowValueConsumerOrPlatformPolicySignal(card)) return false;
   if (!publicDisplayTitleIsReady(title)) return false;
   if (!card.sourceUrl) return false;
   if (!hasSourceBackedFrontstageFact(card)) return false;
@@ -2260,6 +2288,8 @@ function buildDailyFrontstageSelection(
     const coreCandidates = annotated.filter((card) => card.fromCorePool);
     const displayCards = coreCandidates
       .filter((card) => !card.frontstageGenericCandidate && card.frontstageEvidenceScore >= 30)
+      .filter((card) => !hasBlockingCoreSignalPromotionIssue(card))
+      .filter((card) => !isLowValueConsumerOrPlatformPolicySignal(card))
       .filter(hasSourceBackedFrontstageFact)
       .filter(publicSignalCardIsDisplayReady)
       .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
@@ -4139,6 +4169,7 @@ const enterpriseAiLensCandidates = buildEnterpriseAiLensCandidateItems(cards, ac
     };
   })
   .filter(publicSignalCardIsDisplayReady)
+  .filter((card) => !isLowValueConsumerOrPlatformPolicySignal(card))
   .filter(hasEnterpriseImplementationSignal)
   .filter((card) => !isWeakSubject(card.subject));
 const enterpriseAiFdePool = buildEnterpriseAiFdePoolItems(cards, activeDate)

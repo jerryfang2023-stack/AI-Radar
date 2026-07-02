@@ -7,6 +7,7 @@ Keep this file short. Add only durable lane-level lessons from repeated producti
 - BSIG-V1.2.0 removes the retired public ranked-list versus candidate-pool split. The public Business Signals page renders one active-date Card set: every qualified Core Pool business signal that can become a Card, sorted by importance / impact from high to low.
 - Do not display ranking reasons, selection tiers, candidate labels, or source/channel quality scores on the public page. Keep source-first checks focused on auditable source URL, source-title translation, source-backed fact text, and exclusion of internal Raw / Pool / gate fields.
 - Retired public ranked-list counts, fill logic, candidate-pool display, and large-company caps are historical incident context only. They are not current release blockers after BSIG-V1.2.0.
+- Core Pool is not automatic public eligibility. `core_pool_not_promoted`, `notPromotedReason`, and non-empty `notPromotedIssues` are hard blockers; low-value AI-adjacent consumer entertainment, minor platform enforcement/policy notices, monthly update roundups, explainer posts, analyst commentary, and unclosed VC-fund formation items must remain backend-only unless the same original source proves a concrete business event.
 
 ## 2026-07-02 Retired Gates And Raw Diagnostics
 

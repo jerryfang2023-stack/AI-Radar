@@ -167,13 +167,13 @@ Card title rules:
 
 - keep the event nature of the original title;
 - prefer original title or direct event title;
-- public `title`, `displayTitle`, and Top10-compatible `generatedTitle` must be source-title translations only. If a source-title translation cannot be produced, the item is not ready for active-date frontstage display.
+- public `title`, `displayTitle`, and compatibility `generatedTitle` must be source-title translations only. If a source-title translation cannot be produced, the item is not ready for active-date frontstage display.
 - do not mechanically rewrite into abstract judgment;
 - do not use phrases like "materials show", "worth watching", "points to", or internal production wording.
 - do not use placeholder phrases such as "original AI event", "use case seen in original", "purpose see original", or source-domain subjects such as "linkedin financing" / "github original title";
 - do not fall back from source-title translation to model-generated title, old card title, source-domain subject, or fact-derived headline;
 - active-date public payloads must not expose `modelGeneratedTitle`;
-- if the title cannot name the actual company, product, funding round, customer, or release, the item is not ready for Top10 display.
+- if the title cannot name the actual company, product, funding round, customer, or release, the item is not ready for public Card display.
 
 Card detail rules:
 
@@ -190,11 +190,11 @@ Hard stops:
 - do not show backend fields when frontstage copy is missing;
 - do not include follow-builders or opinion material in business-signal cards.
 
-Candidate pool display rules:
+Backend Pool-only rules:
 
-- public candidate pool entries must be event-deduped, not only URL-deduped;
-- multiple pages about the same event, such as the same model release or the same funding round, should keep the highest-quality source-backed item and treat the rest as supporting evidence;
-- social/community, repo/catalog, and generic list sources remain available in backend Pool evidence but should not fill the public candidate list as repeated near-duplicates.
+- Core Pool entries that fail the formal Card gate must remain backend evidence and must not appear in the public Card set.
+- Public Cards must be event-deduped, not only URL-deduped; multiple pages about the same event should keep the highest-quality source-backed item and treat the rest as supporting evidence.
+- Social/community, repo/catalog, generic list, consumer entertainment, and minor platform-policy sources may remain in backend Pool evidence when useful, but must not fill public Cards as repeated or low-value AI-adjacent items.
 
 ## 5. Knowledge Base Rules
 

@@ -1225,6 +1225,19 @@ function isNewsletterRoundupSource(section) {
   return /\btldr\.tech\b|TLDR AI Newsletter|newsletter|roundup|daily digest|weekly digest|briefing/iu.test(text);
 }
 
+function isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section) {
+  const text = textForInference(section);
+  const consumerEntertainment = /Just Dance|舞力全开|mobile game|手游|游戏快报|玩家|曲库|K-POP|音舞|体感音乐|育碧|腾讯游戏/iu.test(text);
+  const minorPlatformPolicy = /肖像保护|仿冒带货|带货达人|达人账号|素材盗用|侵权账号|侵权内容|平台治理|内容安全|相似内容阻断|举报|处置侵权/iu.test(text);
+  const roundupOrExplainer = /更新汇总|月度更新|latest AI news|monthly update|roundup|weekly digest|why we built|我们为何构建/iu.test(text);
+  const marketCommentary = /瑞银|UBS|分析师|研报|调研|开支|支出|spending|budget|cost concern|analyst/iu.test(text)
+    && !/announces|launches|released|customer deployment|funding round|raises|closed|正式发布|推出|上线|客户部署|融资轮|完成融资/iu.test(text);
+  const ventureFormation = /离开.*VC基金|创办.*VC基金|launch new VC firm|start a separate VC fund|new VC fund/iu.test(text)
+    && !/raises|raised|closed|closes|fund size|\$\s?\d|完成.*募资|基金规模/iu.test(text);
+  const businessAiSignal = /enterprise|B2B|customer deployment|production rollout|procurement|workflow|case study|SaaS|API|SDK|developer platform|paid enterprise|企业|客户|部署|采购|工作流|生产环境|融资|收购|合作伙伴|营收|合同|招标/iu.test(text);
+  return ((consumerEntertainment || minorPlatformPolicy) && !businessAiSignal) || roundupOrExplainer || marketCommentary || ventureFormation;
+}
+
 function corePoolSemanticIssues(section) {
   const issues = [];
   const text = textForInference(section);
@@ -1278,6 +1291,9 @@ function corePoolSemanticIssues(section) {
   }
   if (isNewsletterRoundupSource(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.validPageType, "newsletter_roundup_requires_original_event_source"));
+  }
+  if (isLowValueConsumerOrPlatformPolicyWithoutBusinessAi(section)) {
+    issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "low_value_consumer_or_platform_policy_not_business_signal"));
   }
   if (!hasFormalCardEvent(section)) {
     issues.push(cardGateIssue(CARD_ENTRY_GATES.businessSignalScope, "missing_concrete_funding_product_or_case_event"));

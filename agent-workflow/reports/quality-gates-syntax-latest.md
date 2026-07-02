@@ -1,6 +1,6 @@
 # Quality Gates Report
 
-- generated_at: 2026-07-02T04:02:45.914Z
+- generated_at: 2026-07-02T04:50:32.183Z
 - mode: syntax
 - date: 2026-07-02
 - status: passed
@@ -152,6 +152,6 @@
 
 ## Current Scope
 
-- SITE-V3.4.1 only.
+- SITE-V3.4.2 only.
 - Retired V1/V2 daily observation, business brief, publiccopy, cardcopy, writer-style, V2 typography, and V2 raw/source gates are not active quality gates.
 - Use Business Signals source-first/frontstage gates plus Raw/Pool/Core readiness gates for the current production lane.

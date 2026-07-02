@@ -20,7 +20,8 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
    - Pass when every display-ready Core Pool business signal is normalized into a public Card.
 
 5. `backend_pool_only_for_non_cards`
-   - Pass when Core Pool items that cannot satisfy Card display requirements remain backend evidence and do not appear as public candidates.
+   - Pass when Core Pool items that cannot satisfy Card display requirements remain backend evidence and do not appear as public candidates or public Cards.
+   - Fail when any active-date public Card has `notPromotedIssues`, `notPromotedReason`, or a `core_pool_not_promoted` handoff row.
 
 6. `no_sort_reason_display`
    - Pass when frontstage Cards do not display ranking reasons, selection tiers, or internal priority labels.
@@ -28,6 +29,7 @@ Do not use numeric scores. Each check must be `pass` or `fail` with the file or 
 7. `formal_card_event_boundary`
    - Pass when formal Signal Cards come only from concrete funding, product/service, customer deployment, procurement, partnership, vertical rollout, or production implementation events.
    - Pass when `important_technical_trend`, builder/opinion posts, newsletters, workforce retraining / public-funding programs, technical guides, architecture articles, docs pages, generic lists, and items marked with missing concrete customer/event evidence stay out of formal Signal Cards unless the same original source proves a dated formal event.
+   - Pass when consumer entertainment, mobile games, creator/influencer protection features, platform enforcement notices, minor policy/compliance updates, monthly update roundups, explainer/why-we-built technical articles, analyst commentary, and unclosed VC-fund formation items stay out of public Cards unless the same source proves enterprise deployment, procurement, paid product adoption, financing, acquisition, or a material market-structure change.
    - Fail when a context-only technical trend or article is promoted to `core_pool` or Card quantity just to inflate the public Card count.
 
 8. `source_first_details`

@@ -105,8 +105,8 @@ Current quantity gates:
 - GDELT, keyword search, RSS, and AI HOT are peer source-artifact entrances for Raw. Raw selection should use balanced rotation across available peer channels, not a fixed priority order.
 - daily Pool gate expects at least 75 Pool items, at least 60 routed Pool items, and at least 30 usable `core_pool` items;
 - each required importance lane should keep at least 5 Pool candidates before downstream release;
-- frontstage Card presentation must publish exactly 10 business signals per active date.
-- Signal Card assets should cover all qualified Core Pool items so relationship graph and trend-candidate modules can use non-displayed evidence.
+- frontstage Card presentation publishes all active-date qualified Core Pool items that pass the formal Card gate and public display requirements.
+- Signal Card assets should cover all qualified Core Pool items so relationship graph and trend-candidate modules can use the same eligible evidence set.
 - If `core_pool`, routed Pool, or non-large core supply is thin, targeted refill must search for recent concrete events: customer deployment, production rollout, product launch, funding, procurement, pricing, regulatory, or vertical workflow evidence. Do not repair supply by promoting marketplace listings, directories, generic guides, interviews, old technical posts, broad lists, funding roundups, or generic funding commentary into `core_pool`.
 - `source_level` and `acquisition_source_level` remain traceability-only labels during refill. They must not boost, penalize, gate, or auto-downgrade Raw / Pool / Core Pool eligibility.
 
@@ -115,10 +115,9 @@ Large-company boundary:
 - Raw can collect large-company evidence for coverage, but should not be used to fill quantity by repeating platform/lab product news;
 - Pool can keep large-company evidence, but usable `core_pool` should stay below 10 large-company items and below 35% of core evidence by default;
 - usable `core_pool` should include at least 20 non-large-company items by default;
-- frontstage Card presentation is stricter: no more than 1 Card for the same large company per date, and no more than 3 large-company Cards in total per date;
-- frontstage Card order must be the daily top 10 by importance, not category order;
-- if frontstage Top 10 cannot be filled after these caps, increase Raw coverage and repair Pool/Core Pool balance instead of padding with repeated large-company news;
-- relationship graph and trend candidates still use the full eligible Core Pool / Card asset set, not only the frontstage Top 10;
+- frontstage Card order must be importance / impact descending, not category order;
+- if too few items pass the formal Card gate, increase Raw coverage and repair Pool/Core Pool balance instead of padding with repeated large-company news or low-value AI-adjacent items;
+- relationship graph and trend candidates use the full eligible Core Pool / Card asset set;
 - when the limit is reached, prefer emerging-company financing, real customer deployment, vertical workflow case, pricing/procurement/regulatory signal, or non-platform infrastructure evidence.
 
 ## Output Paths

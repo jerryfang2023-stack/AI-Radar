@@ -1,7 +1,7 @@
 window.WaveSightOpsConsole = {
   "meta": {
     "version": "OPS-V1.2.3-content-factory-cleanout",
-    "generatedAt": "2026-07-02T04:02:13.729Z",
+    "generatedAt": "2026-07-02T04:49:26.725Z",
     "date": "2026-07-02",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -1681,7 +1681,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-07-02T03:53:29.644Z"
+        "detail": "2026-07-02T04:47:31.910Z"
       },
       {
         "label": "Daily Supervision",
@@ -1692,7 +1692,7 @@ window.WaveSightOpsConsole = {
   },
   "quality": {
     "pipelineMeta": {
-      "generatedAt": "2026-07-02T03:53:29.644Z",
+      "generatedAt": "2026-07-02T04:47:31.910Z",
       "dateRange": {
         "start": "2025-10-13",
         "end": "2026-07-02"
@@ -2307,7 +2307,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "engineQuality": {
-      "updatedAt": "2026-07-02T03:53:29.728Z",
+      "updatedAt": "2026-07-02T04:47:31.966Z",
       "sampleNote": "样本为 Raw 条目中的入口命中；同一条 Raw 可能被多个入口标记。",
       "metricNote": "新鲜度按已知发布时间中 48 小时内比例计算；重复率按跨 Raw 归一化 URL / 标题计算；Raw Card 候选率按可进入 core / emerging / user_feedback 或具备卡片可用方向计算。",
       "rows": [
@@ -2431,7 +2431,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "SITE",
         "label": "Main website",
-        "value": "SITE-V3.4.1"
+        "value": "SITE-V3.4.2"
       },
       {
         "key": "OPS",
@@ -2441,7 +2441,7 @@ window.WaveSightOpsConsole = {
       {
         "key": "BSIG",
         "label": "Business Signals",
-        "value": "BSIG-V1.2.0-core-signal-cards"
+        "value": "BSIG-V1.2.1-quality-boundary"
       },
       {
         "key": "IMAP",

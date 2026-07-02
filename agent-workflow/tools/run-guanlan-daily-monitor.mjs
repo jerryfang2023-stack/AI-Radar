@@ -898,6 +898,15 @@ function importanceProfile(item = {}, bodyText = "") {
   const support = (signal) => supportingSignals.push(signal);
   const enterpriseAi = enterpriseAiTransformationProfileForItem(item, bodyText);
 
+  if (isLowValueConsumerOrPlatformPolicyItem(item, bodyText, [])) {
+    return {
+      importance_type: "supporting_signal",
+      importance_score: 2,
+      importance_reason: "consumer entertainment or minor platform policy feature; AI-adjacent but not a core business signal",
+      supporting_signals: ["low_value_ai_adjacent_context"],
+    };
+  }
+
   if (enterpriseAi.matched) {
     support("enterprise_ai_transformation_lens");
     if (enterpriseAi.stage === "production_rollout" || enterpriseAi.stage === "pilot") {
@@ -2025,6 +2034,7 @@ function poolRoutesFor(item, quality, scores, usable, excerpts = [], rawQcDecisi
     && hasRequiredEvidenceHashes
     && nonIndexEvidenceObject
     && !isGenericReportOrListItem(item)
+    && !isLowValueConsumerOrPlatformPolicyItem(item, item.snapshot?.text || item.summary || "", excerpts)
     && !isRepositoryOrCatalogCoreBlockedItem(item)
     && !isStaleCoreCandidate(item);
   if (computedRawQcDecision === "block") {
@@ -2242,6 +2252,19 @@ function isGenericReportOrListItem(item = {}) {
     return true;
   }
   return /startup ideas|buying criteria|adoption 2026|massive ai deals|funding record|funding bubble|funding roundup|biggest funding rounds|pre-seed slowdown|fund focused on ai|ranked by funding|top ai pre-seed investors|pre-seed investors|top ai agent startups|ai agent marketplace|marketplaces landscape|procurement guide|procurement playbook|enterprise business model shift|enterprise ai adoption stalls|agentic ai tools mapped|artificial intelligence startups funded by y combinator|funded companies|companies\s*&\s*verified leads|complete batch breakdown|market report|implementation report|complete guide|framework for investors|vertical report|fastest growing|venture funding quarter|building vertical ai|\btop\s+\d+\b|\buse cases\b|future of ai is vertical|hallucination tax|y combinator w26 batch|field guide|glossary|open source toolkit|ai in procurement orchestration|ai citations\s*&\s*visibility|about github copilot cloud agent|series-b-enterprise-ai-agents|ai agent startups insight partners funding/iu.test(titleUrlSource);
+}
+
+function isLowValueConsumerOrPlatformPolicyItem(item = {}, snapshotText = "", excerpts = []) {
+  const text = commercialSignalText(item, snapshotText || item.snapshot?.text || item.summary || "", excerpts);
+  const consumerEntertainment = /Just Dance|舞力全开|mobile game|手游|游戏快报|玩家|曲库|K-POP|音舞|体感音乐|育碧|腾讯游戏/iu.test(text);
+  const minorPlatformPolicy = /肖像保护|仿冒带货|带货达人|达人账号|素材盗用|侵权账号|侵权内容|平台治理|内容安全|相似内容阻断|举报|处置侵权/iu.test(text);
+  const roundupOrExplainer = /更新汇总|月度更新|latest AI news|monthly update|roundup|weekly digest|why we built|我们为何构建/iu.test(text);
+  const marketCommentary = /瑞银|UBS|分析师|研报|调研|开支|支出|spending|budget|cost concern|analyst/iu.test(text)
+    && !/announces|launches|released|customer deployment|funding round|raises|closed|正式发布|推出|上线|客户部署|融资轮|完成融资/iu.test(text);
+  const ventureFormation = /离开.*VC基金|创办.*VC基金|launch new VC firm|start a separate VC fund|new VC fund/iu.test(text)
+    && !/raises|raised|closed|closes|fund size|\$\s?\d|完成.*募资|基金规模/iu.test(text);
+  const businessAiSignal = /enterprise|B2B|customer deployment|production rollout|procurement|workflow|case study|SaaS|API|SDK|developer platform|paid enterprise|企业|客户|部署|采购|工作流|生产环境|融资|收购|合作伙伴|营收|合同|招标/iu.test(text);
+  return ((consumerEntertainment || minorPlatformPolicy) && !businessAiSignal) || roundupOrExplainer || marketCommentary || ventureFormation;
 }
 
 function hasExplicitChangeAction(item = {}, snapshotText = "", excerpts = []) {
