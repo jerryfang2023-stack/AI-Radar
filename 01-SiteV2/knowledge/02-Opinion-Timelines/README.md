@@ -1,8 +1,8 @@
 ---
 type: opinion_timelines_index
 people_count: 46
-opinion_count: 927
-generated_at: 2026-07-02T01:32:53.792Z
+opinion_count: 962
+generated_at: 2026-07-02T08:10:20.323Z
 ---
 
 # 前沿观点 - 人物时间线目录
@@ -11,26 +11,28 @@ generated_at: 2026-07-02T01:32:53.792Z
 
 ## 人物
 
-- [Peter Yang](people/peter-yang/README.md) - 79 条 - 最新 2026-07-01
-- [Nikunj Kothari](people/nikunj-kothari/README.md) - 52 条 - 最新 2026-07-01
-- [Guillermo Rauch](people/guillermo-rauch/README.md) - 50 条 - 最新 2026-07-01
-- [Zara Zhang](people/zara-zhang/README.md) - 47 条 - 最新 2026-07-01
-- [Aaron Levie](people/aaron-levie/README.md) - 46 条 - 最新 2026-07-01
-- [Peter Steinberger](people/peter-steinberger/README.md) - 30 条 - 最新 2026-07-01
-- [Thariq](people/thariq/README.md) - 22 条 - 最新 2026-07-01
-- [Garry Tan](people/garry-tan/README.md) - 67 条 - 最新 2026-06-30
-- [Swyx](people/swyx/README.md) - 63 条 - 最新 2026-06-30
-- [Dan Shipper](people/dan-shipper/README.md) - 42 条 - 最新 2026-06-30
-- [Amjad Masad](people/amjad-masad/README.md) - 35 条 - 最新 2026-06-30
-- [Claude](people/claude/README.md) - 29 条 - 最新 2026-06-30
-- [Aditya Agarwal](people/aditya-agarwal/README.md) - 25 条 - 最新 2026-06-30
-- [Matt Turck](people/matt-turck/README.md) - 25 条 - 最新 2026-06-30
+- [Peter Yang](people/peter-yang/README.md) - 82 条 - 最新 2026-07-02
+- [Swyx](people/swyx/README.md) - 64 条 - 最新 2026-07-02
+- [Nikunj Kothari](people/nikunj-kothari/README.md) - 55 条 - 最新 2026-07-02
+- [Aaron Levie](people/aaron-levie/README.md) - 47 条 - 最新 2026-07-02
+- [Peter Steinberger](people/peter-steinberger/README.md) - 33 条 - 最新 2026-07-02
+- [Garry Tan](people/garry-tan/README.md) - 70 条 - 最新 2026-07-01
+- [Guillermo Rauch](people/guillermo-rauch/README.md) - 53 条 - 最新 2026-07-01
+- [Zara Zhang](people/zara-zhang/README.md) - 50 条 - 最新 2026-07-01
+- [Dan Shipper](people/dan-shipper/README.md) - 45 条 - 最新 2026-07-01
+- [Thibault Sottiaux](people/thibault-sottiaux/README.md) - 44 条 - 最新 2026-07-01
+- [Amjad Masad](people/amjad-masad/README.md) - 36 条 - 最新 2026-07-01
+- [Claude](people/claude/README.md) - 32 条 - 最新 2026-07-01
+- [Matt Turck](people/matt-turck/README.md) - 27 条 - 最新 2026-07-01
+- [Aditya Agarwal](people/aditya-agarwal/README.md) - 26 条 - 最新 2026-07-01
+- [Thariq](people/thariq/README.md) - 24 条 - 最新 2026-07-01
+- [Google Labs](people/google-labs/README.md) - 14 条 - 最新 2026-07-01
+- [Alex Albert](people/alex-albert/README.md) - 4 条 - 最新 2026-07-01
 - [Nan Yu](people/nan-yu/README.md) - 18 条 - 最新 2026-06-30
 - [Boris Cherny](people/boris-cherny/README.md) - 13 条 - 最新 2026-06-30
 - [Madhu Guru](people/madhu-guru/README.md) - 10 条 - 最新 2026-06-30
 - [Anthropic Engineering](people/anthropic-engineering/README.md) - 4 条 - 最新 2026-06-30
 - [Training Data](people/training-data/README.md) - 3 条 - 最新 2026-06-30
-- [Thibault Sottiaux](people/thibault-sottiaux/README.md) - 43 条 - 最新 2026-06-29
 - [Ryo Lu](people/ryo-lu/README.md) - 14 条 - 最新 2026-06-29
 - [Sam Altman](people/sam-altman/README.md) - 17 条 - 最新 2026-06-26
 - [Simon Willison's Blog](people/simon-willisons-blog/README.md) - 17 条 - 最新 2026-06-26
@@ -40,12 +42,10 @@ generated_at: 2026-07-02T01:32:53.792Z
 - [No Priors](people/no-priors/README.md) - 3 条 - 最新 2026-06-26
 - [The MAD Podcast with Matt Turck](people/the-mad-podcast-with-matt-turck/README.md) - 4 条 - 最新 2026-06-25
 - [Ben's Bites AI Newsletter](people/bens-bites-ai-newsletter/README.md) - 2 条 - 最新 2026-06-25
-- [Google Labs](people/google-labs/README.md) - 13 条 - 最新 2026-06-24
 - [Amanda Askell](people/amanda-askell/README.md) - 8 条 - 最新 2026-06-24
 - [AI & I by Every](people/ai-i-by-every/README.md) - 3 条 - 最新 2026-06-24
 - [Lilian Weng's Blog (OpenAI)](people/lilian-wengs-blog-openai/README.md) - 1 条 - 最新 2026-06-24
 - [Josh Woodward](people/josh-woodward/README.md) - 18 条 - 最新 2026-06-23
-- [Alex Albert](people/alex-albert/README.md) - 3 条 - 最新 2026-06-23
 - [Andrej Karpathy](people/andrej-karpathy/README.md) - 3 条 - 最新 2026-06-23
 - [Interconnects (Nathan Lambert)](people/interconnects-nathan-lambert/README.md) - 2 条 - 最新 2026-06-22
 - [Eugene Yan's Blog](people/eugene-yans-blog/README.md) - 1 条 - 最新 2026-06-21
