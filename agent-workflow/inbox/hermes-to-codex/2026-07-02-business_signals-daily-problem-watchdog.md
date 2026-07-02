@@ -1,4 +1,4 @@
-status: open
+status: resolved
 priority: urgent
 lane: business_signals
 failed_gate: daily_problem_watchdog
@@ -6,6 +6,12 @@ report_path: agent-workflow/reports/2026-07-02-daily-recovery-watchdog.md
 data_generated: unknown
 needed_action: inspect failed production report and repair the smallest responsible stage; do not dispatch a full rerun from Hermes
 created_at: 2026-07-02T02:44:07.950Z
+updated_at: 2026-07-02T11:20:58+08:00
+resolved_at: 2026-07-02T11:20:58+08:00
+resolver: codex
+fix_commit: pending-local-change
+validation: npm run supervise:daily -- --date=2026-07-02
+prevention_added: gate
 source: daily_problem_watchdog
 source_workflow: WaveSight Business Signals PR
 source_run_id: 28559645419
@@ -31,3 +37,8 @@ source_conclusion: failure
 4. Rerun only the exact failed gate or the smallest relevant validation.
 5. Close with `npm run resolve:hermes -- --file=<inbox-file> --fix-commit=<commit-or-pending> --validation=<check> --prevention=<gate|eval|memory|context|not-needed>`.
 
+## Resolution - 2026-07-02T11:20:58+08:00
+
+- fix_commit: pending-local-change
+- validation: npm run supervise:daily -- --date=2026-07-02
+- prevention_added: gate
