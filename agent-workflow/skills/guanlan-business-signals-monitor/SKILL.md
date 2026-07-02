@@ -93,6 +93,7 @@ This is a hard requirement, not a preference.
 - Start from the failed gate, report, run step, or published-data mismatch, then repair that specific stage.
 - If same-date Raw, Pool, Card, Core Pool, or frontstage artifacts already exist, reuse those artifacts for downstream repair and publication unless the failed stage proves they are corrupt or insufficient.
 - If Pool / routed Pool / Core Pool / non-large Core Pool and Top10 or Card supply are already sufficient, do not restart source raw collection just because one provider, peer channel, or quota-dependent source is short.
+- If `pool_core_supply_release=true`, GDELT / keyword / RSS / AI HOT / Anysearch source-channel failures and `unrecovered_failed_sources_max` are diagnostic supply-risk notes, not release blockers, unless a real Pool / Core / coverage / Top10 gate is also failing.
 - After a targeted repair passes the smallest relevant validation, proceed to PR / merge / Pages publication from the repaired artifacts. Do not dispatch another full-chain run to "be safe".
 - If a full-chain rerun is still necessary, first write the checklist result and the specific missing or corrupt artifact that makes artifact reuse impossible.
 

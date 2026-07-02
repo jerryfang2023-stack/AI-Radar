@@ -1,0 +1,356 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-074
+title: "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖"
+original_url: "https://www.ithome.com/0/971/407.htm"
+canonical_url: "https://ithome.com/0/971/407.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-01T23:54:04.000Z"
+collected_at: 2026-07-02T02:28:35.506Z
+language: mixed
+full_text_hash: 2222bd80694ca918
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-074-华为联合上海电信落地-5g-a-ai-大上行样板点-实测峰值速率-1gbps-中心城区年底实现-20mbps-上行连续覆盖.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-074-华为联合上海电信落地-5g-a-ai-大上行样板点-实测峰值速率-1gbps-中心城区年底实现-20mbps-上行连续覆盖.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-body-visible-text
+extraction_quality: medium
+extraction_method: "body-visible-text"
+readability_score: 55
+extractor_diagnostics: {"readability_score":55,"text_length":2230,"paragraph_count":22,"sentence_count":11,"boilerplate_hits":3,"symbol_ratio":0.0009,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+has_full_text: true
+content_length: 2230
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"2222bd80694ca918","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖","discovery_summary":"华为与上海电信在上海西岸美术馆打造5G-A×AI大上行样板点，依托全国首张5G-A×AI大上行商用网络，实测上行峰值1Gbps、下行近4Gbps。当前核心城区热门商圈已实现泛在20Mbps上行连续覆盖，预计年底覆盖整个中心城区。现场以AI眼镜等终端演示多模态交互，2.1GHz 8T8R网络较1.8GHz 4T4R响应更快无卡顿，上行覆盖提升3-5dB，容量翻倍。GSMA于2026年3月发布\"大上行网络倡议\"，提出泛在20Mbps、峰值1Gbps等核心指标。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/971/407.htm","discovered_at":"2026-07-02T02:12:32.489Z","rank_on_page":45,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: 741af0b2899f8d92
+content_hash: 2222bd80694ca918
+semantic_hash: d139999813c01022
+duplicate_of: ""
+first_seen_at: "2026-07-01T23:54:04.000Z"
+last_seen_at: 2026-07-02T02:28:35.506Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_vertical_solution","importance_score":5,"importance_reason":"vertical industry solution; rubric=5 major/platform/industry-shaping","supporting_signals":["adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":2}
+business_elements: {"companies":["IT之家（RSS）"],"products":[],"people":[],"industries":[],"roles":[],"workflows":["部署 / 集成交付"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全"],"numbers":["5","1","20M","4","2.1","8","1.8","3"],"quotes":["泛在 20Mbps、峰值 1Gbps","上下行并重、时延成为决定性体验指标"]}
+evidence_seed: {"company_actions":["华为与上海电信在上海西岸美术馆打造5G-A×AI大上行样板点，依托全国首张5G-A×AI大上行商用网络，实测上行峰值1Gbps、下行近4Gbps。当前核心城区热门商圈已实现泛在20Mbps上行连续覆盖，预计年底覆盖整个中心城区。现场以AI眼镜等终端演示多模态交互，2.1GHz 8T8R网络较1.8GHz 4T4R响应更快无卡顿，上行覆盖提升3-5dB，容量翻倍。GSMA于2026年3月发布\"大上行网络倡议\"，提出泛在20Mbps、峰值1Gbps等核心指标。","据华为介绍，该样板点以智慧文旅场景为载体，集中展示了大上行网络的技术优势与商用价值。","西岸美术馆坐落于黄浦江西岸艺术集聚区，11."],"case_details":["华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 通信 华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖 2026/7/2 7:54:04 来源： IT之家 作者： 问舟 责编： 问舟 评论： 感谢IT之家网友 IT之水天上来 、 科技工作者 、 长在红旗下 、 易团俊 的线索投递！"],"workflow_changes":[],"before_after_clues":["可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。"],"affected_roles":[],"risks_or_constraints":[]}
+missing_information: []
+key_excerpts: [{"type":"product_update","text":"华为与上海电信在上海西岸美术馆打造5G-A×AI大上行样板点，依托全国首张5G-A×AI大上行商用网络，实测上行峰值1Gbps、下行近4Gbps。当前核心城区热门商圈已实现泛在20Mbps上行连续覆盖，预计年底覆盖整个中心城区。现场以AI眼镜等终端演示多模态交互，2.1GHz 8T8R网络较1.8GHz 4T4R响应更快无卡顿，上行覆盖提升3-5dB，容量翻倍。GSMA于2026年3月发布\"大上行网络倡议\"，提出泛在20Mbps、峰值1Gbps等核心指标。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"case_detail","text":"华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 通信 华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖 2026/7/2 7:54:04 来源： IT之家 作者： 问舟 责编： 问舟 评论： 感谢IT之家网友 IT之水天上来 、 科技工作者 、 长在红旗下 、 易团俊 的线索投递！","supports":["signal_card_candidate","relationship_graph_input","case"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"IT之家 7 月 2 日消息，华为官昨日发文称，在 2026 年世界移动通信大会 · 上海启幕前夕，中国电信股份有限公司上海分公司联合华为在上海徐汇西岸美术馆打造了 5G-A×AI 大上行样板点。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"据华为介绍，该样板点以智慧文旅场景为载体，集中展示了大上行网络的技术优势与商用价值。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"西岸美术馆坐落于黄浦江西岸艺术集聚区，11.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"4 公里滨江艺术走廊汇聚近 20 座文化场馆，人流密集且建筑墙体遮挡多，是检验移动网络上行能力的典型复杂场景。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖
+
+## clean_text
+
+华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > IT资讯 > 通信
+华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖
+2026/7/2 7:54:04
+来源： IT之家
+作者： 问舟
+责编： 问舟
+评论：
+感谢IT之家网友 IT之水天上来 、 科技工作者 、 长在红旗下 、 易团俊 的线索投递！
+IT之家 7 月 2 日消息，华为官昨日发文称，在 2026 年世界移动通信大会 · 上海启幕前夕，中国电信股份有限公司上海分公司联合华为在上海徐汇西岸美术馆打造了 5G-A×AI 大上行样板点。
+据华为介绍，该样板点以智慧文旅场景为载体，集中展示了大上行网络的技术优势与商用价值。西岸美术馆坐落于黄浦江西岸艺术集聚区，11.4 公里滨江艺术走廊汇聚近 20 座文化场馆，人流密集且建筑墙体遮挡多，是检验移动网络上行能力的典型复杂场景。样板点落地于馆内“双手知道”纤维艺术特展现场，依托上海电信与华为建成的全国首张 5G-A×AI 大上行商用网络，对 AI 眼镜、多模态 AI 交互等场景进行了系统性实景演示。
+过去三十余年，下行速率几乎是衡量移动网络的唯一标尺。进入 Mobile AI 时代，AI 手机、AI 眼镜、具身智能机器人等终端设备的迅速普及，以及 AIGC 实时生成、多模态实时交互、高清视频回传等场景的涌现，对网络上行带宽、传输稳定性、低时延及并发能力提出了更高要求。
+2026 年 3 月，在西班牙巴塞罗那举行的 2026 年世界移动通信大会（ MWC 2026 ）期间，GSMA 联合领先运营商及全球产业伙伴正式发布“大上行网络倡议”，确立 GigaUplink 为网络演进优先方向，并提出“泛在 20Mbps、峰值 1Gbps”等核心能力指标。
+中国电信首席科学家毕奇指出，Mobile AI 的全面爆发推动网络从“下行优先”迈向“上下行并重、时延成为决定性体验指标”的新阶段。
+据介绍，上海电信自 2026 年 3 月宣布建成全国首张 5G-A×AI 大上行商用网络以来持续推进网络建设。截至目前，上海电信携手华为已建成 5G-A 3CC 站点 3400 余站，依托 F+T 5G-A 多载波聚合和大上行技术，实测上行峰值速率达 1Gbps、下行峰值速率近 4Gbps。当前，核心城区内的热门商圈、步行街道路等重点场景已实现泛在 20Mbps 上行连续覆盖，预计到 2026 年底将覆盖整个中心城区。
+在西岸美术馆样板点，上海电信与华为演示了多项 Mobile AI 典型业务。华为 AI 眼镜是现场核心体验设备，可实时采集展品高清图像与视频流，通过 5G-A 网络高速回传至云端“小艺看世界”智能体完成精准解析，并即时推送展品历史背景、艺术内涵等专属讲解内容。
+华为表示，实测该场景可稳定承载多人并发观展的高负载需求，全程交互实时流畅、无卡顿。除 AI 观展外，样板点还展示了 AI 眼镜在人形识别、物体识别、实时跨语言对话、扫码支付等免手持交互场景的应用。
+IT之家注意到，样板点现场还设置了豆包 AI 对比体验环节：两部终端分别接入 2.1GHz 8T8R 与 1.8GHz 4T4R 网络，同步运行豆包多模态业务。实测 2.1GHz 8T8R 网络下 AI 交互响应更快、输出结果稳定准确，1.8GHz 4T4R 链路则存在 1 至 2 秒响应延迟。8T8R 相较 4T4R，上行覆盖提升 3 至 5dB，上行容量翻倍。
+相关阅读：
+《 广东移动联合华为完成全国首个用户级 5G-A 动态切片验证，为 VIP 提供目标速率保障 》
+《 2026 上海世界移动通信大会开幕，华为携手运营商发布多项创新成果 》
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 上海电信 ， 华为 ， 5GA
+华为 MateBook 14 鸿蒙版笔记本获 HarmonyOS 6.1.0.130 SP15 升级，新增用户分级管理能力
+华为鸿蒙 HarmonyOS 7 花粉 Beta 适配机型公布，含 Mate 60、Pura 70、畅享 70X 等
+阿维塔官宣 6 月交付量达 7459 辆，新车 07L 本月将启预售
+卓易通官宣全面支持华为鸿蒙 HarmonyOS 7.0 系统
+余承东参与设计：华为汽车顶棚外观专利设计曝光，可存放投影幕布
+微信鸿蒙版 App 获 8.0.19.35 尝鲜升级，小程序浮窗功能开始灰度
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## full_text
+
+华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖 - IT之家
+首页
+IT圈
+最会买
+设置
+日夜间
+随系统
+浅色
+深色
+主题色 黑色
+投稿
+订阅
+RSS订阅
+收藏IT之家
+软媒应用
+App客户端
+要知App
+软媒魔方
+业界
+手机
+电脑
+测评
+视频
+AI
+苹果
+iPhone
+鸿蒙
+软件
+智车
+数码
+学院
+游戏
+直播
+5G
+微软
+Win10
+Win11
+专题
+搜索
+首页 > IT资讯 > 通信
+华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖
+2026/7/2 7:54:04
+来源： IT之家
+作者： 问舟
+责编： 问舟
+评论：
+感谢IT之家网友 IT之水天上来 、 科技工作者 、 长在红旗下 、 易团俊 的线索投递！
+IT之家 7 月 2 日消息，华为官昨日发文称，在 2026 年世界移动通信大会 · 上海启幕前夕，中国电信股份有限公司上海分公司联合华为在上海徐汇西岸美术馆打造了 5G-A×AI 大上行样板点。
+据华为介绍，该样板点以智慧文旅场景为载体，集中展示了大上行网络的技术优势与商用价值。西岸美术馆坐落于黄浦江西岸艺术集聚区，11.4 公里滨江艺术走廊汇聚近 20 座文化场馆，人流密集且建筑墙体遮挡多，是检验移动网络上行能力的典型复杂场景。样板点落地于馆内“双手知道”纤维艺术特展现场，依托上海电信与华为建成的全国首张 5G-A×AI 大上行商用网络，对 AI 眼镜、多模态 AI 交互等场景进行了系统性实景演示。
+过去三十余年，下行速率几乎是衡量移动网络的唯一标尺。进入 Mobile AI 时代，AI 手机、AI 眼镜、具身智能机器人等终端设备的迅速普及，以及 AIGC 实时生成、多模态实时交互、高清视频回传等场景的涌现，对网络上行带宽、传输稳定性、低时延及并发能力提出了更高要求。
+2026 年 3 月，在西班牙巴塞罗那举行的 2026 年世界移动通信大会（ MWC 2026 ）期间，GSMA 联合领先运营商及全球产业伙伴正式发布“大上行网络倡议”，确立 GigaUplink 为网络演进优先方向，并提出“泛在 20Mbps、峰值 1Gbps”等核心能力指标。
+中国电信首席科学家毕奇指出，Mobile AI 的全面爆发推动网络从“下行优先”迈向“上下行并重、时延成为决定性体验指标”的新阶段。
+据介绍，上海电信自 2026 年 3 月宣布建成全国首张 5G-A×AI 大上行商用网络以来持续推进网络建设。截至目前，上海电信携手华为已建成 5G-A 3CC 站点 3400 余站，依托 F+T 5G-A 多载波聚合和大上行技术，实测上行峰值速率达 1Gbps、下行峰值速率近 4Gbps。当前，核心城区内的热门商圈、步行街道路等重点场景已实现泛在 20Mbps 上行连续覆盖，预计到 2026 年底将覆盖整个中心城区。
+在西岸美术馆样板点，上海电信与华为演示了多项 Mobile AI 典型业务。华为 AI 眼镜是现场核心体验设备，可实时采集展品高清图像与视频流，通过 5G-A 网络高速回传至云端“小艺看世界”智能体完成精准解析，并即时推送展品历史背景、艺术内涵等专属讲解内容。
+华为表示，实测该场景可稳定承载多人并发观展的高负载需求，全程交互实时流畅、无卡顿。除 AI 观展外，样板点还展示了 AI 眼镜在人形识别、物体识别、实时跨语言对话、扫码支付等免手持交互场景的应用。
+IT之家注意到，样板点现场还设置了豆包 AI 对比体验环节：两部终端分别接入 2.1GHz 8T8R 与 1.8GHz 4T4R 网络，同步运行豆包多模态业务。实测 2.1GHz 8T8R 网络下 AI 交互响应更快、输出结果稳定准确，1.8GHz 4T4R 链路则存在 1 至 2 秒响应延迟。8T8R 相较 4T4R，上行覆盖提升 3 至 5dB，上行容量翻倍。
+相关阅读：
+《 广东移动联合华为完成全国首个用户级 5G-A 动态切片验证，为 VIP 提供目标速率保障 》
+《 2026 上海世界移动通信大会开幕，华为携手运营商发布多项创新成果 》
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+投诉水文
+我要纠错
+下载IT之家APP，签到赚金币兑豪礼
+相关文章
+关键词： 上海电信 ， 华为 ， 5GA
+华为 MateBook 14 鸿蒙版笔记本获 HarmonyOS 6.1.0.130 SP15 升级，新增用户分级管理能力
+华为鸿蒙 HarmonyOS 7 花粉 Beta 适配机型公布，含 Mate 60、Pura 70、畅享 70X 等
+阿维塔官宣 6 月交付量达 7459 辆，新车 07L 本月将启预售
+卓易通官宣全面支持华为鸿蒙 HarmonyOS 7.0 系统
+余承东参与设计：华为汽车顶棚外观专利设计曝光，可存放投影幕布
+微信鸿蒙版 App 获 8.0.19.35 尝鲜升级，小程序浮窗功能开始灰度
+软媒旗下网站：
+IT之家
+最会买 - 返利返现优惠券
+iPhone之家
+Win7之家
+Win10之家
+Win11之家
+软媒旗下软件：
+软媒手机APP应用
+魔方
+最会买
+要知
+
+## extraction_diagnostics
+
+- extraction_method: body-visible-text
+- readability_score: 55
+- fetch_status: fetched-readable-text-body-visible-text
+- extraction_quality: medium
+- diagnostics: {"readability_score":55,"text_length":2230,"paragraph_count":22,"sentence_count":11,"boilerplate_hits":3,"symbol_ratio":0.0009,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"body-visible-text"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   华为与上海电信在上海西岸美术馆打造5G-A×AI大上行样板点，依托全国首张5G-A×AI大上行商用网络，实测上行峰值1Gbps、下行近4Gbps。当前核心城区热门商圈已实现泛在20Mbps上行连续覆盖，预计年底覆盖整个中心城区。现场以AI眼镜等终端演示多模态交互，2.1GHz 8T8R网络较1.8GHz 4T4R响应更快无卡顿，上行覆盖提升3-5dB，容量翻倍。GSMA于2026年3月发布"大上行网络倡议"，提出泛在20Mbps、峰值1Gbps等核心指标。
+
+2. **case_detail**｜supports=signal_card_candidate, relationship_graph_input, case｜importance=high｜confidence=medium
+   华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 通信 华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖 2026/7/2 7:54:04 来源： IT之家 作者： 问舟 责编： 问舟 评论： 感谢IT之家网友 IT之水天上来 、 科技工作者 、 长在红旗下 、 易团俊 的线索投递！
+
+3. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   IT之家 7 月 2 日消息，华为官昨日发文称，在 2026 年世界移动通信大会 · 上海启幕前夕，中国电信股份有限公司上海分公司联合华为在上海徐汇西岸美术馆打造了 5G-A×AI 大上行样板点。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   据华为介绍，该样板点以智慧文旅场景为载体，集中展示了大上行网络的技术优势与商用价值。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   西岸美术馆坐落于黄浦江西岸艺术集聚区，11.
+
+6. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   4 公里滨江艺术走廊汇聚近 20 座文化场馆，人流密集且建筑墙体遮挡多，是检验移动网络上行能力的典型复杂场景。
+
+## business_elements
+
+- companies: IT之家（RSS）
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 暂无公开信息
+- roles: 暂无公开信息
+- workflows: 部署 / 集成交付
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全
+- numbers: 5, 1, 20M, 4, 2.1, 8, 1.8, 3
+- quotes: 泛在 20Mbps、峰值 1Gbps / 上下行并重、时延成为决定性体验指标
+
+## evidence_seed
+
+- company_actions: 华为与上海电信在上海西岸美术馆打造5G-A×AI大上行样板点，依托全国首张5G-A×AI大上行商用网络，实测上行峰值1Gbps、下行近4Gbps。当前核心城区热门商圈已实现泛在20Mbps上行连续覆盖，预计年底覆盖整个中心城区。现场以AI眼镜等终端演示多模态交互，2.1GHz 8T8R网络较1.8GHz 4T4R响应更快无卡顿，上行覆盖提升3-5dB，容量翻倍。GSMA于2026年3月发布"大上行网络倡议"，提出泛在20Mbps、峰值1Gbps等核心指标。 / 据华为介绍，该样板点以智慧文旅场景为载体，集中展示了大上行网络的技术优势与商用价值。 / 西岸美术馆坐落于黄浦江西岸艺术集聚区，11.
+- case_details: 华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖 - IT之家 首页 IT圈 最会买 设置 日夜间 随系统 浅色 深色 主题色 黑色 投稿 订阅 RSS订阅 收藏IT之家 软媒应用 App客户端 要知App 软媒魔方 业界 手机 电脑 测评 视频 AI 苹果 iPhone 鸿蒙 软件 智车 数码 学院 游戏 直播 5G 微软 Win10 Win11 专题 搜索 首页 > IT资讯 > 通信 华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖 2026/7/2 7:54:04 来源： IT之家 作者： 问舟 责编： 问舟 评论： 感谢IT之家网友 IT之水天上来 、 科技工作者 、 长在红旗下 、 易团俊 的线索投递！
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 部署 / 集成交付 的前后变化，需要二搜补足变化前流程。
+- affected_roles: 暂无公开信息
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_vertical_solution
+- importance_score: 5
+- importance_reason: vertical industry solution; rubric=5 major/platform/industry-shaping
+- supporting_signals: adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 2
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- none
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖","discovery_summary":"华为与上海电信在上海西岸美术馆打造5G-A×AI大上行样板点，依托全国首张5G-A×AI大上行商用网络，实测上行峰值1Gbps、下行近4Gbps。当前核心城区热门商圈已实现泛在20Mbps上行连续覆盖，预计年底覆盖整个中心城区。现场以AI眼镜等终端演示多模态交互，2.1GHz 8T8R网络较1.8GHz 4T4R响应更快无卡顿，上行覆盖提升3-5dB，容量翻倍。GSMA于2026年3月发布\"大上行网络倡议\"，提出泛在20Mbps、峰值1Gbps等核心指标。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/971/407.htm","discovered_at":"2026-07-02T02:12:32.489Z","rank_on_page":45,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+华为与上海电信在上海西岸美术馆打造5G-A×AI大上行样板点，依托全国首张5G-A×AI大上行商用网络，实测上行峰值1Gbps、下行近4Gbps。当前核心城区热门商圈已实现泛在20Mbps上行连续覆盖，预计年底覆盖整个中心城区。现场以AI眼镜等终端演示多模态交互，2.1GHz 8T8R网络较1.8GHz 4T4R响应更快无卡顿，上行覆盖提升3-5dB，容量翻倍。GSMA于2026年3月发布"大上行网络倡议"，提出泛在20Mbps、峰值1Gbps等核心指标。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

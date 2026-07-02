@@ -1,0 +1,363 @@
+{
+  "date": "2026-07-02",
+  "generated_at": "2026-07-02T02:46:18.238Z",
+  "signal_card_assets": [
+    {
+      "id": "SIG-20260702-A01",
+      "pool_ref": "P-040",
+      "title": "Cloudflare 推出全新AI流量管理选项：区分搜索、智能体与训练爬虫，保护广告页面",
+      "type": "case",
+      "company": "Cloudflare"
+    },
+    {
+      "id": "SIG-20260702-A02",
+      "pool_ref": "P-003",
+      "title": "Google 2026年6月AI更新汇总",
+      "type": "case",
+      "company": "Google 2026年6月AI更新汇总"
+    },
+    {
+      "id": "SIG-20260702-A03",
+      "pool_ref": "P-007",
+      "title": "我们为何构建ADK 2.0",
+      "type": "case",
+      "company": "我们为何构建ADK 2.0"
+    },
+    {
+      "id": "SIG-20260702-A04",
+      "pool_ref": "P-041",
+      "title": "Cloudflare 推出两项新举措，让 AI 搜索更智能",
+      "type": "product_service",
+      "company": "Cloudflare"
+    },
+    {
+      "id": "SIG-20260702-A05",
+      "pool_ref": "P-001",
+      "title": "Ashton Kutcher离开Sound Ventures，与Morgan Beller共同创办新VC基金",
+      "type": "product_service",
+      "company": "Techcrunch"
+    },
+    {
+      "id": "SIG-20260702-A06",
+      "pool_ref": "P-008",
+      "title": "Gemini Spark，Google 智能体助手，现已登陆 Mac",
+      "type": "product_service",
+      "company": "Gemini Spark，Google 智能体助手，现已登陆 Mac"
+    },
+    {
+      "id": "SIG-20260702-A07",
+      "pool_ref": "P-010",
+      "title": "用 Genkit 构建智能体全栈应用",
+      "type": "case",
+      "company": "用 Genkit 构建智能体全栈应用"
+    },
+    {
+      "id": "SIG-20260702-A08",
+      "pool_ref": "P-061",
+      "title": "瑞银：约六成企业收紧 AI 开支，DeepSeek 等开源大模型有望受益",
+      "type": "product_service",
+      "company": "Ithome"
+    }
+  ],
+  "core_pool_not_promoted": [
+    {
+      "pool_ref": "P-002",
+      "title": "Venice AI 完成 6500 万美元 A 轮融资，估值 10 亿美元",
+      "source_url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-005",
+      "title": "Claude Code v2.1.198 发布",
+      "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
+      "issues": [
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-006",
+      "title": "美国解除对Anthropic Claude Fable 5和Mythos 5的出口限制",
+      "source_url": "https://arstechnica.com/tech-policy/2026/07/after-spooking-trump-into-safety-testing-anthropic-ai-models-get-global-release",
+      "issues": [
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Review evidence boundary and promote only if it can become a source-backed product, funding, or case Card.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-012",
+      "title": "Claude Sonnet 5延续Anthropic隐藏涨价的模式",
+      "source_url": "https://the-decoder.com/claude-sonnet-5-continues-anthropics-pattern-of-hiding-price-increases-behind-unchanged-token-rates",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-014",
+      "title": "Anthropic Fable 5 因越狱被封两周后全球恢复可用",
+      "source_url": "https://the-decoder.com/anthropics-fable-5-is-back-worldwide-after-a-two-week-government-ban-over-a-jailbreak",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-015",
+      "title": "美国解除对Anthropic的Mythos与Fable模型出口限制，7月1日恢复公众访问",
+      "source_url": "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-020",
+      "title": "Enterprise AI transformation: how leading organizations are ...",
+      "source_url": "https://www.dataiku.com/blog/enterprise-ai-transformation",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-027",
+      "title": "Trisham Patil - Forward-Deployed AI Engineer & Researcher",
+      "source_url": "https://in.linkedin.com/in/trishampatil",
+      "issues": [
+        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
+        "fact_type_constraints:social_or_community_source_not_verified_fact",
+        "fact_type_constraints:workforce_retraining_program_not_formal_signal_card",
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact, fact_type_constraints:workforce_retraining_program_not_formal_signal_card, source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-033",
+      "title": "OpenAI limits GPT-5.6 rollout after government request, says ...",
+      "source_url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
+      "issues": [
+        "source_auditability:source_title_translation_missing_or_contaminated",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "source_auditability:source_title_translation_missing_or_contaminated, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-035",
+      "title": "Agentic infrastructure startup Seltz raises $12.5M to help AI agents search the web for answers - SiliconANGLE",
+      "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
+      "issues": [
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-037",
+      "title": "Engram Launches with $98M to Build AI That Actually Knows Your Organization",
+      "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-043",
+      "title": "GLM Coding Pro 发布：面向专业开发者的编码助手",
+      "source_url": "https://zcode.z.ai/en",
+      "issues": [
+        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
+        "fact_type_constraints:social_or_community_source_not_verified_fact"
+      ],
+      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact",
+      "repair_suggestion": "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-044",
+      "title": "Cloudflare 推出 Monetization Gateway 变现网关",
+      "source_url": "https://blog.cloudflare.com/monetization-gateway",
+      "issues": [
+        "fact_type_constraints:user_feedback_or_commentary_not_verified_fact",
+        "fact_type_constraints:social_or_community_source_not_verified_fact"
+      ],
+      "not_promoted_reason": "fact_type_constraints:user_feedback_or_commentary_not_verified_fact, fact_type_constraints:social_or_community_source_not_verified_fact",
+      "repair_suggestion": "Replace feedback or commentary with original reporting or first-party evidence for the claimed business event.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-048",
+      "title": "Announcing our $800M Series C to accelerate the shift to open-source AI",
+      "source_url": "https://www.together.ai/blog/announcing-our-series-c",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "fact_type_constraints:funding_not_single_company_round",
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, fact_type_constraints:funding_not_single_company_round, source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-056",
+      "title": "Startuply.vc: Metorial",
+      "source_url": "https://startuply.vc/startup/metorial-fo7n06",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event",
+      "repair_suggestion": "Recapture or reroute only product/service, funding, or case evidence into Signal Card generation.",
+      "promote_priority": "review"
+    },
+    {
+      "pool_ref": "P-058",
+      "title": "消息称快手可灵 AI 将完成 30 亿美元融资：投后估值 180 亿美元，腾讯参投",
+      "source_url": "https://www.ithome.com/0/971/440.htm",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "valid_page_type:text_indicates_index_only",
+        "fact_type_constraints:funding_not_single_company_round"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, valid_page_type:text_indicates_index_only, fact_type_constraints:funding_not_single_company_round",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-065",
+      "title": "Podcasting platform Riverside enters the newsletter publishing game",
+      "source_url": "https://techcrunch.com/2026/06/30/podcasting-platform-riverside-enters-the-newsletter-publishing-game/",
+      "issues": [
+        "fact_type_constraints:builder_or_opinion_source_not_business_fact",
+        "valid_page_type:newsletter_roundup_requires_original_event_source",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "fact_type_constraints:builder_or_opinion_source_not_business_fact, valid_page_type:newsletter_roundup_requires_original_event_source, business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Use the newsletter only as discovery context; recapture the original dated event source before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-067",
+      "title": "Comment “Arc” to get the full list of YC P26 startups ... - Instagram",
+      "source_url": "https://www.instagram.com/p/DZtIdYbEW11/",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-069",
+      "title": "葡萄牙发布首个欧洲葡语开源大语言模型 AMALIA",
+      "source_url": "https://www.ithome.com/0/971/439.htm",
+      "issues": [
+        "valid_page_type:text_indicates_index_only",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "valid_page_type:text_indicates_index_only, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-070",
+      "title": "舞力全开：派对》今日上线：无需外设，登陆iOS/安卓/鸿蒙",
+      "source_url": "https://www.ithome.com/0/971/414.htm",
+      "issues": [
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-071",
+      "title": "联合国专家组警告：AI 能力进步速度已超过科学认知",
+      "source_url": "https://www.ithome.com/0/971/436.htm",
+      "issues": [
+        "valid_page_type:text_indicates_index_only",
+        "fact_type_constraints:non_commercial_policy_or_ethics_signal"
+      ],
+      "not_promoted_reason": "valid_page_type:text_indicates_index_only, fact_type_constraints:non_commercial_policy_or_ethics_signal",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-072",
+      "title": "华为联合上海电信落地 5G-A×AI 大上行样板点：实测峰值速率 1Gbps，中心城区年底实现 20Mbps 上行连续覆盖",
+      "source_url": "https://www.ithome.com/0/971/407.htm",
+      "issues": [
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-073",
+      "title": "抖音电商上线\"肖像保护功能\"，防范\"AI 仿冒带货达人\"侵权行为",
+      "source_url": "https://www.ithome.com/0/971/329.htm",
+      "issues": [
+        "valid_page_type:text_indicates_index_only"
+      ],
+      "not_promoted_reason": "valid_page_type:text_indicates_index_only",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    },
+    {
+      "pool_ref": "P-075",
+      "title": "Applied AI Architect - Braze | Built In",
+      "source_url": "https://builtin.com/job/applied-ai-architect/10016409",
+      "issues": [
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Add a direct Chinese source-title translation, or replace contaminated title evidence before promoting.",
+      "promote_priority": "medium"
+    },
+    {
+      "pool_ref": "P-078",
+      "title": "AI to impact: Building the AI-Native Enterprise - Paid Program - WSJ",
+      "source_url": "https://partners.wsj.com/ntt-data/ai-to-impact/building-the-ai-native-enterprise/",
+      "issues": [
+        "valid_page_type:technical_article_without_business_event",
+        "business_signal_scope:missing_concrete_funding_product_or_case_event",
+        "source_auditability:source_title_translation_missing_or_contaminated"
+      ],
+      "not_promoted_reason": "valid_page_type:technical_article_without_business_event, business_signal_scope:missing_concrete_funding_product_or_case_event, source_auditability:source_title_translation_missing_or_contaminated",
+      "repair_suggestion": "Resolve to a dated single company, product, funding, or customer event before promoting.",
+      "promote_priority": "low"
+    }
+  ],
+  "skipped": [],
+  "merged": []
+}

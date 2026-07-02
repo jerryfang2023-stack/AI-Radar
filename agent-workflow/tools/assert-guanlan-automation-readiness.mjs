@@ -147,6 +147,7 @@ function assertMonitorReady({ minScore = 80, requireFinalQc = false } = {}) {
   const loopStatus = parseLineValue(loopText, "status");
   const manualIntervention = parseLineValue(loopText, "manual_intervention_required");
   const gateStatus = parseLineValue(gateText, "status").toLowerCase();
+  const poolCoreSupplyRelease = parseLineValue(gateText, "pool_core_supply_release").toLowerCase() === "true";
   const importanceGaps = parseLineValue(gateText, "importance_coverage_gaps");
   const poolImportanceGaps = parseLineValue(gateText, "pool_importance_coverage_gaps");
   const usableCoreEvidenceCount = parseNumberLine(gateText, "usable_core_evidence_count");
@@ -188,9 +189,14 @@ function assertMonitorReady({ minScore = 80, requireFinalQc = false } = {}) {
     finalQcFresh &&
     finalQcResultAccepted &&
     gateAllowsRepair;
+  const supersededByCurrentGate =
+    command === "assets" &&
+    !requireFinalQc &&
+    loopHasHistoricalBlock &&
+    gateAllowsRepair;
 
-  if (loopText && !loopStatusAccepted && !supersededByFinalQc && !repairAllowDegradedAssets && !manualReleaseOverride) reasons.push(`quality loop status is ${loopStatus || "unknown"}`);
-  if (/true/i.test(manualIntervention) && !supersededByFinalQc && !repairAllowDegradedAssets && !manualReleaseOverride) reasons.push("quality loop requires manual intervention");
+  if (loopText && !loopStatusAccepted && !supersededByFinalQc && !supersededByCurrentGate && !repairAllowDegradedAssets && !manualReleaseOverride) reasons.push(`quality loop status is ${loopStatus || "unknown"}`);
+  if (/true/i.test(manualIntervention) && !supersededByFinalQc && !supersededByCurrentGate && !repairAllowDegradedAssets && !manualReleaseOverride) reasons.push("quality loop requires manual intervention");
   for (const key of ["source_distribution", "failed_sources", "fallback_used", "evidence_gaps"]) {
     if (logText && !logText.includes(key)) reasons.push(`monitor log missing ${key}`);
   }
@@ -218,6 +224,8 @@ function assertMonitorReady({ minScore = 80, requireFinalQc = false } = {}) {
     finalQcDecision: finalQcDecision || "not_required",
     finalQcFresh,
     supersededByFinalQc,
+    supersededByCurrentGate,
+    poolCoreSupplyRelease,
     manualReleaseOverride,
     assetScope:
       command === "assets" && finalQcDecision === "allow_with_degradation"
@@ -245,6 +253,8 @@ function main() {
       final_qc_decision: result.finalQcDecision,
       final_qc_fresh: result.finalQcFresh,
       superseded_by_final_qc: result.supersededByFinalQc,
+      superseded_by_current_gate: result.supersededByCurrentGate,
+      pool_core_supply_release: result.poolCoreSupplyRelease,
       manual_release_override: result.manualReleaseOverride,
       asset_scope: result.assetScope,
     });
@@ -259,6 +269,8 @@ function main() {
         final_qc_decision: result.finalQcDecision,
         final_qc_fresh: result.finalQcFresh,
         superseded_by_final_qc: result.supersededByFinalQc,
+        superseded_by_current_gate: result.supersededByCurrentGate,
+        pool_core_supply_release: result.poolCoreSupplyRelease,
         manual_release_override: result.manualReleaseOverride,
           asset_scope: result.assetScope,
         },
@@ -281,6 +293,8 @@ function main() {
         final_qc_decision: result.finalQcDecision,
         final_qc_fresh: result.finalQcFresh,
         superseded_by_final_qc: result.supersededByFinalQc,
+        superseded_by_current_gate: result.supersededByCurrentGate,
+        pool_core_supply_release: result.poolCoreSupplyRelease,
         manual_release_override: result.manualReleaseOverride,
         asset_scope: result.assetScope,
       },

@@ -92,15 +92,11 @@ function isDiagnosticSourceNote(value = "") {
   return /pre-gate filtered|targeted pool\/core refill cycle \d+ added|(?:noise_term|missing_ai_anchor_in_result|job_or_salary_page):?[^=]*=\d+|(?:routed_pool|core_pool|core_non_large)=\d+\/\d+/iu.test(String(value || ""));
 }
 
-function isProviderFallbackNote(value = "") {
-  return /fallback for query|free quota limit|quota|rate limit|429|401|403|415|5\d\d|gateway|timeout|temporarily unavailable|provider/iu.test(String(value || ""));
-}
-
 function splitSourceFailureRecovery(items = [], fallbackRecovered = false) {
   const recovered = [];
   const unrecovered = [];
   for (const item of items) {
-    if (isDiagnosticSourceNote(item) || (fallbackRecovered && isProviderFallbackNote(item))) {
+    if (isDiagnosticSourceNote(item) || fallbackRecovered) {
       recovered.push(item);
     } else {
       unrecovered.push(item);
@@ -514,6 +510,8 @@ export function runGuanlanMonitorQualityGate({
     (!importanceCoverageMustNone || !coverageGapFlag || coverageGapAcceptable) &&
     (!poolImportanceCoverageMustNone || !poolCoverageGapFlag || poolCoverageGapAcceptable);
   const rawCountReleaseByPoolCore = rawCount < effectiveRawMinHard && poolCoreSupplyRelease;
+  // Once combined Pool/Core supply is healthy, peer source-channel failures are
+  // diagnostic supply-risk notes rather than downstream release blockers.
   const sourceFallbackRecovered = poolCoreSupplyRelease;
   const sourceFailureRecovery = splitSourceFailureRecovery(failedSources, sourceFallbackRecovered);
   const recoveredFailedSources = sourceFailureRecovery.recovered;

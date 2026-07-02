@@ -1,0 +1,278 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-015
+title: "美国解除对Anthropic的Mythos与Fable模型出口限制，7月1日恢复公众访问"
+original_url: "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models"
+canonical_url: "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models"
+source_name: "TechCrunch：AI（RSS）"
+source_type: news
+source_level: A
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-01T02:16:06.000Z"
+collected_at: 2026-07-02T02:28:35.200Z
+language: mixed
+full_text_hash: 5f5b12774ea96ff3
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-015-美国解除对anthropic的mythos与fable模型出口限制-7月1日恢复公众访问.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-015-美国解除对anthropic的mythos与fable模型出口限制-7月1日恢复公众访问.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: high
+extraction_method: "content-container"
+readability_score: 97
+extractor_diagnostics: {"readability_score":97,"text_length":4455,"paragraph_count":27,"sentence_count":28,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 4455
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"5f5b12774ea96ff3","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"美国解除对Anthropic的Mythos与Fable模型出口限制，7月1日恢复公众访问","discovery_summary":"美国商务部解除对Anthropic的Mythos与Fable模型的出口许可要求。这两款被视为迄今最先进AI模型的模型自6月12日被列入出口管制清单后，因执行困难导致完全关闭公众访问。Anthropic将于7月1日起恢复公众访问。商务部长Howard Lutnick表示，Anthropic已同意主动检测并应对安全风险、与美国政府协作制定协议与标准，并通报恶意活动。面对亚洲AI公司（如Fugu与Tulonfeng）推出接近Mythos级能力的模型，美方迫于竞争压力放宽限制。上周Lutnick已批准Mythos向白宫批准的特定客户发布。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models","discovered_at":"2026-07-02T02:12:32.554Z","rank_on_page":292,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: merged_provider_duplicates
+url_hash: c7c79a066fc17812
+content_hash: 5f5b12774ea96ff3
+semantic_hash: 5a37e30015ad4761
+duplicate_of: "merged 1 duplicate provider hit(s) before Raw selection"
+first_seen_at: "2026-07-01T02:16:06.000Z"
+last_seen_at: 2026-07-02T02:28:35.200Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context","adoption_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["TechCrunch","AI（RSS）","OpenAI","Anthropic"],"products":[],"people":[],"industries":["金融 / 保险"],"roles":["CIO / IT 负责人","开发者 / 工程团队"],"workflows":["合同审阅 / 法律研究","权限 / 安全治理"],"business_actions":["发布 / 推出"],"affected_departments":["IT / 安全","财务 / 预算"],"numbers":["7","1","6","12","16","30","2026","21"],"quotes":[]}
+evidence_seed: {"company_actions":["Image Credits: Samuel Boivin / NurPhoto / Getty Images AI Trump drops restrictions on Anthropic’s Mythos and Fable models Tim Fernholz 7:16 PM PDT · June 30, 2026 The U.","has lifted a requirement that Anthropic obtain a license before exporting its Mythos and Fable models abroad, a requirement that effectively cut off public access to what are widely considered the most advanced AI models released to date.","On June 12, the U."],"case_details":[],"workflow_changes":["government had added the products to its list of export-restricted technologies, meaning they could no longer be made available to foreign nationals without special approval."],"before_after_clues":["可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","开发者 / 工程团队"],"risks_or_constraints":["美国商务部解除对Anthropic的Mythos与Fable模型的出口许可要求。这两款被视为迄今最先进AI模型的模型自6月12日被列入出口管制清单后，因执行困难导致完全关闭公众访问。Anthropic将于7月1日起恢复公众访问。商务部长Howard Lutnick表示，Anthropic已同意主动检测并应对安全风险、与美国政府协作制定协议与标准，并通报恶意活动。面对亚洲AI公司（如Fugu与Tulonfeng）推出接近Mythos级能力的模型，美方迫于竞争压力放宽限制。上周Lutnick已批准Mythos向白宫批准的特定客户发布。"]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"supporting_context","text":"美国商务部解除对Anthropic的Mythos与Fable模型的出口许可要求。这两款被视为迄今最先进AI模型的模型自6月12日被列入出口管制清单后，因执行困难导致完全关闭公众访问。Anthropic将于7月1日起恢复公众访问。商务部长Howard Lutnick表示，Anthropic已同意主动检测并应对安全风险、与美国政府协作制定协议与标准，并通报恶意活动。面对亚洲AI公司（如Fugu与Tulonfeng）推出接近Mythos级能力的模型，美方迫于竞争压力放宽限制。上周Lutnick已批准Mythos向白宫批准的特定客户发布。","supports":["signal_card_candidate","relationship_graph_input"],"importance":"high","confidence":"high"},{"type":"company_action","text":"Image Credits: Samuel Boivin / NurPhoto / Getty Images AI Trump drops restrictions on Anthropic’s Mythos and Fable models Tim Fernholz 7:16 PM PDT · June 30, 2026 The U.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"product_update","text":"has lifted a requirement that Anthropic obtain a license before exporting its Mythos and Fable models abroad, a requirement that effectively cut off public access to what are widely considered the most advanced AI models released to date.","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"high"},{"type":"opinion","text":"The AI lab said it would begin restoring access to the models on Wednesday, July 1.","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"high"},{"type":"company_action","text":"On June 12, the U.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"},{"type":"workflow_change","text":"government had added the products to its list of export-restricted technologies, meaning they could no longer be made available to foreign nationals without special approval.","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"high"}]
+theme: technical-iteration-signal
+keyword_group: technical-iteration-signal
+copyright_note: local research archive only
+---
+
+# 美国解除对Anthropic的Mythos与Fable模型出口限制，7月1日恢复公众访问
+
+## clean_text
+
+Image Credits: Samuel Boivin / NurPhoto / Getty Images
+AI
+Trump drops restrictions on Anthropic’s Mythos and Fable models
+Tim Fernholz
+7:16 PM PDT · June 30, 2026
+The U.S. has lifted a requirement that Anthropic obtain a license before exporting its Mythos and Fable models abroad, a requirement that effectively cut off public access to what are widely considered the most advanced AI models released to date.
+The AI lab said it would begin restoring access to the models on Wednesday, July 1.
+On June 12, the U.S. government had added the products to its list of export-restricted technologies, meaning they could no longer be made available to foreign nationals without special approval. Complying with that rule proved impractical at scale, forcing Anthropic to end public access to the models altogether.
+Now, after weeks of talks, Secretary of Commerce Howard Lutnick said Anthropic “has agreed to proactively detect and address security risks associated with the models; to work diligently with the U.S. government on protocols and standards and releases for Mythos, Fable and future models; and to inform the US government of any malicious activity.”
+Anthropic had already publicly pledged to do much of this voluntarily, months before the export rule existed. That’s part of why cybersecurity experts were skeptical of the restrictions in the first place. To them, the ban looked less like a security fix and more like leverage, a way for the Trump administration to punish Anthropic for its executives’ public criticism of how the government, and the president’s political opponents, might use the technology.
+Mythos was originally made available to a select group of organizations beginning in April to allay concerns about its ability to identify and exploit vulnerabilities in software, while a version called Fable was released to the public in June with additional security guardrails.
+However, with Asian AI companies beginning to release their own AI models approaching Mythos-level capabilities — among them Fugu and Tulongfeng — the U.S. government was under pressure to ease its restrictions on Anthropic to ensure that American AI could compete globally.
+Last week, Lutnick cleared Mythos to be released to select customers approved by the White House. OpenAI’s latest models were also released to a group of organizations approved by the Trump team, instead of the public.
+The Trump administration’s erratic approach to AI policymaking has left companies across the industry with little clarity about what will govern future model releases. An executive order issued in June that signaled a desire to review models ahead of release was criticized by influential analysts like Dean W. Ball, who recently started a policy position at OpenAI.
+Topics
+AI , Anthropic , fable , Government & Policy , Mythos , Trump Administration
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Tim Fernholz
+Senior Reporter
+Tim Fernholz is a journalist who writes about technology, finance and public policy. He has closely covered the rise of the private space industry and is the author of Rocket Billionaires: Elon Musk, Jeff Bezos and the New Space Race. Formerly, he was a senior reporter at Quartz, the global business news site, for more than a decade, and began his career as a political reporter in Washington, D.C.
+You can contact or verify outreach from Tim by emailing tim.fernholz@techcrunch.com or via an encrypted message to tim_fernholz.21 on Signal.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Flipper Device’s new Busy Bar is a customizable display for productivity
+Ivan Mehta
+Ford rehires ‘gray beard’ engineers after AI falls short
+Anthony Ha
+Govee’s smart nugget ice maker makes every iced drink feel like a luxury
+Aisha Malik
+Instagram is testing more ways to customize ‘Your Algorithm’
+Anthony Ha
+Asian AI startups launch Mythos-like models as Anthropic’s export ban drags on
+Kate Park
+FTC gives Musk the OK to acquire SpaceX alumni startup Mesh
+Marina Temkin
+Corgi, the buzzy Y Combinator-backed insurance tech startup, says it didn’t steal an open source product
+Julie Bort
+Loading the next article
+Error loading the next article
+
+## full_text
+
+Image Credits: Samuel Boivin / NurPhoto / Getty Images
+AI
+Trump drops restrictions on Anthropic’s Mythos and Fable models
+Tim Fernholz
+7:16 PM PDT · June 30, 2026
+The U.S. has lifted a requirement that Anthropic obtain a license before exporting its Mythos and Fable models abroad, a requirement that effectively cut off public access to what are widely considered the most advanced AI models released to date.
+The AI lab said it would begin restoring access to the models on Wednesday, July 1.
+On June 12, the U.S. government had added the products to its list of export-restricted technologies, meaning they could no longer be made available to foreign nationals without special approval. Complying with that rule proved impractical at scale, forcing Anthropic to end public access to the models altogether.
+Now, after weeks of talks, Secretary of Commerce Howard Lutnick said Anthropic “has agreed to proactively detect and address security risks associated with the models; to work diligently with the U.S. government on protocols and standards and releases for Mythos, Fable and future models; and to inform the US government of any malicious activity.”
+Anthropic had already publicly pledged to do much of this voluntarily, months before the export rule existed. That’s part of why cybersecurity experts were skeptical of the restrictions in the first place. To them, the ban looked less like a security fix and more like leverage, a way for the Trump administration to punish Anthropic for its executives’ public criticism of how the government, and the president’s political opponents, might use the technology.
+Mythos was originally made available to a select group of organizations beginning in April to allay concerns about its ability to identify and exploit vulnerabilities in software, while a version called Fable was released to the public in June with additional security guardrails.
+However, with Asian AI companies beginning to release their own AI models approaching Mythos-level capabilities — among them Fugu and Tulongfeng — the U.S. government was under pressure to ease its restrictions on Anthropic to ensure that American AI could compete globally.
+Last week, Lutnick cleared Mythos to be released to select customers approved by the White House. OpenAI’s latest models were also released to a group of organizations approved by the Trump team, instead of the public.
+The Trump administration’s erratic approach to AI policymaking has left companies across the industry with little clarity about what will govern future model releases. An executive order issued in June that signaled a desire to review models ahead of release was criticized by influential analysts like Dean W. Ball, who recently started a policy position at OpenAI.
+Topics
+AI , Anthropic , fable , Government & Policy , Mythos , Trump Administration
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+Tim Fernholz
+Senior Reporter
+Tim Fernholz is a journalist who writes about technology, finance and public policy. He has closely covered the rise of the private space industry and is the author of Rocket Billionaires: Elon Musk, Jeff Bezos and the New Space Race. Formerly, he was a senior reporter at Quartz, the global business news site, for more than a decade, and began his career as a political reporter in Washington, D.C.
+You can contact or verify outreach from Tim by emailing tim.fernholz@techcrunch.com or via an encrypted message to tim_fernholz.21 on Signal.
+View Bio
+November 4
+Boston
+Last chance to save up to $190 on TechCrunch Founder Summit. Join 1,000+ founders and VCs at all stages for real-world scaling insights and connections that move the needle.
+Savings end June 26, 11:59 p.m. PT .
+REGISTER NOW
+Most Popular
+Flipper Device’s new Busy Bar is a customizable display for productivity
+Ivan Mehta
+Ford rehires ‘gray beard’ engineers after AI falls short
+Anthony Ha
+Govee’s smart nugget ice maker makes every iced drink feel like a luxury
+Aisha Malik
+Instagram is testing more ways to customize ‘Your Algorithm’
+Anthony Ha
+Asian AI startups launch Mythos-like models as Anthropic’s export ban drags on
+Kate Park
+FTC gives Musk the OK to acquire SpaceX alumni startup Mesh
+Marina Temkin
+Corgi, the buzzy Y Combinator-backed insurance tech startup, says it didn’t steal an open source product
+Julie Bort
+Loading the next article
+Error loading the next article
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 97
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: high
+- diagnostics: {"readability_score":97,"text_length":4455,"paragraph_count":27,"sentence_count":28,"boilerplate_hits":0,"symbol_ratio":0.0002,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **supporting_context**｜supports=signal_card_candidate, relationship_graph_input｜importance=high｜confidence=high
+   美国商务部解除对Anthropic的Mythos与Fable模型的出口许可要求。这两款被视为迄今最先进AI模型的模型自6月12日被列入出口管制清单后，因执行困难导致完全关闭公众访问。Anthropic将于7月1日起恢复公众访问。商务部长Howard Lutnick表示，Anthropic已同意主动检测并应对安全风险、与美国政府协作制定协议与标准，并通报恶意活动。面对亚洲AI公司（如Fugu与Tulonfeng）推出接近Mythos级能力的模型，美方迫于竞争压力放宽限制。上周Lutnick已批准Mythos向白宫批准的特定客户发布。
+
+2. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   Image Credits: Samuel Boivin / NurPhoto / Getty Images AI Trump drops restrictions on Anthropic’s Mythos and Fable models Tim Fernholz 7:16 PM PDT · June 30, 2026 The U.
+
+3. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=high
+   has lifted a requirement that Anthropic obtain a license before exporting its Mythos and Fable models abroad, a requirement that effectively cut off public access to what are widely considered the most advanced AI models released to date.
+
+4. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=high
+   The AI lab said it would begin restoring access to the models on Wednesday, July 1.
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   On June 12, the U.
+
+6. **workflow_change**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=high
+   government had added the products to its list of export-restricted technologies, meaning they could no longer be made available to foreign nationals without special approval.
+
+## business_elements
+
+- companies: TechCrunch, AI（RSS）, OpenAI, Anthropic
+- products: 暂无公开信息
+- people: 暂无公开信息
+- industries: 金融 / 保险
+- roles: CIO / IT 负责人, 开发者 / 工程团队
+- workflows: 合同审阅 / 法律研究, 权限 / 安全治理
+- business_actions: 发布 / 推出
+- affected_departments: IT / 安全, 财务 / 预算
+- numbers: 7, 1, 6, 12, 16, 30, 2026, 21
+- quotes: 暂无公开信息
+
+## evidence_seed
+
+- company_actions: Image Credits: Samuel Boivin / NurPhoto / Getty Images AI Trump drops restrictions on Anthropic’s Mythos and Fable models Tim Fernholz 7:16 PM PDT · June 30, 2026 The U. / has lifted a requirement that Anthropic obtain a license before exporting its Mythos and Fable models abroad, a requirement that effectively cut off public access to what are widely considered the most advanced AI models released to date. / On June 12, the U.
+- case_details: 暂无公开信息
+- workflow_changes: government had added the products to its list of export-restricted technologies, meaning they could no longer be made available to foreign nationals without special approval.
+- before_after_clues: 可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 开发者 / 工程团队
+- risks_or_constraints: 美国商务部解除对Anthropic的Mythos与Fable模型的出口许可要求。这两款被视为迄今最先进AI模型的模型自6月12日被列入出口管制清单后，因执行困难导致完全关闭公众访问。Anthropic将于7月1日起恢复公众访问。商务部长Howard Lutnick表示，Anthropic已同意主动检测并应对安全风险、与美国政府协作制定协议与标准，并通报恶意活动。面对亚洲AI公司（如Fugu与Tulonfeng）推出接近Mythos级能力的模型，美方迫于竞争压力放宽限制。上周Lutnick已批准Mythos向白宫批准的特定客户发布。
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context,adoption_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"美国解除对Anthropic的Mythos与Fable模型出口限制，7月1日恢复公众访问","discovery_summary":"美国商务部解除对Anthropic的Mythos与Fable模型的出口许可要求。这两款被视为迄今最先进AI模型的模型自6月12日被列入出口管制清单后，因执行困难导致完全关闭公众访问。Anthropic将于7月1日起恢复公众访问。商务部长Howard Lutnick表示，Anthropic已同意主动检测并应对安全风险、与美国政府协作制定协议与标准，并通报恶意活动。面对亚洲AI公司（如Fugu与Tulonfeng）推出接近Mythos级能力的模型，美方迫于竞争压力放宽限制。上周Lutnick已批准Mythos向白宫批准的特定客户发布。","source_name":"TechCrunch：AI（RSS）","origin_url":"https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models","discovered_at":"2026-07-02T02:12:32.554Z","rank_on_page":292,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+美国商务部解除对Anthropic的Mythos与Fable模型的出口许可要求。这两款被视为迄今最先进AI模型的模型自6月12日被列入出口管制清单后，因执行困难导致完全关闭公众访问。Anthropic将于7月1日起恢复公众访问。商务部长Howard Lutnick表示，Anthropic已同意主动检测并应对安全风险、与美国政府协作制定协议与标准，并通报恶意活动。面对亚洲AI公司（如Fugu与Tulonfeng）推出接近Mythos级能力的模型，美方迫于竞争压力放宽限制。上周Lutnick已批准Mythos向白宫批准的特定客户发布。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。

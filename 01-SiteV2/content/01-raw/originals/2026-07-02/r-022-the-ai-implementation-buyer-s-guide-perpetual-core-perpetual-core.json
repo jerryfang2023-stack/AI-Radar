@@ -1,0 +1,296 @@
+{
+  "schema_version": "raw-evidence-v2",
+  "raw_id": "R-022",
+  "title": "The AI Implementation Buyer's Guide — Perpetual Core | Perpetual Core",
+  "original_url": "https://perpetualcore.com/guide/ai-implementation-buyers-guide",
+  "canonical_url": "https://perpetualcore.com/guide/ai-implementation-buyers-guide",
+  "source_name": "keyword search / Anysearch",
+  "source_type": "web",
+  "source_level": "B",
+  "source_level_role": "traceability_only_not_value_score_or_core_gate",
+  "evidence_object_type": "regulatory_or_procurement",
+  "evidence_object_usable": true,
+  "event_evidence": true,
+  "index_only_evidence": false,
+  "acquisition_source_level": "M",
+  "acquisition_channel": "keyword-search",
+  "research_status": "not_research",
+  "search_intent": "find_original_source",
+  "search_path": "procurement_marketplace",
+  "search_path_label": "采购 / 招投标 / Marketplace 路径",
+  "enterprise_ai_transformation_lens": true,
+  "enterprise_ai_transformation_stage": "production_rollout",
+  "enterprise_ai_transformation_reason": "enterprise_ai_implementation_signal",
+  "author": "",
+  "published_at": "",
+  "collected_at": "2026-07-02T02:28:35.235Z",
+  "language": "mixed",
+  "full_text": "Executive summary\nProduction AI implementation at an organizational layer costs $75K–$250K in year one, regardless of who you hire. The variable is who pockets the margin: an SI consultancy, a freelance prompt engineer, an in-house team, or a focused studio like ours. The install fails not because of bad models or bad prompts — it fails because outcome evaluation gets skipped, and nobody can answer whether it worked.\nThis guide walks operators through what to budget, what to demand from vendors, what to put in the contract, and — most usefully — when to walk away from an AI install entirely. It's vendor-agnostic; we wrote it because the conversations we have on our own first sales calls keep repeating the same evaluation gaps, and most of the time the right answer for the buyer is not \"hire us.\"\n1. The four cost buckets\nEvery AI install has four cost buckets. Most quotes name two and hope you forget about the other two.\nBucket 1 — Vendor subscriptions\nThe obvious one. Model providers (OpenAI, Anthropic, Google), embedding/vector store, orchestration layer, downstream system seats (CRM, calendar, email). For a 25-person organization running production AI on real workflows, plan for $1,500–$3,500 per month , or $18K–$42K annualized. The teams that get to $200K subscription bills usually have an uncapped model + a chatty integration loop and didn't notice for three quarters.\nBucket 2 — Engineering time\nThe biggest hidden cost. A two-week prototype doesn't ship to production. Real installs take 6–10 weeks for the first workflow , plus 2–4 weeks for each additional workflow. Budget $30K–$80K of internal senior engineering time (opportunity cost from other work), or $50K–$150K for an external team that already knows the failure modes. If you're being quoted \"two weeks, $5K\" by a freelance prompt engineer, that's a Loom demo, not an install.\nBucket 3 — Integration debt\nNobody quotes this. Your AI has to read from somewhere and write to somewhere — Gmail, Calendar, Slack, CRM, DMS, billing system, whatever. A meaningful install touches 5–10 systems . Each integration is 1–3 days of engineering done right (with audit logging, retries, idempotency, error escalation). That's another $20K–$60K nobody put in the proposal.\nBucket 4 — Outcome eval + handoff\nThe most-skipped, most-load-bearing bucket. Measurement infrastructure, before/after windows, holdout groups, quarterly review cadence, written handoff for whoever inherits this in six months. $10K–$25K done right. $0 done wrong — and $0 is what most installs spend on it, which is why they get quietly turned off when a champion leaves.\nHonest year-one total\nAdd it up: $75K–$250K to ship one meaningful AI install at a real organization, regardless of who you hire. The second workflow is cheaper because integration debt and outcome-eval scaffolding carry over. But the first one is between $75K and $250K of total ownership cost.\n2. The outcome-eval framework\nIf you remember nothing else from this guide, remember this. Before any code ships, write down the answers to these three questions and get them co-signed by the operator who will inherit this:\nWhat metric is this install supposed to move? Named, specific, measurable. \"Improve productivity\" doesn't count. \"Reduce intake-form processing from 12 min to under 3 min per case\" counts.\nWhat's the baseline, and how was it measured? A reading taken before the install, in the same measurement frame you'll use after. Not \"we think it was about an hour.\" A logged sample with a known n.\nWhat's the recheck schedule and the decision rule? Measurement windows at 6, 12, and 24 weeks. A decision rule specifying at what number the install gets renewed, modified, or killed. Written down before code ships. Co-signed.\nThat's it. Three things. Most installs skip them because the vendor doesn't want to be measured and the buyer doesn't want the answer. Defining outcome-eval is a self-imposed test that some vendors will fail; rather sign their refund clause now than write a $200K post-mortem in eight months.\n3. Vendor evaluation rubric\nThree asks that separate vendors who do this seriously from vendors who do it for a living.\nAsk 1 — \"Show me an outcome-eval scope you wrote for a comparable client.\"\nTwo-page written document. Operator named (or anonymized by sector). Metric, baseline methodology, recheck windows, decision rule. If they can't produce one — even redacted — they don't do it. Move on.\nAsk 2 — \"Define the metric you'd commit to moving for us, before we sign.\"\nThe vendor who names a specific number and risks being wrong is the vendor who does this work seriously. The vendor who pivots into \"we'll see qualitative benefits\" or \"AI is a journey, not a destination\" is selling motion, not outcomes.\nAsk 3 — \"What's your decision rule if the metric doesn't move?\"\nTrust the vendor who says: \"We recommend killing the install and refund the maintenance retainer.\" Walk away from the vendor who says: \"We'll iterate.\" Iteration without a kill rule is rent.\nThree smells worth flagging\nThe vendor only sells one model. Production workflows need different models for different tasks. A single-model vendor will hammer every nail with the same hammer for as long as you keep paying.\nThe vendor's proposal has no audit-log line. You can't measure what you don't log. Audit log is a Day-One feature, not a Phase-Three roadmap item.\nThe vendor won't name a real client. Acceptable if your sector is sensitive (we don't name ours either). Not acceptable if the vendor is selling consumer AI into mid-market and still won't put a logo on the slide.\n4. Sample contract terms\nEight clauses we'd put in any AI implementation contract — as buyer or seller. None of these are legal advice; show them to your counsel before signing anything.\nMetric-bound milestones. Payment schedule tied to outcome-eval reading checkpoints, not just delivery.\nData ownership and portability. All embeddings, training datasets, audit logs, and configurations are owned by the buyer and exportable on 30 days' notice.\nNo-train clause. Vendor cannot train models on buyer's data, period. Includes downstream model providers the vendor uses.\nAudit-log retention. Buyer-side audit log with 12-month minimum retention. Vendor cannot purge before that window.\nKill clause. Buyer can terminate the engagement and the running install with 30 days' notice; vendor refunds prorated retainer.\nOff-boarding deliverable. Written documentation, training session, and credential handover when the engagement ends. Spelled out as a separate deliverable, not \"best efforts.\"\nSLA tied to engagement risk profile. Healthcare/finance gets a stricter SLA than internal productivity. Specify uptime, response time, and escalation path explicitly.\nThe Engine commitment line (if applicable). We line-item the 10–15% of revenue that flows to the Institute for Human Advancement on every invoice. If you're buying from a vendor that claims mission alignment, ask them to show it on the invoice.\n5. When not to install AI\nFour signals that the right answer is \"not yet\" or \"not at all.\"\nThe metric isn't broken. If the workflow already moves the number you care about, installing AI is a cost-add, not a value-add. Optimize what's broken first.\nThe data is genuinely confidential. Not \"we'd rather not share.\" Genuinely classified, regulated, or under-NDA. Some workflows shouldn't touch an external model regardless of the vendor's privacy claims. Use those workflows as the LAST AI target, not the first.\nThe team is in a transition. A merger, an exec rotation, a layoff cycle. Installing operating-layer AI during org turbulence is how you get an abandoned install in nine months. Wait until the team is stable enough to inherit and own it.\nYou can't name an operator who will own the result. \"We'll figure it out post-install\" is the most reliable predictor of an install that gets quietly turned off. Name the owner before signing the SOW.\nOn any of these four, the honest move from your vendor is defer or refer . We do this constantly. We'd rather refer you to a vendor whose timing fits than sell you something you'll regret.\n6. References & further reading\nFrom our own writing:\nWhat an AI install actually costs — expanded version of section 1, with comparison against freelancer and SI routes.\nOutcome-eval, the line item every AI install skips — expanded version of section 2 with the three vendor-asks checklist.\nAtlas Discovery — our productized two-week audit ($5K–$15K) that produces the outcome-eval scope as a deliverable.\nHow we compare to ChatGPT Teams and Claude for Teams — honest feature matrix.\nThe Perpetual Engine — the structural commitment that 10–15% of every revenue dollar funds the Institute for Human Advancement.\nThis guide is free to read, share, and quote. If it saved you money or kept you from a bad install, the right return is to send it to the operator on your team who hasn't seen it yet.",
+  "clean_text": "Executive summary\nProduction AI implementation at an organizational layer costs $75K–$250K in year one, regardless of who you hire. The variable is who pockets the margin: an SI consultancy, a freelance prompt engineer, an in-house team, or a focused studio like ours. The install fails not because of bad models or bad prompts — it fails because outcome evaluation gets skipped, and nobody can answer whether it worked.\nThis guide walks operators through what to budget, what to demand from vendors, what to put in the contract, and — most usefully — when to walk away from an AI install entirely. It's vendor-agnostic; we wrote it because the conversations we have on our own first sales calls keep repeating the same evaluation gaps, and most of the time the right answer for the buyer is not \"hire us.\"\n1. The four cost buckets\nEvery AI install has four cost buckets. Most quotes name two and hope you forget about the other two.\nBucket 1 — Vendor subscriptions\nThe obvious one. Model providers (OpenAI, Anthropic, Google), embedding/vector store, orchestration layer, downstream system seats (CRM, calendar, email). For a 25-person organization running production AI on real workflows, plan for $1,500–$3,500 per month , or $18K–$42K annualized. The teams that get to $200K subscription bills usually have an uncapped model + a chatty integration loop and didn't notice for three quarters.\nBucket 2 — Engineering time\nThe biggest hidden cost. A two-week prototype doesn't ship to production. Real installs take 6–10 weeks for the first workflow , plus 2–4 weeks for each additional workflow. Budget $30K–$80K of internal senior engineering time (opportunity cost from other work), or $50K–$150K for an external team that already knows the failure modes. If you're being quoted \"two weeks, $5K\" by a freelance prompt engineer, that's a Loom demo, not an install.\nBucket 3 — Integration debt\nNobody quotes this. Your AI has to read from somewhere and write to somewhere — Gmail, Calendar, Slack, CRM, DMS, billing system, whatever. A meaningful install touches 5–10 systems . Each integration is 1–3 days of engineering done right (with audit logging, retries, idempotency, error escalation). That's another $20K–$60K nobody put in the proposal.\nBucket 4 — Outcome eval + handoff\nThe most-skipped, most-load-bearing bucket. Measurement infrastructure, before/after windows, holdout groups, quarterly review cadence, written handoff for whoever inherits this in six months. $10K–$25K done right. $0 done wrong — and $0 is what most installs spend on it, which is why they get quietly turned off when a champion leaves.\nHonest year-one total\nAdd it up: $75K–$250K to ship one meaningful AI install at a real organization, regardless of who you hire. The second workflow is cheaper because integration debt and outcome-eval scaffolding carry over. But the first one is between $75K and $250K of total ownership cost.\n2. The outcome-eval framework\nIf you remember nothing else from this guide, remember this. Before any code ships, write down the answers to these three questions and get them co-signed by the operator who will inherit this:\nWhat metric is this install supposed to move? Named, specific, measurable. \"Improve productivity\" doesn't count. \"Reduce intake-form processing from 12 min to under 3 min per case\" counts.\nWhat's the baseline, and how was it measured? A reading taken before the install, in the same measurement frame you'll use after. Not \"we think it was about an hour.\" A logged sample with a known n.\nWhat's the recheck schedule and the decision rule? Measurement windows at 6, 12, and 24 weeks. A decision rule specifying at what number the install gets renewed, modified, or killed. Written down before code ships. Co-signed.\nThat's it. Three things. Most installs skip them because the vendor doesn't want to be measured and the buyer doesn't want the answer. Defining outcome-eval is a self-imposed test that some vendors will fail; rather sign their refund clause now than write a $200K post-mortem in eight months.\n3. Vendor evaluation rubric\nThree asks that separate vendors who do this seriously from vendors who do it for a living.\nAsk 1 — \"Show me an outcome-eval scope you wrote for a comparable client.\"\nTwo-page written document. Operator named (or anonymized by sector). Metric, baseline methodology, recheck windows, decision rule. If they can't produce one — even redacted — they don't do it. Move on.\nAsk 2 — \"Define the metric you'd commit to moving for us, before we sign.\"\nThe vendor who names a specific number and risks being wrong is the vendor who does this work seriously. The vendor who pivots into \"we'll see qualitative benefits\" or \"AI is a journey, not a destination\" is selling motion, not outcomes.\nAsk 3 — \"What's your decision rule if the metric doesn't move?\"\nTrust the vendor who says: \"We recommend killing the install and refund the maintenance retainer.\" Walk away from the vendor who says: \"We'll iterate.\" Iteration without a kill rule is rent.\nThree smells worth flagging\nThe vendor only sells one model. Production workflows need different models for different tasks. A single-model vendor will hammer every nail with the same hammer for as long as you keep paying.\nThe vendor's proposal has no audit-log line. You can't measure what you don't log. Audit log is a Day-One feature, not a Phase-Three roadmap item.\nThe vendor won't name a real client. Acceptable if your sector is sensitive (we don't name ours either). Not acceptable if the vendor is selling consumer AI into mid-market and still won't put a logo on the slide.\n4. Sample contract terms\nEight clauses we'd put in any AI implementation contract — as buyer or seller. None of these are legal advice; show them to your counsel before signing anything.\nMetric-bound milestones. Payment schedule tied to outcome-eval reading checkpoints, not just delivery.\nData ownership and portability. All embeddings, training datasets, audit logs, and configurations are owned by the buyer and exportable on 30 days' notice.\nNo-train clause. Vendor cannot train models on buyer's data, period. Includes downstream model providers the vendor uses.\nAudit-log retention. Buyer-side audit log with 12-month minimum retention. Vendor cannot purge before that window.\nKill clause. Buyer can terminate the engagement and the running install with 30 days' notice; vendor refunds prorated retainer.\nOff-boarding deliverable. Written documentation, training session, and credential handover when the engagement ends. Spelled out as a separate deliverable, not \"best efforts.\"\nSLA tied to engagement risk profile. Healthcare/finance gets a stricter SLA than internal productivity. Specify uptime, response time, and escalation path explicitly.\nThe Engine commitment line (if applicable). We line-item the 10–15% of revenue that flows to the Institute for Human Advancement on every invoice. If you're buying from a vendor that claims mission alignment, ask them to show it on the invoice.\n5. When not to install AI\nFour signals that the right answer is \"not yet\" or \"not at all.\"\nThe metric isn't broken. If the workflow already moves the number you care about, installing AI is a cost-add, not a value-add. Optimize what's broken first.\nThe data is genuinely confidential. Not \"we'd rather not share.\" Genuinely classified, regulated, or under-NDA. Some workflows shouldn't touch an external model regardless of the vendor's privacy claims. Use those workflows as the LAST AI target, not the first.\nThe team is in a transition. A merger, an exec rotation, a layoff cycle. Installing operating-layer AI during org turbulence is how you get an abandoned install in nine months. Wait until the team is stable enough to inherit and own it.\nYou can't name an operator who will own the result. \"We'll figure it out post-install\" is the most reliable predictor of an install that gets quietly turned off. Name the owner before signing the SOW.\nOn any of these four, the honest move from your vendor is defer or refer . We do this constantly. We'd rather refer you to a vendor whose timing fits than sell you something you'll regret.\n6. References & further reading\nFrom our own writing:\nWhat an AI install actually costs — expanded version of section 1, with comparison against freelancer and SI routes.\nOutcome-eval, the line item every AI install skips — expanded version of section 2 with the three vendor-asks checklist.\nAtlas Discovery — our productized two-week audit ($5K–$15K) that produces the outcome-eval scope as a deliverable.\nHow we compare to ChatGPT Teams and Claude for Teams — honest feature matrix.\nThe Perpetual Engine — the structural commitment that 10–15% of every revenue dollar funds the Institute for Human Advancement.\nThis guide is free to read, share, and quote. If it saved you money or kept you from a bad install, the right return is to send it to the operator on your team who hasn't seen it yet.",
+  "markdown_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-02/r-022-the-ai-implementation-buyer-s-guide-perpetual-core-perpetual-core.md",
+  "json_snapshot_path": "01-SiteV2/content/01-raw/originals/2026-07-02/r-022-the-ai-implementation-buyer-s-guide-perpetual-core-perpetual-core.json",
+  "html_snapshot_path": "",
+  "screenshot_path": "",
+  "fetch_status": "fetched-readable-text-article",
+  "extraction_quality": "high",
+  "extraction_method": "article",
+  "readability_score": 97,
+  "extractor_diagnostics": {
+    "readability_score": 97,
+    "text_length": 8931,
+    "paragraph_count": 57,
+    "sentence_count": 114,
+    "boilerplate_hits": 0,
+    "symbol_ratio": 0,
+    "replacement_count": 0,
+    "replacement_ratio": 0,
+    "control_count": 0,
+    "control_ratio": 0,
+    "binary_marker_count": 0,
+    "mojibake_marker_count": 0,
+    "binary_contaminated": false,
+    "mojibake_contaminated": false,
+    "method": "article"
+  },
+  "has_full_text": true,
+  "content_length": 8931,
+  "fetch_error": "",
+  "evidence_completeness": {
+    "original_url_status": "present",
+    "full_text_status": "present",
+    "snapshot_status": "present",
+    "hash_status": "present",
+    "excerpt_status": "present",
+    "markdown_snapshot_status": "will_write",
+    "json_snapshot_status": "will_write",
+    "evidence_hash": "a8773d89fc386a2d",
+    "missing": []
+  },
+  "raw_qc_decision": "allow",
+  "raw_qc_downstream_use": "eligible_after_qc",
+  "degradation_reasons": [],
+  "source_volatility": "low",
+  "community_name": "",
+  "capture_scope": "article_text",
+  "visible_range": "抓取时页面可见正文 / 讨论文本",
+  "evidence_level": "core_evidence_candidate",
+  "discovery_source": "",
+  "discovery_record": null,
+  "source_role": "resolved_original_source",
+  "origin_fetch_status": "",
+  "paywall_status": "none",
+  "block_status": "none",
+  "duplicate_status": "unique",
+  "url_hash": "cca494d7fa924687",
+  "content_hash": "a8773d89fc386a2d",
+  "full_text_hash": "a8773d89fc386a2d",
+  "semantic_hash": "7c33c08a015f89bd",
+  "duplicate_of": "",
+  "first_seen_at": "2026-07-02T02:28:35.235Z",
+  "last_seen_at": "2026-07-02T02:28:35.235Z",
+  "update_detected": false,
+  "key_excerpts": [
+    {
+      "type": "workflow_change",
+      "text": "/ query=AI implementation technical scoping production rollout / intent=find_original_source / path=procurement_marketplace",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "number",
+      "text": "Executive summary Production AI implementation at an organizational layer costs $75K–$250K in year one, regardless of who you hire.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The variable is who pockets the margin: an SI consultancy, a freelance prompt engineer, an in-house team, or a focused studio like ours.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "The install fails not because of bad models or bad prompts — it fails because outcome evaluation gets skipped, and nobody can answer whether it worked.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "company_action",
+      "text": "This guide walks operators through what to budget, what to demand from vendors, what to put in the contract, and — most usefully — when to walk away from an AI install entirely.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    },
+    {
+      "type": "workflow_change",
+      "text": "It's vendor-agnostic; we wrote it because the conversations we have on our own first sales calls keep repeating the same evaluation gaps, and most of the time the right answer for the buyer is not \"hire us.",
+      "supports": [
+        "signal_card_candidate",
+        "relationship_graph_input",
+        "business_change",
+        "case",
+        "trend_candidate_context"
+      ],
+      "importance": "high",
+      "confidence": "high"
+    }
+  ],
+  "business_elements": {
+    "companies": [
+      "keyword search",
+      "Anysearch",
+      "OpenAI",
+      "Anthropic",
+      "Google"
+    ],
+    "products": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "people": [],
+    "industries": [
+      "法律 / 法务",
+      "金融 / 保险",
+      "医疗",
+      "开发者工具"
+    ],
+    "roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "法务 / 律师",
+      "采购负责人",
+      "销售 / 客服"
+    ],
+    "workflows": [
+      "合同审阅 / 法律研究",
+      "计费 / 预算管理",
+      "采购 / 招投标",
+      "部署 / 集成交付"
+    ],
+    "business_actions": [
+      "定价 / 计费变化"
+    ],
+    "affected_departments": [
+      "IT / 安全",
+      "法务",
+      "财务 / 预算",
+      "采购",
+      "销售 / 客服"
+    ],
+    "numbers": [
+      "$75",
+      "$250",
+      "1",
+      "25",
+      "$1",
+      "500",
+      "$3",
+      "$18"
+    ],
+    "quotes": [
+      "hire us.",
+      "two weeks, $5K",
+      "Improve productivity",
+      "Reduce intake-form processing from 12 min to under 3 min per case",
+      "we think it was about an hour."
+    ]
+  },
+  "evidence_seed": {
+    "company_actions": [
+      "The variable is who pockets the margin: an SI consultancy, a freelance prompt engineer, an in-house team, or a focused studio like ours.",
+      "The install fails not because of bad models or bad prompts — it fails because outcome evaluation gets skipped, and nobody can answer whether it worked.",
+      "This guide walks operators through what to budget, what to demand from vendors, what to put in the contract, and — most usefully — when to walk away from an AI install entirely."
+    ],
+    "case_details": [],
+    "workflow_changes": [
+      "/ query=AI implementation technical scoping production rollout / intent=find_original_source / path=procurement_marketplace",
+      "It's vendor-agnostic; we wrote it because the conversations we have on our own first sales calls keep repeating the same evaluation gaps, and most of the time the right answer for the buyer is not \"hire us."
+    ],
+    "before_after_clues": [
+      "可能涉及 合同审阅 / 法律研究 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。",
+      "可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"
+    ],
+    "affected_roles": [
+      "CIO / IT 负责人",
+      "开发者 / 工程团队",
+      "法务 / 律师",
+      "采购负责人",
+      "销售 / 客服"
+    ],
+    "risks_or_constraints": []
+  },
+  "guanlan_scores": {
+    "importance_type": "important_vertical_solution",
+    "importance_score": 5,
+    "importance_reason": "vertical industry solution; rubric=5 major/platform/industry-shaping",
+    "supporting_signals": [
+      "enterprise_ai_transformation_lens",
+      "commercial_or_risk_context",
+      "adoption_context"
+    ],
+    "novelty": 3,
+    "evidence_strength": 4,
+    "case_richness": 5,
+    "trend_relevance": 4,
+    "guanlan_relevance": 5,
+    "emerging_signal_score": 4
+  },
+  "usable_for": {
+    "viewpoint": false,
+    "case": true,
+    "business_change": true,
+    "relationship_graph_input": true,
+    "trend_candidate_context": true,
+    "signal_card_candidate": true,
+    "emerging_pool": true,
+    "user_feedback_pool": false,
+    "watchlist": true
+  },
+  "pool_routes": [
+    "emerging_pool",
+    "watchlist"
+  ],
+  "change_action_detected": true,
+  "evidence_eligibility": "eligible",
+  "evidence_block_reason": "",
+  "missing_information": [
+    "没有具体客户或真实企业案例"
+  ],
+  "raw_status": "pooled",
+  "copyright_note": "local research archive only",
+  "markdown_snapshot": "# The AI Implementation Buyer's Guide — Perpetual Core | Perpetual Core\n\n- raw_id: R-022\n- original_url: https://perpetualcore.com/guide/ai-implementation-buyers-guide\n- source_name: keyword search / Anysearch\n- collected_at: 2026-07-02T02:28:35.235Z\n\n## clean_text\n\nExecutive summary\nProduction AI implementation at an organizational layer costs $75K–$250K in year one, regardless of who you hire. The variable is who pockets the margin: an SI consultancy, a freelance prompt engineer, an in-house team, or a focused studio like ours. The install fails not because of bad models or bad prompts — it fails because outcome evaluation gets skipped, and nobody can answer whether it worked.\nThis guide walks operators through what to budget, what to demand from vendors, what to put in the contract, and — most usefully — when to walk away from an AI install entirely. It's vendor-agnostic; we wrote it because the conversations we have on our own first sales calls keep repeating the same evaluation gaps, and most of the time the right answer for the buyer is not \"hire us.\"\n1. The four cost buckets\nEvery AI install has four cost buckets. Most quotes name two and hope you forget about the other two.\nBucket 1 — Vendor subscriptions\nThe obvious one. Model providers (OpenAI, Anthropic, Google), embedding/vector store, orchestration layer, downstream system seats (CRM, calendar, email). For a 25-person organization running production AI on real workflows, plan for $1,500–$3,500 per month , or $18K–$42K annualized. The teams that get to $200K subscription bills usually have an uncapped model + a chatty integration loop and didn't notice for three quarters.\nBucket 2 — Engineering time\nThe biggest hidden cost. A two-week prototype doesn't ship to production. Real installs take 6–10 weeks for the first workflow , plus 2–4 weeks for each additional workflow. Budget $30K–$80K of internal senior engineering time (opportunity cost from other work), or $50K–$150K for an external team that already knows the failure modes. If you're being quoted \"two weeks, $5K\" by a freelance prompt engineer, that's a Loom demo, not an install.\nBucket 3 — Integration debt\nNobody quotes this. Your AI has to read from somewhere and write to somewhere — Gmail, Calendar, Slack, CRM, DMS, billing system, whatever. A meaningful install touches 5–10 systems . Each integration is 1–3 days of engineering done right (with audit logging, retries, idempotency, error escalation). That's another $20K–$60K nobody put in the proposal.\nBucket 4 — Outcome eval + handoff\nThe most-skipped, most-load-bearing bucket. Measurement infrastructure, before/after windows, holdout groups, quarterly review cadence, written handoff for whoever inherits this in six months. $10K–$25K done right. $0 done wrong — and $0 is what most installs spend on it, which is why they get quietly turned off when a champion leaves.\nHonest year-one total\nAdd it up: $75K–$250K to ship one meaningful AI install at a real organization, regardless of who you hire. The second workflow is cheaper because integration debt and outcome-eval scaffolding carry over. But the first one is between $75K and $250K of total ownership cost.\n2. The outcome-eval framework\nIf you remember nothing else from this guide, remember this. Before any code ships, write down the answers to these three questions and get them co-signed by the operator who will inherit this:\nWhat metric is this install supposed to move? Named, specific, measurable. \"Improve productivity\" doesn't count. \"Reduce intake-form processing from 12 min to under 3 min per case\" counts.\nWhat's the baseline, and how was it measured? A reading taken before the install, in the same measurement frame you'll use after. Not \"we think it was about an hour.\" A logged sample with a known n.\nWhat's the recheck schedule and the decision rule? Measurement windows at 6, 12, and 24 weeks. A decision rule specifying at what number the install gets renewed, modified, or killed. Written down before code ships. Co-signed.\nThat's it. Three things. Most installs skip them because the vendor doesn't want to be measured and the buyer doesn't want the answer. Defining outcome-eval is a self-imposed test that some vendors will fail; rather sign their refund clause now than write a $200K post-mortem in eight months.\n3. Vendor evaluation rubric\nThree asks that separate vendors who do this seriously from vendors who do it for a living.\nAsk 1 — \"Show me an outcome-eval scope you wrote for a comparable client.\"\nTwo-page written document. Operator named (or anonymized by sector). Metric, baseline methodology, recheck windows, decision rule. If they can't produce one — even redacted — they don't do it. Move on.\nAsk 2 — \"Define the metric you'd commit to moving for us, before we sign.\"\nThe vendor who names a specific number and risks being wrong is the vendor who does this work seriously. The vendor who pivots into \"we'll see qualitative benefits\" or \"AI is a journey, not a destination\" is selling motion, not outcomes.\nAsk 3 — \"What's your decision rule if the metric doesn't move?\"\nTrust the vendor who says: \"We recommend killing the install and refund the maintenance retainer.\" Walk away from the vendor who says: \"We'll iterate.\" Iteration without a kill rule is rent.\nThree smells worth flagging\nThe vendor only sells one model. Production workflows need different models for different tasks. A single-model vendor will hammer every nail with the same hammer for as long as you keep paying.\nThe vendor's proposal has no audit-log line. You can't measure what you don't log. Audit log is a Day-One feature, not a Phase-Three roadmap item.\nThe vendor won't name a real client. Acceptable if your sector is sensitive (we don't name ours either). Not acceptable if the vendor is selling consumer AI into mid-market and still won't put a logo on the slide.\n4. Sample contract terms\nEight clauses we'd put in any AI implementation contract — as buyer or seller. None of these are legal advice; show them to your counsel before signing anything.\nMetric-bound milestones. Payment schedule tied to outcome-eval reading checkpoints, not just delivery.\nData ownership and portability. All embeddings, training datasets, audit logs, and configurations are owned by the buyer and exportable on 30 days' notice.\nNo-train clause. Vendor cannot train models on buyer's data, period. Includes downstream model providers the vendor uses.\nAudit-log retention. Buyer-side audit log with 12-month minimum retention. Vendor cannot purge before that window.\nKill clause. Buyer can terminate the engagement and the running install with 30 days' notice; vendor refunds prorated retainer.\nOff-boarding deliverable. Written documentation, training session, and credential handover when the engagement ends. Spelled out as a separate deliverable, not \"best efforts.\"\nSLA tied to engagement risk profile. Healthcare/finance gets a stricter SLA than internal productivity. Specify uptime, response time, and escalation path explicitly.\nThe Engine commitment line (if applicable). We line-item the 10–15% of revenue that flows to the Institute for Human Advancement on every invoice. If you're buying from a vendor that claims mission alignment, ask them to show it on the invoice.\n5. When not to install AI\nFour signals that the right answer is \"not yet\" or \"not at all.\"\nThe metric isn't broken. If the workflow already moves the number you care about, installing AI is a cost-add, not a value-add. Optimize what's broken first.\nThe data is genuinely confidential. Not \"we'd rather not share.\" Genuinely classified, regulated, or under-NDA. Some workflows shouldn't touch an external model regardless of the vendor's privacy claims. Use those workflows as the LAST AI target, not the first.\nThe team is in a transition. A merger, an exec rotation, a layoff cycle. Installing operating-layer AI during org turbulence is how you get an abandoned install in nine months. Wait until the team is stable enough to inherit and own it.\nYou can't name an operator who will own the result. \"We'll figure it out post-install\" is the most reliable predictor of an install that gets quietly turned off. Name the owner before signing the SOW.\nOn any of these four, the honest move from your vendor is defer or refer . We do this constantly. We'd rather refer you to a vendor whose timing fits than sell you something you'll regret.\n6. References & further reading\nFrom our own writing:\nWhat an AI install actually costs — expanded version of section 1, with comparison against freelancer and SI routes.\nOutcome-eval, the line item every AI install skips — expanded version of section 2 with the three vendor-asks checklist.\nAtlas Discovery — our productized two-week audit ($5K–$15K) that produces the outcome-eval scope as a deliverable.\nHow we compare to ChatGPT Teams and Claude for Teams — honest feature matrix.\nThe Perpetual Engine — the structural commitment that 10–15% of every revenue dollar funds the Institute for Human Advancement.\nThis guide is free to read, share, and quote. If it saved you money or kept you from a bad install, the right return is to send it to the operator on your team who hasn't seen it yet.\n\n## full_text\n\nExecutive summary\nProduction AI implementation at an organizational layer costs $75K–$250K in year one, regardless of who you hire. The variable is who pockets the margin: an SI consultancy, a freelance prompt engineer, an in-house team, or a focused studio like ours. The install fails not because of bad models or bad prompts — it fails because outcome evaluation gets skipped, and nobody can answer whether it worked.\nThis guide walks operators through what to budget, what to demand from vendors, what to put in the contract, and — most usefully — when to walk away from an AI install entirely. It's vendor-agnostic; we wrote it because the conversations we have on our own first sales calls keep repeating the same evaluation gaps, and most of the time the right answer for the buyer is not \"hire us.\"\n1. The four cost buckets\nEvery AI install has four cost buckets. Most quotes name two and hope you forget about the other two.\nBucket 1 — Vendor subscriptions\nThe obvious one. Model providers (OpenAI, Anthropic, Google), embedding/vector store, orchestration layer, downstream system seats (CRM, calendar, email). For a 25-person organization running production AI on real workflows, plan for $1,500–$3,500 per month , or $18K–$42K annualized. The teams that get to $200K subscription bills usually have an uncapped model + a chatty integration loop and didn't notice for three quarters.\nBucket 2 — Engineering time\nThe biggest hidden cost. A two-week prototype doesn't ship to production. Real installs take 6–10 weeks for the first workflow , plus 2–4 weeks for each additional workflow. Budget $30K–$80K of internal senior engineering time (opportunity cost from other work), or $50K–$150K for an external team that already knows the failure modes. If you're being quoted \"two weeks, $5K\" by a freelance prompt engineer, that's a Loom demo, not an install.\nBucket 3 — Integration debt\nNobody quotes this. Your AI has to read from somewhere and write to somewhere — Gmail, Calendar, Slack, CRM, DMS, billing system, whatever. A meaningful install touches 5–10 systems . Each integration is 1–3 days of engineering done right (with audit logging, retries, idempotency, error escalation). That's another $20K–$60K nobody put in the proposal.\nBucket 4 — Outcome eval + handoff\nThe most-skipped, most-load-bearing bucket. Measurement infrastructure, before/after windows, holdout groups, quarterly review cadence, written handoff for whoever inherits this in six months. $10K–$25K done right. $0 done wrong — and $0 is what most installs spend on it, which is why they get quietly turned off when a champion leaves.\nHonest year-one total\nAdd it up: $75K–$250K to ship one meaningful AI install at a real organization, regardless of who you hire. The second workflow is cheaper because integration debt and outcome-eval scaffolding carry over. But the first one is between $75K and $250K of total ownership cost.\n2. The outcome-eval framework\nIf you remember nothing else from this guide, remember this. Before any code ships, write down the answers to these three questions and get them co-signed by the operator who will inherit this:\nWhat metric is this install supposed to move? Named, specific, measurable. \"Improve productivity\" doesn't count. \"Reduce intake-form processing from 12 min to under 3 min per case\" counts.\nWhat's the baseline, and how was it measured? A reading taken before the install, in the same measurement frame you'll use after. Not \"we think it was about an hour.\" A logged sample with a known n.\nWhat's the recheck schedule and the decision rule? Measurement windows at 6, 12, and 24 weeks. A decision rule specifying at what number the install gets renewed, modified, or killed. Written down before code ships. Co-signed.\nThat's it. Three things. Most installs skip them because the vendor doesn't want to be measured and the buyer doesn't want the answer. Defining outcome-eval is a self-imposed test that some vendors will fail; rather sign their refund clause now than write a $200K post-mortem in eight months.\n3. Vendor evaluation rubric\nThree asks that separate vendors who do this seriously from vendors who do it for a living.\nAsk 1 — \"Show me an outcome-eval scope you wrote for a comparable client.\"\nTwo-page written document. Operator named (or anonymized by sector). Metric, baseline methodology, recheck windows, decision rule. If they can't produce one — even redacted — they don't do it. Move on.\nAsk 2 — \"Define the metric you'd commit to moving for us, before we sign.\"\nThe vendor who names a specific number and risks being wrong is the vendor who does this work seriously. The vendor who pivots into \"we'll see qualitative benefits\" or \"AI is a journey, not a destination\" is selling motion, not outcomes.\nAsk 3 — \"What's your decision rule if the metric doesn't move?\"\nTrust the vendor who says: \"We recommend killing the install and refund the maintenance retainer.\" Walk away from the vendor who says: \"We'll iterate.\" Iteration without a kill rule is rent.\nThree smells worth flagging\nThe vendor only sells one model. Production workflows need different models for different tasks. A single-model vendor will hammer every nail with the same hammer for as long as you keep paying.\nThe vendor's proposal has no audit-log line. You can't measure what you don't log. Audit log is a Day-One feature, not a Phase-Three roadmap item.\nThe vendor won't name a real client. Acceptable if your sector is sensitive (we don't name ours either). Not acceptable if the vendor is selling consumer AI into mid-market and still won't put a logo on the slide.\n4. Sample contract terms\nEight clauses we'd put in any AI implementation contract — as buyer or seller. None of these are legal advice; show them to your counsel before signing anything.\nMetric-bound milestones. Payment schedule tied to outcome-eval reading checkpoints, not just delivery.\nData ownership and portability. All embeddings, training datasets, audit logs, and configurations are owned by the buyer and exportable on 30 days' notice.\nNo-train clause. Vendor cannot train models on buyer's data, period. Includes downstream model providers the vendor uses.\nAudit-log retention. Buyer-side audit log with 12-month minimum retention. Vendor cannot purge before that window.\nKill clause. Buyer can terminate the engagement and the running install with 30 days' notice; vendor refunds prorated retainer.\nOff-boarding deliverable. Written documentation, training session, and credential handover when the engagement ends. Spelled out as a separate deliverable, not \"best efforts.\"\nSLA tied to engagement risk profile. Healthcare/finance gets a stricter SLA than internal productivity. Specify uptime, response time, and escalation path explicitly.\nThe Engine commitment line (if applicable). We line-item the 10–15% of revenue that flows to the Institute for Human Advancement on every invoice. If you're buying from a vendor that claims mission alignment, ask them to show it on the invoice.\n5. When not to install AI\nFour signals that the right answer is \"not yet\" or \"not at all.\"\nThe metric isn't broken. If the workflow already moves the number you care about, installing AI is a cost-add, not a value-add. Optimize what's broken first.\nThe data is genuinely confidential. Not \"we'd rather not share.\" Genuinely classified, regulated, or under-NDA. Some workflows shouldn't touch an external model regardless of the vendor's privacy claims. Use those workflows as the LAST AI target, not the first.\nThe team is in a transition. A merger, an exec rotation, a layoff cycle. Installing operating-layer AI during org turbulence is how you get an abandoned install in nine months. Wait until the team is stable enough to inherit and own it.\nYou can't name an operator who will own the result. \"We'll figure it out post-install\" is the most reliable predictor of an install that gets quietly turned off. Name the owner before signing the SOW.\nOn any of these four, the honest move from your vendor is defer or refer . We do this constantly. We'd rather refer you to a vendor whose timing fits than sell you something you'll regret.\n6. References & further reading\nFrom our own writing:\nWhat an AI install actually costs — expanded version of section 1, with comparison against freelancer and SI routes.\nOutcome-eval, the line item every AI install skips — expanded version of section 2 with the three vendor-asks checklist.\nAtlas Discovery — our productized two-week audit ($5K–$15K) that produces the outcome-eval scope as a deliverable.\nHow we compare to ChatGPT Teams and Claude for Teams — honest feature matrix.\nThe Perpetual Engine — the structural commitment that 10–15% of every revenue dollar funds the Institute for Human Advancement.\nThis guide is free to read, share, and quote. If it saved you money or kept you from a bad install, the right return is to send it to the operator on your team who hasn't seen it yet.\n\n## extraction_diagnostics\n\n- extraction_method: article\n- readability_score: 97\n- fetch_status: fetched-readable-text-article\n- extraction_quality: high\n\n## key_excerpts\n\n1. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] / query=AI implementation technical scoping production rollout / intent=find_original_source / path=procurement_marketplace\n2. [number / signal_card_candidate, relationship_graph_input, case, trend_candidate_context / high] Executive summary Production AI implementation at an organizational layer costs $75K–$250K in year one, regardless of who you hire.\n3. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The variable is who pockets the margin: an SI consultancy, a freelance prompt engineer, an in-house team, or a focused studio like ours.\n4. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] The install fails not because of bad models or bad prompts — it fails because outcome evaluation gets skipped, and nobody can answer whether it worked.\n5. [company_action / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] This guide walks operators through what to budget, what to demand from vendors, what to put in the contract, and — most usefully — when to walk away from an AI install entirely.\n6. [workflow_change / signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context / high] It's vendor-agnostic; we wrote it because the conversations we have on our own first sales calls keep repeating the same evaluation gaps, and most of the time the right answer for the buyer is not \"hire us.\n"
+}

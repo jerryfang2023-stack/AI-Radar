@@ -1,4 +1,4 @@
-name: WaveSight Daily Recovery Watchdog
+name: WaveSight Daily Problem Watchdog
 
 on:
   workflow_run:
@@ -19,21 +19,21 @@ on:
         required: false
         type: string
       max_attempts:
-        description: "Optional override for same-date failed attempts before manual escalation."
+        description: "Optional failure-count context for the inbox report. This workflow never dispatches recovery."
         required: false
         type: string
 
 permissions:
-  actions: write
+  actions: read
   contents: read
 
 concurrency:
-  group: wavesight-daily-recovery-${{ github.event.workflow_run.name || github.run_id }}
+  group: wavesight-daily-problem-watchdog-${{ github.event.workflow_run.name || github.run_id }}
   cancel-in-progress: false
 
 jobs:
-  recovery-watchdog:
-    name: Dispatch bounded recovery
+  problem-watchdog:
+    name: Record production problems
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -57,10 +57,10 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Syntax check recovery dispatcher
+      - name: Syntax check problem watchdog
         run: node --check agent-workflow/tools/dispatch-daily-recovery.mjs
 
-      - name: Dispatch recovery if needed
+      - name: Record problem and inbox if needed
         shell: bash
         run: |
           set -euo pipefail
@@ -86,13 +86,14 @@ jobs:
 
           node agent-workflow/tools/dispatch-daily-recovery.mjs "${args[@]}"
 
-      - name: Upload recovery report
+      - name: Upload problem report and inbox
         if: always()
         uses: actions/upload-artifact@v6
         with:
-          name: wavesight-daily-recovery-${{ github.run_id }}
+          name: wavesight-daily-problem-watchdog-${{ github.run_id }}
           if-no-files-found: warn
           retention-days: 14
           path: |
             agent-workflow/reports/*-daily-recovery-watchdog.json
             agent-workflow/reports/*-daily-recovery-watchdog.md
+            agent-workflow/inbox/hermes-to-codex/*daily-problem-watchdog.md

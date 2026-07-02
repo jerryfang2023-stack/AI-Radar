@@ -1,0 +1,214 @@
+---
+schema_version: raw-evidence-v2
+raw_id: R-061
+title: "瑞银：约六成企业收紧 AI 开支，DeepSeek 等开源大模型有望受益"
+original_url: "https://www.ithome.com/0/971/289.htm"
+canonical_url: "https://ithome.com/0/971/289.htm"
+source_name: "IT之家（RSS）"
+source_type: web
+source_level: B
+source_level_role: traceability_only_not_value_score_or_core_gate
+evidence_object_type: event
+evidence_object_usable: true
+event_evidence: true
+index_only_evidence: false
+acquisition_source_level: "M"
+acquisition_channel: aihot
+research_status: not_research
+search_intent: ""
+search_path: ""
+search_path_label: ""
+author: ""
+published_at: "2026-07-01T09:50:27.000Z"
+collected_at: 2026-07-02T02:28:35.477Z
+language: mixed
+full_text_hash: 958bf5110c467558
+markdown_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-061-瑞银-约六成企业收紧-ai-开支-deepseek-等开源大模型有望受益.md"
+json_snapshot_path: "01-SiteV2/content/01-raw/originals/2026-07-02/r-061-瑞银-约六成企业收紧-ai-开支-deepseek-等开源大模型有望受益.json"
+html_snapshot_path: ""
+screenshot_path: ""
+fetch_status: fetched-readable-text-content-container
+extraction_quality: medium
+extraction_method: "content-container"
+readability_score: 59
+extractor_diagnostics: {"readability_score":59,"text_length":1271,"paragraph_count":12,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+has_full_text: true
+content_length: 1271
+fetch_error: ""
+raw_qc_decision: allow
+raw_qc_downstream_use: eligible_after_qc
+degradation_reasons: []
+evidence_completeness: {"original_url_status":"present","full_text_status":"present","snapshot_status":"present","hash_status":"present","excerpt_status":"present","markdown_snapshot_status":"will_write","json_snapshot_status":"will_write","evidence_hash":"958bf5110c467558","missing":[]}
+source_volatility: medium
+community_name: ""
+capture_scope: article_text
+visible_range: "抓取时页面可见正文 / 讨论文本"
+evidence_level: core_evidence_candidate
+discovery_source: "AI HOT"
+discovery_record: {"discovery_title":"瑞银：约六成企业收紧 AI 开支，DeepSeek 等开源大模型有望受益","discovery_summary":"瑞银分析师调研十余家企业IT负责人后发现，约六成企业已出台管控措施收紧AI开支。token调用成本是核心顾虑，Uber运营总监坦言AI投入回报微薄。DeepSeek等开源模型与中国本土大模型有望受益，尤其适合非代码类业务。短期内OpenAI、Anthropic等闭源厂商承压最大。谷歌推出Gemini 3.5 Flash，Anthropic发布Claude Sonnet 5以降低成本。瑞银称这一趋势为\"良性调整阵痛\"，无企业彻底叫停AI落地。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/971/289.htm","discovered_at":"2026-07-02T02:12:32.537Z","rank_on_page":223,"discovery_status":"discovered"}
+source_role: resolved_original_source
+origin_fetch_status: "success"
+paywall_status: none
+block_status: none
+duplicate_status: unique
+url_hash: cba53d59c54353c9
+content_hash: 958bf5110c467558
+semantic_hash: 799dd3e69d5528d3
+duplicate_of: ""
+first_seen_at: "2026-07-01T09:50:27.000Z"
+last_seen_at: 2026-07-02T02:28:35.477Z
+update_detected: false
+raw_status: pooled
+usable_for: {"viewpoint":true,"case":true,"business_change":true,"relationship_graph_input":true,"trend_candidate_context":true,"signal_card_candidate":true,"emerging_pool":false,"user_feedback_pool":false,"watchlist":true}
+pool_routes: ["core_pool"]
+change_action_detected: true
+evidence_eligibility: eligible
+evidence_block_reason: ""
+guanlan_scores: {"importance_type":"important_product_or_service","importance_score":5,"importance_reason":"new product or service; rubric=5 major/platform/industry-shaping","supporting_signals":["commercial_or_risk_context"],"novelty":3,"evidence_strength":4,"case_richness":5,"trend_relevance":4,"guanlan_relevance":5,"emerging_signal_score":3}
+business_elements: {"companies":["IT之家（RSS）","OpenAI","Anthropic"],"products":["Gemini","Claude"],"people":[],"industries":["企业服务"],"roles":["CIO / IT 负责人","采购负责人"],"workflows":["计费 / 预算管理","权限 / 安全治理","采购 / 招投标"],"business_actions":["发布 / 推出","部署 / 上线"],"affected_departments":["IT / 安全","财务 / 预算","采购"],"numbers":["3.5","5","7","1","6"],"quotes":["过去几周，我们与十几位企业信息技术负责人深度交流后发现，约六成企业已出台各类管控措施，在不同程度上收紧人工智能方面的开支。","适度优化人工智能开支属于行业常态，没有企业彻底叫停人工智能落地；同时下一代芯片训练的全新模型有望进一步压低词元调用成本，行业前景依旧向好。","当下的核心问题不再是要不要调用词元资源，而是如何高效利用。由此，成本优化从应对预算危机的临时举措，转变为常态化的技术研发工作。","我们内部原本上线了五款 AI 工具以及多款大语言模型产品。和其他企业一样，我们年度词元预算大半已提前消耗完毕。目前我们仅保留两款 AI 工具，同时严格管控使用量。"]}
+evidence_seed: {"company_actions":["瑞银分析师调研十余家企业IT负责人后发现，约六成企业已出台管控措施收紧AI开支。token调用成本是核心顾虑，Uber运营总监坦言AI投入回报微薄。DeepSeek等开源模型与中国本土大模型有望受益，尤其适合非代码类业务。短期内OpenAI、Anthropic等闭源厂商承压最大。谷歌推出Gemini 3.5 Flash，Anthropic发布Claude Sonnet 5以降低成本。瑞银称这一趋势为\"良性调整阵痛\"，无企业彻底叫停AI落地。","瑞银分析师卡尔 · 基尔斯泰德、蒂莫西 · 阿尔库里、泰勒 · 麦金尼斯与团队同僚在近期一份研报中写道：“过去几周，我们与十几位企业信息技术负责人深度交流后发现，约六成企业已出台各类管控措施，在不同程度上收紧人工智能方面的开支。","” 随着首席财务官与首席技术官发现人工智能相关账单持续走高，词元（token）调用成本已经成为各大企业（尤其是大型企业）的核心顾虑。"],"case_details":[],"workflow_changes":[],"before_after_clues":["可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。","可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。","可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。"],"affected_roles":["CIO / IT 负责人","采购负责人"],"risks_or_constraints":[]}
+missing_information: ["没有具体客户或真实企业案例"]
+key_excerpts: [{"type":"product_update","text":"瑞银分析师调研十余家企业IT负责人后发现，约六成企业已出台管控措施收紧AI开支。token调用成本是核心顾虑，Uber运营总监坦言AI投入回报微薄。DeepSeek等开源模型与中国本土大模型有望受益，尤其适合非代码类业务。短期内OpenAI、Anthropic等闭源厂商承压最大。谷歌推出Gemini 3.5 Flash，Anthropic发布Claude Sonnet 5以降低成本。瑞银称这一趋势为\"良性调整阵痛\"，无企业彻底叫停AI落地。","supports":["signal_card_candidate","relationship_graph_input","business_change"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"IT之家 7 月 1 日消息，瑞银分析师表示，企业高管如今对人工智能相关开支的管控意识正在不断增强。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"瑞银分析师卡尔 · 基尔斯泰德、蒂莫西 · 阿尔库里、泰勒 · 麦金尼斯与团队同僚在近期一份研报中写道：“过去几周，我们与十几位企业信息技术负责人深度交流后发现，约六成企业已出台各类管控措施，在不同程度上收紧人工智能方面的开支。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"” 随着首席财务官与首席技术官发现人工智能相关账单持续走高，词元（token）调用成本已经成为各大企业（尤其是大型企业）的核心顾虑。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"company_action","text":"Uber 运营总监安德鲁 · 麦克唐纳在 5 月坦言，人工智能投入的回报率十分微薄，持续攀升的成本已难以自证合理性。","supports":["signal_card_candidate","relationship_graph_input","business_change","case","trend_candidate_context"],"importance":"high","confidence":"medium"},{"type":"opinion","text":"分析师团队称，他们自 6 月初开启多轮走访调研，初步判断行业正迎来一股温和的逆风。","supports":["signal_card_candidate","relationship_graph_input","viewpoint"],"importance":"high","confidence":"medium"}]
+theme: mature-commercial-signal
+keyword_group: mature-commercial-signal
+copyright_note: local research archive only
+---
+
+# 瑞银：约六成企业收紧 AI 开支，DeepSeek 等开源大模型有望受益
+
+## clean_text
+
+IT之家 7 月 1 日消息，瑞银分析师表示，企业高管如今对人工智能相关开支的管控意识正在不断增强。
+瑞银分析师卡尔 · 基尔斯泰德、蒂莫西 · 阿尔库里、泰勒 · 麦金尼斯与团队同僚在近期一份研报中写道：“过去几周，我们与十几位企业信息技术负责人深度交流后发现，约六成企业已出台各类管控措施，在不同程度上收紧人工智能方面的开支。”
+随着首席财务官与首席技术官发现人工智能相关账单持续走高，词元（token）调用成本已经成为各大企业（尤其是大型企业）的核心顾虑。Uber 运营总监安德鲁 · 麦克唐纳在 5 月坦言，人工智能投入的回报率十分微薄，持续攀升的成本已难以自证合理性。
+分析师团队称，他们自 6 月初开启多轮走访调研，初步判断行业正迎来一股温和的逆风。研报补充，后续多场访谈进一步印证了这一判断，只是不同企业受到的冲击程度存在差异。
+团队在报告中写道：“绝大多数企业都将词元调用成本优化列为核心工作，这直接导致部分企业大幅放缓人工智能投入增速；但还有两类企业受到的影响相对有限：一类人工智能落地尚处于早期阶段，另一类虽已深度布局 AI 业务，但不愿限制员工使用权限，这类企业要么能通过 AI 获得可观回报对冲成本，要么企业战略层面将创新列为核心目标，因此持续推动人工智能落地应用。”
+分析师指出，短期内，OpenAI、Anthropic 这类人工智能模型厂商将承受最大的缩减开支压力。报告特别提到， DeepSeek 等开源模型与中国本土大模型有望成为最大受益者，尤其适合有非代码类业务需求的企业选用。
+尽管行业普遍削减 AI 相关支出，分析师仍强调“无需过度担忧”，并将这一趋势定义为“良性调整阵痛”。
+他们表示：“适度优化人工智能开支属于行业常态，没有企业彻底叫停人工智能落地；同时下一代芯片训练的全新模型有望进一步压低词元调用成本，行业前景依旧向好。”
+IT之家注意到，头部人工智能企业纷纷宣传自家模型的词元使用效率，部分厂商还专门推出主打降本的新模型。谷歌推出了 Gemini 3.5 Flash 模型；Anthropic 于周二发布了 Claude Sonnet 5，官方称该模型可自主完成复杂任务，而就在数月前，同等能力还需要依靠规模更大、成本更高的模型才能实现。
+瑞银采访的一家企业透露，行业已经告别盲目试水人工智能的阶段。分析师引用该企业受访内容写道：“当下的核心问题不再是要不要调用词元资源，而是如何高效利用。由此，成本优化从应对预算危机的临时举措，转变为常态化的技术研发工作。”
+另一家受访企业表示，公司首席技术官早年全力布局人工智能业务，如今却在缩减采购的 AI 工具数量。分析师摘录其发言：“我们内部原本上线了五款 AI 工具以及多款大语言模型产品。和其他企业一样，我们年度词元预算大半已提前消耗完毕。目前我们仅保留两款 AI 工具，同时严格管控使用量。”
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## full_text
+
+IT之家 7 月 1 日消息，瑞银分析师表示，企业高管如今对人工智能相关开支的管控意识正在不断增强。
+瑞银分析师卡尔 · 基尔斯泰德、蒂莫西 · 阿尔库里、泰勒 · 麦金尼斯与团队同僚在近期一份研报中写道：“过去几周，我们与十几位企业信息技术负责人深度交流后发现，约六成企业已出台各类管控措施，在不同程度上收紧人工智能方面的开支。”
+随着首席财务官与首席技术官发现人工智能相关账单持续走高，词元（token）调用成本已经成为各大企业（尤其是大型企业）的核心顾虑。Uber 运营总监安德鲁 · 麦克唐纳在 5 月坦言，人工智能投入的回报率十分微薄，持续攀升的成本已难以自证合理性。
+分析师团队称，他们自 6 月初开启多轮走访调研，初步判断行业正迎来一股温和的逆风。研报补充，后续多场访谈进一步印证了这一判断，只是不同企业受到的冲击程度存在差异。
+团队在报告中写道：“绝大多数企业都将词元调用成本优化列为核心工作，这直接导致部分企业大幅放缓人工智能投入增速；但还有两类企业受到的影响相对有限：一类人工智能落地尚处于早期阶段，另一类虽已深度布局 AI 业务，但不愿限制员工使用权限，这类企业要么能通过 AI 获得可观回报对冲成本，要么企业战略层面将创新列为核心目标，因此持续推动人工智能落地应用。”
+分析师指出，短期内，OpenAI、Anthropic 这类人工智能模型厂商将承受最大的缩减开支压力。报告特别提到， DeepSeek 等开源模型与中国本土大模型有望成为最大受益者，尤其适合有非代码类业务需求的企业选用。
+尽管行业普遍削减 AI 相关支出，分析师仍强调“无需过度担忧”，并将这一趋势定义为“良性调整阵痛”。
+他们表示：“适度优化人工智能开支属于行业常态，没有企业彻底叫停人工智能落地；同时下一代芯片训练的全新模型有望进一步压低词元调用成本，行业前景依旧向好。”
+IT之家注意到，头部人工智能企业纷纷宣传自家模型的词元使用效率，部分厂商还专门推出主打降本的新模型。谷歌推出了 Gemini 3.5 Flash 模型；Anthropic 于周二发布了 Claude Sonnet 5，官方称该模型可自主完成复杂任务，而就在数月前，同等能力还需要依靠规模更大、成本更高的模型才能实现。
+瑞银采访的一家企业透露，行业已经告别盲目试水人工智能的阶段。分析师引用该企业受访内容写道：“当下的核心问题不再是要不要调用词元资源，而是如何高效利用。由此，成本优化从应对预算危机的临时举措，转变为常态化的技术研发工作。”
+另一家受访企业表示，公司首席技术官早年全力布局人工智能业务，如今却在缩减采购的 AI 工具数量。分析师摘录其发言：“我们内部原本上线了五款 AI 工具以及多款大语言模型产品。和其他企业一样，我们年度词元预算大半已提前消耗完毕。目前我们仅保留两款 AI 工具，同时严格管控使用量。”
+广告声明：文内含有的对外跳转链接（包括不限于超链接、二维码、口令等形式），用于传递更多信息，节省甄选时间，结果仅供参考，IT之家所有文章均包含本声明。
+
+## extraction_diagnostics
+
+- extraction_method: content-container
+- readability_score: 59
+- fetch_status: fetched-readable-text-content-container
+- extraction_quality: medium
+- diagnostics: {"readability_score":59,"text_length":1271,"paragraph_count":12,"sentence_count":7,"boilerplate_hits":1,"symbol_ratio":0,"replacement_count":0,"replacement_ratio":0,"control_count":0,"control_ratio":0,"binary_marker_count":0,"mojibake_marker_count":0,"binary_contaminated":false,"mojibake_contaminated":false,"method":"content-container"}
+
+## markdown_snapshot
+
+本文件即为人工回查用 Markdown 快照；机器读取优先使用同目录 JSON 证据对象。
+
+## key_excerpts
+
+1. **product_update**｜supports=signal_card_candidate, relationship_graph_input, business_change｜importance=high｜confidence=medium
+   瑞银分析师调研十余家企业IT负责人后发现，约六成企业已出台管控措施收紧AI开支。token调用成本是核心顾虑，Uber运营总监坦言AI投入回报微薄。DeepSeek等开源模型与中国本土大模型有望受益，尤其适合非代码类业务。短期内OpenAI、Anthropic等闭源厂商承压最大。谷歌推出Gemini 3.5 Flash，Anthropic发布Claude Sonnet 5以降低成本。瑞银称这一趋势为"良性调整阵痛"，无企业彻底叫停AI落地。
+
+2. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   IT之家 7 月 1 日消息，瑞银分析师表示，企业高管如今对人工智能相关开支的管控意识正在不断增强。
+
+3. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   瑞银分析师卡尔 · 基尔斯泰德、蒂莫西 · 阿尔库里、泰勒 · 麦金尼斯与团队同僚在近期一份研报中写道：“过去几周，我们与十几位企业信息技术负责人深度交流后发现，约六成企业已出台各类管控措施，在不同程度上收紧人工智能方面的开支。
+
+4. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   ” 随着首席财务官与首席技术官发现人工智能相关账单持续走高，词元（token）调用成本已经成为各大企业（尤其是大型企业）的核心顾虑。
+
+5. **company_action**｜supports=signal_card_candidate, relationship_graph_input, business_change, case, trend_candidate_context｜importance=high｜confidence=medium
+   Uber 运营总监安德鲁 · 麦克唐纳在 5 月坦言，人工智能投入的回报率十分微薄，持续攀升的成本已难以自证合理性。
+
+6. **opinion**｜supports=signal_card_candidate, relationship_graph_input, viewpoint｜importance=high｜confidence=medium
+   分析师团队称，他们自 6 月初开启多轮走访调研，初步判断行业正迎来一股温和的逆风。
+
+## business_elements
+
+- companies: IT之家（RSS）, OpenAI, Anthropic
+- products: Gemini, Claude
+- people: 暂无公开信息
+- industries: 企业服务
+- roles: CIO / IT 负责人, 采购负责人
+- workflows: 计费 / 预算管理, 权限 / 安全治理, 采购 / 招投标
+- business_actions: 发布 / 推出, 部署 / 上线
+- affected_departments: IT / 安全, 财务 / 预算, 采购
+- numbers: 3.5, 5, 7, 1, 6
+- quotes: 过去几周，我们与十几位企业信息技术负责人深度交流后发现，约六成企业已出台各类管控措施，在不同程度上收紧人工智能方面的开支。 / 适度优化人工智能开支属于行业常态，没有企业彻底叫停人工智能落地；同时下一代芯片训练的全新模型有望进一步压低词元调用成本，行业前景依旧向好。 / 当下的核心问题不再是要不要调用词元资源，而是如何高效利用。由此，成本优化从应对预算危机的临时举措，转变为常态化的技术研发工作。 / 我们内部原本上线了五款 AI 工具以及多款大语言模型产品。和其他企业一样，我们年度词元预算大半已提前消耗完毕。目前我们仅保留两款 AI 工具，同时严格管控使用量。
+
+## evidence_seed
+
+- company_actions: 瑞银分析师调研十余家企业IT负责人后发现，约六成企业已出台管控措施收紧AI开支。token调用成本是核心顾虑，Uber运营总监坦言AI投入回报微薄。DeepSeek等开源模型与中国本土大模型有望受益，尤其适合非代码类业务。短期内OpenAI、Anthropic等闭源厂商承压最大。谷歌推出Gemini 3.5 Flash，Anthropic发布Claude Sonnet 5以降低成本。瑞银称这一趋势为"良性调整阵痛"，无企业彻底叫停AI落地。 / 瑞银分析师卡尔 · 基尔斯泰德、蒂莫西 · 阿尔库里、泰勒 · 麦金尼斯与团队同僚在近期一份研报中写道：“过去几周，我们与十几位企业信息技术负责人深度交流后发现，约六成企业已出台各类管控措施，在不同程度上收紧人工智能方面的开支。 / ” 随着首席财务官与首席技术官发现人工智能相关账单持续走高，词元（token）调用成本已经成为各大企业（尤其是大型企业）的核心顾虑。
+- case_details: 暂无公开信息
+- workflow_changes: 暂无公开信息
+- before_after_clues: 可能涉及 计费 / 预算管理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 权限 / 安全治理 的前后变化，需要二搜补足变化前流程。 / 可能涉及 采购 / 招投标 的前后变化，需要二搜补足变化前流程。
+- affected_roles: CIO / IT 负责人, 采购负责人
+- risks_or_constraints: 暂无公开信息
+
+## guanlan_scores
+
+- importance_type: important_product_or_service
+- importance_score: 5
+- importance_reason: new product or service; rubric=5 major/platform/industry-shaping
+- supporting_signals: commercial_or_risk_context
+- novelty: 3
+- evidence_strength: 4
+- case_richness: 5
+- trend_relevance: 4
+- guanlan_relevance: 5
+- emerging_signal_score: 3
+
+## usable_for
+
+- viewpoint: true
+- case: true
+- business_change: true
+- relationship_graph_input: true
+- trend_candidate_context: true
+- signal_card_candidate: true
+- emerging_pool: false
+- user_feedback_pool: false
+- watchlist: true
+
+## pool_routes
+
+- core_pool
+
+## missing_information
+
+- 没有具体客户或真实企业案例
+
+## volatile_and_discovery_handling
+
+- source_volatility: medium
+- community_name: not_applicable
+- capture_scope: article_text
+- visible_range: 抓取时页面可见正文 / 讨论文本
+- evidence_level: core_evidence_candidate
+- discovery_source: AI HOT
+- source_role: resolved_original_source
+- origin_fetch_status: success
+- discovery_record: {"discovery_title":"瑞银：约六成企业收紧 AI 开支，DeepSeek 等开源大模型有望受益","discovery_summary":"瑞银分析师调研十余家企业IT负责人后发现，约六成企业已出台管控措施收紧AI开支。token调用成本是核心顾虑，Uber运营总监坦言AI投入回报微薄。DeepSeek等开源模型与中国本土大模型有望受益，尤其适合非代码类业务。短期内OpenAI、Anthropic等闭源厂商承压最大。谷歌推出Gemini 3.5 Flash，Anthropic发布Claude Sonnet 5以降低成本。瑞银称这一趋势为\"良性调整阵痛\"，无企业彻底叫停AI落地。","source_name":"IT之家（RSS）","origin_url":"https://www.ithome.com/0/971/289.htm","discovered_at":"2026-07-02T02:12:32.537Z","rank_on_page":223,"discovery_status":"discovered"}
+
+## 原始摘要 / 采集文本
+
+瑞银分析师调研十余家企业IT负责人后发现，约六成企业已出台管控措施收紧AI开支。token调用成本是核心顾虑，Uber运营总监坦言AI投入回报微薄。DeepSeek等开源模型与中国本土大模型有望受益，尤其适合非代码类业务。短期内OpenAI、Anthropic等闭源厂商承压最大。谷歌推出Gemini 3.5 Flash，Anthropic发布Claude Sonnet 5以降低成本。瑞银称这一趋势为"良性调整阵痛"，无企业彻底叫停AI落地。
+
+## 采集备注
+
+该条目由 aihot 发现，source_level 只作追溯记录，不判断商业价值，也不决定 core_pool。AI HOT、RSS、搜索和社区入口都只是发现入口；HN / Reddit / X 等社区材料可用于讨论升温、用户反馈和早期观察，但不能单独证明公司动作、客户采用、收入、融资或市场规模。
