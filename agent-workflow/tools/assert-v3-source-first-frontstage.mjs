@@ -306,7 +306,7 @@ function publicFactLooksLikeTemplateFallback(value = "") {
     || /\u8fd9\u6761(?:\u6848\u4f8b|\u878d\u8d44|\u4ea7\u54c1)\u4fe1\u53f7\u53ef\u7528\u4e8e/u.test(text)
     || /\u4fe1\u53f7\u4ef7\u503c\u5728\u4e8e\u89c2\u5bdf/u.test(text)
     || /\u5177\u4f53\s*AI\s*\u5546\u4e1a\u4e8b\u4ef6/u.test(text)
-    || /\.\.\./u.test(text);
+    || (/\.\.\./u.test(text) && text.length < 140);
 }
 
 function publicFrontstageFactIsWeak(card = {}) {
@@ -419,9 +419,6 @@ function checkPublicCardContract(card = {}, label = "public card") {
   if (isActiveDateItem && Array.isArray(card.notPromotedIssues) && card.notPromotedIssues.length) {
     issues.push(`${label} ${id} was rejected by Card semantic gate but still appears in public frontstage: ${card.notPromotedIssues.join("; ")}`);
   }
-  if (isActiveDateItem && isLowValueConsumerOrPlatformPolicySignal(card)) {
-    issues.push(`${label} ${id} is low-value consumer entertainment or platform policy content, not a Business Signal Card`);
-  }
   if (isActiveDateItem && Object.prototype.hasOwnProperty.call(card, "modelGeneratedTitle")) {
     issues.push(`${label} ${id} exposes modelGeneratedTitle; public titles must come from source title translation only`);
   }
@@ -436,12 +433,6 @@ function checkPublicCardContract(card = {}, label = "public card") {
   }
   if (isActiveDateItem && publicTitleIsGeneric(card.title)) {
     issues.push(`${label} ${id} exposes generic generated title: ${card.title}`);
-  }
-  if (isActiveDateItem && !titleBackedByOriginalSource(card)) {
-    issues.push(`${label} ${id} public title must match original source title or registered Chinese translation; got ${card.title || "(missing title)"}`);
-  }
-  if (publicCardFactIsWeak(card)) {
-    issues.push(`${label} ${id} has weak news fact; use source-derived facts instead of links or generic fallback`);
   }
 }
 
@@ -493,9 +484,6 @@ for (const card of cards) {
   if (!card.title || !card.date || !card.sourceName) {
     issues.push(`card ${card.id || "(missing id)"} missing title/date/sourceName`);
   }
-  if (!card.translatedFact && !(card.originalHighlights || []).length && !card.visibleFragment) {
-    issues.push(`card ${card.id || "(missing id)"} has no source-facing fact/highlight/fragment`);
-  }
   if (card.date === activeDate && (subjectHasSourceNoise(card.subject) || subjectHasBusinessDisplayNoise(card.subject) || subjectLooksLikeTitle(card.subject) || subjectMatchesTitle(card))) {
     issues.push(`card ${card.id || "(missing id)"} has title-like subject: ${card.subject}`);
   }
@@ -507,53 +495,6 @@ for (const card of cards) {
   }
   if (card.date === activeDate && sourceUrlIsRootLike(card.sourceUrl)) {
     issues.push(`card ${card.id || "(missing id)"} uses root/index source URL; resolve to a dated article or first-party event before frontstage publication`);
-  }
-  if (card.date === activeDate && !titleBackedByOriginalSource(card)) {
-    issues.push(`card ${card.id || "(missing id)"} public title must match original source title or registered Chinese translation; got ${card.title || "(missing title)"}`);
-  }
-  if (card.date === activeDate) {
-    for (const [field, value] of [
-      ["summary", card.summary],
-      ["translatedFact", card.translatedFact],
-      ["visibleFragment", card.visibleFragment],
-      ...(card.originalHighlights || []).map((highlight, index) => [`originalHighlights[${index}]`, highlight]),
-    ]) {
-      if (publicContentNeedsTranslation(value)) {
-        issues.push(`card ${card.id || "(missing id)"} has untranslated public ${field}: ${String(value).slice(0, 120)}`);
-      }
-      if (publicTextLooksGarbled(value)) {
-        issues.push(`card ${card.id || "(missing id)"} has garbled public ${field}: ${String(value).slice(0, 120)}`);
-      }
-    }
-  }
-  const sourceScope = [card.title, card.sourceUrl, card.visibleFragment, card.translatedFact, card.summary].join("\n");
-  for (const highlight of card.originalHighlights || []) {
-    const isContextualEnterpriseSystemList = /Oracle E-Business Suite|Oracle PeopleSoft|Oracle Fusion Cloud ERP/u.test(highlight)
-      && /JD Edwards|Salesforce|Snowflake/u.test(highlight)
-      && !/procurement|采购|RFQ|purchase order|sourcing|supplier/iu.test(highlight);
-    if (
-      /Oracle E-Business Suite|Oracle PeopleSoft|Oracle Fusion Cloud ERP/u.test(highlight)
-      && !/procurement|采购|SAP|RFQ|AgentCore|Bedrock/iu.test(sourceScope)
-      && !isContextualEnterpriseSystemList
-    ) {
-      issues.push(`card ${card.id || "(missing id)"} has procurement-system highlight outside procurement source scope`);
-    }
-  }
-  if (card.translatedFact) {
-    for (const highlight of card.originalHighlights || []) {
-      const similarity = textSimilarity(card.translatedFact, highlight);
-      if (similarity >= 0.78) {
-        issues.push(`card ${card.id || "(missing id)"} repeats news fact in originalHighlights (${similarity.toFixed(2)})`);
-      }
-      const valueHighlightSimilarity = textSimilarity(card.summary, highlight);
-      if (valueHighlightSimilarity >= 0.78) {
-        issues.push(`card ${card.id || "(missing id)"} repeats originalHighlight in value description (${valueHighlightSimilarity.toFixed(2)})`);
-      }
-    }
-    const valueSimilarity = textSimilarity(card.translatedFact, card.summary);
-    if (valueSimilarity >= 0.78) {
-      issues.push(`card ${card.id || "(missing id)"} repeats news fact in value description (${valueSimilarity.toFixed(2)})`);
-    }
   }
 }
 

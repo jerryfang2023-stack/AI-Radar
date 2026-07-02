@@ -181,7 +181,8 @@ Card title rules:
 
 - keep the event nature of the original title;
 - prefer original title or direct event title;
-- public `title`, `displayTitle`, and compatibility `generatedTitle` should come from source-title translations by default.
+- English source-title translation is a raw-to-card ingestion responsibility. When an English article is captured and promoted into a Signal Card, the Card record should already contain the Chinese event title used by public `title`, `displayTitle`, and compatibility `generatedTitle`.
+- Frontstage builders and frontstage gates must not re-block an already generated formal Signal Card because its source-title translation is missing from a separate frontstage translation registry. If the translation is poor, repair the raw-to-card ingestion / Card asset, not the frontstage selector.
 - Narrow exception: a funding Card may use a generated factual funding title only when the original source title itself confirms a single-company financing event with amount / round wording such as `raises <amount>`, `announcing our <amount> <round>`, `launches with <amount>`, or `emerged from stealth with <amount>`. The fallback title must stay factual and name the company plus amount / round; rumors, future-tense financing claims, lists, trackers, and commentary cannot use this exception.
 - do not mechanically rewrite into abstract judgment;
 - do not use phrases like "materials show", "worth watching", "points to", or internal production wording.
@@ -197,6 +198,8 @@ Card detail rules:
 - `original points`: source-derived facts from full text, key excerpts, or evidence seed;
 - `brief value`: short commercial relevance derived from source facts;
 - `visible source excerpt`: one traceable source fragment.
+- Fact extraction is also a raw-to-card ingestion responsibility. Weak, sparse, untranslated, or repetitive fact copy should be repaired in the Signal Card asset or generator, but it must not become a frontstage-only suppression rule once a formal Card exists.
+- Missing customer name, adoption metric, ROI, before/after workflow, or other support detail is an evidence-boundary note, not a frontstage blocker for a formal Signal Card.
 
 Hard stops:
 

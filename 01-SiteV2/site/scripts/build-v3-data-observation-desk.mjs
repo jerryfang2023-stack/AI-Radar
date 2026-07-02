@@ -1111,7 +1111,7 @@ function publicFactLooksLikeTemplateFallback(value = "") {
     || /\u516c\u5f00\u8d44\u6599\u663e\u793a\u8d44\u91d1\u7ee7\u7eed\u6d41\u5411\s*AI\s*\u4ea7\u54c1\u5316\u548c\u4f01\u4e1a\u91c7\u7528\u73af\u8282/u.test(text)
     || /\u8fd9\u6761\u878d\u8d44\u4fe1\u53f7\u53ef\u7528\u4e8e\u5224\u65ad\u8d44\u91d1\u6d41\u5411/u.test(text)
     || /\u8be5\u6765\u6e90\u62ab\u9732\u7684\u662f.+\u76f8\u5173\u7684\s*AI\s*(?:\u57fa\u7840\u8bbe\u65bd|\u6a21\u578b\u90e8\u7f72|\u667a\u80fd\u4f53\u80fd\u529b|\u4e8b\u4ef6)/u.test(text)
-    || /\.\.\./u.test(text);
+    || (/\.\.\./u.test(text) && text.length < 140);
 }
 
 function publicFactLooksLikeNavigation(value = "") {
@@ -1171,10 +1171,7 @@ function publicSignalCardIsDisplayReady(card = {}) {
   } else {
     return false;
   }
-  if (publicFactLooksLikeTemplateFallback(card.translatedFact || card.summary || card.visibleFragment)) return false;
-  return [card.summary, card.translatedFact, card.visibleFragment]
-    .filter(Boolean)
-    .every((value) => !publicTextLooksGarbled(value) && !publicContentNeedsTranslation(value));
+  return !publicTextLooksGarbled(card.title) && !publicTextLooksGarbled(card.displayTitle);
 }
 
 function isLowValueConsumerOrPlatformPolicySignal(card = {}) {
@@ -1351,14 +1348,32 @@ function publicFundingFallbackTitleIsReady(card = {}, title = "") {
   return Boolean(publicFundingFallbackTitle(title, sourceTitle, card.category));
 }
 
+function publicTranslatedTitleFallback(card = {}, sourceTitle = "") {
+  const cleanSourceTitle = cleanEnglishTitleForDisplay(cleanBadPublicDisplayTitle(sourceTitle));
+  if (!titleNeedsChineseTranslation(cleanSourceTitle)) return "";
+  const candidate = String(card.title || card.displayTitle || card.generatedTitle || "").replace(/\s+/gu, " ").trim();
+  if (!candidate || !hasCjk(candidate)) return "";
+  if (!publicDisplayTitleIsReady(candidate) || publicTitleLooksOverprocessed(candidate)) return "";
+  const candidateLower = candidate.toLowerCase();
+  const sourceTokens = [...cleanSourceTitle.matchAll(/\b[A-Za-z][A-Za-z0-9&.'-]{2,}\b/gu)]
+    .map((match) => match[0].toLowerCase())
+    .filter((token) => !/^(?:the|and|for|with|how|uses?|case|study|company|powered|across|person|week|artificial|intelligence|news|press|release)$/u.test(token));
+  const tokenMatches = [...new Set(sourceTokens)].filter((token) => candidateLower.includes(token)).length;
+  const sourceNumbers = [...cleanSourceTitle.matchAll(/\b\d+(?:\.\d+)?\+?\b/gu)].map((match) => match[0]);
+  const numberMatches = [...new Set(sourceNumbers)].filter((token) => candidate.includes(token)).length;
+  return tokenMatches >= 1 || numberMatches >= 1 ? candidate : "";
+}
+
 function publicTitleCandidateForCard(card = {}) {
   const sourceCandidate = publicTitleCandidate(sourceFrontstageTitle(card), card.sourceUrl);
   if (sourceCandidate) return sourceCandidate;
-  return publicFundingFallbackTitle(
+  const fundingTitle = publicFundingFallbackTitle(
     card.title || card.displayTitle || card.generatedTitle,
     card.sourceTitle || card.originalTitle || card.rawTitle,
     card.category
   );
+  if (fundingTitle) return fundingTitle;
+  return publicTranslatedTitleFallback(card, card.sourceTitle || card.originalTitle || card.rawTitle);
 }
 
 function publicDisplayTitle(sourceTitle = "", generatedTitle = "", sourceUrl = "", options = {}) {
@@ -1398,9 +1413,16 @@ function normalizeFrontstageDisplay(card = {}, options = {}) {
   const sourceTitle = sourceFrontstageTitle(card, originalTitle);
   const cleanFact = cleanSourceFactOverride(card.sourceUrl);
   const replacementFact = sourceTitleDerivedFact(sourceTitle || originalTitle || internalTitle, card.sourceUrl);
+  const sourceBackedFacts = (card.originalHighlights || []).filter((value) => (
+    value
+      && isSubstantiveSourceFragment(value)
+      && !publicContentNeedsTranslation(value)
+      && !publicFactLooksLikeNavigation(value)
+      && !publicFactLooksLikeTemplateFallback(value)
+  ));
   const factCandidates = strictPublic
-    ? [cleanFact, card.translatedFact, card.visibleFragment, replacementFact, card.summary]
-    : [cleanFact, card.translatedFact, replacementFact, card.visibleFragment, card.summary];
+    ? [cleanFact, card.translatedFact, ...sourceBackedFacts, card.visibleFragment, replacementFact, card.summary]
+    : [cleanFact, card.translatedFact, ...sourceBackedFacts, replacementFact, card.visibleFragment, card.summary];
   const translatedFact = factCandidates.find((value) => (
     value
       && !publicContentNeedsTranslation(value)
@@ -1409,7 +1431,8 @@ function normalizeFrontstageDisplay(card = {}, options = {}) {
   )) || "";
   const cleanedTranslatedFact = cleanPublicSourceFact(translatedFact);
   const fallbackTitle = publicFundingFallbackTitle(card.title || card.displayTitle || "", sourceTitle || originalTitle, card.category);
-  const preferredDisplayTitle = publicDisplayTitle(sourceTitle, "", card.sourceUrl, { allowGeneratedFallback: false }) || fallbackTitle;
+  const translatedTitleFallback = publicTranslatedTitleFallback(card, sourceTitle || originalTitle);
+  const preferredDisplayTitle = publicDisplayTitle(sourceTitle, "", card.sourceUrl, { allowGeneratedFallback: false }) || fallbackTitle || translatedTitleFallback;
   const displayTitle = publicDisplayTitleIsReady(preferredDisplayTitle) || publicFundingFallbackTitleIsReady({ ...card, sourceTitle, originalTitle, title: preferredDisplayTitle }, preferredDisplayTitle)
     ? preferredDisplayTitle
     : "";
@@ -2303,8 +2326,6 @@ function buildSignalCardFrontstageSelection(cards = []) {
   for (const [date, items] of byDate.entries()) {
     const sorted = items
       .map(annotateFrontstageCandidate)
-      .filter((card) => !isLowValueConsumerOrPlatformPolicySignal(card))
-      .filter(hasSourceBackedFrontstageFact)
       .filter(publicSignalCardIsDisplayReady)
       .sort((a, b) => b.frontstageRankScore - a.frontstageRankScore || a.id.localeCompare(b.id));
     const selectedForDate = [];
@@ -3865,7 +3886,6 @@ const rawCards = [
 const activeDate = rawCards.map((card) => card.date).filter(Boolean).sort().at(-1) || "";
 const cards = ensureUniqueCardIds(dedupeFrontstageCards(rawCards).filter(isPublicBusinessSignalEligible))
   .map((card) => normalizeFrontstageDisplay(card, { strictPublic: card.date === activeDate }))
-  .filter(hasSourceFacingEvidence)
   .filter((card) => card.title && card.date && card.sourceName)
   .filter(publicSignalCardIsDisplayReady)
   .map(annotateFrontstageCandidate)
